@@ -1,4 +1,4 @@
-####Significant changes between Mist 4.0 Update 1 and BimlStudio 2017####
+#### Significant changes between Mist 4.0 Update 1 and BimlStudio 2017
 
 **Breaking Changes**
 
