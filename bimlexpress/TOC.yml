@@ -1,0 +1,42 @@
+- name: BimlExpress Documentation
+  href: LINK
+  items: 
+  - name: What's New in BimlExpress 2017?
+    href: LINK
+  - name: Release Notes
+    href: LINK
+  - name: Comparing BimlExpress and BIDS Helper / BI Developer Extensions
+    href: LINK
+  - name: Comparing BimlExpress and BimlStudio
+    href: LINK
+- name: Getting Started with BimlExpress
+  expanded: true
+  items:
+  - name: Installing BimlExpress
+    href: LINK
+  - name: Account and License Key
+    href: LINK
+  - name: Menus and Options
+    href: LINK
+  - name: Adding and Editing Biml files
+    href: LINK
+  - name: Preview Expanded Biml
+    href: LINL
+  - name: Generating SSIS Packages
+    href: LINK
+- name: Resources
+  href: LINK
+  items: 
+  - name: Learn Biml on BimlScript.com
+  - href: LINK
+  - name: Biml Language Reference
+  - href: LINK
+  - name: Biml API Reference
+  - href: LINK
+- name: Help and Support
+  href: LINK
+  items: 
+  - name: BimlExpress Forums
+    href: LINK
+  - name: Contact Varigence Support
+    href: LINK
