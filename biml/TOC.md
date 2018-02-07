@@ -12,6 +12,19 @@
 #### [Includes](snippets-bimlscripts-includes.md)
 #### [Setting Variable Value](snippets-bimlscripts-setting-variable-value.md)
 ### Connections
+#### [ADO.NET](snippets-connections-adonet.md)
+#### [Analysis Services](snippets-connections-analysis-services.md)
+#### [Cache](snippets-connections-cache.md)
+#### [Excel OleDb](snippets-connections-excel-oledb.md)
+#### [File](snippets-connections-file.md)
+#### [Flat File](snippets-connections-flat-file.md)
+#### [FTP](snippets-connections-ftp.md)
+#### [HTTP](snippets-connections-http.md)
+#### [MSMQ](snippets-connections-msmq.md)
+#### [OleDb](snippets-connections-oledb.md)
+#### [SMTP](snippets-connections-smtp.md)
+#### [SQL Server Management](snippets-connections-sql-server-management.md)
+#### [WMI](snippets-connections-wwi.md)
 ### File Formats
 ### Cubes
 ### Miscellaneous
