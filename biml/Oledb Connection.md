@@ -1,1 +1,0 @@
-	<Biml xmlns="http://schemas.varigence.com/biml.xsd">	    <Connections>			<!-- Creates a connection to the Adventure Works database -->	        <Connection 				Name="Target" 				ConnectionString="Provider=SQLNCLI10.1;Data Source=Localhost;Persist Security Info=False;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW" />	    </Connections>	</Biml>	
