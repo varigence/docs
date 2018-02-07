@@ -26,9 +26,16 @@
 #### [SQL Server Management](snippets-connections-sql-server-management.md)
 #### [WMI](snippets-connections-wwi.md)
 ### File Formats
+#### [Flat File Format](snippets-file-formats-flat-file-format.md)
+#### [Raw File Format](snippets-file-formats-raw-file-format.md)
 ### Cubes
 ### Miscellaneous
+#### [Log Event](snippets-miscellaneous-log-event.md)
+#### [Log Provider](snippets-miscellaneous-log-provider.md)
+#### [Principal](snippets-miscellaneous-principal.md)
 ### Script Project
+#### [Script Component Project](snippets-script-projects-script-component-project.md)
+#### [Script Task Project](snippets-script-projects-script-task-project.md)
 ### SSIS Tasks
 ### Transformations
 ### Tables
