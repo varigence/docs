@@ -1,3 +1,4 @@
+# Adding and Editing Biml files
 To add a Biml file to the project, right-click on the project, or on the Data Sources, Data Source Views, or SSIS Packages folders. The context menu will have an **Add New Biml File** menu opton. This will add a Biml file to the Miscellaneous folder in the project.
 
 Note: Right-clicking on the Miscellaneous folder will not open a context menu.
@@ -15,6 +16,3 @@ Autocomplete can be opened by pressing **Ctrl+Space** while editing a Biml tag.
 After adding Biml code to a file, it can be checked for errors by choosing the **Check Biml for Errors** option from the context menu.
 
 ![Check Biml For Errors](https://varigencecomstaging2.blob.core.windows.net/walkthroughs/check-for-errors.jpg 'Check Biml For Errors')
-
-Next: [Generating SSIS Packages](/Documentation/BimlExpress/Article/Generating+SSIS+Packages "Generating SSIS Packages")
-
