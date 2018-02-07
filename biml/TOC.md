@@ -11,7 +11,7 @@
 #### [Import Database Assets](snippets-bimlscripts-import-database-assets.md)
 #### [Includes](snippets-bimlscripts-includes.md)
 #### [Setting Variable Value](snippets-bimlscripts-setting-variable-value.md)
-### Connections
+### [Connections](snippets-connections.md)
 #### [ADO.NET](snippets-connections-adonet.md)
 #### [Analysis Services](snippets-connections-analysis-services.md)
 #### [Cache](snippets-connections-cache.md)
@@ -25,10 +25,10 @@
 #### [SMTP](snippets-connections-smtp.md)
 #### [SQL Server Management](snippets-connections-sql-server-management.md)
 #### [WMI](snippets-connections-wwi.md)
-### File Formats
+### [File Formats](snippets-file-formats.md)
 #### [Flat File Format](snippets-file-formats-flat-file-format.md)
 #### [Raw File Format](snippets-file-formats-raw-file-format.md)
-### Cubes
+### [Cubes](snippets-cubes.md)
 #### [Drillthrough Action](snippets-cubes-drillthrough-action.md)
 #### [Report Action](snippets-cubes-report-action.md)
 #### [Standard Action](snippets-cubes-standard-action.md)
@@ -45,16 +45,32 @@
 #### [Calculated Member](snippets-cubes-calculated-member.md)
 #### [Named Set](snippets-cubes-named-set.md)
 #### [Script Command](snippets-cubes-script-command.md)
-### Miscellaneous
+### [Miscellaneous](snippets-miscellaneous.md)
 #### [Log Event](snippets-miscellaneous-log-event.md)
 #### [Log Provider](snippets-miscellaneous-log-provider.md)
 #### [Principal](snippets-miscellaneous-principal.md)
-### Script Project
+### [Script Projects](snippets-script-projects.md)
 #### [Script Component Project](snippets-script-projects-script-component-project.md)
 #### [Script Task Project](snippets-script-projects-script-task-project.md)
-### SSIS Tasks
-### Transformations
-### Tables
+### [SSIS Tasks](snippets-ssis-tasks.md)
+#### [Bulk Insert](snippets-ssis-tasks-bulk-insert.md)
+#### [Data Profiling](snippets-ssis-tasks-data-profiling.md)
+#### [Execute Package](snippets-ssis-tasks-execute-package.md)
+#### [Execute SQL](snippets-ssis-tasks-execute-sql.md)
+#### [Execute Process](snippets-ssis-tasks-execute-process.md)
+#### [File System](snippets-ssis-tasks-file-system.md)
+#### [Execute SQL Parameters](snippets-ssis-tasks-execute-sql-parameters.md)
+#### [Foreach File Loop](snippets-ssis-tasks-foreach-file-loop.md)
+#### [FTP](snippets-ssis-tasks-ftp.md)
+#### [Message Queue](snippets-ssis-tasks-message-queue.md)
+#### [Precedence Constraints](snippets-ssis-tasks-precedence-constraints.md)
+#### [WMI Event Watcher](snippets-ssis-tasks-wmi-event-watcher.md)
+#### [Script (Simple)](snippets-ssis-tasks-script-simple.md)
+#### [Send Mail](snippets-ssis-tasks-send-mail.md)
+#### [Dataflow](snippets-ssis-tasks-dataflow.md)
+#### [WMI Data Reader](snippets-ssis-tasks-wmi-data-reader.md)
+### [Transformations](snippets-transformations.md)
+### [Tables](snippets-tables.md)
 ## Resources
 ### [Learn Biml on BimlScript.com](http://bimlscript.com/)
 ### [Biml Language Reference](https://varigence.com/Documentation/Language/Index)

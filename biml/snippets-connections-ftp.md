@@ -2,16 +2,10 @@
 
 ```xml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
-	<Packages>
-		<Package Name="My Package" ConstraintMode="Linear">
-			<Tasks>		
-				<!-- FTP a remote file from an FTP server to the local machine -->
-				<Ftp Name="Ftp Task" Operation="Receive" ConnectionName="MyFtpConnection" >
-					<ExternalFileInput ExternalFilePath="c:\public" FileUsageType="ExistingFolder" />
-					<RemotePath>/logs/staging.varigence.com.log</RemotePath>
-				</Ftp>
-			</Tasks>
-		</Package>
-	</Packages>
+    <!-- Creates an FTP connection to an FTP server at theFtpServer.com.  Note the password in this file is in plaintext, 
+         so treat the file with care if placing the password in it. -->
+    <Connections>
+        <FtpConnection Name="MyFtpConnection" Password="p@ssw0rd" UserName="myUserName" ServerName="theFtpServer.com" />
+    </Connections>
 </Biml>
 ```
