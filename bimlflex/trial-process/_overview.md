@@ -10,12 +10,14 @@ You can find Supporting BimlFlex [documentation here.](https://varigence.com/Doc
 The trial is an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development. It requires Sql Server 2016 for hosting databases and uses Ssis for the ETL process.
 
 The trial supports 2 architectures:
+
 - a 2 layer approach with staging and a data mart layer
 - a 3 layer approach with a staging, data vault and a data mart layer.
 
 both architectures uses a staging layer with both a transient staging database and a persistent staging (archive) database. both architectures have an analyst-facing dimensional model. The addition of the Data Vault layer illustrates how BimlFlex allows the acceleration and creation of an integration layer that allows cross-system integration on business keys.
 
-For the trial the following is needed
+For the trial the following is needed:
+
 - Sql Server 2016 installation with Sql Server engine and Ssis/Integration services
 - Windows-based development machine for local installation of BimlStudio and BimlFlex
 - Excel 2013-2016 for managing and modelling metadata
@@ -81,7 +83,7 @@ The BimlFlex framework behavior is controlled by a comprehensive set of configur
 
 **Modelling of source metadata**
 
-Most automation features in BimlFlex are built on modelling the metadata to provide the Data Warehouse required. BimlFlex allows a number of modelling approaches and scenarios to easily build the Data Warehouse to the specification desired. The trial illustrates this by applying modelling to the source metadata. Depending on the architecture chosen the staging layer is prepared for either Data Vault loads or data mart loads the configuration and structures of the staging area will differ slightly. Data Vault uses preprocessing to add hashed keys in to the staging layer.  
+Most automation features in BimlFlex are built on modelling the metadata to provide the Data Warehouse required. BimlFlex allows a number of modelling approaches and scenarios to easily build the Data Warehouse to the specification desired. The trial illustrates this by applying modelling to the source metadata. Depending on the architecture chosen the staging layer is prepared for either Data Vault loads or data mart loads the configuration and structures of the staging area will differ slightly. Data Vault uses preprocessing to add hashed keys in to the staging layer.
 
 [Modelling of Source Metadata](https://varigence.com/Documentation/BimlFlex/Article/Modelling+of+Source+Metadata)
 [Applying Data Type Mappings](https://varigence.com/Documentation/BimlFlex/Article/Applying+Data+Type+Mappings)
@@ -91,13 +93,14 @@ Most automation features in BimlFlex are built on modelling the metadata to prov
 
 **Creating a Data Vault based integration layer**
 
-BimlFlex supports acceleration of Data Vault constructs from business keys and relationships in the source metadata. based on the model a comprehensive Raw Data Vault layer can be created with ease.  
+BimlFlex supports acceleration of Data Vault constructs from business keys and relationships in the source metadata. based on the model a comprehensive Raw Data Vault layer can be created with ease.
 
 [Accelerating the Raw Data Vault Layer](https://varigence.com/Documentation/BimlFlex/Article/Accelerating+the+Raw+Data+Vault+Layer)
 
 **Adding Business Data Vault performance constructs**
 
 The Point in Time and Bridge table structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
+
 - Point in Time, PIT tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub.
 - Bridge tables are used to link business entities in Hubs through their link tables into easy to query constructs.
 
@@ -119,6 +122,6 @@ The data mart layer for a 2 layer architecture reads facts and dimensions direct
 
 **Using prepared trial metadata**
 
-metadata for all stages has been prepared and is available to load into the project at any time using the metadata archiving process. There is a trial customer in the BimlFlex database that has archived snapshots available for all stages in the trial process. It is possible to either follow along with the videos and documentation and create the metadata or simply load the metadata at a given point in the process to review the metadata and build the tables and Ssis packages.
+Metadata for all stages has been prepared and is available to load into the project at any time using the metadata archiving process. There is a trial customer in the BimlFlex database that has archived snapshots available for all stages in the trial process. It is possible to either follow along with the videos and documentation and create the metadata or simply load the metadata at a given point in the process to review the metadata and build the tables and Ssis packages.
 
 [Using Trial Snapshot Metadata](https://varigence.com/Documentation/BimlFlex/Article/Using+Trial+Snapshot+Metadata)
