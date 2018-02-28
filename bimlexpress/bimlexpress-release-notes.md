@@ -1,5 +1,14 @@
 # BimlExpress Release Notes
 
+## BimlExpress 2018
+**Release Date: ???**
+
+### Breaking Changes from Previous Release
+???
+
+### Major Features
+- SSIS Package Importer
+
 ## BimlExpress 2017
 **Release Date: July 15th, 2017**
 

@@ -3,7 +3,7 @@
 ## [BimlExpress Release Notes](bimlexpress-release-notes.md)
 ## [Comparing BimlExpress and BIDS Helper / BI Developer Extensions](comparing-bimlexpress-bidshelper-bideveloperextensions.md)
 ## [Comparing BimlExpress and BimlStudio](comparing-bimlexpress-bimlstudio.md)
-# [Getting Started with BimlExpress](getting-started.md)
+# Getting Started with BimlExpress
 ## [Installing BimlExpress](getting-started-installing-bimlexpress.md)
 ## [Creating BimlExpress Account](getting-started-creating-bimlexpress-account.md)
 ## [BimlExpress Menus and Options](getting-started-bimlexpress-menus-options.md)
