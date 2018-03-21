@@ -1,1 +1,1 @@
-Run `serve.ps1` from a powershell window in the proj2 directory.
+Modify then run `serve.ps1` from a powershell window in the proj2 directory.

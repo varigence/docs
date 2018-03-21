@@ -1,1 +1,1 @@
-docfx build docfx.json -t C:\docfx_walkthrough\proj2\_exported_templates\default\ --serve
+docfx build docfx.json -t C:\PATH_TO_PROJ\proj2\_exported_templates\default\ --serve
