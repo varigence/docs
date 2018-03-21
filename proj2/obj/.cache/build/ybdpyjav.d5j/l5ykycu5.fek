@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/varigencelogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>When building and deploying a cube, newly created relational tables need to be deployed to a SQL database. A package, using SSIS ExecutePackage tasks, can accomplish this.</p>
+<p>Begin by adding a package to the project. Refer to the first 4 steps in the <a href="Creating%20a%20Package">Creating a Package</a> topic to create a package and rename it to <em>BuildSchema</em>.</p>
+<p>To deploy the tables to SQL:</p>
+<ol>
+<li><p>Find the Toolbox tool window. Drag and drop an ExecutePackage task onto the designer surface.  </p>
+</li>
+<li><p>In the Package Details tool window, choose the DimCustomer tab in the Table dropdown. Additionally, for clarity, rename this task to be DimCustomer.<br><img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-deployingtables/deployingtables_2.gif" alt="Package Details"></p>
+</li>
+<li><p>Repeat steps 1 and 2 for the following tables:</p>
+<ul>
+<li>DimDate</li>
+<li>DimProduct</li>
+<li>EtlLog</li>
+<li>FactSales</li>
+</ul>
+<p>When finished, the package editor should look as follows:  </p>
+</li>
+<li><p>To create a precedence constraint, drag a line from the bottom anchor of the DimCustomer ExecutePackage task to the top anchor of the DimDate ExecutePackage task.<br>Start dragging from the bottom anchor of the DimCustomer task. While dragging, a blue line will follow the mouse cursor. Move the mouse cursor over the the DimCustomer task&#39;s top anchor and release.  </p>
+</li>
+<li><p>Create edges so that the tasks are linked together as follows:<br><img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-deployingtables/deployingtables_6.gif" alt="Final Package"></p>
+</li>
+<li><p>Ensure that your project settings have <strong>Use Project Deployment</strong> un-selected. For more information on Use Project Deployment, see  <a href="Configuring%20Project%20Settings">Configuring Project Settings</a>.</p>
+<p><img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-deployingtables/deployingtables_6.png" alt="Project Deployment"></p>
+</li>
+<li>Right click on the package and select Build &amp; Run. This executes the tasks in the package, deploying the tables to the AdventureWorksLTDataMart database.  </li>
+</ol>
+<h4 id="alternative-deployment">Alternative Deployment</h4>
+<p>You can also deploy the tables manually by selecting all the tables. </p>
+<ol>
+<li>Right click then <strong>Copy SQL Script</strong>, then <strong>Drop and Create DDL</strong>.
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-deployingtables/deployingtables_7.png" alt="Copy SQL Script"></li>
+<li>The SQL will be in your clipboard and can be pasted into Microsoft SQL Server Management Studio and executed.</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Varigence<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

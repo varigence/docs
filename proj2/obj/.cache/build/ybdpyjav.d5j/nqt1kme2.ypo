@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Subversion </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Subversion ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/varigencelogo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h4 id="mist-user-guide" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="1" sourceendlinenumber="1">Mist User Guide</h4>
+<h5 id="source-control-setup" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="2" sourceendlinenumber="2">Source Control Setup</h5>
+<p sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="3" sourceendlinenumber="3">Mist has the ability to work with projects that are stored in TFS and Subversion source control environments. To work with either source control environment, some additional setup is required.</p>
+<h3 id="subversion" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="5" sourceendlinenumber="5">Subversion</h3>
+<ol sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="7" sourceendlinenumber="14">
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="7" sourceendlinenumber="8">Install CollabNet&#39;s Subversion client, which can be downloaded from <a href="http://www.collab.net/downloads/subversion/" data-raw-source="[CollabNet Subversion downloads](http://www.collab.net/downloads/subversion/)" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="7" sourceendlinenumber="7">CollabNet Subversion downloads</a>.<ul sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="8" sourceendlinenumber="8">
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="8" sourceendlinenumber="8">Neither SlikSVN nor other Subversion clients are currently supported.</li>
+</ul>
+</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="9" sourceendlinenumber="10">Install TortoiseSVN from <a href="http://tortoisesvn.net/downloads.html" data-raw-source="[TortoiseSVN downloads](http://tortoisesvn.net/downloads.html)" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="9" sourceendlinenumber="9">TortoiseSVN downloads</a>.<ul sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="10" sourceendlinenumber="10">
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="10" sourceendlinenumber="10">Do <strong>not</strong> install the command line client tools when installing Tortoise SVN.</li>
+</ul>
+</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="11" sourceendlinenumber="11">Ensure paths to svn.exe (installed with CollabNet&#39;s Subversion client) and tortoiseproc.exe (installed with TortoiseSVN) are in your Path environment variable.</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="12" sourceendlinenumber="13">Add your Mist project to your Subversion working copy.<ul sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="13" sourceendlinenumber="13">
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="13" sourceendlinenumber="13">If no working copy is present, then it must be created. See the <a href="http://tortoisesvn.net/docs/nightly/TortoiseSVN_en/tsvn-dug-checkout.html" data-raw-source="[Tortoise documentation](http://tortoisesvn.net/docs/nightly/TortoiseSVN_en/tsvn-dug-checkout.html)" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="13" sourceendlinenumber="13">Tortoise documentation</a> for more information.</li>
+</ul>
+</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="14" sourceendlinenumber="14">Open the project in Mist.</li>
+</ol>
+<h3 id="tfs" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="16" sourceendlinenumber="16">TFS</h3>
+<ol sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="17" sourceendlinenumber="39">
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="17" sourceendlinenumber="19">Ensure tf.exe is available on the machine where Mist is installed.<ul sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="18" sourceendlinenumber="19">
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="18" sourceendlinenumber="18">tf.exe is not included in VS 2008 installations. It can be downloaded from the<a href="http://www.microsoft.com/en-us/download/details.aspx?id=16338" data-raw-source="[Visual Studio Team System 2008 Team Explorer](http://www.microsoft.com/en-us/download/details.aspx?id=16338)" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="18" sourceendlinenumber="18">Visual Studio Team System 2008 Team Explorer</a> package.</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="19" sourceendlinenumber="19">tf.exe is included, by default, in VS 2010 installations.</li>
+</ul>
+</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="20" sourceendlinenumber="20">Install the Team Foundation Server Power Tools, which can be downloaded from <a href="http://msdn.microsoft.com/en-us/vstudio/bb980963.aspx" data-raw-source="[Visual Studio Power Tools](http://msdn.microsoft.com/en-us/vstudio/bb980963.aspx)" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="20" sourceendlinenumber="20">Visual Studio Power Tools</a></li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="21" sourceendlinenumber="25">Add your Mist project to a TFS workspace. <ul sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="22" sourceendlinenumber="25">
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="22" sourceendlinenumber="23">To create a TFS workspace that contains your project, see the 
+      MSDN documentation for <a href="http://msdn.microsoft.com/en-us/library/cc138512" data-raw-source="[Visual Studio 2008](http://msdn.microsoft.com/en-us/library/cc138512)" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="23" sourceendlinenumber="23">Visual Studio 2008</a> and <a href="http://msdn.microsoft.com/en-us/library/cc138514" data-raw-source="[Visual Studio 2010](http://msdn.microsoft.com/en-us/library/cc138514)" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="23" sourceendlinenumber="23">Visual Studio 2010</a> users.</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="24" sourceendlinenumber="24">To add files and folders to TFS version control, see the <a href="http://msdn.microsoft.com/en-us/library/ms181392" data-raw-source="[MSDN documentation](http://msdn.microsoft.com/en-us/library/ms181392)" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="24" sourceendlinenumber="24">MSDN documentation</a></li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="25" sourceendlinenumber="25">For those just getting started with TFS, MSDN provides detailed documentation on how TFS works and how to use it.</li>
+</ul>
+</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="26" sourceendlinenumber="26">Open the project in Mist.</li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="27" sourceendlinenumber="28">In Project View, right click on the project and select <strong>Properties</strong>.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/1.png" alt="Project Context menu" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="28" sourceendlinenumber="28"></li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="29" sourceendlinenumber="30">In the Properties designer, press the <strong>Locate tf...</strong> button.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/2.png" alt="Locate tf button highlighted" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="30" sourceendlinenumber="30"></li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="31" sourceendlinenumber="33">Find tf.exe on your system and press <strong>Open</strong>. The path to tf.exe will be automatically inserted in the tf Path textbox.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/3.png" alt="Locate tf dialog box" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="32" sourceendlinenumber="32"><br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/3a.png" alt="tf Path textbox" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="33" sourceendlinenumber="33"></li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="34" sourceendlinenumber="35">If your TFS enlistment requires logon credentials, press the <strong>Change Credentials</strong> button.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/4.png" alt="Change Credentials button highlighted" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="35" sourceendlinenumber="35"></li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="36" sourceendlinenumber="37">Enter your username and password in the Credentials dialog box and press <strong>OK</strong>.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/5.png" alt="Credentials dialog box" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="37" sourceendlinenumber="37"></li>
+<li sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="38" sourceendlinenumber="39">Click the <strong>Reload Project</strong> button.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/6.png" alt="Reload Project button highlighted" sourcefile="articles/Source Control Setup.md" sourcestartlinenumber="39" sourceendlinenumber="39"></li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Varigence<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

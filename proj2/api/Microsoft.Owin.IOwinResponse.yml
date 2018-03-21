@@ -1,0 +1,1368 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.IOwinResponse
+  commentId: T:Microsoft.Owin.IOwinResponse
+  id: IOwinResponse
+  parent: Microsoft.Owin
+  children:
+  - Microsoft.Owin.IOwinResponse.Body
+  - Microsoft.Owin.IOwinResponse.ContentLength
+  - Microsoft.Owin.IOwinResponse.ContentType
+  - Microsoft.Owin.IOwinResponse.Context
+  - Microsoft.Owin.IOwinResponse.Cookies
+  - Microsoft.Owin.IOwinResponse.Environment
+  - Microsoft.Owin.IOwinResponse.ETag
+  - Microsoft.Owin.IOwinResponse.Expires
+  - Microsoft.Owin.IOwinResponse.Get``1(System.String)
+  - Microsoft.Owin.IOwinResponse.Headers
+  - Microsoft.Owin.IOwinResponse.OnSendingHeaders(System.Action{System.Object},System.Object)
+  - Microsoft.Owin.IOwinResponse.Protocol
+  - Microsoft.Owin.IOwinResponse.ReasonPhrase
+  - Microsoft.Owin.IOwinResponse.Redirect(System.String)
+  - Microsoft.Owin.IOwinResponse.Set``1(System.String,``0)
+  - Microsoft.Owin.IOwinResponse.StatusCode
+  - Microsoft.Owin.IOwinResponse.Write(System.Byte[])
+  - Microsoft.Owin.IOwinResponse.Write(System.Byte[],System.Int32,System.Int32)
+  - Microsoft.Owin.IOwinResponse.Write(System.String)
+  - Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[])
+  - Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  - Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[],System.Threading.CancellationToken)
+  - Microsoft.Owin.IOwinResponse.WriteAsync(System.String)
+  - Microsoft.Owin.IOwinResponse.WriteAsync(System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IOwinResponse
+  nameWithType: IOwinResponse
+  fullName: Microsoft.Owin.IOwinResponse
+  type: Interface
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nThis wraps OWIN environment dictionary and provides strongly typed accessors.\n"
+  syntax:
+    content: public interface IOwinResponse
+    content.vb: Public Interface IOwinResponse
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Owin.IOwinResponse.OnSendingHeaders(System.Action{System.Object},System.Object)
+  commentId: M:Microsoft.Owin.IOwinResponse.OnSendingHeaders(System.Action{System.Object},System.Object)
+  id: OnSendingHeaders(System.Action{System.Object},System.Object)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: OnSendingHeaders(Action<Object>, Object)
+  nameWithType: IOwinResponse.OnSendingHeaders(Action<Object>, Object)
+  fullName: Microsoft.Owin.IOwinResponse.OnSendingHeaders(System.Action<System.Object>, System.Object)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nRegisters for an event that fires when the response headers are sent.\n"
+  syntax:
+    content: void OnSendingHeaders(Action<object> callback, object state)
+    parameters:
+    - id: callback
+      type: System.Action{System.Object}
+      description: The callback method.
+    - id: state
+      type: System.Object
+      description: The callback state.
+    content.vb: Sub OnSendingHeaders(callback As Action(Of Object), state As Object)
+  overload: Microsoft.Owin.IOwinResponse.OnSendingHeaders*
+  nameWithType.vb: IOwinResponse.OnSendingHeaders(Action(Of Object), Object)
+  fullName.vb: Microsoft.Owin.IOwinResponse.OnSendingHeaders(System.Action(Of System.Object), System.Object)
+  name.vb: OnSendingHeaders(Action(Of Object), Object)
+- uid: Microsoft.Owin.IOwinResponse.Redirect(System.String)
+  commentId: M:Microsoft.Owin.IOwinResponse.Redirect(System.String)
+  id: Redirect(System.String)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Redirect(String)
+  nameWithType: IOwinResponse.Redirect(String)
+  fullName: Microsoft.Owin.IOwinResponse.Redirect(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nSets a 302 response status code and the Location header.\n"
+  syntax:
+    content: void Redirect(string location)
+    parameters:
+    - id: location
+      type: System.String
+      description: The location where to redirect the client.
+    content.vb: Sub Redirect(location As String)
+  overload: Microsoft.Owin.IOwinResponse.Redirect*
+- uid: Microsoft.Owin.IOwinResponse.Write(System.String)
+  commentId: M:Microsoft.Owin.IOwinResponse.Write(System.String)
+  id: Write(System.String)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Write(String)
+  nameWithType: IOwinResponse.Write(String)
+  fullName: Microsoft.Owin.IOwinResponse.Write(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nWrites the given text to the response body stream using UTF-8.\n"
+  syntax:
+    content: void Write(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The response data.
+    content.vb: Sub Write(text As String)
+  overload: Microsoft.Owin.IOwinResponse.Write*
+- uid: Microsoft.Owin.IOwinResponse.Write(System.Byte[])
+  commentId: M:Microsoft.Owin.IOwinResponse.Write(System.Byte[])
+  id: Write(System.Byte[])
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Write(Byte[])
+  nameWithType: IOwinResponse.Write(Byte[])
+  fullName: Microsoft.Owin.IOwinResponse.Write(System.Byte[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nWrites the given bytes to the response body stream.\n"
+  syntax:
+    content: void Write(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The response data.
+    content.vb: Sub Write(data As Byte())
+  overload: Microsoft.Owin.IOwinResponse.Write*
+  nameWithType.vb: IOwinResponse.Write(Byte())
+  fullName.vb: Microsoft.Owin.IOwinResponse.Write(System.Byte())
+  name.vb: Write(Byte())
+- uid: Microsoft.Owin.IOwinResponse.Write(System.Byte[],System.Int32,System.Int32)
+  commentId: M:Microsoft.Owin.IOwinResponse.Write(System.Byte[],System.Int32,System.Int32)
+  id: Write(System.Byte[],System.Int32,System.Int32)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Write(Byte[], Int32, Int32)
+  nameWithType: IOwinResponse.Write(Byte[], Int32, Int32)
+  fullName: Microsoft.Owin.IOwinResponse.Write(System.Byte[], System.Int32, System.Int32)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nWrites the given bytes to the response body stream.\n"
+  syntax:
+    content: void Write(byte[] data, int offset, int count)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The response data.
+    - id: offset
+      type: System.Int32
+      description: The zero-based byte offset in the <code data-dev-comment-type="paramref" class="paramref">data</code> parameter at which to begin copying bytes.
+    - id: count
+      type: System.Int32
+      description: The number of bytes to write.
+    content.vb: Sub Write(data As Byte(), offset As Integer, count As Integer)
+  overload: Microsoft.Owin.IOwinResponse.Write*
+  nameWithType.vb: IOwinResponse.Write(Byte(), Int32, Int32)
+  fullName.vb: Microsoft.Owin.IOwinResponse.Write(System.Byte(), System.Int32, System.Int32)
+  name.vb: Write(Byte(), Int32, Int32)
+- uid: Microsoft.Owin.IOwinResponse.WriteAsync(System.String)
+  commentId: M:Microsoft.Owin.IOwinResponse.WriteAsync(System.String)
+  id: WriteAsync(System.String)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(String)
+  nameWithType: IOwinResponse.WriteAsync(String)
+  fullName: Microsoft.Owin.IOwinResponse.WriteAsync(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAsynchronously writes the given text to the response body stream using UTF-8.\n"
+  syntax:
+    content: Task WriteAsync(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The response data.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A Task tracking the state of the write operation.
+    content.vb: Function WriteAsync(text As String) As Task
+  overload: Microsoft.Owin.IOwinResponse.WriteAsync*
+- uid: Microsoft.Owin.IOwinResponse.WriteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Owin.IOwinResponse.WriteAsync(System.String,System.Threading.CancellationToken)
+  id: WriteAsync(System.String,System.Threading.CancellationToken)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(String, CancellationToken)
+  nameWithType: IOwinResponse.WriteAsync(String, CancellationToken)
+  fullName: Microsoft.Owin.IOwinResponse.WriteAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAsynchronously writes the given text to the response body stream using UTF-8.\n"
+  syntax:
+    content: Task WriteAsync(string text, CancellationToken token)
+    parameters:
+    - id: text
+      type: System.String
+      description: The response data.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: A token used to indicate cancellation.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A Task tracking the state of the write operation.
+    content.vb: Function WriteAsync(text As String, token As CancellationToken) As Task
+  overload: Microsoft.Owin.IOwinResponse.WriteAsync*
+- uid: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[])
+  commentId: M:Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[])
+  id: WriteAsync(System.Byte[])
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(Byte[])
+  nameWithType: IOwinResponse.WriteAsync(Byte[])
+  fullName: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAsynchronously writes the given bytes to the response body stream.\n"
+  syntax:
+    content: Task WriteAsync(byte[] data)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The response data.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A Task tracking the state of the write operation.
+    content.vb: Function WriteAsync(data As Byte()) As Task
+  overload: Microsoft.Owin.IOwinResponse.WriteAsync*
+  nameWithType.vb: IOwinResponse.WriteAsync(Byte())
+  fullName.vb: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte())
+  name.vb: WriteAsync(Byte())
+- uid: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[],System.Threading.CancellationToken)
+  commentId: M:Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[],System.Threading.CancellationToken)
+  id: WriteAsync(System.Byte[],System.Threading.CancellationToken)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(Byte[], CancellationToken)
+  nameWithType: IOwinResponse.WriteAsync(Byte[], CancellationToken)
+  fullName: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[], System.Threading.CancellationToken)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAsynchronously writes the given bytes to the response body stream.\n"
+  syntax:
+    content: Task WriteAsync(byte[] data, CancellationToken token)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The response data.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: A token used to indicate cancellation.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A Task tracking the state of the write operation.
+    content.vb: Function WriteAsync(data As Byte(), token As CancellationToken) As Task
+  overload: Microsoft.Owin.IOwinResponse.WriteAsync*
+  nameWithType.vb: IOwinResponse.WriteAsync(Byte(), CancellationToken)
+  fullName.vb: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte(), System.Threading.CancellationToken)
+  name.vb: WriteAsync(Byte(), CancellationToken)
+- uid: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  id: WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  nameWithType: IOwinResponse.WriteAsync(Byte[], Int32, Int32, CancellationToken)
+  fullName: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte[], System.Int32, System.Int32, System.Threading.CancellationToken)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAsynchronously writes the given bytes to the response body stream.\n"
+  syntax:
+    content: Task WriteAsync(byte[] data, int offset, int count, CancellationToken token)
+    parameters:
+    - id: data
+      type: System.Byte[]
+      description: The response data.
+    - id: offset
+      type: System.Int32
+      description: The zero-based byte offset in the <code data-dev-comment-type="paramref" class="paramref">data</code> parameter at which to begin copying bytes.
+    - id: count
+      type: System.Int32
+      description: The number of bytes to write.
+    - id: token
+      type: System.Threading.CancellationToken
+      description: A token used to indicate cancellation.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A Task tracking the state of the write operation.
+    content.vb: Function WriteAsync(data As Byte(), offset As Integer, count As Integer, token As CancellationToken) As Task
+  overload: Microsoft.Owin.IOwinResponse.WriteAsync*
+  nameWithType.vb: IOwinResponse.WriteAsync(Byte(), Int32, Int32, CancellationToken)
+  fullName.vb: Microsoft.Owin.IOwinResponse.WriteAsync(System.Byte(), System.Int32, System.Int32, System.Threading.CancellationToken)
+  name.vb: WriteAsync(Byte(), Int32, Int32, CancellationToken)
+- uid: Microsoft.Owin.IOwinResponse.Get``1(System.String)
+  commentId: M:Microsoft.Owin.IOwinResponse.Get``1(System.String)
+  id: Get``1(System.String)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(String)
+  nameWithType: IOwinResponse.Get<T>(String)
+  fullName: Microsoft.Owin.IOwinResponse.Get<T>(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets a value from the OWIN environment, or returns default(T) if not present.\n"
+  syntax:
+    content: T Get<T>(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to get.
+    typeParameters:
+    - id: T
+      description: The type of the value.
+    return:
+      type: '{T}'
+      description: The value with the specified key or the default(T) if not present.
+    content.vb: Function Get(Of T)(key As String) As T
+  overload: Microsoft.Owin.IOwinResponse.Get*
+  nameWithType.vb: IOwinResponse.Get(Of T)(String)
+  fullName.vb: Microsoft.Owin.IOwinResponse.Get(Of T)(System.String)
+  name.vb: Get(Of T)(String)
+- uid: Microsoft.Owin.IOwinResponse.Set``1(System.String,``0)
+  commentId: M:Microsoft.Owin.IOwinResponse.Set``1(System.String,``0)
+  id: Set``1(System.String,``0)
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Set<T>(String, T)
+  nameWithType: IOwinResponse.Set<T>(String, T)
+  fullName: Microsoft.Owin.IOwinResponse.Set<T>(System.String, T)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nSets the given key and value in the OWIN environment.\n"
+  syntax:
+    content: IOwinResponse Set<T>(string key, T value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to set.
+    - id: value
+      type: '{T}'
+      description: The value to set.
+    typeParameters:
+    - id: T
+      description: The type of the value.
+    return:
+      type: Microsoft.Owin.IOwinResponse
+      description: This instance.
+    content.vb: Function Set(Of T)(key As String, value As T) As IOwinResponse
+  overload: Microsoft.Owin.IOwinResponse.Set*
+  nameWithType.vb: IOwinResponse.Set(Of T)(String, T)
+  fullName.vb: Microsoft.Owin.IOwinResponse.Set(Of T)(System.String, T)
+  name.vb: Set(Of T)(String, T)
+- uid: Microsoft.Owin.IOwinResponse.Environment
+  commentId: P:Microsoft.Owin.IOwinResponse.Environment
+  id: Environment
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: IOwinResponse.Environment
+  fullName: Microsoft.Owin.IOwinResponse.Environment
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the OWIN environment.\n"
+  syntax:
+    content: IDictionary<string, object> Environment { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: The OWIN environment.
+    content.vb: ReadOnly Property Environment As IDictionary(Of String, Object)
+  overload: Microsoft.Owin.IOwinResponse.Environment*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinResponse.Context
+  commentId: P:Microsoft.Owin.IOwinResponse.Context
+  id: Context
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: IOwinResponse.Context
+  fullName: Microsoft.Owin.IOwinResponse.Context
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the request context.\n"
+  syntax:
+    content: IOwinContext Context { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.IOwinContext
+      description: The request context.
+    content.vb: ReadOnly Property Context As IOwinContext
+  overload: Microsoft.Owin.IOwinResponse.Context*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinResponse.StatusCode
+  commentId: P:Microsoft.Owin.IOwinResponse.StatusCode
+  id: StatusCode
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: IOwinResponse.StatusCode
+  fullName: Microsoft.Owin.IOwinResponse.StatusCode
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the optional owin.ResponseStatusCode.\n"
+  syntax:
+    content: int StatusCode { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The optional owin.ResponseStatusCode, or 200 if not set.
+    content.vb: Property StatusCode As Integer
+  overload: Microsoft.Owin.IOwinResponse.StatusCode*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinResponse.ReasonPhrase
+  commentId: P:Microsoft.Owin.IOwinResponse.ReasonPhrase
+  id: ReasonPhrase
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: ReasonPhrase
+  nameWithType: IOwinResponse.ReasonPhrase
+  fullName: Microsoft.Owin.IOwinResponse.ReasonPhrase
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the the optional owin.ResponseReasonPhrase.\n"
+  syntax:
+    content: string ReasonPhrase { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The the optional owin.ResponseReasonPhrase.
+    content.vb: Property ReasonPhrase As String
+  overload: Microsoft.Owin.IOwinResponse.ReasonPhrase*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinResponse.Protocol
+  commentId: P:Microsoft.Owin.IOwinResponse.Protocol
+  id: Protocol
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Protocol
+  nameWithType: IOwinResponse.Protocol
+  fullName: Microsoft.Owin.IOwinResponse.Protocol
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the owin.ResponseProtocol.\n"
+  syntax:
+    content: string Protocol { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The owin.ResponseProtocol.
+    content.vb: Property Protocol As String
+  overload: Microsoft.Owin.IOwinResponse.Protocol*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinResponse.Headers
+  commentId: P:Microsoft.Owin.IOwinResponse.Headers
+  id: Headers
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Headers
+  nameWithType: IOwinResponse.Headers
+  fullName: Microsoft.Owin.IOwinResponse.Headers
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the response header collection.\n"
+  syntax:
+    content: IHeaderDictionary Headers { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.IHeaderDictionary
+      description: The response header collection.
+    content.vb: ReadOnly Property Headers As IHeaderDictionary
+  overload: Microsoft.Owin.IOwinResponse.Headers*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinResponse.Cookies
+  commentId: P:Microsoft.Owin.IOwinResponse.Cookies
+  id: Cookies
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Cookies
+  nameWithType: IOwinResponse.Cookies
+  fullName: Microsoft.Owin.IOwinResponse.Cookies
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets a collection used to manipulate the Set-Cookie header.\n"
+  syntax:
+    content: ResponseCookieCollection Cookies { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.ResponseCookieCollection
+      description: A collection used to manipulate the Set-Cookie header.
+    content.vb: ReadOnly Property Cookies As ResponseCookieCollection
+  overload: Microsoft.Owin.IOwinResponse.Cookies*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinResponse.ContentLength
+  commentId: P:Microsoft.Owin.IOwinResponse.ContentLength
+  id: ContentLength
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: ContentLength
+  nameWithType: IOwinResponse.ContentLength
+  fullName: Microsoft.Owin.IOwinResponse.ContentLength
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the Content-Length header.\n"
+  syntax:
+    content: long? ContentLength { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+      description: The Content-Length header.
+    content.vb: Property ContentLength As Long?
+  overload: Microsoft.Owin.IOwinResponse.ContentLength*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinResponse.ContentType
+  commentId: P:Microsoft.Owin.IOwinResponse.ContentType
+  id: ContentType
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: IOwinResponse.ContentType
+  fullName: Microsoft.Owin.IOwinResponse.ContentType
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the Content-Type header.\n"
+  syntax:
+    content: string ContentType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The Content-Type header.
+    content.vb: Property ContentType As String
+  overload: Microsoft.Owin.IOwinResponse.ContentType*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinResponse.Expires
+  commentId: P:Microsoft.Owin.IOwinResponse.Expires
+  id: Expires
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Expires
+  nameWithType: IOwinResponse.Expires
+  fullName: Microsoft.Owin.IOwinResponse.Expires
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the Expires header.\n"
+  syntax:
+    content: DateTimeOffset? Expires { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: The Expires header.
+    content.vb: Property Expires As DateTimeOffset?
+  overload: Microsoft.Owin.IOwinResponse.Expires*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinResponse.ETag
+  commentId: P:Microsoft.Owin.IOwinResponse.ETag
+  id: ETag
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: ETag
+  nameWithType: IOwinResponse.ETag
+  fullName: Microsoft.Owin.IOwinResponse.ETag
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the E-Tag header.\n"
+  syntax:
+    content: string ETag { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The E-Tag header.
+    content.vb: Property ETag As String
+  overload: Microsoft.Owin.IOwinResponse.ETag*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinResponse.Body
+  commentId: P:Microsoft.Owin.IOwinResponse.Body
+  id: Body
+  parent: Microsoft.Owin.IOwinResponse
+  langs:
+  - csharp
+  - vb
+  name: Body
+  nameWithType: IOwinResponse.Body
+  fullName: Microsoft.Owin.IOwinResponse.Body
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the owin.ResponseBody Stream.\n"
+  syntax:
+    content: Stream Body { get; set; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+      description: The owin.ResponseBody Stream.
+    content.vb: Property Body As Stream
+  overload: Microsoft.Owin.IOwinResponse.Body*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Microsoft.Owin
+  commentId: N:Microsoft.Owin
+  isExternal: false
+  name: Microsoft.Owin
+  nameWithType: Microsoft.Owin
+  fullName: Microsoft.Owin
+- uid: Microsoft.Owin.IOwinResponse.OnSendingHeaders*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.OnSendingHeaders
+  isExternal: true
+  name: OnSendingHeaders
+  nameWithType: IOwinResponse.OnSendingHeaders
+  fullName: Microsoft.Owin.IOwinResponse.OnSendingHeaders
+- uid: System.Action{System.Object}
+  commentId: T:System.Action{System.Object}
+  parent: System
+  definition: System.Action`1
+  name: Action<Object>
+  nameWithType: Action<Object>
+  fullName: System.Action<System.Object>
+  nameWithType.vb: Action(Of Object)
+  fullName.vb: System.Action(Of System.Object)
+  name.vb: Action(Of Object)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Owin.IOwinResponse.Redirect*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Redirect
+  isExternal: true
+  name: Redirect
+  nameWithType: IOwinResponse.Redirect
+  fullName: Microsoft.Owin.IOwinResponse.Redirect
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Owin.IOwinResponse.Write*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Write
+  isExternal: true
+  name: Write
+  nameWithType: IOwinResponse.Write
+  fullName: Microsoft.Owin.IOwinResponse.Write
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Owin.IOwinResponse.WriteAsync*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.WriteAsync
+  isExternal: true
+  name: WriteAsync
+  nameWithType: IOwinResponse.WriteAsync
+  fullName: Microsoft.Owin.IOwinResponse.WriteAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: false
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: Microsoft.Owin.IOwinResponse.Get*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Get
+  isExternal: true
+  name: Get
+  nameWithType: IOwinResponse.Get
+  fullName: Microsoft.Owin.IOwinResponse.Get
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Owin.IOwinResponse.Set*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Set
+  isExternal: true
+  name: Set
+  nameWithType: IOwinResponse.Set
+  fullName: Microsoft.Owin.IOwinResponse.Set
+- uid: Microsoft.Owin.IOwinResponse
+  commentId: T:Microsoft.Owin.IOwinResponse
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IOwinResponse
+  nameWithType: IOwinResponse
+  fullName: Microsoft.Owin.IOwinResponse
+- uid: Microsoft.Owin.IOwinResponse.Environment*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Environment
+  isExternal: true
+  name: Environment
+  nameWithType: IOwinResponse.Environment
+  fullName: Microsoft.Owin.IOwinResponse.Environment
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Owin.IOwinResponse.Context*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Context
+  isExternal: true
+  name: Context
+  nameWithType: IOwinResponse.Context
+  fullName: Microsoft.Owin.IOwinResponse.Context
+- uid: Microsoft.Owin.IOwinContext
+  commentId: T:Microsoft.Owin.IOwinContext
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IOwinContext
+  nameWithType: IOwinContext
+  fullName: Microsoft.Owin.IOwinContext
+- uid: Microsoft.Owin.IOwinResponse.StatusCode*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.StatusCode
+  isExternal: true
+  name: StatusCode
+  nameWithType: IOwinResponse.StatusCode
+  fullName: Microsoft.Owin.IOwinResponse.StatusCode
+- uid: Microsoft.Owin.IOwinResponse.ReasonPhrase*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.ReasonPhrase
+  isExternal: true
+  name: ReasonPhrase
+  nameWithType: IOwinResponse.ReasonPhrase
+  fullName: Microsoft.Owin.IOwinResponse.ReasonPhrase
+- uid: Microsoft.Owin.IOwinResponse.Protocol*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Protocol
+  isExternal: true
+  name: Protocol
+  nameWithType: IOwinResponse.Protocol
+  fullName: Microsoft.Owin.IOwinResponse.Protocol
+- uid: Microsoft.Owin.IOwinResponse.Headers*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Headers
+  isExternal: true
+  name: Headers
+  nameWithType: IOwinResponse.Headers
+  fullName: Microsoft.Owin.IOwinResponse.Headers
+- uid: Microsoft.Owin.IHeaderDictionary
+  commentId: T:Microsoft.Owin.IHeaderDictionary
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IHeaderDictionary
+  nameWithType: IHeaderDictionary
+  fullName: Microsoft.Owin.IHeaderDictionary
+- uid: Microsoft.Owin.IOwinResponse.Cookies*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Cookies
+  isExternal: true
+  name: Cookies
+  nameWithType: IOwinResponse.Cookies
+  fullName: Microsoft.Owin.IOwinResponse.Cookies
+- uid: Microsoft.Owin.ResponseCookieCollection
+  commentId: T:Microsoft.Owin.ResponseCookieCollection
+  parent: Microsoft.Owin
+  isExternal: true
+  name: ResponseCookieCollection
+  nameWithType: ResponseCookieCollection
+  fullName: Microsoft.Owin.ResponseCookieCollection
+- uid: Microsoft.Owin.IOwinResponse.ContentLength*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.ContentLength
+  isExternal: true
+  name: ContentLength
+  nameWithType: IOwinResponse.ContentLength
+  fullName: Microsoft.Owin.IOwinResponse.ContentLength
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int64>
+  nameWithType: Nullable<Int64>
+  fullName: System.Nullable<System.Int64>
+  nameWithType.vb: Nullable(Of Int64)
+  fullName.vb: System.Nullable(Of System.Int64)
+  name.vb: Nullable(Of Int64)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.IOwinResponse.ContentType*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.ContentType
+  isExternal: true
+  name: ContentType
+  nameWithType: IOwinResponse.ContentType
+  fullName: Microsoft.Owin.IOwinResponse.ContentType
+- uid: Microsoft.Owin.IOwinResponse.Expires*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Expires
+  isExternal: true
+  name: Expires
+  nameWithType: IOwinResponse.Expires
+  fullName: Microsoft.Owin.IOwinResponse.Expires
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.IOwinResponse.ETag*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.ETag
+  isExternal: true
+  name: ETag
+  nameWithType: IOwinResponse.ETag
+  fullName: Microsoft.Owin.IOwinResponse.ETag
+- uid: Microsoft.Owin.IOwinResponse.Body*
+  commentId: Overload:Microsoft.Owin.IOwinResponse.Body
+  isExternal: true
+  name: Body
+  nameWithType: IOwinResponse.Body
+  fullName: Microsoft.Owin.IOwinResponse.Body
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO

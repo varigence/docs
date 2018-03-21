@@ -1,0 +1,459 @@
+id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+language: CSharp
+name:
+  Default: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+qualifiedName:
+  Default: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+type: Assembly
+modifiers: {}
+items:
+- id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+  commentId: N:Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+  language: CSharp
+  name:
+    CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+  nameWithType:
+    CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+  qualifiedName:
+    CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+  type: Namespace
+  assemblies:
+  - Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+  modifiers: {}
+  items:
+  - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+    commentId: T:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+    language: CSharp
+    name:
+      CSharp: CSharpCodeProvider
+      VB: CSharpCodeProvider
+    nameWithType:
+      CSharp: CSharpCodeProvider
+      VB: CSharpCodeProvider
+    qualifiedName:
+      CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+      VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+    type: Class
+    assemblies:
+    - Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    namespace: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    source:
+      path: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      isExternal: true
+    syntax:
+      content:
+        CSharp: 'public sealed class CSharpCodeProvider : CSharpCodeProvider'
+        VB: >-
+          Public NotInheritable Class CSharpCodeProvider
+
+              Inherits CSharpCodeProvider
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - sealed
+      - class
+      VB:
+      - Public
+      - NotInheritable
+      - Class
+    items:
+    - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.#ctor
+      commentId: M:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.#ctor
+      language: CSharp
+      name:
+        CSharp: CSharpCodeProvider()
+        VB: CSharpCodeProvider()
+      nameWithType:
+        CSharp: CSharpCodeProvider.CSharpCodeProvider()
+        VB: CSharpCodeProvider.CSharpCodeProvider()
+      qualifiedName:
+        CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CSharpCodeProvider()
+        VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CSharpCodeProvider()
+      type: Constructor
+      assemblies:
+      - Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      namespace: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      source:
+        path: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+        isExternal: true
+      syntax:
+        content:
+          CSharp: public CSharpCodeProvider()
+          VB: Public Sub New
+      overload: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler
+      commentId: M:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler
+      language: CSharp
+      name:
+        CSharp: CreateCompiler()
+        VB: CreateCompiler()
+      nameWithType:
+        CSharp: CSharpCodeProvider.CreateCompiler()
+        VB: CSharpCodeProvider.CreateCompiler()
+      qualifiedName:
+        CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler()
+        VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler()
+      type: Method
+      assemblies:
+      - Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      namespace: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      source:
+        path: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+        isExternal: true
+      syntax:
+        content:
+          CSharp: >-
+            [Obsolete("Callers should not use the ICodeCompiler interface and should instead use the methods directly on the CodeDomProvider class.")]
+
+            public override ICodeCompiler CreateCompiler()
+          VB: >-
+            <Obsolete("Callers should not use the ICodeCompiler interface and should instead use the methods directly on the CodeDomProvider class.")>
+
+            Public Overrides Function CreateCompiler As ICodeCompiler
+        return:
+          type: System.CodeDom.Compiler.ICodeCompiler
+      overload: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler*
+      attributes:
+      - type: System.ObsoleteAttribute
+        ctor: System.ObsoleteAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: Callers should not use the ICodeCompiler interface and should instead use the methods directly on the CodeDomProvider class.
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+  - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+    commentId: T:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+    language: CSharp
+    name:
+      CSharp: VBCodeProvider
+      VB: VBCodeProvider
+    nameWithType:
+      CSharp: VBCodeProvider
+      VB: VBCodeProvider
+    qualifiedName:
+      CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+      VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+    type: Class
+    assemblies:
+    - Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    namespace: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    source:
+      path: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      isExternal: true
+    syntax:
+      content:
+        CSharp: 'public sealed class VBCodeProvider : VBCodeProvider'
+        VB: >-
+          Public NotInheritable Class VBCodeProvider
+
+              Inherits VBCodeProvider
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - sealed
+      - class
+      VB:
+      - Public
+      - NotInheritable
+      - Class
+    items:
+    - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.#ctor
+      commentId: M:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.#ctor
+      language: CSharp
+      name:
+        CSharp: VBCodeProvider()
+        VB: VBCodeProvider()
+      nameWithType:
+        CSharp: VBCodeProvider.VBCodeProvider()
+        VB: VBCodeProvider.VBCodeProvider()
+      qualifiedName:
+        CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.VBCodeProvider()
+        VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.VBCodeProvider()
+      type: Constructor
+      assemblies:
+      - Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      namespace: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      source:
+        path: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+        isExternal: true
+      syntax:
+        content:
+          CSharp: public VBCodeProvider()
+          VB: Public Sub New
+      overload: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.#ctor*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler
+      commentId: M:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler
+      language: CSharp
+      name:
+        CSharp: CreateCompiler()
+        VB: CreateCompiler()
+      nameWithType:
+        CSharp: VBCodeProvider.CreateCompiler()
+        VB: VBCodeProvider.CreateCompiler()
+      qualifiedName:
+        CSharp: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler()
+        VB: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler()
+      type: Method
+      assemblies:
+      - Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      namespace: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      source:
+        path: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+        isExternal: true
+      syntax:
+        content:
+          CSharp: >-
+            [Obsolete("Callers should not use the ICodeCompiler interface and should instead use the methods directly on the CodeDomProvider class.")]
+
+            public override ICodeCompiler CreateCompiler()
+          VB: >-
+            <Obsolete("Callers should not use the ICodeCompiler interface and should instead use the methods directly on the CodeDomProvider class.")>
+
+            Public Overrides Function CreateCompiler As ICodeCompiler
+        return:
+          type: System.CodeDom.Compiler.ICodeCompiler
+      overload: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler*
+      attributes:
+      - type: System.ObsoleteAttribute
+        ctor: System.ObsoleteAttribute.#ctor(System.String)
+        arguments:
+        - type: System.String
+          value: Callers should not use the ICodeCompiler interface and should instead use the methods directly on the CodeDomProvider class.
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+references:
+  Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.#ctor*:
+    name:
+      CSharp:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.#ctor*
+        name: CSharpCodeProvider
+        nameWithType: CSharpCodeProvider.CSharpCodeProvider
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CSharpCodeProvider
+        isExternal: true
+      VB:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.#ctor*
+        name: CSharpCodeProvider
+        nameWithType: CSharpCodeProvider.CSharpCodeProvider
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CSharpCodeProvider
+        isExternal: true
+    isDefinition: true
+    commentId: Overload:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.#ctor
+  System.CodeDom.Compiler.ICodeCompiler:
+    name:
+      CSharp:
+      - id: System.CodeDom.Compiler.ICodeCompiler
+        name: ICodeCompiler
+        nameWithType: ICodeCompiler
+        qualifiedName: System.CodeDom.Compiler.ICodeCompiler
+        isExternal: true
+      VB:
+      - id: System.CodeDom.Compiler.ICodeCompiler
+        name: ICodeCompiler
+        nameWithType: ICodeCompiler
+        qualifiedName: System.CodeDom.Compiler.ICodeCompiler
+        isExternal: true
+    isDefinition: true
+  Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler*:
+    name:
+      CSharp:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler*
+        name: CreateCompiler
+        nameWithType: CSharpCodeProvider.CreateCompiler
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler
+        isExternal: true
+      VB:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler*
+        name: CreateCompiler
+        nameWithType: CSharpCodeProvider.CreateCompiler
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler
+        isExternal: true
+    isDefinition: true
+    commentId: Overload:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider.CreateCompiler
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.ObsoleteAttribute:
+    name:
+      CSharp:
+      - id: System.ObsoleteAttribute
+        name: ObsoleteAttribute
+        nameWithType: ObsoleteAttribute
+        qualifiedName: System.ObsoleteAttribute
+        isExternal: true
+      VB:
+      - id: System.ObsoleteAttribute
+        name: ObsoleteAttribute
+        nameWithType: ObsoleteAttribute
+        qualifiedName: System.ObsoleteAttribute
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.ObsoleteAttribute
+  System.ObsoleteAttribute.#ctor(System.String):
+    name:
+      CSharp:
+      - id: System.ObsoleteAttribute.#ctor(System.String)
+        name: ObsoleteAttribute
+        nameWithType: ObsoleteAttribute.ObsoleteAttribute
+        qualifiedName: System.ObsoleteAttribute.ObsoleteAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: System.ObsoleteAttribute.#ctor(System.String)
+        name: ObsoleteAttribute
+        nameWithType: ObsoleteAttribute.ObsoleteAttribute
+        qualifiedName: System.ObsoleteAttribute.ObsoleteAttribute
+        isExternal: true
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.ObsoleteAttribute
+    commentId: M:System.ObsoleteAttribute.#ctor(System.String)
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        nameWithType: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.String
+  Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider:
+    name:
+      CSharp:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+        name: CSharpCodeProvider
+        nameWithType: CSharpCodeProvider
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+        isExternal: true
+      VB:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+        name: CSharpCodeProvider
+        nameWithType: CSharpCodeProvider
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+        isExternal: true
+    isDefinition: true
+    commentId: T:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider
+  Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.#ctor*:
+    name:
+      CSharp:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.#ctor*
+        name: VBCodeProvider
+        nameWithType: VBCodeProvider.VBCodeProvider
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.VBCodeProvider
+        isExternal: true
+      VB:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.#ctor*
+        name: VBCodeProvider
+        nameWithType: VBCodeProvider.VBCodeProvider
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.VBCodeProvider
+        isExternal: true
+    isDefinition: true
+    commentId: Overload:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.#ctor
+  Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler*:
+    name:
+      CSharp:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler*
+        name: CreateCompiler
+        nameWithType: VBCodeProvider.CreateCompiler
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler
+        isExternal: true
+      VB:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler*
+        name: CreateCompiler
+        nameWithType: VBCodeProvider.CreateCompiler
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler
+        isExternal: true
+    isDefinition: true
+    commentId: Overload:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider.CreateCompiler
+  Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider:
+    name:
+      CSharp:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+        name: VBCodeProvider
+        nameWithType: VBCodeProvider
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+        isExternal: true
+      VB:
+      - id: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+        name: VBCodeProvider
+        nameWithType: VBCodeProvider
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+        isExternal: true
+    isDefinition: true
+    commentId: T:Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider
+  Microsoft.CodeDom.Providers.DotNetCompilerPlatform:
+    name:
+      CSharp:
+      - name: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+        nameWithType: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+      VB:
+      - name: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+        nameWithType: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+        qualifiedName: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+    isDefinition: true
+    commentId: N:Microsoft.CodeDom.Providers.DotNetCompilerPlatform

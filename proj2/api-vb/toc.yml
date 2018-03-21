@@ -1,0 +1,8 @@
+### YamlMime:TableOfContent
+- uid: Class2
+  name: Class2
+  items:
+  - uid: Class2.Class2
+    name: Class2
+  - uid: Class2.Class2.InnerClass
+    name: Class2.InnerClass

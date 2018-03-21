@@ -1,0 +1,457 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Extensions.IntegratedPipelineExtensions
+  commentId: T:Microsoft.Owin.Extensions.IntegratedPipelineExtensions
+  id: IntegratedPipelineExtensions
+  parent: Microsoft.Owin.Extensions
+  children:
+  - Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker(Owin.IAppBuilder,Owin.PipelineStage)
+  - Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker(Owin.IAppBuilder,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IntegratedPipelineExtensions
+  nameWithType: IntegratedPipelineExtensions
+  fullName: Microsoft.Owin.Extensions.IntegratedPipelineExtensions
+  type: Class
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Extensions
+  summary: "\nExtension methods used to indicate at which stage in the integrated pipeline prior middleware should run.\n"
+  syntax:
+    content: public static class IntegratedPipelineExtensions
+    content.vb: Public Module IntegratedPipelineExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker(Owin.IAppBuilder,System.String)
+  commentId: M:Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker(Owin.IAppBuilder,System.String)
+  id: UseStageMarker(Owin.IAppBuilder,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Owin.Extensions.IntegratedPipelineExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseStageMarker(IAppBuilder, String)
+  nameWithType: IntegratedPipelineExtensions.UseStageMarker(IAppBuilder, String)
+  fullName: Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker(Owin.IAppBuilder, System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Extensions
+  summary: "\nCall after other middleware to specify when they should run in the integrated pipeline.\n"
+  syntax:
+    content: public static IAppBuilder UseStageMarker(this IAppBuilder app, string stageName)
+    parameters:
+    - id: app
+      type: Owin.IAppBuilder
+      description: The IAppBuilder.
+    - id: stageName
+      type: System.String
+      description: The name of the integrated pipeline in which to run.
+    return:
+      type: Owin.IAppBuilder
+      description: The original IAppBuilder for chaining.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseStageMarker(app As IAppBuilder, stageName As String) As IAppBuilder
+  overload: Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker(Owin.IAppBuilder,Owin.PipelineStage)
+  commentId: M:Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker(Owin.IAppBuilder,Owin.PipelineStage)
+  id: UseStageMarker(Owin.IAppBuilder,Owin.PipelineStage)
+  isExtensionMethod: true
+  parent: Microsoft.Owin.Extensions.IntegratedPipelineExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseStageMarker(IAppBuilder, PipelineStage)
+  nameWithType: IntegratedPipelineExtensions.UseStageMarker(IAppBuilder, PipelineStage)
+  fullName: Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker(Owin.IAppBuilder, Owin.PipelineStage)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Extensions
+  summary: "\nCall after other middleware to specify when they should run in the integrated pipeline.\n"
+  syntax:
+    content: public static IAppBuilder UseStageMarker(this IAppBuilder app, PipelineStage stage)
+    parameters:
+    - id: app
+      type: Owin.IAppBuilder
+      description: The IAppBuilder.
+    - id: stage
+      type: Owin.PipelineStage
+      description: The stage of the integrated pipeline in which to run.
+    return:
+      type: Owin.IAppBuilder
+      description: The original IAppBuilder for chaining.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function UseStageMarker(app As IAppBuilder, stage As PipelineStage) As IAppBuilder
+  overload: Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Owin.Extensions
+  commentId: N:Microsoft.Owin.Extensions
+  isExternal: false
+  name: Microsoft.Owin.Extensions
+  nameWithType: Microsoft.Owin.Extensions
+  fullName: Microsoft.Owin.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker*
+  commentId: Overload:Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker
+  isExternal: true
+  name: UseStageMarker
+  nameWithType: IntegratedPipelineExtensions.UseStageMarker
+  fullName: Microsoft.Owin.Extensions.IntegratedPipelineExtensions.UseStageMarker
+- uid: Owin.IAppBuilder
+  isExternal: true
+  name: IAppBuilder
+  nameWithType: IAppBuilder
+  fullName: Owin.IAppBuilder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Owin.PipelineStage
+  commentId: T:Owin.PipelineStage
+  parent: Owin
+  isExternal: true
+  name: PipelineStage
+  nameWithType: PipelineStage
+  fullName: Owin.PipelineStage
+- uid: Owin
+  commentId: N:Owin
+  isExternal: false
+  name: Owin
+  nameWithType: Owin
+  fullName: Owin

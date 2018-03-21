@@ -1,0 +1,496 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.IOwinContext
+  commentId: T:Microsoft.Owin.IOwinContext
+  id: IOwinContext
+  parent: Microsoft.Owin
+  children:
+  - Microsoft.Owin.IOwinContext.Authentication
+  - Microsoft.Owin.IOwinContext.Environment
+  - Microsoft.Owin.IOwinContext.Get``1(System.String)
+  - Microsoft.Owin.IOwinContext.Request
+  - Microsoft.Owin.IOwinContext.Response
+  - Microsoft.Owin.IOwinContext.Set``1(System.String,``0)
+  - Microsoft.Owin.IOwinContext.TraceOutput
+  langs:
+  - csharp
+  - vb
+  name: IOwinContext
+  nameWithType: IOwinContext
+  fullName: Microsoft.Owin.IOwinContext
+  type: Interface
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nThis wraps OWIN environment dictionary and provides strongly typed accessors.\n"
+  syntax:
+    content: public interface IOwinContext
+    content.vb: Public Interface IOwinContext
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Owin.IOwinContext.Get``1(System.String)
+  commentId: M:Microsoft.Owin.IOwinContext.Get``1(System.String)
+  id: Get``1(System.String)
+  parent: Microsoft.Owin.IOwinContext
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(String)
+  nameWithType: IOwinContext.Get<T>(String)
+  fullName: Microsoft.Owin.IOwinContext.Get<T>(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets a value from the OWIN environment, or returns default(T) if not present.\n"
+  syntax:
+    content: T Get<T>(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to get.
+    typeParameters:
+    - id: T
+      description: The type of the value.
+    return:
+      type: '{T}'
+      description: The value with the specified key or the default(T) if not present.
+    content.vb: Function Get(Of T)(key As String) As T
+  overload: Microsoft.Owin.IOwinContext.Get*
+  nameWithType.vb: IOwinContext.Get(Of T)(String)
+  fullName.vb: Microsoft.Owin.IOwinContext.Get(Of T)(System.String)
+  name.vb: Get(Of T)(String)
+- uid: Microsoft.Owin.IOwinContext.Set``1(System.String,``0)
+  commentId: M:Microsoft.Owin.IOwinContext.Set``1(System.String,``0)
+  id: Set``1(System.String,``0)
+  parent: Microsoft.Owin.IOwinContext
+  langs:
+  - csharp
+  - vb
+  name: Set<T>(String, T)
+  nameWithType: IOwinContext.Set<T>(String, T)
+  fullName: Microsoft.Owin.IOwinContext.Set<T>(System.String, T)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nSets the given key and value in the OWIN environment.\n"
+  syntax:
+    content: IOwinContext Set<T>(string key, T value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to set.
+    - id: value
+      type: '{T}'
+      description: The value to set.
+    typeParameters:
+    - id: T
+      description: The type of the value.
+    return:
+      type: Microsoft.Owin.IOwinContext
+      description: This instance.
+    content.vb: Function Set(Of T)(key As String, value As T) As IOwinContext
+  overload: Microsoft.Owin.IOwinContext.Set*
+  nameWithType.vb: IOwinContext.Set(Of T)(String, T)
+  fullName.vb: Microsoft.Owin.IOwinContext.Set(Of T)(System.String, T)
+  name.vb: Set(Of T)(String, T)
+- uid: Microsoft.Owin.IOwinContext.Request
+  commentId: P:Microsoft.Owin.IOwinContext.Request
+  id: Request
+  parent: Microsoft.Owin.IOwinContext
+  langs:
+  - csharp
+  - vb
+  name: Request
+  nameWithType: IOwinContext.Request
+  fullName: Microsoft.Owin.IOwinContext.Request
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets a wrapper exposing request specific properties.\n"
+  syntax:
+    content: IOwinRequest Request { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.IOwinRequest
+      description: A wrapper exposing request specific properties.
+    content.vb: ReadOnly Property Request As IOwinRequest
+  overload: Microsoft.Owin.IOwinContext.Request*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinContext.Response
+  commentId: P:Microsoft.Owin.IOwinContext.Response
+  id: Response
+  parent: Microsoft.Owin.IOwinContext
+  langs:
+  - csharp
+  - vb
+  name: Response
+  nameWithType: IOwinContext.Response
+  fullName: Microsoft.Owin.IOwinContext.Response
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets a wrapper exposing response specific properties.\n"
+  syntax:
+    content: IOwinResponse Response { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.IOwinResponse
+      description: A wrapper exposing response specific properties.
+    content.vb: ReadOnly Property Response As IOwinResponse
+  overload: Microsoft.Owin.IOwinContext.Response*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinContext.Authentication
+  commentId: P:Microsoft.Owin.IOwinContext.Authentication
+  id: Authentication
+  parent: Microsoft.Owin.IOwinContext
+  langs:
+  - csharp
+  - vb
+  name: Authentication
+  nameWithType: IOwinContext.Authentication
+  fullName: Microsoft.Owin.IOwinContext.Authentication
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the Authentication middleware functionality available on the current request.\n"
+  syntax:
+    content: IAuthenticationManager Authentication { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.Security.IAuthenticationManager
+      description: The authentication middleware functionality available on the current request.
+    content.vb: ReadOnly Property Authentication As IAuthenticationManager
+  overload: Microsoft.Owin.IOwinContext.Authentication*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinContext.Environment
+  commentId: P:Microsoft.Owin.IOwinContext.Environment
+  id: Environment
+  parent: Microsoft.Owin.IOwinContext
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: IOwinContext.Environment
+  fullName: Microsoft.Owin.IOwinContext.Environment
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the OWIN environment.\n"
+  syntax:
+    content: IDictionary<string, object> Environment { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: The OWIN environment.
+    content.vb: ReadOnly Property Environment As IDictionary(Of String, Object)
+  overload: Microsoft.Owin.IOwinContext.Environment*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinContext.TraceOutput
+  commentId: P:Microsoft.Owin.IOwinContext.TraceOutput
+  id: TraceOutput
+  parent: Microsoft.Owin.IOwinContext
+  langs:
+  - csharp
+  - vb
+  name: TraceOutput
+  nameWithType: IOwinContext.TraceOutput
+  fullName: Microsoft.Owin.IOwinContext.TraceOutput
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the host.TraceOutput environment value.\n"
+  syntax:
+    content: TextWriter TraceOutput { get; set; }
+    parameters: []
+    return:
+      type: System.IO.TextWriter
+      description: The host.TraceOutput TextWriter.
+    content.vb: Property TraceOutput As TextWriter
+  overload: Microsoft.Owin.IOwinContext.TraceOutput*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Microsoft.Owin
+  commentId: N:Microsoft.Owin
+  isExternal: false
+  name: Microsoft.Owin
+  nameWithType: Microsoft.Owin
+  fullName: Microsoft.Owin
+- uid: Microsoft.Owin.IOwinContext.Get*
+  commentId: Overload:Microsoft.Owin.IOwinContext.Get
+  isExternal: true
+  name: Get
+  nameWithType: IOwinContext.Get
+  fullName: Microsoft.Owin.IOwinContext.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Owin.IOwinContext.Set*
+  commentId: Overload:Microsoft.Owin.IOwinContext.Set
+  isExternal: true
+  name: Set
+  nameWithType: IOwinContext.Set
+  fullName: Microsoft.Owin.IOwinContext.Set
+- uid: Microsoft.Owin.IOwinContext
+  commentId: T:Microsoft.Owin.IOwinContext
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IOwinContext
+  nameWithType: IOwinContext
+  fullName: Microsoft.Owin.IOwinContext
+- uid: Microsoft.Owin.IOwinContext.Request*
+  commentId: Overload:Microsoft.Owin.IOwinContext.Request
+  isExternal: true
+  name: Request
+  nameWithType: IOwinContext.Request
+  fullName: Microsoft.Owin.IOwinContext.Request
+- uid: Microsoft.Owin.IOwinRequest
+  commentId: T:Microsoft.Owin.IOwinRequest
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IOwinRequest
+  nameWithType: IOwinRequest
+  fullName: Microsoft.Owin.IOwinRequest
+- uid: Microsoft.Owin.IOwinContext.Response*
+  commentId: Overload:Microsoft.Owin.IOwinContext.Response
+  isExternal: true
+  name: Response
+  nameWithType: IOwinContext.Response
+  fullName: Microsoft.Owin.IOwinContext.Response
+- uid: Microsoft.Owin.IOwinResponse
+  commentId: T:Microsoft.Owin.IOwinResponse
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IOwinResponse
+  nameWithType: IOwinResponse
+  fullName: Microsoft.Owin.IOwinResponse
+- uid: Microsoft.Owin.IOwinContext.Authentication*
+  commentId: Overload:Microsoft.Owin.IOwinContext.Authentication
+  isExternal: true
+  name: Authentication
+  nameWithType: IOwinContext.Authentication
+  fullName: Microsoft.Owin.IOwinContext.Authentication
+- uid: Microsoft.Owin.Security.IAuthenticationManager
+  commentId: T:Microsoft.Owin.Security.IAuthenticationManager
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: IAuthenticationManager
+  nameWithType: IAuthenticationManager
+  fullName: Microsoft.Owin.Security.IAuthenticationManager
+- uid: Microsoft.Owin.Security
+  commentId: N:Microsoft.Owin.Security
+  isExternal: false
+  name: Microsoft.Owin.Security
+  nameWithType: Microsoft.Owin.Security
+  fullName: Microsoft.Owin.Security
+- uid: Microsoft.Owin.IOwinContext.Environment*
+  commentId: Overload:Microsoft.Owin.IOwinContext.Environment
+  isExternal: true
+  name: Environment
+  nameWithType: IOwinContext.Environment
+  fullName: Microsoft.Owin.IOwinContext.Environment
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Owin.IOwinContext.TraceOutput*
+  commentId: Overload:Microsoft.Owin.IOwinContext.TraceOutput
+  isExternal: true
+  name: TraceOutput
+  nameWithType: IOwinContext.TraceOutput
+  fullName: Microsoft.Owin.IOwinContext.TraceOutput
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO

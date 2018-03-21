@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Subversion </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Subversion ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/Varigence-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h4 id="mist-user-guide">Mist User Guide</h4>
+<h5 id="source-control-setup">Source Control Setup</h5>
+<p>Mist has the ability to work with projects that are stored in TFS and Subversion source control environments. To work with either source control environment, some additional setup is required.</p>
+<h3 id="subversion">Subversion</h3>
+<ol>
+<li>Install CollabNet&#39;s Subversion client, which can be downloaded from <a href="http://www.collab.net/downloads/subversion/">CollabNet Subversion downloads</a>.<ul>
+<li>Neither SlikSVN nor other Subversion clients are currently supported.</li>
+</ul>
+</li>
+<li>Install TortoiseSVN from <a href="http://tortoisesvn.net/downloads.html">TortoiseSVN downloads</a>.<ul>
+<li>Do <strong>not</strong> install the command line client tools when installing Tortoise SVN.</li>
+</ul>
+</li>
+<li>Ensure paths to svn.exe (installed with CollabNet&#39;s Subversion client) and tortoiseproc.exe (installed with TortoiseSVN) are in your Path environment variable.</li>
+<li>Add your Mist project to your Subversion working copy.<ul>
+<li>If no working copy is present, then it must be created. See the <a href="http://tortoisesvn.net/docs/nightly/TortoiseSVN_en/tsvn-dug-checkout.html">Tortoise documentation</a> for more information.</li>
+</ul>
+</li>
+<li>Open the project in Mist.</li>
+</ol>
+<h3 id="tfs">TFS</h3>
+<ol>
+<li>Ensure tf.exe is available on the machine where Mist is installed.<ul>
+<li>tf.exe is not included in VS 2008 installations. It can be downloaded from the<a href="http://www.microsoft.com/en-us/download/details.aspx?id=16338">Visual Studio Team System 2008 Team Explorer</a> package.</li>
+<li>tf.exe is included, by default, in VS 2010 installations.</li>
+</ul>
+</li>
+<li>Install the Team Foundation Server Power Tools, which can be downloaded from <a href="http://msdn.microsoft.com/en-us/vstudio/bb980963.aspx">Visual Studio Power Tools</a></li>
+<li>Add your Mist project to a TFS workspace. <ul>
+<li>To create a TFS workspace that contains your project, see the 
+      MSDN documentation for <a href="http://msdn.microsoft.com/en-us/library/cc138512">Visual Studio 2008</a> and <a href="http://msdn.microsoft.com/en-us/library/cc138514">Visual Studio 2010</a> users.</li>
+<li>To add files and folders to TFS version control, see the <a href="http://msdn.microsoft.com/en-us/library/ms181392">MSDN documentation</a></li>
+<li>For those just getting started with TFS, MSDN provides detailed documentation on how TFS works and how to use it.</li>
+</ul>
+</li>
+<li>Open the project in Mist.</li>
+<li>In Project View, right click on the project and select <strong>Properties</strong>.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/1.png" alt="Project Context menu"></li>
+<li>In the Properties designer, press the <strong>Locate tf...</strong> button.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/2.png" alt="Locate tf button highlighted"></li>
+<li>Find tf.exe on your system and press <strong>Open</strong>. The path to tf.exe will be automatically inserted in the tf Path textbox.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/3.png" alt="Locate tf dialog box"><br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/3a.png" alt="tf Path textbox"></li>
+<li>If your TFS enlistment requires logon credentials, press the <strong>Change Credentials</strong> button.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/4.png" alt="Change Credentials button highlighted"></li>
+<li>Enter your username and password in the Credentials dialog box and press <strong>OK</strong>.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/5.png" alt="Credentials dialog box"></li>
+<li>Click the <strong>Reload Project</strong> button.<br>
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/6.png" alt="Reload Project button highlighted"></li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Varigence<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

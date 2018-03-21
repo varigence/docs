@@ -1,0 +1,867 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.FormCollection
+  commentId: T:Microsoft.Owin.FormCollection
+  id: FormCollection
+  parent: Microsoft.Owin
+  children:
+  - Microsoft.Owin.FormCollection.#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})
+  langs:
+  - csharp
+  - vb
+  name: FormCollection
+  nameWithType: FormCollection
+  fullName: Microsoft.Owin.FormCollection
+  type: Class
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nContains the parsed form values.\n"
+  syntax:
+    content: 'public class FormCollection : ReadableStringCollection, IFormCollection, IReadableStringCollection, IEnumerable<KeyValuePair<string, string[]>>, IEnumerable'
+    content.vb: >-
+      Public Class FormCollection
+          Inherits ReadableStringCollection
+          Implements IFormCollection, IReadableStringCollection, IEnumerable(Of KeyValuePair(Of String, String())), IEnumerable
+  inheritance:
+  - System.Object
+  - Microsoft.Owin.ReadableStringCollection
+  implements:
+  - Microsoft.Owin.IFormCollection
+  - Microsoft.Owin.IReadableStringCollection
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - Microsoft.Owin.ReadableStringCollection.Get(System.String)
+  - Microsoft.Owin.ReadableStringCollection.GetValues(System.String)
+  - Microsoft.Owin.ReadableStringCollection.GetEnumerator
+  - Microsoft.Owin.ReadableStringCollection.System#Collections#IEnumerable#GetEnumerator
+  - Microsoft.Owin.ReadableStringCollection.Item(System.String)
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Owin.FormCollection.#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})
+  commentId: M:Microsoft.Owin.FormCollection.#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})
+  id: '#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})'
+  parent: Microsoft.Owin.FormCollection
+  langs:
+  - csharp
+  - vb
+  name: FormCollection(IDictionary<String, String[]>)
+  nameWithType: FormCollection.FormCollection(IDictionary<String, String[]>)
+  fullName: Microsoft.Owin.FormCollection.FormCollection(System.Collections.Generic.IDictionary<System.String, System.String[]>)
+  type: Constructor
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Owin.FormCollection\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  syntax:
+    content: public FormCollection(IDictionary<string, string[]> store)
+    parameters:
+    - id: store
+      type: System.Collections.Generic.IDictionary{System.String,System.String[]}
+      description: The store for the form.
+    content.vb: Public Sub New(store As IDictionary(Of String, String()))
+  overload: Microsoft.Owin.FormCollection.#ctor*
+  nameWithType.vb: FormCollection.FormCollection(IDictionary(Of String, String()))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.FormCollection.FormCollection(System.Collections.Generic.IDictionary(Of System.String, System.String()))
+  name.vb: FormCollection(IDictionary(Of String, String()))
+references:
+- uid: Microsoft.Owin
+  commentId: N:Microsoft.Owin
+  isExternal: false
+  name: Microsoft.Owin
+  nameWithType: Microsoft.Owin
+  fullName: Microsoft.Owin
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Owin.ReadableStringCollection
+  commentId: T:Microsoft.Owin.ReadableStringCollection
+  parent: Microsoft.Owin
+  isExternal: true
+  name: ReadableStringCollection
+  nameWithType: ReadableStringCollection
+  fullName: Microsoft.Owin.ReadableStringCollection
+- uid: Microsoft.Owin.IFormCollection
+  commentId: T:Microsoft.Owin.IFormCollection
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IFormCollection
+  nameWithType: IFormCollection
+  fullName: Microsoft.Owin.IFormCollection
+- uid: Microsoft.Owin.IReadableStringCollection
+  commentId: T:Microsoft.Owin.IReadableStringCollection
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IReadableStringCollection
+  nameWithType: IReadableStringCollection
+  fullName: Microsoft.Owin.IReadableStringCollection
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<KeyValuePair<String, String[]>>
+  nameWithType: IEnumerable<KeyValuePair<String, String[]>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, String()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, String()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: Microsoft.Owin.ReadableStringCollection.Get(System.String)
+  commentId: M:Microsoft.Owin.ReadableStringCollection.Get(System.String)
+  parent: Microsoft.Owin.ReadableStringCollection
+  isExternal: true
+  name: Get(String)
+  nameWithType: ReadableStringCollection.Get(String)
+  fullName: Microsoft.Owin.ReadableStringCollection.Get(System.String)
+  spec.csharp:
+  - uid: Microsoft.Owin.ReadableStringCollection.Get(System.String)
+    name: Get
+    nameWithType: ReadableStringCollection.Get
+    fullName: Microsoft.Owin.ReadableStringCollection.Get
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.ReadableStringCollection.Get(System.String)
+    name: Get
+    nameWithType: ReadableStringCollection.Get
+    fullName: Microsoft.Owin.ReadableStringCollection.Get
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.ReadableStringCollection.GetValues(System.String)
+  commentId: M:Microsoft.Owin.ReadableStringCollection.GetValues(System.String)
+  parent: Microsoft.Owin.ReadableStringCollection
+  isExternal: true
+  name: GetValues(String)
+  nameWithType: ReadableStringCollection.GetValues(String)
+  fullName: Microsoft.Owin.ReadableStringCollection.GetValues(System.String)
+  spec.csharp:
+  - uid: Microsoft.Owin.ReadableStringCollection.GetValues(System.String)
+    name: GetValues
+    nameWithType: ReadableStringCollection.GetValues
+    fullName: Microsoft.Owin.ReadableStringCollection.GetValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.ReadableStringCollection.GetValues(System.String)
+    name: GetValues
+    nameWithType: ReadableStringCollection.GetValues
+    fullName: Microsoft.Owin.ReadableStringCollection.GetValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.ReadableStringCollection.GetEnumerator
+  commentId: M:Microsoft.Owin.ReadableStringCollection.GetEnumerator
+  parent: Microsoft.Owin.ReadableStringCollection
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: ReadableStringCollection.GetEnumerator()
+  fullName: Microsoft.Owin.ReadableStringCollection.GetEnumerator()
+  spec.csharp:
+  - uid: Microsoft.Owin.ReadableStringCollection.GetEnumerator
+    name: GetEnumerator
+    nameWithType: ReadableStringCollection.GetEnumerator
+    fullName: Microsoft.Owin.ReadableStringCollection.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.ReadableStringCollection.GetEnumerator
+    name: GetEnumerator
+    nameWithType: ReadableStringCollection.GetEnumerator
+    fullName: Microsoft.Owin.ReadableStringCollection.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.ReadableStringCollection.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Microsoft.Owin.ReadableStringCollection.System#Collections#IEnumerable#GetEnumerator
+  parent: Microsoft.Owin.ReadableStringCollection
+  isExternal: true
+  name: IEnumerable.GetEnumerator()
+  nameWithType: ReadableStringCollection.IEnumerable.GetEnumerator()
+  fullName: Microsoft.Owin.ReadableStringCollection.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType.vb: ReadableStringCollection.System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: Microsoft.Owin.ReadableStringCollection.System#Collections#IEnumerable#GetEnumerator
+    name: IEnumerable.GetEnumerator
+    nameWithType: ReadableStringCollection.IEnumerable.GetEnumerator
+    fullName: Microsoft.Owin.ReadableStringCollection.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.ReadableStringCollection.System#Collections#IEnumerable#GetEnumerator
+    name: System.Collections.IEnumerable.GetEnumerator
+    nameWithType: ReadableStringCollection.System.Collections.IEnumerable.GetEnumerator
+    fullName: Microsoft.Owin.ReadableStringCollection.System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.ReadableStringCollection.Item(System.String)
+  commentId: P:Microsoft.Owin.ReadableStringCollection.Item(System.String)
+  parent: Microsoft.Owin.ReadableStringCollection
+  isExternal: true
+  name: Item[String]
+  nameWithType: ReadableStringCollection.Item[String]
+  fullName: Microsoft.Owin.ReadableStringCollection.Item[System.String]
+  nameWithType.vb: ReadableStringCollection.Item(String)
+  fullName.vb: Microsoft.Owin.ReadableStringCollection.Item(System.String)
+  name.vb: Item(String)
+  spec.csharp:
+  - uid: Microsoft.Owin.ReadableStringCollection.Item(System.String)
+    name: Item
+    nameWithType: ReadableStringCollection.Item
+    fullName: Microsoft.Owin.ReadableStringCollection.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: Microsoft.Owin.ReadableStringCollection.Item(System.String)
+    name: Item
+    nameWithType: ReadableStringCollection.Item
+    fullName: Microsoft.Owin.ReadableStringCollection.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: false
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Microsoft.Owin.FormCollection.#ctor*
+  commentId: Overload:Microsoft.Owin.FormCollection.#ctor
+  isExternal: true
+  name: FormCollection
+  nameWithType: FormCollection.FormCollection
+  fullName: Microsoft.Owin.FormCollection.FormCollection
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String[]>
+  nameWithType: IDictionary<String, String[]>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>
+  nameWithType.vb: IDictionary(Of String, String())
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String())
+  name.vb: IDictionary(Of String, String())
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )

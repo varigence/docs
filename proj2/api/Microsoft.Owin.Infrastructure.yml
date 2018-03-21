@@ -1,0 +1,66 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Infrastructure
+  commentId: N:Microsoft.Owin.Infrastructure
+  id: Microsoft.Owin.Infrastructure
+  children:
+  - Microsoft.Owin.Infrastructure.ChunkingCookieManager
+  - Microsoft.Owin.Infrastructure.ICookieManager
+  - Microsoft.Owin.Infrastructure.ISystemClock
+  - Microsoft.Owin.Infrastructure.SignatureConversions
+  - Microsoft.Owin.Infrastructure.SystemClock
+  - Microsoft.Owin.Infrastructure.WebUtilities
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Owin.Infrastructure
+  nameWithType: Microsoft.Owin.Infrastructure
+  fullName: Microsoft.Owin.Infrastructure
+  type: Namespace
+  assemblies:
+  - Microsoft.Owin
+references:
+- uid: Microsoft.Owin.Infrastructure.ICookieManager
+  commentId: T:Microsoft.Owin.Infrastructure.ICookieManager
+  parent: Microsoft.Owin.Infrastructure
+  isExternal: true
+  name: ICookieManager
+  nameWithType: ICookieManager
+  fullName: Microsoft.Owin.Infrastructure.ICookieManager
+- uid: Microsoft.Owin.Infrastructure.ChunkingCookieManager
+  commentId: T:Microsoft.Owin.Infrastructure.ChunkingCookieManager
+  isExternal: true
+  name: ChunkingCookieManager
+  nameWithType: ChunkingCookieManager
+  fullName: Microsoft.Owin.Infrastructure.ChunkingCookieManager
+- uid: Microsoft.Owin.Infrastructure.ISystemClock
+  commentId: T:Microsoft.Owin.Infrastructure.ISystemClock
+  parent: Microsoft.Owin.Infrastructure
+  isExternal: true
+  name: ISystemClock
+  nameWithType: ISystemClock
+  fullName: Microsoft.Owin.Infrastructure.ISystemClock
+- uid: Microsoft.Owin.Infrastructure.SystemClock
+  commentId: T:Microsoft.Owin.Infrastructure.SystemClock
+  isExternal: true
+  name: SystemClock
+  nameWithType: SystemClock
+  fullName: Microsoft.Owin.Infrastructure.SystemClock
+- uid: Microsoft.Owin.Infrastructure.WebUtilities
+  commentId: T:Microsoft.Owin.Infrastructure.WebUtilities
+  isExternal: true
+  name: WebUtilities
+  nameWithType: WebUtilities
+  fullName: Microsoft.Owin.Infrastructure.WebUtilities
+- uid: Microsoft.Owin.Infrastructure.SignatureConversions
+  commentId: T:Microsoft.Owin.Infrastructure.SignatureConversions
+  isExternal: true
+  name: SignatureConversions
+  nameWithType: SignatureConversions
+  fullName: Microsoft.Owin.Infrastructure.SignatureConversions
+- uid: Microsoft.Owin.Infrastructure
+  commentId: N:Microsoft.Owin.Infrastructure
+  isExternal: false
+  name: Microsoft.Owin.Infrastructure
+  nameWithType: Microsoft.Owin.Infrastructure
+  fullName: Microsoft.Owin.Infrastructure

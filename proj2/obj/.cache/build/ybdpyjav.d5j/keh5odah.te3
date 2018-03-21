@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IOwinRequest
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IOwinRequest
+   ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Owin.IOwinRequest">
+  <h1 id="Microsoft_Owin_IOwinRequest" data-uid="Microsoft.Owin.IOwinRequest">Interface IOwinRequest
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">This wraps OWIN environment dictionary and provides strongly typed accessors.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  
+  
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: Microsoft.Owin.dll</h6>
+  
+  <h5 id="Microsoft_Owin_IOwinRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IOwinRequest</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Accept_" data-uid="Microsoft.Owin.IOwinRequest.Accept*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Accept" data-uid="Microsoft.Owin.IOwinRequest.Accept"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Accept" class="expander" data-toggle="collapse">Accept</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Accept" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the Accept header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Accept { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The Accept header.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Body_" data-uid="Microsoft.Owin.IOwinRequest.Body*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Body" data-uid="Microsoft.Owin.IOwinRequest.Body"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Body" class="expander" data-toggle="collapse">Body</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Body" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the owin.RequestBody Stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Stream Body { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.IO.Stream</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The owin.RequestBody Stream.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_CacheControl_" data-uid="Microsoft.Owin.IOwinRequest.CacheControl*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_CacheControl" data-uid="Microsoft.Owin.IOwinRequest.CacheControl"><a href="#collapsible-Microsoft_Owin_IOwinRequest_CacheControl" class="expander" data-toggle="collapse">CacheControl</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_CacheControl" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or sets the Cache-Control header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string CacheControl { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The Cache-Control header.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_CallCancelled_" data-uid="Microsoft.Owin.IOwinRequest.CallCancelled*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_CallCancelled" data-uid="Microsoft.Owin.IOwinRequest.CallCancelled"><a href="#collapsible-Microsoft_Owin_IOwinRequest_CallCancelled" class="expander" data-toggle="collapse">CallCancelled</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_CallCancelled" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or sets the cancellation token for the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CancellationToken CallCancelled { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Threading.CancellationToken</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The cancellation token for the request.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_ContentType_" data-uid="Microsoft.Owin.IOwinRequest.ContentType*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_ContentType" data-uid="Microsoft.Owin.IOwinRequest.ContentType"><a href="#collapsible-Microsoft_Owin_IOwinRequest_ContentType" class="expander" data-toggle="collapse">ContentType</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_ContentType" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or sets the Content-Type header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ContentType { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The Content-Type header.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Context_" data-uid="Microsoft.Owin.IOwinRequest.Context*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Context" data-uid="Microsoft.Owin.IOwinRequest.Context"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Context" class="expander" data-toggle="collapse">Context</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Context" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the request context.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IOwinContext Context { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.IOwinContext.html">IOwinContext</a>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The request context.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Cookies_" data-uid="Microsoft.Owin.IOwinRequest.Cookies*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Cookies" data-uid="Microsoft.Owin.IOwinRequest.Cookies"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Cookies" class="expander" data-toggle="collapse">Cookies</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Cookies" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the collection of Cookies for this request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">RequestCookieCollection Cookies { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.RequestCookieCollection.html">RequestCookieCollection</a>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The collection of Cookies for this request.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Environment_" data-uid="Microsoft.Owin.IOwinRequest.Environment*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Environment" data-uid="Microsoft.Owin.IOwinRequest.Environment"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Environment" class="expander" data-toggle="collapse">Environment</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Environment" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the OWIN environment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDictionary&lt;string, object&gt; Environment { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The OWIN environment.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Headers_" data-uid="Microsoft.Owin.IOwinRequest.Headers*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Headers" data-uid="Microsoft.Owin.IOwinRequest.Headers"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Headers" class="expander" data-toggle="collapse">Headers</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Headers" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the request headers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IHeaderDictionary Headers { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.IHeaderDictionary.html">IHeaderDictionary</a>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The request headers.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Host_" data-uid="Microsoft.Owin.IOwinRequest.Host*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Host" data-uid="Microsoft.Owin.IOwinRequest.Host"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Host" class="expander" data-toggle="collapse">Host</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Host" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the Host header. May include the port.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HostString Host { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.HostString.html">HostString</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_IsSecure_" data-uid="Microsoft.Owin.IOwinRequest.IsSecure*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_IsSecure" data-uid="Microsoft.Owin.IOwinRequest.IsSecure"><a href="#collapsible-Microsoft_Owin_IOwinRequest_IsSecure" class="expander" data-toggle="collapse">IsSecure</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_IsSecure" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Returns true if the owin.RequestScheme is https.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsSecure { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">true if this request is using https; otherwise, false.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_LocalIpAddress_" data-uid="Microsoft.Owin.IOwinRequest.LocalIpAddress*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_LocalIpAddress" data-uid="Microsoft.Owin.IOwinRequest.LocalIpAddress"><a href="#collapsible-Microsoft_Owin_IOwinRequest_LocalIpAddress" class="expander" data-toggle="collapse">LocalIpAddress</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_LocalIpAddress" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the server.LocalIpAddress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string LocalIpAddress { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The server.LocalIpAddress.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_LocalPort_" data-uid="Microsoft.Owin.IOwinRequest.LocalPort*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_LocalPort" data-uid="Microsoft.Owin.IOwinRequest.LocalPort"><a href="#collapsible-Microsoft_Owin_IOwinRequest_LocalPort" class="expander" data-toggle="collapse">LocalPort</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_LocalPort" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the server.LocalPort.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? LocalPort { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The server.LocalPort.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_MediaType_" data-uid="Microsoft.Owin.IOwinRequest.MediaType*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_MediaType" data-uid="Microsoft.Owin.IOwinRequest.MediaType"><a href="#collapsible-Microsoft_Owin_IOwinRequest_MediaType" class="expander" data-toggle="collapse">MediaType</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_MediaType" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or sets the Media-Type header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string MediaType { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The Media-Type header.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Method_" data-uid="Microsoft.Owin.IOwinRequest.Method*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Method" data-uid="Microsoft.Owin.IOwinRequest.Method"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Method" class="expander" data-toggle="collapse">Method</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Method" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the HTTP method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Method { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The HTTP method.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Path_" data-uid="Microsoft.Owin.IOwinRequest.Path*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Path" data-uid="Microsoft.Owin.IOwinRequest.Path"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Path" class="expander" data-toggle="collapse">Path</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Path" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the request path from owin.RequestPath.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PathString Path { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.PathString.html">PathString</a>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The request path from owin.RequestPath.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_PathBase_" data-uid="Microsoft.Owin.IOwinRequest.PathBase*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_PathBase" data-uid="Microsoft.Owin.IOwinRequest.PathBase"><a href="#collapsible-Microsoft_Owin_IOwinRequest_PathBase" class="expander" data-toggle="collapse">PathBase</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_PathBase" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the owin.RequestPathBase.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">PathString PathBase { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.PathString.html">PathString</a>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The owin.RequestPathBase.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Protocol_" data-uid="Microsoft.Owin.IOwinRequest.Protocol*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Protocol" data-uid="Microsoft.Owin.IOwinRequest.Protocol"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Protocol" class="expander" data-toggle="collapse">Protocol</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Protocol" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the owin.RequestProtocol.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Protocol { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The owin.RequestProtocol.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Query_" data-uid="Microsoft.Owin.IOwinRequest.Query*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Query" data-uid="Microsoft.Owin.IOwinRequest.Query"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Query" class="expander" data-toggle="collapse">Query</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Query" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the query value collection parsed from owin.RequestQueryString.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadableStringCollection Query { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.IReadableStringCollection.html">IReadableStringCollection</a>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The query value collection parsed from owin.RequestQueryString.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_QueryString_" data-uid="Microsoft.Owin.IOwinRequest.QueryString*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_QueryString" data-uid="Microsoft.Owin.IOwinRequest.QueryString"><a href="#collapsible-Microsoft_Owin_IOwinRequest_QueryString" class="expander" data-toggle="collapse">QueryString</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_QueryString" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the query string from owin.RequestQueryString.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">QueryString QueryString { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.QueryString.html">QueryString</a>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The query string from owin.RequestQueryString.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_RemoteIpAddress_" data-uid="Microsoft.Owin.IOwinRequest.RemoteIpAddress*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_RemoteIpAddress" data-uid="Microsoft.Owin.IOwinRequest.RemoteIpAddress"><a href="#collapsible-Microsoft_Owin_IOwinRequest_RemoteIpAddress" class="expander" data-toggle="collapse">RemoteIpAddress</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_RemoteIpAddress" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the server.RemoteIpAddress.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string RemoteIpAddress { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The server.RemoteIpAddress.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_RemotePort_" data-uid="Microsoft.Owin.IOwinRequest.RemotePort*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_RemotePort" data-uid="Microsoft.Owin.IOwinRequest.RemotePort"><a href="#collapsible-Microsoft_Owin_IOwinRequest_RemotePort" class="expander" data-toggle="collapse">RemotePort</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_RemotePort" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the server.RemotePort.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int? RemotePort { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The server.RemotePort.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Scheme_" data-uid="Microsoft.Owin.IOwinRequest.Scheme*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Scheme" data-uid="Microsoft.Owin.IOwinRequest.Scheme"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Scheme" class="expander" data-toggle="collapse">Scheme</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Scheme" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the HTTP request scheme from owin.RequestScheme.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Scheme { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The HTTP request scheme from owin.RequestScheme.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Uri_" data-uid="Microsoft.Owin.IOwinRequest.Uri*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Uri" data-uid="Microsoft.Owin.IOwinRequest.Uri"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Uri" class="expander" data-toggle="collapse">Uri</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Uri" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the uniform resource identifier (URI) associated with the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Uri Uri { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Uri</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The uniform resource identifier (URI) associated with the request.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_User_" data-uid="Microsoft.Owin.IOwinRequest.User*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_User" data-uid="Microsoft.Owin.IOwinRequest.User"><a href="#collapsible-Microsoft_Owin_IOwinRequest_User" class="expander" data-toggle="collapse">User</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_User" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets or set the server.User.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPrincipal User { get; set; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Security.Principal.IPrincipal</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The server.User.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Get_" data-uid="Microsoft.Owin.IOwinRequest.Get*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Get__1_System_String_" data-uid="Microsoft.Owin.IOwinRequest.Get``1(System.String)"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Get__1_System_String_" class="expander" data-toggle="collapse">Get&lt;T&gt;(String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Get__1_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets a value from the OWIN environment, or returns default(T) if not present.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T Get&lt;T&gt;(string key)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The key of the value to get.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">T</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The value with the specified key or the default(T) if not present.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The type of the value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_ReadFormAsync_" data-uid="Microsoft.Owin.IOwinRequest.ReadFormAsync*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_ReadFormAsync" data-uid="Microsoft.Owin.IOwinRequest.ReadFormAsync"><a href="#collapsible-Microsoft_Owin_IOwinRequest_ReadFormAsync" class="expander" data-toggle="collapse">ReadFormAsync()</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_ReadFormAsync" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Asynchronously reads and parses the request body as a form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IFormCollection&gt; ReadFormAsync()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Microsoft.Owin.IFormCollection.html">IFormCollection</a>&gt;
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The parsed form data.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_IOwinRequest_Set_" data-uid="Microsoft.Owin.IOwinRequest.Set*"></a>
+  
+  <h4 id="Microsoft_Owin_IOwinRequest_Set__1_System_String___0_" data-uid="Microsoft.Owin.IOwinRequest.Set``1(System.String,``0)"><a href="#collapsible-Microsoft_Owin_IOwinRequest_Set__1_System_String___0_" class="expander" data-toggle="collapse">Set&lt;T&gt;(String, T)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_IOwinRequest_Set__1_System_String___0_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Sets the given key and value in the OWIN environment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IOwinRequest Set&lt;T&gt;(string key, T value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The key of the value to set.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">T</span></span>
+        <span class="parametername">value</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The value to set.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="Microsoft.Owin.IOwinRequest.html">IOwinRequest</a>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">This instance.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="parametername">T</span>
+        <p><p sourcefile="api/Microsoft.Owin.IOwinRequest.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The type of the value.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

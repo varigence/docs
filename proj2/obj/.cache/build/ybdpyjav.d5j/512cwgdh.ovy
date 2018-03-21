@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Varigence.Languages.Biml
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Varigence.Languages.Biml
+   ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Varigence.Languages.Biml">
+  
+  <h1 id="Varigence_Languages_Biml" data-uid="Varigence.Languages.Biml" class="text-break">Namespace Varigence.Languages.Biml
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AstAnnotationNode.html">AstAnnotationNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.AstAnnotationNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The AstAnnotationNode type is used to define an annotation item that can be used to specify documentation, tags, or other information.  Annotations are particularly useful for storing information about nodes that can be used by BimlScript code.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AstBuildSettingsNode.html">AstBuildSettingsNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.AstBuildSettingsNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstBuildSettingsNode contains the settings that will be applied when the current project is built.  This primarily includes target version information.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AstNamedNode.html">AstNamedNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.AstNamedNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstNamedNode is the base type for all Biml language model classes that can be referenced by name and that will be entered into the symbol table for central tracking.  It provides a variety of methods and properties that are useful to the language framework.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AstNode.html">AstNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.AstNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstNode is the base type from which all other Biml language model classes derive.  It provides a variety of methods and properties that are useful to the language framework.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AstPropertyNode.html">AstPropertyNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.AstPropertyNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The AstPropertyNode type corresponds directly to a property that can be overriden with an expression in a SQL Server Integration Services task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AstRootNode.html">AstRootNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.AstRootNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstRootNode serves as the root of the entire project tree.  Anything that can be defined in a Biml project must be a descendant of the AstRootNode, and all constructs in the project can be reached by following a path through the child properties starting at the AstRootNode.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AstScopeBoundaryNode.html">AstScopeBoundaryNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.AstScopeBoundaryNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstScopeBoundaryNode is the base type that is used for all classes that define a scope in Biml.  When an object is a scope boundary, its name will appear as a component of the full scope name of any descendent objects.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AstSecurableNode.html">AstSecurableNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.AstSecurableNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstSecurableNode is the base type that is used for all classes that can accept permissions in Biml.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.BidsHelper.html">BidsHelper</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.BidsHelper.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The BidsHelper class provides a helper interface for hosting the Biml work in the CodePlex BIDSHelper Add-in</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.TierFilteredAstRootNode.html">TierFilteredAstRootNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.TierFilteredAstRootNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Provides a wrapper around the {0} type to limit the root item collections to only show those items that are defined in tiers lower than the value specified in the Tier property. This is used in Live BimlScript compilation scenarios where files below the highest tier may need to be incrementally recompiled.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AnnotationType.html">AnnotationType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.AutomaticBoolean.html">AutomaticBoolean</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.CheckpointUsage.html">CheckpointUsage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.CodeFileMode.html">CodeFileMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.FuzzyLookupTransformExtendedComparisonOptions.html">FuzzyLookupTransformExtendedComparisonOptions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.InheritableBoolean.html">InheritableBoolean</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.PackagePriorityClass.html">PackagePriorityClass</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.PermissionActionType.html">PermissionActionType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.PermissionTargetType.html">PermissionTargetType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.ProtectionLevel.html">ProtectionLevel</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.SortOrder.html">SortOrder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.SsisDeploymentModel.html">SsisDeploymentModel</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.SsisPackageType.html">SsisPackageType</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

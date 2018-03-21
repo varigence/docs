@@ -1,0 +1,10 @@
+{
+  "Class2": "Class2.yml",
+  "Class2.Class2": "Class2.Class2.yml",
+  "Class2.Class2.#ctor(System.Int32)": "Class2.Class2.yml",
+  "Class2.Class2.ConvertToDouble": "Class2.Class2.yml",
+  "Class2.Class2.InnerClass": "Class2.Class2.InnerClass.yml",
+  "Class2.Class2.InnerClass.Name": "Class2.Class2.InnerClass.yml",
+  "Class2.Class2.SetInnerClass(System.String,Class2.Class2.InnerClass)": "Class2.Class2.yml",
+  "Class2.Class2.Value": "Class2.Class2.yml"
+}

@@ -1,0 +1,995 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Security.IAuthenticationManager
+  commentId: T:Microsoft.Owin.Security.IAuthenticationManager
+  id: IAuthenticationManager
+  parent: Microsoft.Owin.Security
+  children:
+  - Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String)
+  - Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String[])
+  - Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseChallenge
+  - Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseGrant
+  - Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseRevoke
+  - Microsoft.Owin.Security.IAuthenticationManager.Challenge(Microsoft.Owin.Security.AuthenticationProperties,System.String[])
+  - Microsoft.Owin.Security.IAuthenticationManager.Challenge(System.String[])
+  - Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes
+  - Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes(System.Func{Microsoft.Owin.Security.AuthenticationDescription,System.Boolean})
+  - Microsoft.Owin.Security.IAuthenticationManager.SignIn(Microsoft.Owin.Security.AuthenticationProperties,System.Security.Claims.ClaimsIdentity[])
+  - Microsoft.Owin.Security.IAuthenticationManager.SignIn(System.Security.Claims.ClaimsIdentity[])
+  - Microsoft.Owin.Security.IAuthenticationManager.SignOut(Microsoft.Owin.Security.AuthenticationProperties,System.String[])
+  - Microsoft.Owin.Security.IAuthenticationManager.SignOut(System.String[])
+  - Microsoft.Owin.Security.IAuthenticationManager.User
+  langs:
+  - csharp
+  - vb
+  name: IAuthenticationManager
+  nameWithType: IAuthenticationManager
+  fullName: Microsoft.Owin.Security.IAuthenticationManager
+  type: Interface
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nUsed to interact with authentication middleware that have been chained in the pipeline\n"
+  syntax:
+    content: public interface IAuthenticationManager
+    content.vb: Public Interface IAuthenticationManager
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes
+  id: GetAuthenticationTypes
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: GetAuthenticationTypes()
+  nameWithType: IAuthenticationManager.GetAuthenticationTypes()
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes()
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nLists all of the description data provided by authentication middleware that have been chained\n"
+  syntax:
+    content: IEnumerable<AuthenticationDescription> GetAuthenticationTypes()
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Owin.Security.AuthenticationDescription}
+      description: The authentication descriptions
+    content.vb: Function GetAuthenticationTypes As IEnumerable(Of AuthenticationDescription)
+  overload: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes*
+- uid: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes(System.Func{Microsoft.Owin.Security.AuthenticationDescription,System.Boolean})
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes(System.Func{Microsoft.Owin.Security.AuthenticationDescription,System.Boolean})
+  id: GetAuthenticationTypes(System.Func{Microsoft.Owin.Security.AuthenticationDescription,System.Boolean})
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: GetAuthenticationTypes(Func<AuthenticationDescription, Boolean>)
+  nameWithType: IAuthenticationManager.GetAuthenticationTypes(Func<AuthenticationDescription, Boolean>)
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes(System.Func<Microsoft.Owin.Security.AuthenticationDescription, System.Boolean>)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nLists the description data of all of the authentication middleware which are true for a given predicate\n"
+  syntax:
+    content: IEnumerable<AuthenticationDescription> GetAuthenticationTypes(Func<AuthenticationDescription, bool> predicate)
+    parameters:
+    - id: predicate
+      type: System.Func{Microsoft.Owin.Security.AuthenticationDescription,System.Boolean}
+      description: A function provided by the caller which returns true for descriptions that should be in the returned list
+    return:
+      type: System.Collections.Generic.IEnumerable{Microsoft.Owin.Security.AuthenticationDescription}
+      description: The authentication descriptions
+    content.vb: Function GetAuthenticationTypes(predicate As Func(Of AuthenticationDescription, Boolean)) As IEnumerable(Of AuthenticationDescription)
+  overload: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes*
+  nameWithType.vb: IAuthenticationManager.GetAuthenticationTypes(Func(Of AuthenticationDescription, Boolean))
+  fullName.vb: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes(System.Func(Of Microsoft.Owin.Security.AuthenticationDescription, System.Boolean))
+  name.vb: GetAuthenticationTypes(Func(Of AuthenticationDescription, Boolean))
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String)
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String)
+  id: AuthenticateAsync(System.String)
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: AuthenticateAsync(String)
+  nameWithType: IAuthenticationManager.AuthenticateAsync(String)
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nCall back through the middleware to ask for a specific form of authentication to be performed\non the current request\n"
+  syntax:
+    content: Task<AuthenticateResult> AuthenticateAsync(string authenticationType)
+    parameters:
+    - id: authenticationType
+      type: System.String
+      description: >-
+        Identifies which middleware should respond to the request
+
+        for authentication. This value is compared to the middleware&apos;s Options.AuthenticationType property.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Owin.Security.AuthenticateResult}
+      description: "Returns an object with the results of the authentication. The AuthenticationResult.Identity\nmay be null if authentication failed. Even if the Identity property is null, there may still be \nAuthenticationResult.properties and AuthenticationResult.Description information returned."
+    content.vb: Function AuthenticateAsync(authenticationType As String) As Task(Of AuthenticateResult)
+  overload: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync*
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String[])
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String[])
+  id: AuthenticateAsync(System.String[])
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: AuthenticateAsync(String[])
+  nameWithType: IAuthenticationManager.AuthenticateAsync(String[])
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nCalled to perform any number of authentication mechanisms on the current request.\n"
+  syntax:
+    content: Task<IEnumerable<AuthenticateResult>> AuthenticateAsync(string[] authenticationTypes)
+    parameters:
+    - id: authenticationTypes
+      type: System.String[]
+      description: Identifies one or more middleware which should attempt to respond
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Owin.Security.AuthenticateResult}}
+      description: "Returns the AuthenticationResult information from the middleware which responded. The \norder is determined by the order the middleware are in the pipeline. Latest added is first in the list."
+    content.vb: Function AuthenticateAsync(authenticationTypes As String()) As Task(Of IEnumerable(Of AuthenticateResult))
+  overload: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync*
+  nameWithType.vb: IAuthenticationManager.AuthenticateAsync(String())
+  fullName.vb: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync(System.String())
+  name.vb: AuthenticateAsync(String())
+- uid: Microsoft.Owin.Security.IAuthenticationManager.Challenge(Microsoft.Owin.Security.AuthenticationProperties,System.String[])
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.Challenge(Microsoft.Owin.Security.AuthenticationProperties,System.String[])
+  id: Challenge(Microsoft.Owin.Security.AuthenticationProperties,System.String[])
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: Challenge(AuthenticationProperties, String[])
+  nameWithType: IAuthenticationManager.Challenge(AuthenticationProperties, String[])
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.Challenge(Microsoft.Owin.Security.AuthenticationProperties, System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nAdd information into the response environment that will cause the authentication middleware to challenge\nthe caller to authenticate. This also changes the status code of the response to 401. The nature of that \nchallenge varies greatly, and ranges from adding a response header or changing the 401 status code to \na 302 redirect.\n"
+  syntax:
+    content: void Challenge(AuthenticationProperties properties, params string[] authenticationTypes)
+    parameters:
+    - id: properties
+      type: Microsoft.Owin.Security.AuthenticationProperties
+      description: Additional arbitrary values which may be used by particular authentication types.
+    - id: authenticationTypes
+      type: System.String[]
+      description: "Identify which middleware should perform their alterations on the\nresponse. If the authenticationTypes is null or empty, that means the \nAuthenticationMode.Active middleware should perform their alterations on the response."
+    content.vb: Sub Challenge(properties As AuthenticationProperties, ParamArray authenticationTypes As String())
+  overload: Microsoft.Owin.Security.IAuthenticationManager.Challenge*
+  nameWithType.vb: IAuthenticationManager.Challenge(AuthenticationProperties, String())
+  fullName.vb: Microsoft.Owin.Security.IAuthenticationManager.Challenge(Microsoft.Owin.Security.AuthenticationProperties, System.String())
+  name.vb: Challenge(AuthenticationProperties, String())
+- uid: Microsoft.Owin.Security.IAuthenticationManager.Challenge(System.String[])
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.Challenge(System.String[])
+  id: Challenge(System.String[])
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: Challenge(String[])
+  nameWithType: IAuthenticationManager.Challenge(String[])
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.Challenge(System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nAdd information into the response environment that will cause the authentication middleware to challenge\nthe caller to authenticate. This also changes the status code of the response to 401. The nature of that \nchallenge varies greatly, and ranges from adding a response header or changing the 401 status code to \na 302 redirect.\n"
+  syntax:
+    content: void Challenge(params string[] authenticationTypes)
+    parameters:
+    - id: authenticationTypes
+      type: System.String[]
+      description: "Identify which middleware should perform their alterations on the\nresponse. If the authenticationTypes is null or empty, that means the \nAuthenticationMode.Active middleware should perform their alterations on the response."
+    content.vb: Sub Challenge(ParamArray authenticationTypes As String())
+  overload: Microsoft.Owin.Security.IAuthenticationManager.Challenge*
+  nameWithType.vb: IAuthenticationManager.Challenge(String())
+  fullName.vb: Microsoft.Owin.Security.IAuthenticationManager.Challenge(System.String())
+  name.vb: Challenge(String())
+- uid: Microsoft.Owin.Security.IAuthenticationManager.SignIn(Microsoft.Owin.Security.AuthenticationProperties,System.Security.Claims.ClaimsIdentity[])
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.SignIn(Microsoft.Owin.Security.AuthenticationProperties,System.Security.Claims.ClaimsIdentity[])
+  id: SignIn(Microsoft.Owin.Security.AuthenticationProperties,System.Security.Claims.ClaimsIdentity[])
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: SignIn(AuthenticationProperties, ClaimsIdentity[])
+  nameWithType: IAuthenticationManager.SignIn(AuthenticationProperties, ClaimsIdentity[])
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.SignIn(Microsoft.Owin.Security.AuthenticationProperties, System.Security.Claims.ClaimsIdentity[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nAdd information to the response environment that will cause the appropriate authentication middleware\nto grant a claims-based identity to the recipient of the response. The exact mechanism of this may vary.\nExamples include setting a cookie, to adding a fragment on the redirect url, or producing an OAuth2\naccess code or token response.\n"
+  syntax:
+    content: void SignIn(AuthenticationProperties properties, params ClaimsIdentity[] identities)
+    parameters:
+    - id: properties
+      type: Microsoft.Owin.Security.AuthenticationProperties
+      description: >-
+        Contains additional properties the middleware are expected to persist along with
+
+        the claims. These values will be returned as the AuthenticateResult.properties collection when AuthenticateAsync
+
+        is called on subsequent requests.
+    - id: identities
+      type: System.Security.Claims.ClaimsIdentity[]
+      description: "Determines which claims are granted to the signed in user. The \nClaimsIdentity.AuthenticationType property is compared to the middleware&apos;s Options.AuthenticationType \nvalue to determine which claims are granted by which middleware. The recommended use is to have a single\nClaimsIdentity which has the AuthenticationType matching a specific middleware."
+    content.vb: Sub SignIn(properties As AuthenticationProperties, ParamArray identities As ClaimsIdentity())
+  overload: Microsoft.Owin.Security.IAuthenticationManager.SignIn*
+  nameWithType.vb: IAuthenticationManager.SignIn(AuthenticationProperties, ClaimsIdentity())
+  fullName.vb: Microsoft.Owin.Security.IAuthenticationManager.SignIn(Microsoft.Owin.Security.AuthenticationProperties, System.Security.Claims.ClaimsIdentity())
+  name.vb: SignIn(AuthenticationProperties, ClaimsIdentity())
+- uid: Microsoft.Owin.Security.IAuthenticationManager.SignIn(System.Security.Claims.ClaimsIdentity[])
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.SignIn(System.Security.Claims.ClaimsIdentity[])
+  id: SignIn(System.Security.Claims.ClaimsIdentity[])
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: SignIn(ClaimsIdentity[])
+  nameWithType: IAuthenticationManager.SignIn(ClaimsIdentity[])
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.SignIn(System.Security.Claims.ClaimsIdentity[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nAdd information to the response environment that will cause the appropriate authentication middleware\nto grant a claims-based identity to the recipient of the response. The exact mechanism of this may vary.\nExamples include setting a cookie, to adding a fragment on the redirect url, or producing an OAuth2\naccess code or token response.\n"
+  syntax:
+    content: void SignIn(params ClaimsIdentity[] identities)
+    parameters:
+    - id: identities
+      type: System.Security.Claims.ClaimsIdentity[]
+      description: "Determines which claims are granted to the signed in user. The \nClaimsIdentity.AuthenticationType property is compared to the middleware&apos;s Options.AuthenticationType \nvalue to determine which claims are granted by which middleware. The recommended use is to have a single\nClaimsIdentity which has the AuthenticationType matching a specific middleware."
+    content.vb: Sub SignIn(ParamArray identities As ClaimsIdentity())
+  overload: Microsoft.Owin.Security.IAuthenticationManager.SignIn*
+  nameWithType.vb: IAuthenticationManager.SignIn(ClaimsIdentity())
+  fullName.vb: Microsoft.Owin.Security.IAuthenticationManager.SignIn(System.Security.Claims.ClaimsIdentity())
+  name.vb: SignIn(ClaimsIdentity())
+- uid: Microsoft.Owin.Security.IAuthenticationManager.SignOut(Microsoft.Owin.Security.AuthenticationProperties,System.String[])
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.SignOut(Microsoft.Owin.Security.AuthenticationProperties,System.String[])
+  id: SignOut(Microsoft.Owin.Security.AuthenticationProperties,System.String[])
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: SignOut(AuthenticationProperties, String[])
+  nameWithType: IAuthenticationManager.SignOut(AuthenticationProperties, String[])
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.SignOut(Microsoft.Owin.Security.AuthenticationProperties, System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nAdd information to the response environment that will cause the appropriate authentication middleware\nto revoke any claims identity associated the the caller. The exact method varies.\n"
+  syntax:
+    content: void SignOut(AuthenticationProperties properties, params string[] authenticationTypes)
+    parameters:
+    - id: properties
+      type: Microsoft.Owin.Security.AuthenticationProperties
+      description: Additional arbitrary values which may be used by particular authentication types.
+    - id: authenticationTypes
+      type: System.String[]
+      description: >-
+        Identifies which middleware should perform the work to sign out.
+
+        Multiple authentication types may be provided to clear out more than one cookie at a time, or to clear
+
+        cookies and redirect to an external single-sign out url.
+    content.vb: Sub SignOut(properties As AuthenticationProperties, ParamArray authenticationTypes As String())
+  overload: Microsoft.Owin.Security.IAuthenticationManager.SignOut*
+  nameWithType.vb: IAuthenticationManager.SignOut(AuthenticationProperties, String())
+  fullName.vb: Microsoft.Owin.Security.IAuthenticationManager.SignOut(Microsoft.Owin.Security.AuthenticationProperties, System.String())
+  name.vb: SignOut(AuthenticationProperties, String())
+- uid: Microsoft.Owin.Security.IAuthenticationManager.SignOut(System.String[])
+  commentId: M:Microsoft.Owin.Security.IAuthenticationManager.SignOut(System.String[])
+  id: SignOut(System.String[])
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: SignOut(String[])
+  nameWithType: IAuthenticationManager.SignOut(String[])
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.SignOut(System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nAdd information to the response environment that will cause the appropriate authentication middleware\nto revoke any claims identity associated the the caller. The exact method varies.\n"
+  syntax:
+    content: void SignOut(params string[] authenticationTypes)
+    parameters:
+    - id: authenticationTypes
+      type: System.String[]
+      description: >-
+        Identifies which middleware should perform the work to sign out.
+
+        Multiple authentication types may be provided to clear out more than one cookie at a time, or to clear
+
+        cookies and redirect to an external single-sign out url.
+    content.vb: Sub SignOut(ParamArray authenticationTypes As String())
+  overload: Microsoft.Owin.Security.IAuthenticationManager.SignOut*
+  nameWithType.vb: IAuthenticationManager.SignOut(String())
+  fullName.vb: Microsoft.Owin.Security.IAuthenticationManager.SignOut(System.String())
+  name.vb: SignOut(String())
+- uid: Microsoft.Owin.Security.IAuthenticationManager.User
+  commentId: P:Microsoft.Owin.Security.IAuthenticationManager.User
+  id: User
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: IAuthenticationManager.User
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.User
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nReturns the current user for the request\n"
+  syntax:
+    content: ClaimsPrincipal User { get; set; }
+    parameters: []
+    return:
+      type: System.Security.Claims.ClaimsPrincipal
+    content.vb: Property User As ClaimsPrincipal
+  overload: Microsoft.Owin.Security.IAuthenticationManager.User*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseChallenge
+  commentId: P:Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseChallenge
+  id: AuthenticationResponseChallenge
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResponseChallenge
+  nameWithType: IAuthenticationManager.AuthenticationResponseChallenge
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseChallenge
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nExposes the security.Challenge environment value as a strong type.\n"
+  syntax:
+    content: AuthenticationResponseChallenge AuthenticationResponseChallenge { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.Security.AuthenticationResponseChallenge
+    content.vb: Property AuthenticationResponseChallenge As AuthenticationResponseChallenge
+  overload: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseChallenge*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseGrant
+  commentId: P:Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseGrant
+  id: AuthenticationResponseGrant
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResponseGrant
+  nameWithType: IAuthenticationManager.AuthenticationResponseGrant
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseGrant
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nExposes the security.SignIn environment value as a strong type.\n"
+  syntax:
+    content: AuthenticationResponseGrant AuthenticationResponseGrant { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.Security.AuthenticationResponseGrant
+    content.vb: Property AuthenticationResponseGrant As AuthenticationResponseGrant
+  overload: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseGrant*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseRevoke
+  commentId: P:Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseRevoke
+  id: AuthenticationResponseRevoke
+  parent: Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResponseRevoke
+  nameWithType: IAuthenticationManager.AuthenticationResponseRevoke
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseRevoke
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nExposes the security.SignOut environment value as a strong type.\n"
+  syntax:
+    content: AuthenticationResponseRevoke AuthenticationResponseRevoke { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.Security.AuthenticationResponseRevoke
+    content.vb: Property AuthenticationResponseRevoke As AuthenticationResponseRevoke
+  overload: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseRevoke*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Microsoft.Owin.Security
+  commentId: N:Microsoft.Owin.Security
+  isExternal: false
+  name: Microsoft.Owin.Security
+  nameWithType: Microsoft.Owin.Security
+  fullName: Microsoft.Owin.Security
+- uid: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes
+  isExternal: true
+  name: GetAuthenticationTypes
+  nameWithType: IAuthenticationManager.GetAuthenticationTypes
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.GetAuthenticationTypes
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Owin.Security.AuthenticationDescription}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Owin.Security.AuthenticationDescription}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<AuthenticationDescription>
+  nameWithType: IEnumerable<AuthenticationDescription>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Owin.Security.AuthenticationDescription>
+  nameWithType.vb: IEnumerable(Of AuthenticationDescription)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Owin.Security.AuthenticationDescription)
+  name.vb: IEnumerable(Of AuthenticationDescription)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Owin.Security.AuthenticationDescription
+    name: AuthenticationDescription
+    nameWithType: AuthenticationDescription
+    fullName: Microsoft.Owin.Security.AuthenticationDescription
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Owin.Security.AuthenticationDescription
+    name: AuthenticationDescription
+    nameWithType: AuthenticationDescription
+    fullName: Microsoft.Owin.Security.AuthenticationDescription
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Func{Microsoft.Owin.Security.AuthenticationDescription,System.Boolean}
+  commentId: T:System.Func{Microsoft.Owin.Security.AuthenticationDescription,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  name: Func<AuthenticationDescription, Boolean>
+  nameWithType: Func<AuthenticationDescription, Boolean>
+  fullName: System.Func<Microsoft.Owin.Security.AuthenticationDescription, System.Boolean>
+  nameWithType.vb: Func(Of AuthenticationDescription, Boolean)
+  fullName.vb: System.Func(Of Microsoft.Owin.Security.AuthenticationDescription, System.Boolean)
+  name.vb: Func(Of AuthenticationDescription, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Owin.Security.AuthenticationDescription
+    name: AuthenticationDescription
+    nameWithType: AuthenticationDescription
+    fullName: Microsoft.Owin.Security.AuthenticationDescription
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Owin.Security.AuthenticationDescription
+    name: AuthenticationDescription
+    nameWithType: AuthenticationDescription
+    fullName: Microsoft.Owin.Security.AuthenticationDescription
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync
+  isExternal: true
+  name: AuthenticateAsync
+  nameWithType: IAuthenticationManager.AuthenticateAsync
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticateAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{Microsoft.Owin.Security.AuthenticateResult}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Owin.Security.AuthenticateResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AuthenticateResult>
+  nameWithType: Task<AuthenticateResult>
+  fullName: System.Threading.Tasks.Task<Microsoft.Owin.Security.AuthenticateResult>
+  nameWithType.vb: Task(Of AuthenticateResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Owin.Security.AuthenticateResult)
+  name.vb: Task(Of AuthenticateResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Owin.Security.AuthenticateResult
+    name: AuthenticateResult
+    nameWithType: AuthenticateResult
+    fullName: Microsoft.Owin.Security.AuthenticateResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Owin.Security.AuthenticateResult
+    name: AuthenticateResult
+    nameWithType: AuthenticateResult
+    fullName: Microsoft.Owin.Security.AuthenticateResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.String[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Owin.Security.AuthenticateResult}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Owin.Security.AuthenticateResult}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<AuthenticateResult>>
+  nameWithType: Task<IEnumerable<AuthenticateResult>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Microsoft.Owin.Security.AuthenticateResult>>
+  nameWithType.vb: Task(Of IEnumerable(Of AuthenticateResult))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Microsoft.Owin.Security.AuthenticateResult))
+  name.vb: Task(Of IEnumerable(Of AuthenticateResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Owin.Security.AuthenticateResult
+    name: AuthenticateResult
+    nameWithType: AuthenticateResult
+    fullName: Microsoft.Owin.Security.AuthenticateResult
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Owin.Security.AuthenticateResult
+    name: AuthenticateResult
+    nameWithType: AuthenticateResult
+    fullName: Microsoft.Owin.Security.AuthenticateResult
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.Security.IAuthenticationManager.Challenge*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.Challenge
+  isExternal: true
+  name: Challenge
+  nameWithType: IAuthenticationManager.Challenge
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.Challenge
+- uid: Microsoft.Owin.Security.AuthenticationProperties
+  commentId: T:Microsoft.Owin.Security.AuthenticationProperties
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationProperties
+  nameWithType: AuthenticationProperties
+  fullName: Microsoft.Owin.Security.AuthenticationProperties
+- uid: Microsoft.Owin.Security.IAuthenticationManager.SignIn*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.SignIn
+  isExternal: true
+  name: SignIn
+  nameWithType: IAuthenticationManager.SignIn
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.SignIn
+- uid: System.Security.Claims.ClaimsIdentity[]
+  name: ClaimsIdentity[]
+  nameWithType: ClaimsIdentity[]
+  fullName: System.Security.Claims.ClaimsIdentity[]
+  nameWithType.vb: ClaimsIdentity()
+  fullName.vb: System.Security.Claims.ClaimsIdentity()
+  name.vb: ClaimsIdentity()
+  spec.csharp:
+  - uid: System.Security.Claims.ClaimsIdentity
+    name: ClaimsIdentity
+    nameWithType: ClaimsIdentity
+    fullName: System.Security.Claims.ClaimsIdentity
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Security.Claims.ClaimsIdentity
+    name: ClaimsIdentity
+    nameWithType: ClaimsIdentity
+    fullName: System.Security.Claims.ClaimsIdentity
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Owin.Security.IAuthenticationManager.SignOut*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.SignOut
+  isExternal: true
+  name: SignOut
+  nameWithType: IAuthenticationManager.SignOut
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.SignOut
+- uid: Microsoft.Owin.Security.IAuthenticationManager.User*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.User
+  isExternal: true
+  name: User
+  nameWithType: IAuthenticationManager.User
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.User
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: false
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseChallenge*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseChallenge
+  isExternal: true
+  name: AuthenticationResponseChallenge
+  nameWithType: IAuthenticationManager.AuthenticationResponseChallenge
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseChallenge
+- uid: Microsoft.Owin.Security.AuthenticationResponseChallenge
+  commentId: T:Microsoft.Owin.Security.AuthenticationResponseChallenge
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationResponseChallenge
+  nameWithType: AuthenticationResponseChallenge
+  fullName: Microsoft.Owin.Security.AuthenticationResponseChallenge
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseGrant*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseGrant
+  isExternal: true
+  name: AuthenticationResponseGrant
+  nameWithType: IAuthenticationManager.AuthenticationResponseGrant
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseGrant
+- uid: Microsoft.Owin.Security.AuthenticationResponseGrant
+  commentId: T:Microsoft.Owin.Security.AuthenticationResponseGrant
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationResponseGrant
+  nameWithType: AuthenticationResponseGrant
+  fullName: Microsoft.Owin.Security.AuthenticationResponseGrant
+- uid: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseRevoke*
+  commentId: Overload:Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseRevoke
+  isExternal: true
+  name: AuthenticationResponseRevoke
+  nameWithType: IAuthenticationManager.AuthenticationResponseRevoke
+  fullName: Microsoft.Owin.Security.IAuthenticationManager.AuthenticationResponseRevoke
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke
+  commentId: T:Microsoft.Owin.Security.AuthenticationResponseRevoke
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationResponseRevoke
+  nameWithType: AuthenticationResponseRevoke
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke

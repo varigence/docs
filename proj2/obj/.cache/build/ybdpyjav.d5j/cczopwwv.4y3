@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LoggerExtensions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LoggerExtensions
+   ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Owin.Logging.LoggerExtensions">
+  <h1 id="Microsoft_Owin_Logging_LoggerExtensions" data-uid="Microsoft.Owin.Logging.LoggerExtensions">Class LoggerExtensions
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">ILogger extension methods for common scenarios.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LoggerExtensions</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: System.Dynamic.ExpandoObject</h6>
+  <h6><strong>Assembly</strong>: Microsoft.Owin.dll</h6>
+  
+  <h5 id="Microsoft_Owin_Logging_LoggerExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LoggerExtensions</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_IsEnabled_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.IsEnabled*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_IsEnabled_Microsoft_Owin_Logging_ILogger_System_Diagnostics_TraceEventType_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.IsEnabled(Microsoft.Owin.Logging.ILogger,System.Diagnostics.TraceEventType)"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_IsEnabled_Microsoft_Owin_Logging_ILogger_System_Diagnostics_TraceEventType_" class="expander" data-toggle="collapse">IsEnabled(ILogger, TraceEventType)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_IsEnabled_Microsoft_Owin_Logging_ILogger_System_Diagnostics_TraceEventType_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Checks if the given TraceEventType is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEnabled(this ILogger logger, TraceEventType eventType)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Diagnostics.TraceEventType</span></span>
+        <span class="parametername">eventType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_WriteCritical_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteCritical*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_WriteCritical_Microsoft_Owin_Logging_ILogger_System_String_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteCritical(Microsoft.Owin.Logging.ILogger,System.String)"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteCritical_Microsoft_Owin_Logging_ILogger_System_String_" class="expander" data-toggle="collapse">WriteCritical(ILogger, String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteCritical_Microsoft_Owin_Logging_ILogger_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Writes a critical log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteCritical(this ILogger logger, string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_WriteCritical_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteCritical*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_WriteCritical_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteCritical(Microsoft.Owin.Logging.ILogger,System.String,System.Exception)"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteCritical_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" class="expander" data-toggle="collapse">WriteCritical(ILogger, String, Exception)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteCritical_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Writes a critical log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteCritical(this ILogger logger, string message, Exception error)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Exception</span></span>
+        <span class="parametername">error</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_WriteError_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteError*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_WriteError_Microsoft_Owin_Logging_ILogger_System_String_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteError(Microsoft.Owin.Logging.ILogger,System.String)"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteError_Microsoft_Owin_Logging_ILogger_System_String_" class="expander" data-toggle="collapse">WriteError(ILogger, String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteError_Microsoft_Owin_Logging_ILogger_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Writes an error log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteError(this ILogger logger, string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_WriteError_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteError*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_WriteError_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteError(Microsoft.Owin.Logging.ILogger,System.String,System.Exception)"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteError_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" class="expander" data-toggle="collapse">WriteError(ILogger, String, Exception)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteError_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Writes an error log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteError(this ILogger logger, string message, Exception error)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Exception</span></span>
+        <span class="parametername">error</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_WriteInformation_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteInformation*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_WriteInformation_Microsoft_Owin_Logging_ILogger_System_String_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteInformation(Microsoft.Owin.Logging.ILogger,System.String)"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteInformation_Microsoft_Owin_Logging_ILogger_System_String_" class="expander" data-toggle="collapse">WriteInformation(ILogger, String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteInformation_Microsoft_Owin_Logging_ILogger_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Writes an informational log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteInformation(this ILogger logger, string message)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_WriteVerbose_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteVerbose*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_WriteVerbose_Microsoft_Owin_Logging_ILogger_System_String_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteVerbose(Microsoft.Owin.Logging.ILogger,System.String)"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteVerbose_Microsoft_Owin_Logging_ILogger_System_String_" class="expander" data-toggle="collapse">WriteVerbose(ILogger, String)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteVerbose_Microsoft_Owin_Logging_ILogger_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Writes a verbose log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteVerbose(this ILogger logger, string data)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_WriteWarning_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteWarning*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_WriteWarning_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteWarning(Microsoft.Owin.Logging.ILogger,System.String,System.Exception)"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteWarning_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" class="expander" data-toggle="collapse">WriteWarning(ILogger, String, Exception)</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteWarning_Microsoft_Owin_Logging_ILogger_System_String_System_Exception_" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Writes a warning log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteWarning(this ILogger logger, string message, Exception error)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Exception</span></span>
+        <span class="parametername">error</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Microsoft_Owin_Logging_LoggerExtensions_WriteWarning_" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteWarning*"></a>
+  
+  <h4 id="Microsoft_Owin_Logging_LoggerExtensions_WriteWarning_Microsoft_Owin_Logging_ILogger_System_String_System_String___" data-uid="Microsoft.Owin.Logging.LoggerExtensions.WriteWarning(Microsoft.Owin.Logging.ILogger,System.String,System.String[])"><a href="#collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteWarning_Microsoft_Owin_Logging_ILogger_System_String_System_String___" class="expander" data-toggle="collapse">WriteWarning(ILogger, String, String[])</a></h4>
+  
+  <div id="collapsible-Microsoft_Owin_Logging_LoggerExtensions_WriteWarning_Microsoft_Owin_Logging_ILogger_System_String_System_String___" class="collapse in">
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.Logging.LoggerExtensions.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Writes a warning log message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteWarning(this ILogger logger, string message, params string[] args)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="Microsoft.Owin.Logging.ILogger.html">ILogger</a></span>
+        <span class="parametername">logger</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span>[]</span>
+        <span class="parametername">args</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

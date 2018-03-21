@@ -1,0 +1,52 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Mapping
+  commentId: N:Microsoft.Owin.Mapping
+  id: Microsoft.Owin.Mapping
+  children:
+  - Microsoft.Owin.Mapping.MapMiddleware
+  - Microsoft.Owin.Mapping.MapOptions
+  - Microsoft.Owin.Mapping.MapWhenMiddleware
+  - Microsoft.Owin.Mapping.MapWhenOptions
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Owin.Mapping
+  nameWithType: Microsoft.Owin.Mapping
+  fullName: Microsoft.Owin.Mapping
+  type: Namespace
+  assemblies:
+  - Microsoft.Owin
+references:
+- uid: Microsoft.Owin.Mapping.MapMiddleware
+  commentId: T:Microsoft.Owin.Mapping.MapMiddleware
+  isExternal: true
+  name: MapMiddleware
+  nameWithType: MapMiddleware
+  fullName: Microsoft.Owin.Mapping.MapMiddleware
+- uid: Microsoft.Owin.Mapping.MapOptions
+  commentId: T:Microsoft.Owin.Mapping.MapOptions
+  parent: Microsoft.Owin.Mapping
+  isExternal: true
+  name: MapOptions
+  nameWithType: MapOptions
+  fullName: Microsoft.Owin.Mapping.MapOptions
+- uid: Microsoft.Owin.Mapping.MapWhenMiddleware
+  commentId: T:Microsoft.Owin.Mapping.MapWhenMiddleware
+  isExternal: true
+  name: MapWhenMiddleware
+  nameWithType: MapWhenMiddleware
+  fullName: Microsoft.Owin.Mapping.MapWhenMiddleware
+- uid: Microsoft.Owin.Mapping.MapWhenOptions
+  commentId: T:Microsoft.Owin.Mapping.MapWhenOptions
+  parent: Microsoft.Owin.Mapping
+  isExternal: true
+  name: MapWhenOptions
+  nameWithType: MapWhenOptions
+  fullName: Microsoft.Owin.Mapping.MapWhenOptions
+- uid: Microsoft.Owin.Mapping
+  commentId: N:Microsoft.Owin.Mapping
+  isExternal: false
+  name: Microsoft.Owin.Mapping
+  nameWithType: Microsoft.Owin.Mapping
+  fullName: Microsoft.Owin.Mapping

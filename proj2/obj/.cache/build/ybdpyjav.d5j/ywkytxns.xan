@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<h4 id="mist-user-guide" sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="1" sourceendlinenumber="1">Mist User Guide</h4>
+<h5 id="new-features-in-31" sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="2" sourceendlinenumber="2">New Features in 3.1</h5>
+<p sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="4" sourceendlinenumber="4">Mist 3.1 begins our move to a steady, and more frequent, update schedule. Mist 3.1&#39;s goals include fixing remaining usability issues and implementing targeted features:</p>
+<ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="5" sourceendlinenumber="67">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="5" sourceendlinenumber="6"><strong>Connections</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="6" sourceendlinenumber="6">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="6" sourceendlinenumber="6">Connection string builder dialog added for SQL Server</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="7" sourceendlinenumber="20"><strong>Context Menu and UI Consistency Improvements</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="8" sourceendlinenumber="20">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="8" sourceendlinenumber="8">Available BimlScript Transformers are now listed in the context menus for every object in Mist. They can be executed for that object directly from the context menu</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="9" sourceendlinenumber="9">In any context menu where an annotation can be added, we now let the user navigate to any annotations that are already on the item</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="10" sourceendlinenumber="10">Audit was performed of all context menus in Mist to improve consistency and add features</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="11" sourceendlinenumber="11">Context menus were added throughout the package designer and package details grids</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="12" sourceendlinenumber="20"><em>Context Menu Details</em><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="13" sourceendlinenumber="20">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="13" sourceendlinenumber="13">All data grids now support a Copy Selection command via context menu</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="14" sourceendlinenumber="14">Fixed missing type icons, inability to select group items in the Partition, Aggregation, and Calculation data grids, added context menus in the cube editors and script project data grids</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="15" sourceendlinenumber="15">The Find Results context menu now has commands for Go to Next Location and Go to Previous Location, which matches Visual Studio</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="16" sourceendlinenumber="16">Additionally, the error list context menu now has an icon for the copy command</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="17" sourceendlinenumber="17">The References list, Output control, and Recent document context menus have been updated with commands and icons, where appropriate</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="18" sourceendlinenumber="18">Improvements to context menu tooltips: word wrapping and limited width, and so separators appear correctly</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="19" sourceendlinenumber="19">Rename command is now enabled in context menu for table column and package project parameter</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="20" sourceendlinenumber="20">BimlScript Designer Input Editor&#39;s context menu now has undo / redo commands</li>
+</ul>
+</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="21" sourceendlinenumber="25"><strong>Project and Logical View</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="22" sourceendlinenumber="25">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="22" sourceendlinenumber="22">In Project View, selecting a file and typing ctrl-c, ctrl-v now copies and pastes the file</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="23" sourceendlinenumber="23">In Project View, right-click and copy will add the name of the file to the text copy and paste buffer</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="24" sourceendlinenumber="24">In Project View, Context Menu no longer strips out the first underscore in asset&#39;s name</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="25" sourceendlinenumber="25">In Logical View, &quot;Add Root Folder&quot; is disabled in the logical context menu</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="26" sourceendlinenumber="28"><strong>Project Designer</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="27" sourceendlinenumber="28">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="27" sourceendlinenumber="27">Textboxes now extend the width of the designer</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="28" sourceendlinenumber="28">The command line options textbox is now multi-line. It accepts returns and a vertical scroll-bar will appear as needed</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="29" sourceendlinenumber="31"><strong>Biml</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="30" sourceendlinenumber="31">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="30" sourceendlinenumber="30">Biml files produced during import tables or import packages dialogs are now auto-formatted</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="31" sourceendlinenumber="31">Biml files and Mist project files are now saved in UTF-8 format</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="32" sourceendlinenumber="39"><strong>BimlScript: Language, Formatting, and Intelliprompt</strong> <ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="33" sourceendlinenumber="39">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="33" sourceendlinenumber="33">Added BimlScript annotation directive, including updates to intelliprompt to support it</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="34" sourceendlinenumber="34">Fixed autocomplete errors with BimlScript directives where an extra &#39;=&#39; would be added in some cases</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="35" sourceendlinenumber="35">Fixed some other minor Biml Intellisense issues</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="36" sourceendlinenumber="36">Added error squiggles to BimlScript code editor</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="37" sourceendlinenumber="37">Intellisense autocomplete list for tier property is now sorted numerically, not alphabetically</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="38" sourceendlinenumber="38">Intelliprompt no longer activates when declaring variables and within lambda expressions</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="39" sourceendlinenumber="39">In BimlScript Library Designer&#39;s Input Editor, the context menu&#39;s Format Biml command now performs the same operation as the Format Document ribbon button</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="40" sourceendlinenumber="45"><strong>Package Designer</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="41" sourceendlinenumber="45">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="41" sourceendlinenumber="41">Variable type items in Add Variable context menu are now sorted in ascending order, but with Empty as the first type listed</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="42" sourceendlinenumber="42">Various consistency fixes based on a full audit of all details panes</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="43" sourceendlinenumber="43">New ability to move Toolbox items to other groups within the Toolbox - stored in user settings</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="44" sourceendlinenumber="44">When deleting a package, if the user pressed cancel in the confirmation dialog, we previously cleared aspects of the package UI</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="45" sourceendlinenumber="45">The SendMail Package Details designer now display working UI for attachments</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="46" sourceendlinenumber="51"><strong>Script Tasks / Components</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="47" sourceendlinenumber="51">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="47" sourceendlinenumber="47">Undo, ctrl-z now works in the Script Code Editor</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="48" sourceendlinenumber="48">The Script Source and Transformation Components now include boilerplate code for public override void CreateNewOutputRows() in Main.cs</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="49" sourceendlinenumber="49">ScriptComponentSource/Transformation/Destination now display ribbon buttons in package designer</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="50" sourceendlinenumber="50">Source Script Project: Context menus added for Output Buffers</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="51" sourceendlinenumber="51">Mist no longer crashes when changing the OutputBuffer Name in a biml File</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="52" sourceendlinenumber="56"><strong>Focus / Navigation</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="53" sourceendlinenumber="56">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="53" sourceendlinenumber="53">An icon now appears to the left of a property grid identifier, indicating the control that contains the property grid&#39;s selected item.</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="54" sourceendlinenumber="54">The property grid title&#39;s background now becomes a light pink color if the selected item is not in a designer.</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="55" sourceendlinenumber="55">Added tooltip text when property grid&#39;s selected item has pink background</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="56" sourceendlinenumber="56">Added pink shading and icon display to the Annotations tool window</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="57" sourceendlinenumber="63"><strong>Infrastructure</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="58" sourceendlinenumber="63">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="58" sourceendlinenumber="58">Notifications, of changes to files outside of Mist, have been improved for Windows 8 and SVN Revert</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="59" sourceendlinenumber="59">Exceptions produced on load of plugins are handled better and reported in detail to the user</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="60" sourceendlinenumber="60">SyntaxEditor context menu items are no longer disabled after a project is built (using the Build ribbon button or Build &amp; Run)</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="61" sourceendlinenumber="61">Context menus now clear when build is running</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="62" sourceendlinenumber="62">AstTableNode.GetTableSQL() now works on a lowered AST</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="63" sourceendlinenumber="63">References to abstract types are no longer broken by built-in lowering transformers</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="64" sourceendlinenumber="65"><strong>Setup</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="65" sourceendlinenumber="65">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="65" sourceendlinenumber="65">Mist can now be installed side by side with older versions</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="66" sourceendlinenumber="67"><strong>Miscellaneous</strong><ul sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="67" sourceendlinenumber="67">
+<li sourcefile="articles/Mist 3.1.md" sourcestartlinenumber="67" sourceendlinenumber="67">Adding a Table View in Mist now adds the view portion to the table</li>
+</ul>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

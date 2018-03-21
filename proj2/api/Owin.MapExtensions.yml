@@ -1,0 +1,548 @@
+### YamlMime:ManagedReference
+items:
+- uid: Owin.MapExtensions
+  commentId: T:Owin.MapExtensions
+  id: MapExtensions
+  parent: Owin
+  children:
+  - Owin.MapExtensions.Map(Owin.IAppBuilder,Microsoft.Owin.PathString,System.Action{Owin.IAppBuilder})
+  - Owin.MapExtensions.Map(Owin.IAppBuilder,System.String,System.Action{Owin.IAppBuilder})
+  langs:
+  - csharp
+  - vb
+  name: MapExtensions
+  nameWithType: MapExtensions
+  fullName: Owin.MapExtensions
+  type: Class
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nExtension methods for the MapMiddleware\n"
+  syntax:
+    content: public static class MapExtensions
+    content.vb: Public Module MapExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Owin.MapExtensions.Map(Owin.IAppBuilder,System.String,System.Action{Owin.IAppBuilder})
+  commentId: M:Owin.MapExtensions.Map(Owin.IAppBuilder,System.String,System.Action{Owin.IAppBuilder})
+  id: Map(Owin.IAppBuilder,System.String,System.Action{Owin.IAppBuilder})
+  isExtensionMethod: true
+  parent: Owin.MapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Map(IAppBuilder, String, Action<IAppBuilder>)
+  nameWithType: MapExtensions.Map(IAppBuilder, String, Action<IAppBuilder>)
+  fullName: Owin.MapExtensions.Map(Owin.IAppBuilder, System.String, System.Action<Owin.IAppBuilder>)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nIf the request path starts with the given pathMatch, execute the app configured via configuration parameter instead of\ncontinuing to the next component in the pipeline.\n"
+  syntax:
+    content: public static IAppBuilder Map(this IAppBuilder app, string pathMatch, Action<IAppBuilder> configuration)
+    parameters:
+    - id: app
+      type: Owin.IAppBuilder
+    - id: pathMatch
+      type: System.String
+      description: The path to match
+    - id: configuration
+      type: System.Action{Owin.IAppBuilder}
+      description: The branch to take for positive path matches
+    return:
+      type: Owin.IAppBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Map(app As IAppBuilder, pathMatch As String, configuration As Action(Of IAppBuilder)) As IAppBuilder
+  overload: Owin.MapExtensions.Map*
+  nameWithType.vb: MapExtensions.Map(IAppBuilder, String, Action(Of IAppBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Owin.MapExtensions.Map(Owin.IAppBuilder, System.String, System.Action(Of Owin.IAppBuilder))
+  name.vb: Map(IAppBuilder, String, Action(Of IAppBuilder))
+- uid: Owin.MapExtensions.Map(Owin.IAppBuilder,Microsoft.Owin.PathString,System.Action{Owin.IAppBuilder})
+  commentId: M:Owin.MapExtensions.Map(Owin.IAppBuilder,Microsoft.Owin.PathString,System.Action{Owin.IAppBuilder})
+  id: Map(Owin.IAppBuilder,Microsoft.Owin.PathString,System.Action{Owin.IAppBuilder})
+  isExtensionMethod: true
+  parent: Owin.MapExtensions
+  langs:
+  - csharp
+  - vb
+  name: Map(IAppBuilder, PathString, Action<IAppBuilder>)
+  nameWithType: MapExtensions.Map(IAppBuilder, PathString, Action<IAppBuilder>)
+  fullName: Owin.MapExtensions.Map(Owin.IAppBuilder, Microsoft.Owin.PathString, System.Action<Owin.IAppBuilder>)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nIf the request path starts with the given pathMatch, execute the app configured via configuration parameter instead of\ncontinuing to the next component in the pipeline.\n"
+  syntax:
+    content: public static IAppBuilder Map(this IAppBuilder app, PathString pathMatch, Action<IAppBuilder> configuration)
+    parameters:
+    - id: app
+      type: Owin.IAppBuilder
+    - id: pathMatch
+      type: Microsoft.Owin.PathString
+      description: The path to match
+    - id: configuration
+      type: System.Action{Owin.IAppBuilder}
+      description: The branch to take for positive path matches
+    return:
+      type: Owin.IAppBuilder
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Map(app As IAppBuilder, pathMatch As PathString, configuration As Action(Of IAppBuilder)) As IAppBuilder
+  overload: Owin.MapExtensions.Map*
+  nameWithType.vb: MapExtensions.Map(IAppBuilder, PathString, Action(Of IAppBuilder))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Owin.MapExtensions.Map(Owin.IAppBuilder, Microsoft.Owin.PathString, System.Action(Of Owin.IAppBuilder))
+  name.vb: Map(IAppBuilder, PathString, Action(Of IAppBuilder))
+references:
+- uid: Owin
+  commentId: N:Owin
+  isExternal: false
+  name: Owin
+  nameWithType: Owin
+  fullName: Owin
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Owin.MapExtensions.Map*
+  commentId: Overload:Owin.MapExtensions.Map
+  isExternal: true
+  name: Map
+  nameWithType: MapExtensions.Map
+  fullName: Owin.MapExtensions.Map
+- uid: Owin.IAppBuilder
+  isExternal: true
+  name: IAppBuilder
+  nameWithType: IAppBuilder
+  fullName: Owin.IAppBuilder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Action{Owin.IAppBuilder}
+  commentId: T:System.Action{Owin.IAppBuilder}
+  parent: System
+  definition: System.Action`1
+  name: Action<IAppBuilder>
+  nameWithType: Action<IAppBuilder>
+  fullName: System.Action<Owin.IAppBuilder>
+  nameWithType.vb: Action(Of IAppBuilder)
+  fullName.vb: System.Action(Of Owin.IAppBuilder)
+  name.vb: Action(Of IAppBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Owin.IAppBuilder
+    name: IAppBuilder
+    nameWithType: IAppBuilder
+    fullName: Owin.IAppBuilder
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Owin.IAppBuilder
+    name: IAppBuilder
+    nameWithType: IAppBuilder
+    fullName: Owin.IAppBuilder
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.PathString
+  commentId: T:Microsoft.Owin.PathString
+  parent: Microsoft.Owin
+  isExternal: true
+  name: PathString
+  nameWithType: PathString
+  fullName: Microsoft.Owin.PathString
+- uid: Microsoft.Owin
+  commentId: N:Microsoft.Owin
+  isExternal: false
+  name: Microsoft.Owin
+  nameWithType: Microsoft.Owin
+  fullName: Microsoft.Owin

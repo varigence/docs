@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Varigence.Languages.Biml.Task
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Varigence.Languages.Biml.Task
+   ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Varigence.Languages.Biml.Task">
+  
+  <h1 id="Varigence_Languages_Biml_Task" data-uid="Varigence.Languages.Biml.Task" class="text-break">Namespace Varigence.Languages.Biml.Task
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAnalysisServicesExecuteDdlTaskNode.html">AstAnalysisServicesExecuteDdlTaskNode</a></h4>
+      <section><p>The Analysis Services Execute DDL task runs data definition language statements.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAnalysisServicesProcessingTaskNode.html">AstAnalysisServicesProcessingTaskNode</a></h4>
+      <section><p>The Analysis Services Processing task processes Analysis Services objects such as cubes, dimensions, and mining models.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAutomaticDatabaseBackupDestinationNode.html">AstAutomaticDatabaseBackupDestinationNode</a></h4>
+      <section><p>The AstAutomaticDatabaseBackupDestinationNode type corresponds directly to an automatic backup destination for the SQL Server Integration Services Database Backup task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureBlobDownloadTaskNode.html">AstAzureBlobDownloadTaskNode</a></h4>
+      <section><p>The Azure Blob Download Task provides options to download files from Microsoft Azure Blob Storage.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureBlobTransferTaskNode.html">AstAzureBlobTransferTaskNode</a></h4>
+      <section><p>The Azure Blob Transfer task node is a common abstract base class for Azure Blob Upload and Download tasks.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureBlobUploadTaskNode.html">AstAzureBlobUploadTaskNode</a></h4>
+      <section><p>The Azure Blob Upload Task provides options to upload files to Microsoft Azure Blob Storage.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureHDInsightCreateClusterTaskNode.html">AstAzureHDInsightCreateClusterTaskNode</a></h4>
+      <section><p>The Azure HDInsight Create Cluster Task creates a new Microsoft Azure HDInsight cluster.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureHDInsightDeleteClusterTaskNode.html">AstAzureHDInsightDeleteClusterTaskNode</a></h4>
+      <section><p>The Azure HDInsight Delete Cluster Task deletes an existing Microsoft Azure HDInsight cluster.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureHDInsightJobBlobScriptResourceNode.html">AstAzureHDInsightJobBlobScriptResourceNode</a></h4>
+      <section><p>AstAzureHDInsightJobBlobScriptResourceNode is used for referencing scripts stored in Azure blob storage that are to be sent to Azure HDInsight for job processing.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureHDInsightJobInlineScriptResourceNode.html">AstAzureHDInsightJobInlineScriptResourceNode</a></h4>
+      <section><p>AstAzureHDInsightJobScriptResourceNode is used for authoring inline scripts to be sent to Azure HDInsight for job processing.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureHDInsightSubmitHiveJobTaskNode.html">AstAzureHDInsightSubmitHiveJobTaskNode</a></h4>
+      <section><p>The Azure HDInsight Hive Task submits a Hive job to Microsoft Azure HDInsight.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureHDInsightSubmitJobTaskNode.html">AstAzureHDInsightSubmitJobTaskNode</a></h4>
+      <section><p>The Azure HDInstight Submit Job task task node is a common abstract base class for Azure HDInsight job submission tasks.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstAzureHDInsightSubmitPigJobTaskNode.html">AstAzureHDInsightSubmitPigJobTaskNode</a></h4>
+      <section><p>The Azure HDInsight Pig Task submits a Pig job to Microsoft Azure HDInsight.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstBackupDatabaseTaskNode.html">AstBackupDatabaseTaskNode</a></h4>
+      <section><p>The Back Up Database task can back up one or more SQL Server databases.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstBackupDestinationNode.html">AstBackupDestinationNode</a></h4>
+      <section><p>AstBackupDestinationNode is an abstract type that serves as the base type for both the automatic and manual database backup destinations for the SQL Server Integration Services Database Backup task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstBulkInsertTaskNode.html">AstBulkInsertTaskNode</a></h4>
+      <section><p>The Bulk Insert task is an efficient method of copying large amounts of data into a SQL Server table.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstCandidateKeyProfileRequestNode.html">AstCandidateKeyProfileRequestNode</a></h4>
+      <section><p>The AstCandidateKeyProfileRequestNode type corresponds directly to the candidate key data profile in the SQL Server Integration Services data profiling task, which will report which column(s) have unique values across rows and could consequently serve as keys.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstCdcControlTaskNode.html">AstCdcControlTaskNode</a></h4>
+      <section><p>The CDC Control Task provides a variety of options for CDC control operations on a CDC-enabled SQL Server database.  It corresponds directly to the CDC Control Task in SSIS 2012 and higher (<a href="http://msdn.microsoft.com/en-us/library/hh758674.aspx">http://msdn.microsoft.com/en-us/library/hh758674.aspx</a>).</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstCheckDatabaseIntegrityTaskNode.html">AstCheckDatabaseIntegrityTaskNode</a></h4>
+      <section><p>The Check Database Integrity task runs the DBCC CHECKDBT Transact- SQL command to verify the integrity of the database.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstColumnLengthDistributionProfileRequestNode.html">AstColumnLengthDistributionProfileRequestNode</a></h4>
+      <section><p>The AstColumnLengthDistributionProfileRequestNode type corresponds directly to the column length distribution data profile in the SQL Server Integration Services data profiling task, which will report length statistics for columns with character types.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstColumnNullRatioProfileRequestNode.html">AstColumnNullRatioProfileRequestNode</a></h4>
+      <section><p>The AstColumnNullRatioProfileRequestNode type corresponds directly to the column null ratio data profile in the SQL Server Integration Services data profiling task, which will report the frequency of null values in nullable columns.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstColumnPatternProfileRequestNode.html">AstColumnPatternProfileRequestNode</a></h4>
+      <section><p>The AstColumnPatternProfileRequestNode type corresponds directly to the column pattern data profile in the SQL Server Integration Services data profiling task, which will compute a collection of patterns that describe the values in a character-based column.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstColumnStatisticsProfileRequestNode.html">AstColumnStatisticsProfileRequestNode</a></h4>
+      <section><p>The AstColumnStatisticsProfileRequestNode type corresponds directly to the column statistics data profile in the SQL Server Integration Services data profiling task, which will report aggregation statistics for numeric and date/time columns.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstColumnValueDistributionProfileRequestNode.html">AstColumnValueDistributionProfileRequestNode</a></h4>
+      <section><p>The AstColumnValueDistributionRequestNode type corresponds directly to the column value distribution data profile in the SQL Server Integration Services data profiling task, which will report the number of occurences of each value for a given column.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstComponentResourceNode.html">AstComponentResourceNode</a></h4>
+      <section><p>The AstComponentResourceNode type is used for creating references to a SSIS dataflow component that has been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstComponentScriptProjectReferenceResourceNode.html">AstComponentScriptProjectReferenceResourceNode</a></h4>
+      <section><p>This resource type is used to reference an existing component script project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstComponentScriptProjectResourceNode.html">AstComponentScriptProjectResourceNode</a></h4>
+      <section><p>This resource type is used to create a new component script project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstConfigurationValueNode.html">AstConfigurationValueNode</a></h4>
+      <section><p>The AstConfigurationValueNode type corresponds directly to an individual value setting within a SQL Server Integration Services package configuration.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstContainerTaskBaseNode.html">AstContainerTaskBaseNode</a></h4>
+      <section><p>AstContainerTaskBaseNode is the base type that is used for all SQL Server Integration Services task containers in Biml.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstContainerTaskNode.html">AstContainerTaskNode</a></h4>
+      <section><p>AstContainerTaskNode corresponds directly to a SQL Server Integration Services sequence container task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstCubeProcessingConfigurationNode.html">AstCubeProcessingConfigurationNode</a></h4>
+      <section><p>The AstCubeProcessingConfigurationNode type describes cube processing options used by the SQL Server Integration Services Analysis Services Processing task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstCustomExtensionContainerTaskNode.html">AstCustomExtensionContainerTaskNode</a></h4>
+      <section><p>Custom tasks to run additional code or scripts during the creation of a Table, Dimension, or Fact.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstCustomTaskNode.html">AstCustomTaskNode</a></h4>
+      <section><p>The AstCustomTaskNode type supports custom and third party SQL Server Integration Services tasks.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstDatabaseProcessingConfigurationNode.html">AstDatabaseProcessingConfigurationNode</a></h4>
+      <section><p>The AstDatabaseProcessingConfigurationNode type describes database processing options used by the SQL Server Integration Services Analysis Services Processing task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstDataflowTaskNode.html">AstDataflowTaskNode</a></h4>
+      <section><p>The AstEtlRootNode type corresponds directly to a SQL Server Integration Services dataflow task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstDataProfileRequestNode.html">AstDataProfileRequestNode</a></h4>
+      <section><p>AstDataProfileRequestNode is the base type for all data profiling types available in the SQL Server Integration Services data profiling task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstDataProfilingTaskNode.html">AstDataProfilingTaskNode</a></h4>
+      <section><p>The Data Profiling task helps you to solve data problems by profiling specifed columns and column relationships in a data source.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstDimensionProcessingConfigurationNode.html">AstDimensionProcessingConfigurationNode</a></h4>
+      <section><p>The AstDimensionProcessingConfigurationNode type describes dimension processing options used by the SQL Server Integration Services Analysis Services Processing task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstDirectResourceNode.html">AstDirectResourceNode</a></h4>
+      <section><p>The AstDirectResourceNode type provides the facility to directly input text data for use in the referencing Biml object.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstEnvironmentVariableResourceNode.html">AstEnvironmentVariableResourceNode</a></h4>
+      <section><p>This resource references an environment variable on the computer.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExecutePackageSqlServerResourceNode.html">AstExecutePackageSqlServerResourceNode</a></h4>
+      <section><p>The AstExecutePackageSqlServerResourceNode type is used for creating references to a SQL Server Integration Services package stored in an existing SQL Server database that has not been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExecutePackageTaskNode.html">AstExecutePackageTaskNode</a></h4>
+      <section><p>The Execute Package task allows packages to run other packages as part of a workflow.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExecuteProcessTaskNode.html">AstExecuteProcessTaskNode</a></h4>
+      <section><p>An Execute Process task can run business applications or batch files as part of a package workflow.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExecuteSqlParameterMappingTypeNode.html">AstExecuteSqlParameterMappingTypeNode</a></h4>
+      <section><p>The AstExecuteSqlParameterMappingTypeNode type provides the capability to map a named parameter onto a SQL Server Integration Services package variable value in an Execute SQL task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExecuteSqlServerAgentJobTaskNode.html">AstExecuteSqlServerAgentJobTaskNode</a></h4>
+      <section><p>The Execute SQL Server Agent Job task runs SQL Server Agent jobs specified in a maintenance plan.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExecuteSqlTaskNode.html">AstExecuteSqlTaskNode</a></h4>
+      <section><p>The Execute SQL task runs SQL statements during package execution.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExecuteTSqlStatementTaskNode.html">AstExecuteTSqlStatementTaskNode</a></h4>
+      <section><p>The Execute T-SQL Statement task can be used to add specified Transact-SQL statements to a maintenance plan.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExpressionTaskNode.html">AstExpressionTaskNode</a></h4>
+      <section><p>The Expression Task will execute an SSIS expression.  It is often used as a convenient host for variable assignments or to serve as a placeholder for control flow branching.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExternalFileResourceNode.html">AstExternalFileResourceNode</a></h4>
+      <section><p>The AstExternalFileResourceNode type is used for creating references to a file path on the local file system that has not been modeled in the Biml project as a file connection.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstExternalProjectPackageResourceNode.html">AstExternalProjectPackageResourceNode</a></h4>
+      <section><p>The AstExternalProjectPackageResourceNode type is used for creating references to a package that has been created within the SSIS package project and which might not have been modeled within the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstFileNameFromVariableResourceNode.html">AstFileNameFromVariableResourceNode</a></h4>
+      <section><p>The AstFileNameFromVariableResourceNode type provides the facility to reference a SQL Server Integration Services package variable that contains a file name for use in the referencing Biml object.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstFileResourceNode.html">AstFileResourceNode</a></h4>
+      <section><p>AstFileResourceNode is used for creating references to file connections that have been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstFileSystemTaskNode.html">AstFileSystemTaskNode</a></h4>
+      <section><p>The File System Task performs commands against specified files and directories.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstFlatFileResourceNode.html">AstFlatFileResourceNode</a></h4>
+      <section><p>AstFlatFileResourceNode is used for creating references to flat file connections that have been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachAdoLoopNode.html">AstForEachAdoLoopNode</a></h4>
+      <section><p>The Foreach ADO Loop enumerates tables or table rows in data that is stored in a variable.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachAdoNetSchemaLoopNode.html">AstForEachAdoNetSchemaLoopNode</a></h4>
+      <section><p>The Foreach ADO.NET Schema Loop enumerates specified information about the data source.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachAdoNetSchemaLoopRestrictionNode.html">AstForEachAdoNetSchemaLoopRestrictionNode</a></h4>
+      <section><p>AstForEachAdoNetSchemaLoopRestrictionNode is an abstract type that serves as the base type for all schema loop restriction types.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachAdoNetSchemaLoopRestrictionTextNode.html">AstForEachAdoNetSchemaLoopRestrictionTextNode</a></h4>
+      <section><p>The AstForEachAdoNetSchemaLoopRestrictionTextNode type corresponds directly to a text schema loop restriction in a SQL Server Integration Services ADO.NET Schema Loop Container task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachAdoNetSchemaLoopRestrictionVariableNode.html">AstForEachAdoNetSchemaLoopRestrictionVariableNode</a></h4>
+      <section><p>The AstForEachAdoNetSchemaLoopRestrictionVariableNode type corresponds directly to a variable schema loop restriction in a SQL Server Integration Services ADO.NET Schema Loop Container task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachFileLoopNode.html">AstForEachFileLoopNode</a></h4>
+      <section><p>The Foreach File Loop enumerates files in a folder.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachFromVariableLoopNode.html">AstForEachFromVariableLoopNode</a></h4>
+      <section><p>The Foreach From Variable Loop enumerates enumerable objects contained in a specified variable.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachItemLoopColumnNode.html">AstForEachItemLoopColumnNode</a></h4>
+      <section><p>The AstForEachItemLoopColumnNode type corresponds directly to a column within a row defined for a Foreach Item Loop Container task in SQL Server Integration Services.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachItemLoopNode.html">AstForEachItemLoopNode</a></h4>
+      <section><p>The Foreach Item Loop enumerates items in collections.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachItemLoopRowNode.html">AstForEachItemLoopRowNode</a></h4>
+      <section><p>The AstForEachItemLoopRowNode type corresponds directly to a row defined for a Foreach Item Loop Container task in SQL Server Integration Services.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachLoopNode.html">AstForEachLoopNode</a></h4>
+      <section><p>AstForEachLoopNode corresponds directly to a SQL Server Integration Services foreach loop container task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachNodeListLoopNode.html">AstForEachNodeListLoopNode</a></h4>
+      <section><p>The Foreach Nodelist Loop loops through all the nodes of an XML file that is the result of applying an Xpath expression to an XML file and enumerates and lists specified elements.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForEachSmoLoopNode.html">AstForEachSmoLoopNode</a></h4>
+      <section><p>The Foreach SMO loop enumerates a SQL Server Management Objects (SMO) obect on a specified instance of SQL Server.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstForLoopContainerTaskNode.html">AstForLoopContainerTaskNode</a></h4>
+      <section><p>AstForLoopContainerTaskNode corresponds directly to a SQL Server Integration Services for loop container task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstFtpTaskNode.html">AstFtpTaskNode</a></h4>
+      <section><p>The FTP task downloads and uploads data files and directories as part of an Integration Services workflow.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstFunctionalDependencyProfileRequestNode.html">AstFunctionalDependencyProfileRequestNode</a></h4>
+      <section><p>The AstFunctionalDependencyProfileRequestNode type corresponds directly to the functional dependency data profile in the SQL Server Integration Services data profiling task, which will report whether all column values in one column have a 1:1 or 1:Many correspondance with a specified related column.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstHistoryCleanupTaskNode.html">AstHistoryCleanupTaskNode</a></h4>
+      <section><p>The History Cleanup task removes old, unneeded historical information from the database.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstIndirectFileResourceNode.html">AstIndirectFileResourceNode</a></h4>
+      <section><p>This resource provides a reference to an environment variable that contains a file path for use by package configurations.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstIndirectSqlServerResourceNode.html">AstIndirectSqlServerResourceNode</a></h4>
+      <section><p>This resource provides a reference to an environment variable that contains a SQL Server connection string for use by package configurations.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstLogEventNode.html">AstLogEventNode</a></h4>
+      <section><p>The AstLogEventNode type corresponds directly to a log event in SQL Server Integration Services.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstMaintenanceCleanupFolderTaskResourceNode.html">AstMaintenanceCleanupFolderTaskResourceNode</a></h4>
+      <section><p>Specifies the folder and file extension information for the Maintenance Plan Cleanup Task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstMaintenanceCleanupTaskNode.html">AstMaintenanceCleanupTaskNode</a></h4>
+      <section><p>The Maintenance Cleanup task removed unneeded backup files or other maintenance-related files from the specified locations.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstManualDatabaseBackupDestinationNode.html">AstManualDatabaseBackupDestinationNode</a></h4>
+      <section><p>The AstManualDatabaseBackupDestinationNode type corresponds directly to an manual backup destination for the SQL Server Integration Services Database Backup task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstManualDatabaseBackupDestinationObjectNode.html">AstManualDatabaseBackupDestinationObjectNode</a></h4>
+      <section><p>The AstManualDatabaseBackupDestinationObjectNode type corresponds directly to a database object that will be backed up as part of a manual backup destination in SQL Server Integration Services.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstMeasureGroupProcessingConfigurationNode.html">AstMeasureGroupProcessingConfigurationNode</a></h4>
+      <section><p>The AstMeasureGroupProcessingConfigurationNode type describes measure group processing options used by the SQL Server Integration Services Analysis Services Processing task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstMergeColumnNode.html">AstMergeColumnNode</a></h4>
+      <section><p>The AstMergeColumnNode type defines how an individual table column in a source table will be mapped to the target table when constructing a T-SQL merge statement in the merge task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstMergeTaskNode.html">AstMergeTaskNode</a></h4>
+      <section><p>The Merge task changes a target table based on the the results of a join with a source table.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstMessageQueueTaskNode.html">AstMessageQueueTaskNode</a></h4>
+      <section><p>The Message Queue task can send and receive messages between SSIS packages or to an application queue processed by a custom application. The messages can contain simple text, files, or variables and values.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstMiningModelProcessingConfigurationNode.html">AstMiningModelProcessingConfigurationNode</a></h4>
+      <section><p>The AstMiningModelProcessingConfigurationNodetype describes mining model processing options used by the SQL Server Integration Services Analysis Services Processing task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstMiningStructureProcessingConfigurationNode.html">AstMiningStructureProcessingConfigurationNode</a></h4>
+      <section><p>The AstMiningStructureProcessingConfigurationNode type describes mining structure processing options used by the SQL Server Integration Services Analysis Services Processing task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstNotifyOperatorTaskNode.html">AstNotifyOperatorTaskNode</a></h4>
+      <section><p>The Notify Operator task sends notification messages via e-mail, pager, or net send to SQL Server Agent operators.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstPackageConfigurationNode.html">AstPackageConfigurationNode</a></h4>
+      <section><p>The AstPackageConfigurationNode type corresponds directly to a package configuration that can apply setting information to a SQL Server Integration Services package.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstPackageEmitTargetResourceNode.html">AstPackageEmitTargetResourceNode</a></h4>
+      <section><p>The AstPackageEmitTargetResourceNode type is used for creating references to any Biml object that has been modeled in the Biml project and can be compiled to produce a package.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstPackageNode.html">AstPackageNode</a></h4>
+      <section><p>The AstPackageNode type corresponds directly to a SQL Server Integration Services package.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstPackageResourceNode.html">AstPackageResourceNode</a></h4>
+      <section><p>The AstPackageResourceNode type is used for creating references to a package that has been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstParameterMappingTypeNode.html">AstParameterMappingTypeNode</a></h4>
+      <section><p>AstParameterMappingTypeNode is an abstract type that serves as the base type for parameter mapping nodes in the Biml framework.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstParameterNode.html">AstParameterNode</a></h4>
+      <section><p>Defines a parameter for Data Integration Project or package.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstPartitionProcessingConfigurationNode.html">AstPartitionProcessingConfigurationNode</a></h4>
+      <section><p>The AstPartitionProcessingConfigurationNode type describes partition processing options used by the SQL Server Integration Services Analysis Services Processing task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstPersistFileResourceNode.html">AstPersistFileResourceNode</a></h4>
+      <section><p>The AstPersistFileResourceNode type provides the facility to directly input text data and then storing that text data in the specified file for use in the referencing Biml object.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstProcessingConfigurationNode.html">AstProcessingConfigurationNode</a></h4>
+      <section><p>AstProcessingConfigurationNode is an abstract type that serves as the base type for all processing configuration types used by the SQL Server Integration Services Analysis Services Processing task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstPropertyExpressionNode.html">AstPropertyExpressionNode</a></h4>
+      <section><p>The AstPropertyExpressionNode type provides the ability to map a SQL Server Integration Services expression value onto a property.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstRebuildIndexTaskNode.html">AstRebuildIndexTaskNode</a></h4>
+      <section><p>The Rebuild Index task restores the free space on index pages.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstReorganizeIndexTaskNode.html">AstReorganizeIndexTaskNode</a></h4>
+      <section><p>The Reorganize Index task rearranges index pages to improve their search order.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstRetryContainerTaskNode.html">AstRetryContainerTaskNode</a></h4>
+      <section><p>AstRetryContainerTaskNode is an abstract type that creates a for loop container that will automatically re-run all child tasks as many times as is specified.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstScriptTaskNode.html">AstScriptTaskNode</a></h4>
+      <section><p>The AstScriptTaskNode type corresponds directly to a SQL Server Integration Services script task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstSendMailTaskNode.html">AstSendMailTaskNode</a></h4>
+      <section><p>The Send Mail task sends messages to specified recipients about tasks, events, and outcomes of the workflow.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstShrinkDatabaseTaskNode.html">AstShrinkDatabaseTaskNode</a></h4>
+      <section><p>The Shrink Database Task, if possible, reduces the size of the specified databases.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstSsisAnnotationNode.html">AstSsisAnnotationNode</a></h4>
+      <section><p>AstSsisAnnotationNode corresponds directly to a SQL Server Integration Services design surface text annotation.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstSsisControlFlowPartResourceNode.html">AstSsisControlFlowPartResourceNode</a></h4>
+      <section><p>The AstSsisControlFlowPartResourceNode type is used for creating references to a SSIS control flow part that has been modelled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstStagingContainerTaskNode.html">AstStagingContainerTaskNode</a></h4>
+      <section><p>AstStagingContainerTaskNode is an abstract type that creates one or more tables at the beginning of the container, executes child tasks, and then destroys the created tables at the end of the container.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstStoredProcColumnNode.html">AstStoredProcColumnNode</a></h4>
+      <section><p>The AstStoredProcColumnNode is used to define the input and output columns that will be exposed by the parent Stored Procedure.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstStoredProcNode.html">AstStoredProcNode</a></h4>
+      <section><p>AstPackageNode is an abstract type that creates an ExecuteSQL task to create a stored procedure that can be referenced elsewhere in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstStringVariableResourceNode.html">AstStringVariableResourceNode</a></h4>
+      <section><p>AstStringVariableResourceNode is used for creating references to variables that have been modeled in the Biml project. This is used with the AstMessageQueueTaskNode.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTableColumnResourceNode.html">AstTableColumnResourceNode</a></h4>
+      <section><p>This resource references a column from a table in the model.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTableFromVariableResourceNode.html">AstTableFromVariableResourceNode</a></h4>
+      <section><p>The AstTableFromVariableResourceNode type provides the facility to reference a SQL Server Integration Services package variable that contains a table name for use in the referencing Biml object.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTableHintParameterNode.html">AstTableHintParameterNode</a></h4>
+      <section><p>The AstTableHintParameterNode type corresponds directly to a table or query hint in SQL Server.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTableResourceNode.html">AstTableResourceNode</a></h4>
+      <section><p>The AstTableResourceNode type is used for creating references to a table that has been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskBaseNode.html">AstTaskBaseNode</a></h4>
+      <section><p>Abstract base class for defining Integration Services tasks.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskEventHandlerNode.html">AstTaskEventHandlerNode</a></h4>
+      <section><p>The Task Event Handler performs responds to events raised by tasks in the package.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskflowInputPathNode.html">AstTaskflowInputPathNode</a></h4>
+      <section><p>AstTaskflowInputPathNode is used to model input paths in a SQL Server Integration Services task control flow.  Connections are made by referencing an appropriate output path.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskflowOutputPathNode.html">AstTaskflowOutputPathNode</a></h4>
+      <section><p>AstTaskflowOutputPathNode is used to model output paths in a SQL Server Integration Services task control flow.  Connections are made by referencing an output path from an appropriate task precendence constraint.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskflowPrecedenceConstraintsNode.html">AstTaskflowPrecedenceConstraintsNode</a></h4>
+      <section><p>The AstTaskflowPrecedenceConstraintsNode type corresponds directly to a precedence constraint in a SQL Server Integration Services task control flow.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskNode.html">AstTaskNode</a></h4>
+      <section><p>AstTaskNode is the base type that is used for all SQL Server Integration Services tasks in Biml.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskResourceNode.html">AstTaskResourceNode</a></h4>
+      <section><p>AstTaskResourceNode is an abstract type that serves as the base type for all complex resource reference types used in the Biml framework.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskScriptProjectReferenceResourceNode.html">AstTaskScriptProjectReferenceResourceNode</a></h4>
+      <section><p>This resource type is used to reference an existing task script project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTaskScriptProjectResourceNode.html">AstTaskScriptProjectResourceNode</a></h4>
+      <section><p>This resource type is used to create a new task script project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTransferDatabaseFileNode.html">AstTransferDatabaseFileNode</a></h4>
+      <section><p>The AstTransferDatabaseFileNode type describes a file that serves as the source or target of a SQL Server Integration Services Transfer Database task.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTransferDatabaseTaskNode.html">AstTransferDatabaseTaskNode</a></h4>
+      <section><p>The Transfer Database task copies or moves a database between two instances of SQL Server.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTransferErrorMessagesTaskNode.html">AstTransferErrorMessagesTaskNode</a></h4>
+      <section><p>The Transfer Error Messages task copies user-defined error messages from one instance of SQL Server to another.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTransferJobsTaskNode.html">AstTransferJobsTaskNode</a></h4>
+      <section><p>The Transfer Jobs task copies SQL Server Agent jobs from one instance of SQL Server to another.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTransferLoginsTaskNode.html">AstTransferLoginsTaskNode</a></h4>
+      <section><p>The Transfer Logins task copies logins from one instance of SQL Server to another.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTransferMasterStoredProceduresTaskNode.html">AstTransferMasterStoredProceduresTaskNode</a></h4>
+      <section><p>The Transfer Master Stored Procedures Task copies user-define stored procedures frome one master database on to another master database on a different instance of SQL Server.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstTransferSqlServerObjectsTaskNode.html">AstTransferSqlServerObjectsTaskNode</a></h4>
+      <section><p>The Transfer SQL Server Objects task copies objects in a SQL Server database from on instance of SQL Server to another. The version of SQL Server being used determines what types of objects can be copied.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstUnmanagedTableColumnResourceNode.html">AstUnmanagedTableColumnResourceNode</a></h4>
+      <section><p>This resource references a column and table that are not included in the model.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstUnmanagedTableResourceNode.html">AstUnmanagedTableResourceNode</a></h4>
+      <section><p>The AstUnmanagedTableResourceNode type is used for creating references to a table stored in an existing relational database that has not been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstUpdateStatisticsTaskNode.html">AstUpdateStatisticsTaskNode</a></h4>
+      <section><p>The Update Statistics task updates SQL Server information about data in tables and indexes. SQL Server uses the information to improve query plans.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstValueInclusionProfileRequestNode.html">AstValueInclusionProfileRequestNode</a></h4>
+      <section><p>The AstValueInclusionProfileRequestNode type corresponds directly to the value inclusion data profile in the SQL Server Integration Services data profiling task, which will report whether a proposed foreign key relationship between two tables would violate the foreign key constraint.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstVariableBaseNode.html">AstVariableBaseNode</a></h4>
+      <section><p>Defines the base class for Variables and Parameters used in Data Integration projects</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstVariableNode.html">AstVariableNode</a></h4>
+      <section><p>The AstVariableNode type corresponds directly to a task variable in SQL Server Integration Services.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstVariableParameterMappingNode.html">AstVariableParameterMappingNode</a></h4>
+      <section><p>The AstVariableParameterMappingNode type provides the capability to map a named parameter onto a SQL Server Integration Services package variable value.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstVariableResourceNode.html">AstVariableResourceNode</a></h4>
+      <section><p>AstVariableResourceNode is used for creating references to variables that have been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstVariablesResourceNode.html">AstVariablesResourceNode</a></h4>
+      <section><p>AstVariablesResourceNode is used for creating references to collections of variables that have been modeled in the Biml project.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstWebServiceParameterNode.html">AstWebServiceParameterNode</a></h4>
+      <section><p>The AstWebServiceParameterNode type provides the capability to map a named web service parameter onto a text or variable value with accompanying type information.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstWebServiceTaskNode.html">AstWebServiceTaskNode</a></h4>
+      <section><p>The Web Service task executes a Web service method.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstWmiDataReaderTaskNode.html">AstWmiDataReaderTaskNode</a></h4>
+      <section><p>The WMI Data Reader task uses the Windows Management Instrumentation (WMI) Query Language to run queries about a computer system.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstWmiEventWatcherTaskNode.html">AstWmiEventWatcherTaskNode</a></h4>
+      <section><p>The WMI Event Watcher task watches for and responds to Microsoft Windows Instrument (WMI) events.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.AstXmlTaskNode.html">AstXmlTaskNode</a></h4>
+      <section><p>The XML Task retrieves XML data, performs specified operations, and saves the updated documents to specified files or variables.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ISsisPackageFragment.html">ISsisPackageFragment</a></h4>
+      <section></section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.BackupDatabaseTaskBackupAction.html">BackupDatabaseTaskBackupAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.BackupDatabaseTaskBackupCompressionOption.html">BackupDatabaseTaskBackupCompressionOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.BackupDatabaseTaskBackupFilesExist.html">BackupDatabaseTaskBackupFilesExist</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.BackupDatabaseTaskDevice.html">BackupDatabaseTaskDevice</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.BackupDatabaseTaskManualDestinationDeviceType.html">BackupDatabaseTaskManualDestinationDeviceType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.BulkInsertTaskDataFileType.html">BulkInsertTaskDataFileType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.CdcControlOperation.html">CdcControlOperation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ColumnValueDistributionProfileRequestValueDistributionOption.html">ColumnValueDistributionProfileRequestValueDistributionOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ConfigurationType.html">ConfigurationType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ContainerConstraintMode.html">ContainerConstraintMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ContainerTransactionMode.html">ContainerTransactionMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ControlFlowPathAnnotation.html">ControlFlowPathAnnotation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.CubeProcessingOption.html">CubeProcessingOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.DatabaseProcessingOption.html">DatabaseProcessingOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.Delimiter.html">Delimiter</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.DimensionProcessingOption.html">DimensionProcessingOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.Direction.html">Direction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.EventColumn.html">EventColumn</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.EventType.html">EventType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ExecuteProcessTaskWindowStyle.html">ExecuteProcessTaskWindowStyle</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ExecuteSqlResultSet.html">ExecuteSqlResultSet</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.FileSystemTaskOperation.html">FileSystemTaskOperation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ForceExecutionResult.html">ForceExecutionResult</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ForEachAdoLoopEnumerationMode.html">ForEachAdoLoopEnumerationMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ForEachFileLoopFileNameQualifierType.html">ForEachFileLoopFileNameQualifierType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ForEachNodeListLoopEnumerationType.html">ForEachNodeListLoopEnumerationType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ForEachNodeListLoopInnerElementType.html">ForEachNodeListLoopInnerElementType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.FtpTaskOperation.html">FtpTaskOperation</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.IncludeInDebugDump.html">IncludeInDebugDump</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.IsolationLevel.html">IsolationLevel</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.LoggingEventType.html">LoggingEventType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.LoggingMode.html">LoggingMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.LogicalOperationType.html">LogicalOperationType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.MaintenanceCleanupTaskFileType.html">MaintenanceCleanupTaskFileType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.MaintenancePlanDatabaseSelectionMode.html">MaintenancePlanDatabaseSelectionMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.MaintenancePlanObjectSelectionMode.html">MaintenancePlanObjectSelectionMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.MeasureGroupProcessingOption.html">MeasureGroupProcessingOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.MergeColumnUsage.html">MergeColumnUsage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.MessageQueueTaskEncryptionAlgorithm.html">MessageQueueTaskEncryptionAlgorithm</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.MessageQueueTaskStringCompareType.html">MessageQueueTaskStringCompareType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.MiningStructureProcessingOption.html">MiningStructureProcessingOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ProcessingOrder.html">ProcessingOrder</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ProfileRequestThresholdSetting.html">ProfileRequestThresholdSetting</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ResourceType.html">ResourceType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.RestrictionType.html">RestrictionType</a></h4>
+      <section><p>Specifies the type for a ADO.NET schema loop restriction</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ScriptProjectFileBuildAction.html">ScriptProjectFileBuildAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ScriptProjectLanguage.html">ScriptProjectLanguage</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.ScriptProjectTargetFrameworkVersion.html">ScriptProjectTargetFrameworkVersion</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.SendMailTaskPriority.html">SendMailTaskPriority</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.TableHintLimited.html">TableHintLimited</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.TaskEvaluationOperationType.html">TaskEvaluationOperationType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.TaskEvaluationOperationValue.html">TaskEvaluationOperationValue</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.TimeUnit.html">TimeUnit</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.TransferDatabaseTaskAction.html">TransferDatabaseTaskAction</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.TransferLoginsTaskLoginsToTransfer.html">TransferLoginsTaskLoginsToTransfer</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.TransferSqlServerObjectTaskExistingDataOption.html">TransferSqlServerObjectTaskExistingDataOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.TransferTaskObjectExistsOption.html">TransferTaskObjectExistsOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.UpdateStatisticsTaskScanType.html">UpdateStatisticsTaskScanType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.UpdateStatisticsTaskUpdateType.html">UpdateStatisticsTaskUpdateType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.WebServiceTaskParameterType.html">WebServiceTaskParameterType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.WmiDataReaderTaskOutputType.html">WmiDataReaderTaskOutputType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.WmiDataReaderTaskOverwriteDestination.html">WmiDataReaderTaskOverwriteDestination</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.WmiEventWatcherTaskActionAtEvent.html">WmiEventWatcherTaskActionAtEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.WmiEventWatcherTaskActionAtTimeout.html">WmiEventWatcherTaskActionAtTimeout</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.WmiEventWatcherTaskAfterEvent.html">WmiEventWatcherTaskAfterEvent</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.WritebackTableOption.html">WritebackTableOption</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.XmlTaskDiffAlgorithm.html">XmlTaskDiffAlgorithm</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.XmlTaskDiffOptions.html">XmlTaskDiffOptions</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.XmlTaskOperationType.html">XmlTaskOperationType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.XmlTaskValidationType.html">XmlTaskValidationType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Task.XmlTaskXPathOperation.html">XmlTaskXPathOperation</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

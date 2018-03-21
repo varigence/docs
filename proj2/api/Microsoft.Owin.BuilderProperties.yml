@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.BuilderProperties
+  commentId: N:Microsoft.Owin.BuilderProperties
+  id: Microsoft.Owin.BuilderProperties
+  children:
+  - Microsoft.Owin.BuilderProperties.Address
+  - Microsoft.Owin.BuilderProperties.AddressCollection
+  - Microsoft.Owin.BuilderProperties.AppProperties
+  - Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Owin.BuilderProperties
+  nameWithType: Microsoft.Owin.BuilderProperties
+  fullName: Microsoft.Owin.BuilderProperties
+  type: Namespace
+  assemblies:
+  - Microsoft.Owin
+references:
+- uid: Microsoft.Owin.BuilderProperties.Address
+  commentId: T:Microsoft.Owin.BuilderProperties.Address
+  parent: Microsoft.Owin.BuilderProperties
+  isExternal: true
+  name: Address
+  nameWithType: Address
+  fullName: Microsoft.Owin.BuilderProperties.Address
+- uid: Microsoft.Owin.BuilderProperties.AddressCollection
+  commentId: T:Microsoft.Owin.BuilderProperties.AddressCollection
+  parent: Microsoft.Owin.BuilderProperties
+  isExternal: true
+  name: AddressCollection
+  nameWithType: AddressCollection
+  fullName: Microsoft.Owin.BuilderProperties.AddressCollection
+- uid: Microsoft.Owin.BuilderProperties.AppProperties
+  commentId: T:Microsoft.Owin.BuilderProperties.AppProperties
+  parent: Microsoft.Owin.BuilderProperties
+  isExternal: true
+  name: AppProperties
+  nameWithType: AppProperties
+  fullName: Microsoft.Owin.BuilderProperties.AppProperties
+- uid: Microsoft.Owin.BuilderProperties.Capabilities
+  commentId: T:Microsoft.Owin.BuilderProperties.Capabilities
+  parent: Microsoft.Owin.BuilderProperties
+  isExternal: true
+  name: Capabilities
+  nameWithType: Capabilities
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities
+- uid: Microsoft.Owin.BuilderProperties
+  commentId: N:Microsoft.Owin.BuilderProperties
+  isExternal: false
+  name: Microsoft.Owin.BuilderProperties
+  nameWithType: Microsoft.Owin.BuilderProperties
+  fullName: Microsoft.Owin.BuilderProperties

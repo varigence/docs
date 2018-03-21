@@ -1,0 +1,521 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke
+  commentId: T:Microsoft.Owin.Security.AuthenticationResponseRevoke
+  id: AuthenticationResponseRevoke
+  parent: Microsoft.Owin.Security
+  children:
+  - Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor(System.String[])
+  - Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor(System.String[],Microsoft.Owin.Security.AuthenticationProperties)
+  - Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationTypes
+  - Microsoft.Owin.Security.AuthenticationResponseRevoke.Properties
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResponseRevoke
+  nameWithType: AuthenticationResponseRevoke
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke
+  type: Class
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nExposes the security.SignOut and security.SignOutProperties environment values as a strong type.\n"
+  syntax:
+    content: public class AuthenticationResponseRevoke
+    content.vb: Public Class AuthenticationResponseRevoke
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor(System.String[])
+  commentId: M:Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor(System.String[])
+  id: '#ctor(System.String[])'
+  parent: Microsoft.Owin.Security.AuthenticationResponseRevoke
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResponseRevoke(String[])
+  nameWithType: AuthenticationResponseRevoke.AuthenticationResponseRevoke(String[])
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationResponseRevoke(System.String[])
+  type: Constructor
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Owin.Security.AuthenticationResponseRevoke\" data-throw-if-not-resolved=\"false\"></xref> class\n"
+  syntax:
+    content: public AuthenticationResponseRevoke(string[] authenticationTypes)
+    parameters:
+    - id: authenticationTypes
+      type: System.String[]
+    content.vb: Public Sub New(authenticationTypes As String())
+  overload: Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor*
+  nameWithType.vb: AuthenticationResponseRevoke.AuthenticationResponseRevoke(String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationResponseRevoke(System.String())
+  name.vb: AuthenticationResponseRevoke(String())
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor(System.String[],Microsoft.Owin.Security.AuthenticationProperties)
+  commentId: M:Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor(System.String[],Microsoft.Owin.Security.AuthenticationProperties)
+  id: '#ctor(System.String[],Microsoft.Owin.Security.AuthenticationProperties)'
+  parent: Microsoft.Owin.Security.AuthenticationResponseRevoke
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationResponseRevoke(String[], AuthenticationProperties)
+  nameWithType: AuthenticationResponseRevoke.AuthenticationResponseRevoke(String[], AuthenticationProperties)
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationResponseRevoke(System.String[], Microsoft.Owin.Security.AuthenticationProperties)
+  type: Constructor
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Owin.Security.AuthenticationResponseRevoke\" data-throw-if-not-resolved=\"false\"></xref> class\n"
+  syntax:
+    content: public AuthenticationResponseRevoke(string[] authenticationTypes, AuthenticationProperties properties)
+    parameters:
+    - id: authenticationTypes
+      type: System.String[]
+    - id: properties
+      type: Microsoft.Owin.Security.AuthenticationProperties
+    content.vb: Public Sub New(authenticationTypes As String(), properties As AuthenticationProperties)
+  overload: Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor*
+  nameWithType.vb: AuthenticationResponseRevoke.AuthenticationResponseRevoke(String(), AuthenticationProperties)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationResponseRevoke(System.String(), Microsoft.Owin.Security.AuthenticationProperties)
+  name.vb: AuthenticationResponseRevoke(String(), AuthenticationProperties)
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationTypes
+  commentId: P:Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationTypes
+  id: AuthenticationTypes
+  parent: Microsoft.Owin.Security.AuthenticationResponseRevoke
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationTypes
+  nameWithType: AuthenticationResponseRevoke.AuthenticationTypes
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationTypes
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nList of the authentication types that should be revoked on sign out.\n"
+  syntax:
+    content: public string[] AuthenticationTypes { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: Public ReadOnly Property AuthenticationTypes As String()
+  overload: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationTypes*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke.Properties
+  commentId: P:Microsoft.Owin.Security.AuthenticationResponseRevoke.Properties
+  id: Properties
+  parent: Microsoft.Owin.Security.AuthenticationResponseRevoke
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: AuthenticationResponseRevoke.Properties
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke.Properties
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Security
+  summary: "\nDictionary used to store state values about the authentication session.\n"
+  syntax:
+    content: public AuthenticationProperties Properties { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.Security.AuthenticationProperties
+    content.vb: Public ReadOnly Property Properties As AuthenticationProperties
+  overload: Microsoft.Owin.Security.AuthenticationResponseRevoke.Properties*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Microsoft.Owin.Security
+  commentId: N:Microsoft.Owin.Security
+  isExternal: false
+  name: Microsoft.Owin.Security
+  nameWithType: Microsoft.Owin.Security
+  fullName: Microsoft.Owin.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor*
+  commentId: Overload:Microsoft.Owin.Security.AuthenticationResponseRevoke.#ctor
+  isExternal: true
+  name: AuthenticationResponseRevoke
+  nameWithType: AuthenticationResponseRevoke.AuthenticationResponseRevoke
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationResponseRevoke
+- uid: System.String[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Owin.Security.AuthenticationProperties
+  commentId: T:Microsoft.Owin.Security.AuthenticationProperties
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationProperties
+  nameWithType: AuthenticationProperties
+  fullName: Microsoft.Owin.Security.AuthenticationProperties
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationTypes*
+  commentId: Overload:Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationTypes
+  isExternal: true
+  name: AuthenticationTypes
+  nameWithType: AuthenticationResponseRevoke.AuthenticationTypes
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke.AuthenticationTypes
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke.Properties*
+  commentId: Overload:Microsoft.Owin.Security.AuthenticationResponseRevoke.Properties
+  isExternal: true
+  name: Properties
+  nameWithType: AuthenticationResponseRevoke.Properties
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke.Properties

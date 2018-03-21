@@ -1,0 +1,1482 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.IOwinRequest
+  commentId: T:Microsoft.Owin.IOwinRequest
+  id: IOwinRequest
+  parent: Microsoft.Owin
+  children:
+  - Microsoft.Owin.IOwinRequest.Accept
+  - Microsoft.Owin.IOwinRequest.Body
+  - Microsoft.Owin.IOwinRequest.CacheControl
+  - Microsoft.Owin.IOwinRequest.CallCancelled
+  - Microsoft.Owin.IOwinRequest.ContentType
+  - Microsoft.Owin.IOwinRequest.Context
+  - Microsoft.Owin.IOwinRequest.Cookies
+  - Microsoft.Owin.IOwinRequest.Environment
+  - Microsoft.Owin.IOwinRequest.Get``1(System.String)
+  - Microsoft.Owin.IOwinRequest.Headers
+  - Microsoft.Owin.IOwinRequest.Host
+  - Microsoft.Owin.IOwinRequest.IsSecure
+  - Microsoft.Owin.IOwinRequest.LocalIpAddress
+  - Microsoft.Owin.IOwinRequest.LocalPort
+  - Microsoft.Owin.IOwinRequest.MediaType
+  - Microsoft.Owin.IOwinRequest.Method
+  - Microsoft.Owin.IOwinRequest.Path
+  - Microsoft.Owin.IOwinRequest.PathBase
+  - Microsoft.Owin.IOwinRequest.Protocol
+  - Microsoft.Owin.IOwinRequest.Query
+  - Microsoft.Owin.IOwinRequest.QueryString
+  - Microsoft.Owin.IOwinRequest.ReadFormAsync
+  - Microsoft.Owin.IOwinRequest.RemoteIpAddress
+  - Microsoft.Owin.IOwinRequest.RemotePort
+  - Microsoft.Owin.IOwinRequest.Scheme
+  - Microsoft.Owin.IOwinRequest.Set``1(System.String,``0)
+  - Microsoft.Owin.IOwinRequest.Uri
+  - Microsoft.Owin.IOwinRequest.User
+  langs:
+  - csharp
+  - vb
+  name: IOwinRequest
+  nameWithType: IOwinRequest
+  fullName: Microsoft.Owin.IOwinRequest
+  type: Interface
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nThis wraps OWIN environment dictionary and provides strongly typed accessors.\n"
+  syntax:
+    content: public interface IOwinRequest
+    content.vb: Public Interface IOwinRequest
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Owin.IOwinRequest.ReadFormAsync
+  commentId: M:Microsoft.Owin.IOwinRequest.ReadFormAsync
+  id: ReadFormAsync
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: ReadFormAsync()
+  nameWithType: IOwinRequest.ReadFormAsync()
+  fullName: Microsoft.Owin.IOwinRequest.ReadFormAsync()
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAsynchronously reads and parses the request body as a form.\n"
+  syntax:
+    content: Task<IFormCollection> ReadFormAsync()
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Owin.IFormCollection}
+      description: The parsed form data.
+    content.vb: Function ReadFormAsync As Task(Of IFormCollection)
+  overload: Microsoft.Owin.IOwinRequest.ReadFormAsync*
+- uid: Microsoft.Owin.IOwinRequest.Get``1(System.String)
+  commentId: M:Microsoft.Owin.IOwinRequest.Get``1(System.String)
+  id: Get``1(System.String)
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(String)
+  nameWithType: IOwinRequest.Get<T>(String)
+  fullName: Microsoft.Owin.IOwinRequest.Get<T>(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets a value from the OWIN environment, or returns default(T) if not present.\n"
+  syntax:
+    content: T Get<T>(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to get.
+    typeParameters:
+    - id: T
+      description: The type of the value.
+    return:
+      type: '{T}'
+      description: The value with the specified key or the default(T) if not present.
+    content.vb: Function Get(Of T)(key As String) As T
+  overload: Microsoft.Owin.IOwinRequest.Get*
+  nameWithType.vb: IOwinRequest.Get(Of T)(String)
+  fullName.vb: Microsoft.Owin.IOwinRequest.Get(Of T)(System.String)
+  name.vb: Get(Of T)(String)
+- uid: Microsoft.Owin.IOwinRequest.Set``1(System.String,``0)
+  commentId: M:Microsoft.Owin.IOwinRequest.Set``1(System.String,``0)
+  id: Set``1(System.String,``0)
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Set<T>(String, T)
+  nameWithType: IOwinRequest.Set<T>(String, T)
+  fullName: Microsoft.Owin.IOwinRequest.Set<T>(System.String, T)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nSets the given key and value in the OWIN environment.\n"
+  syntax:
+    content: IOwinRequest Set<T>(string key, T value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to set.
+    - id: value
+      type: '{T}'
+      description: The value to set.
+    typeParameters:
+    - id: T
+      description: The type of the value.
+    return:
+      type: Microsoft.Owin.IOwinRequest
+      description: This instance.
+    content.vb: Function Set(Of T)(key As String, value As T) As IOwinRequest
+  overload: Microsoft.Owin.IOwinRequest.Set*
+  nameWithType.vb: IOwinRequest.Set(Of T)(String, T)
+  fullName.vb: Microsoft.Owin.IOwinRequest.Set(Of T)(System.String, T)
+  name.vb: Set(Of T)(String, T)
+- uid: Microsoft.Owin.IOwinRequest.Environment
+  commentId: P:Microsoft.Owin.IOwinRequest.Environment
+  id: Environment
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: IOwinRequest.Environment
+  fullName: Microsoft.Owin.IOwinRequest.Environment
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the OWIN environment.\n"
+  syntax:
+    content: IDictionary<string, object> Environment { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+      description: The OWIN environment.
+    content.vb: ReadOnly Property Environment As IDictionary(Of String, Object)
+  overload: Microsoft.Owin.IOwinRequest.Environment*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinRequest.Context
+  commentId: P:Microsoft.Owin.IOwinRequest.Context
+  id: Context
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: IOwinRequest.Context
+  fullName: Microsoft.Owin.IOwinRequest.Context
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the request context.\n"
+  syntax:
+    content: IOwinContext Context { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.IOwinContext
+      description: The request context.
+    content.vb: ReadOnly Property Context As IOwinContext
+  overload: Microsoft.Owin.IOwinRequest.Context*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinRequest.Method
+  commentId: P:Microsoft.Owin.IOwinRequest.Method
+  id: Method
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Method
+  nameWithType: IOwinRequest.Method
+  fullName: Microsoft.Owin.IOwinRequest.Method
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the HTTP method.\n"
+  syntax:
+    content: string Method { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The HTTP method.
+    content.vb: Property Method As String
+  overload: Microsoft.Owin.IOwinRequest.Method*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.Scheme
+  commentId: P:Microsoft.Owin.IOwinRequest.Scheme
+  id: Scheme
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Scheme
+  nameWithType: IOwinRequest.Scheme
+  fullName: Microsoft.Owin.IOwinRequest.Scheme
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the HTTP request scheme from owin.RequestScheme.\n"
+  syntax:
+    content: string Scheme { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The HTTP request scheme from owin.RequestScheme.
+    content.vb: Property Scheme As String
+  overload: Microsoft.Owin.IOwinRequest.Scheme*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.IsSecure
+  commentId: P:Microsoft.Owin.IOwinRequest.IsSecure
+  id: IsSecure
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: IsSecure
+  nameWithType: IOwinRequest.IsSecure
+  fullName: Microsoft.Owin.IOwinRequest.IsSecure
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nReturns true if the owin.RequestScheme is https.\n"
+  syntax:
+    content: bool IsSecure { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if this request is using https; otherwise, false.
+    content.vb: ReadOnly Property IsSecure As Boolean
+  overload: Microsoft.Owin.IOwinRequest.IsSecure*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinRequest.Host
+  commentId: P:Microsoft.Owin.IOwinRequest.Host
+  id: Host
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: IOwinRequest.Host
+  fullName: Microsoft.Owin.IOwinRequest.Host
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the Host header. May include the port.\n"
+  syntax:
+    content: HostString Host { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.HostString
+    content.vb: Property Host As HostString
+  overload: Microsoft.Owin.IOwinRequest.Host*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.PathBase
+  commentId: P:Microsoft.Owin.IOwinRequest.PathBase
+  id: PathBase
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: PathBase
+  nameWithType: IOwinRequest.PathBase
+  fullName: Microsoft.Owin.IOwinRequest.PathBase
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the owin.RequestPathBase.\n"
+  syntax:
+    content: PathString PathBase { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.PathString
+      description: The owin.RequestPathBase.
+    content.vb: Property PathBase As PathString
+  overload: Microsoft.Owin.IOwinRequest.PathBase*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.Path
+  commentId: P:Microsoft.Owin.IOwinRequest.Path
+  id: Path
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: IOwinRequest.Path
+  fullName: Microsoft.Owin.IOwinRequest.Path
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the request path from owin.RequestPath.\n"
+  syntax:
+    content: PathString Path { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.PathString
+      description: The request path from owin.RequestPath.
+    content.vb: Property Path As PathString
+  overload: Microsoft.Owin.IOwinRequest.Path*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.QueryString
+  commentId: P:Microsoft.Owin.IOwinRequest.QueryString
+  id: QueryString
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: QueryString
+  nameWithType: IOwinRequest.QueryString
+  fullName: Microsoft.Owin.IOwinRequest.QueryString
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the query string from owin.RequestQueryString.\n"
+  syntax:
+    content: QueryString QueryString { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.QueryString
+      description: The query string from owin.RequestQueryString.
+    content.vb: Property QueryString As QueryString
+  overload: Microsoft.Owin.IOwinRequest.QueryString*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.Query
+  commentId: P:Microsoft.Owin.IOwinRequest.Query
+  id: Query
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: IOwinRequest.Query
+  fullName: Microsoft.Owin.IOwinRequest.Query
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the query value collection parsed from owin.RequestQueryString.\n"
+  syntax:
+    content: IReadableStringCollection Query { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.IReadableStringCollection
+      description: The query value collection parsed from owin.RequestQueryString.
+    content.vb: ReadOnly Property Query As IReadableStringCollection
+  overload: Microsoft.Owin.IOwinRequest.Query*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinRequest.Uri
+  commentId: P:Microsoft.Owin.IOwinRequest.Uri
+  id: Uri
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: IOwinRequest.Uri
+  fullName: Microsoft.Owin.IOwinRequest.Uri
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the uniform resource identifier (URI) associated with the request.\n"
+  syntax:
+    content: Uri Uri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+      description: The uniform resource identifier (URI) associated with the request.
+    content.vb: ReadOnly Property Uri As Uri
+  overload: Microsoft.Owin.IOwinRequest.Uri*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinRequest.Protocol
+  commentId: P:Microsoft.Owin.IOwinRequest.Protocol
+  id: Protocol
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Protocol
+  nameWithType: IOwinRequest.Protocol
+  fullName: Microsoft.Owin.IOwinRequest.Protocol
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the owin.RequestProtocol.\n"
+  syntax:
+    content: string Protocol { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The owin.RequestProtocol.
+    content.vb: Property Protocol As String
+  overload: Microsoft.Owin.IOwinRequest.Protocol*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.Headers
+  commentId: P:Microsoft.Owin.IOwinRequest.Headers
+  id: Headers
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Headers
+  nameWithType: IOwinRequest.Headers
+  fullName: Microsoft.Owin.IOwinRequest.Headers
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the request headers.\n"
+  syntax:
+    content: IHeaderDictionary Headers { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.IHeaderDictionary
+      description: The request headers.
+    content.vb: ReadOnly Property Headers As IHeaderDictionary
+  overload: Microsoft.Owin.IOwinRequest.Headers*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinRequest.Cookies
+  commentId: P:Microsoft.Owin.IOwinRequest.Cookies
+  id: Cookies
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Cookies
+  nameWithType: IOwinRequest.Cookies
+  fullName: Microsoft.Owin.IOwinRequest.Cookies
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the collection of Cookies for this request.\n"
+  syntax:
+    content: RequestCookieCollection Cookies { get; }
+    parameters: []
+    return:
+      type: Microsoft.Owin.RequestCookieCollection
+      description: The collection of Cookies for this request.
+    content.vb: ReadOnly Property Cookies As RequestCookieCollection
+  overload: Microsoft.Owin.IOwinRequest.Cookies*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Owin.IOwinRequest.ContentType
+  commentId: P:Microsoft.Owin.IOwinRequest.ContentType
+  id: ContentType
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: IOwinRequest.ContentType
+  fullName: Microsoft.Owin.IOwinRequest.ContentType
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the Content-Type header.\n"
+  syntax:
+    content: string ContentType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The Content-Type header.
+    content.vb: Property ContentType As String
+  overload: Microsoft.Owin.IOwinRequest.ContentType*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.CacheControl
+  commentId: P:Microsoft.Owin.IOwinRequest.CacheControl
+  id: CacheControl
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: CacheControl
+  nameWithType: IOwinRequest.CacheControl
+  fullName: Microsoft.Owin.IOwinRequest.CacheControl
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the Cache-Control header.\n"
+  syntax:
+    content: string CacheControl { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The Cache-Control header.
+    content.vb: Property CacheControl As String
+  overload: Microsoft.Owin.IOwinRequest.CacheControl*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.MediaType
+  commentId: P:Microsoft.Owin.IOwinRequest.MediaType
+  id: MediaType
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: MediaType
+  nameWithType: IOwinRequest.MediaType
+  fullName: Microsoft.Owin.IOwinRequest.MediaType
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the Media-Type header.\n"
+  syntax:
+    content: string MediaType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The Media-Type header.
+    content.vb: Property MediaType As String
+  overload: Microsoft.Owin.IOwinRequest.MediaType*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.Accept
+  commentId: P:Microsoft.Owin.IOwinRequest.Accept
+  id: Accept
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Accept
+  nameWithType: IOwinRequest.Accept
+  fullName: Microsoft.Owin.IOwinRequest.Accept
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the Accept header.\n"
+  syntax:
+    content: string Accept { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The Accept header.
+    content.vb: Property Accept As String
+  overload: Microsoft.Owin.IOwinRequest.Accept*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.Body
+  commentId: P:Microsoft.Owin.IOwinRequest.Body
+  id: Body
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: Body
+  nameWithType: IOwinRequest.Body
+  fullName: Microsoft.Owin.IOwinRequest.Body
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the owin.RequestBody Stream.\n"
+  syntax:
+    content: Stream Body { get; set; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+      description: The owin.RequestBody Stream.
+    content.vb: Property Body As Stream
+  overload: Microsoft.Owin.IOwinRequest.Body*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.CallCancelled
+  commentId: P:Microsoft.Owin.IOwinRequest.CallCancelled
+  id: CallCancelled
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: CallCancelled
+  nameWithType: IOwinRequest.CallCancelled
+  fullName: Microsoft.Owin.IOwinRequest.CallCancelled
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or sets the cancellation token for the request.\n"
+  syntax:
+    content: CancellationToken CallCancelled { get; set; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationToken
+      description: The cancellation token for the request.
+    content.vb: Property CallCancelled As CancellationToken
+  overload: Microsoft.Owin.IOwinRequest.CallCancelled*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.LocalIpAddress
+  commentId: P:Microsoft.Owin.IOwinRequest.LocalIpAddress
+  id: LocalIpAddress
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: LocalIpAddress
+  nameWithType: IOwinRequest.LocalIpAddress
+  fullName: Microsoft.Owin.IOwinRequest.LocalIpAddress
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the server.LocalIpAddress.\n"
+  syntax:
+    content: string LocalIpAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The server.LocalIpAddress.
+    content.vb: Property LocalIpAddress As String
+  overload: Microsoft.Owin.IOwinRequest.LocalIpAddress*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.LocalPort
+  commentId: P:Microsoft.Owin.IOwinRequest.LocalPort
+  id: LocalPort
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: LocalPort
+  nameWithType: IOwinRequest.LocalPort
+  fullName: Microsoft.Owin.IOwinRequest.LocalPort
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the server.LocalPort.\n"
+  syntax:
+    content: int? LocalPort { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+      description: The server.LocalPort.
+    content.vb: Property LocalPort As Integer?
+  overload: Microsoft.Owin.IOwinRequest.LocalPort*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.RemoteIpAddress
+  commentId: P:Microsoft.Owin.IOwinRequest.RemoteIpAddress
+  id: RemoteIpAddress
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: RemoteIpAddress
+  nameWithType: IOwinRequest.RemoteIpAddress
+  fullName: Microsoft.Owin.IOwinRequest.RemoteIpAddress
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the server.RemoteIpAddress.\n"
+  syntax:
+    content: string RemoteIpAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The server.RemoteIpAddress.
+    content.vb: Property RemoteIpAddress As String
+  overload: Microsoft.Owin.IOwinRequest.RemoteIpAddress*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.RemotePort
+  commentId: P:Microsoft.Owin.IOwinRequest.RemotePort
+  id: RemotePort
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: RemotePort
+  nameWithType: IOwinRequest.RemotePort
+  fullName: Microsoft.Owin.IOwinRequest.RemotePort
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the server.RemotePort.\n"
+  syntax:
+    content: int? RemotePort { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+      description: The server.RemotePort.
+    content.vb: Property RemotePort As Integer?
+  overload: Microsoft.Owin.IOwinRequest.RemotePort*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Owin.IOwinRequest.User
+  commentId: P:Microsoft.Owin.IOwinRequest.User
+  id: User
+  parent: Microsoft.Owin.IOwinRequest
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: IOwinRequest.User
+  fullName: Microsoft.Owin.IOwinRequest.User
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets or set the server.User.\n"
+  syntax:
+    content: IPrincipal User { get; set; }
+    parameters: []
+    return:
+      type: System.Security.Principal.IPrincipal
+      description: The server.User.
+    content.vb: Property User As IPrincipal
+  overload: Microsoft.Owin.IOwinRequest.User*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: Microsoft.Owin
+  commentId: N:Microsoft.Owin
+  isExternal: false
+  name: Microsoft.Owin
+  nameWithType: Microsoft.Owin
+  fullName: Microsoft.Owin
+- uid: Microsoft.Owin.IOwinRequest.ReadFormAsync*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.ReadFormAsync
+  isExternal: true
+  name: ReadFormAsync
+  nameWithType: IOwinRequest.ReadFormAsync
+  fullName: Microsoft.Owin.IOwinRequest.ReadFormAsync
+- uid: System.Threading.Tasks.Task{Microsoft.Owin.IFormCollection}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Owin.IFormCollection}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IFormCollection>
+  nameWithType: Task<IFormCollection>
+  fullName: System.Threading.Tasks.Task<Microsoft.Owin.IFormCollection>
+  nameWithType.vb: Task(Of IFormCollection)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Owin.IFormCollection)
+  name.vb: Task(Of IFormCollection)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Owin.IFormCollection
+    name: IFormCollection
+    nameWithType: IFormCollection
+    fullName: Microsoft.Owin.IFormCollection
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Owin.IFormCollection
+    name: IFormCollection
+    nameWithType: IFormCollection
+    fullName: Microsoft.Owin.IFormCollection
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Owin.IOwinRequest.Get*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Get
+  isExternal: true
+  name: Get
+  nameWithType: IOwinRequest.Get
+  fullName: Microsoft.Owin.IOwinRequest.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Owin.IOwinRequest.Set*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Set
+  isExternal: true
+  name: Set
+  nameWithType: IOwinRequest.Set
+  fullName: Microsoft.Owin.IOwinRequest.Set
+- uid: Microsoft.Owin.IOwinRequest
+  commentId: T:Microsoft.Owin.IOwinRequest
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IOwinRequest
+  nameWithType: IOwinRequest
+  fullName: Microsoft.Owin.IOwinRequest
+- uid: Microsoft.Owin.IOwinRequest.Environment*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Environment
+  isExternal: true
+  name: Environment
+  nameWithType: IOwinRequest.Environment
+  fullName: Microsoft.Owin.IOwinRequest.Environment
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Owin.IOwinRequest.Context*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Context
+  isExternal: true
+  name: Context
+  nameWithType: IOwinRequest.Context
+  fullName: Microsoft.Owin.IOwinRequest.Context
+- uid: Microsoft.Owin.IOwinContext
+  commentId: T:Microsoft.Owin.IOwinContext
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IOwinContext
+  nameWithType: IOwinContext
+  fullName: Microsoft.Owin.IOwinContext
+- uid: Microsoft.Owin.IOwinRequest.Method*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Method
+  isExternal: true
+  name: Method
+  nameWithType: IOwinRequest.Method
+  fullName: Microsoft.Owin.IOwinRequest.Method
+- uid: Microsoft.Owin.IOwinRequest.Scheme*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Scheme
+  isExternal: true
+  name: Scheme
+  nameWithType: IOwinRequest.Scheme
+  fullName: Microsoft.Owin.IOwinRequest.Scheme
+- uid: Microsoft.Owin.IOwinRequest.IsSecure*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.IsSecure
+  isExternal: true
+  name: IsSecure
+  nameWithType: IOwinRequest.IsSecure
+  fullName: Microsoft.Owin.IOwinRequest.IsSecure
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Owin.IOwinRequest.Host*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Host
+  isExternal: true
+  name: Host
+  nameWithType: IOwinRequest.Host
+  fullName: Microsoft.Owin.IOwinRequest.Host
+- uid: Microsoft.Owin.HostString
+  commentId: T:Microsoft.Owin.HostString
+  parent: Microsoft.Owin
+  isExternal: true
+  name: HostString
+  nameWithType: HostString
+  fullName: Microsoft.Owin.HostString
+- uid: Microsoft.Owin.IOwinRequest.PathBase*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.PathBase
+  isExternal: true
+  name: PathBase
+  nameWithType: IOwinRequest.PathBase
+  fullName: Microsoft.Owin.IOwinRequest.PathBase
+- uid: Microsoft.Owin.PathString
+  commentId: T:Microsoft.Owin.PathString
+  parent: Microsoft.Owin
+  isExternal: true
+  name: PathString
+  nameWithType: PathString
+  fullName: Microsoft.Owin.PathString
+- uid: Microsoft.Owin.IOwinRequest.Path*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Path
+  isExternal: true
+  name: Path
+  nameWithType: IOwinRequest.Path
+  fullName: Microsoft.Owin.IOwinRequest.Path
+- uid: Microsoft.Owin.IOwinRequest.QueryString*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.QueryString
+  isExternal: true
+  name: QueryString
+  nameWithType: IOwinRequest.QueryString
+  fullName: Microsoft.Owin.IOwinRequest.QueryString
+- uid: Microsoft.Owin.QueryString
+  commentId: T:Microsoft.Owin.QueryString
+  parent: Microsoft.Owin
+  isExternal: true
+  name: QueryString
+  nameWithType: QueryString
+  fullName: Microsoft.Owin.QueryString
+- uid: Microsoft.Owin.IOwinRequest.Query*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Query
+  isExternal: true
+  name: Query
+  nameWithType: IOwinRequest.Query
+  fullName: Microsoft.Owin.IOwinRequest.Query
+- uid: Microsoft.Owin.IReadableStringCollection
+  commentId: T:Microsoft.Owin.IReadableStringCollection
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IReadableStringCollection
+  nameWithType: IReadableStringCollection
+  fullName: Microsoft.Owin.IReadableStringCollection
+- uid: Microsoft.Owin.IOwinRequest.Uri*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Uri
+  isExternal: true
+  name: Uri
+  nameWithType: IOwinRequest.Uri
+  fullName: Microsoft.Owin.IOwinRequest.Uri
+- uid: System.Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Microsoft.Owin.IOwinRequest.Protocol*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Protocol
+  isExternal: true
+  name: Protocol
+  nameWithType: IOwinRequest.Protocol
+  fullName: Microsoft.Owin.IOwinRequest.Protocol
+- uid: Microsoft.Owin.IOwinRequest.Headers*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Headers
+  isExternal: true
+  name: Headers
+  nameWithType: IOwinRequest.Headers
+  fullName: Microsoft.Owin.IOwinRequest.Headers
+- uid: Microsoft.Owin.IHeaderDictionary
+  commentId: T:Microsoft.Owin.IHeaderDictionary
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IHeaderDictionary
+  nameWithType: IHeaderDictionary
+  fullName: Microsoft.Owin.IHeaderDictionary
+- uid: Microsoft.Owin.IOwinRequest.Cookies*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Cookies
+  isExternal: true
+  name: Cookies
+  nameWithType: IOwinRequest.Cookies
+  fullName: Microsoft.Owin.IOwinRequest.Cookies
+- uid: Microsoft.Owin.RequestCookieCollection
+  commentId: T:Microsoft.Owin.RequestCookieCollection
+  parent: Microsoft.Owin
+  isExternal: true
+  name: RequestCookieCollection
+  nameWithType: RequestCookieCollection
+  fullName: Microsoft.Owin.RequestCookieCollection
+- uid: Microsoft.Owin.IOwinRequest.ContentType*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.ContentType
+  isExternal: true
+  name: ContentType
+  nameWithType: IOwinRequest.ContentType
+  fullName: Microsoft.Owin.IOwinRequest.ContentType
+- uid: Microsoft.Owin.IOwinRequest.CacheControl*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.CacheControl
+  isExternal: true
+  name: CacheControl
+  nameWithType: IOwinRequest.CacheControl
+  fullName: Microsoft.Owin.IOwinRequest.CacheControl
+- uid: Microsoft.Owin.IOwinRequest.MediaType*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.MediaType
+  isExternal: true
+  name: MediaType
+  nameWithType: IOwinRequest.MediaType
+  fullName: Microsoft.Owin.IOwinRequest.MediaType
+- uid: Microsoft.Owin.IOwinRequest.Accept*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Accept
+  isExternal: true
+  name: Accept
+  nameWithType: IOwinRequest.Accept
+  fullName: Microsoft.Owin.IOwinRequest.Accept
+- uid: Microsoft.Owin.IOwinRequest.Body*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.Body
+  isExternal: true
+  name: Body
+  nameWithType: IOwinRequest.Body
+  fullName: Microsoft.Owin.IOwinRequest.Body
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Microsoft.Owin.IOwinRequest.CallCancelled*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.CallCancelled
+  isExternal: true
+  name: CallCancelled
+  nameWithType: IOwinRequest.CallCancelled
+  fullName: Microsoft.Owin.IOwinRequest.CallCancelled
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: false
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: Microsoft.Owin.IOwinRequest.LocalIpAddress*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.LocalIpAddress
+  isExternal: true
+  name: LocalIpAddress
+  nameWithType: IOwinRequest.LocalIpAddress
+  fullName: Microsoft.Owin.IOwinRequest.LocalIpAddress
+- uid: Microsoft.Owin.IOwinRequest.LocalPort*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.LocalPort
+  isExternal: true
+  name: LocalPort
+  nameWithType: IOwinRequest.LocalPort
+  fullName: Microsoft.Owin.IOwinRequest.LocalPort
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Int32>
+  nameWithType: Nullable<Int32>
+  fullName: System.Nullable<System.Int32>
+  nameWithType.vb: Nullable(Of Int32)
+  fullName.vb: System.Nullable(Of System.Int32)
+  name.vb: Nullable(Of Int32)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.IOwinRequest.RemoteIpAddress*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.RemoteIpAddress
+  isExternal: true
+  name: RemoteIpAddress
+  nameWithType: IOwinRequest.RemoteIpAddress
+  fullName: Microsoft.Owin.IOwinRequest.RemoteIpAddress
+- uid: Microsoft.Owin.IOwinRequest.RemotePort*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.RemotePort
+  isExternal: true
+  name: RemotePort
+  nameWithType: IOwinRequest.RemotePort
+  fullName: Microsoft.Owin.IOwinRequest.RemotePort
+- uid: Microsoft.Owin.IOwinRequest.User*
+  commentId: Overload:Microsoft.Owin.IOwinRequest.User
+  isExternal: true
+  name: User
+  nameWithType: IOwinRequest.User
+  fullName: Microsoft.Owin.IOwinRequest.User
+- uid: System.Security.Principal.IPrincipal
+  commentId: T:System.Security.Principal.IPrincipal
+  parent: System.Security.Principal
+  isExternal: true
+  name: IPrincipal
+  nameWithType: IPrincipal
+  fullName: System.Security.Principal.IPrincipal
+- uid: System.Security.Principal
+  commentId: N:System.Security.Principal
+  isExternal: false
+  name: System.Security.Principal
+  nameWithType: System.Security.Principal
+  fullName: System.Security.Principal

@@ -1,0 +1,363 @@
+### YamlMime:ManagedReference
+items:
+- uid: Owin.PipelineStage
+  commentId: T:Owin.PipelineStage
+  id: PipelineStage
+  parent: Owin
+  children:
+  - Owin.PipelineStage.AcquireState
+  - Owin.PipelineStage.Authenticate
+  - Owin.PipelineStage.Authorize
+  - Owin.PipelineStage.MapHandler
+  - Owin.PipelineStage.PostAcquireState
+  - Owin.PipelineStage.PostAuthenticate
+  - Owin.PipelineStage.PostAuthorize
+  - Owin.PipelineStage.PostMapHandler
+  - Owin.PipelineStage.PostResolveCache
+  - Owin.PipelineStage.PreHandlerExecute
+  - Owin.PipelineStage.ResolveCache
+  langs:
+  - csharp
+  - vb
+  name: PipelineStage
+  nameWithType: PipelineStage
+  fullName: Owin.PipelineStage
+  type: Enum
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nAn ordered list of known Asp.Net integrated pipeline stages. More details on the ASP.NET integrated pipeline can be found at http://msdn.microsoft.com/en-us/library/system.web.httpapplication.aspx\n"
+  syntax:
+    content: public enum PipelineStage
+    content.vb: Public Enum PipelineStage
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Owin.PipelineStage.Authenticate
+  commentId: F:Owin.PipelineStage.Authenticate
+  id: Authenticate
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: Authenticate
+  nameWithType: PipelineStage.Authenticate
+  fullName: Owin.PipelineStage.Authenticate
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the AuthenticateRequest stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: Authenticate = 0
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.PostAuthenticate
+  commentId: F:Owin.PipelineStage.PostAuthenticate
+  id: PostAuthenticate
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: PostAuthenticate
+  nameWithType: PipelineStage.PostAuthenticate
+  fullName: Owin.PipelineStage.PostAuthenticate
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the PostAuthenticateRequest stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: PostAuthenticate = 1
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.Authorize
+  commentId: F:Owin.PipelineStage.Authorize
+  id: Authorize
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: Authorize
+  nameWithType: PipelineStage.Authorize
+  fullName: Owin.PipelineStage.Authorize
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the AuthorizeRequest stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: Authorize = 2
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.PostAuthorize
+  commentId: F:Owin.PipelineStage.PostAuthorize
+  id: PostAuthorize
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: PostAuthorize
+  nameWithType: PipelineStage.PostAuthorize
+  fullName: Owin.PipelineStage.PostAuthorize
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the PostAuthorizeRequest stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: PostAuthorize = 3
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.ResolveCache
+  commentId: F:Owin.PipelineStage.ResolveCache
+  id: ResolveCache
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: ResolveCache
+  nameWithType: PipelineStage.ResolveCache
+  fullName: Owin.PipelineStage.ResolveCache
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the ResolveRequestCache stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: ResolveCache = 4
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.PostResolveCache
+  commentId: F:Owin.PipelineStage.PostResolveCache
+  id: PostResolveCache
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: PostResolveCache
+  nameWithType: PipelineStage.PostResolveCache
+  fullName: Owin.PipelineStage.PostResolveCache
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the PostResolveRequestCache stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: PostResolveCache = 5
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.MapHandler
+  commentId: F:Owin.PipelineStage.MapHandler
+  id: MapHandler
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: MapHandler
+  nameWithType: PipelineStage.MapHandler
+  fullName: Owin.PipelineStage.MapHandler
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the MapRequestHandler stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: MapHandler = 6
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.PostMapHandler
+  commentId: F:Owin.PipelineStage.PostMapHandler
+  id: PostMapHandler
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: PostMapHandler
+  nameWithType: PipelineStage.PostMapHandler
+  fullName: Owin.PipelineStage.PostMapHandler
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the PostMapRequestHandler stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: PostMapHandler = 7
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.AcquireState
+  commentId: F:Owin.PipelineStage.AcquireState
+  id: AcquireState
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: AcquireState
+  nameWithType: PipelineStage.AcquireState
+  fullName: Owin.PipelineStage.AcquireState
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the AcquireRequestState stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: AcquireState = 8
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.PostAcquireState
+  commentId: F:Owin.PipelineStage.PostAcquireState
+  id: PostAcquireState
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: PostAcquireState
+  nameWithType: PipelineStage.PostAcquireState
+  fullName: Owin.PipelineStage.PostAcquireState
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the PostAcquireRequestState stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: PostAcquireState = 9
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Owin.PipelineStage.PreHandlerExecute
+  commentId: F:Owin.PipelineStage.PreHandlerExecute
+  id: PreHandlerExecute
+  parent: Owin.PipelineStage
+  langs:
+  - csharp
+  - vb
+  name: PreHandlerExecute
+  nameWithType: PipelineStage.PreHandlerExecute
+  fullName: Owin.PipelineStage.PreHandlerExecute
+  type: Field
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Owin
+  summary: "\nCorresponds to the PreRequestHandlerExecute stage of the ASP.NET integrated pipeline.\n"
+  syntax:
+    content: PreHandlerExecute = 10
+    return:
+      type: Owin.PipelineStage
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Owin
+  commentId: N:Owin
+  isExternal: false
+  name: Owin
+  nameWithType: Owin
+  fullName: Owin
+- uid: Owin.PipelineStage
+  commentId: T:Owin.PipelineStage
+  parent: Owin
+  isExternal: true
+  name: PipelineStage
+  nameWithType: PipelineStage
+  fullName: Owin.PipelineStage

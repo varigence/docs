@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Builder
+  commentId: N:Microsoft.Owin.Builder
+  id: Microsoft.Owin.Builder
+  children:
+  - Microsoft.Owin.Builder.AppBuilder
+  - Microsoft.Owin.Builder.AppBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Owin.Builder
+  nameWithType: Microsoft.Owin.Builder
+  fullName: Microsoft.Owin.Builder
+  type: Namespace
+  assemblies:
+  - Microsoft.Owin
+references:
+- uid: Microsoft.Owin.Builder.AppBuilder
+  commentId: T:Microsoft.Owin.Builder.AppBuilder
+  isExternal: true
+  name: AppBuilder
+  nameWithType: AppBuilder
+  fullName: Microsoft.Owin.Builder.AppBuilder
+- uid: Microsoft.Owin.Builder.AppBuilderExtensions
+  commentId: T:Microsoft.Owin.Builder.AppBuilderExtensions
+  isExternal: true
+  name: AppBuilderExtensions
+  nameWithType: AppBuilderExtensions
+  fullName: Microsoft.Owin.Builder.AppBuilderExtensions

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Varigence.Languages.Biml.Dimension
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Varigence.Languages.Biml.Dimension
+   ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Varigence.Languages.Biml.Dimension">
+  
+  <h1 id="Varigence_Languages_Biml_Dimension" data-uid="Varigence.Languages.Biml.Dimension" class="text-break">Namespace Varigence.Languages.Biml.Dimension
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeColumnBaseNode.html">AstAttributeColumnBaseNode</a></h4>
+      <section><p>AstAttributeColumnBaseNode is an abstract type that serves as the base type for all mappings between SQL Server Analysis Services dimension attributes and relational database table columns.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeCustomRollupColumnBaseNode.html">AstAttributeCustomRollupColumnBaseNode</a></h4>
+      <section><p>AstAttributeCustomRollupColumnBaseNode is an abstract type that serves as the base type for all custom rollup column types for SQL Server Analysis Services dimension attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeCustomRollupColumnNode.html">AstAttributeCustomRollupColumnNode</a></h4>
+      <section><p>The AstAttributeCustomRollupColumnNode type corresponds directly to an attribute custom rollup column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeCustomRollupPropertiesColumnBaseNode.html">AstAttributeCustomRollupPropertiesColumnBaseNode</a></h4>
+      <section><p>AstAttributeCustomRollupPropertiesColumnBaseNode is an abstract type that serves as the base type for all custom rollup properties column types for SQL Server Analysis Services dimension attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeCustomRollupPropertiesColumnNode.html">AstAttributeCustomRollupPropertiesColumnNode</a></h4>
+      <section><p>The AstAttributeCustomRollupPropertiesColumnNode type corresponds directly to an attribute custom rollup properties column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeKeyColumnBaseNode.html">AstAttributeKeyColumnBaseNode</a></h4>
+      <section><p>AstAttributeKeyColumnBaseNode is an abstract type that serves as the base type for all key column types for SQL Server Analysis Services dimension attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeKeyColumnNode.html">AstAttributeKeyColumnNode</a></h4>
+      <section><p>The AstAttributeKeyColumnNode type corresponds directly to an attribute key column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeNameColumnBaseNode.html">AstAttributeNameColumnBaseNode</a></h4>
+      <section><p>AstAttributeNameColumnBaseNode is an abstract type that serves as the base type for all name column types for SQL Server Analysis Services dimension attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeNameColumnNode.html">AstAttributeNameColumnNode</a></h4>
+      <section><p>The AstAttributeNameColumnNode type corresponds directly to an attribute name column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeNode.html">AstAttributeNode</a></h4>
+      <section><p>AstAttributeNode corresponds directly to a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeReferenceNode.html">AstAttributeReferenceNode</a></h4>
+      <section><p>The AstAttributeReferenceNode type is a wrapper for a direct reference to a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeRelationshipNode.html">AstAttributeRelationshipNode</a></h4>
+      <section><p>AstAttributeRelationshipNode corresponds directly to a SQL Server Analysis Services dimension attribute relationship.  It describes parent/child relationships between attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeCustomRollupColumnNode.html">AstAttributeSnowflakeCustomRollupColumnNode</a></h4>
+      <section><p>The AstAttributeSnowflakeCustomRollupColumnNode type corresponds directly to a snowflaked attribute custom rollup column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeCustomRollupPropertiesColumnNode.html">AstAttributeSnowflakeCustomRollupPropertiesColumnNode</a></h4>
+      <section><p>The AstAttributeSnowflakeCustomRollupPropertiesColumnNode type corresponds directly to a snowflaked attribute custom rollup properties column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeKeyColumnNode.html">AstAttributeSnowflakeKeyColumnNode</a></h4>
+      <section><p>The AstAttributeSnowflakeKeyColumnNode type corresponds directly to a snowflaked attribute key column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeNameColumnNode.html">AstAttributeSnowflakeNameColumnNode</a></h4>
+      <section><p>The AstAttributeSnowflakeNameColumnNode type corresponds directly to a snowflaked attribute name column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeUnaryOperatorColumnNode.html">AstAttributeSnowflakeUnaryOperatorColumnNode</a></h4>
+      <section><p>The AstAttributeSnowflakeUnaryOperatorColumnNode type corresponds directly to a snowflaked attribute unary operator column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeValueColumnNode.html">AstAttributeSnowflakeValueColumnNode</a></h4>
+      <section><p>The AstAttributeSnowflakeValueColumnNode type corresponds directly to a snowflaked attribute value column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeTranslationNode.html">AstAttributeTranslationNode</a></h4>
+      <section><p>The AstAttributeTranslationNode type is used to define alternate language versions of attribute members associated with a dimension. These are used by client applications such as Microsoft Excel to show values for dimension metadata that are consistent with the language of the end-user.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeUnaryOperatorColumnBaseNode.html">AstAttributeUnaryOperatorColumnBaseNode</a></h4>
+      <section><p>AstAttributeUnaryOperatorColumnBaseNode is an abstract type that serves as the base type for all unary operator column types for SQL Server Analysis Services dimension attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeUnaryOperatorColumnNode.html">AstAttributeUnaryOperatorColumnNode</a></h4>
+      <section><p>The AstAttributeUnaryOperatorColumnNode type corresponds directly to an attribute unary operator column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeValueColumnBaseNode.html">AstAttributeValueColumnBaseNode</a></h4>
+      <section><p>AstAttributeValueColumnBaseNode is an abstract type that serves as the base type for all value column types for SQL Server Analysis Services dimension attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstAttributeValueColumnNode.html">AstAttributeValueColumnNode</a></h4>
+      <section><p>The AstAttributeValueColumnNode type corresponds directly to an attribute value column in a SQL Server Analysis Services dimension attribute.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstDimensionHierarchyLevelNode.html">AstDimensionHierarchyLevelNode</a></h4>
+      <section><p>AstDimensionHierarchyLevelNode corresponds directly to a SQL Server Analysis Services dimension hierarchy level.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstDimensionHierarchyNode.html">AstDimensionHierarchyNode</a></h4>
+      <section><p>AstDimensionHierarchyNode corresponds directly to a SQL Server Analysis Services dimension hierarchy.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstDimensionHierarchyReferenceNode.html">AstDimensionHierarchyReferenceNode</a></h4>
+      <section><p>The AstDimensionHierarchyReferenceNode type is a wrapper for a direct reference to a dimension hierarchy for use in a cube dimension or perspective.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstDimensionMetadataNode.html">AstDimensionMetadataNode</a></h4>
+      <section><p>Dimension metadata objects include all of the information necessary to use the parent table as the basis to create a Dimension in SQL Server Analysis Services (SSAS).</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstDimensionNamedBaseNode.html">AstDimensionNamedBaseNode</a></h4>
+      <section><p>AstDimensionNamedBaseNode is the base class for all attribute, relationship, hierarchy, and level elements that are bound to a dimension.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.AstPerspectiveAttributeReferenceNode.html">AstPerspectiveAttributeReferenceNode</a></h4>
+      <section><p>The AstPerspectiveAttributeReferenceNode type is a wrapper for a direct reference to a SQL Server Analysis Services dimension attribute for use in a cube perspective.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.CardinalityType.html">CardinalityType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.HierarchyLevelHideMemberIf.html">HierarchyLevelHideMemberIf</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.HierarchyMemberKeysUnique.html">HierarchyMemberKeysUnique</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.MdxMissingMemberMode.html">MdxMissingMemberMode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.OptionalityType.html">OptionalityType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.ProcessingGroup.html">ProcessingGroup</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.RelationshipType.html">RelationshipType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.SsasDimensionType.html">SsasDimensionType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Dimension.SsasUnknownMember.html">SsasUnknownMember</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

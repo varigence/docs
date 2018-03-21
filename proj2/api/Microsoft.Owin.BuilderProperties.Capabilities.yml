@@ -1,0 +1,954 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.BuilderProperties.Capabilities
+  commentId: T:Microsoft.Owin.BuilderProperties.Capabilities
+  id: Capabilities
+  parent: Microsoft.Owin.BuilderProperties
+  children:
+  - Microsoft.Owin.BuilderProperties.Capabilities.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  - Microsoft.Owin.BuilderProperties.Capabilities.Create
+  - Microsoft.Owin.BuilderProperties.Capabilities.Dictionary
+  - Microsoft.Owin.BuilderProperties.Capabilities.Equals(Microsoft.Owin.BuilderProperties.Capabilities)
+  - Microsoft.Owin.BuilderProperties.Capabilities.Equals(System.Object)
+  - Microsoft.Owin.BuilderProperties.Capabilities.Get``1(System.String)
+  - Microsoft.Owin.BuilderProperties.Capabilities.GetHashCode
+  - Microsoft.Owin.BuilderProperties.Capabilities.op_Equality(Microsoft.Owin.BuilderProperties.Capabilities,Microsoft.Owin.BuilderProperties.Capabilities)
+  - Microsoft.Owin.BuilderProperties.Capabilities.op_Inequality(Microsoft.Owin.BuilderProperties.Capabilities,Microsoft.Owin.BuilderProperties.Capabilities)
+  - Microsoft.Owin.BuilderProperties.Capabilities.SendFileVersion
+  - Microsoft.Owin.BuilderProperties.Capabilities.Set(System.String,System.Object)
+  - Microsoft.Owin.BuilderProperties.Capabilities.WebSocketVersion
+  langs:
+  - csharp
+  - vb
+  name: Capabilities
+  nameWithType: Capabilities
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities
+  type: Struct
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nRepresents the capabilities for the builder properties.\n"
+  syntax:
+    content: public struct Capabilities
+    content.vb: Public Structure Capabilities
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  modifiers.csharp:
+  - public
+  - struct
+  modifiers.vb:
+  - Public
+  - Structure
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})
+  id: '#ctor(System.Collections.Generic.IDictionary{System.String,System.Object})'
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Capabilities(IDictionary<String, Object>)
+  nameWithType: Capabilities.Capabilities(IDictionary<String, Object>)
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Capabilities(System.Collections.Generic.IDictionary<System.String, System.Object>)
+  type: Constructor
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Owin.BuilderProperties.Capabilities\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  syntax:
+    content: public Capabilities(IDictionary<string, object> dictionary)
+    parameters:
+    - id: dictionary
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Public Sub New(dictionary As IDictionary(Of String, Object))
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.#ctor*
+  nameWithType.vb: Capabilities.Capabilities(IDictionary(Of String, Object))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.BuilderProperties.Capabilities.Capabilities(System.Collections.Generic.IDictionary(Of System.String, System.Object))
+  name.vb: Capabilities(IDictionary(Of String, Object))
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Create
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.Create
+  id: Create
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Create()
+  nameWithType: Capabilities.Create()
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Create()
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Owin.BuilderProperties.Capabilities\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  syntax:
+    content: public static Capabilities Create()
+    return:
+      type: Microsoft.Owin.BuilderProperties.Capabilities
+      description: A new instance of the <xref href="Microsoft.Owin.BuilderProperties.Capabilities" data-throw-if-not-resolved="false"></xref> class.
+    content.vb: Public Shared Function Create As Capabilities
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.Create*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Equals(Microsoft.Owin.BuilderProperties.Capabilities)
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.Equals(Microsoft.Owin.BuilderProperties.Capabilities)
+  id: Equals(Microsoft.Owin.BuilderProperties.Capabilities)
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Equals(Capabilities)
+  nameWithType: Capabilities.Equals(Capabilities)
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Equals(Microsoft.Owin.BuilderProperties.Capabilities)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nDetermines whether the current Capabilities instance is equal to the specified Capabilities.\n"
+  syntax:
+    content: public bool Equals(Capabilities other)
+    parameters:
+    - id: other
+      type: Microsoft.Owin.BuilderProperties.Capabilities
+      description: The other Capabilities to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: true if the specified object is equal to the current object; otherwise, false.
+    content.vb: Public Function Equals(other As Capabilities) As Boolean
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Equals(System.Object)
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Capabilities.Equals(Object)
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Equals(System.Object)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nDetermines whether the current Capabilities is equal to the specified object.\n"
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The object to compare with the current instance.
+    return:
+      type: System.Boolean
+      description: true if the current Capabilities is equal to the specified object; otherwise, false.
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.GetHashCode
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Capabilities.GetHashCode()
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.GetHashCode()
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nReturns the hash code for this instance.\n"
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+      description: The hash code for this instance.
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.op_Equality(Microsoft.Owin.BuilderProperties.Capabilities,Microsoft.Owin.BuilderProperties.Capabilities)
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.op_Equality(Microsoft.Owin.BuilderProperties.Capabilities,Microsoft.Owin.BuilderProperties.Capabilities)
+  id: op_Equality(Microsoft.Owin.BuilderProperties.Capabilities,Microsoft.Owin.BuilderProperties.Capabilities)
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Equality(Capabilities, Capabilities)
+  nameWithType: Capabilities.Equality(Capabilities, Capabilities)
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Equality(Microsoft.Owin.BuilderProperties.Capabilities, Microsoft.Owin.BuilderProperties.Capabilities)
+  type: Operator
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nDetermines whether two specified instances of <xref href=\"Microsoft.Owin.BuilderProperties.Capabilities\" data-throw-if-not-resolved=\"false\"></xref> are equal.\n"
+  syntax:
+    content: public static bool operator ==(Capabilities left, Capabilities right)
+    parameters:
+    - id: left
+      type: Microsoft.Owin.BuilderProperties.Capabilities
+      description: The first object to compare.
+    - id: right
+      type: Microsoft.Owin.BuilderProperties.Capabilities
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if the two specified instances of <xref href="Microsoft.Owin.BuilderProperties.Capabilities" data-throw-if-not-resolved="false"></xref> are equal; otherwise, false.
+    content.vb: Public Shared Operator =(left As Capabilities, right As Capabilities) As Boolean
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.op_Inequality(Microsoft.Owin.BuilderProperties.Capabilities,Microsoft.Owin.BuilderProperties.Capabilities)
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.op_Inequality(Microsoft.Owin.BuilderProperties.Capabilities,Microsoft.Owin.BuilderProperties.Capabilities)
+  id: op_Inequality(Microsoft.Owin.BuilderProperties.Capabilities,Microsoft.Owin.BuilderProperties.Capabilities)
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Capabilities, Capabilities)
+  nameWithType: Capabilities.Inequality(Capabilities, Capabilities)
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Inequality(Microsoft.Owin.BuilderProperties.Capabilities, Microsoft.Owin.BuilderProperties.Capabilities)
+  type: Operator
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nDetermines whether two specified instances of <xref href=\"Microsoft.Owin.BuilderProperties.Capabilities\" data-throw-if-not-resolved=\"false\"></xref> are not equal.\n"
+  syntax:
+    content: public static bool operator !=(Capabilities left, Capabilities right)
+    parameters:
+    - id: left
+      type: Microsoft.Owin.BuilderProperties.Capabilities
+      description: The first object to compare.
+    - id: right
+      type: Microsoft.Owin.BuilderProperties.Capabilities
+      description: The second object to compare.
+    return:
+      type: System.Boolean
+      description: true if the two specified instances of <xref href="Microsoft.Owin.BuilderProperties.Capabilities" data-throw-if-not-resolved="false"></xref> are not equal; otherwise, false.
+    content.vb: Public Shared Operator <>(left As Capabilities, right As Capabilities) As Boolean
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Get``1(System.String)
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.Get``1(System.String)
+  id: Get``1(System.String)
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(String)
+  nameWithType: Capabilities.Get<T>(String)
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Get<T>(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nGets the value from the dictionary with the specified key.\n"
+  syntax:
+    content: public T Get<T>(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to get.
+    typeParameters:
+    - id: T
+      description: The type of the value.
+    return:
+      type: '{T}'
+      description: The value with the specified key.
+    content.vb: Public Function Get(Of T)(key As String) As T
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.Get*
+  nameWithType.vb: Capabilities.Get(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.BuilderProperties.Capabilities.Get(Of T)(System.String)
+  name.vb: Get(Of T)(String)
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Set(System.String,System.Object)
+  commentId: M:Microsoft.Owin.BuilderProperties.Capabilities.Set(System.String,System.Object)
+  id: Set(System.String,System.Object)
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Set(String, Object)
+  nameWithType: Capabilities.Set(String, Object)
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Set(System.String, System.Object)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nSets the given key and value in the underlying dictionary.\n"
+  syntax:
+    content: public Capabilities Set(string key, object value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key of the value to set.
+    - id: value
+      type: System.Object
+      description: The value to set.
+    return:
+      type: Microsoft.Owin.BuilderProperties.Capabilities
+      description: This instance.
+    content.vb: Public Function Set(key As String, value As Object) As Capabilities
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.Set*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Dictionary
+  commentId: P:Microsoft.Owin.BuilderProperties.Capabilities.Dictionary
+  id: Dictionary
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: Dictionary
+  nameWithType: Capabilities.Dictionary
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Dictionary
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nThe underling IDictionary\n"
+  syntax:
+    content: public IDictionary<string, object> Dictionary { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.String,System.Object}
+    content.vb: Public ReadOnly Property Dictionary As IDictionary(Of String, Object)
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.Dictionary*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.SendFileVersion
+  commentId: P:Microsoft.Owin.BuilderProperties.Capabilities.SendFileVersion
+  id: SendFileVersion
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: SendFileVersion
+  nameWithType: Capabilities.SendFileVersion
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.SendFileVersion
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nGets or sets the string value for &quot;sendfile.Version&quot;\n"
+  syntax:
+    content: public string SendFileVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: the string value for &quot;sendfile.Version&quot;
+    content.vb: Public Property SendFileVersion As String
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.SendFileVersion*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.WebSocketVersion
+  commentId: P:Microsoft.Owin.BuilderProperties.Capabilities.WebSocketVersion
+  id: WebSocketVersion
+  parent: Microsoft.Owin.BuilderProperties.Capabilities
+  langs:
+  - csharp
+  - vb
+  name: WebSocketVersion
+  nameWithType: Capabilities.WebSocketVersion
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.WebSocketVersion
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.BuilderProperties
+  summary: "\nGets or sets the websocket version.\n"
+  syntax:
+    content: public string WebSocketVersion { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The websocket version.
+    content.vb: Public Property WebSocketVersion As String
+  overload: Microsoft.Owin.BuilderProperties.Capabilities.WebSocketVersion*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Owin.BuilderProperties
+  commentId: N:Microsoft.Owin.BuilderProperties
+  isExternal: false
+  name: Microsoft.Owin.BuilderProperties
+  nameWithType: Microsoft.Owin.BuilderProperties
+  fullName: Microsoft.Owin.BuilderProperties
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    nameWithType: ValueType.ToString
+    fullName: System.ValueType.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.#ctor*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.#ctor
+  isExternal: true
+  name: Capabilities
+  nameWithType: Capabilities.Capabilities
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Capabilities
+- uid: System.Collections.Generic.IDictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, Object>
+  nameWithType: IDictionary<String, Object>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.Object>
+  nameWithType.vb: IDictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.Object)
+  name.vb: IDictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Create*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.Create
+  isExternal: true
+  name: Create
+  nameWithType: Capabilities.Create
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Create
+- uid: Microsoft.Owin.BuilderProperties.Capabilities
+  commentId: T:Microsoft.Owin.BuilderProperties.Capabilities
+  parent: Microsoft.Owin.BuilderProperties
+  isExternal: true
+  name: Capabilities
+  nameWithType: Capabilities
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Equals*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.Equals
+  isExternal: true
+  name: Equals
+  nameWithType: Capabilities.Equals
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: ValueType.Equals(Object)
+  fullName: System.ValueType.Equals(System.Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    nameWithType: ValueType.Equals
+    fullName: System.ValueType.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    nameWithType: ValueType.GetHashCode
+    fullName: System.ValueType.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.GetHashCode*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.GetHashCode
+  isExternal: true
+  name: GetHashCode
+  nameWithType: Capabilities.GetHashCode
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.op_Equality*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.op_Equality
+  isExternal: true
+  name: Equality
+  nameWithType: Capabilities.Equality
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Equality
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.op_Inequality*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.op_Inequality
+  isExternal: true
+  name: Inequality
+  nameWithType: Capabilities.Inequality
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Inequality
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Get*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.Get
+  isExternal: true
+  name: Get
+  nameWithType: Capabilities.Get
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Set*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.Set
+  isExternal: true
+  name: Set
+  nameWithType: Capabilities.Set
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Set
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.Dictionary*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.Dictionary
+  isExternal: true
+  name: Dictionary
+  nameWithType: Capabilities.Dictionary
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.Dictionary
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.SendFileVersion*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.SendFileVersion
+  isExternal: true
+  name: SendFileVersion
+  nameWithType: Capabilities.SendFileVersion
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.SendFileVersion
+- uid: Microsoft.Owin.BuilderProperties.Capabilities.WebSocketVersion*
+  commentId: Overload:Microsoft.Owin.BuilderProperties.Capabilities.WebSocketVersion
+  isExternal: true
+  name: WebSocketVersion
+  nameWithType: Capabilities.WebSocketVersion
+  fullName: Microsoft.Owin.BuilderProperties.Capabilities.WebSocketVersion

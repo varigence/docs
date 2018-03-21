@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/Varigence-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>Mist 3.4 is another successful short release cycle that delivers powerful new features - less than 6 weeks after Mist 3.3.</p>
+<p><strong>Mist UI Changes</strong></p>
+<ul>
+<li>Added a forward/back button in the quick access toolbar.  Forward and back can also be accessed with Alt-Left/Alt-Right, mouse buttons, or touch gestures.  History is maintained for 15 items by default.</li>
+<li>Added a search box to Project View which enables search/filtering by file name</li>
+<li>Fix for missing root folders on project load</li>
+<li>Added context menu commands for new sql generation extension methods (see below)</li>
+<li>Copy Biml context menu item now on all objects.  This will give you the raw Biml for any object, even if it is live scripted.</li>
+<li>Changed the default on logical view to remove empty folders/groups when a search is active</li>
+<li>Fixed a Mist crash when broken transformers are run from context menu.</li>
+<li>Improvements to licensing and activation - especially in offline scenarios.</li>
+<li>Added &quot;View in BimlScript designer&quot; to all logical view root items, which enables you to more easily see expanded Biml for live scripted objects</li>
+</ul>
+<p><strong>Package Editor</strong></p>
+<ul>
+<li>Entirely new Compact Mode that can be toggled with a new ribbon button and which is saved as a project setting.</li>
+<li>~20% performance improvement in Package Editor load time for big packages.</li>
+</ul>
+<p><strong>BimlEditor Changes</strong></p>
+<ul>
+<li>Added highlighting of matching delimiters (XML tags, code nuggets, multiline comments, braces, parentheses, etc.)</li>
+<li>Added highlighting of other instances of the currently selected text</li>
+<li>Fixed intelliprompt to work better with code in included files</li>
+<li>Added indentation guides, which are on by default.</li>
+</ul>
+<p><strong>Language and Compiler Changes</strong></p>
+<ul>
+<li>Added SurrogateKey as an option for table column ScdType.</li>
+<li>File group modeling is now available on databases.  Tables and indexes can be assigned to file groups explicitly</li>
+<li>FilterPredicate has been added to AstIndexNode to support filtered indexes</li>
+<li>Added DefaultConstraintName to AstTableColumnBaseNode to support naming the default constraint.  This is especially useful for source controlled DBs</li>
+<li>Added new properties for Package emission (VersionMajor, VersionMinor, VersionBuild, CreatorName, CreatorComputerName, CreatedDate).</li>
+<li>Added support for DataflowOverrides, which provide functionality for changing much of the default options that the compiler sets on output paths and columns.</li>
+<li>Fix to enable Text and NText in FlatFileFormats</li>
+<li>Fixed custom component emitter bug reported in forums.</li>
+<li>Fixed bug with custom log provider emission</li>
+</ul>
+<p><strong>Extension Methods</strong></p>
+<ul>
+<li>Added extension methods to string for XmlEscape and XmlUnescape</li>
+<li>Added GetColumnCompareList and GetColumnAssignmentList methods on table for easier construction of complex sql queries</li>
+<li>New extension methods to get CreateAndDropDdl for relational object types</li>
+<li>New extension methods to get SELECT, INSERT, UPDATE, and DELETE query templates for tables</li>
+</ul>
+<p><strong>Package Importer</strong></p>
+<ul>
+<li>Importer enhanced to use DataflowOverrides</li>
+<li>Added support to importer to disable import of SSIS descriptions as annotations.  These are now on by default.</li>
+<li>Lookup parameterized queries now import only if cache mode != full</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Varigence<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

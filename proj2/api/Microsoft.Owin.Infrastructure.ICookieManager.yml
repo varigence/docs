@@ -1,0 +1,176 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Infrastructure.ICookieManager
+  commentId: T:Microsoft.Owin.Infrastructure.ICookieManager
+  id: ICookieManager
+  parent: Microsoft.Owin.Infrastructure
+  children:
+  - Microsoft.Owin.Infrastructure.ICookieManager.AppendResponseCookie(Microsoft.Owin.IOwinContext,System.String,System.String,Microsoft.Owin.CookieOptions)
+  - Microsoft.Owin.Infrastructure.ICookieManager.DeleteCookie(Microsoft.Owin.IOwinContext,System.String,Microsoft.Owin.CookieOptions)
+  - Microsoft.Owin.Infrastructure.ICookieManager.GetRequestCookie(Microsoft.Owin.IOwinContext,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICookieManager
+  nameWithType: ICookieManager
+  fullName: Microsoft.Owin.Infrastructure.ICookieManager
+  type: Interface
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Infrastructure
+  syntax:
+    content: public interface ICookieManager
+    content.vb: Public Interface ICookieManager
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Owin.Infrastructure.ICookieManager.GetRequestCookie(Microsoft.Owin.IOwinContext,System.String)
+  commentId: M:Microsoft.Owin.Infrastructure.ICookieManager.GetRequestCookie(Microsoft.Owin.IOwinContext,System.String)
+  id: GetRequestCookie(Microsoft.Owin.IOwinContext,System.String)
+  parent: Microsoft.Owin.Infrastructure.ICookieManager
+  langs:
+  - csharp
+  - vb
+  name: GetRequestCookie(IOwinContext, String)
+  nameWithType: ICookieManager.GetRequestCookie(IOwinContext, String)
+  fullName: Microsoft.Owin.Infrastructure.ICookieManager.GetRequestCookie(Microsoft.Owin.IOwinContext, System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Infrastructure
+  syntax:
+    content: string GetRequestCookie(IOwinContext context, string key)
+    parameters:
+    - id: context
+      type: Microsoft.Owin.IOwinContext
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function GetRequestCookie(context As IOwinContext, key As String) As String
+  overload: Microsoft.Owin.Infrastructure.ICookieManager.GetRequestCookie*
+- uid: Microsoft.Owin.Infrastructure.ICookieManager.AppendResponseCookie(Microsoft.Owin.IOwinContext,System.String,System.String,Microsoft.Owin.CookieOptions)
+  commentId: M:Microsoft.Owin.Infrastructure.ICookieManager.AppendResponseCookie(Microsoft.Owin.IOwinContext,System.String,System.String,Microsoft.Owin.CookieOptions)
+  id: AppendResponseCookie(Microsoft.Owin.IOwinContext,System.String,System.String,Microsoft.Owin.CookieOptions)
+  parent: Microsoft.Owin.Infrastructure.ICookieManager
+  langs:
+  - csharp
+  - vb
+  name: AppendResponseCookie(IOwinContext, String, String, CookieOptions)
+  nameWithType: ICookieManager.AppendResponseCookie(IOwinContext, String, String, CookieOptions)
+  fullName: Microsoft.Owin.Infrastructure.ICookieManager.AppendResponseCookie(Microsoft.Owin.IOwinContext, System.String, System.String, Microsoft.Owin.CookieOptions)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Infrastructure
+  syntax:
+    content: void AppendResponseCookie(IOwinContext context, string key, string value, CookieOptions options)
+    parameters:
+    - id: context
+      type: Microsoft.Owin.IOwinContext
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String
+    - id: options
+      type: Microsoft.Owin.CookieOptions
+    content.vb: Sub AppendResponseCookie(context As IOwinContext, key As String, value As String, options As CookieOptions)
+  overload: Microsoft.Owin.Infrastructure.ICookieManager.AppendResponseCookie*
+- uid: Microsoft.Owin.Infrastructure.ICookieManager.DeleteCookie(Microsoft.Owin.IOwinContext,System.String,Microsoft.Owin.CookieOptions)
+  commentId: M:Microsoft.Owin.Infrastructure.ICookieManager.DeleteCookie(Microsoft.Owin.IOwinContext,System.String,Microsoft.Owin.CookieOptions)
+  id: DeleteCookie(Microsoft.Owin.IOwinContext,System.String,Microsoft.Owin.CookieOptions)
+  parent: Microsoft.Owin.Infrastructure.ICookieManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteCookie(IOwinContext, String, CookieOptions)
+  nameWithType: ICookieManager.DeleteCookie(IOwinContext, String, CookieOptions)
+  fullName: Microsoft.Owin.Infrastructure.ICookieManager.DeleteCookie(Microsoft.Owin.IOwinContext, System.String, Microsoft.Owin.CookieOptions)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Infrastructure
+  syntax:
+    content: void DeleteCookie(IOwinContext context, string key, CookieOptions options)
+    parameters:
+    - id: context
+      type: Microsoft.Owin.IOwinContext
+    - id: key
+      type: System.String
+    - id: options
+      type: Microsoft.Owin.CookieOptions
+    content.vb: Sub DeleteCookie(context As IOwinContext, key As String, options As CookieOptions)
+  overload: Microsoft.Owin.Infrastructure.ICookieManager.DeleteCookie*
+references:
+- uid: Microsoft.Owin.Infrastructure
+  commentId: N:Microsoft.Owin.Infrastructure
+  isExternal: false
+  name: Microsoft.Owin.Infrastructure
+  nameWithType: Microsoft.Owin.Infrastructure
+  fullName: Microsoft.Owin.Infrastructure
+- uid: Microsoft.Owin.Infrastructure.ICookieManager.GetRequestCookie*
+  commentId: Overload:Microsoft.Owin.Infrastructure.ICookieManager.GetRequestCookie
+  isExternal: true
+  name: GetRequestCookie
+  nameWithType: ICookieManager.GetRequestCookie
+  fullName: Microsoft.Owin.Infrastructure.ICookieManager.GetRequestCookie
+- uid: Microsoft.Owin.IOwinContext
+  commentId: T:Microsoft.Owin.IOwinContext
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IOwinContext
+  nameWithType: IOwinContext
+  fullName: Microsoft.Owin.IOwinContext
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Owin
+  commentId: N:Microsoft.Owin
+  isExternal: false
+  name: Microsoft.Owin
+  nameWithType: Microsoft.Owin
+  fullName: Microsoft.Owin
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Owin.Infrastructure.ICookieManager.AppendResponseCookie*
+  commentId: Overload:Microsoft.Owin.Infrastructure.ICookieManager.AppendResponseCookie
+  isExternal: true
+  name: AppendResponseCookie
+  nameWithType: ICookieManager.AppendResponseCookie
+  fullName: Microsoft.Owin.Infrastructure.ICookieManager.AppendResponseCookie
+- uid: Microsoft.Owin.CookieOptions
+  commentId: T:Microsoft.Owin.CookieOptions
+  parent: Microsoft.Owin
+  isExternal: true
+  name: CookieOptions
+  nameWithType: CookieOptions
+  fullName: Microsoft.Owin.CookieOptions
+- uid: Microsoft.Owin.Infrastructure.ICookieManager.DeleteCookie*
+  commentId: Overload:Microsoft.Owin.Infrastructure.ICookieManager.DeleteCookie
+  isExternal: true
+  name: DeleteCookie
+  nameWithType: ICookieManager.DeleteCookie
+  fullName: Microsoft.Owin.Infrastructure.ICookieManager.DeleteCookie

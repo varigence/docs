@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Security
+  commentId: N:Microsoft.Owin.Security
+  id: Microsoft.Owin.Security
+  children:
+  - Microsoft.Owin.Security.AuthenticateResult
+  - Microsoft.Owin.Security.AuthenticationDescription
+  - Microsoft.Owin.Security.AuthenticationProperties
+  - Microsoft.Owin.Security.AuthenticationResponseChallenge
+  - Microsoft.Owin.Security.AuthenticationResponseGrant
+  - Microsoft.Owin.Security.AuthenticationResponseRevoke
+  - Microsoft.Owin.Security.IAuthenticationManager
+  langs:
+  - csharp
+  - vb
+  name: Microsoft.Owin.Security
+  nameWithType: Microsoft.Owin.Security
+  fullName: Microsoft.Owin.Security
+  type: Namespace
+  assemblies:
+  - Microsoft.Owin
+references:
+- uid: Microsoft.Owin.Security.AuthenticateResult
+  commentId: T:Microsoft.Owin.Security.AuthenticateResult
+  isExternal: true
+  name: AuthenticateResult
+  nameWithType: AuthenticateResult
+  fullName: Microsoft.Owin.Security.AuthenticateResult
+- uid: Microsoft.Owin.Security.AuthenticationDescription
+  commentId: T:Microsoft.Owin.Security.AuthenticationDescription
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationDescription
+  nameWithType: AuthenticationDescription
+  fullName: Microsoft.Owin.Security.AuthenticationDescription
+- uid: Microsoft.Owin.Security.IAuthenticationManager
+  commentId: T:Microsoft.Owin.Security.IAuthenticationManager
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: IAuthenticationManager
+  nameWithType: IAuthenticationManager
+  fullName: Microsoft.Owin.Security.IAuthenticationManager
+- uid: Microsoft.Owin.Security.AuthenticationProperties
+  commentId: T:Microsoft.Owin.Security.AuthenticationProperties
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationProperties
+  nameWithType: AuthenticationProperties
+  fullName: Microsoft.Owin.Security.AuthenticationProperties
+- uid: Microsoft.Owin.Security.AuthenticationResponseChallenge
+  commentId: T:Microsoft.Owin.Security.AuthenticationResponseChallenge
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationResponseChallenge
+  nameWithType: AuthenticationResponseChallenge
+  fullName: Microsoft.Owin.Security.AuthenticationResponseChallenge
+- uid: Microsoft.Owin.Security.AuthenticationResponseGrant
+  commentId: T:Microsoft.Owin.Security.AuthenticationResponseGrant
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationResponseGrant
+  nameWithType: AuthenticationResponseGrant
+  fullName: Microsoft.Owin.Security.AuthenticationResponseGrant
+- uid: Microsoft.Owin.Security.AuthenticationResponseRevoke
+  commentId: T:Microsoft.Owin.Security.AuthenticationResponseRevoke
+  parent: Microsoft.Owin.Security
+  isExternal: true
+  name: AuthenticationResponseRevoke
+  nameWithType: AuthenticationResponseRevoke
+  fullName: Microsoft.Owin.Security.AuthenticationResponseRevoke
+- uid: Microsoft.Owin.Security
+  commentId: N:Microsoft.Owin.Security
+  isExternal: false
+  name: Microsoft.Owin.Security
+  nameWithType: Microsoft.Owin.Security
+  fullName: Microsoft.Owin.Security

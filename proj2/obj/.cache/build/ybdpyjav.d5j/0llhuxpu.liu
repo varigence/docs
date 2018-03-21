@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum UrlAccessParameter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum UrlAccessParameter
+   ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Varigence.Languages.Biml.Cube.Action.UrlAccessParameter">
+  
+  
+  <h1 id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter" data-uid="Varigence.Languages.Biml.Cube.Action.UrlAccessParameter" class="text-break">Enum UrlAccessParameter
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Varigence.Languages.Biml.Cube.Action.html">Varigence.Languages.Biml.Cube.Action</a></h6>
+  <h6><strong>Assembly</strong>: Biml.dll</h6>
+  <h5 id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum UrlAccessParameter</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCEndFind">RCEndFind</td>
+        <td><p>Specifies that the value will determine the index of the last page/section to search.  The default is the current report page.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCFallbackPage">RCFallbackPage</td>
+        <td><p>HTML Viewer Command: Specifies that the parameter value will determine the index of the page that should be displayed in the event or a navigation or search error..  The default is the current report page.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCGetImage">RCGetImage</td>
+        <td><p>HTML Viewer Command: Specifies that the parameter value will determine the name of the icon to retrieve for the HTML Viewer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCIcon">RCIcon</td>
+        <td><p>HTML Viewer Command: Specifies that the parameter value will determine the name of the rendering extension icon that should be retrieved.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCParameters">RCParameters</td>
+        <td><p>Specifies that the value will determine the visibility of the parameters area of the toolbar.  The default is true.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCSection">RCSection</td>
+        <td><p>Specifies that the value will determine indes of the page of the report to display.  The default is 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCStartFind">RCStartFind</td>
+        <td><p>Specifies that the value will determine the index of the last page/section to search.  The default is the last report page.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCStyleSheet">RCStyleSheet</td>
+        <td><p>HTML Viewer Command: Specifies that the parameter value will determine the style sheet to use with the HTML Viewer.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCToolBar">RCToolBar</td>
+        <td><p>Specifies that the value will determine the visibility of the entire toolbar.  The default is true.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RCZoom">RCZoom</td>
+        <td><p>Specifies that the value will determine the zoom level of the report.  Acceptable values include string constants between 0 and 100, integer percentage values, or strings such as &apos;Page Width&apos; or &apos;Whole Page&apos;.  The default is 100.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RSCommand">RSCommand</td>
+        <td><p>Report Server Command: Specifies that the parameter value will determine the command to execute.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RSFormat">RSFormat</td>
+        <td><p>Report Server Command: Specifies that the parameter value will determine the format of the report.  Acceptable values are listed in teh ReportServerFormat enumeration.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RSParameterLanguage">RSParameterLanguage</td>
+        <td><p>Report Server Command: Specifies that the parameter value will determine the language of URL parameters.  Acceptable values include locale id strings (such as en-us or en-gb).  The default is the current browser language.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RSSnapshot">RSSnapshot</td>
+        <td><p>Report Server Command: Specifies that the parameter value will determine the report history snapshot to use for rendering the report.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RVAsyncReader">RVAsyncReader</td>
+        <td><p>Report Viewer Command: Specifies that the parameter value will determine whether the report is rendered asynchronously.  The default is true.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RVDocMapAreaWidth">RVDocMapAreaWidth</td>
+        <td><p>Report Viewer Command: Specifies that the parameter value will determine the pixel wideth of the parameter area.  Acceptable values include any non-negative integer.  The default is the same as the web part default.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RVHeaderArea">RVHeaderArea</td>
+        <td><p>Report Viewer Command: Specifies that the parameter value will determine the header area display mode.  Acceptable values are listed in the ReportViewerHeaderAreaType enumeration.  The default is Full.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Varigence_Languages_Biml_Cube_Action_UrlAccessParameter_RVToolBar">RVToolBar</td>
+        <td><p>Report Viewer Command: Specifies that the parameter value will determine the toolbar display mode.  Acceptable values are listed in the ReportViewerToolBarType enumeration.  The default is Full.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

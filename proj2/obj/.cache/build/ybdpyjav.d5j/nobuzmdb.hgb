@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Varigence.Languages.Biml.Principal
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Varigence.Languages.Biml.Principal
+   ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Varigence.Languages.Biml.Principal">
+  
+  <h1 id="Varigence_Languages_Biml_Principal" data-uid="Varigence.Languages.Biml.Principal" class="text-break">Namespace Varigence.Languages.Biml.Principal
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstAnalysisDatabasePermissionNode.html">AstAnalysisDatabasePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstAnalysisDatabasePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Data Source permission defines access rights to an Analysis Services database.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstColumnPermissionNode.html">AstColumnPermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstColumnPermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Column permission grants, denies, or revokes the permission to perform the following actions on a column. Such actions include Alter, Delete, Insert, Select, Update, and others.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstCubeCellPermissionNode.html">AstCubeCellPermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstCubeCellPermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Cube Cell permission defines access rights to cube cells.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstCubeDimensionAttributePermissionNode.html">AstCubeDimensionAttributePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstCubeDimensionAttributePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Cube Database Dimension Attribute permission defines access rights to database cube dimension attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstCubeDimensionPermissionNode.html">AstCubeDimensionPermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstCubeDimensionPermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Cube Dimension permission defines access rights to the dimensions in a cube.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstCubePermissionNode.html">AstCubePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstCubePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Cube permission defines access rights to a cube.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstDatabaseDimensionAttributePermissionNode.html">AstDatabaseDimensionAttributePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstDatabaseDimensionAttributePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Database Dimension Attribute permission defines access rights to database dimension attributes.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstDatabaseDimensionPermissionNode.html">AstDatabaseDimensionPermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstDatabaseDimensionPermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Cube permission defines access rights to a cube.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstDatabasePermissionNode.html">AstDatabasePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstDatabasePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Database permission grants, denies, or revokes the permission to perform specified actions on a database. Such actions include Alter, Delete, Insert, Select, Update, and others.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstDataSourcePermissionNode.html">AstDataSourcePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstDataSourcePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Data Source permission defines access rights to data sources in an Analysis Services database.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstDimensionalPermissionNode.html">AstDimensionalPermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstDimensionalPermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstDimensionalPermissionNode is an abstract type that serves as the base type for all SQL Server Analysis Services permission types in the Biml framework.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstPermissionBaseNode.html">AstPermissionBaseNode</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstPermissionGrantBaseNode.html">AstPermissionGrantBaseNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstPermissionGrantBaseNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstPermissionBaseNode is an abstract type that serves as the base type for all permission types in the Biml framework.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstPrincipalMemberNode.html">AstPrincipalMemberNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstPrincipalMemberNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Specify members for a principal node.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstRelationalPermissionNode.html">AstRelationalPermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstRelationalPermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">AstRelationalPermissionNode is an abstract type that serves as the base type for all SQL Server relational database permission types in the Biml framework.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstSchemaPermissionNode.html">AstSchemaPermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstSchemaPermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Schema permission grants, denies, or revokes the permission to perform specified actions on a schema. Such actions include Alter, Delete, Insert, Select, Update, and others.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstStoredProcedurePermissionNode.html">AstStoredProcedurePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstStoredProcedurePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Stored Procedure permission grants, denies, or revokes the permission to perform specified actions on a stored procedure. Such actions include Alter, Delete, Insert, Select, Update, and others.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstTablePermissionNode.html">AstTablePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstTablePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The Table permission grants, denies, or revokes the permission to perform specified actions on a table. Such actions include Alter, Delete, Insert, Select, Update, and others.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstTabularModelPermissionNode.html">AstTabularModelPermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstTabularModelPermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The tabular model permission grants read, refresh, readRefresh, or administrator access to the model.</p>
+</section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.AstTabularTablePermissionNode.html">AstTabularTablePermissionNode</a></h4>
+      <section><p sourcefile="api/Varigence.Languages.Biml.Principal.AstTabularTablePermissionNode.yml" sourcestartlinenumber="2" sourceendlinenumber="2">The tabular table permission grants access to specific tables in a model.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.PermissionAccessType.html">PermissionAccessType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Varigence.Languages.Biml.Principal.PermissionDrillThroughAccess.html">PermissionDrillThroughAccess</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

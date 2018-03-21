@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Logging.ILoggerFactory
+  commentId: T:Microsoft.Owin.Logging.ILoggerFactory
+  id: ILoggerFactory
+  parent: Microsoft.Owin.Logging
+  children:
+  - Microsoft.Owin.Logging.ILoggerFactory.Create(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ILoggerFactory
+  nameWithType: ILoggerFactory
+  fullName: Microsoft.Owin.Logging.ILoggerFactory
+  type: Interface
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Logging
+  summary: "\nUsed to create logger instances of the given name.\n"
+  syntax:
+    content: public interface ILoggerFactory
+    content.vb: Public Interface ILoggerFactory
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Owin.Logging.ILoggerFactory.Create(System.String)
+  commentId: M:Microsoft.Owin.Logging.ILoggerFactory.Create(System.String)
+  id: Create(System.String)
+  parent: Microsoft.Owin.Logging.ILoggerFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(String)
+  nameWithType: ILoggerFactory.Create(String)
+  fullName: Microsoft.Owin.Logging.ILoggerFactory.Create(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Logging
+  summary: "\nCreates a new ILogger instance of the given name.\n"
+  syntax:
+    content: ILogger Create(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Microsoft.Owin.Logging.ILogger
+    content.vb: Function Create(name As String) As ILogger
+  overload: Microsoft.Owin.Logging.ILoggerFactory.Create*
+references:
+- uid: Microsoft.Owin.Logging
+  commentId: N:Microsoft.Owin.Logging
+  isExternal: false
+  name: Microsoft.Owin.Logging
+  nameWithType: Microsoft.Owin.Logging
+  fullName: Microsoft.Owin.Logging
+- uid: Microsoft.Owin.Logging.ILoggerFactory.Create*
+  commentId: Overload:Microsoft.Owin.Logging.ILoggerFactory.Create
+  isExternal: true
+  name: Create
+  nameWithType: ILoggerFactory.Create
+  fullName: Microsoft.Owin.Logging.ILoggerFactory.Create
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Owin.Logging.ILogger
+  commentId: T:Microsoft.Owin.Logging.ILogger
+  parent: Microsoft.Owin.Logging
+  isExternal: true
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Owin.Logging.ILogger
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

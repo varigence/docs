@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/Varigence-Logo.png" height="46" width="46" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="1" sourceendlinenumber="1">BimlStudio allows you to import schema and table definitions from a database, along with updating your model with the current state of the definitions at each compile. To leverage the update capability, you will need to use BimlScript to author the import logic; the BimlScript is executed during each compile, obtaining the current state of schemas and tables.</p>
+<p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="3" sourceendlinenumber="3">You can import database assets by following these steps:</p>
+<ol sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="5" sourceendlinenumber="14">
+<li sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="5" sourceendlinenumber="6"><p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="5" sourceendlinenumber="6">Select the Home tab in the ribbon and click the BimlScript button. You can also right click the Utilities folder and click <strong>Add BimlScript</strong>. This will open the <strong>New Item</strong> dialog, click <strong>Add</strong>.
+<img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-importingtableswithbimlscript/005a_Step1.png" alt="Biml Script Ribbon Button" sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="6" sourceendlinenumber="6"></p>
+</li>
+<li sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="8" sourceendlinenumber="8"><p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="8" sourceendlinenumber="8">This creates a BimlFile that&#39;s added in the Logical View under Library\Utilities.  </p>
+</li>
+<li sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="10" sourceendlinenumber="10"><p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="10" sourceendlinenumber="10">The BimlFle should be open on the right, if not Double click on the BimlFile to open the BimlScript designer.  </p>
+</li>
+<li sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="12" sourceendlinenumber="12"><p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="12" sourceendlinenumber="12">Enter your script in the <strong>BimlScript Input Editor</strong> pane. When executed, the script generates Biml for your imported assets. Clicking on the notification bar saves the script and displays the Biml, resulting from running the script, in the <strong>Preview Expanded BimlScript</strong> pane.</p>
+</li>
+<li sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="14" sourceendlinenumber="14"><p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="14" sourceendlinenumber="14">For importing assets from the AdventureWorksLT database, you can copy and paste this BimlScript into the <strong>BimlScript Input Editor</strong> pane. You can also use this sample as a starting point for writing your own import script.</p>
+</li>
+</ol>
+<pre sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="17" sourceendlinenumber="35"><code>    &lt;#@ template language=&quot;C#&quot; hostspecific=&quot;True&quot; tier#&gt;
+    &lt;# var importResult = ExternalDataAccess.GetDatabaseSchema(RootNode.DbConnections[&quot;AdventureWorksLT&quot;], new[]{&quot;SalesLT&quot;}, null, ImportOptions.ExcludeForeignKey | ImportOptions.ExcludeColumnDefault | ImportOptions.ExcludeViews | ImportOptions.ExcludeIdentity);#&gt;
+
+    &lt;Biml xmlns=&quot;http://schemas.varigence.com/biml.xsd&quot;&gt;
+        &lt;Schemas&gt;
+            &lt;#=importResult.SchemaNodes.GetBiml()#&gt;
+        &lt;/Schemas&gt;
+        &lt;Tables&gt; 
+            &lt;#=importResult.TableNodes.GetBiml()#&gt;
+        &lt;/Tables&gt;
+            &lt;#=importResult.TableNodes.GetBiml()#&gt;
+        &lt;/Tables&gt;
+    &lt;/Biml&gt;
+
+1.  The first thing to notice is that all code fragments are surrounded by required &lt;# and #&gt; characters.
+2.  The first line is the required template directive. The language parameter depends on the language you&#39;re using; this example uses C#.
+3.  The importResult variable returns a collection of type ImportResults. The property&#39;s getter uses RootNode, which is the root of the project tree; all assets in your project can be reached from RootNode. The Connections collection returns the _AdventureWorksLT_ connection and used by ExternalDataAccess.GetDatabaseSchema call method to perform the import.
+5.  Within the Biml element, the Schemas and Tables lists are populated by retrieving the SchemaNodes and TableNodes collections from the Results property and calling GetBiml, which converts the returned schema and table items into Biml.
+6.  To learn more about these functions, check out the Biml API documentation [here.](http://www.varigence.com/documentation/biml/api.html)
+</code></pre><ol sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="36" sourceendlinenumber="39">
+<li sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="36" sourceendlinenumber="37"><p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="36" sourceendlinenumber="37">While writing the script, you can click on the notification bar to save the BimlScript and examine its output. The Update Preview ribbon button also refreshes the Output editor.<br><img src="https://varigencecom.blob.core.windows.net/images-mistdocumentation-importingtableswithbimlscript/005a_Step2.png" alt="Expanded BimlScript Output" sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="37" sourceendlinenumber="37">  </p>
+</li>
+<li sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="39" sourceendlinenumber="39"><p sourcefile="articles/Importing Tables using BimlScript.md" sourcestartlinenumber="39" sourceendlinenumber="39">Once the output looks correct, press the <strong>Execute</strong> button in the ribbon to import the assets into your model.  </p>
+</li>
+</ol>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Varigence<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

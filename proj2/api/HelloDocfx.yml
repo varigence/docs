@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: HelloDocfx
+  commentId: N:HelloDocfx
+  id: HelloDocfx
+  children:
+  - HelloDocfx.Class1
+  - HelloDocfx.Class1.InnerClass
+  langs:
+  - csharp
+  - vb
+  name: HelloDocfx
+  nameWithType: HelloDocfx
+  fullName: HelloDocfx
+  type: Namespace
+  assemblies:
+  - HelloDocfx1
+references:
+- uid: HelloDocfx.Class1
+  commentId: T:HelloDocfx.Class1
+  isExternal: true
+  name: Class1
+  nameWithType: Class1
+  fullName: HelloDocfx.Class1
+- uid: HelloDocfx.Class1.InnerClass
+  commentId: T:HelloDocfx.Class1.InnerClass
+  parent: HelloDocfx
+  isExternal: true
+  name: Class1.InnerClass
+  nameWithType: Class1.InnerClass
+  fullName: HelloDocfx.Class1.InnerClass
+- uid: HelloDocfx
+  commentId: N:HelloDocfx
+  isExternal: false
+  name: HelloDocfx
+  nameWithType: HelloDocfx
+  fullName: HelloDocfx

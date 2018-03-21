@@ -1,0 +1,743 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Builder.AppBuilderExtensions
+  commentId: T:Microsoft.Owin.Builder.AppBuilderExtensions
+  id: AppBuilderExtensions
+  parent: Microsoft.Owin.Builder
+  children:
+  - Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion(Owin.IAppBuilder,System.Delegate)
+  - Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion``2(Owin.IAppBuilder,System.Func{``0,``1})
+  - Microsoft.Owin.Builder.AppBuilderExtensions.Build(Owin.IAppBuilder)
+  - Microsoft.Owin.Builder.AppBuilderExtensions.Build``1(Owin.IAppBuilder)
+  langs:
+  - csharp
+  - vb
+  name: AppBuilderExtensions
+  nameWithType: AppBuilderExtensions
+  fullName: Microsoft.Owin.Builder.AppBuilderExtensions
+  type: Class
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Builder
+  summary: "\nExtension methods for IAppBuilder.\n"
+  syntax:
+    content: public static class AppBuilderExtensions
+    content.vb: Public Module AppBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Owin.Builder.AppBuilderExtensions.Build(Owin.IAppBuilder)
+  commentId: M:Microsoft.Owin.Builder.AppBuilderExtensions.Build(Owin.IAppBuilder)
+  id: Build(Owin.IAppBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Owin.Builder.AppBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Build(IAppBuilder)
+  nameWithType: AppBuilderExtensions.Build(IAppBuilder)
+  fullName: Microsoft.Owin.Builder.AppBuilderExtensions.Build(Owin.IAppBuilder)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Builder
+  summary: "\nThe Build is called at the point when all of the middleware should be chained\ntogether. May be called to build pipeline branches.\n"
+  syntax:
+    content: public static Func<IDictionary<string, object>, Task> Build(this IAppBuilder builder)
+    parameters:
+    - id: builder
+      type: Owin.IAppBuilder
+    return:
+      type: System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task}
+      description: The request processing entry point for this section of the pipeline.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Build(builder As IAppBuilder) As Func(Of IDictionary(Of String, Object), Task)
+  overload: Microsoft.Owin.Builder.AppBuilderExtensions.Build*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Owin.Builder.AppBuilderExtensions.Build``1(Owin.IAppBuilder)
+  commentId: M:Microsoft.Owin.Builder.AppBuilderExtensions.Build``1(Owin.IAppBuilder)
+  id: Build``1(Owin.IAppBuilder)
+  isExtensionMethod: true
+  parent: Microsoft.Owin.Builder.AppBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Build<TApp>(IAppBuilder)
+  nameWithType: AppBuilderExtensions.Build<TApp>(IAppBuilder)
+  fullName: Microsoft.Owin.Builder.AppBuilderExtensions.Build<TApp>(Owin.IAppBuilder)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Builder
+  summary: "\nThe Build is called at the point when all of the middleware should be chained\ntogether. May be called to build pipeline branches.\n"
+  syntax:
+    content: public static TApp Build<TApp>(this IAppBuilder builder)
+    parameters:
+    - id: builder
+      type: Owin.IAppBuilder
+    typeParameters:
+    - id: TApp
+      description: The application signature.
+    return:
+      type: '{TApp}'
+      description: The request processing entry point for this section of the pipeline.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Build(Of TApp)(builder As IAppBuilder) As TApp
+  overload: Microsoft.Owin.Builder.AppBuilderExtensions.Build*
+  nameWithType.vb: AppBuilderExtensions.Build(Of TApp)(IAppBuilder)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Owin.Builder.AppBuilderExtensions.Build(Of TApp)(Owin.IAppBuilder)
+  name.vb: Build(Of TApp)(IAppBuilder)
+- uid: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion(Owin.IAppBuilder,System.Delegate)
+  commentId: M:Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion(Owin.IAppBuilder,System.Delegate)
+  id: AddSignatureConversion(Owin.IAppBuilder,System.Delegate)
+  isExtensionMethod: true
+  parent: Microsoft.Owin.Builder.AppBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSignatureConversion(IAppBuilder, Delegate)
+  nameWithType: AppBuilderExtensions.AddSignatureConversion(IAppBuilder, Delegate)
+  fullName: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion(Owin.IAppBuilder, System.Delegate)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Builder
+  summary: "\nAdds converters for adapting between disparate application signatures.\n"
+  syntax:
+    content: public static void AddSignatureConversion(this IAppBuilder builder, Delegate conversion)
+    parameters:
+    - id: builder
+      type: Owin.IAppBuilder
+    - id: conversion
+      type: System.Delegate
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddSignatureConversion(builder As IAppBuilder, conversion As  Delegate)
+  overload: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion``2(Owin.IAppBuilder,System.Func{``0,``1})
+  commentId: M:Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion``2(Owin.IAppBuilder,System.Func{``0,``1})
+  id: AddSignatureConversion``2(Owin.IAppBuilder,System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: Microsoft.Owin.Builder.AppBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSignatureConversion<T1, T2>(IAppBuilder, Func<T1, T2>)
+  nameWithType: AppBuilderExtensions.AddSignatureConversion<T1, T2>(IAppBuilder, Func<T1, T2>)
+  fullName: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion<T1, T2>(Owin.IAppBuilder, System.Func<T1, T2>)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Builder
+  summary: "\nAdds converters for adapting between disparate application signatures.\n"
+  syntax:
+    content: public static void AddSignatureConversion<T1, T2>(this IAppBuilder builder, Func<T1, T2> conversion)
+    parameters:
+    - id: builder
+      type: Owin.IAppBuilder
+    - id: conversion
+      type: System.Func{{T1},{T2}}
+    typeParameters:
+    - id: T1
+    - id: T2
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub AddSignatureConversion(Of T1, T2)(builder As IAppBuilder, conversion As Func(Of T1, T2))
+  overload: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion*
+  nameWithType.vb: AppBuilderExtensions.AddSignatureConversion(Of T1, T2)(IAppBuilder, Func(Of T1, T2))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion(Of T1, T2)(Owin.IAppBuilder, System.Func(Of T1, T2))
+  name.vb: AddSignatureConversion(Of T1, T2)(IAppBuilder, Func(Of T1, T2))
+references:
+- uid: Microsoft.Owin.Builder
+  commentId: N:Microsoft.Owin.Builder
+  isExternal: false
+  name: Microsoft.Owin.Builder
+  nameWithType: Microsoft.Owin.Builder
+  fullName: Microsoft.Owin.Builder
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Owin.Builder.AppBuilderExtensions.Build*
+  commentId: Overload:Microsoft.Owin.Builder.AppBuilderExtensions.Build
+  isExternal: true
+  name: Build
+  nameWithType: AppBuilderExtensions.Build
+  fullName: Microsoft.Owin.Builder.AppBuilderExtensions.Build
+- uid: Owin.IAppBuilder
+  isExternal: true
+  name: IAppBuilder
+  nameWithType: IAppBuilder
+  fullName: Owin.IAppBuilder
+- uid: System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Collections.Generic.IDictionary{System.String,System.Object},System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`2
+  name: Func<IDictionary<String, Object>, Task>
+  nameWithType: Func<IDictionary<String, Object>, Task>
+  fullName: System.Func<System.Collections.Generic.IDictionary<System.String, System.Object>, System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of IDictionary(Of String, Object), Task)
+  fullName.vb: System.Func(Of System.Collections.Generic.IDictionary(Of System.String, System.Object), System.Threading.Tasks.Task)
+  name.vb: Func(Of IDictionary(Of String, Object), Task)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TApp}'
+  commentId: '!:TApp'
+  definition: TApp
+  name: TApp
+  nameWithType: TApp
+  fullName: TApp
+- uid: TApp
+  commentId: '!:TApp'
+  isExternal: false
+  name: TApp
+  nameWithType: TApp
+  fullName: TApp
+- uid: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion*
+  commentId: Overload:Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion
+  isExternal: true
+  name: AddSignatureConversion
+  nameWithType: AppBuilderExtensions.AddSignatureConversion
+  fullName: Microsoft.Owin.Builder.AppBuilderExtensions.AddSignatureConversion
+- uid: System.Delegate
+  commentId: T:System.Delegate
+  parent: System
+  isExternal: true
+  name: Delegate
+  nameWithType: Delegate
+  fullName: System.Delegate
+- uid: System.Func{{T1},{T2}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  name: Func<T1, T2>
+  nameWithType: Func<T1, T2>
+  fullName: System.Func<T1, T2>
+  nameWithType.vb: Func(Of T1, T2)
+  fullName.vb: System.Func(Of T1, T2)
+  name.vb: Func(Of T1, T2)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T1
+    nameWithType: T1
+    fullName: T1
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T2
+    nameWithType: T2
+    fullName: T2
+  - name: )
+    nameWithType: )
+    fullName: )

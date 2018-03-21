@@ -1,0 +1,4560 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.HeaderDictionary
+  commentId: T:Microsoft.Owin.HeaderDictionary
+  id: HeaderDictionary
+  parent: Microsoft.Owin
+  children:
+  - Microsoft.Owin.HeaderDictionary.#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})
+  - Microsoft.Owin.HeaderDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  - Microsoft.Owin.HeaderDictionary.Add(System.String,System.String[])
+  - Microsoft.Owin.HeaderDictionary.Append(System.String,System.String)
+  - Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])
+  - Microsoft.Owin.HeaderDictionary.AppendValues(System.String,System.String[])
+  - Microsoft.Owin.HeaderDictionary.Clear
+  - Microsoft.Owin.HeaderDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  - Microsoft.Owin.HeaderDictionary.ContainsKey(System.String)
+  - Microsoft.Owin.HeaderDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.String[]}[],System.Int32)
+  - Microsoft.Owin.HeaderDictionary.Count
+  - Microsoft.Owin.HeaderDictionary.Get(System.String)
+  - Microsoft.Owin.HeaderDictionary.GetCommaSeparatedValues(System.String)
+  - Microsoft.Owin.HeaderDictionary.GetEnumerator
+  - Microsoft.Owin.HeaderDictionary.GetValues(System.String)
+  - Microsoft.Owin.HeaderDictionary.IsReadOnly
+  - Microsoft.Owin.HeaderDictionary.Item(System.String)
+  - Microsoft.Owin.HeaderDictionary.Keys
+  - Microsoft.Owin.HeaderDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  - Microsoft.Owin.HeaderDictionary.Remove(System.String)
+  - Microsoft.Owin.HeaderDictionary.Set(System.String,System.String)
+  - Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])
+  - Microsoft.Owin.HeaderDictionary.SetValues(System.String,System.String[])
+  - Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#get_Item(System.String)
+  - Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#Item(System.String)
+  - Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#set_Item(System.String,System.String[])
+  - Microsoft.Owin.HeaderDictionary.System#Collections#IEnumerable#GetEnumerator
+  - Microsoft.Owin.HeaderDictionary.TryGetValue(System.String,System.String[]@)
+  - Microsoft.Owin.HeaderDictionary.Values
+  langs:
+  - csharp
+  - vb
+  name: HeaderDictionary
+  nameWithType: HeaderDictionary
+  fullName: Microsoft.Owin.HeaderDictionary
+  type: Class
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nRepresents a wrapper for owin.RequestHeaders and owin.ResponseHeaders.\n"
+  syntax:
+    content: 'public class HeaderDictionary : IHeaderDictionary, IReadableStringCollection, IDictionary<string, string[]>, ICollection<KeyValuePair<string, string[]>>, IEnumerable<KeyValuePair<string, string[]>>, IEnumerable'
+    content.vb: >-
+      Public Class HeaderDictionary
+          Implements IHeaderDictionary, IReadableStringCollection, IDictionary(Of String, String()), ICollection(Of KeyValuePair(Of String, String())), IEnumerable(Of KeyValuePair(Of String, String())), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Owin.IHeaderDictionary
+  - Microsoft.Owin.IReadableStringCollection
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Owin.HeaderDictionary.#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})
+  commentId: M:Microsoft.Owin.HeaderDictionary.#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})
+  id: '#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})'
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: HeaderDictionary(IDictionary<String, String[]>)
+  nameWithType: HeaderDictionary.HeaderDictionary(IDictionary<String, String[]>)
+  fullName: Microsoft.Owin.HeaderDictionary.HeaderDictionary(System.Collections.Generic.IDictionary<System.String, System.String[]>)
+  type: Constructor
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Owin.HeaderDictionary\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  syntax:
+    content: public HeaderDictionary(IDictionary<string, string[]> store)
+    parameters:
+    - id: store
+      type: System.Collections.Generic.IDictionary{System.String,System.String[]}
+      description: The underlying data store.
+    content.vb: Public Sub New(store As IDictionary(Of String, String()))
+  overload: Microsoft.Owin.HeaderDictionary.#ctor*
+  nameWithType.vb: HeaderDictionary.HeaderDictionary(IDictionary(Of String, String()))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.HeaderDictionary(System.Collections.Generic.IDictionary(Of System.String, System.String()))
+  name.vb: HeaderDictionary(IDictionary(Of String, String()))
+- uid: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#get_Item(System.String)
+  commentId: M:Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#get_Item(System.String)
+  id: System#Collections#Generic#IDictionary{System#String,System#String[]}#get_Item(System.String)
+  isEii: true
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: IDictionary<String, String[]>.get_Item(String)
+  nameWithType: HeaderDictionary.IDictionary<String, String[]>.get_Item(String)
+  fullName: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String, System.String[]>.get_Item(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  syntax:
+    content: string[] IDictionary<string, string[]>.get_Item(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: Function System.Collections.Generic.IDictionary<System.String,System.String[]>.get_Item(key As String) As String() Implements IDictionary(Of String, String()).get_Item
+  overload: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#get_Item*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.get_Item(System.String)
+  nameWithType.vb: HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.get_Item(String)
+  fullName.vb: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.get_Item(System.String)
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.String[]>.get_Item(String)
+- uid: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#set_Item(System.String,System.String[])
+  commentId: M:Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#set_Item(System.String,System.String[])
+  id: System#Collections#Generic#IDictionary{System#String,System#String[]}#set_Item(System.String,System.String[])
+  isEii: true
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: IDictionary<String, String[]>.set_Item(String, String[])
+  nameWithType: HeaderDictionary.IDictionary<String, String[]>.set_Item(String, String[])
+  fullName: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String, System.String[]>.set_Item(System.String, System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  syntax:
+    content: void IDictionary<string, string[]>.set_Item(string key, string[] value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String[]
+    content.vb: Sub System.Collections.Generic.IDictionary<System.String,System.String[]>.set_Item(key As String, value As String()) Implements IDictionary(Of String, String()).set_Item
+  overload: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#set_Item*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.set_Item(System.String,System.String[])
+  nameWithType.vb: HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.set_Item(String, String())
+  fullName.vb: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.set_Item(System.String, System.String())
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.String[]>.set_Item(String, String())
+- uid: Microsoft.Owin.HeaderDictionary.GetEnumerator
+  commentId: M:Microsoft.Owin.HeaderDictionary.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: HeaderDictionary.GetEnumerator()
+  fullName: Microsoft.Owin.HeaderDictionary.GetEnumerator()
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nReturns an enumerator that iterates through a collection.\n"
+  syntax:
+    content: public IEnumerator<KeyValuePair<string, string[]>> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+      description: An <xref href="System.Collections.IEnumerator" data-throw-if-not-resolved="false"></xref> object that can be used to iterate through the collection.
+    content.vb: Public Function GetEnumerator As IEnumerator(Of KeyValuePair(Of String, String()))
+  overload: Microsoft.Owin.HeaderDictionary.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.GetEnumerator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.System#Collections#IEnumerable#GetEnumerator
+  commentId: M:Microsoft.Owin.HeaderDictionary.System#Collections#IEnumerable#GetEnumerator
+  id: System#Collections#IEnumerable#GetEnumerator
+  isEii: true
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: IEnumerable.GetEnumerator()
+  nameWithType: HeaderDictionary.IEnumerable.GetEnumerator()
+  fullName: Microsoft.Owin.HeaderDictionary.System.Collections.IEnumerable.GetEnumerator()
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nReturns an enumerator that iterates through a collection.\n"
+  syntax:
+    content: IEnumerator IEnumerable.GetEnumerator()
+    return:
+      type: System.Collections.IEnumerator
+      description: An <xref href="System.Collections.IEnumerator" data-throw-if-not-resolved="false"></xref> object that can be used to iterate through the collection.
+    content.vb: Function System.Collections.IEnumerable.GetEnumerator As IEnumerator Implements IEnumerable.GetEnumerator
+  overload: Microsoft.Owin.HeaderDictionary.System#Collections#IEnumerable#GetEnumerator*
+  implements:
+  - System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: HeaderDictionary.System.Collections.IEnumerable.GetEnumerator()
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+- uid: Microsoft.Owin.HeaderDictionary.Get(System.String)
+  commentId: M:Microsoft.Owin.HeaderDictionary.Get(System.String)
+  id: Get(System.String)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  nameWithType: HeaderDictionary.Get(String)
+  fullName: Microsoft.Owin.HeaderDictionary.Get(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGet the associated value from the collection as a single string.\n"
+  syntax:
+    content: public string Get(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    return:
+      type: System.String
+      description: the associated value from the collection as a single string or null if the key is not present.
+    content.vb: Public Function Get(key As String) As String
+  overload: Microsoft.Owin.HeaderDictionary.Get*
+  implements:
+  - Microsoft.Owin.IReadableStringCollection.Get(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.GetValues(System.String)
+  commentId: M:Microsoft.Owin.HeaderDictionary.GetValues(System.String)
+  id: GetValues(System.String)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: GetValues(String)
+  nameWithType: HeaderDictionary.GetValues(String)
+  fullName: Microsoft.Owin.HeaderDictionary.GetValues(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGet the associated values from the collection without modification.\n"
+  syntax:
+    content: public IList<string> GetValues(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    return:
+      type: System.Collections.Generic.IList{System.String}
+      description: the associated value from the collection without modification, or null if the key is not present.
+    content.vb: Public Function GetValues(key As String) As IList(Of String)
+  overload: Microsoft.Owin.HeaderDictionary.GetValues*
+  implements:
+  - Microsoft.Owin.IReadableStringCollection.GetValues(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.GetCommaSeparatedValues(System.String)
+  commentId: M:Microsoft.Owin.HeaderDictionary.GetCommaSeparatedValues(System.String)
+  id: GetCommaSeparatedValues(System.String)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: GetCommaSeparatedValues(String)
+  nameWithType: HeaderDictionary.GetCommaSeparatedValues(String)
+  fullName: Microsoft.Owin.HeaderDictionary.GetCommaSeparatedValues(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGet the associated values from the collection separated into individual values.\nQuoted values will not be split, and the quotes will be removed.\n"
+  syntax:
+    content: public IList<string> GetCommaSeparatedValues(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    return:
+      type: System.Collections.Generic.IList{System.String}
+      description: the associated values from the collection separated into individual values, or null if the key is not present.
+    content.vb: Public Function GetCommaSeparatedValues(key As String) As IList(Of String)
+  overload: Microsoft.Owin.HeaderDictionary.GetCommaSeparatedValues*
+  implements:
+  - Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.Append(System.String,System.String)
+  commentId: M:Microsoft.Owin.HeaderDictionary.Append(System.String,System.String)
+  id: Append(System.String,System.String)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Append(String, String)
+  nameWithType: HeaderDictionary.Append(String, String)
+  fullName: Microsoft.Owin.HeaderDictionary.Append(System.String, System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAdd a new value. Appends to the header if already present\n"
+  syntax:
+    content: public void Append(string key, string value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    - id: value
+      type: System.String
+      description: The header value.
+    content.vb: Public Sub Append(key As String, value As String)
+  overload: Microsoft.Owin.HeaderDictionary.Append*
+  implements:
+  - Microsoft.Owin.IHeaderDictionary.Append(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.AppendValues(System.String,System.String[])
+  commentId: M:Microsoft.Owin.HeaderDictionary.AppendValues(System.String,System.String[])
+  id: AppendValues(System.String,System.String[])
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: AppendValues(String, String[])
+  nameWithType: HeaderDictionary.AppendValues(String, String[])
+  fullName: Microsoft.Owin.HeaderDictionary.AppendValues(System.String, System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAdd new values. Each item remains a separate array entry.\n"
+  syntax:
+    content: public void AppendValues(string key, params string[] values)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    - id: values
+      type: System.String[]
+      description: The header values.
+    content.vb: Public Sub AppendValues(key As String, ParamArray values As String())
+  overload: Microsoft.Owin.HeaderDictionary.AppendValues*
+  implements:
+  - Microsoft.Owin.IHeaderDictionary.AppendValues(System.String,System.String[])
+  nameWithType.vb: HeaderDictionary.AppendValues(String, String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.AppendValues(System.String, System.String())
+  name.vb: AppendValues(String, String())
+- uid: Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])
+  commentId: M:Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])
+  id: AppendCommaSeparatedValues(System.String,System.String[])
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: AppendCommaSeparatedValues(String, String[])
+  nameWithType: HeaderDictionary.AppendCommaSeparatedValues(String, String[])
+  fullName: Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues(System.String, System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nQuotes any values containing comas, and then coma joins all of the values with any existing values.\n"
+  syntax:
+    content: public void AppendCommaSeparatedValues(string key, params string[] values)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    - id: values
+      type: System.String[]
+      description: The header values.
+    content.vb: Public Sub AppendCommaSeparatedValues(key As String, ParamArray values As String())
+  overload: Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues*
+  implements:
+  - Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])
+  nameWithType.vb: HeaderDictionary.AppendCommaSeparatedValues(String, String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues(System.String, System.String())
+  name.vb: AppendCommaSeparatedValues(String, String())
+- uid: Microsoft.Owin.HeaderDictionary.Set(System.String,System.String)
+  commentId: M:Microsoft.Owin.HeaderDictionary.Set(System.String,System.String)
+  id: Set(System.String,System.String)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Set(String, String)
+  nameWithType: HeaderDictionary.Set(String, String)
+  fullName: Microsoft.Owin.HeaderDictionary.Set(System.String, System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nSets a specific header value.\n"
+  syntax:
+    content: public void Set(string key, string value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    - id: value
+      type: System.String
+      description: The header value.
+    content.vb: Public Sub Set(key As String, value As String)
+  overload: Microsoft.Owin.HeaderDictionary.Set*
+  implements:
+  - Microsoft.Owin.IHeaderDictionary.Set(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.SetValues(System.String,System.String[])
+  commentId: M:Microsoft.Owin.HeaderDictionary.SetValues(System.String,System.String[])
+  id: SetValues(System.String,System.String[])
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: SetValues(String, String[])
+  nameWithType: HeaderDictionary.SetValues(String, String[])
+  fullName: Microsoft.Owin.HeaderDictionary.SetValues(System.String, System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nSets the specified header values without modification.\n"
+  syntax:
+    content: public void SetValues(string key, params string[] values)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    - id: values
+      type: System.String[]
+      description: The header values.
+    content.vb: Public Sub SetValues(key As String, ParamArray values As String())
+  overload: Microsoft.Owin.HeaderDictionary.SetValues*
+  implements:
+  - Microsoft.Owin.IHeaderDictionary.SetValues(System.String,System.String[])
+  nameWithType.vb: HeaderDictionary.SetValues(String, String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.SetValues(System.String, System.String())
+  name.vb: SetValues(String, String())
+- uid: Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])
+  commentId: M:Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])
+  id: SetCommaSeparatedValues(System.String,System.String[])
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: SetCommaSeparatedValues(String, String[])
+  nameWithType: HeaderDictionary.SetCommaSeparatedValues(String, String[])
+  fullName: Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues(System.String, System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nQuotes any values containing comas, and then coma joins all of the values.\n"
+  syntax:
+    content: public void SetCommaSeparatedValues(string key, params string[] values)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    - id: values
+      type: System.String[]
+      description: The header values.
+    content.vb: Public Sub SetCommaSeparatedValues(key As String, ParamArray values As String())
+  overload: Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues*
+  implements:
+  - Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])
+  nameWithType.vb: HeaderDictionary.SetCommaSeparatedValues(String, String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues(System.String, System.String())
+  name.vb: SetCommaSeparatedValues(String, String())
+- uid: Microsoft.Owin.HeaderDictionary.Add(System.String,System.String[])
+  commentId: M:Microsoft.Owin.HeaderDictionary.Add(System.String,System.String[])
+  id: Add(System.String,System.String[])
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Add(String, String[])
+  nameWithType: HeaderDictionary.Add(String, String[])
+  fullName: Microsoft.Owin.HeaderDictionary.Add(System.String, System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAdds the given header and values to the collection.\n"
+  syntax:
+    content: public void Add(string key, string[] value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    - id: value
+      type: System.String[]
+      description: The header values.
+    content.vb: Public Sub Add(key As String, value As String())
+  overload: Microsoft.Owin.HeaderDictionary.Add*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.Add(System.String,System.String[])
+  nameWithType.vb: HeaderDictionary.Add(String, String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.Add(System.String, System.String())
+  name.vb: Add(String, String())
+- uid: Microsoft.Owin.HeaderDictionary.ContainsKey(System.String)
+  commentId: M:Microsoft.Owin.HeaderDictionary.ContainsKey(System.String)
+  id: ContainsKey(System.String)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: ContainsKey(String)
+  nameWithType: HeaderDictionary.ContainsKey(String)
+  fullName: Microsoft.Owin.HeaderDictionary.ContainsKey(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nDetermines whether the <xref href=\"Microsoft.Owin.HeaderDictionary\" data-throw-if-not-resolved=\"false\"></xref> contains a specific key.\n"
+  syntax:
+    content: public bool ContainsKey(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key.
+    return:
+      type: System.Boolean
+      description: true if the <xref href="Microsoft.Owin.HeaderDictionary" data-throw-if-not-resolved="false"></xref> contains a specific key; otherwise, false.
+    content.vb: Public Function ContainsKey(key As String) As Boolean
+  overload: Microsoft.Owin.HeaderDictionary.ContainsKey*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.ContainsKey(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.Remove(System.String)
+  commentId: M:Microsoft.Owin.HeaderDictionary.Remove(System.String)
+  id: Remove(System.String)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Remove(String)
+  nameWithType: HeaderDictionary.Remove(String)
+  fullName: Microsoft.Owin.HeaderDictionary.Remove(System.String)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nRemoves the given header from the collection.\n"
+  syntax:
+    content: public bool Remove(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    return:
+      type: System.Boolean
+      description: true if the specified object was removed from the collection; otherwise, false.
+    content.vb: Public Function Remove(key As String) As Boolean
+  overload: Microsoft.Owin.HeaderDictionary.Remove*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.Remove(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.TryGetValue(System.String,System.String[]@)
+  commentId: M:Microsoft.Owin.HeaderDictionary.TryGetValue(System.String,System.String[]@)
+  id: TryGetValue(System.String,System.String[]@)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: TryGetValue(String, out String[])
+  nameWithType: HeaderDictionary.TryGetValue(String, out String[])
+  fullName: Microsoft.Owin.HeaderDictionary.TryGetValue(System.String, out System.String[])
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nRetrieves a value from the dictionary.\n"
+  syntax:
+    content: public bool TryGetValue(string key, out string[] value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    - id: value
+      type: System.String[]
+      description: The value.
+    return:
+      type: System.Boolean
+      description: true if the <xref href="Microsoft.Owin.HeaderDictionary" data-throw-if-not-resolved="false"></xref> contains the key; otherwise, false.
+    content.vb: Public Function TryGetValue(key As String, ByRef value As String()) As Boolean
+  overload: Microsoft.Owin.HeaderDictionary.TryGetValue*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.TryGetValue(System.String,System.String[]@)
+  nameWithType.vb: HeaderDictionary.TryGetValue(String, ByRef String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.TryGetValue(System.String, ByRef System.String())
+  name.vb: TryGetValue(String, ByRef String())
+- uid: Microsoft.Owin.HeaderDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  commentId: M:Microsoft.Owin.HeaderDictionary.Add(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  id: Add(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Add(KeyValuePair<String, String[]>)
+  nameWithType: HeaderDictionary.Add(KeyValuePair<String, String[]>)
+  fullName: Microsoft.Owin.HeaderDictionary.Add(System.Collections.Generic.KeyValuePair<System.String, System.String[]>)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nAdds a new list of items to the collection.\n"
+  syntax:
+    content: public void Add(KeyValuePair<string, string[]> item)
+    parameters:
+    - id: item
+      type: System.Collections.Generic.KeyValuePair{System.String,System.String[]}
+      description: The item to add.
+    content.vb: Public Sub Add(item As KeyValuePair(Of String, String()))
+  overload: Microsoft.Owin.HeaderDictionary.Add*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Add(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  nameWithType.vb: HeaderDictionary.Add(KeyValuePair(Of String, String()))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.Add(System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: Add(KeyValuePair(Of String, String()))
+- uid: Microsoft.Owin.HeaderDictionary.Clear
+  commentId: M:Microsoft.Owin.HeaderDictionary.Clear
+  id: Clear
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: HeaderDictionary.Clear()
+  fullName: Microsoft.Owin.HeaderDictionary.Clear()
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nClears the entire list of objects.\n"
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear
+  overload: Microsoft.Owin.HeaderDictionary.Clear*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Clear
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Owin.HeaderDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  commentId: M:Microsoft.Owin.HeaderDictionary.Contains(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  id: Contains(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Contains(KeyValuePair<String, String[]>)
+  nameWithType: HeaderDictionary.Contains(KeyValuePair<String, String[]>)
+  fullName: Microsoft.Owin.HeaderDictionary.Contains(System.Collections.Generic.KeyValuePair<System.String, System.String[]>)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nReturns a value indicating whether the specified object occurs within this collection.\n"
+  syntax:
+    content: public bool Contains(KeyValuePair<string, string[]> item)
+    parameters:
+    - id: item
+      type: System.Collections.Generic.KeyValuePair{System.String,System.String[]}
+      description: The item.
+    return:
+      type: System.Boolean
+      description: true if the specified object occurs within this collection; otherwise, false.
+    content.vb: Public Function Contains(item As KeyValuePair(Of String, String())) As Boolean
+  overload: Microsoft.Owin.HeaderDictionary.Contains*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Contains(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  nameWithType.vb: HeaderDictionary.Contains(KeyValuePair(Of String, String()))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.Contains(System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: Contains(KeyValuePair(Of String, String()))
+- uid: Microsoft.Owin.HeaderDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.String[]}[],System.Int32)
+  commentId: M:Microsoft.Owin.HeaderDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.String[]}[],System.Int32)
+  id: CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.String[]}[],System.Int32)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(KeyValuePair<String, String[]>[], Int32)
+  nameWithType: HeaderDictionary.CopyTo(KeyValuePair<String, String[]>[], Int32)
+  fullName: Microsoft.Owin.HeaderDictionary.CopyTo(System.Collections.Generic.KeyValuePair<System.String, System.String[]>[], System.Int32)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nCopies the <xref href=\"Microsoft.Owin.HeaderDictionary\" data-throw-if-not-resolved=\"false\"></xref> elements to a one-dimensional Array instance at the specified index.\n"
+  syntax:
+    content: public void CopyTo(KeyValuePair<string, string[]>[] array, int arrayIndex)
+    parameters:
+    - id: array
+      type: System.Collections.Generic.KeyValuePair{System.String,System.String[]}[]
+      description: The one-dimensional Array that is the destination of the specified objects copied from the <xref href="Microsoft.Owin.HeaderDictionary" data-throw-if-not-resolved="false"></xref>.
+    - id: arrayIndex
+      type: System.Int32
+      description: The zero-based index in <code data-dev-comment-type="paramref" class="paramref">array</code> at which copying begins.
+    content.vb: Public Sub CopyTo(array As KeyValuePair(Of String, String())(), arrayIndex As Integer)
+  overload: Microsoft.Owin.HeaderDictionary.CopyTo*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.String[]}[],System.Int32)
+  nameWithType.vb: HeaderDictionary.CopyTo(KeyValuePair(Of String, String())(), Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.CopyTo(System.Collections.Generic.KeyValuePair(Of System.String, System.String())(), System.Int32)
+  name.vb: CopyTo(KeyValuePair(Of String, String())(), Int32)
+- uid: Microsoft.Owin.HeaderDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  commentId: M:Microsoft.Owin.HeaderDictionary.Remove(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  id: Remove(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Remove(KeyValuePair<String, String[]>)
+  nameWithType: HeaderDictionary.Remove(KeyValuePair<String, String[]>)
+  fullName: Microsoft.Owin.HeaderDictionary.Remove(System.Collections.Generic.KeyValuePair<System.String, System.String[]>)
+  type: Method
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nRemoves the given item from the the collection.\n"
+  syntax:
+    content: public bool Remove(KeyValuePair<string, string[]> item)
+    parameters:
+    - id: item
+      type: System.Collections.Generic.KeyValuePair{System.String,System.String[]}
+      description: The item.
+    return:
+      type: System.Boolean
+      description: true if the specified object was removed from the collection; otherwise, false.
+    content.vb: Public Function Remove(item As KeyValuePair(Of String, String())) As Boolean
+  overload: Microsoft.Owin.HeaderDictionary.Remove*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Remove(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  nameWithType.vb: HeaderDictionary.Remove(KeyValuePair(Of String, String()))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.Remove(System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: Remove(KeyValuePair(Of String, String()))
+- uid: Microsoft.Owin.HeaderDictionary.Keys
+  commentId: P:Microsoft.Owin.HeaderDictionary.Keys
+  id: Keys
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Keys
+  nameWithType: HeaderDictionary.Keys
+  fullName: Microsoft.Owin.HeaderDictionary.Keys
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets an <xref href=\"System.Collections.ICollection\" data-throw-if-not-resolved=\"false\"></xref> that contains the keys in the <xref href=\"Microsoft.Owin.HeaderDictionary\" data-throw-if-not-resolved=\"false\"></xref>;.\n"
+  syntax:
+    content: public ICollection<string> Keys { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.String}
+      description: An <xref href="System.Collections.ICollection" data-throw-if-not-resolved="false"></xref> that contains the keys in the <xref href="Microsoft.Owin.HeaderDictionary" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Keys As ICollection(Of String)
+  overload: Microsoft.Owin.HeaderDictionary.Keys*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.Keys
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Owin.HeaderDictionary.Values
+  commentId: P:Microsoft.Owin.HeaderDictionary.Values
+  id: Values
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Values
+  nameWithType: HeaderDictionary.Values
+  fullName: Microsoft.Owin.HeaderDictionary.Values
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\n\n"
+  syntax:
+    content: public ICollection<string[]> Values { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{System.String[]}
+    content.vb: Public ReadOnly Property Values As ICollection(Of String())
+  overload: Microsoft.Owin.HeaderDictionary.Values*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.Values
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Owin.HeaderDictionary.Count
+  commentId: P:Microsoft.Owin.HeaderDictionary.Count
+  id: Count
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: HeaderDictionary.Count
+  fullName: Microsoft.Owin.HeaderDictionary.Count
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets the number of elements contained in the <xref href=\"Microsoft.Owin.HeaderDictionary\" data-throw-if-not-resolved=\"false\"></xref>;.\n"
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: The number of elements contained in the <xref href="Microsoft.Owin.HeaderDictionary" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: Microsoft.Owin.HeaderDictionary.Count*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Count
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Owin.HeaderDictionary.IsReadOnly
+  commentId: P:Microsoft.Owin.HeaderDictionary.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: HeaderDictionary.IsReadOnly
+  fullName: Microsoft.Owin.HeaderDictionary.IsReadOnly
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGets a value that indicates whether the <xref href=\"Microsoft.Owin.HeaderDictionary\" data-throw-if-not-resolved=\"false\"></xref> is in read-only mode.\n"
+  syntax:
+    content: public bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: true if the <xref href="Microsoft.Owin.HeaderDictionary" data-throw-if-not-resolved="false"></xref> is in read-only mode; otherwise, false.
+    content.vb: Public ReadOnly Property IsReadOnly As Boolean
+  overload: Microsoft.Owin.HeaderDictionary.IsReadOnly*
+  implements:
+  - System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.IsReadOnly
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Owin.HeaderDictionary.Item(System.String)
+  commentId: P:Microsoft.Owin.HeaderDictionary.Item(System.String)
+  id: Item(System.String)
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: Item[String]
+  nameWithType: HeaderDictionary.Item[String]
+  fullName: Microsoft.Owin.HeaderDictionary.Item[System.String]
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  summary: "\nGet or sets the associated value from the collection as a single string.\n"
+  syntax:
+    content: public string this[string key] { get; set; }
+    parameters:
+    - id: key
+      type: System.String
+      description: The header name.
+    return:
+      type: System.String
+      description: the associated value from the collection as a single string or null if the key is not present.
+    content.vb: Public Property Item(key As String) As String
+  overload: Microsoft.Owin.HeaderDictionary.Item*
+  implements:
+  - Microsoft.Owin.IHeaderDictionary.Item(System.String)
+  - Microsoft.Owin.IReadableStringCollection.Item(System.String)
+  nameWithType.vb: HeaderDictionary.Item(String)
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Owin.HeaderDictionary.Item(System.String)
+  name.vb: Item(String)
+- uid: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#Item(System.String)
+  commentId: P:Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#Item(System.String)
+  id: System#Collections#Generic#IDictionary{System#String,System#String[]}#Item(System.String)
+  isEii: true
+  parent: Microsoft.Owin.HeaderDictionary
+  langs:
+  - csharp
+  - vb
+  name: IDictionary<String, String[]>.Item[String]
+  nameWithType: HeaderDictionary.IDictionary<String, String[]>.Item[String]
+  fullName: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String, System.String[]>.Item[System.String]
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin
+  syntax:
+    content: string[] IDictionary<string, string[]>.this[] { get; set; }
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.String[]
+    content.vb: ReadOnly WriteOnly Property System.Collections.Generic.IDictionary<System.String,System.String[]>.Item(key As String) As String() Implements IDictionary(Of String, String()).this[]
+  overload: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#Item*
+  implements:
+  - System.Collections.Generic.IDictionary{System.String,System.String[]}.Item(System.String)
+  nameWithType.vb: HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.Item(String)
+  modifiers.csharp:
+  - get
+  - set
+  fullName.vb: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.Item(System.String)
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.String[]>.Item(String)
+references:
+- uid: Microsoft.Owin
+  commentId: N:Microsoft.Owin
+  isExternal: false
+  name: Microsoft.Owin
+  nameWithType: Microsoft.Owin
+  fullName: Microsoft.Owin
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Owin.IHeaderDictionary
+  commentId: T:Microsoft.Owin.IHeaderDictionary
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IHeaderDictionary
+  nameWithType: IHeaderDictionary
+  fullName: Microsoft.Owin.IHeaderDictionary
+- uid: Microsoft.Owin.IReadableStringCollection
+  commentId: T:Microsoft.Owin.IReadableStringCollection
+  parent: Microsoft.Owin
+  isExternal: true
+  name: IReadableStringCollection
+  nameWithType: IReadableStringCollection
+  fullName: Microsoft.Owin.IReadableStringCollection
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, String[]>
+  nameWithType: IDictionary<String, String[]>
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>
+  nameWithType.vb: IDictionary(Of String, String())
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String())
+  name.vb: IDictionary(Of String, String())
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  commentId: T:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<KeyValuePair<String, String[]>>
+  nameWithType: ICollection<KeyValuePair<String, String[]>>
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String()))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: ICollection(Of KeyValuePair(Of String, String()))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<KeyValuePair<String, String[]>>
+  nameWithType: IEnumerable<KeyValuePair<String, String[]>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, String()))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, String()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: false
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+- uid: Microsoft.Owin.HeaderDictionary.#ctor*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.#ctor
+  isExternal: true
+  name: HeaderDictionary
+  nameWithType: HeaderDictionary.HeaderDictionary
+  fullName: Microsoft.Owin.HeaderDictionary.HeaderDictionary
+- uid: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#get_Item*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#get_Item
+  isExternal: true
+  name: IDictionary<String, String[]>.get_Item
+  nameWithType: HeaderDictionary.IDictionary<String, String[]>.get_Item
+  fullName: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String, System.String[]>.get_Item
+  nameWithType.vb: HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.get_Item
+  fullName.vb: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.get_Item
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.String[]>.get_Item
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.get_Item(System.String)
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.String[]}.get_Item(System.String)
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.get_Item(`0)
+  name: get_Item(String)
+  nameWithType: IDictionary<String, String[]>.get_Item(String)
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.get_Item(System.String)
+  nameWithType.vb: IDictionary(Of String, String()).get_Item(String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).get_Item(System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.get_Item(`0)
+    name: get_Item
+    nameWithType: IDictionary<String, String[]>.get_Item
+    fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.get_Item(`0)
+    name: get_Item
+    nameWithType: IDictionary(Of String, String()).get_Item
+    fullName: System.Collections.Generic.IDictionary(Of System.String, System.String()).get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.String[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Collections.Generic.IDictionary`2.get_Item(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.get_Item(`0)
+  isExternal: true
+  name: get_Item(TKey)
+  nameWithType: IDictionary<TKey, TValue>.get_Item(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.get_Item(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).get_Item(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).get_Item(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.get_Item(`0)
+    name: get_Item
+    nameWithType: IDictionary<TKey, TValue>.get_Item
+    fullName: System.Collections.Generic.IDictionary<TKey, TValue>.get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.get_Item(`0)
+    name: get_Item
+    nameWithType: IDictionary(Of TKey, TValue).get_Item
+    fullName: System.Collections.Generic.IDictionary(Of TKey, TValue).get_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#set_Item*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#set_Item
+  isExternal: true
+  name: IDictionary<String, String[]>.set_Item
+  nameWithType: HeaderDictionary.IDictionary<String, String[]>.set_Item
+  fullName: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String, System.String[]>.set_Item
+  nameWithType.vb: HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.set_Item
+  fullName.vb: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.set_Item
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.String[]>.set_Item
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.set_Item(System.String,System.String[])
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.String[]}.set_Item(System.String,System.String[])
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.set_Item(`0,`1)
+  name: set_Item(String, String[])
+  nameWithType: IDictionary<String, String[]>.set_Item(String, String[])
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.set_Item(System.String, System.String[])
+  nameWithType.vb: IDictionary(Of String, String()).set_Item(String, String())
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).set_Item(System.String, System.String())
+  name.vb: set_Item(String, String())
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.set_Item(`0,`1)
+    name: set_Item
+    nameWithType: IDictionary<String, String[]>.set_Item
+    fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.set_Item(`0,`1)
+    name: set_Item
+    nameWithType: IDictionary(Of String, String()).set_Item
+    fullName: System.Collections.Generic.IDictionary(Of System.String, System.String()).set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2.set_Item(`0,`1)
+  commentId: M:System.Collections.Generic.IDictionary`2.set_Item(`0,`1)
+  isExternal: true
+  name: set_Item(TKey, TValue)
+  nameWithType: IDictionary<TKey, TValue>.set_Item(TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.set_Item(TKey, TValue)
+  nameWithType.vb: IDictionary(Of TKey, TValue).set_Item(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).set_Item(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.set_Item(`0,`1)
+    name: set_Item
+    nameWithType: IDictionary<TKey, TValue>.set_Item
+    fullName: System.Collections.Generic.IDictionary<TKey, TValue>.set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.set_Item(`0,`1)
+    name: set_Item
+    nameWithType: IDictionary(Of TKey, TValue).set_Item
+    fullName: System.Collections.Generic.IDictionary(Of TKey, TValue).set_Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.GetEnumerator*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.GetEnumerator
+  isExternal: true
+  name: GetEnumerator
+  nameWithType: HeaderDictionary.GetEnumerator
+  fullName: Microsoft.Owin.HeaderDictionary.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<KeyValuePair<String, String[]>>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, String())).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<KeyValuePair<String, String[]>>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of KeyValuePair(Of String, String())).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  commentId: T:System.Collections.Generic.IEnumerator{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<KeyValuePair<String, String[]>>
+  nameWithType: IEnumerator<KeyValuePair<String, String[]>>
+  fullName: System.Collections.Generic.IEnumerator<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>
+  nameWithType.vb: IEnumerator(Of KeyValuePair(Of String, String()))
+  fullName.vb: System.Collections.Generic.IEnumerator(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: IEnumerator(Of KeyValuePair(Of String, String()))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable<T>.GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable(Of T).GetEnumerator
+    fullName: System.Collections.Generic.IEnumerable(Of T).GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: System.Collections.Generic.IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.System#Collections#IEnumerable#GetEnumerator*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.System#Collections#IEnumerable#GetEnumerator
+  isExternal: true
+  name: IEnumerable.GetEnumerator
+  nameWithType: HeaderDictionary.IEnumerable.GetEnumerator
+  fullName: Microsoft.Owin.HeaderDictionary.System.Collections.IEnumerable.GetEnumerator
+  nameWithType.vb: HeaderDictionary.System.Collections.IEnumerable.GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+- uid: System.Collections.IEnumerable.GetEnumerator
+  commentId: M:System.Collections.IEnumerable.GetEnumerator
+  parent: System.Collections.IEnumerable
+  isExternal: true
+  name: GetEnumerator()
+  nameWithType: IEnumerable.GetEnumerator()
+  fullName: System.Collections.IEnumerable.GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.IEnumerable.GetEnumerator
+    name: GetEnumerator
+    nameWithType: IEnumerable.GetEnumerator
+    fullName: System.Collections.IEnumerable.GetEnumerator
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: Microsoft.Owin.HeaderDictionary.Get*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Get
+  isExternal: true
+  name: Get
+  nameWithType: HeaderDictionary.Get
+  fullName: Microsoft.Owin.HeaderDictionary.Get
+- uid: Microsoft.Owin.IReadableStringCollection.Get(System.String)
+  commentId: M:Microsoft.Owin.IReadableStringCollection.Get(System.String)
+  parent: Microsoft.Owin.IReadableStringCollection
+  isExternal: true
+  name: Get(String)
+  nameWithType: IReadableStringCollection.Get(String)
+  fullName: Microsoft.Owin.IReadableStringCollection.Get(System.String)
+  spec.csharp:
+  - uid: Microsoft.Owin.IReadableStringCollection.Get(System.String)
+    name: Get
+    nameWithType: IReadableStringCollection.Get
+    fullName: Microsoft.Owin.IReadableStringCollection.Get
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IReadableStringCollection.Get(System.String)
+    name: Get
+    nameWithType: IReadableStringCollection.Get
+    fullName: Microsoft.Owin.IReadableStringCollection.Get
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.GetValues*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.GetValues
+  isExternal: true
+  name: GetValues
+  nameWithType: HeaderDictionary.GetValues
+  fullName: Microsoft.Owin.HeaderDictionary.GetValues
+- uid: Microsoft.Owin.IReadableStringCollection.GetValues(System.String)
+  commentId: M:Microsoft.Owin.IReadableStringCollection.GetValues(System.String)
+  parent: Microsoft.Owin.IReadableStringCollection
+  isExternal: true
+  name: GetValues(String)
+  nameWithType: IReadableStringCollection.GetValues(String)
+  fullName: Microsoft.Owin.IReadableStringCollection.GetValues(System.String)
+  spec.csharp:
+  - uid: Microsoft.Owin.IReadableStringCollection.GetValues(System.String)
+    name: GetValues
+    nameWithType: IReadableStringCollection.GetValues
+    fullName: Microsoft.Owin.IReadableStringCollection.GetValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IReadableStringCollection.GetValues(System.String)
+    name: GetValues
+    nameWithType: IReadableStringCollection.GetValues
+    fullName: Microsoft.Owin.IReadableStringCollection.GetValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<String>
+  nameWithType: IList<String>
+  fullName: System.Collections.Generic.IList<System.String>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of System.String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.GetCommaSeparatedValues*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.GetCommaSeparatedValues
+  isExternal: true
+  name: GetCommaSeparatedValues
+  nameWithType: HeaderDictionary.GetCommaSeparatedValues
+  fullName: Microsoft.Owin.HeaderDictionary.GetCommaSeparatedValues
+- uid: Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues(System.String)
+  commentId: M:Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues(System.String)
+  parent: Microsoft.Owin.IHeaderDictionary
+  isExternal: true
+  name: GetCommaSeparatedValues(String)
+  nameWithType: IHeaderDictionary.GetCommaSeparatedValues(String)
+  fullName: Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues(System.String)
+  spec.csharp:
+  - uid: Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues(System.String)
+    name: GetCommaSeparatedValues
+    nameWithType: IHeaderDictionary.GetCommaSeparatedValues
+    fullName: Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues(System.String)
+    name: GetCommaSeparatedValues
+    nameWithType: IHeaderDictionary.GetCommaSeparatedValues
+    fullName: Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.Append*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Append
+  isExternal: true
+  name: Append
+  nameWithType: HeaderDictionary.Append
+  fullName: Microsoft.Owin.HeaderDictionary.Append
+- uid: Microsoft.Owin.IHeaderDictionary.Append(System.String,System.String)
+  commentId: M:Microsoft.Owin.IHeaderDictionary.Append(System.String,System.String)
+  parent: Microsoft.Owin.IHeaderDictionary
+  isExternal: true
+  name: Append(String, String)
+  nameWithType: IHeaderDictionary.Append(String, String)
+  fullName: Microsoft.Owin.IHeaderDictionary.Append(System.String, System.String)
+  spec.csharp:
+  - uid: Microsoft.Owin.IHeaderDictionary.Append(System.String,System.String)
+    name: Append
+    nameWithType: IHeaderDictionary.Append
+    fullName: Microsoft.Owin.IHeaderDictionary.Append
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IHeaderDictionary.Append(System.String,System.String)
+    name: Append
+    nameWithType: IHeaderDictionary.Append
+    fullName: Microsoft.Owin.IHeaderDictionary.Append
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.AppendValues*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.AppendValues
+  isExternal: true
+  name: AppendValues
+  nameWithType: HeaderDictionary.AppendValues
+  fullName: Microsoft.Owin.HeaderDictionary.AppendValues
+- uid: Microsoft.Owin.IHeaderDictionary.AppendValues(System.String,System.String[])
+  commentId: M:Microsoft.Owin.IHeaderDictionary.AppendValues(System.String,System.String[])
+  parent: Microsoft.Owin.IHeaderDictionary
+  isExternal: true
+  name: AppendValues(String, String[])
+  nameWithType: IHeaderDictionary.AppendValues(String, String[])
+  fullName: Microsoft.Owin.IHeaderDictionary.AppendValues(System.String, System.String[])
+  nameWithType.vb: IHeaderDictionary.AppendValues(String, String())
+  fullName.vb: Microsoft.Owin.IHeaderDictionary.AppendValues(System.String, System.String())
+  name.vb: AppendValues(String, String())
+  spec.csharp:
+  - uid: Microsoft.Owin.IHeaderDictionary.AppendValues(System.String,System.String[])
+    name: AppendValues
+    nameWithType: IHeaderDictionary.AppendValues
+    fullName: Microsoft.Owin.IHeaderDictionary.AppendValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IHeaderDictionary.AppendValues(System.String,System.String[])
+    name: AppendValues
+    nameWithType: IHeaderDictionary.AppendValues
+    fullName: Microsoft.Owin.IHeaderDictionary.AppendValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues
+  isExternal: true
+  name: AppendCommaSeparatedValues
+  nameWithType: HeaderDictionary.AppendCommaSeparatedValues
+  fullName: Microsoft.Owin.HeaderDictionary.AppendCommaSeparatedValues
+- uid: Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])
+  commentId: M:Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])
+  parent: Microsoft.Owin.IHeaderDictionary
+  isExternal: true
+  name: AppendCommaSeparatedValues(String, String[])
+  nameWithType: IHeaderDictionary.AppendCommaSeparatedValues(String, String[])
+  fullName: Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues(System.String, System.String[])
+  nameWithType.vb: IHeaderDictionary.AppendCommaSeparatedValues(String, String())
+  fullName.vb: Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues(System.String, System.String())
+  name.vb: AppendCommaSeparatedValues(String, String())
+  spec.csharp:
+  - uid: Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])
+    name: AppendCommaSeparatedValues
+    nameWithType: IHeaderDictionary.AppendCommaSeparatedValues
+    fullName: Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])
+    name: AppendCommaSeparatedValues
+    nameWithType: IHeaderDictionary.AppendCommaSeparatedValues
+    fullName: Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.Set*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Set
+  isExternal: true
+  name: Set
+  nameWithType: HeaderDictionary.Set
+  fullName: Microsoft.Owin.HeaderDictionary.Set
+- uid: Microsoft.Owin.IHeaderDictionary.Set(System.String,System.String)
+  commentId: M:Microsoft.Owin.IHeaderDictionary.Set(System.String,System.String)
+  parent: Microsoft.Owin.IHeaderDictionary
+  isExternal: true
+  name: Set(String, String)
+  nameWithType: IHeaderDictionary.Set(String, String)
+  fullName: Microsoft.Owin.IHeaderDictionary.Set(System.String, System.String)
+  spec.csharp:
+  - uid: Microsoft.Owin.IHeaderDictionary.Set(System.String,System.String)
+    name: Set
+    nameWithType: IHeaderDictionary.Set
+    fullName: Microsoft.Owin.IHeaderDictionary.Set
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IHeaderDictionary.Set(System.String,System.String)
+    name: Set
+    nameWithType: IHeaderDictionary.Set
+    fullName: Microsoft.Owin.IHeaderDictionary.Set
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.SetValues*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.SetValues
+  isExternal: true
+  name: SetValues
+  nameWithType: HeaderDictionary.SetValues
+  fullName: Microsoft.Owin.HeaderDictionary.SetValues
+- uid: Microsoft.Owin.IHeaderDictionary.SetValues(System.String,System.String[])
+  commentId: M:Microsoft.Owin.IHeaderDictionary.SetValues(System.String,System.String[])
+  parent: Microsoft.Owin.IHeaderDictionary
+  isExternal: true
+  name: SetValues(String, String[])
+  nameWithType: IHeaderDictionary.SetValues(String, String[])
+  fullName: Microsoft.Owin.IHeaderDictionary.SetValues(System.String, System.String[])
+  nameWithType.vb: IHeaderDictionary.SetValues(String, String())
+  fullName.vb: Microsoft.Owin.IHeaderDictionary.SetValues(System.String, System.String())
+  name.vb: SetValues(String, String())
+  spec.csharp:
+  - uid: Microsoft.Owin.IHeaderDictionary.SetValues(System.String,System.String[])
+    name: SetValues
+    nameWithType: IHeaderDictionary.SetValues
+    fullName: Microsoft.Owin.IHeaderDictionary.SetValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IHeaderDictionary.SetValues(System.String,System.String[])
+    name: SetValues
+    nameWithType: IHeaderDictionary.SetValues
+    fullName: Microsoft.Owin.IHeaderDictionary.SetValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues
+  isExternal: true
+  name: SetCommaSeparatedValues
+  nameWithType: HeaderDictionary.SetCommaSeparatedValues
+  fullName: Microsoft.Owin.HeaderDictionary.SetCommaSeparatedValues
+- uid: Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])
+  commentId: M:Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])
+  parent: Microsoft.Owin.IHeaderDictionary
+  isExternal: true
+  name: SetCommaSeparatedValues(String, String[])
+  nameWithType: IHeaderDictionary.SetCommaSeparatedValues(String, String[])
+  fullName: Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues(System.String, System.String[])
+  nameWithType.vb: IHeaderDictionary.SetCommaSeparatedValues(String, String())
+  fullName.vb: Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues(System.String, System.String())
+  name.vb: SetCommaSeparatedValues(String, String())
+  spec.csharp:
+  - uid: Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])
+    name: SetCommaSeparatedValues
+    nameWithType: IHeaderDictionary.SetCommaSeparatedValues
+    fullName: Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])
+    name: SetCommaSeparatedValues
+    nameWithType: IHeaderDictionary.SetCommaSeparatedValues
+    fullName: Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.Add*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Add
+  isExternal: true
+  name: Add
+  nameWithType: HeaderDictionary.Add
+  fullName: Microsoft.Owin.HeaderDictionary.Add
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.Add(System.String,System.String[])
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.String[]}.Add(System.String,System.String[])
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  name: Add(String, String[])
+  nameWithType: IDictionary<String, String[]>.Add(String, String[])
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.Add(System.String, System.String[])
+  nameWithType.vb: IDictionary(Of String, String()).Add(String, String())
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).Add(System.String, System.String())
+  name.vb: Add(String, String())
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    nameWithType: IDictionary<String, String[]>.Add
+    fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    nameWithType: IDictionary(Of String, String()).Add
+    fullName: System.Collections.Generic.IDictionary(Of System.String, System.String()).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  commentId: M:System.Collections.Generic.IDictionary`2.Add(`0,`1)
+  isExternal: true
+  name: Add(TKey, TValue)
+  nameWithType: IDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: IDictionary(Of TKey, TValue).Add(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Add(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    nameWithType: IDictionary<TKey, TValue>.Add
+    fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Add(`0,`1)
+    name: Add
+    nameWithType: IDictionary(Of TKey, TValue).Add
+    fullName: System.Collections.Generic.IDictionary(Of TKey, TValue).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.ContainsKey*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.ContainsKey
+  isExternal: true
+  name: ContainsKey
+  nameWithType: HeaderDictionary.ContainsKey
+  fullName: Microsoft.Owin.HeaderDictionary.ContainsKey
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.ContainsKey(System.String)
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.String[]}.ContainsKey(System.String)
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  name: ContainsKey(String)
+  nameWithType: IDictionary<String, String[]>.ContainsKey(String)
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.ContainsKey(System.String)
+  nameWithType.vb: IDictionary(Of String, String()).ContainsKey(String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).ContainsKey(System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    nameWithType: IDictionary<String, String[]>.ContainsKey
+    fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.ContainsKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    nameWithType: IDictionary(Of String, String()).ContainsKey
+    fullName: System.Collections.Generic.IDictionary(Of System.String, System.String()).ContainsKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+  isExternal: true
+  name: ContainsKey(TKey)
+  nameWithType: IDictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).ContainsKey(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).ContainsKey(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    nameWithType: IDictionary<TKey, TValue>.ContainsKey
+    fullName: System.Collections.Generic.IDictionary<TKey, TValue>.ContainsKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.ContainsKey(`0)
+    name: ContainsKey
+    nameWithType: IDictionary(Of TKey, TValue).ContainsKey
+    fullName: System.Collections.Generic.IDictionary(Of TKey, TValue).ContainsKey
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.Remove*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Remove
+  isExternal: true
+  name: Remove
+  nameWithType: HeaderDictionary.Remove
+  fullName: Microsoft.Owin.HeaderDictionary.Remove
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.Remove(System.String)
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.String[]}.Remove(System.String)
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.Remove(`0)
+  name: Remove(String)
+  nameWithType: IDictionary<String, String[]>.Remove(String)
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.Remove(System.String)
+  nameWithType.vb: IDictionary(Of String, String()).Remove(String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).Remove(System.String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    nameWithType: IDictionary<String, String[]>.Remove
+    fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    nameWithType: IDictionary(Of String, String()).Remove
+    fullName: System.Collections.Generic.IDictionary(Of System.String, System.String()).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+  commentId: M:System.Collections.Generic.IDictionary`2.Remove(`0)
+  isExternal: true
+  name: Remove(TKey)
+  nameWithType: IDictionary<TKey, TValue>.Remove(TKey)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: IDictionary(Of TKey, TValue).Remove(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Remove(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    nameWithType: IDictionary<TKey, TValue>.Remove
+    fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Remove(`0)
+    name: Remove
+    nameWithType: IDictionary(Of TKey, TValue).Remove
+    fullName: System.Collections.Generic.IDictionary(Of TKey, TValue).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.TryGetValue*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.TryGetValue
+  isExternal: true
+  name: TryGetValue
+  nameWithType: HeaderDictionary.TryGetValue
+  fullName: Microsoft.Owin.HeaderDictionary.TryGetValue
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.TryGetValue(System.String,System.String[]@)
+  commentId: M:System.Collections.Generic.IDictionary{System.String,System.String[]}.TryGetValue(System.String,System.String[]@)
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  name: TryGetValue(String, String[])
+  nameWithType: IDictionary<String, String[]>.TryGetValue(String, String[])
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.TryGetValue(System.String, System.String[])
+  nameWithType.vb: IDictionary(Of String, String()).TryGetValue(String, String())
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).TryGetValue(System.String, System.String())
+  name.vb: TryGetValue(String, String())
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    nameWithType: IDictionary<String, String[]>.TryGetValue
+    fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.TryGetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    nameWithType: IDictionary(Of String, String()).TryGetValue
+    fullName: System.Collections.Generic.IDictionary(Of System.String, System.String()).TryGetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  commentId: M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+  isExternal: true
+  name: TryGetValue(TKey, TValue)
+  nameWithType: IDictionary<TKey, TValue>.TryGetValue(TKey, TValue)
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.TryGetValue(TKey, TValue)
+  nameWithType.vb: IDictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).TryGetValue(TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    nameWithType: IDictionary<TKey, TValue>.TryGetValue
+    fullName: System.Collections.Generic.IDictionary<TKey, TValue>.TryGetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)
+    name: TryGetValue
+    nameWithType: IDictionary(Of TKey, TValue).TryGetValue
+    fullName: System.Collections.Generic.IDictionary(Of TKey, TValue).TryGetValue
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Add(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Add(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  definition: System.Collections.Generic.ICollection`1.Add(`0)
+  name: Add(KeyValuePair<String, String[]>)
+  nameWithType: ICollection<KeyValuePair<String, String[]>>.Add(KeyValuePair<String, String[]>)
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Add(System.Collections.Generic.KeyValuePair<System.String, System.String[]>)
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String())).Add(KeyValuePair(Of String, String()))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Add(System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: Add(KeyValuePair(Of String, String()))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<KeyValuePair<String, String[]>>.Add
+    fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of KeyValuePair(Of String, String())).Add
+    fullName: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair{System.String,System.String[]}
+  commentId: T:System.Collections.Generic.KeyValuePair{System.String,System.String[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  name: KeyValuePair<String, String[]>
+  nameWithType: KeyValuePair<String, String[]>
+  fullName: System.Collections.Generic.KeyValuePair<System.String, System.String[]>
+  nameWithType.vb: KeyValuePair(Of String, String())
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of System.String, System.String())
+  name.vb: KeyValuePair(Of String, String())
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Add(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Add(`0)
+  isExternal: true
+  name: Add(T)
+  nameWithType: ICollection<T>.Add(T)
+  fullName: System.Collections.Generic.ICollection<T>.Add(T)
+  nameWithType.vb: ICollection(Of T).Add(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Add(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection<T>.Add
+    fullName: System.Collections.Generic.ICollection<T>.Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Add(`0)
+    name: Add
+    nameWithType: ICollection(Of T).Add
+    fullName: System.Collections.Generic.ICollection(Of T).Add
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair`2
+  commentId: T:System.Collections.Generic.KeyValuePair`2
+  isExternal: true
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.Clear*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Clear
+  isExternal: true
+  name: Clear
+  nameWithType: HeaderDictionary.Clear
+  fullName: Microsoft.Owin.HeaderDictionary.Clear
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Clear
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Clear
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  definition: System.Collections.Generic.ICollection`1.Clear
+  name: Clear()
+  nameWithType: ICollection<KeyValuePair<String, String[]>>.Clear()
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Clear()
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String())).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<KeyValuePair<String, String[]>>.Clear
+    fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of KeyValuePair(Of String, String())).Clear
+    fullName: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Clear
+  commentId: M:System.Collections.Generic.ICollection`1.Clear
+  isExternal: true
+  name: Clear()
+  nameWithType: ICollection<T>.Clear()
+  fullName: System.Collections.Generic.ICollection<T>.Clear()
+  nameWithType.vb: ICollection(Of T).Clear()
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Clear()
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection<T>.Clear
+    fullName: System.Collections.Generic.ICollection<T>.Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Clear
+    name: Clear
+    nameWithType: ICollection(Of T).Clear
+    fullName: System.Collections.Generic.ICollection(Of T).Clear
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.Contains*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Contains
+  isExternal: true
+  name: Contains
+  nameWithType: HeaderDictionary.Contains
+  fullName: Microsoft.Owin.HeaderDictionary.Contains
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Contains(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Contains(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  definition: System.Collections.Generic.ICollection`1.Contains(`0)
+  name: Contains(KeyValuePair<String, String[]>)
+  nameWithType: ICollection<KeyValuePair<String, String[]>>.Contains(KeyValuePair<String, String[]>)
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Contains(System.Collections.Generic.KeyValuePair<System.String, System.String[]>)
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String())).Contains(KeyValuePair(Of String, String()))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Contains(System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: Contains(KeyValuePair(Of String, String()))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<KeyValuePair<String, String[]>>.Contains
+    fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of KeyValuePair(Of String, String())).Contains
+    fullName: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Contains(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Contains(`0)
+  isExternal: true
+  name: Contains(T)
+  nameWithType: ICollection<T>.Contains(T)
+  fullName: System.Collections.Generic.ICollection<T>.Contains(T)
+  nameWithType.vb: ICollection(Of T).Contains(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection<T>.Contains
+    fullName: System.Collections.Generic.ICollection<T>.Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Contains(`0)
+    name: Contains
+    nameWithType: ICollection(Of T).Contains
+    fullName: System.Collections.Generic.ICollection(Of T).Contains
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.CopyTo*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.CopyTo
+  isExternal: true
+  name: CopyTo
+  nameWithType: HeaderDictionary.CopyTo
+  fullName: Microsoft.Owin.HeaderDictionary.CopyTo
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.String[]}[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.String[]}[],System.Int32)
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  definition: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(KeyValuePair<String, String[]>[], Int32)
+  nameWithType: ICollection<KeyValuePair<String, String[]>>.CopyTo(KeyValuePair<String, String[]>[], Int32)
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.CopyTo(System.Collections.Generic.KeyValuePair<System.String, System.String[]>[], System.Int32)
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String())).CopyTo(KeyValuePair(Of String, String())(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).CopyTo(System.Collections.Generic.KeyValuePair(Of System.String, System.String())(), System.Int32)
+  name.vb: CopyTo(KeyValuePair(Of String, String())(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<KeyValuePair<String, String[]>>.CopyTo
+    fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of KeyValuePair(Of String, String())).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.KeyValuePair{System.String,System.String[]}[]
+  name: KeyValuePair<String, String[]>[]
+  nameWithType: KeyValuePair<String, String[]>[]
+  fullName: System.Collections.Generic.KeyValuePair<System.String, System.String[]>[]
+  nameWithType.vb: KeyValuePair(Of String, String())()
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of System.String, System.String())()
+  name.vb: KeyValuePair(Of String, String())()
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  name: CopyTo(T[], Int32)
+  nameWithType: ICollection<T>.CopyTo(T[], Int32)
+  fullName: System.Collections.Generic.ICollection<T>.CopyTo(T[], System.Int32)
+  nameWithType.vb: ICollection(Of T).CopyTo(T(), Int32)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).CopyTo(T(), System.Int32)
+  name.vb: CopyTo(T(), Int32)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection<T>.CopyTo
+    fullName: System.Collections.Generic.ICollection<T>.CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    nameWithType: ICollection(Of T).CopyTo
+    fullName: System.Collections.Generic.ICollection(Of T).CopyTo
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Remove(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  commentId: M:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Remove(System.Collections.Generic.KeyValuePair{System.String,System.String[]})
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  definition: System.Collections.Generic.ICollection`1.Remove(`0)
+  name: Remove(KeyValuePair<String, String[]>)
+  nameWithType: ICollection<KeyValuePair<String, String[]>>.Remove(KeyValuePair<String, String[]>)
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Remove(System.Collections.Generic.KeyValuePair<System.String, System.String[]>)
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String())).Remove(KeyValuePair(Of String, String()))
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Remove(System.Collections.Generic.KeyValuePair(Of System.String, System.String()))
+  name.vb: Remove(KeyValuePair(Of String, String()))
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<KeyValuePair<String, String[]>>.Remove
+    fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of KeyValuePair(Of String, String())).Remove
+    fullName: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: System.Collections.Generic.KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1.Remove(`0)
+  commentId: M:System.Collections.Generic.ICollection`1.Remove(`0)
+  isExternal: true
+  name: Remove(T)
+  nameWithType: ICollection<T>.Remove(T)
+  fullName: System.Collections.Generic.ICollection<T>.Remove(T)
+  nameWithType.vb: ICollection(Of T).Remove(T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Remove(T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection<T>.Remove
+    fullName: System.Collections.Generic.ICollection<T>.Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1.Remove(`0)
+    name: Remove
+    nameWithType: ICollection(Of T).Remove
+    fullName: System.Collections.Generic.ICollection(Of T).Remove
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.Keys*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Keys
+  isExternal: true
+  name: Keys
+  nameWithType: HeaderDictionary.Keys
+  fullName: Microsoft.Owin.HeaderDictionary.Keys
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.Keys
+  commentId: P:System.Collections.Generic.IDictionary{System.String,System.String[]}.Keys
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.Keys
+  name: Keys
+  nameWithType: IDictionary<String, String[]>.Keys
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.Keys
+  nameWithType.vb: IDictionary(Of String, String()).Keys
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).Keys
+- uid: System.Collections.Generic.ICollection{System.String}
+  commentId: T:System.Collections.Generic.ICollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<String>
+  nameWithType: ICollection<String>
+  fullName: System.Collections.Generic.ICollection<System.String>
+  nameWithType.vb: ICollection(Of String)
+  fullName.vb: System.Collections.Generic.ICollection(Of System.String)
+  name.vb: ICollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2.Keys
+  commentId: P:System.Collections.Generic.IDictionary`2.Keys
+  isExternal: true
+  name: Keys
+  nameWithType: IDictionary<TKey, TValue>.Keys
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Keys
+  nameWithType.vb: IDictionary(Of TKey, TValue).Keys
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Keys
+- uid: Microsoft.Owin.HeaderDictionary.Values*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Values
+  isExternal: true
+  name: Values
+  nameWithType: HeaderDictionary.Values
+  fullName: Microsoft.Owin.HeaderDictionary.Values
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.Values
+  commentId: P:System.Collections.Generic.IDictionary{System.String,System.String[]}.Values
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.Values
+  name: Values
+  nameWithType: IDictionary<String, String[]>.Values
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.Values
+  nameWithType.vb: IDictionary(Of String, String()).Values
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).Values
+- uid: System.Collections.Generic.ICollection{System.String[]}
+  commentId: T:System.Collections.Generic.ICollection{System.String[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<String[]>
+  nameWithType: ICollection<String[]>
+  fullName: System.Collections.Generic.ICollection<System.String[]>
+  nameWithType.vb: ICollection(Of String())
+  fullName.vb: System.Collections.Generic.ICollection(Of System.String())
+  name.vb: ICollection(Of String())
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2.Values
+  commentId: P:System.Collections.Generic.IDictionary`2.Values
+  isExternal: true
+  name: Values
+  nameWithType: IDictionary<TKey, TValue>.Values
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Values
+  nameWithType.vb: IDictionary(Of TKey, TValue).Values
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Values
+- uid: Microsoft.Owin.HeaderDictionary.Count*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Count
+  isExternal: true
+  name: Count
+  nameWithType: HeaderDictionary.Count
+  fullName: Microsoft.Owin.HeaderDictionary.Count
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Count
+  commentId: P:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.Count
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  definition: System.Collections.Generic.ICollection`1.Count
+  name: Count
+  nameWithType: ICollection<KeyValuePair<String, String[]>>.Count
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.Count
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String())).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).Count
+- uid: System.Collections.Generic.ICollection`1.Count
+  commentId: P:System.Collections.Generic.ICollection`1.Count
+  isExternal: true
+  name: Count
+  nameWithType: ICollection<T>.Count
+  fullName: System.Collections.Generic.ICollection<T>.Count
+  nameWithType.vb: ICollection(Of T).Count
+  fullName.vb: System.Collections.Generic.ICollection(Of T).Count
+- uid: Microsoft.Owin.HeaderDictionary.IsReadOnly*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: HeaderDictionary.IsReadOnly
+  fullName: Microsoft.Owin.HeaderDictionary.IsReadOnly
+- uid: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}.IsReadOnly
+  parent: System.Collections.Generic.ICollection{System.Collections.Generic.KeyValuePair{System.String,System.String[]}}
+  definition: System.Collections.Generic.ICollection`1.IsReadOnly
+  name: IsReadOnly
+  nameWithType: ICollection<KeyValuePair<String, String[]>>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<System.Collections.Generic.KeyValuePair<System.String, System.String[]>>.IsReadOnly
+  nameWithType.vb: ICollection(Of KeyValuePair(Of String, String())).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of System.Collections.Generic.KeyValuePair(Of System.String, System.String())).IsReadOnly
+- uid: System.Collections.Generic.ICollection`1.IsReadOnly
+  commentId: P:System.Collections.Generic.ICollection`1.IsReadOnly
+  isExternal: true
+  name: IsReadOnly
+  nameWithType: ICollection<T>.IsReadOnly
+  fullName: System.Collections.Generic.ICollection<T>.IsReadOnly
+  nameWithType.vb: ICollection(Of T).IsReadOnly
+  fullName.vb: System.Collections.Generic.ICollection(Of T).IsReadOnly
+- uid: Microsoft.Owin.HeaderDictionary.Item*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.Item
+  isExternal: true
+  name: Item
+  nameWithType: HeaderDictionary.Item
+  fullName: Microsoft.Owin.HeaderDictionary.Item
+- uid: Microsoft.Owin.IHeaderDictionary.Item(System.String)
+  commentId: P:Microsoft.Owin.IHeaderDictionary.Item(System.String)
+  parent: Microsoft.Owin.IHeaderDictionary
+  isExternal: true
+  name: Item[String]
+  nameWithType: IHeaderDictionary.Item[String]
+  fullName: Microsoft.Owin.IHeaderDictionary.Item[System.String]
+  nameWithType.vb: IHeaderDictionary.Item(String)
+  fullName.vb: Microsoft.Owin.IHeaderDictionary.Item(System.String)
+  name.vb: Item(String)
+  spec.csharp:
+  - uid: Microsoft.Owin.IHeaderDictionary.Item(System.String)
+    name: Item
+    nameWithType: IHeaderDictionary.Item
+    fullName: Microsoft.Owin.IHeaderDictionary.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: Microsoft.Owin.IHeaderDictionary.Item(System.String)
+    name: Item
+    nameWithType: IHeaderDictionary.Item
+    fullName: Microsoft.Owin.IHeaderDictionary.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.IReadableStringCollection.Item(System.String)
+  commentId: P:Microsoft.Owin.IReadableStringCollection.Item(System.String)
+  parent: Microsoft.Owin.IReadableStringCollection
+  isExternal: true
+  name: Item[String]
+  nameWithType: IReadableStringCollection.Item[String]
+  fullName: Microsoft.Owin.IReadableStringCollection.Item[System.String]
+  nameWithType.vb: IReadableStringCollection.Item(String)
+  fullName.vb: Microsoft.Owin.IReadableStringCollection.Item(System.String)
+  name.vb: Item(String)
+  spec.csharp:
+  - uid: Microsoft.Owin.IReadableStringCollection.Item(System.String)
+    name: Item
+    nameWithType: IReadableStringCollection.Item
+    fullName: Microsoft.Owin.IReadableStringCollection.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: Microsoft.Owin.IReadableStringCollection.Item(System.String)
+    name: Item
+    nameWithType: IReadableStringCollection.Item
+    fullName: Microsoft.Owin.IReadableStringCollection.Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#Item*
+  commentId: Overload:Microsoft.Owin.HeaderDictionary.System#Collections#Generic#IDictionary{System#String,System#String[]}#Item
+  isExternal: true
+  name: IDictionary<String, String[]>.Item
+  nameWithType: HeaderDictionary.IDictionary<String, String[]>.Item
+  fullName: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String, System.String[]>.Item
+  nameWithType.vb: HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.Item
+  fullName.vb: Microsoft.Owin.HeaderDictionary.System.Collections.Generic.IDictionary<System.String,System.String[]>.Item
+  name.vb: System.Collections.Generic.IDictionary<System.String,System.String[]>.Item
+- uid: System.Collections.Generic.IDictionary{System.String,System.String[]}.Item(System.String)
+  commentId: P:System.Collections.Generic.IDictionary{System.String,System.String[]}.Item(System.String)
+  parent: System.Collections.Generic.IDictionary{System.String,System.String[]}
+  definition: System.Collections.Generic.IDictionary`2.Item(`0)
+  name: Item[String]
+  nameWithType: IDictionary<String, String[]>.Item[String]
+  fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.Item[System.String]
+  nameWithType.vb: IDictionary(Of String, String()).Item(String)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, System.String()).Item(System.String)
+  name.vb: Item(String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Item(`0)
+    name: Item
+    nameWithType: IDictionary<String, String[]>.Item
+    fullName: System.Collections.Generic.IDictionary<System.String, System.String[]>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Item(`0)
+    name: Item
+    nameWithType: IDictionary(Of String, String()).Item
+    fullName: System.Collections.Generic.IDictionary(Of System.String, System.String()).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2.Item(`0)
+  commentId: P:System.Collections.Generic.IDictionary`2.Item(`0)
+  isExternal: true
+  name: Item[TKey]
+  nameWithType: IDictionary<TKey, TValue>.Item[TKey]
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Item[TKey]
+  nameWithType.vb: IDictionary(Of TKey, TValue).Item(TKey)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue).Item(TKey)
+  name.vb: Item(TKey)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2.Item(`0)
+    name: Item
+    nameWithType: IDictionary<TKey, TValue>.Item
+    fullName: System.Collections.Generic.IDictionary<TKey, TValue>.Item
+    isExternal: true
+  - name: '['
+    nameWithType: '['
+    fullName: '['
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ']'
+    nameWithType: ']'
+    fullName: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2.Item(`0)
+    name: Item
+    nameWithType: IDictionary(Of TKey, TValue).Item
+    fullName: System.Collections.Generic.IDictionary(Of TKey, TValue).Item
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: )
+    nameWithType: )
+    fullName: )

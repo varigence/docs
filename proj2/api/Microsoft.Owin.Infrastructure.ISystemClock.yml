@@ -1,0 +1,86 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Owin.Infrastructure.ISystemClock
+  commentId: T:Microsoft.Owin.Infrastructure.ISystemClock
+  id: ISystemClock
+  parent: Microsoft.Owin.Infrastructure
+  children:
+  - Microsoft.Owin.Infrastructure.ISystemClock.UtcNow
+  langs:
+  - csharp
+  - vb
+  name: ISystemClock
+  nameWithType: ISystemClock
+  fullName: Microsoft.Owin.Infrastructure.ISystemClock
+  type: Interface
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Infrastructure
+  summary: "\nAbstracts the system clock to facilitate testing.\n"
+  syntax:
+    content: public interface ISystemClock
+    content.vb: Public Interface ISystemClock
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Owin.Infrastructure.ISystemClock.UtcNow
+  commentId: P:Microsoft.Owin.Infrastructure.ISystemClock.UtcNow
+  id: UtcNow
+  parent: Microsoft.Owin.Infrastructure.ISystemClock
+  langs:
+  - csharp
+  - vb
+  name: UtcNow
+  nameWithType: ISystemClock.UtcNow
+  fullName: Microsoft.Owin.Infrastructure.ISystemClock.UtcNow
+  type: Property
+  source:
+    path: Microsoft.Owin
+    isExternal: true
+  assemblies:
+  - Microsoft.Owin
+  namespace: Microsoft.Owin.Infrastructure
+  summary: "\nRetrieves the current system time in UTC.\n"
+  syntax:
+    content: DateTimeOffset UtcNow { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: ReadOnly Property UtcNow As DateTimeOffset
+  overload: Microsoft.Owin.Infrastructure.ISystemClock.UtcNow*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Microsoft.Owin.Infrastructure
+  commentId: N:Microsoft.Owin.Infrastructure
+  isExternal: false
+  name: Microsoft.Owin.Infrastructure
+  nameWithType: Microsoft.Owin.Infrastructure
+  fullName: Microsoft.Owin.Infrastructure
+- uid: Microsoft.Owin.Infrastructure.ISystemClock.UtcNow*
+  commentId: Overload:Microsoft.Owin.Infrastructure.ISystemClock.UtcNow
+  isExternal: true
+  name: UtcNow
+  nameWithType: ISystemClock.UtcNow
+  fullName: Microsoft.Owin.Infrastructure.ISystemClock.UtcNow
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System

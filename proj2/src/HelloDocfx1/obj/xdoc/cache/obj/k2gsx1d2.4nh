@@ -1,0 +1,552 @@
+id: HelloDocfx1
+language: CSharp
+name:
+  Default: HelloDocfx1
+qualifiedName:
+  Default: HelloDocfx1
+type: Assembly
+items:
+- id: HelloDocfx
+  language: CSharp
+  name:
+    CSharp: HelloDocfx
+    VB: HelloDocfx
+  qualifiedName:
+    CSharp: HelloDocfx
+    VB: HelloDocfx
+  type: Namespace
+  assemblies:
+  - HelloDocfx1
+  source:
+    remote:
+      path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+      branch: dev
+      repo: https://github.com/aspnet/docfx.git
+    path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+  items:
+  - id: HelloDocfx.Class1
+    language: CSharp
+    name:
+      CSharp: Class1
+      VB: Class1
+    qualifiedName:
+      CSharp: HelloDocfx.Class1
+      VB: HelloDocfx.Class1
+    type: Class
+    assemblies:
+    - HelloDocfx1
+    namespace: HelloDocfx
+    source:
+      remote:
+        path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+        branch: dev
+        repo: https://github.com/aspnet/docfx.git
+      path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+      startLine: 5
+    summary: Hello this is **Class1** from *HelloDocfx*
+    example: []
+    syntax:
+      content:
+        CSharp: public class Class1
+        VB: Public Class Class1
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    items:
+    - id: HelloDocfx.Class1.Value
+      language: CSharp
+      name:
+        CSharp: Value
+        VB: Value
+      qualifiedName:
+        CSharp: HelloDocfx.Class1.Value
+        VB: HelloDocfx.Class1.Value
+      type: Property
+      assemblies:
+      - HelloDocfx1
+      namespace: HelloDocfx
+      source:
+        remote:
+          path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+          branch: dev
+          repo: https://github.com/aspnet/docfx.git
+        path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+        startLine: 8
+      syntax:
+        content:
+          CSharp: >-
+            public int Value
+
+            {
+
+                get;
+
+            }
+          VB: Public ReadOnly Property Value As Integer
+        parameters: []
+        return:
+          type: System.Int32
+    - id: HelloDocfx.Class1.#ctor(System.Int32)
+      language: CSharp
+      name:
+        CSharp: Class1(Int32)
+        VB: Class1(Int32)
+      qualifiedName:
+        CSharp: HelloDocfx.Class1.Class1(System.Int32)
+        VB: HelloDocfx.Class1.Class1(System.Int32)
+      type: Constructor
+      assemblies:
+      - HelloDocfx1
+      namespace: HelloDocfx
+      source:
+        remote:
+          path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+          branch: dev
+          repo: https://github.com/aspnet/docfx.git
+        path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+        startLine: 14
+      summary: This is a ctor
+      example: []
+      syntax:
+        content:
+          CSharp: public Class1(int value)
+          VB: Public Sub New(value As Integer)
+        parameters:
+        - id: value
+          type: System.Int32
+          description: The value of the class
+    - id: HelloDocfx.Class1.ConvertToDouble
+      language: CSharp
+      name:
+        CSharp: ConvertToDouble()
+        VB: ConvertToDouble()
+      qualifiedName:
+        CSharp: HelloDocfx.Class1.ConvertToDouble()
+        VB: HelloDocfx.Class1.ConvertToDouble()
+      type: Method
+      assemblies:
+      - HelloDocfx1
+      namespace: HelloDocfx
+      source:
+        remote:
+          path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+          branch: dev
+          repo: https://github.com/aspnet/docfx.git
+        path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+        startLine: 19
+      syntax:
+        content:
+          CSharp: public double ConvertToDouble()
+          VB: Public Function ConvertToDouble As Double
+        return:
+          type: System.Double
+    - id: HelloDocfx.Class1.SetInnerClass(System.String,HelloDocfx.Class1.InnerClass)
+      language: CSharp
+      name:
+        CSharp: SetInnerClass(String, Class1.InnerClass)
+        VB: SetInnerClass(String, Class1.InnerClass)
+      qualifiedName:
+        CSharp: HelloDocfx.Class1.SetInnerClass(System.String, HelloDocfx.Class1.InnerClass)
+        VB: HelloDocfx.Class1.SetInnerClass(System.String, HelloDocfx.Class1.InnerClass)
+      type: Method
+      assemblies:
+      - HelloDocfx1
+      namespace: HelloDocfx
+      source:
+        remote:
+          path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+          branch: dev
+          repo: https://github.com/aspnet/docfx.git
+        path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+        startLine: 29
+      summary: A method referencing a inner class
+      example: []
+      syntax:
+        content:
+          CSharp: public void SetInnerClass(string name, Class1.InnerClass inner)
+          VB: Public Sub SetInnerClass(name As String, inner As Class1.InnerClass)
+        parameters:
+        - id: name
+          type: System.String
+          description: The name
+        - id: inner
+          type: HelloDocfx.Class1.InnerClass
+          description: A inner class with type <xref href="HelloDocfx.Class1.InnerClass" data-throw-if-not-resolved="false"></xref>
+      references:
+        HelloDocfx.Class1.InnerClass: 
+  - id: HelloDocfx.Class1.InnerClass
+    language: CSharp
+    name:
+      CSharp: Class1.InnerClass
+      VB: Class1.InnerClass
+    qualifiedName:
+      CSharp: HelloDocfx.Class1.InnerClass
+      VB: HelloDocfx.Class1.InnerClass
+    type: Class
+    assemblies:
+    - HelloDocfx1
+    namespace: HelloDocfx
+    source:
+      remote:
+        path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+        branch: dev
+        repo: https://github.com/aspnet/docfx.git
+      path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+      startLine: 35
+    syntax:
+      content:
+        CSharp: public class InnerClass
+        VB: Public Class InnerClass
+    inheritance:
+    - System.Object
+    inheritedMembers:
+    - System.Object.ToString
+    - System.Object.Equals(System.Object)
+    - System.Object.Equals(System.Object,System.Object)
+    - System.Object.ReferenceEquals(System.Object,System.Object)
+    - System.Object.GetHashCode
+    - System.Object.GetType
+    - System.Object.MemberwiseClone
+    items:
+    - id: HelloDocfx.Class1.InnerClass.Name
+      language: CSharp
+      name:
+        CSharp: Name
+        VB: Name
+      qualifiedName:
+        CSharp: HelloDocfx.Class1.InnerClass.Name
+        VB: HelloDocfx.Class1.InnerClass.Name
+      type: Property
+      assemblies:
+      - HelloDocfx1
+      namespace: HelloDocfx
+      source:
+        remote:
+          path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+          branch: dev
+          repo: https://github.com/aspnet/docfx.git
+        path: Documentation/docfx_project/src/HelloDocfx1/Class1.cs
+        startLine: 37
+      syntax:
+        content:
+          CSharp: >-
+            public string Name
+
+            {
+
+                get;
+
+                set;
+
+            }
+          VB: Public Property Name As String
+        parameters: []
+        return:
+          type: System.String
+references:
+  System:
+    name:
+      CSharp:
+      - name: System
+        qualifiedName: System
+      VB:
+      - name: System
+        qualifiedName: System
+    isDefinition: true
+  System.Object:
+    name:
+      CSharp:
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      VB:
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+    isDefinition: true
+    parent: System
+  System.Object.ToString:
+    name:
+      CSharp:
+      - id: System.Object.ToString
+        name: ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - name: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ToString
+        name: ToString
+        qualifiedName: System.Object.ToString
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - name: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+  System.Object.Equals(System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object)
+        name: Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+  System.Object.Equals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.Equals(System.Object,System.Object)
+        name: Equals
+        qualifiedName: System.Object.Equals
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+  System.Object.ReferenceEquals(System.Object,System.Object):
+    name:
+      CSharp:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.ReferenceEquals(System.Object,System.Object)
+        name: ReferenceEquals
+        qualifiedName: System.Object.ReferenceEquals
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: ', '
+        qualifiedName: ', '
+      - id: System.Object
+        name: Object
+        qualifiedName: System.Object
+        isExternal: true
+      - name: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+  System.Object.GetHashCode:
+    name:
+      CSharp:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - name: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetHashCode
+        name: GetHashCode
+        qualifiedName: System.Object.GetHashCode
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - name: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+  System.Object.GetType:
+    name:
+      CSharp:
+      - id: System.Object.GetType
+        name: GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - name: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.GetType
+        name: GetType
+        qualifiedName: System.Object.GetType
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - name: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+  System.Object.MemberwiseClone:
+    name:
+      CSharp:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - name: )
+        qualifiedName: )
+      VB:
+      - id: System.Object.MemberwiseClone
+        name: MemberwiseClone
+        qualifiedName: System.Object.MemberwiseClone
+        isExternal: true
+      - name: (
+        qualifiedName: (
+      - name: )
+        qualifiedName: )
+    isDefinition: true
+    parent: System.Object
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+  System.Double:
+    name:
+      CSharp:
+      - id: System.Double
+        name: Double
+        qualifiedName: System.Double
+        isExternal: true
+      VB:
+      - id: System.Double
+        name: Double
+        qualifiedName: System.Double
+        isExternal: true
+    isDefinition: true
+    parent: System
+  HelloDocfx.Class1.InnerClass:
+    name:
+      CSharp:
+      - id: HelloDocfx.Class1.InnerClass
+        name: Class1.InnerClass
+        qualifiedName: HelloDocfx.Class1.InnerClass
+      VB:
+      - id: HelloDocfx.Class1.InnerClass
+        name: Class1.InnerClass
+        qualifiedName: HelloDocfx.Class1.InnerClass
+    isDefinition: true
+    parent: HelloDocfx
+  System.String:
+    name:
+      CSharp:
+      - id: System.String
+        name: String
+        qualifiedName: System.String
+        isExternal: true
+      VB:
+      - id: System.String
+        name: String
+        qualifiedName: System.String
+        isExternal: true
+    isDefinition: true
+    parent: System
+  HelloDocfx:
+    name:
+      CSharp:
+      - name: HelloDocfx
+        qualifiedName: HelloDocfx
+      VB:
+      - name: HelloDocfx
+        qualifiedName: HelloDocfx
+    isDefinition: true
+  HelloDocfx.Class1:
+    name:
+      CSharp:
+      - id: HelloDocfx.Class1
+        name: Class1
+        qualifiedName: HelloDocfx.Class1
+      VB:
+      - id: HelloDocfx.Class1
+        name: Class1
+        qualifiedName: HelloDocfx.Class1
+    isDefinition: true

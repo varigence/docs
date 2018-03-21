@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelloDocfx1</name>
+    </assembly>
+    <members>
+        <member name="T:HelloDocfx.Class1">
+            <summary>
+            Hello this is **Class1** from *HelloDocfx*
+            </summary>
+        </member>
+        <member name="M:HelloDocfx.Class1.#ctor(System.Int32)">
+            <summary>
+            This is a ctor
+            </summary>
+            <param name="value">The value of the class</param>
+        </member>
+        <member name="M:HelloDocfx.Class1.SetInnerClass(System.String,HelloDocfx.Class1.InnerClass)">
+            <summary>
+            A method referencing a inner class 
+            </summary>
+            <param name="name">The name</param>
+            <param name="inner">A inner class with type <seealso cref="T:HelloDocfx.Class1.InnerClass"/></param>
+        </member>
+    </members>
+</doc>

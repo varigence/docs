@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" ">
+    <meta name="generator" content="docfx 2.31.0.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/Varigence-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="1" sourceendlinenumber="1"><strong>Mist Designers and Editors</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="3" sourceendlinenumber="17">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="3" sourceendlinenumber="5">Connection Designer<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="4" sourceendlinenumber="5">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="4" sourceendlinenumber="4">Fixed an issue where update databases in connection editors would fail if a nonexistent database was already in the combobox text field</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="5" sourceendlinenumber="5">Several bug fixes, particularly around ADO.NET connections</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="6" sourceendlinenumber="7">MetadataModel Designer<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="7" sourceendlinenumber="7">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="7" sourceendlinenumber="7">Fixed issue where metadata model editor wouldn&#39;t let you change the name of a relationship</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="8" sourceendlinenumber="9">Project Designer<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="9" sourceendlinenumber="9">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="9" sourceendlinenumber="9">Fixed bug where project deployment checkbox in project editor would still be enabled with SSIS version targets that don&#39;t support project deployment</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="10" sourceendlinenumber="11">Package Designer<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="11" sourceendlinenumber="11">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="11" sourceendlinenumber="11">Fixed package details editors for Merge and Merge Join where column data grids were not synching with Biml properly</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="12" sourceendlinenumber="13">CubeProject and PackageProject Designer<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="13" sourceendlinenumber="13">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="13" sourceendlinenumber="13">Fixed not showing items in logical display folders</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="14" sourceendlinenumber="17">Biml Editor<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="15" sourceendlinenumber="17">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="15" sourceendlinenumber="15">Fixed issue where syntax editor would automatically scroll to caret when .NET Quick Info sessions were requested</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="16" sourceendlinenumber="16">Added a completion list item for &lt;#@ template tier&quot;...&quot; #&gt; intelliprompt to inform user that any integer value can be used for tiers</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="17" sourceendlinenumber="17">Fixed outlining in BimlScript editor - now code nuggets and Biml elements are collapsible</li>
+</ul>
+</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="20" sourceendlinenumber="20"><strong>Mist Dialogs</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="22" sourceendlinenumber="35">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="22" sourceendlinenumber="29">Logical View<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="23" sourceendlinenumber="29">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="23" sourceendlinenumber="23">Added tooltip to Broken Live BimlScript group to describe what it is for</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="24" sourceendlinenumber="24">Fixed bug with showing Broken Live BimlScripts when not actually broken - specifically when the error was due to an non-.NET code issue</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="25" sourceendlinenumber="25">Fixed issue where duplicating a transformer in the Logical View would crash Mist</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="26" sourceendlinenumber="26">Fixed bug where using Biml Editor as default logical view action would cause both Biml Editor and Visual Designer to be opened</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="27" sourceendlinenumber="27">Removed internal-use properties from property grid in logical view</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="28" sourceendlinenumber="28">Added new modes for default logical view action that also enable Biml Designer to be used</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="29" sourceendlinenumber="29">When creating new items in the logical view, that item is now automatically opened using whatever has been configured as the default logical view action</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="30" sourceendlinenumber="32">Import Tables<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="31" sourceendlinenumber="32">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="31" sourceendlinenumber="31">Fixed issue where indexes, view info, and a handful of other items were being imported even when they were not supposed to be based on ImportOptions</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="32" sourceendlinenumber="32">Fixed issue where Oracle tables wouldn&#39;t import if ExcludeViews was set</li>
+</ul>
+</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="33" sourceendlinenumber="35">Find/Replace<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="34" sourceendlinenumber="35">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="34" sourceendlinenumber="34">Changed Find/Replace window so that it can also search the output pane of the Template Editor</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="35" sourceendlinenumber="35">Added an editable combo box to the Find/Replace window that retains history for search terms used in the current project session</li>
+</ul>
+</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="38" sourceendlinenumber="38"><strong>Other Mist UI</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="40" sourceendlinenumber="47">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="40" sourceendlinenumber="40">Updated splash screen</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="41" sourceendlinenumber="41">Switched output window to use a TextBox rather than a RichTextBox.  Warnings and errors are no longer colorized, but we avoid the huge performance issues and Unicode rendering problems associated with the WPF RichTextBox.</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="42" sourceendlinenumber="42">Added support for upgrading Mist settings from build to build</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="43" sourceendlinenumber="43">Improved IsDirty tracking on *.mst file</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="44" sourceendlinenumber="44">Product key is now hidden in account control to prevent inadvertent key disclosure during demos or videos</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="45" sourceendlinenumber="45">Fixed issue where &quot;Open In Windows Explorer&quot; from the MDI document tab would not work for BimlScript Designer windows</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="46" sourceendlinenumber="46">Fixed a performance issue with interactive transformers</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="47" sourceendlinenumber="47">Fixed issue with infinite loop reloading of files when there is use of side-effect-causing GetBiml in live scripts</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="50" sourceendlinenumber="50"><strong>Biml Language</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="52" sourceendlinenumber="56">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="52" sourceendlinenumber="52">Removed Table property from CdcSourceNode.  It is not used.</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="53" sourceendlinenumber="53">Added AnalysisServicesConnectionInformation to all DBConnections for the purposes of SSAS Impersonation and other features</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="54" sourceendlinenumber="54">Added support for new BufferMode and BufferMaxSize properties for Teradata Source and Teradata Destination in SSIS 2014</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="55" sourceendlinenumber="55">Added DQS Cleansing Component and DQS Connection</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="56" sourceendlinenumber="56">Added support for project level encryption and the ProjectPassword property on PackageProjects</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="59" sourceendlinenumber="59"><strong>Biml API</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="61" sourceendlinenumber="66">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="61" sourceendlinenumber="61">Added timeout support to all of the database providers and external data access methods</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="62" sourceendlinenumber="62">Fixed issue where properties changed via API were not being reflected in GetBiml output</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="63" sourceendlinenumber="63">Added GetDataTable support for most major DbConnection types</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="64" sourceendlinenumber="64">Added AstRootNode convenience collections for FlatFileFormats, RawFileFormats, PackageProjects, and CubeProjects</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="65" sourceendlinenumber="65">Fixed issue where AstRootNode convenience collections did not support name-based indexing in Live mode</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="66" sourceendlinenumber="66">Fixed an issue where StructureEquals was producing incorrect results due to a missing negation operator in autogenerated code</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="69" sourceendlinenumber="69"><strong>Biml Compiler</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="71" sourceendlinenumber="81">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="71" sourceendlinenumber="71">Improved compiler version information in MSBuild and bimlc.exe</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="72" sourceendlinenumber="72">Added ability to get machine code from bimlc.exe</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="73" sourceendlinenumber="73">Added support for SsisExternalColumnsQueryTimeout option to globally override SSIS external metadata discovery time outs</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="74" sourceendlinenumber="74">Fixed issue with output paths being dynamically created and references being broken in XmlSource node</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="75" sourceendlinenumber="75">Fixed issue where MSBuild response files were not being saved with Unicode support.  MSBuild requires the BOM to identify Unicode, which File.WriteAllText does not use by default.</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="76" sourceendlinenumber="76">Fixed issue where MSBuild would hang and peg the CPU if a built-in transformer framework failed</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="77" sourceendlinenumber="77">Added package password handling to BimlDriver and BimlEngine MSBuild task</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="78" sourceendlinenumber="78">Fixed a bug in AnalysisServicesProcessing emitter where parallel processing order would not be handled properly in some cases</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="79" sourceendlinenumber="79">Changed compiler/msbuild option for SSIS encryption password from PackagePassword to the more inclusive SsisEncryptionPassword</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="80" sourceendlinenumber="80">Added warning level option (/warn=0 or /p:Warn=0) so that warnings can be turned off</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="81" sourceendlinenumber="81">Fixed nested includes so that class type members also can nest (i.e. &lt;#+ #&gt; blocks)</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="84" sourceendlinenumber="84"><strong>BimlScript Errors/Warnings</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="86" sourceendlinenumber="94">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="86" sourceendlinenumber="86">Added file name to errors/warnings created from BimlScript directives</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="87" sourceendlinenumber="87">Added warning when build-only assets cannot be located</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="88" sourceendlinenumber="88">Improved validation reporting in Metadata model dynamic objects</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="89" sourceendlinenumber="89">Added an error for duplicate dataflow column nodes.  This usually arises with &quot;reserved&quot; column names &quot;ErrorCode&quot; and &quot;ErrorText&quot;</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="90" sourceendlinenumber="90">Fixed issue where errors in nested includes were not being reported</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="91" sourceendlinenumber="91">Added a warning and an automatic patch of import statements that use the old Hadron namespaces</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="92" sourceendlinenumber="92">Fixed an issue where SSIS emitter was incorrectly producing a &quot;not supported&quot; error on some file resources</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="93" sourceendlinenumber="93">Added support to ValidationItems to track if they were from .NET code nugget error or other error</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="94" sourceendlinenumber="94">Fixed sorting of line and column fields in validation grid (numerical sorting instead of lexicographic sorting)</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="97" sourceendlinenumber="97"><strong>Database Providers and Type Mappings</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="99" sourceendlinenumber="106">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="99" sourceendlinenumber="99">Fixed a type mapping bug in XmlSource</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="100" sourceendlinenumber="100">Fixed a bug for configurations of Oracle that do not supply IsByteSemantic with column metadata</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="101" sourceendlinenumber="101">Fixed a few minor Teradata type mapping issues</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="102" sourceendlinenumber="102">Fixed Oracle datatype mapping in decimals</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="103" sourceendlinenumber="103">Significantly improved DatabaseProviderSelector to more closely match Mist 3.4.  Most notably, this will fix issues where ADO.NET connections were largely ignoring the provider setting</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="104" sourceendlinenumber="104">Fixed a crash that can occur in an internal method for creating database connection strings when the provider type of the underlying connection cannot be detected.</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="105" sourceendlinenumber="105">Fix for Oracle schema provider logic so that fallback will use OracleConnection type rather than Odbc connection</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="106" sourceendlinenumber="106">Fixed data type mapping on import for XML column length and sysname</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="109" sourceendlinenumber="109"><strong>SSIS Emission</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="111" sourceendlinenumber="126">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="111" sourceendlinenumber="111">Fixed issue where Ssis2014 packages were not having their nodes sorted correctly</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="112" sourceendlinenumber="112">Added support for EncryptAllWithUserKey and EncryptAllWithPassword to SsisEmitter</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="113" sourceendlinenumber="113">Turned off an SSIS bug workaround in AdoNetDestination emitter for 2012+ since SSIS fixed it in the 2012 release</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="114" sourceendlinenumber="114">Fixed CDC Source emitter to use the actual specified time out instead of a hardcoded value</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="115" sourceendlinenumber="115">Fixed an issue with AdoNetSource emitter where it would not convert a WSTR with length greater than 4000 to an NTEXT</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="116" sourceendlinenumber="116">Fixed bug in XmlSource where outputs were not being updated correctly - orphan objects that broke reference were being created</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="117" sourceendlinenumber="117">Fixed minor issue with emission of corrupt packages when using PDW with a 2008 target</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="118" sourceendlinenumber="118">Fixed issue with DataType emission in downlevel SSIS targets</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="119" sourceendlinenumber="119">Fixed bugs in Odbc Source and Destination where properties were not being emitted with the correct notification or type translator settings</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="120" sourceendlinenumber="120">Minor fixes for PDW and Teradata destination emission</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="121" sourceendlinenumber="121">Added support for variables of DT_DISPATCH type in SSIS importer</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="122" sourceendlinenumber="122">Fix for an SSIS expression evaluation error related to casting integers to date times</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="123" sourceendlinenumber="123">Added emission of synthetic connection manager parameters to project manifest via the connection manager translators</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="124" sourceendlinenumber="124">Fixed issue where script tasks in 2014 would ask to be upgraded by BIDS</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="125" sourceendlinenumber="125">Fixed issue where synthetic types like (Web Servbive Type) in script project settings would produce bad code behind during build</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="126" sourceendlinenumber="126">Fixed issue where ISPac files were losing unicode characters</li>
+</ul>
+<p sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="129" sourceendlinenumber="129"><strong>SSIS Import</strong></p>
+<ul sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="131" sourceendlinenumber="148">
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="131" sourceendlinenumber="131">Fixed scrolling for large numbers of imported assets</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="132" sourceendlinenumber="132">Applied file extension filters to file dialog boxes</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="133" sourceendlinenumber="133">Fixed an issue where the LabeledFileSelector control would grow forever off the edge of the dialog</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="134" sourceendlinenumber="134">Added a warnings and errors display on import</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="135" sourceendlinenumber="135">Added a warning when placeholder connections are created for project connections imported from a DTSX file</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="136" sourceendlinenumber="136">Fixed issue where CDC Source components were being imported as custom components</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="137" sourceendlinenumber="137">Fixed issue where CDC Control task import was not correctly importing the StateVariable</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="138" sourceendlinenumber="138">Prevented duplicate import of project connections referenced by packages</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="139" sourceendlinenumber="139">Fixed issue where DTProj files without manifests were not being correctly imported</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="140" sourceendlinenumber="140">Fixed issue where hex codes (for things like flat file delimiters) would not be properly imported</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="141" sourceendlinenumber="141">Added option to automatically add a Biml annotation to imported SSIS object to indicate their source package</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="142" sourceendlinenumber="142">Added option to add annotations to destination components with unmapped external columns</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="143" sourceendlinenumber="143">Added feature where duplicate items in SSIS import are renamed, but a Biml annotation is added with the original name</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="144" sourceendlinenumber="144">Added duplicate detection to script projects on SSIS import</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="145" sourceendlinenumber="145">Added trimming of variable lists in script projects in importer</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="146" sourceendlinenumber="146">Added error when trying to import DTS script tasks and components from 2005 packages</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="147" sourceendlinenumber="147">Fixed an issue with import options default values when being used from the API</li>
+<li sourcefile="articles/Mist 4.0 Update 1.md" sourcestartlinenumber="148" sourceendlinenumber="148">Fixed issue where completely empty script tasks would import but not build (since SSIS fills in the missing files with defaults on completely empty scripts)</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2018 Varigence<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

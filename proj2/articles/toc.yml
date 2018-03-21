@@ -1,0 +1,122 @@
+- name: Introduction
+  href: intro.md
+- name: Action
+  href: Action.md
+- name: Adding Existing Files to a Project
+  href: Adding Existing Files to a Project.md
+- name: Adventure Works LT Walkthrough
+  href: Adventure Works LT Walkthrough.md
+- name: Aggregation Design
+  href: Aggregation Design.md
+- name: Biml Compiler Command Line Options
+  href: Biml Compiler Command Line Options.md
+- name: Biml
+  href: Biml.md
+- name: BimlScript
+  href: BimlScript.md
+- name: BimlStudio
+  href: BimlStudio.md
+- name: BimlStudio 2017
+  href: BimlStudio 2017.md
+- name: BimlStudio User Guide
+  href: BimlStudio User Guide.md
+- name: Building the Example Project
+  href: Building the Example Project.md
+- name: Calculation
+  href: Calculation.md
+- name: Choose The Right Script Mode
+  href: Choose The Right Script Mode.md
+- name: Common Tool Windows
+  href: Common Tool Windows.md
+- name: Configuring Project Settings
+  href: Configuring Project Settings.md
+- name: Connection
+  href: Connection.md
+- name: Create an Expandable Transformer
+  href: Create an Expandable Transformer.md
+- name: Creating A Basic Package
+  href: Creating A Basic Package.md
+- name: Creating a Basic Table
+  href: Creating a Basic Table.md
+- name: Creating a Dimension Table
+  href: Creating a Dimension Table.md
+- name: Creating a Fact Table
+  href: Creating a Fact Table.md
+- name: Creating a New Connection
+  href: Creating a New Connection.md
+- name: Creating a New Database
+  href: Creating a New Database.md
+- name: Creating a New Project
+  href: Creating a New Project.md
+- name: Creating a New Schema
+  href: Creating a New Schema.md
+- name: Cube
+  href: Cube.md
+- name: Deploying Tables to SQL
+  href: Deploying Tables to SQL.md
+- name: Editors Overview
+  href: Editors Overview.md
+- name: File Format
+  href: File Format.md
+- name: Importing from the Sample Database
+  href: Importing from the Sample Database.md
+- name: Importing Tables using BimlScript
+  href: Importing Tables using BimlScript.md
+- name: index
+  href: index.md
+- name: KPI
+  href: KPI.md
+- name: Miscellaneous
+  href: Miscellaneous.md
+- name: Mist 2.0
+  href: Mist 2.0.md
+- name: Mist 3.0
+  href: Mist 3.0.md
+- name: Mist 3.1
+  href: Mist 3.1.md
+- name: Mist 3.2
+  href: Mist 3.2.md
+- name: Mist 3.3
+  href: Mist 3.3.md
+- name: Mist 3.4
+  href: Mist 3.4.md
+- name: Mist 4.0 Update 1
+  href: Mist 4.0 Update 1.md
+- name: Mist 4.0
+  href: Mist 4.0.md
+- name: Package Tool Windows
+  href: Package Tool Windows.md
+- name: Package
+  href: Package.md
+- name: Partition
+  href: Partition.md
+- name: Perspective
+  href: Perspective.md
+- name: Preparing to Build the Example Project
+  href: Preparing to Build the Example Project.md
+- name: Principal
+  href: Principal.md
+- name: Project View Idiosyncrasies
+  href: Project View Idiosyncrasies.md
+- name: Release Notes
+  href: Release Notes.md
+- name: Saving a Project
+  href: Saving a Project.md
+- name: Schema
+  href: Schema.md
+- name: Script Project
+  href: Script Project.md
+- name: Setting Up For The Sample
+  href: Setting Up For The Sample.md
+- name: Source Control Setup
+  href: Source Control Setup.md
+- name: Static Source
+  href: Static Source.md
+- name: Switching Build Types for Biml Files
+  href: Switching Build Types for Biml Files.md
+- name: Table
+  href: Table.md
+- name: TOC
+  href: TOC.md
+- name: Using Configuration Files
+  href: Using Configuration Files.md
