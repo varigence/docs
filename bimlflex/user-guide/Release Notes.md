@@ -1,3 +1,73 @@
+## Bundle 80325
+
+* Add: update `CREATE DATABASE` default statements for generated SQL scripts to create databases with `Recovery Model` set to `Simple`
+* Add: support for global Extension Point for connections 
+
+## Bundle 80321
+
+* Fix: Issue with loading ELT into Data Vault for External Tables
+* Update: Split `Use My ConnectionStrings` and `Use My Exclusions` in BimlStudio and BimlFlex Excel Add-in configuration
+* New: Add SsisAnnotations to all packages
+* Update: Change RowCount object name for Data Vault loads to reference destination rather than source object
+* Update: Fix behavior for Azure DW ELT not deriving BK columns
+* Update: Fix behavior for Ssis Connection Managers for Azure DW connections
+* Fix: an issue where `wcf.SetCloneVersion` did not correctly manage `ClonedFromUID`
+* Update: Allow SSDT project to build when no tables are defined
+* Update: Add warning validation for projects without defined target
+* Update: Add support for `AutoAdjustBufferSize` Ssis setting for supported SSIS versions
+* Add: support for SQL Server 2017 custom SSIS components
+* Add: support for `SelectBySql` for `DISTINCT, TOP n` scenarios
+* Add: support for `OrderBySql` for `ORDER BY Column` scenarios
+
+## Bundle 80305
+
+* Fix: Data Vault templates for SQL to load LSAT correctly
+* New: Add `Quick Parse` option for BimlStudio options to only load placeholder objects when modelling
+* Fix: A scenario where end dating of Satellites did not behave as expected
+* Update: Optimisation to SQL templates
+* New: Add concurrency configuration to AzCopy
+* New: Refactor Data Vault patterns to exclude end dating code when `EnableEndDateRdv` setting is set to `"N"`
+
+## Bundle 80223
+
+* Performance update to BimlFlex to use local cache when no changes to metadata
+* Performance update to minify Biml files in cache
+* Fix: Remove IsNullable warning for External Tables
+* Fix: Remove double underscores from certain name generations
+
+## Bundle 80216
+
+* Fix: Orchestration truncate statements now exclude database name in statement
+* Fix: Synchronised LNK and LSAT Hashes for ELT loads for on-premises SQL Server
+* Fix: Added Execution Id parameter to SSIS calls to Stored Procedures for ELT loads for on-premises SQL Server
+
+## Bundle 80213
+
+* New: Use `Page` compression for tables as default
+* New: Added velocity profiling for PSA tables
+* Fix: Connect PreDataFlow for FlatFile sources
+* Fix: Added support to derive LSK columsn when needed for external tables
+
+## Bundle 80212
+
+* Fix: Update to Same As Link to derive both Hub sides
+* Add `CONVERT` to SourceQuery to accomodate SqlServer and Polybase Maximum DMS row size limitations
+* Fix: Removed Link Surrogate Keys from External Table definitions
+* Added initial support to auto-generate SSDT projects for all SQL artefacts
+
+## Bundle 80207
+
+* Change: Change PIT stored procedure to only use SAT FromDate to support insert only Data Vault
+* Fix: Adding support for Same As Links in the Data Vault Accelerator
+* Fix: Adding support for Azure Blob Storage for Connections to support both Azure SQLDW and Azure SQL VM
+* Fix: Satelite Driving Key Lookups and Condensing Script
+* Fix: Change BimlFlexUtility to remove temp folder before and after app runs. This is to avoid chached bundle from being deployed.
+* Fix: PSA Source query to exclude source JoinSql and GroupBy sql
+* Fix: Link Degenerate Keys to map to Link and not LSAT
+* Change: Remove dependency to define IsDerived on the Columns Table
+* Change: Repoint DB2 impport to use the SYSIBM tables instead of the SYSCAT tables.
+* Change: BimlCatalog SetConfigVariable to handle additional "NULL" default dates '1899-12-31', '1900-01-01', '0000-01-01'
+
 ## Bundle 80118
 
 * Update Snapshot capture to database and add-in
