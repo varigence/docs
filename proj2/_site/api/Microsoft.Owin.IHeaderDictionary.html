@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IHeaderDictionary
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.33.1.0">
     
-    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -21,9 +21,411 @@
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix">
+  </head>  <body data-spy="scroll" data-target="#affix">
     <div id="wrapper">
+	  <div id="header">
+	      <div class="container">
+	          <button id="main-nav-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" aria-controls="navbar">
+	              <span class="sr-only">Toggle navigation</span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	          </button>
+	  
+	          <li id="mobile-icon-search"><img class="header-search-icon" src="/Content/Images/icons/search.png"></li>
+	  
+	          <div class="logo-link">
+	              <a href="/">
+	                  <img id="site-logo" src="/Content/images/varigence-icon.png" alt="Varigence">
+	              </a>
+	          </div>
+	  
+	          <div id="mobile-search-area">
+	              <div id="search-form">
+	  <form action="/Search" method="get">                    <button type="submit" name="search" id="search-submit"><img src="/Content/Images/icons/search.png"></button>
+	                      <input type="search" class="form-control input-sm" name="q" id="search" placeholder="Start Typing...">
+	  </form>            </div>
+	          </div>
+	          <div id="main-menu" class="navbar-collapse collapse">
+	              
+	              <ul class="nav navbar-nav">
+	      <div id="main-menu-triangle" class="triangle-up"></div>
+	  
+	      
+	      
+	      <li class=" direct"><a href="/Company">About Us</a></li>
+	  
+	      <li id="productstab" class="">
+	      <a class="dropdown-link" href="/Products">Products<span class="arrow-down"><i class="fa fa-angle-down"></i></span></a>
+	      <div class="menu-column-container">
+	          <div id="menu-column-container-products" class="menu-container">
+	  
+	              <div class="mobile-menu">
+	                  <ul>
+	                      <li class="menu-item-header"><a href="/Products">Overview</a></li>
+	                  </ul>
+	                  <ul>
+	                          <li><a href="/Biml">Biml</a></li>
+	                                              <li><a href="/Mist">BimlStudio</a></li>
+	                                              <li><a href="/BimlFlex">BimlFlex</a></li>
+	                                              <li><a href="/BimlExpress">BimlExpress</a></li>
+	                                              <li><a href="/BimlOnline">BimlOnline</a></li>
+	                      
+	                  </ul>
+	  
+	              </div>
+	  
+	              <div class="desktop-menu">
+	                  <ul class="tab-control">
+	                      <li class="menu-item-header direct"><a href="/Products" data-target="#overview-products-tab-pane" data-toggle="tab">Overview</a></li>
+	                      
+	                          <li class="menu-item-header active direct">
+	                              <a href="/Biml" data-target="#biml-tab-pane" data-toggle="tab">Biml</a>
+	                          </li>
+	                                              <li class="menu-item-header direct">
+	                              <a href="/Mist" data-target="#bimlstudio-tab-pane" data-toggle="tab">BimlStudio</a>
+	                          </li>
+	                                              <li class="menu-item-header direct">
+	                              <a href="/BimlFlex" data-target="#bimlflex-tab-pane" data-toggle="tab">BimlFlex</a>
+	                          </li>
+	                                              <li class="menu-item-header direct">
+	                              <a href="/BimlExpress" data-target="#bimlexpress-tab-pane" data-toggle="tab">BimlExpress</a>
+	                          </li>
+	                                              <li class="menu-item-header direct">
+	                              <a href="/BimlOnline" data-target="#bimlonline-tab-pane" data-toggle="tab">BimlOnline</a>
+	                          </li>
+	                                      </ul>
+	  
+	                  <div class="tab-content">
+	                      <div id="overview-products-tab-pane" class="tab-pane">
+	                          <div class="center-content">
+	                              <img src="/Content/Images/NavMenu/Product-Overview-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Business Intelligence software for everyone.</p>
+	                                  <a href="/Products">Learn More �</a>
+	                              </div>
+	                          </div>
+	                      </div>
+	                          <div id="biml-tab-pane" class="tab-pane active">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/Biml-Product-Menu.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>Human readable and writable XML language for automating and creating business intelligence solutions.</p>
+	                                      <a href="/Biml">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                              <div id="bimlstudio-tab-pane" class="tab-pane">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/BimlStudio-Product.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>The only integrated development environment for Biml.</p>
+	                                      <a href="/BimlStudio">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                              <div id="bimlflex-tab-pane" class="tab-pane">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/BimlFlex-Product-Menu.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>A flexible and extensible framework with several extension points making it completely customizable.</p>
+	                                      <a href="/BimlFlex">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                              <div id="bimlexpress-tab-pane" class="tab-pane">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/BimlExpress-Product-Menu.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>Get more out of Visual Studio with BimlExpress. It's even fully functional with SQL Server 2016.</p>
+	                                      <a href="/BimlExpress">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                              <div id="bimlonline-tab-pane" class="tab-pane">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/BimlOnline-Product-Menu.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>The easiest way to use Biml without installing any software.</p>
+	                                      <a href="/BimlOnline">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                      </div>
+	              </div>
+	          </div>
+	      </div>
+	  </li>
+	  
+	      <li id="supporttab" class="">
+	      <a class="dropdown-link" href="/Support">Support<span class="arrow-down"><i class="fa fa-angle-down"></i></span></a>
+	      <div class="menu-column-container">
+	          <div id="menu-column-container-support" class="menu-container">
+	  
+	              <div class="mobile-menu">
+	                  <ul>
+	                      <li class="menu-item-header"><a href="/Support">Overview</a></li>
+	                  </ul>
+	                  <ul>
+	                      <li class="menu-item-header submenu biml">
+	                          <a class="dropdown-link">
+	                              Biml
+	                              <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+	                          </a>
+	                          <ul>
+	                              <li><a href="/Documentation/Language/Index">Language Reference</a></li>
+	                              <li><a href="/Documentation/Api/Index">API Reference</a></li>
+	                              <li><a href="/Documentation">Snippets</a></li>
+	                              <li><a class="main-menu-link" href="/Forums?forumName=Biml">Forums</a></li>
+	                              <li><a href="/Training">Training</a></li>
+	                          </ul>
+	                      </li>
+	                  </ul>
+	                  <ul>
+	                      <li class="menu-item-header submenu mist">
+	                          <a class="dropdown-link">
+	                              BimlStudio
+	                              <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+	                          </a>
+	                          <ul>
+	                              <li><a href="/Documentation/BimlStudio">User Guide</a></li>
+	                              <li><a href="/Documentation/Samples/Mist">Snippets</a></li>
+	                              <li><a class="main-menu-link" href="/Forums?forumName=BimlStudio">Forums</a></li>
+	                              <li><a href="/Training">Training</a></li>
+	                          </ul>
+	                      </li>
+	                  </ul>
+	                  <ul>
+	                      <li class="menu-item-header submenu bimlflex">
+	                          <a class="dropdown-link">
+	                              BimlFlex
+	                              <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+	                          </a>
+	                          <ul>
+	                              <li><a href="/Documentation/BimlFlex">User Guide</a></li>
+	                              <li><a href="/Documentation/BimlFlex/Metadata">Metadata Reference</a></li>
+	                              <li><a href="/Documentation/BimlFlex/ExtensionPoints">Extension Points</a></li>
+	                          </ul>
+	                      </li>
+	                  </ul>
+	  
+	                  <ul>
+	                      <li class="menu-item-header submenu bimlexpress">
+	                          <a class="dropdown-link">
+	                              BimlExpress
+	                              <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+	                          </a>
+	                          <ul>
+	                              <li><a href="/Documentation/BimlExpress">User Guide</a></li>
+	                              <li><a class="main-menu-link" href="/Forums?forumName=Biml">Forums</a></li>
+	                          </ul>
+	                      </li>
+	                  </ul>
+	              </div>
+	  
+	              <div class="desktop-menu">
+	                  <ul class="tab-control">
+	                      <li class="menu-item-header direct"><a href="/Support" data-target="#overview-support-tab-pane" data-toggle="tab">Overview</a></li>
+	                      <li class="menu-item-header active"><a data-target="#biml-support-tab-pane" data-toggle="tab">Biml</a></li>
+	                      <li class="menu-item-header"><a data-target="#bimlstudio-support-tab-pane" data-toggle="tab">BimlStudio</a></li>
+	                      <li class="menu-item-header"><a data-target="#bimlflex-support-tab-pane" data-toggle="tab">BimlFlex</a></li>
+	                      <li class="menu-item-header"><a data-target="#bimlexpress-support-tab-pane" data-toggle="tab">BimlExpress</a></li>
+	                  </ul>
+	  
+	                  <div class="tab-content">
+	                      <div id="overview-support-tab-pane" class="tab-pane">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/Support-Documentation-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>At Varigence, we offer a comprehensive library of professional support resources.</p>
+	                                  <a href="/Products">Learn More �</a>
+	                              </div>
+	                          </div>
+	                      </div>
+	                      <div id="biml-support-tab-pane" class="tab-pane active">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/Biml-Product-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Check out our comprehensive reference materials, samples and forums.</p>
+	                                  <a href="/Documentation/Language/Index">Learn More �</a>
+	                              </div>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="/Documentation/Language/Index">Language Reference</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Documentation/Api/Index">API Reference</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Documentation">Snippets</a>
+	                              </li>
+	                              <li>
+	                                  <a class="main-menu-link" href="/Forums?forumName=Biml&amp;threadID=0">Forums</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Training">Training</a>
+	                              </li>
+	                          </ul>
+	                      </div>
+	                      <div id="bimlstudio-support-tab-pane" class="tab-pane">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/BimlStudio-Product.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Check out our comprehensive reference materials and forums.</p>
+	                                  <a href="/Documentation/BimlStudio">Learn More �</a>
+	                              </div>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="/Documentation/BimlStudio">User Guide</a>
+	  
+	                              </li>
+	                              <li>
+	                                  <a class="main-menu-link" href="/Forums?forumName=BimlStudio">Forums</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Training">Training</a>
+	                              </li>
+	                          </ul>
+	                      </div>
+	                      <div id="bimlflex-support-tab-pane" class="tab-pane">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/BimlFlex-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Check out our comprehensive reference materials and forums.</p>
+	                                  <a href="/Documentation/BimlStudio">Learn More �</a>
+	                              </div>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="/Documentation/BimlFlex">User Guide</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Documentation/BimlFlex/Metadata">Metadata Reference</a>
+	                              </li>
+	                              <li><a href="/Documentation/BimlFlex/ExtensionPoints">Extension Points</a></li>
+	  
+	                          </ul>
+	                      </div>
+	                      <div id="bimlexpress-support-tab-pane" class="tab-pane">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/BimlExpress-Product-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Check out our comprehensive reference materials, samples and forums.</p>
+	                                  <a href="/Documentation/BimlExpress">Learn More �</a>
+	                              </div>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="/Documentation/BimlExpress">User Guide</a>
+	                              </li>
+	                              <li>
+	                                  <a class="main-menu-link" href="/Forums?forumName=Biml">Forums</a>
+	                              </li>
+	                          </ul>
+	                      </div>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+	  </li>
+	  
+	      
+	  
+	      <li id="partnerstab" class="">
+	      <a class="dropdown-link" href="/Partners">Partners<span class="arrow-down"><i class="fa fa-angle-down"></i></span></a>
+	      <div class="menu-column-container">
+	          <div id="menu-column-container-products" class="menu-container">
+	  
+	              <div class="mobile-menu">
+	                  <ul>
+	  
+	                      <li><a href="/Partners">Consulting Partners</a></li>
+	                      <li><a href="/Partners/BimlHeroes">BimlHeroes</a></li>
+	  
+	                  </ul>
+	  
+	  
+	              </div>
+	  
+	              <div class="desktop-menu">
+	                  <ul class="tab-control">
+	                      
+	                      <li class="menu-item-header active direct">
+	                          <a href="/Partners" data-target="#partners-tab-pane" data-toggle="tab">Consulting Partners</a>
+	                      </li>
+	                      <li class="menu-item-header direct">
+	                          <a href="/Partners/BimlHeroes" data-target="#bimlheroes-tab-pane" data-toggle="tab">BimlHeroes</a>
+	                      </li>
+	                  </ul>
+	  
+	                  <div class="tab-content">
+	  
+	                      <div id="partners-tab-pane" class="tab-pane active">
+	                          <div class="center-content">
+	                              <img src="/Content/Images/NavMenu/Partners-Consultants-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Need Biml and BimlStudio consulting? Check out our list of Varigence partners.</p>
+	                                  <a href="/Partners">Learn More �</a>
+	                              </div>
+	                          </div>
+	                      </div>
+	                      <div id="bimlheroes-tab-pane" class="tab-pane">
+	                          <div class="center-content">
+	                              <img src="/Content/Images/NavMenu/Partners-BimlHero-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>BimlHeroes are the only Varigence certified Biml experts.</p>
+	                                  <a>Learn More �</a>
+	                              </div>
+	                          </div>
+	                      </div>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+	  </li>
+	      
+	  
+	      <li class=" direct"><a href="/Store">Store</a></li>
+	      
+	      <li class=" direct"><a href="/Blog">Blog</a></li>
+	      <li id="icon-search">
+	          <img class="header-search-icon" src="/Content/Images/icons/search.png">
+	          <div class="search-enabled" id="search-area">
+	              <div id="search-form">
+	  <form action="/Search" method="get">                    <button type="submit" name="search" id="search-submit"><img src="/Content/Images/icons/search.png"></button>
+	                      <input type="search" class="form-control input-sm" name="q" id="search" placeholder="Start Typing...">
+	  </form>            </div>
+	          </div>
+	      </li>
+	      <li>
+	          <div class="logon-area">
+	                  <div id="logon-shop">
+	          <a id="logon-link">LOG IN</a>
+	          <span>|</span>
+	          <a href="/Account/Register">REGISTER</a>
+	      </div>
+	      <div id="logon-pane-triangle" class="triangle-up"></div>
+	      <div id="logon-pane">
+	  
+	  <form action="/Account/Login" method="post" novalidate="novalidate">            <input type="hidden" name="returnUrl" value="/">
+	  <input class="form-control input-sm valid" data-val="true" data-val-required="The Email field is required." id="Email" name="Email" placeholder="email" type="text" value="" aria-required="true" aria-invalid="false" aria-describedby="Email-error"><input class="form-control input-sm valid" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="password" type="password" aria-required="true" aria-invalid="false" aria-describedby="Password-error">            <input type="submit" class="btn btn-blue-white btn-standard btn-sm" value="Log In" id="logonbutton">
+	              <div class="bottom-text">
+	                  <span id="remember-me">Remember me?</span>
+	                  <input class="check-box" data-val="true" data-val-required="The Persist field is required." id="Persist" name="Persist" type="checkbox" value="true"><input name="Persist" type="hidden" value="false">
+	                  <a href="/Account/ForgotPassword" id="forgot-password-link">Forgot password?</a>
+	              </div>    
+	  </form>    </div>
+	  
+	          </div>
+	      </li>
+	  </ul>
+	  
+	              
+	          </div>
+	      </div>
+	  </div>      <!--
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
@@ -36,7 +438,7 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" src="../images/Varigence-Logo.png" height="46" width="46" alt="">
+                <img id="logo" src="../images/Varigence-Logo.png" height="46" width="46" alt="" >
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -57,6 +459,7 @@
           </div>
         </div>
       </header>
+      -->
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -83,7 +486,7 @@
   
   
   
-  <h5 id="Microsoft_Owin_IHeaderDictionary_syntax">Syntax</h5>
+  <h3 id="Microsoft_Owin_IHeaderDictionary_syntax">Syntax</h3>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IHeaderDictionary : IReadableStringCollection, IDictionary&lt;string, string[]&gt;, ICollection&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;string, string[]&gt;&gt;, IEnumerable</code></pre>
   </div>
@@ -99,11 +502,24 @@
   
   <h3 id="properties">Properties
   </h3>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Data</th>
+  </tr>
+  <tr>
+  <td><a href="Item[String]">Item[String]</a></td>
+  <td><p>Get or sets the associated value from the collection as a single string.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_IHeaderDictionary_Item_" data-uid="Microsoft.Owin.IHeaderDictionary.Item*"></a>
   <h4 id="Microsoft_Owin_IHeaderDictionary_Item_System_String_" data-uid="Microsoft.Owin.IHeaderDictionary.Item(System.String)">Item[String]</h4>
-  <div class="markdown level1 summary"><p>Get or sets the associated value from the collection as a single string.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Get or sets the associated value from the collection as a single string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -121,9 +537,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The header name.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header name.</p>
 </td>
       </tr>
     </tbody>
@@ -138,19 +554,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>the associated value from the collection as a single string or null if the key is not present.</p>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the associated value from the collection as a single string or null if the key is not present.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  </table>
   <h3 id="methods">Methods
   </h3>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Data</th>
+  </tr>
+  <tr>
+  <td><a href="Append(String, String)">Append(String, String)</a></td>
+  <td><p>Add a new value. Appends to the header if already present</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_IHeaderDictionary_Append_" data-uid="Microsoft.Owin.IHeaderDictionary.Append*"></a>
   <h4 id="Microsoft_Owin_IHeaderDictionary_Append_System_String_System_String_" data-uid="Microsoft.Owin.IHeaderDictionary.Append(System.String,System.String)">Append(String, String)</h4>
-  <div class="markdown level1 summary"><p>Add a new value. Appends to the header if already present</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Add a new value. Appends to the header if already present</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -168,24 +599,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The header name.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header name.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">value</span></td>
-        <td><p>The header value.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header value.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="AppendCommaSeparatedValues(String, String[])">AppendCommaSeparatedValues(String, String[])</a></td>
+  <td><p>Quotes any values containing comas, and then coma joins all of the values with any existing values.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_IHeaderDictionary_AppendCommaSeparatedValues_" data-uid="Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues*"></a>
   <h4 id="Microsoft_Owin_IHeaderDictionary_AppendCommaSeparatedValues_System_String_System_String___" data-uid="Microsoft.Owin.IHeaderDictionary.AppendCommaSeparatedValues(System.String,System.String[])">AppendCommaSeparatedValues(String, String[])</h4>
-  <div class="markdown level1 summary"><p>Quotes any values containing comas, and then coma joins all of the values with any existing values.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Quotes any values containing comas, and then coma joins all of the values with any existing values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -203,24 +642,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The header name.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header name.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><xref uid="System.String" text="String" alt="System.String"/>[]</td>
         <td><span class="parametername">values</span></td>
-        <td><p>The header values.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header values.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="AppendValues(String, String[])">AppendValues(String, String[])</a></td>
+  <td><p>Add new values. Each item remains a separate array entry.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_IHeaderDictionary_AppendValues_" data-uid="Microsoft.Owin.IHeaderDictionary.AppendValues*"></a>
   <h4 id="Microsoft_Owin_IHeaderDictionary_AppendValues_System_String_System_String___" data-uid="Microsoft.Owin.IHeaderDictionary.AppendValues(System.String,System.String[])">AppendValues(String, String[])</h4>
-  <div class="markdown level1 summary"><p>Add new values. Each item remains a separate array entry.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Add new values. Each item remains a separate array entry.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -238,24 +685,33 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The header name.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header name.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><xref uid="System.String" text="String" alt="System.String"/>[]</td>
         <td><span class="parametername">values</span></td>
-        <td><p>The header values.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header values.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="GetCommaSeparatedValues(String)">GetCommaSeparatedValues(String)</a></td>
+  <td><p>Get the associated values from the collection separated into individual values.
+Quoted values will not be split, and the quotes will be removed.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_IHeaderDictionary_GetCommaSeparatedValues_" data-uid="Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues*"></a>
   <h4 id="Microsoft_Owin_IHeaderDictionary_GetCommaSeparatedValues_System_String_" data-uid="Microsoft.Owin.IHeaderDictionary.GetCommaSeparatedValues(System.String)">GetCommaSeparatedValues(String)</h4>
-  <div class="markdown level1 summary"><p>Get the associated values from the collection separated into individual values.
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="2" sourceendlinenumber="3">Get the associated values from the collection separated into individual values.
 Quoted values will not be split, and the quotes will be removed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -274,9 +730,9 @@ Quoted values will not be split, and the quotes will be removed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The header name.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header name.</p>
 </td>
       </tr>
     </tbody>
@@ -291,17 +747,25 @@ Quoted values will not be split, and the quotes will be removed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><p>the associated values from the collection separated into individual values, or null if the key is not present.</p>
+        <td><xref uid="System.Collections.Generic.IList`1" text="IList" alt="System.Collections.Generic.IList"/>&lt;<xref uid="System.String" text="String" alt="System.String"/>&gt;</td>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">the associated values from the collection separated into individual values, or null if the key is not present.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="Set(String, String)">Set(String, String)</a></td>
+  <td><p>Sets a specific header value.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_IHeaderDictionary_Set_" data-uid="Microsoft.Owin.IHeaderDictionary.Set*"></a>
   <h4 id="Microsoft_Owin_IHeaderDictionary_Set_System_String_System_String_" data-uid="Microsoft.Owin.IHeaderDictionary.Set(System.String,System.String)">Set(String, String)</h4>
-  <div class="markdown level1 summary"><p>Sets a specific header value.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Sets a specific header value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -319,24 +783,32 @@ Quoted values will not be split, and the quotes will be removed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The header name.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header name.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">value</span></td>
-        <td><p>The header value.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header value.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="SetCommaSeparatedValues(String, String[])">SetCommaSeparatedValues(String, String[])</a></td>
+  <td><p>Quotes any values containing comas, and then coma joins all of the values.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_IHeaderDictionary_SetCommaSeparatedValues_" data-uid="Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues*"></a>
   <h4 id="Microsoft_Owin_IHeaderDictionary_SetCommaSeparatedValues_System_String_System_String___" data-uid="Microsoft.Owin.IHeaderDictionary.SetCommaSeparatedValues(System.String,System.String[])">SetCommaSeparatedValues(String, String[])</h4>
-  <div class="markdown level1 summary"><p>Quotes any values containing comas, and then coma joins all of the values.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Quotes any values containing comas, and then coma joins all of the values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -354,24 +826,32 @@ Quoted values will not be split, and the quotes will be removed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The header name.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header name.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><xref uid="System.String" text="String" alt="System.String"/>[]</td>
         <td><span class="parametername">values</span></td>
-        <td><p>The header values.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header values.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="SetValues(String, String[])">SetValues(String, String[])</a></td>
+  <td><p>Sets the specified header values without modification.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_IHeaderDictionary_SetValues_" data-uid="Microsoft.Owin.IHeaderDictionary.SetValues*"></a>
   <h4 id="Microsoft_Owin_IHeaderDictionary_SetValues_System_String_System_String___" data-uid="Microsoft.Owin.IHeaderDictionary.SetValues(System.String,System.String[])">SetValues(String, String[])</h4>
-  <div class="markdown level1 summary"><p>Sets the specified header values without modification.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Sets the specified header values without modification.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -389,18 +869,20 @@ Quoted values will not be split, and the quotes will be removed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><xref uid="System.String" text="String" alt="System.String"/></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The header name.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header name.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span>[]</td>
+        <td><xref uid="System.String" text="String" alt="System.String"/>[]</td>
         <td><span class="parametername">values</span></td>
-        <td><p>The header values.</p>
+        <td><p sourcefile="api/Microsoft.Owin.IHeaderDictionary.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The header values.</p>
 </td>
       </tr>
     </tbody>
+  </table>
+  -->
   </table>
 </article>
           </div>
@@ -420,18 +902,83 @@ Quoted values will not be split, and the quotes will be removed.</p>
       </div>
       
       <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Copyright © 2018 Varigence<br>Generated by <strong>DocFX</strong></span>
+      <div id="footer-wrapper" style="margin-top: 30px;">
+      <div id="footerCap"></div>
+      <div id="footer">
+      <div class="product-section">
+          <div class="inner-container">
+              <div id="subscribe-wrapper">
+                  <div id="subscribe">
+                      <h3 class="join-now-copy">Join our newsletter to<br> stay up with the latest<br> product releases!</h3>
+                      <div class="clearfix">
+                          <div class="join-now-form">
+                              <img alt="Loading..." src="/Content/Images/Loaders/orange-loader.gif" style="display: none" id="mailchimp-loader">
+                              <input id="subscribe-textbox" type="email" title="Enter your email address here and click submit to subscribe to our news letter." placeholder="Email Address" class="form-control">
+                              <button id="subscribe-button" class="btn btn-blue-white" title="Enter your email address and click here to subscribe to our news letter" data-loading-text="Subscribing">Subscribe</button>
+                          </div>
+                      </div>
+                      <span style="display: none;" id="subscribe-success">Thank you! You should be receiving a confirmation email shortly.</span>
+                      <span style="display: none; color: red;" id="subscribe-error">Error subscribing. Please try again.</span>
+                      <div class="social">
+                          <p>You can follow us here too!</p>
+                          <a href="https://www.facebook.com/varigence" target="_blank"><i class="fa fa-facebook"></i></a>
+                          <a href="https://twitter.com/varigence" target="_blank"><i class=" fa fa-twitter"></i></a>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
+      </div>
+      <div class="product-section">
+          <div class="inner-container">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-3">
+                          <ul>
+                              <li>Products</li>
+                              <li><a href="/Products">Products</a></li>
+                                  <li><a href="/Biml">Biml</a></li>
+                                                          <li><a href="/Mist">BimlStudio</a></li>
+                                                          <li><a href="/BimlFlex">BimlFlex</a></li>
+                                                          <li><a href="/BimlExpress">BimlExpress</a></li>
+                                                          <li><a href="/BimlOnline">BimlOnline</a></li>
+                                                  </ul>
+                      </div>
+                      <div class="col-sm-3">
+                          <ul>
+                              <li>Company</li>
+                              <li><a href="/Company">About Us</a></li>
+                              <li><a href="/Partners">Partners</a></li>
+                              <li><a href="/Blog">Blog</a></li>
+                              <li><a href="/Store">Store</a></li>
+                              <li><a href="/Support">Support</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-3">
+                          <ul>
+                              <li>Legal</li>
+                              <li><a href="/Documentation/Legal/PrivacyPolicy">Privacy Policy</a></li>
+                              <li><a href="/Documentation/Legal/TermsOfUse">Terms of Use</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="product-section">
+          <div class="inner-container">
+              <p style="font-size: 12px; padding: 10px 0;">Copyright © Varigence 2017</p>
+          </div>
+      </div>
+      </div>
+      </div>
       </footer>
     </div>
+    
+    <!--[if gte IE 9]><!-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <!--<![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct AddressCollection
    ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.33.1.0">
     
-    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -21,9 +21,411 @@
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix">
+  </head>  <body data-spy="scroll" data-target="#affix">
     <div id="wrapper">
+	  <div id="header">
+	      <div class="container">
+	          <button id="main-nav-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" aria-controls="navbar">
+	              <span class="sr-only">Toggle navigation</span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	          </button>
+	  
+	          <li id="mobile-icon-search"><img class="header-search-icon" src="/Content/Images/icons/search.png"></li>
+	  
+	          <div class="logo-link">
+	              <a href="/">
+	                  <img id="site-logo" src="/Content/images/varigence-icon.png" alt="Varigence">
+	              </a>
+	          </div>
+	  
+	          <div id="mobile-search-area">
+	              <div id="search-form">
+	  <form action="/Search" method="get">                    <button type="submit" name="search" id="search-submit"><img src="/Content/Images/icons/search.png"></button>
+	                      <input type="search" class="form-control input-sm" name="q" id="search" placeholder="Start Typing...">
+	  </form>            </div>
+	          </div>
+	          <div id="main-menu" class="navbar-collapse collapse">
+	              
+	              <ul class="nav navbar-nav">
+	      <div id="main-menu-triangle" class="triangle-up"></div>
+	  
+	      
+	      
+	      <li class=" direct"><a href="/Company">About Us</a></li>
+	  
+	      <li id="productstab" class="">
+	      <a class="dropdown-link" href="/Products">Products<span class="arrow-down"><i class="fa fa-angle-down"></i></span></a>
+	      <div class="menu-column-container">
+	          <div id="menu-column-container-products" class="menu-container">
+	  
+	              <div class="mobile-menu">
+	                  <ul>
+	                      <li class="menu-item-header"><a href="/Products">Overview</a></li>
+	                  </ul>
+	                  <ul>
+	                          <li><a href="/Biml">Biml</a></li>
+	                                              <li><a href="/Mist">BimlStudio</a></li>
+	                                              <li><a href="/BimlFlex">BimlFlex</a></li>
+	                                              <li><a href="/BimlExpress">BimlExpress</a></li>
+	                                              <li><a href="/BimlOnline">BimlOnline</a></li>
+	                      
+	                  </ul>
+	  
+	              </div>
+	  
+	              <div class="desktop-menu">
+	                  <ul class="tab-control">
+	                      <li class="menu-item-header direct"><a href="/Products" data-target="#overview-products-tab-pane" data-toggle="tab">Overview</a></li>
+	                      
+	                          <li class="menu-item-header active direct">
+	                              <a href="/Biml" data-target="#biml-tab-pane" data-toggle="tab">Biml</a>
+	                          </li>
+	                                              <li class="menu-item-header direct">
+	                              <a href="/Mist" data-target="#bimlstudio-tab-pane" data-toggle="tab">BimlStudio</a>
+	                          </li>
+	                                              <li class="menu-item-header direct">
+	                              <a href="/BimlFlex" data-target="#bimlflex-tab-pane" data-toggle="tab">BimlFlex</a>
+	                          </li>
+	                                              <li class="menu-item-header direct">
+	                              <a href="/BimlExpress" data-target="#bimlexpress-tab-pane" data-toggle="tab">BimlExpress</a>
+	                          </li>
+	                                              <li class="menu-item-header direct">
+	                              <a href="/BimlOnline" data-target="#bimlonline-tab-pane" data-toggle="tab">BimlOnline</a>
+	                          </li>
+	                                      </ul>
+	  
+	                  <div class="tab-content">
+	                      <div id="overview-products-tab-pane" class="tab-pane">
+	                          <div class="center-content">
+	                              <img src="/Content/Images/NavMenu/Product-Overview-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Business Intelligence software for everyone.</p>
+	                                  <a href="/Products">Learn More �</a>
+	                              </div>
+	                          </div>
+	                      </div>
+	                          <div id="biml-tab-pane" class="tab-pane active">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/Biml-Product-Menu.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>Human readable and writable XML language for automating and creating business intelligence solutions.</p>
+	                                      <a href="/Biml">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                              <div id="bimlstudio-tab-pane" class="tab-pane">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/BimlStudio-Product.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>The only integrated development environment for Biml.</p>
+	                                      <a href="/BimlStudio">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                              <div id="bimlflex-tab-pane" class="tab-pane">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/BimlFlex-Product-Menu.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>A flexible and extensible framework with several extension points making it completely customizable.</p>
+	                                      <a href="/BimlFlex">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                              <div id="bimlexpress-tab-pane" class="tab-pane">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/BimlExpress-Product-Menu.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>Get more out of Visual Studio with BimlExpress. It's even fully functional with SQL Server 2016.</p>
+	                                      <a href="/BimlExpress">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                              <div id="bimlonline-tab-pane" class="tab-pane">
+	                              <div class="center-content">
+	                                  <img src="/Content/Images/NavMenu/BimlOnline-Product-Menu.png" class="product-menu-icon">
+	                                  <div class="text">
+	                                      <p>The easiest way to use Biml without installing any software.</p>
+	                                      <a href="/BimlOnline">Learn More �</a>
+	                                  </div>
+	                              </div>
+	                          </div>
+	                                      </div>
+	              </div>
+	          </div>
+	      </div>
+	  </li>
+	  
+	      <li id="supporttab" class="">
+	      <a class="dropdown-link" href="/Support">Support<span class="arrow-down"><i class="fa fa-angle-down"></i></span></a>
+	      <div class="menu-column-container">
+	          <div id="menu-column-container-support" class="menu-container">
+	  
+	              <div class="mobile-menu">
+	                  <ul>
+	                      <li class="menu-item-header"><a href="/Support">Overview</a></li>
+	                  </ul>
+	                  <ul>
+	                      <li class="menu-item-header submenu biml">
+	                          <a class="dropdown-link">
+	                              Biml
+	                              <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+	                          </a>
+	                          <ul>
+	                              <li><a href="/Documentation/Language/Index">Language Reference</a></li>
+	                              <li><a href="/Documentation/Api/Index">API Reference</a></li>
+	                              <li><a href="/Documentation">Snippets</a></li>
+	                              <li><a class="main-menu-link" href="/Forums?forumName=Biml">Forums</a></li>
+	                              <li><a href="/Training">Training</a></li>
+	                          </ul>
+	                      </li>
+	                  </ul>
+	                  <ul>
+	                      <li class="menu-item-header submenu mist">
+	                          <a class="dropdown-link">
+	                              BimlStudio
+	                              <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+	                          </a>
+	                          <ul>
+	                              <li><a href="/Documentation/BimlStudio">User Guide</a></li>
+	                              <li><a href="/Documentation/Samples/Mist">Snippets</a></li>
+	                              <li><a class="main-menu-link" href="/Forums?forumName=BimlStudio">Forums</a></li>
+	                              <li><a href="/Training">Training</a></li>
+	                          </ul>
+	                      </li>
+	                  </ul>
+	                  <ul>
+	                      <li class="menu-item-header submenu bimlflex">
+	                          <a class="dropdown-link">
+	                              BimlFlex
+	                              <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+	                          </a>
+	                          <ul>
+	                              <li><a href="/Documentation/BimlFlex">User Guide</a></li>
+	                              <li><a href="/Documentation/BimlFlex/Metadata">Metadata Reference</a></li>
+	                              <li><a href="/Documentation/BimlFlex/ExtensionPoints">Extension Points</a></li>
+	                          </ul>
+	                      </li>
+	                  </ul>
+	  
+	                  <ul>
+	                      <li class="menu-item-header submenu bimlexpress">
+	                          <a class="dropdown-link">
+	                              BimlExpress
+	                              <span class="arrow-down"><i class="fa fa-angle-down"></i></span>
+	                          </a>
+	                          <ul>
+	                              <li><a href="/Documentation/BimlExpress">User Guide</a></li>
+	                              <li><a class="main-menu-link" href="/Forums?forumName=Biml">Forums</a></li>
+	                          </ul>
+	                      </li>
+	                  </ul>
+	              </div>
+	  
+	              <div class="desktop-menu">
+	                  <ul class="tab-control">
+	                      <li class="menu-item-header direct"><a href="/Support" data-target="#overview-support-tab-pane" data-toggle="tab">Overview</a></li>
+	                      <li class="menu-item-header active"><a data-target="#biml-support-tab-pane" data-toggle="tab">Biml</a></li>
+	                      <li class="menu-item-header"><a data-target="#bimlstudio-support-tab-pane" data-toggle="tab">BimlStudio</a></li>
+	                      <li class="menu-item-header"><a data-target="#bimlflex-support-tab-pane" data-toggle="tab">BimlFlex</a></li>
+	                      <li class="menu-item-header"><a data-target="#bimlexpress-support-tab-pane" data-toggle="tab">BimlExpress</a></li>
+	                  </ul>
+	  
+	                  <div class="tab-content">
+	                      <div id="overview-support-tab-pane" class="tab-pane">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/Support-Documentation-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>At Varigence, we offer a comprehensive library of professional support resources.</p>
+	                                  <a href="/Products">Learn More �</a>
+	                              </div>
+	                          </div>
+	                      </div>
+	                      <div id="biml-support-tab-pane" class="tab-pane active">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/Biml-Product-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Check out our comprehensive reference materials, samples and forums.</p>
+	                                  <a href="/Documentation/Language/Index">Learn More �</a>
+	                              </div>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="/Documentation/Language/Index">Language Reference</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Documentation/Api/Index">API Reference</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Documentation">Snippets</a>
+	                              </li>
+	                              <li>
+	                                  <a class="main-menu-link" href="/Forums?forumName=Biml&amp;threadID=0">Forums</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Training">Training</a>
+	                              </li>
+	                          </ul>
+	                      </div>
+	                      <div id="bimlstudio-support-tab-pane" class="tab-pane">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/BimlStudio-Product.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Check out our comprehensive reference materials and forums.</p>
+	                                  <a href="/Documentation/BimlStudio">Learn More �</a>
+	                              </div>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="/Documentation/BimlStudio">User Guide</a>
+	  
+	                              </li>
+	                              <li>
+	                                  <a class="main-menu-link" href="/Forums?forumName=BimlStudio">Forums</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Training">Training</a>
+	                              </li>
+	                          </ul>
+	                      </div>
+	                      <div id="bimlflex-support-tab-pane" class="tab-pane">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/BimlFlex-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Check out our comprehensive reference materials and forums.</p>
+	                                  <a href="/Documentation/BimlStudio">Learn More �</a>
+	                              </div>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="/Documentation/BimlFlex">User Guide</a>
+	                              </li>
+	                              <li>
+	                                  <a href="/Documentation/BimlFlex/Metadata">Metadata Reference</a>
+	                              </li>
+	                              <li><a href="/Documentation/BimlFlex/ExtensionPoints">Extension Points</a></li>
+	  
+	                          </ul>
+	                      </div>
+	                      <div id="bimlexpress-support-tab-pane" class="tab-pane">
+	                          <div class="right-content">
+	                              <img src="/Content/Images/NavMenu/BimlExpress-Product-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Check out our comprehensive reference materials, samples and forums.</p>
+	                                  <a href="/Documentation/BimlExpress">Learn More �</a>
+	                              </div>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="/Documentation/BimlExpress">User Guide</a>
+	                              </li>
+	                              <li>
+	                                  <a class="main-menu-link" href="/Forums?forumName=Biml">Forums</a>
+	                              </li>
+	                          </ul>
+	                      </div>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+	  </li>
+	  
+	      
+	  
+	      <li id="partnerstab" class="">
+	      <a class="dropdown-link" href="/Partners">Partners<span class="arrow-down"><i class="fa fa-angle-down"></i></span></a>
+	      <div class="menu-column-container">
+	          <div id="menu-column-container-products" class="menu-container">
+	  
+	              <div class="mobile-menu">
+	                  <ul>
+	  
+	                      <li><a href="/Partners">Consulting Partners</a></li>
+	                      <li><a href="/Partners/BimlHeroes">BimlHeroes</a></li>
+	  
+	                  </ul>
+	  
+	  
+	              </div>
+	  
+	              <div class="desktop-menu">
+	                  <ul class="tab-control">
+	                      
+	                      <li class="menu-item-header active direct">
+	                          <a href="/Partners" data-target="#partners-tab-pane" data-toggle="tab">Consulting Partners</a>
+	                      </li>
+	                      <li class="menu-item-header direct">
+	                          <a href="/Partners/BimlHeroes" data-target="#bimlheroes-tab-pane" data-toggle="tab">BimlHeroes</a>
+	                      </li>
+	                  </ul>
+	  
+	                  <div class="tab-content">
+	  
+	                      <div id="partners-tab-pane" class="tab-pane active">
+	                          <div class="center-content">
+	                              <img src="/Content/Images/NavMenu/Partners-Consultants-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>Need Biml and BimlStudio consulting? Check out our list of Varigence partners.</p>
+	                                  <a href="/Partners">Learn More �</a>
+	                              </div>
+	                          </div>
+	                      </div>
+	                      <div id="bimlheroes-tab-pane" class="tab-pane">
+	                          <div class="center-content">
+	                              <img src="/Content/Images/NavMenu/Partners-BimlHero-Menu.png" class="product-menu-icon">
+	                              <div class="text">
+	                                  <p>BimlHeroes are the only Varigence certified Biml experts.</p>
+	                                  <a>Learn More �</a>
+	                              </div>
+	                          </div>
+	                      </div>
+	                  </div>
+	              </div>
+	          </div>
+	      </div>
+	  </li>
+	      
+	  
+	      <li class=" direct"><a href="/Store">Store</a></li>
+	      
+	      <li class=" direct"><a href="/Blog">Blog</a></li>
+	      <li id="icon-search">
+	          <img class="header-search-icon" src="/Content/Images/icons/search.png">
+	          <div class="search-enabled" id="search-area">
+	              <div id="search-form">
+	  <form action="/Search" method="get">                    <button type="submit" name="search" id="search-submit"><img src="/Content/Images/icons/search.png"></button>
+	                      <input type="search" class="form-control input-sm" name="q" id="search" placeholder="Start Typing...">
+	  </form>            </div>
+	          </div>
+	      </li>
+	      <li>
+	          <div class="logon-area">
+	                  <div id="logon-shop">
+	          <a id="logon-link">LOG IN</a>
+	          <span>|</span>
+	          <a href="/Account/Register">REGISTER</a>
+	      </div>
+	      <div id="logon-pane-triangle" class="triangle-up"></div>
+	      <div id="logon-pane">
+	  
+	  <form action="/Account/Login" method="post" novalidate="novalidate">            <input type="hidden" name="returnUrl" value="/">
+	  <input class="form-control input-sm valid" data-val="true" data-val-required="The Email field is required." id="Email" name="Email" placeholder="email" type="text" value="" aria-required="true" aria-invalid="false" aria-describedby="Email-error"><input class="form-control input-sm valid" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="password" type="password" aria-required="true" aria-invalid="false" aria-describedby="Password-error">            <input type="submit" class="btn btn-blue-white btn-standard btn-sm" value="Log In" id="logonbutton">
+	              <div class="bottom-text">
+	                  <span id="remember-me">Remember me?</span>
+	                  <input class="check-box" data-val="true" data-val-required="The Persist field is required." id="Persist" name="Persist" type="checkbox" value="true"><input name="Persist" type="hidden" value="false">
+	                  <a href="/Account/ForgotPassword" id="forgot-password-link">Forgot password?</a>
+	              </div>    
+	  </form>    </div>
+	  
+	          </div>
+	      </li>
+	  </ul>
+	  
+	              
+	          </div>
+	      </div>
+	  </div>      <!--
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
@@ -36,7 +438,7 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" src="../images/Varigence-Logo.png" height="46" width="46" alt="">
+                <img id="logo" src="../images/Varigence-Logo.png" height="46" width="46" alt="" >
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -57,6 +459,7 @@
           </div>
         </div>
       </header>
+      -->
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -88,7 +491,7 @@
   </div>
   
   
-  <h5 id="Microsoft_Owin_BuilderProperties_AddressCollection_syntax">Syntax</h5>
+  <h3 id="Microsoft_Owin_BuilderProperties_AddressCollection_syntax">Syntax</h3>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public struct AddressCollection : IEnumerable&lt;Address&gt;, IEnumerable</code></pre>
   </div>
@@ -104,11 +507,24 @@
   
   <h3 id="constructors">Constructors
   </h3>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Data</th>
+  </tr>
+  <tr>
+  <td><a href="AddressCollection(IList&lt;IDictionary&lt;String, Object&gt;&gt;)">AddressCollection(IList&lt;IDictionary&lt;String, Object&gt;&gt;)</a></td>
+  <td><p>Initializes a new instance of the <a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a> class.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection__ctor_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.#ctor*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection__ctor_System_Collections_Generic_IList_System_Collections_Generic_IDictionary_System_String_System_Object___" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.#ctor(System.Collections.Generic.IList{System.Collections.Generic.IDictionary{System.String,System.Object}})">AddressCollection(IList&lt;IDictionary&lt;String, Object&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a> class.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Initializes a new instance of the <xref href="Microsoft.Owin.BuilderProperties.AddressCollection" data-throw-if-not-resolved="false"></xref> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -126,20 +542,35 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><xref uid="System.Collections.Generic.IList`1" text="IList" alt="System.Collections.Generic.IList"/>&lt;<xref uid="System.Collections.Generic.IDictionary`2" text="IDictionary" alt="System.Collections.Generic.IDictionary"/>&lt;<xref uid="System.String" text="String" alt="System.String"/>, <xref uid="System.Object" text="Object" alt="System.Object"/>&gt;&gt;</td>
         <td><span class="parametername">list</span></td>
-        <td><p>The address list to set to the collection.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The address list to set to the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  </table>
   <h3 id="properties">Properties
   </h3>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Data</th>
+  </tr>
+  <tr>
+  <td><a href="Count">Count</a></td>
+  <td><p>Gets the number of elements in the collection.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_Count_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Count*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_Count" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Count">Count</h4>
-  <div class="markdown level1 summary"><p>Gets the number of elements in the collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the number of elements in the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -156,17 +587,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The number of elements in the collection.</p>
+        <td><xref uid="System.Int32" text="Int32" alt="System.Int32"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The number of elements in the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="Item[Int32]">Item[Int32]</a></td>
+  <td><p>Gets the item with the specified index from the collection.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_Item_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Item*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_Item_System_Int32_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Item(System.Int32)">Item[Int32]</h4>
-  <div class="markdown level1 summary"><p>Gets the item with the specified index from the collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the item with the specified index from the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -184,9 +623,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
+        <td><xref uid="System.Int32" text="Int32" alt="System.Int32"/></td>
         <td><span class="parametername">index</span></td>
-        <td><p>The index.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The index.</p>
 </td>
       </tr>
     </tbody>
@@ -201,17 +640,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.Owin.BuilderProperties.Address.html">Address</a></td>
-        <td><p>The item with the specified index.</p>
+        <td><xref uid="Microsoft.Owin.BuilderProperties.Address" text="Address" alt="Microsoft.Owin.BuilderProperties.Address"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The item with the specified index.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="List">List</a></td>
+  <td><p>Gets the underlying address list.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_List_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.List*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_List" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.List">List</h4>
-  <div class="markdown level1 summary"><p>Gets the underlying address list.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the underlying address list.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -228,19 +675,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;&gt;</td>
-        <td><p>The underlying address list.</p>
+        <td><xref uid="System.Collections.Generic.IList`1" text="IList" alt="System.Collections.Generic.IList"/>&lt;<xref uid="System.Collections.Generic.IDictionary`2" text="IDictionary" alt="System.Collections.Generic.IDictionary"/>&lt;<xref uid="System.String" text="String" alt="System.String"/>, <xref uid="System.Object" text="Object" alt="System.Object"/>&gt;&gt;</td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The underlying address list.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  </table>
   <h3 id="methods">Methods
   </h3>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Data</th>
+  </tr>
+  <tr>
+  <td><a href="Add(Address)">Add(Address)</a></td>
+  <td><p>Adds the specified address to the collection.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_Add_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Add*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_Add_Microsoft_Owin_BuilderProperties_Address_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Add(Microsoft.Owin.BuilderProperties.Address)">Add(Address)</h4>
-  <div class="markdown level1 summary"><p>Adds the specified address to the collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Adds the specified address to the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -258,18 +720,26 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.Owin.BuilderProperties.Address.html">Address</a></td>
+        <td><xref uid="Microsoft.Owin.BuilderProperties.Address" text="Address" alt="Microsoft.Owin.BuilderProperties.Address"/></td>
         <td><span class="parametername">address</span></td>
-        <td><p>The address to add to the collection.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The address to add to the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="Create()">Create()</a></td>
+  <td><p>Creates a new empty instance of <a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a>.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_Create_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Create*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_Create" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Create">Create()</h4>
-  <div class="markdown level1 summary"><p>Creates a new empty instance of <a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a>.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Creates a new empty instance of <xref href="Microsoft.Owin.BuilderProperties.AddressCollection" data-throw-if-not-resolved="false"></xref>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -286,17 +756,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a></td>
-        <td><p>A new empty instance of <a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a>.</p>
+        <td><xref uid="Microsoft.Owin.BuilderProperties.AddressCollection" text="AddressCollection" alt="Microsoft.Owin.BuilderProperties.AddressCollection"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">A new empty instance of <xref href="Microsoft.Owin.BuilderProperties.AddressCollection" data-throw-if-not-resolved="false"></xref>.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="Equals(AddressCollection)">Equals(AddressCollection)</a></td>
+  <td><p>Determines whether the current collection is equal to the specified collection.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_Equals_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Equals*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_Equals_Microsoft_Owin_BuilderProperties_AddressCollection_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Equals(Microsoft.Owin.BuilderProperties.AddressCollection)">Equals(AddressCollection)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the current collection is equal to the specified collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Determines whether the current collection is equal to the specified collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -314,9 +792,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a></td>
+        <td><xref uid="Microsoft.Owin.BuilderProperties.AddressCollection" text="AddressCollection" alt="Microsoft.Owin.BuilderProperties.AddressCollection"/></td>
         <td><span class="parametername">other</span></td>
-        <td><p>The other collection to compare to the current collection.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The other collection to compare to the current collection.</p>
 </td>
       </tr>
     </tbody>
@@ -331,17 +809,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if current collection is equal to the specified collection; otherwise, false.</p>
+        <td><xref uid="System.Boolean" text="Boolean" alt="System.Boolean"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">true if current collection is equal to the specified collection; otherwise, false.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="Equals(Object)">Equals(Object)</a></td>
+  <td><p>Determines whether the current collection is equal to the specified object.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_Equals_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Equals*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_Equals_System_Object_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the current collection is equal to the specified object.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Determines whether the current collection is equal to the specified object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -359,9 +845,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
+        <td><xref uid="System.Object" text="Object" alt="System.Object"/></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The object to compare to the current collection.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The object to compare to the current collection.</p>
 </td>
       </tr>
     </tbody>
@@ -376,19 +862,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if current collection is equal to the specified object; otherwise, false.</p>
+        <td><xref uid="System.Boolean" text="Boolean" alt="System.Boolean"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">true if current collection is equal to the specified object; otherwise, false.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <div><xref uid="System.ValueType.Equals(System.Object)" altProperty="fullName" displayProperty="nameWithType"/></div>
+  -->
+  <tr>
+  <td><a href="GetEnumerator()">GetEnumerator()</a></td>
+  <td><p>Gets the enumerator that iterates through the collection.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_GetEnumerator_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.GetEnumerator*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_GetEnumerator" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"><p>Gets the enumerator that iterates through the collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the enumerator that iterates through the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -405,17 +899,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="Microsoft.Owin.BuilderProperties.Address.html">Address</a>&gt;</td>
-        <td><p>The enumerator that can be used to iterate through the collection.</p>
+        <td><xref uid="System.Collections.Generic.IEnumerator`1" text="IEnumerator" alt="System.Collections.Generic.IEnumerator"/>&lt;<xref uid="Microsoft.Owin.BuilderProperties.Address" text="Address" alt="Microsoft.Owin.BuilderProperties.Address"/>&gt;</td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The enumerator that can be used to iterate through the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="GetHashCode()">GetHashCode()</a></td>
+  <td><p>Gets the hash code for this instance.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_GetHashCode_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.GetHashCode*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_GetHashCode" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"><p>Gets the hash code for this instance.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the hash code for this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -432,21 +934,36 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><p>The hash code for this instance.</p>
+        <td><xref uid="System.Int32" text="Int32" alt="System.Int32"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The hash code for this instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <div><xref uid="System.ValueType.GetHashCode" altProperty="fullName" displayProperty="nameWithType"/></div>
+  -->
+  </table>
   <h3 id="operators">Operators
   </h3>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Data</th>
+  </tr>
+  <tr>
+  <td><a href="Equality(AddressCollection, AddressCollection)">Equality(AddressCollection, AddressCollection)</a></td>
+  <td><p>Determines whether the first collection is equal to the second collection.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_op_Equality_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.op_Equality*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_op_Equality_Microsoft_Owin_BuilderProperties_AddressCollection_Microsoft_Owin_BuilderProperties_AddressCollection_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.op_Equality(Microsoft.Owin.BuilderProperties.AddressCollection,Microsoft.Owin.BuilderProperties.AddressCollection)">Equality(AddressCollection, AddressCollection)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the first collection is equal to the second collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Determines whether the first collection is equal to the second collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -464,15 +981,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a></td>
+        <td><xref uid="Microsoft.Owin.BuilderProperties.AddressCollection" text="AddressCollection" alt="Microsoft.Owin.BuilderProperties.AddressCollection"/></td>
         <td><span class="parametername">left</span></td>
-        <td><p>The first collection to compare.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The first collection to compare.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a></td>
+        <td><xref uid="Microsoft.Owin.BuilderProperties.AddressCollection" text="AddressCollection" alt="Microsoft.Owin.BuilderProperties.AddressCollection"/></td>
         <td><span class="parametername">right</span></td>
-        <td><p>The second collection to compare.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The second collection to compare.</p>
 </td>
       </tr>
     </tbody>
@@ -487,17 +1004,25 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if both collections are equal; otherwise, false.</p>
+        <td><xref uid="System.Boolean" text="Boolean" alt="System.Boolean"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">true if both collections are equal; otherwise, false.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  <tr>
+  <td><a href="Inequality(AddressCollection, AddressCollection)">Inequality(AddressCollection, AddressCollection)</a></td>
+  <td><p>Determines whether the first collection is not equal to the second collection.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_op_Inequality_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.op_Inequality*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_op_Inequality_Microsoft_Owin_BuilderProperties_AddressCollection_Microsoft_Owin_BuilderProperties_AddressCollection_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.op_Inequality(Microsoft.Owin.BuilderProperties.AddressCollection,Microsoft.Owin.BuilderProperties.AddressCollection)">Inequality(AddressCollection, AddressCollection)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the first collection is not equal to the second collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Determines whether the first collection is not equal to the second collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -515,15 +1040,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a></td>
+        <td><xref uid="Microsoft.Owin.BuilderProperties.AddressCollection" text="AddressCollection" alt="Microsoft.Owin.BuilderProperties.AddressCollection"/></td>
         <td><span class="parametername">left</span></td>
-        <td><p>The first collection to compare.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The first collection to compare.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Microsoft.Owin.BuilderProperties.AddressCollection.html">AddressCollection</a></td>
+        <td><xref uid="Microsoft.Owin.BuilderProperties.AddressCollection" text="AddressCollection" alt="Microsoft.Owin.BuilderProperties.AddressCollection"/></td>
         <td><span class="parametername">right</span></td>
-        <td><p>The second collection to compare.</p>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The second collection to compare.</p>
 </td>
       </tr>
     </tbody>
@@ -538,19 +1063,34 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p>true if both collections are not equal; otherwise, false.</p>
+        <td><xref uid="System.Boolean" text="Boolean" alt="System.Boolean"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">true if both collections are not equal; otherwise, false.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  -->
+  </table>
   <h3 id="eii">Explicit Interface Implementations
   </h3>
+  <table>
+  <tr>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Data</th>
+  </tr>
+  <tr>
+  <td><a href="IEnumerable.GetEnumerator()">IEnumerable.GetEnumerator()</a></td>
+  <td><p>Gets the enumerator that iterates through the collection.</p>
+</td>
+  <td></td>
+  </tr>
+  <!--
   
   
   <a id="Microsoft_Owin_BuilderProperties_AddressCollection_System_Collections_IEnumerable_GetEnumerator_" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.System#Collections#IEnumerable#GetEnumerator*"></a>
   <h4 id="Microsoft_Owin_BuilderProperties_AddressCollection_System_Collections_IEnumerable_GetEnumerator" data-uid="Microsoft.Owin.BuilderProperties.AddressCollection.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
-  <div class="markdown level1 summary"><p>Gets the enumerator that iterates through the collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Gets the enumerator that iterates through the collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -567,11 +1107,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.IEnumerator</span></td>
-        <td><p>The enumerator that can be used to iterate through the collection.</p>
+        <td><xref uid="System.Collections.IEnumerator" text="IEnumerator" alt="System.Collections.IEnumerator"/></td>
+        <td><p sourcefile="api/Microsoft.Owin.BuilderProperties.AddressCollection.yml" sourcestartlinenumber="1" sourceendlinenumber="1">The enumerator that can be used to iterate through the collection.</p>
 </td>
       </tr>
     </tbody>
+  </table>
+  -->
   </table>
   <h3 id="implements">Implements</h3>
   <div>
@@ -598,18 +1140,83 @@
       </div>
       
       <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Copyright © 2018 Varigence<br>Generated by <strong>DocFX</strong></span>
+      <div id="footer-wrapper" style="margin-top: 30px;">
+      <div id="footerCap"></div>
+      <div id="footer">
+      <div class="product-section">
+          <div class="inner-container">
+              <div id="subscribe-wrapper">
+                  <div id="subscribe">
+                      <h3 class="join-now-copy">Join our newsletter to<br> stay up with the latest<br> product releases!</h3>
+                      <div class="clearfix">
+                          <div class="join-now-form">
+                              <img alt="Loading..." src="/Content/Images/Loaders/orange-loader.gif" style="display: none" id="mailchimp-loader">
+                              <input id="subscribe-textbox" type="email" title="Enter your email address here and click submit to subscribe to our news letter." placeholder="Email Address" class="form-control">
+                              <button id="subscribe-button" class="btn btn-blue-white" title="Enter your email address and click here to subscribe to our news letter" data-loading-text="Subscribing">Subscribe</button>
+                          </div>
+                      </div>
+                      <span style="display: none;" id="subscribe-success">Thank you! You should be receiving a confirmation email shortly.</span>
+                      <span style="display: none; color: red;" id="subscribe-error">Error subscribing. Please try again.</span>
+                      <div class="social">
+                          <p>You can follow us here too!</p>
+                          <a href="https://www.facebook.com/varigence" target="_blank"><i class="fa fa-facebook"></i></a>
+                          <a href="https://twitter.com/varigence" target="_blank"><i class=" fa fa-twitter"></i></a>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
+      </div>
+      <div class="product-section">
+          <div class="inner-container">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-3">
+                          <ul>
+                              <li>Products</li>
+                              <li><a href="/Products">Products</a></li>
+                                  <li><a href="/Biml">Biml</a></li>
+                                                          <li><a href="/Mist">BimlStudio</a></li>
+                                                          <li><a href="/BimlFlex">BimlFlex</a></li>
+                                                          <li><a href="/BimlExpress">BimlExpress</a></li>
+                                                          <li><a href="/BimlOnline">BimlOnline</a></li>
+                                                  </ul>
+                      </div>
+                      <div class="col-sm-3">
+                          <ul>
+                              <li>Company</li>
+                              <li><a href="/Company">About Us</a></li>
+                              <li><a href="/Partners">Partners</a></li>
+                              <li><a href="/Blog">Blog</a></li>
+                              <li><a href="/Store">Store</a></li>
+                              <li><a href="/Support">Support</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-3">
+                          <ul>
+                              <li>Legal</li>
+                              <li><a href="/Documentation/Legal/PrivacyPolicy">Privacy Policy</a></li>
+                              <li><a href="/Documentation/Legal/TermsOfUse">Terms of Use</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="product-section">
+          <div class="inner-container">
+              <p style="font-size: 12px; padding: 10px 0;">Copyright © Varigence 2017</p>
+          </div>
+      </div>
+      </div>
+      </div>
       </footer>
     </div>
+    
+    <!--[if gte IE 9]><!-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <!--<![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

@@ -23,6 +23,7 @@ references:
   name: Class2
   href: api-vb/Class2.Class2.html#Class2_Class2__ctor_
   commentId: Overload:Class2.Class2.#ctor
+  isSpec: "True"
   fullName: Class2.Class2.Class2
   nameWithType: Class2.Class2
 - uid: Class2.Class2.ConvertToDouble
@@ -35,6 +36,7 @@ references:
   name: ConvertToDouble
   href: api-vb/Class2.Class2.html#Class2_Class2_ConvertToDouble_
   commentId: Overload:Class2.Class2.ConvertToDouble
+  isSpec: "True"
   fullName: Class2.Class2.ConvertToDouble
   nameWithType: Class2.ConvertToDouble
 - uid: Class2.Class2.InnerClass
@@ -53,6 +55,7 @@ references:
   name: Name
   href: api-vb/Class2.Class2.InnerClass.html#Class2_Class2_InnerClass_Name_
   commentId: Overload:Class2.Class2.InnerClass.Name
+  isSpec: "True"
   fullName: Class2.Class2.InnerClass.Name
   nameWithType: Class2.InnerClass.Name
 - uid: Class2.Class2.SetInnerClass(System.String,Class2.Class2.InnerClass)
@@ -65,6 +68,7 @@ references:
   name: SetInnerClass
   href: api-vb/Class2.Class2.html#Class2_Class2_SetInnerClass_
   commentId: Overload:Class2.Class2.SetInnerClass
+  isSpec: "True"
   fullName: Class2.Class2.SetInnerClass
   nameWithType: Class2.SetInnerClass
 - uid: Class2.Class2.Value
@@ -77,6 +81,7 @@ references:
   name: Value
   href: api-vb/Class2.Class2.html#Class2_Class2_Value_
   commentId: Overload:Class2.Class2.Value
+  isSpec: "True"
   fullName: Class2.Class2.Value
   nameWithType: Class2.Value
 - uid: HelloDocfx
