@@ -11,8 +11,8 @@ The trial is an on-premises installation and uses a local installation of BimlFl
 
 The trial supports 2 architectures:
 
-- a 2 layer approach with staging and a data mart layer
-- a 3 layer approach with a staging, data vault and a data mart layer.
+- a 2 layer approach with staging and data mart layer
+- a 3 layer approach with staging, data vault and data mart layer.
 
 both architectures uses a staging layer with both a transient staging database and a persistent staging (archive) database. both architectures have an analyst-facing dimensional model. The addition of the Data Vault layer illustrates how BimlFlex allows the acceleration and creation of an integration layer that allows cross-system integration on business keys.
 
