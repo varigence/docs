@@ -3,7 +3,19 @@
 {{>partials/class.header}}
 {{#children}}
 <h3 id="{{id}}">{{>partials/classSubtitle}}</h3>
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Data</th>
+</tr>
 {{#children}}
+<tr>
+<td><a href="{{name.0.value}}">{{name.0.value}}</a></td>
+<td>{{{summary}}}</td>
+<td>{{{name.2.value}}}</td>
+</tr>
+<!--
 {{^_disableContribution}}
 {{#docurl}}
 <span class="small pull-right mobile-hide">
@@ -189,7 +201,9 @@
 {{#seealso.0}}
 </div>
 {{/seealso.0}}
+-->
 {{/children}}
+</table>
 {{/children}}
 {{#implements.0}}
 <h3 id="implements">{{__global.implements}}</h3>

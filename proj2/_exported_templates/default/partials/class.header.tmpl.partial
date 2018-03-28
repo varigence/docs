@@ -9,7 +9,7 @@
 
 {{#inClass}}
 <div class="inheritance">
-  <h5>{{__global.inheritance}}</h5>
+  <h3>{{__global.inheritance}}</h3>
   {{#inheritance}}
   <div class="level{{index}}">{{{specName.0.value}}}</div>
   {{/inheritance}}
@@ -33,7 +33,7 @@
 {{/implements.0}}
 
 
-<h5 id="{{id}}_syntax">{{__global.syntax}}</h5>
+<h3 id="{{id}}_syntax">{{__global.syntax}}</h3>
 <div class="codewrapper">
   <pre><code class="lang-{{_lang}} hljs">{{syntax.content.0.value}}</code></pre>
 </div>

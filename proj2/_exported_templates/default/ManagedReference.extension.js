@@ -11,5 +11,6 @@ exports.preTransform = function (model) {
  * This method will be called at the end of exports.transform in ManagedReference.html.primary.js
  */
 exports.postTransform = function (model) {
+  model.__global.inheritance = 'Inheritance Hierarchy';
   return model;
 }

@@ -17,7 +17,7 @@ $(function () {
   renderNavbar();
   renderSidebar();
   renderAffix();
-  renderFooter();
+  //renderFooter();
   renderLogo();
 
   breakText();
@@ -535,7 +535,7 @@ $(function () {
       html += util.formList(hierarchy, ['nav', 'bs-docs-sidenav']);
       $("#affix").empty().append(html);
       if ($('footer').is(':visible')) {
-        $(".sideaffix").css("bottom", "70px");
+        $(".sideaffix").css("bottom", "640px");
       }
       $('#affix').on('activate.bs.scrollspy', function (e) {
         if (e.target) {
