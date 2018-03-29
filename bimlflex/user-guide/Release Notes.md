@@ -1,3 +1,7 @@
+## Bundle 80329
+
+* Add: New feature, control if the accelerator should create Link Satellites for generated Links. New setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if LSats should be accelerated. Breaking change This feature has a default value of ` N `, meaning no LSats will be accelerated unless it is updated to ` Y `. Overrides can be created using attribute `SettingValue` definitions
+
 ## Bundle 80325
 
 * Add: update `CREATE DATABASE` default statements for generated SQL scripts to create databases with `Recovery Model` set to `Simple`
