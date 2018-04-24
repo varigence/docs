@@ -1,6 +1,25 @@
+## Bundle 62823
+
+* Added logic to convert `TEXT` and `NTEXT` Source columns to corresponding `VARCHAR` for Blob storage loads to accommodate Polybase
+* Added Validator to ensure Target Dimensions has a separate Business Key and Primary Key defined
+* Added a `CDATA` wrapper to comments and descriptions to accommodate xml control characters. In certain scenarios some characters would introduce issues in the BimlStudio parsing of contents.
+
+## Bundle 62817
+
+* Updates to Satellite record compression to correctly identify initial rows. In certain scenarios an additional row was being created in Satellite loads. Record compression now works across these scenarios.
+* Updated a configuration scenario where PSA updates were incorrectly identified as having the `IsCurrent` flag present for end dating even if it was switched off in the Configuration.
+
+## Bundle 62809
+
+* Bundle version number realignment
+* Added integrated Support for COZYROC Salesforce source SSIS custom component
+* Add support for Hash Distribution Keys in Inferred Hubs for Azure SQL Data Warehouse optimization.
+* Added Parent Batch requirement for nested projects. Existing Projects with a master Project without a Batch specified will need to be updated to include the main Batch.
+* Add `FromSql` metadata definition to support additional query logic, including hints like `WITH (NOLOCK)`
+
 ## Bundle 80329
 
-* Add: New feature, control if the accelerator should create Link Satellites for generated Links. New setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if LSats should be accelerated. Breaking change This feature has a default value of ` N `, meaning no LSats will be accelerated unless it is updated to ` Y `. Overrides can be created using attribute `SettingValue` definitions
+* Add: New feature, control if the accelerator should create Link Satellites for generated Links. New setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. Breaking change This feature has a default value of `"N"`, meaning no Link Satellites will be accelerated unless it is updated to `"Y"`. Overrides can be created using attribute `SettingValue` definitions for individual source tables.
 
 ## Bundle 80325
 
