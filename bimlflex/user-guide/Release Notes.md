@@ -103,7 +103,7 @@ Use Extension Point `ProjectParameter` with target `GlobalProjectParameter`:
 * Update Snapshot capture to database and add-in
 * Update add-in to default IsNotPersistent for derived BusinessKeys on Import Metadata
 * Change file compression to limit in memory comperssion to 2GB. Larger files will be compressed using FileStream to accomodate .Net limit
-* Change __Utility sheet in add-in dynamic. Note this will raise Excel warning "Microsoft Excel will permanently delete this sheet...". Click Delete button and continue.
+* Change `__Utility` sheet in add-in dynamic. Note this will raise Excel warning "Microsoft Excel will permanently delete this sheet...". Click Delete button and continue.
 
 ## Bundle 80112
 
