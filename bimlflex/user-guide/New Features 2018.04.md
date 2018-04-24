@@ -1,102 +1,152 @@
 ## New Features in BimlFlex 2018.04
 
+### Azure Blob Storage-based staging and persisting
+
+BimlFlex now has full support for Azure Blob Storage as a staging and file persistence for both Azure SQL Data Warehouse and SQL Server 2016+ scenarios. The blob-based solution architecture allows data extracts to be compressed into flat files and transferred to Azure based blob storage. This is accessed through External Table definitions and loaded in to the Data Warehouse using ELT based processes. The blob based files are available to use in other processes such as Azure Data Lake Analytics and Machine Learning scenarios where the tool can access blob storage-based datasets directly.
+
+### Full support for SQL Server CDC Sources
+
+BimlFlex has added full SQL Server CDC source component support.  
+For sources using Microsoft SQL Server CDC, Change Data Capture, to derive deltas BimlFlex is now able to directly read only changed data.  
+Metadata modelling uses the base tables for metadata ingestion and modelling. For initial loads BimlFlex will read current state data from the base tables. For incremental loads BimlFlex will automatically derive deltas from the CDC tables.
+
 ### Data Type Mappings
 
-The Data Type Mappings function allows for expansion of data types. This allows the source data types to be converted to a more accommodating type on load. This in turn allows for changes in the source datatypes without affecting the data warehouse. As an example, a source with a varchar(10) column can update that column to a longer string or it can update to nvarchar to support Unicode characters. either change would require a rebuild of the load process to accommodate the new data type. A Data Type Mapping to nvarchar(100) would negate that need and allow the changed data type to be loaded with little or no impact.
-
+The Data Type Mappings function allows for expansion of data types. This allows the source data types to be converted to a more accommodating type on load. This in turn allows for changes in the source datatypes without affecting the data warehouse. As an example, a source with a varchar(10) column can update that column to a longer string or it can update to nvarchar to support Unicode characters. either change would require a rebuild of the load process to accommodate the new data type. A Data Type Mapping to nvarchar(100) would negate that need and allow the changed data type to be loaded with little or no impact.  
 The Data Type Mappings behavior has a set of default expansion rules. These can be customized in the `DataTypeMappings` Sheet in the BimlFlex settings.
-
-### Control creation of Link Satellites
-
-A setting has been added that control if the Data Vault Accelerator should create Link Satellites for generated Links. For some modelling approaches the effectiveness of a relationship is tracked in a Hub rather than a Link Satellite, in other scenarios the link satellite adds limited functionality. This setting controls the automatic acceleration of the Link Satellites. 
-
-The setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. This feature has a default value of ` N `, meaning no Link Satellites will be accelerated unless it is updated to ` Y `. Overrides can be created using attribute `SettingValue` definitions for specific source tables that should have a different setting to the defined default.
 
 ### Global Extension Points
 
-Project Parameters are normally used across multiple Ssis projects. this global target for parameters allows a single defintition to be injected into all projects.
+Project Parameters might be used across multiple SSIS projects. This global target for parameters allows a single definition to be injected into all projects.
 
 Use Extension Point `ProjectParameter` with target `@@global`:
 
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="@@global" #>
-<Parameter Name="YourName" DataType="String" IsRequired="true">DefaultParameterValue</Parameter>
+<Parameter Name="YourParameterName" DataType="String" IsRequired="true">DefaultParameterValue</Parameter>
 ```
 
-More information on this is available in this video
+More information on this is available in this video:
 
 https://www.youtube.com/watch?v=4V8v4Brbg7E
 
 
+### Visual Studio SQL Server Data Tools, SSDT, projects
 
-****************************************************************************************************************
+All SQL artefacts are now added to a separate Visual Studio SQL Server Data Tools, SSDT, project. This project can be used to source control and maintain the databases and SQL artefacts that are part of the Data Warehouse. This can be used for deploying to databases through Visual Studio, to create dacpacs for scripted deployments or as part of a Continuous Integration, Continuous Delivery pipeline.
 
+A configuration setting has been added to the Bundle options that controls the generation of the SSDT Project.
 
+### BimlC.exe, command line Biml Compiler
 
-* Update: Split `Use My ConnectionStrings` and `Use My Exclusions` in BimlStudio and BimlFlex Excel Add-in configuration
+BimlFlex projects can now be built using the BimlC Biml Compiler with settings files to control scope of build. This can be used for scripted deployments or as part of a Continuous Integration, Continuous Delivery. As an example it is commonly used to create SQL artefacts and deploying SQL databases and tables before SSIS packages are created.
+A BimlFlex Build will include a reference to the `bimlc.exe` build command line expression and response file for scenarios where this should be automated at a later stage.
 
-* New: Add SsisAnnotations to all packages
+```
+To replicate this build with bimlc.exe. Use the bimlc.resp file:
+bimlc.exe @"C:\Path\Project\output\ProjectName.mst.bimlc.resp"
+```
 
-SSDT projects
+### BimlFlex support for SQL Server 2017
 
-* Update: Add support for `AutoAdjustBufferSize` Ssis setting for supported SSIS versions
+BimlFlex and BimlStudio now support SQL Server 2017 as a destination for both Data Warehouse and SSIS. BimlFlex custom SSIS components have been updated to support SSIS 2017.
 
-* Add: support for SQL Server 2017 custom SSIS components
+### Metadata Snapshot management
 
-* Add: support for `SelectBySql` for `DISTINCT, TOP n` scenarios
+BimlFlex Metadata management now has support to save and restore Snapshots of the current metadata. This is useful for versioning as well as rollback for rapid, agile development processes.
 
-* Add: support for `OrderBySql` for `ORDER BY Column` scenarios
+## Data Vault Modelling
 
-* New: Add `Quick Parse` option for BimlStudio options to only load placeholder objects when modelling
+### BimlFlex full support for insert only Data Vault implementations
 
-* New: Refactor Data Vault patterns to exclude end dating code when `EnableEndDateRdv` setting is set to `"N"`
+BimlFlex Data Vault patterns now have full, end to end support for insert only Data Warehouses. This removes effective to dates, is current flags as well as the end dating logic to optimise for data warehouse load performance. As a query support construct, Point In Time tables can be used to derive full timelines when necessary.
+To exclude end dating code, use the setting `EnableEndDateRdv`. Set to `"N"` for insert only scenarios.
 
-* Performance update to BimlFlex to use local cache when no changes to metadata
+## Data Vault Acceleration
 
-* Performance update to minify Biml files in cache
+### Controlled acceleration of Link Satellites
 
-* New: Use `Page` compression for tables as default
+A setting has been added that control if the Data Vault Accelerator should create Link Satellites for generated Links. For some modelling approaches the effectiveness of a relationship is tracked in a Hub rather than a Link Satellite, in other scenarios the link satellite adds limited functionality. This setting controls the automatic acceleration of the Link Satellites.
 
-* New: Added velocity profiling for PSA tables
+The setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. This feature has a default value of ` N `, meaning no Link Satellites will be accelerated unless it is updated to ` Y `. Overrides can be created using attribute `SettingValue` definitions for specific source tables that should have a different setting to the defined default.
 
+### Accelerating Same As Links
 
-* Change: Change PIT stored procedure to only use SAT FromDate to support insert only Data Vault
+Added support for `Same As Links` in the Data Vault Accelerator
 
-* Fix: Adding support for Same As Links in the Data Vault Accelerator
+## Data Modelling
 
-* Fix: Adding support for Azure Blob Storage for Connections to support both Azure SQLDW and Azure SQL VM
+### BimlFlex support for `SelectBySql`
 
-* Update Snapshot capture to database and add-in
+Metadata support for `SelectBySql` for `DISTINCT, TOP n` scenarios
 
-* Update add-in to default IsNotPersistent for derived BusinessKeys on Import Metadata
+### BimlFlex support for `OrderBySql`
 
-* Added Set Parameter for SQL based stored procedures
-* Added support for Azure Blob Storage based staging
+Metadata support for `OrderBySql` for `ORDER BY Column` scenarios
 
-* Added additional logic to handle the `ParameterColumnExpression` with `ExecuteSqlOnSource`
+## Performance Optimization
 
-* Update to check is initial load before Data Flow Task for dimension and fact Ssis loads
+### BimlFlex build support for `AutoAdjustBufferSize`
 
+BimlFlex now has support for conditional setting of `AutoAdjustBufferSize` to `true` or `false` for built SSIS Packages in supported SSIS versions
 
-* Remove `IsInitialLoad` project parameter dependency. `IsInitialLoad` is now automatically set by querying the PSA for existing rows
+### BimlFlex updates to local caching and minification
 
-* Potentially breaking change to Ssis Hashing Custom component. Use hashing compatible with Azure Sql Data Warehouse and other SQL based CHECKSUMS and HASHBYTES functions. When updating to using Sql compatible Hashing, all preexisting Data Vault surrogate keys will need to be updated and rehashed from the Business Key
+BimlFlex now implements local caching and file minification to optimize performance
 
-* Added support for ODBC parameterized queries as Expressions
+### Table Create script updates
 
+Create table scripts now use `Page` compression as default
+Create database scripts now create databases using simple recovery model
 
-* Added `ApplyLookupFilterRdv` to filter Ssis lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This cross database join functionality requires the databases to be co-located or the tables to be in the same database
+## Additional Features
 
+### PSA table velocity profiling
 
-* Updates to `RowCount` Ssis Custom Component logic to add aggregate columns for source queries
+BimlFlex now has, optional, added velocity profiling for PSA tables to track data change velocity.
 
-* Added `RowCountSum` to the Metadata model and Add-in drop down for `CustomAttributes`
+### Default updates to Business Keys
 
-* Updates to BimlFlex configurations, now split into configurations and settings tables
+The metadata import dialog now has support to add the connections Record Source to the creation of the Business Key as well as changing references from source constraints to Business Key defined relationships. This allows a more rapid and agile Data vault modelling approach. Any derived key is by default set to `IsNotPersistent` meaning they are not stored in PSA unless specifically configured for persistence.
 
-* Added `CreateSql` and `OverrideSql` functionality to both database and Extension Points to support custom Sql Ddl object creation and custom Sql source queries
+### Parameters
 
+Standard Parameter management through metadata has been updated to support parameter queries on source as well as additional columnar expressions. This is configured through metadata through  `ParameterColumnExpression` and `ExecuteSqlOnSource` etc.
 
-### Automatic load from SQL Server CDC Source tables
+### Initial load logic
 
-* Added SQL Server CDC source component
+BimlFlex will automatically check if the load is an initial load by querying the PSA or destination for existing records.
+This removes the `IsInitialLoad` project parameter dependency. `IsInitialLoad` is now automatically set by the load process.
+
+### Key hashing Option for SQL compatible Hashing
+
+The BimlFlex custom SSIS Component used for in-stream hashing of keys has been updated to provide a configurable encoding. Configure the setting `UseSqlCompatibleHash` as `"Y"` to use hashing compatible with Azure SQL Data Warehouse and other SQL based CHECKSUMS and HASHBYTES functions using the `SHA1` hashing algorithm.
+
+### SSIS Optimization
+
+Added `ApplyLookupFilterRdv` to filter SSIS lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This optional cross database join functionality requires the databases to be co-located or the tables to be in the same database
+
+### Auditing and Logging
+
+Added `RowCountSum` to the Metadata model and Add-in drop down for `CustomAttributes`
+
+### Metadata management
+
+Updated BimlFlex metadata configuration, BimlFlex now has separate management of configurations and settings in two separate sheets within the BimlFlex Excel based metadata editor.
+The BimlFlex Excel metadata management plugin is now more lightweight with a performance optimized footprint. Schema preview is available in BimlStudio.
+
+### Custom SQL Objects and queries
+
+Added `CreateSql` and `OverrideSql` functionality to both Metadata and Extension Points to support custom SQL DDL object creation and custom SQL source queries
+
+### Quick Parse
+
+A `Quick Parse` option for BimlStudio has been added as an options to only load placeholder objects from metadata when modelling. This allows faster modelling in BimlFlex and uses less resources for representing packages in BimlStudio. Once Packages needs to be built, disable the `Quick Parse` setting and refresh the metadata to have BimlStudio populated with full fidelity objects.   
+
+### Split `Use My ConnectionStrings` and `Use My Exclusions`
+
+In BimlStudio and BimlFlex Excel Metadata editor it is now possible to split `Use My ConnectionStrings` and `Use My Exclusions`. This allows a more granular control over user based settings in team based development scenarios.
+
+### Added SsisAnnotations
+
+All generated SSIS packages now have added `SsisAnnotations`
