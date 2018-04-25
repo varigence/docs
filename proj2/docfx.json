@@ -17,7 +17,7 @@
     {
       "src": "src2/**.cs",
       "dest": "api-vb"
-    }
+    } 	
   ],
   "build": {
     "content": [
@@ -67,8 +67,8 @@
       }
     ],
     "dest": "_site",
-    "template": [
-      "default"
+	"template": [
+		"default"
     ]
   }
 }

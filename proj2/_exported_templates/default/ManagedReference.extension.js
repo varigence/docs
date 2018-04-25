@@ -1,16 +1,20 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
+var common = require('./ManagedReference.common.js');
 
-/**
- * This method will be called at the start of exports.transform in ManagedReference.html.primary.js
- */
-exports.preTransform = function (model) {
-  return model;
-}
-
-/**
- * This method will be called at the end of exports.transform in ManagedReference.html.primary.js
- */
 exports.postTransform = function (model) {
-  model.__global.inheritance = 'Inheritance Hierarchy';
-  return model;
+    var type = model.type.toLowerCase();
+    var category = common.getCategory(type);
+    if (category == 'class') {
+        var typePropertyName = common.getTypePropertyName(type);
+        if (typePropertyName) {
+            model[typePropertyName] = true;
+        }
+        if (model.children && model.children.length > 0) {
+            model.isCollection = true;
+            common.groupChildren(model, 'class');
+        } else {
+            model.isItem = true;
+        }
+    }
+    return model;
 }
