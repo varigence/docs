@@ -1,3 +1,5 @@
+# Release Notes
+
 ## Bundle 62823
 
 * Added logic to convert `TEXT` and `NTEXT` Source columns to corresponding `VARCHAR` for Blob storage loads to accommodate Polybase
@@ -153,7 +155,7 @@ Use Extension Point `ProjectParameter` with target `GlobalProjectParameter`:
 
 ## Bundle 71027
 
-*	Update to Initialize Object name in `StagingTable` and `PersistentStaging` class
+* Update to Initialize Object name in `StagingTable` and `PersistentStaging` class
 * Update to `MultiActiveKey` column transformation `TargetColumn` alias
 * Update to configurations for PSA merge statement
 * Update to Data Vault Accelerator for duplicate indexes being previewed
@@ -216,7 +218,7 @@ Use Extension Point `ProjectParameter` with target `GlobalProjectParameter`:
 
 * Updates to remove the need to emit Staging objects when using PolyBase and Azure Sql Data Warehouse projects
 * Added optional `ProtectionLevel` to `CustomAttributes` to enable ability to compile for `EncryptSensitiveWithUserKey`
-* Updates to BimlCatalog Orchestration to use Project Name when logging to accommodate duplicate package names  
+* Updates to BimlCatalog Orchestration to use Project Name when logging to accommodate duplicate package names
 * Added `ApplyLookupFilterRdv` to filter Ssis lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This cross database join functionality requires the databases to be co-located or the tables to be in the same database
 * Added Lookup Filter for Surrogate Key Dimensional LookupSql
 * Added Foreign Keu Lookups for dimension surrogate key lookups
@@ -288,7 +290,7 @@ They now require `sourceTable` and `destinationTable` definitions
 
 ## Bundle 70724 and earlier
 
-**BimlFlex general**
+### BimlFlex general
 
 * Added metadata model validators to the bundle
 * Added initial support for toggle-able output of flat biml and ddl for entire BimlFlex solution on build
@@ -302,7 +304,7 @@ They now require `sourceTable` and `destinationTable` definitions
 * Fixed an issue with PSA Merge Alias for PrimaryKey Join
 * Fixed an issue for PSA and IsNotPersistent
 
-**Metadata Management**
+### Metadata Management
 
 * Added AllowCustomInput to the DropDowns that should be optional
 * Added Delete entities with selection and update mdv procs.
@@ -311,33 +313,33 @@ They now require `sourceTable` and `destinationTable` definitions
 * Added Table CDC Object Types for SQL Server CDC Source objects
 * Added modeling Support for Multi Active Satellites and Customer columns to MDV
 
-**Infer Hub functionality**
+### Infer Hub functionality
 
 * Added functionality to infer loading of Hubs from Link source tables
 * Added check for InferHub configuration into SQL procedure creation
 
-**Table creation scripts**
+### Table creation scripts
 
 * Fixed CreateSql script to include Schema and PSA where in some instances they would be missing
 * Fixed OverrideSql check for PSA INIT to ensure that the OverrideSql is not applied twice
 
-**Data Type management**
+### Data Type management
 
 * Added extended support for some SQL Datatypes such as Geometry and Geography
 * Fixed CustomTypes in BimlDataType
 
-**Data Vault Accelerator**
+### Data Vault Accelerator
 
 * Added CustomType logic to DataVault Accelerator
 * Enable SchemaGraph documentation and Fix DV publish with saved user settings
 * Fixed issue with DV Accelerator publish using stale but cached metadata database credentials
 
-**Extension Points**
+### Extension Points
 
 * Added PrePost Sql Extension Points. This allows for easier custom definitions for SQL scripts, such as for injecting compression definitions into table create scripts
 * Fixed issue with PIT ExtensionPoint for LagSql
 
-**DataTypeMappings**
+### DataTypeMappings
 
 * Added functionality to map data types into Staging and RDV. This enables expansion of data types to accommodate future source system changes
 * Added Stored Procedure wcf.SetApplyDataTypeMappings to support DataTypeMappings
@@ -345,13 +347,13 @@ They now require `sourceTable` and `destinationTable` definitions
 * Fixed DataType mappings for Source to Stage adding Data Conversion and Error Handling
 * Added additional variables and fix data type mappings.
 
-**Oracle Rdb support**
+### Oracle Rdb support
 
 * Add initial support for Oracle Rdb
 * Add IgnoreSchema for Oracle Rdb integration
 * Add logic to exclude schema name from source queries for Oracle Rdb
 
-**SSIS**
+### SSIS
 
 * Updates to Custom Components DLL names. Existing installations using legacy names should consider an upgrade to new names.
 * Adding check for Sat cache directory and clean up
@@ -359,21 +361,21 @@ They now require `sourceTable` and `destinationTable` definitions
 * Fixed SsisExpression for LSK columns to correctly use @@rs
 * Added SQL Server CDC source component
 
-**Azure SQL Data Warehouse**
+### Azure SQL Data Warehouse
 
 * Fixed issue with SqlExpression for SQLDW
 
-**File to Staging**
+### File to Staging
 
 * Added File archiving to File to Stage Template
 
 ## BimlFlex Utility
 
-**Initial Release of separate BimlFlex Support Utility Application**
+### Initial Release of separate BimlFlex Support Utility Application
 
 * Has latest database definitions and BimlFlex Bundle files embedded
 
-**Supports the following functions**
+### Supports the following functions
 
 * Deploy BimlFlex metadata database to SQL Server
 * Deploy BimlCatalog orchestration database to SQL Server

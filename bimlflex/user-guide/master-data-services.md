@@ -1,3 +1,7 @@
+# Microsoft SQL Server Master Data Services (MDS) integration
+
+TODO: Complete
+
 Microsoft SQL Server Master Data Services (MDS) is an enterprise data management tool included in the Enterprise Edition of SQL Server.
 
 MSDN has an introduction to MDS here: [https://msdn.microsoft.com/en-us/library/ff487003.aspx](https://msdn.microsoft.com/en-us/library/ff487003.aspx)
@@ -11,8 +15,10 @@ For administrators and Data Stewards there are two main ways to interact with th
 * Plugin based Excel user interface
 
 The web based UI also provides management of the models and system.
+
 The Excel plugin works similar to the BimlFlex plugin. The steward connects to a model and entity and gets data into Excel, manipulates it and publishes it back
 It is possible to stage data into MDS by loading source data into staging and persistent staging tables and exposing that data as the source for MDS. It is also possible to load directly from source to MDS. Once the MDS process is finished the data can be exposed through MDS export views and imported from MDS into the EDW through BimlFlex.
+
 It is possible to architect the MDS management process in several different ways. This document demonstrates one way of loading data into MDS and one way of loading data from MDS export views into Staging tables for the data warehouse. Adjusting the patterns used can provide options to support other workflows and processes.
 Considering the risk for naming confusion as data is loaded from staging to staging and into MDS and into EDW it is recommended to explicitly name processes to indicate the full flow if data. “Import into MDS from source” and "import into EDW from MDS" both convey more information than "MDS Import".
 
@@ -22,7 +28,7 @@ This document uses the Model and Model Category part of the AdventureWorks LT 20
 MDS for SQL Server includes its own sample models, including a model for AdventureWorks Products. It is possible to ruse the approach from this document to integrate into the sample models. This document uses a separate model with 2 separate entities
 The sample model is configured and set up as follows:
 
-![](https://varigencecom.blob.core.windows.net/walkthroughs/image2.png)
+![TODO](images/image2.png)
 
 Log in through the web interface as an MDS administrator to create a model called ProductDemo
 2 entities are needed for the new model:
@@ -30,8 +36,7 @@ Log in through the web interface as an MDS administrator to create a model calle
 * Product
 * Category
 
-![](https://varigencecom.blob.core.windows.net/walkthroughs/image3.png){width="6.268055555555556in" height="4.614583333333333in"}
-
+![TODO](images/image3.png)
 
 For the optional staging tables name this demo uses a ModelName\_EntityName naming convention to manage names. For larger implementations with multiple models and entities this approach will make it easy to know what table goes to what model/entity when staging.
 Our Product and Category entities have the following staging tables created:
@@ -42,22 +47,24 @@ Our Product and Category entities have the following staging tables created:
 Each entity need the following attributes created:
 
 Product
+
 * Color
 * Category
 
 Category
+
 * Parent Category
 
 The name and code attributes created by default in MDS is reused for the Name and code/key fields in the source entities.
 
 The Product, Category and Category, Parent Category entities are entity based relationships to the Category Entity
 
-![](https://varigencecom.blob.core.windows.net/walkthroughs/image4.png)
+![TODO](images/image4.png)
 
 Once the Model and the 2 entities are available the staging tables can be reviewed in SQL Server Management Studio.
 The default naming convention for the puts the model entity staging tables in the MasterDataServices database, in schema stg and uses the defined names with \_Leaf suffixed.
 
-![](https://varigencecom.blob.core.windows.net/walkthroughs/image5.png)
+![TODO](images/image5.png)
 
 ## Required metadata for import into MDS
 
@@ -87,7 +94,7 @@ AS
 GO
 ```
 
-### The Product Category source view 
+### The Product Category source view
 
 ```sql
 CREATE VIEW [MDS_SRC].[Category]
@@ -104,23 +111,24 @@ AS
 
 ## Connections
 
-The existing ```BFX_STG``` staging connection can be reused for the MDS source views.
+The existing `BFX_STG` staging connection can be reused for the MDS source views.
 A new connection to the MDS staging destination tables is added as an entry in the Connections Tab.
-![](https://varigencecom.blob.core.windows.net/walkthroughs/image4.png)
+
+![TODO](images/image4.png)
 
 The new connection is called MasterDataServices and maps to the MasterDataServices database that the MDS instance has been configured to use. The new MDS destination connection uses the IntegrationStage attribute “Master Data Services” to indicate the use to BimlFlex.
 
 The load from source staging table to MDS staging table is defined in its own batch.
 
-![](https://varigencecom.blob.core.windows.net/walkthroughs/image4.png)
+![TODO](images/image4.png)
 
 The batch is included in its own project
 
-![](https://varigencecom.blob.core.windows.net/walkthroughs/image4.png)
+![TODO](images/image4.png)
 
 The object tab will include the source tables/views used for loading into MDS and the destination staging tables in MDS.
 
-![](https://varigencecom.blob.core.windows.net/walkthroughs/image4.png)
+![TODO](images/image4.png)
 
 For all objects the full set of column metadata will have been imported into the Columns sheet.
 Some columns are not required from the MDS tables. They can be ignored or removed in the metadata sheet.

@@ -1,21 +1,24 @@
-## New Features in BimlFlex 2018.04
+# New Features in BimlFlex 2018.04
 
-### Azure Blob Storage-based staging and persisting
+## Azure Blob Storage-based staging and persisting
 
 BimlFlex now has full support for Azure Blob Storage as a staging and file persistence for both Azure SQL Data Warehouse and SQL Server 2016+ scenarios. The blob-based solution architecture allows data extracts to be compressed into flat files and transferred to Azure based blob storage. This is accessed through External Table definitions and loaded in to the Data Warehouse using ELT based processes. The blob based files are available to use in other processes such as Azure Data Lake Analytics and Machine Learning scenarios where the tool can access blob storage-based datasets directly.
 
-### Full support for SQL Server CDC Sources
+## Full support for SQL Server CDC Sources
 
-BimlFlex has added full SQL Server CDC source component support.  
-For sources using Microsoft SQL Server CDC, Change Data Capture, to derive deltas BimlFlex is now able to directly read only changed data.  
+BimlFlex has added full SQL Server CDC source component support.
+
+For sources using Microsoft SQL Server CDC, Change Data Capture, to derive deltas BimlFlex is now able to directly read only changed data.
+
 Metadata modelling uses the base tables for metadata ingestion and modelling. For initial loads BimlFlex will read current state data from the base tables. For incremental loads BimlFlex will automatically derive deltas from the CDC tables.
 
-### Data Type Mappings
+## Data Type Mappings
 
-The Data Type Mappings function allows for expansion of data types. This allows the source data types to be converted to a more accommodating type on load. This in turn allows for changes in the source datatypes without affecting the data warehouse. As an example, a source with a varchar(10) column can update that column to a longer string or it can update to nvarchar to support Unicode characters. either change would require a rebuild of the load process to accommodate the new data type. A Data Type Mapping to nvarchar(100) would negate that need and allow the changed data type to be loaded with little or no impact.  
+The Data Type Mappings function allows for expansion of data types. This allows the source data types to be converted to a more accommodating type on load. This in turn allows for changes in the source datatypes without affecting the data warehouse. As an example, a source with a varchar(10) column can update that column to a longer string or it can update to nvarchar to support Unicode characters. either change would require a rebuild of the load process to accommodate the new data type. A Data Type Mapping to nvarchar(100) would negate that need and allow the changed data type to be loaded with little or no impact.
+
 The Data Type Mappings behavior has a set of default expansion rules. These can be customized in the `DataTypeMappings` Sheet in the BimlFlex settings.
 
-### Global Extension Points
+## Global Extension Points
 
 Project Parameters might be used across multiple SSIS projects. This global target for parameters allows a single definition to be injected into all projects.
 
@@ -28,16 +31,15 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 
 More information on this is available in this video:
 
-https://www.youtube.com/watch?v=4V8v4Brbg7E
+[https://www.youtube.com/watch?v=4V8v4Brbg7E](https://www.youtube.com/watch?v=4V8v4Brbg7E)
 
-
-### Visual Studio SQL Server Data Tools, SSDT, projects
+## Visual Studio SQL Server Data Tools, SSDT, projects
 
 All SQL artefacts are now added to a separate Visual Studio SQL Server Data Tools, SSDT, project. This project can be used to source control and maintain the databases and SQL artefacts that are part of the Data Warehouse. This can be used for deploying to databases through Visual Studio, to create dacpacs for scripted deployments or as part of a Continuous Integration, Continuous Delivery pipeline.
 
 A configuration setting has been added to the Bundle options that controls the generation of the SSDT Project.
 
-### BimlC.exe, command line Biml Compiler
+## BimlC.exe, command line Biml Compiler
 
 BimlFlex projects can now be built using the BimlC Biml Compiler with settings files to control scope of build. This can be used for scripted deployments or as part of a Continuous Integration, Continuous Delivery. As an example it is commonly used to create SQL artefacts and deploying SQL databases and tables before SSIS packages are created.
 A BimlFlex Build will include a reference to the `bimlc.exe` build command line expression and response file for scenarios where this should be automated at a later stage.
@@ -47,11 +49,11 @@ To replicate this build with bimlc.exe. Use the bimlc.resp file:
 bimlc.exe @"C:\Path\Project\output\ProjectName.mst.bimlc.resp"
 ```
 
-### BimlFlex support for SQL Server 2017
+## BimlFlex support for SQL Server 2017
 
 BimlFlex and BimlStudio now support SQL Server 2017 as a destination for both Data Warehouse and SSIS. BimlFlex custom SSIS components have been updated to support SSIS 2017.
 
-### Metadata Snapshot management
+## Metadata Snapshot management
 
 BimlFlex Metadata management now has support to save and restore Snapshots of the current metadata. This is useful for versioning as well as rollback for rapid, agile development processes.
 
@@ -68,7 +70,7 @@ To exclude end dating code, use the setting `EnableEndDateRdv`. Set to `"N"` for
 
 A setting has been added that control if the Data Vault Accelerator should create Link Satellites for generated Links. For some modelling approaches the effectiveness of a relationship is tracked in a Hub rather than a Link Satellite, in other scenarios the link satellite adds limited functionality. This setting controls the automatic acceleration of the Link Satellites.
 
-The setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. This feature has a default value of ` N `, meaning no Link Satellites will be accelerated unless it is updated to ` Y `. Overrides can be created using attribute `SettingValue` definitions for specific source tables that should have a different setting to the defined default.
+The setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. This feature has a default value of `"N"`, meaning no Link Satellites will be accelerated unless it is updated to `"Y"`. Overrides can be created using attribute `SettingValue` definitions for specific source tables that should have a different setting to the defined default.
 
 ### Accelerating Same As Links
 

@@ -1,30 +1,32 @@
-The primary source BimlFlex uses to generate Data Warehousing and Business Intelligence assets is metadata. Metadata is most commonly in the form of objects with corresponding attributes. 
+# Importing Metadata
+
+The primary source BimlFlex uses to generate Data Warehousing and Business Intelligence assets is metadata. Metadata is most commonly in the form of objects with corresponding attributes.
 
 Although it is relatively straightforward to define individual metadata objects, it can take considerable time and effort to create, update and maintain the number of objects that would typically be involved in an enterprise data warehouse solution.
 
-The BimlFlex Excel Add-in provides an import tool that connects to a database source and populates the BimlFlex database with metadata. 
+The BimlFlex Excel Add-in provides an import tool that connects to a database source and populates the BimlFlex database with metadata.
 
 This tool can be used in any scenario where a schema is available, and there is a need to bring that metadata into a BimlFlex project. If a change happens in the source, the metadata can be imported again to update the model.
 
-### Watch Recordings
+## Watch Recordings
 
-#### 02.BimlFlex - Importing Metadata 
+### 02.BimlFlex - Importing Metadata
+
 In this session, we look at importing metadata using BimlFlex. The metadata is published and committed and persisted in the meta vault repository.
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/dWRIassNVTs?rel=0" frameborder="0" allowfullscreen></iframe>
 
-
 ### Locating the tool
 
-In the BimlFlex Excel Add-in, BimlFlex tab, in the metadata tools group, is the button `Import Metadata`. This opens the Import Metadata dialog. 
+In the BimlFlex Excel Add-in, BimlFlex tab, in the metadata tools group, is the button `Import Metadata`. This opens the Import Metadata dialog.
 
-![Excel Ribbon](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_ribbon.png "Excel Ribbon")
+![Excel Ribbon](images/bimlflex_ss_v5_excel_ribbon.png "Excel Ribbon")
 
 ### Import Metadata UI
 
 There are a number of options for importing metadata. Align these options with the solution architecture and metadata conventions.
 
-![Import Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_import_metadata.png "Import Metadata")
+![Import Metadata](images/bimlflex_ss_v5_excel_import_metadata.png "Import Metadata")
 
 The example source is the AdventureWorksLT database, using the project `EXT_AWLT` as the target for imported metadata.
 
@@ -40,15 +42,10 @@ The Schema Filter and Table Filter can be used to limit the Assets made availabl
 
 #### Source and Target
 
-<table id="Classes" class="ItemList">
-<thead>
-<tr><th>Option Name</th><th>Definition</th></tr>
-</thead>
-<tbody>
-<tr><td>Source Connection</td><td>Name of the connection that points to the data source the project is extracting from. The Connection is defined in the Connections tab in the Metadata.</td></tr>
-<tr><td>Target Project</td><td>Name of the previously defined project that will use this metadata as its source in the source to target loading. The Project is defined in the Project tab in the Metadata.</td></tr>
-</tbody>
-</table>
+|Option Name|Definition|
+|--- |--- |
+|Source Connection|Name of the connection that points to the data source the project is extracting from. The Connection is defined in the Connections tab in the Metadata.|
+|Target Project|Name of the previously defined project that will use this metadata as its source in the source to target loading. The Project is defined in the Project tab in the Metadata.|
 
 #### What to Import
 
@@ -109,28 +106,26 @@ The Importable Assets list is read from the Source Connection. Choose items that
 
 The metadata will then be imported into the currently open metadata spreadsheet.
 
-![Imported Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_imported_metadata_list.png "Imported Metadata")
+![Imported Metadata](images/bimlflex_ss_v5_excel_imported_metadata_list.png "Imported Metadata")
 
 Note that this has not yet been committed to the metadata repository, these are unsaved rows of metadata.
 
 After review, commit the imported metadata to the BimlFlex metadata repository by clicking `Set All Entities` from the publish metadata section.
 
-![Imported Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_set_all_entities.png "Imported Metadata")
+![Imported Metadata](images/bimlflex_ss_v5_excel_set_all_entities.png "Imported Metadata")
 
 ## Verify Imported Metadata in BimlStudio
 
 Open the BimlFlex project in BimlStudio or press the `Refresh Metadata` button if already opened.
 
-![Refresh Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_refresh_metadata.png "Refresh Metadata")
+![Refresh Metadata](images/bimlflex_ss_v5_refresh_metadata.png "Refresh Metadata")
 
 Verify that the newly imported objects is visible under the `Relational -> Tables -> SRC` folder and the `Integration Services -> 01-Source` folder.
 
-**Tables**
+### Tables
 
-![Imported Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_imported_metadata_logical_view.png "Imported Metadata")
+![Imported Metadata](images/bimlflex_ss_v5_imported_metadata_logical_view.png "Imported Metadata")
 
-**SSIS Packages**
+### SSIS Packages
 
-![Imported Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_imported_metadata_packages.png "Imported Metadata")
-
-
+![Imported Metadata](images/bimlflex_ss_v5_imported_metadata_packages.png "Imported Metadata")
