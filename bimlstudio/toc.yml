@@ -1,0 +1,28 @@
+- name: BimlStudio User Guide
+  href: index.md
+- name: Release Notes
+  href: Release Notes.md
+  items:
+    - name: BimlStudio 2017 Release Notes
+      href: BimlStudio 2017.md
+    - name: Mist 4.0 Update 1
+      href: Mist 4.0 Update 1.md
+    - name: Mist 4.0
+      href: Mist 4.0.md
+    - name: Mist 3.4
+      href: Mist 3.4.md
+    - name: Mist 3.3
+      href: Mist 3.3.md
+    - name: Mist 3.2
+      href: Mist 3.2.md
+    - name: Mist 3.1
+      href: Mist 3.1.md
+    - name: Mist 3.0
+      href: Mist 3.0.md
+    - name: Mist 2.0
+      href: Mist 2.0.md
+- name: AdventureWorks LT Walkthrough
+  href: Adventure Works LT Walkthrough.md
+  items:
+    - name: Setting up for the Sample
+      href: Setting Up For The Sample.md

@@ -1,0 +1,68 @@
+- name: Overview
+  items:
+  - name: Release Notes
+    href: release-notes.md
+
+- name: Installation and configuration
+  items:
+  - name: Software and Hardware Requirements
+    href: software-and-hardware-requirements.md
+  - name: Developer Installation
+    href: developer-installation.md
+  - name: Analyst Installation
+    href: analyst-installation.md
+  - name: Server Installation
+    href: server-installation.md
+  - name: Initial Setup and Configuration
+    href: initial-setup-and-configuration.md
+  - name: Upgrade and Testing Process
+    href: upgrade-and-testing-process.md
+  - name: Support Process
+    href: support-process.md
+  - name: Support Utility Application
+    href: support-utility-application.md
+
+- name: Implementation guides
+  items:
+  - name: Importing Metadata
+    href: importing-metadata.md
+  - name: Source to Staging Templates
+    href: source-to-staging-templates.md
+  - name: Data Vault Accelerator
+    href: data-vault-accelerator.md
+  - name: Data Vault Templates
+    href: data-vault-templates.md
+  - name: Data Mart Templates
+    href: data-mart-templates.md
+  - name: Export to File
+    href: export-to-file.md
+  - name: Master Data Services
+    href: master-data-services.md
+  - name: Azure Data Warehouse
+    href: azure-data-warehouse.md
+
+- name: Supporting materials for configurations, extensions, orchestration
+  items:
+  - name: Configurations
+    href: configurations.md
+  - name: Settings
+    href: settings.md
+  - name: Orchestration
+    href: orchestration.md
+  - name: Parameters
+    href: parameters.md
+  - name: Extension Points
+    href: extension-points.md
+  - name: Excel Add-in
+    href: excel-add-in.md
+  - name: Data Type Mappings
+    href: data-type-mappings.md
+  - name: Object Inheritance
+    href: object-inheritance.md
+  - name: Business Keys and Relationships
+    href: business-keys-and-relationships.md
+
+- name: Deployment and operational guides
+  items:
+  - name: Deployment Guide
+    href: deployment-guide.md

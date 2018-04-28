@@ -1,0 +1,15 @@
+- name: BimlFlex Documentation
+  href: index.md
+  topicHref: index.md
+
+- name: BimlFlex User Guide
+  href: user-guide/toc.yml
+  topicHref: user-guide/index.md
+
+- name: BimlFlex Trial Process
+  href: trial-process/toc.yml
+  topicHref: trial-process/index.md
+
+- name: BimlFlex Tips & Tricks
+  href: tips-tricks/toc.yml
+  topicHref: tips-tricks/index.md

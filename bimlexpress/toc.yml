@@ -1,0 +1,27 @@
+- name: BimlExpress Documentation
+  href: index.md
+  items:
+  - name: BimlExpress Release Notes
+    href: bimlexpress-release-notes.md
+  - name: What's New in BimlExpress 2017?
+    href: whats-new-in-bimlexpress-2017.md
+  - name: BimlExpress Release Notes
+    href: bimlexpress-release-notes.md
+  - name: Comparing BimlExpress and BIDS Helper / BI Developer Extensions
+    href: comparing-bimlexpress-bidshelper-bideveloperextensions.md
+  - name: Comparing BimlExpress and BimlStudio
+    href: comparing-bimlexpress-bimlstudio.md
+- name: Getting Started with BimlExpress
+  items:
+  - name: Installing BimlExpress
+    href: getting-started-installing-bimlexpress.md
+  - name: Creating BimlExpress Account
+    href: getting-started-creating-bimlexpress-account.md
+  - name: BimlExpress Menus and Options
+    href: getting-started-bimlexpress-menus-options.md
+  - name: Adding and Editing Biml files
+    href: getting-started-adding-editing-biml-files.md
+  - name: Preview Expanded Biml
+    href: getting-started-preview-expanded-biml.md
+  - name: Generating SSIS Packages
+    href: getting-started-generating-ssis-packages.md
