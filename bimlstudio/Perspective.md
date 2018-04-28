@@ -1,16 +1,19 @@
-#### Mist User Guide
-##### Perspective Editor
+# Perspective Editor
 
-Use the Perspective editor to create and modify perspectives.<br>
+Use the Perspective editor to create and modify perspectives.
+
 ![Perspective Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Perspective1.png)
 
-Enter the name of the perspective in its textbox and select its default measure in the Default Measure dropdown.<br>
+Enter the name of the perspective in its textbox and select its default measure in the Default Measure dropdown.
+
 ![Perspective Column](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Perspective2.png)
 
-Select cube objects in the treeview to include them in the perspective.<br>
+Select cube objects in the treeview to include them in the perspective.
+
 ![Perspective TreeView](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Perspective3.png)
 
-The perspective editor's ribbon provides the following functions:<br>
+The perspective editor's ribbon provides the following functions:
+
 ![Perspective Ribbon](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Perspective4.png)
 
 Button | Description

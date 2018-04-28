@@ -1,5 +1,5 @@
-#### Mist User Guide
-##### Biml Editor
+# Biml Editor
+
 Use the Biml editor to edit Biml files.
 
 ![Biml Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Biml1.png)
@@ -33,5 +33,5 @@ Toggle All | Choose to toggle regions in the Biml document.
 Include File | Add a new or existing Biml include file to the open project.
 Emittable File | Add a new or existing Biml emittable file to the open project.
 Instant Recompile | Immediately recompile the Biml file.
-Add | Add a project configuration. 
+Add | Add a project configuration.
 Remove | Remove a project configuration.

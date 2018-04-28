@@ -1,5 +1,4 @@
-#### Mist User Guide
-##### KPI Editor
+# KPI Editor
 
 Use the KPI editor to create and edit KPIs.
 

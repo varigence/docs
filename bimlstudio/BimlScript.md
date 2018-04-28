@@ -1,5 +1,4 @@
-#### Mist User Guide
-##### BimlScript Editor
+# BimlScript Editor
 
 Use the BimlScript editor to create, edit, preview, and execute BimlScript files.
 

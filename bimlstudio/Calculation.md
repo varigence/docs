@@ -1,5 +1,4 @@
-#### Mist User Guide
-##### Calculation Editor
+# Calculation Editor
 
 Use the Calculations editor to create and edit calculations, including calculated members, named sets, and MDX script commands.
 

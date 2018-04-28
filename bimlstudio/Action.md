@@ -1,6 +1,4 @@
-#### Mist User Guide
-
-##### Action Editor
+# Action Editor
 
 Use the actions editor to view and edit actions for the selected cube.
 
