@@ -1,17 +1,16 @@
-<div class="LanguageTitle">Mist User Guide</div>
-
-<div class="TopicHeader">Creating a Fact Table</div>
+# Creating a Fact Table
 
 Fact tables let you model the relational parts of a table, and the analytical aspects. If your fact is going to be exposed through an OLAP cube, this allows you to model all aspects of the measure group in the same editor. The relational features are modeled the same way for all table types, while the analytical features vary depending on the purpose of the table. For facts, you can model the properties that control how a Microsoft Analysis Services measure group will be emitted through the Dimension editor.
 
 To create a fact, follow these steps:
 
-1.  Add a new table and rename it to FactSales. For more information about creating the relational portions of fact table using the designer, see [Creating a Basic Table](Creating%20a%20Basic%20Table).
+1. Add a new table and rename it to FactSales. For more information about creating the relational portions of fact table using the designer, see [Creating a Basic Table](Creating a Basic Table.md).
 
-2.  To create the relational portion of the table, you will edit the Biml directly. Right click the in the logical view and choose View Biml.  
+2. To create the relational portion of the table, you will edit the Biml directly. Right click the in the logical view and choose View Biml.
 
-3.  Select all the contents of the Biml editor. You can do this by right-clicking in the Biml editor and clicking the Select All menu item. Then delete the contents by pressing the Delete key. Finally, paste in the following Biml:
+3. Select all the contents of the Biml editor. You can do this by right-clicking in the Biml editor and clicking the Select All menu item. Then delete the contents by pressing the Delete key. Finally, paste in the following Biml:
 
+```biml
         <Biml xmlns="http://schemas.varigence.com/biml.xsd">
             <Tables>
                 <Table Name="FactSales" SchemaName="AdventureWorksLTDataMartDatabase.AdventureWorksLTDataMartSchema" LogicalDisplayFolder="AwDm">
@@ -39,11 +38,16 @@ To create a fact, follow these steps:
                 </Table>
             </Tables>
         </Biml>
+```
 
-4.  To create the measures for this fact table, click **Measure Group** from the **Table Tools** ribbon, then click **Generate Measures**. This will populate the measures grid with default measures based on the columns defined in the table.  
+1. To create the measures for this fact table, click **Measure Group** from the **Table Tools** ribbon, then click **Generate Measures**. This will populate the measures grid with default measures based on the columns defined in the table.
+
     ![Table Ribbon - Autogenerate Measures](https://varigencecom.blob.core.windows.net/images-mistdocumentation/010_Step06.gif)
-7.  The following measures should be generated:  
+
+1. The following measures should be generated:
+
     ![Fact Table Editor - Measures Data Grid](https://varigencecom.blob.core.windows.net/images-mistdocumentation/010_Step07.png)
-8.  Save the project to persist your changes.
+
+1. Save the project to persist your changes.
 
 Once a fact is created in the model, it will emit as a relational table. If it is referenced from a cube, it will also emit as an Analysis Services measure group.

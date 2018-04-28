@@ -1,7 +1,5 @@
 # BimlStudio Documentations
 
-[Table of Contents](TOC.md)
-
 ## BimlStudio User Guide
 
 The BimlStudio User Guide describes all aspects of the BimlStudio user interface.

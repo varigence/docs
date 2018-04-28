@@ -1,6 +1,6 @@
 BimlStudio provides an import capability. This allows you to pull existing schema and table definitions from a database into your model. These items are then imported as new objects in the model. Once imported, you can edit them as needed.
 
-To import database assets, you first need to create a connection to the database. See [Creating a Connection](Creating%20a%20New%20Connection) for more information. Then, you then need to create a database asset. See [Creating a Database](Creating%20a%20New%20Database) for more information. 
+To import database assets, you first need to create a connection to the database. See [Creating a Connection](Creating a New Connection.md) for more information. Then, you then need to create a database asset. See [Creating a Database](Creating a New Database.md) for more information.
 
 #### Import Tables using BimlStudio Ribbon
 
@@ -32,7 +32,7 @@ You can import database assets by following these steps:
 
 9.  For importing assets from the AdventureWorksLT database, you can copy and paste this BimlScript into the **BimlScript Input Editor** pane. You can also use this sample as a starting point for writing your own import script.
     
-    
+``` biml    
         <#@ template language="C#" hostspecific="True" tier#>
         <# var importResult = ExternalDataAccess.GetDatabaseSchema(RootNode.DbConnections["AdventureWorksLT"], new[]{"SalesLT"}, null, ImportOptions.ExcludeForeignKey | ImportOptions.ExcludeColumnDefault | ImportOptions.ExcludeViews | ImportOptions.ExcludeIdentity);#>
 
@@ -44,6 +44,7 @@ You can import database assets by following these steps:
                 <#=importResult.TableNodes.GetBiml()#>
             </Tables>
         </Biml>
+```
 
     1.  The first thing to notice is that all code fragments are surrounded by required <# and #> characters.
     2.  The first line is the required template directive. The language parameter depends on the language you're using; this example uses C#.

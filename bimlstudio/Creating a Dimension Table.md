@@ -2,7 +2,7 @@ Dimension tables let you model not only the relational parts of a table, but als
 
 To create a dimension, follow these steps:
 
-1.  Follow the directions from the [Creating a Basic Table](Creating%20a%20Basic%20Table) topic to define the relational portion of the dimension, using this information:  
+1.  Follow the directions from the [Creating a Basic Table](Creating a Basic Table.md) topic to define the relational portion of the dimension, using this information:  
     **Table Name:** DimProduct  
     **Schema:** AdventureWorksLTDataMartSchema  
     **Keys:** IK_DimProduct (using column ProductID)  
