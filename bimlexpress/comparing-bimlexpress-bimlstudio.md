@@ -4,7 +4,6 @@ BimlExpress is Varigence's free Visual Studio add-in, created specifically for w
 
 BimlStudio is Varigence's full-featured integrated development environment (IDE) for Biml, created to replace Visual Studio.
 
-
 | Feature                                                        | BimlExpress | BimlStudio              |
 | -------------------------------------------------------------- |:-----------:|:-----------------------:|
 | <br /><br />**Relational Databases** <br />                    |             |                         |

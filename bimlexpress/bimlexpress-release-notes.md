@@ -1,22 +1,28 @@
 # BimlExpress Release Notes
 
 ## BimlExpress 2018
+
 **Release Date: ???**
 
 ### Breaking Changes from Previous Release
+
 ???
 
 ### Major Features
+
 - SSIS Package Importer
 
 ## BimlExpress 2017
+
 **Release Date: July 15th, 2017**
 
 ### Breaking Changes from Previous Release
+
 - Moved PathAnnotation from PrecedenceConstraints to TaskflowInputPath.
 - Fixed issue in CallBimlScript property directives where all properties were required and marking them as required would create an error. To fix this, we apply all of the required properties first and then the optional properties in order of specification. Since required properties basically didn't work before, this shouldn't affect any actual code, but it should be called out as a potentially significant behavioral change.
 
 ### Major Features
+
 - Expanded Biml Preview pane built into editor
 - Biml global include files
 - Improved Biml code editing experience
@@ -26,11 +32,13 @@
 - Multi-product support in product keys
 
 ### Platform
+
 - Moved all DLLs to use .NET 4.6 rather than .NET 3.5
 - All assemblies are now strong-named
 - Updated EULA to cover frameworks including BimlFlex
 
 ### BimlExpress UI
+
 - Improved Find/Replace within document
 - Added option to disable autoformat in preview pane
 - Significantly improved load time of existing Biml projects by eliminating upfront Biml file parsing.
@@ -38,6 +46,7 @@
 - Biml file icon is now registered by the add-in if it isn’t already registered
 
 ### Biml Code Editor
+
 - Fixed a large number of bugs
 - Switched to better fonts for the completion list and quick info popup windows
 - Improved quick info and code completion performance
@@ -49,12 +58,15 @@
 - Fixed interaction between code editor and compare tool in VS
 
 ### Biml Language
+
 - See [Biml Release Notes](../biml/biml-release-notes.md)
 
 ### Biml API
+
 - See [Biml Release Notes](../biml/biml-release-notes.md)
 
 ### Database Providers and Type Mappings
+
 - Added formal support for the DevArt MySql provider.
 - Added formal support for Ingres ODBC and ADO.NET.
 - Added formal support for SAS local data provider (e.g. sas7bdat files).
@@ -64,17 +76,20 @@
 - Adding basic Excel ACE OLEDB support to GetDatabaseSchema.
 
 ### SSIS Components
+
 - Added Biml elements for Azure Feature Pack, including:
-    - Task details controls and images.
-    - Models for connections and tasks.
-    - SSIS emitters and importers.
+  - Task details controls and images.
+  - Models for connections and tasks.
+  - SSIS emitters and importers.
 
 ### Visual Basic
+
 - Updated BimlEngine so that dynamic objects will work with both VB and C#.
 - Added VB code for metadata model dynamic objects.
 - Removed default timeOut arguments for all of the external data access APIs and replaced them with explicit method overloads. This is primarily to better support VB, which does not handle overloads with default arguments as elegantly as C#.
 
 ### Table Import
+
 - Fixed issue where identity information was not being imported properly from SQL Server tables.
 - Added support for more custom types in SQL Server table imports.
 - Cleaned up precision and scale settings on table import for types that don't support them.
@@ -82,9 +97,11 @@
 - Fixed bug where importing multiple tables with the same name in different schemas wouldn't work in GetDatabaseSchema.
 
 ### Javascript Emission
+
 - Added GetJson method with several variants to every Biml object and collection.
 
 ### Biml Validator
+
 - Fixed issue where validator thread would be interrupted if a table had multiple keys with the same
 name but no assigned schema.
 - Added a validator for AnalysisServicesProcessing task to ensure that the correct mix of properties is
@@ -94,16 +111,19 @@ specified for each type of processing job.
 load in BimlStudio.
 
 ### GetBiml Updates
+
 - Complete rewrite of GetBiml functionality that will have better performance and be more reliable.
 - Fixed an issue with the emission of least qualified names for Biml object references.
 
 ### Package Updates
+
 - Fixed static properties for several package tasks to match the latest options and data types.
 - Fixing data types for some task nodes.
 - Biml can be used to generate package parts.
 - Package parts can now be referenced from Biml control flow.
 
 ### SSIS Emission
+
 - Added support for SSIS annotations to packages, containers, event handlers, and data flows for SSIS
 2012 and higher.
 - Added support for dataflow and controlflow path annotations for SSIS 2012 and higher.
@@ -129,12 +149,13 @@ load in BimlStudio.
 - Fixed issue with CDC Control Task where emission would fail if StateConnection or StateName were not supplied.
 - Fixes for SSIS Lookup type mappings for date and text.
 - Fixed an issue where errors would be produced if you used a parameterized query in an SSIS component where the variable used to set the parameter contained an expression.
-    - Fixed and NRE when parameters do not exist in an OLEDB source or lookup build.
+  - Fixed and NRE when parameters do not exist in an OLEDB source or lookup build.
 - Updated emission properties to correctly handle SSIS 2008/2005 packages.
 - Added XML escaping to SSIS emitter to fix 2012+ emission errors.
 - Updates to SSISEmitter for 2016 support.
 
 ### Bug Fixes
+
 - Fix for case insensitivity in VB within metadata dynamic object templates.
 - Fixed issue where code directives inside includes were not being added to the parent file.
 - Fixed issue where language selection in global includes would not apply to dynamic object code files.
