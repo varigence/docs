@@ -7,6 +7,11 @@ $(function () {
   var show = 'show';
   var hide = 'hide';
   var util = new utility();
+  var originalContentHeight = 0;
+  var runningtocHeight = 0;
+  var footer_top = 0;
+  var lastScrollTop = $(window).scrollTop();
+  $window = $(window);
 
   highlight();
   enableSearch();
@@ -34,6 +39,109 @@ $(function () {
     renderAlerts();
     renderAffix();
     renderTabs();
+  }
+
+  window.onscroll = function() {
+    footer_top = $('footer').offset().top;
+    var $sidebar = $(".sidetoc");
+    var $sidefilter = $('.sidefilter');
+	  var initialSidebarTop = $sidefilter.position().top;
+	  var windowHeight = $window.height();
+    var sidebarHeight = $sidebar.height() + $sidefilter.height();
+
+    var scrollTop = $window.scrollTop();
+    var scrollBottom = scrollTop + windowHeight;
+    var toggletoTocDifference = $sidefilter.position().top + $sidefilter.height() + 20;
+    var sidebarTop = $sidefilter.position().top;
+    var sidebarOffset = $sidefilter.offset().top;
+    
+
+    var heightDelta = Math.abs(windowHeight - (sidebarHeight));
+    var scrollDelta = lastScrollTop - scrollTop;
+//100 in scroll delta...0 in height delta (always?)
+
+    var isScrollingDown = (scrollTop > lastScrollTop); //true
+    var isWindowLarger = (windowHeight > sidebarHeight); //no?
+    
+    
+    if(!isWindowLarger && scrollTop > sidebarTop + heightDelta){
+      if (scrollTop > lastScrollTop){
+        if (scrollBottom <= footer_top){
+          $sidefilter.css('top', -heightDelta);
+          $sidebar.css('top', toggletoTocDifference);
+          $sidebar.removeClass('absolute');
+          $sidebar.addClass('fixed');
+          $sidefilter.removeClass('absolute');
+          $sidefilter.addClass('fixed');
+        }
+        else{
+          $sidebar.css('top', footer_top - sidebarHeight + $sidefilter.height());
+          $sidebar.removeClass('fixed');
+          $sidebar.addClass('absolute');
+          $sidefilter.removeClass('fixed');
+          $sidefilter.addClass('absolute');
+        }
+      }
+      else if (scrollTop < lastScrollTop){
+        if (scrollBottom <= sidebarHeight + 50){
+          $sidefilter.css('top', 90);
+          $sidebar.css('top', 140);
+					$sidebar.removeClass('fixed');
+          $sidebar.addClass('absolute');
+          $sidefilter.removeClass('fixed');
+					$sidefilter.addClass('absolute');
+				}
+        else if (scrollBottom <= footer_top){
+          $sidefilter.css('top', -heightDelta);
+          $sidebar.css('top', toggletoTocDifference);
+          $sidebar.removeClass('absolute');
+          $sidebar.addClass('fixed');
+          $sidefilter.removeClass('absolute');
+          $sidefilter.addClass('fixed');
+        }
+      }
+    }
+  else if (isWindowLarger){
+    var sidebarBottom = $sidefilter.offset().top + sidebarHeight + 15;
+    if (scrollTop > lastScrollTop){
+      if (sidebarBottom <= footer_top){
+        $sidefilter.css('top', 90);
+        $sidebar.css('top', toggletoTocDifference);
+        $sidebar.removeClass('absolute');
+        $sidebar.addClass('fixed');
+        $sidefilter.removeClass('absolute');
+        $sidefilter.addClass('fixed');
+      }
+      else {
+        console.log('oof');
+        $sidefilter.css('top', footer_top - sidebarHeight - 14);
+        $sidebar.css('top', footer_top - sidebarHeight + $sidefilter.height());
+        $sidebar.removeClass('fixed');
+        $sidebar.addClass('absolute');
+        $sidefilter.removeClass('fixed');
+        $sidefilter.addClass('absolute');
+      }
+    }
+    else if (scrollTop < lastScrollTop){
+        if (sidebarOffset <= 90){
+          $sidefilter.css('top', 90);
+          $sidebar.css('top', 140);
+          $sidebar.removeClass('fixed');
+          $sidebar.addClass('absolute');
+          $sidefilter.removeClass('fixed');
+          $sidefilter.addClass('absolute');
+      }
+      else if (sidebarOffset >= scrollTop + 90) {
+        $sidefilter.css('top', 90);
+        $sidebar.css('top', toggletoTocDifference);
+        $sidebar.removeClass('absolute');
+        $sidebar.addClass('fixed');
+        $sidefilter.removeClass('absolute');
+        $sidefilter.addClass('fixed');
+      }
+    }
+  }
+    lastScrollTop = scrollTop;
   }
 
   function breakText() {
@@ -257,7 +365,7 @@ $(function () {
 
     function flipContents(action) {
       if (action === "show") {
-        $('.hide-when-search').show();
+       // $('.hide-when-search').show();
         $('#search-results').hide();
       } else {
         $('.hide-when-search').hide();
@@ -411,17 +519,73 @@ $(function () {
         top += $(e).position().top;
       })
       $('.sidetoc').scrollTop(top - 50);
-
-      if ($('footer').is(':visible')) {
-        $('.sidetoc').addClass('shiftup');
-      }
-
+      
+      var sidebarHeight = $('sidetoc').height() + $('.sidefilter').height() + 50;
       renderBreadcrumb();
+
+      originalContentHeight = $('.content').height();
+		  var $sidetoc = $('.sidetoc');
+			console.log(originalContentHeight);
+      if(sidebarHeight > originalContentHeight){
+        $('.content').height($sidetoc.height());
+      }
+      
+      console.log($('.content').height());
+      $('.sidefilter').css('top',90);
+      $('.sidetoc').css('top', 140);
+      $('.sidefilter').addClass('absolute');
+      $('.sidetoc').addClass('absolute');
+      footer_top = $("footer").offset().top;
+      updateScreen()
+      console.log($('.content').height());
+    }
+
+    function updateScreen(){
+      var toggleheight = $('.sidefilter').height();
+      var tocheight = $('.toc').height();
+      var contentheight = $('.content').height();
+      $('.sidetoc').height(tocheight + 50);
+      var sidetocheight = $('.sidetoc').height() + $('.sidefilter').height();
+      if (tocheight > runningtocHeight){
+        //do expand
+        if (tocheight > sidetocheight){
+          $('.sidetoc').height(tocheight + toggleheight + 5);
+          sidetocheight = $('.sidetoc').height();
+        }
+        
+        if(sidetocheight > contentheight){
+             console.log("sidetocheight = " + sidetocheight);
+            $('.content').height(sidetocheight);
+        }
+      }
+      
+      
+      if (tocheight < runningtocHeight){
+        var totaltocheight = tocheight + 50;
+        var $window = $(window);
+        $('.sidetoc').height(totaltocheight);
+        
+        sidetocheight = $('.sidetoc').height();
+        if(contentheight > originalContentHeight && contentheight > sidetocheight){
+          if (sidetocheight  > originalContentHeight ){
+            console.log("1" + $('.content').height());
+            $('.content').height(sidetocheight);
+          }
+          
+          if (sidetocheight <= originalContentHeight){
+            console.log("2" + $('.content').height());
+            $('.content').height(originalContentHeight);
+          }
+        }
+      }
+          
+      runningtocHeight = tocheight;
     }
 
     function registerTocEvents() {
       $('.toc .nav > li > .expand-stub').click(function (e) {
         $(e.target).parent().toggleClass(expanded);
+        updateScreen();
       });
       $('.toc .nav > li > .expand-stub + a:not([href])').click(function (e) {
         $(e.target).parent().toggleClass(expanded);
@@ -551,6 +715,8 @@ $(function () {
           container.scrollTop(container.scrollTop() + top - height / 2);
         }
       })
+
+      console.log("listcount = " + document.getElementById("affix").getElementsByTagName("li").length);
     }
 
     function getHierarchy() {

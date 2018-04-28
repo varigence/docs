@@ -6,7 +6,7 @@ body {
 }
 button,
 a {
-  color: #337ab7;
+  color: #333;
   cursor: pointer;
 }
 button:hover,
@@ -410,21 +410,29 @@ article section {
   margin-left: 0;
 }
 
-.sidenav, .fixed_header, .toc  {
-  background-color: #f1f1f1;
-}
+
 
 .sidetoc {
-  position: fixed;
+  float:left;
   width: 260px;
   top: 150px;
   bottom: 0;
   overflow-x: hidden;
-  overflow-y: auto;
-  background-color: #f1f1f1;
   border-left: 1px solid #e7e7e7;
-  border-right: 1px solid #e7e7e7;
   z-index: 1;
+  padding-top: 10px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative{
+position: relative;
 }
 
 .sidetoc.shiftup {
@@ -432,7 +440,6 @@ article section {
 }
 
 body .toc{
-  background-color: #f1f1f1;
   overflow-x: hidden;
 }
 
@@ -468,7 +475,6 @@ body .toc{
   left: 0;
 }
 .toc .nav > li > a {
-  color: #666666;
   margin-left: 5px;
   display: block;
   padding: 0;
@@ -518,41 +524,41 @@ body .toc{
 }
 
 .toc .level1 > li {
-  font-weight: bold;
   margin-top: 10px;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
 }
 .toc .level2 {
   font-weight: normal;
   margin: 5px 0 0 15px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .toc-toggle {
   display: none;
   margin: 0 15px 0px 15px;
 }
 .sidefilter {
-  position: fixed;
+  float:left;
   top: 90px;
   width: 260px;
-  background-color: #f1f1f1;
-  padding: 15px;
+  padding: 20px;
   border-left: 1px solid #e7e7e7;
-  border-right: 1px solid #e7e7e7;
   z-index: 1;
+}
+#sidetoggle{
+  width: 260px;
 }
 .toc-filter {
   border-radius: 5px;
   background: #fff;
-  color: #666666;
   padding: 5px;
   position: relative;
   margin: 0 5px 0 5px;
+  border: 1px solid #e7e7e7;
 }
 .toc-filter > input {
   border: 0;
-  color: #666666;
+  color: #f1f1f1;
   padding-left: 20px;
   width: 100%;
 }
@@ -566,7 +572,6 @@ body .toc{
 }
 .article {
   margin-top: 120px;
-  margin-bottom: 115px;
 }
 
 #_content>a{
@@ -588,7 +593,7 @@ body .toc{
   margin-top: 50px;
   font-size: 12px;
   max-height: 100%;
-  overflow: hidden;
+  overflow: visible;
   top: 100px;
   bottom: 10px;
   position: fixed;
@@ -623,7 +628,7 @@ body .toc{
 .affix > ul.level1 {
   overflow: hidden;
   padding-bottom: 10px;
-  height: calc(100% - 100px);
+  height: 100%;
   margin-right: -20px;
 }
 .affix ul > li > a:before {
@@ -752,6 +757,7 @@ footer {
     text-align: center;
   }
   .sidenav {
+    width: 260px;
     padding: 15px 0;
     margin-left: -15px;
     margin-right: -15px;
@@ -775,8 +781,7 @@ footer {
   .toc li:after {
     margin-left: -3px;
     margin-right: 5px;
-    content: ", ";
-    color: #666666;
+    content: ", "; 
   }
   .toc .level1 > li {
     display: block;
