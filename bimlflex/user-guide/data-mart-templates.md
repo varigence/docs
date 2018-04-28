@@ -1,3 +1,5 @@
+# Data Mart Templates
+
 This document covers the process to implement a Data Mart layer using BimlFlex.
 
 content include
@@ -6,13 +8,13 @@ content include
 * Implementation scenarios
 * loading data out of Data Vault and into a Data Mart via Point in Time tables and Bridge tables.
 
-### Integration to Data Mart
+## Integration to Data Mart
 
-#### Introduction
+### Introduction
 
 The metadata required to build the Data Mart is similar to any other source to staging project. The ETL pattern that BimlFlex will use for the output will change.
 
-#### Common Architectures and The Data Mart as a Whole
+### Common Architectures and The Data Mart as a Whole
 
 This implementation guide covers the modeling and implementation of star schema facts and dimensions. It doesn’t cover Kimball architecture as a concept. Best practices and basic dimensional implementation constructs, like date and time dimensions are required but considered out of scope for this documentation.
 
@@ -20,15 +22,15 @@ In terms of common architectures, this document begins as the point where a user
 
 The most common of these two is the following items.
 
-![Implementation Architecture Example](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_data_mart_implementation_architecture_example.png "Implementation Architecture Example")
+![Implementation Architecture Example](images/bimlflex_ss_v5_data_mart_implementation_architecture_example.png "Implementation Architecture Example")
 
-#### BimlFlex Fact Loading Pattern.
+### BimlFlex Fact Loading Pattern
 
 Below is a diagram showing the output ETL structure that BimlFlex uses load fact tables in a Data Mart. The optional metadata settings and extension points are signified by shaded rectangles and dotted rectangles. The standard BimlFlex components are shown in solid colours.
 
-Note that the pattern shows that the orchestration components are applied. More [information on the orchestration is documented here](Orchestration)
+Note that the pattern shows that the orchestration components are applied. More [information on the orchestration is documented here](orchestration.md)
 
-![Data Mart ETL Pattern workflow](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_data_mart_etl_pattern.png "Data Mart ETL Pattern workflow")
+![Data Mart ETL Pattern workflow](images/bimlflex_ss_v5_data_mart_etl_pattern.png "Data Mart ETL Pattern workflow")
 
 **\[SQL – Initialize Staging\]** Inside the main sequence container begins by truncating the target staging table. This staging table will eventually be loaded inside the component `[DFT – LOAD Fact]`.
 
@@ -58,7 +60,7 @@ Below is the output of BimlFlex ETL used to load dimension tables in the Data Ma
 
 The particulars of the dimension loading pattern are that whether the data is type one or type two is taken into account, along with whether it should be directly inserted in a new load. Hashing is also being employed to better detect changes in the column data. More on these details below.
 
-![Dimension Data Mart ETL Pattern](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_dimension_data_mart_etl_pattern.png "Dimension Data Mart ETL Pattern")
+![Dimension Data Mart ETL Pattern](images/bimlflex_ss_v5_dimension_data_mart_etl_pattern.png "Dimension Data Mart ETL Pattern")
 
 **\[SQL – Initialize Staging\]** The main sequence container begins by truncating the target staging table. This staging table will eventually be loaded inside the component **\[DFT – LOAD Dimension\]**.
 
@@ -98,49 +100,43 @@ This second pattern for loading dimension tables has some similarities and some 
 
 When beginning to structure a Data Mart loading project in BimlFlex, there are certain metadata entities required in order to Build the solution.
 
-The connection has to be defined with the Integration Stage properly defined. 
+The connection has to be defined with the Integration Stage properly defined.
 
 Below is an example connection to the Data Mart.
 
-![Connection Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_connections_sheet.png "Connection Metadata")
+![Connection Metadata](images/bimlflex_ss_v5_excel_data_mart_connections_sheet.png "Connection Metadata")
 
-A Batch is required, this controls the number of threads used and if orchestration is used. 
+A Batch is required, this controls the number of threads used and if orchestration is used.
 
 Here the Batch is named `LOAD_BFX_DM`, short for Load BimlFlex Data Mart.
 
-![Batch Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_batches_sheet.png "Batch Metadata")
+![Batch Metadata](images/bimlflex_ss_v5_excel_data_mart_batches_sheet.png "Batch Metadata")
 
 The Project can be defined once the Connection and the Batch has been defined.
 
-There are a few options for Project metadata and how a Data Mart project is loaded. These options are outlined in the table below. 
+There are a few options for Project metadata and how a Data Mart project is loaded. These options are outlined in the table below.
 
 The project architecture and the source for the Data Mart depends on the solution architecture. If Data Vault methodology is being used, the source wwill be a connection pointing at the Data Vault. If a two tier implementation is used (Source to Staging to Data Mart), this connection is the staging database connection.
 
-<table class="ItemList">
-<thead>
-<tr><th>Attribute Name</th><th>Example Project Attributes</th></tr>
-</thead>
-<tbody>
-<tr><td>Project</td><td>LOAD\_BFX\_DM</td></tr>
-<tr><td>Source Connection</td><td>BFX\_STG/BFX\_DV</td></tr>
-<tr><td>Stage Connection</td><td></td></tr>
-<tr><td>Persistent Stage Connection (Optional)</td><td></td></tr>
-<tr><td>Target Stage Connection</td><td>BFX\_DM</td></tr>
-<tr><td>Target Connection (destination of the data: DW, DV etc)</td><td>BFX\_DM</td></tr>
-<tr><td>Batch Name</td><td>BFX\_DM</td></tr>
-<tr><td>Parent Batch (Optional)</td><td></td></tr>
-<tr><td>Integration Template</td><td>Source -> Target</td></tr>
-</tbody>
-</table>
-<br>
+|Attribute Name    | Example Project Attributes |
+|---------------   |----------------------------|
+|Project           |LOAD\_BFX\_DM|
+|Source Connection |BFX\_STG/BFX\_DV|
+|Stage Connection  ||
+|Persistent Stage Connection (Optional)||
+|Target Stage Connection|BFX\_DM|
+|Target Connection (destination of the data: DW, DV etc)|BFX\_DM|
+|Batch Name|BFX\_DM|
+|Parent Batch (Optional)||
+|Integration Template|Source -> Target|
 
 The example is using the Source to Target Integration Template. BimlFlex uses the Connection metadata Integration Stage set earlier, `Data Mart`, to derive what BimlFlex ETL pattern to apply.
 
-### Dimension Object and Columns 
+### Dimension Object and Columns
 
 once the prerequisite metadata is completed the Objects can be added.
 
-![Object Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_objects_sheet.png "Object Metadata")
+![Object Metadata](images/bimlflex_ss_v5_excel_data_mart_objects_sheet.png "Object Metadata")
 
 In the above example above there is a new Customer dimension being defined in the first row. The object type is Dimension and its connection is pointing to the Data Mart.
 
@@ -148,28 +144,27 @@ The next step is to do Source to Target mapping of columns from the source table
 
 In the following example the columns of the source table Customer are in the Sales schema.
 
-![Column Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_columns_sheet.png "Column Metadata")
+![Column Metadata](images/bimlflex_ss_v5_excel_data_mart_columns_sheet.png "Column Metadata")
 
 At this point, a user will want to define the columns of the Customer dimension.
 
 Below is an example of the columns a user would define in the customer dimension.
 
-![Column Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_dim_columns_sheet.png "Column Metadata")
+![Column Metadata](images/bimlflex_ss_v5_excel_data_mart_dim_columns_sheet.png "Column Metadata")
 
 Note that the columns are fairly similar but they have been set in such a way that the business key in the source table will line up with the CustomerCode column and the primary key of the source will be the CustomerKey of the dimension table.
 
 This ia one pattern avaialble when modeling star schemas. Each business key in source becomes the `Code` column in the Data Mart and each Data Mart table will include a unique integer key which is the `Key` column. The keys used can either be sequence numbers from Identity columns, or for Data Vault sources, the Hashed Surrogate Keys generated in the Data Vault entities or Bridge and Point In Time tables.
 
-Once Source and Target metadata is available the mapping between them can be completed. 
+Once Source and Target metadata is available the mapping between them can be completed.
 
 Below is an example of the Source to Target definitions of the `Sales.Customer` columns.
 
-![Column Metadata, Source and Target Columns](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_customer_source_to_target_sheet.png "Column Metadata, Source and Target Columns")
-
+![Column Metadata, Source and Target Columns](images/bimlflex_ss_v5_excel_data_mart_customer_source_to_target_sheet.png "Column Metadata, Source and Target Columns")
 
 Refresh the metadata in BimlStudio to review, build and test.
 
-![Relational Objects, Logical View](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_logical_view.png "Relational Objects, Logical View")
+![Relational Objects, Logical View](images/bimlflex_ss_v5_excel_data_mart_logical_view.png "Relational Objects, Logical View")
 
 ### Fact Object and Columns
 
@@ -178,15 +173,15 @@ the previous examples.
 
 Below is a sample of the fact object metadata, note that the first column Project has the same `LOAD_BFX_DM` project.
 
-![Object Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_objects_dimension.png "Object Metadata")
+![Object Metadata](images/bimlflex_ss_v5_excel_data_mart_objects_dimension.png "Object Metadata")
 
 From here, the main objective is to definite the columns in the new Fact table and do Source to Target mappings for these columns. In this example, the `SalesOrderHeader` will be the source of the Fact.
 
-![Column Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_columns_dimension.png "Column Metadata")
+![Column Metadata](images/bimlflex_ss_v5_excel_data_mart_columns_dimension.png "Column Metadata")
 
 Now the key will be to link the fact source columns and the target fact table and target columns as shown in the previous customer dimension example.
 
-![Column Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_sttm_dimension.png "Column Metadata")
+![Column Metadata](images/bimlflex_ss_v5_excel_data_mart_sttm_dimension.png "Column Metadata")
 
 Now that the source, destination and target column metadata in place, there is one more item to cover regarding modelling Data Marts in BimlFlex and that is the use of foreign keys.
 
@@ -196,7 +191,7 @@ BimlFlex still automates all this functionality for us but the user still needs 
 
 The example below will demonstrate how to add a foreign key to the customer dimension.
 
-![Column Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_data_mart_fk_dimension.png "Column Metadata")
+![Column Metadata](images/bimlflex_ss_v5_excel_data_mart_fk_dimension.png "Column Metadata")
 
 Note that since there is a foreign key pointing to the customer dimension key, the Fact’s CustomerID column should be renamed to CustomerKey.
 
@@ -213,7 +208,7 @@ solution but how they are implemented in BimlFlex is fairly straight forward. Th
 
 The purpose of a bridge table is to ease the work involved in transforming and accessing data in a data vault, especially when attempting to load this data in the Data Mart. As the name implies a bridge table joins across multiple entities in the data vault and brings them together into one table. Bridge tables deal in Hubs and Links and the reason being is that generally a bridge table is needed because in the Data Mart layer it is expected to make use of the relationships that exist in the source systems, however in the data vault these relationships are decomposed across potentially multiple Hubs and Links.
 
-![Bridge table relationship example](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_bridge_pattern.png "Bridge table relationship example")
+![Bridge table relationship example](images/bimlflex_ss_v5_bridge_pattern.png "Bridge table relationship example")
 
 The above example shows a bridge table on the left joining two hubs and a link table together, one row in the bridge table will contain all the surrogate keys needed to start querying across these entities without a large amount of SQL being needed.
 
@@ -225,7 +220,7 @@ Fortunately, configuring and deploying a bridge table is a fairly simple process
 
 Creating a bridge table requires a user to know a couple of things about a given entity within the data vault. The first action a user needs to take is to choose the primary Hub. This means that of the set of hubs being joined together, which one are will be chosen to be the starting point. In the example, the Hubs product and product category are joined together. To do this the user will need to include the product and product category Link.
 
-![Attributes Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_attributes_create_bridge.png "Attributes Metadata")
+![Attributes Metadata](images/bimlflex_ss_v5_excel_attributes_create_bridge.png "Attributes Metadata")
 
 Note that as in the screen above, CreateBridge is used to indicate what is happening with these columns. In the AttributeKey column, a user can name the Bridge table and In the AttributeValue column, a user can indicate the primary Hub and chose which other Hubs need to be added with their surrogate keys to the bridge table. This is done by entering in the keywords IsPrimaryHub and AddKey for which Hubs that need to be added to this bridge table. Once this metadata is in place all is required, then, is to inspect, build and test this new structure through BimlStudio.
 
@@ -233,20 +228,20 @@ Note that as in the screen above, CreateBridge is used to indicate what is happe
 
 Similar to how a bridge table brings together related data across different entities in the data vault, the Point In Time (PIT) tables job is to bring together all the contextual satellite data where each row represents a time slice. This is particularly helpful when attempting to extract historical data into the Data Mart. The way a pit table does this is by joining all the relevant surrogate keys across all the satellites surrounding one Hub and aligns these rows based on the date time stamp.
 
-![Point in Time table and relationships](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_pit_pattern.png "Point in Time table and relationships")
+![Point in Time table and relationships](images/bimlflex_ss_v5_pit_pattern.png "Point in Time table and relationships")
 
 #### Configuring a Point In Time Table
 
 To configure a Point in Time (PIT) table, the user needs to select the Hub that they want to create the point in time table for. BimlFlex will find all the related satellites to this hub and create the point in time
 table necessary to bring all the items together.
 
-![Attributes Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_attributes_create_pit.png "Attributes Metadata")
+![Attributes Metadata](images/bimlflex_ss_v5_excel_attributes_create_pit.png "Attributes Metadata")
 
 Creating a PIT table is straightforward. BimlFlex is able to obtain the majority of its required attributes from the existing Data Vault metadata. In order to create a PIT table for a given Hub, all that is needed is the name of the Hub and the connection for its Data Vault.
 
 Using the Product entity as an example, the connection is `BFX_RDV` for the Raw Data Vault and the object name is `rdv.HUB_Project`. Set the attribute key to `CreatePIT` and the attribute value to the name of the PIT table.
 
-Only adding the Hub to the configuration will include all its Satellites in the PIT. if a subset of the Satellites are to be included, add these Satellite tables to the attributes with the same PIT table name.  
+Only adding the Hub to the configuration will include all its Satellites in the PIT. if a subset of the Satellites are to be included, add these Satellite tables to the attributes with the same PIT table name.
 
 Refresh the metadata in BimlStudio to review, build and test.
 
@@ -259,7 +254,7 @@ The decision as to where to implement business rules doesn’t necessarily chang
 
 Below is an example of the variety of source types available, note that view or regular tables are acceptable.
 
-![Object Types](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_object_types.png "Object Types")
+![Object Types](images/bimlflex_ss_v5_excel_object_types.png "Object Types")
 
 When implementing business rules through extension points, this will generally be done in the form of a post process that is entered in especially for a given object package. Post process extension points get
 executed at the end of a particular load. This approach is less common than storing business rules in a view but is just as feasible.

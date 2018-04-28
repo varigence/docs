@@ -1,3 +1,5 @@
+# Extension Points
+
 Extension Points are used to extend the default functionality of BimlFlex using standard Biml code. It can extend and override many different areas of the BimlFlex framework.
 
 Extension Points have four key components:
@@ -5,15 +7,15 @@ Extension Points have four key components:
 * Extension Point directives that control what is injected and where
 * Inheritance options code that defines any object inheritance
 * Custom code that implements the required behavior
-* Input and output path variables for connecting the Extension Point in the Ssis package. 
+* Input and output path variables for connecting the Extension Point in the Ssis package.
 
-![Extension Points Sample Code](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_extension_points_sample_code.png "Extension Points Sample Code")
+![Extension Points Sample Code](images/bimlflex_ss_v5_extension_points_sample_code.png "Extension Points Sample Code")
 
 Extension Points are created in BimlStudio. In the BimlFlex Ribbon tab there are several Extension Point areas with a large number of different Extension Points available. Each Extension Point template will generate a code block that targets a specific point of the project. 
 
-![BimlFlex Ribbon UI](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_bimlflex_ui_tab.png "BimlFlex Ribbon UI")
+![BimlFlex Ribbon UI](images/bimlflex_ss_v5_bimlflex_ui_tab.png "BimlFlex Ribbon UI")
 
-Creating an Extension Point file and applying the required target attribute is all that is needed for it to be included into the project. when BimlFlex builds the solution any Extension Point code is injected into the resulting Packages. 
+Creating an Extension Point file and applying the required target attribute is all that is needed for it to be included into the project. when BimlFlex builds the solution any Extension Point code is injected into the resulting Packages.
 
 The Extension Points are saved as Biml files in the BimlStudio Project and should be treated as source code for the solution.
 
@@ -25,7 +27,7 @@ Note that there are many features and functions built into BimlFlex that don't r
 
 Below is an example of where Extension Points can be added to the ETL structure. The red dots indicate injection points.
 
-![Extension Points Injection Points](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_extension_points_sample_flow.png "Extension Points Injection Points")
+![Extension Points Injection Points](images/bimlflex_ss_v5_extension_points_sample_flow.png "Extension Points Injection Points")
 
 It is also possible to completely override the main container with an Extension Point. This can be used with pre-existing, bespoke packages. By importing the existing package into BimlStudio the Biml code version of the same package can be injected into the Extension Point.
 
@@ -35,32 +37,18 @@ Special attention should be paid when editing the directives of an extension poi
 
 The following table outlines the attributes of these directives.
 
-<table class="ItemList">
-<thead>
-<tr>
-<th>Extension Point Directive Attribute</th><th>Attributes Description</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>bundle</td><td>File name of the bundle being used</td></tr>
-<tr><td>extensionpoint</td><td>Key work defining the type of extension point</td></tr>
-<tr><td>target</td><td>The name of the object that the extension point will be applied to</td></tr>
-</tbody>
-</table>
+|Extension Point Directive Attribute|Attributes Description|
+|--- |--- |
+|bundle|File name of the bundle being used|
+|extensionpoint|Key work defining the type of extension point|
+|target|The name of the object that the extension point will be applied to|
 
 The next directive is the property directive which is specific to the type of object you are trying to modify. Below is a table with the attribute definitions.
 
-<table class="ItemList">
-<thead>
-<tr>
-<th>Property Directive Attribute</th><th>Attributes Description</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>name</td><td>Name of the entity this extension point targets: “sourceTable”, “targetTable”, “connection” etc.</td></tr>
-<tr><td>type</td><td>This is the entity type: “string”, “BimlFlexModelWrapper.ObjectsWrapper”, “BimlFlexModelWrapper.ConnectionsWrapper”, etc.</td></tr>
-</tbody>
-</table>
+|Property Directive Attribute|Attributes Description|
+|--- |--- |
+|name|Name of the entity this extension point targets: "sourceTable", "targetTable", "connection" etc.|
+|type|This is the entity type: "string", "BimlFlexModelWrapper.ObjectsWrapper", "BimlFlexModelWrapper.ConnectionsWrapper", etc.|
 
 ## Extension Point Inheritance Code
 
@@ -68,34 +56,35 @@ Here we will describe how a BimlFlex extension point can inherit the attributes 
 
 Below are two of the required directives that need to be in place in order to use inheritance.
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper"  #>
 <#@ import namespace="Varigence.Biml.Flex"  #>
-</pre>
+```
+```
 
 A small block of BimlScript code will enable us to gain access to the items we need. A BimlScript is a piece of C\# that is injected into a Biml file that gives us the ability to use Biml in a programmatic way. We will use C# methods to create variables that contain the objects and information we need.
 
 First, we will need to write the first line that will allow us to obtain a copy of the targeted object. This is done by entering the following line.
 
-<pre class="brush: bimlscript;">
+```biml
 <# CustomOutput.ObjectInherit = true; #>
-</pre>
+```
 
 Next, we will declare the variables we need to hold our information and use methods to obtain the objects of interest in this example. First, create a variable by using the var keyword and then giving the variable an appropriate name. In this example, we will get the source connection of a given table and add it as the value of the variable. Because we have already added the table as a property in our directive we can reference it directly.
 
-<pre class="brush: bimlscript;">
+```biml
 <# var sourceConnection = EntityHelper.GetSourceConnection(table); #>
-</pre>
+```
 
 From here if we want to pull out any of the information about the object, we can insert it directly into our biml code using the following tags: <#= #>. This will take the value stored in any variable, convert it to a string and insert in place of where the original BimlScript tags were.
 
 For example:
 
-<pre class="brush: bimlscript;">
+```biml
 <#=sourceConnection.Name#>
-</pre>
+```
 
-## Output Path and Input Path Variables - Optional 
+## Output Path and Input Path Variables - Optional
 
 Output path variables hold the name of the current task that you are modifying. The input path variable contains the previous task’s name in the control flow or data flow so that the task you are working on can reference the previous item in your biml code and remain attached.
 
@@ -105,19 +94,19 @@ If you are replacing or modifying a task at the end of a data flow or control fl
 
 We will see more examples of where we need to declare an output/input path variable later on.
 
-<pre class="brush: bimlscript;">
+```biml
 <# CustomOutput.OutputPathName = @"TaskName/SequenceContainerName"; #>
-</pre>
+```
 
-# Extension Points Examples
+## Extension Points Examples
 
 This section of the document covers the biggest variation of how extension points are used. However, there is a fairly exhaustive list of extension points available within BimlFlex. Here we will mainly be looking at demonstrating why a certain type of extension point will be used in a solution.
 
-## Project Based
+### Project Based
 
 Project based extension points are helpful, particularly because, depending on the type of solution being implemented, the Project at hand will require items that are not practical to maintain in metadata such as script files and bespoke project parameters. Generally, it is quite useful to have these items centralised within Biml code.
 
-### Project Parameter
+#### Project Parameter
 
 Including parameters with extension points, allows greater reusability and logical separation in our solutions. Because of this, the project parameter extension point is useful for storing parameter definitions for high-level project parameters to do with databases and connections. This is important to note because, over the lifespan of a given data warehouse solution, there is a high chance of needing to repurpose the output of BimlFlex.
 
@@ -127,13 +116,13 @@ The extension point target, in this case, will be to point to the name of the pr
 
 #### Example/default Extension Point code generated from BimlStudio
 
-<pre class="brush: bimlscript;">
-<#@ extension** bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter"  #>
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" #>
 
 <Parameter Name="ServerName" DataType="String" IsRequired="true">localhost</Parameter>
 <Parameter Name="UserName" DataType="String" IsRequired="true">varigence</Parameter>
 <Parameter Name="UserPassword" DataType="String" IsRequired="true">P@ssw0rd!</Parameter>
-</pre>
+```
 
 ### Project Script File
 
@@ -148,7 +137,7 @@ The target attribute of the extension point is the project that the script task 
 
 #### Example/default Extension Point code generated from BimlStudio
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectScriptFile" #>
 <#@ property name="project" type="BimlFlexModelWrapper.ProjectsWrapper" #>
 
@@ -189,13 +178,13 @@ The target attribute of the extension point is the project that the script task 
     </File>
   </Files>
 </ScriptTaskProject>
-</pre>
+```
 
 ## Connection Based
 
 Connection based extension points are useful when adjustments are required to a connection, that is not part of the standard connection that can be implemented through the metadata connections in BimlFlex excel. There are a variety of scenarios where this may be required from Dynamic connection strings to Connections that are derived from custom components.
 
-### Connection Expression 
+### Connection Expression
 
 Connection expressions are useful for creating dynamic connections, particularly when the connection string or source that we are connecting to is not known until runtime. For instance, a flat file connection may need to connect to a file which contains a date stamp in the name. Here just like in SSIS, we can enter in the expression we require for this functionality.
 
@@ -205,15 +194,15 @@ The target, in this case, is the name of a pre-existing connection that is in a 
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionExpression" target=”ConnectionName” #>
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionExpression" target="ConnectionName" #>
 <#@ property name="connection" type="BimlFlexModelWrapper.ConnectionsWrapper"  #>
 
 <Expressions>
   <Expression ExternalProperty="ConnectionString">"Dsn=SRC_ODBC;Uid=" + @[$Project::UserName] + ";Pwd=" + @[$Project::UserPassword] + ";"
   </Expression>
 </Expressions>
-</pre>
+```
 
 ### Batch Based
 
@@ -229,19 +218,19 @@ The target will be the name of the batch that a user is trying to modify.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="ParameterBindings" #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 
 <ParameterBindings>
   <ParameterBinding Name="SnapshotDate" VariableName="User.SnapshotDate" />
 </ParameterBindings>
-</pre>
+```
 
 For further information on creating parameter bindings in Biml see the following resources.
 [https://www.varigence.com/Documentation/Language/Element/AstVariableParameterMappingNode](https://www.varigence.com/Documentation/Language/Element/AstVariableParameterMappingNode)
 
-### Batch Variable 
+### Batch Variable
 
 Batch variables are fairly common, particularly if there are child packages that intend to inherit these variables. In terms of how the variables are defined these are effectively the same as any other package variable.
 
@@ -251,17 +240,17 @@ The target is the name of the batch package.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="BatchVariable"  #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper"  #>
 
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>
-</pre>
+```
 
 For further resources on how to create variables in Biml, see the following resources
 [https://www.varigence.com/Documentation/Language/Element/AstVariableNode](https://www.varigence.com/Documentation/Language/Element/AstVariableNode)
 
-### Batch Package Configurations 
+### Batch Package Configurations
 
 This is another example where the differences in code between regular package configurations and batch configurations are minimal. Below is an example of how to implement batch level package configurations.
 
@@ -271,7 +260,7 @@ The target is the name of the batch package
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="BatchPackageConfigurations"  #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper"  #>
 
@@ -279,7 +268,7 @@ The target is the name of the batch package
 <PackageConfiguration Name="LOAD_MY_Configurations">
   <ExternalFileInput ExternalFilePath="C:\Varigence\Configurations\MY_BATCH_Configurations.dtsConfig" FileUsageType="ExistingFile" RelativePath="false" />
 </PackageConfiguration>
-</pre>
+```
 
 For more on how to create batch configurations in Biml see the following resources.
 [https://www.varigence.com/Documentation/Language/Element/AstPackageConfigurationNode](https://www.varigence.com/Documentation/Language/Element/AstPackageConfigurationNode)
@@ -294,12 +283,12 @@ The extension point target is the name of the batch package we are trying to mod
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="BatchConnection"  #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper"  #>
 
 <Connection ConnectionName="MY_SOURCE" />
-</pre>
+```
 For more on how to create connection references in Biml see the following resources.
 
 [https://www.varigence.com/Documentation/Language/Element/AstConnectionReferenceNode](https://www.varigence.com/Documentation/Language/Element/AstConnectionReferenceNode)
@@ -314,7 +303,7 @@ The extension point target is the name of the Batch.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="BatchPreProcess"  #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper"  #>
 
@@ -332,13 +321,13 @@ The extension point target is the name of the Batch.
     </ExecuteSQL>
   </Tasks>
 </Container>
-</pre>
+```
 
 For more information on how to develop packages tasks in Biml see the following resources.
 
 [https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks](https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks)
 
-### Batch Post Process 
+### Batch Post Process
 
 Similar to the pre-process extension point in BimlFlex, the post-process extension point is useful for large operations or tasks that require processing items after a load has completed. Examples of this could be moving process files, archiving processed flat files or uploading data to and external source after a load has completed. Again, a number of applications here are many and varied.
 
@@ -348,7 +337,7 @@ The extension point target is the name of the batch package.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension** bundle="BimlFlex.bimlb" extensionpoint="BatchPostProcess"  #>
 <#@ property** name="batch" type="BimlFlexModelWrapper.BatchesWrapper"  #>
 
@@ -367,9 +356,10 @@ The extension point target is the name of the batch package.
     </ExecuteSQL>
   </Tasks>
 </Container>
-</pre>
-For more information on how to develop SSIS tasks in Biml see the following resources.\
-<https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks>
+```
+
+For more information on how to develop SSIS tasks in Biml see the following resources.
+[https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks](https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks)
 
 ## Object Based
 
@@ -385,7 +375,7 @@ The target of this extension point is the name of the table object that is the s
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectScriptFile" #>
 <#@ property name="project" type="BimlFlexModelWrapper.ProjectsWrapper" #>
 
@@ -426,7 +416,8 @@ The target of this extension point is the name of the table object that is the s
     </File>
   </Files>
 </ScriptTaskProject>
-</pre>
+```
+
 For more information on how to define a script project in Biml, see the following resources.
 [https://www.varigence.com/Documentation/Language/ChildCollection/AstRootNode/ScriptProjects](https://www.varigence.com/Documentation/Language/ChildCollection/AstRootNode/ScriptProjects)
 
@@ -440,14 +431,15 @@ The extension point target is the name of the source table object
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension** bundle="BimlFlex.bimlb" extensionpoint="PackageVariable"  #>
 
 <#@ property** name="table" type="BimlFlexModelWrapper.ObjectsWrapper"  #>
 
 <Variable Name="TenantCode" DataType="String">UNK</Variable>
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>
-</pre>
+```
+
 For more information on how to implement package variables in Biml see the following resources.
 [https://www.varigence.com/Documentation/Language/Element/AstVariableNode](https://www.varigence.com/Documentation/Language/Element/AstVariableNode)
 
@@ -461,13 +453,13 @@ The target is the source object name.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="PackageParameter"  #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper"  #>
 
 <Parameter Name="BatchId" DataType="String"></Parameter>
 <Parameter Name="BatchInstanceId" DataType="String">0</Parameter>
-</pre>
+```
 
 For more on how to code these items in Biml please see the following resources.
 [https://www.varigence.com/Documentation/Language/Element/AstParameterNode](https://www.varigence.com/Documentation/Language/Element/AstParameterNode)
@@ -482,18 +474,18 @@ The target is the source object name.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="OverrideSql"  #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper"  #>
 
 <# CustomOutput.ObjectInherit = false; #>
-  SELECT DISTINCT 
+  SELECT DISTINCT
      [PropertyId]
     ,[EnterpriseId]
     ,CONVERT(INT, ISNULL([MemberId], - 1)) AS [MemberId]
-  FROM 
+  FROM
     [dbo].[MyTable]
-</pre>
+```
 
 For more on how to code these items in Biml please see the following resources.
 [https://www.varigence.com/Documentation/Language/Element/AstDirectResourceNode](https://www.varigence.com/Documentation/Language/Element/AstDirectResourceNode)
@@ -510,7 +502,7 @@ The target is the source object name.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="OverrideMain" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -527,7 +519,7 @@ The target is the source object name.
     </Transformations>
   </Dataflow>
 </Tasks>
-</pre>
+```
 
 For more on how to code these items in Biml please see the following resources.
 [https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks](https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks)
@@ -536,15 +528,13 @@ For more on how to code these items in Biml please see the following resources.
 
 As the name suggests this extension point is used for scenarios where a user needs to insert logic just before the data flow begins. In some scenarios when we use connection expressions or dynamic variables that change over multiple executions, it is useful to have the ability to add custom logic just before the data flow begins. Note that if this extension point is used, it will make it the first task in the control flow for the main sequence container as so the output pathname variable will need to be included.
 
-Figure 10, Pre Dataflow Extension Point
-
 #### Extension Point Target
 
 The target is the name of the source object.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="PreDataFlow" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -552,7 +542,7 @@ The target is the name of the source object.
 <# CustomOutput.ObjectInherit = false; #>
 
   <ExecuteSQL Name="SQL - Get CurrentModifiedDate" ConnectionName="BimlCatalog" ResultSet="SingleRow">
-  
+
   <# if (!string.IsNullOrEmpty(precedenceConstraint)) {#>
     <PrecedenceConstraints>
       <Inputs>
@@ -560,7 +550,7 @@ The target is the name of the source object.
       </Inputs>
     </PrecedenceConstraints>
   <# } #>
-  
+
   <Results>
     <Result Name="0" VariableName="User.CurrentModifiedDate" />
   </Results>
@@ -571,11 +561,11 @@ The target is the name of the source object.
     <Parameter Name="@VariableValue" VariableName="User.CurrentModifiedDate" Length="-1" DataType="String" />
     <Parameter Name="@ExecutionID" Direction="Input" DataType="Int64" VariableName="User.ExecutionID" />
   </Parameters>
-  
+
   <# CustomOutput.OutputPathName = @"SQL - Get CurrentModifiedDate.Output"; #>
-  
+
 </ExecuteSQL>
-</pre>
+```
 
 For more on how to code these items in Biml please see the following resources.
 [https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks](https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks)
@@ -584,15 +574,13 @@ For more on how to code these items in Biml please see the following resources.
 
 Similar to the Pre-Dataflow task, the post data flow tasks purpose is to add logic to the main sequence container just after the data flow task has ended. Again, if we are using connection expressions or variables that change after each execution it is helpful to be able to add additional logic at this location.
 
-Figure 11, Post Dataflow Extension Point
-
 #### Extension Point Target
 
 The target is the name of the source object.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="PostDataFlow" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="precedenceConstraint" type="String"  #>
@@ -615,7 +603,7 @@ The target is the name of the source object.
   </Parameters>
 
 </ExecuteSQL>
-</pre>
+```
 
 For more on how to code these items in Biml please see the following resources.
 [https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks](https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks)
@@ -624,15 +612,13 @@ For more on how to code these items in Biml please see the following resources.
 
 The pre-process extension point is located before the main container in the control flow. This is a fairly common extension point mainly because it is helpful to have logic that can be added where we may need to do some work in order to obtain the data that we want to load. This is the case in scenarios where we must download flat files or run some SQL code to help prepare the data we want to load. Note that because this extension point encloses the new logic inside a sequence container, input and output path variables are not required.
 
-Figure 12, Pre-Process Extension Point
-
 #### Extension Point Target
 
 The target is the source object name.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="PreProcess" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <# CustomOutput.ObjectInherit = false; #>
@@ -651,7 +637,7 @@ The target is the source object name.
     </ExecuteSQL>
   </Tasks>
 </Container>
-</pre>
+```
 
 For more on how to code these items in Biml please see the following resources.
 [https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks](https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks)
@@ -662,15 +648,13 @@ The post process extension point is useful for custom logic that needs to be app
 
 Note that because this extension point encloses the new logic inside a sequence container, input and output path variables are not required.
 
-Figure 13, Post-Process Extension Point
-
 #### Extension Point Target
 
 The target is the source object name.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="PostProcess" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <# CustomOutput.ObjectInherit = false; #>
@@ -681,7 +665,7 @@ The target is the source object name.
     <Parameter Name="@VariableValue" VariableName="User.SnapshotDate" Length="-1" DataType="String" />
   </Parameters>
 </ExecuteSQL>
-</pre>
+```
 
 For more on how to code these items in Biml please see the following resources.
 [https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks](https://www.varigence.com/Documentation/Language/ChildCollection/AstContainerTaskBaseNode/Tasks)
@@ -698,7 +682,7 @@ The target is the source object name.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceOverride" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper"  #>
 <# CustomOutput.ObjectInherit = false; #>
@@ -711,7 +695,7 @@ The target is the source object name.
     </Columns>
   <# CustomOutput.OutputPathName = @"OLE_SRC - MyTable.Output"; #>
 </OleDbSource>
-</pre>
+```
 
 The following is a resource on how to define an OLEDB Source in BimlCode.
 [https://varigence.com/Documentation/Language/Element/AstOleDbSourceNode](https://varigence.com/Documentation/Language/Element/AstOleDbSourceNode)
@@ -726,14 +710,14 @@ The target is the source object name.
 
 #### Example Extension Point code
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceParameter" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <# CustomOutput.ObjectInherit = false; #>
 
 <Parameter Name="Parameter0" VariableName="User.LastModifiedDate" />
 <Parameter Name="Parameter1" VariableName="User.CurrentModifiedDate" />
-</pre>
+```
 
 For information on Biml code used in this extension point please see the following resources.
 [https://www.varigence.com/Documentation/Language/Element/AstVariableParameterMappingNode](https://www.varigence.com/Documentation/Language/Element/AstVariableParameterMappingNode)
@@ -748,7 +732,7 @@ The target is the source object name.
 
 #### Example/default Extension Point code generated from BimlStudio
 
-<pre class="brush: bimlscript;">
+```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourcePipeline" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
@@ -761,14 +745,7 @@ The target is the source object name.
   </Columns>
   <# CustomOutput.OutputPathName = @"DCV - Convert MyColumn.Output"; #>
 </DataConversion>
-</pre>
+```
 
 For information on Biml code used in this extension point please see the following resources.
 [https://www.varigence.com/Documentation/Language/ChildCollection/AstDataflowTaskNode/Transformations](https://www.varigence.com/Documentation/Language/ChildCollection/AstDataflowTaskNode/Transformations)
-
-
-## Additional Documentation
-
-Extension Point documentation is also included in the documentation build of the project. Once built the BimlFlexExtensionPoints.html documentation is found in the Miscellaneous folder
-
-![Additional Documentation](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_bimlflex_ui_miscellaneous_folder.png "Additional Documentation")

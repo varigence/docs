@@ -1,6 +1,8 @@
+# SSIS Deployment Guide
+
 Modern versions of SQL Server (2012-) supports project configurations and deployments to the SSIS Catalog. This document details how to use the project deployment model in BimlFlex and how to align that deployment to the SSIS Catalog environments for variable assignments. This can be used to populate passwords and connection strings for connections and inject them when the package is running on the SSIS Server
 
-BimlFlex also supports the legacy package based deployment and its configuration approach. 
+BimlFlex also supports the legacy package based deployment and its configuration approach.
 
 It is a recommendation to:
 
@@ -13,29 +15,29 @@ It is a recommendation to:
 
 A catalog needs to be created if the catalog node in Management Studio is empty for the target server. The mandated name for the Catalog and corresponding database is SSISDB.
 
-![Create Catalog](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_create_catalog.png "Create Catalog")
+![Create Catalog](images/bimlflex_ss_v5_management_studio_create_catalog.png "Create Catalog")
 
 Once a catalog is available it is possible to create a folder for the projects. Multiple projects can be deployed to the same folder. The folder provides a common set of environments for all its projects.
 
 In general, it makes sense to deploy all projects related to the Data Warehouse to the same folder so that they can share all connection string and other configuration information. It is possible to test deploy new versions to a separate folder if there is no separate test environment.
 
-![Create Environment](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_create_environment_1.png "Create Environment")
+![Create Environment](images/bimlflex_ss_v5_management_studio_create_environment_1.png "Create Environment")
 
 For each folder, it is possible to create one or more Environments. The environments can be for testing/production distinction for jobs or for different sets of configurations needed.
 
-![Create Environment](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_create_environment_2.png "Create Environment")
+![Create Environment](images/bimlflex_ss_v5_management_studio_create_environment_2.png "Create Environment")
 
 Variables can be defined in the environment once it is created. These normally correspond to the parameters and connection strings defined in the SSIS project. Retaining names across the locations makes it easy to know what is what. The default name for a connection string in the SSIS project, when defined as a parameterized connection manager is
 
-```<connection name>_ConnectionString```
+`<connection name>_ConnectionString`
 
 in this case, the default name for the source is
 
-```AdventureWorksLT_ConnectionString```
+`AdventureWorksLT_ConnectionString`
 
 By naming the environment variable the same it is easier to match them up later.
 
-![Environment Properties](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_environment_properties.png "Environment Properties")
+![Environment Properties](images/bimlflex_ss_v5_management_studio_environment_properties.png "Environment Properties")
 
 Once the variables are defined the SSIS Project needs to be deployed for the connection to be configured.
 
@@ -67,7 +69,7 @@ From BimlStudio a project called Demo is created in the `C:\Varigence\Demo` fold
 
 The project is configured to match the target destination
 
-![BimlStudio Project Properties](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_bimlstudio_project_configuration.png "BimlStudio Project Properties")
+![BimlStudio Project Properties](images/bimlflex_ss_v5_bimlstudio_project_configuration.png "BimlStudio Project Properties")
 
 SSIS 2016 is used in the demo. The Project deployment checkbox is checked so connection strings for the whole project can be maintained through SSIS Catalog environments.
 
@@ -75,7 +77,7 @@ SSIS 2016 is used in the demo. The Project deployment checkbox is checked so con
 
 Every time a new empty customer is created in BimlFlex the Excel Metadata editor will ask if sample metadata should be created.
 
-![Sample Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_create_sample_metadata.png "Sample Metadata")
+![Sample Metadata](images/bimlflex_ss_v5_excel_create_sample_metadata.png "Sample Metadata")
 
 As the demo source is one of the sample sources it is possible to take a shortcut through the sample metadata. Once the sample metadata is created it can directly connect to the AdventureWorks LT Source to get the required source metadata.
 
@@ -83,23 +85,21 @@ As the demo source is one of the sample sources it is possible to take a shortcu
 
 Load the metadata for all tables in scope from the AdventureWorksLT source system
 
-![Get Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_import_metadata.png "Get Metadata")
-
+![Get Metadata](images/bimlflex_ss_v5_excel_import_metadata.png "Get Metadata")
 
 ### Step 4, push metadata
 
 Push all metadata from Excel to the metadata database and refresh it into BimlStudio
 
+![Set All Metadata](images/bimlflex_ss_v5_excel_set_all_ui.png "Set All Metadata")
 
-![Set All Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_excel_set_all_ui.png "Set All Metadata")
-
-![Refresh Metadata](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_refresh_metadata.png "Refresh Metadata")
+![Refresh Metadata](images/bimlflex_ss_v5_refresh_metadata.png "Refresh Metadata")
 
 ### Step 5, create databases and tables
 
 Create all DW databases and tables from the BimlStudio generated scripts output.
 
-![Create Table Scripts](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_create_table_scripts.png "Create Table Scripts")
+![Create Table Scripts](images/bimlflex_ss_v5_create_table_scripts.png "Create Table Scripts")
 
 ### Step 6, define project parameters
 
@@ -107,11 +107,11 @@ Define project parameters and connection expressions for all relevant connection
 
 There are many ways of maintaining the connection strings and required configurations in SSIS and SQL Server. BimlStudio provides several easy ways to manage and maintain whatever is chosen for an environment. For this demo, deployment is done to the catalog and a Catalog environment variable is used to define the connection string. For the parameterised connection string to be available in the generated SSIS project it first needs to be defined through an Extension Point. The approach needs one Extension Point for the Project parameter and one for the connection string parameterisation.
 
-![Project Parameter Code](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_extension_points_create_project_parameter_code.png "Project Parameter Code")
+![Project Parameter Code](images/bimlflex_ss_v5_extension_points_create_project_parameter_code.png "Project Parameter Code")
 
 The project parameter target is the SSIS project it will be used in. In this case, the `EXT_AWLT_Project` where project parameters will be used to define connection strings
 
-![Connection Expression Code](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_extension_points_create_connection_expression_code.png "Connection Expression Code")
+![Connection Expression Code](images/bimlflex_ss_v5_extension_points_create_connection_expression_code.png "Connection Expression Code")
 
 The connection expression connects the target property, in this case, the target connection manager `AdventureWorksLT` and the ConnectionString property with the defined Project parameter.
 
@@ -123,7 +123,7 @@ Extension Point files should be named using a consistent naming convention. Thes
 
 Build command buttons
 
-![Build Project](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_build_ui.png "Build Project")
+![Build Project](images/bimlflex_ss_v5_build_ui.png "Build Project")
 
 ## Step 8, review the generated SSIS Projects
 
@@ -131,7 +131,7 @@ The default destination for the output is a folder called output in the project 
 
 This location can be defined and changed in the project settings.
 
-![Build Output Folder](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_build_output_folder.png "Build Output Folder")
+![Build Output Folder](images/bimlflex_ss_v5_build_output_folder.png "Build Output Folder")
 
 Once the build completes there will be a number of folders for the complete solution in the output folder. The folders in the screenshot above contain:
 
@@ -151,9 +151,9 @@ It is possible to deploy either the ispac file or the project to the catalog. Is
 
 ## Deploying the generated ispac file to the Catalog
 
-The full deployment process is documented here: 
-* [https://msdn.microsoft.com/en-us/library/hh213290.aspx](https://msdn.microsoft.com/en-us/library/hh213290.aspx)
-* [https://msdn.microsoft.com/en-us/library/hh231102.aspx](https://msdn.microsoft.com/en-us/library/hh231102.aspx)
+The full deployment process is documented here:
+
+* [Deploy Integration Services (SSIS) Projects and Packages](https://docs.microsoft.com/en-au/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
 
 for ispac files when there is a requirement to automate the deployment using command line tools in an automated fashion. This can be done either through a locally set up deployment pipe or through automation tools for server based automated deployments.
 
@@ -165,12 +165,11 @@ There are 3 main ways of deploying to the Catalog:
 2. Through Visual Studio (using the SSIS project)
 3. Through Management Studio (using the ispac file)
 
-## Deploying through the command line 
+## Deploying through the command line
 
 From the command prompt, run `isdeploymentwizard.exe` from the `%ProgramFiles%\Microsoft SQL Server\130\DTS\Binn`. Folder (Note the path is SQL Server version specific) with the required parameters for either interactive or silence deployments
 
-
-![Deployment Options for SSIS](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_ssis_deployment_options_ui.png "Deployment Options for SSIS")
+![Deployment Options for SSIS](images/bimlflex_ss_v5_ssis_deployment_options_ui.png "Deployment Options for SSIS")
 
 For this example, to deploy the generated ispac quietly to the local server EDW folder run:
 
@@ -194,9 +193,9 @@ For Visual Studio, it is important to match the Visual Studio version to the des
 
 Since the default behavior in Visual Studio 2015 is to work with SQL Server 2016 it is common for issues to occur when deploying to earlier versions of SQL Server.
 
-![SSDT UI](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_ssdt_batch_ui.png "SSDT UI")
+![SSDT UI](images/bimlflex_ss_v5_ssdt_batch_ui.png "SSDT UI")
 
-![Target Server Version](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_ssdt_targetserverversion_ui.png "Target Server Version")
+![Target Server Version](images/bimlflex_ss_v5_ssdt_targetserverversion_ui.png "Target Server Version")
 
 Once the project is ready to be deployed to the SSIS catalog either use the Deploy option from the Project menu can be chosen, or right-click on the project in Solution explorer and Deploy.
 
@@ -204,30 +203,29 @@ Once the project is ready to be deployed to the SSIS catalog either use the Depl
 
 Once the project is deployed to the target server and the chosen folder it is available for review through SQL Server Management Studio
 
-![Catalog Contents](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_catalog_contents.png "Catalog Contents")
+![Catalog Contents](images/bimlflex_ss_v5_management_studio_catalog_contents.png "Catalog Contents")
 
 ## Configuring the Environment and connecting the project to it
 
 Once the project is in the Catalog it can be configured.
 
-
-![Configure Catalog](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_catalog_configure.png "Configure Catalog")
+![Configure Catalog](images/bimlflex_ss_v5_management_studio_catalog_configure.png "Configure Catalog")
 
 For the environment to be available to the project it needs to be associated
 
 From the configuration dialog, the project can be configured directly and associated with an environment. Enable the project to be configured from the created environment.
 
-![Associate Environment to Project](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_catalog_associate_environment_to_project.png "Associate Environment to Project")
+![Associate Environment to Project](images/bimlflex_ss_v5_management_studio_catalog_associate_environment_to_project.png "Associate Environment to Project")
 
 From the references tab, add a reference to the Local Folder Prod Environment.
 
 Once the reference is added, configure the parameters to be overridden from the environment.
 
-![Environment Variable](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_catalog_environment_variable_override.png "Environment Variable")
+![Environment Variable](images/bimlflex_ss_v5_management_studio_catalog_environment_variable_override.png "Environment Variable")
 
 Once the project is configured to use an environment it will always require an environment specification to run, both through SQL Server Agent and the Catalog
 
-![Parameter Required](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_catalog_parameter_required.png "Parameter Required")
+![Parameter Required](images/bimlflex_ss_v5_management_studio_catalog_parameter_required.png "Parameter Required")
 
 ## Creating an Agent job and configure it to run the batch with a configured environment
 
@@ -235,7 +233,7 @@ Once the project is configured and ready to be scheduled a SQL Server Agent Job 
 
 When configuring the job, specify the environment it will use when running.
 
-![Agent Configuration](https://varigencecom.blob.core.windows.net/walkthroughs/bimlflex_ss_v5_management_studio_catalog_configure_agent_environment_variable.png "Agent Configuration")
+![Agent Configuration](images/bimlflex_ss_v5_management_studio_catalog_configure_agent_environment_variable.png "Agent Configuration")
 
 Specifying the environment through the Agent job also means different scheduled jobs can be run using different environment configurations.
 
