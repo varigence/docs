@@ -1,12 +1,27 @@
+# Support and Documentation
 
-#BimlStudio User Guide
-##BimlStudio User Guide
-The BimlStudio User Guide describes all aspects of the BimlStudio user interface.
+At Varigence, we offer a comprehensive library of professional support resources. We include support within the products, for free to our customers, and as supplemental packages for more extensive training. In addition to the support here we have developed a community at Bimlscript.com where members contribute helpful video tutorials, walkthroughs, and snippets to the community.
 
-The BimlStudio User Guide is broken up into three parts. The first part provides a step by step walkthrough for building assets for use in a sample cube, leveraging the AdventureWorksLT database. The second part describes each BimlStudio editor, tool window, and ribbon button. The third part includes miscellaneous topics that don't fit into the first two groups.
+## [Biml](biml/index.md)
 
-##BimlStudio Forum
-If you have questions that aren't addressed in this guide, you can search and post in the BimlStudio forum for help.
+Biml Language Reference
+Biml API Reference
+Biml API Samples
+Biml Forum
 
-##Email Support
-While the forums are the best way to get answers, if your question contains proprietary, or other, information that you would prefer not to post publicly, private email support is available at [support@varigence.com](mailto:suppart@varigence.com)
+## [BimlExpress](bimlexpress/index.md)
+
+BimlExpress User Guide
+BimlExpress Forum
+
+## [BimlStudio](bimlstudio/index.md)
+
+BimlStudio User Guide
+BimlStudio Samples
+BimlStudio Forum
+
+## [BimlFlex](bimlflex/index.md)
+
+BimlFlex Forum
+Excel Add-in
+Metadata Reference
