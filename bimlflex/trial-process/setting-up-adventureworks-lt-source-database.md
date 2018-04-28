@@ -1,19 +1,16 @@
 # Setting up AdventureWorks LT source database
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
-
-**Supporting Videos**
+## Supporting Videos
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/QmUDBc0CfiU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-
-**Supporting Documentation**
+## Supporting Documentation
 
 - [Microsoft Sql Server Samples](https://github.com/Microsoft/sql-server-samples)
 
 ## Setting up AdventureWorks LT
 
-The trial process uses the AdventureWorks LT database as source. This Microsoft sample database is available for download from Codeplex and its new location on GitHub.
+The trial process uses the AdventureWorks 2012 LT database as source. This Microsoft sample database is available for download from Codeplex and its new location on GitHub.
 [AdventureWorks LT on GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks2012)
 
 Download the data file and attach it to the Sql Server engine through Management Studio to make it available for the trial process.

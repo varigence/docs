@@ -1,17 +1,14 @@
 # Accelerating the Raw Data Vault Layer
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
+## Supporting Videos
 
+TODO: Coming Soon
 
-**Supporting Videos**
+## Supporting BimlFlex Documentation
 
-*TODO: Comming Soon*
+- [Data Vault Accelerator](../user-guide/data-vault-accelerator.md)
 
-**Supporting BimlFlex Documentation**
-
-- [Data Vault Accelerator](https://varigence.com/Documentation/BimlFlex/Article/Data+Vault+Accelerator)
-
-## Accelerating the Raw Data Vault Layer
+## Data Vault Acceleration
 
 Once the source and corresponding Data Vault modelling is done, creating a Raw Data Vault layer involves mapping source data to Data Vault constructs. BimlFlex provides acceleration of this process by technical analysis of the source data and its relationships to automatically create the required Data Vault structures and mapping the source data to the destination.
 
@@ -20,7 +17,8 @@ The accelerator creates a preview of the Data Vault artefacts so that the model 
 Once the metadata has been refreshed in BimlStudio and in the Excel based metadata management solution it can be built and implemented or further refined.
 
 ## Detailed Steps
-The following detailed steps walks through the acceleration of the Raw Data Vault Layer
+
+The following detailed steps walks through the acceleration of the Raw Data Vault Layer:
 
 ### Configuring the Accelerator
 
@@ -32,12 +30,14 @@ Click the preview button to generate a preview of the Data Vault.
 In the BimlStudio logical view the corresponding tables will be visible in the preview schema.
 Using the schema visualization tool in the documentation tab the data vault schema can be visualized and reviewed.
 
-
 ### Publishing the Acceleration result
-*TODO: Comming Soon*
+
+TODO: Coming Soon
 
 ### Refreshing the metadata in Excel to review the Data Vault
-*TODO: Comming Soon*
+
+TODO: Coming Soon
 
 ### Building the new solution
-*TODO: Comming Soon*
+
+TODO: Coming Soon

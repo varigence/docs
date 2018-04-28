@@ -1,14 +1,12 @@
 # Using prepared trial metadata
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
+## Supporting Videos
 
-**Supporting Videos**
+TODO: Coming Soon
 
-*TODO: Comming Soon*
+## Supporting BimlFlex Documentation
 
-**Supporting BimlFlex Documentation**
-
-*TODO: Comming Soon*
+TODO: Coming Soon
 
 ## Using prepared trial metadata
 
@@ -45,17 +43,17 @@ GO
 
 ```
 
-The following snapshots are available for restores:
+The following snapshots are available to restore:
 
-|No | Name | Description               |
-|---|------|-------------------------- |
-|1  | Snapshot 1  | Snapshot of metadata for source to staging load for AdventureWorks LT |
-|2  | Snapshot 2  | Snapshot of metadata for source to staging to persistent staging load for AdventureWorks LT |
-|3  | Snapshot 3  | Snapshot of modelled metadata before acceleration of Data Vault objects |
-|4  | Snapshot 4  | Snapshot of metadata after acceleration of Data Vault objects |
-|5  | Snapshot 5  | Snapshot of metadata after adding Bridge and PIT Data Vault objects |
-|6  | Snapshot 6  | tba |
-|7  | Snapshot 7  | tba |
-|8  | Snapshot 8  | tba |
-|9  | Snapshot 9  | tba |
-|1o  | Snapshot 10  | tba |
+|No  | Name          | Description               |
+|----|---------------|-------------------------- |
+|1   | Snapshot 1    | Snapshot of metadata for source to staging load for AdventureWorks LT |
+|2   | Snapshot 2    | Snapshot of metadata for source to staging to persistent staging load for AdventureWorks LT |
+|3   | Snapshot 3    | Snapshot of modelled metadata before acceleration of Data Vault objects |
+|4   | Snapshot 4    | Snapshot of metadata after acceleration of Data Vault objects |
+|5   | Snapshot 5    | Snapshot of metadata after adding Bridge and PIT Data Vault objects |
+|6   | Snapshot 6    | tba |
+|7   | Snapshot 7    | tba |
+|8   | Snapshot 8    | tba |
+|9   | Snapshot 9    | tba |
+|1o  | Snapshot 10   | tba |

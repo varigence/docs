@@ -1,0 +1,34 @@
+- name: Installing BimlStudio
+  href: installing-bimlstudio.md
+- name: Installing BimlFlex Excel Add-In
+  href: installing-bimlflex.md
+- name: Installing SSIS Components
+  href: installing-custom-ssis-components.md
+- name: Update and Configure BimlFlex
+  href: using-the-utility-application-to-update-and-configure-bimlflex.md
+- name: Creating a BimlFlex Project
+  href: creating-and-configuring-a-bimlflex-project.md
+- name: Creating the Sample Metadata
+  href: creating-the-scaffolding-metadata.md
+- name: Setting up AdventureWorksLT Source Database
+  href: setting-up-adventureworks-lt-source-database.md
+- name: Importing Source Metadata
+  href: importing-source-metadata.md
+- name: Building Source to Staging
+  href: building-databases-tables-and-ssis-packages-for-source-to-staging.md
+- name: Configurations and Settings
+  href: configuration-of-bimlflex.md
+- name: Modelling of Source Metadata
+  href: modelling-of-source-metadata.md
+- name: Applying Data Type Mappings
+  href: applying-data-type-mappings.md
+- name: Building Business Keys for Data Vault
+  href: building-business-keys-for-data-vault.md
+- name: Accelerating the Raw Data Vault Layer
+  href: accelerating-the-raw-data-vault-layer.md
+- name: Adding Business Data Vault
+  href: adding-business-data-vault-performance-constructs.md
+- name: Dimensional Model from Data Vault
+  href: dimensional-model-from-data-vault.md
+- name: Using Trial Snapshot Metadata
+  href: using-prepared-trial-metadata.md

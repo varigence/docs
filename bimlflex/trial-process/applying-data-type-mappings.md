@@ -1,17 +1,14 @@
 # Applying Data Type Mappings
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
-
-**Supporting Videos**
+## Supporting Videos
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/hGLYrPqOPwg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+## Supporting BimlFlex Documentation
 
-**Supporting BimlFlex Documentation**
+- [BimlFlex Documentation](../user-guide/index.md)
 
-- [BimlFlex Documentation](https://varigence.com/Documentation/BimlFlex)
-
-## Applying Data Type Mappings
+## Data Type Mappings
 
 Data Type Mappings is a BimlFlex feature that can expand the Data Types of the source to a larger data type that is more accommodating. This is done to accommodate changes in the source system without the need to update the Data Warehouse or the load process. The most common expansions are for short string representations that might be updated in the source. A Name field of 20 characters might be updated to 250 to accommodate longer customer names. An Integer might be updated to a Big Int when the source counter nears its max. By expanding incoming data it is possible to cater for these updates before they become a load issue.
 

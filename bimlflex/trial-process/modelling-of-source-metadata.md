@@ -1,22 +1,18 @@
 # Modelling of source Metadata
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
+## Supporting Videos
 
-**Supporting Videos**
+TODO: Coming Soon
 
-*TODO: Coming Soon*
+## Supporting BimlFlex Documentation
 
-**Supporting BimlFlex Documentation**
-
-- [Implementation Guides](https://varigence.com/Documentation/BimlFlex/Article/Implementation+Guides)
+- [Implementation Guides](../user-guide/index.md)
 
 ## Modelling of source Metadata
 
 Once the source system metadata has been imported in to BimlFlex it is possible to model it in the Excel-based metadata management application.
 
-Modelling through metadata management is the way to tweak the process to match business requirements and allows BimlFlex to automatically generate the required Sql structures and Ssis packages for the Etl process.
-
-The modelling can apply  
+Modelling through metadata management is the way to tweak the process to match business requirements and allows BimlFlex to automatically generate the required Sql structures and SSIS packages for the Etl process.
 
 ## Detailed Steps
 
@@ -54,7 +50,7 @@ An Alternate Business Key is used as a backup of the source Primary Key when the
 ### Applying Data Type Mappings, expansion
 
 Source system data types can be expanded to be more accommodating. This enhances resiliency in the load process when the source system data types change.
-The Data Type Mapping feature is [described in a separate document and video](applying%20data%20type%20mappings.md)
+The Data Type Mapping feature is [described in a separate document and video](applying-data-type-mappings.md)
 
 For the trial process, add the default Data Type Mappings to the `AWLT` record source
 
@@ -62,20 +58,20 @@ For the trial process, add the default Data Type Mappings to the `AWLT` record s
 
 Defining Business Keys to use for Data Vault modelling is a Business Analysis phase in the implementation. finding the correct Business Key definition relies on business process and source system knowledge as well as source system data profiling. For cross system key matching in Data Vault extensive analysis across all candidate sources. Defining the Business Key is a more straightforward exercise. For a given source table there can be only one Business Key column. For scenarios with multiple source keys the columns are concatenated with a separator character to build a single Business Key. This maps to the Business Key column in the Data Vault Hub tables and allows the Data Vault model to adhere to the pattern.
 
-BimlFlex provides an expression to concatenate and separate columns into the Business Key using the `FlexToBk(Column1, Column2, Column 3)` function. This can be applied in Ssis for Ssis load patterns and in Sql for Sql patterns. The trial uses the Ssis pattern and will implement the expression in a derived column in the generated Ssis packages.
+BimlFlex provides an expression to concatenate and separate columns into the Business Key using the `FlexToBk(Column1, Column2, Column 3)` function. This can be applied in SSIS for SSIS load patterns and in Sql for Sql patterns. The trial uses the SSIS pattern and will implement the expression in a derived column in the generated SSIS packages.
 
 The concatenation character used with multiple columns is defined in the configuration using the `ConcatenatorBusinessKey` key. The default concatenation character is `~`.
 
-BimlFlex also provides a set of shortcut codes for accessing specific data when building the Business Key. An example is the` @@rs` record source shortcut that injects the current record source code in to the Business Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
+BimlFlex also provides a set of shortcut codes for accessing specific data when building the Business Key. An example is the `@@rs` record source shortcut that injects the current record source code in to the Business Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
 
-For the trial process, add the `@@rs` shortcut to all Business Keys that were created by the import metadata process. For the Address table that would be changing the `FlexToBk(AddressID)` to `FlexToBk(@@rs, AddressID)`   
+For the trial process, add the `@@rs` shortcut to all Business Keys that were created by the import metadata process. For the Address table that would be changing the `FlexToBk(AddressID)` to `FlexToBk(@@rs, AddressID)`
 
 ### Defining Relationships
 
-Source system relationships describe the metadata so that the correct load patterns can be used. For Data Vault, relationships help the Accelerator build out Link constructs between entities. When a metadata import is performed, BimlFlex will add any constraints defined in the source. This information is maintained in the `ReferenceTable`	and `ReferenceColumnName` columns in the Columns sheet in the metadata. The chosen reference column must be a Primary Key in the related table.
+Source system relationships describe the metadata so that the correct load patterns can be used. For Data Vault, relationships help the Accelerator build out Link constructs between entities. When a metadata import is performed, BimlFlex will add any constraints defined in the source. This information is maintained in the `ReferenceTable` and `ReferenceColumnName` columns in the Columns sheet in the metadata. The chosen reference column must be a Primary Key in the related table.
 Relationships are also present in the Data Vault and Dimensional model to describe relationships between Data Vault entities such as Hubs and Satellites as well as Facts and Dimensions to define load patterns.
 
-For the trial process, maintain the relationships between the source FK's and PK's. Review the relationship definitions in the columns tab.  
+For the trial process, maintain the relationships between the source FK's and PK's. Review the relationship definitions in the columns tab.
 
 ### Defining object related Metadata
 
@@ -86,7 +82,7 @@ The main approaches are:
 - Renaming columns and providing naming guidelines to the accelerator
 - Tweaking the load pattern used by filtering, joining and grouping the data queried from the source.
 
-**Naming conventions**
+#### Naming conventions
 
 Using the naming override to define names in the Data Vault layer
 
@@ -96,11 +92,12 @@ Using the naming override to define names in the Data Vault layer
 `ModelGrouping`
 `ModelObjectType`
 
-**Naming guidelines**
+#### Naming guidelines
 
-Grouping entities  
+Grouping entities
+TODO: Coming soon
 
-**Load Pattern Tweaks**
+#### Load Pattern Tweaks
 
 `CreateSql`
 
@@ -113,7 +110,6 @@ In the trial process there are abstraction layer views for the dimensional model
 Overrides the source Sql Select statement for the object. Can be used to completely override the select statement. This is useful for scenarios where the required select statement is too complex to be built automatically from the rest of the metadata. Since the automatic Sql creation is dynamic and accommodates any changes to the metadata it is recommended to only use the OverrideSql functionality when needed.
 
 The OverrideSql functionality is not used in the trial process.
-
 
 `JoinSql`
 
@@ -134,7 +130,9 @@ The `GroupBySql` function allows the addition of Group By statements to the gene
 In the trial process the GroupBySql functionality is not used.
 
 ### Defining columns related metadata
-*TODO: Coming Soon*
+
+TODO: Coming Soon
 
 ### Applying load parameters
-*TODO: Coming Soon*
+
+TODO: Coming Soon

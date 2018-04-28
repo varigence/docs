@@ -1,15 +1,12 @@
 # Using the utility application to update and configure BimlFlex
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
-
-**Supporting Videos**
+## Supporting Videos
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/nEmGq6ORI3U?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+## Supporting BimlFlex Documentation
 
-**Supporting BimlFlex Documentation**
-
-- [Support Utility Application](https://varigence.com/Documentation/BimlFlex/Article/Support+Utility+Application)
+- [Support Utility Application](../user-guide/support-utility-application.md)
 
 ## Using the utility application to update and configure BimlFlex
 
@@ -22,7 +19,7 @@ The app itself is delivered in a single archive. Unpack the file to a folder. Wh
 
 ## Detailed Steps
 
-The following detailed steps walks through the creation of database scripts and building of the Ssis project
+The following detailed steps walks through the creation of database scripts and building of the SSIS project
 
 For the trial process both the databases needs to be created and the Bundle file needs to be available for creating the new project.
 

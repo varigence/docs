@@ -1,14 +1,12 @@
 # Installing BimlStudio
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
-
-**Supporting Videos**
+## Supporting Videos
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/e_wzLtyGVS8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-**Supporting BimlFlex Documentation**
+## Supporting BimlFlex Documentation
 
-- [Developer Installation](https://varigence.com/Documentation/BimlFlex/Article/Developer+Installation)
+- [Developer Installation](../user-guide/developer-installation.md)
 - [BimlStudio User Guide](https://varigence.com/Documentation/BimlStudio/Article/52)
 
 ## BimlStudio
@@ -35,4 +33,4 @@ Run the installer to install the application. When presented with the choice of 
 
 ### Enter product key
 
-Once BimlStudio is started for the first time, enter your Trial key to activate the product.
+Once BimlStudio is started for the first time, enter your Trial key from the trial welcome email to activate the product.

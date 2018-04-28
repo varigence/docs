@@ -1,15 +1,12 @@
 # Creating and configuring a BimlFlex project
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
-
-**Supporting Videos**
+## Supporting Videos
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/Bc3pCPAYgpE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+## Supporting BimlFlex Documentation
 
-**Supporting BimlFlex Documentation**
-
-- [Initial Setup and Configuration](https://varigence.com/Documentation/BimlFlex/Article/Initial+Setup+and+Configuration)
+- [Initial Setup and Configuration](../user-guide/initial-setup-and-configuration.md)
 
 ## Creating and configuring a BimlFlex project
 
