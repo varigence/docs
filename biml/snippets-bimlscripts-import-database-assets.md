@@ -9,20 +9,20 @@
 <#@ import namespace="Varigence.Hadron.Extensions.SchemaManagement" #>
 
 <#+ public ImportResults Results
-	{ 
-		get 
-		{	
-			return ((AstOleDbConnectionNode)RootNode.Connections["AdventureWorksLT"]).ImportDB();
-		}
-	}
-#>  
-	
+    {
+        get
+        {
+            return ((AstOleDbConnectionNode)RootNode.Connections["AdventureWorksLT"]).ImportDB();
+        }
+    }
+#>
+
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
-	<Schemas>
-		<#=Results.SchemaNodes.GetBiml()#>
-	</Schemas>
-	<Tables> 
-		<#=Results.TableNodes.GetBiml()#>
-	</Tables>
+    <Schemas>
+        <#=Results.SchemaNodes.GetBiml()#>
+    </Schemas>
+    <Tables>
+        <#=Results.TableNodes.GetBiml()#>
+    </Tables>
 </Biml>
 ```

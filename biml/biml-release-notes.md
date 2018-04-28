@@ -3,10 +3,12 @@
 **Release Date: July 15th, 2017**
 
 ### Breaking Changes from Previous Release
+
 - Moved PathAnnotation from PrecedenceConstraints to TaskflowInputPath.
 - Fixed issue in CallBimlScript property directives where all properties were required and marking them as required would create an error. To fix this, we apply all of the required properties first and then the optional properties in order of specification. Since required properties basically didn't work before, this shouldn't affect any actual code, but it should be called out as a potentially significant behavioral change.
 
 ### Biml Language
+
 - Forced Transformers, Globals, and Extensions to never be Live to avoid potential issues with compilation with incorrect user settings.
 - Added Biml language support for PermittedValues in AstMetadataModelPropertyNode.
 - Added support for global includes in CallBimlScript target files.
@@ -22,12 +24,13 @@
 - Added logging support to the DqsCleansing component.
 - Made everything related to script projects into scope boundaries.
 - Metadata Models
-    - Added permitted values collections to metadata models.
-    - Added IsUiEditorVisible to Metadata Model Properties.
-    - Added support to metadata model relationships for specifying filtered lookups in the UI.
-    - Entity IsUiEditorVisible
+  - Added permitted values collections to metadata models.
+  - Added IsUiEditorVisible to Metadata Model Properties.
+  - Added support to metadata model relationships for specifying filtered lookups in the UI.
+  - Entity IsUiEditorVisible
 
 ### Biml API
+
 - Added ConvertExcelDateToDateTime method to DataTypeConversion.
 - Changed all overloads of CallBimlScript* that product a dynamic object output to be called CallBimlScript*WithOutput. This is to avoid issues with VB not handling output parameters correctly.
 - Added IsBackgroundCompilation property that can be accessed from BimlScripts. It lets you conditionalize things like popup dialogs or file writes to happen only when you're doing a real build or a manual execution.
@@ -44,5 +47,5 @@
 - Fixed issue where multi-type generics could not be used as arguments in CallBimlScript.
 - Fixed issue where CallBimlScript files were not working with ObjectTag in Live BimlScript scenarios.
 - Metadata Models
-    - Fixed some issues with metadata model wrapper where property names and parent names were not being written to the validation items correctly.
-    - Added instance information to dynamic objects for metadata validators.
+  - Fixed some issues with metadata model wrapper where property names and parent names were not being written to the validation items correctly.
+  - Added instance information to dynamic objects for metadata validators.
