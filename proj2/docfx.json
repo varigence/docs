@@ -21,39 +21,42 @@
   ],
   "build": {
     "content": [
+
       {
         "files": [
-          "api/**.yml",
-          "api/index.md",
-          "api-vb/**.yml"
-        ]
-      },
-      {
-        "files": [
-          "articles/**.md",
-          "articles/**/toc.yml",
-          "toc.yml",
-          "*.md"
+          "**index.md",
+          "**toc.yml",
+          "**.md"
         ],
         "exclude": [
           "**/bin/**",
           "**/obj/**",
-          "_site/**"
-        ]
-      }
+          "**_site/**",
+          "**proj2/**",
+          "**posts/**",
+          "readme.md"
+        ],
+      "cwd": "../"
+    }
     ],
+
     "resource": [
       {
         "files": [
-          "images/**"
+          "bimlflex/user-guide/images/**",
+          "bimlexpress/images/**",
+          "content/**"
         ],
         "exclude": [
           "**/bin/**",
           "**/obj/**",
-          "_site/**"
-        ]
+          "**_site/**",
+          "**proj2/**"
+        ],
+        "cwd": "../"
       }
     ],
+
     "overwrite": [
       {
         "files": [
@@ -66,6 +69,7 @@
         ]
       }
     ],
+
     "dest": "_site",
 	"template": [
 		"default"
