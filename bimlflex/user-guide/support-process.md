@@ -43,7 +43,7 @@ Use the BimlFlex Support Utility Application to connect to the BimlFlex database
 
 By adding a Biml Generator file to the project, the Biml from the project can be saved to a text file. This file can be provided to the Support team for analysis. This is achieved by manually creating a new Biml File in the project and add the following code to the document.
 
-![Create New Biml File](images/bimlflex_ss_v5_create_new_biml_file.png "Create New Biml File")
+![Create New Biml File](images/bimlflex-ss-v5-create-new-biml-file.png "Create New Biml File")
 
 The new Biml File will be added and opened in BimlStudio.
 
@@ -53,6 +53,6 @@ The new Biml File will be added and opened in BimlStudio.
 
 Adding the code and saving the file will automatically execute and provide the project Biml in the preview window.
 
-![GetBiml() Expanded Result](images/bimlflex_ss_v5_get_biml_result.png "GetBiml() Expanded Result")
+![GetBiml() Expanded Result](images/bimlflex-ss-v5-get-biml-result.png "GetBiml() Expanded Result")
 
 This generated Biml is a text representation of the entire project and everything that will be generated.

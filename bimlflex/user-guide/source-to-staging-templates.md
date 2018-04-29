@@ -45,7 +45,7 @@ Below is the currently supported Integration Templates
 
 The standard framework being applied. This can be overridden by using metadata settings or Extension Points, signified by the red dots and dashed lined rectangles.
 
-![Source to Staging ETL Pattern](images/bimlflex_ss_v5_source_to_staging_etl_pattern.png "Source to Staging ETL Pattern")
+![Source to Staging ETL Pattern](images/bimlflex-ss-v5-source-to-staging-etl-pattern.png "Source to Staging ETL Pattern")
 
 **\[SEQC – BimlFlex Package Start\]** is added to every package and have an OnPreExecute EventHandler that decides if the package should execute and/or perform any Rollback operations prior to executing.
 
@@ -92,7 +92,7 @@ Once data is staged it can be loaded further to the target destination. There ar
 
 The diagram below shows sample project loads loads to suit different scenarios.
 
-![Project Implementation Architecture Example](images/bimlflex_ss_v5_project_implementation_architecture_example.png "Project Implementation Architecture Example")
+![Project Implementation Architecture Example](images/bimlflex-ss-v5-project-implementation-architecture-example.png "Project Implementation Architecture Example")
 
 Base project design and architecture in BimlFlex based on the layers and modeling techniques used in the organization.
 
@@ -115,7 +115,7 @@ Adding a valid staging connection in the Stage Connection property will include 
 
 By defining the final destination as Data Vault, the process optimizer includes hashing of keys into Staging that are required for Data Vault. Note that the sample projects below has separate projects for Source To Staging to Persistent Staging and Staging to Data Vault.
 
-![Excel Projects Sheet](images/bimlflex_ss_v5_excel_projects_sheet.png "Excel Projects Sheet")
+![Excel Projects Sheet](images/bimlflex-ss-v5-excel-projects-sheet.png "Excel Projects Sheet")
 
 Defining a new Source to Staging project:
 
@@ -129,7 +129,7 @@ Defining a new Source to Staging project:
 
 Batches represent parent packages that control what set of child packages will be executed together.
 
-![Excel Batches Sheet](images/bimlflex_ss_v5_excel_batches_sheet.png "Excel Batches Sheet")
+![Excel Batches Sheet](images/bimlflex-ss-v5-excel-batches-sheet.png "Excel Batches Sheet")
 
 Defining a Batch:
 
@@ -179,7 +179,7 @@ The ObjectAlias metadata column used on the Objects tab. A customer table can be
 
 BimlFlex supports a number of overrides on individual columns.
 
-![Project Implementation Architecture Example](images/bimlflex_ss_v5_excel_columns_sheet.png "Project Implementation Architecture Example")
+![Project Implementation Architecture Example](images/bimlflex-ss-v5-excel-columns-sheet.png "Project Implementation Architecture Example")
 
 ### SqlExpression
 
@@ -232,15 +232,15 @@ Example of a join between the `SalesOrderHeader` and `Customer` tables to add co
 
 ### Objects in metadata
 
-![Join Example](images/bimlflex_ss_v5_excel_objects_sample_joinsql.png "Join Example")
+![Join Example](images/bimlflex-ss-v5-excel-objects-sample-joinsql.png "Join Example")
 
 Example: `ObjectAlias` and `JoinSql` added to metadata
 
 ### Columns in metadata
 
-![Columns Example](images/bimlflex_ss_v5_excel_columns_sample_added_column.png "Columns Example")
+![Columns Example](images/bimlflex-ss-v5-excel-columns-sample-added-column.png "Columns Example")
 
-Example: added `CustomerLastName` column joined from the `Customer` table. 
+Example: added `CustomerLastName` column joined from the `Customer` table.
 
 This manually added column uses the following SqlExpression to inject the column from the joined table using the alias defined for that table as well as a custom name in the `SalesOrderHeader` Staging table.
 
@@ -281,7 +281,7 @@ Extension points are custom logic and tasks that can be injected directly into t
 
 The diagram below shows at which point the extension points are added to the source component ETL in BimlFlex. The left-hand side box contains the adjustments a user can make to the source query in metadata and the right-hand box contains the extension points that can be added that control the source query.
 
-![Source Query Extension Points](images/bimlflex_ss_v5_source_query_extension_point.png "Source Query Extension Points")
+![Source Query Extension Points](images/bimlflex-ss-v5-source-query-extension-point.png "Source Query Extension Points")
 
 ### Create a Source Override Extension Point
 
@@ -289,7 +289,7 @@ Example, create a source override extension point.
 
 In BimlStudio, click the Source Override in the BimlFlex Tab, Extension Points group, Object drop-down to create the Extension Point Biml file.
 
-![Create Extension Point](images/bimlflex_ss_v5_create_object_extension_point.png "Create Extension Point")
+![Create Extension Point](images/bimlflex-ss-v5-create-object-extension-point.png "Create Extension Point")
 
 In the new Biml file that opens, add the required target attribute for the source this will override, such as `AdventureWorksLT.SalesLT.Address` for the source connection, schema and table.
 
@@ -297,7 +297,7 @@ Rename the added Extension Point file so that it is easy to identify it later.
 
 Add the custom Sql query and the resulting columns to the code.
 
-![Create Extension Point Biml Script](images/bimlflex_ss_v5_source_override_extension_point.png "Create Extension Point Biml Script")
+![Create Extension Point Biml Script](images/bimlflex-ss-v5-source-override-extension-point.png "Create Extension Point Biml Script")
 
 ## Load Threading
 
@@ -311,29 +311,29 @@ To adjust, edit NumberOfThreads on the Connection and Object tabs. Determine the
 
 Hashing of incoming rows also allows for potential performance increases. Creating row hashes minimizes the number of comparisons that are required in the delta process.
 
-**\[FLX – Full Row Hash\]**
+### \[FLX – Full Row Hash\]
 
-Hashes all the columns in the row (using a double SHA-1 hash to eliminate hash collisions). 
+Hashes all the columns in the row (using a double SHA-1 hash to eliminate hash collisions).
 
 BimlFlex uses this for delta detection in the staging layer (comparing loads to Persistent Staging) for sources that do not have built-in CDC.
 
-**\[FLX – BusinessKey Hash\]**
+### \[FLX – BusinessKey Hash\]
 
-Hashing the Business Key for use in Data Vault and MPP systems like Microsoft Azure SQL Data Warehouse. 
+Hashing the Business Key for use in Data Vault and MPP systems like Microsoft Azure SQL Data Warehouse.
 
-Configuring hashing is done through the configurations page of the BimlFlex Excel Add-in. Note that some destinations override the default behavior. 
+Configuring hashing is done through the configurations page of the BimlFlex Excel Add-in. Note that some destinations override the default behavior.
 
-Data Vault targets will always hash Business Keys as that is a requirement for Data Vault. 
+Data Vault targets will always hash Business Keys as that is a requirement for Data Vault.
 
-![Source Query Workflow](images/bimlflex_ss_v5_source_query_workflow.png "Source Query Workflow")
+![Source Query Workflow](images/bimlflex-ss-v5-source-query-workflow.png "Source Query Workflow")
 
 ## File to Staging
 
 For file based sources there are some additional configurations required. As the file doesn't provide the required metadata, the Objects and Columns sheets needs to be populated manually.
 
-![File to Staging Workflow](images/bimlflex_ss_v5_file_to_staging_workflow.png "File to Staging Workflow")
+![File to Staging Workflow](images/bimlflex-ss-v5-file-to-staging-workflow.png "File to Staging Workflow")
 
-## Adding File to Staging Metadata.
+## Adding File to Staging Metadata
 
 Each source File requires a flat file connection on the Connections tab in BimlFlex Excel. This will define the attributes for the file.
 
@@ -377,35 +377,35 @@ Creation and inclusion of Persistent Staging loads is controlled by the PersistH
 
 By configuring Y for the source the ETL process and table definitions are included for the source.
 
-![Persistent Staging](images/bimlflex_ss_v5_persistent_staging_etl_pattern.png "Persistent Staging")
+![Persistent Staging](images/bimlflex-ss-v5-persistent-staging-etl-pattern.png "Persistent Staging")
 
 The above template includes the following
 
-**\[LKP – PSA/ODS\]**
+#### \[LKP – PSA/ODS\]
 
 Lookup rows from Persistent Staging are used to perform CDC/Delta Detection. If the source system changes, users can override this by defining an ExtensionPoint for LookupJoin or LookupSql. The following query is generated by the template.
 
 ```sql
-SELECT 
+SELECT
      SRC.[RowHash]
     ,SRC.[RowRecordSource]
-FROM 
+FROM
      [aw].[Address] SRC
 <# if (table.GetPersistHistory()) { #>
-WHERE 
+WHERE
      SRC.[RowIsCurrent] = 1
 <# } #>
 ```
 
-**\[SQL – Insert PSA/ODS\]**
+#### \[SQL – Insert PSA/ODS\]
 
 When `@IsInitialLoad` is set to `TRUE`, perform a direct insert into the PSA database bypassing the end dating and MERGE process.
 
-**\[SQL – Merge PSA/ODS\]**
+#### \[SQL – Merge PSA/ODS\]
 
 When `@IsInitialLoad` is set to `FALSE`, `MERGE` the changes into the PSA database.
 
-**\[SQL – Update End Dates\]**
+#### \[SQL – Update End Dates\]
 
 Updates relevant End Dates and Current Flags.
 
@@ -413,4 +413,4 @@ Updates relevant End Dates and Current Flags.
 
 BimlFlex supports reloading the data warehouse using persisted staging as the source. The standard Build process automatically creates a reinitialisation project that reloads the Staging tables from Persistent Staging.
 
-For the sample AdventureWworksLT source, the project **INIT\_FROM\_PSA\_EXT\_AWLT\_Project** is generated.
+For the sample AdventureWworksLT source, the project `INIT_FROM_PSA_EXT_AWLT_Project` is generated.

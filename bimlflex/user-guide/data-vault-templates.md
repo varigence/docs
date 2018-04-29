@@ -10,7 +10,7 @@ This document assumes the BimlFlex product has been [installed](developer-instal
 
 The walkthrough will use the Product and Product Category entities from the [AdventureWorksLT](https://msftdbprodsamples.codeplex.com/) source to demonstrate Data Vault concepts.
 
-![Import Metadata](images/bimlflex_ss_v5_excel_import_metadata_product.png "Import Metadata")
+![Import Metadata](images/bimlflex-ss-v5-excel-import-metadata-product.png "Import Metadata")
 
 ## Data Vault review
 
@@ -37,7 +37,7 @@ BimlFlex generates the required artifacts to populate Hubs, Links, Satellites et
 
 Hubs maintain a distinct list of business keys. The business key and the Hub table, as well as the source and source to target mapping are defined in the metadata repository.
 
-The Hub Entity is at the center of the **Core Business Concept**, CBC, and should be derived from **Enterprise Wide Business Keys**, EWBK’s. A Hub is not necessarily the same as a Primary Key in the source system. 
+The Hub Entity is at the center of the **Core Business Concept**, CBC, and should be derived from **Enterprise Wide Business Keys**, EWBK’s. A Hub is not necessarily the same as a Primary Key in the source system.
 
 To be able to integrate across systems and versions the actual Business terms used should be identified and used as keys for the Hubs.
 
@@ -47,7 +47,7 @@ Descriptive attributes about the business key in the Hub are stored in attached 
 
 ### Links
 
-Links maintain relationships between two or more Hubs. The Link is also a distinct set of all occurrences of the combination of hubs ever seen. These relationships have their effectiveness maintained through (Link) Satellites. 
+Links maintain relationships between two or more Hubs. The Link is also a distinct set of all occurrences of the combination of hubs ever seen. These relationships have their effectiveness maintained through (Link) Satellites.
 
 Some Links need to emulate the Foreign Key constraints in their source, this is managed by defining **Driving Keys** for the Link Satellite.
 
@@ -61,19 +61,19 @@ An example is the effectiveness of a relationship, when a link is created from a
 
 Another example is the management of descriptive attributes. For a Product stored in the Product Hub there will be Satellites storing the information about the Product. Should the List Price be changed in the source the Satellite will have another row added with this new data and the old record for the old price will be end dated as no longer current.
 
-## Hubs
+## More on Hubs
 
 The Hub is the distinct set of business keys from the source. It is an add only table. Any effectiveness or descriptive attributes are tracked in attached Satellites.
 
 The required metadata for a Hub is divided into the objects tab and the columns tab in the metadata editor. For the Source to Target Mapping the source and the target table and columns needs to be defined and mapped.
 
-![Hub Metadata](images/bimlflex_ss_v5_excel_hub_metadata_objects.png "Hub Metadata")
+![Hub Metadata](images/bimlflex-ss-v5-excel-hub-metadata-objects.png "Hub Metadata")
 
 The source table can be any metadata construct. The normal use case would be to read from the staging tables of an external source. Once new data had been staged the Raw Data Vault process will load the data into the destination Hub table.
 
 The object tab only requires the objects to be defined. The destination table is marked as Hub to indicate the entity type. The naming convention needs to be applied to the Object Name as it is manually added.
 
-![Hub Metadata](images/bimlflex_ss_v5_excel_hub_metadata_columns.png "Hub Metadata")
+![Hub Metadata](images/bimlflex-ss-v5-excel-hub-metadata-columns.png "Hub Metadata")
 
 Only the business key needs to be mapped to the target Hub. The source table provides the source key columns and the destination Hub has a Business key and a Surrogate Key defined.
 
@@ -107,7 +107,7 @@ The Hub load process will consist of a single Data Flow going from the source `P
 
 Illustrated here is the Hub load flow:
 
-![Hub Load Pattern](images/bimlflex_ss_v5_hub_load_pattern.png "Hub Load Pattern")
+![Hub Load Pattern](images/bimlflex-ss-v5-hub-load-pattern.png "Hub Load Pattern")
 
 For all Hubs in the Data Vault model, the source and destination table metadata is required. The column mappings include a business key column mapped to the destination hub and a defined destination Hub with a business key column and surrogate key column. The metadata directive `FlexToBK(key column)` is used to build Business keys.
 
@@ -133,7 +133,7 @@ For this guide the technical Id’s from the source are used.
 
 For the metadata objects tab the new Hub and the Link needs to be added
 
-![Link Metadata](images/bimlflex_ss_v5_excel_link_metadata_objects.png "Link Metadata")
+![Link Metadata](images/bimlflex-ss-v5-excel-link-metadata-objects.png "Link Metadata")
 
 The source now includes the `ProductCategory` table and the rdv objects include both the Hubs and the two Links.
 
@@ -141,7 +141,7 @@ The default naming convention used by the Accelerator is to create the Link name
 
 The columns metadata needs to include the mapping for the new hub as well as the Links.
 
-![Link Metadata](images/bimlflex_ss_v5_excel_link_metadata_columns.png "Link Metadata")
+![Link Metadata](images/bimlflex-ss-v5-excel-link-metadata-columns.png "Link Metadata")
 
 The Source tables need the Link keys for reference. The default naming convention uses `LSK_Entity_Entity_SK` naming style. The source tables have the keys for the Links added as well as the Hub keys for the relationships. The LSK column has the Link table as target table specified.
 
@@ -153,9 +153,9 @@ Building the solution from this metadata will generate two load packages in the 
 
 Illustrated here is the Link load flow:
 
-![Link Load Pattern](images/bimlflex_ss_v5_link_load_pattern.png "Link Load Pattern")
+![Link Load Pattern](images/bimlflex-ss-v5-link-load-pattern.png "Link Load Pattern")
 
-## Satellites
+## More on Satellites
 
 Satellites can be attached to either a Hub or a Link, to differentiate the Satellites attached to Links are called Link Satellites and prefixed with LSAT compared to Hub Satellites that uses SAT.
 
@@ -169,7 +169,7 @@ The source data for the sample model contains descriptive attributes for both Pr
 
 The required Source Object metadata is already in the metadata model, the Satellites attributes are read from the same source as the Hub. The destination Satellite tables/entities are added by adding the names and setting the Object Type to Satellite or Link Satellite
 
-![Satellite Metadata](images/bimlflex_ss_v5_excel_satellite_metadata_objects.png "Satellite Metadata")
+![Satellite Metadata](images/bimlflex-ss-v5-excel-satellite-metadata-objects.png "Satellite Metadata")
 
 The default naming convention uses the same name for the Satellite as the Hub or Link it is attached to with an additional suffix indicating the source system. It is recommended to use a consistent naming convention for all artifacts. The suffix naming suggests that additional Satellites can be added to the Hubs from other sources.
 
@@ -177,11 +177,11 @@ Only under very, very specific circumstances is it recommended to load data into
 
 The Columns metadata requires additional data for all attributes for the Satellites. Once multiple source tables and attributes are added to the metadata editor it is helpful to filter the columns to only display the required data. The Excel headers are normal table headers and support both filtering and sorting. Note that any filtering and sorting choices are removed when the metadata is refreshed.
 
-![Satellite Metadata](images/bimlflex_ss_v5_excel_satellite_metadata_columns.png "Satellite Metadata")
+![Satellite Metadata](images/bimlflex-ss-v5-excel-satellite-metadata-columns.png "Satellite Metadata")
 
 Illustrated here is the Satellite load flow
 
-![Satellite Process flow](images/bimlflex_ss_v5_satellite_load_pattern.png "Satellite Process flow")
+![Satellite Process flow](images/bimlflex-ss-v5-satellite-load-pattern.png "Satellite Process flow")
 
 ## Driving Keys
 
@@ -197,7 +197,7 @@ The Accelerator and the BimlFlex framework will automatically apply Driving Key 
 
 If a Driving Key behaviour needs to be manually defined, such as from a Link type source table, an attribute is added to the Attributes Tab.
 
-![Driving Key Metadata](images/bimlflex_ss_v5_excel_driving_key_metadata_attributes.png "Driving Key Metadata")
+![Driving Key Metadata](images/bimlflex-ss-v5-excel-driving-key-metadata-attributes.png "Driving Key Metadata")
 
 The Data Vault build logic will include the required processing in the Link Satellite to maintain data consistency throughout load by adding and closing relationships, emulating the behaviour of the single Foreign Key relationship from the source.
 
@@ -219,12 +219,12 @@ As an example, the following Packages have been generated using increasing amoun
 
 ### Single Hub load ETL flow sample
 
-![Data Vault Hub ETL Pattern](images/bimlflex_ss_v5_staging_to_data_vault_hub_etl_pattern.png "Data Vault Hub ETL Pattern")
+![Data Vault Hub ETL Pattern](images/bimlflex-ss-v5-staging-to-data-vault-hub-etl-pattern.png "Data Vault Hub ETL Pattern")
 
 This package only includes the Hub entity load of the `HUB_Product` destination.
 
 ### Full ETL flow sample
 
-![Data Vault ETL Pattern](images/bimlflex_ss_v5_staging_to_data_vault_full_etl_pattern.png "Data Vault ETL Pattern")
+![Data Vault ETL Pattern](images/bimlflex-ss-v5-staging-to-data-vault-full-etl-pattern.png "Data Vault ETL Pattern")
 
 The completed package that loads Hub, Link, Satellites and Link Satellites.

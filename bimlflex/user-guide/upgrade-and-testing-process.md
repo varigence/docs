@@ -36,7 +36,7 @@ Create a metadata dump using the BimlFlex utility in case there is a need to sen
 
 This can be achieved by manually creating a new Biml File in the project and adding the following code to the document.
 
-![Create New Biml File](images/bimlflex_ss_v5_create_new_biml_file.png "Create New Biml File")
+![Create New Biml File](images/bimlflex-ss-v5-create-new-biml-file.png "Create New Biml File")
 
 The new Biml File will be added and opened in BimlStudio.
 
@@ -48,7 +48,7 @@ Code to add:
 
 Adding the code and saving the file will automatically execute and provide the project Biml in the preview window.
 
-![GetBiml Expanded Result](images/bimlflex_ss_v5_get_biml_result.png "GetBiml Expanded Result")
+![GetBiml Expanded Result](images/bimlflex-ss-v5-get-biml-result.png "GetBiml Expanded Result")
 
 This generated Biml is a text representation of the entire project. This can be used to compare the result of different versions and Bundles so that fixes, new logic, and new functionality can be reviewed through a single text file.
 

@@ -10,7 +10,7 @@ The Configuration defaults are the Varigence recommended values and there is no 
 
 The Configurations are available in the Configurations sheet in the BimlFlex Excel Add-in.
 
-![Configurations Sheet](images/bimlflex_ss_v5_excel_configurations_sheet.png "Configurations Sheet")
+![Configurations Sheet](images/bimlflex-ss-v5-excel-configurations-sheet.png "Configurations Sheet")
 
 ## Metadata column overview
 

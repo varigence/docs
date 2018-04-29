@@ -28,7 +28,7 @@ Follow the guide for [Source To Staging](source-to-staging-templates.md) and imp
 
 Before starting the integration and acceleration of the technical artefacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modelling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
-![Whiteboard Model](images/bimlflex_ss_v5_accelerator_sample_whiteboard_model.png "Whiteboard Model")
+![Whiteboard Model](images/bimlflex-ss-v5-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
 Once the target model is drafted, compare the accelerated metadata with the expected outcome and tweak accordingly.
 
@@ -40,7 +40,7 @@ This guide builds on the other guides in the series and assumes that the environ
 
 The Accelerator integrates into and is part of the normal BimlFlex workflow
 
-![BimlFlex Workflow](images/bimlflex_ss_v5_accelerator_bimlflex_workflow.png "BimlFlex Workflow")
+![BimlFlex Workflow](images/bimlflex-ss-v5-accelerator-bimlflex-workflow.png "BimlFlex Workflow")
 
 The workflow uses BimlFlex Excel and BimlStudio with BimlFlex to model and manage all metadata. The data can be pushed and updated from both Excel and BimlStudio.
 
@@ -80,7 +80,7 @@ The following narrative will guide us through the Accelerator process end to end
 
 The Accelerator is integrated into the BimlFlex Ribbon on the BimlFlex tab in BimlStudio. Once the required base information is available for the Accelerator it can be configured and previewed directly in BimlStudio.
 
-![Accelerator Options](images/bimlflex_ss_v5_data_vault_accelerator_options.png "Accelerator Options")
+![Accelerator Options](images/bimlflex-ss-v5-data-vault-accelerator-options.png "Accelerator Options")
 
 Clicking the Preview Options opens the BimlFlex Data Vault Accelerator Options dialog. By specifying the:
 
@@ -92,19 +92,19 @@ In the preview, it is also possible to filter the tables used for the preview fr
 
 Constraining the Data Vault Acceleration to a subset allows for a more agile delivery where valuable parts of the solution can be put to good use as soon as they are done.
 
-![Accelerator Preview](images/bimlflex_ss_v5_data_vault_accelerator_preview_table_list.png "Accelerator Preview")
+![Accelerator Preview](images/bimlflex-ss-v5-data-vault-accelerator-preview-table-list.png "Accelerator Preview")
 
 Once the Preview Options are defined and committed it is possible to Preview the Data Vault model. The preview will generate the destination table artefacts in the solution explorer to the right in BimlStudio.
 
-![Preview Schema Diagram](images/bimlflex_ss_v5_preview_database_schema_diagram_ui.png "Preview Schema Diagram")
+![Preview Schema Diagram](images/bimlflex-ss-v5-preview-database-schema-diagram-ui.png "Preview Schema Diagram")
 
 Once the preview objects are available it is possible to review the information in the list of tables. It is also possible to generate a Database Schema Diagram that details the tables and their relationships in an easy to review diagram.
 
-![Preview Data Vault Backbone](images/bimlflex_ss_v5_schema_preview_data_vault_backbone.png "Preview Data Vault Backbone")
+![Preview Data Vault Backbone](images/bimlflex-ss-v5-schema-preview-data-vault-backbone.png "Preview Data Vault Backbone")
 
 The default schema will include all tables from all stages/layers. By filtering the diagram to only include the Hubs and Links by choosing the BimlFlexDataVaultPreviewBackbone in the filtering pane a user can review the CBC’s and UOW’s. Anything that needs tweaking, can be updated in the metadata which will, in turn, produce a new schema from the updated information.
 
-![Entity Relationship](images/bimlflex_ss_v5_sample_entity_relationship_diagram.png "Entity Relationship")
+![Entity Relationship](images/bimlflex-ss-v5-sample-entity-relationship-diagram.png "Entity Relationship")
 
 Iterating through the metadata and updating the model to better support the target Data Vault model, each time a user should set the updated metadata to be persisted to the Metadata Database. This will create all Data Vault tables and columns as well as the Source To Target mappings needed to populate the Data Vault from the chosen source.
 
@@ -140,7 +140,7 @@ Every table with **no incoming foreign keys** and more than **one outgoing forei
 
 Tables that don't fit any of the categories above are going to be Hub source tables.
 
-![Accelerator UI](images/bimlflex_ss_v5_accelerator_ui_tab_group.png "Accelerator UI")
+![Accelerator UI](images/bimlflex-ss-v5-accelerator-ui-tab-group.png "Accelerator UI")
 
 If the source doesn’t have relationships defined, such as flat files, these needs to be added to the metadata for the Accelerator to derive the table types.
 
@@ -156,7 +156,7 @@ It is possible to use the ModelGrouping metadata feature to split the source tab
 
 |||
 |--- |--- |
-|<img src="images/bimlflex_ss_v5_sample_source_table_model.png" alt="Sample Source Model" />|<img src="images/bimlflex_ss_v5_sample_source_table_model_accelerated.png" alt="Sample Source Model Accelerated" />|
+|<img src="images/bimlflex-ss-v5-sample-source-table-model.png" alt="Sample Source Model" />|<img src="images/bimlflex-ss-v5-sample-source-table-model-accelerated.png" alt="Sample Source Model Accelerated" />|
 
 The sample above shows how the `Customer` and `ShippingAddress` source tables are Accelerated into a `HUB_Customer` and three separate Satellites, one of them by adding `PWD` to the `ModelGrouping` for the password columns.
 
@@ -184,7 +184,7 @@ The UOW defines the granularity of the relationship between the entities. It is 
 
 Using the ModelGrouping attribute, a user can define the granularity from the source table to group multiple Foreign Key relations into a single Link
 
-![Unit of Work Link Grouping](images/bimlflex_ss_v5_accelerator_unit_of_work_link_grouping.png "Unit of Work Link Grouping")
+![Unit of Work Link Grouping](images/bimlflex-ss-v5-accelerator-unit-of-work-link-grouping.png "Unit of Work Link Grouping")
 
 ## Adjusting Model Overrides
 
@@ -194,7 +194,7 @@ There are overrides for Objects as well as Columns
 
 ### Object Overrides
 
-![Model Overrides](images/bimlflex_ss_v5_excel_accelerator_model_overrides.png "Model Overrides")
+![Model Overrides](images/bimlflex-ss-v5-excel-accelerator-model-overrides.png "Model Overrides")
 
 #### Object ModelOverrideName
 
@@ -218,7 +218,7 @@ Please note that this attribute is only relevant when using BimlFlex to generate
 
 ### Column Overrides
 
-![Column Model Overrides](images/bimlflex_ss_v5_excel_accelerator_columns_model_overrides.png "Column Model Overrides")
+![Column Model Overrides](images/bimlflex-ss-v5-excel-accelerator-columns-model-overrides.png "Column Model Overrides")
 
 #### Column ModelOverrideName
 
@@ -248,7 +248,7 @@ Once the metadata has been modelled and the preview represents the target model 
 
 By clicking the Publish DV Import the new data will be committed to the Metadata database and made available in BimlFlex Excel.
 
-![Publish Metadata Changes](images/bimlflex_ss_v5_accelerator_publish_metadata_changes.png "Publish Metadata Changes")
+![Publish Metadata Changes](images/bimlflex-ss-v5-accelerator-publish-metadata-changes.png "Publish Metadata Changes")
 
 Once the Metadata is published it is possible to update the metadata, getting all entities, in BimlFlex Excel to review the new objects and columns now available for further modelling.
 

@@ -9,11 +9,11 @@ Extension Points have four key components:
 * Custom code that implements the required behavior
 * Input and output path variables for connecting the Extension Point in the Ssis package.
 
-![Extension Points Sample Code](images/bimlflex_ss_v5_extension_points_sample_code.png "Extension Points Sample Code")
+![Extension Points Sample Code](images/bimlflex-ss-v5-extension-points-sample-code.png "Extension Points Sample Code")
 
 Extension Points are created in BimlStudio. In the BimlFlex Ribbon tab there are several Extension Point areas with a large number of different Extension Points available. Each Extension Point template will generate a code block that targets a specific point of the project. 
 
-![BimlFlex Ribbon UI](images/bimlflex_ss_v5_bimlflex_ui_tab.png "BimlFlex Ribbon UI")
+![BimlFlex Ribbon UI](images/bimlflex-ss-v5-bimlflex-ui-tab.png "BimlFlex Ribbon UI")
 
 Creating an Extension Point file and applying the required target attribute is all that is needed for it to be included into the project. when BimlFlex builds the solution any Extension Point code is injected into the resulting Packages.
 
@@ -27,7 +27,7 @@ Note that there are many features and functions built into BimlFlex that don't r
 
 Below is an example of where Extension Points can be added to the ETL structure. The red dots indicate injection points.
 
-![Extension Points Injection Points](images/bimlflex_ss_v5_extension_points_sample_flow.png "Extension Points Injection Points")
+![Extension Points Injection Points](images/bimlflex-ss-v5-extension-points-sample-flow.png "Extension Points Injection Points")
 
 It is also possible to completely override the main container with an Extension Point. This can be used with pre-existing, bespoke packages. By importing the existing package into BimlStudio the Biml code version of the same package can be injected into the Extension Point.
 

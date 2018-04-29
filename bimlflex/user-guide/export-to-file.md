@@ -61,7 +61,7 @@ The File Extract template extracts data from the data warehouse or other databas
 
 The components and ETL pattern are similar to a regular source to target pattern. There are additional metadata requirements for defining the destination file.
 
-![Export to File ETL Pattern](images/bimlflex_ss_v5_export_to_file_etl_pattern.png "Export to File ETL Pattern")
+![Export to File ETL Pattern](images/bimlflex-ss-v5-export-to-file-etl-pattern.png "Export to File ETL Pattern")
 
 ### Adding Source to File Metadata
 
@@ -86,29 +86,29 @@ The first step is setting up the connection attributes that are relevant to sett
 
 The second metadata entity that a user will need to fill in is the Batch entity. The Batch for a project is the parent package that executes the child packages that in turn perform the data load. Add a new batch with an appropriate name, number of threads, and option whether or not to use orchestration. An example of this batch metadata is shown below
 
-![Export to File Metadata](images/bimlflex_ss_v5_excel_file_export_batches_sample.png "Export to File Metadata")
+![Export to File Metadata](images/bimlflex-ss-v5-excel-file-export-batches-sample.png "Export to File Metadata")
 
 ### Projects
 
 Below is a screen shot of an example project. Generally, it will follow the usual source to target metadata with a couple of differences. In this case, ensure that "Source -&gt; File Extract" is defined for the integration template. This is important as it indicates to the BimlFlex framework what the type of project is an its purpose.
 
-![Export to File Metadata](images/bimlflex_ss_v5_excel_file_export_projects_sample.png "Export to File Metadata")
+![Export to File Metadata](images/bimlflex-ss-v5-excel-file-export-projects-sample.png "Export to File Metadata")
 
 ### Objects and Columns
 
 Now to add both the source file definition and the target table definition in the objects metadata spreadsheet. Below is an example of the target transactions file that is intend to be loaded to. Note that, so far, specified in the first row, are the column names, the type of flat file, whether to skip any empty rows at the beginning of the file, row delimiter type, column delimiter, line delimiter or last column delimiter, code page and finally whether the file is Unicode or not. Supplying BimlFlex with this metadata will ensure the correct file formats are being loaded further on in the development and build stages.
 
-![Metadata](images/bimlflex_ss_v5_excel_file_export_objects_sample_1.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-file-export-objects-sample-1.png "Metadata")
 
-![Metadata](images/bimlflex_ss_v5_excel_file_export_objects_sample_2.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-file-export-objects-sample-2.png "Metadata")
 
-![Metadata](images/bimlflex_ss_v5_excel_file_export_objects_sample_3.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-file-export-objects-sample-3.png "Metadata")
 
 Each destination File defined in the objects sheet require all destination columns to be defined.
 
 Each source column need to be mapped to its respective destination column. This is done by adding the TargetTable and TargetColumnName attributes to the columns for the source table.
 
-![Metadata](images/bimlflex_ss_v5_excel_file_export_columns_sample.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-file-export-columns-sample.png "Metadata")
 
 Once the metadata has been set in BimlFlex Excel, refresh the solution metadata in BimlStudio, build the solution and test.
 
@@ -118,7 +118,7 @@ BimlFlex provides a separate template for destinations that require the generate
 
 ### ETL Pattern Overview
 
-![Export workflow](images/bimlflex_ss_v5_compressed_file_export_etl_pattern.png "Export workflow")
+![Export workflow](images/bimlflex-ss-v5-compressed-file-export-etl-pattern.png "Export workflow")
 
 ### 7-Zip Application
 
@@ -151,31 +151,31 @@ Assuming there already exist various layers in the data warehouse to extract fro
 
 The second metadata entity that needs to be defined is the Batch entity. The Batch will be the parent package the executes any child packages that actually export data. So, in this case, a new batch with the appropriate name. Select the number of threads to load with and whether or not to use orchestration.
 
-![Zip File Export Metadata](images/bimlflex_ss_v5_excel_zip_file_export_batches_sample.png "Zip File Export Metadata")
+![Zip File Export Metadata](images/bimlflex-ss-v5-excel-zip-file-export-batches-sample.png "Zip File Export Metadata")
 
 ### Projects
 
 The next step is to add a project. Below is a screenshot of an example project. It will generally follow the usual source to target metadata. In this case, ensure that "Source -&gt; Zip File Extract" is chosen for the integration template. This will indicate to BimlFlex that there are extra requirements around loading to a file and compressing it etc.
 
-![Metadata](images/bimlflex_ss_v5_excel_zip_file_export_projects_sample_1.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-zip-file-export-projects-sample-1.png "Metadata")
 
-![Metadata](images/bimlflex_ss_v5_excel_zip_file_export_projects_sample_2.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-zip-file-export-projects-sample-2.png "Metadata")
 
 ### Objects and Columns
 
 Both the source definition and target definition are required in the objects metadata spreadsheet tab. Below is the definition of a sample target object in BimlFlex Excel.
 
-![Metadata](images/bimlflex_ss_v5_excel_zip_file_export_objects_sample_1.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-zip-file-export-objects-sample-1.png "Metadata")
 
-![Metadata](images/bimlflex_ss_v5_excel_zip_file_export_objects_sample_2.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-zip-file-export-objects-sample-2.png "Metadata")
 
-![Metadata](images/bimlflex_ss_v5_excel_zip_file_export_objects_sample_3.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-zip-file-export-objects-sample-3.png "Metadata")
 
 To finish implementing this pattern, the column definitions for the destination are required. In this case, the Transactions table. They need to be pointed to the destination file.
 
 This is done by filling in the target object and target object columns from the columns that define the source table, in this case, the Transactions source table.
 
-![Metadata](images/bimlflex_ss_v5_excel_zip_file_export_columns_sample.png "Metadata")
+![Metadata](images/bimlflex-ss-v5-excel-zip-file-export-columns-sample.png "Metadata")
 
 Finally, refresh the BimlFlex metadata in BimlStudio, build and test.
 
