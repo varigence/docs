@@ -33,10 +33,10 @@
 * Add: update `CREATE DATABASE` default statements for generated SQL scripts to create databases with `Recovery Model` set to `Simple`
 * New: support for global Extension Point for Project Parameters. This Project Parameter will be added to all Projects
 
-Use Extension Point `ProjectParameter` with target `GlobalProjectParameter`:
+Use Extension Point `ProjectParameter` with target `@@global`:
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="GlobalProjectParameter" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="@@global" #>
 <Parameter Name="YourName" DataType="String" IsRequired="true">DefaultParameterValue</Parameter>
 ```
 
