@@ -19,6 +19,8 @@ Sample extensions For Visual Studio code:
 
 Guidelines for DocFX based markdown format and styling can be [found here](http://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
 
+Rendering engine is Markdig. Additional styling and formatting options described at the [Markdig Github page](https://github.com/lunet-io/markdig). This allows direct embedding of Youtube videos etc using Markdown syntax rather than html.
+
 Table of contents files are stored as toc.yml files. Refer to the [DocFX page on toc's](https://dotnet.github.io/docfx/tutorial/intro_toc.html) for more information
 
 ## Documentation Contents

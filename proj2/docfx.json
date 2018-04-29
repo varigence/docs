@@ -20,6 +20,7 @@
     } 	
   ],
   "build": {
+    "markdownEngineName": "markdig",
     "content": [
 
       {
