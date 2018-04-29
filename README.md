@@ -17,6 +17,8 @@ Sample extensions For Visual Studio code:
 * `code --install-extension tintoy.docfx-assistant`
 * `code --install-extension docsmsft.docs-markdown`
 
+Guidelines for DocFX based markdown format and styling can be [found here](http://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
+
 Table of contents files are stored as toc.yml files. Refer to the [DocFX page on toc's](https://dotnet.github.io/docfx/tutorial/intro_toc.html) for more information
 
 ## Documentation Contents
