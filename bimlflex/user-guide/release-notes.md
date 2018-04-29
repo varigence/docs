@@ -21,7 +21,12 @@
 
 ## Bundle 80329
 
-* Add: New feature, control if the accelerator should create Link Satellites for generated Links. New setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. Breaking change This feature has a default value of `"N"`, meaning no Link Satellites will be accelerated unless it is updated to `"Y"`. Overrides can be created using attribute `SettingValue` definitions for individual source tables.
+* Add: New feature, control if the accelerator should create Link Satellites for generated Links. New setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. Breaking change This feature has a default value of `N`, meaning no Link Satellites will be accelerated unless it is updated to `Y`. Overrides can be created using attribute `SettingValue` definitions for individual source tables.
+
+> [!WARNING]
+> The default setting for `DvAccelerateLinkSatellite` is `N`.
+>
+> Existing projects using Link Satellites should update it to `Y` to maintain behaviour.
 
 ## Bundle 80325
 
