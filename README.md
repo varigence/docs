@@ -10,7 +10,7 @@ Build and host the site using the `serve.bat` or `serve.ps1` files in the `proj2
 
 Content is stored in md files. Use linting and adhere to best practises for markdown formatting as well as for file names for DocFX.
 
-Sample extensions For Visual Studio code:
+Sample extensions For [Visual Studio Code](https://code.visualstudio.com/), run from [command line](https://code.visualstudio.com/docs/editor/command-line) to install:
 
 * `code --install-extension DavidAnson.vscode-markdownlint`
 * `code --install-extension shd101wyy.markdown-preview-enhanced`
