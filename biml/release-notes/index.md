@@ -1,22 +1,4 @@
-# Biml Documentation
-
-## Biml API Reference
-
-Biml API Reference
-
-## Biml Language Reference
-
-Biml Language Reference
-
-## Biml Release Notes
-
-Biml Release Notes
-
-## Biml Snippets
-
-The Biml Snippets collection includes a variety of Biml snippets for implementing assets in your Biml-based BI solution.
-
-## Biml Forum
+# Biml Release Notes
 
 If you have questions about a snippet or are looking for help with a particular Biml implementation, you can search and post in the [Biml forum](https://varigence.com/Forums?forumName=Biml) for help.
 
@@ -28,6 +10,6 @@ While the forums are the best way to get answers, if your question contains prop
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[Biml Language Reference](https://varigence.com/Documentation/Language/Index)
+[Biml Language Reference](../language-reference/index.md)
 
-[Biml API Reference](https://varigence.com/Documentation/Api/Index)
+[Biml API Reference](../api-reference/index.md)

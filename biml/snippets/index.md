@@ -1,17 +1,5 @@
 # Biml Documentation
 
-## Biml API Reference
-
-Biml API Reference
-
-## Biml Language Reference
-
-Biml Language Reference
-
-## Biml Release Notes
-
-Biml Release Notes
-
 ## Biml Snippets
 
 The Biml Snippets collection includes a variety of Biml snippets for implementing assets in your Biml-based BI solution.

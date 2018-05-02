@@ -1,13 +1,17 @@
+---
+uid: biml-release-notes
+name: Biml Release Notes
+---
 # Biml Release Notes
 
 **Release Date: July 15th, 2017**
 
-### Breaking Changes from Previous Release
+## Breaking Changes from Previous Release
 
 - Moved PathAnnotation from PrecedenceConstraints to TaskflowInputPath.
 - Fixed issue in CallBimlScript property directives where all properties were required and marking them as required would create an error. To fix this, we apply all of the required properties first and then the optional properties in order of specification. Since required properties basically didn't work before, this shouldn't affect any actual code, but it should be called out as a potentially significant behavioral change.
 
-### Biml Language
+## Biml Language
 
 - Forced Transformers, Globals, and Extensions to never be Live to avoid potential issues with compilation with incorrect user settings.
 - Added Biml language support for PermittedValues in AstMetadataModelPropertyNode.
@@ -29,7 +33,7 @@
   - Added support to metadata model relationships for specifying filtered lookups in the UI.
   - Entity IsUiEditorVisible
 
-### Biml API
+## Biml API
 
 - Added ConvertExcelDateToDateTime method to DataTypeConversion.
 - Changed all overloads of CallBimlScript* that product a dynamic object output to be called CallBimlScript*WithOutput. This is to avoid issues with VB not handling output parameters correctly.

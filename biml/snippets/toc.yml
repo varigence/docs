@@ -1,0 +1,231 @@
+- name: BimlScripts
+  href: bimlscripts.md
+  items:
+  - name: Callable BimlScript (Callee)
+    href: bimlscripts-callee.md
+  - name: Callable BimlScript (Caller)
+    href: bimlscripts-caller.md
+  - name: Conditionals
+    href: bimlscripts-conditionals.md
+  - name: No Op
+    href: bimlscripts-no-op.md
+  - name: Extract All Tables
+    href: bimlscripts-extract-all-tables.md
+  - name: Get Live Database Schema
+    href: bimlscripts-get-live-database-schema.md
+  - name: Import Database Assets
+    href: bimlscripts-import-database-assets.md
+  - name: Includes
+    href: bimlscripts-includes.md
+  - name: Setting Variable Value
+    href: bimlscripts-setting-variable-value.md
+
+- name: Connections
+  href: connections.md
+  items:
+  - name: ADO.NET
+    href: connections-adonet.md
+  - name: Analysis Services
+    href: connections-analysis-services.md
+  - name: Cache
+    href: connections-cache.md
+  - name: Excel OleDb
+    href: connections-excel-oledb.md
+  - name: File
+    href: connections-file.md
+  - name: Flat File
+    href: connections-flat-file.md
+  - name: FTP
+    href: connections-ftp.md
+  - name: HTTP
+    href: connections-http.md
+  - name: MSMQ
+    href: connections-msmq.md
+  - name: OleDb
+    href: connections-oledb.md
+  - name: SMTP
+    href: connections-smtp.md
+  - name: SQL Server Management
+    href: connections-sql-server-management.md
+  - name: WMI
+    href: connections-wwi.md
+
+- name: File Formats
+  href: file-formats.md
+  items:
+  - name: Flat File Format
+    href: file-formats-flat-file-format.md
+  - name: Raw File Format
+    href: file-formats-raw-file-format.md
+
+- name: Cubes
+  href: cubes.md
+  items:
+  - name: Drillthrough Action
+    href: cubes-drillthrough-action.md
+  - name: Report Action
+    href: cubes-report-action.md
+  - name: Standard Action
+    href: cubes-standard-action.md
+  - name: Dimension / Hierarchy
+    href: cubes-dimension-hierarchy.md
+  - name: Dimension Binding
+    href: cubes-dimension-binding.md
+  - name: KPI
+    href: cubes-kpi.md
+  - name: MDX Script
+    href: cubes-mdx-script.md
+  - name: Measure Group / Measure
+    href: cubes-measure-group-measure.md
+  - name: Perspective
+    href: cubes-perspective.md
+  - name: Partition - Incremental Notification
+    href: cubes-partition-incremental-notification.md
+  - name: Partition - Table Notification
+    href: cubes-partition-table-notification.md
+  - name: Partition - Query Source
+    href: cubes-partition-query-source.md
+  - name: Aggregation Design
+    href: cubes-aggregation-design.md
+  - name: Calculated Member
+    href: cubes-calculated-member.md
+  - name: Named Set
+    href: cubes-named-set.md
+  - name: Script Command
+    href: cubes-script-command.md
+
+- name: Miscellaneous
+  href: miscellaneous.md
+  items:
+  - name: Log Event
+    href: miscellaneous-log-event.md
+  - name: Log Provider
+    href: miscellaneous-log-provider.md
+  - name: Principal
+    href: miscellaneous-principal.md
+
+- name: Script Projects
+  href: script-projects.md
+  items:
+  - name: Script Component Project
+    href: script-projects-script-component-project.md
+  - name: Script Task Project
+    href: script-projects-script-task-project.md
+
+- name: SSIS Tasks
+  href: ssis-tasks.md
+  items:
+  - name: Bulk Insert
+    href: ssis-tasks-bulk-insert.md
+  - name: Data Profiling
+    href: ssis-tasks-data-profiling.md
+  - name: Execute Package
+    href: ssis-tasks-execute-package.md
+  - name: Execute SQL
+    href: ssis-tasks-execute-sql.md
+  - name: Execute Process
+    href: ssis-tasks-execute-process.md
+  - name: File System
+    href: ssis-tasks-file-system.md
+  - name: Execute SQL Parameters
+    href: ssis-tasks-execute-sql-parameters.md
+  - name: Foreach File Loop
+    href: ssis-tasks-foreach-file-loop.md
+  - name: FTP
+    href: ssis-tasks-ftp.md
+  - name: Message Queue
+    href: ssis-tasks-message-queue.md
+  - name: Precedence Constraints
+    href: ssis-tasks-precedence-constraints.md
+  - name: WMI Event Watcher
+    href: ssis-tasks-wmi-event-watcher.md
+  - name: Script (Simple)
+    href: ssis-tasks-script-simple.md
+  - name: Send Mail
+    href: ssis-tasks-send-mail.md
+  - name: Dataflow
+    href: ssis-tasks-dataflow.md
+  - name: WMI Data Reader
+    href: ssis-tasks-wmi-data-reader.md
+
+- name: Transformations
+  href: transformations.md
+  items:
+  - name: Aggregate
+    href: transformations-aggregate.md
+  - name: Audit
+    href: transformations-audit.md
+  - name: Character Map
+    href: transformations-character-map.md
+  - name: Conditional Split
+    href: transformations-conditional-split.md
+  - name: Copy Column
+    href: transformations-copy-column.md
+  - name: Data Conversion
+    href: transformations-data-conversion.md
+  - name: Derived Columns
+    href: transformations-derived-columns.md
+  - name: Export Column
+    href: transformations-export-column.md
+  - name: Fuzzy Lookup
+    href: transformations-fuzzy-lookup.md
+  - name: Fuzzy Grouping
+    href: transformations-fuzzy-grouping.md
+  - name: Import Column
+    href: transformations-import-column.md
+  - name: Lookup
+    href: transformations-lookup.md
+  - name: Merge
+    href: transformations-merge.md
+  - name: Merge Join
+    href: transformations-merge-join.md
+  - name: Multicast
+    href: transformations-multicast.md
+  - name: Percentage Sampling
+    href: transformations-percentage-sampling.md
+  - name: Pivot
+    href: transformations-pivot.md
+  - name: Row Count
+    href: transformations-row-count.md
+  - name: Row Sampling
+    href: transformations-row-sampling.md
+  - name: Script Component Source
+    href: transformations-script-component-source.md
+  - name: Sort
+    href: transformations-sort.md
+  - name: Term Extraction
+    href: transformations-term-extraction.md
+  - name: Term Lookup
+    href: transformations-term-lookup.md
+  - name: Union All
+    href: transformations-union-all.md
+  - name: Unpivot
+    href: transformations-unpivot.md
+    
+- name: Tables
+  href: tables.md
+  items:
+  - name: Dimension
+    href: tables-dimension.md
+  - name: Fact
+    href: tables-fact.md
+  - name: Clone Table
+    href: tables-clone-table.md
+  - name: Columns
+    href: tables-columns.md
+  - name: Multiple Column Table Reference
+    href: tables-multiple-column-table-reference.md
+  - name: Keys
+    href: tables-keys.md
+  - name: Foreign Key
+    href: tables-foreign-key.md
+  - name: Foreign Key - Simple
+    href: tables-foreign-key-simple.md
+  - name: Indexes
+    href: tables-indexes.md
+  - name: Schema
+    href: tables-schema.md
+  - name: Static Source
+    href: tables-static-source.md
+  - name: Custom Extension
+    href: tables-custom-extension.md
