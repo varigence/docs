@@ -1,3 +1,7 @@
+---
+uid: bimlflex-analyst-installation
+title: Analyst Installation
+---
 # Analyst installation
 
 Analyst installations provide an Excel-based metadata editor environment for defining the metadata required to build BimlFlex solutions.

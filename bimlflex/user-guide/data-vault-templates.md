@@ -1,8 +1,8 @@
 # Data Vault Templates
 
-This document outlines the creation and management of Data Vault artifacts in BimlFlex.
+This document outlines the creation and management of Data Vault artefacts in BimlFlex.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](data-vault-accelerator.md). This document focuses on the process of manually creating Data Vault artifacts by manipulating metadata.
+The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](data-vault-accelerator.md). This document focuses on the process of manually creating Data Vault artefacts by manipulating metadata.
 
 ## Setup
 
@@ -14,7 +14,7 @@ The walkthrough will use the Product and Product Category entities from the [Adv
 
 ## Data Vault review
 
-It is important to consider the Data Vault design and modeling principles while building the Enterprise Data warehouse. There are several books and training courses available on the subject of Data Vault modeling. Varigence provides a Data Vault modeling and implementation course that combines theoretical knowledge about the Data Vault approach with implementation guides using BimlFlex.
+It is important to consider the Data Vault design and modelling principles while building the Enterprise Data warehouse. There are several books and training courses available on the subject of Data Vault modelling. Varigence provides a Data Vault modelling and implementation course that combines theoretical knowledge about the Data Vault approach with implementation guides using BimlFlex.
 
 ## The Data Vault Pillars
 
@@ -31,13 +31,13 @@ It can be prudent to revisit the Data Vault modelling pillars as defined by the 
 
 ## Base Data Vault constructs
 
-BimlFlex generates the required artifacts to populate Hubs, Links, Satellites etc from its metadata.
+BimlFlex generates the required artefacts to populate Hubs, Links, Satellites etc from its metadata.
 
 ### Hubs
 
 Hubs maintain a distinct list of business keys. The business key and the Hub table, as well as the source and source to target mapping are defined in the metadata repository.
 
-The Hub Entity is at the center of the **Core Business Concept**, CBC, and should be derived from **Enterprise Wide Business Keys**, EWBK’s. A Hub is not necessarily the same as a Primary Key in the source system.
+The Hub Entity is at the centre of the **Core Business Concept**, CBC, and should be derived from **Enterprise Wide Business Keys**, EWBK’s. A Hub is not necessarily the same as a Primary Key in the source system.
 
 To be able to integrate across systems and versions the actual Business terms used should be identified and used as keys for the Hubs.
 
@@ -97,9 +97,9 @@ The Business key is added to the source table as a new column. It uses the `Flex
 
 Once the metadata is pushed from the Excel metadata editor to the repository it is possible to refresh the metadata into BimlFlex.
 
-BimlFlex will indicate the tables and the SSIS artifacts that will be created. Reviewing the artifact list in the solution explorer will indicate if the solution will match expectations.
+BimlFlex will indicate the tables and the SSIS artefacts that will be created. Reviewing the artefact list in the solution explorer will indicate if the solution will match expectations.
 
-Once the solution is built through BimlStudio the normal output artifacts from the staging, persistent staging, table and database creation will include a new project with the Raw Data Vault load batch and Hub ETL process.
+Once the solution is built through BimlStudio the normal output artefacts from the staging, persistent staging, table and database creation will include a new project with the Raw Data Vault load batch and Hub ETL process.
 
 BimlFlex groups Raw Data Vault loads by source table. The generated Product Hub will be included in a package called `LOAD_BFX_RDV_Product_AWLT.dtsx` in the SSIS project called `LOAD_BFX_RDV`.
 
@@ -115,7 +115,7 @@ For all Hubs in the Data Vault model, the source and destination table metadata 
 
 Some Hub designs require multiple source key columns to define the Hub through the Business Key. Sources with key overlap might need a system or source string added, multiple source keys might need to be combined to form a distinct Hub business key.
 
-> Deriving the business keys for the CBC/EWBK’s is one of the most important design exercises in modeling the Data Vault. This guide does not include details on the required analysis and design process.
+> Deriving the business keys for the CBC/EWBK’s is one of the most important design exercises in modelling the Data Vault. This guide does not include details on the required analysis and design process.
 
 For these columns BimlFlex concatenates them into a single string and separates them with the configured separator `~` as described above.
 
@@ -135,7 +135,7 @@ For the metadata objects tab the new Hub and the Link needs to be added
 
 ![Link Metadata](images/bimlflex-ss-v5-excel-link-metadata-objects.png "Link Metadata")
 
-The source now includes the `ProductCategory` table and the rdv objects include both the Hubs and the two Links.
+The source now includes the `ProductCategory` table and the `rdv` objects include both the Hubs and the two Links.
 
 The default naming convention used by the Accelerator is to create the Link name as the relationship between the Hubs. This works in the example scenario but for Links will more Hubs attached the name most likely needs to be adjusted to use a more concise convention. The recommendation is to use the convention consistently and have as explicitly meaningful names as possible.
 
@@ -171,7 +171,7 @@ The required Source Object metadata is already in the metadata model, the Satell
 
 ![Satellite Metadata](images/bimlflex-ss-v5-excel-satellite-metadata-objects.png "Satellite Metadata")
 
-The default naming convention uses the same name for the Satellite as the Hub or Link it is attached to with an additional suffix indicating the source system. It is recommended to use a consistent naming convention for all artifacts. The suffix naming suggests that additional Satellites can be added to the Hubs from other sources.
+The default naming convention uses the same name for the Satellite as the Hub or Link it is attached to with an additional suffix indicating the source system. It is recommended to use a consistent naming convention for all artefacts. The suffix naming suggests that additional Satellites can be added to the Hubs from other sources.
 
 Only under very, very specific circumstances is it recommended to load data into the same Satellite from multiple different sources and even then it is always possible to still load to separate destinations. The Data Vault model supports an unlimited number of Satellites attached to Hubs and Links, this should be embraced in the modelling so that the agility and flexibility to integrate changes and new sources are maximised.
 
@@ -193,7 +193,7 @@ Since links can maintain any number of relationship this behaviour needs to be e
 
 For the Product to Product Category Link this is maintained by the `LSAT_Product_ProductCategory_AWLT` Link Satellite table.
 
-The Accelerator and the BimlFlex framework will automatically apply Driving Key type relationships for any Links derived out of a Hub, as they are based on Foreign Keys in the source and by definition imply a Driving Key scenario. This will be automatically included in the Ssis package, no separate attribute will be added in the Attributes Sheet.
+The Accelerator and the BimlFlex framework will automatically apply Driving Key type relationships for any Links derived out of a Hub, as they are based on Foreign Keys in the source and by definition imply a Driving Key scenario. This will be automatically included in the SSIS package, no separate attribute will be added in the Attributes Sheet.
 
 If a Driving Key behaviour needs to be manually defined, such as from a Link type source table, an attribute is added to the Attributes Tab.
 
@@ -207,7 +207,7 @@ Multi Active Satellites are satellites with an additional key attribute meaning 
 
 Multi Active Satellites are created by adding a Multi Active Key to the Satellite definition.
 
-Multi Active Satellites break the formal Data Vault design and modeling pattern and it is recommended to use the default patterns if possible. An extra Hub roleplaying the Multi Active attribute can possibly be added to the UOW/Link to implement a similar behavior.
+Multi Active Satellites break the formal Data Vault design and modelling pattern and it is recommended to use the default patterns if possible. An extra Hub roleplaying the Multi Active attribute can possibly be added to the UOW/Link to implement a similar behaviour.
 
 For sources that have multiple changes to the same row at the same time it is easier to define the order and override the `RowEffectiveFromDate` value to reflect that order instead of implementing Multi Activeness.
 

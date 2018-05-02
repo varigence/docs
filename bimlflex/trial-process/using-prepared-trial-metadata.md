@@ -21,7 +21,7 @@ The following detailed steps walks through how to use the prepared trial metadat
 The trial metadata is stored in the archive tables and uses the standard BimlFlex archive and snapshot functionality to restore metadata.
 The stored procedure that restores metadata is called
 
-`TBA`
+`[archive].[SetRollbackSnapshot]`
 
 and is called through the following syntax
 

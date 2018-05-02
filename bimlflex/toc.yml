@@ -2,14 +2,21 @@
   href: index.md
   topicHref: index.md
 
-- name: BimlFlex User Guide
+- name: User Guide
   href: user-guide/toc.yml
   topicHref: user-guide/index.md
 
-- name: BimlFlex Trial Process
+- name: Trial Process
   href: trial-process/toc.yml
   topicHref: trial-process/index.md
 
-- name: BimlFlex Tips & Tricks
+- name: Tips & Tricks
   href: tips-tricks/toc.yml
   topicHref: tips-tricks/index.md
+
+- name: Reference Documentation 1
+  href: reference-documentation/toc.md
+  topicHref: reference-documentation/index.md
+
+- name: Reference Documentation 2
+  href: ../proj2/generated-bimlflex/reference-documentation/toc.yml

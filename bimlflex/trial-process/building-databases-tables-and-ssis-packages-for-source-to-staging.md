@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/j-ECD4-Yw1E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+![Building Source to Staging](https://www.youtube.com/watch?v=j-ECD4-Yw1E)
 
 ## Supporting BimlFlex Documentation
 

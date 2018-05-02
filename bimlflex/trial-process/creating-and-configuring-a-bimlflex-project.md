@@ -2,13 +2,13 @@
 
 ## Supporting Videos
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/Bc3pCPAYgpE?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+![Creating and Configuring a BimlFlex Project](https://www.youtube.com/watch?v=Bc3pCPAYgpE)
 
 ## Supporting BimlFlex Documentation
 
 - [Initial Setup and Configuration](../user-guide/initial-setup-and-configuration.md)
 
-## Creating and configuring a BimlFlex project
+## Create and configure the BimlFlex project
 
 The BimlFlex project is comprised of the project files on disk that BimlStudio interacts with and the metadata stored in the BimlFlex metadata repository database.
 
@@ -27,7 +27,6 @@ The previous steps in the trial process needs to have been completed. This inclu
 - The latest version of BimlStudio and BimlFlex are installed.
 - The BimlFlex Utility Application has been used to create the BimlFlex and BimlCatalog Databases.
 - The BimlFlex Utility Application has been used to update the Bundle File in the installation folders.
-
 
 ### Start BimlStudio
 

@@ -10,11 +10,11 @@ This tool can be used in any scenario where a schema is available, and there is 
 
 ## Watch Recordings
 
-### 02.BimlFlex - Importing Metadata
+### 02. BimlFlex - Importing Metadata
 
 In this session, we look at importing metadata using BimlFlex. The metadata is published and committed and persisted in the meta vault repository.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/dWRIassNVTs?rel=0" frameborder="0" allowfullscreen></iframe>
+![BimlFlex Importing Metadata](https://www.youtube.com/watch?v=dWRIassNVTs?rel=0&autoplay=0)
 
 ### Locating the tool
 
@@ -94,7 +94,7 @@ Controls if existing metadata should be retained during the import of metadata.
 
 #### Default Properties
 
-This controls default behavior of inferred Business Keys.
+This controls default behaviour of inferred Business Keys.
 
 * Pad Business Keys (Amount) – defines business key width
 * BusinessKey Suffix - Optionally add a suffix onto column name to indicate what is a business key

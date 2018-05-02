@@ -1,14 +1,18 @@
+---
+uid: bimlflex-trial-process
+title: BimlFlex Trial Process
+---
 # BimlFlex Trial Process Overview
 
 ## Summary
 
 The BimlFlex trial process is a guide through building a Data Warehouse using BimlFlex. The trial uses the Microsoft sample database AdventureWorks LT as a source. It allows the creation of an end to end load process for a 2 or 3 layer data warehouse. A 2 layer process being Source to Staging to Dimensional and a 3 layer process being Source to Staging to Data Vault to Dimensional.
 
-You can find Supporting BimlFlex [documentation here.](../user-guide/index.md)
+@bimlflex-user-guide
 
 ## Trial Prerequisites
 
-The trial is an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development. It requires Sql Server 2016 for hosting databases and uses SSIS for the ETL process.
+The trial is an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development. It requires SQL Server 2016 for hosting databases and uses SSIS for the ETL process.
 
 The trial supports 2 architectures:
 
@@ -19,11 +23,11 @@ both architectures uses a staging layer with both a transient staging database a
 
 For the trial the following is needed:
 
-- Sql Server 2016 installation with Sql Server engine and SSIS/Integration services
+- SQL Server 2016 installation with SQL Server engine and SSIS/Integration services
 - Windows-based development machine for local installation of BimlStudio and BimlFlex
 - Excel 2013-2016 for managing and modelling metadata
 - Visual Studio 2015 with SSDT and SSIS components
-- Sql Server Management Studio for managing databases and running Sql Scripts
+- SQL Server Management Studio for managing databases and running SQL Scripts
 
 ## Trial process and documentation
 
@@ -33,22 +37,24 @@ The trial consists of the following steps:
 
 The installation and setup of the BimlFlex environment includes downloading the required applications, installing and activating them on a development machine. This process readies the environment for the trial process.
 
-The following installations are required apart from the prerequisite Microsoft Sql and SSIS development installations.
+The following installations are required apart from the prerequisite Microsoft SQL and SSIS development installations.
 
 1. [Installing BimlStudio](installing-bimlstudio.md)
 2. [Installing BimlFlex](installing-bimlflex.md)
 3. [Installing SSIS Components](installing-custom-SSIS-components.md)
 
-### Configuration of databases and updates using the utility application
+### Setup databases
 
-The Configuration phase creates and sets up the databases required for BimlFlex:
+The database setup phase creates the databases required for BimlFlex:
 
 1. BimlFlex, metadata repository
 2. BimlCatalog, orchestration and audit/logging repository
 
-as well as updates the master BimlFlex Bundle file used in the BimlFlex projects in BimlStudio
+### Upgrade databases and BimlFlex Bundle version
 
-[Update and Configure BimlFlex](using-the-utility-application-to-update-and-configure-bimlflex.md)
+BimlStudio has an integrated, online feature to upgrade BimlFlex projects and databases to the latest version
+
+@bimlflex-upgrade
 
 #### Creating a BimlFlex project
 
@@ -62,7 +68,7 @@ The first time an empty project is used it allows the creation of sample metadat
 
 [Creating the Sample Metadata](creating-the-scaffolding-metadata.md)
 
-#### mport of source metadata
+#### Import of source metadata
 
 Source metadata management and modelling is done through the BimlFlex Excel based modelling tool. it allows import of the AdventureWorks LT database source into the metadata repository and modelling of the metadata to prepare it for a data mart dimensional model or a Data Vault based integration layer.
 
@@ -77,7 +83,7 @@ Once the metadata from the source has been added to the BimlFlex metadata reposi
 
 #### Configuration of BimlFlex
 
-The BimlFlex framework behavior is controlled by a comprehensive set of configurations. This section walks through the configurations and highlights the options available.
+The BimlFlex framework behaviour is controlled by a comprehensive set of configurations. This section walks through the configurations and highlights the options available.
 
 [Configuration of BimlFlex](configuration-of-bimlflex.md)
 

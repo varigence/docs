@@ -1,16 +1,14 @@
 # Dimensional Model from Data Vault
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
+## Supporting Videos
 
-**Supporting Videos**
+TODO: Coming Soon
 
-*TODO: Comming Soon*
+## Supporting BimlFlex Documentation
 
-**Supporting BimlFlex Documentation**
+@bimlflex-user-guide
 
-*TODO: Comming Soon*
-
-## Dimensional Model from Data Vault
+## Implementing the Dimensional Model from Data Vault
 
 Based on the PIT and Bridge tables in the Data Vault layer a set of Fact and Dimensional views are created that are used to populate a dimensional model in a data mart in the presentation layer.
 
@@ -19,16 +17,21 @@ Based on the PIT and Bridge tables in the Data Vault layer a set of Fact and Dim
 The following detailed steps walks through the creation of the Dimensional Model from Data Vault
 
 ### Creating the source views for the dimensional model
-*TODO: Comming Soon*
+
+TODO: Coming Soon
 
 ### Creating the dimensional model metadata
-*TODO: Comming Soon*
+
+TODO: Coming Soon
 
 ### Mapping the model metadata
-*TODO: Comming Soon*
 
-### Building the dimensional model Sql artefacts
-*TODO: Comming Soon*
+TODO: Coming Soon
 
-### Building the dimensional model Ssis load project
-*TODO: Comming Soon*
+### Building the dimensional model SQL artefacts
+
+TODO: Coming Soon
+
+### Building the dimensional model SSIS load project
+
+TODO: Coming Soon

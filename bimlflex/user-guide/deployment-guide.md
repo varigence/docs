@@ -119,13 +119,13 @@ When the project is opened in Visual Studio the project connection manager can b
 
 Extension Point files should be named using a consistent naming convention. These files form part of the source code for the project itself and need to be maintained as such. The contents of the Extension Point files are not maintained in the metadata database.
 
-## Step 7, build the projects in BimlStudio
+### Step 7, build the projects in BimlStudio
 
 Build command buttons
 
 ![Build Project](images/bimlflex-ss-v5-build-ui.png "Build Project")
 
-## Step 8, review the generated SSIS Projects
+### Step 8, review the generated SSIS Projects
 
 The default destination for the output is a folder called output in the project folder. In this case `C:\Varigence\Demo\Output\`
 
@@ -143,9 +143,9 @@ Once the build completes there will be a number of folders for the complete solu
 * PackageConfigurations, dtsConfig files for projects that use PackageConfigurations
 * Schema, SSIS projects to create all Schemas defined in the databases
 
-The EXT\_AWLT folder is named after the project name in the metadata and contains all packages defined in the project.
+The `EXT_AWLT` folder is named after the project name in the metadata and contains all packages defined in the project.
 
-In the EXT\_AWLT folder (and in all SSIS folders) are both the SSIS project with the individual dtsx files and a sub folder called bin that holds the compiled .ispac deployment file.
+In the `EXT_AWLT` folder (and in all SSIS folders) are both the SSIS project with the individual dtsx files and a sub folder called bin that holds the compiled .ispac deployment file.
 
 It is possible to deploy either the ispac file or the project to the catalog. Ispac files are great for automated deployment and command type approaches. Opening the project in Visual Studio allows manual, visual review, manual running of the process and manual deployment from Visual Studio to a destination Catalog.
 
@@ -173,7 +173,7 @@ From the command prompt, run `isdeploymentwizard.exe` from the `%ProgramFiles%\M
 
 For this example, to deploy the generated ispac quietly to the local server EDW folder run:
 
-```
+```batch
 C:\Program Files\Microsoft SQL Server\130\DTS\Binn>isdeploymentwizard /S /SP:"C:\Varigence\Demo\output\EXT_AWLT\bin\EXT_AWLT_Project.ispac" /DS:localhost /DP:"/SSISDB/EDW/Projects/"
 ```
 

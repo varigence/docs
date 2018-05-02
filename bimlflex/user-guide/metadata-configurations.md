@@ -1,3 +1,7 @@
+---
+uid: bimlflex-metadata-configurations
+title: Configurations
+---
 # Metadata and framework configurations in BimlFlex
 
 This document outlines the metadata and framework configurations available in BimlFlex.

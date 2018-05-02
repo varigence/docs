@@ -11,7 +11,7 @@ These templates provide the necessary ETL transformations and destination compon
 ## File Options
 
 There are several file format options available for file exports.
-Extension Points can override the behavior for custom requirements.
+Extension Points can override the behaviour for custom requirements.
 
 The Objects metadata spreadsheet in BimlFlex Excel contains the following settings for file formats.
 
@@ -49,7 +49,7 @@ Column and row delimiters and Last Column Delimiter
 
 ### Code Page
 
-The code page to use for the generateed file. This is a standard SSIS attribute. Reference the following Microsoft documentation for more information:
+The code page to use for the generated file. This is a standard SSIS attribute. Reference the following Microsoft documentation for more information:
 
 [MSDN - Code Page Identifiers](https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756.aspx)
 
@@ -90,7 +90,7 @@ The second metadata entity that a user will need to fill in is the Batch entity.
 
 ### Projects
 
-Below is a screen shot of an example project. Generally, it will follow the usual source to target metadata with a couple of differences. In this case, ensure that "Source -&gt; File Extract" is defined for the integration template. This is important as it indicates to the BimlFlex framework what the type of project is an its purpose.
+Below is a screen shot of an example project. Generally, it will follow the usual source to target metadata with a couple of differences. In this case, ensure that `Source -> File Extract` is defined for the integration template. This is important as it indicates to the BimlFlex framework what the type of project is an its purpose.
 
 ![Export to File Metadata](images/bimlflex-ss-v5-excel-file-export-projects-sample.png "Export to File Metadata")
 
@@ -128,7 +128,7 @@ A prerequisite for using the export to compressed file template is to have 7-Zip
 
 7-Zip can be downloaded from [http://www.7-zip.org](http://www.7-zip.org)
 
-## Adding Source to Zip File Metadata.
+## Adding Source to Zip File Metadata
 
 ### Connections
 
@@ -155,7 +155,7 @@ The second metadata entity that needs to be defined is the Batch entity. The Bat
 
 ### Projects
 
-The next step is to add a project. Below is a screenshot of an example project. It will generally follow the usual source to target metadata. In this case, ensure that "Source -&gt; Zip File Extract" is chosen for the integration template. This will indicate to BimlFlex that there are extra requirements around loading to a file and compressing it etc.
+The next step is to add a project. Below is a screenshot of an example project. It will generally follow the usual source to target metadata. In this case, ensure that `Source -> Zip File Extract` is chosen for the integration template. This will indicate to BimlFlex that there are extra requirements around loading to a file and compressing it etc.
 
 ![Metadata](images/bimlflex-ss-v5-excel-zip-file-export-projects-sample-1.png "Metadata")
 

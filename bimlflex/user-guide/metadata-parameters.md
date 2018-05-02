@@ -1,3 +1,7 @@
+---
+uid: bimlflex-metadata-parameters
+title: Parameters
+---
 # Parameters
 
 Parameters for load queries are added either as metadata in the Parameters sheet or via Extension Points. For high watermark delta loads and similar simple parameters adding the Parameter to the metadata will generate and include all required logic to the load process.

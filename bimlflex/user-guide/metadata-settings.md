@@ -1,14 +1,18 @@
+---
+uid: bimlflex-metadata-settings
+title: Settings
+---
 # Metadata and framework settings in BimlFlex
 
 This document outlines the metadata and framework settings available in BimlFlex.
 
-These  Settings drive the behavior of the BimlFlex product.
+These Settings drive the behavior of the BimlFlex product.
 
 By changing them, the produced artifacts can adapt to support requirements for file locations, naming conventions, data conventions etc.
 
 The Settings defaults are the Varigence recommended values and there is no need to change or configure unless there is a requirement to change specific behaviors. Align these settings with the organizations best practices and environmental requirements.
 
-The  Settings are available in the Settings sheet in the BimlFlex Excel Add-in.
+The Settings are available in the Settings sheet in the BimlFlex Excel Add-in.
 
 ![Settings Sheet](images/bimlflex-ss-v5-excel-settings-sheet.png "Settings Sheet")
 

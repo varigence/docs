@@ -1,6 +1,6 @@
 # Microsoft SQL Server Master Data Services (MDS) integration
 
-TODO: Complete
+TODO: To Complete
 
 Microsoft SQL Server Master Data Services (MDS) is an enterprise data management tool included in the Enterprise Edition of SQL Server.
 

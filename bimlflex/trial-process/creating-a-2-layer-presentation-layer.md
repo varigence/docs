@@ -6,7 +6,7 @@ TODO: Coming Soon
 
 ## Supporting BimlFlex Documentation
 
-TODO: Coming Soon
+@bimlflex-user-guide
 
 ## Creating a 2 layer Dimensional Model in BimlFlex
 

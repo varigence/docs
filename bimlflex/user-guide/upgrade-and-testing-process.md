@@ -22,7 +22,7 @@ Other components are available on request from the BimlFlex Enterprise support t
 
 A current project with existing Extension Point script files and existing metadata needs planning and consideration before upgrading.
 
-A new version of BimlFlex and its components can include fixes for any issues identified as well as new functionality. This is detailed in the [release notes](release-notes.md) that accompany the new version.
+A new version of BimlFlex and its components can include fixes for any issues identified as well as new functionality. This is detailed in the @bimlflex-release-notes that accompany the new version.
 
 ### 1. Do a database backup
 

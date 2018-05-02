@@ -1,14 +1,12 @@
 # Configuration of BimlFlex
 
-[Back to overview](https://varigence.com/Documentation/BimlFlex/Article/Trial+Process+Overview)
-
 ## Supporting Videos
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/yMDi0RaB9G8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+![Configurations and Settings](https://www.youtube.com/watch?v=yMDi0RaB9G8)
 
 ## Supporting BimlFlex Documentation
 
-- [Supporting BimlFlex Documentation](../user-guide/configurations.md)
+@bimlflex-metadata-configurations
 
 ## Configurations and Settings in BimlFlex
 
@@ -31,11 +29,9 @@ The Configurations sheet contains the BimlFlex configurations for core metadata.
 
 The Settings Sheet contains configurable settings such as naming conventions used.
 
-For the Trial it is recommended to update the Hash Algorithm to match the Hashbytes function in Sql:
+For the Trial it is recommended to update the Hash Algorithm to match the Hashbytes function in SQL.
 
-Update the following setting in the settings sheet to Y:
-
-`UseSqlCompatibleHash = Y`
+Update the `UseSqlCompatibleHash` setting in the settings sheet to `Y`
 
 Once the value is updated, click `Set Current Sheet` on the BimlFlex Ribbon Tab to set the value in the database.
 

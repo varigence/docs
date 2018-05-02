@@ -57,7 +57,7 @@ Configuration Sheets
 * Data Type Mappings
 * Versions
 
-### Metadata Entites
+### Metadata Entities
 
 Each sheet contains columns and rows of metadata used to define entities and relationships. Managing the metadata and building the DataWarehouse is covered in the Implementation Guides and Configurations documentation.
 
@@ -133,7 +133,7 @@ Here you can view
 * licensed user
 * product key
 
-The `Change Product Key` will allow updating and chaign of the current product key.
+The `Change Product Key` will allow changing the current product key.
 
 The `Copy Product Information` copies product information to the clipboard. This allows a quick way to share information about the version of BimlFlex Excel Add-in if required.
 

@@ -2,11 +2,11 @@
 
 ## Supporting Videos
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/hGLYrPqOPwg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+![Applying Data Type Mappings](https://www.youtube.com/watch?v=hGLYrPqOPwg?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
-- [BimlFlex Documentation](../user-guide/index.md)
+@bimlflex-user-guide
 
 ## Data Type Mappings
 

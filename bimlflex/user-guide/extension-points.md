@@ -6,12 +6,12 @@ Extension Points have four key components:
 
 * Extension Point directives that control what is injected and where
 * Inheritance options code that defines any object inheritance
-* Custom code that implements the required behavior
-* Input and output path variables for connecting the Extension Point in the Ssis package.
+* Custom code that implements the required behaviour
+* Input and output path variables for connecting the Extension Point in the SSIS package.
 
 ![Extension Points Sample Code](images/bimlflex-ss-v5-extension-points-sample-code.png "Extension Points Sample Code")
 
-Extension Points are created in BimlStudio. In the BimlFlex Ribbon tab there are several Extension Point areas with a large number of different Extension Points available. Each Extension Point template will generate a code block that targets a specific point of the project. 
+Extension Points are created in BimlStudio. In the BimlFlex Ribbon tab there are several Extension Point areas with a large number of different Extension Points available. Each Extension Point template will generate a code block that targets a specific point of the project.
 
 ![BimlFlex Ribbon UI](images/bimlflex-ss-v5-bimlflex-ui-tab.png "BimlFlex Ribbon UI")
 
@@ -33,7 +33,7 @@ It is also possible to completely override the main container with an Extension 
 
 ## Extension Point Directives
 
-Special attention should be paid when editing the directives of an extension point because a user must have them correctly defined before they will be able to test the output of their biml code. The purpose of a directive is to indicate to the compiler exactly what the purpose of the Biml code is that you are writing and where it should be injected. To write a directive simply insert the appropriate line of code between the following tags <#@ #>
+Special attention should be paid when editing the directives of an extension point because a user must have them correctly defined before they will be able to test the output of their Biml code. The purpose of a directive is to indicate to the compiler exactly what the purpose of the Biml code is that you are writing and where it should be injected. To write a directive simply insert the appropriate line of code between the following tags <#@ #>
 
 The following table outlines the attributes of these directives.
 
@@ -60,7 +60,6 @@ Below are two of the required directives that need to be in place in order to us
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper"  #>
 <#@ import namespace="Varigence.Biml.Flex"  #>
 ```
-```
 
 A small block of BimlScript code will enable us to gain access to the items we need. A BimlScript is a piece of C\# that is injected into a Biml file that gives us the ability to use Biml in a programmatic way. We will use C# methods to create variables that contain the objects and information we need.
 
@@ -70,13 +69,13 @@ First, we will need to write the first line that will allow us to obtain a copy 
 <# CustomOutput.ObjectInherit = true; #>
 ```
 
-Next, we will declare the variables we need to hold our information and use methods to obtain the objects of interest in this example. First, create a variable by using the var keyword and then giving the variable an appropriate name. In this example, we will get the source connection of a given table and add it as the value of the variable. Because we have already added the table as a property in our directive we can reference it directly.
+Next, we will declare the variables we need to hold our information and use methods to obtain the objects of interest in this example. First, create a variable by using the `var` keyword and then giving the variable an appropriate name. In this example, we will get the source connection of a given table and add it as the value of the variable. Because we have already added the table as a property in our directive we can reference it directly.
 
 ```biml
 <# var sourceConnection = EntityHelper.GetSourceConnection(table); #>
 ```
 
-From here if we want to pull out any of the information about the object, we can insert it directly into our biml code using the following tags: <#= #>. This will take the value stored in any variable, convert it to a string and insert in place of where the original BimlScript tags were.
+From here if we want to pull out any of the information about the object, we can insert it directly into our Biml code using the following tags: <#= #>. This will take the value stored in any variable, convert it to a string and insert in place of where the original BimlScript tags were.
 
 For example:
 
@@ -94,7 +93,7 @@ If you are replacing or modifying a task at the end of a data flow or control fl
 
 We will see more examples of where we need to declare an output/input path variable later on.
 
-```biml
+```Biml
 <# CustomOutput.OutputPathName = @"TaskName/SequenceContainerName"; #>
 ```
 

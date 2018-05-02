@@ -6,11 +6,11 @@ This guide provides information on the Accelerator but assumes a sound understan
 
 ### Watch Recordings
 
-#### 04.BimlFlex - Data Vault Accelerator
+#### 04. BimlFlex - Data Vault Accelerator
 
-In this session, we discuss the various modeling and configuration options available with BimlFlex.
+In this session, we discuss the various modelling and configuration options available with BimlFlex.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/opwapU7HZMM?rel=0" frameborder="0" allowfullscreen></iframe>
+![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=opwapU7HZMM?rel=0&autoplay=0)
 
 ### Introduction to the Accelerator
 
@@ -110,19 +110,19 @@ Iterating through the metadata and updating the model to better support the targ
 
 If there is a need to update the model and rerun the preview, it can be done at any time. Once the metadata from the preview has been published, all metadata will be available in the Excel metadata editor and available for direct manipulation there. The pattern of tweaking the Metadata to fit the business process and target model will be repeated however many times needed before publishing.
 
-Note that the accelerator will not resurface any entities already accelerated and marked as excluded or deleted. To see these entites, include them in the project by removing the excluded/deleted flag.
+Note that the accelerator will not resurface any entities already accelerated and marked as excluded or deleted. To see these entities, include them in the project by removing the excluded/deleted flag.
 
 ## Updating the metadata to meet requirements
 
 In the Excel-based Metadata Editor, there are numerous options for manipulating the source metadata so that the Accelerator will produce the desired Data Vault model. Some of the common requirements include:
 
-* Choosing the Business Key used for the Hubs. By analysing business processes and the source data it is possible to find EWBK’s that aren’t the technical source keys
+* Choosing the Business Key used for the Hubs. By analysing business processes and the source data it is possible to find EWBK's that aren't the technical source keys
 * Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For information, such as addresses there is normally no need to maintain complex relationships from the source. An address is just an attribute of the entity with a location
 * Adjusting the grain in UOW’s so that the correct Hubs are included in Links
 * Separating out data into different Satellites based on rate of change, storage requirements or similar
 * Reviewing Driving Key relationships for Links where there is no one FK relationship in the source
 
-## The Analyze Rules for BimlFlex Accelerator
+## The Analyse Rules for BimlFlex Accelerator
 
 There are a set of rules applied through the Accelerator to make it perform what it does.
 
@@ -142,11 +142,11 @@ Tables that don't fit any of the categories above are going to be Hub source tab
 
 ![Accelerator UI](images/bimlflex-ss-v5-accelerator-ui-tab-group.png "Accelerator UI")
 
-If the source doesn’t have relationships defined, such as flat files, these needs to be added to the metadata for the Accelerator to derive the table types.
+If the source doesn't have relationships defined, such as flat files, these needs to be added to the metadata for the Accelerator to derive the table types.
 
 ## Acceleration
 
-All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the [configuration](configurations.md).
+All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the @bimlflex-metadata-configurations
 
 ### Accelerate Satellites
 
@@ -170,7 +170,7 @@ All created Links will have an effectiveness Link Satellite added.
 
 Any attributes left in the source Link Table will be added to the default Link Satellite. They can be separated out into their own Satellites if needed using the ModelGrouping override.
 
-It’s worth noting that if there are source system applied rules for relationships (such as a product can only be in one category) they will need to be specified as Driving Keys in the Accelerated Link unless the Accelerator can derive the behavior from relationship constraints.
+It’s worth noting that if there are source system applied rules for relationships (such as a product can only be in one category) they will need to be specified as Driving Keys in the Accelerated Link unless the Accelerator can derive the behaviour from relationship constraints.
 
 For Hub tables that have Foreign Key relationships defined the Accelerator will generate Links for each Foreign Key between the defined Business Keys. These Links will need to be reviewed as the UOW they describe might not align with the business process.
 

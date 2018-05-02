@@ -1,3 +1,7 @@
+---
+uid: bimlflex-developer-installation
+title: Developer Installation
+---
 # Developer Installation
 
 Developer installations provide the complete developer and SSIS generation environment for building BimlFlex solutions.
@@ -20,7 +24,7 @@ The BimlTools Setup installation file contains the BimlStudio application.
 
 Run the BimlTools installation and choose what options to install.
 
-To be able to build out 64 b packages the corresponding 64 b Ssis components needs to be available (e.g. through a local Sql Server installation). If only the 32 b SSDT BI/Visual Studio development tools are installed BimlStudio will only be able to build out in 32 b. To be able to run the 64 b BimlStudio version and still build successfully, install both BimlStudio versions and choose to build 32 b from the 64 b version.
+To be able to build out 64 b packages the corresponding 64 b SSIS components needs to be available (e.g. through a local SQL Server installation). If only the 32 b SSDT BI/Visual Studio development tools are installed BimlStudio will only be able to build out in 32 b. To be able to run the 64 b BimlStudio version and still build successfully, install both BimlStudio versions and choose to build 32 b from the 64 b version.
 
 ![Installation Animation](images/bimlstudio-ani-v5-install-varigence-bimlstudio-2017.1-web.gif)
 

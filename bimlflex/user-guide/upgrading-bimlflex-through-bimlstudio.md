@@ -1,3 +1,7 @@
+---
+uid: bimlflex-upgrade
+title: Upgrading BimlFlex
+---
 # Upgrading BimlFlex through BimlStudio
 
 The BimlFlex product and framework is Bundled as an addon to the BimlStudio. A developer uses BimlStudio with a BimlFlex project type to create data warehousing solutions with BimlFlex.

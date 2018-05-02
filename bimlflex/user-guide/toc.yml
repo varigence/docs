@@ -1,8 +1,3 @@
-- name: Overview
-  items:
-  - name: Release Notes
-    href: release-notes.md
-
 - name: Installation and configuration
   items:
   - name: Software and Hardware Requirements
@@ -21,6 +16,31 @@
     href: support-process.md
   - name: Support Utility Application
     href: support-utility-application.md
+
+- name: Metadata and Settings
+  items:
+  - name: Connections
+    href: metadata-connections.md
+  - name: Batches
+    href: metadata-batches.md
+  - name: Projects
+    href: metadata-projects.md
+  - name: Objects
+    href: metadata-objects.md
+  - name: Objects
+    href: metadata-objects.md
+  - name: Attributes
+    href: metadata-attributes.md
+  - name: Parameters
+    href: metadata-parameters.md
+  - name: Configurations
+    href: metadata-configurations.md
+  - name: Settings
+    href: metadata-settings.md
+  - name: Data Type Mappings
+    href: metadata-datatypemappings.md
+  - name: Versions
+    href: metadata-versions.md
 
 - name: Implementation guides
   items:
@@ -43,20 +63,12 @@
 
 - name: Supporting materials for configurations, extensions, orchestration
   items:
-  - name: Configurations
-    href: configurations.md
-  - name: Settings
-    href: settings.md
   - name: Orchestration
     href: orchestration.md
-  - name: Parameters
-    href: parameters.md
   - name: Extension Points
     href: extension-points.md
   - name: Excel Add-in
     href: excel-add-in.md
-  - name: Data Type Mappings
-    href: data-type-mappings.md
   - name: Object Inheritance
     href: object-inheritance.md
   - name: Business Keys and Relationships

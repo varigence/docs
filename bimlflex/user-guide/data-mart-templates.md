@@ -16,7 +16,7 @@ The metadata required to build the Data Mart is similar to any other source to s
 
 ### Common Architectures and The Data Mart as a Whole
 
-This implementation guide covers the modeling and implementation of star schema facts and dimensions. It doesn’t cover Kimball architecture as a concept. Best practices and basic dimensional implementation constructs, like date and time dimensions are required but considered out of scope for this documentation.
+This implementation guide covers the modelling and implementation of star schema facts and dimensions. It doesn't cover Kimball architecture as a concept. Best practices and basic dimensional implementation constructs, like date and time dimensions are required but considered out of scope for this documentation.
 
 In terms of common architectures, this document begins as the point where a user wants to load the Data Mart and the previous layers of their architecture have already been determined. However, it should be stated that users can implement almost any standardised architectures.
 
@@ -52,7 +52,7 @@ Note that the pattern shows that the orchestration components are applied. More 
 
 This pattern is not too dissimilar to a source to staging pattern. Key differences are that while the data is being processed by the data flow task, surrogate keys are being handled.
 
-In the control flow, note that the final step is a SQL merge task. The merge take the incoming rows that have been loaded into the Fact’s staging table and perform on final comparison before either inserting or updating the target Fact table.
+In the control flow, note that the final step is a SQL merge task. The merge take the incoming rows that have been loaded into the Fact's staging table and perform on final comparison before either inserting or updating the target Fact table.
 
 #### BimlFlex Dimension Loading Pattern
 
@@ -70,7 +70,7 @@ The particulars of the dimension loading pattern are that whether the data is ty
 
 **\[DCV – Transform Datatypes\]** This component will be inserted into the ETL structure if a user specifies to convert the data types of the incoming columns before the rows are loaded into their destination table.
 
-**\[DC – Add Alternate Columns\]** Add alternate columns component will include any extra derived columns in the data flow. An example of this would be defining both a SqlExpression and SsisExpression in the metadata combined with providing a ColumnAlias will bring the column into the pipeline as the alias name. `[DC – Add Derived Columns <SolveOrder>]` will do the same but taking in consideration the solve order of the columns.
+**\[DC – Add Alternate Columns\]** Add alternate columns component will include any extra derived columns in the data flow. An example of this would be defining both a `SqlExpression` and `SsisExpression` in the metadata combined with providing a `ColumnAlias` will bring the column into the pipeline as the alias name. `[DC – Add Derived Columns <SolveOrder>]` will do the same but taking in consideration the solve order of the columns.
 
 **\[LKP – DIM Foreign Key\]** this component performs a lookup on the Dim record’s foreign keys in the corresponding tables that the Data Mart is using
 
@@ -81,7 +81,7 @@ Next, there are two custom components that take the hash value of the dimension 
 
 **\[LKP – DIM Foreign Key\]** This component will perform a look up to see if the matching fact record for this dimension exists in the corresponding table in the Data Mart.
 
-**\[DC – Surrogate Defaults\]** This derived column component will add a column to store a foreign key populating it with a foreign key if it hasn’t received a foreign key from the previous lookup component.
+**\[DC – Surrogate Defaults\]** This derived column component will add a column to store a foreign key populating it with a foreign key if it hasn't received a foreign key from the previous lookup component.
 
 **\[CSPL – Determine CDC\]** Here there is a check if an incoming row is Type1 or Type2. If it's determined that a row is of a particular type, then the method of CDC and insertion will be different in the
 following components
@@ -116,7 +116,7 @@ The Project can be defined once the Connection and the Batch has been defined.
 
 There are a few options for Project metadata and how a Data Mart project is loaded. These options are outlined in the table below.
 
-The project architecture and the source for the Data Mart depends on the solution architecture. If Data Vault methodology is being used, the source wwill be a connection pointing at the Data Vault. If a two tier implementation is used (Source to Staging to Data Mart), this connection is the staging database connection.
+The project architecture and the source for the Data Mart depends on the solution architecture. If Data Vault methodology is being used, the source will be a connection pointing at the Data Vault. If a two tier implementation is used (Source to Staging to Data Mart), this connection is the staging database connection.
 
 |Attribute Name    | Example Project Attributes |
 |---------------   |----------------------------|
@@ -154,7 +154,7 @@ Below is an example of the columns a user would define in the customer dimension
 
 Note that the columns are fairly similar but they have been set in such a way that the business key in the source table will line up with the CustomerCode column and the primary key of the source will be the CustomerKey of the dimension table.
 
-This ia one pattern avaialble when modeling star schemas. Each business key in source becomes the `Code` column in the Data Mart and each Data Mart table will include a unique integer key which is the `Key` column. The keys used can either be sequence numbers from Identity columns, or for Data Vault sources, the Hashed Surrogate Keys generated in the Data Vault entities or Bridge and Point In Time tables.
+This is one pattern available when modelling star schemas. Each business key in source becomes the `Code` column in the Data Mart and each Data Mart table will include a unique integer key which is the `Key` column. The keys used can either be sequence numbers from Identity columns, or for Data Vault sources, the Hashed Surrogate Keys generated in the Data Vault entities or Bridge and Point In Time tables.
 
 Once Source and Target metadata is available the mapping between them can be completed.
 
@@ -248,9 +248,9 @@ Refresh the metadata in BimlStudio to review, build and test.
 #### Implementing Business Rules
 
 In terms of implementing business rules, a user can apply business rules either in the business vault or in the presentation layer depending on the overall architecture. In terms of the object type to contain these
-rules, they can either be implemented in views or in extension points. Fortunately, in BimlFlex this doesn’t change the source to target template style in any significant way. If a user chooses to implement business rules in views, the object type of the source object can change a source to be a variety of items.
+rules, they can either be implemented in views or in extension points. Fortunately, in BimlFlex this doesn't change the source to target template style in any significant way. If a user chooses to implement business rules in views, the object type of the source object can change a source to be a variety of items.
 
-The decision as to where to implement business rules doesn’t necessarily change the process of implementation in BimlFlex.
+The decision as to where to implement business rules doesn't necessarily change the process of implementation in BimlFlex.
 
 Below is an example of the variety of source types available, note that view or regular tables are acceptable.
 

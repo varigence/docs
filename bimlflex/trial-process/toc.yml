@@ -4,8 +4,7 @@
   href: installing-bimlflex.md
 - name: Installing SSIS Components
   href: installing-custom-ssis-components.md
-- name: Update and Configure BimlFlex
-  href: using-the-utility-application-to-update-and-configure-bimlflex.md
+
 - name: Creating a BimlFlex Project
   href: creating-and-configuring-a-bimlflex-project.md
 - name: Creating the Sample Metadata
