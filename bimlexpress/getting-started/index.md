@@ -12,7 +12,7 @@ BimlExpress provides the ability to create packages from Biml, an XML-based lang
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-@biml-language-reference]
+@biml-language-reference
 
 @biml-api-reference
 
