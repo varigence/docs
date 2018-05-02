@@ -2,31 +2,28 @@
 
 Use the actions editor to view and edit actions for the selected cube.
 
-![alt text](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action1.png "Action Designer")
+![Action Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action1.png "Action Designer")
 
-For any action, input its name and invocation type directly in its data grid 
-row. Specify an action's Application, Description, Caption, and Condition in the 
+For any action, input its name and invocation type directly in its data grid row. Specify an action's Application, Description, Caption, and Condition in the 
 row's details area.
 
-![alt text](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action2.png "Actions")
+![Actions](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action2.png "Actions")
 
-To select drillthrough columns in drillthrough actions, check an attribute or measure to select it. To 
-order the selected items, use drag and drop within the Order Selected Items list 
-box.
-![alt text](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action3.png "Drillthrough Actions")
+To select drillthrough columns in drillthrough actions, check an attribute or measure to select it. To order the selected items, use drag and drop within the Order Selected Items list box.
 
-For report actions, add a format parameter and supply a value in its data 
-grid row. Additionally, add parameters and enter a MDX expression for each.
+![Drillthrough Actions](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action3.png "Drillthrough Actions")
 
-![alt text](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action5.png "Report Actions")
+For report actions, add a format parameter and supply a value in its data grid row. Additionally, add parameters and enter a MDX expression for each.
+
+![Report Actions](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action5.png "Report Actions")
 
 For standard actions, supply an MDX expression in the large text editor.
 
-![alt text](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action4.png "Standard Actions")
+![Standard Actions](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action4.png "Standard Actions")
 
 The action editor's ribbon provides the following functions:
 
-![alt text](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action6.png "Action Ribbon")
+![Action Ribbon](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Action6.png "Action Ribbon")
 
 Button | Description
 --- | ---
