@@ -59,11 +59,11 @@
 
 ### Biml Language
 
-- See [Biml Release Notes](../biml/biml-release-notes.md)
+- See @biml-release-notes
 
 ### Biml API
 
-- See [Biml Release Notes](../biml/biml-release-notes.md)
+- See @biml-release-notes
 
 ### Database Providers and Type Mappings
 
@@ -102,13 +102,10 @@
 
 ### Biml Validator
 
-- Fixed issue where validator thread would be interrupted if a table had multiple keys with the same
-name but no assigned schema.
-- Added a validator for AnalysisServicesProcessing task to ensure that the correct mix of properties is
-specified for each type of processing job.
+- Fixed issue where validator thread would be interrupted if a table had multiple keys with the same name but no assigned schema.
+- Added a validator for AnalysisServicesProcessing task to ensure that the correct mix of properties is specified for each type of processing job.
 - Updated SsisEmitter dataflow type mismatch error to actually list the mismatched types.
-- Fixed an issue where user generated errors/warnings/notifications would not show up on initial project
-load in BimlStudio.
+- Fixed an issue where user generated errors/warnings/notifications would not show up on initial project load in BimlStudio.
 
 ### GetBiml Updates
 
@@ -124,8 +121,7 @@ load in BimlStudio.
 
 ### SSIS Emission
 
-- Added support for SSIS annotations to packages, containers, event handlers, and data flows for SSIS
-2012 and higher.
+- Added support for SSIS annotations to packages, containers, event handlers, and data flows for SSIS 2012 and higher.
 - Added support for dataflow and controlflow path annotations for SSIS 2012 and higher.
 - Added error for SSIS 2016 and higher to not use the new virtual column names for errors: 'ErrorCode - Description', and 'ErrorColumn - Description'.
 - Fixed an issue where BalancedDataDistributor output paths were not being placed into an exclusion group.
