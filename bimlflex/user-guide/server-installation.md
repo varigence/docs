@@ -1,6 +1,6 @@
 # Server Installation
 
-For SSIS Server installations, the Varigence Custom SSIS components used in BimlFlex generated SSIS packages are required to be availalbe on the server.
+For SSIS Server installations, the Varigence Custom SSIS components used in BimlFlex generated SSIS packages are required to be available on the server.
 
 This installation is required for SQL/SSIS Servers that run BimlFlex created packages. These custom components are also required for opening and running the generated packages in Visual Studio.
 

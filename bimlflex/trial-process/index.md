@@ -77,7 +77,7 @@ Source metadata management and modelling is done through the BimlFlex Excel base
 
 #### Building databases, tables and SSIS packages for Source to Staging
 
-Once the metadata from the source has been added to the BimlFlex metadata repository it is possible to use BimlFlex to build the required Staging, Persistent Staging databases and tables as well as generating the SSIS project to load the Source Data to the data warehouse. Trialing this at this stage allows the validation that the end to end process for SSIS works as expected.
+Once the metadata from the source has been added to the BimlFlex metadata repository it is possible to use BimlFlex to build the required Staging, Persistent Staging databases and tables as well as generating the SSIS project to load the Source Data to the data warehouse. Trialling this at this stage allows the validation that the end to end process for SSIS works as expected.
 
 [Building Source to Staging](building-databases-tables-and-SSIS-packages-for-source-to-staging.md)
 
@@ -89,7 +89,7 @@ The BimlFlex framework behaviour is controlled by a comprehensive set of configu
 
 #### Modelling of source metadata
 
-Most automation features in BimlFlex are built on modelling the metadata to provide the Data Warehouse required. BimlFlex allows a number of modelling approaches and scenarios to easily build the Data Warehouse to the specification desired. The trial illustrates this by applying modelling to the source metadata. Depending on the architecture chosen the staging layer is prepared for either Data Vault loads or data mart loads the configuration and structures of the staging area will differ slightly. Data Vault uses preprocessing to add hashed keys in to the staging layer.
+Most automation features in BimlFlex are built on modelling the metadata to provide the Data Warehouse required. BimlFlex allows a number of modelling approaches and scenarios to easily build the Data Warehouse to the specification desired. The trial illustrates this by applying modelling to the source metadata. Depending on the architecture chosen the staging layer is prepared for either Data Vault loads or data mart loads the configuration and structures of the staging area will differ slightly. Data Vault uses pre-processing to add hashed keys in to the staging layer.
 
 [Modelling of Source Metadata](modelling-of-source-metadata.md)
 [Applying Data Type Mappings](applying-data-type-mappings.md)

@@ -6,7 +6,7 @@
 
 ## Supporting BimlFlex Documentation
 
-- [Initial Setup and Cofiguration](../user-guide/initial-setup-and-configuration.md)
+- [Initial Setup and Configuration](../user-guide/initial-setup-and-configuration.md)
 
 ## Opening the Excel metadata editor
 

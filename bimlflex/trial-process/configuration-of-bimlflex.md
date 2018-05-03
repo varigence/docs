@@ -29,7 +29,7 @@ The Configurations sheet contains the BimlFlex configurations for core metadata.
 
 The Settings Sheet contains configurable settings such as naming conventions used.
 
-For the Trial it is recommended to update the Hash Algorithm to match the Hashbytes function in SQL.
+For the Trial it is recommended to update the Hash Algorithm to match the `HASHBYTES()` function in SQL.
 
 Update the `UseSqlCompatibleHash` setting in the settings sheet to `Y`
 

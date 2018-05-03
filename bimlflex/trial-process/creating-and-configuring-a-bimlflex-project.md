@@ -13,7 +13,7 @@
 The BimlFlex project is comprised of the project files on disk that BimlStudio interacts with and the metadata stored in the BimlFlex metadata repository database.
 
 The project has a connection defined to the Metadata Repository to use. The default database name is BimlFlex and that database was created using the utility application in the previous step.
-The first time the project is opened it needs to be configured for the Sql Server version used and Ssis deployment method.
+The first time the project is opened it needs to be configured for the SQL Server version used and SSIS deployment method.
 Once the project is configured it is ready to be used for data modelling and Data Warehouse generation.
 
 ## Detailed Steps
@@ -44,15 +44,15 @@ Define the connection and login information to the BimlFlex metadata database to
 
 In the BimlFlex configuration, create a new Customer and name it `BimlFlex Trial Project`
 
-### Configure BimlStudio to build for Sal Server 2016 Ssis
+### Configure BimlStudio to build for Sal Server 2016 SSIS
 
-Right-click the project name `BimlFlex Trial Project.mst` in the logical view and choose properties to display the BimlStudio project properties. Update the Sql Server version setting to build out to Sql Server 2016.
+Right-click the project name `BimlFlex Trial Project.mst` in the logical view and choose properties to display the BimlStudio project properties. Update the SQL Server version setting to build out to SQL Server 2016.
 
 Click the `Save All` button or menu option to save the metadata and project settings.
 
 ### Restart BimlStudio
 
-BimlStudio needs to be restarted once the customer metadata settings and Ssis configuration has been updated. When restarted the configurations are active in BimlStudio.
+BimlStudio needs to be restarted once the customer metadata settings and SSIS configuration has been updated. When restarted the configurations are active in BimlStudio.
 
 ### Open and configure BimlFlex Excel Metadata Editor
 

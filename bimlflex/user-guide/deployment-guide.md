@@ -56,10 +56,10 @@ This project will have a single integration to read from the AdventureWorks LT s
 The approach assumes a SQL Server version that supports SSIS Catalog (2012-) and in the document SQL Server 2016 is used.
 
 1. Before deployment, a Catalog must be available in the target SQL Server instance.
-2. Once the required metadata is created BimlStudio will build the SSIS Project.
-3. Once the build is successful it will be deployed to the SSIS Catalog.
-4. Once deployed an environment will be used to override connection strings
-5. Once configured SQL Server agent will be used to schedule a batch for a specific environment, using the environments connection strings.
+1. Once the required metadata is created BimlStudio will build the SSIS Project.
+1. Once the build is successful it will be deployed to the SSIS Catalog.
+1. Once deployed an environment will be used to override connection strings
+1. Once configured SQL Server agent will be used to schedule a batch for a specific environment, using the environments connection strings.
 
 ## Create and build a Demo project
 

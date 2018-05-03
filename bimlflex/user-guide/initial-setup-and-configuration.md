@@ -120,6 +120,11 @@ BimlStudio project options include settings such as the target SQL Server and SS
 
 ### Metadata configuration
 
-The Configurations tab in the Metadata Editor contains configuration options for the generation and behavior of the project. This configuration process is described in more detail in the [Configurations documentation](configurations.md).
+The Configurations and Settings sheets in the Metadata Editor contains  options for the generation and behaviour of the project.
+
+This is described in more detail in:
+
+* @bimlflex-metadata-configurations
+* @bimlflex-metadata-settings
 
 ![Metadata Configurations sheet](images/bimlflex-ss-v5-excel-configurations-sheet.png "Metadata Configurations sheet")
