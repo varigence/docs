@@ -1,6 +1,6 @@
 # Varigence Documentation
 
-Product documentation contents is located in their respecitve folder.
+Product documentation contents is located in their respective folder.
 
 ## DocFX documentation site
 
