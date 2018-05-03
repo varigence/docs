@@ -1,0 +1,1781 @@
+﻿
+<!--
+# Copyright (C) 2015 Varigence, Inc.
+#
+# Licensed under the Varigence IP Framework Agreement, Version 1.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License by contacting support@varigence.com.
+-->
+<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+	<Metadata>
+		<MetadataModel Name="BimlFlexModel">
+			<Annotations>
+				<Annotation AnnotationType="Description">xxxxx</Annotation>
+			</Annotations>
+			<Entities>
+				<Entity Name="Versions" UiEditorNameComponents="Version">
+					<Annotations>
+						<Annotation AnnotationType="Description">Provide selected Customer and Version details to metadata instance</Annotation>
+					</Annotations>
+					<Properties>
+						<Property Name="CustomerUID" DataType="String" Length="50" Category="Version" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Selected Customer Guid</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Customer" DataType="String" Length="100" Category="Version" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Selected Customer Name</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="VersionUID" DataType="String" Length="50" Category="Version" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Selected Version Guid</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsCurrent" DataType="String" Length="100" Category="Version" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">XXXX</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Comments" DataType="String" Length="100" Category="Version" >
+							<Annotations>
+								<Annotation AnnotationType="Description">XXXX</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+				</Entity>
+				<Entity Name="Connections" UiEditorNameComponents="Connection">
+					<Annotations>
+						<Annotation AnnotationType="Description">Configure connection attributes for both Databases and Files. The ConnectionType attribute allows you to define any of the supported types however some may require Extension Point overrides. For a full list of supported types follow this link. https://www.varigence.com/Documentation/Language/ChildCollection/AstRootNode/Connections</Annotation>
+					</Annotations>
+					<Properties>
+						<Property Name="ConnectionString" DataType="String" Length="500" Category="Connection" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Connection string to be used for this connection. Please note that the ConnectionString will only be parsed by BimlStudio when you build the solution or manually test it.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Catalog" DataType="String" Length="128" Category="Connection" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Database name that the connection points to. When defining an Excel file this will be the worksheet name. If you have an environment where the production database is named differently to other environments we recommend using the production name. Example: AdventureWorks (Production) vs AdventuerWorks_DEV (Development)</Annotation>
+							</Annotations>
+						</Property>
+						<!-- Removed because this was used to eliminate duplicates that is now handled in the code.
+						<Property Name="IsDatabase" DataType="AnsiString" Length="1" Category="Connection" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if this connection catalog will be modelled as a database in BimlStudio. Set this if you are modelling any objects associated with the connection. Normally this is not set for Source or framework related connections like BimlCatalog.</Annotation>
+							</Annotations>
+						</Property>
+						-->
+						<Property Name="PersistHistory" DataType="AnsiString" Length="1" Category="Connection" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Determines whether to track history when defining a connection with an IntegrationStage = "PSA" for Persistent Staging Area. If this is not set and a PSA connection is configured then the database becomes a ODS without history. This is very useful to create an ODS by merely importing the source metadata.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Server" DataType="String" Length="128" Category="Connection">
+							<Annotations>
+								<Annotation AnnotationType="Description">Name of the host server the connection points to. Generally this is omitted as defining it in the ConnectionString is sufficient. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Provider" DataType="String" Length="500" Category="Connection">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defined the type of connection provider used in this connection. When using ADO.NET connections other than MSSQL this is a required field.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="RecordSource" DataType="AnsiString" Length="50" Category="Source">
+							<Annotations>
+								<Annotation AnnotationType="Description">Abbreviation to uniquely identify the source system. This attribute is compulsory for all defined IntegrationStage = "SRC"(source). Required attribute for modelling Data Vault in particular. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="StartDelimiter" DataType="AnsiString" Length="1" Category="Source" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Derived value from [meta].[SystemType] table. The column starting delimiter used by the DBMS when performing a query. For example in MYSQL this would be "`". When omitted the default for MSSQL is applied "[".</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="EndDelimiter" DataType="AnsiString" Length="1" Category="Source" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Derived value from [meta].[SystemType] table. The column ending delimiter used by the DBMS when performing a query For example in MYSQL this would be "`". When omitted the default for MSSQL is applied "]".</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IgnoreSchema" DataType="AnsiString" Length="1" Category="Source" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Derived value from [meta].[SystemType] table. If this is set to "Y" then the source query will ommit the schema.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlHashPattern" DataType="String" Length="500" Category="SqlPattern" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the SQL Hash Pattern used by the SQL ELT pattern.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlStringExtractPattern" DataType="String" Length="500" Category="SqlPattern" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the SQL Pattern used by the extract process to standardise strings.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlStringLoadPattern" DataType="String" Length="500" Category="SqlPattern" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the SQL Pattern used by the load process to standardise strings.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlDateExtractPattern" DataType="String" Length="200" Category="SqlPattern" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the SQL Pattern used by the extract process to standardise dates.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlDateLoadPattern" DataType="String" Length="200" Category="SqlPattern" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the SQL Pattern used by the load process to standardise dates.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlStringDataType" DataType="String" Length="200" Category="SqlPattern" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the SQL DataType for Strings used by the load process to standardise strings.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlAnsiStringDataType" DataType="String" Length="200" Category="SqlPattern" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the SQL DataType for AnsiStrings used by the load process to standardise strings.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SystemType" DataType="AnsiString" Length="50" Category="Connection" PermittedValueSetName="SystemTypes" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the connections system type. Depending on the type the relevant source and target components will be chosen. Below is a list of the current possible SystemTypes. For a full up to date list please refer to the [meta].[SystemType] table in the [BimlFlex] database.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ConnectionType" DataType="AnsiString" Length="50" Category="Connection" PermittedValueSetName="ConnectionTypes" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the connections type. This list will mirror the different types of connections that can be defined in Biml. Below is a list of the current possible ConnectionTypes. The list should be extended to include PDW.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IntegrationStage" DataType="AnsiString" Length="50" Category="Connection" PermittedValueSetName="IntegrationStages" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the connections data warehouse layer or stage. This is an important attribute as it is used to determine what template get applied to its related objects. An example would be that the relevant source to staging Biml template will search for objects that relates to a connection with an IntegrationStage set to "SRC". The [meta].[IntegrationStage] table is an internal framework type (enum) and should be changed or added too only in consultation with Varigence. Below is a list of the current possible IntegrationStages.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="FilePattern" DataType="AnsiString" Length="128" Category="File">
+							<Annotations>
+								<Annotation AnnotationType="Description">If this is a file connection, this value is the pattern of applicable files in file path e.g. "*.csv"</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="FilePath" DataType="AnsiString" Length="500" Category="File">
+							<Annotations>
+								<Annotation AnnotationType="Description">If this is a file connection, this path of the source file. The Biml template will use this attribute in a &lt;ForEachFileLoop&gt; to load all files that match the FilePattern.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="NoOfThreads" DataType="Int32" Category="Connection" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">The default number of threads that SSIS can use to split the load when loading data when this connection is used. The amount of threads can be redefined at the object level. Currently this attribute is only used in the SRC – STG template along with the Balance Data Distributor to allow greater parallelism. Only define a value greater than zero if the Server has enough CPU and Memory to accommodate additional threads.</Annotation>
+							</Annotations>
+						</Property>	
+						<Property Name="ExcludeFromModel" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if the objects associated with this connection's metadata will be excluded along with the rest of the BimlFlex solution.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromBuild" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if the objects associated with this connection's will be built along with the rest of the solution when the BimlFlex solution is being compiled. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromValidation" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if the objects associated with this connection's metadata will be validated along with the rest of the BimlFlex solution.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Description" DataType="AnsiString" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">Optional metadata to provide desciption.</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+					<Relationships>
+						<Relationship Name="OleDbConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Define an OLEDB Connection for ADONET connections to enable the Execute SQL Tasks.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="AdoNetConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Define an ADONET Connection for OLEDB connections to enable the excution of script components to infer dimension keys for late arriving or missing dimension keys.</Annotation>
+							</Annotations>
+						</Relationship>
+					</Relationships>
+					<Validators>
+						
+						<Validator Language="CSharp" ExpectedResult="true" Message="All connections of an IntegrationStage set to SRC (Source) must have a RecordSouce defined" Name="ValidateRecordSouce" Severity="Error" Expression="IntegrationStage == &quot;SRC&quot; &amp;&amp; string.IsNullOrEmpty(RecordSource) ? false : true" />
+						<!--
+						Add Validator to check for BimlCatalog and that it is ADONET
+						Validate that SQLOLEDB uses Native Client.
+						<Validator Language="CSharp" ExpectedResult="true" Message="All connections of an IntegrationStage set to SRC (Source) must have a RecordSouce defined" Name="ValidateRecordSource" Severity="Error" Expression="ValidateRecordSource()" />
+						-->
+					
+					</Validators>
+				</Entity>
+				<Entity Name="Batches" UiEditorNameComponents="Batch">
+					<Annotations>
+						<Annotation AnnotationType="Description">Batches define a ETL workload. Batches is used in combination with Projects to </Annotation>
+					</Annotations>
+					<!-- Punted this functionality to vNext
+					<Relationships>
+						<Relationship Name="ParentBatch" Cardinality="ManyToOne" EntityName="Batches">
+							<Annotations>
+								<Annotation AnnotationType="Description">TBD: Will allow the ability to group Batches. Currently not required and added to the metadata as a placeholder.</Annotation>
+							</Annotations>
+						</Relationship>
+					</Relationships>
+					-->
+					<Properties>
+						<Property Name="PackageSubpath" DataType="AnsiString" Length="128" Category="Batch" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Internal attribute that is used for building the packages into the same project folder.</Annotation>
+							</Annotations>
+						</Property>
+						<!-- Punted this functionality to vNext
+						<Property Name="ExecutionOrder" DataType="Int32" Category="Batch" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">TBD: Will allow the ability to define the solve order or execution order of Batches when defining ParentBatch. Currently not required and added to the metadata as a placeholder.</Annotation>
+							</Annotations>
+						</Property>
+						-->
+						<Property Name="NoOfThreads" DataType="Int32" Category="Batch" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">The default number of packages that can be executed in parallel within the Batch. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="UseSsisExpress" DataType="AnsiString" Length="1" Category="Batch" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Set this value to Y when extracting data from a source that only has Sql Server Express install. Note that with SSIS Express there is limited functionality.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="UseOrchestration" DataType="AnsiString" Length="1" Category="Batch" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">BimlFlex comes with an orchestration framework that will control restartability. Set this attribute to N if you would like to bypass the dafault behavior.</Annotation>
+							</Annotations>						
+						</Property>
+						<Property Name="PrecedenceConstraint" DataType="AnsiString" Length="20" Category="Batch" PermittedValueSetName="PrecedenceConstraints">
+							<Annotations>
+								<Annotation AnnotationType="Description">BimlFlex Batches execute packages and the Precedence Constraint can be changed from Success to Completion to continue loading in case of individual failures.</Annotation>
+							</Annotations>						
+						</Property>
+						<Property Name="Description" DataType="AnsiString" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">Optional metadata to provide desciption.</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+				</Entity>
+				<Entity Name="Projects" UiEditorNameComponents="Project">
+					<Annotations>
+						<Annotation AnnotationType="Description">Projects define the integration configuration between source and target. Specify the Connections for the project and attach the project to a Batch.</Annotation>
+					</Annotations>
+					<Properties>
+						<!--
+						<Property Name="ProjectName" DataType="AnsiString" Length="128" Category="Project">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						-->
+						<Property Name="ProjectSubpath" DataType="AnsiString" Length="128" Category="Project" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Internal attribute that is used for building the packages into the same project folder.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IntegrationTemplate" DataType="AnsiString" Length="50" Category="Project" PermittedValueSetName="IntegrationTemplates" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Name of Integration template to apply. Below is a list of the current possible Integration Templates. Currently this is a place holder for future separation of ETL logic.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromModel" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if the objects associated with this project's metadata will be excluded along with the rest of the BimlFlex solution.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromBuild" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if the objects associated with this project's will be built along with the rest of the solution when the BimlFlex solution is being compiled. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromValidation" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if the objects associated with this project's metadata will be validated along with the rest of the BimlFlex solution.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Description" DataType="AnsiString" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">Optional metadata to provide desciption.</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+					<Relationships>
+						<Relationship Name="SourceConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the Source Connection that is relevant to the project. Source connection is mandatory.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="StageConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the Staging Connection. Staging connections is only required for the Source to Staging process and should only be defined when the SourceConnections IntegrationStage = "SRC".</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="PersistentStageConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the Persistent Staging Connection (ODS). Persistent Staging connections is only required for the Source to Staging process and should only be defined when the SourceConnections IntegrationStage = "SRC" and if you would like to keep a historical record of all changes from the source system. Defining this will require a substantial amount of additional disk space and will have an effect on the source to staging load times as we will effectively perform CDC using a lookup across the RowHash value. Persistence can be selectively disabled using the IsNotPersisted attribute on the Objects entity.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="TargetStageConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the Intermediate Connection. This can also be thought of as the staging connection in the integration layer. This is used to mirror the target and facilitate bulk updates using a Merge statement. This is mandatory for all Dimensional and Data Vault models.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="TargetConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the Target Connection for the objects mapped to the project. The Target Connection is mandatory. When loading from source to staging only, set the target connection the same as the staging connection.</Annotation>
+							</Annotations>
+						</Relationship>
+						<!-- Punted this functionality to vNext
+						<Relationship Name="TabularCubeConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the Connection to a Tabular Cube.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="CubeConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the Connection to a Multi Dimensional Cube.</Annotation>
+							</Annotations>
+						</Relationship>
+						-->
+						<Relationship Name="Batch" Cardinality="ManyToOne" EntityName="Batches">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains the name of the batch that this project belongs to. Batches are used to organise and create separation between different packages in the solution. Batches are defined in the Batch Entity Table.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="ParentProject" Cardinality="ManyToOne" EntityName="Projects">
+							<Annotations>
+								<Annotation AnnotationType="Description">This contains the name of the project that is the parent of the current project. This is quite useful when grouping FlatFiles into the same project. Because each FlatFile requires a Connection it also require a Project and can be grouped using the ParentProject attribute.</Annotation>
+							</Annotations>
+						</Relationship>
+					</Relationships>
+					<Validators>
+						<Validator Language="CSharp" ExpectedResult="true" Message="The Project cannot contain a ObjectType mix of CDC and NON CDC tables. If you define any table with an ObjectType of Table CDC All or Table CDC Last then all tables in that project must have a CDC ObjectType" Name="ValidateProjectCdcObjects" Severity="Error" Expression="MetadataModelDynamicObject.Objects.Any(item =&gt; item.Project.RelatedItem.Name == Name &amp;&amp; new[]{&quot;TCA&quot;, &quot;TCL&quot;}.Contains(item.ObjectType)) &amp;&amp; MetadataModelDynamicObject.Objects.Any(item =&gt; item.Project.RelatedItem.Name == Name &amp;&amp; !new[]{&quot;TCA&quot;, &quot;TCL&quot;}.Contains(item.ObjectType)) ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The combination of Project, ParentProject and Batch must be unique and will create duplicates. Project, ParentProject grouping cannot share a batch with another Project." Name="ValidateProjectBatchCombination" Severity="Error" Expression="MetadataModelDynamicObject.Projects.Where(item => Batch.RelatedItem != null &amp;&amp; item.Batch.RelatedItem != null &amp;&amp; item.Batch.RelatedItem == Batch.RelatedItem).Select(l => (l.ParentProject.RelatedItem != null ? l.ParentProject.RelatedItem.Name : l.Name) + &quot;|&quot; + l.Batch.RelatedItem.Name).Distinct().Count() > 1 ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The SourceConnection for the Project is a compulsory attribute." Name="ValidateProjectSourceConnection" Severity="Error" Expression="SourceConnection.RelatedItem == null ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The TargetConnection for the Project is a compulsory attribute." Name="ValidateProjectTargetConnection" Severity="Error" Expression="TargetConnection.RelatedItem == null ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The Batch for the Project is a compulsory attribute." Name="ValidateProjectBatch" Severity="Error" Expression="Batch.RelatedItem == null ? false : true" />
+					<!--
+						<Validator Language="CSharp" ExpectedResult="true" Message="The PersistentStaging Connection IntegrationStage is not ste to PSA" Name="ValidateProjectPersistentStaging" Severity="Error" Expression="PersistentStageConnection.RelatedItem.IntegrationStage != &quot;PSA&quot; ? false : true" />
+					-->
+					</Validators>
+					
+				</Entity>
+				<Entity Name="Objects" UiEditorNameComponents="Connection;Schema;ObjectName">
+					<Annotations>
+						<Annotation AnnotationType="Description">Object define the header information for both database tables and views and file structures.</Annotation>
+					</Annotations>
+					<Relationships>
+						<Relationship Name="Connection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Every object has its connection, which is set in this field.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Project" Cardinality="ManyToOne" EntityName="Projects">
+							<Annotations>
+								<Annotation AnnotationType="Description">Project the object belong. In the case where you would like the object to be referenced by additional projects you can use the InheritFromObject, SameAsInherited and UseInheritedName attributes. This is useful when an Object is used in an incremental load during the day and should be part of a full load during the end of day (month) process.</Annotation>
+							</Annotations>
+						</Relationship>
+						<!--
+						<Relationship Name="InheritObject" Cardinality="ManyToOne" EntityName="Objects">
+							<Annotations>
+								<Annotation AnnotationType="Description">Optional Object that column metadata can be used from.</Annotation>
+							</Annotations>
+						</Relationship>
+						-->
+					</Relationships>
+					<Properties>
+						<Property Name="Schema" DataType="AnsiString" Length="50" Category="Table" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Schema to which this object belongs or is meant to belong, is set in this field.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ObjectName" DataType="AnsiString" Length="128" Category="Table" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Name of Object (Table, View). Best practice is to use CamelCase. During the import of source metadata we provide options to convert name with under_scores to CamelCase and vice versa.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ObjectType" DataType="AnsiString" Length="50" Category="Table" PermittedValueSetName="ObjectTypes" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This field is used to setup object type. This field refers to ObjectTypes enumerator. Below is a list of the current possible Object Types.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelObjectType" DataType="AnsiString" Length="50" Category="Table" PermittedValueSetName="ModelObjectTypes">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column is used to define which model object this object is defined to be. For instance if this object is defining a HUB LINK or SAT this is where we can make this destinction. The framework will interpret the type when importing metadata from source and can be overridden after additional analysis. Please note that this attribute is only relevant when using BimlFlex to generate a Raw Data Vault model.</Annotation>
+							</Annotations>
+						</Property>
+						<!-- Punted this functionality to vNext
+						<Property Name="CompressionType" DataType="AnsiString" Length="50" Category="Table" PermittedValueSetName="CompressionTypes">
+							<Annotations>
+								<Annotation AnnotationType="Description">Currently this is a place holder attribute intended to assist in standard compression creations. Below is a list of the current possible Compression Types.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="PartitionScheme" DataType="AnsiString" Length="50" Category="Table" PermittedValueSetName="PartitionSchemes">
+							<Annotations>
+								<Annotation AnnotationType="Description">Currently this is a place holder attribute intended to assist in standard partition creations. Below is a list of the current possible Partition Schemes.</Annotation>
+							</Annotations>
+						</Property>
+						--> 
+						<Property Name="IsNotPersistent" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines an Override to the Persistent Staging Connection defined as part of the Project Entity. A good example of usage would be where the source system audits changes effectively and/or the source object size discourage persistence. Note that setting it to "Y" will exclude the object from being persisted.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromModel" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if this object's metadata will be excluded along with the rest of the BimlFlex solution.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromBuild" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if this object will be built along with the rest of the solution when the BimlFlex solution is being compiled. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromValidation" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if this object's metadata will be validated along with the rest of the BimlFlex solution.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="CreateSql" DataType="String" Length="-1" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">Create SQL statement which can be used deploy a view onto the database. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="OverrideSql" DataType="String" Length="-1" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">Query used to override the source component.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="FromSql" DataType="String" Length="-1" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">If the source select FROM clause requires customization is where it can be entered. Important if using this attribute it must include the ObjectAlias if defined. Example:
+FROM @@this src WITH (NOLOCK)
+The query is limited to 1000 characters. 
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="JoinSql" DataType="String" Length="-1" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">If the source select requires a JOIN this is where it can be entered. Example:
+INNER JOIN `betfair`.`vcs_market_ id` etl ON src.`market_id` = etl.`vcs_market_id`
+The query is limited to 1000 characters. 
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="WhereSql" DataType="String" Length="-1" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">If the source select requires a WHERE clause this is where it can be entered.  Note that defining a Parameter on the object will be appended to the statement. Example:
+WHERE `market_id` IN (SELECT `market_id` FROM `betfair`.`market` WHERE `event_id` IN (SELECT `event_id` FROM `betfair`.`event` WHERE `event_last_updated` >= '" + @[User::LastLoadDate] + "'))
+The query is limited to 1000 characters. 
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ObjectAlias" DataType="String" Length="10" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines an alias (short name) for the Object. Generally this is only defined in conjunction with the JoinSql and/or WhereSql attributes. Generally we use "src" as a default for simplicity.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SelectBySql" DataType="String" Length="-1" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">If the source select requires a DISTINCT or TOP clause this is where it can be entered. The field is limited to 1000 characters. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="GroupBySql" DataType="String" Length="-1" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">If the source select requires a GROUP BY clause this is where it can be entered. The field is limited to 1000 characters. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="OrderBySql" DataType="String" Length="-1" Category="Sql">
+							<Annotations>
+								<Annotation AnnotationType="Description">If the source select requires a ORDER BY clause this is where it can be entered. The field is limited to 1000 characters. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelGrouping" DataType="String" Length="128" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column categories objects per subject area.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelOverrideName" DataType="String" Length="128" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains the actual table name users want the object to appear as after the solution is deployed. This is better described with and example. Let’s say you have a source system with cryptic names like GL002 and the actual business name is GeneralLedger. By defining a value and generating a Data Vault using the BimlFlex Accelerator the result would be [HUB_GeneralLedger], [SAT_GeneralLedger]</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelOverrideShortName" DataType="String" Length="128" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains the short table name users want the object to appear as after the solution is deployed. As per the ModelOvverrideName, but is used in naming Links and Link Satellites. As an example if there is a link between the GeneralLedger and ChartOfAccounts the name will be [LNK_ GeneralLedger_ ChartOfAccounts]. Defining values here the name could be [LNK_GL_COA], providing flexibility when modelling.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="InheritFromObject" DataType="String" Length="128" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains a reference to the object that column metadata should inherited from unless it has its own column metadata. This object will use the inferred from object name in the source query.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SameAsInherited" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines if the InheritFromObject is the same object. Entering Y into this column will instruct BimlFLex to reuse the inherited tables for loading.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="UseInheritedName" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines if the InheritFromObject has the same object. Entering Y into this column will instruct BimlFLex to reuse the inherited tables ObjectName for loading.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="DependOnObject" DataType="String" Length="128" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains a dependency reference to the object that defines the precedence for execution solve order. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="FriendlyName" DataType="String" Length="200" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">Business Friendly name of object.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Description" DataType="String" Length="-1" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">The object described in business context. Often referred to as business metadata.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Comments" DataType="String" Length="-1" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">Generic comments for use by the Analyst and Modellers to keep notes related to the object</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="FlatFileType" DataType="String" Length="20" Category="File" PermittedValueSetName="FlatFileTypes">
+							<Annotations>
+								<Annotation AnnotationType="Description">The FlatFileType provides options for the type of flat file row format that will be used.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="CodePage" DataType="String" Length="20" Category="File">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the code page to use for character and string manipulation of non-Unicode text.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsColumnNamesInFirstDataRow" DataType="AnsiString" Length="1" Category="File" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies whether more descriptive column names are provided in the first data row to replace the column names specified in the Flat File Format Columns collection.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="DataRowsToSkip" DataType="Int32" Category="File">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies how many data rows to skip before beginning to product data.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="TextQualifer" DataType="String" Length="20" Category="File">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies which character is used to identify contiguous blocks of text in a flat file. Column delimiters within blocks of contiguous text will be ignored and treated as text data.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="RowDelimiter" DataType="String" Length="20" Category="File" PermittedValueSetName="Delimiters" AllowCustomInput="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the delimiter to use to segregate rows.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ColumnDelimiter" DataType="String" Length="20" Category="File" PermittedValueSetName="Delimiters" AllowCustomInput="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the delimiter string that will be used to mark the end of this column.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="LastColumnDelimiter" DataType="String" Length="20" Category="File" PermittedValueSetName="Delimiters" AllowCustomInput="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the delimiter to use for column header rows.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsUnicode" DataType="AnsiString" Length="1" Category="File" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies whether Unicode character and string manipulation will be used.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SolveOrder" DataType="Int32" Category="Table" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Internal column calculating the order in which the objects will be loaded based on References.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SolveOrderReverse" DataType="Int32" Category="Table" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Internal column calculating the order in which the objects will be loaded based on References in reverse.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="UseOwnThread" DataType="AnsiString" Length="1" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">Objects will be executed within the Batch based on Topological sort order and then alphabetical. If you would like the object to be executed in its own thread at the start of the respective execution container set this attribute to "true" </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="NoOfThreads" DataType="Int32" Category="Table">
+							<Annotations>
+								<Annotation AnnotationType="Description">At the object level, this is where we can define the amount of threads that we want the load to be distributed across in the SSIS package.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ObjectUID" DataType="AnsiString" Length="50" Category="Table" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">The GUID for the Object from BimlFlex database used to provide the package id.</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+					<Validators>
+						<Validator Language="CSharp" ExpectedResult="true" Message="The table should have only one Business Key" Name="ValidateTableBusinessKey" Severity="Error" Expression="!(!string.IsNullOrEmpty(SameAsInherited) &amp;&amp; SameAsInherited == &quot;Y&quot;) &amp;&amp;!(ExcludeFromValidation == &quot;Y&quot; || ExcludeFromModel == &quot;Y&quot;) &amp;&amp; MetadataModelDynamicObject.Columns.Where(col =&gt; col.Object.RelatedItem.Name == Name).Count(a =&gt; a.IsBusinessKey == &quot;Y&quot;) != 1 ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The target table can only have one Primary Key" Name="ValidateTargetPrimaryKey" Severity="Error" Expression="!(!string.IsNullOrEmpty(SameAsInherited) &amp;&amp; SameAsInherited == &quot;Y&quot;) &amp;&amp;!(ExcludeFromValidation == &quot;Y&quot; || ExcludeFromModel == &quot;Y&quot;) &amp;&amp; Connection.RelatedItem.IntegrationStage != &quot;SRC&quot; &amp;&amp; MetadataModelDynamicObject.Columns.Where(col =&gt; col.Object.RelatedItem.Name == Name &amp;&amp; col.ChangeType != &quot;MAK&quot;).Count(a =&gt; a.IsPrimaryKey == &quot;Y&quot;) != 1 ? false : true" />
+						<!--
+						<Validator Language="CSharp" ExpectedResult="true" Message="The InheritFromObject cannot belong to the same Project when using the SameAsInherited flag. Please referer to the documentation for an explanation on using SameAsInherited" Name="ValidateSameAsInheritedProject" Severity="Error" Expression="!string.IsNullOrEmpty(SameAsInherited) &amp;&amp; SameAsInherited == &quot;Y&quot; &amp;&amp; MetadataModelDynamicObject.Objects.SingleOrDefault(o =&gt; !string.IsNullOrEmpty(InheritFromObject) &amp;&amp; o.Name == InheritFromObject).Project.RelatedItem == Project.RelatedItem ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="Tables defined as CDC cannot have a JoinSql, WhereSql or GroupBySql populated" Name="ValidateCdcSql" Severity="Error" Expression="(!string.IsNullOrEmpty(JoinSql) || !string.IsNullOrEmpty(WhereSql) || !string.IsNullOrEmpty(GroupBySql)) &amp;&amp; new[]{&quot;TCA&quot;, &quot;TCL&quot;}.Contains(ObjectType) ? false : true" />
+						-->
+						<Validator Language="CSharp" ExpectedResult="true" Message="Tables defined as Source must have the same Connection in the SourceConnection of the Project." Name="ValidateSourceConnection" Severity="Error" Expression="(Connection.RelatedItem.IntegrationStage == &quot;SRC&quot; &amp;&amp; Connection.RelatedItem != Project.RelatedItem.SourceConnection.RelatedItem) ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The InheritFromObject cannot be empty if either SameAsInherited or UseInheritedName flag is set. Please referer to the documentation for an explanation on using InheritFromObject" Name="ValidateInheritFromObjectEmpty" Severity="Error" Expression="!(ExcludeFromValidation == &quot;Y&quot; || ExcludeFromModel == &quot;Y&quot;) &amp;&amp; ((!string.IsNullOrEmpty(SameAsInherited) &amp;&amp; SameAsInherited == &quot;Y&quot;) || (!string.IsNullOrEmpty(UseInheritedName) &amp;&amp; UseInheritedName == &quot;Y&quot;)) &amp;&amp; string.IsNullOrEmpty(InheritFromObject) ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The table have no columns defined and have been excluded from additional validation and processing" Name="ValidateTableHasColumns" Severity="Warning" Expression="!(!string.IsNullOrEmpty(SameAsInherited) &amp;&amp; SameAsInherited == &quot;Y&quot;) &amp;&amp; (MetadataModelDynamicObject.Columns.Where(col =&gt; col.Object.RelatedItem.Name == Name).Count() == 0 &amp;&amp; !new[]{&quot;BRG&quot;, &quot;PIT&quot;}.Contains(ObjectType)) ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The table has a ModelObjectType of Satellite and should be mapped to a single HUB" Name="ValidateSatReferenceMultiple" Severity="Error" Expression="(MetadataModelDynamicObject.Columns.Where(col =&gt; col.Object.RelatedItem.Name == Name &amp;&amp; col.ReferenceColumn.RelatedItem != null).Count() &gt; 1 &amp;&amp; ModelObjectType == &quot;SAT&quot;) ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The table has a ModelObjectType of Satellite and does not appear to be mapped to a HUB" Name="ValidateSatReferenceHub" Severity="Error" Expression="(MetadataModelDynamicObject.Columns.Where(col =&gt; col.Object.RelatedItem.Name == Name &amp;&amp; col.ReferenceColumn.RelatedItem != null &amp;&amp; col.ReferenceColumn.RelatedItem.Object.RelatedItem.ModelObjectType == &quot;HUB&quot;).Count() != 1 &amp;&amp; ModelObjectType == &quot;SAT&quot;) ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="Cannot map multiple source columns to the same target column." Name="ValidateSourceMultipleColumns" Severity="Error" Expression="MetadataModelDynamicObject.Columns.Where(item => item.Object.RelatedItem.Name == Name &amp;&amp; item.TargetColumn.RelatedItem != null).GroupBy(g => g.TargetColumn.RelatedItem, g => g).Any(i => i.Count() > 1) ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="The Dimension should have a PrimaryKey that is different from the BusinessKey. We recommend adding a PrimaryKey and define it as a Identity." Name="ValidateDimSurrogateKey" Severity="Error" Expression="(MetadataModelDynamicObject.Columns.Where(col =&gt; col.Object.RelatedItem.Name == Name &amp;&amp; (col.IsPrimaryKey == &quot;Y&quot; || col.IsBusinessKey == &quot;Y&quot;)).Count() == 1 &amp;&amp; ObjectType == &quot;DIM&quot;) ? false : true" />
+                    </Validators>
+				</Entity>
+				<Entity Name="Columns" UiEditorNameComponents="Connection;Object;ColumnName">
+					<Annotations>
+						<Annotation AnnotationType="Description">Columns define the detailed information to transform and map data from source to target.</Annotation>
+					</Annotations>
+					<Relationships>
+						<Relationship Name="Object" Cardinality="ManyToOne" EntityName="Objects">
+							<Lookups>
+								<FilteredLookup Name="ObjectConnectionFilter" UiEditorLabel="Connection" EntityName="BimlFlexModel.Connections" />
+								<FilteredLookup Name="ObjectFilter" UiEditorLabel="Object" EntityName="BimlFlexModel.Objects" ParentFilterName="ObjectConnectionFilter" />
+							</Lookups>
+							<Annotations>
+								<Annotation AnnotationType="Description">Relationship to the Object for this column.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="ReferenceColumn" Cardinality="ManyToOne" EntityName="Columns">
+							<Lookups>
+								<FilteredLookup Name="ReferenceColumnObjectFilter" UiEditorLabel="ReferenceTable" EntityName="BimlFlexModel.Objects" />
+								<FilteredLookup Name="ReferenceColumnFilter" UiEditorLabel="ReferenceColumnName" EntityName="BimlFlexModel.Columns" ParentFilterName="ReferenceColumnObjectFilter" />
+							</Lookups>
+							<Annotations>
+								<Annotation AnnotationType="Description">Relationship between this column and the reference object. Reference columns are used to define logical relationships between object (tables). This is used to relate BusinessKeys in Data Vault sources and ForeignKeys in the Data Warehouse targets.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="TargetColumn" Cardinality="ManyToOne" EntityName="Columns">
+							<Lookups>
+								<FilteredLookup Name="TargetColumnObjectFilter" UiEditorLabel="TargetTable" EntityName="BimlFlexModel.Objects" />
+								<FilteredLookup Name="TargetColumnFilter" UiEditorLabel="TargetColumnName" EntityName="BimlFlexModel.Columns" ParentFilterName="TargetColumnObjectFilter" />
+							</Lookups>
+							<Annotations>
+								<Annotation AnnotationType="Description">Source to Target column mapping.</Annotation>
+							</Annotations>
+						</Relationship>
+					</Relationships>
+					<Properties>
+						<Property Name="ColumnName" DataType="String" Length="128" Category="Column" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Name of the column within the table. For any column other than the source we recommend using CamelCase. For ORACLE we recommend UPPERCASE separated by underscores.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ColumnAlias" DataType="String" Length="128" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">Alias for the column. Generally used in conjunction with SqlExpression.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="FriendlyName" DataType="String" Length="200" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">Business Friendly name of column.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Description" DataType="String" Length="2000" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">The column described in business context. Often referred to as business metadata.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ChangeType" DataType="AnsiString" Length="50" Category="Column" PermittedValueSetName="ChangeTypes" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the slowly changing dimension type for the column. 
+Below is a list of the current possible Change Types.
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="DataType" DataType="AnsiString" Length="50" Category="Column" PermittedValueSetName="DataTypes" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the type of the data stored in this column using the unified type system.
+https://www.varigence.com/Documentation/Api/Property/AstTableColumnBaseNode/DataType
+Additional logic is required to cater for datatypes with a CustomType like ‘hierarchyid’.
+Below is a list of the current possible Data Types.
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Length" DataType="Int32" Category="DataType">
+							<Annotations>
+								<Annotation AnnotationType="Description">(Set to -1 to indicate MAX length) This value specifies the length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types.
+https://www.varigence.com/Documentation/Api/Property/AstTableColumnBaseNode/Length
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Precision" DataType="Int32" Category="DataType">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the precision parameter for the column type associated with this column. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.
+https://www.varigence.com/Documentation/Api/Property/AstTableColumnBaseNode/Precision
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Scale" DataType="Int32" Category="DataType">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the scale parameter for the column type associated with this column. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.
+https://www.varigence.com/Documentation/Api/Property/AstTableColumnBaseNode/Scale
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Ordinal" DataType="Int32" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">Order of that the columns is defined in or should be defined when creating the target objects. It is recommended that the Business and Primary Keys is defined as the top ordinals. Ordinal is used in ascending order and we recommend starting at Ordinal - 1.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelOverrideName" DataType="String" Length="128" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains the business column name users want the object to appear as after the solution is deployed. This is better described with and example. Let’s say you have a source system with cryptic names like GL002 and the actual business name is GeneralLedgerCode. By defining a value and generating a Data Vault using the BimlFlex Accelerator the resulting column will be [GeneralLedgerCode]</Annotation>
+							</Annotations>
+						</Property>
+						<!-- Punted this functionality to vNext
+						<Property Name="ModelOverrideShortName" DataType="String" Length="128" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">Same as defined for Objects but per column</Annotation>
+							</Annotations>
+						</Property>
+						-->
+						<Property Name="DataTypeMapping" DataType="String" Length="50" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelGrouping" DataType="String" Length="128" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is used to group columns into their own satellites. Example would be if you have a customer table that has a column "LastLoginDate" that changes very frequently you might want to model this in a separate satellite. All columns with the same ModelGrouping will be generated into separate satellites. It is also used to define a Unit Of Work on Links</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelReference" DataType="String" Length="128" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is used multiple table references. Example would be the SalesOrder table with a ShippingAddress and BillingAddress reference to the Address table. Two links will be created with the ModelReference forming part of the name. This attribute is autogenerated by our schema import and can be overridden.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelDataType" DataType="AnsiString" Length="50" Category="Column" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelLength" DataType="Int32" Category="DataType" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelPrecision" DataType="Int32" Category="DataType" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ModelScale" DataType="Int32" Category="DataType" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="DefaultValue" DataType="String" Length="200" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies a default value for the column using Transact-SQL constant expression syntax.
+https://www.varigence.com/Documentation/Api/Property/AstTableColumnBaseNode/Default 
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="DisplayFolder" DataType="String" Length="200" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">Place holder at the moment. Planning to use this when defining Analysis Services metadata.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Comments" DataType="String" Length="4000" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">Generic comments for use by the Analyst and Modellers to keep notes related to the column.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SsisExpression" DataType="String" Length="2000" Category="Expression">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.
+https://www.varigence.com/Documentation/Api/Property/AstDerivedColumnNode/Expression
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlExpression" DataType="String" Length="2000" Category="Expression">
+							<Annotations>
+								<Annotation AnnotationType="Description">SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.
+Example: MySql check id date is valid
+LEFT(DATE_FORMAT(DATE_ADD(`closed_date`, INTERVAL 0 DAY), '%Y-%m-%d %T'), 20)
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SsisDataType" DataType="String" Length="200" Category="Expression" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is used to overwrite the datatype for the SsisExpression.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SolveOrder" DataType="Int32" Category="Expression">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is used when defining SsisExpressions that need to be parsed in a specific order. Example would be if you want to split a very complex calculation up into multiple expressions that is derived in a specific sequence.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsPrimaryKey" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if this column is the primary key of the object. The PRIMARY KEY uniquely identifies each record in a database table. Primary keys must contain UNIQUE values. A primary key column cannot contain NULL values.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsBusinessKey" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if this column is the business key of the object. Note that the framework allows only one business key per object. If the object has multiple columns that makes up the business key define a derived concatenated column.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsAltBusinessKey" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if this column is the alternate business key of the object. This is generally defined if the object has multiple columns as the business key and a derived concatenated business key has been defined.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsIdentity" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if this column is the identity column of the object</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsNullable" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if this column is the allow NULL (empty) values</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsDerived" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="Booleans" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if the value in this column is derived during the ETL process. This is generally set in conjunction with the SsisExpression attribute.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsNotPersistent" DataType="AnsiString" Length="1" Category="Table" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines an Override to the Persistent Staging Connection defined as part of the Project Entity. A good example of usage would be where derived columns should not be persisted. Note that setting it to "Y" will exclude the column from being persisted.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromModel" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Entering Y into this column will determine if this column will be built along with the rest of the solution when the BimlFlex solution is being compiled. </Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+					<Validators>
+						<!-- 
+						<Validator Language="CSharp" ExpectedResult="true" Message="Reference Columns must point to the Primary Key of the referenced Table" Name="ValidateReferencePrimaryKey" Severity="Error" Expression="ValidateReferencePrimaryKey()" />
+						-->
+						<Validator Language="CSharp" ExpectedResult="true" Message="Multi Active Keys (MAK) must be part of the primary key. Set the IsPrimaryKey to Y" Name="ValidateMakIsPrimaryKey" Severity="Error" Expression="ChangeType == &quot;MAK&quot; &amp;&amp; IsPrimaryKey != &quot;Y&quot; ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="Reference Columns must point to the Primary Key of the referenced Table" Name="ValidateReferencePrimaryKey" Severity="Error" Expression="ReferenceColumn.RelatedItem == null ? true : ReferenceColumn.RelatedItem.IsPrimaryKey == &quot;Y&quot; ? true : false" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="Column cannot Reference itself" Name="SameColumnReference" Severity="Error" Expression="ReferenceColumn.RelatedItem == null ? true : ReferenceColumn.RelatedItem.Name == Name ? false : true" />
+						<Validator Language="CSharp" ExpectedResult="true" Message="Column cannot Target itself" Name="SameColumnTarget" Severity="Error" Expression="TargetColumn.RelatedItem == null ? true : TargetColumn.RelatedItem.Name == Name ? false : true" />
+						<!--
+						<Validator Language="CSharp" ExpectedResult="true" Message="A column with an SsisExpression using FlexToBk can only be defined as a String" Name="FlexToBkString" Severity="Error" Expression="!string.IsNullOrEmpty(SsisExpression) &amp;&amp; SsisExpression.ToUpper().StartsWith(&quot;FLEXTOBK&quot;) &amp;&amp; DataType != &quot;String&quot; &amp;&amp; ChangeType != &quot;REF&quot; ? false : true" />
+						-->
+					</Validators>
+				</Entity>
+				<Entity Name="CustomAttributes" UiEditorPageName="Attributes" UiEditorNameComponents="Project;Batch;Connection;Object;ColumnName;AttributeKey;AttributeValue">
+					<Annotations>
+						<Annotation AnnotationType="Description">CustomAttributes are used to capture attributes that are sparsely used in the framework and to overwrite Configurations. Customers can also use this to extend our metadata model for bespoke coding requirements.</Annotation>
+					</Annotations>
+					<Relationships>
+						<Relationship Name="Connection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is required for defining a CustomAttribute at the Connection, Object or Column level.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Project" Cardinality="ManyToOne" EntityName="Projects">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is required for defining a CustomAttribute at the Project level.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Batch" Cardinality="ManyToOne" EntityName="Batches">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is required for defining a CustomAttribute at the Batch level.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Object" Cardinality="ManyToOne" EntityName="Objects">
+							<Lookups>
+								<FilteredLookup Name="ObjectFilter" UiEditorLabel="Object" EntityName="BimlFlexModel.Objects" FilterOnLocalRelationshipName="Connection" />
+							</Lookups>
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is required for defining a CustomAttribute at the Object level.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Column" Cardinality="ManyToOne" EntityName="Columns">
+							<Lookups>
+								<FilteredLookup Name="ColumnFilter" UiEditorLabel="ColumnName" EntityName="BimlFlexModel.Columns" FilterOnLocalRelationshipName="Object" />
+							</Lookups>
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is required for defining a CustomAttribute at the Column level.</Annotation>
+							</Annotations>
+						</Relationship>
+					</Relationships>
+					<Properties>
+						<Property Name="AttributeKey" DataType="String" Length="128" IsRequired="true" AllowCustomInput="true" PermittedValueSetName="AttributeKeys">
+							<Annotations>
+								<Annotation AnnotationType="Description">The attribute key is a unique name that we give each custom attribute so when we are generating our solution we can pin point one of many custom attributes for one object. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="AttributeValue" DataType="String" Length="2000" PermittedValueSetName="AttributeValues" AllowCustomInput="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains the value to be returned when the custom attribute accessed by the framework.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="AttributeProperty" DataType="String" Length="2000" PermittedValueSetName="AttributeProperties" AllowCustomInput="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains the default value for the custom attribute if it is not specified in the AttributeValue.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="AttributeType" DataType="String" Length="10" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Internal column specifying the relationship associated with this attribute.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Description" DataType="AnsiString" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">Optional metadata to provide desciption.</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+				</Entity>
+				<Entity Name="Parameters" UiEditorNameComponents="Connection;Object;ColumnName;ParameterName">
+					<Annotations>
+						<Annotation AnnotationType="Description">Parameters are used to add WHERE logic to the source qeuries. For very complex logic use the GetParameter and SetParameter ExtensionPoints</Annotation>
+					</Annotations>
+					<Relationships>
+						<Relationship Name="Connection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Every parameter refer to an object that refers to its connection.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Object" Cardinality="ManyToOne" EntityName="Objects">
+							<Lookups>
+								<FilteredLookup Name="ObjectFilter" UiEditorLabel="Object" EntityName="BimlFlexModel.Objects" FilterOnLocalRelationshipName="Connection" />
+							</Lookups>
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Column" Cardinality="ManyToOne" EntityName="Columns">
+							<Lookups>
+								<FilteredLookup Name="ColumnFilter" UiEditorLabel="ColumnName" EntityName="BimlFlexModel.Columns" FilterOnLocalRelationshipName="Object" />
+							</Lookups>
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Relationship>
+					</Relationships>
+					<Properties>
+						<Property Name="ParameterName" DataType="String" Length="128">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute specify the name of the parameter being used in the package. This will be the name [VariableName] in the [ssis].[ConfigVariable] table in the BimlCatalog database.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterOperator" DataType="String" Length="128">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute define a operator to be used when retrieving our parameter value. Example is &gt;= that will translate to the where clause as [ParameterName] &gt;= ?</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterDefault" DataType="String" Length="128">
+							<Annotations>
+								<Annotation AnnotationType="Description">Here you can define the default value that the parameter contains the first time the package is executed. Example would be for a numeric field ‘0’ and a date ‘1900-01-01’</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterDataType" DataType="String" Length="200" PermittedValueSetName="ParameterDataTypes" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">Here we define the data type for a parameter being used in the solution packages. Here you should enter the data type using the following format DATATYPENAME</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterSql" DataType="String" Length="200">
+							<Annotations>
+								<Annotation AnnotationType="Description">In this column, we define an aggregate that we want to use when retrieving our parameter value after the load. The placeholder "@@this" is replaced with the parameter name and inserted into the SQL aggregation. Eg: MAX(@@this) and 
+CONVERT(VARCHAR(19), MAX(@@this), 120) for dates.
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterToName" DataType="String" Length="128">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute specify the name of the parameter being used in the package. Use this attribute to define a from and to variable on a column.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterToOperator" DataType="String" Length="128">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute define a operator to be used in combination with ParameterToName</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExecuteSqlOnSource" DataType="AnsiString" Length="1" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">Specify if the ParameterSql should be exeuted on the source connection to retrieve the next load value.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterColumnExpression" DataType="String" Length="200">
+							<Annotations>
+								<Annotation AnnotationType="Description">In this column, we can define an override to be used instead of the ColumnName. Sometimes we need to use a column that was joined from another table to determine change like the LastModifiedDate. Normally this table join will use an 
+alias and we can then override the WHERE clause here. EG. e.[LastModifiedDate] or e.@@this.
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterSqlExpression" DataType="String" Length="200">
+							<Annotations>
+								<Annotation AnnotationType="Description">In this column, we can define more complex scenarios like (ISNULL(@@this, GETDATE()) &gt; ? OR ISNULL(@@this, GETDATE()) &lt;= ?).
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterOverride" DataType="String" Length="500">
+							<Annotations>
+								<Annotation AnnotationType="Description">In this column we define an override for the default parameter definition. It will override the ? in the following clause to whatever was defined. WHERE [ColumnName] = ?.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ParameterOrdinal" DataType="Int32">
+							<Annotations>
+								<Annotation AnnotationType="Description">If we are defining multiple parameters for the same object, we use this column to choose the order in which they are applied in SQL statements.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Description" DataType="AnsiString" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">Optional metadata to provide desciption.</Annotation>
+							</Annotations>
+						</Property>
+						<!-- Remove as it is nolonger referenced
+						<Property Name="IsProjectParameter" DataType="AnsiString" Length="1" Category="Flags">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						--> 
+						<Property Name="IsNotPersisted" DataType="AnsiString" Length="1" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if this parameter is not to be persisted in [BimlCatalog].[ssis].[ConfigVariable] table.</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+				</Entity>
+				<!-- Punted this functionality to vNext
+				<Entity Name="TestCases" IsUiEditorVisible="false">
+					<Annotations>
+						<Annotation AnnotationType="Description">xxxxx</Annotation>
+					</Annotations>
+					<Relationships>
+						<Relationship Name="Batch" Cardinality="ManyToOne" EntityName="Batches">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Object" Cardinality="ManyToOne" EntityName="Objects">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="TestConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="TestResultConnection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Relationship>
+					</Relationships>
+					<Properties>
+						<Property Name="TestName" DataType="String" Length="100">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="TestAssert" DataType="String" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="TestResultAssert" DataType="String" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="TestExpectedResult" DataType="String" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="TestResultDataType" DataType="String" Length="500">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="TestOperator" DataType="String" Length="100">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="TestOrdinal" DataType="Int32">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="TestMessage" DataType="String" Length="4000">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ExcludeFromBuild" DataType="AnsiString" Length="1">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+				</Entity>
+				-->
+				<Entity Name="DataTypeMappings" UiEditorNameComponents="Mapping">
+					<Annotations>
+						<Annotation AnnotationType="Description">xxxxx</Annotation>
+					</Annotations>
+					<Relationships>
+						<Relationship Name="DataTypeMapping" Cardinality="ManyToOne" EntityName="DataTypeMappings">
+							<Annotations>
+								<Annotation AnnotationType="Description">Every parameter refer to an object that refers to its connection.</Annotation>
+							</Annotations>
+						</Relationship>
+						<Relationship Name="Connection" Cardinality="ManyToOne" EntityName="Connections">
+							<Annotations>
+								<Annotation AnnotationType="Description">Every object has its connection, which is set in this field.</Annotation>
+							</Annotations>
+						</Relationship>
+					</Relationships>
+					<Properties>
+						<Property Name="Mapping" DataType="String" Length="50" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="DataType" DataType="AnsiString" Length="50" Category="Column" PermittedValueSetName="DataTypes" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the type of the data stored in this column using the unified type system.
+https://www.varigence.com/Documentation/Api/Property/AstTableColumnBaseNode/DataType
+Additional logic is required to cater for datatypes with a CustomType like ‘hierarchyid’.
+Below is a list of the current possible Data Types.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="FromLength" DataType="Int32" Category="DataType"  IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ToLength" DataType="Int32" Category="DataType"  IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Length" DataType="Int32" Category="DataType" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Precision" DataType="Int32" Category="DataType" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Scale" DataType="Int32" Category="DataType" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Ordinal" DataType="Int32" IsRequired="true">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="DefaultValue" DataType="String" Length="200" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">xxxxx</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SystemType" DataType="AnsiString" Length="50" Category="Column" PermittedValueSetName="SystemTypes" IsRequired="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Defines the mappings system type. Depending on the type the relevant source mapping will be chosen. Below is a list of the current possible SystemTypes. For a full up to date list please refer to the [meta].[SystemType] table in the [BimlFlex] database.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SsisExpression" DataType="String" Length="2000" Category="Expression">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.
+https://www.varigence.com/Documentation/Api/Property/AstDerivedColumnNode/Expression
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlExpression" DataType="String" Length="2000" Category="Expression">
+							<Annotations>
+								<Annotation AnnotationType="Description">SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.
+Example: MySql check id date is valid
+LEFT(DATE_FORMAT(DATE_ADD(`closed_date`, INTERVAL 0 DAY), '%Y-%m-%d %T'), 20)
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ColumnAlias" DataType="String" Length="128" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">Alias for the column. Generally used in conjunction with SqlExpression.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Description" DataType="String" Length="2000" Category="Column">
+							<Annotations>
+								<Annotation AnnotationType="Description">The column described in business context. Often referred to as business metadata.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsMaster" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">"Y" if the value in this column can be mapped to.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToDataType" DataType="AnsiString" Length="50" Category="Column" PermittedValueSetName="DataTypes"  IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the type of the data stored in this column using the unified type system.
+https://www.varigence.com/Documentation/Api/Property/AstTableColumnBaseNode/DataType
+Additional logic is required to cater for datatypes with a CustomType like ‘hierarchyid’.
+Below is a list of the current possible Data Types.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToLength" DataType="Int32" Category="DataType"  IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Length of the DataType being mapped to</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToPrecision" DataType="Int32" Category="DataType"  IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Precision of the DataType being mapped to</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToScale" DataType="Int32" Category="DataType"  IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Scale of the DataType being mapped to</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToDefaultValue" DataType="String" Length="200" Category="Column" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Default of the DataType being mapped to</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToSsisExpression" DataType="String" Length="2000" Category="Expression" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.
+https://www.varigence.com/Documentation/Api/Property/AstDerivedColumnNode/Expression
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToSqlExpression" DataType="String" Length="2000" Category="Expression" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.
+Example: MySql check id date is valid
+LEFT(DATE_FORMAT(DATE_ADD(`closed_date`, INTERVAL 0 DAY), '%Y-%m-%d %T'), 20)
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToColumnAlias" DataType="String" Length="128" Category="Column" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Alias for the column. Generally used in conjunction with SqlExpression.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="MappedToDescription" DataType="String" Length="2000" Category="Column" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">The column described in business context. Often referred to as business metadata.</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+				</Entity>
+				<Entity Name="Configurations" UiEditorNameComponents="ConfigurationKey">
+					<Annotations>
+						<Annotation AnnotationType="Description">Configurations allows for customizing the default behaviour of BimlFlex. Many of the configurations can be used to switch functionality on or off depending on preference or requirements.</Annotation>
+					</Annotations>
+					<Properties>
+						<Property Name="ConfigurationKey" DataType="String" Length="128">
+							<Annotations>
+								<Annotation AnnotationType="Description">The configuration key is a unique name that we give each configuration so when we are generating our solution we can pin point one of many configurations.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ConfigurationValue" DataType="String" Length="200">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column contains the value to be returned when the configuration is accessed by the framework. This attribute allows you to define naming conventions custom to your environment.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ConfigurationDataType" DataType="String" Length="200">
+							<Annotations>
+								<Annotation AnnotationType="Description">Here we define the data type for a configuration being used in the solution packages. Here you should enter the data type using the following format "DATATYPENAME"</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ConfigurationDefault" DataType="String" Length="200">
+							<Annotations>
+								<Annotation AnnotationType="Description">If the ConfigurationValue has not been specified, this column will store the default value to be used instead. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="ConfigurationOrder" DataType="Int32">
+							<Annotations>
+								<Annotation AnnotationType="Description">This is what we used to control the order in which configuration settings are loaded into the BimlFlex solution and create on the target tables where relevant.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SqlExpression" DataType="String" Length="1000">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column is used when using a configuration to create a new based derived column using the SQL based templates. For example, this SQL expression will be used to obtain the current date. GETUTCDATE()</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SsisExpression" DataType="String" Length="1000">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column is used when using a configuration to create a new derived column to be added into the dataflow of a particular package. 
+For example, this SSIS expression will be used to obtain the current date. (DT_DBDATE)GETUTCDATE()
+								</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsNullable" DataType="AnsiString" Length="1" Category="Flags">
+							<Annotations>
+								<Annotation AnnotationType="Description">This column allows to you define if the configuration value is able to be null without throwing an error when building BimlFlex solution. To make the configuration nullable simply enter "Y" otherwise "N" will set the configuration to be non-nullable.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="StagingAttribute" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="ConfigurationAttributes">
+							<Annotations>
+								<Annotation AnnotationType="Description">The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework. </Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="PersistentStagingAttribute" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="ConfigurationAttributes">
+							<Annotations>
+								<Annotation AnnotationType="Description">The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="HubAttribute" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="ConfigurationAttributes">
+							<Annotations>
+								<Annotation AnnotationType="Description">The hub attribute is used to control whether a configuration is applied to hubs when generating a datavault architecture. Simply enter the name of the annotation to use when being referenced in the framework.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="SatelliteAttribute" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="ConfigurationAttributes">
+							<Annotations>
+								<Annotation AnnotationType="Description">The satellite attribute is used to control when a configuration is applied to Satellites when generating a datavault architecture. Simply enter the name of the annotation to use when being referenced in the framework.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="LinkAttribute" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="ConfigurationAttributes">
+							<Annotations>
+								<Annotation AnnotationType="Description">The link attribute is used to control when a configuration is applied to links when generating a datavault architecture. Simply enter the name of the annotation to use when being referenced in the framework.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="DimAttribute" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="ConfigurationAttributes">
+							<Annotations>
+								<Annotation AnnotationType="Description">The dim attribute is used to control when a configuration is applied to dimensions when generating a data warehouse architecture. Simply enter the name of the annotation to use when being referenced in the framework.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="FactAttribute" DataType="AnsiString" Length="1" Category="Flags" PermittedValueSetName="ConfigurationAttributes">
+							<Annotations>
+								<Annotation AnnotationType="Description">The fact attribute is used to control when a configuration is applied to facts when generating a data warehouse architecture. Simply enter the name of the annotation to use when being referenced in the framework.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Description" DataType="AnsiString" Length="2000">
+							<Annotations>
+								<Annotation AnnotationType="Description">Optional metadata to provide desciption.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsDeployed" DataType="AnsiString" Length="1" Category="Flags" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is currently a place holder.</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsInternal" DataType="AnsiString" Length="1" Category="Flags" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">This attribute is currently a place holder.</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+				</Entity>
+			</Entities>
+			<PermittedValueSets>
+				<PermittedValueSet Name="AttributeTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Column">COL</PermittedValue>
+						<PermittedValue UiEditorLabel="Object">OBJ</PermittedValue>
+						<PermittedValue UiEditorLabel="Project">PRJ</PermittedValue>
+						<PermittedValue UiEditorLabel="Connection">CON</PermittedValue>
+						<PermittedValue UiEditorLabel="Customer">CUS</PermittedValue>
+						<PermittedValue UiEditorLabel="Batch">BAT</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="ChangeTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Type 1">CHG</PermittedValue>
+						<PermittedValue UiEditorLabel="Type 2">HST</PermittedValue>
+						<PermittedValue UiEditorLabel="Fixed">FIX</PermittedValue>
+						<PermittedValue UiEditorLabel="Key">KEY</PermittedValue>
+						<PermittedValue UiEditorLabel="Multi Active Key">MAK</PermittedValue>
+						<PermittedValue UiEditorLabel="Ignore">IGN</PermittedValue>
+						<PermittedValue UiEditorLabel="Exclude DV">EXC</PermittedValue>
+						<PermittedValue UiEditorLabel="Link Reference">REF</PermittedValue>
+						<PermittedValue UiEditorLabel="Change Data Capture">CDC</PermittedValue>
+						<PermittedValue UiEditorLabel="Alternate">ALT</PermittedValue>
+						<PermittedValue UiEditorLabel="Hash Distribution">HDK</PermittedValue>
+						<PermittedValue UiEditorLabel="Link Degenerate">DGA</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="CompressionTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="None">N</PermittedValue>
+						<PermittedValue UiEditorLabel="Row">R</PermittedValue>
+						<PermittedValue UiEditorLabel="Page">P</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="ConfigurationAttributes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Ignore">IGN</PermittedValue>
+						<PermittedValue UiEditorLabel="Derived">DER</PermittedValue>
+						<PermittedValue UiEditorLabel="Source">SRC</PermittedValue>
+						<PermittedValue UiEditorLabel="Default">DEF</PermittedValue>
+						<PermittedValue UiEditorLabel="Target">TGT</PermittedValue>
+						<PermittedValue UiEditorLabel="Hash">HSH</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="ConnectionTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="OLEDB">OLEDB</PermittedValue>
+						<PermittedValue UiEditorLabel="ADONET">ADONET</PermittedValue>
+						<PermittedValue UiEditorLabel="FILE">FILE</PermittedValue>
+						<PermittedValue UiEditorLabel="ODBC">ODBC</PermittedValue>
+						<PermittedValue UiEditorLabel="TERADATA">TD</PermittedValue>
+						<PermittedValue UiEditorLabel="ORACLE">ORA</PermittedValue>
+						<PermittedValue UiEditorLabel="Microsoft APS">PDW</PermittedValue>
+						<PermittedValue UiEditorLabel="Azure Blob Storage">AZB</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="POLYBASE">POLY</PermittedValue>
+						<PermittedValue UiEditorLabel="FTP">FTP</PermittedValue>
+						<PermittedValue UiEditorLabel="SFTP">SFTP</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="Analysis Services Tabular">AST</PermittedValue>
+						<PermittedValue UiEditorLabel="Analysis Services Multi Dimensional">ASM</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="Amazon S3">AS3</PermittedValue>
+						<PermittedValue UiEditorLabel="Amazon Redshift">ARS</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="Microsoft MDS">MDS</PermittedValue>
+						<PermittedValue UiEditorLabel="OLEDB SQL Based ELT">OLESQL</PermittedValue>
+						<PermittedValue UiEditorLabel="ADONET SQL Based ELT">ADOSQL</PermittedValue>
+						<PermittedValue UiEditorLabel="OLEDB CDC">OLECDC</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="Script Source">SCSRC</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="Custom Component">CUSTOM</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="DataTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="AnsiString">AnsiString</PermittedValue>
+						<PermittedValue UiEditorLabel="AnsiStringFixedLength">AnsiStringFixedLength</PermittedValue>
+						<PermittedValue UiEditorLabel="Binary">Binary</PermittedValue>
+						<PermittedValue UiEditorLabel="Boolean">Boolean</PermittedValue>
+						<PermittedValue UiEditorLabel="Byte">Byte</PermittedValue>
+						<PermittedValue UiEditorLabel="Currency">Currency</PermittedValue>
+						<PermittedValue UiEditorLabel="Date">Date</PermittedValue>
+						<PermittedValue UiEditorLabel="DateTime">DateTime</PermittedValue>
+						<PermittedValue UiEditorLabel="DateTime2">DateTime2</PermittedValue>
+						<PermittedValue UiEditorLabel="DateTimeOffset">DateTimeOffset</PermittedValue>
+						<PermittedValue UiEditorLabel="Decimal">Decimal</PermittedValue>
+						<PermittedValue UiEditorLabel="Double">Double</PermittedValue>
+						<PermittedValue UiEditorLabel="Guid">Guid</PermittedValue>
+						<PermittedValue UiEditorLabel="Int16">Int16</PermittedValue>
+						<PermittedValue UiEditorLabel="Int32">Int32</PermittedValue>
+						<PermittedValue UiEditorLabel="Int64">Int64</PermittedValue>
+						<PermittedValue UiEditorLabel="Object">Object</PermittedValue>
+						<PermittedValue UiEditorLabel="SByte">SByte</PermittedValue>
+						<PermittedValue UiEditorLabel="Single">Single</PermittedValue>
+						<PermittedValue UiEditorLabel="String">String</PermittedValue>
+						<PermittedValue UiEditorLabel="StringFixedLength">StringFixedLength</PermittedValue>
+						<PermittedValue UiEditorLabel="Time">Time</PermittedValue>
+						<PermittedValue UiEditorLabel="UInt16">UInt16</PermittedValue>
+						<PermittedValue UiEditorLabel="UInt32">UInt32</PermittedValue>
+						<PermittedValue UiEditorLabel="UInt64">UInt64</PermittedValue>
+						<PermittedValue UiEditorLabel="VarNumeric">VarNumeric</PermittedValue>
+						<PermittedValue UiEditorLabel="Xml">Xml</PermittedValue>
+						<PermittedValue UiEditorLabel="HierarchyId">hierarchyid</PermittedValue>
+						<PermittedValue UiEditorLabel="Geometry">geometry</PermittedValue>
+						<PermittedValue UiEditorLabel="Geography">geography</PermittedValue>
+						<PermittedValue UiEditorLabel="SmallMoney">smallmoney</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="ParameterDataTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Boolean">Boolean</PermittedValue>
+						<PermittedValue UiEditorLabel="Byte">Byte</PermittedValue>
+						<PermittedValue UiEditorLabel="Char">Char</PermittedValue>
+						<PermittedValue UiEditorLabel="DateTime">DateTime</PermittedValue>
+						<PermittedValue UiEditorLabel="DBNull">DBNull</PermittedValue>
+						<PermittedValue UiEditorLabel="Decimal">Decimal</PermittedValue>
+						<PermittedValue UiEditorLabel="Double">Double</PermittedValue>
+						<PermittedValue UiEditorLabel="Empty">Empty</PermittedValue>
+						<PermittedValue UiEditorLabel="Int16">Int16</PermittedValue>
+						<PermittedValue UiEditorLabel="Int32">Int32</PermittedValue>
+						<PermittedValue UiEditorLabel="Int64">Int64</PermittedValue>
+						<PermittedValue UiEditorLabel="Object">Object</PermittedValue>
+						<PermittedValue UiEditorLabel="SByte">SByte</PermittedValue>
+						<PermittedValue UiEditorLabel="Single">Single</PermittedValue>
+						<PermittedValue UiEditorLabel="String">String</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="IntegrationStages">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Source">SRC</PermittedValue>
+						<PermittedValue UiEditorLabel="Staging">STG</PermittedValue>
+						<PermittedValue UiEditorLabel="Persistent Staging">PSA</PermittedValue>
+						<PermittedValue UiEditorLabel="Intermediate">INT</PermittedValue>
+						<PermittedValue UiEditorLabel="Data Warehouse">DWH</PermittedValue>
+						<PermittedValue UiEditorLabel="Raw Data Vault">RDV</PermittedValue>
+						<PermittedValue UiEditorLabel="Business Data Vault">BDV</PermittedValue>
+						<PermittedValue UiEditorLabel="Data Mart">DM</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="Raw Files">RAW</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="Master Data Services">MDS</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="Analysis Services">SSAS</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="File Export">EXP</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="IntegrationTemplates">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Source -&gt; Target">EIDM</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="Extract -&gt; Integrate -&gt; Dimensional">EIDM</PermittedValue>
+						<PermittedValue UiEditorLabel="Extract -&gt; Stage -&gt; Integrate -&gt; Dimensional">ESIDM</PermittedValue>
+						<PermittedValue UiEditorLabel="Extract -&gt; Stage">ES</PermittedValue>
+						<PermittedValue UiEditorLabel="Stage -&gt; Integrate -&gt; Dimensional">SIDM</PermittedValue>
+						<PermittedValue UiEditorLabel="Dimensional -&gt; Export">DE</PermittedValue>
+						<PermittedValue UiEditorLabel="Source -&gt; Extract">SE</PermittedValue>
+						<PermittedValue UiEditorLabel="Stage -&gt; Raw Data Vault">STRDV</PermittedValue>
+						<PermittedValue UiEditorLabel="Extract -&gt; Stage -&gt; Raw Data Vault">ESRDV</PermittedValue>
+						<PermittedValue UiEditorLabel="Stage -&gt; Target">S2T</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="Source -&gt; File Extract">S2FIL</PermittedValue>
+						<PermittedValue UiEditorLabel="Source -&gt; Zip File Extract">S2ZIP</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="ObjectTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Table">TBL</PermittedValue>
+						<PermittedValue UiEditorLabel="View">TBV</PermittedValue>
+						<PermittedValue UiEditorLabel="Dimension">DIM</PermittedValue>
+						<PermittedValue UiEditorLabel="Dimension View">DMV</PermittedValue>
+						<PermittedValue UiEditorLabel="Fact">FCT</PermittedValue>
+						<PermittedValue UiEditorLabel="Fact View">FCV</PermittedValue>
+						<PermittedValue UiEditorLabel="Satellite">SAT</PermittedValue>
+						<PermittedValue UiEditorLabel="Link">LNK</PermittedValue>
+						<PermittedValue UiEditorLabel="Hub">HUB</PermittedValue>
+						<PermittedValue UiEditorLabel="Link Satellite">LSAT</PermittedValue>
+						<PermittedValue UiEditorLabel="Reference">REF</PermittedValue>
+						<PermittedValue UiEditorLabel="Point In Time">PIT</PermittedValue>
+						<PermittedValue UiEditorLabel="Bridge">BRG</PermittedValue>
+						<PermittedValue UiEditorLabel="Reference Satellite">RSAT</PermittedValue>
+						<PermittedValue UiEditorLabel="Flat File">FIL</PermittedValue>
+						<PermittedValue UiEditorLabel="External">EXT</PermittedValue>
+						<PermittedValue UiEditorLabel="Table CDC All">TCA</PermittedValue>
+						<PermittedValue UiEditorLabel="Table CDC Last">TCL</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="ModelObjectTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Satellite">SAT</PermittedValue>
+						<PermittedValue UiEditorLabel="Link">LNK</PermittedValue>
+						<PermittedValue UiEditorLabel="Hub">HUB</PermittedValue>
+						<PermittedValue UiEditorLabel="Link Satellite">LSAT</PermittedValue>
+						<PermittedValue UiEditorLabel="Reference">REF</PermittedValue>
+						<PermittedValue UiEditorLabel="Reference Satellite">RSAT</PermittedValue>
+						<PermittedValue UiEditorLabel="Ignore">IGN</PermittedValue>
+						<PermittedValue UiEditorLabel="Exclude DV">EXC</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="PrecedenceConstraints">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Success">Success</PermittedValue>
+						<PermittedValue UiEditorLabel="Completion">Completion</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="PartitionSchemes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="None">N</PermittedValue>
+						<PermittedValue UiEditorLabel="By Month">M</PermittedValue>
+						<PermittedValue UiEditorLabel="By Year">Y</PermittedValue>
+						<PermittedValue UiEditorLabel="By Week">W</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="SystemTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="File Delimited">FF_DEL</PermittedValue>
+						<PermittedValue UiEditorLabel="File Ragged Right">FF_RAG</PermittedValue>
+						<PermittedValue UiEditorLabel="SQL Server">MSSQL</PermittedValue>
+						<PermittedValue UiEditorLabel="Oracle">ORA</PermittedValue>
+						<PermittedValue UiEditorLabel="DB2">DB2</PermittedValue>
+						<PermittedValue UiEditorLabel="Excel">EXCEL</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="Raw Files">RAW</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="MySql">MYSQL</PermittedValue>
+						<PermittedValue UiEditorLabel="Teradata">TD</PermittedValue>
+						<PermittedValue UiEditorLabel="Azure SQLDW">SQLDW</PermittedValue>
+						<PermittedValue UiEditorLabel="Azure SQLDB">SQLDB</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="Azure Blob Storage Delimited">ABDEL</PermittedValue>
+						<PermittedValue UiEditorLabel="Azure Blob Storage AVRO">ABAVR</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="SQL Server PDW">PDW</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="Amazon Redshift">ARDS</PermittedValue>
+						<PermittedValue UiEditorLabel="Amazon S3">AS3</PermittedValue>
+						<PermittedValue UiEditorLabel="Snowflake">SFL</PermittedValue>
+						-->
+						<PermittedValue UiEditorLabel="PostgreSQL">PGR</PermittedValue>
+						<PermittedValue UiEditorLabel="Oracle RDB">ORARDB</PermittedValue>
+						<PermittedValue UiEditorLabel="COZYROC Salesforce">CRSFDC</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="FlatFileTypes">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Delimited">Delimited</PermittedValue>
+						<PermittedValue UiEditorLabel="FixedWidth">FixedWidth</PermittedValue>
+						<PermittedValue UiEditorLabel="RaggedRight">RaggedRight</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="Delimiters">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="CRLF">CRLF</PermittedValue>
+						<PermittedValue UiEditorLabel="CR">CR</PermittedValue>
+						<PermittedValue UiEditorLabel="LF">LF</PermittedValue>
+						<PermittedValue UiEditorLabel="Semicolon">Semicolon</PermittedValue>
+						<PermittedValue UiEditorLabel="Comma">Comma</PermittedValue>
+						<PermittedValue UiEditorLabel="Tab">Tab</PermittedValue>
+						<PermittedValue UiEditorLabel="VerticalBar">VerticalBar</PermittedValue>
+						<PermittedValue UiEditorLabel="UnitSeparator">UnitSeparator</PermittedValue>
+						<PermittedValue UiEditorLabel="LF">LF</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="Booleans">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="Y">Y</PermittedValue>
+						<PermittedValue UiEditorLabel="N">N</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="AttributeKeys">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="IsDrivingKey">IsDrivingKey</PermittedValue>
+						<PermittedValue UiEditorLabel="CreateBridge">CreateBridge</PermittedValue>
+						<PermittedValue UiEditorLabel="CreatePIT">CreatePIT</PermittedValue>
+						<PermittedValue UiEditorLabel="DistributeRoundRobin">DistributeRoundRobin</PermittedValue>
+						<PermittedValue UiEditorLabel="DistributeReplicate">DistributeReplicate</PermittedValue>
+						<PermittedValue UiEditorLabel="RowStoreIndex">RowStoreIndex</PermittedValue>
+						<PermittedValue UiEditorLabel="RowCountSum">RowCountSum</PermittedValue>
+						<PermittedValue UiEditorLabel="ProtectionLevel">ProtectionLevel</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlStartDelimiter">SqlStartDelimiter</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlEndDelimiter">SqlEndDelimiter</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlIgnoreSchema">SqlIgnoreSchema</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlHashPattern">SqlHashPattern</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlStringExtractPattern">SqlStringExtractPattern</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlStringLoadPattern">SqlStringLoadPattern</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlDateExtractPattern">SqlDateExtractPattern</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlDateLoadPattern">SqlDateLoadPattern</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlStringDataType">SqlStringDataType</PermittedValue>
+						<PermittedValue UiEditorLabel="SqlAnsiStringDataType">SqlAnsiStringDataType</PermittedValue>
+						<PermittedValue UiEditorLabel="SettingValue">SettingValue</PermittedValue>
+						<!--
+						<PermittedValue UiEditorLabel="CreateMartView">CreateMartView</PermittedValue>
+						<PermittedValue UiEditorLabel="7ZipPathConfigurationValue">7ZipPath</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendBusinessKeyConfigurationValue">AppendBusinessKey</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendDataTypeMappingConfigurationValue">AppendDataTypeMapping</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendDomainConfigurationValue">AppendDomain</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendRecordSourceConfigurationValue">AppendRecordSource</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendSchemaDmConfigurationValue">AppendSchemaDm</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendSchemaPsaConfigurationValue">AppendSchemaPsa</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendSchemaRdvConfigurationValue">AppendSchemaRdv</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendSchemaStgConfigurationValue">AppendSchemaStg</PermittedValue>
+						<PermittedValue UiEditorLabel="AppendSurrogateKeyConfigurationValue">AppendSurrogateKey</PermittedValue>
+						<PermittedValue UiEditorLabel="AzCopyPathConfigurationValue">AzCopyPath</PermittedValue>
+						<PermittedValue UiEditorLabel="AzureDestContainerNameConfigurationValue">AzureDestContainerName</PermittedValue>
+						<PermittedValue UiEditorLabel="AzureDestStorageAccountKeyConfigurationValue">AzureDestStorageAccountKey</PermittedValue>
+						<PermittedValue UiEditorLabel="AzureDestStorageAccountNameConfigurationValue">AzureDestStorageAccountName</PermittedValue>
+						<PermittedValue UiEditorLabel="AzureSourceContainerNameConfigurationValue">AzureSourceContainerName</PermittedValue>
+						<PermittedValue UiEditorLabel="AzureSourceStorageAccountKeyConfigurationValue">AzureSourceStorageAccountKey</PermittedValue>
+						<PermittedValue UiEditorLabel="AzureSourceStorageAccountNameConfigurationValue">AzureSourceStorageAccountName</PermittedValue>
+						<PermittedValue UiEditorLabel="ConcatenatorBusinessKeyConfigurationValue">ConcatenatorBusinessKey</PermittedValue>
+						<PermittedValue UiEditorLabel="ConfigurationPathConfigurationValue">ConfigurationPath</PermittedValue>
+						<PermittedValue UiEditorLabel="DmAppendDimConfigurationValue">DmAppendDim</PermittedValue>
+						<PermittedValue UiEditorLabel="DmAppendExternalConfigurationValue">DmAppendExternal</PermittedValue>
+						<PermittedValue UiEditorLabel="DmAppendFactConfigurationValue">DmAppendFact</PermittedValue>
+						<PermittedValue UiEditorLabel="DmAppendStagingConfigurationValue">DmAppendStaging</PermittedValue>
+						<PermittedValue UiEditorLabel="DvAppendBridgeConfigurationValue">DvAppendBridge</PermittedValue>
+						<PermittedValue UiEditorLabel="DvAppendHubConfigurationValue">DvAppendHub</PermittedValue>
+						<PermittedValue UiEditorLabel="DvAppendLinkConfigurationValue">DvAppendLink</PermittedValue>
+						<PermittedValue UiEditorLabel="DvAppendLinkSatelliteConfigurationValue">DvAppendLinkSatellite</PermittedValue>
+						<PermittedValue UiEditorLabel="DvAppendPointInTimeConfigurationValue">DvAppendPointInTime</PermittedValue>
+						<PermittedValue UiEditorLabel="DvAppendReferenceConfigurationValue">DvAppendReference</PermittedValue>
+						<PermittedValue UiEditorLabel="DvAppendSatelliteConfigurationValue">DvAppendSatellite</PermittedValue>
+						<PermittedValue UiEditorLabel="DvDefaultSchemaConfigurationValue">DvDefaultSchema</PermittedValue>
+						<PermittedValue UiEditorLabel="DvPreviewSchemaConfigurationValue">DvPreviewSchema</PermittedValue>
+						<PermittedValue UiEditorLabel="DvSnapshotFromDateConfigurationValue">DvSnapshotFromDate</PermittedValue>
+						<PermittedValue UiEditorLabel="DvSnapshotIncrementalConfigurationValue">DvSnapshotIncremental</PermittedValue>
+						<PermittedValue UiEditorLabel="DvSnapshotLastModifiedDateConfigurationValue">DvSnapshotLastModifiedDate</PermittedValue>
+						<PermittedValue UiEditorLabel="DvSnapshotToDateConfigurationValue">DvSnapshotToDate</PermittedValue>
+						<PermittedValue UiEditorLabel="EnableEndDateRdvConfigurationValue">EnableEndDateRdv</PermittedValue>
+						<PermittedValue UiEditorLabel="EnableInitialRecordRdvConfigurationValue">EnableInitialRecordRdv</PermittedValue>
+						<PermittedValue UiEditorLabel="EnableRollbackPsaConfigurationValue">EnableRollbackPsa</PermittedValue>
+						<PermittedValue UiEditorLabel="EnableRollbackRdvConfigurationValue">EnableRollbackRdv</PermittedValue>
+						<PermittedValue UiEditorLabel="EnableRollbackStgConfigurationValue">EnableRollbackStg</PermittedValue>
+						<PermittedValue UiEditorLabel="ExportPathConfigurationValue">ExportPath</PermittedValue>
+						<PermittedValue UiEditorLabel="HashBusinessKeyConfigurationValue">HashBusinessKey</PermittedValue>
+						<PermittedValue UiEditorLabel="ImportPathConfigurationValue">ImportPath</PermittedValue>
+						<PermittedValue UiEditorLabel="KeyEndsWithConfigurationValue">KeyEndsWith</PermittedValue>
+						<PermittedValue UiEditorLabel="LookupAddFilterTableConfigurationValue">LookupAddFilterTable</PermittedValue>
+						<PermittedValue UiEditorLabel="LookupCachePathConfigurationValue">LookupCachePath</PermittedValue>
+						<PermittedValue UiEditorLabel="LookupTablePatternConfigurationValue">LookupTablePattern</PermittedValue>
+						<PermittedValue UiEditorLabel="RootPathConfigurationValue">RootPath</PermittedValue>
+						<PermittedValue UiEditorLabel="RowAuditIdConfigurationValue">RowAuditId</PermittedValue>
+						<PermittedValue UiEditorLabel="RowChangeTypeConfigurationValue">RowChangeType</PermittedValue>
+						<PermittedValue UiEditorLabel="RowEffectiveFromDateConfigurationValue">RowEffectiveFromDate</PermittedValue>
+						<PermittedValue UiEditorLabel="RowEffectiveToDateConfigurationValue">RowEffectiveToDate</PermittedValue>
+						<PermittedValue UiEditorLabel="RowEndDateConfigurationValue">RowEndDate</PermittedValue>
+						<PermittedValue UiEditorLabel="RowHashConfigurationValue">RowHash</PermittedValue>
+						<PermittedValue UiEditorLabel="RowHashKeyConfigurationValue">RowHashKey</PermittedValue>
+						<PermittedValue UiEditorLabel="RowHashSatConfigurationValue">RowHashSat</PermittedValue>
+						<PermittedValue UiEditorLabel="RowHashType1ConfigurationValue">RowHashType1</PermittedValue>
+						<PermittedValue UiEditorLabel="RowHashType2ConfigurationValue">RowHashType2</PermittedValue>
+						<PermittedValue UiEditorLabel="RowIsCurrentConfigurationValue">RowIsCurrent</PermittedValue>
+						<PermittedValue UiEditorLabel="RowIsDeletedConfigurationValue">RowIsDeleted</PermittedValue>
+						<PermittedValue UiEditorLabel="RowIsInferredConfigurationValue">RowIsInferred</PermittedValue>
+						<PermittedValue UiEditorLabel="RowLastSeenDateConfigurationValue">RowLastSeenDate</PermittedValue>
+						<PermittedValue UiEditorLabel="RowLoadSequenceConfigurationValue">RowLoadSequence</PermittedValue>
+						<PermittedValue UiEditorLabel="RowRecordSourceConfigurationValue">RowRecordSource</PermittedValue>
+						<PermittedValue UiEditorLabel="RowSourceIdConfigurationValue">RowSourceId</PermittedValue>
+						<PermittedValue UiEditorLabel="RowStartDateConfigurationValue">RowStartDate</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisBLOBTempStoragePathConfigurationValue">SsisBLOBTempStoragePath</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisBufferTempStoragePathConfigurationValue">SsisBufferTempStoragePath</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisCheckConstraintsConfigurationValue">SsisCheckConstraints</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisCommandTimeoutConfigurationValue">SsisCommandTimeout</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisDefaultBufferMaxRowsConfigurationValue">SsisDefaultBufferMaxRows</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisDefaultBufferSizeConfigurationValue">SsisDefaultBufferSize</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisDelayValidationConfigurationValue">SsisDelayValidation</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisEngineThreadsConfigurationValue">SsisEngineThreads</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisMaxConcurrentExecutablesConfigurationValue">SsisMaxConcurrentExecutables</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisMaximumInsertCommitSizeConfigurationValue">SsisMaximumInsertCommitSize</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisRowsPerBatchConfigurationValue">SsisRowsPerBatch</PermittedValue>
+						<PermittedValue UiEditorLabel="SsisValidateExternalMetadataConfigurationValue">SsisValidateExternalMetadata</PermittedValue>
+						<PermittedValue UiEditorLabel="SuffixOrPrefixColumnConfigurationValue">SuffixOrPrefixColumn</PermittedValue>
+						<PermittedValue UiEditorLabel="SuffixOrPrefixObjectConfigurationValue">SuffixOrPrefixObject</PermittedValue>
+						<PermittedValue UiEditorLabel="UseBimlCatalogConfigurationValue">UseBimlCatalog</PermittedValue>
+						<PermittedValue UiEditorLabel="UseRecordSourceAsAppendConfigurationValue">UseRecordSourceAsAppend</PermittedValue>
+						<PermittedValue UiEditorLabel="UseRecordSourceAsSchemaConfigurationValue">UseRecordSourceAsSchema</PermittedValue>
+						-->
+					</PermittedValues>
+				</PermittedValueSet>
+				<PermittedValueSet Name="AttributeValues">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="EncryptSensitiveWithUserKey">EncryptSensitiveWithUserKey</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>	
+				<PermittedValueSet Name="AttributeProperties">
+					<PermittedValues>
+						<PermittedValue UiEditorLabel="IsPrimaryHub,AddKey">IsPrimaryHub,AddKey</PermittedValue>
+						<PermittedValue UiEditorLabel="IsPrimaryHub">IsPrimaryHub</PermittedValue>
+						<PermittedValue UiEditorLabel="AddKey">AddKey</PermittedValue>
+					</PermittedValues>
+				</PermittedValueSet>
+			</PermittedValueSets>
+		</MetadataModel>
+	</Metadata>
+</Biml>

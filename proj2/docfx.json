@@ -1,10 +1,11 @@
 {
   "metadata": [
     {
+
       "src": [
         {
           "files": [
-            "src/**/bin/Debug/**.dll"
+            "bimlstudio/**.cs"
           ],
           "exclude": [
             "**/obj/**",
@@ -12,18 +13,44 @@
           ]
         }
       ],
-      "dest": "api"
+      "dest": "bimlstudio/reference-documentation"
     },
+
     {
-      "src": "src2/**.cs",
-      "dest": "api-vb"
-    } 	
-  ],
+    "src": [
+      {
+        "files": [
+          "bimlflex/reference-documentation/**.cs"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_site/**"
+        ]
+      }
+    ],
+    "dest": "generated-bimlflex/reference-documentation"
+  }
+],
+
   "build": {
     "markdownEngineName": "markdig",
-    "content": [
 
+
+    
+    "content": [
       {
+        "files": [ "**/*.yml" ],
+        "src": "generated-bimlflex",
+        "dest": "bimlflex",
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "**_site/**",
+          "**proj2/**"
+        ]
+      },
+      {
+
         "files": [
           "**index.md",
           "**toc.yml",
@@ -35,9 +62,9 @@
           "**_site/**",
           "**proj2/**",
           "**posts/**",
-          "readme.md"
+          "**/**readmex.md"
         ],
-      "cwd": "../"
+        "cwd": "../"
     }
     ],
 
@@ -58,7 +85,7 @@
       }
     ],
 
-    "overwrite": [
+    "overwrite-placeholder": [
       {
         "files": [
           "apidoc/**.md"
@@ -72,8 +99,8 @@
     ],
 
     "dest": "_site",
-	"template": [
-		"default"
+    "template": [
+      "default"
     ]
   }
 }

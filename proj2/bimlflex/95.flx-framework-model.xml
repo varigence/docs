@@ -1,0 +1,43 @@
+﻿<Biml xmlns="http://schemas.varigence.com/biml.xsd">
+	<Metadata>
+		<MetadataModel Name="BimlFlexModel">
+			<Annotations>
+				<Annotation AnnotationType="Description">xxxxx</Annotation>
+			</Annotations>
+			<Entities>
+				<Entity Name="Versions" UiEditorNameComponents="Version">
+					<Annotations>
+						<Annotation AnnotationType="Description">Provide selected Customer and Version details to metadata instance</Annotation>
+					</Annotations>
+					<Properties>
+						<Property Name="CustomerUID" DataType="String" Length="50" Category="Version" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Selected Customer Guid</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Customer" DataType="String" Length="100" Category="Version" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Selected Customer Name</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="VersionUID" DataType="String" Length="50" Category="Version" IsUiEditorVisible="false">
+							<Annotations>
+								<Annotation AnnotationType="Description">Selected Version Guid</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="IsCurrent" DataType="String" Length="100" Category="Version" PermittedValueSetName="Booleans">
+							<Annotations>
+								<Annotation AnnotationType="Description">XXXX</Annotation>
+							</Annotations>
+						</Property>
+						<Property Name="Comments" DataType="String" Length="100" Category="Version" >
+							<Annotations>
+								<Annotation AnnotationType="Description">XXXX</Annotation>
+							</Annotations>
+						</Property>
+					</Properties>
+				</Entity>
+			</Entities>
+		</MetadataModel>
+	</Metadata>
+</Biml>

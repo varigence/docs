@@ -17,4 +17,7 @@
   {{#_noindex}}<meta name="searchOption" content="noindex">{{/_noindex}}
   {{#_enableSearch}}<meta property="docfx:rel" content="{{_rel}}">{{/_enableSearch}}
   {{#_enableNewTab}}<meta property="docfx:newtab" content="true">{{/_enableNewTab}}
+  <script src="https://cdn.rawgit.com/knsv/mermaid/0.5.6/dist/mermaid.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/knsv/mermaid/0.5.6/dist/mermaid.css">
+  <script>mermaid.initialize({startOnLoad:true});</script>
 </head>
