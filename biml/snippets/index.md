@@ -16,6 +16,6 @@ While the forums are the best way to get answers, if your question contains prop
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[Biml Language Reference](https://varigence.com/Documentation/Language/Index)
+@biml-language-reference
 
-[Biml API Reference](https://varigence.com/Documentation/Api/Index)
+@biml-api-reference
