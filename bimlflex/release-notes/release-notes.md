@@ -4,6 +4,16 @@ name: BimlFlex Release Notes
 ---
 # Release Notes
 
+## Bundle 62907
+
+* Added support for `ParentProject` targets in `CustomAttributes`
+* Updated BimlFlex Utility to update new local application data folder location for template Bundle
+* Added Batch for re-initialisation of all PSA to Staging packages
+* Added Validator for Self-referencing Business Keys
+* Added validator for BimlCatalog connection for `ADONET` and `MSSQL/SQL Server` properties
+* Added support for SQL Server 2017 for custom Script components
+* Added initial support for integrated source Delete detection
+
 ## Bundle 62901
 
 * Added support for `ExcludeFromBuild` objects when using the Data Vault Accelerator
@@ -48,7 +58,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="@@global" #>
-<Parameter Name="YourName" DataType="String" IsRequired="true">DefaultParameterValue</Parameter>
+<Parameter Name="YourParameterName" DataType="String" IsRequired="true">DefaultParameterValue</Parameter>
 ```
 
 ## Bundle 80321
@@ -223,10 +233,10 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 
 * Update to Infer Hub lookup to use correct business key and error column
 * Update to Lookup join to better accommodate differences between Sat and Lsat
-* Update to Azure SQL Dw code where Decimal conversion could swap scale and precision
+* Update to Azure SQL Data Warehouse code where Decimal conversion could swap scale and precision
 * Update to formatting of Point In Time Stored Procedures
-* Update to `ExcludeFromBuild` when using `ObjectInheritance` to include the table for modeling
-* Update to precedence constraints for File to Azure SQL Dw template
+* Update to `ExcludeFromBuild` when using `ObjectInheritance` to include the table for modelling
+* Update to precedence constraints for File to Azure SQL Data Warehouse template
 * Added support for ODBC parameterized queries as Expressions
 * Updates to Object Model Overrides for Staging Layer
 
@@ -236,7 +246,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Added optional `ProtectionLevel` to `CustomAttributes` to enable ability to compile for `EncryptSensitiveWithUserKey`
 * Updates to BimlCatalog Orchestration to use Project Name when logging to accommodate duplicate package names
 * Added `ApplyLookupFilterRdv` to filter SSIS lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This cross database join functionality requires the databases to be co-located or the tables to be in the same database
-* Added Lookup Filter for Surrogate Key Dimensional LookupSql
+* Added Lookup Filter for Surrogate Key Dimensional `LookupSql`
 * Added Foreign Keu Lookups for dimension surrogate key lookups
 * Updates to `RowCount` SSIS Custom Component logic to add aggregate columns for source queries
 * Added `RowCountSum` to the Metadata model and Add-in drop down for `CustomAttributes`
@@ -311,14 +321,14 @@ They now require `sourceTable` and `destinationTable` definitions
 * Added metadata model validators to the bundle
 * Added initial support for toggle-able output of flat Biml and DDL for entire BimlFlex solution on build
 * Added `BimlFlexJsonImporter` to import customer metadata.
-* Added Json MetadataPump and add DebugUserSettings to allow Varigence BimlFlex Support to simulate a user project
-* Fixed an issue with IsNotPersistent logic
+* Added Json MetadataDump and add DebugUserSettings to allow Varigence BimlFlex Support to simulate a user project
+* Fixed an issue with `IsNotPersistent` logic
 * Added `BimlCatalogWrapper` project for OpenSource
 * Added support for same name for STG/PSA database
 * Fixed an issue with Flat File template
-* Fixed an issue with IsInitialLoad and Add Inferred Hubs from Sat and Links
+* Fixed an issue with `IsInitialLoad` and Add Inferred Hubs from Sat and Links
 * Fixed an issue with PSA Merge Alias for PrimaryKey Join
-* Fixed an issue for PSA and IsNotPersistent
+* Fixed an issue for PSA and `IsNotPersistent`
 
 ### Metadata Management
 
