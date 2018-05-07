@@ -44,7 +44,7 @@ A configuration setting has been added to the Bundle options that controls the g
 BimlFlex projects can now be built using the BimlC Biml Compiler with settings files to control scope of build. This can be used for scripted deployments or as part of a Continuous Integration, Continuous Delivery. As an example it is commonly used to create SQL artefacts and deploying SQL databases and tables before SSIS packages are created.
 A BimlFlex Build will include a reference to the `bimlc.exe` build command line expression and response file for scenarios where this should be automated at a later stage.
 
-```
+```batchfile
 To replicate this build with bimlc.exe. Use the bimlc.resp file:
 bimlc.exe @"C:\Path\Project\output\ProjectName.mst.bimlc.resp"
 ```

@@ -163,3 +163,98 @@ Nomnoml
   [subA]-:>[sub C]
 ]
 ```
+
+## Image with centering and sizing
+
+![Implementation Architecture Example -50% -center](user-guide/images/bimlflex-ss-v5-data-mart-implementation-architecture-example.png "Implementation Architecture Example")
+
+```md
+![Implementation Architecture Example -50% -center](user-guide/images/bimlflex-ss-v5-data-mart-implementation-architecture-example.png "Implementation Architecture Example")
+```
+
+
+~~strike through~~ example
+
+~subscript~ example
+
+^superscript^ example
+
+++inserted++ example
+
+==marked== example
+
+## Table
+
+Right | Left | Default | Center
+-----:|:-----|---------|:-----:
+12    | 12   | 12      | 12
+123   | 123  | 123     | 123
+1     | 1    | 1       | 1
+
+
+## Header {#header1}
+
+[Link](#header1) back to header
+
+### Auto Header Link
+
+[Auto link](#auto-header-link)
+
+## Definition List
+
+Apple
+: Pomaceous fruit of plants of the genus Malus in  the family Rosaceae.
+
+Orange
+: The fruit of an evergreen tree of the genus Citrus.
+
+## Footnote
+
+This is an example[^3] of footnote usage.
+
+[^3]: An example footnote.
+
+## Abbreviations
+
+*[HTML]: Hypertext Markup Language
+
+Later in a text we are using HTML and it becomes an abbr tag HTML
+Abbreviation definitions can be anywhere in the document. They are stripped from the final document.
+Put them at the end if using, or use a global abbr file and include it globally for common abbr we want to use. future option?
+
+## Custom Containers
+
+:::{.alert .alert-info}
+This is a Bootstrap alert.
+:::
+
+## Custom image size using CSS
+
+custom css sample
+
+```css
+img[alt$="-fullwidth"]{
+  width:  100%;
+  display: block;
+}
+```
+
+The Markdown for image with size:
+
+```md
+![Picture of the Beach -fullwidth](beach.jpg)
+```
+
+## Testing stuff
+
+test batch file code highlighting
+
+```batchfile
+c:\test\ md dir
+call test.bat
+
+pushd %~dp0
+
+start "" BimlFlexUtility.exe /v
+
+```
