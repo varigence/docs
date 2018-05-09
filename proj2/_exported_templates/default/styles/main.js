@@ -26,6 +26,9 @@
                 }
                 // TODO: commented out for now
                 //adjustStoreBar();
+
+                
+        mermaid.init(undefined, $("code.lang-mermaid"));
             });
 
             // Using the search icon to toggle the search bar
