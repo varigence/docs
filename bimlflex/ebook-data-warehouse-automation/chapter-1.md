@@ -1,7 +1,7 @@
 # Chapter 1
 
-## Heading placeholder
+## Heading 
 
 Contents placeholder
 
-More contents
+### More contents
