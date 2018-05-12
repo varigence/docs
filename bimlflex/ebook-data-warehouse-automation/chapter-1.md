@@ -8,6 +8,8 @@
 
    A data warehouse (DW or DWH), also known as an enterprise **data warehouse** (EDW), is a system used for reporting and **data** analysis, and is considered a core component of business intelligence. DWs are central repositories of integrated **data** from various sources. 
 
+   A data warehouse is a key enabler of BI. It is ‘fed’ data by operational systems (such as a transaction database, customer database, call centre system) to create one repository of information. And this repository is then used for different activities like reporting and analytics. 
+
    The important fact is that a transactional database doesn’t lend itself to analytics. To effectively perform analytics, you need a data warehouse. A data warehouse is a database of a different kind: an OLAP (online analytical processing) database. A data warehouse exists as a layer on top of another database or databases (usually OLTP databases). The data warehouse takes the data from all these databases and creates a layer optimized for and dedicated to analytics.
 
    A database designed to handle transactions isn’t designed to handle analytics. It isn’t structured to do analytics well. A data warehouse, on the other hand, is structured to make analytics fast and easy.
