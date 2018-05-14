@@ -62,7 +62,7 @@
           "**_site/**",
           "**proj2/**",
           "**posts/**",
-          "**/**readmex.md"
+          "**/**readme.md"
         ],
         "cwd": "../"
     }
