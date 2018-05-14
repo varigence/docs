@@ -18,6 +18,18 @@
 
    The data warehouse also organises and structures data to make it understandable and useful for consumption by many different business stakeholders. This business intelligence gives organisations the edge, making them more competitive, more customer focused, more profitable.
 
+   - Data warehouse is an information system that contains historical and commutative data from single or multiple sources.
+   - A data warehouse is subject oriented as it offers information regarding subject instead of organization's ongoing operations.
+   - In Data Warehouse, integration means the establishment of a common unit of measure for all similar data from the different databases
+   - Data warehouse is also non-volatile means the previous data is not erased when new data is entered in it.
+   - A Datawarehouse is Time-variant as the data in a DW has high shelf life.
+   - There are 5 main components of a Datawarehouse. 1) Database 2) ETL Tools 3) Meta Data 4) Query Tools 5) DataMarts
+   - These are four main categories of query tools 1. Query and reporting, tools 2. Application Development tools, 3. Data mining tools 4. OLAP tools
+   - The data sourcing, transformation, and migration tools are used for performing all the conversions and summarizations.
+   - In the Data Warehouse Architecture, meta-data plays an important role as it specifies the source, usage, values, and features of data warehouse data.
+
+    
+
    
 
 2. ##### What is Data Warehouse Automation?
