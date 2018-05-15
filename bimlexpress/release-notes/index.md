@@ -1,4 +1,4 @@
-# BimlExpress Documentation
+# BimlExpress Release Notes
 
 ## BimlExpress
 
