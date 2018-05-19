@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-ci-cd-process
+uid: bimlflex-continuous-integration-and-continuous-delivery
 title: Continuous Integration and Continuous Delivery
 ---
 # Continuous Integration and Continuous Delivery

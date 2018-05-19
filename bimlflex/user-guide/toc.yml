@@ -79,5 +79,5 @@
   - name: Deployment Guide
     href: deployment-guide.md
   - name: Continuous Integration and Deployment
-    href: ci-cd-process.md
+    href: continuous-integration-and-continuous-delivery.md
     
