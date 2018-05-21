@@ -89,25 +89,25 @@ Other
 
 ## Performance
 
-•    Fixed issue where an ICE would be generated on builds with warnings.
-•    Added the `tempPath` setting to the Biml compiler. This setting specifies the temporary path that will be used for intermediate assets during the build process.
-•    Removed memory leak due to repeated `xslt` transforms.
-•    Now auto-generating BimlC Response file on every build and placing it in the project directory.
-•    Reduced memory and eliminated Out Of Memory exceptions when creating ISPAC files for large SSIS projects.
+* Fixed issue where an ICE would be generated on builds with warnings.
+* Added the `tempPath` setting to the Biml compiler. This setting specifies the temporary path that will be used for intermediate assets during the build process.
+* Removed memory leak due to repeated `xslt` transforms.
+* Now auto-generating BimlC Response file on every build and placing it in the project directory.
+* Reduced memory and eliminated Out Of Memory exceptions when creating ISPAC files for large SSIS projects.
 
 ## Provider Support
 
-•    Fixed data type mappings for Excel `GetDatabaseSchema()`.
-•    Added logging to `GetQuerySchema()` method.
-•    Added compression to SQL Server `GetDatabaseSchema()`.
-•    Change the DB2 provider to reference `SYSIBM` system tables instead of the `SYSCAT` views, as they are sometimes missing.
-•    Fixed Excel support in OLEDB connections in Biml.
-•    Fixed date datatype mapping in ACE OLEDB provider.
-•    Added custom type mappings to `ExternalDataAccess.GetQuerySchema()`.
-•    Fixed OleDb source and destination for `geography`, `geometry`, `hierarchyid`, and `image` data types.
-•    Fixed data type mappings in Flat File Source around `NTEXT` versus `nvarchar`.
-•    Fixed data type mappings in CDC Source.
-•    Fixed issue where ACE OLEDB provider was not being used when the connection string called for it.
+* Fixed data type mappings for Excel `GetDatabaseSchema()`.
+* Added logging to `GetQuerySchema()` method.
+* Added compression to SQL Server `GetDatabaseSchema()`.
+* Change the DB2 provider to reference `SYSIBM` system tables instead of the `SYSCAT` views, as they are sometimes missing.
+* Fixed Excel support in OLEDB connections in Biml.
+* Fixed date datatype mapping in ACE OLEDB provider.
+* Added custom type mappings to `ExternalDataAccess.GetQuerySchema()`.
+* Fixed OleDb source and destination for `geography`, `geometry`, `hierarchyid`, and `image` data types.
+* Fixed data type mappings in Flat File Source around `NTEXT` versus `nvarchar`.
+* Fixed data type mappings in CDC Source.
+* Fixed issue where ACE OLEDB provider was not being used when the connection string called for it.
 
 ## Biml Language
 
@@ -134,7 +134,7 @@ Other
 ## Project Settings and Command Line Options (CL)
 
 * Updated license key specification on command line to use the entered license key, even if it is not successfully saved to the registry. This will help in CL and automation scenarios where proxy accounts are used
-* Ability to create `Bimlc` response files for CL compiling
+* Ability to create `Bimlc` response files for command line compiling
 * Added DDL Build mode options to project settings and CL options for selecting the type of DDL script emission to do for relational objects in the project
 * Added an option in the Project Settings panel to create a `Bimlc` response file for use with `bimlc.exe`
 * Set `IsCleanOutputFolderEnabled` to true by default for new projects
