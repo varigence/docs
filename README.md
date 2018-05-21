@@ -14,8 +14,9 @@ Sample extensions For [Visual Studio Code](https://code.visualstudio.com/), run 
 
 * `code --install-extension DavidAnson.vscode-markdownlint`
 * `code --install-extension shd101wyy.markdown-preview-enhanced`
-* `code --install-extension tintoy.docfx-assistant`
+* ~~`code --install-extension tintoy.docfx-assistant`~~ (broken in current version of VS Code)
 * `code --install-extension docsmsft.docs-markdown`
+* `code --install-extension ms-docfx.docfx`
 
 Guidelines for DocFX based markdown format and styling can be [found here](http://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
 
