@@ -1064,3 +1064,7 @@ img[alt~="-center"]{
   display: block;
 }
 
+img[alt~="-h38px"]{
+  height: 38px;
+  display: block;
+}
