@@ -1,5 +1,7 @@
 # Varigence Documentation
 
+![](https://bimlflex.visualstudio.com/_apis/public/build/definitions/4c2cadba-e697-407d-8279-993c0491bd0b/2/badge)
+
 Product documentation contents is located in their respective folder.
 
 ## DocFX documentation site
