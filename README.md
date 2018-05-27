@@ -26,6 +26,19 @@ Rendering engine is Markdig. Additional styling and formatting options described
 
 Table of contents files are stored as toc.yml files. Refer to the [DocFX page on toc's](https://dotnet.github.io/docfx/tutorial/intro_toc.html) for more information
 
+## DocFX PDF Builds
+
+to build the PDF version the following prerequisites are needed:
+
+* [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
+* Add `C:\Program Files\wkhtmltopdf\bin` to Path
+
+Build sample PDF version using the following command, or use the buildPfd.bat file
+
+`docfx pdf`
+
+More overview information on building to PDF is [available in the tutorial](https://dotnet.github.io/docfx/tutorial/walkthrough/walkthrough_generate_pdf.html)
+
 ## Documentation Contents
 
 Main product content pages:
