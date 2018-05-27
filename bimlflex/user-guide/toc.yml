@@ -10,12 +10,15 @@
     href: server-installation.md
   - name: Initial Setup and Configuration
     href: initial-setup-and-configuration.md
+
+  - name: BimlFlex Database
+    href: bimlflex-database.md
+  - name: BimlCatalog Database
+    href: bimlcatalog-database.md
   - name: Upgrade and Testing Process
     href: upgrade-and-testing-process.md
   - name: Support Process
     href: support-process.md
-  - name: Support Utility Application
-    href: support-utility-application.md
 
 - name: Metadata and Settings
   items:
