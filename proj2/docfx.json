@@ -1,4 +1,10 @@
 {
+  "globalMetadata": 
+  {
+    "_disableContribution": true
+  },
+
+
   "metadata": [
     {
 
@@ -35,8 +41,6 @@
   "build": {
     "markdownEngineName": "markdig",
 
-
-    
     "content": [
       {
         "files": [ "**/*.yml" ],
@@ -102,5 +106,59 @@
     "template": [
       "default"
     ]
+  },
+
+  "pdf": {
+    "content": [
+      {
+        "files": [
+          "**index.md",
+          "**toc.yml",
+          "**.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "**_site/**",
+          "**proj2/**",
+          "**posts/**",
+          "**/**readme.md"
+        ],
+        "cwd": "../"
+      },
+      {
+        "files": "pdf/toc.yml"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "bimlflex/user-guide/images/**",
+          "bimlexpress/images/**",
+          "content/**"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "**_site/**",
+          "**proj2/**"
+        ],
+        "cwd": "../"
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_site_pdf/**"
+        ]
+      }
+    ],
+    "dest": "_site_pdf"
   }
+
 }
