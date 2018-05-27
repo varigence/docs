@@ -1,4 +1,8 @@
-# Installing The BimlFlex Add-In
+---
+uid: bimlflex-trial-process-installing-bimlflex
+title: Installing The BimlFlex Add-In
+---
+# Installing BimlFlex
 
 ## Supporting Videos
 
@@ -12,7 +16,7 @@
 
 ## BimlFlex
 
-The BimlFlex installation installs the BimlFlex Excel based metadata editor. This is a plugin in to Excel and will be visible as a separate tab in the Excel ribbon when the BimlFlex-enabled Excel workbook is opened from a BimlFlex project.
+The BimlFlex installation installs the BimlFlex Excel-based metadata editor. This is a plugin in to Excel and will be visible as a separate tab in the Excel ribbon when the BimlFlex-enabled Excel workbook is opened from a BimlFlex project.
 
 When installing it is important to match the Excel bitness version. Verify the Excel bitness version before starting the installation and only install the matching version of BimlFlex.
 
