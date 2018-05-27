@@ -31,7 +31,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 
 More information on this is available in this video:
 
-[https://www.youtube.com/watch?v=4V8v4Brbg7E](https://www.youtube.com/watch?v=4V8v4Brbg7E)
+![BimlFlex - Parameterize Connections](https://www.youtube.com/watch?v=4V8v4Brbg7E?rel=0&autoplay=0)
 
 ## Visual Studio SQL Server Data Tools, SSDT, projects
 

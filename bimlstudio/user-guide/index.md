@@ -1,6 +1,8 @@
-# BimlStudio Documentations
-
-## BimlStudio User Guide
+---
+uid: bimlstudio-user-guide
+title: BimlStudio User Guide
+---
+# BimlStudio User Guide
 
 The BimlStudio User Guide describes all aspects of the BimlStudio user interface.
 

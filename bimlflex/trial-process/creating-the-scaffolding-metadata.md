@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Creating Sample Metadata](https://www.youtube.com/watch?v=YJTrhoQW6qw)
+![Creating Sample Metadata](https://www.youtube.com/watch?v=YJTrhoQW6qw?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 

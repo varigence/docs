@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Creating and Configuring a BimlFlex Project](https://www.youtube.com/watch?v=Bc3pCPAYgpE)
+![Creating and Configuring a BimlFlex Project](https://www.youtube.com/watch?v=Bc3pCPAYgpE?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 

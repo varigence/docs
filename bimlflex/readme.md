@@ -18,8 +18,8 @@ Structural changes and updates/investigations:
 1. lint and spell check all contents. decide on us/uk/au English and update consistently
 1. update all video links to use markdown and add the rel/autoplay flags
 1. image sizing in markdown, update css to provide src options for sizing files in markdown syntax or similar, refer: https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown do more testing in DocFX/markdig to see what works best
-1. implement yaml frontmatter for posts folder for the blog
-1. options for centred youtube videos in paragraph
+1. [] implement yaml frontmatter for posts folder for the blog
+1. [x] options for centred youtube videos in paragraph
 1. formatting options for multicolumns
 1. add figure contents for all figures https://github.com/lunet-io/markdig/blob/master/src/Markdig.Tests/Specs/FigureFooterAndCiteSpecs.md
 1. 
@@ -80,9 +80,9 @@ Main structure of contents, to be maintained in toc as well as folders to make s
             - [] source-to-staging-templates.md, needs review and update to new version
             - [] ssis-custom-components.md, format and update, link to Catalog site, remove with new version that runs without the custom components
             - [] support-process.md, update, complete rewrite without reference to portal, support site, utility app etc. needs new version information on creating/extracting metadata and project contents etc.
-            - [] support-utility-application.md, to be deleted
-            - [] upgrade-and-testing-process.md, update with new version information
-            - [] upgrading-bimlflex-through-bimlstudio.md, update with new version information
+            - [x] support-utility-application.md, to be deleted
+            - [x] upgrade-and-testing-process.md, update with new version information
+            - [x] upgrading-bimlflex-through-bimlstudio.md, update with new version information
 
     - trial process
         - TODO: Update to match new build

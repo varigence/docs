@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/bBlYkYchZOo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+![Installing the SSIS Components](https://www.youtube.com/watch?v=bBlYkYchZOo?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 

@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Configurations and Settings](https://www.youtube.com/watch?v=yMDi0RaB9G8)
+![Configurations and Settings](https://www.youtube.com/watch?v=yMDi0RaB9G8?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 

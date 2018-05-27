@@ -8,19 +8,19 @@ BimlFlex offers users the ability to automate the development of best practice E
 
 In this session, we explore the process of configuring Source to Staging process.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/iNBLcpGalLc?rel=0" frameborder="0" allowfullscreen></iframe>
+![03 BimlFlex Source To Staging](https://www.youtube.com/watch?v=iNBLcpGalLc?rel=0&autoplay=0)
 
 ### 05.BimlFlex - Object Inheritance
 
 In this session we look at Object Inheritance to reuse metadata.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/5IRsoePFcjc?rel=0" frameborder="0" allowfullscreen></iframe>
+![05 BimlFlex Object Inheritance](https://www.youtube.com/watch?v=5IRsoePFcjc?rel=0&autoplay=0)
 
 ### 13.BimlFlex - Import Files
 
 In this session we look at how to configure flat files.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/AHOxGcsrZaw?rel=0" frameborder="0" allowfullscreen></iframe>
+![13 BimlFlex Import Files](https://www.youtube.com/watch?v=AHOxGcsrZaw?rel=0&autoplay=0)
 
 ## Source to Staging
 

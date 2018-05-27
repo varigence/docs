@@ -22,7 +22,7 @@ If the key is missing, please contact Varigence BimlFlex Support at [bimlflex-su
 
 In this session, we go through the initial configuration of the BimlFlex project. We will cover the initial deployment of BimlFlex and BimlCatalog databases, create our first metadata instance.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/qhDTwv-jYKc?rel=0" frameborder="0" allowfullscreen></iframe>
+![01 BimlFlex Initial Configuration](https://www.youtube.com/watch?v=qhDTwv-jYKc?rel=0&autoplay=0)
 
 ## Creating the BimlFlex project
 

@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/QmUDBc0CfiU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+![Setting up AdventureWorksLT](https://www.youtube.com/watch?v=QmUDBc0CfiU?rel=0&autoplay=0)
 
 ## Supporting Documentation
 

@@ -11,7 +11,7 @@ title: Installing BimlStudio
 ## Supporting BimlFlex Documentation
 
 - @bimlflex-developer-installation
-- [BimlStudio User Guide](https://varigence.com/Documentation/BimlStudio/)
+- @bimlstudio-user-guide
 
 ## BimlStudio
 
