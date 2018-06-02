@@ -1,13 +1,6 @@
 {
-  "globalMetadata": 
-  {
-    "_disableContribution": true
-  },
-
-
   "metadata": [
     {
-
       "src": [
         {
           "files": [
@@ -104,11 +97,21 @@
 
     "dest": "_site",
     "template": [
-      "default"
-    ]
+      "templates/varigence-template-html"
+    ],
+    "globalMetadata": 
+    {
+      "_disableContribution": true
+    }
   },
 
   "pdf": {
+    "markdownEngineName": "markdig",
+    "template": [
+      "templates/pdf.default",
+      "templates/varigence-template-pdf"
+    ],
+
     "content": [
       {
         "files": [
@@ -120,6 +123,7 @@
           "**/bin/**",
           "**/obj/**",
           "**_site/**",
+          "**_pdf/**",
           "**proj2/**",
           "**posts/**",
           "**/**readme.md"
@@ -154,11 +158,11 @@
         "exclude": [
           "**/bin/**",
           "**/obj/**",
-          "_site_pdf/**"
+          "_pdf/**"
         ]
       }
     ],
-    "dest": "_site_pdf"
+    "dest": "_pdf"
   }
 
 }

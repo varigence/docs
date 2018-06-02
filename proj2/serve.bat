@@ -1,2 +1,3 @@
 docfx metadata docfx.json
-docfx build docfx.json -t _exported_templates\default\ --serve
+rem docfx build docfx.json -t varigence-template-html\ --serve
+docfx build docfx.json --serve
