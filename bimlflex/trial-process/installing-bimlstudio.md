@@ -1,17 +1,19 @@
 ---
-uid: bimlflex-trial-process-installing-bimlStudio
+uid: bimlflex-trial-process-installing-bimlstudio
 title: Installing BimlStudio
 ---
 # Installing BimlStudio
 
 ## Supporting Videos
 
-![Installing BimlFlex Add In](https://www.youtube.com/watch?v=e_wzLtyGVS8?rel=0&autoplay=0)
+![Installing BimlStudio -center](https://www.youtube.com/watch?v=e_wzLtyGVS8?rel=0&autoplay=0 "Installing BimlStudio")
 
 ## Supporting BimlFlex Documentation
 
 - @bimlflex-developer-installation
 - @bimlstudio-user-guide
+- @bimlflex-analyst-installation
+- @bimlflex-server-installation
 
 ## BimlStudio
 
@@ -20,6 +22,8 @@ BimlStudio is the development environment provided for BimlFlex. The installatio
 BimlStudio is available in 2 bitness flavors, 32 and 64 bit. For the trial it is recommended that both versions are installed.
 
 For scenarios where only 32 bit SSIS build components are available locally it is still possible to run the 64 bit version of BimlStudio and build using the 32 bit components by configuring the build process to target 32 bit.
+
+![Installing BimlStudio -center -50%](../user-guide/images/bimlflex-ss-v5-bimlstudio-installer-install.png)
 
 Once the installation is completed it is possible to start BimlStudio.
 

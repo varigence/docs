@@ -4,11 +4,22 @@ name: BimlFlex Release Notes
 ---
 # Release Notes
 
+## BimlStudio 2018.1 Note
+
+> [!WARNING]
+> BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017 we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please send an email to bimlflex-support@varigence.com to get a copy.
+
+## Bundle 62925
+
+* Add: PSA Merge SQL Statement now raises an error on transaction rollback for audit and logging
+* Update: Lookup join from DV Satellites and Link Satellites now filter better on existing records
+* Add: SSIS Delay Validation on Connections
+
 ## Bundle 62907
 
 * Added support for `ParentProject` targets in `CustomAttributes`
 * Updated BimlFlex Utility to update new local application data folder location for template Bundle
-* Added Batch for re-initialisation of all PSA to Staging packages
+* Added Batch for re-initialization of all PSA to Staging packages
 * Added Validator for Self-referencing Business Keys
 * Added validator for BimlCatalog connection for `ADONET` and `MSSQL/SQL Server` properties
 * Added support for SQL Server 2017 for custom Script components
@@ -23,7 +34,7 @@ name: BimlFlex Release Notes
 
 ## Bundle 62823
 
-* Added logic to convert `TEXT` and `NTEXT` Source columns to corresponding `VARCHAR` for Blob storage loads to accommodate Polybase
+* Added logic to convert `TEXT` and `NTEXT` Source columns to corresponding `VARCHAR` for Blob storage loads to accommodate PolyBase
 * Added Validator to ensure Target Dimensions has a separate Business Key and Primary Key defined
 * Added a `CDATA` wrapper to comments and descriptions to accommodate xml control characters. In certain scenarios some characters would introduce issues in the BimlStudio parsing of contents.
 
@@ -47,7 +58,7 @@ name: BimlFlex Release Notes
 > [!WARNING]
 > The default setting for `DvAccelerateLinkSatellite` is `N`.
 >
-> Existing projects using Link Satellites should update it to `Y` to maintain behaviour.
+> Existing projects using Link Satellites should update it to `Y` to maintain behavior
 
 ## Bundle 80325
 
@@ -67,8 +78,8 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Update: Split `Use My ConnectionStrings` and `Use My Exclusions` in BimlStudio and BimlFlex Excel Add-in configuration
 * New: Add `SsisAnnotations` to all packages
 * Update: Change RowCount object name for Data Vault loads to reference destination rather than source object
-* Update: Fix behaviour for Azure DW ELT not deriving BK columns
-* Update: Fix behaviour for SSIS Connection Managers for Azure DW connections
+* Update: Fix behavior for Azure DW ELT not deriving BK columns
+* Update: Fix behavior for SSIS Connection Managers for Azure DW connections
 * Fix: an issue where `wcf.SetCloneVersion` did not correctly manage `ClonedFromUID`
 * Update: Allow SSDT project to build when no tables are defined
 * Update: Add warning validation for projects without defined target
@@ -82,7 +93,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Fix: Data Vault templates for SQL to load LSAT correctly
 * New: Add `Quick Parse` option for BimlStudio options to only load placeholder objects when modelling
 * Fix: A scenario where end dating of Satellites did not behave as expected
-* Update: Optimisation to SQL templates
+* Update: Optimization to SQL templates
 * New: Add concurrency configuration to `AzCopy`
 * New: Refactor Data Vault patterns to exclude end dating code when `EnableEndDateRdv` setting is set to `"N"`
 
@@ -96,7 +107,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 ## Bundle 80216
 
 * Fix: Orchestration truncate statements now exclude database name in statement
-* Fix: Synchronised LNK and LSAT Hashes for ELT loads for on-premises SQL Server
+* Fix: Synchronized LNK and LSAT Hashes for ELT loads for on-premises SQL Server
 * Fix: Added Execution Id parameter to SSIS calls to Stored Procedures for ELT loads for on-premises SQL Server
 
 ## Bundle 80213
@@ -273,7 +284,7 @@ They now require `sourceTable` and `destinationTable` definitions
 * Added `MakeFileSafe` to accommodate `#` in table names for Oracle sources
 * Added multi file import and load to PolyBase load pattern.
 * Updates to UTF-8 Conversion
-* Removal of 7-zip dependency. zipping component will now use embedded compression features to gzip files
+* Removal of 7-zip dependency. Zipping component will now use embedded compression features to gzip files
 
 ## Bundle 70829
 
@@ -302,7 +313,7 @@ They now require `sourceTable` and `destinationTable` definitions
 ## Bundle 70818
 
 * Updates to Azure SQL Data Warehouse Hash Distribution keys for Persistent Staging
-* Updates to LSAT Driving Key behaviour for multiple Keys
+* Updates to LSAT Driving Key behavior for multiple Keys
 * BimlFlex Utility Application updated with redaction of SQL login passwords
 * Added Extension Point process for Blob Storage archiving using PowerShell
 * Updated BimlFlex Utility Application to support deployment to Azure SQL Database

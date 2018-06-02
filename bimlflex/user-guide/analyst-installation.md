@@ -25,7 +25,7 @@ The BimlFlex Excel Add-in installation needs to match the installed version of E
 
 To find the installed version and its bitness, open an Excel spreadsheet, click File, Account and About Excel. The version specification includes either 32 bit or 64 bit.
 
-![Excel Version](images/bimlflex-ss-v5-excel-bitness.png "Excel Version")
+![Excel Version -center](images/bimlflex-ss-v5-excel-bitness.png "Excel Version")
 
 For more information, [review Microsoft's information here](https://support.office.com/en-us/article/About-Office-What-version-of-Office-am-I-using-932788B8-A3CE-44BF-BB09-E334518B8B19)
 

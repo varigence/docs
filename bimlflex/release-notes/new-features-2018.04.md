@@ -2,7 +2,7 @@
 
 ## Azure Blob Storage-based staging and persisting
 
-BimlFlex now has full support for Azure Blob Storage as a staging and file persistence for both Azure SQL Data Warehouse and SQL Server 2016+ scenarios. The blob-based solution architecture allows data extracts to be compressed into flat files and transferred to Azure based blob storage. This is accessed through External Table definitions and loaded in to the Data Warehouse using ELT based processes. The blob based files are available to use in other processes such as Azure Data Lake Analytics and Machine Learning scenarios where the tool can access blob storage-based datasets directly.
+BimlFlex now has full support for Azure Blob Storage as a staging and file persistence for both Azure SQL Data Warehouse and SQL Server 2016+ scenarios. The blob-based solution architecture allows data extracts to be compressed into flat files and transferred to Azure based blob storage. This is accessed through External Table definitions and loaded in to the Data Warehouse using ELT based processes. The blob-based files are available to use in other processes such as Azure Data Lake Analytics and Machine Learning scenarios where the tool can access blob storage-based datasets directly.
 
 ## Full support for SQL Server CDC Sources
 

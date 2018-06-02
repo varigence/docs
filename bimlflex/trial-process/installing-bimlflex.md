@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-trial-process-installing-bimlflex
-title: Installing The BimlFlex Add-In
+title: Installing BimlFlex
 ---
 # Installing BimlFlex
 
@@ -20,7 +20,7 @@ The BimlFlex installation installs the BimlFlex Excel-based metadata editor. Thi
 
 When installing it is important to match the Excel bitness version. Verify the Excel bitness version before starting the installation and only install the matching version of BimlFlex.
 
-There is an option to install custom SSIS components in the BimlFlex installer. As the components have been updated since the installer was released it is not necessary to install them through this process. A separate installer is provided with the custom components
+![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-installer-install.png)
 
 ## Detailed Steps
 

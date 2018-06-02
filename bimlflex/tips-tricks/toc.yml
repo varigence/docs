@@ -2,3 +2,5 @@
   href: parameterize-connections.md
 - name: Replace columns in the SSIS Data Flow
   href: replace-columns-in-the-ssis-data-flow.md
+- name: Using Sensitive Parameters in SSIS Catalog
+  href: using-sensitive-parameters-in-ssis-catalog.md

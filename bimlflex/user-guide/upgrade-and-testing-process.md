@@ -49,7 +49,7 @@ The BimlStudio project and the Custom Extension Point files and any other local 
 
 BimlStudio checks for updates to BimlFlex when opening a project. The Upgrade BimlFlex dialog is shown when a new version is available.
 
-![Upgrade BimlFlex](images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png)
+![Upgrade BimlFlex -center](images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png)
 
 If there is a new version available online,BimlFlex will allow the new version to be downloaded and applied to both the project template location, the current project and the current databases. For new versions there is also a link to the release notes. These should be reviewed before starting an upgrade.
 

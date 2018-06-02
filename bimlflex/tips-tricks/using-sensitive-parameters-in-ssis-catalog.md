@@ -1,0 +1,42 @@
+---
+uid: bimlflex-tips-tricks-using-sensitive-parameters-in-ssis-catalog
+name: Using Sensitive Parameters in SSIS Catalog
+---
+# Using Sensitive Parameters in SSIS Catalog
+
+SSIS Projects and SQL Server SSIS Catalog deployments support configuring project parameters as sensitive. This allows sensitive information, like passwords, to be managed more securely in SSIS. While Microsoft generally recommends using account based security there are some scenarios and sources that require management of sensitive data. This Tips and Tricks highlights the BimlFlex configuration required to maintain password security in SSIS.
+
+SSIS Catalog only supports some attributes as sensitive, such as the connection password so setting everything to sensitive won't work.
+
+The following Extension Points will inject the password as a sensitive parameter that can be matched to a sensitive environment variable in the SSIS catalog.
+
+Note that a development password needs to be maintained in the metadata-defined connection string and that there are special considerations for opening SSIS projects with sensitive parameters in Visual Studio.
+
+## Project Parameter Extension Point
+
+Create a `Project Parameter` Extension Point with the connection string and the sensitive password parameter as a separate project parameter.
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="Project_Name_Project" #>
+
+<!-- Normal Connection String and a separate password parameter set as IsSensitive. Rename the target and parameter names to match the environment -->
+
+<Parameter Name="ConnectionName_ConnectionString" DataType="String" IsRequired="true">Connection String Here</Parameter>
+<Parameter Name="ConnectionName_Password" DataType="String" IsRequired="true" IsSensitive="true">Sensitive Password here</Parameter>
+```
+
+## Connection Expression Extension Point
+
+Create a `Connection Expression` Extension Point with the connection string and the sensitive password parameter as a separate project parameter.
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionExpression" target="ConnectionName"#>
+<#@ property name="connection" type="BimlFlexModelWrapper.ConnectionsWrapper" #>
+
+<!-- Target the specific connection, override the two relevant attributes. Rename the target and parameter names to match the environment -->
+
+<Expressions>
+    <Expression ExternalProperty="ConnectionString">@[$Project::ConnectionName_ConnectionString]</Expression>
+    <Expression ExternalProperty="Password">@[$Project::ConnectionName_Password]</Expression>
+</Expressions>
+```

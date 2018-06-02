@@ -1,7 +1,3 @@
----
-uid: bimlflex-continuous-integration-and-continuous-delivery
-title: Continuous Integration and Continuous Delivery
----
 # Continuous Integration and Continuous Delivery
 
 One core feature in using the BimlFlex Data Warehouse Automation solution is that it can be used in a CI/CD pipeline.
