@@ -5,24 +5,24 @@ TODO: Work through this list and update/complete documentation
 Structural changes and updates/investigations:
 
 1. toc.yml stitching for metadata generated content and conceptual contents in DocFX
-    1. add placeholder folders and index.md files for all metadata contents
-1. figure out how to build DocFX documentation from metadata in BimlFlex, from biml and xml contents.
-    1. build api and language reference documentation for Biml
-    1. build reference metadata and extension points documentation from BimlFlex, emulating existing build process
-1. support mermaid, plantuml or similar for diagrams. needs js/css/template updates in the DocFX template
-1. Update site template to match and be injectable into current web site
-1. ci/cd process for building and publishing the contents on to the docs from a publishing branch
-1. Organise all contents in to folders for structure.
-    1. Add toc.yml files for all folders
-    1. add placeholders for missing contents
-1. lint and spell check all contents. decide on us/uk/au English and update consistently
-1. update all video links to use markdown and add the rel/autoplay flags
-1. image sizing in markdown, update css to provide src options for sizing files in markdown syntax or similar, refer: https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown do more testing in DocFX/markdig to see what works best
-1. [] implement yaml frontmatter for posts folder for the blog
-1. [x] options for centred youtube videos in paragraph
-1. formatting options for multicolumns
-1. add figure contents for all figures https://github.com/lunet-io/markdig/blob/master/src/Markdig.Tests/Specs/FigureFooterAndCiteSpecs.md
-1. 
+    1. [x] add placeholder folders and index.md files for all metadata (code) contents. Needs input from Scott on approach for biml generation. placeholders added for known contents (biml/api-reference and biml/language-reference)
+1. figure out how to build DocFX documentation from metadata in BimlFlex, from biml and xml contents. (Scott already has this working somewhere)
+    1. [] build api and language reference documentation for Biml
+    1. [] build reference metadata and extension points documentation from BimlFlex, emulating existing documentation build process
+1. [] support mermaid, plantuml or similar for diagrams. needs js/css/template updates in the DocFX template. trials points to more work required.
+1. [] Update site template to match and be injectable into current web site
+1. [x] ci/cd process for building and publishing the contents on to the docs from a publishing branch. impl in BimlFlex Visualstudio to preview Azure site. uses plugin for DoxFX build step. 
+1. [x] Organize all contents in to folders for structure.
+    1. [x] Add toc.yml files for all folders
+    1. [x] add placeholders for missing contents
+    1. [x] all files lower case and using - as separator
+1. [] lint and spell check all contents. decide on us/uk/au English and update consistently
+1. [x] update all video links to use markdown and add the rel/autoplay flags
+1. [x] image sizing in markdown, update css to provide src options for sizing files in markdown syntax or similar, refer: https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown do more testing in DocFX/markdig to see what works best. -percentages are added to css as well as sample fixed height for logo svgs.
+1. [x] implement yaml frontmatter for posts folder for the blog. sample contents added. needs blog engine for replacement of current blog. [Yekyll](https://jekyllrb.com) approach has been used for current contents
+1. [] options for centered youtube videos in paragraph (use -center at end of alt text only works for images atm)
+1. [] formatting options for multicolumns. No support in markdown nor markdig found yet
+1. [] add figure contents for all figures https://github.com/lunet-io/markdig/blob/master/src/Markdig.Tests/Specs/FigureFooterAndCiteSpecs.md - Also review and fix why DocFX doesn't render as expected
 
 Main structure of contents, to be maintained in toc as well as folders to make structuring easy without reverting to numbered filenames:
 
@@ -42,7 +42,7 @@ Main structure of contents, to be maintained in toc as well as folders to make s
         - TODO: Update all existing contents to match current build
         - TODO: Add missing documentation:
             - Add Missing contents here
-            - [] analyst-installation.md, needs new video of new version
+            - [x] analyst-installation.md, needs new video of new version
             - [] azure-data-warehouse.md, placeholder, needs contents
             - [x] bimlcatalog-database.md, ok
             - [x] bimlflex-database.md, placeholder, needs contents
@@ -52,7 +52,7 @@ Main structure of contents, to be maintained in toc as well as folders to make s
             - [] data-type-mappings.md,  placeholder, needs contents. reuse trial contents?
             - [] data-vault-accelerator.md, pretty ok, needs review and possibly update to new formats in new version
             - [] data-vault-templates.md, pretty ok but probably needs complete revamp to new format and contents
-            - [] deployment-guide.md, ok, maybe update to Sql 2017?
+            - [x] deployment-guide.md, ok, maybe update to Sql 2017?
             - [] developer-installation.md, needs rewrite to new version with new installer options
             - [] excel-add-in.md, needs update to new version with new functionality
             - [] export-to-file.md, needs updating with new zipping approach
@@ -75,8 +75,8 @@ Main structure of contents, to be maintained in toc as well as folders to make s
             - [] object-inheritance.md, TODO, needs completion
             - [] orchestration.md, needs review and update to new version
             - [] process-visualization-legend.md, needs updating, should it be used in documentation at all? if so, needs to be referenced from other documents
-            - [] server-installation.md, ok.
-            - [] software-and-hardware-requirements.md, ok
+            - [x] server-installation.md, ok.
+            - [x] software-and-hardware-requirements.md, ok
             - [] source-to-staging-templates.md, needs review and update to new version
             - [] ssis-custom-components.md, format and update, link to Catalog site, remove with new version that runs without the custom components
             - [] support-process.md, update, complete rewrite without reference to portal, support site, utility app etc. needs new version information on creating/extracting metadata and project contents etc.
