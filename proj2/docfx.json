@@ -70,7 +70,8 @@
         "files": [
           "bimlflex/user-guide/images/**",
           "bimlexpress/images/**",
-          "content/**"
+          "content/**",
+          "images/**"
         ],
         "exclude": [
           "**/bin/**",
@@ -101,7 +102,8 @@
     ],
     "globalMetadata": 
     {
-      "_disableContribution": true
+      "_disableContribution": true,
+      "_appFaviconPath": "images/favicon.png"
     }
   },
 

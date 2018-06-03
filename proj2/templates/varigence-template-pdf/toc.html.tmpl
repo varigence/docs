@@ -70,28 +70,45 @@ full license information.}}
     margin-left: 48px;
   }
 
-TocHeaderContainer.h1 {
+.CoverPageHeader h1{
     color: #00619c;
     font-family: 'Segoe UI Light';
+    font-weight: 300;
     margin-left: 48px;
+    margin-top: 350px;
+    
+    display: block;
   }
 
-TocHeaderContainer.h2 {
+.CoverPageHeader h2 {
     color: #00619c;
     font-family: 'Segoe UI Light';
+    font-weight: 300;
     margin-left: 48px;
+    display: block;
   }
 
+.Logo {
+  background-image: url("../..//content/images/varigence-icon.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 152px;
+
+}
 
 </style>
 
 <!-- Cover page -->
-<div class="CoverPage, break-after">
+<div class="Logo"></div>
+
+<div class="CoverPage">
   <div class="CoverPageHeader">
     <h1>Varigence Documentation</h1>
     <h2>Cover Page sub header</h2>
+    <h2>{{ name }}</h2>
   </div>
 </div>
+<div class="break-after"></div>
 
 
 <!-- TOC page -->
