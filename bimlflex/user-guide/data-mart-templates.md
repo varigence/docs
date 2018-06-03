@@ -18,7 +18,7 @@ The metadata required to build the Data Mart is similar to any other source to s
 
 This implementation guide covers the modelling and implementation of star schema facts and dimensions. It doesn't cover Kimball architecture as a concept. Best practices and basic dimensional implementation constructs, like date and time dimensions are required but considered out of scope for this documentation.
 
-In terms of common architectures, this document begins as the point where a user wants to load the Data Mart and the previous layers of their architecture have already been determined. However, it should be stated that users can implement almost any standardised architectures.
+In terms of common architectures, this document begins as the point where a user wants to load the Data Mart and the previous layers of their architecture have already been determined. However, it should be stated that users can implement almost any standardized architectures.
 
 The most common of these two is the following items.
 
@@ -26,7 +26,7 @@ The most common of these two is the following items.
 
 ### BimlFlex Fact Loading Pattern
 
-Below is a diagram showing the output ETL structure that BimlFlex uses load fact tables in a Data Mart. The optional metadata settings and extension points are signified by shaded rectangles and dotted rectangles. The standard BimlFlex components are shown in solid colours.
+Below is a diagram showing the output ETL structure that BimlFlex uses load fact tables in a Data Mart. The optional metadata settings and extension points are signified by shaded rectangles and dotted rectangles. The standard BimlFlex components are shown in solid colors.
 
 Note that the pattern shows that the orchestration components are applied. More [information on the orchestration is documented here](orchestration.md)
 
@@ -125,7 +125,7 @@ The project architecture and the source for the Data Mart depends on the solutio
 |Stage Connection  ||
 |Persistent Stage Connection (Optional)||
 |Target Stage Connection|BFX\_DM|
-|Target Connection (destination of the data: DW, DV etc)|BFX\_DM|
+|Target Connection (destination of the data: DW, DV etc.)|BFX\_DM|
 |Batch Name|BFX\_DM|
 |Parent Batch (Optional)||
 |Integration Template|Source -> Target|
@@ -201,7 +201,7 @@ Refresh the metadata in BimlStudio to review, build and test.
 
 #### Introduction to PIT and BRG
 
-Point in time tables and bridge tables are ancillary tables used to make querying from a data vault significantly easier and more efficient. How these tables are utilised is more dependent on each individual BI
+Point in time tables and bridge tables are ancillary tables used to make querying from a data vault significantly easier and more efficient. How these tables are utilized is more dependent on each individual BI
 solution but how they are implemented in BimlFlex is fairly straight forward. This example will point out the Hubs and Links of interest and BimlFlex generate the necessary components.
 
 #### Bridge tables Introduction
@@ -262,6 +262,6 @@ executed at the end of a particular load. This approach is less common than stor
 #### Next Steps
 
 Once the presentation layer is completed, consideration should be made towards the approach taken in the analytical layer. The final part of this solution will be to use a tool to deliver this data to decision
-makers within the organisation in a format that allows them to perform a proper analysis of the organisation's data.
+makers within the organization in a format that allows them to perform a proper analysis of the organization's data.
 
 Possible options are to; create cubes or tabular models for Excel, Power BI and classical reporting, reporting views for Reporting Services or snow flakes for MicroStrategy, flat views for Qlik and Tableau etc.

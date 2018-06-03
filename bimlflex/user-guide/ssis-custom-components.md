@@ -11,7 +11,7 @@ The following components are included:
 | AuditRow           | Logs Audit information to the BimlCatalog database |
 | ErrorDescription   | Logs Error Descriptions to the BimlCatalog database |
 | Hash               | Provides hashing of data stream columns |
-| HashDual           | Provides dual hashing of columns to minimise collision risk |
+| HashDual           | Provides dual hashing of columns to minimize collision risk |
 | HashSql            | Provides Hashing using SQL `HASHBYTES()` compatible encoding |
 | RowCount           | counts rows and logs to the BimlCatalog database |
 

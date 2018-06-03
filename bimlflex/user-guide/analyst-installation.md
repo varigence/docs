@@ -37,8 +37,8 @@ Run the BimlFlex installation and choose what options to install. Only a single 
 
 Analysts only need to have the BimlFlex metadata functionality installed to interact with metadata through Excel. If building and BimlStudio project management is required, follow the steps in the Developer installation guide.
 
-![Installation Animation](images/bimlflex-ani-v5-install-varigence-bimlflex-2017.1-web.gif "Installation Animation")
+![Installation](images/bimlflex-ss-v5-bimlflex-installer-install.png "Installation")
 
 ## Uninstallation
 
-If the Applications or components require uninstallation, they can be uninstalled from the normal "Uninstall a Program" option in Control Panel, Programs, Programs and Features.
+If the Applications require uninstallation, they can be uninstalled from the normal "Uninstall a Program" option in Control Panel, Programs, Programs and Features.

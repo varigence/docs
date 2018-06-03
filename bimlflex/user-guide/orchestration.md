@@ -87,7 +87,7 @@ EXECUTE [ssis].[LogExecutionError]
   ,@ErrorDescription
 ```
 
-The Orcestration passes the ExecutionID, a Boolean, that identifies if the package is a batch or a child package as well as the error code and description.
+The orchestration passes the ExecutionID, a Boolean, that identifies if the package is a batch or a child package as well as the error code and description.
 
 ### Execution Status
 

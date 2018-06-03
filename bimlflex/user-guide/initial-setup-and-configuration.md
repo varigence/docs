@@ -12,7 +12,7 @@ Once the BimlStudio and BimlFlex installations are completed, it is time to set 
 
 The development side is focused around the BimlStudio-based BimlFlex project. Open the BimlStudio Application and create a new, empty project.
 
-The first time a new installation starts it requires the License Key. This key is provided as part of the engagement with Varigence. 
+The first time a new installation starts it requires the License Key. This key is provided as part of the engagement with Varigence.
 
 If the key is missing, please contact Varigence BimlFlex Support at [bimlflex-support@varigence.com](mailto:bimlflex-support@varigence.com).
 
@@ -38,14 +38,14 @@ The project creation options include project file name and location and also the
 
 ### 32-bit installations
 
-```
+```batchfile
 Bundle: C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlFlex.bimlb
 Excel Add-in: C:\Program Files (x86)\Varigence\BimlFlex\5.0\BimlFlex.xlsx
 ```
 
 ### 64-bit installations
 
-```
+```batchfile
 Bundle: C:\Program Files\Varigence\BimlStudio\5.0\BimlFlex.bimlb
 Excel Add-in: C:\Program Files\Varigence\BimlFlex\5.0\BimlFlex.xlsx
 ```
@@ -120,7 +120,7 @@ BimlStudio project options include settings such as the target SQL Server and SS
 
 ### Metadata configuration
 
-The Configurations and Settings sheets in the Metadata Editor contains  options for the generation and behaviour of the project.
+The Configurations and Settings sheets in the Metadata Editor contains  options for the generation and behavior of the project.
 
 This is described in more detail in:
 

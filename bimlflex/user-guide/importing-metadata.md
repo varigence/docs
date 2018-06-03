@@ -94,7 +94,7 @@ Controls if existing metadata should be retained during the import of metadata.
 
 #### Default Properties
 
-This controls default behaviour of inferred Business Keys.
+This controls default behavior of inferred Business Keys.
 
 * Pad Business Keys (Amount) – defines business key width
 * BusinessKey Suffix - Optionally add a suffix onto column name to indicate what is a business key

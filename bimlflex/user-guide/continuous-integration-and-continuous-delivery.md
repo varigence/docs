@@ -15,7 +15,7 @@ The automated, build server-based approach takes a slightly different approach i
 
 ## Special considerations for Data Warehousing Automation
 
-For a data warehouse it is not enough to make sure the structures and processes are in place for the builds and deployments, it also needs to synchronise dependencies as well as take both existing database structures and data into account. For a classic SQL Server Data Warehouse built with SSIS the build process first needs to create all tables so that the SSIS packages can be built later. The SSIS build process also requires access to both the destination DW tables as well as the source itself. This means utilising online build servers and readily available automation processes for other solution types sometimes needs to be adjusted to fit specific Data Warehousing and ETL process requirements
+For a data warehouse it is not enough to make sure the structures and processes are in place for the builds and deployments, it also needs to synchronize dependencies as well as take both existing database structures and data into account. For a classic SQL Server Data Warehouse built with SSIS the build process first needs to create all tables so that the SSIS packages can be built later. The SSIS build process also requires access to both the destination DW tables as well as the source itself. This means utilizing online build servers and readily available automation processes for other solution types sometimes needs to be adjusted to fit specific Data Warehousing and ETL process requirements
 
 ## Special considerations for SSIS
 
@@ -72,7 +72,7 @@ Before the compilation it is sometimes necessary to consider changes and migrati
 The dacpac build process uses the MSBuild.exe file to build the dacpac file from the .sqlproj project file
 
 >[!NOTE]
->Note that the destination folder under the `output` folder is `SSDT\<CustomerUID>\<VersionName>\<DatabaseName>`. The build script needs to reference the correct rproject file for each database.
+>Note that the destination folder under the `output` folder is `SSDT\<CustomerUID>\<VersionName>\<DatabaseName>`. The build script needs to reference the correct project file for each database.
 
 This sample script loops through all databases in the defined list and builds them all.
 

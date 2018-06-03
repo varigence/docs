@@ -13,7 +13,6 @@ BimlFlex is built on BimlStudio and contains the following components that are o
 * BimlFlex Metadata database
 * BimlCatalog Orchestration database
 * BimlFlex Custom SSIS Components
-
 * The BimlStudio application is distributed as a single, separate installer
 * The BimlFlex Excel Add-in is distributed as a single, separate installer
 * The BimlFlex databases are embedded in the Bundle used by BimlStudio and can be deployed and updated from within BimlStudio

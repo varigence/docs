@@ -6,7 +6,7 @@ Extension Points have four key components:
 
 * Extension Point directives that control what is injected and where
 * Inheritance options code that defines any object inheritance
-* Custom code that implements the required behaviour
+* Custom code that implements the required behavior
 * Input and output path variables for connecting the Extension Point in the SSIS package.
 
 ![Extension Points Sample Code](images/bimlflex-ss-v5-extension-points-sample-code.png "Extension Points Sample Code")
@@ -19,9 +19,9 @@ Creating an Extension Point file and applying the required target attribute is a
 
 The Extension Points are saved as Biml files in the BimlStudio Project and should be treated as source code for the solution.
 
-## Default BimlFlex behaviour
+## Default BimlFlex behavior
 
-Note that there are many features and functions built into BimlFlex that don't require Extension Points. Parameters, custom source queries with joins and filters, inherited tables and columns, data type expansions etc are all available without the need for Extension Points.
+Note that there are many features and functions built into BimlFlex that don't require Extension Points. Parameters, custom source queries with joins and filters, inherited tables and columns, data type expansions etc. are all available without the need for Extension Points.
 
 ## Extension Point Targets
 
@@ -85,7 +85,7 @@ For example:
 
 ## Output Path and Input Path Variables - Optional
 
-Output path variables hold the name of the current task that you are modifying. The input path variable contains the previous task’s name in the control flow or data flow so that the task you are working on can reference the previous item in your biml code and remain attached.
+Output path variables hold the name of the current task that you are modifying. The input path variable contains the previous task’s name in the control flow or data flow so that the task you are working on can reference the previous item in your Biml code and remain attached.
 
 These two path variables are required when using extension points that either completely replaces tasks or when you are inserting a new task into an existing data flow or control flow.
 
@@ -103,7 +103,7 @@ This section of the document covers the biggest variation of how extension point
 
 ### Project Based
 
-Project based extension points are helpful, particularly because, depending on the type of solution being implemented, the Project at hand will require items that are not practical to maintain in metadata such as script files and bespoke project parameters. Generally, it is quite useful to have these items centralised within Biml code.
+Project based extension points are helpful, particularly because, depending on the type of solution being implemented, the Project at hand will require items that are not practical to maintain in metadata such as script files and bespoke project parameters. Generally, it is quite useful to have these items centralized within Biml code.
 
 #### Project Parameter
 
@@ -125,7 +125,7 @@ The extension point target, in this case, will be to point to the name of the pr
 
 ### Project Script File
 
-As mentioned, one of the advantages of using extension points is to centralise code in Biml. This is relevant for script tasks as it is for any other complex ETL tasks.
+As mentioned, one of the advantages of using extension points is to centralize code in Biml. This is relevant for script tasks as it is for any other complex ETL tasks.
 
 For more information on how to implement a custom script task in Biml use the following resource.
 [https://www.varigence.com/Documentation/Language/Element/AstTaskScriptProjectNode](https://www.varigence.com/Documentation/Language/Element/AstTaskScriptProjectNode)
@@ -366,7 +366,7 @@ Object base extension points are generally used for making adjustments to packag
 
 ### Object Script File
 
-The object script file extension point is mainly used because it allows us an easier way to centralise our script tasks in Biml code whilst not having to hold its entire definition with the package templates. This then can be referenced from the BimlFlex code that manages the generation of SSIS packages.
+The object script file extension point is mainly used because it allows us an easier way to centralize our script tasks in Biml code whilst not having to hold its entire definition with the package templates. This then can be referenced from the BimlFlex code that manages the generation of SSIS packages.
 
 #### Extension Point Target
 
@@ -491,7 +491,7 @@ For more on how to code these items in Biml please see the following resources.
 
 ### Override Main
 
-The Override Main extension point is used for completely replacing the main sequence container of an object package. The reason this can be useful to a user is in scenarios where it is easier to take a pre-existing package, convert this into Biml code through the BimlStudio import package tool and insert that new Biml code into the Override Main extension point. This way we can easily add an existing package to BimlFlex and also centralise the code for a given BI solution, which helps with maintainability.
+The Override Main extension point is used for completely replacing the main sequence container of an object package. The reason this can be useful to a user is in scenarios where it is easier to take a pre-existing package, convert this into Biml code through the BimlStudio import package tool and insert that new Biml code into the Override Main extension point. This way we can easily add an existing package to BimlFlex and also centralize the code for a given BI solution, which helps with maintainability.
 
 Figure 9, Override Main Extension Point
 

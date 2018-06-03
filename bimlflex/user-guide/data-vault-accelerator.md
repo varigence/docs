@@ -116,13 +116,13 @@ Note that the accelerator will not resurface any entities already accelerated an
 
 In the Excel-based Metadata Editor, there are numerous options for manipulating the source metadata so that the Accelerator will produce the desired Data Vault model. Some of the common requirements include:
 
-* Choosing the Business Key used for the Hubs. By analysing business processes and the source data it is possible to find EWBK's that aren't the technical source keys
+* Choosing the Business Key used for the Hubs. By analyzing business processes and the source data it is possible to find EWBK's that aren't the technical source keys
 * Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For information, such as addresses there is normally no need to maintain complex relationships from the source. An address is just an attribute of the entity with a location
 * Adjusting the grain in UOW’s so that the correct Hubs are included in Links
 * Separating out data into different Satellites based on rate of change, storage requirements or similar
 * Reviewing Driving Key relationships for Links where there is no one FK relationship in the source
 
-## The Analyse Rules for BimlFlex Accelerator
+## The Analyze Rules for BimlFlex Accelerator
 
 There are a set of rules applied through the Accelerator to make it perform what it does.
 
@@ -170,7 +170,7 @@ All created Links will have an effectiveness Link Satellite added.
 
 Any attributes left in the source Link Table will be added to the default Link Satellite. They can be separated out into their own Satellites if needed using the ModelGrouping override.
 
-It’s worth noting that if there are source system applied rules for relationships (such as a product can only be in one category) they will need to be specified as Driving Keys in the Accelerated Link unless the Accelerator can derive the behaviour from relationship constraints.
+It’s worth noting that if there are source system applied rules for relationships (such as a product can only be in one category) they will need to be specified as Driving Keys in the Accelerated Link unless the Accelerator can derive the behavior from relationship constraints.
 
 For Hub tables that have Foreign Key relationships defined the Accelerator will generate Links for each Foreign Key between the defined Business Keys. These Links will need to be reviewed as the UOW they describe might not align with the business process.
 
@@ -188,7 +188,7 @@ Using the ModelGrouping attribute, a user can define the granularity from the so
 
 ## Adjusting Model Overrides
 
-The columns in BimlFlex Excel that start with Model are used only by the Data Vault Accelerator. By updating the metadata with model information, a user can drive the behaviour of the Accelerator to generate the Data Vault model needed.
+The columns in BimlFlex Excel that start with Model are used only by the Data Vault Accelerator. By updating the metadata with model information, a user can drive the behavior of the Accelerator to generate the Data Vault model needed.
 
 There are overrides for Objects as well as Columns
 

@@ -24,11 +24,11 @@ In this session we look at how to configure flat files.
 
 ## Source to Staging
 
-Using metadata, the source schemas are mapped to a staging environment. This provides all the required metadata for the source to staging/persistent staging. When run through Ssis, data is transferred and any transformations that are defined using SsisExpressions and/or SqlExpressions are applied.
+Using metadata, the source schemas are mapped to a staging environment. This provides all the required metadata for the source to staging/persistent staging. When run through SSIS, data is transferred and any transformations that are defined using SsisExpressions and/or SqlExpressions are applied.
 
 The source to staging creation can be toggled on or off based on what metadata has been defined.
 
-Databasea sources and Flat File sources utilize different templates. The template used is controlled by the IntegrationTemplate property of the project.
+Database sources and Flat File sources utilize different templates. The template used is controlled by the IntegrationTemplate property of the project.
 
 ### Integration Templates
 
@@ -104,7 +104,7 @@ Example: properties included in a project with staging.
 |Source Connection|AdventureWorksLT|
 |Stage Connection|AW_STG|
 |Persistent Stage Connection (Optional)|AW_ODS|
-|Target Connection (final destination of the data: DW, DV etc)|AW_DV|
+|Target Connection (final destination of the data: DW, DV etc.)|AW_DV|
 |Batch Name|EXT_AW|
 |Parent Batch (Optional)||
 |Integration Template. (Source Target)|Source Target|
@@ -136,7 +136,7 @@ Defining a Batch:
 1. Use a descriptive name
 2. `NoOfThreads`, Number Of Threads, control the parallelism if the execution within the Batch
 3. `UseOrchestration`, Use Orchestration, controls if the Batch will use the Orchestration function within the Batch
-4. `UseSsisExpress`, Use SSIS Express, controls if BimlFlex should generate SSIS Express packages. SSIS Express packages can run without a licensed Sql Server but has limited functionality
+4. `UseSsisExpress`, Use SSIS Express, controls if BimlFlex should generate SSIS Express packages. SSIS Express packages can run without a licensed SQL Server but has limited functionality
 5. `PrecendenceConstraint`, Precedence Constraint, controls if the execute package tasks in the batch should implement a specific Precedence Constraint
 
 ## Customizing Source Queries
@@ -295,13 +295,13 @@ In the new Biml file that opens, add the required target attribute for the sourc
 
 Rename the added Extension Point file so that it is easy to identify it later.
 
-Add the custom Sql query and the resulting columns to the code.
+Add the custom SQL query and the resulting columns to the code.
 
 ![Create Extension Point Biml Script](images/bimlflex-ss-v5-source-override-extension-point.png "Create Extension Point Biml Script")
 
 ## Load Threading
 
-BimlFlex supports optimising the ETL processes by selectively adding multi-threading to packages.
+BimlFlex supports optimizing the ETL processes by selectively adding multi-threading to packages.
 
 If threading is applied to the ETL pattern, this will divide the amount of rows being processed across the available cores provided by the server. This can results in performance improvements.
 
@@ -411,6 +411,6 @@ Updates relevant End Dates and Current Flags.
 
 ## Persistent Staging to Staging
 
-BimlFlex supports reloading the data warehouse using persisted staging as the source. The standard Build process automatically creates a reinitialisation project that reloads the Staging tables from Persistent Staging.
+BimlFlex supports reloading the data warehouse using persisted staging as the source. The standard Build process automatically creates a reinitialization project that reloads the Staging tables from Persistent Staging.
 
-For the sample AdventureWworksLT source, the project `INIT_FROM_PSA_EXT_AWLT_Project` is generated.
+For the sample AdventureWorksLT source, the project `INIT_FROM_PSA_EXT_AWLT_Project` is generated.

@@ -33,15 +33,15 @@ The local project that is opened in BimlStudio has a local Bundle version used i
 
 ## Update BimlFlex metadata database
 
-BimlFlex stores the Data Warehouse metadata in the BimlFlex metadata database. The new, updated version might have a new version of the database embedded. The upgrade process will enable the upgrade of the BimlFlex database to the new verison. Some Bundle updates have new features that require the new database version to be deployed.
+BimlFlex stores the Data Warehouse metadata in the BimlFlex metadata database. The new, updated version might have a new version of the database embedded. The upgrade process will enable the upgrade of the BimlFlex database to the new version. Some Bundle updates have new features that require the new database version to be deployed.
 
 The connection to the BimlFlex database is derived from the project configuration.
 
 ## Update BimlCatalog orchestration and auditing database
 
-BimlFlex stores Data Warehouse operational data such as logging and auditing data in the BimlCatalog database. The new, updated version might have a new version of the database embedded. The upgrade process will enable the upgrade of the BimlCatalog database to the new verison. Some Bundle updates have new features that require the new database version to be deployed.
+BimlFlex stores Data Warehouse operational data such as logging and auditing data in the BimlCatalog database. The new, updated version might have a new version of the database embedded. The upgrade process will enable the upgrade of the BimlCatalog database to the new version. Some Bundle updates have new features that require the new database version to be deployed.
 
-The connection to the BimlCatalog database is derived from the BimlCatalog connectionstring in the BimlFlex database referenced by the project configuration.
+The connection to the BimlCatalog database is derived from the BimlCatalog connection string in the BimlFlex database referenced by the project configuration.
 
 ## Upgrade progress
 
