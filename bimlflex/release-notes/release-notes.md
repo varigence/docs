@@ -7,53 +7,66 @@ name: BimlFlex Release Notes
 ## BimlStudio 2018.1 Note
 
 > [!WARNING]
-> BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017 we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please send an email to bimlflex-support@varigence.com to get a copy.
+> BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017 we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
+
+## Bundle 63001
+
+* Add: `FlexToBk()` support for datetime with milliseconds
+* Update: Change HUB lookup to reference staged BK and not derive FlexToBk again
+
+## Bundle 62931
+
+* Add: validator for Alternate Derived Column that `SqlExpression`, `SsisExpression` and `ColumnAlias` must all be specified
+* Update: parameters for Data Mart loads to use SourceTable parameters
+* Add: Option for global, non-named LinkSatellites using `srs` (Sans Record Source) as `ModelGrouping`
+* Update: Fix PSA reload logic to accommodate Variables in `SsisExpressions`
+* Add: support to add parameter to source queries using `SourceParameter`
 
 ## Bundle 62925
 
-* Add: PSA Merge SQL Statement now raises an error on transaction rollback for audit and logging
+* Update: PSA Merge SQL Statement now raises an error on transaction rollback for audit and logging
 * Update: Lookup join from DV Satellites and Link Satellites now filter better on existing records
 * Add: SSIS Delay Validation on Connections
 
 ## Bundle 62907
 
-* Added support for `ParentProject` targets in `CustomAttributes`
-* Updated BimlFlex Utility to update new local application data folder location for template Bundle
-* Added Batch for re-initialization of all PSA to Staging packages
-* Added Validator for Self-referencing Business Keys
-* Added validator for BimlCatalog connection for `ADONET` and `MSSQL/SQL Server` properties
-* Added support for SQL Server 2017 for custom Script components
-* Added initial support for integrated source Delete detection
+* Add: support for `ParentProject` targets in `CustomAttributes`
+* Update: BimlFlex Utility to update new local application data folder location for template Bundle
+* Add: Batch for re-initialization of all PSA to Staging packages
+* Add: Validator for Self-referencing Business Keys
+* Add: validator for BimlCatalog connection for `ADONET` and `MSSQL/SQL Server` properties
+* Add: support for SQL Server 2017 for custom Script components
+* Add: initial support for integrated source Delete detection
 
 ## Bundle 62901
 
-* Added support for `ExcludeFromBuild` objects when using the Data Vault Accelerator
-* Updated, BimlFlex now exclude creation of external tables when `ExcludeFromBuild` is set to `Y`
-* Added `ObjectInherit` support for BatchVariable Extension Point
-* Added `LookupJoin` Extension Point for `WHERE` clause inclusion
+* Add: support for `ExcludeFromBuild` objects when using the Data Vault Accelerator
+* Update: BimlFlex now exclude creation of external tables when `ExcludeFromBuild` is set to `Y`
+* Add: `ObjectInherit` support for BatchVariable Extension Point
+* Add: `LookupJoin` Extension Point for `WHERE` clause inclusion
 
 ## Bundle 62823
 
-* Added logic to convert `TEXT` and `NTEXT` Source columns to corresponding `VARCHAR` for Blob storage loads to accommodate PolyBase
-* Added Validator to ensure Target Dimensions has a separate Business Key and Primary Key defined
-* Added a `CDATA` wrapper to comments and descriptions to accommodate xml control characters. In certain scenarios some characters would introduce issues in the BimlStudio parsing of contents.
+* Add: logic to convert `TEXT` and `NTEXT` Source columns to corresponding `VARCHAR` for Blob storage loads to accommodate PolyBase
+* Add: Validator to ensure Target Dimensions has a separate Business Key and Primary Key defined
+* Add: a `CDATA` wrapper to comments and descriptions to accommodate xml control characters. In certain scenarios some characters would introduce issues in the BimlStudio parsing of contents.
 
 ## Bundle 62817
 
-* Updates to Satellite record compression to correctly identify initial rows. In certain scenarios an additional row was being created in Satellite loads. Record compression now works across these scenarios.
-* Updated a configuration scenario where PSA updates were incorrectly identified as having the `IsCurrent` flag present for end dating even if it was switched off in the Configuration.
+* Update: Satellite record compression to correctly identify initial rows. In certain scenarios an additional row was being created in Satellite loads. Record compression now works across these scenarios.
+* Update: a configuration scenario where PSA updates were incorrectly identified as having the `IsCurrent` flag present for end dating even if it was switched off in the Configuration.
 
 ## Bundle 62809
 
 * Bundle version number realignment
-* Added integrated Support for COZYROC Salesforce source SSIS custom component
-* Added support for Hash Distribution Keys in Inferred Hubs for Azure SQL Data Warehouse optimization.
-* Added Parent Batch requirement for nested projects. Existing Projects with a master Project without a Batch specified will need to be updated to include the main Batch.
-* Added `FromSql` metadata definition to support additional query logic, including hints like `WITH (NOLOCK)`
+* Add: integrated Support for COZYROC Salesforce source SSIS custom component
+* Add: support for Hash Distribution Keys in Inferred Hubs for Azure SQL Data Warehouse optimization.
+* Add: Parent Batch requirement for nested projects. Existing Projects with a master Project without a Batch specified will need to be updated to include the main Batch.
+* Add: `FromSql` metadata definition to support additional query logic, including hints like `WITH (NOLOCK)`
 
 ## Bundle 80329
 
-* Added new feature. Control if the Data Vault Accelerator should create Link Satellites for generated Links. New setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. Breaking change This feature has a default value of `N`, meaning no Link Satellites will be accelerated unless it is updated to `Y`. Overrides can be created using attribute `SettingValue` definitions for individual source tables.
+* Add: New feature: Control if the Data Vault Accelerator should create Link Satellites for generated Links. New setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. Breaking change This feature has a default value of `N`, meaning no Link Satellites will be accelerated unless it is updated to `Y`. Overrides can be created using attribute `SettingValue` definitions for individual source tables.
 
 > [!WARNING]
 > The default setting for `DvAccelerateLinkSatellite` is `N`.
