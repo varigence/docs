@@ -1016,22 +1016,22 @@ img[alt~="-100%"]{
 }
 
 img[alt~="-90%"]{
-  width:  50%;
+  width:  90%;
   display: block;
 }
 
 img[alt~="-80%"]{
-  width:  10%;
+  width:  80%;
   display: block;
 }
 
 img[alt~="-70%"]{
-  width:  50%;
+  width:  70%;
   display: block;
 }
 
 img[alt~="-60%"]{
-  width:  10%;
+  width:  60%;
   display: block;
 }
 
@@ -1041,22 +1041,22 @@ img[alt~="-50%"]{
 }
 
 img[alt~="-40%"]{
-  width:  10%;
+  width:  40%;
   display: block;
 }
 
 img[alt~="-30%"]{
-  width:  50%;
+  width:  30%;
   display: block;
 }
 
 img[alt~="-20%"]{
-  width:  10%;
+  width:  20%;
   display: block;
 }
 
 img[alt~="-10%"]{
-  width:  50%;
+  width:  10%;
   display: block;
 }
 
