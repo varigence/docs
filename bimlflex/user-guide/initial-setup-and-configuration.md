@@ -39,14 +39,14 @@ The project creation options include project file name and location and also the
 ### 32-bit installations
 
 ```batchfile
-Bundle: C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlFlex.bimlb
+Bundle: %LOCALAPPDATA%\Varigence\BimlFlex.bimlb
 Excel Add-in: C:\Program Files (x86)\Varigence\BimlFlex\5.0\BimlFlex.xlsx
 ```
 
 ### 64-bit installations
 
 ```batchfile
-Bundle: C:\Program Files\Varigence\BimlStudio\5.0\BimlFlex.bimlb
+Bundle: %LOCALAPPDATA%\Varigence\BimlFlex.bimlb
 Excel Add-in: C:\Program Files\Varigence\BimlFlex\5.0\BimlFlex.xlsx
 ```
 

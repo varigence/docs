@@ -1,3 +1,7 @@
+---
+uid: bimlflex-server-installation
+title: Server Installation
+---
 # Server Installation
 
 For SSIS Server installations, the Varigence Custom SSIS components used in BimlFlex generated SSIS packages are required to be available on the server.
@@ -11,7 +15,7 @@ Other Installation Types are:
 
 ## Installation Media
 
-The Varigence BimlFlex custom SSIS Components are open source and available for download from the [Varigence BimlCatalog GitHub repository](https://github.com/varigence/Bimlcatalog)
+The Varigence BimlFlex custom SSIS Components are part of the BimlCatalog open source project and components and code are available for download from the [Varigence BimlCatalog GitHub repository](https://github.com/varigence/BimlCatalog)
 
 Varigence provides a batch file installer for the components suitable for deployments to servers. The installer is packaged in SQL server version-dependent zip.
 

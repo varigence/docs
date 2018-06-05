@@ -2,7 +2,7 @@
 
 This document covers the process to implement a Data Mart layer using BimlFlex.
 
-content include
+content include:
 
 * Integration to Data Mart and related ETL patterns used in BimlFlex
 * Implementation scenarios
@@ -94,7 +94,7 @@ following components
 
 This second pattern for loading dimension tables has some similarities and some differences to the fact loading pattern. First, hashing is being applied. Hashing is used to accurately check for updates to rows, note that this is being applied to dimension rows only. Lastly, the different Type 1 or Type 2 rows are split into different pipelines and being counted by the Biml orchestration framework.
 
-#### Implementing a Data Mart
+## Implementing a Data Mart
 
 ### Connections and Projects
 
@@ -264,4 +264,4 @@ executed at the end of a particular load. This approach is less common than stor
 Once the presentation layer is completed, consideration should be made towards the approach taken in the analytical layer. The final part of this solution will be to use a tool to deliver this data to decision
 makers within the organization in a format that allows them to perform a proper analysis of the organization's data.
 
-Possible options are to; create cubes or tabular models for Excel, Power BI and classical reporting, reporting views for Reporting Services or snow flakes for MicroStrategy, flat views for Qlik and Tableau etc.
+Some possible options are to; create cubes or tabular models for tools like Excel, Power BI and classical reporting, reporting views for tools like Reporting Services, snowflakes for tools like MicroStrategy, flat views for tools like Qlik and Tableau etc. For guidance on reporting and analytical tools specific best practices, peruse the documentation from the vendor.

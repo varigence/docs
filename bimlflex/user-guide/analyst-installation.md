@@ -23,9 +23,9 @@ The BimlFlexSetup Installation file contains the BimlFlex Excel Add-in.
 
 The BimlFlex Excel Add-in installation needs to match the installed version of Excel.
 
-To find the installed version and its bitness, open an Excel spreadsheet, click File, Account and About Excel. The version specification includes either 32 bit or 64 bit.
+To find the installed version and its bitness, open an Excel spreadsheet, click File, Account and About Excel. The version specification includes either 32-bit or 64-bit.
 
-![Excel Version -center](images/bimlflex-ss-v5-excel-bitness.png "Excel Version")
+![Excel Version -center -70%](images/bimlflex-ss-v5-excel-bitness.png "Excel Version")
 
 For more information, [review Microsoft's information here](https://support.office.com/en-us/article/About-Office-What-version-of-Office-am-I-using-932788B8-A3CE-44BF-BB09-E334518B8B19)
 
@@ -37,7 +37,7 @@ Run the BimlFlex installation and choose what options to install. Only a single 
 
 Analysts only need to have the BimlFlex metadata functionality installed to interact with metadata through Excel. If building and BimlStudio project management is required, follow the steps in the Developer installation guide.
 
-![Installation](images/bimlflex-ss-v5-bimlflex-installer-install.png "Installation")
+![Installation -center](images/bimlflex-ss-v5-bimlflex-installer-install.png "Installation")
 
 ## Uninstallation
 
