@@ -31,3 +31,31 @@ For reporting there are views provided that simplifies querying information abou
 ## Dashboard
 
 A Power BI Dashboard is [available in the repository](https://github.com/varigence/BimlCatalog/tree/master/BimlCatalogReporting/PowerBI) that displays an overview as well as more detailed information about the executions logged in the BimlCatalog database.
+
+## Maintaining the BimlCatalog database
+
+The amount of detailed data stored in the BimlCatalog database can be maintained through the following Stored Procedures:
+
+* `[ssis].[ArchiveAll]`
+
+This stored procedure calls the following individual administrative tasks
+
+* `EXEC [ssis].[ArchiveRowAudit]`
+* `EXEC [ssis].[ArchiveRowCount]`
+* `EXEC [ssis].[ArchiveTaskExecution]`
+* `EXEC [ssis].[ArchiveAuditLog]`
+* `EXEC [ssis].[ArchiveConfigVariable]`
+
+The number of days used for data retention for the different tables are specified in the configuration table in the database:
+
+* `[admin].[Configurations]`
+
+These are the default retention periods for the tables:
+
+|ConfigurationKey|ConfigurationValue|
+|---|---:|
+|ConfigVariablePeriod|120|
+|AuditLogRetentionPeriod|120|
+|RowAuditRetentionPeriod|30|
+|RowCountRetentionPeriod|90|
+|TaskExecutionRetentionPeriod|30|
