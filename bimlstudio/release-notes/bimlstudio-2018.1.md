@@ -29,6 +29,8 @@ Other
 * Added support for guaranteeing that a Biml file's expansion result hasn't changed since the previous expansion.
 * Revamped the Debug utility in BimlFlex projects, now users are able to extract their metadata, while also zipping up their project directory, for aid in debugging through Varigence support.
 * Changed "recent path" saving to help with more consistent saving of recent paths.
+*	Fixed issue with a few dropdown boxes that did not expand on a click of the main area.
+* Enable users to specify the SSDT path that they wish to use when opening their packages in SSDT.
 
 ## SSIS
 
@@ -108,6 +110,7 @@ Other
 * Fixed data type mappings in Flat File Source around `NTEXT` versus `nvarchar`.
 * Fixed data type mappings in CDC Source.
 * Fixed issue where ACE OLEDB provider was not being used when the connection string called for it.
+* Fixed bug where setting “0” for MaxInsertCommitSize in OleDbDestination’s was defaulting to the default value. 
 
 ## Biml Language
 
@@ -117,8 +120,9 @@ Other
 * Implemented `ICollection` interface for `TierFilteredVulcanCollection` to fix issue with Preview when using extension methods from `codefile`.
 * Eliminated unnecessary and potentially buggy code for finding schema names of items based on being referenced rather than definitions, resulting in items unexpectedly emitting as `<AstNode>` in XML.
 * Fixed Xml emitter for singleton references in Biml with multiple schema bindings, for example, in `AstLookupNodes`, all connection references were emitted as `OleDbConnectionName`, and now they are accurately emitted as either `OleDbConnectionName`, `CacheConnectionName`, or `CustomSSISConnectionName`.
-* Improved Json emission
-* Fixed `EncryptSensitiveWithUserKey` emission issue
+* Improved Json emission.
+* Fixed `EncryptSensitiveWithUserKey` emission issue.
+* Fixed Issue where annotations on certain elements were being duplicated in the object model.
 
 ## Bundles
 
