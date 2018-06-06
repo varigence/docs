@@ -110,7 +110,7 @@ Other
 * Fixed data type mappings in Flat File Source around `NTEXT` versus `nvarchar`.
 * Fixed data type mappings in CDC Source.
 * Fixed issue where ACE OLEDB provider was not being used when the connection string called for it.
-* Fixed bug where setting “0” for MaxInsertCommitSize in OleDbDestination’s was defaulting to the default value. 
+* Fixed bug where setting “0” for `MaxInsertCommitSize` in OleDbDestination’s was defaulting to the default value. 
 
 ## Biml Language
 
