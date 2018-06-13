@@ -9,6 +9,17 @@ name: BimlFlex Release Notes
 > [!WARNING]
 > BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017 we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
 
+## Bundle 63013
+
+* Add: New Feature: support for Transient ChangeType. This can be used to for columns that are used in the pipeline and excluded from the target and hashing.
+* Add: `NoOfContainers` configuration to `Batch` allowing specification of the max number of Sequence Containers included per batch.
+* Add: New Feature: support for [Microsoft SQL Server Change Tracking](https://docs.microsoft.com/en-us/sql/relational-databases/track-changes/about-change-tracking-sql-server) as Source Type.
+* Add: support for ODBC based SQL ELT patterns to support calling of future Snowflake templates.
+* Add: additional support to specify `AzureExternalFileFormat` as a Setting
+* Update: fix lookup on PSA for insert-only PSA scenarios, in some configurations the lookup still used the `RowEffectiveToDate` for the lookup
+* Update: some scenarios where a `WhereSql` metadata clause was added, an empty sequence container would also be added to the generated package
+* Update: Optimize `SRC` to `STG` with `PSA` to allow for insert only `PSA` and `PSA` without `STG`.
+
 ## Bundle 63001
 
 * Add: `FlexToBk()` support for datetime with milliseconds
