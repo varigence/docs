@@ -7,11 +7,15 @@ name: BimlFlex Release Notes
 ## BimlStudio 2018.1 Note
 
 > [!WARNING]
-> BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017 we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
+> BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017, we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
 
 ## Bundle 63013
 
-* Add: New Feature: support for Transient ChangeType. This can be used to for columns that are used in the pipeline and excluded from the target and hashing.
+> [!WARNING]
+> Breaking change in feature.
+> The 63013 Bundle introduces a new feature that requires the BimlFlex database to be updated to the same version.
+
+* Add: New Feature: support for Transient ChangeType. This can be used for columns that are used in the pipeline and excluded from the target and hashing.
 * Add: `NoOfContainers` configuration to `Batch` allowing specification of the max number of Sequence Containers included per batch.
 * Add: New Feature: support for [Microsoft SQL Server Change Tracking](https://docs.microsoft.com/en-us/sql/relational-databases/track-changes/about-change-tracking-sql-server) as Source Type.
 * Add: support for ODBC based SQL ELT patterns to support calling of future Snowflake templates.
@@ -22,7 +26,7 @@ name: BimlFlex Release Notes
 
 ## Bundle 63001
 
-* Add: `FlexToBk()` support for datetime with milliseconds
+* Add: `FlexToBk()` support for DateTime with milliseconds
 * Update: Change HUB lookup to reference staged BK and not derive FlexToBk again
 
 ## Bundle 62931
