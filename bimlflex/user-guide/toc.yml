@@ -19,6 +19,8 @@
     href: upgrade-and-testing-process.md
   - name: Support Process
     href: support-process.md
+  - name: Debug Utilities
+    href: debug-utilities.md
 
 - name: Metadata and Settings
   items:
