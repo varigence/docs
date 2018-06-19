@@ -9,6 +9,14 @@ name: BimlFlex Release Notes
 > [!WARNING]
 > BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017, we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
 
+## Bundle 63018
+
+* Update: added additional `CAST(@@this AS INT)` to `DataTypeMappings` for `Boolean`, `Byte` and `SByte` `SqlExpression`. This allows a more natural interpretation of `true`/`false` values etc. into Integer values. The default behavior in an SSIS data type transformation is to interpret `true` as `-1`. This added default cast allows `true` to be stored as `1` instead.
+* Add: support for Delete tables using Create Table Script function
+* Update: Fixed an issue in the `IsInitialLoad` check in Data Vault ELT stored procedures
+* Add: validators to check that `SAT` reference a `HUB` and `LSAT` reference a `LINK` to eliminate null object reference errors
+* Add: BimlCatalog: 2 new views `rpt.CurrentExecutions` and `rpt.LatestBatchExecutions` to provide quick overview of current executing packages and the last five batches
+
 ## Bundle 63013
 
 > [!WARNING]
