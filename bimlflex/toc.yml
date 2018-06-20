@@ -11,8 +11,8 @@
   topicHref: trial-process/index.md
 
 - name: Tips & Tricks
-  href: tips-tricks/toc.yml
-  topicHref: tips-tricks/index.md
+  href: tips-and-tricks/toc.yml
+  topicHref: tips-and-tricks/index.md
 
 - name: Reference Documentation 1
   href: reference-documentation/toc.md
