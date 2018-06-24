@@ -14,6 +14,14 @@ center: false
 
 ---
 
+# Code
+
+```xml
+<some stuff/>
+```
+
+---
+
 ## The BimlFlex solution
 
 BimlFlex allows modelling and automation of data warehouses.
