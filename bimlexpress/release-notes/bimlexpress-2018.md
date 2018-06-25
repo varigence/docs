@@ -35,6 +35,7 @@ Significant changes between BimlExpress 2017 and BimlExpress 2018
 * Added support for `Azure Blob Source` and `Azure Blob Destination` components.
 * Added support for `Azure Data Lake Store Source` and `Azure Data Lake Store Destination` components.
 * Added support for `HDFS File Source` and `HDFS File Destination` components.
+* Added support for `Theobald Xtract Sap Source` components, for extracting data from SAP.
 * Added support for `Azure Blob Download` tasks.
 * Added support for `Azure Blob Upload` tasks.
 * Added support for `Azure Data Lake Store File System` tasks.
@@ -45,10 +46,11 @@ Significant changes between BimlExpress 2017 and BimlExpress 2018
 * Added support for `Hadoop Hive ` tasks.
 * Added support for `Hadoop Pig` tasks.
 * Added support for `Hadoop File System` tasks.
-* Added Support for `Azure Data Lake Store` connection managers.
-* Added Support for `Azure Storage` connection managers.
-* Added Support for `Hadoop` connection managers.
-* Added Support for `Azure HDinsight` connection managers.
+* Added support for `Azure Data Lake Store` connection managers.
+* Added support for `Azure Storage` connection managers.
+* Added support for `Hadoop` connection managers.
+* Added support for `Azure HDinsight` connection managers.
+* Added support for `Theobald Xtract Sap` connection managers, for extracting data from SAP.
 
 ## Provider Support
 
