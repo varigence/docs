@@ -6,10 +6,10 @@ Significant changes between BimlExpress 2017 and BimlExpress 2018
 
 * Added the Import Packages window to enable users to import existing SSIS packages and projects and convert them to Biml.
     The window is prepopulated with settings that are highly configurable to produce the desired results.
-* Updates to BimlExpress project and manifest for compatibility
-* Updated jquery in BimlExpress
-* Ensure that all new Biml files are UTF-8 encoded, rather than ANSI encoded.
-* Improved error meszage for unlicensed features in BimlExpress.
+* Updates to BimlExpress VSIX for Visual Studio 2017 compatibility
+* Introduced new VSIX file for legacy Visual Studio 2010 installations
+* All new Biml files are now UTF-8 encoded, rather than ANSI encoded.
+* Improved error message for unlicensed features in BimlExpress.
 
 ## Bug Fixes
 
