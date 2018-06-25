@@ -19,6 +19,13 @@ Other
 
 * Updated expression grammar to better handle whitespace in expressions and to improve the parse tree
 
+## BimlScript PreCompiled Assembly Package (BSPCAP) Files
+
+* Added option to Build & Deploy ribbon to create new BimlScript PreCompiled Assembly Package (BSPCAP) files, which include the preprocessed binary assets for all of the BimlScript files in your project. This will avoid a siginificant amount of processing time in solutions with large codebases, both in interactive designer mode and for command line builds.
+* Added support for BSPCAP files within Biml Bundles, where they achieve even greater performance savings.
+* Added support to add BSPCAP files through all BimlStudio menus and via the command line as a source file. 
+
+
 ## BimlStudio UI Updates
 
 * Improved styling in the Package Import dialog, by widening the file path textbox, adjusting the height of the file path textbox, and making the buttons uniform. Also eliminated unnecessary columns in the DTSX file path grid.
