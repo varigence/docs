@@ -9,6 +9,7 @@ Significant changes between BimlExpress 2017 and BimlExpress 2018
 * Updates to BimlExpress project and manifest for compatibility
 * Updated jquery in BimlExpress
 * Ensure that all new Biml files are UTF-8 encoded, rather than ANSI encoded.
+* Improved error meszage for unlicensed features in BimlExpress.
 
 ## Bug Fixes
 
