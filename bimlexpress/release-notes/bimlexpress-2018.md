@@ -32,6 +32,23 @@ Significant changes between BimlExpress 2017 and BimlExpress 2018
 * In imported packages, the tasks are ordered in a more logical and readable fashion that matches what the user would see in SSDT.
 * In imported packages, the contents of Data Flow tasks are organized in a more logical and readable fashion, one that follows the flow of information through the pipeline.
 * Exposed VersionGUID property on packages, so that user can specify a GUID, if it is not specified, then it is randomly generated as before.
+* Added support for `Azure Blob Source` and `Azure Blob Destination` components.
+* Added support for `Azure Data Lake Store Source` and `Azure Data Lake Store Destination` components.
+* Added support for `HDFS File Source` and `HDFS File Destination` components.
+* Added support for `Azure Blob Download` tasks.
+* Added support for `Azure Blob Upload` tasks.
+* Added support for `Azure Data Lake Store File System` tasks.
+* Added support for `Azure HDInsight Create Cluster` tasks.
+* Added support for `Azure HDInsight Delete Cluster` tasks.
+* Added support for `HDInsight Hive` tasks.
+* Added support for `HDInsight Pig` tasks.
+* Added support for `Hadoop Hive ` tasks.
+* Added support for `Hadoop Pig` tasks.
+* Added support for `Hadoop File System` tasks.
+* Added Support for `Azure Data Lake Store` connection managers.
+* Added Support for `Azure Storage` connection managers.
+* Added Support for `Hadoop` connection managers.
+* Added Support for `Azure HDinsight` connection managers.
 
 ## Provider Support
 
