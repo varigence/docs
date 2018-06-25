@@ -31,6 +31,7 @@ Other
 * Changed "recent path" saving to help with more consistent saving of recent paths.
 *	Fixed issue with a few dropdown boxes that did not expand on a click of the main area.
 * Enable users to specify the SSDT path that they wish to use when opening their packages in SSDT.
+* Added Editor tools for newly supported SSIS features.
 
 ## SSIS
 
@@ -48,6 +49,7 @@ Other
 * Added support for `Azure Blob Source` and `Azure Blob Destination` components.
 * Added support for `Azure Data Lake Store Source` and `Azure Data Lake Store Destination` components.
 * Added support for `HDFS File Source` and `HDFS File Destination` components.
+* Added support for `Theobald Xtract Sap Source` components, for extracting data from SAP.
 * Added support for `Azure Blob Download` tasks.
 * Added support for `Azure Blob Upload` tasks.
 * Added support for `Azure Data Lake Store File System` tasks.
@@ -58,11 +60,11 @@ Other
 * Added support for `Hadoop Hive ` tasks.
 * Added support for `Hadoop Pig` tasks.
 * Added support for `Hadoop File System` tasks.
-* Added Support for `Azure Data Lake Store` connection managers.
-* Added Support for `Azure Storage` connection managers.
-* Added Support for `Hadoop` connection managers.
-* Added Support for `Azure HDinsight` connection managers.
-
+* Added support for `Azure Data Lake Store` connection managers.
+* Added support for `Azure Storage` connection managers.
+* Added support for `Hadoop` connection managers.
+* Added support for `Azure HDinsight` connection managers.
+* Added support for `Theobald Xtract Sap` connection managers, for extracting data from SAP.
 
 ## BimlStudio Bugs
 
