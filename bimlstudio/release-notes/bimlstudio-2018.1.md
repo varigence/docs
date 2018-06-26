@@ -1,23 +1,16 @@
 # BimlStudio 2018.1 Release Notes
 
-Significant changes between BimlStudio 2017 and BimlStudio 2018.1
+Significant changes between BimlStudio 2017 and BimlStudio 2018
 
 ## Azure Data Factory Support
 
-Added support for all ADF version 2 items and is current as of 3/20/2018. This includes the ability to:
+Added support for all ADF version 2 items and is current as of 06/20/2018. This includes the ability to:
 
 * Create all new V2 Linked Services
-* Create Activities
-  * Create Copy Activities
-    Create any supported V2 Sources
-    Create any supported V2 Sinks
-  * Create Transform Activities
-  * Create Control Flow Activities
-* Create Triggers
+* Create all new V2 DataSets, Sources, and Sinks
+* Create all new V2 Pipelines and Activities including control flow
+* Create all new V2 Triggers
 
-Other
-
-* Updated expression grammar to better handle whitespace in expressions and to improve the parse tree
 
 ## BimlScript PreCompiled Assembly Package (BSPCAP) Files
 
@@ -31,9 +24,9 @@ Other
 * Improved styling in the Package Import dialog, by widening the file path textbox, adjusting the height of the file path textbox, and making the buttons uniform. Also eliminated unnecessary columns in the DTSX file path grid.
 * Improved styling for Project Settings editor, by widening the buttons and increasing the height. Also applied the styling to be consistent with the rest of BimlStudio.
 * Fixed button width on trial key dialog.
-* Changed all "2017" references to "2018".
+* Changed all BimlStudio "2017" references to "2018".
 * In Package Import dialog, we now provide users the option to create an SSIS Import Options Json file, in order to save your SSIS import options for use with command line imports.
-* Added support for guaranteeing that a Biml file's expansion result hasn't changed since the previous expansion.
+* Added support for guaranteeing that a Biml file's expansion result hasn't changed since the previous expansion, which can improve performance.
 * Revamped the Debug utility in BimlFlex projects, now users are able to extract their metadata, while also zipping up their project directory, for aid in debugging through Varigence support.
 * Changed "recent path" saving to help with more consistent saving of recent paths.
 *	Fixed issue with a few dropdown boxes that did not expand on a click of the main area.
@@ -42,13 +35,13 @@ Other
 
 ## SSIS
 
-* Added a checkbox to Import Packages dialog box to allow users to hide package creation metadata in the imported package.
-* Changed `AutoAdjustBufferSize` to `autoAdjustBufferSize` during SSIS 2016 emission.
-* Fixed IsPac File emission to work correctly.
-* Fixed bug where sensitive parameters were not getting saved to the Params file.
-* Fixed bug where sensitive parameters were not getting encrypted for OleDbConnections.
 * Added support for SSIS 2017.
 * Updated to support and build Script Components for SSIS 2017.
+* Added a checkbox to Import Packages dialog box to allow users to hide package creation metadata in the imported package.
+* Changed `AutoAdjustBufferSize` to `autoAdjustBufferSize` during SSIS 2016 emission.
+* Fixed ISPac File emission to work correctly.
+* Fixed bug where sensitive parameters were not getting saved to the Params file.
+* Fixed bug where sensitive parameters were not getting encrypted for OleDbConnections.
 * Fixed issue of missing default values that broke SSIS emission for some components such as CDC Splitter, which would fail to load in SSIS when some default values were supplied.
 * In imported packages, the tasks are ordered in a more logical and readable fashion that matches what the user would see in SSDT.
 * In imported packages, the contents of Data Flow tasks are organized in a more logical and readable fashion, one that follows the flow of information through the pipeline.
@@ -118,7 +111,7 @@ Other
 
 ## Performance
 
-* Fixed issue where an ICE would be generated on builds with warnings.
+* Fixed issue where an ICE would be generated on builds with warnings in some cases.
 * Added the `tempPath` setting to the Biml compiler. This setting specifies the temporary path that will be used for intermediate assets during the build process.
 * Removed memory leak due to repeated `xslt` transforms.
 * Now auto-generating BimlC Response file on every build and placing it in the project directory.
