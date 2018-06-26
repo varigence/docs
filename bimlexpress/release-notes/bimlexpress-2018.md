@@ -14,44 +14,24 @@ Significant changes between BimlExpress 2017 and BimlExpress 2018
 ## Bug Fixes
 
 * Fixed an issue where exceptions thrown by user BimlScripts might not show up correctly in the BE preview pane
-* Fixed issue where Ctrl+S would not save Biml files
-* Fixed `No path to BIDS devenv for Ssis2016 was found.` when trying build and open with 2016 target
-* Fixed a potential race condition on file saving in BimlExpress
+* Fixed issue where Ctrl+S would not save Biml files in some cases
+* Fixed a potential race condition on file saving in BimlExpress which would cause the wrong file to save when rapidly switching files during a save command
 * Fixed an assembly resolution issue that was breaking script projects in BimlExpress OneDesigner scenarios
 * Added the `ICollection<T>` interface to `TierFilteredVulcanCollection`. This results in a larger number of extension methods working as expected in Live preview mode in BimlExpress.
 
 ## SSIS
 
-* Added a checkbox to Import Packages dialog box to allow users to hide package creation metadata in the imported package.
-* Changed `AutoAdjustBufferSize` to `autoAdjustBufferSize` during SSIS 2016 emission.
-* Fixed IsPac File emission to work correctly.
-* Fixed bug where sensitive parameters were not getting saved to the Params file.
-* Fixed bug where sensitive parameters were not getting encrypted for OleDbConnections.
 * Added support for SSIS 2017.
 * Updated to support and build Script Components for SSIS 2017.
+* Added a checkbox to Import Packages dialog box to allow users to hide package creation metadata in the imported package.
+* Changed `AutoAdjustBufferSize` to `autoAdjustBufferSize` during SSIS 2016 emission.
+* Fixed bug where sensitive parameters were not getting saved to the Params file.
+* Fixed bug where sensitive parameters were not getting encrypted for OleDbConnections.
 * Fixed issue of missing default values that broke SSIS emission for some components such as CDC Splitter, which would fail to load in SSIS when some default values were supplied.
 * In imported packages, the tasks are ordered in a more logical and readable fashion that matches what the user would see in SSDT.
 * In imported packages, the contents of Data Flow tasks are organized in a more logical and readable fashion, one that follows the flow of information through the pipeline.
 * Exposed VersionGUID property on packages, so that user can specify a GUID, if it is not specified, then it is randomly generated as before.
-* Added support for `Azure Blob Source` and `Azure Blob Destination` components.
-* Added support for `Azure Data Lake Store Source` and `Azure Data Lake Store Destination` components.
-* Added support for `HDFS File Source` and `HDFS File Destination` components.
-* Added support for `Theobald Xtract Sap Source` components, for extracting data from SAP.
-* Added support for `Azure Blob Download` tasks.
-* Added support for `Azure Blob Upload` tasks.
-* Added support for `Azure Data Lake Store File System` tasks.
-* Added support for `Azure HDInsight Create Cluster` tasks.
-* Added support for `Azure HDInsight Delete Cluster` tasks.
-* Added support for `HDInsight Hive` tasks.
-* Added support for `HDInsight Pig` tasks.
-* Added support for `Hadoop Hive ` tasks.
-* Added support for `Hadoop Pig` tasks.
-* Added support for `Hadoop File System` tasks.
-* Added support for `Azure Data Lake Store` connection managers.
-* Added support for `Azure Storage` connection managers.
-* Added support for `Hadoop` connection managers.
-* Added support for `Azure HDinsight` connection managers.
-* Added support for `Theobald Xtract Sap` connection managers, for extracting data from SAP.
+* Fixed Target Version issues on Script Project emission
 
 ## Provider Support
 
