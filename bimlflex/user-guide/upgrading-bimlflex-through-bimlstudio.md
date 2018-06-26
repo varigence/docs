@@ -12,12 +12,14 @@ New and existing projects are created from the local Bundle file. Existing proje
 
 Varigence provides updates to the BimlFlex framework through an online download mechanism. On project open, BimlStudio will check for the latest version of the BimlFlex components and offer to download and deploy them, should an update be available.
 
-Deploying updates comes in 4 steps:
+## Deploying updates
 
-1. Updating the template Bundle version that is used for new projects
-1. Updating the Bundle file that is used for the project
-1. Updating the BimlFlex metadata database used by the project
-1. Updating the BimlCatalog orchestration and auditing database used by the project
+Steps for deploying updates:
+
+1. Update the template Bundle version that is used for new projects
+1. Update the Bundle file that is used for the project
+1. Update the BimlFlex metadata database used by the project
+1. Update the BimlCatalog orchestration and auditing database used by the project
 
 Once the project has identified that a new version is available online the following dialog is displayed:
 
@@ -25,7 +27,7 @@ Once the project has identified that a new version is available online the follo
 
 ## Update template Bundle version
 
-The template Bundle is the Bundle that is used by BimlStudio when creating a new BimlFlex project. if a new Bundle has been published online by Varigence the upgrade process will be able to download the new version and use that for new projects going forward. This template Bundle is also used to update local projects so the template Bundle needs to be udpated first.
+The template Bundle is the Bundle that is used by BimlStudio when creating a new BimlFlex project. if a new Bundle has been published online by Varigence the upgrade process will be able to download the new version and use that for new projects going forward. This template Bundle is also used to update local projects so the template Bundle needs to be updated first.
 
 ## Update project Bundle
 
