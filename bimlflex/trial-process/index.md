@@ -16,18 +16,18 @@ The trial is an on-premises installation and uses a local installation of BimlFl
 
 The trial supports 2 architectures:
 
-- a 2 layer approach with staging and data mart layer
-- a 3 layer approach with staging, data vault and data mart layer.
+* a 2 layer approach with staging and data mart layer
+* a 3 layer approach with staging, data vault and data mart layer.
 
 both architectures uses a staging layer with both a transient staging database and a persistent staging (archive) database. both architectures have an analyst-facing dimensional model. The addition of the Data Vault layer illustrates how BimlFlex allows the acceleration and creation of an integration layer that allows cross-system integration on business keys.
 
 For the trial the following is needed:
 
-- SQL Server 2016 installation with SQL Server engine and SSIS/Integration services
-- Windows-based development machine for local installation of BimlStudio and BimlFlex
-- Excel 2013-2016 for managing and modelling metadata
-- Visual Studio 2015 with SSDT and SSIS components
-- SQL Server Management Studio for managing databases and running SQL Scripts
+* SQL Server 2016 installation with SQL Server engine and SSIS/Integration services
+* Windows-based development machine for local installation of BimlStudio and BimlFlex
+* Excel 2013-2016 for managing and modelling metadata
+* Visual Studio 2015 with SSDT and SSIS components
+* SQL Server Management Studio for managing databases and running SQL Scripts
 
 ## Trial process and documentation
 
@@ -40,15 +40,15 @@ The installation and setup of the BimlFlex environment includes downloading the 
 The following installations are required apart from the prerequisite Microsoft SQL and SSIS development installations.
 
 1. [Installing BimlStudio](installing-bimlstudio.md)
-2. [Installing BimlFlex](installing-bimlflex.md)
-3. [Installing SSIS Components](installing-custom-SSIS-components.md)
+1. [Installing BimlFlex](installing-bimlflex.md)
+1. [Installing SSIS Components](installing-custom-SSIS-components.md)
 
 ### Setup databases
 
 The database setup phase creates the databases required for BimlFlex:
 
 1. BimlFlex, metadata repository
-2. BimlCatalog, orchestration and audit/logging repository
+1. BimlCatalog, orchestration and audit/logging repository
 
 ### Upgrade databases and BimlFlex Bundle version
 
@@ -77,13 +77,13 @@ Source metadata management and modelling is done through the BimlFlex Excel base
 
 #### Building databases, tables and SSIS packages for Source to Staging
 
-Once the metadata from the source has been added to the BimlFlex metadata repository it is possible to use BimlFlex to build the required Staging, Persistent Staging databases and tables as well as generating the SSIS project to load the Source Data to the data warehouse. Trialling this at this stage allows the validation that the end to end process for SSIS works as expected.
+Once the metadata from the source has been added to the BimlFlex metadata repository it is possible to use BimlFlex to build the required Staging, Persistent Staging databases and tables as well as generating the SSIS project to load the Source Data to the data warehouse. Trialing this at this stage allows the validation that the end to end process for SSIS works as expected.
 
 [Building Source to Staging](building-databases-tables-and-SSIS-packages-for-source-to-staging.md)
 
 #### Configuration of BimlFlex
 
-The BimlFlex framework behaviour is controlled by a comprehensive set of configurations. This section walks through the configurations and highlights the options available.
+The BimlFlex framework behavior is controlled by a comprehensive set of configurations. This section walks through the configurations and highlights the options available.
 
 [Configuration of BimlFlex](configuration-of-bimlflex.md)
 
@@ -107,8 +107,8 @@ BimlFlex supports acceleration of Data Vault constructs from business keys and r
 
 The Point in Time and Bridge table structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
 
-- Point in Time, PIT tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub.
-- Bridge tables are used to link business entities in Hubs through their link tables into easy to query constructs.
+* Point in Time, PIT tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub.
+* Bridge tables are used to link business entities in Hubs through their link tables into easy to query constructs.
 
 [Adding Business Data Vault](adding-business-data-vault-performance-constructs.md)
 
