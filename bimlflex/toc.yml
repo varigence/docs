@@ -2,6 +2,10 @@
   href: index.md
   topicHref: index.md
 
+- name: Release Notes
+  href: release-notes/toc.yml
+  topicHref: release-notes/index.md
+
 - name: User Guide
   href: user-guide/toc.yml
   topicHref: user-guide/index.md
