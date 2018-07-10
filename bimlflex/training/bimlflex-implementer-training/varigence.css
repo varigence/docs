@@ -3,9 +3,17 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
-    margin-bottom: 0;
+  /*  margin-bottom: -100;
+    min-height: 100%;*/
+
 }
 
+/*.slides::after
+{
+    content: "Test";
+    display: block;
+}
+*/
 body {
     /*background-color: #002b36; */
     /*background-color: #032C48; */
@@ -33,7 +41,7 @@ body {
     font-family: 'Segoe UI', Open Sans, Calibri, Verdana, Arial, Helvetica, sans-serif;
     font-weight: 300;
     text-transform: none;
-    font-size: 1.9em
+    font-size: 1.6em
 }
 
 .reveal h2,
@@ -46,15 +54,15 @@ body {
 
 .reveal h1 {
     color: #06446A;
-    font-size: 2em
-}
-
-.reveal h2 {
     font-size: 2.2em
 }
 
+.reveal h2 {
+    font-size: 1.8em
+}
+
 .reveal h3 {
-    font-size: 2em
+    font-size: 1.7em
 }
 
 .slides .header {
