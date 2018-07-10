@@ -9,6 +9,24 @@ name: BimlFlex Release Notes
 > [!WARNING]
 > BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017, we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
 
+## Bundle 63108
+
+* Update: Accommodate safe file names for Salesforce tables ending with double underscore
+* Add: BimlCatalog Connection to SQL Batch to enable support for Extension Points
+* Update: ChangeTracking updated to support `SourceSql` variable and expressions
+* Update: Change Hub and Link lookups to use target delimiters instead of source delimiters.
+* Add: support for `CustomAttribute` with a `SettingValue` at Project level
+* Remove: Link Satellite as a `ModelObjectType`. This is currently not a supported source object type in the Data Vault Accelerator
+* Update: DateTimeOffset Scale when used with `DataTypeMappings` and the Data Vault Accelerator
+
+## Bundle 63026
+
+Update: Data Vault `REF` primary key now includes the `EffectiveFromDate` column
+Update: PSA INIT loads no longer derive DataType mappings again
+Update: `IsInitialLoad` precedence constraint updated.
+Add: support for `SourceProperty` by Batch
+Update: Derived Hubs from Links (to same Hub) no longer use same BK for second hub
+
 ## Bundle 63018
 
 * Update: added additional `CAST(@@this AS INT)` to `DataTypeMappings` for `Boolean`, `Byte` and `SByte` `SqlExpression`. This allows a more natural interpretation of `true`/`false` values etc. into Integer values. The default behavior in an SSIS data type transformation is to interpret `true` as `-1`. This added default cast allows `true` to be stored as `1` instead.
