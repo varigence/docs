@@ -10,7 +10,7 @@
 
 ## Opening the Excel metadata editor
 
-The first time the Excel metadata editor requests data from a new customer it will ask if sample metadata should be created. Creating the sample metadata will create the scaffolding for the trial process.
+The first time the Excel metadata editor requests data from a newly created customer, it will ask if sample metadata should be created. Creating the sample metadata will create the scaffolding for the trial process.
 
 Scaffolding metadata was created as part of [Creating and Configuring a BimlFlex project](creating-and-configuring-a-bimlflex-project.md). This documentation describes how to recreate it by creating a new customer.
 

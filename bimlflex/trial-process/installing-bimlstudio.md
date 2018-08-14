@@ -10,8 +10,8 @@ title: Installing BimlStudio
 
 ## Supporting BimlFlex Documentation
 
-- @bimlflex-developer-installation
 - @bimlstudio-user-guide
+- @bimlflex-developer-installation
 - @bimlflex-analyst-installation
 - @bimlflex-server-installation
 
@@ -45,4 +45,4 @@ Run the installer to install the application. When presented with the choice of 
 
 ### Enter product key
 
-Once BimlStudio is started for the first time, enter your Trial key from the trial welcome email to activate the product.
+Once BimlStudio is started for the first time, enter your trial key from the trial welcome email to activate the product.

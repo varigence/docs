@@ -5,6 +5,9 @@
 - name: Installing SSIS Components
   href: installing-custom-ssis-components.md
 
+- name: Configuring the BimlFlex environment
+  href: configuring-the-bimlflex-environment.md
+
 - name: Creating a BimlFlex Project
   href: creating-and-configuring-a-bimlflex-project.md
 - name: Creating the Sample Metadata

@@ -28,7 +28,7 @@ The following detailed steps walks through the installation of BimlFlex
 
 ### Download BimlFlex
 
-Use the link in the Trial email to download the installer
+Use the link in the trial email to download the installer
 
 ### Install BimlFlex
 
@@ -36,4 +36,4 @@ Run the installer to install the application. When presented with the choice of 
 
 ### Enter product key
 
-Once the BimlFlex Excel based metadata editor is started for the first time, enter your Trial key to activate the product.
+Once the BimlFlex Excel based metadata editor is started for the first time, enter your trial key to activate the product.

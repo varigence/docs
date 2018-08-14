@@ -37,6 +37,8 @@ Main structure of contents, to be maintained in toc as well as folders to make s
         - [] TODO: Add contents for parameterisation file to match video
         - [] TODO: Add TnT video and contents for using Object inheritance in Extension Point for all objects in Batch (i.e. truncate all destination tables before load to MDS)
         - [] TODO: Add TnT video on [replace-columns-in-the-ssis-data-flow.md](tips-tricks/replace-columns-in-the-ssis-data-flow.md)
+        - [] TODO: Add TnT on Oracle source connection
+        - [x] TODO: Add TnT on Db2 source connection
 
     - user-guide - Full User Guide and Documentation for BimlFlex
         - TODO: Update all existing contents to match current build
@@ -87,12 +89,12 @@ Main structure of contents, to be maintained in toc as well as folders to make s
     - trial process
         - TODO: Update to match new build
         - TODO: Add missing documentation:
-            - [] accelerating data vault not completed
+            - [x] accelerating data vault
             - [] business data vault not completed
             - [] building business keys not completed
             - [] 2 layer pres layer not completed
             - [] creating and configuring a bimlflex project, needs updating with new update process
-            - [] creating-the-scaffolding-metadata.md, ok
+            - [x] creating-the-scaffolding-metadata.md, ok
             - [] dimensional-model-from-data-vault.md, not completed
             - [x] importing-source-metadata.md, ok
             - [x] index.md, ok, needs to be updated and kept in sync with updated contents
@@ -100,8 +102,8 @@ Main structure of contents, to be maintained in toc as well as folders to make s
             - [x] installing-bimlstudio.md, potentially add image
             - [x] installing-custom-ssis-components.md
             - [] modelling-of-source-metadata.md, not completed, needs formats, casings, links, contents, video, spelling
-            - [] setting-up-adventureworks-lt-source-database.md, update formats, links, video format, casings
-            - [] the-bimlflex-trial-process.md, ok
+            - [x] setting-up-adventureworks-lt-source-database.md, update formats, links, video format, casings
+            - [x] the-bimlflex-trial-process.md, ok
             - [] using-prepared-trial-metadata.md, not completed. whole process for trial metadata needs implementation and documentation
 
 ## Sample Markdown snippets

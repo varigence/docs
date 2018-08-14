@@ -1,4 +1,4 @@
-# Installing Custom Ssis Components
+# Installing BimlFlex Custom SSIS Components
 
 ## Supporting Videos
 
@@ -6,15 +6,23 @@
 
 ## Supporting BimlFlex Documentation
 
-- [Server Installation](../user-guide/Server-Installation.md)
+- @bimlflex-server-installation
 
 ## Installing Custom SSIS Components
 
 BimlFlex uses a set of custom SSIS components in the data processing to enable additional functionality. The components are part of the open source [BimlCatalog project available on GitHub](https://github.com/varigence/BimlCatalog).
 
-[Direct link for downloading the SQL Server 2016 custom components](https://github.com/varigence/BimlCatalog/blob/master/BimlCatalogComponents/Varigence.Ssis/varigence.ssis.2016.xcopyinstall.zip)
+The components are SQL Server version specific and the installed version must match the SQL Server SSIS version used.
 
-The components are installed through the supplied `install.bat` file
+Download links:
+
+- SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+- SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+- SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+- SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+- SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+
+The components are installed through the included `install.bat` file
 
 ## Detailed Steps
 
@@ -22,15 +30,41 @@ The following detailed steps walks through the installation of the custom SSIS c
 
 ### Downloading the components
 
-Download the components using the link in the Trial email or through the BimlCatalog repository link and store the file locally.
-
-[Direct link for downloading the Sql Server 2016 custom components](https://github.com/varigence/BimlCatalog/raw/master/BimlCatalogComponents/Varigence.Ssis/varigence.ssis.2016.xcopyinstall.zip)
+Download the components zip file using the links above, the link in the trial email or through the BimlCatalog repository and store the file locally.
 
 ### Unpack the file
 
-Once downloaded, unpack the zip file contents to a convenient location
+Once downloaded, unpack the zip file contents to a convenient location.
 
 ### Running the installation batch file
 
 Run the `install.bat` file with administrator privileges. This will install the custom components into the required locations.
-As the installation copies the components to the global assembly cache it needs to run using admin privileges.
+As the installation copies the components to the program files and global assembly cache it needs to run using elevated privileges.
+
+### Manual installation
+
+For manual installation, replicate the file copy and gacutil commands for the installation target:
+
+```
+copy "Varigence.Ssis.2017.dll" "C:\Program Files (x86)\Microsoft SQL Server\140\DTS\PipelineComponents\" /Y
+
+copy "Varigence.Ssis.2017.dll" "C:\Program Files\Microsoft SQL Server\140\DTS\PipelineComponents\" /Y
+
+gacutil /if "Varigence.Ssis.2017.dll"
+```
+
+replace the filename and destination with the correct version for the target environment and SQL Server version
+
+### Manual uninstallation
+
+For manual uninstallation, replicate the file delete and gacutil commands for the uninstallation target:
+
+```
+del "C:\Program Files (x86)\Microsoft SQL Server\140\DTS\PipelineComponents\Varigence.Ssis.2017.dll" /F
+
+del C:\Program Files\Microsoft SQL Server\140\DTS\PipelineComponents\Varigence.Ssis.2017.dll" /F
+
+gacutil /uf "Varigence.Ssis.2017"
+```
+
+replace the file and folder names with the correct names for the target environment and SQL Server version so they match the installed components.

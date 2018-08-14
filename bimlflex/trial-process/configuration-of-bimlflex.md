@@ -11,7 +11,8 @@
 ## Configurations and Settings in BimlFlex
 
 Once the project and metadata connection is defined it is possible to work with the metadata in the Excel-based metadata management application.
-One of the key features in the metadata is the configuration of the BimlFlex framework. Most aspects can be configured, including naming conventions, metadata added to layers, hashing approaches and base accounts and locations to use.
+
+One of the key features in the metadata is the configuration of the BimlFlex framework. Most aspects can be configured, including naming conventions, metadata added to layers, hashing approaches, base Azure accounts and folder locations to use.
 
 ## Detailed Steps
 
@@ -23,22 +24,34 @@ Open the Excel Metadata Editor and click the `Get All Settings` to read all conf
 
 ### Review Configurations
 
-The Configurations sheet contains the BimlFlex configurations for core metadata. Here metadata columns and data types are defined as well as if they are included in different layers.
+The Configurations sheet contains the BimlFlex configurations for core metadata.
+
+Here, metadata columns and data types are defined for the different layers.
+
+While the trial process uses the default settings, architectural choices such as if to use End Dating, if to include Deleted and Current Flags, if to include a Row Change Type indicator and how to derive it etc. are all specified in the Configurations sheet.
 
 ### Review Settings
 
 The Settings Sheet contains configurable settings such as naming conventions used.
 
-For the Trial it is recommended to update the Hash Algorithm to match the `HASHBYTES()` function in SQL.
+For the trial it is recommended to use a Hash Algorithm compatible with the `HASHBYTES()` function in SQL.
 
-Update the `UseSqlCompatibleHash` setting in the settings sheet to `Y`
+Verify that the `UseSqlCompatibleHash` setting in the settings sheet is set to `Y`
 
-Once the value is updated, click `Set Current Sheet` on the BimlFlex Ribbon Tab to set the value in the database.
+For the trial it is recommended to allow the Accelerator to accelerate Link Satellites.
+
+Verify that the `DvAccelerateLinkSatellite` setting in the settings sheet is set to `Y`
+
+If the values are updated, click `Set Current Sheet` on the BimlFlex Ribbon Tab to set the sheet in the database.
 
 ### Review Data Type Mappings
 
 The Data Type Mappings sheet contains the BimlFlex Data Type Mappings that can be used to expand data types for incoming data.
 
+In the trial process, the default Data Type Mappings are used.
+
 ### Review Versions
 
-The Versions sheet contains the current Customer Versions. Enabled Versions are visible in the drop down when configuring the metadata connection.
+The Versions sheet contains the current Customer's available Versions. Enabled Versions are visible in the drop down when configuring the metadata connection.
+
+Versions are used to work with different versions of the metadata for the same metadata Customer. In the trial process, a single, default version is used.

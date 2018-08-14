@@ -8,9 +8,11 @@ TODO: Coming Soon
 
 @bimlflex-user-guide
 
-## Implementing the Dimensional Model from Data Vault
+## Implementing a Dimensional Model from Data Vault
 
-Based on the PIT and Bridge tables in the Data Vault layer a set of Fact and Dimensional views are created that are used to populate a dimensional model in a data mart in the presentation layer.
+A set of Fact and Dimensional views are created based on the PIT and Bridge tables in the Data Vault layer. These are used to populate a dimensional model in a data mart as a presentation/reporting layer.
+
+Querying the Data Vault layer is made easier by utilizing the PIT and Bridge tables. To also include relevant contextual data it is necessary to join from these constructs to any Satellite that contains the metrics or attributes needed. By using the time slice information in the Satellites the relevant record for 
 
 ## Detailed Steps
 

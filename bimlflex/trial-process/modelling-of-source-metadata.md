@@ -12,7 +12,9 @@ TODO: Coming Soon
 
 Once the source system metadata has been imported in to BimlFlex it is possible to model it in the Excel-based metadata management application.
 
-Modelling through metadata management is the way to tweak the process to match business requirements and allows BimlFlex to automatically generate the required Sql structures and SSIS packages for the Etl process.
+Modelling through metadata management is the way to tweak the process to match ingestion and business requirements and allows BimlFlex to automatically generate the required SQL structures and SSIS packages for the ETL process.
+
+for a Data Vault based project, modelling the source metadata also affect the Accelerator behavior and the resulting Data Vault model.
 
 ## Detailed Steps
 
@@ -45,7 +47,11 @@ Sample constraints from a Staging table create script to illustrate Primary Key 
 )
 ```
 
-An Alternate Business Key is used as a backup of the source Primary Key when the primary key definition needs to be changed in the modelling process. If there are Primary Key columns defined as derived columns that aren't persisted into the Persistent Staging layer BimlFlex will use the Alternate Business Key instead.
+An Alternate Business Key is used as a backup of the source Primary Key when the primary key definition needs to be changed in the modelling process. If there are Primary Key columns defined as derived columns that aren't persisted into the Persistent Staging layer BimlFlex will use the Alternate Business Key instead. This is the normal approach for a Data Vault model.
+
+For the trial process using a Data Vault destination layer and using the Accelerator to accelerate the Data Vault objects, the source modelling will use the Business Keys to define the relationships. This allows the Accelerator to derive all Hubs, Links and Satellites based on the source metadata and the Business Key definitions used as well as their relationships.
+
+In the `Import Metadata` dialog the option to redefine relationships based on Business Keys was used. This has created a Main Business Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint an additional Business Key has been created. The related table and column data has been set between these Business Keys and the related main Business Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Business Keys without additional configuration.
 
 ### Applying Data Type Mappings, expansion
 
@@ -56,15 +62,17 @@ For the trial process, add the default Data Type Mappings to the `AWLT` record s
 
 ### Defining Business Keys
 
-Defining Business Keys to use for Data Vault modelling is a Business Analysis phase in the implementation. finding the correct Business Key definition relies on business process and source system knowledge as well as source system data profiling. For cross system key matching in Data Vault extensive analysis across all candidate sources. Defining the Business Key is a more straightforward exercise. For a given source table there can be only one Business Key column. For scenarios with multiple source keys the columns are concatenated with a separator character to build a single Business Key. This maps to the Business Key column in the Data Vault Hub tables and allows the Data Vault model to adhere to the pattern.
+Defining Business Keys to use for Data Vault modelling is a Business Analysis phase in the implementation. finding the correct Business Key definition relies on business process and source system knowledge as well as source system data profiling. For true cross-system key matching in Data Vault, extensive analysis across all candidate sources is normally needed. Defining the actual Business Key is a more straightforward exercise. For a given source table there can be only one main Business Key column. For scenarios with multiple source keys, these columns are concatenated with a separator character to build a single Business Key. This maps to the Business Key column in the Data Vault Hub tables and allows the Data Vault model to adhere to the pattern.
 
-BimlFlex provides an expression to concatenate and separate columns into the Business Key using the `FlexToBk(Column1, Column2, Column 3)` function. This can be applied in SSIS for SSIS load patterns and in Sql for Sql patterns. The trial uses the SSIS pattern and will implement the expression in a derived column in the generated SSIS packages.
+BimlFlex provides an expression to concatenate and separate columns into the Business Key using the `FlexToBk(@@rs, Column1, Column2, Column3)` function. This can be applied in SSIS for SSIS load patterns and in SQL for SQL patterns. The trial uses the SSIS pattern and will implement the expression in a derived column in the generated SSIS packages.
 
-The concatenation character used with multiple columns is defined in the configuration using the `ConcatenatorBusinessKey` key. The default concatenation character is `~`.
+The concatenation character used with multiple columns is defined in the BimlFlex Settings using the `ConcatenatorBusinessKey` key. The default concatenation character is `~`.
 
-BimlFlex also provides a set of shortcut codes for accessing specific data when building the Business Key. An example is the `@@rs` record source shortcut that injects the current record source code in to the Business Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
+BimlFlex also provides a shortcut code for accessing the current connections Record Source code when building the Business Key. Use the `@@rs` to inject the current record source code in to the Business Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
 
-For the trial process, add the `@@rs` shortcut to all Business Keys that were created by the import metadata process. For the Address table that would be changing the `FlexToBk(AddressID)` to `FlexToBk(@@rs, AddressID)`
+For the trial process, verify that the `@@rs` shortcut was added to all Business Keys by the import metadata process. For the Address table that would be `FlexToBk(@@rs, AddressID)`.
+
+More information and considerations for Business Keys are available in the [Building Business Keys for Data Vault](building-business-keys-for-data-vault.md) section.
 
 ### Defining Relationships
 
