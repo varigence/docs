@@ -1,3 +1,7 @@
+---
+uid: bimlflex-source-to-staging-templates
+title: BimlFlex Source to Staging Templates
+---
 # Source to Staging Templates
 
 BimlFlex offers users the ability to automate the development of best practice ETL out of the box using metadata modeling. As part of this, there are various options for users when designing a staging layer for their solution.

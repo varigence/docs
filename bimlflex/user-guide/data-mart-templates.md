@@ -1,3 +1,7 @@
+---
+uid: bimlflex-data-mart-templates
+title: BimlFlex Data Mart Templates
+---
 # Data Mart Templates
 
 This document covers the process to implement a Data Mart layer using BimlFlex.

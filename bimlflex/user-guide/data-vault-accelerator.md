@@ -1,4 +1,8 @@
-# BimlFlex Data Vault Accelerator
+---
+uid: bimlflex-data-vault-accelerator
+title: BimlFlex Data Vault Accelerator
+---
+# Data Vault Accelerator
 
 ## On Data Vault modelling
 

@@ -1,3 +1,7 @@
+---
+uid: bimlflex-data-vault-templates
+title: BimlFlex Data Vault Templates
+---
 # Data Vault Templates
 
 This document outlines the creation and management of Data Vault artefacts in BimlFlex.

@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-developer-installation
-title: Developer Installation
+title: BimlFlex Developer Installation
 ---
 # Developer Installation
 

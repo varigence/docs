@@ -28,7 +28,7 @@
   href: building-business-keys-for-data-vault.md
 - name: Accelerating the Raw Data Vault Layer
   href: accelerating-the-raw-data-vault-layer.md
-- name: Adding Business Data Vault
+- name: Adding Business Data Vault Constructs
   href: adding-business-data-vault-performance-constructs.md
 - name: Dimensional Model from Data Vault
   href: dimensional-model-from-data-vault.md

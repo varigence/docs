@@ -1,3 +1,7 @@
+---
+uid: bimlflex-initial-setup-and-configuration
+title: BimlFlex Initial Setup and Configuration
+---
 # Initial Setup and Configuration
 
 The setup includes the necessary steps to set up the environments, including:

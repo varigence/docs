@@ -1,3 +1,7 @@
+---
+uid: bimlflex-importing-metadata
+title: BimlFlex Importing Metadata
+---
 # Importing Metadata
 
 The primary source BimlFlex uses to generate Data Warehousing and Business Intelligence assets is metadata. Metadata is most commonly in the form of objects with corresponding attributes.

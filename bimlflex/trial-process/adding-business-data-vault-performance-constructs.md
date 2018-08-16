@@ -1,4 +1,8 @@
-# Adding Business Data Vault helper and performance constructs
+---
+uid: bimlflex-trial-adding-business-data-vault-performance-constructs
+title: Adding Business Data Vault Performance Constructs
+---
+# Adding Business Data Vault Performance Constructs
 
 ## Supporting Videos
 
@@ -10,7 +14,11 @@ TODO: Coming Soon
 
 ## Adding Business Data Vault performance constructs
 
-The `Point in Time` and `Bridge` structures are used in Data Vault to make the Data Vault easier to query and to improve query performance. For insert-only Data Vault solutions, the Point in Time (PIT) tables provides a convenient way to recreate timelines and end date records so that timeline-sensitive queries are easier to create. The Bridge (BRG) constructs allows multiple Links to be combined in one table surrounding a Hub minimizing the required joins.
+The `Point in Time` and `Bridge` structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
+
+For insert-only Data Vault solutions, the Point in Time (PIT) tables provides a convenient way to recreate timelines and end date records so that timeline-sensitive queries are easier to create.
+
+The Bridge (BRG) constructs allows multiple Links surrounding a Hub to be combined in one table, minimizing the required joins.
 
 - Point in Time, PIT, tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub
 - Bridge tables are used to link business entities in Hubs through their link tables into easy to query constructs
@@ -36,8 +44,8 @@ For a PIT definition where only the Hub is included, BimlFlex will automatically
 | Project | Batch | Connection | Object            | ColumnName | AttributeKey | AttributeValue |
 | ------- | ----- | ---------- | ------            | ---------- | ------------ | -------------- |
 |         |       | `BFX_RDV`  | `rdv.HUB_Product` |            | `CreatePIT`  | `PIT_Product`  |
-|         |       | `BFX_RDV`  | `rdv.SAT_Product` |            | `CreatePIT`  | `PIT_Product`  |
-|         |       | `BFX_RDV`  | `rdv.SAT_Product_Other` |            | `CreatePIT`  | `PIT_Product`  |
+|         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
+|         |       | `BFX_RDV`  | `rdv.SAT_Product_Pwd_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
 
 *Note: the sample above would need to reflect actual satellites to produce the expected PIT table.*
 

@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-metadata-connections
-title: Connections
+title: BimlFlex Connections
 ---
 # Connections
 

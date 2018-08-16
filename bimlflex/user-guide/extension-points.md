@@ -1,3 +1,7 @@
+---
+uid: bimlflex-extension-points
+title: BimlFlex Extension Points
+---
 # Extension Points
 
 Extension Points are used to extend the default functionality of BimlFlex using standard Biml code. It can extend and override many different areas of the BimlFlex framework.
@@ -37,22 +41,22 @@ Special attention should be paid when editing the directives of an extension poi
 
 The following table outlines the attributes of these directives.
 
-|Extension Point Directive Attribute|Attributes Description|
-|--- |--- |
-|bundle|File name of the bundle being used|
-|extensionpoint|Key work defining the type of extension point|
-|target|The name of the object that the extension point will be applied to|
+| Extension Point Directive Attribute | Attributes Description |
+| ----------------------------------- | ---------------------- |
+| bundle                              | File name of the bundle being used, for BimlFlex this is always `bimlflex.bimlb` |
+| extensionpoint                      | Key defining the type of extension point |
+| target                              | The name of the object that the extension point will be applied to |
 
 The next directive is the property directive which is specific to the type of object you are trying to modify. Below is a table with the attribute definitions.
 
-|Property Directive Attribute|Attributes Description|
-|--- |--- |
-|name|Name of the entity this extension point targets: "sourceTable", "targetTable", "connection" etc.|
-|type|This is the entity type: "string", "BimlFlexModelWrapper.ObjectsWrapper", "BimlFlexModelWrapper.ConnectionsWrapper", etc.|
+| Property Directive Attribute | Attributes Description |
+| ---------------------------- | ---------------------- |
+| name                         | Name of the entity this extension point targets: `sourceTable`, `targetTable`, `connection` etc. |
+| type                         | This is the entity type: `string`, `BimlFlexModelWrapper.ObjectsWrapper`, `BimlFlexModelWrapper.ConnectionsWrapper`, etc. |
 
 ## Extension Point Inheritance Code
 
-Here we will describe how a BimlFlex extension point can inherit the attributes and related items from an object that we are trying to modify. This is useful because, in some cases, properties relating to a certain object are required as part of what is needed to effectively do what we want to in an extension point.
+BimlFlex extension points can inherit the attributes and related items from an object. This is useful because, in some cases, properties relating to a certain object are required as part of what is needed to effectively do what we want to in an extension point.
 
 Below are two of the required directives that need to be in place in order to use inheritance.
 

@@ -1,3 +1,7 @@
+---
+uid: bimlflex-master-data-services
+title: BimlFlex Microsoft SQL Server Master Data Services (MDS) integration
+---
 # Microsoft SQL Server Master Data Services (MDS) integration
 
 TODO: To Complete

@@ -1,8 +1,8 @@
 ---
 uid: bimlflex-metadata-settings
-title: Settings
+title: BimlFlex Settings
 ---
-# Metadata and framework settings in BimlFlex
+# Metadata and framework settings
 
 This document outlines the metadata and framework settings available in BimlFlex.
 

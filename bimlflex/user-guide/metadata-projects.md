@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-metadata-projects
-title: Projects
+title: BimlFlex Projects
 ---
 # Projects
 

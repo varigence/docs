@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-metadata-parameters
-title: Parameters
+title: BimlFlex Parameters
 ---
 # Parameters
 

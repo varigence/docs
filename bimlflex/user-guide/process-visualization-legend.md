@@ -1,3 +1,7 @@
+---
+uid: bimlflex-process-visualization-legend
+title: BimlFlex Process Visualization Legend
+---
 # Process Visualization Legend
 
 |Key|Description|

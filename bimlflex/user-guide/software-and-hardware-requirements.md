@@ -1,4 +1,8 @@
-# Software and Hardware requirements for installation components
+---
+uid: bimlflex-software-and-hardware-requirements.md
+title: BimlFlex Software and Hardware requirements
+---
+# Software and Hardware requirements
 
 ## BimlStudio
 
@@ -6,7 +10,7 @@
 * Same requirements as recommended for the Windows version in use [(For Windows 10: https://www.microsoft.com/en-au/windows/windows-10-specifications)](https://www.microsoft.com/en-au/windows/windows-10-specifications)
 * Same requirements as approved for the Visual Studio version and edition in use [(For Visual Studio 2015: https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)](https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)
 * BimlStudio supports Visual Studio 2010, 2012, 2013, 2015. The version of [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT BI) and Visual Studio used depends on the SQL Server version used for the SSIS Server
-* A valid Varigence BimlStudio Product key is required for use
+* A valid Varigence BimlStudio Product key is required for use.
 
 ## BimlFlex Excel Plugin
 

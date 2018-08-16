@@ -1,3 +1,7 @@
+---
+uid: bimlflex-support-process
+title: BimlFlex Support Process
+---
 # Support Process
 
 Varigence provides support with issues encountered through using BimlFlex to build out the Data Warehouse artifacts.

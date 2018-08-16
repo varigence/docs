@@ -17,13 +17,13 @@ Varigence provides updates to the BimlFlex framework through an online download 
 Steps for deploying updates:
 
 1. Update the template Bundle version that is used for new projects
-1. Update the Bundle file that is used for the project
-1. Update the BimlFlex metadata database used by the project
-1. Update the BimlCatalog orchestration and auditing database used by the project
+1. Update the Bundle file that is used for the current project
+1. Update the BimlFlex metadata database used by the current  project
+1. Update the BimlCatalog orchestration and auditing database used by the current project
 
 Once the project has identified that a new version is available online the following dialog is displayed:
 
-![BimlFlex Upgrade Assets](images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png "BimlFlex Upgrade Assets")
+![BimlFlex Upgrade Assets -center -50%](images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png "BimlFlex Upgrade Assets")
 
 ## Update template Bundle version
 
@@ -47,10 +47,18 @@ The connection to the BimlCatalog database is derived from the BimlCatalog conne
 
 ## Upgrade progress
 
-All upgrade progress is logged to the output window in BimlStudio.
+Upgrade progress messages are logged to the output window in BimlStudio.
 
 ## Post upgrade
 
 Once the upgrade is completed, restart BimlStudio and reopen the project to apply the new Bundle.
 
-Once the project and databases have been updated, refer to the [testing documentation](upgrade-and-testing-process.md) to validate that the new version provides the same output as before
+## Separate database upgrade
+
+For other databases not defined in the project (such as a production BimlCatalog database), use the `Upgrade Assets` dialog and specify the connection strings separately to the database server.
+
+For database servers not available from the development environment, use the BimlFlex utility application to deploy the upgrade or contact BimlFlex support for a separate Dacpac for scripted deployments.
+
+## Post upgrade testing
+
+Once the project and databases have been updated, refer to the [testing documentation](upgrade-and-testing-process.md) to validate that the new version provides the same output as before.

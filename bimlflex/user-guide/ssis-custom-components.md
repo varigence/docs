@@ -1,3 +1,7 @@
+---
+uid: bimlflex-ssis-custom-components
+title: BimlFlex SSIS Custom Components
+---
 # SSIS Custom Components
 
 Custom SSIS components are used for ETL load processes. These components simplify the data processing and allows the BimlFlex generated packages to more easily load data.

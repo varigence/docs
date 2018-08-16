@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-metadata-columns
-title: Columns
+title: BimlFlex Columns
 ---
 # Columns
 
