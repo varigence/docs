@@ -14,39 +14,39 @@ The Configuration defaults are the Varigence recommended values and there is no 
 
 The Configurations are available in the Configurations sheet in the BimlFlex Excel Add-in.
 
-![Configurations Sheet](images/bimlflex-ss-v5-excel-configurations-sheet.png "Configurations Sheet")
+![Configurations Sheet -center -50%](images/bimlflex-ss-v5-excel-configurations-sheet.png "Configurations Sheet")
 
 ## Metadata column overview
 
-|Key|Value|
-|--- |--- |
-|Configuration Key|the Configuration Key, the internal key BimlFlex refers to, cannot be changed|
-|Configuration Value|the Configured Value, can be updated to support a different design pattern or behaviour|
-|Configuration Datatype|the data type the configuration Value uses. Needs to be a valid data type definition|
-|Configuration Default|the Configuration Key’s Default Value|
-|Configuration Grouping|BimlFlex Internal Grouping of configurations|
-|Configuration Order|BimlFlex Internal Ordering of configurations|
-|SSIS Expression|the SSIS Expression used to derive the value. Needs to be a valid SSIS Expression. Uses the shorthand @@this to define the current entity|
-|Is Nullable|Defines If the attribute is nullable Valid Enumeration {Empty, Y, N}|
-|Staging Attribute|Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash}|
-|Persistent Staging Attribute|Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash}|
-|Hub Attribute|Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash}|
-|Satellite Attribute|Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash}|
-|Link Attribute|Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash}|
-|Dim Attribute|Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash}|
-|Fact Attribute|Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash}|
-|Description|An optional description for custom attributes or definitions. The default configurations are described in this document|
-|Is Deleted|Flag to set if a custom attribute has been entered but is now no longer needed and should be considered deleted. Valid Enumeration {Empty, Y, N}|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Key            | The Configuration Key, the internal key BimlFlex refers to, cannot be changed |
+| Configuration Value          | The Configured Value, can be updated to support a different design pattern or behavior. For column names, change the name here to adhere to the required naming convention |
+| Configuration Data Type      | The data type the configuration uses. Needs to be a valid data type definition |
+| Configuration Default        | The Configuration Key’s Default Value |
+| Configuration Grouping       | BimlFlex Internal Grouping of configurations |
+| Configuration Order          | BimlFlex Internal Ordering of configurations |
+| SSIS Expression              | The SSIS Expression used to derive the value. Needs to be a valid SSIS Expression. Uses the shorthand @@this to define the current entity |
+| Is Nullable                  | Defines If the attribute is nullable Valid Enumeration {Empty, Y, N} |
+| Staging Attribute            | Should the configuration be included in the staging layer, and if so, how should it be created. Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash} |
+| Persistent Staging Attribute | Should the configuration be included in the persistent staging layer, and if so, how should it be created. Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash} |
+| Hub Attribute                | Should the configuration be included in Hubs, and if so, how should it be created. Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash} |
+| Satellite Attribute          | Should the configuration be included in Satellites, and if so, how should it be created. Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash} |
+| Link Attribute               | Should the configuration be included in Links, and if so, how should it be created. Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash} |
+| Dim Attribute                | Should the configuration be included in Dimensions, and if so, how should it be created. Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash} |
+| Fact Attribute               | Should the configuration be included in Facts, and if so, how should it be created. Valid Enumeration {Ignore, Derived, Source, Default, Target, Hash} |
+| Description                  | An optional description for custom attributes or definitions. The default configurations are described in this document|
+| Is Deleted                   | Flag to set if a custom attribute has been entered but is now no longer needed and should be considered deleted. Unused Settings should be left as is and not be deleted. Valid Enumeration {Empty, Y, N} |
 
 ## Standard configurations
 
 ### RowEffectiveFromDate
 
-#### Description
-
-The **RowEffectiveFromDate** defines the start of time for timelines in the data warehouse. The `DateTime2(7)` datatype supports a wider range of dates than traditional DateTime meaning starting on 1 Jan 0001 will support most use cases. If a specific start DateTime for timelines is needed, such as to support an existing design template, this can be updated to support it. Unless there is a good reason to change it, it is recommended to keep the default.
+The `RowEffectiveFromDate` defines the start of time for timelines in the data warehouse. The `DateTime2(7)` datatype supports a wider range of dates than traditional DateTime meaning starting on 1 Jan 0001 will support most use cases. If a specific start DateTime for timelines is needed, such as to support an existing design template, this can be updated to support it. Unless there is a good reason to change it, it is recommended to keep the default.
 
 The SSIS Expression is used in the Staging and Persistent Staging loads to derive the RowEffectiveFromDate from the `@[User::ParentBatchStartTime]` variable. This is inserted into the Data Flow to give each row its effectiveness date. The default configuration is to use the start date time of the parent Batch for this column.
+
+For scenarios where the data warehouse load should derive the effective date time from the source, it is possible to override this expression either through the global setting in the configurations sheet, or through an override in the attributes sheet. Scenarios where the override would be of interest are CDC source loads, where BimlFlex will reuse the transaction datetime from the CDC mechanism and when multiple changes to a record are included in a single sourcing set. By overriding the RowEffectiveFromDate, it is possible to keep the timeline of the source rows and the grain of the source without key collisions.
 
 An example of implementation usage for the configuration default is in the Default constraint of this table creation script for the Address staging table from the AdventureWorks LT Source:
 
@@ -58,7 +58,17 @@ ALTER TABLE [AWLT].[Address] ADD CONSTRAINT [DF_Address_FlexRowEffectiveFromDate
 
 #### Example
 
-See defaults
+Default, derives from the Parent Batch Start Time variable:
+
+```SsisExpression
+@[User::ParentBatchStartTime]
+```
+
+SSIS Expression based, if it is the initial load, use the Parent Batch Start Time variable, else derive the Effective From Date based on two other columns. This is used in CDC-type loads.
+
+```SsisExpression
+@[User::IsInitialLoad]?@[User::ParentBatchStartTime]:DATEADD("ms", ([__$rownumber]-1) * 4, [__$start_dt])
+```
 
 #### Valid Value
 
@@ -66,24 +76,22 @@ Depends on configuration attribute
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Key|RowEffectiveFromDate|
-|Configuration Value|FlexRowEffectiveFromDate|
-|Configuration Datatype|DataType="DateTime2" Scale="7"|
-|Configuration Default|0001-01-01 00:00:00.000|
-|Ssis Expression|@[User::ParentBatchStartTime]|
-|Staging Attribute|Derived|
-|Persistent Staging Attribute|Derived|
-|Hub Attribute|Source|
-|Satellite Attribute|Source|
-|Link Attribute|Source|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Key            | `RowEffectiveFromDate` |
+| Configuration Value          | `FlexRowEffectiveFromDate` |
+| Configuration Datatype       | `DataType="DateTime2" Scale="7"` |
+| Configuration Default        | `0001-01-01 00:00:00.000` |
+| Ssis Expression              | `@[User::ParentBatchStartTime]` |
+| Staging Attribute            | `Derived` |
+| Persistent Staging Attribute | `Derived` |
+| Hub Attribute                | `Source` |
+| Satellite Attribute          | `Source` |
+| Link Attribute               | `Source` |
 
 ### RowEffectiveToDate
 
-#### Description
-
-The **RowEffectiveToDate** defines the end of time for timelines in the data warehouse. The DateTime2(7) datatype supports a wider range of dates than traditional DateTime meaning ending on 31 Dec 9999 will support most use cases. If a specific start DateTime for timelines is needed, such as to support an existing design template, this can be updated to support it. Unless there is a very good reason to change it, it is recommended to keep the default.
+The `RowEffectiveToDate` defines the end of time for timelines in the data warehouse. The DateTime2(7) datatype supports a wider range of dates than traditional DateTime meaning ending on 31 Dec 9999 will support most use cases. If a specific start DateTime for timelines is needed, such as to support an existing design template, this can be updated to support it. Unless there is a very good reason to change it, it is recommended to keep the default.
 
 The SSIS Expression is used in the Staging and Persistent Staging loads to derive the RowEffectiveToDate from the `(DT_DBTIMESTAMP2, 7)"9999-12-31 00:00:00.000"` expression. This is inserted into the Data Flow to give each row its end date. The default configuration is to use the end of timeline definition.
 
@@ -105,25 +113,23 @@ Depends on configuration attribute
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowEffectiveToDate|
-|Configuration Datatype|DataType="DateTime2" Scale="7"|
-|Configuration Default|9999-12-31|
-|Ssis Expression|`(DT_DBTIMESTAMP2, 7)"9999-12-31"`|
-|Staging Attribute|Derived|
-|Persistent Staging Attribute|Derived|
-|Satellite Attribute|Derived|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Value          | `FlexRowEffectiveToDate` |
+| Configuration Datatype       | `DataType="DateTime2" Scale="7"` |
+| Configuration Default        | `9999-12-31` |
+| Ssis Expression              | `(DT_DBTIMESTAMP2, 7)"9999-12-31"`|
+| Staging Attribute            | `Derived` |
+| Persistent Staging Attribute | `Derived` |
+| Satellite Attribute          | `Derived` |
 
 ### RowLastSeenDate
 
-#### Description
-
-The **RowLastSeenDate** defines the default SSIS Expression used to derive the RowLastSeen attribute
+The `RowLastSeenDate` defines the default SSIS Expression used to derive the RowLastSeen attribute. This is an optional Data Vault mechanism for deriving when a row was last seen from the source. This approach is not recommended. Delete detection can be achieved using alternate approaches.
 
 #### Example
 
-```
+```SsisExpression
 (DT_DBTIMESTAMP2, 7)"1900-01-01"
 ```
 
@@ -133,21 +139,19 @@ A valid SSIS expression and data type.
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowLastSeenDate|
-|Configuration Datatype|DataType="DateTime2" Scale="7"|
-|Ssis Expression|`(DT_DBTIMESTAMP2, 7)"1900-01-01"`|
+| Key                    | Value |
+| ---------------------- | ----- |
+| Configuration Value    | `FlexRowLastSeenDate` |
+| Configuration Datatype | `DataType="DateTime2" Scale="7"` |
+| Ssis Expression        | `(DT_DBTIMESTAMP2, 7)"1900-01-01"` |
 
 ### RowStartDate
 
-#### Description
-
-The **RowStartDate** defines the start of time definition for a row in the data warehouse. This attribute is used to define the timeline in use, from start of time to end of time.
+The `RowStartDate` defines the start of time definition for a row in the data warehouse. This attribute is used to define the timeline in use, from start of time to end of time for Dimensions.
 
 #### Example
 
-```
+```SsisExpression
 (DT_DBTIMESTAMP2, 7)GETDATE()
 ```
 
@@ -157,23 +161,21 @@ A valid SQL, SSIS Expression and data type that defines a date time
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowStartDate|
-|Configuration Datatype|DataType="DateTime2" Scale="7"|
-|Configuration Default|1900-01-01|
-|Ssis Expression|`(DT_DBTIMESTAMP2, 7)GETDATE()`|
-|Dim Attribute|Derived|
+| Key                    | Value |
+| ---------------------- | ----- |
+| Configuration Value    | `FlexRowStartDate` |
+| Configuration Datatype | `DataType="DateTime2" Scale="7"` |
+| Configuration Default  | `1900-01-01` |
+| Ssis Expression        | `(DT_DBTIMESTAMP2, 7)GETDATE()` |
+| Dim Attribute          | `Derived` |
 
 ### RowEndDate
 
-#### Description
-
-The **RowEndDate** defines the end of time definition for a row in the data warehouse. This attribute is used to define the timeline in use, from start of time to end of time
+The `RowEndDate` defines the end of time definition for a row in the data warehouse. This attribute is used to define the timeline in use, from start of time to end of time for Dimensions.
 
 #### Example
 
-```
+```SsisExpression
 (DT_DBTIMESTAMP2, 7)"9999-12-31 00:00:00.000"
 ```
 
@@ -183,22 +185,20 @@ A valid SQL, SSIS Expression and data type that defines a date time
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowEndDate|
-|Configuration Datatype|DataType="DateTime2" Scale="7"|
-|Ssis Expression|`(DT_DBTIMESTAMP2, 7)"9999-12-31 00:00:00.000"`|
-|Satellite Attribute|Derived|
+| Key                    | Value |
+| ---------------------- | ----- |
+| Configuration Value    | `FlexRowEndDate` |
+| Configuration Datatype | `DataType="DateTime2" Scale="7"` |
+| Ssis Expression        | `(DT_DBTIMESTAMP2, 7)"9999-12-31 00:00:00.000"` |
+| Dim Attribute          | `Derived` |
 
 ### RowAuditId
 
-#### Description
-
-The **RowAuditId** defines the derivation pattern for the audit value for a row. The default derives the audit id from the ExecutionID user variable. This value will be added to all rows as the audit id, default column name: `[FlexRowAuditId]`
+The `RowAuditId` defines the derivation pattern for the audit value for a row. The default derives the audit id from the ExecutionID user variable. This value will be added to all rows as the audit id, default column name: `[FlexRowAuditId]`
 
 #### Example
 
-```
+```SsisExpression
 @[User::ExecutionID]
 ```
 
@@ -208,29 +208,39 @@ A valid SSIS Expression and data type, attributes as per their enumerations
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowAuditId|
-|Configuration Datatype|DataType="Int64"|
-|Ssis Expression|`@[User::ExecutionID]`|
-|Staging Attribute|Derived|
-|Persistent Staging Attribute|Derived|
-|Hub Attribute|Derived|
-|Satellite Attribute|Derived|
-|Link Attribute|Derived|
-|Dim Attribute|Derived|
-|Fact Attribute|Derived|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Value          | `FlexRowAuditId` |
+| Configuration Datatype       | `DataType="Int64"` |
+| Ssis Expression              | `@[User::ExecutionID]` |
+| Staging Attribute            | `Derived` |
+| Persistent Staging Attribute | `Derived` |
+| Hub Attribute                | `Derived` |
+| Satellite Attribute          | `Derived` |
+| Link Attribute               | `Derived` |
+| Dim Attribute                | `Derived` |
+| Fact Attribute               | `Derived` |
 
 ### RowChangeType
 
-#### Description
+The `RowChangeType` defines the string representation of the change type when inserting new rows into the data warehouse.
 
-The **RowChangeType** defines the string representation of the change type when inserting new rows into the data warehouse.
+Note that the current BimlFlex default does not include this flag, should the data warehouse need to track change type, add it to the architecture.
+
+To capture changes and deletes, please add the required logic to derive these values from the source column that indicates the change type. This can be done either in the configurations sheet as a global configuration or in the attributes sheet as a local object override.
 
 #### Example
 
-```
+Fixed value:
+
+```SsisExpression
 I
+```
+
+SSIS Expression for CDC-type loads. This derives the code based on another column:
+
+```SsisExpression
+[__$operation]==1?"D":[__$operation]==2?"I":"U"
 ```
 
 #### Valid Value
@@ -239,25 +249,25 @@ A Valid SSIS Expression
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowChangeType|
-|Configuration Datatype|DataType="AnsiString" Length="1"|
-|Configuration Default|I|
-|Ssis Expression|`(DT_STR,10,1252)"I"`|
-|Staging Attribute|Derived|
-|Persistent Staging Attribute|Derived|
-|Satellite Attribute|Source|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Value          | `FlexRowChangeType` |
+| Configuration Datatype       | `DataType="AnsiString" Length="1"` |
+| Configuration Default        | `I` |
+| Ssis Expression              | `(DT_STR,10,1252)"I"` |
+| Staging Attribute            | `Derived` |
+| Persistent Staging Attribute | `Derived` |
+| Satellite Attribute          | `Source` |
 
 ### RowRecordSource
 
-#### Description
+The `RowRecordSource` defines the record source for the data. This is a required attribute for Data Vault sources and normally defined in the connections definition for external sources loaded into the Data Vault.
 
-The **RowRecordSource** defines the record source for the data. This is a required attribute for Data Vault sources and normally defined in the connections definition for external sources loaded into the Data Vault
+Note that the default max length for the record source code is 10 characters.
 
 #### Example
 
-```
+```SsisExpression
 (DT_STR,10,1252)"@@this"
 ```
 
@@ -267,27 +277,25 @@ A valid SSIS Expression
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowRecordSource|
-|Configuration Datatype|DataType="AnsiString" Length="10"|
-|Configuration Default|FLX|
-|Ssis Expression|`(DT_STR,10,1252)"@@this"`|
-|Staging Attribute|Derived|
-|Persistent Staging Attribute|Derived|
-|Hub Attribute|Source|
-|Satellite Attribute|Source|
-|Link Attribute|Source|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Value          | `FlexRowRecordSource` |
+| Configuration Datatype       | `DataType="AnsiString" Length="10"` |
+| Configuration Default        | `FLX` |
+| Ssis Expression              | `(DT_STR,10,1252)"@@this"` |
+| Staging Attribute            | `Derived` |
+| Persistent Staging Attribute | `Derived` |
+| Hub Attribute                | `Source` |
+| Satellite Attribute          | `Source` |
+| Link Attribute               | `Source` |
 
 ### RowSourceId
 
-#### Description
-
-The **RowSourceId** defines the sequence number of the data row within the set. This is used to identify all rows in order within a batch.
+The `RowSourceId` defines the sequence number of the data row within the set. This is used to identify all rows in order within a batch.
 
 #### Example
 
-```
+```SsisExpression
 -1
 ```
 
@@ -297,25 +305,23 @@ A valid SSIS Expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowSourceId|
-|Configuration Datatype|DataType="Int32"|
-|Configuration Default|-1|
-|Ssis Expression|true|
-|Staging Attribute|Derived|
-|Persistent Staging Attribute|Derived|
-|Satellite Attribute|Source|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Value          | `FlexRowSourceId` |
+| Configuration Datatype       | `DataType="Int32"` |
+| Configuration Default        | `-1` |
+| Ssis Expression              | `true` |
+| Staging Attribute            | `Derived` |
+| Persistent Staging Attribute | `Derived` |
+| Satellite Attribute          | `Source` |
 
 ### RowIsCurrent
 
-#### Description
-
-The **RowIsCurrent** defines the current row flag for timelined data, such as for satellites. The RowIsCurrent is the definition for how the current row is defined in the data.
+The `RowIsCurrent` defines the current row flag for data in timelines, such as for satellites. The `RowIsCurrent` is the definition for how the current row is defined and derived in the data. The default configuration does not include the `IsCurrent` flag in staging and persistent staging, only in Dimensions.
 
 #### Example
 
-```
+```SsisExpression
 true
 ```
 
@@ -325,27 +331,37 @@ A valid SSIS Expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowIsCurrent|
-|Configuration Datatype|DataType="Boolean"|
-|Configuration Default|1|
-|Ssis Expression|true|
-|Staging Attribute|Derived|
-|Persistent Staging Attribute|Derived|
-|Satellite Attribute|Derived|
-|Dim Attribute|Derived|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Value          | `FlexRowIsCurrent` |
+| Configuration Datatype       | `DataType="Boolean"` |
+| Configuration Default        | `1` |
+| Ssis Expression              | `true` |
+| Staging Attribute            | `Derived` |
+| Persistent Staging Attribute | `Derived` |
+| Satellite Attribute          | `Derived` |
+| Dim Attribute                | `Derived` |
 
 ### RowIsDeleted
 
-#### Description
+The `RowIsDeleted` defines the pattern to derive if a row is deleted or not.
 
-The **RowIsDeleted** defines the derivation pattern to if a row is deleted or not
+This information is normally presented by the source as an additional attribute indicating that the row has been deleted.
+
+For source systems with hard deletes and no mechanism to present these deleted, consider using the Delete Detection feature in BimlFlex: @bimlflex-delete-detection
 
 #### Example
 
-```
+Fixed value expression:
+
+```SsisExpression
 false
+```
+
+SSIS expression, derive the value based on a source column.
+
+```SsisExpression
+[__$operation]==1?TRUE:FALSE
 ```
 
 #### Valid Value
@@ -354,26 +370,24 @@ A valid SSIS expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowIsDeleted|
-|Configuration Datatype|DataType="Boolean"|
-|Configuration Default|`(DATEPART("ms", GETDATE())%2)==1?TRUE:FALSE`|
-|Ssis Expression|false|
-|IsNullable|Y|
-|Staging Attribute|Derived|
-|Persistent Staging Attribute|Derived|
-|Satellite Attribute|Source|
+| Key                          | Value |
+| ---------------------------- | ----- |
+| Configuration Value          | `FlexRowIsDeleted` |
+| Configuration Datatype       | `DataType="Boolean"` |
+| Configuration Default        | |
+| Ssis Expression              | `false` |
+| IsNullable                   | `Y` |
+| Staging Attribute            | `Derived` |
+| Persistent Staging Attribute | `Derived` |
+| Satellite Attribute          | `Source` |
 
 ### RowIsInferred
 
-#### Description
-
-The **RowIsInferred** defines if the row is inferred
+The `RowIsInferred` defines if the row is inferred
 
 #### Example
 
-```
+```SsisExpression
 false
 ```
 
@@ -383,26 +397,24 @@ SSIS Expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowIsInferred|
-|Configuration Datatype|DataType="Boolean"|
-|Configuration Default|1|
-|Ssis Expression|false|
-|IsNullable|Y|
-|Dim Attribute|Derived|
+| Key                    | Value |
+| ---------------------- | ----- |
+| Configuration Value    | `FlexRowIsInferred` |
+| Configuration Datatype | `DataType="Boolean"` |
+| Configuration Default  | `1` |
+| Ssis Expression        | `false` |
+| IsNullable             | `Y` |
+| Dim Attribute          | `Derived` |
 
 ### RowHash
 
-#### Description
-
-The **RowHash** defines the expression used to derive a full row hash. The default uses the combination of a forward hash and a backwards hash to minimise the risk for hash collisions. The default hashing mechanism uses the Varigence Custom SSIS Components.
+The `RowHash` defines the expression used to derive a full row hash.
 
 #### Example
 
-```
-[vck@@this1]+[vck@@this2]
-000000000000000000000000000000000000000000000000000000000000000000000000000000
+```SsisExpression
+[vck@@this1]
+000000000000000000000000000000000000000
 ```
 
 #### Valid Value
@@ -411,25 +423,23 @@ A Valid SSIS Expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowHash|
-|Configuration Datatype|DataType="AnsiString" Length="80"|
-|Configuration Default|000000000000000000000000000000000000000000000000000000000000000000000000000000|
-|Ssis Expression|[vck@@this1]+[vck@@this2]|
-|IsNullable|Y|
-|Staging Attribute|Hash|
-|Persistent Staging Attribute|Hash|
+| Key                          | Value |
+| ----------------------       | ----- |
+| Configuration Value          | `FlexRowHash` |
+| Configuration Datatype       | `DataType="AnsiString" Length="40"` |
+| Configuration Default        | `000000000000000000000000000000000000000` |
+| Ssis Expression              | `[vck@@this1]` |
+| IsNullable                   | `Y` |
+| Staging Attribute            | `Hash` |
+| Persistent Staging Attribute | `Hash` |
 
 ### RowHashKey
 
-#### Description
-
-The **RowHashKey** defines the expression used to derive a key hash. The default hashing mechanism uses the Varigence Custom SSIS Components.
+The `RowHashKey` defines the expression used to derive a key hash.
 
 #### Example
 
-```
+```SsisExpression
 [vck@@this1]
 ```
 
@@ -439,25 +449,23 @@ A valid SSIS Expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowHashKey|
-|Configuration Datatype|DataType="AnsiString" Length="40"|
-|Configuration Default|000000000000000000000000000000000000000|
-|Ssis Expression|[vck@@this1]|
-|IsNullable|Y|
-|Staging Attribute|Hash|
-|Persistent Staging Attribute|Hash|
+| Key                          | Value |
+| ----------------------       | ----- |
+| Configuration Value          | `FlexRowHashKey` |
+| Configuration Datatype       | `DataType="AnsiString" Length="40"` |
+| Configuration Default        | `000000000000000000000000000000000000000` |
+| Ssis Expression              | `[vck@@this1]` |
+| IsNullable                   | `Y` |
+| Staging Attribute            | `Hash` |
+| Persistent Staging Attribute | `Hash` |
 
 ### RowHashSat
 
-#### Description
-
-The **RowHashSat** defines the expression used to derive a satellite attribute hash. The default hashing mechanism uses the Varigence Custom SSIS Components
+The `RowHashSat` defines the expression used to derive a satellite attribute hash.
 
 #### Example
 
-```
+```SsisExpression
 [@@this1]
 ```
 
@@ -467,24 +475,22 @@ A valid SSIS Expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowHashSat|
-|Configuration Datatype|DataType="AnsiString" Length="40"|
-|Configuration Default|000000000000000000000000000000000000000|
-|Ssis Expression|[vck@@this1]|
-|IsNullable|Y|
-|Dim Attribute|Hash|
+| Key                    | Value |
+| ---------------------- | ----- |
+| Configuration Value    | `FlexRowHashSat` |
+| Configuration Datatype | `DataType="AnsiString" Length="40"` |
+| Configuration Default  | `000000000000000000000000000000000000000` |
+| Ssis Expression        | `[@@this1]` |
+| IsNullable             | `Y` |
+| Satellite Attribute    | `Hash` |
 
 ### RowHashType1
 
-#### Description
-
-The **RowHashType1** defines the expression used to derive a forward hash. The default hashing mechanism uses the Varigence Custom SSIS Components
+The `RowHashType1` defines the expression used to derive a row hash for type 1 attributes in a destination dimension.
 
 #### Example
 
-```
+```SsisExpression
 [vck@@this1]
 ```
 
@@ -494,24 +500,22 @@ A valid SSIS Expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowHashType1|
-|Configuration Datatype|DataType="AnsiString" Length="40"|
-|Configuration Default|000000000000000000000000000000000000000|
-|Ssis Expression|[vck@@this1]|
-|IsNullable|Y|
-|Dim Attribute|Hash|
+| Key                    | Value |
+| ---------------------- | ----- |
+| Configuration Value    | `FlexRowHashType1` |
+| Configuration Datatype | `DataType="AnsiString" Length="40"` |
+| Configuration Default  | `000000000000000000000000000000000000000` |
+| Ssis Expression        | `[vck@@this1]` |
+| IsNullable             | `Y` |
+| Dim Attribute          | `Hash` |
 
 ### RowHashType2
 
-#### Description
-
-The **RowHashType2** defines the expression used to derive a backward hash. The default hashing mechanism uses the Varigence Custom SSIS Components
+The `RowHashType2` defines the expression used to derive a row hash for type 2 attributes in a destination dimension.
 
 #### Example
 
-```
+```SsisExpression
 [vck@@this1]
 ```
 
@@ -521,24 +525,22 @@ A valid SSIS Expression and data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowHashType2|
-|Configuration Datatype|DataType="AnsiString" Length="40"|
-|Configuration Default|000000000000000000000000000000000000000|
-|Ssis Expression|[vck@@this1]|
-|IsNullable|Y|
-|Dim Attribute|Hash|
+| Key                    | Value |
+| ---------------------- | ----- |
+| Configuration Value    | `FlexRowHashType2` |
+| Configuration Datatype | `DataType="AnsiString" Length="40"` |
+| Configuration Default  | `000000000000000000000000000000000000000` |
+| Ssis Expression        | `[vck@@this1]` |
+| IsNullable             | `Y` |
+| Dim Attribute          | `Hash` |
 
 ### RowLoadSequence
 
-#### Description
-
-The **RowLoadSequence** defines the data type for the Load Sequence organiser.
+The `RowLoadSequence` defines the data type for the Load Sequence organizer.
 
 #### Example
 
-```
+```SsisExpression
 DataType="Int32"
 ```
 
@@ -548,7 +550,7 @@ A valid sortable integer data type
 
 #### Default Metadata information
 
-|Key|Value|
-|--- |--- |
-|Configuration Value|FlexRowLoadSequence|
-|Configuration Datatype|DataType="Int32"|
+| Key                    | Value |
+| ---------------------- | ----- |
+| Configuration Value    | `FlexRowLoadSequence` |
+| Configuration Datatype | `DataType="Int32"` |
