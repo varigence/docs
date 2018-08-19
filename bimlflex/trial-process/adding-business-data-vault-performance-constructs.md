@@ -45,9 +45,9 @@ For a PIT definition where only the Hub is included, BimlFlex will automatically
 | ------- | ----- | ---------- | ------            | ---------- | ------------ | -------------- |
 |         |       | `BFX_RDV`  | `rdv.HUB_Product` |            | `CreatePIT`  | `PIT_Product`  |
 |         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
-|         |       | `BFX_RDV`  | `rdv.SAT_Product_Pwd_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
+|         |       | `BFX_RDV`  | `rdv.SAT_Product_Price_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
 
-*Note: the sample above would need to reflect actual satellites to produce the expected PIT table.*
+The sample above would need to reflect actual satellites to produce the expected PIT table. In this case the SalesLT.Product source table has been split in to two Satellites by applying the `Price` name in the `ModelGrouping` column for the `StandardCost` and `ListPrice` source columns. This allows the more rapidly changing price attributes to be stored in a separate Satellite. This PIT construct allows easy querying across them.
 
 ### Adding Bridge table Metadata
 
@@ -61,6 +61,14 @@ Use the attributes sheet to add the required metadata for a BRG object. The Brid
 |         |       | `BFX_RDV`  | `rdv.LNK_Product_ProductCategory` |            | `CreateBridge`  | `BRG_Product` | |
 |         |       | `BFX_RDV`  | `rdv.LNK_Product_ProductModel` |            | `CreateBridge`  | `BRG_Product` | |
 
+The current BimlFlex Bridge implementation allows the Bridge to start from the most granular Hub. The Bridge table has a unique constraint on the main Hub Business Key. This allows easy management of the Bridge granularity and enforces a single row filter on the starting point of the Bridge. It also means the Hub that is defined as `IsPrimaryHub` needs to be the most granular in the resulting Bridge table.
+
+The created `BRG_Product` Bridge table allows querying the Product information and its Category and Model information through a single table compared to the 5 table join necessary when querying the Hub and Link tables.
+
+> ![NOTE]
+> Note that the Bridge table needs to be joined to any Link Satellites tracking effectiveness of relationships as well as any relevant Satellite to provide effectiveness and validity contexts for the query.
+> More information on interpreting the BRG and PIT constructs are available here: @bimlflex-dimensional-model-from-data-vault
+
 ### Building PIT and BRG Tables
 
 Once the attributes sheet is populated with the required metadata, the PIT and BRG objects will be added by BimlFlex to the Objects sheet. Click the `Get All Entities` button to reload the metadata and review the objects in the Objects sheet.
@@ -70,6 +78,8 @@ The PIT and BRG Tables are included in the `Generate Scripts` function in BimlFl
 ### Creating PIT and BRG Stored Procedures
 
 Use the `Generate Scripts`, `Business Vault Procedure Script` option in BimlStudio to create the DDL for the PIT and BRG procedures. They are also included in the generated SSDT project for the Data Vault database.
+
+These stored procedures needs to be created in the Data Vault database.
 
 ### Building the PIT and BRG load packages
 
