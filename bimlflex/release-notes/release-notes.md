@@ -9,6 +9,24 @@ name: BimlFlex Release Notes
 > [!WARNING]
 > BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017, we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
 
+## Bundle 63217
+
+* Update: fixed an LSAT IsDrivingKey Source select issue for multiple Driving Key columns not being a properly comma separated list
+* Update: Data Vault accelerator now properly uses the `RowHashKey` configuration data type for relevant columns
+* Update: Point In Time and Bridge tab les now properly use their defined schema
+* Update: `ExcludeFromBuild` flag now does not affect or exclude target objects
+* Update: updated the support for BDV and Data Mart lookups when the Primary Key is not defined as an identity column
+* Add: additional configuration for constraint mode for layers: `ConstraintModeStg`, `ConstraintModeDv`, `ConstraintModeDm` to allow control of the creation of constraint for layers. Valid choices are: `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`
+
+## Bundle 63130
+
+* Add: additional configuration `AppendLoadFromPsaName` to allow control of the Batch and package name for the Reinitialization project (previous name prefix `INIT_FROM_PSA_`)
+* Add: additional configuration `DeleteSchemaNamePattern` to allow control of the Delete table suffix (previous name `DEL`)
+* Add: additional support for `ModelOverride` names during staging
+* Update: Fixed an issue with the Delta DataFlow pipeline when the `RowSourceId` column was excluded from the solution
+* Add: support to the Data Vault Accelerator to Infer HUB if necessary when accelerating across sources. It is still recommended to have a self-contained set of Data Vault entities from each source, but for models where a source table references a Hub candidate from another source the accelerator will now derive the external Hub when needed
+* Update: Fixed a Data Vault REF table lookup join and a SQLDW SAT join when custom distribution is defined
+
 ## Bundle 63108
 
 * Update: Accommodate safe file names for Salesforce tables ending with double underscore
@@ -22,7 +40,7 @@ name: BimlFlex Release Notes
 ## Bundle 63026
 
 Update: Data Vault `REF` primary key now includes the `EffectiveFromDate` column
-Update: PSA INIT loads no longer derive DataType mappings again
+Update: PSA INIT loads no longer derive Data Type mappings again
 Update: `IsInitialLoad` precedence constraint updated.
 Add: support for `SourceProperty` by Batch
 Update: Derived Hubs from Links (to same Hub) no longer use same BK for second hub
