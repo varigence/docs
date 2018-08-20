@@ -43,7 +43,55 @@ Once the Point In Time and Bridge tables are created it is possible to query the
 Sample Dimension Query:
 
 ```sql
-TODO: Add sample dim query
+-- (c) Varigence 2018
+-- Sample Dimension source view on top of PIT and Satellites
+
+-- create schema if required
+IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = N'rdvsrc') EXEC ('CREATE SCHEMA [rdvsrc] AUTHORIZATION [dbo]')
+GO
+
+-- purge existing view
+IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdvsrc].[DimProduct]') AND type IN (N'U'))
+DROP VIEW [rdvsrc].[DimProduct]
+GO
+
+-- create source view
+CREATE VIEW [rdvsrc].[DimProduct] AS
+
+    SELECT  p.PIT_Product_SK AS ProductKey ,
+            p.Product_SK AS ProductSKey ,
+            p.Product_BK AS ProductBKey ,
+
+            -- Record effectiveness is derived from the Point In Time table. Use these for the Fact table lookup
+            p.FlexRowEffectiveFromDate ,
+            p.FlexRowEffectiveToDate ,
+
+            --pick an approach for the Record Source if it is needed in the Dimensional Model
+            COALESCE(sp.[FlexRowRecordSource], spp.[FlexRowRecordSource], 'Unknown') AS [RecordSource] ,
+
+            -- derives the latest date time any satellite was updated.
+            (SELECT MAX(LastUpdateDate)
+                FROM (VALUES (sp.[FlexRowEffectiveFromDate]),(spp.[FlexRowEffectiveFromDate])) AS UpdateDate(LastUpdateDate))
+            AS LastModified,
+
+            -- add all required attributes from linked sattelites
+            sp.[Name],
+            sp.ProductNumber,
+            sp.Color,
+            spp.ListPrice
+
+    FROM    rdv.PIT_Product p
+
+            -- Left Join to include rows where Satellites have no data for a given Core Business Concept
+            -- Join on the specific Surrogate key and the identified timeslice EffectiveFromdate for the Satellite
+            LEFT OUTER JOIN [rdv].[SAT_Product_AWLT] sp ON p.SAT_Product_AWLT_Product_SK = sp.Product_SK
+            AND p.SAT_Product_AWLT_FlexRowEffectiveFromDate = sp.[FlexRowEffectiveFromDate]
+
+            LEFT OUTER JOIN [rdv].[SAT_Product_Price_AWLT] spp ON p.SAT_Product_AWLT_Product_SK = spp.Product_SK
+            AND p.SAT_Product_AWLT_FlexRowEffectiveFromDate = spp.[FlexRowEffectiveFromDate];
+GO
+
+-- SELECT * FROM [rdvsrc].[DimProduct]
 ```
 
 Sample Fact Query:

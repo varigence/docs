@@ -9,6 +9,10 @@ name: BimlFlex Release Notes
 > [!WARNING]
 > BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017, we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
 
+## Bundle TBA
+
+* Add: static package ID's to all generated SSIS packages. The package id is normally generated dynamically by the SSIS build process. By adding a static ID it is easier to track actual changes to packages.
+
 ## Bundle 63217
 
 * Update: fixed an LSAT IsDrivingKey Source select issue for multiple Driving Key columns not being a properly comma separated list

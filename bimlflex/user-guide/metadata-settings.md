@@ -281,7 +281,7 @@ TODO: Add description
 
 ### AppendSchemaRdv
 
-TODO: Add description
+Appends the Schema to the accelerated Data Vault objects, for the source table `SalesLT.Product` the Hub accelerated would be named `HUB_SalesLT_Product` rather than the default `HUB_Product`
 
 ### DvInferLinkHub
 
@@ -304,7 +304,9 @@ Setting the `DvInferLinkHub` to `Y` will allow the Product to populate the Produ
 
 ### DvUseCacheLookup
 
-Allows using the file based cache lookup feature of SSIS for lookups.
+Enables using the file based cache lookup feature of SSIS for lookups.
+
+Cache files will be created as part of the SSIS process and used for the lookups. In-memory lookups generally perform better and require more available memory.
 
 ### DvPreviewSchema
 

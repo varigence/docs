@@ -7,7 +7,7 @@ title: BimlCatalog database
 The BimlCatalog database contains the orchestration and run time information needed to properly load the data warehouse. It logs audit information and errors from processes and provides orchestration for batches in case failures occur mid load.
 
 > [!IMPORTANT]
-> The BimlCatalog database contains crucial data for the data warehouse auditing, logging and orchestration. It is important to back up, and maintain a strict disaster recovery policy for, this database.
+> The BimlCatalog database contains crucial data for the data warehouse auditing, logging and orchestration. It is important to back up and maintain a disaster recovery policy that matches the organizational requirements for this database.
 
 The BimlCatalog is an open source project available at the [BimlCatalog GitHub repository](https://github.com/varigence/BimlCatalog)
 
@@ -52,10 +52,10 @@ The number of days used for data retention for the different tables are specifie
 
 These are the default retention periods for the tables:
 
-|ConfigurationKey|ConfigurationValue|
-|---|---:|
-|ConfigVariablePeriod|120|
-|AuditLogRetentionPeriod|120|
-|RowAuditRetentionPeriod|30|
-|RowCountRetentionPeriod|90|
-|TaskExecutionRetentionPeriod|30|
+| ConfigurationKey             | ConfigurationValue |
+| ---------------------------- | -----------------: |
+| ConfigVariablePeriod         | 120 |
+| AuditLogRetentionPeriod      | 120 |
+| RowAuditRetentionPeriod      | 30 |
+| RowCountRetentionPeriod      | 90 |
+| TaskExecutionRetentionPeriod | 30 |

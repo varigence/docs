@@ -10,7 +10,7 @@ TODO: Coming Soon
 
 ## Supporting BimlFlex Documentation
 
-- [Data Mart Templates](../user-guide/data-mart-templates.md)
+- @bimlflex-data-mart-templates
 
 ## Adding Business Data Vault performance constructs
 
@@ -75,12 +75,56 @@ Once the attributes sheet is populated with the required metadata, the PIT and B
 
 The PIT and BRG Tables are included in the `Generate Scripts` function in BimlFlex. They are also included in the generated SSDT project for the Data Vault database.
 
+### Adding Placeholder Hub records
+
+BimlFlex will use a null value placeholder for entities with no corresponding Data Vault entity record, allowing for inner joins in more scenarios.
+
+Scrips for these placeholder records are created through the `Generate Script`, `Data Vault Default Insert Script`. This will generate SQL insert scripts for all relevant entities. Deploy these to the Data Vault database to simplify the required queries.
+
+The script is also part of the SSDT Database project for the RDV database, in the form of a Post Deployment script.
+
+Sample insert script for Hub table:
+
+```sql
+IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdv].[HUB_Product]') AND type IN (N'U'))
+DELETE FROM [rdv].[HUB_Product] WHERE [Product_SK] = '0000000000000000000000000000000000000000'
+
+IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdv].[HUB_Product]') AND type IN (N'U'))
+AND NOT EXISTS (SELECT * FROM [rdv].[HUB_Product] WHERE [Product_SK] = '0000000000000000000000000000000000000000')
+INSERT INTO [rdv].[HUB_Product]([Product_SK],[Product_BK],[FlexRowEffectiveFromDate],[FlexRowAuditId],[FlexRowRecordSource])
+VALUES ('0000000000000000000000000000000000000000',N'Unknown','0001-01-01 00:00:00.000',0,'FLX')
+```
+
+Sample insert script for PIT table:
+
+```sql
+
+IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdv].[PIT_Product]') AND type IN (N'U'))
+DELETE FROM [rdv].[PIT_Product] WHERE [Product_SK] = '0000000000000000000000000000000000000000'
+
+IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdv].[PIT_Product]') AND type IN (N'U'))
+AND NOT EXISTS (SELECT * FROM [rdv].[PIT_Product] WHERE [Product_SK] = '0000000000000000000000000000000000000000')
+INSERT INTO [rdv].[PIT_Product]([PIT_Product_SK],[Product_SK],[Product_BK],[FlexRowEffectiveFromDate],[FlexRowEffectiveToDate],[SAT_Product_AWLT_Product_SK],[SAT_Product_AWLT_FlexRowEffectiveFromDate],[SAT_Product_Price_AWLT_Product_SK],[SAT_Product_Price_AWLT_FlexRowEffectiveFromDate])
+VALUES ('0000000000000000000000000000000000000000','0000000000000000000000000000000000000000',N'Unknown','0001-01-01','9999-12-31','0000000000000000000000000000000000000000','0001-01-01','0000000000000000000000000000000000000000','0001-01-01')
+```
+
 ### Creating PIT and BRG Stored Procedures
 
 Use the `Generate Scripts`, `Business Vault Procedure Script` option in BimlStudio to create the DDL for the PIT and BRG procedures. They are also included in the generated SSDT project for the Data Vault database.
 
 These stored procedures needs to be created in the Data Vault database.
 
+The Stored Procedures are also included in the SSDT project for the RDV database.
+
+In the generated SQL there are also execute statements included. It is possible to populate the Bridge and Point In Time tables either by running these Stored Procedures directly or by generating and running the SSIS packages for them as described below.
+
 ### Building the PIT and BRG load packages
 
-Once the metadata for the PIT and BRG objects is available in BimlStudio there are also Batches generated for executing the PIT and BRG stored procedures. These batches are included in the Data Vault project and allows easy scheduling and orchestration of the Stored Procedure execution.
+Once the metadata for the PIT and BRG objects is available in BimlStudio there are also Batches generated for executing the PIT and BRG stored procedures.
+
+The default name for these are built out of the Data Vault load name with either PIT or BRG added, in the trial demo case the following Batch packages are added to the Load Data Vault SSIS project:
+
+- `LOAD_BFX_RDV_BRG_Batch`
+- `LOAD_BFX_RDV_PIT_Batch`
+
+These batches allow easy scheduling and orchestration of the Stored Procedure execution through SSIS.
