@@ -108,19 +108,31 @@ The following detailed steps walks through the creation of the Dimensional Model
 
 The views used as sources for the dimensional model can either be managed and source controlled through the BimlFlex metadata or through the SQL Server Data Tools project for the databases. Use the approach most compatible with the deployment pipeline used.
 
-TODO: add content
+The views are imported in to BimlFlex as a source. In the trial they are co-located with the Data Vault tables in a `src` schema to indicate the are sources for further loading in to the data warehouse. It is possible to place them in a roleplaying source database or the staging database for more obvious separation of concern.
 
 ### Creating the dimensional model source metadata
 
 Once the views are defined, import the metadata from these views using the Metadata Import Wizard in the BimlFlex Excel metadata management tool.
 
-TODO: add content
+The source views are defined in the Raw Data Vault. Point the Import Metadata Wizard to the `BFX_RDV` Source Connection and the `LOAD_BFX_DM` Target Project.
+
+Import the metadata from the views in the `src` schema.
+
+Make sure the following options are specified:
+
+- `What to Import`, `Views` needs to be checked as the source is a view
+- `Tweaks to Incoming Metadata`, both `Table and Column Names` and `Inferred Metadata` should be set to `None`
+- Neither `Add RecordSource(@@rs) to Businesss Key` nor `Change References to Business Keys` should be checked
+
+Once the import is completed there will be 2 warnings per view. These point out that there are missing Business Keys and Primary Keys.
+
+Add the flags for the relevant columns to define keys for the imported views. For the Trial the main Business Key column will be defined as Primary Key and Business Key for each object.
 
 ### Mapping the model metadata
 
 The metadata imported from the views will not have any relationships defined as these are not provided by the views. Add the source relationships between the fact table source and the dimension source objects.
 
-TODO: add content
+This will be created in the `ReferenceTable` and `ReferenceColumnName` columns on the Objects sheet. The Fact table reference Business Keys will reference their respective dimension main Business Key. This will allow the Fact table load to lookup the Business Key value and get the relevant id key from the dimension.
 
 ### Creating the destination metadata through the Clone Table feature
 
