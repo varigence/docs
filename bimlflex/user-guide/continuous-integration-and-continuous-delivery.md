@@ -67,7 +67,7 @@ This step can either use the Biml Compiler or MSBuild to build the artefacts. It
 
 The build process uses a separate settings file as well as separate build configuration files to only build the required SSDT Project. This allows the developer to have the original settings files for normal development and makes sure the automated process builds the expected result. The Biml Compiler uses a different build settings file to the MSBuild approach.
 
-1. Compile the SSDT Projects
+2. Compile the SSDT Projects
 
 This step uses the generated SSDT Projects and compiles a Dacpac file. This Dacpac file can then be deployed to a database server.
 
@@ -123,14 +123,15 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"output/SqlOnly.mst.r
 
 ```
 
-1. Deploy the Dacpac to SQL Server
+3. Deploy the Dacpac to SQL Server
 
 Once the Dacpac is created (including any custom, bespoke, migration logic) it can be deployed to the destination SQL Server.
+
 The deployment step uses SqlPackage.exe to deploy the Dacpac to the specified destination SQL Server.
 
 ### Sample Script for deployment
 
-location: project root folder
+location: project root folder  
 filename: `_2.build_sql_Dacpac.bat`
 
 ```batchfile
@@ -157,7 +158,7 @@ for %%i in %DatabaseList% do "%programfiles(x86)%\MSBuild\%MsBuildVersion%\Bin\M
 
 ### Sample Script to deploy Dacpac
 
-location: project root folder
+location: project root folder  
 filename: `_3.deploy_sql_Dacpac.bat`
 
 ```batchfile
@@ -184,7 +185,7 @@ for %%i in %DatabaseList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServe
 
 ## Sample Script to build SSIS Project with Biml Compiler
 
-location: project root folder
+location: project root folder  
 filename: `_4.build_ssis_bimlc.bat`
 
 ```batchfile
@@ -202,7 +203,7 @@ rem call the Biml Compiler with the specific resp file to build the SSIS project
 
 ## Sample File to build SSIS Packages with MSBuild
 
-location: project root folder
+location: project root folder  
 filename: `_4.build_ssis_msbuild.bat`
 
 ```batchfile
@@ -247,7 +248,7 @@ for %%i in %ProjectList% do "%programfiles(x86)%\%VisualStudioPath%\Common7\IDE\
 
 ## Deploy ispac file with SSIS Packages to SSIS Catalog
 
-location: project root folder
+location: project root folder  
 filename: `_6.deploy_ssis_ispac.bat`
 
 ```batchfile
@@ -278,7 +279,7 @@ for %%i in %ProjectList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServer
 
 ## Sample settings file for SQL Only builds
 
-location: project root folder
+location: project root folder  
 filename: `SqlOnly.bimlb.settings`
 
 Update this file to reflect project settings and configurations
@@ -346,7 +347,7 @@ Update this file to reflect project settings and configurations
 
 ## Sample settings file for SSIS Only builds
 
-location: project root folder
+location: project root folder  
 filename: `SsisOnly.bimlb.settings`
 
 Update this file to reflect project settings and configurations
@@ -414,7 +415,7 @@ Update this file to reflect project settings and configurations
 
 ## Sample SqlOnly.mst.bimlc.resp settings file
 
-location: output folder
+location: output folder  
 filename: `SqlOnly.mst.bimlc.resp`
 
 ```bimlc.resp
@@ -423,7 +424,7 @@ filename: `SqlOnly.mst.bimlc.resp`
 
 ## Sample SqlOnly.mst.ProjectView.bimlproj settings file
 
-location: output folder
+location: output folder  
 filename: `SqlOnly.mst.ProjectView.bimlproj`
 
 ```xml
@@ -448,7 +449,7 @@ filename: `SqlOnly.mst.ProjectView.bimlproj`
 
 ## Sample SqlOnly.mst.resp settings file
 
-location: output folder
+location: output folder  
 filename: `SqlOnly.mst.resp`
 
 ```resp
@@ -457,7 +458,7 @@ filename: `SqlOnly.mst.resp`
 
 ## Sample SsisOnly.mst.bimlc.resp settings file
 
-location: output folder
+location: output folder  
 filename: `SsisOnly.mst.bimlc.resp`
 
 ```resp
@@ -466,7 +467,7 @@ filename: `SsisOnly.mst.bimlc.resp`
 
 ## Sample SsisOnly.mst.ProjectView.bimlproj settings file
 
-location: output folder
+location: output folder  
 filename: `SsisOnly.mst.ProjectView.bimlproj`
 
 ```xml
@@ -491,7 +492,7 @@ filename: `SsisOnly.mst.ProjectView.bimlproj`
 
 ## Sample SsisOnly.mst.resp settings file
 
-location: output folder
+location: output folder  
 filename: `SsisOnly.mst.resp`
 
 ```resp
