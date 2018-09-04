@@ -17,10 +17,3 @@
 - name: Tips & Tricks
   href: tips-and-tricks/toc.yml
   topicHref: tips-and-tricks/index.md
-
-- name: Reference Documentation 1
-  href: reference-documentation/toc.md
-  topicHref: reference-documentation/index.md
-
-- name: Reference Documentation 2
-  href: ../proj2/generated-bimlflex/reference-documentation/toc.yml
