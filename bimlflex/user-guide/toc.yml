@@ -32,8 +32,8 @@
     href: metadata-projects.md
   - name: Objects
     href: metadata-objects.md
-  - name: Objects
-    href: metadata-objects.md
+  - name: Columns
+    href: metadata-columns.md
   - name: Attributes
     href: metadata-attributes.md
   - name: Parameters
@@ -43,7 +43,7 @@
   - name: Settings
     href: metadata-settings.md
   - name: Data Type Mappings
-    href: metadata-datatypemappings.md
+    href: metadata-data-type-mappings.md
   - name: Versions
     href: metadata-versions.md
 

@@ -61,4 +61,4 @@ For database servers not available from the development environment, use the Bim
 
 ## Post upgrade testing
 
-Once the project and databases have been updated, refer to the [testing documentation](upgrade-and-testing-process.md) to validate that the new version provides the same output as before.
+Once the project and databases have been updated, refer to the @bimlflex-upgrade-and-testing to validate that the new version provides the same output as before.

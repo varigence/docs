@@ -16,7 +16,7 @@ BimlFlex is built on BimlStudio and contains the following components that are o
 * The BimlStudio application is distributed as a single, separate installer
 * The BimlFlex Excel Add-in is distributed as a single, separate installer
 * The BimlFlex databases are embedded in the Bundle used by BimlStudio and can be deployed and updated from within BimlStudio
-* The BimlFlex Custom SSIS Components are distributes as an archive file that contains the component dll and a .bat file installer
+* The BimlFlex Custom SSIS Components are distributes as an archive file that contains the component .dll and a .bat file installer
 
 ## Upgrading BimlStudio and BimlFlex from the Varigence website
 

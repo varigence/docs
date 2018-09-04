@@ -23,5 +23,5 @@ At Varigence, we offer a comprehensive library of professional support resources
 ![BimlFlex -h38px](content/images/bimlflex.png)
 
 * [BimlFlex User Guide](bimlflex/index.md)
-* [Metadata Reference](bimlflex/index.md)
-* [BimlFlex Forum](https://varigence.com/Forums?forumName=BimlFlex&threadID=0)
+* [Metadata Reference](bimlflex/reference-documentation/index.md)
+* [Extension Points](bimlflex/reference-documentation/index.md)
