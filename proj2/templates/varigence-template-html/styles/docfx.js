@@ -168,8 +168,8 @@ $(function () {
   // Enable anchors for headings.
   (function () {
     anchors.options = {
-      placement: 'left',
-      visible: 'touch'
+      placement: 'right',
+      visible: 'hover'
     };
     anchors.add('article h2:not(.no-anchor), article h3:not(.no-anchor), article h4:not(.no-anchor)');
   })();
