@@ -1,4 +1,4 @@
-- name: Parameterize Connections.md
+- name: Parameterize Connections
   href: parameterize-connections.md
 - name: Replace columns in the SSIS Data Flow
   href: replace-columns-in-the-ssis-data-flow.md
