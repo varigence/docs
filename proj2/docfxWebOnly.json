@@ -1,35 +1,4 @@
 {
-  "metadata": [
-    {
-      "src": [
-        {
-          "files": [
-            "bimlstudio/**.cs"
-          ],
-          "exclude": [
-            "**/obj/**",
-            "_site/**"
-          ]
-        }
-      ],
-      "dest": "bimlstudio/reference-documentation"
-    },
-
-    {
-    "src": [
-      {
-        "files": [
-          "bimlflex/reference-documentation/**.cs"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "_site/**"
-        ]
-      }
-    ],
-    "dest": "generated-bimlflex/reference-documentation"
-  }
-],
 
   "build": {
     "markdownEngineName": "markdig",
