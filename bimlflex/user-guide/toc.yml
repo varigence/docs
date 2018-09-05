@@ -86,3 +86,9 @@
   - name: Continuous Integration and Deployment
     href: continuous-integration-and-continuous-delivery.md
     
+- name: Reference Documentation
+  items:
+  - name: Metadata Entity Definitions
+    href: metadata-entity-definitions.md
+  - name: Extension Point Definitions
+    href: extension-point-definitions.md
