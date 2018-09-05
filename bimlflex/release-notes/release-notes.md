@@ -20,7 +20,7 @@ name: BimlFlex Release Notes
 * Update: Point In Time and Bridge tab les now properly use their defined schema
 * Update: `ExcludeFromBuild` flag now does not affect or exclude target objects
 * Update: updated the support for BDV and Data Mart lookups when the Primary Key is not defined as an identity column
-* Add: additional configuration for constraint mode for layers: `ConstraintModeStg`, `ConstraintModeDv`, `ConstraintModeDm` to allow control of the creation of constraint for layers. Valid choices are: `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`
+* Add: additional configuration for constraint mode for database layers: `ConstraintModeStg`, `ConstraintModeDv`, `ConstraintModeDm` to allow control of the creation of constraint for tables. Valid choices are: `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`
 
 ## Bundle 63130
 
