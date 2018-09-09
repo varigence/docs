@@ -6,66 +6,7 @@
 <div id="footer">
 <div class="product-section">
     <div class="inner-container">
-        <div id="subscribe-wrapper">
-            <div id="subscribe">
-                <h3 class="join-now-copy">Join our newsletter to<br> stay up with the latest<br> product releases!</h3>
-                <div class="clearfix">
-                    <div class="join-now-form">
-                        <img alt="Loading..." src="/Content/Images/Loaders/orange-loader.gif" style="display: none" id="mailchimp-loader">
-                        <input id="subscribe-textbox" type="email" title="Enter your email address here and click submit to subscribe to our news letter." placeholder="Email Address" class="form-control">
-                        <button id="subscribe-button" class="btn btn-blue-white" title="Enter your email address and click here to subscribe to our news letter" data-loading-text="Subscribing">Subscribe</button>
-                    </div>
-                </div>
-                <span style="display: none;" id="subscribe-success">Thank you! You should be receiving a confirmation email shortly.</span>
-                <span style="display: none; color: red;" id="subscribe-error">Error subscribing. Please try again.</span>
-                <div class="social">
-                    <p>You can follow us here too!</p>
-                    <a href="https://www.facebook.com/varigence" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://twitter.com/varigence" target="_blank"><i class=" fa fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="product-section">
-    <div class="inner-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <ul>
-                        <li>Products</li>
-                        <li><a href="/Products">Products</a></li>
-                            <li><a href="/Biml">Biml</a></li>
-                                                    <li><a href="/Mist">BimlStudio</a></li>
-                                                    <li><a href="/BimlFlex">BimlFlex</a></li>
-                                                    <li><a href="/BimlExpress">BimlExpress</a></li>
-                                                    <li><a href="/BimlOnline">BimlOnline</a></li>
-                                            </ul>
-                </div>
-                <div class="col-sm-3">
-                    <ul>
-                        <li>Company</li>
-                        <li><a href="/Company">About Us</a></li>
-                        <li><a href="/Partners">Partners</a></li>
-                        <li><a href="/Blog">Blog</a></li>
-                        <li><a href="/Store">Store</a></li>
-                        <li><a href="/Support">Support</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <ul>
-                        <li>Legal</li>
-                        <li><a href="/Documentation/Legal/PrivacyPolicy">Privacy Policy</a></li>
-                        <li><a href="/Documentation/Legal/TermsOfUse">Terms of Use</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="product-section">
-    <div class="inner-container">
-        <p style="font-size: 12px; padding: 10px 0;">Copyright © Varigence 2017</p>
+        <p style="font-size: 12px; padding: 10px 0;">Copyright © Varigence 2018</p>
     </div>
 </div>
 </div>

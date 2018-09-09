@@ -920,6 +920,7 @@
 #footer .product-section {
   background: #ebebeb;
 }
+/*
 #footer .product-section:first-child {
   padding: 50px 10px;
   text-align: center;
@@ -932,6 +933,7 @@
   max-width: 450px;
   margin: 0 auto;
 }
+
 @media (min-width: 425px) {
   #footer .product-section:first-child .join-now-copy {
     line-height: 48px;
@@ -994,6 +996,7 @@
 #footer .product-section:nth-child(2) ul li:first-child {
   font-size: 18px;
 }
+*/
 #footer .product-section:last-child {
   text-align: center;
 }
