@@ -206,11 +206,11 @@ header .navbar {
 article h1, article h2, article h3, article h4{
   margin-top: 25px;
 }
-
+/*
 article h4{
   border-bottom: 1px solid #ccc;
 }
-
+*/
 article span.small.pull-right{
   margin-top: 20px;
 }
@@ -531,6 +531,7 @@ body .toc{
 .toc .level2 {
   font-weight: normal;
   margin: 5px 0 0 15px;
+  line-height: 140%;
   font-size: 13px;
 }
 .toc-toggle {
