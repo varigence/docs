@@ -1,6 +1,0 @@
-C:\docfx_walkthrough\proj2\src\HelloDocfx1\bin\Debug\HelloDocfx1.xml
-C:\docfx_walkthrough\proj2\src\HelloDocfx1\bin\Debug\HelloDocfx1.dll
-C:\docfx_walkthrough\proj2\src\HelloDocfx1\bin\Debug\HelloDocfx1.pdb
-C:\docfx_walkthrough\proj2\src\HelloDocfx1\obj\Debug\HelloDocfx1.csproj.CoreCompileInputs.cache
-C:\docfx_walkthrough\proj2\src\HelloDocfx1\obj\Debug\HelloDocfx1.dll
-C:\docfx_walkthrough\proj2\src\HelloDocfx1\obj\Debug\HelloDocfx1.pdb
