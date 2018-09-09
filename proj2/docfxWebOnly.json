@@ -1,9 +1,33 @@
 {
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/**/**.dll"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "_site/**"
+          ]
+        }
+      ],
+      "dest": "api-reference"
+    }
+  ],
 
   "build": {
     "markdownEngineName": "markdig",
 
     "content": [
+      {
+        "files": [
+          "api-reference/**.yml",
+          "api-reference/index.md"
+        ],
+        "dest": "biml"
+      },
+
       {
         "files": [ "**/*.yml" ],
         "src": "generated-bimlflex",
@@ -31,7 +55,7 @@
           "**/**readme.md"
         ],
         "cwd": "../"
-    }
+      }
     ],
 
     "resource": [
@@ -69,8 +93,7 @@
     "template": [
       "templates/varigence-template-html"
     ],
-    "globalMetadata": 
-    {
+    "globalMetadata": {
       "_disableContribution": true,
       "_appFaviconPath": "images/favicon.png"
     }

@@ -4,7 +4,7 @@
       "src": [
         {
           "files": [
-            "bimlstudio/**.cs"
+            "src/**/**.dll"
           ],
           "exclude": [
             "**/obj/**",
@@ -12,29 +12,22 @@
           ]
         }
       ],
-      "dest": "bimlstudio/reference-documentation"
-    },
-
-    {
-    "src": [
-      {
-        "files": [
-          "bimlflex/reference-documentation/**.cs"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "_site/**"
-        ]
-      }
-    ],
-    "dest": "generated-bimlflex/reference-documentation"
-  }
+      "dest": "api-reference"
+    }
 ],
 
   "build": {
     "markdownEngineName": "markdig",
 
     "content": [
+      {
+        "files": [
+          "api-reference/**.yml",
+          "api-reference/index.md"
+        ],
+		"dest": "biml"
+      },
+
       {
         "files": [ "**/*.yml" ],
         "src": "generated-bimlflex",
