@@ -7,4 +7,6 @@
 * Fix BimlFlex store drop downs
 * Add additional Text format columns to BFX Addin
 * Remove redundant Import Options and add OnPropertyChange for TableFilter and SchemaFilter
-*
+* Fix selection in add-in when single cell is selected
+* Add additional clone object options to the add-in.
+* Add support for Proper_Case in naming conventions
