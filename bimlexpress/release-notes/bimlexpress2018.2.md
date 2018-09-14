@@ -2,16 +2,10 @@
 
 Significant changes between BimlExpress2018 and BimlExpress2018r2
 
-
-## New Features
-
-* Added the Import Packages window to enable users to import existing SSIS packages and projects and convert them to Biml.
-
-
 ## Bug Fixes
 
-* Fixed an issue where exceptions thrown by user BimlScripts might not show up correctly in the BE preview pane
-
+* Fixed an issue in BE where packages could not be imported until at least one Biml file had already been added.
+* Updated logging to capture 'InitializeEditor' errors during the editor initialization. 
 
 ## SSIS
 
