@@ -30,11 +30,14 @@ Significant changes between BimlStudio 2018 and BimlStudio 2018 r2
 ## BimlStudio Bugs
 
 * Eliminated BimlStudio crash when encrypted settings could not be read from MUO file due to user profile change.
+* If saving a resp file before having built a project, we will create the output folder, as this was causing BimlStudio to crash.
 
 
 ## Source Control
 
-** Fixed bug where folders under source control were displaying as "checked-in", even when they contained files with pending changes.
+* Improved general performance of TFS commit, add, and delete operations.
+* Disabled the included/excluded lists when the file compare tool is being launched and during the commit process.
+* Fixed issue where occasionally the Operation Results banner would tell the user to click for more information when there was no more information to give. 
 
 
 ## BimlFlex Projects
@@ -49,16 +52,23 @@ Significant changes between BimlStudio 2018 and BimlStudio 2018 r2
 * In debug utility, disabled the 'Save Metadata' button while the debugutility is attempting to establish a DB connection and generate customer/version lists.
 * In debug utility, we now prevent duplicates from being added to the customer/version list.
 * In debut utility, fixed a datarace where a user opened the utility with an invalid connection and attempted to correct the connection before the incorrect connection had finished timing out, causing the correct connection's customer/version list to be wiped out when it finally does time out.
-* Added multiselect for model groupings in the data vault accelerator options dialog box
+* Added multiselect for model groupings in the data vault accelerator options dialog box.
+* Upgraded the DacFx framework so we can now deploy Dacpacs to Sql Server 2017.
+
 
 
 ## Project Settings and Command Line Options (CL)
 
 * Added current working directory to the search path for ambiguous or relative paths. Now you can use relative paths for any property and we will resolve it with the working directory.
+* Made TargetFrameworkVersion globally configurable through a command line build option with a default of 4.6.
 
 
 ## Bundles
 
-* Target attribute in extension directive in bundles now supports lists of objects
+* Target attribute in extension directive in bundles now supports lists of objects.
+* Fixed extension points for empty target lists in bundles.
 
+
+## Misc
+* Added EULA agreement as first step in installer.
 
