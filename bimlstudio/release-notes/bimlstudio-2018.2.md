@@ -1,65 +1,64 @@
-# BimlStudio 2018.1 Release Notes
+# BimlStudio 2018 r2 Release Notes
 
-Significant changes between BimlStudio 2017 and BimlStudio 2018
+Significant changes between BimlStudio 2018 and BimlStudio 2018 r2
 
 ## Azure Data Factory Support
 
-* Create all new V2 Linked Services
-
-
-## BimlStudio UI Updates
-
-* Improved styling in the Package Import dialog, by widening the file path textbox, adjusting the height of the file path textbox, and making the buttons uniform. Also eliminated unnecessary columns in the DTSX file path grid.
+* `servicePrincipalId` property now correctly emits in `AzureDataLakeStore` Linked Services.
+* Updated depracated `AzureStorage` Linked Service to the `AzureBlobStorage` and `AzureTableStorage` linked services.
+* Added `Parameters` collection to `Copy` activity's sink/source datasets and emit them in the corresponding `outputs`/`inputs` collection of the `Copy` activity.
+* Fixed escaping issue in Format nodes that were not correctly emitting escaped `rowDelimiter` and `columnDelimiter` values (ie \t or \n).
+* Added more validation for ADF naming conventions for pipelines, activities, datasets, and the `folderPath` property of `BlobDatasets`.
+* Added depracated `Script` property to `DatalakeUsqlActivities`.
+* Added `None` to `CopyBehavior` enum. 
+* Added the default value to pipeline parameters.
+* Fixed bug where parameters with a null value were being rendered as 'undefined' in the emitted json. Now they correctly emit as null.
+* Fixed bug where triggers were not emitting at all.
+* Now generate `AdfAnnotations` collections for all pipelines, datasets, linkedServices and triggers.
+* Added the `folder` property as `AdfFolder` to all pipelines and datasets.
+* Added `UserProperties` collection to all activities.
+* Fixed the way we display triggers in the `Logical View`.
 
 
 ## SSIS
 
-* Added support for SSIS 2017.
+* Fixed issue where setting the 'VersionGuid' property to all 0's was still generating a random Guid. User can now specify a Guid of all 0's. 
+* Fixed ISPAC filename escaping issue.
+* Changed default of `FileSystemOperationTask` enum to be `CopyFile`.
+
 
 ## BimlStudio Bugs
 
-* Fixed issue with extra `xmlns` declarations when expanding BimlScript files in BimlStudio.
+* Eliminated BimlStudio crash when encrypted settings could not be read from MUO file due to user profile change.
 
 
 ## Source Control
 
-* Fixed bug where folders under source control were displaying as "checked-in", even when they contained files with pending changes.
+** Fixed bug where folders under source control were displaying as "checked-in", even when they contained files with pending changes.
 
 
-## Tabular Support
+## BimlFlex Projects
 
-* In `AstTabularRelationshipNode`, added a `SourceColumn` property with a schema binding of `TabularColumnName`.
-
-
-## Performance
-
-* Fixed issue where an ICE would be generated on builds with warnings in some cases.
-
-## Provider Support
-
-* Fixed data type mappings for Excel `GetDatabaseSchema()`.
-
-
-## Biml Language
-
-* Added ColumnStore and ColumnStoreArchive to `TableCompressionType` enumeration.
-
-
-## Bundles
-
-* Fixes for bundle toggle files settings and trial licensing
+* In debug utility, we now filter out source control folders (.git/$tf/.svn) when including the project directory in your zip.
+* In debug utility, we now filter out documentation folder when including the project directory in your zip.
+* In debug utility, we now additionally track the following versions and settings: Sql Server Version, DDL Build Mode, Ssas Multidimensional Version, Ssas Tabular Version, SSIS Version, Biml Engine 32/64 bit paths, and MsBuild 32/64 bit paths. 
+* In debug utiltiy, no longer show the default BimlTemplate customer in the drop downs.
+* The pre-selected customer/version in the debug utility match the configured customer/version in the bundle settings.
+* In the debug utility, Added a tool tip to provide more information to the user about what connection string properties are being obfuscated and how to proceed in the event that there is still other information that they would like to hide.
+* Added wait cursors to a few longer processes to help better communicate to the user that something is happening in the background.
+* In debug utility, disabled the 'Save Metadata' button while the debugutility is attempting to establish a DB connection and generate customer/version lists.
+* In debug utility, we now prevent duplicates from being added to the customer/version list.
+* In debut utility, fixed a datarace where a user opened the utility with an invalid connection and attempted to correct the connection before the incorrect connection had finished timing out, causing the correct connection's customer/version list to be wiped out when it finally does time out.
+* Added multiselect for model groupings in the data vault accelerator options dialog box
 
 
 ## Project Settings and Command Line Options (CL)
 
-* Updated license key specification on command line to use the entered license key, even if it is not successfully saved to the registry. This will help in CL and automation scenarios where proxy accounts are used
+* Added current working directory to the search path for ambiguous or relative paths. Now you can use relative paths for any property and we will resolve it with the working directory.
 
 
-## BimlScript
+## Bundles
 
-* Fixed autocomplete bug with BimlScript `global/applytocallbimlscript` directive attribute, `active` was showing up twice in the autocompletion list, and `applytocallbimlscript` was not showing up at all
+* Target attribute in extension directive in bundles now supports lists of objects
 
 
-## Miscellaneous
-
-* Added PDF version of the EULA
