@@ -1119,6 +1119,74 @@ Configure pipeline logic that will be injected after the source transformation n
 ```
 
 
+### Source Error Handling
+Configure pipeline logic that will be injected on error of the source transformation node
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added |
+| inputPath | String | Contains the output path of the preceding task |
+#### Outputs
+| Name | Type | Description |
+|------|------|-------------|
+| ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the ExtensionPoint will be applied to all the Objects associated with the batch. |
+
+#### Sample Code
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceErrorHandling" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="inputPath" type="String" #>
+
+<!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/ChildCollection/AstDataflowTaskNode/Transformations -->
+<!-- For examples and additional resources please also refer to http://bimlscript.com/ -->
+<!-- This can be any anything defined within the Ssis DataFlow. -->
+<# 	CustomOutput.ObjectInherit = false; #> 
+<DataConversion Name="DCV - Convert MyColumn">
+	<Input OutputPathName="<#=inputPath #>" />
+	<Columns>
+		<Column SourceColumn="MyColumn" TargetColumn="cnv_MyColumn" DataType="String" Length="100" />
+	</Columns>
+</DataConversion>
+```
+
+
+### Source File Archive Override
+Configure control flow logic that will override the SC_FILE_ARCHIVE script task call. You might also need to add a ProjectScriptFile.
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| table | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+| precedenceConstraint | String | Contains the Precedence Constraint of the preceding task unless it is the first task |
+#### Outputs
+| Name | Type | Description |
+|------|------|-------------|
+| OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next Dataflow task. |
+
+#### Sample Code
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceFileArchiveOverride" #>
+<#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="precedenceConstraint" type="String" #>
+
+<FileSystem Name="FST - YOUR FILE ARCHIVE" Operation="MoveFile" OverwriteDestination="true">
+<#	if (!string.IsNullOrEmpty(precedenceConstraint)) {#>
+	<PrecedenceConstraints>
+		<Inputs>
+			<Input OutputPathName="<#=precedenceConstraint #>" />
+		</Inputs>
+	</PrecedenceConstraints>
+<#	} #>
+	<VariableOutput VariableName="User.ArchivePath" />
+	<VariableInput VariableName="User.SourceFullFilePath" />
+	<# 	CustomOutput.OutputPathName = @"FST - YOUR FILE ARCHIVE.Output"; #>	
+</FileSystem>
+```
+
+
 ### Source Property
 Configure additional properties that will be added to source transformation node
 

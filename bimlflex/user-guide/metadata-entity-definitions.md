@@ -406,15 +406,17 @@ BimlFlex has a number of internal static types that can also be referred to as n
 | RSAT | Reference Satellite |
 | FIL | Flat File |
 | EXT | External |
-| TCA | Table CDC All |
-| TCL | Table CDC Last |
-| TCT | Table Change Tracking |
+| TCA | CDC All |
+| TCL | CDC Last |
+| TCT | Change Tracking |
 ### ModelObjectTypes
 | Code | Value |
 |------|-------|
-| SAT | Satellite |
-| LNK | Link |
 | HUB | Hub |
+| LNK | Link |
+| SAT | Satellite |
+| SAL | Same As Link |
+| HAL | Hierarchy Link |
 | REF | Reference |
 | RSAT | Reference Satellite |
 | IGN | Ignore |

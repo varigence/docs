@@ -4,23 +4,48 @@ name: BimlFlex Release Notes
 ---
 # Release Notes
 
-## BimlStudio 2018.1 Note
+## BimlStudio 2018.2 Note
 
-> [!WARNING]
-> BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017, we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
+> Please make sure you have a backup of your database and projects prior to applying and upgrades. We also recommend that your project and bundles are checked into your source control.
+>Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
-## Bundle TBA
+## Bundle 63317
 
+> [!COMPATIBILITY]
+> This bundle require the a BimlStudio build greater than `Build 5.0.63175.0` and updated BimlCatalog and BimlFlex databases.
+
+* Add: `ModelGrouping` to DataVault Accelerator. Please read this blog or more information. [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
+* Add: Support for Data Vault `Same As` and `Hierarchy` Links in the `ModelObjectType` including the ability to specify naming convention in the Settings using `DvAppendSameAsLink` and `DvAppendHierarchyLink`
+* Add: Support for `Snowflake` SRC - STG -PSA including a SSIS Custom Task. This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use.
+* Add: `GROUP BY` clause to `Hub` and `Lin`k lookups to returrn unique list when used with `ApplyLookupFilterRdv = "Y"`
+* Add: Functionality to support file source in line expressions. You can now use `SsisExpression` like `REPLACENULL(RAW_@@this, "")`  with `ColumnAlias` set to `RAW_@@this` and `DataTypeMapping` like `String(20)`
+* Add: ExtensionPoints `StagingTargetPipeline`, `SourceFileArchiveOverride` and `SourceErrorHandling` to provide greater flexibility when loading flat files
 * Add: static package ID's to all generated SSIS packages. The package id is normally generated dynamically by the SSIS build process. By adding a static ID it is easier to track actual changes to packages.
+* Update: Remove `RowHash` from `Change Data Capture` and `Change Tracking` staging tables to reduce table size
+* Update: ExtensionPoint `DwhSourceOverride` and `RdvSourceOverride` to allow additional flexibility to the Data Mart and Data Vault process.
+* Update: ExtensionPoint `DwhTargetPipelinePre`, `DwhTargetPipelinePost`, `RdvTargetPipelinePre` and `RdvTargetPipelinePost` to allow additional flexibility to the Data Mart and Data Vault process.
+* Update: ExtensionPoint `DwhType2Pipeline` to allow additional flexibility to the Data Mart process.
+* Update: ExtensionPoint `DwhType1Pipeline` to allow additional flexibility to the Data Mart process.
+* Update: ExtensionPoint `DwhInsertPipeline` to allow additional flexibility to the Data Mart process.
+* Add: ExtensionPoints to provide additional flexiability. `StagingTargetPipeline`, `PersistentTargetPipeline`, `StagingInitialTargetPipeline` and `PersistentInitialTargetPipeline`
+* Add: ExtensionPoints target `@@global` to `PackageVariable` and `BatchVariable`
+* Add: ExtensionPoint `DataFlowProperties` and allowing `@@global` target
+* Update: Fix `Change Data Capture` Data Vault Satellite load with `RowChangeType` for `Deletes`
+* Update: Fix ERROR in Batch when multiple sources are mapped to the same target using ELT stored procedures.
+* Add: Static DTSID to all connection managers based on the `[ConnectionUID]`
+* Add: `UseGETUTCDATE` configuration to BimlCatalog
+> [!WARNING]
+> Breaking change in feature.
+> Update: Rename Object ExtensionPoint `Connection`  to `PackageAddConnection`. Please search your project for `extensionpoint="Connection"` and replace it with `extensionpoint="PackageAddConnection"`
 
 ## Bundle 63217
 
-* Update: fixed an LSAT IsDrivingKey Source select issue for multiple Driving Key columns not being a properly comma separated list
-* Update: Data Vault accelerator now properly uses the `RowHashKey` configuration data type for relevant columns
-* Update: Point In Time and Bridge tab les now properly use their defined schema
+* Update: Fixed an LSAT IsDrivingKey Source select issue for multiple Driving Key columns not being a properly comma separated list
+* Update: Data Vault accelerator now uses the `RowHashKey` configuration data type for relevant columns
+* Update: Point In Time and Bridge tables now use their specified schema
 * Update: `ExcludeFromBuild` flag now does not affect or exclude target objects
-* Update: updated the support for BDV and Data Mart lookups when the Primary Key is not defined as an identity column
-* Add: additional configuration for constraint mode for database layers: `ConstraintModeStg`, `ConstraintModeDv`, `ConstraintModeDm` to allow control of the creation of constraint for tables. Valid choices are: `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`
+* Update: Support for BDV and Data Mart lookups when the Primary Key is not defined as an identity column
+* Add: Configuration for constraint mode for database layers that will toggle table references: `ConstraintModeStg`, `ConstraintModeDv`, `ConstraintModeDm` to allow control of the creation of constraint for tables. Valid choices are: `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`
 
 ## Bundle 63130
 
@@ -46,7 +71,7 @@ name: BimlFlex Release Notes
 Update: Data Vault `REF` primary key now includes the `EffectiveFromDate` column
 Update: PSA INIT loads no longer derive Data Type mappings again
 Update: `IsInitialLoad` precedence constraint updated.
-Add: support for `SourceProperty` by Batch
+Add: Support for `SourceProperty` by Batch
 Update: Derived Hubs from Links (to same Hub) no longer use same BK for second hub
 
 ## Bundle 63018
