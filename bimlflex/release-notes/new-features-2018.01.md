@@ -1,4 +1,4 @@
-# New Features in BimlFlex 2018.04
+# New Features in BimlFlex 2018.01
 
 ## Azure Blob Storage-based staging and persisting
 
@@ -143,7 +143,7 @@ Added `CreateSql` and `OverrideSql` functionality to both Metadata and Extension
 
 ### Quick Parse
 
-A `Quick Parse` option for BimlStudio has been added as an options to only load placeholder objects from metadata when modelling. This allows faster modelling in BimlFlex and uses less resources for representing packages in BimlStudio. Once Packages needs to be built, disable the `Quick Parse` setting and refresh the metadata to have BimlStudio populated with full fidelity objects.   
+A `Quick Parse` option for BimlStudio has been added as an options to only load placeholder objects from metadata when modelling. This allows faster modelling in BimlFlex and uses less resources for representing packages in BimlStudio. Once Packages needs to be built, disable the `Quick Parse` setting and refresh the metadata to have BimlStudio populated with full fidelity objects.
 
 ### Split `Use My ConnectionStrings` and `Use My Exclusions`
 
