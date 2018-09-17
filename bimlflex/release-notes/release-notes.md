@@ -4,8 +4,6 @@ name: BimlFlex Release Notes
 ---
 # Release Notes
 
-## BimlStudio 2018.2 Note
-
 > [!NOTE]
 > Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
@@ -35,6 +33,17 @@ name: BimlFlex Release Notes
 * Update: Fix Error in Batch when multiple sources are mapped to the same target using ELT stored procedures.
 * Add: Static DTSID to all connection managers based on the `[ConnectionUID]`
 * Add: `UseGETUTCDATE` configuration to BimlCatalog. This allows configuration of orchestration times to be specified in UTC time zone or the local time zone of the database.
+* Update: the `ExcludeFromBuild` and `ExcludeFromValidation` has been removed from the `Connections` and `Projects` metadata.
+* Update: a scenario in the BimlFlex Excel metadata management tool where filtered rows were included in selection when archiving, refreshing and cloning selection has been updated to the expected behavior
+* Update: a scenario where the BimlFlex Metadata Importer was not importing when current selection was outside the Objects and Columns table has been updated to the expected behavior
+* Update: the BimlFlex Excel metadata management tool is now applying Cell format `TEXT` to Default columns so that contents identified as dates are not reformatted to internal Excel numbers
+* Update: remove redundant Import Options for BimlFlex metadata import
+* Update: add additional logic to `TableFilter` and `SchemaFilter` in metadata import to ensure updates are managed as expected
+* Add: additional `Clone Table` target object type options to the Excel metadata management tool
+* Add: support for `Proper_Case` in naming conventions in the Excel metadata management tool import metadata options
+
+> [!Note]
+> Behavior change - this bundle delegates the model object type definition task to the modeler. Review the destination logical model and the source system relationships and update the `ModelObjectType` definition of object based on that. Previous releases used technical analysis of the source to prepopulate choices other than Hub.
 
 > [!WARNING]
 > Breaking change in feature.
