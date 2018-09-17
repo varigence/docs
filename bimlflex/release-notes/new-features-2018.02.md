@@ -2,11 +2,16 @@
 
 ## Snowflake-based staging and persisting
 
-BimlFlex now has initial support for Snowflake as a staging and file persistence engine.
+BimlFlex now has initial support for Snowflake as a staging and persistent staging engine.
+
+This supports the SRC - STG - PSA process and includes the use of an SSIS Custom Task.  
+This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use. Please contact bimlflex-support@varigence.com for more information if you are looking at using Snowflake with BimlFlex.
 
 ## Agile Data Vault Acceleration
 
-The BimlFlex DataVault Accelerator now support a `ModelGrouping` feature. This allows a more agile and targeted acceleration approach. Please read this blog post for more information. [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
+The BimlFlex DataVault Accelerator now support a `ModelGrouping` feature. This allows a more agile and targeted acceleration approach.
+
+Please read this blog post for more information. [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
 
 ## Insert only optimizations
 
