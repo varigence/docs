@@ -35,7 +35,7 @@ Significant changes between BimlStudio 2018 and BimlStudio 2018 r2
 
 ## Source Control
 
-* Improved general performance of TFS commit, add, and delete operations.
+* Improved general performance of TFS commit and add operations.
 * Disabled the included/excluded lists when the file compare tool is being launched and during the commit process.
 * Fixed issue where occasionally the Operation Results banner would tell the user to click for more information when there was no more information to give. 
 
