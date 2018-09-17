@@ -10,15 +10,7 @@ Significant changes between BimlExpress2018 and BimlExpress2018r2
 
 ## SSIS
 
-* Added support for SSIS 2017.
-
-
-## Provider Support
-
-* Fixed data type mappings for Excel `GetDatabaseSchema()`.
-
-
-## Biml Language
-
-* Added ColumnStore and ColumnStoreArchive to `TableCompressionType` enumeration.
+* Fixed issue where setting the 'VersionGuid' property to all 0's was still generating a random Guid. User can now specify a Guid of all 0's. 
+* Fixed ISPAC filename escaping issue.
+* Changed default of `FileSystemOperationTask` enum to be `CopyFile`.
 
