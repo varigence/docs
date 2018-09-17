@@ -11,7 +11,7 @@ name: BimlFlex Release Notes
 
 ## Bundle 63317
 
-> [!COMPATIBILITY]
+> [!WARNING]
 > This bundle require the a BimlStudio build greater than `Build 5.0.63175.0` and updated BimlCatalog and BimlFlex databases.
 
 * Add: `ModelGrouping` to DataVault Accelerator. Please read this blog or more information. [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
@@ -19,24 +19,24 @@ name: BimlFlex Release Notes
 * Add: Support for `Snowflake` SRC - STG -PSA including a SSIS Custom Task. This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use.
 * Add: `GROUP BY` clause to `Hub` and `Lin`k lookups to returrn unique list when used with `ApplyLookupFilterRdv = "Y"`
 * Add: Functionality to support file source in line expressions. You can now use `SsisExpression` like `REPLACENULL(RAW_@@this, "")`  with `ColumnAlias` set to `RAW_@@this` and `DataTypeMapping` like `String(20)`
-* Add: ExtensionPoints `StagingTargetPipeline`, `SourceFileArchiveOverride` and `SourceErrorHandling` to provide greater flexibility when loading flat files
+* Add: Extension Points `StagingTargetPipeline`, `SourceFileArchiveOverride` and `SourceErrorHandling` to provide greater flexibility when loading flat files
 * Add: static package ID's to all generated SSIS packages. The package id is normally generated dynamically by the SSIS build process. By adding a static ID it is easier to track actual changes to packages.
 * Update: Remove `RowHash` from `Change Data Capture` and `Change Tracking` staging tables to reduce table size
-* Update: ExtensionPoint `DwhSourceOverride` and `RdvSourceOverride` to allow additional flexibility to the Data Mart and Data Vault process.
-* Update: ExtensionPoint `DwhTargetPipelinePre`, `DwhTargetPipelinePost`, `RdvTargetPipelinePre` and `RdvTargetPipelinePost` to allow additional flexibility to the Data Mart and Data Vault process.
-* Update: ExtensionPoint `DwhType2Pipeline` to allow additional flexibility to the Data Mart process.
-* Update: ExtensionPoint `DwhType1Pipeline` to allow additional flexibility to the Data Mart process.
-* Update: ExtensionPoint `DwhInsertPipeline` to allow additional flexibility to the Data Mart process.
-* Add: ExtensionPoints to provide additional flexiability. `StagingTargetPipeline`, `PersistentTargetPipeline`, `StagingInitialTargetPipeline` and `PersistentInitialTargetPipeline`
-* Add: ExtensionPoints target `@@global` to `PackageVariable` and `BatchVariable`
-* Add: ExtensionPoint `DataFlowProperties` and allowing `@@global` target
+* Update: Extension Point `DwhSourceOverride` and `RdvSourceOverride` to allow additional flexibility to the Data Mart and Data Vault process.
+* Update: Extension Point `DwhTargetPipelinePre`, `DwhTargetPipelinePost`, `RdvTargetPipelinePre` and `RdvTargetPipelinePost` to allow additional flexibility to the Data Mart and Data Vault process.
+* Update: Extension Point `DwhType2Pipeline` to allow additional flexibility to the Data Mart process.
+* Update: Extension Point `DwhType1Pipeline` to allow additional flexibility to the Data Mart process.
+* Update: Extension Point `DwhInsertPipeline` to allow additional flexibility to the Data Mart process.
+* Add: Extension Points to provide additional flexiability. `StagingTargetPipeline`, `PersistentTargetPipeline`, `StagingInitialTargetPipeline` and `PersistentInitialTargetPipeline`
+* Add: Extension Points target `@@global` to `PackageVariable` and `BatchVariable`
+* Add: Extension Point `DataFlowProperties` and allowing `@@global` target
 * Update: Fix `Change Data Capture` Data Vault Satellite load with `RowChangeType` for `Deletes`
 * Update: Fix ERROR in Batch when multiple sources are mapped to the same target using ELT stored procedures.
 * Add: Static DTSID to all connection managers based on the `[ConnectionUID]`
 * Add: `UseGETUTCDATE` configuration to BimlCatalog
 > [!WARNING]
 > Breaking change in feature.
-> Update: Rename Object ExtensionPoint `Connection`  to `PackageAddConnection`. Please search your project for `extensionpoint="Connection"` and replace it with `extensionpoint="PackageAddConnection"`
+> Update: Rename Object Extension Point `Connection`  to `PackageAddConnection`. Please search your project for `extensionpoint="Connection"` and replace it with `extensionpoint="PackageAddConnection"`
 
 ## Bundle 63217
 
@@ -475,7 +475,7 @@ They now require `sourceTable` and `destinationTable` definitions
 ### Extension Points
 
 * Added `PreSql` and `PostSql` Extension Points. This allows for easier custom definitions for SQL scripts, such as for injecting compression definitions into table create scripts
-* Fixed issue with PIT ExtensionPoint for `LagSql`
+* Fixed issue with PIT Extension Point for `LagSql`
 
 ### DataTypeMappings
 
