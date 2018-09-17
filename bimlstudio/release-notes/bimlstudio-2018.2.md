@@ -51,7 +51,8 @@ Significant changes between BimlStudio 2018 and BimlStudio 2018 r2
 * Added wait cursors to a few longer processes to help better communicate to the user that something is happening in the background.
 * In debug utility, disabled the 'Save Metadata' button while the debugutility is attempting to establish a DB connection and generate customer/version lists.
 * In debug utility, we now prevent duplicates from being added to the customer/version list.
-* In debut utility, fixed a datarace where a user opened the utility with an invalid connection and attempted to correct the connection before the incorrect connection had finished timing out, causing the correct connection's customer/version list to be wiped out when it finally does time out.
+* In debug utility, fixed a datarace where a user opened the utility with an invalid connection and attempted to correct the connection before the incorrect connection had finished timing out, causing the correct connection's customer/version list to be wiped out when it finally does time out.
+* In debug utility, increased obfuscation of sensitive information when extracting metadata.
 * Added multiselect for model groupings in the data vault accelerator options dialog box.
 * Upgraded the DacFx framework so we can now deploy Dacpacs to Sql Server 2017.
 
