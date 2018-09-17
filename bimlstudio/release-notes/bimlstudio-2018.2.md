@@ -22,7 +22,7 @@ Significant changes between BimlStudio 2018 and BimlStudio 2018 r2
 
 ## SSIS
 
-* Fixed issue where setting the 'VersionGuid' property to all 0's was still generating a random Guid. User can now specify a Guid of all 0's. 
+* Fixed issue where setting the `VersionGuid` property to all 0's was still generating a random Guid. User can now specify a Guid of all 0's. 
 * Fixed ISPAC filename escaping issue.
 * Changed default of `FileSystemOperationTask` enum to be `CopyFile`.
 
