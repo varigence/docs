@@ -6,19 +6,20 @@ name: BimlFlex Release Notes
 
 ## BimlStudio 2018.2 Note
 
-> Please make sure you have a backup of your database and projects prior to applying and upgrades. We also recommend that your project and bundles are checked into your source control.
->Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
+> [!NOTE]
+> Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
+> Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
 ## Bundle 63317
 
 > [!WARNING]
-> This bundle require the a BimlStudio build greater than `Build 5.0.63175.0` and updated BimlCatalog and BimlFlex databases.
+> This bundle require a BimlStudio build greater than `Build 5.0.63175.0` and updated BimlCatalog and BimlFlex databases.
 
 * Add: `ModelGrouping` to DataVault Accelerator. Please read this blog or more information. [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
-* Add: Support for Data Vault `Same As` and `Hierarchy` Links in the `ModelObjectType` including the ability to specify naming convention in the Settings using `DvAppendSameAsLink` and `DvAppendHierarchyLink`
-* Add: Support for `Snowflake` SRC - STG -PSA including a SSIS Custom Task. This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use.
-* Add: `GROUP BY` clause to `Hub` and `Lin`k lookups to returrn unique list when used with `ApplyLookupFilterRdv = "Y"`
-* Add: Functionality to support file source in line expressions. You can now use `SsisExpression` like `REPLACENULL(RAW_@@this, "")`  with `ColumnAlias` set to `RAW_@@this` and `DataTypeMapping` like `String(20)`
+* Add: Support for Data Vault `Same As` and `Hierarchy` Links in the `ModelObjectType`, including the ability to specify naming convention in the Settings using `DvAppendSameAsLink` and `DvAppendHierarchyLink`
+* Add: Support for `Snowflake` SRC - STG - PSA including an SSIS Custom Task. This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use.
+* Add: `GROUP BY` clause to `Hub` and `Link` lookups to return unique list when used with `ApplyLookupFilterRdv = "Y"`
+* Add: Functionality to support file source in line expressions. You can now use `SsisExpression` like `REPLACENULL(RAW_@@this, "")` with `ColumnAlias` set to `RAW_@@this` and `DataTypeMapping` like `String(20)`
 * Add: Extension Points `StagingTargetPipeline`, `SourceFileArchiveOverride` and `SourceErrorHandling` to provide greater flexibility when loading flat files
 * Add: static package ID's to all generated SSIS packages. The package id is normally generated dynamically by the SSIS build process. By adding a static ID it is easier to track actual changes to packages.
 * Update: Remove `RowHash` from `Change Data Capture` and `Change Tracking` staging tables to reduce table size
@@ -27,20 +28,21 @@ name: BimlFlex Release Notes
 * Update: Extension Point `DwhType2Pipeline` to allow additional flexibility to the Data Mart process.
 * Update: Extension Point `DwhType1Pipeline` to allow additional flexibility to the Data Mart process.
 * Update: Extension Point `DwhInsertPipeline` to allow additional flexibility to the Data Mart process.
-* Add: Extension Points to provide additional flexiability. `StagingTargetPipeline`, `PersistentTargetPipeline`, `StagingInitialTargetPipeline` and `PersistentInitialTargetPipeline`
+* Add: Extension Points to provide additional flexibility. `StagingTargetPipeline`, `PersistentTargetPipeline`, `StagingInitialTargetPipeline` and `PersistentInitialTargetPipeline`
 * Add: Extension Points target `@@global` to `PackageVariable` and `BatchVariable`
 * Add: Extension Point `DataFlowProperties` and allowing `@@global` target
 * Update: Fix `Change Data Capture` Data Vault Satellite load with `RowChangeType` for `Deletes`
-* Update: Fix ERROR in Batch when multiple sources are mapped to the same target using ELT stored procedures.
+* Update: Fix Error in Batch when multiple sources are mapped to the same target using ELT stored procedures.
 * Add: Static DTSID to all connection managers based on the `[ConnectionUID]`
-* Add: `UseGETUTCDATE` configuration to BimlCatalog
+* Add: `UseGETUTCDATE` configuration to BimlCatalog. This allows configuration of orchestration times to be specified in UTC time zone or the local time zone of the database.
+
 > [!WARNING]
 > Breaking change in feature.
-> Update: Rename Object Extension Point `Connection`  to `PackageAddConnection`. Please search your project for `extensionpoint="Connection"` and replace it with `extensionpoint="PackageAddConnection"`
+> Update: Rename Object Extension Point `Connection` to `PackageAddConnection`. Please search your project for `extensionpoint="Connection"` and replace it with `extensionpoint="PackageAddConnection"`
 
 ## Bundle 63217
 
-* Update: Fixed an LSAT IsDrivingKey Source select issue for multiple Driving Key columns not being a properly comma separated list
+* Update: Fixed an LSAT IsDrivingKey Source select issue for multiple Driving Key columns not being a proper comma separated list
 * Update: Data Vault accelerator now uses the `RowHashKey` configuration data type for relevant columns
 * Update: Point In Time and Bridge tables now use their specified schema
 * Update: `ExcludeFromBuild` flag now does not affect or exclude target objects
