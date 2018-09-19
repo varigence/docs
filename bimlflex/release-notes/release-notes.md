@@ -8,12 +8,16 @@ name: BimlFlex Release Notes
 > Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
+## Bundle 63318
+
+* Update: The BimlFlex database sample metadata created connections with the character `N` in the provider field. This is not a valid provider for the sample metadata and has been removed in this build. Any existing projects based on the sample metadata with this character as provider should be updated and the `N` removed.
+
 ## Bundle 63317
 
 > [!WARNING]
 > This bundle require a BimlStudio build greater than `Build 5.0.63175.0` and updated BimlCatalog and BimlFlex databases.
 
-* Add: `ModelGrouping` to DataVault Accelerator. Please read this blog post for more information. [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
+* Add: `ModelGrouping` to DataVault Accelerator. Please read this blog post for more information: [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
 * Add: Support for Data Vault `Same As` and `Hierarchy` Links in the `ModelObjectType`, including the ability to specify naming convention in the Settings using `DvAppendSameAsLink` and `DvAppendHierarchyLink`
 * Add: Support for `Snowflake` SRC - STG - PSA including an SSIS Custom Task. This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use.
 * Add: `GROUP BY` clause to `Hub` and `Link` lookups to return unique list when used with `ApplyLookupFilterRdv = "Y"`
