@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-TODO: Coming Soon
+![Building Business Keys for Data Vault](https://www.youtube.com/watch?v=frzWIAW-Mhs?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
@@ -14,10 +14,10 @@ The Business Key is the core information bearer in the Data Vault. It should ide
 
 Business Keys have a few predefined rules in BimlFlex:
 
-- Business Keys are always stored as a Unicode String. The default length is 100 characters but can be expanded when needed
-- Business Keys are always a concatenated representation of all relevant columns. The default concatenator character is `~`
-- Business Keys are Upper Cased by default. As the Business Key is hashed and the SQL Server default database settings are for case insensitive databases this is a requirement to be able to accommodate the same key with different casings.
-- All columns that are part of the Business Key are by default accelerated and stored in unaltered form and data type in a Satellite.
+* Business Keys are always stored as a Unicode String. The default length is 100 characters but can be expanded when needed
+* Business Keys are always a concatenated representation of all relevant columns. The default concatenator character is `~`
+* Business Keys are Upper Cased by default. As the Business Key is hashed and the SQL Server default database settings are for case insensitive databases this is a requirement to be able to accommodate the same key with different casings.
+* All columns that are part of the Business Key are by default accelerated and stored in unaltered form and data type in a Satellite.
 
 By using the `FlexToBk()` function it is possible to create the Business Key from any source columns. The function allows using the `@@rs` shortcut to inject the current connections Record Source code in the Business Key. This allows for easy differentiation between the same key value with different meaning from multiple sources.
 
