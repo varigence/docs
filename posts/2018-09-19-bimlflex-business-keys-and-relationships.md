@@ -41,3 +41,7 @@ The Import Metadata dialog is able to create Business Keys and redefine the sour
 Once the Business Keys and relationships are defined in the metadata for the source system it is possible to use the Data Vault Accelerator in BimlFlex to preview and build the Data Vault.
 
 Define the Accelerator options and preview the Data Vault to review the resulting model. refine the metadata and update the preview for any required tweaks and publish the metadata once it matches the required destination logical model.
+
+## Watch the Webinar
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/frzWIAW-Mhs?rel=0&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

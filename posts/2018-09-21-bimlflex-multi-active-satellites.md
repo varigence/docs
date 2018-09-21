@@ -59,14 +59,18 @@ Data Warehousing at the best of times is a complex undertaking and BimlFlex has 
 
 ## Which approach should I pick?
 
-**Roelant Vos**
-Scenario 1:
+**Roelant Vos**  
+Scenario 1:  
 The approach to follow largely depends on your personal preferences and (almost philosophical) views.
 
-**Peter Avenant**
-Scenario 3:
+**Peter Avenant**  
+Scenario 3:  
 Multi-active functionality (i.e. the 'scenario 1') will be hidden by default in a future release of BimlFlex (still supported however).
 
 It does appear that the traditional multi-active concept comes with certain challenges for many people. It's a recurring topic in the trainings I host, and I have seen it go wrong in various projects.
 
 The reason seems to be that in these cases the selected multi-active key wasn’t as immutable as first thought, which can lead to overloading complexity when querying data from the Data Vault.
+
+## Watch the Webinar
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/8UdK9opFWL4?rel=0&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
