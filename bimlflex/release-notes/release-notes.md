@@ -8,9 +8,11 @@ name: BimlFlex Release Notes
 > Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
-## Bundle v.next
+## Bundle 63328
 
 * Update: an issue in the BimlFlex database resulting in errors when pushing projects when `Use My Exclusions` was set has been fixed.
+* Update: Removed superfluous `n` from SQLDW stored procedure.
+* Update: Fix `UPPER()` from `SsisExpression` when Link hash key is derived from `FlexToBk()`.
 
 ## Bundle 63318
 
@@ -63,7 +65,7 @@ name: BimlFlex Release Notes
 * Update: Data Vault accelerator now uses the `RowHashKey` configuration data type for relevant columns
 * Update: Point In Time and Bridge tables now use their specified schema
 * Update: `ExcludeFromBuild` flag now does not affect or exclude target objects
-* Update: Support for BDV and Data Mart lookups when the Primary Key is not defined as an identity column
+* Update: Support for BDV and Data Mart dimension smart keys when the Primary Key is not defined as an identity column. For scenarios where the Dimension Primary Key is not an identity column, derive the smart key in to the fact load and the process will use this key without doing a dimension surrogate key lookup.
 * Add: Configuration for constraint mode for database layers that will toggle table references: `ConstraintModeStg`, `ConstraintModeDv`, `ConstraintModeDm` to allow control of the creation of constraint for tables. Valid choices are: `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`
 
 ## Bundle 63130
@@ -378,7 +380,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Updates to BimlCatalog Orchestration to use Project Name when logging to accommodate duplicate package names
 * Added `ApplyLookupFilterRdv` to filter SSIS lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This cross database join functionality requires the databases to be co-located or the tables to be in the same database
 * Added Lookup Filter for Surrogate Key Dimensional `LookupSql`
-* Added Foreign Keu Lookups for dimension surrogate key lookups
+* Added Foreign Key Lookups for dimension surrogate key lookups
 * Updates to `RowCount` SSIS Custom Component logic to add aggregate columns for source queries
 * Added `RowCountSum` to the Metadata model and Add-in drop down for `CustomAttributes`
 * Added validator to check that multiple source columns from a single source table aren't mapped to the same destination column
