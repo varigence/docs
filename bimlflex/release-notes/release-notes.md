@@ -8,6 +8,10 @@ name: BimlFlex Release Notes
 > Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
+* Update: Fix issue with `UPPER` logic in `DataVault` SSIS to accomodate nested `FlexToBk` columns especially on Link Reference columns.
+* Update: Fix inline file source column conversion when using `ColumnAlias`, `SsisExpression` with `DatatypeMapping`.
+* Add: Configure batch name to include `AppendBatchName` configuration to front of `ELT` SQL batches to allow additional naming convention.
+
 ## Bundle 63328
 
 * Update: an issue in the BimlFlex database resulting in errors when pushing projects when `Use My Exclusions` was set has been fixed.
