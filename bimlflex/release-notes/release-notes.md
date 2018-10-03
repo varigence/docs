@@ -10,7 +10,7 @@ name: BimlFlex Release Notes
 
 ## Bundle 63403
 
-* Update: Fix issue with `UPPER` logic in `DataVault` SSIS to accommodate nested `FlexToBk()` columns especially on Link Reference columns.
+* Update: Fix issue with `UPPER()` logic in `DataVault` SSIS to accommodate nested `FlexToBk()` columns, especially on Link Reference columns.
 * Update: Fix inline file source column conversion when using `ColumnAlias`, `SsisExpression` with `DatatypeMapping`.
 * Add: Configure batch name to include `AppendBatchName` configuration to front of `ELT` SQL batches to allow additional naming convention.
 
