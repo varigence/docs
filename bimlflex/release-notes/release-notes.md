@@ -10,7 +10,7 @@ name: BimlFlex Release Notes
 
 ## Bundle v.next
 
-* Update: Added additional Batch logic to separate multiple Batches in projects with multiple sources into seprate Batch packages for Azure SQL Data Warehouse loads. The new Batch name will include the Connection Record Source (`BFX_LOAD_RDV_Batch` -> `BFX_LOAD_RDV_AWLT_Batch`). This allows multiple sources to be maintained within the same Project/Batch metadata even if there are object duplications.
+* Update: Added additional Batch logic to separate multiple Batches in projects with multiple sources into separate Batch packages for Azure SQL Data Warehouse loads. The new Batch name will include the Connection Record Source (`BFX_LOAD_RDV_Batch` -> `BFX_LOAD_RDV_AWLT_Batch`). This allows multiple sources to be maintained within the same Project/Batch metadata even if there are object duplications.
 
 ## Bundle 63403
 
