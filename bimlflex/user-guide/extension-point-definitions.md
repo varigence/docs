@@ -1,8 +1,8 @@
-
 ---
 uid: bimlflex-extension-point-definitions
 title: BimlFlex Extension Point Definitions
 ---
+
 # Extension Point Overview
 
 The usage of Extension Points is described in the @bimlflex-extension-points documentation

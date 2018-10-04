@@ -1,12 +1,16 @@
 # Support and Documentation
 
-At Varigence, we offer a comprehensive library of professional support resources. We include support within the products, for free to our customers, and as supplemental packages for more extensive training. In addition to the support here we have developed a community at Bimlscript.com where members contribute helpful video tutorials, walkthroughs, and snippets to the community.
+At Varigence, we offer a comprehensive library of professional support resources.
+
+We include support within the products, for free to our customers, and as supplemental packages for more extensive training.
+
+In addition to the support here, we have developed a community at [Bimlscript.com](http://bimlscript.com) where members contribute helpful video tutorials, walkthroughs, and snippets to the community.
 
 ![Biml -h38px](content/images/biml.svg)
 
-* [Biml Language Reference](biml/index.md)
-* [Biml API Reference](biml/index.md)
-* [Biml API Samples](biml/index.md)
+* [Biml Language Reference](biml/language-reference/index.md)
+* [Biml API Reference](biml/api-reference/index.md)
+* [Biml API Samples](biml/api-reference/index.md)
 * [Biml Forum](https://varigence.com/Forums?forumName=Biml&threadID=0)
 
 ![BimlExpress -h38px](content/images/bimlexpress.svg)
@@ -23,5 +27,5 @@ At Varigence, we offer a comprehensive library of professional support resources
 ![BimlFlex -h38px](content/images/bimlflex.png)
 
 * [BimlFlex User Guide](bimlflex/index.md)
-* [Metadata Reference](bimlflex/reference-documentation/index.md)
-* [Extension Points](bimlflex/reference-documentation/index.md)
+* [Metadata Reference](bimlflex/user-guide/metadata-entity-definitions.md)
+* [Extension Points](bimlflex/user-guide/extension-point-definitions.md)
