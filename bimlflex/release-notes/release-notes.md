@@ -8,9 +8,11 @@ name: BimlFlex Release Notes
 > Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
-## Bundle v.next
+## Bundle 63408
 
-* Update: Added additional Batch logic to separate multiple Batches in projects with multiple sources into separate Batch packages for Azure SQL Data Warehouse loads. The new Batch name will include the Connection Record Source (`BFX_LOAD_RDV_Batch` -> `BFX_LOAD_RDV_AWLT_Batch`). This allows multiple sources to be maintained within the same Project/Batch metadata even if there are object duplications.
+* Add: new validator to check Data Mart objects and projects. For a Data Mart load the mapped objects needs to be in the same project. If table/view `sourceForFactTable` has source to target mappings to load to `FactTable` then both these objects needs to be part of the same project (such as project `Load_DataMart`). This is enforced to ensure that multiple load processes are properly separated in BimlFlex.
+* Update: to the end dating logic for SSIS PSA loads to allow multiple loaded updates to be end dated efficiently.
+* Update: added additional Batch logic to separate multiple Batches in projects with multiple sources into separate Batch packages for Azure SQL Data Warehouse loads. The new Batch name will include the Connection Record Source (`BFX_LOAD_RDV_Batch` -> `BFX_LOAD_RDV_AWLT_Batch`). This allows multiple sources to be maintained within the same Project/Batch metadata even if there are object name duplications.
 
 ## Bundle 63403
 
