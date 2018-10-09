@@ -10,15 +10,15 @@
 
 ## Building Databases, Tables and SSIS packages for source to staging in BimlFlex
 
-In BimlStudio, the BimlFlex project is able to create SQL DDL scripts to create databases and tables for the Data Warehouse. These can be run on the database server to create all artefacts required to run the trial process.
+In BimlStudio, the BimlFlex project is able to create SQL DDL scripts to create databases and tables for the Data Warehouse. These can be run on the database server to create all artefacts required to run the trial process. This is an agile way to create tables while developing.
 
-BimlFlex can also build out a Visual Studio SQL Server Data Tools (SSDT) Project with all database artefacts. This feature is enabled by default and this project can be used to deploy the databases and tables.
+BimlFlex can also build a Visual Studio SQL Server Data Tools (SSDT) Project with all database artefacts. This feature is enabled by default and this project can be used to deploy the databases and tables. This approach can be integrated into a deployment pipeline for continuous integration, continuous deployment scenarios.
 
 Once the tables are available in the data warehouse database server it is possible to use the build process in BimlStudio. This will build the SSIS projects and packages for the source to staging and persistent staging loads.
 
 The creation and building of the initial source to staging will validate that all local configurations and build tools are in place and working as expected. it will also validate access to the database server used for the data warehouse.
 
-The default build process assumes that Windows authentication is used to access the databases. Should SQL authentication and logins be needed, the project needs to be configured with project parameters for connection strings. This is outside the scope of the trial, but [reference documentation is available here](../user-guide/deployment-guide.md)
+The default build process assumes that Windows authentication is used to access all databases. This is generally recommended and allows the security to be maintained without managing passwords in the SSIS projects. Should SQL authentication and logins be needed, the project needs to be configured with project parameters for connection strings. This approach of securing passwords is the SQL Server preferred way of orchestrating SSIS packages in the SSIS catalog. This is outside the scope of the trial, but [reference documentation is available here](../user-guide/deployment-guide.md)
 
 The output window in BimlStudio will show the build process and will also detail any errors. Should there be an issue in the build, review the output window and troubleshoot based on the first error message.
 
@@ -39,7 +39,7 @@ To start, click the `Refresh Metadata` button to make sure BimlFlex has the late
 
 ### Creating SQL DDL scripts to create databases and Tables
 
-In BimlStudio, navigate to the `BimlFlex` tab. In the `Generate Scripts` dropdown, choose `Create Table Script`. BimlFlex will generate the database, schema and table create scripts. Copy the script or open the file in Microsoft SQL Server Management Studio and execute them on the target SQL Server.
+In BimlStudio, navigate to the `BimlFlex` tab. In the `Generate Scripts` dropdown, choose `Create Table Script`. BimlFlex will generate the database, schema and table create scripts. Copy the script or open the generated file in Microsoft SQL Server Management Studio and execute them on the target SQL Server.
 
 ### Building SSIS packages in BimlStudio
 
@@ -59,4 +59,4 @@ Once the SSIS package execution is completed, the staging and persistent staging
 
 ### Reviewing the SSDT Project
 
-BimlFlex also builds a SSDT database project by default. In the output folder there is a folder called `SSDT`. In this folder there is a folder named after the unique identifier for the customer (GUID). In this folder is a folder for the current version. In the version folder there are separate projects for each database included in the BimlFlex solution. Each of these projects will have all SQL artefacts included. This project can be used to deploy and manage the database pipeline instead of the Script generation feature in BimlStudio.
+BimlFlex also builds a SSDT database project by default. In the output folder there is a folder called `SSDT`. In this folder there is a folder named after the unique identifier for the customer (GUID). In this folder is a folder for the current version. In the version folder there are separate projects for each database included in the BimlFlex solution. Each of these projects will have all relevant SQL artefacts included. These projects can be used to deploy and manage the database pipeline instead of the Script generation feature in BimlStudio.

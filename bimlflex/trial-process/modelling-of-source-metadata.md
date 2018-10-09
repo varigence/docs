@@ -1,8 +1,8 @@
-# Modelling of source Metadata
+# Modelling of Source Metadata
 
 ## Supporting Videos
 
-TODO: Coming Soon
+![Modelling of source Metadata](https://www.youtube.com/watch?v= TODO ?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
@@ -34,31 +34,18 @@ A source table can have multiple columns in the Primary Key definition.
 
 A Business Key is the key describing the business entity stored in the table. It is used in Data Vault modelling to describe the Core Business Concept or Enterprise Wide Business Key candidate that will be used to model and load Hubs. The Business Key can be the same as the Primary Key or it can be derived from a combination of attributes. The Business Key is always a string representation so the default creation behavior in BimlFlex is to apply the `FlexToBk()` expression to convert the source column data types to a string. The import metadata function can derive a Business Key from either the Primary Keys or the Unique Constraints from the source.
 
-Sample constraints from a Staging table create script to illustrate Primary Key and Business Key definitions:
-
-```sql
--- Constraints
-,CONSTRAINT [PK_AWLT_Address] PRIMARY KEY CLUSTERED
-(
-  [AddressID] Asc, [FlexRowEffectiveFromDate] ASC) WITH(PAD_INDEX = OFF,IGNORE_DUP_KEY = OFF) ON "default"
-,CONSTRAINT [UK_AWLT_Address]  UNIQUE NONCLUSTERED
-(
-  [Address_BK] Asc, [FlexRowEffectiveFromDate] ASC) WITH(PAD_INDEX = OFF,IGNORE_DUP_KEY = OFF) ON "default"
-)
-```
-
 An Alternate Business Key is used as a backup of the source Primary Key when the primary key definition needs to be changed in the modelling process. If there are Primary Key columns defined as derived columns that aren't persisted into the Persistent Staging layer BimlFlex will use the Alternate Business Key instead. This is the normal approach for a Data Vault model.
 
 For the trial process using a Data Vault destination layer and using the Accelerator to accelerate the Data Vault objects, the source modelling will use the Business Keys to define the relationships. This allows the Accelerator to derive all Hubs, Links and Satellites based on the source metadata and the Business Key definitions used as well as their relationships.
 
-In the `Import Metadata` dialog the option to redefine relationships based on Business Keys was used. This has created a Main Business Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint an additional Business Key has been created. The related table and column data has been set between these Business Keys and the related main Business Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Business Keys without additional configuration.
+In the `Import Metadata` dialog, the option to redefine relationships based on Business Keys was used. This has created a Main Business Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint an additional Business Key has been created. The related table and column data has been set between these Business Keys and the related main Business Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Business Keys without additional configuration.
 
-### Applying Data Type Mappings, expansion
+### Applying Data Type Mappings, expansion of data types
 
 Source system data types can be expanded to be more accommodating. This enhances resiliency in the load process when the source system data types change.
 The Data Type Mapping feature is [described in a separate document and video](applying-data-type-mappings.md)
 
-For the trial process, add the default Data Type Mappings to the `AWLT` record source
+For the trial process, the default Data Type Mappings will be added in the next step, as a separate exercise.
 
 ### Defining Business Keys
 
@@ -79,31 +66,166 @@ More information and considerations for Business Keys are available in the [Buil
 Source system relationships describe the metadata so that the correct load patterns can be used. For Data Vault, relationships help the Accelerator build out Link constructs between entities. When a metadata import is performed, BimlFlex will add any constraints defined in the source. This information is maintained in the `ReferenceTable` and `ReferenceColumnName` columns in the Columns sheet in the metadata. The chosen reference column must be a Primary Key in the related table.
 Relationships are also present in the Data Vault and Dimensional model to describe relationships between Data Vault entities such as Hubs and Satellites as well as Facts and Dimensions to define load patterns.
 
-For the trial process, maintain the relationships between the source FK's and PK's. Review the relationship definitions in the columns tab.
+For the trial process, relationships are defined between the Business Key derived from the Foreign Key and the Business Key derived rom the Primary Key. Review the relationship definitions in the columns tab.
+
+As an example, the Product source table has its own `Product_BK` column that is derived from the Primary Key and has a `SsisExpression` expression of `FlexToBk(@@rs,ProductID)`. This column is marked as the Business Key of the table (`BusinessKey` set to `Y`). It also has 2 derived Business Key columns that reference the 2 objects related to the Product, the ProductCategory and ProductModel.
+
+These derived BK columns create the same Business Key value as their related table BK's and have the ReferenceTable and ReferenceColumnName mapped to these related tables Business Keys.
+
+| ColumnName         | IsDerived | ModelReference  | SsisExpression                   | ReferenceTable                           | ReferenceColumnName |
+| ----------         | --------- | --------------  | --------------                   | --------------                           | ------------------- |
+| ProductCategory_BK | Y         | ProductCategory | FlexToBk(@@rs,ProductCategoryID) | AdventureWorksLT.SalesLT.ProductCategory | ProductCategory_BK  |
+| ProductModel_BK    | Y         | ProductModel    | FlexToBk(@@rs,ProductModelID)    | AdventureWorksLT.SalesLT.ProductModel    | ProductModel_BK     |
+
+This metadata and these relationships will allow BimlFlex to accelerate a Data Vault Hub table from the Product table based on the main Product_BK Business Key and Links to the ProductCategory and ProductModel entities as well as store all product attributes in satellites attached to the Product Hub.
 
 ### Defining object related Metadata
 
-The objects tab contains the tables from the `AdventureWorks LT` source system as well as any Data Warehouse tables created and accelerated. The metadata can be modelled and tweaked in several ways on the object and table level.
+The objects tab contains the tables from the `AdventureWorksLT` source system as well as any Data Warehouse tables created and accelerated. The metadata can be modelled and tweaked in several ways on the object and table level.
 
-The main approaches are:
+Some main approaches are:
 
+- Defining ObjectType definitions for Data Vault candidate object types.
 - Renaming columns and providing naming guidelines to the accelerator
 - Tweaking the load pattern used by filtering, joining and grouping the data queried from the source.
+- Adding inherited objects that apply specific query logic
+
+#### Create Inherited Tables
+
+In the trial process, 2 inherited objects are defined and loaded in parallel to their parent object. These 2 objects showcase the inheritance feature as well as the Join and Where filter object options.
+
+The Customer Address information in the AdventureWorksLT source is mapped through the many to many `SalesLT.CustomerAddress` table. This can be modelled as a Link relationship between The Customer and the Address entities. Either with a Link Satellite or as a Hub-Satellite in combination with the Link.
+
+Another option from a modelling perspective is to view the address information as attributes attached to the Customer. This will create a less complex model with the address data instantiated as satellites attached to the Customer. The design decisions are a core part of the Data Vault process and depends on a range of considerations for Business Process, source data behavior and more. In the trial two different approaches are illustrated and loaded in parallel. Both the Link relationship based on the source data model and the attached attributes model based on associating the address data directly with a customer.
+
+Add metadata details for the inherited tables to create two new entities.
+
+Object metadata:
+
+| Project | Connection | Schema | ObjectName | JoinSql | WhereSql | ObjectAlias | ModelObjectType | InheritFromObject | SameAsInherited | UseInheritedName |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| EXT_AWLT | AdventureWorksLT | SalesLT | CustomerMainOfficeAddress | `INNER JOIN SalesLT.CustomerAddress ca on ca.AddressID = a.AddressID INNER JOIN SalesLT.Customer c ON c.CustomerID = ca.CustomerID` | `WHERE ca.AddressType = 'Main Office'` | a | Satellite | SalesLT.Address | | Y |
+| EXT_AWLT | AdventureWorksLT | SalesLT | CustomerShippingAddress |`INNER JOIN SalesLT.CustomerAddress ca on ca.AddressID = a.AddressID INNER JOIN SalesLT.Customer c ON c.CustomerID = ca.CustomerID` | `WHERE ca.AddressType = 'Shipping'` | a | Satellite | SalesLT.Address | | Y |
+
+In this case the new objects inherit from the Address table, they select from the same source table but use different queries and load to different staging tables.
+
+- They have `UseInheritedName` set to `Y` as the data will be loaded from the inherited table from the source (the main part of the query).
+- They have `SameAsInherited` set to `N` as they will have other columns added through the join condition and will load to a different staging table.
+- There are using a join clause to join through the CustomerAddress table to the Customer table
+- They have Where clause filters applied to load different rows.
+- The ModelObjectType is set to Satellite as these will be attributes associated with the Customer entity
+
+Column Metadata
+
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | Customer_BK | String | 100 | | | 1 | Key | Y | Y | | | | Y | | | | Customer | | | | FlexToBk(@@rs,CustomerID)|Y|0||AdventureWorksLT.SalesLT.Customer|Customer_BK|
+|AdventureWorksLT|SalesLT.CustomerMainOfficeAddress|CustomerID|Int32||||2|Key|||Y||||||||||c.CustomerID|||0||
+|AdventureWorksLT|SalesLT.CustomerMainOfficeAddress|AddressID|Int32||||3|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerMainOfficeAddress|AddressLine1|String|60|||4|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerMainOfficeAddress|AddressLine2|String|60|||5|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerMainOfficeAddress|City|String|30|||6|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerMainOfficeAddress|StateProvince|String|50|||7|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerMainOfficeAddress|CountryRegion|String|50|||8|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerMainOfficeAddress|PostalCode|String|15|||9|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|Customer_BK|String|100|||1|Key|Y|Y||||Y||||Customer||||FlexToBk(@@rs,CustomerID)|Y|0||AdventureWorksLT.SalesLT.Customer|Customer_BK
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|CustomerID|Int32||||2|Key|||Y||||||||||c.CustomerID|||0||
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|AddressID|Int32||||3|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|AddressLine1|String|60|||4|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|AddressLine2|String|60|||5|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|City|String|30|||6|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|StateProvince|String|50|||7|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|CountryRegion|String|50|||8|Type 1||||||||||||||||0||
+|AdventureWorksLT|SalesLT.CustomerShippingAddress|PostalCode|String|15|||9|Type 1||||||||||||||||0||
+
+- The column metadata contain the required columns and their data types.
+- The joined column from the Customer table has an SQL expression applied.
+- The derived Customer_BK has a FlexToBk() applied that uses the joined CustomerID column from the customer table.
+- The derived Customer_BK has a reference to the main Customer table and its main BK. This allows the Data Vault accelerator to treat these tables as Satellite candidates.
+
+These metadata operations will allow the address information to be loaded twice, and the tables will be candidates for different types of target objects for the Data Vault.
+
+### Creating Roleplaying objects
+
+The `SalesLT.ProductModelProductDescription` table is a candidate for a Link destination in the Data Vault. It is a relationship table that links models to descriptions based on their Culture. The ProductModelID is a Foreign Key to the ProductModel table and the ProductDescriptionID is a Foreign Key to the ProductDescription table. While it is possible to consider this a candidate for a logical fold as was applied to the Address tables this is also a primary candidate to introduce derived objects. The Culture field is part of the Primary Key but is not a reference to a separate table. The culture entity can be considered a Hub that should be part of the 3 way link built from the table. To create the Hub Culture from the source table the metadata will be changed to accommodate a derived Hub from the Culture data. It will not have any specific Satellite attributes or effectiveness readily available from this source but could be expanded upon with data from other sources in the future. The acceleration will create a HUB_Culture for the Business Key and a SAT_Culture_AWLT for the CultureCode field.
+
+The Business Key creation in this case does not need to apply the Record Source Code, the Culture codes (ar, en, fr, he, th, zh-cht) are all good candidates for direct cross-system integration.
+
+Worth noting on the Culture codes is that they are all lower-case and they are all fixed width strings. The Business key creation will by default upper-case and trim these codes. The original attribute value is stored in the Satellite.
+
+Add a new Object with the following data in the Objects sheet:
+
+| Project | Connection | Schema | ObjectName | ObjectType | IsNotPersistent | ExcludeFromBuild | ExcludeFromModel | ExcludeFromValidation | CreateSql | OverrideSql | FromSql | JoinSql | WhereSql | ObjectAlias | SelectBySql | GroupBySql | OrderBySql | ModelOverrideName | ModelOverrideShortName | ModelGrouping | ModelObjectType |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| EXT_AWLT | AdventureWorksLT | SalesLT | Culture | Table |  |  |  | Y |  | SELECT DISTINCT Culture AS CultureCode FROM SalesLT.ProductModelProductDescription |  |  |  |  |  |  |  |  |  |  | Hub |
+
+Add the following in the Columns Sheet:
+
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| AdventureWorksLT | SalesLT.Culture | Culture_BK | String | 100 | | | 1 | Key | Y | Y | | | |  Y | | | | Culture | | | | FlexToBk(CultureCode) | Y | 0 |
+| AdventureWorksLT | SalesLT.Culture | CultureCode | StringFixedLength | 6 | | | 2 | Key | | | Y |  | | | | | | | | | | | | 0 |
+
+To define the 3 way relationship for the future Link, update the SalesLT.ProductModelProductDescription source table so that there is a Culture Business Key column has a reference to the Culture objects Business Key. Do this by selecting the Culture column and click the Generate Business Key button to generate a Business Key. In the dialog, change the Column Name to CultureCode_BK. Make sure the Add Record Source and IsBusinessKey checkboxes are both unselected.
+
+Click Create to create the Business Key column. The newly created Business Key is added to the bottom of the sheet, scroll down and review the newly created Business Key. Add the reference to the Culture Table and Culture_BK column. Validate that the ModelReference is set to Culture.
+
+The metadata Objects has now been expanded with 3 new derived objects using different approaches. It illustrates the flexibility of the metadata and model driven approach and also adds additional Object Types to illustrate the Data Vault acceleration options.
 
 #### Naming conventions
 
 Using the naming override to define names in the Data Vault layer
 
 `ObjectAlias`
+
+When tweaking the SQL source select query that is generated the ObjectAlias is the alias that will be used for the source object. this is useful for scenarios where a join condition is used. The Object Alias can be used in the join condition and other SQL operations. If the Join Condition is `INNER JOIN otherTable o on o.Key = OriginalTable.Key` Then the Object Alias can be used to refer to the main table.
+
 `ModelOverrideName`
+
+The Override names are used to rename source object names into the Data Vault. A source system might have internal codes for table and column names. Renaming them into the Data Vault allows the business meaning to be clearer. It is possible to configure if these override names should be used in to the staging and persistent staging layer or just in to the Data Vault layer.
+
 `ModelOverrideShortName`
+
+TODO
+
 `ModelGrouping`
+
+The Model Grouping is used in agile Data Vault acceleration. This allows a subset of all objects to be included in an acceleration.
+
 `ModelObjectType`
 
-#### Naming guidelines
+This defines how the Data Vault Accelerator will accelerate the entity. Define each model object as either a Hub, Satellite or Link Object type to allow the accelerator to build the expected destination object.
 
-Grouping entities
-TODO: Coming soon
+The imported Objects from the source are by default all defined as Hub candidates in the ObjectType column.
+
+The 2 Address inherited objects were defined as Satellites, the added Culture object was derived as a Hub.
+
+The rest of the Objects needs to be reviewed and updated to the proper ObjectType as defined below.
+
+- Hub:
+     A Hub object type contains it's own primary Core Business Concept entity and the Business Key is distinct and unique for each row in the table. This will accelerate a Hub object from the main Business Key, one or more satellites populated from the attributes columns and a Link relationship for each referenced table.
+- Link:
+    A Link object type is a many to many relationship type table that maps several Hub entities together. In the AdventureWorksLT source data the `SalesLT.CustomerAddress` can be seen as a potential Link Model Object Type candidate. It's Primary Key is made from 2 Foreign Keys that point to 2 Hub candidate tables. The accelerator can accelerate this to a Link and store the attributes in a Link Satellite if the ModelObjectType is set to Link for that object. The acceleration of Link Satellites is also controlled by the `DVAccelerateLinkSatellites` setting.
+- Satellite:
+    A Satellite object type is an object that is on the same grain as and describes entities in the primary Business Key table. These can be mapped as Satellite objects to the main table and all attributes in the table will be mapped to one or more satellites attached to the primary tables Hub.
+
+Update the ModelObjectType of the Objects to match the following. This will allow the accelerator to accelerate the expected destination model from the source data:
+
+| Object                         | ObjectType |
+| ------------------------------ | ---------- |
+| Address                        | Hub        |
+| Customer                       | Hub        |
+| CustomerAddress                | Link       |
+| CustomerMainOfficeAddress      | Satellite  |
+| CustomerShippingAddress        | Satellite  |
+| Culture                        | Hub        |
+| Product                        | Hub        |
+| ProductCategory                | Hub        |
+| ProductDescription             | Hub        |
+| ProductModel                   | Hub        |
+| ProductModelProductDescription | Link       |
+| SalesOrderDetail               | Hub        |
+| SalesOrderHeader               | Hub        |
 
 #### Load Pattern Tweaks
 
@@ -117,7 +239,7 @@ In the trial process there are abstraction layer views for the dimensional model
 
 Overrides the source SQL Select statement for the object. Can be used to completely override the select statement. This is useful for scenarios where the required select statement is too complex to be built automatically from the rest of the metadata. Since the automatic SQL creation is dynamic and accommodates any changes to the metadata it is recommended to only use the `OverrideSql` functionality when needed.
 
-The `OverrideSql` functionality is not used in the trial process.
+The `OverrideSql` functionality is used in the Culture object in the trial.
 
 `JoinSql`
 
@@ -141,15 +263,15 @@ In the trial process the `GroupBySql` functionality is not used.
 
 #### DataType, Length, Precision and Scale
 
-The source datatype of the column and its length, precision and scale as applicable to the type.
+The source datatype of the column and its length, precision and scale as applicable to the type. For the trial all data types are kept as they are from the import and match the source. For the Data Warehouse the data types are expanded using the Data Type Mappings feature in the next step.
 
 #### Ordinal
 
-The order of the source columns. Is used to order the table definition and select statement.
+The order of the source columns. This is used to order the table definition and select statement. The trial keeps the order of the source.
 
 #### ChangeType
 
-The change type of the column. For source columns, use Key or Type 1. For Dimension attributes, define of the changes are tracked using Type 1 or Type 2 logic.
+The change type of the column. For source columns, use Key or Type 1. For Dimension attributes, define of the changes are tracked using Type 1 or Type 2 logic. Other types are relevant in certain scenarios, but not used in the trial at this stage. Hash Distribution Keys are used in Azure SQL Data Warehouse, Multi Active Keys in Multi Active satellites etc.
 
 #### IsPrimaryKey
 
@@ -179,7 +301,7 @@ Useful for destination Dimension tables where the Primary key is an identity col
 
 Defines if the column is nullable or not.
 
-A general Data Vault recommendation is to treat all incoming attributes as nullable. This allows the data ingestion to succeed regardless of source data quality/nullability.
+A general load recommendation is to treat all incoming attributes as nullable. This allows the data ingestion to succeed regardless of source data quality/nullability.
 
 BimlFlex will automatically apply nullability to all Satellite attribute columns created through the accelerator.
 
@@ -191,13 +313,20 @@ Defines if the column is not persistent and thus not stored in the persistent st
 
 Controls if the column should be completely excluded from the metadata model.
 
-Excluding the column will remove it from the table definitions and the source select query. Use this for any imported columns that have been removed from the source or for any other reason should be excluded from the metadata model.
+Excluding the column will remove it from the table definitions and the source select query. Use this for any imported columns that have been removed from the source, or for any other reason, should be excluded from the metadata model.
 
 #### ModelOverrideName
 
 The Override name to use for the accelerated object.
 
-Use this to translate source column names to business entity names. This will allow the Data Vault to use business names while the source to staging and persistent staging.
+Use this to translate source column names to business entity names. This will allow the Data Vault to use business names while the source to staging and persistent staging uses the source names. It is also possible to set the behaviour of the name overrides so that they are applied to the staging process. In the trial, model override names are applied to the Sales Order source tables:
+
+| Object Name      | ModelOverrideName |
+| ---------------- | ----------------- |
+| SalesOrderHeader | SalesOrder        |
+| SalesOrderDetail | SalesOrderLine    |
+
+This will override the names used in the Data Vault. This exemplifies the naming convenience in BimlFlex.
 
 #### ModelGrouping
 
@@ -207,11 +336,24 @@ Allows a single source table to populate multiple destination Satellites. Breaki
 
 The default naming convention accelerates Satellites with the same name as the primary Hub object. The `SalesLT.Customer` source table is of Object candidate type `Hub` so it will accelerate to a `HUB_Customer` for the Business Key and all attributes will be accelerated to a `SAT_Customer_AWLT`.
 
-For the trial process, add `Pwd` to the `ModelGrouping` column for the `SalesLT.Customer` Objects `PasswordHash` and `PasswordSalt` columns. These 2 columns will be accelerated in to a separate Satellite named `SAT_Customer_Pwd_AWLT`.
+For the trial process, add `Password` to the `ModelGrouping` column for the `SalesLT.Customer` Objects `PasswordHash` and `PasswordSalt` columns. These 2 columns will be accelerated in to a separate Satellite named `SAT_Customer_Password_AWLT`.
 
 This allows the password-related fields to be treated differently with ease.
 
 BimlFlex also employs row compression on different change sets. This means that a change in the `Phone` column will result in a new row in the standard satellite and no change to the `Pwd` Satellite whereas an updated password generates a new row only in the `Pwd` Satellite.
+
+For the Product Source table columns, add ModelGrouping information to the following columns, this will generate 3 satellites from the Product source table. This will be used to illustrate Point In Time tables later in the trial.
+
+| Column Name                            | Model Grouping |
+| -------------------------------------- | -------------- |
+| SalesLT.Product.StandardCost           | Price          |
+| SalesLT.Product.ListPrice              | Price          |
+| SalesLT.Product.ThumbNailPhoto         | Thumbnail      |
+| SalesLT.Product.ThumbnailPhotoFileName | Thumbnail      |
+| SalesLT.Customer.PasswordHash          | Password       |
+| SalesLT.Customer.PasswordSalt          | Password       |
+
+These changes will demonstrate the model grouping feature and accelerate out several Satellites with their own storage options and rate of change management through the BimlFlex row compression feature. It will also allow the creation of Point In Time constructs later.
 
 #### ModelReference
 
@@ -225,17 +367,19 @@ The Data Type Mapping template that should be applied to this column. Used for d
 
 More information: @bimlflex-data-type-mappings
 
+This is applied in the next step of the trial process.
+
 #### DefaultValue
 
-The column default value. Applied on a database table definition level.
+The column default value. Applied on a database table definition level. Not used in the trial process.
 
 #### SqlExpression
 
-A SQL Expression applied to the column in the source query.
+A SQL Expression applied to the column in the source query. This can be used to tweak the SQL query behavior. This is applied to the Customer columns in the derived address objects.
 
 #### SsisExpression
 
-An SSIS Expression applied to the column in a derived column transformation.
+An SSIS Expression applied to the column in a derived column transformation. This can be used to create derived columns using the SSIS derived columns features. It is used by BimlFlex to derive the Business Key contents using the `FlexToBk()` expression for all Business Key columns.
 
 #### IsDerived
 
@@ -247,7 +391,7 @@ Used to define order of operations for dependency chains in derived columns. Use
 
 #### ReferenceTable
 
-A reference from this table to another table. Used to model foreign key constraints. BimlFlex Data Vault accelerator uses these relationships to drive the generation of Link tables.
+A reference from this table to another table. Used to model foreign key constraints. BimlFlex Data Vault accelerator uses these relationships to drive the generation of Link tables. The trial metadata uses the reference table and column information to define all metdata model relationships between entities through their Business Keys.
 
 #### ReferenceColumnName
 
@@ -257,11 +401,11 @@ The referenced column needs to be the primary key of the referenced table.
 
 #### TargetTable
 
-The target table name for source to target mapping. A load project will load this source column to the defined target table.
+The target table name for source to target mapping. A load project will load this source column to the defined target table. This is populated by the Data Vault Accelerator later.
 
 #### TargetColumnName
 
-The target column name for source to target mapping. A load project will load this source column to the defined target column.
+The target column name for source to target mapping. A load project will load this source column to the defined target column. This is populated by the Data Vault Accelerator later.
 
 #### ColumnAlias
 
