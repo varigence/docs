@@ -10,7 +10,7 @@ To minimise the potential waiting period, and if possible, always include the me
 
 ![BimlFlex Debug Utilities -center](images/bimlflex-ss-v5-debug-bimlflex-utility.png "BimlFlex Debug Utilities")
 
-Access the Debug BimlFlex Utility through the BimlFlex Ribbon tab in BimlStudio. It will connect to the current projects BimlFlex metadata database.
+Access the `Debug BimlFlex Utility` dialog through the `Debug Utilities` button in the BimlFlex Ribbon tab in BimlStudio. It will connect to the current projects BimlFlex metadata database.
 
 Choose the relevant Customer and Version.
 
@@ -18,6 +18,6 @@ Check the `Include Project Folder in Zip` to also add the project files and exte
 
 Check the Obfuscate options to obfuscate keys and passwords from the database connections and settings.
 
-Remove any other sensitive information before sending through email.
+Remove any other sensitive information before sending through email. Contact the BimlFlex enterprise support team if a secure upload link is needed due to size or security concerns.
 
 Saving the metadata to file creates a zip file that can be sent to the BimlFlex enterprise support team.
