@@ -11,6 +11,7 @@ For Varigence to be able to provide the best possible support for issues encount
 ## Creating a support case
 
 BimlFlex support is provided through a dedicated email address:
+
 [bimlflex-support@varigence.com](mailto:bimlflex-support@varigence.com)
 
 The BimlFlex Support team will communicate as appropriate to resolve issues. Reply to the ticket email to update the ticket.

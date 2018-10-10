@@ -20,8 +20,8 @@
   href: building-databases-tables-and-ssis-packages-for-source-to-staging.md
 - name: Configurations and Settings
   href: configuration-and-settings-in-bimlflex.md
-- name: Modelling of Source Metadata
-  href: modelling-of-source-metadata.md
+- name: Modeling of Source Metadata
+  href: modeling-of-source-metadata.md
 - name: Applying Data Type Mappings
   href: applying-data-type-mappings.md
 - name: Building Business Keys for Data Vault

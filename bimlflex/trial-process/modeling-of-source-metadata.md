@@ -1,24 +1,24 @@
-# Modelling of Source Metadata
+# Modeling of Source Metadata
 
 ## Supporting Videos
 
-![Modelling of source Metadata](https://www.youtube.com/watch?v= TODO ?rel=0&autoplay=0)
+![Modeling of source Metadata](https://www.youtube.com/watch?v= TODO ?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
 - @bimlflex-user-guide
 
-## Modelling of source Metadata
+## Modeling of source Metadata
 
 Once the source system metadata has been imported in to BimlFlex it is possible to model it in the Excel-based metadata management application.
 
-Modelling through metadata management is the way to tweak the process to match ingestion and business requirements and allows BimlFlex to automatically generate the required SQL structures and SSIS packages for the ETL process.
+Modeling through metadata management is the way to tweak the process to match ingestion and business requirements and allows BimlFlex to automatically generate the required SQL structures and SSIS packages for the ETL process.
 
-for a Data Vault based project, modelling the source metadata also affect the Accelerator behavior and the resulting Data Vault model.
+for a Data Vault based project, modeling the source metadata also affect the Accelerator behavior and the resulting Data Vault model.
 
 ## Detailed Steps
 
-The following detailed steps walks through the options for modelling of source Metadata as recommended for the trial
+The following detailed steps walks through the options for modeling of source Metadata as recommended for the trial
 
 ### Reviewing keys
 
@@ -32,11 +32,11 @@ A Primary Key is used to define the grain of the table, same way as a primary ke
 
 A source table can have multiple columns in the Primary Key definition.
 
-A Business Key is the key describing the business entity stored in the table. It is used in Data Vault modelling to describe the Core Business Concept or Enterprise Wide Business Key candidate that will be used to model and load Hubs. The Business Key can be the same as the Primary Key or it can be derived from a combination of attributes. The Business Key is always a string representation so the default creation behavior in BimlFlex is to apply the `FlexToBk()` expression to convert the source column data types to a string. The import metadata function can derive a Business Key from either the Primary Keys or the Unique Constraints from the source.
+A Business Key is the key describing the business entity stored in the table. It is used in Data Vault modeling to describe the Core Business Concept or Enterprise Wide Business Key candidate that will be used to model and load Hubs. The Business Key can be the same as the Primary Key or it can be derived from a combination of attributes. The Business Key is always a string representation so the default creation behavior in BimlFlex is to apply the `FlexToBk()` expression to convert the source column data types to a string. The import metadata function can derive a Business Key from either the Primary Keys or the Unique Constraints from the source.
 
-An Alternate Business Key is used as a backup of the source Primary Key when the primary key definition needs to be changed in the modelling process. If there are Primary Key columns defined as derived columns that aren't persisted into the Persistent Staging layer BimlFlex will use the Alternate Business Key instead. This is the normal approach for a Data Vault model.
+An Alternate Business Key is used as a backup of the source Primary Key when the primary key definition needs to be changed in the modeling process. If there are Primary Key columns defined as derived columns that aren't persisted into the Persistent Staging layer BimlFlex will use the Alternate Business Key instead. This is the normal approach for a Data Vault model.
 
-For the trial process using a Data Vault destination layer and using the Accelerator to accelerate the Data Vault objects, the source modelling will use the Business Keys to define the relationships. This allows the Accelerator to derive all Hubs, Links and Satellites based on the source metadata and the Business Key definitions used as well as their relationships.
+For the trial process using a Data Vault destination layer and using the Accelerator to accelerate the Data Vault objects, the source modeling will use the Business Keys to define the relationships. This allows the Accelerator to derive all Hubs, Links and Satellites based on the source metadata and the Business Key definitions used as well as their relationships.
 
 In the `Import Metadata` dialog, the option to redefine relationships based on Business Keys was used. This has created a Main Business Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint an additional Business Key has been created. The related table and column data has been set between these Business Keys and the related main Business Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Business Keys without additional configuration.
 
@@ -49,7 +49,7 @@ For the trial process, the default Data Type Mappings will be added in the next 
 
 ### Defining Business Keys
 
-Defining Business Keys to use for Data Vault modelling is a Business Analysis phase in the implementation. finding the correct Business Key definition relies on business process and source system knowledge as well as source system data profiling. For true cross-system key matching in Data Vault, extensive analysis across all candidate sources is normally needed. Defining the actual Business Key is a more straightforward exercise. For a given source table there can be only one main Business Key column. For scenarios with multiple source keys, these columns are concatenated with a separator character to build a single Business Key. This maps to the Business Key column in the Data Vault Hub tables and allows the Data Vault model to adhere to the pattern.
+Defining Business Keys to use for Data Vault modeling is a Business Analysis phase in the implementation. finding the correct Business Key definition relies on business process and source system knowledge as well as source system data profiling. For true cross-system key matching in Data Vault, extensive analysis across all candidate sources is normally needed. Defining the actual Business Key is a more straightforward exercise. For a given source table there can be only one main Business Key column. For scenarios with multiple source keys, these columns are concatenated with a separator character to build a single Business Key. This maps to the Business Key column in the Data Vault Hub tables and allows the Data Vault model to adhere to the pattern.
 
 BimlFlex provides an expression to concatenate and separate columns into the Business Key using the `FlexToBk(@@rs, Column1, Column2, Column3)` function. This can be applied in SSIS for SSIS load patterns and in SQL for SQL patterns. The trial uses the SSIS pattern and will implement the expression in a derived column in the generated SSIS packages.
 
@@ -96,7 +96,7 @@ In the trial process, 2 inherited objects are defined and loaded in parallel to 
 
 The Customer Address information in the AdventureWorksLT source is mapped through the many to many `SalesLT.CustomerAddress` table. This can be modelled as a Link relationship between The Customer and the Address entities. Either with a Link Satellite or as a Hub-Satellite in combination with the Link.
 
-Another option from a modelling perspective is to view the address information as attributes attached to the Customer. This will create a less complex model with the address data instantiated as satellites attached to the Customer. The design decisions are a core part of the Data Vault process and depends on a range of considerations for Business Process, source data behavior and more. In the trial two different approaches are illustrated and loaded in parallel. Both the Link relationship based on the source data model and the attached attributes model based on associating the address data directly with a customer.
+Another option from a modeling perspective is to view the address information as attributes attached to the Customer. This will create a less complex model with the address data instantiated as satellites attached to the Customer. The design decisions are a core part of the Data Vault process and depends on a range of considerations for Business Process, source data behavior and more. In the trial two different approaches are illustrated and loaded in parallel. Both the Link relationship based on the source data model and the attached attributes model based on associating the address data directly with a customer.
 
 Add metadata details for the inherited tables to create two new entities.
 
@@ -243,7 +243,7 @@ The `OverrideSql` functionality is used in the Culture object in the trial.
 
 `JoinSql`
 
-the `JoinSql` function allows the addition of join statements to the generated source query. This is useful for gathering additional data into the query, either for adding columns or for allowing additional filter conditions. A common use case is for Business Keys to be joined in when modelling a Data Vault on Business Keys rather than technical keys.
+the `JoinSql` function allows the addition of join statements to the generated source query. This is useful for gathering additional data into the query, either for adding columns or for allowing additional filter conditions. A common use case is for Business Keys to be joined in when modeling a Data Vault on Business Keys rather than technical keys.
 
 In the trial process there are 2 derived tables that use the `JoinSql` function to derive different types of addresses and maintaining them as separate entities in the staging layer and Data Vault.
 
