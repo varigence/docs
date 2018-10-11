@@ -10,3 +10,21 @@
 <script type="text/javascript" src="{{_rel}}styles/docfx.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/main.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/mermaid.min.js"></script>
+
+<script type="text/javascript" src="{{_rel}}styles/main.js"></script>
+
+<script type="text/javascript">
+(function() {
+    jQuery(function() {
+    $("code", document.body).each(function() {
+        var preElement = $(this).parent();
+        preElement.text($(this).text());
+        preElement.addClass("brush: bimlScript");
+        $(this).remove();
+    });});
+}).call(this);
+</script>	
+
+<script type="text/javascript" src="{{_rel}}styles/shCore.js"></script>
+<script type="text/javascript" src="{{_rel}}styles/shBrushBimlScript.js"></script>
+<script type="text/javascript" src="{{_rel}}styles/apply-syntax-highlighter-brush.js"></script>

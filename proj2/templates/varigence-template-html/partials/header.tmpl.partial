@@ -10,10 +10,12 @@
         <li id="mobile-icon-search"><img class="header-search-icon" src="/content/images/icons/search.png"></li>
 
         <div class="logo-link">
-            <a href="/">
+            <a href="//varigence.com">
                 <img id="site-logo" src="/content/images/varigence-icon.png" alt="Varigence">
             </a>
-    <div style="font-size: 25px;float: left;margin-top: 7px;margin-left: 10px;">Docs</div>
+			<a href="/">
+                <div style="font-size: 25px;float: left;margin-top: 7px;margin-left: 10px;">Docs</div>
+	        </a>
         </div>
 <!--
         <div id="mobile-search-area">
