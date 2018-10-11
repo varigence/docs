@@ -38,3 +38,5 @@ In addition to the support here, we have developed a community at [Bimlscript.co
 ![BimlFlex -h38px](content/images/bimlflex.png)
 
 * [BimlFlex User Guide](bimlflex/index.md)
+* [Metadata Reference](bimlflex/user-guide/metadata-entity-definitions.md)
+* [Extension Points](bimlflex/user-guide/extension-point-definitions.md)
