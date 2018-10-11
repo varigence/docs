@@ -4,23 +4,81 @@ name: BimlFlex Release Notes
 ---
 # Release Notes
 
-## BimlStudio 2018.1 Note
+> [!NOTE]
+> Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
+> Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
+
+## Bundle 63408
+
+* Add: new validator to check Data Mart objects and projects. For a Data Mart load the mapped objects needs to be in the same project. If table/view `sourceForFactTable` has source to target mappings to load to `FactTable` then both these objects needs to be part of the same project (such as project `Load_DataMart`). This is enforced to ensure that multiple load processes are properly separated in BimlFlex.
+* Update: to the end dating logic for SSIS PSA loads to allow multiple loaded updates to be end dated efficiently.
+* Update: added additional Batch logic to separate multiple Batches in projects with multiple sources into separate Batch packages for Azure SQL Data Warehouse loads. The new Batch name will include the Connection Record Source (`BFX_LOAD_RDV_Batch` -> `BFX_LOAD_RDV_AWLT_Batch`). This allows multiple sources to be maintained within the same Project/Batch metadata even if there are object name duplications.
+
+## Bundle 63403
+
+* Update: Fix issue with `UPPER()` logic in `DataVault` SSIS to accommodate nested `FlexToBk()` columns, especially on Link Reference columns.
+* Update: Fix inline file source column conversion when using `ColumnAlias`, `SsisExpression` with `DatatypeMapping`.
+* Add: Configure batch name to include `AppendBatchName` configuration to front of `ELT` SQL batches to allow additional naming convention.
+
+## Bundle 63328
+
+* Update: an issue in the BimlFlex database resulting in errors when pushing projects when `Use My Exclusions` was set has been fixed.
+* Update: Removed superfluous `n` from SQLDW stored procedure.
+* Update: Fix `UPPER()` from `SsisExpression` when Link hash key is derived from `FlexToBk()`.
+
+## Bundle 63318
+
+* Update: The BimlFlex database sample metadata created connections with the character `N` in the provider field. This is not a valid provider for the sample metadata and has been removed in this build. Any existing projects based on the sample metadata with this character as provider should be updated and the `N` removed.
+
+## Bundle 63317
 
 > [!WARNING]
-> BimlStudio 2018 can deploy and update BimlFlex and BimlCatalog databases for SQL Server up to 2016. For customers with databases on SQL Server 2017, we currently recommend deploying and upgrading through the BimlFlex Utility Application. Please email bimlflex-support@varigence.com to get a copy.
+> This bundle require a BimlStudio build greater than `Build 5.0.63175.0` and updated BimlCatalog and BimlFlex databases.
 
-## Bundle TBA
-
+* Add: `ModelGrouping` to DataVault Accelerator. Please read this blog post for more information: [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
+* Add: Support for Data Vault `Same As` and `Hierarchy` Links in the `ModelObjectType`, including the ability to specify naming convention in the Settings using `DvAppendSameAsLink` and `DvAppendHierarchyLink`
+* Add: Support for `Snowflake` SRC - STG - PSA including an SSIS Custom Task. This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use.
+* Add: `GROUP BY` clause to `Hub` and `Link` lookups to return unique list when used with `ApplyLookupFilterRdv = "Y"`
+* Add: Functionality to support file source in line expressions. You can now use `SsisExpression` like `REPLACENULL(RAW_@@this, "")` with `ColumnAlias` set to `RAW_@@this` and `DataTypeMapping` like `String(20)`
+* Add: Extension Points `StagingTargetPipeline`, `SourceFileArchiveOverride` and `SourceErrorHandling` to provide greater flexibility when loading flat files
 * Add: static package ID's to all generated SSIS packages. The package id is normally generated dynamically by the SSIS build process. By adding a static ID it is easier to track actual changes to packages.
+* Update: Remove `RowHash` from `Change Data Capture` and `Change Tracking` staging tables to reduce table size
+* Update: Extension Point `DwhSourceOverride` and `RdvSourceOverride` to allow additional flexibility to the Data Mart and Data Vault process.
+* Update: Extension Point `DwhTargetPipelinePre`, `DwhTargetPipelinePost`, `RdvTargetPipelinePre` and `RdvTargetPipelinePost` to allow additional flexibility to the Data Mart and Data Vault process.
+* Update: Extension Point `DwhType2Pipeline` to allow additional flexibility to the Data Mart process.
+* Update: Extension Point `DwhType1Pipeline` to allow additional flexibility to the Data Mart process.
+* Update: Extension Point `DwhInsertPipeline` to allow additional flexibility to the Data Mart process.
+* Add: Extension Points to provide additional flexibility. `StagingTargetPipeline`, `PersistentTargetPipeline`, `StagingInitialTargetPipeline` and `PersistentInitialTargetPipeline`
+* Add: Extension Points target `@@global` to `PackageVariable` and `BatchVariable`
+* Add: Extension Point `DataFlowProperties` and allowing `@@global` target
+* Update: Fix `Change Data Capture` Data Vault Satellite load with `RowChangeType` for `Deletes`
+* Update: Fix Error in Batch when multiple sources are mapped to the same target using ELT stored procedures.
+* Add: Static DTSID to all connection managers based on the `[ConnectionUID]`
+* Add: `UseGETUTCDATE` configuration to BimlCatalog. This allows configuration of orchestration times to be specified in UTC time zone or the local time zone of the database.
+* Update: the `ExcludeFromBuild` and `ExcludeFromValidation` has been removed from the `Connections` and `Projects` metadata.
+* Update: a scenario in the BimlFlex Excel metadata management tool where filtered rows were included in selection when archiving, refreshing and cloning selection has been updated to the expected behavior
+* Update: a scenario where the BimlFlex Metadata Importer was not importing when current selection was outside the Objects and Columns table has been updated to the expected behavior
+* Update: the BimlFlex Excel metadata management tool is now applying Cell format `TEXT` to Default columns so that contents identified as dates are not reformatted to internal Excel numbers
+* Update: remove redundant Import Options for BimlFlex metadata import
+* Update: add additional logic to `TableFilter` and `SchemaFilter` in metadata import to ensure updates are managed as expected
+* Add: additional `Clone Table` target object type options to the Excel metadata management tool
+* Add: support for `Proper_Case` in naming conventions in the Excel metadata management tool import metadata options
+
+> [!Note]
+> Behavior change - this bundle delegates the model object type definition task to the modeler. Review the destination logical model and the source system relationships and update the `ModelObjectType` definition of object based on that. Previous releases used technical analysis of the source to prepopulate choices other than Hub.
+
+> [!WARNING]
+> Breaking change in feature.
+> Update: Rename Object Extension Point `Connection` to `PackageAddConnection`. Please search your project for `extensionpoint="Connection"` and replace it with `extensionpoint="PackageAddConnection"`
 
 ## Bundle 63217
 
-* Update: fixed an LSAT IsDrivingKey Source select issue for multiple Driving Key columns not being a properly comma separated list
-* Update: Data Vault accelerator now properly uses the `RowHashKey` configuration data type for relevant columns
-* Update: Point In Time and Bridge tab les now properly use their defined schema
+* Update: Fixed an LSAT IsDrivingKey Source select issue for multiple Driving Key columns not being a proper comma separated list
+* Update: Data Vault accelerator now uses the `RowHashKey` configuration data type for relevant columns
+* Update: Point In Time and Bridge tables now use their specified schema
 * Update: `ExcludeFromBuild` flag now does not affect or exclude target objects
-* Update: updated the support for BDV and Data Mart lookups when the Primary Key is not defined as an identity column
-* Add: additional configuration for constraint mode for database layers: `ConstraintModeStg`, `ConstraintModeDv`, `ConstraintModeDm` to allow control of the creation of constraint for tables. Valid choices are: `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`
+* Update: Support for BDV and Data Mart dimension smart keys when the Primary Key is not defined as an identity column. For scenarios where the Dimension Primary Key is not an identity column, derive the smart key in to the fact load and the process will use this key without doing a dimension surrogate key lookup.
+* Add: Configuration for constraint mode for database layers that will toggle table references: `ConstraintModeStg`, `ConstraintModeDv`, `ConstraintModeDm` to allow control of the creation of constraint for tables. Valid choices are: `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`
 
 ## Bundle 63130
 
@@ -46,7 +104,7 @@ name: BimlFlex Release Notes
 Update: Data Vault `REF` primary key now includes the `EffectiveFromDate` column
 Update: PSA INIT loads no longer derive Data Type mappings again
 Update: `IsInitialLoad` precedence constraint updated.
-Add: support for `SourceProperty` by Batch
+Add: Support for `SourceProperty` by Batch
 Update: Derived Hubs from Links (to same Hub) no longer use same BK for second hub
 
 ## Bundle 63018
@@ -196,7 +254,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 ## Bundle 80212
 
 * Fix: Update to Same As Link to derive both Hub sides
-* Add `CONVERT` to SourceQuery to accommodate SQL Server and Polybase Maximum DMS row size limitations
+* Add `CONVERT` to SourceQuery to accommodate SQL Server and PolyBase Maximum DMS row size limitations
 * Fix: Removed Link Surrogate Keys from External Table definitions
 * Added initial support to auto-generate SSDT projects for all SQL artefacts
 
@@ -334,7 +392,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Updates to BimlCatalog Orchestration to use Project Name when logging to accommodate duplicate package names
 * Added `ApplyLookupFilterRdv` to filter SSIS lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This cross database join functionality requires the databases to be co-located or the tables to be in the same database
 * Added Lookup Filter for Surrogate Key Dimensional `LookupSql`
-* Added Foreign Keu Lookups for dimension surrogate key lookups
+* Added Foreign Key Lookups for dimension surrogate key lookups
 * Updates to `RowCount` SSIS Custom Component logic to add aggregate columns for source queries
 * Added `RowCountSum` to the Metadata model and Add-in drop down for `CustomAttributes`
 * Added validator to check that multiple source columns from a single source table aren't mapped to the same destination column
@@ -450,7 +508,7 @@ They now require `sourceTable` and `destinationTable` definitions
 ### Extension Points
 
 * Added `PreSql` and `PostSql` Extension Points. This allows for easier custom definitions for SQL scripts, such as for injecting compression definitions into table create scripts
-* Fixed issue with PIT ExtensionPoint for `LagSql`
+* Fixed issue with PIT Extension Point for `LagSql`
 
 ### DataTypeMappings
 

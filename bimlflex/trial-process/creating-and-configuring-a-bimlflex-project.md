@@ -32,8 +32,6 @@ The following detailed steps walks through the creation of a BimlFlex project.
 The previous steps in the trial process needs to have been completed. This includes:
 
 - The latest version of BimlStudio and BimlFlex are installed.
-- The BimlFlex Utility Application has been used to create the BimlFlex and BimlCatalog Databases.
-- The BimlFlex Utility Application has been used to update the Bundle File in the installation folders.
 
 ### Start BimlStudio
 
@@ -43,9 +41,15 @@ When BimlStudio is started there is an option to create a new BimlFlex project.
 
 Click the Create BimlFlex project button to create a new project. Enter a valid location for the project and name it `BimlFlex Trial Project`.
 
-### Define Metadata Connection
+### Create BimlFlex databases
 
-Define the connection and login information to the BimlFlex metadata database to use. This database was created using the Utility Application.
+Create the BimlFlex and BimlCatalog databases by clicking the `Setup BimlFlex Databases` in the Bundle page.
+
+Specify connection strings and names for the databases and click `Deploy`.
+
+### Review Metadata Connection
+
+Review the connection and login information to the BimlFlex metadata database. It should point to the BimlFlex database.
 
 ### Create Metadata Customer
 
@@ -55,7 +59,7 @@ In the BimlFlex configuration, create a new Customer and name it `BimlFlex Trial
 
 Right-click the project name `BimlFlex Trial Project.mst` in the logical view and choose properties to display the BimlStudio project properties. Update the SQL Server version setting to build out to the correct SQL Server version.
 
-For the `DDL Build Mode` setting, change the default `SsisPackages` to `None`. BimlStudio creates SSIS Projects and packages to create all databases, schemas and tables by default. Since BimlFlex uses either the Generate Scripts function or the separately created SSDT Project, these automatically generated projects are not needed.
+For the `DDL Build Mode` setting, change the default `SsisPackages` to `None`. BimlStudio normally creates SSIS Projects and packages to create all databases, schemas and tables by default. Since BimlFlex uses either the Generate Scripts function or the separately created SSDT Project, these automatically generated projects are not needed.
 
 Click the `Save All` button or menu option to save the metadata and project settings.
 
@@ -67,10 +71,12 @@ BimlStudio needs to be restarted once the customer metadata settings and SSIS co
 
 Once BimlStudio has restarted, navigate to the BimlFlex Tab and click the `Excel Metadata Editor` button to start the Excel Metadata Editor.
 
-If this is the first time the BimlFlex Excel Metadata Editor is opened, enter the license key in the activation dialog. The trial license key is included in the trial email.
+If this is the first time the BimlFlex Excel Metadata Editor is opened, enter the license key in the activation dialog. The trial license key is included in the trial information email.
 
-Once opened, configure the metadata connection to point to the Trial Project. Click the `Metadata Connection` button in the BimlFlex ribbon UI and enter the connection information to the BimlFlex metadata database. Specify the created Customer and Version.
+Once opened, configure the metadata connection to point to the Trial Project. Click the `Metadata Connection` button in the BimlFlex ribbon UI and enter the connection information to the BimlFlex metadata database. Specify the Customer and Version created above.
 
 Click the `Get All Entities` button in the BimlFlex ribbon to query the repository for the latest metadata set. The first time a request is sent to an empty customer BimlFlex allows creation of sample metadata. Click `Create Sample` to create the sample metadata.
+
+Review the sample metadata in the `Connections`, `Batches` and `Projects` sheets.
 
 Save the Excel file to save the connection information for next time.

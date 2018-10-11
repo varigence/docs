@@ -1,17 +1,16 @@
-
+---
+uid: bimlflex-extension-point-definitions
+title: BimlFlex Extension Point Definitions
+---
 
 # Extension Point Overview
-TODO: Add content here
 
+The usage of Extension Points is described in the @bimlflex-extension-points documentation
 
 ## BimlFlex Extension Points
-TODO: Add content here
 
-		
 
-		
 ## Global
-
 
 
 
@@ -21,17 +20,17 @@ Internal Global Extension Point that control environment settings. This has been
 #### Outputs
 | Name | Type | Description |
 |------|------|-------------|
-| CustomerUID | GUID | XXXX |
-| Version | String | XXXX |
-| Server | String | XXXX |
-| Database | String | XXXX |
-| UseWindowsAuthentication | Boolean | XXXX |
-| Provider | String | XXXX |
-| UserId | String | XXXX |
-| Password | String | XXXX |
-| IsUserConnectionMode | Boolean | XXXX |
-| IsUserMode | Boolean | XXXX |
-| IsQuickParse | Boolean | XXXX |
+| CustomerUID | GUID | The Customer UID to use for the metadata connection |
+| Version | String | The Version Name to use for the metadata connection |
+| Server | String | The Server Name to use for the metadata connection |
+| Database | String | The Database Name of the metadata database |
+| UseWindowsAuthentication | Boolean | Should the metadata connection use Windows Authentication |
+| Provider | String | Connection Provider to use |
+| UserId | String | SQL Authentication User Id |
+| Password | String | SQL Authentication Password |
+| IsUserConnectionMode | Boolean | Should User Connection Mode be used |
+| IsUserMode | Boolean | Should User Mode be used |
+| IsQuickParse | Boolean | Should Quick Parse be used |
 
 #### Sample Code
 ```biml
@@ -52,9 +51,7 @@ CustomOutput.IsQuickParse = GetBundleSetting("BimlFlex.bimlb", null, "IsQuickPar
 #>
 ```
 
-		
 ## Project
-
 
 
 
@@ -72,7 +69,6 @@ Add additional parameters to Project
 <Parameter Name="UserName" DataType="String" IsRequired="true">varigence</Parameter>
 <Parameter Name="UserPassword" DataType="String" IsRequired="true">P@ssw0rd!</Parameter>
 ```
-
 
 ### Project Script File
 Add a ScriptTask or ScriptComponent to the Project
@@ -126,9 +122,7 @@ public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTAR
 </ScriptTaskProject>
 ```
 
-		
 ## Connection
-
 
 
 
@@ -152,9 +146,7 @@ Configure Expressions for a Connection
 </Expressions>
 ```
 
-		
 ## Batch
-
 
 
 
@@ -178,7 +170,6 @@ Configure parameter bindings for Package Execute Package Task
 </ParameterBindings>
 ```
 
-
 ### Batch Variable
 Configure additional variables for the Batch or override default BimlFlex variables.
 
@@ -195,7 +186,6 @@ Configure additional variables for the Batch or override default BimlFlex variab
 <!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/Element/AstVariableNode -->
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>
 ```
-
 
 ### Batch Package Configurations
 Add PackageConfigurations if you have unselected Use Project Deployment
@@ -223,7 +213,6 @@ Configurations can also be added to the Batch using the PackageConfigurations co
 </PackageConfiguration>
 ```
 
-
 ### Batch Connection
 Configure additional Connection references to the batch package
 
@@ -241,7 +230,6 @@ Configure additional Connection references to the batch package
 <!-- Note that the connection must be a valid connection defined using BimlFlex connection metadata. Connections can also be added manually in BimlStudio if required. -->
 <Connection ConnectionName="MY_SOURCE" />
 ```
-
 
 ### Batch Pre Process
 Configure logic that will be injected before the main Batch process
@@ -274,7 +262,6 @@ Configure logic that will be injected before the main Batch process
 	</Tasks>
 </Container>
 ```
-
 
 ### Batch Post Process
 Configure logic that will be injected after the main Batch process
@@ -311,9 +298,7 @@ Configure logic that will be injected after the main Batch process
 </Container>
 ```
 
-		
 ## Object
-
 
 
 
@@ -340,7 +325,6 @@ Configure additional package variables or override default BimlFlex variables
 <Variable Name="TenantCode" DataType="String">UNK</Variable>
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>
 ```
-
 
 ### Package Configurations
 Add PackageConfigurations if you have unselected Use Project Deployment
@@ -370,7 +354,6 @@ configurationPath = string.IsNullOrEmpty(configurationPath) ? @"C:\Varigence\Con
 </PackageConfiguration>
 ```
 
-
 ### Package Parameter
 Configure parameter bound values to the package
 
@@ -389,7 +372,6 @@ Configure parameter bound values to the package
 <Parameter Name="BatchId" DataType="String"></Parameter>
 <Parameter Name="BatchInstanceId" DataType="String">0</Parameter>
 ```
-
 
 ### Package Add Connection Reference
 Configure additional Connection references to the object package
@@ -413,7 +395,6 @@ Configure additional Connection references to the object package
 <#* 	CustomOutput.ObjectInherit = true; *#>
 <Connection ConnectionName="MY_SOURCE" />
 ```
-
 
 ### Create Sql
 Configure override Create DDL for a object
@@ -474,7 +455,6 @@ IF NOT EXISTS (
 GO
 ```
 
-
 ### Pre Create Sql
 Configure Sql that will be executed prior to the Create DDL for a object
 
@@ -491,7 +471,6 @@ Configure Sql that will be executed prior to the Create DDL for a object
 ALTER TABLE [awlt].[Account] DROP CONSTRAINT [PK_awlt_Account] WITH ( ONLINE = OFF )
 GO
 ```
-
 
 ### Post Create Sql
 Configure Sql that will be executed after the Create DDL for a object
@@ -513,7 +492,6 @@ ALTER TABLE [awlt].[Account] ADD  CONSTRAINT [PK_awlt_Account] PRIMARY KEY CLUST
 ) ON [PRIMARY]
 GO
 ```
-
 
 ### Source Create Sql
 Configure override Create DDL for a source object like a view.
@@ -582,7 +560,6 @@ INNER JOIN [aw].[SalesLT_ProductCategory] AS pc
 WHERE pmx.[Culture] = 'en'
 ```
 
-
 ### Override Sql
 Override the source query SQL generated by BimlFlex
 
@@ -604,7 +581,6 @@ SELECT DISTINCT [PropertyId]
 	,CONVERT(INT, ISNULL([MemberId], - 1)) AS [MemberId]
 FROM [dbo].[MyTable]
 ```
-
 
 ### Root Add
 Add element to the root of the BimlFlex project
@@ -644,7 +620,6 @@ The example below demonstrates adding the required connection and file format.--
 </FileFormats>
 ```
 
-
 ### Override Main
 Completely override the main Dataflow (SEQC - Main)
 
@@ -675,7 +650,6 @@ Completely override the main Dataflow (SEQC - Main)
 </Tasks>
 ```
 
-
 ### Override Initialize
 Override the initializing of staging tables
 
@@ -696,7 +670,6 @@ Override the initializing of staging tables
 	<DirectInput>DELETE FROM [dbo].[MyTable] WHERE [TenantCode] <> 'UNK'</DirectInput>
 </ExecuteSQL>
 ```
-
 
 ### Override Merge
 Override the Merge statement of target tables
@@ -741,7 +714,6 @@ WHEN NOT MATCHED BY TARGET
 			);
 ```
 
-
 ### Dataflow Properties
 Configure logic that will be inject 
 
@@ -765,7 +737,6 @@ Configure logic that will be inject
 <Expression ExternalProperty="SsisBufferTempStoragePath">@[User::SsisBufferTempStoragePath]</Expression>
 <Expression ExternalProperty="SsisBLOBTempStoragePath">@[User::SsisBLOBTempStoragePath]</Expression>
 ```
-
 
 ### Pre Dataflow
 Configure logic that will be injected before the main Dataflow
@@ -812,7 +783,6 @@ Configure logic that will be injected before the main Dataflow
 </ExecuteSQL>
 ```
 
-
 ### Post Dataflow
 Configure logic that will be injected after the main Dataflow
 
@@ -852,7 +822,6 @@ Configure logic that will be injected after the main Dataflow
 </ExecuteSQL>
 ```
 
-
 ### Pre Process
 Configure logic that will be injected before the main Object process
 
@@ -890,7 +859,6 @@ Configure logic that will be injected before the main Object process
 </Container>
 ```
 
-
 ### Post Process
 Configure logic that will be injected after the main Object process
 
@@ -919,7 +887,6 @@ Configure logic that will be injected after the main Object process
 	</Parameters>
 </ExecuteSQL>
 ```
-
 
 ### Get Parameter
 Configure override to retrieve parameter values
@@ -965,7 +932,6 @@ Configure override to retrieve parameter values
 <#	} #>
 ```
 
-
 ### Set Parameter
 Configure override to publish parameter values
 
@@ -1007,7 +973,6 @@ Configure override to publish parameter values
 <#	} #>
 ```
 
-
 ### Source Override
 Configure override for the Object source transformation node
 
@@ -1040,7 +1005,6 @@ Configure override for the Object source transformation node
 </OleDbSource>
 ```
 
-
 ### Source Sql
 Configure override for the Object Source Sql
 
@@ -1062,7 +1026,6 @@ Configure override for the Object Source Sql
 "EXECUTE [dbo].[MyProcedure] @MyParameter = '" + @[User::MyParameter] + "'"
 ```
 
-
 ### Source Parameter
 Configure parameters for the Object source transformation node
 
@@ -1081,7 +1044,6 @@ Configure parameters for the Object source transformation node
 <Parameter Name="Parameter0" VariableName="User.LastModifiedDate" />
 <Parameter Name="Parameter1" VariableName="User.CurrentModifiedDate" />
 ```
-
 
 ### Source Pipeline
 Configure pipeline logic that will be injected after the source transformation node
@@ -1118,6 +1080,71 @@ Configure pipeline logic that will be injected after the source transformation n
 </DataConversion>
 ```
 
+### Source Error Handling
+Configure pipeline logic that will be injected on error of the source transformation node
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added |
+| inputPath | String | Contains the output path of the preceding task |
+#### Outputs
+| Name | Type | Description |
+|------|------|-------------|
+| ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the ExtensionPoint will be applied to all the Objects associated with the batch. |
+
+#### Sample Code
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceErrorHandling" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="inputPath" type="String" #>
+
+<!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/ChildCollection/AstDataflowTaskNode/Transformations -->
+<!-- For examples and additional resources please also refer to http://bimlscript.com/ -->
+<!-- This can be any anything defined within the Ssis DataFlow. -->
+<# 	CustomOutput.ObjectInherit = false; #> 
+<DataConversion Name="DCV - Convert MyColumn">
+	<Input OutputPathName="<#=inputPath #>" />
+	<Columns>
+		<Column SourceColumn="MyColumn" TargetColumn="cnv_MyColumn" DataType="String" Length="100" />
+	</Columns>
+</DataConversion>
+```
+
+### Source File Archive Override
+Configure control flow logic that will override the SC_FILE_ARCHIVE script task call. You might also need to add a ProjectScriptFile.
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| table | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+| precedenceConstraint | String | Contains the Precedence Constraint of the preceding task unless it is the first task |
+#### Outputs
+| Name | Type | Description |
+|------|------|-------------|
+| OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next Dataflow task. |
+
+#### Sample Code
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceFileArchiveOverride" #>
+<#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="precedenceConstraint" type="String" #>
+
+<FileSystem Name="FST - YOUR FILE ARCHIVE" Operation="MoveFile" OverwriteDestination="true">
+<#	if (!string.IsNullOrEmpty(precedenceConstraint)) {#>
+	<PrecedenceConstraints>
+		<Inputs>
+			<Input OutputPathName="<#=precedenceConstraint #>" />
+		</Inputs>
+	</PrecedenceConstraints>
+<#	} #>
+	<VariableOutput VariableName="User.ArchivePath" />
+	<VariableInput VariableName="User.SourceFullFilePath" />
+	<# 	CustomOutput.OutputPathName = @"FST - YOUR FILE ARCHIVE.Output"; #>	
+</FileSystem>
+```
 
 ### Source Property
 Configure additional properties that will be added to source transformation node
@@ -1141,7 +1168,6 @@ Configure additional properties that will be added to source transformation node
 BindCharColumnAs="true" ExposeCharColumnsAsUnicode="false"
 ```
 
-
 ### Source File Loop Expression
 Configure expressions that will be added to source ForEachFileLoop transformation
 
@@ -1163,7 +1189,6 @@ Configure expressions that will be added to source ForEachFileLoop transformatio
 <#	CustomOutput.ObjectInherit = false; #>
 <Expression PropertyName="Directory">@[$Project::ImportPath]</Expression>
 ```
-
 
 ### Staging Target Pipeline
 Configure pipeline logic that will be injected into the source to staging package before the Staging target destination node
@@ -1198,7 +1223,6 @@ Configure pipeline logic that will be injected into the source to staging packag
 </DataConversion>
 ```
 
-
 ### Persistent Staging Target Pipeline
 Configure pipeline logic that will be injected into the source to staging package before the Persistent Staging target destination node
 
@@ -1231,7 +1255,6 @@ Configure pipeline logic that will be injected into the source to staging packag
 <# 	CustomOutput.OutputPathName = @"DCV - Convert MyColumn.Output"; #>	
 </DataConversion>
 ```
-
 
 ### Staging Initial Target Pipeline
 Configure pipeline logic that will be injected into the source to staging package before the Staging Initial target destination node
@@ -1266,7 +1289,6 @@ Configure pipeline logic that will be injected into the source to staging packag
 </DataConversion>
 ```
 
-
 ### Persistent Staging Initial Target Pipeline
 Configure pipeline logic that will be injected into the source to staging package before the Persistent Staging Initial target destination node
 
@@ -1300,7 +1322,6 @@ Configure pipeline logic that will be injected into the source to staging packag
 </DataConversion>
 ```
 
-
 ### Lookup Sql
 Override the default generated Lookup Sql
 
@@ -1328,7 +1349,6 @@ SELECT 	 SRC.[MyTableCode]
 FROM 	[dim].[MyTable] SRC
 WHERE	SRC.[TenantCode] <> 'UNK'
 ```
-
 
 ### Lookup Cache
 Configure a cache file for the Lookup Sql
@@ -1373,7 +1393,6 @@ WHERE	SRC.[TenantCode] <> 'UNK'</DirectInput>
 </Dataflow>
 ```
 
-
 ### Lookup Parameter
 Configure a parameter for the Lookup Sql used by Lookup Cache
 
@@ -1397,7 +1416,6 @@ Configure a parameter for the Lookup Sql used by Lookup Cache
 <#	CustomOutput.ObjectInherit = false; #>
 <Parameter Name="Parameter1" VariableName="User.CurrentModifiedDate" />
 ```
-
 
 ### Lookup Join
 Configure a Join statement that will be added to the Lookup Sql
@@ -1423,7 +1441,6 @@ Configure a Join statement that will be added to the Lookup Sql
 INNER JOIN [dbo].[MyJoinTable] LKP
 	ON	SRC.[MyTableCode] = LKP.[MyTableCode]
 ```
-
 
 ### Target Override
 Configure override for the Object target transformation node
@@ -1457,7 +1474,6 @@ Configure override for the Object target transformation node
 	<ExternalTableOutput Table="[dbo].[MyTable]" />
 </OleDbDestination>
 ```
-
 
 ### Target Pipeline
 Configure pipeline logic that will be injected before the target transformation node
@@ -1495,7 +1511,6 @@ Configure pipeline logic that will be injected before the target transformation 
 </DataConversion>
 ```
 
-
 ### Target Property
 Configure additional properties that will be added to target transformation node
 
@@ -1518,9 +1533,7 @@ Configure additional properties that will be added to target transformation node
 KeepNulls="true" KeepIdentity="false"
 ```
 
-		
 ## Data Vault
-
 
 
 
@@ -1556,7 +1569,6 @@ Configure override for the Data Vault Source transformation node
 </OleDbSource>
 ```
 
-
 ### Raw Data Vault Source Pipeline Pre
 Configure pipeline logic that will be injected after the Data Vault source transformation node
 
@@ -1591,7 +1603,6 @@ Configure pipeline logic that will be injected after the Data Vault source trans
 </DataConversion>
 ```
 
-
 ### Raw Data Vault Source Pipeline Post
 Configure pipeline logic that will be injected after the Data Vault source transformations
 
@@ -1625,7 +1636,6 @@ Configure pipeline logic that will be injected after the Data Vault source trans
 <# 	CustomOutput.OutputPathName = @"DCV - Convert MyColumn.Output"; #>	
 </DataConversion>
 ```
-
 
 ### Raw Data Vault Target Pipeline Pre
 Configure pipeline logic that will be injected before the target transformations
@@ -1662,7 +1672,6 @@ Configure pipeline logic that will be injected before the target transformations
 </DataConversion>
 ```
 
-
 ### Raw Data Vault Target Pipeline Post
 Configure pipeline logic that will be injected before the target transformation node
 
@@ -1698,7 +1707,6 @@ Configure pipeline logic that will be injected before the target transformation 
 </DataConversion>
 ```
 
-
 ### Raw Data Vault Target Override
 Configure override for the Data Vault target transformation node
 
@@ -1733,7 +1741,6 @@ Configure override for the Data Vault target transformation node
 	<ExternalTableOutput Table="[dbo].[HUB_MyTable]" />
 </OleDbDestination>
 ```
-
 
 ### Raw Data Vault PIT Custom Sql
 Configure custom Sql for the Data Vault PIT
@@ -1774,7 +1781,6 @@ Configure custom Sql for the Data Vault PIT
 *#>
 ```
 
-
 ### Raw Data Vault Bridge Custom Sql
 Configure custom Sql for the Data Vault BRIDGE
 
@@ -1814,9 +1820,7 @@ Configure custom Sql for the Data Vault BRIDGE
 *#>
 ```
 
-		
 ## Data Mart
-
 
 
 
@@ -1852,7 +1856,6 @@ Configure override for the Data Mart Source transformation node
 </OleDbSource>
 ```
 
-
 ### Data Warehouse Source Pipeline Pre
 Configure pipeline logic that will be injected after the Data Mart source transformation node
 
@@ -1887,7 +1890,6 @@ Configure pipeline logic that will be injected after the Data Mart source transf
 </DataConversion>
 ```
 
-
 ### Data Warehouse Source Pipeline Post
 Configure pipeline logic that will be injected after the Data Mart source transformations
 
@@ -1921,7 +1923,6 @@ Configure pipeline logic that will be injected after the Data Mart source transf
 <# 	CustomOutput.OutputPathName = @"DCV - Convert MyColumn.Output"; #>	
 </DataConversion>
 ```
-
 
 ### Data Warehouse Target Pipeline Pre
 Configure pipeline logic that will be injected before the target transformation node
@@ -1958,7 +1959,6 @@ Configure pipeline logic that will be injected before the target transformation 
 </DataConversion>
 ```
 
-
 ### Data Warehouse Target Pipeline Post
 Configure pipeline logic that will be injected before the target transformation node
 
@@ -1993,7 +1993,6 @@ Configure pipeline logic that will be injected before the target transformation 
 <# 	CustomOutput.OutputPathName = @"DCV - Convert MyColumn.Output"; #>	
 </DataConversion>
 ```
-
 
 ### Data Warehouse Target Override
 Configure override for the Data Mart target transformation node
@@ -2030,7 +2029,6 @@ Configure override for the Data Mart target transformation node
 </OleDbDestination>
 ```
 
-
 ### Data Warehouse Insert Pipeline
 Configure insert pipeline logic that will be injected before the target transformation node
 
@@ -2064,7 +2062,6 @@ Configure insert pipeline logic that will be injected before the target transfor
 <# 	CustomOutput.OutputPathName = @"DCV - Convert MyColumn.Output"; #>	
 </DataConversion>
 ```
-
 
 ### Data Warehouse Type 1 Pipeline
 Configure type1 update pipeline logic that will be injected before the target transformation node
@@ -2100,7 +2097,6 @@ Configure type1 update pipeline logic that will be injected before the target tr
 </DataConversion>
 ```
 
-
 ### Data Warehouse Type 2 Pipeline
 Configure type2 insert pipeline logic that will be injected before the target transformation node
 
@@ -2135,9 +2131,7 @@ Configure type2 insert pipeline logic that will be injected before the target tr
 </DataConversion>
 ```
 
-		
 ## PolyBase
-
 
 
 

@@ -1,12 +1,13 @@
-# Configuration of BimlFlex
+# Configurations and Settings in BimlFlex
 
 ## Supporting Videos
 
-![Configurations and Settings](https://www.youtube.com/watch?v=yMDi0RaB9G8?rel=0&autoplay=0)
+![Configurations and Settings](https://www.youtube.com/watch?v= TODO ?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
-@bimlflex-metadata-configurations
+- @bimlflex-metadata-configurations
+- @bimlflex-metadata-settings
 
 ## Configurations and Settings in BimlFlex
 
@@ -26,9 +27,9 @@ Open the Excel Metadata Editor and click the `Get All Settings` to read all conf
 
 The Configurations sheet contains the BimlFlex configurations for core metadata.
 
-Here, metadata columns and data types are defined for the different layers.
+Here, metadata columns and data types as well as their default expressions are defined for the different layers.
 
-While the trial process uses the default settings, architectural choices such as if to use End Dating, if to include Deleted and Current Flags, if to include a Row Change Type indicator and how to derive it etc. are all specified in the Configurations sheet.
+While the trial process uses the default settings, architectural choices such as, if to use End Dating, if to include Deleted and Current Flags, if to include a Row Change Type indicator and how to derive it etc. are all specified in the Configurations sheet.
 
 ### Review Settings
 

@@ -1,8 +1,14 @@
 ---
-uid: bimlflex-business-keys-and-relationships
-title: BimlFlex Business Keys and Relationships
+categories: [BimlFlex]
+layout: post
+published: false
+summary: This BimlFlex webinar looks at Business Keys and metadata relationships
+tags: [BimlFlex]
+title: BimlFlex 2018 - Business Keys and Relationships
 ---
-# Business Keys and Relationships
+# BimlFlex 2018 - Business Keys and Relationships
+
+This BimlFlex webinar looks at Business Keys and Relationships in BimlFlex.
 
 Business Keys are a core concept in Data Vault modelling and allows the modeler to focus on defining entities and relationships based on the business process focused keys rather than the technical keys from the source system. This allows easier cross-system integration in the Data Vault.
 
@@ -38,4 +44,4 @@ Define the Accelerator options and preview the Data Vault to review the resultin
 
 ## Watch the Webinar
 
-![Building Business Keys for Data Vault](https://www.youtube.com/watch?v=frzWIAW-Mhs?rel=0&autoplay=0)
+<iframe width="853" height="480" src="https://www.youtube.com/embed/frzWIAW-Mhs?rel=0&autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

@@ -6,7 +6,7 @@ The BimlFlex User Guide describes all aspects of the BimlStudio user interface.
 
 ## [BimlFlex Trial Process](trial-process/index.md)
 
-The BimlFlex Trial Process walks through a step by step process of using and trialling the BimlFlex products and frameworks using a predefined source.
+The BimlFlex Trial Process walks through a step by step process of using and trialing the BimlFlex products and frameworks using a predefined source.
 
 ## [BimlFlex Tips and Tricks](tips-tricks/index.md)
 

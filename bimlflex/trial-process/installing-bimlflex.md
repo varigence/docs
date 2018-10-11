@@ -20,6 +20,8 @@ The BimlFlex installation installs the BimlFlex Excel-based metadata editor. Thi
 
 When installing it is important to match the Excel bitness version. Verify the Excel bitness version before starting the installation and only install the matching version of BimlFlex.
 
+The first time the BimlFlex Excel file is opened from a BimlFlex project it will ask for a license key. Add the BimlFlex enabled license key from the trial email. The key is validated online and once validation completes it is possible to run the application.
+
 ![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-installer-install.png)
 
 ## Detailed Steps
