@@ -340,7 +340,7 @@ For the trial process, add `Password` to the `ModelGrouping` column for the `Sal
 
 This allows the password-related fields to be treated differently with ease.
 
-BimlFlex also employs row compression on different change sets. This means that a change in the `Phone` column will result in a new row in the standard satellite and no change to the `Pwd` Satellite whereas an updated password generates a new row only in the `Pwd` Satellite.
+BimlFlex also employs row compression on different change sets. This means that a change in the `Phone` column will result in a new row in the standard satellite and no change to the `Password` Satellite whereas an updated password generates a new row only in the `Password` Satellite.
 
 For the Product Source table columns, add ModelGrouping information to the following columns, this will generate 3 satellites from the Product source table. This will be used to illustrate Point In Time tables later in the trial.
 
@@ -367,7 +367,7 @@ The Data Type Mapping template that should be applied to this column. Used for d
 
 More information: @bimlflex-data-type-mappings
 
-This is applied in the next step of the trial process.
+This is applied in the next step of the trial process, [Applying Data Type Mappings](applying-data-type-mappings.md).
 
 #### DefaultValue
 

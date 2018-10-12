@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Applying Data Type Mappings](https://www.youtube.com/watch?v=hGLYrPqOPwg?rel=0&autoplay=0)
+![Applying Data Type Mappings](https://www.youtube.com/watch?v= TODO ?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 

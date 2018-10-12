@@ -1,8 +1,8 @@
 ---
-uid: bimlflex-dimensional-model-from-data-vault
-title: BimlFlex Dimensional Model from Data Vault
+uid: bimlflex-dimensional-model
+title: BimlFlex Dimensional Model
 ---
-# Dimensional Model from Data Vault
+# Dimensional Model
 
 ## Supporting Videos
 
@@ -12,7 +12,7 @@ TODO: Coming Soon
 
 @bimlflex-user-guide
 
-## Implementing a Dimensional Model from Data Vault
+## Implementing a Dimensional Model
 
 ### Overview
 
@@ -20,7 +20,7 @@ The dimensional model, Data Mart, is optimized for analytical tools, end user qu
 
 This type of layer has many names, Information Mart, Data Mart, Kimball Model, Dimensional Model, Reporting Layer, Semantic Layer. They can be either Raw, without business rules applied or refined with any number of filters, rules and data processing steps applied. BimlFlex allows the rapid creation of any of these constructs by applying a metadata driven modelling and generation process.
 
-This article describes the creation of a classical dimensional model on top of the Data Vault and PIT/BRG constructs.
+This article describes the creation of a classical dimensional model either on top of the staging layer for non-Data Vault implementations or on top of the Data Vault and PIT/BRG constructs.
 
 It follows the general dimensional approach of building Fact tables that contain metrics and connections to Dimension members and Dimension tables that contain descriptive attributes.
 
