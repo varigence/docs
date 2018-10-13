@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Importing Trial Metadata](https://www.youtube.com/watch?v=uv1aB0psMzc?rel=0&autoplay=0)
+![Importing Trial Metadata](https://www.youtube.com/watch?v=lXTtWMMFnRg?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
@@ -24,7 +24,7 @@ A source extract process also needs a properly defined Project. A Project corres
 
 Once the connections, batches and projects are validated, the metadata can be imported.
 
-BimlFlex will read all specified metadata from the chosen connection in to the Excel sheets.
+BimlFlex will read all specified metadata from the chosen connection into the Excel sheets.
 
 The metadata import dialog provides a set of options for managing
 

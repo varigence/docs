@@ -6,7 +6,7 @@ title: Installing BimlFlex
 
 ## Supporting Videos
 
-![Installing BimlFlex Add In](https://www.youtube.com/watch?v=5U_r5hgo5_w?rel=0&autoplay=0)
+![Installing BimlFlex Add In -center](https://www.youtube.com/watch?v=5U_r5hgo5_w?rel=0&autoplay=0 "Installing BimlFlex Add In")
 
 ## Supporting BimlFlex Documentation
 

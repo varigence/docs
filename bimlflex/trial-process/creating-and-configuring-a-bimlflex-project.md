@@ -7,7 +7,7 @@ title: Creating and configuring a BimlFlex project
 
 ## Supporting Videos
 
-![Creating and Configuring a BimlFlex Project](https://www.youtube.com/watch?v=Bc3pCPAYgpE?rel=0&autoplay=0)
+![Creating and Configuring a BimlFlex Project](https://www.youtube.com/watch?v=XuYbHbju9Go?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 

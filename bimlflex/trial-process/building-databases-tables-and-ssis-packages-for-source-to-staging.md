@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Building Source to Staging](https://www.youtube.com/watch?v=j-ECD4-Yw1E?rel=0&autoplay=0)
+![Building Databases, Tables and SSIS packages for source to staging -center](https://www.youtube.com/watch?v=a4-dgVcpE2o?rel=0&autoplay=0 "Building Databases, Tables and SSIS packages for source to staging")
 
 ## Supporting BimlFlex Documentation
 
@@ -12,7 +12,7 @@
 
 In BimlStudio, the BimlFlex project is able to create SQL DDL scripts to create databases and tables for the Data Warehouse. These can be run on the database server to create all artefacts required to run the trial process. This is an agile way to create tables while developing.
 
-BimlFlex can also build a Visual Studio SQL Server Data Tools (SSDT) Project with all database artefacts. This feature is enabled by default and this project can be used to deploy the databases and tables. This approach can be integrated into a deployment pipeline for continuous integration, continuous deployment scenarios.
+BimlFlex also builds a Visual Studio SQL Server Data Tools (SSDT) Project with all database artefacts. This feature is enabled by default and this project can be used to deploy the databases and tables. This approach can be integrated into a deployment pipeline for continuous integration, continuous deployment scenarios.
 
 Once the tables are available in the data warehouse database server it is possible to use the build process in BimlStudio. This will build the SSIS projects and packages for the source to staging and persistent staging loads.
 
