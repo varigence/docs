@@ -6,7 +6,7 @@ title: Installing BimlStudio
 
 ## Supporting Videos
 
-![Installing BimlStudio -center](https://www.youtube.com/watch?v=e_wzLtyGVS8?rel=0&autoplay=0 "Installing BimlStudio")
+![Installing BimlStudio -center](https://www.youtube.com/watch?v=xTYawfsYCB8?rel=0&autoplay=0 "Installing BimlStudio")
 
 ## Supporting BimlFlex Documentation
 
@@ -19,9 +19,9 @@ title: Installing BimlStudio
 
 BimlStudio is the development environment for BimlFlex. The installation provides the platform for building and extending BimlFlex projects.
 
-Building SSIS packages and projects also require the matching Visual Studio and SQL Server Data Tools with SSIS support are available on the machine.
+Building SSIS packages and projects also require the matching versions of Microsoft Visual Studio and Microsoft SQL Server Data Tools with SSIS support are available on the machine.
 
-BimlStudio is available in 2 bitness flavors, 32 and 64 bit. For the trial it is recommended that both versions are installed.
+BimlStudio is available in 2 bitness flavors, 32 and 64 bit. For the trial, it is recommended that both versions are installed.
 
 ![Installing BimlStudio -center -50%](../user-guide/images/bimlflex-ss-v5-bimlstudio-installer-install.png)
 
@@ -39,7 +39,7 @@ The following detailed steps walks through the installation of BimlStudio
 
 ### Download BimlStudio
 
-Navigate to the [BimlStudio page](https://varigence.com/bimlstudio) or use the link in the trial information email to download the installer.
+Navigate to the [BimlStudio page](https://varigence.com/bimlstudio) to download, or use the link in the trial information email to download the installer.
 
 ### Install BimlStudio
 
@@ -47,4 +47,7 @@ Run the installer to install the application. When presented with the choice of 
 
 ### Enter product key
 
-Once BimlStudio is started for the first time, enter your BimlFlex enabled trial key from the trial welcome email to activate the product. If you are using an existing BimlStudio key or have requested a trial key through BimlStudio, update the key to the BimlFlex key through the Account options in BimlStudio.
+Once BimlStudio is started for the first time, enter your BimlFlex enabled trial key from the trial welcome email to activate the product.
+
+> [!NOTE]
+> If you are using an existing BimlStudio key or have requested a trial key through BimlStudio, update the key to the BimlFlex trial key through the Account options in BimlStudio.
