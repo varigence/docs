@@ -24,6 +24,8 @@
   href: modeling-of-source-metadata.md
 - name: Applying Data Type Mappings
   href: applying-data-type-mappings.md
+- name: Applying Load Parameters
+  href: applying-load-parameters.md
 - name: Building Business Keys for Data Vault
   href: building-business-keys-for-data-vault.md
 - name: Accelerating the Raw Data Vault Layer
