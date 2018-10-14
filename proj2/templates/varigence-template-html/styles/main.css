@@ -45,7 +45,21 @@
 #header #logon-link.account-link .arrow-down i {
   font-size: 22px;
 }
+#docsHeaderLabel {
+  font-size: 25px;
+  float: left;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
 @media (max-width: 991px) {
+  #docsHeaderLabel {
+    font-size: 25px;
+    float: left;
+    margin-top: 7px;
+    margin-left: 50px;
+  }
+    
   #header #logon-link.account-link {
     color: #d25f15;
     margin-top: 0;
@@ -665,6 +679,7 @@
   #header #site-logo {
     float: none;
     text-align: center;
+    margin-left: -40px;
   }
   #header .logo-link {
     text-align: center;
@@ -904,18 +919,6 @@
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 #footer .product-section {
   background: #ebebeb;
