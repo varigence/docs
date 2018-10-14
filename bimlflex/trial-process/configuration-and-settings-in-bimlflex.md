@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Configurations and Settings](https://www.youtube.com/watch?v= TODO ?rel=0&autoplay=0)
+![Configurations and Settings](https://www.youtube.com/watch?v=DAjAEvfJMrs?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
@@ -11,7 +11,7 @@
 
 ## Configurations and Settings in BimlFlex
 
-Once the project and metadata connection is defined it is possible to work with the metadata in the Excel-based metadata management application.
+Once the project and metadata connection are defined it is possible to work with the metadata in the Excel-based metadata management application.
 
 One of the key features in the metadata is the configuration of the BimlFlex framework. Most aspects can be configured, including naming conventions, metadata added to layers, hashing approaches, base Azure accounts and folder locations to use.
 
