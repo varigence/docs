@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Installing the SSIS Components](https://www.youtube.com/watch?v=bBlYkYchZOo?rel=0&autoplay=0)
+![Installing the SSIS Components -center](https://www.youtube.com/watch?v=7R8gj7ItqH8?rel=0&autoplay=0 "Installing the SSIS Components")
 
 ## Supporting BimlFlex Documentation
 
@@ -58,7 +58,7 @@ The following detailed steps walks through the installation of the custom SSIS c
 
 ### Downloading the components
 
-Download the components zip file using the links above, the link in the trial email or through the BimlCatalog repository and store the file locally.
+Download the components zip file using the links above, through the links in the trial email, or through the BimlCatalog repository and store the file locally.
 
 ### Unpack the file
 
@@ -67,6 +67,7 @@ Once downloaded, unpack the zip file contents to a convenient location.
 ### Running the installation batch file
 
 Run the `install.bat` file with administrator privileges. This will install the custom components into the required locations.
+
 As the installation copies the components to the program files and global assembly cache it needs to run using elevated privileges.
 
 ### Manual installation

@@ -182,7 +182,18 @@ When tweaking the SQL source select query that is generated the ObjectAlias is t
 
 `ModelOverrideName`
 
-The Override names are used to rename source object names into the Data Vault. A source system might have internal codes for table and column names. Renaming them into the Data Vault allows the business meaning to be clearer. It is possible to configure if these override names should be used in to the staging and persistent staging layer or just in to the Data Vault layer.
+The Override names are used to rename source object names into the Data Vault.
+
+A source system objects and columns might have names not suited for the Data Vault. Renaming them into the Data Vault allows the business meaning to be clearer.
+
+Use this to translate source column names to business entity names. This will allow the Data Vault to use business names while the source to staging and persistent staging uses the source names. It is also possible to set the behavior of the name overrides so that they are applied to the staging process. In the trial, model override names are applied to the Sales Order source tables:
+
+| Object Name      | ModelOverrideName |
+| ---------------- | ----------------- |
+| SalesOrderHeader | SalesOrder        |
+| SalesOrderDetail | SalesOrderLine    |
+
+This will override the names used in the Data Vault. This exemplifies the naming convenience in BimlFlex.
 
 `ModelOverrideShortName`
 
@@ -191,6 +202,8 @@ TODO
 `ModelGrouping`
 
 The Model Grouping is used in agile Data Vault acceleration. This allows a subset of all objects to be included in an acceleration.
+
+This feature is described in more detail in the Acceleration part of the Trial Process Documentation.
 
 `ModelObjectType`
 
@@ -317,14 +330,19 @@ Excluding the column will remove it from the table definitions and the source se
 
 #### ModelOverrideName
 
-The Override name to use for the accelerated object.
+The Override name to use for the accelerated column.
 
-Use this to translate source column names to business entity names. This will allow the Data Vault to use business names while the source to staging and persistent staging uses the source names. It is also possible to set the behaviour of the name overrides so that they are applied to the staging process. In the trial, model override names are applied to the Sales Order source tables:
+Use this to translate source column names to business entity names. This will allow the Data Vault to use business names while the source to staging and persistent staging uses the source names.
 
-| Object Name      | ModelOverrideName |
-| ---------------- | ----------------- |
-| SalesOrderHeader | SalesOrder        |
-| SalesOrderDetail | SalesOrderLine    |
+In the trial, a model override name is applied to the Product table. The `ThumbNailPhoto` column name does not match the naming convention used by the business analysts and a requirement has been presented to name it `ThumbnailPhoto` instead.
+
+This changes the casing for the `N` in the name to `n` to match business naming conventions. The column will be staged using the original colimn name to match the source and will be accelerated to the business process-aligned name in the Data Vault.
+
+Use the column ModelOverrideName to override the name to be used in the Data Vault.
+
+| Object Name     | ColumnName     | ModelOverrideName |
+| --------------- | -------------- | ----------------- |
+| SalesLT.Product | ThumbNailPhoto | ThumbnailPhoto    |
 
 This will override the names used in the Data Vault. This exemplifies the naming convenience in BimlFlex.
 
@@ -413,7 +431,7 @@ The Alias the column should be given in the SQL Query. Can be used scenarios whe
 
 #### FriendlyName
 
-TODO: Add description
+The friendly name for the Column, currently used as a descriptive field.
 
 #### Description
 
@@ -421,7 +439,7 @@ Any freeform metadata description about the column.
 
 #### DisplayFolder
 
-TODO: Add description
+The Display Folder for the Column, currently used as a descriptive field.
 
 #### Comments
 

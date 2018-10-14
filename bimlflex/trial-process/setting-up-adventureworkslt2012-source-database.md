@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Setting up AdventureWorksLT](https://www.youtube.com/watch?v=QmUDBc0CfiU?rel=0&autoplay=0)
+![Setting up the AdventureWorksLT source database -center](https://www.youtube.com/watch?v=_XW_tqP_4lo?rel=0&autoplay=0 "Setting up the AdventureWorksLT source database")
 
 ## Supporting Documentation
 
