@@ -54,7 +54,7 @@ The database setup phase creates the databases required for BimlFlex:
 
 BimlStudio has an integrated, online feature to upgrade BimlFlex projects and databases to the latest version
 
-@bimlflex-upgrade
+* @bimlflex-trial-process-upgrading-a-bimlflex-project
 
 #### Creating a BimlFlex project
 

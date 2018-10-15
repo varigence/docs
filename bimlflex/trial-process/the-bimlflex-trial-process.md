@@ -20,14 +20,19 @@ BimlFlex automation addresses 80-90% of real-world scenarios while giving you th
 
 ## Trial
 
-As BimlFlex is a complete tool for building and developing Data Warehouses it is also very comprehensive. The trial process acknowledges this and allows a guided tour through the basic functionality of Building an end to end warehouse. This guided trial allows the creation of a Data Warehouse with the load processes for reading data from a predefined source into a 2 layer Kimball or 3 layer Data Vault architecture. The trial is geared towards showing the software, its features, functionality and workflow without undue complexity and development effort.
-The trial process is supported by detailed documentation and supporting videos describing every step in he process.
+As BimlFlex is a complete tool for building and developing Data Warehouses it is also very comprehensive. The trial process acknowledges this and allows a guided tour through the basic functionality of Building an end to end warehouse. This guided trial allows the creation of a Data Warehouse with the load processes for reading data from a predefined source into a 2 layer Kimball or 3 layer Data Vault architecture.
+
+The trial is geared towards showing the software, its features, functionality and workflow without undue complexity and development effort.
+
+The trial process is supported by detailed documentation and walk-through videos describing every step in he process.
 
 The deliverables from the trial are not designed to be used in a production environment.
 
 ## Proof Of Concept
 
-Should there be a need to test a specific technical feature or function as part of a procurement process or requirements analysis it is possible to engage Varigence or a Varigence BimlFlex consulting partner in a Proof Of Concept (PoC) implementation. This allows a concept to be tested. The PoC has a clearly defined success criteria and scope to allow the implementation to conclude successfully.
+Should there be a need to test a specific technical feature or function as part of a procurement process or requirements analysis it is possible to engage Varigence or a Varigence BimlFlex consulting partner in a Proof Of Concept (PoC) implementation. This allows the well defined concept to be tested.
+
+The PoC has a clearly defined success criteria and scope to allow the implementation to conclude successfully.
 
 The deliverables from a PoC are not designed to be used in a production environment.
 
