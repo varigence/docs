@@ -334,6 +334,7 @@ ASALocalRun/
 # DocFX generated content site folder
 _site/
 _pdf/
+api-reference/
 
 # VS Code
 .vscode/
