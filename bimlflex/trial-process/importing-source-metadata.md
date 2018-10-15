@@ -6,7 +6,7 @@
 
 ## Supporting BimlFlex Documentation
 
-- [Importing Metadata](https://varigence.com/Documentation/BimlFlex/Article/Importing+Metadata)
+- @bimlflex-importing-metadata
 
 ## Import Trial Source Metadata
 

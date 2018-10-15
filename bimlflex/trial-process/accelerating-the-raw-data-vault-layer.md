@@ -6,7 +6,7 @@ TODO: Coming Soon
 
 ## Supporting BimlFlex Documentation
 
-- [Data Vault Accelerator](../user-guide/data-vault-accelerator.md)
+* [Data Vault Accelerator](../user-guide/data-vault-accelerator.md)
 
 ## Data Vault Acceleration
 
@@ -30,9 +30,9 @@ Click the `Preview Options` button and configure the accelerator.
 
 For the trial this is:
 
-- Record Source: `AWLT`
-- Connection: `BFX_RDV`
-- Project `LOAD_BFX_RDV`
+* Record Source: `AWLT`
+* Connection: `BFX_RDV`
+* Project `LOAD_BFX_RDV`
 
 ![Data Vault Accelerator Options -center -50%](../user-guide/images/bimlflex-ss-v5-data-vault-accelerator-options.png)
 
@@ -44,20 +44,20 @@ The corresponding preview tables will be visible in the preview schema in the Bi
 
 The accelerated Data Vault schema can be visualized and reviewed using the schema visualization tool in the documentation tab.
 
-- Click Preview in the Documentation tab, choose Database Schema Diagram.
-- In the generated diagram type, change from Default to BimlFlexDataVaultPreview or BimlFlexDataVaultPreviewBackbone to filter the schema to the preview. The backbone option only include Hubs and Links so that the Core Business Concept and Unit Of Work parts of the model can be more easily reviewed.
+* Click Preview in the Documentation tab, choose Database Schema Diagram.
+* In the generated diagram type, change from Default to BimlFlexDataVaultPreview or BimlFlexDataVaultPreviewBackbone to filter the schema to the preview. The backbone option only include Hubs and Links so that the Core Business Concept and Unit Of Work parts of the model can be more easily reviewed.
 
 ![Data Vault Accelerator Schema Preview -center -50%](../user-guide/images/bimlflex-ss-v5-data-vault-schema-preview.png)
 
-Review the previewed model and compare it with the Enterprise Logical Model. 
+Review the previewed model and compare it with the Enterprise Logical Model.
 
 If changes are required:
 
-- Disable the preview in BimlStudio
-- Update the model information in BimlFlex Excel based metadata editor
-- Push any updates to the repository
-- Refresh the metadata in BimlStudio
-- recreate the preview using the new metadata
+* Disable the preview in BimlStudio
+* Update the model information in BimlFlex Excel based metadata editor
+* Push any updates to the repository
+* Refresh the metadata in BimlStudio
+* recreate the preview using the new metadata
 
 ### Publishing the Acceleration result
 

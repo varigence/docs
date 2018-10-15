@@ -1,6 +1,6 @@
 # Varigence Documentation
 
-![](https://bimlflex.visualstudio.com/_apis/public/build/definitions/4c2cadba-e697-407d-8279-993c0491bd0b/2/badge)
+[![Build Status](https://varigence.visualstudio.com/Varigence/_apis/build/status/Varigence%20Docs%20Staging)](https://varigence.visualstudio.com/Varigence/_build/latest?definitionId=18)
 
 Product documentation contents is located in their respective folder.
 
@@ -10,7 +10,7 @@ Documentation site is built using DocFX. [Download DocFX](https://github.com/dot
 
 Build and host the site using the `serve.bat` or `serve.ps1` files in the `proj2` folder. The default site is served on port 8080. Use the shortcut file to open localhost on port 8080, or [click here](http://localhost:8080). Peruse the site and its contents.
 
-Content is stored in md files. Use linting and adhere to best practises for markdown formatting as well as for file names for DocFX.
+Content is stored in md files. Use linting and adhere to best practices for markdown formatting as well as for file names for DocFX.
 
 Sample extensions For [Visual Studio Code](https://code.visualstudio.com/), run from [command line](https://code.visualstudio.com/docs/editor/command-line) to install:
 
@@ -22,7 +22,7 @@ Sample extensions For [Visual Studio Code](https://code.visualstudio.com/), run 
 
 Guidelines for DocFX based markdown format and styling can be [found here](http://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
 
-Rendering engine is Markdig. Additional styling and formatting options described at the [Markdig Github page](https://github.com/lunet-io/markdig). This allows direct embedding of Youtube videos etc using Markdown syntax rather than html.
+Rendering engine is Markdig. Additional styling and formatting options described at the [Markdig GitHub page](https://github.com/lunet-io/markdig). This allows direct embedding of YouTube videos etc. using Markdown syntax rather than html.
 
 Table of contents files are stored as toc.yml files. Refer to the [DocFX page on toc's](https://dotnet.github.io/docfx/tutorial/intro_toc.html) for more information
 
