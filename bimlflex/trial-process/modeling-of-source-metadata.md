@@ -48,7 +48,7 @@ BimlFlex provides an expression to concatenate and separate columns into the Bus
 
 The concatenation character used with multiple columns is defined in the BimlFlex Settings using the `ConcatenatorBusinessKey` key. The default concatenation character is `~`.
 
-BimlFlex also provides a shortcut code for accessing the current connections Record Source code when building the Business Key. Use the `@@rs` to inject the current record source code in to the Business Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
+BimlFlex also provides a shortcut code for accessing the current connections Record Source code when building the Business Key. Use the `@@rs` shortcut to inject the current record source code in to the Business Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
 
 For the trial process, verify that the `@@rs` shortcut was added to all Business Keys by the import metadata process. For the Address table that would be `FlexToBk(@@rs, AddressID)`.
 
@@ -91,7 +91,10 @@ The Customer Address information in the AdventureWorksLT source is mapped throug
 
 Another option from a modeling perspective is to view the address information as attributes attached to the Customer. This will create a less complex model with the address data instantiated as satellites attached to the Customer. The design decisions are a core part of the Data Vault process and depends on a range of considerations for Business Process, source data behavior and more.
 
-In the trial two different approaches are illustrated and loaded in parallel. Both the Link relationship based on the source data model and the attached attributes model based on associating the address data directly with a customer.
+In the trial two different approaches are illustrated and loaded in parallel:
+
+* Link relationship based on the source data model
+* Attached attributes model based on associating the address data directly with the customer.
 
 Add metadata details for the inherited tables to create two new entities.
 
@@ -148,7 +151,7 @@ The `SalesLT.ProductModelProductDescription` table is a candidate for a Link des
 
 It is a relationship table that links models to descriptions based on their Culture. The ProductModelID is a Foreign Key to the ProductModel table and the ProductDescriptionID is a Foreign Key to the ProductDescription table.
 
-While it is possible to consider this a candidate for a logical fold as was applied to the Address tables this is also a prime candidate to introduce derived and role-playing objects. The Culture field is part of the Primary Key but is not a reference to a separate table. The culture entity can be considered a Hub that should be part of the 3 way link built from the table. To create the Hub Culture from the source table the metadata will be changed to accommodate a derived Hub from the Culture data. It will not have any specific Satellite attributes or effectiveness readily available from this source but could be expanded upon with data from other sources in the future. The acceleration will create a HUB_Culture for the Business Key and a SAT_Culture_AWLT for the CultureCode field.
+While it is possible to consider this a candidate for a logical fold as was applied to the Address tables this is also a prime candidate to introduce derived and role-playing objects. The Culture field is part of the Primary Key but is not a reference to a separate table. The culture entity can be considered a Hub that should be part of the 3 way link built from the table. To create the Hub Culture from the source table, the metadata will be changed to accommodate a derived Hub from the Culture data. It will not have any specific Satellite attributes or effectiveness readily available from this source but could be expanded upon with data from other sources in the future. The acceleration will create a HUB_Culture for the Business Key and a SAT_Culture_AWLT for the CultureCode field.
 
 The Business Key creation in this case does not need to apply the Record Source Code, the Culture codes (ar, en, fr, he, th, zh-cht) are all good candidates for direct cross-system integration.
 
@@ -177,7 +180,9 @@ The complete metadata for the added row will be:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AdventureWorksLT | SalesLT.ProductModelProductDescription | Culture_BK | String | 100 |  |  | 7000 | Type 1 |  |  |  |  |  | Y |  |  |  | Culture |  |  |  | FlexToBk(Culture) | Y | 0 | AdventureWorksLT.SalesLT.Culture | Culture_BK |
 
-The metadata Objects has now been expanded with 3 new derived objects using different approaches. It illustrates the flexibility of the metadata and model driven approach and also adds additional Object Types to illustrate the Data Vault acceleration options.
+The metadata Objects has now been expanded with 3 new derived objects using different approaches.
+
+This illustrates the flexibility of the metadata and model driven approach and also adds additional Object Types to illustrate the Data Vault acceleration options.
 
 #### Naming conventions
 
@@ -216,7 +221,7 @@ Using `ModelOverrideName` Prod and `ModelOverrideShortName` Prd will accelerate:
 
 `SalesLT.Product` > `HUB_Prod` > `LNK_Prd_ProductCategory`
 
-The override names combination is useful in defining the destination Data Vault names used.
+The override names combination is useful in defining the destination Data Vault names used. The short name feature is not used in the Trial.
 
 `ModelGrouping`
 
@@ -379,7 +384,7 @@ This allows the password-related fields to be treated differently with ease.
 
 BimlFlex also employs row compression on different change sets. This means that a change in the `Phone` column will result in a new row in the standard satellite and no change to the `Password` Satellite whereas an updated password generates a new row only in the `Password` Satellite.
 
-For the Product Source table columns, add ModelGrouping information to the following columns, this will generate 3 satellites from the Product source table. This will be used to illustrate Point In Time tables later in the trial.
+For the AdventureWorksLT Source table columns, add ModelGrouping information to the following columns.
 
 | Column Name                            | Model Grouping |
 | -------------------------------------- | -------------- |
@@ -390,7 +395,11 @@ For the Product Source table columns, add ModelGrouping information to the follo
 | SalesLT.Customer.PasswordHash          | Password       |
 | SalesLT.Customer.PasswordSalt          | Password       |
 
-These changes will demonstrate the model grouping feature and accelerate out several Satellites with their own storage options and rate of change management through the BimlFlex row compression feature. It will also allow the creation of Point In Time constructs later.
+This will Accelerate 3 satellites from the Product source table and an additional one for the Customer source.
+
+These changes demonstrate the model grouping feature and the ability to accelerate out several Satellites with their own storage options and rate of change management through the BimlFlex row compression feature. 
+
+This will also assist in illustrating the creation of Point In Time constructs later.
 
 #### ModelReference
 
