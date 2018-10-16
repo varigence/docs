@@ -1,6 +1,6 @@
 # Foreach File Loop
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Packages>
         <Package Name="Parent" ConstraintMode="Parallel">

@@ -1,6 +1,6 @@
 # OleDb
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <!-- Connection for a simple OleDb Connection to a SQL Server Database.  Notice the use of the text for the connection string. -->
     <Connections>

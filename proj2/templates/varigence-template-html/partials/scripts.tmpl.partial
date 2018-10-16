@@ -14,7 +14,7 @@
 <script type="text/javascript">
 (function() {
     jQuery(function() {
-    $("code", document.body).each(function() {
+    $("code.lang-biml", document.body).each(function() {
         var preElement = $(this).parent();
         preElement.text($(this).text());
         preElement.addClass("brush: bimlScript");

@@ -1,6 +1,6 @@
 # Setting Variable Value
 
-```xml
+```biml
 <#@ template language="C#" hostspecific="True" mergemode="LocalMerge" addtoheadofcollections="True"#>
 <#@ import namespace="Varigence.Languages.Biml.Task" #>
 

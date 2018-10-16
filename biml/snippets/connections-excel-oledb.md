@@ -1,6 +1,6 @@
 # Excel OleDb
 
-```xml
+```biml
 <Biml xmlns:Pamlico="http://schemas.mariner.com/pamlico" xmlns="http://schemas.varigence.com/biml.xsd">
     <!-- Creates a connection to an Excel 2007 xlsx file. -->
     <Connections>

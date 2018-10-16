@@ -1,6 +1,6 @@
 # Includes
 
-```xml
+```biml
 <#@ template language="C#" hostspecific="True" mergemode="LocalMerge"#>
 <#@ import namespace="System.Data" #>
 <#@ import namespace="Varigence.Languages.Biml.Transformation.Destination" #>

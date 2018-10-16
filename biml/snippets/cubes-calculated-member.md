@@ -1,6 +1,6 @@
 # Calculated Member
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Cubes>
         <Cube Name="Adventure Works" ConnectionName="AdvWorksCube">

@@ -1,6 +1,6 @@
 # Import Column
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Packages>
         <Package Name="My New Package" ConstraintMode="Linear">

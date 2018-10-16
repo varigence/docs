@@ -1,6 +1,6 @@
 # Analysis Services
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Connections>
         <!-- This is a sample AnalysisServices connection that connects to a server running an Analysis Services database. -->

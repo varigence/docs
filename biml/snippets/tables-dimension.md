@@ -1,6 +1,6 @@
 # Dimension
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <!-- This sample creates a dimension with attributes, relationships, and hierarchies. -->

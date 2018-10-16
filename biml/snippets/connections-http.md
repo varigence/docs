@@ -1,6 +1,6 @@
 # HTTP
 
-```xml
+```biml
 <Biml xmlns:Pamlico="http://schemas.mariner.com/pamlico" xmlns="http://schemas.varigence.com/biml.xsd">
     <!-- Creates an HTTP connection with a certificate.  Note the password in this file is in plaintext.  -->
     <Connections>

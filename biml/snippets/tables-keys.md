@@ -1,6 +1,6 @@
 # Keys
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <Table Name="SalesOrderDetail" ConnectionName="AdventureWorksLT2008" SchemaName="SalesLT" >

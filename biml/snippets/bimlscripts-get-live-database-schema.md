@@ -1,6 +1,6 @@
 # Get Live Database Schema
 
-```xml
+```biml
 <#@ template language="C#" hostspecific="true"#>
 <#@ import namespace="System.Data" #>
 

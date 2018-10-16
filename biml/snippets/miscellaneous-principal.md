@@ -1,6 +1,6 @@
 # Principal
 
-```xml
+```biml
 <Biml xmlns:Pamlico="http://schemas.mariner.com/pamlico" xmlns="http://schemas.varigence.com/biml.xsd">
     <Principals>
         <!-- Creates a principal that has control access to the SurveyResponses table an R/W access to the 

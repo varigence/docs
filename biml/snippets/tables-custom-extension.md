@@ -1,6 +1,6 @@
 # Custom Extension
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <!-- Custom Extensions are custom SSIS tasks which can run after table creation -->

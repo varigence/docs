@@ -1,6 +1,6 @@
 # Execute Package
 
-```xml
+```biml
 <Packages>
     <Package Name="Rebuild Warehouse Schema" ConstraintMode="Parallel">
         <!-- Executes a series of four packages -->

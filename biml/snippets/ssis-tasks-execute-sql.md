@@ -1,6 +1,6 @@
 # Execute SQL
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Packages>
         <Package Name="Package1" ConstraintMode="Parallel">

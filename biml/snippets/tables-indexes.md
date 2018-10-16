@@ -1,6 +1,6 @@
 # Indexes
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <Table Name="SampleTable" ConnectionName="TableConnection">

@@ -1,6 +1,6 @@
 # Script Task Project
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <ScriptProjects>
         <ScriptTaskProject ProjectCoreName="ST_19338c2d3c5d43d1b77d01b996ae1485" Name="Simple Task Script Project">
