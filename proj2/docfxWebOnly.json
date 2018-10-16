@@ -27,18 +27,6 @@
         ],
         "dest": "biml"
       },
-
-      {
-        "files": [ "**/*.yml" ],
-        "src": "generated-bimlflex",
-        "dest": "bimlflex",
-        "exclude": [
-          "**/bin/**",
-          "**/obj/**",
-          "**_site/**",
-          "**proj2/**"
-        ]
-      },
       {
 
         "files": [
@@ -52,7 +40,8 @@
           "**_site/**",
           "**proj2/**",
           "**posts/**",
-          "**/**readme.md"
+          "**/**readme.md",
+          "bimlflex/training/**"
         ],
         "cwd": "../"
       }
