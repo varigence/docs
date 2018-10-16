@@ -204,7 +204,19 @@ This will override the names used in the Data Vault. This exemplifies the naming
 
 `ModelOverrideShortName`
 
-TODO
+This is the short version of the Model Override Name. This is used in constructing Link names. This is useful for scenarios where the naming of relationships need to be tweaked.
+
+For a source table such as `SalesLT.Product`, defined as a Hub candidate object, the Accelerator will use the OverrideName to name the Hub and the ModelOverrideShortName to name the Product part of the Links to ProductCategory and ProductModel.
+
+Default, no override names give:
+
+`SalesLT.Product` > `HUB_Product` > `LNK_Product_ProductCategory`
+
+Using `ModelOverrideName` Prod and `ModelOverrideShortName` Prd will accelerate:
+
+`SalesLT.Product` > `HUB_Prod` > `LNK_Prd_ProductCategory`
+
+The override names combination is useful in defining the destination Data Vault names used.
 
 `ModelGrouping`
 

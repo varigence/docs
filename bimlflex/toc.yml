@@ -4,7 +4,7 @@
 
 - name: Release Notes
   href: release-notes/toc.yml
-  topicHref: release-notes/index.md
+  topicHref: release-notes/release-notes.md
 
 - name: User Guide
   href: user-guide/toc.yml
