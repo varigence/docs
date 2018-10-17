@@ -10,7 +10,12 @@ name: BimlFlex Release Notes
 
 ## Bundle v.next
 
+* Add: new setting for controlling file loads from sub folders. The setting `SsisProcessSubfolders` is available in the Settings sheet. This controls if the SSIS flat file source load process should iterate through subfolders when loading files or not. The default setting `N` match the existing behaviour. Update this setting to `Y` to allow the load process to load all matching files from the defined folder and all subfolders.
+* Add: Support for custom connection managers. Use an Extension Point to define a custom connection using Biml and use a source override to completely customize the source load process. A new System Type `Custom System` has been added that can be used with the `Custom Component` Connection Type. Use the `Connection Override` Extension Point from the `Connection` Extension Points Ribbon area to override the connection using Biml.
+* Add support for multiple Link `ModelGroupings` on a ModelSource Hub objects columns. It is now possible to add several Link groupings for a source table of type Hub. This allows the modeler to define multiple custom Unit Of Work definitions from a single Huib candidate source table.
 * Update: the Azure blob storage file processing now works with uncompressed files. Use the Setting `ZipOutputFile` to control compression of the generated file for blob storage and Azure SQL Data Warehouse. Note that the external table definition needs to match the compression used by the files in the external location.
+* Update: A Hash Distribution Key optimisation was added to the Link Satellite load process for Azure SQL Data Warehouse ELT loads. This should improve performance for Link Satellite loads where Hash Distribution is used.
+* Update: the ELT Data Mart Batch process now implements parameterised connections as expected. Using a Project Parameter and a Connection string override will now spawn SSIS packages with the expected connection parameterisation implemented.
 
 ## Bundle 63408
 
