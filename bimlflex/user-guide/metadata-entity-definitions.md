@@ -506,6 +506,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 | PGR | PostgreSQL |
 | ORARDB | Oracle RDB |
 | CRSFDC | COZYROC Salesforce |
+| CUSTOM | Custom System |
 
 ### FlatFileTypes
 

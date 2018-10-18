@@ -1,8 +1,8 @@
+
 ---
 uid: bimlflex-extension-point-definitions
 title: BimlFlex Extension Point Definitions
 ---
-
 # Extension Point Overview
 
 The usage of Extension Points is described in the @bimlflex-extension-points documentation
@@ -125,6 +125,27 @@ public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTAR
 ## Connection
 
 
+
+### Connection Override
+Configure Override for a Connection
+
+#### Parameters
+| Name | Type | Description |
+|------|------|-------------|
+| connection | BimlFlexModelWrapper.ConnectionsWrapper | Contains all information related to the connection to which the connection expression will be added |
+
+#### Sample Code
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionOverride" #>
+<#@ property name="connection" type="BimlFlexModelWrapper.ConnectionsWrapper" #>
+
+<!-- You can find more details on the Varigence website. https://varigence.com/Documentation/Language/ChildCollection/AstRootNode/Connections -->
+<!-- The below example is configuring an ODATA connection. -->
+<CustomSsisConnection
+  Name="Northwind"
+  CreationName="ODATA"
+  ObjectData="&lt;ODataConnectionManager UserName=&quot;&quot; Url=&quot;https://services.odata.org/V3/Northwind/Northwind.svc&quot; ConnectionString=&quot;Service Document Url=https://services.odata.org/V3/Northwind/Northwind.svc;&quot; MicrosoftOnlineServicesAuth=&quot;False&quot; AuthType=&quot;WindowsAuthentication&quot; /&gt;" />
+```
 
 ### Connection Expression
 Configure Expressions for a Connection
