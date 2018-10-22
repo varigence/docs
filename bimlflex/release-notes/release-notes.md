@@ -10,13 +10,45 @@ name: BimlFlex Release Notes
 
 ## Bundle v.next
 
-* Add: new setting for controlling file loads from sub folders. The setting `SsisProcessSubfolders` is available in the Settings sheet. This controls if the SSIS flat file source load process should iterate through subfolders when loading files or not. The default setting `N` match the existing behaviour. Update this setting to `Y` to allow the load process to load all matching files from the defined folder and all subfolders.
+* Add: new setting for controlling file loads from subfolders. The setting `SsisProcessSubfolders` is available in the Settings sheet. This controls if the SSIS flat file source load process should iterate through subfolders when loading files or not. The default setting `N` match the existing behavior. Update this setting to `Y` to allow the load process to load all matching files from the defined folder and all subfolders.
 * Add: Support for custom connection managers. Use an Extension Point to define a custom connection using Biml and use a source override to completely customize the source load process. A new System Type `Custom System` has been added that can be used with the `Custom Component` Connection Type. Use the `Connection Override` Extension Point from the `Connection` Extension Points Ribbon area to override the connection using Biml.
 * Add: Support for Excel file source connections. A new System Type `Excel` has been added that can be used with the `File` Connection Type. Using Excel sources in SSIS has several BimlFlex-unrelated dependencies. The correct Excel-compatible drivers for the SSIS and SQL Server version in use needs to be available and the SSIS Package execution normally needs to be run in 32-bit mode.
 * Add support for multiple Link `ModelGroupings` on a ModelSource Hub objects columns. It is now possible to add several Link groupings for a source table of type Hub. This allows the modeler to define multiple Unit Of Work groupings from a single Hub candidate source table.
 * Update: the Azure blob storage file processing now works with uncompressed files. Use the Setting `ZipOutputFile` to control compression of the generated file for blob storage and Azure SQL Data Warehouse. Note that the external table definition needs to match the compression used by the files in the external location.
-* Update: A Hash Distribution Key optimisation was added to the Link Satellite load process for Azure SQL Data Warehouse ELT loads. This should improve performance for Link Satellite loads where Hash Distribution is used.
-* Update: the ELT Data Mart Batch process now implements parameterised connections as expected. Using a Project Parameter and a Connection string override will now spawn SSIS packages with the expected connection parameterisation implemented.
+* Update: A Hash Distribution Key optimization was added to the Link Satellite load process for Azure SQL Data Warehouse ELT loads. This should improve performance for Link Satellite loads where Hash Distribution is used.
+* Update: the ELT Data Mart Batch process now implements parameterized connections as expected. Using a Project Parameter and a Connection string override will now spawn SSIS packages with the expected connection parameterization implemented.
+* Update: A scenario where Azure SQL ELT load Stored Procedures were used together with replicated tables would result in references to hash distribution keys was addressed. ELT Load Stored Procedures are now properly created for loads from replicated tables.
+* Update: a CDC source scenario where multiple LSN were mapped to the same timestamp for the could result in key collisions on load. A change in the load query takes this scenario in to account and creates unique timestamps for all CDC records for a given time, regardless of the associated LSN.
+* Update: A feature update added an additional parameter to the exposed BimlFlex `GetSqlToBk()` function. This additional parameter allows the creation function to cascade through references. This affected existing Extension Points using the function. A backwards-compatible version of the function has been added in this Bundle.
+* Update: Added support for related tables where the related table has `ExcludeFromBuild` set to `Y`. Previously the exclusion would potentially result in validation errors if the references were defined across projects. This update will allow cross-project references of Hubs to be able to build links without separate Hub load packages also being included.
+* Add: support for XmlEscaping in the Metadata Instance for DataItem names. It is, however, not recommended to use `&`, `>`, `<`, `%` characters in Metadata Entity Names.
+
+> [!NOTE]
+> An update to the CDC source mechanism has been implemented in this Bundle. This requires both the Bundle and the BimlFlex database to be updated.  
+> A scenario where multiple LSN numbers were mapped to the same completion time and where multiple updates to the same key was captured across these LSN's could lead to key collisions. This update allows any number of updates across a given transaction datetime. The derived individual `FlexRowEffectiveFrom` datetime values are now also being derived in DateTime2(7) increments instead of the SQL Server CDC-process native DateTime resolution. This will minimize the risk for updates to the same key across LSN datetimes to result in key collisions. Note that BimlFlex captures all changes to keys and assign unique `RowEffectiveFrom` values to each row. In a scenario where there are more changes introduced than there are time units available the load might fail due to Key collisions.
+
+The Updated `RowEffectiveFromDate_SsisExpression` attribute value for default CDC load projects is now:
+
+```ssis
+@[User::IsInitialLoad] ? @[User::ParentBatchStartTime] : DATEADD("ns",([__$rownumber] - 1) * 100, (DT_DBTIMESTAMP2, 7) [__$start_dt])
+```
+
+The updated CDC Source query format now match the below:
+
+```sql
+SELECT <SourceColumns>
+,CONVERT(VARCHAR(256), [__$start_lsn],1) AS [__$start_lsn],
+CONVERT(VARCHAR(27), CONVERT(DATETIME2, sys.fn_cdc_map_lsn_to_time([__$start_lsn])), 121) AS [__$start_dt]
+,CONVERT(INT, [__$operation]) AS [__$operation]
+,ROW_NUMBER()
+    OVER (
+        PARTITION BY <KeyDefinition>, CONVERT(DATETIME, sys.fn_cdc_map_lsn_to_time([__$start_lsn]))
+        ORDER BY [__$start_lsn], [__$seqval]
+    ) AS [__$rownumber]
+FROM [cdc].[fn_cdc_get_all_changes_<Instance>](<FromLSN>,<ToLSN>, 'all')
+```
+
+
 
 ## Bundle 63408
 
