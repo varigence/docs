@@ -108,10 +108,10 @@ Object metadata:
 In this case the new objects inherit from the Address table, they select from the same source table but use different queries and load to different staging tables.
 
 * They have `UseInheritedName` set to `Y` as the data will be loaded from the inherited table from the source (the main part of the query).
-* They have `SameAsInherited` set to `N` as they will have other columns added through the join condition and will load to a different staging table.
-* There are using a join clause to join through the CustomerAddress table to the Customer table
-* They have Where clause filters applied to load different rows.
-* The ModelObjectType is set to Satellite as these will be attributes associated with the Customer entity
+* They have `SameAsInherited` left empty (or set to `N`) as they will have other columns added through the join condition and will load to a different staging table.
+* There are using a `JOIN` clause to join through the CustomerAddress table to the Customer table
+* They have a `WHERE` clause filter applied to load different rows.
+* The `ModelObjectType` is set to `Satellite` as these will be attributes associated with the Customer entity
 
 Column Metadata
 
@@ -138,12 +138,12 @@ Column Metadata
 
 * The column metadata contain the required columns and their data types.
 * The joined column from the Customer table has an SQL expression applied.
-* The derived Customer_BK has a FlexToBk() applied that uses the joined CustomerID column from the customer table.
-* The derived Customer_BK has a reference to the main Customer table and its main BK. This allows the Data Vault accelerator to treat these tables as Satellite candidates.
+* The derived `Customer_BK` has a `FlexToBk()` applied that uses the joined `CustomerID` column from the customer table.
+* The derived `Customer_BK` has a reference to the main Customer table and its main Business Key. This allows the Data Vault accelerator to treat these tables as Satellite candidates.
 
 These metadata operations will allow the address information to be loaded twice, and the tables will be candidates for different types of target objects for the Data Vault.
 
-Note that the address information is also referenced from the Sales Order so the modeling decision around if the address is an attribute of the customer or an entitiy in its own right requires slightly more analysis.
+Note that the address information is also referenced from the Sales Order so the modeling decision around if the address is an attribute of the customer or an entity in its own right requires slightly more analysis.
 
 ### Creating Roleplaying objects
 
@@ -153,7 +153,7 @@ It is a relationship table that links models to descriptions based on their Cult
 
 While it is possible to consider this a candidate for a logical fold as was applied to the Address tables this is also a prime candidate to introduce derived and role-playing objects. The Culture field is part of the Primary Key but is not a reference to a separate table. The culture entity can be considered a Hub that should be part of the 3 way link built from the table. To create the Hub Culture from the source table, the metadata will be changed to accommodate a derived Hub from the Culture data. It will not have any specific Satellite attributes or effectiveness readily available from this source but could be expanded upon with data from other sources in the future. The acceleration will create a HUB_Culture for the Business Key and a SAT_Culture_AWLT for the CultureCode field.
 
-The Business Key creation in this case does not need to apply the Record Source Code, the Culture codes (ar, en, fr, he, th, zh-cht) are all good candidates for direct cross-system integration.
+The Business Key creation in this case does not need to apply the Record Source Code, the Culture codes (`ar`, `en`, `fr`, `he`, `th`, `zh-cht`) are all good candidates for direct cross-system integration.
 
 Worth noting on the Culture codes is that they are all lower-case and they are all fixed width strings. The Business key creation will by default upper-case and trim these codes. The original attribute value is stored in the Satellite.
 
