@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Modeling of source Metadata -center](https://www.youtube.com/watch?v= TODO ?rel=0&autoplay=0 "Modeling of source Metadata")
+![Modeling of source Metadata -center](https://www.youtube.com/watch?v=tgOvlAh2dS8?rel=0&autoplay=0 "Modeling of source Metadata")
 
 ## Supporting BimlFlex Documentation
 
@@ -10,11 +10,11 @@
 
 ## Modeling of source Metadata
 
-Once the source system metadata has been imported in to BimlFlex it is possible to model it in the Excel-based metadata management application.
+Once the source system metadata has been imported into BimlFlex it is possible to model it in the Excel-based metadata management application.
 
 Modeling through metadata management is the way to tweak the process to match ingestion and business requirements and allows BimlFlex to automatically generate the required SQL structures and SSIS packages for the ETL process.
 
-for a Data Vault based project, modeling the source metadata also affect the Accelerator behavior and the resulting Data Vault model.
+For a Data Vault based project, modeling the source metadata also affect the Accelerator behavior and the resulting Data Vault model.
 
 ## Detailed Steps
 
@@ -179,6 +179,12 @@ The complete metadata for the added row will be:
 | Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AdventureWorksLT | SalesLT.ProductModelProductDescription | Culture_BK | String | 100 |  |  | 7000 | Type 1 |  |  |  |  |  | Y |  |  |  | Culture |  |  |  | FlexToBk(Culture) | Y | 0 | AdventureWorksLT.SalesLT.Culture | Culture_BK |
+
+The `ProductModelProductDescription` Object needs a main Business Key of its own to uniquely identify rows. The originally created Business Key included references to the `ProductModel` and `ProductDescription` tables. As the Culture Key has been added, include it in the SSIS Expression and the FlexToBk function.
+
+Update the `ProductModelProductDescription_BK` column in the `SalesLT.ProductModelProductDescription` Object to use the below updated `SsisExpression`:
+
+`FlexToBk(@@rs,ProductModelID,ProductDescriptionID,Culture)`
 
 The metadata Objects has now been expanded with 3 new derived objects using different approaches.
 
