@@ -25,6 +25,9 @@ BimlFlex Excel provides a `Generate Business Key` button that will create a Busi
 
 For the trial process, the Primary Keys of the source tables are used for most Business Keys. As they are sequence keys the record source code is added through the `@@rs` shortcut. For other sources where there are codes that can be used directly as Business Keys it is possible to just apply the `FlexToBk()` function. This is exemplified by the Culture entity.
 
+> [!NOTE]
+> Note that the Business Keys have already been created as part of the previous steps. This documentation and video only highlights the required steps and the design process to create them. It also allows a review of the Keys before the creation of the Data Vault layer.
+
 ## Detailed Steps
 
 The following detailed steps walks through how to review the Business Keys used in the trial.
@@ -37,6 +40,5 @@ Open the Excel Metadata Editor and click `Get All Entities` and `Get All Setting
 
 The Import Metadata wizard created Business Keys from the Primary Keys of the source.
 
-### Update the Business Keys
-
 Review the existing business keys to make sure they match. Apply the `@@rs` short code to any business key still missing it. Note that the derived Culture Business Key does not use the `@@rs` code
+ec
