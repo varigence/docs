@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Accelerating the Raw Data Vault Layer](https://www.youtube.com/watch?v= TODO ?rel=0&autoplay=0)
+![Accelerating the Raw Data Vault Layer](https://www.youtube.com/watch?v=nm94E5ZBHjU?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
@@ -10,11 +10,13 @@
 
 ## Data Vault Acceleration
 
+BimlFlex provides a Data Vault Accelerator that creates Data Vault objects from the defined source metadata.
+
 Data Vault acceleration can be performed once the Enterprise Logical Model, the source data model and corresponding Data Vault model has been created.
 
 The Data Vault acceleration uses the source metadata and its defined relationships to create a Raw Data Vault layer. Based on this metadata, BimlFlex will automatically create the required Data Vault structures and the source to target mappings in the metadata repository.
 
-The accelerator first creates a preview of the Data Vault artefacts so that the model can be reviewed and refined through the normal modelling and development process.
+The accelerator first creates a preview of the Data Vault artefacts so that the model can be reviewed and refined through the normal modeling and development process.
 
 In the trial process, a Unit of Work was updated for the ProductModelProductDescription link table, the preview illustrates that this will be generated as a 3-way link as expected. The attributes for the Product source table was also prepared to be split across 3 Satellites. The preview shows the Product Hub and the expected Satellites.
 
@@ -22,7 +24,11 @@ When the preview matches the model expectations, it is published to the metadata
 
 The new metadata can be reviewed in the Excel metadata editor. The Data Vault objects have been created and the source objects have Source to Target Mappings applied.
 
-Once the metadata has been refreshed in BimlStudio and in the Excel based metadata management solution, it can be built and implemented, or further refined. Since the staging table structures have been updated, and new Data Vault tables have been added, regenerate the create table scripts and run them on the database server. Rebuild the SSIS Projects from BimlStudio. The Data Vault load project is a separate project to the Source to Staging Project, with its own Batch package. First open and run the Source to staging Batch - since the tables have been recreated they first need to be loaded with data from the source. Once there is data in the staging tables, run the Data Vault Load batch in the Data Vault load project. The source table data will be loaded to the Data Vault tables and once completed the Data Vault layer is populated with the source data.
+Once the metadata has been refreshed in BimlStudio and in the Excel based metadata management solution, it can be built and implemented, or further refined.
+
+Since the staging table structures have been updated, and new Data Vault tables have been added, regenerate the create table scripts and run them on the database server.
+
+Rebuild the SSIS Projects from BimlStudio. The Data Vault load project is a separate project to the Source to Staging Project, with its own Batch package. First open and run the Source to staging Batch - since the tables have been recreated, they first need to be loaded with data from the source. Once there is data in the staging tables, run the Data Vault Load batch in the Data Vault load project. The source table data will be loaded to the Data Vault tables and once completed the Data Vault layer is populated with the source data.
 
 ## Detailed Steps
 
