@@ -40,5 +40,4 @@ Open the Excel Metadata Editor and click `Get All Entities` and `Get All Setting
 
 The Import Metadata wizard created Business Keys from the Primary Keys of the source.
 
-Review the existing business keys to make sure they match. Apply the `@@rs` short code to any business key still missing it. Note that the derived Culture Business Key does not use the `@@rs` code
-ec
+Review the existing business keys to make sure they match. Apply the `@@rs` short code to any business key still missing it. Note that the derived Culture Business Key does not use the `@@rs` code.
