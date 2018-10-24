@@ -2,7 +2,7 @@
 
 ## Supporting Videos
 
-![Accelerating the Raw Data Vault Layer](https://www.youtube.com/watch?v=nm94E5ZBHjU?rel=0&autoplay=0)
+![Accelerating the Raw Data Vault Layer -center](https://www.youtube.com/watch?v=nm94E5ZBHjU?rel=0&autoplay=0 "Accelerating the Raw Data Vault Layer")
 
 ## Supporting BimlFlex Documentation
 
@@ -107,4 +107,4 @@ The Data Vault keys are derived in to the staging area so the existing Source to
 
 Open the Data Vault load project in a compatible version of Visual Studio and review the packages. Execute the `LOAD_BFX_RDV_Batch.dtsx` package to load the Data Vault from the staging tables. Once completed, the Data Vault will contain data.
 
-Review the loaded data in the Data Vault. 
+Review the loaded data in the Data Vault.

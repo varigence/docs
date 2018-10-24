@@ -6,11 +6,11 @@ title: Adding Business Data Vault Performance Constructs
 
 ## Supporting Videos
 
-TODO: Coming Soon
+![Adding Business Data Vault Performance Constructs cCenter](https://www.youtube.com/watch?v=   ?rel=0&autoplay=0 "Adding Business Data Vault Performance Constructs")
 
 ## Supporting BimlFlex Documentation
 
-- @bimlflex-data-mart-templates
+* @bimlflex-data-mart-templates
 
 ## Adding Business Data Vault performance constructs
 
@@ -20,8 +20,8 @@ For insert-only Data Vault solutions, the Point in Time (PIT) tables provides a 
 
 The Bridge (BRG) constructs allows multiple Links surrounding a Hub to be combined in one table, minimizing the required joins.
 
-- Point in Time, PIT, tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub
-- Bridge tables are used to link business entities in Hubs through their link tables into easy to query constructs
+* Point in Time, PIT, tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub
+* Bridge tables are used to link business entities in Hubs through their link tables into easy to query constructs
 
 BimlFlex implements these artefacts using tables for storage, Stored Procedures for loading and SSIS packages for orchestration.
 
@@ -47,7 +47,14 @@ For a PIT definition where only the Hub is included, BimlFlex will automatically
 |         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
 |         |       | `BFX_RDV`  | `rdv.SAT_Product_Price_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
 
-The sample above would need to reflect actual satellites to produce the expected PIT table. In this case the SalesLT.Product source table has been split in to two Satellites by applying the `Price` name in the `ModelGrouping` column for the `StandardCost` and `ListPrice` source columns. This allows the more rapidly changing price attributes to be stored in a separate Satellite. This PIT construct allows easy querying across them.
+In the trial process the `SalesLT.Product` source table has been split into three Satellites by applying the `Price` and `Thumbnail` names in the `ModelGrouping` column for the relevant source columns. This allows the more rapidly changing price attributes and the larger Thumbnail data to be stored in separate Satellites. This PIT construct allows easy querying across the included Satellites.
+
+For the trial process, apply single row PIT attribute entries for the Product and Customer entities:
+
+| Project | Batch | Connection | Object             | ColumnName | AttributeKey | AttributeValue |
+| ------- | ----- | ---------- | ------------------ | ---------- | ------------ | -------------- |
+|         |       | `BFX_RDV`  | `rdv.HUB_Customer` |            | `CreatePIT`  | `PIT_Customer` |
+|         |       | `BFX_RDV`  | `rdv.HUB_Product`  |            | `CreatePIT`  | `PIT_Product`  |
 
 ### Adding Bridge table Metadata
 
@@ -83,31 +90,6 @@ Scrips for these placeholder records are created through the `Generate Script`, 
 
 The script is also part of the SSDT Database project for the RDV database, in the form of a Post Deployment script.
 
-Sample insert script for Hub table:
-
-```sql
-IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdv].[HUB_Product]') AND type IN (N'U'))
-DELETE FROM [rdv].[HUB_Product] WHERE [Product_SK] = '0000000000000000000000000000000000000000'
-
-IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdv].[HUB_Product]') AND type IN (N'U'))
-AND NOT EXISTS (SELECT * FROM [rdv].[HUB_Product] WHERE [Product_SK] = '0000000000000000000000000000000000000000')
-INSERT INTO [rdv].[HUB_Product]([Product_SK],[Product_BK],[FlexRowEffectiveFromDate],[FlexRowAuditId],[FlexRowRecordSource])
-VALUES ('0000000000000000000000000000000000000000',N'Unknown','0001-01-01 00:00:00.000',0,'FLX')
-```
-
-Sample insert script for PIT table:
-
-```sql
-
-IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdv].[PIT_Product]') AND type IN (N'U'))
-DELETE FROM [rdv].[PIT_Product] WHERE [Product_SK] = '0000000000000000000000000000000000000000'
-
-IF EXISTS (SELECT * from sys.objects WHERE object_id = OBJECT_ID(N'[rdv].[PIT_Product]') AND type IN (N'U'))
-AND NOT EXISTS (SELECT * FROM [rdv].[PIT_Product] WHERE [Product_SK] = '0000000000000000000000000000000000000000')
-INSERT INTO [rdv].[PIT_Product]([PIT_Product_SK],[Product_SK],[Product_BK],[FlexRowEffectiveFromDate],[FlexRowEffectiveToDate],[SAT_Product_AWLT_Product_SK],[SAT_Product_AWLT_FlexRowEffectiveFromDate],[SAT_Product_Price_AWLT_Product_SK],[SAT_Product_Price_AWLT_FlexRowEffectiveFromDate])
-VALUES ('0000000000000000000000000000000000000000','0000000000000000000000000000000000000000',N'Unknown','0001-01-01','9999-12-31','0000000000000000000000000000000000000000','0001-01-01','0000000000000000000000000000000000000000','0001-01-01')
-```
-
 ### Creating PIT and BRG Stored Procedures
 
 Use the `Generate Scripts`, `Business Vault Procedure Script` option in BimlStudio to create the DDL for the PIT and BRG procedures. They are also included in the generated SSDT project for the Data Vault database.
@@ -124,7 +106,7 @@ Once the metadata for the PIT and BRG objects is available in BimlStudio there a
 
 The default name for these are built out of the Data Vault load name with either PIT or BRG added, in the trial demo case the following Batch packages are added to the Load Data Vault SSIS project:
 
-- `LOAD_BFX_RDV_BRG_Batch`
-- `LOAD_BFX_RDV_PIT_Batch`
+* `LOAD_BFX_RDV_BRG_Batch`
+* `LOAD_BFX_RDV_PIT_Batch`
 
 These batches allow easy scheduling and orchestration of the Stored Procedure execution through SSIS.
