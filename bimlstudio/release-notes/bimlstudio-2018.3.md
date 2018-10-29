@@ -1,6 +1,6 @@
-# BimlStudio 2018 r3 Release Notes
+# BimlStudio 2018 R3 Release Notes
 
-Significant changes between BimlStudio 2018 and BimlStudio 2018 r3
+Significant changes between BimlStudio 2018 R2 and BimlStudio 2018 R3
 
 ## SSIS
 
