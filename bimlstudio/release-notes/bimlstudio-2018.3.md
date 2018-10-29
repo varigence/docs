@@ -37,8 +37,3 @@ Significant changes between BimlStudio 2018 R2 and BimlStudio 2018 R3
 
 ## Source Control
 * Svn Fix to prevent NRE when looking for Inner Exceptions that was causing BimlStudio to crash.
-
-
-## Misc
-
-
