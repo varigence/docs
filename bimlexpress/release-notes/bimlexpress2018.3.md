@@ -1,6 +1,6 @@
-# BimlExpress 2018 Release Notes
+# BimlExpress 2018 R3 Release Notes
 
-Significant changes between BimlExpress2018 and BimlExpress2018r2
+Significant changes between BimlExpress2018 R2 and BimlExpress2018 R3.
 
 ## Biml Express
 
