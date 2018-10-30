@@ -49,42 +49,53 @@ Use the attributes sheet to add the required metadata for a PIT object. Add the 
 
 For a PIT definition where only the Hub is included, BimlFlex will automatically include all surrounding Satellites in the current metadata set. For scenarios where only a subset of the Satellites are to be included, add additional rows for each Satellite with the same Attribute Key (`CreatePIT`) and Attribute Value (the name of the PIT table).
 
-| Project | Batch | Connection | Object            | ColumnName | AttributeKey | AttributeValue |
-| ------- | ----- | ---------- | ------            | ---------- | ------------ | -------------- |
-|         |       | `BFX_RDV`  | `rdv.HUB_Product` |            | `CreatePIT`  | `PIT_Product`  |
-|         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
+| Project | Batch | Connection | Object                       | ColumnName | AttributeKey | AttributeValue |
+| ------- | ----- | ---------- | ---------------------------- | ---------- | ------------ | -------------- |
+|         |       | `BFX_RDV`  | `rdv.HUB_Product`            |            | `CreatePIT`  | `PIT_Product`  |
+|         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT`       |            | `CreatePIT`  | `PIT_Product`  |
 |         |       | `BFX_RDV`  | `rdv.SAT_Product_Price_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
 
 In the trial process the `SalesLT.Product` source table has been split into three Satellites by applying the `Price` and `Thumbnail` names in the `ModelGrouping` column for the relevant source columns. This allows the more rapidly changing price attributes and the larger Thumbnail data to be stored in separate Satellites. This PIT construct allows easy querying across the included Satellites.
 
-For the trial process, apply single row PIT attribute entries for the Product and Customer entities:
+For the trial process, apply single row PIT attribute entries for the Address, Customer, ProductCategory and SalesOrderLine entities and a selective PIT for the Product entity:
 
-| Project | Batch | Connection | Object             | ColumnName | AttributeKey | AttributeValue |
-| ------- | ----- | ---------- | ------------------ | ---------- | ------------ | -------------- |
-|         |       | `BFX_RDV`  | `rdv.HUB_Customer` |            | `CreatePIT`  | `PIT_Customer` |
-|         |       | `BFX_RDV`  | `rdv.HUB_Product`  |            | `CreatePIT`  | `PIT_Product`  |
+| Project | Batch | Connection | Object                       | ColumnName | AttributeKey | AttributeValue |
+| ------- | ----- | ---------- | ---------------------------- | ---------- | ------------ | -------------- |
+|         |       | `BFX_RDV`  | `rdv.HUB_Address`            |            | `CreatePIT`  | `PIT_Address` |
+|         |       | `BFX_RDV`  | `rdv.HUB_Customer`           |            | `CreatePIT`  | `PIT_Customer` |
+|         |       | `BFX_RDV`  | `rdv.HUB_Product`            |            | `CreatePIT`  | `PIT_Product` |
+|         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT`       |            | `CreatePIT`  | `PIT_Product`  |
+|         |       | `BFX_RDV`  | `rdv.SAT_Product_Price_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
+|         |       | `BFX_RDV`  | `rdv.HUB_ProductCategory`    |            | `CreatePIT`  | `PIT_ProductCategory` |
+|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrderLine`     |            | `CreatePIT`  | `PIT_SalesOrderLine` |
 
 ### Adding Bridge table Metadata
 
 Use the attributes sheet to add the required metadata for a BRG object. The Bridge construct has additional values in the Attribute Property column. This specifies the origin Hub for the Link and also if it should include the keys from these Hubs.
 
-In the trial process, Bridge tables are added for the Product and the Sales Order entities:
+In the trial process, Bridge tables are added for the Product, Sales Order Line and the Sales Order entities:
 
-| Project | Batch | Connection | Object                              | ColumnName | AttributeKey   | AttributeValue   | AttributeProperty |
-| ------- | ----- | ---------- | ----------------------------------- | ---------- | -------------- | ---------------- | ------------------|
-|         |       | `BFX_RDV`  | `rdv.HUB_Product`                   |            | `CreateBridge` | `BRG_Product`    | `IsPrimaryHub,AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_ProductCategory`           |            | `CreateBridge` | `BRG_Product`    | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_ProductModel`              |            | `CreateBridge` | `BRG_Product`    | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.LNK_Product_ProductCategory`   |            | `CreateBridge` | `BRG_Product`    | |
-|         |       | `BFX_RDV`  | `rdv.LNK_Product_ProductModel`      |            | `CreateBridge` | `BRG_Product`    | |
-|         |       | `BFX_RDV`  | `rdv.HUB_Address`                   |            | `CreateBridge` | `BRG_SalesOrder` | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_Customer`                  |            | `CreateBridge` | `BRG_SalesOrder` | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrder`                |            | `CreateBridge` | `BRG_SalesOrder` | `IsPrimaryHub,AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrderLine`            |            | `CreateBridge` | `BRG_SalesOrder` | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_BillToAddress`  |            | `CreateBridge` | `BRG_SalesOrder` | |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_Customer`       |            | `CreateBridge` | `BRG_SalesOrder` | |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_ShipToAddress`  |            | `CreateBridge` | `BRG_SalesOrder` | |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_SalesOrder` |            | `CreateBridge` | `BRG_SalesOrder` | |
+| Project | Batch | Connection | Object                              | ColumnName | AttributeKey   | AttributeValue       | AttributeProperty |
+| ------- | ----- | ---------- | ----------------------------------- | ---------- | -------------- | -------------------- | ------------------|
+|         |       | `BFX_RDV`  | `rdv.HUB_Product`                   |            | `CreateBridge` | `BRG_Product`        | `IsPrimaryHub,AddKey` |
+|         |       | `BFX_RDV`  | `rdv.HUB_ProductCategory`           |            | `CreateBridge` | `BRG_Product`        | `AddKey` |
+|         |       | `BFX_RDV`  | `rdv.HUB_ProductModel`              |            | `CreateBridge` | `BRG_Product`        | `AddKey` |
+|         |       | `BFX_RDV`  | `rdv.LNK_Product_ProductCategory`   |            | `CreateBridge` | `BRG_Product`        | |
+|         |       | `BFX_RDV`  | `rdv.LNK_Product_ProductModel`      |            | `CreateBridge` | `BRG_Product`        | |
+|         |       | `BFX_RDV`  | `rdv.HUB_Address`                   |            | `CreateBridge` | `BRG_SalesOrder`     | `AddKey` |
+|         |       | `BFX_RDV`  | `rdv.HUB_Customer`                  |            | `CreateBridge` | `BRG_SalesOrder`     | `AddKey` |
+|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrder`                |            | `CreateBridge` | `BRG_SalesOrder`     | `IsPrimaryHub,AddKey` |
+|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrderLine`            |            | `CreateBridge` | `BRG_SalesOrder`     | `AddKey` |
+|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_BillToAddress`  |            | `CreateBridge` | `BRG_SalesOrder`     | |
+|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_Customer`       |            | `CreateBridge` | `BRG_SalesOrder`     | |
+|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_ShipToAddress`  |            | `CreateBridge` | `BRG_SalesOrder`     | |
+|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_SalesOrder` |            | `CreateBridge` | `BRG_SalesOrder`     | |
+|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrderLine`            |            | `CreateBridge` | `BRG_SalesOrderLine` | `IsPrimaryHub,AddKey` |
+|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrder`                |            | `CreateBridge` | `BRG_SalesOrderLine` | `AddKey` |
+|         |       | `BFX_RDV`  | `rdv.HUB_Product`                   |            | `CreateBridge` | `BRG_SalesOrderLine` | `AddKey` |
+|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_Product`    |            | `CreateBridge` | `BRG_SalesOrderLine` | |
+|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_SalesOrder` |            | `CreateBridge` | `BRG_SalesOrderLine` | |
+
 
 The created `BRG_Product` Bridge table allows querying the Product information and its Category and Model information through a single table compared to the 5 table join necessary when querying the Hub and Link tables.
 
