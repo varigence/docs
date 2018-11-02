@@ -23,6 +23,10 @@ name: BimlFlex Release Notes
 * Update: Added support for related tables where the related table has `ExcludeFromBuild` set to `Y`. Previously the exclusion would potentially result in validation errors if the references were defined across projects. This update will allow cross-project references of Hubs to be able to build links without separate Hub load packages also being included.
 * Add: support for XmlEscaping in the Metadata Instance for DataItem names. It is, however, not recommended to use `&`, `>`, `<`, `%` characters in Metadata Entity Names.
 * Update: names generated for the Script transformation for file conversion and zipping for Azure Blob storage destinations had a superfluous space. The names have been updated from `SCT - Convert  and Zip <Name> File` to `SCT - Convert and Zip <Name> File`
+* Add: `DROP TABLE` statements to all ELT Stored Procedures to ensure minimum temp space usage in cases automated clean up fails to release temporary resources.
+* Update: RowCount for file source objects are now logged on a per source file basis in the BimlCatalog. This allows separate row counts to be persisted in the BimlCatalog. Previously the row counts for files were transient and only the last file was persisted.
+* Add: support for Point In Time and Bridge tables for Snowflake
+* Update: ZipArchive functionality now zips files as expected in source file ETL SSIS packages
 
 > [!NOTE]
 > An update to the CDC source mechanism has been implemented in this Bundle. This requires both the Bundle and the BimlFlex database to be updated.  
