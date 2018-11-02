@@ -41,16 +41,18 @@ The Updated `RowEffectiveFromDate_SsisExpression` attribute value for default CD
 The updated CDC Source query format now match the below:
 
 ```sql
-SELECT <SourceColumns>
-,CONVERT(VARCHAR(256), [__$start_lsn],1) AS [__$start_lsn],
-CONVERT(VARCHAR(27), CONVERT(DATETIME2, sys.fn_cdc_map_lsn_to_time([__$start_lsn])), 121) AS [__$start_dt]
-,CONVERT(INT, [__$operation]) AS [__$operation]
-,ROW_NUMBER()
-    OVER (
-        PARTITION BY <KeyDefinition>, CONVERT(DATETIME, sys.fn_cdc_map_lsn_to_time([__$start_lsn]))
-        ORDER BY [__$start_lsn], [__$seqval]
-    ) AS [__$rownumber]
-FROM [cdc].[fn_cdc_get_all_changes_<Instance>](<FromLSN>,<ToLSN>, 'all')
+SELECT
+    <SourceColumns>
+    ,CONVERT(VARCHAR(256), [__$start_lsn],1) AS [__$start_lsn]
+    ,CONVERT(VARCHAR(27), CONVERT(DATETIME2, sys.fn_cdc_map_lsn_to_time([__$start_lsn])), 121) AS [__$start_dt]
+    ,CONVERT(INT, [__$operation]) AS [__$operation]
+    ,ROW_NUMBER()
+        OVER (
+            PARTITION BY <KeyDefinition>, CONVERT(DATETIME, sys.fn_cdc_map_lsn_to_time([__$start_lsn]))
+            ORDER BY [__$start_lsn], [__$seqval]
+        ) AS [__$rownumber]
+FROM
+    [cdc].[fn_cdc_get_all_changes_<capture_instance>](<start_lsn>,<end_lsn>, 'all')
 ```
 
 ## Bundle 63408
