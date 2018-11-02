@@ -8,7 +8,7 @@ name: BimlFlex Release Notes
 > Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
-## Bundle v.next
+## Bundle 63502
 
 * Add: new setting for controlling file loads from subfolders. The setting `SsisProcessSubfolders` is available in the Settings sheet. This controls if the SSIS flat file source load process should iterate through subfolders when loading files or not. The default setting `N` match the existing behavior. Update this setting to `Y` to allow the load process to load all matching files from the defined folder and all subfolders.
 * Add: Support for custom connection managers. Use an Extension Point to define a custom connection using Biml and use a source override to completely customize the source load process. A new System Type `Custom System` has been added that can be used with the `Custom Component` Connection Type. Use the `Connection Override` Extension Point from the `Connection` Extension Points Ribbon area to override the connection using Biml.
@@ -22,6 +22,7 @@ name: BimlFlex Release Notes
 * Update: A feature update added an additional parameter to the exposed BimlFlex `GetSqlToBk()` function. This additional parameter allows the creation function to cascade through references. This affected existing Extension Points using the function. A backwards-compatible version of the function has been added in this Bundle.
 * Update: Added support for related tables where the related table has `ExcludeFromBuild` set to `Y`. Previously the exclusion would potentially result in validation errors if the references were defined across projects. This update will allow cross-project references of Hubs to be able to build links without separate Hub load packages also being included.
 * Add: support for XmlEscaping in the Metadata Instance for DataItem names. It is, however, not recommended to use `&`, `>`, `<`, `%` characters in Metadata Entity Names.
+* Update: names generated for the Script transformation for file conversion and zipping for Azure Blob storage destinations had a superfluous space. The names have been updated from `SCT - Convert  and Zip <Name> File` to `SCT - Convert and Zip <Name> File`
 
 > [!NOTE]
 > An update to the CDC source mechanism has been implemented in this Bundle. This requires both the Bundle and the BimlFlex database to be updated.  
@@ -47,8 +48,6 @@ CONVERT(VARCHAR(27), CONVERT(DATETIME2, sys.fn_cdc_map_lsn_to_time([__$start_lsn
     ) AS [__$rownumber]
 FROM [cdc].[fn_cdc_get_all_changes_<Instance>](<FromLSN>,<ToLSN>, 'all')
 ```
-
-
 
 ## Bundle 63408
 
