@@ -35,7 +35,7 @@ Use the link in the trial email to download the installer
 ### Check bitness of Microsoft Excel
 
 > [!NOTE]
-> Microsoft Excel is a prerequisite for installing and using the BimlFlex Metadata Editor.
+> Microsoft Excel is a prerequisite for installing and using the BimlFlex Excel-based Metadata Editor.
 
 Check the bitness of the local installation of Microsoft Excel using the [Microsoft guidelines available here](https://support.office.com/en-us/article/About-Office-What-version-of-Office-am-I-using-932788B8-A3CE-44BF-BB09-E334518B8B19).
 
