@@ -9,9 +9,12 @@ name: BimlFlex Release Notes
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
 > [!IMPORTANT]
-> The 63502 version requires that the BimlStudio 2018 R3 release is installed first. Please download and upgrade from the following links:
-> BimlStudio: [https://www.varigence.com/downloads/bimlstudiosetup.exe](https://www.varigence.com/downloads/bimlstudiosetup.exe)
-> BimlFlex: [https://www.varigence.com/downloads/bimlflexsetup.exe](https://www.varigence.com/downloads/bimlflexsetup.exe)
+> The 63502 Bundle version requires that the BimlStudio 2018 R3 release is installed first.
+>
+> Please download and upgrade from the following links:
+>
+> * BimlStudio: [https://www.varigence.com/downloads/bimlstudiosetup.exe](https://www.varigence.com/downloads/bimlstudiosetup.exe)
+> * BimlFlex: [https://www.varigence.com/downloads/bimlflexsetup.exe](https://www.varigence.com/downloads/bimlflexsetup.exe)
 
 ## Bundle 63502
 
