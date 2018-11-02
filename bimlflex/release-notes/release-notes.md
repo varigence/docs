@@ -8,6 +8,11 @@ name: BimlFlex Release Notes
 > Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
+> [!IMPORTANT]
+> The 63502 version requires that the BimlStudio 2018 R3 release is installed first. Please download and upgrade from the following links:
+> BimlStudio: [https://www.varigence.com/downloads/bimlstudiosetup.exe](https://www.varigence.com/downloads/bimlstudiosetup.exe)
+> BimlFlex: [https://www.varigence.com/downloads/bimlflexsetup.exe](https://www.varigence.com/downloads/bimlflexsetup.exe)
+
 ## Bundle 63502
 
 * Add: new setting for controlling file loads from subfolders. The setting `SsisProcessSubfolders` is available in the Settings sheet. This controls if the SSIS flat file source load process should iterate through subfolders when loading files or not. The default setting `N` match the existing behavior. Update this setting to `Y` to allow the load process to load all matching files from the defined folder and all subfolders.
