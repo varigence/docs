@@ -6,10 +6,10 @@ When the SSIS engine is running on the same server as the SQL Server engine the 
 
 Apart from options to:
 
-- increase total memory in the machine
-- run SQL Server and SSIS on different machines
-- configure SQL Server max memory usage to leave RAM available to SSIS
-- optimize loads to minimize memory usage
+* increase total memory in the machine
+* run SQL Server and SSIS on different machines
+* configure SQL Server max memory usage to leave RAM available to SSIS
+* optimize loads to minimize memory usage
 
 the following considerations are also available in BimlFlex to affect memory usage
 
@@ -19,16 +19,15 @@ use the BimlFlex settings metadata sheet to tweak the behavior of the created pa
 
 | SettingKey | SettingValue | Comment |
 | --- | --- | --- |
-| DvUseCacheLookup | default: N | Setting this to Y will configure the SSIS packages to use Cache Lookups for the Data Vault load. This will cache the lookup data to disk |
-| PsaUseCacheLookup | default: N | Setting this to Y will configure the SSIS packages to use Cache Lookups for the PSA lookup in Source to Staging loads. This will cache the lookup data to disk |
-| SsisBufferTempStoragePath | |
-| SsisBLOBTempStoragePath | |
-| SsisDefaultBufferMaxRows | default: 10000 | Start by setting AutoAdjust to True |
-| SsisDefaultBufferSize | default: 10485760 | Start by setting AutoAdjust to True |
-| SsisMaximumInsertCommitSize | default: 2147483647 | |
-| SsisRowsPerBatch | default: 500000 | |
-| SsisAutoAdjustBufferSize | default: TRUE | Allows SSIS to adjust buffer sizes as needed |
-
+| `DvUseCacheLookup` | default: `N` | Setting this to `Y` will configure the SSIS packages to use Cache Lookups for the Data Vault load. This will cache the lookup data to disk |
+| `PsaUseCacheLookup` | default: `N` | Setting this to `Y` will configure the SSIS packages to use Cache Lookups for the PSA lookup in Source to Staging loads. This will cache the lookup data to disk |
+| `SsisBufferTempStoragePath` | |
+| `SsisBLOBTempStoragePath` | |
+| `SsisDefaultBufferMaxRows` | default: `10000` | Start by setting AutoAdjust to `True` |
+| `SsisDefaultBufferSize` | default: `10485760` | Start by setting AutoAdjust to `True` |
+| `SsisMaximumInsertCommitSize` | default: `2147483647` | |
+| `SsisRowsPerBatch` | default: `500000` | |
+| `SsisAutoAdjustBufferSize` | default: `TRUE` | Allows SSIS to adjust buffer sizes as needed |
 
 ## 32 vs 64-bit runtime
 
