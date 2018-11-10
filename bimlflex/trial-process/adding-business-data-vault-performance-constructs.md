@@ -96,14 +96,13 @@ In the trial process, Bridge tables are added for the Product, Sales Order Line 
 |         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_Product`    |            | `CreateBridge` | `BRG_SalesOrderLine` | |
 |         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_SalesOrder` |            | `CreateBridge` | `BRG_SalesOrderLine` | |
 
-
 The created `BRG_Product` Bridge table allows querying the Product information and its Category and Model information through a single table compared to the 5 table join necessary when querying the Hub and Link tables.
 
 > ![NOTE]
 > Note that the Bridge table needs to be joined to any Link Satellites tracking effectiveness of relationships as well as any relevant Satellite to provide effectiveness and validity contexts for the query.
 > More information on interpreting the BRG and PIT constructs are available here: @bimlflex-dimensional-model-from-data-vault
 
-The metadata for the trial process should now include 2 Bridge tables and 2 Point In Time tables.
+The metadata for the trial process should now include 3 Bridge tables and 5 Point In Time tables.
 
 ### Building PIT and BRG Tables
 
