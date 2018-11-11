@@ -6,7 +6,7 @@ title: Adding Business Data Vault Performance Constructs
 
 ## Supporting Videos
 
-![Adding Business Data Vault Performance Constructs cCenter](https://www.youtube.com/watch?v=   ?rel=0&autoplay=0 "Adding Business Data Vault Performance Constructs")
+![Adding Business Data Vault Performance Constructs cCenter](https://www.youtube.com/watch?v=zwVlHXpwsJk?rel=0&autoplay=0 "Adding Business Data Vault Performance Constructs")
 
 ## Supporting BimlFlex Documentation
 
@@ -22,7 +22,7 @@ For insert-only Data Vault solutions, the Point in Time constructs provides a co
 > Example:
 > A Sales Order has a sale event date time, when the sale occurred. The customer involved is identified through a link to the Customer Hub. The Customer has a Satellite with demographic information as well as Satellites for marketing and promotions, geographic/address information and loyalty status. All these satellites would have individual timelines and finding the relevant rows from each table for the sale event time can result in a complex query. The Point In Time table would pre-calculate these time lines so that the query becomes more straightforward.
 
-The Bridge constructs allows multiple Links surrounding a Hub to be combined in one table, minimizing the required joins.
+The Bridge constructs allow multiple Links surrounding a Hub to be combined in one table, minimizing the required joins.
 
 * Point in Time, PIT, tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub
 * Bridge, BRG, tables are used to link business entities in Hubs, through their link tables, into easy to query constructs
@@ -138,7 +138,7 @@ Run the Stored Procedure create script in SQL Server Management Studio to create
 
 ### Building the PIT and BRG load packages
 
-Once the metadata for the PIT and BRG objects is available in BimlStudio there are also Batches generated for executing the PIT and BRG stored procedures.
+Once the metadata for the PIT and BRG objects is available in BimlStudio there will also be Batches generated for executing the PIT and BRG stored procedures.
 
 The default name for these are built out of the Data Vault load name with either PIT or BRG added, in the trial demo case the following Batch packages are added to the Load Data Vault SSIS project:
 
