@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-process-creating-and-configuring-a-bimlflex-project
+uid: bimlflex-trial-creating-and-configuring-a-bimlflex-project
 title: Creating and configuring a BimlFlex project
 ---
 

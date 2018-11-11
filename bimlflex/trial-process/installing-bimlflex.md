@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-process-installing-bimlflex
+uid: bimlflex-trial-installing-bimlflex
 title: Installing BimlFlex
 ---
 # Installing BimlFlex
@@ -10,9 +10,9 @@ title: Installing BimlFlex
 
 ## Supporting BimlFlex Documentation
 
-- @bimlflex-developer-installation
-- @bimlflex-analyst-installation
-- @bimlflex-server-installation
+* @bimlflex-developer-installation
+* @bimlflex-analyst-installation
+* @bimlflex-server-installation
 
 ## BimlFlex
 
@@ -40,7 +40,7 @@ Use the link in the trial email to download the installer
 Check the bitness of the local installation of Microsoft Excel using the [Microsoft guidelines available here](https://support.office.com/en-us/article/About-Office-What-version-of-Office-am-I-using-932788B8-A3CE-44BF-BB09-E334518B8B19).
 
 > [!WARNING]
-> Install only the bitness version that match the installed Excel verison.
+> Install only the bitness version that match the installed Excel version.
 
 ### Install BimlFlex
 

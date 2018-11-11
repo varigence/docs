@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-applying-data-type-mappings
+title: Applying Data Type Mappings
+---
 # Applying Data Type Mappings
 
 ## Supporting Videos

@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-configurations-and-settings-in-bimlflex
+title: Configurations and Settings in BimlFlex
+---
 # Configurations and Settings in BimlFlex
 
 ## Supporting Videos

@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-process-installing-bimlstudio
+uid: bimlflex-trial-installing-bimlstudio
 title: Installing BimlStudio
 ---
 # Installing BimlStudio
@@ -10,10 +10,10 @@ title: Installing BimlStudio
 
 ## Supporting BimlFlex Documentation
 
-- @bimlstudio-user-guide
-- @bimlflex-developer-installation
-- @bimlflex-analyst-installation
-- @bimlflex-server-installation
+* @bimlstudio-user-guide
+* @bimlflex-developer-installation
+* @bimlflex-analyst-installation
+* @bimlflex-server-installation
 
 ## BimlStudio
 

@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-using-prepared-trial-metadata
+title: Using prepared trial metadata
+---
 # Using prepared trial metadata
 
 ## Supporting Videos

@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-building-business-keys-for-data-vault
+title: Building Business Keys for Data Vault
+---
 # Building Business Keys for Data Vault
 
 ## Supporting Videos

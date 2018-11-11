@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-applying-load-parameters
+title: Applying Load Parameters
+---
 # Applying Load Parameters
 
 ## Supporting Videos

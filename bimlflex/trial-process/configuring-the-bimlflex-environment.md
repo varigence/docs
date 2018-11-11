@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-configuring-the-bimlflex-environment
+title: Configuring the BimlFlex Environment
+---
 # Configuring the BimlFlex Environment
 
 ## Supporting Videos

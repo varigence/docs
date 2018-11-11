@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-creating-the-scaffolding-metadata
+title: Creating the scaffolding metadata
+---
 # Creating the scaffolding metadata
 
 ## Supporting Videos

@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-modeling-of-source-metadata
+title: Modeling of Source Metadata
+---
 # Modeling of Source Metadata
 
 ## Supporting Videos

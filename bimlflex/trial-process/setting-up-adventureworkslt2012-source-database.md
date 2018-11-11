@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-setting-up-adventureworkslt2012-source-database
+title: Setting up the AdventureWorksLT source database
+---
 # Setting up the AdventureWorksLT source database
 
 ## Supporting Videos
@@ -6,7 +10,7 @@
 
 ## Supporting Documentation
 
-- [Microsoft SQL Server Samples](https://github.com/Microsoft/sql-server-samples)
+* [Microsoft SQL Server Samples](https://github.com/Microsoft/sql-server-samples)
 
 ## Setting up AdventureWorks LT
 

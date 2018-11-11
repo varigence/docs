@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-process-upgrading-a-bimlflex-project
+uid: bimlflex-trial-upgrading-a-bimlflex-project
 title: Upgrading a BimlFlex Project
 ---
 
@@ -11,7 +11,7 @@ title: Upgrading a BimlFlex Project
 
 ## Supporting BimlFlex Documentation
 
-- [Upgrading BimlFlex through BimlStudio](../user-guide/upgrading-bimlflex-through-bimlstudio.md)
+* [Upgrading BimlFlex through BimlStudio](../user-guide/upgrading-bimlflex-through-bimlstudio.md)
 
 ## Create and configure the BimlFlex project
 

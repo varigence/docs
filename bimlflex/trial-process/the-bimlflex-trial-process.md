@@ -1,10 +1,14 @@
+---
+uid: bimlflex-trial-the-bimlflex-trial-process
+title: The BimlFlex Trial Process
+---
 # The BimlFlex Trial Process
 
 ## Supporting BimlFlex Trial Documentation
 
-- @bimlflex-trial-process
-- [BimlFlex Product Information](https://varigence.com/BimlFlex)
-- @bimlflex-user-guide
+* @bimlflex-trial-process
+* [BimlFlex Product Information](https://varigence.com/BimlFlex)
+* @bimlflex-user-guide
 
 ## What is BimlFlex
 

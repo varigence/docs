@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-dimensional-model
+uid: bimlflex-trial-dimensional-model
 title: BimlFlex Dimensional Model
 ---
 # Dimensional Model

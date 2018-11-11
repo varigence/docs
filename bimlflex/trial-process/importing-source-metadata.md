@@ -1,3 +1,7 @@
+---
+uid: bimlflex-trial-importing-source-metadata
+title: Importing Source Metadata
+---
 # Importing Source Metadata
 
 ## Supporting Videos
@@ -6,7 +10,7 @@
 
 ## Supporting BimlFlex Documentation
 
-- @bimlflex-importing-metadata
+* @bimlflex-importing-metadata
 
 ## Import Trial Source Metadata
 
@@ -28,13 +32,13 @@ BimlFlex will read all specified metadata from the chosen connection into the Ex
 
 The metadata import dialog provides a set of options for managing
 
-- What to import
-- Naming conventions
-- Inferred metadata
-- Options
-- how to treat already imported Metadata
-- If the Record Source code from the connection should be added to the Business Key. This is useful in the Data Vault modelling process in cases where unwanted data overlap might happen.
-- If source relationships should be re-pointed to use the Business Keys instead of using the derived source constraints
+* What to import
+* Naming conventions
+* Inferred metadata
+* Options
+* how to treat already imported Metadata
+* If the Record Source code from the connection should be added to the Business Key. This is useful in the Data Vault modelling process in cases where unwanted data overlap might happen.
+* If source relationships should be re-pointed to use the Business Keys instead of using the derived source constraints
 
 Once all settings have been reviewed the import function will read the metadata from the source into the Excel sheets.
 Tables are added to the Objects sheet. Columns are added to the Columns sheet.
