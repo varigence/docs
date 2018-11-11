@@ -14,7 +14,7 @@ How to derive a valid delta is an important steps in the analysis of a source sy
 
 For some sources there are change deltas presented for easy consumption, others have Change Data Capture (CDC) or Change Tracking (CT) enabled. Some sources have no concept of change tracking so the data warehouse architect needs to analyze change patterns and derive an alternate change detection or delta sourcing approach.
 
-One common approach is to use a high watermark column that can serve as a parameter for loading. The columns max value at each load is stored in the parameters table in the BimlCatalog and that value is used as a query parameter on the next load.
+One common approach is to use a high watermark column that serve as a parameter for loading. The columns max value after each load is stored in the parameters table in the BimlCatalog and that value is used as a query parameter on the next load.
 
 BimlFlex has direct support for parameter management, and can either use a simple single value for sources where the new value can be easily derived (such as for a database destination), or it can support source windowing by querying both the from and to values directly from the source for blob storage destinations.
 
