@@ -121,24 +121,24 @@ Column Metadata
 
 | Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | Customer_BK | String | 100 | | | 1 | Key | Y | Y | | | | Y | | | | Customer | | | | FlexToBk(@@rs,CustomerID) | Y | 0 | | AdventureWorksLT.SalesLT.Customer | Customer_BK |
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | CustomerID | Int32 | | | | 2 | Key | | | Y | | | | | | | | | c.CustomerID | | |0 | |
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | AddressID | Int32 | | | | 3 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | AddressLine1 | String | 60 | | | 4 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | AddressLine2 | String | 60|||5|Type 1|||| ||||||||||||0||
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | City | String | 30 | | | 6 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | StateProvince | String | 50 | | | 7 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | CountryRegion | String | 50 | | | 8 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | PostalCode | String | 15 | | | 9 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | Customer_BK | String | 100 | | | 1 | Key | Y | Y | | | | Y | | | | Customer | | | | FlexToBk(@@rs,CustomerID) | Y | 0 | | AdventureWorksLT.SalesLT.Customer | Customer_BK |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | CustomerID | Int32 | | | | 2 | Key | | | Y | | | | | | | | | | c.CustomerID | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | AddressID | Int32 | | | | 3 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | AddressLine1 | String | 60 | | | 4 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | AddressLine2 | String | 60 | | | 5 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | City | String | 30 | | | 6 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | StateProvince | String | 50 | | | 7 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | CountryRegion | String | 50 | | | 8 | Type 1 | | | | | | | | | | | | | | | | 0 | |
-| AdventureWorksLT | SalesLT.CustomerShippingAddress | PostalCode | String | 15 | | | 9 | Type 1 | | | | | | | | | | | | | | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | Customer_BK   | String | 100 | | | 1 | Key    | Y | Y |   | | | Y | | | | | Customer | | |              | FlexToBk(@@rs,CustomerID) | Y | 0 | AdventureWorksLT.SalesLT.Customer | Customer_BK |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | CustomerID    | Int32  |     | | | 2 | Key    |   |   | Y | | |   | | | | |          | | | c.CustomerID | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | AddressID     | Int32  |     | | | 3 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | AddressLine1  | String | 60  | | | 4 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | AddressLine2  | String | 60  | | | 5 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | City          | String | 30  | | | 6 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | StateProvince | String | 50  | | | 7 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | CountryRegion | String | 50  | | | 8 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | PostalCode    | String | 15  | | | 9 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | Customer_BK   | String | 100 | | | 1 | Key    | Y | Y |   | | | Y | | | | | Customer | | |              | FlexToBk(@@rs,CustomerID) | Y | 0 | AdventureWorksLT.SalesLT.Customer | Customer_BK |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | CustomerID    | Int32  |     | | | 2 | Key    |   |   | Y | | |   | | | | |          | | | c.CustomerID | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | AddressID     | Int32  |     | | | 3 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | AddressLine1  | String | 60  | | | 4 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | AddressLine2  | String | 60  | | | 5 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | City          | String | 30  | | | 6 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | StateProvince | String | 50  | | | 7 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | CountryRegion | String | 50  | | | 8 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
+| AdventureWorksLT | SalesLT.CustomerShippingAddress   | PostalCode    | String | 15  | | | 9 | Type 1 |   |   |   | | |   | | | | |          | | |              | | | 0 | |
 
 * The column metadata contain the required columns and their data types.
 * The joined column from the Customer table has an SQL expression applied.
