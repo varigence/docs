@@ -57,7 +57,7 @@ For a PIT definition where only the Hub is included, BimlFlex will automatically
 
 In the trial process the `SalesLT.Product` source table has been split into three Satellites by applying the `Price` and `Thumbnail` names in the `ModelGrouping` column for the relevant source columns. This allows the more rapidly changing price attributes and the larger Thumbnail data to be stored in separate Satellites. This PIT construct allows easy querying across the included Satellites.
 
-For the trial process, apply single row PIT attribute entries for the Address, Customer, ProductCategory and SalesOrderLine entities and a selective PIT for the Product entity:
+For the trial process, apply single row PIT attribute entries for the Address, Customer, ProductCategory, SalesOrder and SalesOrderLine entities and a selective PIT for the Product entity:
 
 | Project | Batch | Connection | Object                       | ColumnName | AttributeKey | AttributeValue |
 | ------- | ----- | ---------- | ---------------------------- | ---------- | ------------ | -------------- |
@@ -67,6 +67,7 @@ For the trial process, apply single row PIT attribute entries for the Address, C
 |         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT`       |            | `CreatePIT`  | `PIT_Product`  |
 |         |       | `BFX_RDV`  | `rdv.SAT_Product_Price_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
 |         |       | `BFX_RDV`  | `rdv.HUB_ProductCategory`    |            | `CreatePIT`  | `PIT_ProductCategory` |
+|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrder`         |            | `CreatePIT`  | `PIT_SalesOrder` |
 |         |       | `BFX_RDV`  | `rdv.HUB_SalesOrderLine`     |            | `CreatePIT`  | `PIT_SalesOrderLine` |
 
 ### Adding Bridge table Metadata
@@ -102,7 +103,7 @@ The created `BRG_Product` Bridge table allows querying the Product information a
 > Note that the Bridge table needs to be joined to any Link Satellites tracking effectiveness of relationships as well as any relevant Satellite to provide effectiveness and validity contexts for the query.
 > More information on interpreting the BRG and PIT constructs are available here: @bimlflex-trial-dimensional-model
 
-The metadata for the trial process should now include 3 Bridge tables and 5 Point In Time tables.
+The metadata for the trial process should now include 3 Bridge tables and 6 Point In Time tables.
 
 ### Building PIT and BRG Tables
 
