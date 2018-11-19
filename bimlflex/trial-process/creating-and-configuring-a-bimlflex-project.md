@@ -55,9 +55,9 @@ Review the connection and login information to the BimlFlex metadata database. I
 
 In the BimlFlex configuration, create a new Customer and name it `BimlFlex Trial Project`
 
-### Configure BimlStudio to build for Sal Server 2016 SSIS
+### Configure BimlStudio to build for correct SQL Server SSIS version
 
-Right-click the project name `BimlFlex Trial Project.mst` in the logical view and choose properties to display the BimlStudio project properties. Update the SQL Server version setting to build out to the correct SQL Server version.
+Right-click the project name `BimlFlex Trial Project.mst` in the logical view and choose properties to display the BimlStudio project properties. Update the SQL Server version settings to build out to the correct SQL Server and SSIS version.
 
 For the `DDL Build Mode` setting, change the default `SsisPackages` to `None`. BimlStudio normally creates SSIS Projects and packages to create all databases, schemas and tables by default. Since BimlFlex uses either the Generate Scripts function or the separately created SSDT Project, these automatically generated projects are not needed.
 
