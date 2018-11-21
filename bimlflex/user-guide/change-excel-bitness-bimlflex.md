@@ -47,8 +47,8 @@ For projects using source control for the project it is possible to do an initia
 
 The template location for the Excel files are:
 
-* 32-bit: [`%programfiles(x86)%\Varigence\BimlFlex\5.0\BimlFlex.xlsx`](file://%programfiles(x86)%/Varigence/BimlFlex/5.0/)
-* 64-bit: [`%programfiles%\Varigence\BimlFlex\5.0\BimlFlex.xlsx`](file://%programfiles%/Varigence/BimlFlex/5.0/)
+* 32-bit: `%programfiles(x86)%\Varigence\BimlFlex\5.0\BimlFlex.xlsx`
+* 64-bit: `%programfiles%\Varigence\BimlFlex\5.0\BimlFlex.xlsx`
 
 Copy the correct template file from the correct bitness location to the project folder. Either replace the existing file or create a copy with a bitness-version-specific file name.
 
