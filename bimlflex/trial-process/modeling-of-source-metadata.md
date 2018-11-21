@@ -486,17 +486,3 @@ Any freeform metadata comments about the column.
 #### IsDeleted
 
 The `IsDeleted` flag is used to mark a row as soft-deleted from the metadata. By setting the flag to `Y` and then setting the current sheet the row is marked as deleted. It is possible to undelete rows by changing the `Show Deleted` setting in the Metadata Connection pane and getting the metadata. Any rows marked as deleted will appear in the sheet marked as deleted.
-
-### Applying load parameters
-
-Deriving a valid delta is one of the most important steps in the analysis of a source system.
-
-For some sources there are change deltas presented for easy consumption, others have CDC enabled. Some sources have no concept of change tracking so the data warehouse architect needs to analyze change patterns and derive an alternate delta sourcing approach.
-
-One common approach is to use a high watermark column that can serve as a parameter for loading. The columns max value at each load is stored in the parameters table in the BimlCatalog and that value is used as a query parameter on the next load.
-
-BimlFlex has direct support for parameter management and can either use a simple single value for sources where the new value can be easily derived (such as for a database destination) or it can support source windowing by querying the high value directly from the source.
-
-Load parameters are not part of the trial process.
-
-More information on parameters is available here: @bimlflex-parameters
