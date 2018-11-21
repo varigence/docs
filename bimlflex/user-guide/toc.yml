@@ -23,6 +23,8 @@
     href: support-process.md
   - name: Debug Utilities
     href: debug-utilities.md
+  - name: Change the BimlFlex Excel bitness
+    href: change-excel-bitness-bimlflex.md
 
 - name: Metadata and Settings
   items:
