@@ -32,7 +32,7 @@ BimlFlex has 3 types of keys managed through metadata:
 * Business Key
 * Alternate Business Key
 
-A Primary Key is used to define the grain of the table, same way as a primary key normally works. For a staging and persistent staging load the primary key is used to differentiate between a new row and an update to an already loaded row. When generating table scripts from BimlFlex the defined primary key columns will be used to build the staging and persistent staging primary keys. The default behavior is to generate the Primary Key together with the `RowEffectiveFrom` column.
+A Primary Key is used to define the grain of the table, same way as a database primary key normally works. For a staging and persistent staging load the primary key is used to differentiate between a new row and an update to an already loaded row. When generating table scripts from BimlFlex the defined primary key columns will be used to build the staging and persistent staging primary keys. The default behavior is to generate the Primary Key together with the `RowEffectiveFrom` column.
 
 A source table can have multiple columns in the Primary Key definition.
 
