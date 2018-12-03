@@ -6,3 +6,5 @@
   href: using-sensitive-parameters-in-ssis-catalog.md
 - name: Adding BimlFlex custom SSIS components to Azure Integration Runtime
   href: adding-ssis-custom-components-to-azure-integration-runtime.md
+- name: How to find the Extension Point target
+  href: find-extension-point-target.md
