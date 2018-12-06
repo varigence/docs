@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-metadata-batches
-title: Batches
+title: BimlFlex Batches
 ---
 # Batches
 

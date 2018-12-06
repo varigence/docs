@@ -1,6 +1,6 @@
 # FTP
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Packages>
         <Package Name="My Package" ConstraintMode="Linear">

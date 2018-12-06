@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-developer-installation
-title: Developer Installation
+title: BimlFlex Developer Installation
 ---
 # Developer Installation
 
@@ -8,40 +8,42 @@ Developer installations provide the complete developer and SSIS generation envir
 
 Other Installation Types are:
 
-* [Analyst](analyst-installation.md)
-* [Server](server-installation.md)
+* @bimlflex-analyst-installation
+* @bimlflex-server-installation
 
 ## Installation Media
 
 Varigence provides two installers:
 
-1. BimlToolsSetup\_(Version).exe
-2. BimlFlexSetup\_(Version).exe
+1. `BimlStudioSetup_(Version).exe`
+1. `BimlFlexSetup_(Version).exe`
 
-## BimlTools Setup Installation Wizard
+## BimlStudio Setup Installation Wizard
 
-The BimlTools Setup installation file contains the BimlStudio application.
+The BimlStudio Setup installation file contains the BimlStudio application.
 
-Run the BimlTools installation and choose what options to install.
+Run the BimlStudio installation and choose what options to install.
 
-To be able to build out 64 b packages the corresponding 64 b SSIS components needs to be available (e.g. through a local SQL Server installation). If only the 32 b SSDT BI/Visual Studio development tools are installed BimlStudio will only be able to build out in 32 b. To be able to run the 64 b BimlStudio version and still build successfully, install both BimlStudio versions and choose to build 32 b from the 64 b version.
+To be able to build out packages in 64 bit mode, the corresponding 64 bit SSIS components needs to be available (e.g. through a local SQL Server installation). If only the 32 bit SSDT BI/Visual Studio development tools are installed, BimlStudio will only be able to build out packages in 32 bit mode. To be able to run the 64 bit BimlStudio version and still build successfully in 32 bit mode, install both BimlStudio versions and choose to build 32 bit from the 64 bit version.
 
-![Installation Animation](images/bimlstudio-ani-v5-install-varigence-bimlstudio-2017.1-web.gif)
+![Installation -center](images/bimlflex-ss-v5-bimlstudio-installer-install.png "Installation")
 
 ## BimlFlex Setup Installation Wizard
 
-The BimlFlex Setup Installation file contains the BimlFlex add-ins, BimlFlex Excel Add-in and BimlFlex SSIS Custom Components.
+The BimlFlex Setup Installation file contains the BimlFlex Excel add-in.
 
 Run the BimlFlex installation and choose what options to install.
 
 Developers need to have both BimlStudio and the BimlFlex components installed.
 
-![Installation Animation](images/bimlflex-ani-v5-install-varigence-bimlflex-2017.1-web.gif "Installation Animation")
+![Installation -center](images/bimlflex-ss-v5-bimlflex-installer-install.png "Installation")
 
 ## SSIS Components
 
 The Varigence Custom SSIS Components are required for building and testing the SSIS Packages for developers opening the generated SSIS packages in Visual Studio and for running the packages on an SSIS Server.
 
+The SSIS Custom components are installed separately, [read about the installation here](ssis-custom-components.md)
+
 ## Uninstallation
 
-If the Applications or components require uninstallation, they can use the standard "Uninstall a Program" option in Control Panel, Programs, Programs and Features.
+If the Application require uninstallation, they can use the standard "Uninstall a Program" option in Control Panel, Programs, Programs and Features.

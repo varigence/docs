@@ -1,6 +1,6 @@
 # Script Component Project
 
-```xml
+```biml
 <!-- This is Script Component Project that accesses Azure DataMarket data, pulls the data down 
         and stores it as new rows in the table.  -->
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">

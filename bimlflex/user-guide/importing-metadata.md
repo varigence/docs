@@ -1,3 +1,7 @@
+---
+uid: bimlflex-importing-metadata
+title: BimlFlex Importing Metadata
+---
 # Importing Metadata
 
 The primary source BimlFlex uses to generate Data Warehousing and Business Intelligence assets is metadata. Metadata is most commonly in the form of objects with corresponding attributes.
@@ -94,7 +98,7 @@ Controls if existing metadata should be retained during the import of metadata.
 
 #### Default Properties
 
-This controls default behaviour of inferred Business Keys.
+This controls default behavior of inferred Business Keys.
 
 * Pad Business Keys (Amount) – defines business key width
 * BusinessKey Suffix - Optionally add a suffix onto column name to indicate what is a business key

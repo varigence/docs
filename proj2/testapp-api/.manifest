@@ -1,5 +1,0 @@
-{
-  "testapp": "testapp.yml",
-  "testapp.testclass": "testapp.testclass.yml",
-  "testapp.testclass.#ctor": "testapp.testclass.yml"
-}

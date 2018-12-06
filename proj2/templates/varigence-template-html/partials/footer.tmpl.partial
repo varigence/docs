@@ -1,0 +1,14 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<footer>
+<div id="footer-wrapper" style="margin-top: 30px;">
+<div id="footerCap"></div>
+<div id="footer">
+<div class="product-section">
+    <div class="inner-container">
+        <p style="font-size: 12px; padding: 10px 0;">Copyright © Varigence 2018</p>
+    </div>
+</div>
+</div>
+</div>
+</footer>

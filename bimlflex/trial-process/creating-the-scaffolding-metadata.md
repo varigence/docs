@@ -1,8 +1,12 @@
+---
+uid: bimlflex-trial-creating-the-scaffolding-metadata
+title: Creating the scaffolding metadata
+---
 # Creating the scaffolding metadata
 
 ## Supporting Videos
 
-![Creating Sample Metadata](https://www.youtube.com/watch?v=YJTrhoQW6qw)
+![Creating Sample Metadata](https://www.youtube.com/watch?v=-aeuQS_IBCQ?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
@@ -10,7 +14,9 @@
 
 ## Opening the Excel metadata editor
 
-The first time the Excel metadata editor requests data from a new customer it will ask if sample metadata should be created. Creating the sample metadata will create the scaffolding for the trial process.
+The first time the Excel metadata editor requests data from a newly created customer, it will ask if sample metadata should be created.
+
+Creating the sample metadata will create the scaffolding for the trial process.
 
 Scaffolding metadata was created as part of [Creating and Configuring a BimlFlex project](creating-and-configuring-a-bimlflex-project.md). This documentation describes how to recreate it by creating a new customer.
 
@@ -22,6 +28,8 @@ The following detailed steps walks through the creation of the BimlFlex scaffold
 
 ### Generating the scaffolding metadata
 
-For a new customer, click the `Get All Entities` button in the BimlFlex tab in the Excel Metadata editor. Create the sample metadata by clicking the button in the dialog.
+Either create a new BimlFlex project in BimlStudio or reuse an existing project.
 
-The trial process assumes the connections and database names are all kept as the default names. The connection strings to the databases on the connections sheet should be updated to match the SQL Server used for the data warehouse. It is recommended to use Integrated Security.
+In the Excel metadata editor, click `Create New Customer` to create a new metadata customer in the BimlFlex database.
+
+Click the `Get All Entities` button in the BimlFlex tab in the Excel Metadata editor. Allow BimlFlex to create the sample metadata by clicking the button in the dialog.

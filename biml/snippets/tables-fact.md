@@ -1,6 +1,6 @@
 # Fact
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <!-- This sample illustrates a fact table with columns and measures. -->

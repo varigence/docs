@@ -2,15 +2,15 @@
 
 ## What's New in BimlExpress 2018
 
-You can also read the [full BimlExpress 2018 release notes](bimlexpress-release-notes.md)
+You can also read the [full BimlExpress 2018 release notes](bimlexpress-2018.md)
 
-## Convert SSIS Packages to Biml
+### Convert SSIS Packages to Biml
 
 You can now reverse-engineer and convert your SSIS packages to Biml directly in BimlExpress!
 
 ## What's New in BimlExpress 2017
 
-You can also read the [full BimlExpress 2017 release notes](bimlexpress-release-notes.md)
+You can also read the [full BimlExpress 2017 release notes](bimlexpress-2017.md)
 
 ### Preview Pane
 
@@ -22,4 +22,4 @@ With the new Global Include Files, you can now add things like global variables 
 
 ### SSIS Annotations
 
-It is now possible to add SSIS annotations to your packages from Biml!
+BimlExpress 2017 introduced a feature to add SSIS annotations to your packages from Biml.

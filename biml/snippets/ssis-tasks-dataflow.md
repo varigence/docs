@@ -1,6 +1,6 @@
 # Dataflow (Simple)
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Packages>
         <Package Name="Rebuild Warehouse Data" ConstraintMode="Linear" AutoCreateConfigurationsType="None">

@@ -1,6 +1,6 @@
 # Schema
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <!-- This example demonstrates referencing a database schema in a table. -->
     <Schemas>

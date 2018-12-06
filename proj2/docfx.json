@@ -1,11 +1,10 @@
 {
   "metadata": [
     {
-
       "src": [
         {
           "files": [
-            "bimlstudio/**.cs"
+            "src/**/**.dll"
           ],
           "exclude": [
             "**/obj/**",
@@ -13,31 +12,22 @@
           ]
         }
       ],
-      "dest": "bimlstudio/reference-documentation"
-    },
-
-    {
-    "src": [
-      {
-        "files": [
-          "bimlflex/reference-documentation/**.cs"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "_site/**"
-        ]
-      }
-    ],
-    "dest": "generated-bimlflex/reference-documentation"
-  }
+      "dest": "api-reference"
+    }
 ],
 
   "build": {
     "markdownEngineName": "markdig",
 
-
-    
     "content": [
+      {
+        "files": [
+          "api-reference/**.yml",
+          "api-reference/index.md"
+        ],
+		"dest": "biml"
+      },
+
       {
         "files": [ "**/*.yml" ],
         "src": "generated-bimlflex",
@@ -73,7 +63,8 @@
         "files": [
           "bimlflex/user-guide/images/**",
           "bimlexpress/images/**",
-          "content/**"
+          "content/**",
+          "images/**"
         ],
         "exclude": [
           "**/bin/**",
@@ -100,7 +91,73 @@
 
     "dest": "_site",
     "template": [
-      "default"
-    ]
+      "templates/varigence-template-html"
+    ],
+    "globalMetadata": 
+    {
+      "_disableContribution": true,
+      "_appFaviconPath": "images/favicon.png"
+    }
+  },
+
+  "pdf": {
+    "markdownEngineName": "markdig",
+    "template": [
+      "templates/pdf.default",
+      "templates/varigence-template-pdf"
+    ],
+
+    "content": [
+      {
+        "files": [
+          "**index.md",
+          "**toc.yml",
+          "**.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "**_site/**",
+          "**_pdf/**",
+          "**proj2/**",
+          "**posts/**",
+          "**/**readme.md"
+        ],
+        "cwd": "../"
+      },
+      {
+        "files": "pdf/toc.yml"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "bimlflex/user-guide/images/**",
+          "bimlexpress/images/**",
+          "content/**"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "**_site/**",
+          "**proj2/**"
+        ],
+        "cwd": "../"
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "**/bin/**",
+          "**/obj/**",
+          "_pdf/**"
+        ]
+      }
+    ],
+    "dest": "_pdf"
   }
+
 }

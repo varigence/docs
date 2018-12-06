@@ -1,6 +1,6 @@
 # Callable BimlScript (Callee)
 
-```xml
+```biml
 <#@ property name="tableName" type="String" #>
 <#@ property name="lateArriving" type="System.Boolean" #>
 <#

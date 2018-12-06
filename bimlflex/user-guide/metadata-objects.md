@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-metadata-objects
-title: Objects
+title: BimlFlex Objects
 ---
 # Objects
 

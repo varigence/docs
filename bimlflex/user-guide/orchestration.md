@@ -1,3 +1,7 @@
+---
+uid: bimlflex-orchestration
+title: BimlFlex Orchestration
+---
 # Orchestration
 
 BimlFlex includes an Orchestration engine that controls failure scenario management, auditing and logging of runs. All Orchestration data is stored in the BimlCatalog database.
@@ -87,7 +91,7 @@ EXECUTE [ssis].[LogExecutionError]
   ,@ErrorDescription
 ```
 
-The Orcestration passes the ExecutionID, a Boolean, that identifies if the package is a batch or a child package as well as the error code and description.
+The orchestration passes the ExecutionID, a Boolean, that identifies if the package is a batch or a child package as well as the error code and description.
 
 ### Execution Status
 

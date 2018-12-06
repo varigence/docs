@@ -1,6 +1,6 @@
 # MDX Script
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Cubes>
         <!-- This is an example cube definition.  -->

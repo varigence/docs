@@ -1,6 +1,6 @@
 # Partition - Query Source
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Connections>
         <Connection Name="AdventureWorksDW2008" ConnectionString="Data Source=(local);Initial Catalog=AdventureWorksDW2008;Provider=SQLNCLI10.1;Integrated Security=SSPI;" />

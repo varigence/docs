@@ -1,5 +1,7 @@
 # Varigence Documentation
 
+[![Build Status](https://varigence.visualstudio.com/Varigence/_apis/build/status/Varigence%20Docs%20Staging)](https://varigence.visualstudio.com/Varigence/_build/latest?definitionId=18)
+
 Product documentation contents is located in their respective folder.
 
 ## DocFX documentation site
@@ -8,7 +10,7 @@ Documentation site is built using DocFX. [Download DocFX](https://github.com/dot
 
 Build and host the site using the `serve.bat` or `serve.ps1` files in the `proj2` folder. The default site is served on port 8080. Use the shortcut file to open localhost on port 8080, or [click here](http://localhost:8080). Peruse the site and its contents.
 
-Content is stored in md files. Use linting and adhere to best practises for markdown formatting as well as for file names for DocFX.
+Content is stored in md files. Use linting and adhere to best practices for markdown formatting as well as for file names for DocFX.
 
 Sample extensions For [Visual Studio Code](https://code.visualstudio.com/), run from [command line](https://code.visualstudio.com/docs/editor/command-line) to install:
 
@@ -20,9 +22,27 @@ Sample extensions For [Visual Studio Code](https://code.visualstudio.com/), run 
 
 Guidelines for DocFX based markdown format and styling can be [found here](http://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)
 
-Rendering engine is Markdig. Additional styling and formatting options described at the [Markdig Github page](https://github.com/lunet-io/markdig). This allows direct embedding of Youtube videos etc using Markdown syntax rather than html.
+Rendering engine is Markdig. Additional styling and formatting options described at the [Markdig GitHub page](https://github.com/lunet-io/markdig). This allows direct embedding of YouTube videos etc. using Markdown syntax rather than html.
 
 Table of contents files are stored as toc.yml files. Refer to the [DocFX page on toc's](https://dotnet.github.io/docfx/tutorial/intro_toc.html) for more information
+
+## DocFX PDF Builds
+
+to build the PDF version the following prerequisites are needed:
+
+* [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html)
+* Add `C:\Program Files\wkhtmltopdf\bin` to Path
+
+Build sample PDF version using the following command, or use the buildPfd.bat file
+
+`docfx pdf`
+
+More overview information on building to PDF is [available in the tutorial](https://dotnet.github.io/docfx/tutorial/walkthrough/walkthrough_generate_pdf.html)
+
+## Online build queue
+
+The public site is built through Azure pipelines, click this link and the `queue` button to trigger a manual pipeline run:  
+https://varigence.visualstudio.com/Varigence/_build?definitionId=18
 
 ## Documentation Contents
 

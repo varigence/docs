@@ -5,104 +5,106 @@ TODO: Work through this list and update/complete documentation
 Structural changes and updates/investigations:
 
 1. toc.yml stitching for metadata generated content and conceptual contents in DocFX
-    1. add placeholder folders and index.md files for all metadata contents
-1. figure out how to build DocFX documentation from metadata in BimlFlex, from biml and xml contents.
-    1. build api and language reference documentation for Biml
-    1. build reference metadata and extension points documentation from BimlFlex, emulating existing build process
-1. support mermaid, plantuml or similar for diagrams. needs js/css/template updates in the DocFX template
-1. Update site template to match and be injectable into current web site
-1. ci/cd process for building and publishing the contents on to the docs from a publishing branch
-1. Organise all contents in to folders for structure.
-    1. Add toc.yml files for all folders
-    1. add placeholders for missing contents
-1. lint and spell check all contents. decide on us/uk/au English and update consistently
-1. update all video links to use markdown and add the rel/autoplay flags
-1. image sizing in markdown, update css to provide src options for sizing files in markdown syntax or similar, refer: https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown do more testing in DocFX/markdig to see what works best
-1. implement yaml frontmatter for posts folder for the blog
-1. options for centred youtube videos in paragraph
-1. formatting options for multicolumns
-1. add figure contents for all figures https://github.com/lunet-io/markdig/blob/master/src/Markdig.Tests/Specs/FigureFooterAndCiteSpecs.md
-1. 
+    1. [x] add placeholder folders and index.md files for all metadata (code) contents. Needs input from Scott on approach for biml generation. placeholders added for known contents (biml/api-reference and biml/language-reference)
+1. figure out how to build DocFX documentation from metadata in BimlFlex, from biml and xml contents. (Scott already has this working somewhere)
+    1. [] build api and language reference documentation for Biml
+    1. [] build reference metadata and extension points documentation from BimlFlex, emulating existing documentation build process
+1. [] support mermaid, plantuml or similar for diagrams. needs js/css/template updates in the DocFX template. trials points to more work required.
+1. [] Update site template to match and be injectable into current web site
+1. [x] ci/cd process for building and publishing the contents on to the docs from a publishing branch. impl in BimlFlex Visualstudio to preview Azure site. uses plugin for DoxFX build step. 
+1. [x] Organize all contents in to folders for structure.
+    1. [x] Add toc.yml files for all folders
+    1. [x] add placeholders for missing contents
+    1. [x] all files lower case and using - as separator
+1. [] lint and spell check all contents. decide on us/uk/au English and update consistently
+1. [x] update all video links to use markdown and add the rel/autoplay flags
+1. [x] image sizing in markdown, update css to provide src options for sizing files in markdown syntax or similar, refer: https://stackoverflow.com/questions/14675913/changing-image-size-in-markdown do more testing in DocFX/markdig to see what works best. -percentages are added to css as well as sample fixed height for logo svgs.
+1. [x] implement yaml frontmatter for posts folder for the blog. sample contents added. needs blog engine for replacement of current blog. [Yekyll](https://jekyllrb.com) approach has been used for current contents
+1. [] options for centered youtube videos in paragraph (use -center at end of alt text only works for images atm)
+1. [] formatting options for multicolumns. No support in markdown nor markdig found yet
+1. [] add figure contents for all figures https://github.com/lunet-io/markdig/blob/master/src/Markdig.Tests/Specs/FigureFooterAndCiteSpecs.md - Also review and fix why DocFX doesn't render as expected
 
 Main structure of contents, to be maintained in toc as well as folders to make structuring easy without reverting to numbered filenames:
 
 - bimlflex
     - reference-documentation - contains auto-generated contents from the document generator that interprets Biml source code files
-        - Status: TODO: Update and make auto-generation work
+        - [] Status: TODO: Update and make auto-generation work
 
     - release-notes - contains what's new and release notes documents. BimlFlex and BimlStudio UI and dialogs etc needs to link to this document once implemented. The release notes document needs updating when new releases are made. What's new needs to be updated for each main release with marketing type contents
-        - Status: OK
+        - [x] Status: OK
 
     - tips-tricks - for the new Tips & Tricks series. Match videos with md files. Add content to `toc.yml`
-        - Status: Add contents for parameterisation file
-        - TODO: Add TnT video for using Object inheritance for all objects in Batch (i.e. truncate all destination tables before load to MDS)
-        - TODO: Add TnT video on tba
+        - [] TODO: Add contents for parameterisation file to match video
+        - [] TODO: Add TnT video and contents for using Object inheritance in Extension Point for all objects in Batch (i.e. truncate all destination tables before load to MDS)
+        - [] TODO: Add TnT video on [replace-columns-in-the-ssis-data-flow.md](tips-tricks/replace-columns-in-the-ssis-data-flow.md)
+        - [] TODO: Add TnT on Oracle source connection
+        - [x] TODO: Add TnT on Db2 source connection
 
     - user-guide - Full User Guide and Documentation for BimlFlex
         - TODO: Update all existing contents to match current build
         - TODO: Add missing documentation:
             - Add Missing contents here
-            - analyst-installation.md, needs new video of new version
-            - azure-data-warehouse.md, placeholder, needs contents
-            - bimlcatalog-database.md, ok
-            - bimlflex-database.md, placeholder, needs contents
-            - build-deployment-guide.md, placeholder, needs contents. not sure what should be in here?
-            - business-keys-and-relationships.md, placeholder, needs contents
-            - data-mart-templates.md, pretty ok but probably needs complete revamp to new format and contents
-            - data-type-mappings.md,  placeholder, needs contents. reuse trial contents?
-            - data-vault-accelerator.md, pretty ok, needs review and possibly update to new formats in new version
-            - data-vault-templates.md, pretty ok but probably needs complete revamp to new format and contents
-            - deployment-guide.md, ok, maybe update to Sql 2017?
-            - developer-installation.md, needs rewrite to new version with new installer options
-            - excel-add-in.md, needs update to new version with new functionality
-            - export-to-file.md, needs updating with new zipping approach
-            - extension-points.md, needs complete rewrite w new format and be paired up with reference documentation so that format and template etc is autogenerated and this document focusses on implementation and options, application development notes on using the object model etc
-            - importing-metadata.md, needs updating to new version with new functionality and ui
-            - index.md, needs updating links, also needs to be kept updated/synced with changes to contents
-            - initial-setup-and-configuration.md, needs complete rewrite based on new installers and update functionality
-            - master-data-services.md, TODO, needs completion
-            - metadata-attributes.md, TODO, needs completion
-            - metadata-batches.md, TODO, needs completion
-            - metadata-columns.md, TODO, needs completion
-            - metadata-configurations.md, needs review and update to new version
-            - metadata-connections.md, TODO, needs completion
-            - metadata-datatypemappings.md, TODO, needs completion
-            - metadata-objects.md, TODO, needs completion
-            - metadata-parameters.md, needs updating to new version and new functionality
-            - metadata-projects.md, TODO, needs completion
-            - metadata-settings.md, needs review and update to new version
-            - metadata-versions.md, TODO, needs completion
-            - object-inheritance.md, TODO, needs completion
-            - orchestration.md, needs review and update to new version
-            - process-visualization-legend.md, needs updating, should it be used in documentation at all? if so, needs to be referenced from other documents
-            - server-installation.md, ok.
-            - software-and-hardware-requirements.md, ok
-            - source-to-staging-templates.md, needs review and update to new version
-            - ssis-custom-components.md, format and update, link to Catalog site, remove with new version that runs without the custom components
-            - support-process.md, update, complete rewrite without reference to portal, support site, utility app etc. needs new version information on creating/extracting metadata and project contents etc.
-            - support-utility-application.md, to be deleted
-            - upgrade-and-testing-process.md, update with new version information
-            - upgrading-bimlflex-through-bimlstudio.md, update with new version information
+            - [x] analyst-installation.md, needs new video of new version
+            - [] azure-data-warehouse.md, placeholder, needs contents
+            - [x] bimlcatalog-database.md, ok
+            - [x] bimlflex-database.md, placeholder, needs contents
+            - [] build-deployment-guide.md, placeholder, needs contents. not sure what should be in here?
+            - [] business-keys-and-relationships.md, placeholder, needs contents
+            - [] data-mart-templates.md, pretty ok but probably needs complete revamp to new format and contents
+            - [] data-type-mappings.md,  placeholder, needs contents. reuse trial contents?
+            - [] data-vault-accelerator.md, pretty ok, needs review and possibly update to new formats in new version
+            - [] data-vault-templates.md, pretty ok but probably needs complete revamp to new format and contents
+            - [x] deployment-guide.md, ok, maybe update to Sql 2017?
+            - [] developer-installation.md, needs rewrite to new version with new installer options
+            - [] excel-add-in.md, needs update to new version with new functionality
+            - [] export-to-file.md, needs updating with new zipping approach
+            - [] extension-points.md, needs complete rewrite w new format and be paired up with reference documentation so that format and template etc is autogenerated and this document focusses on implementation and options, application development notes on using the object model etc
+            - [] importing-metadata.md, needs updating to new version with new functionality and ui
+            - [] index.md, needs updating links, also needs to be kept updated/synced with changes to contents
+            - [] initial-setup-and-configuration.md, needs complete rewrite based on new installers and update functionality
+            - [] master-data-services.md, TODO, needs completion
+            - [] metadata-attributes.md, TODO, needs completion
+            - [] metadata-batches.md, TODO, needs completion
+            - [] metadata-columns.md, TODO, needs completion
+            - [] metadata-configurations.md, needs review and update to new version
+            - [] metadata-connections.md, TODO, needs completion
+            - [] metadata-datatypemappings.md, TODO, needs completion
+            - [] metadata-objects.md, TODO, needs completion
+            - [] metadata-parameters.md, needs updating to new version and new functionality
+            - [] metadata-projects.md, TODO, needs completion
+            - [] metadata-settings.md, needs review and update to new version
+            - [] metadata-versions.md, TODO, needs completion
+            - [] object-inheritance.md, TODO, needs completion
+            - [] orchestration.md, needs review and update to new version
+            - [] process-visualization-legend.md, needs updating, should it be used in documentation at all? if so, needs to be referenced from other documents
+            - [x] server-installation.md, ok.
+            - [x] software-and-hardware-requirements.md, ok
+            - [] source-to-staging-templates.md, needs review and update to new version
+            - [] ssis-custom-components.md, format and update, link to Catalog site, remove with new version that runs without the custom components
+            - [] support-process.md, update, complete rewrite without reference to portal, support site, utility app etc. needs new version information on creating/extracting metadata and project contents etc.
+            - [x] support-utility-application.md, to be deleted
+            - [x] upgrade-and-testing-process.md, update with new version information
+            - [x] upgrading-bimlflex-through-bimlstudio.md, update with new version information
 
     - trial process
         - TODO: Update to match new build
         - TODO: Add missing documentation:
-            - accelerating data vault not completed
-            - business data vault not completed
-            - building business keys not completed
-            - 2 layer pres layer not completed
-            - creating and configuring a bimlflex project, needs updating with new update process
-            - creating-the-scaffolding-metadata.md, ok
-            - dimensional-model-from-data-vault.md, not completed
-            - importing-source-metadata.md, ok
-            - index.md, ok, needs to be updated and kept in sync with updated contents
-            - installing-bimlflex.md, ok, update with images on new version
-            - installing-bimlstudio.md, update video link, case, images new version
-            - installing-custom-ssis-components.md, update new formats, casings etc
-            - modelling-of-source-metadata.md, not completed, needs formats, casings, links, contents, video, spelling
-            - setting-up-adventureworks-lt-source-database.md, update formats, links, video format, casings
-            - the-bimlflex-trial-process.md, ok
-            - using-prepared-trial-metadata.md, not completed. whole process for trial metadata needs implementation and documentation
+            - [x] accelerating data vault
+            - [] business data vault not completed
+            - [] building business keys not completed
+            - [] 2 layer pres layer not completed
+            - [] creating and configuring a bimlflex project, needs updating with new update process
+            - [x] creating-the-scaffolding-metadata.md, ok
+            - [] dimensional-model-from-data-vault.md, not completed
+            - [x] importing-source-metadata.md, ok
+            - [x] index.md, ok, needs to be updated and kept in sync with updated contents
+            - [x] installing-bimlflex.md, potentially add image
+            - [x] installing-bimlstudio.md, potentially add image
+            - [x] installing-custom-ssis-components.md
+            - [] modelling-of-source-metadata.md, not completed, needs formats, casings, links, contents, video, spelling
+            - [x] setting-up-adventureworks-lt-source-database.md, update formats, links, video format, casings
+            - [x] the-bimlflex-trial-process.md, ok
+            - [] using-prepared-trial-metadata.md, not completed. whole process for trial metadata needs implementation and documentation
 
 ## Sample Markdown snippets
 

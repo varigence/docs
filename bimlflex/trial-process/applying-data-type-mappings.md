@@ -1,8 +1,12 @@
+---
+uid: bimlflex-trial-applying-data-type-mappings
+title: Applying Data Type Mappings
+---
 # Applying Data Type Mappings
 
 ## Supporting Videos
 
-![Applying Data Type Mappings](https://www.youtube.com/watch?v=hGLYrPqOPwg?rel=0&autoplay=0)
+![Applying Data Type Mappings](https://www.youtube.com/watch?v=tNNMbeDJr2U?rel=0&autoplay=0)
 
 ## Supporting BimlFlex Documentation
 
@@ -10,11 +14,14 @@
 
 ## Data Type Mappings
 
-Data Type Mappings is a BimlFlex feature that can expand the Data Types of the source to a larger data type that is more accommodating. This is done to accommodate changes in the source system without the need to update the Data Warehouse or the load process. The most common expansions are for short string representations that might be updated in the source. A Name field of 20 characters might be updated to 250 to accommodate longer customer names. An Integer might be updated to a Big Int when the source counter nears its max. By expanding incoming data it is possible to cater for these updates before they become a load issue.
+Data Type Mappings is a BimlFlex feature that expands the Data Types of the source to a larger data type that is more accommodating. This is done to accommodate changes in the source system without the need to update the Data Warehouse or the load process. The most common expansions are for short string representations that might be updated in the source. A Name field of 20 characters might be updated to 250 to accommodate longer customer names, or it might be changed from `varchar` to `nvarchar` to accommodate international characters. An `integer` might be updated to `big int` when the source counter nears its max. By expanding incoming data it is possible to cater for these future changes before they become a load issue.
 
-Note that larger data types might require more database resources.
+>[!NOTE]
+> Note that larger data types might require more database resources.
 
-BimlFlex provides a rules engine for applying the expansions based on the Business Requirements. Based on the configuration BimlFlex can apply the expansions across all columns for a source and all tables and load patterns will take the new expanded type into consideration.
+BimlFlex provides a rules engine for applying the expansions based on the Business Requirements. Based on the configuration, BimlFlex can apply the expansions across all columns for a source and all tables and load patterns will take the new expanded type into consideration.
+
+The expanded data types will be used in the source to staging load and the new data types will be used in both Staging and Persistent Staging. When the Data Vault accelerator is run on the source metadata the Satellite attributes will inherit the expanded data types from the source definition.
 
 ## Detailed Steps
 

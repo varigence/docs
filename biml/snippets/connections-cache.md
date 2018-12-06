@@ -1,6 +1,6 @@
 # Cache
 
-```xml
+```biml
 <Biml xmlns:Pamlico="http://schemas.mariner.com/pamlico" xmlns="http://schemas.varigence.com/biml.xsd">
     <!-- Cache connection file that uses MyRawFileFormat as its file format -->
     <Connections>

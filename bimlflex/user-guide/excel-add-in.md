@@ -1,3 +1,7 @@
+---
+uid: bimlflex-excel-add-in
+title: BimlFlex Excel Add-in
+---
 # BimlFlex Excel Add-in
 
 BimlFlex Excel Add-in is the tool modelers and developers use to interact with the solution metadata. BimlFlex Excel Add-in connects to the BimlFlex metadata database.

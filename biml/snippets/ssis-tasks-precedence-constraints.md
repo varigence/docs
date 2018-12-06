@@ -1,6 +1,6 @@
 # Precedence Constraints
 
-```xml
+```biml
 <Packages>
         <Package Name="Rebuild Warehouse Schema" ConstraintMode="Parallel">
             <!-- A series of ExecutePackage tasks that are constrained with precedence constraints 

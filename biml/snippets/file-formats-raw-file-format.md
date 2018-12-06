@@ -1,6 +1,6 @@
 # Raw File Format
 
-```xml
+```biml
 <Biml xmlns:Pamlico="http://schemas.mariner.com/pamlico" xmlns="http://schemas.varigence.com/biml.xsd">
     <FileFormats>
         <!-- Specifies a raw file format with 3 columns.  -->

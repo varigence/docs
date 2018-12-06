@@ -1,3 +1,7 @@
+---
+uid: bimlflex-master-data-services
+title: BimlFlex Microsoft SQL Server Master Data Services (MDS) integration
+---
 # Microsoft SQL Server Master Data Services (MDS) integration
 
 TODO: To Complete
@@ -24,7 +28,7 @@ Considering the risk for naming confusion as data is loaded from staging to stag
 
 ## Sample Model
 
-This document uses the Model and Model Category part of the AdventureWorks LT 2012 database as the source of the MDS model data. A reporting workflow requires the data and relationship to be loaded in to MDS. Data Stewards manually manipulate attributes and relationships in MDS for further use in the organisation, including in the EDW.
+This document uses the Model and Model Category part of the AdventureWorks LT 2012 database as the source of the MDS model data. A reporting workflow requires the data and relationship to be loaded in to MDS. Data Stewards manually manipulate attributes and relationships in MDS for further use in the organization, including in the EDW.
 MDS for SQL Server includes its own sample models, including a model for AdventureWorks Products. It is possible to ruse the approach from this document to integrate into the sample models. This document uses a separate model with 2 separate entities
 The sample model is configured and set up as follows:
 
@@ -38,11 +42,11 @@ Log in through the web interface as an MDS administrator to create a model calle
 
 ![TODO](images/image3.png)
 
-For the optional staging tables name this demo uses a ModelName\_EntityName naming convention to manage names. For larger implementations with multiple models and entities this approach will make it easy to know what table goes to what model/entity when staging.
+For the optional staging tables name this demo uses a `ModelName_EntityName` naming convention to manage names. For larger implementations with multiple models and entities this approach will make it easy to know what table goes to what model/entity when staging.
 Our Product and Category entities have the following staging tables created:
 
-* Stg.ProductDemo\_Product\_Leaf
-* Stg.ProductDemo\_Category\_Leaf
+* `Stg.ProductDemo_Product_Leaf`
+* `Stg.ProductDemo_Category_Leaf`
 
 Each entity need the following attributes created:
 
@@ -147,4 +151,4 @@ Considerations for pre/post extension points for truncating staging tables and a
 
 Data vault export views and validation success filtering (sample metadata. Point out that only validated rows are safe to export and work with)
 
-Considerations for hierarchies in mds and export to DW/DV.
+Considerations for hierarchies in MDS and export to DW/DV.

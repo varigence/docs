@@ -1,6 +1,6 @@
 # Import Database Assets
 
-```xml
+```biml
 <!-- This sample demonstrates BimlScript that imports schemas and tables using a connection to AdventureWorksLT. -->
 
 <#@ template language="C#" hostspecific="True"#>

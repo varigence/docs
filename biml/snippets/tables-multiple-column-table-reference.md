@@ -1,6 +1,6 @@
 # Multiple Column Table Reference
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <!-- MultipleColumnTableReference: Columns must be part of the table's unique or primary key.

@@ -1,6 +1,6 @@
 # Foreign Key (Simple)
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <!-- TableReference automatically detects the primary key for a table and includes the correct column in your model

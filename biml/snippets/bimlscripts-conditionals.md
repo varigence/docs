@@ -1,6 +1,6 @@
 # Conditionals
 
-```xml
+```biml
 <#@ template language="C#" hostspecific="True" mergemode="LocalMerge" #>
 <#@ import namespace="Varigence.Hadron.Extensions.DataTransformation" #>
 

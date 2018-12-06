@@ -1,3 +1,7 @@
+---
+uid: bimlflex-initial-setup-and-configuration
+title: BimlFlex Initial Setup and Configuration
+---
 # Initial Setup and Configuration
 
 The setup includes the necessary steps to set up the environments, including:
@@ -12,7 +16,7 @@ Once the BimlStudio and BimlFlex installations are completed, it is time to set 
 
 The development side is focused around the BimlStudio-based BimlFlex project. Open the BimlStudio Application and create a new, empty project.
 
-The first time a new installation starts it requires the License Key. This key is provided as part of the engagement with Varigence. 
+The first time a new installation starts it requires the License Key. This key is provided as part of the engagement with Varigence.
 
 If the key is missing, please contact Varigence BimlFlex Support at [bimlflex-support@varigence.com](mailto:bimlflex-support@varigence.com).
 
@@ -22,7 +26,7 @@ If the key is missing, please contact Varigence BimlFlex Support at [bimlflex-su
 
 In this session, we go through the initial configuration of the BimlFlex project. We will cover the initial deployment of BimlFlex and BimlCatalog databases, create our first metadata instance.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/qhDTwv-jYKc?rel=0" frameborder="0" allowfullscreen></iframe>
+![01 BimlFlex Initial Configuration](https://www.youtube.com/watch?v=qhDTwv-jYKc?rel=0&autoplay=0)
 
 ## Creating the BimlFlex project
 
@@ -38,15 +42,15 @@ The project creation options include project file name and location and also the
 
 ### 32-bit installations
 
-```
-Bundle: C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlFlex.bimlb
+```batchfile
+Bundle: %LOCALAPPDATA%\Varigence\BimlFlex.bimlb
 Excel Add-in: C:\Program Files (x86)\Varigence\BimlFlex\5.0\BimlFlex.xlsx
 ```
 
 ### 64-bit installations
 
-```
-Bundle: C:\Program Files\Varigence\BimlStudio\5.0\BimlFlex.bimlb
+```batchfile
+Bundle: %LOCALAPPDATA%\Varigence\BimlFlex.bimlb
 Excel Add-in: C:\Program Files\Varigence\BimlFlex\5.0\BimlFlex.xlsx
 ```
 
@@ -120,7 +124,7 @@ BimlStudio project options include settings such as the target SQL Server and SS
 
 ### Metadata configuration
 
-The Configurations and Settings sheets in the Metadata Editor contains  options for the generation and behaviour of the project.
+The Configurations and Settings sheets in the Metadata Editor contains  options for the generation and behavior of the project.
 
 This is described in more detail in:
 

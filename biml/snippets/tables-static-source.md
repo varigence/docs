@@ -1,6 +1,6 @@
 # Static Source
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <Dimension Name="DimStatus" ConnectionName="FederalReserveInstruments">

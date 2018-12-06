@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-continuous-integration-and-continuous-delivery
-title: Continuous Integration and Continuous Delivery
+title: BimlFlex Continuous Integration and Continuous Delivery
 ---
 # Continuous Integration and Continuous Delivery
 
@@ -19,7 +19,7 @@ The automated, build server-based approach takes a slightly different approach i
 
 ## Special considerations for Data Warehousing Automation
 
-For a data warehouse it is not enough to make sure the structures and processes are in place for the builds and deployments, it also needs to synchronise dependencies as well as take both existing database structures and data into account. For a classic SQL Server Data Warehouse built with SSIS the build process first needs to create all tables so that the SSIS packages can be built later. The SSIS build process also requires access to both the destination DW tables as well as the source itself. This means utilising online build servers and readily available automation processes for other solution types sometimes needs to be adjusted to fit specific Data Warehousing and ETL process requirements
+For a data warehouse it is not enough to make sure the structures and processes are in place for the builds and deployments, it also needs to synchronize dependencies as well as take both existing database structures and data into account. For a classic SQL Server Data Warehouse built with SSIS the build process first needs to create all tables so that the SSIS packages can be built later. The SSIS build process also requires access to both the destination DW tables as well as the source itself. This means utilizing online build servers and readily available automation processes for other solution types sometimes needs to be adjusted to fit specific Data Warehousing and ETL process requirements
 
 ## Special considerations for SSIS
 
@@ -38,7 +38,7 @@ BimlFlex can locally build out the SQL Server based SSDT project that contains t
 
 ## Build server based approach
 
-Microsoft's normal build command MsBuild.exe does currently not include the functionality to build out ispaq files from *.dtproj files directly. There are several options for building using Visual Studio through devenv.exe as well as creating custom tasks for msbuild to allow it to build the ispac files.
+Microsoft's normal build command MsBuild.exe does currently not include the functionality to build out ispaq files from *.dtproj files directly. There are several options for building using Visual Studio through devenv.exe as well as creating custom tasks for MSBuild to allow it to build the ispac files.
 As the Biml compiler builds the ispaq file as part of the normal project build it is possible to skip this entire step and directly use the generated ispaq file. This allows the build and integration process to work smoothly even in environments that doesn't allow custom installations and configurations.
 
 Note that this build command will create the ispac file in the `bin\Development` folder instead of the bin location used by the BimlStudio build described here.
@@ -63,25 +63,25 @@ Sample Automation process and sample scripts
 
 1. Build the SQL Server SSDT database projects
 
-This step can either use the Biml Compiler or MsBuild to build the artefacts. It connects to the metadata instance and ejects the SSDT Projects. Note that there is an SSDT Project per database.
+This step can either use the Biml Compiler or MSBuild to build the artefacts. It connects to the metadata instance and ejects the SSDT Projects. Note that there is an SSDT Project per database.
 
 The build process uses a separate settings file as well as separate build configuration files to only build the required SSDT Project. This allows the developer to have the original settings files for normal development and makes sure the automated process builds the expected result. The Biml Compiler uses a different build settings file to the MSBuild approach.
 
-1. Compile the SSDT Projects
+2. Compile the SSDT Projects
 
-This step uses the generated SSDT Projects and compiles a dacpac file. This dacpac file can then be deployed to a database server.
+This step uses the generated SSDT Projects and compiles a Dacpac file. This Dacpac file can then be deployed to a database server.
 
-Before the compilation it is sometimes necessary to consider changes and migrations. This example uses dacpacs for database deployments. These are state-based and thus, only state aware. It is up to the developer to manage the journey from the last state to the new state, both for the schema and the existing data. The dacpac deployment process provides some automated conflict resolution approaches but for complex changes it might require developer consideration.
+Before the compilation it is sometimes necessary to consider changes and migrations. This example uses Dacpac's for database deployments. These are state-based and thus, only state aware. It is up to the developer to manage the journey from the last state to the new state, both for the schema and the existing data. The Dacpac deployment process provides some automated conflict resolution approaches but for complex changes it might require developer consideration.
 
-The dacpac build process uses the MSBuild.exe file to build the dacpac file from the .sqlproj project file
+The Dacpac build process uses the MSBuild.exe file to build the Dacpac file from the .sqlproj project file
 
 >[!NOTE]
->Note that the destination folder under the `output` folder is `SSDT\<CustomerUID>\<VersionName>\<DatabaseName>`. The build script needs to reference the correct rproject file for each database.
+>Note that the destination folder under the `output` folder is `SSDT\<CustomerUID>\<VersionName>\<DatabaseName>`. The build script needs to reference the correct project file for each database.
 
 This sample script loops through all databases in the defined list and builds them all.
 
 >[!NOTE]
->Note that the destination folder for the created dacpac is different for this process compared to the Visual Studio based one. By default Visual Studio ejects the dacpac to a subfolder called `Development`
+>Note that the destination folder for the created Dacpac is different for this process compared to the Visual Studio based one. By default Visual Studio ejects the Dacpac to a subfolder called `Development`
 
 ## Sample Scripts
 
@@ -123,15 +123,16 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"output/SqlOnly.mst.r
 
 ```
 
-1. Deploy the Dacpac to SQL Server
+3. Deploy the Dacpac to SQL Server
 
-Once the dacpac is created (including any custom, bespoke, migration logic) it can be deployed to the destination SQL Server.
-The deployment step uses SqlPackage.exe to deploy the dacpac to the specified destination SQL Server.
+Once the Dacpac is created (including any custom, bespoke, migration logic) it can be deployed to the destination SQL Server.
+
+The deployment step uses SqlPackage.exe to deploy the Dacpac to the specified destination SQL Server.
 
 ### Sample Script for deployment
 
-location: project root folder
-filename: `_2.build_sql_dacpac.bat`
+location: project root folder  
+filename: `_2.build_sql_Dacpac.bat`
 
 ```batchfile
 @echo off
@@ -143,11 +144,11 @@ pushd %~dp0
 rem set these to match your environment
 
 SET "MsBuildVersion=14.0"
-SET "CustomerUID=5528d0c8-2ead-42e3-9c0e-7826f25527b7"
+SET "CustomerUID=Your-Customer-Guid-Here"
 SET "VersionName=Version 1"
 SET "DatabaseList=(CI_BFX_STG,CI_BFX_ODS)"
 
-rem call MSBuild to build the dacpac for the ssdt projects.
+rem call MSBuild to build the Dacpac for the ssdt projects.
 rem this loops through all databases specified in the DatabaseList variable array
 rem note that the path to msbuild needs to be specified and match machine.
 
@@ -155,10 +156,10 @@ for %%i in %DatabaseList% do "%programfiles(x86)%\MSBuild\%MsBuildVersion%\Bin\M
 
 ```
 
-### Sample Script to deploy dacpac
+### Sample Script to deploy Dacpac
 
-location: project root folder
-filename: `_3.deploy_sql_dacpac.bat`
+location: project root folder  
+filename: `_3.deploy_sql_Dacpac.bat`
 
 ```batchfile
 @echo off
@@ -170,21 +171,21 @@ pushd %~dp0
 rem set these to match your environment
 
 SET "SqlServerVersionPath=140"
-SET "CustomerUID=5528d0c8-2ead-42e3-9c0e-7826f25527b7"
+SET "CustomerUID=Your-Customer-Guid-Here"
 SET "VersionName=Version 1"
 SET "DatabaseList=(CI_BFX_STG,CI_BFX_ODS)"
 SET "ServerName=localhost\SQL2016"
 
-rem call SqlPackage.exe to deploy the dacpacs to the SQL Server instance for the ssdt projects.
+rem call SqlPackage.exe to deploy the Dacpacs to the SQL Server instance for the ssdt projects.
 rem this loops through all databases specified in the DatabaseList variable array
 
-for %%i in %DatabaseList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServerVersionPath%\DAC\bin\SqlPackage.exe" /Action:Publish /SourceFile:"output\\SSDT\\%CustomerUID%\\%VersionName%\\%%i\\bin\\Output\\%%i.dacpac" /TargetDatabaseName:%%i /TargetServerName:%ServerName%
+for %%i in %DatabaseList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServerVersionPath%\DAC\bin\SqlPackage.exe" /Action:Publish /SourceFile:"output\\SSDT\\%CustomerUID%\\%VersionName%\\%%i\\bin\\Output\\%%i.Dacpac" /TargetDatabaseName:%%i /TargetServerName:%ServerName%
 
 ```
 
 ## Sample Script to build SSIS Project with Biml Compiler
 
-location: project root folder
+location: project root folder  
 filename: `_4.build_ssis_bimlc.bat`
 
 ```batchfile
@@ -202,7 +203,7 @@ rem call the Biml Compiler with the specific resp file to build the SSIS project
 
 ## Sample File to build SSIS Packages with MSBuild
 
-location: project root folder
+location: project root folder  
 filename: `_4.build_ssis_msbuild.bat`
 
 ```batchfile
@@ -247,7 +248,7 @@ for %%i in %ProjectList% do "%programfiles(x86)%\%VisualStudioPath%\Common7\IDE\
 
 ## Deploy ispac file with SSIS Packages to SSIS Catalog
 
-location: project root folder
+location: project root folder  
 filename: `_6.deploy_ssis_ispac.bat`
 
 ```batchfile
@@ -278,7 +279,7 @@ for %%i in %ProjectList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServer
 
 ## Sample settings file for SQL Only builds
 
-location: project root folder
+location: project root folder  
 filename: `SqlOnly.bimlb.settings`
 
 Update this file to reflect project settings and configurations
@@ -288,7 +289,7 @@ Update this file to reflect project settings and configurations
     {
         "Namespace": "",
         "Name": "CustomerUID",
-        "Value": "5528d0c8-2ead-42e3-9c0e-7826f25527b7"
+        "Value": "Your-Customer-Guid-Here"
     },
     {
         "Namespace": "",
@@ -346,7 +347,7 @@ Update this file to reflect project settings and configurations
 
 ## Sample settings file for SSIS Only builds
 
-location: project root folder
+location: project root folder  
 filename: `SsisOnly.bimlb.settings`
 
 Update this file to reflect project settings and configurations
@@ -356,7 +357,7 @@ Update this file to reflect project settings and configurations
     {
         "Namespace": "",
         "Name": "CustomerUID",
-        "Value": "5528d0c8-2ead-42e3-9c0e-7826f25527b7"
+        "Value": "Your-Customer-Guid-Here"
     },
     {
         "Namespace": "",
@@ -414,7 +415,7 @@ Update this file to reflect project settings and configurations
 
 ## Sample SqlOnly.mst.bimlc.resp settings file
 
-location: output folder
+location: output folder  
 filename: `SqlOnly.mst.bimlc.resp`
 
 ```bimlc.resp
@@ -423,7 +424,7 @@ filename: `SqlOnly.mst.bimlc.resp`
 
 ## Sample SqlOnly.mst.ProjectView.bimlproj settings file
 
-location: output folder
+location: output folder  
 filename: `SqlOnly.mst.ProjectView.bimlproj`
 
 ```xml
@@ -448,7 +449,7 @@ filename: `SqlOnly.mst.ProjectView.bimlproj`
 
 ## Sample SqlOnly.mst.resp settings file
 
-location: output folder
+location: output folder  
 filename: `SqlOnly.mst.resp`
 
 ```resp
@@ -457,7 +458,7 @@ filename: `SqlOnly.mst.resp`
 
 ## Sample SsisOnly.mst.bimlc.resp settings file
 
-location: output folder
+location: output folder  
 filename: `SsisOnly.mst.bimlc.resp`
 
 ```resp
@@ -466,7 +467,7 @@ filename: `SsisOnly.mst.bimlc.resp`
 
 ## Sample SsisOnly.mst.ProjectView.bimlproj settings file
 
-location: output folder
+location: output folder  
 filename: `SsisOnly.mst.ProjectView.bimlproj`
 
 ```xml
@@ -491,7 +492,7 @@ filename: `SsisOnly.mst.ProjectView.bimlproj`
 
 ## Sample SsisOnly.mst.resp settings file
 
-location: output folder
+location: output folder  
 filename: `SsisOnly.mst.resp`
 
 ```resp

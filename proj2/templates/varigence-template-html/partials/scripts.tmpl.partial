@@ -1,0 +1,41 @@
+{{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
+
+<!--[if gte IE 9]><!-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<!--<![endif]-->
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="{{_rel}}styles/docfx.vendor.js"></script>
+<script type="text/javascript" src="{{_rel}}styles/docfx.js"></script>
+<script type="text/javascript" src="{{_rel}}styles/main.js"></script>
+<script type="text/javascript" src="{{_rel}}styles/mermaid.min.js"></script>
+
+<script type="text/javascript">
+(function() {
+    jQuery(function() {
+    $("code.lang-biml", document.body).each(function() {
+        var preElement = $(this).parent();
+        preElement.text($(this).text());
+        preElement.addClass("brush: bimlScript");
+        $(this).remove();
+    });});
+}).call(this);
+</script>	
+
+<script type="text/javascript" src="{{_rel}}styles/shCore.js"></script>
+<script type="text/javascript" src="{{_rel}}styles/shBrushBimlScript.js"></script>
+<script type="text/javascript" src="{{_rel}}styles/apply-syntax-highlighter-brush.js"></script>
+
+<script type="text/javascript">
+    (function () {
+        var id = '32b8b448-9b1f-11e8-8cf3-12b6486824f4';
+        var ci_search = document.createElement('script');
+        ci_search.type = 'text/javascript';
+        ci_search.async = true;
+        ci_search.src = 'https://cse.expertrec.com/api/js/ci_common.js?id=' + id;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ci_search, s);
+    })();
+</script>
+   

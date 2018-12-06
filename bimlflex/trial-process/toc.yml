@@ -4,30 +4,35 @@
   href: installing-bimlflex.md
 - name: Installing SSIS Components
   href: installing-custom-ssis-components.md
-
+- name: Configuring the BimlFlex environment
+  href: configuring-the-bimlflex-environment.md
 - name: Creating a BimlFlex Project
   href: creating-and-configuring-a-bimlflex-project.md
+- name: Upgrading a BimlFlex Project
+  href: upgrading-a-bimlflex-project.md
 - name: Creating the Sample Metadata
   href: creating-the-scaffolding-metadata.md
-- name: Setting up AdventureWorksLT Source Database
-  href: setting-up-adventureworks-lt-source-database.md
+- name: Setting up the AdventureWorksLT Source Database
+  href: setting-up-adventureworkslt2012-source-database.md
 - name: Importing Source Metadata
   href: importing-source-metadata.md
 - name: Building Source to Staging
   href: building-databases-tables-and-ssis-packages-for-source-to-staging.md
 - name: Configurations and Settings
-  href: configuration-of-bimlflex.md
-- name: Modelling of Source Metadata
-  href: modelling-of-source-metadata.md
+  href: configurations-and-settings-in-bimlflex.md
+- name: Modeling of Source Metadata
+  href: modeling-of-source-metadata.md
 - name: Applying Data Type Mappings
   href: applying-data-type-mappings.md
+- name: Applying Load Parameters
+  href: applying-load-parameters.md
 - name: Building Business Keys for Data Vault
   href: building-business-keys-for-data-vault.md
 - name: Accelerating the Raw Data Vault Layer
   href: accelerating-the-raw-data-vault-layer.md
-- name: Adding Business Data Vault
+- name: Adding Business Data Vault Performance Constructs
   href: adding-business-data-vault-performance-constructs.md
-- name: Dimensional Model from Data Vault
-  href: dimensional-model-from-data-vault.md
-- name: Using Trial Snapshot Metadata
-  href: using-prepared-trial-metadata.md
+- name: Dimensional Model
+  href: dimensional-model.md
+# - name: Using Trial Snapshot Metadata
+#   href: using-prepared-trial-metadata.md

@@ -1,6 +1,6 @@
 # Send Mail
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Packages>
         <Package Name="FailureNotifier" ConstraintMode="Parallel">

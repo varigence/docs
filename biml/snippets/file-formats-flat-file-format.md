@@ -1,6 +1,6 @@
 # Flat File Format
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <FileFormats>
         <!-- Flat file format that specifies the columns and delimeter used to extract a table from a flat file.  -->

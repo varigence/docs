@@ -10,12 +10,21 @@
     href: server-installation.md
   - name: Initial Setup and Configuration
     href: initial-setup-and-configuration.md
+
+  - name: BimlFlex Database
+    href: bimlflex-database.md
+  - name: BimlCatalog Database
+    href: bimlcatalog-database.md
   - name: Upgrade and Testing Process
     href: upgrade-and-testing-process.md
+  - name: Upgrading BimlFlex through BimlStudio
+    href: upgrading-bimlflex-through-bimlstudio.md
   - name: Support Process
     href: support-process.md
-  - name: Support Utility Application
-    href: support-utility-application.md
+  - name: Debug Utilities
+    href: debug-utilities.md
+  - name: Change the BimlFlex Excel bitness
+    href: change-excel-bitness-bimlflex.md
 
 - name: Metadata and Settings
   items:
@@ -27,8 +36,8 @@
     href: metadata-projects.md
   - name: Objects
     href: metadata-objects.md
-  - name: Objects
-    href: metadata-objects.md
+  - name: Columns
+    href: metadata-columns.md
   - name: Attributes
     href: metadata-attributes.md
   - name: Parameters
@@ -38,7 +47,7 @@
   - name: Settings
     href: metadata-settings.md
   - name: Data Type Mappings
-    href: metadata-datatypemappings.md
+    href: metadata-data-type-mappings.md
   - name: Versions
     href: metadata-versions.md
 
@@ -81,3 +90,9 @@
   - name: Continuous Integration and Deployment
     href: continuous-integration-and-continuous-delivery.md
     
+- name: Reference Documentation
+  items:
+  - name: Metadata Entity Definitions
+    href: metadata-entity-definitions.md
+  - name: Extension Point Definitions
+    href: extension-point-definitions.md

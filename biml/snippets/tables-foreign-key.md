@@ -1,6 +1,6 @@
 # Foreign Key
 
-```xml
+```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <Tables>
         <Table Name="ProductModelProductDescription" ConnectionName="AdventureWorksLT2008" SchemaName="SalesLT" >

@@ -1,3 +1,7 @@
+---
+uid: bimlflex-export-to-file
+title: BimlFlex Export To File
+---
 # Export To File
 
 An outline for using BimlFlex to export data out of a database into files.
@@ -11,7 +15,7 @@ These templates provide the necessary ETL transformations and destination compon
 ## File Options
 
 There are several file format options available for file exports.
-Extension Points can override the behaviour for custom requirements.
+Extension Points can override the behavior for custom requirements.
 
 The Objects metadata spreadsheet in BimlFlex Excel contains the following settings for file formats.
 

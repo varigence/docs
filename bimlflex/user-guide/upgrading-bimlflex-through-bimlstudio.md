@@ -12,20 +12,22 @@ New and existing projects are created from the local Bundle file. Existing proje
 
 Varigence provides updates to the BimlFlex framework through an online download mechanism. On project open, BimlStudio will check for the latest version of the BimlFlex components and offer to download and deploy them, should an update be available.
 
-Deploying updates comes in 4 steps:
+## Deploying updates
 
-1. Updating the template Bundle version that is used for new projects
-1. Updating the Bundle file that is used for the project
-1. Updating the BimlFlex metadata database used by the project
-1. Updating the BimlCatalog orchestration and auditing database used by the project
+Steps for deploying updates:
+
+1. Update the template Bundle version that is used for new projects
+1. Update the Bundle file that is used for the current project
+1. Update the BimlFlex metadata database used by the current  project
+1. Update the BimlCatalog orchestration and auditing database used by the current project
 
 Once the project has identified that a new version is available online the following dialog is displayed:
 
-![BimlFlex Upgrade Assets](images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png "BimlFlex Upgrade Assets")
+![BimlFlex Upgrade Assets -center -60%](images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png "BimlFlex Upgrade Assets")
 
 ## Update template Bundle version
 
-The template Bundle is the Bundle that is used by BimlStudio when creating a new BimlFlex project. if a new Bundle has been published online by Varigence the upgrade process will be able to download the new version and use that for new projects going forward. This template Bundle is also used to update local projects so the template Bundle needs to be udpated first.
+The template Bundle is the Bundle that is used by BimlStudio when creating a new BimlFlex project. if a new Bundle has been published online by Varigence the upgrade process will be able to download the new version and use that for new projects going forward. This template Bundle is also used to update local projects so the template Bundle needs to be updated first.
 
 ## Update project Bundle
 
@@ -33,22 +35,35 @@ The local project that is opened in BimlStudio has a local Bundle version used i
 
 ## Update BimlFlex metadata database
 
-BimlFlex stores the Data Warehouse metadata in the BimlFlex metadata database. The new, updated version might have a new version of the database embedded. The upgrade process will enable the upgrade of the BimlFlex database to the new verison. Some Bundle updates have new features that require the new database version to be deployed.
+BimlFlex stores the Data Warehouse metadata in the BimlFlex metadata database. The new, updated version might have a new version of the database embedded. The upgrade process will enable the upgrade of the BimlFlex database to the new version. Some Bundle updates have new features that require the new database version to be deployed.
 
 The connection to the BimlFlex database is derived from the project configuration.
 
 ## Update BimlCatalog orchestration and auditing database
 
-BimlFlex stores Data Warehouse operational data such as logging and auditing data in the BimlCatalog database. The new, updated version might have a new version of the database embedded. The upgrade process will enable the upgrade of the BimlCatalog database to the new verison. Some Bundle updates have new features that require the new database version to be deployed.
+BimlFlex stores Data Warehouse operational data such as logging and auditing data in the BimlCatalog database. The new, updated version might have a new version of the database embedded. The upgrade process will enable the upgrade of the BimlCatalog database to the new version. Some Bundle updates have new features that require the new database version to be deployed.
 
-The connection to the BimlCatalog database is derived from the BimlCatalog connectionstring in the BimlFlex database referenced by the project configuration.
+The connection to the BimlCatalog database is derived from the BimlCatalog connection string in the BimlFlex database referenced by the project configuration.
 
 ## Upgrade progress
 
-All upgrade progress is logged to the output window in BimlStudio.
+Upgrade progress messages are logged to the output window in BimlStudio.
 
 ## Post upgrade
 
 Once the upgrade is completed, restart BimlStudio and reopen the project to apply the new Bundle.
 
-Once the project and databases have been updated, refer to the [testing documentation](upgrade-and-testing-process.md) to validate that the new version provides the same output as before
+## Separate database upgrade
+
+For other databases not defined in the project (such as a production BimlCatalog database), use the `Upgrade Assets` dialog and specify the connection strings separately to the database server.
+
+For database servers not available from the development environment, use the BimlFlex utility application to deploy the upgrade or contact BimlFlex support for a separate Dacpac for scripted deployments.
+
+## Post upgrade testing
+
+Once the project and databases have been updated, refer to the @bimlflex-upgrade-and-testing to validate that the new version provides the same output as before.
+
+## Upgrade to Cummalative Update or Beta Release
+
+Patches and Beta version will be released periodically to an Cummalative Update or Beta Release bundle and can be applied by using the `Upgrade Assets` button on the `BimlFlex` ribbon.
+![BimlFlex Cummalative Update or Beta Release -center -80%](images/bimlflex-upgrade-assets-cu.png "Cummalative Update or Beta Release")

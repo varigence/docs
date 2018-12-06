@@ -1,6 +1,6 @@
 # Extract All Tables
 
-```xml
+```biml
 <#@ template language="C#" hostspecific="true"#>
 <#@ import namespace="System.Data" #>
 
