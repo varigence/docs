@@ -419,7 +419,7 @@ location: output folder
 filename: `SqlOnly.mst.bimlc.resp`
 
 ```bimlc.resp
---targetPath="output" --buildDocumentation=False --docOutputPath="documentation" --bundle="BimlFlex.bimlb" --bundleSetting="SqlOnly.bimlb.settings" --version=SqlServer2016 --version=Ssas2014 --version=SsasTabular2016 --version=Ssis2016 --ssisDeploymentModel=Project --ddlBuildMode=None --warnAsError=False --warn=4 --cleanOutputFolder=True
+--targetPath="output" --buildDocumentation- --docOutputPath="documentation" --bundle="BimlFlex.bimlb" --bundleSetting="SqlOnly.bimlb.settings" --version=SqlServer2016 --version=Ssas2014 --version=SsasTabular2016 --version=Ssis2016 --ssisDeploymentModel=Project --ddlBuildMode=None --warnAsError=False --warn=4 --cleanOutputFolder=True
 ```
 
 ## Sample SqlOnly.mst.ProjectView.bimlproj settings file
@@ -453,7 +453,7 @@ location: output folder
 filename: `SqlOnly.mst.resp`
 
 ```resp
-"output\4-ci-demo-sqlonly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2016 /p:SsasVersion=Ssas2014 /p:SsasTabularVersion=SsasTabular2016 /p:SsisVersion=Ssis2016 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files (x86)\Varigence\BimlStudio\5.0"
+"output\4-ci-demo-sqlonly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2016 /p:SsasVersion=Ssas2016 /p:SsasTabularVersion=SsasTabular2016 /p:SsisVersion=Ssis2016 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files (x86)\Varigence\BimlStudio\5.0"
 ```
 
 ## Sample SsisOnly.mst.bimlc.resp settings file
@@ -462,7 +462,7 @@ location: output folder
 filename: `SsisOnly.mst.bimlc.resp`
 
 ```resp
---targetPath="output" --buildDocumentation=False --docOutputPath="documentation" --bundle="BimlFlex.bimlb" --bundleSetting="BimlFlex-SsisOnly.bimlb.settings" --version=SqlServer2016 --version=Ssas2014 --version=SsasTabular2016 --version=Ssis2016 --ssisDeploymentModel=Project --ddlBuildMode="None" --warnAsError=False --warn=4 --cleanOutputFolder=True
+--targetPath="output" --buildDocumentation- --docOutputPath="documentation" --bundle="BimlFlex.bimlb" --bundleSetting="BimlFlex-SsisOnly.bimlb.settings" --version=SqlServer2016 --version=Ssas2016 --version=SsasTabular2016 --version=Ssis2016 --ssisDeploymentModel=Project --ddlBuildMode="None" --warnAsError=False --warn=4 --cleanOutputFolder=True
 ```
 
 ## Sample SsisOnly.mst.ProjectView.bimlproj settings file
