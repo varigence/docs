@@ -277,7 +277,7 @@ BimlFlex provides a `Clone Table` metadata creation tool for creating the destin
 
 ![Clone Table -center -50%](../user-guide/images/bimlflex-ss-v5-clone-table.png "Clone Table")
 
-select the source object in the objects sheet and click the `Clone Table` button in the ribbon. Choose the object type (Fact or Dimension), define a destination schema and table name and choose to add an Identity Column to the destination. Checking the `Add Target Column Mappings` will populate the source to target column mappings between the source and destination objects.
+Select the source object in the objects sheet and click the `Clone Table` button in the ribbon. Choose the object type (Fact or Dimension), define a destination schema and table name and choose to add an Identity Column to the destination. Checking the `Add Target Column Mappings` will populate the source to target column mappings between the source and destination objects.
 
 TODO: add content
 
@@ -285,7 +285,7 @@ TODO: add content
 
 With the metadata defined in the Excel metadata management tool, refresh the metadata in BimlStudio and create the SQL Artefacts as normal through the `Create Table Script`. The source views and destination tables will be included in the script.
 
-Should the source view be managed through SSDT, deploy them as normal.
+Should the source views be managed through SSDT, deploy them as normal.
 
 ### Building the dimensional model SSIS load project
 
