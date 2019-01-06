@@ -11,7 +11,21 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
 > [!IMPORTANT]
-> The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there identified issues that have ben documented as addressed in these release notes.
+> The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
+
+## Bundle 63707
+
+* Updates to the Data Vault Publisher. Previously some scenarios would result in the Publish failing due to the updated metadata model entity names.
+
+## Bundle 63704
+
+> [!IMPORTANT]
+> This Bundle introduces placeholder metadata entities for Azure Data Factory and requires an update to the BimlFlex Excel plug-in. Please download and install build 63513 or later
+> * BimlFlex: [https://varigence.com/downloads/bimlflexsetup_5.0.63513.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.63513.0.exe)
+
+This Bundle introduces additional metadata attributes for columns and configurations that is planned to be used in the Azure Data Factory patters, such as `AdfDataFlowExpression`. It also renames the `SsisExpression` attribute to `SsisDataFlowExpression`
+
+* Update Salesforce source query parameter to use UTC format instead of the provided local time default value. Previously, due to the different ways datetimes are presented by the Salesforce interface there were scenarios where the process used local and UTC times inconsistently.
 
 ## Bundle 63528
 
