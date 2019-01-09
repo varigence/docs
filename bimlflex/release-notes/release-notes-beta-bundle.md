@@ -13,6 +13,11 @@ The Beta Bundle channel is available as an option in the Upgrade Assets Bundle i
 > [!IMPORTANT]
 > The Beta Bundle channel allows users to test new features and bug fixes. Only apply the beta channel updates in a separate development testing environment. It is not possible to downgrade a database from a Beta version to a stable release version.
 
+## Bundle TBA
+
+* BimlCatalog Updates: The BimlCatalog orchestration stored procedures `ssis.LogExecutionEnd` and  `ssis.LogExecutionError` has been updated to better support the abort closing of legacy runs. Previously the orchestration might get stuck in a state where a previously failed run caused all future runs to assume they should abort. The updated procedures will properly close any legacy run as aborted when a new run ends or errors.
+* Update: The Documentation > Preview > Database Schema Diagram will now also display the Data Vault Preview schema.
+
 ## Bundle 63707
 
 * Update: to the Data Vault Publisher. Previously some scenarios would result in the Publish failing due to the updated metadata model entity names.
@@ -46,7 +51,7 @@ New Feature: The SSIS Custom components and corresponding settings have been upd
 
 Changing the Hash algorithm will also automatically change the data types used for the columns.
 
-The Settings Key `HashBinary` (`Y`/`N`)controls if the hash should be represented in the database as a string or as a binary value. A binary value will normally use half the space of the string representation.
+The Settings Key `HashBinary` (`Y`/`N`) controls if the hash should be represented in the database as a string or as a binary value. A binary value will normally use half the space of the string representation.
 
 These hashing features are included in the latest SSIS Custom Components available for download here:
 

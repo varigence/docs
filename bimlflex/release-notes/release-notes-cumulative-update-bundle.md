@@ -51,7 +51,7 @@ New Feature: The SSIS Custom components and corresponding settings have been upd
 
 Changing the Hash algorithm will also automatically change the data types used for the columns.
 
-The Settings Key `HashBinary` (`Y`/`N`)controls if the hash should be represented in the database as a string or as a binary value. A binary value will normally use half the space of the string representation.
+The Settings Key `HashBinary` (`Y`/`N`) controls if the hash should be represented in the database as a string or as a binary value. A binary value will normally use half the space of the string representation.
 
 These hashing features are included in the latest SSIS Custom Components available for download here:
 
