@@ -41,8 +41,7 @@ More overview information on building to PDF is [available in the tutorial](http
 
 ## Online build queue
 
-The public site is built through Azure pipelines, click this link and the `queue` button to trigger a manual pipeline run:  
-https://varigence.visualstudio.com/Varigence/_build?definitionId=18
+The public site is built through Azure pipelines, open the Azure DevOps pipeline and click the `queue` button to trigger a manual pipeline run
 
 ## Documentation Contents
 
