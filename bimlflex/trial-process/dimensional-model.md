@@ -120,7 +120,7 @@ Source Views
 
 Data Vault Based:
 
-TODO: Add links to script files
+TODO: Add links to sample script files
 
 * [Customer Dimension](TODO)
 * [Date Dimension View](TODO)
@@ -290,7 +290,8 @@ The Dimension object has a Business Key and a Primary Key, the lookup will compa
 The Fact table source has the corresponding lookup value (same value as the Business Key in the Dimension). When cloning the source object to the Fact object this column is included and is mapped from the source to the Fact table destination. For the lookup and replacement to happen the following needs to be true:
 
 1. The Fact table Object needs to be updated to have the same Data Type as the Dimension Key (Commonly Int32 or Int64).
-1. The Fact table Object needs the ReferenceTable and ReferenceColumnName populated with a reference to the Primary 
+1. The Fact table Object needs the ReferenceTable and ReferenceColumnName populated with a reference to the Primary Key of the Dimension Table (The Identity Column that the lookup should return)
+1. The source column in the source object should contain the same values as the Business Key column in the referenced Dimension. The source value in the source column is used in the lookup and replaced with the Identity Column value at runtime.
 
 
 ### Building the dimensional model SQL artefacts
