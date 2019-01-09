@@ -32,3 +32,7 @@ use the BimlFlex settings metadata sheet to tweak the behavior of the created pa
 ## 32 vs 64-bit runtime
 
 When running the SSIS package, it can be executed by either the 32 or 64-bit version. The 64-bit version can address more memory so it is the recommended choice unless there is a specific, other requirement for the 32-bit engine.
+
+## Debugging projects in Visual Studio
+
+For larger projects, Visual Studio might run out of memory running the packages in debug mode. For these scenarios, consider running the packages using the `Start Without Debugging (Ctrl+F5)` option in Visual Studio.

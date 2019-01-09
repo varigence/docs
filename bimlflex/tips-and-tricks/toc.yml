@@ -8,3 +8,5 @@
   href: adding-ssis-custom-components-to-azure-integration-runtime.md
 - name: How to find the Extension Point target
   href: find-extension-point-target.md
+- name: Memory Usage In SSIS.md
+  href: memory-usage-in-ssis.md

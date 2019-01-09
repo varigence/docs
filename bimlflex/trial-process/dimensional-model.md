@@ -279,7 +279,19 @@ BimlFlex provides a `Clone Table` metadata creation tool for creating the destin
 
 Select the source object in the objects sheet and click the `Clone Table` button in the ribbon. Choose the object type (Fact or Dimension), define a destination schema and table name and choose to add an Identity Column to the destination. Checking the `Add Target Column Mappings` will populate the source to target column mappings between the source and destination objects.
 
-TODO: add content
+### Adding Dimensional key lookups
+
+One feature of the Dimensional implementation is the use of integer sequence numbers as primary keys. The Data Vault layer uses the hash of the Business Key as the primary key for entities. Some analytical tools prefers integer keys for primary keys and Fact to Dimension relationships. BimlFlex provides a value to key lookup function that will use the standard SSIS lookup transformation to translate the value from the source to the key used in the dimension.
+
+This mapping is done for dimensions that have the primary key defined as an identity column. A dimension without an Identity column primary key is assumed to be a smart key that doesn't require a lookup.
+
+The Dimension object has a Business Key and a Primary Key, the lookup will compare against the Business Key value and replace with the Primary Key value.
+
+The Fact table source has the corresponding lookup value (same value as the Business Key in the Dimension). When cloning the source object to the Fact object this column is included and is mapped from the source to the Fact table destination. For the lookup and replacement to happen the following needs to be true:
+
+1. The Fact table Object needs to be updated to have the same Data Type as the Dimension Key (Commonly Int32 or Int64).
+1. The Fact table Object needs the ReferenceTable and ReferenceColumnName populated with a reference to the Primary 
+
 
 ### Building the dimensional model SQL artefacts
 
