@@ -6,7 +6,14 @@ title: BimlFlex SSIS Custom Components
 
 Custom SSIS components are used for ETL load processes. These components simplify the data processing and allows the BimlFlex generated packages to more easily load data.
 
-The components and their source code are available in the [Varigence BimlCatalog GitHub repository](https://github.com/varigence/BimlCatalog)
+The components are available for download here:
+
+* [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+* [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+* [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+* [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+* [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+
 
 The following components are included:
 

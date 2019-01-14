@@ -13,8 +13,14 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
 
-## Bundle TBA
+## Bundle 63714
 
+* Update: an issue with missing references for modelling scenarios with multiple Data Vault projects and where a Hub was referenced in a separate project with a separate Satellite load has been addressed.
+* Add: Additional Extension Points for the Delete Detection pattern has been added
+  * `DeleteInitializeRawFileDataflowOverride`
+  * `DeleteDetectDataflowOverride`
+  * `DeleteDetectRawFileOverride`
+  These are available to override the default behavior for parts of the Delete Detection process when needed.
 * BimlCatalog Updates: The BimlCatalog orchestration stored procedures `ssis.LogExecutionEnd` and  `ssis.LogExecutionError` has been updated to better support the abort closing of legacy runs. Previously the orchestration might get stuck in a state where a previously failed run caused all future runs to assume they should abort. The updated procedures will properly close any legacy run as aborted when a new run ends or errors.
 * Update: The Documentation > Preview > Database Schema Diagram will now also display the Data Vault Preview schema.
 

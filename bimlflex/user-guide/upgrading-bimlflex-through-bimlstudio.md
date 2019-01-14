@@ -4,6 +4,17 @@ title: Upgrading BimlFlex
 ---
 # Upgrading BimlFlex through BimlStudio
 
+> [!NOTE]
+> Please make sure all databases and projects are backed up prior to upgrading or applying any updates. Varigence also recommend that projects and bundles are checked into source control.
+> Please email bimlflex-support@varigence.com should there be any issues while upgrading.
+
+> [!NOTE]
+> Please refer to the relevant Release Notes before upgrade:
+>
+> * @bimlflex-release-notes
+> * @bimlflex-cumulative-update-bundle-release-notes
+> * @bimlflex-beta-bundle-release-notes
+
 The BimlFlex product and framework is Bundled as an addon to the BimlStudio. A developer uses BimlStudio with a BimlFlex project type to create data warehousing solutions with BimlFlex.
 
 The BimlFlex functionality is provided by a Bundle file called `bimlflex.bimlb` that comes with the BimlStudio installer. This Bundle file contains the data warehousing functionality as well as the current versions of the BimlFlex metadata database and the BimlCatalog orchestration and auditing database.
@@ -18,8 +29,9 @@ Steps for deploying updates:
 
 1. Update the template Bundle version that is used for new projects
 1. Update the Bundle file that is used for the current project
-1. Update the BimlFlex metadata database used by the current  project
+1. Update the BimlFlex metadata database used by the current project
 1. Update the BimlCatalog orchestration and auditing database used by the current project
+1. Update the BimlFlex SSIS Custom Components if the release notes include an update to the components.
 
 Once the project has identified that a new version is available online the following dialog is displayed:
 
@@ -45,6 +57,10 @@ BimlFlex stores Data Warehouse operational data such as logging and auditing dat
 
 The connection to the BimlCatalog database is derived from the BimlCatalog connection string in the BimlFlex database referenced by the project configuration.
 
+## Update the BimlFlex SSIS Custom Components
+
+Please refer to @bimlflex-ssis-custom-components for instructions and download links
+
 ## Upgrade progress
 
 Upgrade progress messages are logged to the output window in BimlStudio.
@@ -63,7 +79,10 @@ For database servers not available from the development environment, use the Bim
 
 Once the project and databases have been updated, refer to the @bimlflex-upgrade-and-testing to validate that the new version provides the same output as before.
 
-## Upgrade to Cummalative Update or Beta Release
+## Upgrade to Cumulative Update or Beta Release
 
-Patches and Beta version will be released periodically to an Cummalative Update or Beta Release bundle and can be applied by using the `Upgrade Assets` button on the `BimlFlex` ribbon.
-![BimlFlex Cummalative Update or Beta Release -center -80%](images/bimlflex-upgrade-assets-cu.png "Cummalative Update or Beta Release")
+Patches and Beta version will be released periodically to an Cumulative Update or Beta Release bundle and can be applied by using the `Upgrade Assets` button on the `BimlFlex` ribbon.
+
+![BimlFlex Cumulative Update or Beta Release -center -80%](images/bimlflex-upgrade-assets-cu.png "Cumulative Update or Beta Release")
+
+Please review the relevant release notes before applying or updating a project to a Cumulative Update or Beta Release.

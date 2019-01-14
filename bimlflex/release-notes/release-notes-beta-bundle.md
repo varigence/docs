@@ -13,8 +13,14 @@ The Beta Bundle channel is available as an option in the Upgrade Assets Bundle i
 > [!IMPORTANT]
 > The Beta Bundle channel allows users to test new features and bug fixes. Only apply the beta channel updates in a separate development testing environment. It is not possible to downgrade a database from a Beta version to a stable release version.
 
-## Bundle TBA
+## Bundle 63714
 
+* Update: an issue with missing references for modelling scenarios with multiple Data Vault projects and where a Hub was referenced in a separate project with a separate Satellite load has been addressed.
+* Add: Additional Extension Points for the Delete Detection pattern has been added
+  * `DeleteInitializeRawFileDataflowOverride`
+  * `DeleteDetectDataflowOverride`
+  * `DeleteDetectRawFileOverride`
+  These are available to override the default behavior for parts of the Delete Detection process when needed.
 * BimlCatalog Updates: The BimlCatalog orchestration stored procedures `ssis.LogExecutionEnd` and  `ssis.LogExecutionError` has been updated to better support the abort closing of legacy runs. Previously the orchestration might get stuck in a state where a previously failed run caused all future runs to assume they should abort. The updated procedures will properly close any legacy run as aborted when a new run ends or errors.
 * Update: The Documentation > Preview > Database Schema Diagram will now also display the Data Vault Preview schema.
 
