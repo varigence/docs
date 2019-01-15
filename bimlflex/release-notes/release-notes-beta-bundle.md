@@ -13,6 +13,10 @@ The Beta Bundle channel is available as an option in the Upgrade Assets Bundle i
 > [!IMPORTANT]
 > The Beta Bundle channel allows users to test new features and bug fixes. Only apply the beta channel updates in a separate development testing environment. It is not possible to downgrade a database from a Beta version to a stable release version.
 
+## Bundle vNext
+
+* Update: the `SourceErrorHandling` Extension Point is now included in the placeholder information in the preview expanded BimlScript for packages. The `inputPath` variable being passed to the Extension Point and exemplified in the sample code as: `<InputPath OutputPathName="<#=inputPath #>" />` has been updated to include the `.Output` part of the Path specification. Existing usage of the Extension Point that previously added this syntax manually can now be simplified. The behavior now match the expected syntax of the sample code.
+
 ## Bundle 63714
 
 * Update: an issue with missing references for modelling scenarios with multiple Data Vault projects and where a Hub was referenced in a separate project with a separate Satellite load has been addressed.
