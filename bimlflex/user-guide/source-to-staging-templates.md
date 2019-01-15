@@ -44,7 +44,6 @@ Below is the currently supported Integration Templates
 |Source -> File Extract|Not Applicable|
 |Source -> Zip File Extract|Not Applicable|
 
-
 ### ETL Pattern Overview
 
 The standard framework being applied. This can be overridden by using metadata settings or Extension Points, signified by the red dots and dashed lined rectangles.
