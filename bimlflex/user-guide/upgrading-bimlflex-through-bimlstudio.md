@@ -15,13 +15,13 @@ title: Upgrading BimlFlex
 > * @bimlflex-cumulative-update-bundle-release-notes
 > * @bimlflex-beta-bundle-release-notes
 
-The BimlFlex product and framework is Bundled as an addon to the BimlStudio. A developer uses BimlStudio with a BimlFlex project type to create data warehousing solutions with BimlFlex.
+The BimlFlex product and framework is an addon to BimlStudio. A developer uses BimlStudio with a BimlFlex project type to create data warehousing solutions with BimlFlex.
 
 The BimlFlex functionality is provided by a Bundle file called `bimlflex.bimlb` that comes with the BimlStudio installer. This Bundle file contains the data warehousing functionality as well as the current versions of the BimlFlex metadata database and the BimlCatalog orchestration and auditing database.
 
-New and existing projects are created from the local Bundle file. Existing projects have a local copy of the Bundle file in the project folder.
+New BimlFlex projects are created using the local template Bundle file. Existing projects have a local copy of the Bundle file in the project folder.
 
-Varigence provides updates to the BimlFlex framework through an online download mechanism. On project open, BimlStudio will check for the latest version of the BimlFlex components and offer to download and deploy them, should an update be available.
+Varigence provides updates to the BimlFlex framework through an online download mechanism. When a BimlFlex project is opened, BimlStudio will check for the latest version of the BimlFlex components and offer to download and deploy them, should an update be available.
 
 ## Deploying updates
 
