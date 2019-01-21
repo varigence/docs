@@ -10,7 +10,8 @@
     href: server-installation.md
   - name: Initial Setup and Configuration
     href: initial-setup-and-configuration.md
-
+  - name: SSIS Custom Components
+    href: ssis-custom-components.md
   - name: BimlFlex Database
     href: bimlflex-database.md
   - name: BimlCatalog Database
