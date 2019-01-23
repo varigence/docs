@@ -13,12 +13,12 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
 
-## Bundle vNext
+## Bundle 63723
 
 > [!IMPORTANT]
 > This Bundle contains updates that require an update to the BimlFlex Excel plug-in.
-> Please download and install build 63TBA or later:
-> * BimlFlex: [https://varigence.com/downloads/bimlflexsetup_5.0.63TBA.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.63TBA.0.exe)
+> Please download and install BimlFlex build 5.0.63710.0 or later:
+> * BimlFlex: [https://varigence.com/downloads/bimlflexsetup_5.0.63710.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.63710.0.exe)
 
 * Update: the `IsAltBusinessKey` metadata entity has been renamed to `IsSourceKey` to better reflect the meaning. This metadata attribute reflects the source Primary Key definition and is used for persistent staging tables when the defined Primary Key is not persisted. This is a common scenario for Data Vault modelling. For Data Vault, the Business Key is also defined as the Primary Key for each source object. This column is normally not persisted. The columns marked as `IsSourceKey` will be used as the Primary Keys for the Persistent table in this scenario.
 * Update: the `SourceErrorHandling` Extension Point is now included in the placeholder information in the preview expanded BimlScript for packages. The `inputPath` variable being passed to the Extension Point and exemplified in the sample code as: `<InputPath OutputPathName="<#=inputPath #>" />` has been updated to include the `.Output` part of the Path specification. Existing usage of the Extension Point that previously added this syntax manually can now be simplified. The behavior now match the expected syntax of the sample code.
@@ -27,6 +27,7 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
   * `AzureAllowPolybase` - Should the Azure SQL Data warehouse process use PolyBase
   * `AzureStageOnExtract` - Should the Azure SQL Data warehouse process create a staging table and stage data directly to this table rather than go through the PolyBase, external table process. This setting replaces the `AzureCreateStageTables` setting
   * `AzureExternalFileConversion` - Should the External Tables used to access files in blob storage apply the string manipulation conversions used to accommodate shortcomings in PolyBase.
+* Update: The rename of the `SsisExpression` attribute to `SsisDataFlowExpression` was not updated for all custom attributes when the change was introduced. This database update to the BimlFlex database includes an update to any existing custom attribute to the new format.
 
 ## Bundle 63714
 
