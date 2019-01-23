@@ -4,27 +4,27 @@ title: BimlFlex SSIS Custom Components
 ---
 # SSIS Custom Components
 
-Custom SSIS components are used for ETL load processes. These components simplify the data processing and allows the BimlFlex generated packages to more easily load data.
+The BimlFlex custom SSIS components are used for ETL load processes in SSIS packages. These components simplify the data processing and allows the BimlFlex generated packages to more easily process data.
 
 The components are available for download here:
 
-* [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
-* [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
-* [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
-* [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
-* [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
-
+* SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+* SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+* SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+* SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+* SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
 
 The following components are included:
 
-| Component          | Function                             |
-| ------------------ | -------------------------------------- |
-| AuditRow           | Logs Audit information to the BimlCatalog database |
-| ErrorDescription   | Logs Error Descriptions to the BimlCatalog database |
-| Hash               | Provides hashing of data stream columns |
-| HashDual           | Provides dual hashing of columns to minimize collision risk |
-| HashSql            | Provides Hashing using SQL `HASHBYTES()` compatible encoding |
-| RowCount           | counts rows and logs to the BimlCatalog database |
+| Component              | Function                               |
+| ---------------------- | -------------------------------------- |
+| Biml Error Description | Logs Error Descriptions to the BimlCatalog database |
+| Biml Hash              | Provides hashing of data stream columns |
+| Biml Hash Dual         | Provides dual hashing of columns to minimize collision risk |
+| Biml Hash Dynamic      | Provides dynamic hashing of columns based on component configuration |
+| Biml Hash Sql          | Provides Hashing using SQL `HASHBYTES()` compatible encoding |
+| Biml Row Audit         | Logs Audit information to the BimlCatalog database |
+| Biml Row Count         | counts rows and logs to the BimlCatalog database |
 
 The components are delivered as a SQL Server version specific file installation that needs to be deployed to any computer running or building BimlFlex SSIS packages.
 The installation is provided as a script file for easy installation automation for SQL servers.
@@ -32,7 +32,7 @@ The components work in conjunction with the BimlCatalog orchestration and runtim
 
 ## Installation
 
-Installation of the custom components are provided through a script file that embeds the custom components SSIS .dll into the required SQL Server folders as well as the GAC
+Installation of the custom components are provided through a script file that embeds the custom components SSIS .dll into the required SQL Server folders as well as the GAC. This script approach allows the custom components to be installed on an Azure Integration Runtime.
 
 ## Icons
 
@@ -46,7 +46,7 @@ The following Icons are used for the custom components
 
 <img src="images/bimlflex-v5-cc-errordescription.ico" alt="ErrorDescription Icon" width="10%"/>
 
-### Hash
+### Hash / Hash Dynamic
 
 <img src="images/bimlflex-v5-cc-hash.ico" alt="Hash Icon" width="10%"/>
 
