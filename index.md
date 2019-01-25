@@ -8,8 +8,7 @@ In addition to the support here, we have developed a community at [Bimlscript.co
 
 ![Biml -h38px](content/images/biml.svg)
 
-* [Biml Language Reference](biml/language-reference)
-* [Biml API Reference](biml/api-reference/Varigence.Langugages.Biml.AstRootNode)
+* [Biml API Reference](biml/api-reference/Varigence.Languages.Biml.AstRootNode.html)
 * [Biml API Samples](biml/snippets/index.md)
 * [Biml Forum](https://varigence.com/Forums?forumName=Biml)
 
