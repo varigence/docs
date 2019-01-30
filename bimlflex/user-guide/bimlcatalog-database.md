@@ -9,7 +9,9 @@ The BimlCatalog database contains the orchestration and run time information nee
 > [!IMPORTANT]
 > The BimlCatalog database contains crucial data for the data warehouse auditing, logging and orchestration. It is important to back up and maintain a disaster recovery policy that matches the organizational requirements for this database.
 
-The BimlCatalog is an open source project available at the [BimlCatalog GitHub repository](https://github.com/varigence/BimlCatalog)
+## Deploying the BimlCatalog Database
+
+The database is created through the `Setup BimlFlex` menu option in the BimlFlex Ribbon UI in BimlStudio.
 
 ## Parameter values
 
