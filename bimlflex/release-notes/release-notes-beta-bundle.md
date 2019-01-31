@@ -13,10 +13,34 @@ The Beta Bundle channel is available as an option in the Upgrade Assets Bundle i
 > [!IMPORTANT]
 > The Beta Bundle channel allows users to test new features and bug fixes. Only apply the beta channel updates in a separate development testing environment. It is not possible to downgrade a database from a Beta version to a stable release version.
 
-## Bundle vNext
+## Bundle 63731
 
+> [!IMPORTANT]
+> This Bundle contains updates that require an update to the BimlFlex Excel plug-in.
+> Please download and install BimlFlex build 5.0.63710.0 or later:
+>
+> * BimlFlex: [https://varigence.com/downloads/bimlflexsetup_5.0.63710.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.63710.0.exe)
+
+> [!IMPORTANT]
+> This Bundle contains updates that require an update to the BimlFlex SSIS Custom Components.
+> Please download and install the current custom components for the corresponding SQL Server version:
+>
+> * SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+> * SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+> * SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+> * SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+> * SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+
+* Update: The `[ssis].[LogExecutionEnd]` and `[ssis].[LogExecutionError]` stored procedures in BimlCatalog has been updated with additional logic to minimize the risk for deadlocks in certain scenarios.
+* Update: the dynamic hashing used in the custom components have additional configurations available to make the resulting SQL compatible hashing easier to match using `HASHBYTES()` scripts in SQL. For implementations currently using the SQL compatible hashing setting the hash values for full row hashes will be calculated using the new approach and changes to existing rows might be identified due to the updated hashing pattern.
 * Update: The setting `HashLongStrings` has been removed from the settings as the `HASHBYTES('Algorithm', @input)` input limit of 8000 bytes has been removed from Azure SQL Data Warehouse. This legacy setting allowed larger columns to be compared outside of the row hash, working around the limitation. This change will default to always add all columns to the row hash for comparisons regardless of data type size. For existing implementations where this was used, the row hash will potentially be updated and result in additional rows added to the relevant destination table with the same contents and different hash values.
 * Add: The `AddRowHashKeyIndex` setting has been added to allow the automatic creation of index on staging tables to potentially increase the performance of Satellite loads.
+* Update: A BimlFlex database scenario where a legacy default would affect the database upgrade process has been addressed.
+* Update: The `ConcatenatorBusinessKey` setting has been renamed `StringConcatenator` to better reflect the fact that it is used in hash concatenation, not just Business Key string concatenation.
+* Update: A scenario where the Data Mart load pattern added an unnecessary conversion in the Data Flow for smart keys (keys that don't need lookups) has been addressed. Only keys that are used in lookups are converted when needed.
+* Add: BimlFlex now supports modeling scenarios where multiple Data Vault load projects share common elements such as a core Hub object.
+
+More information on the hashing approach for SQL compatible hashing can be found here: @bimlflex-hashing-overview
 
 ## Bundle 63723
 
