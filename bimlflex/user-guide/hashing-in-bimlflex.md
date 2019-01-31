@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-hashing
+uid: bimlflex-hashing-overview
 title: Hashing in BimlFlex
 ---
 # Introduction to hashing in BimlFlex
@@ -17,7 +17,15 @@ BimlFlex provides 2 main ways of hashing:
 
 ## Hash configurations
 
-Both of these approaches provides a set of optional configurations
+Both of these approaches provides a set of optional configurations and settings. The hashing approach in the SSIS packages are controlled through the following settings:
+
+| SettingKey | SettingValue | Description |
+| ---------- | ------------ | ----------- |
+HashAlgorithm | SHA1 | Hashing Algorithm |
+HashBinary | N | Binary or String hash representation |
+HashBusinessKey | N | Should the Business Key be hashed. This is always applied for loads with a Data Vault destination |
+UseSqlCompatibleHash | Y | Should the Business Key hashing use a SQL compatible pattern |
+UseSqlCompatibleRowHash | Y | Should the row checksum hashing use a SQL compatible pattern |
 
 ### Hash representation
 
@@ -25,6 +33,8 @@ This defines how the resulting hash value is stored
 
 * String representation, the resulting hash is stored using the text representation of the binary hash value. This makes the hash value legible and can easily be copied and stored in plain text format
 * Binary representation, the hash is stored in its native, binary form. This requires less storage however is not as well suited for readability or agnostic storage
+
+When considering the hash data type, storage requirements and SQL Server performance is one aspect, while direct joinability to other sources without converting the hash is another.
 
 ### Hash algorithm
 
@@ -44,9 +54,13 @@ The cryptographic algorithm used to derive the hash. The different algorithms re
 | `SHA2_256`     | char(64)              | binary(32)            |
 | `SHA2_512`     | char(128)             | binary(64)            |
 
-## Attribute Separators
+## Attribute Separators and Field Order
 
-When hashing multiple concatenated values it is important to separate them to distinguish patterns. This is sometimes called hash concatenator, separator or sanding value. The default field separator in BimlFlex is `~` and it is configurable in the settings. This is used so that hashing `A` and `BC` generates a different hash compared to `AB` and `C`. without the separator both scenarios would generate the input value `ABC` to the hashing process and identical hash values, whereas using the separator gives either `A~BC` or `AB~C`, resulting in different hashes.
+The hash algorithm runs its logic on a single input object. For data warehousing scenarios, the fields that are part of the hash are all concatenated together into a single string.
+
+When hashing multiple concatenated values it is important to separate them to distinguish patterns. This is sometimes called hash or field concatenator, separator or sanding value. The default field separator in BimlFlex is `~` and it is configurable in the settings. This is used so that hashing `A` and `BC` generates a different hash compared to `AB` and `C`. without the separator both scenarios would generate the input value `ABC` to the hashing process and identical hash values, whereas using the separator gives either `A~BC` or `AB~C`, resulting in different hashes. The separator is also used in the Business Key creation when concatenating multiple fields into a single string Business Key representation.
+
+The hash is dependent on the order of the included attributes. For the row hash BimlFlex orders the columns in the same order as they are ordered in the metadata. This is controlled by the `Ordinal` metadata attribute. This is a flexible approach and, for instance, allows a column to be renamed without affecting the hash outcome.
 
 ## Null value replacements
 
@@ -56,9 +70,13 @@ it is not possible to hash a null value, therefore the BimlFlex hashing procedur
 
 A Business or Integration key is used as the main identifier for entities. This is most commonly used as the base key for Hub entities in Data Vault. BimlFlex has a built in feature to convert source columns and concatenate them into a Business Key. There is also an optional setting to upper case the string. This is useful where the database is case insensitive and keys with different casings are considered the same entity. As different casings are hashed to different hash values whereas the database engine would consider Business Keys with different casings to be the same this provides a convenient way to automatically align all Business Keys. BimlFlex always store the original values in Satellites by default, so no data is lost in this process.
 
+Sample Script used for hashing Business Keys. When using AdventureWorksLT and the Product table the following hashes are created by the SQL Compatible SSIS Hashing component and they can be recreated using SQL Server `HASHBYTES()` and the below sample script.
+
 ## Hashing Row Checksums
 
-TODO: Coming soon
+A row hash is a hash of all relevant attributes in the row and is mainly used to identify changes to records. In the default source to staging to persistent staging pattern there is a lookup that compares the stored row hash in the persistent staging with the new row hash to see if there has been a change to any attributes or if the row should be ignored.
+
+Special consideration for changes in the row change type indicator is normally required. This is due to the fact that a row with the same attributes but with a change indicator indicating it has been deleted would result in the same attribute hash but completely different meaning in the data warehouse.
 
 ## Key collisions
 
@@ -68,6 +86,51 @@ There is a risk for key collisions using hashing where different values generate
 
 The most important part of using hashing of data is a consistent behavior, so that the same input value results in the same hash value. This is especially true when hashing data from different systems using different tools and approaches are used for hashes where they will be used for joining and linking at a later stage. For this compatibility, BimlFlex provides a `HASHBYTES()` compatible hashing approach that allows other systems to hash using the same approach so that matching is possible. This document details the hashing approach so that it is easy to replicate the approach either manually in SQL or in a different process.
 
-## Sample setup script for test scenario
+## Using deterministic representation in hash input
 
-TODO: Coming Soon
+Some data types, such as dates and date times have culture specific representations as the default in certain scenarios. To ensure deterministic hashing these data types are converted to strings with a format applied. This allows the same input value to be derived regardless of the current culture or default implicit string conversion of the current environment.
+
+## Hashing approximate and complex datatypes
+
+Some datatypes are by definition approximate representations. In SQL Server they are represented by the `real` and `float` data types. Depending on the values and the processing entity the actual value used in the hashing might be different. For example, SQL and SSIS store some values slightly different. For these scenarios it is important to note that the generated hash is not deterministic and can lead to different hash values for the apparent same input value. In most scenarios this will only lead to the occasional added row when a change has not occurred. For scenarios where this is not acceptable, consider using exact numeric data types.
+
+Some complex data types, such as `geography`, `geometry`, `hierarchyid` and `image`, don't have obvious string representations and can therefore be interpreted differently by different hashing approaches. For scenarios where these data types are used and a deterministic hashing is needed, consider manually converting them to a known format or object representation before hashing.
+
+## Sample comparison script
+
+The below SQL Script queries the AdventureWorksLT staging table for the AWLT.Product table and recreates the SSIS derived hash for the Business Key and Row hash using SQL `HASHBYTES()` syntax. Note the use of `CAST` and `CONVERT` with formats.
+
+```sql
+SELECT
+
+CONVERT(CHAR(40), HASHBYTES('SHA1', CONVERT(NVARCHAR(MAX),
+    COALESCE(LTRIM(RTRIM(CAST(Product_BK AS NVARCHAR(100)))), 'NVL')
+)),2) AS FlexRowHashKeyInSql,
+
+FlexRowHashKey,
+
+CONVERT(CHAR(40), HASHBYTES('SHA1', CONVERT(NVARCHAR(MAX),
+    COALESCE(LTRIM(RTRIM(CAST([ProductID] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST([Name] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST([ProductNumber] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST([Color] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CONVERT(NVARCHAR(100), [StandardCost],2 ))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CONVERT(NVARCHAR(100), [ListPrice],2 ))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST([Size] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST([Weight] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST([ProductCategoryID] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST([ProductModelID] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CONVERT(NVARCHAR(30), [SellStartDate], 127))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CONVERT(NVARCHAR(30), [SellEndDate], 127))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CONVERT(NVARCHAR(30), [DiscontinuedDate], 127))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST([ThumbnailPhotoFileName] AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CAST(REPLACE(REPLACE([rowguid], '{',''),'}','')  AS NVARCHAR(100)))), 'NVL') +'~'+
+    COALESCE(LTRIM(RTRIM(CONVERT(NVARCHAR(30), ModifiedDate, 127))), 'NVL')
+)),2) AS FlexRowHashInSql,
+
+FlexRowHash,
+
+*
+
+FROM AWLT.Product ORDER BY ProductID
+```
