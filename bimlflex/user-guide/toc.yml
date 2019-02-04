@@ -83,6 +83,8 @@
     href: object-inheritance.md
   - name: Business Keys and Relationships
     href: business-keys-and-relationships.md
+  - name: Hashing in BimlFlex
+    href: hashing-in-bimlflex.md
 
 - name: Deployment and operational guides
   items:
