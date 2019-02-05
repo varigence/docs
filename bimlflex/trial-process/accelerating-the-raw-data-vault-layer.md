@@ -20,7 +20,7 @@ Data Vault acceleration can be performed once the Enterprise Logical Model, the 
 
 The Data Vault acceleration uses the source metadata and its defined relationships to create a Raw Data Vault layer. Based on this metadata, BimlFlex will automatically create the required Data Vault structures and the source to target mappings in the metadata repository.
 
-The accelerator first creates a preview of the Data Vault artefacts so that the model can be reviewed and refined through the normal modeling and development process.
+The accelerator first creates a preview of the Data Vault artifacts so that the model can be reviewed and refined through the normal modeling and development process.
 
 In the trial process, a Unit of Work was updated for the ProductModelProductDescription link table, the preview illustrates that this will be generated as a 3-way link as expected. The attributes for the Product source table was also prepared to be split across 3 Satellites. The preview shows the Product Hub and the expected Satellites.
 

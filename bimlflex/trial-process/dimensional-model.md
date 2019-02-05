@@ -24,7 +24,7 @@ This article describes the creation of a classical dimensional model either on t
 
 It follows the general dimensional approach of building Fact tables that contain metrics and connections to Dimension members and Dimension tables that contain descriptive attributes.
 
-While the Raw Data Vault is loaded with uninterpreted data, the Dimensional model normally require that a set of Business rules are applied to the data so that it is fit for the required analytical purpose. In the process of creating the end to end solution it is common to also create raw versions of these artefacts that are used to refine the business rules used to create the final model.
+While the Raw Data Vault is loaded with uninterpreted data, the Dimensional model normally require that a set of Business rules are applied to the data so that it is fit for the required analytical purpose. In the process of creating the end to end solution it is common to also create raw versions of these artifacts that are used to refine the business rules used to create the final model.
 
 In this process a set of Fact and Dimensional source views are created, based either on the staging tables or on the Data Vault and Point In Time and Bridge tables in the Data Vault layer. These are used to populate a dimensional model in a Data Mart as a presentation/reporting layer.
 
@@ -294,9 +294,9 @@ The Fact table source has the corresponding lookup value (same value as the Busi
 1. The source column in the source object should contain the same values as the Business Key column in the referenced Dimension. The source value in the source column is used in the lookup and replaced with the Identity Column value at runtime.
 
 
-### Building the dimensional model SQL artefacts
+### Building the dimensional model SQL artifacts
 
-With the metadata defined in the Excel metadata management tool, refresh the metadata in BimlStudio and create the SQL Artefacts as normal through the `Create Table Script`. The source views and destination tables will be included in the script.
+With the metadata defined in the Excel metadata management tool, refresh the metadata in BimlStudio and create the SQL Artifacts as normal through the `Create Table Script`. The source views and destination tables will be included in the script.
 
 Should the source views be managed through SSDT, deploy them as normal.
 

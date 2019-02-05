@@ -43,11 +43,11 @@ For dimensional attributes it is also possible to define the change types. each 
 
 ### Build solution in BimlStudio
 
-Once the model is completed it is time to open the solution in BimlStudio and build out all required artefacts. BimlStudio reads all the metadata from the BimlFlex metadata repository and provides generation of all SQL scripts as well as SSIS and SSDT Project generation for all parts of the data warehousing solution. Once the builds are completed the solution can be opened and run in Visual Studio or it can be passed to a continuous build, continuous deployment pipeline.
+Once the model is completed it is time to open the solution in BimlStudio and build out all required artifacts. BimlStudio reads all the metadata from the BimlFlex metadata repository and provides generation of all SQL scripts as well as SSIS and SSDT Project generation for all parts of the data warehousing solution. Once the builds are completed the solution can be opened and run in Visual Studio or it can be passed to a continuous build, continuous deployment pipeline.
 
 ### Using On-premises SQL Server
 
-For an on-premises solution the generated artefacts will be SQL table scripts and projects for the database and SSIS Projects with data flows for loading the data from the source database views to the data warehouse.
+For an on-premises solution the generated artifacts will be SQL table scripts and projects for the database and SSIS Projects with data flows for loading the data from the source database views to the data warehouse.
 
 ### Using Cloud based Azure SQL Data Warehouse
 
@@ -59,7 +59,7 @@ To repoint the data warehouse to use an Azure SQL Data Warehouse, the only chang
 
 For Azure SQL Data Warehouse there are additional features available, such as splitting and compressing the export files for optimized load across the chosen data warehouse configuration.
 
-Once the changes are done, the BimlStudio project will provide all required artefacts for implementing the data warehouse on Azure SQL Data warehouse. This includes packages for extracting data from the source database into flat file, the mechanism to move them to Azure Blob Storage, the External Table definitions to expose the data from the files to the data warehouse and the ELT load Stored Procedures that loads the facts and dimensions with the data from the files. For convenience and orchestration help there are also an SSIS project with a package that calls all the load Stored Procedures in the right order.  
+Once the changes are done, the BimlStudio project will provide all required artifacts for implementing the data warehouse on Azure SQL Data warehouse. This includes packages for extracting data from the source database into flat file, the mechanism to move them to Azure Blob Storage, the External Table definitions to expose the data from the files to the data warehouse and the ELT load Stored Procedures that loads the facts and dimensions with the data from the files. For convenience and orchestration help there are also an SSIS project with a package that calls all the load Stored Procedures in the right order.  
 
 ## Watch BimlFlex 2018 - Dimensions and Facts
 

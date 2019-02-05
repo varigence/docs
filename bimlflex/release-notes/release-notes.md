@@ -311,7 +311,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Fix: Update to Same As Link to derive both Hub sides
 * Add `CONVERT` to SourceQuery to accommodate SQL Server and PolyBase Maximum DMS row size limitations
 * Fix: Removed Link Surrogate Keys from External Table definitions
-* Added initial support to auto-generate SSDT projects for all SQL artefacts
+* Added initial support to auto-generate SSDT projects for all SQL artifacts
 
 ## Bundle 80207
 

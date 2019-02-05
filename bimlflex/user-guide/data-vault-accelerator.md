@@ -30,7 +30,7 @@ Follow the guide for [Source To Staging](source-to-staging-templates.md) and imp
 
 ### The Source and Target model
 
-Before starting the integration and acceleration of the technical artefacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modelling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
+Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modelling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
 ![Whiteboard Model](images/bimlflex-ss-v5-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
@@ -61,7 +61,7 @@ The accelerator will use the metadata in the source for the project to derive th
 
 The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault preview allows a rapid design cycle of the Raw Data Vault.
 
-Should the Accelerator not be needed it is possible to manually define the Data Vault artefacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault](data-vault-templates.md).
+Should the Accelerator not be needed it is possible to manually define the Data Vault artifacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault](data-vault-templates.md).
 
 Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become part of the normal metadata set.
 
@@ -78,7 +78,7 @@ The following narrative will guide us through the Accelerator process end to end
 1. Review and tweak the metadata
 1. Rerun the preview
 1. Publish the preview to the metadata repository
-1. Build the database artefacts and SSIS artefacts from the newly published Data Vault metadata
+1. Build the database artifacts and SSIS artifacts from the newly published Data Vault metadata
 
 ### The Accelerator User Interface
 
@@ -98,7 +98,7 @@ Constraining the Data Vault Acceleration to a subset allows for a more agile del
 
 ![Accelerator Preview](images/bimlflex-ss-v5-data-vault-accelerator-preview-table-list.png "Accelerator Preview")
 
-Once the Preview Options are defined and committed it is possible to Preview the Data Vault model. The preview will generate the destination table artefacts in the solution explorer to the right in BimlStudio.
+Once the Preview Options are defined and committed it is possible to Preview the Data Vault model. The preview will generate the destination table artifacts in the solution explorer to the right in BimlStudio.
 
 ![Preview Schema Diagram](images/bimlflex-ss-v5-preview-database-schema-diagram-ui.png "Preview Schema Diagram")
 
