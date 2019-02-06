@@ -32,5 +32,8 @@ Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
 * Fixed issue where bimlc.resp files were getting generated with the wrong flag syntax for `BuildDocumentation` setting.
 * Improved messaging in help message around versioning. 
 
+## SSAS Tabular
+* Made `DataCategory` into an extensible string field.
+
 ## BimlFlex Projects
 * Added "Extract DACPAC Folder" button to the Debug Utility. This allows the user to get the Dacpac folder from the bundle and save it where they please.
