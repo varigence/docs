@@ -13,6 +13,36 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
 
+## Bundle vNext, BimlFlex 2019 Preview
+
+This Bundle has companion Preview versions of BimlStudio and BimlFlex. It also requires the SSIS Custom components to be updated to the current version.
+
+> [!IMPORTANT]
+> This Bundle contains updates that require an update to BimlStudio and the BimlFlex Excel plug-in.
+> Please download and install 2019 Preview build 5.0.637tba.0 or later:
+>
+> * BimlStudio 2019 preview: [https://varigence.com/downloads/bimlflexsetup_5.0.637tba.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.637tba.0.exe)
+> * BimlFlex 2019 Preview: [https://varigence.com/downloads/bimlflexsetup_5.0.637tba.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.637tba.0.exe)
+
+> [!IMPORTANT]
+> This Bundle contains updates that require an update to the BimlFlex SSIS Custom Components.
+> Please download and install the current custom components for the corresponding SQL Server version:
+>
+> * SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+> * SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+> * SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+> * SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+> * SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+>
+> Note that these are the same versions as was released with the 63731 Bundle. An update is only required for installations running earlier versions.
+
+* Add: The BimlFlex App is available in preview, this app allows metadata management similar to the Excel Add-in, less the dependency on Excel. More information on the BimlFlex App is available here: @bimlflex-app-overview
+* Update: The `Business Key` metadata concept has been renamed to `Integration Key` to better describe the meaning. The metadata column `IsBusinessKey` is now named `IsIntegrationKey`. This is in line with the previous, similar, change to the `IsSourceKey` column. The Integration Key is used in modeling to define a single, agnostic, key used for integration across source systems. This is commonly used in both Data Vault and Data Mart modeling for defining Hubs and table grains etc.
+* Update: A scenario where the merge for loads using the delete detection pattern would result in an incorrect join column mapping has been resolved.
+* Update: The BimlFlex Excel About > Help link has been updated to point to the current documentation web site.
+* Add: `DvPitLagDays` and `DvBridgeLagDays` settings that allow for Overriding the number of days the `Point In Time` and `Bridge` process should go back and look for changes to reprocess.
+* Update: `Point In Time` code to correctly end date records. It is recommended to truncate the PIT tables and executing the newly generated code to apply the new logic on existing tables.
+
 ## Bundle 63731
 
 > [!IMPORTANT]
@@ -131,4 +161,4 @@ Other updates:
 
 ## Bundle 63516
 
-* Add: Support for the ADF Integration template artefact generation. Use the `ADF Source -> Target` Project Integration Template to define an ADF project. The ADF process currently supports SQL-based sources to either Azure Blob Storage or Azure Data Lake Storage file destinations
+* Add: Support for the ADF Integration template artifact generation. Use the `ADF Source -> Target` Project Integration Template to define an ADF project. The ADF process currently supports SQL-based sources to either Azure Blob Storage or Azure Data Lake Storage file destinations
