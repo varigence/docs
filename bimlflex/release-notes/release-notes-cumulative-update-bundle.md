@@ -13,6 +13,12 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
 
+## Bundle 63807
+
+* Add: `DvPitLagDays` and `DvBridgeLagDays` Settings that allow for Overriding the number of days the `Point In Time` and `Bridge` process should go back and look for changes to reprocess.
+* Update: `Point In Time` code to correctly end date records. We recommend truncating the PIT tables and executing the newly generated code.
+* Update: the `IsBusinessKey` metadata entity has been renamed to `IsIntegrationKey` to better reflect the meaning. This metadata attribute reflects the key definition used to integrated data accross systems. This is a common scenario to use a composite key for Data Vault and Data Mart modelling.
+
 ## Bundle 63723
 
 > [!IMPORTANT]
