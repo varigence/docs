@@ -56,4 +56,15 @@
 * bca190b57a797a0035f13a6a8fcc4e3e41759983 - add support for AdfPostCopy Extension Point
 * 47767b97ac88cb40509156dfacb7720087dc8613 - BFX - Refactor ImportMetadata dialog in new UI
 * 7ebe3858e0a0ee75b4b638150c925200674f1019 - Update IntegrationTemplate.sql. Also add SSIS prefix to make meaning more explicit for web app
-*
+* 5f725052c59de6371acdf6452b958781c2254f46 - ADF code with threading, solve order, and subbatching for 40 activity limit.
+* 105c3ad2af534f52e8074088b09aced3cb3f64cc - Update CustomAttributes.sql. Update any existing custom attributes from 'SsisExpression' to 'SsisDataflowExpression'
+* b6d619e421c333f686ab431ab324e6c619c6248b - BFX - Add Snowflake to the Build projects
+* 8f845572b79e746df684ab35b21c9ec70db91774 - BFX - Add additional support for Binary hashing accomodating for SSIS bytes comparing.
+* da1a126ec773b7cf94de13836211663710a7c2c4 - BFX - Fix Data Mart smart key data conversion check
+* 6fa8e2de134a745f504534dac788d7a9061e379 - BFX - Update Hash component for compatability with RowHash in SQL. Note that float is handled slightly differently in SSIS vs SQL so there might be some minor variances on this datatype. Currently geography, geometry, hierarchyid and image datatypes may also have variances.
+* d0f536905b0052e3ae65e4cc4052aac2a600aa02 - BFX -  Rename `ConcatenatorBusinessKey` Setting to `StringConcatenator` as this better describe the use.
+* a92a480de28c2ffe10f6969eace29118a1fa110c - BFX - Optimize LogExecutionEnd and Error to limit the possibility of a deadlock.
+* 8d716945cfcb9b46d07590f7f6b1a3e86de9bb13 - Create EXT_BATCH_DELETE_PostProcess.biml. sample delete detection for inherited delete project approach. this approach uses an inherited object with just the keys for the delete detection, this post-processing script updates the destination PSA and RDV with delete records
+* a5ba9b802d2a2cdbeb305944a912a430334f4f04 - Create zz_CopyBundleLocalTemplateLocation.cmd. Copies the bundle file to the local template location for upgrading through BimlStudio
+* cd885b715e179e32ca174f67d85b35324068427 - BFX - Fix the issue where the app.ImportRequest was created with unnamed defaults causing dacpac deployment issues.
+* f68041bd7f4cfd93d377613c3582dae2d945b16d - Update AzureSqlDwProvider.cs. remove superfluous FlexRowEffectiveFrom column from STG select statement
