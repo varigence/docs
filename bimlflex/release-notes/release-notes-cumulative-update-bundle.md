@@ -37,11 +37,17 @@ This Bundle has companion Preview versions of BimlStudio and BimlFlex. It also r
 > Note that these are the same versions as was released with the 63731 Bundle. An update is only required for installations running earlier versions.
 
 * Add: The BimlFlex App is available in preview, this app allows metadata management similar to the Excel Add-in, less the dependency on Excel. More information on the BimlFlex App is available here: @bimlflex-app-overview
-* Update: The `Business Key` metadata concept has been renamed to `Integration Key` to better describe the meaning. The metadata column `IsBusinessKey` is now named `IsIntegrationKey`. This is in line with the previous, similar, change to the `IsSourceKey` column. The Integration Key is used in modeling to define a single, agnostic, key used for integration across source systems. This is commonly used in both Data Vault and Data Mart modeling for defining Hubs and table grains etc.
+* Update: The `Business Key` metadata concept has been renamed to `Integration Key` to better describe the meaning. The metadata column `IsBusinessKey` is now named `IsIntegrationKey`. This is in line with the previous, similar, change to the `IsSourceKey` column. The Integration Key is used in modeling to define a single, agnostic, key used for integration across source systems. This is commonly used in both Data Vault and Data Mart modeling for defining Hubs and table grains etc. Any bespoke code references require updating to refer to the new name.
 * Update: A scenario where the merge for loads using the delete detection pattern would result in an incorrect join column mapping has been resolved.
 * Update: The BimlFlex Excel About > Help link has been updated to point to the current documentation web site.
 * Add: `DvPitLagDays` and `DvBridgeLagDays` settings that allow for Overriding the number of days the `Point In Time` and `Bridge` process should go back and look for changes to reprocess.
 * Update: `Point In Time` code to correctly end date records. It is recommended to truncate the PIT tables and executing the newly generated code to apply the new logic on existing tables.
+
+> [!NOTE]
+> The following metadata columns have been renamed and any bespoke code referring to them require corresponding updates
+>
+> * `IsBusinessKey` is now called `IsIntegrationKey`
+> * `IsAltBusinessKey` is now called `IsSourceKey`
 
 ## Bundle 63731
 
