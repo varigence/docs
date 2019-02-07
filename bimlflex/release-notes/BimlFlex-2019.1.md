@@ -44,3 +44,16 @@
 * 1f5ce5bda7f8b129774499f2b78e622076e2c2f7 - BFX - Remove auto conversion of GUID to String(50) for ADF Copy compatability.
 * c2e8b7536b64f84f77889b14906080a2892e8e53 - BFX - Minnor fix to HashAlgorithm for HASHBYTES
 * 5de24afde6a1f7f49e58d37929b90b51f8be7a94 - BFX - BETA Update SQLDW Staging table script for ADF template.
+* 35af51f4830aaa21562184d5730e79394b5b41d0 - BFX - Fix DataVault Accelerator schema graph preview not displaying by adding additional Annotation tags
+* b0c4f247871278730e450e1b37eb82b5c73bf862 - update end processes to accommodate closing of legacy exections when needed. A previous scenario could lead to non-closed previous executions stalling new executions and never getting reset by the orchestration
+* 1f93a10282b7355ad6c6bfaf02b679ff3daeb32a - BFX - Add additional Azure Settings AzureAllowPolybase, AzureStageOnExtract, AzureExternalFileConversion. TODO: Document their usage
+* fb0f945f0dfb2ec9a7699b410a5d91d1c10cd592 - BFX - Add Setting to control conversion og Guid to String. ConvertGuidToString
+* 758f8dfb105b721e8469824af530e830687588cd - BFX - Apply SQLDW backward compatability changes for previous bundles.
+* d88727073a9a31f80a2d09a3ee1dbac93b45fff9 - BFX -  Fix DV target project allocation when source table is mapped to a HUB that is different to the SAT of the record source.
+* d37024c1c104943856e72b9dcffb7716549714a1 - BFX - Minnor fix to File archiving for missing ReadOnlyVariable ZipArchiveImport
+* 14722ea9fd4ed6460a362b6760e859dfef8aa92f - BFX - Rename column IsAltBusinessKey to IsSourceKey. This change require database upgrade and addin upgrade.
+* f370446d9ce62eda2279cb7bc8af2ca8cd8b9789 - Create BatchPostProcess_PostProcessUpdateStatistics.biml. Sample Extension Point for updating statistics on destination RDV tables after ELT Batch completes
+* bca190b57a797a0035f13a6a8fcc4e3e41759983 - add support for AdfPostCopy Extension Point
+* 47767b97ac88cb40509156dfacb7720087dc8613 - BFX - Refactor ImportMetadata dialog in new UI
+* 7ebe3858e0a0ee75b4b638150c925200674f1019 - Update IntegrationTemplate.sql. Also add SSIS prefix to make meaning more explicit for web app
+*
