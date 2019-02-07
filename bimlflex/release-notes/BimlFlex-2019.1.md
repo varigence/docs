@@ -38,4 +38,9 @@
 * 0df3e31362e1a8a27e79d532e2f51359528c9dbc - BFX - Add MaximumInsertCommitSize, BatchSize, CheckConstraints to SRC - STG OLEDB Destination 
 * cf84d557882d019066211cf5a1abcfd85df95e4c - BFX  - Fix Duplicate BK in Reference tables in Data Vault ELT
 * 6aa53696839faba03a219e028f475d018c55eb74 - BFX - Fix InitializeOverride ExtensionPoint to include Batch inheritance
-*
+* 67ba9bc39ceb2ed7bec7aaf8aaa44fe15b9b685c - BFX - Update BimlFlex database converting SsisExpression and SqlExpression to use SsisDataflowExpression and SqlSourceExpression in preparation for Azure Data Factory.
+* 39d5f24a19b23a0d4ac12278508417fe5f1ca93d - BFX - Move CDC Get MAX Lsn up in Dataflow to accomodate changes during InitialLoad
+* 5cc009b803e58cd98a3e6c85354f069a65a018c5 - BFX - Add TargetPreProcess and TargetPostProcess to Data Vault and Data Mart Dataflow to accomodate Source and Target table paramneters
+* 1f5ce5bda7f8b129774499f2b78e622076e2c2f7 - BFX - Remove auto conversion of GUID to String(50) for ADF Copy compatability.
+* c2e8b7536b64f84f77889b14906080a2892e8e53 - BFX - Minnor fix to HashAlgorithm for HASHBYTES
+* 5de24afde6a1f7f49e58d37929b90b51f8be7a94 - BFX - BETA Update SQLDW Staging table script for ADF template.
