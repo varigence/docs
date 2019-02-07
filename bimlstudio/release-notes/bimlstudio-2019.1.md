@@ -37,3 +37,4 @@ Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
 
 ## BimlFlex Projects
 * Added "Extract DACPAC Folder" button to the Debug Utility. This allows the user to get the Dacpac folder from the bundle and save it where they please.
+* 
