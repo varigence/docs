@@ -22,7 +22,7 @@ BimlFlex uses a metadata database (BimlFlex) and an orchestration database (Biml
 
 More information: @bimlflex-database
 
-The BimlFlex database contains all metadata required to build the data warehouse and the load process artefacts. It is accessed by the developers and modelers when designing and building the data warehouse. A standard installation has a single BimlFlex metadata database for all projects and all metadata.
+The BimlFlex database contains all metadata required to build the data warehouse and the load process artifacts. It is accessed by the developers and modelers when designing and building the data warehouse. A standard installation has a single BimlFlex metadata database for all projects and all metadata.
 
 ### BimlCatalog Orchestration and Audit Log Database
 

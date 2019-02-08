@@ -34,7 +34,7 @@ Once the packages are built they can be deployed to the SQL Server SSIS Catalog 
 
 Manual creation of build steps
 
-BimlFlex can locally build out the SQL Server based SSDT project that contains the SQL artefacts used for the project.
+BimlFlex can locally build out the SQL Server based SSDT project that contains the SQL artifacts used for the project.
 
 ## Build server based approach
 
@@ -63,7 +63,7 @@ Sample Automation process and sample scripts
 
 1. Build the SQL Server SSDT database projects
 
-This step can either use the Biml Compiler or MSBuild to build the artefacts. It connects to the metadata instance and ejects the SSDT Projects. Note that there is an SSDT Project per database.
+This step can either use the Biml Compiler or MSBuild to build the artifacts. It connects to the metadata instance and ejects the SSDT Projects. Note that there is an SSDT Project per database.
 
 The build process uses a separate settings file as well as separate build configuration files to only build the required SSDT Project. This allows the developer to have the original settings files for normal development and makes sure the automated process builds the expected result. The Biml Compiler uses a different build settings file to the MSBuild approach.
 

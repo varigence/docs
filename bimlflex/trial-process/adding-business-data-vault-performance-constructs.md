@@ -31,7 +31,7 @@ The Bridge constructs allow multiple Links surrounding a Hub to be combined in o
 > Example:
 > A Sales Order Core Business Concept is stored in a Hub. This has several separate Link table relationships to Customer, Shipping Address, Billing Address, Product, Marketing Campaign, Store Hubs etc. A query to gather attributes from multiple attached Satellites from the linked entities would need to join from main Hub to Link to related Hub to Satellite or Point In Time table for each related entity. This rapidly becomes a large number of joins. The Bridge table pre-calculate the joins and allows for more straightforward queries.
 
-BimlFlex implements these artefacts using tables for data storage, Stored Procedures for loading and SSIS packages for orchestration.
+BimlFlex implements these artifacts using tables for data storage, Stored Procedures for loading and SSIS packages for orchestration.
 
 The PIT and Bridge objects are created in the attributes sheet in the Excel metadata editor.
 

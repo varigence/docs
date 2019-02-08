@@ -10,6 +10,8 @@
     href: server-installation.md
   - name: Initial Setup and Configuration
     href: initial-setup-and-configuration.md
+  - name: The BimlFlex App
+    href: bimlflex-app-overview.md
   - name: SSIS Custom Components
     href: ssis-custom-components.md
   - name: BimlFlex Database
@@ -83,6 +85,8 @@
     href: object-inheritance.md
   - name: Business Keys and Relationships
     href: business-keys-and-relationships.md
+  - name: Hashing in BimlFlex
+    href: hashing-in-bimlflex.md
 
 - name: Deployment and operational guides
   items:

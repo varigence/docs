@@ -19,13 +19,13 @@ BimlFlex provides 2 main ways of hashing:
 
 Both of these approaches provides a set of optional configurations and settings. The hashing approach in the SSIS packages are controlled through the following settings:
 
-| SettingKey | SettingValue | Description |
-| ---------- | ------------ | ----------- |
-HashAlgorithm | SHA1 | Hashing Algorithm |
-HashBinary | N | Binary or String hash representation |
-HashBusinessKey | N | Should the Business Key be hashed. This is always applied for loads with a Data Vault destination |
-UseSqlCompatibleHash | Y | Should the Business Key hashing use a SQL compatible pattern |
-UseSqlCompatibleRowHash | Y | Should the row checksum hashing use a SQL compatible pattern |
+| SettingKey              | SettingValue | Description |
+| ----------              | ------------ | ----------- |
+| HashAlgorithm           | SHA1         | Hashing Algorithm |
+| HashBinary              | N            | Binary or String hash representation |
+| HashBusinessKey         | N            | Should the Objects Business Key be hashed. This is always applied for loads with a Data Vault destination |
+| UseSqlCompatibleHash    | Y            | Should the Business Key hashing use a SQL `HASHBYTES()` compatible pattern |
+| UseSqlCompatibleRowHash | Y            | Should the row checksum hashing use a SQL `HASHBYTES()` compatible pattern |
 
 ### Hash representation
 
@@ -38,7 +38,7 @@ When considering the hash data type, storage requirements and SQL Server perform
 
 ### Hash algorithm
 
-The cryptographic algorithm used to derive the hash. The different algorithms result in differently sized hash values, and have different risks for key collisions.
+The cryptographic algorithm used to derive the hash. The different algorithms result in differently sized hash values, require different amount of processing power and have different risks for key collisions.
 
 * MD5
 * SHA1
