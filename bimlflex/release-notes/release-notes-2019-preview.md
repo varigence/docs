@@ -5,7 +5,7 @@ name: BimlFlex 2019 Preview Release Notes
 # BimlFlex 2019 Preview Release Notes
 
 > [!NOTE]
-> Please make sure databases and projects prior to upgrading or applying any updates. It is also recommended that project and bundles are checked into source control.
+> Please make sure databases and projects have been backed up prior to upgrading or applying any updates.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
 
 > [!IMPORTANT]
@@ -33,6 +33,17 @@ The preview release has updated versions of the SSIS Custom components.
 > * SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
 > * SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
 > * SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+
+## Upgrading to the Preview
+
+The process to upgrade to the preview release consists of the following steps:
+
+1. Download and install the BimlFlex App preview
+1. Download and install the BimlFlex Excel Add-in preview
+1. Download and install the BimlStudio preview
+1. Download and install the correct version of the SSIS Custom components matching the SQL Server version in use
+1. Upgrade databases and Bundles to the Cumulative Upgrade Bundle version. Open the existing project, click the `Upgrade Assets` menu item, change the channel to the `Cumulative Channel`. More information on the channel choice is available here: @bimlflex-upgrade#upgrade-to-cumulative-update-or-beta-release
+1. Restart BimlStudio and reopen the project
 
 ## Preview Features
 

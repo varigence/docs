@@ -13,19 +13,21 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
 
-## Bundle vNext, BimlFlex 2019 Preview
+## Bundle 63808, BimlFlex 2019 Preview
 
 This Bundle has companion Preview versions of BimlStudio and BimlFlex. It also requires the SSIS Custom components to be updated to the current version.
 
-> [!IMPORTANT]
-> This Bundle contains updates that require an update to BimlStudio and the BimlFlex Excel plug-in.
-> Please download and install 2019 Preview build 5.0.637tba.0 or later:
->
-> * BimlStudio 2019 preview: [https://varigence.com/downloads/bimlflexsetup_5.0.637tba.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.637tba.0.exe)
-> * BimlFlex 2019 Preview: [https://varigence.com/downloads/bimlflexsetup_5.0.637tba.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.637tba.0.exe)
+Please refer to the @bimlflex-2019-preview-release-notes for a Preview view of the release notes
 
-> [!IMPORTANT]
-> This Bundle contains updates that require an update to the BimlFlex SSIS Custom Components.
+> [!NOTE]
+> 2019 Preview release downloads
+>
+> * BimlFlex App 2019 preview: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
+> * BimlFlex Excel Add-in 2019 Preview: [https://varigence.com/downloads/download/bimlflexaddinsetup_preview_2019.exe](https://varigence.com/download/bimlflexaddinsetup_preview_2019.exe)
+> * BimlStudio 2019 Preview: [https://varigence.com/download/bimlstudiosetup_preview_2019.exe](https://varigence.com/download/bimlstudiosetup_preview_2019.exe)
+
+> [!NOTE]
+> The preview release contain features that require an update to the BimlFlex SSIS Custom Components.
 > Please download and install the current custom components for the corresponding SQL Server version:
 >
 > * SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
