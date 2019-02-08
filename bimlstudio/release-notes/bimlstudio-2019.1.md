@@ -8,6 +8,10 @@ Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
 * Fixed bug where `Container` property `TransactionOption` was being evaluated as an object rather than an `int32`.
 * Fixed typo in `MergeJoin` error message.
 
+## BimlStudio Improvements
+* Removed the live assets checkbox from the logical view as it was confusing and no longer valuable for modern users of BimlStudio.
+* The validator is now suspended during background compilation to improve performance and prevent the temporary appearance of spurious errors.
+
 ## Azure Data Factory
 * Fixed the way that `TabularTranslator` is emitted in Copy activities. 
 * Added support for `DynamicsAx` linked services, datasets, copy sources and copy sinks. 
@@ -28,6 +32,7 @@ Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
 * Added support for `Office365` linked services, datasets, copy sources and copy sinks. 
 * Added support for `GoogleAdWords` linked services, datasets, copy sources and copy sinks. 
 * Placed a 40 activity limit on pipeline nodes.
+* Changed `SqlServerLinkedServiceBase` linked service `StoredProcedureName` property to an attribute from a child.
 
 ## Bimlc.exe
 * Fixed issue where bimlc.resp files were getting generated with the wrong flag syntax for `BuildDocumentation` setting.
@@ -35,7 +40,10 @@ Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
 
 ## SSAS Tabular
 * Made `DataCategory` into an extensible string field.
+* Made `type` property required.
 
 ## BimlFlex Projects
 * Added "Extract DACPAC Folder" button to the Debug Utility. This allows the user to get the Dacpac folder from the bundle and save it where they please.
-* 
+* Prevent filtering out preview nodes for diagram menu options
+* Complete overhaul of Schema Graphs.
+
