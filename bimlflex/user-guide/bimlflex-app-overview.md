@@ -7,9 +7,7 @@ title: BimlFlex App Overview
 The BimlFlex App provides a user experience for managing metadata and BimlFlex projects. It is a companion application that works together with BimlStudio for building and managing projects.
 
 > [!NOTE]
-> Download the BimlFlex app 2019 preview from the following location:
->
-> * BimlFlex App 2019 preview: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
+> Download the BimlFlex app 2019 preview from the following location: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
 
 ## Overview
 
