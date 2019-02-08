@@ -4,9 +4,9 @@ title: BimlFlex Data Vault Templates
 ---
 # Data Vault Templates
 
-This document outlines the creation and management of Data Vault artefacts in BimlFlex.
+This document outlines the creation and management of Data Vault artifacts in BimlFlex.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](data-vault-accelerator.md). This document focuses on the process of manually creating Data Vault artefacts by manipulating metadata.
+The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](data-vault-accelerator.md). This document focuses on the process of manually creating Data Vault artifacts by manipulating metadata.
 
 ## Setup
 
@@ -35,7 +35,7 @@ It can be prudent to revisit the Data Vault modelling pillars as defined by the 
 
 ## Base Data Vault constructs
 
-BimlFlex generates the required artefacts to populate Hubs, Links, Satellites etc from its metadata.
+BimlFlex generates the required artifacts to populate Hubs, Links, Satellites etc from its metadata.
 
 ### Hubs
 
@@ -101,9 +101,9 @@ The Business key is added to the source table as a new column. It uses the `Flex
 
 Once the metadata is pushed from the Excel metadata editor to the repository it is possible to refresh the metadata into BimlFlex.
 
-BimlFlex will indicate the tables and the SSIS artefacts that will be created. Reviewing the artefact list in the solution explorer will indicate if the solution will match expectations.
+BimlFlex will indicate the tables and the SSIS artifacts that will be created. Reviewing the artifact list in the solution explorer will indicate if the solution will match expectations.
 
-Once the solution is built through BimlStudio the normal output artefacts from the staging, persistent staging, table and database creation will include a new project with the Raw Data Vault load batch and Hub ETL process.
+Once the solution is built through BimlStudio the normal output artifacts from the staging, persistent staging, table and database creation will include a new project with the Raw Data Vault load batch and Hub ETL process.
 
 BimlFlex groups Raw Data Vault loads by source table. The generated Product Hub will be included in a package called `LOAD_BFX_RDV_Product_AWLT.dtsx` in the SSIS project called `LOAD_BFX_RDV`.
 
@@ -175,7 +175,7 @@ The required Source Object metadata is already in the metadata model, the Satell
 
 ![Satellite Metadata](images/bimlflex-ss-v5-excel-satellite-metadata-objects.png "Satellite Metadata")
 
-The default naming convention uses the same name for the Satellite as the Hub or Link it is attached to with an additional suffix indicating the source system. It is recommended to use a consistent naming convention for all artefacts. The suffix naming suggests that additional Satellites can be added to the Hubs from other sources.
+The default naming convention uses the same name for the Satellite as the Hub or Link it is attached to with an additional suffix indicating the source system. It is recommended to use a consistent naming convention for all artifacts. The suffix naming suggests that additional Satellites can be added to the Hubs from other sources.
 
 Only under very, very specific circumstances is it recommended to load data into the same Satellite from multiple different sources and even then it is always possible to still load to separate destinations. The Data Vault model supports an unlimited number of Satellites attached to Hubs and Links, this should be embraced in the modelling so that the agility and flexibility to integrate changes and new sources are maximized.
 

@@ -33,7 +33,7 @@ The required columns for the destination model is specified to match the entity 
 
 ### Build solution in BimlStudio
 
-Once the model is completed it is time to open the solution in BimlStudio and build out all required artefacts. BimlStudio reads all the metadata from the BimlFlex metadata repository and provides generation of an SSIS Project for the MDS load. Once the builds are completed the solution can be opened and run in Visual Studio or it can be passed to a continuous build, continuous deployment pipeline.
+Once the model is completed it is time to open the solution in BimlStudio and build out all required artifacts. BimlStudio reads all the metadata from the BimlFlex metadata repository and provides generation of an SSIS Project for the MDS load. Once the builds are completed the solution can be opened and run in Visual Studio or it can be passed to a continuous build, continuous deployment pipeline.
 
 Opening the Project in Visual Studio illustrates the load process. The project includes a batch that calls all individual entity loads, in this case the single Product load process. The Product load process loads from the source, does a lookup to check for existing records and loads the data to the MDS staging table. The package then starts the MDS ingestion process that loads the data from the staging table to the entity.
 

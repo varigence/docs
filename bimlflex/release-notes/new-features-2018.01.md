@@ -35,13 +35,13 @@ More information on this is available in this video:
 
 ## Visual Studio SQL Server Data Tools, SSDT, projects
 
-All SQL artefacts are now added to a separate Visual Studio SQL Server Data Tools, SSDT, project. This project can be used to source control and maintain the databases and SQL artefacts that are part of the Data Warehouse. This can be used for deploying to databases through Visual Studio, to create dacpacs for scripted deployments or as part of a Continuous Integration, Continuous Delivery pipeline.
+All SQL artifacts are now added to a separate Visual Studio SQL Server Data Tools, SSDT, project. This project can be used to source control and maintain the databases and SQL artifacts that are part of the Data Warehouse. This can be used for deploying to databases through Visual Studio, to create dacpacs for scripted deployments or as part of a Continuous Integration, Continuous Delivery pipeline.
 
 A configuration setting has been added to the Bundle options that controls the generation of the SSDT Project.
 
 ## BimlC.exe, command line Biml Compiler
 
-BimlFlex projects can now be built using the BimlC Biml Compiler with settings files to control scope of build. This can be used for scripted deployments or as part of a Continuous Integration, Continuous Delivery. As an example it is commonly used to create SQL artefacts and deploying SQL databases and tables before SSIS packages are created.
+BimlFlex projects can now be built using the BimlC Biml Compiler with settings files to control scope of build. This can be used for scripted deployments or as part of a Continuous Integration, Continuous Delivery. As an example it is commonly used to create SQL artifacts and deploying SQL databases and tables before SSIS packages are created.
 A BimlFlex Build will include a reference to the `bimlc.exe` build command line expression and response file for scenarios where this should be automated at a later stage.
 
 ```batchfile

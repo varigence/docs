@@ -13,11 +13,72 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
 
-## Bundle 63807
+## Bundle 63808, BimlFlex 2019 Preview
 
-* Add: `DvPitLagDays` and `DvBridgeLagDays` Settings that allow for Overriding the number of days the `Point In Time` and `Bridge` process should go back and look for changes to reprocess.
-* Update: `Point In Time` code to correctly end date records. We recommend truncating the PIT tables and executing the newly generated code.
-* Update: the `IsBusinessKey` metadata entity has been renamed to `IsIntegrationKey` to better reflect the meaning. This metadata attribute reflects the key definition used to integrated data accross systems. This is a common scenario to use a composite key for Data Vault and Data Mart modelling.
+This Bundle has companion Preview versions of BimlStudio and BimlFlex. It also requires the SSIS Custom components to be updated to the current version.
+
+Please refer to the @bimlflex-2019-preview-release-notes for a Preview view of the release notes
+
+> [!NOTE]
+> 2019 Preview release downloads
+>
+> * BimlFlex App 2019 preview: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
+> * BimlFlex Excel Add-in 2019 Preview: [https://varigence.com/downloads/download/bimlflexaddinsetup_preview_2019.exe](https://varigence.com/download/bimlflexaddinsetup_preview_2019.exe)
+> * BimlStudio 2019 Preview: [https://varigence.com/download/bimlstudiosetup_preview_2019.exe](https://varigence.com/download/bimlstudiosetup_preview_2019.exe)
+
+> [!NOTE]
+> The preview release contain features that require an update to the BimlFlex SSIS Custom Components.
+> Please download and install the current custom components for the corresponding SQL Server version:
+>
+> * SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+> * SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+> * SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+> * SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+> * SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+>
+> Note that these are the same versions as was released with the 63731 Bundle. An update is only required for installations running earlier versions.
+
+* Add: The BimlFlex App is available in preview, this app allows metadata management similar to the Excel Add-in, less the dependency on Excel. More information on the BimlFlex App is available here: @bimlflex-app-overview
+* Update: The `Business Key` metadata concept has been renamed to `Integration Key` to better describe the meaning. The metadata column `IsBusinessKey` is now named `IsIntegrationKey`. This is in line with the previous, similar, change to the `IsSourceKey` column. The Integration Key is used in modeling to define a single, agnostic, key used for integration across source systems. This is commonly used in both Data Vault and Data Mart modeling for defining Hubs and table grains etc. Any bespoke code references require updating to refer to the new name.
+* Update: A scenario where the merge for loads using the delete detection pattern would result in an incorrect join column mapping has been resolved.
+* Update: The BimlFlex Excel About > Help link has been updated to point to the current documentation web site.
+* Add: `DvPitLagDays` and `DvBridgeLagDays` settings that allow for Overriding the number of days the `Point In Time` and `Bridge` process should go back and look for changes to reprocess.
+* Update: `Point In Time` code to correctly end date records. It is recommended to truncate the PIT tables and executing the newly generated code to apply the new logic on existing tables.
+
+> [!NOTE]
+> The following metadata columns have been renamed and any bespoke code referring to them require corresponding updates
+>
+> * `IsBusinessKey` is now called `IsIntegrationKey`
+> * `IsAltBusinessKey` is now called `IsSourceKey`
+
+## Bundle 63731
+
+> [!IMPORTANT]
+> This Bundle contains updates that require an update to the BimlFlex Excel plug-in.
+> Please download and install BimlFlex build 5.0.63710.0 or later:
+>
+> * BimlFlex: [https://varigence.com/downloads/bimlflexsetup_5.0.63710.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.63710.0.exe)
+
+> [!IMPORTANT]
+> This Bundle contains updates that require an update to the BimlFlex SSIS Custom Components.
+> Please download and install the current custom components for the corresponding SQL Server version:
+>
+> * SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+> * SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+> * SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+> * SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+> * SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+
+* Update: The `[ssis].[LogExecutionEnd]` and `[ssis].[LogExecutionError]` stored procedures in BimlCatalog has been updated with additional logic to minimize the risk for deadlocks in certain scenarios.
+* Update: the dynamic hashing used in the custom components have additional configurations available to make the resulting SQL compatible hashing easier to match using `HASHBYTES()` scripts in SQL. For implementations currently using the SQL compatible hashing setting the hash values for full row hashes will be calculated using the new approach and changes to existing rows might be identified due to the updated hashing pattern.
+* Update: The setting `HashLongStrings` has been removed from the settings as the `HASHBYTES('Algorithm', @input)` input limit of 8000 bytes has been removed from Azure SQL Data Warehouse. This legacy setting allowed larger columns to be compared outside of the row hash, working around the limitation. This change will default to always add all columns to the row hash for comparisons regardless of data type size. For existing implementations where this was used, the row hash will potentially be updated and result in additional rows added to the relevant destination table with the same contents and different hash values.
+* Add: The `AddRowHashKeyIndex` setting has been added to allow the automatic creation of index on staging tables to potentially increase the performance of Satellite loads.
+* Update: A BimlFlex database scenario where a legacy default would affect the database upgrade process has been addressed.
+* Update: The `ConcatenatorBusinessKey` setting has been renamed `StringConcatenator` to better reflect the fact that it is used in hash concatenation, not just Business Key string concatenation.
+* Update: A scenario where the Data Mart load pattern added an unnecessary conversion in the Data Flow for smart keys (keys that don't need lookups) has been addressed. Only keys that are used in lookups are converted when needed.
+* Add: BimlFlex now supports modeling scenarios where multiple Data Vault load projects share common elements such as a core Hub object.
+
+More information on the hashing approach for SQL compatible hashing can be found here: @bimlflex-hashing-overview
 
 ## Bundle 63723
 
@@ -108,4 +169,4 @@ Other updates:
 
 ## Bundle 63516
 
-* Add: Support for the ADF Integration template artefact generation. Use the `ADF Source -> Target` Project Integration Template to define an ADF project. The ADF process currently supports SQL-based sources to either Azure Blob Storage or Azure Data Lake Storage file destinations
+* Add: Support for the ADF Integration template artifact generation. Use the `ADF Source -> Target` Project Integration Template to define an ADF project. The ADF process currently supports SQL-based sources to either Azure Blob Storage or Azure Data Lake Storage file destinations

@@ -1,3 +1,5 @@
+- name: New Features in BimlFlex 2019 Preview
+  href: new-features-2019.md
 - name: New Features in BimlFlex 2018.03
   href: new-features-2018.03.md
 - name: New Features in BimlFlex 2018.02
@@ -10,3 +12,5 @@
   href: release-notes-cumulative-update-bundle.md
 - name: Release Notes - Beta Channel
   href: release-notes-beta-bundle.md
+- name: Release Notes - 2019 Preview
+  href: release-notes-2019-preview.md
