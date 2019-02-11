@@ -655,10 +655,21 @@ pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;border-r
 .col-lg-offset-0{margin-left:0}
 }
 caption{padding-top:8px;padding-bottom:8px;color:#777}
+
 #no-styling, #no-styling tr:nth-of-type(odd) td{
     border: none !important;
     background-color: #FFFFFF !important;
 }
+
+#banner-bg{
+    background: url(/content/images/home/power-lines-sunrise-01.jpg);
+    background-position-y: calc((100vw/-2.5) + 240px) !important;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 .table{width:100%;max-width:100%;margin-bottom:20px}
 .table>tbody>tr>td,.table>tbody>tr>th,.table>tfoot>tr>td,.table>tfoot>tr>th,.table>thead>tr>td,.table>thead>tr>th{padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd}
 .table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #ddd}
