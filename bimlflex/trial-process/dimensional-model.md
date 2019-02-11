@@ -6,7 +6,7 @@ title: BimlFlex Dimensional Model
 
 ## Supporting Videos
 
-TODO: Coming Soon
+Video Coming Soon
 
 ## Supporting BimlFlex Documentation
 
@@ -97,7 +97,7 @@ GO
 Sample Fact Query:
 
 ```sql
-TODO: Add sample fact query
+sample coming soon
 ```
 
 ## Detailed Steps
@@ -120,7 +120,7 @@ Source Views
 
 Data Vault Based:
 
-TODO: Add links to sample script files
+sample script files coming soon
 
 * [Customer Dimension](TODO)
 * [Date Dimension View](TODO)
@@ -129,7 +129,7 @@ TODO: Add links to sample script files
 
 Staging, 2-layer, Based:
 
-TODO: Add links to script files
+sample script files coming soon
 
 * [Customer Dimension](TODO)
 * [Date Dimension View](TODO)
@@ -292,7 +292,6 @@ The Fact table source has the corresponding lookup value (same value as the Busi
 1. The Fact table Object needs to be updated to have the same Data Type as the Dimension Key (Commonly Int32 or Int64).
 1. The Fact table Object needs the ReferenceTable and ReferenceColumnName populated with a reference to the Primary Key of the Dimension Table (The Identity Column that the lookup should return)
 1. The source column in the source object should contain the same values as the Business Key column in the referenced Dimension. The source value in the source column is used in the lookup and replaced with the Identity Column value at runtime.
-
 
 ### Building the dimensional model SQL artifacts
 

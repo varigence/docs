@@ -54,7 +54,7 @@ The database setup phase creates the databases required for BimlFlex:
 
 BimlStudio has an integrated, online feature to upgrade BimlFlex projects and databases to the latest version
 
-* @bimlflex-trial-process-upgrading-a-bimlflex-project
+* @bimlflex-trial-upgrading-a-bimlflex-project
 
 #### Creating a BimlFlex project
 
@@ -106,9 +106,6 @@ BimlFlex supports acceleration of Data Vault constructs from business keys and r
 #### Adding Business Data Vault performance constructs
 
 The Point in Time and Bridge table structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
-
-* Point in Time, PIT tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub.
-* Bridge tables are used to link business entities in Hubs through their link tables into easy to query constructs.
 
 * [Adding Business Data Vault](adding-business-data-vault-performance-constructs.md)
 

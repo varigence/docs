@@ -46,7 +46,6 @@ Please refer to the @bimlflex-2019-preview-release-notes for a Preview view of t
 * Update: `Point In Time` code to correctly end date records. It is recommended to truncate the PIT tables and executing the newly generated code to apply the new logic on existing tables.
 * Added `Extract DACPAC Folder` button to the `Debug Utility`. This allows the user to get the `Dacpac` folder from the bundle and save it where they please. This folder contains the database definitions and pre-deployment scripts and can be used in pipeline deployments of BimlFlex database updates. (This is a companion feature in BimlStudio 2019)
 
-
 > [!NOTE]
 > The following metadata columns have been renamed and any bespoke code referring to them require corresponding updates
 >
