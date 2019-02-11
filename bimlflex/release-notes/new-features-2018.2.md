@@ -1,4 +1,4 @@
-# New Features in BimlFlex 2018.02
+# New Features in BimlFlex 2018.2
 
 ## Snowflake-based staging and persisting
 

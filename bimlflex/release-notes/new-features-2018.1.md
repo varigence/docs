@@ -1,4 +1,4 @@
-# New Features in BimlFlex 2018.01
+# New Features in BimlFlex 2018.1
 
 ## Azure Blob Storage-based staging and persisting
 
@@ -14,7 +14,7 @@ Metadata modelling uses the base tables for metadata ingestion and modelling. Fo
 
 ## Data Type Mappings
 
-The Data Type Mappings function allows for expansion of data types. This allows the source data types to be converted to a more accommodating type on load. This in turn allows for changes in the source datatypes without affecting the data warehouse. As an example, a source with a varchar(10) column can update that column to a longer string or it can update to nvarchar to support Unicode characters. either change would require a rebuild of the load process to accommodate the new data type. A Data Type Mapping to nvarchar(100) would negate that need and allow the changed data type to be loaded with little or no impact.
+The Data Type Mappings function allows for expansion of data types. This allows the source data types to be converted to a more accommodating type on load. This in turn allows for changes in the source datatypes without affecting the data warehouse. As an example, a source with a varchar(10) column can update that column to a longer string or it can update to `nvarchar` to support Unicode characters. either change would require a rebuild of the load process to accommodate the new data type. A Data Type Mapping to `nvarchar(100)` would negate that need and allow the changed data type to be loaded with little or no impact.
 
 The Data Type Mappings behavior has a set of default expansion rules. These can be customized in the `DataTypeMappings` Sheet in the BimlFlex settings.
 
