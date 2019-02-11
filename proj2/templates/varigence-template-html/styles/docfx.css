@@ -6,14 +6,14 @@ body {
 }
 button,
 a {
-  color: #333;
+  color: #006699;
   cursor: pointer;
 }
 button:hover,
 button:focus,
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #d25f15;
   text-decoration: none;
 }
 a.disable,
@@ -559,7 +559,7 @@ body .toc{
 }
 .toc-filter > input {
   border: 0;
-  color: #f1f1f1;
+  /*color: #f1f1f1;*/
   padding-left: 20px;
   width: 100%;
 }

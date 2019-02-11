@@ -699,7 +699,7 @@ $(function () {
       html += util.formList(hierarchy, ['nav', 'bs-docs-sidenav']);
       $("#affix").empty().append(html);
       if ($('footer').is(':visible')) {
-        $(".sideaffix").css("bottom", "640px");
+        $(".sideaffix").css("bottom", "20px");
       }
       $('#affix').on('activate.bs.scrollspy', function (e) {
         if (e.target) {
