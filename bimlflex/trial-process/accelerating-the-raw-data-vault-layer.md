@@ -63,7 +63,7 @@ The corresponding preview tables will be visible in the preview schema in the Bi
 The accelerated Data Vault schema can be visualized and reviewed using the schema visualization tool in the documentation tab.
 
 * Click Preview in the Documentation tab, choose Database Schema Diagram.
-* In the generated diagram type, change from `Default` to `BimlFlexDataVaultPreview` or `BimlFlexDataVaultPreviewBackbone` to filter the schema to the preview. The backbone option only include Hubs and Links so that the Core Business Concept and Unit Of Work parts of the model can be more easily reviewed. The preview also include Satellites. 
+* In the generated diagram type, change from `Default` to `BimlFlexDataVaultPreview` or `BimlFlexDataVaultPreviewBackbone` to filter the schema to the preview. The backbone option only include Hubs and Links so that the Core Business Concept and Unit Of Work parts of the model can be more easily reviewed. The preview also include Satellites.
 
 ![Data Vault Accelerator Schema Preview -center -50%](../user-guide/images/bimlflex-ss-v5-data-vault-schema-preview.png)
 
