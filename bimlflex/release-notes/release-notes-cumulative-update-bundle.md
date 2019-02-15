@@ -13,6 +13,16 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
 
+## Bundle vNext
+
+* Update: The default values for settings that include file locations have been updated from `C:\Varigence` to `C:\BimlFlex`. This includes the following settings:
+  * `ArchivePath`, new default: `C:\BimlFlex\Archive`
+  * `ConfigurationPath` `C:\BimlFlex\Configurations`
+  * `ExportPath`, new default: `C:\BimlFlex\Export`
+  * `ImportPath`, new default: `C:\BimlFlex\Import`
+  * `LookupCachePath`, new default: `C:\BimlFlex\Cache`
+  * `RootPath`, new default: `C:\BimlFlex\BimlFlex`
+
 ## Bundle 63808, BimlFlex 2019 Preview
 
 This Bundle has companion Preview versions of BimlStudio and BimlFlex. It also requires the SSIS Custom components to be updated to the current version.
