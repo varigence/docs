@@ -1,12 +1,17 @@
-- name: Parameterize Connections
-  href: parameterize-connections.md
-- name: Replace columns in the SSIS Data Flow
-  href: replace-columns-in-the-ssis-data-flow.md
-- name: Using Sensitive Parameters in SSIS Catalog
-  href: using-sensitive-parameters-in-ssis-catalog.md
+- name: Pinned - How to find the Extension Point target
+  href: find-extension-point-target.md
+
 - name: Adding BimlFlex custom SSIS components to Azure Integration Runtime
   href: adding-ssis-custom-components-to-azure-integration-runtime.md
-- name: How to find the Extension Point target
-  href: find-extension-point-target.md
+
+- name: Extension Point - Override the Default Row Start Date for Dimensions
+  href: overriding-default-dimension-rowstartdate.md.md
+- name: Extension Point - Replace columns in the SSIS Data Flow
+  href: replace-columns-in-the-ssis-data-flow.md
+
 - name: Memory Usage In SSIS
   href: memory-usage-in-ssis.md
+- name: Parameterize Connections
+  href: parameterize-connections.md
+- name: Using Sensitive Parameters in SSIS Catalog
+  href: using-sensitive-parameters-in-ssis-catalog.md
