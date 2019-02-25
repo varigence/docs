@@ -1,0 +1,4 @@
+- name: Extension Point Definitions
+  href: extension-point-definitions.md
+- name: Metadata Entity Definitions
+  href: metadata-entity-definitions.md

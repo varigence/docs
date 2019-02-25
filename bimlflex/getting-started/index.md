@@ -1,41 +1,43 @@
 ---
-uid: bimlflex-trial-process
-title: BimlFlex Trial Process
+uid: bimlflex-getting-started
+title: Getting Started with BimlFlex
 ---
-# BimlFlex Trial Process Overview
+# Getting Started with BimlFlex
 
 ## Summary
 
-The BimlFlex trial process is a guide through building a Data Warehouse using BimlFlex. The trial uses the Microsoft sample database AdventureWorks LT as a source. It allows the creation of an end to end load process for a 2 or 3 layer data warehouse. A 2 layer process being Source to Staging to Dimensional and a 3 layer process being Source to Staging to Data Vault to Dimensional.
+The Getting Started with BimlFlex is an end to end, step by step guide to building a Data Warehouse using BimlFlex.
 
-@bimlflex-user-guide
+It uses the Microsoft sample database AdventureWorksLT as a sample source. It allows the creation of an end to end load process for a 2 or 3 layer data warehouse. A 2 layer process being Source to Staging to Dimensional and a 3 layer process being Source to Staging to Data Vault to Dimensional.
 
-## Trial Prerequisites
+More detailed information is available in the @bimlflex-user-guide
 
-The trial is an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development. It requires SQL Server 2016 for hosting databases and uses SSIS for the ETL process.
+## Prerequisites
+
+The getting started documentation implements an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development. It uses SQL Server 2016 or later for hosting databases and uses SSIS for the ETL load process.
 
 The trial supports 2 architectures:
 
 * a 2 layer approach with staging and Data Mart layer
 * a 3 layer approach with staging, Data Vault and Data Mart layer.
 
-both architectures uses a staging layer with both a transient staging database and a persistent staging (archive) database. both architectures have an analyst-facing dimensional model. The addition of the Data Vault layer illustrates how BimlFlex allows the acceleration and creation of an integration layer that allows cross-system integration on business keys.
+Both architectures uses a staging layer with both a transient staging database and a persistent staging (archive) database. Both architectures have an analyst-facing dimensional model. The addition of the Data Vault layer illustrates how BimlFlex allows the acceleration and creation of an integration layer that allows cross-system integration on business keys.
 
 For the trial the following is needed:
 
-* SQL Server 2016 installation with SQL Server engine and SSIS/Integration services
+* SQL Server 2016 (or later) installation with SQL Server engine and SSIS/Integration services
 * Windows-based development machine for local installation of BimlStudio and BimlFlex
-* Excel 2013-2016 for managing and modelling metadata
-* Visual Studio 2015 with SSDT and SSIS components
+* Excel 2013-2016 for managing and modelling metadata (or use the BimlFlex app for metadata management)
+* Visual Studio 2015 (or later, matching the SQL Server SSIS Installation) with SSDT and SSIS components
 * SQL Server Management Studio for managing databases and running SQL Scripts
 
-## Trial process and documentation
+## Process and documentation
 
-The trial consists of the following steps:
+The getting started process consists of the following steps:
 
 ### Setup and installation of BimlStudio and BimlFlex
 
-The installation and setup of the BimlFlex environment includes downloading the required applications, installing and activating them on a development machine. This process readies the environment for the trial process.
+The installation and setup of the BimlFlex environment includes downloading the required applications, installing and activating them on a development machine.
 
 The following installations are required apart from the prerequisite Microsoft SQL and SSIS development installations.
 
@@ -99,7 +101,9 @@ Most automation features in BimlFlex are built on modelling the metadata to prov
 
 #### Creating a Data Vault based integration layer
 
-BimlFlex supports acceleration of Data Vault constructs from business keys and relationships in the source metadata. based on the model a comprehensive Raw Data Vault layer can be created with ease.
+BimlFlex supports acceleration of Data Vault constructs from integration keys and relationships in the source metadata.
+
+Based on the metadata model, a comprehensive Raw Data Vault layer can be created with ease.
 
 * [Accelerating the Raw Data Vault Layer](accelerating-the-raw-data-vault-layer.md)
 
@@ -123,8 +127,8 @@ The Data Mart layer for a 2 layer architecture reads Facts and Dimensions direct
 
 * [Dimensional Model](dimensional-model.md)
 
-#### Using prepared trial metadata
+#### Using prepared metadata
 
 Metadata for all stages has been prepared and is available to load into the project at any time using the metadata archiving process. There is a trial customer in the BimlFlex database that has archived snapshots available for all stages in the trial process. It is possible to either follow along with the videos and documentation and create the metadata or simply load the metadata at a given point in the process to review the metadata and build the tables and SSIS packages.
 
-* [Using Trial Snapshot Metadata](using-prepared-trial-metadata.md)
+* [Using prepared Metadata](using-prepared-trial-metadata.md)

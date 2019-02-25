@@ -18,10 +18,7 @@
     href: bimlflex-database.md
   - name: BimlCatalog Database
     href: bimlcatalog-database.md
-  - name: Upgrade and Testing Process
-    href: upgrade-and-testing-process.md
-  - name: Upgrading BimlFlex through BimlStudio
-    href: upgrading-bimlflex-through-bimlstudio.md
+
   - name: Support Process
     href: support-process.md
   - name: Debug Utilities
@@ -29,30 +26,7 @@
   - name: Change the BimlFlex Excel bitness
     href: change-excel-bitness-bimlflex.md
 
-- name: Metadata and Settings
-  items:
-  - name: Connections
-    href: metadata-connections.md
-  - name: Batches
-    href: metadata-batches.md
-  - name: Projects
-    href: metadata-projects.md
-  - name: Objects
-    href: metadata-objects.md
-  - name: Columns
-    href: metadata-columns.md
-  - name: Attributes
-    href: metadata-attributes.md
-  - name: Parameters
-    href: metadata-parameters.md
-  - name: Configurations
-    href: metadata-configurations.md
-  - name: Settings
-    href: metadata-settings.md
-  - name: Data Type Mappings
-    href: metadata-data-type-mappings.md
-  - name: Versions
-    href: metadata-versions.md
+
 
 - name: Implementation guides
   items:
@@ -72,6 +46,8 @@
     href: master-data-services.md
   - name: Azure Data Warehouse
     href: azure-data-warehouse.md
+  - name: Business Keys and Relationships
+    href: business-keys-and-relationships.md
 
 - name: Supporting materials for configurations, extensions, orchestration
   items:
@@ -81,10 +57,6 @@
     href: extension-points.md
   - name: Excel Add-in
     href: excel-add-in.md
-  - name: Object Inheritance
-    href: object-inheritance.md
-  - name: Business Keys and Relationships
-    href: business-keys-and-relationships.md
   - name: Hashing in BimlFlex
     href: hashing-in-bimlflex.md
 
@@ -94,10 +66,3 @@
     href: deployment-guide.md
   - name: Continuous Integration and Deployment
     href: continuous-integration-and-continuous-delivery.md
-    
-- name: Reference Documentation
-  items:
-  - name: Metadata Entity Definitions
-    href: metadata-entity-definitions.md
-  - name: Extension Point Definitions
-    href: extension-point-definitions.md
