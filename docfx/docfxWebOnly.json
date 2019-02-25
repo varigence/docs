@@ -38,7 +38,7 @@
           "**/bin/**",
           "**/obj/**",
           "**_site/**",
-          "**proj2/**",
+          "**docfx/**",
           "**posts/**",
           "**/**readme.md",
           "bimlflex/training/**"
@@ -59,7 +59,7 @@
           "**/bin/**",
           "**/obj/**",
           "**_site/**",
-          "**proj2/**"
+          "**docfx/**"
         ],
         "cwd": "../"
       }
