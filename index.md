@@ -8,11 +8,11 @@ The community at [Bimlscript.com](http://bimlscript.com) is also available, wher
 
 <table id="no-styling"><tr><td>
 
-[![BimlFlex -h38px](content/images/bimlflex.png)](bimlflex/user-guide/index.md)
+[![BimlFlex -h38px](content/images/bimlflex.png)](bimlflex/index.md)
 
-* [BimlFlex User Guide](bimlflex/user-guide/index.md)
-* [Metadata Reference](bimlflex/user-guide/metadata-entity-definitions.md)
-* [Extension Points](bimlflex/user-guide/extension-point-definitions.md)
+* [BimlFlex User Guide](bimlflex/index.md)
+* [Metadata Reference](bimlflex/reference-documentation/metadata-entity-definitions.md)
+* [Extension Points](bimlflex/reference-documentation/extension-point-definitions.md)
 
 </td><td>
 
