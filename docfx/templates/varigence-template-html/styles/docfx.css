@@ -1,7 +1,8 @@
 /* Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT License. See License.txt in the project root for license information. */
 html,
 body {
-  font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;
+/*  font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;*/
+  font-family: 'Open Sans',Calibri,Verdana,Arial,Helvetica,sans-serif;
   height: 100%;
 }
 button,
