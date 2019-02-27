@@ -477,6 +477,7 @@ body .toc{
 }
 .toc .nav > li > a {
   margin-left: 5px;
+  margin-top: 5px;
   display: block;
   padding: 0;
 }
