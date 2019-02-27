@@ -37,8 +37,8 @@ The metadata import dialog provides a set of options for managing
 * Inferred metadata
 * Options
 * how to treat already imported Metadata
-* If the Record Source code from the connection should be added to the Business Key. This is useful in the Data Vault modelling process in cases where unwanted data overlap might happen.
-* If source relationships should be re-pointed to use the Business Keys instead of using the derived source constraints
+* If the Record Source code from the connection should be added to the Integration Key. This is useful in the Data Vault modelling process in cases where unwanted data overlap might happen.
+* If source relationships should be re-pointed to use the Integration Keys instead of using the derived source constraints
 
 Once all settings have been reviewed the import function will read the metadata from the source into the Excel sheets.
 Tables are added to the Objects sheet. Columns are added to the Columns sheet.
@@ -59,8 +59,8 @@ Once validated the metadata can be written to the metadata repository.
 1. Choose `AdventureWorks LT` as the source and `EXT_AWLT` as the associated load project.
     BimlFlex will read all available metadata. Use the filtering options for large sources.
 1. Deselect the `dbo` schema. Deselect the `import views` option to only import metadata from the tables in the `SalesLT` schema.
-1. Check the `Add RecordSource(@@rs) to Business Key` option
-1. Check the `Change References to Business Key` option
+1. Check the `Add RecordSource(@@rs) to Integration Key` option
+1. Check the `Change References to Integration Key` option
 1. Click Import to read the metadata from the source into the Excel sheets.
     Tables are added to the `Objects` sheet. Columns are added to the `Columns` sheet.
 1. To write the imported metadata to the repository, click the `Set Current Sheet` on the `Objects` sheet and on the `Columns` sheet. It is also possible to set all entities using the `Set All Entities` button.

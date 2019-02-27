@@ -5,7 +5,7 @@
   href: adding-ssis-custom-components-to-azure-integration-runtime.md
 
 - name: Extension Point - Override the Default Row Start Date for Dimensions
-  href: overriding-default-dimension-rowstartdate.md.md
+  href: overriding-default-dimension-rowstartdate.md
 - name: Extension Point - Replace columns in the SSIS Data Flow
   href: replace-columns-in-the-ssis-data-flow.md
 

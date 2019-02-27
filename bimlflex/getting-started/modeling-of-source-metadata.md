@@ -29,52 +29,52 @@ The following detailed steps walks through the options for modeling of source Me
 BimlFlex has 3 types of keys managed through metadata:
 
 * Primary Key
-* Business Key
-* Alternate Business Key
+* Integration Key
+* Source Key
 
 A Primary Key is used to define the grain of the table, same way as a database primary key normally works. For a staging and persistent staging load the primary key is used to differentiate between a new row and an update to an already loaded row. When generating table scripts from BimlFlex the defined primary key columns will be used to build the staging and persistent staging primary keys. The default behavior is to generate the Primary Key together with the `RowEffectiveFrom` column.
 
 A source table can have multiple columns in the Primary Key definition.
 
-A Business Key is the key describing the business entity stored in the table. It is used in Data Vault modeling to describe the Core Business Concept or Enterprise Wide Business Key candidate that will be used to model and load Hubs. The Business Key can be the same as the Primary Key or it can be derived from a combination of attributes. The Business Key is always a string representation so the default creation behavior in BimlFlex is to apply the `FlexToBk()` expression to convert the source column data types to a string. The import metadata function can derive a Business Key from either the Primary Keys or the Unique Constraints from the source.
+An Integration Key is the key describing the business entity stored in the table. It is used in Data Vault modeling to describe the Core Business Concept or Enterprise Wide Business Key candidate that will be used to model and load Hubs for system integration. The Integration Key can be the same as the Source Primary Key or it can be derived from a combination of attributes. The Integration Key is always a string representation so the default creation behavior in BimlFlex is to apply the `FlexToBk()` expression to convert the source column data types to a string. The import metadata function can derive an Integration Key from either the Primary Keys or the Unique Constraints of the source.
 
-An Alternate Business Key is used as a backup of the source Primary Key when the primary key definition needs to be changed in the modeling process. If there are Primary Key columns defined as derived columns that aren't persisted into the Persistent Staging layer BimlFlex will use the Alternate Business Key instead. This is the normal approach for a Data Vault model.
+A Source Key is used to define the source Primary Key when the modeled primary key definition needs to be changed in the modeling process. If there are Primary Key columns defined as derived columns that aren't persisted into the Persistent Staging layer BimlFlex will use the Source Key instead. This is the normal approach for a Data Vault model.
 
-For the trial process using a Data Vault destination layer and using the Accelerator to accelerate the Data Vault objects, the source modeling will use the Business Keys to define the relationships. This allows the Accelerator to derive all Hubs, Links and Satellites based on the source metadata and the Business Key definitions used as well as their relationships. This will also use the defined Business Key as the single Primary key to allow the relationships to be defined in the metadata.
+For the trial process using a Data Vault destination layer and using the Accelerator to accelerate the Data Vault objects, the source modeling will use the Integration Keys to define the relationships. This allows the Accelerator to derive all Hubs, Links and Satellites based on the source metadata and the Integration Key definitions used as well as their relationships. This will also use the defined Integration Key as the single Primary key to allow the relationships to be defined in the metadata.
 
-In the `Import Metadata` dialog, the option to redefine relationships based on Business Keys was used. This has created a Main Business Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint an additional Business Key has been created. The related table and column data has been set between these Business Keys and the related main Business Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Business Keys without additional configuration.
+In the `Import Metadata` dialog, the option to redefine relationships based on Integration Keys was used. This has created a Main Integration Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint an additional Integration Key has been created. The related table and column data has been set between these Integration Keys and the related main Integration Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Integration Keys without additional configuration.
 
-### Defining Business Keys
+### Defining Integration Keys
 
-Defining Business Keys to use for Data Vault modeling is a Business Analysis phase in the implementation. finding the correct Business Key definition relies on business process and source system knowledge as well as source system data profiling. For true cross-system key matching in Data Vault, extensive analysis across all candidate sources is normally needed. Defining the actual Business Key is a more straightforward exercise. For a given source table there can be only one main Business Key column. For scenarios with multiple source keys, these columns are concatenated with a separator character to build a single Business Key. This maps to the Business Key column in the Data Vault Hub tables and allows the Data Vault model to adhere to the pattern.
+Defining Integration Keys to use for Data Vault modeling is a Business Analysis phase in the implementation. finding the correct Integration Key definition relies on business process and source system knowledge as well as source system data profiling. For true cross-system key matching in Data Vault, extensive analysis across all candidate sources is normally needed. Defining the actual Integration Key is a more straightforward exercise. For a given source table there can be only one main Integration Key column. For scenarios with multiple source keys, these columns are concatenated with a separator character to build a single Integration Key. This maps to the Integration Key column in the Data Vault Hub tables and allows the Data Vault model to adhere to the pattern.
 
-BimlFlex provides an expression to concatenate and separate columns into the Business Key using the `FlexToBk(@@rs, Column1, Column2, Column3)` function. This can be applied in SSIS for SSIS load patterns and in SQL for SQL patterns. The trial uses the SSIS pattern and will implement the expression in a derived column in the generated SSIS packages.
+BimlFlex provides an expression to concatenate and separate columns into the Integration Key using the `FlexToBk(@@rs, Column1, Column2, Column3)` function. This can be applied in SSIS for SSIS load patterns and in SQL for SQL patterns. The trial uses the SSIS pattern and will implement the expression in a derived column in the generated SSIS packages.
 
-The concatenation character used with multiple columns is defined in the BimlFlex Settings using the `ConcatenatorBusinessKey` key. The default concatenation character is `~`.
+The concatenation character used with multiple columns is defined in the BimlFlex Settings using the `ConcatenatorIntegrationKey` key. The default concatenation character is `~`.
 
-BimlFlex also provides a shortcut code for accessing the current connections Record Source code when building the Business Key. Use the `@@rs` shortcut to inject the current record source code in to the Business Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
+BimlFlex also provides a shortcut code for accessing the current connections Record Source code when building the Integration Key. Use the `@@rs` shortcut to inject the current record source code in to the Integration Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
 
-For the trial process, verify that the `@@rs` shortcut was added to all Business Keys by the import metadata process. For the Address table that would be `FlexToBk(@@rs, AddressID)`.
+For the trial process, verify that the `@@rs` shortcut was added to all Integration Keys by the import metadata process. For the Address table that would be `FlexToBk(@@rs, AddressID)`.
 
-More information and considerations for Business Keys are available in the [Building Business Keys for Data Vault](building-business-keys-for-data-vault.md) section.
+More information and considerations for Integration Keys are available in the [Building Integration Keys for Data Vault](building-integration-keys-for-data-vault.md) section.
 
 ### Defining Relationships
 
 Source system relationships describe the metadata so that the correct load patterns can be used. For Data Vault, relationships help the Accelerator build out Link constructs between entities. When a metadata import is performed, BimlFlex will add any constraints defined in the source. This information is maintained in the `ReferenceTable` and `ReferenceColumnName` columns in the Columns sheet in the metadata. The chosen reference column must be a Primary Key in the related table.
 Relationships are also present in the Data Vault and Dimensional model to describe relationships between Data Vault entities such as Hubs and Satellites as well as Facts and Dimensions to define load patterns.
 
-For the trial process, relationships are defined between the Business Key derived from the Foreign Key and the Business Key derived rom the Primary Key. Review the relationship definitions in the columns tab.
+For the trial process, relationships are defined between the Integration Key derived from the Foreign Key and the Integration Key derived rom the Primary Key. Review the relationship definitions in the columns tab.
 
-As an example, the Product source table has its own `Product_BK` column that is derived from the Primary Key and has a `SsisExpression` expression of `FlexToBk(@@rs,ProductID)`. This column is marked as the Business Key of the table (`BusinessKey` set to `Y`). It also has 2 derived Business Key columns that reference the 2 objects related to the Product, the ProductCategory and ProductModel.
+As an example, the Product source table has its own `Product_BK` column that is derived from the Primary Key and has a `SsisExpression` expression of `FlexToBk(@@rs,ProductID)`. This column is marked as the Integration Key of the table (`IsIntegrationKey` set to `Y`). It also has 2 derived Integration Key columns that reference the 2 objects related to the Product, the ProductCategory and ProductModel.
 
-These derived BK columns create the same Business Key value as their related table BK's and have the ReferenceTable and ReferenceColumnName mapped to these related tables Business Keys.
+These derived BK columns create the same Integration Key value as their related table BK's and have the ReferenceTable and ReferenceColumnName mapped to these related tables Integration Keys.
 
 | ColumnName         | IsDerived | ModelReference  | SsisExpression                   | ReferenceTable                           | ReferenceColumnName |
 | ----------         | --------- | --------------  | --------------                   | --------------                           | ------------------- |
 | ProductCategory_BK | Y         | ProductCategory | FlexToBk(@@rs,ProductCategoryID) | AdventureWorksLT.SalesLT.ProductCategory | ProductCategory_BK  |
 | ProductModel_BK    | Y         | ProductModel    | FlexToBk(@@rs,ProductModelID)    | AdventureWorksLT.SalesLT.ProductModel    | ProductModel_BK     |
 
-This metadata and these relationships will allow BimlFlex to accelerate a Data Vault Hub table from the Product table based on the main Product_BK Business Key and Links to the ProductCategory and ProductModel entities as well as store all product attributes in satellites attached to the Product Hub.
+This metadata and these relationships will allow BimlFlex to accelerate a Data Vault Hub table from the Product table based on the main Product_BK Integration Key and Links to the ProductCategory and ProductModel entities as well as store all product attributes in satellites attached to the Product Hub.
 
 ### Defining object related Metadata
 
@@ -119,7 +119,7 @@ In this case the new objects inherit from the Address table, they select from th
 
 Column Metadata
 
-| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | Customer_BK   | String | 100 | | | 1 | Key    | Y | Y |   | | | Y | | | | | Customer | | |              | FlexToBk(@@rs,CustomerID) | Y | 0 | AdventureWorksLT.SalesLT.Customer | Customer_BK |
 | AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | CustomerID    | Int32  |     | | | 2 | Key    |   |   | Y | | |   | | | | |          | | | c.CustomerID | | | 0 | |
@@ -143,7 +143,7 @@ Column Metadata
 * The column metadata contain the required columns and their data types.
 * The joined column from the Customer table has an SQL expression applied.
 * The derived `Customer_BK` has a `FlexToBk()` applied that uses the joined `CustomerID` column from the customer table.
-* The derived `Customer_BK` has a reference to the main Customer table and its main Business Key. This allows the Data Vault accelerator to treat these tables as Satellite candidates.
+* The derived `Customer_BK` has a reference to the main Customer table and its main Integration Key. This allows the Data Vault accelerator to treat these tables as Satellite candidates.
 
 These metadata operations will allow the address information to be loaded twice, and the tables will be candidates for different types of target objects for the Data Vault.
 
@@ -155,11 +155,11 @@ The `SalesLT.ProductModelProductDescription` table is a candidate for a Link des
 
 It is a relationship table that links models to descriptions based on their Culture. The ProductModelID is a Foreign Key to the ProductModel table and the ProductDescriptionID is a Foreign Key to the ProductDescription table.
 
-While it is possible to consider this a candidate for a logical fold as was applied to the Address tables this is also a prime candidate to introduce derived and role-playing objects. The Culture field is part of the Primary Key but is not a reference to a separate table. The culture entity can be considered a Hub that should be part of the 3 way link built from the table. To create the Hub Culture from the source table, the metadata will be changed to accommodate a derived Hub from the Culture data. It will not have any specific Satellite attributes or effectiveness readily available from this source but could be expanded upon with data from other sources in the future. The acceleration will create a HUB_Culture for the Business Key and a SAT_Culture_AWLT for the CultureCode field.
+While it is possible to consider this a candidate for a logical fold as was applied to the Address tables this is also a prime candidate to introduce derived and role-playing objects. The Culture field is part of the Primary Key but is not a reference to a separate table. The culture entity can be considered a Hub that should be part of the 3 way link built from the table. To create the Hub Culture from the source table, the metadata will be changed to accommodate a derived Hub from the Culture data. It will not have any specific Satellite attributes or effectiveness readily available from this source but could be expanded upon with data from other sources in the future. The acceleration will create a HUB_Culture for the Integration Key and a SAT_Culture_AWLT for the CultureCode field.
 
-The Business Key creation in this case does not need to apply the Record Source Code, the Culture codes (`ar`, `en`, `fr`, `he`, `th`, `zh-cht`) are all good candidates for direct cross-system integration.
+The Integration Key creation in this case does not need to apply the Record Source Code, the Culture codes (`ar`, `en`, `fr`, `he`, `th`, `zh-cht`) are all good candidates for direct cross-system integration.
 
-Worth noting on the Culture codes is that they are all lower-case and they are all fixed width strings. The Business key creation will by default upper-case and trim these codes. The original attribute value is stored in the Satellite.
+Worth noting on the Culture codes is that they are all lower-case and they are all fixed width strings. The Integration key creation will by default upper-case and trim these codes. The original attribute value is stored in the Satellite.
 
 Add a new Object with the following data in the Objects sheet:
 
@@ -169,22 +169,22 @@ Add a new Object with the following data in the Objects sheet:
 
 Add the following in the Columns Sheet:
 
-| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder |
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AdventureWorksLT | SalesLT.Culture | Culture_BK | String | 100 | | | 1 | Key | Y | Y | | | |  Y | | | | Culture | | | | FlexToBk(CultureCode) | Y | 0 |
 | AdventureWorksLT | SalesLT.Culture | CultureCode | StringFixedLength | 6 | | | 2 | Key | | | Y |  | | | | | | | | | | | | 0 |
 
-To define the 3 way relationship for the future Link, update the `SalesLT.ProductModelProductDescription` source table so that there is a Culture Business Key column has a reference to the Culture objects Business Key. Do this by selecting the Culture column and click the Generate Business Key button to generate a Business Key. In the dialog, change the Column Name to CultureCode_BK. Make sure the Add Record Source and IsBusinessKey checkboxes are both unselected.
+To define the 3 way relationship for the future Link, update the `SalesLT.ProductModelProductDescription` source table so that there is a Culture Integration Key column has a reference to the Culture objects Integration Key. Do this by selecting the Culture column and click the Generate Integration Key button to generate a Integration Key. In the dialog, change the Column Name to CultureCode_BK. Make sure the Add Record Source and IsIntegrationKey checkboxes are both unselected.
 
-Click Create to create the Business Key column. The newly created Business Key is added to the bottom of the sheet, scroll down and review the newly created Business Key. Add the reference to the Culture Table and Culture_BK column. Validate that the ModelReference is set to Culture.
+Click Create to create the Integration Key column. The newly created Integration Key is added to the bottom of the sheet, scroll down and review the newly created Integration Key. Add the reference to the Culture Table and Culture_BK column. Validate that the ModelReference is set to Culture.
 
 The complete metadata for the added row will be:
 
-| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AdventureWorksLT | SalesLT.ProductModelProductDescription | Culture_BK | String | 100 |  |  | 7000 | Type 1 |  |  |  |  |  | Y |  |  |  | Culture |  |  |  | FlexToBk(Culture) | Y | 0 | AdventureWorksLT.SalesLT.Culture | Culture_BK |
 
-The `ProductModelProductDescription` Object needs a main Business Key of its own to uniquely identify rows. The originally created Business Key included references to the `ProductModel` and `ProductDescription` tables. As the Culture Key has been added, include it in the SSIS Expression and the FlexToBk function.
+The `ProductModelProductDescription` Object needs a main Integration Key of its own to uniquely identify rows. The originally created Integration Key included references to the `ProductModel` and `ProductDescription` tables. As the Culture Key has been added, include it in the SSIS Expression and the FlexToBk function.
 
 Update the `ProductModelProductDescription_BK` column in the `SalesLT.ProductModelProductDescription` Object to use the below updated `SsisExpression`:
 
@@ -250,11 +250,11 @@ The 2 Address inherited objects were defined as Satellites, the added Culture ob
 The rest of the Objects needs to be reviewed and updated to the proper ObjectType as defined below.
 
 * Hub:
-     A Hub object type contains it's own primary Core Business Concept entity and the Business Key is distinct and unique for each row in the table. This will accelerate a Hub object from the main Business Key, one or more satellites populated from the attributes columns and a Link relationship for each referenced table.
+     A Hub object type contains it's own primary Core Business Concept entity and the Integration Key is distinct and unique for each row in the table. This will accelerate a Hub object from the main Integration Key, one or more satellites populated from the attributes columns and a Link relationship for each referenced table.
 * Link:
     A Link object type is a many to many relationship type table that maps several Hub entities together. In the AdventureWorksLT source data the `SalesLT.CustomerAddress` can be seen as a potential Link Model Object Type candidate. It's Primary Key is made from 2 Foreign Keys that point to 2 Hub candidate tables. The accelerator can accelerate this to a Link and store the attributes in a Link Satellite if the ModelObjectType is set to Link for that object. The acceleration of Link Satellites is also controlled by the `DVAccelerateLinkSatellites` setting.
 * Satellite:
-    A Satellite object type is an object that is on the same grain as and describes entities in the primary Business Key table. These can be mapped as Satellite objects to the main table and all attributes in the table will be mapped to one or more satellites attached to the primary tables Hub.
+    A Satellite object type is an object that is on the same grain as and describes entities in the primary Integration Key table. These can be mapped as Satellite objects to the main table and all attributes in the table will be mapped to one or more satellites attached to the primary tables Hub.
 
 Update the ModelObjectType of the Objects to match the following. This will allow the accelerator to accelerate the expected destination model from the source data:
 
@@ -290,7 +290,7 @@ The `OverrideSql` functionality is used in the Culture object in the trial.
 
 `JoinSql`
 
-the `JoinSql` function allows the addition of join statements to the generated source query. This is useful for gathering additional data into the query, either for adding columns or for allowing additional filter conditions. A common use case is for Business Keys to be joined in when modeling a Data Vault on Business Keys rather than technical keys.
+the `JoinSql` function allows the addition of join statements to the generated source query. This is useful for gathering additional data into the query, either for adding columns or for allowing additional filter conditions. A common use case is for Integration Keys to be joined in when modeling a Data Vault on Integration Keys rather than technical keys.
 
 In the trial process there are 2 derived tables that use the `JoinSql` function to derive different types of addresses and maintaining them as separate entities in the staging layer and Data Vault.
 
@@ -322,21 +322,21 @@ The change type of the column. For source columns, use Key or Type 1. For Dimens
 
 #### IsPrimaryKey
 
-Marks the primary keys of the source table. For Data Vault acceleration, relationships and keys are modelled using the Business Keys instead of the source primary keys.
+Marks the primary keys of the source table. For Data Vault acceleration, relationships and keys are modelled using the Integration Keys instead of the source primary keys.
 
-When Importing metadata for the trial, the `Change References to Business Keys` checkbox was checked. This changed the primary key definitions for the source tables to the derived Business Keys. As the trial mainly focuses on building a Data Vault, this is the expected behavior. Another column can only reference the Primary Key of a table.
+When Importing metadata for the trial, the `Change References to Integration Keys` checkbox was checked. This changed the primary key definitions for the source tables to the derived Integration Keys. As the trial mainly focuses on building a Data Vault, this is the expected behavior. Another column can only reference the Primary Key of a table.
 
-#### IsBusinessKey
+#### IsIntegrationKey
 
-Marks the primary Business Key of the source table. For Hub candidate tables this is the column that will be accelerated to and populate the Business Key of the Hub.
+Marks the primary Integration Key of the source table. For Hub candidate tables this is the column that will be accelerated to and populate the Integration Key of the Hub.
 
-#### IsAltBusinessKey
+#### IsSourceKey
 
-This alternate key column is used for the persistent staging table when the primary keys aren't being persisted.
+This source key column is used for the persistent staging table when the objects primary keys aren't being persisted.
 
-The default behavior is to not persist any columns that can be directly derived from other columns. As the Business Keys are derived from other columns they are not persisted by default.
+The default behavior is to not persist any columns that can be directly derived from other columns. As the Integration Keys are derived from other columns they are not persisted by default.
 
-When the Primary Key definition is for a non-persisted key BimlFlex will use the Alternate Business Key for the grain of the Persistent Staging table.
+When the Primary Key definition is for a non-persisted key BimlFlex will use the Source Key for the grain of the Persistent Staging table.
 
 #### IsIdentity
 
@@ -370,7 +370,7 @@ Use this to translate source column names to business entity names. This will al
 
 In the trial, a model override name is applied to the Product table. The `ThumbNailPhoto` column name does not match the naming convention used by the business analysts and a requirement has been presented to name it `ThumbnailPhoto` instead.
 
-This changes the casing for the `N` in the name to `n` to match business naming conventions. The column will be staged using the original colimn name to match the source and will be accelerated to the business process-aligned name in the Data Vault.
+This changes the casing for the `N` in the name to `n` to match business naming conventions. The column will be staged using the original column name to match the source and will be accelerated to the business process-aligned name in the Data Vault.
 
 Use the column ModelOverrideName to override the name to be used in the Data Vault.
 
@@ -386,7 +386,7 @@ Is used by the Data Vault Accelerator to group columns into different Satellites
 
 Allows a single source table to populate multiple destination Satellites. Breaking attributes in to separate Satellites is used to manage different storage requirements or change rates.
 
-The default naming convention accelerates Satellites with the same name as the primary Hub object. The `SalesLT.Customer` source table is of Object candidate type `Hub` so it will accelerate to a `HUB_Customer` for the Business Key and all attributes will be accelerated to a `SAT_Customer_AWLT`.
+The default naming convention accelerates Satellites with the same name as the primary Hub object. The `SalesLT.Customer` source table is of Object candidate type `Hub` so it will accelerate to a `HUB_Customer` for the Integration Key and all attributes will be accelerated to a `SAT_Customer_AWLT`.
 
 For the trial process, add `Password` to the `ModelGrouping` column for the `SalesLT.Customer` Objects `PasswordHash` and `PasswordSalt` columns. These 2 columns will be accelerated in to a separate Satellite named `SAT_Customer_Password_AWLT`.
 
@@ -415,7 +415,7 @@ This will also assist in illustrating the creation of Point In Time constructs l
 
 The Model Reference is a friendly name for the connection to another entity. BimlFlex uses this to drive the naming of Links from referenced tables. BimlFlex derives a default name for all reference columns by removing the suffix from the name.
 
-As an example, the source column `ProductCategoryId` becomes `ProductCategory_BK` as the referencing business key and its ModelReference becomes `ProductCategory`.
+As an example, the source column `ProductCategoryId` becomes `ProductCategory_BK` as the referencing Integration key and its ModelReference becomes `ProductCategory`.
 
 #### DataTypeMapping
 
@@ -435,7 +435,7 @@ A SQL Expression applied to the column in the source query. This can be used to 
 
 #### SsisExpression
 
-An SSIS Expression applied to the column in a derived column transformation. This can be used to create derived columns using the SSIS derived columns features. It is used by BimlFlex to derive the Business Key contents using the `FlexToBk()` expression for all Business Key columns.
+An SSIS Expression applied to the column in a derived column transformation. This can be used to create derived columns using the SSIS derived columns features. It is used by BimlFlex to derive the Integration Key contents using the `FlexToBk()` expression for all Integration Key columns.
 
 #### IsDerived
 
@@ -447,7 +447,7 @@ Used to define order of operations for dependency chains in derived columns. Use
 
 #### ReferenceTable
 
-A reference from this table to another table. Used to model foreign key constraints. BimlFlex Data Vault accelerator uses these relationships to drive the generation of Link tables. The trial metadata uses the reference table and column information to define all metdata model relationships between entities through their Business Keys.
+A reference from this table to another table. Used to model foreign key constraints. BimlFlex Data Vault accelerator uses these relationships to drive the generation of Link tables. The trial metadata uses the reference table and column information to define all metadata model relationships between entities through their Integration Keys.
 
 #### ReferenceColumnName
 

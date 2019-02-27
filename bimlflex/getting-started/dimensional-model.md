@@ -122,25 +122,25 @@ Data Vault Based:
 
 sample script files coming soon
 
-* [Customer Dimension](TODO)
-* [Date Dimension View](TODO)
-* [Product Dimension](TODO)
-* [SalesOrder Fact](TODO)
+* Customer Dimension
+* Date Dimension View
+* Product Dimension
+* SalesOrder Fact
 
 Staging, 2-layer, Based:
 
 sample script files coming soon
 
-* [Customer Dimension](TODO)
-* [Date Dimension View](TODO)
-* [Product Dimension](TODO)
-* [SalesOrder Fact](TODO)
+* Customer Dimension
+* Date Dimension View
+* Product Dimension
+* SalesOrder Fact
 
 ### Creating the Date Dimension
 
 The Date Dimension in the trial process uses a view to present the full dimension to the presentation layer. There are numerous considerations for date dimensions and its processing and updating. In this scenario, the Date dimension is a straightforward set of dates from the SalesOrder table, with a Smart Key and a few attributes.
 
-This approach illustrates both Dimensions that aren't loaded through BimlFlex and Dimensions with Smart keys that don't need a lookup in the Fact table load. For Dimensions with an identity column Primary Key the Fact load needs to look up the Business Key Value in the dimension table to get the corresponding Integer key. For Smart Keys, the Value in the Dimension Table is deterministic and can be derived in the Fact table load without the need for the lookup. This is similar to the Hash keys used in the Data Vault, where a Satellite load doesn't need to look up the corresponding Hub key.
+This approach illustrates both Dimensions that aren't loaded through BimlFlex and Dimensions with Smart keys that don't need a lookup in the Fact table load. For Dimensions with an identity column Primary Key the Fact load needs to look up the Integration Key Value in the dimension table to get the corresponding Integer key. For Smart Keys, the Value in the Dimension Table is deterministic and can be derived in the Fact table load without the need for the lookup. This is similar to the Hash keys used in the Data Vault, where a Satellite load doesn't need to look up the corresponding Hub key.
 
 Sql view Definition
 
@@ -172,7 +172,7 @@ Source Object Metadata
 
 Source Column Metadata
 
-| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder |
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 BFX_DM | Dim.Date | DateKey   | Int32  |    |  |  | 1 | Key    | Y |   |   |  |   |  |  |  |  |  |  |  |  |  |  | 0 |
 BFX_DM | Dim.Date | Date      | Date   |    |  |  | 2 | Type 1 |   | Y | Y |  | Y |  |  |  |  |  |  |  |  |  |  | 0 |
@@ -191,11 +191,11 @@ Make sure the following options are specified:
 
 * `What to Import`, `Views` needs to be checked as the source is a view
 * `Tweaks to Incoming Metadata`, both `Table and Column Names` and `Inferred Metadata` should be set to `None`
-* Neither `Add RecordSource(@@rs) to Businesss Key` nor `Change References to Business Keys` should be checked
+* Neither `Add RecordSource(@@rs) to Integration Key` nor `Change References to Integration Keys` should be checked
 
-Once the import is completed there will be 2 warnings per view. These point out that there are missing Business Keys and Primary Keys.
+Once the import is completed there will be 2 warnings per view. These point out that there are missing Integration Keys and Primary Keys.
 
-Add the flags for the relevant columns to define keys for the imported views. For the Trial the main Business Key column will be defined as Primary Key and Business Key for each object.
+Add the flags for the relevant columns to define keys for the imported views. For the Trial the main Integration Key column will be defined as Primary Key and Integration Key for each object.
 
 Source Object Metadata
 
@@ -207,7 +207,7 @@ Source Object Metadata
 
 Source Column Metadata
 
-| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsBusinessKey | IsAltBusinessKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder |
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | BFX_RDV | src.dimCustomer | Customer_SK | AnsiStringFixedLength | 40 |  |  | 1 | Type 1 | Y | Y |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |
 | BFX_RDV | src.dimCustomer | Customer_BK | String | 100 |  |  | 2 | Type 1 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 0 |
@@ -269,7 +269,7 @@ Source Column Metadata
 
 The metadata imported from the views will not have any relationships defined as these are not provided by the views. Add the source relationships between the fact table source and the dimension source objects.
 
-This will be created in the `ReferenceTable` and `ReferenceColumnName` columns on the Objects sheet. The Fact table reference Business Keys will reference their respective dimension main Business Key. This will allow the Fact table load to lookup the Business Key value and get the relevant id key from the dimension.
+This will be created in the `ReferenceTable` and `ReferenceColumnName` columns on the Objects sheet. The Fact table reference Integration Keys will reference their respective dimension main Integration Key. This will allow the Fact table load to lookup the Integration Key value and get the relevant id key from the dimension.
 
 ### Creating the destination metadata through the Clone Table feature
 
@@ -281,17 +281,17 @@ Select the source object in the objects sheet and click the `Clone Table` button
 
 ### Adding Dimensional key lookups
 
-One feature of the Dimensional implementation is the use of integer sequence numbers as primary keys. The Data Vault layer uses the hash of the Business Key as the primary key for entities. Some analytical tools prefers integer keys for primary keys and Fact to Dimension relationships. BimlFlex provides a value to key lookup function that will use the standard SSIS lookup transformation to translate the value from the source to the key used in the dimension.
+One feature of the Dimensional implementation is the use of integer sequence numbers as primary keys. The Data Vault layer uses the hash of the Integration Key as the primary key for entities. Some analytical tools prefers integer keys for primary keys and Fact to Dimension relationships. BimlFlex provides a value to key lookup function that will use the standard SSIS lookup transformation to translate the value from the source to the key used in the dimension.
 
 This mapping is done for dimensions that have the primary key defined as an identity column. A dimension without an Identity column primary key is assumed to be a smart key that doesn't require a lookup.
 
-The Dimension object has a Business Key and a Primary Key, the lookup will compare against the Business Key value and replace with the Primary Key value.
+The Dimension object has a Integration Key and a Primary Key, the lookup will compare against the Integration Key value and replace with the Primary Key value.
 
-The Fact table source has the corresponding lookup value (same value as the Business Key in the Dimension). When cloning the source object to the Fact object this column is included and is mapped from the source to the Fact table destination. For the lookup and replacement to happen the following needs to be true:
+The Fact table source has the corresponding lookup value (same value as the Integration Key in the Dimension). When cloning the source object to the Fact object this column is included and is mapped from the source to the Fact table destination. For the lookup and replacement to happen the following needs to be true:
 
 1. The Fact table Object needs to be updated to have the same Data Type as the Dimension Key (Commonly Int32 or Int64).
 1. The Fact table Object needs the ReferenceTable and ReferenceColumnName populated with a reference to the Primary Key of the Dimension Table (The Identity Column that the lookup should return)
-1. The source column in the source object should contain the same values as the Business Key column in the referenced Dimension. The source value in the source column is used in the lookup and replaced with the Identity Column value at runtime.
+1. The source column in the source object should contain the same values as the Integration Key column in the referenced Dimension. The source value in the source column is used in the lookup and replaced with the Identity Column value at runtime.
 
 ### Building the dimensional model SQL artifacts
 

@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-building-integration-keys-for-data-vault
+uid: bimlflex-trial-building-integrationkeys-for-data-vault
 title: Building Integration Keys for Data Vault
 ---
 # Building Integration Keys for Data Vault

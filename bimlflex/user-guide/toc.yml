@@ -25,8 +25,8 @@
     href: debug-utilities.md
   - name: Change the BimlFlex Excel bitness
     href: change-excel-bitness-bimlflex.md
-
-
+  - name: Find the BimlFlex versions installed
+    href: find-version.md
 
 - name: Implementation guides
   items:
@@ -46,8 +46,8 @@
     href: master-data-services.md
   - name: Azure Data Warehouse
     href: azure-data-warehouse.md
-  - name: Business Keys and Relationships
-    href: business-keys-and-relationships.md
+  - name: Integration Keys and Relationships
+    href: integration-keys-and-relationships.md
 
 - name: Supporting materials for configurations, extensions, orchestration
   items:

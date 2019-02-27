@@ -21,7 +21,7 @@ The trial supports 2 architectures:
 * a 2 layer approach with staging and Data Mart layer
 * a 3 layer approach with staging, Data Vault and Data Mart layer.
 
-Both architectures uses a staging layer with both a transient staging database and a persistent staging (archive) database. Both architectures have an analyst-facing dimensional model. The addition of the Data Vault layer illustrates how BimlFlex allows the acceleration and creation of an integration layer that allows cross-system integration on business keys.
+Both architectures uses a staging layer with both a transient staging database and a persistent staging (archive) database. Both architectures have an analyst-facing dimensional model. The addition of the Data Vault layer illustrates how BimlFlex allows the acceleration and creation of an integration layer that allows cross-system integration on Integration Keys.
 
 For the trial the following is needed:
 
@@ -95,7 +95,7 @@ Most automation features in BimlFlex are built on modelling the metadata to prov
 
 * [Modeling of Source Metadata](modeling-of-source-metadata.md)
 * [Applying Data Type Mappings](applying-data-type-mappings.md)
-* [Building Business Keys for Data Vault](building-business-keys-for-data-vault.md)
+* [Building Integration Keys for Data Vault](building-integration-keys-for-data-vault.md)
 
 ### Data Vault Architecture
 

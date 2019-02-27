@@ -35,7 +35,7 @@ Steps for deploying updates:
 
 Once the project has identified that a new version is available online the following dialog is displayed:
 
-![BimlFlex Upgrade Assets -center -60%](images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png "BimlFlex Upgrade Assets")
+![BimlFlex Upgrade Assets -center -60%](../user-guide/images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png "BimlFlex Upgrade Assets")
 
 ## Update template Bundle version
 
@@ -83,6 +83,6 @@ Once the project and databases have been updated, refer to the @bimlflex-upgrade
 
 Patches and Beta version will be released periodically to an Cumulative Update or Beta Release bundle and can be applied by using the `Upgrade Assets` button on the `BimlFlex` ribbon.
 
-![BimlFlex Cumulative Update or Beta Release -center -80%](images/bimlflex-upgrade-assets-cu.png "Cumulative Update or Beta Release")
+![BimlFlex Cumulative Update or Beta Release -center -80%](../user-guide/images/bimlflex-upgrade-assets-cu.png "Cumulative Update or Beta Release")
 
 Please review the relevant release notes before applying or updating a project to a Cumulative Update or Beta Release.
