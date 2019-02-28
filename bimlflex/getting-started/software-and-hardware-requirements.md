@@ -1,8 +1,8 @@
 ---
-uid: bimlflex-software-and-hardware-requirements.md
+uid: bimlflex-software-and-hardware-requirements
 title: BimlFlex Software and Hardware requirements
 ---
-# Software and Hardware requirements
+# Software and Hardware minimum requirements
 
 ## BimlStudio
 

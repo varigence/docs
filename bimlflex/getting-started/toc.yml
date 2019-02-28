@@ -1,7 +1,7 @@
 - name: Requirements
   items:
-
-
+  - name: Software and Hardware requirements
+    href: bimlflex-software-and-hardware-requirements.md
 
 - name: Installing
   items:
@@ -11,7 +11,6 @@
     href: installing-bimlflex.md
   - name: Installing SSIS Components
     href: installing-custom-ssis-components.md
-
 
 - name: Upgrading
   items:
