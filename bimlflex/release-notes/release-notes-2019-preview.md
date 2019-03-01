@@ -20,8 +20,7 @@ The preview release has updated versions of the SSIS Custom components.
 > [!NOTE]
 > 2019 Preview release downloads
 >
-> * BimlFlex App 2019 preview: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
-> * BimlFlex Excel Add-in 2019 Preview: [https://varigence.com/downloads/download/bimlflexaddinsetup_preview_2019.exe](https://varigence.com/download/bimlflexaddinsetup_preview_2019.exe)
+> * BimlFlex App and Excel Add-in 2019 preview: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
 > * BimlStudio 2019 Preview: [https://varigence.com/download/bimlstudiosetup_preview_2019.exe](https://varigence.com/download/bimlstudiosetup_preview_2019.exe)
 
 > [!NOTE]
@@ -38,8 +37,7 @@ The preview release has updated versions of the SSIS Custom components.
 
 The process to upgrade to the preview release consists of the following steps:
 
-1. Download and install the BimlFlex App preview
-1. Download and install the BimlFlex Excel Add-in preview
+1. Download and install the combined installer for the BimlFlex App preview and the BimlFlex Excel Add-in preview
 1. Download and install the BimlStudio preview
 1. Download and install the correct version of the SSIS Custom components matching the SQL Server version in use
 1. Upgrade databases and Bundles to the Cumulative Upgrade Bundle version. Open the existing project, click the `Upgrade Assets` menu item, change the channel to the `Cumulative Channel`. More information on the channel choice is available here: @bimlflex-upgrade#upgrade-to-cumulative-update-or-beta-release
@@ -47,12 +45,24 @@ The process to upgrade to the preview release consists of the following steps:
 
 ## Preview Features
 
+* Update: The default values for settings that include file locations have been updated from `C:\Varigence` to `C:\BimlFlex`. This includes the following settings:
+  * `ArchivePath`, new default: `C:\BimlFlex\Archive`
+  * `ConfigurationPath` `C:\BimlFlex\Configurations`
+  * `ExportPath`, new default: `C:\BimlFlex\Export`
+  * `ImportPath`, new default: `C:\BimlFlex\Import`
+  * `LookupCachePath`, new default: `C:\BimlFlex\Cache`
+  * `RootPath`, new default: `C:\BimlFlex`
+* Update: A scenario where an on-premise SSIS process was used and end-dating was activated but the `IsCurrent` indicator was not in use could lead to an error in the end-dating script. This is now behaving as expected regardless of the configuration for `IsCurrent`
+* Update: A scenario where the same ModelGrouping was reused for multiple relationships would result in a repeat of that name in the Link has been addressed and the link name is now created as expected by the Data Vault Accelerator.
+* Add: ADF now supports Azure Key Vault Linked services through an additional Extension Point. Add Azure Key Vault Linked Services through this Extension Point and reference them in other Linked Services as attributes.
+* Add: ADF now supports Oracle sources that use Key Vault Secrets for connection strings. When this is configured the Key Vault Secret will replace the connection string defined in the connection metadata.
 * Add: The BimlFlex App is available in preview, this app allows metadata management similar to the Excel Add-in, less the dependency on Excel. More information on the BimlFlex App is available here: @bimlflex-app-overview
 * Update: The `Business Key` metadata concept has been renamed to `Integration Key` to better describe the meaning. The metadata column `IsBusinessKey` is now named `IsIntegrationKey`. This is in line with the previous, similar, change to the `IsSourceKey` column. The Integration Key is used in modeling to define a single, agnostic, key used for integration across source systems. This is commonly used in both Data Vault and Data Mart modeling for defining Hubs and table grains etc. Any bespoke code references require updating to refer to the new name.
 * Update: A scenario where the merge for loads using the delete detection pattern would result in an incorrect join column mapping has been resolved.
 * Update: The BimlFlex Excel About > Help link has been updated to point to the current documentation web site.
 * Add: `DvPitLagDays` and `DvBridgeLagDays` settings that allow for Overriding the number of days the `Point In Time` and `Bridge` process should go back and look for changes to reprocess.
 * Update: `Point In Time` code to correctly end date records. It is recommended to truncate the PIT tables and executing the newly generated code to apply the new logic on existing tables.
+* Added `Extract DACPAC Folder` button to the `Debug Utility`. This allows the user to get the `Dacpac` folder from the bundle and save it where they please. This folder contains the database definitions and pre-deployment scripts and can be used in pipeline deployments of BimlFlex database updates. (This is a companion feature in BimlStudio 2019)
 
 > [!NOTE]
 > The following metadata columns have been renamed and any bespoke code referring to them require corresponding updates

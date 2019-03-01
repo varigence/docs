@@ -2,18 +2,22 @@
   href: index.md
   topicHref: index.md
 
-- name: Release Notes
-  href: release-notes/toc.yml
-  topicHref: release-notes/release-notes.md
+- name: Getting Started
+  href: getting-started/toc.yml
+  topicHref: getting-started/index.md
 
 - name: User Guide
   href: user-guide/toc.yml
   topicHref: user-guide/index.md
 
-- name: Trial Process
-  href: trial-process/toc.yml
-  topicHref: trial-process/index.md
+- name: Reference Documentation
+  href: reference-documentation/toc.yml
+  topicHref: reference-documentation/index.md
 
 - name: Tips & Tricks
   href: tips-and-tricks/toc.yml
   topicHref: tips-and-tricks/index.md
+
+- name: Release Notes
+  href: release-notes/toc.yml
+  topicHref: release-notes/release-notes.md

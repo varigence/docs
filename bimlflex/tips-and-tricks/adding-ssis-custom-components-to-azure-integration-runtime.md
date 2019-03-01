@@ -1,3 +1,7 @@
+---
+uid: bimlflex-adding-ssis-custom-components-to-azure-integration-runtime
+title: Adding BimlFlex custom SSIS components to Azure Integration Runtime
+---
 # Adding BimlFlex custom SSIS components to Azure Integration Runtime
 
 The Azure Integrated Runtime allows deployment and running of SSIS packages in the Azure cloud environment.

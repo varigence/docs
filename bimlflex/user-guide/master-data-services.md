@@ -4,11 +4,9 @@ title: BimlFlex Microsoft SQL Server Master Data Services (MDS) integration
 ---
 # Microsoft SQL Server Master Data Services (MDS) integration
 
-TODO: To Complete
-
 Microsoft SQL Server Master Data Services (MDS) is an enterprise data management tool included in the Enterprise Edition of SQL Server.
 
-MSDN has an introduction to MDS here: [https://msdn.microsoft.com/en-us/library/ff487003.aspx](https://msdn.microsoft.com/en-us/library/ff487003.aspx)
+For an overview of MDS, review the Microsoft documentation here: [https://docs.microsoft.com/en-us/sql/master-data-services/master-data-services-overview-mds](https://docs.microsoft.com/en-us/sql/master-data-services/master-data-services-overview-mds)
 
 ## Models
 
@@ -30,17 +28,12 @@ Considering the risk for naming confusion as data is loaded from staging to stag
 
 This document uses the Model and Model Category part of the AdventureWorks LT 2012 database as the source of the MDS model data. A reporting workflow requires the data and relationship to be loaded in to MDS. Data Stewards manually manipulate attributes and relationships in MDS for further use in the organization, including in the EDW.
 MDS for SQL Server includes its own sample models, including a model for AdventureWorks Products. It is possible to ruse the approach from this document to integrate into the sample models. This document uses a separate model with 2 separate entities
-The sample model is configured and set up as follows:
-
-![TODO](images/image2.png)
 
 Log in through the web interface as an MDS administrator to create a model called ProductDemo
 2 entities are needed for the new model:
 
 * Product
 * Category
-
-![TODO](images/image3.png)
 
 For the optional staging tables name this demo uses a `ModelName_EntityName` naming convention to manage names. For larger implementations with multiple models and entities this approach will make it easy to know what table goes to what model/entity when staging.
 Our Product and Category entities have the following staging tables created:
@@ -63,12 +56,8 @@ The name and code attributes created by default in MDS is reused for the Name an
 
 The Product, Category and Category, Parent Category entities are entity based relationships to the Category Entity
 
-![TODO](images/image4.png)
-
 Once the Model and the 2 entities are available the staging tables can be reviewed in SQL Server Management Studio.
-The default naming convention for the puts the model entity staging tables in the MasterDataServices database, in schema stg and uses the defined names with \_Leaf suffixed.
-
-![TODO](images/image5.png)
+The default naming convention for the puts the model entity staging tables in the MasterDataServices database, in schema stg and uses the defined names with `_Leaf` suffixed.
 
 ## Required metadata for import into MDS
 
@@ -111,44 +100,32 @@ AS
   LEFT JOIN BFX_ODS.AWLT.ProductCategory ppc ON pc.ParentProductCategoryID = ppc.ProductCategoryID;
 ```
 
-(Note that the views will need some update work to take changes and effectiveness into account in a real project)
+Note that these views are for demonstration purposes. Change management, effectiveness and deletions etc. require additional considerations
 
 ## Connections
 
 The existing `BFX_STG` staging connection can be reused for the MDS source views.
 A new connection to the MDS staging destination tables is added as an entry in the Connections Tab.
 
-![TODO](images/image4.png)
-
 The new connection is called MasterDataServices and maps to the MasterDataServices database that the MDS instance has been configured to use. The new MDS destination connection uses the IntegrationStage attribute “Master Data Services” to indicate the use to BimlFlex.
 
 The load from source staging table to MDS staging table is defined in its own batch.
 
-![TODO](images/image4.png)
-
 The batch is included in its own project
-
-![TODO](images/image4.png)
 
 The object tab will include the source tables/views used for loading into MDS and the destination staging tables in MDS.
 
-![TODO](images/image4.png)
-
 For all objects the full set of column metadata will have been imported into the Columns sheet.
+
 Some columns are not required from the MDS tables. They can be ignored or removed in the metadata sheet.
+
 Depending on the source structure, not all columns will be mapped from source to MDS. This document uses prepared views that are aligned with the MDS destination. In an implementation project the master data modelling sessions would form the base for model design and attribute mappings.
 The entity load from source to MDS can also use different approaches to updates/changes to existing attributes. In most implementation scenarios, there will be some cases where an entity (identified by the code used) will only be loaded from source once. Other entities will be reloaded and updated with new attributes from source. It is important to decide how this process will be implemented as both the data management process and the technical implementation will be different depending on the requirements. In general, if the attributes are manually maintained in MDS there is no point in updating them from source ever again. Only the attributes maintained in source should be reloaded and updated.
-The source to target mappings of attributes from the source table to the destination MDS staging table is done in the columns tab in the Excel metadata editor. For the product entity, the name column is mapped to the name MDS standard column, the product number is mapped to the code (in this case the product number has been identified as the Business Key to be used for managing the products in MDS). The color column is mapped to the color destination staging column. The Category reference is to the code value from the Category entity. As the Code will be the name the source needs a join from the Product to the ProductCategory table to include the category name instead of the id number that is the technical key form the source.
-For the Product Category, the name is mapped to the code column and name column. The Parent Category will reference the Code column (the name, as that has been identified as the business key for the Category). Since the source only has the technical key here it is also required to join the Category source with itself to get the parent category name. The AdventureWorks source enforces a unique category name meaning it is possible to use it for the code column. For sources where names can be repeated in the hierarchy another approach would be necessary.
+
+The source to target mappings of attributes from the source table to the destination MDS staging table is done in the columns tab in the Excel metadata editor. For the product entity, the name column is mapped to the name MDS standard column, the product number is mapped to the code (in this case the product number has been identified as the Integration Key to be used for managing the products in MDS). The color column is mapped to the color destination staging column. The Category reference is to the code value from the Category entity. As the Code will be the name the source needs a join from the Product to the ProductCategory table to include the category name instead of the id number that is the technical key form the source.
+
+For the Product Category, the name is mapped to the code column and name column. The Parent Category will reference the Code column (the name, as that has been identified as the Integration Key for the Category). Since the source only has the technical key here it is also required to join the Category source with itself to get the parent category name. The AdventureWorks source enforces a unique category name meaning it is possible to use it for the code column. For sources where names can be repeated in the hierarchy another approach would be necessary.
+
 The joins to derive this extra data are added either to the Objects tab for the 2 source to staging tables in the sourcing project. This would enforce the joins in the source query and add the expanded data in the staging and persisted staging tables. That builds a dependency between the projects where a clean separation of concern might be better. The example views will join the data in persistent staging instead. Another option is to enforce the joins in the source by exposing data through prepared views. This moves the dependency on proper modelling all the way to the source and would require additional considerations.
+
 Once the source data views are created and imported into the metadata the mapping between the source and destination can be done.
-
-## SSIS Generation
-
-The source views are TODO
-
-Considerations for pre/post extension points for truncating staging tables and applying business rules/model validation before exporting.
-
-Data vault export views and validation success filtering (sample metadata. Point out that only validated rows are safe to export and work with)
-
-Considerations for hierarchies in MDS and export to DW/DV.

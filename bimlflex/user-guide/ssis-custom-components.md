@@ -34,6 +34,8 @@ The components work in conjunction with the BimlCatalog orchestration and runtim
 
 Installation of the custom components are provided through a script file that embeds the custom components SSIS .dll into the required SQL Server folders as well as the GAC. This script approach allows the custom components to be installed on an Azure Integration Runtime.
 
+Information on using custom components in the Azure Integration RunTime can be found here: @bimlflex-adding-ssis-custom-components-to-azure-integration-runtime
+
 ## Icons
 
 The following Icons are used for the custom components

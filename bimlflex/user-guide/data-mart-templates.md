@@ -156,9 +156,9 @@ Below is an example of the columns a user would define in the customer dimension
 
 ![Column Metadata](images/bimlflex-ss-v5-excel-data-mart-dim-columns-sheet.png "Column Metadata")
 
-Note that the columns are fairly similar but they have been set in such a way that the business key in the source table will line up with the CustomerCode column and the primary key of the source will be the CustomerKey of the dimension table.
+Note that the columns are fairly similar but they have been set in such a way that the Integration key in the source table will line up with the CustomerCode column and the primary key of the source will be the CustomerKey of the dimension table.
 
-This is one pattern available when modelling star schemas. Each business key in source becomes the `Code` column in the Data Mart and each Data Mart table will include a unique integer key which is the `Key` column. The keys used can either be sequence numbers from Identity columns, or for Data Vault sources, the Hashed Surrogate Keys generated in the Data Vault entities or Bridge and Point In Time tables.
+This is one pattern available when modelling star schemas. Each Integration key in source becomes the `Code` column in the Data Mart and each Data Mart table will include a unique integer key which is the `Key` column. The keys used can either be sequence numbers from Identity columns, or for Data Vault sources, the Hashed Surrogate Keys generated in the Data Vault entities or Bridge and Point In Time tables.
 
 Once Source and Target metadata is available the mapping between them can be completed.
 
@@ -189,7 +189,7 @@ Now the key will be to link the fact source columns and the target fact table an
 
 Now that the source, destination and target column metadata in place, there is one more item to cover regarding modelling Data Marts in BimlFlex and that is the use of foreign keys.
 
-In the Data Mart, generally, each foreign key points from fact to dimension. In the loading pattern, the foreign key is set by performing a lookup on the business key in a dimension, taking the corresponding dimension’s key and then setting that as the foreign key in the fact.
+In the Data Mart, generally, each foreign key points from fact to dimension. In the loading pattern, the foreign key is set by performing a lookup on the Integration key in a dimension, taking the corresponding dimension’s key and then setting that as the foreign key in the fact.
 
 BimlFlex still automates all this functionality for us but the user still needs to indicate how this is done. This is done by setting the reference columns of the fact table in metadata.
 

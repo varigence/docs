@@ -13,7 +13,47 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
 
-## Bundle 63808, BimlFlex 2019 Preview
+## Upgrading to the 2019 Preview
+
+> [!NOTE]
+> 2019 Preview release downloads
+>
+> * BimlFlex App and Excel Add-in 2019 preview: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
+> * BimlStudio 2019 Preview: [https://varigence.com/download/bimlstudiosetup_preview_2019.exe](https://varigence.com/download/bimlstudiosetup_preview_2019.exe)
+
+> [!NOTE]
+> The preview release contain features that require an update to the BimlFlex SSIS Custom Components.
+> Please download and install the current custom components for the corresponding SQL Server version:
+>
+> * SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+> * SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+> * SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+> * SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+> * SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+
+The process to upgrade to the preview release consists of the following steps:
+
+1. Download and install the combined installer for the BimlFlex App preview and the BimlFlex Excel Add-in preview
+1. Download and install the BimlStudio preview
+1. Download and install the correct version of the SSIS Custom components matching the SQL Server version in use
+1. Upgrade databases and Bundles to the Cumulative Upgrade Bundle version. Open the existing project, click the `Upgrade Assets` menu item, change the channel to the `Cumulative Channel`. More information on the channel choice is available here: @bimlflex-upgrade#upgrade-to-cumulative-update-or-beta-release
+1. Restart BimlStudio and reopen the project
+
+## Bundle 63827
+
+* Update: The default values for settings that include file locations have been updated from `C:\Varigence` to `C:\BimlFlex`. This includes the following settings:
+  * `ArchivePath`, new default: `C:\BimlFlex\Archive`
+  * `ConfigurationPath` `C:\BimlFlex\Configurations`
+  * `ExportPath`, new default: `C:\BimlFlex\Export`
+  * `ImportPath`, new default: `C:\BimlFlex\Import`
+  * `LookupCachePath`, new default: `C:\BimlFlex\Cache`
+  * `RootPath`, new default: `C:\BimlFlex`
+* Update: A scenario where an on-premise SSIS process was used and end-dating was activated but the `IsCurrent` indicator was not in use could lead to an error in the end-dating script. This is now behaving as expected regardless of the configuration for `IsCurrent`
+* Update: A scenario where the same ModelGrouping was reused for multiple relationships would result in a repeat of that name in the Link has been addressed and the link name is now created as expected by the Data Vault Accelerator.
+* Add: ADF now supports Azure Key Vault Linked services through an additional Extension Point. Add Azure Key Vault Linked Services through this Extension Point and reference them in other Linked Services as attributes.
+* Add: ADF now supports Oracle sources that use Key Vault Secrets for connection strings. When this is configured the Key Vault Secret will replace the connection string defined in the connection metadata.
+
+## Bundle 63808, BimlFlex 2019 Preview release 1
 
 This Bundle has companion Preview versions of BimlStudio and BimlFlex. It also requires the SSIS Custom components to be updated to the current version.
 
@@ -22,8 +62,7 @@ Please refer to the @bimlflex-2019-preview-release-notes for a Preview view of t
 > [!NOTE]
 > 2019 Preview release downloads
 >
-> * BimlFlex App 2019 preview: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
-> * BimlFlex Excel Add-in 2019 Preview: [https://varigence.com/downloads/download/bimlflexaddinsetup_preview_2019.exe](https://varigence.com/download/bimlflexaddinsetup_preview_2019.exe)
+> * BimlFlex App and Excel Add-in 2019 preview: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
 > * BimlStudio 2019 Preview: [https://varigence.com/download/bimlstudiosetup_preview_2019.exe](https://varigence.com/download/bimlstudiosetup_preview_2019.exe)
 
 > [!NOTE]
@@ -44,6 +83,7 @@ Please refer to the @bimlflex-2019-preview-release-notes for a Preview view of t
 * Update: The BimlFlex Excel About > Help link has been updated to point to the current documentation web site.
 * Add: `DvPitLagDays` and `DvBridgeLagDays` settings that allow for Overriding the number of days the `Point In Time` and `Bridge` process should go back and look for changes to reprocess.
 * Update: `Point In Time` code to correctly end date records. It is recommended to truncate the PIT tables and executing the newly generated code to apply the new logic on existing tables.
+* Added `Extract DACPAC Folder` button to the `Debug Utility`. This allows the user to get the `Dacpac` folder from the bundle and save it where they please. This folder contains the database definitions and pre-deployment scripts and can be used in pipeline deployments of BimlFlex database updates. (This is a companion feature in BimlStudio 2019)
 
 > [!NOTE]
 > The following metadata columns have been renamed and any bespoke code referring to them require corresponding updates

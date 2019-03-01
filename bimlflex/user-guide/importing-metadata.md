@@ -81,11 +81,11 @@ Options to apply naming conventions to imported metadata.
 
 ##### Inferred Metadata
 
-Infers Business Keys from column constraints
+Infers Integration Keys from column constraints
 
 * None - Nothing
-* Infer Business Key from Primary Key
-* Infer Business Key from Unique Key
+* Infer Integration Key from Primary Key
+* Infer Integration Key from Unique Key
 
 #### Retain Changes to Previously Imported Metadata
 
@@ -98,11 +98,11 @@ Controls if existing metadata should be retained during the import of metadata.
 
 #### Default Properties
 
-This controls default behavior of inferred Business Keys.
+This controls default behavior of inferred Integration Keys.
 
-* Pad Business Keys (Amount) – defines business key width
-* BusinessKey Suffix - Optionally add a suffix onto column name to indicate what is a business key
-* Key Columns End With – When inferring keys, what substring to look for at the end of a column name - Id, Code, No, Key or any custom string added
+* Pad Integration Keys (Amount) – defines Integration key width
+* IntegrationKey Suffix - Optionally add a suffix onto column name to indicate what is a Integration key
+* Key Columns End With – When inferring key names, what substring to look for at the end of a column name - Id, Code, No, Key or any custom string added
 
 ### Importable Assets
 

@@ -8,7 +8,7 @@ Product documentation contents is located in their respective folder.
 
 Documentation site is built using DocFX. [Download DocFX](https://github.com/dotnet/docfx/releases) as a release zip, expand to a folder and add that folder, with docfx.exe, to the path.
 
-Build and host the site using the `serve.bat` or `serve.ps1` files in the `proj2` folder. The default site is served on port 8080. Use the shortcut file to open localhost on port 8080, or [click here](http://localhost:8080). Peruse the site and its contents.
+Build and host the site using the `serve.bat` or `serve.ps1` files in the `docfx` folder. The default site is served on port 8080. Use the shortcut file to open localhost on port 8080, or [click here](http://localhost:8080). Peruse the site and its contents.
 
 Content is stored in md files. Use linting and adhere to best practices for markdown formatting as well as for file names for DocFX.
 

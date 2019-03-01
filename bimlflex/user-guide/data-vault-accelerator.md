@@ -120,7 +120,7 @@ Note that the accelerator will not resurface any entities already accelerated an
 
 In the Excel-based Metadata Editor, there are numerous options for manipulating the source metadata so that the Accelerator will produce the desired Data Vault model. Some of the common requirements include:
 
-* Choosing the Business Key used for the Hubs. By analyzing business processes and the source data it is possible to find EWBK's that aren't the technical source keys
+* Choosing the Integration Key used for the Hubs. By analyzing business processes and the source data it is possible to find EWBK's that aren't the technical source keys
 * Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For information, such as addresses there is normally no need to maintain complex relationships from the source. An address is just an attribute of the entity with a location
 * Adjusting the grain in UOW’s so that the correct Hubs are included in Links
 * Separating out data into different Satellites based on rate of change, storage requirements or similar
@@ -154,7 +154,7 @@ All acceleration uses default naming conventions so basic names for Hubs and Sat
 
 ### Accelerate Satellites
 
-The first Acceleration step is to accelerate tables defined as Satellites. It will look for the defined business key and use it as the Surrogate Key for the connection to the Hub. Once the Key to use is defined and added as the hashed surrogate key the rest of the columns in the Satellite table are added as Satellite attributes.
+The first Acceleration step is to accelerate tables defined as Satellites. It will look for the defined Integration key and use it as the Surrogate Key for the connection to the Hub. Once the Key to use is defined and added as the hashed surrogate key the rest of the columns in the Satellite table are added as Satellite attributes.
 
 It is possible to use the ModelGrouping metadata feature to split the source table data and group information into separate Satellites. This is useful for when part of the data in the source table changes more frequently. The ModelGrouping name will be added to the end of the Satellite name and the data from the source will go into this separate Satellite as well as the main Satellite.
 
@@ -176,11 +176,11 @@ Any attributes left in the source Link Table will be added to the default Link S
 
 It’s worth noting that if there are source system applied rules for relationships (such as a product can only be in one category) they will need to be specified as Driving Keys in the Accelerated Link unless the Accelerator can derive the behavior from relationship constraints.
 
-For Hub tables that have Foreign Key relationships defined the Accelerator will generate Links for each Foreign Key between the defined Business Keys. These Links will need to be reviewed as the UOW they describe might not align with the business process.
+For Hub tables that have Foreign Key relationships defined the Accelerator will generate Links for each Foreign Key between the defined Integration Keys. These Links will need to be reviewed as the UOW they describe might not align with the business process.
 
 ### Accelerate Hubs
 
-Any remaining tables and Business Keys will be used to create Hubs. The defined Business Key for the table will be used for the Hub Attribute and this attribute will be hashed into the Hub Surrogate Key.
+Any remaining tables and Integration Keys will be used to create Hubs. The defined Integration Key for the table will be used for the Hub Attribute and this attribute will be hashed into the Hub Surrogate Key.
 
 ### Reviewing Unit of Work
 

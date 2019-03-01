@@ -316,17 +316,17 @@ Hashing of incoming rows also allows for potential performance increases. Creati
 
 ### \[FLX – Full Row Hash\]
 
-Hashes all the columns in the row (using a double SHA-1 hash to eliminate hash collisions).
+Hashes all the columns in the row.
 
 BimlFlex uses this for delta detection in the staging layer (comparing loads to Persistent Staging) for sources that do not have built-in CDC.
 
-### \[FLX – BusinessKey Hash\]
+### \[FLX – IntegrationKey Hash\]
 
-Hashing the Business Key for use in Data Vault and MPP systems like Microsoft Azure SQL Data Warehouse.
+Hashing the Integration Key for use in Data Vault.
 
-Configuring hashing is done through the configurations page of the BimlFlex Excel Add-in. Note that some destinations override the default behavior.
+Configuring hashing is done through the Configurations and Settings page of the BimlFlex Excel Add-in.
 
-Data Vault targets will always hash Business Keys as that is a requirement for Data Vault.
+Data Vault targets will always hash Integration Keys as that is a requirement for Data Vault.
 
 ![Source Query Workflow](images/bimlflex-ss-v5-source-query-workflow.png "Source Query Workflow")
 
