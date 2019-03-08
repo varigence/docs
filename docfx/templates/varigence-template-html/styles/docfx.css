@@ -327,7 +327,7 @@ article section {
   padding: 10px;
 }
 .search-results-group-heading {
-  font-family: "Open Sans";
+  font-family: 'Open Sans',Calibri,Verdana,Arial,Helvetica,sans-serif;
   padding-left: 10px;
   color: white;
 }
