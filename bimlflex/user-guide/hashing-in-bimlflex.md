@@ -21,11 +21,11 @@ Both of these approaches provides a set of optional configurations and settings.
 
 | SettingKey              | SettingValue | Description |
 | ----------              | ------------ | ----------- |
-| HashAlgorithm           | SHA1         | Hashing Algorithm |
-| HashBinary              | N            | Binary or String hash representation |
-| HashIntegrationKey         | N            | Should the Objects Integration Key be hashed. This is always applied for loads with a Data Vault destination |
-| UseSqlCompatibleHash    | Y            | Should the Integration Key hashing use a SQL `HASHBYTES()` compatible pattern |
-| UseSqlCompatibleRowHash | Y            | Should the row checksum hashing use a SQL `HASHBYTES()` compatible pattern |
+| HashAlgorithm           | `SHA1`       | Hashing Algorithm (`MD5`, `SHA1`, `SHA2_256`, `SHA2_512`) |
+| HashBinary              | `N`          | Binary or String hash representation (`Y`, `N`) |
+| HashIntegrationKey      | `N`          | Should the Object's Integration Key be hashed. This is always applied for loads with a Data Vault destination (`Y`, `N`) |
+| UseSqlCompatibleHash    | `Y`          | Should the Integration Key hashing use a SQL `HASHBYTES()` compatible pattern (`Y`, `N`) |
+| UseSqlCompatibleRowHash | `Y`          | Should the row checksum hashing use a SQL `HASHBYTES()` compatible pattern (`Y`, `N`) |
 
 ### Hash representation
 
@@ -90,9 +90,9 @@ The most important part of using hashing of data is a consistent behavior, so th
 
 Some data types, such as dates and date times have culture specific representations as the default in certain scenarios. To ensure deterministic hashing these data types are converted to strings with a format applied. This allows the same input value to be derived regardless of the current culture or default implicit string conversion of the current environment.
 
-## Hashing approximate and complex datatypes
+## Hashing approximate and complex data types
 
-Some datatypes are by definition approximate representations. In SQL Server they are represented by the `real` and `float` data types. Depending on the values and the processing entity the actual value used in the hashing might be different. For example, SQL and SSIS store some values slightly different. For these scenarios it is important to note that the generated hash is not deterministic and can lead to different hash values for the apparent same input value. In most scenarios this will only lead to the occasional added row when a change has not occurred. For scenarios where this is not acceptable, consider using exact numeric data types.
+Some data types are by definition approximate representations. In SQL Server they are represented by the `real` and `float` data types. Depending on the values and the processing entity the actual value used in the hashing might be different. For example, SQL and SSIS store some values slightly different. For these scenarios it is important to note that the generated hash is not deterministic and can lead to different hash values for the apparent same input value. In most scenarios this will only lead to the occasional added row when a change has not occurred. For scenarios where this is not acceptable, consider using exact numeric data types.
 
 Some complex data types, such as `geography`, `geometry`, `hierarchyid` and `image`, don't have obvious string representations and can therefore be interpreted differently by different hashing approaches. For scenarios where these data types are used and a deterministic hashing is needed, consider manually converting them to a known format or object representation before hashing.
 

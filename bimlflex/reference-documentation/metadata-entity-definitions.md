@@ -7,7 +7,7 @@ title: BimlFlex Metadata Entity Definitions
 
 BimlFlex metadata is managed through the robust Varigence BimlFlex Excel Add-in and is persisted in a metadata database.
 
-For the BimlFlex framework, the modelling focus on technical metadata. Technical metadata represents information that describes how to access the data and includes datatype, the name of the data in the enterprise information system, and other information that describes the way the native enterprise information system identifies the meta object.
+For the BimlFlex framework, the modelling focus on technical metadata. Technical metadata represents information that describes how to access the data and includes data type, the name of the data in the enterprise information system, and other information that describes the way the native enterprise information system identifies the meta object.
 
 ## Metadata Model
 
@@ -64,8 +64,8 @@ Configure connection attributes for both Databases and Files. The ConnectionType
 | SqlStringLoadPattern | This value specifies the SQL Pattern used by the load process to standardize strings. |
 | SqlDateExtractPattern | This value specifies the SQL Pattern used by the extract process to standardize dates. |
 | SqlDateLoadPattern | This value specifies the SQL Pattern used by the load process to standardize dates. |
-| SqlStringDataType | This value specifies the SQL DataType for Strings used by the load process to standardize strings. |
-| SqlAnsiStringDataType | This value specifies the SQL DataType for AnsiStrings used by the load process to standardize strings. |
+| SqlStringDataType | This value specifies the SQL Data Type for Strings used by the load process to standardize strings. |
+| SqlAnsiStringDataType | This value specifies the SQL Data Type for AnsiStrings used by the load process to standardize strings. |
 | SystemType | Defines the connections system type. Depending on the type the relevant source and target components will be chosen. Below is a list of the current possible SystemTypes. For a full up to date list please refer to the [meta].[SystemType] table in the [BimlFlex] database. |
 | ConnectionType | Defines the connections type. This list will mirror the different types of connections that can be defined in Biml. Below is a list of the current possible ConnectionTypes. The list should be extended to include PDW. |
 | IntegrationStage | Defines the connections data warehouse layer or stage. This is an important attribute as it is used to determine what template get applied to its related objects. An example would be that the relevant source to staging Biml template will search for objects that relates to a connection with an IntegrationStage set to "SRC". The [meta].[IntegrationStage] table is an internal framework type (enum) and should be changed or added too only in consultation with Varigence. Below is a list of the current possible IntegrationStages. |
@@ -175,7 +175,7 @@ Columns define the detailed information to transform and map data from source to
 | FriendlyName | Business Friendly name of column. |
 | Description | The column described in business context. Often referred to as business metadata. |
 | ChangeType | This value specifies the slowly changing dimension type for the column.<br/>Below is a list of the current possible Change Types.<br/>								 |
-| DataType | This value specifies the type of the data stored in this column using the unified type system.<br/>Additional logic is required to cater for datatypes with a CustomType like `hierarchyid`.<br/>Below is a list of the current possible Data Types.<br/>								 |
+| DataType | This value specifies the type of the data stored in this column using the unified type system.<br/>Additional logic is required to cater for data types with a CustomType like `hierarchyid`.<br/>Below is a list of the current possible Data Types.<br/>								 |
 | Length | (Set to -1 to indicate MAX length) This value specifies the length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types.<br/>								 |
 | Precision | This value specifies the precision parameter for the column type associated with this column. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.<br/>								 |
 | Scale | This value specifies the scale parameter for the column type associated with this column. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.<br/>								 |

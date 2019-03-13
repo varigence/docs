@@ -46,10 +46,10 @@ The Schema Filter and Table Filter can be used to limit the Assets made availabl
 
 #### Source and Target
 
-|Option Name|Definition|
-|--- |--- |
-|Source Connection|Name of the connection that points to the data source the project is extracting from. The Connection is defined in the Connections tab in the Metadata.|
-|Target Project|Name of the previously defined project that will use this metadata as its source in the source to target loading. The Project is defined in the Project tab in the Metadata.|
+| Option Name       | Definition |
+| ----------------- | ---------- |
+| Source Connection | Name of the connection that points to the data source the project is extracting from. The Connection is defined in the Connections tab in the Metadata |
+| Target Project    | Name of the previously defined project that will use this metadata as its source in the source to target loading. The Project is defined in the Project tab in the Metadata |
 
 #### What to Import
 
@@ -91,7 +91,7 @@ Infers Integration Keys from column constraints
 
 Controls if existing metadata should be retained during the import of metadata.
 
-* All Changes, Don’t override anything.
+* All Changes, Don't override anything.
 * Data Type Changes
 * Column Order Changes
 * Foreign Key Changes
@@ -100,9 +100,9 @@ Controls if existing metadata should be retained during the import of metadata.
 
 This controls default behavior of inferred Integration Keys.
 
-* Pad Integration Keys (Amount) – defines Integration key width
-* IntegrationKey Suffix - Optionally add a suffix onto column name to indicate what is a Integration key
-* Key Columns End With – When inferring key names, what substring to look for at the end of a column name - Id, Code, No, Key or any custom string added
+* Pad Integration Keys (Amount) – defines Integration Key width
+* Integration Key Suffix - add a suffix onto column name to indicate Integration Key
+* Key Columns End With – When inferring key/reference names, what substring to look for at the end of a column name - `Id`, `Code`, `No`, `Key`, or any custom string added
 
 ### Importable Assets
 
@@ -120,11 +120,11 @@ After review, commit the imported metadata to the BimlFlex metadata repository b
 
 ## Verify Imported Metadata in BimlStudio
 
-Open the BimlFlex project in BimlStudio or press the `Refresh Metadata` button if already opened.
+Open the BimlFlex project in BimlStudio, or press the `Refresh Metadata` button if it is already opened.
 
 ![Refresh Metadata](images/bimlflex-ss-v5-refresh-metadata.png "Refresh Metadata")
 
-Verify that the newly imported objects is visible under the `Relational -> Tables -> SRC` folder and the `Integration Services -> 01-Source` folder.
+Verify that the newly imported objects are visible in the logical view. Tables are located under the `Relational -> Tables -> SRC` folder and SSIS Packages are located under  the `Integration Services -> 01-Source` folder.
 
 ### Tables
 
