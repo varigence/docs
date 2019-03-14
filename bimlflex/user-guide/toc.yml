@@ -48,6 +48,8 @@
     href: azure-data-warehouse.md
   - name: Integration Keys and Relationships
     href: integration-keys-and-relationships.md
+  - name: Load Parameters
+    href: load-parameters.md
 
 - name: Supporting materials for configurations, extensions, orchestration
   items:

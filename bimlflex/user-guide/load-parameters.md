@@ -18,9 +18,9 @@ When the parameter metadata is entered into BimlFlex Excel Add-in, BimlFlex uses
 
 Here is an example of a parameter being stored in the `BimlCatalog` database in the `[ssis].[ConfigVariable]` table.
 
-| SystemName | ObjectName | VariableName | VariableValue | ExecutionID |
-|------------|------------|------------- |---------------|-------------|
-|AW_SRC | AW_SRC.Sales.SalesPerson.ModifiedDate | LastLoadDate | 20/09/2015 | 109 |
+| SystemName | ObjectName                            | VariableName | VariableValue | ExecutionID |
+| ---------- | ------------------------------------- | ------------ | ------------- | ----------- |
+| AW_SRC     | AW_SRC.Sales.SalesPerson.ModifiedDate | LastLoadDate | 20/09/2015    | 109         |
 
 ## Parameters in BimlFlex Excel
 
@@ -35,6 +35,56 @@ The process starts before the main container. The first control flow task looks 
 The parameter value will be injected in to the source query in the normal data flow as a `WHERE` clause using the specified logic from the metadata.
 
 After the load the Set Parameters tasks will get the new value for the parameter and update the `[BimlCatalog].[ssis].[ConfigVariable]` table.
+
+## Defining and overriding the parameter behavior
+
+There are several metadata fields to manage load parameters.
+
+### Parameter Operator
+
+This defines the operator used in the `WHERE` clause in the source select query. For a high watermark load pattern, the `>` is commonly used to load data with a higher value than the last time.
+
+### Parameter Default
+
+The parameter load value to use the first time the load happens, when there is no existing parameter value stored in the BimlCatalog database. For high watermark scenarios this is commonly a valid value guaranteed to be lower than any existing data, such as `1900-01-01` for dates. When adding dates in Excel, use the text-defining prefix so the data is kept as text rather than transformed into Excels internal date format, `'1900-01-01`.
+
+### Parameter Data Type
+
+The Data Type to use for the parameter. For Dates, this is commonly defined as `String` as SSIS sometimes finds it easier to deal with string representations.
+
+### ParameterSql
+
+The SQL Query to use to derive the new parameter value, commonly used to get the max value from the loaded data and use that as the from parameter value in the next load.
+
+sample metadata definition to get the max column value in date format
+
+```sql
+MAX(CONVERT(VARCHAR(10), @@this, 121))
+```
+
+### ParameterToName, ParameterToOperator, ExecuteSqlOnSource
+
+Useful for windowed loads or when it is not possible to derive the new parameter from the destination. When loading to Blob files it is not possible to query the created file to get the new parameter value, so this allows the from and to to be derived and applied in the source query using only the source data.
+
+### ParameterColumnExpression
+
+Used to override the column part of the WHERE clause in the source query to tweak the column expression. Useful when extra logic is required for the filter.
+
+Example expression
+
+```sql
+COALESCE(ModifiedDate, CreatedDate)
+```
+
+### ParameterOverride
+
+Used to override the parameter part of the WHERE clause in the source query to tweak the column expression. Useful when extra logic is required for the filter.
+
+Example expression
+
+```sql
+DATEADD(dd, -3, ?)
+```
 
 ## Parameters in Extension Points
 

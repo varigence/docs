@@ -119,7 +119,7 @@ In this case the new objects inherit from the Address table, they select from th
 
 Column Metadata
 
-| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlSourceExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | Customer_BK   | String | 100 | | | 1 | Key    | Y | Y |   | | | Y | | | | | Customer | | |              | FlexToBk(@@rs,CustomerID) | Y | 0 | AdventureWorksLT.SalesLT.Customer | Customer_BK |
 | AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | CustomerID    | Int32  |     | | | 2 | Key    |   |   | Y | | |   | | | | |          | | | c.CustomerID | | | 0 | |
