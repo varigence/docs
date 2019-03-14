@@ -117,7 +117,7 @@ Once the Project Parameter is defined through the Extension Point it can be reus
 
 ### Extension Point Package Parameters
 
-Package Parameters only affect the individual package it targets. Package parameters can be used when a single package requires bespoke logic that doesnt fit the existing parameter logic. These parameters can be used for any logic and might not need to be persisted in the BimlCatalog database.
+Package Parameters only affect the individual package it targets. Package parameters can be used when a single package requires bespoke logic that doesn't fit the existing parameter logic. These parameters can be used for any logic and might not need to be persisted in the BimlCatalog database.
 
 Add Extension Points in BimlStudio
 
