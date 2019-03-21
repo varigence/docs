@@ -41,7 +41,7 @@ The Settings Sheet contains configurable settings such as naming conventions use
 
 For the trial it is recommended to use a Hash Algorithm compatible with the `HASHBYTES()` function in SQL.
 
-Verify that the `UseSqlCompatibleHash` setting in the settings sheet is set to `Y`
+Verify that the `UseSqlCompatibleHash` and `UseSqlCompatibleRowHash` settings in the settings sheet are set to `Y`
 
 For the trial it is recommended to allow the Accelerator to accelerate Link Satellites.
 
