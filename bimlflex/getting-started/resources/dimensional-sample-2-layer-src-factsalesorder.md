@@ -5,11 +5,11 @@ Sample View Creation Script for a Fact table load.
 This is created in the Staging layer and is part of a source to target mapping or load process for Fact table loads.
 
 ```sql
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 -- Sample Source views for dimension loads for 2 layer approach
 -- These views present a source layer for the dimension load process from staging directly to data mart
 -- (c) 2019 - Varigence
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 USE BFX_STG
 GO
 
