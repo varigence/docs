@@ -12,4 +12,4 @@ BimlFlex uses Snowflake best practice approaches to loading and managing the Sno
 
 This includes using the BimlFlex optimal load pattern for Snowflake to extract the data and land it in Snowflake stage, then use the Snowflake COPY command to process the data.
 
-BimlFlex provides a custom SSIS component for loading data into Snowflake using SSIS. This allows the processing and logic in the generated packages to be easier to manage.
+BimlFlex uses SQL Server SSIS packages for extraction of source data and orchestration. BimlFlex provides a custom SSIS component for loading data into Snowflake using SSIS. This allows the processing and logic in the generated packages to be easier to manage.

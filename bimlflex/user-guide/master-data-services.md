@@ -18,11 +18,13 @@ For administrators and Data Stewards there are two main ways to interact with th
 
 The web based UI also provides management of the models and system.
 
-The Excel plugin works similar to the BimlFlex plugin. The steward connects to a model and entity and gets data into Excel, manipulates it and publishes it back
+The MDS Excel plugin works similar to the BimlFlex Excel plugin. The steward connects to a model and entity and gets data into Excel, manipulates it and publishes it back.
+
 It is possible to stage data into MDS by loading source data into staging and persistent staging tables and exposing that data as the source for MDS. It is also possible to load directly from source to MDS. Once the MDS process is finished the data can be exposed through MDS export views and imported from MDS into the EDW through BimlFlex.
 
 It is possible to architect the MDS management process in several different ways. This document demonstrates one way of loading data into MDS and one way of loading data from MDS export views into Staging tables for the data warehouse. Adjusting the patterns used can provide options to support other workflows and processes.
-Considering the risk for naming confusion as data is loaded from staging to staging and into MDS and into EDW it is recommended to explicitly name processes to indicate the full flow if data. “Import into MDS from source” and "import into EDW from MDS" both convey more information than "MDS Import".
+
+Considering the risk for naming confusion as data is loaded from staging to staging and into MDS and into EDW it is recommended to explicitly name processes to indicate the full flow if data. `Import into MDS from source` and `Import into EDW from MDS` both convey more information than `MDS Import`.
 
 ## Sample Model
 
@@ -62,9 +64,13 @@ The default naming convention for the puts the model entity staging tables in th
 ## Required metadata for import into MDS
 
 The sourcing from somewhere into the MDS staging tables require metadata for both the source and the destination. The BimlFlex metadata import function can import the table and column definitions so that the process can be mapped.
+
 This document uses separate views for the staging tables for the product and category tables as the source. The loading of source data from the AdventureWorks LT source into Staging and Persistent Staging is considered a separate process. For a Business Data Vault implementation, the source could be a view created from the existing Raw Data Vault that exposes the required information needed in MDS. To make the source to staging and MDS processes separate and independent the MDS source views can read from staging or persistent staging. This will allow the sourcing process to be run independently and the MDS import to be complete without taking any delta loads from source into account.
+
 The metadata setup assumes the source to staging load of the AdventureWorks is completed and maintained in a separate project.
-The source of Product and Category data will be custom views created in the staging database. These views can rename, align datatypes and provide the right granularity for the MDS load.
+
+The source of Product and Category data will be custom views created in the staging database. These views can rename, align data types and provide the right granularity for the MDS load.
+
 The sources are created in their own schema:
 
 ```sql
@@ -100,14 +106,14 @@ AS
   LEFT JOIN BFX_ODS.AWLT.ProductCategory ppc ON pc.ParentProductCategoryID = ppc.ProductCategoryID;
 ```
 
-Note that these views are for demonstration purposes. Change management, effectiveness and deletions etc. require additional considerations
+Note that these views are for demonstration purposes. Change management, effectiveness, deletions etc. require additional consideration.
 
 ## Connections
 
 The existing `BFX_STG` staging connection can be reused for the MDS source views.
 A new connection to the MDS staging destination tables is added as an entry in the Connections Tab.
 
-The new connection is called MasterDataServices and maps to the MasterDataServices database that the MDS instance has been configured to use. The new MDS destination connection uses the IntegrationStage attribute “Master Data Services” to indicate the use to BimlFlex.
+The new connection is called MasterDataServices and maps to the MasterDataServices database that the MDS instance has been configured to use. The new MDS destination connection uses the IntegrationStage attribute `Master Data Services` to indicate the use to BimlFlex.
 
 The load from source staging table to MDS staging table is defined in its own batch.
 

@@ -119,7 +119,7 @@ In this case the new objects inherit from the Address table, they select from th
 
 Column Metadata
 
-| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
+| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlSourceExpression | SsisExpression | IsDerived | SolveOrder | ReferenceTable | ReferenceColumnName |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | Customer_BK   | String | 100 | | | 1 | Key    | Y | Y |   | | | Y | | | | | Customer | | |              | FlexToBk(@@rs,CustomerID) | Y | 0 | AdventureWorksLT.SalesLT.Customer | Customer_BK |
 | AdventureWorksLT | SalesLT.CustomerMainOfficeAddress | CustomerID    | Int32  |     | | | 2 | Key    |   |   | Y | | |   | | | | |          | | | c.CustomerID | | | 0 | |
@@ -310,7 +310,7 @@ In the trial process the `GroupBySql` functionality is not used.
 
 #### DataType, Length, Precision and Scale
 
-The source datatype of the column and its length, precision and scale as applicable to the type. For the trial all data types are kept as they are from the import and match the source. For the Data Warehouse the data types are expanded using the Data Type Mappings feature in the next step.
+The source data type of the column and its length, precision and scale as applicable to the type. For the trial all data types are kept as they are from the import and match the source. For the Data Warehouse the data types are expanded using the Data Type Mappings feature in the next step.
 
 #### Ordinal
 

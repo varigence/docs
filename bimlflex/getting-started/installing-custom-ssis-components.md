@@ -28,6 +28,15 @@ Download links:
 
 The components are installed through the included `install.bat` file
 
+## Snowflake custom SSIS Components
+
+The Snowflake load process uses a separate, custom SSIS component to provide a solid query management experience in SSIS.
+
+Download and install the version matching the SQL Server SSIS version used:
+
+* Snowflake for SQL Server 2016 SSIS: [https://varigence.com/downloads/varigence.ssis.snowflake.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2016.xcopyinstall.zip)
+* Snowflake for SQL Server 2017 SSIS: [https://varigence.com/downloads/varigence.ssis.snowflake.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2017.xcopyinstall.zip)
+
 ## Azure SSIS Integration Runtime
 
 The Azure Integrated Runtime allows deployment and running of SSIS packages in the Azure cloud environment as part of the Azure Data Factory feature set.

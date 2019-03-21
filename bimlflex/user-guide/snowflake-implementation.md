@@ -47,3 +47,30 @@ Installation of the custom components are provided through a script file that co
 This script approach allows the custom components to be installed on an Azure Integration Runtime.
 
 Information on using custom components in Azure Integration Runtime can be found here: @bimlflex-adding-ssis-custom-components-to-azure-integration-runtime
+
+## Sample project metadata
+
+For a sample project loading data from a SQL Server with a AdventureWorksLT source database, use the following sample configuration as a starting point
+
+### Connections
+
+The Data warehouse connections to Snowflake are all defined as `OLEDB` Connections and `Snowflake DW` Systems
+
+| Connection       | ConnectionString                                                                                  | Catalog | ConnectionType | SystemType | IntegrationStage | RecordSource | FilePath | FilePattern | PersistHistory |
+| ---------------- | ------------------------------------------------------------------------------------------------- | -------------------- | ------ | ------------ | ------------------ | --- | -------- | ----------- | -------------- |
+| AdventureWorksLT | Data Source=.;Initial Catalog=AdventureWorksLT2012;Provider=SQLNCLI11.1;Integrated Security=SSPI; | AdventureWorksLT2012 | OLEDB  | SQL Server   | Source             | AWLT | | | Y |
+| BFX_DM           | Data Source=.;Initial Catalog=BFX_DM;Provider=SQLNCLI11;Integrated Security=SSPI;                 | BFX_DM               | OLEDB  | Snowflake DW | Data Mart          | | | | |
+| BFX_ODS          | Data Source=.;Initial Catalog=BFX_ODS;Provider=SQLNCLI11;Integrated Security=SSPI;                | BFX_ODS              | OLEDB  | Snowflake DW | Persistent Staging | | | | |
+| BFX_RDV          | Data Source=.;Initial Catalog=BFX_RDV;Provider=SQLNCLI11;Integrated Security=SSPI;                | BFX_RDV              | OLEDB  | Snowflake DW | Raw Data Vault     | | | | |
+| BFX_STG          | Data Source=.;Initial Catalog=BFX_STG;Provider=SQLNCLI11;Integrated Security=SSPI;                | BFX_STG              | OLEDB  | Snowflake DW | Staging            | | | | |
+| BimlCatalog      | Data Source=.;Initial Catalog=BimlCatalog;Integrated Security=True;                               | BimlCatalog          | ADONET | SQL Server   | Data Warehouse     | | | | |
+
+### Objects and Columns
+
+The source objects are imported the same way as other implementation patterns
+
+### Data Vault and Data Mart
+
+The Data Vault is accelerated the same way and the Data Mart is created in the same way as other implementation patterns
+
+### 

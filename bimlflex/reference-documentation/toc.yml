@@ -1,3 +1,7 @@
+- name: Metadata Configurations
+  href: metadata-configurations.md
+- name: Metadata Settings
+  href: metadata-settings.md
 - name: Extension Point Definitions
   href: extension-point-definitions.md
 - name: Metadata Entity Definitions

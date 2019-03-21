@@ -1,24 +1,30 @@
+---
+uid: bimlflex-metadata-entity-definitions
+title: BimlFlex Metadata Entity Definitions
+---
 
 # Metadata Repository
 
-BimlFlex metadata is entered using our robust Excel Add-in and is persisted in a database called BimlFlex. For the purpose of the framework we focus mostly on using technical metadata. Technical metadata represents information that describes how to access the data and includes things such as datatype, the name of the data in the enterprise information system, and other information that describes the way the native enterprise information system identifies the meta object.
+BimlFlex metadata is managed through the robust Varigence BimlFlex Excel Add-in and is persisted in a metadata database.
+
+For the BimlFlex framework, the modelling focus on technical metadata. Technical metadata represents information that describes how to access the data and includes data type, the name of the data in the enterprise information system, and other information that describes the way the native enterprise information system identifies the meta object.
 
 ## Metadata Model
 
-Predefined Extensible Model designed to create complex metadata models and data mapping scenarios. The model describes the schema that will be used to store our metadata.
+Predefined Extensible Model designed to create complex metadata models and data mapping scenarios. The model describes the schema that will be used to store the metadata.
 
 ## Metadata Instance
 
-* Instances store metadata in the format we described in our model.
+* Instances store metadata in the format described in the BimlFlex model.
 * Allows easy access to the metadata during development.
-* More useful in this format than raw metadata (e.g. in an excel file)
+* More useful in this format than raw metadata (e.g. in an Excel file)
 * The properties are more accessible than using annotations.
-* It’s much faster to develop and to build.
+* It's much faster to develop and to build.
 
 ## Metadata Entities
 
-A metadata model describes what will be used to store the metadata that is subsequently authored by end users.  It can be thought of as a database schema and provides the ability to create a general purpose Entity/Relationship model.
-Below is an outline of the properties and relationships for each entity type. Note that later we use the metadata model to structure our metadata instance.
+A metadata model describes what will be used to store the metadata that is subsequently authored by end users. It can be thought of as a database schema and provides the ability to create a general purpose Entity/Relationship model.
+Below is an outline of the properties and relationships for each entity type.
 
 ### Versions Entity
 
@@ -27,7 +33,7 @@ Provide selected Customer and Version details to metadata instance
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | CustomerUID | Selected Customer Guid |
 | Customer | Selected Customer Name |
 | VersionUID | Selected Version Guid |
@@ -42,7 +48,7 @@ Configure connection attributes for both Databases and Files. The ConnectionType
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | ConnectionString | Connection string to be used for this connection. Please note that the ConnectionString will only be parsed by BimlStudio when you build the solution or manually test it. |
 | Catalog | Database name that the connection points to. When defining an Excel file this will be the worksheet name. If you have an environment where the production database is named differently to other environments we recommend using the production name. Example: AdventureWorks (Production) vs AdventuerWorks_DEV (Development) |
 | PersistHistory | Determines whether to track history when defining a connection with an IntegrationStage = "PSA" for Persistent Staging Area. If this is not set and a PSA connection is configured then the database becomes a ODS without history. This is very useful to create an ODS by merely importing the source metadata. |
@@ -53,13 +59,13 @@ Configure connection attributes for both Databases and Files. The ConnectionType
 | EndDelimiter | Derived value from [meta].[SystemType] table. The column ending delimiter used by the DBMS when performing a query. |
 | IgnoreSchema | Derived value from [meta].[SystemType] table. If this is set to "Y" then the source query will omit the schema. |
 | SqlHashPattern | This value specifies the SQL Hash Pattern used by the SQL ELT pattern. |
-| SqlConcatenantePattern | This value specifies the SQL Concatenate Pattern used to concatenate Business Keys by the SQL ELT pattern. |
+| SqlConcatenantePattern | This value specifies the SQL Concatenate Pattern used to concatenate Integration Keys by the SQL ELT pattern. |
 | SqlStringExtractPattern | This value specifies the SQL Pattern used by the extract process to standardize strings. |
 | SqlStringLoadPattern | This value specifies the SQL Pattern used by the load process to standardize strings. |
 | SqlDateExtractPattern | This value specifies the SQL Pattern used by the extract process to standardize dates. |
 | SqlDateLoadPattern | This value specifies the SQL Pattern used by the load process to standardize dates. |
-| SqlStringDataType | This value specifies the SQL DataType for Strings used by the load process to standardize strings. |
-| SqlAnsiStringDataType | This value specifies the SQL DataType for AnsiStrings used by the load process to standardize strings. |
+| SqlStringDataType | This value specifies the SQL Data Type for Strings used by the load process to standardize strings. |
+| SqlAnsiStringDataType | This value specifies the SQL Data Type for AnsiStrings used by the load process to standardize strings. |
 | SystemType | Defines the connections system type. Depending on the type the relevant source and target components will be chosen. Below is a list of the current possible SystemTypes. For a full up to date list please refer to the [meta].[SystemType] table in the [BimlFlex] database. |
 | ConnectionType | Defines the connections type. This list will mirror the different types of connections that can be defined in Biml. Below is a list of the current possible ConnectionTypes. The list should be extended to include PDW. |
 | IntegrationStage | Defines the connections data warehouse layer or stage. This is an important attribute as it is used to determine what template get applied to its related objects. An example would be that the relevant source to staging Biml template will search for objects that relates to a connection with an IntegrationStage set to "SRC". The [meta].[IntegrationStage] table is an internal framework type (enum) and should be changed or added too only in consultation with Varigence. Below is a list of the current possible IntegrationStages. |
@@ -79,7 +85,7 @@ Batches define a ETL workload. Batches is used in combination with Projects to
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | PackageSubpath | Internal attribute that is used for building the packages into the same project folder. |
 | NoOfThreads | The default number of packages that can be executed in parallel within the Batch. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel. |
 | UseSsisExpress | Set this value to Y when extracting data from a source that only has Sql Server Express install. Note that with SSIS Express there is limited functionality. |
@@ -96,7 +102,7 @@ Projects define the integration configuration between source and target. Specify
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | ProjectSubpath | Internal attribute that is used for building the packages into the same project folder. |
 | IntegrationTemplate | Name of Integration template to apply. Below is a list of the current possible Integration Templates. Currently this is a place holder for future separation of ETL logic. |
 | ExcludeFromModel | Entering Y into this column will determine if the objects associated with this project's metadata will be excluded along with the rest of the BimlFlex solution. |
@@ -112,7 +118,7 @@ Object define the header information for both database tables and views and file
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Schema | Schema to which this object belongs or is meant to belong, is set in this field. |
 | ObjectName | Name of Object (Table, View). Best practice is to use CamelCase. During the import of source metadata we provide options to convert name with under_scores to CamelCase and vice versa. |
 | ObjectType | This field is used to setup object type. This field refers to ObjectTypes enumerator. Below is a list of the current possible Object Types. |
@@ -153,6 +159,7 @@ Object define the header information for both database tables and views and file
 | SolveOrderReverse | Internal column calculating the order in which the objects will be loaded based on References in reverse. |
 | UseOwnThread | Objects will be executed within the Batch based on Topological sort order and then alphabetical. If you would like the object to be executed in its own thread at the start of the respective execution container set this attribute to "true"  |
 | NoOfThreads | At the object level, this is where we can define the amount of threads that we want the load to be distributed across in the SSIS package. |
+| ObjectNameSequence | Sequence Number used for shortening ADF pipeline names due to limits. |
 | ObjectUID | The GUID for the Object from BimlFlex database used to provide the package id. |
 
 ### Columns Entity
@@ -162,13 +169,13 @@ Columns define the detailed information to transform and map data from source to
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | ColumnName | Name of the column within the table. For any column other than the source we recommend using CamelCase. For ORACLE we recommend UPPERCASE separated by underscores. |
-| ColumnAlias | Alias for the column. Generally used in conjunction with SqlExpression. |
+| ColumnAlias | Alias for the column. Generally used in conjunction with SqlSourceExpression. |
 | FriendlyName | Business Friendly name of column. |
 | Description | The column described in business context. Often referred to as business metadata. |
 | ChangeType | This value specifies the slowly changing dimension type for the column.<br/>Below is a list of the current possible Change Types.<br/>								 |
-| DataType | This value specifies the type of the data stored in this column using the unified type system.<br/>Additional logic is required to cater for datatypes with a CustomType like `hierarchyid`.<br/>Below is a list of the current possible Data Types.<br/>								 |
+| DataType | This value specifies the type of the data stored in this column using the unified type system.<br/>Additional logic is required to cater for data types with a CustomType like `hierarchyid`.<br/>Below is a list of the current possible Data Types.<br/>								 |
 | Length | (Set to -1 to indicate MAX length) This value specifies the length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types.<br/>								 |
 | Precision | This value specifies the precision parameter for the column type associated with this column. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.<br/>								 |
 | Scale | This value specifies the scale parameter for the column type associated with this column. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.<br/>								 |
@@ -184,16 +191,18 @@ Columns define the detailed information to transform and map data from source to
 | DefaultValue | This value specifies a default value for the column using Transact-SQL constant expression syntax.<br/>								 |
 | DisplayFolder | Place holder at the moment. Planning to use this when defining Analysis Services metadata. |
 | Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the column. |
-| SsisExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
-| SqlExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
-| SsisDataType | This attribute is used to overwrite the datatype for the `SsisExpression`. |
-| SolveOrder | This attribute is used when defining `SsisExpressions` that need to be parsed in a specific order. Example would be if you want to split a very complex calculation up into multiple expressions that is derived in a specific sequence. |
+| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| SsisDataType | This attribute is used to overwrite the datatype for the `SsisDataflowExpression`. |
+| SolveOrder | This attribute is used when defining `SsisDataflowExpressions` that need to be parsed in a specific order. Example would be if you want to split a very complex calculation up into multiple expressions that is derived in a specific sequence. |
 | IsPrimaryKey | "Y" if this column is the primary key of the object. The PRIMARY KEY uniquely identifies each record in a database table. Primary keys must contain UNIQUE values. A primary key column cannot contain NULL values. |
-| IsBusinessKey | "Y" if this column is the business key of the object. Note that the framework allows only one business key per object. If the object has multiple columns that makes up the business key define a derived concatenated column. |
-| IsAltBusinessKey | "Y" if this column is the alternate business key of the object. This is generally defined if the object has multiple columns as the business key and a derived concatenated business key has been defined. |
+| IsIntegrationKey | "Y" if this column is the integration key of the object. Note that the framework allows only one integration key per object. If the object has multiple columns that makes up the integration key define a derived concatenated column. |
+| IsSourceKey | "Y" if this column is the source primary key of the object. This is generally defined if the object has multiple columns as the integration key and a derived concatenated integration key has been defined. |
 | IsIdentity | "Y" if this column is the identity column of the object |
 | IsNullable | "Y" if this column is the allow NULL (empty) values |
-| IsDerived | "Y" if the value in this column is derived during the ETL process. This is generally set in conjunction with the `SsisExpression` attribute. |
+| IsDerived | "Y" if the value in this column is derived during the ETL process. This is generally set in conjunction with the `SsisDataflowExpression` attribute. |
 | IsNotPersistent | Defines an Override to the Persistent Staging Connection defined as part of the Project Entity. A good example of usage would be where derived columns should not be persisted. Note that setting it to "Y" will exclude the column from being persisted. |
 | ExcludeFromModel | Entering Y into this column will determine if this column will be built along with the rest of the solution when the BimlFlex solution is being compiled.  |
 
@@ -204,7 +213,7 @@ CustomAttributes are used to capture attributes that are sparsely used in the fr
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | AttributeKey | The attribute key is a unique name that we give each custom attribute so when we are generating our solution we can pin point one of many custom attributes for one object.  |
 | AttributeValue | This column contains the value to be returned when the custom attribute accessed by the framework. |
 | AttributeProperty | This column contains the default value for the custom attribute if it is not specified in the AttributeValue. |
@@ -218,7 +227,7 @@ Parameters are used to add `WHERE` logic to the source queries. For very complex
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | ParameterName | This attribute specify the name of the parameter being used in the package. This will be the name [VariableName] in the [ssis].[ConfigVariable] table in the BimlCatalog database. |
 | ParameterOperator | This attribute define a operator to be used when retrieving our parameter value. Example is `>=` that will translate to the where clause as `[ParameterName] >= ?` |
 | ParameterDefault | Here you can define the default value that the parameter contains the first time the package is executed. Example would be for a numeric field `0` and a date `1900-01-01` |
@@ -228,7 +237,7 @@ Parameters are used to add `WHERE` logic to the source queries. For very complex
 | ParameterToOperator | This attribute define an operator to be used in combination with ParameterToName |
 | ExecuteSqlOnSource | Specify if the `ParameterSql` should be executed on the source connection to retrieve the next load value. |
 | ParameterColumnExpression | In this column, we can define an override to be used instead of the ColumnName. Sometimes we need to use a column that was joined from another table to determine change like the LastModifiedDate. Normally this table join will use an<br/>alias and we can then override the WHERE clause here. EG. e.[LastModifiedDate] or e.@@this.<br/>								 |
-| ParameterSqlExpression | In this column, we can define more complex scenarios like `(ISNULL(@@this, GETDATE()) > ? OR ISNULL(@@this, GETDATE()) <= ?)`.<br/>								 |
+| ParameterSqlSourceExpression | In this column, we can define more complex scenarios like `(ISNULL(@@this, GETDATE()) > ? OR ISNULL(@@this, GETDATE()) <= ?)`.<br/>								 |
 | ParameterOverride | In this column we define an override for the default parameter definition. It will override the ? in the following clause to whatever was defined. `WHERE [ColumnName] = ?`. |
 | ParameterOrdinal | If we are defining multiple parameters for the same object, we use this column to choose the order in which they are applied in SQL statements. |
 | Description | Optional metadata to provide a description. |
@@ -242,7 +251,7 @@ xxxxx
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | Mapping | xxxxx |
 | DataType | This value specifies the type of the data stored in this column using the unified type system.<br/>Additional logic is required to cater for datatypes with a CustomType like `[hierarchyid]`.<br/>Below is a list of the current possible Data Types. |
 | FromLength | xxxxx |
@@ -253,9 +262,11 @@ xxxxx
 | Ordinal | xxxxx |
 | DefaultValue | xxxxx |
 | SystemType | Defines the mappings system type. Depending on the type the relevant source mapping will be chosen. Below is a list of the current possible SystemTypes. For a full up to date list please refer to the [meta].[SystemType] table in the [BimlFlex] database. |
-| SsisExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
-| SqlExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
-| ColumnAlias | Alias for the column. Generally used in conjunction with SqlExpression. |
+| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| ColumnAlias | Alias for the column. Generally used in conjunction with SqlSourceExpression. |
 | Description | The column described in business context. Often referred to as business metadata. |
 | IsMaster | "Y" if the value in this column can be mapped to. |
 | MappedToDataType | This value specifies the type of the data stored in this column using the unified type system.<br/>Additional logic is required to cater for datatypes with a CustomType like `[hierarchyid]`.<br/>Below is a list of the current possible Data Types. |
@@ -263,9 +274,9 @@ xxxxx
 | MappedToPrecision | Precision of the DataType being mapped to |
 | MappedToScale | Scale of the DataType being mapped to |
 | MappedToDefaultValue | Default of the DataType being mapped to |
-| MappedToSsisExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
-| MappedToSqlExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
-| MappedToColumnAlias | Alias for the column. Generally used in conjunction with `SqlExpression`. |
+| MappedToSsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| MappedToSqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| MappedToColumnAlias | Alias for the column. Generally used in conjunction with `SqlSourceExpression`. |
 | MappedToDescription | The column described in business context. Often referred to as business metadata. |
 
 ### Configurations Entity
@@ -275,14 +286,16 @@ Configurations allows for customizing the default behavior of BimlFlex. Many of 
 #### Properties
 
 | Attribute | Description |
-|-----------|-------------|
+| --------- | ----------- |
 | ConfigurationKey | The configuration key is a unique name that we give each configuration so when we are generating our solution we can pin point one of many configurations. |
 | ConfigurationValue | This column contains the value to be returned when the configuration is accessed by the framework. This attribute allows you to define naming conventions custom to your environment. |
 | ConfigurationDataType | Here we define the data type for a configuration being used in the solution packages. Here you should enter the data type using the following format "DATATYPENAME" |
 | ConfigurationDefault | If the ConfigurationValue has not been specified, this column will store the default value to be used instead.  |
 | ConfigurationOrder | This is what we used to control the order in which configuration settings are loaded into the BimlFlex solution and create on the target tables where relevant. |
-| SqlExpression | This column is used when using a configuration to create a new based derived column using the SQL based templates. For example, this SQL expression will be used to obtain the current date. GETUTCDATE() |
-| SsisExpression | This column is used when using a configuration to create a new derived column to be added into the dataflow of a particular package.<br/>For example, this SSIS expression will be used to obtain the current date. `(DT_DBDATE)GETUTCDATE()`<br/>								 |
+| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
 | IsNullable | This column allows to you define if the configuration value is able to be null without throwing an error when building BimlFlex solution. To make the configuration nullable simply enter "Y" otherwise "N" will set the configuration to be non-nullable. |
 | StagingAttribute | The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.  |
 | PersistentStagingAttribute | The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework. |
@@ -302,7 +315,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### AttributeTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | COL | Column |
 | OBJ | Object |
 | PRJ | Project |
@@ -313,7 +326,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### ChangeTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | CHG | Type 1 |
 | HST | Type 2 |
 | FIX | Fixed |
@@ -331,7 +344,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### ConfigurationAttributes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | IGN | Ignore |
 | DER | Derived |
 | SRC | Source |
@@ -342,7 +355,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### ConnectionTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | OLEDB | OLEDB |
 | ADONET | ADONET |
 | FILE | FILE |
@@ -353,6 +366,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 | AZB | Azure Blob Storage |
 | AZDLS | Azure Data Lake Store |
 | SFLSTG | Snowflake Stage |
+| AZLS | Analysis Linked Service |
 | AST | Analysis Services Tabular |
 | ASM | Analysis Services Multi Dimensional |
 | MDS | Microsoft MDS |
@@ -365,7 +379,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### DataTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | AnsiString | AnsiString |
 | AnsiStringFixedLength | AnsiStringFixedLength |
 | Binary | Binary |
@@ -401,7 +415,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### ParameterDataTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | Boolean | Boolean |
 | Byte | Byte |
 | Char | Char |
@@ -421,7 +435,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### IntegrationStages
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | SRC | Source |
 | STG | Staging |
 | PSA | Persistent Staging |
@@ -436,16 +450,16 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### IntegrationTemplates
 
 | Code | Value |
-|------|-------|
-| S2T_SSIS | Source -> Target |
-| S2T_ADF | ADF Source -> Target |
-| S2FIL | Source -> File Extract |
-| S2ZIP | Source -> Zip File Extract |
+| ---- | ----- |
+| S2T_SSIS | SSIS: Source -> Target |
+| S2T_ADF | ADF: Source -> Target |
+| S2FIL | SSIS: Source -> File Extract |
+| S2ZIP | SSIS: Source -> Zip File Extract |
 
 ### ObjectTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | TBL | Table |
 | TBV | View |
 | DIM | Dimension |
@@ -469,7 +483,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### ModelObjectTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | HUB | Hub |
 | LNK | Link |
 | SAT | Satellite |
@@ -483,14 +497,14 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### PrecedenceConstraints
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | Success | Success |
 | Completion | Completion |
 
 ### SystemTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | FF_DEL | File Delimited |
 | FF_RAG | File Ragged Right |
 | MSSQL | SQL Server |
@@ -507,11 +521,88 @@ BimlFlex has a number of internal static types that can also be referred to as n
 | ORARDB | Oracle RDB |
 | CRSFDC | COZYROC Salesforce |
 | CUSTOM | Custom System |
+| LS_AMWS | AmazonMarketplaceWebService |
+| LS_AR | AmazonRedshift |
+| LS_AS3 | AmazonS3 |
+| LS_AZB | AzureBatch |
+| LS_AZBS | AzureBlobStorage |
+| LS_AZCD | AzureCosmosDb |
+| LS_AZCDMD | AzureCosmosDbMongoDb |
+| LS_AZD | AzureDatabricks |
+| LS_AZDLA | AzureDataLakeAnalytics |
+| LS_AZDLSG1 | AzureDataLakeStoreGen1 |
+| LS_AZDLSG2 | AzureDataLakeStoreGen2 |
+| LS_AZKV | AzureKeyVault |
+| LS_AZMYSQL | AzureMySql |
+| LS_AZPGRSQL | AzurePostgreSql |
+| LS_AZSI | AzureSearchIndex |
+| LS_AZSQLDB | AzureSqlDatabase |
+| LS_AZSQLDW | AzureSqlDataWarehouse |
+| LS_AZTS | AzureTableStorage |
+| LS_CASSANDRA | Cassandra |
+| LS_CONCUR | Concur |
+| LS_COUCHBASE | Couchbase |
+| LS_DB2 | Db2 |
+| LS_DRILL | Drill |
+| LS_DYNAX | DynamicsAx |
+| LS_DYNCRM | DynamicsCrm |
+| LS_ELOQUA | Eloqua |
+| LS_FS | FileServer |
+| LS_FTP | Ftp |
+| LS_GAW | GoogleAdWords |
+| LS_GBQ | GoogleBigQuery |
+| LS_GREENPLUM | Greenplum |
+| LS_HBASE | HBase |
+| LS_HDFS | Hdfs |
+| LS_HDI | HdInsight |
+| LS_HDIB | HdInsightBase |
+| LS_HDIOD | HdInsightOnDemand |
+| LS_HIVE | Hive |
+| LS_HTTP | Http |
+| LS_HUBSPOT | Hubspot |
+| LS_IMPALA | Impala |
+| LS_JIRA | Jira |
+| LS_ML | MachineLearning |
+| LS_MAGNETO | Magneto |
+| LS_MARIADB | MariaDb |
+| LS_MARKETO | Marketo |
+| LS_MONGODB | MongoDb |
+| LS_MYSQL | MySql |
+| LS_NETEZZA | Netezza |
+| LS_ODATA | OData |
+| LS_ODBC | Odbc |
+| LS_O365 | Office365 |
+| LS_ORACLE | Oracle |
+| LS_ORASC | OracleServiceCloud |
+| LS_PAYPAL | Paypal |
+| LS_PHOENIX | Phoenix |
+| LS_PGRSQL | PostgreSql |
+| LS_PRESTO | Presto |
+| LS_QB | QuickBooks |
+| LS_RESPONSYS | Responsys |
+| LS_SALESFORCE | Salesforce |
+| LS_SFMC | SalesforceMarketingCloud |
+| LS_SAPBW | SapBusinessWarehouse |
+| LS_SAPCFC | SapCloudForCustomer |
+| LS_SAPECC | SapEcc |
+| LS_SAPH | SapHana |
+| LS_SNOW | ServiceNow |
+| LS_SFTP | Sftp |
+| LS_SHOPIFY | Shopify |
+| LS_SPARK | Spark |
+| LS_MSSQL | SqlServer |
+| LS_SQUARE | Square |
+| LS_SYBASE | Sybase |
+| LS_TERADATA | Teradata |
+| LS_VERTICA | Vertica |
+| LS_WT | WebTable |
+| LS_XERO | Xero |
+| LS_ZOHO | Zoho |
 
 ### FlatFileTypes
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | Delimited | Delimited |
 | FixedWidth | FixedWidth |
 | RaggedRight | RaggedRight |
@@ -519,7 +610,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### Delimiters
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | CRLF | CRLF |
 | CR | CR |
 | LF | LF |
@@ -533,14 +624,14 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### Booleans
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | Y | Y |
 | N | N |
 
 ### AttributeKeys
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | SettingValue | SettingValue |
 | IsDrivingKey | IsDrivingKey |
 | CreateBridge | CreateBridge |
@@ -565,13 +656,13 @@ BimlFlex has a number of internal static types that can also be referred to as n
 ### AttributeValues
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | EncryptSensitiveWithUserKey | EncryptSensitiveWithUserKey |
 
 ### AttributeProperties
 
 | Code | Value |
-|------|-------|
+| ---- | ----- |
 | IsPrimaryHub,AddKey | IsPrimaryHub,AddKey |
 | IsPrimaryHub | IsPrimaryHub |
 | AddKey | AddKey |

@@ -1,7 +1,5 @@
 - name: Requirements
-  items:
-  - name: Software and Hardware requirements
-    href: bimlflex-software-and-hardware-requirements.md
+  href: software-and-hardware-requirements.md
 
 - name: Installing
   items:
