@@ -1,6 +1,22 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
-
-<div class="hidden-sm col-md-2" role="complementary">
+<div id="page-actions" class="right-container column is-one-quarter is-one-fifth-desktop is-hidden-mobile is-hidden-tablet-only" data-bi-name="pageactions" role="complementary" aria-label="Page Actions">
+  <nav id="side-doc-outline" class="doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="On page navigation" style="width: 176.115px; top: 119.333px; bottom: 24px;">
+    <h3>In this article</h3>
+      <ol>
+        {{#docurl}}
+        <li>
+          <a href="{{docurl}}" >{{__global.improveThisDoc}}</a>
+        </li>
+        {{/docurl}}
+        {{#sourceurl}}
+        <li>
+          <a href="{{sourceurl}}" >{{__global.viewSource}}</a>
+        </li>
+        {{/sourceurl}}
+      </ol>
+  </nav>
+</div>
+{# <div class="hidden-sm col-md-2" role="complementary">
   <div class="sideaffix">
     {{^_disableContribution}}
     <div class="contribution">
@@ -22,4 +38,4 @@
     <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
     </nav>
   </div>
-</div>
+</div> #}

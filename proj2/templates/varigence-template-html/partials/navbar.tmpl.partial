@@ -1,24 +1,21 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{_rel}}index.html">
-        <img id="logo" src="{{_rel}}images/Varigence-Logo.png" height="46" width="46" alt="{{_appName}}" >
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar">
-      <form class="navbar-form navbar-right" role="search" id="search">
-        <div class="form-group">
-          <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+<div>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" id="topnav">
+        <div class="container-fluid"><a class="navbar-brand" href="index.html" style="background-image: url('varigence-icon.png');background-size: cover;background-repeat: no-repeat;height: 66px;width: 200px;background-position: center;margin-left: -15px;"></a><button class="navbar-toggler"
+                data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto" style="color: #00416a;">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="biml-flex.html">BimlFlex</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="biml-studio.html">BimlStudio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="biml-express.html">BimlExpress</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="compare.html">Compare</a></li>
+                    <li class="dropdown nav-item" id="partners"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="partners.html">Partners</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="partners.html">Partners</a><a class="dropdown-item" role="presentation" href="biml-heroes.html">Biml Heroes</a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#">Menu Item</a></div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://support.varigence.com">Support</a></li>
+                </ul><span class="navbar-text actions"><a href="quotes.html" style="color: #00416a;">Quote</a><a href="login.html" style="color: #00416a;"><i class="fa fa-user" id="nav-shopping"></i></a><a href="https://www.varigence.com/Store" style="color: #00416a;"><i class="fa fa-shopping-cart" id="nav-shopping"></i></a></span></div>
         </div>
-      </form>
-    </div>
-  </div>
-</nav>
+    </nav>
+</div>

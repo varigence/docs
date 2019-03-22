@@ -51,39 +51,7 @@ h6 mark {
   padding: 0;
 }
 
-.inheritance .level0:before,
-.inheritance .level1:before,
-.inheritance .level2:before,
-.inheritance .level3:before,
-.inheritance .level4:before,
-.inheritance .level5:before {
-    content: '↳';
-    margin-right: 5px;
-}
 
-.inheritance .level0 {
-    margin-left: 0em;
-}
-
-.inheritance .level1 {
-    margin-left: 1em;
-}
-
-.inheritance .level2 {
-    margin-left: 2em;
-}
-
-.inheritance .level3 {
-    margin-left: 3em;
-}
-
-.inheritance .level4 {
-    margin-left: 4em;
-}
-
-.inheritance .level5 {
-    margin-left: 5em;
-}
 
 span.parametername,
 span.paramref,
@@ -198,10 +166,7 @@ header .navbar {
   min-height: 40px;
 }
 
-.inheritance h5, .inheritedMembers h5{
-  padding-bottom: 5px;
-  border-bottom: 1px solid #ccc;
-}
+
 
 article h1, article h2, article h3, article h4{
   margin-top: 25px;
@@ -577,10 +542,6 @@ body .toc{
   margin-left: 280px;
 }
 
-.inheritance hr {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 .article img {
   max-width: 100%;
 }

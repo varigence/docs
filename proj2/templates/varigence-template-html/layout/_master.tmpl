@@ -4,14 +4,17 @@
 {{!include(favicon.ico)}}
 {{!include(logo.svg)}}
 {{!include(search-stopwords.json)}}
+
 <!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   {{>partials/head}}
-  <body data-spy="scroll" data-target="#affix">
-    <div id="wrapper">
-	  {{>partials/header}}
-      <!--
+  <body data-spy="scroll" dir="ltr" data-target="#affix">
+
+
+  
+    <div class="header-holder">
+	    {{>partials/header}}
       <header>
         {{^_disableNavbar}}
         {{>partials/navbar}}
@@ -20,39 +23,40 @@
         {{>partials/breadcrumb}}
         {{/_disableBreadcrumb}}
       </header>
-      -->
+    </div>
+
+
       {{#_enableSearch}}
-      <div class="container body-content">
-        {{>partials/searchResults}}
-      </div>
+      
+        <div class="container body-content">
+          {{>partials/searchResults}}
+        </div>
       {{/_enableSearch}}
-      <div role="main" class="container body-content hide-when-search">
-      {{^_disableToc}}
-        {{>partials/toc}}
-        <div class="article row grid-right">
-      {{/_disableToc}}
-      {{#_disableToc}}
-        <div class="article row grid">
-        {{/_disableToc}}
-          {{#_disableAffix}}
-          <div class="col-md-12">
-          {{/_disableAffix}}
-          {{^_disableAffix}}
-          <div class="col-md-10">
-          {{/_disableAffix}}
-            <article class="content wrap" id="_content" data-uid="{{uid}}">
-                {{!body}}
-            </article>
-          </div>
-          {{^_disableAffix}}
-          {{>partials/affix}}
-          {{/_disableAffix}}
+
+      <div role="main" class="mainContainer uhf-container  has-top-padding  has-default-focus">
+        <div class="columns has-large-gaps">
+          <section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+            <div class="columns has-large-gaps">
+              {{>partials/affix}}
+              <div id="main-column" class="column  is-full is-four-fifths-desktop ">
+                <main id="main" role="main" class="content " data-bi-name="content" lang="en-us" dir="ltr">
+                  {{!body}}
+                <!--<article class="content wrap" id="_content" data-uid="{{uid}}">
+                    {{!body}}
+                </article>-->
+                </main>
+              </div>
+
+                
+                
+            </div>
+          </section>
+          {{>partials/toc}}
+          {{^_disableFooter}}
+          {{>partials/footer}}
+          {{/_disableFooter}}
         </div>
       </div>
-      {{^_disableFooter}}
-      {{>partials/footer}}
-      {{/_disableFooter}}
-    </div>
     {{>partials/scripts}}
   </body>
 </html>
