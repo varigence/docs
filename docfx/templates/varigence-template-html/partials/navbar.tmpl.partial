@@ -1,24 +1,39 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
 
-<nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="{{_rel}}index.html">
-        <img id="logo" src="{{_rel}}images/Varigence-Logo.png" height="46" width="46" alt="{{_appName}}" >
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="navbar">
-      <form class="navbar-form navbar-right" role="search" id="search">
-        <div class="form-group">
-          <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-        </div>
-      </form>
-    </div>
-  </div>
-</nav>
+<nav id="autocollapse" class="navbar navbar ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars"></i>
+              </button>
+              <a href="/">
+                <img id="site-logo" src="/content/images/varigence-icon.png" alt="Varigence">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search" style="display: block;">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="on">
+                </div>
+              </form>
+             <ul class="nav level1 navbar-nav" style="color: #00416a;">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.varigence.com/biml-flex.html">BimlFlex</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.varigence.com/biml-studio.html">BimlStudio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.varigence.com/biml-express.html">BimlExpress</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.varigence.com/compare.html">Compare</a></li>
+                    <li class="dropdown nav-item" id="partners"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="partners.html">Partners</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="https://www.varigence.com/partners.html">Partners</a><a class="dropdown-item" role="presentation" href="biml-heroes.html">Biml Heroes</a>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://support.varigence.com">Support</a></li>
+                </ul>
+                
+                <span id="navright" class="navbar-text actions">
+                <a href="https://www.varigence.com/quotes.html" style="padding-right:15px; color: #00416a;">Quote</a>
+                <a href="https://www.varigence.com/login.html" style="padding-right:15px; color: #00416a;">
+                <i class="fa fa-user" id="nav-shopping"></i></a>
+                <a href="https://www.varigence.com/Store" style="padding-right:15px; color: #00416a;"><i class="fa fa-shopping-cart" id="nav-shopping"></i></a>
+                </span>
+            </div>
+          </div>
+        </nav>

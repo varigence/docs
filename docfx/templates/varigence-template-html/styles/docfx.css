@@ -1,20 +1,19 @@
 /* Copyright (c) Microsoft Corporation. All Rights Reserved. Licensed under the MIT License. See License.txt in the project root for license information. */
 html,
 body {
-/*  font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;*/
-  font-family: 'Open Sans',Calibri,Verdana,Arial,Helvetica,sans-serif;
+  font-family: 'Segoe UI', Tahoma, Helvetica, sans-serif;
   height: 100%;
 }
 button,
 a {
-  color: #006699;
+  color: #333;
   cursor: pointer;
 }
 button:hover,
 button:focus,
 a:hover,
 a:focus {
-  color: #d25f15;
+  color: #23527c;
   text-decoration: none;
 }
 a.disable,
@@ -327,7 +326,7 @@ article section {
   padding: 10px;
 }
 .search-results-group-heading {
-  font-family: 'Open Sans',Calibri,Verdana,Arial,Helvetica,sans-serif;
+  font-family: "Open Sans";
   padding-left: 10px;
   color: white;
 }
@@ -477,7 +476,6 @@ body .toc{
 }
 .toc .nav > li > a {
   margin-left: 5px;
-  margin-top: 5px;
   display: block;
   padding: 0;
 }
@@ -561,7 +559,7 @@ body .toc{
 }
 .toc-filter > input {
   border: 0;
-  /*color: #f1f1f1;*/
+  color: #f1f1f1;
   padding-left: 20px;
   width: 100%;
 }
@@ -574,7 +572,7 @@ body .toc{
   left: 5px;
 }
 .article {
-/*  margin-top: 120px;*/
+  margin-top: 90px;
 }
 
 #_content>a{
