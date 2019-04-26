@@ -10,7 +10,7 @@ title: Building Databases, Tables and SSIS packages for source to staging
 
 ## Supporting BimlFlex Documentation
 
-- [Source to Staging Templates](../user-guide/source-to-staging-templates.md)
+* [Source to Staging Templates](../user-guide/source-to-staging-templates.md)
 
 ## Building Databases, Tables and SSIS packages for source to staging in BimlFlex
 
@@ -28,10 +28,10 @@ The output window in BimlStudio will show the build process and will also detail
 
 Some common build failure scenarios:
 
-- BimlStudio can not connect to the source database to validate the query. Review the connection information for the source and validate that the current user credentials can connect to the server.
-- BimlStudio can not connect to the persistent staging database to validate the lookup query for existing rows. Verify that the PSA (and all other) database and tables have been created and that they are available to the current user.
-- A client without the 64-bit SSIS components is building using 64-bit configuration setting. Change the bitness in the `Build & Deploy` ribbon tab to 32-bit.
-- BimlStudio is configured to build using an SSIS version not available locally. Verify that the project is configured for the correct SSIS version and that the corresponding SSDT BI tools has been installed locally.
+* BimlStudio can not connect to the source database to validate the query. Review the connection information for the source and validate that the current user credentials can connect to the server.
+* BimlStudio can not connect to the persistent staging database to validate the lookup query for existing rows. Verify that the PSA (and all other) database and tables have been created and that they are available to the current user.
+* A client without the 64-bit SSIS components is building using 64-bit configuration setting. Change the bitness in the `Build & Deploy` ribbon tab to 32-bit.
+* BimlStudio is configured to build using an SSIS version not available locally. Verify that the project is configured for the correct SSIS version and that the corresponding SSDT BI tools has been installed locally.
 
 ## Detailed Steps
 
@@ -39,25 +39,29 @@ The following detailed steps walks through the creation of database scripts and 
 
 ### Refresh metadata
 
-To start, click the `Refresh Metadata` button to make sure BimlFlex has the latest metadata
+To start, click the `Refresh Metadata` button to make sure BimlStudio has the latest metadata from the database
 
-### Creating SQL DDL scripts to create databases and Tables
+### Creating SQL DDL scripts to create databases and tables
 
-In BimlStudio, navigate to the `BimlFlex` tab. In the `Generate Scripts` dropdown, choose `Create Table Script`. BimlFlex will generate the database, schema and table create scripts. Copy the script or open the generated file in Microsoft SQL Server Management Studio and execute them on the target SQL Server.
+In BimlStudio, navigate to the `BimlFlex` tab. In the `Generate Scripts` dropdown, choose `Create Table Script`. BimlFlex will generate the database, schema and table create scripts. Copy the script or open the generated file in Microsoft SQL Server Management Studio and execute them on the target SQL Server. This will create all Data Warehouse databases and tables for the process and allow the SSIS packages to be created.
 
 ### Building SSIS packages in BimlStudio
 
-Once the tables are available it is possible to use the build process in BimlStudio to create the SSIS project and packages for the load process.
+Once the tables are available it is possible to use the build process in BimlStudio to create the SSIS project and packages for the load process
 
-In BimlStudio, navigate to the `Build & Deploy` tab, choose the `32-bit` build option in the dropdown unless there is a local installation of 64 bit SQL Server SSIS components and click the `Build` hammer and anvil icon.
+In BimlStudio, navigate to the `Build & Deploy` tab, choose the `32-bit` build option in the dropdown unless there is a local installation of 64 bit SQL Server SSIS components and click `Build`
 
 ### Opening and reviewing the SSIS project in Visual BimlStudio
 
-The output folder for generated artifacts is configurable, the default location is a folder called `output` in the BimlFlex project location.
+The output folder for generated artifacts is configurable, the default location is a folder called `output` in the BimlFlex project location
 
-In the output folder there are multiple folders for the created artifacts. BimlFlex creates default SSIS projects to create databases, schemas and tables as well as expanded code for both Biml and SQL. The load project is located in a folder with the same name as the project name defined in the Metadata project sheet.
+In the output folder there are multiple folders for all the created artifacts.
 
-For the trial, this will be a folder called `EXT_AWLT`. Open the `EXT_AWLT_Project.dtproj` project file in a compatible version of Visual Studio to review the generated packages. To test the load, run the `EXT_AWLT_Batch.dtsx` SSIS package. This package will call the individual Table load packages and load the data from the source database to the staging and persistent staging databases in the Data Warehouse.
+BimlFlex creates folders for SSIS projects, expanded code for both Biml and SQL as well as SSDT projects for all databases.
+
+The load project is located in a folder called `EXT_AWLT`, the same name as the project name defined for the Metadata project.
+
+Open the `EXT_AWLT_Project.dtproj` project file in a compatible version of Visual Studio to review the generated packages. To test the load, run the `EXT_AWLT_Batch.dtsx` SSIS package. This package will call the individual Table load packages and load the data from the source database to the staging and persistent staging databases in the Data Warehouse.
 
 Once the SSIS package execution is completed, the staging and persistent staging tables will contain data.
 

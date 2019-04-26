@@ -21,6 +21,7 @@ CREATE OR ALTER VIEW src.FactSalesOrder
 AS
 SELECT
     SalesOrderHeader_BK
+  , DimSalesOrderHeader_BK
   , Customer_BK
   , OrderDate_DateKey
   , ShipDate_DateKey
@@ -34,6 +35,7 @@ FROM (
   -- Fact Integration Key, identifies a fact row
     SalesOrderHeader_BK
   -- Dimension integration key references, these are used for dimension lookups
+  , SalesOrderHeader_BK AS DimSalesOrderHeader_BK
   , Customer_BK
   -- Dimension smart keys, these are used as is in the fact without lookups
   , CONVERT(INT, CONVERT(CHAR(8), ssoh.OrderDate, 112)) AS OrderDate_DateKey

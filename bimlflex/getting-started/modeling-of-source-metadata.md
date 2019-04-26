@@ -4,25 +4,15 @@ title: Modeling of Source Metadata
 ---
 # Modeling of Source Metadata
 
-## Supporting Videos
+Once the source system metadata has been imported into BimlFlex it is possible to model it to suit the data warehouse requirements.
 
-![Modeling of source Metadata -center](https://www.youtube.com/watch?v=tgOvlAh2dS8?rel=0&autoplay=0 "Modeling of source Metadata")
-
-## Supporting BimlFlex Documentation
-
-* @bimlflex-user-guide
-
-## Modeling of source Metadata
-
-Once the source system metadata has been imported into BimlFlex it is possible to model it in the Excel-based metadata management application.
-
-Modeling through metadata management is the way to tweak the process to match ingestion and business requirements and allows BimlFlex to automatically generate the required SQL structures and SSIS packages for the ETL process.
+Modeling through metadata management is the way to tweak the process to match ingestion and business requirements and allows BimlFlex to automatically generate the required SQL structures and SSIS packages for the load process.
 
 For a Data Vault based project, modeling the source metadata also affect the Accelerator behavior and the resulting Data Vault model.
 
 ## Detailed Steps
 
-The following detailed steps walks through the options for modeling of source Metadata as recommended for the trial
+The following detailed steps walks through the options for modeling of source Metadata as recommended for the getting started process
 
 ### Reviewing keys
 
@@ -78,7 +68,7 @@ This metadata and these relationships will allow BimlFlex to accelerate a Data V
 
 ### Defining object related Metadata
 
-The objects tab contains the tables from the `AdventureWorksLT` source system as well as any Data Warehouse tables created and accelerated. The metadata can be modelled and tweaked in several ways on the object and table level.
+The objects tab contains the tables from the `AdventureWorksLT` source system as well as any Data Warehouse tables created and accelerated. The metadata can be modeled and tweaked in several ways on the object and table level.
 
 Some main approaches are:
 
@@ -89,13 +79,13 @@ Some main approaches are:
 
 #### Create Inherited Tables
 
-In the trial process, 2 inherited objects are defined and loaded in parallel to their parent object. These 2 objects showcase the inheritance feature as well as the Join and Where filter object options.
+In the getting started process, 2 inherited objects are defined and loaded in parallel to their parent object. These 2 objects showcase the inheritance feature as well as the Join and Where filter object options.
 
-The Customer Address information in the AdventureWorksLT source is mapped through the many to many `SalesLT.CustomerAddress` table. This can be modelled as a Link relationship between The Customer and the Address entities. Either with a Link Satellite or as a Hub-Satellite in combination with the Link to track effectiveness.
+The Customer Address information in the AdventureWorksLT source is mapped through the many to many `SalesLT.CustomerAddress` table. This can be modeled as a Link relationship between the Customer and the Address entities. Either with a Link Satellite or as a Hub-Satellite in combination with the Link to track effectiveness.
 
-Another option from a modeling perspective is to view the address information as attributes attached to the Customer. This will create a less complex model with the address data instantiated as satellites attached to the Customer. The design decisions are a core part of the Data Vault process and depends on a range of considerations for Business Process, source data behavior and more.
+Another option, from a modeling perspective, is to view the address information as attributes attached to the Customer. This will create a less complex model with the address data instantiated as satellites attached to the Customer. The design decisions are a core part of the Data Vault process and depends on a range of considerations for Business Process, source data behavior and more.
 
-In the trial two different approaches are illustrated and loaded in parallel:
+In the getting started process, two different approaches are illustrated and loaded in parallel:
 
 * Link relationship based on the source data model
 * Attached attributes model based on associating the address data directly with the customer.
@@ -155,7 +145,7 @@ The `SalesLT.ProductModelProductDescription` table is a candidate for a Link des
 
 It is a relationship table that links models to descriptions based on their Culture. The ProductModelID is a Foreign Key to the ProductModel table and the ProductDescriptionID is a Foreign Key to the ProductDescription table.
 
-While it is possible to consider this a candidate for a logical fold as was applied to the Address tables this is also a prime candidate to introduce derived and role-playing objects. The Culture field is part of the Primary Key but is not a reference to a separate table. The culture entity can be considered a Hub that should be part of the 3 way link built from the table. To create the Hub Culture from the source table, the metadata will be changed to accommodate a derived Hub from the Culture data. It will not have any specific Satellite attributes or effectiveness readily available from this source but could be expanded upon with data from other sources in the future. The acceleration will create a HUB_Culture for the Integration Key and a SAT_Culture_AWLT for the CultureCode field.
+While it is possible to consider this a candidate for a logical fold as was applied to the Address tables this is also a prime candidate to introduce derived and role-playing objects. The Culture field is part of the Primary Key but is not a reference to a separate table. The culture entity can be considered a Hub that should be part of the 3 way link built from the table. To create the Hub Culture from the source table, the metadata will be changed to accommodate a derived Hub from the Culture data. It will not have any specific Satellite attributes or effectiveness readily available from this source but could be expanded upon with data from other sources in the future. The acceleration will create a `HUB_Culture` for the Integration Key and a `SAT_Culture_AWLT` for the `CultureCode` field.
 
 The Integration Key creation in this case does not need to apply the Record Source Code, the Culture codes (`ar`, `en`, `fr`, `he`, `th`, `zh-cht`) are all good candidates for direct cross-system integration.
 
@@ -190,7 +180,7 @@ Update the `ProductModelProductDescription_BK` column in the `SalesLT.ProductMod
 
 `FlexToBk(@@rs,ProductModelID,ProductDescriptionID,Culture)`
 
-The metadata Objects has now been expanded with 3 new derived objects using different approaches.
+The metadata Objects have now been expanded with 3 new derived objects using different approaches.
 
 This illustrates the flexibility of the metadata and model driven approach and also adds additional Object Types to illustrate the Data Vault acceleration options.
 
@@ -318,7 +308,7 @@ The order of the source columns. This is used to order the table definition and 
 
 #### ChangeType
 
-The change type of the column. For source columns, use Key or Type 1. For Dimension attributes, define of the changes are tracked using Type 1 or Type 2 logic. Other types are relevant in certain scenarios, but not used in the trial at this stage. Hash Distribution Keys are used in Azure SQL Data Warehouse, Multi Active Keys in Multi Active satellites etc.
+The change type of the column. For source columns, use `Key` or `Type 1`. For Dimension attributes, define of the changes are tracked using `Type 1` or `Type 2` logic. Other types are relevant in certain scenarios, but not used in the getting started process at this stage - Hash Distribution Keys are used in Azure SQL Data Warehouse, Multi Active Keys in Multi Active satellites etc.
 
 #### IsPrimaryKey
 
@@ -407,7 +397,7 @@ For the AdventureWorksLT Source table columns, add ModelGrouping information to 
 
 This will Accelerate 3 satellites from the Product source table and an additional one for the Customer source.
 
-These changes demonstrate the model grouping feature and the ability to accelerate out several Satellites with their own storage options and rate of change management through the BimlFlex row compression feature. 
+These changes demonstrate the model grouping feature and the ability to accelerate out several Satellites with their own storage options and rate of change management through the BimlFlex row compression feature.
 
 This will also assist in illustrating the creation of Point In Time constructs later.
 
