@@ -5,8 +5,33 @@ name: BimlFlex Release Notes
 # Release Notes
 
 > [!NOTE]
-> Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
-> Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
+> Please make sure databases and projects are backed up prior to upgrading
+> Please email bimlflex-support@varigence.com with any installation or upgrade issues
+
+## BimlFlex 2019
+
+> [!IMPORTANT]
+> BimlFlex 2019 is installed and upgraded through a consolidated installer, allowing new installations and upgrades to be completely managed through a single experience.
+> This includes upgrading existing databases and projects
+>
+> Please download the 2019 release from the following link:
+>
+> * Consolidated installer: [https://www.varigence.com/downloads/bimlflexdevsetup.exe](https://www.varigence.com/downloads/bimlflexdevsetup.exe)
+
+## Bundle 64029
+
+* Add: Full support for BimlFlex App. Use the BimlFlex App to manage metadata and to perform Data Vault Acceleration
+* Add: Support for BimlStudio 2019
+* Update: Data Vault Acceleration is now performed through the BimlFlex App for maximum convenience
+* Update: BimlFlex Excel Add-in is supported for legacy installations, but usage of the BimlFlex App is recommended for all users
+* Update: BimlFlex Excel Add-in support for Entity Archive action has been simplified to only selected entities
+* Update: BimlStudio no longer includes integrated upgrade features, all upgrades to applications, components, databases, bundle files are performed through the separate consolidated installer
+
+## BimlFlex 2018
+
+legacy BimlFlex 2018 release notes below
+
+## Bundle 63502
 
 > [!IMPORTANT]
 > The 63502 Bundle version requires that the BimlStudio 2018 R3 release is installed first.
@@ -15,8 +40,6 @@ name: BimlFlex Release Notes
 >
 > * BimlStudio: [https://www.varigence.com/downloads/bimlstudiosetup.exe](https://www.varigence.com/downloads/bimlstudiosetup.exe)
 > * BimlFlex: [https://www.varigence.com/downloads/bimlflexsetup.exe](https://www.varigence.com/downloads/bimlflexsetup.exe)
-
-## Bundle 63502
 
 * Add: new setting for controlling file loads from subfolders. The setting `SsisProcessSubfolders` is available in the Settings sheet. This controls if the SSIS flat file source load process should iterate through subfolders when loading files or not. The default setting `N` match the existing behavior. Update this setting to `Y` to allow the load process to load all matching files from the defined folder and all subfolders.
 * Add: Support for custom connection managers. Use an Extension Point to define a custom connection using Biml and use a source override to completely customize the source load process. A new System Type `Custom System` has been added that can be used with the `Custom Component` Connection Type. Use the `Connection Override` Extension Point from the `Connection` Extension Points Ribbon area to override the connection using Biml.
