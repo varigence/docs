@@ -26,6 +26,7 @@ name: BimlFlex Release Notes
 * Update: Data Vault Acceleration is now performed through the BimlFlex App for maximum convenience
 * Update: BimlFlex Excel Add-in is supported for legacy installations, but usage of the BimlFlex App is recommended for all users
 * Update: BimlFlex Excel Add-in support for Entity Archive action has been simplified to only selected entities
+* UpdateL BimlFlex App now provides Import Metadata functionality, this was previously provided through the Excel Add-in
 * Update: BimlStudio no longer includes integrated upgrade features, all upgrades to applications, components, databases, bundle files are performed through the separate consolidated installer
 
 ## BimlFlex 2018
