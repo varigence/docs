@@ -20,6 +20,7 @@ name: BimlFlex Release Notes
 
 ## Bundle 64029
 
+* Add: All new installer experience. The BimlStudio and BimlFlex as well as all components are now available to install through a single installer. This allows upgrades to existing installations as well as databases and projects
 * Add: Full support for BimlFlex App. Use the BimlFlex App to manage metadata and to perform Data Vault Acceleration
 * Add: Support for BimlStudio 2019
 * Update: Data Vault Acceleration is now performed through the BimlFlex App for maximum convenience
