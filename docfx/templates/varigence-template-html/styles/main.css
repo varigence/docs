@@ -1391,8 +1391,9 @@ html>body .innerContent
   #docsHeaderLabel {
     font-size: 25px;
     float: left;
-    margin-top: 7px;
     margin-left: 50px;
+    position: relative;
+    bottom: 51px;
   }
     
   #header #logon-link.account-link {
