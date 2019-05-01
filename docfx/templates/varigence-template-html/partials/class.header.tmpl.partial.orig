@@ -15,9 +15,13 @@
 				<span class="docon docon-edit-copy" role="presentation"></span>
 				<span>Copy</span>
 			</button></div>
+<<<<<<< HEAD:docfx/templates/varigence-template-html/partials/class.header.tmpl.partial
 <pre class="wrap"><code class="csharp lang-csharp">{{syntax.content.0.value}}</code></pre>
-
+=======
+<div class="codewrapper">
+  <pre class="wrap"><code class="lang-{{_lang}} hljs">{{syntax.content.0.value}}</code></pre>
 </div>
+>>>>>>> master:proj2/templates/varigence-template-html/partials/class.header.tmpl.partial
 
 <div class="inheritance">
 <dl class="attributeList stack">

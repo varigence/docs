@@ -6,7 +6,7 @@ body {
 }
 button,
 a {
-  color: #333;
+  color: #337ab7;
   cursor: pointer;
 }
 button:hover,
@@ -33,8 +33,8 @@ h4:before {
     display: block;
     position: relative;
     width: 0;
-    /*height: 100px;
-    margin-top: -100px;*/
+    height: 100px;
+    margin-top: -100px;
 }
 
 h1, h2, h3, h4, h5, h6, .text-break {
@@ -50,6 +50,8 @@ h5 mark,
 h6 mark {
   padding: 0;
 }
+
+
 
 span.parametername,
 span.paramref,
@@ -164,19 +166,16 @@ header .navbar {
   min-height: 40px;
 }
 
-.inheritance h5, .inheritedMembers h5{
-  padding-bottom: 5px;
-  border-bottom: 1px solid #ccc;
-}
+
 
 article h1, article h2, article h3, article h4{
   margin-top: 25px;
 }
-/*
+
 article h4{
   border-bottom: 1px solid #ccc;
 }
-*/
+
 article span.small.pull-right{
   margin-top: 20px;
 }
@@ -376,29 +375,21 @@ article section {
   margin-left: 0;
 }
 
-
+.sidenav, .fixed_header, .toc  {
+  background-color: #f1f1f1;
+}
 
 .sidetoc {
-  float:left;
+  position: fixed;
   width: 260px;
   top: 150px;
   bottom: 0;
   overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f1f1f1;
   border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
   z-index: 1;
-  padding-top: 10px;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.relative{
-position: relative;
 }
 
 .sidetoc.shiftup {
@@ -406,6 +397,7 @@ position: relative;
 }
 
 body .toc{
+  background-color: #f1f1f1;
   overflow-x: hidden;
 }
 
@@ -441,6 +433,7 @@ body .toc{
   left: 0;
 }
 .toc .nav > li > a {
+  color: #666666;
   margin-left: 5px;
   display: block;
   padding: 0;
@@ -490,42 +483,41 @@ body .toc{
 }
 
 .toc .level1 > li {
+  font-weight: bold;
   margin-top: 10px;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
 }
 .toc .level2 {
   font-weight: normal;
   margin: 5px 0 0 15px;
-  line-height: 140%;
-  font-size: 13px;
+  font-size: 14px;
 }
 .toc-toggle {
   display: none;
   margin: 0 15px 0px 15px;
 }
 .sidefilter {
-  float:left;
+  position: fixed;
   top: 90px;
   width: 260px;
-  padding: 20px;
+  background-color: #f1f1f1;
+  padding: 15px;
   border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
   z-index: 1;
-}
-#sidetoggle{
-  width: 260px;
 }
 .toc-filter {
   border-radius: 5px;
   background: #fff;
+  color: #666666;
   padding: 5px;
   position: relative;
   margin: 0 5px 0 5px;
-  border: 1px solid #e7e7e7;
 }
 .toc-filter > input {
   border: 0;
-  color: #f1f1f1;
+  color: #666666;
   padding-left: 20px;
   width: 100%;
 }
@@ -538,7 +530,8 @@ body .toc{
   left: 5px;
 }
 .article {
-  margin-top: 90px;
+  margin-top: 120px;
+  margin-bottom: 115px;
 }
 
 #_content>a{
@@ -549,18 +542,14 @@ body .toc{
   margin-left: 280px;
 }
 
-.inheritance hr {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 .article img {
   max-width: 100%;
 }
 .sideaffix {
-  /*margin-top: 50px;*/
+  margin-top: 50px;
   font-size: 12px;
   max-height: 100%;
-  overflow: visible;
+  overflow: hidden;
   top: 100px;
   bottom: 10px;
   position: fixed;
@@ -595,7 +584,7 @@ body .toc{
 .affix > ul.level1 {
   overflow: hidden;
   padding-bottom: 10px;
-  height: 100%;
+  height: calc(100% - 100px);
   margin-right: -20px;
 }
 .affix ul > li > a:before {
@@ -682,7 +671,6 @@ body .toc{
 .sample-response .response-content{
   max-height: 200px;
 }
-/*
 footer {
   position: absolute;
   left: 0;
@@ -695,7 +683,6 @@ footer {
   background-color: #f8f8f8;
   padding: 15px 0;
 }
-*/
 @media (min-width: 768px) {
   #sidetoggle.collapse {
     display: block;
@@ -724,7 +711,6 @@ footer {
     text-align: center;
   }
   .sidenav {
-    width: 260px;
     padding: 15px 0;
     margin-left: -15px;
     margin-right: -15px;
@@ -748,7 +734,8 @@ footer {
   .toc li:after {
     margin-left: -3px;
     margin-right: 5px;
-    content: ", "; 
+    content: ", ";
+    color: #666666;
   }
   .toc .level1 > li {
     display: block;
