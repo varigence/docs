@@ -1010,3 +1010,324 @@ table.nameValue td li {
   -ms-flex-pack: center;
   justify-content: center
 }
+
+.LanguageTitle
+{
+	color:#000000;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:68.75%;
+	line-height:140%;
+}
+
+.PageTitle, .TopicHeader
+{
+	color:#000000;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:140%;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	line-height:normal;
+	margin:0 0 10px;
+}
+
+.PageTitle a
+{
+	text-decoration: none;
+}
+
+body
+{
+	color: black;
+	font-family: 'Segoe UI', Verdana, Arial;
+	font-size: 10pt;
+	font-style: normal;
+}
+
+.LanguageSummary
+{
+	margin-bottom: 20px;
+}
+/* 
+.MemberList, .TypeList, .ParameterList, .ReturnValue, .NamespaceList, .AttributeList, .ChildList, .SchemaBindingList, .ReferenceList, .MemberParentList
+{
+	width:100%;
+	border-spacing:0px;
+	padding: 0px;
+	font-family: 'Segoe UI', Verdana, Arial;
+	font-size: 10pt;
+	font-style: normal;
+	border-collapse:collapse;
+}
+*/
+.MemberList td, .MemberList th, .TypeList td, .TypeList th, .ParameterList td, .ParameterList th, .ReturnValue td, .ReturnValue th, .NamespaceList td, .NamespaceList th, .AttributeList td, .AttributeList th, .ChildList td, .ChildList th, .SchemaBindingList td, .SchemaBindingList th, .ReferenceList td, .ReferenceList th, .MemberParentList td, .MemberParentList th
+{
+	padding: 5px;
+} 
+
+.NotRequired
+{
+	padding-right: 16px;
+}
+
+.MemberList .MemberTypeIconColumnHeader, .MemberList .MemberNameColumnHeader, .MemberList .MemberSummaryColumnHeader, .MemberList .MemberDefaultColumnHeader,
+.TypeList .TypeIconColumnHeader, .TypeList .TypeNameColumnHeader, .TypeList .TypeSummaryColumnHeader,
+.ParameterList .ParameterIconColumnHeader, .ParameterList .ParameterNameColumnHeader, .ParameterList .ParameterTypeColumnHeader, .ParameterList .ParameterSummaryColumnHeader,
+.ReturnValue .ReturnValueIconColumnHeader, .ReturnValue .ReturnValueTypeColumnHeader, .ReturnValue .ReturnValueSummaryColumnHeader,
+.NamespaceList .NamespaceIconColumnHeader, .NamespaceList .NamespaceNameColumnHeader,
+.AttributeList  .AttributeIconColumnHeader, .AttributeList  .AttributeNameColumnHeader, .AttributeList  .AttributeTypeColumnHeader, .AttributeList  .AttributeDefaultColumnHeader, .AttributeList  .AttributeSummaryColumnHeader,
+.ChildList  .ChildIconColumnHeader, .ChildList  .ChildNameColumnHeader, .ChildList  .ChildTypeColumnHeader, .ChildList  .ChildSummaryColumnHeader,
+.SchemaBindingList  .SchemaBindingIconColumnHeader, .SchemaBindingList  .SchemaBindingNameColumnHeader, .SchemaBindingList  .SchemaBindingTypeColumnHeader, .SchemaBindingList  .SchemaBindingSummaryColumnHeader,
+.ReferenceList  .ReferenceIconColumnHeader, .ReferenceList  .ReferencingTypeColumnHeader, .ReferenceList  .ReferencingPropertyColumnHeader, .ReferenceList  .ReferencingPropertySummaryColumnHeader,
+.MemberParentList  .MemberParentIconColumnHeader, .MemberParentList  .MemberParentTypeColumnHeader, .MemberParentList  .MemberParentSummaryColumnHeader
+{
+	background-color: #EEEEEE;
+}
+
+.MemberList .MemberNameColumnHeader, .TypeList .TypeNameColumnHeader, .ParameterList .ParameterNameColumnHeader, .NamespaceList .NamespaceNameColumnHeader, .AttributeList .AttributeNameColumnHeader,
+.MemberList .MemberName, .TypeList .TypeName, .ParameterList .ParameterName, .AttributeList .AttributeName, .ChildList .ChildName, .SchemaBindingList .SchemaBindingName,
+.ReferenceList .ReferencingTypeColumnHeader, .ReferenceList .ReferencingType,
+.MemberParentList .MemberParentTypeColumnHeader, .MemberParentList .MemberParentType
+{
+	max-width: 375px;
+}
+
+.MemberList .MemberTypeIconColumnHeader, .TypeList .TypeIconColumnHeader, .ParameterList .ParameterIconColumnHeader, .ReturnValue .ReturnValueIconColumnHeader, .NamespaceList .NamespaceIconColumnHeader, .AttributeList .AttributeIconColumnHeader, .ChildList .ChildIconColumnHeader, .SchemaBindingList .SchemaBindingIconColumnHeader, .ReferenceList .ReferenceIconColumnHeader, .MemberParentList .MemberParentIconColumnHeader
+{
+	width:50px;
+}
+
+.AttributeList  .AttributeName, .AttributeList  .AttributeType,
+.ChildList  .ChildName, .ChildList  .ChildType,
+.SchemaBindingList  .SchemaBindingName, .SchemaBindingList  .SchemaBindingType
+{
+	white-space: nowrap;
+}
+
+.InheritanceHierarchyGroup
+{
+	margin-top:20px;
+}
+
+.NamespaceGroup, .NodeTypeGroup, .EnumTypeGroup, .ExternalTypeGroup, .ParameterGroup, .ReturnValueGroup, .DetailsGroup, .RemarksGroup, .ExamplesGroup, .VersionInformationGroup, .PropertyGroup, .MethodGroup, .EventGroup, .ExtensionMethodGroup, .EnumValueGroup, .InheritanceHierarchyGroup, .FullInheritanceHierarchyGroup,
+.AttributeGroup, .ChildGroup, .SchemaBindingGroup, .ReferenceGroup, .MemberParentGroup
+{
+    clear:both;
+	margin-bottom:20px;
+}
+
+.NamespaceGroupHeader, .NodeTypeGroupHeader, .EnumTypeGroupHeader, .ExternalTypeGroupHeader, .ParameterGroupHeader, .ReturnValueGroupHeader, .DetailsGroupHeader, .RemarksGroupHeader, .ExamplesGroupHeader, .VersionInformationGroupHeader, .PropertyGroupHeader, .MethodGroupHeader, .EventGroupHeader, .ExtensionMethodGroupHeader, .EnumValueGroupHeader, .InheritanceHierarchyGroupHeader,
+.AttributeGroupHeader, .ChildGroupHeader, .SchemaBindingGroupHeader, .ReferenceGroupHeader, .MemberParentGroupHeader
+{
+	color:#000000;
+	cursor:pointer;
+	font-size:120%;
+	font-weight:bold;
+	text-decoration:none;
+	line-height:140%;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+    clear:both;
+	margin-bottom:3px;
+}
+
+.AssemblyInfoGroup, .AssemblyInfoGroupWithMargin
+{
+	float:left;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.AssemblyInfoGroupWithMargin, .Buffer
+{
+	margin-top:20px;
+}
+
+.NamespaceHeader, .AssemblyHeader, .EventHandlerTypeHeader, .CrossReferenceHeader
+{
+	font-weight: bold;
+	float: left;
+	clear: both;
+}
+
+.NamespaceValue, .AssemblyValue, .EventHandlerTypeValue, .CrossReferenceValue
+{
+	float: left;
+	margin-left:10px;
+}
+
+.InheritanceHierarchyGroup li, .FullInheritanceHierarchyGroup li
+{
+	list-style-type: none;
+}
+
+.MetadataGroup
+{
+	padding:5;
+	margin:3 50 15 0;
+	width:500;
+	background-color:#EEEEEE;
+	border:solid 1 #000000;
+	clear:both;
+	float: left;
+}
+
+.MetadataGroupHeader
+{
+	padding:3;
+	line-height:140%;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	color:#000000;
+	background-color:#CCCCCC;
+	font-size:90%;
+	font-weight:bold;
+	clear:both;
+}
+
+.MetadataItemHeader
+{
+	margin:5 0 0 0;
+	line-height:140%;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	color:#000000;
+	font-size:68.75%;
+	font-weight:bold;
+	float:left;
+	clear:left;
+}
+
+.MetadataItemValue
+{
+	margin:5 0 0 0;
+	line-height:140%;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	color:#000000;
+	font-size:68.75%;
+	float:right;
+	clear:right;
+}
+
+.DetailItem, .RemarkItem, .ExampleItem, .VersionInformationItem
+{
+	margin:0 0 10px;
+	padding:0;
+	line-height:140%;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	color:#000000;
+	font-size:68.75%;
+}
+
+
+body, html {
+    font-family: Segoe UI,SegoeUI,Segoe WP,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.mainContent
+{
+	text-align:left;
+	width:auto;
+	overflow:auto;
+}
+
+.innerContent
+{
+	padding: 0 13px 0 13px;
+	width: 100%;
+	border-left: #D11241 1px solid;
+}
+
+html>body .mainContent
+{
+	border-left: #D11241 1px solid;
+	width:auto;
+}
+
+html>body .innerContent
+{
+	width:auto;
+	border:none;
+}
+
+.tocResize
+{
+	position: absolute;
+	top: 105px;
+	left: 280px;
+	height: 22px;
+	width: 7px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.contentWrapper
+{
+	overflow: auto;
+}
+
+.header
+{
+	margin-left:195px;
+}
+
+.sub-nav
+{
+	margin-left:400px;
+}
+
+.AttributeName
+{
+	color: #FF0000;
+	border-top: #BBBBBB solid 1px;
+	font-family: 'Courier New';
+}
+
+.AttributeSummary
+{
+	border-top: #BBBBBB solid 1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.SchemaBindingSummary
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.punc
+{
+	color: #0000FF;
+}
+
+.ChildName, .SchemaBindingName
+{
+	color: #990000;
+	font-family: 'Courier New';
+}
+
+.SchemaBindingName
+{
+	padding-left: 20px;
+}
+
+.AttributeList
+{
+	font-family: 'Segoe UI', Verdana, Arial;
+	font-size: 10pt;
+	font-style: normal;
+	border-collapse:collapse;
+}
+
+
+
+.ad0, .cd0
+{
+	background-color: white;
+}
+
+.ad1, .cd1
+{
+	background-color: white;
+}
