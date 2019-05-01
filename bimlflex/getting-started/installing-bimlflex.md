@@ -27,7 +27,7 @@ The BimlFlex developer installation allows the installation of all components us
 
 Run the developer installation and choose to install all components on the developer machine. For complete functionality all components are required.
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-install.png)
+![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s4.png)
 
 The Excel-based metadata editor is a plugin for Microsoft Excel and will be visible as a separate tab in the Excel ribbon when the BimlFlex-enabled Excel workbook is opened from a BimlFlex project.
 
