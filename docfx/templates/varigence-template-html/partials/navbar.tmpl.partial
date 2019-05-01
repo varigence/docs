@@ -46,7 +46,7 @@
 	              <span class="icon-bar"></span>
 	              <span class="icon-bar"></span>
 	          </button>
-	          <li id="mobile-icon-search"><img class="header-search-icon" src="/content/images/icons/search.png"></li>
+	          <!--<li id="mobile-icon-search"><img class="header-search-icon" src="/content/images/icons/search.png"></li>-->
 	          <div class="logo-link">
 	              <a href="//varigence.com">
 	                  <img id="site-logo" src="/content/images/varigence-icon.png" alt="Varigence">
