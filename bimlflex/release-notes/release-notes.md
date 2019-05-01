@@ -51,13 +51,14 @@ Bridge table changes illustrated:
 
 Bridge Attributes Metadata:
 
-| Connection | Object                        | ColumnName | AttributeKey | AttributeValue | AttributeProperty |
-| DWH        | rdv.HUB_AccountsPayableConfig | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
-| DWH        | rdv.HUB_AccountsPayableLog    | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
-| DWH        | rdv.HUB_Department            | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
-| DWH        | rdv.HUB_Venue                 | | CreateBridge | BRG_AccountsPayableConfig | IsPrimaryHub,AddKey |
-| DWH        | rdv.LNK_AccountsPayableConfig | | CreateBridge | BRG_AccountsPayableConfig | |
-| DWH        | rdv.LNK_AccountsPayableLog    | | CreateBridge | BRG_AccountsPayableConfig | |
+| Connection | Object                        | ColumnName | AttributeKey | AttributeValue            | AttributeProperty |
+| ---------- | ----------------------------- | ---------- | ------------ | ------------------------- | ----------------- |
+| DWH        | rdv.HUB_AccountsPayableConfig |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_AccountsPayableLog    |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_Department            |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_Venue                 |            | CreateBridge | BRG_AccountsPayableConfig | IsPrimaryHub,AddKey |
+| DWH        | rdv.LNK_AccountsPayableConfig |            | CreateBridge | BRG_AccountsPayableConfig | |
+| DWH        | rdv.LNK_AccountsPayableLog    |            | CreateBridge | BRG_AccountsPayableConfig | |
 
 Here, both included Links link to both the Department and Venue Hubs. The primary Hub is the Venue Hub so the Department is now included twice in the Bridge table, once for each Link reference.
 
