@@ -113,6 +113,10 @@ Upgrade BimlCatalog databases by adding the connection strings and then clicking
 
 Review the installer tasks and allow the installation to occur
 
+![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s15.png)
+
+Once the installation concludes successfully, click finish to end the installer. Please refer to the getting started guide to get started with BimlFlex: @bimlflex-getting-started
+
 ### Enter product key
 
 Once an application is started for the first time, enter a valid product key to activate the product.

@@ -8,9 +8,7 @@ title: Getting Started with BimlFlex
 
 The Getting Started with BimlFlex is an end to end, step by step guide to building a Data Warehouse using BimlFlex.
 
-It uses the Microsoft sample database AdventureWorksLT as a sample source. It allows the creation of an end to end load process for a 2 or 3 layer data warehouse. A 2 layer process being Source to Staging to Dimensional and a 3 layer process being Source to Staging to Data Vault to Dimensional.
-
-More detailed information is available in the @bimlflex-user-guide
+It uses the Microsoft AdventureWorksLT sample database as a source.
 
 ## Prerequisites
 
@@ -25,11 +23,10 @@ Both architectures uses a staging layer with both a transient staging database a
 
 For the trial the following is needed:
 
-* SQL Server 2016 (or later) installation with SQL Server engine and SSIS/Integration services
+* SQL Server 2016 (or later) with SQL Server engine and SSIS/Integration services
 * Windows-based development machine for local installation of BimlStudio and BimlFlex
-* Excel 2013-2016 for managing and modelling metadata (or use the BimlFlex app for metadata management)
 * Visual Studio 2015 (or later, matching the SQL Server SSIS Installation) with SSDT and SSIS components
-* SQL Server Management Studio for managing databases and running SQL Scripts
+* SQL Server Management Studio or similar for managing databases and running SQL Scripts
 
 ## Process and documentation
 
