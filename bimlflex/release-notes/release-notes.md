@@ -12,7 +12,8 @@ name: BimlFlex Release Notes
 
 > [!IMPORTANT]
 > BimlFlex 2019 is installed and upgraded through a consolidated installer, allowing new installations and upgrades to be completely managed through a single experience.
-> This includes upgrading existing databases and projects
+>
+> This includes upgrading both existing databases and projects
 
 ## Bundle 64029
 
@@ -25,6 +26,80 @@ name: BimlFlex Release Notes
 * UpdateL BimlFlex App now provides Import Metadata functionality, this was previously provided through the Excel Add-in
 * Update: BimlStudio no longer includes integrated upgrade features, all upgrades to applications, components, databases, bundle files are performed through the separate consolidated installer
 * Update: A new IsInitialLoad check query is used that aims to provide better performance for larger PSA tables
+
+## Bundle 63921
+
+> [!IMPORTANT]
+> This version introduces updated Bridge logic that accommodates more complex Bridge scenarios. This can result in breaking changes to column naming for existing implementations. Please review the breaking change note below.
+
+### Breaking Change to Bridge behavior
+
+A Bridge table is a Data Vault performance construct that allows joining multiple Data Vault entities together. This simplifies the follow on queries, resulting in less complex code and improved performance.
+
+This Bundle version introduces support for multiple references to the same Hub from multiple Links. This added functionality necessitate a change in the column naming convention to accommodate the multiple references. The previous implementation ignored additional references to the same Hub whereas the new implementation allows them and names the references using a defined naming convention. Any existing implementation affected by this scenario will have additional columns introduced as a result of the new feature.
+
+If a current project is affected by this behavior the upgrade will necessitate the following steps to remediate the impact:
+
+1. Back up everything, in case there is a need to revert to a previous version
+1. Update any custom logic, Bridge Extension Points and parameters to accommodate new format
+1. Drop the existing Bridge tables
+1. Create Bridge tables using new format
+1. Recreate the ELT load procedures and packages and run them to populate the new Bridge table with data using the new names
+1. Review any views and queries that rely on the Bridge tables and update them to accommodate the new column names
+
+Bridge table changes illustrated:
+
+Bridge Attributes Metadata:
+
+| Connection | Object                        | ColumnName | AttributeKey | AttributeValue | AttributeProperty |
+| DWH        | rdv.HUB_AccountsPayableConfig | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_AccountsPayableLog    | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_Department            | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_Venue                 | | CreateBridge | BRG_AccountsPayableConfig | IsPrimaryHub,AddKey |
+| DWH        | rdv.LNK_AccountsPayableConfig | | CreateBridge | BRG_AccountsPayableConfig | |
+| DWH        | rdv.LNK_AccountsPayableLog    | | CreateBridge | BRG_AccountsPayableConfig | |
+
+Here, both included Links link to both the Department and Venue Hubs. The primary Hub is the Venue Hub so the Department is now included twice in the Bridge table, once for each Link reference.
+
+Before:
+
+```sql
+CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
+    [BRG_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [Venue_SK] varchar(40) NOT NULL
+,    [Venue_BK] nvarchar(100) NOT NULL
+,    [FlexRowEffectiveFromDate] datetime2(7) NOT NULL
+,    [LNK_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [HUB_AccountsPayableConfig_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [HUB_Department_Department_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableLog_SK] varchar(40) NOT NULL
+,    [HUB_AccountsPayableLog_AccountsPayableLog_SK] varchar(40) NOT NULL
+)
+    WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([Venue_SK]))
+```
+
+After:
+
+```sql
+CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
+    [BRG_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [Venue_SK] varchar(40) NOT NULL
+,    [Venue_BK] nvarchar(100) NOT NULL
+,    [FlexRowEffectiveFromDate] datetime2(7) NOT NULL
+,    [LNK_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableConfig_L1_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableConfig_L1_Department_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableLog_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableLog_L2_AccountsPayableLog_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableLog_L2_Department_SK] varchar(40) NOT NULL
+)
+    WITH(CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([Venue_SK]))
+```
+
+Varigence provides remote support to accommodate this upgrade for any affected customer under current support and maintenance, please contact bimlflex-support@varigence.com for more information.
+
+## Bundle 63827
+
 * Update: The default values for settings that include file locations have been updated from `C:\Varigence` to `C:\BimlFlex`. This includes the following settings:
   * `ArchivePath`, new default: `C:\BimlFlex\Archive`
   * `ConfigurationPath` `C:\BimlFlex\Configurations`
@@ -36,7 +111,6 @@ name: BimlFlex Release Notes
 * Update: A scenario where the same ModelGrouping was reused for multiple relationships would result in a repeat of that name in the Link has been addressed and the link name is now created as expected by the Data Vault Accelerator.
 * Add: ADF now supports Azure Key Vault Linked services through an additional Extension Point. Add Azure Key Vault Linked Services through this Extension Point and reference them in other Linked Services as attributes.
 * Add: ADF now supports Oracle sources that use Key Vault Secrets for connection strings. When this is configured the Key Vault Secret will replace the connection string defined in the connection metadata.
-* Add: The BimlFlex App is available in preview, this app allows metadata management similar to the Excel Add-in, less the dependency on Excel. More information on the BimlFlex App is available here: @bimlflex-app-overview
 * Update: The `Business Key` metadata concept has been renamed to `Integration Key` to better describe the meaning. The metadata column `IsBusinessKey` is now named `IsIntegrationKey`. This is in line with the previous, similar, change to the `IsSourceKey` column. The Integration Key is used in modeling to define a single, agnostic, key used for integration across source systems. This is commonly used in both Data Vault and Data Mart modeling for defining Hubs and table grains etc. Any bespoke code references require updating to refer to the new name.
 * Update: A scenario where the merge for loads using the delete detection pattern would result in an incorrect join column mapping has been resolved.
 * Update: The BimlFlex Excel About > Help link has been updated to point to the current documentation web site.
