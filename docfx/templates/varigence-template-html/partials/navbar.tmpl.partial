@@ -1,5 +1,5 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
-
+<!--
 <nav id="autocollapse" class="navbar navbar ng-scope" role="navigation">
           <div class="container">
             <div class="navbar-header">
@@ -37,3 +37,186 @@
             </div>
           </div>
         </nav>
+-->
+<div id="header">
+	      <div class="container">
+	          <button id="main-nav-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" aria-controls="navbar">
+	              <span class="sr-only">Toggle navigation</span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	              <span class="icon-bar"></span>
+	          </button>
+	          <li id="mobile-icon-search"><img class="header-search-icon" src="/content/images/icons/search.png"></li>
+	          <div class="logo-link">
+	              <a href="//varigence.com">
+	                  <img id="site-logo" src="/content/images/varigence-icon.png" alt="Varigence">
+	              </a>
+	  			<a href="/">
+	                  <div id="docsHeaderLabel">Docs</div>
+	  	        </a>
+	          </div>
+	          <div id="main-menu" class="navbar-collapse collapse">
+	              <ul class="nav navbar-nav">
+	                  <div id="main-menu-triangle" class="triangle-up"></div>
+	                          
+	                  <li class=" direct"><a href="/Biml">Biml</a></li>
+	  
+	                  <li class=" direct"><a href="/BimlExpress">BimlExpress</a></li>
+	                      
+	                  <li class=" direct"><a href="/BimlStudio">BimlStudio</a></li>
+	                  
+	                  <li class=" direct"><a href="/BimlFlex">BimlFlex</a></li>
+	              
+	                  <li id="icon-search">
+	                      <img class="header-search-icon" src="/Content/Images/icons/search.png">
+	                  </li>
+	              </ul>
+	          </div>
+	          <div id="search-area" style="overflow: visible;">
+	              <ci-search><er-dummy-search><style>
+.er-dummy-search-box {
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    border: 1px solid #66AEE8;
+}
+.er-dummy-search-box #er_search_input_dummy{
+    height: 30px;
+    padding: 5px;
+    outline: #efefef;
+    font-size: 13px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-radius: 0px;
+    width: auto;
+    
+}
+.er-dummy-search-box #er_search_button_dummy{
+    font-size: 16px;
+    color: #B9B9B9;
+    background: white;
+    border: none;
+    border-radius: 0px;
+    padding: 0px 10px;
+    width: auto;
+    height: 30px;
+    margin: 0px;
+    
+}
+.er-dummy-search-box .er_voice_search_dummy{
+    font-size: 16px;
+    color: #B9B9B9;
+    background: white;
+    padding-left: 7px; 
+    height: 30px;
+    padding-top: 2px;
+}
+</style>
+<div class="er-dummy-search-box" aria-label="Search Box">
+    <div id="er-search-form" role="form">
+        <input type="text" title="Search" tabindex="0" name="" aria-label="search input" role="searchbox" id="er_search_input_dummy" placeholder="Start Typing..." autocomplete="off">
+        
+        <button type="button" title="Search" tabindex="0" id="er_search_button_dummy" aria-label="Search"><i class="fa fa-search"></i></button>
+        
+    </div>
+</div></er-dummy-search>
+<er-search-results class="er-search-content" style="display: none;">
+    <div class="ci_inner_div">
+        <er-search-input><style>
+    .er-search-box{
+        width: 100%;
+        padding: 20px 0px;
+        background: white;
+        ;
+    }
+    .er-search_box:hover{
+        ;
+    }
+    #search-result-input-form{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        padding: 15px 0;
+        ;
+    }
+    #search-result-input-form:hover{
+        
+    }
+    #er_search_input {
+        background: #fdfdfd !important;
+        outline: 0;
+        font-weight: lighter;
+        font-size: 30px;
+        width: 95%;
+        height: 50px;,
+        padding: 0 10px;
+        border: none;
+        box-shadow: none;
+        color: black;
+        ;
+    }
+    #er_search_input:hover {
+        ;
+    }
+    
+    #er_clear_input { 
+        color: #333;
+        box-shadow: none;
+        background: #fdfdfd !important;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        padding: 0 20px 0 0;
+        ;
+    }
+    #er_clear_input:hover {
+        
+    }
+    #er_search_button {
+        box-shadow: none;
+        outline: none;
+        background: #fdfdfd !important;
+        color: #555;
+        border: none;
+        width: 4%;
+        height: 50px;
+        padding: 0;
+        font-size: 30px;
+        margin: 0 0 0 -4px;
+        ;
+    }
+    #er_search_button:hover {
+        
+    }
+    #er_search_voice{
+        
+    }
+    #er_search_voice:hover{
+        
+    }
+</style>
+<div class="er-search-box" aria-label="Search Box">
+    <div id="search-result-input-form" role="form">
+        <input type="text" title="Search" tabindex="0" role="searchbox" id="er_search_input" aria-label="search input" value="" autocomplete="off" placeholder="Search">
+        <button id="er_clear_input" tabindex="0" class="er-close" type="button" aria-label="close search"><i class="fa fa-times"></i></button>
+        <button id="er_search_button" tabindex="0" type="button" aria-label="search"><i class="fa fa-search"></i></button>
+    
+</div>
+</div></er-search-input>
+        <div class="er-top-head" id="er_top_head">
+
+        </div>
+        <div id="er_search_results">
+
+        </div>
+        <div id="er_search_pagination">
+
+        </div>
+    </div>
+    <div class="ci_background_div"></div>
+</er-search-results>
+<er-suggestions style="position: absolute; top: 0; left: 0" tabindex="0"></er-suggestions></ci-search>
+	          </div>
+	      </div>
+	  </div>
