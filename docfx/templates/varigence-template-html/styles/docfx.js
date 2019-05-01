@@ -155,7 +155,7 @@ $(function () {
   // Styling for tables in conceptual documents using Bootstrap.
   // See http://getbootstrap.com/css/#tables
   function renderTables() {
-    $('table').addClass('table table-bordered table-striped table-condensed').wrap('<div class=\"table-responsive\"></div>');
+    $('table').wrap('<div class=\"table-responsive\"></div>');
   }
 
   // Styling for alerts.
@@ -365,7 +365,7 @@ $(function () {
 
     function flipContents(action) {
       if (action === "show") {
-       // $('.hide-when-search').show();
+        $('.hide-when-search').show();
         $('#search-results').hide();
       } else {
         $('.hide-when-search').hide();
@@ -699,7 +699,7 @@ $(function () {
       html += util.formList(hierarchy, ['nav', 'bs-docs-sidenav']);
       $("#affix").empty().append(html);
       if ($('footer').is(':visible')) {
-        $(".sideaffix").css("bottom", "20px");
+        $(".sideaffix").css("bottom", "640px");
       }
       $('#affix').on('activate.bs.scrollspy', function (e) {
         if (e.target) {

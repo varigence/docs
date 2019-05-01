@@ -8,23 +8,22 @@ BimlFlex is built on BimlStudio and contains the following components that are o
 
 * BimlStudio Application
 * BimlFlex component of BimlStudio
-* BimlFlex Excel Add-in
+* The BimlFlex App
+* Optional BimlFlex Excel Add-in
 * BimlFlex Bundle file
 * BimlFlex Metadata database
 * BimlCatalog Orchestration database
 * BimlFlex Custom SSIS Components
-* The BimlStudio application is distributed as a single, separate installer
-* The BimlFlex Excel Add-in is distributed as a single, separate installer
-* The BimlFlex databases are embedded in the Bundle used by BimlStudio and can be deployed and updated from within BimlStudio
-* The BimlFlex Custom SSIS Components are distributes as an archive file that contains the component .dll and a .bat file installer
+* The BimlFlex framework is distributed as a single, combined installer for developer environments
+* BimlFlex components are also distributed as a single, separate installer for certain workloads, such as for analysts and servers
+* The BimlFlex databases are upgraded through the installer
+* The BimlFlex Custom SSIS Components are integrated in the installer and are also available as an archive file that contains the component .dll and a .bat file installer for Azure installations
 
-## Upgrading BimlStudio and BimlFlex from the Varigence website
+## Downloading BimlFlex from the Varigence website
 
-The current version of [BimlStudio is available for download here](https://varigence.com/downloads/bimlstudiosetup.exe).
+The current version of the combined BimlFlex installer is available for [download here](https://varigence.com/downloads/bimlflexdevsetup.exe).
 
-Other components are available on request from the BimlFlex Enterprise support team at [bimlflex-support@varigence.com](mailto:bimlflex-support@varigence.com). The download locations are also detailed in the licensing email.
-
-## Preparation for upgrading an existing project
+## Preparation for upgrading existing projects
 
 Current projects with existing Extension Point script files and existing metadata needs planning and consideration before upgrading.
 
@@ -44,29 +43,24 @@ The expanded code is automatically enabled in the Bundle Options for a new proje
 
 The BimlStudio project and the Custom Extension Point files and any other local file contents that have been created should be backed up to a backup location so that a copy of the pre-upgrade project is available if needed.
 
-### 4. Upgrade Bundle and Databases through BimlStudio
+### 4. Upgrade Applications, components, Bundle and Databases through the installer
 
-BimlStudio checks for updates to BimlFlex when opening a project. The Upgrade BimlFlex dialog is shown when a new version is available.
+All installations and upgrades are performed through the installer.
 
-![Upgrade BimlFlex -center](../user-guide/images/bimlflex-ss-v5-bimlflex-upgrade-assets-dialog.png)
+* Upgrade all installed applications
 
-If there is a new version available online,BimlFlex will allow the new version to be downloaded and applied to both the project template location, the current project and the current databases. For new versions there is also a link to the release notes. These should be reviewed before starting an upgrade.
+* Upgrade all existing projects
+    BimlFlex uses a Bundle file for the data warehouse logic. These files are located in the project folder and upgraded through the installer. All projects that require upgrading needs to be added to the upgrade step in the installer.
 
-* Update the template Bundle file.
-    BimlFlex uses a template file for creating new projects. BimlStudio can connect to and download the updated Bundle from the online location and make it available for new projects and as an upgrade source for other existing projects.
+* Upgrade the BimlFlex database
+    BimlFlex uses a metadata database for all metadata. This database needs to be updated through the installer. Add all BimlFlex databases to the upgrade step to allow the installer to upgrade them to the correct version
 
-* Update the current project's Bundle.
-    For a project with an older Bundle compared to either the online or the template Bundle. BimlStudio will update the project Bundle to the later version.
-
-* Upgrade the current project's BimlFlex database.
-    When opening a project BimlStudio will offer to upgrade that project's specific BimlFlex database. Use the Upgrade Assets dialog in the BimlFlex Ribbon tab to upgrade other database locations.
-
-* Upgrade the current project's BimlCatalog database.
-    When opening a project BimlStudio will offer to upgrade that project's specific BimlCatalog database. Use the Upgrade Assets dialog in the BimlFlex Ribbon tab to upgrade other database locations.
+* Upgrade the BimlCatalog databases
+    BimlFlex uses an orchestration database for all orchestration, logging and auditing. This database needs to be updated through the installer. Add all BimlCatalog databases to the upgrade step to allow the installer to upgrade them to the correct version
 
 ### Reviewing the upgraded versions
 
-Once the databases and Bundle file have been updated it is time to open the project in BimlStudio. Once the project has opened and downloaded, metadata applied, the BimlFlex solution is ready for testing.
+Once the applications, databases and Bundle files have been updated it is time to open the project in BimlStudio. Once the project has opened and downloaded, metadata applied, the BimlFlex solution is ready for testing.
 
 1. review any errors or warnings
     There might have been updates to the logic applied by the Bundle. Review any error or warning messages in BimlStudio and review the release notes to see if any metadata or Extension Point behavior has changed.

@@ -4,17 +4,9 @@ title: Configuring the BimlFlex Environment
 ---
 # Configuring the BimlFlex Environment
 
-## Supporting Videos
-
-![Configuring the BimlFlex Environment -center](https://www.youtube.com/watch?v=4k_0fapr6j0?rel=0&autoplay=0 "Configuring the BimlFlex Environment")
-
-## Supporting BimlFlex Documentation
-
-- @bimlflex-initial-setup-and-configuration
+Once the BimlStudio and BimlFlex applications and components are installed, the BimlFlex environment needs to be configured.
 
 ## Configuring the BimlFlex databases
-
-Once the BimlStudio and BimlFlex applications are installed, the BimlFlex environment needs to be configured.
 
 BimlFlex uses a metadata database (BimlFlex) and an orchestration database (BimlCatalog). These need to be created and made available to developers so that the application can interact with them.
 
@@ -44,6 +36,4 @@ The BimlFlex database store all metadata for the data warehouse. The BimlFlex Ex
 
 ## Database updates
 
-The database definitions are updated regularly. Use the `Upgrade Assets` button in the BimlFlex ribbon UI to download any BimlFlex updates before creating the databases. The upgrade process will also update any created database to the latest version as part of the upgrade process.
-
-More information on the upgrade process can be found here: @bimlflex-upgrade
+The database definitions are updated as part of new version of BimlFlex. Use the installer to upgrade any existing databases.

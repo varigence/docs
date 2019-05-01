@@ -3,21 +3,21 @@
 
 - name: Installing
   items:
-  - name: Installing BimlStudio
-    href: installing-bimlstudio.md
-  - name: Installing BimlFlex Excel Add-In
+#  - name: Installing BimlStudio
+#    href: installing-bimlstudio.md
+  - name: Installing BimlFlex
     href: installing-bimlflex.md
-  - name: Installing SSIS Components
-    href: installing-custom-ssis-components.md
+#  - name: Installing SSIS Components
+#    href: installing-custom-ssis-components.md
 
 - name: Upgrading
   items:
   - name: Upgrade and Testing Process
     href: upgrade-and-testing-process.md
-  - name: Upgrading a BimlFlex Project
-    href: upgrading-a-bimlflex-project.md
-  - name: Upgrading BimlFlex through BimlStudio
-    href: upgrading-bimlflex-through-bimlstudio.md
+  - name: Upgrading BimlFlex
+    href: upgrading-bimlflex.md
+#  - name: Upgrading BimlFlex through BimlStudio
+#    href: upgrading-bimlflex-through-bimlstudio.md
 
 - name: End-to-End Walkthrough
   items:
@@ -25,8 +25,8 @@
     href: configuring-the-bimlflex-environment.md
   - name: Creating a BimlFlex Project
     href: creating-and-configuring-a-bimlflex-project.md
-  - name: Creating the Sample Metadata
-    href: creating-the-scaffolding-metadata.md
+  - name: Load Sample Metadata
+    href: load-sample-metadata.md
   - name: Setting up the AdventureWorksLT Source Database
     href: setting-up-adventureworkslt2012-source-database.md
   - name: Importing Source Metadata
@@ -49,5 +49,3 @@
     href: adding-business-data-vault-performance-constructs.md
   - name: Dimensional Model
     href: dimensional-model.md
-  # - name: Using Trial Snapshot Metadata
-  #   href: using-prepared-trial-metadata.md

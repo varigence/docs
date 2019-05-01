@@ -5,11 +5,11 @@ Sample View Creation Script for a Fact table load.
 This is created in the Staging layer and is part of a source to target mapping or load process for Fact table loads.
 
 ```sql
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 -- Sample Source views for dimension loads for 2 layer approach
 -- These views present a source layer for the dimension load process from staging directly to data mart
 -- (c) 2019 - Varigence
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
 USE BFX_STG
 GO
 
@@ -21,6 +21,7 @@ CREATE OR ALTER VIEW src.FactSalesOrder
 AS
 SELECT
     SalesOrderHeader_BK
+  , DimSalesOrderHeader_BK
   , Customer_BK
   , OrderDate_DateKey
   , ShipDate_DateKey
@@ -34,6 +35,7 @@ FROM (
   -- Fact Integration Key, identifies a fact row
     SalesOrderHeader_BK
   -- Dimension integration key references, these are used for dimension lookups
+  , SalesOrderHeader_BK AS DimSalesOrderHeader_BK
   , Customer_BK
   -- Dimension smart keys, these are used as is in the fact without lookups
   , CONVERT(INT, CONVERT(CHAR(8), ssoh.OrderDate, 112)) AS OrderDate_DateKey

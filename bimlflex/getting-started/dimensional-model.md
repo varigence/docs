@@ -89,7 +89,11 @@ In the getting started process, for the 2 layer dimensional model from staging t
 
 It is also possible to place them in a roleplaying source database, the Data Mart database or the staging database for more or less obvious separation of concern.
 
-Source Views
+The 2-layer views are placed in the staging database, and the project to load the Data Mart needs to be updated to reflect this. The default metadata is provided for a 3-layer approach with the Data Mart loading from the Raw Data Vault. The project configuration for the `LOAD_DM` project would be updated with the `BFX_STG` connection as the source, replacing the default `BFX_RDV` connection used in the 3-layer architecture.
+
+The source views on the Data Vault can either read from the base Data Vault tables, or the Bridge and Point In Time tables. Sample views are provided for both approaches.
+
+### Source Views
 
 Raw Data Vault Based:
 

@@ -39,6 +39,77 @@ The process to upgrade to the preview release consists of the following steps:
 1. Upgrade databases and Bundles to the Cumulative Upgrade Bundle version. Open the existing project, click the `Upgrade Assets` menu item, change the channel to the `Cumulative Channel`. More information on the channel choice is available here: @bimlflex-upgrade#upgrade-to-cumulative-update-or-beta-release
 1. Restart BimlStudio and reopen the project
 
+## Bundle 63921
+
+> [!IMPORTANT]
+> This version introduces updated Bridge logic that accommodates more complex Bridge scenarios. This can result in breaking changes to column naming for existing implementations. Please review the breaking change note below.
+
+### Breaking Change to Bridge behavior
+
+A Bridge table is a Data Vault performance construct that allows joining multiple Data Vault entities together. This simplifies the follow on queries, resulting in less complex code and improved performance.
+
+This Bundle version introduces support for multiple references to the same Hub from multiple Links. This added functionality necessitate a change in the column naming convention to accommodate the multiple references. The previous implementation ignored additional references to the same Hub whereas the new implementation allows them and names the references using a defined naming convention. Any existing implementation affected by this scenario will have additional columns introduced as a result of the new feature.
+
+If a current project is affected by this behavior the upgrade will necessitate the following steps to remediate the impact:
+
+1. Back up everything, in case there is a need to revert to a previous version
+1. Update any custom logic, Bridge Extension Points and parameters to accommodate new format
+1. Drop the existing Bridge tables
+1. Create Bridge tables using new format
+1. Recreate the ELT load procedures and packages and run them to populate the new Bridge table with data using the new names
+1. Review any views and queries that rely on the Bridge tables and update them to accommodate the new column names
+
+Bridge table changes illustrated:
+
+Bridge Attributes Metadata:
+
+| Connection | Object                        | ColumnName | AttributeKey | AttributeValue | AttributeProperty |
+| DWH        | rdv.HUB_AccountsPayableConfig | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_AccountsPayableLog    | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_Department            | | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | rdv.HUB_Venue                 | | CreateBridge | BRG_AccountsPayableConfig | IsPrimaryHub,AddKey |
+| DWH        | rdv.LNK_AccountsPayableConfig | | CreateBridge | BRG_AccountsPayableConfig | |
+| DWH        | rdv.LNK_AccountsPayableLog    | | CreateBridge | BRG_AccountsPayableConfig | |
+
+Here, both included Links link to both the Department and Venue Hubs. The primary Hub is the Venue Hub so the Department is now included twice in the Bridge table, once for each Link reference.
+
+Before:
+
+```sql
+CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
+    [BRG_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [Venue_SK] varchar(40) NOT NULL
+,    [Venue_BK] nvarchar(100) NOT NULL
+,    [FlexRowEffectiveFromDate] datetime2(7) NOT NULL
+,    [LNK_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [HUB_AccountsPayableConfig_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [HUB_Department_Department_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableLog_SK] varchar(40) NOT NULL
+,    [HUB_AccountsPayableLog_AccountsPayableLog_SK] varchar(40) NOT NULL
+)
+    WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([Venue_SK]))
+```
+
+After:
+
+```sql
+CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
+    [BRG_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [Venue_SK] varchar(40) NOT NULL
+,    [Venue_BK] nvarchar(100) NOT NULL
+,    [FlexRowEffectiveFromDate] datetime2(7) NOT NULL
+,    [LNK_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableConfig_L1_AccountsPayableConfig_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableConfig_L1_Department_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableLog_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableLog_L2_AccountsPayableLog_SK] varchar(40) NOT NULL
+,    [LNK_AccountsPayableLog_L2_Department_SK] varchar(40) NOT NULL
+)
+    WITH(CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([Venue_SK]))
+```
+
+Varigence provides remote support to accommodate this upgrade for any affected customer under current support and maintenance, please contact bimlflex-support@varigence.com for more information.
+
 ## Bundle 63827
 
 * Update: The default values for settings that include file locations have been updated from `C:\Varigence` to `C:\BimlFlex`. This includes the following settings:
@@ -125,6 +196,7 @@ More information on the hashing approach for SQL compatible hashing can be found
 > [!IMPORTANT]
 > This Bundle contains updates that require an update to the BimlFlex Excel plug-in.
 > Please download and install BimlFlex build 5.0.63710.0 or later:
+>
 > * BimlFlex: [https://varigence.com/downloads/bimlflexsetup_5.0.63710.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.63710.0.exe)
 
 * Update: the `IsAltBusinessKey` metadata entity has been renamed to `IsSourceKey` to better reflect the meaning. This metadata attribute reflects the source Primary Key definition and is used for persistent staging tables when the defined Primary Key is not persisted. This is a common scenario for Data Vault modelling. For Data Vault, the Business Key is also defined as the Primary Key for each source object. This column is normally not persisted. The columns marked as `IsSourceKey` will be used as the Primary Keys for the Persistent table in this scenario.
@@ -158,6 +230,7 @@ More information on the hashing approach for SQL compatible hashing can be found
 
 > [!IMPORTANT]
 > This Bundle introduces placeholder metadata entities for Azure Data Factory and requires an update to the BimlFlex Excel plug-in. Please download and install build 63513 or later
+>
 > * BimlFlex: [https://varigence.com/downloads/bimlflexsetup_5.0.63513.0.exe](https://varigence.com/downloads/bimlflexsetup_5.0.63513.0.exe)
 
 This Bundle introduces additional metadata attributes for columns and configurations that is planned to be used in the Azure Data Factory patters, such as `AdfDataFlowExpression`. It also renames the `SsisExpression` attribute to `SsisDataFlowExpression`. The Excel plugin, the Bundle as well as the database all need to be updated to accommodate this update.
