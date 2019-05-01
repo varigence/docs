@@ -64,7 +64,8 @@
           "bimlflex/user-guide/images/**",
           "bimlexpress/images/**",
           "content/**",
-          "images/**"
+          "images/**",
+          "biml/language-reference/*.png"
         ],
         "exclude": [
           "**/bin/**",
