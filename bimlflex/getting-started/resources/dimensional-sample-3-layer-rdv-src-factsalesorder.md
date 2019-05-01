@@ -23,6 +23,7 @@ SELECT
   -- Fact Integration Key, identifies a fact row
     pso.SalesOrderHeader_BK
   -- Dimension integration key references, these are used for dimension lookups
+    pso.SalesOrderHeader_BK AS DimSalesOrderHeader_BK
   , hc.Customer_BK
   -- Dimension smart keys, these are used as is in the fact without lookups
   , CONVERT(INT, CONVERT(CHAR(8), ssoh.OrderDate, 112)) AS OrderDate_DateKey

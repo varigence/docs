@@ -10,7 +10,13 @@ SSIS Catalog only supports some attributes as sensitive, such as the connection 
 
 The following Extension Points will inject the password as a sensitive parameter that can be matched to a sensitive environment variable in the SSIS catalog.
 
-Note that a development password needs to be maintained in the metadata-defined connection string and that there are special considerations for opening SSIS projects with sensitive parameters in Visual Studio.
+Note that a development password needs to be maintained in the metadata-defined connection string. This connection string is used by BimlFlex and BimlStudio before the build is complete, such as for importing metadata.
+
+## Using sensitive attributes in Visual Studio
+
+There are special considerations for opening SSIS projects with sensitive parameters in Visual Studio. The default build configuration uses the SSIS setting `Don't Save Sensitive` for sensitive attributes. This matches the way the SQL Server SSIS Catalog configures projects. This will result in a warning when opening the project in Visual Studio. It is possible to configure the project to use protection level `Encrypt Sensitive with User Key` instead. This allows the sensitive information to be encrypted with the current user key and that user can then open the project without warnings.
+
+Configure the Attribute Key `ProtectionLevel` with the Attribute Value `EncryptSensitiveWithUserKey` for the relevant project in the metadata attributes to apply this setting.
 
 ## Project Parameter Extension Point
 
