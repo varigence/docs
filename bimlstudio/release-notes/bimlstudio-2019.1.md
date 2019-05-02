@@ -9,6 +9,10 @@ Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
 * Fixed bug where `Container` property `TransactionOption` was being evaluated as an object rather than an `int32`.
 * Fixed typo in `MergeJoin` error message.
 * Added fix to correctly emit `BlobColumns` in `BufferWrapper.cs` for ScriptProjects. 
+* Added SqlServer 2019 support. 
+* Added SSIS 2019 support. 
+* Removed `Codepage` property from FlatFileFormat Columns, as the codepage gets set on the `FlatFileFormat` and is not configurable at the column level.
+* Fixed bug in `GetQuerySchema()`, where column nodes were not correctly reading `ComputedText` and `IsNullable` properties.
 
 ## BimlStudio Improvements
 * Removed the live assets checkbox from the logical view as it was confusing and no longer valuable for modern users of BimlStudio.
@@ -51,6 +55,12 @@ Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
 * Added `DependsOn` collection to `TumblingWindow` Triggers.
 * Added custom validation to prevent both `SecretAccess` and `SecretAccessKVS` from being configured at the same time for `AmazonS3` Linked Services.
 * Added custom validation to ensure that `RedirectRowSettings` are configured when `EnableSkipIncompatibleRow` is configured in Copy Activities.
+* In some dataset types, we made the `FolderPath`property optional.
+* Changed pipeline parameter datatype enum to match ADF rather than using `Db.Type`.
+* Added pipeline `Variables` property, and linked them to the `SetVariable` and `AppendVariable` activities.
+* Fixed a bug where nested arrays were not emitting correctly.
+* Added support for `Webhook` activities.
+* Added support for `Validation` activities.
 
 ## Bimlc.exe
 
@@ -66,4 +76,14 @@ Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
 
 * Prevent filtering out preview nodes for diagram menu options
 * Complete overhaul of Schema Graphs.
+* Deprecated the Upgrade utility for upgrading BimlFlex bundles. That functionality is now handled through the installer.
+
+## Installer
+
+* Added the ability to create and validate license keys directly in the installer.
+* Improved handling of unavailable features. Users can now force install features that were previously unavailble due to their environment right clicking on the feature and selecting the 'force install' option.
+* We now support headless installations, configurable through the command line.
+* Added a comprehensive breakdown of product features by screen.
+* Added richer logging capabilities to aid in diagnosing any installation issues.
+* Added the capability to manage your BimlFlex environment, whether that is upgrading your bunlde, your BimlFlex database, or the BimlCatalog database.
 
