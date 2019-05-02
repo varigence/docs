@@ -10,6 +10,7 @@ This is a text ::with special emphasis::
 
 ![Biml -h38px](content/images/biml.svg)
 
+* [Biml Language Reference](biml/language-reference/Varigence.Languages.Biml.AstRootNode.html)
 * [Biml API Reference](biml/api-reference/Varigence.Languages.Biml.AstRootNode.html)
 * [Biml API Samples](biml/snippets/index.md)
 * [Biml Forum](https://varigence.com/Forums?forumName=Biml)
