@@ -10,15 +10,16 @@
 
 
 <div class="codeHeader" id="code-try-0" data-bi-name="code-header">
-<span class="language">C#</span>
+      <span class="language">C#</span>
 			<button class="action" data-bi-name="copy">
 				<span class="docon docon-edit-copy" role="presentation"></span>
 				<span>Copy</span>
-			</button></div>
-<pre class="wrap"><code class="csharp lang-csharp">{{syntax.content.0.value}}</code></pre>
-
+			</button>
 </div>
-
+<pre class="wrap">
+  <code class="csharp lang-csharp">{{syntax.content.0.value}}
+  </code>
+</pre>
 <div class="inheritance">
 <dl class="attributeList stack">
   <dt>{{__global.inheritance}}</dt>
