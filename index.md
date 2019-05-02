@@ -6,10 +6,9 @@ We include support within the products, for our customers with active product su
 
 In addition to the support here, we have developed a community at [Bimlscript.com](http://bimlscript.com) where members contribute helpful video tutorials, walkthroughs, and snippets to the community.
 
-This is a text ::with special emphasis::
-
 ![Biml -h38px](content/images/biml.svg)
 
+* [Biml Language Reference](biml/language-reference/Varigence.Languages.Biml.AstRootNode.html)
 * [Biml API Reference](biml/api-reference/Varigence.Languages.Biml.AstRootNode.html)
 * [Biml API Samples](biml/snippets/index.md)
 * [Biml Forum](https://varigence.com/Forums?forumName=Biml)
