@@ -17,6 +17,8 @@
 			</button></div>
 <pre class="wrap"><code class="csharp lang-csharp">{{syntax.content.0.value}}</code></pre>
 
+</div>
+
 <div class="inheritance">
 <dl class="attributeList stack">
   <dt>{{__global.inheritance}}</dt>

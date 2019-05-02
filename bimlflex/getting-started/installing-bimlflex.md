@@ -8,11 +8,11 @@ BimlFlex is provided in a role-based, consolidated installer. This allows all pa
 
 The following installers are available:
 
-* BimlFlex Developer
+* BimlFlex Developer  
     This installer includes all parts of the product framework and is suited for developers who will build the solution in BimlStudio and test the resulting packages in Visual Studio
-* BimlFlex Modeler
+* BimlFlex Modeler  
     This installer includes the BimlFlex App and is suited for modelers who will perform metadata import, modeling and acceleration
-* Runtime installation
+* Runtime installation  
     This installer include the required runtime components for servers that will execute SSIS packages
 
 The BimlFlex developer installation allows the installation of all components used in the BimlFlex framework:
