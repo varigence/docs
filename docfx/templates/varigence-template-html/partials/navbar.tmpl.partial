@@ -56,6 +56,11 @@
 	  	        </a>
 	          </div>
 	          <div id="main-menu" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="on">
+              </div>
+            </form>
 	              <ul class="nav navbar-nav">
 	                  <div id="main-menu-triangle" class="triangle-up"></div>
 	                          
@@ -73,6 +78,7 @@
                     -->
 	              </ul>
 	          </div>
+            
 	          
 	      </div>
 	  </div>

@@ -97,7 +97,8 @@
     "globalMetadata": 
     {
       "_disableContribution": true,
-      "_appFaviconPath": "images/favicon.png"
+      "_appFaviconPath": "images/favicon.png",
+      "_enableSearch" : true
     }
   },
 }

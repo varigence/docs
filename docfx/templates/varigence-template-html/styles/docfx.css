@@ -309,9 +309,9 @@ article section {
   width: 200px;
   box-shadow: 0 0 10px #111;
 }
-#search {
-  display: none;
-}
+/* #search {
+  display: block;
+} */
 
 /* Search results display*/
 #search-results {
@@ -321,7 +321,6 @@ article section {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.8;
-  display: none;
 }
 
 #search-results>.search-list {
@@ -537,8 +536,17 @@ body .toc{
   top: 10px;
   left: 5px;
 }
+
+#toc_filter_input{
+    font-family: Segoe UI,SegoeUI,Segoe WP,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color:black;
+}
+
 .article {
-  margin-top: 90px;
+  margin-top: 45px;
 }
 
 #_content>a{

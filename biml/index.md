@@ -2,11 +2,11 @@
 
 ## Biml API Reference
 
-Biml API Reference
+@biml-api-reference
 
 ## Biml Language Reference
 
-Biml Language Reference
+@biml-language-reference
 
 ## Biml Release Notes
 
@@ -28,6 +28,6 @@ While the forums are the best way to get answers, if your question contains prop
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-@biml-language-reference
 
-@biml-api-reference
+
+
