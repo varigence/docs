@@ -13,7 +13,19 @@ name: BimlFlex Release Notes
 > [!IMPORTANT]
 > BimlFlex 2019 is installed and upgraded through a consolidated installer, allowing new installations and upgrades to be completely managed through a single experience.
 >
-> This includes upgrading both existing databases and projects
+> Role-based installer downloads:
+>
+> * [Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_2019.exe)
+> * [Modeler Setup](https://varigence.com/downloads/bimlflexmodelsetup_2019.exe)
+> * [Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_2019.exe)
+
+## Bundle 64106
+
+* Update: The Bundle used in projects is now centralized to the compiler location. For normal usage this means projects will use the bundle in the `%PROGRMFILES%\Varigence\BimlStudio\5.0\` location. The installer experience has been simplified and there is no Bundle upgrade process. This aims to simplify the version experience and allow the development process to always use the current Bundle. Note that the Bundle Upgrade step has been removed from the installer. Note that even through existing projects will have a Bundle file in the local folder, BimlStudio will use the centrally located Bundle.
+* Update: A scenario where an ANSI-compatible delete statement was used in Azure SQL Data Warehouse PIT processing procedures has been updated to instead spawn Azure SQL Data warehouse optimized syntax.
+* Update: A scenario where some DROP statements for temporary tables in ELT code weren't included has been addressed and all temporary tables are now dropped before and after use.
+* Update: The BimlFlex App UX now allows filters to be applied to the Connections column in the Columns page
+* Update: The BimlFlex App sometimes did not show a global validation warning for Model Reference information on columns used in references in Data Vault.
 
 ## Bundle 64029
 

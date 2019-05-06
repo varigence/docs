@@ -22,7 +22,6 @@ The BimlFlex developer installation allows the installation of all components us
 * BimlFlex Excel-based metadata editor
 * SSIS Custom Components for SQL Server SSIS
 * SSIS Custom Components for Snowflake
-* Upgrades of existing project Bundle files
 * Upgrades of existing BimlFlex and BimlCatalog databases
 
 Run the developer installation and choose to install all components on the developer machine. For complete functionality all components are required.
@@ -96,10 +95,6 @@ right-click to force installation
 ![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s10.png)
 
 all unavailable options are picked for forced installation
-
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s11.png)
-
-Upgrade existing project Bundle files by adding them to the searchable path definition. Search for Bundle files and add all projects to be updated
 
 ![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s12.png)
 
