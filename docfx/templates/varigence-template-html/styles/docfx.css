@@ -309,9 +309,9 @@ article section {
   width: 200px;
   box-shadow: 0 0 10px #111;
 }
-/* #search {
-  display: block;
-} */
+#search {
+  display: none;
+}
 
 /* Search results display*/
 #search-results {
@@ -321,6 +321,7 @@ article section {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.8;
+  display: none;
 }
 
 #search-results>.search-list {
@@ -424,6 +425,10 @@ body .toc{
 }
 .sidetoc-heading {
   font-weight: 500;
+}
+
+#sidetoc{
+  margin-top: 100px;
 }
 
 .toc {
@@ -546,7 +551,7 @@ body .toc{
 }
 
 .article {
-  margin-top: 45px;
+  margin-top: 100px;
 }
 
 #_content>a{

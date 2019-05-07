@@ -2,19 +2,12 @@
 
 # Varigence Support Documentation
 
-<div class="col">
-<div class="row">
-        
-
 At Varigence, we offer a comprehensive library of professional support resources.
 
 We include support within the products, for our customers with active product support/maintenance, and as supplemental packages for more extensive training.
 
 In addition to the support here, we have developed a community at [Bimlscript.com](http://bimlscript.com) where members contribute helpful video tutorials, walkthroughs, and snippets to the community.
-
-</div>
-
-</div>
+<p>&nbsp;</p>
 
 <div class="col">
     

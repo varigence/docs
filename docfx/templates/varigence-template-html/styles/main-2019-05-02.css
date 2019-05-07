@@ -10,8 +10,6 @@ tr:hover {
   background-color: #f5f5f5;
 }
 
-
-
 #site-logo {
   height: 50px;
   float: left;
@@ -23,6 +21,8 @@ tr:hover {
   background-color:white;
   /* border: 1px solid transparent; */
 }
+
+
 
 table {
   display: table;
@@ -542,7 +542,7 @@ img[alt~="-h24px"]{
 }
 
 .codeHeader>.language {
-  padding: 2px 16px;
+  padding: 9px 16px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1
@@ -1285,13 +1285,11 @@ html>body .innerContent
 .AttributeName
 {
 	color: #FF0000;
-	border-top: #BBBBBB solid 1px;
-	font-family: 'Courier New';
+  font-family: 'Courier New';
 }
 
 .AttributeSummary
 {
-	border-top: #BBBBBB solid 1px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 }

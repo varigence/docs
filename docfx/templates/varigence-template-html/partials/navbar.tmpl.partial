@@ -38,6 +38,7 @@
           </div>
         </nav>
 -->
+
 <div id="header">
 	      <div class="container">
 	          <button id="main-nav-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" aria-controls="navbar">
@@ -56,11 +57,11 @@
 	  	        </a>
 	          </div>
 	          <div id="main-menu" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="search" id="search">
-              <div class="form-group">
-                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="on">
-              </div>
-            </form>
+            <form class="navbar-form navbar-right" role="search" id="search" style="display: block;">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
 	              <ul class="nav navbar-nav">
 	                  <div id="main-menu-triangle" class="triangle-up"></div>
 	                          
@@ -71,11 +72,11 @@
 	                  <li class=" direct"><a href="/BimlStudio">BimlStudio</a></li>
 	                  
 	                  <li class=" direct"><a href="/BimlFlex">BimlFlex</a></li>
-	                   <!--
+	                   
 	                  <li id="icon-search">
 	                      <img class="header-search-icon" src="/Content/Images/icons/search.png">
 	                  </li>
-                    -->
+                    
 	              </ul>
 	          </div>
             
