@@ -4,7 +4,7 @@ Significant changes between BimlExpress 2018 R3 and BimlExpress 2019 R1
 
 ## 2019 Support
 * Added SqlServer 2019 support. 
-* Added SSIS 2019 support. 
+* Added Visual Studio 2019 and SSIS 2019 support. 
 
 ## SSIS
 
