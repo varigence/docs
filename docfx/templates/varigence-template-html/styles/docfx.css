@@ -313,6 +313,10 @@ article section {
   display: none;
 }
 
+.pullup{
+  margin-top: -80px;
+}
+
 /* Search results display*/
 #search-results {
   max-width: 960px !important;
