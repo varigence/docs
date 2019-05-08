@@ -90,9 +90,10 @@
       }
     ],
 
-    "dest": "_site",
+     "dest": "_site",
     "template": [
-      "templates/varigence-template-html"
+      "templates/varigence-template-html",
+      "templates/memberpage/content"
     ],
     "globalMetadata": 
     {
