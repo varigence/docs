@@ -1,6 +1,10 @@
-function copyFunction() {
-    var copyText = document.getElementById("code");
-    copyText.select();
-    document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
-}
+$(function () {
+    var clipboard = new ClipboardJS('.btn');    
+      clipboard.on('success', function(e) {
+          console.log(e);
+      });
+      clipboard.on('error', function(e) {
+          console.log(e);
+    });
+
+});

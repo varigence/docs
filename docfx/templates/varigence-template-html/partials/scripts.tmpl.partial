@@ -22,7 +22,7 @@
     });});
 }).call(this);
 </script>	
-
+<script type="text/javascript" src="{{_rel}}styles/clipboard.min.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/shCore.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/shBrushBimlScript.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/apply-syntax-highlighter-brush.js"></script>

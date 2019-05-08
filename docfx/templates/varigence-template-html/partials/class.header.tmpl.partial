@@ -10,14 +10,15 @@
 
 
 <div class="codeHeader" id="code-try-0" data-bi-name="code-header">
-      <span class="language">C#</span>
-			<button class="action" data-bi-name="copy" onclick="copyFunction()">
-				<span class="docon docon-edit-copy" role="presentation"></span>
-				<span>Copy</span>
-			</button>
+  <span class="language">C#</span>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target="#code">
+    <span class="docon docon-edit-copy" role="presentation"></span>
+    <span>Copy</span>
+  </button>
 </div>
+
 <pre class="wrap">
-  <code class="csharp lang-csharp">{{syntax.content.0.value}}
+  <code id="code" class="csharp lang-csharp">{{syntax.content.0.value}}
   </code>
 </pre>
 <div class="inheritance">
@@ -115,3 +116,4 @@
 {{#example}}
 {{{.}}}
 {{/example}}
+
