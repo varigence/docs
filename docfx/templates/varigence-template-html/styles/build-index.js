@@ -8,8 +8,8 @@ var searchData = {};
 
 lunr.tokenizer.seperator = /[\s\-\.]+/;
 
-stopWords = JSON.parse(fs.readFileSync('docfx/templates/varigence-template-html/search-stopwords.json', 'utf8'));
-searchData = JSON.parse(fs.readFileSync('docfx/_site/index.json', 'utf8'));
+stopWords = JSON.parse(fs.readFileSync('templates/varigence-template-html/search-stopwords.json', 'utf8'));
+searchData = JSON.parse(fs.readFileSync('_site/index.json', 'utf8'));
 
 if (stopWords !== null && !isEmpty(searchData)) {
   lunrIndex = lunr(function () {
@@ -31,7 +31,7 @@ if (stopWords !== null && !isEmpty(searchData)) {
   });
   
   var json = JSON.stringify(lunrIndex);
-  fs.writeFileSync('docfx/_site/index-cache.json', json, 'utf8');
+  fs.writeFileSync('_site/index-cache.json', json, 'utf8');
   
 }
 
