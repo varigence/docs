@@ -26,8 +26,6 @@ The BimlCatalog database contains parameter values, logging and audit informatio
 
 For the BimlFlex development and build process to work and the BimlFlex project to be able to store the metadata, these databases need to be created. They are created from the BimlFlex ribbon UI in BimlStudio. To access this UI, a valid BimlFlex project needs to be open in BimlStudio.
 
-Please refer to @bimlflex-trial-process-creating-and-configuring-a-bimlflex-project for more information on creating the project.
-
 Once the project is opened in BimlStudio, use the `Setup BimlFlex` button in the Administration group in the BimlFlex Ribbon UI to create the databases. Change the connection string to match the environment and click `Deploy` to create the databases.
 
 ## User rights for developers
@@ -36,4 +34,4 @@ The BimlFlex database store all metadata for the data warehouse. The BimlFlex Ex
 
 ## Database updates
 
-The database definitions are updated as part of new version of BimlFlex. Use the installer to upgrade any existing databases.
+The database definitions are updated as part of new versions of BimlFlex. Use the installer to upgrade these databases.

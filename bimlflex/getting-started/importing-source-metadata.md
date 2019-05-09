@@ -8,9 +8,9 @@ Importing metadata from database connections is a convenient and agile way to st
 
 By reading existing metadata instead of manually entering it or manually creating tables for the Data Warehouse it is possible to increase development speed and quality.
 
-The BimlFlex App provides an import metadata function for connections.
+The BimlFlex App provides a convenient import metadata function.
 
-Click the Connections page in the app and click the source connection `AWLT_SRC`. In the page, click the `Import Metadata` button to start the metadata importer.
+Click the Connections page in the app and click the source connection `AWLT_SRC`. Click the `Import Metadata` button to start the metadata importer.
 
 Validate the settings, unselect the `Import Views` to only import metadata from the `SalesLT` tables. The remaining settings are left as defaults.
 
@@ -31,7 +31,7 @@ The metadata import dialog provides a set of options for managing
 1. Validate the `Connections`, `Batches` and `Projects` pages to allow the metadata import to proceed
 1. Navigate to the `AWLT_SRC` source connection
 1. Click the Import Metadata button to display the dialog
-1. Select the `SalesLT` schema in the schema explorer. Deselect the `import views` option to only import metadata from the tables in the `SalesLT` schema
+1. Select the `SalesLT` schema in the schema explorer, unselect the `dbo` schema. Deselect the `import views` option to only import metadata from the tables in the `SalesLT` schema
 1. Click `Import Metadata` to read the metadata from the source into the metadata repository
     Tables are added to the `Objects` page. Columns are added to the `Columns` page
 1. In BimlStudio, click the `Refresh Metadata` button. This will read the new metadata from the database in to the logical view. The logical view will be populated with the tables and with SSIS projects and packages.

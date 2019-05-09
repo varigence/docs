@@ -8,17 +8,13 @@ title: Building Databases, Tables and SSIS packages for source to staging
 
 ![Building Databases, Tables and SSIS packages for source to staging -center](https://www.youtube.com/watch?v=a4-dgVcpE2o?rel=0&autoplay=0 "Building Databases, Tables and SSIS packages for source to staging")
 
-## Supporting BimlFlex Documentation
-
-* [Source to Staging Templates](../user-guide/source-to-staging-templates.md)
-
 ## Building Databases, Tables and SSIS packages for source to staging in BimlFlex
 
-In BimlStudio, the BimlFlex project is able to create SQL DDL scripts to create databases and tables for the Data Warehouse. These can be run on the database server to create all artifacts required to run the trial process. This is an agile way to create tables while developing.
+In BimlStudio, the BimlFlex project is able to create SQL DDL scripts to create databases and tables for the Data Warehouse. These can be run on the database server to create all artifacts required to run the getting started process. This is an agile way to create tables while developing.
 
 BimlFlex also build Visual Studio SQL Server Data Tools (SSDT) Projects for all databases and artifacts. This feature is enabled by default and these projects can be used to deploy the databases and tables. This approach can be integrated into a deployment pipeline for continuous integration, continuous deployment scenarios.
 
-Once the tables are available in the data warehouse database server it is possible to use the build process in BimlStudio. This will build the SSIS projects and packages for the source to staging and persistent staging loads.
+Once the tables are available in the data warehouse database server, it is possible to use the build process in BimlStudio. This will build the SSIS projects and packages for the source to staging and persistent staging loads.
 
 The creation and building of the initial source to staging will validate that all local configurations and build tools are in place and working as expected. it will also validate access to the database server used for the data warehouse.
 

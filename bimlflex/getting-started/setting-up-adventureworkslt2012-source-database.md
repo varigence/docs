@@ -20,7 +20,7 @@ This Microsoft sample database is available for download from GitHub:
 
 [AdventureWorks releases on GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)
 
-Download the SQL Server backup file and restore it to the SQL Server engine through Management Studio. This will make it available for the trial process.
+Download the SQL Server backup file and restore it to the SQL Server engine through Management Studio.
 
 ## Detailed Steps
 
@@ -28,5 +28,6 @@ Download the SQL Server backup file and restore it to the SQL Server engine thro
 
 1. Download the [AdventureWorksLT2012.bak](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksLT2012.bak) SQL Server database backup file
 1. Move it to a location accessible from the database server
-1. Use Microsoft SQL Server Management Studio or a similar tool to restore the database
+1. Use Microsoft SQL Server Management Studio or a similar tool or script to restore the database
+1. Configure read access for the client account used
 1. Validate that the database is available from the client

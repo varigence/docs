@@ -37,8 +37,8 @@
     href: configurations-and-settings-in-bimlflex.md
   - name: Modeling of Source Metadata
     href: modeling-of-source-metadata.md
-  - name: Applying Data Type Mappings
-    href: applying-data-type-mappings.md
+#  - name: Applying Data Type Mappings
+#    href: applying-data-type-mappings.md
   - name: Applying Load Parameters
     href: applying-load-parameters.md
   - name: Building Integration Keys for Data Vault
