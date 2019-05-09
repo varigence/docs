@@ -92,8 +92,7 @@
 
      "dest": "_site",
     "template": [
-      "templates/varigence-template-html",
-      "templates/memberpage/content"
+      "templates/varigence-template-html"
     ],
     "globalMetadata": 
     {
