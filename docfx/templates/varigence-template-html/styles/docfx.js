@@ -1,5 +1,6 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
 $(function () {
+
   var active = 'active';
   var expanded = 'in';
   var collapsed = 'collapsed';
@@ -7,7 +8,7 @@ $(function () {
   var show = 'show';
   var hide = 'hide';
   var util = new utility();
-
+  var _enableCachedIndex = true;
   workAroundFixedHeaderForAnchors();
   highlight();
   enableSearch();
@@ -143,7 +144,11 @@ $('.header-search-icon').click(function () {
     }
     try {
       var worker = new Worker(relHref + 'styles/search-worker.js');
-      if (!worker && !window.worker) {
+
+      if (_enableCachedIndex){
+        indexCachedSearch();
+      }
+      else if (!worker && !window.worker) {
         localSearch();
       } else {
         webWorkerSearch();
@@ -177,6 +182,49 @@ $('.header-search-icon').click(function () {
         }
       }
     }
+
+ // Search factory
+    function indexCachedSearch() {
+      console.log("using indexed search");
+      
+      var indexRequest = new XMLHttpRequest();
+      var indexPath = relHref + "index-cache.json";
+      if (indexPath) {
+        indexRequest.open('GET', indexPath);
+        indexRequest.onload = function () {
+          if (this.status != 200) {
+            return;
+          }
+          lunrIndex = lunr.Index.load(JSON.parse(this.responseText));
+        }
+        indexRequest.send();
+      }
+      
+      var searchData = {};
+      var searchDataRequest = new XMLHttpRequest();
+      var indexPath = relHref + "index.json";
+      if (indexPath) {
+        searchDataRequest.open('GET', indexPath);
+        searchDataRequest.onload = function () {
+          if (this.status != 200) {
+            return;
+          }
+          searchData = JSON.parse(this.responseText);
+        }
+        searchDataRequest.send();
+      }
+
+      $("body").bind("queryReady", function () {
+        var hits = lunrIndex.search(query);
+        var results = [];
+        hits.forEach(function (hit) {
+          var item = searchData[hit.ref];
+          results.push({ 'href': item.href, 'title': item.title, 'keywords': item.keywords });
+        });
+        handleSearchResults(results);
+      });
+    }
+
 
     // Search factory
     function localSearch() {
