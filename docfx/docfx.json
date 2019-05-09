@@ -92,12 +92,14 @@
 
     "dest": "_site",
     "template": [
-      "templates/varigence-template-html"
+      "templates/varigence-template-html",
+      "templates/memberpage/content"
     ],
     "globalMetadata": 
     {
       "_disableContribution": true,
-      "_appFaviconPath": "images/favicon.png"
+      "_appFaviconPath": "images/favicon.png",
+      "_enableSearch" : true
     }
   },
 

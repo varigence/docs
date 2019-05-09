@@ -1,6 +1,6 @@
 # BimlExpress 2018 Release Notes
 
-Significant changes between BimlExpress 2017 and BimlExpress 2018
+Significant changes between BimlExpress 2017 and BimlExpress 2018 R1
 
 ## New Features
 

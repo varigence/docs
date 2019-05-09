@@ -29,7 +29,7 @@
 </div>
 {{#parameters.0}}
 <h4 class="parameters">{{__global.parameters}}</h4>
-<table class="table table-bordered table-striped table-condensed">
+<table class="table table-bordered table-condensed">
   <thead>
     <tr>
       <th>{{__global.type}}</th>
@@ -52,7 +52,7 @@
 {{/parameters.0}}
 {{#return}}
 <h4 class="returns">{{__global.returns}}</h4>
-<table class="table table-bordered table-striped table-condensed">
+<table >
   <thead>
     <tr>
       <th>{{__global.type}}</th>
@@ -69,7 +69,7 @@
 {{/return}}
 {{#typeParameters.0}}
 <h4 class="typeParameters">{{__global.typeParameters}}</h4>
-<table class="table table-bordered table-striped table-condensed">
+<table >
   <thead>
     <tr>
       <th>{{__global.name}}</th>
@@ -90,7 +90,7 @@
 {{/typeParameters.0}}
 {{#fieldValue}}
 <h5 class="fieldValue">{{__global.fieldValue}}</h5>
-<table class="table table-bordered table-striped table-condensed">
+<table >
   <thead>
     <tr>
       <th>{{__global.type}}</th>
@@ -107,7 +107,7 @@
 {{/fieldValue}}
 {{#propertyValue}}
 <h4 class="propertyValue">{{__global.propertyValue}}</h4>
-<table class="table table-bordered table-striped table-condensed">
+<table >
   <thead>
     <tr>
       <th>{{__global.type}}</th>
@@ -124,7 +124,7 @@
 {{/propertyValue}}
 {{#eventType}}
 <h4 class="eventType">{{__global.eventType}}</h4>
-<table class="table table-bordered table-striped table-condensed">
+<table >
   <thead>
     <tr>
       <th>{{__global.type}}</th>
@@ -167,7 +167,7 @@
 {{/example}}
 {{#exceptions.0}}
 <h4 class="exceptions">{{__global.exceptions}}</h4>
-<table class="table table-bordered table-striped table-condensed">
+<table >
   <thead>
     <tr>
       <th>{{__global.type}}</th>
