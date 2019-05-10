@@ -15,9 +15,9 @@ name: BimlFlex Release Notes
 >
 > Role-based installer downloads:
 >
-> * [Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_2019.exe)
-> * [Modeler Setup](https://varigence.com/downloads/bimlflexmodelsetup_2019.exe)
-> * [Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_2019.exe)
+> * [Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)
+> * [Modeler Setup](https://varigence.com/downloads/bimlflexmodelsetup.exe)
+> * [Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)
 
 ## BimlFlex 2019 Version 64108
 
