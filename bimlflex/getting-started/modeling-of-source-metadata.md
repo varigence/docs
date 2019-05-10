@@ -14,7 +14,9 @@ For a Data Vault based project, modeling the source metadata also affect the Acc
 
 The following detailed steps walks through the options for modeling of source Metadata as recommended for the getting started process.
 
-The end result of this modeling is available to be loaded from the sample metadata set `01 - Staring Point for MSSQL`. More information on the sample metadata is available here: @bimlflex-load-sample-metadata
+The end result of this modeling is available to be loaded from the sample metadata set `02 - After Import before Data Vault Modeling for MSSQL`. 
+
+More information on the sample metadata is available here: @bimlflex-load-sample-metadata
 
 ### Reviewing keys
 

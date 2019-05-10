@@ -1,28 +1,16 @@
 ---
 uid: bimlflex-trial-dimensional-model
-title: BimlFlex Dimensional Model
+title: Data Mart Dimensional Model
 ---
-# Dimensional Model
+# Data Mart Dimensional Model
 
-## Supporting Videos
-
-Video Coming Soon
-
-## Supporting BimlFlex Documentation
-
-@bimlflex-user-guide
-
-## Implementing a Dimensional Model
-
-### Overview
+![Implementing Data Vault to Data Mart Model -center](https://www.youtube.com/watch?v=UKq-libt3xg?rel=0&autoplay=0 "Implementing Data Vault to Data Mart Model")
 
 The dimensional model, Data Mart, is optimized for analytical tools, end user queries and for building models for Analysis Services cubes and tabular models.
 
 This type of layer has many names, Information Mart, Data Mart, Kimball Model, Dimensional Model, Reporting Layer, Semantic Layer. They can be either Raw, without business rules applied, or refined with any number of filters, rules and data processing steps applied. BimlFlex allows the rapid creation of any of these constructs by applying a metadata driven modelling and generation process.
 
-This article describes the creation of a classical dimensional model either on top of the staging layer for non-Data Vault implementations or on top of the Data Vault and Point In Time and Bridge constructs.
-
-It follows the general dimensional approach of building Fact tables that contain metrics and connections to Dimension members and Dimension tables that contain descriptive attributes.
+The getting started process follows the general dimensional approach of building Fact tables that contain metrics and connections to Dimension members and Dimension tables that contain descriptive attributes.
 
 While the Raw Data Vault is loaded with uninterpreted data, the Dimensional model normally require that a set of Business rules are applied to the data so that it is fit for the required analytical purpose. In the process of creating the end to end solution it is common to also create raw versions of these artifacts that are used to refine the business rules used to create the final model.
 
@@ -30,13 +18,13 @@ In this process both Fact and Dimensional source views are created, based either
 
 Querying the Data Vault layer can be made easier by utilizing the Point In Time and Bridge tables. To also include relevant contextual data it is necessary to join from these constructs to any Satellite that contains effectiveness information as well as the metrics or attributes needed. By using the time slice information in the Satellites the relevant record for the event date time is added to the dimensional model.
 
-### Architecture
+## Architecture
 
 The Dimensional model is created in the BimlFlex metadata in the form of a source to target mappings set of objects and columns. The source is generally implemented as a view on top of the existing staging or Data Vault constructs. For Data Vault, this includes tables from the Raw Data Vault, Business Vault constructs, Point In Time and Bridge tables and any extra required interpretation views and abstraction views that are required to feed the dimensional model.
 
-For the BimlFlex trial, a set of views are created and used as the source for the dimensional model. These views can contain any number of business rules that are required for the Dimension and Fact table loads. In a production scenario the layered loads generally starts from the Raw Data Vault tables, implements a set of Business Data Vault constructs such as Satellites with Business Rules applied and Same As Links, implements a set of Point In Time and Bridge constructs and lastly manages a set of abstraction views that the dimensional model reads from.
+For the getting started process, a set of views are created and used as the source for the dimensional model. These views can contain any number of business rules that are required for the Dimension and Fact table loads. In a production scenario the layered loads generally starts from the Raw Data Vault tables, implements a set of Business Data Vault constructs such as Satellites with Business Rules applied and Same As Links, implements a set of Point In Time and Bridge constructs and lastly manages a set of abstraction views that the dimensional model reads from.
 
-### Querying the Point In Time and Bridge tables
+## Querying the Point In Time and Bridge tables
 
 Once the Point In Time and Bridge tables are created it is possible to query them. For a dimension destination the query normally gathers all attributes for an entity over time, with some attributes as type 1 change tracking and some as type 2. A fact source normally identifies an event that is stored in a Link or Satellite. The event can be defined by an event date time, such as the time a sale took place. This date time is then used to identify any additional attributes across the Satellites and their timelines.
 
@@ -85,11 +73,7 @@ The views are imported in to BimlFlex as a source.
 
 In the getting started process, for the Data Vault source, they are co-located with the Data Vault tables, in a separate `src` schema to indicate the are sources for further loading in to the data warehouse.
 
-In the getting started process, for the 2 layer dimensional model from staging tables, they are created in the staging database, in a separate `src` schema to indicate the are sources for further loading in to the data warehouse.
-
 It is also possible to place them in a roleplaying source database, the Data Mart database or the staging database for more or less obvious separation of concern.
-
-The 2-layer views are placed in the staging database, and the project to load the Data Mart needs to be updated to reflect this. The default metadata is provided for a 3-layer approach with the Data Mart loading from the Raw Data Vault. The project configuration for the `LOAD_DM` project would be updated with the `BFX_STG` connection as the source, replacing the default `BFX_RDV` connection used in the 3-layer architecture.
 
 The source views on the Data Vault can either read from the base Data Vault tables, or the Bridge and Point In Time tables. Sample views are provided for both approaches.
 
@@ -118,7 +102,7 @@ Staging, 2-layer, Based:
 
 ### Creating the Date Dimension
 
-The Date Dimension in the trial process uses a view to present the full dimension in the Data Mart. There are numerous considerations for date dimensions and its processing and updating. In this scenario, the Date dimension is a straightforward set of dates from the defined start to the defined end, with a Smart Key and a few attributes.
+The Date Dimension in the getting started process uses a view to present the full dimension in the Data Mart. There are numerous considerations for date dimensions and its processing and updating. In this scenario, the Date dimension is a straightforward set of dates from the defined start to the defined end, with a Smart Key and a few attributes.
 
 This approach illustrates both Dimensions that aren't loaded through BimlFlex and Dimensions with Smart keys that don't need a lookup in the Fact table load. For Dimensions with an identity column Primary Key, the Fact load needs to look up the Integration Key Value in the dimension table to get the corresponding Integer key. For Smart Keys, the Value in the Dimension Table is deterministic and can be derived in the Fact table load without the need for the lookup. This is similar to the Hash keys used in the Data Vault, where a Satellite load doesn't need to look up the corresponding Hub key.
 
@@ -166,67 +150,28 @@ FROM
 )
 ```
 
-Note that the view is placed directly in the Data Mart using the Dim schema. It also has the `ExcludeFromBuild` flag set to `Y`. This will allow BimlFlex to include the object in the modeling without creating a load package for it. As it is a self-contained entity consisting of only the view definition it does not need an additional table or a load process. In most real-world scenarios the Date, Time and Period dimension requirements are more comprehensive and BimlFlex supports Date dimensions in tables loaded from a source similar to the other dimensions here. It also supports the normal post-processing steps for updating current flags and other house keeping. These more advanced steps are considered out of scope for the trial process
-
-Source Object Metadata
-
-| Project     | Connection | Schema | ObjectName     | ObjectType | IsNotPersistent | ExcludeFromBuild |
-| ----------- | ---------- | ------ | -------------- | ---------- | --------------- | ---------------- |
-| LOAD_BFX_DM | BFX_DM     | Dim    | Date           | Dimension  |                 | Y |
-
-Source Column Metadata
-
-| Connection | Object | ColumnName | DataType | Length | Precision | Scale | Ordinal | ChangeType | IsPrimaryKey | IsIntegrationKey | IsSourceKey | IsIdentity | IsNullable | IsNotPersistent | ExcludeFromModel | ModelOverrideName | ModelGrouping | ModelReference | DataTypeMapping | DefaultValue | SqlSourceExpression | SqlTargetExpression | SsisDataflowExpression | AdfDataflowExpression | IsDerived | SolveOrder |
-| BFX_DM | Dim.Date | DateKey         | Int32    |    | | | 1 | Key    | Y | | Y | | | | | | | | | | | | | | | 0 |
-| BFX_DM | Dim.Date | Date            | DateTime |    | | | 2 | Key    | | Y | | | | | | | | | | | | | | | | 0 |
-| BFX_DM | Dim.Date | DayOfMonth      | Int16    |    | | | 3 | Type 1 | | | | | | | | | | | | | | | | | | 0 |
-| BFX_DM | Dim.Date | WeekdayName     | String   | 10 | | | 4 | Type 1 | | | | | | | | | | | | | | | | | | 0 |
-| BFX_DM | Dim.Date | Month           | Int16    |    | | | 5 | Type 1 | | | | | | | | | | | | | | | | | | 0 |
-| BFX_DM | Dim.Date | MonthName       | String   | 10 | | | 6 | Type 1 | | | | | | | | | | | | | | | | | | 0 |
-| BFX_DM | Dim.Date | Year            | Int32    |    | | | 7 | Type 1 | | | | | | | | | | | | | | | | | | 0 |
-| BFX_DM | Dim.Date | CurrentDateFlag | Int32    |    | | | 8 | Type 1 | | | | | | | | | | | | | | | | | | 0 |
+Note that the Date Dimension view is placed directly in the Data Mart using the Dim schema. It also has the `Exclude From Build` flag set to `true`. This will allow BimlFlex to include the object in the modeling without creating a load package for it. As it is a self-contained entity consisting of only the view definition it does not need an additional table or a load process. In most real-world scenarios the Date, Time and Period dimension requirements are more comprehensive and BimlFlex supports Date dimensions in tables loaded from a source similar to the other dimensions here. It also supports the normal post-processing steps for updating current flags and other house keeping. These more advanced steps are considered out of scope for the trial process.
 
 ### Importing the Dimensional model source metadata
 
 Once the views are defined, import the metadata from these views using the Metadata Import Wizard in the BimlFlex Excel metadata management tool.
 
-The source views are defined in the Raw Data Vault. Point the Import Metadata Wizard to the `BFX_RDV` Source Connection and the `LOAD_BFX_DM` Target Project.
+The source views are defined in the Raw Data Vault. Point the Import Metadata to the `BFX_RDV` Source Connection and the `LOAD_BFX_DM` Target Project.
 
 Import the metadata from the views in the `src` schema.
 
 Make sure the following options are specified:
 
+* `Infer Integration Key From`, `First Column` should be checked as the source is a view and the first column in each view is the Integration Key to use
 * `What to Import`, `Views` needs to be checked as the source is a view
 * `Tweaks to Incoming Metadata`, both `Table and Column Names` and `Inferred Metadata` should be set to `None`
 * Neither `Add RecordSource(@@rs) to Integration Key` nor `Change References to Integration Keys` should be checked
 
-Once the import is completed there will be 2 warnings per view. These point out that there are missing Integration Keys and Primary Keys.
-
-Add the flags for the relevant columns to define keys for the imported views. For the Getting Started process, the main Integration Key column will be defined as Primary Key and Integration Key for each object.
-
-Source Object Metadata
-
-| Project     | Connection | Schema | ObjectName     | ObjectType |
-| ----------- | ---------- | ------ | -------------- | ---------- |
-| LOAD_BFX_DM | BFX_RDV    | src    | dimCustomer    | Table |
-| LOAD_BFX_DM | BFX_RDV    | src    | dimSalesOrder  | Table |
-| LOAD_BFX_DM | BFX_RDV    | src    | factSalesOrder | Table |
-
-Source Column Metadata
-
-As imported from the source views.
-
-### Creating Dimensions and Facts from the source Metadata
-
-The imported views will not have any keys defined as that is not part of the view metadata. Add the required Primary and Integration Keys to the source view objects.
-
 ### Creating the destination metadata through the Clone Table feature
 
-BimlFlex provides a `Clone Table` metadata creation tool for creating the destination dimension and fact tables.
+The BimlFlex App provides a `Clone Table` metadata creation tool for creating the destination dimension and fact tables.
 
-![Clone Table -center -50%](../user-guide/images/bimlflex-ss-v5-clone-table.png "Clone Table")
-
-Select the source object in the objects sheet and click the `Clone Table` button in the ribbon. Choose the object type (Fact or Dimension), define a destination schema and table name and choose to add an Identity Column to the destination. Checking the `Add Target Column Mappings` will populate the source to target column mappings between the source and destination objects.
+Select the source object in the Objects page and click the `Clone Table` button. Choose the object type (Fact or Dimension), define a destination schema and table name and, for Dimensions, choose to add an Identity Column to the destination. Checking the `Add Target Column Mappings` will populate the source to target column mappings between the source and destination objects.
 
 ### Adding Fact to Dimension relationships and Dimensional key lookups
 
@@ -236,24 +181,15 @@ This mapping is done for dimensions that have the primary key defined as an iden
 
 The Dimension object has a Integration Key and a Primary Key, the lookup will compare against the Integration Key value and replace with the Primary Key value.
 
-The Fact table source has the corresponding lookup value (same value as the Integration Key in the Dimension). When cloning the source object to the Fact object this column is included and is mapped from the source to the Fact table destination. For the lookup and replacement to happen the following needs to be true:
+The Fact table source has the corresponding lookup value (same value as the Integration Key in the Dimension). When cloning the source object to the Fact object this column is included and is mapped from the source to the Fact table destination.
 
-1. The Fact table Object needs to be updated to have the same Data Type as the Dimension Key (Commonly Int32 or Int64).
-1. The Fact table Object needs the ReferenceTable and ReferenceColumnName populated with a reference to the Primary Key of the Dimension Table (The Identity Column that the lookup should return)
-1. The source column in the source object should contain the same values as the Integration Key column in the referenced Dimension. The source value in the source column is used in the lookup and replaced with the Identity Column value at runtime.
+The metadata imported from the views will not have any relationships defined as these are not provided by the views. The target Facts and Dimensions will not have any relationships defined. Add the relationships between the target fact and the target dimension objects in the BimlFlex App schema diagram.
 
-The metadata imported from the views will not have any relationships defined as these are not provided by the views. The target Facts and Dimensions will not have any relationships defined. Add the relationships between the target fact and the target dimension objects.
-
-This will be created in the `ReferenceTable` and `ReferenceColumnName` columns on the Objects sheet. The Fact table reference Integration Keys will reference their respective dimension main Integration Key. This will allow the Fact table load to lookup the Integration Key value and get the relevant id key from the dimension where needed. Add references from the `Fact.SalesOrder` table, columns:
-
-| Object          | ColumnName        | ReferenceTable      | ReferenceColumnName |
-| Fact.SalesOrder | CustomerKey       | BFX_DM.Dim.Customer | CustomerKey |
-| Fact.SalesOrder | OrderDate_DateKey | BFX_DM.Dim.Date     | DateKey |
-| Fact.SalesOrder | ShipDate_DateKey  | BFX_DM.Dim.Date     | DateKey |
+Adding the relationship between the Fact table Integration Key and the Dimension allows BimlFlex to also update the used keys, their data types and names so that the lookup functionality works as expected.
 
 ### Building the dimensional model SQL artifacts
 
-With the metadata defined in the Excel metadata management tool, refresh the metadata in BimlStudio and create the SQL Artifacts as normal through the `Create Table Script`.
+With the metadata defined, refresh the metadata in BimlStudio and create the SQL Artifacts as normal through the `Create Table Script`.
 
 The source views and destination tables will be included in the script. Run the script in the Data Warehouse database.
 

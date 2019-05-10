@@ -2,6 +2,8 @@
   items:
   - name: Software and Hardware Requirements
     href: software-and-hardware-requirements.md
+  - name: Installing and Upgrading BimlFlex
+    href: installing-upgrading-bimlflex.md
   - name: Developer Installation
     href: developer-installation.md
   - name: Analyst Installation
@@ -18,7 +20,8 @@
     href: bimlflex-database.md
   - name: BimlCatalog Database
     href: bimlcatalog-database.md
-
+  - name: Upgrade and Testing Process
+    href: upgrade-and-testing-process.md
   - name: Support Process
     href: support-process.md
   - name: Debug Utilities
