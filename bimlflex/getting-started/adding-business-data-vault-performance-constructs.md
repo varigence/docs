@@ -1,18 +1,10 @@
 ---
 uid: bimlflex-trial-adding-business-data-vault-performance-constructs
-title: Adding Business Data Vault Performance Constructs
+title: Adding the Business Data Vault Model
 ---
-# Adding Business Data Vault Performance Constructs
+# Adding the Business Data Vault Model
 
-## Supporting Videos
-
-![Adding Business Data Vault Performance Constructs cCenter](https://www.youtube.com/watch?v=zwVlHXpwsJk?rel=0&autoplay=0 "Adding Business Data Vault Performance Constructs")
-
-## Supporting BimlFlex Documentation
-
-* @bimlflex-data-mart-templates
-
-## Adding Business Data Vault performance constructs
+![Business Data Vault Model -center](https://www.youtube.com/watch?v=JZT8rDBMhmI?rel=0&autoplay=0 "Business Data Vault Model")
 
 The `Point in Time` (PIT) and `Bridge` (BRG) structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
 
@@ -33,89 +25,19 @@ The Bridge constructs allow multiple Links surrounding a Hub to be combined in o
 
 BimlFlex implements these artifacts using tables for data storage, Stored Procedures for loading and SSIS packages for orchestration.
 
-The PIT and Bridge objects are created in the attributes sheet in the Excel metadata editor.
+The PIT and Bridge objects are created in the BimlFlex App using Hub objects as the starting point. From the BimlFlex App, navigate to a Hub that is going to be used as a starting point. Click the `Create PIT` or `Create Bridge` buttons to show the creation dialog.
 
-## Detailed Steps
+Once the PIT and BRG artifacts are created they are visible in the objects list and their tables, load stored procedures and SSIS orchestration packages can be created in BimlStudio.
 
-The following detailed steps walks through adding Business Data Vault performance constructs
-
-### Adding Point in Time table metadata
-
-Use the attributes sheet to add the required metadata for a PIT object. Add the following to add a PIT Table for the Product Hub and all its surrounding Satellites
-
-| Project | Batch | Connection | Object            | ColumnName | AttributeKey | AttributeValue |
-| ------- | ----- | ---------- | ------            | ---------- | ------------ | -------------- |
-|         |       | `BFX_RDV`  | `rdv.HUB_Product` |            | `CreatePIT`  | `PIT_Product`  |
-
-For a PIT definition where only the Hub is included, BimlFlex will automatically include all surrounding Satellites in the current metadata set. For scenarios where only a subset of the Satellites are to be included, add additional rows for each Satellite with the same Attribute Key (`CreatePIT`) and Attribute Value (the name of the PIT table).
-
-| Project | Batch | Connection | Object                       | ColumnName | AttributeKey | AttributeValue |
-| ------- | ----- | ---------- | ---------------------------- | ---------- | ------------ | -------------- |
-|         |       | `BFX_RDV`  | `rdv.HUB_Product`            |            | `CreatePIT`  | `PIT_Product`  |
-|         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT`       |            | `CreatePIT`  | `PIT_Product`  |
-|         |       | `BFX_RDV`  | `rdv.SAT_Product_Price_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
-
-In the trial process the `SalesLT.Product` source table has been split into three Satellites by applying the `Price` and `Thumbnail` names in the `ModelGrouping` column for the relevant source columns. This allows the more rapidly changing price attributes and the larger Thumbnail data to be stored in separate Satellites. This PIT construct allows easy querying across the included Satellites.
-
-For the trial process, apply single row PIT attribute entries for the Address, Customer, ProductCategory, SalesOrder and SalesOrderLine entities and a selective PIT for the Product entity:
-
-| Project | Batch | Connection | Object                       | ColumnName | AttributeKey | AttributeValue |
-| ------- | ----- | ---------- | ---------------------------- | ---------- | ------------ | -------------- |
-|         |       | `BFX_RDV`  | `rdv.HUB_Address`            |            | `CreatePIT`  | `PIT_Address` |
-|         |       | `BFX_RDV`  | `rdv.HUB_Customer`           |            | `CreatePIT`  | `PIT_Customer` |
-|         |       | `BFX_RDV`  | `rdv.HUB_Product`            |            | `CreatePIT`  | `PIT_Product` |
-|         |       | `BFX_RDV`  | `rdv.SAT_Product_AWLT`       |            | `CreatePIT`  | `PIT_Product`  |
-|         |       | `BFX_RDV`  | `rdv.SAT_Product_Price_AWLT` |            | `CreatePIT`  | `PIT_Product`  |
-|         |       | `BFX_RDV`  | `rdv.HUB_ProductCategory`    |            | `CreatePIT`  | `PIT_ProductCategory` |
-|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrder`         |            | `CreatePIT`  | `PIT_SalesOrder` |
-|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrderLine`     |            | `CreatePIT`  | `PIT_SalesOrderLine` |
-
-### Adding Bridge table Metadata
-
-Use the attributes sheet to add the required metadata for a BRG object. The Bridge construct has additional values in the Attribute Property column. This specifies the origin Hub for the Link and also if it should include the keys from these Hubs.
-
-In the trial process, Bridge tables are added for the Product, Sales Order Line and the Sales Order entities:
-
-| Project | Batch | Connection | Object                              | ColumnName | AttributeKey   | AttributeValue       | AttributeProperty |
-| ------- | ----- | ---------- | ----------------------------------- | ---------- | -------------- | -------------------- | ------------------|
-|         |       | `BFX_RDV`  | `rdv.HUB_Product`                   |            | `CreateBridge` | `BRG_Product`        | `IsPrimaryHub,AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_ProductCategory`           |            | `CreateBridge` | `BRG_Product`        | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_ProductModel`              |            | `CreateBridge` | `BRG_Product`        | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.LNK_Product_ProductCategory`   |            | `CreateBridge` | `BRG_Product`        | |
-|         |       | `BFX_RDV`  | `rdv.LNK_Product_ProductModel`      |            | `CreateBridge` | `BRG_Product`        | |
-|         |       | `BFX_RDV`  | `rdv.HUB_Address`                   |            | `CreateBridge` | `BRG_SalesOrder`     | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_Customer`                  |            | `CreateBridge` | `BRG_SalesOrder`     | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrder`                |            | `CreateBridge` | `BRG_SalesOrder`     | `IsPrimaryHub,AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrderLine`            |            | `CreateBridge` | `BRG_SalesOrder`     | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_BillToAddress`  |            | `CreateBridge` | `BRG_SalesOrder`     | |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_Customer`       |            | `CreateBridge` | `BRG_SalesOrder`     | |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrder_ShipToAddress`  |            | `CreateBridge` | `BRG_SalesOrder`     | |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_SalesOrder` |            | `CreateBridge` | `BRG_SalesOrder`     | |
-|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrderLine`            |            | `CreateBridge` | `BRG_SalesOrderLine` | `IsPrimaryHub,AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_SalesOrder`                |            | `CreateBridge` | `BRG_SalesOrderLine` | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.HUB_Product`                   |            | `CreateBridge` | `BRG_SalesOrderLine` | `AddKey` |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_Product`    |            | `CreateBridge` | `BRG_SalesOrderLine` | |
-|         |       | `BFX_RDV`  | `rdv.LNK_SalesOrderLine_SalesOrder` |            | `CreateBridge` | `BRG_SalesOrderLine` | |
-
-The created `BRG_Product` Bridge table allows querying the Product information and its Category and Model information through a single table compared to the 5 table join necessary when querying the Hub and Link tables.
-
-> [!NOTE]
-> Note that the Bridge table needs to be joined to any Link Satellites tracking effectiveness of relationships as well as any relevant Satellite to provide effectiveness and validity contexts for the query.
-> More information on interpreting the BRG and PIT constructs are available here: @bimlflex-trial-dimensional-model
-
-The metadata for the trial process should now include 3 Bridge tables and 6 Point In Time tables.
-
-### Building PIT and BRG Tables
-
-Once the attributes sheet is populated with the required metadata, the PIT and BRG objects will be added by BimlFlex to the Objects sheet. Click the `Get All Entities` button to reload the metadata and review the objects in the Objects sheet.
+## Building PIT and BRG Tables
 
 The PIT and BRG Tables are included in the `Generate Scripts` function in BimlFlex. They are also included in the generated SSDT project for the Data Vault database.
 
-Configure the `Script Options` in BimlStudio to only create the Object Types for BRG and PIT. save choice by clicking Commit. This allows the creation of only the table scripts for the BRG and PIT tables in the Generate Scripts function.
+Configure the `Script Options` in BimlStudio to only create the Object Types for BRG and PIT. Save choice by clicking Commit. This allows the creation of only the table scripts for the BRG and PIT tables in the Generate Scripts function.
 
 Run the table create script in SQL Server Management Studio to create the new BRG and PIT tables.
 
-### Adding Default Values Hub records
+## Adding Default Values Hub records
 
 BimlFlex will use a null default value placeholder for PIT and BRG entities with no corresponding Data Vault entity record, allowing for inner joins in more scenarios.
 
@@ -125,7 +47,7 @@ The script is also part of the SSDT Database project for the RDV database, in th
 
 Run the placeholder create script in SQL Server Management Studio to create the placeholder values.
 
-### Creating PIT and BRG Stored Procedures
+## Creating PIT and BRG Stored Procedures
 
 Use the `Generate Scripts`, `Business Vault Procedure Script` option in BimlStudio to create the scripts for the PIT and BRG procedures.
 
@@ -133,13 +55,9 @@ They are also included in the generated SSDT project for the Data Vault database
 
 These stored procedures needs to be created in the Data Vault database.
 
-At the end of the generated SQL script there are execute statements included. It is possible to populate the Bridge and Point In Time tables by either running these Stored Procedures directly, or by generating and running the SSIS packages for them as described below.
+## Building the PIT and BRG load packages
 
-Run the Stored Procedure create script in SQL Server Management Studio to create the BRG and PIT Stored Procedures.
-
-### Building the PIT and BRG load packages
-
-Once the metadata for the PIT and BRG objects is available in BimlStudio there will also be Batches generated for executing the PIT and BRG stored procedures.
+Once the metadata for the PIT and BRG objects has been loaded in BimlStudio there will be Batches generated for executing the PIT and BRG stored procedures.
 
 The default name for these are built out of the Data Vault load name with either PIT or BRG added, in the trial demo case the following Batch packages are added to the Load Data Vault SSIS project:
 

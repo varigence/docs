@@ -6,6 +6,8 @@ title: Installing BimlFlex
 
 BimlFlex is provided in a role-based, consolidated installer. This allows all parts of the framework to be installed and upgraded through a single installation.
 
+![Installing BimlFlex -center](https://www.youtube.com/watch?v=T0PvDwfYqWo?rel=0&autoplay=0 "Installing BimlFlex")
+
 The following installers are available:
 
 * BimlFlex Developer  

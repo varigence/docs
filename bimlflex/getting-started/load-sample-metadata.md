@@ -1,22 +1,16 @@
 ---
 uid: bimlflex-load-sample-metadata
-title: Load sample metadata
+title: Load Sample Metadata
 ---
-# Load sample metadata or default configurations
+# Load Sample Metadata and Default Configurations
 
-There are several sets of sample metadata and configurations provided through the BimlFlex app.
+![Load Sample Metadata -center](https://www.youtube.com/watch?v=2rL853XpST4?rel=0&autoplay=0 "Load Sample Metadata")
 
-Use the BimlFlex app to load the sample metadata or the default configurations to the project.
+There are several sets of sample metadata and configurations provided through the BimlFlex App.
 
-## Detailed Steps
+In the BimlFlex App, use the Actions pane on the home page to load sample metadata to the current metadata customer.
 
-The following detailed steps walks through the loading of the BimlFlex sample metadata
-
-Create a new BimlFlex customer or reuse an existing customer metadata set.
-
-In the BimlFlex App, use the Actions pane on the home page to load either sample metadata or defaults to either the current metadata customer or a new version.
-
-The BimlFlex getting started guide starts with the `01 - Staring Point for MSSQL` sample metadata loaded.
+The BimlFlex getting started guide starts with the `01 - Starting Point for MSSQL` sample metadata loaded. This includes sample Connections, Batches and Projects to load data from the AdventureWorksLT source database.
 
 ## Sample Metadata sets
 
@@ -25,8 +19,6 @@ The BimlFlex getting started guide starts with the `01 - Staring Point for MSSQL
     Use this starting point to import metadata from AdventureWorksLT to build the Data Warehouse
 * 02 - After Import before Data Vault Modeling for MSSQL
     Includes imported metadata from the AdventureWorksLT source
-* 03 - After Data Vault Modeling before Accelerator for MSSQL
-    Includes modeled metadata from AdventureWorksLT, ready for Data Vault acceleration
 
 ## Sample Configurations
 

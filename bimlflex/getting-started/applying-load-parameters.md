@@ -4,7 +4,10 @@ title: Applying Load Parameters
 ---
 # Applying Load Parameters
 
-How to derive a valid delta is an important steps in the analysis of a source system.
+Applying Load Parameters
+![Applying Load Parameters -center](https://www.youtube.com/watch?v=7GwiIC5vbs8?rel=0&autoplay=0 "Applying Load Parameters")
+
+The way the load process should derive a valid delta is an important steps in the analysis of a source system.
 
 The delta is the set of changes that has happened in the source since the last load into the Data Warehouse.
 
@@ -18,25 +21,22 @@ BimlFlex has direct support for parameter management, and can either use a simpl
 
 The load process can use any number of parameters and the get and set process can be tweaked to match the sourcing requirements through the Extension Points feature.
 
-For the getting started process, a high watermark load parameter is used. The AdventureWorksLT source system has been analyzed and the `ModifiedDate` column has been determined to be trustworthy enough to be used as a high watermark column. Table loads can use this column as a parameter to only get the data that has changed since last load.
+For the getting started process, a high watermark load parameter is used. The AdventureWorksLT source system has been analyzed, and the `ModifiedDate` column has been determined to be trustworthy enough to be used as a high watermark column. Table loads can use this column as a parameter to only get the data that has changed since last load.
 
-Add the following metadata to the Parameters page to add load parameters to the SalesOrderDetail and SalesOrderHeader source tables.
+Add load parameters through the BimlFlex App on the source objects.
 
-| Connection       | Object                   | ColumnName   | ParameterName  | ParameterOperator | ParameterDefault | ParameterDataType | ParameterSql |
-| ---------------- | ------------------------ | ------------ | -------------- | ----------------- | ---------------- | ----------------- | ------------ |
-| AdventureWorksLT | SalesLT.SalesOrderDetail | ModifiedDate | LastLoadedDate | >                 | 1900-01-01       | String            | MAX(@@this)  |
-| AdventureWorksLT | SalesLT.SalesOrderHeader | ModifiedDate | LastLoadedDate | >                 | 1900-01-01       | String            | MAX(@@this)  |
+The `Parameter` name is used in the parameter management as the descriptive name.
 
-The parameters are defined per source object and source column name.
+The `Default` value is used when there is no existing value stored, such as the first time the data is loaded.
 
-The Parameter Name is used in the parameter management as the descriptive name.
+The `Parameter SQL` is the query that will be run on the Staging table after the load completes to identify the next load from parameter value. The getting started process uses the following sample SQL statement to get the maximum modified date after load:
 
-The default value is used when there is no existing value stored, such as the first time the data is loaded.
-
-The `ParameterSql` is the query that will be run on the Staging table after the load completes to identify the next load from parameter value.
+```sql
+CONVERT(VARCHAR(23),MAX(@@this),121)
+```
 
 The `@@this` shortcut refers to the current `ColumnName`.
 
 The extract packages are expanded with the required get and set parameter tasks and the source queries are expanded with the required `WHERE` SQL syntax to only load data that changed since last load.
 
-As the parameters are stored in the `[ssis].[ConfigVariable]` table in the BimlCatalog database it is necessary to reset these if a new initial load is performed, such as after rebuilding the persistent staging tables. If the tables are emptied and the load parameter is kept, a package execution will not load any of the existing source data to the staging tables.
+As the parameters are stored in the BimlCatalog database it is necessary to reset these if a new initial load is performed, such as after rebuilding the persistent staging tables in a getting started scenario. If the tables are emptied and the load parameter is kept, a package execution will not load any of the existing source data to the staging tables.
