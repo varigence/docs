@@ -10,11 +10,7 @@ These settings drive the behavior of the BimlFlex product.
 
 By changing settings, the produced artifacts can adapt to specific requirements for file locations, naming conventions, data conventions etc.
 
-The settings defaults are the Varigence recommended values and there is no need to change or configure unless there is a requirement to change specific behaviors. Align these settings with the organizations best practices and environmental requirements.
-
-The settings are available in the Settings sheet in the BimlFlex Excel metadata management tool.
-
-![Settings Sheet -center -50%](images/bimlflex-ss-v5-excel-settings-sheet.png "Settings Sheet")
+Align these settings with the organizations best practices and environmental requirements.
 
 ## Metadata column overview
 
