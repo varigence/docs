@@ -20,7 +20,10 @@ if (stopWords !== null && !isEmpty(searchData)) {
 
     for (var prop in searchData) {
       if (searchData.hasOwnProperty(prop)) {
-        this.add(searchData[prop]);
+        var dataItem = searchData[prop];
+        if (!prop.startsWith('biml/api-reference') || dataItem.title.startsWith('Class') || dataItem.title.startsWith('Enum')) {
+          this.add(dataItem);
+        }
       }
     }
 
