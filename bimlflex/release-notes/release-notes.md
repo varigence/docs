@@ -5,7 +5,7 @@ name: BimlFlex Release Notes
 # Release Notes
 
 > [!NOTE]
-> Please make sure databases and projects are backed up prior to upgrading
+> Please make sure databases and projects are backed up prior to upgrading.  
 > Please email bimlflex-support@varigence.com with any installation or upgrade issues
 
 ## BimlFlex 2019
