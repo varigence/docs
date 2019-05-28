@@ -63,6 +63,25 @@ Regardless of if the Builds are automated and triggered on push or PR, scheduled
 
 Sample Automation process and sample scripts
 
+Download links to sample files described below:
+
+* [_1.build_sql_bimlc.bat](resources/_1.build_sql_bimlc.bat)
+* [_1.build_sql_msbuild.bat](resources/_1.build_sql_msbuild.bat)
+* [_2.build_sql_Dacpac.bat](resources/_2.build_sql_Dacpac.bat)
+* [_3.deploy_sql_Dacpac.bat](resources/_3.deploy_sql_Dacpac.bat)
+* [_4.build_ssis_bimlc.bat](resources/_4.build_ssis_bimlc.bat)
+* [_4.build_ssis_msbuild.bat](resources/_4.build_ssis_msbuild.bat)
+* [_5.build_ssis_ispaq.bat](resoures/_5.build_ssis_ispaq.bat)
+* [_6.deploy_ssis_ispac.bat](resources/_6.deploy_ssis_ispac.bat)
+* [SqlOnly.bimlb.settings](resources/SqlOnly.bimlb.settings)
+* [SsisOnly.bimlb.settings](resources/SsisOnly.bimlb.settings)
+* [SqlOnly.mst.bimlc.resp](resources/SqlOnly.mst.bimlc.resp)
+* [SqlOnly.mst.ProjectView.bimlproj](resources/SqlOnly.mst.ProjectView.bimlproj)
+* [SqlOnly.mst.resp](resources/SqlOnly.mst.resp)
+* [SsisOnly.mst.bimlc.resp](resources/SsisOnly.mst.bimlc.resp)
+* [SsisOnly.mst.ProjectView.bimlproj](resources/SsisOnly.mst.ProjectView.bimlproj)
+* [SsisOnly.mst.resp](resources/SsisOnly.mst.resp)
+
 1. Build the SQL Server SSDT database projects
 
 This step can either use the Biml Compiler or MSBuild to build the artifacts. It connects to the metadata instance and ejects the SSDT Projects. Note that there is an SSDT Project per database.
@@ -85,12 +104,20 @@ This sample script loops through all databases in the defined list and builds th
 >[!NOTE]
 >Note that the destination folder for the created Dacpac is different for this process compared to the Visual Studio based one. By default, Visual Studio ejects the Dacpac to a subfolder called `Development`
 
+3. Deploy the Dacpac to SQL Server
+
+Once the Dacpac is created (including any custom, bespoke, migration logic) it can be deployed to the destination SQL Server.
+
+The deployment step uses SqlPackage.exe to deploy the Dacpac to the specified destination SQL Server.
+
 ## Sample Scripts
+
+sample scripts with download links
 
 ### Sample Script using the Biml compiler
 
 location: project root folder
-filename: `_1.build_sql_bimlc.bat`
+filename/sample: [`_1.build_sql_bimlc.bat`](resources/_1.build_sql_bimlc.bat)
 
 ```batchfile
 @echo off
@@ -109,7 +136,7 @@ rem 32 bit: %programfiles(x86)%
 ### Sample Script using MSBuild
 
 location: project root folder
-filename: `_1.build_sql_msbuild.bat`
+filename/sample: [`_1.build_sql_msbuild.bat`](resources/_1.build_sql_msbuild.bat)
 
 ```batchfile
 @echo off
@@ -123,16 +150,10 @@ rem call msbuild.exe with the specific resp file, use the path to a compatible, 
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"SqlOnly.mst.resp"
 ```
 
-3. Deploy the Dacpac to SQL Server
-
-Once the Dacpac is created (including any custom, bespoke, migration logic) it can be deployed to the destination SQL Server.
-
-The deployment step uses SqlPackage.exe to deploy the Dacpac to the specified destination SQL Server.
-
-### Sample Script for deployment
+### Sample Script for Dacpac build
 
 location: project root folder  
-filename: `_2.build_sql_Dacpac.bat`
+filename/sample: [`_2.build_sql_Dacpac.bat`](resources/_2.build_sql_Dacpac.bat)
 
 ```batchfile
 @echo off
@@ -159,7 +180,7 @@ for %%i in %DatabaseList% do "%programfiles(x86)%\Microsoft Visual Studio\%VSVer
 ### Sample Script to deploy Dacpac
 
 location: project root folder  
-filename: `_3.deploy_sql_Dacpac.bat`
+filename/sample: [`_3.deploy_sql_Dacpac.bat`](resources/_3.deploy_sql_Dacpac.bat)
 
 ```batchfile
 @echo off
@@ -185,7 +206,7 @@ for %%i in %DatabaseList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServe
 ## Sample Script to build SSIS Project with Biml Compiler
 
 location: project root folder  
-filename: `_4.build_ssis_bimlc.bat`
+filename/sample: [`_4.build_ssis_bimlc.bat`](resources/_4.build_ssis_bimlc.bat)
 
 ```batchfile
 @echo off
@@ -202,7 +223,7 @@ rem call the Biml Compiler with the specific resp file to build the SSIS project
 ## Sample File to build SSIS Packages with MSBuild
 
 location: project root folder  
-filename: `_4.build_ssis_msbuild.bat`
+filename/sample: [`_4.build_ssis_msbuild.bat`](resources/_4.build_ssis_msbuild.bat)
 
 ```batchfile
 @echo off
@@ -219,7 +240,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"SsisOnly.mst.resp"
 ## Optional Step to build ispac files
 
 location: project root folder
-filename: `_5.build_ssis_ispaq.bat`
+filename/sample: [`_5.build_ssis_ispaq.bat`](resoures/_5.build_ssis_ispaq.bat)
 
 >[!NOTE]
 >Note that the normal BimlStudio build creates the ispac file in the SSIS build step. This optional, separate, step requires a compatible version of Visual Studio capable of building ispac files.
@@ -245,7 +266,7 @@ for %%i in %ProjectList% do "%programfiles(x86)%\%VisualStudioPath%\Common7\IDE\
 ## Deploy ispac file with SSIS Packages to SSIS Catalog
 
 location: project root folder  
-filename: `_6.deploy_ssis_ispac.bat`
+filename/sample: [`_6.deploy_ssis_ispac.bat`](resources/_6.deploy_ssis_ispac.bat)
 
 ```batchfile
 @echo off
@@ -275,7 +296,7 @@ for %%i in %ProjectList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServer
 ## Sample settings file for SQL Only builds
 
 location: project root folder  
-filename: `SqlOnly.bimlb.settings`
+filename/sample: [`SqlOnly.bimlb.settings`](resources/SqlOnly.bimlb.settings)
 
 Update this file to reflect project settings and configurations
 
@@ -342,7 +363,7 @@ Update this file to reflect project settings and configurations
 ## Sample settings file for SSIS Only builds
 
 location: project root folder  
-filename: `SsisOnly.bimlb.settings`
+filename/sample: [`SsisOnly.bimlb.settings`](resources/SsisOnly.bimlb.settings)
 
 Update this file to reflect project settings and configurations
 
@@ -409,7 +430,7 @@ Update this file to reflect project settings and configurations
 ## Sample SqlOnly.mst.bimlc.resp settings file
 
 location: project root folder  
-filename: `SqlOnly.mst.bimlc.resp`
+filename/sample: [`SqlOnly.mst.bimlc.resp`](resources/SqlOnly.mst.bimlc.resp)
 
 ```bimlc.resp
 --targetPath="output" --buildDocumentation- --docOutputPath="documentation" --bundleSetting="SqlOnly.bimlb.settings" --version=SqlServer2017 --version=Ssas2017 --version=SsasTabular2017 --version=Ssis2017 --ssisDeploymentModel=Project --ddlBuildMode=None --warnAsError=False --warn=4 --cleanOutputFolder=True --EnableBimlFlex=True
@@ -418,7 +439,7 @@ filename: `SqlOnly.mst.bimlc.resp`
 ## Sample SqlOnly.mst.ProjectView.bimlproj settings file
 
 location: project root folder  
-filename: `SqlOnly.mst.ProjectView.bimlproj`
+filename/sample: [`SqlOnly.mst.ProjectView.bimlproj`](resources/SqlOnly.mst.ProjectView.bimlproj)
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -442,7 +463,7 @@ filename: `SqlOnly.mst.ProjectView.bimlproj`
 ## Sample SqlOnly.mst.resp settings file
 
 location: project root folder  
-filename: `SqlOnly.mst.resp`
+filename/sample: [`SqlOnly.mst.resp`](resources/SqlOnly.mst.resp)
 
 ```resp
 "SqlOnly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2017 /p:SsasVersion=Ssas2017 /p:SsasTabularVersion=SsasTabular2017 /p:SsisVersion=Ssis2017 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:EnableBimlFlex=True /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files\Varigence\BimlStudio\5.0"
@@ -451,7 +472,7 @@ filename: `SqlOnly.mst.resp`
 ## Sample SsisOnly.mst.bimlc.resp settings file
 
 location: project root folder  
-filename: `SsisOnly.mst.bimlc.resp`
+filename/sample: [`SsisOnly.mst.bimlc.resp`](resources/SsisOnly.mst.bimlc.resp)
 
 ```resp
 --targetPath="output" --buildDocumentation- --docOutputPath="documentation" --bundleSetting="SsisOnly.bimlb.settings" --version=SqlServer2017 --version=Ssas2017 --version=SsasTabular2017 --version=Ssis2017 --ssisDeploymentModel=Project --ddlBuildMode="None" --warnAsError=False --warn=4 --cleanOutputFolder=True --EnableBimlFlex=True
@@ -460,7 +481,7 @@ filename: `SsisOnly.mst.bimlc.resp`
 ## Sample SsisOnly.mst.ProjectView.bimlproj settings file
 
 location: project root folder  
-filename: `SsisOnly.mst.ProjectView.bimlproj`
+filename/sample: [`SsisOnly.mst.ProjectView.bimlproj`](resources/SsisOnly.mst.ProjectView.bimlproj)
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -484,7 +505,7 @@ filename: `SsisOnly.mst.ProjectView.bimlproj`
 ## Sample SsisOnly.mst.resp settings file
 
 location: project root folder  
-filename: `SsisOnly.mst.resp`
+filename/sample: [`SsisOnly.mst.resp`](resources/SsisOnly.mst.resp)
 
 ```resp
 "SsisOnly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2017 /p:SsasVersion=Ssas2017 /p:SsasTabularVersion=SsasTabular2017 /p:SsisVersion=Ssis2017 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:EnableBimlFlex=True /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files (x86)\Varigence\BimlStudio\5.0"

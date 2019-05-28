@@ -1,0 +1,57 @@
+[
+    {
+        "Namespace": "",
+        "Name": "CustomerUID",
+        "Value": "Your-Customer-Guid-Here"
+    },
+    {
+        "Namespace": "",
+        "Name": "Server",
+        "Value": "."
+    },
+    {
+        "Namespace": "",
+        "Name": "Database",
+        "Value": "BimlFlex"
+    },
+    {
+        "Namespace": "",
+        "Name": "Version",
+        "Value": "Version 1"
+    },
+    {
+        "Namespace": "",
+        "Name": "Provider",
+        "Value": "SQLNCLI11"
+    },
+    {
+        "Namespace": "",
+        "Name": "UseWindowsAuthentication",
+        "Value": true
+    },
+    {
+        "Namespace": "",
+        "Name": "UserId",
+        "Value": ""
+    },
+    {
+        "Namespace": "",
+        "Name": "Password",
+        "Value": ""
+    },
+    {
+        "Namespace": "",
+        "Name": "RememberPassword",
+        "Value": false
+    },
+    {
+        "Namespace": "",
+        "Name": "IsUserMode",
+        "Value": false
+    },
+    {
+        "Namespace": "",
+        "Name": "ToggledOffFiles",
+        "Value": "BimlScripts\\1.00.1-flx-src-stg-main.biml|BimlScripts\\1.20.1-flx-psa-stg-main.biml|BimlScripts\\1.70.1-flx-src-to-file-main.biml|BimlScripts\\1.80.1-flx-src-to-file-main-express.biml|BimlScripts\\2.20.1-flx-dv-source-main.biml|BimlScripts\\3.10.1-flx-dwh-main.biml|BimlScripts\\3.20.1-flx-mds-main.biml|BimlScripts\\3.50.1-flx-dwh-sql-main.biml|BimlScripts\\3.50.2-flx-dwh-source-sql-main.biml|BimlScripts\\_OutputFlatBiml.biml|BimlScripts\\_OutputFlatDDL.biml"
+    }
+]
