@@ -355,7 +355,7 @@ Update this file to reflect project settings and configurations
     {
         "Namespace": "",
         "Name": "ToggledOffFiles",
-        "Value": "BimlScripts\\1.00.1-flx-src-stg-main.biml|BimlScripts\\1.20.1-flx-psa-stg-main.biml|BimlScripts\\1.70.1-flx-src-to-file-main.biml|BimlScripts\\1.80.1-flx-src-to-file-main-express.biml|BimlScripts\\2.20.1-flx-dv-source-main.biml|BimlScripts\\3.10.1-flx-dwh-main.biml|BimlScripts\\3.20.1-flx-mds-main.biml|BimlScripts\\3.50.1-flx-dwh-sql-main.biml|BimlScripts\\3.50.2-flx-dwh-source-sql-main.biml|BimlScripts\\_OutputFlatBiml.biml|BimlScripts\\_OutputFlatDDL.biml"
+        "Value": "BimlScripts\\1.00.1-flx-src-stg-main.biml|BimlScripts\\1.00.2-flx-src-stg-delete.biml|BimlScripts\\1.20.1-flx-psa-stg-main.biml|BimlScripts\\1.70.1-flx-src-to-file-main.biml|BimlScripts\\1.80.1-flx-src-to-file-main-express.biml|BimlScripts\\2.20.1-flx-dv-source-main.biml|BimlScripts\\3.10.1-flx-dwh-main.biml|BimlScripts\\3.20.1-flx-mds-main.biml|BimlScripts\\3.50.1-flx-dwh-sql-main.biml|BimlScripts\\3.50.2-flx-dwh-source-sql-main.biml|BimlScripts\\_OutputFlatBiml.biml|BimlScripts\\_OutputFlatDDL.biml"
     }
 ]
 ```
