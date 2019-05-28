@@ -71,7 +71,7 @@ Download links to sample files described below:
 * [_3.deploy_sql_Dacpac.bat](resources/_3.deploy_sql_Dacpac.bat)
 * [_4.build_ssis_bimlc.bat](resources/_4.build_ssis_bimlc.bat)
 * [_4.build_ssis_msbuild.bat](resources/_4.build_ssis_msbuild.bat)
-* [_5.build_ssis_ispaq.bat](resoures/_5.build_ssis_ispaq.bat)
+* [_5.build_ssis_ispaq.bat](resources/_5.build_ssis_ispaq.bat)
 * [_6.deploy_ssis_ispac.bat](resources/_6.deploy_ssis_ispac.bat)
 * [SqlOnly.bimlb.settings](resources/SqlOnly.bimlb.settings)
 * [SsisOnly.bimlb.settings](resources/SsisOnly.bimlb.settings)
@@ -240,7 +240,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"SsisOnly.mst.resp"
 ## Optional Step to build ispac files
 
 location: project root folder  
-filename/sample: [`_5.build_ssis_ispaq.bat`](resoures/_5.build_ssis_ispaq.bat)
+filename/sample: [`_5.build_ssis_ispaq.bat`](resources/_5.build_ssis_ispaq.bat)
 
 >[!NOTE]
 >Note that the normal BimlStudio build creates the ispac file in the SSIS build step. This optional, separate, step requires a compatible version of Visual Studio capable of building ispac files.
