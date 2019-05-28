@@ -71,7 +71,7 @@ Download links to sample files described below:
 * [_3.deploy_sql_Dacpac.bat](resources/_3.deploy_sql_Dacpac.bat)
 * [_4.build_ssis_bimlc.bat](resources/_4.build_ssis_bimlc.bat)
 * [_4.build_ssis_msbuild.bat](resources/_4.build_ssis_msbuild.bat)
-* [_5.build_ssis_ispaq.bat](resoures/_5.build_ssis_ispaq.bat)
+* [_5.build_ssis_ispaq.bat](resources/_5.build_ssis_ispaq.bat)
 * [_6.deploy_ssis_ispac.bat](resources/_6.deploy_ssis_ispac.bat)
 * [SqlOnly.bimlb.settings](resources/SqlOnly.bimlb.settings)
 * [SsisOnly.bimlb.settings](resources/SsisOnly.bimlb.settings)
@@ -240,7 +240,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"SsisOnly.mst.resp"
 ## Optional Step to build ispac files
 
 location: project root folder  
-filename/sample: [`_5.build_ssis_ispaq.bat`](resoures/_5.build_ssis_ispaq.bat)
+filename/sample: [`_5.build_ssis_ispaq.bat`](resources/_5.build_ssis_ispaq.bat)
 
 >[!NOTE]
 >Note that the normal BimlStudio build creates the ispac file in the SSIS build step. This optional, separate, step requires a compatible version of Visual Studio capable of building ispac files.
@@ -355,7 +355,7 @@ Update this file to reflect project settings and configurations
     {
         "Namespace": "",
         "Name": "ToggledOffFiles",
-        "Value": "BimlScripts\\1.00.1-flx-src-stg-main.biml|BimlScripts\\1.20.1-flx-psa-stg-main.biml|BimlScripts\\1.70.1-flx-src-to-file-main.biml|BimlScripts\\1.80.1-flx-src-to-file-main-express.biml|BimlScripts\\2.20.1-flx-dv-source-main.biml|BimlScripts\\3.10.1-flx-dwh-main.biml|BimlScripts\\3.20.1-flx-mds-main.biml|BimlScripts\\3.50.1-flx-dwh-sql-main.biml|BimlScripts\\3.50.2-flx-dwh-source-sql-main.biml|BimlScripts\\_OutputFlatBiml.biml|BimlScripts\\_OutputFlatDDL.biml"
+        "Value": "BimlScripts\\1.00.1-flx-src-stg-main.biml|BimlScripts\\1.00.2-flx-src-stg-delete.biml|BimlScripts\\1.20.1-flx-psa-stg-main.biml|BimlScripts\\1.70.1-flx-src-to-file-main.biml|BimlScripts\\1.80.1-flx-src-to-file-main-express.biml|BimlScripts\\2.20.1-flx-dv-source-main.biml|BimlScripts\\3.10.1-flx-dwh-main.biml|BimlScripts\\3.20.1-flx-mds-main.biml|BimlScripts\\3.50.1-flx-dwh-sql-main.biml|BimlScripts\\3.50.2-flx-dwh-source-sql-main.biml|BimlScripts\\_OutputFlatBiml.biml|BimlScripts\\_OutputFlatDDL.biml"
     }
 ]
 ```
