@@ -116,7 +116,7 @@ sample scripts with download links
 
 ### Sample Script using the Biml compiler
 
-location: project root folder
+location: project root folder  
 filename/sample: [`_1.build_sql_bimlc.bat`](resources/_1.build_sql_bimlc.bat)
 
 ```batchfile
@@ -135,7 +135,7 @@ rem 32 bit: %programfiles(x86)%
 
 ### Sample Script using MSBuild
 
-location: project root folder
+location: project root folder  
 filename/sample: [`_1.build_sql_msbuild.bat`](resources/_1.build_sql_msbuild.bat)
 
 ```batchfile
@@ -239,7 +239,7 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"SsisOnly.mst.resp"
 
 ## Optional Step to build ispac files
 
-location: project root folder
+location: project root folder  
 filename/sample: [`_5.build_ssis_ispaq.bat`](resoures/_5.build_ssis_ispaq.bat)
 
 >[!NOTE]
