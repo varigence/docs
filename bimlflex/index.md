@@ -15,6 +15,6 @@ The BimlFlex User Guide describes detailed aspects of the BimlFlex framework
 
 BimlFlex Tips & Tricks is a set of focused design and implementation notes that quickly illustrates a core feature, nifty trick or similar
 
-## [Release Notes](release-notes/index.md)
+## [Release Notes](release-notes/release-notes.md)
 
 The latest Release Notes for BimlFlex

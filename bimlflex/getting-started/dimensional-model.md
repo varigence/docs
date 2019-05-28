@@ -79,26 +79,27 @@ The source views on the Data Vault can either read from the base Data Vault tabl
 
 ### Source Views
 
-Raw Data Vault Based:
+<!-- Raw Data Vault Based:
 
 * [Customer Dimension](resources/dimensional-sample-3-layer-rdv-src-dimcustomer.md)
 * [Date Dimension View](resources/dimensional-sample-dim-date.md)
 * [SalesOrder Dimension](resources/dimensional-sample-3-layer-rdv-src-dimsalesorder.md)
-* [SalesOrder Fact](resources/dimensional-sample-3-layer-rdv-src-factsalesorder.md)
+* [SalesOrder Fact](resources/dimensional-sample-3-layer-rdv-src-factsalesorder.md) -->
 
 Business Data Vault Based (on top of Bridge and Point In Time tables):
 
-* [Customer Dimension](resources/dimensional-sample-3-layer-bdv-src-dimcustomer.md)
+* [Address Dimension](resources/dimensional-sample-3-layer-dbo-dimaddress.md)
+* [Customer Dimension](resources/dimensional-sample-3-layer-dbo-dimcustomer.md)
+* [Product Dimension](resources/dimensional-sample-3-layer-dbo-dimproduct.md)
 * [Date Dimension View](resources/dimensional-sample-dim-date.md)
-* [SalesOrder Dimension](resources/dimensional-sample-3-layer-bdv-src-dimsalesorder.md)
-* [SalesOrder Fact](resources/dimensional-sample-3-layer-bdv-src-factsalesorder.md)
+* [SalesOrder Fact](resources/dimensional-sample-3-layer-dbo-factsalesorder.md)
 
-Staging, 2-layer, Based:
+<!-- Staging, 2-layer, Based:
 
 * [Customer Dimension](resources/dimensional-sample-2-layer-src-dimcustomer.md)
 * [Date Dimension View](resources/dimensional-sample-dim-date.md)
 * [SalesOrder Dimension](resources/dimensional-sample-2-layer-src-dimsalesorder.md)
-* [SalesOrder Fact](resources/dimensional-sample-2-layer-src-factsalesorder.md)
+* [SalesOrder Fact](resources/dimensional-sample-2-layer-src-factsalesorder.md) -->
 
 ### Creating the Date Dimension
 

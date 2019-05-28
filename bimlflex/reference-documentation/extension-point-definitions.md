@@ -3,16 +3,13 @@ uid: bimlflex-extension-point-definitions
 title: BimlFlex Extension Point Definitions
 ---
 
-# Extension Point Overview
-
-The usage of Extension Points is described in the @bimlflex-extension-points documentation
-
 ## BimlFlex Extension Points
 
 ## Global
 
-### BimlFlex Global Settings
-Internal Global Extension Point that control environment settings. This has been superseded by built-in BimlStudio features.
+### BimlFlex Global Settings
+
+Internal Global Extension Point that control environment settings. This has been superseded by built-in BimlStudio features.
 
 #### Outputs
 
@@ -52,8 +49,10 @@ CustomOutput.IsQuickParse = GetBundleSetting("BimlFlex.bimlb", null, "IsQuickPar
 
 ## Project
 
-### Project Parameter
-Add additional parameters to Project
+
+### Project Parameter
+
+Add additional parameters to Project
 
 
 #### Sample Code
@@ -68,8 +67,10 @@ CustomOutput.IsQuickParse = GetBundleSetting("BimlFlex.bimlb", null, "IsQuickPar
 <Parameter Name="UserPassword" DataType="String" IsRequired="true">P@ssw0rd!</Parameter>
 ```
 ### Project Script File
-Add a ScriptTask or ScriptComponent to the Project
-#### Parameters
+
+Add a ScriptTask or ScriptComponent to the Project
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -122,9 +123,12 @@ public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTAR
 
 ## Connection
 
-### Connection Override
-Configure Override for a Connection
-#### Parameters
+
+### Connection Override
+
+Configure Override for a Connection
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -144,8 +148,10 @@ public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTAR
   ObjectData="&lt;ODataConnectionManager UserName=&quot;&quot; Url=&quot;https://services.odata.org/V3/Northwind/Northwind.svc&quot; ConnectionString=&quot;Service Document Url=https://services.odata.org/V3/Northwind/Northwind.svc;&quot; MicrosoftOnlineServicesAuth=&quot;False&quot; AuthType=&quot;WindowsAuthentication&quot; /&gt;" />
 ```
 ### Connection Expression
-Configure Expressions for a Connection
-#### Parameters
+
+Configure Expressions for a Connection
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -166,9 +172,12 @@ public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTAR
 
 ## Batch
 
-### Parameter Bindings
-Configure parameter bindings for Package Execute Package Task
-#### Parameters
+
+### Parameter Bindings
+
+Configure parameter bindings for Package Execute Package Task
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -187,8 +196,10 @@ public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTAR
 </ParameterBindings>
 ```
 ### Batch Variable
-Configure additional variables for the Batch or override default BimlFlex variables.
-#### Parameters
+
+Configure additional variables for the Batch or override default BimlFlex variables.
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -204,8 +215,10 @@ public partial class ScriptMain : Microsoft.SqlServer.Dts.Tasks.ScriptTask.VSTAR
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>
 ```
 ### Batch Package Configurations
-Add PackageConfigurations if you have unselected Use Project Deployment
-#### Parameters
+
+Add PackageConfigurations if you have unselected Use Project Deployment
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -231,8 +244,10 @@ Configurations can also be added to the Batch using the PackageConfigurations co
 </PackageConfiguration>
 ```
 ### Batch Connection
-Configure additional Connection references to the batch package
-#### Parameters
+
+Configure additional Connection references to the batch package
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -249,8 +264,10 @@ Configurations can also be added to the Batch using the PackageConfigurations co
 <Connection ConnectionName="MY_SOURCE" />
 ```
 ### Batch Pre Process
-Configure logic that will be injected before the main Batch process
-#### Parameters
+
+Configure logic that will be injected before the main Batch process
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -281,8 +298,10 @@ Configurations can also be added to the Batch using the PackageConfigurations co
 </Container>
 ```
 ### Batch Post Process
-Configure logic that will be injected after the main Batch process
-#### Parameters
+
+Configure logic that will be injected after the main Batch process
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -318,9 +337,12 @@ Configurations can also be added to the Batch using the PackageConfigurations co
 
 ## Object
 
-### Package Variable
-Configure additional package variables or override default BimlFlex variables
-#### Parameters
+
+### Package Variable
+
+Configure additional package variables or override default BimlFlex variables
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -344,8 +366,10 @@ Configurations can also be added to the Batch using the PackageConfigurations co
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>
 ```
 ### Package Configurations
-Add PackageConfigurations if you have unselected Use Project Deployment
-#### Parameters
+
+Add PackageConfigurations if you have unselected Use Project Deployment
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -373,8 +397,10 @@ configurationPath = string.IsNullOrEmpty(configurationPath) ? @"C:\Varigence\Con
 </PackageConfiguration>
 ```
 ### Package Parameter
-Configure parameter bound values to the package
-#### Parameters
+
+Configure parameter bound values to the package
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -398,8 +424,10 @@ configurationPath = string.IsNullOrEmpty(configurationPath) ? @"C:\Varigence\Con
 <Parameter Name="BatchInstanceId" DataType="String">0</Parameter>
 ```
 ### Package Add Connection Reference
-Configure additional Connection references to the object package
-#### Parameters
+
+Configure additional Connection references to the object package
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -422,8 +450,10 @@ configurationPath = string.IsNullOrEmpty(configurationPath) ? @"C:\Varigence\Con
 <Connection ConnectionName="MY_SOURCE" />
 ```
 ### Create Sql
-Configure override Create DDL for a object
-#### Parameters
+
+Configure override Create DDL for a object
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -481,8 +511,10 @@ IF NOT EXISTS (
 GO
 ```
 ### Pre Create Sql
-Configure Sql that will be executed prior to the Create DDL for a object
-#### Parameters
+
+Configure Sql that will be executed prior to the Create DDL for a object
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -498,8 +530,10 @@ ALTER TABLE [awlt].[Account] DROP CONSTRAINT [PK_awlt_Account] WITH ( ONLINE = O
 GO
 ```
 ### Post Create Sql
-Configure Sql that will be executed after the Create DDL for a object
-#### Parameters
+
+Configure Sql that will be executed after the Create DDL for a object
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -519,8 +553,10 @@ ALTER TABLE [awlt].[Account] ADD  CONSTRAINT [PK_awlt_Account] PRIMARY KEY CLUST
 GO
 ```
 ### Source Create Sql
-Configure override Create DDL for a source object like a view.
-#### Parameters
+
+Configure override Create DDL for a source object like a view.
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -586,8 +622,10 @@ INNER JOIN [aw].[SalesLT_ProductCategory] AS pc
 WHERE pmx.[Culture] = 'en'
 ```
 ### Override Sql
-Override the source query SQL generated by BimlFlex
-#### Parameters
+
+Override the source query SQL generated by BimlFlex
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -614,8 +652,10 @@ SELECT DISTINCT [PropertyId]
 FROM [dbo].[MyTable]
 ```
 ### Root Add
-Add element to the root of the BimlFlex project
-#### Parameters
+
+Add element to the root of the BimlFlex project
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -658,8 +698,10 @@ The example below demonstrates adding the required connection and file format.--
 </FileFormats>
 ```
 ### Override Main
-Completely override the main Dataflow (SEQC - Main)
-#### Parameters
+
+Completely override the main Dataflow (SEQC - Main)
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -688,8 +730,10 @@ The example below demonstrates adding the required connection and file format.--
 </Tasks>
 ```
 ### Override Initialize
-Override the initializing of staging tables
-#### Parameters
+
+Override the initializing of staging tables
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -731,8 +775,10 @@ The example below demonstrates adding the required connection and file format.--
 </ExecuteSQL>
 ```
 ### Override Merge
-Override the Merge statement of target tables
-#### Parameters
+
+Override the Merge statement of target tables
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -774,8 +820,10 @@ WHEN NOT MATCHED BY TARGET
 			);
 ```
 ### Dataflow Properties
-Configure logic that will be inject 
-#### Parameters
+
+Configure logic that will be inject 
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -799,8 +847,10 @@ WHEN NOT MATCHED BY TARGET
 <Expression ExternalProperty="SsisBLOBTempStoragePath">@[User::SsisBLOBTempStoragePath]</Expression>
 ```
 ### Pre Dataflow
-Configure logic that will be injected before the main Dataflow
-#### Parameters
+
+Configure logic that will be injected before the main Dataflow
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -845,8 +895,10 @@ WHEN NOT MATCHED BY TARGET
 </ExecuteSQL>
 ```
 ### Post Dataflow
-Configure logic that will be injected after the main Dataflow
-#### Parameters
+
+Configure logic that will be injected after the main Dataflow
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -885,8 +937,10 @@ WHEN NOT MATCHED BY TARGET
 </ExecuteSQL>
 ```
 ### Pre Process
-Configure logic that will be injected before the main Object process
-#### Parameters
+
+Configure logic that will be injected before the main Object process
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -919,8 +973,10 @@ WHEN NOT MATCHED BY TARGET
 </ExecuteSQL>
 ```
 ### Target Pre Process
-Configure logic that will be injected before the main Object process using Source and Target table as parameter
-#### Parameters
+
+Configure logic that will be injected before the main Object process using Source and Target table as parameter
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -951,8 +1007,10 @@ WHEN NOT MATCHED BY TARGET
 </ExecuteSQL>
 ```
 ### Post Process
-Configure logic that will be injected after the main Object process
-#### Parameters
+
+Configure logic that will be injected after the main Object process
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -981,8 +1039,10 @@ WHEN NOT MATCHED BY TARGET
 </ExecuteSQL>
 ```
 ### Target Post Process
-Configure logic that will be injected after the main Object process using Source and Target table as parameter
-#### Parameters
+
+Configure logic that will be injected after the main Object process using Source and Target table as parameter
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1013,8 +1073,10 @@ WHEN NOT MATCHED BY TARGET
 </ExecuteSQL>
 ```
 ### Get Parameter
-Configure override to retrieve parameter values
-#### Parameters
+
+Configure override to retrieve parameter values
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1058,8 +1120,10 @@ WHEN NOT MATCHED BY TARGET
 <#	} #>
 ```
 ### Set Parameter
-Configure override to publish parameter values
-#### Parameters
+
+Configure override to publish parameter values
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1100,8 +1164,10 @@ WHEN NOT MATCHED BY TARGET
 <#	} #>
 ```
 ### Source Override
-Configure override for the Object source transformation node
-#### Parameters
+
+Configure override for the Object source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1133,8 +1199,10 @@ WHEN NOT MATCHED BY TARGET
 </OleDbSource>
 ```
 ### Source Sql
-Configure override for the Object Source Sql
-#### Parameters
+
+Configure override for the Object Source Sql
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1155,8 +1223,10 @@ WHEN NOT MATCHED BY TARGET
 "EXECUTE [dbo].[MyProcedure] @MyParameter = '" + @[User::MyParameter] + "'"
 ```
 ### Source Parameter
-Configure parameters for the Object source transformation node
-#### Parameters
+
+Configure parameters for the Object source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1174,8 +1244,10 @@ WHEN NOT MATCHED BY TARGET
 <Parameter Name="Parameter1" VariableName="User.CurrentModifiedDate" />
 ```
 ### Source Pipeline
-Configure pipeline logic that will be injected after the source transformation node
-#### Parameters
+
+Configure pipeline logic that will be injected after the source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1210,8 +1282,10 @@ WHEN NOT MATCHED BY TARGET
 </DataConversion>
 ```
 ### Source Error Handling
-Configure pipeline logic that will be injected on error of the source transformation node
-#### Parameters
+
+Configure pipeline logic that will be injected on error of the source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1244,8 +1318,10 @@ WHEN NOT MATCHED BY TARGET
 </DataConversion>
 ```
 ### Source File Archive Override
-Configure control flow logic that will override the SC_FILE_ARCHIVE script task call. You might also need to add a ProjectScriptFile.
-#### Parameters
+
+Configure control flow logic that will override the SC_FILE_ARCHIVE script task call. You might also need to add a ProjectScriptFile.
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1278,8 +1354,10 @@ WHEN NOT MATCHED BY TARGET
 </FileSystem>
 ```
 ### Source Property
-Configure additional properties that will be added to source transformation node
-#### Parameters
+
+Configure additional properties that will be added to source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1301,8 +1379,10 @@ WHEN NOT MATCHED BY TARGET
 BindCharColumnAs="true" ExposeCharColumnsAsUnicode="false"
 ```
 ### Source File Loop Expression
-Configure expressions that will be added to source ForEachFileLoop transformation
-#### Parameters
+
+Configure expressions that will be added to source ForEachFileLoop transformation
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1324,8 +1404,10 @@ BindCharColumnAs="true" ExposeCharColumnsAsUnicode="false"
 <Expression PropertyName="Directory">@[$Project::ImportPath]</Expression>
 ```
 ### Staging Target Pipeline
-Configure pipeline logic that will be injected into the source to staging package before the Staging target destination node
-#### Parameters
+
+Configure pipeline logic that will be injected into the source to staging package before the Staging target destination node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1358,8 +1440,10 @@ BindCharColumnAs="true" ExposeCharColumnsAsUnicode="false"
 </DataConversion>
 ```
 ### Persistent Staging Target Pipeline
-Configure pipeline logic that will be injected into the source to staging package before the Persistent Staging target destination node
-#### Parameters
+
+Configure pipeline logic that will be injected into the source to staging package before the Persistent Staging target destination node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1392,8 +1476,10 @@ BindCharColumnAs="true" ExposeCharColumnsAsUnicode="false"
 </DataConversion>
 ```
 ### Staging Initial Target Pipeline
-Configure pipeline logic that will be injected into the source to staging package before the Staging Initial target destination node
-#### Parameters
+
+Configure pipeline logic that will be injected into the source to staging package before the Staging Initial target destination node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1426,8 +1512,10 @@ BindCharColumnAs="true" ExposeCharColumnsAsUnicode="false"
 </DataConversion>
 ```
 ### Persistent Staging Initial Target Pipeline
-Configure pipeline logic that will be injected into the source to staging package before the Persistent Staging Initial target destination node
-#### Parameters
+
+Configure pipeline logic that will be injected into the source to staging package before the Persistent Staging Initial target destination node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1460,8 +1548,10 @@ BindCharColumnAs="true" ExposeCharColumnsAsUnicode="false"
 </DataConversion>
 ```
 ### Lookup Sql
-Override the default generated Lookup Sql
-#### Parameters
+
+Override the default generated Lookup Sql
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1489,8 +1579,10 @@ FROM 	[dim].[MyTable] SRC
 WHERE	SRC.[TenantCode] <> 'UNK'
 ```
 ### Lookup Cache
-Configure a cache file for the Lookup Sql
-#### Parameters
+
+Configure a cache file for the Lookup Sql
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1533,8 +1625,10 @@ WHERE	SRC.[TenantCode] <> 'UNK'</DirectInput>
 </Dataflow>
 ```
 ### Lookup Parameter
-Configure a parameter for the Lookup Sql used by Lookup Cache
-#### Parameters
+
+Configure a parameter for the Lookup Sql used by Lookup Cache
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1558,8 +1652,10 @@ WHERE	SRC.[TenantCode] <> 'UNK'</DirectInput>
 <Parameter Name="Parameter1" VariableName="User.CurrentModifiedDate" />
 ```
 ### Lookup Join
-Configure a Join statement that will be added to the Lookup Sql
-#### Parameters
+
+Configure a Join statement that will be added to the Lookup Sql
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1584,8 +1680,10 @@ INNER JOIN [dbo].[MyJoinTable] LKP
 	ON	SRC.[MyTableCode] = LKP.[MyTableCode]
 ```
 ### Target Override
-Configure override for the Object target transformation node
-#### Parameters
+
+Configure override for the Object target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1618,8 +1716,10 @@ INNER JOIN [dbo].[MyJoinTable] LKP
 </OleDbDestination>
 ```
 ### Target Pipeline
-Configure pipeline logic that will be injected before the target transformation node
-#### Parameters
+
+Configure pipeline logic that will be injected before the target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1655,8 +1755,10 @@ INNER JOIN [dbo].[MyJoinTable] LKP
 </DataConversion>
 ```
 ### Target Property
-Configure additional properties that will be added to target transformation node
-#### Parameters
+
+Configure additional properties that will be added to target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1678,8 +1780,10 @@ INNER JOIN [dbo].[MyJoinTable] LKP
 KeepNulls="true" KeepIdentity="false"
 ```
 ### Delete Initialize Raw File Dataflow Override
-Configure pipeline logic that will override the Delete Initialize Raw File Dataflow
-#### Parameters
+
+Configure pipeline logic that will override the Delete Initialize Raw File Dataflow
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1732,8 +1836,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </Dataflow>
 ```
 ### Delete Detect Dataflow Override
-Configure pipeline logic that will override the Delete Detect Dataflow
-#### Parameters
+
+Configure pipeline logic that will override the Delete Detect Dataflow
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1777,8 +1883,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </Dataflow>
 ```
 ### Delete Detect Raw File Override
-Override the Raw File Format use by the Delete Detection process
-#### Parameters
+
+Override the Raw File Format use by the Delete Detection process
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1822,9 +1930,12 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 
 ## Data Vault
 
-### Raw Data Vault Source Override
-Configure override for the Data Vault Source transformation node
-#### Parameters
+
+### Raw Data Vault Source Override
+
+Configure override for the Data Vault Source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1856,8 +1967,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </OleDbSource>
 ```
 ### Raw Data Vault Source Pipeline Pre
-Configure pipeline logic that will be injected after the Data Vault source transformation node
-#### Parameters
+
+Configure pipeline logic that will be injected after the Data Vault source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1891,8 +2004,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Raw Data Vault Source Pipeline Post
-Configure pipeline logic that will be injected after the Data Vault source transformations
-#### Parameters
+
+Configure pipeline logic that will be injected after the Data Vault source transformations
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1926,8 +2041,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Raw Data Vault Target Pipeline Pre
-Configure pipeline logic that will be injected before the target transformations
-#### Parameters
+
+Configure pipeline logic that will be injected before the target transformations
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1962,8 +2079,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Raw Data Vault Target Pipeline Post
-Configure pipeline logic that will be injected before the target transformation node
-#### Parameters
+
+Configure pipeline logic that will be injected before the target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -1998,8 +2117,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Raw Data Vault Target Override
-Configure override for the Data Vault target transformation node
-#### Parameters
+
+Configure override for the Data Vault target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2034,8 +2155,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </OleDbDestination>
 ```
 ### Raw Data Vault PIT Custom Sql
-Configure custom Sql for the Data Vault PIT
-#### Parameters
+
+Configure custom Sql for the Data Vault PIT
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2079,8 +2202,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 *#>
 ```
 ### Raw Data Vault Bridge Custom Sql
-Configure custom Sql for the Data Vault BRIDGE
-#### Parameters
+
+Configure custom Sql for the Data Vault BRIDGE
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2118,9 +2243,12 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 
 ## Data Mart
 
-### Data Warehouse Source Override
-Configure override for the Data Mart Source transformation node
-#### Parameters
+
+### Data Warehouse Source Override
+
+Configure override for the Data Mart Source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2152,8 +2280,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </OleDbSource>
 ```
 ### Data Warehouse Source Pipeline Pre
-Configure pipeline logic that will be injected after the Data Mart source transformation node
-#### Parameters
+
+Configure pipeline logic that will be injected after the Data Mart source transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2187,8 +2317,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Data Warehouse Source Pipeline Post
-Configure pipeline logic that will be injected after the Data Mart source transformations
-#### Parameters
+
+Configure pipeline logic that will be injected after the Data Mart source transformations
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2222,8 +2354,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Data Warehouse Target Pipeline Pre
-Configure pipeline logic that will be injected before the target transformation node
-#### Parameters
+
+Configure pipeline logic that will be injected before the target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2258,8 +2392,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Data Warehouse Target Pipeline Post
-Configure pipeline logic that will be injected before the target transformation node
-#### Parameters
+
+Configure pipeline logic that will be injected before the target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2294,8 +2430,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Data Warehouse Target Override
-Configure override for the Data Mart target transformation node
-#### Parameters
+
+Configure override for the Data Mart target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2330,8 +2468,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </OleDbDestination>
 ```
 ### Data Warehouse Insert Pipeline
-Configure insert pipeline logic that will be injected before the target transformation node
-#### Parameters
+
+Configure insert pipeline logic that will be injected before the target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2365,8 +2505,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Data Warehouse Type 1 Pipeline
-Configure type1 update pipeline logic that will be injected before the target transformation node
-#### Parameters
+
+Configure type1 update pipeline logic that will be injected before the target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2400,8 +2542,10 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </DataConversion>
 ```
 ### Data Warehouse Type 2 Pipeline
-Configure type2 insert pipeline logic that will be injected before the target transformation node
-#### Parameters
+
+Configure type2 insert pipeline logic that will be injected before the target transformation node
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2437,9 +2581,12 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 
 ## PolyBase
 
-### External File Format
-Configure File Format for PolyBase External Tables
-#### Parameters
+
+### External File Format
+
+Configure File Format for PolyBase External Tables
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2470,8 +2617,10 @@ WITH
 
 ## Azure Data Factory
 
-### Azure Key Vault Linked Service Reference
-Configure references to Azure Key Vault Linked Services
+
+### Azure Key Vault Linked Service Reference
+
+Configure references to Azure Key Vault Linked Services
 
 
 #### Sample Code
@@ -2483,8 +2632,10 @@ WITH
 <AzureKeyVault Name="BimlFlexKeyVault2" Url="https://<azureKeyVaultName>.vault.azure.net"></AzureKeyVault>
 ```
 ### Linked Service Attributes
-Configure attributes for a Linked Service in Azure Data Factory. This enriches the Connection information from the Connections metadata with the required attributes for a Linked Service. Target the connection and add the relevant attributes for the connection type.
-#### Parameters
+
+Configure attributes for a Linked Service in Azure Data Factory. This enriches the Connection information from the Connections metadata with the required attributes for a Linked Service. Target the connection and add the relevant attributes for the connection type.
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2528,8 +2679,10 @@ attributes.Add("KeyVaultStoreName", "");
 #>
 ```
 ### Linked Service Override
-Configure a Linked Service in Azure Data Factory. This overrides the entire definition for a Linked Service. Target the connection and add the relevant Biml for the Linked Service.
-#### Parameters
+
+Configure a Linked Service in Azure Data Factory. This overrides the entire definition for a Linked Service. Target the connection and add the relevant Biml for the Linked Service.
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2555,8 +2708,10 @@ attributes.Add("KeyVaultStoreName", "");
 </SqlServer>
 ```
 ### Post Copy
-Configure a Post Copy Activity in the pipeline.
-#### Parameters
+
+Configure a Post Copy Activity in the pipeline.
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
@@ -2597,8 +2752,10 @@ attributes.Add("Dependency", activityName);
 #>
 ```
 ### Trigger
-Configure a Trigger in Azure Data Factory.
-#### Parameters
+
+Configure a Trigger in Azure Data Factory.
+
+#### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |

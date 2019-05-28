@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <BuildDocumentation>False</BuildDocumentation>
+    <DocumentationOutputPath>documentation</DocumentationOutputPath>
+  </PropertyGroup>
+  <ItemGroup Condition="true">
+    <BundleSettings Include="SsisOnly.bimlb.settings" />
+  </ItemGroup>
+  <Import Project="$(AssemblyPath)\Varigence.Biml.targets" Condition="true" />
+  <!-- 
+  Any changes outside of the auto-generated ItemGroup and PropertyGroup tags 
+  will be ignored by the Configuration designer.
+  Any content within the auto-generated ItemGroup and PropertyGroup tags can be overwritten by the Configuration designer. 
+  -->
+</Project>
