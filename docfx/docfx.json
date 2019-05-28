@@ -62,6 +62,7 @@
       {
         "files": [
           "bimlflex/user-guide/images/**",
+          "bimlflex/user-guide/resources/**",
           "bimlexpress/images/**",
           "content/**",
           "images/**",
