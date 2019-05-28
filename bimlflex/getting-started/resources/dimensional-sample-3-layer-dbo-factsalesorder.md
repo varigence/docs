@@ -14,43 +14,65 @@ This is created in the Data Vault layer and is part of a source to target mappin
 USE [BFX_RDV]
 GO
 
-CREATE OR ALTER VIEW [dbo].[dimProduct] 
+CREATE OR ALTER VIEW [dbo].[factSalesOrder] 
 AS
-SELECT	 pp.[Product_BK]
-		,sp.[ProductID]
-		,sp.[Name] AS [ProductName]
-		,sp.[ProductNumber]
-		,sp.[Color]
-		,sp.[StandardCost]
-		,sp.[ListPrice]
-		,sp.[Size]
-		,sp.[Weight]
-		,sp.[DiscontinuedDate]
-		,spc.[ProductCategoryID]
-		,spc.[Name] AS [ProductCategoryName]
-		,spm.[ProductModelID]
-		,spm.[Name] AS [ProductModelName]
-FROM	[rdv].[PIT_Product] pp
-INNER JOIN [rdv].[SAT_Product_awlt] sp
-	ON	pp.[SAT_Product_awlt_Product_SK] = sp.[Product_SK]
-	AND	pp.[SAT_Product_awlt_FlexRowEffectiveFromDate] = sp.[FlexRowEffectiveFromDate]
--- ProductCategory
-INNER JOIN [rdv].[BRG_Product] bp
-	ON	pp.[Product_SK] = bp.[Product_SK]
-INNER JOIN [rdv].[PIT_ProductCategory] ppc
-	ON	bp.[LNK_Product_ProductCategory_L1_ProductCategory_SK] = ppc.[ProductCategory_SK]
-	AND pp.[FlexRowEffectiveFromDate] >= ppc.[FlexRowEffectiveFromDate]
-	AND pp.[FlexRowEffectiveFromDate] < ppc.[FlexRowEffectiveToDate]
-INNER JOIN [rdv].[SAT_ProductCategory_awlt] spc
-	ON	ppc.[SAT_ProductCategory_awlt_ProductCategory_SK] = spc.[ProductCategory_SK]
-	AND	ppc.[SAT_ProductCategory_awlt_FlexRowEffectiveFromDate] = spc.[FlexRowEffectiveFromDate]
--- ProductModel
-INNER JOIN [rdv].[PIT_ProductModel] ppm
-	ON	bp.[LNK_Product_ProductModel_L2_ProductModel_SK] = ppm.[ProductModel_SK]
-	AND pp.[FlexRowEffectiveFromDate] >= ppm.[FlexRowEffectiveFromDate]
-	AND pp.[FlexRowEffectiveFromDate] < ppm.[FlexRowEffectiveToDate]
-INNER JOIN [rdv].[SAT_ProductModel_awlt] spm
-	ON	ppm.[SAT_ProductModel_awlt_ProductModel_SK] = spm.[ProductModel_SK]
-	AND	ppm.[SAT_ProductModel_awlt_FlexRowEffectiveFromDate] = spm.[FlexRowEffectiveFromDate]
+
+SELECT	 psod.[PIT_SalesOrderLine_SK] AS [FactSalesOrderLine_BK]
+		,pc.[Customer_BK]
+		,pp.[Product_BK]
+		,pba.[Address_BK] AS [BillToAddress_BK]
+		,psa.[Address_BK] AS [ShipToAddress_BK]
+		,ssoh.[OrderDate]
+		,ssoh.[DueDate]
+		,ssoh.[ShipDate]
+		,CONVERT(INT, CONVERT(CHAR(8), ssoh.[OrderDate], 112)) AS [OrderDateKey]
+		,CONVERT(INT, CONVERT(CHAR(8), ssoh.[DueDate], 112)) AS [DueDateKey]
+		,CONVERT(INT, CONVERT(CHAR(8), ssoh.[ShipDate], 112)) AS [ShipDateKey]
+		,ssoh.[Status]
+		,ssoh.[SubTotal]
+		,ssoh.[TaxAmt]
+		,ssoh.[Freight]
+		,ssoh.[TotalDue]
+		-- SalesOrderLine
+		,ssod.[OrderQty]
+		,ssod.[UnitPrice]
+		,ssod.[UnitPriceDiscount]
+		,ssod.[LineTotal]
+FROM	[rdv].[PIT_SalesOrder] psoh
+INNER JOIN [rdv].[BRG_SalesOrder] bsoh
+	ON	psoh.[SalesOrder_SK] = bsoh.[SalesOrder_SK]
+INNER JOIN [rdv].[SAT_SalesOrder_awlt] ssoh
+	ON	psoh.[SAT_SalesOrder_awlt_SalesOrder_SK] = ssoh.[SalesOrder_SK]
+	AND psoh.[SAT_SalesOrder_awlt_FlexRowEffectiveFromDate] = ssoh.[FlexRowEffectiveFromDate]
+-- Customer
+INNER JOIN [rdv].[PIT_customer] pc
+	ON	bsoh.[LNK_SalesOrder_L1_customer_SK] = pc.[customer_SK]
+	AND psoh.[FlexRowEffectiveFromDate] >= pc.[FlexRowEffectiveFromDate]
+	AND psoh.[FlexRowEffectiveFromDate] < pc.[FlexRowEffectiveToDate]
+-- ShipToAddress
+INNER JOIN [rdv].[PIT_address] psa
+	ON	bsoh.[LNK_SalesOrder_L1_ShipToAddress_SK] = psa.[Address_SK]
+	AND psoh.[FlexRowEffectiveFromDate] >= psa.[FlexRowEffectiveFromDate]
+	AND psoh.[FlexRowEffectiveFromDate] < psa.[FlexRowEffectiveToDate]
+-- BillToAddress
+INNER JOIN [rdv].[PIT_address] pba
+	ON	bsoh.[LNK_SalesOrder_L1_BillToAddress_SK] = pba.[address_SK]
+	AND psoh.[FlexRowEffectiveFromDate] >= pba.[FlexRowEffectiveFromDate]
+	AND psoh.[FlexRowEffectiveFromDate] < pba.[FlexRowEffectiveToDate]
+-- SalesOrderLine
+INNER JOIN [rdv].[BRG_SalesOrderLine] bsod
+	ON	psoh.[SalesOrder_SK] = bsod.[LNK_SalesOrderLine_L1_SalesOrder_SK]
+INNER JOIN [rdv].[PIT_SalesOrderLine] psod
+	ON	bsod.[SalesOrderLine_SK] = psod.[SalesOrderLine_SK]
+	AND psoh.[FlexRowEffectiveFromDate] >= psod.[FlexRowEffectiveFromDate]
+	AND psoh.[FlexRowEffectiveFromDate] < psod.[FlexRowEffectiveToDate]
+INNER JOIN [rdv].[SAT_SalesOrderLine_awlt] ssod
+	ON	psod.[SAT_SalesOrderLine_awlt_SalesOrderLine_SK] = ssod.[SalesOrderLine_SK]
+	AND psod.[SAT_SalesOrderLine_awlt_FlexRowEffectiveFromDate] = ssod.[FlexRowEffectiveFromDate]
+-- Product
+INNER JOIN [rdv].[PIT_product] pp
+	ON	bsod.[LNK_SalesOrderLine_L1_product_SK] = pp.[product_SK]
+	AND psoh.[FlexRowEffectiveFromDate] >= pp.[FlexRowEffectiveFromDate]
+	AND psoh.[FlexRowEffectiveFromDate] < pp.[FlexRowEffectiveToDate]
 GO
 ```
