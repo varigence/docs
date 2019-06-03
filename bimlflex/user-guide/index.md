@@ -6,7 +6,7 @@ title: BimlFlex User Guide
 
 The BimlFlex User Guide describes all aspects of the BimlFlex process.
 
-The BimlFlex User Guide is broken up into several parts. Navigate through the User Guide with the chapters to the left.
+Navigate through the User Guide with the chapters to the left.
 
 ## Watch Recordings
 
