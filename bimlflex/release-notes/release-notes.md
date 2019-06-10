@@ -22,9 +22,9 @@ name: BimlFlex Release Notes
 > * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
 > This installer include the required runtime components for servers that will execute SSIS packages
 
-## BimlFlex 2019.1, Bundle 642010
+## BimlFlex 2019.1
 
-* Add: Metadata import for Snowflake has been added
+* Add: Metadata import from Snowflake
 * Update: wording in installer to better convey the database install and upgrade capabilities
 * Update: in certain scenarios, certain operations would be slower than expected in BimlStudio. This has been addressed and performance has been normalized.
 * Add: Support for Data Type Mappings to use expression for target type conversions, `SqlTargetToString` and `SqlTargetToDataType`, has been added
