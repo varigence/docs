@@ -4,6 +4,9 @@ name: BimlFlex Beta Bundle Release Notes
 ---
 # Beta Bundle Release Notes
 
+> [!IMPORTANT]
+> This is legacy information, please review the current release notes here: @bimlflex-release-notes
+
 The Beta Bundle channel is available as an option in the Upgrade Assets Bundle in BimlStudio 2018 R3 and later. Use this to test new features and hot fixes before they are included in public Bundle updates.
 
 > [!NOTE]
