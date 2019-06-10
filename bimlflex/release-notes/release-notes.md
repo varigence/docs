@@ -22,7 +22,7 @@ name: BimlFlex Release Notes
 > * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
 > This installer include the required runtime components for servers that will execute SSIS packages
 
-## BimlFlex 2019.1, Bundle 642010
+## BimlFlex 2019.1, Bundle 64210
 
 * Add: Metadata import for Snowflake has been added
 * Update: wording in installer to better convey the database install and upgrade capabilities
