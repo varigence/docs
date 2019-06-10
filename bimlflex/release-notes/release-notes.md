@@ -11,7 +11,7 @@ name: BimlFlex Release Notes
 ## BimlFlex 2019
 
 > [!IMPORTANT]
-> BimlFlex 2019 is installed and upgraded through a consolidated installer, allowing new installations and upgrades to be completely managed through a single experience.
+> BimlFlex 2019 is installed and upgraded through a single, consolidated installer, allowing new installations and upgrades to be managed through a single experience.
 >
 > Role-based installer downloads:
 >
@@ -22,6 +22,24 @@ name: BimlFlex Release Notes
 > * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
 > This installer include the required runtime components for servers that will execute SSIS packages
 
+## BimlFlex 2019.1, Bundle 642010
+
+* Add: Metadata import for Snowflake has been added
+* Update: wording in installer to better convey the database install and upgrade capabilities
+* Update: in certain scenarios, certain operations would be slower than expected in BimlStudio. This has been addressed and performance has been normalized.
+* Add: Support for Data Type Mappings to use expression for target type conversions, `SqlTargetToString` and `SqlTargetToDataType`, has been added
+* Update: A scenario where Link Satellite hash keys were hashed incorrectly has been addressed
+* Update: A performance enhancement in LSAT loads has been introduced for ELT processes
+* Update: A scenario where model override names were used in the initial set of temporary staging objects has been updated to allow consistent naming behavior
+* Update: A scenario where the PSA Primary keys were derived incorrectly for Multi Active Satellite source objects has been addressed.
+* Update: the Data Vault accelerator now respects existing changes to Data Vault when accelerating from source objects targeting these entities
+* Update: Schema Diagram and Accelerator UI now displays refresh button in the menu bar and exposes the show columns/show data types in a drop down for better productivity
+* Update: The BimlFlex App no longer display spell checking on text areas
+* Update: BimlFlex app now has a separate pane for the getting started entries on the dashboard
+* Update: A scenario where the load parameter value for `ParameterSqlExpression` expression was ignored has been addressed
+* Update: A scenario where Data Vault reference tables were not properly loaded in on-premises ELT code has been addressed
+* Update: A scenario where the reload from PSA project was not displayed for on-premises ELT solutions has been addressed and this project is now included by default with both ELT and ETL patterns
+* Update: A scenario where the snapshot and snapshot rollback function would result in errors has been addressed
 
 ## BimlFlex 2019 Version 64108
 

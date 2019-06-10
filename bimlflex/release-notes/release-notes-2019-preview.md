@@ -4,6 +4,9 @@ name: BimlFlex 2019 Preview Release Notes
 ---
 # BimlFlex 2019 Preview Release Notes
 
+> [!IMPORTANT]
+> This is legacy information, please review the current release notes here: @bimlflex-release-notes
+
 > [!NOTE]
 > Please make sure databases and projects have been backed up prior to upgrading or applying any updates.
 > Please email bimlflex-support@varigence.com should you experience any issues while upgrading.

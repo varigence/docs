@@ -4,6 +4,9 @@ name: BimlFlex Cumulative Update Bundle Release Notes
 ---
 # Cumulative Update Bundle Release Notes
 
+> [!IMPORTANT]
+> This is legacy information, please review the current release notes here: @bimlflex-release-notes
+
 The Cumulative Update Bundle channel is available as an option in the Upgrade Assets Bundle in BimlStudio 2018 R3 and later. Use this to apply the latest updates and fixes before they are included in public Bundle updates.
 
 > [!NOTE]
