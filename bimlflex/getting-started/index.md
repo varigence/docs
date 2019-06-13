@@ -10,7 +10,7 @@ The Getting Started with BimlFlex is an end to end, step by step guide to buildi
 
 ![BimlFlex End to End Walkthrough -center](https://www.youtube.com/watch?v=6BgkXqjDtvY?rel=0&autoplay=0 "BimlFlex End to End Walkthrough")
 
-The getting started documentation implements an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development. It uses SQL Server 2017 for hosting databases, uses SSIS for the load process and uses the Microsoft AdventureWorksLT sample database as a source.
+The getting started documentation implements an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development. While BimlFlex supports SQL Server 2008-2017, the examples here use SQL Server 2017 for hosting databases, uses SSIS for the load process and uses the Microsoft AdventureWorksLT sample database as a source.
 
 The getting started process demonstrates a 3 layer approach with staging, Data Vault and Data Mart layer.
 
