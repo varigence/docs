@@ -63,8 +63,6 @@ Regardless of if the Builds are automated and triggered on push or PR, scheduled
 
 Sample Automation process and sample scripts
 
-Download link to sample files: [bimlflex-cicd-sample-files.zip](resources/bimlflex-cicd-sample-files.zip)
-
 1. Build the SQL Server SSDT database projects
 
 This step can either use the Biml Compiler or MSBuild to build the artifacts. It connects to the metadata instance and ejects the SSDT Projects. Note that there is an SSDT Project per database.
@@ -93,9 +91,25 @@ Once the Dacpac is created (including any custom, bespoke, migration logic) it c
 
 The deployment step uses SqlPackage.exe to deploy the Dacpac to the specified destination SQL Server.
 
+4. Build SSIS projects
+
+When the tables are available in the destination database it is possible to build the SSIS projects.
+
+The SSIS build uses the same process as step 1 with a separate settings file to build the desired projects.
+
+5. Optionally build the ispaq file
+
+BimlStudio builds the ispac file as well as the SSIS packages. Optionally rebuild the ispaq file in the build process.
+
+6. Deploy ispaq file
+
+Once the ispaq file is built it is possible to deploy it to a SSIS Catalog on an SSIS server.
+
+When it has been deployed for the first time, use the Catalog environment feature to override relevant project parameters, such as connection strings, for the environment.
+
 ## Sample Scripts
 
-sample scripts with download links
+Download link to sample files: [bimlflex-cicd-sample-files.zip](resources/bimlflex-cicd-sample-files.zip)
 
 ### Sample Script using the Biml compiler
 
