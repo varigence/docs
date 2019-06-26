@@ -10,17 +10,16 @@ name: BimlFlex Release Notes
 
 ## BimlFlex 2019
 
-> [!IMPORTANT]
-> BimlFlex 2019 is installed and upgraded through a single, consolidated installer, allowing new installations and upgrades to be managed through a single experience.
->
-> Role-based installer downloads:
->
-> * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
-> This installer includes all parts of the product framework and is suited for developers who will build the solution in BimlStudio and test the resulting packages in Visual Studio
-> * [BimlFlex Modeler Setup](https://varigence.com/downloads/bimlflexmodelsetup.exe)  
-> This installer includes the BimlFlex App and is suited for modelers who will perform metadata import, modeling and acceleration
-> * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
-> This installer include the required runtime components for servers that will execute SSIS packages
+BimlFlex 2019 is installed and upgraded through a single, consolidated, role-based installer.
+
+Installer downloads:
+
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
+    This installer includes all parts of the product framework and is suited for developers who will build the solution in BimlStudio and test the resulting packages in Visual Studio
+* [BimlFlex Modeler Setup](https://varigence.com/downloads/bimlflexmodelsetup.exe)  
+    This installer includes the BimlFlex App and is suited for modelers who will perform metadata import, data modeling and Data Vault acceleration
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
+    This installer include the required runtime components for servers that will execute SSIS packages
 
 ## BimlFlex 2019.1
 
