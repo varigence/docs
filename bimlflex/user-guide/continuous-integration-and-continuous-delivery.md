@@ -419,7 +419,7 @@ Update this file to reflect project settings and configurations
     {
         "Namespace": "",
         "Name": "ToggledOffFiles",
-        "Value": "BimlScripts\\0.01.0-flx-import-stg-tables.biml|BimlScripts\\0.02.0-flx-import-rdv-tables.biml|BimlScripts\\0.03.0-flx-import-dwh-tables.biml|BimlScripts\\0.04.0-flx-import-psa-tables.biml|BimlScripts\\1.20.1-flx-psa-stg-main.biml|BimlScripts\\1.70.1-flx-src-to-file-main.biml|BimlScripts\\1.80.1-flx-src-to-file-main-express.biml|BimlScripts\\2.20.1-flx-dv-source-main.biml|BimlScripts\\3.10.1-flx-dwh-main.biml|BimlScripts\\3.20.1-flx-mds-main.biml|BimlScripts\\3.50.1-flx-dwh-sql-main.biml|BimlScripts\\3.50.2-flx-dwh-source-sql-main.biml|BimlScripts\\_OutputFlatBiml.biml|BimlScripts\\_OutputFlatDDL.biml|BimlScripts\\_OutputSsdtDDL.biml"
+        "Value": "BimlScripts\\_OutputFlatBiml.biml|BimlScripts\\_OutputFlatDDL.biml|BimlScripts\\_OutputSsdtDDL.biml"
     }
 ]
 ```
@@ -507,6 +507,10 @@ filename: `SsisOnly.mst.resp`
 ```resp
 "SsisOnly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2017 /p:SsasVersion=Ssas2017 /p:SsasTabularVersion=SsasTabular2017 /p:SsisVersion=Ssis2017 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:EnableBimlFlex=True /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files (x86)\Varigence\BimlStudio\5.0"
 ```
+
+## Special considerations when using Extension Points
+
+Any Extension Points used in the project will need to be defined in the corresponding response or settings file. When an Extension Point file is added in BimlStudio it is defined as part of the project in the .mst file. BimlStudio automatically adds the included Extension Point file to the corresponding resp and bimlroj file. Depending on the build engine used, add the references to the Extension Point files in the correct automated build settings file. Note that BimlStudio currently adds the references using absolute paths but the references in the automated build files can use relative path so they work on dynamic build machines.
 
 ## Silent Installation of BimlStudio
 
