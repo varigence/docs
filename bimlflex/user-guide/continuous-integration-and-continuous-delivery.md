@@ -510,7 +510,11 @@ filename: `SsisOnly.mst.resp`
 
 ## Special considerations when using Extension Points
 
-Any Extension Points used in the project will need to be defined in the corresponding response or settings file. When an Extension Point file is added in BimlStudio it is defined as part of the project in the .mst file. BimlStudio automatically adds the included Extension Point file to the corresponding resp and bimlroj file. Depending on the build engine used, add the references to the Extension Point files in the correct automated build settings file. Note that BimlStudio currently adds the references using absolute paths but the references in the automated build files can use relative path so they work on dynamic build machines.
+Any Extension Points used in the project will need to be defined in the corresponding response or settings file. When an Extension Point file is added in BimlStudio it is defined as part of the project in the .mst file.
+
+BimlStudio automatically adds the included Extension Point file to the corresponding .resp and .bimlproj file.
+
+Depending on the build engine used, add the references to the Extension Point files in the correct automated build settings file. Note that BimlStudio currently adds the references using absolute paths for the automatic files, but the references in the ci/cd build files can use relative path so they work on dynamic build machines.
 
 ## Silent Installation of BimlStudio
 
@@ -518,12 +522,12 @@ For build servers where the BimlStudio application should be installed by a proc
 
 The following example will install both the 64 and 32 bit versions of the BimlStudio Application and the BimlFlex custom components for SQL Server 2016.
 
-`BimlFlexDevSetup.exe -s -InstallFeature:BimlStudiox64,BimlStudiox86,BIMLFLEXSSIS2016_X64,BIMLFLEXSSIS2016_X86`
+`BimlFlexDevSetup.exe -s -InstallFeature:BimlStudio_X64,BimlStudio_X86,BIMLFLEXSSIS2016_X64,BIMLFLEXSSIS2016_X86`
 
 Feature options available to the installer:
 
-* BimlStudiox86
-* BimlStudiox64
+* BimlStudio_X86
+* BimlStudio_X64
 * BIMLFLEXADDIN_X86
 * BIMLFLEXADDIN_X64
 * BIMLFLEXAPP_X86
@@ -559,22 +563,23 @@ For silent or automated installations and upgrades of BimlFlex and BimlCatalog d
 
 The installer does not currently support deployment of new, or upgrades to existing databases. The automated pipeline deployment is normally only used for the BimlCatalog database, as that is the database required for different environments. The BimlFlex database is a development-only resource and is normally maintained separately.
 
-1. extract the required pre-deployment script and database dacpac from the BimlStudio application. Use the `Debug Utilities` dialog in the BimlFlex Ribbon UI tab to extract the files to disk. Each database has a separate pre-deployment script for changes not supported by the dacpac process and a dacpac that is deployed through the Microsoft-provided `SqlPackage.exe` application.
-
+1. Extract the required pre-deployment script and database dacpac from the BimlStudio application. Use the `Debug Utilities` dialog in the BimlFlex Ribbon UI tab to extract the files to disk. Each database has a separate pre-deployment script for changes not supported by the dacpac process and a dacpac that is deployed through the Microsoft-provided `SqlPackage.exe` application.
 1. Deploy the script and dacpac through the pipeline to the destination database server using functionality like the below script:
 
-Sample File: `Deploy_Dacpac_BimlFlex.cmd`
 Deploys the BimlCatalog pre-deployment script and dacpac to the defined target database using `SqlCmd.exe` and `SqlPackage.exe`. These applications are required to be available to the deployment environment. They are deployed with Visual Studio and SQL Server and available for download through the reference links below.
 
-More information on SqlCmd.exe: [https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility](https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility)
-More information on SqlPackage.exe: [https://docs.microsoft.com/en-us/sql/tools/sqlpackage](https://docs.microsoft.com/en-us/sql/tools/sqlpackage)
+* More information on SqlCmd.exe: [https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility](https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility)
+* More information on SqlPackage.exe: [https://docs.microsoft.com/en-us/sql/tools/sqlpackage](https://docs.microsoft.com/en-us/sql/tools/sqlpackage)
 
 Note that deploying the pre-deployment script only works when the database exists. The SqlPackage.exe process will create the database in the destination server the first time it is run if it doesn't already exist.
+
+Sample File: `Deploy_Dacpac_BimlFlex.cmd`
 
 ```batch
 @echo off
 rem (c) Varigence 2018
 rem https://varigence.com/BimlFlex
+rem update the path to match the local installation
 
 pushd %~dp0
 
