@@ -10,17 +10,71 @@ name: BimlFlex Release Notes
 
 ## BimlFlex 2019
 
-> [!IMPORTANT]
-> BimlFlex 2019 is installed and upgraded through a single, consolidated installer, allowing new installations and upgrades to be managed through a single experience.
->
-> Role-based installer downloads:
->
-> * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
-> This installer includes all parts of the product framework and is suited for developers who will build the solution in BimlStudio and test the resulting packages in Visual Studio
-> * [BimlFlex Modeler Setup](https://varigence.com/downloads/bimlflexmodelsetup.exe)  
-> This installer includes the BimlFlex App and is suited for modelers who will perform metadata import, modeling and acceleration
-> * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
-> This installer include the required runtime components for servers that will execute SSIS packages
+BimlFlex 2019 is installed and upgraded through a single, consolidated, role-based installer.
+
+Installer downloads:
+
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
+    This installer includes all parts of the product framework and is suited for developers who will build the solution in BimlStudio and test the resulting packages in Visual Studio
+* [BimlFlex Modeler Setup](https://varigence.com/downloads/bimlflexmodelsetup.exe)  
+    This installer includes the BimlFlex App and is suited for modelers who will perform metadata import, data modeling and Data Vault acceleration
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
+    This installer include the required runtime components for servers that will execute SSIS packages
+
+## BimlFlex 2019.2
+
+BimlFlex 2019.2 is a service release that fixes identified issues as well as introduces a set of new and improved features.
+
+* Update: BimlStudio performance enhancements for metadata operations. BimlStudio should now refresh and perform better with large metadata sets.
+* Update: BimlFlex App - Selectively load only changed Objects and Columns using LastModified date for better performance
+* Update: BimlFlex App - Fix `Show Exclusions` logic for `Use My Exclusions`
+* Add: BimlFlex App - Notification Log
+* Update: BimlFlex App - Prevent Refresh and Collapse menu bar buttons from overlapping
+* Add: BimlFlex App - allow users to copy validation messages to clipboard
+* Update: BimlFlex App - Accelerator should not error when the selected table references tables that are excluded or deleted, but should ignore the references
+* Update: BimlFlex App - Add button on setup screen to refresh customers from selected database
+* Add: BimlFlex App - Add Toast success messages to all the actions on the dashboard
+* Update: BimlFlex App - Prevent version going out of sync when changing customer
+* Update: BimlFlex App - Database communication command timeout set to 10 minutes
+* Add: Support for AzCopy v.10
+* Add: Support for using SAS Tokens for AzCopy access control for both legacy AzCopy versions and AzCopy v.10
+* Update: A scenario where ModelOverrideName introduced issues in Snowflake Staging was addressed
+* Update: additional support for CDC sources to snowflake has been added
+* Update: The BimlFlex App UI for metadata import now correctly uses `@@rs` casing for Record Source codes
+* Update: Additional source support for Teradata to Azure SQL Data Warehouse workloads with PolyBase conversion support
+* Add: Pre- and Post-processing tasks Extension Points for Source to File load processes
+* Add: Support to derive `RowRecordSource` in RDV load process for Azure SQL Data Warehouse
+* Update: a scenario where Hash distribution keys were not derived correctly for ELT code for Point In Time constructs was addressed
+* Add: Additional support for Teradata ODBC-based metadata import
+* Add: Support to better define the SSDT project output folder used for Builds. The setting `SsdtOutputPath` allows defining an output path such as: `@@OutputPath\SSDT\@@CustomerUid\@@VersionName`
+* Add: Better support for row compression when using SSIS and binary hashing. The more comprehensive compare function allows comparing binary values. For performance reasons, consider using the ELT option for Data Vault loads rather than ETL/Data Flows in SSIS.
+
+### Support for in-database staging and persistent staging
+
+BimlFlex now allows the load of data through Blob storage files into Azure Data Warehouse staging and persistent staging. This allows data to be stored and archived both in database and in blob storage. This new, dual functionality also adds additional settings and features for automatic archiving of blob files.
+
+* `AzureArchiveStage`
+    Should the extract and load process also archive blob storage files after they have been loaded into staging. This uses AzCopy v.10 to move blob files from the defined destination/staging container to the defined archive container. AzCopy v.10 requires use of SAS Tokens for access control
+
+### Support for AzCopy v.10
+
+Adding support for the latest version of AzCopy introduces settings to control the new AzCopy functionality:
+
+* AzureDestStorageSasToken, AzureSourceStorageSasToken, AzureArchiveStorageSasToken
+    The SasToken to use for access to the Blob storage location
+* AzCopySetEnvironmentVariables
+    Should the SSIS extract packages set the concurrency and log location environmental variables used by AzCopy v.10. Setting these globally outside BimlFlex allows these values to be reused by the AzCopy process without setting them in the packages. Legacy versions of AzCopy uses command parameters for these settings.
+* AzCopyVersion
+    The Version of AzCopy in use as an integer. Use `5` or `8` for legacy versions and `10` for the v.10 version
+* AzCopyUseSasToken
+    Should the AzCopy command use the Account Key or SAS Token for storage access. v10 does not support key authentication so this is only applied for legacy versions.
+* AzCopyCreateContainer
+    Should the v10 AzCopy create the destination container if it does not exist. The legacy version would always create missing containers while the v10 version expected them to already be available. Set this to `Y` to inject an extra step to create the container if it is missing. This is included for backwards compatibility, the recommendation is to pre-create the containers and allow the jobs to upload without this additional step.
+* AzureBlobStorageDomain
+    Use `blob.core.windows.net` for classical blob storage or `dfs.core.windows.net` for Azure Data Lake Storage Gen2 targets (with hierarchical namespace)
+* AzureArchive
+
+More information on AzCopy and access to download v.10 on this Microsoft page: [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)
 
 ## BimlFlex 2019.1
 

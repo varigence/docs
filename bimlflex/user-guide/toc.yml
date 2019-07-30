@@ -49,6 +49,8 @@
     href: master-data-services.md
   - name: Azure Data Warehouse
     href: azure-data-warehouse.md
+  - name: AzCopy
+    href: azcopy.md
   - name: Integration Keys and Relationships
     href: integration-keys-and-relationships.md
   - name: Load Parameters
