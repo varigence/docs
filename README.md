@@ -1,7 +1,5 @@
 # Varigence Documentation
 
-[![Build Status](https://varigence.visualstudio.com/Varigence/_apis/build/status/Varigence%20Docs%20Staging)](https://varigence.visualstudio.com/Varigence/_build/latest?definitionId=18)
-
 Product documentation contents is located in their respective folder.
 
 ## DocFX documentation site
