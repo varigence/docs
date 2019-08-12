@@ -4,4 +4,14 @@ title: BimlFlex Delete Detection
 ---
 # BimlFlex Delete Detection
 
-TODO: placeholder, explanation of the delete detection mechanism in BimlFlex
+BimlFlex provides a SQL source based delete detection mechanism that allows detection of hard deleted keys from the source system. This is used in addition to the normal loads of new and changed data from the source.
+
+The Delete Detection is controlled by the `DeleteDetectionEnabled` Setting. The main setting is global and will be applied to all projects. It is also possible to override the global default for specific projects or objects. Either set the global to `Y` and exclude non-delete projects as needed or set the global to `N` and include the projects that will use delete detection.
+
+The delete detection will load all defined Source and Integration keys from the source into a cache file on the extract machine running the SSIS project. On subsequent runs the package compares the keys in the source with the keys in the cache. If a key is missing from the source compared to what is in the cache, it is identified as a deleted key. These deleted keys are inserted into a delete staging table in the staging database.
+
+Once the deleted keys are in the staging table they can be further processed into the target architecture.
+
+For an on-premises SQL Server installation running a persistent staging database and a Data Vault integration layer, this means adding a bespoke, Batch-based, post-processing Extension Point that creates the corresponding delete records in the persistent staging tables and Data Vault tables.
+
+For file/blob-based target architectures, such as for Azure SQL Data Warehouse or Snowflake, a bespoke process is needed to create the corresponding load files for the deleted records.

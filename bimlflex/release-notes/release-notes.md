@@ -12,7 +12,9 @@ name: BimlFlex Release Notes
 
 BimlFlex 2019 is installed and upgraded through a single, consolidated, role-based installer.
 
-Installer downloads:
+### Latest Release
+
+Build 5.0.64252.0, release date: 01 Aug 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of the product framework and is suited for developers who will build the solution in BimlStudio and test the resulting packages in Visual Studio
@@ -21,7 +23,18 @@ Installer downloads:
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
 
-## BimlFlex 2019.2
+## Build 5.0.64252.0, release date: 01 August 2019
+
+* Update: the BimlFlex app now works on machines without Internet connectivity and online resources (such as icons/glyph fonts) are now cached locally
+* Update: in certain scenarios the HDK for satellites were not hashed using the same pattern as previous versions. This has been addressed
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64252.0.exe)
+* [bimlflexmodelsetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexmodelsetup_5.0.64252.0.exe)
+* [bimlflexruntimesetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64252.0.exe)
+
+## BimlFlex 2019.2 - Build 5.0.64246, release date: 31 July 2019
 
 BimlFlex 2019.2 is a service release that fixes identified issues as well as introduces a set of new and improved features.
 
@@ -76,7 +89,13 @@ Adding support for the latest version of AzCopy introduces settings to control t
 
 More information on AzCopy and access to download v.10 on this Microsoft page: [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)
 
-## BimlFlex 2019.1
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64246.0.exe)
+* [bimlflexmodelsetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexmodelsetup_5.0.64246.0.exe)
+* [bimlflexruntimesetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64246.0.exe)
+
+## BimlFlex 2019.1 - Build 5.0.64213.0, release date: 13 June 2019
 
 * Add: Metadata import from Snowflake
 * Update: wording in installer to better convey the database install and upgrade capabilities
