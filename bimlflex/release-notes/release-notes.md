@@ -43,6 +43,7 @@ Release Notes:
 * Update: The Teradata Sql Extract pattern has been updated to better represent the way Teradata formats result sets and manages characters.
 * Add: Additional setting. `ApplyExtractConversionInDataFlow`. This allows the character and format conversion for Azure SQL Data Warehouse and blob storage normally done in the SQL Query to be done in the Data Flow using SSIS transformations. This can potentially assist in extracting from sources where the query transformation cause performance issues.
 * Add: Metadata import from Teradata ODBC sources now work as expected
+* Update: A scenario where the Delete Detection feature in combination with the Data Type Mappings feature would sometimes result in a build error message related to a column not being found has been addressed.
 
 download links to this build:
 
