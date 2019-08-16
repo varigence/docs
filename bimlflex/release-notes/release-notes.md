@@ -12,16 +12,55 @@ name: BimlFlex Release Notes
 
 BimlFlex 2019 is installed and upgraded through a single, consolidated, role-based installer.
 
-Installer downloads:
+### Latest Release
+
+Build 5.0.64261.0, release date: 16 Aug 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
-    This installer includes all parts of the product framework and is suited for developers who will build the solution in BimlStudio and test the resulting packages in Visual Studio
-* [BimlFlex Modeler Setup](https://varigence.com/downloads/bimlflexmodelsetup.exe)  
-    This installer includes the BimlFlex App and is suited for modelers who will perform metadata import, data modeling and Data Vault acceleration
+    This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
 
-## BimlFlex 2019.2
+## Build 5.0.64261.0, release date: 16 August 2019
+
+Release highlights:
+
+The modeler installer and license has been consolidated into the full developer setup.
+
+New Point In Time functionality allows the definition of business effectivity date columns that will be used to build the timelines for context information.
+
+This is illustrated and demonstrated in the following video:
+
+![Point In Time with Business Effectivity Date -center](https://www.youtube.com/watch?v=nL5nVtESFtM?rel=0&autoplay=0 "Point In Time with Business Effectivity Date")
+
+Release Notes:
+
+* Add: New Point in Time, PIT, Data Vault capability. It is now possible to build the PIT tables across a user-defined business affectivity date. Please review the video linked above for more information.
+* Add: the `SelectBySql` has additional functionality to allow adding a pre-SELECT statement for query-flavors that require it. E.g. adding a table/lock hint before the select. When the `SelectBySql` only contains a statement like `TOP 100` it will be injected between the select and the first column. When it contains a full statement like `LOCKING ROW FOR ACCESS SELECT TOP 100` it will replace the select statement with the full text from the `SelectBySql` attribute.
+* Add: a new Extension Point for replacing the whole Data Flow Task for file-based extracts is available. This is useful if another tool is used to extract the data to the local file, and the BimlFlex process only needs to convert, zip and upload that file. A typical use-case is when a source system has a native file dump utility that has higher performance than accessing the data through OLEDB or ODBC interfaces and no additional Data Flow logic is required for the extract.
+* Add: AzCopy v.10 no upload file check. AzCopy v.10 will fail if the upload command specifies a file mask that doesn't contain files. This could happen if the source query returned no rows. The updated pattern checks if there are files to process before continuing.
+* Add: Additional Setting: `GlobalDefaultDate`. This is the default date used for unknowns and start-of-time dates in BimlFlex.
+* Update: The Teradata Sql Extract pattern has been updated to better represent the way Teradata formats result sets and manages characters.
+* Add: Additional setting. `ApplyExtractConversionInDataFlow`. This allows the character and format conversion for Azure SQL Data Warehouse and blob storage normally done in the SQL Query to be done in the Data Flow using SSIS transformations. This can potentially assist in extracting from sources where the query transformation cause performance issues.
+* Add: Metadata import from Teradata ODBC sources now work as expected
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64261.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64261.0.exe)
+* [bimlflexruntimesetup_5.0.64261.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64261.0.exe)
+
+## Build 5.0.64252.0, release date: 01 August 2019
+
+* Update: the BimlFlex app now works on machines without Internet connectivity and online resources (such as icons/glyph fonts) are now cached locally
+* Update: in certain scenarios the HDK for satellites were not hashed using the same pattern as previous versions. This has been addressed
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64252.0.exe)
+* [bimlflexmodelsetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexmodelsetup_5.0.64252.0.exe)
+* [bimlflexruntimesetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64252.0.exe)
+
+## BimlFlex 2019.2 - Build 5.0.64246, release date: 31 July 2019
 
 BimlFlex 2019.2 is a service release that fixes identified issues as well as introduces a set of new and improved features.
 
@@ -76,7 +115,13 @@ Adding support for the latest version of AzCopy introduces settings to control t
 
 More information on AzCopy and access to download v.10 on this Microsoft page: [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)
 
-## BimlFlex 2019.1
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64246.0.exe)
+* [bimlflexmodelsetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexmodelsetup_5.0.64246.0.exe)
+* [bimlflexruntimesetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64246.0.exe)
+
+## BimlFlex 2019.1 - Build 5.0.64213.0, release date: 13 June 2019
 
 * Add: Metadata import from Snowflake
 * Update: wording in installer to better convey the database install and upgrade capabilities
