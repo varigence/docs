@@ -41,7 +41,7 @@ Release Notes:
 * Add: AzCopy v.10 no upload file check. AzCopy v.10 will fail if the upload command specifies a file mask that doesn't contain files. This could happen if the source query returned no rows. The updated pattern checks if there are files to process before continuing.
 * Add: Additional Setting: `GlobalDefaultDate`. This is the default date used for unknowns and start-of-time dates in BimlFlex.
 * Update: The Teradata Sql Extract pattern has been updated to better represent the way Teradata formats result sets and manages characters.
-* Add: Additional setting. `ApplyExtractConversionInDataFlow`. This allows the character and format conversion for Azure SQL Data Warehouse and blob storage normally done in the SQL Query to be done in the Data Flow using SSIS transformations. This can potentially assist in extracting from sources where the query transformation cause performance issues.
+* Add: Additional setting: `ApplyExtractConversionInDataFlow`. This allows the character and format conversion for Azure SQL Data Warehouse and blob storage normally done in the SQL Query to be done in the Data Flow using SSIS transformations. This can potentially assist in extracting from sources where the query transformation cause performance issues.
 * Add: Metadata import from Teradata ODBC sources now work as expected
 * Update: A scenario where the Delete Detection feature in combination with the Data Type Mappings feature would sometimes result in a build error message related to a column not being found has been addressed.
 
