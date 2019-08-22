@@ -10,7 +10,7 @@ title: BimlFlex Software and Hardware requirements
 * Network access for metadata database access
 * Same requirements as recommended for the Windows version in use [(For Windows 10: https://www.microsoft.com/en-au/windows/windows-10-specifications)](https://www.microsoft.com/en-au/windows/windows-10-specifications)
 * Same requirements as approved for the Visual Studio version and edition in use [(For Visual Studio 2015: https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)](https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)
-* BimlStudio supports Visual Studio 2010, 2012, 2013, 2015. The version of [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT BI) and Visual Studio used depends on the SQL Server version used for the SSIS Server
+* BimlStudio supports Visual Studio 2010, 2012, 2013, 2015, 2017 and 2019. The version of [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT BI) and Visual Studio used depends on the SQL Server version used for the SSIS Server
 * A valid Varigence BimlStudio Product key is required for use.
 * Memory to hold the model
 
@@ -25,9 +25,9 @@ title: BimlFlex Software and Hardware requirements
 
 * Internet access (required for installing and running the application)
 * Network access for metadata database access
-* Same minimum requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-au/windows/windows-10-specifications)](https://www.microsoft.com/en-au/windows/windows-10-specifications)
-* Same requirements as  the Excel version and edition in use [(For Excel 2016: https://products.office.com/en-au/office-system-requirements)](https://products.office.com/en-au/office-system-requirements)
-* The current plugin supports Excel 2013 and 2016, 32 or 64-bit versions
+* Same minimum requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-us/windows/windows-10-specifications)
+* Same requirements as  the Excel version and edition in use [(For Excel 2016: https://products.office.com/en-us/office-system-requirements)](https://products.office.com/en-us/office-system-requirements)
+* The current plugin supports Excel 2013, 2016 and Excel for Office 365, 32 or 64-bit versions
 * A valid Varigence BimlFlex Product key is required for use
 * Memory to hold the model
 
@@ -61,9 +61,9 @@ More information on the Analyst Installation can be found here: @bimlflex-analys
 
 The base requirements for installing Microsoft SQL Server can be found here: [https://docs.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server](https://docs.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server)
 
-The SSIS Server where SQL Server SSIS is used to execute SSIS packages requires the installation of the Varigence SSIS Custom Components using the Varigence Product Suite installer.
+The SSIS Server where SQL Server SSIS is used to execute SSIS packages requires the installation of the Varigence SSIS Custom Components using the Varigence Product Suite or component installer.
 
-The Varigence SSIS Components can also be installed using the XCOPY scripts provide by contacting BimlFlex support.
+The Varigence SSIS Components can also be installed using XCOPY scripts provided by contacting BimlFlex support.
 
 The SQL Server where the Data Warehouse databases are deployed requires no specific installations or configurations. It is necessary that the developers and analysts have adequate access to building the Data Warehouse.
 

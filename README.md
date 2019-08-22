@@ -1,7 +1,5 @@
 # Varigence Documentation
 
-[![Build Status](https://varigence.visualstudio.com/Varigence/_apis/build/status/Varigence%20Docs%20Staging)](https://varigence.visualstudio.com/Varigence/_build/latest?definitionId=18)
-
 Product documentation contents is located in their respective folder.
 
 ## DocFX documentation site
@@ -16,7 +14,6 @@ Sample extensions For [Visual Studio Code](https://code.visualstudio.com/), run 
 
 * `code --install-extension DavidAnson.vscode-markdownlint`
 * `code --install-extension shd101wyy.markdown-preview-enhanced`
-* ~~`code --install-extension tintoy.docfx-assistant`~~ (broken in current version of VS Code)
 * `code --install-extension docsmsft.docs-markdown`
 * `code --install-extension ms-docfx.docfx`
 
