@@ -15,3 +15,5 @@ Once the deleted keys are in the staging table they can be further processed int
 For an on-premises SQL Server installation running a persistent staging database and a Data Vault integration layer, this means adding a bespoke, Batch-based, post-processing Extension Point that creates the corresponding delete records in the persistent staging tables and Data Vault tables.
 
 For file/blob-based target architectures, such as for Azure SQL Data Warehouse or Snowflake, a bespoke process is needed to create the corresponding load files for the deleted records.
+
+The Configuration for deriving the Deletes, through the `RowChangeType` attribute, can be customized so that the delete information can be derived as needed. It is possible to reuse a source delete flag for sources that present this in the data set.
