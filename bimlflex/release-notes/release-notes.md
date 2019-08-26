@@ -14,12 +14,23 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64261.0, release date: 16 Aug 2019
+Build 5.0.64265.0, release date: 16 Aug 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
+
+## Build 5.0.64265.0, release date: 26 August 2019
+
+* Add: Additional Setting: `PersistHistory`. This setting allows overrides of the Persist History setting of the connection on an object level.
+* Update: Addressed an issue where the ELT PSA load pattern misinterpreted the RowChangeType in certain scenarios.
+* Update: Cloning objects with OverrideExisting set to true sometimes left orphan columns in the target object. These are now deleted as expected.
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.642615.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64265.0.exe)
+* [bimlflexruntimesetup_5.0.64265.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64265.0.exe)
 
 ## Build 5.0.64261.0, release date: 16 August 2019
 
@@ -41,7 +52,7 @@ Release Notes:
 * Add: AzCopy v.10 no upload file check. AzCopy v.10 will fail if the upload command specifies a file mask that doesn't contain files. This could happen if the source query returned no rows. The updated pattern checks if there are files to process before continuing.
 * Add: Additional Setting: `GlobalDefaultDate`. This is the default date used for unknowns and start-of-time dates in BimlFlex.
 * Update: The Teradata Sql Extract pattern has been updated to better represent the way Teradata formats result sets and manages characters.
-* Add: Additional setting. `ApplyExtractConversionInDataFlow`. This allows the character and format conversion for Azure SQL Data Warehouse and blob storage normally done in the SQL Query to be done in the Data Flow using SSIS transformations. This can potentially assist in extracting from sources where the query transformation cause performance issues.
+* Add: Additional setting: `ApplyExtractConversionInDataFlow`. This allows the character and format conversion for Azure SQL Data Warehouse and blob storage normally done in the SQL Query to be done in the Data Flow using SSIS transformations. This can potentially assist in extracting from sources where the query transformation cause performance issues.
 * Add: Metadata import from Teradata ODBC sources now work as expected
 * Update: A scenario where the Delete Detection feature in combination with the Data Type Mappings feature would sometimes result in a build error message related to a column not being found has been addressed.
 
