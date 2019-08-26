@@ -4,7 +4,11 @@
 
 # Varigence Support Documentation
 
-<ci-search></ci-search>
+<p>&nbsp;</p>
+
+<ci-search style="justify-content:left;"></ci-search>
+
+<p>&nbsp;</p>
 
 At Varigence, we offer a comprehensive library of professional support resources.
 

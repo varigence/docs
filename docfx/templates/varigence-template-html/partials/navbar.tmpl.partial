@@ -7,7 +7,7 @@
             <ul id="left-navs" class="nav navbar-nav mr-auto" style="color: #00416a;">
                 <li role="presentation" class="nav-item"><a href="//www.varigence.com/Products" class="nav-link">PRODUCTS</a></li>
                 <li role="presentation" class="nav-item"><a href="//support.varigence.com" class="nav-link">SUPPORT</a></li>
-                <li role="presentation" class="nav-item"><a href="//docs.varigence.com" class="nav-link">DOCS</a></li>
+                <li role="presentation" class="nav-item active"><a href="//docs.varigence.com" class="nav-link">DOCS</a></li>
                 <li role="presentation" class="nav-item"><a href="//www.varigence.com/Partners" class="nav-link">PARTNERS</a></li>
                 <li role="presentation" class="nav-item"><a href="//www.varigence.com/Company" class="nav-link">COMPANY</a></li>
 
@@ -22,5 +22,64 @@
         <a href="//www.varigence.com/Store">QUOTE</a>
         <a href="javascript:window.location.href = '/hc/en-us/signin?return_to=' + encodeURIComponent(window.location.href) + '&locale=en-us';"><i class="fa fa-user" id="nav-shopping"></i></a>
         <a href="//www.varigence.com/Store"><i class="fa fa-shopping-cart" id="nav-shopping"></i></a>
+        <a type="button" title="Search" tabindex="0" aria-label="Search" href="/hc/en-us/newsearch">
+            <i class="fa fa-search"></i>
+        </a>
     </div>
 </div>
+  <div class="layout__header" style="display: table;width:100%;">
+    <header class="topbar container topbar_image topbar--small" data-topbar>
+      <div class="container-inner topbar__container-inner">
+        <div class="topbar__inner">
+          <div class="topbar__col clearfix">
+             <a title="Home" href="/">
+                <h3 class="help-center-name">Documentation</h3>
+              </a>
+            <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x" data-toggle-menu>
+              <span class="lines"></span> </button>
+              
+
+                <div class="container hide-when-search" id="breadcrumb" style="position: absolute;">
+    <ul class="breadcrumb">
+      <li>{{_tocTitle}}</li>
+    </ul>
+  </div>
+
+
+          </div>
+          <div class="topbar__col topbar__menu">
+            <div class="topbar__collapse" data-menu>
+              <div class="topbar__controls">                
+                <a href='https://support.varigence.com/hc/en-us' class='topbar__link submit-a-request'>Support</a>
+                <a class="topbar__link submit-a-request" href="/hc/en-us/community/topics">Forums</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-unit is-hidden" data-hero-unit>
+        <div class="container-inner search-box search-box--hero-unit" data-search-box>
+          <div class="intro-title">
+            
+            What can we help you with?
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="waves waves--small" data-wave-small>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 47" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g fill="none" fill-rule="evenodd">
+          <path fill-rule="nonzero"
+            d="M403.925926,32 C583.088889,32 1900,0 1900,0 L0,0 C0,0 163.540741,32 403.925926,32 Z"
+            transform="translate(-250)" />
+          <path fill-opacity="0.2" fill-rule="nonzero"
+            d="M1342.66667,76 C1552.37037,76 1900,0.2 1900,0.2 L0,0.2 C0,0.2 896.518519,76 1342.66667,76 Z"
+            transform="translate(0 -29)" />
+          <path fill-opacity="0.2" fill-rule="nonzero"
+            d="M1342.66667,76 C1552.37037,76 1900,0.2 1900,0.2 L0,0.2 C0,0.2 896.518519,76 1342.66667,76 Z"
+            transform="translate(617 -29)" />
+        </g>
+      </svg>
+    </div>
+  </div>
