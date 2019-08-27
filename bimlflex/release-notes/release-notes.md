@@ -14,14 +14,14 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64267.0, release date: 26 Aug 2019
+Build 5.0.64268.0, release date: 26 Aug 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
 
-## Build 5.0.64267.0, release date: 26 August 2019
+## Build 5.0.64268.0, release date: 26 August 2019
 
 * Add: Additional Setting: `PersistHistory`. This setting allows overrides of the Persist History setting of the connection on an object level.
 * Update: Addressed an issue where the ELT PSA load pattern misinterpreted the RowChangeType in certain scenarios.
@@ -30,8 +30,8 @@ Build 5.0.64267.0, release date: 26 Aug 2019
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64267.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64267.0.exe)
-* [bimlflexruntimesetup_5.0.64267.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64267.0.exe)
+* [bimlflexdevsetup_5.0.64268.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64268.0.exe)
+* [bimlflexruntimesetup_5.0.64268.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64268.0.exe)
 
 ## Build 5.0.64261.0, release date: 16 August 2019
 
