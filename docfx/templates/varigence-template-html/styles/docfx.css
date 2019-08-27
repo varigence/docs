@@ -148,7 +148,7 @@ hr {
   border-color: #cccccc;
 }
 header {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   right: 0;
@@ -318,8 +318,8 @@ article section {
   display: none;
 }
 
-.pullup{
-  margin-top: -70px;
+.pullup {
+  margin-top: -120px;
 }
 
 /* Search results display*/
@@ -437,7 +437,7 @@ body .toc{
 }
 
 #sidetoc{
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .toc {
@@ -521,7 +521,7 @@ body .toc{
   float:left;
   top: 90px;
   width: 260px;
-  padding: 20px;
+/*  padding: 20px;*/
   border-left: 1px solid #e7e7e7;
   z-index: 1;
 }
@@ -534,7 +534,7 @@ body .toc{
   padding: 5px;
   position: relative;
   margin: 0 5px 0 5px;
-  border: 1px solid #e7e7e7;
+  /*border: 1px solid #e7e7e7;*/
 }
 .toc-filter > input {
   border: 0;
