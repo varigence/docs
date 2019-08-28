@@ -218,8 +218,6 @@ rem optionally call a script to create the environment and environment variables
 rem call isdeploymentwizard.exe to deploy the ispacs to the SQL Server SSIS Catalog instance for the SSIS projects.
 rem this loops through all Projects specified in the ProjectList variable array
 
-for %%i in %ProjectList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServerVersionPath%\DTS\Binn\isdeploymentwizard.exe" /S /SP:"output\%%i\bin\%%i_Project.ispac" /DS:%ServerName% /DP:"/%SsisDbName%/%FolderName%/%%i_Project/"
-
 echo Start deploy of all projects
 for %%i in %ProjectList% do (
   echo start process of %%i
