@@ -40,16 +40,14 @@ BimlFlex can locally build out the SQL Server based SSDT project that contains t
 
 ## Build server based approach
 
-Microsoft's normal build command MsBuild.exe does currently not include the functionality to build out ispaq files from *.dtproj files directly. There are several options for building using Visual Studio through devenv.exe as well as creating custom tasks for MSBuild to allow it to build the ispac files.
+Microsoft's normal build command `MsBuild.exe` does currently not include the functionality to build out ispaq files from *.dtproj files directly. There are several options for building using Visual Studio through devenv.exe as well as creating custom tasks for MSBuild to allow it to build the ispac files.
 As the Biml compiler builds the ispaq file as part of the normal project build it is possible to skip this entire step and directly use the generated ispaq file. This allows the build and integration process to work smoothly even in environments that doesn't allow custom installations and configurations.
-
-Note that this build command will create the ispac file in the `bin\Development` folder instead of the bin location used by the BimlStudio build described here.
 
 ## Automate Building
 
-Once a CI server is running it can either build files from sources or deploy compiled project files that have been checked in. Some questions for considering automating the Build:
+Once a build server is running it can either build files from sources or deploy compiled project files that have been checked in. Some questions for considering automating the Build:
 
-* can build tools (such as BimlFlex) be installed and licensed on the build server/agent
+* can build tools (such as BimlStudio/BimlFlex) be installed and licensed on the build server/agent
 * can the build server access the BimlFlex metadata repository database
 
 There are pros and cons to using a completely automated build
@@ -57,7 +55,7 @@ There are pros and cons to using a completely automated build
 * Users can forget to compile the code or to check-in the compiled output which could mean that the code is up to date, but the output (ispac file) is not
 * Having a central location where build errors are visible is key to responding rapidly to issues
 
-Regardless of if the Builds are automated and triggered on push or PR, scheduled or manually triggered, or if they are manually run without a CI server the following steps are normally required. For a build server process these steps would be performed after the repository has been loaded from the source.
+Regardless of if the builds are automated and triggered on push or PR, scheduled or manually triggered, or if they are manually run without a CI server, the following steps are normally required. For a build server process these steps would be performed after the repository has been loaded from the source.
 
 ## Sample Automation process
 
@@ -65,9 +63,9 @@ Sample Automation process and sample scripts
 
 1. Build the SQL Server SSDT database projects
 
-This step can either use the Biml Compiler or MSBuild to build the artifacts. It connects to the metadata instance and ejects the SSDT Projects. Note that there is an SSDT Project per database.
+The build process connects to the metadata instance and ejects the SSDT Projects. Note that there is a separate SSDT Project per database.
 
-The build process uses a separate settings file as well as separate build configuration files to only build the required SSDT Project. This allows the developer to have the original settings files for normal development and makes sure the automated process builds the expected result. The Biml Compiler uses a different build settings file to the MSBuild approach.
+The build process uses a separate settings file as well as separate build configuration files to only build the required SSDT Project. This allows the developer to have the original settings files for normal development and assures that the automated process builds the expected result.
 
 2. Compile the SSDT Projects
 
@@ -78,30 +76,23 @@ Before the compilation it is sometimes necessary to consider changes and migrati
 The Dacpac build process uses the MSBuild.exe file to build the Dacpac file from the .sqlproj project file
 
 >[!NOTE]
->Note that the destination folder under the `output` folder is `SSDT\<CustomerUID>\<VersionName>\<DatabaseName>`. The build script needs to reference the correct project file for each database.
+>Note that the default destination folder under the `output` folder is `SSDT\<CustomerUID>\<VersionName>\<DatabaseName>`. The build script needs to reference the correct project file for each database. The SSDT output folder is configurable in the settings.
 
-This sample script loops through all databases in the defined list and builds them all.
-
->[!NOTE]
->Note that the destination folder for the created Dacpac is different for this process compared to the Visual Studio based one. By default, Visual Studio ejects the Dacpac to a subfolder called `Development`
+The sample script loops through all databases in the defined list and builds them all.
 
 3. Deploy the Dacpac to SQL Server
 
 Once the Dacpac is created (including any custom, bespoke, migration logic) it can be deployed to the destination SQL Server.
 
-The deployment step uses SqlPackage.exe to deploy the Dacpac to the specified destination SQL Server.
+The deployment step uses `SqlPackage.exe` to deploy the Dacpac to the specified destination SQL Server.
 
 4. Build SSIS projects
 
 When the tables are available in the destination database it is possible to build the SSIS projects.
 
-The SSIS build uses the same process as step 1 with a separate settings file to build the desired projects.
+The SSIS build uses the same process as step 1 with a separate settings file to build the desired SSIS projects.
 
-5. Optionally build the ispaq file
-
-BimlStudio builds the ispac file as well as the SSIS packages. Optionally rebuild the ispaq file in the build process.
-
-6. Deploy ispaq file
+5. Deploy ispaq file
 
 Once the ispaq file is built it is possible to deploy it to a SSIS Catalog on an SSIS server.
 
@@ -110,25 +101,6 @@ When it has been deployed for the first time, use the Catalog environment featur
 ## Sample Scripts
 
 Download link to sample files: [bimlflex-cicd-sample-files.zip](resources/bimlflex-cicd-sample-files.zip)
-
-### Sample Script using the Biml compiler
-
-location: project root folder  
-filename: `_1.build_sql_bimlc.bat`
-
-```batch
-@echo off
-rem (c) Varigence 2018
-rem https://varigence.com/BimlFlex
-
-pushd %~dp0
-
-rem call the Biml Compiler with the specific resp file, use the path to the installed version of BimlStudio
-rem 64 bit: %programfiles%
-rem 32 bit: %programfiles(x86)%
-
-"%programfiles%\Varigence\BimlStudio\5.0\bimlc.exe" @"SqlOnly.mst.bimlc.resp"
-```
 
 ### Sample Script using MSBuild
 
@@ -200,23 +172,6 @@ rem this loops through all databases specified in the DatabaseList variable arra
 for %%i in %DatabaseList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServerVersionPath%\DAC\bin\SqlPackage.exe" /Action:Publish /SourceFile:"output\\SSDT\\%CustomerUID%\\%VersionName%\\%%i\\bin\\Debug\\%%i.Dacpac" /TargetDatabaseName:%%i /TargetServerName:%ServerName%
 ```
 
-## Sample Script to build SSIS Project with Biml Compiler
-
-location: project root folder  
-filename: `_4.build_ssis_bimlc.bat`
-
-```batch
-@echo off
-rem (c) Varigence 2018
-rem https://varigence.com/BimlFlex
-
-pushd %~dp0
-
-rem call the Biml Compiler with the specific resp file to build the SSIS projects
-
-"%programfiles%\Varigence\BimlStudio\5.0\bimlc.exe" @"SsisOnly.mst.bimlc.resp"
-```
-
 ## Sample File to build SSIS Packages with MSBuild
 
 location: project root folder  
@@ -234,36 +189,10 @@ rem call msbuild.exe with the specific resp file, use the path to a compatible, 
 C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"SsisOnly.mst.resp"
 ```
 
-## Optional Step to build ispac files
-
-location: project root folder  
-filename: `_5.build_ssis_ispaq.bat`
-
->[!NOTE]
->Note that the normal BimlStudio build creates the ispac file in the SSIS build step. This optional, separate, step requires a compatible version of Visual Studio capable of building ispac files.
-
-```batch
-@echo off
-rem (c) Varigence 2018
-rem https://varigence.com/BimlFlex
-
-pushd %~dp0
-
-rem set these to match your environment
-
-SET "ProjectList=(EXT_AWLT_SRC)"
-SET "VisualStudioPath=Microsoft Visual Studio\2017\Enterprise"
-
-rem build the ispac files from the SSIS Projects
-rem this loops through all projects specified in the ProjectList variable array
-
-for %%i in %ProjectList% do "%programfiles(x86)%\%VisualStudioPath%\Common7\IDE\devenv.com" "output\\%%i\\%%i_Project.dtproj" /rebuild
-```
-
 ## Deploy ispac file with SSIS Packages to SSIS Catalog
 
 location: project root folder  
-filename: `_6.deploy_ssis_ispac.bat`
+filename: `_5.deploy_ssis_ispac.bat`
 
 ```batch
 @echo off
@@ -284,10 +213,21 @@ rem create the folder in the SSISDB catalog if needed
 
 sqlcmd -S %servername%  -d %ssisdbname% -Q "EXEC catalog.create_folder @folder_name = '%FolderName%';"
 
+rem optionally call a script to create the environment and environment variables here
+
 rem call isdeploymentwizard.exe to deploy the ispacs to the SQL Server SSIS Catalog instance for the SSIS projects.
 rem this loops through all Projects specified in the ProjectList variable array
 
-for %%i in %ProjectList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServerVersionPath%\DTS\Binn\isdeploymentwizard.exe" /S /SP:"output\%%i\bin\%%i_Project.ispac" /DS:%ServerName% /DP:"/%SsisDbName%/%FolderName%/%%i/"
+for %%i in %ProjectList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServerVersionPath%\DTS\Binn\isdeploymentwizard.exe" /S /SP:"output\%%i\bin\%%i_Project.ispac" /DS:%ServerName% /DP:"/%SsisDbName%/%FolderName%/%%i_Project/"
+
+echo Start deploy of all projects
+for %%i in %ProjectList% do (
+  echo start process of %%i
+  "%programfiles%\Microsoft SQL Server\%SqlServerVersionPath%\DTS\Binn\isdeploymentwizard.exe" /S /SP:"output\%%i\bin\%%i_Project.ispac" /DS:%ServerName% /DP:"/%SsisDbName%/%FolderName%/%%i_Project/"
+)
+echo End deploy of all projects
+
+rem optionally call a script to map project variables to environment variables here
 ```
 
 ## Sample settings file for SQL Only builds
@@ -424,15 +364,6 @@ Update this file to reflect project settings and configurations
 ]
 ```
 
-## Sample SqlOnly.mst.bimlc.resp settings file
-
-location: project root folder  
-filename: `SqlOnly.mst.bimlc.resp`
-
-```bimlc.resp
---targetPath="output" --buildDocumentation- --docOutputPath="documentation" --bundleSetting="SqlOnly.bimlb.settings" --version=SqlServer2017 --version=Ssas2017 --version=SsasTabular2017 --version=Ssis2017 --ssisDeploymentModel=Project --ddlBuildMode=None --warnAsError=False --warn=4 --cleanOutputFolder=True --EnableBimlFlex=True
-```
-
 ## Sample SqlOnly.mst.ProjectView.bimlproj settings file
 
 location: project root folder  
@@ -446,14 +377,10 @@ filename: `SqlOnly.mst.ProjectView.bimlproj`
     <DocumentationOutputPath>documentation</DocumentationOutputPath>
   </PropertyGroup>
   <ItemGroup Condition="true">
+    <Templates Include="addedBiml\BimlScripts\ExtensionPoints\*.biml" />
     <BundleSettings Include="SqlOnly.bimlb.settings" />
   </ItemGroup>
   <Import Project="$(AssemblyPath)\Varigence.Biml.targets" Condition="true" />
-  <!-- 
-  Any changes outside of the auto-generated ItemGroup and PropertyGroup tags 
-  will be ignored by the Configuration designer.
-  Any content within the auto-generated ItemGroup and PropertyGroup tags can be overwritten by the Configuration designer. 
-  -->
 </Project>
 ```
 
@@ -488,14 +415,10 @@ filename: `SsisOnly.mst.ProjectView.bimlproj`
     <DocumentationOutputPath>documentation</DocumentationOutputPath>
   </PropertyGroup>
   <ItemGroup Condition="true">
+    <Templates Include="addedBiml\BimlScripts\ExtensionPoints\*.biml" />
     <BundleSettings Include="SsisOnly.bimlb.settings" />
   </ItemGroup>
   <Import Project="$(AssemblyPath)\Varigence.Biml.targets" Condition="true" />
-  <!-- 
-  Any changes outside of the auto-generated ItemGroup and PropertyGroup tags 
-  will be ignored by the Configuration designer.
-  Any content within the auto-generated ItemGroup and PropertyGroup tags can be overwritten by the Configuration designer. 
-  -->
 </Project>
 ```
 
@@ -515,6 +438,8 @@ Any Extension Points used in the project will need to be defined in the correspo
 BimlStudio automatically adds the included Extension Point file to the corresponding .resp and .bimlproj file.
 
 Depending on the build engine used, add the references to the Extension Point files in the correct automated build settings file. Note that BimlStudio currently adds the references using absolute paths for the automatic files, but the references in the ci/cd build files can use relative path so they work on dynamic build machines.
+
+The above samples use msbuild only and has a dynamic reference to all Extension Points in the Extension Points folder.
 
 ## Silent Installation of BimlStudio
 
