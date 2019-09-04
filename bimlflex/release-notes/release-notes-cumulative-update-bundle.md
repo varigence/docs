@@ -11,7 +11,7 @@ The Cumulative Update Bundle channel is available as an option in the Upgrade As
 
 > [!NOTE]
 > Please make sure you have a backup of your database and projects prior to upgrading or applying any updates. We also recommend that your project and bundles are checked into your source control.
-> Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
+> Please email support@bimlflex.com should you experience any issues while upgrading.
 
 > [!IMPORTANT]
 > The Cumulative Update Bundle channel allows users to apply fixes to identified issues. Apply updates in a testing or development environment before committing to a production environment. Only apply the Cumulative Update if there are identified issues that have been documented as addressed in these release notes.
@@ -111,7 +111,7 @@ CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
     WITH(CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([Venue_SK]))
 ```
 
-Varigence provides remote support to accommodate this upgrade for any affected customer under current support and maintenance, please contact bimlflex-support@varigence.com for more information.
+Varigence provides remote support to accommodate this upgrade for any affected customer under current support and maintenance, please contact support@bimlflex.com for more information.
 
 ## Bundle 63827
 

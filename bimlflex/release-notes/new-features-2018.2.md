@@ -5,7 +5,7 @@
 BimlFlex now has initial support for Snowflake as a staging and persistent staging engine.
 
 This supports the SRC - STG - PSA process and includes the use of an SSIS Custom Task.  
-This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use. Please contact bimlflex-support@varigence.com for more information if you are looking at using Snowflake with BimlFlex.
+This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use. Please contact support@bimlflex.com for more information if you are looking at using Snowflake with BimlFlex.
 
 ## Agile Data Vault Acceleration
 

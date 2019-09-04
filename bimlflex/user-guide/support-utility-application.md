@@ -8,7 +8,7 @@ The BimlFlex Support Utility Application can be used to deploy and interact with
 
 ## Download
 
-Please contact the BimlFlex support team at [bimlflex-support@varigence.com](mailto:bimlflex-support@varigence.com) for more information.
+Please contact the BimlFlex support team at [support@bimlflex.com](mailto:support@bimlflex.com) for more information.
 
 ## Included functionality
 

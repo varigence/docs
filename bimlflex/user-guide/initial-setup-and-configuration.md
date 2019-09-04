@@ -18,7 +18,7 @@ The development side is focused around the BimlStudio-based BimlFlex project. Op
 
 The first time a new installation starts it requires the License Key. This key is provided as part of the engagement with Varigence.
 
-If the key is missing, please contact Varigence BimlFlex Support at [bimlflex-support@varigence.com](mailto:bimlflex-support@varigence.com).
+If the key is missing, please contact Varigence BimlFlex Support at [support@bimlflex.com](mailto:support@bimlflex.com).
 
 ## Watch Recordings
 

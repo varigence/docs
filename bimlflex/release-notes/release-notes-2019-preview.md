@@ -9,7 +9,7 @@ name: BimlFlex 2019 Preview Release Notes
 
 > [!NOTE]
 > Please make sure databases and projects have been backed up prior to upgrading or applying any updates.
-> Please email bimlflex-support@varigence.com should you experience any issues while upgrading.
+> Please email support@bimlflex.com should you experience any issues while upgrading.
 
 > [!IMPORTANT]
 > The 2019 Preview release allows users to preview the upcoming BimlFlex and BimlStudio 2019 release. Apply the preview release in a testing or development environment.
