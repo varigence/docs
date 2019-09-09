@@ -27,7 +27,7 @@
         </a>
     </div>
 </div>
-  <div class="layout__header" style="display: table;width:100%;">
+  <div class="layout__header" style="display:inline-block;width:100%;">
     <header class="topbar container topbar_image topbar--small" data-topbar>
       <div class="container-inner topbar__container-inner">
         <div class="topbar__inner">
