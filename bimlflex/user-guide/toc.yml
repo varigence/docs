@@ -56,7 +56,7 @@
   - name: Load Parameters
     href: load-parameters.md
   - name: Delete Detection
-    href: loaddelete-detection.md
+    href: delete-detection.md
 
 - name: Supporting materials for configurations, extensions, orchestration
   items:
@@ -73,7 +73,7 @@
   items:
   - name: Deployment Guide
     href: deployment-guide.md
-  - name: Concurrent Development guidelines
+  - name: Concurrent Development
     href: concurrent-development.md
   - name: Continuous Integration and Deployment
     href: continuous-integration-and-continuous-delivery.md
