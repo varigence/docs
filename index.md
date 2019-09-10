@@ -4,6 +4,12 @@
 
 # Varigence Support Documentation
 
+<p>&nbsp;</p>
+
+<ci-search style="justify-content:left;"></ci-search>
+
+<p>&nbsp;</p>
+
 At Varigence, we offer a comprehensive library of professional support resources.
 
 We include support within the products, for our customers with active product support/maintenance, and as supplemental packages for more extensive training.

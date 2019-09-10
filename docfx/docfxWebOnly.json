@@ -29,6 +29,12 @@
       },
 
       {
+        "files": [ "hc/en-us/search/index.md" ],
+        "src": "generated-search",
+        "dest": "hc/en-us/search"
+      },
+
+      {
         "files": [ "**/*.yml" ],
         "src": "generated-bimlflex",
         "dest": "bimlflex",

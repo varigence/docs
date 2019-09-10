@@ -18,11 +18,15 @@
         {{>partials/breadcrumb}}
         {{/_disableBreadcrumb}}
       </header>
-      {{#_enableSearch}}
+
+<!--{{!
+      {#_enableSearch}
       <div class="container body-content">
-        {{>partials/searchResults}}
+        {>partials/searchResults}
       </div>
-      {{/_enableSearch}}
+      {/_enableSearch}
+}}-->
+
       <div role="main" class="container body-content hide-when-search">
       {{^_disableToc}}
         {{>partials/toc}}

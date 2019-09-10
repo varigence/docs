@@ -1,4 +1,4 @@
-<!--
+{{!<!--
 <div>
     <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" id="topnav">
         <div class="container-fluid"><a class="navbar-brand" href="index.html" style="background-image: url('varigence-icon.png');background-size: cover;background-repeat: no-repeat;height: 66px;width: 200px;background-position: center;margin-left: -15px;"></a><button class="navbar-toggler"
@@ -18,4 +18,4 @@
         </div>
     </nav>
 </div>
--->
+-->}}

@@ -28,4 +28,16 @@
 <script type="text/javascript" src="{{_rel}}styles/shBrushBimlScript.js"></script>
 <script type="text/javascript" src="{{_rel}}styles/apply-syntax-highlighter-brush.js"></script>
 
-   
+<script>
+(function() {
+var id = '32b8b448-9b1f-11e8-8cf3-12b6486824f4';
+var ci_search = document.createElement('script');
+ci_search.type = 'text/javascript';
+ci_search.async = true;
+ci_search.src = 'https://cse.expertrec.com/api/js/ci_common.js?id=' + id;
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ci_search, s);
+})();
+</script>
+
+

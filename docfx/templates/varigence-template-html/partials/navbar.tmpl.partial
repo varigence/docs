@@ -1,85 +1,85 @@
 {{!Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.}}
-<!--
-<nav id="autocollapse" class="navbar navbar ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-bars"></i>
-              </button>
-              <a href="/">
-                <img id="site-logo" src="/content/images/varigence-icon.png" alt="Varigence">
+
+<div class="navbar navbar-light navbar-expand-md navbar-text navigation-clean-button" id="topnav">
+    <div class="container-fluid">
+        <a href="//www.varigence.com" class="navbar-brand" style="background-image: url('//theme.zdassets.com/theme_assets/1977347/6b92811c443e84f0b193e6397e872e3209cce4e1.png');background-size: cover;background-repeat: no-repeat;height: 66px;width: 200px;background-position: center;"></a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul id="left-navs" class="nav navbar-nav mr-auto" style="color: #00416a;">
+                <li role="presentation" class="nav-item"><a href="//www.varigence.com/Products" class="nav-link">PRODUCTS</a></li>
+                <li role="presentation" class="nav-item"><a href="//support.varigence.com" class="nav-link">SUPPORT</a></li>
+                <li role="presentation" class="nav-item active"><a href="//docs.varigence.com" class="nav-link">DOCS</a></li>
+                <li role="presentation" class="nav-item"><a href="//www.varigence.com/Partners" class="nav-link">PARTNERS</a></li>
+                <li role="presentation" class="nav-item"><a href="//www.varigence.com/Company" class="nav-link">COMPANY</a></li>
+
+
+                <li role="presentation" class="nav-item collapse-only"><a href="//docs.varigence.com" class="nav-link">QUOTE</a></li>
+                <li role="presentation" class="nav-item collapse-only"><a href="javascript:window.location.href = '/hc/en-us/signin?return_to=' + encodeURIComponent(window.location.href) + '&amp;locale=en-us';" class="nav-link">ACCOUNT</a></li>
+                <li role="presentation" class="nav-item collapse-only"><a href="//www.varigence.com/Store" class="nav-link">STORE</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="actions">
+        <a href="//www.varigence.com/Store">QUOTE</a>
+        <a href="javascript:window.location.href = '/hc/en-us/signin?return_to=' + encodeURIComponent(window.location.href) + '&locale=en-us';"><i class="fa fa-user" id="nav-shopping"></i></a>
+        <a href="//www.varigence.com/Store"><i class="fa fa-shopping-cart" id="nav-shopping"></i></a>
+        <a type="button" title="Search" tabindex="0" aria-label="Search" href="/hc/en-us/newsearch">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+</div>
+  <div class="layout__header" style="display:inline-block;width:100%;">
+    <header class="topbar container topbar_image topbar--small" data-topbar>
+      <div class="container-inner topbar__container-inner">
+        <div class="topbar__inner">
+          <div class="topbar__col clearfix">
+             <a title="Home" href="/">
+                <h3 class="help-center-name">Documentation</h3>
               </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search" style="display: block;">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="on">
-                </div>
-              </form>
-             <ul class="nav level1 navbar-nav" style="color: #00416a;">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.varigence.com/biml-flex.html">BimlFlex</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.varigence.com/biml-studio.html">BimlStudio</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.varigence.com/biml-express.html">BimlExpress</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://www.varigence.com/compare.html">Compare</a></li>
-                    <li class="dropdown nav-item" id="partners"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="partners.html">Partners</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="https://www.varigence.com/partners.html">Partners</a><a class="dropdown-item" role="presentation" href="biml-heroes.html">Biml Heroes</a>
-                    </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="https://support.varigence.com">Support</a></li>
-                </ul>
-                
-                <span id="navright" class="navbar-text actions">
-                <a href="https://www.varigence.com/quotes.html" style="padding-right:15px; color: #00416a;">Quote</a>
-                <a href="https://www.varigence.com/login.html" style="padding-right:15px; color: #00416a;">
-                <i class="fa fa-user" id="nav-shopping"></i></a>
-                <a href="https://www.varigence.com/Store" style="padding-right:15px; color: #00416a;"><i class="fa fa-shopping-cart" id="nav-shopping"></i></a>
-                </span>
+            <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x" data-toggle-menu>
+              <span class="lines"></span> </button>
+              
+
+                <div class="container hide-when-search" id="breadcrumb" style="position: absolute;">
+    <ul class="breadcrumb">
+      <li>{{_tocTitle}}</li>
+    </ul>
+  </div>
+
+
+          </div>
+          <div class="topbar__col topbar__menu">
+            <div class="topbar__collapse" data-menu>
+              <div class="topbar__controls">                
+                <a href='https://support.varigence.com/hc/en-us' class='topbar__link submit-a-request'>Support</a>
+                <a class="topbar__link submit-a-request" href="/hc/en-us/community/topics">Forums</a>
+              </div>
             </div>
           </div>
-        </nav>
--->
-
-<div id="header">
-	      <div class="container">
-	          <button id="main-nav-toggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" aria-controls="navbar">
-	              <span class="sr-only">Toggle navigation</span>
-	              <span class="icon-bar"></span>
-	              <span class="icon-bar"></span>
-	              <span class="icon-bar"></span>
-	          </button>
-	          <!--<li id="mobile-icon-search"><img class="header-search-icon" src="/content/images/icons/search.png"></li>-->
-	          <div class="logo-link">
-	              <a href="//varigence.com">
-	                  <img id="site-logo" src="/content/images/varigence-icon.png" alt="Varigence">
-	              </a>
-	  			<a href="/">
-	                  <div id="docsHeaderLabel">Docs</div>
-	  	        </a>
-	          </div>
-	          <div id="main-menu" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="search" id="search" style="display: block;">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-	              <ul class="nav navbar-nav">
-	                  <div id="main-menu-triangle" class="triangle-up"></div>
-	                          
-	                  <li class=" direct"><a href="/Biml">Biml</a></li>
-	  
-	                  <li class=" direct"><a href="/BimlExpress">BimlExpress</a></li>
-	                      
-	                  <li class=" direct"><a href="/BimlStudio">BimlStudio</a></li>
-	                  
-	                  <li class=" direct"><a href="/BimlFlex">BimlFlex</a></li>
-	                   
-	                  <li id="icon-search">
-	                      <img class="header-search-icon" src="/Content/Images/icons/search.png">
-	                  </li>
-                    
-	              </ul>
-	          </div>
+        </div>
+      </div>
+      <div class="hero-unit is-hidden" data-hero-unit>
+        <div class="container-inner search-box search-box--hero-unit" data-search-box>
+          <div class="intro-title">
             
-	          
-	      </div>
-	  </div>
+            What can we help you with?
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="waves waves--small" data-wave-small>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 47" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g fill="none" fill-rule="evenodd">
+          <path fill-rule="nonzero"
+            d="M403.925926,32 C583.088889,32 1900,0 1900,0 L0,0 C0,0 163.540741,32 403.925926,32 Z"
+            transform="translate(-250)" />
+          <path fill-opacity="0.2" fill-rule="nonzero"
+            d="M1342.66667,76 C1552.37037,76 1900,0.2 1900,0.2 L0,0.2 C0,0.2 896.518519,76 1342.66667,76 Z"
+            transform="translate(0 -29)" />
+          <path fill-opacity="0.2" fill-rule="nonzero"
+            d="M1342.66667,76 C1552.37037,76 1900,0.2 1900,0.2 L0,0.2 C0,0.2 896.518519,76 1342.66667,76 Z"
+            transform="translate(617 -29)" />
+        </g>
+      </svg>
+    </div>
+  </div>
