@@ -20,7 +20,7 @@ The BimlCatalog Audit and Logging database is used at run time by the loading pr
 
 Use a single Metadata Customer per Data Warehouse. Most scenarios have a single Data Warehouse and as such a single, main customer
 
-Use Versions to progress through development cycles. For sprint scenarios, name the current Version after the current sprint, e.g.`Sprint 23`
+Use Versions to progress through development cycles. For sprint scenarios, name the current Version after the current sprint, e.g. `Sprint 23`
 
 A single customer means all artifacts are in a single repository. That means all SSDT database projects represent a whole database and that all shared artefacts in the Data Vault are all co-located. This enables building of Point In Time constructs across data from multiple sources and also makes it possible to track name collisions in the target layer.
 
@@ -30,7 +30,7 @@ BimlFlex has a metadata Exclusion feature to Exclude metadata from the current s
 
 In the scenario where metadata has been imported from a source system that needs to be put on hold while a more high-priority source is processed, use the global exclusion to exclude that project completely from the metadata. Once the project is ready to be picked up, include it back into the live metadata set.
 
-For scenarios where multiple developers work on different sources or projects, use the `Use My Exclusions` feature to exclude the projects currently out of scope. This would be already delivered projects as well as projects other teams are working on. 
+For scenarios where multiple developers work on different sources or projects, use the `Use My Exclusions` feature to exclude the projects currently out of scope. This would be already delivered projects as well as projects other teams are working on.
 
 This sample scenario illustrates the process:
 
@@ -52,13 +52,15 @@ The developers within each Team collaborate and communicate on their respective 
 
 ## Automated Build considerations
 
-Use a single Build version for the build process, always clone from the current version to the build version. E.g. The `Build` Version is used by the automated build process. When a Build is needed, commit the current repository with the required Extension Points, merge the repository to the Build branch, clone the metadata to the `Build` version, overwriting the existing Build version. Use a pipeline to build from the committed data in the Build Branch in the repository against the metadata Build version. Continue to work on the `Sprint 23` metadata version and the development Branch in the repository. If there are Build errors, fix the metadata in the `Sprint 23` version and the development branch, re-push changes to the repo, re-clone the Sprint version to the Build version and rerun the pipeline
+Use a single Build version for the build process, always clone from the current version to the build version. E.g. The `Build` Version is used by the automated build process. When a Build is needed, commit the current repository with the required Extension Points, merge the repository to the Build branch, clone the metadata to the `Build` version, overwriting the existing Build version. Use a pipeline to build from the committed data in the Build Branch in the repository against the metadata Build version. Continue to work on the `Sprint 23` metadata version and the development Branch in the repository. If there are Build errors, fix the metadata in the `Sprint 23` version and the development branch, re-push changes to the repo, re-clone the Sprint 23 version to the Build version and rerun the pipeline.
+
+For a separate UAT or production pipeline, consider using a separate `Production` Version that is used the same way as the Build Version, but for the next promotion layer.
 
 ## Sprint Progression
 
-Snapshot the current version whenever a build is performed. Snapshot the Version before a sprint progression. When starting a new sprint, clone the current version `Sprint 23` to the new Sprint version, `Sprint 24`, and use that version going forward.
+Snapshot the current version whenever a build is performed. Snapshot the Version before a sprint progression. When starting a new sprint, clone the current version `Sprint 23` to the new Sprint version, `Sprint 24`, and use that version going forward. Always move forward, once a move to a new version has happened, never go back and change any previous versions. If any issues are identified, fix them in the current version.
 
-Snapshots are also used before any major metadata change to allow easy rollback. Coordinate snapshots and rollbacks with other team members.
+Snapshots are also used before any major metadata change to allow easy rollback. Coordinate snapshots and rollbacks with other team members. Remember to do the snapshot before the metadata change.
 
 Always perform regular backups of the metadata database to allow for quick and easy disaster recovery when needed.
 

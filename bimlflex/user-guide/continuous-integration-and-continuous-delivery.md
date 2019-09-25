@@ -387,17 +387,10 @@ filename: `SqlOnly.mst.ProjectView.bimlproj`
 location: project root folder  
 filename: `SqlOnly.mst.resp`
 
-```resp
-"SqlOnly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2017 /p:SsasVersion=Ssas2017 /p:SsasTabularVersion=SsasTabular2017 /p:SsisVersion=Ssis2017 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:EnableBimlFlex=True /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files\Varigence\BimlStudio\5.0"
-```
-
-## Sample SsisOnly.mst.bimlc.resp settings file
-
-location: project root folder  
-filename: `SsisOnly.mst.bimlc.resp`
+Remove the LicenseKey parameter to use the local registered user key
 
 ```resp
---targetPath="output" --buildDocumentation- --docOutputPath="documentation" --bundleSetting="SsisOnly.bimlb.settings" --version=SqlServer2017 --version=Ssas2017 --version=SsasTabular2017 --version=Ssis2017 --ssisDeploymentModel=Project --ddlBuildMode="None" --warnAsError=False --warn=4 --cleanOutputFolder=True --EnableBimlFlex=True
+"SqlOnly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2017 /p:SsasVersion=Ssas2017 /p:SsasTabularVersion=SsasTabular2017 /p:SsisVersion=Ssis2017 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:EnableBimlFlex=True /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files\Varigence\BimlStudio\5.0" /p:LicenseKey="LicenseKeyHere"
 ```
 
 ## Sample SsisOnly.mst.ProjectView.bimlproj settings file
@@ -425,8 +418,10 @@ filename: `SsisOnly.mst.ProjectView.bimlproj`
 location: project root folder  
 filename: `SsisOnly.mst.resp`
 
+Remove the LicenseKey parameter to use the local registered user key
+
 ```resp
-"SsisOnly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2017 /p:SsasVersion=Ssas2017 /p:SsasTabularVersion=SsasTabular2017 /p:SsisVersion=Ssis2017 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:EnableBimlFlex=True /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files (x86)\Varigence\BimlStudio\5.0"
+"SsisOnly.mst.ProjectView.bimlproj" /p:OutputPath="output" /p:SqlVersion=SqlServer2017 /p:SsasVersion=Ssas2017 /p:SsasTabularVersion=SsasTabular2017 /p:SsisVersion=Ssis2017 /p:SsisDeploymentModel=Project /p:DdlBuildMode="None" /p:WarnAsError=False /p:Warn=4 /p:CleanOutputFolder=False /p:EnableBimlFlex=True /p:TaskName=Varigence.Biml.Engine.MSBuild.BimlCompilerTask /p:AssemblyFile="C:\Program Files (x86)\Varigence\BimlStudio\5.0\BimlEngine.dll" /p:AssemblyPath="C:\Program Files (x86)\Varigence\BimlStudio\5.0" /p:LicenseKey="LicenseKeyHere"
 ```
 
 ## Special considerations when using Extension Points
