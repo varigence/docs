@@ -6,7 +6,7 @@ name: BimlFlex Release Notes
 
 > [!NOTE]
 > Please make sure databases and projects are backed up prior to upgrading.  
-> Please email bimlflex-support@varigence.com with any installation or upgrade issues
+> Please email support@bimlflex.com with any installation or upgrade issues
 
 ## BimlFlex 2019
 
@@ -14,12 +14,49 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64277.0, release date: 03 September 2019
+Build 5.0.64311.0, release date: 25 September 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
+
+## Build 5.0.64311.0, release date: 25 September 2019
+
+* Add: New advanced targeting system for Extension Points. It is now possible to assign a target name for one or more entities and use that attribute as the Extension Point target. This is useful in scenarios where a single Extension Point should be used in multiple location. E.g. a Batch pre-processing Extension Point can be added to any number of Batches by setting the Extension Point target to an attribute associated with the Batches in Scope. Use the `ExtensionPointTarget` AttributeKey and assign the target name in the AttributeValue.
+* Add: The BimlFlex App now supports touch mode in some UI interactions. Switch on Touch Mode in the BimlFlex App under settings to allow usage of touch gestures, such as double-tap instead of Ctrl+click.
+* Update: Unicode file objects no longer complain about missing code page definitions for the object.
+* Update: In certain scenarios the `AddRowHashKeyIndex` setting, which allows an additional Unique Constraint in the Staging Layer based on the Integration Key Hash, would create the constraint on the table without the RowEffectiveFrom column. This has been reviewed and the Constraint will now include both columns.
+* Update: The Data Vault accelerator now supports removal of the Record Source name from Link Satellites through the Accelerator UI in the same was as for Hub Satellites.
+* Update: The Data Vault accelerator now supports adding individual Source Keys to the Hub as a composite key. This feature is optional for scenarios where the Integration Key should be complimented with the individual key columns in their source formats.
+* Update: The Data Vault Accelerator has been removed from the BimlStudio Ribbon UI. The updated Accelerator has features that can only be supported in the BimlFlex app. Use the BimlFlex app for all Data Vault Acceleration.
+* Update: For certain ELT scenarios, the Link Satellite End Dating and Driving Key logic produced unexpected results. This has been addressed and updated logic for these scenarios is included in this version.
+* Update: A scenario where ELT processing in Azure SQL Data Warehouse was using Replicated temporary tables has been updated to use Round Robin distribution for these temporary tables.
+* Update: Adding the product key in the `msbuild` response file `*.mst.resp` using the `/p:LicenseKey="YourKeyHere"` now works as expected for automated build/build agent scenarios.
+* Update: BimlFlex App Performance – Most column updates do not need to reload the columns dataset from the database.
+* Add: BimlFlex App Notification Log
+* Add: BimlFlex Export Metadata now available from the App Dashboard
+* Update: BimlFlex App Graph layout improvements - Re-Layout dependent lists into top-level tabs with tab-context sensitive action buttons to prevent confusion
+* Update: BimlFlex App - Show dependent entity counts on tabs
+* Update: BimlFlex now use the wording `Locally` for Exclude and Connection String when `Use My Exclusions` and `Use My Connection Strings` are active for the session
+* Add: BimlFlex App now supports printing layout graphs to an SVG image
+* Update: BimlFlex App Now provides a `Navigate to` for Object and Column from graphs
+* Update: BimlFlex App: Add Ctrl+A shortcut key combination to allow select all graph tables (Move all selected with Shift+Mouse move)
+* Update: BimlFlex App: The accelerator pane splitter is now draggable
+* Update: BimlFlex App: Allow column ordinal sort in graphs using column drag-drop
+* Update: BimlFlex App: Allow add references in graphs using column drag-drop
+* Update: BimlFlex App: Allow Ctrl+S (Save) on all metadata screens
+* Update: BimlFlex App: Allow add and remove record source on Link Satellites
+* Update: BimlFlex App: Metadata Import uses table chunking and provides better progress feedback.
+* Update: BimlFlex App: Fix issue where deselecting on sub type in Tree View deselects all
+* Update: BimlFlex App: updates to error notifications from SQL with more helpful information
+* Update: BimlFlex App: Default version selection on customer change now use the `IsCurrent` flag
+* Update: BimlFlex App: Updated to prevent Object.Columns.Object circular references
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64311.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64311.0.exe)
+* [bimlflexruntimesetup_5.0.64311.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64311.0.exe)
 
 ## Build 5.0.64277.0, release date: 03 September 2019
 
@@ -28,7 +65,7 @@ Build 5.0.64277.0, release date: 03 September 2019
 * Update: In certain scenarios, column in the LSK keys were emitted in the wrong order, leading to unexpected hash values.
 * Update: In certain scenarios, an update to SQL Server Data Tools led to errors from the BimlFlex Custom SSIS Components. This release resolves this with updated custom components.
 * Update: Changing Customer in the BimlFlex App now defaults to the first active version for that Customer.
-* Update: Add database delimiter characters are now added to all temporary tables used. In certain scenarios, some object names could lead to invalid names being used for temporary processing tables.
+* Update: database delimiter characters are now added to all temporary tables used. In certain scenarios, some object names could lead to invalid names being used for temporary processing tables.
 
 download links to this build:
 
@@ -262,7 +299,7 @@ CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
     WITH(CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([Venue_SK]))
 ```
 
-Varigence provides remote support to accommodate this upgrade for any affected customer under current support and maintenance, please contact bimlflex-support@varigence.com for more information.
+Varigence provides remote support to accommodate this upgrade for any affected customer under current support and maintenance, please contact support@bimlflex.com for more information.
 
 ## Bundle 63827
 
