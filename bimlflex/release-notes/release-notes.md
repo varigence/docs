@@ -6,7 +6,7 @@ name: BimlFlex Release Notes
 
 > [!NOTE]
 > Please make sure databases and projects are backed up prior to upgrading.  
-> Please email bimlflex-support@varigence.com with any installation or upgrade issues
+> Please email support@bimlflex.com with any installation or upgrade issues
 
 ## BimlFlex 2019
 
@@ -14,14 +14,14 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64277.0, release date: 03 September 2019
+Build 5.0.64311.0, release date: 25 September 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
 
-## Build 5.0.vnext.0, release date: nn September 2019
+## Build 5.0.64311.0, release date: 25 September 2019
 
 * Add: New advanced targeting system for Extension Points. It is now possible to assign a target name for one or more entities and use that attribute as the Extension Point target. This is useful in scenarios where a single Extension Point should be used in multiple location. E.g. a Batch pre-processing Extension Point can be added to any number of Batches by setting the Extension Point target to an attribute associated with the Batches in Scope. Use the `ExtensionPointTarget` AttributeKey and assign the target name in the AttributeValue.
 * Add: The BimlFlex App now supports touch mode in some UI interactions. Switch on Touch Mode in the BimlFlex App under settings to allow usage of touch gestures, such as double-tap instead of Ctrl+click.
@@ -32,7 +32,7 @@ Build 5.0.64277.0, release date: 03 September 2019
 * Update: The Data Vault Accelerator has been removed from the BimlStudio Ribbon UI. The updated Accelerator has features that can only be supported in the BimlFlex app. Use the BimlFlex app for all Data Vault Acceleration.
 * Update: For certain ELT scenarios, the Link Satellite End Dating and Driving Key logic produced unexpected results. This has been addressed and updated logic for these scenarios is included in this version.
 * Update: A scenario where ELT processing in Azure SQL Data Warehouse was using Replicated temporary tables has been updated to use Round Robin distribution for these temporary tables.
-* Update: Adding the product key in the msbuild response file `*.mst.resp` using the `/p:LicenseKey="YourKeyHere"` now works as expected for automated build/build agent scenarios.
+* Update: Adding the product key in the `msbuild` response file `*.mst.resp` using the `/p:LicenseKey="YourKeyHere"` now works as expected for automated build/build agent scenarios.
 * Update: BimlFlex App Performance – Most column updates do not need to reload the columns dataset from the database.
 * Add: BimlFlex App Notification Log
 * Add: BimlFlex Export Metadata now available from the App Dashboard
@@ -55,8 +55,8 @@ Build 5.0.64277.0, release date: 03 September 2019
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.vnext.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.vnext.0.exe)
-* [bimlflexruntimesetup_5.0.vnext.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.vnext.0.exe)
+* [bimlflexdevsetup_5.0.64311.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64311.0.exe)
+* [bimlflexruntimesetup_5.0.64311.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64311.0.exe)
 
 ## Build 5.0.64277.0, release date: 03 September 2019
 
@@ -299,7 +299,7 @@ CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
     WITH(CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([Venue_SK]))
 ```
 
-Varigence provides remote support to accommodate this upgrade for any affected customer under current support and maintenance, please contact bimlflex-support@varigence.com for more information.
+Varigence provides remote support to accommodate this upgrade for any affected customer under current support and maintenance, please contact support@bimlflex.com for more information.
 
 ## Bundle 63827
 
