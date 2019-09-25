@@ -23,6 +23,7 @@ Build 5.0.64311.0, release date: 25 September 2019
 
 ## Build 5.0.64311.0, release date: 25 September 2019
 
+* Add: BimlFlex can now generate Snowflake Stored Procedures to push down logic into the Snowflake engine. As Snowflake previously didn't support Stored Procedures, the BimlFlex process would instead run the required queries from the orchestration engine as needed. Use the `Generate Scripts` menu to create the Stored Procedures.
 * Add: New advanced targeting system for Extension Points. It is now possible to assign a target name for one or more entities and use that attribute as the Extension Point target. This is useful in scenarios where a single Extension Point should be used in multiple location. E.g. a Batch pre-processing Extension Point can be added to any number of Batches by setting the Extension Point target to an attribute associated with the Batches in Scope. Use the `ExtensionPointTarget` AttributeKey and assign the target name in the AttributeValue.
 * Add: The BimlFlex App now supports touch mode in some UI interactions. Switch on Touch Mode in the BimlFlex App under settings to allow usage of touch gestures, such as double-tap instead of Ctrl+click.
 * Update: Unicode file objects no longer complain about missing code page definitions for the object.
@@ -41,11 +42,11 @@ Build 5.0.64311.0, release date: 25 September 2019
 * Update: BimlFlex now use the wording `Locally` for Exclude and Connection String when `Use My Exclusions` and `Use My Connection Strings` are active for the session
 * Add: BimlFlex App now supports printing layout graphs to an SVG image
 * Update: BimlFlex App Now provides a `Navigate to` for Object and Column from graphs
-* Update: BimlFlex App: Add Ctrl+A shortcut key combination to allow select all graph tables (Move all selected with Shift+Mouse move)
+* Update: BimlFlex App: Add `Ctrl+A` (Select All) shortcut key combination to allow select all graph tables (Move all selected with Shift+Mouse move)
 * Update: BimlFlex App: The accelerator pane splitter is now draggable
 * Update: BimlFlex App: Allow column ordinal sort in graphs using column drag-drop
 * Update: BimlFlex App: Allow add references in graphs using column drag-drop
-* Update: BimlFlex App: Allow Ctrl+S (Save) on all metadata screens
+* Update: BimlFlex App: Allow `Ctrl+S` (Save) shortcut key combination on all metadata screens to save changes
 * Update: BimlFlex App: Allow add and remove record source on Link Satellites
 * Update: BimlFlex App: Metadata Import uses table chunking and provides better progress feedback.
 * Update: BimlFlex App: Fix issue where deselecting on sub type in Tree View deselects all
@@ -53,6 +54,7 @@ Build 5.0.64311.0, release date: 25 September 2019
 * Update: BimlFlex App: Default version selection on customer change now use the `IsCurrent` flag
 * Update: BimlFlex App: Updated to prevent Object.Columns.Object circular references
 * Update: SSDT Project - An issue where, in some scenarios, the SSDT project generated table definitions with duplicate references to the RowEffectiveFrom metadata column has been resolved
+* Update: The BimlStudio `Generate Scripts` Menu option now has separate options for `Snowflake Table Script` and `Snowflake Procedure Script`
 
 download links to this build:
 
