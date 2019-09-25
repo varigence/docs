@@ -52,6 +52,7 @@ Build 5.0.64311.0, release date: 25 September 2019
 * Update: BimlFlex App: updates to error notifications from SQL with more helpful information
 * Update: BimlFlex App: Default version selection on customer change now use the `IsCurrent` flag
 * Update: BimlFlex App: Updated to prevent Object.Columns.Object circular references
+* Update: SSDT Project - An issue where, in some scenarios, the SSDT project generated table definitions with duplicate references to the RowEffectiveFrom metadata column has been resolved
 
 download links to this build:
 
