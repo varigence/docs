@@ -14,16 +14,28 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64311.0, release date: 25 September 2019
+Build 5.0.64313.0, release date: 26 September 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
 
+## Build 5.0.64313.0, release date: 26 September 2019
+
+* Update: A scenario that could leave the BimlFlex App Accelerator empty in certain scenarios has been addressed
+* Update: A scenario where the SSDT project was not using the correct template has been addressed
+* Update: A scenario where PIT Stored Procedures produced unexpected results when no Satellites were selected has been addressed
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64313.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64313.0.exe)
+* [bimlflexruntimesetup_5.0.64313.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64313.0.exe)
+
 ## Build 5.0.64311.0, release date: 25 September 2019
 
 * Add: BimlFlex can now generate Snowflake Stored Procedures to push down logic into the Snowflake engine. As Snowflake previously didn't support Stored Procedures, the BimlFlex process would instead run the required queries from the orchestration engine as needed. Use the `Generate Scripts` menu to create the Stored Procedures.
+* Update: The BimlStudio `Generate Scripts` Menu option has a new option for `Snowflake Procedure Script`
 * Add: New advanced targeting system for Extension Points. It is now possible to assign a target name for one or more entities and use that attribute as the Extension Point target. This is useful in scenarios where a single Extension Point should be used in multiple location. E.g. a Batch pre-processing Extension Point can be added to any number of Batches by setting the Extension Point target to an attribute associated with the Batches in Scope. Use the `ExtensionPointTarget` AttributeKey and assign the target name in the AttributeValue.
 * Add: The BimlFlex App now supports touch mode in some UI interactions. Switch on Touch Mode in the BimlFlex App under settings to allow usage of touch gestures, such as double-tap instead of Ctrl+click.
 * Update: Unicode file objects no longer complain about missing code page definitions for the object.
@@ -54,7 +66,6 @@ Build 5.0.64311.0, release date: 25 September 2019
 * Update: BimlFlex App: Default version selection on customer change now use the `IsCurrent` flag
 * Update: BimlFlex App: Updated to prevent Object.Columns.Object circular references
 * Update: SSDT Project - An issue where, in some scenarios, the SSDT project generated table definitions with duplicate references to the RowEffectiveFrom metadata column has been resolved
-* Update: The BimlStudio `Generate Scripts` Menu option now has separate options for `Snowflake Table Script` and `Snowflake Procedure Script`
 
 download links to this build:
 
