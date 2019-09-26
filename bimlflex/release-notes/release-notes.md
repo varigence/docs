@@ -14,12 +14,23 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64311.0, release date: 25 September 2019
+Build 5.0.64313.0, release date: 26 September 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
+
+## Build 5.0.64313.0, release date: 26 September 2019
+
+* Update: A scenario that could leave the BimlFlex App Accelerator empty in certain scenarios has been addressed
+* Update: A scenario where the SSDT project was not using the correct template has been addressed
+* Update: A scenario where PIT Stored Procedures produced unexpected results when no Satellites were selected has been addressed
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64313.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64313.0.exe)
+* [bimlflexruntimesetup_5.0.64313.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64313.0.exe)
 
 ## Build 5.0.64311.0, release date: 25 September 2019
 
