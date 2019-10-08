@@ -15,9 +15,11 @@ Enabling delete detection will create new staging tables, by default named `<Sch
 
 It also creates new load packages that queries the source for all keys.
 
-The delete detection package will load all defined Source and Integration keys from the source into a cache file on the extract machine running the SSIS project. On subsequent runs the package compares the keys in the source with the keys in the cache. If a key is missing from the source compared to what is in the cache, it is identified as a deleted key. These deleted keys are inserted into a delete staging table in the staging database.
+The delete detection package will load all defined Source and Integration keys from the source into a cache file on the extract machine running the SSIS project. On subsequent runs the package compares the keys in the source with the keys in the cache. If a key is missing from the source compared to what is in the cache, it is identified as a deleted key. These deleted keys are inserted into the delete staging table in the staging database.
 
+The cache files are by default located at: 
 
+`C:\Biml\Export\<Name>.raw`
 
 Once the deleted keys are in the staging table they can be further processed into the target architecture.
 

@@ -22,7 +22,13 @@ For Varigence to be able to analyze and provide information for a case the inclu
 
 To be able to reproduce the issue it is also important that the metadata and any Extension Points files used for the project is provided.
 
-This information can be extracted through BimlStudio by using the `Debug Utilities` feature in the BimlFlex Ribbon UI.
+This information can be extracted through either the BimlFlex app or BimlStudio.
+
+In the BimlFlex app, by using the `Export Metadata` feature in the Actions pane.
+
+![Export Metadata -center](images/bimlflex-ss-v5-bimlflexapp-actions-pane.png "Export Metadata")
+
+In BimlStudio, by using the `Debug Utilities` feature in the BimlFlex Ribbon UI.
 
 ![Debug Utilities -center -50%](images/bimlflex-ss-v5-debug-bimlflex-utility.png "Debug Utilities")
 
