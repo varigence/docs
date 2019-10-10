@@ -1,4 +1,4 @@
-# Hadron Compiler Options
+# Biml Compiler (bimlc.exe) Options
 
 The following Hadron Compiler options are sorted alphabetically.
 
