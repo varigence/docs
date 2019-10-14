@@ -14,12 +14,31 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64317.0, release date: 27 September 2019
+Build 5.0.64332.0, release date: 15 October 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
+
+## Build 5.0.64332.0, release date: 15 October 2019
+
+* Add: The BimlFlex App now provides a connection string builder for connections. Click the wrench icon in the connection string field to open
+* Add: New setting `DvProcessOnStage` to process DV loads for the source file once the files are uploaded to staging. This allows the full end to end load from source to staging blob files to Data Vault to happen in one SSIS package. (only For Azure SQL Data Warehouse)
+* Add: New setting `CreateDymmyFile` option to upload a placeholder file to blob storage. This allows PolyBase to function without issues when all data files are moved out of the staging area. (only For Azure SQL Data Warehouse)
+* Add: New Extension Points `AzurePreArchiveStage` and `AzurePostArchiveStage` for extending the archive process in Azure SQL Data Warehouse loads.
+* Update: additional support for binary data types for Hash Distribution Keys for Azure SQL Data Warehouse.
+* Update: renamed setting `DmAppendExternal` to `AppendNameExternal`
+* Add: new setting `AppendNameLanding` for ADF Copy flows.
+* Add: additional support for Hash Distribution in Data Vault joins when performing end dating.
+* Add: Additional metadata attributes for connection strings.
+* Update: in certain scenarios, the Schema Diagram in the BimlFlex did not display any diagram. This has been addressed.
+* Update: in certain scenarios, the Model Grouping drop down in the BimlFlex App, Data Vault Accelerator did not apply the grouping as expected. This has been addressed.
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64332.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64332.0.exe)
+* [bimlflexruntimesetup_5.0.64332.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64332.0.exe)
 
 ## Build 5.0.64317.0, release date: 27 September 2019
 
