@@ -23,7 +23,7 @@ Build 5.0.64332.0, release date: 15 October 2019
 
 ## Build 5.0.64332.0, release date: 15 October 2019
 
-* Add: The BimlFlex App now provides a connection string builder for connections. Click the wrench icon in the connection string field to open
+* Add: The BimlFlex App now provides a connection string builder for connections. Click the edit icon in the connection string field to open
 * Add: New setting `DvProcessOnStage` to process DV loads for the source file once the files are uploaded to staging. This allows the full end to end load from source to staging blob files to Data Vault to happen in one SSIS package. (only For Azure SQL Data Warehouse)
 * Add: New setting `AzureCreateDummyFile` option to upload a placeholder file to blob storage. This allows PolyBase to function without issues when all data files are moved out of the staging area. (only For Azure SQL Data Warehouse)
 * Add: New Extension Points `AzurePreArchiveStage` and `AzurePostArchiveStage` for extending the archive process in Azure SQL Data Warehouse loads.
