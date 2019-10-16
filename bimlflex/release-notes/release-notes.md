@@ -14,14 +14,14 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64332.0, release date: 15 October 2019
+Build 5.0.64335.0, release date: 15 October 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
 
-## Build 5.0.64332.0, release date: 15 October 2019
+## Build 5.0.64335.0, release date: 15 October 2019
 
 * Add: The BimlFlex App now provides a connection string builder for connections. Click the edit icon in the connection string field to open
 * Add: New setting `DvProcessOnStage` to process DV loads for the source file once the files are uploaded to staging. This allows the full end to end load from source to staging blob files to Data Vault to happen in one SSIS package. (only For Azure SQL Data Warehouse)
@@ -37,8 +37,8 @@ Build 5.0.64332.0, release date: 15 October 2019
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64332.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64332.0.exe)
-* [bimlflexruntimesetup_5.0.64332.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64332.0.exe)
+* [bimlflexdevsetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64335.0.exe)
+* [bimlflexruntimesetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64335.0.exe)
 
 ## Build 5.0.64317.0, release date: 27 September 2019
 
