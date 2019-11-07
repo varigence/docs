@@ -21,6 +21,16 @@ Build 5.0.64335.0, release date: 15 October 2019
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
 
+## Build 5.0.nnnnn.0, release date: nn mmmm 2019
+
+* Update: The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added it is important that the descriptions are maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
+* Add: Support for COSYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64335.0.exe)
+* [bimlflexruntimesetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64335.0.exe)
+
 ## Build 5.0.64335.0, release date: 15 October 2019
 
 * Add: The BimlFlex App now provides a connection string builder for connections. Click the edit icon in the connection string field to open

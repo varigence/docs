@@ -14,9 +14,3 @@ In this case the following approach will select the source column as an alternat
 |ColumnAlias      |`ALT_@@this`                                  |
 
 Add this to the columns sheet, for the `EmailAddress` source column to select it as `ALT_EmailAddress` and derive the `EmailAddress` column with a Derived Column transformation with the defined `SsisExpression`
-
-## Video
-
-TODO: Add address to video in link
-
-![Replace columns in the SSIS Data Flow](https://www.youtube.com/watch?v=<TBA>?rel=0&autoplay=0)
