@@ -38,25 +38,21 @@ Options for creating a new BimlFlex Project.
 
 ![New BimlFlex Project](images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
 
-The project creation options include project file name and location and also the templates for the BimlFlex Bundle and the Excel Add-in file. These are stored in the default installation locations of the software:
+The project creation options include project file name and location and the Excel Add-in file. The Excel file is stored in the default installation location of the software:
 
 ### 32-bit installations
 
 ```batchfile
-Bundle: %LOCALAPPDATA%\Varigence\BimlFlex.bimlb
 Excel Add-in: C:\Program Files (x86)\Varigence\BimlFlex\5.0\BimlFlex.xlsx
 ```
 
 ### 64-bit installations
 
 ```batchfile
-Bundle: %LOCALAPPDATA%\Varigence\BimlFlex.bimlb
 Excel Add-in: C:\Program Files\Varigence\BimlFlex\5.0\BimlFlex.xlsx
 ```
 
-The Bundle contains the logic, Biml scripts, and code that enables the BimlFlex features in BimlStudio. The Excel Add-in is the Excel spreadsheet with the Add-in code for the Metadata editor.
-
-The Bundle and the Excel Add-in are versioned and are copied to the destination folder with the other project files. That means different versions of the bundle and the Excel Add-in can be used depending on the project. It also means they can be updated by just exchanging these files for new versions.
+The Excel Add-in is the Excel spreadsheet with the Add-in code for the Excel-based Metadata editor.
 
 Once the project is created, it is possible to open it directly from the folder or by opening the project file from BimlStudio.
 
