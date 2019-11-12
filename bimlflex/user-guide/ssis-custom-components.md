@@ -10,11 +10,12 @@ The components are available for download here:
 
 ## SSIS custom components for SQL Server
 
-* SQL Server 2019: [https://varigence.com/downloads/varigence.ssis.2019.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2019.xcopyinstall.zip)* SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+* SQL Server 2019: [https://varigence.com/downloads/varigence.ssis.2019.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2019.xcopyinstall.zip)
 * SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
 * SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
 * SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
 * SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+* SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
 
 ## SSIS custom components for Snowflake
 
