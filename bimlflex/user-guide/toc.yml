@@ -6,8 +6,6 @@
     href: installing-upgrading-bimlflex.md
   - name: Developer Installation
     href: developer-installation.md
-  - name: Analyst Installation
-    href: analyst-installation.md
   - name: Server Installation
     href: server-installation.md
   - name: Initial Setup and Configuration
