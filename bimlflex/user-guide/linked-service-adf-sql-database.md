@@ -46,7 +46,8 @@ Connect via Integration Runtime is required for a Azure Sql Database Linked Serv
 
 A connection to an Azure Sql Database linked service requires a connection string. The required properties for the connection string are Fully Qualified Domain Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
-It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> [!TIP]
+> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
 
 #### Authentication Method
 
@@ -58,7 +59,8 @@ For [Service Principal Authentication](#service-principal), Service Principal ID
 
 User Name and Password will be required by the Linked Service form for Sql Authentication except when using Azure Key Vault in place of a manually entering a Connection String. When using User Name and Password with Sql Authentication they will be included in the Connection String.
 
-It is suggested that Azure Key Vault be used in place of manually entering the Password.
+> [!TIP]
+> It is suggested that Azure Key Vault be used in place of manually entering the Password.
 
 #### Managed Identity
 
@@ -70,7 +72,8 @@ To use Managed Identities for authentication with Azure SQL Database, they must 
 
 To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for Sql Database Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the Sql Database Linked Service form.
 
-It is suggested that Azure Key Vault be used in place of a Service Principal Key.
+> [!TIP]
+> It is suggested that Azure Key Vault be used in place of a Service Principal Key.
 
 #### Additional Connection String Properties
 

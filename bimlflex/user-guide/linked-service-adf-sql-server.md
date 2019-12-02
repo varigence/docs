@@ -37,7 +37,8 @@ Connect via Integration Runtime is required for a Sql Server Linked Service conn
 
 A connection to a Sql Server linked service requires a connection string. The required properties for the connection string are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
-Azure Key Vault can be used in place of manually entering Connection String details.
+> [!TIP]
+> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
 
 #### Authentication Method
 
@@ -51,7 +52,8 @@ User Name will be used by the Linked Service form for Sql Authentication or Wind
 
 Password will be used by the Linked Service form for Sql Authentication or Windows Authentican with the Sql Server Linked Service. Password is required - except when using Sql Authentication with Azure Key Vault in place of a manually entering a Connection String.
 
-Azure Key Vault can be used in place of manually entering the password.
+> [!TIP]
+> It is suggested that Azure Key Vault be used in place of manually entering the password.
 
 #### Additional Connection String Properties
 
