@@ -1,8 +1,8 @@
 ---
 uid: linked-service-snowflake
-title: Configuring a Linked Service Connection for Snowflake
+title: Configuring a Linked Service Connection for Snowflake Data Warehouse
 ---
-# Configuring a Linked Service Connection for Snowflake
+# Configuring a Linked Service Connection for Snowflake Data Warehouse
 
 > [!NOTE]
 > For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).

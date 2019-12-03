@@ -52,21 +52,20 @@ The Secret Version is the version of your Azure Key Vault. Use this field to spe
 
 The linked services that are currently supported are listed below. Select a linked service type for information on filling out the Linked Service form.
 
-+ Azure My Sql
-+ Azure PostgreSql
-+ Azure Sql Mi
-+ Azure Sql Database
-+ Azure Sql Data Warehouse
-+ MySql
-+ Netezza
-+ Oracle
-+ PostgreSql
-+ Snowflake
++ [Azure Blob Storage](linked-service-adf-blob-storage.md)
++ [Azure My Sql](linked-service-adf-azure-mysql.md)
++ [Azure PostgreSql](linked-service-adf-azure-postgresql.md)
++ [Azure Sql Managed Instance](linked-service-adf-sqlmi.md)
++ [Azure Sql Database](linked-service-adf-sql-database.md)
++ [Azure Sql Data Warehouse](linked-service-adf-sql-data-warehouse.md)
++ [Data Lake Gen 2](linked-service-adf-data-lake-gen-2.md)
++ [MySql](linked-service-adf-mysql.md)
++ [Netezza](linked-service-adf-netezza.md)
++ [Oracle](linked-service-adf-sql-server.md)
++ [PostgreSql](linked-service-adf-sql-server.md)
++ [Snowflake](linked-service-snowflake.md)
 + [Sql Server](linked-service-adf-sql-server.md)
-
-#### Azure Data Factory Linked Services Additional Information
-
-For additional information on ADF Linked Service types and their connection requirements see the [Azure Data Factory Connector documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-overview).
++ [Teradata](linked-service-adf-teradata.md)
 
 [connections-module-list]: images/bimlflex-ss-app-connections-menu-list.png "Connections Module Menu"
 [connections-details-tab]: images/bimlflex-ss-app-connections-details-tab.png "Connection Details Tab"
