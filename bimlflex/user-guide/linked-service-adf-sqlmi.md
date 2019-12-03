@@ -1,17 +1,17 @@
 ---
-uid: linked-service-adf-sql-server
-title: Configuring an ADF Linked Service Connection for Sql Managed Instance
+uid: linked-service-adf-sqlmi
+title: Configuring an ADF Linked Service Connection for Azure SQL Database Managed Instance
 ---
-# Configuring an ADF Linked Service Connection for SQL Managed Instance
+# Configuring an ADF Linked Service Connection for Azure SQL Database Managed Instance
 
 > [!NOTE]
 > For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
-[//]: # (TODO List of stages, connection types, and system types that can use Sql Managed Instance)
+[//]: # (TODO List of stages, connection types, and system types that can use SQL Managed Instance)
 
-After selecting `Sql Managed Instance` from the Linked Service Type dropdown, the form required for creating a Sql Managed Instance Linked Service will appear.
+After selecting `Azure SQL MI` from the Linked Service Type dropdown, the form required for creating an Azure SQL Database Managed Instance Linked Service will appear.
 
-![Sql Managed Instance Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-sql-server-form.png "Sql Managed Instance Linked Service Form")
+![SQL Managed Instance Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-sqlmi-form.png "SQL Managed Instance Linked Service Form")
 
 ### Required Fields
 
@@ -19,11 +19,20 @@ The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
 + [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
-  + Server Name
+  + Fully Qualified Domain Name
   + Database Name
 + [Authentication Method](#authentication-method)
-+ [User Name](#user-name)
-+ [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
+
+Required for [SQL Authentication](#sql-authentication):
+
++ User Name
++ Password (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
+
+Required for [Service Principal Authentication](#service-principal):
+
++ Service Principal ID (Application ID)
++ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ Tenant (Tenant ID)
 
 Optional fields are:
 
@@ -31,29 +40,40 @@ Optional fields are:
 
 #### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for a Sql Managed Instance Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for an Azure SQL Database Managed Instance Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. When a custom value is saved in the linked service form, it will be added to the custom integration runtimes. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 #### Connection String
 
-A connection to a Sql Managed Instance linked service requires a connection string. The required properties for the connection string are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
+A connection to an Azure SQL Database Managed Instance linked service requires a connection string. The required properties for the connection string are Fully Qualified Domain Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
 > It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
 
 #### Authentication Method
 
-The Sql Managed Instance Linked Service connection can use Sql Authentication or Windows Authentication. When a key vault is used in place of a connection string, Sql Authentication details should be stored in the connection string key vault and will not be required in the BimlFlex form. If Windows Authentication is used, User Name and Password are still required.
+The Azure SQL Database Linked Service connection can use SQL Authentication, Managed Identity, or Service Principal. When a key vault is used in place of a Connection String, SQL Authentication details should be stored in the Connection String key vault and will not be required in the BimlFlex form.
+If [Managed Identity](#managed-identity) is used, no authentication will be required in the BimlFlex Linked Service form.
+For [Service Principal Authentication](#service-principal), Service Principal ID, Tenant, and Service Principal Key are required.
 
-#### User Name
+#### SQL Authentication
 
-User Name will be used by the Linked Service form for Sql Authentication or Windows Authentican with the Sql Managed Instance Linked Service. User Name is required - except when using Sql Authentication with Azure Key Vault in place of a manually entering a Connection String.
-
-#### Password
-
-Password will be used by the Linked Service form for Sql Authentication or Windows Authentican with the Sql Managed Instance Linked Service. Password is required - except when using Sql Authentication with Azure Key Vault in place of a manually entering a Connection String.
+User Name and Password will be required by the Linked Service form for SQL Authentication except when using Azure Key Vault in place of a manually entering a Connection String. When using User Name and Password with SQL Authentication they will be included in the Connection String.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering the password.
+> It is suggested that Azure Key Vault be used in place of manually entering the Password.
+
+#### Managed Identity
+
+To use Managed Identities for authentication with Azure SQL Database, they must be set up in Azure as described in the [Microsoft documentation for Azure Managed Identities](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database-managed-instance#managed-identity). When using Managed Identities, no other authentication details are required.
+
+#### Service Principal
+
+![Service Principal -center -50%](images/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
+
+To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for SQL Database Managed Instance Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database-managed-instance#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the SQL Database Linked Service form.
+
+> [!TIP]
+> It is suggested that Azure Key Vault be used in place of a Service Principal Key.
 
 #### Additional Connection String Properties
 
@@ -63,4 +83,4 @@ Values entered in the Additional Connection String Properties textbox will be ma
 
 ### Azure Data Factory Linked Service Additional Information
 
-For additional information on ADF Sql Managed Instance Linked Service and its connection requirements see the [Azure Data Factory Sql Managed Instance Connector documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-sql-server).
+For additional information on ADF SQL Managed Instance Linked Service and its connection requirements see the [Azure Data Factory Azure SQL Database Managed Instance Connector documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database-managed-instance).

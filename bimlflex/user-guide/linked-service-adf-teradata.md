@@ -46,7 +46,7 @@ The Teradata Linked Service connection can use Basic Authentication or Windows A
 
 #### Password
 
-Password will be used by the Linked Service form for Sql Authentication or Windows Authentican with the Teradata Linked Service. Password is required - except when using Sql Authentication with Azure Key Vault in place of a manually entering a Connection String.
+Password will be used by the Linked Service form for SQL Authentication or Windows Authentican with the Teradata Linked Service. Password is required - except when using SQL Authentication with Azure Key Vault in place of a manually entering a Connection String.
 
 > [!TIP]
 > It is suggested that Azure Key Vault be used in place of manually entering the password.

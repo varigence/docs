@@ -28,11 +28,13 @@ The linked service form is modeled after the selected `Linked Service Type` and 
 
 #### Azure Data Factory Linked Services and Azure Key Vault
 
-ADF linked services allow the use of **Azure Key Vault** for easy management of linked service settings. We suggest using Azure Key Vault to maintain safe handling of sensitive information. When it is allowed, an Azure Key Vault tab will appear as an alternative to manually filling out connection settings.
+ADF linked services allow the use of Azure Key Vault for easy management of linked service settings. We suggest using Azure Key Vault to maintain safe handling of sensitive information. When it is allowed, an Azure Key Vault tab will appear as an alternative to manually filling out connection settings.
 
 ![Azure Key Vault Form -center -50%][akv]
 
-Connections to Azure Key Vaults are stored in BimlFlex as connections and are listed in the `Connections` tab.
+Connections to Azure Key Vaults are stored in BimlFlex as connections and are listed in the `Connections` tab as Key Vault Connections. 
+
+![Azure Key Vault in Connections List -center -50%][connections-akv]
 
 ##### AKV Linked Service
 
@@ -53,18 +55,17 @@ The Secret Version is the version of your Azure Key Vault. Use this field to spe
 The linked services that are currently supported are listed below. Select a linked service type for information on filling out the Linked Service form.
 
 + [Azure Blob Storage](linked-service-adf-blob-storage.md)
-+ [Azure My Sql](linked-service-adf-azure-mysql.md)
-+ [Azure PostgreSql](linked-service-adf-azure-postgresql.md)
-+ [Azure Sql Managed Instance](linked-service-adf-sqlmi.md)
-+ [Azure Sql Database](linked-service-adf-sql-database.md)
-+ [Azure Sql Data Warehouse](linked-service-adf-sql-data-warehouse.md)
++ [Azure My SQL](linked-service-adf-azure-mysql.md)
++ [Azure PostgreSQL](linked-service-adf-azure-postgresql.md)
++ [Azure SQL Database](linked-service-adf-sql-database.md)
++ [Azure SQL Database Managed Instance (Azure SQL MI)](linked-service-adf-sqlmi.md)
++ [Azure Synapse Analytics (Azure SQL Data Warehouse)](linked-service-adf-sql-data-warehouse.md)
 + [Data Lake Gen 2](linked-service-adf-data-lake-gen-2.md)
-+ [MySql](linked-service-adf-mysql.md)
-+ [Netezza](linked-service-adf-netezza.md)
++ [MySQL](linked-service-adf-mysql.md)
 + [Oracle](linked-service-adf-sql-server.md)
-+ [PostgreSql](linked-service-adf-sql-server.md)
++ [PostgreSQL](linked-service-adf-sql-server.md)
 + [Snowflake](linked-service-snowflake.md)
-+ [Sql Server](linked-service-adf-sql-server.md)
++ [SQL Server](linked-service-adf-sql-server.md)
 + [Teradata](linked-service-adf-teradata.md)
 
 [connections-module-list]: images/bimlflex-ss-app-connections-menu-list.png "Connections Module Menu"
@@ -72,3 +73,4 @@ The linked services that are currently supported are listed below. Select a link
 [connections-linked-service-dropdown]: images/bimlflex-ss-app-connections-cloud-linked-service-select-blank-highlighted.png "Linked Service Type Dropdown"
 [akv]: images/bimlflex-ss-app-connections-akv.png "Azure Key Vault"
 [akv-dd]: images/bimlflex-ss-app-connections-akv-dd.png "Azure Key Vault Drop Down"
+[connections-akv]: images/bimlflex-ss-app-connections-menu-list-icons.png "Azure Key Vault in Connections List"

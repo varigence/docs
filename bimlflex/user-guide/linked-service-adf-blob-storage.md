@@ -63,7 +63,7 @@ Connect via Integration Runtime is required for an Azure Blob Storage Linked Ser
 
 #### Authentication Method
 
-The Azure Blob Storage Linked Service connection can use Sql Authentication, Managed Identity, or Service Principal. When a key vault is used in place of a Connection String, Sql Authentication details should be stored in the Connection String key vault and will not be required in the BimlFlex form.
+The Azure Blob Storage Linked Service connection can use SQL Authentication, Managed Identity, or Service Principal. When a key vault is used in place of a Connection String, SQL Authentication details should be stored in the Connection String key vault and will not be required in the BimlFlex form.
 If [Managed Identity](#managed-identity) is used, no authentication will be required in the BimlFlex Linked Service form.
 For [Service Principal Authentication](#service-principal), Service Principal ID, Tenant, and Service Principal Key are required.
 

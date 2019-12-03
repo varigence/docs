@@ -1,17 +1,17 @@
 ---
 uid: linked-service-adf-sql-database
-title: Configuring an ADF Linked Service Connection for Azure Sql Data Warehouse
+title: Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse
 ---
-# Configuring an ADF Linked Service Connection for Azure Sql Data Warehouse
+# Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse
 
 > [!NOTE]
 > For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
-[//]: # (TODO List of stages, connection types, and system types that can use Azure Sql Data Warehouse)
+[//]: # (TODO List of stages, connection types, and system types that can use Azure SQL Data Warehouse)
 
-After selecting `Azure Sql Data Warehouse` from the Linked Service Type dropdown, the form required for creating a Azure Sql Data Warehouse Linked Service will appear.
+After selecting `Azure SQL Data Warehouse` from the Linked Service Type dropdown, the form required for creating an Azure SQL Data Warehouse Linked Service will appear.
 
-![Azure Sql Data Warehouse Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-sql-data-warehouse-form.png "Azure Sql Data Warehouse Linked Service Form")
+![Azure SQL Data Warehouse Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-sql-data-warehouse-form.png "Azure SQL Data Warehouse Linked Service Form")
 
 ### Required Fields
 
@@ -23,7 +23,7 @@ The required fields are:
   + Database Name
 + [Authentication Method](#authentication-method)
 
-Required for [Sql Authentication](#sql-authentication):
+Required for [SQL Authentication](#sql-authentication):
 
 + User Name
 + Password (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
@@ -40,37 +40,37 @@ Optional fields are:
 
 #### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for a Azure Sql Data Warehouse Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. When a custom value is saved in the linked service form, it will be added to the custom integration runtimes. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for an Azure SQL Data Warehouse Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. When a custom value is saved in the linked service form, it will be added to the custom integration runtimes. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 #### Connection String
 
-A connection to an Azure Sql Data Warehouse linked service requires a connection string. The required properties for the connection string are Fully Qualified Domain Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
+A connection to an Azure SQL Data Warehouse linked service requires a connection string. The required properties for the connection string are Fully Qualified Domain Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
 > It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
 
 #### Authentication Method
 
-The Azure Sql Data Warehouse Linked Service connection can use Sql Authentication, Managed Identity, or Service Principal. When a key vault is used in place of a Connection String, Sql Authentication details should be stored in the Connection String key vault and will not be required in the BimlFlex form.
+The Azure SQL Data Warehouse Linked Service connection can use SQL Authentication, Managed Identity, or Service Principal. When a key vault is used in place of a Connection String, SQL Authentication details should be stored in the Connection String key vault and will not be required in the BimlFlex form.
 If [Managed Identity](#managed-identity) is used, no authentication will be required in the BimlFlex Linked Service form.
 For [Service Principal Authentication](#service-principal), Service Principal ID, Tenant, and Service Principal Key are required.
 
-#### Sql Authentication
+#### SQL Authentication
 
-User Name and Password will be required by the Linked Service form for Sql Authentication except when using Azure Key Vault in place of a manually entering a Connection String. When using User Name and Password with Sql Authentication they will be included in the Connection String.
+User Name and Password will be required by the Linked Service form for SQL Authentication except when using Azure Key Vault in place of a manually entering a Connection String. When using User Name and Password with SQL Authentication they will be included in the Connection String.
 
 > [!TIP]
 > It is suggested that Azure Key Vault be used in place of manually entering the Password.
 
 #### Managed Identity
 
-To use Managed Identities for authentication with Azure Sql Data Warehouse, they must be set up in Azure as described in the [Microsoft documentation for Azure Sql Data Warehouse Managed Identities](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse#managed-identity). When using Managed Identities, no other authentication details are required.
+To use Managed Identities for authentication with Azure SQL Data Warehouse, they must be set up in Azure as described in the [Microsoft documentation for Azure SQL Data Warehouse Managed Identities](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse#managed-identity). When using Managed Identities, no other authentication details are required.
 
 #### Service Principal
 
 ![Service Principal -center -50%](images/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
 
-To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for Sql Data Warehouse Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the Sql Data Warehouse Linked Service form.
+To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for SQL Data Warehouse Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the SQL Data Warehouse Linked Service form.
 
 > [!TIP]
 > It is suggested that Azure Key Vault be used in place of a Service Principal Key.
@@ -83,4 +83,4 @@ Values entered in the Additional Connection String Properties textbox will be ma
 
 ### Azure Data Factory Linked Service Additional Information
 
-For additional information on ADF Sql Data Warehouse Linked Service and its connection requirements see the [Azure Data Factory Sql Data Warehouse Connector documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse).
+For additional information on ADF SQL Data Warehouse Linked Service and its connection requirements see the [Azure Data Factory SQL Data Warehouse Connector documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse).

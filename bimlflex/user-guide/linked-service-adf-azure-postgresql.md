@@ -9,7 +9,7 @@ title: Configuring an ADF Linked Service Connection for Azure Database for Postg
 
 [//]: # (TODO List of stages, connection types, and system types that can use Azure Database for PostgreSQL)
 
-After selecting `Azure PostgreSQL` from the Linked Service Type dropdown, the form required for creating a Azure Database for PostgreSQL Linked Service will appear.
+After selecting `Azure PostgreSQL` from the Linked Service Type dropdown, the form required for creating an Azure Database for PostgreSQL Linked Service will appear.
 
 ![Azure Database for PostgreSQL Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-postgresql-form.png "Azure Database for PostgreSQL Linked Service Form")
 
@@ -33,11 +33,11 @@ Optional fields are:
 
 #### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for a Azure Database for PostgreSQL Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for an Azure Database for PostgreSQL Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 #### Connection String
 
-A connection to a Azure Database for PostgreSQL Linked Service requires a Connection String. The required properties for the Connection String are Server Name, Database Name, Encryption Method, Validate Server Certificate, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
+A connection to an Azure Database for PostgreSQL Linked Service requires a Connection String. The required properties for the Connection String are Server Name, Database Name, Encryption Method, Validate Server Certificate, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
 > It is suggested that Azure Key Vault be used in place of manually entering Connection String details.

@@ -1,17 +1,17 @@
 ---
-uid: linked-service-adf-sql-server
-title: Configuring an ADF Linked Service Connection for SQL Server
+uid: linked-service-adf-netezza
+title: Configuring an ADF Linked Service Connection for Netezza
 ---
-# Configuring an ADF Linked Service Connection for SQL Server
+# Configuring an ADF Linked Service Connection for Netezza
 
 > [!NOTE]
 > For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
-[//]: # (TODO List of stages, connection types, and system types that can use SQL Server)
+[//]: # (TODO List of stages, connection types, and system types that can use Netezza)
 
-After selecting `Sql Server` from the Linked Service Type dropdown, the form required for creating a Sql Server Linked Service will appear.
+After selecting `Netezza` from the Linked Service Type dropdown, the form required for creating a Netezza Linked Service will appear.
 
-![Sql Server Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-sql-server-form.png "Sql Server Linked Service Form")
+![Netezza Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-netezza-form.png "Netezza Linked Service Form")
 
 ### Required Fields
 
@@ -21,9 +21,11 @@ The required fields are:
 + [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
   + Server Name
   + Database Name
-+ [Authentication Method](#authentication-method)
-+ [User Name](#user-name)
-+ [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
+  + Port
+  + [Security Level](#security-level)
+  + [CA Certificate File*](#ca-certificate-file)
+  + User Name
+  + Password (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
 
 Optional fields are:
 
@@ -31,29 +33,24 @@ Optional fields are:
 
 #### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for a Sql Server Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for a Netezza Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 #### Connection String
 
-A connection to a Sql Server linked service requires a connection string. The required properties for the connection string are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
+A connection to a Netezza linked service requires a connection string. The required properties for the connection string are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> It is suggested that Azure Key Vault be used in place of manually entering Connection String details or Password.
 
-#### Authentication Method
+#### Security Level
 
-The Sql Server Linked Service connection can use Sql Authentication or Windows Authentication. When a key vault is used in place of a connection string, Sql Authentication details should be stored in the connection string key vault and will not be required in the BimlFlex form. If Windows Authentication is used, User Name and Password are still required.
+The Netezza Linked Service connection has four security levels: Only Unsecured, Preferred Unsecured, Preferred Secured, and Only Secured. The default option is Preferred Unsecured. For more information, see the Microsoft documentation for [Netezza Connector Linked Service Properties](https://docs.microsoft.com/en-us/azure/data-factory/connector-netezza#linked-service-properties).
 
-#### User Name
+#### CA Certificate File
 
-User Name is will be used by the Linked Service form for Sql Authentication or Windows Authentican with the Sql Server Linked Service. User Name is required - except when using Sql Authentication with Azure Key Vault in place of a manually entering a Connection String.
+The CA Certificate File field should be filled with the the full path to the SSl certificate used by the server.
 
-#### Password
-
-Password will be used by the Linked Service form for Sql Authentication or Windows Authentican with the Sql Server Linked Service. Password is required - except when using Sql Authentication with Azure Key Vault in place of a manually entering a Connection String.
-
-> [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering the password.
+\* The CA Cert File is only required if the Security Level specifies that that SSl is enabled.
 
 #### Additional Connection String Properties
 
@@ -63,4 +60,4 @@ Values entered in the Additional Connection String Properties textbox will be ma
 
 ### Azure Data Factory Linked Services Additional Information
 
-For additional information on ADF Linked Service types and their connection requirements see the [Azure Data Factory Sql Server Connector documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-sql-server).
+For additional information on ADF Linked Service types and their connection requirements see the [Azure Data Factory Netezza Connector documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-netezza).
