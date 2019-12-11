@@ -23,8 +23,11 @@ Build 5.0.64335.0, release date: 15 October 2019
 
 ## Build 5.0.nnnnn.0, release date: nn mmmm 2019
 
-* Update: The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added it is important that the descriptions are maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
+* Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
 * Add: Support for COSYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
+* Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical name spaces). A new utility app is avaialble to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
+
+* Update: The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added it is important that the descriptions are maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
 
 download links to this build:
 
