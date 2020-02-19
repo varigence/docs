@@ -168,12 +168,9 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 - Satellites are always directly related to a `Hub` or a `Link`.
 - Multiple satellites can point to one `Hub` or `Link` based on be multiple sources or split by rate of change or subject area.
 - Satellites can only be attached to a single parent either a `Hub` or `Link`.
-- TODO: Satellite Split or Merge Actions A Satellite may be
-split or merged at any time, as long as NO HISTORICAL VALUE is lost, and NO
-HISTORICAL AUDIT TRAIL is lost. See the Data Vault Implementation Standards for
-rules and processes around how-to execute a split or merge.
-- TODO: Sub-Sequence (Optional) A Satellite may contain a sub-sequence identifier or and
-ordering identifier as part of the primary key for uniqueness. sub-sequence can be a microsecond counter, or an ordering attribute (as in the
+- TODO: Satellite Split or Merge Actions A Satellite may be split or merged at any time, as long as NO HISTORICAL VALUE is lost, and NO
+HISTORICAL AUDIT TRAIL is lost. See the Data Vault Implementation Standards for rules and processes around how-to execute a split or merge.
+- TODO: Sub-Sequence (Optional) A Satellite may contain a sub-sequence identifier or and ordering identifier as part of the primary key for uniqueness. sub-sequence can be a microsecond counter, or an ordering attribute (as in the
 case of a multi-active Satellite record) 
 
 #### Business Satellites
@@ -212,41 +209,25 @@ or aggregated attributes as a result of soft rule calculations.
 
 ### Reference Tables
 
-Reference Tables Reference tables are a logical collection of code and
-description lookup structures. They utilize natural business keys, and are
-constructed from standard Hub, Link, and Satellite entities. Resolution occurs
-through queries at run time. They do not house nor require foreign keys. In
-general, the codes (natural keys) are found housed in the Satellites as they
-typically describe other keys or other relationships.
+Reference Tables Reference tables are a logical collection of code and description lookup structures. They utilize natural business keys, and are constructed from standard Hub, Link, and Satellite entities. Resolution occurs through queries at run time. They do not house nor require foreign keys. In general, the codes (natural keys) are found housed in the Satellites as they typically describe other keys or other relationships.
 
 ### Point in Time
 
-Point in Time and Bridge Tables Point in time table is a System Driven
-Satellite. It is comprised of primary key values and business key values from a
-single Hub, and that Hubs’ surrounding Satellites. It may also be comprised of a
-single Link and that Links’ surrounding Satellites. It is a snapshot table
-populated with snapshot-based records of keys and key structures. It provides
-equal-join capacities to view based Dimensions and view based Facts. It is built
-for performance of the queries in getting data out of the Raw Data Vault. They
-are based on the principles of Join Indexes as written by Teradata, only the
-point-in-time structures can be implemented on ANY platform. Because
-Point-in-Time tables live within the Information Mart logical construct they can
-also house computed fields, and / or additional temporality (such as begin and
-end dates that have been computed for business purposes). The Bridge Table is a
-combination of primary keys and business keys spread across multiple Hubs and
-Links. They can be thought of as “base level Fact Tables”. They provide a
-snapshot of key structures and are generally not temporal in nature. That said,
-because Bridge Tables live within the Information Mart logical construct, they
+Point in Time and Bridge Tables Point in time table is a System Driven Satellite. It is comprised of primary key values and business key values from a
+single Hub, and that Hubs’ surrounding Satellites. It may also be comprised of a single Link and that Links’ surrounding Satellites. It is a snapshot table
+populated with snapshot-based records of keys and key structures. It provides equal-join capacities to view based Dimensions and view based Facts. It is built
+for performance of the queries in getting data out of the Raw Data Vault. They are based on the principles of Join Indexes as written by Teradata, only the
+point-in-time structures can be implemented on ANY platform. Because Point-in-Time tables live within the Information Mart logical construct they can
+also house computed fields, and / or additional temporality (such as begin and end dates that have been computed for business purposes). The Bridge Table is a
+combination of primary keys and business keys spread across multiple Hubs and Links. They can be thought of as “base level Fact Tables”. They provide a
+snapshot of key structures and are generally not temporal in nature. That said, because Bridge Tables live within the Information Mart logical construct, they
 can also house computed fields, and / or temporality.
 
 ### Bridge
 
-Sequence ID Date Stamps Load Date Time Stamps Occurrence Numbers Sub Sequence
-Hash Keys L, LINK, LNK STG SAL, SALNK, SLNK B, BRDG, BRG BL, BLNK, BLINK V VF,
-VFCT D, DIM SQN, SEQ DS, DT LDTS, LDDTS, LDTM OCC, OCNUM, ONUM SSQN, SSQ, SUBSQN
-HK, HashKey, HKEY Entity Type Prefix or Suffix Hub H, HUB, HB Satellite S, SAT
-Hierarchical Links HL, HLNK, HLINK Point-in-Time PIT, PT Business Hub BH, BHUB
-Business Satellite BS, BSAT, BST View Dimension VDIM, VD Fact FCT, FACT, F
+Sequence ID Date Stamps Load Date Time Stamps Occurrence Numbers Sub Sequence Hash Keys L, LINK, LNK STG SAL, SALNK, SLNK B, BRDG, BRG BL, BLNK, BLINK V VF,
+VFCT D, DIM SQN, SEQ DS, DT LDTS, LDDTS, LDTM OCC, OCNUM, ONUM SSQN, SSQ, SUBSQN, HK, HashKey, HKEY Entity Type Prefix or Suffix Hub H, HUB, HB Satellite S, SAT
+Hierarchical Links HL, HLNK, HLINK Point-in-Time PIT, PT Business Hub BH, BHUB Business Satellite BS, BSAT, BST View Dimension VDIM, VD Fact FCT, FACT, F
 Report Collection RPT, RC
 
 ## Data Vault System Columns
@@ -276,13 +257,8 @@ Report Collection RPT, RC
 
 ### Hash Difference 
 
-(Optional) A Hash Difference is a computed field value based
-upon concatenation of descriptive attributes applied to a satellite and pushed
-through a hashing function. Instead of comparing each column (column by column)
-to determine a delta, the hash difference attribute can be compared. If they
-differ – a delta for the Satellite has been found. This particular field is not
-necessary in database engines such as Teradata – due to the massive block size
-and high parallelism of the query engine, Teradata can compare many columns just
-as quickly as a predetermined Hash Difference column. That said, most other
-platforms benefit (performance wise) from utilizing a Hash Difference for
-comparison and delta checking purposes.
+(Optional) A Hash Difference is a computed field value based upon concatenation of descriptive attributes applied to a satellite and pushed
+through a hashing function. Instead of comparing each column (column by column) to determine a delta, the hash difference attribute can be compared. If they
+differ – a delta for the Satellite has been found. This particular field is not necessary in database engines such as Teradata – due to the massive block size
+and high parallelism of the query engine, Teradata can compare many columns just as quickly as a predetermined Hash Difference column. That said, most other
+platforms benefit (performance wise) from utilizing a Hash Difference for comparison and delta checking purposes.
