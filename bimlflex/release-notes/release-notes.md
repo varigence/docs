@@ -14,18 +14,33 @@ BimlFlex 2019 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64332.0, release date: 15 October 2019
+Build 5.0.64335.0, release date: 15 October 2019
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer include the required runtime components for servers that will execute SSIS packages
 
-## Build 5.0.64332.0, release date: 15 October 2019
+## Build 5.0.nnnnn.0, release date: nn mmmm 2019
 
-* Add: The BimlFlex App now provides a connection string builder for connections. Click the wrench icon in the connection string field to open
+* Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
+* Add: Support for COSYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
+* Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical name spaces). A new utility app is avaialble to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
+* Add: New Setting : `SingleRowDelta` - for sources where it is known that there is only a single row per key per delta load so that the load process is optimised and row compression is not done
+* New Extension Points: `RdvPreProcessSql`, `RdvPostProcessSql` allows injection of SQL logic in the RDV load SQL Stored Procedures.
+
+* Update: The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added it is important that the descriptions are maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64335.0.exe)
+* [bimlflexruntimesetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64335.0.exe)
+
+## Build 5.0.64335.0, release date: 15 October 2019
+
+* Add: The BimlFlex App now provides a connection string builder for connections. Click the edit icon in the connection string field to open
 * Add: New setting `DvProcessOnStage` to process DV loads for the source file once the files are uploaded to staging. This allows the full end to end load from source to staging blob files to Data Vault to happen in one SSIS package. (only For Azure SQL Data Warehouse)
-* Add: New setting `CreateDymmyFile` option to upload a placeholder file to blob storage. This allows PolyBase to function without issues when all data files are moved out of the staging area. (only For Azure SQL Data Warehouse)
+* Add: New setting `AzureCreateDummyFile` option to upload a placeholder file to blob storage. This allows PolyBase to function without issues when all data files are moved out of the staging area. (only For Azure SQL Data Warehouse)
 * Add: New Extension Points `AzurePreArchiveStage` and `AzurePostArchiveStage` for extending the archive process in Azure SQL Data Warehouse loads.
 * Update: additional support for binary data types for Hash Distribution Keys for Azure SQL Data Warehouse.
 * Update: renamed setting `DmAppendExternal` to `AppendNameExternal`
@@ -37,8 +52,8 @@ Build 5.0.64332.0, release date: 15 October 2019
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64332.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64332.0.exe)
-* [bimlflexruntimesetup_5.0.64332.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64332.0.exe)
+* [bimlflexdevsetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64335.0.exe)
+* [bimlflexruntimesetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64335.0.exe)
 
 ## Build 5.0.64317.0, release date: 27 September 2019
 

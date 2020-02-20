@@ -6,7 +6,7 @@ title: BimlFlex Data Vault Standards
 
 ## Abstract
 
-This document consolidates and outlines the various Data Vault implementation standards and explain how to configure BimlFlex to achieve the desired outcomes.
+This document consolidates and outlines the various Data Vault implementation standards and explains how to configure BimlFlex to achieve the desired outcomes.
 
 > [!NOTE]
 > We collated information from public content, and this document is intended to supplement other published standards.
@@ -18,9 +18,9 @@ This document consolidates and outlines the various Data Vault implementation st
 
 Before we dive into the Data Vault standards and implementation, we recommend creating a high-level model of your business or at least the business area in scope. We recommend Business Ontology, as discussed in [The Elephant in the Fridge](https://www.amazon.com.au/Elephant-Fridge-Success-Building-Business-Centered/dp/1634624890) by John Giles or [Ensemble Logical Model](http://dvstandards.com/) as taught by Genesee Academy.
 
-Create, a map, model or diagram of core business concepts and relationships before using our accelerator to transform your source into a Data Vault. Build a conceptual model based on business processes using business terminology. Exercise caution especially the `technical` teams to not base the model on any existing source system. At this stage, do not concern yourself with how you will make the source data fit into this model, rather that the model is an accurate representation of your business.
+Create, a map, model or diagram of core business concepts and relationships before using our accelerator to transform your source into a Data Vault. Build a conceptual model based on business processes using business terminology. Exercise caution especially the `technical` teams to not base the model on any existing source system. At this stage, do not concern yourself with how you will make the source data fit into this model, rather than the model is an accurate representation of your business.
 
-Mapping source systems to your `Core Business Concepts` can be a challenge. However, the BimlFlex Accelerator simplify the proceeds by applying standard Data Vault patterns.
+Mapping source systems to your `Core Business Concepts` can be a challenge. However, the BimlFlex Accelerator simplifies the proceeds by applying standard Data Vault patterns.
 
 > [!IMPORTANT]
 > It is highly recommended to have a `Core Business Model` in place before using the `Data Vault Accelerator` for optimal results. We are adding additional support to create `Core Business Models` in an upcoming version of BimlFlex.
@@ -54,9 +54,9 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 
 #### Integration Key (Business Key)
 
-- BimlFlex uses the term `Integration Key` instead of `Business Key` for consistency accross different data warehouse project types, including dimensional modeling.
-- The scope of the key will determine how you configure the column. If the key is scoped per source system it is recommended to append the `RecordSource` to the key ensuring a unique key. If the key is globally unique accross the enterprise the record `RecordSource` should be ommited.
-- A concatenation of the key parts creating a single column for integration and optimise the performance of multi-column joins.
+- BimlFlex uses the term `Integration Key` instead of `Business Key` for consistency across different data warehouse project types, including dimensional modeling.
+- The scope of the key will determine how you configure the column. If the key is scoped per source system it is recommended to append the `RecordSource` to the key ensuring a unique key. If the key is globally unique across the enterprise the record `RecordSource` should be omitted.
+- A concatenation of the key parts creating a single column for integration and optimize the performance of multi-column joins.
 - In an upcoming release will add the `DvAccelerateHubKeys` setting to also include the key parts in the Hub.
 - The `FlexToBk` helper method can be used to concatenate keys using a comma-delimited list of columns across supported implementation technologies.
 - The global parameter for RecordSource is `@@rs` referring to the originating source system, not source object, of the data can be added to the keys to make IntegrationKeys unique across sources.
@@ -81,7 +81,7 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 ### Hubs
 
 - Consist of a distinct list of [Integration Key](#integration-key-business-key) of the `Core Business Concept`.
-- BimlFlex makes use of a concatenated key to simplify implementation and allow for single key integration and is required when choosing a `Data Vault` implementation without using Hash Keys.
+- BimlFlex makes use of a concatenated key to simplify implementation and allows for single key integration and is required when choosing a `Data Vault` implementation without using Hash Keys.
 - In an upcoming version, there will be an option `DvUseHashKeys`. Integrate without a `HASH` which is very performant for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
 
 > [!IMPORTANT]
@@ -109,36 +109,35 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 
 - Distinct or Unique set of relationships between the involved Hubs.
 - Links are many to many relationships.
-- Two or more Hubs are required to build a Link, with the exception of the Hierarchy and Same-As Links which are self referencing.
-- The accelerator will generate a two way Link for every reference when the `ModelObjectType` is defined as a `Hub`
+- Two or more Hubs are required to build a Link, except the Hierarchy and Same-As Links which are self-referencing and the accelerator will generate a two way Link for every reference when the `ModelObjectType` is defined as a `Hub`
 - Combining multiple Links in the accelerator can be achieved by dragging one on top of another and entering the new Link name.
 - The accelerator will generate a Link with all reference columns when the `ModelObjectType` is defined as a `Link`.
-- Links similar to Hubs do not have start and end date attributes and relationship effectivity should be tracked in a Satellite referred to as a `Link Satellite`.
+- Links similar to Hubs do not have a start and end date attributes and relationship effectivity should be tracked in a Satellite referred to as a `Link Satellite`.
 
 #### Link Key Columns
 
-- The `Link Primary Key` is a `hash` of the concatenated `Integration Keys` of the all participating `Hubs`. The order of the participating hub determine the concatenation order. Changing the order or re-acceleration may create a different hash.
-- The Link Unique Key is the hash keys of all participating hubs.
+- The `Link Primary Key` is a `hash` of the concatenated `Integration Keys` of all participating `Hubs`. The order of the participating hub determines the concatenation order. Changing the order or re-acceleration may create a different hash.
+- The Link Unique Key is the hash key of all participating hubs.
 - The key column names will inherit the source column name removing the key suffix specified in the list `KeyEndsWith` setting. This setting can be altered if your system suffix keys with a different value like `NM`,`CD`, etc. The result is stored in the `ModelReference` and can be altered if required. This provides flexibility when a Link reference the same Hub twice and therefore will need roleplaying names.
 
 #### Hierarchical Link
 
-- A Link that is used to specify a recursive or hierarchy relationship
-- Specifying a ModelObjectType of Hierarchy Link (HAL) on the source object is provided for, however the result is a Link as there is no functional or structural difference.
+- A `Link` that is used to specify a recursive or hierarchy relationship
+- Specifying a ModelObjectType of Hierarchy Link (HAL) on the source object is provided for, however, the result is a Link as there is no functional or structural difference.
 
 #### Same-As Link
 
-- A Link that is used to specify a relationship between similar or the same Hub members.
-- Specifying a ModelObjectType of Same-As Link (SAL) on the source object is provided for, however the result is a Link as there is no functional or structural difference.
+- A `Link` is used to specify a relationship between similar or the same Hub members.
+- Specifying a ModelObjectType of Same-As Link (SAL) on the source object is provided for, however, the result is a Link as there is no functional or structural difference.
 - Additional matching attributes that describe the relationship like similarity and matching confidence should be stored in an attached Link Satellite.
 
 #### Non-Historized or Transaction Links
 
-- A link containing immutable data that is never updated or changed. Along with the key columns referencing Hubs it can include additional association or degenerate keys.
-- It is recommend not to have Effectivity Link Satellites for this type of Link as they do not change over time.
+- A `Link` containing immutable data that is never updated or changed. Along with the key columns referencing Hubs, it can include additional association or degenerate keys.
+- It is recommended not to have Effectivity Link Satellites for this type of Link as they do not change over time.
 
 > [!NOTE] 
-> BimlFlex handle all links the same from a model acceleration and automation perspective.
+> BimlFlex handles all links the same from a model acceleration and automation perspective.
 
 #### Link Naming Convention
 
@@ -148,7 +147,7 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 - **1. Model Object Type** `Hub`
 
  - The Link name will be derived by combing the `Object.ModelOverrideShortName` or `Object.ModelOverrideName` if specified otherwise the `Object.ObjectName` and the `DvAppendLink` setting.
- - This is best explained with an example. Let's say we imported a table called `GeneralLedger` that has a relationship to `ChartOfAccounts` and the `DvAppendLink` setting is `L`. The default name for the Link will be `L_GeneralLedger_ChartOfAccounts`. Link names can get quite long so the `Object.ModelOverrideShortName` can be used to shorten the left hand portion of the name. If we change this to `GL` the name will now be `L_GL_ChartOfAccounts` and can e even further shortened by changing the `ModelReference` of relationship column. If we also change this to `COA` the will now be `L_GL_COA`.
+ - This is best explained with an example. Let's say we imported a table called `GeneralLedger` that has a relationship to `ChartOfAccounts` and the `DvAppendLink` setting is `L`. The default name for the Link will be `L_GeneralLedger_ChartOfAccounts`. Link names can get quite long so the `Object.ModelOverrideShortName` can be used to shorten the left-hand portion of the name. If we change this to `GL` the name will now be `L_GL_ChartOfAccounts` and can e even further shortened by changing the `ModelReference` of relationship column. If we also change this to `COA` the will now be `L_GL_COA`.
  - The pattern for the name is as follows `DvAppendLinkDerivedObjectNameModelReference` *or* `DerivedObjectNameModelReferenceDvAppendLink`
 
 - **2. Model Object Type** `Link` **-** `Hierarchy Link` **-** `Same As Link`
@@ -164,9 +163,9 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 
 ### Satellites
 
-- Satellites conatins all descriptive information and deltas, tracking change over time.
+- Satellites contain all descriptive information and deltas, tracking change over time.
 - Satellites are always directly related to a `Hub` or a `Link`.
-- Multiple satellites can point to one `Hub` or `Link` based on be multiple sources or split by rate of change or subject area.
+- Multiple satellites can point to one `Hub` or `Link` based on be multiple sources or split by the rate of change or subject area.
 - Satellites can only be attached to a single parent either a `Hub` or `Link`.
 - TODO: Satellite Split or Merge Actions A Satellite may be split or merged at any time, as long as NO HISTORICAL VALUE is lost, and NO
 HISTORICAL AUDIT TRAIL is lost. See the Data Vault Implementation Standards for rules and processes around how-to execute a split or merge.
@@ -180,7 +179,7 @@ or aggregated attributes as a result of soft rule calculations.
 
 #### Multi-Active Satellite
 
-- A Satellite where multiple active records is possible for a `Hub` or `Link` at any given point in time.
+- A Satellite where multiple active records are possible for a `Hub` or `Link` at any given point in time.
 
 ##### Row Based
 
@@ -198,8 +197,7 @@ or aggregated attributes as a result of soft rule calculations.
 
 #### Link Effectivity Satellite
 
-- Track effectivity of a Link based on the `Driving Key`. 
-
+- Track effectivity of a Link based on the `Driving Key`.
 
 ### Satellite System Column Configuration
 
@@ -209,19 +207,19 @@ or aggregated attributes as a result of soft rule calculations.
 
 ### Reference Tables
 
-Reference Tables Reference tables are a logical collection of code and description lookup structures. They utilize natural business keys, and are constructed from standard Hub, Link, and Satellite entities. Resolution occurs through queries at run time. They do not house nor require foreign keys. In general, the codes (natural keys) are found housed in the Satellites as they typically describe other keys or other relationships.
+Reference Tables Reference tables are a logical collection of code and description lookup structures. They utilize natural business keys and are constructed from standard Hub, Link, and Satellite entities. Resolution occurs through queries at run time. They do not a house nor require foreign keys. In general, the codes (natural keys) are found housed in the Satellites as they typically describe other keys or other relationships.
 
 ### Point in Time
 
-Point in Time and Bridge Tables Point in time table is a System Driven Satellite. It is comprised of primary key values and business key values from a
+`Point in Time` and `Bridge` Tables is a System Driven Satellite. It is comprised of primary key values and business key values from a
 single Hub, and that Hubs’ surrounding Satellites. It may also be comprised of a single Link and that Links’ surrounding Satellites. It is a snapshot table
 populated with snapshot-based records of keys and key structures. It provides equal-join capacities to view based Dimensions and view based Facts. It is built
-for performance of the queries in getting data out of the Raw Data Vault. They are based on the principles of Join Indexes as written by Teradata, only the
+for the performance of the queries in getting data out of the Raw Data Vault. They are based on the principles of Join Indexes as written by Teradata, only the
 point-in-time structures can be implemented on ANY platform. Because Point-in-Time tables live within the Information Mart logical construct they can
-also house computed fields, and / or additional temporality (such as begin and end dates that have been computed for business purposes). The Bridge Table is a
+also, house computed fields, or additional temporality (such as begin and end dates that have been computed for business purposes). The Bridge Table is a
 combination of primary keys and business keys spread across multiple Hubs and Links. They can be thought of as “base level Fact Tables”. They provide a
 snapshot of key structures and are generally not temporal in nature. That said, because Bridge Tables live within the Information Mart logical construct, they
-can also house computed fields, and / or temporality.
+can also house computed fields, or temporality.
 
 ### Bridge
 
@@ -232,7 +230,7 @@ Report Collection RPT, RC
 
 ## Data Vault System Columns
 
-- BimlFlex implement all system columns using `Configurations` and a matrix allowing users options for granular configuration.
+- BimlFlex implements all system columns using `Configurations` and a matrix allowing users options for granular configuration.
 - It is possible to override the global configuration for specific projects or objects using `Custom Attributes`.
 
 ### Load Date Time Stamp
@@ -240,25 +238,15 @@ Report Collection RPT, RC
 - ConfigurationKey `RowEffectiveFromDate`. The `ConfigurationValue` can be renamed based on your naming conventions.
 - This is optional, but recommended value if supported by your target platform.
 - Not part of the Hub primary key.
-- Default name is `FlexRowEffectiveFromDate` and recommended name is `DWH_LOAD_DT` changed to conform to your naming standards.
+- Default name is `FlexRowEffectiveFromDate` and the recommended name is `DWH_LOAD_DT` changed to conform to your naming standards.
 
 ### Record Source
 
 - ConfigurationKey `RowRecordSource`. The `ConfigurationValue` can be renamed based on your naming conventions. 
 - Use the `RecordSource` value defined on the source connection.
-- Default name is `FlexRowRecordSource` and recommended name is `DWH_RSRC` changed to confrm to your naming standards.
-- TODO Add Setting Override to implemented fully qualified object name.
+- The default name is `FlexRowRecordSource` and the recommended name is `DWH_RSRC` changed to conform to your naming standards.
+- TODO Add Setting Override to implement a fully qualified object name.
 
 ### Audit Id
 
 - ConfigurationKey `RowAuditId`. The ConfigurationValue can be renamed based on your naming conventions. 
-- Used to tie the ETL batch together with and orchestration key. Currently this requires the BimlCatalog database to enrich the SSIS runtime metadata. We are looking to decouple this for modern data warehouse solutions and have a light or zero-logging option. 
-- Default name is `FlexRowAuditId` and recommended name is `DWH_LOAD_ID` changed to confrm to your naming standards.
-
-### Hash Difference 
-
-(Optional) A Hash Difference is a computed field value based upon concatenation of descriptive attributes applied to a satellite and pushed
-through a hashing function. Instead of comparing each column (column by column) to determine a delta, the hash difference attribute can be compared. If they
-differ – a delta for the Satellite has been found. This particular field is not necessary in database engines such as Teradata – due to the massive block size
-and high parallelism of the query engine, Teradata can compare many columns just as quickly as a predetermined Hash Difference column. That said, most other
-platforms benefit (performance wise) from utilizing a Hash Difference for comparison and delta checking purposes.

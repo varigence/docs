@@ -8,13 +8,22 @@ The BimlFlex custom SSIS components are used for ETL load processes in SSIS pack
 
 The components are available for download here:
 
-* SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
-* SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
-* SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
-* SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
-* SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+## SSIS custom components for SQL Server
 
-The following components are included:
+* SQL Server 2019: [https://varigence.com/downloads/varigence.ssis.2019.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2019.xcopyinstall.zip)
+* SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
+* SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
+* SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
+* SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
+* SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+
+## SSIS custom components for Snowflake
+
+* SQL Server 2019: [https://varigence.com/downloads/varigence.ssis.snowflake.2019.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2019.xcopyinstall.zip)
+* SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.snowflake.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2017.xcopyinstall.zip)
+* SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.snowflake.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2016.xcopyinstall.zip)
+
+The following components are included in the SSIS custom components for SQL Server:
 
 | Component              | Function                               |
 | ---------------------- | -------------------------------------- |
@@ -32,7 +41,9 @@ The components work in conjunction with the BimlCatalog orchestration and runtim
 
 ## Installation
 
-Installation of the custom components are provided through a script file that embeds the custom components SSIS .dll into the required SQL Server folders as well as the GAC. This script approach allows the custom components to be installed on an Azure Integration Runtime.
+Installation of the custom components are integrated in the developer installation and also provided through a separate script file that embeds the custom components SSIS .dll into the required SQL Server folders as well as the GAC. This script approach allows the custom components to be installed on an Azure Integration Runtime.
+
+Note: It is not necessary to install the components separately if they were installed through the developer installation.
 
 Information on using custom components in the Azure Integration RunTime can be found here: @bimlflex-adding-ssis-custom-components-to-azure-integration-runtime
 

@@ -21,6 +21,8 @@ The cache files are by default located at:
 
 `C:\Biml\Export\<Name>.raw`
 
+**Note: Make sure `C:\Biml\Export\` folder exists.**
+
 Once the deleted keys are in the staging table they can be further processed into the target architecture.
 
 For an on-premises SQL Server installation running a persistent staging database and a Data Vault integration layer, this means adding a bespoke, Batch-based, post-processing Extension Point that creates the corresponding delete records in the persistent staging tables and Data Vault tables.

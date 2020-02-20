@@ -6,8 +6,6 @@
     href: installing-upgrading-bimlflex.md
   - name: Developer Installation
     href: developer-installation.md
-  - name: Analyst Installation
-    href: analyst-installation.md
   - name: Server Installation
     href: server-installation.md
   - name: Initial Setup and Configuration
@@ -49,6 +47,8 @@
     href: master-data-services.md
   - name: Azure Data Warehouse
     href: azure-data-warehouse.md
+  - name: Create a Linked Service Connection
+    href: create-linked-service-connection.md
   - name: AzCopy
     href: azcopy.md
   - name: Integration Keys and Relationships
