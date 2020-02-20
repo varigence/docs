@@ -199,7 +199,6 @@ or aggregated attributes as a result of soft rule calculations.
 
 - Track effectivity of a Link based on the `Driving Key`.
 
-
 ### Satellite System Column Configuration
 
 - [Load Date Time Stamp](#load-date-time-stamp)
@@ -251,13 +250,3 @@ Report Collection RPT, RC
 ### Audit Id
 
 - ConfigurationKey `RowAuditId`. The ConfigurationValue can be renamed based on your naming conventions. 
-- Used to tie the ETL batch together with and orchestration key. Currently, this requires the BimlCatalog database to enrich the SSIS runtime metadata. We are looking to decouple this for modern data warehouse solutions and have a light or zero-logging option. 
-- The default name is `FlexRowAuditId` and the recommended name is `DWH_LOAD_ID` changed to conform to your naming standards.
-
-### Hash Difference 
-
-(Optional) A Hash Difference is a computed field value based upon a concatenation of descriptive attributes applied to a satellite and pushed
-through a hashing function. Instead of comparing each column (column by column) to determine a delta, the hash difference attribute can be compared. If they
-differ – a delta for the Satellite has been found. This particular field is not necessary for database engines such as Teradata – due to the massive block size
-and high parallelism of the query engine, Teradata can compare many columns just as quickly as a predetermined Hash Difference column. That said, most other
-platforms benefit (performance-wise) from utilizing a Hash Difference for comparison and delta checking purposes.
