@@ -35,7 +35,7 @@ INNER JOIN [rdv].[SAT_Product_awlt] sp
 	ON	pp.[SAT_Product_awlt_Product_SK] = sp.[Product_SK]
 	AND	pp.[SAT_Product_awlt_FlexRowEffectiveFromDate] = sp.[FlexRowEffectiveFromDate]
 -- ProductCategory
-INNER JOIN [rdv].[BRD_Product] bp
+INNER JOIN [rdv].[BRG_Product] bp
 	ON	pp.[Product_SK] = bp.[Product_SK]
 INNER JOIN [rdv].[PIT_ProductCategory] ppc
 	ON	bp.[LNK_Product_ProductCategory_L1_ProductCategory_SK] = ppc.[ProductCategory_SK]

@@ -39,7 +39,7 @@ SELECT	 psod.[PIT_SalesOrderLine_SK] AS [FactSalesOrderLine_BK]
 		,ssod.[UnitPriceDiscount]
 		,ssod.[LineTotal]
 FROM	[rdv].[PIT_SalesOrder] psoh
-INNER JOIN [rdv].[BRD_SalesOrder] bsoh
+INNER JOIN [rdv].[BRG_SalesOrder] bsoh
 	ON	psoh.[SalesOrder_SK] = bsoh.[SalesOrder_SK]
 INNER JOIN [rdv].[SAT_SalesOrder_awlt] ssoh
 	ON	psoh.[SAT_SalesOrder_awlt_SalesOrder_SK] = ssoh.[SalesOrder_SK]
@@ -60,7 +60,7 @@ INNER JOIN [rdv].[PIT_address] pba
 	AND psoh.[FlexRowEffectiveFromDate] >= pba.[FlexRowEffectiveFromDate]
 	AND psoh.[FlexRowEffectiveFromDate] < pba.[FlexRowEffectiveToDate]
 -- SalesOrderLine
-INNER JOIN [rdv].[BRD_SalesOrderLine] bsod
+INNER JOIN [rdv].[BRG_SalesOrderLine] bsod
 	ON	psoh.[SalesOrder_SK] = bsod.[LNK_SalesOrderLine_L1_SalesOrder_SK]
 INNER JOIN [rdv].[PIT_SalesOrderLine] psod
 	ON	bsod.[SalesOrderLine_SK] = psod.[SalesOrderLine_SK]
