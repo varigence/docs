@@ -41,6 +41,4 @@ FROM (
   FROM AWLT.Customer
   ) AWLT_Customer
 WHERE IsCurrent = 1
-
-GO
 ```

@@ -52,5 +52,4 @@ INNER JOIN [rdv].[PIT_ProductModel] ppm
 INNER JOIN [rdv].[SAT_ProductModel_awlt] spm
 	ON	ppm.[SAT_ProductModel_awlt_ProductModel_SK] = spm.[ProductModel_SK]
 	AND	ppm.[SAT_ProductModel_awlt_FlexRowEffectiveFromDate] = spm.[FlexRowEffectiveFromDate]
-GO
 ```

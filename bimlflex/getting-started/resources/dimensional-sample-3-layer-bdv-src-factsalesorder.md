@@ -38,5 +38,4 @@ INNER JOIN rdv.BRG_SalesOrder bso ON bso.SalesOrder_SK = pso.SalesOrder_SK
 INNER JOIN rdv.SAT_SalesOrder_AWLT ssoh ON ssoh.SalesOrder_SK = pso.SAT_SalesOrder_AWLT_SalesOrder_SK AND ssoh.FlexRowEffectiveFromDate = pso.SAT_SalesOrder_AWLT_FlexRowEffectiveFromDate
 INNER JOIN rdv.HUB_Customer hc ON hc.Customer_SK = bso.Customer_SK
 WHERE pso.FlexRowEffectiveToDate = '9999-12-31'
-
 ```

@@ -51,6 +51,4 @@ FROM (
   FROM AWLT.SalesOrderHeader
 ) AWLT_SalesOrderHeader
 WHERE IsCurrent = 1
-
-GO
 ```

@@ -31,6 +31,4 @@ SELECT
 FROM rdv.PIT_Customer pc
 INNER JOIN rdv.SAT_Customer_AWLT s ON s.Customer_SK = pc.Customer_SK AND s.FlexRowEffectiveFromDate = pc.SAT_Customer_AWLT_FlexRowEffectiveFromDate
 WHERE pc.FlexRowEffectiveToDate = '9999-12-31'
-
-GO
 ```

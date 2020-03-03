@@ -74,5 +74,4 @@ INNER JOIN [rdv].[PIT_product] pp
 	ON	bsod.[LNK_SalesOrderLine_L1_product_SK] = pp.[product_SK]
 	AND psoh.[FlexRowEffectiveFromDate] >= pp.[FlexRowEffectiveFromDate]
 	AND psoh.[FlexRowEffectiveFromDate] < pp.[FlexRowEffectiveToDate]
-GO
 ```

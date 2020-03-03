@@ -23,13 +23,54 @@ Build 5.0.nnnnn.0, release date: nn mmmm 2020
 
 ## Build 5.0.nnnnn.0, release date: nn mmmm 2019
 
+### Feature Highlights
+
+* Expanded support for Azure Data Factory
+* Data Mappings visualisations and editor for BimlFlex App
+* BimlCatalog Operational Reporting in BimlFlex App
+* Restructure BimlCatalog to allow for more agnostic logging
+* Additional Extension Points for additional management of bespoke processing requirements
+* Additional support script creation
+
+#### Expanded support for Azure Data Factory
+
+TBA
+
+#### Data Mappings visualisations and editor for BimlFlex App
+
+TBA
+
+#### BimlCatalog Operational Reporting in BimlFlex App
+
+TBA
+
+#### Changes to BimlCatalog
+
+The BimlCatalog schema has been updated with agnostic table names. reporting views and Stored Procedures are unchanged. ADF Stored Procedures have been updated to better support logging and orchestration 
+
+#### Additional Extension Points for additional management of bespoke processing requirements
+
+TBA
+
+#### Additional support script creation
+
+TBA
+
+
+#### Release Notes
+
+* Add: New Project settings dialog in BimlStudio. This allows easier access to control Build target and method as well as local project configurations.
+* Update: The default build versions for new projects have been updated to SQL Server 2017
 * Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
 * Add: Support for COSYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
 * Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical namespaces). A new utility app is available to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
 * Add: New Setting: `SingleRowDelta` - for sources where it is known that there is only a single row per key per delta load so that the load process is optimized and row compression is not done
 * New Extension Points: `RdvPreProcessSql`, `RdvPostProcessSql` allows injection of SQL logic in the RDV load SQL Stored Procedures.
 
-* Update: The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added it is important that they are maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
+
+> [!NOTE]
+> change in behavior for Settings descriptions
+> The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added it is important that they are maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
 
 download links to this build:
 

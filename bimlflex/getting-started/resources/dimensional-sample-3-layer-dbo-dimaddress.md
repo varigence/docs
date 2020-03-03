@@ -28,5 +28,4 @@ FROM	[rdv].[PIT_Address] pc
 INNER JOIN [rdv].[SAT_Address_awlt] sa
 	ON	pc.[SAT_Address_awlt_Address_SK] = sa.[Address_SK]
 	AND	pc.[SAT_Address_awlt_FlexRowEffectiveFromDate] = sa.[FlexRowEffectiveFromDate]
-GO
 ```

@@ -75,5 +75,5 @@
     href: deployment-guide.md
   - name: Concurrent Development
     href: concurrent-development.md
-  - name: Continuous Integration and Deployment
+  - name: Continuous Integration and Delivery
     href: continuous-integration-and-continuous-delivery.md

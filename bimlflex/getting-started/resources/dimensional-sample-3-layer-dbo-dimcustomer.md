@@ -35,5 +35,4 @@ INNER JOIN [rdv].[SAT_Customer] sc
 INNER JOIN [rdv].[SAT_Customer_Details_awlt] scp
 	ON	pc.[SAT_Customer_Details_awlt_Customer_SK] = scp.[Customer_SK]
 	AND	pc.[SAT_Customer_Details_awlt_FlexRowEffectiveFromDate] = scp.[FlexRowEffectiveFromDate]
-GO
 ```

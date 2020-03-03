@@ -40,5 +40,4 @@ FROM rdv.HUB_SalesOrderHeader h
 INNER JOIN rdv.SAT_SalesOrderHeader_AWLT s ON s.SalesOrderHeader_SK = h.SalesOrderHeader_SK
 ) AWLT_SalesOrderHeader
 WHERE IsCurrent = 1
-
 ```

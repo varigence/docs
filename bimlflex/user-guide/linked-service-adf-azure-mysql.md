@@ -55,7 +55,7 @@ Password is will be used by the Linked Service form for authentication with the 
 
 #### SSL Mode
 
-SSL Mode specifies excryption and verification when connecting to Azure MySQL. The values are represented as:
+SSL Mode specifies encryption and verification when connecting to Azure MySQL. The values are represented as:
 
 + Disabled (0)
 + Preferred (1) (Default)
@@ -71,7 +71,7 @@ If selected, a CA certificate will be used from the System Trust Store or PEM fi
 
 Any additional properties entered here will be included in the Connection String. These properties should be entered the same way you want them to appear in the Connection String and separated by a semicolon, e.g. `key=value;secondKey=secondValue`.
 
-Values entered in the Additional Connection String Properties textbox will be maintained when changing linked service types. If a required property from one service type does not have a corresponding text box in the newly selected linked service type, it will appear as an additional propertie.
+Values entered in the Additional Connection String Properties textbox will be maintained when changing linked service types. If a required property from one service type does not have a corresponding text box in the newly selected linked service type, it will appear as an additional property.
 
 ### Azure Data Factory Linked Services Additional Information
 
