@@ -136,7 +136,7 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 - A `Link` containing immutable data that is never updated or changed. Along with the key columns referencing Hubs, it can include additional association or degenerate keys.
 - It is recommended not to have Effectivity Link Satellites for this type of Link as they do not change over time.
 
-> [!NOTE] 
+> [!NOTE]
 > BimlFlex handles all links the same from a model acceleration and automation perspective.
 
 #### Link Naming Convention
@@ -146,14 +146,14 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 
 - **1. Model Object Type** `Hub`
 
- - The Link name will be derived by combing the `Object.ModelOverrideShortName` or `Object.ModelOverrideName` if specified otherwise the `Object.ObjectName` and the `DvAppendLink` setting.
- - This is best explained with an example. Let's say we imported a table called `GeneralLedger` that has a relationship to `ChartOfAccounts` and the `DvAppendLink` setting is `L`. The default name for the Link will be `L_GeneralLedger_ChartOfAccounts`. Link names can get quite long so the `Object.ModelOverrideShortName` can be used to shorten the left-hand portion of the name. If we change this to `GL` the name will now be `L_GL_ChartOfAccounts` and can e even further shortened by changing the `ModelReference` of relationship column. If we also change this to `COA` the will now be `L_GL_COA`.
- - The pattern for the name is as follows `DvAppendLinkDerivedObjectNameModelReference` *or* `DerivedObjectNameModelReferenceDvAppendLink`
+  - The Link name will be derived by combing the `Object.ModelOverrideShortName` or `Object.ModelOverrideName` if specified otherwise the `Object.ObjectName` and the `DvAppendLink` setting.
+  - This is best explained with an example. Let's say we imported a table called `GeneralLedger` that has a relationship to `ChartOfAccounts` and the `DvAppendLink` setting is `L`. The default name for the Link will be `L_GeneralLedger_ChartOfAccounts`. Link names can get quite long so the `Object.ModelOverrideShortName` can be used to shorten the left-hand portion of the name. If we change this to `GL` the name will now be `L_GL_ChartOfAccounts` and can e even further shortened by changing the `ModelReference` of relationship column. If we also change this to `COA` the will now be `L_GL_COA`.
+  - The pattern for the name is as follows `DvAppendLinkDerivedObjectNameModelReference` *or* `DerivedObjectNameModelReferenceDvAppendLink`
 
 - **2. Model Object Type** `Link` **-** `Hierarchy Link` **-** `Same As Link`
 
- - The Link name will be derived by combing the `Object.ModelOverrideName` if specified otherwise the `Object.ObjectName` and the `DvAppendLink` setting.
- - The pattern for the name is as follows `DvAppendLinkDerivedObjectName` *or* `DerivedObjectNameDvAppendLink`
+  - The Link name will be derived by combing the `Object.ModelOverrideName` if specified otherwise the `Object.ObjectName` and the `DvAppendLink` setting.
+  - The pattern for the name is as follows `DvAppendLinkDerivedObjectName` *or* `DerivedObjectNameDvAppendLink`
 
 ### Link System Column Configuration
 
@@ -169,8 +169,7 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 - Satellites can only be attached to a single parent either a `Hub` or `Link`.
 - TODO: Satellite Split or Merge Actions A Satellite may be split or merged at any time, as long as NO HISTORICAL VALUE is lost, and NO
 HISTORICAL AUDIT TRAIL is lost. See the Data Vault Implementation Standards for rules and processes around how-to execute a split or merge.
-- TODO: Sub-Sequence (Optional) A Satellite may contain a sub-sequence identifier or and ordering identifier as part of the primary key for uniqueness. sub-sequence can be a microsecond counter, or an ordering attribute (as in the
-case of a multi-active Satellite record) 
+- TODO: Sub-Sequence (Optional) A Satellite may contain a sub-sequence identifier or and ordering identifier as part of the primary key for uniqueness. sub-sequence can be a microsecond counter, or an ordering attribute (as in the case of a multi-active Satellite record)
 
 #### Business Satellites
 
@@ -183,16 +182,16 @@ or aggregated attributes as a result of soft rule calculations.
 
 ##### Row Based
 
-- Changes are tracked based on the key of the `Hub` or `Link` and the `Multi Active Row` column. 
+- Changes are tracked based on the key of the `Hub` or `Link` and the `Multi Active Row` column.
 - The column that makes the data unique. Update the `ChangeType` to `Multi Active Row` and set the `IsPrimaryKey`.
-- `Multi Active Row` column must be immutable and cannot be changed in the source. 
+- `Multi Active Row` column must be immutable and cannot be changed in the source.
 - An example is an entity with multiple active types like a customer with addresses like `Home`, `Shipping` and `Billing`
 - When there is a known set of multi-active types, it is recommended to model these into separate satellites.
 
 ##### Set Based
 
 - Will be supported in an upcoming release.
-- Changes are tracked based on a set of changes based on a defined `Multi Active Set` column. 
+- Changes are tracked based on a set of changes based on a defined `Multi Active Set` column.
 - Used when data are provided in sets like multiple files. An example is an entity with a set of children, and every new set supersedes the previous.
 
 #### Link Effectivity Satellite
@@ -212,12 +211,12 @@ Reference Tables Reference tables are a logical collection of code and descripti
 ### Point in Time
 
 `Point in Time` and `Bridge` Tables is a System Driven Satellite. It is comprised of primary key values and business key values from a
-single Hub, and that Hubs’ surrounding Satellites. It may also be comprised of a single Link and that Links’ surrounding Satellites. It is a snapshot table
+single Hub, and that Hubs' surrounding Satellites. It may also be comprised of a single Link and that Links' surrounding Satellites. It is a snapshot table
 populated with snapshot-based records of keys and key structures. It provides equal-join capacities to view based Dimensions and view based Facts. It is built
 for the performance of the queries in getting data out of the Raw Data Vault. They are based on the principles of Join Indexes as written by Teradata, only the
 point-in-time structures can be implemented on ANY platform. Because Point-in-Time tables live within the Information Mart logical construct they can
 also, house computed fields, or additional temporality (such as begin and end dates that have been computed for business purposes). The Bridge Table is a
-combination of primary keys and business keys spread across multiple Hubs and Links. They can be thought of as “base level Fact Tables”. They provide a
+combination of primary keys and business keys spread across multiple Hubs and Links. They can be thought of as "base level Fact Tables". They provide a
 snapshot of key structures and are generally not temporal in nature. That said, because Bridge Tables live within the Information Mart logical construct, they
 can also house computed fields, or temporality.
 
