@@ -13,7 +13,7 @@ After selecting `Azure PostgreSQL` from the Linked Service Type dropdown, the fo
 
 ![Azure Database for PostgreSQL Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-postgresql-form.png "Azure Database for PostgreSQL Linked Service Form")
 
-### Required Fields
+## Required Fields
 
 The required fields are:
 
@@ -31,7 +31,7 @@ Optional fields are:
 + Port
 + [Additional Connection String Properties](#additional-connection-string-properties)
 
-#### Connect via Integration Runtime
+### Connect via Integration Runtime
 
 Connect via Integration Runtime is required for an Azure Database for PostgreSQL Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 

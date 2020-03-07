@@ -13,7 +13,7 @@ After selecting `Azure MySQL` from the Linked Service Type dropdown, the form re
 
 ![Azure MySQL Linked Service Form -center -50%](images/bimlflex-ss-app-connections-azure-mysql-form.png "Azure MySQL Linked Service Form")
 
-### Required Fields
+## Required Fields
 
 The required fields are:
 
@@ -31,29 +31,29 @@ Optional fields are:
 + Port
 + [Additional Connection String Properties](#additional-connection-string-properties)
 
-#### Connect via Integration Runtime
+### Connect via Integration Runtime
 
 Connect via Integration Runtime is required for an Azure MySQL Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
-#### Connection String
+### Connection String
 
 A connection to an Azure MySQL linked service requires a Connection String. The required properties for the Connection String are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
 > It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
 
-#### User Name
+### User Name
 
 User Name is will be used by the Linked Service form for authentication with the Azure MySQL Linked Service. User Name is required - except when using Azure Key Vault in place of a manually entering a Connection String.
 
-#### Password
+### Password
 
 Password is will be used by the Linked Service form for authentication with the Azure MySQL Linked Service. Password is required - except when using Azure Key Vault in place of a manually entering a Connection String.
 
 > [!TIP]
 > It is suggested that Azure Key Vault be used in place of manually entering the Password.
 
-#### SSL Mode
+### SSL Mode
 
 SSL Mode specifies encryption and verification when connecting to Azure MySQL. The values are represented as:
 
@@ -63,11 +63,11 @@ SSL Mode specifies encryption and verification when connecting to Azure MySQL. T
 + Verify_ca (3)
 + Verify_identity (4)
 
-#### Use System Trust Store
+### Use System Trust Store
 
 If selected, a CA certificate will be used from the System Trust Store or PEM file. `Use System Trust Store` is required except when SSL Mode is set to Disabled.
 
-#### Additional Connection String Properties
+### Additional Connection String Properties
 
 Any additional properties entered here will be included in the Connection String. These properties should be entered the same way you want them to appear in the Connection String and separated by a semicolon, e.g. `key=value;secondKey=secondValue`.
 

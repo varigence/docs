@@ -58,7 +58,14 @@
   - name: Delete Detection
     href: delete-detection.md
 
-- name: Supporting materials for configurations, extensions, orchestration
+- name: Source Notes
+  items:
+  - name: Excel Plus
+    href: source-excel-plus.md
+  - name: Stored Procedures
+    href: soure-stored-procedure.md
+
+    - name: Supporting materials for configurations, extensions, orchestration
   items:
   - name: Orchestration
     href: orchestration.md
