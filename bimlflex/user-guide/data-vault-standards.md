@@ -16,11 +16,11 @@ This document consolidates and outlines the various Data Vault implementation st
 
 ### Business Model
 
-Before we dive into the Data Vault standards and implementation, we recommend creating a high-level model of your business or at least the business area in scope. We recommend Business Ontology, as discussed in [The Elephant in the Fridge](https://www.amazon.com.au/Elephant-Fridge-Success-Building-Business-Centered/dp/1634624890) by John Giles or [Ensemble Logical Model](http://dvstandards.com/) as taught by Genesee Academy.
+Before diving into the Data Vault standards and implementation, we recommend creating a high-level model of your business or at least the business area in scope. We recommend Business Ontology, as discussed in [The Elephant in the Fridge](https://www.amazon.com.au/Elephant-Fridge-Success-Building-Business-Centered/dp/1634624890) by John Giles or [Ensemble Logical Model](http://dvstandards.com/) as taught by Genesee Academy.
 
-Create, a map, model or diagram of core business concepts and relationships before using our accelerator to transform your source into a Data Vault. Build a conceptual model based on business processes using business terminology. Exercise caution especially the `technical` teams to not base the model on any existing source system. At this stage, do not concern yourself with how you will make the source data fit into this model, rather than the model is an accurate representation of your business.
+Create a map, model or diagram of core business concepts and relationships before using the BimlFlex accelerator to transform the source into a Data Vault. Build a conceptual model based on business processes using business terminology. Exercise caution, especially the `technical` teams, to not base the model on any existing source system. At this stage, do not concern yourself with how you will make the source data fit into this model, rather focus on the model and make sure it is an accurate representation of your business.
 
-Mapping source systems to your `Core Business Concepts` can be a challenge. However, the BimlFlex Accelerator simplifies the proceeds by applying standard Data Vault patterns.
+Mapping source systems to your `Core Business Concepts` can be a challenge. However, the BimlFlex Accelerator simplifies the process by applying standard Data Vault patterns.
 
 > [!IMPORTANT]
 > It is highly recommended to have a `Core Business Model` in place before using the `Data Vault Accelerator` for optimal results. We are adding additional support to create `Core Business Models` in an upcoming version of BimlFlex.
@@ -32,14 +32,20 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 
 #### Hash Algorithm
 
-- Support all major hash algorithms with `SHA1` the default. Other options by changing the `HashAlgorithm` setting to one of the following values `MD5`, `SHA1`, `SHA256`, `SHA512`.
-- Previous SSIS versions of BimlFlex created a different hash for Unicode characters. `UseSqlCompatibleHash` and `UseSqlCompatibleRowHash` provided for backward compatibility that not to be used for new implementations.
-- Support for `binary` and `text` hash depending on your requirements and can be configured by changing the `HashBinary` setting. It is recommended to use binary hashing.
-- Performance setting `AddRowHashKeyIndex` will add an index to the `Staging` table on the `RowHashKey` to optimise the Hub ETL SSIS packages.
+- Support all major hash algorithms with `SHA1` as the default. Other options by changing the `HashAlgorithm` setting to one of the following values `MD5`, `SHA1`, `SHA256`, `SHA512`.
+- Previous SSIS versions of BimlFlex created a different hash for Unicode characters. `UseSqlCompatibleHash` and `UseSqlCompatibleRowHash` provides for backward compatibility that should not to be used for new implementations.
+- Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the `HashBinary` setting. It is recommended to use binary hashing. With Binary hashing the hash value is stored in its native binary form, requiring half the storage space compared to the string hexadecimal representation.
+- Performance setting `AddRowHashKeyIndex` will add an index to the `Staging` table on the `RowHashKey` to optimize the Hub ETL SSIS packages.
 
 #### Hash Collision
 
-- TODO: Design and document a hash collision strategy.
+When using hash values to represent the value of something else, an Integration Key or a row checksum, there is a small risk that two source values generate the same hash value. This would result in a hash collision.
+
+When two integration keys hash to the same target hash a potential effect could be that only the first would be loaded to the Data Vault Hub, with the first Integration Key value. Attributes that relate to the 2 keys would be confused and colocated.
+
+Row hashing is used to detect changes in rows, all row columns/attributes are combined into a single hash value. when that valeu changes there is a change in one or more of the attributes, when it is the same the rows are the same. If a collision occur here, the new version of the row (with the new changes) would not be persisted in the target as it would not be identified as a change.
+
+TODO: Add hash collision strategy and architecture
 
 #### Hash Settings
 
