@@ -10,11 +10,9 @@ Execution logging it built into BimlFlex package runs. The package execution det
 
 The Operational Reporting BimlCatalog is set up on a per customer basis and is only required once per customer.
 
-The application will show an alert in the top toolbar if no Operational Reporting BimlCatalog is selected.
+The application will show a warning message in the Operational Reporting screen if no BimlCatalog is selected for the Customer.
 
-![Operational Reporting Alert -center](images/bimlflex-ss-operational-reporting-alert.png "Operational Reporting Alert")
-
-Go ahead and create a new BimlCatalog connection providing the Name and Connection String. We created ones for Dev, Test and Prod.
+In that case, go ahead and create a new BimlCatalog connection providing the Name and Connection String. We created ones for Dev, Test and Prod.
 
 ![Operational Reporting Selection -center](images/bimlflex-ss-operational-reporting-selected.png "Operational Reporting Selection")
 
