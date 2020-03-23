@@ -1,0 +1,39 @@
+- name: BimlFlex App User Guide
+  items:
+  - name: Toolbar & Setup - Setup Database Connection
+    href: setup-database-connection.md
+  - name: Dashboard - Sunburst
+    href: dashboard.md
+  - name: Toolbar & Setup - Toolbar Icons and Options
+    href: toolbar-icons-and-options.md
+  - name: Connections - Import Metadata
+    href: connections.md
+  - name: Connections - Linked Services
+    href: 
+  - name: Batches - Field Descriptions
+    href: batches.md
+  - name: Projects - Field Descriptions
+    href: projects.md
+  - name: Objects - Field Descriptions
+    href: objects.md
+  - name: Columns - Field Descriptions
+    href: columns.md
+  - name: Attributes - Field Descriptions
+    href: attributes.md
+  - name: Settings - Field Descriptions
+    href: settings.md
+  - name: Configurations - Field Descriptions
+    href: configurations.md
+  - name: Versions - Field Descriptions
+    href: versions.md
+  - name: Operational Reports - User Guide
+    href: operational-reports.md
+  - name: Data Vault Accelerator - User Guide
+    href: data-vault-accelerator.md
+  - name: Schema Diagram - User Guide
+    href: schema-diagram.md
+  - name: Column Mapping - User Guide
+    href: column-mapping.md
+
+
+
