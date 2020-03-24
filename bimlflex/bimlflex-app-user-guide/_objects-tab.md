@@ -33,24 +33,35 @@ The [Objects Tab] provide quick and easy access to all `Objects` associated with
 
 #### View: Overview
 
-The [Overview] is available to give quick access to the more physical properties of the `Objects` relating to the selected entity.  These are representations of the physical `Source System` and represent the raw definitions of the object in it's original form.  
+The [Overview] is available to give quick access to the more physical properties of the `Objects` relating to the selected entity.  These are representations of the physical `Source System` and represent the raw definitions of the object in it's original form.  Additional properties are available for bulk management such as controlling exclusions, disabling persistence or flagging an `Object` for deletion.
 
 ![Overview View](images/bimlflex-app-tab-objects-view-overview.png "Overview View")  
 
 #### View: Model Overrides
 
-//TODO: Model Overrides Description
+The [Model Overrides] is available to allow for quick management of modeled metadata from the [Data Vault Accelerator](data-vault-accelerator.md).  This view is intended as easy way to reference and maintain previously entered metadata.
 
-![Overview View](images/bimlflex-app-tab-objects-view-model-overrides.png "Overview View")  
+![Model Overrides View](images/bimlflex-app-tab-objects-view-model-overrides.png "Model Overrides View")  
+
+> [!IMPORTANT]
+> Although it is possible for an experienced user to manage their high level metadata from this screen, it is recommended that you use the [[Data Vault Accelerator]](data-vault-accelerator.md) until you are strongly confident in your abilities to manually model metadata.  The [[Data Vault Accelerator]](data-vault-accelerator.md) is specifically designed to simplify and improve the experience of modeling metadata via a graphical designer as opposed to the table entry that this view provides.
 
 #### View: Query Overrides
 
-//TODO: Query Overrides Description
+The [Query Overrides] view exposes any SQL overrides that may be required in the creation and maintenance of the `Object`.  By default the SQL required to perform most ETL/ELT task are dynamically generated and in many cases these overrides are not required.  When these cases are encounter they can be seen and managed from this view.
 
-![Overview View](images/bimlflex-app-tab-objects-view-query-overrides.png "Overview View")  
+![Query Overrides View](images/bimlflex-app-tab-objects-view-query-overrides.png "Query Overrides View")  
+
+> [!IMPORTANT]
+> Due to the BimlFlex App not requiring a connection to the raw source systems (this is done during ELT/ELT Orchestration and Integration), auto-complete and intellisense are not provided.  This is designed for developers/architects whom have a strong understanding of SQL and knowledge of the `Source Systems` that are designing from.
 
 #### View: Dependencies
 
-//TODO: Dependencies Description
+The [Dependencies] view allows for management of an `Object`'s dependencies or inheritance.  Dependencies are provided to instruct BimlFlex as to what `Objects` are required to be processed or managed before another.  Inheritance is a provided feature that allows for controlled reuse of previously entered metadata.
 
-![Overview View](images/bimlflex-app-tab-objects-view-dependencies.png "Overview View")  
+![Dependencies View](images/bimlflex-app-tab-objects-view-dependencies.png "Dependencies View")  
+
+> [!TIP]
+> For more information about dependencies and inheritance refer to the appropriate link(s) below:  
+> [Object Dependencies]  - Links to come...
+> [Object Inheritance]  - Links to come...
