@@ -62,7 +62,7 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 
 ### Details Tab - Action Buttons
 
-![BimlFlex App - Batches - Details Tab - Actions](images/bimlflex-app-batches-tab-details-actions.png "BimlFlex App - Batches - Details Tab - Actions")
+![BimlFlex App - Batches - Details Tab - Actions](images/bimlflex-app-batches-details-actions.png "BimlFlex App - Batches - Details Tab - Actions")
 
 
 |Icon|Action|Description|
@@ -94,7 +94,7 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 
 ### Details Tab - Fields
 
-![BimlFlex App - Batches - Details Tab - Fields](images/bimlflex-app-batches-tab-details-fields.png "BimlFlex App - Batches - Details Tab - Fields")
+![BimlFlex App - Batches - Details Tab - Fields](images/bimlflex-app-batches-details-fields.png "BimlFlex App - Batches - Details Tab - Fields")
 
 [Batch]  
 [Precedence Constraint]  
@@ -108,7 +108,7 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 
 The [Objects Tab] provides quick access to all `Objects` included in the `Batch`.
 
-[!include[Objects Tab](include\objects-tab.md)]
+[!include[Objects Tab](_objects-tab.md)]
 
 ## Attributes Tab
 
@@ -117,4 +117,4 @@ The [Attributes Tab] provides a view of any `Configurations` or `Settings` overr
 >[!NOTE]
 > This is exclusive to the `Batch` level.  Additional overrides may be present on any grains higher or lower than the `Batch`.
 
-[!include[Attributes Tab](include\attributes-tab.md)]
+[!include[Attributes Tab](_attributes-tab.md)]
