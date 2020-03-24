@@ -14,8 +14,7 @@ This guide provides information on the Accelerator but assumes a sound understan
 
 In this session, we discuss the various modeling and configuration options available with BimlFlex.
 
-[//]: # (TODO: Link to new Video)
-![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=opwapU7HZMM?rel=0&autoplay=0)
+![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0)
 
 ### Introduction to the Accelerator
 
@@ -37,7 +36,7 @@ Follow the guide for [Source To Staging](source-to-staging-templates.md) and imp
 
 Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modelling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
-![Whiteboard Model](images/bimlflex-ss-v5-accelerator-sample-whiteboard-model.png "Whiteboard Model")
+![Whiteboard Model](images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
 Once the target model is drafted, compare the accelerated metadata with the expected outcome and tweak accordingly.
 
@@ -55,7 +54,7 @@ The Accelerator integrates into and is part of the normal BimlFlex workflow
 
 The workflow uses the BimlFlex App to model and manage all metadata. The data can be pushed and updated from both Excel and the BimlFlex App. BimlFlex Excel is useful for bulk changes on multiple columns.
 
-[//]: # (TODO: Link to BimlFlex Excel)
+See more info about the [BimlFlex Excel Add-In](..\user-guide\excel-add-in.md)
 
 ## Accelerate the Model
 
@@ -70,9 +69,7 @@ The accelerator will use the metadata in the source for the project to derive th
 
 The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault preview allows a rapid design cycle of the Raw Data Vault.
 
-[//]: # (TODO: Verify that this is still relevant and update link)
-
-Should the Accelerator not be needed it is possible to manually define the Data Vault artifacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault](data-vault-templates.md).
+Should the Accelerator not be needed it is possible to manually define the Data Vault artifacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault](..\user-guide\data-vault-templates.md).
 
 Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become part of the normal metadata set.
 
@@ -80,41 +77,36 @@ Once the Accelerator preview matches the model expectations the metadata can be 
 
 The following narrative will guide us through the Accelerator process end to end. It is part of the overall BimlFlex workflow described earlier.
 
-[//]: # (TODO: Verify steps and add screenshots)
-
-1. run the metadata import for the source system if not done already. This import identifies source tables as a base for either Hubs, Links or Satellites.
-1. configure the Accelerator Preview Options to specify the record source, project and connection to use
-1. preview the Accelerator
-1. preview the Schema
-1. Review and tweak the metadata
-1. Publish the preview to the metadata repository
-1. Build the database artifacts and SSIS artifacts from the newly published Data Vault metadata
+1. run the metadata import for the source system if not done already. This import identifies source tables as a base for either Hubs, Links or Satellites
+1. open the Accelerator, specify the record source and select objects to accelerate
+1. preview the Accelerated Schema
+1. review and tweak the metadata
+1. publish the preview to the metadata repository by selecting the target Connection and Project
+1. build the database artifacts and SSIS artifacts in BimlStudio from the newly published Data Vault metadata
 
 ### The Accelerator User Interface
-
-[//]: # (TODO: Verify steps and add screenshots)
 
 In the preview, it is also possible to filter the tables used for the preview from the source. This is useful where the full set of source tables have been included but the Data Vault is built piece by piece. Starting to source and persist changes from the source without having to consider the Data Vault process means the Staging part of the solution can be completed sooner.
 
 Constraining the Data Vault Acceleration to a subset allows for a more agile delivery where valuable parts of the solution can be put to good use as soon as they are done.
 
-![Accelerator Preview](images/bimlflex-ss-v5-data-vault-accelerator-preview-table-list.png "Accelerator Preview")
+![Accelerator User Interface](images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
 
-[//]: # (TODO: Screenshot showing side by side and collapsed views)
+The Accelerator shows the source and preview side-by-side with options to collapse each pane or to resize the panes by dragging the splitter.
 
-Once the preview objects are available it is possible to review the information in the list of tables. It is also possible to print a Database Schema Diagram that details the tables and their relationships in an easy to review diagram.
-
-[//]: # (TODO: Move Backbone to Schema Diagram doc)
-
-![Preview Data Vault Backbone](images/bimlflex-ss-v5-schema-preview-data-vault-backbone.png "Preview Data Vault Backbone")
-
-The default schema will include all tables from all stages/layers. By filtering the diagram to only include the Hubs and Links in the filtering pane a user can review the CBC's and UOW's. Anything that needs tweaking, can be updated in the metadata which will, in turn, produce a new schema from the updated information.
-
-![Entity Relationship](images/bimlflex-ss-v5-sample-entity-relationship-diagram.png "Entity Relationship")
+|||
+|--- |--- |
+|<img src="images/bimlflex-app-accelerator-icon-viewoptions.png" alt="View Options Icon" />| Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
+|<img src="images/bimlflex-app-accelerator-icon-print.png" alt="Print Schema Icon" />| Download a Database Schema Diagram for printing that details the tables and their relationships in an easy to review diagram. |
+|<img src="images/bimlflex-app-accelerator-icon-refresh.png" alt="Refresh Layout" />| Refresh the whole layout or you can change the layout as you like by dragging tables. |
 
 Iterating through the metadata and updating the model to better support the target Data Vault model, each time a user should set the updated metadata to be persisted to the Metadata Database. This will create all Data Vault tables and columns as well as the Source To Target mappings needed to populate the Data Vault from the chosen source.
 
 If there is a need to update the model and rerun the preview, it can be done at any time. Once the metadata from the preview has been published, all metadata will be available in the BimlFlex App Object and Column screens for direct manipulation there. It will also be available in the Excel metadata editor for bulk updates. The pattern of tweaking the Metadata to fit the business process and target model can be repeated however many times needed before publishing.
+
+|||
+|--- |--- |
+|<img src="images/bimlflex-app-accelerator-icon-publish.png" alt="Publish Icon" />| Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
 
 Note that the accelerator will not resurface any entities already accelerated and marked as excluded or deleted. To see these entities, include them in the project by removing the excluded/deleted flag.
 
@@ -124,7 +116,7 @@ Note that the accelerator will not resurface any entities already accelerated an
 
 [//]: # (TODO: Add screenshots and wording for each action)
 
-In the Excel-based Metadata Editor, there are numerous options for manipulating the source metadata so that the Accelerator will produce the desired Data Vault model. Some of the common requirements include:
+There are numerous options for manipulating the source metadata so that the Accelerator will produce the desired Data Vault model. Some of the common requirements include:
 
 * Choosing the Integration Key used for the Hubs. By analyzing business processes and the source data it is possible to find EWBK's that aren't the technical source keys
 * Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For information, such as addresses there is normally no need to maintain complex relationships from the source. An address is just an attribute of the entity with a location
