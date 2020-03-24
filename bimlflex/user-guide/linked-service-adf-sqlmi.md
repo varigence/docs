@@ -5,7 +5,7 @@ title: Configuring an ADF Linked Service Connection for Azure SQL Database Manag
 # Configuring an ADF Linked Service Connection for Azure SQL Database Managed Instance
 
 > [!NOTE]
-> For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use SQL Managed Instance)
 
@@ -18,7 +18,7 @@ After selecting `Azure SQL MI` from the Linked Service Type dropdown, the form r
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
   + Fully Qualified Domain Name
   + Database Name
 + [Authentication Method](#authentication-method)
@@ -26,12 +26,12 @@ The required fields are:
 Required for [SQL Authentication](#sql-authentication):
 
 + User Name
-+ Password (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ Password (or [Azure Key Vault](create-linked-service-connection.md))
 
 Required for [Service Principal Authentication](#service-principal):
 
 + Service Principal ID (Application ID)
-+ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md))
 + Tenant (Tenant ID)
 
 Optional fields are:
@@ -47,7 +47,7 @@ Connect via Integration Runtime is required for an Azure SQL Database Managed In
 A connection to an Azure SQL Database Managed Instance linked service requires a connection string. The required properties for the connection string are Fully Qualified Domain Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 #### Authentication Method
 
@@ -60,7 +60,7 @@ For [Service Principal Authentication](#service-principal), Service Principal ID
 User Name and Password will be required by the Linked Service form for SQL Authentication except when using Azure Key Vault in place of a manually entering a Connection String. When using User Name and Password with SQL Authentication they will be included in the Connection String.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering the Password.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the Password.
 
 #### Managed Identity
 
@@ -73,7 +73,7 @@ To use Managed Identities for authentication with Azure SQL Database, they must 
 To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for SQL Database Managed Instance Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database-managed-instance#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the SQL Database Linked Service form.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of a Service Principal Key.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of a Service Principal Key.
 
 #### Additional Connection String Properties
 

@@ -5,7 +5,7 @@ title: Configuring an ADF Linked Service Connection for Azure Database for Postg
 # Configuring an ADF Linked Service Connection for Azure Database for PostgreSQL
 
 > [!NOTE]
-> For information on how to enable a connection for Linked Services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Azure Database for PostgreSQL)
 
@@ -18,13 +18,13 @@ After selecting `Azure PostgreSQL` from the Linked Service Type dropdown, the fo
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
   + Server Name
   + Database Name
   + [Encryption Method](#encryption-method)
   + [Validate Server Certificate](#validate-server-certificate)
   + User Name
-  + [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
+  + [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md))
 
 Optional fields are:
 
@@ -40,7 +40,7 @@ Connect via Integration Runtime is required for an Azure Database for PostgreSQL
 A connection to an Azure Database for PostgreSQL Linked Service requires a Connection String. The required properties for the Connection String are Server Name, Database Name, Encryption Method, Validate Server Certificate, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 #### Encryption Method
 
@@ -59,7 +59,7 @@ The checkbox for Validate Server Certificate will only appear when `SSL` or `Req
 Password will be used by the Linked Service form for authentication with the Azure Database for PostgreSQL Linked Service. Password is required - except when using Azure Key Vault in place of a manually entering a Connection String.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering the password.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the password.
 
 #### Additional Connection String Properties
 

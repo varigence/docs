@@ -5,7 +5,7 @@ title: Configuring an ADF Linked Service Connection for Azure Blob Storage
 # Configuring an ADF Linked Service Connection for Azure Blob Storage
 
 > [!NOTE]
-> For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Azure Blob Storage)
 
@@ -34,9 +34,9 @@ The remaining field requirements are dependent on Authentication Method.
 
 **Required fields for [Account Key Authentication](#account-key)**:
 
-+ [Connection String](#account-key-connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Connection String](#account-key-connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
   + Storage Account Name
-  + Storage Account Key (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
+  + Storage Account Key (or [Azure Key Vault](create-linked-service-connection.md))
 
 Optional fields:
 
@@ -44,14 +44,14 @@ Optional fields:
 
 **Required fields for [SAS URI Authentication](#sas-uri)**:
 
-+ SAS URL (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
-  + SAS Token (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ SAS URL (or [Azure Key Vault](create-linked-service-connection.md))
+  + SAS Token (or [Azure Key Vault](create-linked-service-connection.md))
 
 **Required fields for [Service Principal Authentication](#service-principal)**:
 
 + Tenant (Tenant ID)
 + Service Principal ID (Application ID)
-+ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md))
 
 **Required fields for [Managed Identity Authentication](#managed-identity)**:
 
@@ -71,14 +71,14 @@ For [Service Principal Authentication](#service-principal), Service Principal ID
 
 ![Account Key -center -50%](images/bimlflex-ss-app-connections-adf-blob-storage-form.png "Account Key")
 
-Account Key authorization requires a [Connection String](#account-key-connection-string) that contains a Storage Account Name, a Storage Account Key or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault), and optionally an Endpoint Suffix.
+Account Key authorization requires a [Connection String](#account-key-connection-string) that contains a Storage Account Name, a Storage Account Key or [Azure Key Vault](create-linked-service-connection.md), and optionally an Endpoint Suffix.
 
 ##### Account Key Connection String
 
 A connection to an Azure Blob Storage with Account Key authorization requires a connection string. The required properties for the connection string are Fully Qualified Domain Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 #### SAS URI
 
@@ -87,7 +87,7 @@ A connection to an Azure Blob Storage with Account Key authorization requires a 
 Shared Access Signature authentication required an SAS URL or Azure Key Vault. When manually entering the SAS URL, an SAS Token will aslo be required. The SAS Token can also be replaced by an Azure Key Vault. For more information, see the [Shared access signature authentication for Azure Blob Storage documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#shared-access-signature-authentication).
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering the SAS URL and SAS Token.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the SAS URL and SAS Token.
 
 #### Service Principal
 
@@ -96,9 +96,11 @@ Shared Access Signature authentication required an SAS URL or Azure Key Vault. W
 To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for Blob Storage Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the Blob Storage Linked Service form.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of a Service Principal Key.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of a Service Principal Key.
 
 #### Managed Identity
+
+![Managed Identity -center -50%](images/bimlflex-ss-app-connections-adf-blob-storage-managed-identity.png "Managed Identity")
 
 To use Managed Identity for authentication with Azure Blob Storage, one must be set up in Azure as described in the [Microsoft documentation for Azure Blob Storage Managed Identities](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#managed-identity). When using Managed Identity a Service Endpoint is required.
 
