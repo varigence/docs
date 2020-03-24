@@ -5,7 +5,7 @@ title: Configuring an ADF Linked Service Connection for Oracle
 # Configuring an ADF Linked Service Connection for Oracle
 
 > [!NOTE]
-> For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Oracle)
 
@@ -18,13 +18,13 @@ After selecting `Oracle` from the Linked Service Type dropdown, the form require
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
   + Host
   + [Oracle Connection Type](#oracle-connection-type)
   + [SID](#oracle-sid)
   + [Service Name](#oracle-service-name)
   + User Name
-  + [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
+  + [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md))
 
 Optional fields are:
 
@@ -40,7 +40,7 @@ Connect via Integration Runtime is required for an Oracle Linked Service connect
 A connection to an Oracle linked service requires a Connection String. The required properties for the Connection String are Host, Port, Oracle Connection Type, Service Name, SID, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 #### Oracle Connection Type
 
@@ -59,7 +59,7 @@ Oracle Service Name is required when using an Oracle Connection Type of Service 
 Password will be used by the Linked Service form for authentication with the Oracle Linked Service. Password is required - except when using Azure Key Vault in place of a manually entering a Connection String.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering the password.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the password.
 
 #### Additional Connection String Properties
 

@@ -5,7 +5,7 @@ title: Configuring an ADF Linked Service Connection for Netezza
 # Configuring an ADF Linked Service Connection for Netezza
 
 > [!NOTE]
-> For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Netezza)
 
@@ -18,14 +18,14 @@ After selecting `Netezza` from the Linked Service Type dropdown, the form requir
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
   + Server Name
   + Database Name
   + Port
   + [Security Level](#security-level)
   + [CA Certificate File*](#ca-certificate-file)
   + User Name
-  + Password (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
+  + Password (or [Azure Key Vault](create-linked-service-connection.md))
 
 Optional fields are:
 
@@ -40,7 +40,7 @@ Connect via Integration Runtime is required for a Netezza Linked Service connect
 A connection to a Netezza linked service requires a connection string. The required properties for the connection string are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details or Password.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details or Password.
 
 #### Security Level
 

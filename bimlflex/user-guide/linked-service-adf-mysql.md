@@ -5,7 +5,7 @@ title: Configuring an ADF Linked Service Connection for MySQL
 # Configuring an ADF Linked Service Connection for MySQL
 
 > [!NOTE]
-> For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use MySQL)
 
@@ -18,13 +18,13 @@ After selecting `MySQL` from the Linked Service Type dropdown, the form required
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
   + Server Name
   + Database Name
   + SSL Mode
   + Use System Trust Store
 + [User Name](#user-name)
-+ [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md))
 
 Optional fields are:
 
@@ -40,7 +40,7 @@ Connect via Integration Runtime is required for a MySQL Linked Service connectio
 A connection to a MySQL linked service requires a Connection String. The required properties for the Connection String are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 #### User Name
 
@@ -51,7 +51,7 @@ User Name is will be used by the Linked Service form for authentication with the
 Password is will be used by the Linked Service form for authentication with the MySQL Linked Service. Password is required - except when using Azure Key Vault in place of a manually entering a Connection String.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering the Password.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the Password.
 
 #### SSL Mode
 

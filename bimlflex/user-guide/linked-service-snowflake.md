@@ -5,7 +5,7 @@ title: Configuring a Linked Service Connection for Snowflake Data Warehouse
 # Configuring a Linked Service Connection for Snowflake Data Warehouse
 
 > [!NOTE]
-> For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Snowflake)
 
@@ -18,7 +18,7 @@ After selecting `Snowflake` from the Linked Service Type dropdown, the form requ
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
   + Account
   + Region
   + Warehouse
@@ -39,7 +39,7 @@ Connect via Integration Runtime is required for a Snowflake Linked Service conne
 A connection to a Snowflake linked service requires a connection string. The required properties for the connection string are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 #### Additional Connection String Properties
 

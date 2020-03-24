@@ -16,6 +16,7 @@ In this session, we discuss the various modeling and configuration options avail
 
 ![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0)
 
+
 ### Introduction to the Accelerator
 
 The Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of the source metadata. It is configurable and provides a preview that can be rerun as many times as necessary so that the initial Data Vault modeling can be completed faster than through manual metadata modeling.
@@ -28,9 +29,9 @@ The starting point for the examples in this document is when all source metadata
 
 [//]: # (TODO: Link to UPDATED Source To Staging document)
 
-[//]: # (TODO: Link to Import Metadata document)
-
 Follow the guide for [Source To Staging](source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
+
+More about [Import Metadata](import-metadata.md).
 
 ### The Source and Target model
 
@@ -48,7 +49,7 @@ This guide builds on the other guides in the series and assumes that the environ
 
 The Accelerator integrates into and is part of the normal BimlFlex workflow
 
-[//]: # (TODO: Include/Link to UPDATED BimlFlex workflow)
+[//]: # (TODO: New Image for UPDATED BimlFlex workflow)
 
 ![BimlFlex Workflow](images/bimlflex-ss-v5-accelerator-bimlflex-workflow.png "BimlFlex Workflow")
 
@@ -110,7 +111,7 @@ If there is a need to update the model and rerun the preview, it can be done at 
 
 Note that the accelerator will not resurface any entities already accelerated and marked as excluded or deleted. To see these entities, include them in the project by removing the excluded/deleted flag.
 
-[//]: # (TODO: Link to Setup - Show Excluded, Show Deleted)
+More about Show Excluded and Show Deleted in [BimlFlex Setup](setup-database-connection.md).
 
 ## Updating the metadata to meet requirements
 
@@ -172,9 +173,9 @@ By Clicking the elipsis a user may see the maximized view which contains the wor
 |<div style="width:30px; height:30px;background:white;"><img src="images\svg-icons\append-record-source.svg"/></div>| <span style="white-space:nowrap">Append Record Source</span> | Preview action to appended record source to a Satellite name.
 |<div style="width:30px; height:30px;background:white;"><img src="images\svg-icons\remove-record-source.svg"/></div>| <span style="white-space:nowrap">Remove Record Source</span> | Preview action to remove appended record source from a Satellite name. 
 
-### Context Drag and Drop Actions
+### Drag and Drop Actions
 
-By dragging and Dropping certain columns or tables users can affect the metadata in various ways:
+By dragging and dropping certain columns or tables users can affect the metadata in various ways:
 
 1. Change Ordinal - Drag a source column up or down in the same table to change the ordinal.
 1. Add Reference - Drag a source column onto another table to add a reference.
@@ -224,6 +225,10 @@ The UOW defines the granularity of the relationship between the entities. It is 
 Using the ModelGrouping attribute, a user can define the granularity from the source table to group multiple Foreign Key relations into a single Link
 
 ![Unit of Work Link Grouping](images/bimlflex-app-accelerator-actions-uow.png "Unit of Work Link Grouping")
+
+Watch the video to see how to group the 3 Links above into a single Unit Of Work:
+
+![BimlFlex Data Vault Accelerator - Unit of Work Link Grouping](https://www.youtube.com/watch?v=w1UTANpF_ug&t=4m35s&rel=0&autoplay=0)
 
 ## Adjusting Model Overrides
 

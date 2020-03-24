@@ -5,7 +5,7 @@ title: Configuring an ADF Linked Service Connection for Data Lake Gen 2
 # Configuring an ADF Linked Service Connection for Data Lake Gen 2
 
 > [!NOTE]
-> For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Data Lake Gen 2)
 
@@ -35,13 +35,13 @@ The remaining field requirements are dependent on Authentication Method.
 **Required fields for [Account Key Authentication](#account-key)**:
 
 + Storage Account Name (URL)
-+ Storage Account Key (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ Storage Account Key (or [Azure Key Vault](create-linked-service-connection.md))
 
 **Required fields for [Service Principal Authentication](#service-principal)**:
 
 + Tenant (Tenant ID)
 + Service Principal ID (Application ID)
-+ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md))
 
 **Required fields for [Managed Identity Authentication](#managed-identity)**:
 
@@ -65,10 +65,10 @@ If [Managed Identity](#managed-identity) is used, no authentication will be requ
 
 ![Account Key -center -50%](images/bimlflex-ss-app-connections-adf-data-lake-gen-2-form.png "Account Key")
 
-Account Key authorization requires a Storage Account Name and a Storage Account Key or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault).
+Account Key authorization requires a Storage Account Name and a Storage Account Key or [Azure Key Vault](create-linked-service-connection.md).
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering a Storage Account Key.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering a Storage Account Key.
 
 #### Service Principal
 
@@ -77,9 +77,11 @@ Account Key authorization requires a Storage Account Name and a Storage Account 
 To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for Data Lake Gen 2 Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the Data Lake Gen 2 Linked Service form.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of a Service Principal Key.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of a Service Principal Key.
 
 #### Managed Identity
+
+![Managed Identity -center -50%](images/bimlflex-ss-app-connections-adf-data-lake-gen-2-managed-identity.png "Managed Identity")
 
 To use Managed Identity for authentication with Data Lake Gen 2, one must be set up in Azure as described in the [Microsoft documentation for Data Lake Gen 2 Managed Identities](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#managed-identity). When using Managed Identity a Service Endpoint is required.
 

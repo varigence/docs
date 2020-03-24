@@ -5,7 +5,7 @@ title: Configuring an ADF Linked Service Connection for Teradata
 # Configuring an ADF Linked Service Connection for Teradata
 
 > [!NOTE]
-> For information on how to enable a connection for linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Teradata)
 
@@ -18,12 +18,12 @@ After selecting `Teradata` from the Linked Service Type dropdown, the form requi
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
++ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
   + Server Name
   + Database Name
   + [Authentication Method](#authentication-method)
   + User Name
-  + [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md#azure-data-factory-linked-services-and-azure-key-vault))
+  + [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md))
 
 Optional fields are:
 
@@ -38,7 +38,7 @@ Connect via Integration Runtime is required for a Teradata Linked Service connec
 A connection to a Teradata linked service requires a Connection String. The required properties for the Connection String are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering Connection String details.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 #### Authentication Method
 
@@ -49,7 +49,7 @@ The Teradata Linked Service connection can use Basic Authentication or Windows A
 Password will be used by the Linked Service form for SQL Authentication or Windows Authentican with the Teradata Linked Service. Password is required - except when using SQL Authentication with Azure Key Vault in place of a manually entering a Connection String.
 
 > [!TIP]
-> It is suggested that Azure Key Vault be used in place of manually entering the password.
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the password.
 
 #### Additional Connection String Properties
 
