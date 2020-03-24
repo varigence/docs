@@ -18,11 +18,13 @@ This area allows for basic navigation and the creation of new `Batches`.
 **Batch Navigation Pane**  
 ![BimlFlex App - Batches - Navigation](images/bimlflex-app-batches-navigation.png "BimlFlex App - Batches - Navigation")
 
-![Add Action](images/bimlflex-app-action-add-enabled.png "Add Action")  - [Add] will start a new to the `Batch` in the [Details Tab].  Once the required information is entered click [Save Action Button] to add the new `Batch` to the list.
+[Add](images/svg-icons/add.svg)
 
-![Collapse Action](images/bimlflex-app-action-collapse.png "Collapse Action")  - [Collapse] will hide the [Batch Navigation Pane].
-
-![Expand Action](images/bimlflex-app-action-expand.png "Expand Action")  - [Expand] will reveal the [Batch Navigation Pane] after it has been hidden.
+|Icon|Action|Description|
+|-|-|-|
+|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/add.svg" /></div>|Add Action|[Add] will start a new to the `Batch` in the [Details Tab].  Once the required information is entered click [Save Action Button] to add the new `Batch` to the list.|
+|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/expanded.svg" /></div>|Collapse Action|[Collapse] will hide the [Batch Navigation Pane].|
+|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/collapsed.svg" /></div>|Expand Action|[Expand] will reveal the [Batch Navigation Pane] after it has been hidden.|
 
 Below the Navigation Action Buttons are a list of `Batches` available for selection.  The highlighted `Batch` indicates the `Batch` that is currently selected.
 
@@ -62,11 +64,15 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 
 ![BimlFlex App - Batches - Details Tab - Actions](images/bimlflex-app-batches-tab-details-actions.png "BimlFlex App - Batches - Details Tab - Actions")
 
-![Save Action](images/bimlflex-app-action-save-enabled.png "Save Action")  - This will save the currently set of staged changes.  The [Save] button is will only enable if the `Batch` has changes staged and there are no major validation issues with the current `Batch` properties.
 
-![Duplicate Action](images/bimlflex-app-action-duplicate-enabled.png "Duplicate Action")  - This will create a duplicate of the selected `Batch`.  A prompt will appear asking for a [New Name] and a new `Batch` will be created using all of the selected `Batch`'s current properties.
+|Icon|Action|Description|
+|-|-|-|
+|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the currently set of staged changes.  The [Save] button is will only enable if the `Batch` has changes staged and there are no major validation issues with the current `Batch` properties.|
+|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Batch`.  A prompt will appear asking for a [New Name] and a new `Batch` will be created using all of the selected `Batch`'s current properties.|
+|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|This will `hard delete` the selected `Batch`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|
+|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Batch`.|
+|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/switch.svg" /></div>|Deleted|This will `soft delete` the currently selected `Batch`.  This will remove the `Batch` from all processing and it will be excluded from all validation.|
 
-![Archive Action](images/bimlflex-app-action-archive-enabled.png "Archive Action")  - This will `hard delete` the selected `Batch`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.
 
 **Archive Batch Dialog Box**  
 ![Archive Batch Dialog Box](images/bimlflex-app-dialog-archive-batch.png "Archive Batch Dialog Box")  
