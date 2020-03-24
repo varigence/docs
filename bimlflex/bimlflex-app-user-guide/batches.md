@@ -2,18 +2,20 @@
 uid: batches
 title: Batches
 ---
-# Batches 
+# Batches Editor
 
-`Batches` group and help define an ETL/ELT workload.  They are uses by `Projects` to set execution grouping.
+BimlFlex `Batches` group and help to define an ETL/ELT workload.  They are uses by `Projects` to set execution grouping.
 
-## Panel Overview
+## Editor Overview
 
-**Batches Panel**  
+The following sections describe the UI elements of the Batches Editor and how they are used to author and manage BimlFlex `Batches`.
+
+**Batches Editor**  
 ![BimlFlex App - Batches](images/bimlflex-app-batches.png "BimlFlex App - Batches")
 
 ### Batch Navigation
 
-This area allows for basic navigation and the creation of new `Batches`.
+The navigation list enumerates all batches for the current Customer and Version that have not been deleted or archived. To filter or search the batches based on name, hover over the header and click the hamburger button. Click on the name of the desired batch to open its details editor pane.
 
 **Batch Navigation Pane**  
 ![BimlFlex App - Batches - Navigation](images/bimlflex-app-batches-navigation.png "BimlFlex App - Batches - Navigation")
