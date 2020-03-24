@@ -35,6 +35,6 @@ All `Attributes` assigned to the current entity show here.  New items can be ent
 #### Attributes Tab Navigational Transitions
 |Item|Action|Entity Documentation|
 |-|-|-|
-|Object Value|Navigate to [Objects Pane], selecting clicked `Object`|[[Objects Documentation]](objects.md)
-|Column Value|Navigate to [Columns Pane], selecting clicked `Column`|[[Columns Documentation]](columns.md)
-|Attribute Value|Navigate to [Attributes Pane], selecting clicked `Attribute`|[[Attributes Documentation]](attributes.md)
+|Object Value|Navigate to [Objects Editor], selecting clicked `Object`|[[Objects Documentation]](objects.md)
+|Column Value|Navigate to [Columns Editor], selecting clicked `Column`|[[Columns Documentation]](columns.md)
+|Attribute Value|Navigate to [Attributes Editor], selecting clicked `Attribute`|[[Attributes Documentation]](attributes.md)

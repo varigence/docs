@@ -40,12 +40,12 @@ The [Overview] is available to give quick access to the more physical properties
 #### Objects Tab (Overview) Navigational Transitions
 |Item|Action|Entity Documentation|
 |-|-|-|
-|Project Value|Navigate to [Projects Pane], selecting clicked `Project`|[[Projects Documentation]](projects.md)
-|Connection Value|Navigate to [Connections Pane], selecting clicked `Connection`|[[Connections Documentation]](connections.md)
-|Object Value|Navigate to [Objects Pane], selecting clicked `Object`|[[Objects Documentation]](objects.md)
+|Project Value|Navigate to [Projects Editor], selecting clicked `Project`|[[Projects Documentation]](projects.md)
+|Connection Value|Navigate to [Connections Editor], selecting clicked `Connection`|[[Connections Documentation]](connections.md)
+|Object Value|Navigate to [Objects Editor], selecting clicked `Object`|[[Objects Documentation]](objects.md)
 
 > [!NOTE]
-> The `Object` navigational transition is the only one provided on the additional views.  As such, no further callouts will be made to this.  Functionality on the below forms however is consistant: click the [Object Value] to navigate to the selected `Object` in the [[Objects Pane]](objects.md).
+> The `Object` navigational transition is the only one provided on the additional views.  As such, no further callouts will be made to this.  Functionality on the below forms however is consistant: click the [Object Value] to navigate to the selected `Object` in the [[Objects Editor]](objects.md).
 
 #### View: Model Overrides
 
