@@ -18,11 +18,11 @@ The walkthrough will use the Product and Product Category entities from the [Adv
 
 ## Data Vault review
 
-It is important to consider the Data Vault design and modelling principles while building the Enterprise Data warehouse. There are several books and training courses available on the subject of Data Vault modelling. Varigence provides a Data Vault modelling and implementation course that combines theoretical knowledge about the Data Vault approach with implementation guides using BimlFlex.
+It is important to consider the Data Vault design and modeling principles while building the Enterprise Data warehouse. There are several books and training courses available on the subject of Data Vault modeling. Varigence provides a Data Vault modeling and implementation course that combines theoretical knowledge about the Data Vault approach with implementation guides using BimlFlex.
 
 ## The Data Vault Pillars
 
-It can be prudent to revisit the Data Vault modelling pillars as defined by the CDVDM, The Data Vault modelling certification definition.
+It can be prudent to revisit the Data Vault modeling pillars as defined by the CDVDM, The Data Vault modeling certification definition.
 
 * Data Vault Models are built entirely upon Hubs, Links and Satellites
 * Data Vault Hubs and Links contain no descriptive attributes
@@ -39,15 +39,15 @@ BimlFlex generates the required artifacts to populate Hubs, Links, Satellites et
 
 ### Hubs
 
-Hubs maintain a distinct list of Integration keys. The Integration key and the Hub table, as well as the source and source to target mapping are defined in the metadata repository.
+Hubs maintain a distinct list of Integration keys. The Integration key and the Hub table, as well as the source and source to target mapping, are defined in the metadata repository.
 
-The Hub Entity is at the center of the **Core Business Concept**, CBC, and should be derived from **Enterprise Wide Business Keys**, EWBK’s. A Hub is not necessarily the same as a Primary Key in the source system.
+The Hub Entity is at the center of the **Core Business Concept**, CBC, and should be derived from **Enterprise Wide Business Keys**, EWBK's. A Hub is not necessarily the same as a Primary Key in the source system.
 
 To be able to integrate across systems and versions the actual Business terms used should be identified and used as keys for the Hubs.
 
 For the Integration key, it is recommended to use a wide Unicode/nvarchar datatype. That accommodates most data coming from any source. It also allows new sources to be integrated that might not adhere to the earlier assumed datatype of the Hub Integration key. The hub should accommodate all incoming data without judging, therefore it is recommended to use the most forgiving data type available.
 
-Descriptive attributes about the Integration key in the Hub are stored in attached Satellites.
+Descriptive attributes about the Integration key in the Hub are stored in the attached Satellites.
 
 ### Links
 
@@ -69,7 +69,7 @@ Another example is the management of descriptive attributes. For a Product store
 
 The Hub is the distinct set of Integration keys from the source. It is an add only table. Any effectiveness or descriptive attributes are tracked in attached Satellites.
 
-The required metadata for a Hub is divided into the objects tab and the columns tab in the metadata editor. For the Source to Target Mapping the source and the target table and columns needs to be defined and mapped.
+The required metadata for a Hub is divided into the objects tab and the columns tab in the metadata editor. For the Source to Target Mapping the source and the target table and columns need to be defined and mapped.
 
 ![Hub Metadata](images/bimlflex-ss-v5-excel-hub-metadata-objects.png "Hub Metadata")
 
@@ -119,13 +119,13 @@ For all Hubs in the Data Vault model, the source and destination table metadata 
 
 Some Hub designs require multiple source key columns to define the Hub through the Integration Key. Sources with key overlap might need a system or source string added, multiple source keys might need to be combined to form a distinct Hub Integration key.
 
-> Deriving the Integration keys for the CBC/EWBK’s is one of the more important design exercises in modelling the Data Vault. This guide does not include details on the required analysis and design process.
+> Deriving the Integration keys for the CBC/EWBK's is one of the more important design exercises in modelling the Data Vault. This guide does not include details on the required analysis and design process.
 
-For these columns BimlFlex concatenates them into a single string and separates them with the configured separator `~` as described above.
+For these columns, BimlFlex concatenates them into a single string and separates them with the configured separator `~` as described above.
 
 ## Link
 
-The Link Entity is the distinct set of relationships between the involved Hubs. As the Hub, it is an add only table and any effectiveness or attributes should be tracked in a connected Link Satellite.
+The Link Entity is the distinct set of relationships between the involved Hubs. Like the Hub, it is an add only table and any effectiveness or attributes should be tracked in a connected Link Satellite.
 
 Two or more Hubs are required to build a Link. The Product source table used for the Hub has a relationship to the Product Category table, representing the category of a product. The Product Category will require a Hub for the Link to be built. The Product Category table also has a hierarchy with a parent category. This provides an interesting scenario as that Link will reference the same Hub twice and therefore will need roleplaying names.
 
@@ -133,7 +133,7 @@ Links are built from the metadata for a single table so if there is a requiremen
 
 It is recommended that sources provide all the required metadata for relationships between entities to be built using the identified Integration keys.
 
-For this guide the technical Id’s from the source are used.
+For this guide, the technical Ids from the source are used.
 
 For the metadata objects tab the new Hub and the Link needs to be added
 

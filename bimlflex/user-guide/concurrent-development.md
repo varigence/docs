@@ -4,7 +4,7 @@ title: BimlFlex Concurrent Development
 ---
 # Concurrent Development
 
-Most BimlFlex deployments feature several teams working on the same Data Warehouse at the same time. A successful combination of concurrent development and Data Warehouse management normally use several features in BimlFlex for support. A sample process is described below.
+Most BimlFlex deployments feature several teams working on the same Data Warehouse at the same time. A successful combination of concurrent development and Data Warehouse management normally uses several features in BimlFlex for support. A sample process is described below.
 
 Supporting documentation: @bimlflex-continuous-integration-and-continuous-delivery
 
@@ -14,7 +14,7 @@ Use a single Metadata Customer per target Data Warehouse. Most projects will hav
 
 Use a single Metadata (BimlFlex) Database. The metadata database is a development resource and does not need to be provisioned per environment. It is only used by the development team.
 
-The BimlCatalog Audit and Logging database is used at run time by the loading process. This needs to be available as a separate database in each environment. As parameter and configuration values are stored in this database it is important that there is a separate database per environment. It is also important that they are backed up as required for audit trails and parameter integrity.
+The BimlCatalog Audit and Logging database is used at run time by the loading process. This needs to be available as a separate database in each environment. As parameter and configuration values are stored in this database there must be a separate database per environment. It is also important that they are backed up as required for audit trails and parameter integrity.
 
 ## Metadata Customers and versions
 
@@ -22,7 +22,7 @@ Use a single Metadata Customer per Data Warehouse. Most scenarios have a single 
 
 Use Versions to progress through development cycles. For sprint scenarios, name the current Version after the current sprint, e.g. `Sprint 23`
 
-A single customer means all artifacts are in a single repository. That means all SSDT database projects represent a whole database and that all shared artefacts in the Data Vault are all co-located. This enables building of Point In Time constructs across data from multiple sources and also makes it possible to track name collisions in the target layer.
+A single customer means all artifacts are in a single repository. That means all SSDT database projects represent a whole database and that all shared artifacts in the Data Vault are all co-located. This enables the building of Point In Time constructs across data from multiple sources and also makes it possible to track name collisions in the target layer.
 
 ## Use Exclusions for work separation
 
@@ -44,7 +44,7 @@ The developers in Team A create a project for the CRM ingestion in the metadata.
 
 The Metadata Team leader excludes the Sales project in the global metadata scope. Neither Team A nor Team B developers sees it in the metadata.
 
-The developers in Team A Switch on the `Use My Exclusions` feature in the BimlFlex app. Once this is completed, they both set the Finance project as Excluded. Team B does the same but exclude the project Team A is working on.
+The developers in Team A Switch on the `Use My Exclusions` feature in the BimlFlex app. Once this is completed, they both set the Finance project as Excluded. Team B does the same but excludes the project Team A is working on.
 
 The BimlFlex app will only display the relevant source projects for the members in the development teams, allowing them to work in the single metadata Customer at the same time.
 

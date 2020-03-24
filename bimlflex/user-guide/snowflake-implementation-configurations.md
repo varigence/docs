@@ -72,5 +72,3 @@ The source objects are imported the same way as other implementation patterns
 ### Data Vault and Data Mart
 
 The Data Vault is accelerated the same way and the Data Mart is created in the same way as other implementation patterns
-
-### 

@@ -2,7 +2,7 @@
 uid: bimlflex-app-overview
 title: BimlFlex App Overview
 ---
-# BimlFlex App Overview
+# BimlFlex App
 
 The BimlFlex App provides a user experience for managing metadata and BimlFlex projects.
 

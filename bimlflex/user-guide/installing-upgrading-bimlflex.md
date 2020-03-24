@@ -13,7 +13,7 @@ The following installers are available:
 * BimlFlex Developer  
     This installer includes all parts of the product framework and is suited for modelers who use the BimlFlex App for modeling as well as developers who will build the solution in BimlStudio and test the resulting packages in Visual Studio
 * Runtime installation  
-    This installer include the required runtime components for servers that will execute SSIS packages
+    This installer includes the required runtime components for servers that will execute SSIS packages
 
 The BimlFlex developer installation allows the installation of all components used in the BimlFlex framework:
 
@@ -24,7 +24,7 @@ The BimlFlex developer installation allows the installation of all components us
 * SSIS Custom Components for Snowflake
 * Installation of new, or upgrades of existing BimlFlex and BimlCatalog databases
 
-Run the developer installation and choose to install all components on the developer machine. For complete functionality all components are required.
+Run the developer installation and choose to install all components on the developer machine. For complete functionality, all components are required.
 
 ![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s4.png)
 
@@ -36,7 +36,7 @@ The first time BimlStudio or the BimlFlex Excel file is opened from a BimlFlex p
 
 ## Detailed Steps
 
-The following detailed steps walks through the installation of BimlFlex
+The following detailed steps walk through the installation of BimlFlex
 
 ### Download the BimlFlex installer
 
@@ -50,7 +50,7 @@ Use the link in the welcome or trial email to download the installer
 Check the bitness of the local installation of Microsoft Excel using the [Microsoft guidelines available here](https://support.office.com/en-us/article/About-Office-What-version-of-Office-am-I-using-932788B8-A3CE-44BF-BB09-E334518B8B19).
 
 > [!WARNING]
-> Install only the bitness version that match the installed Excel version.
+> Install only the bitness version that matches the installed Excel version.
 
 ### Install BimlFlex for developers
 
@@ -82,7 +82,7 @@ Pick BimlStudio features to install. For most developer installations, choose to
 
 ![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s7.png)
 
-Pick Custom components to install. Only identified available ones are available in the list. It is possible to force installation of unavailable options
+Pick Custom components to install. Only identified available ones are available in the list. It is possible to force the installation of unavailable options
 
 ![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s8.png)
 

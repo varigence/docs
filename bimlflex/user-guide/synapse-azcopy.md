@@ -1,10 +1,10 @@
 ---
-uid: bimlflex-azcopy
+uid: bimlflex-synapse-azcopy
 title: Using AzCopy with BimlFlex
 ---
 # Using AzCopy with BimlFlex
 
-For workloads that upload data to blob storage using SSIS BimlFlex create files locally and then use AzCopy to upload the files.
+For workloads that upload data to blob storage using SSIS, BimlFlex creates files locally and then use AzCopy to upload the files.
 
 AzCopy is a copy tool for Azure from Microsoft. More general information on AzCopy can be found here: [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)
 
