@@ -61,6 +61,7 @@
     "resource": [
       {
         "files": [
+          "bimlflex/metadata-editors/images/**",	
           "bimlflex/user-guide/images/**",
           "bimlflex/user-guide/resources/**",
           "bimlexpress/images/**",
