@@ -894,6 +894,7 @@ small,
   font-weight: normal;
   line-height: 1;
 }
+
 /* Description Lists */
 dl {
   margin-top: 0;
@@ -6400,4 +6401,36 @@ input[type="search"]:focus {
 .mr-auto,
 .mx-auto {
   margin-right: auto !important;
+}
+
+/* icon col styles */
+.icon-col {
+  width:30px; 
+  height:30px;
+  background:#EEE;
+  border:1px solid #CCC;
+  padding:3px;
+  border-radius:3px;
+}
+.nowrap-col {
+  white-space:nowrap;
+}
+
+/* margin - padding shortcuts 
+
+creates styles like:
+
+m-5 {margin: 5px}
+p-10 {padding: 10px}
+
+*/
+$spaceamounts: (2, 5, 10, 15, 20, 25, 30);
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}px;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}px;
+  }
 }

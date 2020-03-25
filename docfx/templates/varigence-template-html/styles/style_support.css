@@ -5774,4 +5774,64 @@ input[type="radio"]
 .mx-auto {
   margin-right: auto !important; }
 
+
+/* icon col styles */
+.icon-col {
+  width:30px; 
+  height:30px;
+  background:#EEE;
+  border:1px solid #CCC;
+  padding:3px;
+  border-radius:3px;
+}
+.nowrap-col {
+  white-space:nowrap;
+}
+
+/* margin - padding shortcuts */
+.m-2 {
+    margin: 2px;
+ }
+  .p-2 {
+    padding: 2px;
+ }
+  .m-5 {
+    margin: 5px;
+ }
+  .p-5 {
+    padding: 5px;
+ }
+  .m-10 {
+    margin: 10px;
+ }
+  .p-10 {
+    padding: 10px;
+ }
+  .m-15 {
+    margin: 15px;
+ }
+  .p-15 {
+    padding: 15px;
+ }
+  .m-20 {
+    margin: 20px;
+ }
+  .p-20 {
+    padding: 20px;
+ }
+  .m-25 {
+    margin: 25px;
+ }
+  .p-25 {
+    padding: 25px;
+ }
+  .m-30 {
+    margin: 30px;
+ }
+  .p-30 {
+    padding: 30px;
+ }
+  
+
 /*# sourceMappingURL=style_support.css.map */
+
