@@ -4,11 +4,11 @@ title: Schema Diagram
 ---
 # Schema Diagram
 
-In this session, we discuss the Schema Diagram tool to with reference to how it provides a simple view of your data and accelerates your development tasks.
+In this document, we discuss the Schema Diagram tool with reference to how it provides a simple view of your data and accelerates your development tasks.
 
 ## Schema Diagram
 
-The Schema Diagram provides a entity relation view of any set of metadata based on the integration stage. It allows a user to get an overview of what the metadata looks like in an easy to understand view. It also helps the developer to execute the most common actions on the data in a graphical interface.
+The Schema Diagram provides an entity relation view of any set of metadata based on the integration stage. It allows a user to get an overview of what the metadata looks like in an easy to understand view. It also helps the developer to execute the most common actions on the data in a graphical interface.
 
 ### Starting Point
 
@@ -72,7 +72,7 @@ By dragging and dropping certain columns or tables users can affect the metadata
 Tables can be dragged around on the screen to make the layout easier to view. There are four ways to drag tables around.
 
 1. Drag - Drag an individual table to another location
-1. Ctrl Drag - Drag a Hub and it's Satellites
+1. Ctrl Drag - Drag a Hub and its Satellites
 1. Shift Drag - Drag all selected tables and their Satellites
 1. Ctrl+Shift Drag - Drag all selected tables and their referenced tables and Satellites
 
