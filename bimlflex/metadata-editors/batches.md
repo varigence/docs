@@ -19,7 +19,7 @@ The navigation list enumerates all batches for the current Customer and Version 
 
 **Batch Navigation Pane**  
 ![BimlFlex App - Batches - Navigation](images/bimlflex-app-batches-navigation.png "BimlFlex App - Batches - Navigation")
-
+ 
 [Add](images/svg-icons/add.svg)
 
 |Icon|Action|Description|
@@ -128,7 +128,7 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 
 The [Objects Tab] provides quick access to all `Objects` included in the `Batch`.
 
-[!include[Objects Tab](_objects-tab.md)]
+[!include[Objects Tab](_tab-objects.md)]
 
 ## Attributes Tab
 
@@ -137,4 +137,4 @@ The [Attributes Tab] provides a view of any `Configurations` or `Settings` overr
 >[!NOTE]
 > This is exclusive to the `Batch` level.  Additional overrides may be present on any grains higher or lower than the `Batch`.
 
-[!include[Attributes Tab](_attributes-tab.md)]
+[!include[Attributes Tab](_tab-attributes.md)]
