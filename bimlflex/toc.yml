@@ -4,211 +4,46 @@
   topicHref: index.md
   items:
   - name: Setup
-    items:
-    - name: Overview
-      href: setup/index.md
-    - name: System Requirements
-      href: setup/system-requirements.md
-    - name: Developer Installation
-      href: setup/developer-installation.md
-    - name: Metadata Database Installation
-      href: setup/metadata-database-installation.md
-    - name: Build Server Installation
-      href: setup/build-server-installation.md
-    - name: SSIS Server Installation
-      href: setup/ssis-server-installation.md
-    - name: Upgrade Process
-      href: setup/upgrade-process.md
+    href: setup/toc.yml
 
   - name: Getting Started
-    items:
-    - name: Overview
-      href: getting-started/index.md
-    - name: Initial Configuration
-      href: getting-started/initial-configuration.md
-    - name: First Project Walkthrough
-      href: getting-started/first-project-walkthrough.md
-    - name: Sample Metadata
-      href: getting-started/sample-metadata.md
-    - name: Intro Videos
-      href: getting-started/intro-videos.md
+    href: getting-started/toc.yml
 
   - name: Metadata Editors
-    items:
-    - name: Overview
-      href: author-metadata/index.md
-    - name: Dashboard
-      href: author-metadata/dashboard.md
-    - name: Toolbar
-      href: author-metadata/toolbar.md
-    - name: Connections
-      href: author-metadata/connections.md
-    - name: Batches
-      href: author-metadata/batches.md
-    - name: Projects
-      href: author-metadata/projects.md
-    - name: Objects
-      href: author-metadata/objects.md
-    - name: Columns
-      href: author-metadata/columns.md
-    - name: Parameters
-      href: author-metadata/parameters.md
-    - name: Attributes
-      href: author-metadata/attributes.md
-    - name: Configurations
-      href: author-metadata/configurations.md
-    - name: Settings
-      href: author-metadata/settings.md
-    - name: Data Type Mappings
-      href: author-metadata/data-type-mappings.md
-    - name: Versions
-      href: author-metadata/versions.md
-    - name: Reports
-      href: author-metadata/reports.md
+    href: metadata-editors/toc.yml
 
-  -name: Modeling Tools
-    items:
-    - name: Accelerator
-      href: author-metadata/accelerator.md
-    - name: Schema Diagram
-      href: author-metadata/schema-diagram.md
-    - name: Column Mapping
-      href: author-metadata/column-mapping.md
+  - name: Modeling Tools
+    href: modeling-tools/toc.yml
 
   - name: Bulk Edit Metadata
-    items:
-    - name: Overview
-      href: bulk-edit-metadata/index.md
+    href: bulk-edit-metadata/toc.yml
 
   - name: Build Solution
-    items:
-    - name: Overview
-      href: build-solution/index.md
-    - name: Setup BimlStudio Project
-      href: build-solution/setup-bimlstudio-project.md
-    - name: Interactive Build
-      href: build-solution/interactive-build.md
-    - name: Command Line Build
-      href: build-solution/command-line-build.md
-    - name: Generating DDL
-      href: build-solution/generating-ddl.md
+    href: build-solution/toc.yml
 
   - name: Metadata Databases
-    items:
-    - name: Overview
-      href: metadata-databases/index.md
-    - name: BimlFlex Database
-      href: metadata-databases/bimlflex-database.md
-    - name: BimlCatalog Database
-      href: metadata-databases/bimlcatalog-database.md
+    href: metadata-databases/toc.yml
 
   - name: ADF Deployment
-    items:
-    - name: Overview
-      href: adf-deployment/index.md
-    - name: Using Azure Portal
-      href: adf-deployment/using-azure-portal.md
-    - name: Using Powershell
-      href: adf-deployment/using-powershell.md
-    - name: Sensitive Info Management
-      href: adf-deployment/sensitive-info-management.md
-    - name: Concurrent Development
-      href: adf-deployment/concurrent-development.md
-    - name: Continuous Integration and Delivery
-      href: adf-deployment/continuous-integration-and-delivery.md
+    href: adf-deployment/toc.yml
 
   - name: SSIS Deployment
-    items:
-    - name: Overview
-      href: ssis-deployment/index.md
-    - name: SSIS Custom Components
-      href: ssis-deployment/ssis-custom-components.md
-    - name: SSIS Server Installation
-      href: ssis-deployment/ssis-server-installation.md
-    - name: Using Deployment Wizard
-      href: ssis-deployment/using-deployment-wizard.md
-    - name: Using Powershell
-      href: ssis-deployment/using-powershell.md
-    - name: Sensitive Info Management
-      href: ssis-deployment/sensitive-info-management.md
-    - name: Concurrent Development
-      href: ssis-deployment/concurrent-development.md
-    - name: Continuous Integration and Delivery
-      href: ssis-deployment/continuous-integration-and-delivery.md
+    href: ssis-deployment/toc.yml
 
   - name: Concepts
-    items:
-    - name: Overview
-      href: concepts/index.md
-    - name: Importing Metadata
-      href: concepts/importing-metadata.md
-    - name: Source to Staging Templates
-      href: concepts/source-to-staging-templates.md
-    - name: Data Vault Standards
-      href: concepts/data-vault-standards.md
-    - name: Data Vault Accelerator
-      href: concepts/data-vault-accelerator.md
-    - name: Data Vault Templates
-      href: concepts/data-vault-templates.md
-    - name: Data Mart Templates
-      href: concepts/data-mart-templates.md
-    - name: Integration Keys and Relationships
-      href: concepts/integration-keys-and-relationships.md
-    - name: Load Parameters
-      href: concepts/load-parameters.md
-    - name: Delete Detection
-      href: concepts/delete-detection.md
+    href: concepts/toc.yml
 
   - name: Implementation Guides
-    items:
-    - name: Overview
-      href: implementation-guides/index.md
-    - name: Export to File
-      href: implementation-guides/export-to-file.md
-    - name: Master Data Services
-      href: implementation-guides/master-data-services.md
+    href: implementation-guides/toc.yml
 
   - name: Support
-    items:
-    - name: Overview
-      href: support/index.md
-    - name: Support Process
-      href: support/support-process.md
-    - name: Check Installed Versions
-      href: support/check-installed-versions.md
+    href: support/toc.yml
 
   - name: Reference Documentation
-    items:
-    - name: Overview
-      href: reference/index.md
-    - name: Configurations
-      href: reference/configurations.md
-    - name: Settings
-      href: reference/settings.md
-    - name: Extension Points
-      href: reference/extension-points.md
-    - name: Metadata Model
-      href: reference/metadata-model.md
+    href: reference-documentation/toc.yml
 
   - name: Tips And Tricks
-    items:
-    - name: Overview
-      href: tips-and-tricks/index.md
-    - name: Pinned - How to find the Extension Point target
-      href: find-extension-point-target.md
-    - name: Adding BimlFlex custom SSIS components to Azure Integration Runtime
-      href: adding-ssis-custom-components-to-azure-integration-runtime.md
-    - name: Extension Point - Override the Default Row Start Date for Dimensions
-      href: overriding-default-dimension-rowstartdate.md
-    - name: Extension Point - Replace columns in the SSIS Data Flow
-      href: replace-columns-in-the-ssis-data-flow.md
-    - name: Memory Usage In SSIS
-      href: memory-usage-in-ssis.md
-    - name: Parameterize Connections
-      href: parameterize-connections.md
-    - name: Using Sensitive Parameters in SSIS Catalog
-      href: using-sensitive-parameters-in-ssis-catalog.md
-
+    href: tips-and-tricks/toc.yml
 
   - name: Release Notes
     href: release-notes/toc.yml

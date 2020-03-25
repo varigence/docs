@@ -1,0 +1,16 @@
+- name: Overview
+  href: index.md
+- name: SSIS Custom Components
+  href: ssis-custom-components.md
+- name: SSIS Server Installation
+  href: ssis-server-installation.md
+- name: Using Deployment Wizard
+  href: using-deployment-wizard.md
+- name: Using Powershell
+  href: using-powershell.md
+- name: Sensitive Info Management
+  href: sensitive-info-management.md
+- name: Concurrent Development
+  href: concurrent-development.md
+- name: Continuous Integration and Delivery
+  href: continuous-integration-and-delivery.md

@@ -1,0 +1,12 @@
+- name: Overview
+  href: index.md
+- name: Using Deployment Wizard
+  href: using-azure-portal.md
+- name: Using Powershell
+  href: using-powershell.md
+- name: Sensitive Info Management
+  href: sensitive-info-management.md
+- name: Concurrent Development
+  href: concurrent-development.md
+- name: Continuous Integration and Delivery
+  href: continuous-integration-and-delivery.md

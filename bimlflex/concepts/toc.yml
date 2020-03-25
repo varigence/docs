@@ -1,0 +1,18 @@
+- name: Overview
+  href: index.md
+- name: Importing Metadata
+  href: importing-metadata.md
+- name: Source to Staging Templates
+  href: source-to-staging-templates.md
+- name: Data Vault Standards
+  href: data-vault-standards.md
+- name: Data Vault Templates
+  href: data-vault-templates.md
+- name: Data Mart Templates
+  href: data-mart-templates.md
+- name: Integration Keys and Relationships
+  href: integration-keys-and-relationships.md
+- name: Load Parameters
+  href: load-parameters.md
+- name: Delete Detection
+  href: delete-detection.md
