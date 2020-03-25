@@ -87,9 +87,7 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 
 ### Additional Dialogs
 
-#### Archive Batch Dialog Box  
-
-![Archive Batch Dialog Box](images/bimlflex-app-dialog-archive-batch.png "Archive Batch Dialog Box")  
+[!include[Archive Batch Dialog Box](_dialog-archive-batch.md)]
 
 >[!TIP]
 >

@@ -17,14 +17,11 @@
 
 ### Additional Dialogs
 
-#### Add Attribute Dialog Box  
-![Add Attribute Dialog Box](images/bimlflex-app-dialog-add-attribute.png "Add Attribute Dialog Box")  
+[!include[Add Attribute Dialog Box](_dialog-add-attribute.md)]
 
-#### Edit Attribute Dialog Box  
-![Add Object Dialog Box](images/bimlflex-app-dialog-edit-attribute.png "Add Object Dialog Box")  
+[!include[Edit Attribute Dialog Box](_dialog-edit-attribute.md)]
 
-#### Archive Attribute Dialog Box  
-![Archive Attribute Dialog Box](images/bimlflex-app-dialog-archive-attribute-list.png "Archive Attribute Dialog Box")  
+[!include[Archive Attribute Dialog Box](_dialog-archive-attribute.md)]
 
 ### Attributes Tab - Table Descriptions
 

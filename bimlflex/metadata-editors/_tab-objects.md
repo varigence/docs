@@ -18,11 +18,9 @@
 
 ### Additional Dialogs
 
-#### Add Object Dialog Box  
-![Add Object Dialog Box](images/bimlflex-app-dialog-add-object.png "Add Object Dialog Box")  
+[!include[Add Object Dialog Box](_dialog-add-object.md)]
 
-#### Archive Object Dialog Box  
-![Archive Object Dialog Box](images/bimlflex-app-dialog-archive-object-list.png "Archive Object Dialog Box")  
+[!include[Archive Object Dialog Box](_dialog-archive-object.md)]
 
 ### Objects Tab - Views
 
