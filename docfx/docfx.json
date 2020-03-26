@@ -137,7 +137,7 @@
     "resource": [
       {
         "files": [
-          "bimlflex/user-guide/images/**",
+          "bimlflex/**/images/**",
           "bimlexpress/images/**",
           "content/**"
         ],
