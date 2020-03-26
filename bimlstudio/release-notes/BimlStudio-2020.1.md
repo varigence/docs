@@ -1,4 +1,4 @@
-# BimlStudio 2019 R1 Release Notes
+# BimlStudio 2020 R1 Release Notes
 
 Significant changes between BimlStudio 2019 R1 and BimlStudio 2020 R1
 
