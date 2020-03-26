@@ -52,5 +52,6 @@ You have generated your Azure Data Factory (ADF) assets, and are ready to deploy
 
 Once deployment has completed, you can go to your resource group, and verify that your Data Factory was created and is deployed.
 
- > Your resource group will be named something like `ADF-<HashKey>` or the `Settings.AzureDataFactoryName`.
+ > Your resource group will be named something like `ADF-<HashKey>` or the `Settings.AzureDataFactoryName`. 
 
+You have now successfully deployed your ADF assets using the Azure Portal. You can start your pipeline by starting the trigger from inside the authoring tool.
