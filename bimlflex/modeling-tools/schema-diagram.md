@@ -34,7 +34,7 @@ As such the Context Aware Actions are slightly different than the Accelerator Ac
 
 ### Context Aware Actions
 
-There are convenience actions available on most of the tables and columns in both the source and preview panes.
+There are convenience actions available on most of the tables and columns.
 
 By clicking on a Table or Column a user gets a pop up of all the actions buttons available. The first click will show a minimized view with only the icons with tooltips.
 
@@ -47,7 +47,7 @@ By Clicking the elipsis a user may see the maximized view which contains the wor
 ||||
 |--- |--- |--- |
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\add-reference.svg"/></div>| <span class="nowrap-col m-5">Add Reference</span> | Add a reference. This can also be done by dragging a column onto the target table. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This remove the reference link, not the column. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This action removes the reference link, not the column. |
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\navigate.svg"/></div>| <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current Schema Diagram layout will be persisted in memory for you to come back to. |
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\edit.svg"/></div>| <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key.|
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\composite-key.svg"/></div>| <span class="nowrap-col m-5">Add Integration Key</span> | Add an integration key using the selected columns. |

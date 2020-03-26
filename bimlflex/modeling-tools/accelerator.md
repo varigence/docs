@@ -161,7 +161,7 @@ By Clicking the elipsis a user may see the maximized view which contains the wor
 ||||
 |--- |--- |--- |
 |<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\add-reference.svg"/></div>| <span class="nowrap-col m-5">Add Reference</span> | Source action to add a reference. This can also be done by dragging a column onto the target table. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This remove the reference link, not the column. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This action removes the reference link, not the column. |
 |<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\navigate.svg"/></div>| <span class="nowrap-col m-5">Navigate</span> | Source action to navigate to table or column. The current Accelerator layout will be persisted in memory for you to come back to. |
 |<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\edit.svg"/></div>| <span class="nowrap-col m-5">Edit</span> | Source action to open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key.|
 |<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\composite-key.svg"/></div>| <span class="nowrap-col m-5">Add Integration Key</span> | Source action to add an integration key using the selected columns. |
