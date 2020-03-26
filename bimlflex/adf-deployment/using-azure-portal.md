@@ -54,4 +54,4 @@ Once deployment has completed, you can go to your resource group, and verify tha
 
  > Your Data Factory will be named something like `ADF-<HashKey>` or the `Settings.AzureDataFactoryName`. 
 
-You have now successfully deployed your ADF assets using the Azure Portal. You can start your pipeline by starting the trigger from inside the authoring tool.
+You have now successfully deployed your ADF assets using the Azure Portal. You can start your pipeline(s) inside of the ADF authoring tool.
