@@ -1,6 +1,6 @@
 # BimlStudio 2019 R1 Release Notes
 
-Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1
+Significant changes between BimlStudio 2019 R1 and BimlStudio 2020 R1
 
 ## SSIS
 * Fixed issue in `ScriptComponents` where they were not emitting the right Version number, causing build errors in SSIS.
