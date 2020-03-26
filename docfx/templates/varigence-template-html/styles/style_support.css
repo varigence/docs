@@ -5777,12 +5777,14 @@ input[type="radio"]
 
 /* icon col styles */
 .icon-col {
-  width:30px; 
-  height:30px;
-  background:#EEE;
-  border:1px solid #CCC;
-  padding:3px;
-  border-radius:3px;
+  width: 30px;
+  height: 30px;
+  background: #F6F6F6 !important;
+  border: 1px solid #EEE;
+  padding: 3px;
+}
+.icon-col img {
+  padding: 0px 2px 5px 2px;
 }
 .nowrap-col {
   white-space:nowrap;
