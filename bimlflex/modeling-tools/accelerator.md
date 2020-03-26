@@ -97,10 +97,10 @@ The Accelerator shows the source and preview side-by-side with options to collap
 
 |||
 |--- |--- |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\diagram-view.svg"/></div>| Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\print.svg"/></div>| Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\refresh.svg"/></div>| Refresh the whole layout or you can change the layout as you like by dragging tables. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\publish.svg"/></div>| Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/diagram-view.svg"/></div>| Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/print.svg"/></div>| Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/refresh.svg"/></div>| Refresh the whole layout or you can change the layout as you like by dragging tables. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/publish.svg"/></div>| Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
 
 Iterating through the metadata and updating the model to better support the target Data Vault model, each time a user should set the updated metadata to be persisted to the Metadata Database. This will create all Data Vault tables and columns as well as the Source To Target mappings needed to populate the Data Vault from the chosen source.
 
@@ -160,17 +160,17 @@ By Clicking the elipsis a user may see the maximized view which contains the wor
 
 ||||
 |--- |--- |--- |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\add-reference.svg"/></div>| <span class="nowrap-col m-5">Add Reference</span> | Source action to add a reference. This can also be done by dragging a column onto the target table. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This remove the reference link, not the column. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\navigate.svg"/></div>| <span class="nowrap-col m-5">Navigate</span> | Source action to navigate to table or column. The current Accelerator layout will be persisted in memory for you to come back to. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\edit.svg"/></div>| <span class="nowrap-col m-5">Edit</span> | Source action to open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key.|
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\composite-key.svg"/></div>| <span class="nowrap-col m-5">Add Integration Key</span> | Source action to add an integration key using the selected columns. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\show-related.svg"/></div>| <span class="nowrap-col m-5">Show Related</span> | Source action to add all the related tables by interrogating the direct references. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\exclude.svg"/></div>| <span class="nowrap-col m-5">Bulk Delete</span> | Source or Preview bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive source columns. Exclude preview columns. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\split-columns.svg"/></div>| <span class="nowrap-col m-5">Spit</span> | Preview action to split columns from a Satellite. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\revert-split-columns.svg"/></div>| <span class="nowrap-col m-5">Revert Spit</span> | Preview action to revert columns that were split from a Satellite or to revert a Unit of Work. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\append-record-source.svg"/></div>| <span class="nowrap-col m-5">Append Record Source</span> | Preview action to appended record source to a Satellite name.
-|<div class="icon-col m-5"><img src="../metadata-editors/images\svg-icons\remove-record-source.svg"/></div>| <span class="nowrap-col m-5">Remove Record Source</span> | Preview action to remove appended record source from a Satellite name. 
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/add-reference.svg"/></div>| <span class="nowrap-col m-5">Add Reference</span> | Source action to add a reference. This can also be done by dragging a column onto the target table. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This action removes the reference link, not the column. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div>| <span class="nowrap-col m-5">Navigate</span> | Source action to navigate to table or column. The current Accelerator layout will be persisted in memory for you to come back to. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div>| <span class="nowrap-col m-5">Edit</span> | Source action to open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key.|
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div>| <span class="nowrap-col m-5">Add Integration Key</span> | Source action to add an integration key using the selected columns. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div>| <span class="nowrap-col m-5">Show Related</span> | Source action to add all the related tables by interrogating the direct references. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div>| <span class="nowrap-col m-5">Bulk Delete</span> | Source or Preview bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive source columns. Exclude preview columns. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/split-columns.svg"/></div>| <span class="nowrap-col m-5">Spit</span> | Preview action to split columns from a Satellite. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/revert-split-columns.svg"/></div>| <span class="nowrap-col m-5">Revert Spit</span> | Preview action to revert columns that were split from a Satellite or to revert a Unit of Work. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/append-record-source.svg"/></div>| <span class="nowrap-col m-5">Append Record Source</span> | Preview action to appended record source to a Satellite name.
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-record-source.svg"/></div>| <span class="nowrap-col m-5">Remove Record Source</span> | Preview action to remove appended record source from a Satellite name. 
 
 ### Drag and Drop Actions
 

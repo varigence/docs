@@ -4,11 +4,11 @@ title: Schema Diagram
 ---
 # Schema Diagram
 
-In this session, we discuss the Schema Diagram tool to with reference to how it provides a simple view of your data and accelerates your development tasks.
+In this document, we discuss the Schema Diagram tool with reference to how it provides a simple view of your data and accelerates your development tasks.
 
 ## Schema Diagram
 
-The Schema Diagram provides a entity relation view of any set of metadata based on the integration stage. It allows a user to get an overview of what the metadata looks like in an easy to understand view. It also helps the developer to execute the most common actions on the data in a graphical interface.
+The Schema Diagram provides an entity relation view of any set of metadata based on the integration stage. It allows a user to get an overview of what the metadata looks like in an easy to understand view. It also helps the developer to execute the most common actions on the data in a graphical interface.
 
 ### Starting Point
 
@@ -34,7 +34,7 @@ As such the Context Aware Actions are slightly different than the Accelerator Ac
 
 ### Context Aware Actions
 
-There are convenience actions available on most of the tables and columns in both the source and preview panes.
+There are convenience actions available on most of the tables and columns.
 
 By clicking on a Table or Column a user gets a pop up of all the actions buttons available. The first click will show a minimized view with only the icons with tooltips.
 
@@ -46,15 +46,15 @@ By Clicking the elipsis a user may see the maximized view which contains the wor
 
 ||||
 |--- |--- |--- |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\add-reference.svg"/></div>| <span class="nowrap-col m-5">Add Reference</span> | Add a reference. This can also be done by dragging a column onto the target table. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This remove the reference link, not the column. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\navigate.svg"/></div>| <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current Schema Diagram layout will be persisted in memory for you to come back to. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\edit.svg"/></div>| <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key.|
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\composite-key.svg"/></div>| <span class="nowrap-col m-5">Add Integration Key</span> | Add an integration key using the selected columns. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\show-related.svg"/></div>| <span class="nowrap-col m-5">Show Related</span> | Add all the related tables to the view by interrogating the direct references. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\exclude.svg"/></div>| <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive the selected columns. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\create-pit.svg"/></div>| <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE"><img src="../metadata-editors/images\svg-icons\create-bridge.svg"/></div>| <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/add-reference.svg"/></div>| <span class="nowrap-col m-5">Add Reference</span> | Add a reference. This can also be done by dragging a column onto the target table. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This action removes the reference link, not the column. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div>| <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current Schema Diagram layout will be persisted in memory for you to come back to. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div>| <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key.|
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div>| <span class="nowrap-col m-5">Add Integration Key</span> | Add an integration key using the selected columns. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div>| <span class="nowrap-col m-5">Show Related</span> | Add all the related tables to the view by interrogating the direct references. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div>| <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive the selected columns. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/create-pit.svg"/></div>| <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/create-bridge.svg"/></div>| <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
 
 Note the new Actions available on the Raw Data Vault Hubs.
 
@@ -72,7 +72,7 @@ By dragging and dropping certain columns or tables users can affect the metadata
 Tables can be dragged around on the screen to make the layout easier to view. There are four ways to drag tables around.
 
 1. Drag - Drag an individual table to another location
-1. Ctrl Drag - Drag a Hub and it's Satellites
+1. Ctrl Drag - Drag a Hub and its Satellites
 1. Shift Drag - Drag all selected tables and their Satellites
 1. Ctrl+Shift Drag - Drag all selected tables and their referenced tables and Satellites
 

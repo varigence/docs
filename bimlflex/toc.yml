@@ -33,13 +33,13 @@
   - name: Concepts
     href: concepts/toc.yml
 
-  - name: Implementation Guides
+  - name: Scenarios
     href: implementation-guides/toc.yml
 
   - name: Support
     href: support/toc.yml
 
-  - name: Reference Documentation
+  - name: Reference Docs
     href: reference-documentation/toc.yml
 
   - name: Tips And Tricks

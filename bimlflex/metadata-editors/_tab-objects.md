@@ -4,17 +4,10 @@
 
 |Icon|Action|Description|Additional Dialog|
 |-|-|-|-|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/add.svg" /></div>|Add|[Add] will add a new `Object` to the `Batch`.|[Add Object](#Add-Object-Dialog-Box)|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|Save|[Save] will save the currently set of staged changes.  The [Save] button is will only enable if any `Object` has changes staged and there are no major validation issues with the current list of `Object` properties.||
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|[Archive] will `hard delete` the selected `Object`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|[Archive Objects](#Archive-Object-Dialog-Box)|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|[Refresh] will trigger a refresh of the metadata for the selected list of `Objects`.||
-
->[!WARNING]
-> Archive:  
-> Archiving is a permanent removal of the selected entity from it's associated table in the metadata database.  The best practice is to first use the [Deleted] flag to `soft delete` if you need to remove an entity.  [Archive] should only be used in the case that both:
->
-> 1. The only fix to the current issue requires the [Archive] of the selected entity.
-> 2. The full implications that the removing of the selected entity from the metadata system will cause.
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="images/svg-icons/add.svg" /></div>|<span class="nowrap-col m-5">Add</span>|[Add] will add a new `Object` to the `Batch`.|[Add Object](#Add-Object-Dialog-Box)|
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="images/svg-icons/save.svg" /></div>|<span class="nowrap-col m-5">Save</span>|[Save] will save the currently set of staged changes.  The [Save] button is will only enable if any `Object` has changes staged and there are no major validation issues with the current list of `Object` properties.||
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|[Archive] will `hard delete` the selected `Object`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|[Archive Objects](#Archive-Object-Dialog-Box)|
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="images/svg-icons/refresh.svg" /></div>|<span class="nowrap-col m-5">Refresh</span>|[Refresh] will trigger a refresh of the metadata for the selected list of `Objects`.||
 
 ### Additional Dialogs
 

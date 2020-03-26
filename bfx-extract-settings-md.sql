@@ -1,51 +1,56 @@
 SET NOCOUNT ON; 
 
 IF OBJECT_ID('tempdb..#MD') IS NOT NULL DROP TABLE #MD;
-CREATE TABLE #MD ([md]	NVARCHAR(MAX))
+CREATE TABLE #MD ([row] INT IDENTITY(1,1),
+                  [md]	NVARCHAR(MAX))
 
-DECLARE	 @displayGrouping	NVARCHAR(50)
-		,@displayHeading	NVARCHAR(MAX) = ''
+DECLARE	@displayGrouping NVARCHAR(50)
 
-DECLARE insert_cursor CURSOR FOR  
+DECLARE @groupings TABLE(
+     [SettingDisplayGrouping] NVARCHAR(50)
+     )
+
+INSERT INTO @groupings
 SELECT	DISTINCT [SettingDisplayGrouping]
 FROM	[app].[Settings]
 ORDER BY [SettingDisplayGrouping]
 
-OPEN insert_cursor   
-FETCH NEXT FROM insert_cursor INTO @displayGrouping
 
-WHILE @@FETCH_STATUS = 0   
-BEGIN   
+WHILE (SELECT COUNT([SettingDisplayGrouping]) FROM @groupings) > 0
+BEGIN  
+	SELECT @displayGrouping = MIN([SettingDisplayGrouping]) FROM @groupings
+
 	IF OBJECT_ID('tempdb..#SETTING') IS NOT NULL DROP TABLE #SETTING;
-	SELECT	[SettingKey], [Description]
+	SELECT	[SettingDisplayGrouping], [SettingKey], [Description]
 	INTO	#SETTING
 	FROM	[app].[Settings]
 	WHERE	[CustomerUID] = '00000000-0000-0000-0000-000000000000' 
 		AND [VersionUID] = '00000000-0000-0000-0000-000000000000'
 		AND	[SettingDisplayGrouping] = @displayGrouping
-	ORDER BY [SettingDisplayOrder]
+	ORDER BY [SettingDisplayGrouping], [SettingDisplayOrder]
 
-	INSERT INTO #MD ([md])
-	SELECT	'### ' + @displayGrouping AS [md]
-	UNION ALL
-	SELECT	'' AS [md]
-	UNION ALL
-	SELECT	'| Setting Key                              | Setting Description                                                              |'  AS [md]
-	UNION ALL
-	SELECT	'| ---------------------------------------- | -------------------------------------------------------------------------------- |' AS [md]
-	UNION ALL
-	SELECT	'| ' + COALESCE(CAST([SettingKey] AS CHAR(40)),'') +
-			' | ' + REPLACE(COALESCE(CAST([Description] AS VARCHAR(2000)),''), '"', '`') +
-			' |' AS [md]
-	FROM	#SETTING
-	UNION ALL 
-	SELECT	'' AS [md]
-	
-	FETCH NEXT FROM insert_cursor INTO @displayGrouping
+	IF EXISTS(Select * FROM #SETTING)
+	BEGIN
+		INSERT INTO #MD ([md])
+		SELECT	'### ' + ISNULL(@displayGrouping, 'No Group') AS [md]
+		UNION ALL
+		SELECT	'' AS [md]
+		UNION ALL
+		SELECT	'| Setting Key                              | Setting Description                                                              |'  AS [md]
+		UNION ALL
+		SELECT	'| ---------------------------------------- | -------------------------------------------------------------------------------- |' AS [md]
+		UNION ALL
+		SELECT  '| ' + COALESCE(CAST([SettingKey] AS CHAR(40)),'') +
+				' | ' + REPLACE(REPLACE(COALESCE(CAST([Description] AS VARCHAR(2000)),''), '"', '`'), '  ', ' ') +
+				' |' AS [md]
+		FROM	#SETTING
+		UNION ALL 
+		SELECT	'' AS [md]
+	END
+
+	DELETE FROM @groupings WHERE [SettingDisplayGrouping] = @displayGrouping
 END   
 
-CLOSE insert_cursor   
-DEALLOCATE insert_cursor
-
-SELECT *
+SELECT md
 FROM #MD
+order by [row]

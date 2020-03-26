@@ -471,7 +471,7 @@ $('.header-search-icon').click(function () {
   }
 
   function renderSidebar() {
-    var sidetoc = $('#sidetoggle .sidetoc')[0];
+    var sidetoc = $('.sidetoc')[0];
     if (typeof (sidetoc) === 'undefined') {
       loadToc();
     } else {
@@ -498,10 +498,14 @@ $('.header-search-icon').click(function () {
 
     function registerTocEvents() {
       $('.toc .nav > li > .expand-stub').click(function (e) {
-        $(e.target).parent().toggleClass(expanded);
+        var clickedItem = $(e.target).parent();
+        clickedItem.siblings().removeClass(expanded);
+        clickedItem.toggleClass(expanded);
       });
       $('.toc .nav > li > .expand-stub + a:not([href])').click(function (e) {
-        $(e.target).parent().toggleClass(expanded);
+        var clickedItem = $(e.target).parent();
+        clickedItem.siblings().removeClass(expanded);
+        clickedItem.toggleClass(expanded);
       });
       $('#toc_filter_input').on('input', function (e) {
         var val = this.value;
@@ -559,7 +563,7 @@ $('.header-search-icon').click(function () {
         return;
       }
       tocPath = tocPath.replace(/\\/g, '/');
-      $('#sidetoc').load(tocPath + " #sidetoggle > div", function () {
+      $('#sidetoc').load(tocPath + " div", function () {
         var index = tocPath.lastIndexOf('/');
         var tocrel = '';
         if (index > -1) {
