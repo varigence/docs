@@ -6,13 +6,11 @@ title: BimlFlex Tour
 
 The following sections describe the UI elements that make up an Entity Editor and how the features provided navigation and interaction.
 
-## Staring Window
-
 [//]: # (TODO: Maybe snip a starting window?)
 
 ## BimlFlex Title Bar
 
-[//]: # (TODO: Button Intro)
+The [BimlFlex Title Bar] holds links to most of the higher level system configurations.  The current `Customer` and `Versions` is also displayed in the top right corner and be switched at any time by clicking the appropriate values.
 
 **BimlFlex Title Bar**  
 ![BimlFlex Menu](images/bimlflex-app-title-bar.png "BimlFlex Menu")
