@@ -41,9 +41,9 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 |[Mapped To Data Type]|The `Data Type Mapping` this type is mapped to.  If this value is populated then this `Data Type Mapping` will use the values specified by the [Mapped To Data Type].|Dropdown (Existing `Data Type Mappings`)|
 |[Data Type]|The type of data stored in this column using the [[Unified System Types]](unified-system-types.md).  Additional logic is required to cater for data types with a 'CustomType' like [hierarchyid].|[Dropdown](#Data-Type-Dropdown)|
 |[Default]|The DEFAULT value that should be used when a value is not received.  Be sure to verify that the value listed her is valid for the specified [Length], [Precision] or [Scale].|String|
-|[Length]|Only applicable for a [Data Type] that requires a this specification.  If the `Data Type Mapping` does not have a [Mapped To Data Type] and [Is Master] then this value represents the value to be used when a column is created using this `Data Type Mapping`.  If the `Data Type Mapping` has a [Mapped To Data Type] then it is the maximum value that will included when mapping to the [Mapped To Data Type].  Not that when there are multiple mappings for the same [Data Type] the lowest values are checked first.|Integer|[See Detailed Example](#Ranged-Values-Detailed-Examples)|
-|[Precision]|Only applicable for a [Data Type] that requires a this specification.  If the `Data Type Mapping` does not have a [Mapped To Data Type] and [Is Master] then this value represents the value to be used when a column is created using this `Data Type Mapping`.  If the `Data Type Mapping` has a [Mapped To Data Type] then it is the maximum value that will included when mapping to the [Mapped To Data Type].  Not that when there are multiple mappings for the same [Data Type] the lowest values are checked first.|Integer|[See Detailed Example](#Ranged-Values-Detailed-Examples)|
-|[Scale]|Only applicable for a [Data Type] that requires a this specification.  If the `Data Type Mapping` does not have a [Mapped To Data Type] and [Is Master] then this value represents the value to be used when a column is created using this `Data Type Mapping`.  If the `Data Type Mapping` has a [Mapped To Data Type] then it is the maximum value that will included when mapping to the [Mapped To Data Type].  Not that when there are multiple mappings for the same [Data Type] the lowest values are checked first.|Integer|[See Detailed Example](#Ranged-Values-Detailed-Examples)|
+|[Length]|Only applicable for a [Data Type] that requires a this specification.  If the `Data Type Mapping` does not have a [Mapped To Data Type] and [Is Master] then this value represents the value to be used when a column is created using this `Data Type Mapping`.  If the `Data Type Mapping` has a [Mapped To Data Type] then it is the maximum value that will included when mapping to the [Mapped To Data Type].  Not that when there are multiple mappings for the same [Data Type] the lowest values are checked first.|Integer||
+|[Precision]|Only applicable for a [Data Type] that requires a this specification.  If the `Data Type Mapping` does not have a [Mapped To Data Type] and [Is Master] then this value represents the value to be used when a column is created using this `Data Type Mapping`.  If the `Data Type Mapping` has a [Mapped To Data Type] then it is the maximum value that will included when mapping to the [Mapped To Data Type].  Not that when there are multiple mappings for the same [Data Type] the lowest values are checked first.|Integer||
+|[Scale]|Only applicable for a [Data Type] that requires a this specification.  If the `Data Type Mapping` does not have a [Mapped To Data Type] and [Is Master] then this value represents the value to be used when a column is created using this `Data Type Mapping`.  If the `Data Type Mapping` has a [Mapped To Data Type] then it is the maximum value that will included when mapping to the [Mapped To Data Type].  Not that when there are multiple mappings for the same [Data Type] the lowest values are checked first.|Integer||
 |[Ordinal]|This value is used to determine the default sort order when populating the navigation/value pane on the right side of the screen.|Integer|
 |[System Type]|If unspecified the `Data Type Mapping` will be used/applied to all system types.  When specified, defines the [System Type] that is required in order to apply the `Data Type Mapping`.  This is commonly used to control the mapping of more complex data types such as Date and DateTime variants as syntax and functions differ from system to system.|[Dropdown](#System-Type-Dropdown)|
 |[SQL Source Expression]|SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.|String|`CONVERT(VARCHAR(27), @@this, 121)`|
@@ -61,11 +61,13 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 [//]: # (TODO: Create or link to a Unified System Types guide.)
 [//]: # (TODO: Outline or link to configuration of a Data Type = 'CustomType'.)
 
-### Detailed Examples
+[//]: # (TODO: Circle back and outline some examples of the follow: Proper use of [Mapped To Data Type], Examples of using proper and improper [DEFAULT], Example for each 'Expression', examples of each 'SQL' column, [Column Alias] usage, Ranged values and qualifying mapping i.e. [Length], [Precision], [Scale].  Once completed set an Anchor Link in the table above.)
 
-Examples that can better communicate usage of more complex concepts are included below.  
+[//]: # (### Detailed Examples)
 
-#### Ranged Values Detailed Examples
+[//]: # (Examples that can better communicate usage of more complex concepts are included below.  )
+
+[//]: # (#### Ranged Values Detailed Examples)
 
 [//]: # (TODO: Create a more detail example of [Length] usage and qualification.)
 
