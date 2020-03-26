@@ -13,53 +13,6 @@ The following sections describe the UI elements of the Batches Editor and how th
 **Batches Editor**  
 ![BimlFlex App - Batches](images/bimlflex-app-batches.png "BimlFlex App - Batches")
 
-### Batch Navigation
-
-The navigation list enumerates all batches for the current Customer and Version that have not been deleted or archived. To filter or search the batches based on name, hover over the header and click the hamburger button. Click on the name of the desired batch to open its details editor pane.
-
-**Batch Navigation Pane**  
-![BimlFlex App - Batches - Navigation](images/bimlflex-app-batches-navigation.png "BimlFlex App - Batches - Navigation")
- 
-[Add](images/svg-icons/add.svg)
-
-|Icon|Action|Description|
-|-|-|-|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/add.svg" /></div>|Add Action|[Add] will start a new to the `Batch` in the [Details Tab].  Once the required information is entered click [Save Action Button] to add the new `Batch` to the list.|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/expanded.svg" /></div>|Collapse Action|[Collapse] will hide the [Batch Navigation Pane].|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/collapsed.svg" /></div>|Expand Action|[Expand] will reveal the [Batch Navigation Pane] after it has been hidden.|
-
-Below the Navigation Action Buttons are a list of `Batches` available for selection.  The highlighted `Batch` indicates the `Batch` that is currently selected.
-
-[//]: # (TODO: Add Filter/Hamburger Instructions.)
-
-### Action Buttons
-
-[Action Buttons] list the actions available within the currently selected [Tab].  All [Action Buttons] are context specific to the currently selected [Tab].  Functions of each of the [Action Buttons] are outlined in their appropriate section(s) below.
-
-**Tab Action Buttons**  
-![BimlFlex App - Batches - Actions](images/bimlflex-app-batches-actions.png "BimlFlex App - Batches - Actions")
-
-### Tabs
-
-[Tabs] can be used to switch between maintenance of the select `Batch` or provide multiple views of an associated `Object` or `Attribute`.  
-
-**Tabs**  
-![BimlFlex App - Batches - Tabs](images/bimlflex-app-batches-tabs.png "BimlFlex App - Batches - Tabs")
-
-#### Tab - Single Form w/Fields or Table
-
-Some [Tabs] only have a single view with either a list of fields of a table with a list of associated entities.  These [Fields] or [Tables] are context dependant and are outlined in the appropriate section(s) below.  Regardless of whether a [Table] or [Field] is displayed, either can be edited from the viewing form.  [Fields] can often be edited by simply clicking in the selected field while a [Table] requires a user to double-click on the value the user wants to edit.
-
-**Single Form**  
-![BimlFlex App - Batches - Single Form](images/bimlflex-app-batches-tabs-single-form-and-fields.png "BimlFlex App - Batches - Single Form")
-
-#### Tab - Form w/Views
-
-When a [Tab] has multiple views that may be used, an oval selector will appear listing out alternative views.  The active view is highlighted and can be changed by clicking another available option.  The alternate views only change what properties of an entity are visible/editable and will not filter, remove or resort the underlining list of entities.  As with a [Single Form], tables values can be edited by double-clicking the desired property.
-
-**Form w/Views**  
-![BimlFlex App - Batches - Form with Views](images/bimlflex-app-batches-tabs-subforms-and-tables.png "BimlFlex App - Batches - Form with Views")
-
 ## Details Tab
 
 The [Details Tab] focuses on general batch information and configuration.  This [Tab] is used to define and create the `Batch` itself.
