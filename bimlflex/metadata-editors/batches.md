@@ -113,14 +113,9 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 |[Use Ssis Express]|Set this value to `true` when extracting data from a source that only has SQL Server Express installed. Note that with SSIS Express there is limited functionality.|Boolean|
 |[Use Orchestration]|BimlFlex comes with an orchestration framework that will control the ability to restart a failed batch. Set this attribute to `false` if you would like to bypass the default behavior.|Boolean|
 
-### Dropdowns
+### Constrained Lists
 
-#### Precedence Constraint Dropdown
-
-|Value|Definition|
-|-|-|
-|Success|Automatically create precedence constraints so that tasks will run only run one after the other if the prior tasks are successful.|
-|Completion|Automatically create precedence constraints so that tasks will run run one after the other after they are completed irregardless of whether they succeed or fail.|
+[!include[Precedence Constraint Constrained List](_enum-precedence-constraint.md)]
 
 ## Objects Tab
 
