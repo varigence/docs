@@ -14,7 +14,7 @@ Connections provide the information required to connect to data sources. It also
 |--- |--- |--- |
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/save.svg"/></div>| <span class="nowrap-col m-5">Save</span> | Save changes. Ctrl+S shortcut available.|
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/duplicate-objects.svg"/></div>| <span class="nowrap-col m-5">Duplicate</span> | Duplicate connection.|
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/archive-delete.svg"/></div>| <span class="nowrap-col m-5">Archive</span> | Archive Connection.  - [More info](../concepts/_dialog-archiveimporting-metadata. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/archive-delete.svg"/></div>| <span class="nowrap-col m-5">Archive</span> | Archive Connection.|
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/import-metadata.svg"/></div>| <span class="nowrap-col m-5">Import Metadata</span> | Import Metadata from Source Database - [More info](../concepts/importing-metadata.md).|
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/refresh.svg"/></div>| <span class="nowrap-col m-5">Refresh</span> | Refresh clears all changes.|
 
@@ -39,4 +39,16 @@ Connections provide the information required to connect to data sources. It also
 
 ## Tab Details
 
-[//]: # (TODO: Include Tab Details)
+## Objects Tab
+
+The [Objects Tab] provides quick access to all `Objects` included in the `Connection`.
+
+[!include[Objects Tab](_tab-objects.md)]
+
+## Attributes Tab
+
+The [Attributes Tab] provides a view of any `Configurations` or `Settings` overrides that have been applied to the selected `Connection`.  
+
+[!include[Attributes Tab](_tab-attributes.md)]
+
+[//]: # (TODO: Include Parameters Tab)
