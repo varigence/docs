@@ -1,6 +1,13 @@
 #### Archive Batch Dialog Box  
 
-![Archive Batch Dialog Box](images/bimlflex-app-dialog-archive-batch.png "Archive Batch Dialog Box")  
+Confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the [Ok] button.
+
+<img 
+    src="images/bimlflex-app-dialog-archive-batch.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Archive Selected Batch Dialog Box" 
+/>
 
 >[!WARNING]
 > Archive:  

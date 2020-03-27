@@ -1,6 +1,13 @@
-#### Archive Attribute Dialog Box  
+#### Archive Object Dialog Box  
 
-![Archive Attribute Dialog Box](images/bimlflex-app-dialog-archive-attribute-list.png "Archive Attribute Dialog Box")  
+Confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the [Ok] button.
+
+<img 
+    src="images/bimlflex-app-dialog-archive-object-list.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Archive Multiple Objects Dialog Box" 
+/>
 
 >[!WARNING]
 > Archive:  

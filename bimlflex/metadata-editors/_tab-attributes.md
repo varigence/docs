@@ -14,7 +14,7 @@
 
 [!include[Edit Attribute Dialog Box](_dialog-edit-attribute.md)]
 
-[!include[Archive Attribute Dialog Box](_dialog-archive-attribute.md)]
+[!include[Archive Attribute Dialog Box](_dialog-archive-attribute-list.md)]
 
 ### Attributes Tab - Table Descriptions
 

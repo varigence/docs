@@ -13,7 +13,7 @@
 
 [!include[Add Object Dialog Box](_dialog-add-object.md)]
 
-[!include[Archive Object Dialog Box](_dialog-archive-object.md)]
+[!include[Archive Object Dialog Box](_dialog-archive-object-list.md)]
 
 ### Objects Tab - Views
 
