@@ -11,11 +11,11 @@ BimlFlex `Data Type Mappings` provide the ability to map Data Types from a sourc
 The following sections describe the UI elements of the Data Type Mappings Editor and how they are used to author and manage BimlFlex `Data Type Mappings`.
 
 **Data Type Mappings Editor**  
-![BimlFlex App - Batches](images/bimlflex-app-data-type-mappings.png "BimlFlex App - Batches")
+![Data Type Mappings Editor](images/bimlflex-app-data-type-mappings.png "Data Type Mappings Editor")
 
-### Action Buttons
+## Action Buttons
 
-![BimlFlex App - Batches - Details Tab - Actions](images/bimlflex-app-data-type-mappings-actions.png "BimlFlex App - Batches - Details Tab - Actions")
+![Data Type Mapping Editor Action Buttons](images/bimlflex-app-data-type-mappings-actions.png "Data Type Mapping Editor Action Buttons")
 
 |Icon|Action|Description|Additional Dialog|
 |-|-|-|-|
@@ -26,20 +26,19 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 
 [//]: # (TODO: Find a switch SVG to use for Deleted)
 
-### Additional Dialogs
+## Additional Dialogs
 
 [!include[Apply Data Type Mappings Dialog Box](_dialog-apply-data-type-mappings.md)]
 
-### Fields
+## Fields
 
 ![Data Type Mappings Fields](images/bimlflex-app-data-type-mappings-fields.png "Data Type Mappings Fields")
-
 
 |Field|Description|Validation|Example|
 |-|-|-|-|
 |[Data Type Mapping]|Name of the `Data Type Mapping`.|String|
 |[Mapped To Data Type]|The `Data Type Mapping` this type is mapped to.  If this value is populated then this `Data Type Mapping` will use the values specified by the [Mapped To Data Type].|Dropdown (Existing `Data Type Mappings`)|
-|[Data Type]|The type of data stored in this column using the [[Unified System Types]](unified-system-types.md).  Additional logic is required to cater for data types with a 'CustomType' like [hierarchyid]|[Constrained-List](#Data-Type-Constrained-List)|
+|[Data Type]|The type of data stored in this column using the [Unified System Types].  Additional logic is required to cater for data types with a 'CustomType' like [hierarchyid].|[Constrained-List](#Data-Type-Constrained-List)|
 |[Default]|The DEFAULT value that should be used when a value is not received.  Be sure to verify that the value listed her is valid for the specified [Length], [Precision] or [Scale].|String|
 |[Length]|Only applicable for a [Data Type] that requires a this specification.  If the `Data Type Mapping` does not have a [Mapped To Data Type] and [Is Master] then this value represents the value to be used when a column is created using this `Data Type Mapping`.  If the `Data Type Mapping` has a [Mapped To Data Type] then it is the maximum value that will included when mapping to the [Mapped To Data Type].  Not that when there are multiple mappings for the same [Data Type] the lowest values are checked first.|Integer||
 |[Precision]|Only applicable for a [Data Type] that requires a this specification.  If the `Data Type Mapping` does not have a [Mapped To Data Type] and [Is Master] then this value represents the value to be used when a column is created using this `Data Type Mapping`.  If the `Data Type Mapping` has a [Mapped To Data Type] then it is the maximum value that will included when mapping to the [Mapped To Data Type].  Not that when there are multiple mappings for the same [Data Type] the lowest values are checked first.|Integer||
@@ -58,7 +57,7 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 |[Convert Source Type]||Boolean|
 
 [//]: # (TODO: Get clarification on [Convert Source Type], [Column Alias], [SQL Source Expression], [SQL Target Expression], [SQL Target To Data Type] and [SQL Target To String].)
-[//]: # (TODO: Create or link to a Unified System Types guide.)
+[//]: # (TODO: Create or link to a Unified System Types guide. [unified-system-types.md])
 [//]: # (TODO: Outline or link to configuration of a Data Type = 'CustomType'.)
 
 [//]: # (TODO: Circle back and outline some examples of the follow: Proper use of [Mapped To Data Type], Examples of using proper and improper [DEFAULT], Example for each 'Expression', examples of each 'SQL' column, [Column Alias] usage, Ranged values and qualifying mapping i.e. [Length], [Precision], [Scale].  Once completed set an Anchor Link in the table above.)
@@ -71,7 +70,7 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 
 [//]: # (TODO: Create a more detail example of [Length] usage and qualification.)
 
-### Constrained Lists
+## Constrained Lists
 
 [!include[Data Type Constrained List](_enum-data-type.md)]
 
