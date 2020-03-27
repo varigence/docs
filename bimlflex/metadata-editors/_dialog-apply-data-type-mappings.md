@@ -3,7 +3,12 @@
 From here you can apply your `Data Type Mappings` to an individual `Record Source`.  Select your `Record Source` from the dropdown, enable the options you want and click [Apply].  Defaults should be acceptable for most cases but options are provided to support use cases where you may only be concerned with a particular property.
 
 <br/>
-<img src="images/bimlflex-app-dialog-apply-data-type-mappings.png" class="border-image image-width-100" style="border: 1px solid #CCC;" title="Apply Data Type Mappings Dialog Box" />
+<img 
+    src="images/bimlflex-app-dialog-apply-data-type-mappings.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Apply Data Type Mappings Dialog Box" 
+/>
 
 **Apply Data Type Mapping Options**
 
