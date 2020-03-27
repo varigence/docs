@@ -13,7 +13,12 @@ The following sections describe the UI elements that make up an Entity Editor an
 The [BimlFlex Title Bar] holds links to most of the higher level system configurations.  The current `Customer` and `Versions` is also displayed in the top right corner and be switched at any time by clicking the appropriate values.  
 
 **BimlFlex Title Bar**  
-![BimlFlex Menu](images/bimlflex-app-title-bar.png "BimlFlex Menu")  
+<img 
+    src="images/bimlflex-app-title-bar.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="BimlFlex Title Bar" 
+/>
 
 |Icon|Action|Description|Relevant Article|
 |-|-|-|-|
@@ -34,7 +39,12 @@ The [BimlFlex Title Bar] holds links to most of the higher level system configur
 The BimlFlex Menu provide quick navigation to the available editors and modeling tools.  The menu is dynamic and automatically expands and hides based on the current size of the application window.  If the menu is hidden you can use the button annotated below to open.  
 
 **BimlFlex Menu**  
-![BimlFlex Menu](images/bimlflex-app-menu.png "BimlFlex Menu")  
+<img 
+    src="images/bimlflex-app-menu.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="BimlFlex Menu" 
+/>
 
 ## BimlFlex Metadata Editor Layout  
 
@@ -56,7 +66,12 @@ BimlFlex features a breadcrumb navigation to easily raise your view to a higher 
 The Editor Action Buttons provide quick access to common useful features managing the collection of the associated entity type.  As noted previously, available actions can vary from editor to editor but the ability to [Add] and [Collapse/Expand] are generally ubiquitous across them all.  
 
 **Editor Action Buttons**  
-![BimlFlex Editor Action Buttons](images/bimlflex-app-editor-actions.png "BimlFlex Editor Action Buttons")  
+<img 
+    src="images/bimlflex-app-editor-actions.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="BimlFlex Editor Action Buttons" 
+/>
 
 |Icon|Action|Description|
 |-|-|-|-|
@@ -71,10 +86,20 @@ The Editor Action Buttons provide quick access to common useful features managin
 The entity list enumerates all of the available entities for the current filter context.  When and editor is opened through the BimlFlex Menu the default action is to open without and filter context, exposing all the the given entity type.  When an editor is opened via a [Navigation Transition] generally a context for the entities `Project` or `Connection` is applied, but ultimately may vary based on the transitional context.  The amount and availability of the the columns is determined by the editor being used.  
 
 **Entity List - Single Column**  
-![Entity List - Single Column](images/bimlflex-app-editor-list-single.png "Entity List - Single Column")  
+<img 
+    src="images/bimlflex-app-editor-list-single.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Entity List - Single Column" 
+/>
 
 **Entity List - Multi Column**  
-![Entity List - Multi Column](images/bimlflex-app-editor-list-multi.png "Entity List - Multi Column")  
+<img 
+    src="images/bimlflex-app-editor-list-multi.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Entity List - Multi Column" 
+/>
 
 |Icon|Action|Description|
 |-|-|-|-|
