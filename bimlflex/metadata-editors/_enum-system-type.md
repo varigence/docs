@@ -1,4 +1,4 @@
-#### System Type Dropdown
+#### System Type Constrained List
 
 |Value|Definition|
 |-|-|

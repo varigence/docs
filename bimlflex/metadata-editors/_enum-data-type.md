@@ -1,4 +1,4 @@
-#### Data Type Dropdown
+#### Data Type Constrained List
 
 |Value|Definition|
 |-|-|
