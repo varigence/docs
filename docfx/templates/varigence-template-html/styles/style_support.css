@@ -5785,6 +5785,8 @@ input[type="radio"]
 }
 .icon-col img {
   padding: 0px 2px 5px 2px;
+  color:#555 !important;
+  filter: brightness(0%) contrast(0%) grayscale(100%);
 }
 .nowrap-col {
   white-space:nowrap;
@@ -5833,7 +5835,35 @@ input[type="radio"]
   .p-30 {
     padding: 30px;
  }
-  
+
+.bordered-image {
+  border: 1px solid #CCC;
+}
+ 
+.image-width-10 {
+ width:10%
+}
+.image-width-20 {
+  width:20%
+} 
+.image-width-25 {
+  width:25%
+}
+.image-width-33 {
+  width:33%
+}
+.image-width-50 {
+  width:50%
+}
+.image-width-66 {
+  width:66%
+}
+.image-width-75 {
+  width:75%
+}
+.image-width-100 {
+  width:100%
+}
 
 /*# sourceMappingURL=style_support.css.map */
 
