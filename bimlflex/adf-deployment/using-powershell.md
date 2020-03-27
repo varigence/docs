@@ -6,9 +6,10 @@ You have generated your Azure Data Factory (ADF) assets, and are ready to deploy
 
 ## Prerequisites
 
-You need to ensure that you have your `arm_template.json` and `arm_template_parameters.json` files in your project's output folder. The path will look like this :        `...\output\DataFactories\\<Setting.AzureDataFactoryName>\arm_template.json`
-
-   > <Setting.AzureDataFactoryName> Default = `BimlFlex`
+You need to ensure that you have your **arm_template.json** and **arm_template_parameters.json** files in your project's output folder. The path will look like this: 
+` ...\output\DataFactories\\<Setting.AzureDataFactoryName>\arm_template.json`
+   >[!NOTE]
+   > The default value for <Setting.AzureDataFactoryName> is **BimlFlex**.
 
 Unless you use the Azure Cloud Shell to deploy templates, then you also need to [install Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps) and [connect to Azure](https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount).
 
@@ -16,14 +17,15 @@ Unless you use the Azure Cloud Shell to deploy templates, then you also need to 
 
 In order to deploy your ARM template to your resource group, you need to use the following command:
 
-```
+```powershell
 New-AzResourceGroupDeployment -Name <Name> -ResourceGroupName <YourResourceGroupName> -TemplateFile <arm_template.json path> -TemplateParameterFile <arm_template_parameters.json path>.json
 ```
-
-    **Name** = The name of your deployment.
-    **ResourceGroupName** = The resource group that you would like to deploy the ADF assets to.
-    **TemplateFile** = The arm_template.json file path that we obtained earlier.
-    **TemplateParameterFile** = The arm_template_parameter.json file path that we obtained earlier.
+|Property|Description|
+|-|-|
+|Name|The name of your deployment.|
+|ResourceGroupName| The resource group that you would like to deploy the ADF assets to.|
+|TemplateFile| The arm_template.json file path that we obtained earlier.|
+|TemplateParameterFile| The arm_template_parameter.json file path that we obtained earlier.
 
 Once you run this command you will see output similar to:
 

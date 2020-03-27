@@ -9,49 +9,79 @@ You have generated your Azure Data Factory (ADF) assets, and are ready to deploy
 1. Go to the [Azure Portal](https://portal.azure.com).
 
 1. Navigate to [Deploy a custom template](https://portal.azure.com/#create/Microsoft.Template).
+    <br/>
+<img 
+    src="images/deploy-a-custom-template.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Apply Data Type Mappings Dialog Box" 
+/>
 
-   ![image.png](images/deploy-a-custom-template.png)
+1. Click **Build your own temple in the editor**
+    <br/>
+<img 
+    src="images/build-your-own-template.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Apply Data Type Mappings Dialog Box" 
+/>
 
-1. Click [Build your own temple in the editor]
-
-    ![image.png](images/build-your-own-template.png)
-
-1. Click [Load File]
-
-   ![image.png](images/load-template.png)
+1. Click **Load File**
+   <br/>
+<img 
+    src="images/load-template.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Apply Data Type Mappings Dialog Box" 
+/>
 
 1. Navigate, within your output folder, to:
 
-`...\output\DataFactories\\<Setting.AzureDataFactoryName>\arm_template.json`
+      ` ...\output\DataFactories\<Setting.AzureDataFactoryName>\arm_template.json`
 
-   > <Setting.AzureDataFactoryName> Default = `BimlFlex`
 
-1. Click [Save].
+> [!NOTE]
+   > The default value for <Setting.AzureDataFactoryName> is **BimlFlex**
 
-1. Click [Edit parameters].
+1. Click **Save**.
 
-   ![image.png](images/edit-parameters.png)
+1. Click **Edit parameters**.
+       <br/>
+<img 
+    src="images/edit-parameters.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Apply Data Type Mappings Dialog Box" 
+/>
 
-1. Click [Load File].
+1. Click **Load File**.
+  <br/>
+<img 
+    src="images/load-param-file.png" 
+    class="border-image image-width-100" 
+    style="border: 1px solid #CCC;" 
+    title="Apply Data Type Mappings Dialog Box" 
+/>
+    > [!NOTE]
+    > Remember the value for the **keyVaultName**.  We will need to update BimlFlex with this value after deployment.
 
-   ![image.png](images/load-param-file.png)
+1. Navigate to:
+    
+     `...\output\DataFactories\\<Setting.AzureDataFactoryName>\arm_template_parameters.json`
 
-   > Remember the value for the `keyVaultName`.  We will need to update BimlFlex with this value after deployment.
+1. Click **Save**.
 
-1. Navigate to `...\output\DataFactories\\<Setting.AzureDataFactoryName>\arm_template_parameters.json`.
+1. Choose **Resource Group**.
 
-1. Click [Save].
+1. Review and agree to the terms and conditions.
 
-1. Choose `Resource Group`.
+1. Click **Purchase**.
 
-1. Check [I agree to the terms and conditions stated above].
-
-1. Click [Purchase].
-
-1. Wait for Deployment to complete.
+1. Wait for deployment to complete.
 
 Once deployment has completed, you can go to your resource group, and verify that your Data Factory was created and is deployed.
 
- > Your Data Factory will be named something like `ADF-<HashKey>` or the `Settings.AzureDataFactoryName`. 
+   >[!NOTE]
+   > Your Data Factory will be either be named `ADF-<HashKey>` or it will use the `Settings.AzureDataFactoryName`. 
 
 You have now successfully deployed your ADF assets using the Azure Portal. You can start your pipeline(s) inside of the ADF authoring tool.
