@@ -533,14 +533,17 @@ body .toc{
 }
 */
 
+.toc .nav > li > ul,
 .toc .nav > li.filtered > ul,
 .toc .nav > li.in > ul {
   display: block;
 }
 
+/*
 .toc .nav > li > ul {
   display: none;
 }
+*/
 
 .toc ul{
   font-size: 12px;
