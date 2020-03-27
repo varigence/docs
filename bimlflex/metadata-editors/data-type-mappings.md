@@ -11,11 +11,12 @@ BimlFlex `Data Type Mappings` provide the ability to map Data Types from a sourc
 The following sections describe the UI elements of the Data Type Mappings Editor and how they are used to author and manage BimlFlex `Data Type Mappings`.
 
 **Data Type Mappings Editor**  
-![Data Type Mappings Editor](images/bimlflex-app-data-type-mappings.png "Data Type Mappings Editor")
+<img src="images/bimlflex-app-data-type-mappings.png" class="border-image image-width-100" style="border: 1px solid #CCC;" title="Data Type Mappings Editor" />
 
 ## Action Buttons
 
-![Data Type Mapping Editor Action Buttons](images/bimlflex-app-data-type-mappings-actions.png "Data Type Mapping Editor Action Buttons")
+<br/>
+<img src="images/bimlflex-app-data-type-mappings-actions.png" class="border-image image-width-100" style="border: 1px solid #CCC;" title="AData Type Mapping Editor Action Buttons" />
 
 |Icon|Action|Description|Additional Dialog|
 |-|-|-|-|
@@ -32,7 +33,8 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 
 ## Fields
 
-![Data Type Mappings Fields](images/bimlflex-app-data-type-mappings-fields.png "Data Type Mappings Fields")
+<br/>
+<img src="images/bimlflex-app-data-type-mappings-fields.png" class="border-image image-width-100" style="border: 1px solid #CCC;" title="Data Type Mappings Fields" />
 
 |Field|Description|Validation|Example|
 |-|-|-|-|
@@ -48,15 +50,14 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 |[SQL Source Expression]|SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.|String|`CONVERT(VARCHAR(27), @@this, 121)`|
 |[SSIS Dataflow Expression]|The expression used to calculate the value of the derived column via SSIS.  SSIS expression syntax is used.|String|`(DT_DBTIMESTAMP2, 7)([DTM_@@this])`|
 |[ADF Dataflow Expression]|The expression used to calculate the value of the derived column via ADF.  ADF expression syntax is used.|String||
-|[SQL Target Expression]|The SQL expression used to extend target queries. Generally used for source type casting and case statements.||`CONVERT(VARCHAR(27), @@this, 121)`|
-|[SQL Target To String]|||
-|[SQL Target To Data Type]|||
-|[Description]|||
-|[Column Alias]|||
+|[SQL Target Expression]|The SQL expression used to extend target queries. Generally used for source type casting and case statements.|String|`CONVERT(VARCHAR(27), @@this, 121)`|
+|[SQL Target To String]|This SQL expression is used when a datatype needs to be converted to a string.|String|
+|[SQL Target To Data Type]|This SQL expression is used when a string datatype needs to be converted to another datatype.|String|
+|[Description]|Optional metadata to provide description.|String|
+|[Column Alias]|Maps to a `Columns` [Column Alias] property.|String|`DTM_@@this`|
 |[Is Master]|If `true` this `Data Type Mapping` may be used as a [Mapped To Data Type].|Boolean|
 |[Convert Source Type]||Boolean|
 
-[//]: # (TODO: Get clarification on [Convert Source Type], [Column Alias], [SQL Source Expression], [SQL Target Expression], [SQL Target To Data Type] and [SQL Target To String].)
 [//]: # (TODO: Create or link to a Unified System Types guide. [unified-system-types.md])
 [//]: # (TODO: Outline or link to configuration of a Data Type = 'CustomType'.)
 
