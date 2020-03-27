@@ -42,6 +42,11 @@ a.disable:hover {
   font-size: 4rem;
 }
 
+.container.body-content td,
+.container.body-content th {
+  padding: 5px 15px;
+}
+
 .breadcrumb a, .breadcrumb a:hover
 {
   color: #e0e0e0;
@@ -484,8 +489,12 @@ body .toc{
   background: none;
   text-decoration: inherit;
 }
+
+.toc .nav > li > a {
+  color: #707070;
+}
 .toc .nav > li.active > a {
-  color: #337ab7;
+  color: #337ab7; /*#00416B*/
 }
 .toc .nav > li.active > a:hover,
 .toc .nav > li.active > a:focus {
@@ -524,14 +533,17 @@ body .toc{
 }
 */
 
+.toc .nav > li > ul,
 .toc .nav > li.filtered > ul,
 .toc .nav > li.in > ul {
   display: block;
 }
 
+/*
 .toc .nav > li > ul {
   display: none;
 }
+*/
 
 .toc ul{
   font-size: 12px;
@@ -557,7 +569,9 @@ body .toc{
   border-left: solid rgb(204, 204, 204) 1px;
 }
 
-.toc .level2>li.in {
+.toc .level2>li.in,
+.toc .level2>li:hover
+{
   border-left-color: #337ab7;
 }
 

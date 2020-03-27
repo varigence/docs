@@ -36,7 +36,7 @@ The BimlFlex Menu provide quick navigation to the available editors and modeling
 **BimlFlex Menu**  
 ![BimlFlex Menu](images/bimlflex-app-menu.png "BimlFlex Menu")  
 
-## BimlFlex Metadata Editor Navigation  
+## BimlFlex Metadata Editor Layout  
 
 The BimlFlex Metadata Editors are provided to give a streamlined and intuitive way to enter and manage your metadata.  The available features may vary from editor to editor but they all use the same layout.  What follows is a quick tour of the various editor elements and how they function.  For detailed information of the available the features reference the relevant documentation for the appropriate editor.  
 
@@ -44,14 +44,14 @@ The BimlFlex Metadata Editors are provided to give a streamlined and intuitive w
 ![BimlFlex Editor](images/bimlflex-app-editor.png "BimlFlex Editor")  
 
 
-### Breadcrumb Navigation Elements  
+## Breadcrumb Navigation Elements  
 
 BimlFlex features a breadcrumb navigation to easily raise your view to a higher context when needed.  The entities shown in the breadcrumbs will depend on the entity that is being viewed and the navigation path that was used.  Elements are provided to select either the associated parent entity or to navigate without filter context to a parent element editor.  
 
 **Breadcrumb Navigation Elements**  
 ![Breadcrumb Navigation Elements](images/bimlflex-app-breadcrumbs.png "Breadcrumb Navigation Elements")  
 
-### Editor Action Buttons  
+## Editor Action Buttons  
 
 The Editor Action Buttons provide quick access to common useful features managing the collection of the associated entity type.  As noted previously, available actions can vary from editor to editor but the ability to [Add] and [Collapse/Expand] are generally ubiquitous across them all.  
 
@@ -66,7 +66,7 @@ The Editor Action Buttons provide quick access to common useful features managin
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="images/svg-icons/expanded.svg"/></div>|<span class="nowrap-col m-5">Collapse</span>|[Collapse] will cycle through the the various supported modes the Entity List can have.  Options are [Full Panel], [Split Panels] and [Hidden].|
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="images/svg-icons/collapsed.svg"/></div>|<span class="nowrap-col m-5">Expand</span>|[Expand] will cycle through the the various supported modes the Entity List can have.  Options are [Hidden], [Split Panels] and [Full Panel].|
 
-### Entity List  
+## Entity List  
 
 The entity list enumerates all of the available entities for the current filter context.  When and editor is opened through the BimlFlex Menu the default action is to open without and filter context, exposing all the the given entity type.  When an editor is opened via a [Navigation Transition] generally a context for the entities `Project` or `Connection` is applied, but ultimately may vary based on the transitional context.  The amount and availability of the the columns is determined by the editor being used.  
 
@@ -85,58 +85,47 @@ The entity list enumerates all of the available entities for the current filter 
 > [!TIP]
 > All of the columns support the ability for filters but the button is hidden by default.  To show the button mouse over the field you would like to filter.  
 
-### Tab/Form Action Buttons  
+## Tab/Form Action Buttons  
 
 The [Tab/From Action Buttons] list the actions available within the currently selected entity.  All [Action Buttons] are context specific to the currently selected [Tab] if tab navigation function is provided the the selected editor.  As the list to large to enumerate and goes past the scope of the guide, refer to the document for the appropriate editor to view all availed actions along with their descriptions.  Many buttons feature context sensitivity and only enable/disable when appropriate.
 
 **Tab/Form Action Buttons Example**  
 ![Tab/Form Action Buttons Example](images/bimlflex-app-form-actions.png "Tab/Form Action Buttons Example")  
 
-### Tab List  
+## Tab List  
 
 If the selected editor supports them, [Tabs] are used to switch between managing of the selected parent entity (Details Tab) and managing of the associated child entities.  
   
 **Tab List Example**  
 ![Tab List Example](images/bimlflex-app-form-tabs.png "Tab List Example")  
 
-### Tab/Form Content  
+## Tab/Form Content  
 
 The [Tab/Form Content] area is where all the metadata for the associated entity is represented.  Layouts can vary depending on the editor being used but generally falls into one of 3 categories: [Field List], [Table], or [Multiple Views].  
 
-#### Field List
+### Field List
 
 A [Field List] provides a series of context sensitive fields.  BimlFlex will dynamically hide and expose fields depending on the current properties of the selected entity.  Additionally BimlFlex provides field level validations with the ability to highlight misconfigured metadata.
 
 **Fields Content**  
-[//]: # (TODO: Add image callouts.)
 ![Fields Content](images/bimlflex-app-form-fields.png "Fields Content")  
 
-#### Table  
+### Table  
 
 Table content is provided when an entity features some complex logic and should be edited through a dialog box.  New items can be entered entered via the [Add] button on the [Tab/Form Action Buttons].  Existing items can be edited by selecting and existing proper, by clicking a non hyperlinked field and then using the [Edit] button on the [Tab/Form Action Buttons].  The same filter as sort functions that are provided on the [Entity List] are available on these content types.
 
 **Table Content**
-[//]: # (TODO: Add image callouts.)
 ![Table Content](images/bimlflex-app-form-table.png "Table Content")
 
-#### Multiple Views  
+### Multiple Views  
 
 When [Multiple Views] are used, an oval selector will appear listing out alternative views.  The active view is highlighted and can be changed by clicking another available option.  The alternate views only change what properties of an entity are visible/editable and will not filter, remove or resort the underlining list of entities.  Values can be edited by double-clicking the desired property.  
 
 **Multiple Views Content**  
-[//]: # (TODO: Add image callouts.)
 ![Multiple Views Content](images/bimlflex-app-form-views.png "Multiple Views Content")  
 
 ## Navigational Transitions
 
-[//]: # (TODO: Add navigation transition exposition.)
+BimlFlex features the ability to jump directly to another entity whenever it is referenced from a calling table or form.  Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor.
 
-[//]: # (TODO: Add image callouts.)
 ![Multiple Views](images/bimlflex-app-form-navigational-transitions.png "Multiple Views")  
-
-|Item|Action|Entity Documentation|
-|-|-|-|
-|Object Value|Navigate to [Objects Editor], selecting clicked `Object`|[[Objects Documentation]](objects.md)
-|Column Value|Navigate to [Columns Editor], selecting clicked `Column`|[[Columns Documentation]](columns.md)
-|Attribute Value|Navigate to [Attributes Editor], selecting clicked `Attribute`|[[Attributes Documentation]](attributes.md)
-
