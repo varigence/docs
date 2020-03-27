@@ -15,7 +15,7 @@ The `Settings` module is used to manage metadata and framework settings in the B
 
 ## Settings Navigation List
 
-All settings are listed on in the settings navigation pane on the left side of the window. Settings are listed by Group and Setting Name. For ease of navigation, settings can be sorted or filtered by both Group and Setting Name.
+All settings are listed in the settings navigation pane on the left side of the window. Settings are listed by Group and Setting Name. For ease of navigation, settings can be sorted or filtered by both Group and Setting Name.
 
 ![Settings - Navigation](images/bimlflex-app-settings-navigation.64566.png "Settings - Navigation")
 
@@ -31,7 +31,7 @@ To sort the settings navigation list, click on either the Group or Setting Name 
 
 ![Settings - Navigation Filter](images/bimlflex-app-settings-navigation-settings-filter.64566.png "Settings - Filter")
 
-`Settings` can be filtered by text using a few methods. Use the dropdown dropdown in the filter menu to change the method used.
+`Settings` can be filtered by text using a few methods. Use the dropdown in the filter menu to change the method used.
 
 ![Settings - Navigation Filter Methods](images/bimlflex-app-settings-navigation-settings-filter-options.64566.png "Settings - Filter Methods")
 
@@ -63,9 +63,9 @@ The `Settings` form is used to manage all `Settings`. The fields in the form are
 |Field|Description|Validation Rules|
 |-|-|-|
 |Setting Key|The Setting Key is used as a unique name for the setting.|Setting Key is required. Setting Key must be unique.|
-|Setting Value|The Setting Value defines the value applied to the associated Setting Key. The expanded editor can be used with Setting Value. TODO link to expanded text editor||
+|Setting Value|The Setting Value defines the value applied to the associated Setting Key. The expanded editor can be used with Setting Value.||
 |Setting Type|The Setting Type defines the type of data stored in Setting Value. Setting Type can be JSON, SQL, or Text.||
-|Setting Data Type| TODO What is the setting data type?||
+|Setting Data Type|||
 |Setting Default|The Setting Default is the default value for the Setting.||
 |Display Grouping|Display Grouping is the name of the setting group that the setting belongs to.||
 |Description|The description is used to define the purpose and use of the Setting. The expanded editor can be used with Description.||
