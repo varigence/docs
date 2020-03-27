@@ -1,4 +1,4 @@
-#### Precedence Constraint Constained List
+#### Precedence Constraint Constrained List
 
 |Value|Definition|
 |-|-|

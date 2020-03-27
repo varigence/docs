@@ -6,9 +6,8 @@ title: Connections
 
 ## Action Buttons
 
-* Import Metadata 
+* Import Metadata - Import Metadata from Source Database - [More info](../concepts/importing-metadata.md)
 
-[//]: # (TODO: Include/Link to Import Metadata document)
 
 ## Field Descriptions
 

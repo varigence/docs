@@ -6,9 +6,7 @@ title: Projects
 
 ## Action Buttons
 
-* Import Metadata 
-
-[//]: # (TODO: Include/Link to Import Metadata document)
+* Import Metadata - Import Metadata from Source Database - [More info](../concepts/importing-metadata.md)
 
 ## Field Descriptions
 

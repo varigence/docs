@@ -51,7 +51,7 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 |Field|Description|Validation|
 |-|-|-|
 |[Batch]|The name of the BimlFlex `Batch`.  This is the value will be appended by '_Batch` and used in the naming of the batch DTSX (SSIS) or Pipeline (ADF).|String|
-|[Precedence Constraint]|BimlFlex Batches execute packages and the Precedence Constraint can be changed from Success to Completion to continue loading in case of individual failures.|[Dropdown](#Precedence-Constraint-Dropdown)|
+|[Precedence Constraint]|BimlFlex Batches execute packages and the Precedence Constraint can be changed from Success to Completion to continue loading in case of individual failures.|[Dropdown](#Precedence-Constraint-Constrained-List)|
 |[Threads]|The default number of packages that can be executed in parallel within the Batch. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel.|Integer|
 |[Containers]|The default number of sequence containers that can be executed within the Batch. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel.|Integer|
 |[Description]|Optional metadata to provide description.|String|
