@@ -569,7 +569,7 @@ $('.header-search-icon').click(function () {
         if (index > -1) {
           tocrel = tocPath.substr(0, index + 1);
         }
-        var currentHref = util.getAbsolutePath(window.location.pathname);
+        var currentHref = util.getAbsolutePath(window.location.pathname).toLowerCase();
         $('#sidetoc').find('a[href]').each(function (i, e) {
           var href = $(e).attr("href");
           if (util.isRelativePath(href)) {
@@ -577,7 +577,11 @@ $('.header-search-icon').click(function () {
             $(e).attr("href", href);
           }
 
-          if (util.getAbsolutePath(e.href) === currentHref) {
+          var tocHref = util.getAbsolutePath(e.href).toLowerCase();
+          if (tocHref.endsWith('.html') && !currentHref.endsWith('.html')) {
+            tocHref = tocHref.substr(0, tocHref.length - 5);
+          }
+          if (tocHref === currentHref) {
             $(e).addClass(active);
           }
 
