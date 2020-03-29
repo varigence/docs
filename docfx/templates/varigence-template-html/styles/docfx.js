@@ -569,7 +569,7 @@ $('.header-search-icon').click(function () {
         if (index > -1) {
           tocrel = tocPath.substr(0, index + 1);
         }
-        var currentHref = util.getAbsolutePath(window.location.pathname);
+        var currentHref = util.getAbsolutePath(window.location.pathname).toLowerCase();
         $('#sidetoc').find('a[href]').each(function (i, e) {
           var href = $(e).attr("href");
           if (util.isRelativePath(href)) {
