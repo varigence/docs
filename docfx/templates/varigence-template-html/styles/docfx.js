@@ -577,7 +577,11 @@ $('.header-search-icon').click(function () {
             $(e).attr("href", href);
           }
 
-          if (util.getAbsolutePath(e.href) === currentHref) {
+          var tocHref = util.getAbsolutePath(e.href).toLowerCase();
+          if (tocHref.endsWith('.html') && !currentHref.endsWith('.html')) {
+            tocHref = tocHref.substr(0, tocHref.length - 5);
+          }
+          if (tocHref === currentHref) {
             $(e).addClass(active);
           }
 
