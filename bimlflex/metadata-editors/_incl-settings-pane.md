@@ -6,7 +6,11 @@ title: Settings Database Connection
 
 Configure the App to connect to the BimlFlex database through the configuration pane opened by the settings cog on the right-hand side of the main toolbar.
 
-![Settings](../metadata-editors/images/bimlflex-app-settings-database-connection.png "Settings")
+<img 
+    src="images/bimlflex-app-settings-database-connection.png" 
+    class="bordered-image" 
+    title="Settings" 
+/>
 
 ### Database Connection Settings
 
@@ -16,7 +20,11 @@ Specify the database server, database and login information for the metadata dat
 
 Click the New Customer button and enter a new Customer to create a new customer. An empty Version will automatically be created and selected.
 
-![Settings - Create new Customer](../metadata-editors/images/bimlflex-app-settings-new-customer.png "Settings - Create new Customer")
+<img 
+    src="images/bimlflex-app-settings-new-customer.png" 
+    class="bordered-image" 
+    title="Settings - Create new Customer" 
+/>
 
 ### Additional Options
 

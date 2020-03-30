@@ -20,7 +20,11 @@ The default view of the Sunburst shows us concentric circles with:
 1. `Object Types` the third layer
 1. `Objects` outer layer
 
-![Sunburst](images/bimlflex-app-dashboard-sunburst.png "Sunburst")
+<img 
+    src="images/bimlflex-app-dashboard-sunburst.png" 
+    class="bordered-image" 
+    title="Sunburst"
+/>
 
 ### Sunburst Zooming and Hovering
 
@@ -30,11 +34,19 @@ When a user hovers over a slice of a layer the information on the right will dyn
 
 In the image below the sunburst is zoomed into the Raw Data Vault `Integration Stage` and the mouse is hovering over the Hub `Object Type`.
 
-![Sunburst Hover Hub](images/bimlflex-app-dashboard-sunburst-hover-hub.png "Sunburst Zoom Link Hover Table")
+<img 
+    src="images/bimlflex-app-dashboard-sunburst-hover-hub.png" 
+    class="bordered-image" 
+    title="Sunburst Zoom Link Hover Table"
+/>
 
 In the image below the sunburst is zoomed into the Link `Object Type` and the mouse is hovering over the LNK_Product_ProductCategory `Table`.
 
-![Sunburst Zoom Link Hover Table](images/bimlflex-app-dashboard-sunburst-zoom-link-hover-table.png "Sunburst Hover Hub")
+<img 
+    src="images/bimlflex-app-dashboard-sunburst-zoom-link-hover-table.png" 
+    class="bordered-image" 
+    title="Sunburst Hover Hub"
+/>
 
 By clicking in the center of the Sunburst users can zoom back out to the full Sunburst view.
 
@@ -98,15 +110,27 @@ The Recent Projects pane displays the most recently updated Projects to allow fo
 
 Clone the current version to a new version.
 
-![Clone Version](images/bimlflex-app-dashboard-clone-version.png "Clone Version")
+<img 
+    src="images/bimlflex-app-dashboard-clone-version.png" 
+    class="bordered-image" 
+    title="Clone Version"
+/>
 
 ### Snapshots: 
 
-![Snapshot Sub Menu](images/bimlflex-app-dashboard-snapshots.png "Snapshot Sub Menu")
+<img 
+    src="images/bimlflex-app-dashboard-snapshots.png" 
+    class="bordered-image" 
+    title="Capture Snapshot" 
+/>
 
 Hover over `Capture Snapshot` and click the elipses for more options.
 
-![Snapshot Sub Menu](images/bimlflex-app-dashboard-snapshots-submenu.png "Snapshot Sub Menu")
+<img 
+    src="images/bimlflex-app-dashboard-snapshots-submenu.png" 
+    class="bordered-image" 
+    title="Snapshot Sub Menu" 
+/>
 
 * Capture - Capture a snapshot of the current version's metadata.
 * Rollback - Rollback this version from a previous metadata snapshot.
@@ -115,13 +139,21 @@ Hover over `Capture Snapshot` and click the elipses for more options.
 
 ### Archive Deleted Entities
 
-![Archive Deleted Entities](images/bimlflex-app-dashboard-archive-entities.png "Archive Deleted Entities")
+<img 
+    src="images/bimlflex-app-dashboard-archive-entities.png" 
+    class="bordered-image" 
+    title="Archive Deleted Entities" 
+/>
 
 Archive deleted entities of the selected types. Be aware that this action cannot be undone.
 
 ### Apply Data Type Mappings
 
-![Apply Data Type Mappings](images/bimlflex-app-dashboard-apply-data-type-mappings.png "Apply Data Type Mappings")
+<img 
+    src="images/bimlflex-app-dashboard-apply-data-type-mappings.png" 
+    class="bordered-image" 
+    title="Apply Data Type Mappings" 
+/>
 
 The Data Type Mappings are added to all columns for a specific `Record Source`
 
@@ -137,7 +169,11 @@ Getting Started contains info and complete sets of Metadata examples to quickly 
 
 ### Load Sample Metadata
 
-![Load Sample Metadata](images/bimlflex-app-dashboard-sample-metadata.png "Load Sample Metadata")
+<img 
+    src="images/bimlflex-app-dashboard-sample-metadata.png" 
+    class="bordered-image" 
+    title="Load Sample Metadata" 
+/>
 
 Contains complete sets of Metadata to serve as an example for users to refer to. These examples are also useful when following allong with the Getting Started Videos.
 
@@ -145,7 +181,11 @@ Contains complete sets of Metadata to serve as an example for users to refer to.
 
 ### Load Defaults
 
-![Load Defaults](images/bimlflex-app-dashboard-load-defaults.png "Load Sample Defaults")
+<img 
+    src="images/bimlflex-app-dashboard-load-defaults.png" 
+    class="bordered-image" 
+    title="Load Defaults" 
+/>
 
 Set the specified defaults on the selected target version. Unlike the Load Sample Metadata this does not override the target version metadata.
 
