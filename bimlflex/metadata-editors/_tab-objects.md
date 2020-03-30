@@ -1,6 +1,11 @@
 ### Objects Tab - Action Buttons
 
-![BimlFlex App - Batches - Objects Tab - Actions](images/bimlflex-app-tab-objects-actions.png "BimlFlex App - Batches - Objects Tab - Actions")
+<img 
+    src="images/bimlflex-app-tab-objects-actions.png" 
+    class="border-image" 
+    style="border: 1px solid #CCC;" 
+    title="Objects Tab - Action Buttons" 
+/>
 
 |Icon|Action|Description|Additional Dialog|
 |-|-|-|-|
@@ -26,7 +31,12 @@ The [Objects Tab] provide quick and easy access to all `Objects` associated with
 
 The [Overview] is available to give quick access to the more physical properties of the `Objects` relating to the selected entity.  These are representations of the physical `Source System` and represent the raw definitions of the object in it's original form.  Additional properties are available for bulk management such as controlling exclusions, disabling persistence or flagging an `Object` for deletion.  Various [Navigational Transitions](#Objects-Tab-(Overview)-Navigational-Transitions) are available on view form and outlined below.
 
-![Overview View](images/bimlflex-app-tab-objects-view-overview.png "Overview View")  
+<img 
+    src="images/bimlflex-app-tab-objects-view-overview.png" 
+    class="border-image" 
+    style="border: 1px solid #CCC;" 
+    title="Objects Tab - Overview View" 
+/>
 
 #### Objects Tab (Overview) Navigational Transitions
 |Item|Action|Entity Documentation|
@@ -42,7 +52,12 @@ The [Overview] is available to give quick access to the more physical properties
 
 The [Model Overrides] is available to allow for quick management of modeled metadata from the [[Data Vault Accelerator]](..\modeling-tools\accelerator.md) or the [[Schema Diagram]](..\modeling-tools\schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.
 
-![Model Overrides View](images/bimlflex-app-tab-objects-view-model-overrides.png "Model Overrides View")  
+<img 
+    src="images/bimlflex-app-tab-objects-view-model-overrides.png" 
+    class="border-image" 
+    style="border: 1px solid #CCC;" 
+    title="Objects Tab - Model Overrides View" 
+/>
 
 > [!IMPORTANT]
 > Although it is possible for an experienced user to manage their high level metadata from this screen, it is recommended that you use the [[Data Vault Accelerator]](..\modeling-tools\accelerator.md) until you are strongly confident in your abilities to manually model metadata.  The [[Data Vault Accelerator]](..\modeling-tools\accelerator.md) is specifically designed to simplify and improve the experience of modeling metadata via a graphical designer as opposed to the table entry that this view provides.
@@ -51,7 +66,12 @@ The [Model Overrides] is available to allow for quick management of modeled meta
 
 The [Query Overrides] view exposes any SQL overrides that may be required in the creation and maintenance of the `Object`.  By default the SQL required to perform most ETL/ELT task are dynamically generated and in many cases these overrides are not required.  When these cases are encounter they can be seen and managed from this view.
 
-![Query Overrides View](images/bimlflex-app-tab-objects-view-query-overrides.png "Query Overrides View")  
+<img 
+    src="images/bimlflex-app-tab-objects-view-query-overrides.png" 
+    class="border-image" 
+    style="border: 1px solid #CCC;" 
+    title="Objects Tab - Query Overrides View" 
+/>
 
 > [!IMPORTANT]
 > Due to the BimlFlex App not requiring a connection to the raw source systems (this is done during ELT/ELT Orchestration and Integration), auto-complete and intellisense are not provided.  This is designed for developers/architects whom have a strong understanding of SQL and knowledge of the `Source Systems` that are designing from.
@@ -60,7 +80,12 @@ The [Query Overrides] view exposes any SQL overrides that may be required in the
 
 The [Dependencies] view allows for management of an `Object`'s dependencies or inheritance.  Dependencies are provided to instruct BimlFlex as to what `Objects` are required to be processed or managed before another.  Inheritance is a provided feature that allows for controlled reuse of previously entered metadata.
 
-![Dependencies View](images/bimlflex-app-tab-objects-view-dependencies.png "Dependencies View")  
+<img 
+    src="images/bimlflex-app-tab-objects-view-dependencies.png" 
+    class="border-image" 
+    style="border: 1px solid #CCC;" 
+    title="Objects Tab - Dependencies View" 
+/>
 
 [//]: # (TODO: Add Links for Dependencies and Inheritance documentation.)
 

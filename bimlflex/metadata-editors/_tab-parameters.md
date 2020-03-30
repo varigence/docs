@@ -33,6 +33,7 @@ All `Parameters` assigned to the current entity show here.  New items can be ent
 />
 
 #### Parameters Tab Navigational Transitions
+
 |Item|Action|Entity Documentation|
 |-|-|-|
 |Column Value|Navigate to [Columns Editor], selecting clicked `Column`|[[Columns Documentation]](columns.md)

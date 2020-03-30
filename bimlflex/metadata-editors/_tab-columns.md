@@ -34,7 +34,7 @@ All `Columns` assigned to the current entity show here.  New items can be entere
 |-|-|-|
 |Column Value|Navigate to [Columns Editor], selecting clicked `Column`|[[Columns Documentation]](columns.md)
 
-#### Overview View  
+#### View: Overview  
 
 The [Overview] is available to give quick access to the more physical properties of the `Columns` relating to the selected entity.  These are representations of the physical `Source System` and represent the raw definitions of the object in it's original form.  Quick access is also provided for the various `Keys` used across the separate `Integration Layers` or `Integration Stages`.  
 
@@ -45,7 +45,7 @@ The [Overview] is available to give quick access to the more physical properties
     title="Columns - Overview View" 
 />
 
-#### Settings View  
+#### View: Settings  
 
 The [Settings] view allows for quick access to all the boolean and flag properties associated with the `Columns`.  In addition to the `Keys` the ability to flag database concepts (such as `IDENTITY` or `NULL`), persistence, whether or not the `Column` is [Derived], and the ability to flag as [Excluded] or [Deleted].  
 
@@ -56,7 +56,7 @@ The [Settings] view allows for quick access to all the boolean and flag properti
     title="Columns - Settings View" 
 />
 
-#### Expressions View  
+#### View: Expressions  
 
 The [Expressions] view allows you to quickly view and manage all the expressions that may be used in the `CAST`, `CONVERT`, or general transformations that may be performed on any given `Column`.  All values in this view are used to determine the `ETT`/`ELT` logic and transformation dataflow.  
 
@@ -67,7 +67,7 @@ The [Expressions] view allows you to quickly view and manage all the expressions
     title="Columns - Expressions View" 
 />
 
-#### Mappings View  
+#### View: Mappings  
 
 The [Mappings] view shows the references and targets associated with the `Columns`.  References are the equivalent of a `Foreign Key` in a Relational Database, though the enforcement of an actual `Constraint` is configurable.  References control how and where other tables relate to each other.  Targets are the the `Object` and `Column` that the entity will populate in the associated `Project`'s [Target Connection].  It is recommended that you use the [[Data Vault Accelerator]](..\modeling-tools\accelerator.md) or the [[Schema Diagram]](..\modeling-tools\schema-diagram.md) to populate these fields.  This view is intended as easy way to reference and maintain previously entered metadata.  
 
@@ -78,7 +78,7 @@ The [Mappings] view shows the references and targets associated with the `Column
     title="Columns - Mappings View" 
 />
 
-#### Overrides View  
+#### View: Overrides  
 
 The [Overrides] view is available to allow for quick management of modeled metadata from the [[Data Vault Accelerator]](..\modeling-tools\accelerator.md) or the [[Schema Diagram]](..\modeling-tools\schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.  
 
