@@ -35,16 +35,16 @@ The [Details Tab] focuses on general `Object` information and configuration.  Th
 
 |Icon|Action|Description|Additional Dialog|
 |-|-|-|-|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the currently set of staged changes.  The [Save] button is will only enable if the `Object` has changes staged and there are no major validation issues with the current `Object` properties.||
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|This will `hard delete` the selected `Object`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|[Archive Object](#Archive-Object-Dialog-Box)|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/clone-objects.svg" /></div>|Clone||[Clone Table](#Clone-Table-Dialog-Box)|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Object`.  A prompt will appear asking for a [Target Table Name] and a new `Object` will be created using all of the selected `Object`'s current properties.|[Duplicate Table](#Duplicate-Table-Dialog-Box)|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Object`.||
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/accelerator.svg" /></div>|Accelerate||Modeling Tool: [[Data Vault Accelerator]](../modeling-tools/accelerator.md)|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/schema-diagram.svg" /></div>|Diagram||Modeling Tool: [[Schema Diagram]](../modeling-tools/schema-diagram.md)|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/target-mappings.svg" /></div>|Mapping||Modeling Tool: [[Column Mapping]](../modeling-tools/column-mapping.md)|
-||Exclude|This will remove the `Object` and all associated entities from processing and validation.  This is designed to be paired with the [Use My Exclusions (Locally)] global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities.||
-|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will `soft delete` the currently selected `Object`.  This will remove the `Object` and all associated entities from processing and validation.||
+|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the currently set of staged changes.  The [Save] button is will only enable if the `Object` has changes staged and there are no major validation issues with the current `Object` properties.||
+|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|This will `hard delete` the selected `Object`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|[Archive Object](#Archive-Object-Dialog-Box)|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/clone-objects.svg" /></div>|Clone||[Clone Table](#Clone-Table-Dialog-Box)|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Object`.  A prompt will appear asking for a [Target Table Name] and a new `Object` will be created using all of the selected `Object`'s current properties.|[Duplicate Table](#Duplicate-Table-Dialog-Box)|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Object`.||
+|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/accelerator.svg" /></div>|Accelerate||Modeling Tool: [[Data Vault Accelerator]](../modeling-tools/accelerator.md)|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/schema-diagram.svg" /></div>|Diagram||Modeling Tool: [[Schema Diagram]](../modeling-tools/schema-diagram.md)|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/target-mappings.svg" /></div>|Mapping||Modeling Tool: [[Column Mapping]](../modeling-tools/column-mapping.md)|
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Exclude|This will remove the `Object` and all associated entities from processing and validation.  This is designed to be paired with the [Use My Exclusions (Locally)] global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities.||
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will `soft delete` the currently selected `Object`.  This will remove the `Object` and all associated entities from processing and validation.||
 
 [//]: # (TODO: Find a switch SVG to use for Deleted)
 
@@ -59,7 +59,9 @@ The [Details Tab] focuses on general `Object` information and configuration.  Th
 
 ### Additional Dialogs
 
-[!include[Archive Object Dialog Box](_dialog-archive-object-single.md)]
+
+[//]: # (TODO: Add include.)
+<!-- [!include[Archive Object Dialog Box](_dialog-archive-object-single.md)] -->
 
 [!include[Archive Object Dialog Box](_dialog-clone-table.md)]
 
