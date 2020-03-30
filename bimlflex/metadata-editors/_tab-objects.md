@@ -40,12 +40,12 @@ The [Overview] is available to give quick access to the more physical properties
 
 #### View: Model Overrides
 
-The [Model Overrides] is available to allow for quick management of modeled metadata from the [Data Vault Accelerator](data-vault-accelerator.md).  This view is intended as easy way to reference and maintain previously entered metadata.
+The [Model Overrides] is available to allow for quick management of modeled metadata from the [[Data Vault Accelerator]](..\modeling-tools\accelerator.md) or the [[Schema Diagram]](..\modeling-tools\schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.
 
 ![Model Overrides View](images/bimlflex-app-tab-objects-view-model-overrides.png "Model Overrides View")  
 
 > [!IMPORTANT]
-> Although it is possible for an experienced user to manage their high level metadata from this screen, it is recommended that you use the [[Data Vault Accelerator]](data-vault-accelerator.md) until you are strongly confident in your abilities to manually model metadata.  The [[Data Vault Accelerator]](data-vault-accelerator.md) is specifically designed to simplify and improve the experience of modeling metadata via a graphical designer as opposed to the table entry that this view provides.
+> Although it is possible for an experienced user to manage their high level metadata from this screen, it is recommended that you use the [[Data Vault Accelerator]](..\modeling-tools\accelerator.md) until you are strongly confident in your abilities to manually model metadata.  The [[Data Vault Accelerator]](..\modeling-tools\accelerator.md) is specifically designed to simplify and improve the experience of modeling metadata via a graphical designer as opposed to the table entry that this view provides.
 
 #### View: Query Overrides
 
