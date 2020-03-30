@@ -26,7 +26,7 @@ Here is an example of a parameter being stored in the `BimlCatalog` database in 
 
 When a parameter is added to an object in BimlFlex Excel Add-in, the metadata will be managed the BimlFlex framework and used to generate all the required components to track and update the value defined. Below demonstrates how a data parameter has been incorporated into a source to target loading package. Note that this load starts and ends with sequence containers that are specifically for managing this new parameter.
 
-![Parameters ETL Pattern](images/bimlflex-ss-v5-parameters-etl-pattern.png "Parameters ETL Pattern")
+![Parameters ETL Pattern](../user-guide/images/bimlflex-ss-v5-parameters-etl-pattern.png "Parameters ETL Pattern")
 
 Using the above process, a package that tracks the maximum ID as a parameter can be rerun any number of times. Each time BimlFlex will store the maximum value and update it as it increases over time.
 
@@ -96,9 +96,9 @@ It also supports specifying Project level Parameters that are commonly available
 
 Add Extension Points in BimlStudio.
 
-More details on Extension Points are in the [Extension Points](extension-points.md) documentation
+More details on Extension Points are in the [Extension Points](../user-guide/extension-points.md) documentation
 
-![Create Project Parameter](images/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
+![Create Project Parameter](../user-guide/images/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
 
 The newly created file contains some sample scripts:
 
@@ -121,7 +121,7 @@ Package Parameters only affect the individual package it targets. Package parame
 
 Add Extension Points in BimlStudio
 
-![Create Package Parameter](images/bimlflex-ss-v5-extension-points-create-package-parameter.png "Create Package Parameter")
+![Create Package Parameter](../user-guide/images/bimlflex-ss-v5-extension-points-create-package-parameter.png "Create Package Parameter")
 
 The newly created file contains some sample scripts:
 
