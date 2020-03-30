@@ -111,6 +111,23 @@ A [Field List] provides a series of context sensitive fields.  BimlFlex will dyn
 **Fields Content**  
 ![Fields Content](images/bimlflex-app-form-fields.png "Fields Content")  
 
+#### Long Text String Field
+
+The long text string field can be resized by dragging the adjustment corner in the field. It also include an editor dialog with enhanced features for when a lot of information needs to be entered. The editor dialog is accessed by clicking the <img class="icon-col m-5" style="width:20px; height:20px;background:#EEE;" src="images/svg-icons/edit.svg"/> icon when the long text string field is in focus.
+
+![Editor Dialog Button](images/dialog-editor-button.64566.png "Editor Dialog Button")
+
+The editor dialog will open with the text from the long text string field. The editor dialog features include:
+ - Text suggestions based on entered text
+ - Tab auto complete
+ - Scroll preview
+ - Line numbers
+
+ 
+![Editor Dialog](images/dialog-editor.64566.png "Editor Dialog")
+
+When changes are complete, click the [Ok] button to keep the changes that have been made. Click [Cancel] to discard the changes that have been made and close the editor.
+
 ### Table  
 
 Table content is provided when an entity features some complex logic and should be edited through a dialog box.  New items can be entered entered via the [Add] button on the [Tab/Form Action Buttons].  Existing items can be edited by selecting and existing proper, by clicking a non hyperlinked field and then using the [Edit] button on the [Tab/Form Action Buttons].  The same filter as sort functions that are provided on the [Entity List] are available on these content types.
