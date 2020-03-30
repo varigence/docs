@@ -17,7 +17,7 @@ The BimlFlex Menu provide quick navigation to the available editors and modeling
 **BimlFlex Menu**  
 <img 
     src="images/bimlflex-app-menu.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="BimlFlex Menu" 
 />
@@ -44,7 +44,7 @@ The Editor Action Buttons provide quick access to common useful features managin
 **Editor Action Buttons**  
 <img 
     src="images/bimlflex-app-editor-actions.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="BimlFlex Editor Action Buttons" 
 />

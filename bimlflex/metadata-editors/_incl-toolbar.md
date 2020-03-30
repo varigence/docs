@@ -10,7 +10,7 @@ The [BimlFlex Tool Bar] holds links to most of the higher level system configura
 **BimlFlex Tool Bar**  
 <img 
     src="images/bimlflex-app-title-bar.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="BimlFlex Tool Bar" 
 />

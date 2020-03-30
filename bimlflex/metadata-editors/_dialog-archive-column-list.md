@@ -4,7 +4,7 @@ Confirmation box warning against the dangers of archiving.  You are required to 
 
 <img 
     src="images/bimlflex-app-dialog-archive-column-list.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Archive Multiple Columns Dialog Box" 
 />

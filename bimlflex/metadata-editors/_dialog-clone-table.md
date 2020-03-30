@@ -5,7 +5,7 @@
 <br/>
 <img 
     src="images/bimlflex-app-dialog-clone-table.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Clone Table Dialog Box" 
 />

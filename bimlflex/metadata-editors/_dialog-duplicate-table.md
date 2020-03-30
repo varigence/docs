@@ -8,7 +8,7 @@ This will create a copy of the selected `Object` and properties along with a cop
 <br/>
 <img 
     src="images/bimlflex-app-dialog-duplicate-table.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Duplicate Table Dialog Box" 
 />

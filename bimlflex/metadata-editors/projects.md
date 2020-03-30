@@ -13,7 +13,7 @@ The following sections describe the UI elements of the [Projects Editor] and how
 **Projects Editor**  
 <img 
     src="images/bimlflex-app-editor-projects.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Projects Editor" 
 />
@@ -26,7 +26,7 @@ The [Details Tab] focuses on general `Project` information and configuration.  T
 
 <img 
     src="images/bimlflex-app-editor-projects-actions.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Projects Editor Actions" 
 />
@@ -59,7 +59,7 @@ The [Details Tab] focuses on general `Project` information and configuration.  T
 
 <img 
     src="images/bimlflex-app-editor-projects-fields.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Projects Editor Fields" 
 />

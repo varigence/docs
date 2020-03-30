@@ -15,7 +15,7 @@ The following sections describe the UI elements of the [Objects Editor] and how 
 **Objects Editor**  
 <img 
     src="images/bimlflex-app-editor-objects.png"  
-    class="border-image image-width-100"  
+    class="border-image"  
     style="border: 1px solid #CCC;"  
     title="Objects Editor"  
 />
@@ -28,7 +28,7 @@ The [Details Tab] focuses on general `Object` information and configuration.  Th
 
 <img 
     src="images/bimlflex-app-editor-objects-actions.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Objects Editor Actions" 
 />
@@ -73,7 +73,7 @@ The [Details Tab] focuses on general `Object` information and configuration.  Th
 
 <img 
     src="images/bimlflex-app-editor-objects-fields-table.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Objects Editor Fields" 
 />
@@ -110,7 +110,7 @@ The [Details Tab] focuses on general `Object` information and configuration.  Th
 
 <img 
     src="images/bimlflex-app-editor-objects-fields-sql-overrides.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Objects Editor Fields" 
 />
