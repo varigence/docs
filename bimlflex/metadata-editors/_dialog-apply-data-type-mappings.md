@@ -5,7 +5,7 @@ From here you can apply your `Data Type Mappings` to an individual `Record Sourc
 <br/>
 <img 
     src="images/bimlflex-app-dialog-apply-data-type-mappings.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />

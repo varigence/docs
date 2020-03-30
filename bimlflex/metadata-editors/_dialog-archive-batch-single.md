@@ -4,7 +4,7 @@ Confirmation box warning against the dangers of archiving.  You are required to 
 
 <img 
     src="images/bimlflex-app-dialog-archive-batch.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Archive Selected Batch Dialog Box" 
 />
