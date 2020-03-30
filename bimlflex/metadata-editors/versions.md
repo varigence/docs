@@ -63,7 +63,7 @@ The `Versions` form is used to manage all `Versions`. The fields in the form are
 | Effective From Date |The Version Value defines the value applied to the associated Version Key. The expanded editor can be used with Version Value. |YYYY-MM-DD Format|
 |Effective To Date|The Version Type defines the type of data stored in Version Value. Version Type can be JSON, SQL, or Text.| YYYY-MM-DD Format|
 |Is Current| The Is Current toggle should be enabled for active `Versions`||
-|Comments|Comments can be included to describle the state of the metadata when the `Version` was made or the purpose of the `Version`.||
+|Comments|Comments can be included to describe the state of the metadata when the `Version` was made or the purpose of the `Version`.||
 
 ## Related Items
 
