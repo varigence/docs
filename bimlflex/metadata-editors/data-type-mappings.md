@@ -34,7 +34,7 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 ## Fields
 
 <br/>
-<img src="images/bimlflex-app-data-type-mappings-fields.png" class="border-image image-width-100" style="border: 1px solid #CCC;" title="Data Type Mappings Fields" />
+<img src="images/bimlflex-app-data-type-mappings-fields.png" class="border-image" style="border: 1px solid #CCC;" title="Data Type Mappings Fields" />
 
 |Field|Description|Validation|Example|
 |-|-|-|-|

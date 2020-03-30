@@ -64,7 +64,7 @@ The entity list enumerates all of the available entities for the current filter 
 **Entity List - Single Column**  
 <img 
     src="images/bimlflex-app-editor-list-single.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Entity List - Single Column" 
 />
@@ -72,7 +72,7 @@ The entity list enumerates all of the available entities for the current filter 
 **Entity List - Multi Column**  
 <img 
     src="images/bimlflex-app-editor-list-multi.png" 
-    class="border-image image-width-100" 
+    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Entity List - Multi Column" 
 />

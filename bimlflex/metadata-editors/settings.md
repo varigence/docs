@@ -41,9 +41,9 @@ The Setting Navigation List buttons are located at the top of the Settings Navig
 
 |Icon|Action|Description|
 |-|-|-|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/add.svg" /></div>|Add Action|[Add] will create a blank `Settings` form for adding a custom setting. This should not be used to [Override a Setting](#override-a-setting).|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/expanded.svg" /></div>|Collapse Action|[Collapse] will hide the [Settings Navigation Pane].|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/collapsed.svg" /></div>|Expand Action|[Expand] will reveal the [Settings Navigation Pane] after it has been hidden.|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/add.svg" /></div>|Add Action|[Add] will create a blank `Settings` form for adding a custom setting. This should not be used to [Override a Setting](#override-a-setting).|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/expanded.svg" /></div>|Collapse Action|[Collapse] will hide the [Settings Navigation Pane].|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/collapsed.svg" /></div>|Expand Action|[Expand] will reveal the [Settings Navigation Pane] after it has been hidden.|
 
 ## Command Bar Buttons
 
@@ -53,8 +53,8 @@ The buttons in the command bar allow actions to be taken on the setting that is 
 
 |Icon|Action|Description|
 |-|-|-|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|Save|This will save any changes displayed in the Settings form.  The [Save] button is only enabled if there are changes in the form.|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will refresh the currently displayed `Setting`. Any pending changes will be removed.|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|Save|This will save any changes displayed in the Settings form.  The [Save] button is only enabled if there are changes in the form.|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will refresh the currently displayed `Setting`. Any pending changes will be removed.|
 
 ## Setting Form
 
