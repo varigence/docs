@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: BimlFlex Tour
+  href: bimlflex-tour.md
 - name: Dashboard
   href: dashboard.md
 - name: Toolbar
