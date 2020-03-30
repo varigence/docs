@@ -1,6 +1,11 @@
 ### Parameters Tab - Action Buttons
 
-![Parameters Tab - Action Buttons](images/bimlflex-app-tab-parameters-actions.png "Parameters Tab - Action Buttons")
+<img 
+    src="images/bimlflex-app-tab-parameters-actions.png" 
+    class="border-image" 
+    style="border: 1px solid #CCC;" 
+    title="Parameters Tab - Action Buttons" 
+/>
 
 |Icon|Action|Description|Additional Dialog|
 |-|-|-|-|
@@ -20,7 +25,12 @@
 
 All `Parameters` assigned to the current entity show here.  New items can be entered entered via the [Add] action button.  Existing items can be edited by clicking the [Value] field to select the `Parameters` and using the [Edit] action button.  Various [Navigational Transitions](#Parameters-Tab-Navigational-Transitions) are available on this form and outlined below.
 
-![Parameters Tab - Table Descriptions](images/bimlflex-app-tab-parameters-table.png "Parameters Tab - Table Descriptions")
+<img 
+    src="images/bimlflex-app-tab-parameters-table.png" 
+    class="border-image" 
+    style="border: 1px solid #CCC;" 
+    title="Parameters Tab - Table Descriptions" 
+/>
 
 #### Parameters Tab Navigational Transitions
 |Item|Action|Entity Documentation|
