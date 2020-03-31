@@ -48,7 +48,7 @@ The `Columns` Editor is used to manage how BimlFlex interacts with all columns i
 | Connection | The `Connection` the the `Column` is associated with. | Connection is Required. |
 | Object | The `Object` or table that the `Column` is associated with. | Object is Required. |
 | Column | The name of the Column. | Column Name is Required. Column Name must be unique for the `Object`. |
-| Data Type | The type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like hierarchyid. | Data Type is required. Must be a valid [Data Type](#data-types). |
+| Data Type | The type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like hierarchyid. | Data Type is required. Must be a valid [Data Type](#Data-Type-Constrained-List). |
 | Length | The length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types. Set to -1 to indicate MAX length. | Length is required. Length cannot be less than -1. |
 | Short Name | Business friendly name for the column. ||
 | Column Alias | Alias for the column. Generally used in conjunction with SqlSourceExpression. ||
