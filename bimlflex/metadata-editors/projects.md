@@ -4,7 +4,7 @@ title: Projects
 ---
 # Projects Editor
 
-BimlFlex `Projects` group and help to define an ETL/ELT workload.  They are uses by `Projects` to set execution grouping.
+BimlFlex `Projects` group and help to define an ETL/ELT workload. They specify the primary orchestration engine (SSIS or ADF) and define the  Connections for the Source to Target pipeline.
 
 ## Editor Overview
 
