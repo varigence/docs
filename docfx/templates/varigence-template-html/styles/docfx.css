@@ -533,17 +533,14 @@ body .toc{
 }
 */
 
-.toc .nav > li > ul,
 .toc .nav > li.filtered > ul,
 .toc .nav > li.in > ul {
   display: block;
 }
 
-/*
 .toc .nav > li > ul {
   display: none;
 }
-*/
 
 .toc ul{
   font-size: 12px;
@@ -903,6 +900,7 @@ pre > code .line-highlight {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .alert h5:before {

@@ -4,7 +4,7 @@ title: Batches
 ---
 # Batches Editor
 
-BimlFlex `Batches` group and help to define an ETL/ELT workload.  They are uses by `Projects` to set execution grouping.
+BimlFlex `Batches` group and help to define an ETL/ELT workload.  They are used by `Projects` to set execution grouping.
 
 ## Editor Overview
 
@@ -23,11 +23,11 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 
 |Icon|Action|Description|Additional Dialog|
 |-|-|-|-|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the currently set of staged changes.  The [Save] button is will only enable if the `Batch` has changes staged and there are no major validation issues with the current `Batch` properties.||
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Batch`.  A prompt will appear asking for a [New Name] and a new `Batch` will be created using all of the selected `Batch`'s current properties.||
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|This will `hard delete` the selected `Batch`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|[Archive Batch](#Archive-Batch-Dialog-Box)
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Batch`.||
-|<div style="width:30px;height:30px;background:white"><img src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will `soft delete` the currently selected `Batch`.  This will remove the `Batch` from all processing and it will be excluded from all validation.||
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|<span class="nowrap-col m-5">Save</span>|This will save the currently set of staged changes.  The [Save] button is will only enable if the `Batch` has changes staged and there are no major validation issues with the current `Batch` properties.||
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Batch`.  A prompt will appear asking for a [New Name] and a new `Batch` will be created using all of the selected `Batch`'s current properties.||
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|This will `hard delete` the selected `Batch`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|[Archive Batch](#Archive-Batch-Dialog-Box)
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Batch`.||
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will `soft delete` the currently selected `Batch`.  This will remove the `Batch` from all processing and it will be excluded from all validation.||
 
 [//]: # (TODO: Find a switch SVG to use for Deleted)
 
@@ -50,7 +50,7 @@ The [Details Tab] focuses on general batch information and configuration.  This 
 
 |Field|Description|Validation|
 |-|-|-|
-|[Batch]|The name of the BimlFlex `Batch`.  This is the value will be appended by '_Batch` and used in the naming of the batch DTSX (SSIS) or Pipeline (ADF).|String|
+|[Batch]|The name of the BimlFlex `Batch`.  This is the value will be appended by `_Batch` and used in the naming of the batch DTSX (SSIS) or Pipeline (ADF).|String|
 |[Precedence Constraint]|BimlFlex Batches execute packages and the Precedence Constraint can be changed from Success to Completion to continue loading in case of individual failures.|[Dropdown](#Precedence-Constraint-Constrained-List)|
 |[Threads]|The default number of packages that can be executed in parallel within the Batch. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel.|Integer|
 |[Containers]|The default number of sequence containers that can be executed within the Batch. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel.|Integer|

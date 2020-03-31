@@ -5836,7 +5836,7 @@ input[type="radio"]
     padding: 30px;
  }
 
-.bordered-image {
+ .bordered-image, .border-image {
   border: 1px solid #CCC;
 }
  

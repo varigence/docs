@@ -1,6 +1,30 @@
 - name: Overview
   href: index.md
+
+  # Snowflake
+- name: Snowflake Implementation
+  href: snowflake-implementation-overview.md
+- name: Snowflake Configurations
+  href: snowflake-implementation-configurations.md
+
+  # Synapse
+- name: Synapse Implementation
+  href: synapse-implementation-introduction.md
+- name: Synapse Configurations
+  href: synapse-implementation-configurations.md
+- name: Synapse AzCopy
+  href: synapse-azcopy.md
+
+# Other Concepts
 - name: Export to File
   href: export-to-file.md
 - name: Master Data Services
   href: master-data-services.md
+
+# Special sources
+- name: Source Excel Plus
+  href: source-excel-plus.md
+- name: Source Salesforce
+  href: source-salesforce.md
+- name: Source Stored Procedure
+  href: source-stored-procedure.md

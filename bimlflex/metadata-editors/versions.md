@@ -36,9 +36,9 @@ The Version Navigation List buttons are located at the top of the Versions Navig
 
 |Icon|Action|Description|
 |-|-|-|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/add.svg" /></div>|Add Action|[Add] will create a blank `Versions` form for adding a new `Version`. |
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/expanded.svg" /></div>|Collapse Action|[Collapse] will hide the Versions Navigation Pane.|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/collapsed.svg" /></div>|Expand Action|[Expand] will reveal the Versions Navigation Pane after it has been hidden.|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/add.svg" /></div>|Add Action|[Add] will create a blank `Versions` form for adding a new `Version`. |
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/expanded.svg" /></div>|Collapse Action|[Collapse] will hide the Versions Navigation Pane.|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/collapsed.svg" /></div>|Expand Action|[Expand] will reveal the Versions Navigation Pane after it has been hidden.|
 
 ## Command Bar Buttons
 
@@ -48,10 +48,10 @@ The buttons in the command bar allow actions to be taken on the selected `Versio
 
 |Icon|Action|Description|
 |-|-|-|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|Save|This will save any changes displayed in the Versions form.  The [Save] button is only enabled if there are changes in the form.|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Version`.  A prompt will appear where the source and target `Version` information can be entered. The new `Version` will be created with all of the same values as the source `Version`. [Duplicate] can not be used if there are unsaved changes in the form.|
-|<div style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Version`. The [Refresh] button is only enabled if there are unsaved changes in the form. Any unsaved changes will be lost when the form is refreshed. |
-|<div style="width:30px;height:30px;background:white"><img src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected `Version`. This version will only be visible if "Show Deleted" is enabled in BimlFlex settings.|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div>|Save|This will save any changes displayed in the Versions form.  The [Save] button is only enabled if there are changes in the form.|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Version`.  A prompt will appear where the source and target `Version` information can be entered. The new `Version` will be created with all of the same values as the source `Version`. [Duplicate] can not be used if there are unsaved changes in the form.|
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Version`. The [Refresh] button is only enabled if there are unsaved changes in the form. Any unsaved changes will be lost when the form is refreshed. |
+|<div class="icon-col m-5" style="width:30px;height:30px;background:white"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected `Version`. This version will only be visible if "Show Deleted" is enabled in BimlFlex settings.|
 
 ## Versions Form
 
@@ -63,7 +63,7 @@ The `Versions` form is used to manage all `Versions`. The fields in the form are
 | Effective From Date |The Version Value defines the value applied to the associated Version Key. The expanded editor can be used with Version Value. |YYYY-MM-DD Format|
 |Effective To Date|The Version Type defines the type of data stored in Version Value. Version Type can be JSON, SQL, or Text.| YYYY-MM-DD Format|
 |Is Current| The Is Current toggle should be enabled for active `Versions`||
-|Comments|Comments can be included to describle the state of the metadata when the `Version` was made or the purpose of the `Version`.||
+|Comments|Comments can be included to describe the state of the metadata when the `Version` was made or the purpose of the `Version`.||
 
 ## Related Items
 

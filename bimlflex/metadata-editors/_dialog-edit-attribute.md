@@ -1,3 +1,10 @@
 #### Edit Attribute Dialog Box  
 
-![Add Object Dialog Box](images/bimlflex-app-dialog-edit-attribute.png "Add Object Dialog Box")  
+Edit the selected `Attribute`.  Once entry is finished ensure that the [Save] button is clicked.
+
+<img 
+    src="images/bimlflex-app-dialog-edit-attribute.png" 
+    class="border-image" 
+    style="border: 1px solid #CCC;" 
+    title="Edit Attribute Dialog Box" 
+/>

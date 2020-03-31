@@ -33,4 +33,4 @@
 |Geometry||
 |Geography||
 |SmallMoney||
-|Variant||                                                                                                
+|Variant||

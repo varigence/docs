@@ -4,46 +4,55 @@ title: BimlFlex Developer Installation
 ---
 # Developer Installation
 
-Developer installations provide the complete developer and SSIS generation environment for building BimlFlex solutions.
-
-Other Installation Types are:
-
-* @bimlflex-analyst-installation
-* @bimlflex-server-installation
+Developer installations provide the complete modeling, developer, and artifact generation environment for building BimlFlex solutions.
 
 ## Installation Media
 
-Varigence provides two installers:
+Varigence provides a single consolidated installer for all BimlFlex components:
 
-1. `BimlStudioSetup_(Version).exe`
-1. `BimlFlexSetup_(Version).exe`
+* `BimlFlexDevSetup(_OptionalVersion).exe`
 
-## BimlStudio Setup Installation Wizard
-
-The BimlStudio Setup installation file contains the BimlStudio application.
-
-Run the BimlStudio installation and choose what options to install.
-
-To be able to build out packages in 64 bit mode, the corresponding 64 bit SSIS components needs to be available (e.g. through a local SQL Server installation). If only the 32 bit SSDT BI/Visual Studio development tools are installed, BimlStudio will only be able to build out packages in 32 bit mode. To be able to run the 64 bit BimlStudio version and still build successfully in 32 bit mode, install both BimlStudio versions and choose to build 32 bit from the 64 bit version.
-
-![Installation -center](images/bimlflex-ss-v5-bimlstudio-installer-install.png "Installation")
+The current installer is available through the @bimlflex-release-notes page
 
 ## BimlFlex Setup Installation Wizard
 
-The BimlFlex Setup Installation file contains the BimlFlex Excel add-in.
+Running the installer launches the BimlFlex installation wizard
 
-Run the BimlFlex installation and choose what options to install.
+Start by agreeing to the End User License Agreement
 
-Developers need to have both BimlStudio and the BimlFlex components installed.
+The installer will check for a license, enter your license key as needed
 
-![Installation -center](images/bimlflex-ss-v5-bimlflex-installer-install.png "Installation")
+### Author and Maintain Metadata
 
-## SSIS Components
+BimlFlex 2020 Excel Add-in
 
-The Varigence Custom SSIS Components are required for building and testing the SSIS Packages for developers opening the generated SSIS packages in Visual Studio and for running the packages on an SSIS Server.
+Install the bitness corresponding to the local installation of Excel.
 
-The SSIS Custom components are installed separately, [read about the installation here](ssis-custom-components.md)
+BimlFlex 2020 Metadata Entry
+
+Install the 64-bit version if you are on a 64-bit operating system
+
+### Build Solution
+
+Install BimlStudio
+
+Install both 32-bit and 64-bit versions.
+
+To be able to build out packages in 64-bit mode, the corresponding 64 bit SSIS components need to be available (e.g. through a local SQL Server installation). If only the 32 bit SSDT BI/Visual Studio development tools are installed, BimlStudio will only be able to build out packages in 32-bit mode. To be able to run the 64-bit BimlStudio version and still build successfully in 32-bit mode, install both BimlStudio versions and choose to build 32-bit from the 64-bit version.
+
+### Run Solution
+
+BimlFlex provides custom SSIS components that are used in SSIS implementations. Install the versions matching your environment and expected targets. For Snowflake targets, install both the BimlFlex SSIS Components 2020 and the BimlFlex Snowflake SSIS Components 2020 for your SSIS and SQL Server version.
+
+### Install or Upgrade BimlFlex Databases
+
+BimlFlex uses 2 databases
+
+* BimlFlex database
+    Used to store Metadata for the solution
+* BimlCatalog
+    Used to store audit information, runtime logging, and parameter values
 
 ## Uninstallation
 
-If the Application require uninstallation, they can use the standard "Uninstall a Program" option in Control Panel, Programs, Programs and Features.
+If the Application require uninstallation, use the standard "Uninstall a Program" option in Control Panel > Programs > Programs and Features.

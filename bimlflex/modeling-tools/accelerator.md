@@ -106,11 +106,7 @@ Iterating through the metadata and updating the model to better support the targ
 
 If there is a need to update the model and rerun the preview, it can be done at any time. Once the metadata from the preview has been published, all metadata will be available in the BimlFlex App Object and Column screens for direct manipulation there. It will also be available in the Excel metadata editor for bulk updates. The pattern of tweaking the Metadata to fit the business process and target model can be repeated however many times needed before publishing.
 
-
-
 Note that the accelerator will not resurface any entities already accelerated and marked as excluded or deleted. To see these entities, include them in the project by removing the excluded/deleted flag.
-
-More about Show Excluded and Show Deleted in [BimlFlex Setup](setup-database-connection.md).
 
 ## Updating the metadata to meet requirements
 
