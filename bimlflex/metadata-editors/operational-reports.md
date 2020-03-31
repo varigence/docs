@@ -4,7 +4,9 @@ title: BimlFlex Operational Reporting
 ---
 # Operational Reporting
 
-Execution logging it built into BimlFlex package runs. The package execution details are logged to a BimlCatalog database and this data is available for reporting. The BimlFlex app surfaces the data into Operational Reporting screens to allow users to see the status of their package runs at a high level and to drill down into details and view errors of failing packages.
+Operational Reporting screens allow users to see the status of their package runs at a high level and to drill down into details and view errors in failing packages. 
+
+The reporting screens leverage the execution logging which is built into BimlFlex package runs. The package execution details are logged to a BimlCatalog database and this data is aggregated for reporting.
 
 ## Configuring Operational Reporting
 
@@ -38,4 +40,4 @@ Level 3 - details of specific execution batch and its child packages
 
 ### Lookup Execution Id
 
-There is a Execution Id lookup field in the First Level screen. Use it if you know the execution id (may be called Audit Id in SSIS) and you would like to go straight to the package execution details. If the Execution Id points to a batch all the batch and child information will be available. If it points to a child package, then only that package information will be available on the details screen.
+The `Execution Id` lookup field is available in the First Level screen. It can be used to go straight to the package execution details if the execution id is known. It may also be called audit id in some packages. If the `Execution Id` points to a batch, then all the batch and child information will be available. If it points to a child package, then only that package information will be available on the details screen.

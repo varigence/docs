@@ -5,7 +5,9 @@ title: Toolbar
 
 ## BimlFlex Tool Bar  
 
-The [BimlFlex Tool Bar] holds links to most of the higher level system configurations. The current `Customer` and `Versions` is also displayed in the top right corner and can be switched at any time by clicking the appropriate values.  
+The BimlFlex Toolbar holds links to most of the higher level system configurations. It also contains validations and notifications for ensuring the integrity of the Metadata.
+
+The current `Customer` and `Versions` is displayed in the top right corner and can be switched at any time by clicking the appropriate values.  
 
 **BimlFlex Tool Bar**  
 <img 

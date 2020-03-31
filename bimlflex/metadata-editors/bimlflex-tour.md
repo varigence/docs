@@ -4,7 +4,7 @@ title: BimlFlex Tour
 ---
 # BimlFlex Tour  
 
-The following sections describe the UI elements that make up an Entity Editor and how the features provided navigation and interaction.  
+The following sections describe the UI elements that make up an Entity Editor and how the features provide navigation and interaction.  
 
 [//]: # (TODO: Maybe snip a starting window?)
 

@@ -4,7 +4,7 @@ title: Batches
 ---
 # Batches Editor
 
-BimlFlex `Batches` group and help to define an ETL/ELT workload.  They are uses by `Projects` to set execution grouping.
+BimlFlex `Batches` group and help to define an ETL/ELT workload.  They are used by `Projects` to set execution grouping.
 
 ## Editor Overview
 
