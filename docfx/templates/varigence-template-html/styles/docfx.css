@@ -900,6 +900,7 @@ pre > code .line-highlight {
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .alert h5:before {

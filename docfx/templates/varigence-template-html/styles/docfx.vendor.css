@@ -1121,7 +1121,7 @@ a.badge:focus,a.badge:hover,a.label:focus,a.label:hover{color:#fff;cursor:pointe
 .thumbnail a>img,.thumbnail>img{margin-right:auto;margin-left:auto}
 a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover{border-color:#337ab7}
 .thumbnail .caption{padding:9px;color:#333}
-.alert{padding:15px;border:1px solid transparent;border-radius:4px}
+.alert{padding:15px;border-radius:4px;border-left: 8px solid grey;margin: 10px;}
 .alert h4{margin-top:0;color:inherit}
 .alert>p,.alert>ul{margin-bottom:0}
 .alert>p+p{margin-top:5px}
@@ -1131,13 +1131,13 @@ a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover{border-color:#337ab7}
 .alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}
 .alert-success hr{border-top-color:#c9e2b3}
 .alert-success .alert-link{color:#2b542c}
-.alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}
+.alert-info{color:#31708f;background-color:#d9edf73b;border-color:#bce8f1}
 .alert-info hr{border-top-color:#a6e1ec}
 .alert-info .alert-link{color:#245269}
-.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}
+.alert-warning{color:#8a6d3b;background-color:#fcf8e361;border-color:#faebcc}
 .alert-warning hr{border-top-color:#f7e1b5}
 .alert-warning .alert-link{color:#66512c}
-.alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}
+.alert-danger{color:#a94442;background-color:#f2dede54;border-color:#ebccd1}
 .alert-danger hr{border-top-color:#e4b9c0}
 .alert-danger .alert-link{color:#843534}
 @-webkit-keyframes progress-bar-stripes{from{background-position:40px 0}
