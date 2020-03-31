@@ -8,7 +8,7 @@ The following sections describe the UI elements that make up an Entity Editor an
 
 [//]: # (TODO: Maybe snip a starting window?)
 
-[!include[BimlFlex Tool Bar](_incl-toolbar.md)]
+[!include[BimlFlex Toolbar](_incl-toolbar.md)]
 
 ## BimlFlex Menu  
 

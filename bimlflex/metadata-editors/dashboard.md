@@ -97,7 +97,7 @@ The Recent Projects pane displays the most recently updated Projects to allow fo
 
 ![Recent Projects Pane](images/dashboard-recent-projects-menu.64527.png "Project Pane Overview")
 
-- Click ![Edit Project](images/dashboard-recent-connections-recent-projects-menu-edit-rpoject.64527.png) to navigate to the Projects Page
+- Click ![Edit Project](images/dashboard-recent-connections-recent-projects-menu-edit-project.64527.png) to navigate to the Projects Page
 - Click ![Import Metadata](images/dashboard-recent-connections-recent-projects-menu-import-metadata.64527.png)  to navigate to the Import Metadata screen for the Source Connection. This link will appear for Projects with a Connection that has a Source System Integration Stage.
 - Click ![Objects](images/dashboard-recent-connections-recent-projects-menu-objects.64527.png) to navigate to Objects related to the Project. The number displayed is the number of Objects related to the Project
 - Click ![Columns](images/dashboard-recent-connections-recent-projects-menu-columns.64527.png) to navigate to Columns related to the Project. The number displayed is the number of Columns related to the Project

@@ -66,7 +66,7 @@ The [Details Tab] focuses on general `Project` information and configuration.  T
 
 |Field|Description|Validation|
 |-|-|-|
-|[Poject]|The name of the BimlFlex `Project`.  This is the value will be appended by `_Project` and used as the name of the SSIS Project when using [Project Deployment].  It is also used as a prefix in the naming of the individual DTSX packages (SSIS) or associated Pipelines (ADF).|String|
+|[Project]|The name of the BimlFlex `Project`.  This is the value will be appended by `_Project` and used as the name of the SSIS Project when using [Project Deployment].  It is also used as a prefix in the naming of the individual DTSX packages (SSIS) or associated Pipelines (ADF).|String|
 |[Parent Project]|The parent `Project` for the current `Project`.  This is used when a `Project` requires more than one `Source Connection`, common amognst processing flat files as each file requires a seperate `Connection`.  This allows for multiple child `Projects` to functionally operate as a single `Project`.|Dropdown (Existing `Projects`)|
 |[Batch]|The BimlFlex `Batch` to use when building out the project.|Dropdown (Existing `Batches`)|
 |[Description]|Optional metadata to provide description.|String|
