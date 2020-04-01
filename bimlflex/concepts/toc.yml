@@ -10,8 +10,8 @@
   href: data-vault-templates.md
 - name: Data Mart Templates
   href: data-mart-templates.md
-- name: Integration Keys and Relationships
-  href: integration-keys-and-relationships.md
+- name: Integration Keys
+  href: integration-keys.md
 - name: Load Parameters
   href: load-parameters.md
 - name: Delete Detection
