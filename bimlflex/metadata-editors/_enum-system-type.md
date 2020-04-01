@@ -1,6 +1,6 @@
 #### System Type Constrained List
 
-|Value|Definition|
+|Value|Description|
 |-|-|
 |Flat File Delimited|Flat File with Delimiters|
 |Flat File Ragged Right|Flat File with Ragged Right Formatting|

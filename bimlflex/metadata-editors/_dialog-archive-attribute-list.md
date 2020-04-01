@@ -1,4 +1,4 @@
-#### Archive Attribute Dialog Box  
+#### Archive Attribute Dialog  
 
 Confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the *Ok* button.
 
