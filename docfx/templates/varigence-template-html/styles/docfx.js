@@ -19,7 +19,7 @@ $(function () {
   renderNavbar();
   renderSidebar();
   renderAffix();
-  renderFooter();
+  //renderFooter();
   renderLogo();
 
   breakText();
@@ -477,9 +477,11 @@ $('.header-search-icon').click(function () {
       loadToc();
     } else {
       registerTocEvents();
+      /*
       if ($('footer').is(':visible')) {
         $('.sidetoc').addClass('shiftup');
       }
+      */
 
       // Scroll to active item
       var top = 0;
@@ -490,9 +492,11 @@ $('.header-search-icon').click(function () {
       })
       $('.sidetoc').scrollTop(top - 50);
 
+      /*
       if ($('footer').is(':visible')) {
         $('.sidetoc').addClass('shiftup');
       }
+      */
 
       renderBreadcrumb();
     }
@@ -620,9 +624,12 @@ $('.header-search-icon').click(function () {
       var html = '<h5 class="title">In This Article</h5>'
       html += util.formList(hierarchy, ['nav', 'bs-docs-sidenav']);
       $("#affix").empty().append(html);
+      /*
       if ($('footer').is(':visible')) {
         $(".sideaffix").css("bottom", "70px");
       }
+      */
+     
       $('#affix a').click(function(e) {
         var scrollspy = $('[data-spy="scroll"]').data()['bs.scrollspy'];
         var target = e.target.hash;
@@ -727,6 +734,7 @@ $('.header-search-icon').click(function () {
   }
 
   // Show footer
+  /*
   function renderFooter() {
     initFooter();
     $(window).on("scroll", showFooterCore);
@@ -767,6 +775,7 @@ $('.header-search-icon').click(function () {
       $(".sideaffix").addClass("shiftup");
     }
   }
+  */
 
   function renderLogo() {
     // For LOGO SVG

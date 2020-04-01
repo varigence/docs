@@ -89,9 +89,11 @@ span.languagekeyword{
     font-weight: bold;
 }
 
+/*
 svg:hover path {
     fill: #ffffff;
 }
+*/
 
 .hljs {
   display: inline;
@@ -1460,16 +1462,21 @@ div.embeddedvideo iframe {
 .waves {
   overflow: hidden;
 }
+/*
 .waves--footer {
   position: absolute;
   top: -98px;
   left: 0;
   width: 100%;
 }
+*/
+
 .waves--footer svg {
     width: 100%;
-    min-width: 1900px;
+/*    min-width: 1900px;*/
   }
+
+/*
 .waves--large {
   position: absolute;
   bottom: -61px;
@@ -1477,6 +1484,7 @@ div.embeddedvideo iframe {
   z-index: 1;
   width: 100%;
 }
+*/
 .waves--large svg {
     width: 100%;
     min-width: 500px;
