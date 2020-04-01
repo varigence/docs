@@ -5777,6 +5777,15 @@ input[type="radio"]
 .mx-auto {
   margin-right: auto !important; }
 
+/* icon styles */
+
+.icon-inline {
+  width: 20px;
+  height: 20px;
+  background: #F6F6F6 !important;
+  border: 1px solid #EEE;
+  padding: 3px;
+}
 
 /* icon col styles */
 .icon-col {
