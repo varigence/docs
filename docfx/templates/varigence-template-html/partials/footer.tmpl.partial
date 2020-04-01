@@ -18,7 +18,7 @@
 
 <div class="layout__footer">
   <footer class="footer">
-    <div class="footer__wrapper container">
+    <div class="footer__wrapper">
       <div class="waves waves--footer">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 100" width="1900" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g transform="translate(-578)">
