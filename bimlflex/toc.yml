@@ -42,8 +42,8 @@
   - name: Reference Docs
     href: reference-documentation/toc.yml
 
-  - name: Tips And Tricks
-    href: tips-and-tricks/toc.yml
+#  - name: Tips And Tricks
+#    href: tips-and-tricks/toc.yml
 
   - name: Release Notes
     href: release-notes/toc.yml
