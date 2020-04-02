@@ -27,7 +27,7 @@ function populateNavSelect(){
 
     // Don't show nav select if we can't populate it.
     if(!toc_groups || toc_groups.length === 0) {
-        $("#small-nav-dropdown").hide();
+        $("#small-nav-container").hide();
         return;
     }
 
