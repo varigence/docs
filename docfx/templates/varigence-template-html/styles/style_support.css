@@ -2475,8 +2475,13 @@ main {
   color: #fff; }
 
 @media (max-width: 767px) {
+  header {
+    min-height: 80px;
+  }
   .help-center-name {
-    margin: 20px 0px 0px; } }
+    margin: 5px 0px 0px; } 
+  }
+
 .hero-unit {
   position: relative;
   z-index: 3;
@@ -3853,6 +3858,13 @@ input[type="search"]:focus {
 .footer__wrapper {
   position: relative;
   background: #00416B; }
+
+  @media (max-width: 767px) {
+    .footer__wrapper {
+      padding: 0 40px;
+      text-align: right;
+    }
+  }
 
 .footer__inner {
   width: 100%;

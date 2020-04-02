@@ -348,15 +348,15 @@ article section {
 
 .docs-dropdown-navbar-container {
   display: none;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 .small-nav-dropdown-title {
   display: inline-block;
-  margin: 0 14px;
+  margin: 0 5px 0 14px;
 }
 #small-nav-dropdown { 
   display: inline-block;
-  width: calc(100% - 90px);
+  width: calc(100% - 74px);
 }
 .pullup {
   margin-top: -120px;
