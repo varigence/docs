@@ -1,4 +1,4 @@
-# Creating BimlExpress Account
+# BimlExpress Account
 
 ## Why do I need an account for a free product?
 

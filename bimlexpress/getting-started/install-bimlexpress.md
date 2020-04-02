@@ -1,4 +1,4 @@
-# Installing BimlExpress
+# Install BimlExpress
 
 ## Download BimlExpress
 

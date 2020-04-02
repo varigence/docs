@@ -1,4 +1,4 @@
-# BimlExpress Menus and Options
+# Menus and Options
 
 ## BimlExpress Toolbar
 
