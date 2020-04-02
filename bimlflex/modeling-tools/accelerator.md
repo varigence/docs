@@ -47,11 +47,9 @@ This guide builds on the other guides in the series and assumes that the environ
 
 ### The BimlFlex Workflow
 
-The Accelerator integrates into and is part of the normal BimlFlex workflow
+The Accelerator integrates into and is part of the normal BimlFlex workflow.
 
 [//]: # (TODO: New Image for UPDATED BimlFlex workflow)
-
-![BimlFlex Workflow](../metadata-editors/images/bimlflex-ss-v5-accelerator-bimlflex-workflow.png "BimlFlex Workflow")
 
 The workflow uses the BimlFlex App to model and manage all metadata. The data can be pushed and updated from both Excel and the BimlFlex App. BimlFlex Excel is useful for bulk changes on multiple columns.
 

@@ -349,6 +349,7 @@ article section {
 .docs-dropdown-navbar-container {
   display: none;
   margin-top: -20px;
+  padding: 0 15px 0 5px;
 }
 .small-nav-dropdown-title {
   display: inline-block;

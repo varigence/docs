@@ -1609,6 +1609,12 @@ input[type="submit"]:active {
 .container {
   padding-right: 15px;
   padding-left: 15px; }
+  
+@media (max-width: 767px) {
+  .container.body-content {
+    padding-left: 5px; 
+  }
+}
 
 @media (min-width: 768px) {
   .container {
