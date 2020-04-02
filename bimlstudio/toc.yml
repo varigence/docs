@@ -11,6 +11,9 @@
   - name: Miscellaneous
     href: miscellaneous/toc.yml
 
+  - name: Biml Reference
+    href: ../biml-reference/toc.yml
+
   - name: Release Notes
     href: release-notes/toc.yml
     topicHref: release-notes/index.md
