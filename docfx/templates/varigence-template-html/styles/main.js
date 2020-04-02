@@ -10,11 +10,22 @@ $(function () {
 });
 
 $(window).load(function() {
+    setTimeout(function(){ populateNavSelect(); }, 500);
+});
+
+function populateNavSelect(){
     var $newGroupElem;
     var $newElem;
     var SelectList = $("#small-nav-dropdown");
 
     var toc_groups = $('#toc').find('.level2').children('li').children('a');
+
+    // Don't show nav select if we can't populate it.
+    if(!toc_groups) {
+        $("#small-nav-dropdown").hide();
+        return;
+    }
+
     toc_groups.each(function () {
         $newGroupElem = $(document.createElement('optgroup')).attr('value', this.innerText)
             .attr('label', this.innerText)
@@ -29,7 +40,7 @@ $(window).load(function() {
     });
 
     selectNavValue();
-});
+}
 
 function navigateSelect(selectedOption) {
     var path = selectedOption.value;  
