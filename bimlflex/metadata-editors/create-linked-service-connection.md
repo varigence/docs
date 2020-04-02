@@ -6,19 +6,19 @@ title: Configuring a Linked Service Connection
 
 [//]: # (TODO: Include a summary of Linked Service purpose and use in connections)
 
-Connections can be enabled to work with cloud based linked services.
+**Connections** can be enabled to work with cloud based linked services.
 
 ### Enable Connection for Cloud Services
 
-In the Connections module, click `+ Add` in the top left of the screen or select an existing connection to edit.
+In the **Connections Editor**, click  Add in the top left of the screen or select an existing connection to edit.
 
-![Connections Module Menu -center][connections-module-list]
+![Connections Editor Menu -center][connections-module-list]
 
-In the `Details` tab of the connection form, select the `Integration Stage`, `Connection Type`, and `System Type` for your connection. If the configuration provided is compatible with a linked service then a `Cloud` setting will appear in the top right of the connection form.
+In the **Details tab** of the Connections Editor, select the *Integration Stage*, *Connection Type*, and *System Type* for your connection. If the configuration provided is compatible with a linked service then a *Cloud* setting will appear in the action bar.
 
 ![Connection Details Tab -center -50%][connections-details-tab]
 
-After toggling the `Cloud` setting, a tab for Linked Services will appear at the bottom of the form and any availble linked services will appear in the `Linked Service Types` dropdown. Select a `Linked Service Type` to configure it.
+After toggling the *Cloud* setting, a tab for Linked Services will appear at the bottom of the form and any available linked services will appear in the *Linked Service Types dropdown*. Select a `Linked Service Type` to configure it.
 
 ![Linked Service Dropdown -center -50%][connections-linked-service-dropdown]
 

@@ -40,8 +40,8 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
     title="{Entity Plural} Editor Fields"
 />
 
-|Field|Description|Validation|
-|-|-|-|
+|Field|Description|
+|-|-|
 | Connection | The **Connection** the the **Column** is associated with. Connection is Required. Connection is Required. |
 | Object | The **Object** or table that the **Column** is associated with. Object is Required. |
 | Column | The name of the Column. Column Name is Required. Column Name must be unique for the **Object**. |
