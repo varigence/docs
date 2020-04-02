@@ -25,6 +25,8 @@ a.disable:hover {
 
 .container.body-content {
   font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+  width:100% !important;
+  max-width: 1648px;
 }
 
 .container.body-content h1, .container.body-content h1,
@@ -414,12 +416,13 @@ article section {
 
 #sidetoc {
   float: left;
+  margin-left: -10px;
 }
 
 
 .sidetoc {
 /*  float:left;*/
-  width: 260px;
+  width: 240px;
   top: 150px;
   bottom: 0;
   overflow-x: hidden;
@@ -594,12 +597,16 @@ ul.nav.level3>li {
 .sidenav {
   position: sticky;
   top: 0;
+  width: 240px;
+  padding: 15px 0;
+  left: -15px;
+  margin-right: -15px;
 }
 
 .sidefilter {
 /*  float:left;*/
   top: 90px;
-  width: 260px;
+  width: 240px;
 /*  padding: 20px;*/
   border-left: 1px solid #e7e7e7;
   z-index: 1;
@@ -643,7 +650,7 @@ ul.nav.level3>li {
 }
 
 .article.grid-right {
-  margin-left: 280px;
+  margin-left: 240px;
 }
 
 .inheritance hr {
@@ -818,10 +825,7 @@ footer {
     text-align: center;
   }
   .sidenav {
-    width: 260px;
-    padding: 15px 0;
-    margin-left: -15px;
-    margin-right: -15px;
+    display: none;
   }
   .sidefilter {
     position: static;
