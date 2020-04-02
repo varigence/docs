@@ -22,7 +22,7 @@ function populateNavSelect(){
     var $newGroupElem;
     var $newElem;
     var SelectList = $("#small-nav-dropdown");
-
+    var hasChildLinks = false;
     var toc_groups = $('#toc').find('.level2').children('li').children('a');
 
     // Don't show nav select if we can't populate it.
@@ -32,7 +32,9 @@ function populateNavSelect(){
     }
 
     toc_groups.each(function () {
-        $newGroupElem = $(document.createElement('optgroup')).attr('value', this.innerText)
+        if ($(this).siblings('ul').length > 0) {
+            //  has child links, is a optgroup
+            $newGroupElem = $(document.createElement('optgroup')).attr('value', this.innerText)
             .attr('label', this.innerText)
             .appendTo(SelectList);
 
@@ -41,9 +43,41 @@ function populateNavSelect(){
                 $newElem = $(document.createElement('option')).attr('value', this.pathname)
                     .attr('label', this.innerText)            
                     .appendTo($newGroupElem);
+
+                    hasChildLinks = true;
             });
+            
+        }
     });
 
+    // TODO: Support Single Level links
+    // // Look for Level 2 links
+    // toc_groups = $('#toc').find('.level1').children('li').children('a');
+
+    // toc_groups.each(function () {
+    //     if ($(this).siblings('ul').length > 0) {
+    //         // traverse up to find parent 'ul', then sibling link which will be the optGroup
+    //         const parentLink = $(this).parents('ul').siblings('a');
+
+    //         $newGroupElem = $(document.createElement('optgroup')).attr('value', parentLink.innerText)
+    //             .attr('label', parentLink.innerText)
+    //             .appendTo(SelectList);
+
+    //             var toc_opts = $(parentLink).parent().children('.level2').children('li').children('a');
+    //             toc_opts.each(function () {
+    //                 $newElem = $(document.createElement('option')).attr('value', this.pathname)
+    //                     .attr('label', this.innerText)            
+    //                     .appendTo($newGroupElem);
+    //             });
+
+    //         }
+    //     });
+
+     // Don't show nav select if we can't populate it.
+     if(!hasChildLinks) {
+        $("#small-nav-container").hide();
+        return;
+    }
     selectNavValue();
 }
 
