@@ -8,5 +8,8 @@
   - name: Comparison Charts
     href: comparison/toc.yml
 
+  - name: Biml Reference
+    href: ../biml-reference/toc.yml
+
   - name: Release Notes
     href: release-notes/toc.yml

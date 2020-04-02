@@ -1087,7 +1087,7 @@ body
 .ReferenceList  .ReferenceIconColumnHeader, .ReferenceList  .ReferencingTypeColumnHeader, .ReferenceList  .ReferencingPropertyColumnHeader, .ReferenceList  .ReferencingPropertySummaryColumnHeader,
 .MemberParentList  .MemberParentIconColumnHeader, .MemberParentList  .MemberParentTypeColumnHeader, .MemberParentList  .MemberParentSummaryColumnHeader
 {
-	background-color: #EEEEEE;
+	/*background-color: #EEEEEE;*/
 }
 
 .MemberList .MemberNameColumnHeader, .TypeList .TypeNameColumnHeader, .ParameterList .ParameterNameColumnHeader, .NamespaceList .NamespaceNameColumnHeader, .AttributeList .AttributeNameColumnHeader,
@@ -1316,7 +1316,7 @@ html>body .innerContent
 	padding-left: 20px;
 }
 
-.AttributeList
+.AttributeList, .ChildList
 {
 	font-family: 'Segoe UI', Verdana, Arial;
 	font-size: 10pt;
