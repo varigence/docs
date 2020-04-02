@@ -16,7 +16,6 @@ In this session, we discuss the various modeling and configuration options avail
 
 ![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0)
 
-
 ### Introduction to the Accelerator
 
 The Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of the source metadata. It is configurable and provides a preview that can be rerun as many times as necessary so that the initial Data Vault modeling can be completed faster than through manual metadata modeling.
@@ -93,12 +92,12 @@ Constraining the Data Vault Acceleration to a subset allows for a more agile del
 
 The Accelerator shows the source and preview side-by-side with options to collapse each pane or to resize the panes by dragging the splitter.
 
-|||
-|--- |--- |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/diagram-view.svg"/></div>| Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/print.svg"/></div>| Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/refresh.svg"/></div>| Refresh the whole layout or you can change the layout as you like by dragging tables. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/publish.svg"/></div>| Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
+| Icon | Description |
+|--- |--- |-|
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/diagram-view.svg"/></div> | Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/print.svg"/></div> | Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/refresh.svg"/></div> | Refresh the whole layout or you can change the layout as you like by dragging tables. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/publish.svg"/></div> | Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
 
 Iterating through the metadata and updating the model to better support the target Data Vault model, each time a user should set the updated metadata to be persisted to the Metadata Database. This will create all Data Vault tables and columns as well as the Source To Target mappings needed to populate the Data Vault from the chosen source.
 
@@ -124,11 +123,11 @@ The first rule applied is using the source metadata to derive the Table type. By
 
 ### Mark potential satellite tables
 
-Every table with **no incoming foreign keys** and only **one outgoing foreign key** with all the referencing columns also **primary key** columns and no other columns are part of the primary key is a candidate to become a Satellite source table.
+Every table with no incoming foreign keys and only one outgoing foreign key with all the referencing columns also primary key columns and no other columns are part of the primary key is a candidate to become a Satellite source table.
 
 ### Mark as links
 
-Every table with **no incoming foreign keys** and more than **one outgoing foreign key** with all the referencing columns also primary key columns is a candidate to become a Link source table.
+Every table with no incoming foreign keys and more than one outgoing foreign key with all the referencing columns also primary key columns is a candidate to become a Link source table.
 
 ### Mark as hubs
 
@@ -138,7 +137,7 @@ If the source doesn't have relationships defined, such as flat files, these need
 
 ## Acceleration
 
-All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the @configurations and @settings
+All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the **Configurations** and **Settings**
 
 ### Context Aware Actions
 
@@ -148,23 +147,23 @@ By clicking on a Table or Column a user gets a pop up of all the actions buttons
 
 ![Accelerator Action Icons Minimized](../metadata-editors/images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
 
-By Clicking the elipsis a user may see the maximized view which contains the words alongside the icons.
+By clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
 
 ![Accelerator Action Icons Maximized](../metadata-editors/images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
 
-||||
+| Icon | Action | Description |
 |--- |--- |--- |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/add-reference.svg"/></div>| <span class="nowrap-col m-5">Add Reference</span> | Source action to add a reference. This can also be done by dragging a column onto the target table. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This action removes the reference link, not the column. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div>| <span class="nowrap-col m-5">Navigate</span> | Source action to navigate to table or column. The current Accelerator layout will be persisted in memory for you to come back to. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div>| <span class="nowrap-col m-5">Edit</span> | Source action to open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key.|
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div>| <span class="nowrap-col m-5">Add Integration Key</span> | Source action to add an integration key using the selected columns. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div>| <span class="nowrap-col m-5">Show Related</span> | Source action to add all the related tables by interrogating the direct references. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div>| <span class="nowrap-col m-5">Bulk Delete</span> | Source or Preview bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive source columns. Exclude preview columns. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/split-columns.svg"/></div>| <span class="nowrap-col m-5">Spit</span> | Preview action to split columns from a Satellite. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/revert-split-columns.svg"/></div>| <span class="nowrap-col m-5">Revert Spit</span> | Preview action to revert columns that were split from a Satellite or to revert a Unit of Work. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/append-record-source.svg"/></div>| <span class="nowrap-col m-5">Append Record Source</span> | Preview action to appended record source to a Satellite name.
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-record-source.svg"/></div>| <span class="nowrap-col m-5">Remove Record Source</span> | Preview action to remove appended record source from a Satellite name. 
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/add-reference.svg"/></div> | <span class="nowrap-col m-5">Add Reference</span> | Source action to add a reference. This can also be done by dragging a column onto the target table. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This action removes the reference link, not the column. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Source action to navigate to table or column. The current Accelerator layout will be persisted in memory for you to come back to. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Source action to open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Source action to add an integration key using the selected columns. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show Related</span> | Source action to add all the related tables by interrogating the direct references. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Source or Preview bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive source columns. Exclude preview columns. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/split-columns.svg"/></div> | <span class="nowrap-col m-5">Spit</span> | Preview action to split columns from a Satellite. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/revert-split-columns.svg"/></div> | <span class="nowrap-col m-5">Revert Spit</span> | Preview action to revert columns that were split from a Satellite or to revert a Unit of Work. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/append-record-source.svg"/></div> | <span class="nowrap-col m-5">Append Record Source</span> | Preview action to appended record source to a Satellite name. |
+|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-record-source.svg"/></div> | <span class="nowrap-col m-5">Remove Record Source</span> | Preview action to remove appended record source from a Satellite name. |
 
 ### Drag and Drop Actions
 
@@ -191,7 +190,7 @@ It is possible to split Satellite columns into separate Satellites. This is usef
 
 ![Accelerator Action - Split Satellite](../metadata-editors/images/bimlflex-app-accelerator-actions-split-sat.png "Accelerator Action - Split Satellite")
 
-The sample above shows how the `Customer` source table Accelerated into a `HUB_Customer` and two separate Satellites. Notice the `pdv.` schema shows that this is a preview. Once published the existing table will have an `rdv.` schema.
+The sample above shows how the "Customer" source table Accelerated into a "HUB_Customer" and two separate Satellites. Notice the "pdv" schema shows that this is a preview. Once published the existing table will have an "rdv" schema.
 
 ### Accelerate Links
 
@@ -237,19 +236,19 @@ This column contains the actual table name to be used as after the solution is m
 
 ![Change Model Override Name](../metadata-editors/images/bimlflex-app-accelerator-actions-modeloverridename.png "Change Model Override Name")
 
-If a source system has entity names like `GL002` and the actual business name is `GeneralLedger` the Accelerator will convert this to `[HUB_GeneralLedger]` and `[SAT_GeneralLedger]`
+If a source system has entity names like "GL002" and the actual business name is "GeneralLedger" the Accelerator will convert this to "[HUB_GeneralLedger]" and "[SAT_GeneralLedger]"
 
 ![Change Model Override Name Result](../metadata-editors/images/bimlflex-app-accelerator-actions-modeloverridename-result.png "Change Model Override Name Result")
 
-The image above shows the previous Unit Of Work example with `SalesOrderHeader` overridden with `Sale`
+The image above shows the previous Unit Of Work example with "SalesOrderHeader" overridden with "Sale"
 
 #### ModelOverrideShortName
 
 This column contains the short name to be used for Links and Link Satellites after the solution is modelled.
 
-A Link between `GeneralLedger` and `ChartOfAccounts` will use the default name `[LNK_GeneralLedger_ChartOfAccounts]`.
+A Link between "GeneralLedger" and "ChartOfAccounts" will use the default name "[LNK_GeneralLedger_ChartOfAccounts]".
 
-Defining the value `GL_COA` here will generate the name `[LNK_GL_COA]` providing easy naming flexibility through metadata when modelling more complex relationships.
+Defining the value "GL_COA" here will generate the name "[LNK_GL_COA]" providing easy naming flexibility through metadata when modelling more complex relationships.
 
 #### ModelObjectType
 
@@ -265,11 +264,11 @@ This is used to define the business attribute name.
 
 While the same column names are used in source to staging to persistent staging, it is usually advisable to use actual business process aligned names in the Data Vault.
 
-If a source system has column names like `GL002CD123` and the actual business name is `GeneralLedgerCode` the Accelerator will convert this to `[GeneralLedgerCode]`
+If a source system has column names like "GL002CD123" and the actual business name is "GeneralLedgerCode" the Accelerator will convert this to "[GeneralLedgerCode]"
 
 ![Change Model Override Name](../metadata-editors/images/bimlflex-app-accelerator-actions-col-modeloverridename.png "Change Model Override Name")
 
-The image above shows `PostalCode` overridden with `ZipCode`.
+The image above shows "PostalCode" overridden with "ZipCode".
 
 #### ModelGrouping
 
@@ -279,9 +278,9 @@ This attribute is used to group columns and split them into separate Satellites 
 
 This attribute is used to define the Link and Link Satellite concatenated table name. It is required when multiple table references exist on the source table.
 
-An example would be the `SalesOrderLine` source table where the `ShippingAddress` and `BillingAddress` both reference the `Address` table.
+An example would be the "SalesOrderLine" source table where the "ShippingAddress" and "BillingAddress" both reference the "Address" table.
 
-Two relationships will be created with the ModelReference forming part of the name. This attribute is autogenerated when importing metadata and can be overridden.
+Two relationships will be created with the ModelReference forming part of the name. This attribute is auto-generated when importing metadata and can be overridden.
 
 ## Final review and preview publish
 

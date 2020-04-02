@@ -18,7 +18,7 @@ Create BimlCatalog connections for each environment by providing the Name and Co
 
 ## Reporting Screens
 
-If there is reporting data for the Batches and Projects in the currently selected version the Dashboard will display a summary view.
+If there is reporting data for the **Batches** and **Projects** in the currently selected version the Dashboard will display a summary view.
 
 The reporting screens are broken up into three views of the data:
 
@@ -40,4 +40,4 @@ Level 3 - details of specific execution batch and its child packages
 
 ### Lookup Execution Id
 
-The `Execution Id` lookup field is available in the First Level screen. It can be used to go straight to the package execution details if the execution id is known. It may also be called audit id in some packages. If the `Execution Id` points to a batch, then all the batch and child information will be available. If it points to a child package, then only that package information will be available on the details screen.
+The *Execution Id* lookup field is available in the First Level screen. It can be used to go straight to the package execution details if the execution id is known. It may also be called audit id in some packages. If the *Execution Id* points to a batch, then all the batch and child information will be available. If it points to a child package, then only that package information will be available on the details screen.

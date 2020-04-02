@@ -10,15 +10,15 @@ title: Connections
 
 ## Action Buttons
 
-||||
+|Icon|Action|Description|
 |--- |--- |--- |
 |<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/save.svg"/></div>| <span class="nowrap-col m-5">Save</span> | Save changes. `Ctrl+S` shortcut available.|
 |<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/duplicate-objects.svg"/></div>| <span class="nowrap-col m-5">Duplicate</span> | Duplicate connection.|
 |<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/archive-delete.svg"/></div>| <span class="nowrap-col m-5">Archive</span> | Archive Connection.|
 |<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/import-metadata.svg"/></div>| <span class="nowrap-col m-5">Import Metadata</span> | Import Metadata from Source Database - [More info](../concepts/importing-metadata.md).|
 |<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/refresh.svg"/></div>| <span class="nowrap-col m-5">Refresh</span> | Refresh clears all changes.|
-|<div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div>|Cloud|Enable for Cloud. This shows all the Linked Service fields.|
-|<div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div>|Exclude|This will remove the **Object** and all associated entities from processing and validation.  This is designed to be paired with the [Use My Exclusions (Locally)] global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities.|
+|<div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div>|Cloud|Enable for Cloud. This shows all the Linked Service fields. For information linked service connections see [Configuring a Linked Service Connection](create-linked-service-connection.md). |
+|<div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div>|Exclude|This will remove the **Object** and all associated entities from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities.|
 |<div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Connection**.  This will remove the **Connection** and all associated entities from processing and validation.|
 
 [//]: # (TODO: Connection String Editor document an link from Connection String Field)
