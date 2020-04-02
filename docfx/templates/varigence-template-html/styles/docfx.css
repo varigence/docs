@@ -1200,16 +1200,6 @@ div.embeddedvideo iframe {
 }
 
 @media (max-width: 767.98px) {
-    .navbar-expand-md > .container,
-    .navbar-expand-md > .container-fluid {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .nav-item.collapse-only, .docs-dropdown-navbar-container {
-        display: block;
-    }
-
     #actions {
         display: none;
     }
@@ -1217,9 +1207,21 @@ div.embeddedvideo iframe {
     .pullup {
       margin-top: -40px;
     }
+    
+    .nav-item.collapse-only, .docs-dropdown-navbar-container {
+      display: block;
+    }    
 }
 
-@media (min-width: 768px) {
+@media (max-width: 991.98px) {
+  .navbar-expand-md > .container,
+  .navbar-expand-md > .container-fluid {
+      padding-right: 0;
+      padding-left: 0;
+  }
+}
+
+@media (min-width: 992px) {
     .navbar-expand-md {
         flex-flow: row nowrap;
         justify-content: flex-start;

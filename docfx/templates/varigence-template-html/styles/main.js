@@ -31,6 +31,13 @@ function populateNavSelect(){
         return;
     }
 
+    var indexLink = $('#toc').find('.level1').children('li').children('a');
+    if (indexLink && indexLink.length > 0) {
+        $newElem = $(document.createElement('option')).attr('value', indexLink[0].pathname)
+            .attr('label', indexLink[0].innerText)            
+            .appendTo(SelectList);
+    }
+
     toc_groups.each(function () {
         if ($(this).siblings('ul').length > 0) {
             //  has child links, is a optgroup
@@ -44,7 +51,7 @@ function populateNavSelect(){
                     .attr('label', this.innerText)            
                     .appendTo($newGroupElem);
 
-                    hasChildLinks = true;
+                hasChildLinks = true;
             });
             
         }
