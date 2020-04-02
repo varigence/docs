@@ -346,6 +346,18 @@ article section {
   display: none;
 }
 
+.docs-dropdown-navbar-container {
+  display: none;
+  margin-top: -30px;
+}
+.small-nav-dropdown-title {
+  display: inline-block;
+  margin: 0 14px;
+}
+#small-nav-dropdown { 
+  display: inline-block;
+  width: calc(100% - 90px);
+}
 .pullup {
   margin-top: -120px;
 }
@@ -1193,12 +1205,16 @@ div.embeddedvideo iframe {
         padding-left: 0;
     }
 
-    .nav-item.collapse-only {
+    .nav-item.collapse-only, .docs-dropdown-navbar-container {
         display: block;
     }
 
     #actions {
         display: none;
+    }
+
+    .pullup {
+      margin-top: -40px;
     }
 }
 
