@@ -10,7 +10,12 @@ $(function () {
 });
 
 $(window).load(function() {
-    setTimeout(function(){ populateNavSelect(); }, 500);
+    var toc_groups = $('#toc').find('.level2').children('li').children('a');
+    if(!toc_groups || toc_groups.length === 0) {
+        setTimeout(function(){ populateNavSelect(); }, 500);
+    } else {
+        populateNavSelect();
+    }
 });
 
 function populateNavSelect(){
@@ -21,7 +26,7 @@ function populateNavSelect(){
     var toc_groups = $('#toc').find('.level2').children('li').children('a');
 
     // Don't show nav select if we can't populate it.
-    if(!toc_groups) {
+    if(!toc_groups || toc_groups.length === 0) {
         $("#small-nav-dropdown").hide();
         return;
     }
@@ -42,7 +47,7 @@ function populateNavSelect(){
     selectNavValue();
 }
 
-function navigateSelect(selectedOption) {
+function navigateToSelectedUrl(selectedOption) {
     var path = selectedOption.value;  
     if (document.location.pathname !== path) {
         document.location.href = path;
@@ -50,5 +55,12 @@ function navigateSelect(selectedOption) {
 }
 
 function selectNavValue() {    
-    $("#small-nav-dropdown").val(document.location.pathname);
+    var path = document.location.pathname; 
+    if (path.endsWith('/')) {
+        path = path + 'index.html';
+    }    
+    if (!path.endsWith('.html')) {
+        path = path + '.html';
+    }
+    $("#small-nav-dropdown").val(path);
 }

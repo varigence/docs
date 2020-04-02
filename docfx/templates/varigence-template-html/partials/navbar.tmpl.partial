@@ -86,7 +86,7 @@
 <div class="col-md-2 docs-dropdown-navbar-container"> 
   <nav id="small-nav" aria-label="Topics" class="docs-nav">
     <span class="small-nav-dropdown-title">Topics</span>
-    <select id="small-nav-dropdown" onchange="navigateSelect(this)">
+    <select id="small-nav-dropdown" onchange="navigateToSelectedUrl(this)">
     </select>
   </nav> 
 </div>
