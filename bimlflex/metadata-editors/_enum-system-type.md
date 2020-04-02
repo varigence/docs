@@ -1,4 +1,4 @@
-#### System Type Constrained List
+#### System Types
 
 |Value|Description|
 |-|-|
