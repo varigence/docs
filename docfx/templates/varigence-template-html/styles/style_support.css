@@ -5815,6 +5815,14 @@ input[type="radio"]
 .nowrap-col {
   white-space:nowrap;
 }
+@media (max-width: 767px) {
+  iframe {
+    max-width: 100%;
+  }
+  .nowrap-col {
+    white-space: unset;
+  }
+}
 
 /* margin - padding shortcuts */
 .m-2 {
