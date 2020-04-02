@@ -1,0 +1,40 @@
+- name: Overview
+  href: index.md
+- name: Connection
+  href: connection.md
+- name: Package
+  href: package.md
+- name: Table
+  href: table.md
+- name: Static Source
+  href: static-source.md
+- name: Schema
+  href: schema.md
+- name: Principal
+  href: principal.md
+- name: File Format
+  href: file-format.md
+- name: Cube
+  href: cube.md
+- name: Action
+  href: action.md
+- name: KPI
+  href: kpi.md
+- name: Perspective
+  href: perspective.md
+- name: Aggregation Design
+  href: aggregation-design.md
+- name: Partition
+  href: partition.md
+- name: Calculation
+  href: calculation.md
+- name: Script Project
+  href: script-project.md
+- name: BimlScript
+  href: bimlscript.md
+- name: Biml
+  href: biml.md
+- name: Common Tool Windows
+  href: common-tool-windows.md
+- name: Package Tool Windows
+  href: package-tool-windows.md
