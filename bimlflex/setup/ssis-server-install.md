@@ -26,7 +26,7 @@ Run the installer on the SSIS Server and install the custom components version m
 Install the versions matching your environment and expected targets. For Snowflake targets, install both the BimlFlex SSIS Components 2020 and the BimlFlex Snowflake SSIS Components 2020 for your SSIS and SQL Server version.
 
 > [!NOTE]
-> Only run one of the installers, for minimal installation on a server, only install the components from the Runtime installer
+> Only run one of the installers. For minimal installation on a server, only install the components from the Runtime installer
 
 ## Uninstallation
 
