@@ -8,9 +8,9 @@
 
 |Icon|Action|Description|
 |-|-|-|
-|<div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div>|<span class="nowrap-col m-5">Add</span>|**Add** will create a new **Object** associated with current entity. Clicking **Add** will open an [Add Object Dialog](#Add-Object-Dialog-Box).|
+|<div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div>|<span class="nowrap-col m-5">Add</span>|**Add** will create a new **Object** associated with current entity. Clicking **Add** will open an [Add Object Dialog](#add-object-dialog-box).|
 |<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|<span class="nowrap-col m-5">Save</span>| **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Object** has changes staged and there are no major validation issues with the current list of **Object** properties.|
-|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will open an [Archive Objects Dialog](#Archive-Object-Dialog-Box)|
+|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will open an [Archive Objects Dialog](#archive-object-dialog-box)|
 |<div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div>|<span class="nowrap-col m-5">Refresh</span>|[Refresh] will trigger a refresh of the metadata for the selected list of **Objects**.|
 
 ### Additional Dialogs
@@ -28,7 +28,7 @@ The **Objects Tab** provide quick and easy access to all **Objects** associated 
 
 #### View: Overview
 
-The **Overview** is available to give quick access to the more physical properties of the **Objects** relating to the selected entity.  These are representations of the physical `Source System` and represent the raw definitions of the object in it's original form.  Additional properties are available for bulk management such as controlling exclusions, disabling persistence or flagging an **Object** for deletion.  Various [Navigational Transitions](#Objects-Tab-(Overview)-Navigational-Transitions) are available on view form and outlined below.
+The **Overview** is available to give quick access to the more physical properties of the **Objects** relating to the selected entity.  These are representations of the physical `Source System` and represent the raw definitions of the object in it's original form.  Additional properties are available for bulk management such as controlling exclusions, disabling persistence or flagging an **Object** for deletion.  Various [Navigational Transitions](#objects-tab-overview-navigational-transitions) are available on view form and outlined below.
 
 <img
     src="images/bimlflex-app-tab-objects-view-overview.png"

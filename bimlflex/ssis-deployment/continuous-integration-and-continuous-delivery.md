@@ -100,7 +100,7 @@ When it has been deployed for the first time, use the Catalog environment featur
 
 ## Sample Scripts
 
-Download link to sample files: [bimlflex-cicd-sample-files.zip](resources/bimlflex-cicd-sample-files.zip)
+Download link to sample files: [bimlflex-cicd-sample-files.zip](../user-guide/resources/bimlflex-cicd-sample-files.zip)
 
 ### Sample Script using MSBuild
 
