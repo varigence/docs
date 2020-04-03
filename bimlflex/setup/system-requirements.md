@@ -8,7 +8,7 @@ title: BimlFlex Software and Hardware requirements
 
 * Internet access (required for installing and running the application)
 * Network access for metadata database access
-* Same requirements as recommended for the Windows version in use [(For Windows 10: https://www.microsoft.com/en-au/windows/windows-10-specifications)](https://www.microsoft.com/en-au/windows/windows-10-specifications)
+* Same requirements as recommended for the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-au/windows/windows-10-specifications)
 * Same requirements as approved for the Visual Studio version and edition in use [(For Visual Studio 2015: https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)](https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)
 * BimlStudio supports Visual Studio 2010, 2012, 2013, 2015, 2017 and 2019. The version of [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT BI) and Visual Studio used depends on the SQL Server version used for the SSIS Server
 * A valid Varigence BimlStudio Product key is required for use.
@@ -18,16 +18,16 @@ title: BimlFlex Software and Hardware requirements
 
 * Internet access (required for installing and running the application)
 * Network access for metadata database access
-* Same requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-au/windows/windows-10-specifications)](https://www.microsoft.com/en-au/
+* Same requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 * Available memory to hold the model
 
-## BimlFlex Excel Plugin
+## BimlFlex Excel Add-in
 
 * Internet access (required for installing and running the application)
 * Network access for metadata database access
 * Same minimum requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 * Same requirements as  the Excel version and edition in use [(For Excel 2016: https://products.office.com/en-us/office-system-requirements)](https://products.office.com/en-us/office-system-requirements)
-* The current plugin supports Excel 2013, 2016 and Excel for Office 365, 32 or 64-bit versions
+* The current Excel Add-in supports Excel 2013, 2016 and Excel for Office 365, 32 or 64-bit versions
 * A valid Varigence BimlFlex Product key is required for use
 * Available memory to hold the model
 
