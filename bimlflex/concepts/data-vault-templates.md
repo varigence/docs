@@ -6,11 +6,11 @@ title: BimlFlex Data Vault Templates
 
 This document outlines the creation and management of Data Vault artifacts in BimlFlex.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](data-vault-accelerator.md). This document focuses on the process of manually creating Data Vault artifacts by manipulating metadata.
+The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](../modeling-tools/accelerator.md). This document focuses on the process of manually creating Data Vault artifacts by manipulating metadata.
 
 ## Setup
 
-This document assumes the BimlFlex product has been [installed](developer-installation.md) and [configured](initial-setup-and-configuration.md) and that the [AdventureWorksLT](https://msftdbprodsamples.codeplex.com/) sample metadata is ready to be imported to a new empty customer.
+This document assumes the BimlFlex product has been [installed](../setup/developer-install.md) and [configured](../getting-started/initial-setup-and-configuration.md) and that the [AdventureWorksLT](https://msftdbprodsamples.codeplex.com/) sample metadata is ready to be imported to a new empty customer.
 
 The walkthrough will use the Product and Product Category entities from the [AdventureWorksLT](https://msftdbprodsamples.codeplex.com/) source to demonstrate Data Vault concepts.
 

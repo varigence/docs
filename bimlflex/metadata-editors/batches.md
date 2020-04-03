@@ -35,8 +35,6 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 ### Additional Dialogs
 
-[!include[Duplicate Batch Dialog Box](_dialog-duplicate-batch-single.md)]
-
 [!include[Archive Batch Dialog Box](_dialog-archive-batch-single.md)]
 
 ### Details Tab - Fields

@@ -32,7 +32,7 @@ The most common of these two is the following items.
 
 Below is a diagram showing the output ETL structure that BimlFlex uses load fact tables in a Data Mart. The optional metadata settings and extension points are signified by shaded rectangles and dotted rectangles. The standard BimlFlex components are shown in solid colors.
 
-Note that the pattern shows that the orchestration components are applied. More [information on the orchestration is documented here](orchestration.md)
+Note that the pattern shows that the orchestration components are applied. More [information on the orchestration is documented here](../user-guide/orchestration.md)
 
 ![Data Mart ETL Pattern workflow](../user-guide/images/bimlflex-ss-v5-data-mart-etl-pattern.png "Data Mart ETL Pattern workflow")
 
@@ -76,7 +76,7 @@ The particulars of the dimension loading pattern are that whether the data is ty
 
 **\[DC – Add Alternate Columns\]** Add alternate columns component will include any extra derived columns in the data flow. An example of this would be defining both a `SqlExpression` and `SsisExpression` in the metadata combined with providing a `ColumnAlias` will bring the column into the pipeline as the alias name. `[DC – Add Derived Columns <SolveOrder>]` will do the same but taking in consideration the solve order of the columns.
 
-**\[LKP – DIM Foreign Key\]** this component performs a lookup on the Dim record’s foreign keys in the corresponding tables that the Data Mart is using
+**\[LKP – DIM Foreign Key\]** this component performs a lookup on the Dim record's foreign keys in the corresponding tables that the Data Mart is using
 
 **\[DER – Foreign Key Defaults\]** Will add a column to store a foreign key, populating it with a foreign key if it exists and if not a default surrogate key will be obtained in the following component.
 
@@ -92,7 +92,7 @@ following components
 
 **\[ALL – DIM Changes\]** Unions all the new and changed columns of the particular type of CDC for type 1 or type 2.
 
-**\[MLTC - Initial Dim\]** This multicast component determines if a given load is, in fact, the first load of a particular Dimension, in which case the new rows will go directly to the target destination. These rows are directed to `[OLE_DST – Insert DIM]`. If it is not an initial load the new and changed rows will be set to the Dimension’s staging table first `[OLE_DST – Stage DIM]` to be merged into the destination table in a later component.
+**\[MLTC - Initial Dim\]** This multicast component determines if a given load is, in fact, the first load of a particular Dimension, in which case the new rows will go directly to the target destination. These rows are directed to `[OLE_DST – Insert DIM]`. If it is not an initial load the new and changed rows will be set to the Dimension's staging table first `[OLE_DST – Stage DIM]` to be merged into the destination table in a later component.
 
 **\[SQL – Merge Dimension\]** Will be loading all the data into their final target tables from the data in the initial staging tables.
 
@@ -189,7 +189,7 @@ Now the key will be to link the fact source columns and the target fact table an
 
 Now that the source, destination and target column metadata in place, there is one more item to cover regarding modelling Data Marts in BimlFlex and that is the use of foreign keys.
 
-In the Data Mart, generally, each foreign key points from fact to dimension. In the loading pattern, the foreign key is set by performing a lookup on the Integration key in a dimension, taking the corresponding dimension’s key and then setting that as the foreign key in the fact.
+In the Data Mart, generally, each foreign key points from fact to dimension. In the loading pattern, the foreign key is set by performing a lookup on the Integration key in a dimension, taking the corresponding dimension's key and then setting that as the foreign key in the fact.
 
 BimlFlex still automates all this functionality for us but the user still needs to indicate how this is done. This is done by setting the reference columns of the fact table in metadata.
 
@@ -197,7 +197,7 @@ The example below will demonstrate how to add a foreign key to the customer dime
 
 ![Column Metadata](../user-guide/images/bimlflex-ss-v5-excel-data-mart-fk-dimension.png "Column Metadata")
 
-Note that since there is a foreign key pointing to the customer dimension key, the Fact’s CustomerID column should be renamed to CustomerKey.
+Note that since there is a foreign key pointing to the customer dimension key, the Fact's CustomerID column should be renamed to CustomerKey.
 
 Refresh the metadata in BimlStudio to review, build and test.
 
@@ -218,7 +218,7 @@ The above example shows a bridge table on the left joining two hubs and a link t
 
 #### Configuring a Bridge Table
 
-Now that it has been shown why a user may want a bridge table, let’s focus on how to join these various entities in the data vault and bring the relevant keys together in a bridge table.
+Now that it has been shown why a user may want a bridge table, let's focus on how to join these various entities in the data vault and bring the relevant keys together in a bridge table.
 
 Fortunately, configuring and deploying a bridge table is a fairly simple process. BimlFlex is able to bring together all the data vault tables required in a given bridge table by inspecting the metadata behind the scenes that should at this stage already be in place.
 

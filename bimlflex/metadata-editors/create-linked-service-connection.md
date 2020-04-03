@@ -20,7 +20,7 @@ In the **Details tab** of the Connections Editor, select the *Integration Stage*
 
 After toggling the *Cloud* setting, a tab for Linked Services will appear at the bottom of the form and any available linked services will appear in the *Linked Service Types dropdown*. Select a `Linked Service Type` to configure it.
 
-![Linked Service Dropdown -center -50%][connections-linked-service-dropdown]
+![Linked Service Dropdown -center -50%][connections-linked-service-dropdown]'
 
 ### Configuring the Linked Service Connection
 
@@ -49,3 +49,4 @@ The linked services that are currently supported are listed below. Select a link
 [connections-linked-service-dropdown]: images/bimlflex-ss-app-connections-cloud-linked-service-select-blank-highlighted.png "Linked Service Type Dropdown"
 [akv]: images/bimlflex-ss-app-connections-akv.png "Azure Key Vault"
 [akv-dd]: images/bimlflex-ss-app-connections-akv-dd.png "Azure Key Vault Drop Down"
+''''&copy;    

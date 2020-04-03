@@ -10,7 +10,7 @@ The Error List tool window displays errors. By default, it is displayed in a tab
 
 ### Verify Project Settings
 
-The project settings allow you to control various aspects of the project and build process. This includes the version of the SQL Server technologies that you are targeting, the location of the Hadron compiler, and the output folder for the compiled BI assets. To review the project settings, see [Configuring Project Settings](configuring-project-settings.md). For the example project, make sure that all versions are targeting your current version of SQL Server. Also confirm that the Warn As Error check box is unchecked. Your project settings should look similar to this, but with the appropriate version of the SQL Server technologies selected:
+The project settings allow you to control various aspects of the project and build process. This includes the version of the SQL Server technologies that you are targeting, the location of the Hadron compiler, and the output folder for the compiled BI assets. To review the project settings, see [Configuring Project Settings](../miscellaneous/configuring-project-settings.md). For the example project, make sure that all versions are targeting your current version of SQL Server. Also confirm that the Warn As Error check box is unchecked. Your project settings should look similar to this, but with the appropriate version of the SQL Server technologies selected:
 
 ![Project Settings](https://varigencecom.blob.core.windows.net/images-mistdocumentation/011_ProjectSettings1.png)
 

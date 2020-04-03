@@ -30,7 +30,7 @@ The starting point for the examples in this document is when all source metadata
 
 Follow the guide for [Source To Staging](../concepts/source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
 
-More about [Import Metadata](../concepts/import-metadata.md).
+More about [Import Metadata](../concepts/importing-metadata.md).
 
 ### The Source and Target model
 
