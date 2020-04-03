@@ -40,13 +40,13 @@ The **Configurations Editor** is used to manage all **Configurations**. The fiel
 | ADF Dataflow Expression | Used to derive a value when using an ADF Dataflow. Adf Dataflow Expression is required with a derived Staging Attribute setting for Adf: Source -> Target Projects.  |
 | Description | An optional description for custom attributes or definitions. The default configurations are described in this document |
 | Nullable | Defines If the attribute is nullable Valid Enumeration |
-| Staging Attribute | Should the configuration be included in the staging layer, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attribute). |
-| Persistant Staging Attribute | Should the configuration be included in the persistent staging layer, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attribute). |
-| Hub Attribute | Should the configuration be included in Hubs, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attribute). |
-| Satellite Attribute | Should the configuration be included in Satellites, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attribute). |
-| Link Attribute | Should the configuration be included in Links, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attribute). |
-| Dim Attribute | Should the configuration be included in Dimensions, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attribute). If any Dimension objects in the project have Type 2 columns, Dim Attribute must be Derived. |
-| Fact Attribute | Should the configuration be included in Facts, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attribute). |
+| Staging Attribute | Should the configuration be included in the staging layer, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
+| Persistant Staging Attribute | Should the configuration be included in the persistent staging layer, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
+| Hub Attribute | Should the configuration be included in Hubs, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
+| Satellite Attribute | Should the configuration be included in Satellites, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
+| Link Attribute | Should the configuration be included in Links, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
+| Dim Attribute | Should the configuration be included in Dimensions, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). If any Dimension objects in the project have Type 2 columns, Dim Attribute must be Derived. |
+| Fact Attribute | Should the configuration be included in Facts, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
 
 ## Configuration Overrides
 
@@ -61,6 +61,7 @@ To add a **Configuration Override**, click <img class="icon-col m-5" src="images
 [!include[Add Attribute Dialog](_dialog-add-attribute.md)]
 
 The Attribute fields are used as the Configuration Override as defined in this table.
+
 |Attribute field Name|Configuration Field Name|Description|
 |-|-|-|
 | Attribute Type || Defines the scope for when the override is applied. |

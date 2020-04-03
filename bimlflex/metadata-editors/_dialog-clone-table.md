@@ -1,6 +1,6 @@
 #### Clone Table Dialog Box  
 
-The [Clone Table] function is provided to allow for quick generation of **Dimensions** and **Facts**.  This is designed to be used on manually created view, generally deriving from the **Data Vault**, that has been transformed to the desired end state.  Once that view has been imported enter your [Target Schema], choose your *Target Object Type*, set your [Clone Table Options](#Clone-Table-Options) and click <img class="icon-inline" src="images/svg-icons/save.svg" /> **Save**.  Please refer to the links below for details on creating a **Data Mart**.
+The [Clone Table] function is provided to allow for quick generation of **Dimensions** and **Facts**.  This is designed to be used on manually created view, generally deriving from the **Data Vault**, that has been transformed to the desired end state.  Once that view has been imported enter your [Target Schema], choose your *Target Object Type*, set your [Clone Table Options](#clone-table-options) and click <img class="icon-inline" src="images/svg-icons/save.svg" /> **Save**.  Please refer to the links below for details on creating a **Data Mart**.
 
 <br/>
 <img

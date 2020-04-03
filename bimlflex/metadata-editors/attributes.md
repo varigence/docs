@@ -24,8 +24,8 @@ The **Attributes Editor** is used to manage **Attributes** in the BimlFlex appli
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/validate.svg" /></div> | Validate | This will trigger validation to be run on all **Attributes** in the application. It will display <img class="icon-inline" src="images/svg-icons/success.svg" /> if all validation passes, or <img class="icon-inline" src="images/svg-icons/error.svg" /> if there errors and add those errors to the global validation list. |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button is will only enabled if there are unsaved changes in the form and no major validation errors. |
-| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Attribute**.  A [Duplicate Attribute dialog](#Duplicate-Attribute-Dialog) will appear asking for a new name. A new **Attribute** will be created using all of the selected **Attribute's** properties. |
-| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will create an [Archive Attribute Dialog](#Archive-Attribute-Dialog). |
+| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Attribute**.  A [Duplicate Attribute dialog](#duplicate-attribute-dialog) will appear asking for a new name. A new **Attribute** will be created using all of the selected **Attribute's** properties. |
+| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog). |
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Attribute**. All unsaved changes will be lost. |
 | <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div> | Deleted | This will soft delete the currently selected **Attribute**.  This will remove the **Attribute** from processing and validation. |
 
@@ -33,7 +33,7 @@ The **Attributes Editor** is used to manage **Attributes** in the BimlFlex appli
 
 ## Attributes Editor Fields
 
-The fields available in the **Attribute** form change depending on the selected [Attribute Type](#Attribute-Types). The `Attribute Type` defines the scope of the BimlFlex process that the **Attribute** is applied to.
+The fields available in the **Attribute** form change depending on the selected [Attribute Type](#attribute-types). The `Attribute Type` defines the scope of the BimlFlex process that the **Attribute** is applied to.
 
 <img
     src="images/attributes-fields.64566.png"

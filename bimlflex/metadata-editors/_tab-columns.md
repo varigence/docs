@@ -10,9 +10,9 @@
 |-|-|-|
 |<div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div>|<span class="nowrap-col m-5">Add</span>|**Add** will open an [Add Column Dialog](#add-column-dialog-box) for creating a new **Column** and assign it to the current entity.  When adding an **Column** via this button **Connection** and **Object** will be pre-filled on the created dialog box.|
 |<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the currently set of staged changes.  The **Save** button is only enabled if the **Column** has changes staged and there are no major validation issues with the current **Column** properties.|
-|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|This will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore.|[Archive Column](#Archive-Attribute-Dialog-Box)|
+|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|This will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore.|[Archive Column](#archive-column-dialog-box)|
 |<div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected **Columns**.||
-|<div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg" /></div>|Integration Key|This will bring up the dialog to create an `Integration Key`.|[Generate Derived Integration Key](#Generate-Derived-Integration-Key)|
+|<div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg" /></div>|Integration Key|This will bring up the dialog to create an `Integration Key`.|[Generate Derived Integration Key](#generate-derived-integration-key-dialog-box)|
 
 
 ### Additional Dialogs  
