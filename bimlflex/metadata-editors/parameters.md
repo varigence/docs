@@ -4,7 +4,7 @@ title: Parameters
 ---
 # Parameters Editor
 
-Parameters for load queries are added either as metadata in the Parameters sheet or via Extension Points. For high watermark delta loads and similar simple parameters adding the Parameter to the metadata will generate and include all required logic to the load process.
+Parameters for load queries are added either as metadata in the Parameters sheet or via Extension Points. For high watermark delta loads and similar simple parameters adding the parameter to the metadata will generate and include all required logic to the load process.
 
 Extension Points can be added for more complex parameters that require custom logic.
 
@@ -18,11 +18,11 @@ Parameters added to a project, batch package or regular package can be used as a
 
 |Icon|Action|Description|
 |-|-|-|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the currently set of staged changes.  The [Save] button is will only enable if the `Parameter` has changes staged and there are no major validation issues with the current `Parameter` properties.|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Parameter`.|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|This will `hard delete` the selected `Parameter`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|
-|<div class="icon-col m-5" style="width:30px;height:30px;background:#EEE;"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Parameter`.|
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will `soft delete` the currently selected `Parameter`.  This will remove the `Parameter` and all associated entities from processing and validation.|
+|<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the currently set of staged changes.  The **Save** button is will only enable if the `Parameter` has changes staged and there are no major validation issues with the current `Parameter` properties.|
+|<div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected `Parameter`.|
+|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|This will `hard delete` the selected `Parameter`.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible.|
+|<div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected `Parameter`.|
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected `Parameter`.  This will remove the `Parameter` and all associated entities from processing and validation.|
 
 ## Field Descriptions
 
