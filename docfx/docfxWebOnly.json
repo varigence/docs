@@ -71,7 +71,7 @@
           "bimlexpress/images/**",
           "content/**",
           "images/**",
-          "biml/language-reference/*.png"
+          "**/language-reference/*.png"
         ],
         "exclude": [
           "**/bin/**",

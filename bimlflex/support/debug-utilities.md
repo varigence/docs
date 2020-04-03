@@ -8,7 +8,7 @@ Use the `Debug Utilities` function to create a metadata and project file to send
 
 To minimise the potential waiting period, and if possible, always include the metadata debug when opening a BimlFlex support case.
 
-![BimlFlex Debug Utilities -center](images/bimlflex-ss-v5-debug-bimlflex-utility.png "BimlFlex Debug Utilities")
+![BimlFlex Debug Utilities -center](../user-guide/images/bimlflex-ss-v5-debug-bimlflex-utility.png "BimlFlex Debug Utilities")
 
 Access the `Debug BimlFlex Utility` dialog through the `Debug Utilities` button in the BimlFlex Ribbon tab in BimlStudio. It will connect to the current projects BimlFlex metadata database.
 
