@@ -21,7 +21,7 @@ One of the core features of the BimlFlex Data Warehouse Automation solution is t
 
 ## Sensitive Information Management
 
-[//]: # (TODO: summary of sensitive info here.)
+SSIS Projects and SQL Server SSIS Catalog deployments support configuring project parameters as sensitive. This allows sensitive information, like passwords, to be managed more securely in SSIS. While Microsoft generally recommends using account based security there are some scenarios and sources that require management of sensitive data. This document highlights the BimlFlex configuration required to maintain password security in SSIS.
 
 
 [More about Sensitive Information Management](sensitive-info-management.md)
@@ -35,7 +35,7 @@ The BimlFlex custom SSIS components are used for ETL load processes in SSIS pack
 ## SSIS Server Installation
 
 For SSIS Server installations, the Varigence Custom SSIS components used in BimlFlex generated SSIS packages are required to be available on the server.
-This installation is required for SQL/SSIS Servers that run BimlFlex created packages. 
+This installation is required for SQL/SSIS Servers that run BimlFlex created packages.
 
 [More about SSIS Server Installation](ssis-server-installation.md)
 
