@@ -2,7 +2,7 @@
 
 When building and deploying a cube, newly created relational tables need to be deployed to a SQL database. A package, using SSIS ExecutePackage tasks, can accomplish this.
 
-Begin by adding a package to the project. Refer to the first 4 steps in the [Creating a Package](creating-a-basic-package.md) topic to create a package and rename it to _BuildSchema_.
+Begin by adding a package to the project. Refer to the first 4 steps in the [Creating a Package](../miscellaneous/creating-a-basic-package.md) topic to create a package and rename it to _BuildSchema_.
 
 To deploy the tables to SQL:
 
@@ -29,7 +29,7 @@ To deploy the tables to SQL:
 
     ![Final Package](https://varigencecom.blob.core.windows.net/images-mistdocumentation-deployingtables/deployingtables_6.gif)
 
-1. Ensure that your project settings have **Use Project Deployment** un-selected. For more information on Use Project Deployment, see [Configuring Project Settings](configuring-project-settings.md).
+1. Ensure that your project settings have **Use Project Deployment** un-selected. For more information on Use Project Deployment, see [Configuring Project Settings](../miscellaneous/configuring-project-settings.md).
 
     ![Project Deployment](https://varigencecom.blob.core.windows.net/images-mistdocumentation-deployingtables/deployingtables_6.png)
 

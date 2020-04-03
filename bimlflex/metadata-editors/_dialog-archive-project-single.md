@@ -3,7 +3,7 @@
 Confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the *Ok* button.
 
 <img
-    src="images/bimlflex-app-dialog-archive-project.png"
+    src="images/bimlflex-app-dialog-archive-object.png"
     class="border-image"
     title="Archive Selected Project Dialog Box"
 />

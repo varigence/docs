@@ -21,7 +21,7 @@ The [Clone Table] function is provided to allow for quick generation of **Dimens
 > For more details on building a **Data Mart** see the associated link(s).  
 >
 > Getting Started:  
-> [Dimensional Model](..\getting-started\dimensional-model.md)
+> [Dimensional Model](../getting-started/dimensional-model.md)
 >
 > Concepts:  
-> [Data Mart Templates](..concepts\data-mart-templates.md)
+> [Data Mart Templates](../concepts/data-mart-templates.md)

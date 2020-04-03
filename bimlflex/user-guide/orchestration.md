@@ -62,13 +62,13 @@ Package Main is where all the template specific logic is implemented.
 
 More information on this process:
 
-* [Source to Staging Templates](source-to-staging-templates.md)
-* [Data Vault Templates](data-vault-templates.md)
-* [Data Mart Templates](data-mart-templates.md)
+* [Source to Staging Templates](../concepts/source-to-staging-templates.md)
+* [Data Vault Templates](../concepts/data-vault-templates.md)
+* [Data Mart Templates](../concepts/data-mart-templates.md)
 
 #### SEQC – BimlFlex Package End
 
-Log successful execution of the package and set the next run status to ‘P’ for process.
+Log successful execution of the package and set the next run status to 'P' for process.
 The following Stored Procedure is executed by the End Event
 
 ```sql
@@ -139,7 +139,7 @@ If a single package makes it through the "**SEQC - BimlFlex Package Main**" cont
 
 Where the logged execution id matches that of the successful package the ExecutionStatus will be set to `S` for success and the NextLoadStatus (the status that controls the actions of the next execution) is set to `P` for process.
 
-This means that the package is ready for a normal run on the following execution and doesn’t need to perform a rollback.
+This means that the package is ready for a normal run on the following execution and doesn't need to perform a rollback.
 
 ### Batch Level Success
 

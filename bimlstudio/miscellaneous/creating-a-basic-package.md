@@ -14,4 +14,4 @@ Packages provide data integration functionality. For more information on package
 
     The AutoCreateConfigurationsType property controls whether configurations are automatically generated for all database connections used in the package. Setting it to None turns generation off, while setting it to XML or SQL generates configurations of the related type at compile time.
 
-1. After adding the package, you should [save the project](saving-a-project.md).
+1. After adding the package, you should save the project.

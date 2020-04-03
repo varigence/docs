@@ -83,7 +83,7 @@ BimlFlex Excel Add-in provides a metadata import function to add metadata into a
 
 ![Import Metadata Tool UI](../user-guide/images/bimlflex-ss-v5-excel-import-metadata.png "Import Metadata Tool UI")
 
-[More information about the metadata import tool is found in the documentation](importing-metadata.md)
+[More information about the metadata import tool is found in the documentation](../concepts/importing-metadata.md)
 
 ## Auto Freeze
 

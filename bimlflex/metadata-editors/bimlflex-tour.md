@@ -74,7 +74,6 @@ The entity list enumerates all of the available entities for the current filter 
 
 |Icon|Action|Description|
 |-|-|-|-|
-|<div class="icon-col m-5"><img src="images/svg-icons/hamburger.svg"/></div>|<span class="nowrap-col m-5">Filter</span>||
 |<div class="icon-col m-5"><img src="images/svg-icons/sort-desc.svg"/></div>|<span class="nowrap-col m-5">Sort Descending</span>|When shown the column is currently sorting in descending order.  Click to switch to ascending order.|
 |<div class="icon-col m-5"><img src="images/svg-icons/sort-asc.svg"/></div>|<span class="nowrap-col m-5">Sort Ascending</span>|When shown the column is currently sorting in ascending order.  Click to switch to descending order.|
 

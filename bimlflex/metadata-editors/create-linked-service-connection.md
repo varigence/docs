@@ -36,7 +36,7 @@ The linked services that are currently supported are listed below. Select a link
 + [Azure SQL Database](linked-service-adf-sql-database.md)
 + [Azure SQL Database Managed Instance (Azure SQL MI)](linked-service-adf-sqlmi.md)
 + [Azure Synapse Analytics (Azure SQL Data Warehouse)](linked-service-adf-sql-data-warehouse.md)
-+ [Data Lake Gen 2](linked-service-adf-data-lake-gen-2.md)
++ [Data Lake Gen 2](linked-service-adf-datalake-gen-2.md)
 + [MySQL](linked-service-adf-mysql.md)
 + [Oracle](linked-service-adf-sql-server.md)
 + [PostgreSQL](linked-service-adf-sql-server.md)

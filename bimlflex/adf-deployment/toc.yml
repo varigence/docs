@@ -9,4 +9,4 @@
 - name: Concurrent Development
   href: concurrent-development.md
 - name: Continuous Delivery (CI/CD)
-  href: continuous-integration-and-delivery.md
+  href: continuous-integration-and-continuous-delivery.md

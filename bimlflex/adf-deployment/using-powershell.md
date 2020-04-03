@@ -49,7 +49,6 @@ You need to ensure that you have your **arm_template.json** and **arm_template_p
 > PowerShell, along with the appropriate cmdlets are required and used in the generated PowerShell script.  BimlFlex will automatically generate the commands needed to both install the cmdlets and connect to specified environment.  If further details on the commands generate are needed, or to generate these commands manually, refer the the article linked below.
 > 
 > Microsoft Docs:
-> [<Install PowerShell Article Name>](articleLink)  
 > [Get started with Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps)  
 > [Connect-AzAccount](https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount)  
 
