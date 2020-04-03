@@ -4,4 +4,4 @@ title: BimlFlex Object Inheritance
 ---
 # Object Inheritance
 
-TODO: Coming Soon
+Coming Soon
