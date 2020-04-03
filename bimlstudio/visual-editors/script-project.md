@@ -8,7 +8,7 @@ Select a file to open it in the editor. The editor provides syntax highlighting,
 
 ![Script Project Editor](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/ScriptProject2.png)
 
-Select other items in the Script Project Explorer (Resources, Settings, References, etc...) to display their editors.
+Select other items in the Script Project Explorer (../user-guide/resources, Settings, References, etc...) to display their editors.
 
 ![Script Project Explorer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/ScriptProject3.png)
 

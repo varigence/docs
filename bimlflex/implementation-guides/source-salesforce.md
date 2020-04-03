@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-source-stored-procedure
+uid: bimlflex-source-salesforce
 title: BimlFlex Salesforce Source
 ---
 # BimlFlex Salesforce Source

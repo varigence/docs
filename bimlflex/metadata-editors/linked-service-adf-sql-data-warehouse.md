@@ -1,5 +1,5 @@
 ---
-uid: linked-service-adf-sql-database
+uid: linked-service-adf-sql-datawarehouse
 title: Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse
 ---
 # Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse

@@ -1,5 +1,5 @@
 ---
-uid: using-powershell
+uid: using-azure-portal
 title: Deployment Through the Azure Portal
 ---
 # Deployment Through the Azure Portal
