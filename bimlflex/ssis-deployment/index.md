@@ -34,7 +34,8 @@ The BimlFlex custom SSIS components are used for ETL load processes in SSIS pack
 
 ## SSIS Server Installation
 
-[//]: # (TODO: summary of server installation here.)
+For SSIS Server installations, the Varigence Custom SSIS components used in BimlFlex generated SSIS packages are required to be available on the server.
+This installation is required for SQL/SSIS Servers that run BimlFlex created packages. 
 
 [More about SSIS Server Installation](ssis-server-installation.md)
 
