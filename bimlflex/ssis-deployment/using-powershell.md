@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-ssis-using-powershell
-title: Using Powershell
+title: Using Powershell for SSIS Deployment
 ---
-# Using Powershell
+# Using Powershell for SSIS Deployment
 
 Coming Soon

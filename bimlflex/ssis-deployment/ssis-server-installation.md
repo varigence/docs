@@ -1,7 +1,7 @@
 ---
-uid: bimlflex-ssis-server-installation
-title: BimlFlex SSIS Server Installation
+uid: bimlflex-ssis-server-deployment
+title: BimlFlex SSIS Server Deployment
 ---
-# BimlFlex SSIS Server Installation
+# BimlFlex SSIS Server Deployment
 
 Coming Soon

@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-ssis-using-deployment-wizard
-title: Using Deployment Wizard
+title: Using Deployment Wizard for SSIS Deployment
 ---
-# Using Deployment Wizard
+# Using Deployment Wizard for SSIS Deployment
 
 Coming Soon
