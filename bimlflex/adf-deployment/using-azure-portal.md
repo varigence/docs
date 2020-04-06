@@ -99,7 +99,7 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 
 1. Wait for deployment to complete.
 
-The deployment of the ADF assets using the [Azure Portal] should now be successful.  Navigating to the Data Factory and opening the [ADF Authoring Tool] should now show the Pipeline(s) available to be tested and verified as needed.
+The deployment of the ADF assets using the `Azure Portal` should now be successful. Navigating to the Data Factory and opening the `ADF Authoring Tool` should now show the Pipeline(s) available to be tested and verified as needed.
 
 >[!NOTE]
 > Your Data Factory will be either be named `ADF-<HashKey>` or it will use the `Settings.AzureDataFactoryName`. 
