@@ -21,7 +21,7 @@ One of the core features of the BimlFlex Data Warehouse Automation solution is t
 
 ## Sensitive Information Management
 
-[//]: # (TODO: summary of sensitive info here.)
+In certain BimlFlex solutions there are properties that get stored in **Azure Key Vaults** (AKV) for security purposes. AKV is a cloud service that provides secure storage for sensitive information. Users can securely store keys, passwords, certificates, and other secrets.
 
 
 [More about Sensitive Information Management](sensitive-info-management.md)
