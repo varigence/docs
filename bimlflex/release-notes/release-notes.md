@@ -159,7 +159,7 @@ The settings have been updated. New settings are available, some settings have b
 * Add: New Project settings dialog in BimlStudio. This allows easier access to control Build target and method as well as local project configurations.
 * Update: The default build versions for new projects have been updated to SQL Server 2017
 * Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
-* Add: Support for COSYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
+* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
 * Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical namespaces). A new utility app is available to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
 * New Extension Points: `RdvPreProcessSql`, `RdvPostProcessSql` allows injection of SQL logic in the RDV load SQL Stored Procedures.
 * Update: Some `Generate Scripts` menu options have had their `By Source` suffix removed.
