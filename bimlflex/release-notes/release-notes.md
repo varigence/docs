@@ -88,7 +88,7 @@ The settings have been updated. New settings are available, some settings have b
 
 > [!WARNING]
 > Breaking Changes  
-> For scenarios where a changed setting or project parameter is used in Extension Points or referenced elsewhere (such as in an SSIS Catalog Environment) the corresponding syntax change needs to be made to match the new names
+> For scenarios where a changed setting is used in Extension Points or referenced elsewhere (such as in an SSIS Catalog environment project parameter) the corresponding syntax change needs to be made to match the new names
 
 **New Settings**
 
