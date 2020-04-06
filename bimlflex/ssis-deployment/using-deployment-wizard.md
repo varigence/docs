@@ -1,4 +1,9 @@
-## Deployment through the SSIS Deployment Wizard
+---
+uid: using-deployment-wizard.md
+title: Deployment Through the SSIS Deployment Wizard
+---
+# Deployment Through PowerShell
+## Deployment Through the SSIS Deployment Wizard
 
 For a walkthrough of creating a BimlFlex solution that targets ADF, review the [Synapse ADF Implementation Guide](../implementation-guides/synapse-implementation-introduction.md).
 
