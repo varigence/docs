@@ -6,15 +6,15 @@ title: BimlFlex Data Vault Templates
 
 This document outlines the creation and management of Data Vault artifacts in BimlFlex.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](data-vault-accelerator.md). This document focuses on the process of manually creating Data Vault artifacts by manipulating metadata.
+The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](../modeling-tools/accelerator.md). This document focuses on the process of manually creating Data Vault artifacts by manipulating metadata.
 
 ## Setup
 
-This document assumes the BimlFlex product has been [installed](developer-installation.md) and [configured](initial-setup-and-configuration.md) and that the [AdventureWorksLT](https://msftdbprodsamples.codeplex.com/) sample metadata is ready to be imported to a new empty customer.
+This document assumes the BimlFlex product has been [installed](../setup/developer-install.md) and [configured](../getting-started/initial-setup-and-configuration.md) and that the [AdventureWorksLT](https://msftdbprodsamples.codeplex.com/) sample metadata is ready to be imported to a new empty customer.
 
 The walkthrough will use the Product and Product Category entities from the [AdventureWorksLT](https://msftdbprodsamples.codeplex.com/) source to demonstrate Data Vault concepts.
 
-![Import Metadata](images/bimlflex-ss-v5-excel-import-metadata-product.png "Import Metadata")
+![Import Metadata](../user-guide/images/bimlflex-ss-v5-excel-import-metadata-product.png "Import Metadata")
 
 ## Data Vault review
 
@@ -71,13 +71,13 @@ The Hub is the distinct set of Integration keys from the source. It is an add on
 
 The required metadata for a Hub is divided into the objects tab and the columns tab in the metadata editor. For the Source to Target Mapping the source and the target table and columns need to be defined and mapped.
 
-![Hub Metadata](images/bimlflex-ss-v5-excel-hub-metadata-objects.png "Hub Metadata")
+![Hub Metadata](../user-guide/images/bimlflex-ss-v5-excel-hub-metadata-objects.png "Hub Metadata")
 
 The source table can be any metadata construct. The normal use case would be to read from the staging tables of an external source. Once new data had been staged the Raw Data Vault process will load the data into the destination Hub table.
 
 The object tab only requires the objects to be defined. The destination table is marked as Hub to indicate the entity type. The naming convention needs to be applied to the Object Name as it is manually added.
 
-![Hub Metadata](images/bimlflex-ss-v5-excel-hub-metadata-columns.png "Hub Metadata")
+![Hub Metadata](../user-guide/images/bimlflex-ss-v5-excel-hub-metadata-columns.png "Hub Metadata")
 
 Only the Integration key needs to be mapped to the target Hub. The source table provides the source key columns and the destination Hub has an Integration key and a Surrogate Key defined.
 
@@ -111,7 +111,7 @@ The Hub load process will consist of a single Data Flow going from the source `P
 
 Illustrated here is the Hub load flow:
 
-![Hub Load Pattern](images/bimlflex-ss-v5-hub-load-pattern.png "Hub Load Pattern")
+![Hub Load Pattern](../user-guide/images/bimlflex-ss-v5-hub-load-pattern.png "Hub Load Pattern")
 
 For all Hubs in the Data Vault model, the source and destination table metadata is required. The column mappings include an Integration key column mapped to the destination hub and a defined destination Hub with an Integration key column and surrogate key column. The metadata directive `FlexToBK(key column)` is used to build Integration keys.
 
@@ -137,7 +137,7 @@ For this guide, the technical Ids from the source are used.
 
 For the metadata objects tab the new Hub and the Link needs to be added
 
-![Link Metadata](images/bimlflex-ss-v5-excel-link-metadata-objects.png "Link Metadata")
+![Link Metadata](../user-guide/images/bimlflex-ss-v5-excel-link-metadata-objects.png "Link Metadata")
 
 The source now includes the `ProductCategory` table and the `rdv` objects include both the Hubs and the two Links.
 
@@ -145,7 +145,7 @@ The default naming convention used by the Accelerator is to create the Link name
 
 The columns metadata needs to include the mapping for the new hub as well as the Links.
 
-![Link Metadata](images/bimlflex-ss-v5-excel-link-metadata-columns.png "Link Metadata")
+![Link Metadata](../user-guide/images/bimlflex-ss-v5-excel-link-metadata-columns.png "Link Metadata")
 
 The Source tables need the Link keys for reference. The default naming convention uses `LSK_Entity_Entity_SK` naming style. The source tables have the keys for the Links added as well as the Hub keys for the relationships. The LSK column has the Link table as target table specified.
 
@@ -157,7 +157,7 @@ Building the solution from this metadata will generate two load packages in the 
 
 Illustrated here is the Link load flow:
 
-![Link Load Pattern](images/bimlflex-ss-v5-link-load-pattern.png "Link Load Pattern")
+![Link Load Pattern](../user-guide/images/bimlflex-ss-v5-link-load-pattern.png "Link Load Pattern")
 
 ## More on Satellites
 
@@ -173,7 +173,7 @@ The source data for the sample model contains descriptive attributes for both Pr
 
 The required Source Object metadata is already in the metadata model, the Satellites attributes are read from the same source as the Hub. The destination Satellite tables/entities are added by adding the names and setting the Object Type to Satellite or Link Satellite
 
-![Satellite Metadata](images/bimlflex-ss-v5-excel-satellite-metadata-objects.png "Satellite Metadata")
+![Satellite Metadata](../user-guide/images/bimlflex-ss-v5-excel-satellite-metadata-objects.png "Satellite Metadata")
 
 The default naming convention uses the same name for the Satellite as the Hub or Link it is attached to with an additional suffix indicating the source system. It is recommended to use a consistent naming convention for all artifacts. The suffix naming suggests that additional Satellites can be added to the Hubs from other sources.
 
@@ -181,11 +181,11 @@ Only under very, very specific circumstances is it recommended to load data into
 
 The Columns metadata requires additional data for all attributes for the Satellites. Once multiple source tables and attributes are added to the metadata editor it is helpful to filter the columns to only display the required data. The Excel headers are normal table headers and support both filtering and sorting. Note that any filtering and sorting choices are removed when the metadata is refreshed.
 
-![Satellite Metadata](images/bimlflex-ss-v5-excel-satellite-metadata-columns.png "Satellite Metadata")
+![Satellite Metadata](../user-guide/images/bimlflex-ss-v5-excel-satellite-metadata-columns.png "Satellite Metadata")
 
 Illustrated here is the Satellite load flow
 
-![Satellite Process flow](images/bimlflex-ss-v5-satellite-load-pattern.png "Satellite Process flow")
+![Satellite Process flow](../user-guide/images/bimlflex-ss-v5-satellite-load-pattern.png "Satellite Process flow")
 
 ## Driving Keys
 
@@ -201,7 +201,7 @@ The Accelerator and the BimlFlex framework will automatically apply Driving Key 
 
 If a Driving Key behavior needs to be manually defined, such as from a Link type source table, an attribute is added to the Attributes Tab.
 
-![Driving Key Metadata](images/bimlflex-ss-v5-excel-driving-key-metadata-attributes.png "Driving Key Metadata")
+![Driving Key Metadata](../user-guide/images/bimlflex-ss-v5-excel-driving-key-metadata-attributes.png "Driving Key Metadata")
 
 The Data Vault build logic will include the required processing in the Link Satellite to maintain data consistency throughout load by adding and closing relationships, emulating the behavior of the single Foreign Key relationship from the source.
 
@@ -223,12 +223,12 @@ As an example, the following Packages have been generated using increasing amoun
 
 ### Single Hub load ETL flow sample
 
-![Data Vault Hub ETL Pattern](images/bimlflex-ss-v5-staging-to-data-vault-hub-etl-pattern.png "Data Vault Hub ETL Pattern")
+![Data Vault Hub ETL Pattern](../user-guide/images/bimlflex-ss-v5-staging-to-data-vault-hub-etl-pattern.png "Data Vault Hub ETL Pattern")
 
 This package only includes the Hub entity load of the `HUB_Product` destination.
 
 ### Full ETL flow sample
 
-![Data Vault ETL Pattern](images/bimlflex-ss-v5-staging-to-data-vault-full-etl-pattern.png "Data Vault ETL Pattern")
+![Data Vault ETL Pattern](../user-guide/images/bimlflex-ss-v5-staging-to-data-vault-full-etl-pattern.png "Data Vault ETL Pattern")
 
 The completed package that loads Hub, Link, Satellites and Link Satellites.

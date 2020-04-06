@@ -6,7 +6,7 @@ title: Schema Diagram
 
 In this document, we discuss the Schema Diagram tool with reference to how it provides a simple view of your data and accelerates your development tasks.
 
-## Schema Diagram
+## Schema Diagram Overview
 
 The Schema Diagram provides an entity relation view of any set of metadata based on the integration stage. It allows a user to get an overview of what the metadata looks like in an easy to understand view. It also helps the developer to execute the most common actions on the data in a graphical interface.
 
@@ -16,7 +16,7 @@ The starting point for the examples in this document is when all source metadata
 
 [//]: # (TODO: Link to UPDATED Source To Staging document)
 
-Follow the guide for [Source To Staging](source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
+Follow the guide for [Source To Staging](../concepts/source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
 
 Follow the guide for [Data Vault Accelerator](accelerator.md) to get a Raw Data Vault schema which will be used in this guide.
 
@@ -40,21 +40,21 @@ By clicking on a Table or Column a user gets a pop up of all the actions buttons
 
 ![Accelerator Action Icons Minimized](../metadata-editors/images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
 
-By Clicking the elipsis a user may see the maximized view which contains the words alongside the icons.
+By Clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
 
 ![Accelerator Action Icons Maximized](../metadata-editors/images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
 
-||||
+| Icon | Action | Description |
 |--- |--- |--- |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/add-reference.svg"/></div>| <span class="nowrap-col m-5">Add Reference</span> | Add a reference. This can also be done by dragging a column onto the target table. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div>| <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This action removes the reference link, not the column. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div>| <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current Schema Diagram layout will be persisted in memory for you to come back to. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div>| <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key.|
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div>| <span class="nowrap-col m-5">Add Integration Key</span> | Add an integration key using the selected columns. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div>| <span class="nowrap-col m-5">Show Related</span> | Add all the related tables to the view by interrogating the direct references. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div>| <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive the selected columns. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/create-pit.svg"/></div>| <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img src="../metadata-editors/images/svg-icons/create-bridge.svg"/></div>| <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/add-reference.svg"/></div> | <span class="nowrap-col m-5">Add Reference</span> | Add a reference. This can also be done by dragging a column onto the target table. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This action removes the reference link, not the column. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current Schema Diagram layout will be persisted in memory for you to come back to. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Add an integration key using the selected columns. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show Related</span> | Add all the related tables to the view by interrogating the direct references. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive the selected columns. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/create-pit.svg"/></div> | <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
+| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/create-bridge.svg"/></div> | <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
 
 Note the new Actions available on the Raw Data Vault Hubs.
 
@@ -80,7 +80,7 @@ Tables can be dragged around on the screen to make the layout easier to view. Th
 
 ![Filtered Tables](../metadata-editors/images/bimlflex-app-schema-diagram-filtered-tables.png "Filtered Tables")
 
-Use filtering in the Selection pane to see only specific tables in your view. There are selection fields for `Integration Stage`, `Record Source` and `Model Grouping` which allow fine grain filtering of tables. Note that the `Record Source` and `Model Grouping` fields will be hidden if there are no options to filter by.
+Use filtering in the Selection pane to see only specific tables in your view. There are selection fields for *Integration Stage*, *Record Source* and *Model Grouping* which allow fine grain filtering of tables. Note that the *Record Source* and *Model Grouping* fields will be hidden if there are no options to filter by.
 
 ### Data Vault Backbone
 

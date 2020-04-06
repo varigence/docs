@@ -1,6 +1,6 @@
-#### Connection Types Constrained List
+#### Connection Types
 
-|Value|Definition|
+|Value|Description|
 |-|-|
 |OLEDB|An OleDb connection is used to connect to the data source.|
 |ADONET|An Ado .NET connection is used to connect to the data source.|

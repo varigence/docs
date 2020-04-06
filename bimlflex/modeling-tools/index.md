@@ -6,7 +6,7 @@ title: Modeling Tools Overview
 
 The Modeling Tools provides graphical tools for users to accomplish a range of data modeling tasks in an intuitive interface.
 
-Each tool provides views and actions that make sense in the context of the specific tool. 
+Each tool provides views and actions that make sense in the context of the specific tool.
 
 ## Data Vault Accelerator
 

@@ -1,6 +1,6 @@
-#### Configuration Attribute
+#### Configuration Attributes
 
-|Value|More info|
+|Value| Description |
 |-|-|
 |Ignore||
 |Derived||

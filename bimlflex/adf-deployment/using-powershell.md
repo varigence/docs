@@ -108,13 +108,12 @@ The file contents show the commands that are used. At the top of the file are so
 # Install-Module -Name Az -AllowClobber -Scope CurrentUser
 ​
 # If required run the following command to connect to your Azure account             
-# Connect-AzAccount    
+# Connect-AzAccount  
 ```
 > [!NOTE]
 >If further details on the generated commands are needed, or to create these commands manually, refer the the article linked below.
 > 
-> Microsoft Docs:  
-> [Installing PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7)  
+> Microsoft Docs:
 > [Get started with Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps)  
 > [Connect-AzAccount](https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount)  
 

@@ -1,6 +1,6 @@
 #### Setting Types
 
-|Value|More info|
+|Value|Description|
 |-|-|
 |Text||
 |SQL||

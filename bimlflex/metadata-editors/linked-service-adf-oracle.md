@@ -1,5 +1,5 @@
 ---
-uid: linked-service-adf-sql-server
+uid: linked-service-adf-oracle
 title: Configuring an ADF Linked Service Connection for Oracle
 ---
 # Configuring an ADF Linked Service Connection for Oracle

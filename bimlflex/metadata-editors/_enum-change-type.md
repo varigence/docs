@@ -1,6 +1,6 @@
 #### Change Types
 
-|Value|More Info|
+| Value | Description |
 |-|-|
 | Type 1 ||
 | Type 2 ||

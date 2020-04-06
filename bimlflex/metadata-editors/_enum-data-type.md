@@ -1,6 +1,6 @@
-#### Data Type Constrained List
+#### Data Types
 
-|Value|Definition|
+|Value|Description|
 |-|-|
 |AnsiString|ANSI string.|
 |AnsiStringFixedLength|Fixed length ANSI string.|

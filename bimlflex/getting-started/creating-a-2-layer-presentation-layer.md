@@ -6,7 +6,7 @@ title: Creating a 2 layer Dimensional Model
 
 ## Supporting Videos
 
-TODO: Coming Soon
+Coming Soon
 
 ## Supporting BimlFlex Documentation
 
@@ -24,17 +24,17 @@ The following detailed steps walks through the creating a 2 layer Dimensional Mo
 
 ### Preparing the source
 
-TODO: Coming Soon
+Coming Soon
 
 ### Cloning and mapping destination tables
 
-TODO: Coming Soon
+Coming Soon
 
 ### Configuring the destination tables
 
 Adding Surrogate keys and identity columns
-TODO: Coming Soon
+Coming Soon
 
 ### Building the new solution in BimlStudio
 
-TODO: Coming Soon
+Coming Soon

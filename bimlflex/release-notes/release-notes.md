@@ -14,14 +14,14 @@ BimlFlex 2020 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.64590.0, release date: 31 March 2020
+Build 5.0.nnnnn.0, release date: nn April 2020
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
-## Build 5.0.64590.0, release date: 31 March 2020
+## Build 5.0.nnnnn.0, release date: nn April 2020
 
 ### Feature Highlights
 
@@ -76,21 +76,93 @@ BimlStudio now creates additional build and deploy scripts for easy automation.
 
 When building a project, the output folder now contains the following two new folders with the new artifacts:
 
-* `Build`
+* `Build`  
     Automated build scripts and settings.  
     Separate build script for SSDT projects for scenarios like SSIS where there is a dependency on tables before build
-* `Deploy`
+* `Deploy`  
     PowerShell scripts for building SSDT Projects and deploying SSDT and SSIS Projects
+
+#### Changes to settings
+
+The settings have been updated. New settings are available, some settings have been changed, renamed or reorganized.
+
+> [!WARNING]
+> Breaking Changes  
+> For scenarios where a changed setting is used in Extension Points or referenced elsewhere (such as in an SSIS Catalog environment project parameter) the corresponding syntax change needs to be made to match the new names
+
+**New Settings**
+
+| Setting                 | Description |
+| -------                 | ----------- |
+| AzCopyLogLevel          | The log level for AzCopy v.10 logs. Available log levels are: NONE, DEBUG, INFO, WARNING, ERROR, PANIC, and FATAL |
+| AzureArchiveContainer   | The Container Name to use for the archive process. This should be indicative of the purpose of the contents, such as "archive" |
+| AzureArchiveAccountKey  | A Storage access key to use when accessing the Blob storage. use a separate development environment and manage production keys outside the BimlFlex metadata |
+| AzureArchiveAccountName | The Azure Blob Storage Account Name to use for archiving data as files in blob storage. This is the default archive destination for the staging to archive file move process for BimlFlex solutions using Azure Synapse as destination. The Account Name is visible in the Azure Portal as the main name of the Storage Account. It is also detailed in the Settings, Access Keys blade |
+| AzureArchiveSasToken    | A Storage access SAS Token to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
+| AzureStageContainer     | The Container Name to use for the staging process. This should be indicative of the purpose of the contents, such as "staging" |
+| AzureStageAccountKey    | A Storage access key to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
+| AzureStageAccountName   | The Azure Blob Storage Account Name to use for staging data as files in blob storage. This is the default destination for the source to staging file upload process for BimlFlex solutions using Azure Synapse as destination. The Account Name is visible in the Azure Portal as the main name of the Storage Account. It is also detailed in the Settings, Access Keys blade |
+| AzureStageSasToken      | A Storage access SAS Token to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
+| AzureFunctionBridgeKey  | The default Azure Function Bridge Key to use |
+| AzureFunctionBridgeName | The default Azure Function Bridge Name to use |
+| AzurePolybaseSettings   | The default Azure PolyBase settings to use |
+| AzureResourceGroup      | The default Azure Resource Group name to use |
+| AzureErrorContainer     | The Container Name to use for the Error process. This should be indicative of the purpose of the contents, such as "error" |
+| AzureErrorAccountKey    | A Storage access key to use when accessing the Blob storage. use a separate development environment and manage production keys outside the BimlFlex metadata |
+| AzureErrorAccountName   | The Azure Blob Storage Account Name to use for error files in blob storage. This is the default Error location for BimlFlex solutions using Azure Synapse as destination. The Account Name is visible in the Azure Portal as the main name of the Storage Account. It is also detailed in the Settings, Access Keys blade |
+| AzureErrorSasToken      | A Storage access SAS Token to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
+| AzureSubscriptionId     | The default Azure SubscriptionId to use |
+| DvSingleChangeSatellite | Satellite loaded with single change |
+| SsisDb                  | The SSISDB database name to use |
+| SsisFolder              | The SSIS Catalog folder name to use for generated Script files |
+| SsisServer              | The SSIS Server name to use for generated Script files |
+| DeleteDetectionApplyPsa | Use default process to insert detected deletes into the Persistent table. This can be overriden by the "DeleteDetectionApplyPsa" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
+| DeleteDetectionApplyRdv | Use default process to insert detected deletes into the Data Vault Satellite tables. This can be overriden by the "DeleteDetectionApplyRdv" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
+| PsaDeltaDetectionSql    | Should the delta detection for PSA load use SQL |
+| PsaDeltaLateArriving    | Does the PSA load include late arriving deltas |
+| PsaDeltaSingleChange    | Set this to "Y" if loading into PSA and the Delta only has single changes to each key. This will provide optimized ELT loads |
+| PsaDeltaStageAllRows    | Should the Delta process stage all rows or compress rowchanges |
+| PsaEltDeltaIsDerived    | Set this to "Y" if loading into PSA and the Delta has already been derived in the file. This will provide optimized ELT loads |
+| StageBypassPsaChecks    | Set to "Y" to bypass all Persistent Lookup and Checks and apply all records to Staging and Persistent Staging tables. |
+
+**Changed settings**
+
+| Old Name                      | New Name              |
+| --------                      | --------              |
+| AzureArchiveContainerName     | AzureArchiveContainer |
+| AzureDestContainerName        | AzureStageContainer   |
+| AzureDestStorageAccountKey    | AzureStageAccountKey  |
+| AzureDestStorageAccountName   | AzureStageAccountName |
+| AzureDestStorageSasToken      | AzureStageSasToken    |
+| AzureSourceContainerName      | AzureErrorContainer   |
+| AzureSourceStorageAccountKey  | AzureErrorAccountKey  |
+| AzureSourceStorageAccountName | AzureErrorAccountName |
+| AzureSourceStorageSasToken    | AzureErrorSasToken    |
+| AzureArchiveContainerName     | AzureArchiveContainer |
+| AzureDestContainerName        | AzureStageContainer   |
+| AzureDestStorageAccountKey    | AzureStageAccountKey  |
+| AzureDestStorageAccountName   | AzureStageAccountName |
+| AzureDestStorageSasToken      | AzureStageSasToken    |
+| AzureSourceContainerName      | AzureErrorContainer   |
+| AzureSourceStorageAccountKey  | AzureErrorAccountKey  |
+| AzureSourceStorageAccountName | AzureErrorAccountName |
+| AzureSourceStorageSasToken    | AzureErrorSasToken    |
+
+**Changed defaults**
+
+| Setting        | Old Value | New Value |
+| -------        | --------- | --------- |
+| DvAppendBridge | BRD       | BRG       |
 
 #### Additional Release Notes
 
 * Add: New Project settings dialog in BimlStudio. This allows easier access to control Build target and method as well as local project configurations.
 * Update: The default build versions for new projects have been updated to SQL Server 2017
 * Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
-* Add: Support for COSYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
+* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
 * Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical namespaces). A new utility app is available to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
-* Add: New Setting: `SingleRowDelta` - for sources where it is known that there is only a single row per key per delta load so that the load process is optimized and row compression is not done
 * New Extension Points: `RdvPreProcessSql`, `RdvPostProcessSql` allows injection of SQL logic in the RDV load SQL Stored Procedures.
+* Update: Some `Generate Scripts` menu options have had their `By Source` suffix removed.
 
 > [!NOTE]
 > change in behavior for Settings descriptions
@@ -98,8 +170,8 @@ When building a project, the output folder now contains the following two new fo
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64590.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64590.0.exe)
-* [bimlflexruntimesetup_5.0.64590.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64590.0.exe)
+* [bimlflexdevsetup_5.0.nnnnn.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.nnnnn.0.exe)
+* [bimlflexruntimesetup_5.0.nnnnn.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.nnnnn.0.exe)
 
 Legacy Release Notes:
 

@@ -1,14 +1,14 @@
 ---
 uid: bimlflex-source-excel-plus
-title: BimlFlex COSYROC Excel Plus Source
+title: BimlFlex COZYROC Excel Plus Source
 ---
-# BimlFlex COSYROC Excel Plus Source
+# BimlFlex COZYROC Excel Plus Source
 
-BimlFlex can load from Excel source files using the COSYROC Excel Plus SSIS Component
+BimlFlex can load from Excel source files using the COZYROC Excel Plus SSIS Component
 
 ## Getting Started
 
-To load an Excel source file through BimlFlex, first install the COSYROC custom component, then add the metadata for the source file as described below
+To load an Excel source file through BimlFlex, first install the COZYROC custom component, then add the metadata for the source file as described below
 
 ## Metadata
 
@@ -34,10 +34,10 @@ This specifies the starting cell (1,1) and the range (column 1-5, whole table do
 
 Connection String
 
-Connection String and file specification. Uses standard COSYROC Excel Plus syntax for management of file location, recalculation, formats etc.
+Connection String and file specification. Uses standard COZYROC Excel Plus syntax for management of file location, recalculation, formats etc.
 
 Sample: `ExcelFilePath=c:\BimlFlex\Import\MyExcelFile.xlsx;FormatType=Auto;Recalculate=False;DateTimeFormat=;RetainSameConnection=True;`
 
 ## More Information
 
-More information on the COSYROC Excel Plus SSIS source component can be found here: https://www.cozyroc.com/ssis/excel-source
+More information on the COZYROC Excel Plus SSIS source component can be found here: https://www.cozyroc.com/ssis/excel-source

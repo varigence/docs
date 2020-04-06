@@ -1,5 +1,4 @@
 ---
-uid: ssis-deployment-overview
 title: SSIS Deployment Overview
 ---
 # SSIS Deployment Overview

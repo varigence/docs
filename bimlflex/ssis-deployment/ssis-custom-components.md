@@ -53,24 +53,24 @@ The following Icons are used for the custom components
 
 ### Audit Row
 
-<img src="images/bimlflex-v5-cc-auditrow.ico" alt="AuditRow Icon" width="10%"/>
+<img src="../user-guide/images/bimlflex-v5-cc-auditrow.ico" alt="AuditRow Icon" width="10%"/>
 
 ### Error Description
 
-<img src="images/bimlflex-v5-cc-errordescription.ico" alt="ErrorDescription Icon" width="10%"/>
+<img src="../user-guide/images/bimlflex-v5-cc-errordescription.ico" alt="ErrorDescription Icon" width="10%"/>
 
 ### Hash / Hash Dynamic
 
-<img src="images/bimlflex-v5-cc-hash.ico" alt="Hash Icon" width="10%"/>
+<img src="../user-guide/images/bimlflex-v5-cc-hash.ico" alt="Hash Icon" width="10%"/>
 
 ### Hash Dual
 
-<img src="images/bimlflex-v5-cc-hashdual.ico" alt="HashDual Icon" width="10%"/>
+<img src="../user-guide/images/bimlflex-v5-cc-hashdual.ico" alt="HashDual Icon" width="10%"/>
 
 ### Hash SQL
 
-<img src="images/bimlflex-v5-cc-hashsql.ico" alt="HashSql Icon" width="10%"/>
+<img src="../user-guide/images/bimlflex-v5-cc-hashsql.ico" alt="HashSql Icon" width="10%"/>
 
 ### Row Count
 
-<img src="images/bimlflex-v5-cc-RowCount.ico" alt="RowCount Icon" width="10%"/>
+<img src="../user-guide/images/bimlflex-v5-cc-RowCount.ico" alt="RowCount Icon" width="10%"/>
