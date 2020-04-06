@@ -88,10 +88,12 @@ An ARM template can include parameters that allow the user to customize the depl
   }
 }
 ```
+## Generated SSDT Deployment Files
+Note each time you build your solution, BimlFlex will also create a deployment file(s) titled `ssdt-deploy.[ASSET_NAME].ps1`, where `ASSET_NAME` corresponds to a data store. This is the case whether it is for staging, persistant staging, data vault, or data mart. Any time that you make changes to the schema of these assets, these deployment files need to be run, otherwise your project may fail to build. These scripts are located at `...\output\Deploy\` in the solution file structure.    
 
 ## Generated Deployment File
 
-BimlFlex generates an easy to use PowerShell script that enables you to simply run it and deploy your ADF assets. The script can be found at `...\output\Deploy\` and the file name should match the following pattern: <br>
+Once you have run any `ssdt-deploy.ps1` with outstanding schema changes, you are ready to deploy your ADF assets. BimlFlex generates an easy to use PowerShell script that enables you to simply run it and deploy your ADF assets. The script can be found at `...\output\Deploy\` and the file name should match the following pattern: <br>
  `adf-deploy.<Setting.AzureDataFactoryName>.ps1`.
 >[!NOTE] 
 >Execution only requires running the *.ps1 file and not manually running the PowerShell commands. 
@@ -108,7 +110,7 @@ The file contents show the commands that are used. At the top of the file are so
 # If required run the following command to connect to your Azure account             
 # Connect-AzAccount    
 ```
-> [!IMPORTANT]
+> [!NOTE]
 >If further details on the generated commands are needed, or to create these commands manually, refer the the article linked below.
 > 
 > Microsoft Docs:  
@@ -116,13 +118,13 @@ The file contents show the commands that are used. At the top of the file are so
 > [Get started with Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/get-started-azureps)  
 > [Connect-AzAccount](https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount)  
 
-Now, similar to the arm_template_paramters file above, BimlFlex generates variables that store setting values from the project, and passes them into the deployment commands.
+Now, similar to the arm_template_parameters file above, BimlFlex generates variables that store setting values from the project, and passes them into the deployment commands.
 
 ```powershell
 # Provide your Subscription and ResourceGroupName below 
 $azureSubscriptionId = "00000000-0000-0000-0000-000000"
 $azureResourceGroup = "BFX_Test"
-                
+
 $outputBasePath = "C:\Varigence-Test\ADF-ELT-SQLDW\output\";
 $armTemplatePath = "$($outputBasePath)\DataFactories\BimlFlex\arm_template.json"
 $armTemplateParamsPath = "$($outputBasePath)\DataFactories\BimlFlex\arm_template_parameters.json"
@@ -144,7 +146,7 @@ Pipeline(s) are now available for verification or running inside the ADF [Author
 
 1. Create the Triggers themselves and deploy them to the Data Factory, either in the [Authoring Tool](https://docs.microsoft.com/en-us/azure/data-factory/author-visually) or via PowerShell.
 
-2. Users can take advantage of BimlFlex [Extension Points](/./bimlflex\reference-documentation\extension-point-definitions.md) and create them for each batch. An example extension point that creates an ADF trigger is listed below. This trigger will now be created inside of the ARM template file and deployed with the rest of the ADF assets.
+2. Users can take advantage of BimlFlex [Extension Points](../reference-documentation/extension-point-definitions.md) and create them for each batch. An example extension point that creates an ADF trigger is listed below. This trigger will now be created inside of the ARM template file and deployed with the rest of the ADF assets.
 
 ```Biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfTrigger" #>
