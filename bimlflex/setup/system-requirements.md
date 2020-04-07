@@ -13,6 +13,7 @@ title: BimlFlex Software and Hardware requirements
 * BimlStudio supports Visual Studio 2010, 2012, 2013, 2015, 2017 and 2019. The version of [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT BI) and Visual Studio used depends on the SQL Server version used for the SSIS Server
 * A valid Varigence BimlStudio Product key is required for use.
 * Available memory to hold the model
+* Available processing power to process the model
 
 ## BimlFlex App
 
@@ -20,6 +21,7 @@ title: BimlFlex Software and Hardware requirements
 * Network access for metadata database access
 * Same requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 * Available memory to hold the model
+* Available processing power to process the model
 
 ## BimlFlex Excel Add-in
 
@@ -28,14 +30,16 @@ title: BimlFlex Software and Hardware requirements
 * Same minimum requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 * Same requirements as  the Excel version and edition in use [(For Excel 2016: https://products.office.com/en-us/office-system-requirements)](https://products.office.com/en-us/office-system-requirements)
 * The current Excel Add-in supports Excel 2013, 2016 and Excel for Office 365, 32 or 64-bit versions
+* A Valid Microsoft Excel license is required for use. This license is not provided through, or included in, BimlFlex.
 * A valid Varigence BimlFlex Product key is required for use
 * Available memory to hold the model
+* Available processing power to process the model
 
 ## Databases
 
 * Requires a supported SQL Server version
 * Same requirements as the SQL Server environment it is running in [(For SQL Server 2016 Enterprise Edition: https://msdn.microsoft.com/en-us/library/ms143506.aspx)](https://msdn.microsoft.com/en-us/library/ms143506.aspx)
-* Available CPU, Memory and disk space to host the BimlFlex databases as well as the DW databases
+* Available CPU, Memory and disk space to host and process the BimlFlex databases as well as the DW databases
 
 ## Server installation
 
@@ -43,13 +47,11 @@ The base requirements for installing Microsoft SQL Server can be found here: [ht
 
 The SSIS Server where SQL Server SSIS is used to execute SSIS packages requires the installation of the Varigence SSIS Custom Components using either the Varigence BimlFlex Developer installer or BimlFlex Runtime installer.
 
-The Varigence SSIS Components can also be installed using XCopy scripts provided by contacting BimlFlex support.
-
 The SQL Server where the Data Warehouse databases are deployed requires no specific installations or configurations. The developers and analysts must have adequate access to building the Data Warehouse.
 
 The SQL Server where the BimlFlex metadata databases are deployed requires no specific installations or configurations. It is required that the developers and analysts have adequate access to work with the metadata and target databases.
 
-More information on the Server installation can be found here: @bimlflex-server-installation
+More information on the Server installation can be found here: @bimlflex-ssis-server-install
 
 ## Database requirements
 

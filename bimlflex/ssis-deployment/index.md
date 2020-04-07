@@ -17,11 +17,9 @@ One of the core features of the BimlFlex Data Warehouse Automation solution is t
 
 [More about Continuous Integration and Continuous Delivery](continuous-integration-and-continuous-delivery.md)
 
-
 ## Sensitive Information Management
 
 SSIS Projects and SQL Server SSIS Catalog deployments support configuring project parameters as sensitive. This allows sensitive information, like passwords, to be managed more securely in SSIS. While Microsoft generally recommends using account based security there are some scenarios and sources that require management of sensitive data. This document highlights the BimlFlex configuration required to maintain password security in SSIS.
-
 
 [More about Sensitive Information Management](sensitive-info-management.md)
 
@@ -44,11 +42,8 @@ Not only does BimlFlex produce all of your SSIS projects and packages, it also g
 
 [More about PowerShell deployment](using-powershell.md)
 
-
-
 ## SSIS Deployment Wizard
 
 BimlFlex generates all of the SSIS assets that you need to manually deploy through the deployment wizard.
 
 [More about SSIS Deployment Wizard](using-deployment-wizard.md)
-

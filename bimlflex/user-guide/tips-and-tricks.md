@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-getting-started-tips-and-tricks
+uid: bimlflex-user-guide-tips-and-tricks
 title: Tips and Tricks
 ---
 # BimlFlex Tips and Tricks

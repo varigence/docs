@@ -21,11 +21,11 @@ The Objects metadata spreadsheet in BimlFlex Excel contains the following settin
 
 ### Flat File Types
 
-|Attribute Name|Description|
-|--- |--- |
-|Delimited|Fields in row are delimited by character|
-|FixedWidth|Each field/row has a fixed width|
-|RaggedRight|The last field in row can have variable width, delimited by new row character|
+| Attribute Name | Description |
+| -------------- | ----------- |
+| Delimited      | Fields in row are delimited by character |
+| FixedWidth     | Each field/row has a fixed width |
+| RaggedRight    | The last field in row can have variable width, delimited by new row character |
 
 ### Data Rows to Skip
 
@@ -39,17 +39,17 @@ What character delimits the text in a given column. E.g. `"text"`, `'text'`, etc
 
 Column and row delimiters and Last Column Delimiter
 
-|Attribute Name|Description|
-|--- |--- |
-|CRLF|Carriage Return, Line Feed - ASCII 13, 10|
-|CR|Carriage Return - ASCII 13|
-|LF|Line Feed - ASCII 10|
-|Semicolon|;|
-|Comma|,|
-|Tab|HT - ACSII 09|
-|VerticalBar|||
-|UnitSeparator|US - ASCII 31|
-|Custom|Any valid custom delimiter|
+| Attribute Name | Description |
+| -------------- | ----------- |
+| CRLF           | Carriage Return, Line Feed - ASCII 13, 10 |
+| CR             | Carriage Return - ASCII 13 |
+| LF             | Line Feed - ASCII 10 |
+| Semicolon      | `;` |
+| Comma          | `,` |
+| Tab            | HT - ACSII 09|
+| VerticalBar    | `|` |
+| UnitSeparator  | US - ASCII 31|
+| Custom         | Any valid custom delimiter|
 
 ### Code Page
 
@@ -73,18 +73,18 @@ The components and ETL pattern are similar to a regular source to target pattern
 
 The first step is setting up the connection attributes that are relevant to setting a flat file connection. In the source to file scenario, this would be the intended destination connection. For connections ensure to choose "Staging" as the Integration stage. Some example connection attributes that mimic this are shown below
 
-|Attribute Name|Example Project Attributes|
-|--- |--- |
-|Name|TransactionsFile|
-|ConnectionString|C:\\ExportFiles|
-|Catalog|Transactions|
-|ConnectionType|FILE|
-|SystemType|"File Delimited"\\"File Ragged Right"\\"Excel"|
-|IntegrationStage|Staging|
-|RecordSource|TF|
-|FilePath|C:\\ImportFiles\\|
-|FilePattern|Transactions\*.\*|
-|NoOfThreads|0|
+| Attribute Name   | Example Project Attributes |
+| --------------   | -------------------------- |
+| Name             | TransactionsFile |
+| ConnectionString | `C:\ExportFiles` |
+| Catalog          | Transactions |
+| ConnectionType   | `FILE` |
+| SystemType       | `File Delimited`, `File Ragged Right`, `Excel` |
+| IntegrationStage | Staging |
+| RecordSource     | `TF` |
+| FilePath         | `C:\ImportFiles\` |
+| FilePattern      | `Transactions*.*` |
+| NoOfThreads      | 0 |
 
 ### Batches
 
@@ -138,18 +138,18 @@ A prerequisite for using the export to compressed file template is to have 7-Zip
 
 Assuming there already exist various layers in the data warehouse to extract from, the first thing to do is to create a new flat file connection in BimlFlex Excel. Some example connection attributes are shown below:
 
-|Attribute Name|Example Project Attributes|
-|--- |--- |
-|Name|TransactionsFile|
-|ConnectionString|C:\\ExportFiles\\Compressed|
-|Catalog|Transactions|
-|ConnectionType|FILE|
-|SystemType|"File Delimited"\\"File Ragged Right"\\"Excel"|
-|IntegrationStage|Staging|
-|RecordSource|TF|
-|FilePath|C:\\ExportFiles\\ Compressed\\|
-|FilePattern|Transactions\*.\*|
-|NoOfThreads|0|
+| Attribute Name   | Example Project Attributes |
+| --------------   | -------------------------- |
+| Name             | TransactionsFile |
+| ConnectionString | `C:\ExportFiles\Compressed` |
+| Catalog          | Transactions |
+| ConnectionType   | `FILE` |
+| SystemType       | `File Delimited`, `File Ragged Right`, `Excel` |
+| IntegrationStage | Staging |
+| RecordSource     | `TF` |
+| FilePath         | `C:\ExportFiles\Compressed\` |
+| FilePattern      | `Transactions*.*` |
+| NoOfThreads      | 0 |
 
 #### Batches
 

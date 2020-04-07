@@ -1,5 +1,5 @@
 ---
-uid: first-project-walkthrough
+uid: bimlflex-getting-started-first-project-walkthrough
 title: First Project Walkthrough
 ---
 # First Project Walkthrough

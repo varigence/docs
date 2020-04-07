@@ -2,8 +2,8 @@
   href: index.md
 - name: System Requirements
   href: system-requirements.md
-- name: Developer Install
-  href: developer-install.md
+- name: Installing BimlFlex
+  href: installing-upgrading-bimlflex.md
 - name: Metadata Database Install
   href: metadata-database-install.md
 - name: Build Server Install

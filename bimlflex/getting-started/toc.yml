@@ -1,12 +1,10 @@
-- name: Overview
-  href: index.md
+- name: Intro Videos
+  href: intro-videos.md
 - name: Initial Configuration
   href: initial-configuration.md
 - name: First Project Walkthrough
   href: first-project-walkthrough.md
 - name: Sample Metadata
   href: sample-metadata.md
-- name: Intro Videos
-  href: intro-videos.md
-- name: Tips and Tricks
-  href: tips-and-tricks.md
+#- name: Tips and Tricks
+#  href: tips-and-tricks.md
