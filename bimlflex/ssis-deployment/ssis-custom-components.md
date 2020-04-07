@@ -6,46 +6,51 @@ title: BimlFlex SSIS Custom Components
 
 The BimlFlex custom SSIS components are used for ETL load processes in SSIS packages. These components simplify the data processing and allows the BimlFlex generated packages to more easily process data.
 
-The components are available for download here:
+This installation is required for SQL/SSIS Servers that run BimlFlex created packages. These custom components are also required for opening and running the generated packages in Visual Studio.
 
-## SSIS custom components for SQL Server
+## Installation Media
 
-* SQL Server 2019: [https://varigence.com/downloads/varigence.ssis.2019.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2019.xcopyinstall.zip)
-* SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2017.xcopyinstall.zip)
-* SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2016.xcopyinstall.zip)
-* SQL Server 2014: [https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2014.xcopyinstall.zip)
-* SQL Server 2012: [https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2012.xcopyinstall.zip)
-* SQL Server 2008r2: [https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.2008.xcopyinstall.zip)
+The Varigence BimlFlex Custom SSIS Components are part of the BimlFlex installation and can be installed either from the BimlFlex installer or the BimlFlex runtime installer.
 
-## SSIS custom components for Snowflake
+Direct download links:
 
-* SQL Server 2019: [https://varigence.com/downloads/varigence.ssis.snowflake.2019.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2019.xcopyinstall.zip)
-* SQL Server 2017: [https://varigence.com/downloads/varigence.ssis.snowflake.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2017.xcopyinstall.zip)
-* SQL Server 2016: [https://varigence.com/downloads/varigence.ssis.snowflake.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2016.xcopyinstall.zip)
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
+    This installer includes all parts of BimlFlex, including the custom components
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
+    This installer includes the required runtime components for servers that will execute SSIS packages
+
+## Installation
+
+Run the installer on the SSIS Server and install the custom components version matching the SSIS Server version and target architecture.
+
+Install the versions matching your environment and expected targets. For Snowflake targets, install both the BimlFlex SSIS Components 2020 and the BimlFlex Snowflake SSIS Components 2020 for your SSIS and SQL Server version.
+
+> [!NOTE]
+> Only run one of the installers. For minimal installation on a server, only install the components from the Runtime installer
+
+Information on using custom components in the Azure Integration RunTime can be found here: @bimlflex-adding-ssis-custom-components-to-azure-integration-runtime
+
+## Uninstallation
+
+Use the add remove programs to uninstall the Varigence BimlFlex Custom SSIS Components to the server.
+
+## Custom Components for SQL Server
 
 The following components are included in the SSIS custom components for SQL Server:
 
-| Component              | Function                               |
-| ---------------------- | -------------------------------------- |
-| Biml Error Description | Logs Error Descriptions to the BimlCatalog database |
-| Biml Hash              | Provides hashing of data stream columns |
-| Biml Hash Dual         | Provides dual hashing of columns to minimize collision risk |
+| Component              | Function                                                             |
+| ---------------------- | -------------------------------------------------------------------- |
+| Biml Error Description | Logs Error Descriptions to the BimlCatalog database                  |
+| Biml Hash              | Provides hashing of data stream columns                              |
+| Biml Hash Dual         | Provides dual hashing of columns to minimize collision risk          |
 | Biml Hash Dynamic      | Provides dynamic hashing of columns based on component configuration |
-| Biml Hash Sql          | Provides Hashing using SQL `HASHBYTES()` compatible encoding |
-| Biml Row Audit         | Logs Audit information to the BimlCatalog database |
-| Biml Row Count         | counts rows and logs to the BimlCatalog database |
+| Biml Hash Sql          | Provides Hashing using SQL `HASHBYTES()` compatible encoding         |
+| Biml Row Audit         | Logs Audit information to the BimlCatalog database                   |
+| Biml Row Count         | counts rows and logs to the BimlCatalog database                     |
 
 The components are delivered as a SQL Server version specific file installation that needs to be deployed to any computer running or building BimlFlex SSIS packages.
 The installation is provided as a script file for easy installation automation for SQL servers.
 The components work in conjunction with the BimlCatalog orchestration and runtime database to store audit and error information.
-
-## Installation
-
-Installation of the custom components are integrated in the developer installation and also provided through a separate script file that embeds the custom components SSIS .dll into the required SQL Server folders as well as the GAC. This script approach allows the custom components to be installed on an Azure Integration Runtime.
-
-Note: It is not necessary to install the components separately if they were installed through the developer installation.
-
-Information on using custom components in the Azure Integration RunTime can be found here: @bimlflex-adding-ssis-custom-components-to-azure-integration-runtime
 
 ## Icons
 

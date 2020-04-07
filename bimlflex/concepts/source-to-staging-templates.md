@@ -278,9 +278,10 @@ Steps to create a source query join using two tables that are included in metada
 ## Custom Source Queries with Extension Points
 
 Another option for customizing source queries is by adding an Extension Point.
-Extension Points are a comprehensive feature of BimlFlex and [has its own documentation here](../user-guide/extension-points.md). A subset focused on Source to Staging is included here.
 
-Extension points are custom logic and tasks that can be injected directly into the BimlFlex framework in order to extend standard BimlFlex functionality.
+Extension Points are a comprehensive feature of BimlFlex and has its own documentation here: @bimlflex-extension-points. A subset focused on Source to Staging is included here.
+
+Extension Points are custom logic and tasks that can be injected directly into the BimlFlex framework in order to extend and replace standard BimlFlex functionality.
 
 The diagram below shows at which point the extension points are added to the source component ETL in BimlFlex. The left-hand side box contains the adjustments a user can make to the source query in metadata and the right-hand box contains the extension points that can be added that control the source query.
 

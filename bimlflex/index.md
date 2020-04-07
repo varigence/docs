@@ -1,6 +1,6 @@
 # BimlFlex Documentation
 
-## [Getting Started](getting-started/index.md)
+## [Getting Started](getting-started/intro-videos.md)
 
 The BimlFlex Getting Started guide provides:
 
@@ -11,10 +11,12 @@ The BimlFlex Getting Started guide provides:
 
 The BimlFlex User Guide describes detailed aspects of the BimlFlex framework
 
+<!--
 ## [Tips and Tricks](tips-and-tricks/index.md)
 
 BimlFlex Tips & Tricks is a set of focused design and implementation notes that quickly illustrates a core feature, nifty trick or similar
+-->
 
 ## [Release Notes](release-notes/release-notes.md)
 
-The latest Release Notes for BimlFlex
+The latest Release Notes and download information for BimlFlex

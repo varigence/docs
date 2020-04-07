@@ -1,5 +1,5 @@
 ---
-uid: tips-and-tricks
+uid: bimlflex-user-guide-tips-and-tricks
 title: Tips and Tricks
 ---
 # BimlFlex Tips and Tricks
@@ -341,18 +341,18 @@ You can use this script to identify which **Project** reference the **Connection
 
 ```biml
 <#@ template language="C#" hostspecific="True" tier="99999"#>
-<#	foreach(var project in RootNode.PackageProjects){
-	   	var connections = new List<string>();
-		foreach (var package in RootNode.Packages.Where(i=> i.PackageSubpath == project.ProjectSubpath)){
-			foreach(var packageConnection in package.Connections.Where(c => c.Connection != null && !string.IsNullOrWhiteSpace(c.Connection.Name)).Select(c => c.Connection.Name).Distinct()){
-				connections.Add(packageConnection);
-			} #>
+<#    foreach(var project in RootNode.PackageProjects){
+           var connections = new List<string>();
+        foreach (var package in RootNode.Packages.Where(i=> i.PackageSubpath == project.ProjectSubpath)){
+            foreach(var packageConnection in package.Connections.Where(c => c.Connection != null && !string.IsNullOrWhiteSpace(c.Connection.Name)).Select(c => c.Connection.Name).Distinct()){
+                connections.Add(packageConnection);
+            } #>
 <# } #>
 <#=project.Name #>
-<#	foreach(var connection in connections.Distinct()) {#>
-	<#=connection #>
+<#    foreach(var connection in connections.Distinct()) {#>
+    <#=connection #>
 <# } #>
-	
+    
 <# } #>
 ```
 
