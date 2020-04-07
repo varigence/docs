@@ -27,7 +27,8 @@ BEGIN
 	WHERE	[CustomerUID] = '00000000-0000-0000-0000-000000000000' 
 		AND [VersionUID] = '00000000-0000-0000-0000-000000000000'
 		AND	[SettingDisplayGrouping] = @displayGrouping
-	ORDER BY [SettingDisplayGrouping], [SettingDisplayOrder]
+		AND [IsDeleted] = 0
+		ORDER BY [SettingDisplayGrouping], [SettingDisplayOrder]
 
 	IF EXISTS(Select * FROM #SETTING)
 	BEGIN

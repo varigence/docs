@@ -1,34 +1,32 @@
 ---
-uid: bimlflex-initial-setup-and-configuration
-title: BimlFlex Initial Setup and Configuration
+uid: bimlflex-initial-configuration
+title: BimlFlex Initial Configuration
 ---
-# Initial Setup and Configuration
+# Initial Configuration
 
-The setup includes the necessary steps to set up the environments, including:
+The initial setup of BimlFlex include the steps to set up the full development environment:
 
-* the projects
-* the databases
-* the components
+* Creating the project
+* Connectiong to the databases
+* Loading the Sample Metadata
 
 that are required for the full BimlFlex framework to work.
 
-Once the BimlStudio and BimlFlex installations are completed, it is time to set up the environment for a BimlFlex project.
+Once the BimlFlex installation is completed, it is time to set up the environment for a BimlFlex project.
 
-The development side is focused around the BimlStudio-based BimlFlex project. Open the BimlStudio Application and create a new, empty project.
+The development side is focused around the BimlFlex App and tje BimlStudio-based BimlFlex project.
 
-The first time a new installation starts it requires the License Key. This key is provided as part of the engagement with Varigence.
+## BimlStudio project
+
+Open the BimlStudio Application and create a new, empty project.
+
+The first time a new installation starts, it requires a License Key. This key is provided as part of the engagement with Varigence.
 
 If a trial key is required, please contact Varigence BimlFlex Support at [support@bimlflex.com](mailto:support@bimlflex.com).
 
-## Watch Recordings
-
-### BimlFlex - Initial Configuration
-
-In this session, we go through the initial configuration of the BimlFlex project. We will cover the initial deployment of BimlFlex and BimlCatalog databases, create our first metadata instance.
-
 ![01 BimlFlex Initial Configuration](https://www.youtube.com/watch?v=qhDTwv-jYKc?rel=0&autoplay=0)
 
-## Creating the BimlFlex project
+### Creating the BimlFlex project
 
 From the start page, create a new BimlFlex project
 
@@ -42,7 +40,7 @@ Once the project is created, it is possible to open it directly from the folder 
 
 ![Empty Project](../user-guide/images/bimlflex-ss-v5-empty-project.png "Empty Project")
 
-### Set up Databases
+### Connect to the Databases
 
 The next step is to connect to the BimlFlex databases. BimlFlex uses a metadata database and an orchestration catalog database. All metadata generated in BimlFlex is stored in the metadata database. A metadata database can contain many projects (customers) and versions.
 
@@ -66,9 +64,19 @@ The Customer entity holds a separate set of metadata in the database and can be 
 
 A Customer can have multiple versions of the related metadata. An initial Version is created with the Customer. Throughout a project, it is possible to work with multiple different versions.
 
-### Setting Up the Excel Metadata Editor
+## BimlFlex App
 
-The Excel-based Metadata Editor is opened from the BimlFlex Ribbon tab in BimlStudio. The editor provides a familiar and productive metadata management environment.
+Start the BimlFlex App and configure it to connect to the BimlFlex database that was created during the installation.
+
+The BimlFlex app allows easy metadata management and provides featrues such as metadata import and graphical Data Vault acceleration.
+
+The BimlFlex app has a connection to the BimlFlex Metadata database, the customer and the version.
+
+The BimlFlex App has a Reporting function that can connect to a BimlCatalog database and show execution information.
+
+## Excel Add-in Metadata Editor
+
+The Excel-based Metadata Editor is opened from the BimlFlex Ribbon tab in BimlStudio. The editor provides a familiar and productive metadata management environment for bulk-editing metadata..
 
 ![New project in Excel](../user-guide/images/bimlflex-ss-v5-excel-new-project.png "New project in Excel")
 
