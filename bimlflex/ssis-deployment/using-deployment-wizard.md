@@ -49,7 +49,7 @@ After launching the wizard, follow these steps.
 
 1. Review and Deploy. Ensure that everything has been set up correctly and then click Deploy.
 <img 
-    src="images/folderbrowse.png" 
+    src="images/reviewanddeploy.png" 
     class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" />
