@@ -1,5 +1,5 @@
 ---
-uid: sensitive-info-management.md
+uid: sensitive-info-management
 name: Sensitive Information Management in SSIS
 ---
 # Sensitive Information Management in SSIS
