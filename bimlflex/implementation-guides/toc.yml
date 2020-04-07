@@ -16,8 +16,8 @@
   href: synapse-azcopy.md
 
   # SSIS with On-Premise SQL Server 
-- name: SSIS Source to Stage to Persistent Stage
-  href: ssis-source-stage-persistent-stage-on-prem-sql-server.md
+- name: SSIS on Premesis SQL Server
+  href: ssis-on-prem-sql-server.md
 
 # Other Concepts
 #- name: Export to File

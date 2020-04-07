@@ -13,7 +13,7 @@ This document describes the steps and considerations for extracting data from a 
 
 A prerequisite for this guide is that the BimlFlex project exists with Customer Metadata.
 
-See the [documentation on Initial Configuration](../getting-started/initial-configuration) for information on creating a BimlFlex project.
+See the [documentation on Initial Configuration](../getting-started/initial-configuration.md) for information on creating a BimlFlex project.
 
 #### Configure BimlStudio Project Target Architecture
 
@@ -559,7 +559,7 @@ As mentioned above, it is often handy to have an immediate `EndDate` to query fo
 When a HUB has multiple SATs it is often very convenient to have a single table to regenerate a specific point in time.  A PIT table can serve this purpose extremely well.  By selecting what SATs you want to align and generating the construct, you can simply target the PIT table for a Date and Time and immediately get back the appropriate entries in the tracked SATs.
 
 > [!NOTE]
-> This process is virtually identical to a [Single SAT](#Single-SAT) process with the only exception being that the target business entity has more SATs available/selected.
+> This process is virtually identical to a Single SAT process with the only exception being that the target business entity has more SATs available/selected.
 
 1. Navigate to the target `business concept`.  In this case the Customer HUB (**rdv.HUB_Customer**)
 ![Selecting Customer HUB](images/ssis-op-sql-multi-sat-1.png "Selecting Customer HUB")
@@ -583,7 +583,7 @@ A PIT table can also be built to group off of a `business date` verses the stand
 
 1. Ensure you are on the [Details] tab, if not click the [Details] tab.
 
-1. Click the ![Create PIT](images/ssis-op-sql-create-piy-button.png "Create PIT") button in the menu bar towards the top
+1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top
 ![Details Menu Bar](images/ssis-op-sql-bus-sat-2.png "Details Menu Bar")
 
 1. In the [Create PIT] dialog, choose [SAT_SAT_SalesOrder_awlt] followed by [ShipDate].
@@ -608,7 +608,7 @@ Once the BDV entities are modeled we will need to deploy the structures.  For th
 If you are not in a CI/CD environment, or perhaps only testing, it can be quicker to manually deploy the artifacts.  This is done by using the [Generate Scripts] function inside BimlStudio.  Once generated you can then deploy these to a target server of your choice.
 
 > [!WARNING]
-> These scripts are `DROP AND CREATE` by default.  This means they are destructive.  If manually deploying tables please ensure you are in a database where it is safe to do so.  If you wish to preserve data, please refer to [Deploying Artifacts with SSDT](#Deploying-Artifacts-with-SSDT).
+> These scripts are `DROP AND CREATE` by default.  This means they are destructive.  If manually deploying tables please ensure you are in a database where it is safe to do so.
 
 1. Open up your BimlFlex BimlStudio Project.
 
