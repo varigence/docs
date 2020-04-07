@@ -17,6 +17,10 @@ BimlFlex supports a number of target data warehouse platforms and provides load 
 * [Synapse Configurations](synapse-implementation-configurations.md)
 * [Synapse AzCopy](synapse-azcopy.md)
 
+## On-Premise SQL Server 
+
+* @ssis-source-stage-persistent-stage-on-prem-sql-server
+
 ## Other Concepts
 
 * [Export to File](export-to-file.md)
