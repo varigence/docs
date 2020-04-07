@@ -1,5 +1,5 @@
 ---
-uid: using-powershell
+uid: adf-using-powershell
 title: Deployment Through PowerShell
 ---
 # Deployment Through PowerShell

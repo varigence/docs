@@ -10,8 +10,8 @@ This installation is required for SQL/SSIS Servers that run BimlFlex created pac
 
 Other Installation Types are:
 
-* [Developer](developer-installation.md)
-* [Analyst](analyst-installation.md)
+* [Developer](../user-guide/developer-installation.md)
+* [Analyst](../user-guide/analyst-installation.md)
 
 ## Installation Media
 
