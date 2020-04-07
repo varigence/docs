@@ -18,11 +18,11 @@ The development side is focused around the BimlStudio-based BimlFlex project. Op
 
 The first time a new installation starts it requires the License Key. This key is provided as part of the engagement with Varigence.
 
-If the key is missing, please contact Varigence BimlFlex Support at [support@bimlflex.com](mailto:support@bimlflex.com).
+If a trial key is required, please contact Varigence BimlFlex Support at [support@bimlflex.com](mailto:support@bimlflex.com).
 
 ## Watch Recordings
 
-### 01. BimlFlex - Initial Configuration
+### BimlFlex - Initial Configuration
 
 In this session, we go through the initial configuration of the BimlFlex project. We will cover the initial deployment of BimlFlex and BimlCatalog databases, create our first metadata instance.
 
@@ -38,33 +38,19 @@ Options for creating a new BimlFlex Project.
 
 ![New BimlFlex Project](../user-guide/images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
 
-The project creation options include project file name and location and the Excel Add-in file. The Excel file is stored in the default installation location of the software:
-
-### 32-bit installations
-
-```batchfile
-Excel Add-in: C:\Program Files (x86)\Varigence\BimlFlex\5.0\BimlFlex.xlsx
-```
-
-### 64-bit installations
-
-```batchfile
-Excel Add-in: C:\Program Files\Varigence\BimlFlex\5.0\BimlFlex.xlsx
-```
-
-The Excel Add-in is the Excel spreadsheet with the Add-in code for the Excel-based Metadata editor.
-
 Once the project is created, it is possible to open it directly from the folder or by opening the project file from BimlStudio.
 
 ![Empty Project](../user-guide/images/bimlflex-ss-v5-empty-project.png "Empty Project")
 
 ### Set up Databases
 
-The next step is to create or connect to the BimlFlex databases. BimlFlex uses a metadata database and an orchestration catalog database. All metadata generated in BimlFlex is stored in the metadata database. A metadata database can contain many projects (customers) and versions.
+The next step is to connect to the BimlFlex databases. BimlFlex uses a metadata database and an orchestration catalog database. All metadata generated in BimlFlex is stored in the metadata database. A metadata database can contain many projects (customers) and versions.
 
 The orchestration catalog database contains run-time information about package executions, auditing and logging of any errors encountered.
 
-Create the required BimlFlex databases by clicking Setup BimlFlex in the Ribbon.
+The databases are created and updated through the BimlFlex installer. It is also possible to set up the databases from the BimlFlex ribbon tab in BimlStudio.
+
+If needed, create BimlFlex databases by clicking Setup BimlFlex.
 
 ![Setup BimlFlex](../user-guide/images/bimlflex-ss-v5-setup-bimlflex.png "Setup BimlFlex")
 
@@ -72,19 +58,13 @@ The default naming convention for the database names can be overridden to identi
 
 To be able to complete this step, the account used to access the database engine needs the necessary rights to create and configure the new databases.
 
-It is also possible to deploy the databases through the BimlFlex Support Utility Application or by implementing Dacpacs.
-
 ### Setting up a Customer
 
-Once the databases are available, it is time to create a customer. The Customer entity holds a separate set of metadata in the database and can be used to identify different projects, versions, customers, variations.
+The Customer entity holds a separate set of metadata in the database and can be used to identify different projects, versions, customers, variations.
 
 ![Create Customer](../user-guide/images/bimlflex-ss-v5-create-customer.png "Create Customer")
 
-The customer is represented internally in the database with a GUID, so if metadata is reused or manually managing the data in the database, it is possible to specify it here. For typical creation, it is recommended to auto-generate it.
-
-A Customer can have multiple versions of the related metadata. An initial Version is created with the Customer but throughout a project, it is possible to work with multiple different versions.
-
-Once the Project, Databases, Customer, and Version are setup the Excel-based Metadata Editor can be opened to populate the Project with metadata.
+A Customer can have multiple versions of the related metadata. An initial Version is created with the Customer. Throughout a project, it is possible to work with multiple different versions.
 
 ### Setting Up the Excel Metadata Editor
 
@@ -118,13 +98,3 @@ BimlStudio project options include settings such as the target SQL Server and SS
 
 ![BimlStudio Project Configuration](../user-guide/images/bimlstudio-ss-v5-project-configuration.png "BimlStudio Project Configuration")
 
-### Metadata configuration
-
-The Configurations and Settings sheets in the Metadata Editor contains  options for the generation and behavior of the project.
-
-This is described in more detail in:
-
-* @bimlflex-metadata-configurations
-* @bimlflex-metadata-settings
-
-![Metadata Configurations sheet](../user-guide/images/bimlflex-ss-v5-excel-configurations-sheet.png "Metadata Configurations sheet")

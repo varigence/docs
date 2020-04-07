@@ -10,7 +10,9 @@ The Getting Started with BimlFlex is an end to end, step by step guide to buildi
 
 ![BimlFlex End to End Walkthrough -center](https://www.youtube.com/watch?v=6BgkXqjDtvY?rel=0&autoplay=0 "BimlFlex End to End Walkthrough")
 
-The getting started documentation implements an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development. While BimlFlex supports SQL Server 2008-2017, the examples here use SQL Server 2017 for hosting databases, uses SSIS for the load process and uses the Microsoft AdventureWorksLT sample database as a source.
+The getting started documentation implements an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development.
+
+BimlFlex supports SQL Server 2008-2019 as well as Azure Synapse and Snowflake and both SQL Server Integration Services and Azure Data Factory. The examples here use SQL Server 2017 for hosting databases, uses SSIS for the load process and uses the Microsoft AdventureWorksLT sample database as a source.
 
 The getting started process demonstrates a 3 layer approach with staging, Data Vault and Data Mart layer.
 
@@ -28,9 +30,9 @@ The following is needed:
 
 ![Installing BimlFlex -center](https://www.youtube.com/watch?v=nnv5XnqbhvI?rel=0&autoplay=0 "Installing BimlFlex")
 
-[Download](https://varigence.com/downloads/bimlflexdevsetup.exe) and install the BimlFlex developer environment to get started.
+More information: @bimlflex-getting-started-installing-bimlflex
 
-This installer includes all the required components for a BimlFlex implementation.
+Download the latest installer from here: @bimlflex-release-notes
 
 ## BimlFlex and BimlStudio Applications
 
@@ -43,10 +45,14 @@ The installer includes the BimlFlex App and BimlStudio as well as SSIS Custom co
 
 ## BimlFlex databases
 
-The installer allows the creation of the required databases. During installation, create the BimlFlex and BimlCatalog databases on the data warehouse SQL Server.
+The installer allows the creation of the required databases.
 
-* BimlFlex - metadata repository database
-* BimlCatalog - orchestration and audit/logging repository database
+During installation, create the BimlFlex and BimlCatalog databases on the data warehouse SQL Server.
+
+* BimlFlex - metadata repository database.  
+    More information: @bimlflex-database
+* BimlCatalog - orchestration and audit/logging repository database.  
+    More information: @bimlcatalog-database
 
 ## Creating the BimlFlex and BimlStudio project
 
@@ -54,11 +60,23 @@ The installer allows the creation of the required databases. During installation
 
 Once the installation is completed and the databases are available, it is time to create the metadata customer/project that will be used in the getting started process. Once the project is available it is time to load some sample metadata to get started.
 
-Building tables, scripts and packages is done through BimlStudio, the development environment for BimlFlex. The BimlFlex project is a combination of project files on disk and project metadata stored in the BimlFlex metadata database. Start BimlStudio and create a BimlFlex project. Connect the project to the metadata database and the newly created metadata customer/project.
+More information: @bimlflex-getting-started-creating-and-configuring-a-bimlflex-project
+
+## Setting up the AdventureWorksLT source database
+
+![Setting up the AdventureWorksLT source database -center](https://www.youtube.com/watch?v=_XW_tqP_4lo?rel=0&autoplay=0 "Setting up the AdventureWorksLT source database")
+
+Once the installation is completed and the databases are available, it is time to create the metadata customer/project that will be used in the getting started process. Once the project is available it is time to load some sample metadata to get started.
+
+More information: @bimlflex-getting-started-setting-up-adventureworkslt2012-source-database
 
 ## Load Sample Metadata
 
+![Load Sample Metadata -center](https://www.youtube.com/watch?v=2rL853XpST4?rel=0&autoplay=0 "Load Sample Metadata")
+
 The BimlFlex App includes ready-made sample metadata that can be loaded into the project.
+
+More information: @bimlflex-getting-started-load-sample-metadata
 
 ## Import of source metadata
 
@@ -66,17 +84,23 @@ The BimlFlex App includes ready-made sample metadata that can be loaded into the
 
 Source metadata management and modeling is done through the BimlFlex App. It makes it easy to import the AdventureWorksLT source into the metadata repository.
 
+More information: @bimlflex-getting-started-importing-source-metadata
+
 ## Data Vault Acceleration
 
 ![Data Vault Acceleration -center](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0 "Data Vault Acceleration")
 
-Graphical, agile data vault modelling and acceleration is done through the BimlFlex App. This allows the modeler to create the expected Data Vault model with ease.
+Graphical, agile data vault modeling and acceleration is done through the BimlFlex App. This allows the modeler to create the target Data Vault model with ease.
+
+More information: @bimlflex-getting-started-accelerating-the-raw-data-vault-layer
 
 ## Build the Data Vault Project
 
 ![Build the Data Vault Project -center](https://www.youtube.com/watch?v=qYu8pwqgAm0?rel=0&autoplay=0 "Build the Data Vault Project")
 
-Once the metadata meets the data warehouse requirements it is time to use BimlStudio to build the databases, tables, scripts and load packages for the Data Warehouse process. This includes creating the required scripts and building the required SSIS packages.
+Once the metadata meets the data warehouse requirements it is time to use BimlStudio to build the databases, tables, scripts and load packages for the Data Warehouse process. This includes creating the table and load scripts and building SSIS packages.
+
+More information: @bimlflex-getting-started-building-databases-tables-and-ssis-packages-for-source-to-staging
 
 ## Applying Load Parameters
 
@@ -84,11 +108,15 @@ Once the metadata meets the data warehouse requirements it is time to use BimlSt
 
 To load only new data every time the load process is run, add load parameters where needed. The Load Parameter function in BimlFlex allows easy adding of high watermark load parameters to the sourcing process.
 
+more information: @bimlflex-getting-started-applying-load-parameters
+
 ## Business Data Vault Model
 
 ![Business Data Vault Model -center](https://www.youtube.com/watch?v=JZT8rDBMhmI?rel=0&autoplay=0 "Business Data Vault Model")
 
 The Point in Time and Bridge table structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
+
+more information: @bimlflex-getting-started-adding-business-data-vault-performance-constructs
 
 ## Dimensional Model
 
@@ -96,8 +124,4 @@ The Point in Time and Bridge table structures are used in Data Vault to make the
 
 The Dimensional model is built on top of the Raw and Business Data Vault model. By using a view-based abstraction layer between the tables and the Data Mart load it is possible to more easily accommodate future changes and optimize the sources for the Dimensions and Facts.
 
-The Facts and Dimensions are created from the source views through the cloning feature. This allows rapid and agile creation of the destination tables and the source to target mappings required.
-
-Once the Dimensions and Facts are created, it is possible to create the relationships between the Fact Integration Keys and the Dimensions for Dimension lookups.
-
-Once the model is completed it is time to create the complete load process through BimlStudio.
+more information: @bimlflex-getting-started-dimensional-model

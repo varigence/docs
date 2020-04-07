@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-accelerating-the-raw-data-vault-layer
+uid: bimlflex-getting-started-accelerating-the-raw-data-vault-layer
 title: Accelerating the Data Vault
 ---
 # Accelerating the Data Vault

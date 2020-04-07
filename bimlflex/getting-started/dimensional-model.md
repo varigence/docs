@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-dimensional-model
+uid: bimlflex-getting-started-dimensional-model
 title: Data Mart Dimensional Model
 ---
 # Data Mart Dimensional Model

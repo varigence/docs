@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-building-databases-tables-and-ssis-packages-for-source-to-staging
+uid: bimlflex-getting-started-building-databases-tables-and-ssis-packages-for-source-to-staging
 title: Building Databases, Tables and SSIS packages for source to staging
 ---
 # Building Databases, Tables and SSIS packages for source to staging
