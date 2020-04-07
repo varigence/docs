@@ -65,7 +65,7 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 
 1. Navigate, within your output folder, to:
 
-      ` ...\output\DataFactories\<Setting.AzureDataFactoryName>\arm_template.json`
+      ` ...\output\DataFactories\<AzureDataFactoryName>\arm_template.json`
 
 
    > [!NOTE]
@@ -95,7 +95,7 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 
 1. Navigate to:
 
-     `...\output\DataFactories\\<Setting.AzureDataFactoryName>\arm_template_parameters.json`
+     `...\output\DataFactories\<AzureDataFactoryName>\arm_template_parameters.json`
 
 1. Click **Save**.
 
