@@ -36,7 +36,9 @@ Connection String
 
 Connection String and file specification. Uses standard COZYROC Excel Plus syntax for management of file location, recalculation, formats etc.
 
-Sample: `ExcelFilePath=c:\BimlFlex\Import\MyExcelFile.xlsx;FormatType=Auto;Recalculate=False;DateTimeFormat=;RetainSameConnection=True;`
+[//]: # (There is a zero width space in the line below (after Auto;) to facilitate line break for mobile form factor.)
+
+Sample: `ExcelFilePath=c:\BimlFlex\Import\MyExcelFile.xlsx;FormatType=Auto;​Recalculate=False;DateTimeFormat=;RetainSameConnection=True;`
 
 ## More Information
 
