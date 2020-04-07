@@ -36,7 +36,7 @@ Build 5.0.nnnnn.0, release date: nn April 2020
 
 BimlFlex now has full support for Azure Data Factory (ADF) workflows for Azure Synapse, Azure SQL DB and Snowflake target data warehouses.
 
-This includes full support to build Azure ARM templates for direct deployment of the pipelines to Azure as well as json file generation for individual deployments and deployment through the ADF devops git integration.
+This includes full support to build Azure ARM templates for direct deployment of the pipelines to Azure as well as json file generation for individual deployments and deployment through the ADF DevOps git integration.
 
 More information on ADF here: @bimlflex-adf-overview
 
