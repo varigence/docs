@@ -7,7 +7,7 @@ title: BimlFlex Initial Configuration
 The initial setup of BimlFlex include the steps to set up the full development environment:
 
 * Creating the project
-* Connectiong to the databases
+* Connecting to the databases
 * Loading the Sample Metadata
 
 that are required for the full BimlFlex framework to work.
@@ -70,7 +70,7 @@ It is recommended that the BimlStudio Project and the Metadata Customer has the 
 
 Start the BimlFlex App and configure it to connect to the BimlFlex database that was created during the installation.
 
-The BimlFlex app allows easy metadata management and provides featrues such as metadata import and graphical Data Vault acceleration.
+The BimlFlex app allows easy metadata management and provides features such as metadata import and graphical Data Vault acceleration.
 
 The BimlFlex app has a connection to the BimlFlex Metadata database, the customer and the version.
 
@@ -87,8 +87,6 @@ The BimlFlex Excel metadata editor comes with an additional Excel tab in the Rib
 Once the connection is defined the metadata can be read into Excel. The master data is stored in the database and the working set is cached and displayed in Excel. The data is not updated in real time. It is important to commit changes to the database and to communicate within the development team to synchronise changes to the Metadata.
 
 Retrieve all metadata into Excel by clicking the `Get All Entities` and `Get All Settings` buttons in the Excel BimlFlex Ribbon UI.
-
-![Get All Entities -50% -center](../user-guide/images/bimlflex-ss-v5-excel-get-all-entities.png "Get All Entities -50% -center")
 
 Once the metadata entities and settings are refreshed, it is possible to review the metadata, configurations and settings.
 
