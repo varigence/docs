@@ -471,6 +471,19 @@ $('.header-search-icon').click(function () {
     }
   }
 
+  function adjustFooterForTocHeight() {
+    let container = $('.container.body-content');
+    if (container) {
+      let tocHeight = $('#sidetoc').height();
+      let articleHeight = $('.article.row').height();
+      let newHeight = tocHeight + 200;
+      if (articleHeight > tocHeight) {
+        newHeight = articleHeight + 320;
+      }
+      container.css('min-height', newHeight);
+    }
+  }
+
   function renderSidebar() {
     var sidetoc = $('.sidetoc')[0];
     if (typeof (sidetoc) === 'undefined') {
@@ -498,19 +511,25 @@ $('.header-search-icon').click(function () {
       }
       */
 
+      adjustFooterForTocHeight();
       renderBreadcrumb();
     }
 
     function registerTocEvents() {
+      $(window).on('resize', adjustFooterForTocHeight);
       $('.toc .nav > li > .expand-stub').click(function (e) {
         var clickedItem = $(e.target).parent();
         clickedItem.siblings().removeClass(expanded);
         clickedItem.toggleClass(expanded);
+
+        adjustFooterForTocHeight();
       });
       $('.toc .nav > li > .expand-stub + a:not([href])').click(function (e) {
         var clickedItem = $(e.target).parent();
         clickedItem.siblings().removeClass(expanded);
         clickedItem.toggleClass(expanded);
+
+        adjustFooterForTocHeight();
       });
       $('#toc_filter_input').on('input', function (e) {
         var val = this.value;
@@ -575,6 +594,7 @@ $('.header-search-icon').click(function () {
           tocrel = tocPath.substr(0, index + 1);
         }
         var currentHref = util.getAbsolutePath(window.location.pathname).toLowerCase();
+        var foundActive = false;
         $('#sidetoc').find('a[href]').each(function (i, e) {
           var href = $(e).attr("href");
           if (util.isRelativePath(href)) {
@@ -588,10 +608,15 @@ $('.header-search-icon').click(function () {
           }
           if (tocHref === currentHref) {
             $(e).addClass(active);
+            foundActive = true;
           }
 
           $(e).breakWord();
         });
+
+        if (!foundActive) {
+          $('#sidetoc .nav.level1 > li > a').addClass(active)
+        }
 
         renderSidebar();
       });

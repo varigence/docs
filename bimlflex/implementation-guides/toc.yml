@@ -15,16 +15,20 @@
 - name: Synapse AzCopy
   href: synapse-azcopy.md
 
+  # SSIS with On-Premise SQL Server 
+- name: SSIS on-premises SQL Server
+  href: ssis-on-prem-sql-server.md
+
 # Other Concepts
-- name: Export to File
-  href: export-to-file.md
+#- name: Export to File
+#  href: export-to-file.md
 - name: Master Data Services
   href: master-data-services.md
 
 # Special sources
 - name: Source Excel Plus
   href: source-excel-plus.md
-- name: Source Salesforce
-  href: source-salesforce.md
-- name: Source Stored Procedure
-  href: source-stored-procedure.md
+#- name: Source Salesforce
+#  href: source-salesforce.md
+#- name: Source Stored Procedure
+#  href: source-stored-procedure.md

@@ -1928,7 +1928,7 @@ var sourceColumns = columns.Where(c => primaryKeyColumns.Contains(c.ColumnName))
 </RawFileFormat>
 ```
 
-## Data Vault
+## Data Vault
 
 
 ### Raw Data Vault Source Override
@@ -2241,7 +2241,7 @@ Configure custom Sql for the Data Vault BRIDGE
 *#>
 ```
 
-## Data Mart
+## Data Mart
 
 
 ### Data Warehouse Source Override
@@ -2615,7 +2615,7 @@ WITH
 )
 ```
 
-## Azure Data Factory
+## Azure Data Factory
 
 
 ### Azure Key Vault Linked Service Reference

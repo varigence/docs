@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-modeling-of-source-metadata
+uid: bimlflex-getting-started-modeling-of-source-metadata
 title: Modeling of Source Metadata
 ---
 # Modeling of Source Metadata

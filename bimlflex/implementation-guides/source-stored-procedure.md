@@ -4,7 +4,7 @@ title: BimlFlex Stored Procedure Source
 ---
 # BimlFlex Stored Procedure Source
 
-BimlFlex can load from Excel source files using the COSYROC Excel Plus SSIS Component
+BimlFlex can load from Excel source files using the COZYROC Excel Plus SSIS Component
 
 ## Getting Started
 

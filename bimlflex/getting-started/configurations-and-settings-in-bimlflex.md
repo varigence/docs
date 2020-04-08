@@ -1,22 +1,22 @@
 ---
-uid: bimlflex-trial-configurations-and-settings-in-bimlflex
+uid: bimlflex-getting-started-configurations-and-settings-in-bimlflex
 title: Configurations and Settings in BimlFlex
 ---
 # Configurations and Settings in BimlFlex
 
 A key feature of BimlFlex is its comprehensive set of configurations and settings.
 
-Most aspects can be configured, including naming conventions, metadata added to layers, hashing approaches, base Azure accounts and folder locations to use.
+BimlFlex comes with a set of different default configurations that can be applied to a project
 
 ## Detailed Steps
 
-The following detailed steps walks through the recommended configuration of the BimlFlex project for the getting started process.
-
 Open the BimlFlex App.
 
-### Review Configurations
+### Review Architecture
 
-Navigate to the Configurations page.
+The dashboard Actions pane has an option for loading defaults as well as sample metadata. If the Sample metadata has not been applied, choose to apply either a sample metadata set or a default configuration for the choosen architecture.
+
+### Review Configurations
 
 The Configurations page contains the BimlFlex configurations for core metadata.
 
@@ -30,10 +30,4 @@ Navigate to the Settings page.
 
 The Settings page contains configurable settings such as naming conventions used.
 
-For the getting started process it is recommended to use a Hash Algorithm compatible with the `HASHBYTES()` function in SQL.
-
-Verify that the `UseSqlCompatibleHash` and `UseSqlCompatibleRowHash` settings are set to `Y`
-
-For the getting started process it is recommended to allow the Data Vault Accelerator to accelerate Link Satellites.
-
-Verify that the `DvAccelerateLinkSatellite` setting in the settings sheet is set to `Y`
+Settings can be overridden when needed. If a setting is not used, it can be switched on for a specific source object through the settings overrides

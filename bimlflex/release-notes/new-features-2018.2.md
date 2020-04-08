@@ -19,7 +19,7 @@ The support for an insert only data warehouse has been optimized to allow for op
 
 ## Validator updates
 
-Several new metadata validators has been added to the modelling experience. The validators will highlight issues with the model that could impact build or load behavior.
+Several new metadata validators has been added to the modeling experience. The validators will highlight issues with the model that could impact build or load behavior.
 
 ## Salesforce source support
 
@@ -40,7 +40,7 @@ The Catalog orchestration has been updated to support UTC based times for data w
 ## Streamlined metadata import dialog
 
 The import metadata dialog is now streamlined for BimlFlex users.
-It allows creation of Business Keys from source table information and will also and change object relationships based on identified Business Keys. This allows a more agile modelling approach for Data Vault Scenarios.
+It allows creation of Business Keys from source table information and will also and change object relationships based on identified Business Keys. This allows a more agile modeling approach for Data Vault Scenarios.
 
 A new `Proper_Case` naming override has been introduced in addition to existing naming conventions.
 

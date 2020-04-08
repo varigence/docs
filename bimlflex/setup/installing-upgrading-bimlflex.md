@@ -15,6 +15,8 @@ The following installers are available:
 * Runtime installation  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
+The current installer is available through the @bimlflex-release-notes page
+
 The BimlFlex developer installation allows the installation of all components used in the BimlFlex framework:
 
 * BimlStudio
@@ -22,7 +24,7 @@ The BimlFlex developer installation allows the installation of all components us
 * BimlFlex Excel-based metadata editor
 * SSIS Custom Components for SQL Server SSIS
 * SSIS Custom Components for Snowflake
-* Installation of new, or upgrades of existing BimlFlex and BimlCatalog databases
+* Installation of new, or upgrades of existing, BimlFlex and BimlCatalog databases
 
 Run the developer installation and choose to install all components on the developer machine. For complete functionality, all components are required.
 
@@ -40,12 +42,12 @@ The following detailed steps walk through the installation of BimlFlex
 
 ### Download the BimlFlex installer
 
-Use the link in the welcome or trial email to download the installer
+The current installer is available through the @bimlflex-release-notes page
 
 ### Check bitness of Microsoft Excel
 
 > [!NOTE]
-> Microsoft Excel is a prerequisite for installing and using the BimlFlex Excel-based Metadata Editor.
+> Microsoft Excel is a prerequisite for installing and using the BimlFlex Excel Add-in Metadata Editor.
 
 Check the bitness of the local installation of Microsoft Excel using the [Microsoft guidelines available here](https://support.office.com/en-us/article/About-Office-What-version-of-Office-am-I-using-932788B8-A3CE-44BF-BB09-E334518B8B19).
 

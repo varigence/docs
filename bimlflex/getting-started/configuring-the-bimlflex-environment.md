@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-configuring-the-bimlflex-environment
+uid: bimlflex-getting-started-configuring-the-bimlflex-environment
 title: Configuring the BimlFlex Environment
 ---
 # Configuring the BimlFlex Environment

@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-setting-up-adventureworkslt2012-source-database
+uid: bimlflex-getting-started-setting-up-adventureworkslt2012-source-database
 title: Setting up the AdventureWorksLT source database
 ---
 # Setting up the AdventureWorksLT source database
@@ -23,8 +23,6 @@ This Microsoft sample database is available for download from GitHub:
 Download the SQL Server backup file and restore it to the SQL Server engine through Management Studio.
 
 ## Detailed Steps
-
-### Download the database backup
 
 1. Download the [AdventureWorksLT2012.bak](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksLT2012.bak) SQL Server database backup file
 1. Move it to a location accessible from the database server
