@@ -4,35 +4,45 @@ title: BimlFlex Source to Staging Templates
 ---
 # Source to Staging Templates
 
-BimlFlex offers users the ability to automate the development of best practice ETL and ELT patterns out of the box using metadata modeling. As part of this, there are various options for users when designing a staging layer for their solution.
+BimlFlex offers users the ability to automate the development of best practice ETL out of the box using metadata modeling. As part of this, there are various options for users when designing a staging layer for their solution.
 
 ## Watch Recordings
 
-### Source To Staging
+### 03.BimlFlex - Source To Staging
 
-This session explore the process of configuring the Source to Staging process.
+In this session, we explore the process of configuring Source to Staging process.
 
-![BimlFlex Source To Staging](https://www.youtube.com/watch?v=iNBLcpGalLc?rel=0&autoplay=0)
+![03 BimlFlex Source To Staging](https://www.youtube.com/watch?v=iNBLcpGalLc?rel=0&autoplay=0)
 
-<!--
-### BimlFlex - Object Inheritance
+### 05.BimlFlex - Object Inheritance
 
 In this session we look at Object Inheritance to reuse metadata.
 
 ![05 BimlFlex Object Inheritance](https://www.youtube.com/watch?v=5IRsoePFcjc?rel=0&autoplay=0)
--->
 
-### Import Files
+### 13.BimlFlex - Import Files
 
-This session look at how to configure flat files.
+In this session we look at how to configure flat files.
 
-![BimlFlex Import Files](https://www.youtube.com/watch?v=AHOxGcsrZaw?rel=0&autoplay=0)
+![13 BimlFlex Import Files](https://www.youtube.com/watch?v=AHOxGcsrZaw?rel=0&autoplay=0)
 
 ## Source to Staging
 
 Using metadata, the source schemas are mapped to a staging environment. This provides all the required metadata for the source to staging/persistent staging. When run through SSIS, data is transferred and any transformations that are defined using SsisExpressions and/or SqlExpressions are applied.
 
 The source to staging creation can be toggled on or off based on what metadata has been defined.
+
+Database sources and Flat File sources utilize different templates. The template used is controlled by the IntegrationTemplate property of the project.
+
+### Integration Templates
+
+Below is the currently supported Integration Templates
+
+|Project Integration Templates|Staging Available|
+|--- |--- |
+|Source -> Target|Yes|
+|Source -> File Extract|Not Applicable|
+|Source -> Zip File Extract|Not Applicable|
 
 ### ETL Pattern Overview
 
@@ -268,10 +278,9 @@ Steps to create a source query join using two tables that are included in metada
 ## Custom Source Queries with Extension Points
 
 Another option for customizing source queries is by adding an Extension Point.
+Extension Points are a comprehensive feature of BimlFlex and [has its own documentation here](../user-guide/extension-points.md). A subset focused on Source to Staging is included here.
 
-Extension Points are a comprehensive feature of BimlFlex and has its own documentation here: @bimlflex-extension-points. A subset focused on Source to Staging is included here.
-
-Extension Points are custom logic and tasks that can be injected directly into the BimlFlex framework in order to extend and replace standard BimlFlex functionality.
+Extension points are custom logic and tasks that can be injected directly into the BimlFlex framework in order to extend standard BimlFlex functionality.
 
 The diagram below shows at which point the extension points are added to the source component ETL in BimlFlex. The left-hand side box contains the adjustments a user can make to the source query in metadata and the right-hand box contains the extension points that can be added that control the source query.
 

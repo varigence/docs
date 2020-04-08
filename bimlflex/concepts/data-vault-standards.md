@@ -1,5 +1,4 @@
 ---
-uid: bimlflex-data-vault-standards
 title: BimlFlex Data Vault Standards
 ---
 
@@ -244,7 +243,7 @@ Report Collection RPT, RC
 - ConfigurationKey `RowEffectiveFromDate`. The `ConfigurationValue` can be renamed based on your naming conventions.
 - This is optional, but recommended value if supported by your target platform.
 - Not part of the Hub primary key.
-- The default name is `FlexRowEffectiveFromDate` and the recommended name is `DWH_LOAD_DT` changed to conform to your naming standards.
+- Default name is `FlexRowEffectiveFromDate` and the recommended name is `DWH_LOAD_DT` changed to conform to your naming standards.
 
 ### Record Source
 

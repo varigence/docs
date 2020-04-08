@@ -2,7 +2,7 @@
 categories: [BimlFlex]
 layout: post
 published: false
-summary: This BimlFlex webinar looks at Dimensional Modeling and the Dimensional data warehouse
+summary: This BimlFlex webinar looks at Dimensional Modelling and the Dimensional data warehouse
 tags: [BimlFlex]
 title: BimlFlex 2018 - Dimensions and Facts
 ---
@@ -10,24 +10,24 @@ title: BimlFlex 2018 - Dimensions and Facts
 
 ## BimlFlex 2018 - Dimensions and Facts
 
-This BimlFlex webinar looks at Dimensional Modeling and the Dimensional data warehouse.
+This BimlFlex webinar looks at Dimensional Modelling and the Dimensional data warehouse.
 
-The video starts with a short overview of the Dimensional Modeling approach.
+The video starts with a short overview of the Dimensional Modelling approach.
 This highlights that the dimensional warehouse is targeted for, and optimized for, end user querying.
 It uses dimensions to provide context and facts and measures to provide analytical measures.
-The dimensional warehouse is denormalised and optimized for analysis, in contrast to 3NF or Data Vault modeling approaches, who are more optimized towards data warehousing. Most classical BI analysis and reporting tools are geared towards easily reading the data from a dimensional model.
+The dimensional warehouse is denormalised and optimized for analysis, in contrast to 3NF or Data Vault modelling approaches, who are more optimized towards data warehousing. Most classical BI analysis and reporting tools are geared towards easily reading the data from a dimensional model.
 
 ![BimlFlex solution architecture](https://varigencecom.blob.core.windows.net/blogimages/bimlflex-architecture.png)
 
 ### Choosing the architecture
 
 In the BimlFlex architecture it is possible to chose between using Microsoft Azure cloud based data warehousing or on-premises data warehousing for SQL Server.
-The Microsoft Azure Cloud based approach uses PolyBase and blob storage of files as the ingestion mechanism for loads. This uses an ELT approach to load the data into the data warehouse. The data can be extracted using SSIS from traditional source. The data warehousing solution ban be either Azure SQL Data Warehouse or SQL Server 2016 and newer, commonly running in a VM in Azure.
+The Microsoft Azure Cloud based approach uses Polybase and blob storage of files as the ingestion mechanism for loads. This uses an ELT approach to load the data into the data warehouse. The data can be extracted using SSIS from traditional source. The data warehousing solution ban be either Azure SQL Data Warehouse or SQL Server 2016 and newer, commonly running in a VM in Azure.
 The on-premises approach uses either traditional loads through an SSIS based ETL process or a ELT based process into a classical installation of SQL Server.
 
-Regardless of the ultimate destination, the BimlFlex modeling approach and the required metadata is the same and it is possible to easily migrate a solution from an on-premises approach to a cloud based approach. For organizations reviewing the cloud as the future platform for data warehousing this means it is possible to use the on-premises approach today and move to the cloud down the line without having to recreate the data warehousing solution.
+Regardless of the ultimate destination, the BimlFlex modelling approach and the required metadata is the same and it is possible to easily migrate a solution from an on-premises approach to a cloud based approach. For organizations reviewing the cloud as the future platform for data warehousing this means it is possible to use the on-premises approach today and move to the cloud down the line without having to recreate the data warehousing solution.
 
-In BimlFlex, the metadata is managed through a central repository. The management of this metadata is done through an Excel front end. This allows for modeling and management of metadata, source to target mappings and more.
+In BimlFlex, the metadata is managed through a central repository. The management of this metadata is done through an Excel front end. This allows for modelling and management of metadata, source to target mappings and more.
 
 ### Importing source metadata
 

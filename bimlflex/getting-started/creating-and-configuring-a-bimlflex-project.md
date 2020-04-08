@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-getting-started-creating-and-configuring-a-bimlflex-project
+uid: bimlflex-trial-creating-and-configuring-a-bimlflex-project
 title: Creating and configuring a BimlFlex project
 ---
 # Creating and configuring a BimlFlex project
@@ -14,7 +14,7 @@ Create the Metadata Customer through the BimlFlex App and connect the App to thi
 
 Once the Customer is created the BimlFlex App will connect to it every time it is opened.
 
-Load the starting point sample metadata into the project using the Load Sample Metadata function.
+Load the starting point sample metadata in to the project using the Load Sample Metadata function.
 
 ## Create and configure the BimlStudio project
 
@@ -24,4 +24,4 @@ The project also needs to be configured for the SQL Server version and SSIS depl
 
 Once the project is configured it is ready to be used for data modeling and Data Warehouse generation.
 
-Restart the BimlStudio application and reopen the project to load the new metadata connection into BimlStudio.
+Restart the BimlStudio application and reopen the project to load the new metadata connection in to BimlStudio.

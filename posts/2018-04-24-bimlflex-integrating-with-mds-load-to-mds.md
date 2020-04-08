@@ -19,7 +19,7 @@ The creation of the Entity also creates an MDS staging table in the MDS database
 
 ### Creating the BimlFlex metadata.
 
-In BimlFlex, the metadata is managed through a central repository. The management of this metadata is done through an Excel front end. This allows for modeling and management of metadata, source to target mappings and more. The example in the video uses a direct connection from source to destination, loading MDS straight from the AdventureWorks LT source system. A common approach is for the MDS loads to be integrated into the Data warehouse loads. Using either a source view on top of the Data Warehouse or a staging table that is part of a source system load as the source for the MDS load. 
+In BimlFlex, the metadata is managed through a central repository. The management of this metadata is done through an Excel front end. This allows for modelling and management of metadata, source to target mappings and more. The example in the video uses a direct connection from source to destination, loading MDS straight from the AdventureWorks LT source system. A common approach is for the MDS loads to be integrated into the Data warehouse loads. Using either a source view on top of the Data Warehouse or a staging table that is part of a source system load as the source for the MDS load. 
 
 For the load to MDS the MDS connection is specified as `Master Data Services` in the `IntegrationStage` column.
 

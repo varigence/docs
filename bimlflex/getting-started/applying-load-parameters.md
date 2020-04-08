@@ -1,9 +1,10 @@
 ---
-uid: bimlflex-getting-started-applying-load-parameters
+uid: bimlflex-trial-applying-load-parameters
 title: Applying Load Parameters
 ---
 # Applying Load Parameters
 
+Applying Load Parameters
 ![Applying Load Parameters -center](https://www.youtube.com/watch?v=7GwiIC5vbs8?rel=0&autoplay=0 "Applying Load Parameters")
 
 The way the load process should derive a valid delta is an important steps in the analysis of a source system.

@@ -4,7 +4,7 @@ title: BimlFlex Salesforce Source
 ---
 # BimlFlex Salesforce Source
 
-BimlFlex can load from Salesforce using the COZYROC Salesforce SSIS Component
+BimlFlex can load from Salesforce using the COSYROC Salesforce SSIS Component
 
 ## Getting Started
 

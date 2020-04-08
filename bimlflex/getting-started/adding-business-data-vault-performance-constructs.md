@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-getting-started-adding-business-data-vault-performance-constructs
+uid: bimlflex-trial-adding-business-data-vault-performance-constructs
 title: Adding the Business Data Vault Model
 ---
 # Adding the Business Data Vault Model

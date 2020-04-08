@@ -7,7 +7,7 @@ title: BimlFlex Metadata Entity Definitions
 
 BimlFlex metadata is managed through the robust Varigence BimlFlex Excel Add-in and is persisted in a metadata database.
 
-For the BimlFlex framework, the modeling focus on technical metadata. Technical metadata represents information that describes how to access the data and includes data type, the name of the data in the enterprise information system, and other information that describes the way the native enterprise information system identifies the meta object.
+For the BimlFlex framework, the modelling focus on technical metadata. Technical metadata represents information that describes how to access the data and includes data type, the name of the data in the enterprise information system, and other information that describes the way the native enterprise information system identifies the meta object.
 
 ## Metadata Model
 
@@ -54,7 +54,7 @@ Configure connection attributes for both Databases and Files. The ConnectionType
 | PersistHistory | Determines whether to track history when defining a connection with an IntegrationStage = "PSA" for Persistent Staging Area. If this is not set and a PSA connection is configured then the database becomes a ODS without history. This is very useful to create an ODS by merely importing the source metadata. |
 | Server | Name of the host server the connection points to. Generally this is omitted as defining it in the ConnectionString is sufficient.  |
 | Provider | Defined the type of connection provider used in this connection. When using ADO.NET connections other than MSSQL this is a required field. |
-| RecordSource | Abbreviation to uniquely identify the source system. This attribute is compulsory for all defined IntegrationStage = "SRC"(source). Required attribute for modeling Data Vault in particular.  |
+| RecordSource | Abbreviation to uniquely identify the source system. This attribute is compulsory for all defined IntegrationStage = "SRC"(source). Required attribute for modelling Data Vault in particular.  |
 | StartDelimiter | Derived value from [meta].[SystemType] table. The column starting delimiter used by the DBMS when performing a query. |
 | EndDelimiter | Derived value from [meta].[SystemType] table. The column ending delimiter used by the DBMS when performing a query. |
 | IgnoreSchema | Derived value from [meta].[SystemType] table. If this is set to "Y" then the source query will omit the schema. |
@@ -130,15 +130,15 @@ Object define the header information for both database tables and views and file
 | CreateSql | Create SQL statement which can be used deploy a view onto the database.  |
 | OverrideSql | Query used to override the source component. |
 | FromSql | If the source select FROM clause requires customization is where it can be entered. Important if using this attribute it must include the ObjectAlias if defined. <br/>Example:<br/>`FROM @@this src WITH (NOLOCK)` |
-| JoinSql | If the source select requires a JOIN this is where it can be entered. Example:<br/>`INNER JOIN [SalesLT].[CustomerAddress] ca ON src.[AddressID] = ca.[AddressID] AND ca.[AddressType] = 'Main Office'`<br/>The query is limited to 1000 characters.<br/>                                 |
+| JoinSql | If the source select requires a JOIN this is where it can be entered. Example:<br/>`INNER JOIN [SalesLT].[CustomerAddress] ca ON src.[AddressID] = ca.[AddressID] AND ca.[AddressType] = 'Main Office'`<br/>The query is limited to 1000 characters.<br/>								 |
 | WhereSql | If the source select requires a WHERE clause this is where it can be entered.  Note that defining a Parameter on the object will be appended to the statement. <br/>Example:<br/>`WHERE [Culture] = 'en'` |
 | ObjectAlias | Defines an alias (short name) for the Object. This is relevant in conjunction with the `JoinSql` and/or `WhereSql` attributes. Generally "src" is used as a default |
 | SelectBySql | If the source select requires a `DISTINCT` or `TOP N` clause this is where it can be entered. The field is limited to 1000 characters. |
 | GroupBySql | If the source select requires a `GROUP BY` clause this is where it can be entered. The field is limited to 1000 characters. |
 | OrderBySql | If the source select requires an `ORDER BY` clause this is where it can be entered. The field is limited to 1000 characters. |
 | ModelGrouping | This column categories objects per subject area. This grouping can be used in the Data Vault Accelerator for constrained acceleration. |
-| ModelOverrideName | This column contains the actual table name users want the object to appear as after the solution is deployed. This is better described with and example. Let's say you have a source system with cryptic names like GL002 and the actual business name is GeneralLedger. By defining a value and generating a Data Vault using the BimlFlex Accelerator the result would be [HUB_GeneralLedger], [SAT_GeneralLedger] |
-| ModelOverrideShortName | This column contains the short table name users want the object to appear as after the solution is deployed. As per the `ModelOverrideName`, but is used in naming Links and Link Satellites. As an example if there is a link between the `GeneralLedger` and `ChartOfAccounts` the name will be `[LNK_GeneralLedger_ChartOfAccounts]`. Defining values here the name could be `[LNK_GL_COA]`, providing flexibility when modeling. |
+| ModelOverrideName | This column contains the actual table name users want the object to appear as after the solution is deployed. This is better described with and example. Let’s say you have a source system with cryptic names like GL002 and the actual business name is GeneralLedger. By defining a value and generating a Data Vault using the BimlFlex Accelerator the result would be [HUB_GeneralLedger], [SAT_GeneralLedger] |
+| ModelOverrideShortName | This column contains the short table name users want the object to appear as after the solution is deployed. As per the `ModelOverrideName`, but is used in naming Links and Link Satellites. As an example if there is a link between the `GeneralLedger` and `ChartOfAccounts` the name will be `[LNK_GeneralLedger_ChartOfAccounts]`. Defining values here the name could be `[LNK_GL_COA]`, providing flexibility when modelling. |
 | InheritFromObject | This column contains a reference to the object that column metadata should inherited from unless it has its own column metadata. This object will use the inferred from object name in the source query. |
 | SameAsInherited | Defines if the InheritFromObject is the same object. Entering Y into this column will instruct BimlFLex to reuse the inherited tables for loading. |
 | UseInheritedName | Defines if the InheritFromObject has the same object. Entering Y into this column will instruct BimlFLex to reuse the inherited tables ObjectName for loading. |
@@ -174,13 +174,13 @@ Columns define the detailed information to transform and map data from source to
 | ColumnAlias | Alias for the column. Generally used in conjunction with SqlSourceExpression. |
 | FriendlyName | Business Friendly name of column. |
 | Description | The column described in business context. Often referred to as business metadata. |
-| ChangeType | This value specifies the slowly changing dimension type for the column.<br/>Below is a list of the current possible Change Types.<br/>                                 |
-| DataType | This value specifies the type of the data stored in this column using the unified type system.<br/>Additional logic is required to cater for data types with a CustomType like `hierarchyid`.<br/>Below is a list of the current possible Data Types.<br/>                                 |
-| Length | (Set to -1 to indicate MAX length) This value specifies the length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types.<br/>                                 |
-| Precision | This value specifies the precision parameter for the column type associated with this column. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.<br/>                                 |
-| Scale | This value specifies the scale parameter for the column type associated with this column. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.<br/>                                 |
+| ChangeType | This value specifies the slowly changing dimension type for the column.<br/>Below is a list of the current possible Change Types.<br/>								 |
+| DataType | This value specifies the type of the data stored in this column using the unified type system.<br/>Additional logic is required to cater for data types with a CustomType like `hierarchyid`.<br/>Below is a list of the current possible Data Types.<br/>								 |
+| Length | (Set to -1 to indicate MAX length) This value specifies the length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types.<br/>								 |
+| Precision | This value specifies the precision parameter for the column type associated with this column. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.<br/>								 |
+| Scale | This value specifies the scale parameter for the column type associated with this column. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.<br/>								 |
 | Ordinal | Order of that the columns is defined in or should be defined when creating the target objects. It is recommended that the Business and Primary Keys is defined as the top ordinals. Ordinal is used in ascending order and we recommend starting at Ordinal - 1. |
-| ModelOverrideName | This column contains the business column name users want the object to appear as after the solution is deployed. This is better described with and example. Let's say you have a source system with cryptic names like GL002 and the actual business name is GeneralLedgerCode. By defining a value and generating a Data Vault using the BimlFlex Accelerator the resulting column will be [GeneralLedgerCode] |
+| ModelOverrideName | This column contains the business column name users want the object to appear as after the solution is deployed. This is better described with and example. Let’s say you have a source system with cryptic names like GL002 and the actual business name is GeneralLedgerCode. By defining a value and generating a Data Vault using the BimlFlex Accelerator the resulting column will be [GeneralLedgerCode] |
 | DataTypeMapping | xxxxx |
 | ModelGrouping | This attribute is used to group columns into their own satellites. Example would be if you have a customer table that has a column "LastLoginDate" that changes very frequently you might want to model this in a separate satellite. All columns with the same ModelGrouping will be generated into separate satellites. It is also used to define a Unit Of Work on Links |
 | ModelReference | This attribute is used multiple table references. Example would be the SalesOrder table with a ShippingAddress and BillingAddress reference to the Address table. Two links will be created with the ModelReference forming part of the name. This attribute is autogenerated by our schema import and can be overridden. |
@@ -188,13 +188,13 @@ Columns define the detailed information to transform and map data from source to
 | ModelLength | xxxxx |
 | ModelPrecision | xxxxx |
 | ModelScale | xxxxx |
-| DefaultValue | This value specifies a default value for the column using Transact-SQL constant expression syntax.<br/>                                 |
+| DefaultValue | This value specifies a default value for the column using Transact-SQL constant expression syntax.<br/>								 |
 | DisplayFolder | Place holder at the moment. Planning to use this when defining Analysis Services metadata. |
 | Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the column. |
-| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>                                 |
-| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>                                 |
-| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>                                 |
-| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>                                 |
+| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
 | SsisDataType | This attribute is used to overwrite the datatype for the `SsisDataflowExpression`. |
 | SolveOrder | This attribute is used when defining `SsisDataflowExpressions` that need to be parsed in a specific order. Example would be if you want to split a very complex calculation up into multiple expressions that is derived in a specific sequence. |
 | IsPrimaryKey | "Y" if this column is the primary key of the object. The PRIMARY KEY uniquely identifies each record in a database table. Primary keys must contain UNIQUE values. A primary key column cannot contain NULL values. |
@@ -232,12 +232,12 @@ Parameters are used to add `WHERE` logic to the source queries. For very complex
 | ParameterOperator | This attribute define a operator to be used when retrieving our parameter value. Example is `>=` that will translate to the where clause as `[ParameterName] >= ?` |
 | ParameterDefault | Here you can define the default value that the parameter contains the first time the package is executed. Example would be for a numeric field `0` and a date `1900-01-01` |
 | ParameterDataType | Here we define the data type for a parameter being used in the solution packages. Here you should enter the data type using the following format DATATYPENAME |
-| ParameterSql | In this column, we define an aggregate that we want to use when retrieving our parameter value after the load. The placeholder "@@this" is replaced with the parameter name and inserted into the SQL aggregation. <br/>Eg: `MAX(@@this)` and `CONVERT(VARCHAR(19), MAX(@@this), 120)` for dates.<br/>                                 |
+| ParameterSql | In this column, we define an aggregate that we want to use when retrieving our parameter value after the load. The placeholder "@@this" is replaced with the parameter name and inserted into the SQL aggregation. <br/>Eg: `MAX(@@this)` and `CONVERT(VARCHAR(19), MAX(@@this), 120)` for dates.<br/>								 |
 | ParameterToName | This attribute specify the name of the parameter being used in the package. Use this attribute to define a from and to variable on a column. |
 | ParameterToOperator | This attribute define an operator to be used in combination with ParameterToName |
 | ExecuteSqlOnSource | Specify if the `ParameterSql` should be executed on the source connection to retrieve the next load value. |
-| ParameterColumnExpression | In this column, we can define an override to be used instead of the ColumnName. Sometimes we need to use a column that was joined from another table to determine change like the LastModifiedDate. Normally this table join will use an<br/>alias and we can then override the WHERE clause here. EG. e.[LastModifiedDate] or e.@@this.<br/>                                 |
-| ParameterSqlSourceExpression | In this column, we can define more complex scenarios like `(ISNULL(@@this, GETDATE()) > ? OR ISNULL(@@this, GETDATE()) <= ?)`.<br/>                                 |
+| ParameterColumnExpression | In this column, we can define an override to be used instead of the ColumnName. Sometimes we need to use a column that was joined from another table to determine change like the LastModifiedDate. Normally this table join will use an<br/>alias and we can then override the WHERE clause here. EG. e.[LastModifiedDate] or e.@@this.<br/>								 |
+| ParameterSqlSourceExpression | In this column, we can define more complex scenarios like `(ISNULL(@@this, GETDATE()) > ? OR ISNULL(@@this, GETDATE()) <= ?)`.<br/>								 |
 | ParameterOverride | In this column we define an override for the default parameter definition. It will override the ? in the following clause to whatever was defined. `WHERE [ColumnName] = ?`. |
 | ParameterOrdinal | If we are defining multiple parameters for the same object, we use this column to choose the order in which they are applied in SQL statements. |
 | Description | Optional metadata to provide a description. |
@@ -262,10 +262,10 @@ xxxxx
 | Ordinal | xxxxx |
 | DefaultValue | xxxxx |
 | SystemType | Defines the mappings system type. Depending on the type the relevant source mapping will be chosen. Below is a list of the current possible SystemTypes. For a full up to date list please refer to the [meta].[SystemType] table in the [BimlFlex] database. |
-| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>                                 |
-| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>                                 |
-| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>                                 |
-| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>                                 |
+| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
 | ColumnAlias | Alias for the column. Generally used in conjunction with SqlSourceExpression. |
 | Description | The column described in business context. Often referred to as business metadata. |
 | IsMaster | "Y" if the value in this column can be mapped to. |
@@ -274,8 +274,8 @@ xxxxx
 | MappedToPrecision | Precision of the DataType being mapped to |
 | MappedToScale | Scale of the DataType being mapped to |
 | MappedToDefaultValue | Default of the DataType being mapped to |
-| MappedToSsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>                                 |
-| MappedToSqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>                                 |
+| MappedToSsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| MappedToSqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
 | MappedToColumnAlias | Alias for the column. Generally used in conjunction with `SqlSourceExpression`. |
 | MappedToDescription | The column described in business context. Often referred to as business metadata. |
 
@@ -292,10 +292,10 @@ Configurations allows for customizing the default behavior of BimlFlex. Many of 
 | ConfigurationDataType | Here we define the data type for a configuration being used in the solution packages. Here you should enter the data type using the following format "DATATYPENAME" |
 | ConfigurationDefault | If the ConfigurationValue has not been specified, this column will store the default value to be used instead.  |
 | ConfigurationOrder | This is what we used to control the order in which configuration settings are loaded into the BimlFlex solution and create on the target tables where relevant. |
-| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>                                 |
-| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>                                 |
-| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>                                 |
-| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>                                 |
+| SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.<br/>								 |
+| SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
+| SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. <br/>Example: <br/>`CONVERT(VARCHAR(27), @@this, 121)`<br/>								 |
 | IsNullable | This column allows to you define if the configuration value is able to be null without throwing an error when building BimlFlex solution. To make the configuration nullable simply enter "Y" otherwise "N" will set the configuration to be non-nullable. |
 | StagingAttribute | The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.  |
 | PersistentStagingAttribute | The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework. |

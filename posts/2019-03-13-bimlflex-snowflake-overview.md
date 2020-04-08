@@ -45,17 +45,17 @@ As you know there are a variety of tools out there that support ETL/ELT for Snow
 
 We decided to pick the most widely used `ETL` tool, [SQL Server Integration Services](https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services?view=sql-server-2017), out there and it just so happened that we have the expertise to bridge this gap by creating an SSIS custom component to execute the ELT code within a transaction.
 
-One of the challenges we faced in porting our [Azure SQL Data Warehouse](https://azure.microsoft.com/en-au/services/sql-data-warehouse/) templates over to Snowflake was the lack of `SQL` stored procedures and the `ODBC` driver only supporting a single statement at a time. Our development team used the [Snowflake Connector for .NET](https://github.com/snowflakedb/snowflake-connector-net) as a baseline and create both an SSIS Custom Component and [Azure Data Factory](https://azure.microsoft.com/en-au/services/data-factory/) Custom Activity that will be available in our next release.
+One of the challenges we faced in porting our [Azure SQL Data Warehouse](https://azure.microsoft.com/en-au/services/sql-data-warehouse/) templates over to Snowflake was the lack of `SQL` stored procedures and the `ODBC` driver only supporting a single statement at a time. Our development team used the [Snowflke Connector for .NET](https://github.com/snowflakedb/snowflake-connector-net) as a baseline and create both an SSIS Custom Component and [Azure Data Factory](https://azure.microsoft.com/en-au/services/data-factory/) Custom Activity that will be available in our next release.
 
 ![Snowflake Dataflow -center -50%](images/bimlflex-snowflake-dataflow.png "Snowflake Dataflow")
 
-Now that we had a robust interface it was simply a matter of refactoring our ELT code and utilize the best Snowflake features. The refactoring did not take our team to long because of the `ANSI SQL` compatibility of our templates, we just had to refactor the use of `TEMPORARY` and `TRANSIENT` table declarations and some of the `CTAS` statements. The fact that we did not have to accommodate `HASH` distribution in Snowflake was a relief to our team and it would be great if other vendors adopt this.
+Now that we had a robust interface it was simply a matter of refactoring our ELT code and utilise the best Snowflake features. The refactoring did not take our team to long because of the `ANSI SQL` compatability of our templates, we just had to refactor the use of `TEMPORARY` and `TRANSIENT` table declarations and some of the `CTAS` statements. The fact that we did not have to accomodate `HASH` distribution in Snowflake was a relief to our team and it would be greate if other vendors adopt this.
 
 ### Stage & Persist
 
 Landing the data as flat files is just the start of the data warehouse process. Depending on whether your target is a Data Vault or Dimensional data warehouse you will need to apply some transformation and if required delta processing.
 
-Our staging SQL will detect deltas and perform record condensing and de-duplication if required. If you flipped the switch in BimlFlex to keep a historical (persistent) staging copy of your source data the delta will be saved and persisted. This is very useful when you want to quickly get a source system into Snowflake and keep all the history and do the modeling and reloading into an integrated data warehouse later.
+Our staging SQL will detect deltas and perform record condensing and de-duplication if required. If you flipped the switch in BimlFlex to keep a historical (persistent) staging copy of your source data the delta will be saved and persisted. This is very useful when you want to quickly get a source system into Snowflake and keep all the history and do the modelling and reloading into an integrated data warehouse later.
 
 Another benefit of using SSIS was that we could thread the output into multiple files to make full use of the Snowflake COPY command. When we showed this to the Snowflake team they all nodded and I took this as a good thing.
 

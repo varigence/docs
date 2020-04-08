@@ -1,6 +1,6 @@
 ---
-uid: bimlflex-ssis-server-install
-title: SSIS Server Installation
+uid: bimlflex-server-installation
+title: Server Installation
 ---
 # Server Installation
 

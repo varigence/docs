@@ -96,7 +96,7 @@ It also supports specifying Project level Parameters that are commonly available
 
 Add Extension Points in BimlStudio.
 
-More information: @bimlflex-extension-points
+More details on Extension Points are in the [Extension Points](../user-guide/extension-points.md) documentation
 
 ![Create Project Parameter](../user-guide/images/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
 
@@ -104,7 +104,8 @@ The newly created file contains some sample scripts:
 
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="ProjectName" #>
-
+<!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/Element/AstParameterNode -->
+<!-- The below example configures parameters that will be used in combination with Connection Expressions-->
 <Parameter Name="ServerName" DataType="String" IsRequired="true">localhost</Parameter>
 <Parameter Name="UserName" DataType="String" IsRequired="true">varigence</Parameter>
 <Parameter Name="UserPassword" DataType="String" IsRequired="true">P@ssw0rd!</Parameter>
@@ -127,7 +128,8 @@ The newly created file contains some sample scripts:
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="PackageVariable" target="ObjectName"#>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
-
+<!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/Element/AstVariableNode -->
+<!-- Variables can also be added to all the packages for the Batch using the PackageVariable combined with CustomOutput.ObjectInherit = true; -->
 <#* CustomOutput.ObjectInherit = true; *#>
 <Variable Name="TenantCode" DataType="String">UNK</Variable>
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>

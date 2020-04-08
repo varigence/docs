@@ -10,7 +10,7 @@ title: BimlFlex 2018 - Business Keys and Relationships
 
 This BimlFlex webinar looks at Business Keys and Relationships in BimlFlex.
 
-Business Keys are a core concept in Data Vault modeling and allows the modeler to focus on defining entities and relationships based on the business process focused keys rather than the technical keys from the source system. This allows easier cross-system integration in the Data Vault.
+Business Keys are a core concept in Data Vault modelling and allows the modeler to focus on defining entities and relationships based on the business process focused keys rather than the technical keys from the source system. This allows easier cross-system integration in the Data Vault.
 
 The video starts with a short overview of the Business Key concept and introduces the more pragmatic Integration Key concept as an alternative. Enterprise Wide Business Keys that uniquely and distinctly identifies an entity or process are rare in real world scenarios. Focusing on defining keys that are suitable for the Data Warehouse enables an agile implementation approach.
 
@@ -18,7 +18,7 @@ The BimlFlex development workflow allows the modeler to import metadata from a s
 
 ## Business Key or Integration Key
 
-While the Enterprise Wide Business Key is the design goal for a Data Vault based model it is rare to directly find these directly available in existing source systems. For an agile, pragmatic approach it is possible to focus on defining integration keys. These keys allow cross system integration into the Data Vault. They allow modeling to ensure that no false positive matches are created between systems and allow a later matching process using Same-As Links (`SAL`).
+While the Enterprise Wide Business Key is the design goal for a Data Vault based model it is rare to directly find these directly available in existing source systems. For an agile, pragmatic approach it is possible to focus on defining integration keys. These keys allow cross system integration into the Data Vault. They allow modelling to ensure that no false positive matches are created between systems and allow a later matching process using Same-As Links (`SAL`).
 
 Once these keys are defined and available it is possible to match entities using rules or Master Data Management.
 

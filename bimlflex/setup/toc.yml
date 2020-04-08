@@ -2,15 +2,12 @@
   href: index.md
 - name: System Requirements
   href: system-requirements.md
-- name: Installing BimlFlex
-  href: installing-upgrading-bimlflex.md
+- name: Developer Install
+  href: developer-install.md
 - name: Metadata Database Install
   href: metadata-database-install.md
-
-# Build server install waiting for contents
-#- name: Build Server Install
-#  href: build-server-install.md
-
+- name: Build Server Install
+  href: build-server-install.md
 - name: SSIS Server Install
   href: ssis-server-install.md
 - name: Upgrade Process

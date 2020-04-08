@@ -9,7 +9,7 @@ The BimlFlex database contains the metadata required to build out data warehousi
 > [!IMPORTANT]
 > The BimlFlex database contains crucial data for the data warehouse automation process. It is important to back up, and maintain a strict disaster recovery policy for, this database.
 
-The database is used by BimlFlex and BimlStudio to model and build the data warehouse and support the automation. Modelers, analysts and data warehouse team members use the BimlFlex modeling front end to interact with the metadata. BimlStudio access the metadata and provides the development and build experience for creating data warehouse artifacts.
+The database is used by BimlFlex and BimlStudio to model and build the data warehouse and support the automation. Modelers, analysts and data warehouse team members use the BimlFlex modelling front end to interact with the metadata. BimlStudio access the metadata and provides the development and build experience for creating data warehouse artifacts.
 
 ## Customers and Versions
 
@@ -17,7 +17,7 @@ All metadata is stored on a per Customer, per Version basis.
 
 ## Entities
 
-All entities are stored in the app tables within the database. These tables correspond to the data shown in the modeling front end.
+All entities are stored in the app tables within the database. These tables correspond to the data shown in the modelling front end.
 
 ## Source to Target mappings
 
