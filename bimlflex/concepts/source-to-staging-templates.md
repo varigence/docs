@@ -4,45 +4,35 @@ title: BimlFlex Source to Staging Templates
 ---
 # Source to Staging Templates
 
-BimlFlex offers users the ability to automate the development of best practice ETL out of the box using metadata modeling. As part of this, there are various options for users when designing a staging layer for their solution.
+BimlFlex offers users the ability to automate the development of best practice ETL and ELT patterns out of the box using metadata modeling. As part of this, there are various options for users when designing a staging layer for their solution.
 
 ## Watch Recordings
 
-### 03.BimlFlex - Source To Staging
+### Source To Staging
 
-In this session, we explore the process of configuring Source to Staging process.
+This session explore the process of configuring the Source to Staging process.
 
-![03 BimlFlex Source To Staging](https://www.youtube.com/watch?v=iNBLcpGalLc?rel=0&autoplay=0)
+![BimlFlex Source To Staging](https://www.youtube.com/watch?v=iNBLcpGalLc?rel=0&autoplay=0)
 
-### 05.BimlFlex - Object Inheritance
+<!--
+### BimlFlex - Object Inheritance
 
 In this session we look at Object Inheritance to reuse metadata.
 
 ![05 BimlFlex Object Inheritance](https://www.youtube.com/watch?v=5IRsoePFcjc?rel=0&autoplay=0)
+-->
 
-### 13.BimlFlex - Import Files
+### Import Files
 
-In this session we look at how to configure flat files.
+This session look at how to configure flat files.
 
-![13 BimlFlex Import Files](https://www.youtube.com/watch?v=AHOxGcsrZaw?rel=0&autoplay=0)
+![BimlFlex Import Files](https://www.youtube.com/watch?v=AHOxGcsrZaw?rel=0&autoplay=0)
 
 ## Source to Staging
 
 Using metadata, the source schemas are mapped to a staging environment. This provides all the required metadata for the source to staging/persistent staging. When run through SSIS, data is transferred and any transformations that are defined using SsisExpressions and/or SqlExpressions are applied.
 
 The source to staging creation can be toggled on or off based on what metadata has been defined.
-
-Database sources and Flat File sources utilize different templates. The template used is controlled by the IntegrationTemplate property of the project.
-
-### Integration Templates
-
-Below is the currently supported Integration Templates
-
-|Project Integration Templates|Staging Available|
-|--- |--- |
-|Source -> Target|Yes|
-|Source -> File Extract|Not Applicable|
-|Source -> Zip File Extract|Not Applicable|
 
 ### ETL Pattern Overview
 

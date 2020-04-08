@@ -283,7 +283,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 ## Bundle 80305
 
 * Fix: Data Vault templates for SQL to load LSAT correctly
-* New: Add `Quick Parse` option for BimlStudio options to only load placeholder objects when modelling
+* New: Add `Quick Parse` option for BimlStudio options to only load placeholder objects when modeling
 * Fix: A scenario where end dating of Satellites did not behave as expected
 * Update: Optimization to SQL templates
 * New: Add concurrency configuration to `AzCopy`
@@ -438,7 +438,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Update to Lookup join to better accommodate differences between Sat and Lsat
 * Update to Azure SQL Data Warehouse code where Decimal conversion could swap scale and precision
 * Update to formatting of Point In Time Stored Procedures
-* Update to `ExcludeFromBuild` when using `ObjectInheritance` to include the table for modelling
+* Update to `ExcludeFromBuild` when using `ObjectInheritance` to include the table for modeling
 * Update to precedence constraints for File to Azure SQL Data Warehouse template
 * Added support for ODBC parameterized queries as Expressions
 * Updates to Object Model Overrides for Staging Layer
@@ -540,7 +540,7 @@ They now require `sourceTable` and `destinationTable` definitions
 * Fixed an issue with FlexToBk with `@@rs` length and Validators for `ObjectInheritance`
 * Added support for multiple Multi-Active keys (MAK keys)
 * Added Table CDC Object Types for SQL Server CDC Source objects
-* Added modelling Support for Multi Active Satellites and Customer columns to MDV
+* Added modeling Support for Multi Active Satellites and Customer columns to MDV
 
 ### Infer Hub functionality
 

@@ -10,7 +10,7 @@ BimlFlex has added full SQL Server CDC source component support.
 
 For sources using Microsoft SQL Server CDC, Change Data Capture, to derive deltas BimlFlex is now able to directly read only changed data.
 
-Metadata modelling uses the base tables for metadata ingestion and modelling. For initial loads BimlFlex will read current state data from the base tables. For incremental loads BimlFlex will automatically derive deltas from the CDC tables.
+Metadata modeling uses the base tables for metadata ingestion and modeling. For initial loads BimlFlex will read current state data from the base tables. For incremental loads BimlFlex will automatically derive deltas from the CDC tables.
 
 ## Data Type Mappings
 
@@ -57,18 +57,18 @@ BimlFlex and BimlStudio now support SQL Server 2017 as a destination for both Da
 
 BimlFlex Metadata management now has support to save and restore Snapshots of the current metadata. This is useful for versioning as well as rollback for rapid, agile development processes.
 
-## Data Vault Modelling
+## Data Vault Modeling
 
 ### BimlFlex full support for insert only Data Vault implementations
 
-BimlFlex Data Vault patterns now have full, end to end support for insert only Data Warehouses. This removes effective to dates, is current flags as well as the end dating logic to optimise for data warehouse load performance. As a query support construct, Point In Time tables can be used to derive full timelines when necessary.
+BimlFlex Data Vault patterns now have full, end to end support for insert only Data Warehouses. This removes effective to dates, is current flags as well as the end dating logic to optimize for data warehouse load performance. As a query support construct, Point In Time tables can be used to derive full timelines when necessary.
 To exclude end dating code, use the setting `EnableEndDateRdv`. Set to `"N"` for insert only scenarios.
 
 ## Data Vault Acceleration
 
 ### Controlled acceleration of Link Satellites
 
-A setting has been added that control if the Data Vault Accelerator should create Link Satellites for generated Links. For some modelling approaches the effectiveness of a relationship is tracked in a Hub rather than a Link Satellite, in other scenarios the link satellite adds limited functionality. This setting controls the automatic acceleration of the Link Satellites.
+A setting has been added that control if the Data Vault Accelerator should create Link Satellites for generated Links. For some modeling approaches the effectiveness of a relationship is tracked in a Hub rather than a Link Satellite, in other scenarios the link satellite adds limited functionality. This setting controls the automatic acceleration of the Link Satellites.
 
 The setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. This feature has a default value of `"N"`, meaning no Link Satellites will be accelerated unless it is updated to `"Y"`. Overrides can be created using attribute `SettingValue` definitions for specific source tables that should have a different setting to the defined default.
 
@@ -76,7 +76,7 @@ The setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. 
 
 Added support for `Same As Links` in the Data Vault Accelerator
 
-## Data Modelling
+## Data Modeling
 
 ### BimlFlex support for `SelectBySql`
 
@@ -109,7 +109,7 @@ BimlFlex now has, optional, added velocity profiling for PSA tables to track dat
 
 ### Default updates to Business Keys
 
-The metadata import dialog now has support to add the connections Record Source to the creation of the Business Key as well as changing references from source constraints to Business Key defined relationships. This allows a more rapid and agile Data vault modelling approach. Any derived key is by default set to `IsNotPersistent` meaning they are not stored in PSA unless specifically configured for persistence.
+The metadata import dialog now has support to add the connections Record Source to the creation of the Business Key as well as changing references from source constraints to Business Key defined relationships. This allows a more rapid and agile Data vault modeling approach. Any derived key is by default set to `IsNotPersistent` meaning they are not stored in PSA unless specifically configured for persistence.
 
 ### Parameters
 
@@ -143,7 +143,7 @@ Added `CreateSql` and `OverrideSql` functionality to both Metadata and Extension
 
 ### Quick Parse
 
-A `Quick Parse` option for BimlStudio has been added as an options to only load placeholder objects from metadata when modelling. This allows faster modelling in BimlFlex and uses less resources for representing packages in BimlStudio. Once Packages needs to be built, disable the `Quick Parse` setting and refresh the metadata to have BimlStudio populated with full fidelity objects.
+A `Quick Parse` option for BimlStudio has been added as an options to only load placeholder objects from metadata when modeling. This allows faster modeling in BimlFlex and uses less resources for representing packages in BimlStudio. Once Packages needs to be built, disable the `Quick Parse` setting and refresh the metadata to have BimlStudio populated with full fidelity objects.
 
 ### Split `Use My ConnectionStrings` and `Use My Exclusions`
 

@@ -32,7 +32,7 @@ More about [Import Metadata](../concepts/importing-metadata.md).
 
 ### The Source and Target model
 
-Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modelling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
+Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modeling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
 ![Whiteboard Model -50% -center](../metadata-editors/images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
@@ -218,11 +218,11 @@ Watch the video to see how to group the 3 Links above into a single Unit Of Work
 
 <iframe width="500" height="281" src="https://www.youtube-nocookie.com/embed/w1UTANpF_ug?start=275&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=w1UTANpF_ug?t=275&rel=0&autoplay=0)
-
 ## Adjusting Model Overrides
 
-The columns in BimlFlex Excel that start with Model are used only by the Data Vault Accelerator. By updating the metadata with model information, a user can drive the behavior of the Accelerator to generate the Data Vault model needed.
+The **Model** attributes for Source Objects and Columns are used by the Data Vault Accelerator.
+
+Updating this metadata with target model information allows the Accelerator to generate the correct Data Vault model.
 
 There are overrides for Objects as well as Columns
 
@@ -246,7 +246,7 @@ This column contains the short name to be used for Links and Link Satellites aft
 
 A Link between "GeneralLedger" and "ChartOfAccounts" will use the default name "[LNK_GeneralLedger_ChartOfAccounts]".
 
-Defining the value "GL_COA" here will generate the name "[LNK_GL_COA]" providing easy naming flexibility through metadata when modelling more complex relationships.
+Setting ModelOverrideShortName to "GL_COA" will generate the name "[LNK_GL_COA]" providing easy naming flexibility through metadata when modeling more complex relationships.
 
 #### ModelObjectType
 

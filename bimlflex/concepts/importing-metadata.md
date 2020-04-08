@@ -105,7 +105,7 @@ The Importable Assets list is read from the Source Connection. Choose items that
 
 ![Import Metadata](../metadata-editors/images/bimlflex-app-import-metadata.png "Import Metadata")
 
-Upon clicking the `Import Metadata` button, the metadata will be imported into the BimlFlex app and will be available for review and modelling.
+Upon clicking the `Import Metadata` button, the metadata will be imported into the BimlFlex app and will be available for review and modeling.
 
 ### Verify Imported Metadata
 
@@ -113,9 +113,9 @@ Navigate back to the Connection or Project and view the Objects tab. You should 
 
 ![Imported Metadata Objects](../metadata-editors/images/bimlflex-app-import-metadata-objects.png "Imported Metadata Objects")
 
-## Import Metadata Over Existing Metadata 
+## Import Metadata Over Existing Metadata
 
-If there are changes to the source schema it is possible to safely run the Import Metadata on the same data again. Use the options to make sure you don't override anything you have changed after running the original import. 
+If there are changes to the source schema it is possible to safely run the Import Metadata on the same data again. Use the options to make sure you don't override anything you have changed after running the original import.
 
 I.e. If a new column is available on a table where you modified the column ordinals, then check `Column Orders` under the `Retain Existing Metadata` options before you import the table.
 
