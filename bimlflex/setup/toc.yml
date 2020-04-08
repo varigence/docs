@@ -6,9 +6,12 @@
   href: installing-upgrading-bimlflex.md
 - name: Metadata Database Install
   href: metadata-database-install.md
-- name: Build Server Install
-  href: build-server-install.md
-#- name: SSIS Server Install
-#  href: ssis-server-install.md
+
+# Build server install waiting for contents
+#- name: Build Server Install
+#  href: build-server-install.md
+
+- name: SSIS Server Install
+  href: ssis-server-install.md
 - name: Upgrade Process
   href: upgrade-process.md
