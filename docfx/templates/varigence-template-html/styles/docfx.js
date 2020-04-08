@@ -27,6 +27,8 @@ $(function () {
   renderTabs();
   $('#search').hide();
 
+  adjustFooterForTocHeight();
+
   window.refresh = function (article) {
     // Update markup result
     if (typeof article == 'undefined' || typeof article.content == 'undefined')
@@ -38,6 +40,7 @@ $(function () {
     renderAlerts();
     renderAffix();
     renderTabs();
+    adjustFooterForTocHeight();
   }
 
   // Add this event listener when needed
