@@ -42,4 +42,4 @@ Once the user is ready to deploy, simply click *Deploy*. A dialog will pop up th
     title="Apply Data Type Mappings Dialog Box" 
 />
 
-Once this process is complete, the user can go to their database management tool of their choice, and view their created database.
+Once this process is complete, the user can go to the database management tool of their choice, and view their created database.
