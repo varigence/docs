@@ -1,0 +1,137 @@
+- name: Installation and configuration
+  items:
+  - name: Installing and Upgrading BimlFlex
+    href: installing-upgrading-bimlflex.md
+  - name: Developer Installation
+    href: developer-installation.md
+  - name: Server Installation
+    href: server-installation.md
+  - name: Initial Setup and Configuration
+    href: initial-setup-and-configuration.md
+  - name: SSIS Custom Components
+    href: ssis-custom-components.md
+  - name: BimlFlex Database
+    href: bimlflex-database.md
+  - name: BimlCatalog Database
+    href: bimlcatalog-database.md
+  - name: Upgrade and Testing Process
+    href: upgrade-and-testing-process.md
+  - name: Software and Hardware Requirements
+    href: software-and-hardware-requirements.md
+
+- name: The BimlFlex App
+  items:
+  - name: Introduction
+    href: bimlflex-app-introduction.md
+  - name: The BimlFlex App
+    href: bimlflex-app-overview.md
+
+- name: The BimlStudio App
+  items:
+  - name: Introduction
+    href: bimlstudio-app-introduction.md
+  - name: The BimlStudio App
+    href: bimlstudio-app-overview.md
+
+- name: The BimlFlex Excel Add-in
+  items:
+  - name: Introduction
+    href: bimlflex-excel-introduction.md
+  - name: The BimlFlex Excel Add-in Overview
+    href: bimlflex-excel-overview.md
+
+- name: SSIS implementations
+  items:
+  - name: Introduction
+    href: ssis-implementation-introduction.md
+
+- name: ADF Implementations
+  items:
+  - name: Introduction
+    href: adf-implementation-introduction.md
+
+- name: Synapse Implementations
+  items:
+  - name: Introduction
+    href: synapse-implementation-introduction.md
+  - name: Synapse configuration steps
+    href: synapse-implementation-configurations.md
+  - name: AzCopy
+    href: synapse-azcopy.md
+  - name: Create a Linked Service Connection
+    href: create-linked-service-connection.md
+
+- name: Snowflake Implementations
+  items:
+  - name: Introduction
+    href: snowflake-implementation-introduction.md
+  - name: Snowflake Configurations
+    href: snowflake-implementation-configurations.md
+
+- name: Implementation guides
+  items:
+  - name: Importing Metadata
+    href: importing-metadata.md
+  - name: Source to Staging Templates
+    href: source-to-staging-templates.md
+  - name: Data Vault Accelerator
+    href: data-vault-accelerator.md
+  - name: Data Vault Templates
+    href: data-vault-templates.md
+  - name: Data Mart Templates
+    href: data-mart-templates.md
+  - name: Export to File
+    href: export-to-file.md
+  - name: Master Data Services
+    href: master-data-services.md
+  - name: Integration Keys and Relationships
+    href: integration-keys-and-relationships.md
+  - name: Load Parameters
+    href: load-parameters.md
+  - name: Delete Detection
+    href: delete-detection.md
+
+- name: Source Notes
+  items:
+  - name: Excel Plus
+    href: source-excel-plus.md
+  - name: Stored Procedures
+    href: source-stored-procedure.md
+  - name: Salesforce
+    href: source-salesforce.md
+
+- name: Supporting materials for configurations, extensions, orchestration
+  items:
+  - name: Orchestration
+    href: orchestration.md
+  - name: Extension Points
+    href: extension-points.md
+  - name: Excel Add-in
+    href: excel-add-in.md
+  - name: Hashing in BimlFlex
+    href: hashing-in-bimlflex.md
+
+- name: Deployment and operational guides
+  items:
+  - name: Deployment Guide
+    href: deployment-guide.md
+  - name: Concurrent Development
+    href: concurrent-development.md
+  - name: Continuous Integration and Delivery
+    href: continuous-integration-and-continuous-delivery.md
+
+- name: Operational Reporting
+  items:
+  - name: Operational Reporting
+    href: operational-reporting.md
+
+- name: Support
+  items:
+  - name: Support Process
+    href: support-process.md
+  - name: Debug Utilities
+    href: debug-utilities.md
+  - name: Change the BimlFlex Excel bitness
+    href: change-excel-bitness-bimlflex.md
+  - name: Find the BimlFlex versions installed
+    href: find-version.md

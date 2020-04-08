@@ -1,16 +1,14 @@
-- name: New Features in BimlFlex 2019
-  href: new-features-2019.1.md
-- name: New Features in BimlFlex 2018.3
-  href: new-features-2018.3.md
-- name: New Features in BimlFlex 2018.2
-  href: new-features-2018.2.md
-- name: New Features in BimlFlex 2018.1
-  href: new-features-2018.1.md
 - name: Release Notes
   href: release-notes.md
-#- name: Release Notes - CU Channel
-#  href: release-notes-cumulative-update-bundle.md
-#- name: Release Notes - Beta Channel
-#  href: release-notes-beta-bundle.md
-#- name: Release Notes - 2019 Preview
-#  href: release-notes-2019-preview.md
+- name: BimlFlex 2020 New Features
+  href: new-features-2020.1.md
+- name: BimlFlex 2019.2 New Features
+  href: new-features-2019.2.md
+- name: BimlFlex 2019.1 New Features
+  href: new-features-2019.1.md
+- name: BimlFlex 2018.3 New Features
+  href: new-features-2018.3.md
+- name: BimlFlex 2018.2 New Features
+  href: new-features-2018.2.md
+- name: BimlFlex 2018.1 New Features
+  href: new-features-2018.1.md

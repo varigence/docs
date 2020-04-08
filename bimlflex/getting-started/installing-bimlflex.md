@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-installing-bimlflex
+uid: bimlflex-getting-started-installing-bimlflex
 title: Installing BimlFlex
 ---
 # Installing BimlFlex

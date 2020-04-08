@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-applying-data-type-mappings
+uid: bimlflex-getting-started-applying-data-type-mappings
 title: Applying Data Type Mappings
 ---
 # Applying Data Type Mappings

@@ -1,12 +1,14 @@
-- name: Installing BimlExpress
-  href: installing-bimlexpress.md
-- name: Creating BimlExpress Account
-  href: creating-bimlexpress-account.md
-- name: BimlExpress Menus and Options
-  href: bimlexpress-menus-options.md
-- name: Adding and Editing Biml files
-  href: adding-editing-biml-files.md
+- name: Overview
+  href: index.md
+- name: Install BimlExpress
+  href: install-bimlexpress.md
+- name: BimlExpress Account
+  href: bimlexpress-account.md
+- name: Menus and Options
+  href: menus-options.md
+- name: Add / Edit Biml Files
+  href: add-edit-biml-files.md
 - name: Preview Expanded Biml
   href: preview-expanded-biml.md
-- name: Generating SSIS Packages
-  href: generating-ssis-packages.md
+- name: Generate SSIS Packages
+  href: generate-ssis-packages.md

@@ -2,12 +2,9 @@
 uid: bimlflex-app-overview
 title: BimlFlex App Overview
 ---
-# BimlFlex App
+# BimlFlex App Overview
 
-The BimlFlex App provides a user experience for managing metadata and BimlFlex projects. It is a companion application that works together with BimlStudio for building and managing projects.
-
-> [!NOTE]
-> Download the BimlFlex app 2019 preview from the following location: [https://varigence.com/downloads/download/bimlflexsetup_preview_2019.exe](https://varigence.com/download/bimlflexsetup_preview_2019.exe)
+The BimlFlex App provides a user experience for managing metadata and BimlFlex projects.
 
 ## Overview
 
@@ -17,16 +14,16 @@ The BimlFlex App connects to the BimlFlex metadata repository and allows managem
 
 ## Installation
 
-Download and run the installer to add the application to the computer.
+Download and run the consolidated BimlFlex installer to add the application to the computer. See @bimlflex-release-notes for the latest release notes and the download link.
 
 ## Configuration
 
-Configure the App to connect to the BimlFlex database through the configuration pane opened by the cog on the right hand side.
+Configure the App to connect to the BimlFlex database through the configuration pane opened by the cog on the right-hand side.
 
-Specify the database server, database, login information for the metadata database to connect and work with metadata projects. Set up the BimlFlex metadata database through BimlStudio as described here: @bimlflex-database
+Specify the database server, database, login information for the metadata database to connect and work with metadata projects. Set up and upgrade the BimlFlex metadata database through the BimlFlex installer.
 
 ![BimlFlex App Configuration -center -50%](../user-guide/images/bimlflex-ss-app-configure-connection.png)
 
 ## Uninstallation
 
-Uninstall BimlFlex App as normal, through the Program and Features part of the Control Panel
+Uninstall Bimlflex and the BimlFlex App as normal, through the Program and Features part of the Control Panel or the Apps & features page in modern Windows.

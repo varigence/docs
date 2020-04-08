@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-accelerating-the-raw-data-vault-layer
+uid: bimlflex-getting-started-accelerating-the-raw-data-vault-layer
 title: Accelerating the Data Vault
 ---
 # Accelerating the Data Vault
@@ -8,7 +8,7 @@ title: Accelerating the Data Vault
 
 BimlFlex provides a Graphical Data Vault Accelerator that creates Data Vault objects from the defined source metadata.
 
-Data Vault acceleration is recommended to be performed once the Enterprise Logical Model, the source data model and corresponding Data Vault model has been created.
+Data Vault acceleration is recommended to be performed once the Enterprise Logical Model, the source data model, and the corresponding Data Vault model has been created.
 
 The Data Vault acceleration uses the source metadata and its defined relationships to create a Raw Data Vault layer. Based on this metadata, BimlFlex will automatically create the required Data Vault structures and the source to target mappings in the metadata repository.
 
