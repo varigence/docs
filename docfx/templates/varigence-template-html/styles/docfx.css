@@ -1047,8 +1047,10 @@ div.embeddedvideo iframe {
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin: 0;
     padding: 0;
+    float: none;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 #topnav .container-fluid:before {
