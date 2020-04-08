@@ -6,7 +6,6 @@ title: BimlFlex Excel Add-in
 
 BimlFlex Excel Add-in is the tool modelers and developers use to interact with the solution metadata. BimlFlex Excel Add-in connects to the BimlFlex metadata database.
 
-![BimlFlex Workflow](../user-guide/images/bimlflex-ss-v5-accelerator-bimlflex-workflow.png "BimlFlex Workflow")
 
 ## Getting Started
 
@@ -16,7 +15,7 @@ To install BimlFlex and the Excel Add-in refer to the installation and setup doc
 
 ![Excel Add-in UI](../user-guide/images/bimlflex-ss-v5-excel-documentation-ui.png "Excel Add-in UI")
 
-The BimlFlex Excel ribbon and tab is located at the top right hand side of the standard Excel UI. This is where the UI for BimlFlex is located.
+The BimlFlex Excel ribbon and tab is located at the top right-hand side of the standard Excel UI. This is where the UI for BimlFlex is located.
 
 The BimlFlex Excel Add-in Ribbon tab is made up of 5 main groups:
 
@@ -79,29 +78,25 @@ The validation list is a pane in BimlFlex Excel Add-in where any issues with met
 '
 ## Import Metadata
 
-BimlFlex Excel Add-in provides a metadata import function to add metadata into a project from a source that provides metadata information.
-
-![Import Metadata Tool UI](../user-guide/images/bimlflex-ss-v5-excel-import-metadata.png "Import Metadata Tool UI")
-
-[More information about the metadata import tool is found in the documentation](../concepts/importing-metadata.md)
+All metadata import functionality has been moved to the BimlFlex App. For more information please see @bimlflex-importing-metadata.
 
 ## Auto Freeze
 
-The Auto Freeze function freeze the left hand side and top of the sheet in Excel. By default the frozen area are the relevant columns of a metadata sheet.
+The `Auto Freeze` function freeze the left-hand side and top of the sheet in Excel. By default the frozen area are the relevant columns of a metadata sheet.
 
 ## Row Details
 
 ## Get Current Sheet
-'
-Get current sheet will take the currently selected sheet in excel and retrieve the relevant metadata from the BimlFlex metadata database.
+
+`Get Current Sheet` will take the currently selected sheet in excel and retrieve the relevant metadata from the BimlFlex metadata database.
 
 ## Get All Entities
 
-Get all entities will go through each of the metadata spreadsheets and retrieve the current version of the metadata for each one.
+`Get All Entities` will go through each of the metadata spreadsheets and retrieve the current version of the metadata for each one.
 
 ## Get All Settings
 
-Get all settings will get all the
+`Get All Settings` will get all the
 
 * Configurations
 * Settings
@@ -112,19 +107,19 @@ metadata for the current customer.
 
 ## Set Current Sheet
 
-Set Current Sheet will take the currently selected sheet in Excel and publish the relevant metadata changes to the BimlFlex metadata database.
+`Set Current Sheet` will take the currently selected sheet in Excel and publish the relevant metadata changes to the BimlFlex metadata database.
 
 ## Set All Entities
 
-Set All Entities will go through each of the metadata spreadsheets and publish the current version of the metadata for each one.
+`Set All Entities` will go through each of the metadata spreadsheets and publish the current version of the metadata for each one.
 
 ## Set All Settings
 
-Set All Settings will publish the Configurations, Data Type Mappings and Versions metadata sheets to the metadata database
+`Set All Settings` will publish the Configurations, Data Type Mappings and Versions metadata sheets to the metadata database
 
 ## About
 
-Clicking the About button will display to the user a drop-down box that shows two more options. The options are **About** and **Help**
+Clicking the `About` button will display to the user a drop-down box that shows two more options. The options are **About** and **Help**
 
 Help will redirect the user to the Varigence support website, where they can access articles and forum information on the use of the various products in the Varigence suite.
 
@@ -132,19 +127,13 @@ Help will redirect the user to the Varigence support website, where they can acc
 
 Here you can view
 
-* product name
-* version
-* licensed user
-* product key
+* Product Name
+* Version
+* Licensed User
+* Product Key
 
 The `Change Product Key` will allow changing the current product key.
 
 The `Copy Product Information` copies product information to the clipboard. This allows a quick way to share information about the version of BimlFlex Excel Add-in if required.
 
 The `Copy Machine Code` button will copy a code that is unique to the current machine. machine code is used to generate static product activation keys for machines not normally connected to the Internet.
-
-## Suspend Processing
-
-The suspend processing button will pause BimlFlex Excel Add-in processing of the metadata through the Bundle. To start processing metadata, press this button again. 
-
-This function is useful in situations when larger quantities of metadata are changed and validation is applied later.'''
