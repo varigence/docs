@@ -39,7 +39,7 @@ BimlFlex now has full support for Azure Data Factory (ADF) workflows for Azure S
 
 This includes full support to build Azure ARM templates for direct deployment of the pipelines to Azure as well as json file generation for individual deployments and deployment through the ADF DevOps git integration.
 
-More information on ADF here: @bimlflex-adf-overview
+More information on ADF here: @adf-deployment-overview
 
 #### Data Mappings visualizations and editor for BimlFlex App
 
@@ -63,7 +63,7 @@ Reporting views and Stored Procedures are unchanged.
 
 ADF Stored Procedures have been updated to better support logging and orchestration.
 
-More information on the BimlCatalog here: @bimlflex-bimlcatalog
+More information on the BimlCatalog here: @bimlcatalog-database
 
 #### Additional Extension Points for bespoke processing requirements
 

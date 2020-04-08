@@ -8,7 +8,7 @@ This document covers the process to implement a Data Mart layer using BimlFlex.
 
 content include:
 
-* Integration to Data Mart and related ETL patterns used in BimlFlex
+* Integration to Data Mart and related load patterns used in BimlFlex
 * Implementation scenarios
 * loading data out of Data Vault and into a Data Mart via Point in Time tables and Bridge tables.
 
@@ -16,55 +16,42 @@ content include:
 
 ### Introduction
 
-The metadata required to build the Data Mart is similar to any other source to staging project. The ETL pattern that BimlFlex will use for the output will change.
+The metadata required to build the Data Mart is similar to any other source to staging project.
+
+For on-premises loads it is possible to use either the ETL load pattern or the ELT load pattern. For cloud-based implementations, such as using Azure Data Factory (ADF) or targetting Azure Synapse or Snowflake, BimlFlex provides an in-database ELT pattern.
+
+Sample metadata for Data Mart load scenarios for the supported project types is included in BimlFlex. More information: @bimlflex-getting-started-load-sample-metadata
 
 ### Common Architectures and The Data Mart as a Whole
 
-This implementation guide covers the modelling and implementation of star schema facts and dimensions. It doesn't cover Kimball architecture as a concept. Best practices and basic dimensional implementation constructs, like date and time dimensions are required but considered out of scope for this documentation.
+This implementation guide covers the modeling and implementation of star schema-based facts and dimensions.
 
-In terms of common architectures, this document begins as the point where a user wants to load the Data Mart and the previous layers of their architecture have already been determined. However, it should be stated that users can implement almost any standardized architectures.
+BimlFlex will load Dimensions with new and updated Dimension member data and update acording to the defined Dimension Attribute types.
 
-The most common of these two is the following items.
+The Fact loads are performed once the Dimension are updated. The Fact load can either use existing keys, Smart Keys or do Dimension Member Key lookups in the load. This is defined in the metadata through the Data Mart modeling. For Dimension relationships that use lookups, BimlFlex uses the Integration Key column and perform the lookup in the load based on the Integration Key and inserts the Dimension surrogate key in the Fact table.
 
-![Implementation Architecture Example](../user-guide/images/bimlflex-ss-v5-data-mart-implementation-architecture-example.png "Implementation Architecture Example")
+The architecture can use existing keys from the underlying layers, or implement independent sequence identifier keys for the Dimension members.
 
-### BimlFlex Fact Loading Pattern
+#### Project Configuration
 
-Below is a diagram showing the output ETL structure that BimlFlex uses load fact tables in a Data Mart. The optional metadata settings and extension points are signified by shaded rectangles and dotted rectangles. The standard BimlFlex components are shown in solid colors.
+The Data Mart load pattern is configured in a separate project.
 
-Note that the pattern shows that the orchestration components are applied. More [information on the orchestration is documented here](../user-guide/orchestration.md)
+This project uses 3 main connections:
 
-![Data Mart ETL Pattern workflow](../user-guide/images/bimlflex-ss-v5-data-mart-etl-pattern.png "Data Mart ETL Pattern workflow")
-
-**\[SQL – Initialize Staging\]** Inside the main sequence container begins by truncating the target staging table. This staging table will eventually be loaded inside the component `[DFT – LOAD Fact]`.
-
-**\[DFT – LOAD Fact\]** is the main data flow and will convert the column data types as per usual in `[DCV – Transform Datatypes]` while logging any errors using `[ERR - Add Error Description]` and `[AUD – Log Error Rows]`.
-
-**\[LKP – DIM Foreign Key\]** This component will perform a look up to see if the matching Dim record for this fact record exists in the corresponding table in the Data Mart.
-
-**\[DER – Foreign Key Defaults\]** This derived column component will add a column to store a foreign key populating it with a foreign key if it exists and if not, a default surrogate key will be obtained in the following component `[SCR_TR – Inferred Foreign Key]`.
-
-**\[DER – Add Audit Columns\]** This component includes the BimlFlex auditing columns that contain values such as execution IDs.
-
-**\[MLTC - Initial Fact\]** This multicast component determines if a given load is, in fact, the first load of a particular fact, in which case the new rows will go directly to the target destination. These rows are directed to `[OLE_DST - FACT]`.
-
-**\[CSPL – Determine CDC\]** Here the component checks if an incoming row is Type1 or Type2. If it's determined that a row is of a particular type, then the method of CDC and insertion will be different in the following components
-
-**\[OLE\_DST - Insert Fact\]** Finally changed and new rows are stored in the fact table.
-
-**\[SQL – Merge Fact\]** Will be loading all the data into their final target tables from the data in the initial staging tables.
-
-This pattern is not too dissimilar to a source to staging pattern. Key differences are that while the data is being processed by the data flow task, surrogate keys are being handled.
-
-In the control flow, note that the final step is a SQL merge task. The merge take the incoming rows that have been loaded into the Fact's staging table and perform on final comparison before either inserting or updating the target Fact table.
+1. **Source Connection**, normally the Staging layer or Data Vault layer
+1. **Target Stage Connection**, normally the Data Mart Layer. A staging layer for the Data Mart where delta loads are prepared before they are merged into the target
+1. **Target Connection**, The Data Mart connection. The target for the Facts and Dimension loads
 
 #### BimlFlex Dimension Loading Pattern
 
-Below is the output of BimlFlex ETL used to load dimension tables in the Data Mart. This is prior to using any optional metadata settings or extension points, which signified by shaded rectangles the dotted rectangles. The standard BimlFlex pattern also applies auditing and logging which is also shown.
+The Dimension Load Pattern is comfigured in the metadata in a Data Mart project.
 
-The particulars of the dimension loading pattern are that whether the data is type one or type two is taken into account, along with whether it should be directly inserted in a new load. Hashing is also being employed to better detect changes in the column data. More on these details below.
+The load has a Source Object, normally an abstraction view, a staging table or a Data Vault contstruct.
 
-![Dimension Data Mart ETL Pattern](../user-guide/images/bimlflex-ss-v5-dimension-data-mart-etl-pattern.png "Dimension Data Mart ETL Pattern")
+The source object has an Integration Key set that is used for Dimension Lookups
+
+The target Dimension Object can be cloned from the Source Object. The target has an additional Sequence Identified (Identity Column) added as the Primary Key of the Dimension.
+
 
 **\[SQL – Initialize Staging\]** The main sequence container begins by truncating the target staging table. This staging table will eventually be loaded inside the component **\[DFT – LOAD Dimension\]**.
 
@@ -97,6 +84,38 @@ following components
 **\[SQL – Merge Dimension\]** Will be loading all the data into their final target tables from the data in the initial staging tables.
 
 This second pattern for loading dimension tables has some similarities and some differences to the fact loading pattern. First, hashing is being applied. Hashing is used to accurately check for updates to rows, note that this is being applied to dimension rows only. Lastly, the different Type 1 or Type 2 rows are split into different pipelines and being counted by the Biml orchestration framework.
+
+
+### BimlFlex Fact Loading Pattern
+
+Below is a diagram showing the output ETL structure that BimlFlex uses load fact tables in a Data Mart. The optional metadata settings and extension points are signified by shaded rectangles and dotted rectangles. The standard BimlFlex components are shown in solid colors.
+
+Note that the pattern shows that the orchestration components are applied. More [information on the orchestration is documented here](../user-guide/orchestration.md)
+
+![Data Mart ETL Pattern workflow](../user-guide/images/bimlflex-ss-v5-data-mart-etl-pattern.png "Data Mart ETL Pattern workflow")
+
+**\[SQL – Initialize Staging\]** Inside the main sequence container begins by truncating the target staging table. This staging table will eventually be loaded inside the component `[DFT – LOAD Fact]`.
+
+**\[DFT – LOAD Fact\]** is the main data flow and will convert the column data types as per usual in `[DCV – Transform Datatypes]` while logging any errors using `[ERR - Add Error Description]` and `[AUD – Log Error Rows]`.
+
+**\[LKP – DIM Foreign Key\]** This component will perform a look up to see if the matching Dim record for this fact record exists in the corresponding table in the Data Mart.
+
+**\[DER – Foreign Key Defaults\]** This derived column component will add a column to store a foreign key populating it with a foreign key if it exists and if not, a default surrogate key will be obtained in the following component `[SCR_TR – Inferred Foreign Key]`.
+
+**\[DER – Add Audit Columns\]** This component includes the BimlFlex auditing columns that contain values such as execution IDs.
+
+**\[MLTC - Initial Fact\]** This multicast component determines if a given load is, in fact, the first load of a particular fact, in which case the new rows will go directly to the target destination. These rows are directed to `[OLE_DST - FACT]`.
+
+**\[CSPL – Determine CDC\]** Here the component checks if an incoming row is Type1 or Type2. If it's determined that a row is of a particular type, then the method of CDC and insertion will be different in the following components
+
+**\[OLE\_DST - Insert Fact\]** Finally changed and new rows are stored in the fact table.
+
+**\[SQL – Merge Fact\]** Will be loading all the data into their final target tables from the data in the initial staging tables.
+
+This pattern is not too dissimilar to a source to staging pattern. Key differences are that while the data is being processed by the data flow task, surrogate keys are being handled.
+
+In the control flow, note that the final step is a SQL merge task. The merge take the incoming rows that have been loaded into the Fact's staging table and perform on final comparison before either inserting or updating the target Fact table.
+
 
 ## Implementing a Data Mart
 
@@ -262,10 +281,3 @@ Below is an example of the variety of source types available, note that view or 
 
 When implementing business rules through extension points, this will generally be done in the form of a post process that is entered in especially for a given object package. Post process extension points get
 executed at the end of a particular load. This approach is less common than storing business rules in a view but is just as feasible.
-
-#### Next Steps
-
-Once the presentation layer is completed, consideration should be made towards the approach taken in the analytical layer. The final part of this solution will be to use a tool to deliver this data to decision
-makers within the organization in a format that allows them to perform a proper analysis of the organization's data.
-
-Some possible options are to; create cubes or tabular models for tools like Excel, Power BI and classical reporting, reporting views for tools like Reporting Services, snowflakes for tools like MicroStrategy, flat views for tools like Qlik and Tableau etc. For guidance on reporting and analytical tools specific best practices, peruse the documentation from the vendor.

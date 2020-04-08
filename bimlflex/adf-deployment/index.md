@@ -18,11 +18,9 @@ One of the core features of the BimlFlex Data Warehouse Automation solution is t
 
 [More about Continuous Integration and Continuous Delivery](continuous-integration-and-continuous-delivery.md)
 
-
 ## Sensitive Information Management
 
 In certain BimlFlex solutions there are properties that get stored in **Azure Key Vaults** (AKV) for security purposes. AKV is a cloud service that provides secure storage for sensitive information. Users can securely store keys, passwords, certificates, and other secrets.
-
 
 [More about Sensitive Information Management](sensitive-info-management.md)
 
@@ -32,11 +30,8 @@ Not only does BimlFlex produce all of your Azure Data Factory assets needed for 
 
 [More about PowerShell deployment](using-powershell.md)
 
-
-
 ## Azure Portal Deployment
 
 Although the recommended practice is to use the automated deployment process mentioned above, all of the ADF assets are provided for a manual deployment via the [Azure Portal](https://portal.azure.com).
 
 [More about Azure Portal Deployment](using-azure-portal.md)
-
