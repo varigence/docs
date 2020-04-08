@@ -1,9 +1,9 @@
 ---
 uid: ssis-on-prem-sql-server
-title: SSIS with on Premesis SQL Server
+title: SSIS with on-premises SQL Server
 ---
 
-# SSIS with on Premesis SQL Server
+# SSIS with on-premises SQL Server
 
 This document describes the steps and considerations for extracting data from a `Source` database and moving it through `Staging`, `Persisted Stage`, `Raw Data Vault`, and `Business Data Vault` on an `on-premise SQL Server`.
 
@@ -61,7 +61,7 @@ BimlStudio: Build SSIS packages for the target version
 
 ![Build Package](images/bfx-ssis-src-stg-psa-BuildPackage.png)
 
-This will create a dtproj which can be opened for debugging in your target Visual Studio version.
+This will create a .dtproj which can be opened for debugging in your target Visual Studio version.
 
 ### Test deployment of database artifacts through the SSDT project
 
@@ -190,8 +190,8 @@ In this scenario, setting up the RDV will include the following steps.
 
 1. Configure the RDV Project
 1. Apply modeling overrides to the source metadata
-a. Object overrides
-a. Column overrides
+    a. Object overrides
+    a. Column overrides
 1. Add a link source object and map it to the unit of work
 1. Configure the system to accelerate LSAT entities
 1. Split a satellite
@@ -199,7 +199,7 @@ a. Column overrides
 1. Publish metadata and create run BS scripts
 1. Add a virtual hub entity as a staged query
 1. Create Staging and Persistent Staging databases and tables using BimlStudio Script
-1. Create a Virtual Hub as a Staged Query for the Culture column on from the staged [awlt].[ProductModelProductDescription] table
+1. Create a Virtual Hub as a Staged Query for the Culture column on from the staged `[awlt].[ProductModelProductDescription]` table
 1. Create BDV database and tables using BimlStudio script
 1. Build SSIS Packages for the target version
 1. Test Deployment of database artifacts through the SSDT project
@@ -493,17 +493,6 @@ BimlFlex implements these artifacts using tables for data storage, Stored Proced
 ### Bridge (BRG) Tables
 
 The BRG constructs allow multiple LNKs surrounding a HUB to be combined in one table, and optionally the `business keys` from the HUBs associated with the LNKs, minimizing the required joins.  This makes it easier to query from and can also lead to a significant performance increase depending on the size and configuration of the HUBs and LNKs.
-
-> [!NOTE]
-> The appended prefix default in BimlFlex is BRD.  The more common industry abbreviation is BRG and will be used throughout this article.  All tables are built however using the default BRD extension.
-
-> [!TIP]
-> If your organization does not already have an existing standard and you haven't configured any BRG tables yet that you modify your settings to reflect the more common BRG term.
->
-> **Setting**
-> |Setting Group|Setting|Setting Value
-> |-|-|-
-> |`DataVault`|`DvAppendBridge`|`BRG`
 
 > [!IMPORTANT]
 > BimlFlex implements all BRG tables starting from a single `business concept`, i.e. HUB. Once a HUB is selected, you want to ensure you keep N-1 (or many-to-one) flow from the central `business concept`.  
