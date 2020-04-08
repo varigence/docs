@@ -575,6 +575,7 @@ $('.header-search-icon').click(function () {
           tocrel = tocPath.substr(0, index + 1);
         }
         var currentHref = util.getAbsolutePath(window.location.pathname).toLowerCase();
+        var foundActive = false;
         $('#sidetoc').find('a[href]').each(function (i, e) {
           var href = $(e).attr("href");
           if (util.isRelativePath(href)) {
@@ -588,10 +589,15 @@ $('.header-search-icon').click(function () {
           }
           if (tocHref === currentHref) {
             $(e).addClass(active);
+            foundActive = true;
           }
 
           $(e).breakWord();
         });
+
+        if (!foundActive) {
+          $('#sidetoc .nav.level1 > li > a').addClass(active)
+        }
 
         renderSidebar();
       });

@@ -439,7 +439,6 @@ article section {
   top: 150px;
   bottom: 0;
   overflow-x: hidden;
-  border-left: 1px solid #e7e7e7;
   z-index: 1;
   padding-top: 10px;
 }
