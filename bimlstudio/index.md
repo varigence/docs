@@ -1,10 +1,16 @@
-# BimlStudio Documentations
-
-## BimlStudio User Guide
+---
+uid: bimlstudio-user-guide
+title: BimlStudio User Guide
+---
+# BimlStudio User Guide
 
 The BimlStudio User Guide describes all aspects of the BimlStudio user interface.
 
-The BimlStudio User Guide is broken up into three parts. The first part provides a step by step walkthrough for building assets for use in a sample cube, leveraging the AdventureWorksLT database. The second part describes each BimlStudio editor, tool window, and ribbon button. The third part includes miscellaneous topics that don't fit into the first two groups.
+The BimlStudio User Guide is organized in three parts.
+
+* Step by step walkthrough for building assets for use in a sample cube, leveraging the AdventureWorksLT database
+* Description of each BimlStudio editor, tool window, and ribbon button
+* Miscellaneous topics that don't fit into the first two groups
 
 ## BimlStudio Forum
 

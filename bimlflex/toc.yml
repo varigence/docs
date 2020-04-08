@@ -1,23 +1,50 @@
 - name: BimlFlex Documentation
   href: index.md
   topicHref: index.md
+  items:
+  - name: Setup
+    href: setup/toc.yml
 
-- name: Getting Started
-  href: getting-started/toc.yml
-  topicHref: getting-started/index.md
+  - name: Getting Started
+    href: getting-started/toc.yml
+    topicHref: getting-started/intro-videos.md
 
-- name: User Guide
-  href: user-guide/toc.yml
-  topicHref: user-guide/index.md
+  - name: Metadata Editors
+    href: metadata-editors/toc.yml
 
-- name: Reference Documentation
-  href: reference-documentation/toc.yml
-  topicHref: reference-documentation/index.md
+  - name: Modeling Tools
+    href: modeling-tools/toc.yml
 
-- name: Tips & Tricks
-  href: tips-and-tricks/toc.yml
-  topicHref: tips-and-tricks/index.md
+  - name: Bulk Edit Metadata
+    href: bulk-edit-metadata/toc.yml
 
-- name: Release Notes
-  href: release-notes/toc.yml
-  topicHref: release-notes/release-notes.md
+  - name: Build Solution
+    href: build-solution/toc.yml
+
+  - name: Metadata Databases
+    href: metadata-databases/toc.yml
+
+  - name: ADF Deployment
+    href: adf-deployment/toc.yml
+
+  - name: SSIS Deployment
+    href: ssis-deployment/toc.yml
+
+  - name: Concepts
+    href: concepts/toc.yml
+
+  - name: Scenarios
+    href: implementation-guides/toc.yml
+
+  - name: Support
+    href: support/toc.yml
+
+  - name: Reference Docs
+    href: reference-documentation/toc.yml
+
+#  - name: Tips And Tricks
+#    href: tips-and-tricks/toc.yml
+
+  - name: Release Notes
+    href: release-notes/toc.yml
+    topicHref: release-notes/release-notes.md

@@ -19,7 +19,7 @@ $(function () {
   renderNavbar();
   renderSidebar();
   renderAffix();
-  renderFooter();
+  //renderFooter();
   renderLogo();
 
   breakText();
@@ -80,8 +80,9 @@ $('.header-search-icon').click(function () {
   // Enable anchors for headings.
   (function () {
     anchors.options = {
-      placement: 'left',
-      visible: 'touch'
+      placement: 'right',
+      visible: 'touch',
+      icon: '#'
     };
     anchors.add('article h2:not(.no-anchor), article h3:not(.no-anchor), article h4:not(.no-anchor)');
   })();
@@ -471,14 +472,16 @@ $('.header-search-icon').click(function () {
   }
 
   function renderSidebar() {
-    var sidetoc = $('#sidetoggle .sidetoc')[0];
+    var sidetoc = $('.sidetoc')[0];
     if (typeof (sidetoc) === 'undefined') {
       loadToc();
     } else {
       registerTocEvents();
+      /*
       if ($('footer').is(':visible')) {
         $('.sidetoc').addClass('shiftup');
       }
+      */
 
       // Scroll to active item
       var top = 0;
@@ -489,19 +492,25 @@ $('.header-search-icon').click(function () {
       })
       $('.sidetoc').scrollTop(top - 50);
 
+      /*
       if ($('footer').is(':visible')) {
         $('.sidetoc').addClass('shiftup');
       }
+      */
 
       renderBreadcrumb();
     }
 
     function registerTocEvents() {
       $('.toc .nav > li > .expand-stub').click(function (e) {
-        $(e.target).parent().toggleClass(expanded);
+        var clickedItem = $(e.target).parent();
+        clickedItem.siblings().removeClass(expanded);
+        clickedItem.toggleClass(expanded);
       });
       $('.toc .nav > li > .expand-stub + a:not([href])').click(function (e) {
-        $(e.target).parent().toggleClass(expanded);
+        var clickedItem = $(e.target).parent();
+        clickedItem.siblings().removeClass(expanded);
+        clickedItem.toggleClass(expanded);
       });
       $('#toc_filter_input').on('input', function (e) {
         var val = this.value;
@@ -559,13 +568,14 @@ $('.header-search-icon').click(function () {
         return;
       }
       tocPath = tocPath.replace(/\\/g, '/');
-      $('#sidetoc').load(tocPath + " #sidetoggle > div", function () {
+      $('#sidetoc').load(tocPath + " div", function () {
         var index = tocPath.lastIndexOf('/');
         var tocrel = '';
         if (index > -1) {
           tocrel = tocPath.substr(0, index + 1);
         }
-        var currentHref = util.getAbsolutePath(window.location.pathname);
+        var currentHref = util.getAbsolutePath(window.location.pathname).toLowerCase();
+        var foundActive = false;
         $('#sidetoc').find('a[href]').each(function (i, e) {
           var href = $(e).attr("href");
           if (util.isRelativePath(href)) {
@@ -573,12 +583,21 @@ $('.header-search-icon').click(function () {
             $(e).attr("href", href);
           }
 
-          if (util.getAbsolutePath(e.href) === currentHref) {
+          var tocHref = util.getAbsolutePath(e.href).toLowerCase();
+          if (tocHref.endsWith('.html') && !currentHref.endsWith('.html')) {
+            tocHref = tocHref.substr(0, tocHref.length - 5);
+          }
+          if (tocHref === currentHref) {
             $(e).addClass(active);
+            foundActive = true;
           }
 
           $(e).breakWord();
         });
+
+        if (!foundActive) {
+          $('#sidetoc .nav.level1 > li > a').addClass(active)
+        }
 
         renderSidebar();
       });
@@ -611,9 +630,12 @@ $('.header-search-icon').click(function () {
       var html = '<h5 class="title">In This Article</h5>'
       html += util.formList(hierarchy, ['nav', 'bs-docs-sidenav']);
       $("#affix").empty().append(html);
+      /*
       if ($('footer').is(':visible')) {
         $(".sideaffix").css("bottom", "70px");
       }
+      */
+     
       $('#affix a').click(function(e) {
         var scrollspy = $('[data-spy="scroll"]').data()['bs.scrollspy'];
         var target = e.target.hash;
@@ -718,6 +740,7 @@ $('.header-search-icon').click(function () {
   }
 
   // Show footer
+  /*
   function renderFooter() {
     initFooter();
     $(window).on("scroll", showFooterCore);
@@ -758,6 +781,7 @@ $('.header-search-icon').click(function () {
       $(".sideaffix").addClass("shiftup");
     }
   }
+  */
 
   function renderLogo() {
     // For LOGO SVG

@@ -2,7 +2,11 @@
 
 <div class="navbar navbar-light navbar-expand-md navbar-text navigation-clean-button" id="topnav">
     <div class="container-fluid">
-        <a href="//www.varigence.com" class="navbar-brand" style="background-image: url('//theme.zdassets.com/theme_assets/1977347/6b92811c443e84f0b193e6397e872e3209cce4e1.png');background-size: cover;background-repeat: no-repeat;height: 66px;width: 200px;background-position: center;"></a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <a href="//www.varigence.com" class="navbar-brand" style="background-image: url('//theme.zdassets.com/theme_assets/1977347/6b92811c443e84f0b193e6397e872e3209cce4e1.png');background-size: cover;background-repeat: no-repeat;height: 66px;width: 200px;background-position: center;"></a>
+        <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navcol-1">
             <ul id="left-navs" class="nav navbar-nav mr-auto" style="color: #00416a;">
                 <li role="presentation" class="nav-item"><a href="//www.varigence.com/Products" class="nav-link">PRODUCTS</a></li>
@@ -10,7 +14,6 @@
                 <li role="presentation" class="nav-item active"><a href="//docs.varigence.com" class="nav-link">DOCS</a></li>
                 <li role="presentation" class="nav-item"><a href="//www.varigence.com/Partners" class="nav-link">PARTNERS</a></li>
                 <li role="presentation" class="nav-item"><a href="//www.varigence.com/Company" class="nav-link">COMPANY</a></li>
-
 
                 <li role="presentation" class="nav-item collapse-only"><a href="//docs.varigence.com" class="nav-link">QUOTE</a></li>
                 <li role="presentation" class="nav-item collapse-only"><a href="javascript:window.location.href = '/hc/en-us/signin?return_to=' + encodeURIComponent(window.location.href) + '&amp;locale=en-us';" class="nav-link">ACCOUNT</a></li>
@@ -34,17 +37,13 @@
           <div class="topbar__col clearfix">
              <a title="Home" href="/">
                 <h3 class="help-center-name">Documentation</h3>
-              </a>
-            <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x" data-toggle-menu>
-              <span class="lines"></span> </button>
-              
+             </a>
 
-                <div class="container hide-when-search" id="breadcrumb" style="position: absolute;">
-    <ul class="breadcrumb">
-      <li>{{_tocTitle}}</li>
-    </ul>
-  </div>
-
+             <div class="container hide-when-search" id="breadcrumb" style="position: absolute;">
+              <ul class="breadcrumb">
+                <li>{{_tocTitle}}</li>
+              </ul>
+            </div>
 
           </div>
           <div class="topbar__col topbar__menu">
@@ -83,3 +82,11 @@
       </svg>
     </div>
   </div>
+
+<div id="small-nav-container" class="col-md-2 docs-dropdown-navbar-container"> 
+  <nav id="small-nav" aria-label="Topics" class="docs-nav">
+    <span class="small-nav-dropdown-title">Topics</span>
+    <select id="small-nav-dropdown" onchange="navigateToSelectedUrl(this)">
+    </select>
+  </nav> 
+</div>

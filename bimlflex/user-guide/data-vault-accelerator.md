@@ -4,29 +4,29 @@ title: BimlFlex Data Vault Accelerator
 ---
 # Data Vault Accelerator
 
-## On Data Vault modelling
+## On Data Vault modeling
 
-This guide provides information on the Accelerator but assumes a sound understanding of the Data Vault modelling approach.
+This guide provides information on the Accelerator but assumes a sound understanding of the Data Vault modeling approach.
 
 ### Watch Recordings
 
 #### 04. BimlFlex - Data Vault Accelerator
 
-In this session, we discuss the various modelling and configuration options available with BimlFlex.
+In this session, we discuss the various modeling and configuration options available with BimlFlex.
 
 ![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=opwapU7HZMM?rel=0&autoplay=0)
 
 ### Introduction to the Accelerator
 
-The Accelerator provides a quick-start opportunity with a best effort, technical modelling of Data Vault constructs out of the source metadata. It is configurable and provides a preview that can be rerun as many times as necessary so that the initial Data Vault modelling can be completed faster than through manual metadata modelling.
+The Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of the source metadata. It is configurable and provides a preview that can be rerun as many times as necessary so that the initial Data Vault modeling can be completed faster than through manual metadata modeling.
 
-It is important to remember that the Data Vault modelling approach is based around **Core Business Concepts** (CBC) that are built upon **Enterprise Wide Business Keys** (EWBK) to allow for intra-systems integrations. The Accelerator does it’s best to derive this from the source metadata but there is a need for a modeler with enterprise knowledge to translate the data and events into a source system agnostic model. The Accelerator makes it easy to get started and iterate through variations so that the analysts and subject matter experts can validate and tune the model to best match business processes.
+It is important to remember that the Data Vault modeling approach is based around **Core Business Concepts** (CBC) that are built upon **Enterprise-Wide Business Keys** (EWBK) to allow for intra-systems integrations. The Accelerator does it's best to derive this from the source metadata but there is a need for a modeler with enterprise knowledge to translate the data and events into a source-system agnostic model. The Accelerator makes it easy to get started and iterate through variations so that the analysts and subject matter experts can validate and tune the model to best match business processes.
 
 ### Starting Point
 
 The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorks LT database, the Source to Staging and Persistent Staging has been completed and it is time to start integrating the staged data into the Raw Data Vault.
 
-Follow the guide for [Source To Staging](source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
+Follow the guide for [Source To Staging](../concepts/source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
 
 ### The Source and Target model
 
@@ -61,7 +61,7 @@ The accelerator will use the metadata in the source for the project to derive th
 
 The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault preview allows a rapid design cycle of the Raw Data Vault.
 
-Should the Accelerator not be needed it is possible to manually define the Data Vault artifacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault](data-vault-templates.md).
+Should the Accelerator not be needed it is possible to manually define the Data Vault artifacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault](../concepts/data-vault-templates.md).
 
 Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become part of the normal metadata set.
 
@@ -106,7 +106,7 @@ Once the preview objects are available it is possible to review the information 
 
 ![Preview Data Vault Backbone](images/bimlflex-ss-v5-schema-preview-data-vault-backbone.png "Preview Data Vault Backbone")
 
-The default schema will include all tables from all stages/layers. By filtering the diagram to only include the Hubs and Links by choosing the BimlFlexDataVaultPreviewBackbone in the filtering pane a user can review the CBC’s and UOW’s. Anything that needs tweaking, can be updated in the metadata which will, in turn, produce a new schema from the updated information.
+The default schema will include all tables from all stages/layers. By filtering the diagram to only include the Hubs and Links by choosing the BimlFlexDataVaultPreviewBackbone in the filtering pane a user can review the CBC's and UOW's. Anything that needs tweaking, can be updated in the metadata which will, in turn, produce a new schema from the updated information.
 
 ![Entity Relationship](images/bimlflex-ss-v5-sample-entity-relationship-diagram.png "Entity Relationship")
 
@@ -122,7 +122,7 @@ In the Excel-based Metadata Editor, there are numerous options for manipulating 
 
 * Choosing the Integration Key used for the Hubs. By analyzing business processes and the source data it is possible to find EWBK's that aren't the technical source keys
 * Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For information, such as addresses there is normally no need to maintain complex relationships from the source. An address is just an attribute of the entity with a location
-* Adjusting the grain in UOW’s so that the correct Hubs are included in Links
+* Adjusting the grain in UOW's so that the correct Hubs are included in Links
 * Separating out data into different Satellites based on rate of change, storage requirements or similar
 * Reviewing Driving Key relationships for Links where there is no one FK relationship in the source
 
@@ -174,7 +174,7 @@ All created Links will have an effectiveness Link Satellite added.
 
 Any attributes left in the source Link Table will be added to the default Link Satellite. They can be separated out into their own Satellites if needed using the ModelGrouping override.
 
-It’s worth noting that if there are source system applied rules for relationships (such as a product can only be in one category) they will need to be specified as Driving Keys in the Accelerated Link unless the Accelerator can derive the behavior from relationship constraints.
+It's worth noting that if there are source system applied rules for relationships (such as a product can only be in one category) they will need to be specified as Driving Keys in the Accelerated Link unless the Accelerator can derive the behavior from relationship constraints.
 
 For Hub tables that have Foreign Key relationships defined the Accelerator will generate Links for each Foreign Key between the defined Integration Keys. These Links will need to be reviewed as the UOW they describe might not align with the business process.
 

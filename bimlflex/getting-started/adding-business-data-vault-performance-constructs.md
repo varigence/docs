@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-adding-business-data-vault-performance-constructs
+uid: bimlflex-getting-started-adding-business-data-vault-performance-constructs
 title: Adding the Business Data Vault Model
 ---
 # Adding the Business Data Vault Model
@@ -8,20 +8,24 @@ title: Adding the Business Data Vault Model
 
 The `Point in Time` (PIT) and `Bridge` (BRG) structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
 
-For insert-only Data Vault solutions, the Point in Time constructs provides a convenient way to recreate timelines and end date records so that timeline-sensitive queries are easier to create. This is useful when a Hub has multiple Satellites attached and there is a requirement to query data from several of these Satellites for an event datetime.
-
-> [!NOTE]
-> Example:
-> A Sales Order has a sale event date time, when the sale occurred. The customer involved is identified through a link to the Customer Hub. The Customer has a Satellite with demographic information as well as Satellites for marketing and promotions, geographic/address information and loyalty status. All these satellites would have individual timelines and finding the relevant rows from each table for the sale event time can result in a complex query. The Point In Time table would pre-calculate these time lines so that the query becomes more straightforward.
-
-The Bridge constructs allow multiple Links surrounding a Hub to be combined in one table, minimizing the required joins.
-
 * Point in Time, PIT, tables are used to create timelines for all changes in all or some Satellites attached to a business entity in a Hub
 * Bridge, BRG, tables are used to link business entities in Hubs, through their link tables, into easy to query constructs
 
+## Point in Time introduction
+
+For insert-only Data Vault solutions, the Point in Time constructs provide a convenient way to recreate timelines and end date records so that timeline-sensitive queries are easier to create. This is useful when a Hub has multiple Satellites attached and there is a requirement to query data from several of these Satellites for an event DateTime.
+
 > [!NOTE]
 > Example:
-> A Sales Order Core Business Concept is stored in a Hub. This has several separate Link table relationships to Customer, Shipping Address, Billing Address, Product, Marketing Campaign, Store Hubs etc. A query to gather attributes from multiple attached Satellites from the linked entities would need to join from main Hub to Link to related Hub to Satellite or Point In Time table for each related entity. This rapidly becomes a large number of joins. The Bridge table pre-calculate the joins and allows for more straightforward queries.
+> A Sales Order has a sale event DateTime when the sale occurred. The customer involved is identified through a link between the SalesOrder Hub and the Customer Hub. The Customer has a Satellite with demographic information as well as Satellites for marketing and promotions data, geographic/address information and loyalty status. All these satellites have individual timelines and finding the relevant rows from each table for the sale event time can require a complex query. The Point In Time table would pre-calculate these timelines so that the query becomes more straightforward.
+
+## Bridge introduction
+
+The Bridge constructs allow multiple Links surrounding a Hub to be combined in one table, minimizing the required joins.
+
+> [!NOTE]
+> Example:
+> A Sales Order Core Business Concept is stored in a Hub. This has several separate Link table relationships to Hubs for Customer, Shipping Address, Billing Address, Product, Marketing Campaign, Store etc. A query to gather attributes from multiple attached Satellites from the linked entities would need to join from the main Hub to the Links to the related Hubs to Satellites or Point In Time tables for each related entity. This rapidly becomes a large number of joins. The Bridge table pre-calculate the joins and allows for more straightforward queries.
 
 BimlFlex implements these artifacts using tables for data storage, Stored Procedures for loading and SSIS packages for orchestration.
 
@@ -53,7 +57,7 @@ Use the `Generate Scripts`, `Business Vault Procedure Script` option in BimlStud
 
 They are also included in the generated SSDT project for the Data Vault database.
 
-These stored procedures needs to be created in the Data Vault database.
+These stored procedures need to be created in the Data Vault database.
 
 ## Building the PIT and BRG load packages
 

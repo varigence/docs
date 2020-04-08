@@ -1,0 +1,63 @@
+---
+uid: linked-service-adf-netezza
+title: Configuring an ADF Linked Service Connection for Netezza
+---
+# Configuring an ADF Linked Service Connection for Netezza
+
+> [!NOTE]
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+
+[//]: # (TODO List of stages, connection types, and system types that can use Netezza)
+
+After selecting `Netezza` from the Linked Service Type dropdown, the form required for creating a Netezza Linked Service will appear.
+
+![Netezza Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-netezza-form.png "Netezza Linked Service Form")
+
+### Required Fields
+
+The required fields are:
+
++ [Connect via Integration Runtime](#connect-via-integration-runtime)
++ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
+  + Server Name
+  + Database Name
+  + Port
+  + [Security Level](#security-level)
+  + [CA Certificate File*](#ca-certificate-file)
+  + User Name
+  + Password (or [Azure Key Vault](create-linked-service-connection.md))
+
+Optional fields are:
+
++ [Additional Connection String Properties](#additional-connection-string-properties)
+
+#### Connect via Integration Runtime
+
+Connect via Integration Runtime is required for a Netezza Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+
+#### Connection String
+
+A connection to a Netezza linked service requires a connection string. The required properties for the connection string are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
+
+> [!TIP]
+> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details or Password.
+
+#### Security Level
+
+The Netezza Linked Service connection has four security levels: Only Unsecured, Preferred Unsecured, Preferred Secured, and Only Secured. The default option is Preferred Unsecured. For more information, see the Microsoft documentation for [Netezza Connector Linked Service Properties](https://docs.microsoft.com/en-us/azure/data-factory/connector-netezza#linked-service-properties).
+
+#### CA Certificate File
+
+The CA Certificate File field should be filled with the the full path to the SSl certificate used by the server.
+
+\* The CA Cert File is only required if the Security Level specifies that that SSl is enabled.
+
+#### Additional Connection String Properties
+
+Any additional properties entered here will be included in the Connection String. These properties should be entered the same way you want them to appear in the connection string and separated by a semicolon, e.g. `key=value;secondKey=secondValue`.
+
+Values entered in the Additional Connection String Properties textbox will be maintained when changing linked service types. If a required property from one service type does not have a corresponding text box in the newly selected linked service type, it will appear as an additional propertie.
+
+### Azure Data Factory Linked Services Additional Information
+
+For additional information on ADF Linked Service types and their connection requirements see the [Azure Data Factory Netezza Connector documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-netezza).

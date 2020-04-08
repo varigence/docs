@@ -1,6 +1,0 @@
----
-uid: biml-adfjsonformatfilepattern-enumeration
-title: AdfJsonFormatFilePattern Enumeration
----
-
-## AdfJsonFormatFilePattern Enumeration<div class="LanguageSummary"><div class ="SummaryItem">Provides options for the root-level structure of a file in the Azure Data Factory JsonFormat</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">SetOfObjects</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that one or more JSON object definitions are present at the root level of the JSON file.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">ArrayOfObjects</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that a single JSON array is present at the root of the JSON file.</div></td></tr></tbody></table></div>

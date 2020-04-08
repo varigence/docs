@@ -24,7 +24,7 @@ In addition to the support here, we have developed a community at [Bimlscript.co
 
 <a href="bimlflex/index.md"><img src="content/images/bimlflex.png" alt="BimlFlex -h24px"></a>
 
-* [Getting started with BimlFlex](bimlflex/getting-started/index.md)
+* [Getting started with BimlFlex](bimlflex/getting-started/intro-videos.md)
 * [BimlFlex User Guide](bimlflex/index.md)
 * [Reference Documentation](bimlflex/reference-documentation/index.md)
 
@@ -48,11 +48,11 @@ In addition to the support here, we have developed a community at [Bimlscript.co
 </div>
 <div class="col-md-3">
 
-<a href="biml/index.md"><img src="content/images/biml.svg" alt="Biml -h24px"></a>
+<a href="biml-reference/index.md"><img src="content/images/biml.svg" alt="Biml -h24px"></a>
 
-* [Biml Language Reference](biml/language-reference/Varigence.Languages.Biml.AstRootNode.html)
-* [Biml API Reference](biml/api-reference/Varigence.Languages.Biml.AstRootNode.html)
-* [Biml API Samples](biml/snippets/index.md)
+* [Biml Language Reference](biml-reference/language-reference/Varigence.Languages.Biml.AstRootNode.html)
+* [Biml API Reference](api-reference/Varigence.Languages.Biml.AstRootNode.html)
+* [Biml API Samples](biml-reference/snippets/index.md)
 * [Biml Forum](https://varigence.com/Forums?forumName=Biml)
 
 </div>

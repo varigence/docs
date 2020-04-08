@@ -1,0 +1,32 @@
+- name: Overview
+  href: index.md
+- name: BimlFlex Tour
+  href: bimlflex-tour.md
+- name: Dashboard
+  href: dashboard.md
+- name: Toolbar
+  href: toolbar.md
+- name: Connections
+  href: connections.md
+- name: Batches
+  href: batches.md
+- name: Projects
+  href: projects.md
+- name: Objects
+  href: objects.md
+- name: Columns
+  href: columns.md
+- name: Parameters
+  href: parameters.md
+- name: Attributes
+  href: attributes.md
+- name: Configurations
+  href: configurations.md
+- name: Settings
+  href: settings.md
+- name: Data Type Mappings
+  href: data-type-mappings.md
+- name: Versions
+  href: versions.md
+- name: Reports
+  href: operational-reports.md
