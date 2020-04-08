@@ -516,6 +516,7 @@ $('.header-search-icon').click(function () {
     }
 
     function registerTocEvents() {
+      $(window).on('resize', adjustFooterForTocHeight);
       $('.toc .nav > li > .expand-stub').click(function (e) {
         var clickedItem = $(e.target).parent();
         clickedItem.siblings().removeClass(expanded);
