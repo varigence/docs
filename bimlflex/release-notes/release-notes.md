@@ -8,17 +8,17 @@ name: BimlFlex Release Notes
 > Please make sure databases and projects are backed up before upgrading.  
 > Please email support@bimlflex.com with any installation or upgrade issues.
 
-## BimlFlex 2020
+## BimlFlex 2020 Preview
 
-BimlFlex 2020 is installed and upgraded through a single, consolidated, role-based installer.
+BimlFlex 2020 Preview is installed and upgraded through a single, consolidated, role-based installer.
 
 ### Latest Release
 
 Build 5.0.64613.0, release date: 07 April 2020
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_2020.preview.exe)  
     This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_2020.preview.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## Build 5.0.64613.0, release date: 07 April 2020
