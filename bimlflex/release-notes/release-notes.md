@@ -14,21 +14,21 @@ BimlFlex 2020 is installed and upgraded through a single, consolidated, role-bas
 
 ### Latest Release
 
-Build 5.0.nnnnn.0, release date: nn April 2020
+Build 5.0.64613.0, release date: 07 April 2020
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
-## Build 5.0.nnnnn.0, release date: nn April 2020
+## Build 5.0.64613.0, release date: 07 April 2020
 
 ### Feature Highlights
 
 * Expanded support for Azure Data Factory
 * Data Mappings visualizations and editor for BimlFlex App
 * BimlCatalog Operational Reporting in BimlFlex App
-* Restructure BimlCatalog to allow for more agnostic logging
+* Restructure BimlCatalog for more agnostic logging
 * Additional Extension Points for bespoke processing requirements
 * Additional automation script creation for build and deployment
 * Support for Microsoft Dynamics CRM as source in Azure Data Factory projects
@@ -55,7 +55,7 @@ These reports allow direct access to the logging in the BimlCatalog from the app
 
 More information on operational reporting here: @bimlflex-operational-reporting
 
-#### Changes to BimlCatalog
+#### Restructure BimlCatalog for more agnostic logging
 
 The BimlCatalog schema has been updated with agnostic table names.
 
@@ -177,8 +177,8 @@ The settings have been updated. New settings are available, some settings have b
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.nnnnn.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.nnnnn.0.exe)
-* [bimlflexruntimesetup_5.0.nnnnn.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.nnnnn.0.exe)
+* [bimlflexdevsetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64613.0.exe)
+* [bimlflexruntimesetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64613.0.exe)
 
 Legacy Release Notes:
 
