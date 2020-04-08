@@ -37,7 +37,7 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 <img
     src="images/columns-fields.64566.png"
     class="border-image"
-    title="{Entity Plural} Editor Fields"
+    title="Columns Editor Fields"
 />
 
 |Field|Description|

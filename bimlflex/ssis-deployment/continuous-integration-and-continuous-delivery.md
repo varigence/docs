@@ -440,7 +440,7 @@ For build servers where the BimlStudio application should be installed by a proc
 
 The following example will install both the 64 and 32 bit versions of the BimlStudio Application and the BimlFlex custom components for SQL Server 2016. If you do not include the 'start /wait' prefix, the installer will appear to complete instantly while the installation runs in the background.
 
-`start /wait BimlFlexDevSetup.exe -s -InstallFeature:BimlStudio_X64,BimlStudio_X86,BIMLFLEXSSIS2016_X64,BIMLFLEXSSIS2016_X86`
+`start /wait BimlFlexDevSetup.exe -s -InstallFeature:BimlStudio_X64,BimlStudio_X86`
 
 Feature options available to the installer:
 

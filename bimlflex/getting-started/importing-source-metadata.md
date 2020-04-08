@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-trial-importing-source-metadata
+uid: bimlflex-getting-started-importing-source-metadata
 title: Importing Source Metadata
 ---
 # Importing Source Metadata

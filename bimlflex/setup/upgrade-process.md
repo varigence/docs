@@ -4,24 +4,20 @@ title: Upgrade and Testing Process
 ---
 # Upgrade and Testing Process
 
-BimlFlex is built on BimlStudio and contains the following components that are of interest when upgrading to a later version:
+BimlFlex comes in a consolidated installer that contains the following components that are upgraded when a later version is installed:
 
 * BimlStudio Application
 * BimlFlex component of BimlStudio
 * The BimlFlex App
 * Optional BimlFlex Excel Add-in
-* BimlFlex Bundle file
 * BimlFlex Metadata database
 * BimlCatalog Orchestration database
-* BimlFlex Custom SSIS Components
-* The BimlFlex framework is distributed as a single, combined installer for developer environments
-* BimlFlex components are also distributed as a single, separate installer for certain workloads, such as for analysts and servers
-* The BimlFlex databases are upgraded through the installer
-* The BimlFlex Custom SSIS Components are integrated in the installer and are also available as an archive file that contains the component .dll and a .bat file installer for Azure installations
+* BimlFlex Custom SSIS Components for SQL Server
+* BimlFlex Custom SSIS Components for Snowflake
 
 ## Downloading BimlFlex from the Varigence website
 
-The current version of the combined BimlFlex installer is available for [download here](https://varigence.com/downloads/bimlflexdevsetup.exe).
+The current installer is available through the @bimlflex-release-notes page
 
 ## Preparation for upgrading existing projects
 
@@ -43,14 +39,11 @@ The expanded code is automatically enabled in the Bundle Options for a new proje
 
 The BimlStudio project and the Custom Extension Point files and any other local file contents that have been created should be backed up to a backup location so that a copy of the pre-upgrade project is available if needed.
 
-### 4. Upgrade Applications, components, Bundle and Databases through the installer
+### 4. Upgrade Applications, Custom Components and Databases through the installer
 
 All installations and upgrades are performed through the installer.
 
 * Upgrade all installed applications
-
-* Upgrade all existing projects
-    BimlFlex uses a Bundle file for the data warehouse logic. These files are located in the project folder and upgraded through the installer. All projects that require upgrading needs to be added to the upgrade step in the installer.
 
 * Upgrade the BimlFlex database
     BimlFlex uses a metadata database for all metadata. This database needs to be updated through the installer. Add all BimlFlex databases to the upgrade step to allow the installer to upgrade them to the correct version

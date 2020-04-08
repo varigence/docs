@@ -30,7 +30,7 @@ Follow the guide for [Source To Staging](../concepts/source-to-staging-templates
 
 ### The Source and Target model
 
-Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modelling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
+Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modeling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
 ![Whiteboard Model](images/bimlflex-ss-v5-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
@@ -212,7 +212,7 @@ This column contains the short name to be used for Links and Link Satellites aft
 
 A Link between `GeneralLedger` and `ChartOfAccounts` will use the default name `[LNK_GeneralLedger_ChartOfAccounts]`.
 
-Defining the value `GL_COA` here will generate the name `[LNK_GL_COA]` providing easy naming flexibility through metadata when modelling more complex relationships.
+Defining the value `GL_COA` here will generate the name `[LNK_GL_COA]` providing easy naming flexibility through metadata when modeling more complex relationships.
 
 #### ModelObjectType
 
@@ -254,6 +254,6 @@ By clicking the Publish DV Import the new data will be committed to the Metadata
 
 ![Publish Metadata Changes](images/bimlflex-ss-v5-accelerator-publish-metadata-changes.png "Publish Metadata Changes")
 
-Once the Metadata is published it is possible to update the metadata, getting all entities, in BimlFlex Excel to review the new objects and columns now available for further modelling.
+Once the Metadata is published it is possible to update the metadata, getting all entities, in BimlFlex Excel to review the new objects and columns now available for further modeling.
 
 Once reviewed in BimlFlex Excel Add-in it is possible to generate all Tables and database structures as well as SSIS packages based on the Accelerated metadata from within BimlStudio.
