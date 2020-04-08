@@ -7,7 +7,6 @@
 
   - name: Getting Started
     href: getting-started/toc.yml
-    topicHref: getting-started/intro-videos.md
 
   - name: Metadata Editors
     href: metadata-editors/toc.yml
