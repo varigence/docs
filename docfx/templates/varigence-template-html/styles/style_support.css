@@ -217,8 +217,8 @@ ci-search.search_results_page {
     position: absolute; }
 
   .navbar-expand-md .navbar-nav .nav-link {
-    margin-right: 7px;
-    margin-left: 7px;
+    margin-right: 15px;
+    margin-left: 15px;
     font-size: 14px; }
 
   .navbar-expand-md > .container,
