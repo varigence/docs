@@ -10,9 +10,9 @@ This guide provides information on the Accelerator but assumes a sound understan
 
 ### Watch Recordings
 
-#### 04. BimlFlex - Data Vault Accelerator
+#### BimlFlex - Data Vault Accelerator
 
-In this session, we discuss the various modeling and configuration options available with BimlFlex.
+This session cover the various Data Vault modeling and configuration options available in BimlFlex.
 
 ![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0)
 
@@ -26,8 +26,6 @@ It is important to remember that the Data Vault modeling approach is based aroun
 
 The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorks LT database, the Source to Staging and Persistent Staging has been completed and it is time to start integrating the staged data into the Raw Data Vault.
 
-[//]: # (TODO: Link to UPDATED Source To Staging document)
-
 Follow the guide for [Source To Staging](../concepts/source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
 
 More about [Import Metadata](../concepts/importing-metadata.md).
@@ -36,7 +34,7 @@ More about [Import Metadata](../concepts/importing-metadata.md).
 
 Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modelling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
-![Whiteboard Model](../metadata-editors/images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
+![Whiteboard Model -50% -center](../metadata-editors/images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
 Once the target model is drafted, compare the accelerated metadata with the expected outcome and tweak accordingly.
 
@@ -67,20 +65,18 @@ The accelerator will use the metadata in the source for the project to derive th
 
 The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault preview allows a rapid design cycle of the Raw Data Vault.
 
-Should the Accelerator not be needed it is possible to manually define the Data Vault artifacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault](../concepts/data-vault-templates.md).
-
 Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become part of the normal metadata set.
 
 ### Sample workflow
 
 The following narrative will guide us through the Accelerator process end to end. It is part of the overall BimlFlex workflow described earlier.
 
-1. run the metadata import for the source system if not done already. This import identifies source tables as a base for either Hubs, Links or Satellites
-1. open the Accelerator, specify the record source and select objects to accelerate
-1. preview the Accelerated Schema
-1. review and tweak the metadata
-1. publish the preview to the metadata repository by selecting the target Connection and Project
-1. build the database artifacts and SSIS artifacts in BimlStudio from the newly published Data Vault metadata
+1. Run the metadata import for the source system if not done already. This import identifies source tables as a base for either Hubs, Links or Satellites
+1. Open the Accelerator, specify the record source and select objects to accelerate
+1. Preview the Accelerated Schema
+1. Review and tweak the metadata
+1. Publish the preview to the metadata repository by selecting the target Connection and Project
+1. Build the database artifacts and SSIS artifacts in BimlStudio from the newly published Data Vault metadata
 
 ### The Accelerator User Interface
 
@@ -88,12 +84,12 @@ In the preview, it is also possible to filter the tables used for the preview fr
 
 Constraining the Data Vault Acceleration to a subset allows for a more agile delivery where valuable parts of the solution can be put to good use as soon as they are done.
 
-![Accelerator User Interface](../metadata-editors/images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
+![Accelerator User Interface -50% -center](../metadata-editors/images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
 
 The Accelerator shows the source and preview side-by-side with options to collapse each pane or to resize the panes by dragging the splitter.
 
 | Icon | Description |
-|--- |--- |-|
+| ---- | ----------- |
 | <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/diagram-view.svg"/></div> | Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
 | <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/print.svg"/></div> | Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
 | <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/refresh.svg"/></div> | Refresh the whole layout or you can change the layout as you like by dragging tables. |
@@ -145,11 +141,11 @@ There are convenience actions available on most of the tables and columns in bot
 
 By clicking on a Table or Column a user gets a pop up of all the actions buttons available. The first click will show a minimized view with only the icons with tooltips.
 
-![Accelerator Action Icons Minimized](../metadata-editors/images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
+![Accelerator Action Icons Minimized -center](../metadata-editors/images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
 
 By clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
 
-![Accelerator Action Icons Maximized](../metadata-editors/images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
+![Accelerator Action Icons Maximized -center](../metadata-editors/images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
 
 | Icon | Action | Description |
 |--- |--- |--- |
@@ -188,7 +184,7 @@ The first Acceleration step is to accelerate tables defined as Satellites. It wi
 
 It is possible to split Satellite columns into separate Satellites. This is useful for when part of the data in the source table changes more frequently. Behind the scenes the ModelGrouping name will be added to the end of the Satellite name and the data from the source will go into this separate Satellite as well as the main Satellite.
 
-![Accelerator Action - Split Satellite](../metadata-editors/images/bimlflex-app-accelerator-actions-split-sat.png "Accelerator Action - Split Satellite")
+![Accelerator Action - Split Satellite -center](../metadata-editors/images/bimlflex-app-accelerator-actions-split-sat.png "Accelerator Action - Split Satellite")
 
 The sample above shows how the "Customer" source table Accelerated into a "HUB_Customer" and two separate Satellites. Notice the "pdv" schema shows that this is a preview. Once published the existing table will have an "rdv" schema.
 
@@ -216,11 +212,13 @@ The UOW defines the granularity of the relationship between the entities. It is 
 
 Using the ModelGrouping attribute, a user can define the granularity from the source table to group multiple Foreign Key relations into a single Link
 
-![Unit of Work Link Grouping](../metadata-editors/images/bimlflex-app-accelerator-actions-uow.png "Unit of Work Link Grouping")
+![Unit of Work Link Grouping -center](../metadata-editors/images/bimlflex-app-accelerator-actions-uow.png "Unit of Work Link Grouping")
 
 Watch the video to see how to group the 3 Links above into a single Unit Of Work:
 
 <iframe width="500" height="281" src="https://www.youtube-nocookie.com/embed/w1UTANpF_ug?start=275&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=w1UTANpF_ug?t=275&rel=0&autoplay=0)
 
 ## Adjusting Model Overrides
 
@@ -234,11 +232,11 @@ There are overrides for Objects as well as Columns
 
 This column contains the actual table name to be used as after the solution is modelled.
 
-![Change Model Override Name](../metadata-editors/images/bimlflex-app-accelerator-actions-modeloverridename.png "Change Model Override Name")
+![Change Model Override Name -50% -center](../metadata-editors/images/bimlflex-app-accelerator-actions-modeloverridename.png "Change Model Override Name")
 
 If a source system has entity names like "GL002" and the actual business name is "GeneralLedger" the Accelerator will convert this to "[HUB_GeneralLedger]" and "[SAT_GeneralLedger]"
 
-![Change Model Override Name Result](../metadata-editors/images/bimlflex-app-accelerator-actions-modeloverridename-result.png "Change Model Override Name Result")
+![Change Model Override Name Result -center](../metadata-editors/images/bimlflex-app-accelerator-actions-modeloverridename-result.png "Change Model Override Name Result")
 
 The image above shows the previous Unit Of Work example with "SalesOrderHeader" overridden with "Sale"
 
@@ -266,7 +264,7 @@ While the same column names are used in source to staging to persistent staging,
 
 If a source system has column names like "GL002CD123" and the actual business name is "GeneralLedgerCode" the Accelerator will convert this to "[GeneralLedgerCode]"
 
-![Change Model Override Name](../metadata-editors/images/bimlflex-app-accelerator-actions-col-modeloverridename.png "Change Model Override Name")
+![Change Model Override Name -center](../metadata-editors/images/bimlflex-app-accelerator-actions-col-modeloverridename.png "Change Model Override Name")
 
 The image above shows "PostalCode" overridden with "ZipCode".
 
@@ -290,7 +288,7 @@ Once the metadata has been modelled and the preview represents the target model 
 
 By clicking the Publish DV Import the new data will be committed to the Metadata database and made available as a persisted Schema Diagram, in the application screens for edit and in BimlFlex Excel for bulk edit.
 
-![Publish Metadata Changes](../metadata-editors/images/bimlflex-app-accelerator-publish.png "Publish Metadata Changes")
+![Publish Metadata Changes -50% -center](../metadata-editors/images/bimlflex-app-accelerator-publish.png "Publish Metadata Changes")
 
 The target Connection and Project will be automatically selected based on your configuration and you may change the Project if you have multiple eligible target projects.
 
@@ -298,7 +296,7 @@ Once the Metadata is published it is possible to update the metadata in various 
 
 1. BimlFlex App Object and Column Screens - for quick review and individual updates
 1. Schema Diagram - for viewing the persisted RDV schema
-1. Accelerator - for further modelling
+1. Accelerator - for further modeling
 1. Mapping Diagram - to verify source to target column mappings
 1. BimlFlex Excel - for bulk editing actions
 

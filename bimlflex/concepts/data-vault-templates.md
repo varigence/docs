@@ -4,9 +4,9 @@ title: BimlFlex Data Vault Templates
 ---
 # Data Vault Templates
 
-This document outlines the creation and management of Data Vault artifacts in BimlFlex.
+This document outlines the Data Vault templates in BimlFlex.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator that is [described in its own document](../modeling-tools/accelerator.md). This document focuses on the process of manually creating Data Vault artifacts by manipulating metadata.
+The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator: @data-vault-accelerator
 
 ## Setup
 

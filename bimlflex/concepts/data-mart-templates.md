@@ -96,7 +96,6 @@ The ELT Pattern is implemented in SQL and orchestrated through SSIS or ADF as ne
 
 **Dimension Load** ELT Pattern for Type 1 Dimensions, implemented in a Stored Procedure
 
-1. Check for initial load by checking if there is data in the target table
 1. Select into initial temporary Stage
     Derive Attribute Hash as needed
 1. Create Temporary Upsert Table from Stage and Target
@@ -105,21 +104,14 @@ The ELT Pattern is implemented in SQL and orchestrated through SSIS or ADF as ne
 
 **Dimension Load** ELT Pattern for Type 2 Dimensions, implemented in a Stored Procedure
 
-1. SQL - Truncate target Data Mart Staging Table
-1. SQL - Check for initial load by checking if there is data in the target table
-1. DFT - Data Flow to Load Target Table
-    1. SRC - Select from Source Object
-    1. FLX - Row Count
-    1. DC - Add Audit Columns
-    1. FLX - Hash for Type 1 Attributes
-    1. FLX - Hash for Type 2 Attributes
-    1. LKP - Lookup Surrogate Key
-    1. DC - Derived Surrogate Defaults when needed
-    1. CSPL - Split processing based on type of change (Type 1, Type 2, etc)
-    1. DC - Insert/Update Defaults if needed, as per Change Type
-    1. FLX - Row Count
-    1. DST - Load Destination Staging Table, and Dimension Table at Initial Load
-1. SQL - Merge Staged data into Target Table for non-initial loads
+1. Select into initial temporary Stage
+    Derive Attribute Hash as needed for Type 1 and Type 2 sets
+    Derive Metadata as required
+1. Insert new and Type 2 changed rows in target
+1. End Date any Type 2 changes
+    Dimensions have their rows Effective To and the next rows Effective From separated by a millisecond
+1. Create Temporary Upsert Table from Stage and Target for Type 1 changes
+1. Update any existing, changed Type 1 Attributes
 
 ### BimlFlex Fact Loading Pattern
 
@@ -150,17 +142,12 @@ The target Fact Object can be cloned from the Source Object. The target has Dime
 
 **Fact Load** ELT Pattern, implemented in a Stored Procedure
 
-1. SQL - Truncate target Data Mart Staging Table
-1. SQL - Check for initial load by checking if there is data in the target table
-1. DFT - Data Flow to Load Target Table
-    1. SRC - Select from Source Object
-    1. FLX - Row Count
-    1. DC - Add Audit Columns
-    1. DCV - Data Conversion  
-        Convert to Data Type compatible with the lookup to the Dimension Integration Key for source Dimension Lookup columns
-    1. LKP - Lookup for each mapped Dimension  
-        Lookup based on source column value to Dimension Integration Key
-        Return the Dimension Sequence Identifier/Primary Key
-    1. FLX - Hash for Attribute changes
-    1. DST - Load Destination Staging Table, and Dimension Table at Initial Load
-1. SQL - Merge Staged data into Target Table for non-initial loads
+1. Select into initial temporary Stage
+    Derive Attribute Hash
+    Derive Metadata as required
+1. Create Change Upsert Table from Stage and Target for Type 1 changes
+    Perform Current Key Lookup and Unknown Member -1 replacement for any Dimension reference based on Integration Key
+1. Update existing rows from Change table
+1. Create New Row Insert Table from Stage and Target for Type 1 changes
+    Perform Current Key Lookup and Unknown Member -1 replacement for any Dimension reference based on Integration Key
+1. Insert new rows in Target Fact Table
