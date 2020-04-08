@@ -16,7 +16,7 @@
   href: synapse-azcopy.md
 
   # SSIS with On-Premise SQL Server 
-- name: SSIS on Premesis SQL Server
+- name: SSIS on Premises SQL Server
   href: ssis-on-prem-sql-server.md
 
 # Other Concepts
