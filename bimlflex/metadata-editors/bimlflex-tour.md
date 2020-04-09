@@ -6,8 +6,6 @@ title: BimlFlex Tour
 
 The following sections describe the UI elements that make up an Entity Editor and how the features provide navigation and interaction.  
 
-[//]: # (TODO: Maybe snip a starting window?)
-
 [!include[BimlFlex Toolbar](_incl-toolbar.md)]
 
 ## BimlFlex Menu  
@@ -48,11 +46,11 @@ The Editor Action Buttons provide quick access to common useful features managin
 
 |Icon|Action|Description|
 |-|-|-|-|
-|<div class="icon-col m-5"><img src="images/svg-icons/add.svg"/></div>|<span class="nowrap-col m-5">Add</span>|**Add** will create a new entity.|
-|<div class="icon-col m-5"><img src="images/svg-icons/validate.svg"/></div>|<span class="nowrap-col m-5">Validate</span>|Perform a validation pass across the associated entity.|
-|<div class="icon-col m-5"><img src="images/svg-icons/filter-clear.svg"/></div>|<span class="nowrap-col m-5">Clear Filters</span>|*Clear Filters* will remove any filter context that was previously entered of passed through.  This is handy when you want to manage **Settings** and **Parameters** across multiple **Projects**.|
-|<div class="icon-col m-5"><img src="images/svg-icons/expanded.svg"/></div>|<span class="nowrap-col m-5">Collapse</span>|*Collapse* will cycle through the the various supported modes the Entity List can have.  Options are Full Panel, Split Panels, and Hidden.|
-|<div class="icon-col m-5"><img src="images/svg-icons/collapsed.svg"/></div>|<span class="nowrap-col m-5">Expand</span>|*Expand* will cycle through the the various supported modes the Entity List can have.  Options are Hidden, Split Panels, and Full Panel.|
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg"/></div> | Add | **Add** will create a new entity. |
+| <div class="icon-col m-5"><img src="images/svg-icons/validate.svg" /></div> | Validate | This will trigger validation to be run.  It will display <img class="icon-inline" src="images/svg-icons/success.svg" /> if all validation passes, or <img class="icon-inline" src="images/svg-icons/error.svg" /> if there errors and add those errors to the global validation list. |
+| <div class="icon-col m-5"><img src="images/svg-icons/filter-clear.svg"/></div> | Clear Filters | *Clear Filters* will remove any filter context that was previously entered of passed through.  This is handy when you want to manage **Settings** and **Parameters** across multiple **Projects**. |
+| <div class="icon-col m-5"><img src="images/svg-icons/expanded.svg"/></div> | Collapse | *Collapse* will cycle through the the various supported modes the Entity List can have.  Options are Full Panel, Split Panels, and Hidden. |
+| <div class="icon-col m-5"><img src="images/svg-icons/collapsed.svg"/></div> | Expand | *Expand* will cycle through the the various supported modes the Entity List can have.  Options are Hidden, Split Panels, and Full Panel. |
 
 ## Entity List  
 
@@ -74,15 +72,15 @@ The entity list enumerates all of the available entities for the current filter 
 
 |Icon|Action|Description|
 |-|-|-|-|
-|<div class="icon-col m-5"><img src="images/svg-icons/sort-desc.svg"/></div>|<span class="nowrap-col m-5">Sort Descending</span>|When shown the column is currently sorting in descending order.  Click to switch to ascending order.|
-|<div class="icon-col m-5"><img src="images/svg-icons/sort-asc.svg"/></div>|<span class="nowrap-col m-5">Sort Ascending</span>|When shown the column is currently sorting in ascending order.  Click to switch to descending order.|
+| <div class="icon-col m-5"><img src="images/svg-icons/sort-desc.svg"/></div> | Sort Descending | When shown the column is currently sorting in descending order.  Click to switch to ascending order. |
+| <div class="icon-col m-5"><img src="images/svg-icons/sort-asc.svg"/></div> | Sort Ascending | When shown the column is currently sorting in ascending order.  Click to switch to descending order. |
 
 > [!TIP]
 > All of the columns support the ability for filters but the button is hidden by default.  To show the button mouse over the field you would like to filter.  
 
 ## Tab and Form Action Buttons  
 
-The **Tab and From Action Buttons** list the actions available within the currently selected entity.  All action buttons are context specific to the currently selected tab if tab navigation function is provided the the selected editor.  As the list to large to enumerate and goes past the scope of the guide, refer to the document for the appropriate editor to view all availed actions along with their descriptions.  Many buttons feature context sensitivity and only enable/disable when appropriate.
+The **Tab and From Action Buttons** list the actions available within the currently selected entity.  All action buttons are context specific to the currently selected tab if tab navigation function is provided the the selected editor.  As the list to large to enumerate and goes past the scope of the guide, refer to the document for the appropriate editor to view all availed actions along with their descriptions.  Many buttons feature context sensitivity and only enable/disable when appropriate.  
 
 **Tab and Form Action Buttons Example**  
 ![Tab and Form Action Buttons Example](images/bimlflex-app-form-actions.png "Tab and Form Action Buttons Example")  
@@ -90,7 +88,7 @@ The **Tab and From Action Buttons** list the actions available within the curren
 ## Tab List  
 
 If the selected editor supports them, tabs are used to switch between managing of the selected parent entity (Details Tab) and managing of the associated child entities.  
-  
+
 **Tab List Example**  
 ![Tab List Example](images/bimlflex-app-form-tabs.png "Tab List Example")  
 
@@ -98,16 +96,16 @@ If the selected editor supports them, tabs are used to switch between managing o
 
 The Tab and Form Content area is where all the metadata for the associated entity is represented.  Layouts can vary depending on the editor being used but generally falls into one of 3 categories: Field List, Table, or Multiple Views.  
 
-### Field List
+### Field List  
 
-A Field List provides a series of context sensitive fields.  BimlFlex will dynamically hide and expose fields depending on the current properties of the selected entity.  Additionally BimlFlex provides field level validations with the ability to highlight misconfigured metadata.
+A Field List provides a series of context sensitive fields.  BimlFlex will dynamically hide and expose fields depending on the current properties of the selected entity.  Additionally BimlFlex provides field level validations with the ability to highlight misconfigured metadata.  
 
 **Fields Content**  
 ![Fields Content](images/bimlflex-app-form-fields.png "Fields Content")  
 
-#### Long Text String Field
+#### Long Text String Field  
 
-The long text string field can be resized by dragging the adjustment corner in the field. It also include an editor dialog with enhanced features for when a lot of information needs to be entered. The editor dialog is accessed by clicking the <img class="icon-inline" src="images/svg-icons/edit.svg"/> icon when the long text string field is in focus.
+The long text string field can be resized by dragging the adjustment corner in the field. It also include an editor dialog with enhanced features for when a lot of information needs to be entered. The editor dialog is accessed by clicking the <img class="icon-inline" src="images/svg-icons/edit.svg"/> icon when the long text string field is in focus.  
 
 <img
     src="images/dialog-editor-button.64566.png"
@@ -115,7 +113,7 @@ The long text string field can be resized by dragging the adjustment corner in t
     title="Editor Dialog Button"
 />
 
-The editor dialog will open with the text from the long text string field. The editor dialog features include:
+The editor dialog will open with the text from the long text string field. The editor dialog features include:  
 
 - Text suggestions based on entered text
 - Tab auto complete
@@ -128,14 +126,14 @@ The editor dialog will open with the text from the long text string field. The e
     title="Editor Dialog"
 />
 
-When changes are complete, click the **Ok** button to keep the changes that have been made. Click **Cancel** to discard the changes that have been made and close the editor.
+When changes are complete, click the **Ok** button to keep the changes that have been made. Click **Cancel** to discard the changes that have been made and close the editor.  
 
 ### Table  
 
-Table content is provided when an entity features some complex logic and should be edited through a dialog box.  New items can be entered entered via the <img class="icon-inline" src="images/svg-icons/add.svg"/> **Add** button.  Existing items can be edited by selecting a row and then using the <img class="icon-inline" src="images/svg-icons/edit.svg"/> **Edit** button.  The same filter as sort functions that are provided on the **Entity List** are available on these content types.
+Table content is provided when an entity features some complex logic and should be edited through a dialog box.  New items can be entered entered via the <img class="icon-inline" src="images/svg-icons/add.svg"/> **Add** button.  Existing items can be edited by selecting a row and then using the <img class="icon-inline" src="images/svg-icons/edit.svg"/> **Edit** button.  The same filter as sort functions that are provided on the **Entity List** are available on these content types.  
 
 **Table Content**  
-![Table Content](images/bimlflex-app-form-table.png "Table Content")
+![Table Content](images/bimlflex-app-form-table.png "Table Content")  
 
 ### Multiple Views  
 
@@ -144,8 +142,8 @@ When **Multiple Views** are used, an oval selector will appear listing out alter
 **Multiple Views Content**  
 ![Multiple Views Content](images/bimlflex-app-form-views.png "Multiple Views Content")  
 
-## Navigational Transitions
+## Navigational Transitions  
 
-BimlFlex features the ability to jump directly to another entity whenever it is referenced from a calling table or form.  Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor.
+BimlFlex features the ability to jump directly to another entity whenever it is referenced from a calling table or form.  Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor.  
 
 ![Multiple Views](images/bimlflex-app-form-navigational-transitions.png "Multiple Views")  
