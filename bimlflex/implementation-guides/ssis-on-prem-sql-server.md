@@ -527,16 +527,13 @@ For insert-only Data Vault solutions, the PIT constructs provide a convenient wa
 
 As mentioned above, it is often handy to have an immediate `EndDate` to query for ease of use.  Generally insert only architecture requires a nested self join to generate this, though this can also be handled with the use of a PIT table.  Steps below outline an example of applying this pattern HUB with a single SAT to achieve the aforementioned result.
 
-1. Navigate to the target `business concept`.  In this case the Address HUB (**rdv.HUB_Address**)
-![Selecting Address HUB](images/ssis-op-sql-single-sat-1.png "Selecting Address HUB")
-
-1. Ensure you are on the Details tab, if not click the Details tab.
-
-1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top
-![Details Menu Bar](images/ssis-op-sql-single-sat-2.png "Details Menu Bar")
-
-1. In the [Create PIT] dialog, choose [SAT_Address_awlt].
-![Create PIT Dialog Box - Single SAT](images/ssis-op-sql-single-sat-3.png "Create PIT Dialog Box - Single SAT")
+1. Navigate to the target `business concept`.  In this case the Address HUB (**rdv.HUB_Address**)  
+  ![Selecting Address HUB](images/ssis-op-sql-single-sat-1.png "Selecting Address HUB")
+1. Ensure you are on the Details tab, if not click the Details tab.  
+1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top  
+  ![Details Menu Bar](images/ssis-op-sql-single-sat-2.png "Details Menu Bar")
+1. In the [Create PIT] dialog, choose [SAT_Address_awlt].  
+  ![Create PIT Dialog Box - Single SAT](images/ssis-op-sql-single-sat-3.png "Create PIT Dialog Box - Single SAT")
 
 1. Click **Save**
 
@@ -547,38 +544,29 @@ When a HUB has multiple SATs it is often very convenient to have a single table 
 > [!NOTE]
 > This process is virtually identical to a Single SAT process with the only exception being that the target business entity has more SATs available/selected.
 
-1. Navigate to the target business concept.  In this case the Customer HUB (**rdv.HUB_Customer**)
-![Selecting Customer HUB](images/ssis-op-sql-multi-sat-1.png "Selecting Customer HUB")
-
-1. Ensure you are on the Details tab, if not click the Details tab.
-
-1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top
-![Details Menu Bar](images/ssis-op-sql-multi-sat-2.png "Details Menu Bar")
-
-1. In the Create PIT dialog, choose `SAT_Customer_ContactInfo_awlt` and `SAT_Customer_Password_awlt`.
-![Create PIT Dialog Box - Multiple SAT](images/ssis-op-sql-multi-sat-3.png "Create PIT Dialog Box - Multiple SAT")
-
-1. Click **Save**
+1. Navigate to the target business concept.  In this case the Customer HUB (**rdv.HUB_Customer**)  
+  ![Selecting Customer HUB](images/ssis-op-sql-multi-sat-1.png "Selecting Customer HUB")
+1. Ensure you are on the Details tab, if not click the Details tab.  
+1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top  
+  ![Details Menu Bar](images/ssis-op-sql-multi-sat-2.png "Details Menu Bar")
+1. In the Create PIT dialog, choose `SAT_Customer_ContactInfo_awlt` and `SAT_Customer_Password_awlt`.  
+  ![Create PIT Dialog Box - Multiple SAT](images/ssis-op-sql-multi-sat-3.png "Create PIT Dialog Box - Multiple SAT")
+1. Click **Save**  
 
 #### SAT w/ Business Date
 
 A PIT table can also be built to group off of a `business date` verses the standard `load date`.  A scenario may be that sales need records grouped by the
 
-1. Navigate to the target business concept.  In this case the SalesOrder HUB (rdv.HUB_SalesOrder)
-![Selecting SalesOrder HUB](images/ssis-op-sql-bus-sat-1.png "Selecting SalesOrder HUB")
-
-1. Ensure you are on the Details tab, if not click the Details tab.
-
-1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top
-![Details Menu Bar](images/ssis-op-sql-bus-sat-2.png "Details Menu Bar")
-
-1. In the Create PIT dialog, choose `SAT_SAT_SalesOrder_awlt` followed by `ShipDate`.
-![Create PIT Dialog Box - Business Date](images/ssis-op-sql-bus-sat-3.png "Create PIT Dialog Box - Business Date")
-
-1. In the *PIT Name* box put **PIT_SalesOrder_ShipDate**
-![PIT Name Box](images/ssis-op-sql-bus-sat-4.png "PIT Name Box")
-
-1. Click **Save**
+1. Navigate to the target business concept.  In this case the SalesOrder HUB (rdv.HUB_SalesOrder)  
+  ![Selecting SalesOrder HUB](images/ssis-op-sql-bus-sat-1.png "Selecting SalesOrder HUB")
+1. Ensure you are on the Details tab, if not click the Details tab.  
+1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top  
+  ![Details Menu Bar](images/ssis-op-sql-bus-sat-2.png "Details Menu Bar")
+1. In the Create PIT dialog, choose `SAT_SAT_SalesOrder_awlt` followed by `ShipDate`.  
+  ![Create PIT Dialog Box - Business Date](images/ssis-op-sql-bus-sat-3.png "Create PIT Dialog Box - Business Date")
+1. In the *PIT Name* box put **PIT_SalesOrder_ShipDate**  
+  ![PIT Name Box](images/ssis-op-sql-bus-sat-4.png "PIT Name Box")
+1. Click **Save**  
 
 ---
 
@@ -596,57 +584,42 @@ If you are not in a CI/CD environment, or perhaps only testing, it can be quicke
 > [!WARNING]
 > These scripts are `DROP AND CREATE` by default.  This means they are destructive.  If manually deploying tables please ensure you are in a database where it is safe to do so.
 
-1. Open up your BimlFlex BimlStudio Project.
-
-1. Click the BimlFlex tab.
-![BimlFlex Menu Bar](images/ssis-op-sql-deploy-1.png "BimlFlex Menu Bar")
-
+1. Open up your BimlFlex BimlStudio Project.  
+1. Click the BimlFlex tab.  
+  ![BimlFlex Menu Bar](images/ssis-op-sql-deploy-1.png "BimlFlex Menu Bar")
+  
    > [!IMPORTANT]
    > There is currently a bug in BimlFlex.  The intended steps are as follows but the BDV does not output with the below steps.  Until resolved (or if running an older bugged version) one should ignore steps 3 through 7.
-
-1. Click the ![Script Options Button](images/ssis-op-sql-create-script-options-button.png "Script Options Button") button to access the Script Options Dialog.
-![Script Options Dialog](images/ssis-op-sql-deploy-2.png "Script Options Dialog")
-
-1. Under Integration Stages click the dropdown
-![Default Integration Selections](images/ssis-op-sql-deploy-3.png "Default Integration Selections")
-
-1. Click the `None` checkbox to clear selections
-![Select None](images/ssis-op-sql-deploy-4.png "Select None")
-
-1. Click the `Business Data Vault` checkbox.
-![Select BDV](images/ssis-op-sql-deploy-5.png "Select BDV")
-
-1. Click `Commit`
-
-1. Click the *Generate Scripts* button to show the dropdown menu.
-![Generate Scripts Dropdown](images/ssis-op-sql-deploy-6.png "Generate Scripts Dropdown")
-
-1. From the *Generate Scripts* dropdown box choose `Create Table Script`.
-
-1. Copy the outputted script.
-
+1. Click the ![Script Options Button](images/ssis-op-sql-create-script-options-button.png "Script Options Button") button to access the Script Options Dialog.  
+  ![Script Options Dialog](images/ssis-op-sql-deploy-2.png "Script Options Dialog")
+1. Under Integration Stages click the dropdown  
+  ![Default Integration Selections](images/ssis-op-sql-deploy-3.png "Default Integration Selections")
+1. Click the `None` checkbox to clear selections  
+  ![Select None](images/ssis-op-sql-deploy-4.png "Select None")
+1. Click the `Business Data Vault` checkbox.  
+  ![Select BDV](images/ssis-op-sql-deploy-5.png "Select BDV")
+1. Click `Commit`  
+1. Click the *Generate Scripts* button to show the dropdown menu.  
+  ![Generate Scripts Dropdown](images/ssis-op-sql-deploy-6.png "Generate Scripts Dropdown")
+1. From the *Generate Scripts* dropdown box choose `Create Table Script`.  
+1. Copy the outputted script.  
    > [!TIP]
    > [Ctrl] + [A] = Select All
    > [Ctrl] + [C] = Copy to Clipboard
-
-1. Open SQL Server Management Studio (SSMS).
+1. Open SQL Server Management Studio (SSMS).  
    > [!NOTE]
    > Alternatively you could use any other preferred tool to execute DDL SQL statements.
    > Generated scripts are generated in the ANSI standard.
-
-1. Paste the script from Step 9 into a new query window
+1. Paste the script from Step 9 into a new query window  
    > [!TIP]
    > [Ctrl] + [V] = Paste from Clipboard
-
-1. Execute the script.
+1. Execute the script.  
    > [!TIP]
    > If using SSMS you can use the following key.
    > [F5] = Execute Query
-
-1. Back in BimlStudio click the [Build & Deploy] tab.
-![Build & Deploy Menu](images/ssis-op-sql-deploy-7.png "Build & Deploy Menu")
-
-1. Click the **Build** button.
+1. Back in BimlStudio click the [Build & Deploy] tab.  
+  ![Build & Deploy Menu](images/ssis-op-sql-deploy-7.png "Build & Deploy Menu")
+1. Click the **Build** button.  
 
 #### Deploying Artifacts with SSDT
 
@@ -654,17 +627,14 @@ If you are working with a previously populated environment you will often not wa
 
 Publishing projects via SSDT (or the built DACPAC) is the equivalent of running Create Table Scripts, Data Vault Default Insert Script, Data Vault Procedure Script by Source, and the Business Vault Procedure Script from the Generate Scripts utility for the **Data Vault** and **Business Data Vault**.
 
-1. Open Visual Studio 2019 or SQL Server Development Tools (SSDT).
+1. Open Visual Studio 2019 or SQL Server Development Tools (SSDT).  
    > [!TIP]
    > If you are unsure as to what version of SSDT you require, please refer to the link below.
    > [Download SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)
-
-1. Click File -> Open -> Project/Solution...
+1. Click File -> Open -> Project/Solution...  
    > [!TIP]
    > [Ctrl] + [Shift] + [O] = Open Project/Solution
-
-1. Navigate to your root BimlStudio project folder.
-
+1. Navigate to your root BimlStudio project folder.  
    > [!NOTE]
    > If you do not know your root project directory and have the project open do the following:
    > 1. Go to BimlStudio.
@@ -672,62 +642,38 @@ Publishing projects via SSDT (or the built DACPAC) is the equivalent of running 
    > 1. Choose Open in Windows Explorer.
    > 1. You are now in your project root directory.
    > 1. (Optional) Copy the path to the clipboard for quicker navigation in SSDT.
-
-1. Open the `output` folder.
-
-1. Open the `SSDTS` folder.
-
-1. Open the folder with your `Customer GUID`.
-
-1. Open the folder for the `Version` you just built.
-
-1. Open the `BFX_RDV` folder.
-
-1. Select the `BFX_RDV.sqlproj` file and click **Open**.
-
-1. Navigate to the  Solution Explorer on the right.
-![Visual Studio Solution Explorer](images/ssis-op-sql-ssdt-1.png "Visual Studio Solution Explorer")
-
-1. Right-Click the project `BFX_RDV`.
-![Right Click Project](images/ssis-op-sql-ssdt-2.png "Right Click Project")
-
-1. Select *Publish...* to get the Publish Database dialog box.
-![Publish Database Dialog](images/ssis-op-sql-ssdt-3.png "Publish Database Dialog")
-
-1. Configure your *Target database connection* by clicking **Edit** to get the Connect dialog box.
-
-![image.png](images/ssis-op-sql-ssdt-4.png)
-
-1. In the Connect dialog box expand the Connection Properties by clicking *Show Connection Properties*.
-
-![Connection Properties](images/ssis-op-sql-ssdt-5.png)
-
-1. Input the Server Name.
-
-> [!NOTE]
-> If testing on your local machine this can be abbreviated at "."
-
-1. Choose Authentication.
-
-> [!NOTE]
-> The demo lab uses Windows Authentication.
-
-1. Input the Database Name.
-
-> [!NOTE]
-> The demo uses "BFX_RDV".
-
+1. Open the `output` folder.  
+1. Open the `SSDTS` folder.  
+1. Open the folder with your `Customer GUID`.  
+1. Open the folder for the `Version` you just built.  
+1. Open the `BFX_RDV` folder.  
+1. Select the `BFX_RDV.sqlproj` file and click **Open**.  
+1. Navigate to the  Solution Explorer on the right.  
+  ![Visual Studio Solution Explorer](images/ssis-op-sql-ssdt-1.png "Visual Studio Solution Explorer")
+1. Right-Click the project `BFX_RDV`.  
+  ![Right Click Project](images/ssis-op-sql-ssdt-2.png "Right Click Project")
+1. Select *Publish...* to get the Publish Database dialog box.  
+  ![Publish Database Dialog](images/ssis-op-sql-ssdt-3.png "Publish Database Dialog")
+1. Configure your *Target database connection* by clicking **Edit** to get the Connect dialog box.  
+  ![image.png](images/ssis-op-sql-ssdt-4.png)
+1. In the Connect dialog box expand the Connection Properties by clicking *Show Connection Properties*.  
+  ![Connection Properties](images/ssis-op-sql-ssdt-5.png)
+1. Input the Server Name.  
+  > [!NOTE]
+  > If testing on your local machine this can be abbreviated at "."
+1. Choose Authentication.  
+  > [!NOTE]
+  > The demo lab uses Windows Authentication.
+1. Input the Database Name.  
+  > [!NOTE]
+  > The demo uses "BFX_RDV".
 1. Click **OK**.
-
 1. Click **Publish**
 ![Publish](images/ssis-op-sql-ssdt-6.png)
-
 1. The Data Tools Operations window should appear.  
 ![Data Tools](images/ssis-op-sql-ssdt-7.png)
-
 1. Wait for deployment to complete.
 ![Deployment Complete](images/ssis-op-sql-ssdt-8.png)
-
 1. Deployment via SSDT complete.
 
    > [!IMPORTANT]
