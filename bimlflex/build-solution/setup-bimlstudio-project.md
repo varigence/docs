@@ -45,10 +45,10 @@ Use the fields in the form to set up a connection with the BimlFlex database and
 | Field | Description |
 |-|-|
 | Server | The address of the server where the BimlFlex database is hosted. |
-| Authentication | The credientials used to access the server and database. |
+| Authentication | The credentials used to access the server and database. |
 | Database | The name of your BimlFlex Database. This dropdown list is populated with all databases available through the server connection. Clicking **Update** will refresh the list of available databases from the connection defined. |
 | Customer | The BimlFlex Customer used to configure the project metadata. Click **Update** to refresh the dropdown with a list of Customers in the BimlFlex database. A new customer can be created with the **New Customer** button. |
 | Version | The BimlFlex Metadata Version to be built and used for code generation in BimlStudio. Click **Update** to refresh the list of Versions in the BimlFlex database associated with the selected Customer. |
-| Use My ConnectionStrings | Use the ConnectionStrings as defined in the BimlFlex Metadata |
-| Use My Exclusions | Use the Exclusions defined in the BimlFlex Metadata |
+| Use My Connection Strings | Use the Connection Strings for the current user that were set while the `Use My Connection String` option was enabled. |
+| Use My Exclusions | Use the Exclusions defined in the BimlFlex Metadata. |
 | Use Quick Parse |  |
