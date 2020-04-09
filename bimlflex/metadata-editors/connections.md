@@ -36,9 +36,9 @@ The **Details Tab** focuses on general **Connection** information and configurat
 |<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Connection**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Connection Dialog](#archive-connection-dialog-box). |
 | <div class="icon-col m-5"><img src="images/svg-icons/import-metadata.svg"/></div> | Import Metadata | Import Metadata from Source Database - [More info](../concepts/importing-metadata.md). |
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Connection**, clearing all changes. |
-| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div> | Cloud | This is only required if using ADF.  When enabled allows the configuration of Linked Services and shows the Linked Service fields. For information linked service connections see [Configuring a Linked Service Connection](create-linked-service-connection.md). |
-| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div> | Exclude | This will remove the **Connection** and all associated entities from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
-| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div> | Deleted | This will soft delete the currently selected **Connection**.  This will remove the **Connection** and all associated entities from processing and validation. |
+| <img src="images/bimlflex-app-action-switch.png" /> | Cloud | This is only required if using ADF.  When enabled allows the configuration of Linked Services and shows the Linked Service fields. For information linked service connections see [Configuring a Linked Service Connection](create-linked-service-connection.md). |
+| <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Connection** and all associated entities from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
+| <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Connection**.  This will remove the **Connection** and all associated entities from processing and validation. |
 
 [//]: # (TODO: Connection String Editor document an link from Connection String Field)
 
@@ -59,9 +59,9 @@ The **Details Tab** focuses on general **Connection** information and configurat
 | Field | Description |
 |-|-|
 | Connection | The name of the connection. Must be unique. |
-| Integration Stage | Integration Stage may include Source, Staging, Raw Data Vault, Data Mart etc.  Must be a valid [Integration Stage](#Integration-Stages). |
-| Connection Type | Connection type to be used to connect to database.  Must be a valid [Connection Type](#Connection-Types). |
-| System Type | Connection type of the data source.  Must be a valid [System Type](#System-Types). |
+| Integration Stage | Integration Stage may include Source, Staging, Raw Data Vault, Data Mart etc.  Must be a valid [Integration Stage](#integration-stages). |
+| Connection Type | Connection type to be used to connect to database.  If SQL Based ELT is supported for the *Integration Stage*, a `<Connection Type> SQL Based ELT` will show as an alternate option from the standard `<Connection Type>`.  Must be a valid [Connection Type](#connection-types). |
+| System Type | Connection type of the data source.  Must be a valid [System Type](#system-types). |
 | Description | Optional metadata to provide description. |
 | Connection String | Connection String to be used to connect to database. |
 | File Path | Only available for File Connection Types. |
@@ -74,13 +74,22 @@ The **Details Tab** focuses on general **Connection** information and configurat
 | Persist History | Only available for Source Integration Stage. |
 | Threads | The number of threads to use during SSIS package execution.  Zero means no limit. |
 
+> [!NOTE]
+> **SQL Based ELT:**  
+> When enabled the bulk of the transformation logic will be handled via a SQL Stored Procedure.  The selected platform in the *Integration Template* will then be primarily used for orchestration purposes only.
+>  
+> If using SQL Based ELT on **Connection with the *Integration Stage* of `Staging Area`, reloading from the PSA is not supported.
+>  
+> **ADF Project Connections:**  
+> A **Project** with the *Integration Template* of `ADF: Source -> Target` requires the **Connection** to be using SQL Based ELT.
+
 ### Constrained Lists
 
-[!include[Object Type Constrained List](_enum-integration-stage.md)]
+[!include[Integration Stage Constrained List](_enum-integration-stage.md)]
 
-[!include[Object Type Constrained List](_enum-connection-type.md)]
+[!include[Connection Type Constrained List](_enum-connection-type.md)]
 
-[!include[Model Object Type Constrained List](_enum-system-type.md)]
+[!include[System Type Constrained List](_enum-system-type.md)]
 
 ## Tab Details
 
