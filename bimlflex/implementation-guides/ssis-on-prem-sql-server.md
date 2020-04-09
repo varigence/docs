@@ -659,22 +659,22 @@ Publishing projects via SSDT (or the built DACPAC) is the equivalent of running 
 1. In the Connect dialog box expand the Connection Properties by clicking *Show Connection Properties*.  
   ![Connection Properties](images/ssis-op-sql-ssdt-5.png)
 1. Input the Server Name.  
-  > [!NOTE]
-  > If testing on your local machine this can be abbreviated at "."
+   > [!NOTE]
+   > If testing on your local machine this can be abbreviated at "."
 1. Choose Authentication.  
-  > [!NOTE]
-  > The demo lab uses Windows Authentication.
+   > [!NOTE]
+   > The demo lab uses Windows Authentication.
 1. Input the Database Name.  
-  > [!NOTE]
-  > The demo uses "BFX_RDV".
-1. Click **OK**.
-1. Click **Publish**
-![Publish](images/ssis-op-sql-ssdt-6.png)
+   > [!NOTE]
+   > The demo uses "BFX_RDV".
+1. Click **OK**.  
+1. Click **Publish**  
+   ![Publish](images/ssis-op-sql-ssdt-6.png)
 1. The Data Tools Operations window should appear.  
-![Data Tools](images/ssis-op-sql-ssdt-7.png)
-1. Wait for deployment to complete.
-![Deployment Complete](images/ssis-op-sql-ssdt-8.png)
-1. Deployment via SSDT complete.
+   ![Data Tools](images/ssis-op-sql-ssdt-7.png)
+1. Wait for deployment to complete.  
+   ![Deployment Complete](images/ssis-op-sql-ssdt-8.png)
+1. Deployment via SSDT complete.  
 
    > [!IMPORTANT]
    > It should be noted again that this is only for the RDV / BDV layer.  This does not deploy any Staging (STG) or Persistent Staging (PSA) tables or artifacts.  Additionally, this is only for the tables and does not include any SSIS packages that may be required.
