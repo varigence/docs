@@ -359,7 +359,7 @@ You can use this script to identify which **Project** reference the **Connection
 More information:
 
 * [Working with environments and the SSIS catalog](../user-guide/deployment-guide.md)
-* [Working with sensitive settings in the SSIS catalog](../ssis-deployment/sensitive-info-management.md.md)
+* [Working with sensitive settings in the SSIS catalog](../ssis-deployment/sensitive-info-management.md)
 
 ### Video
 
