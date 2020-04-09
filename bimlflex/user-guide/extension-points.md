@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-extension-points
+uid: bimlflex-extension-points-old
 title: BimlFlex Extension Points
 ---
 # Extension Points
@@ -91,7 +91,7 @@ For example:
 
 ## Output Path and Input Path Variables - Optional
 
-Output path variables hold the name of the current task that you are modifying. The input path variable contains the previous task’s name in the control flow or data flow so that the task you are working on can reference the previous item in your Biml code and remain attached.
+Output path variables hold the name of the current task that you are modifying. The input path variable contains the previous task's name in the control flow or data flow so that the task you are working on can reference the previous item in your Biml code and remain attached.
 
 These two path variables are required when using extension points that either completely replaces tasks or when you are inserting a new task into an existing data flow or control flow.
 
