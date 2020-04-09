@@ -2,52 +2,51 @@
 uid: columns
 title: Columns
 ---
-# Columns Editor
+# Columns Editor  
 
-The **Columns** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.
+The **Columns** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.  
 
 <img
-    src="images/columns.64566.png"
+    src="images/bimlflex-app-editor-columns.png"
     class="border-image"
     title="Columns Editor"
 />
 
-## Action Buttons
+## Action Buttons  
 
 <img
-    src="images/columns-action-buttons.64566.png"
+    src="images/bimlflex-app-editor-columns-actions.png"
     class="border-image"
-    title="Columns Action Buttons"
+    title="Columns Editor Actions"
 />
 
 | Icon | Action | Description |
 |-|-|-|
-| <div class="icon-col m-5"><img src="images/svg-icons/validate.svg" /></div> | Validate | This will trigger validation to be run on all **Columns** in the application. It will display <img class="icon-col m-5" src="images/svg-icons/success.svg" /> if all validation passes, or <img class="icon-col m-5" src="images/svg-icons/error.svg" /> if there errors and add those errors to the global validation list. |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button is will only enabled if there are unsaved changes in the form and no major validation errors. |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Column**.  Clicking the **Duplicate** button will cause a [Duplicate Column Dialog](#duplicate-column-dialog) to appear. The new **Column** will be created using all of the selected **Column**'s current properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Column**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** generates an [Archive Column Dialog](#archive-column-dialog).|
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Column**. All unsaved changes will be lost. |
-| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div>| Exclude | This will remove the **Column** from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
-| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div> | Deleted | This will soft delete the currently selected **Column**.  This will remove the **Column** from processing and validation. |
+| <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Column** from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
+| <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Column**.  This will remove the **Column** from processing and validation. |
 
 [!include[Restore Entities Tip](_tip-restore-entities.md)]
 
-## Columns Editor Fields
+## Columns Editor Fields  
 
 <img
-    src="images/columns-fields.64566.png"
+    src="images/bimlflex-app-editor-columns-fields.png"
     class="border-image"
     title="Columns Editor Fields"
 />
 
-|Field|Description|
+| Field | Description |
 |-|-|
 | Connection | The **Connection** the the **Column** is associated with. Connection is Required. Connection is Required. |
 | Object | The **Object** or table that the **Column** is associated with. Object is Required. |
 | Column | The name of the Column. Column Name is Required. Column Name must be unique for the **Object**. |
 | Data Type | The type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like hierarchyid. Data Type is required. Must be a valid [Data Type](#data-types). |
-| Length | The length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types. Set to -1 to indicate MAX length. Length is required. Length cannot be less than -1. |
-| Short Name | Business friendly name for the column. ||
+| Length | The length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types. Set to `-1` to indicate MAX length. Length is required. Length cannot be less than -1. |
+| Short Name | Business friendly name for the column. |
 | Column Alias | Alias for the column. Generally used in conjunction with SqlSourceExpression. |
 | Change Type | This value specifies the slowly changing dimension type for the column. Change Type is Required. Must be a valid [Change Type](#change-types). |
 | Ordinal | Defines the order of the **Columns** in the target **Object**. It is recommended that the Business and Primary Keys is defined as the top ordinals. Ordinal is used in ascending order. Ordinal is Required. Ordinal cannot be less than zero. |
@@ -76,13 +75,13 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 | Description | The **Column** described in business context. Often referred to as business metadata. |
 | Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the **Column**. |
 
-### Additional Dialogs
+### Additional Dialogs  
 
 [!include[Archive Column Dialog](_dialog-archive-column-single.md)]
 
 [!include[Duplicate Column Dialog](_dialog-duplicate-column.md)]
 
-### Constrained Lists
+### Constrained Lists  
 
 [!include[Change Types](_enum-change-type.md)]
 
