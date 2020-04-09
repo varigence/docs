@@ -1,5 +1,6 @@
 // Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See LICENSE file in the project root for full license information.
 $(function () {
+  $(window).on('resize', adjustFooterForTocHeight);
 
   var active = 'active';
   var expanded = 'in';
@@ -26,6 +27,8 @@ $(function () {
   renderTabs();
   $('#search').hide();
 
+  adjustFooterForTocHeight();
+
   window.refresh = function (article) {
     // Update markup result
     if (typeof article == 'undefined' || typeof article.content == 'undefined')
@@ -37,6 +40,7 @@ $(function () {
     renderAlerts();
     renderAffix();
     renderTabs();
+    adjustFooterForTocHeight();
   }
 
   // Add this event listener when needed
@@ -474,13 +478,25 @@ $('.header-search-icon').click(function () {
   function adjustFooterForTocHeight() {
     let container = $('.container.body-content');
     if (container) {
-      let tocHeight = $('#sidetoc').height();
-      let articleHeight = $('.article.row').height();
-      let newHeight = tocHeight + 200;
-      if (articleHeight > tocHeight) {
-        newHeight = articleHeight + 320;
+      let tocHeight = 0;
+      let sidetoc = $('#sidetoc');
+      if (sidetoc) {
+        tocHeight = sidetoc.height();
       }
-      container.css('min-height', newHeight);
+      
+      let articleHeight = 0;
+      let article = $('.article.row');
+      if (article) {
+        articleHeight = article.height();
+      }
+
+      if (tocHeight > 0 || articleHeight > 0) {
+        let newHeight = tocHeight + 200;
+        if (articleHeight > tocHeight) {
+          newHeight = articleHeight + 320;
+        }
+        container.css('min-height', newHeight);
+      }
     }
   }
 
@@ -516,7 +532,6 @@ $('.header-search-icon').click(function () {
     }
 
     function registerTocEvents() {
-      $(window).on('resize', adjustFooterForTocHeight);
       $('.toc .nav > li > .expand-stub').click(function (e) {
         var clickedItem = $(e.target).parent();
         clickedItem.siblings().removeClass(expanded);
