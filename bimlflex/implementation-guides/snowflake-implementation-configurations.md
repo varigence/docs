@@ -4,7 +4,9 @@ title: Snowflake Implementation
 ---
 # Snowflake Implementation
 
-Placeholder for details on using Snowflake as destination data warehouse
+<!-- TODO: Review -->
+
+Implementation details on using Snowflake as destination data warehouse
 
 ## Snowflake-specific settings
 
@@ -35,18 +37,7 @@ The other configurations and settings are still relevant for the architecture an
 
 The Snowflake load process uses a custom SSIS component to provide a solid query experience in SSIS.
 
-Download and install the version matching the SQL Server SSIS version used:
-
-* SQL Server 2016 SSIS: [https://varigence.com/downloads/varigence.ssis.snowflake.2016.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2016.xcopyinstall.zip)
-* SQL Server 2017 SSIS: [https://varigence.com/downloads/varigence.ssis.snowflake.2017.xcopyinstall.zip](https://varigence.com/downloads/varigence.ssis.snowflake.2017.xcopyinstall.zip)
-
-## Installation
-
-Installation of the custom components are provided through a script file that copies the custom components SSIS `.dll` file into the required SQL Server folders as well as to the Windows Global Assembly Cache (GAC).
-
-This script approach allows the custom components to be installed on an Azure Integration Runtime.
-
-Information on using custom components in Azure Integration Runtime can be found here: @bimlflex-adding-ssis-custom-components-to-azure-integration-runtime
+Use the BimlFlex installer to install the required Custom components. The latest version is available to download here: [](xref:bimlflex-release-notes)
 
 ## Sample project metadata
 

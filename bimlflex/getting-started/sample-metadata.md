@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-getting-started-load-sample-metadata
+uid: bimlflex-getting-started-sample-metadata
 title: Load Sample Metadata
 ---
 # Load Sample Metadata and Default Configurations

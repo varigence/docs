@@ -10,6 +10,12 @@ The Getting Started with BimlFlex is an end to end, step by step guide to buildi
 
 ![BimlFlex End to End Walkthrough -center](https://www.youtube.com/watch?v=6BgkXqjDtvY?rel=0&autoplay=0 "BimlFlex End to End Walkthrough")
 
+> [!NOTE]
+> Start with the following steps
+>
+> * [](xref:bimlflex-installing-bimlflex)
+> * [](xref:bimlflex-getting-started-initial-configuration)
+
 The getting started documentation implements an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development.
 
 BimlFlex supports SQL Server 2008-2019 as well as Azure Synapse and Snowflake and both SQL Server Integration Services and Azure Data Factory. The examples here use SQL Server 2017 for hosting databases, uses SSIS for the load process and uses the Microsoft AdventureWorksLT sample database as a source.
@@ -25,42 +31,6 @@ The following is needed:
 * Visual Studio 2017 with SSDT and SSIS components
 * SQL Server Management Studio or similar for managing databases and running SQL Scripts
 * Excel 2013 or later, if the Excel Metadata management add-in is used
-
-## Installation of BimlFlex
-
-![Installing BimlFlex -center](https://www.youtube.com/watch?v=nnv5XnqbhvI?rel=0&autoplay=0 "Installing BimlFlex")
-
-More information: @bimlflex-getting-started-installing-bimlflex
-
-Download the latest installer from here: @bimlflex-release-notes
-
-## BimlFlex and BimlStudio Applications
-
-The installer includes the BimlFlex App and BimlStudio as well as SSIS Custom components and database definitions.
-
-* Install BimlStudio, both 32-bit and 64-bit versions
-* Install the BimlFlex App, both 32-bit and 64-bit versions
-* Install the BimlFlex Excel add-in with a bitness matching the installed Excel version
-* Install all custom components
-
-## BimlFlex databases
-
-The installer allows the creation of the required databases.
-
-During installation, create the BimlFlex and BimlCatalog databases on the data warehouse SQL Server.
-
-* BimlFlex - metadata repository database.  
-    More information: @bimlflex-database
-* BimlCatalog - orchestration and audit/logging repository database.  
-    More information: @bimlcatalog-database
-
-## Creating the BimlFlex and BimlStudio project
-
-![Create and configure the BimlFlex project -center](https://www.youtube.com/watch?v=7zt7CmFjDZk?rel=0&autoplay=0 "Create and configure the BimlFlex project")
-
-Once the installation is completed and the databases are available, it is time to create the metadata customer/project that will be used in the getting started process. Once the project is available it is time to load some sample metadata to get started.
-
-More information: @bimlflex-getting-started-creating-and-configuring-a-bimlflex-project
 
 ## Setting up the AdventureWorksLT source database
 

@@ -4,7 +4,7 @@ title: Accelerating the Data Vault
 ---
 # Accelerating the Data Vault
 
-![Data Vault Acceleration -center](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0 "Data Vault Acceleration")
+![Data Vault Acceleration](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0 "Data Vault Acceleration")
 
 BimlFlex provides a Graphical Data Vault Accelerator that creates Data Vault objects from the defined source metadata.
 

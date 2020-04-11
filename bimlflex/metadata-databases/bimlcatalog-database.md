@@ -11,11 +11,14 @@ The BimlCatalog database contains the orchestration and run time information nee
 
 ## Deploying the BimlCatalog Database
 
-The database is created through the `Setup BimlFlex` menu option in the BimlFlex Ribbon UI in BimlStudio. See this guide for information regarding how to [setup the BimlFlex metadata database](../setup/metadata-database-install.md).
+The database is created through the BimlFlex installer or through the `Setup BimlFlex` menu option in the BimlFlex Ribbon UI in BimlStudio.
+
+* See the Installation Guide: [](xref:bimlflex-installing-bimlflex) for deploying the database
+* See this guide for information regarding how to deploy after installation: [](xref:bimlflex-metadata-database-installation)
 
 ## Parameter values
 
-BimlCatalog allows for tracking of a variety of parameter values. These can be paramaters that are used in packages, pipelines, SSIS projects, and more. This provides the user with a central location to handle paramater values. 
+BimlCatalog allows for tracking of a variety of parameter values. These can be parameters that are used in packages, pipelines, SSIS projects, and more. This provides the user with a central location to handle parameter values.
 
 ## Orchestration
 

@@ -438,7 +438,7 @@ The above samples use msbuild only and has a dynamic reference to all Extension 
 
 For build servers where the BimlStudio application should be installed by a process, use the silent feature installation option with all relevant features added to the `-InstallFeature` parameter.
 
-The following example will install both the 64 and 32 bit versions of the BimlStudio Application and the BimlFlex custom components for SQL Server 2016. If you do not include the 'start /wait' prefix, the installer will appear to complete instantly while the installation runs in the background.
+The following example will install both the 64 and 32 bit versions of the BimlStudio Application and the BimlFlex custom components for SQL Server 2016. If you do not include the `start /wait` prefix, the installer will appear to complete instantly while the installation runs in the background.
 
 `start /wait BimlFlexDevSetup.exe -s -InstallFeature:BimlStudio_X64,BimlStudio_X86`
 

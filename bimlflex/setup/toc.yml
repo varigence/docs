@@ -3,7 +3,7 @@
 - name: System Requirements
   href: system-requirements.md
 - name: Installing BimlFlex
-  href: installing-upgrading-bimlflex.md
+  href: installing-bimlflex.md
 - name: Metadata Database Install
   href: metadata-database-install.md
 

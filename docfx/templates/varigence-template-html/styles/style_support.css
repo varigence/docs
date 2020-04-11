@@ -5877,10 +5877,10 @@ input[type="radio"]
     padding: 30px;
  }
 
- .bordered-image, .border-image {
+ .bordered-image, .border-image, img[alt~="-border-image"] {
   border: 1px solid #CCC;
 }
- 
+
 .image-width-10 {
  width:10%
 }

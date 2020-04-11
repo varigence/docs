@@ -34,7 +34,7 @@ More about [Import Metadata](../concepts/importing-metadata.md).
 
 Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modeling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
-![Whiteboard Model -50% -center](../metadata-editors/images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
+![Whiteboard Model](../metadata-editors/images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
 Once the target model is drafted, compare the accelerated metadata with the expected outcome and tweak accordingly.
 
@@ -50,7 +50,7 @@ The Accelerator integrates into and is part of the normal BimlFlex workflow.
 
 The workflow uses the BimlFlex App to model and manage all metadata. The data can be pushed and updated from both Excel and the BimlFlex App. BimlFlex Excel is useful for bulk changes on multiple columns.
 
-See more info about the [BimlFlex Excel Add-In](../bulk-edit-metadata/excel-add-in.md)
+See more info about the [BimlFlex Excel Add-In](xref:bimlflex-excel-add-in)
 
 ## Accelerate the Model
 

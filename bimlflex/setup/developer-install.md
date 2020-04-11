@@ -4,6 +4,8 @@ title: BimlFlex Developer Installation
 ---
 # Developer Installation
 
+<!-- TODO Legacy, to be deleted -->
+
 Developer installations provide the complete modeling, developer, and artifact generation environment for building BimlFlex solutions.
 
 ## Installation Media
