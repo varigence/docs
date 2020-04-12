@@ -4,6 +4,8 @@ title: Upgrading BimlFlex
 ---
 # Upgrading BimlFlex
 
+<!-- TODO: Delete as covered in setup documentation -->
+
 All upgrades are deployed through the installer. Download the new version and run the installer to upgrade all parts of BimlFlex.
 
 The BimlFlex project uses a Bundle file and two databases. These Bundle files and databases are updated as part of the BimlFlex product lifecycle.

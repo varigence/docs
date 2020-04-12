@@ -28,7 +28,7 @@ Considering the risk for naming confusion as data is loaded from staging to stag
 
 ## Sample Model
 
-This document uses the Model and Model Category part of the AdventureWorks LT 2012 database as the source of the MDS model data. A reporting workflow requires the data and relationship to be loaded in to MDS. Data Stewards manually manipulate attributes and relationships in MDS for further use in the organization, including in the EDW.
+This document uses the Model and Model Category part of the AdventureWorksLT 2012 database as the source of the MDS model data. A reporting workflow requires the data and relationship to be loaded in to MDS. Data Stewards manually manipulate attributes and relationships in MDS for further use in the organization, including in the EDW.
 MDS for SQL Server includes its own sample models, including a model for AdventureWorks Products. It is possible to ruse the approach from this document to integrate into the sample models. This document uses a separate model with 2 separate entities
 
 Log in through the web interface as an MDS administrator to create a model called ProductDemo
@@ -65,9 +65,9 @@ The default naming convention for the puts the model entity staging tables in th
 
 The sourcing from somewhere into the MDS staging tables require metadata for both the source and the destination. The BimlFlex metadata import function can import the table and column definitions so that the process can be mapped.
 
-This document uses separate views for the staging tables for the product and category tables as the source. The loading of source data from the AdventureWorks LT source into Staging and Persistent Staging is considered a separate process. For a Business Data Vault implementation, the source could be a view created from the existing Raw Data Vault that exposes the required information needed in MDS. To make the source to staging and MDS processes separate and independent the MDS source views can read from staging or persistent staging. This will allow the sourcing process to be run independently and the MDS import to be complete without taking any delta loads from source into account.
+This document uses separate views for the staging tables for the product and category tables as the source. The loading of source data from the AdventureWorksLT source into Staging and Persistent Staging is considered a separate process. For a Business Data Vault implementation, the source could be a view created from the existing Raw Data Vault that exposes the required information needed in MDS. To make the source to staging and MDS processes separate and independent the MDS source views can read from staging or persistent staging. This will allow the sourcing process to be run independently and the MDS import to be complete without taking any delta loads from source into account.
 
-The metadata setup assumes the source to staging load of the AdventureWorks is completed and maintained in a separate project.
+The metadata setup assumes the source to staging load of the AdventureWorksLT Source is completed and maintained in a separate project.
 
 The source of Product and Category data will be custom views created in the staging database. These views can rename, align data types and provide the right granularity for the MDS load.
 
@@ -130,7 +130,7 @@ The entity load from source to MDS can also use different approaches to updates/
 
 The source to target mappings of attributes from the source table to the destination MDS staging table is done in the columns tab in the Excel metadata editor. For the product entity, the name column is mapped to the name MDS standard column, the product number is mapped to the code (in this case the product number has been identified as the Integration Key to be used for managing the products in MDS). The color column is mapped to the color destination staging column. The Category reference is to the code value from the Category entity. As the Code will be the name the source needs a join from the Product to the ProductCategory table to include the category name instead of the id number that is the technical key form the source.
 
-For the Product Category, the name is mapped to the code column and name column. The Parent Category will reference the Code column (the name, as that has been identified as the Integration Key for the Category). Since the source only has the technical key here it is also required to join the Category source with itself to get the parent category name. The AdventureWorks source enforces a unique category name meaning it is possible to use it for the code column. For sources where names can be repeated in the hierarchy another approach would be necessary.
+For the Product Category, the name is mapped to the code column and name column. The Parent Category will reference the Code column (the name, as that has been identified as the Integration Key for the Category). Since the source only has the technical key here it is also required to join the Category source with itself to get the parent category name. The AdventureWorksLT source enforces a unique category name meaning it is possible to use it for the code column. For sources where names can be repeated in the hierarchy another approach would be necessary.
 
 The joins to derive this extra data are added either to the Objects tab for the 2 source to staging tables in the sourcing project. This would enforce the joins in the source query and add the expanded data in the staging and persisted staging tables. That builds a dependency between the projects where a clean separation of concern might be better. The example views will join the data in persistent staging instead. Another option is to enforce the joins in the source by exposing data through prepared views. This moves the dependency on proper modeling all the way to the source and would require additional considerations.
 

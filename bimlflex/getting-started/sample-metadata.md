@@ -4,6 +4,8 @@ title: Load Sample Metadata
 ---
 # Load Sample Metadata and Default Configurations
 
+<!-- TODO: update with explanations for each sample -->
+
 ![Load Sample Metadata -center](https://www.youtube.com/watch?v=2rL853XpST4?rel=0&autoplay=0 "Load Sample Metadata")
 
 There are several sets of sample metadata and configurations provided through the BimlFlex App.

@@ -24,7 +24,7 @@ It is important to remember that the Data Vault modeling approach is based aroun
 
 ### Starting Point
 
-The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorks LT database, the Source to Staging and Persistent Staging has been completed and it is time to start integrating the staged data into the Raw Data Vault.
+The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorksLT database, the Source to Staging and Persistent Staging has been completed and it is time to start integrating the staged data into the Raw Data Vault.
 
 Follow the guide for [Source To Staging](../concepts/source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
 
@@ -150,7 +150,7 @@ If the source doesn't have relationships defined, such as flat files, these need
 
 ## Acceleration
 
-All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the @bimlflex-metadata-configurations
+All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the [](xref:bimlflex-metadata-configurations)
 
 ### Accelerate Satellites
 

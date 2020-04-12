@@ -28,7 +28,7 @@ More information: [](xref:bimlflex-getting-started-accelerating-the-raw-data-vau
 
 ![Build the Data Vault Project](https://www.youtube.com/watch?v=qYu8pwqgAm0?rel=0&autoplay=0 "Build the Data Vault Project")
 
-More information: [](xref:bimlflex-getting-started-building-databases-tables-and-ssis-packages-for-source-to-staging)
+More information: [](xref:bimlflex-getting-started-building-the-data-vault-project)
 
 ## Dimensional Model
 

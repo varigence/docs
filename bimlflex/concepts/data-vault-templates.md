@@ -6,13 +6,17 @@ title: BimlFlex Data Vault Templates
 
 This document outlines the Data Vault templates in BimlFlex.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator: @data-vault-accelerator
+The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator: [](xref:data-vault-accelerator)
 
 ## Setup
 
 This document assumes the BimlFlex product has been installed, configured and that the sample source metadata is ready to be modeled.
 
-This is covered here: @bimlflex-getting-started-intro-videos and here: @bimlflex-setup-overview
+> [!NOTE]
+> More Information:
+>
+> * [](xref:bimlflex-getting-started-intro-videos)
+> * [](xref:bimlflex-setup-overview)
 
 The walkthrough uses the Product and Product Category entities from the AdventureWorksLT sample source to demonstrate Data Vault concepts.
 

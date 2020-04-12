@@ -1,5 +1,7 @@
 # Date Dimension
 
+<!-- TODO: Add to sample metadata and Delete -->
+
 Sample View Creation Script for a Date Dimension.
 
 This is created in the Data Mart and is not part of a source to target mapping or load process. This illustrates how existing and external Dimensions can be used in BimlFlex. The data in the dimension can be updated in a post processing Extension Point or script for scenarios with more complex calendars.

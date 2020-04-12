@@ -4,6 +4,8 @@ title: Modeling of Source Metadata
 ---
 # Modeling of Source Metadata
 
+<!-- TODO: update with new metadata approach and new app ui -->
+
 Once the source system metadata has been imported into BimlFlex it is possible to model it to suit the data warehouse requirements.
 
 Modeling through metadata management is the way to tweak the process to match ingestion and business requirements and allows BimlFlex to automatically generate the required SQL structures and SSIS packages for the load process.
@@ -14,9 +16,9 @@ For a Data Vault based project, modeling the source metadata also affect the Acc
 
 The following detailed steps walks through the options for modeling of source Metadata as recommended for the getting started process.
 
-The end result of this modeling is available to be loaded from the sample metadata set `02 - After Import before Data Vault Modeling for MSSQL`. 
+The end result of this modeling is available to be loaded from the sample metadata set `02 - MSSQL After Import`.
 
-More information on the sample metadata is available here: @bimlflex-load-sample-metadata
+More information on the sample metadata is available here: [](xref:bimlflex-getting-started-sample-metadata)
 
 ### Reviewing keys
 
@@ -50,7 +52,7 @@ BimlFlex also provides a shortcut code for accessing the current connections Rec
 
 For the trial process, verify that the `@@rs` shortcut was added to all Integration Keys by the import metadata process. For the Address table that would be `FlexToBk(@@rs, AddressID)`.
 
-More information and considerations for Integration Keys are available in the [Building Integration Keys for Data Vault](building-integration-keys-for-data-vault.md) section.
+More information and considerations for Integration Keys are available in the [](xref:bimlflex-getting-started-building-integration-keys-for-data-vault) section.
 
 ### Defining Relationships
 
@@ -416,9 +418,7 @@ As an example, the source column `ProductCategoryId` becomes `ProductCategory_BK
 
 The Data Type Mapping template that should be applied to this column. Used for data type expansion through the Data Type Mappings feature.
 
-More information: @bimlflex-data-type-mappings
-
-This is applied in the next step of the trial process, [Applying Data Type Mappings](applying-data-type-mappings.md).
+More information: [](xref:bimlflex-getting-started-applying-data-type-mappings).
 
 #### Default Value
 

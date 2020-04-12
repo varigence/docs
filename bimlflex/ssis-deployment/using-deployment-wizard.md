@@ -25,33 +25,34 @@ After launching the wizard, follow these steps.
     `../output/[ProjectName]/bin/[ProjectName]_project.ispac`
 
     <img 
-    src="images/locateprojectinwizard.png" 
-    class="border-image" 
-    style="border: 1px solid #CCC;" 
+    src="images/locateprojectinwizard.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box" />
 
-1. Enter the destination server name and the folder that will house hte project in the Integration Services catalog. Simply browse and select your desired server and then **Browse** and select your desired SSIS Folder. This value should typically be the same as your SSIS Folder value in your BimlFlex settings.
- 
-    <img 
-    src="images/wizarddestination.png" 
-    class="border-image" 
-    style="border: 1px solid #CCC;" 
+1. Enter the destination server name and the folder that will house the project in the Integration Services catalog. Simply browse and select your desired server and then **Browse** and select your desired SSIS Folder. This value should typically be the same as your SSIS Folder value in your BimlFlex settings.
+
+    <img
+    src="images/wizarddestination.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box" />
-    
+
     >[!IMPORTANT]
     > The user must ensure that the SSIS catalog exists on the destination server.
-    
-    <img 
-    src="images/folderbrowse.png" 
-    class="border-image" 
-    style="border: 1px solid #CCC;" 
+
+    <img
+    src="images/folderbrowse.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box" />
 
 1. Review and Deploy. Ensure that everything has been set up correctly and then click Deploy.
-<img 
-    src="images/reviewanddeploy.png" 
-    class="border-image" 
-    style="border: 1px solid #CCC;" 
+
+    <img
+    src="images/reviewanddeploy.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box" />
 
-    Observe that the project has successfully deployed. Once the project has been deployed, the user should deploy the next project in solution. 
+    Observe that the project has successfully deployed. Once the project has been deployed, the user should deploy the next project in solution.

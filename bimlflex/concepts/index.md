@@ -8,22 +8,23 @@ This section covers various BimlFlex Concepts that are important to understand w
 
 ## Importing Metadata
 
-* @bimlflex-importing-metadata
+* [](xref:bimlflex-importing-metadata)
 
 ## Templates
 
-* @bimlflex-source-to-staging-templates
-* @bimlflex-data-vault-standards
-* @bimlflex-data-vault-templates
-* @bimlflex-data-mart-templates
+* [](xref:bimlflex-source-to-staging-templates)
+* [](xref:bimlflex-data-vault-standards)
+* [](xref:bimlflex-data-vault-templates)
+* [](xref:bimlflex-data-mart-templates)
 
 ## Integration Keys
 
-* @bimlflex-integration-keys-and-relationships
+* [](xref:bimlflex-integration-keys-and-relationships)
 
 ## Load Parameters
 
-* @bimlflex-metadata-parameters
+* [](xref:bimlflex-metadata-parameters)
 
 ## Delete Detection
-* @bimlflex-delete-detection
+
+* [](xref:bimlflex-delete-detection)

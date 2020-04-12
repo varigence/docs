@@ -1,5 +1,7 @@
 # Fact SalesOrder source view
 
+<!-- TODO: Delete as covered in sample metadata now -->
+
 Sample View Creation Script for a Fact table load.
 
 This is created in the Data Vault layer and is part of a source to target mapping or load process for Fact table loads.

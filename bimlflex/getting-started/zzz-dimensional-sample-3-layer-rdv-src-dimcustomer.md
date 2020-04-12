@@ -1,4 +1,6 @@
-# Dim SalesOrder source view
+# Dim Customer source view
+
+<!-- TODO: Delete as covered in sample metadata now -->
 
 Sample View Creation Script for a Dimension table load.
 
@@ -17,28 +19,29 @@ GO
 IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = N'src') EXEC ('CREATE SCHEMA [src] AUTHORIZATION [dbo]')
 GO
 
-CREATE OR ALTER VIEW src.DimSalesOrder
+CREATE OR ALTER VIEW src.DimCustomer
 AS
 SELECT
-    SalesOrderHeader_BK
-  , SalesOrderID
-  , SalesOrderNumber
-  , PurchaseOrderNumber
-  , AccountNumber
+    Customer_BK
+  , CustomerID
+  , FirstName
+  , LastName
+  , EmailAddress
+  , CompanyName
 FROM (
-SELECT
-  -- Dimension integration key, this is used for fact to dimension lookups later
-  h.SalesOrderHeader_BK
-  -- dimension attributes, defined as type 1 or type 2 in the destination table
-  , s.SalesOrderID
-  , s.SalesOrderNumber
-  , s.PurchaseOrderNumber
-  , s.AccountNumber
--- Derive IsCurrent Flag for implementations without RowEffectiveToDate/Enddating
-, ROW_NUMBER() OVER(PARTITION BY h.SalesOrderHeader_BK ORDER BY s.FlexRowEffectiveFromDate DESC) AS IsCurrent
-FROM rdv.HUB_SalesOrderHeader h
-INNER JOIN rdv.SAT_SalesOrderHeader_AWLT s ON s.SalesOrderHeader_SK = h.SalesOrderHeader_SK
-) AWLT_SalesOrderHeader
+  SELECT
+      -- Dimension integration key, this is used for fact to dimension lookups later
+      h.Customer_BK
+      -- Dimension attributes, defined as type 1 or type 2 in the destination table
+    , s.CustomerID
+    , s.FirstName
+    , s.LastName
+    , s.EmailAddress
+    , s.CompanyName
+    -- Derive IsCurrent Flag for implementations without RowEffectiveToDate/Enddating
+    , ROW_NUMBER() OVER(PARTITION BY h.Customer_BK ORDER BY s.FlexRowEffectiveFromDate DESC) AS IsCurrent
+  FROM rdv.HUB_Customer h
+  INNER JOIN rdv.SAT_Customer_AWLT s ON s.Customer_SK = h.Customer_SK
+) Customer
 WHERE IsCurrent = 1
-
 ```

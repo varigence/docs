@@ -4,11 +4,13 @@ title: The BimlFlex Trial Process
 ---
 # The BimlFlex Trial Process
 
+<!-- TODO: Delete as not constructive? -->
+
 ## Supporting BimlFlex Trial Documentation
 
-* @bimlflex-trial-process
+* [](xref:bimlflex-trial-process)
 * [BimlFlex Product Information](https://varigence.com/BimlFlex)
-* @bimlflex-user-guide
+* [](xref:bimlflex-user-guide)
 
 ## What is BimlFlex
 

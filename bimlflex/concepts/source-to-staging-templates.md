@@ -251,7 +251,7 @@ SELECT
      -- several excluded columns
      ,soh.[ModifiedDate]
      ,cust.LastName AS [CustomerLastName]
-FROM [SalesLT].[SalesOrderHeader] soh 
+FROM [SalesLT].[SalesOrderHeader] soh
      INNER JOIN [SalesLT].[Customer] cust on soh.[CustomerId] = cust.[CustomerId]
 ```
 
@@ -269,7 +269,7 @@ Steps to create a source query join using two tables that are included in metada
 
 Another option for customizing source queries is by adding an Extension Point.
 
-Extension Points are a comprehensive feature of BimlFlex and has its own documentation here: @bimlflex-extension-points. A subset focused on Source to Staging is included here.
+Extension Points are a comprehensive feature of BimlFlex and has its own documentation here: [](xref:bimlflex-extension-points). A subset focused on Source to Staging is included here.
 
 Extension Points are custom logic and tasks that can be injected directly into the BimlFlex framework in order to extend and replace standard BimlFlex functionality.
 

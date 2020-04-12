@@ -14,7 +14,9 @@ Open the BimlFlex App.
 
 ### Review Architecture
 
-The dashboard Actions pane has an option for loading defaults as well as sample metadata. If the Sample metadata has not been applied, choose to apply either a sample metadata set or a default configuration for the choosen architecture.
+The dashboard Actions pane has an option for loading defaults as well as sample metadata.
+
+If the Sample metadata has not been applied, choose to apply either a sample metadata set or a default configuration for the chosen architecture.
 
 ### Review Configurations
 
@@ -30,4 +32,4 @@ Navigate to the Settings page.
 
 The Settings page contains configurable settings such as naming conventions used.
 
-Settings can be overridden when needed. If a setting is not used, it can be switched on for a specific source object through the settings overrides
+Settings can be overridden when needed. If a setting is not set to enabled, it can be switched on for a specific source object through the settings overrides

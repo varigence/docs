@@ -15,9 +15,11 @@ First, in order to proceed with PowerShell deployment, [install PowerShell](http
 Ensure that the project's output folder has generated the deployment scripts. These will be located at `...\output\Deploy\` within your project file structure.
 
 ## Generated SSDT Deployment Files
-Each time you build your solution, BimlFlex will also create a deployment file(s) titled `ssdt-deploy.[ASSET_NAME].ps1`, where `ASSET_NAME` corresponds to a data store. This is the case whether it is for persistant staging, data vault, or data mart. Any time that you make changes to the schema of these assets, these deployment files need to be run, otherwise your project may fail to build. These scripts are located at `...\output\Deploy\` in the solution file structure.  
+
+Each time you build your solution, BimlFlex will also create a deployment file(s) titled `ssdt-deploy.[ASSET_NAME].ps1`, where `ASSET_NAME` corresponds to a data store. This is the case whether it is for persistent staging, data vault, or data mart. Any time that you make changes to the schema of these assets, these deployment files need to be run, otherwise your project may fail to build. These scripts are located at `...\output\Deploy\` in the solution file structure.  
 
 ## Generated SSIS Project Deployment Files
+
 Once the user has deployed the `ssdt-deploy.ps1` file for each asset who's schema has changed, the user is ready to deploy their SSIS projects. Consider the following ELT solution, containing projects for a source system extract, named *EXT_AWLT_SRC*, a raw data vault load, named *LOAD_BF_RDV*, and a data mart load, named *LOAD_BFX_DM*.
 
 <img 
@@ -34,7 +36,7 @@ Once you build your BimlFlex solution, you will now have deployment files for ea
 * `ssis-deploy.LOAD_BFX_DM_Project.ps1`
 
 >[!IMPORTANT]
-> If the PSA setting is turned on, then an additional ssis-deploy.RELOAD_EXT_AWLT_SRC_Project.ps1 file will be generated.
+> If the PSA setting is enabled, then an additional ssis-deploy.RELOAD_EXT_AWLT_SRC_Project.ps1 file will be generated.
 
 Simply run these files in the desired order, one at a time, and you will have successfully deployed your SSIS assets.
 
@@ -48,10 +50,9 @@ This is the content of an example source extract with the property values stripp
 & "${env:ProgramFiles(x86)}\Microsoft SQL Server\{TargetVersion}\DTS\Binn\isdeploymentwizard.exe" /S /SP:"{ProjectOutputPath}\{ProjectName}\bin\{ProjectName}_Project.ispac" /DS:localhost /DP:"/{SSISFolder}/{ProjectName}/{ProjectName}_Project/"
 ```
 
-|Property Name|Project Setting|Description|
-|-|-|-|
-|{TargetVersion}|Sql Server| This is in BimlStudio project settings and specifies the target version of SQL Server to use. 
-|{ProjectOutputPath}| Output Path| This is the BimlStudio project setting for output path.|
-|{ProjectName}| Project Name| This is the name of the project the user wishes to deploy. |
-|{SSISFolder}| SSISFolder| This folder MUST exist in the SSIS Catalog prior to deployment. This is configured in your BimlFlex settings|
-
+| Property Name       | Project Setting | Description |
+| ------------------- | --------------- | ----------- |
+| {TargetVersion}     | SQL Server      | This is in BimlStudio project settings and specifies the target version of SQL Server to use |
+| {ProjectOutputPath} | Output Path     | This is the BimlStudio project setting for output path |
+| {ProjectName}       | Project Name    | This is the name of the project the user wishes to deploy |
+| {SSISFolder}        | SSIS Folder     | This folder MUST exist in the SSIS Catalog prior to deployment. This is configured in your BimlFlex settings |

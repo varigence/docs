@@ -1,4 +1,6 @@
-# Dim SalesOrder source view
+# Dim Customer source view
+
+<!-- TODO: Delete as covered in sample metadata now -->
 
 Sample View Creation Script for a Dimension table load.
 
@@ -17,17 +19,20 @@ GO
 IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = N'src') EXEC ('CREATE SCHEMA [src] AUTHORIZATION [dbo]')
 GO
 
-CREATE OR ALTER VIEW src.DimSalesOrder
+CREATE OR ALTER VIEW src.DimCustomer
 AS
 SELECT
-  -- Dimension integration key, this is used for fact to dimension lookups later
-  pso.SalesOrderHeader_BK
-  -- dimension attributes, defined as type 1 or type 2 in the destination table
-  , s.SalesOrderID
-  , s.SalesOrderNumber
-  , s.PurchaseOrderNumber
-  , s.AccountNumber
-FROM rdv.PIT_SalesOrder pso
-INNER JOIN rdv.SAT_SalesOrder_AWLT s ON s.SalesOrder_SK = pso.SAT_SalesOrder_AWLT_SalesOrder_SK AND s.FlexRowEffectiveFromDate = pso.SAT_SalesOrder_AWLT_FlexRowEffectiveFromDate
-WHERE pso.FlexRowEffectiveToDate = '9999-12-31'
+    -- Dimension integration key, this is used for fact to dimension lookups later
+    pc.Customer_BK
+    -- Dimension attributes, defined as type 1 or type 2 in the destination table
+  , s.CustomerID
+  , s.FirstName
+  , s.LastName
+  , s.EmailAddress
+  , s.CompanyName
+FROM rdv.PIT_Customer pc
+INNER JOIN rdv.SAT_Customer_AWLT s ON s.Customer_SK = pc.Customer_SK AND s.FlexRowEffectiveFromDate = pc.SAT_Customer_AWLT_FlexRowEffectiveFromDate
+WHERE pc.FlexRowEffectiveToDate = '9999-12-31'
+
+GO
 ```

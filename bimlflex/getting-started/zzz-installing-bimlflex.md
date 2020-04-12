@@ -4,6 +4,8 @@ title: Installing BimlFlex
 ---
 # Installing BimlFlex
 
+<!-- TODO: Delete as covered in setup documentation instead -->
+
 BimlFlex is provided in a single installer. This allows all parts of the framework to be installed and upgraded through a single installation.
 
 ![Installing BimlFlex -center](https://www.youtube.com/watch?v=T0PvDwfYqWo?rel=0&autoplay=0 "Installing BimlFlex")
@@ -110,7 +112,9 @@ Review the installer tasks and allow the installation to occur
 
 ![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s15.png)
 
-Once the installation concludes successfully, click finish to end the installer. Please refer to the getting started guide to get started with BimlFlex: @bimlflex-getting-started
+Once the installation concludes successfully, click finish to end the installer.
+
+Please refer to the getting started guide to get started with BimlFlex: [](xref:bimlflex-getting-started)
 
 ### Enter product key
 

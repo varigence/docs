@@ -4,17 +4,17 @@ title: Change the BimlFlex Excel bitness
 ---
 # Change the BimlFlex Excel bitness
 
-Both Microsoft Office Excel and the BimlFlex Excel installation comes in 2 bitness flavors, 32 bit and 64 bit. The installed BimlFlex version needs to match the bitness of the installed version of Excel.
+Both Microsoft Office Excel and the BimlFlex Excel installation comes in 2 bitness flavors, 32-bit and 64-bit. The installed BimlFlex version needs to match the bitness of the installed version of Excel.
 
 A template Excel application file is placed in the BimlFlex project folder when the project is created. This Excel file is either a 32 bit or a 64 bit version.
 
 The template file to use is specified in the new project wizard
 
-![New BimlFlex Project -center -50%](images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
+![New BimlFlex Project -border-image](images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
 
 If there is a bitness mismatch the BimlFlex Excel installation will display a Microsoft Excel based Error message when opening the Excel file.
 
-![BimlFlex Excel Bitness Error -center -50%](images/bimlflex-ss-v5-bimlflex-bitness-error-excel.png "BimlFlex Excel Bitness Error")
+![BimlFlex Excel Bitness Error -border-image](images/bimlflex-ss-v5-bimlflex-bitness-error-excel.png "BimlFlex Excel Bitness Error")
 
 This error might be due to the BimlFlex installation being the wrong bitness or due to the project having been created by an installation with a different bitness.
 
@@ -25,7 +25,7 @@ First check the local Excel installation bitness. Follow the Microsoft guideline
 
 Once the local bitness is known, rerun the BimlFlex installer and choose to install the correct version and uninstall the superfluous version.
 
-![BimlFlex Excel installer bitness -center -50%](images/bimlflex-ss-v5-bimlflex-installer-change-bitness.png "BimlFlex Excel installer bitness")
+![BimlFlex Excel installer bitness -border-image](images/bimlflex-ss-v5-bimlflex-installer-change-bitness.png "BimlFlex Excel installer bitness")
 
 Once the installation completes and the only installed version of BimlFlex matches the bitness of Excel the new Project wizard will generate valid projects from the correct templates.
 
@@ -41,7 +41,7 @@ For scenarios where an incompatible template file bitness was used, it is possib
 
 The BimlStudio user interface button for the `Excel Metadata Editor` will only open the local Excel file called `BimlFlex.xlsx`. It is possible to co-locate Excel files with different bitness in the folder and manually open the correct file for the local bitness installation.
 
-![BimlFlex Excel files -center -50%](images/bimlflex-ss-v5-bimlflex-project-excel-files.png "BimlFlex Excel files")
+![BimlFlex Excel files -border-image](images/bimlflex-ss-v5-bimlflex-project-excel-files.png "BimlFlex Excel files")
 
 For projects using source control for the project it is possible to do an initial commit with the most common bitness file and then exclude the Excel file from the repo. This will allow new users to pull/clone the template file and replace it when necessary without causing unnecessary source control issues.
 

@@ -53,9 +53,9 @@ If the project is deployed using the wrong Visual Studio SSIS Target Server/Vers
 
 ## Project deployment for SQL Server 2016 using the catalog
 
-As a demonstration project, a new BimlStudio project called Demo located in the c:\\Varigence\\ folder will be used. The project will create a folder called Demo for the BimlStudio project contents.
+As a demonstration project, a new BimlStudio project called Demo located in the `c:\Varigence\` folder will be used. The project will create a folder called Demo for the BimlStudio project contents.
 
-This project will have a single integration to read from the AdventureWorks LT source to the Staging Database.
+This project will have a single integration to read from the AdventureWorksLT source to the Staging Database.
 
 The approach assumes a SQL Server version that supports SSIS Catalog (2012-) and in the document SQL Server 2016 is used.
 
@@ -83,7 +83,7 @@ Every time a new empty customer is created in BimlFlex the Excel Metadata editor
 
 ![Sample Metadata](images/bimlflex-ss-v5-excel-create-sample-metadata.png "Sample Metadata")
 
-As the demo source is one of the sample sources it is possible to take a shortcut through the sample metadata. Once the sample metadata is created it can directly connect to the AdventureWorks LT Source to get the required source metadata.
+As the demo source is one of the sample sources it is possible to take a shortcut through the sample metadata. Once the sample metadata is created it can directly connect to the AdventureWorksLT Source to get the required source metadata.
 
 ### Step 3, load metadata
 
@@ -109,7 +109,7 @@ Create all DW databases and tables from the BimlStudio generated scripts output.
 
 Define project parameters and connection expressions for all relevant connections in the BimlStudio solution.
 
-There are many ways of maintaining the connection strings and required configurations in SSIS and SQL Server. BimlStudio provides several easy ways to manage and maintain whatever is chosen for an environment. For this demo, deployment is done to the catalog and a Catalog environment variable is used to define the connection string. For the parameterised connection string to be available in the generated SSIS project it first needs to be defined through an Extension Point. The approach needs one Extension Point for the Project parameter and one for the connection string parameterisation.
+There are many ways of maintaining the connection strings and required configurations in SSIS and SQL Server. BimlStudio provides several easy ways to manage and maintain whatever is chosen for an environment. For this demo, deployment is done to the catalog and a Catalog environment variable is used to define the connection string. For the parameterized connection string to be available in the generated SSIS project it first needs to be defined through an Extension Point. The approach needs one Extension Point for the Project parameter and one for the connection string parameterization.
 
 ![Project Parameter Code](images/bimlflex-ss-v5-extension-points-create-project-parameter-code.png "Project Parameter Code")
 
@@ -143,7 +143,7 @@ Once the build completes there will be a number of folders for the complete solu
 * BFX\_STG, an SSIS project to create all tables defined in the BFX\_STG database
 * Database, SSIS Projects to create all databases in the solution
 * Documentation, generated documentation for the solution
-* EXT\_AWLT, the generated SSIS project to source the data from the AdventureWorks LT source to the Staging and Persistent Staging databases
+* EXT\_AWLT, the generated SSIS project to source the data from the AdventureWorksLT source to the Staging and Persistent Staging databases
 * PackageConfigurations, dtsConfig files for projects that use PackageConfigurations
 * Schema, SSIS projects to create all Schemas defined in the databases
 
@@ -153,7 +153,7 @@ In the `EXT_AWLT` folder (and in all SSIS folders) are both the SSIS project wit
 
 It is possible to deploy either the ispac file or the project to the catalog. Ispac files are great for automated deployment and command type approaches. Opening the project in Visual Studio allows manual, visual review, manual running of the process and manual deployment from Visual Studio to a destination Catalog.
 
-## Deploying the generated ispac file to the Catalog
+## Deploying the generated ispac file to the SSIS Catalog
 
 The full deployment process is documented here:
 
@@ -163,11 +163,11 @@ for ispac files when there is a requirement to automate the deployment using com
 
 When deploying to the catalog the projects are deployed into folders. This means it is easy to organize projects. It also means different versions can be deployed to different folders if there is a need to maintain different sets of packages on the same server for testing.
 
-There are 3 main ways of deploying to the Catalog:
+There are 3 main ways of deploying to the SSIS Catalog:
 
 1. Through the isdeploymentwizard.exe command line tool (using the ispac file)
-2. Through Visual Studio (using the SSIS project)
-3. Through Management Studio (using the ispac file)
+1. Through Visual Studio (using the SSIS project)
+1. Through Management Studio (using the ispac file)
 
 ## Deploying through the command line
 

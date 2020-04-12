@@ -4,6 +4,8 @@ title: Creating and configuring a BimlFlex project
 ---
 # Creating and configuring a BimlFlex project
 
+<!-- TODO: Delete as covered in the initial configuration instead -->
+
 ## Supporting Videos
 
 ![Create and configure the BimlFlex project -center](https://www.youtube.com/watch?v=7zt7CmFjDZk?rel=0&autoplay=0 "Create and configure the BimlFlex project")

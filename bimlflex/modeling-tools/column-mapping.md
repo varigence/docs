@@ -12,7 +12,7 @@ The Column Mapping Diagram provides an view of one or more mapping relationships
 
 ### Starting Point
 
-The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorks LT database, the Source to Staging and Persistent Staging has been completed and the Raw Data Vault has been published via the Accelerator.
+The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorksLT database, the Source to Staging and Persistent Staging has been completed and the Raw Data Vault has been published via the Accelerator.
 
 [//]: # (TODO: Link to UPDATED Source To Staging document)
 

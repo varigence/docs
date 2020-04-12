@@ -1,5 +1,7 @@
 # Dim SalesOrder source view
 
+<!-- TODO: Delete as covered in sample metadata now -->
+
 Sample View Creation Script for a Dimension table load.
 
 This is created in the Staging layer and is part of a source to target mapping or load process for Dimension table loads.

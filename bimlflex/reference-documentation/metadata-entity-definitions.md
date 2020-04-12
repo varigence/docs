@@ -50,7 +50,7 @@ Configure connection attributes for both Databases and Files. The ConnectionType
 | Attribute | Description |
 | --------- | ----------- |
 | ConnectionString | Connection string to be used for this connection. Please note that the ConnectionString will only be parsed by BimlStudio when you build the solution or manually test it. |
-| Catalog | Database name that the connection points to. When defining an Excel file this will be the worksheet name. If you have an environment where the production database is named differently to other environments we recommend using the production name. Example: AdventureWorks (Production) vs AdventuerWorks_DEV (Development) |
+| Catalog | Database name that the connection points to. When defining an Excel file this will be the worksheet name. If you have an environment where the production database is named differently to other environments we recommend using the production name. Example: AdventureWorks (Production) vs AdventureWorks_DEV (Development) |
 | PersistHistory | Determines whether to track history when defining a connection with an IntegrationStage = "PSA" for Persistent Staging Area. If this is not set and a PSA connection is configured then the database becomes a ODS without history. This is very useful to create an ODS by merely importing the source metadata. |
 | Server | Name of the host server the connection points to. Generally this is omitted as defining it in the ConnectionString is sufficient.  |
 | Provider | Defined the type of connection provider used in this connection. When using ADO.NET connections other than MSSQL this is a required field. |

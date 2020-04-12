@@ -4,6 +4,8 @@ title: BimlFlex Initial Setup and Configuration
 ---
 # Initial Setup and Configuration
 
+<!-- TODO: Delete as covered in initial configuration -->
+
 The setup includes the necessary steps to set up the environments, including:
 
 * the projects
@@ -124,7 +126,7 @@ The Configurations and Settings sheets in the Metadata Editor contains  options 
 
 This is described in more detail in:
 
-* @bimlflex-metadata-configurations
-* @bimlflex-metadata-settings
+* [](xref:bimlflex-metadata-configurations)
+* [](xref:bimlflex-metadata-settings)
 
 ![Metadata Configurations sheet](../user-guide/images/bimlflex-ss-v5-excel-configurations-sheet.png "Metadata Configurations sheet")

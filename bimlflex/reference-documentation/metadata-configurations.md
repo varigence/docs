@@ -44,7 +44,7 @@ The SSIS Expression is used in the Staging and Persistent Staging loads to deriv
 
 For scenarios where the data warehouse load should derive the effective date time from the source, it is possible to override this expression either through the global setting in the configurations sheet, or through an override in the attributes sheet. Scenarios where the override would be of interest are CDC source loads, where BimlFlex will reuse the transaction datetime from the CDC mechanism and when multiple changes to a record are included in a single sourcing set. By overriding the RowEffectiveFromDate, it is possible to keep the timeline of the source rows and the grain of the source without key collisions.
 
-An example of implementation usage for the configuration default is in the Default constraint of this table creation script for the Address staging table from the AdventureWorks LT Source:
+An example of implementation usage for the configuration default is in the Default constraint of this table creation script for the Address staging table from the AdventureWorksLT Source:
 
 ```sql
 IF NOT EXISTS (SELECT * FROM sys.default_constraints WHERE [parent_object_id] = OBJECT_ID(N'[AWLT].[Address]') AND [name] = 'DF_Address_FlexRowEffectiveFromDate')
@@ -91,7 +91,7 @@ The `RowEffectiveToDate` defines the end of time for timelines in the data wareh
 
 The SSIS Expression is used in the Staging and Persistent Staging loads to derive the RowEffectiveToDate from the `(DT_DBTIMESTAMP2, 7)"9999-12-31 00:00:00.000"` expression. This is inserted into the Data Flow to give each row its end date. The default configuration is to use the end of timeline definition.
 
-An example of implementation usage for the configuration default is in the Default constraint of this table creation script for the Address staging table from the AdventureWorks LT Source:
+An example of implementation usage for the configuration default is in the Default constraint of this table creation script for the Address staging table from the AdventureWorksLT Source:
 
 ```sql
 IF NOT EXISTS (SELECT * FROM sys.default_constraints WHERE [parent_object_id] = OBJECT_ID(N'[AWLT].[Address]') AND [name] = 'DF_Address_FlexRowEffectiveToDate')
@@ -346,7 +346,7 @@ The `RowIsDeleted` defines the pattern to derive if a row is deleted or not.
 
 This information is normally presented by the source as an additional attribute indicating that the row has been deleted.
 
-For source systems with hard deletes and no mechanism to present these deleted, consider using the Delete Detection feature in BimlFlex: @bimlflex-delete-detection
+For source systems with hard deletes and no mechanism to present these deleted, consider using the Delete Detection feature in BimlFlex: [](xref:bimlflex-delete-detection)
 
 The IsDeleted flag is an optional query helper attribute. It is used together with the `RowChangeType` attribute and it is possible to derive the `IsDeleted` value by interpreting the `RowChangeType` in the query.
 

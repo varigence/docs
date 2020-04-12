@@ -4,17 +4,19 @@ title: Creating a 2 layer Dimensional Model
 ---
 # Creating a 2 layer Dimensional Model
 
+<!-- TODO: Delete as included in the sample metadata now -->
+
 ## Supporting Videos
 
 Coming Soon
 
 ## Supporting BimlFlex Documentation
 
-@bimlflex-user-guide
+[](xref:bimlflex-user-guide)
 
 ## Creating a 2 layer Dimensional Model in BimlFlex
 
-The data mart layer for a 2 layer architecture reads directly from the staging layer. 
+The data mart layer for a 2 layer architecture reads directly from the staging layer.
 
 A set of abstraction views are used to apply business logic and expose the staging layer to the presentation layer. These views are used to populate a dimensional model in a data mart in the presentation layer.
 

@@ -4,12 +4,13 @@ title: Analyst Installation
 ---
 # Analyst installation
 
+<!-- TODO: Delete as Analyst installation is no longer relevant -->
 Analyst installations provide an Excel-based metadata editor environment for defining the metadata required to build BimlFlex solutions.
 
 Other Installation Types are:
 
-* @bimlflex-developer-installation
-* @bimlflex-server-installation
+* [](xref:bimlflex-developer-installation)
+* [](xref:bimlflex-server-installation)
 
 ## Installation Media
 

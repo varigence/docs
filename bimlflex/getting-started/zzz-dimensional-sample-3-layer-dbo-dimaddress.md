@@ -1,5 +1,7 @@
 # Dim Customer source view
 
+<!-- TODO: Delete as covered in sample metadata now -->
+
 Sample View Creation Script for a Dimension table load.
 
 This is created in the Data Vault layer and is part of a source to target mapping or load process for Dimension table loads.
@@ -17,16 +19,16 @@ GO
 CREATE OR ALTER VIEW [dbo].[dimAddress] 
 AS
 
-SELECT	 pc.[Address_BK]
-		,sa.[AddressLine1]
-		,sa.[AddressLine2]
-		,sa.[City]
-		,sa.[StateProvince]
-		,sa.[CountryRegion]
-		,sa.[PostalCode]
-FROM	[rdv].[PIT_Address] pc
+SELECT     pc.[Address_BK]
+        ,sa.[AddressLine1]
+        ,sa.[AddressLine2]
+        ,sa.[City]
+        ,sa.[StateProvince]
+        ,sa.[CountryRegion]
+        ,sa.[PostalCode]
+FROM    [rdv].[PIT_Address] pc
 INNER JOIN [rdv].[SAT_Address_awlt] sa
-	ON	pc.[SAT_Address_awlt_Address_SK] = sa.[Address_SK]
-	AND	pc.[SAT_Address_awlt_FlexRowEffectiveFromDate] = sa.[FlexRowEffectiveFromDate]
+    ON    pc.[SAT_Address_awlt_Address_SK] = sa.[Address_SK]
+    AND    pc.[SAT_Address_awlt_FlexRowEffectiveFromDate] = sa.[FlexRowEffectiveFromDate]
 GO
 ```

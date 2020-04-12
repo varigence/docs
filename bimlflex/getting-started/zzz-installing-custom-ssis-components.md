@@ -4,13 +4,15 @@ title: Installing BimlFlex Custom SSIS Components
 ---
 # Installing BimlFlex Custom SSIS Components
 
+<!-- TODO: Delete as covered in setup and other page now -->
+
 ## Supporting Videos
 
 ![Installing the SSIS Components -center](https://www.youtube.com/watch?v=7R8gj7ItqH8?rel=0&autoplay=0 "Installing the SSIS Components")
 
 ## Supporting BimlFlex Documentation
 
-* @bimlflex-server-installation
+* [](xref:bimlflex-server-installation)
 
 ## Installing Custom SSIS Components
 
@@ -36,7 +38,7 @@ Refer to the Azure documentation for more information and sample setup scripts: 
 
 Once the runtime is configured to deploy the custom components it is possible to validate and run a valid project using the custom components.
 
-extract the current dll files from your installation and copy them to a compatible blob storage location and use an installation script to install the components in the Azure Inegration Runtime
+extract the current dll files from your installation and copy them to a compatible blob storage location and use an installation script to install the components in the Azure Integration Runtime
 
 Sample installation script contents:
 
