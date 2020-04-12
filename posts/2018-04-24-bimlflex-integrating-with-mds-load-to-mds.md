@@ -17,9 +17,9 @@ This BimlFlex webinar looks at integrating BimlFlex with Microsoft SQL Server MD
 The video starts with a creation of a Master Data Services Model for the Product management. The Model contains a Product Entity that in turn contains attributes.
 The creation of the Entity also creates an MDS staging table in the MDS database. To read data out of MDS a subscription view is created. This view is also used by the load process to check for existing records.
 
-### Creating the BimlFlex metadata.
+### Creating the BimlFlex metadata
 
-In BimlFlex, the metadata is managed through a central repository. The management of this metadata is done through an Excel front end. This allows for modeling and management of metadata, source to target mappings and more. The example in the video uses a direct connection from source to destination, loading MDS straight from the AdventureWorks LT source system. A common approach is for the MDS loads to be integrated into the Data warehouse loads. Using either a source view on top of the Data Warehouse or a staging table that is part of a source system load as the source for the MDS load. 
+In BimlFlex, the metadata is managed through a central repository. The management of this metadata is done through an Excel front end. This allows for modeling and management of metadata, source to target mappings and more. The example in the video uses a direct connection from source to destination, loading MDS straight from the AdventureWorksLT source system. A common approach is for the MDS loads to be integrated into the Data warehouse loads. Using either a source view on top of the Data Warehouse or a staging table that is part of a source system load as the source for the MDS load.
 
 For the load to MDS the MDS connection is specified as `Master Data Services` in the `IntegrationStage` column.
 
