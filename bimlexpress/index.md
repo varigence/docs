@@ -12,12 +12,12 @@ BimlExpress provides the ability to create packages from Biml, an XML-based lang
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[Biml Language Reference](https://varigence.com/Documentation/Language/Index)
+[](xref:biml-api-reference)
 
-[Biml API Reference](https://varigence.com/Documentation/Api/Index)
+[](xref:biml-langage-reference)
 
 ## Help and Support
 
 [BimlExpress Forums](https://varigence.com/Forums?forumName=Biml)
 
-[Contact Varigence Support](https://varigence.com/Support)
+[Contact Varigence Support](https://support.varigence.com)

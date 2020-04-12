@@ -10,12 +10,12 @@ In this section the differences between BimlExpress, BimlStudio, BIDS Helper and
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-@biml-language-reference
+[](xref:biml-language-reference)
 
-@biml-api-reference
+[](xref:biml-api-reference)
 
 ## Help and Support
 
 [BimlExpress Forums](https://varigence.com/Forums?forumName=Biml)
 
-[Contact Varigence Support](https://varigence.com/Support)
+[Contact Varigence Support](https://support.varigence.com)
