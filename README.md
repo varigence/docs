@@ -36,10 +36,6 @@ Build sample PDF version using the following command, or use the buildPfd.bat fi
 
 More overview information on building to PDF is [available in the tutorial](https://dotnet.github.io/docfx/tutorial/walkthrough/walkthrough_generate_pdf.html)
 
-## Online build queue
-
-The public site is built through Azure pipelines, open the Azure DevOps pipeline and click the `queue` button to trigger a manual pipeline run
-
 ## Documentation Contents
 
 Main product content pages:
