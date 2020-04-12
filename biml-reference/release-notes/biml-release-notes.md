@@ -53,3 +53,4 @@ name: Biml Release Notes
 - Metadata Models
   - Fixed some issues with metadata model wrapper where property names and parent names were not being written to the validation items correctly.
   - Added instance information to dynamic objects for metadata validators.
+  

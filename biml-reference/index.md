@@ -2,19 +2,21 @@
 
 ## Biml API Reference
 
-@biml-api-reference
+[](xref:biml-api-reference)
 
 ## Biml Language Reference
 
-@biml-language-reference
+[](xref:biml-language-reference)
 
 ## Biml Release Notes
 
-Biml Release Notes
+[](xref:biml-release-notes)
 
 ## Biml Snippets
 
 The Biml Snippets collection includes a variety of Biml snippets for implementing assets in your Biml-based BI solution.
+
+[](xref:biml-snippets)
 
 ## Biml Forum
 
@@ -27,7 +29,3 @@ While the forums are the best way to get answers, if your question contains prop
 ## Resources
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
-
-
-
-
