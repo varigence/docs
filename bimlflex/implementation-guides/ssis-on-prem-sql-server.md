@@ -219,8 +219,10 @@ In this scenario, setting up the RDV will include the following steps.
   ![ssis-op-sql-menu-connections.png](images/ssis-op-sql-menu-connections.png)
 1. Select the BFX_RDV Connection  
   ![ssis-op-sql-connections-list.png](images/ssis-op-sql-connections-list.png)
-1. Change the Connection Type to "OLEDB" and save  
+1. Change the Connection Type to "OLEDB" or "OLEDB with ELT" and save  
   ![ssis-op-sql-connections-save.png](images/ssis-op-sql-connections-save.png)
+
+At this point, the RDV can be configured to work with ETL or ELT. For ETL choose the standard Connection Type, i.e. "OLEDB". For ELT choose the connection type that specifies ELT, i.e. "OLEDB with ELT".`
 
 #### Enable acceleration of Link Satellites
 
