@@ -17,3 +17,7 @@ Click the Connections page in the app and click the source connection `AWLT_SRC`
 Validate the settings, unselect the `Import Views` to only import metadata from the `SalesLT` tables. The remaining settings are left as defaults.
 
 BimlFlex will read all specified metadata from the chosen connection into the BimlFlex metadata repository.
+
+The importer will associate the source connection metadata with the load project. BimlFlex will use this metadata to process data from the source system.
+
+[](xref:bimlflex-getting-started-accelerating-the-raw-data-vault-layer)

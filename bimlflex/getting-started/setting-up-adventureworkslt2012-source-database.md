@@ -26,6 +26,6 @@ Download the SQL Server backup file and restore it to the SQL Server engine thro
 
 1. Download the [AdventureWorksLT2012.bak](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorksLT2012.bak) SQL Server database backup file
 1. Move it to a location accessible from the database server
-1. Use Microsoft SQL Server Management Studio or a similar tool or script to restore the database
-1. Configure read access for the client account used
+1. Use Microsoft SQL Server Management Studio, or a similar tool or script, to restore the database
+1. Configure read access for the client account used. The metadata import reads the metadata views from the source.
 1. Validate that the database is available from the client

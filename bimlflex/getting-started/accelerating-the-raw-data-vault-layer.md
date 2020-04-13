@@ -29,3 +29,5 @@ The new Data Vault objects can be reviewed in the BimlFlex App, in the Data Vaul
 The source objects have Source to Target Column Mappings applied to load the Data Vault. These mappings can be reviewed in the Column Mapping page.
 
 More information on using the BimlFlex App Data Vault Accelerator: [](xref:data-vault-accelerator)
+
+Next Step: [](xref:bimlflex-getting-started-building-the-data-vault-project)

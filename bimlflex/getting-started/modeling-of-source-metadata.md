@@ -14,7 +14,7 @@ For a Data Vault based project, modeling the source metadata also affect the Acc
 
 ## Detailed Steps
 
-The following detailed steps walks through the options for modeling of source Metadata as recommended for the getting started process.
+The following detailed steps walk through the options for modeling of source Metadata as recommended for the getting started process.
 
 The end result of this modeling is available to be loaded from the sample metadata set `02 - MSSQL After Import`.
 
@@ -38,7 +38,7 @@ A Source Key is used to define the source Primary Key when the modeled primary k
 
 For the trial process using a Data Vault destination layer and using the Accelerator to accelerate the Data Vault objects, the source modeling will use the Integration Keys to define the relationships. This allows the Accelerator to derive all Hubs, Links and Satellites based on the source metadata and the Integration Key definitions used as well as their relationships. This will also use the defined Integration Key as the single Primary key to allow the relationships to be defined in the metadata.
 
-In the `Import Metadata` dialog, the option to redefine relationships based on Integration Keys was used. This has created a Main Integration Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint an additional Integration Key has been created. The related table and column data has been set between these Integration Keys and the related main Integration Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Integration Keys without additional configuration.
+In the `Import Metadata` dialog, the option to redefine relationships based on Integration Keys was used. This has created a Main Integration Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint, an additional Integration Key has been created. The related table and column data has been set between these Integration Keys and the related main Integration Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Integration Keys without additional configuration.
 
 ### Defining Integration Keys
 
@@ -48,7 +48,7 @@ BimlFlex provides an expression to concatenate and separate columns into the Int
 
 The concatenation character used with multiple columns is defined in the BimlFlex Settings using the `ConcatenatorIntegrationKey` key. The default concatenation character is `~`.
 
-BimlFlex also provides a shortcut code for accessing the current connections Record Source code when building the Integration Key. Use the `@@rs` shortcut to inject the current record source code in to the Integration Key. This is commonly used when there is key overlap between source system with different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
+BimlFlex also provides a shortcut code for accessing the current connections Record Source code when building the Integration Key. Use the `@@rs` shortcut to inject the current record source code into the Integration Key. This is commonly used when there is a key value overlap between source systems with a different meaning. This can be when the same codes mean different things and, more commonly, when synthetic keys are used that are commonly reused, such as number sequences.
 
 For the trial process, verify that the `@@rs` shortcut was added to all Integration Keys by the import metadata process. For the Address table that would be `FlexToBk(@@rs, AddressID)`.
 
@@ -59,7 +59,7 @@ More information and considerations for Integration Keys are available in the []
 Source system relationships describe the metadata so that the correct load patterns can be used. For Data Vault, relationships help the Accelerator build out Link constructs between entities. When a metadata import is performed, BimlFlex will add any constraints defined in the source. This information is maintained in the `ReferenceTable` and `ReferenceColumnName` columns in the Columns sheet in the metadata. The chosen reference column must be a Primary Key in the related table.
 Relationships are also present in the Data Vault and Dimensional model to describe relationships between Data Vault entities such as Hubs and Satellites as well as Facts and Dimensions to define load patterns.
 
-For the getting started process, relationships are defined between the Integration Key derived from the Foreign Key and the Integration Key derived rom the Primary Key. Review the relationship definitions in the columns tab.
+For the getting started process, relationships are defined between the Integration Key derived from the Foreign Key and the Integration Key derived from the Primary Key. Review the relationship definitions in the columns tab.
 
 As an example, the `SalesLT.Product` source table has its own `Product_BK` column that is derived from the Primary Key and has an `SsisExpression` expression of `FlexToBk(@@rs,ProductID)`. This column is marked as the Integration Key of the table (`IsIntegrationKey` set to `Y`). It also has 2 derived reference Integration Key columns that reference the 2 objects related to the Product: `SalesLT.ProductCategory` and `SalesLT.ProductModel`.
 
@@ -72,7 +72,7 @@ These derived Integration Key columns create the same Key value as their related
 
 This metadata and these relationships will allow BimlFlex to accelerate a Data Vault Hub table from the Product table based on the main Product_BK Integration Key and Links to the ProductCategory and ProductModel entities as well as store all product attributes in satellites attached to the Product Hub.
 
-### Defining object related Metadata
+### Defining object-related Metadata
 
 The objects tab contains the tables from the `AdventureWorksLT` source system as well as any Data Warehouse tables created and accelerated. The metadata can be modeled and tweaked in several ways on the object and table level.
 
@@ -153,7 +153,7 @@ While it is possible to consider this a candidate for a logical fold as was appl
 
 The Integration Key creation in this case does not need to apply the Record Source Code, the Culture codes (`ar`, `en`, `fr`, `he`, `th`, `zh-cht`) are all good candidates for direct cross-system integration.
 
-Worth noting on the Culture codes is that they are all lower-case and they are all fixed width strings. The Integration key creation will by default upper-case and trim these codes. The original attribute value is stored in the Satellite.
+Worth noting on the Culture codes is that they are all lower-case and they are all fixed-width strings. The Integration key creation will by default upper-case and trim these codes. The original attribute value is stored in the Satellite.
 
 Add a new Object with the following data in the Objects sheet:
 
@@ -168,9 +168,9 @@ Add the following in the Columns Sheet:
 | AdventureWorksLT | SalesLT.Culture | Culture_BK | String | 100 | | | 1 | Key | Y | Y | | | |  Y | | | | Culture | | | | `FlexToBk(CultureCode)` | `Y` | 0 |
 | AdventureWorksLT | SalesLT.Culture | CultureCode | StringFixedLength | 6 | | | 2 | Key | | | Y |  | | | | | | | | | | | | 0 |
 
-To define the 3 way relationship for the future Link, update the `SalesLT.ProductModelProductDescription` source table so that there is a Culture Integration Key column has a reference to the Culture objects Integration Key.
+To define the 3-way relationship for the future Link, update the `SalesLT.ProductModelProductDescription` source table so that there is a Culture Integration Key column has a reference to the Culture objects Integration Key.
 
-Do this by navigating to the object and its column list. Select the Culture column and click the Add Integration Key button to generate a Integration Key. In the dialog, change the Column Name to `Culture_BK`. Make sure the Add Record Source, Is Integration Key and Is Primary Key checkboxes are all unselected.
+Do this by navigating to the object and its column list. Select the Culture column and click the Add Integration Key button to generate an Integration Key. In the dialog, change the Column Name to `Culture_BK`. Make sure the Add Record Source, Is Integration Key and Is Primary Key checkboxes are all unselected.
 
 Click Save to create the derived Integration Key column. The newly created Integration Key is added to the metadata.
 
@@ -190,7 +190,7 @@ Update the `ProductModelProductDescription_BK` column in the `SalesLT.ProductMod
 
 The metadata Objects have now been expanded with 3 new derived objects using different approaches.
 
-This illustrates the flexibility of the metadata and model driven approach and also adds additional Object Types to illustrate the Data Vault acceleration options.
+This illustrates the flexibility of the metadata and model-driven approach, and also adds additional Object Types to illustrate the Data Vault acceleration options.
 
 #### Naming conventions
 
@@ -275,13 +275,13 @@ Update the ModelObjectType of the Objects to match the following. This will allo
 
 `Create SQL`
 
-Overrides the object creation script. Can be used to completely override the object creation. This is useful for views that are used in the Data Warehouse where the definition of these views are required to be maintained in the metadata. Since the automatic object creation is dynamic and accommodates any changes to the metadata it is recommended to only use the `Create SQL` functionality when needed.
+Overrides the object creation script. This can be used to completely override the object creation. This is useful for views that are used in the Data Warehouse where the definitions of these views are required to be maintained in the metadata. Since the automatic object creation is dynamic and accommodates any changes to the metadata it is recommended to only use the `Create SQL` functionality when needed.
 
 In the trial process there are abstraction layer views for the dimensional model defined in the `CreateSql` metadata. This is used later in the process.
 
 `Override SQL`
 
-Overrides the source SQL Select statement for the object. Can be used to completely override the select statement. This is useful for scenarios where the required select statement is too complex to be built automatically from the rest of the metadata. Since the automatic SQL creation is dynamic and accommodates any changes to the metadata it is recommended to only use the `Override SQL` functionality when needed.
+Overrides the source SQL Select statement for the object. This can be used to completely override the select statement. This is useful for scenarios where the required select statement is too complex to be built automatically from the rest of the metadata. Since the automatic SQL creation is dynamic and accommodates any changes to the metadata it is recommended to only use the `Override SQL` functionality when needed.
 
 The `Override SQL` functionality is used in the Culture object in the getting started process.
 
@@ -289,11 +289,11 @@ The `Override SQL` functionality is used in the Culture object in the getting st
 
 the `Join SQL` function allows the addition of join statements to the generated source query. This is useful for gathering additional data into the query, either for adding columns or for allowing additional filter conditions. A common use case is for Integration Keys to be joined in when modeling a Data Vault on Integration Keys rather than technical keys.
 
-In the getting started process there are 2 derived tables that use the `Join SQLl` function to derive different types of addresses and maintaining them as separate entities in the staging layer and Data Vault.
+In the getting started process there are 2 derived tables that use the `Join SQL` function to derive different types of addresses and maintaining them as separate entities in the staging layer and Data Vault.
 
 `Where SQL`
 
-The `Where SQL` function allows the addition of where statements to the generated source query. This is useful for filtering. Note that load parameters are added automatically to the Where clause when using the parameters function so there is no need to manually inject them in to the Where clause through the `Where SQL` functionality.
+The `Where SQL` function allows the addition of where statements to the generated source query. This is useful for filtering. Note that load parameters are added automatically to the Where clause when using the parameters function so there is no need to manually inject them into the Where clause through the `Where SQL` functionality.
 
 In the getting started process there are filtering added to the 2 derived tables to filter only certain types of addresses.
 
@@ -307,7 +307,7 @@ In the getting started process the `Group By SQL` functionality is not used.
 
 #### Data Type, Length, Precision and Scale
 
-The source data type of the column and its length, precision and scale as applicable to the type. For the trial all data types are kept as they are from the import and match the source. For the Data Warehouse the data types are expanded using the Data Type Mappings feature in the next step.
+The source data type of the column and its length, precision, and scale as applicable to the type. For the getting started, all data types are kept as they are from the import and match the source. For the Data Warehouse, the data types are expanded using the Data Type Mappings feature in the next step.
 
 #### Ordinal
 
@@ -315,7 +315,7 @@ The order of the source columns. This is used to order the table definition and 
 
 #### Change Type
 
-The change type of the column. For source columns, use `Key` or `Type 1`. For Dimension attributes, define of the changes are tracked using `Type 1` or `Type 2` logic. Other types are relevant in certain scenarios, but not used in the getting started process at this stage - Hash Distribution Keys are used in Azure SQL Data Warehouse, Multi Active Keys in Multi Active satellites etc.
+The change type of the column. For source columns, use `Key` or `Type 1`. For Dimension attributes, define of the changes are tracked using `Type 1` or `Type 2` logic. Other types are relevant in certain scenarios, but not used in the getting started process at this stage - Hash Distribution Keys are used in Azure SQL Data Warehouse, Multi-Active Keys in Multi-Active Satellites, etc.
 
 #### Is Primary Key
 
@@ -381,11 +381,11 @@ This will override the names used in the Data Vault. This exemplifies the naming
 
 Is used by the Data Vault Accelerator to group columns into different Satellites and Links/Unit of Work.
 
-Allows a single source table to populate multiple destination Satellites. Breaking attributes in to separate Satellites is used to manage different storage requirements or change rates.
+Allows a single source table to populate multiple destination Satellites. Breaking attributes into separate Satellites is used to manage different storage requirements or change rates.
 
 The default naming convention accelerates Satellites with the same name as the primary Hub object. The `SalesLT.Customer` source table is of Object candidate type `Hub` so it will accelerate to a `HUB_Customer` for the Integration Key and all attributes will be accelerated to a `SAT_Customer_AWLT`.
 
-For the trial process, add `Password` to the `ModelGrouping` column for the `SalesLT.Customer` Objects `PasswordHash` and `PasswordSalt` columns. These 2 columns will be accelerated in to a separate Satellite named `SAT_Customer_Password_AWLT`.
+For the trial process, add `Password` to the `ModelGrouping` column for the `SalesLT.Customer` Objects `PasswordHash` and `PasswordSalt` columns. These 2 columns will be accelerated into a separate Satellite named `SAT_Customer_Password_AWLT`.
 
 This allows the password-related fields to be treated differently with ease.
 
@@ -404,7 +404,7 @@ For the AdventureWorksLT Source table columns, add Model Grouping information to
 
 This will Accelerate 3 satellites from the Product source table and an additional one for the Customer source.
 
-These changes demonstrate the model grouping feature and the ability to accelerate out several Satellites with their own storage options and rate of change management through the BimlFlex row compression feature.
+These changes demonstrate the model grouping feature and the ability to accelerate out several Satellites with their storage options and rate of change management through the BimlFlex row compression feature.
 
 This will also assist in illustrating the creation of Point In Time constructs later.
 
@@ -438,7 +438,7 @@ Defines if a column is derived or if it is present in the source data set.
 
 #### Solve Order
 
-Used to define order of operations for dependency chains in derived columns. Used when an SSIS expression derives a column that is used in another derived column. BimlFlex adds these in separate derived column transformations in the defined solver order.
+Used to define the order of operations for dependency chains in derived columns. Used when an SSIS expression derives a column that is used in another derived column. BimlFlex adds these in separate derived column transformations in the defined solver order.
 
 #### Reference Table
 

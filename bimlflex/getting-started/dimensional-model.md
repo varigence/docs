@@ -4,19 +4,19 @@ title: Data Mart Dimensional Model
 ---
 # Data Mart Dimensional Model
 
-![Implementing Data Vault to Data Mart Model -center](https://www.youtube.com/watch?v=UKq-libt3xg?rel=0&autoplay=0 "Implementing Data Vault to Data Mart Model")
+![Implementing Data Vault to Data Mart Model](https://www.youtube.com/watch?v=UKq-libt3xg?rel=0&autoplay=0 "Implementing Data Vault to Data Mart Model")
 
-The dimensional model, Data Mart, is optimized for analytical tools, end user queries and for building models for Analysis Services cubes and tabular models.
+The dimensional model, Data Mart, is optimized for analytical tools, end-user queries, and for building models for Analysis Services cubes and tabular models.
 
-This type of layer has many names, Information Mart, Data Mart, Kimball Model, Dimensional Model, Reporting Layer, Semantic Layer. They can be either Raw, without business rules applied, or refined with any number of filters, rules and data processing steps applied. BimlFlex allows the rapid creation of any of these constructs by applying a metadata driven modeling and generation process.
+This type of layer has many names, Information Mart, Data Mart, Kimball Model, Dimensional Model, Reporting Layer, Semantic Layer. They can be either Raw, without business rules applied, or refined with any number of filters, rules, and data processing steps applied. BimlFlex allows the rapid creation of any of these constructs by applying a metadata-driven modeling and generation process.
 
 The getting started process follows the general dimensional approach of building Fact tables that contain metrics and connections to Dimension members and Dimension tables that contain descriptive attributes.
 
-While the Raw Data Vault is loaded with uninterpreted data, the Dimensional model normally require that a set of Business rules are applied to the data so that it is fit for the required analytical purpose. In the process of creating the end to end solution it is common to also create raw versions of these artifacts that are used to refine the business rules used to create the final model.
+While the Raw Data Vault is loaded with uninterpreted data, the Dimensional model normally requires that a set of Business rules are applied to the data so that it is fit for the required analytical purpose. In the process of creating the end to end solution, it is common to also create raw versions of these artifacts that are used to refine the business rules used to create the final model.
 
-In this process both Fact and Dimensional source views are created, based either on the staging tables or on the raw Data Vault or on the Point In Time and Bridge tables in the Data Vault layer. These are used to populate a dimensional model in a Data Mart as a presentation/reporting layer.
+In this process, both Fact and Dimensional source views are created, based either on the staging tables or the raw Data Vault or on the Point In Time and Bridge tables in the Data Vault layer. These are used to populate a dimensional model in a Data Mart as a presentation/reporting layer.
 
-Querying the Data Vault layer can be made easier by utilizing the Point In Time and Bridge tables. To also include relevant contextual data it is necessary to join from these constructs to any Satellite that contains effectiveness information as well as the metrics or attributes needed. By using the time slice information in the Satellites the relevant record for the event date time is added to the dimensional model.
+Querying the Data Vault layer can be made easier by utilizing the Point In Time and Bridge tables. To also include relevant contextual data it is necessary to join from these constructs to any Satellite that contains effectiveness information as well as the metrics or attributes needed. By using the time slice information in the Satellites the relevant record for the event date-time is added to the dimensional model.
 
 ## Architecture
 
@@ -26,7 +26,7 @@ For the getting started process, a set of views are provided in the sample metad
 
 ## Detailed Steps
 
-The following detailed steps walks through the creation of the Dimensional Model from Data Vault
+The following detailed steps walk through the creation of the Dimensional Model from Data Vault
 
 ### Creating the source views for the dimensional model
 
@@ -34,7 +34,7 @@ The views used as sources for the dimensional model can either be managed and so
 
 Sample source views are included in the Sample Metadata.
 
-Review the sample metadata for the architecture of choice. All Data Mart source objects have their corresponding soure objects defined with source SQL definitions for their respective source view. These views are included in the scripts and database projects.
+Review the sample metadata for the architecture of choice. All Data Mart source objects have their corresponding source objects defined with source SQL definitions for their respective source view. These views are included in the scripts and database projects.
 
 ### Creating the destination metadata through the Clone Table feature
 
@@ -44,13 +44,13 @@ Select the source object in the Objects page and click the `Clone Table` button.
 
 ### Adding Fact to Dimension relationships and Dimensional key lookups
 
-One feature of the Dimensional implementation is the use of integer sequence numbers as primary keys. The Data Vault layer uses the hash of the Integration Key as the primary key for entities. Some analytical tools prefers integer keys for primary keys and Fact to Dimension relationships. BimlFlex provides a value to key lookup function that will use the standard SSIS lookup transformation to translate the value from the source to the key used in the dimension.
+One feature of the Dimensional implementation is the use of integer sequence numbers as primary keys. The Data Vault layer uses the hash of the Integration Key as the primary key for entities. Some analytical tools prefer integer keys for primary keys and Fact to Dimension relationships. BimlFlex provides a value-to-key lookup function that will use the standard SSIS lookup transformation to translate the value from the source to the key used in the dimension.
 
 This mapping is done for dimensions that have the primary key defined as an identity column. A dimension without an Identity column primary key is assumed to be a smart key that doesn't require a lookup.
 
-The Dimension object has a Integration Key and a Primary Key, the lookup will compare against the Integration Key value and replace with the Primary Key value.
+The Dimension object has an Integration Key and a Primary Key, the lookup will compare against the Integration Key value and replace it with the Primary Key value.
 
-The Fact table source has the corresponding lookup value (same value as the Integration Key in the Dimension). When cloning the source object to the Fact object this column is included and is mapped from the source to the Fact table destination.
+The Fact table source has the corresponding lookup value (the same value as the Integration Key in the Dimension). When cloning the source object to the Fact object this column is included and is mapped from the source to the Fact table destination.
 
 The metadata imported from the views will not have any relationships defined as these are not provided by the views. The target Facts and Dimensions will not have any relationships defined. Add the relationships between the target fact and the target dimension objects in the BimlFlex App schema diagram.
 
@@ -58,7 +58,7 @@ Adding the relationship between the Fact table Integration Key and the Dimension
 
 ### Building the dimensional model SQL artifacts
 
-With the metadata defined, refresh the metadata in BimlStudio and create the SQL Artifacts through the Generate cripts option or throught the SSDT project build.
+With the metadata defined, refresh the metadata in BimlStudio and create the SQL Artifacts through the Generate scripts option or the SSDT project build.
 
 The source views and destination tables will be included in the table script. Run the script in the Data Warehouse database.
 

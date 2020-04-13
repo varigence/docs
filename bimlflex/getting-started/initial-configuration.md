@@ -14,7 +14,7 @@ These steps are required for the full BimlFlex framework to work.
 
 Once the BimlFlex installation is completed, it is time to set up the environment for a BimlFlex project.
 
-The development side is focused around the BimlFlex App and the BimlStudio-based BimlFlex project.
+The development workflow is focused around the BimlFlex App and the BimlStudio-based BimlFlex project.
 
 > [!NOTE]
 > Complete the **Setup** first  
@@ -116,7 +116,7 @@ The BimlFlex Excel metadata editor comes with an additional Excel tab in the Rib
 
 Configure the BimlFlex database connection in the **Metadata Connection** pane and connect to the BimlFlex metadata database.
 
-Once the connection is defined the metadata can be read into Excel. The master data is stored in the database and the working set is cached and displayed in Excel. The data is not updated in real time. It is important to commit changes to the database and to communicate within the development team to synchronize changes to the Metadata.
+Once the connection is defined the metadata can be read into Excel. The master data is stored in the database and the working set is cached and displayed in Excel. The data is not updated in real-time. It is important to commit changes to the database and to communicate within the development team to synchronize changes to the Metadata.
 
 Retrieve all metadata into Excel by clicking the `Get All Entities` and `Get All Settings` buttons in the Excel BimlFlex Ribbon UI.
 
@@ -128,7 +128,7 @@ This step includes the required and optional configurations available for the Bi
 
 ### BimlStudio Project Settings
 
-The BimlStudio project options include settings such as the target SQL Server and SSIS versions and project or package deployments for SSIS. Most of these are optional to change, but the target version and deployment method needs to be correct for the packages to open correctly in Visual Studio and run correctly on the destination SSIS server.
+The BimlStudio project options include settings such as the target SQL Server, SSIS versions, project, or package deployments for SSIS. Most of these are optional to change, but the target version and deployment method needs to be correct for the packages to open correctly in Visual Studio and run correctly on the destination SSIS server.
 
 ![BimlStudio Project Configuration -border-image](images/bimlstudio-vid-v5-project-settings.gif "BimlStudio Project Configuration")
 

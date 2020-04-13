@@ -4,7 +4,7 @@ title: Adding the Business Data Vault Model
 ---
 # Adding the Business Data Vault Model
 
-![Business Data Vault Model -center](https://www.youtube.com/watch?v=JZT8rDBMhmI?rel=0&autoplay=0 "Business Data Vault Model")
+![Business Data Vault Model](https://www.youtube.com/watch?v=JZT8rDBMhmI?rel=0&autoplay=0 "Business Data Vault Model")
 
 The `Point in Time` (PIT) and `Bridge` (BRG) structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
 
@@ -69,3 +69,5 @@ The default name for these are built out of the Data Vault load name with either
 * `LOAD_BFX_RDV_PIT_Batch`
 
 These batches allow easy scheduling and orchestration of the Stored Procedure execution through SSIS.
+
+More information: [](xref:bimlflex-getting-started-dimensional-model)

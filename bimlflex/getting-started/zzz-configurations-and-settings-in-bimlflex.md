@@ -4,6 +4,8 @@ title: Configurations and Settings in BimlFlex
 ---
 # Configurations and Settings in BimlFlex
 
+<!-- TODO: Delete or ipdate, covered in the sample configurations now -->
+
 A key feature of BimlFlex is its comprehensive set of configurations and settings.
 
 BimlFlex comes with a set of different default configurations that can be applied to a project
