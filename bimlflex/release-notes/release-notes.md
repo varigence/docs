@@ -53,7 +53,7 @@ The BimlFlex app has been updated with BimlCatalog Operational Reporting capabil
 
 These reports allow direct access to the logging in the BimlCatalog from the app and help with both development and operational insights
 
-More information on operational reporting here: [](xref:bimlflex-operational-reporting)
+More information on operational reporting here: [](xref:bimlflex-operational-reports)
 
 #### Restructure BimlCatalog for more agnostic logging
 

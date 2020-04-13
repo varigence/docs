@@ -17,6 +17,7 @@ There are two different methods used to install these databases. The first optio
 ## BimlFlex Installer Setup
 
 ### Enable the Database Installation
+
 On the first pane of the installation process, there is the option to setup and install the BimlFlex and BimlCatalog databases. Check this box before continuing.
 
 ![Setup BimlFlex Button -border-image](images/bfxinstalldbs.png "Setup BimlFlex Button")
@@ -32,7 +33,7 @@ Proceed through the setup until you reach this screen:
 
 This represents the location(s) that the BimlFlex database will be installed. Once you have a working connection string, click the `Add` button to finalize your configuration.
 
-The desired installation location is now saved and will be used to install the database. 
+The desired installation location is now saved and will be used to install the database.
 
 ![Finalized installation locations -border-image](images/addedlocations.png "Installation locations")  
 
@@ -46,6 +47,7 @@ Before finalizing your upgrade or installation, examine the *Pending Actions* li
 Now press `Upgrade` or `Install`. Congratulations, the BimlFlex database is now installed or upgraded.
 
 ## BimlStudio Setup
+
 ### Open the Project in BimlStudio
 
 It is also possible to install the databases from the BimlFlex project in BimlStudio.
@@ -54,8 +56,7 @@ In order to setup the databases, first create a [BimlFlex project for BimlStudio
 
 When the BimlFlex project is opened in BimlStudio, the metadata database setup option is available in the BimlFlex Ribbon.
 
-![Setup BimlFlex Button -border-image](images/metadata-database-setup-btn.png "Setup BimlFlex Button")   
-
+![Setup BimlFlex Button -border-image](images/metadata-database-setup-btn.png "Setup BimlFlex Button")  
 
 ### Setting the Connection String
 
@@ -74,4 +75,4 @@ Click **Deploy** to deploy the databases
 
 ![Deploying BimlFlex Databases -border-image](images/installing-text.png "Deploying BimlFlex Databases")
 
-Once setup completes, configure the BimlFlex Project and BimlFlex App metadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reporting to use the **BimlCatalog** database
+Once setup completes, configure the BimlFlex Project and BimlFlex App metadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reports to use the **BimlCatalog** database
