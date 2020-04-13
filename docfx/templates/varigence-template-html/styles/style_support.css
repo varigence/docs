@@ -721,8 +721,39 @@ h6 {
 p {
   margin: 0 0 calc($font_size_base * $line_height_base); }
 
+
 ul {
-  margin: 0 0 calc($font_size_base * $line_height_base); }
+  margin: 0 0 calc($font_size_base * $line_height_base); 
+}
+
+.article ul {
+  margin: 0 0 calc($font_size_base * $line_height_base); 
+  list-style: none; /* Remove default bullets */
+}
+
+.article ul li::before {
+  content: "\25AA";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #337AB7; /* Change the color */
+  /*font-weight: bold;*/ /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.article ul ul{
+  margin: 0 0 calc($font_size_base * $line_height_base); 
+  list-style: none; /* Remove default bullets */
+}
+
+.article ul ul li::before {
+  content: "\25AA";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #337AB7; /* Change the color */
+ /* font-weight: bold;*/ /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
 
 ol {
   margin: 0 0 calc($font_size_base * $line_height_base); }
