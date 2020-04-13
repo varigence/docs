@@ -1,12 +1,13 @@
 >[!TIP]
-> **How to Restore an Excluded or Deleted Entity**
->  
+> **How to Restore an Excluded or Deleted Entity**  
+>
 > A deleted or excluded entity can be restored by flipping the appropriate flag back to `false`.  
-> To view a deleted or excluded entity:  
+> To view deleted or excluded entities:  
 >  
-> 1. Go to your **BimlFlex Options**  
+> 1. Navitage to **BimlFlex Options**  
 > 1. Enable *Show Deleted* and/or *Show Excluded*  
 > 1. Click **Apply**  
->  
+>
 > ![Enabled Deleted Entities](images/bimlflex-app-options-show-deleted.png "Enabled Deleted Entities")  
-> This will allow deleted and/or exlcuded entities to appear.  Please ensure that the option is disabled once the deleted member has been restored.  
+> This will allow deleted and/or excluded entities to appear.  
+> Please ensure that the option is disabled once the deleted/excluded member has been restored.  
