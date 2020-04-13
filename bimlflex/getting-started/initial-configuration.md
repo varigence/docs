@@ -104,7 +104,7 @@ Set up the required connections through the **Select BimlCatalog Connection** op
 
 View Reports in the **Reports** Page in the App
 
-More information: [](xref:bimlflex-operational-reporting)
+More information: [](xref:bimlflex-operational-reports)
 
 ## Excel Add-in Metadata Editor
 
