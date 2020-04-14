@@ -28,7 +28,7 @@ In certain BimlFlex solutions there are properties that get stored in **Azure Ke
 
 Not only does BimlFlex produce all of your Azure Data Factory assets needed for deployment, it also generates a PowerShell deployment script with values pulled directly from your settings. Deployment has never been easier!
 
-[More about PowerShell deployment](xref:using-powershell)
+[More about PowerShell deployment](xref:bimlflex-adf-using-powershell)
 
 ## Azure Portal Deployment
 

@@ -1,5 +1,5 @@
 ---
-uid: adf-using-powershell
+uid: bimlflex-adf-using-powershell
 title: Deployment Through PowerShell
 ---
 # Deployment Through PowerShell

@@ -6,7 +6,7 @@ title: Deployment Through the Azure Portal
 
 For a walk-through of creating a BimlFlex solution that targets ADF, review the [Synapse ADF Implementation Guide](xref:bimlflex-synapse-implementation).
 
-Once the Azure Data Factory (ADF) artifacts are generated the next step in the process is to deploy them.  Recommended practice is to use the automated deployment process outline in the [PowerShell Deployment Guide](xref:adf-using-powershell) however all assets are provided for a manual deployment via the [Azure Portal].  This document will discusses a manual deployment of the ARM templates using the [Azure Portal](https://portal.azure.com).
+Once the Azure Data Factory (ADF) artifacts are generated the next step in the process is to deploy them.  Recommended practice is to use the automated deployment process outline in the [PowerShell Deployment Guide](xref:bimlflex-adf-using-powershell) however all assets are provided for a manual deployment via the [Azure Portal].  This document will discusses a manual deployment of the ARM templates using the [Azure Portal](https://portal.azure.com).
 
 [//]: # (TODO: Add a [!NOTE] and link a Microsoft Docs article for the Azure Portal.  Refer to `using-powershell.md` for an example of this pattern.  Also ensure you add the link to the reference of Azure Portal in the paragraph above.)
 

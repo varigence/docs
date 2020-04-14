@@ -1,5 +1,5 @@
 ---
-uid: using-powershell
+uid: bimlflex-ssis-using-powershell
 title: Deployment Through PowerShell
 ---
 # Deployment Through PowerShell
