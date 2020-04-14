@@ -1,8 +1,10 @@
 ---
-uid: bimlflex-orchestration
+uid: zzz-bimlflex-orchestration
 title: BimlFlex Orchestration
 ---
 # Orchestration
+
+<!-- TODO: Delete, moved to concepts -->
 
 BimlFlex includes an Orchestration engine that controls failure scenario management, auditing and logging of runs. All Orchestration data is stored in the BimlCatalog database.
 

@@ -1,8 +1,10 @@
 ---
-uid: bimlflex-deployment-guide
+uid: zzz-bimlflex-deployment-guide
 title: BimlFlex SSIS Deployment Guide
 ---
 # SSIS Deployment Guide
+
+<!-- TODO: Delete, superseded by ssis-deployment documents -->
 
 Modern versions of SQL Server (2012-) supports project configurations and deployments to the SSIS Catalog. This document details how to use the project deployment model in BimlFlex and how to align that deployment to the SSIS Catalog environments for variable assignments. This can be used to populate passwords and connection strings for connections and inject them when the package is running on the SSIS Server
 

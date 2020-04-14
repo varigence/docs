@@ -1,8 +1,10 @@
 ---
-uid: bimlflex-extension-points-old
+uid: zzz-bimlflex-extension-points-old
 title: BimlFlex Extension Points
 ---
 # Extension Points
+
+<!-- TODO: Delete, superseded by EP document in concepts -->
 
 Reference information is detailed in the [](xref:bimlflex-extension-point-definitions) document
 

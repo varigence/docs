@@ -1,8 +1,10 @@
 ---
-uid: bimlflex-user-guide
+uid: zzz-bimlflex-user-guide
 title: BimlFlex User Guide
 ---
 # BimlFlex User Guide
+
+<!-- TODO: Delete, superseded by getting started intro-->
 
 The BimlFlex User Guide describes all aspects of the BimlFlex process.
 

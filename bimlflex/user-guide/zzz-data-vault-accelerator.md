@@ -1,8 +1,10 @@
 ---
-uid: bimlflex-data-vault-accelerator
+uid: zzz-bimlflex-data-vault-accelerator
 title: BimlFlex Data Vault Accelerator
 ---
 # Data Vault Accelerator
+
+<!-- TODO: Delete, superseded by modeling tools accelerator document -->
 
 ## On Data Vault modeling
 

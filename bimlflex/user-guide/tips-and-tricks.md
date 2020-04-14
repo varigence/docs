@@ -1,8 +1,10 @@
 ---
-uid: bimlflex-user-guide-tips-and-tricks
+uid: zzz-bimlflex-user-guide-tips-and-tricks
 title: Tips and Tricks
 ---
 # BimlFlex Tips and Tricks
+
+<!-- TODO: Split up and move to separate scenarios or move out of documentation into Zendesk -->
 
 BimlFlex Tips and Tricks is a set of smaller, focused design and implementation notes that illustrate core features, nifty tricks or similar.
 
