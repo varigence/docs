@@ -254,6 +254,12 @@ ci-search.search_results_page {
   }
 }
 
+@media (max-width: 991.98px) {
+  #actions {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-expand-md {
       flex-flow: row nowrap;
