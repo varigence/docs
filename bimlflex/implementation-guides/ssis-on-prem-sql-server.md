@@ -13,7 +13,7 @@ This document describes the steps and considerations for extracting data from a 
 
 A prerequisite for this guide is that the BimlFlex project exists with Customer Metadata.
 
-See the [documentation on Initial Configuration](../getting-started/initial-configuration.md) for information on creating a BimlFlex project.
+See [](xref:bimlflex-getting-started-initial-configuration) for information on creating a BimlFlex project.
 
 #### Configure BimlStudio Project Target Architecture
 
@@ -29,7 +29,7 @@ In BimlFlex, start with applying Sample Metadata: `01 - Starting Point for MSSQL
 
 #### Import the Source Metadata from AWLT2012
 
-See [Importing Metadata](../concepts/importing-metadata.md) for more detail.
+See [](xref:bimlflex-importing-metadata) for more detail.
   
 ![Import Metadata](images/bfx-ssis-src-stg-psa-ImportMetadata.png)
 
@@ -37,7 +37,7 @@ See [Importing Metadata](../concepts/importing-metadata.md) for more detail.
 
 If the project requires delete detection, it should be set up when configuring the project metadata.
 
-- See [Delete Detection](../concepts/delete-detection.md) for more detail.
+- See [](xref:bimlflex-delete-detection) for more detail.
 
 ![Set Global Delete Detection](images/bfx-ssis-src-stg-psa-SetGlobalDeleteDetection.png)
 
@@ -74,11 +74,11 @@ SELECT * FROM [BFX_ODS].[awlt].[Product] WHERE [Name] <> 'Test Cycle' -- Should 
 
 ### Configure Project Parameters and Metadata for STG and PSA
 
-Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [First Project Walkthrough](../getting-started/first-project-walkthrough.md). For information on how to manipulate metadata see the [Metadata Editors documentation](../metadata-editors/index.md).
+Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [](xref:bimlflex-getting-started-first-project-walkthrough). For information on how to manipulate metadata see the [](xref:metadata-editors-overview).
 
 ### Accelerate and Publish Stage and Persisted-Stage Metadata
 
-Accelerate and publish the STG and PSA metadata so that the project can be build and deployed. For information on how to accelerate and publish, see the [Accelerator Documentation](../modeling-tools/accelerator.md).
+Accelerate and publish the STG and PSA metadata so that the project can be build and deployed. For information on how to accelerate and publish, see the [](xref:data-vault-accelerator).
 
 ### BimlStudio: Generate and Deploy DDL Scripts
 
@@ -169,11 +169,11 @@ At this point, the RDV can be configured to work with ETL or ELT. For ETL choose
 
 ### Model Data Vault Metadata
 
-Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [First Project Walkthrough](../getting-started/first-project-walkthrough.md). For information on how to manipulate metadata see the [Metadata Editors documentation](../metadata-editors/index.md).
+Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [](xref:bimlflex-getting-started-first-project-walkthrough). For information on how to manipulate metadata see the [](xref:metadata-editors-overview).
 
 ### Accelerate and Publish
 
-To complete the RDV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [Accelerator Documentation](../modeling-tools/accelerator.md).
+To complete the RDV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [](xref:data-vault-accelerator).
 
 1. In the **Accelerator**, select all tables then click **Publish**  
 1. In BimlStudio, generate the Create Table scripts again  
@@ -207,7 +207,7 @@ For insert-only Data Vault solutions, the PIT constructs provide a convenient wa
 
 ### Model Business Data Vault Metadata
 
-Make any necessary changes to the Business Data Vault Metadata. For more information about BDV and modeling changes that can be made, see the Business Data Vault Model section of the [First Project Walkthrough](../getting-started/first-project-walkthrough.md).
+Make any necessary changes to the Business Data Vault Metadata. For more information about BDV and modeling changes that can be made, see the Business Data Vault Model section of the [](xref:bimlflex-getting-started-first-project-walkthrough).
 
 ### Creation and Deployment of BDV Entities
 
