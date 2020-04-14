@@ -15,147 +15,215 @@ The general mappings are the base guidelines that are followed when generating D
 
 ## [SQL Server](#tab/tabid-1)
 
+### String  
+
+| BimlFlex Data Type              | SQL Server Data Type         |
+| ------------------------------- | ---------------------------- |
+| AnsiStringFixedLength(`length`) | char(`length`)               |
+| AnsiString(`length`)            | varchar(`length`)            |
+| StringFixedLength(`length`)     | nchar(`length`)              |
+| String(`length`)                | nvarchar(`length`)           |
+
+### Number  
+
+| BimlFlex Data Type              | SQL Server Data Type         |
+| ------------------------------- | ---------------------------- |
+| smallmoney                      | smallmoney                   |
+| Currency                        | money                        |
+| Boolean                         | bit                          |
+| Byte                            | tinyint                      |
+| SByte                           | smallint                     |
+| Int16                           | smallint                     |
+| UInt16                          | smallint                     |
+| Int32                           | int                          |
+| UInt32                          | int                          |
+| Int64                           | bigint                       |
+| Uint64                          | bigint                       |
+| Decimal(`precision`,`scale`)    | decimal(`precision`,`scale`) |
+| VarNumeric(`precision`,`scale`) | decimal(`precision`,`scale`) |
+| Single(`precision`)             | float(`precision`)           |
+| Double(`precision`)             | float(`precision`)           |
+
+### Time  
+
+| BimlFlex Data Type              | SQL Server Data Type         |
+| ------------------------------- | ---------------------------- |
+| Time(`precision`)               | time(`precision`)            |
+| Date                            | date                         |
+| DateTime(`precision`)           | datetime(`precision`)        |
+| DateTime2(`precision`)          | datetime2(`precision`)       |
+| DateTimeOffset(`precision`)     | datetimeoffset(`precision`)  |
+
+### Other  
+
 | BimlFlex Data Type              | SQL Server Data Type         |
 | ------------------------------- | ---------------------------- |
 | geometry                        | geometry                     |
 | geography                       | geography                    |
 | hierarchyid                     | hierarchyid                  |
-| smallmoney                      | smallmoney                   |
-| AnsiString(`length`)            | varchar(`length`)            |
+| Xml                             | nvarchar(`length`)           |
 | Binary(`length`)                | varbinary(`length`)          |
-| Byte                            | tinyint                      |
-| Boolean                         | bit                          |
+| Guid                            | uniqueidentifier             |
+| Object                          | sql_variant                  |
+
+## [Azure Synapse](#tab/tabid-2)
+
+### String  
+
+| BimlFlex Data Type              | Synapse Data Type            |
+| ------------------------------- | ---------------------------- |
+| AnsiStringFixedLength(`length`) | char(`length`)               |
+| AnsiString(`length`)            | varchar(`length`)            |
+| StringFixedLength(`length`)     | nchar(`length`)              |
+| String(`length`)                | nvarchar(`length`)           |
+
+### Number  
+
+| BimlFlex Data Type              | Synapse Data Type            |
+| ------------------------------- | ---------------------------- |
+| smallmoney                      | smallmoney                   |
 | Currency                        | money                        |
-| Date                            | date                         |
-| DateTime(`precision`)           | datetime(`precision`)        |
+| Boolean                         | bit                          |
+| Byte                            | tinyint                      |
+| SByte                           | smallint                     |
+| Int16                           | smallint                     |
+| UInt16                          | smallint                     |
+| Int32                           | int                          |
+| UInt32                          | int                          |
+| Int64                           | bigint                       |
+| Uint64                          | bigint                       |
 | Decimal(`precision`,`scale`)    | decimal(`precision`,`scale`) |
 | VarNumeric(`precision`,`scale`) | decimal(`precision`,`scale`) |
-| Double(`precision`)             | float(`precision`)           |
-| Guid                            | uniqueidentifier             |
-| Int16                           | smallint                     |
-| Int32                           | int                          |
-| Int64                           | bigint                       |
-| Object                          | sql_variant                  |
-| SByte                           | smallint                     |
 | Single(`precision`)             | float(`precision`)           |
-| String(`length`)                | nvarchar(`length`)           |
+| Double(`precision`)             | float(`precision`)           |
+
+### Time  
+
+| BimlFlex Data Type              | Synapse Data Type            |
+| ------------------------------- | ---------------------------- |
 | Time(`precision`)               | time(`precision`)            |
-| UInt16                          | smallint                     |
-| UInt32                          | int                          |
-| Uint64                          | bigint                       |
-| AnsiStringFixedLength(`length`) | char(`length`)               |
-| StringFixedLength(`length`)     | nchar(`length`)              |
-| Xml                             | nvarchar(`length`)           |
+| Date                            | date                         |
+| DateTime(`precision`)           | datetime(`precision`)        |
 | DateTime2(`precision`)          | datetime2(`precision`)       |
 | DateTimeOffset(`precision`)     | datetimeoffset(`precision`)  |
 
-## [Azure Synapse](#tab/tabid-2)
+### Other  
 
 | BimlFlex Data Type              | Synapse Data Type            |
 | ------------------------------- | ---------------------------- |
 | geometry                        | varbinary(8000)              |
 | geography                       | varbinary(8000)              |
 | hierarchyid                     | varbinary(8000)              |
-| smallmoney                      | varbinary(8000)              |
-| AnsiString(`length`)            | varchar(`length`)            |
-| Binary(`length`)                | varbinary(`length`)          |
-| Byte                            | tinyint                      |
-| Boolean                         | bit                          |
-| Currency                        | money                        |
-| Date                            | date                         |
-| DateTime(`precision`)           | datetime(`precision`)        |
-| Decimal(`precision`,`scale`)    | decimal(`precision`,`scale`) |
-| VarNumeric(`precision`,`scale`) | decimal(`precision`,`scale`) |
-| Double(`precision`)             | float(`precision`)           |
-| Guid                            | varchar(50)                  |
-| Int16                           | smallint                     |
-| Int32                           | int                          |
-| Int64                           | bigint                       |
-| Object                          | sql_variant                  |
-| SByte                           | smallint                     |
-| Single(`precision`)             | float(`precision`)           |
-| String(`length`)                | nvarchar(`length`)           |
-| Time(`precision`)               | time(`precision`)            |
-| UInt16                          | smallint                     |
-| UInt32                          | int                          |
-| Uint64                          | bigint                       |
-| AnsiStringFixedLength(`length`) | char(`length`)               |
-| StringFixedLength(`length`)     | nchar(`length`)              |
 | Xml                             | varbinary(8000)              |
-| DateTime2(`precision`)          | datetime2(`precision`)       |
-| DateTimeOffset(`precision`)     | datetimeoffset(`precision`)  |
+| Binary(`length`)                | varbinary(`length`)          |
+| Guid                            | varchar(50)                  |
+| Object                          | sql_variant                  |
 
 ## [Snowflake](#tab/tabid-3)
+
+### String  
+
+| BimlFlex Data Type              | Snowflake Data Type          |
+| ------------------------------- | ---------------------------- |
+| AnsiStringFixedLength(`length`) | char(`length`)               |
+| AnsiString(`length`)            | varchar(`length`)            |
+| StringFixedLength(`length`)     | char(`length`)               |
+| String(`length`)                | varchar(`length`)            |
+
+### Number  
+
+| BimlFlex Data Type              | Snowflake Data Type          |
+| ------------------------------- | ---------------------------- |
+| smallmoney                      | decimal(19,4)                |
+| Currency                        | decimal(19,4)                |
+| Boolean                         | boolean                      |
+| Byte                            | tinyint                      |
+| SByte                           | smallint                     |
+| Int16                           | smallint                     |
+| UInt16                          | smallint                     |
+| Int32                           | int                          |
+| UInt32                          | int                          |
+| Int64                           | bigint                       |
+| Uint64                          | bigint                       |
+| Decimal(`precision`,`scale`)    | decimal(`precision`,`scale`) |
+| VarNumeric(`precision`,`scale`) | decimal(`precision`,`scale`) |
+| Single(`precision`)             | float(`precision`)           |
+| Double(`precision`)             | float(`precision`)           |
+
+### Time  
+
+| BimlFlex Data Type              | Snowflake Data Type          |
+| ------------------------------- | ---------------------------- |
+| Time(`precision`)               | time(`precision`)            |
+| Date                            | date                         |
+| DateTime(`precision`)           | datetime(`precision`)        |
+| DateTime2(`precision`)          | timestamp(`precision`)       |
+| DateTimeOffset(`precision`)     | timestamp_tz(`precision`)    |
+
+### Other  
 
 | BimlFlex Data Type              | Snowflake Data Type          |
 | ------------------------------- | ---------------------------- |
 | geometry                        | varbinary(8388608)           |
 | geography                       | varbinary(8388608)           |
 | hierarchyid                     | varbinary(8388608)           |
-| smallmoney                      | decimal(19,4)                |
-| AnsiString(`length`)            | varchar(`length`)            |
-| Binary(`length`)                | varbinary(`length`)          |
-| Byte                            | tinyint                      |
-| Boolean                         | boolean                      |
-| Currency                        | decimal(19,4)                |
-| Date                            | date                         |
-| DateTime(`precision`)           | datetime(`precision`)        |
-| Decimal(`precision`,`scale`)    | decimal(`precision`,`scale`) |
-| VarNumeric(`precision`,`scale`) | decimal(`precision`,`scale`) |
-| Double(`precision`)             | float(`precision`)           |
-| Guid                            | varchar(50)                  |
-| Int16                           | smallint                     |
-| Int32                           | int                          |
-| Int64                           | bigint                       |
-| Object                          | varbinary(8388608)           |
-| SByte                           | smallint                     |
-| Single(`precision`)             | float(`precision`)           |
-| String(`length`)                | varchar(`length`)            |
-| Time(`precision`)               | time(`precision`)            |
-| UInt16                          | smallint                     |
-| UInt32                          | int                          |
-| Uint64                          | bigint                       |
-| AnsiStringFixedLength(`length`) | char(`length`)               |
-| StringFixedLength(`length`)     | char(`length`)               |
 | Xml                             | varchar(`length`)            |
-| DateTime2(`precision`)          | timestamp(`precision`)       |
-| DateTimeOffset(`precision`)     | timestamp_tz(`precision`)    |
+| Binary(`length`)                | varbinary(`length`)          |
+| Guid                            | varchar(50)                  |
+| Object                          | varbinary(8388608)           |
 
 ## [Full List](#tab/tabid-4)
+
+### String  
+
+| BimlFlex Data Type              | SQL Server Data Type         | Synapse Data Type | Snowflake Data Type       |
+| ------------------------------- | ---------------------------- | ----------------- | ------------------------- |
+| AnsiStringFixedLength(`length`) | char(`length`)               |                   |                           |
+| StringFixedLength(`length`)     | nchar(`length`)              |                   | char(`length`)            |
+| AnsiString(`length`)            | varchar(`length`)            |                   |                           |
+| String(`length`)                | nvarchar(`length`)           |                   | varchar(`length`)         |
+
+### Number  
+
+| BimlFlex Data Type              | SQL Server Data Type         | Synapse Data Type | Snowflake Data Type       |
+| ------------------------------- | ---------------------------- | ----------------- | ------------------------- |
+| smallmoney                      | smallmoney                   | varbinary(8000)   | decimal(19,4)             |
+| Currency                        | money                        |                   | decimal(19,4)             |
+| Boolean                         | bit                          |                   | boolean                   |
+| Byte                            | tinyint                      |                   |                           |
+| SByte                           | smallint                     |                   |                           |
+| Int16                           | smallint                     |                   |                           |
+| UInt16                          | smallint                     |                   |                           |
+| Int32                           | int                          |                   |                           |
+| UInt32                          | int                          |                   |                           |
+| Int64                           | bigint                       |                   |                           |
+| Uint64                          | bigint                       |                   |                           |
+| Decimal(`precision`,`scale`)    | decimal(`precision`,`scale`) |                   |                           |
+| VarNumeric(`precision`,`scale`) | decimal(`precision`,`scale`) |                   |                           |
+| Single(`precision`)             | float(`precision`)           |                   |                           |
+| Double(`precision`)             | float(`precision`)           |                   |                           |
+
+### Time  
+
+| BimlFlex Data Type              | SQL Server Data Type         | Synapse Data Type | Snowflake Data Type       |
+| ------------------------------- | ---------------------------- | ----------------- | ------------------------- |
+| Time(`precision`)               | time(`precision`)            |                   |                           |
+| Date                            | date                         |                   |                           |
+| DateTime(`precision`)           | datetime(`precision`)        |                   |                           |
+| DateTime2(`precision`)          | datetime2(`precision`)       |                   | timestamp(`precision`)    |
+| DateTimeOffset(`precision`)     | datetimeoffset(`precision`)  |                   | timestamp_tz(`precision`) |
+
+### Other  
 
 | BimlFlex Data Type              | SQL Server Data Type         | Synapse Data Type | Snowflake Data Type       |
 | ------------------------------- | ---------------------------- | ----------------- | ------------------------- |
 | geometry                        | geometry                     | varbinary(8000)   | varbinary(8388608)        |
 | geography                       | geography                    | varbinary(8000)   | varbinary(8388608)        |
 | hierarchyid                     | hierarchyid                  | varbinary(8000)   | varbinary(8388608)        |
-| smallmoney                      | smallmoney                   | varbinary(8000)   | decimal(19,4)             |
-| AnsiString(`length`)            | varchar(`length`)            |                   |                           |
-| Binary(`length`)                | varbinary(`length`)          |                   |                           |
-| Byte                            | tinyint                      |                   |                           |
-| Boolean                         | bit                          |                   | boolean                   |
-| Currency                        | money                        |                   | decimal(19,4)             |
-| Date                            | date                         |                   |                           |
-| DateTime(`precision`)           | datetime(`precision`)        |                   |                           |
-| Decimal(`precision`,`scale`)    | decimal(`precision`,`scale`) |                   |                           |
-| VarNumeric(`precision`,`scale`) | decimal(`precision`,`scale`) |                   |                           |
-| Double(`precision`)             | float(`precision`)           |                   |                           |
-| Guid                            | uniqueidentifier             | nvarchar(50)      | varchar(50)               |
-| Int16                           | smallint                     |                   |                           |
-| Int32                           | int                          |                   |                           |
-| Int64                           | bigint                       |                   |                           |
-| Object                          | sql_variant                  |                   | varbinary(8388608)        |
-| SByte                           | smallint                     |                   |                           |
-| Single(`precision`)             | float(`precision`)           |                   |                           |
-| String(`length`)                | nvarchar(`length`)           |                   | varchar(`length`)         |
-| Time(`precision`)               | time(`precision`)            |                   |                           |
-| UInt16                          | smallint                     |                   |                           |
-| UInt32                          | int                          |                   |                           |
-| Uint64                          | bigint                       |                   |                           |
-| AnsiStringFixedLength(`length`) | char(`length`)               |                   |                           |
-| StringFixedLength(`length`)     | nchar(`length`)              |                   | char(`length`)            |
 | Xml                             | nvarchar(`length`)           |                   | varchar(`length`)         |
-| DateTime2(`precision`)          | datetime2(`precision`)       |                   | timestamp(`precision`)    |
-| DateTimeOffset(`precision`)     | datetimeoffset(`precision`)  |                   | timestamp_tz(`precision`) |
+| Binary(`length`)                | varbinary(`length`)          |                   |                           |
+| Guid                            | uniqueidentifier             | nvarchar(50)      | varchar(50)               |
+| Object                          | sql_variant                  |                   | varbinary(8388608)        |
 
 > [!NOTE]  
 > A blank column indicates no change in logic vs the **SQL Server Data Type**.
@@ -176,32 +244,33 @@ In a few cases BimlFlex will implicitly convert a source data type into another 
 | Xml                | nvarchar(`length`)   | varbinary(8000)   | varchar(`length`)   |
 
 > [!NOTE]
-> A blank column indicates no change in logic vs the **SQL Server Data Type**.  
+> A blank column indicates no change in logic vs the **BimlFlex Data Type**.  
 >  
 > \*: Default logic for SQL Server is to use a `uniqueidentifier` data type for Guid columns.  
 > The column will only use a `nvarchar(50)` data type if the `CovertGuidToString` setting in the **Settings Editor** is set to `Y`.
 
-<!--
-
 ## Default Logic
 
-[//]: # (TODO: Descriptive Paragraph)
+In cases where required metadata is omitted or values exceed certain thresholds BimlFlex will adjust some data types.  The below table outlines the rules used.  All sources use the *Default* column in the table below except for Snowflake which does not support a `MAX` identifier.  The values used for Snowflake are annotated in the *Snowflake* column.
 
-[//]: # (TODO: Update and clarify below table.)
+| Condition                 | Default                | Snowflake          |
+| ------------------------- | ---------------------- | ------------------ |
+| char(8000`+`)             | char(MAX)              | char(16777216)     |
+| nchar(4000`+`)            | nchar(MAX)             | char(16777216)     |
+| varchar(8000`+`)          | varchar(MAX)           | varchar(16777216)  |
+| nvarchar(4000`+`)         | nvarchar(MAX)          | varchar(16777216)  |
+| varbinary(8000`+`)        | varbinary(MAX)         | varbinary(8388608) |
+| decimal(0`-`,`scale`)     | decimal(18,`scale`)    |                    |
+| decimal(`precision`,`--`) | decimal(`precision`,0) |                    |
+| double(`--`)              | float(53)              |                    |
+| single(`--`)              | float(24)              |                    |
+| time(`--`)                | time(7)                |                    |
+| datetime2(`--`)           | datetime2(7)           | timestamp(7)       |
+| datetimeoffset(`--`)      | datetimeoffset(7)      | timestamp_tz(7)    |
 
-| Condition            | Default           |
-| -------------------- | ----------------- |
-| AnsiString(8000`+`)  | varchar(MAX)      |
-| varbinary(8000`+`)   | varbinary(MAX)    |
-| decimal(1`-`,x)      | decimal(18,x)     |
-| decimal(x,0`-`)      | decimal(x,0)      |
-| double(0`-`)         | float(53)         |
-| single(0`-`)         | float(24)         |
-| nvarchar(4000`+`)    | nvarchar(MAX)     |
-| time(0`-`)           | time(7)           |
-| char(8000`+`)        | varchar(MAX)      |
-| nchar(4000`+`)       | nvarchar(MAX)     |
-| datetime2(0`-`)      | datetime2(7)      |
-| datetimeoffset(0`-`) | datetimeoffset(7) |
-
--->
+> [!NOTE]  
+> A blank column indicates no change in logic vs the *Default*.  
+> `+` Indicates any number greater or equal to.  
+> `-` Indicates any number lower than or equal to.  
+> `--` Indicates an unassigned value.  
+> 
