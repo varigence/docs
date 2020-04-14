@@ -2,24 +2,25 @@
 uid: batches
 title: Batches
 ---
-# Batches Editor  
+# Batches Editor
 
-BimlFlex **Batches** group and help to define an ETL/ELT workload.  They are used by **Projects** to set execution grouping.  
+BimlFlex **Batches** group and help to define an ETL/ELT workload.  They are used by **Projects** to set execution grouping.
 
-## Editor Overview  
+## Editor Overview
 
-The following sections describe the UI elements of the Batches Editor and how they are used to author and manage BimlFlex **Batches**.  
+The following sections describe the UI elements of the Batches Editor and how they are used to author and manage BimlFlex **Batches**.
 
-**Batches Editor**  
+**Batches Editor**
+
 <img
     src="images/bimlflex-app-editor-batches.png"
     class="border-image"
     title="Batches Editor"
 />
 
-## Details Tab  
+## Details Tab
 
-The **Details Tab** focuses on general batch information and configuration.  This tab is used to define and create the **Batch** itself.  
+The **Details Tab** focuses on general batch information and configuration.  This tab is used to define and create the **Batch** itself.
 
 ### Details Tab - Action Buttons  
 
@@ -41,11 +42,11 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 [!include[Restore Entities Tip](_tip-restore-entities.md)]
 
-### Additional Dialogs  
+### Additional Dialogs
 
 [!include[Archive Batch Dialog Box](_dialog-archive-batch-single.md)]
 
-### Details Tab - Fields  
+### Details Tab - Fields
 
 <img
     src="images/bimlflex-app-editor-batches-fields.png"
@@ -63,17 +64,17 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 | Use Ssis Express | Set this value to `true` when extracting data from a source that only has SQL Server Express installed. Note that with SSIS Express there is limited functionality. |
 | Use Orchestration | BimlFlex comes with an orchestration framework that will control the ability to restart a failed batch. Set this attribute to `false` if you would like to bypass the default behavior. |
 
-### Allowed Values  
+### Allowed Values
 
 [!include[Precedence Constraints](_enum-precedence-constraint.md)]
 
-## Objects Tab  
+## Objects Tab
 
 The **Objects Tab** provides quick access to all **Objects** included in the **Batch**.  
 
 [!include[Objects Tab](_tab-objects.md)]
 
-## Attributes Tab  
+## Attributes Tab
 
 The **Attributes Tab** provides a view of any **Configurations** or **Setting** overrides that have been applied to the selected **Batch**.  
 

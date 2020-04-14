@@ -10,7 +10,8 @@ title: Connections
 
 The following sections describe the UI elements of the **Connections Editor** and how they are used to author and manage BimlFlex **Connections**.
 
-**Connections Editor**  
+**Connections Editor**
+
 <img
     src="images/bimlflex-app-editor-connections.png"
     class="border-image"
@@ -78,7 +79,7 @@ The **Details Tab** focuses on general **Connection** information and configurat
 > **SQL Based ELT:**  
 > When enabled the bulk of the transformation logic will be handled via a SQL Stored Procedure.  The selected platform in the *Integration Template* will then be primarily used for orchestration purposes only.
 >  
-> If using SQL Based ELT on **Connection with the *Integration Stage* of `Staging Area`, reloading from the PSA is not supported.
+> If using SQL Based ELT on **Connection** with the *Integration Stage* of `Staging Area`, reloading from the PSA is not supported.
 >  
 > **ADF Project Connections:**  
 > A **Project** with the *Integration Template* of `ADF: Source -> Target` requires the **Connection** to be using SQL Based ELT.
