@@ -720,6 +720,7 @@ ul.nav.level3>li {
   padding-bottom: 5px;
   height: 100%;
   margin-right: -20px;
+  margin-top: -10px;
 }
 .affix ul > li > a:before {
   color: #cccccc;
@@ -734,7 +735,7 @@ ul.nav.level3>li {
   color: #337ab7;
 }
 .affix ul > li > a {
-  padding: 3px 5px;
+  padding: 5px 5px;
   color: #666666;
 }
 .affix > ul > li.active:last-child {
