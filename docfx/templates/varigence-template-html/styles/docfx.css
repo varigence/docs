@@ -717,7 +717,7 @@ ul.nav.level3>li {
 }
 .affix > ul.level1 {
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   height: 100%;
   margin-right: -20px;
 }
@@ -734,7 +734,7 @@ ul.nav.level3>li {
   color: #337ab7;
 }
 .affix ul > li > a {
-  padding: 5px 12px;
+  padding: 3px 5px;
   color: #666666;
 }
 .affix > ul > li.active:last-child {
