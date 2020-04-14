@@ -17,133 +17,25 @@ See the [documentation on Initial Configuration](../getting-started/initial-conf
 
 #### Configure BimlStudio Project Target Architecture
 
+For on-prem SSIS project architencture, ensure that the BimlStudio project is enabled to use Project Deployment.
+
 ![BimlStudio - Set Project Target Architecture](images/bfx-ssis-src-stg-psa-SetProjectTargetVersions.png)
 
-#### BimlFlex Customer Metadata
+### BimlFlex Customer Metadata
 
-In BimlFlex, start with applying Sample Metadata: `01 - Starting Point for MSSQL`
+In BimlFlex, start with applying Sample Metadata: `01 - Starting Point for MSSQL`. This scenario uses this sample metadata as a starting point for all examples.
 
 ![Open Project in Visual Studio](images/bfx-ssis-src-stg-psa-LoadSampleMetadata.png)
 
-##### Import the Source Metadata from AWLT2012
+#### Import the Source Metadata from AWLT2012
 
 See [Importing Metadata](../concepts/importing-metadata.md) for more detail.
   
 ![Import Metadata](images/bfx-ssis-src-stg-psa-ImportMetadata.png)
 
-##### Create LastLoadDate Parameters
-
-![Create LastLoadDate Parameters](images/bfx-ssis-src-stg-psa-CreateLastLoadDateParameters.png)
-
-### Create tables in DW databases
-
-BimlStudio provides the Create Table Scripts which should be applied to the databases to allow the BimlStudio project to build and output the SSIS packages that will be used to extract the data.
-
-![EXT_AWLT_SRC Project](images/bfx-ssis-src-stg-psa-EXT-AWLT-SRC-Project.png)
-
-Note the **Source**, **Stage** and **Persistent Stage** Connections in the `EXT_AWLT_SRC` Project.
-
-#### BimlStudio: Set BimlFlex Customer and Version (Open Bundle and Refresh Metadata)
-
-![Set BimlFlex Customer and Version](images/bfx-ssis-src-stg-psa-SetCustomerVersion.png)
-
-#### BimlStudio: Generate and deploy scripts
-
-Grab Create Table Scripts
-
-![Grab Create Table Scripts](images/bfx-ssis-src-stg-psa-CreateScripts.png)
-
-Deploy Create Table Scripts
-
-![Deploy Create Table Scripts](images/bfx-ssis-src-stg-psa-DeployCreateTableScripts.png)
-
-BimlStudio: Build SSIS packages for the target version
-
-![Build Package](images/bfx-ssis-src-stg-psa-BuildPackage.png)
-
-This will create a .dtproj which can be opened for debugging in your target Visual Studio version.
-
-### Test deployment of database artifacts through the SSDT project
-
-Go to the output folder created above and open the .dtproj file in the `EXT_AWLT_SRC` folder
-
-![Open Project in Visual Studio](images/bfx-ssis-src-stg-psa-OpenProjectInVisualStudio.png)
-
-#### Test run SSIS packages (Run 01_EXT_AWLT_SRC_Batch.dtsx), validate data loaded to target
-
-![Run SSIS Package](images/bfx-ssis-src-stg-psa-Run-SSIS-Package.png)
-
-#### Validate data in SQL Management Studio
-
-```sql
-SELECT * FROM [BFX_STG].[awlt].[Product]
-SELECT * FROM [BFX_ODS].[awlt].[Product]
-```
-
-#### Validate logging happening to BimlCatalog/Logging schema
-
-```sql
-SELECT * FROM [BimlCatalog].[bfx].[Package] p
-INNER JOIN [BimlCatalog].[bfx].[Execution] e
-ON e.PackageID = p.PackageID
-WHERE p.PackageName = '01_EXT_AWLT_SRC_Batch'
-```
-
-#### Introduce changes in the Source database (Insert/Update/Delete) using a test script
-
-- Test Insert
-
-```sql
-INSERT INTO [AdventureWorksLT2012].[SalesLT].[Product]
-           ([Name]
-           ,[ProductNumber]
-           ,[Color]
-           ,[StandardCost]
-           ,[ListPrice]
-           ,[Size]
-           ,[Weight]
-           ,[ProductCategoryID]
-           ,[ProductModelID]
-           ,[SellStartDate]
-           ,[SellEndDate]
-           ,[DiscontinuedDate])
-     VALUES
-           ('Test Cycle'
-           ,'BF101'
-           ,'Black'
-           ,123
-           ,123
-           ,5
-           ,123
-           ,18
-           ,6
-           ,'20010101'
-           ,null
-           ,null)
-
--- Re-Run the Package and Validate the Data
-SELECT * FROM [BFX_STG].[awlt].[Product] -- Should have only the single 'Test Cycle' record
-
-SELECT * FROM [BFX_ODS].[awlt].[Product] WHERE [Name] = 'Test Cycle'
-SELECT * FROM [BFX_ODS].[awlt].[Product] WHERE [Name] <> 'Test Cycle' -- Should have older ModifiedDate, FlexRowEffectiveFromDate than 'Test Cycle'
-```
-
-- Test Update
-
-```sql
-UPDATE [AdventureWorksLT2012].[SalesLT].[Product] SET [Color] = 'Red', ModifiedDate = GETDATE() WHERE [Name] = 'Test Cycle'
-
--- Re-Run the Package and Validate the Data
-SELECT Color, * FROM [BFX_STG].[awlt].[Product] -- Should have single record with Color = Red
-
-SELECT Color, * FROM [BFX_ODS].[awlt].[Product] WHERE [Name] = 'Test Cycle'  -- Should have 2 records - One with the higher FlexRowAuditId should be Red
-SELECT * FROM [BFX_ODS].[awlt].[Product] WHERE [Name] <> 'Test Cycle' -- Should not have changed from previous query
-```
-
-> [!NOTE]
-> Delete detection has not been set up yet, so deletions won't be processed to STG or PSA
-
 ### Set up delete detection
+
+If the project requires delete detection, it should be set up when configuring the project metadata.
 
 - See [Delete Detection](../concepts/delete-detection.md) for more detail.
 
@@ -180,11 +72,65 @@ SELECT Color, * FROM [BFX_ODS].[awlt].[Product] WHERE [Name] = 'Test Cycle'  -- 
 SELECT * FROM [BFX_ODS].[awlt].[Product] WHERE [Name] <> 'Test Cycle' -- Should not have changed from previous query
 ```
 
+### Configure Project Parameters and Metadata for STG and PSA
+
+Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [First Project Walkthrough](../getting-started/first-project-walkthrough.md). For information on how to manipulate metadata see the [Metadata Editors documentation](../metadata-editors/index.md).
+
+### Accelerate and Publish Stage and Persisted-Stage Metadata
+
+Accelerate and publish the STG and PSA metadata so that the project can be build and deployed. For information on how to accelerate and publish, see the [Accelerator Documentation](../modeling-tools/accelerator).
+
+### BimlStudio: Generate and Deploy DDL Scripts
+
+Grab Create Table Scripts
+
+![Grab Create Table Scripts](images/bfx-ssis-src-stg-psa-CreateScripts.png)
+
+Deploy Create Table Scripts
+
+![Deploy Create Table Scripts](images/bfx-ssis-src-stg-psa-DeployCreateTableScripts.png)
+
+BimlStudio: Build SSIS packages for the target version
+
+![Build Package](images/bfx-ssis-src-stg-psa-BuildPackage.png)
+
+This will create a .dtproj which can be opened for debugging in your target Visual Studio version.
+
+#### Deploy database artifacts through the SSDT project
+
+DDL can also be deployed through the SSDT project. To deploy this way, go to the output folder created above and open the .dtproj file in the `EXT_AWLT_SRC` folder
+
+![Open Project in Visual Studio](images/bfx-ssis-src-stg-psa-OpenProjectInVisualStudio.png)
+
+#### Test run SSIS packages (Run 01_EXT_AWLT_SRC_Batch.dtsx), validate data loaded to target
+
+![Run SSIS Package](images/bfx-ssis-src-stg-psa-Run-SSIS-Package.png)
+
+#### Validate data in SQL Management Studio
+
+Data results can be validated SSMS by querying the data from the STG and PSA databases.
+
+```sql
+SELECT * FROM [BFX_STG].[awlt].[Product]
+SELECT * FROM [BFX_ODS].[awlt].[Product]
+```
+
+#### Validate logging happening to BimlCatalog/Logging schema
+
+BimlCatalog will track actions taken during this process. Query the BimlCatalog Execution table to see the record of the Batch that was executed.
+
+```sql
+SELECT * FROM [BimlCatalog].[bfx].[Package] p
+INNER JOIN [BimlCatalog].[bfx].[Execution] e
+ON e.PackageID = p.PackageID
+WHERE p.PackageName = '01_EXT_AWLT_SRC_Batch'
+```
+
 ---
 
 ## Raw Data Vault (RDV)
 
-After Stage and Persised Stage steps have been completed setup can begin for the Raw Data Vault step of this process.
+After Stage and Persised Stage steps have been completed - setup can begin for the Raw Data Vault step of this process.
 
 In this scenario, setting up the RDV will include the following steps.
 
@@ -202,11 +148,8 @@ In this scenario, setting up the RDV will include the following steps.
 1. Create a Virtual Hub as a Staged Query for the Culture column on from the staged `[awlt].[ProductModelProductDescription]` table
 1. Create BDV database and tables using BimlStudio script
 1. Build SSIS Packages for the target version
-1. Test Deployment of database artifacts through the SSDT project
+1. Deploy database artifacts through the SSDT project
 1. Test run SSIS packages and validate the data that is loaded to the RDV
-1. Validate logging happening in BimlCatalog
-1. Make changes to the source database (inserts, updates, and deletes), rerun load packages, and validate that those changes are loaded as expected
-1. Validate that the metadata is populated as expected
 
 ### Configure the RDV Project
 
@@ -224,259 +167,22 @@ In this scenario, setting up the RDV will include the following steps.
 
 At this point, the RDV can be configured to work with ETL or ELT. For ETL choose the standard Connection Type, i.e. "OLEDB". For ELT choose the connection type that specifies ELT, i.e. "OLEDB with ELT".`
 
-#### Enable acceleration of Link Satellites
+### Model Data Vault Metadata
 
-1. Navigate to **Settings**  
-  ![Menu - Settings](images/ssis-op-sql-menu-settings.png)
-1. Find or filter to "DvAccelerateLinkSatellite"  
-  ![Filter Settings](images/ssis-op-sql-settings-dvacc-filter.png)
-1. Change the Setting Value to "Y" and save  
-  ![Save Settings](images/ssis-op-sql-settings-dvacc-save.png)
-
-### Apply Modeling Overrides to the Source Metadata
-
-In this limited case using a single source, no model overrides are required, but to test the feature make the following changes:
-
-- Set the Model Override Name for the source table SalesLT.SalesOrderHeader to "SalesOrder"
-- Set the Model Override Name for the source table SalesLT.SalesOrderDetail to "SalesOrderLine"
-- Set the Model Override Name for the column Phone on source table SalesLT.Customer to "PhoneNumber"
-- Set the Model Override Name for the column SalesPerson on source table SalesLT.Customer to "SalesPersonName"
-
-#### Set the Model Override Name for an Object through the Objects Editor
-
-1. Navigate to **Objects**  
-  ![Menu Objects](images/ssis-op-sql-menu-objects.png)
-1. Find or filter to "SalesOrderHeader"  
-  ![Objects List Filter](images/ssis-op-sql-objects-soh-filter.png)
-1. Select the object  
-1. Set the Model Override Name to "SalesOrder" and save  
-  ![Objects Save](images/ssis-op-sql-objects-soh-save.png)
-
-#### Set the Model Override Name for an Object through the Accelerator or Schema Diagram
-
-1. Navigate to **Accelerator** or **Schema Diagram**  
-  ![MenuFull_Accelerator.png](images/ssis-op-sql-MenuFull-Accelerator.png)
-1. Find or filter to "SalesOrderDetail" in the side menu and check the box  
-  ![Accelerator_SalesOrderDetail.png](images/ssis-op-sql-Accelerator-SalesOrderDetail.png)
-1. Click the "SalesLT.SalesOrderDetail" table header to activate the actions menu  
-  ![Accelerator_SalesOrderDetail_click.png](images/ssis-op-sql-Accelerator-SalesOrderDetail-click.png)
-1. Click "Edit Table"  
-  ![Accelerator_SalesOrderDetail_Edit.png](images/ssis-op-sql-Accelerator-SalesOrderDetail-Edit.png)
-1. Set the Model Override Name in the Edit Table pane to "SalesOrderLine" and save  
-  ![Accelerator_SalesOrderDetail_save.png](images/ssis-op-sql-Accelerator-SalesOrderDetail-save.png)
-
-#### Set the Model Override Name for a Column through the Columns Editor
-
-1. Navigate to **Columns**  
-  ![Menu_columns.png](images/ssis-op-sql-Menu-columns.png)
-1. Find or filter to "Phone"  
-  ![Columns_filter_Phone.png](images/ssis-op-sql-Columns-filter-Phone.png)
-1. Select the object  
-1. Set the Model Override Name to "PhoneNumber" and save  
-  ![Columns_Phone_edit_save.png](images/ssis-op-sql-Columns-Phone-edit-save.png)
-
-#### Set the Model Override Name for a Column through the Accelerator or Schema Diagram
-
-1. Navigate to **Accelerator** or **Schema Diagram**  
-  ![MenuFull_Accelerator.png](images/ssis-op-sql-MenuFull-Accelerator.png)
-1. Click the *View Settings* icon in the top right  
-  ![Accelerator_ViewSettings.png](images/ssis-op-sql-Accelerator-ViewSettings.png)
-1. Click "Show Columns" to enable  
-1. Find or filter to "Customer" in the side menu and check the box  
-1. Click the "SalesPerson" column to activate the actions menu  
-1. Click "Edit Column"  
-1. Set the Model Override Name in the Edit Column pane to "SalesPersonName" and save  
-  ![Accelerator_Customer_EditColumnPane.png](images/ssis-op-sql-Accelerator-Customer-EditColumnPane.png)
-
-### Configure a SAT Model Object Type
-
-Configure a Satellite from the source view SalesLT.vGetAllCategories to send Parent Category information to the data vault.
-
-1. Configure the view to be a satellite and set Model Override Name
-1. Set the Source Key and create an Integration Key
-1. Add a reference from the Satellite to the source table
-
-#### Configure the view to be a Satellite and set Model Override Name
-
-1. Navigate to **Objects**  
-  ![Menu_objects.png](images/ssis-op-sql-Menu-objects.png)
-1. Find or Filter to vGetAllCategories  
-  ![Objects_filter_vGetAllCategories.png](images/ssis-op-sql-Objects-filter-vGetAllCategories.png)
-1. Set Object Type to Satellite  
-  ![Objects_vGetAllCategories_type.png](images/ssis-op-sql-Objects-vGetAllCategories-type.png)
-1. Set Model Override Name to "ProductCategory_ParentCategory" and save  
-  ![Objects_vGetAllCategories_save.png](images/ssis-op-sql-Objects-vGetAllCategories-save.png)
-
-#### Set the Source Key and create an Integration Key
-
-1. In the same window, click the Columns tab  
-  ![Objects_vGetAllCategories_ColumnsTab.png](images/ssis-op-sql-Objects-vGetAllCategories-ColumnsTab.png)
-1. In the Overview grid, check the box for ProductCategoryId in the Source Key column and save  
-  ![Objects_vGetAllCategories_source.png](images/ssis-op-sql-Objects-vGetAllCategories-source.png)
-1. To create an Integration Key from ProductCategoryId, click the ProductCategoryId row to select it, then click the Add Integration Key button  
-  ![Objects_vGetAllCategories_IntegrationKey.png](images/ssis-op-sql-Objects-vGetAllCategories-IntegrationKey.png)
-1. In the Generate Derived Integration Key dialog, change the Column Name to "ProductCategory_BK"  
-  ![Objects_vGetAllCategories_KeyModal.png](images/ssis-op-sql-Objects-vGetAllCategories-KeyModal.png)
-1. Check the box for Is Integration Key, which automatically checks Is Primary Key and sets the Column Ordinal to 0  
-1. Click the Save button  
-
-##### Add a reference from the Satellite to the source table
-
-1. In the same window, click on the column name ProductCategory_BK to navigate to the Columns page  
-  ![Objects_vGetAllCategories_clickColumn.png](images/ssis-op-sql-Objects-vGetAllCategories-clickColumn.png)
-1. Set the Reference Table to AWLT_SRC.SalesLT.ProductCategory  
-  ![Columns_vGetAllCategories_ProductCategory.png](images/ssis-op-sql-Columns-vGetAllCategories-ProductCategory.png)
-1. Set the Reference Column to ProductCategory_BK and save  
-
-#### Add a reference from the Satellite to the source table
-
-1. Navigate to the **Accelerator**  
-  ![MenuFull_Accelerator.png](images/ssis-op-sql-MenuFull-Accelerator.png)
-1. Select the Satellite SalesLT.vGetAllCategories and the Table SalesLT.ProductCategory in the side menu  
-1. Click on ProductCategory_BK in SalesLT.vGetAllCategories and drag to ProductCategory_BK in SalesLT.ProductCategory  
-  ![Accelerator_vGetAllCategories_reference.png](images/ssis-op-sql-Accelerator-vGetAllCategories-reference.png)
-1. Click Ok in the Add Reference dialog to create the reference  
-  ![Accelerator_AddReference.png](images/ssis-op-sql-Accelerator-AddReference.png)
-
-### Split and Join in the Accelerator
-
-1. Split a Satellite into 3
-1. Join Links to for a single Unit of Work
-
-### Create a Virtual Hub as a Staged Query
-
-A virtual hub as a Staged query will be used to bypass the staging and persistent staging steps and send data in the desired format from the source table to the RDV.
-To create a Virtual Hub as a Staged Query you will need to:
-
-1. Create a schema in the staging database (optional)
-1. Create the staged query view in the staging database
-1. Create a Connection for the Staged Query
-1. Create a Batch to execute the defined procedure
-1. Create a Project to manage the Staged Query
-
-#### Create a schema in the staging database BFX_STG
-
-1. Use the following script to create the schema "STQ" for the stored query
-
-```sql
-USE [BFX_STG]
-GO
-
-CREATE SCHEMA [STQ]
-GO
-```
-
-#### Create the Staged Query view in the staging database
-
-1. Use the following script to create the Staged Query that will present the data
-
-```sql
-USE [BFX_STG]
-GO
-
-DROP VIEW IF EXISTS [STQ].[Culture]
-GO
-
-CREATE VIEW [STQ].[Culture]
-AS
-
-SELECT
-   [Culture] AS                       [Culture_BK] ,
-   [Culture] AS                       [Culture] ,
-   GETDATE( ) AS                      [FlexRowEffectiveFromDate] ,
-   N'I' AS                            [FlexRowChangeType] ,
-   [FlexRowRecordSource] AS           [FlexRowRecordSource] ,
-   CONVERT(BINARY(20), HASHBYTES('SHA1', CONVERT(NVARCHAR(MAX), COALESCE(CAST([Culture] AS VARCHAR(100)),'NVL')))) AS [FlexRowHashKey]
-FROM
- [awlt].[ProductModelProductDescription]
-GROUP BY
-     [Culture] ,
-     [FlexRowRecordSource]
-GO
-```
-
-#### Create a Connection for the Staged Query
-
-This connection will connect to the staging database "BFX_STG" to access the view that we create there.
-
-1. Navigate to **Connections**  
-1. Select "BFX_STG" and click **Duplicate**  
-1. Set Connection Name to "BFX_STG_AWLT_SRC"  
-1. Set Integration Stage to "Source System"  
-1. Set Record Source to "awlt" and save  
-  ![StagedQueryConnection.png](images/ssis-op-sql-StagedQueryConnection.png)
-
-#### Create a Batch for the Staged Query
-
-1. Navigate to **Batches**  
-1. Select LOAD_BFX_RDV and click **Duplicate**  
-1. Set Batch Name to "LOAD_BFX_RDV_AWLT_STQ" and save  
-  ![StagedQueryBatch.png](images/ssis-op-sql-StagedQueryBatch.png)
-
-#### Create a Project for the Staged Query
-
-1. Navigate to **Projects**  
-1. Select LOAD_BFX_RDV and click **Duplicate**  
-1. Set Project Name to "LOAD_BEF_RDV_AWLT_STQ"  
-1. Set Batch to "LOAD_BEF_RDV_AWLT_STQ"  
-1. Set Connection to "BFX_STG_AWLT_SRC" and save  
-  ![StagedQueryProject.png](images/ssis-op-sql-StagedQueryProject.png)
-
-#### Import the Staged Query on the BFX_STG_AWLT_SRC connection
-
-1. Navigate to **Connections**  
-1. Select the Stored Query connection "BFX_STG_AWLT_SRC"  
-1. Click **Import Metadata**  
-1. Click the **Connect to Database** button  
-1. Select the Stored Query  
-1. Set Infer Integration Key From to "None"  
-1. Click **Import Metadata**  
-
-#### Configure the Staged Query
-
-1. Navigate to **Objects**  
-1. Filter to or Find STQ.Culture  
-1. Set Object Type to `Staged Query` and Save  
-  ![StagedQueryUpdateType.png](images/ssis-op-sql-StagedQueryUpdateType.png)
-1. Click the Columns tab  
-1. Change the ChangeType to "Exclude DV" for FlexRowEffectiveFromDat, FlexRowChangeType, and FlexRowRecordSource  
-1. Check the Source Key box for the Culture column and save  
-1. Click the Culture row to select it then click the ![IntegrationKeyButton.png](images/ssis-op-sql-IntegrationKeyButton.png) button to  create an Integration Key  
-1. Set the Column Name to Culture_BK  
-1. Set Add Record Source to `False`  
-1. Set Is Integration Key and Is Primary Key to `True` and click Save  
-
-#### Add Setting override for UseRecordSourceAsSchema for Staged Query
-
-This override is for #1975 and will be removed after it is resolved.
-
-1. Navigate to **Settings**  
-1. Filter to or Find "UseRecordSourceAsSchema"  
-1. Click **Add+** in the Overrides section  
-1. Set Attribute Type to `Object`  
-1. Select Connection to BFX_STG_AWLT_SRC  
-1. Select Object to STQ.Culture  
-1. Set Attribute Property to "N" and save  
-  ![SettingOverride.png](images/ssis-op-sql-SettingOverride.png)
-
-#### Add relationship between SalesLT.ProductModelProductDescription and STQ.Culture
-
-1. Navigate to Accelerator  
-1. Select STQ.Culture and SalesLT.ProductModelProductDescription  
-1. Create a link from SalesLT.ProductModelProductDescription.Vulture_BK to STQ.Culture.Culture_BK  
+Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [First Project Walkthrough](../getting-started/first-project-walkthrough.md). For information on how to manipulate metadata see the [Metadata Editors documentation](../metadata-editors/index.md).
 
 ### Accelerate and Publish
 
-To complete the RDV setup in BimlFlex, accelerate all tables and publish.
+To complete the RDV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [Accelerator Documentation](../modeling-tools/accelerator).
 
-1. In the **Accelerator**, select all tables and the stored query then click **Publish**  
+1. In the **Accelerator**, select all tables then click **Publish**  
 1. In BimlStudio, generate the Create Table scripts again  
 1. Run the generated scripts in Sql Server  
 1. Build the BimlStudio Project  
 
-### Run SSDT Projects
+#### Run SSDT Projects
 
-The SSDT Projects are now ready to be run and have the results verified.
+The SSDT Projects can be used to deploy database artifacts and run SSIS packages.
 
 ---
 
@@ -498,79 +204,13 @@ The BRG constructs allow multiple LNKs surrounding a HUB to be combined in one t
 >
 > You can attach objects of HIGHER grain with no issues, however.  If your central business concept was for instance `Product`, going to `ProductCategory` is perfectly acceptable as it preserves the grain.  However, going in the opposite direction will likely not have the desired effect as you are breaking the fundamental grain of the business concept.
 
-#### Creating a BRG w/ 3 HUBs and 1 LNK
-
-Below are the steps to design a basic BRG between 3 HUBs and 1 LNK.  With a minimal change, the below process could also be expanded to increase either the number of HUBs included or the spanning across additional LNKs.  Callouts are made below to highlight these steps.
-
-1. Navigate to the target `business concept`.  In this example the ProductModel HUB (**rdv.HUB_ProductModel**).  
-  ![Selecting ProductModel HUB](images/ssis-op-sql-create-bridge-1.png)
-
-1. Ensure you are on the Details tab, if not click the Details tab.  
-
-1. Click the ![Create Bridge](images/ssis-op-sql-create-bridge-button.png ) button in the menu bar towards the top  
-  ![Details Menu Bar](images/ssis-op-sql-create-bridge-2.png  "Details Menu Bar")
-
-1. In the [Create Bridge] dialog, choose **LNK_ProductModelDescription** followed by **HUB_Culture** and **HUB_ProductDescription**  
-  ![Create Bridge Dialog Box](images/ssis-op-sql-create-bridge-3.png "Create Bridge Dialog Box")
-
-> [!NOTE]
-> Although the steps used above only use a single LNK, you can easily adjust the same scenario to allow for spanning across multiple LNKs.
-
-> [!IMPORTANT]
-> When spanning multiple LNKs, ensure that the grain of the business concept is not violated or lowered.
-
-1. Click **Save**
-
 ### Point In Time (PIT) Tables
 
 For insert-only Data Vault solutions, the PIT constructs provide a convenient way to recreate timelines and end date records so that timeline-sensitive queries are easier to create. This is also useful when a HUB has multiple SATs attached and there is a requirement to query data from several of these SATs for a specific date and time.
 
-#### Single SAT
+### Model Business Data Vault Metadata
 
-As mentioned above, it is often handy to have an immediate `EndDate` to query for ease of use.  Generally insert only architecture requires a nested self join to generate this, though this can also be handled with the use of a PIT table.  Steps below outline an example of applying this pattern HUB with a single SAT to achieve the aforementioned result.
-
-1. Navigate to the target `business concept`.  In this case the Address HUB (**rdv.HUB_Address**)  
-  ![Selecting Address HUB](images/ssis-op-sql-single-sat-1.png "Selecting Address HUB")
-1. Ensure you are on the Details tab, if not click the Details tab.  
-1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top  
-  ![Details Menu Bar](images/ssis-op-sql-single-sat-2.png "Details Menu Bar")
-1. In the [Create PIT] dialog, choose [SAT_Address_awlt].  
-  ![Create PIT Dialog Box - Single SAT](images/ssis-op-sql-single-sat-3.png "Create PIT Dialog Box - Single SAT")
-
-1. Click **Save**
-
-#### Multiple SATs
-
-When a HUB has multiple SATs it is often very convenient to have a single table to regenerate a specific point in time.  A PIT table can serve this purpose extremely well.  By selecting what SATs you want to align and generating the construct, you can simply target the PIT table for a Date and Time and immediately get back the appropriate entries in the tracked SATs.
-
-> [!NOTE]
-> This process is virtually identical to a Single SAT process with the only exception being that the target business entity has more SATs available/selected.
-
-1. Navigate to the target business concept.  In this case the Customer HUB (**rdv.HUB_Customer**)  
-  ![Selecting Customer HUB](images/ssis-op-sql-multi-sat-1.png "Selecting Customer HUB")
-1. Ensure you are on the Details tab, if not click the Details tab.  
-1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top  
-  ![Details Menu Bar](images/ssis-op-sql-multi-sat-2.png "Details Menu Bar")
-1. In the Create PIT dialog, choose `SAT_Customer_ContactInfo_awlt` and `SAT_Customer_Password_awlt`.  
-  ![Create PIT Dialog Box - Multiple SAT](images/ssis-op-sql-multi-sat-3.png "Create PIT Dialog Box - Multiple SAT")
-1. Click **Save**  
-
-#### SAT w/ Business Date
-
-A PIT table can also be built to group off of a `business date` verses the standard `load date`.  A scenario may be that sales need records grouped by the
-
-1. Navigate to the target business concept.  In this case the SalesOrder HUB (rdv.HUB_SalesOrder)  
-  ![Selecting SalesOrder HUB](images/ssis-op-sql-bus-sat-1.png "Selecting SalesOrder HUB")
-1. Ensure you are on the Details tab, if not click the Details tab.  
-1. Click the ![Create PIT](images/ssis-op-sql-create-pit-button.png "Create PIT") button in the menu bar towards the top  
-  ![Details Menu Bar](images/ssis-op-sql-bus-sat-2.png "Details Menu Bar")
-1. In the Create PIT dialog, choose `SAT_SAT_SalesOrder_awlt` followed by `ShipDate`.  
-  ![Create PIT Dialog Box - Business Date](images/ssis-op-sql-bus-sat-3.png "Create PIT Dialog Box - Business Date")
-1. In the *PIT Name* box put **PIT_SalesOrder_ShipDate**  
-  ![PIT Name Box](images/ssis-op-sql-bus-sat-4.png "PIT Name Box")
-1. Click **Save**  
-
----
+Make any necessary changes to the Business Data Vault Metadata. For more information about BDV and modeling changes that can be made, see the [Business Data Vault Model](../getting-started/first-project-walkthrough#business-data-vault-model.md) section of the First Project Walkthrough.
 
 ### Creation and Deployment of BDV Entities
 
@@ -683,7 +323,7 @@ Publishing projects via SSDT (or the built DACPAC) is the equivalent of running 
 
 ---
 
-### Execution
+### Execution of SSIS Packages
 
 Once the projects are built the next step in the process is to execute the packages and load the data.  The following sections will walk you through navigating to the default output folder, finding the projects and executing them.
 
@@ -719,23 +359,3 @@ Once the projects are built the next step in the process is to execute the packa
 1. Select LOAD_BFX_RDV_Project.dtproj and click *Open*.
 
 1. Run SSIS Packages
-
----
-
-## Validation
-
-1. Validate Load
-
-1. Validate BimlCatalog Logging
-
-1. INSERT / UPDATE / DELETE Test Script to 'Source'
-
-1. Rerun Packages
-
-1. Validate Load
-   1. New Inserts
-   1. Updates
-   1. PSA Ignored Unchanged Rows
-1. Validate Metadata
-
----
