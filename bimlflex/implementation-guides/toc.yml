@@ -3,9 +3,7 @@
 
   # Snowflake
 - name: Snowflake Implementation
-  href: snowflake-implementation-overview.md
-- name: Snowflake Configurations
-  href: snowflake-implementation-configurations.md
+  href: snowflake-implementation.md
 
   # Synapse
 - name: Synapse Implementation
