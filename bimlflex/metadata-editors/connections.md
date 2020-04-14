@@ -18,6 +18,10 @@ The following sections describe the UI elements of the **Connections Editor** an
     title="Connections Editor"
 />
 
+### Cloud Based Linked Services
+
+Connections can be enabled to work with cloud based linked services. For information on linked service connections and setup see [](xref:create-linked-service-connection).
+
 ## Details Tab
 
 The **Details Tab** focuses on general **Connection** information and configuration.  This tab is used to define and create the **Connection** itself.
@@ -37,7 +41,7 @@ The **Details Tab** focuses on general **Connection** information and configurat
 |<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Connection**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Connection Dialog](#archive-connection-dialog-box). |
 | <div class="icon-col m-5"><img src="images/svg-icons/import-metadata.svg"/></div> | Import Metadata | Import Metadata from Source Database - [More info](../concepts/importing-metadata.md). |
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Connection**, clearing all changes. |
-| <img src="images/bimlflex-app-action-switch.png" /> | Cloud | This is only required if using ADF.  When enabled allows the configuration of Linked Services and shows the Linked Service fields. For information linked service connections see [Configuring a Linked Service Connection](create-linked-service-connection.md). |
+| <img src="images/bimlflex-app-action-switch.png" /> | Cloud | This is only required if using ADF.  When enabled allows the configuration of Linked Services and shows the Linked Service fields. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Connection** and all associated entities from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Connection**.  This will remove the **Connection** and all associated entities from processing and validation. |
 
