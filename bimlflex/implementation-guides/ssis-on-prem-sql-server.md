@@ -78,7 +78,7 @@ Objects, Columns, Parameters, and Attributes may need to be modified. For exampl
 
 ### Accelerate and Publish Stage and Persisted-Stage Metadata
 
-Accelerate and publish the STG and PSA metadata so that the project can be build and deployed. For information on how to accelerate and publish, see the [Accelerator Documentation](../modeling-tools/accelerator).
+Accelerate and publish the STG and PSA metadata so that the project can be build and deployed. For information on how to accelerate and publish, see the [Accelerator Documentation](../modeling-tools/accelerator.md).
 
 ### BimlStudio: Generate and Deploy DDL Scripts
 
@@ -173,7 +173,7 @@ Objects, Columns, Parameters, and Attributes may need to be modified. For exampl
 
 ### Accelerate and Publish
 
-To complete the RDV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [Accelerator Documentation](../modeling-tools/accelerator).
+To complete the RDV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [Accelerator Documentation](../modeling-tools/accelerator.md).
 
 1. In the **Accelerator**, select all tables then click **Publish**  
 1. In BimlStudio, generate the Create Table scripts again  
@@ -192,9 +192,6 @@ The BDV is a set of materialized constructs that generally focus on either perfo
 
 BimlFlex implements these artifacts using tables for data storage, Stored Procedures for loading and SSIS packages for orchestration.
 
-> [!NOTE]
-> All tasks can be performed individually using the following Metadata from the prior RDV(#Raw-Data-Vault-(RDV)) process.
-
 ### Bridge (BRG) Tables
 
 The BRG constructs allow multiple LNKs surrounding a HUB to be combined in one table, and optionally the business keys from the HUBs associated with the LNKs, minimizing the required joins.  This makes it easier to query from and can also lead to a significant performance increase depending on the size and configuration of the HUBs and LNKs.
@@ -210,7 +207,7 @@ For insert-only Data Vault solutions, the PIT constructs provide a convenient wa
 
 ### Model Business Data Vault Metadata
 
-Make any necessary changes to the Business Data Vault Metadata. For more information about BDV and modeling changes that can be made, see the [Business Data Vault Model](../getting-started/first-project-walkthrough#business-data-vault-model.md) section of the First Project Walkthrough.
+Make any necessary changes to the Business Data Vault Metadata. For more information about BDV and modeling changes that can be made, see the Business Data Vault Model section of the [First Project Walkthrough](../getting-started/first-project-walkthrough.md).
 
 ### Creation and Deployment of BDV Entities
 
@@ -221,7 +218,7 @@ Once the BDV entities are modeled we will need to deploy the structures.  For th
 
 #### Manually Deploy Tables
 
-If you are not in a CI/CD environment, or perhaps only testing, it can be quicker to manually deploy the artifacts.  This is done by using the [Generate Scripts] function inside BimlStudio.  Once generated you can then deploy these to a target server of your choice.
+If you are not in a CI/CD environment, or perhaps only testing, it can be quicker to manually deploy the artifacts.  This is done by using the **Generate Scripts** function inside BimlStudio.  Once generated you can then deploy these to a target server of your choice.
 
 > [!WARNING]
 > These scripts are `DROP AND CREATE` by default.  This means they are destructive.  If manually deploying tables please ensure you are in a database where it is safe to do so.
@@ -274,8 +271,6 @@ Publishing projects via SSDT (or the built DACPAC) is the equivalent of running 
    > If you are unsure as to what version of SSDT you require, please refer to the link below.
    > [Download SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)
 1. Click File -> Open -> Project/Solution...  
-   > [!TIP]
-   > [Ctrl] + [Shift] + [O] = Open Project/Solution
 1. Navigate to your root BimlStudio project folder.  
    > [!NOTE]
    > If you do not know your root project directory and have the project open do the following:
@@ -334,13 +329,8 @@ Once the projects are built the next step in the process is to execute the packa
 > If you are using settings besides the default proceed straight to Step 3 manually navigating to your custom output folder.
 
 1. Open Visual Studio 2019 or SQL Server Development Tools (SSDT).
-   > [!TIP]
-   > If you are unsure as to what version of SSDT you require, please refer to the link below.
-   > [Download SQL Server Data Tools (SSDT) for Visual Studio](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15)
 
 1. Click File -> Open -> Project/Solution...
-   > [!TIP]
-   > [Ctrl] + [Shift] + [O] = Open Project/Solution
 
 1. Navigate to your root BimlStudio project folder.
 
