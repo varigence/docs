@@ -34,4 +34,4 @@ Open the BimlFlex App
 
 The Import Metadata wizard created Integration Keys from the Primary Keys of the source.
 
-Review the Objects page and the existing Integration keys to make sure they match. Apply the `@@rs` shortcode to any Integration Key still missing it. Note that the derived Culture Integration Key does not use the `@@rs` code.
+Review the Objects page and the existing Integration keys to make sure they match. Apply the `@@rs` short-code to any Integration Key still missing it. Note that the derived Culture Integration Key does not use the `@@rs` code.

@@ -27,8 +27,8 @@ This uses a staging layer with both a transient staging database and a persisten
 The following is needed:
 
 * Windows-based development machine for local installation of BimlStudio and BimlFlex
-* SQL Server 2017 with SQL Server engine and SSIS/Integration services
-* Visual Studio 2017 with SSDT and SSIS components
+* SQL Server 2017/2019 with SQL Server engine and SSIS/Integration services
+* Visual Studio 2017/2019 with SSDT and SSIS components
 * SQL Server Management Studio or similar for managing databases and running SQL Scripts
 * Excel 2013 or later, if the Excel Metadata management add-in is used
 

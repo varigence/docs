@@ -47,7 +47,7 @@ In BimlStudio, navigate to the `Build & Deploy` tab, choose the `32-bit` build o
 
 ### Opening and reviewing the SSIS project in Visual BimlStudio
 
-The output folder for generated artifacts is configurable, the default location is a folder called `output` in the BimlFlex project location
+The output folder for generated artifacts is configurable, the default location is a folder called `output` in the BimlFlex project location.
 
 In the output folder, there are multiple folders for all the created artifacts.
 
@@ -61,6 +61,12 @@ Once the SSIS package execution is completed, the staging and persistent staging
 
 ### Reviewing the SSDT Project
 
-BimlFlex also builds an SSDT database project by default. In the output folder, there is a folder called `SSDT`. In this folder, there is a folder named after the unique identifier for the customer (GUID). In this folder is a folder for the current version. In the version folder, there are separate projects for each database included in the BimlFlex solution. Each of these projects will have all relevant SQL artifacts included. These projects can be used to deploy and manage the database pipeline instead of the Script generation feature in BimlStudio.
+BimlFlex also builds an SSDT database project for each database by default.
+
+The default location for this is under the Project output folder in `SSDT\CustomerUID\VersionName\DatabaseName\`
+
+These projects can be used to deploy and manage the database pipeline instead of using the Script generation feature in BimlStudio.
+
+The default output folder for these SSDT projects can be changed through the `SsdtOutputPath` Setting
 
 Next Step: [](xref:bimlflex-getting-started-applying-load-parameters)
