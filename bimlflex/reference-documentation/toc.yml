@@ -8,3 +8,5 @@
   href: extension-point-definitions.md
 - name: Metadata Entity Definitions
   href: metadata-entity-definitions.md
+- name: Data Type Conversions
+  href: data-type-conversions.md
