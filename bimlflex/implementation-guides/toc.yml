@@ -3,17 +3,11 @@
 
   # Snowflake
 - name: Snowflake Implementation
-  href: snowflake-implementation-overview.md
-- name: Snowflake Configurations
-  href: snowflake-implementation-configurations.md
+  href: snowflake-implementation.md
 
   # Synapse
 - name: Synapse Implementation
-  href: synapse-implementation-introduction.md
-- name: Synapse Configurations
-  href: synapse-implementation-configurations.md
-- name: Synapse AzCopy
-  href: synapse-azcopy.md
+  href: synapse-implementation.md
 
   # SSIS with On-Premise SQL Server 
 - name: SSIS on-premises SQL Server
