@@ -753,7 +753,7 @@ ul.nav.level3>li {
   font-weight: bold;
 }
 .affix ul ul > li > a {
-  padding: 2px 15px;
+  padding: 1px 18px;
 }
 .affix ul ul > li > a:before {
   content: ">";
@@ -762,7 +762,8 @@ ul.nav.level3>li {
   left: 5px;
 }
 .affix ul > li > a:before,
-.affix ul ul {
+.affix ul ul,
+.affix ul ul > li > a:before {
   display: none;
 }
 .affix ul > li.active > ul,
