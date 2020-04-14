@@ -45,7 +45,7 @@ The other configurations and settings are still relevant for the architecture an
 
 The Snowflake load process uses a custom SSIS component to provide a solid query experience in SSIS.
 
-Use the BimlFlex installer to install the required Custom components. The latest version is available to download here: [BimlFlex Release Notes](xref:bimlflex-release-notes)
+Use the BimlFlex installer to install the required Custom components. The latest version is available to download here: [](xref:bimlflex-release-notes)
 
 <!-- TODO: Snowflake specific deployment steps. -->
 <!--
