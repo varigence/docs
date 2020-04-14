@@ -1007,12 +1007,12 @@ div.embeddedvideo iframe {
     .tabGroup a[role="tab"]:hover, .tabGroup a[role="tab"]:focus, .tabGroup a[role="tab"][aria-selected="true"] {
       border-bottom: 2px solid #0050C5; }
     .tabGroup a[role="tab"][aria-selected="true"] {
-      color: #222; }
+      color: #00416B; }
     .tabGroup a[role="tab"]:hover, .tabGroup a[role="tab"]:focus {
-      color: #0050C5; }
+      color: #00416B; }
     .tabGroup a[role="tab"]:focus {
-      outline: 1px solid #0050C5;
-      outline-offset: -1px; }
+      outline: none;
+      outline-offset: 0px; }
   @media (min-width: 768px) {
     .tabGroup a[role="tab"] {
       padding: 5px 15px; } }
@@ -1033,11 +1033,6 @@ div.embeddedvideo iframe {
 
 .mainContainer[dir='rtl'] main ul[role="tablist"] {
   margin: 0; }
-
-
-
-
-
 
 
 
@@ -1071,7 +1066,6 @@ div.embeddedvideo iframe {
     text-decoration: none;
     font-size: 14px;
 }
-
 
 .navbar {
     position: relative;
