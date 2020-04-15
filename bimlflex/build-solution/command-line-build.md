@@ -1,5 +1,5 @@
 ---
-uid: command-line-build
+uid: bimlflex-command-line-build
 title: Building Using the Command Line
 ---
 
@@ -18,6 +18,7 @@ For a `bimlc.exe` build, take note of the following text in the output window:
 ```console
 bimlc.exe @"$$\DemoProject\output\DemoProject.mst.bimlc.resp"
 ```
+
 >[!NOTE]
 > The $$ represents the base path.
 
@@ -31,8 +32,8 @@ For an `MsBuild.exe` build, take note of the following text in the output window
 C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe @"$$/DemoProject/output/DemoProject.mst.resp"
 ```
 
-In order to run run this build in an automated scenario, using `MsBuild.exe`, simply pass in the command above. The `.resp` file is generated based off the project's settings. You can manually edit these fields yourself in the file, or change the project settings in BimlStudio and rebuild your project. 
+In order to run run this build in an automated scenario, using `MsBuild.exe`, simply pass in the command above. The `.resp` file is generated based off the project's settings. You can manually edit these fields yourself in the file, or change the project settings in BimlStudio and rebuild your project.
 
 ## More CI/CD Examples
 
-Please see our article on [Continuous Integration and Continuous Delivery](../adf-deployment/continuous-integration-and-continuous-delivery.md) for more examples of the automated build process.
+Please see our article on [ADF Continuous Integration and Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery) for more examples of the automated build process.

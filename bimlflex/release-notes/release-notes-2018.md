@@ -5,7 +5,7 @@ name: BimlFlex Release Notes 2018
 # Release Notes 2018
 
 > [!NOTE]
-> Please note the current Release Notes are available here: @bimlflex-release-notes
+> Please note the current Release Notes are available here: [](xref:bimlflex-release-notes)
 
 ## BimlFlex 2018
 

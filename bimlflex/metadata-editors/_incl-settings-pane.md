@@ -29,7 +29,7 @@ Click the *New Customer* button and enter a new **Customer** to create a new cus
 ### Additional Options
 | Option | Description |
 |-|-|
-| Use My Connection Strings (Locally) | Specifies that the app should use and update Connection String Changes for the current user only. |
+| Use My Connection Strings (Locally) | Specifies that the app should use and update Connection String Changes for the current user only.  Please note that this only updates the *Connection String* property of the **Connection** and not *Catalog*. |
 | Use My Exclusions (Locally) | Specifies that the app should use and update Exclusions for the current user only. |
 | Show Deleted | Shows deleted entities. Use this to view and restore entities that are deleted. |
 | Show Excluded | Shows excluded entities. Use this to view and restore entities that are excluded. |

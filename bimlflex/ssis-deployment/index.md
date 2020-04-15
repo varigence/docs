@@ -3,7 +3,7 @@ title: SSIS Deployment Overview
 ---
 # SSIS Deployment Overview
 
-The ability to create SSIS projects is a central part of BimlFlex. In this section there is ample information regarding the deployment of your BimlFlex SSIS assets. When using SSIS for an ELT process, SSIS serves as the orchestration engine for running SQL-based transformations on the database. When using SSIS for an ETL process, SSIS serves both as the orchestration engine and the data transformation system. This article touches on a number of topics related to SSIS deployment. 
+The ability to create SSIS projects is a central part of BimlFlex. In this section there is ample information regarding the deployment of your BimlFlex SSIS assets. When using SSIS for an ELT process, SSIS serves as the orchestration engine for running SQL-based transformations on the database. When using SSIS for an ETL process, SSIS serves both as the orchestration engine and the data transformation system. This article touches on a number of topics related to SSIS deployment.
 
 ## Concurrent Development
 

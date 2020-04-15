@@ -17,7 +17,7 @@ We were in the same boat and one of the biggest challenges we faced converting o
 
 ## Snowflake Automation Architecture
 
-![Snowflake Automation Architecture -center -50%](https://varigencecom.blob.core.windows.net/walkthrough/bimlflex-modern-data-warehouse-architecture-for-snowflake.png "Snowflake Automation Architecture")
+![Snowflake Automation Architecture -border-image](https://varigencecom.blob.core.windows.net/walkthrough/bimlflex-modern-data-warehouse-architecture-for-snowflake.png "Snowflake Automation Architecture")
 
 ## Importing Metadata
 
@@ -25,7 +25,7 @@ Before we get into all the cool data integration options the first step is to ha
 
 BimlFlex makes this super easy and support all the major source systems you simply point the app at your system and choose the tables to be integrated.
 
-![Snowflake Import Metadata -center -50%](images/bimlflex-snowflake-import-metadata.gif "Snowflake Import Metadata")
+![Snowflake Import Metadata -border-image](images/bimlflex-snowflake-import-metadata.gif "Snowflake Import Metadata")
 
 ### Ingest Data
 
@@ -33,11 +33,11 @@ Getting your data into Snowflake is actually quite easy to automate using the re
 
 Well, actually it turns out that it is not quite that simple because you have to accommodate for change data capture and high watermark source extracts. Luckily we have already solved this for our [Azure SQL Data Warehouse](https://azure.microsoft.com/en-au/services/sql-data-warehouse/) templates and it turns out that being able to split the extract into multiple files has measurable performance improvement when loading the data into Snowflake using their `COPY` command.
 
-![Snowflake Multi Thread Files -center -50%](images/bimlflex-snowflake-multi-thread-files.png "Snowflake Multi Thread Files")
+![Snowflake Multi Thread Files -border-image](images/bimlflex-snowflake-multi-thread-files.png "Snowflake Multi Thread Files")
 
 Working with one of our early adopters they recommended that we should add a configuration to perform `RESUME` and scale the `WAREHOUSE_SIZE` when the workload batch start and then scale it down and `SUSPEND`, so we did.
 
-![Snowflake Batch Scaling -center -50%](images/bimlflex-snowflake-batch-scaling.png "Snowflake Batch Scaling")
+![Snowflake Batch Scaling -border-image](images/bimlflex-snowflake-batch-scaling.png "Snowflake Batch Scaling")
 
 ### Orchestrate
 
@@ -47,7 +47,7 @@ We decided to pick the most widely used `ETL` tool, [SQL Server Integration Serv
 
 One of the challenges we faced in porting our [Azure SQL Data Warehouse](https://azure.microsoft.com/en-au/services/sql-data-warehouse/) templates over to Snowflake was the lack of `SQL` stored procedures and the `ODBC` driver only supporting a single statement at a time. Our development team used the [Snowflake Connector for .NET](https://github.com/snowflakedb/snowflake-connector-net) as a baseline and create both an SSIS Custom Component and [Azure Data Factory](https://azure.microsoft.com/en-au/services/data-factory/) Custom Activity that will be available in our next release.
 
-![Snowflake Dataflow -center -50%](images/bimlflex-snowflake-dataflow.png "Snowflake Dataflow")
+![Snowflake Dataflow -border-image](images/bimlflex-snowflake-dataflow.png "Snowflake Dataflow")
 
 Now that we had a robust interface it was simply a matter of refactoring our ELT code and utilize the best Snowflake features. The refactoring did not take our team to long because of the `ANSI SQL` compatibility of our templates, we just had to refactor the use of `TEMPORARY` and `TRANSIENT` table declarations and some of the `CTAS` statements. The fact that we did not have to accommodate `HASH` distribution in Snowflake was a relief to our team and it would be great if other vendors adopt this.
 
@@ -63,7 +63,7 @@ Another benefit of using SSIS was that we could thread the output into multiple 
 
 Landing your data into Snowflake is not enough to call it a data warehouse. As powerful and scalable as Snowflake is it is "just" a database and all the other integration tasks that make your solution an enterprise solution will still need to be done.
 
-![Snowflake Accelerator -center -50%](images/bimlflex-snowflake-accelerator.gif "Snowflake Accelerator")
+![Snowflake Accelerator -border-image](images/bimlflex-snowflake-accelerator.gif "Snowflake Accelerator")
 
 For Data Vault and Data Mart implementations BimlFlex helps you accelerated the modeling and use the associated metadata to generate optimized push-down ELT harnessing the Snowflake engine. So to simplify (very) you draw a picture and BimlFlex do all the coding for you, just imagine the time money saved instead of manually writing the code.
 

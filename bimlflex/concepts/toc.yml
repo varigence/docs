@@ -10,8 +10,14 @@
   href: data-vault-templates.md
 - name: Data Mart Templates
   href: data-mart-templates.md
+#- name: Bathc Orchestration
+#  href: batch-orchestration.md
+#- name: Extension Points
+#  href: extension-points.md
 - name: Integration Keys
   href: integration-keys.md
+- name: Hashing
+  href: hashing-in-bimlflex.md
 - name: Load Parameters
   href: load-parameters.md
 - name: Delete Detection

@@ -20,12 +20,12 @@ To add existing Biml files to a project, follow these steps:
 
 1. Click **Open** to add the files to the project.
 
-1. Using the **Logcal View** you might need to **Convert to Live BimlScript** the files.
+1. Using the **Logical View** you might need to **Convert to Live BimlScript** the files.
 
     ![Logical View - Dimensions](https://varigencecom.blob.core.windows.net/images-mistdocumentation/008_Step01.png)
 
 1. Save to project to commit your changes.
 
-For the AdventureWorks LT sample, you will need to download a zip file containing two Biml files: DimDate and DimCustomer for [Here](/downloads/walkthrough_addexistingfiles.zip). After unzipping the file add them to your project. After adding the files, the logical view should include the DimDate and DimCustomer dimensions.
+For the AdventureWorksLT sample, you will need to download a zip file containing two Biml files: DimDate and DimCustomer for [Here](/downloads/walkthrough_addexistingfiles.zip). After unzipping the file add them to your project. After adding the files, the logical view should include the DimDate and DimCustomer dimensions.
 
 ![Logical View - Dimensions](https://varigencecom.blob.core.windows.net/images-mistdocumentation/008_Step02.png)

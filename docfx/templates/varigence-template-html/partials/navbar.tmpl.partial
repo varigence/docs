@@ -2,7 +2,14 @@
 
 <div class="navbar navbar-light navbar-expand-md navbar-text navigation-clean-button" id="topnav">
     <div class="container-fluid">
+        
+        <!--
         <a href="//www.varigence.com" class="navbar-brand" style="background-image: url('//theme.zdassets.com/theme_assets/1977347/59103e84c45142e596403c8aac83c16c36c262b8.png');background-size: cover;background-repeat: no-repeat;height: 66px;width: 200px;background-position: center;"></a>
+        -->
+        <!--
+        <a href="//www.varigence.com" class="navbar-brand" style="background-image: url('/content/images/varigence-header-2019.png');background-size: cover;background-repeat: no-repeat;height: 66px;width: 200px;background-position: center;"></a>
+        -->
+        <a href="//www.varigence.com" class="navbar-brand" style="background-image: url('/content/images/varigence-header-2020.png');background-size: cover;background-repeat: no-repeat;height: 66px;width: 200px;background-position: center;"></a>
         <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>

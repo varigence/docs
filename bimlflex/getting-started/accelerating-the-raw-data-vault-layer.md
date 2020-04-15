@@ -4,13 +4,15 @@ title: Accelerating the Data Vault
 ---
 # Accelerating the Data Vault
 
-![Data Vault Acceleration -center](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0 "Data Vault Acceleration")
+![Data Vault Acceleration](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0 "Data Vault Acceleration")
 
-BimlFlex provides a Graphical Data Vault Accelerator that creates Data Vault objects from the defined source metadata.
+The BimlFlex App provides a Graphical Data Vault Accelerator that creates Data Vault objects from the defined source metadata.
 
-Data Vault acceleration is recommended to be performed once the Enterprise Logical Model, the source data model, and the corresponding Data Vault model has been created.
+Data Vault acceleration is recommended to be performed once the Enterprise Logical Model, the source data model, and the corresponding Data Vault model has been completed.
 
-The Data Vault acceleration uses the source metadata and its defined relationships to create a Raw Data Vault layer. Based on this metadata, BimlFlex will automatically create the required Data Vault structures and the source to target mappings in the metadata repository.
+The Data Vault acceleration uses the source metadata, added modeling metadata, and its defined relationships to create a Raw Data Vault layer. Based on this metadata, BimlFlex can accelerate the required Data Vault structures and the source to target mappings in the metadata repository.
+
+![BimlFlex Accelerator](/bimlflex/metadata-editors/images/bimlflex-app-accelerator-full-ui.png "BimlFlex Accelerator")
 
 The BimlFlex App provides a graphical accelerator allowing the modeler to create and tweak the required Data Vault model out of the source model.
 
@@ -22,6 +24,10 @@ For Links, it is possible to control the Unit of Work grouping.
 
 When the preview matches the model expectations, it is published to the metadata repository.
 
-The new Data Vault objects can be reviewed in the Objects page. The source objects have Source to Target Mappings applied to load the Data Vault.
+The new Data Vault objects can be reviewed in the BimlFlex App, in the Data Vault Project, in the Objects page and in the Schema Diagram.
 
-Once the metadata has been refreshed in BimlStudio, it can be built and implemented, or further refined.
+The source objects have Source to Target Column Mappings applied to load the Data Vault. These mappings can be reviewed in the Column Mapping page.
+
+More information on using the BimlFlex App Data Vault Accelerator: [](xref:data-vault-accelerator)
+
+Next Step: [](xref:bimlflex-getting-started-building-the-data-vault-project)

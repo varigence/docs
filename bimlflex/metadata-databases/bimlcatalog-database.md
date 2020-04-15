@@ -4,27 +4,29 @@ title: BimlCatalog database
 ---
 # BimlCatalog database
 
-The BimlCatalog database contains the orchestration and run time information needed to properly load the data warehouse. It logs audit information and errors from processes and provides orchestration for batches in case failures occur mid load.
+The BimlCatalog database contains the orchestration and run time information needed to properly load the data warehouse. It logs audit information and errors from processes and provides orchestration for batches in case failures occur, mid load.
 
 > [!IMPORTANT]
 > The BimlCatalog database contains crucial data for the data warehouse auditing, logging and orchestration. It is important to back up and maintain a disaster recovery policy that matches the organizational requirements for this database.
 
 ## Deploying the BimlCatalog Database
 
-The database is created through the `Setup BimlFlex` menu option in the BimlFlex Ribbon UI in BimlStudio.
+The database is created through the BimlFlex installer or through the `Setup BimlFlex` menu option in the BimlFlex Ribbon UI in BimlStudio.
+
+* See the Installation Guide: [](xref:bimlflex-installing-bimlflex) for deploying the database
+* See this guide for information regarding how to deploy after installation: [](xref:bimlflex-metadata-database-installation)
 
 ## Parameter values
 
-Any parameter variable values are stored in the configuration tables.
+BimlCatalog allows for tracking of a variety of parameter values. These can be parameters that are used in packages, pipelines, SSIS projects, and more. This provides the user with a central location to handle parameter values.
 
 ## Orchestration
 
-All orchestration information is maintained within the BimlCatalog database tables.
+All orchestration information is maintained within the BimlCatalog database tables. This includes Azure Data Factory pipelines and SSIS Packages and Tasks.
 
 ## BimlCatalog Approach
 
-The BimlCatalog database is open and queryable and can be interacted with by the data warehousing team.
-It also provides an abstraction layer through Stored Procedures for interacting with the data.
+The BimlCatalog database is open, queryable and can be interacted with by the data warehousing team. It also provides an abstraction layer through Stored Procedures for interacting with the data.
 
 ## Reporting Views
 

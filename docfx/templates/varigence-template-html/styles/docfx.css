@@ -717,9 +717,10 @@ ul.nav.level3>li {
 }
 .affix > ul.level1 {
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 3px;
   height: 100%;
   margin-right: -20px;
+  margin-top: -20px;
 }
 .affix ul > li > a:before {
   color: #cccccc;
@@ -734,7 +735,7 @@ ul.nav.level3>li {
   color: #337ab7;
 }
 .affix ul > li > a {
-  padding: 5px 12px;
+  padding: 2px 13px;
   color: #666666;
 }
 .affix > ul > li.active:last-child {
@@ -752,7 +753,7 @@ ul.nav.level3>li {
   font-weight: bold;
 }
 .affix ul ul > li > a {
-  padding: 2px 15px;
+  padding: 1px 18px;
 }
 .affix ul ul > li > a:before {
   content: ">";
@@ -761,7 +762,8 @@ ul.nav.level3>li {
   left: 5px;
 }
 .affix ul > li > a:before,
-.affix ul ul {
+.affix ul ul,
+.affix ul ul > li > a:before {
   display: none;
 }
 .affix ul > li.active > ul,
@@ -1007,12 +1009,12 @@ div.embeddedvideo iframe {
     .tabGroup a[role="tab"]:hover, .tabGroup a[role="tab"]:focus, .tabGroup a[role="tab"][aria-selected="true"] {
       border-bottom: 2px solid #0050C5; }
     .tabGroup a[role="tab"][aria-selected="true"] {
-      color: #222; }
+      color: #00416B; }
     .tabGroup a[role="tab"]:hover, .tabGroup a[role="tab"]:focus {
-      color: #0050C5; }
+      color: #00416B; }
     .tabGroup a[role="tab"]:focus {
-      outline: 1px solid #0050C5;
-      outline-offset: -1px; }
+      outline: none;
+      outline-offset: 0px; }
   @media (min-width: 768px) {
     .tabGroup a[role="tab"] {
       padding: 5px 15px; } }
@@ -1033,11 +1035,6 @@ div.embeddedvideo iframe {
 
 .mainContainer[dir='rtl'] main ul[role="tablist"] {
   margin: 0; }
-
-
-
-
-
 
 
 
@@ -1071,7 +1068,6 @@ div.embeddedvideo iframe {
     text-decoration: none;
     font-size: 14px;
 }
-
 
 .navbar {
     position: relative;

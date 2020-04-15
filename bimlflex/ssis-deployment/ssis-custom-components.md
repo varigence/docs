@@ -12,27 +12,60 @@ This installation is required for SQL/SSIS Servers that run BimlFlex created pac
 
 The Varigence BimlFlex Custom SSIS Components are part of the BimlFlex installation and can be installed either from the BimlFlex installer or the BimlFlex runtime installer.
 
-Direct download links:
+The latest installer is available here: [](xref:bimlflex-release-notes)
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
-    This installer includes all parts of BimlFlex, including the custom components
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
-    This installer includes the required runtime components for servers that will execute SSIS packages
-
-## Installation
+## Local Installation
 
 Run the installer on the SSIS Server and install the custom components version matching the SSIS Server version and target architecture.
 
-Install the versions matching your environment and expected targets. For Snowflake targets, install both the BimlFlex SSIS Components 2020 and the BimlFlex Snowflake SSIS Components 2020 for your SSIS and SQL Server version.
+For Snowflake targets, install both the BimlFlex SSIS Components 2020 and the BimlFlex Snowflake SSIS Components 2020 for your SSIS and SQL Server version.
 
 > [!NOTE]
 > Only run one of the installers. For minimal installation on a server, only install the components from the Runtime installer
 
-Information on using custom components in the Azure Integration RunTime can be found here: @bimlflex-adding-ssis-custom-components-to-azure-integration-runtime
+## Adding BimlFlex custom SSIS components to Azure Integration Runtime
+
+The Azure Integrated Runtime allows deployment and running of SSIS packages in the Azure cloud environment.
+
+The BimlFlex custom SSIS components are required for the BimlFlex packages to execute and they are deployed to the Runtime As part of the Azure Integration Runtime setup.
+
+More information about the custom configuration step is available in the Azure documentation: [https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup](https://docs.microsoft.com/en-us/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup)
+
+### Sample main.cmd file
+
+In the container, the main.cmd file provides the entry point to the custom configuration setup. Add all required custom setup information in this file, including other drivers, applications and functions that are required by the SSIS packages.
+
+Extract the required custom components as required for the scripted installation and add them to the installation location.
+
+Add the installation steps to the main.cmd as illustrated below:
+
+```cmd
+@echo off
+
+rem SQL Server 2016
+xcopy /F /Y Varigence.Ssis.2016.dll "%ProgramFiles%\Microsoft SQL Server\130\DTS\Tasks"
+xcopy /F /Y Varigence.Ssis.2016.dll "%ProgramFiles(x86)%\Microsoft SQL Server\130\DTS\Tasks"
+gacutil\gacutil /i Varigence.Ssis.2016.dll /f
+echo Successfully installed Varigence BimlFlex Custom Components for SQL Server 2016.
+
+rem SQL Server 2017
+xcopy /F /Y Varigence.Ssis.2017.dll "%ProgramFiles%\Microsoft SQL Server\140\DTS\Tasks"
+xcopy /F /Y Varigence.Ssis.2017.dll "%ProgramFiles(x86)%\Microsoft SQL Server\140\DTS\Tasks"
+gacutil\gacutil /i Varigence.Ssis.2017.dll /f
+echo Successfully installed Varigence BimlFlex Custom Components for SQL Server 2017.
+
+rem SQL Server 2019
+xcopy /F /Y Varigence.Ssis.2019.dll "%ProgramFiles%\Microsoft SQL Server\150\DTS\Tasks"
+xcopy /F /Y Varigence.Ssis.2019.dll "%ProgramFiles(x86)%\Microsoft SQL Server\150\DTS\Tasks"
+gacutil\gacutil /i Varigence.Ssis.2019.dll /f
+echo Successfully installed Varigence BimlFlex Custom Components for SQL Server 2019.
+```
+
+Once the runtime is configured to deploy the custom components it is possible to deploy and validate a project without warnings or errors relating to the custom components.
 
 ## Uninstallation
 
-Use the add remove programs to uninstall the Varigence BimlFlex Custom SSIS Components to the server.
+Use the add remove programs to uninstall the Varigence BimlFlex Custom SSIS Components.
 
 ## Custom Components for SQL Server
 

@@ -4,7 +4,7 @@ title: BimlFlex Extension Points
 ---
 # Extension Points
 
-Reference information is detailed in the @extension-point-definitions document
+Reference information is detailed in the [](xref:bimlflex-extension-point-definitions) document
 
 Extension Points are used to extend the default functionality of BimlFlex using standard Biml code. It can extend and override many different areas of the BimlFlex framework.
 
@@ -136,6 +136,6 @@ A more technical approach that require some knowledge of `Biml`.
 
 1. click `Update Preview` on the `BimlScript` tab.
 1. In the `Preview Expanded BimlScript` there are `XML` comments with the available `Extension Point` types and their targets.
-1. When targetting the parent of an Object-based Extension Point, also set `CustomOutput.ObjectInherit = true;`
+1. When targeting the parent of an Object-based Extension Point, also set `CustomOutput.ObjectInherit = true;`
 
 ![Update Preview -center -100%](../user-guide/images/update-preview-extensionpoint-target.png "Update Preview")

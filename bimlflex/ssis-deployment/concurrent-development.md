@@ -6,7 +6,7 @@ title: BimlFlex Concurrent Development
 
 Most BimlFlex deployments feature several teams working on the same Data Warehouse at the same time. A successful combination of concurrent development and Data Warehouse management normally uses several features in BimlFlex for support. A sample process is described below.
 
-Supporting documentation: @bimlflex-continuous-integration-and-continuous-delivery
+Supporting documentation: [](xref:bimlflex-continuous-integration-and-continuous-delivery)
 
 ## Metadata setup and Database considerations
 

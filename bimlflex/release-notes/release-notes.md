@@ -39,13 +39,13 @@ BimlFlex now has full support for Azure Data Factory (ADF) workflows for Azure S
 
 This includes full support to build Azure ARM templates for direct deployment of the pipelines to Azure as well as json file generation for individual deployments and deployment through the ADF DevOps git integration.
 
-More information on ADF here: @adf-deployment-overview
+More information on ADF here: [](xref:adf-deployment-overview)
 
 #### Data Mappings visualizations and editor for BimlFlex App
 
 The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
 
-More informmation on the BimlFlex app here: @bimlflex-app-introduction
+More information on the BimlFlex app here: [](xref:bimlflex-app-introduction)
 
 #### BimlCatalog Operational Reporting in BimlFlex App
 
@@ -53,7 +53,7 @@ The BimlFlex app has been updated with BimlCatalog Operational Reporting capabil
 
 These reports allow direct access to the logging in the BimlCatalog from the app and help with both development and operational insights
 
-More information on operational reporting here: @bimlflex-operational-reporting
+More information on operational reporting here: [](xref:bimlflex-operational-reports)
 
 #### Restructure BimlCatalog for more agnostic logging
 
@@ -63,13 +63,13 @@ Reporting views and Stored Procedures are unchanged.
 
 ADF Stored Procedures have been updated to better support logging and orchestration.
 
-More information on the BimlCatalog here: @bimlcatalog-database
+More information on the BimlCatalog here: [](xref:bimlcatalog-database)
 
 #### Additional Extension Points for bespoke processing requirements
 
 Several new Extension Points have been added to BimlFlex.
 
-Many are targetting SQL Script processing, allowing better flexibility for cloud implementations and ADF workflows.
+Many are targeting SQL Script processing, allowing better flexibility for cloud implementations and ADF workflows.
 
 #### Additional support script creation for build and deployment
 
@@ -166,7 +166,7 @@ The settings have been updated. New settings are available, some settings have b
 * Add: New Project settings dialog in BimlStudio. This allows easier access to control Build target and method as well as local project configurations.
 * Update: The default build versions for new projects have been updated to SQL Server 2017
 * Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
-* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here @bimlflex-source-excel-plus
+* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here [](xref:bimlflex-source-excel-plus)
 * Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical namespaces). A new utility app is available to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
 * New Extension Points: `RdvPreProcessSql`, `RdvPostProcessSql` allows injection of SQL logic in the RDV load SQL Stored Procedures.
 * Update: Some `Generate Scripts` menu options have had their `By Source` suffix removed.
@@ -182,5 +182,5 @@ download links to this build:
 
 Legacy Release Notes:
 
-* @bimlflex-release-notes-2019
-* @bimlflex-release-notes-2018
+* [](xref:bimlflex-release-notes-2019)
+* [](xref:bimlflex-release-notes-2018)

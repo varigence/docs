@@ -11,7 +11,7 @@ title: BimlFlex Software and Hardware requirements
 * Same requirements as recommended for the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-au/windows/windows-10-specifications)
 * Same requirements as approved for the Visual Studio version and edition in use [(For Visual Studio 2015: https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)](https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)
 * BimlStudio supports Visual Studio 2010, 2012, 2013, 2015, 2017 and 2019. The version of [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT BI) and Visual Studio used depends on the SQL Server version used for the SSIS Server
-* A valid Varigence BimlStudio Product key is required for use.
+* A valid Varigence BimlFlex Product key is required for use.
 * Available memory to hold the model
 * Available processing power to process the model
 
@@ -51,8 +51,6 @@ The SQL Server where the Data Warehouse databases are deployed requires no speci
 
 The SQL Server where the BimlFlex metadata databases are deployed requires no specific installations or configurations. It is required that the developers and analysts have adequate access to work with the metadata and target databases.
 
-More information on the Server installation can be found here: @bimlflex-ssis-server-install
-
 ## Database requirements
 
 ### BimlFlex
@@ -63,6 +61,8 @@ All developers and analysts using either BimlStudio, the BimlFlex app or the Exc
 
 The database must be backed up as required in case of database server failures or for rollback requirements
 
+More information: [](xref:bimlflex-database)
+
 ### BimlCatalog
 
 BimlFlex also requires an orchestration database for all orchestration, logging, and auditing to be installed/configured and available on SQL Server.
@@ -70,3 +70,5 @@ BimlFlex also requires an orchestration database for all orchestration, logging,
 For installations and configurations using SSIS with package deployment methods (such as SQL Server 2008R2), there is also a requirement for an SSIS logging table. This is integrated into the BimlCatalog database.
 
 The database must be backed up as required in case of database server failures or for rollback requirements
+
+More information: [](xref:bimlcatalog-database)

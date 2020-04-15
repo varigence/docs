@@ -4,7 +4,7 @@ title: Applying Load Parameters
 ---
 # Applying Load Parameters
 
-![Applying Load Parameters -center](https://www.youtube.com/watch?v=7GwiIC5vbs8?rel=0&autoplay=0 "Applying Load Parameters")
+![Applying Load Parameters](https://www.youtube.com/watch?v=7GwiIC5vbs8?rel=0&autoplay=0 "Applying Load Parameters")
 
 The way the load process should derive a valid delta is an important steps in the analysis of a source system.
 
@@ -36,6 +36,8 @@ CONVERT(VARCHAR(23),MAX(@@this),121)
 
 The `@@this` shortcut refers to the current `ColumnName`.
 
-The extract packages are expanded with the required get and set parameter tasks and the source queries are expanded with the required `WHERE` SQL syntax to only load data that changed since last load.
+The extract packages are expanded with the required get and set parameter tasks and the source queries are expanded with the required `WHERE` SQL syntax to only load data that changed since the last load.
 
 As the parameters are stored in the BimlCatalog database it is necessary to reset these if a new initial load is performed, such as after rebuilding the persistent staging tables in a getting started scenario. If the tables are emptied and the load parameter is kept, a package execution will not load any of the existing source data to the staging tables.
+
+Next Step: [](xref:bimlflex-getting-started-adding-business-data-vault-performance-constructs)

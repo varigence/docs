@@ -1,8 +1,10 @@
 ---
-uid: bimlflex-user-guide-tips-and-tricks
+uid: zzz-bimlflex-user-guide-tips-and-tricks
 title: Tips and Tricks
 ---
 # BimlFlex Tips and Tricks
+
+<!-- TODO: Split up and move to separate scenarios or move out of documentation into Zendesk -->
 
 BimlFlex Tips and Tricks is a set of smaller, focused design and implementation notes that illustrate core features, nifty tricks or similar.
 
@@ -359,7 +361,7 @@ You can use this script to identify which **Project** reference the **Connection
 More information:
 
 * [Working with environments and the SSIS catalog](../user-guide/deployment-guide.md)
-* [Working with sensitive settings in the SSIS catalog](../tips-and-tricks/using-sensitive-parameters-in-ssis-catalog.md)
+* [Working with sensitive settings in the SSIS catalog](../ssis-deployment/sensitive-info-management.md)
 
 ### Video
 

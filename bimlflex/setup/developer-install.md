@@ -4,6 +4,8 @@ title: BimlFlex Developer Installation
 ---
 # Developer Installation
 
+<!-- TODO Legacy, to be deleted -->
+
 Developer installations provide the complete modeling, developer, and artifact generation environment for building BimlFlex solutions.
 
 ## Installation Media
@@ -12,7 +14,7 @@ Varigence provides a single consolidated installer for all BimlFlex components:
 
 * `BimlFlexDevSetup(_OptionalVersion).exe`
 
-The current installer is available through the @bimlflex-release-notes page
+The current installer is available through the [](xref:bimlflex-release-notes) page
 
 ## BimlFlex Setup Installation Wizard
 

@@ -43,7 +43,7 @@
 - Added option to disable autoformat in preview pane
 - Significantly improved load time of existing Biml projects by eliminating upfront Biml file parsing.
 - Fixed an issue where bulk opening multiple files and then closing them could cause a VS crash or an error when opening additional files
-- Biml file icon is now registered by the add-in if it isn’t already registered
+- Biml file icon is now registered by the add-in if it isn't already registered
 
 ### Biml Code Editor
 
@@ -59,11 +59,11 @@
 
 ### Biml Language
 
-- See @biml-release-notes
+- See [](xref:biml-release-notes)
 
 ### Biml API
 
-- See @biml-release-notes
+- See [](xref:biml-release-notes)
 
 ### Database Providers and Type Mappings
 
@@ -155,13 +155,13 @@
 - Fix for case insensitivity in VB within metadata dynamic object templates.
 - Fixed issue where code directives inside includes were not being added to the parent file.
 - Fixed issue where language selection in global includes would not apply to dynamic object code files.
-- Fixed issue where any non-Biml files in the logical view would be removed by not deleted from the harddrive.
+- Fixed issue where any non-Biml files in the logical view would be removed by not deleted from the hard drive.
 - Fixed issue where Bundle settings editor did not have a scrollbar.
-- Fixed issue where failed builds would be reported as successful when running in unicode support mode.
+- Fixed issue where failed builds would be reported as successful when running in Unicode support mode.
 - Fixed issue where dataflow and control flow edges would not render on machines with some locale settings.
 - Fixed partition source selector in partition editor.
 - Fixed issue where items duplicated from a BimlScript object were not fully populated and could not be modified.
-- Fixed issue where custom dataflow properties for custom components could have invaid types - particularly for System.Null.
+- Fixed issue where custom dataflow properties for custom components could have invalid types - particularly for System.Null.
 - Fixed issue where error messages for code files would not show the correct filename and line number. Performance
 - Improved performance of CallBimlScript by around 30X by adding caching when possible.
 - Added caching of internal build information for ScriptTask Projects and Script Component Projects. This will massively increase build performance where the same script task or component is reused in many locations in a project (provided that the ProjectCoreName is also reused).

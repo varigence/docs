@@ -352,18 +352,18 @@ You can use this script to identify which **Project** reference the **Connection
 <#    foreach(var connection in connections.Distinct()) {#>
     <#=connection #>
 <# } #>
-    
+
 <# } #>
 ```
 
 More information:
 
-* @bimlflex-ssis-deployment-using-deployment-wizard
-* @bimlflex-ssis-deployment-sensitive-info-management
+* [](xref:bimlflex-ssis-deployment-using-deployment-wizard)
+* [](xref:bimlflex-ssis-deployment-sensitive-info-management)
 
 ### Video
 
-![Parameterize Connections -center](https://www.youtube.com/watch?v=4V8v4Brbg7E?rel=0&autoplay=0)
+![Parameterize Connections](https://www.youtube.com/watch?v=4V8v4Brbg7E?rel=0&autoplay=0)
 
 ## Replace columns in the SSIS Data Flow
 
@@ -388,7 +388,7 @@ The following example uses the custom Snowflake components to call a Snowflake d
 
 This is an example Batch Pre-processing Extension Point that injects the correct Snowflake component at the start of the Batch execution and calls the specified Stored Procedure.
 
-The Target on line 1 needs to match the target batch where the pre-processign should happen. The `SnowflakeSqlStatement` expression should contain the required Snowflake SQL Statement.
+The Target on line 1 needs to match the target batch where the pre-processing should happen. The `SnowflakeSqlStatement` expression should contain the required Snowflake SQL Statement.
 
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="BatchPreProcess" target="YOUR_BATCH_NAME" #>

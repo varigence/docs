@@ -24,8 +24,8 @@ In addition to the support here, we have developed a community at [Bimlscript.co
 
 <a href="bimlflex/index.md"><img src="content/images/bimlflex.png" alt="BimlFlex -h24px"></a>
 
-* [Getting started with BimlFlex](bimlflex/getting-started/intro-videos.md)
-* [BimlFlex User Guide](bimlflex/index.md)
+* [Getting Started with BimlFlex](bimlflex/getting-started/index.md)
+* [BimlFlex Documentation](bimlflex/index.md)
 * [Reference Documentation](bimlflex/reference-documentation/index.md)
 
 </div>

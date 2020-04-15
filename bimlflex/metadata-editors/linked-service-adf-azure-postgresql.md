@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for Azure Database for Postg
 
 After selecting `Azure PostgreSQL` from the Linked Service Type dropdown, the form required for creating an Azure Database for PostgreSQL Linked Service will appear.
 
-![Azure Database for PostgreSQL Linked Service Form -center -50%](images/bimlflex-ss-app-connections-adf-postgresql-form.png "Azure Database for PostgreSQL Linked Service Form")
+![Azure Database for PostgreSQL Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-postgresql-form.png "Azure Database for PostgreSQL Linked Service Form")
 
 ## Required Fields
 
@@ -50,7 +50,7 @@ When a key vault is used in place of a Connection String, Encryption Method deta
 
 #### Validate Server Certificate
 
-![Validate Server Certificate -center -50%](images/bimlflex-ss-app-connections-adf-postgresql-validate-server-certificate.png "Validate Server Certificate Checkbox")
+![Validate Server Certificate -border-image](images/bimlflex-ss-app-connections-adf-postgresql-validate-server-certificate.png "Validate Server Certificate Checkbox")
 
 The checkbox for Validate Server Certificate will only appear when `SSL` or `Request SSL` are selected in the Encryption Method dropdown. The default value is unchecked, or false.
 
@@ -65,7 +65,7 @@ Password will be used by the Linked Service form for authentication with the Azu
 
 Any additional properties entered here will be included in the Connection String. These properties should be entered the same way you want them to appear in the Connection String and separated by a semicolon, e.g. `key=value;secondKey=secondValue`.
 
-Values entered in the Additional Connection String Properties textbox will be maintained when changing Linked Service types. If a required property from one service type does not have a corresponding text box in the newly selected Linked Service type, it will appear as an additional propertie.
+Values entered in the Additional Connection String Properties textbox will be maintained when changing Linked Service types. If a required property from one service type does not have a corresponding text box in the newly selected Linked Service type, it will appear as an additional property.
 
 ### Azure Data Factory Linked Services Additional Information
 

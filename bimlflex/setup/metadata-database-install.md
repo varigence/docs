@@ -1,45 +1,78 @@
 ---
-uid: bimlflex-metadata-database-install
-title: BimlFlex Metadata Database Install
+uid: bimlflex-metadata-database-installation
+title: BimlFlex Metadata Database Installation
 ---
-# BimlFlex Metadata Database Install
+# BimlFlex Metadata Database Installation
 
-BimlFlex Data Warehouse Automation solutions are driven off of the user's metadata. This metadata is stored in a metadata database, called BimlFlex by default. 
+BimlFlex data warehouse automation metadata is stored in the BimlFlex metadata database
 
-## Open the Project
-In order to setup the metadata database, the user must already have a [BimlFlex project for BimlStudio](../build-solution/setup-bimlstudio-project.md) created. After that step is complete, the user can open BimlStudio and open their project. Notice on the main page there is a button to assist in getting your metadata database setup. 
+More information: [BimlFlex Metadata Database](../metadata-databases/bimlflex-database.md)
 
-<img 
-    src="images/metadata-database-setup-btn.png" 
-    class="border-image" 
-    style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
-/>
+Operational data, audit information and logging data is stored in the BimlCatalog Database
 
-## Setting the Connection String
-After clicking the button, the following dialog will pop up.
+More information: [BimlCatalog Database](../metadata-databases/bimlcatalog-database.md)
 
-<img 
-    src="images/metadata-database-setup-dialog.png" 
-    class="border-image" 
-    style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
-/>
+There are two different methods used to install these databases. The first option is to use the BimlFlex installer. The second option is to use BimlStudio. 
 
-In this dialog the user can configure their connection strings to point at the database infrastructure of their choosing. 
+## BimlFlex Installer Setup
+
+### Enable the Database Installation
+
+On the first pane of the installation process, there is the option to setup and install the BimlFlex and BimlCatalog databases. Check this box before continuing.
+
+![Setup BimlFlex Button -border-image](images/bfxinstalldbs.png "Setup BimlFlex Button")
+
+### Setting the Connection Strings
+
+Proceed through the setup until you reach this screen:
+
+![Configure your connection -border-image](images/installer-db-configuration.png "Configure Your Connection")
 
 >[!NOTE]
-> Users can change the desired name of the databases from their defaults, **BimlFlex** and **BimlCatalog** respectively.
+> Click `Test` to test the target connection and ensure that it is valid.
 
-## Deployment
+This represents the location(s) that the BimlFlex database will be installed. Once you have a working connection string, click the `Add` button to finalize your configuration.
 
-Once the user is ready to deploy, simply click *Deploy*. A dialog will pop up that updates the user on the progress of the deployment.
+The desired installation location is now saved and will be used to install the database.
 
-<img 
-    src="images/installing-text.png" 
-    class="border-image" 
-    style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
-/>
+![Finalized installation locations -border-image](images/addedlocations.png "Installation locations")  
 
-Once this process is complete, the user can go to their database management tool of their choice, and view their created database.
+>[!IMPORTANT]
+> It is important to back up any databases prior to an upgrade.
+
+Now press `Next` to repeat this same configuration process for **BimlCatalog**.
+
+Before finalizing your upgrade or installation, examine the *Pending Actions* list. Ensure that there is a pending action that corresponds to the desired database installation.
+
+Now press `Upgrade` or `Install`. Congratulations, the BimlFlex database is now installed or upgraded.
+
+## BimlStudio Setup
+
+### Open the Project in BimlStudio
+
+It is also possible to install the databases from the BimlFlex project in BimlStudio.
+
+In order to setup the databases, first create a [BimlFlex project for BimlStudio](xref:bimlflex-setup-bimlstudio-project)
+
+When the BimlFlex project is opened in BimlStudio, the metadata database setup option is available in the BimlFlex Ribbon.
+
+![Setup BimlFlex Button -border-image](images/metadata-database-setup-btn.png "Setup BimlFlex Button")  
+
+### Setting the Connection String
+
+Set up the databases through the **Setup BimlFlex** dialog
+
+![Setup BimlFlex Dialog Box -border-image](images/metadata-database-setup-dialog.png "Setup BimlFlex Dialog Box")
+
+Configure the connection string to point to the database instance where the database should be created
+
+> [!NOTE]
+> Change the name of the databases from their defaults, **BimlFlex** and **BimlCatalog**, as needed
+
+### Deployment
+
+Click **Deploy** to deploy the databases
+
+![Deploying BimlFlex Databases -border-image](images/installing-text.png "Deploying BimlFlex Databases")
+
+Once setup completes, configure the BimlFlex Project and BimlFlex App metadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reports to use the **BimlCatalog** database
