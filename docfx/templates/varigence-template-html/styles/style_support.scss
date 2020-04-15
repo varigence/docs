@@ -21,7 +21,7 @@ ci-search {
 */
 
 ci-search {
-  margin-top: calc(#{$font_size_base} * #{$line_height_base} * -16);
+  margin-top: calc(#{$font_size_base} * #{$line_height_base} * -16px);
   z-index: 999;
   position: relative;
   display: flex;
@@ -39,7 +39,7 @@ ci-search.search_results_page {
 
 @media (max-width: 992px) {
   ci-search {
-    margin-top: calc(#{$font_size_base} * #{$line_height_base} * -13);
+    margin-top: calc(#{$font_size_base} * #{$line_height_base} * -13px);
   }
 }  
 
