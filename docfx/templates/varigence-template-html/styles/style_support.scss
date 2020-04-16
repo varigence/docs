@@ -3212,7 +3212,6 @@ input[type="search"]:focus {
 }
 
 .article ul li::before {
-  content: " ";  /* small square character as bullet for list */
   color: $brand_primary; 
   display: inline-block;
   width: 1em; 
@@ -3225,7 +3224,6 @@ input[type="search"]:focus {
 }
 
 .article ul ul li::before {
-  content: " ";  /* small square character as bullet for list */
   color: $brand_primary; 
   display: inline-block;
   width: 1em; 
