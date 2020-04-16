@@ -21,6 +21,28 @@ Build 5.0.64613.0, release date: 07 April 2020
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_2020.preview.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
+<!-- 
+
+## Build 5.0.nnnn.0, release date: nn Mmmm 2020
+
+* Add: New Settings for metadata importer behavior control. The Metadata importer default settings are now controllable through Metadata Settings. This allows for metadata driven defaults for importer behavior. The new settings are listed below and correspond to the existing User Interface options.
+
+**New Metadata Importer Settings**
+
+| Setting                          | Description |
+| -------                          | ----------- |
+| ApplyNamingConvention            | Naming convention to use for objects and columns.  Case sensitive options are `None`, `PascalCase`, `camelCase`, `Proper_Case`, `Proper Case`, `UPPER_CASE` and `lower_case`. |
+| InferIntegrationKeyFrom          | Where to infer the Integration Key from.  Case sensitive options are `None`, `PrimaryKey`, `UniqueKey`, `FirstColumn`, `IdentityColumn` and `ColumnName::[NameOfColumn]`.  When specifying `ColumnName`, a name needs to be added in the Import Metadata screen or specify `ColumnName::UID` to auto populate the column name field with `UID` |
+| RetainExistingMetadata           | What existing Metadata should be retained when doing an import of existing data.  Should be specified as a comma-separated list and options are `Data Types`, `Column Orders`, `References`, and `All Other`.  I.e. specify `Column Orders, All Other` without the double quotes |
+| KeyEndsWith                      | The strings that BimlFlex interprets as key identifiers.  For a source table with a column `ProductCategoryId` that links to a ProductCategory table, BimlFlex will create a Model Reference called `ProductCategory` as name |
+| AppendIntegrationKey             | The string to append to Integration Keys |
+| PadIntegrationKey                | Number of Characters to pad the Integration Key to |
+| AddRecordSourceToIntegrationKey  | Import Metadata will add `@@rs` to Integration Keys if `Y` is specified |
+| ChangeReferencesToIntegrationKey | Import Metadata will change References to Integration Keys if `Y` is specified |
+| ImportViews                      | Should Views be imported when importing Metadata.  Options are `Y` and `N` |
+
+-->
+
 ## Build 5.0.64613.0, release date: 07 April 2020
 
 ### Feature Highlights
