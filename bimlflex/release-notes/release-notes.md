@@ -123,37 +123,31 @@ The settings have been updated. New settings are available, some settings have b
 | SsisDb                  | The SSISDB database name to use |
 | SsisFolder              | The SSIS Catalog folder name to use for generated Script files |
 | SsisServer              | The SSIS Server name to use for generated Script files |
-| DeleteDetectionApplyPsa | Use default process to insert detected deletes into the Persistent table. This can be overriden by the "DeleteDetectionApplyPsa" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
-| DeleteDetectionApplyRdv | Use default process to insert detected deletes into the Data Vault Satellite tables. This can be overriden by the "DeleteDetectionApplyRdv" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
+| DeleteDetectionApplyPsa | Use default process to insert detected deletes into the Persistent table. This can be overridden by the "DeleteDetectionApplyPsa" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
+| DeleteDetectionApplyRdv | Use default process to insert detected deletes into the Data Vault Satellite tables. This can be overridden by the "DeleteDetectionApplyRdv" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
 | PsaDeltaDetectionSql    | Should the delta detection for PSA load use SQL |
 | PsaDeltaLateArriving    | Does the PSA load include late arriving deltas |
 | PsaDeltaSingleChange    | Set this to "Y" if loading into PSA and the Delta only has single changes to each key. This will provide optimized ELT loads |
-| PsaDeltaStageAllRows    | Should the Delta process stage all rows or compress rowchanges |
+| PsaDeltaStageAllRows    | Should the Delta process stage all rows or compress row-changes |
 | PsaEltDeltaIsDerived    | Set this to "Y" if loading into PSA and the Delta has already been derived in the file. This will provide optimized ELT loads |
 | StageBypassPsaChecks    | Set to "Y" to bypass all Persistent Lookup and Checks and apply all records to Staging and Persistent Staging tables. |
 
 **Changed settings**
 
-| Old Name                      | New Name              |
-| --------                      | --------              |
-| AzureArchiveContainerName     | AzureArchiveContainer |
-| AzureDestContainerName        | AzureStageContainer   |
-| AzureDestStorageAccountKey    | AzureStageAccountKey  |
-| AzureDestStorageAccountName   | AzureStageAccountName |
-| AzureDestStorageSasToken      | AzureStageSasToken    |
-| AzureSourceContainerName      | AzureErrorContainer   |
-| AzureSourceStorageAccountKey  | AzureErrorAccountKey  |
-| AzureSourceStorageAccountName | AzureErrorAccountName |
-| AzureSourceStorageSasToken    | AzureErrorSasToken    |
-| AzureArchiveContainerName     | AzureArchiveContainer |
-| AzureDestContainerName        | AzureStageContainer   |
-| AzureDestStorageAccountKey    | AzureStageAccountKey  |
-| AzureDestStorageAccountName   | AzureStageAccountName |
-| AzureDestStorageSasToken      | AzureStageSasToken    |
-| AzureSourceContainerName      | AzureErrorContainer   |
-| AzureSourceStorageAccountKey  | AzureErrorAccountKey  |
-| AzureSourceStorageAccountName | AzureErrorAccountName |
-| AzureSourceStorageSasToken    | AzureErrorSasToken    |
+| Old Key Name                   | New Key Name            |
+| ------------                   | ------------            |
+| AzureDestStorageAccountName    | AzureStageAccountName   |
+| AzureDestStorageAccountKey     | AzureStageAccountKey    |
+| AzureDestStorageSasToken       | AzureStageSasToken      |
+| AzureDestContainerName         | AzureStageContainer     |
+| AzureSourceStorageAccountName  | AzureErrorAccountName   |
+| AzureSourceStorageAccountKey   | AzureErrorAccountKey    |
+| AzureSourceStorageSasToken     | AzureErrorSasToken      |
+| AzureSourceContainerName       | AzureErrorContainer     |
+| AzureArchiveStorageAccountName | AzureArchiveAccountName |
+| AzureArchiveStorageAccountKey  | AzureArchiveAccountKey  |
+| AzureArchiveStorageSasToken    | AzureArchiveSasToken    |
+| AzureArchiveContainerName      | AzureArchiveContainer   |
 
 **Changed defaults**
 
