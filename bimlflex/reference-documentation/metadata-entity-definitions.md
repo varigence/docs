@@ -73,8 +73,6 @@ Configure connection attributes for both Databases and Files. The ConnectionType
 | FilePath | If this is a file connection, this path of the source file. The Biml template will use this attribute in a <ForEachFileLoop> to load all files that match the FilePattern. |
 | NoOfThreads | The default number of threads that SSIS can use to split the load when loading data when this connection is used. The amount of threads can be redefined at the object level. Currently this attribute is only used in the SRC – STG template along with the Balance Data Distributor to allow greater parallelism. Only define a value greater than zero if the Server has enough CPU and Memory to accommodate additional threads. |
 | ExcludeFromModel | Entering Y into this column will determine if the objects associated with this connection's metadata will be excluded along with the rest of the BimlFlex solution. |
-| ExcludeFromBuild | Entering Y into this column will determine if the objects associated with this connection's will be built along with the rest of the solution when the BimlFlex solution is being compiled.  |
-| ExcludeFromValidation | Entering Y into this column will determine if the objects associated with this connection's metadata will be validated along with the rest of the BimlFlex solution. |
 | Description | Optional metadata to provide description. |
 | ConnectionUID | The GUID for the Connection from BimlFlex database used to provide the package id. |
 
@@ -106,8 +104,6 @@ Projects define the integration configuration between source and target. Specify
 | ProjectSubpath | Internal attribute that is used for building the packages into the same project folder. |
 | IntegrationTemplate | Name of Integration template to apply. Below is a list of the current possible Integration Templates. Currently this is a place holder for future separation of ETL logic. |
 | ExcludeFromModel | Entering Y into this column will determine if the objects associated with this project's metadata will be excluded along with the rest of the BimlFlex solution. |
-| ExcludeFromBuild | Entering Y into this column will determine if the objects associated with this project's will be built along with the rest of the solution when the BimlFlex solution is being compiled.  |
-| ExcludeFromValidation | Entering Y into this column will determine if the objects associated with this project's metadata will be validated along with the rest of the BimlFlex solution. |
 | Description | Optional metadata to provide description. |
 | ProjectUID | The GUID for the Project from BimlFlex database used to provide the package id. |
 
