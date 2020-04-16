@@ -67,7 +67,6 @@
 | ImportPath                               | The default import path for file imports |
 | IntegrationKeyNullValue                  | What replacement value should be used for Null values in Integration Keys |
 | IntegrationKeyToUpper                    | Should strings in the Integration Key be upper cased. This is recommended and allows the standard SQL Server case insensitive collation to ingest business keys from multiple sources using different casings to be added to Hubs and treated as the same key without issues. |
-| KeyEndsWith                              | The strings that BimlFlex interprets as key identifier. For a source table with a ProductCategoryId that links to a ProductCategory table, BimlFlex will create a Model Reference called ProductCategory as name |
 | LookupCachePath                          | The default path for Cache files used in lookups |
 | LookupTablePattern                       | The table naming pattern for the Lookup Table |
 | RootPath                                 | The default root path for any other BimlFlex related file operations |
@@ -125,12 +124,25 @@
 | DvUseCacheLookup                         | Enables using the file based cache lookup feature of SSIS for lookups.  Cache files will be created as part of the SSIS process and used for the lookups. In-memory lookups generally perform better and require more available memory |
 | DvUseHashKeys                            | Should the Data Vault use Hash Keys or Natural Keys |
 
+### Model
+
+| Setting Key                              | Setting Description                                                              |
+| ---------------------------------------- | -------------------------------------------------------------------------------- |
+| ApplyNamingConvention                    | Naming convention to use for objects and columns. Case sensitive options are `None`, `PascalCase`, `camelCase`, `Proper_Case`, `Proper Case`, `UPPER_CASE` and `lower_case`. |
+| InferIntegrationKeyFrom                  | Where to infer the Integration Key from. Case sensitive options are `None`, `PrimaryKey`, `UniqueKey`, `FirstColumn`, `IdentityColumn` and `ColumnName::[NameOfColumn]`. When specifying `ColumnName`, a name needs to be added in the Import Metadata screen or specify `ColumnName::UID` to auto populate the column name field with `UID` |
+| RetainExistingMetadata                   | What existing Metadata should be retained when doing an import of existing data. Should be specified as a comma-separated list and options are `Data Types`, `Column Orders`, `References`, and `All Other`. I.e. specify `Column Orders, All Other` without the double quotes |
+| KeyEndsWith                              | The strings that BimlFlex interprets as key identifier. For a source table with a column `ProductCategoryId` that links to a ProductCategory table, BimlFlex will create a Model Reference called `ProductCategory` as name |
+| AppendIntegrationKey                     | The string to append to Integration Keys |
+| PadIntegrationKey                        | Number of Characters to pad the Integration Key to |
+| AddRecordSourceToIntegrationKey          | Import Metadata will add `@@rs` to Integration Keys if `Y` is specified |
+| ChangeReferencesToIntegrationKey         | Import Metadata will change References to Integration Keys if `Y` is specified |
+| ImportViews                              | Should Views be imported when importing Metadata. Options are `Y` and `N` |
+
 ### Naming
 
 | Setting Key                              | Setting Description                                                              |
 | ---------------------------------------- | -------------------------------------------------------------------------------- |
 | AppendBatchName                          | The string to append to Batch names |
-| AppendIntegrationKey                     | The string to append to Integration Keys |
 | AppendLoadFromPsaName                    | The string to append to the Load From PSA process name |
 | AppendProcedureName                      | The string to append to procedure names |
 | StageWithColumnModelOverride             | When defining a Model Override name for a column, setting this to `Y` will use the override name as the staging column name |
