@@ -3502,7 +3502,7 @@ input[type="search"]:focus {
 }
 
 .article ul li::before {
-  content: "\25AA";
+  content: " ";
   /* small square character as bullet for list */
   color: #00416B;
   display: inline-block;
@@ -3517,7 +3517,7 @@ input[type="search"]:focus {
 }
 
 .article ul ul li::before {
-  content: "\25AA";
+  content: " ";
   /* small square character as bullet for list */
   color: #00416B;
   display: inline-block;
