@@ -25,7 +25,7 @@ More information on ADF here: [](xref:adf-deployment-overview)
 
 The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
 
-More information on the BimlFlex app here: [](xref:bimlflex-app-introduction)
+More information on the BimlFlex app here: [](xref:metadata-editors-overview)
 
 ### BimlCatalog Operational Reporting in BimlFlex App
 
@@ -55,6 +55,6 @@ When building a project, the output folder now contains the following two new fo
 
 #### Support for Microsoft Dynamics CRM as source in Azure Data Factory projects
 
-New Feature: BimlFlex support for cloud and On-Premises Microsoft Dynamics CR sources for Azure Data Factory projects.
+New Feature: BimlFlex support for cloud and On-Premises Microsoft Dynamics CRM sources for Azure Data Factory projects.
 
 This allows direct metadata import from Dynamics CRM into the BimlFlex metadata through the Metadata Import function in the BimlFlex App. Modeling and metadata management is performed as needed and the pipelines to load the data from the source is part of the created Azure Data Factory pipeline

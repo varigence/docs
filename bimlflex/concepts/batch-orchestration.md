@@ -14,17 +14,17 @@ Batch Orchestration is controlled per Batch in the Batches metadata sheet.
 
 | Key | Description |
 | --- | ----------- |
-| <img src="images/bimlflex-ss-v5-legend-red-dot.png" alt="Red Dot" /> | The red dot indicates a placeholder for extensions. |
-| <img src="images/bimlflex-ss-v5-legend-metadata-override.png" alt="Metadata Override" /> | The blue dashed line box with diagonal grey lines depicts "Overrides" derived from metadata as per the following example.|
-| <img src="images/bimlflex-ss-v5-legend-extension-point.png" alt="Connection" /> | The blue dashed line box without diagonal grey lines specifies "Overrides" derived from an ExtensionPoint defined within the BimlStudio project.|
-| <img src="images/bimlflex-ss-v5-legend-sub-process.png" alt="Sub Process" /> | The orange dashed line box with diagonal grey lines depicts a sub-process that is described in a separate diagram as per the following example.|
-| <img src="images/bimlflex-ss-v5-legend-control-flow-extension-point.png" alt="Control Flow Extension Point" /> | The red dashed line box depicts a control flow ExtensionPoint that is either injected in the relevant position or in some cases overrides the original BimlFlex process. |
+| <img src="/bimlflex/user-guide/images/bimlflex-ss-v5-legend-red-dot.png" alt="Red Dot" /> | The red dot indicates a placeholder for extensions. |
+| <img src="/bimlflex/user-guide/images/bimlflex-ss-v5-legend-metadata-override.png" alt="Metadata Override" /> | The blue dashed line box with diagonal grey lines depicts "Overrides" derived from metadata as per the following example.|
+| <img src="/bimlflex/user-guide/images/bimlflex-ss-v5-legend-extension-point.png" alt="Connection" /> | The blue dashed line box without diagonal grey lines specifies "Overrides" derived from an ExtensionPoint defined within the BimlStudio project.|
+| <img src="/bimlflex/user-guide/images/bimlflex-ss-v5-legend-sub-process.png" alt="Sub Process" /> | The orange dashed line box with diagonal grey lines depicts a sub-process that is described in a separate diagram as per the following example.|
+| <img src="/bimlflex/user-guide/images/bimlflex-ss-v5-legend-control-flow-extension-point.png" alt="Control Flow Extension Point" /> | The red dashed line box depicts a control flow ExtensionPoint that is either injected in the relevant position or in some cases overrides the original BimlFlex process. |
 
 ## Orchestration
 
 The following diagram illustrates the package control flow.
 
-![Imported Metadata](images/bimlflex-ss-v5-orchestration-package-overview.png "Imported Metadata")
+![Imported Metadata](/bimlflex/user-guide/images/bimlflex-ss-v5-orchestration-package-overview.png "Imported Metadata")
 
 The Orchestration Framework enables packages to maintain process and data integrity in case of an error condition. If a Package or Batch fail the Orchestration manages what runs in the next sequence and can, optionally, handle rollback of inconsistent data.
 
@@ -38,7 +38,7 @@ Every package is broken up into the following three main segments
 
 The start sequence container holds the OnPreExecute event handler that controls the Orchestration path. The diagram below illustrates the event handler logic.
 
-![Imported Metadata](images/bimlflex-ss-v5-orchestration-package-start.png "Imported Metadata")
+![Imported Metadata](/bimlflex/user-guide/images/bimlflex-ss-v5-orchestration-package-start.png "Imported Metadata")
 
 The following Stored Procedure is executed by the Start Event
 
@@ -111,9 +111,9 @@ Two main status flags determine the process flow, ExecutionStatus and NextLoadSt
 
 |Code|Description|
 |--- |--- |
-|P|Process: The next time the package is executed it may start normally. <img src="images/bimlflex-ss-v5-orchestration-legend-onpreexecute.png" alt="Imported Metadata" width="30%"/>|
-|C|Cancel/Abort: The next time the package is executed it should be aborted or skipped. <img src="images/bimlflex-ss-v5-orchestration-legend-onpreexecute.png" alt="Imported Metadata" width="30%"/>|
-|R|Rollback: The next time the package is executed it should invoke the Rollback process if defined and execute. <img src="images/bimlflex-ss-v5-orchestration-legend-onerror.png" alt="Imported Metadata" width="30%"/>|
+|P|Process: The next time the package is executed it may start normally. <img src="/bimlflex/user-guide/images/bimlflex-ss-v5-orchestration-legend-onpreexecute.png" alt="Imported Metadata" width="30%"/>|
+|C|Cancel/Abort: The next time the package is executed it should be aborted or skipped. <img src="/bimlflex/user-guide/images/bimlflex-ss-v5-orchestration-legend-onpreexecute.png" alt="Imported Metadata" width="30%"/>|
+|R|Rollback: The next time the package is executed it should invoke the Rollback process if defined and execute. <img src="/bimlflex/user-guide/images/bimlflex-ss-v5-orchestration-legend-onerror.png" alt="Imported Metadata" width="30%"/>|
 
 ### Start logic
 
@@ -177,49 +177,48 @@ Rollback will remove partially loaded rows from the target tables. Depending on 
 
 The following illustrates the Orchestration of a main load sequence
 
-![Main Sequence](images/bimlflex-ss-v5-orchestration-sample-main-sequence.png "Main Sequence")
+![Main Sequence](/bimlflex/user-guide/images/bimlflex-ss-v5-orchestration-sample-main-sequence.png "Main Sequence")
 
 An error condition in the second run will generate the following Status Flag updates for the run.
 
 #### First Execution (Successful)
 
-|Process|Task|Execution Status|Next Execution|
-|--- |--- |--- |--- |
-|Start|PKG -> Batch|E|C|
-|Start|PKG -> DIM Address|E|C|
-|Success|PKG -> DIM Address|S|P|
-|Start|PKG -> DIM Customer|E|C|
-|Success|PKG -> DIM Customer|S|P|
-|Start|PKG -> FACT Sales|E|C|
-|Success|PKG -> FACT Sales|S|P|
-|Success|PKG -> Batch|S|P|
-
+| Process | Task                | Execution Status | Next Execution |
+| ------- | ------------------- | --- | --- |
+| Start   | PKG -> Batch        | E | C |
+| Start   | PKG -> DIM Address  | E | C |
+| Success | PKG -> DIM Address  | S | P |
+| Start   | PKG -> DIM Customer | E | C |
+| Success | PKG -> DIM Customer | S | P |
+| Start   | PKG -> FACT Sales   | E | C |
+| Success | PKG -> FACT Sales   | S | P |
+| Success | PKG -> Batch        | S | P |
 
 #### Second Execution (Failure)
 
-|Process|Task|Execution Status|Next Execution|
-|--- |--- |--- |--- |
-|Start|PKG -> Batch|E|C|
-|Start|PKG -> DIM Address|E|C|
-|Success|PKG -> DIM Address|S|P|
-|Start|PKG -> DIM Customer|E|C|
-|Failure|PKG -> DIM Customer|F|R|
-|Skipped|PKG -> FACT Sales|S|P|
-|Failure|PKG -> Batch|F|R|
-|Success|PKG -> DIM Address|S|C|
+| Process | Task | Execution Status | Next Execution |
+| --- | --- | --- | --- |
+| Start   | PKG -> Batch        | E | C |
+| Start   | PKG -> DIM Address  | E | C |
+| Success | PKG -> DIM Address  | S | P |
+| Start   | PKG -> DIM Customer | E | C |
+| Failure | PKG -> DIM Customer | F | R |
+| Skipped | PKG -> FACT Sales   | S | P |
+| Failure | PKG -> Batch        | F | R |
+| Success | PKG -> DIM Address  | S | C |
 
 In the above scenario, when the Batch is executed again, it will skip `DIM Address` and Rollback `DIM Customer` if the rollback process has been enabled.
 
 ### Rollback configuration
 
-BimlFlex supports rollback for terminated or failed loads. 
+BimlFlex supports rollback for terminated or failed loads.
 
 Process management for failed loads and data integrity checks is an architecture and process decision.
 
 The rollback function is controlled per layer in the Configurations and all are disabled by default.
 
-| ConfigurationKey | ConfigurationValue |
-|--- |--- |
-|EnableRollbackStg|N|
-|EnableRollbackPsa|N|
-|EnableRollbackRdv|N|
+| ConfigurationKey  | ConfigurationValue |
+| ----------------- | --- |
+| EnableRollbackStg | N |
+| EnableRollbackPsa | N |
+| EnableRollbackRdv | N |

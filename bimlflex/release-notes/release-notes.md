@@ -67,7 +67,7 @@ More information on ADF here: [](xref:adf-deployment-overview)
 
 The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
 
-More information on the BimlFlex app here: [](xref:bimlflex-app-introduction)
+More information on the BimlFlex app here: [](xref:metadata-editors-overview)
 
 #### BimlCatalog Operational Reporting in BimlFlex App
 
