@@ -85,11 +85,11 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 | Description | Optional metadata to provide description. |
 | Comments | Optional metadata to provide developer comments. |
 
-### Constrained Lists
+### Allowed Values
 
-[!include[Object Type Constrained List](_enum-object-type.md)]
+[!include[Object Types](_enum-object-type.md)]
 
-[!include[Model Object Type Constrained List](_enum-model-object-type.md)]
+[!include[Model Object Types](_enum-model-object-type.md)]
 
 ### Details Tab - SQL Overrides Fields
 

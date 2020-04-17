@@ -67,9 +67,9 @@ The **Details Tab** focuses on general **Project** information and configuration
 | Persistent Stage Connection |If a **Persistent Staging Area** is enabled, the **Connection** that should be used for staging.  This list only contains **Connections** with the *Integration Stage* set to `Persistent Staging Area`.|
 | Target Connection |The target or ending **Connection** of the integration project.|
 
-### Constrained Lists
+### Allowed Values
 
-[!include[Integration Template Constrained List](_enum-integration-template.md)]
+[!include[Integration Templates](_enum-integration-template.md)]
 
 ## Objects Tab
 

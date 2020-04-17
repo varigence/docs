@@ -81,7 +81,7 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 
 [!include[Duplicate Column Dialog](_dialog-duplicate-column.md)]
 
-### Constrained Lists  
+### Allowed Values  
 
 [!include[Change Types](_enum-change-type.md)]
 

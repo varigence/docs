@@ -73,6 +73,6 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 
 ## Allowed Values
 
-[!include[Data Type Constrained List](_enum-data-type.md)]
+[!include[Data Types](_enum-data-type.md)]
 
-[!include[System Type Constrained List](_enum-system-type.md)]
+[!include[System Types](_enum-system-type.md)]

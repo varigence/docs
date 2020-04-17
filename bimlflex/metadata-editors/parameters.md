@@ -78,4 +78,4 @@ The following sections describe the UI elements of the **Parameters Editor** and
 
 ## Allowed Values  
 
-[!include[Data Type Constrained List](_enum-data-type.md)]  
+[!include[Data Types](_enum-data-type.md)]  

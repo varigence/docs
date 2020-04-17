@@ -88,13 +88,13 @@ The **Details Tab** focuses on general **Connection** information and configurat
 > **ADF Project Connections:**  
 > A **Project** with the *Integration Template* of `ADF: Source -> Target` requires the **Connection** to be using SQL Based ELT.
 
-### Constrained Lists
+### Allowed Values
 
-[!include[Integration Stage Constrained List](_enum-integration-stage.md)]
+[!include[Integration Stages](_enum-integration-stage.md)]
 
-[!include[Connection Type Constrained List](_enum-connection-type.md)]
+[!include[Connection Types](_enum-connection-type.md)]
 
-[!include[System Type Constrained List](_enum-system-type.md)]
+[!include[System Types](_enum-system-type.md)]
 
 ## Tab Details
 
