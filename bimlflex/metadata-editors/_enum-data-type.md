@@ -35,4 +35,6 @@
 | SmallMoney            | Small money.                                                          |
 | Variant               | Variant.  Non explicit data type.                                     |
 
-[//]: # (TODO: Add in SQL Server, SSIS and maybe more system equivalents.)
+> [!TIP]
+> For information on how these map to SQL Server, Synapse and Snowflake data types see associated link below.
+> BimlFlex Documentation: [](xref:bimlflex-data-type-conversions)
