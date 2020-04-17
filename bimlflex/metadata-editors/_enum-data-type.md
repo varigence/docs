@@ -36,5 +36,5 @@
 | Variant               | Variant.  Non explicit data type.                                     |
 
 > [!TIP]
-> For information on how these map to SQL Server, Synapse and Snowflake data types see associated link below.
+> For information on how these map to SQL Server, Synapse and Snowflake data types see associated link below.  
 > BimlFlex Documentation: [](xref:bimlflex-data-type-conversions)
