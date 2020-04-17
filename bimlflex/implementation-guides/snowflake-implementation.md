@@ -85,7 +85,7 @@ BimlFlex uses **Settings** to adapt to specific requirements for file locations,
 
 ### Snowflake Orchestration Settings
 
-<!-- TODO: Intro. -->
+The following Snowflake **Settings** are used to configure overall orchestration options for Snowflake **Connections**.
 
 ### [Settings](#tab/snowflake-orchestration-settings)
 
@@ -115,7 +115,7 @@ BimlFlex uses **Settings** to adapt to specific requirements for file locations,
 
 ### Snowflake Stage Settings
 
-The following Snowflake **Settings** are you to configure the values to be used to connect to the Snowflake Stage environment.
+The following Snowflake **Settings** are used to configure the values to be used to connect to the Snowflake Stage environment.
 
 ### [Settings](#tab/snowflake-stage-settings)
 
@@ -167,7 +167,7 @@ The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will onl
 
 ### Azure Environment Settings (ADF Only)
 
-<!-- TODO: Intro. -->
+The following Azure **Settings** are used to configure general Azure environment information.
 
 ### [Settings](#tab/azure-environment-settings)
 
@@ -191,7 +191,7 @@ The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will onl
 
 ### Azure Blob Stage Container Settings (ADF Only)
 
-<!-- TODO: Intro. -->
+The following Azure **Settings** are used to configure the blob staging destination.  This is required when using Snowflake.
 
 ### [Settings](#tab/azure-stage-container-settings)
 
@@ -219,7 +219,7 @@ The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will onl
 
 ### Azure Blob Archive Container Settings (ADF Only)
 
-<!-- TODO: Intro. -->
+The following Azure **Settings** are used to configure the blob archive destination.  This is required when using Snowflake.
 
 ### [Settings](#tab/azure-archive-container-settings)
 
@@ -247,7 +247,7 @@ The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will onl
 
 ### Azure Blob Error Container Settings (ADF Only)
 
-<!-- TODO: Intro. -->
+The following Azure **Settings** are used to configure the blob error destination.  This is required when using Snowflake.
 
 ### [Settings](#tab/azure-error-container-settings)
 
@@ -275,9 +275,7 @@ The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will onl
 
 ### Azure Function Bridge Settings (ADF Only)
 
-<!-- TODO: Intro.  Explain that if using ADF an AFB will need to be created as ADF does not have a native connector. -->
-
-<!-- TODO: Link to 'Configuring an Azure Function Bridge' Article or create it here.  Only Snowflake requires it for now but we plan on leveraging it for other features later on so it may make sense to create its own article and link to it. -->
+An Azure Function Bridge is automatically created and added to the deployment when using Snowflake with an ADF orchestration.  All that is needed is setting the below values and the specified Azure Function Bridge will be generated and configured to allow execution against your Snowflake databases.  
 
 ### [Settings](#tab/afb-settings)
 
@@ -337,7 +335,9 @@ Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 
 ### Linked Services (ADF Only)
 
-Azure Data Factory does not support Snowflake as a Linked Service so BimlFlex uses an [Azure Function Bridge](#azure-function-bridge-settings-adf-only) to close the gap.  The Azure Function Bridge will use the Linked Service configured in BimlFlex to determine the appropriate connection method to use.  When using an *Azure Key Vault* use the below example to assist with the creation of a connection string to be used as the the secret value.  If using a *Connection String* version of a Linked Service fill out the required fields.
+Azure Data Factory does not support Snowflake as a Linked Service so BimlFlex uses an [Azure Function Bridge](#azure-function-bridge-settings-adf-only) to close the gap.  The Azure Function Bridge will use the Linked Service configured in BimlFlex to determine the appropriate connection method to use.  
+
+When using an *Azure Key Vault* use the below example to assist with the creation of a connection string to be used as the the secret value.  If using a *Connection String* version of a Linked Service fill out the required fields.  
 
 ### [ADF Connection String](#tab/snowflake-connection-string-adf)
 
@@ -360,18 +360,18 @@ host=xy12345.west-us-2.azure.snowflakecomputing.com;account=xy12345;user=MyUser;
 
 ### Integration Stage
 
+BimlFlex provides support for the use of Snowflake as both a target warehouse platform and as a `Source System`.  The following tabs are provided to assist with the creation of each available *Integration Stage*.
+
 ### [Source System](#tab/snowflake-src)
 
-<!-- TODO: Intro.   -->
+Aside from the below field values, no other special considerations needed.
 
 - *Connection Type* = `ODBC`  
 - *System Type* = `Snowflake Data Warehouse`  
 
 ### [Landing Area](#tab/snowflake-lnd)
 
-**ADF ONLY**:
-
-<!-- TODO: Intro.  Explain a LND connection is only used for ADF.  Explain that Snowflake is not supported as a LND connection itself, and only one of the supported system types can be used for a LND. -->
+Snowflake is not currently supported as a `Landing Area` but one is still required when using ADF to orchestrate data movement.  
 
 <!-- TODO: Link to `Creating a LND Connection` or `Creating a LND Area` Article. -->
 
@@ -387,32 +387,36 @@ host=xy12345.west-us-2.azure.snowflakecomputing.com;account=xy12345;user=MyUser;
 
 <!-- TODO: Ensure `Configuring an Azure Blob` has a Link to Microsoft Getting a Blob Connection String. -->
 
+> [!NOTE]
+> A `Landing Area` is only required if using ADF orchestration.
+
 ### [Staging Area](#tab/snowflake-stg)
 
-<!-- TODO: Intro.   -->
+Aside from the below field values, no other special considerations needed.
 
 - *Connection Type* = `ODBC SQL Based ELT`  
 - *System Type* = `Snowflake Data Warehouse`  
 
 ### [Persistent Staging Area](#tab/snowflake-psa)
 
-<!-- TODO: Intro.   -->
-
-<!-- TODO: Outline field values unique to a Snowflake PSA Connection.  [Integration Stage] = `Persistent Staging Area`.  [Connection Type] = `ODBC SQL Based ELT`.  [System Type] = `Snowflake Data Warehouse`.  Reference requiring the SRC to have [Persist History] = `true` to be used. -->
+Aside from the below field values, no other special considerations needed.
 
 - *Connection Type* = `ODBC SQL Based ELT`  
 - *System Type* = `Snowflake Data Warehouse`  
 
+> [!NOTE]
+> When using a `Persistent Staging Area` a `Source System` is required to have the *Persist History* box checked to have data persisted.
+
 ### [Raw Data Vault](#tab/snowflake-rdv)
 
-<!-- TODO: Intro.   -->
+Aside from the below field values, no other special considerations needed.
 
 - *Connection Type* = `ODBC SQL Based ELT`  
 - *System Type* = `Snowflake Data Warehouse`  
 
 ### [Data Mart](#tab/snowflake-dm)
 
-<!-- TODO: Intro.   -->
+Aside from the below field values, no other special considerations needed.
 
 - *Connection Type* = `ODBC SQL Based ELT`  
 - *System Type* = `Snowflake Data Warehouse`  
