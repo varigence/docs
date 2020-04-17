@@ -49,35 +49,37 @@ The Schema Filter and Table Filter can be used to limit the Assets made availabl
 
 #### Table and column names
 
-Options to apply naming conventions to imported metadata.
+Naming convention to use for objects and columns. Options are:
 
-* None - This will retain the source system default naming conventions.
-* PascalCase - E.g. "CustomerAddress"
-* camelCase - E.g. "customerAddress"
-* Proper\_Case - E.g. "Customer\_Address"
-* Proper Case - E.g. "Customer Address"
-* UPPER\_CASE - E.g. "CUSTOMER\_ADDRESS"
-* lower\_case - E.g. "customer\_address"
+* `None` - This will retain the source system default naming conventions.
+* `PascalCase` - E.g. "CustomerAddress"
+* `camelCase` - E.g. "customerAddress"
+* `Proper_Case` - E.g. "Customer\_Address"
+* `Proper Case` - E.g. "Customer Address"
+* `UPPER_CASE` - E.g. "CUSTOMER\_ADDRESS"
+* `lower_case` - E.g. "customer\_address"
 
 #### Inferred Metadata
 
-Infers Integration Keys from column constraints
+Where to infer the Integration Key from. Options are:
 
-* None - Nothing
-* Infer Integration Key from Primary Key
-* Infer Integration Key from Unique Key
-* Infer Integration Key from First Column
-* Infer Integration Key from Identity Column
-* Infer Integration Key from Named Column  
+* `None`
+* `PrimaryKey`
+* `UniqueKey`
+* `FirstColumn`
+* `IdentityColumn`
+* `ColumnName::[NameOfColumn]`
+
+When specifying `ColumnName`, a name needs to be added in the Import Metadata screen or specify `ColumnName::UID` to auto populate the column name field with `UID`.
 
 #### Retain Changes to Previously Imported Metadata
 
-Controls if existing metadata should be retained during the import of metadata.
+What existing Metadata should be retained when doing an import of existing data. Options are:
 
-* Data Type Changes
-* Column Order Changes
-* Foreign Key Changes
-* All Other, Don't override anything else
+* `Data Type` Changes
+* `Column Order` Changes
+* `Foreign Key` Changes
+* `All Other`, Don't override anything else
 
 To override everything, uncheck all checkboxes.
 
@@ -85,7 +87,7 @@ To override everything, uncheck all checkboxes.
 
 This controls default behavior of inferred Integration Keys.
 
-* Pad Integration Keys (Amount) – defines Integration Key width
+* Pad Integration Keys (Amount) – Number of Characters to pad the Integration Key to
 * Integration Key Prefix or Suffix - based on your settings, it will auto populate a value which can be overridden here. It will add this value as prefix or suffix onto the column name to indicate Integration Key.
 * Key Columns End With – When inferring key/reference names, what substring to look for at the end of a column name - `Id`, `Code`, `No`, `Key`, or any custom string added.
 
@@ -118,5 +120,3 @@ Navigate back to the Connection or Project and view the Objects tab. You should 
 If there are changes to the source schema it is possible to safely run the Import Metadata on the same data again. Use the options to make sure you don't override anything you have changed after running the original import.
 
 I.e. If a new column is available on a table where you modified the column ordinals, then check `Column Orders` under the `Retain Existing Metadata` options before you import the table.
-
-

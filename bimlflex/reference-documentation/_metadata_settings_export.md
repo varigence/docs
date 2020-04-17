@@ -24,7 +24,7 @@
 | AzureArchiveAccountName                  | The Azure Blob Storage Account Name to use for archiving data as files in blob storage. This is the default archive destination for the staging to archive file move process for BimlFlex solutions using Azure Synapse as destination.  The Account Name is visible in the Azure Portal as the main name of the Storage Account. It is also detailed in the Settings, Access Keys blade |
 | AzureArchiveSasToken                     | A Storage access SAS Token to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
 | AzureBlobStorageDomain                   | The AzCopy domain to use. Classic blob storage uses `blob.core.windows.net` Azure Data Lake Storage Gen2 targets (with hierarchical namespace) uses `dfs.core.windows.net` |
-| AzureCreateDummyFile                     | Should the Staging package copy a placeholder.dummy file to accomodate the PolyBase limitation when no files exist. |
+| AzureCreateDummyFile                     | Should the Staging package copy a placeholder.dummy file to accommodate the PolyBase limitation when no files exist. |
 | AzureCreateExternalOnStage               | Should the Staging package `DROP` and `CREATE EXTERNAL TABLE` before running the Staging Stored Procedure |
 | AzureDataFactoryName                     | The default Data Factory Name to use |
 | AzureStageContainer                      | The Container Name to use for the staging process. This should be indicative of the purpose of the contents, such as `staging` |
@@ -131,7 +131,7 @@
 | ApplyNamingConvention                    | Naming convention to use for objects and columns. Case sensitive options are `None`, `PascalCase`, `camelCase`, `Proper_Case`, `Proper Case`, `UPPER_CASE` and `lower_case`. |
 | InferIntegrationKeyFrom                  | Where to infer the Integration Key from. Case sensitive options are `None`, `PrimaryKey`, `UniqueKey`, `FirstColumn`, `IdentityColumn` and `ColumnName::[NameOfColumn]`. When specifying `ColumnName`, a name needs to be added in the Import Metadata screen or specify `ColumnName::UID` to auto populate the column name field with `UID` |
 | RetainExistingMetadata                   | What existing Metadata should be retained when doing an import of existing data. Should be specified as a comma-separated list and options are `Data Types`, `Column Orders`, `References`, and `All Other`. I.e. specify `Column Orders, All Other` without the double quotes |
-| KeyEndsWith                              | The strings that BimlFlex interprets as key identifier. For a source table with a column `ProductCategoryId` that links to a ProductCategory table, BimlFlex will create a Model Reference called `ProductCategory` as name |
+| KeyEndsWith                              | The strings that BimlFlex interprets as key identifiers. For a source table with a column `ProductCategoryId` that links to a ProductCategory table, BimlFlex will create a Model Reference called `ProductCategory` as name |
 | AppendIntegrationKey                     | The string to append to Integration Keys |
 | PadIntegrationKey                        | Number of Characters to pad the Integration Key to |
 | AddRecordSourceToIntegrationKey          | Import Metadata will add `@@rs` to Integration Keys if `Y` is specified |
@@ -233,19 +233,19 @@
 | DisplaySchemaNameStg                     | Controls if the source schema name should be included in the generated SSIS package name.  E.g. the default `EXT_AWLT_Customer` package name would be named `EXT_AWLT_SalesLT_Customer` when set to `Y` |
 | EnableEndDatePsa                         | Set to `Y` to enable end dating of rows in the PSA. This will allow timelines to be maintained in the PSA area. Using end dating is a more expensive load process but allows queries to directly reuse complete effective from and to dates for each row. Disable this to use an insert-only approach for the PSA for optimized load performance |
 | ExtractFileEncoding                      | Has the extracted file a different encoding than the standard Unicode produced by BimlFlex source to file process. This setting will be ignored if the standard extract process is used and not overriden by an extension point. Valid choices are `ASCII`, `BigEndianUnicode`, `UTF32`, `UTF7`, `UTF8`, `Unicode` |
-| ExtractFileSplitSize                     | Should the exctracted files be split into multiple files of this size. Applied if the file is larger than 2x this size. Use 0 to not split files. Size in MB |
+| ExtractFileSplitSize                     | Should the extracted files be split into multiple files of this size. Applied if the file is larger than 2x this size. Use 0 to not split files. Size in MB |
 | ObjectNamePattern                        | Specific override behavior for the object name for staging tables etc. Use short codes such as `@@this` and `@@rs` for easy access to the BimlFlex object model |
 | PersistHistory                           | Provides an option to override the `PersistHistory` defined at the connection level for more granular control. |
 | PsaDeltaDetectionSql                     | Should the delta detection for PSA load use SQL |
 | PsaDeltaLateArriving                     | Does the PSA load include late arriving deltas |
 | PsaDeltaSingleChange                     | Set this to `Y` if loading into PSA and the Delta only has single changes to each key. This will provide optimized ELT loads |
-| PsaDeltaStageAllRows                     | Should the Delta process stage all rows or compress rowchanges |
+| PsaDeltaStageAllRows                     | Should the Delta process stage all rows or compress row changes |
 | PsaEltDeltaIsDerived                     | Set this to `Y` if loading into PSA and the Delta has already been derived in the file. This will provide optimized ELT loads |
 | PsaMergeAllRows                          | Should the PSA load merge all rows into the destination |
 | PsaTruncateIfHasRows                     | Should the PSA table be truncated if it already has rows loaded. For normal PSA behavior this should be set to `N`. for specific requirements where previously loaded rows should be discarded, set this to `Y` |
 | PsaUseCacheLookup                        | Should the PSA lookup cache the data to disk in SSIS. Use this if it is not possible to use the normal lookup behavior due to memory constraints |
 | SchemaNamePattern                        | Specific override behavior for the schema name for staging tables etc. Use short codes such as `@@this` and `@@rs` for easy access to the BimlFlex object model |
-| SelectBlobRowOrderBy                     | Row Order definition to use for Blob soure queries |
+| SelectBlobRowOrderBy                     | Row Order definition to use for Blob source queries |
 | SelectStageRowDistinct                   | Should the SELECT to STAGE table use the ROW_NUMBER based on the defined KEY or us a DISTINCT based on the full row including the HASH. |
 | SsisExpressUseUTF8DataConversion         | Should SSIS Express-based extract packages apply UTF8 data conversion |
 | StageBypassPsaChecks                     | Set to `Y` to bypass all Persistent Lookup and Checks and apply all records to Staging and Persistent Staging tables. |
