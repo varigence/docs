@@ -234,14 +234,14 @@ Importing metadata from a DB2 source database requires the IBM OLE DB Provider f
 
 Sample Connection definition to connect to and allow metadata import from Db2:
 
-| Metadata Column | Sample Value |
-| --- | --- |
-| Connection | `Your Connection Name` |
+| Metadata Column  | Sample Value            |
+| ---------------- | ----------------------- |
+| Connection       | `Your Connection Name`  |
 | ConnectionString | `ConnectionString here` |
-| Catalog | `Database Name` |
-| ConnectionType | `OLEDB` |
-| SystemType | `DB2` |
-| IntegrationStage | `Source` |
+| Catalog          | `Database Name`         |
+| ConnectionType   | `OLEDB`                 |
+| SystemType       | `DB2`                   |
+| IntegrationStage | `Source`                |
 
 Sample Db2 connection string:
 
@@ -257,14 +257,14 @@ Importing metadata from a Oracle source database requires the Oracle OLE DB Prov
 
 Sample Connection definition to connect to and allow metadata import from Oracle:
 
-| Metadata Column | Sample Value |
-| --- | --- |
-| Connection | Your Connection Name |
+| Metadata Column  | Sample Value                             |
+| ---------------- | ---------------------------------------- |
+| Connection       | Your Connection Name                     |
 | ConnectionString | `TODO: Add sample ConnectionString here` |
-| Catalog | Database Name |
-| ConnectionType | `OLEDB` |
-| SystemType | `Oracle` |
-| IntegrationStage | `Source` |
+| Catalog          | Database Name                            |
+| ConnectionType   | `OLEDB`                                  |
+| SystemType       | `Oracle`                                 |
+| IntegrationStage | `Source`                                 |
 
 ## Memory usage in SSIS
 
@@ -285,17 +285,17 @@ the following considerations are also available in BimlFlex to affect memory usa
 
 use the BimlFlex settings metadata sheet to tweak the behavior of the created packages.
 
-| SettingKey | SettingValue | Comment |
-| --- | --- | --- |
-| `DvUseCacheLookup` | default: `N` | Setting this to `Y` will configure the SSIS packages to use Cache Lookups for the Data Vault load. This will cache the lookup data to disk |
-| `PsaUseCacheLookup` | default: `N` | Setting this to `Y` will configure the SSIS packages to use Cache Lookups for the PSA lookup in Source to Staging loads. This will cache the lookup data to disk |
-| `SsisBufferTempStoragePath` | |
-| `SsisBLOBTempStoragePath` | |
-| `SsisDefaultBufferMaxRows` | default: `10000` | Start by setting AutoAdjust to `True` |
-| `SsisDefaultBufferSize` | default: `10485760` | Start by setting AutoAdjust to `True` |
-| `SsisMaximumInsertCommitSize` | default: `2147483647` | |
-| `SsisRowsPerBatch` | default: `500000` | |
-| `SsisAutoAdjustBufferSize` | default: `TRUE` | Allows SSIS to adjust buffer sizes as needed |
+| SettingKey                    | SettingValue          | Comment                                                                                                                                                          |
+| ----------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `DvUseCacheLookup`            | default: `N`          | Setting this to `Y` will configure the SSIS packages to use Cache Lookups for the Data Vault load. This will cache the lookup data to disk                       |
+| `PsaUseCacheLookup`           | default: `N`          | Setting this to `Y` will configure the SSIS packages to use Cache Lookups for the PSA lookup in Source to Staging loads. This will cache the lookup data to disk |
+| `SsisBufferTempStoragePath`   |                       |
+| `SsisBLOBTempStoragePath`     |                       |
+| `SsisDefaultBufferMaxRows`    | default: `10000`      | Start by setting AutoAdjust to `True`                                                                                                                            |
+| `SsisDefaultBufferSize`       | default: `10485760`   | Start by setting AutoAdjust to `True`                                                                                                                            |
+| `SsisMaximumInsertCommitSize` | default: `2147483647` |                                                                                                                                                                  |
+| `SsisRowsPerBatch`            | default: `500000`     |                                                                                                                                                                  |
+| `SsisAutoAdjustBufferSize`    | default: `TRUE`       | Allows SSIS to adjust buffer sizes as needed                                                                                                                     |
 
 ### 32 vs 64-bit runtime
 
@@ -360,8 +360,8 @@ You can use this script to identify which **Project** reference the **Connection
 
 More information:
 
-* [Working with environments and the SSIS catalog](../user-guide/deployment-guide.md)
-* [Working with sensitive settings in the SSIS catalog](../ssis-deployment/sensitive-info-management.md)
+* [Working with environments and the SSIS catalog](xref:zzz-bimlflex-deployment-guide)
+* [](xref:sensitive-info-management)
 
 ### Video
 
@@ -375,12 +375,12 @@ As an example, consider the need to apply an operation to a source column in a l
 
 The following approach will select the source column as an alternative name and replace it's value in the Data Flow with the SSIS expression in a Derived Column transformation. The replaced values will be sent to the target using the original column name:
 
-|Column                   |Expression                                    |
-|---                      |---                                           |
-|ColumnName               |`EmailAddress`                                |
-|SqlSourceExpression      |`EmailAddress`                                |
-|SsisDataFlowExpression   |`REPLACE(ALT_@@this,"value","other value")`   |
-|ColumnAlias              |`ALT_@@this`                                  |
+| Column                 | Expression                                  |
+| ---------------------- | ------------------------------------------- |
+| ColumnName             | `EmailAddress`                              |
+| SqlSourceExpression    | `EmailAddress`                              |
+| SsisDataFlowExpression | `REPLACE(ALT_@@this,"value","other value")` |
+| ColumnAlias            | `ALT_@@this`                                |
 
 Add this to the columns page or sheet, for the `EmailAddress` source column to change the select statement for it to `EmailAddres AS ALT_EmailAddress` and derive the `EmailAddress` column with a Derived Column transformation using the defined Expression that refers to the source column using the defined column alias.
 

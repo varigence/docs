@@ -12,7 +12,7 @@ title: Installing BimlFlex Custom SSIS Components
 
 ## Supporting BimlFlex Documentation
 
-* [](xref:bimlflex-server-installation)
+* [](xref:bimlflex-ssis-deployment-ssis-server-install)
 
 ## Installing Custom SSIS Components
 

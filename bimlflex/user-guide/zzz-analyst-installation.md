@@ -10,7 +10,7 @@ Analyst installations provide an Excel-based metadata editor environment for def
 Other Installation Types are:
 
 * [](xref:bimlflex-developer-installation)
-* [](xref:bimlflex-server-installation)
+* [](xref:bimlflex-ssis-deployment-ssis-server-install)
 
 ## Installation Media
 

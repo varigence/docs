@@ -8,9 +8,8 @@ title: The BimlFlex Trial Process
 
 ## Supporting BimlFlex Trial Documentation
 
-* [](xref:bimlflex-trial-process)
 * [BimlFlex Product Information](https://varigence.com/BimlFlex)
-* [](xref:bimlflex-user-guide)
+* [](xref:zzz-bimlflex-user-guide)
 
 ## What is BimlFlex
 
@@ -49,3 +48,4 @@ A pilot project is an initial implementation that allows the Data Warehousing te
 Varigence or a Varigence BimlFlex consulting partner are available for a pilot implementation. The scope of the implementation is defined in collaboration with the Data Warehousing stakeholders
 
 The deliverables from a pilot project are designed to be used in a production environment.
+ 
