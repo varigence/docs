@@ -83,28 +83,6 @@ The Snowflake load process uses a separate custom SSIS component to provide a so
 
 BimlFlex uses **Settings** to adapt to specific requirements for file locations, naming conventions, data conventions etc.  Align these settings with the organizations best practices and environmental requirements.
 
-### Snowflake SnowSQL Settings (SSIS Only)
-
-The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will only need to be configured if SSIS orchestration is used.  
-
-### [Settings](#tab/snowsql-settings)
-
-| Setting Key       | Setting Description                                                         |
-| ----------------- | --------------------------------------------------------------------------- |
-| SnowSqlConfig     | Location of the Snowflake SnowSQL configuration file                        |
-| SnowSqlConnection | The Snowflake SnowSQL connection to use                                     |
-| SnowSqlPath       | The path to the local installation of the Snowflake SnowSQL CLI Client tool |
-
-### [Examples](#tab/snowsql-settings-example)
-
-| Setting Key       | Setting Description                  |
-| ----------------- | ------------------------------------ |
-| SnowSqlConfig     | %USERPROFILE%\\.snowsql\\config      |
-| SnowSqlConnection | bimlflex_db                          |
-| SnowSqlPath       | C:\\Program Files\\Snowflake SnowSQL |
-
-***
-
 ### Snowflake Orchestration Settings
 
 <!-- TODO: Intro. -->
@@ -162,6 +140,28 @@ The following Snowflake **Settings** are you to configure the values to be used 
 | SnowflakeSchema    | public              |
 | SnowflakeUser      | MyUser              |
 | SnowflakeWarehouse | compute_wh          |
+
+***
+
+### Snowflake SnowSQL Settings (SSIS Only)
+
+The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will only need to be configured if SSIS orchestration is used.  Requires [SnowSQL installed and configured](#installing-and-configuring-snowsql-ssis-only).
+
+### [Settings](#tab/snowsql-settings)
+
+| Setting Key       | Setting Description                                                         |
+| ----------------- | --------------------------------------------------------------------------- |
+| SnowSqlConfig     | Location of the Snowflake SnowSQL configuration file                        |
+| SnowSqlConnection | The Snowflake SnowSQL connection to use                                     |
+| SnowSqlPath       | The path to the local installation of the Snowflake SnowSQL CLI Client tool |
+
+### [Examples](#tab/snowsql-settings-example)
+
+| Setting Key       | Setting Description                  |
+| ----------------- | ------------------------------------ |
+| SnowSqlConfig     | %USERPROFILE%\\.snowsql\\config      |
+| SnowSqlConnection | bimlflex_db                          |
+| SnowSqlPath       | C:\\Program Files\\Snowflake SnowSQL |
 
 ***
 
@@ -354,9 +354,9 @@ host=xy12345.west-us-2.azure.snowflakecomputing.com;account=xy12345;user=MyUser;
 ***
 
 > [!TIP]
-> For additional details on creating a Linked Service refer to the below guides:
-> BimlFlex Docs: [](xref:create-linked-service-connection)
-> BimlFlex Docs: [](xref:linked-service-snowflake)
+> For additional details on creating a Linked Service refer to the below guides:  
+> BimlFlex Docs: [](xref:create-linked-service-connection)  
+> BimlFlex Docs: [](xref:linked-service-snowflake)  
 
 ### Integration Stage
 
