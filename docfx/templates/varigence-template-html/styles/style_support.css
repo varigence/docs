@@ -982,7 +982,8 @@ h6 {
 }
 
 p {
-  margin: 0 0 calc(16px * 1.5);
+  margin: 0 0 10px;
+  /*calc(16px * 1.5);*/
 }
 
 ul {
@@ -3502,9 +3503,9 @@ input[type="search"]:focus {
 }
 
 .article ul li::before {
-  content: " ";
+  content: "\25AA";
   /* small square character as bullet for list */
-  color: #00416B;
+  color: #327AB7;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -3517,9 +3518,9 @@ input[type="search"]:focus {
 }
 
 .article ul ul li::before {
-  content: " ";
+  content: "\25AA";
   /* small square character as bullet for list */
-  color: #00416B;
+  color: #327AB7;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -3543,6 +3544,26 @@ input[type="search"]:focus {
 
 .tabGroup ul ul li::before {
   content: "";
+}
+
+.sideaffix ul {
+  margin: 0 0 1.5;
+  /* list-style: none; */
+  /* Remove default bullets */
+}
+
+.sideaffix ul li::before {
+  content: none;
+}
+
+.sideaffix ul ul {
+  /*margin: 0 0 calc(16px * 1.5); */
+  list-style: none;
+  /* Remove default bullets */
+}
+
+.sideaffix ul ul li::before {
+  content: none;
 }
 
 .article__title {
