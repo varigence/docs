@@ -1,7 +1,7 @@
 #### Setting Types
 
-|Value|Description|
-|-|-|
-|Text||
-|SQL||
-|JSON||
+| Value | Description |
+| ----- | ----------- |
+| Text  |             |
+| SQL   |             |
+| JSON  |             |
