@@ -14,14 +14,14 @@ Snowflake is a cloud data warehouse platform provided by Snowflake Computing Inc
 
 ## Initial Configuration
 
-Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.  This section will walk you through the required software, configures and system configurations you will need to connect BimlFlex to your Snowflake environment.  
+Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.  This section will walk you through the required software and system configurations you will need to connect BimlFlex to your Snowflake environment.  
 
 ### Installing and Configuring SnowSQL (SSIS Only)
 
 When using SSIS Orchestration, BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components-ssis-only) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.  This requires that SnowSQL be installed and the appropriate connection created on the server executing the SSIS packages.  Follow the below link for instructions on how to install SnowSQL.  
 
 > [!TIP]
-> For help installing SnowSQL refer to the associated Snowflake documentation below:  
+> For additional details on installing SnowSQL refer to the below guide:
 > Snowflake Docs: [Installing SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-install-config.html)  
 
 Once SnowSQL is installed a connection needs tob be created in the specified `config` file.  The location may vary from depending on the installation but the default location for Windows is `%USERPROFILE%\.snowsql\`.  Open the file with any text editor and insert a connection following the template below.  
@@ -57,7 +57,7 @@ region = west-us-2.azure
 ***
 
 > [!TIP]
-> For help finding the associated values or config SnowSQL refer to the associated Snowflake documentation below:  
+> For additional details on finding the associated values or configuring SnowSQL refer to the below guides:
 > Snowflake Docs: [Logging into Snowflake](https://docs.snowflake.com/en/user-guide/connecting.html)  
 > Snowflake Docs: [Configuring SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-config.html)  
 
@@ -66,7 +66,7 @@ region = west-us-2.azure
 The ODBC driver is only required if using SSIS orchestration to connect to a Snowflake `Source System`.  Currently Snowflake is not supported as a `Source System` when using ADF orchestration.  
 
 > [!TIP]
-> Additional Resources:  
+> For additional details on installing and configuring and ODBC driver and DSN refer to the below guides:
 > Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
 > Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
 > Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)  
@@ -76,7 +76,7 @@ The ODBC driver is only required if using SSIS orchestration to connect to a Sno
 The Snowflake load process uses a separate custom SSIS component to provide a solid query management experience in SSIS.  The components are installed and upgraded through the BimlFlex developer installation or the separate runtime installation for custom components.  
 
 > [!NOTE]
-> If the components were not installed on initial installation they can be installed at a later date by re-running the installer.  The following guide for help installing BimlFlex and Custom:  
+> If the components were not installed on initial installation they can be installed at a later date by re-running the installer.  For additional details on installing BimlFlex and Custom Components refer to the below guide:  
 > BimlFlex Docs: [](xref:bimlflex-installing-bimlflex)  
 
 ## Configuring BimlFlex Settings
@@ -212,7 +212,7 @@ The following Azure **Settings** are used to configure the blob staging destinat
 | AzureStageSasToken    | ?`<SasToken>`       |
 
 > [!TIP]
-> For details on how to generate a SAS Token refer to the following guide:  
+> For additional details on how to generate a SAS Token refer to the following guide:  
 > Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
 
 ***
@@ -240,7 +240,7 @@ The following Azure **Settings** are used to configure the blob archive destinat
 | AzureArchiveSasToken    | ?`<SasToken>`       |
 
 > [!TIP]
-> For details on how to generate a SAS Token refer to the following guide:  
+> For additional details on how to generate a SAS Token refer to the following guide:  
 > Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
 
 ***
@@ -268,7 +268,7 @@ The following Azure **Settings** are used to configure the blob error destinatio
 | AzureErrorSasToken    | ?`<SasToken>`       |
 
 > [!TIP]
-> For details on how to generate a SAS Token refer to the following guide:  
+> For additional details on how to generate a SAS Token refer to the following guide:  
 > Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
 
 ***
@@ -353,7 +353,7 @@ The [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components
 BimlFlex only uses the *Connection String* field to generate an associated Connection Manager in SSIS.  The associated Connection Manager will be created in SSIS using the inputted *Connection String* but will not be used during any of the generated SSIS orchestration.  
 
 > [!NOTE]
-> This guide only covers *Connection String* which is only used by SSIS orchestration.  For details on configuring the values of a Connect String Secret see the ADF Connection String Example in [Linked Services](#linked-services-adf-only).  
+> This guide only covers *Connection String* which is only used by SSIS orchestration.  For details on configuring the values of a Connection String Secret see the ADF Connection String Example in [Linked Services Section](#linked-services-adf-only).  
 
 ### [SSIS Connection String](#tab/snowflake-connection-string-ssis)
 
@@ -368,7 +368,7 @@ Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 ```
 
 > [!IMPORTANT]
-> Then Connection Manager will also require the appropriate ODBC driver to be installed and a DSN created.  Refer to the below guides for additional details:  
+> Then Connection Manager will also require the appropriate ODBC driver to be installed and a DSN created.  For additional details refer to the below guides:  
 > Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
 > Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
 > Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)  
@@ -413,7 +413,7 @@ When Snowflake is used as the target warehouse platform, BimlFlex will generate 
 Using Snowflake as the target warehouse platform requires the generation of the `Snowflake Table Script` and `Snowflake Procedure Script` options when using **Generate Scripts** in BimlStudio.  Additionally if Data Vault is being used the standard `Data Vault Default Insert Script` can be used to generate the required Ghost Keys.  
 
 > [!TIP]
-> For additional details on generating DDL refer to the below guides:  
+> For additional details on generating DDL refer to the below guide:  
 > BimlFlex Docs: [](xref:bimlflex-generating-ddl)  
 
 ### Deploying SnowSQL Scripts
