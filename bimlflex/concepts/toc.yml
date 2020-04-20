@@ -12,8 +12,8 @@
   href: data-mart-templates.md
 #- name: Batch Orchestration
 #  href: batch-orchestration.md
-name: Extension Points
-href: extension-points.md
+- name: Extension Points
+  href: extension-points.md
 - name: Integration Keys
   href: integration-keys.md
 - name: Hashing
