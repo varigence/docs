@@ -14,17 +14,17 @@ Snowflake is a cloud data warehouse platform provided by Snowflake Computing Inc
 
 ## Initial Configuration
 
-Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.  This section will walk you through the required software, configures and system configurations you will need to connect BimlFlex to your Snowflake environment.
+Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.  This section will walk you through the required software, configures and system configurations you will need to connect BimlFlex to your Snowflake environment.  
 
 ### Installing and Configuring SnowSQL (SSIS Only)
 
-When using SSIS Orchestration, BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components-ssis-only) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.  This requires that SnowSQL be installed and the appropriate connection created on the server executing the SSIS packages.  Follow the below link for instructions on how to install SnowSQL.
+When using SSIS Orchestration, BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components-ssis-only) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.  This requires that SnowSQL be installed and the appropriate connection created on the server executing the SSIS packages.  Follow the below link for instructions on how to install SnowSQL.  
 
 > [!TIP]
 > For help installing SnowSQL refer to the associated Snowflake documentation below:  
 > Snowflake Docs: [Installing SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-install-config.html)  
 
-Once SnowSQL is installed a connection needs tob be created in the specified `config` file.  The location may vary from depending on the installation but the default location for Windows is `%USERPROFILE%\.snowsql\`.  Open the file with any text editor and insert a connection following the template below.
+Once SnowSQL is installed a connection needs tob be created in the specified `config` file.  The location may vary from depending on the installation but the default location for Windows is `%USERPROFILE%\.snowsql\`.  Open the file with any text editor and insert a connection following the template below.  
 
 ### [Template](#tab/snowsql-connection-template)
 
@@ -61,15 +61,15 @@ region = west-us-2.azure
 > Snowflake Docs: [Logging into Snowflake](https://docs.snowflake.com/en/user-guide/connecting.html)  
 > Snowflake Docs: [Configuring SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-config.html)  
 
-<!-- This section is not needed at this point as BimlFlex currently only uses the `.snowsql\config` file to connect.
 ### Installing and Configuring a Snowflake ODBC DSN (SSIS Only)
+
+The ODBC driver is only required if using SSIS orchestration to connect to a Snowflake `Source System`.  Currently Snowflake is not supported as a `Source System` when using ADF orchestration.  
 
 > [!TIP]
 > Additional Resources:  
-> Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)
-> Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)
-> Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)
--->
+> Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
+> Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
+> Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)  
 
 ### BimlFlex Snowflake Custom SSIS Components (SSIS Only)
 
@@ -77,15 +77,15 @@ The Snowflake load process uses a separate custom SSIS component to provide a so
 
 > [!NOTE]
 > If the components were not installed on initial installation they can be installed at a later date by re-running the installer.  The following guide for help installing BimlFlex and Custom:  
-> BimlFlex Docs: [](xref:bimlflex-installing-bimlflex)
+> BimlFlex Docs: [](xref:bimlflex-installing-bimlflex)  
 
 ## Configuring BimlFlex Settings
 
-BimlFlex uses **Settings** to adapt to specific requirements for file locations, naming conventions, data conventions etc.  Align these settings with the organizations best practices and environmental requirements.
+BimlFlex uses **Settings** to adapt to specific requirements for file locations, naming conventions, data conventions etc.  Align these settings with the organizations best practices and environmental requirements.  
 
 ### Snowflake Orchestration Settings
 
-The following Snowflake **Settings** are used to configure overall orchestration options for Snowflake **Connections**.
+The following Snowflake **Settings** are used to configure overall orchestration options for Snowflake **Connections**.  
 
 ### [Settings](#tab/snowflake-orchestration-settings)
 
@@ -115,7 +115,7 @@ The following Snowflake **Settings** are used to configure overall orchestration
 
 ### Snowflake Stage Settings
 
-The following Snowflake **Settings** are used to configure the values to be used to connect to the Snowflake Stage environment.
+The following Snowflake **Settings** are used to configure the values to be used to connect to the Snowflake Stage environment.  
 
 ### [Settings](#tab/snowflake-stage-settings)
 
@@ -145,7 +145,7 @@ The following Snowflake **Settings** are used to configure the values to be used
 
 ### Snowflake SnowSQL Settings (SSIS Only)
 
-The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will only need to be configured if SSIS orchestration is used.  Requires [SnowSQL installed and configured](#installing-and-configuring-snowsql-ssis-only).
+The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will only need to be configured if SSIS orchestration is used.  Requires [SnowSQL installed and configured](#installing-and-configuring-snowsql-ssis-only).  
 
 ### [Settings](#tab/snowsql-settings)
 
@@ -167,7 +167,7 @@ The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will onl
 
 ### Azure Environment Settings (ADF Only)
 
-The following Azure **Settings** are used to configure general Azure environment information.
+The following Azure **Settings** are used to configure general Azure environment information.  
 
 ### [Settings](#tab/azure-environment-settings)
 
@@ -191,7 +191,7 @@ The following Azure **Settings** are used to configure general Azure environment
 
 ### Azure Blob Stage Container Settings (ADF Only)
 
-The following Azure **Settings** are used to configure the blob staging destination.  This is required when using Snowflake.
+The following Azure **Settings** are used to configure the blob staging destination.  This is required when using Snowflake.  
 
 ### [Settings](#tab/azure-stage-container-settings)
 
@@ -213,13 +213,13 @@ The following Azure **Settings** are used to configure the blob staging destinat
 
 > [!TIP]
 > For details on how to generate a SAS Token refer to the following guide:  
-> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)
+> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
 
 ***
 
 ### Azure Blob Archive Container Settings (ADF Only)
 
-The following Azure **Settings** are used to configure the blob archive destination.  This is required when using Snowflake.
+The following Azure **Settings** are used to configure the blob archive destination.  This is required when using Snowflake.  
 
 ### [Settings](#tab/azure-archive-container-settings)
 
@@ -241,13 +241,13 @@ The following Azure **Settings** are used to configure the blob archive destinat
 
 > [!TIP]
 > For details on how to generate a SAS Token refer to the following guide:  
-> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)
+> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
 
 ***
 
 ### Azure Blob Error Container Settings (ADF Only)
 
-The following Azure **Settings** are used to configure the blob error destination.  This is required when using Snowflake.
+The following Azure **Settings** are used to configure the blob error destination.  This is required when using Snowflake.  
 
 ### [Settings](#tab/azure-error-container-settings)
 
@@ -269,7 +269,7 @@ The following Azure **Settings** are used to configure the blob error destinatio
 
 > [!TIP]
 > For details on how to generate a SAS Token refer to the following guide:  
-> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)
+> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
 
 ***
 
@@ -293,21 +293,67 @@ An Azure Function Bridge is automatically created and added to the deployment wh
 
 ***
 
-## Configuring Connections
+## Configuring a Connection
 
 This section outlines any specific considerations needed when configuring BimlFlex to use Snowflake across the various **Integration Stages**.  
 
-It is highly recommended that if you are using Snowflake for more than one *Integration Stage* that you host them all in a single database and leverage the use of schemas for separation if needed.  The generated DDL does not currently support `USE DATABASE` or `USE WAREHOUSE` statements.  Deployment would require either 'Cherry Picking' the correct tables for each database or using **Generate Script Options** and scoping to a specific *Integration Stage* before each generation of the scripts.
+
+| Field               | Supported Values                                                                  | Guide                                |
+| ------------------- | --------------------------------------------------------------------------------- | ------------------------------------ |
+| Integration Stage   | Source System\*, Staging Area, Persistent Staging Area, Raw Data Vault, Data Mart | [Details](#integration-stage)        |
+| Connection Type     | ODBC\*, ODBC SQL Based ELT\*                                                      | [Details](#connection-type)          |
+| System Type         | Snowflake Data Warehouse                                                          | [Details](#system-type)              |
+| Connection String   | Dsn={DSN Name};Uid={User Name};Pwd={Password};Database={Database Name};\*         | [Details](#connection-string)        |
+| Linked Service Type | Snowflake (ADF Only)                                                              | [Details](#linked-services-adf-only) |
+
+> [!NOTE]
+> \*: See details for notes.  
+
+### Integration Stage
+
+BimlFlex provides support for the use of Snowflake as both a target warehouse platform and as a `Source System`.  It is highly recommended that when using Snowflake as a target warehouse platform that a single database is used.  Naming patterns and schemas can be used for separation as needed.  The generated DDL does not currently support `USE DATABASE` or `USE WAREHOUSE` statements.  Deployment would require either 'Cherry Picking' the correct tables for each database or using **Generate Script Options** and scoping to a specific *Integration Stage* before each generation of the scripts.  
+
+#### Source System
+
+BimlFlex supports Snowflake as a `Source System` for SSIS orchestration.  When using ADF orchestration Snowflake only has limited support via the use of Staged Query **Objects** due to lack of 1st party connector support in ADF.  
+
+#### Landing Area (ADF Only)
+
+Snowflake is not currently supported as a `Landing Area` but a Landing Area is required when using ADF to orchestrate data movement.  The recommendation is for the `Landing Area` to be a *Connection Type* of `Azure Blob Storage` and *System Type* of `Flat File Delimited`.  In addition to the `Landing Area` it is also important that the **Settings* for an [Azure Blob Stage Container](#azure-blob-stage-container-settings-adf-only), [Azure Blob Archive Container](#azure-blob-archive-container-settings-adf-only), and [Azure Blob Error Container](#azure-blob-error-container-settings-adf-only) are populated correctly.  
+
+> [!IMPORTANT]
+> Ensure that all Azure Blob Container **Settings** are configured properly:  
+> [Azure Blob Stage Container](#azure-blob-stage-container-settings-adf-only)  
+> [Azure Blob Archive Container](#azure-blob-archive-container-settings-adf-only)  
+> [Azure Blob Error Container](#azure-blob-error-container-settings-adf-only)  
+
+> [!TIP]
+> Additional Resources:  
+> Microsoft Docs: [Storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)  
+> Microsoft Docs: [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)  
+> Microsoft Docs: [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)  
+> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
+
+#### Persistent Staging Area
+
+When using a `Persistent Staging Area` a `Source System` is required to have the *Persist History* box checked to have data persisted.  
 
 ### Connection Type
 
 Currently BimlFlex only supports the *Connection Type* of `ODBC SQL Based ELT` for Snowflake a **Connection** when Snowflake is being used as the target data warehouse platform.  When configuring a Snowflake *Integration Stage* of `Source System` set the *Connection Type* to `ODBC`.  
+
+### System Type
+
+*System Type* should always be `Snowflake Data Warehouse` for any Snowflake **Connection**.  
 
 ### Connection String
 
 The [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components-ssis-only) uses the connection information specified in the `.SnowSQL\config` file to connect.  See the [Snowflake SnowSQL Settings](#snowflake-snowsql-settings-ssis-only) section for instructions on how to specify the file and connection to use.  
 
 BimlFlex only uses the *Connection String* field to generate an associated Connection Manager in SSIS.  The associated Connection Manager will be created in SSIS using the inputted *Connection String* but will not be used during any of the generated SSIS orchestration.  
+
+> [!NOTE]
+> This guide only covers *Connection String* which is only used by SSIS orchestration.  For details on configuring the values of a Connect String Secret see the ADF Connection String Example in [Linked Services](#linked-services-adf-only).  
 
 ### [SSIS Connection String](#tab/snowflake-connection-string-ssis)
 
@@ -323,15 +369,15 @@ Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 
 > [!IMPORTANT]
 > Then Connection Manager will also require the appropriate ODBC driver to be installed and a DSN created.  Refer to the below guides for additional details:  
-> Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)
-> Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)
-> Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)
+> Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
+> Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
+> Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)  
 
 ***
 
 > [!TIP]
-> For additional details on creating a **Connection** refer to the below guide:
-> BimlFlex Docs: [](xref:connections)
+> For additional details on creating a **Connection** refer to the below guide:  
+> BimlFlex Docs: [](xref:connections)  
 
 ### Linked Services (ADF Only)
 
@@ -358,136 +404,69 @@ host=xy12345.west-us-2.azure.snowflakecomputing.com;account=xy12345;user=MyUser;
 > BimlFlex Docs: [](xref:create-linked-service-connection)  
 > BimlFlex Docs: [](xref:linked-service-snowflake)  
 
-### Integration Stage
+## Deploying Target Warehouse Environment
 
-BimlFlex provides support for the use of Snowflake as both a target warehouse platform and as a `Source System`.  The following tabs are provided to assist with the creation of each available *Integration Stage*.
-
-### [Source System](#tab/snowflake-src)
-
-Aside from the below field values, no other special considerations needed.
-
-- *Connection Type* = `ODBC`  
-- *System Type* = `Snowflake Data Warehouse`  
-
-### [Landing Area](#tab/snowflake-lnd)
-
-Snowflake is not currently supported as a `Landing Area` but one is still required when using ADF to orchestrate data movement.  
-
-<!-- TODO: Link to `Creating a LND Connection` or `Creating a LND Area` Article. -->
-
-<!-- TODO: Ensure  `Creating a LND Connection` or `Creating a LND Area` Article has a link to `Configuring an Azure Blob Connection` Article. -->
-
-<!-- TODO: Ensure  `Creating a LND Connection` or `Creating a LND Area` Article has a link to `Configuring an Azure Blob Linked Service` Article. -->
-
-<!-- TODO: Ensure `Configuring an Azure Blob` has a Link to Microsoft creating a Storage Account Article. -->
-
-<!-- TODO: Ensure `Configuring an Azure Blob` has a Link to Microsoft creating a Container Article. -->
-
-<!-- TODO: Ensure `Configuring an Azure Blob` has a Link to Microsoft creating a SAS Key. -->
-
-<!-- TODO: Ensure `Configuring an Azure Blob` has a Link to Microsoft Getting a Blob Connection String. -->
-
-> [!NOTE]
-> A `Landing Area` is only required if using ADF orchestration.
-
-### [Staging Area](#tab/snowflake-stg)
-
-Aside from the below field values, no other special considerations needed.
-
-- *Connection Type* = `ODBC SQL Based ELT`  
-- *System Type* = `Snowflake Data Warehouse`  
-
-### [Persistent Staging Area](#tab/snowflake-psa)
-
-Aside from the below field values, no other special considerations needed.
-
-- *Connection Type* = `ODBC SQL Based ELT`  
-- *System Type* = `Snowflake Data Warehouse`  
-
-> [!NOTE]
-> When using a `Persistent Staging Area` a `Source System` is required to have the *Persist History* box checked to have data persisted.
-
-### [Raw Data Vault](#tab/snowflake-rdv)
-
-Aside from the below field values, no other special considerations needed.
-
-- *Connection Type* = `ODBC SQL Based ELT`  
-- *System Type* = `Snowflake Data Warehouse`  
-
-### [Data Mart](#tab/snowflake-dm)
-
-Aside from the below field values, no other special considerations needed.
-
-- *Connection Type* = `ODBC SQL Based ELT`  
-- *System Type* = `Snowflake Data Warehouse`  
-
-***
-
-## Deploying Environment
-
-<!-- TODO: H2 Intro.  Explain that environment must be deployed manually and consists of generating the SnowSQL in BimlStudio and then executing the resulting scripts. -->
-
-> [!IMPORTANT]
-> It is highly recommended that if you are using Snowflake for more than one *Integration Stage* that you host them all in a single database and leverage the use of schemas for separation if needed.  The generated DDL does not currently support `USE DATABASE` or `USE WAREHOUSE` statements.  Deployment would require either 'Cherry Picking' the correct tables for each database or using **Generate Script Options** and scoping to a specific *Integration Stage* before each generation of the scripts.
+When Snowflake is used as the target warehouse platform, BimlFlex will generate the required SnowSQL script for the deployment of all the tables, stored procedures, and the Data Vault default inserts (Ghost Keys).  Once generated the scripts can be manually deployed to the required database.  
 
 ### Generating SnowSQL Scripts
 
-<!-- TODO: Intro.  Highlight that `Snowflake Table Script` and `Snowflake Procedure Script` are required and that `x Procedure Script` and `Create Table Script` are not used for Snowflake.  `Data Vault Default Insert Script` is still needed if using a Data Vault. -->
+Using Snowflake as the target warehouse platform requires the generation of the `Snowflake Table Script` and `Snowflake Procedure Script` options when using **Generate Scripts** in BimlStudio.  Additionally if Data Vault is being used the standard `Data Vault Default Insert Script` can be used to generate the required Ghost Keys.  
 
-<!-- TODO: Link to `Generating DDL` Article. -->
-
-[](xref:bimlflex-generating-ddl)
+> [!TIP]
+> For additional details on generating DDL refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-generating-ddl)  
 
 ### Deploying SnowSQL Scripts
 
-<!-- TODO: Intro.  Outline that it is a simple copy/paste process. -->
+Once BimlFlex generates the scripts they can be executed against the target database.  These can be deployed through copy/paste using a Snowflake Worksheet or by a SnowSQL command if desired.
 
-<!-- TODO: Link to Snowflake `Connecting to Snowflake` Article. -->
+> [!IMPORTANT]
+> Ensure you are using the appropriate WAREHOUSE and DATABASE when executing the SnowSQL scripts.  The scripts do not have a `USE DATABASE` or `USE WAREHOUSE` clause and depend on the user executing the script to have select the appropriate values.
 
-<!-- TODO: Link to Snowflake `Executing SQL` Article. -->
+> [!TIP]
+> For additional details on using the SnowSQL CLI or Worksheets refer to the below guides:  
+> Snowflake Docs: [Using SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-use.html)  
+> Snowflake Docs: [Using Worksheets for Queries](https://docs.snowflake.com/en/user-guide/ui-worksheet.html)  
 
-<!-- TODO: Link to Snowflake `Web Interface Walk-through` Article. -->
+### Azure Environment (ADF Only)
+
+The ADF Environment is deployed along with the orchestration.  For more details please refer to: [ADF Environment and Orchestration](#adf-environment-and-orchestration-adf-only)  
 
 ## Deploying Orchestration
 
-<!-- TODO: H2 Intro.  Explain that orchestration can be executed either by SSIS or ADF.  Remind that if using SSIS the required custom components are required and if using ADF that both the Azure Function Bridge is set correctly and LND configured appropriately. -->
+BimlFlex automatically generates the orchestration artifacts as part of the standard build process.  The actual artifacts generated depends on the method of orchestration that is used.  The below sections outline the various artifacts by orchestration methods.
 
 ### SSIS Packages (SSIS Only)
 
-<!-- TODO: Intro.  No different than standard SSIS deployment methods.  Reminder that each of the following easier to forget links needs to be completed for SSIS to work. -->
+Deploying SSIS orchestration while using Snowflake as a target platform is no different a standard SSIS deployment using BimlFlex.  Refer to the below guides for common deployment methods.  
 
-<!-- TODO: Anchor: Configuring SnowSql -->
+Ensure these commonly missed steps are performed:  
 
-<!-- TODO: Link official documentation on configuring the file. -->
+- [Install and Configure SnowSQL](#installing-and-configuring-snowsql-ssis-only)  
+- [Install and Configure Snowflake ODBC DSN](#installing-and-configuring-a-snowflake-odbc-dsn-ssis-only)  
+- [Install Snowflake SSIS Custom Components](#bimlflex-snowflake-custom-ssis-components-ssis-only)
 
-<!-- TODO: Anchor: Configuring DSN -->
+> [!TIP]
+> For additional details on generating deploying SSIS packages refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)  
+> BimlFlex Docs: [](xref:bimlflex-ssis-deployment-using-deployment-wizard)  
 
-<!-- TODO: Link official Microsoft documentation on configuring a DSN. -->
 
-<!-- TODO: Anchor: Installing SSIS Components -->
+### ADF Environment and Orchestration (ADF Only)
 
-[](xref:bimlflex-ssis-using-powershell)
+In addition to the common Azure artifacts, an Azure Function Bridge is also created and deployed to allow the use of Snowflake inside ADF as a target warehouse platform.  The process of deploying the Azure environment and ADF orchestration while itself remains unchanged.  
 
-[](xref:bimlflex-ssis-deployment-using-deployment-wizard)
+Ensure these commonly missed steps are performed:  
 
-### ADF Environment (ADF Only)
+- [Landing Area Created](#landing-area-adf-only)  
+- [Linked Service Configured and Secrets Entered](#linked-services-adf-only)  
+- [Azure Environment Settings](#azure-environment-settings-adf-only)  
+- [Azure Function Bridge Settings](#azure-function-bridge-settings-adf-only)  
+- [Azure Blob Stage Container Settings](#azure-blob-stage-container-settings-adf-only)  
+- [Azure Blob Archive Container Settings](#azure-blob-archive-container-settings-adf-only)  
+- [Azure Blob Error Container Settings](#azure-blob-error-container-settings-adf-only)  
 
-<!-- TODO: Intro.  No different than standard ADF deployment methods.  Reminder that each of the following easier to forget links needs to be completed for ADF to work. -->
-
-<!-- TODO: Anchor: Azure Function Bridge -->
-
-<!-- TODO: Link to 'Configuring an Azure Function Bridge' Article -->
-
-<!-- TODO: Anchor: Configuring Settings -->
-
-<!-- TODO: Anchor: Linked Services -->
-
-<!-- TODO: Link to `Configuring Azure Key Vault Secrets` Article. -->
-
-<!-- TODO: Anchor: Landing Area -->
-
-<!-- TODO: Link to `Creating a LND Connection` or `Creating a LND Area` Article. -->
-
-[](xref:bimlflex-adf-using-powershell)
-
-[](xref:using-azure-portal)
+> [!TIP]
+> For additional details on generating deploying SSIS packages refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-adf-using-powershell)  
+> BimlFlex Docs: [](xref:using-azure-portal)  
