@@ -340,7 +340,7 @@ When using a `Persistent Staging Area` a `Source System` is required to have the
 
 ### Connection Type
 
-Currently BimlFlex only supports the *Connection Type* of `ODBC SQL Based ELT` for Snowflake a **Connection** when Snowflake is being used as the target data warehouse platform.  When configuring a Snowflake *Integration Stage* of `Source System` set the *Connection Type* to `ODBC`.  
+Currently BimlFlex only supports the *Connection Type* of `ODBC SQL Based ELT` for a Snowflake **Connection** when being used as the target data warehouse platform.  When configuring a Snowflake *Integration Stage* of `Source System` set the *Connection Type* to `ODBC`.  
 
 ### System Type
 
