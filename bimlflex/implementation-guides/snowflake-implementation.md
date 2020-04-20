@@ -24,7 +24,7 @@ When using SSIS Orchestration, BimlFlex uses a [Snowflake Custom SSIS Component]
 > For additional details on installing SnowSQL refer to the below guide:
 > Snowflake Docs: [Installing SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-install-config.html)  
 
-Once SnowSQL is installed a connection needs tob be created in the specified `config` file.  The location may vary from depending on the installation but the default location for Windows is `%USERPROFILE%\.snowsql\`.  Open the file with any text editor and insert a connection following the template below.  
+Once SnowSQL is installed a connection needs to be created in the specified `config` file.  The location may vary from depending on the installation but the default location for Windows is `%USERPROFILE%\.snowsql\`.  Open the file with any text editor and insert a connection following the template below.  
 
 ### [Template](#tab/snowsql-connection-template)
 
@@ -297,7 +297,6 @@ An Azure Function Bridge is automatically created and added to the deployment wh
 
 This section outlines any specific considerations needed when configuring BimlFlex to use Snowflake across the various **Integration Stages**.  
 
-
 | Field               | Supported Values                                                                  | Guide                                |
 | ------------------- | --------------------------------------------------------------------------------- | ------------------------------------ |
 | Integration Stage   | Source System\*, Staging Area, Persistent Staging Area, Raw Data Vault, Data Mart | [Details](#integration-stage)        |
@@ -451,10 +450,9 @@ Ensure these commonly missed steps are performed:
 > BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)  
 > BimlFlex Docs: [](xref:bimlflex-ssis-deployment-using-deployment-wizard)  
 
-
 ### ADF Environment and Orchestration (ADF Only)
 
-In addition to the common Azure artifacts, an Azure Function Bridge is also created and deployed to allow the use of Snowflake inside ADF as a target warehouse platform.  The process of deploying the Azure environment and ADF orchestration while itself remains unchanged.  
+In addition to the common Azure artifacts, an Azure Function Bridge is also created and deployed to allow the use of Snowflake inside ADF as a target warehouse platform.  The process of deploying the Azure environment and ADF orchestration itself remains unchanged.  
 
 Ensure these commonly missed steps are performed:  
 
