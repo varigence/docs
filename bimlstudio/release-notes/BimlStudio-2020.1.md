@@ -16,7 +16,10 @@ Significant changes between BimlStudio 2019 R1 and BimlStudio 2020 R1
 * Added root guard to XSD parsing to prevent root_ID column from being added to simple `XML Source` column collections.
 * Improved `SMOConnection` support.
 * Fixed bug that prevented packages with `CDCSplitter` components from building.
-
+* Fixed bug that prevented `AzureStorageConnectionManager` components from emitting correctly.
+* Added support for `FlexibleFileSource` component.
+* Added support for `FlexibleFileDestination` component.
+* Added support for the Azure based `For Each` enumerators: `AzureBlob`, `HDFS`, `AzureDataLakeStore`, `AzureDataLakeStoreGen2`.
 
 ## BimlStudio Improvements
 * Fixed bug where Extension file changes are triggering background reprocessing, even when background processing is suspended.
@@ -60,6 +63,11 @@ Significant changes between BimlStudio 2019 R1 and BimlStudio 2020 R1
 * Fixed bug where linked service connection strings that had sub properties that were stored in an Azure Key Vault, were still being emitted as secure strings.
 * Added `FunctionKeyKVS` property to `AzureFunction` linked services.
 * Ensure that Dataset and LinkedService collections do not emit if they are empty, inside of web request payloads.
+* Fixed a bug in `SetVariableActivity` and `AppendVariableActivity` where the user could not specify child properties within the node.
+* Added support for all source nodes inside of `LookupActivity`.
+* Added support for `AdditionalColumns` collections inside of most dataset sources.
+* Changed the way we emit column mappings in copy activities to conform with ADF's `mapping` collection.
+* Added `TimeoutQuery` property to all `Tabular` dataset sources.
 
 ## Command Line Builds
 
