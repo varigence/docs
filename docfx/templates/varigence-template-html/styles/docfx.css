@@ -212,6 +212,11 @@ header .navbar {
 article h1, article h2, article h3, article h4{
   margin-top: 25px;
 }
+
+article a, article a:hover, article a:focus {
+  text-decoration: underline;
+}
+
 /*
 article h4{
   border-bottom: 1px solid #ccc;
