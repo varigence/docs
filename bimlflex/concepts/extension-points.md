@@ -115,12 +115,12 @@ The Target represents the object or entity where the Extension Point should be i
 
 * If the **Extension Point** is known and the target name of an object is needed, right-click the Object in the Logical View in BimlStudio and click `Copy Biml`.
 
-![Copy Biml -center -40%](../user-guide/images/right-click-copy-biml.png "Copy Biml")
+![Copy Biml](../user-guide/images/right-click-copy-biml.png "Copy Biml")
 
 * Paste the `Biml` in `Notepad` or `Notepad ++`. the Screenshot uses Notepad ++ and have the language set to `XML` to enable highlighting.
 * Use either the `Batch` or `ObjectEntity` information depending on the Extension Point scope.
 
-![BimlFlex Target -center -100%](../user-guide/images/bimlflex-package-annotations.png "BimlFlex Target")
+![BimlFlex Target](../user-guide/images/bimlflex-package-annotations.png "BimlFlex Target")
 
 ### Option 2, Find Extension Point Location and Target
 
@@ -128,14 +128,14 @@ A more technical approach that require some knowledge of `Biml`.
 
 1. `Right Click` the target Object and choose `View Designer`.
 
-![View Designer -center -40%](../user-guide/images/right-click-view-designer.png "View Designer")
+![View Designer](../user-guide/images/right-click-view-designer.png "View Designer")
 
 1. Right Click on the tab with the package name, in this case `CI_LOAD_AWLT_DM_Customer`, and choose `View in BimlScript Designer`
 
-![View BimlScript Designer -center -100%](../user-guide/images/right-click-view-bimlscript-designer.png "View BimlScript Designer")
+![View BimlScript Designer](../user-guide/images/right-click-view-bimlscript-designer.png "View BimlScript Designer")
 
 1. click `Update Preview` on the `BimlScript` tab.
 1. In the `Preview Expanded BimlScript` there are `XML` comments with the available `Extension Point` types and their targets.
 1. When targeting the parent of an Object-based Extension Point, also set `CustomOutput.ObjectInherit = true;`
 
-![Update Preview -center -100%](../user-guide/images/update-preview-extensionpoint-target.png "Update Preview")
+![Update Preview](../user-guide/images/update-preview-extensionpoint-target.png "Update Preview")
