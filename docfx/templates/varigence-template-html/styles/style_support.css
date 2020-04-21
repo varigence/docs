@@ -7424,11 +7424,22 @@ input[type="radio"]
 creates styles like:
 
 m-5 {margin: 5px}
+mtb-5 {margin: 5px 0px 5px 0px} (top right bottom left)
 p-10 {padding: 10px}
+
 
 */
 .m-2 {
   margin: 2px;
+}
+
+.mtb-2, img[alt~="-mtb-2-image"] {
+  margin: 2px 0px 2px 0px;
+}
+
+.mtb-border-2, img[alt~="-mtb-2-border-image"] {
+  margin: 2px 0px 2px 0px;
+  border: 1px solid #CCC;
 }
 
 .p-2 {
@@ -7439,12 +7450,30 @@ p-10 {padding: 10px}
   margin: 5px;
 }
 
+.mtb-5, img[alt~="-mtb-5-image"] {
+  margin: 5px 0px 5px 0px;
+}
+
+.mtb-border-5, img[alt~="-mtb-5-border-image"] {
+  margin: 5px 0px 5px 0px;
+  border: 1px solid #CCC;
+}
+
 .p-5 {
   padding: 5px;
 }
 
 .m-10 {
   margin: 10px;
+}
+
+.mtb-10, img[alt~="-mtb-10-image"] {
+  margin: 10px 0px 10px 0px;
+}
+
+.mtb-border-10, img[alt~="-mtb-10-border-image"] {
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #CCC;
 }
 
 .p-10 {
@@ -7455,12 +7484,30 @@ p-10 {padding: 10px}
   margin: 15px;
 }
 
+.mtb-15, img[alt~="-mtb-15-image"] {
+  margin: 15px 0px 15px 0px;
+}
+
+.mtb-border-15, img[alt~="-mtb-15-border-image"] {
+  margin: 15px 0px 15px 0px;
+  border: 1px solid #CCC;
+}
+
 .p-15 {
   padding: 15px;
 }
 
 .m-20 {
   margin: 20px;
+}
+
+.mtb-20, img[alt~="-mtb-20-image"] {
+  margin: 20px 0px 20px 0px;
+}
+
+.mtb-border-20, img[alt~="-mtb-20-border-image"] {
+  margin: 20px 0px 20px 0px;
+  border: 1px solid #CCC;
 }
 
 .p-20 {
@@ -7471,12 +7518,30 @@ p-10 {padding: 10px}
   margin: 25px;
 }
 
+.mtb-25, img[alt~="-mtb-25-image"] {
+  margin: 25px 0px 25px 0px;
+}
+
+.mtb-border-25, img[alt~="-mtb-25-border-image"] {
+  margin: 25px 0px 25px 0px;
+  border: 1px solid #CCC;
+}
+
 .p-25 {
   padding: 25px;
 }
 
 .m-30 {
   margin: 30px;
+}
+
+.mtb-30, img[alt~="-mtb-30-image"] {
+  margin: 30px 0px 30px 0px;
+}
+
+.mtb-border-30, img[alt~="-mtb-30-border-image"] {
+  margin: 30px 0px 30px 0px;
+  border: 1px solid #CCC;
 }
 
 .p-30 {

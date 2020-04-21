@@ -6525,7 +6525,9 @@ input[type="search"]:focus {
 creates styles like:
 
 m-5 {margin: 5px}
+mtb-5 {margin: 5px 0px 5px 0px} (top right bottom left)
 p-10 {padding: 10px}
+
 
 */
 $spaceamounts: (2, 5, 10, 15, 20, 25, 30);
@@ -6533,6 +6535,16 @@ $spaceamounts: (2, 5, 10, 15, 20, 25, 30);
   .m-#{$space} {
     margin: #{$space}px;
   }
+
+  .mtb-#{$space}, img[alt~="-mtb-#{$space}-image"] {
+    margin: #{$space}px 0px #{$space}px 0px;
+  }
+
+  .mtb-border-#{$space}, img[alt~="-mtb-#{$space}-border-image"] {
+    margin: #{$space}px 0px #{$space}px 0px;
+    border: 1px solid #CCC;
+  }
+
 
   .p-#{$space} {
     padding: #{$space}px;
