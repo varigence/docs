@@ -1,9 +1,5 @@
-#### Duplicate Attribute Dialog  
+#### Duplicate Attribute Dialog
 
 This will create a copy of the selected **Attribute** and properties. A unique name is required.
 
-<img
-    src="images/dialog-duplicate-attribute.64566.png"
-    class="border-image"
-    title="Duplicate Attribute Dialog"
-/>
+![Duplicate Attribute Dialog -mtb-20-border-image](images/dialog-duplicate-attribute.64566.png "Duplicate Attribute Dialog")

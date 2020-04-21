@@ -4,7 +4,7 @@ title: Importing Source Metadata
 ---
 # Importing Source Metadata
 
-![Importing Source Metadata -center](https://www.youtube.com/watch?v=ClMJcZPdSks?rel=0&autoplay=0 "Importing Source Metadata")
+![Importing Source Metadata](https://www.youtube.com/watch?v=ClMJcZPdSks?rel=0&autoplay=0 "Importing Source Metadata")
 
 Importing metadata from database connections is a convenient and agile way to start modeling data from a source to a Data Warehouse.
 

@@ -1,10 +1,5 @@
-#### Duplicate Parameter Dialog Box  
+#### Duplicate Parameter Dialog Box
 
-This will create a copy of the selected **Parameter** and properties.  
+This will create a copy of the selected **Parameter** and properties.
 
-<br/>
-<img
-    src="images/bimlflex-app-dialog-duplicate-parameter.png"
-    class="border-image"
-    title="Duplicate Parameter Dialog Box"
-/>
+![Duplicate Parameter Dialog Box -mtb-20-border-image](images/bimlflex-app-dialog-duplicate-parameter.png "Duplicate Parameter Dialog Box")

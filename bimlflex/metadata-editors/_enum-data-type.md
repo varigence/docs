@@ -29,7 +29,7 @@
 | UInt64                | Unsigned big integer.                                                 |
 | VarNumeric            | Variable numeric                                                      |
 | Xml                   | XML formatted data.                                                   |
-| HierarchyId           | SQL Server hierarchid data type.                                      |
+| HierarchyId           | SQL Server HierarchyId data type.                                     |
 | Geometry              | SQL Server geometry data type.                                        |
 | Geography             | SQL Server geography data type.                                       |
 | SmallMoney            | Small money.                                                          |

@@ -14,7 +14,6 @@
 |<div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected **Columns**.||
 |<div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg" /></div>|Integration Key|This will bring up the dialog to create an `Integration Key`.|[Generate Derived Integration Key](#generate-derived-integration-key-dialog-box)|
 
-
 ### Additional Dialogs  
 
 [!include[Add Column Dialog Box](_dialog-add-column.md)]  
