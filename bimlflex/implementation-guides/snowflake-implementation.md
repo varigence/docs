@@ -165,6 +165,35 @@ The SnowSQL **Settings** deal with the configuration of SnowSQL.  These will onl
 
 ***
 
+### SSIS Environment Settings (SSIS Only)
+
+The following SSIS **Settings** are used to configure general SSIS environment information.  
+
+### [Settings](#tab/ssis-environment-settings)
+
+| Setting Key | Setting Description                                            |
+| ----------- | -------------------------------------------------------------- |
+| SsisDb      | The SSISDB database name to use                                |
+| SsisFolder  | The SSIS Catalog folder name to use for generated Script files |
+| SsisServer  | The SSIS Server name to use for generated Script files         |
+
+### [Examples](#tab/ssis-environment-settings-example)
+
+<!-- TODO: Populate SSIS Environment Examples -->
+
+| Setting Key | Setting Description |
+| ----------- | ------------------- |
+| SsisDb      | SSISDB              |
+| SsisFolder  | @@this              |
+| SsisServer  | localhost           |
+
+> [!NOTE]
+> SsisDb: `SSISDB` is Microsoft default.  This is rarely changed.  
+>  
+> SsisFolder: `@@this` in calling context in the name of the **Project**.
+
+***
+
 ### Azure Environment Settings (ADF Only)
 
 The following Azure **Settings** are used to configure general Azure environment information.  
@@ -444,6 +473,7 @@ Ensure these commonly missed steps are performed:
 - [Install and Configure SnowSQL](#installing-and-configuring-snowsql-ssis-only)  
 - [Install and Configure Snowflake ODBC DSN](#installing-and-configuring-a-snowflake-odbc-dsn-ssis-only)  
 - [Install Snowflake SSIS Custom Components](#bimlflex-snowflake-custom-ssis-components-ssis-only)
+- [SSIS Environment Settings](#ssis-environment-settings-ssis-only)  
 
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
