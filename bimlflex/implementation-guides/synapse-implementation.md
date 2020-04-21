@@ -271,59 +271,30 @@ The following AzCopy **Settings** are used to configure the use of PolyBase and 
 > [!NOTE]
 > AzureExternalFileFormat: Ensure the following [EXTERNAL DATA SOURCE](#creating-a-external-data-source) and [EXTERNAL FILE FORMAT](#creating-a-external-file-format) are aligned with this setting correctly.
 
-
 ### SSIS Environment Settings (SSIS Only)
 
 The following SSIS **Settings** are used to configure general SSIS environment information.  
 
-### [Settings](#tab/azure-environment-settings)
+### [Settings](#tab/ssis-environment-settings)
 
-| Setting Key                  | Setting Description                                                                                                                                 |
-| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| SsisAutoAdjustBufferSize     | SSIS Auto Adjust Buffer Size configuration for supported SQL Server versions                                                                        |
-| SsisBLOBTempStoragePath      | The Blob Temporary Storage Path that SSIS uses to spool temporary data to disk when it runs out of memory.                                          |
-| SsisBufferTempStoragePath    | The Buffer Temporary Storage Path that SSIS uses to spool temporary data to disk when it runs out of memory.                                        |
-| SsisCheckConstraints         | SSIS Destination configuration for checking constraints. Defaults to `False`, as that is recommended for data warehouse destinations                |
-| SsisCommandTimeout           | SSIS Command Timeout to use. Override the value here to change the default SSIS behavior                                                            |
-| SsisDb                       | The SSISDB database name to use                                                                                                                     |
-| SsisDefaultBufferMaxRows     | SSIS Data Flow configuration for Default Buffer Max Rows for supported destinations. Override the value here to change the default SSIS behavior    |
-| SsisDefaultBufferSize        | SSIS Data Flow configuration for Default Buffer Size for supported destinations. Override the value here to change the default SSIS behavior        |
-| SsisDelayValidation          | Should generated SSIS packages use delayed validation for metadata validation                                                                       |
-| SsisEngineThreads            | Max number of SSIS engine threads to employ. Override the value here to change the default SSIS behavior                                            |
-| SsisFolder                   | The SSIS Catalog folder name to use for generated Script files                                                                                      |
-| SsisMaxConcurrentExecutables | Max number of concurrent SSIS executables to employ. Override the value here to change the default SSIS behavior                                    |
-| SsisMaximumInsertCommitSize  | SSIS Data Flow configuration for Maximum Insert Commit Size for supported destinations. Override the value here to change the default SSIS behavior |
-| SsisProcessSubfolders        | Should a flat file source loop load files in subfolders of the specified source folder                                                              |
-| SsisRowsPerBatch             | SSIS Data Flow configuration for Rows Per Batch for supported destinations. Override the value here to change the default SSIS behavior             |
-| SsisServer                   | The SSIS Server name to use for generated Script files                                                                                              |
-| SsisValidateExternalMetadata | Should generated SSIS packages validate external metadata                                                                                           |
+| Setting Key | Setting Description                                            |
+| ----------- | -------------------------------------------------------------- |
+| SsisDb      | The SSISDB database name to use                                |
+| SsisFolder  | The SSIS Catalog folder name to use for generated Script files |
+| SsisServer  | The SSIS Server name to use for generated Script files         |
+
+### [Examples](#tab/ssis-environment-settings-example)
+
+| Setting Key | Setting Description |
+| ----------- | ------------------- |
+| SsisDb      | SSISDB              |
+| SsisFolder  | @@this              |
+| SsisServer  | localhost           |
 
 > [!NOTE]
-> SsisBLOBTempStoragePath:  Defaults to the TEMP environmental variable. That normally means the user context temporary storage location on the C: drive. If the data flows spill Blobs to disk, update this value to a location with enough space and speed for the load to succeed.  
+> SsisDb: `SSISDB` is Microsoft default.  This is rarely changed.  
 >  
-> SsisBufferTempStoragePath: Defaults to the TEMP environmental variable. That normally means the user context temporary storage location on the C: drive. If the data flows spill buffer data to disk, update this value to a location with enough space and speed for the load to succeed.  
-
-### [Examples](#tab/azure-environment-settings-example)
-
-| Setting Key                  | Setting Description |
-| ---------------------------- | ------------------- |
-| SsisAutoAdjustBufferSize     |                     |
-| SsisBLOBTempStoragePath      |                     |
-| SsisBufferTempStoragePath    |                     |
-| SsisCheckConstraints         |                     |
-| SsisCommandTimeout           |                     |
-| SsisDb                       |                     |
-| SsisDefaultBufferMaxRows     |                     |
-| SsisDefaultBufferSize        |                     |
-| SsisDelayValidation          |                     |
-| SsisEngineThreads            |                     |
-| SsisFolder                   |                     |
-| SsisMaxConcurrentExecutables |                     |
-| SsisMaximumInsertCommitSize  |                     |
-| SsisProcessSubfolders        |                     |
-| SsisRowsPerBatch             |                     |
-| SsisServer                   |                     |
-| SsisValidateExternalMetadata |                     |
+> SsisFolder: `@@this` in calling context in the name of the **Project**.
 
 ***
 
@@ -520,13 +491,7 @@ When Azure Synapse is used as the target warehouse platform, BimlFlex will gener
 
 ### Automated SSDT Deployment (PowerShell)
 
-A part of the Build process, BimlStudio will generate a SQL Server Data Tools (SSDT) project for the Synapse target warehouse platform.  By default a SSDT deployment file named `ssdt-deploy.<DatabaseName>.ps1` is created and placed in the `...\<Output Folder>\Deploy\` folder for each database in the target warehouse environment.
-
-<!-- TODO: Outline Required Deployment Settings -->
-
-> [!NOTE]
-> Ensure the following settings are configured for proper deployment:  
-> [SSIS Environment Settings](#ssis-environment-settings-ssis-only)  
+A part of the Build process, BimlStudio will generate a SQL Server Data Tools (SSDT) project for the Synapse target warehouse platform.  By default a SSDT deployment file named `ssdt-deploy.<DatabaseName>.ps1` is created and placed in the `...\<Output Folder>\Deploy\` folder for each database in the target warehouse environment.  
 
 The SSDT project will have all the required tables, stored procedures and Data Vault default inserts required for the project.  Through use of [Azure PolyBase Settings](#azure-polybase-settings-polybase-architecture-only) EXTERNAL TABLES can be included or excluded in this deployment file.  These files are commonly excluded due to PolyBase requiring a file to exist in the blob storage prior to the creation of the EXTERNAL TABLE.  
 
@@ -537,7 +502,7 @@ Aside from the possible inclusion of the EXTERNAL TABLE scripts, the process is 
 
 > [!TIP]
 > For additional details on PowerShell deployment refer to the below guide:  
-> BimlFlex Docs: [](xref:BimlFlex Interactive Build)
+> BimlFlex Docs: [](xref:bimlflex-interactive-build)
 > BimlFlex Docs: [](xref:bimlflex-command-line-build)
 > BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)
 
@@ -594,16 +559,15 @@ Ensure these commonly missed steps are performed:
 
 - [Install AzCopy (PolyBase Architecture Only)](#installing-azcopy-polybase-architecture-only)  
 - [Configuring Synapse (PolyBase Architecture Only)](#configuring-synapse-polybase-architecture-only)  
-
-<!-- TODO: Double check all proper sections listed -->
-
-<!-- TODO: Outline Required Deployment Settings -->
+- [AzCopy Settings](#azcopy-settings-polybase-architecture-only)  
+- [Azure PolyBase Settings](#azure-polybase-settings-polybase-architecture-only)  
+- [SSIS Environment Settings](#ssis-environment-settings-ssis-only)  
+- [Target Warehouse Environment Deployed (Required for SSIS Validation)](#deploying-target-warehouse-environment)
 
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
 > BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)  
 > BimlFlex Docs: [](xref:bimlflex-ssis-deployment-using-deployment-wizard)  
-
 
 ### ADF Environment and Orchestration (ADF Only)
 
@@ -611,12 +575,16 @@ The process of deploying the Azure environment and ADF orchestration itself rema
 
 Ensure these commonly missed steps are performed:  
 
-<!-- TODO: Double check all proper sections listed -->
-
+- [Configuring Synapse (PolyBase Architecture Only)](#configuring-synapse-polybase-architecture-only)  
+- [Azure PolyBase Settings](#azure-polybase-settings-polybase-architecture-only)  
 - [Linked Service Configured and Secrets Entered](#linked-services-adf-only)  
 - [Azure Environment Settings](#azure-environment-settings-adf-only)  
+- [Azure Blob Stage Container Settings](#azure-blob-stage-container-settings-adf-only)
+- [Azure Blob Archive Container Settings](#azure-blob-archive-container-settings-adf-only)
+- [Azure Blob Error Container Settings](#azure-blob-error-container-settings-adf-only)
 
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
 > BimlFlex Docs: [](xref:bimlflex-adf-using-powershell)  
 > BimlFlex Docs: [](xref:using-azure-portal)  
+ 
