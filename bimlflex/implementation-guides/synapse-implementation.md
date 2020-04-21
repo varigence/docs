@@ -21,7 +21,7 @@ If not using the External Table Architecture, proceed to [Configuring BimlFlex S
 
 ### Installing AzCopy (External Table Architecture Only)
 
-For workloads that leverage the external table architecture, BimlFlex creates the files locally and then use AzCopy to upload the files.  Use the below guide to download and install AzCopy.  AzCopy comes in different versions with different feature sets. A general recommendation is to use the latest version and SAS tokens for access authentication.  After instillation ensure the appropriate **Setttings** are configured in BimlFlex.  
+For workloads that leverage the external table architecture, BimlFlex creates the files locally and then use AzCopy to upload the files.  Use the below guide to download and install AzCopy.  AzCopy comes in different versions with different feature sets. A general recommendation is to use the latest version and SAS tokens for access authentication.  After instillation ensure the appropriate **Settings** are configured in BimlFlex.  
 
 <!-- TODO: Link to AzCopy Settings -->
 
@@ -238,7 +238,7 @@ GO;
 
 ***
 
-### Azure Polybase Settings (Polybase Only)
+### Azure PolyBase Settings (PolyBase Only)
 
 <!-- TODO: Intro -->
 
@@ -372,13 +372,12 @@ The following Azure **Settings** are used to configure the blob error destinatio
 
 This section outlines any specific considerations needed when configuring BimlFlex to use Azure Synapse across the various **Integration Stages**.  
 
-
 | Field               | Supported Values                                                                                                                            | Guide                                |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
 | Integration Stage   | Source System, Landing Area, Staging Area, Persistent Staging Area, Raw Data Vault, Data Mart                                               | [Details](#integration-stage)        |
 | Connection Type     | OLEDB\*, OLEDB SQL Based ELT\*                                                                                                              | [Details](#connection-type)          |
 | System Type         | Azure Synapse                                                                                                                               | [Details](#system-type)              |
-| Connection String   | Data Source=<server name>.database.windows.net,<port>;Initial Catalog=<database>;User ID=<user>;Password=<password>;Provider=SQLNCLI11.1;\* | [Details](#connection-string)        |
+| Connection String   | `Data Source=<server name>.database.windows.net,<port>;Initial Catalog=<database>;User ID=<user>;Password=<password>;Provider=SQLNCLI11.1;`\* | [Details](#connection-string)        |
 | Linked Service Type | Azure Synapse Analytics (SQL DW) (ADF Only)                                                                                                 | [Details](#linked-services-adf-only) |
 
 > [!NOTE]
