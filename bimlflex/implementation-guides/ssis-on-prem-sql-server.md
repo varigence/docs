@@ -17,7 +17,7 @@ See [](xref:bimlflex-getting-started-initial-configuration) for information on c
 
 #### Configure BimlStudio Project Target Architecture
 
-For on-prem SSIS project architencture, ensure that the BimlStudio project is enabled to use Project Deployment.
+For on-premises SSIS project architecture, ensure that the BimlStudio project is enabled to use Project Deployment.
 
 ![BimlStudio - Set Project Target Architecture](images/bfx-ssis-src-stg-psa-SetProjectTargetVersions.png)
 
@@ -30,7 +30,7 @@ In BimlFlex, start with applying Sample Metadata: `01 - Starting Point for MSSQL
 #### Import the Source Metadata from AWLT2012
 
 See [](xref:bimlflex-importing-metadata) for more detail.
-  
+
 ![Import Metadata](images/bfx-ssis-src-stg-psa-ImportMetadata.png)
 
 ### Set up delete detection
@@ -177,7 +177,7 @@ To complete the RDV setup in BimlFlex, accelerate all tables and publish. For in
 
 1. In the **Accelerator**, select all tables then click **Publish**  
 1. In BimlStudio, generate the Create Table scripts again  
-1. Run the generated scripts in Sql Server  
+1. Run the generated scripts in SQL Server  
 1. Build the BimlStudio Project  
 
 #### Run SSDT Projects
