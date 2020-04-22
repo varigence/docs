@@ -130,7 +130,7 @@ WHERE p.PackageName = '01_EXT_AWLT_SRC_Batch'
 
 ## Raw Data Vault (RDV)
 
-After Stage and Persised Stage steps have been completed - setup can begin for the Raw Data Vault step of this process.
+After Stage and Persisted Stage steps have been completed - setup can begin for the Raw Data Vault step of this process.
 
 In this scenario, setting up the RDV will include the following steps.
 
@@ -165,7 +165,7 @@ In this scenario, setting up the RDV will include the following steps.
 1. Change the Connection Type to "OLEDB" or "OLEDB with ELT" and save  
   ![ssis-op-sql-connections-save.png](images/ssis-op-sql-connections-save.png)
 
-At this point, the RDV can be configured to work with ETL or ELT. For ETL choose the standard Connection Type, i.e. "OLEDB". For ELT choose the connection type that specifies ELT, i.e. "OLEDB with ELT".`
+At this point, the RDV can be configured to work with ETL or ELT. For ETL choose the standard Connection Type, i.e. "OLEDB". For ELT choose the connection type that specifies ELT, i.e. "OLEDB with ELT".
 
 ### Model Data Vault Metadata
 
