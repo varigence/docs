@@ -4,6 +4,10 @@ title: BimlFlex Continuous Integration and Continuous Delivery
 ---
 # Continuous Integration and Continuous Delivery
 
+<!-- TODO: Cross link to ADF version once ADF is completed.
+The following guide is from tailored specifically for SSIS.  For a details and considerations on implementing CI/CD in ADF see the guide: [](xref:bimlflex-adf-continuous-integration-and-continuous-delivery).
+-->
+
 One core feature in using the BimlFlex Data Warehouse Automation solution is that it can be used in a CI/CD pipeline.
 
 There are numerous approaches used for CI/CD and Data Warehouses have their special considerations compared to the more common web based or software development based CI/CD processes.
