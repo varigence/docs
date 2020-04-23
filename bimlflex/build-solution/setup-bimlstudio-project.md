@@ -13,29 +13,17 @@ A BimlStudio project is used to build and generate the metadata configured in Bi
 
 Create the BimlStudio project by using the *BimlFlex Project* template.
 
-<img
-    src="images/bimlstudio-landing.png"
-    class="border-image"
-    title="BimlStudio"
-/>
+![-border-image](images/bimlstudio-landing.png "BimlStudio")
 
 Fill in the *New BimlFlex Project* dialog to finish creating the project.
 
-<img
-    src="images/bimlstudio-new-project.png"
-    class="border-image"
-    title="BimlStudio - New BimlFlex Project"
-/>
+![-border-image](images/bimlstudio-new-project.png "BimlStudio - New BimlFlex Project" )
 
 ## Configure Metadata Settings
 
 The Metadata configuration page is used to point the BimlStudio project at the BimlFlex metadata.
 
-<img
-    src="images/bimlstudio-metadata.png"
-    class="border-image"
-    title="BimlStudio - Metadata"
-/>
+![-border-image](images/bimlstudio-metadata.png "BimlStudio - Metadata" )
 
 Use the fields in the form to set up a connection with the BimlFlex database and select the **Customer** and **Version** to use in the BimlStudio project. Save all changes with the save button in the application toolbar or `Ctrl + S`.
 
