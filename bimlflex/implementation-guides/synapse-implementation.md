@@ -584,7 +584,6 @@ Ensure these commonly missed steps are performed:
 - [Azure Blob Error Container Settings](#azure-blob-error-container-settings-adf-only)
 
 > [!TIP]
-> For additional details on generating deploying SSIS packages refer to the below guides:  
+> For additional details on generating deploying ADF artifacts refer to the below guides:  
 > BimlFlex Docs: [](xref:bimlflex-adf-using-powershell)  
 > BimlFlex Docs: [](xref:using-azure-portal)  
- 
