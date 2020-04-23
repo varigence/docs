@@ -55,13 +55,13 @@ If the project is deployed using the wrong Visual Studio SSIS Target Server/Vers
 > For additional details on installing SSIS Custom Components refer to the below guide:  
 > BimlFlex Docs: [](xref:bimlflex-ssis-custom-components)  
 
-## Project deployment for SQL Server 2016 using the catalog
+## Project Deployment for SQL Server 2017 Using the Catalog
 
 As a demonstration project, a new BimlStudio project called Demo located in the `c:\Varigence\` folder will be used. The project will create a folder called Demo for the BimlStudio project contents.
 
 This project will have a single integration to read from the AdventureWorksLT source to the Staging Database.
 
-The approach assumes a SQL Server version that supports SSIS Catalog (2012+) and in the document SQL Server 2016 is used.
+The approach assumes a SQL Server version that supports SSIS Catalog (2012+) and in the document SQL Server 2017 is used.
 
 1. Before deployment, a Catalog must be available in the target SQL Server instance.
 1. Once the required metadata is created BimlStudio will build the SSIS Project.
@@ -71,7 +71,7 @@ The approach assumes a SQL Server version that supports SSIS Catalog (2012+) and
 
 ## Create and Build a Demo Project
 
-### Step 1, Create Project
+### Step 1: Create Project
 
 From BimlStudio a project called Demo is created in the `C:\Varigence\Demo` folder.
 
@@ -86,13 +86,13 @@ SSIS 2016 is used in the demo. The Project deployment checkbox is checked so con
 > BimlFlex Docs: [](xref:bimlflex-setup-bimlstudio-project)  
 
 
-### Step 2, Load BimlFlex Sample Metadata
+### Step 2: Load BimlFlex Sample Metadata
 
 As the demo source is one of the sample sources it is possible to take a shortcut through the sample metadata.  Using BimlFlex load the  `01 - MSSQL Starting Point` sample.  
 
 <!-- TODO: Link (Create?) guide for loading sample metadata -->
 
-### Step 3, Import Metadata
+### Step 3: Import Metadata
 
 Once the sample metadata is created it can directly connect to the AdventureWorksLT Source to get the required source metadata.
 
@@ -104,7 +104,7 @@ Import the metadata for all tables in scope of the `SalesLT` schema from the fro
 > For additional details on importing metadata project refer to the below guide:  
 > BimlFlex Docs: [](xref:bimlflex-importing-metadata)  
 
-### Step 4, Create Databases and Tables
+### Step 4: Create Databases and Tables
 
 Create all DW databases and tables from the BimlStudio generated scripts output.
 
@@ -114,7 +114,7 @@ Create all DW databases and tables from the BimlStudio generated scripts output.
 > For additional details on generating the DDL refer to the below guide:  
 > BimlFlex Docs: [](xref:bimlflex-generating-ddl)  
 
-### Step 5, Define Project Parameters
+### Step 5: Define Project Parameters
 
 Define project parameters and connection expressions for all relevant connections in the BimlStudio solution.
 
@@ -148,7 +148,7 @@ Extension Point files should be named using a consistent naming convention. Thes
 > BimlFlex Docs: [](xref:bimlflex-metadata-parameters)  
 > BimlFlex Docs: [](xref:bimlflex-extension-points)  
 
-### Step 6, Build the Projects in BimlStudio
+### Step 6: Build the Projects in BimlStudio
 
 Build command buttons
 
@@ -159,7 +159,7 @@ Build command buttons
 > BimlFlex Docs: [](xref:bimlflex-interactive-build)  
 > BimlFlex Docs: [](xref:bimlflex-command-line-build)  
 
-### Step 7, Review the Generated SSIS Projects
+### Step 7: Review the Generated SSIS Projects
 
 The default destination for the output is a folder called output in the project folder. In this case `C:\Varigence\Demo\Output\`
 
@@ -199,7 +199,7 @@ There are 3 main ways of deploying to the SSIS Catalog:
 > For additional details on deployment of SSIS projects and packages refer to the below guide:  
 > Microsoft Docs: [Deploy Integration Services (SSIS) Projects and Packages](https://docs.microsoft.com/en-au/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
 
-## Deploying through the command line
+## Deploying through the Command Line
 
 From the command prompt, run `isdeploymentwizard.exe` from the `%ProgramFiles%\Microsoft SQL Server\130\DTS\Binn`. Folder (Note the path is SQL Server version specific) with the required parameters for either interactive or silence deployments
 
@@ -220,7 +220,7 @@ For automated deployments, this would normally be defined through a script file 
 > BimlFlex Docs: [](xref:bimlflex-ssis-deployment-wizard)  
 > BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)  
 
-## Opening the project in Visual Studio 2015 and deploying to the Catalog
+## Opening the Project in Visual Studio 2015 and Deploying to the Catalog
 
 BimlStudio generates SSIS projects but not solutions. The default behavior for a project file (`.dtproj`) is not associated with Visual Studio SQL Server Data Tools for Business Intelligence so in a new environment it will need to be opened from Visual Studio or the extension needs to be associated to open with SSDT BI.
 
@@ -228,9 +228,23 @@ An option to consider is to create an empty Visual Studio Solution in the output
 
 Once the project is opened in Visual Studio the packages can be reviewed and tested.
 
-For Visual Studio, it is important to match the Visual Studio version to the destination SQL Server. Visual Studio 2010 and 2012 can work with and deploy to SQL Server 2012, Visual Studio 2013 works with SQL Server 2014 and Visual Studio 2015 can be configured to work with SQL Server 2012-2016.
+For Visual Studio, it is important to match the Visual Studio version to the destination SQL Server.  Refer to the below table to ensure compatibility between SQL Server, Visual Studio and SSDT.
 
-Since the default behavior in Visual Studio 2015 is to work with SQL Server 2016 it is common for issues to occur when deploying to earlier versions of SQL Server.
+Since the default behavior in Visual Studio versions vary as to what SQL Server version is used by default, it is common for issues to occur when deploying to earlier versions of SQL Server.
+
+| SQL Server Version | Minimum Visual Studio Version | BIDS / SSDT Needed for SSIS        |
+| ------------------ | ----------------------------- | ---------------------------------- |
+| 2008 (or 2008 R2)  | 2008                          | BIDS                               |
+| 2012               | 2010                          | SSDT                               |
+| 2014               | 2013                          | SSDT-BI                            |
+| 2016               | 2015                          | SSDT                               |
+| 2017               | 2015                          | Visual Studio\* or Standalone SSDT |
+| 2019               | 2019                          | Visual Studio\*                    |
+| Azure SQL DB       | 2017                          | N/A                                |
+| Azure Synapse      | 2019                          | N/A                                |
+
+> [!NOTE]
+> \*: Starting with Visual Studio 2017 SSDT was integrated as selectable option during installation.
 
 ![-border-image](images/ssdt-2015-batch-file.png "SSDT UI")
 
