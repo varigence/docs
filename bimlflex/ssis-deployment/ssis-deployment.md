@@ -19,15 +19,11 @@ It is a recommendation to:
 
 A catalog needs to be created if the catalog node in Management Studio is empty for the target server. The mandated name for the Catalog and corresponding database is SSISDB.
 
-<!-- TODO: Clean snip -->
-
 ![-border-image](images/ssms-ssis-context-menu-create-catalog.png "Create Catalog")
 
 Once a catalog is available it is possible to create a folder for the projects. Multiple projects can be deployed to the same folder. The folder provides a common set of environments for all its projects.
 
 In general, it makes sense to deploy all projects related to the Data Warehouse to the same folder so that they can share all connection string and other configuration information. It is possible to test deploy new versions to a separate folder if there is no separate test environment.
-
-<!-- TODO: Clean snip -->
 
 ![-border-image](images/ssms-ssis-context-menu-create-environment.png "Create Environment")
 
@@ -83,8 +79,6 @@ The project is configured to match the target destination
 
 SSIS 2016 is used in the demo. The Project deployment checkbox is checked so connection strings for the whole project can be maintained through SSIS Catalog environments.
 
-<!-- TODO: Snip new screen -->
-
 ![-border-image](images/bimlstudio-menu-project-configuration.png "BimlStudio Project Properties")
 
 > [!TIP]
@@ -104,9 +98,7 @@ Once the sample metadata is created it can directly connect to the AdventureWork
 
 Import the metadata for all tables in scope of the `SalesLT` schema from the from the `AdventureWorksLT` source system.
 
-<!-- TODO: Snip new screen -->
-
-![-border-image](images/bimlflex-ss-v5-excel-import-metadata.png "Get Metadata")
+![-border-image](../metadata-editors/images/bimlflex-app-import-metadata.png "Import Metadata")
 
 > [!TIP]
 > For additional details on importing metadata project refer to the below guide:  
@@ -115,8 +107,6 @@ Import the metadata for all tables in scope of the `SalesLT` schema from the fro
 ### Step 4, Create Databases and Tables
 
 Create all DW databases and tables from the BimlStudio generated scripts output.
-
-<!-- TODO: Snip new screen -->
 
 ![-border-image](images/bimlstudio-context-menu-create-table-scripts.png "Create Table Scripts")
 
@@ -130,15 +120,22 @@ Define project parameters and connection expressions for all relevant connection
 
 There are many ways of maintaining the connection strings and required configurations in SSIS and SQL Server. BimlStudio provides several easy ways to manage and maintain whatever is chosen for an environment. For this demo, deployment is done to the catalog and a Catalog environment variable is used to define the connection string. For the parameterized connection string to be available in the generated SSIS project it first needs to be defined through an Extension Point. The approach needs one Extension Point for the Project parameter and one for the connection string parameterization.
 
-<!-- TODO: Replace with Code Block -->
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="EXT_AWLT_Project" #>
 
-![-border-image](images/bimlflex-extension-points-create-project-parameter-code.png "Project Parameter Code")
+<Parameter Name="AdventureWorksLT_ConnectionString" DataType="String" IsRequired="true">Data Source=.;Initial Catalog=AdventureWorksLT2012;Provider=SQLNCLI11.1;Integrated Security=SSPI;</Parameter>
+```
 
 The project parameter target is the SSIS project it will be used in. In this case, the `EXT_AWLT_Project` where project parameters will be used to define connection strings
 
-<!-- TODO: Replace with Code Block -->
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionExpression" target="AdventureWorksLT" #>
+<#@ property name="connection" type="BimlFlexModelWrapper.ConnectionsWrapper" #>
 
-![-border-image](images/bimlflex-extension-points-create-connection-expression-code.png "Connection Expression Code")
+<Expressions>
+	<Expression ExternalProperty="ConnectionString">@[$Project::AdventureWorksLT_ConnectionString]</Expression>
+</Expressions>
+```
 
 The connection expression connects the target property, in this case, the target connection manager `AdventureWorksLT` and the ConnectionString property with the defined Project parameter.
 
@@ -244,8 +241,6 @@ Once the project is ready to be deployed to the SSIS catalog either use the Depl
 ## Reviewing the project in the Catalog
 
 Once the project is deployed to the target server and the chosen folder it is available for review through SQL Server Management Studio
-
-<!-- TODO: Clean snip -->
 
 ![-border-image](images/ssms-ssis-tree-catalog-contents.png "Catalog Contents")
 
