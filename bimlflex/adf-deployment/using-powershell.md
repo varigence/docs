@@ -4,7 +4,9 @@ title: Deployment Through PowerShell
 ---
 # Deployment Through PowerShell
 
+<!-- TODO: Now walk-through yet for an ADF Implementation.  
 For a walk-through of creating a BimlFlex solution that targets ADF, review the [Synapse ADF Implementation Guide](xref:bimlflex-synapse-implementation).
+-->
 
 You have generated your Azure Data Factory (ADF) assets, and are ready to deploy. This document will discuss deployment using ARM templates by using PowerShell. For information on how to deploy using the Azure Portal, review our [Azure Portal Deployment  Guide](xref:using-azure-portal).
 
