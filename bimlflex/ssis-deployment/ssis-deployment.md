@@ -1,5 +1,5 @@
 ---
-uid: zzz-bimlflex-deployment-guide
+uid: bimlflex-ssis-deployment-guide
 title: BimlFlex SSIS Deployment Guide
 ---
 # SSIS Deployment Guide

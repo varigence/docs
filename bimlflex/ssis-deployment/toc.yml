@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: SSIS Deployment Guide
+  href: ssis-deployment.md
 - name: SSIS Custom Components
   href: ssis-custom-components.md
 - name: SSIS Server Installation
