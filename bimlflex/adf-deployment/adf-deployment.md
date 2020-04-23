@@ -11,11 +11,7 @@ title: BimlFlex SSIS Deployment Guide
 
 <!-- TODO: Intro statement -->
 
-Before working with Synapse metadata you should ensure that your environment is configured to use Synapse as per the selected implementation architecture.  This section will walk you through the required software and system configurations you will need to connect BimlFlex to your Synapse environment.  
-
-The recommended architecture is to extract the data to one (or multiple) flat files, zip, upload to blob storage and load the staging environment through use of an EXTERNAL TABLE and PolyBase.  The following sections covers the additional steps to configure your environment to use an PolyBase Architecture approach.
-
-If not using the PolyBase Architecture, proceed to [Configuring BimlFlex Setting]
+Before creating an ADF project some initial software or configurations may be required.  This section will walk through the required software and system configurations potentially needed to ensure BimlFlex can generate a healthy ADF environment and integration pipelines.  
 
 > [!TIP]
 > For additional details on installing BimlFlex refer to the below guide:  
@@ -25,11 +21,13 @@ If not using the PolyBase Architecture, proceed to [Configuring BimlFlex Setting
 
 <!-- Show or reference the installation and configuration of an IR -->
 
+...On-prem data source requires a integration runtime...
+
 <!-- Link to installation and configuration of IR guide (Microsoft Docs) -->
 
 ### Installing AzCopy (Blob Upload Only)
 
-For workloads that leverage the Blob upload or PolyBase Architecture, BimlFlex creates the files locally and then uses AzCopy to upload the files.  AzCopy comes in different versions with different feature sets.  A general recommendation is to use the latest version and SAS tokens for access authentication.  Use the below guide to download and install AzCopy.  After instillation ensure the appropriate [AzCopy **Settings**](#azcopy-settings-polybase-architecture-only) are configured in BimlFlex.  
+For workloads that leverage the Blob Upload or PolyBase Architecture, BimlFlex creates the files locally and then uses AzCopy to upload the files.  AzCopy comes in different versions with different feature sets.  A general recommendation is to use the latest version and SAS tokens for access authentication.  Use the below guide to download and install AzCopy.  After instillation ensure the appropriate [AzCopy **Settings**](#azcopy-settings-polybase-architecture-only) are configured in BimlFlex.  
 
 > [!TIP]
 > AzCopy is a copy tool for Azure from Microsoft.  For additional details on installing AzCopy refer to the below guide:  
@@ -39,33 +37,27 @@ For workloads that leverage the Blob upload or PolyBase Architecture, BimlFlex c
 
 <!-- Show or reference the creation of a Storage Account -->
 
+...Creating a Storage Account in Azure...
+
 ### Creating a Blob Container (Blob Upload Only)
 
 <!-- Show or reference the creation of a Container -->
 
 <!-- Create a Stage, Archive and Error Container -->
 
+...Creating a Stage, Archive and Error Container in Azure...
+
 ### Creating a Azure Key Vault (Existing AKV Only)
 
 <!-- Show or reference the creation of a AKV in BimlFlex. -->
 
+...Creating an AKV Reference in BimlFlex...
+
 <!-- If AKV previously exists, Secrets need to be manually created -->
-
-## Configuring a ADF Project
-
-<!-- Highlight how you set a project to ADF (Template) -->
-
-<!-- Reference all connections must be cloud connections -->
 
 ## Configuring a Landing Area
 
 When using ADF to orchestrate data movement a `Landing Area` is required to ensure the data is in the same environment as the Target Warehouse Environment.  This is generally a *Connection Type* of `Azure Blob Storage` and *System Type* of `Flat File Delimited` but any of the supported *Connection Type* can be used.  In addition to the `Landing Area` it is also important that the **Settings* for an [Azure Blob Stage Container](#azure-blob-stage-container-settings-adf-only), [Azure Blob Archive Container](#azure-blob-archive-container-settings-adf-only), and [Azure Blob Error Container](#azure-blob-error-container-settings-adf-only) are populated correctly is using a Blob Upload or Polybase Architecture.  
-
-> [!IMPORTANT]
-> Ensure that all Azure Blob Container **Settings** are configured properly:  
-> [Azure Blob Stage Container](#azure-blob-stage-container-settings)  
-> [Azure Blob Archive Container](#azure-blob-archive-container-settings)  
-> [Azure Blob Error Container](#azure-blob-error-container-settings)  
 
 > [!TIP]
 > Additional Resources:  
@@ -78,7 +70,11 @@ When using ADF to orchestrate data movement a `Landing Area` is required to ensu
 
 <!-- Intro.  Cloud = true.  Linked Services now available -->
 
+...Set **Connection** *Cloud* `true`...
+
 ### Linked Services
+
+...Fill linked service...
 
 When using an *Azure Key Vault* use the below example to assist with the creation of a connection string to be used as the the secret value.  If using a *Connection String* version of a Linked Service fill out the required fields.  
 
@@ -88,11 +84,17 @@ When using an *Azure Key Vault* use the below example to assist with the creatio
 Data Source=<server name>.database.windows.net,<port>;Initial Catalog=<database>;User ID=<user>;Password=<password>;
 ```
 
+> [!NOTE]
+> Provider is not supported in the ADF connection string.  Ensure you are not using it when configuring your Secrets.
+
 ### [Example](#tab/synapse-connection-string-adf-example)
 
 ```cmd
 Data Source=bfxserver.database.windows.net,1433;Initial Catalog=bfx_sqldw;User ID=MyUser;Password=P@$$Word;
 ```
+
+> [!NOTE]
+> Provider is not supported in the ADF connection string.  Ensure you are not using it when configuring your Secrets.
 
 ***
 
@@ -100,9 +102,19 @@ Data Source=bfxserver.database.windows.net,1433;Initial Catalog=bfx_sqldw;User I
 > For additional details on creating a Linked Service refer to the below guide:  
 > BimlFlex Docs: [](xref:create-linked-service-connection)  
 
+## Configuring a ADF Project
+
+<!-- Highlight how you set a project to ADF (Template) -->
+
+...Create a Project with *Integration Template* = `ADF: Source -> Target...
+
+<!-- Reference all connections must be cloud connections -->
+
 ## Configuring BimlFlex Settings
 
 <!-- Intro -->
+
+...Ensure `Azure Environment Settings` and `Azure Orchestration Settings` are configured.  Others optional...
 
 ### Azure Environment Settings
 
@@ -365,11 +377,15 @@ An Azure Function Bridge is automatically created and added to the deployment wh
 
 <!-- Clean up terminology.  Not always the case for Snowflake.  Ensure Synapse possibly needing manual EXT scripts still ran. -->
 
-When deploying the target warehouse platform, BimlFlex will generate the required SQL scripts for the deployment of all the tables, stored procedures, and the Data Vault default inserts (Ghost Keys).  Once generated the scripts can be manually deployed to the required database.  
+...Deploy the Target Warehouse Platform...
+
+When deploying the Target Warehouse Platform, BimlFlex will generate the required SQL scripts for the deployment of all the tables, stored procedures, and the Data Vault default inserts (Ghost Keys).  Once generated the scripts can be manually deployed to the required database.  
 
 ### Automated SSDT Deployment (PowerShell)
 
 <!-- Clean up terminology.  Not always the case for Snowflake.  Ensure Synapse possibly needing manual EXT scripts still ran. -->
+
+...Can be automated.  Synapse may need the EXT scripts and Snowflake requires manual...
 
 A part of the Build process, BimlStudio will generate a SQL Server Data Tools (SSDT) project for the Synapse target warehouse platform.  By default a SSDT deployment file named `ssdt-deploy.<DatabaseName>.ps1` is created and placed in the `...\<Output Folder>\Deploy\` folder for each database in the target warehouse environment.  
 
@@ -426,7 +442,11 @@ BimlFlex automatically generates the orchestration artifacts as part of the stan
 
 ### ADF Environment Artifacts
 
+...Highlight what artifacts are actually created and deployed...
+
 ### Deploying ADF Environment and Orchestration
+
+...Actual deployment.  Powershell or template push...
 
 <!-- Have this guide focus on some actual steps not just reference another guide -->
 
