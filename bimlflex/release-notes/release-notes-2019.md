@@ -238,7 +238,7 @@ download links to this build:
 
 ## BimlFlex 2019 Version 64108
 
-* Update: CI/CD and command line builds require an update to the response files to work with BimlFlex. Please see [](xref:bimlflex-continuous-integration-and-continuous-delivery) for new template samples
+* Update: CI/CD and command line builds require an update to the response files to work with BimlFlex. Please see [](xref:bimlflex-ssis-continuous-integration-and-continuous-delivery) for new template samples
 * Update: Some scenarios in the graphical Data Vault Accelerator has been updated to better align with user expectation
 
 ## Bundle 64106
