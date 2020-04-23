@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-continuous-integration-and-continuous-delivery
+uid: bimlflex-ssis-continuous-integration-and-continuous-delivery
 title: BimlFlex Continuous Integration and Continuous Delivery
 ---
 # Continuous Integration and Continuous Delivery
