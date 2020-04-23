@@ -358,7 +358,7 @@ You can use this script to identify which **Project** reference the **Connection
 
 More information:
 
-* [](xref:bimlflex-ssis-deployment-using-deployment-wizard)
+* [](xref:bimlflex-ssis-deployment-wizard)
 * [](xref:bimlflex-ssis-deployment-sensitive-info-management)
 
 ### Video

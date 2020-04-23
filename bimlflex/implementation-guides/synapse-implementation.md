@@ -567,7 +567,7 @@ Ensure these commonly missed steps are performed:
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
 > BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)  
-> BimlFlex Docs: [](xref:bimlflex-ssis-deployment-using-deployment-wizard)  
+> BimlFlex Docs: [](xref:bimlflex-ssis-deployment-wizard)  
 
 ### ADF Environment and Orchestration (ADF Only)
 

@@ -46,4 +46,4 @@ Not only does BimlFlex produce all of your SSIS projects and packages, it also g
 
 BimlFlex generates all of the SSIS assets that you need to manually deploy through the deployment wizard.
 
-[More about SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-using-deployment-wizard)
+[More about SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-wizard)
