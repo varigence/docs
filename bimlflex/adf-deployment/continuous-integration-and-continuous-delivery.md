@@ -4,6 +4,8 @@ title: BimlFlex Continuous Integration and Continuous Delivery
 ---
 # Continuous Integration and Continuous Delivery
 
+The following guide is from tailored specifically for ADF.  For a details and considerations on implementing CI/CD in SSIS see the [](xref:bimlflex-ssis-continuous-integration-and-continuous-delivery).
+
 One core feature in using the BimlFlex Data Warehouse Automation solution is that it can be used in a CI/CD pipeline.
 
 There are numerous approaches used for CI/CD and Data Warehouses have their special considerations compared to the more common web based or software development based CI/CD processes.
@@ -16,6 +18,8 @@ In this document the following approaches are discussed:
 The manual scripted approach is a low cost entry into automation in that it doesn't rely on setting up and configuring build servers or pipelines. It allows developers and testers to script and use the same process over and over again to build and deploy a solution.
 
 The automated, build server-based approach takes a slightly different approach in that it builds an automatic deployment out of the contents of a source repository/source control project.
+
+<!-- TODO: Revision and update needed for ADF.
 
 ## Special considerations for Data Warehousing Automation
 
@@ -509,3 +513,4 @@ SET "SqlPackagePath=%PROGRAMFILES%\Microsoft SQL Server\140\DAC\bin"
 "%SqlCmdPath%\SqlCmd.exe" -E -S %ServerName% -d %DatabaseName% -i "BimlCatalog_PreDacpac_Deployment.sql"
 "%SqlPackagePath%\SqlPackage.exe" /TargetServerName:%ServerName% /TargetDatabaseName:%DatabaseName% /action:Publish /SourceFile:"BimlCatalog.dacpac"
 ```
+-->

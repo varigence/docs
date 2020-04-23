@@ -8,5 +8,5 @@
   href: sensitive-info-management.md
 - name: Concurrent Development
   href: concurrent-development.md
-- name: Continuous Delivery (CI/CD)
-  href: continuous-integration-and-continuous-delivery.md
+#  - name: Continuous Delivery (CI/CD)
+#    href: continuous-integration-and-continuous-delivery.md
