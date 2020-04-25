@@ -22,6 +22,8 @@
 # Special sources
 - name: Source Excel Plus
   href: source-excel-plus.md
+- name: Source OData
+  href: source-odata.md
 #- name: Source Salesforce
 #  href: source-salesforce.md
 - name: Source Stored Procedure
