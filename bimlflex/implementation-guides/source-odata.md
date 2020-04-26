@@ -110,7 +110,7 @@ TableObject sourceTable = new TableObject(table, table.Connection.RelatedItem.In
     <CustomProperties>
         <CustomProperty Name="CollectionName" DataType="String" SupportsExpression="true" Description="Name of the collection to be retrieved from the service."><#=sourceTable.ObjectName #></CustomProperty>
         <CustomProperty Name="DefaultStringLength" DataType="Int32" Description="The default maximum length for a string that has no maxlength specified in the schema.">255</CustomProperty>
-        <CustomProperty Name="Query" DataType="String" SupportsExpression="true" Description="Query in the url. "></CustomProperty>
+        <CustomProperty Name="Query" DataType="String" SupportsExpression="true" Description="Query in the url."></CustomProperty>
         <CustomProperty Name="ResourcePath" DataType="String" SupportsExpression="true" Description="Resource path of the collection to be retrieved from the service."></CustomProperty>
         <CustomProperty Name="UseResourcePath" DataType="Boolean" SupportsExpression="true" Description="When set to true, use the resource path as requested collection; otherwise, use the collection name.">false</CustomProperty>
     </CustomProperties>
