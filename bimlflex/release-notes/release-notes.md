@@ -10,7 +10,7 @@ name: BimlFlex Release Notes
 
 ## BimlFlex 2020
 
-BimlFlex 2020 is installed and upgraded through a single, consolidated, role-based installer.
+BimlFlex 2020 is installed and upgraded through a single consolidated installer.
 
 ### Latest Release
 
