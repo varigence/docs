@@ -118,7 +118,7 @@ The below table for outlines the supported Landing Area configurations for each 
 | Snowflake Data Warehouse      | ODBC SQL Based ELT  | No          | Yes          |
 
 > [!NOTE]
-> **\***: Azure Synapses requires a [PolyBased Architecture](xref:bimlflex-synapse-implementation) when configured to use Blob Storage.  
+> **\***: Azure Synapses requires a [PolyBase Architecture](xref:bimlflex-synapse-implementation) when configured to use Blob Storage.  
 >  
 > *Connection Type*: BimlFlex requires a `SQL Based ELT` for all ADF projects.  
 
@@ -149,7 +149,7 @@ A Blob Storage Configuration requires the following:
 * Blob Staging Container
 * Blob Archive Container
 * Blob Error Container
-* Blob BimlFlex **Setttigs** Configured
+* Blob BimlFlex **Setttings** Configured
 
 > [!IMPORTANT]
-> A Blob Storage Configuration with Synapse also requires a [PolyBased Architecture](xref:bimlflex-synapse-implementation).
+> A Blob Storage Configuration with Synapse also requires a [PolyBase Architecture](xref:bimlflex-synapse-implementation).
