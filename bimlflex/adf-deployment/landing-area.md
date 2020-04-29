@@ -28,3 +28,6 @@ This video walks through the steps of, and considerations for, creating and conf
 * Reconfigure the EXT_AWLT_SRC Project to generate ADF artifacts instead of SSIS projects by updating the Integration Template used
 
 The metadata is now configured for Azure Data Factory and the required landing connection
+
+> [!NOTE]
+> The BimlFlex 2020 release currently supports table based landing areas for Azure Synapse and Azure SQL Database and Blob/file based landing with Snowflake targets
