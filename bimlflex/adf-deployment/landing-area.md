@@ -2,32 +2,137 @@
 uid: bimlflex-adf-landing-area
 name: Configure Azure Data Factory Landing Area
 ---
-# BimlFlex - Configure Azure Data Factory Landing Area
+# Configure Azure Data Factory Landing Area
 
-A BimlFlex Azure Data Factory project will use a landing area to land data extracted from sources. This can be in database, or in Blob storage. The data is then read from the landing area into the Target Data warehouse using ELT.
+In order to account for the limited functionality of the Azure Data Factory Copy activity, BimlFlex requires a Landing Area for an Azure Data Factory project.  The Azure Data Factory Copy activity does not support transforms so the data is landed in an area accessible by the SQL Based ELT code in the Staging Area.  The general architecture of the configuration is below, the Landing Area being represented in the middle as either a Database or Files.
+
+<!-- TODO:  Add more notes about Landing Area.  Volitility/persistance.  Settings.  Etc. -->
+
+![-border-image](images/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
+
+> [!TIP]
+> For additional details on ADF or the Copy activity refer to the below guides:  
+> Microsoft Docs: [Azure Data Factory documentation](https://docs.microsoft.com/en-us/azure/data-factory/)  
+> Microsoft Docs: [Copy activity in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview)  
+
+## Configure a Landing Area By Example
+
+The following video walks through the common steps and considerations for creating and configuring the landing connection.  This examples uses sample metadata to configure an appropriate Landing Area for a [Table Based Configuration](#table-based-configuration).  For addition details of alternate configurations refer to the [Detailed Configuration](#detailed-configuration) section.
 
 ![BimlFlex - Configure Azure Data Factory Landing Area](https://www.youtube.com/watch?v=fYA4yTPe4ao?rel=0&autoplay=0 "BimlFlex - Configure Azure Data Factory Landing Area")
 
-This video walks through the steps of, and considerations for, creating and configuring the landing connection.
+### High Level Steps
 
 * Start with a sample metadata set. This video uses the 01 - MSSQL Starting Point, which includes connections for a sample on-premises SSIS data warehouse as well as Batch and Project definitions
 * Archive the BFX_RDV and BFX_DM Project and Batches to minimize the amount of additional metadata that is visible in the app
 * Update the EXT_AWLT_SRC extract project to have the target set to the staging area connection, BFX_STG
 * Archive the BFX_RDV and BFX_DM connections
 * Navigate to the Connections page, create a Landing connection by duplicating the BFX_STG connection
-    Name the new connection BFX_LND  
-    Update the Integration Stage for the Connection to Landing Area
+  * Name the new connection BFX_LND
+  * Update the Integration Stage for the Connection to Landing Area
 * Enable the connection for ADF use by switching on the Cloud setting  
-    Enabling the connection for Cloud exposes the Linked Services configuration for the connection
-* Update the connection to use the BFX_LDN connection as the landing connection
+  * Enabling the connection for Cloud exposes the Linked Services configuration for the connection
+* Update the source connection to use the BFX_LND connection as the landing connection
 * Configure the Linked Service to use the appropriate configuration  
-    The video uses a pre-created Azure Key Vault to store the connection string information for the connections  
-    Add the Azure Key Vault as a configuration for the Linked Service  
-    Define the secret that the Linked Service should use as the connection string  
-    Reuse the Key Vault and secret configuration for each of the connections
+  * The video uses a pre-created Azure Key Vault to store the connection string information for the connections  
+  * Add the Azure Key Vault as a configuration for the Linked Service  
+  * Define the secret that the Linked Service should use as the connection string  
+  * Reuse the Key Vault and secret configuration for each of the connections
 * Reconfigure the EXT_AWLT_SRC Project to generate ADF artifacts instead of SSIS projects by updating the Integration Template used
 
-The metadata is now configured for Azure Data Factory and the required landing connection
+### Importing Metadata
+
+The example uses the `01 - MSSQL Starting Point` metadata but any MSSQL environment with metadata could be used for example.  In order to proceed a Staging Area **Connection** is needed and imported data for a Source System **Connection**.
+
+> [!TIP]
+> For additional details on Importing Samples and Metadata refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-getting-started-sample-metadata)  
+> BimlFlex Docs: [](xref:bimlflex-getting-started-importing-source-metadata)  
+
+### Cleaning (Illustration and Example Only)
+
+The video archives multiple BimlFlex Entities to illustrate the minimal configuration need to implement and configure a Landing Area when used in context of an Azure Data Factory pipeline.  These are optional steps to streamline and minimize configuration.
+
+> [!WARNING]
+> Do not archive any BimlFlex Entities if following along with your own metadata.
+
+### Create a Landing Connection
+
+When using a [Table Based Configuration](#table-based-configuration) the Landing Area and Staging Area should share the same connection details.  The easiest way to achieve this is by duplicating the Staging Area **Connection**, naming it appropriately and updating the *Integration Stage* to `Landing Area`.
 
 > [!NOTE]
-> The BimlFlex 2020 release currently supports table based landing areas for Azure Synapse and Azure SQL Database and Blob/file based landing with Snowflake targets
+> Ensure that the *Catalog* and *Connection String* are identical between the Staging Area and Landing Area.
+
+### Enable and Populate Linked Services
+
+Azure Data Factory requires the use of Linked Services which are configured separately on each connection once enabled.  For each **Connection** that will be used by the ADF process the *Cloud* field is required to be set to `true` to expose the configuration fo the **Linked Service**.  The video uses a pre-created Azure Key Vault to manage the complete connection string through use of a Secret.  
+
+> [!NOTE]
+> Ensure that the *Catalog* and *Connection String* are identical between the Staging Area and Landing Area.
+
+With familiarly of Azure Key Vaults and the deployment environment, the Linked Services can be configured to suit individual sensitive information management practices.
+
+> [!TIP]
+> For additional details on Linked Services, Azure Key Vaults and Sensitive Information Management refer to the below guides:  
+> BimlFlex Docs: [](xref:create-linked-service-connection)  
+> BimlFlex Docs: [](xref:linked-service-azure-key-vault)  
+> BimlFlex Docs: [](xref:sensitive-info-management)  
+> Microsoft Docs: [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/)
+> Microsoft Docs: [About keys, secrets, and certificates](https://docs.microsoft.com/en-us/azure/key-vault/general/about-keys-secrets-certificates)
+
+### Configure Project for Azure Data Factory Orchestration
+
+The last step is to configure the BimlFlex **Project** to use the *Integration Template* of `ADF: Source -> Target`.  This step is performed last to ensure there are not validation errors.
+
+> [!NOTE]
+> The `ADF: Source -> Target` *Integration Template* requires all **Connections** to have *Cloud* set to `true`.
+
+The metadata is now configured to stage data via a Landing Area using Azure Data Factory.
+
+## Detailed Configuration
+
+Depending to the *System Type* of the `Staging Area`, the `Landing Area` can be configured as either a group of database tables or a blob storage.  The below table for outlines the supported Landing Area configurations for each supported `Staging Area`.
+
+| Staging Area System Type      | Connection Type     | Table Based | Blob Storage |
+| ----------------------------- | ------------------- | ----------- | ------------ |
+| Azure Synapse*                | OLEDB SQL Based ELT | Yes         | Yes          |
+| Microsoft SQL Server (Server) | OLEDB SQL Based ELT | Yes         | No           |
+| Microsoft SQL Server (Azure)  | OLEDB SQL Based ELT | Yes         | No           |
+| Microsoft SQL Server (Azure)  | OLEDB SQL Based ELT | Yes         | No           |
+| Snowflake Data Warehouse      | ODBC SQL Based ELT  | No          | Yes          |
+
+> [!NOTE]
+> **\***: Azure Synapses requires a [PolyBased Architecture](xref:bimlflex-synapse-implementation) when configured to use Blob Storage.  
+>  
+> *Connection Type*: BimlFlex requires a `SQL Based ELT` for all ADF projects.  
+
+### Table Based Configuration
+
+<!-- TODO: Rewrite and flesh out Table Base Configuration -->
+
+It is important to note that although the Landing Area is configured as a separate BimlFlex **Connection**, in a Table Based Configuration it should be considered the same database as the Staging Area.  As such the Landing Area does not deploy separately, and instead deploys with the Staging Area.
+
+> [!IMPORTANT]
+> A Table Based Configuration requires the `Landing Area` to be in the same database as the `Staging Area`.  Ensure the *Connection String*, *Catalog* and applicable *ADF Linked Service* configurations are identical to the `Staging Area` **Connection**.
+
+When using a Table Based Configuration, the Landing Area is a group of tables *conceptually separated* through use of naming practice.  By default the Landing Area tables will have a `land_` prefix appended to all landing tables.
+
+> [!NOTE]
+> The prefix appended to landing tables can be configured by updating the `AppendNameLanding` BimlFlex **Setting**.  Default configuration is `land`.
+
+This allows for the data to be directly accessed by the SQL Based ELT code to perform and necessary transformations.  The Azure Data Factory pipeline is then used to move the data to the Staging Area.
+
+### Blob Storage Configuration
+
+<!-- TODO: Rewrite and flesh out Blob Storage Configuration -->
+
+A Blob Storage Configuration requires the following:
+
+* Blob Storage Account
+* Blob Staging Container
+* Blob Archive Container
+* Blob Error Container
+* Blob BimlFlex **Setttigs** Configured
+
+> [!IMPORTANT]
+> A Blob Storage Configuration with Synapse also requires a [PolyBased Architecture](xref:bimlflex-synapse-implementation).

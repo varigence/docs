@@ -429,6 +429,14 @@ BimlFlex provides support for the use of Azure Synapse as both a target warehous
 
 When using a `Persistent Staging Area` a `Source System` is required to have the *Persist History* box checked to have data persisted.  
 
+#### Landing Area
+
+When used as the Target Warehouse Environment, Synapse support both a [Table Based Configuration](xref:bimlflex-adf-landing-area#table-based-configuration) and [Blob Storage Based Configuration](xref:bimlflex-adf-landing-area#blob-storage-configuration).
+
+> [!TIP]
+> For additional details on how create a Landing Area Connection refer to the following guide:  
+> BimlFlex Docs: [](xref:bimlflex-adf-landing-area)  
+
 ### Connection Type
 
 Currently BimlFlex only supports the *Connection Type* of `OLEDB SQL Based ELT` for an Azure Synapse **Connection** when being used as the target data warehouse platform.  When configuring a Azure Synapse *Integration Stage* of `Source System` set the *Connection Type* to `OLEDB`.  
