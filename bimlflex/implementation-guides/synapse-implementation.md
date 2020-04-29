@@ -40,7 +40,7 @@ This needs to be defined once in the Synapse environment so that the credentials
 ```sql
 CREATE MASTER KEY
     ENCRYPTION BY PASSWORD ='<Password>';
-GO;
+GO
 ```
 
 ### [Example](#tab/create-master-key-example)
@@ -48,7 +48,7 @@ GO;
 ```sql
 CREATE MASTER KEY
     ENCRYPTION BY PASSWORD = 'B!mlFl3x!';
-GO;
+GO
 ```
 
 ***
@@ -69,7 +69,7 @@ CREATE DATABASE SCOPED CREDENTIAL [<BimlFlex Credential Name>]
 WITH
     IDENTITY = '<Identity>',
     SECRET = '<Secret>';
-GO;
+GO
 ```
 
 ### [SAS Example](#tab/create-database-scoped-credential-example)
@@ -79,7 +79,7 @@ CREATE DATABASE SCOPED CREDENTIAL [bimlflex]
 WITH
     IDENTITY = 'bimlflex-sas',
     SECRET = '<SAS Token>';
-GO;
+GO
 ```
 
 > [!NOTE]
@@ -106,7 +106,7 @@ CREATE EXTERNAL DATA SOURCE [<Data Source Name>]
         , TYPE = HADOOP
         , CREDENTIAL = [<BimlFlex Credential>]
     );
-GO;
+GO
 ```
 
 ### [Example](#tab/create-external-data-source-example)
@@ -118,7 +118,7 @@ CREATE EXTERNAL DATA SOURCE [dwhload_storage]
         , TYPE = HADOOP
         , CREDENTIAL = [bimlflex]
     );
-GO;
+GO
 ```
 
 > [!NOTE]
@@ -146,7 +146,7 @@ CREATE EXTERNAL FILE FORMAT [<External File Format Name>]
         ),
         DATA_COMPRESSION = N'org.apache.hadoop.io.compress.GzipCodec'
     );
-GO;
+GO
 ```
 
 ### [Example](#tab/create-external-file-format-example)
@@ -161,7 +161,7 @@ CREATE EXTERNAL FILE FORMAT [pipe_zip_format]
         ),
         DATA_COMPRESSION = N'org.apache.hadoop.io.compress.GzipCodec'
     );
-GO;
+GO
 ```
 
 > [!NOTE]
