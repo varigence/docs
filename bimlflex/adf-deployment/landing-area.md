@@ -4,7 +4,11 @@ name: Configure Azure Data Factory Landing Area
 ---
 # Configure Azure Data Factory Landing Area
 
-In order to account for the limited functionality of the Azure Data Factory Copy activity, BimlFlex requires a Landing Area for an Azure Data Factory project.  The Azure Data Factory Copy activity does not support transforms so the data is landed in an area accessible by the SQL Based ELT code in the Staging Area.  The general architecture of the configuration is below, the Landing Area being represented in the middle as either a Database or Files.
+The Azure Data Factory Copy activity currently do not allow for transformations during the copying of data.
+Therefore, BimlFlex uses a Landing Area that is accessible by SQL Based ELT stored procedures in the Staging Area.
+This allows for the data to be directly accessed by the code to perform any necessary transformations needed.
+The Azure Data Factory pipeline can then use the Copy activity to move the data to the Staging Area efficiently.
+The general architecture is below with the Landing Area in the middle supporting either a Database or Files.
 
 <!-- TODO:  Add more notes about Landing Area.  Volitility/persistance.  Settings.  Etc. -->
 
@@ -17,7 +21,9 @@ In order to account for the limited functionality of the Azure Data Factory Copy
 
 ## Configure a Landing Area By Example
 
-The following video walks through the common steps and considerations for creating and configuring the landing connection.  This example uses sample metadata to configure an appropriate Landing Area for a [Table Based Configuration](#table-based-configuration).  For addition details of alternate configurations refer to the [Detailed Configuration](#detailed-configuration) section.
+The following video walks through the common steps and considerations for creating and configuring the landing connection.
+This example uses sample metadata to configure an appropriate Landing Area for a [Table Based Configuration](#table-based-configuration).
+For addition details of alternate configurations refer to the [Detailed Configuration](#detailed-configuration) section.
 
 ![BimlFlex - Configure Azure Data Factory Landing Area](https://www.youtube.com/watch?v=fYA4yTPe4ao?rel=0&autoplay=0 "BimlFlex - Configure Azure Data Factory Landing Area")
 
@@ -42,7 +48,8 @@ The following video walks through the common steps and considerations for creati
 
 ### Importing Metadata
 
-The example uses the `01 - MSSQL Starting Point` metadata but any MSSQL environment with metadata could be used for example.  In order to proceed a Staging Area **Connection** is needed and imported data for a Source System **Connection**.
+The example uses the `01 - MSSQL Starting Point` metadata but any MSSQL environment with metadata could be used for example.
+In order to proceed a Staging Area **Connection** is needed and imported data for a Source System **Connection**.
 
 > [!TIP]
 > For additional details on Importing Samples and Metadata refer to the below guides:  
@@ -51,21 +58,25 @@ The example uses the `01 - MSSQL Starting Point` metadata but any MSSQL environm
 
 ### Cleaning (Illustration and Example Only)
 
-The video archives multiple BimlFlex Entities to illustrate the minimal configuration need to implement and configure a Landing Area when used in context of an Azure Data Factory pipeline.  These are optional steps to streamline and minimize configuration.
+The video archives multiple BimlFlex Entities to illustrate the minimal configuration need to implement and configure a Landing Area when used in context of an Azure Data Factory pipeline.
+These are optional steps to streamline and minimize configuration.
 
 > [!WARNING]
 > Do not archive any BimlFlex Entities if following along with your own metadata.
 
 ### Create a Landing Connection
 
-When using a [Table Based Configuration](#table-based-configuration) the Landing Area and Staging Area should share the same connection details.  The easiest way to achieve this is by duplicating the Staging Area **Connection**, naming it appropriately and updating the *Integration Stage* to `Landing Area`.
+When using a [Table Based Configuration](#table-based-configuration) the Landing Area and Staging Area should share the same connection details.
+The easiest way to achieve this is by duplicating the Staging Area **Connection**, naming it appropriately and updating the *Integration Stage* to `Landing Area`.
 
 > [!NOTE]
 > Ensure that the *Catalog* and *Connection String* are identical between the Staging Area and Landing Area.
 
 ### Enable and Populate Linked Services
 
-Azure Data Factory requires the use of Linked Services which are configured separately on each connection once enabled.  For each **Connection** that will be used by the ADF process the *Cloud* field is required to be set to `true` to expose the configuration fo the **Linked Service**.  The video uses a pre-created Azure Key Vault to manage the complete connection string through use of a Secret.  
+Azure Data Factory requires the use of Linked Services which are configured separately on each connection once enabled.
+For each **Connection** that will be used by the ADF process the *Cloud* field is required to be set to `true` to expose the configuration fo the **Linked Service**.
+The video uses a pre-created Azure Key Vault to manage the complete connection string through use of a Secret.  
 
 > [!NOTE]
 > Ensure that the *Catalog* and *Connection String* are identical between the Staging Area and Landing Area.
@@ -82,7 +93,8 @@ With familiarly of Azure Key Vaults and the deployment environment, the Linked S
 
 ### Configure Project for Azure Data Factory Orchestration
 
-The last step is to configure the BimlFlex **Project** to use the *Integration Template* of `ADF: Source -> Target`.  This step is performed last to ensure there are not validation errors.
+The last step is to configure the BimlFlex **Project** to use the *Integration Template* of `ADF: Source -> Target`.
+This step is performed last to ensure there are not validation errors.
 
 > [!NOTE]
 > The `ADF: Source -> Target` *Integration Template* requires all **Connections** to have *Cloud* set to `true`.
@@ -91,7 +103,8 @@ The metadata is now configured to stage data via a Landing Area using Azure Data
 
 ## Detailed Configuration
 
-Depending to the *System Type* of the `Staging Area`, the `Landing Area` can be configured as either a group of database tables or a blob storage.  The below table for outlines the supported Landing Area configurations for each supported `Staging Area`.
+Depending to the *System Type* of the `Staging Area`, the `Landing Area` can be configured as either a group of database tables or a blob storage.
+The below table for outlines the supported Landing Area configurations for each supported `Staging Area`.
 
 | Staging Area System Type      | Connection Type     | Table Based | Blob Storage |
 | ----------------------------- | ------------------- | ----------- | ------------ |
@@ -110,17 +123,18 @@ Depending to the *System Type* of the `Staging Area`, the `Landing Area` can be 
 
 <!-- TODO: Rewrite and flesh out Table Base Configuration -->
 
-It is important to note that although the Landing Area is configured as a separate BimlFlex **Connection**, in a Table Based Configuration it should be considered the same database as the Staging Area.  As such the Landing Area does not deploy separately, and instead deploys with the Staging Area.
+It is important to note that although the Landing Area is configured as a separate BimlFlex **Connection**, in a Table Based Configuration it should be considered the same database as the Staging Area.
+As such the Landing Area does not deploy separately, and instead deploys with the Staging Area.
 
 > [!IMPORTANT]
 > A Table Based Configuration requires the `Landing Area` to be in the same database as the `Staging Area`.  Ensure the *Connection String*, *Catalog* and applicable *ADF Linked Service* configurations are identical to the `Staging Area` **Connection**.
 
-When using a Table Based Configuration, the Landing Area is a group of tables *conceptually separated* through use of naming practice.  By default the Landing Area tables will have a `land_` prefix appended to all landing tables.
+When using a Table Based Configuration, the Landing Area is a group of tables *conceptually separated* through use of naming practice.
+By default the Landing Area tables will have a `land_` prefix appended to all landing tables.
 
 > [!NOTE]
-> The prefix appended to landing tables can be configured by updating the `AppendNameLanding` BimlFlex **Setting**.  Default configuration is `land`.
-
-This allows for the data to be directly accessed by the SQL Based ELT code to perform and necessary transformations.  The Azure Data Factory pipeline is then used to move the data to the Staging Area.
+> The prefix appended to landing tables can be configured by updating the `AppendNameLanding` BimlFlex **Setting**.
+> The default configuration is `land`.
 
 ### Blob Storage Configuration
 
