@@ -270,6 +270,6 @@ In cases where required metadata is omitted or values exceed certain thresholds 
 
 > [!NOTE]  
 > A blank column indicates no change in logic vs the *Default*.  
-> `+` Indicates any number lower than or equal to.  
-> `-` Indicates any number greater or equal to.  
+> `+` Indicates any number greater or equal to.  
+> `-` Indicates any number lower than or equal to.  
 > `--` Indicates an unassigned value.  
