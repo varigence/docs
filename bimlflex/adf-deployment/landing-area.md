@@ -17,7 +17,7 @@ In order to account for the limited functionality of the Azure Data Factory Copy
 
 ## Configure a Landing Area By Example
 
-The following video walks through the common steps and considerations for creating and configuring the landing connection.  This examples uses sample metadata to configure an appropriate Landing Area for a [Table Based Configuration](#table-based-configuration).  For addition details of alternate configurations refer to the [Detailed Configuration](#detailed-configuration) section.
+The following video walks through the common steps and considerations for creating and configuring the landing connection.  This example uses sample metadata to configure an appropriate Landing Area for a [Table Based Configuration](#table-based-configuration).  For addition details of alternate configurations refer to the [Detailed Configuration](#detailed-configuration) section.
 
 ![BimlFlex - Configure Azure Data Factory Landing Area](https://www.youtube.com/watch?v=fYA4yTPe4ao?rel=0&autoplay=0 "BimlFlex - Configure Azure Data Factory Landing Area")
 
