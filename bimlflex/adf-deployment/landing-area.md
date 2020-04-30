@@ -111,7 +111,7 @@ The below table for outlines the supported Landing Area configurations for each 
 
 | Staging Area System Type      | Connection Type     | Table Based | Blob Storage |
 | ----------------------------- | ------------------- | ----------- | ------------ |
-| Azure Synapse*                | OLEDB SQL Based ELT | Yes         | No           |
+| Azure Synapse                 | OLEDB SQL Based ELT | Yes         | No           |
 | Microsoft SQL Server (Server) | OLEDB SQL Based ELT | Yes         | No           |
 | Microsoft SQL Server (Azure)  | OLEDB SQL Based ELT | Yes         | No           |
 | Snowflake Data Warehouse      | ODBC SQL Based ELT  | No          | Yes          |
