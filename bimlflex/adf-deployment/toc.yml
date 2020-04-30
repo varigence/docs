@@ -1,7 +1,7 @@
 - name: Overview
   href: index.md
-# - name: ADF Deployment Guide
-#   href: adf-deployment.md
+- name: ADF Deployment Guide
+  href: adf-deployment.md
 - name: Landing Area
   href: landing-area.md
 - name: Using Azure Portal
