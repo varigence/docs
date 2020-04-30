@@ -2,6 +2,7 @@
 uid: bimlflex-adf-landing-area
 name: Configure Azure Data Factory Landing Area
 ---
+
 # Configure Azure Data Factory Landing Area
 
 The Azure Data Factory Copy activity currently does not allow for transformations during the copying of the data.
@@ -129,8 +130,6 @@ The below table for outlines the supported Landing Area configurations for each 
 
 ### Table Based Configuration
 
-<!-- TODO: Rewrite and flesh out Table Base Configuration -->
-
 It is important to note that although the Landing Area is configured as a separate BimlFlex **Connection**, in a Table Based Configuration it should be considered the same database as the Staging Area.
 As such the Landing Area does not deploy separately, and instead deploys with the Staging Area.
 
@@ -146,15 +145,72 @@ By default the Landing Area tables will have a `land_` prefix appended to all la
 
 ### Blob Storage Configuration
 
-<!-- TODO: Rewrite and flesh out Blob Storage Configuration -->
+A Blob Storage Configuration requires a Blob Container for Staging, Archive and Error.
+These Blob Containers can be hosted inside a single Azure Storage Account or a unique account for each.
+Once the Azure artifacts are created, the appropriate settings for each account will need to be populated.
 
-A Blob Storage Configuration requires the following:
+#### Azure Blob Stage Container Settings (Blob Upload or PolyBase Architecture Only)
 
-* Blob Storage Account
-* Blob Staging Container
-* Blob Archive Container
-* Blob Error Container
-* Blob BimlFlex **Settings** Configured
+The following Azure **Settings** are used to configure the blob destinations.
 
-> [!IMPORTANT]
-> A Blob Storage Configuration with Synapse also requires a [PolyBase Architecture](xref:bimlflex-synapse-implementation).
+#### [Settings Pattern](#tab/azure-container-settings)
+
+| Setting Key                       | Setting Description                                                            |
+| --------------------------------- | ------------------------------------------------------------------------------ |
+| Azure`<ContainerType>`Container   | The Container Name to use for the designated process.                          |
+| Azure`<ContainerType>`AccountKey  | A Storage access key to use when accessing the Blob storage.                   |
+| Azure`<ContainerType>`AccountName | The Azure Blob Storage Account Name to use for when accessing in blob storage. |
+| Azure`<ContainerType>`SasToken    | A Storage access SAS Token to use when accessing the Blob storage.             |
+
+> [!NOTE]
+> Only an AccountKey or SasToken is needed, but not both.
+> Both options are provided to support any specific environment needs.
+
+#### [Stage Example](#tab/azure-stage-container-settings-example)
+
+| Setting Key           | Setting Description |
+| --------------------- | ------------------- |
+| AzureStageContainer   | stage               |
+| AzureStageAccountKey  |                     |
+| AzureStageAccountName | bfxblobaccount      |
+| AzureStageSasToken    | ?`<SasToken>`       |
+
+> [!TIP]
+> For additional details on how to generate a SAS Token refer to the following guide:  
+> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
+
+#### [Archive Example](#tab/azure-archive-container-settings-example)
+
+| Setting Key             | Setting Description |
+| ----------------------- | ------------------- |
+| AzureArchiveContainer   | archive             |
+| AzureArchiveAccountKey  |                     |
+| AzureArchiveAccountName | bfxblobaccount      |
+| AzureArchiveSasToken    | ?`<SasToken>`       |
+
+> [!TIP]
+> For additional details on how to generate a SAS Token refer to the following guide:  
+> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
+
+#### [Error Example](#tab/azure-error-container-settings-example)
+
+| Setting Key           | Setting Description |
+| --------------------- | ------------------- |
+| AzureErrorContainer   | error               |
+| AzureErrorAccountKey  |                     |
+| AzureErrorAccountName | bfxblobaccount      |
+| AzureErrorSasToken    | ?`<SasToken>`       |
+
+> [!TIP]
+> For additional details on how to generate a SAS Token refer to the following guide:  
+> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
+
+***
+
+> [!TIP]
+> For additional details on Blob Storage refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-adf-deployment-guide#blob-storage-configured-landing-area)  
+> Microsoft Docs: [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
+> Microsoft Docs: [Manage storage account access keys](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage)
+> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
+> Microsoft Docs: [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)

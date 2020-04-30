@@ -1,82 +1,257 @@
 ---
-uid: bimlflex-ssis-deployment-guide
-title: BimlFlex SSIS Deployment Guide
+uid: bimlflex-adf-deployment-guide
+title: BimlFlex ADF Deployment Guide
 ---
 
-# ADF Deployment Guide
+# Azure Data Factory Deployment Guide
 
-<!-- TODO: Intro statement -->
+<!-- TODO: Intro
 
-## Initial Configuration
+BimlFlex accelerates the creation of Azure Data Factory orchestration project.
 
-<!-- TODO: Intro statement -->
+BimlFlex streamlines the creation of an Azure Data Factory.
 
-Before creating an ADF project some initial software or configurations may be required.  This section will walk through the required software and system configurations potentially needed to ensure BimlFlex can generate a healthy ADF environment and integration pipelines.  
+The Data Factory can be configured to integrate with an existing Azure artifacts or .
+
+Data Factory and integrate with existing Azure artifacts.
+
+BimlFlex can accelerate the creation of a Azure Data Factory.
+
+By only using metadata BimlFlex allows for automated ADF generation.
+
+Quick and easy
+
+rapid deployment
+
+Existing Environment for best results
+
+-->
+
+> [!NOTE]
+> Azure Data Factory is only one of the options for orchestrating you data warehouse environment.
+> To learn more about another option see the [SQL Server Integration Services Deployment Guide](xref:bimlflex-ssis-deployment-guide).
+
+## Deploying an Azure Data Factory By Example
+
+The following video walks through the common steps and considerations for deploying an Azure Data Factory for a Staging Area.
+
+![YouTube Video](https://www.youtube.com/watch?v=vV236jsq8Cg?rel=0&autoplay=0 "BimlFlex - Overview Build and Deploy ADF")
+
+> [!NOTE]
+> The example is intended to follow the guide for [creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example).
+
+The general architecture of the generated Azure Data Factory is below.
+
+![-border-image](images/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
+
+### High Level Steps
+
+The following steps are required though not highlighted in the video as they were completed in the previous video on [Configuring an Azure Data Factory Landing Area](https://www.youtube.com/watch?v=fYA4yTPe4ao?rel=0&autoplay=0 "BimlFlex - Configure Azure Data Factory Landing Area").
+
+* Configure a Landing Area **Connection**
+* Configure **Linked Services** for each **Connection** used by Azure Data Factory
+  * If a Source System, Assign the Landing Area **Connection** as the *Landing Connection*
+  * Enable *Cloud*
+  * Populate the *ADF Linked Service* as required
+* Update the BimlFlex **Project** to use *Integration Template* of `ADF: Source -> Target`
+
+The following are the steps outlined in the video.
+
+* Import metadata from Source System
+* Build the Solution (Example uses BimlStudio)
+* Deploy the Solution (Example uses PowerShell)
+
+### Importing Metadata
+
+The example uses imported metadata from the tables included in [AdventureWorksLT2012 database](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).
 
 > [!TIP]
-> For additional details on installing BimlFlex refer to the below guide:  
-> BimlFlex Docs: [](xref:bimlflex-installing-bimlflex)  
+> For additional details on Importing Samples and Metadata refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-getting-started-sample-metadata)  
+> BimlFlex Docs: [](xref:bimlflex-getting-started-importing-source-metadata)  
+> Microsoft Docs: [AdventureWorks installation and configuration](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure)
 
-### Installing an Integration Runtime (On-prem Data Source Only)
+In order to generate the Staging Area, metadata for **Objects** from a Source System will be needed.
 
-<!-- Show or reference the installation and configuration of an IR -->
+> [!NOTE]
+> The example could be followed along with using metadata from any supported Source System.
 
-...On-prem data source requires a integration runtime...
+### Building the Solution
 
-<!-- Link to installation and configuration of IR guide (Microsoft Docs) -->
+Once the required metadata has been imported and configured the next step is to build the solution to generate the deployable artifacts.
+Once a [BimlStudio project is setup](xref:bimlflex-setup-bimlstudio-project), this can be done simply by click the **Build** shortcut button.
 
-### Installing AzCopy (Blob Upload Only)
+![-border-image](../build-solution/images/toolbarbuild.png "Build Shortcut")
 
-For workloads that leverage the Blob Upload or PolyBase Architecture, BimlFlex creates the files locally and then uses AzCopy to upload the files.  AzCopy comes in different versions with different feature sets.  A general recommendation is to use the latest version and SAS tokens for access authentication.  Use the below guide to download and install AzCopy.  After instillation ensure the appropriate [AzCopy **Settings**](#azcopy-settings-polybase-architecture-only) are configured in BimlFlex.  
+Alternatively the **Build & Deploy** tab can be selected to click the **Build** button.
+
+![-border-image](../build-solution/images/mainbuild.png "Build Button")
 
 > [!TIP]
-> AzCopy is a copy tool for Azure from Microsoft.  For additional details on installing AzCopy refer to the below guide:  
-> Microsoft Docs: [Get started with AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)  
+> For additional details on Building a Solution refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-setup-bimlstudio-project)  
+> BimlFlex Docs: [](xref:bimlflex-generating-ddl)  
+> BimlFlex Docs: [](xref:bimlflex-interactive-build)  
+> BimlFlex Docs: [](xref:bimlflex-command-line-build)  
+> BimlFlex Docs: [](xref:bimlflex-adf-continuous-integration-and-continuous-delivery)  
 
-### Creating a Storage Account (Blob Upload Only)
+The process outlined is know as an [Interactive Build](xref:bimlflex-interactive-build), but a [Command Line Build](xref:bimlflex-command-line-build) can also be configured to assist with automation and a [Continuous Integration/Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery) framework.
 
-<!-- Show or reference the creation of a Storage Account -->
+### Deploy the Solution
 
-...Creating a Storage Account in Azure...
+As part of the the build process, BimlFlex will output artifacts and name them using the `<Output Folder>` and `<Data Factory Name>`.
 
-### Creating a Blob Container (Blob Upload Only)
+> [!NOTE]
+> *Output Folder*: The default output folder is `<Project Working Directory>\output\`.
+> This can be configured under the BimlStudio project properties under **Build**, *Output Path*.
+>  
+> *Data Factory Name*: Uses the `AzureDataFactoryName` **Setting**, or `BimlFlex` if the *Setting* is blank.
 
-<!-- Show or reference the creation of a Container -->
+A PowerShell script named `adf-deploy.<Data Factory Name>.ps1` will be output to the `<Output Folder>\Deploy\` folder to assist with deployment.
+BimlFlex will automatically input the [Azure Environment Settings](#azure-environment-settings) if populated or these can be entered manually prior to script execution.
+All variables and artifacts should be reviewed prior to the execution of the script as executing the script will generate billable Azure artifacts.
 
-<!-- Create a Stage, Archive and Error Container -->
+> [!IMPORTANT]
+> **Ensure the script and JSON artifacts are reviewed prior to deployment.**
+> The PowerShell script will create the Azure resources specified within the JSON files.
+> In addition, the script will overwrite an existing object in Azure with the one currently defined JSON values if it already exists.
 
-...Creating a Stage, Archive and Error Container in Azure...
+Though [PowerShell](xref:bimlflex-adf-using-powershell) is used in the example, the [Azure Portal](xref:using-azure-portal) can also be used.
+This method uses the `arm_template.json` and `arm_template_parameters.json` files found in the `<Output Folder>\DataFactories\<Data Factory Name>\` directory.
+These files are aggregate of the entire Azure environment generated by BimlFlex.
 
-### Creating a Azure Key Vault (Existing AKV Only)
+> [!TIP]
+> For additional details on deploying your Azure Data Factory refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-adf-using-powershell)  
+> BimlFlex Docs: [](xref:using-azure-portal)  
 
-<!-- Show or reference the creation of a AKV in BimlFlex. -->
+BimlFlex will also output the JSON for each artifact individually should they be required for additional deployment methodologies.
+These are found inside the `<Output Folder>\DataFactories\<Data Factory Name>\<Artifact Type>` directories named `<Object Name>.json`.
+
+### Wrapping Up
+
+That concludes the deployment of an Azure Data Factory.
+If not already done, the Staging Area database would also need to be completed prior to execution of any Azure Pipelines.
+Additional steps for this, and the other Integration Stages can be found in the [Deploying the Target Warehouse Environment](#deploying-target-warehouse-environment) section below.
+
+If accessing an on-premise data source, an [Integration Runtime](#on-premise-data-source) will also need to be configured.
+
+The example uses an Azure Key Vault with pre-configured Secrets.
+When creating a new Azure Key Vault, permission will need to be granted to a User Principal and to update the Secrets.
+Although BimlFlex will create the secrets when set to auto generate the Azure Key Vault, it wil only stub out the Secret with a value of `xxx`.
+Refer to [Azure Key Vault and Secrets](#azure-key-vault-and-secrets) for details on configurations.
+
+Additional reading is provided under the [Detailed Configuration](#detailed-configuration) to highlight initial environment requirements, alternate configurations and optional settings.
+
+## Detailed Configuration
+
+In addition to the scenario given the example, BimlFlex support multiple Integration Stages and Target Warehouse Platforms.
+The following sections outline the specific considerations when Azure Data Factory across various architectures and platforms.
+Although features are highlight that are [Azure Synapse](xref:bimlflex-synapse-implementation) or [Snowflake](xref:bimlflex-snowflake-implementation) specific, the following articles are only designed to highlight the Azure Data Factory implications.
+The referenced implimentation guides should still be consulted prior to deploying an Azure Data Factory using either platform.
+
+> [!TIP]
+> For additional details on Target Warehouse Platforms refer to the below guides:  
+> BimlFlex Docs: [](xref:bimlflex-synapse-implementation)  
+> BimlFlex Docs: [](xref:bimlflex-snowflake-implementation)  
+
+### Initial Configuration
+
+There are some environments that will require some additional setup outside of the configuration and installation of BimlFlex.
+The scenarios where configuration will need to be configured outside of the BimlFlex/BimlStudio environment are listed below.
+
+- On-premise Data Source
+- Blob Storage Configured Landed Area\*
+
+<!-- PolyBase not yet supported
+
+- PolyBase Architecture (Synapse)\*\*
+
+-->
+
+> [!NOTE]
+> **\***: Currently a Blob Storage Configuration is only supported by Snowflake
+
+<!-- PolyBase not yet supported
+
+>  
+> **\*\***: In addition to PolyBase Architecture notes also follow guidelines for a Blob Storage Configurated Landing Area.
+
+-->
+
+#### On-Premise Data Source
+
+An on-premise data source will require the installation and configuration of an Self-Hosted Integration Runtime in order for the Azure Data Factory to have access to the data.
+The following guides are provided for additional reference material and configuration details.
+
+> [!TIP]
+> For additional details on installing and configuring and Integration Runtime refer to the below guides:  
+> Microsoft Docs: [Integration runtime in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime)  
+> Microsoft Docs: [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime)  
+
+<!-- SIR not yet supported
+
+> Microsoft Docs: [Create a shared self-hosted integration runtime in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/create-shared-self-hosted-integration-runtime-powershell)  
+
+-->
+
+Once an Self-Hosted Integration Runtime is configured, it will need to be added to BimlFlex.
+This can be done by populating the BimlFlex `AzureIntegrationRuntime` **Setting**.
+
+![-border-image](images/bimflex-setting-azureintegrationruntime.png "AzureIntegrationRuntime Setting Example")
+
+The value will then be available in the **ADF Linked Service** as an option under the *Connect Via Integration Runtime* dropdown.
+
+![-border-image](images/bimflex-linked-service-connect-via-integration-runtime-example.png "Linked Service Integration Runtime Example")
+
+If additional values are needed, they can be entered into the field as needed.
+
+> [!WARNING]
+> BimlFlex does not currently support a Shared Integration Runtime through automation.
+> If a Shared Integration Runtime is required it will have to be manually assigned after build.
+
+#### Blob Storage Configured Landing Area
+
+Outside of configuring the appropriate settings for the [Blob Staging Container](#azure-blob-stage-container-settings-blob-upload-or-polybase-architecture-only), [Blob Error Container](#azure-blob-error-container-settings-blob-container-configuration-only), and [Blob Archive Container](#azure-blob-archive-container-settings-blob-container-configuration-only), the appropriate Azure artifacts will first need to be created.
+
+##### Creating a Storage Account
+
+Before a Blob Container can be created an Azure Storage Account needs to be created to host it.
+The minimum requirement is one Azure Storage Account.
+Depending on the needs of the environment though, as many as one Azure Storage Account per Blob Container can be created.
+
+> [!TIP]
+> For additional details on creating Azure Storage Account refer to the below guide:  
+> Microsoft Docs: [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
+
+##### Creating a Blob Container
+
+The Blob Container will be where the actual blob files are landed.
+A separate container will need to be created for the staging (initial landing), archive (destination after a successful stage) and error (destination after a failed stage).
+
+> For additional details on creating a Blob Container refer to the below guide:  
+> Microsoft Docs: [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)
+
+### Azure Key Vault and Secrets
 
 ...Creating an AKV Reference in BimlFlex...
-
-<!-- If AKV previously exists, Secrets need to be manually created -->
-
-## Configuring a Landing Area
-
-When using ADF to orchestrate data movement a `Landing Area` is required to ensure the data is in the same environment as the Target Warehouse Environment.  This is generally a *Connection Type* of `Azure Blob Storage` and *System Type* of `Flat File Delimited` but any of the supported *Connection Type* can be used.  In addition to the `Landing Area` it is also important that the **Settings* for an [Azure Blob Stage Container](#azure-blob-stage-container-settings-adf-only), [Azure Blob Archive Container](#azure-blob-archive-container-settings-adf-only), and [Azure Blob Error Container](#azure-blob-error-container-settings-adf-only) are populated correctly is using a Blob Upload or Polybase Architecture.  
+...Add your account so you can manage secrets..
+...Manually add secrets...
+...Manually add ADF Permission...
 
 > [!TIP]
-> Additional Resources:  
-> Microsoft Docs: [Storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)  
-> Microsoft Docs: [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)  
-> Microsoft Docs: [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)  
-> Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
+> For additional details on Azure Key Vaults and Sensitive Information Management refer to the below guides:  
+> BimlFlex Docs: [](xref:linked-service-azure-key-vault)  
+> BimlFlex Docs: [](xref:sensitive-info-management)  
+> Microsoft Docs: [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/)
+> Microsoft Docs: [About keys, secrets, and certificates](https://docs.microsoft.com/en-us/azure/key-vault/general/about-keys-secrets-certificates)
 
-## Configuring Cloud Connections
+<!-- More Key Vault Notes -->
 
-<!-- Intro.  Cloud = true.  Linked Services now available -->
+#### Connection String Secrets
 
-...Set **Connection** *Cloud* `true`...
-
-### Linked Services
-
-...Fill linked service...
-
-When using an *Azure Key Vault* use the below example to assist with the creation of a connection string to be used as the the secret value.  If using a *Connection String* version of a Linked Service fill out the required fields.  
+When using an *Azure Key Vault* use the below example to assist with the creation of a connection string to be used as the the secret value.
+If using a *Connection String* version of a Linked Service fill out the required fields.  
 
 ### [ADF Connection String](#tab/synapse-connection-string-adf)
 
@@ -102,7 +277,7 @@ Data Source=bfxserver.database.windows.net,1433;Initial Catalog=bfx_sqldw;User I
 > For additional details on creating a Linked Service refer to the below guide:  
 > BimlFlex Docs: [](xref:create-linked-service-connection)  
 
-## Configuring a ADF Project
+### Configuring a ADF Project
 
 <!-- Highlight how you set a project to ADF (Template) -->
 
@@ -110,7 +285,18 @@ Data Source=bfxserver.database.windows.net,1433;Initial Catalog=bfx_sqldw;User I
 
 <!-- Reference all connections must be cloud connections -->
 
-## Configuring BimlFlex Settings
+### Existing Expressions
+
+...SQL Expressions may need conversion...
+
+<!-- If AKV previously exists, Secrets need to be manually created -->
+
+## Configuring a Landing Area
+
+When using ADF to orchestrate data movement a Landing Area is required to ensure the data is in the same environment as the Target Warehouse Environment.
+This subject is covered in depth in the separate [](xref:bimlflex-adf-landing-area) guide.
+
+### Configuring BimlFlex Settings
 
 <!-- Intro -->
 
@@ -150,87 +336,6 @@ The following Azure **Settings** are used to configure general Azure environment
 
 <!-- Link to installation and configuration of IR guide -->
 
-### Azure Orchestration Settings
-
-The following Azure **Settings** are used to configure general Azure environment information.  
-
-### [Settings](#tab/azure-orchestration-settings)
-
-| Setting Key             | Setting Description                                                                                                           |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| AzureFunctionBridgeKey  | The default Azure Function Bridge Key to use                                                                                  |
-| AzureFunctionBridgeName | The default Azure Function Bridge Name to use                                                                                 |
-| AzureStageOnExtract     | Should the Azure-based Extract and Load process run the stage process for the extracted data in the destination Azure Synapse |
-
-### [Examples](#tab/azure-orchestration-settings-example)
-
-| Setting Key          | Setting Description |
-| -------------------- | ------------------- |
-| AzureDataFactoryName | adf-bfx             |
-| AzureKeyVault        | akv-bfx             |
-| AzureResourceGroup   | rg_BFX              |
-| AzureSubscriptionId  | `<GUID>`            |
-
-***
-
-### AzCopy Settings (Blob Upload Only)
-
-The following AzCopy **Settings** are used to configure how AzCopy is used.  
-
-### [Settings](#tab/azcopy-settings)
-
-| Setting Key                   | Setting Description                                                                                                                                      |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AzCopyCapMbps                 | AzCopy v.10 transfer speed cap in Mbps.                                                                                                                  |
-| AzCopyConcurrency             | Specify the number of concurrent AzCopy operations to start                                                                                              |
-| AzCopyCreateContainer         | Should the pipeline include a step to create the destination container.                                                                                  |
-| AzCopyEnabled                 | Should the generated files be uploaded using `AzCopy` as part of the SSIS Packages. Disable if the solution uses an alternative file management process. |
-| AzCopyLogLevel                | The log level for AzCopy v.10 logs. Available log levels are: NONE, DEBUG, INFO, WARNING, ERROR, PANIC, and FATAL.                                       |
-| AzCopyLogLocation             | Sets the log location for AzCopy v.10 log files to the AZCOPY_LOG_LOCATION environment variable.                                                         |
-| AzCopyPath                    | The file path to the local installation of the `AzCopy` Command. If installed in a non-default location, update this setting to match.                   |
-| AzCopySetEnvironmentVariables | Should the environment variables controlling AzCopy v.10 be set before each object is loaded.                                                            |
-| AzCopyUseSasToken             | Should AzCopy use a SAS Token for access.                                                                                                                |
-| AzCopyVersion                 | The AzCopy version used. This should match the AzCopy command found in the AzCopyPath setting. Use a numeric like 8 or 10 as values to specify version.  |
-
-> [!NOTE]
-> AzCopyCapMbps:  For legacy AzCopy versions, this is always included as a parameter in the command call. For AzCopy v.10 this is optionally set to the AZCOPY_CONCURRENCY_VALUE environmental variable. To reuse the current environment variable without setting it for each object, leave this blank when using AzCopy v.10.  
->  
-> AzCopyCreateContainer: Legacy AzCopy versions create this automatically, v.10 fails when the target container is missing. Only enable this when needed, such as to allow load scenarios where the target container is removed between loads.  
->  
-> AzCopySetEnvironmentVariables: Only valid for AzCopy v.10. Set these control variables to the desired values outside of BimlFlex when not setting this in the load packages.  
->  
-> AzCopyUseSasToken: This is the only supported authentication mechanism for AzCopy v.10 (10). For legacy versions (5/8) you can use Account Key or SAS Token.  
-
-### [Examples](#tab/azcopy-settings-example)
-
-| Setting Key                   | Setting Description       |
-| ----------------------------- | ------------------------- |
-| AzCopyCapMbps                 | 100                       |
-| AzCopyConcurrency             | 2                         |
-| AzCopyCreateContainer         | N                         |
-| AzCopyEnabled                 | Y                         |
-| AzCopyLogLevel                | NONE                      |
-| AzCopyLogLocation             | C:\\BimlFlex\\Export\\Log |
-| AzCopyPath                    | C:\\BimlFlex\\AzCopy      |
-| AzCopySetEnvironmentVariables | N                         |
-| AzCopyUseSasToken             | N                         |
-| AzCopyVersion                 | 10                        |
-
-> [!NOTE]
-> AzCopyCapMbps:  For legacy AzCopy versions, this is always included as a parameter in the command call. For AzCopy v.10 this is optionally set to the AZCOPY_CONCURRENCY_VALUE environmental variable. To reuse the current environment variable without setting it for each object, leave this blank when using AzCopy v.10.  
->  
-> AzCopyCreateContainer: Legacy AzCopy versions create this automatically, v.10 fails when the target container is missing. Only enable this when needed, such as to allow load scenarios where the target container is removed between loads.  
->  
-> AzCopySetEnvironmentVariables: Only valid for AzCopy v.10. Set these control variables to the desired values outside of BimlFlex when not setting this in the load packages.  
->  
-> AzCopyUseSasToken: This is the only supported authentication mechanism for AzCopy v.10 (10). For legacy versions (5/8) you can use Account Key or SAS Token.  
-
-***
-
-> [!TIP]
-> For additional details about AzCopy refer to the below guide:  
-> Microsoft Docs: [Configure, optimize, and troubleshoot AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-configure)  
-
 ### Azure Blob Stage Container Settings (Blob Upload or PolyBase Architecture Only)
 
 The following Azure **Settings** are used to configure the blob staging destination.  
@@ -259,7 +364,7 @@ The following Azure **Settings** are used to configure the blob staging destinat
 
 ***
 
-### Azure Blob Archive Container Settings (Blob Upload or PolyBase Architecture Only)
+### Azure Blob Archive Container Settings (Blob Container Configuration Only)
 
 The following Azure **Settings** are used to configure the blob archive destination.  
 
@@ -287,7 +392,7 @@ The following Azure **Settings** are used to configure the blob archive destinat
 
 ***
 
-### Azure Blob Error Container Settings (Blob Upload or PolyBase Architecture Only)
+### Azure Blob Error Container Settings (Blob Container Configuration Only)
 
 The following Azure **Settings** are used to configure the blob error destination.  
 
@@ -314,6 +419,8 @@ The following Azure **Settings** are used to configure the blob error destinatio
 > Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  
 
 ***
+
+<!-- PolyBase architecture not currently supported
 
 ### Azure PolyBase Settings (PolyBase Architecture Only)
 
@@ -352,6 +459,8 @@ The following AzCopy **Settings** are used to configure the use of PolyBase and 
 
 > [!NOTE]
 > AzureExternalFileFormat: Ensure the following [EXTERNAL DATA SOURCE](#creating-a-external-data-source) and [EXTERNAL FILE FORMAT](#creating-a-external-file-format) are aligned with this setting correctly.
+
+-->
 
 ### Azure Function Bridge Settings (Snowflake Only)
 
@@ -466,3 +575,15 @@ Ensure these commonly missed steps are performed:
 > For additional details on generating deploying ADF packages refer to the below guides:  
 > BimlFlex Docs: [](xref:bimlflex-adf-using-powershell)  
 > BimlFlex Docs: [](xref:using-azure-portal)  
+
+
+<!-- Notes To add
+
+Notes:
+AKV URL does not update.  By design.
+
+ADF Overview Notes:
+AdventureWorksLT2012 NO VIEWS
+
+Batches - Can only have 40 ACTIVITIES, we split them for you
+-->

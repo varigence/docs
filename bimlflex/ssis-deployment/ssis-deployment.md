@@ -15,6 +15,10 @@ It is a recommendation to:
 * Deploy the solutions to the SSIS Catalog
 * Use Environments to configure connection strings and other parameters and configurations.
 
+> [!NOTE]
+> SQL Server Integration Services is only one of the options for orchestrating you data warehouse environment.
+> To learn more about another option see the [Azure Data Factory Deployment Guide](xref:bimlflex-ssis-deployment-guide).
+
 ## Validating the Catalog in the target server
 
 A catalog needs to be created if the catalog node in Management Studio is empty for the target server. The mandated name for the Catalog and corresponding database is SSISDB.
