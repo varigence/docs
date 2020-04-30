@@ -50,13 +50,17 @@ For addition details of alternate configurations refer to the [Detailed Configur
 
 ### Importing Metadata
 
-The example uses the `01 - MSSQL Starting Point` metadata but any Microsoft SQL Server environment with metadata could be used for example.
-In order to proceed a Staging Area **Connection** is needed and imported data for a Source System **Connection**.
+The example uses the `01 - MSSQL Starting Point` metadata to generate Source System and Staging Area **Connections**.
 
 > [!TIP]
 > For additional details on Importing Samples and Metadata refer to the below guides:  
 > BimlFlex Docs: [](xref:bimlflex-getting-started-sample-metadata)  
 > BimlFlex Docs: [](xref:bimlflex-getting-started-importing-source-metadata)  
+
+In order to proceed a Source System **Connection** and Staging Area **Connection** is needed.
+
+> [!NOTE]
+> The example could be followed along with using any supported Source System and any Stage Area that supports a [Table Based Configuration](#table-based-configuration) for the Landing Area (Microsoft SQL Server, Azure Synapse).
 
 ### Cleaning (Illustration and Example Only)
 
