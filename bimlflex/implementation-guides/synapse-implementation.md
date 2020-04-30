@@ -72,18 +72,35 @@ WITH
 GO
 ```
 
+### [Azure Storage Key Example](#tab/create-database-scoped-credential-example)
+
+```sql
+CREATE DATABASE SCOPED CREDENTIAL [bimlflex]
+WITH
+    IDENTITY = 'bfxstorage',
+    SECRET = '<Storage Key>';
+GO
+```
+
+> [!NOTE]
+> *IDENTITY* - The storage account name
+>  
+> *Storage Key* - This value will end in a `==`.
+
 ### [SAS Example](#tab/create-database-scoped-credential-example)
 
 ```sql
 CREATE DATABASE SCOPED CREDENTIAL [bimlflex]
 WITH
-    IDENTITY = 'bimlflex-sas',
+    IDENTITY = 'SHARED ACCESS SIGNATURE',
     SECRET = '<SAS Token>';
 GO
 ```
 
 > [!NOTE]
-> When using a SAS Token, ensure you remove the `?` if it was appended to your key.
+> *IDENTITY* - A SAS Credential requires it be set to `SHARED ACCESS SIGNATURE`.  
+>  
+> *SAS Token* - Ensure you remove the `?` if it was appended to your key.
 
 ***
 
