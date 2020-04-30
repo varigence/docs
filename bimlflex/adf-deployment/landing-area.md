@@ -11,7 +11,7 @@ The Azure Data Factory pipeline can then use the Copy activity to move the data 
 
 The general architecture is below with the Landing Area in the middle supporting either a Database or Files.
 
-<!-- TODO:  Add more notes about Landing Area.  Volitility/persistance.  Settings.  Etc. -->
+<!-- TODO:  Add more notes about Landing Area.  Volatility/persistence.  Settings.  Etc. -->
 
 ![-border-image](images/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
 
@@ -78,7 +78,7 @@ The easiest way to achieve this is by duplicating the Staging Area **Connection*
 ### Enable and Populate Linked Services
 
 Azure Data Factory requires the use of Linked Services and are configured separately on each connection once enabled.
-For each **Connection** that will be used by the ADF process the *Cloud* field is required to be set to `true` to expose the configuration fo the **Linked Service**.
+For each **Connection** that will be used by the ADF process the *Cloud* field is required to be set to `true` to expose the configuration for the **Linked Service**.
 
 > [!NOTE]
 > Ensure that the *Catalog* and *Connection String* are identical between the Staging Area and Landing Area.
@@ -111,16 +111,18 @@ The below table for outlines the supported Landing Area configurations for each 
 
 | Staging Area System Type      | Connection Type     | Table Based | Blob Storage |
 | ----------------------------- | ------------------- | ----------- | ------------ |
-| Azure Synapse*                | OLEDB SQL Based ELT | Yes         | Yes          |
+| Azure Synapse*                | OLEDB SQL Based ELT | Yes         | No           |
 | Microsoft SQL Server (Server) | OLEDB SQL Based ELT | Yes         | No           |
 | Microsoft SQL Server (Azure)  | OLEDB SQL Based ELT | Yes         | No           |
 | Microsoft SQL Server (Azure)  | OLEDB SQL Based ELT | Yes         | No           |
 | Snowflake Data Warehouse      | ODBC SQL Based ELT  | No          | Yes          |
 
+<!-- Not supported in ADF yet
 > [!NOTE]
 > **\***: Azure Synapses requires a [PolyBase Architecture](xref:bimlflex-synapse-implementation) when configured to use Blob Storage.  
 >  
 > *Connection Type*: BimlFlex requires a `SQL Based ELT` for all ADF projects.  
+-->
 
 ### Table Based Configuration
 
@@ -149,7 +151,7 @@ A Blob Storage Configuration requires the following:
 * Blob Staging Container
 * Blob Archive Container
 * Blob Error Container
-* Blob BimlFlex **Setttings** Configured
+* Blob BimlFlex **Settings** Configured
 
 > [!IMPORTANT]
 > A Blob Storage Configuration with Synapse also requires a [PolyBase Architecture](xref:bimlflex-synapse-implementation).
