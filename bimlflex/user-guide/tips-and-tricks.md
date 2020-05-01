@@ -360,7 +360,7 @@ You can use this script to identify which **Project** reference the **Connection
 
 More information:
 
-* [Working with environments and the SSIS catalog](xref:zzz-bimlflex-deployment-guide)
+* [Working with environments and the SSIS catalog](xref:bimlflex-ssis-deployment-guide)
 * [](xref:sensitive-info-management)
 
 ### Video
