@@ -72,7 +72,7 @@ WITH
 GO
 ```
 
-### [Azure Storage Key Example](#tab/create-database-scoped-credential-example)
+### [Azure Storage Key Example](#tab/create-database-scoped-credential-ask-example)
 
 ```sql
 CREATE DATABASE SCOPED CREDENTIAL [bimlflex]
@@ -87,7 +87,7 @@ GO
 >  
 > *Storage Key* - This value will end in a `==`.
 
-### [SAS Example](#tab/create-database-scoped-credential-example)
+### [SAS Example](#tab/create-database-scoped-credential-sas-example)
 
 ```sql
 CREATE DATABASE SCOPED CREDENTIAL [bimlflex]
