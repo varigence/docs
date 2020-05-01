@@ -173,11 +173,21 @@ The settings have been updated. New settings are available, some settings have b
 
 * Update: Additional support for SSIS build scenarios for ETL loads to Data Vault
 
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64660.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64660.0.exe)
+* [bimlflexruntimesetup_5.0.64660.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64660.0.exe)
+
 ## Build 5.0.64659.0, release date: 27 April 2020
 
 2020 Initial Release
 
 * Includes updates identified through the preview phase
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64659.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64659.0.exe)
+* [bimlflexruntimesetup_5.0.64659.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64659.0.exe)
 
 ## Build 5.0.64613.0, release date: 07 April 2020
 
