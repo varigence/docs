@@ -14,14 +14,12 @@ BimlFlex 2020 is installed and upgraded through a single consolidated installer.
 
 ### Latest Release
 
-Build 5.0.64659.0, release date: 27 April 2020
+Build 5.0.64660.0, release date: 30 April 2020
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
-
-## Build 5.0.64659.0, release date: 27 April 2020
 
 ### BimlFlex 2020 Feature Highlights
 
@@ -170,6 +168,16 @@ The settings have been updated. New settings are available, some settings have b
 | AddRecordSourceToIntegrationKey  | Import Metadata will add `@@rs` to Integration Keys if `Y` is specified |
 | ChangeReferencesToIntegrationKey | Import Metadata will change References to Integration Keys if `Y` is specified |
 | ImportViews                      | Should Views be imported when importing Metadata.  Options are `Y` and `N` |
+
+## Build 5.0.64660.0, release date: 30 April 2020
+
+* Update: Additional support for SSIS build scenarios for ETL loads to Data Vault
+
+## Build 5.0.64659.0, release date: 27 April 2020
+
+2020 Initial Release
+
+* Includes updates identified through the preview phase
 
 ## Build 5.0.64613.0, release date: 07 April 2020
 
