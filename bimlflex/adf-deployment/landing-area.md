@@ -149,7 +149,7 @@ A Blob Storage Configuration requires a Blob Container for Staging, Archive and 
 These Blob Containers can be hosted inside a single Azure Storage Account or a unique account for each.
 Once the Azure artifacts are created, the appropriate settings for each account will need to be populated.
 
-#### Azure Blob Stage Container Settings (Blob Upload or PolyBase Architecture Only)
+#### Azure Blob Container Settings (Blob Storage Configuration Only)
 
 The following Azure **Settings** are used to configure the blob destinations.
 
