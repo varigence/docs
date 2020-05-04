@@ -171,7 +171,7 @@ The settings have been updated. New settings are available, some settings have b
 
 ## Build 5.0.64661.0, release date: 4 May 2020
 
-* Update: A scenario where the Build and Deploy scripts were not included in the Build output when the output folder was defined using an UNC path (\\\\server\\share\\folder) was addressed
+* Update: A scenario where the Build and Deploy scripts were not included in the Build output when the output folder was defined using a UNC path (\\\\server\\share\\folder) was addressed
 
 download links to this build:
 
