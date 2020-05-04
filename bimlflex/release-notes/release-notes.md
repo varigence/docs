@@ -14,7 +14,7 @@ BimlFlex 2020 is installed and upgraded through a single consolidated installer.
 
 ### Latest Release
 
-Build 5.0.64660.0, release date: 30 April 2020
+Build 5.0.64661.0, release date: 4 May 2020
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
@@ -168,6 +168,15 @@ The settings have been updated. New settings are available, some settings have b
 | AddRecordSourceToIntegrationKey  | Import Metadata will add `@@rs` to Integration Keys if `Y` is specified |
 | ChangeReferencesToIntegrationKey | Import Metadata will change References to Integration Keys if `Y` is specified |
 | ImportViews                      | Should Views be imported when importing Metadata.  Options are `Y` and `N` |
+
+## Build 5.0.64661.0, release date: 4 May 2020
+
+* Update: A scenario where the Build and Deploy scripts were not included in the Build output when the output folder was defined using an UNC path (\\\\server\\share\\folder) was addressed
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.64661.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64661.0.exe)
+* [bimlflexruntimesetup_5.0.64661.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64661.0.exe)
 
 ## Build 5.0.64660.0, release date: 30 April 2020
 
