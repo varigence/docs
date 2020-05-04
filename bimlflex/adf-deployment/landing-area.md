@@ -28,7 +28,7 @@ This example uses sample metadata to configure an appropriate Landing Area for a
 
 For addition details of alternate configurations refer to the [Detailed Configuration](#detailed-configuration) section.
 
-![BimlFlex - Configure Azure Data Factory Landing Area](https://www.youtube.com/watch?v=fYA4yTPe4ao?rel=0&autoplay=0 "BimlFlex - Configure Azure Data Factory Landing Area")
+![BimlFlex - How to Configure Azure Data Factory Landing Area](https://www.youtube.com/watch?v=czmK6R2Y-9c?rel=0&autoplay=0 "BimlFlex - How to Configure Azure Data Factory Landing Area")
 
 ### High Level Steps
 

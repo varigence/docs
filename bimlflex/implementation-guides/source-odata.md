@@ -2,7 +2,7 @@
 uid: bimlflex-source-odata
 title: BimlFlex OData Source
 ---
-# BimlFlex BimlFlex OData Source
+# BimlFlex OData Source
 
 BimlFlex can use custom source components, such as OData to load data from bespoke sources
 

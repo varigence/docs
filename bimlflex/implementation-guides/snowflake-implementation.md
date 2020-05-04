@@ -16,6 +16,14 @@ Snowflake is a cloud data warehouse platform provided by Snowflake Computing Inc
 
 Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.  This section will walk you through the required software and system configurations you will need to connect BimlFlex to your Snowflake environment.  
 
+### Implement Snowflake using Azure Data Factory
+> [!NOTE]
+> The example is intended to follow the guide for [Creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example).
+
+The following video walks through the common steps and considerations for deploying an Azure Data Factory for Snowflake.
+
+![BimlFlex - Implement Snowflake using Azure Data Factory](https://www.youtube.com/watch?v=COGIHSjAdSg?rel=0&autoplay=0 "BimlFlex - Implement Snowflake using Azure Data Factory")
+
 ### Installing and Configuring SnowSQL (SSIS Only)
 
 When using SSIS Orchestration, BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components-ssis-only) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.  This requires that SnowSQL be installed and the appropriate connection created on the server executing the SSIS packages.  Follow the below link for instructions on how to install SnowSQL.  

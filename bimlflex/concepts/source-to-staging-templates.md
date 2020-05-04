@@ -275,7 +275,7 @@ Extension Points are custom logic and tasks that can be injected directly into t
 
 The diagram below shows at which point the extension points are added to the source component ETL in BimlFlex. The left-hand side box contains the adjustments a user can make to the source query in metadata and the right-hand box contains the extension points that can be added that control the source query.
 
-![Source Query Extension Points](../user-guide/images/bimlflex-ss-v5-source-query-extension-point.png "Source Query Extension Points")
+![Source Query Extension Points -50%](../user-guide/images/bimlflex-ss-v5-source-query-extension-point.png "Source Query Extension Points")
 
 ### Create a Source Override Extension Point
 

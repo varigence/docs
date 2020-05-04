@@ -28,17 +28,17 @@ Existing Environment for best results
 -->
 
 > [!NOTE]
-> Azure Data Factory is only one of the options for orchestrating you data warehouse environment.
+> Azure Data Factory is only one of the options for orchestrating your data warehouse environment.
 > To learn more about another option see the [SQL Server Integration Services Deployment Guide](xref:bimlflex-ssis-deployment-guide).
 
 ## Deploying an Azure Data Factory By Example
 
+> [!NOTE]
+> The example is intended to follow the guide for [Creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example).
+
 The following video walks through the common steps and considerations for deploying an Azure Data Factory for a Staging Area.
 
-![YouTube Video](https://www.youtube.com/watch?v=vV236jsq8Cg?rel=0&autoplay=0 "BimlFlex - Overview Build and Deploy ADF")
-
-> [!NOTE]
-> The example is intended to follow the guide for [creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example).
+![BimlFlex - How to Build and Deploy Azure Data Factory](https://www.youtube.com/watch?v=McTmpAzJW6c?rel=0&autoplay=0 "BimlFlex - How to Build and Deploy Azure Data Factory")
 
 The general architecture of the generated Azure Data Factory is below.
 
