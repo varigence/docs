@@ -1,1 +1,0 @@
-docfx build --serve
