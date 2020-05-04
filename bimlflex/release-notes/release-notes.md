@@ -12,7 +12,7 @@ name: BimlFlex Release Notes
 
 BimlFlex 2020 is installed and upgraded through a single consolidated installer.
 
-### Latest Release
+## Latest Release
 
 Build 5.0.64661.0, release date: 4 May 2020
 
@@ -21,7 +21,7 @@ Build 5.0.64661.0, release date: 4 May 2020
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
-### BimlFlex 2020 Feature Highlights
+## BimlFlex 2020 Feature Highlights
 
 * Expanded support for Azure Data Factory
 * Data Mappings visualizations and editor for BimlFlex App
@@ -31,7 +31,7 @@ Build 5.0.64661.0, release date: 4 May 2020
 * Additional automation script creation for build and deployment
 * Support for Microsoft Dynamics CRM as source in Azure Data Factory projects
 
-#### Expanded support for Azure Data Factory
+### Expanded support for Azure Data Factory
 
 BimlFlex now has full support for Azure Data Factory (ADF) workflows for Azure Synapse, Azure SQL DB and Snowflake target data warehouses.
 
@@ -39,13 +39,13 @@ This includes full support to build Azure ARM templates for direct deployment of
 
 More information on ADF here: [](xref:adf-deployment-overview)
 
-#### Data Mappings visualizations and editor for BimlFlex App
+### Data Mappings visualizations and editor for BimlFlex App
 
 The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
 
 More information on the BimlFlex app here: [](xref:metadata-editors-overview)
 
-#### BimlCatalog Operational Reporting in BimlFlex App
+### BimlCatalog Operational Reporting in BimlFlex App
 
 The BimlFlex app has been updated with BimlCatalog Operational Reporting capabilities.
 
@@ -53,7 +53,7 @@ These reports allow direct access to the logging in the BimlCatalog from the app
 
 More information on operational reporting here: [](xref:bimlflex-operational-reports)
 
-#### Restructure BimlCatalog for more agnostic logging
+### Restructure BimlCatalog for more agnostic logging
 
 The BimlCatalog schema has been updated with agnostic table names.
 
@@ -63,13 +63,13 @@ ADF Stored Procedures have been updated to better support logging and orchestrat
 
 More information on the BimlCatalog here: [](xref:bimlcatalog-database)
 
-#### Additional Extension Points for bespoke processing requirements
+### Additional Extension Points for bespoke processing requirements
 
 Several new Extension Points have been added to BimlFlex.
 
 Many are targeting SQL Script processing, allowing better flexibility for cloud implementations and ADF workflows.
 
-#### Additional support script creation for build and deployment
+### Additional support script creation for build and deployment
 
 BimlStudio now creates additional build and deploy scripts for easy automation.
 
@@ -81,13 +81,13 @@ When building a project, the output folder now contains the following two new fo
 * `Deploy`  
     PowerShell scripts for building SSDT Projects and deploying SSDT and SSIS Projects
 
-#### Support for Microsoft Dynamics CRM as source in Azure Data Factory projects
+### Support for Microsoft Dynamics CRM as source in Azure Data Factory projects
 
 New Feature: BimlFlex support for cloud and On-Premises Microsoft Dynamics CR sources for Azure Data Factory projects.
 
 This allows direct metadata import from Dynamics CRM into the BimlFlex metadata through the Metadata Import function in the BimlFlex App. Modeling and metadata management is performed as needed and the pipelines to load the data from the source is part of the created Azure Data Factory pipeline
 
-#### Changes to settings
+### Changes to settings
 
 The settings have been updated. New settings are available, some settings have been changed, renamed or reorganized.
 
@@ -95,7 +95,7 @@ The settings have been updated. New settings are available, some settings have b
 > Breaking Changes  
 > For scenarios where a changed setting is used in Extension Points or referenced elsewhere (such as in an SSIS Catalog environment project parameter) the corresponding syntax change needs to be made to match the new names
 
-**New Settings**
+#### New Settings
 
 | Setting                 | Description |
 | -------                 | ----------- |
@@ -130,7 +130,7 @@ The settings have been updated. New settings are available, some settings have b
 | PsaEltDeltaIsDerived    | Set this to "Y" if loading into PSA and the Delta has already been derived in the file. This will provide optimized ELT loads |
 | StageBypassPsaChecks    | Set to "Y" to bypass all Persistent Lookup and Checks and apply all records to Staging and Persistent Staging tables. |
 
-**Changed settings**
+#### Changed settings
 
 | Old Key Name                   | New Key Name            |
 | ------------                   | ------------            |
@@ -147,7 +147,7 @@ The settings have been updated. New settings are available, some settings have b
 | AzureArchiveStorageSasToken    | AzureArchiveSasToken    |
 | AzureArchiveContainerName      | AzureArchiveContainer   |
 
-**Changed defaults**
+#### Changed defaults
 
 | Setting        | Old Value | New Value |
 | -------        | --------- | --------- |
@@ -155,7 +155,7 @@ The settings have been updated. New settings are available, some settings have b
 
 * Add: New Settings for metadata importer behavior control. The Metadata importer default settings are now controllable through Metadata Settings. This allows for metadata driven defaults for importer behavior. The new settings are listed below and correspond to the existing User Interface options.
 
-**New Metadata Importer Settings**
+#### New Metadata Importer Settings
 
 | Setting                          | Description |
 | -------                          | ----------- |
