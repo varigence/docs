@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for MySQL
 
 After selecting `MySQL` from the Linked Service Type dropdown, the form required for creating a MySQL Linked Service will appear.
 
-![MySQL Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-mysql-form.png "MySQL Linked Service Form")
+![MySQL Linked Service Form](images/bimlflex-ss-app-connections-adf-mysql-form.png "MySQL Linked Service Form")
 
 ## Required Fields
 

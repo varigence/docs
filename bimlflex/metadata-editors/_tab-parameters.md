@@ -2,7 +2,6 @@
 
 <img
     src="images/bimlflex-app-tab-parameters-actions.png"
-    class="border-image"
     title="Parameters Tab - Action Buttons"
 />
 
@@ -26,7 +25,6 @@ All **Parameters** assigned to the current entity show here.  New items can be e
 
 <img
     src="images/bimlflex-app-tab-parameters-table.png"
-    class="border-image"
     title="Parameters Tab - Table Descriptions"
 />
 

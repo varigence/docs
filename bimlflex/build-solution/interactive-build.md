@@ -19,7 +19,6 @@ If this is the first time that the user has built their solution, they should ch
 
 <img 
     src="images/targetversionsettings.png" 
-    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />
@@ -33,7 +32,6 @@ In the application, navigate to the *Build & Deploy* tab and locate the build bu
 
 <img 
     src="images/mainbuild.png" 
-    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />
@@ -42,7 +40,6 @@ Users can also use the build button located in the toolbar.
 
 <img 
     src="images/toolbarbuild.png" 
-    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />

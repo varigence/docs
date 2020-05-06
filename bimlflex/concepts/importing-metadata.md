@@ -20,13 +20,13 @@ This tool can be used in any scenario where a schema is available, and there is 
 
 In the BimlFlex App, Navigate to a Source Connection or associated Source Project. The Connection should have a connection string which points to the database which should be imported. In the details tab, click the `Import Metadata` button. This opens the Import Metadata page.
 
-![-border-image](../metadata-editors/images/bimlflex-app-import-metadata-ribbon.png "Import Metadata Ribbon")
+![Import Metadata Ribbon](../metadata-editors/images/bimlflex-app-import-metadata-ribbon.png "Import Metadata Ribbon")
 
 ### Import Metadata UI
 
 There are a number of options for importing metadata. Align these options with the solution architecture and metadata conventions.
 
-![-border-image](../metadata-editors/images/bimlflex-app-import-metadata-options.png "Import Metadata Options")
+![Import Metadata Options](../metadata-editors/images/bimlflex-app-import-metadata-options.png "Import Metadata Options")
 
 The example connection in the Sample Metadata is `AWLT_SRC` which points to the AdventureWorksLT database, using the project `EXT_AWLT_SRC` as the target for imported metadata.
 
@@ -105,7 +105,7 @@ Click the `Connect to Database` button. If the Connection String is correct and 
 
 The Importable Assets list is read from the Source Connection. Choose items that should be included in the metadata import.
 
-![-border-image](../metadata-editors/images/bimlflex-app-import-metadata.png "Import Metadata")
+![Import Metadata](../metadata-editors/images/bimlflex-app-import-metadata.png "Import Metadata")
 
 Upon clicking the `Import Metadata` button, the metadata will be imported into the BimlFlex app and will be available for review and modeling.
 
@@ -113,7 +113,7 @@ Upon clicking the `Import Metadata` button, the metadata will be imported into t
 
 Navigate back to the Connection or Project and view the Objects tab. You should see all the newly imported Objects.
 
-![-border-image](../metadata-editors/images/bimlflex-app-import-metadata-objects.png "Imported Metadata Objects")
+![Imported Metadata Objects](../metadata-editors/images/bimlflex-app-import-metadata-objects.png "Imported Metadata Objects")
 
 ## Import Metadata Over Existing Metadata
 

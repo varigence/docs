@@ -2,7 +2,6 @@
 
 <img
     src="images/bimlflex-app-tab-columns-actions.png"
-    class="border-image"
     title="Columns Tab - Action Buttons"
 />
 
@@ -38,7 +37,6 @@ The **Overview** is available to give quick access to the more physical properti
 
 <img
     src="images/bimlflex-app-tab-columns-views-overview.png"
-    class="border-image"
     title="Columns - Overview View"
 />
 
@@ -48,7 +46,6 @@ The **Settings** view allows for quick access to all the boolean and flag proper
 
 <img
     src="images/bimlflex-app-tab-columns-views-settings.png"
-    class="border-image"
     title="Columns - Settings View"
 />
 
@@ -58,7 +55,6 @@ The **Expressions** view allows you to quickly view and manage all the expressio
 
 <img
     src="images/bimlflex-app-tab-columns-views-expressions.png"
-    class="border-image"
     title="Columns - Expressions View"
 />
 
@@ -68,7 +64,6 @@ The **Mappings** view shows the references and targets associated with the **Col
 
 <img
     src="images/bimlflex-app-tab-columns-views-mappings.png"
-    class="border-image"
     title="Columns - Mappings View"
 />
 
@@ -78,6 +73,5 @@ The **Overrides** view is available to allow for quick management of modeled met
 
 <img
     src="images/bimlflex-app-tab-columns-views-overrides.png"
-    class="border-image"
     title="Columns - Overrides View"
 />

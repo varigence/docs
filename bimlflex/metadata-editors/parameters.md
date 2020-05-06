@@ -19,7 +19,6 @@ The following sections describe the UI elements of the **Parameters Editor** and
 **Parameters Editor**  
 <img
     src="images/bimlflex-app-editor-parameters.png"
-    class="border-image"
     title="Parameters Editor"
 />
 
@@ -27,7 +26,6 @@ The following sections describe the UI elements of the **Parameters Editor** and
 
 <img
     src="images/bimlflex-app-editor-parameters-actions.png"
-    class="border-image"
     title="Parameters Editor"
 />
 

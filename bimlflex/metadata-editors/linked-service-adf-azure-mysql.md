@@ -9,7 +9,7 @@ title: Configuring an ADF Linked Service Connection for Azure Database for MySQL
 
 After selecting `Azure MySQL` from the Linked Service Type dropdown, the form required for creating an Azure Database for MySQL Linked Service will appear.
 
-![Azure MySQL Linked Service Form -border-image](images/bimlflex-ss-app-connections-azure-mysql-form.png "Azure MySQL Linked Service Form")
+![Azure MySQL Linked Service Form](images/bimlflex-ss-app-connections-azure-mysql-form.png "Azure MySQL Linked Service Form")
 
 ## Required Fields
 

@@ -13,7 +13,6 @@ The following sections describe the UI elements of the **Objects Editor** and ho
 **Objects Editor**  
 <img
     src="images/bimlflex-app-editor-objects.png"
-    class="border-image"
     title="Objects Editor"
 />
 
@@ -25,7 +24,6 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 <img
     src="images/bimlflex-app-editor-objects-actions.png"
-    class="border-image"
     title="Objects Editor Actions"
 />
 
@@ -60,7 +58,6 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 
 <img 
     src="images/bimlflex-app-editor-objects-fields-table.png"
-    class="border-image"
     style="border: 1px solid #CCC;"
     title="Objects Editor Fields"
 />
@@ -97,7 +94,6 @@ The majority of the SQL Overrides are provided to handle the various scenarios w
 
 <img
     src="images/bimlflex-app-editor-objects-fields-sql-overrides.png"
-    class="border-image"
     title="Objects Editor SQL Overrides Fields"
 />
 

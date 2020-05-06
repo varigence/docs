@@ -41,8 +41,8 @@ END
 
 ### Sample Object Metadata
 
-![Stored Procedure Source Object Metadata -border-image](images/bfx-ssis-sp-src-object.png "Stored Procedure Source Object Metadata")
+![Stored Procedure Source Object Metadata](images/bfx-ssis-sp-src-object.png "Stored Procedure Source Object Metadata")
 
 ### Sample Column Metadata
 
-![Stored Procedure Source Columns Metadata -border-image](images/bfx-ssis-sp-src-columns.png "Stored Procedure Source Columns Metadata")
+![Stored Procedure Source Columns Metadata](images/bfx-ssis-sp-src-columns.png "Stored Procedure Source Columns Metadata")

@@ -12,7 +12,7 @@ The BimlFlex App provides a user experience for managing metadata and BimlFlex p
 
 The BimlFlex App connects to the BimlFlex metadata repository and allows management of the metadata through a user-friendly experience. Use the BimlFlex App to manage the BimlFlex metadata.
 
-![BimlFlex App UI -border-image](../user-guide/images/bimlflex-ss-app-startscreen.png)
+![BimlFlex App UI](../user-guide/images/bimlflex-ss-app-startscreen.png)
 
 ## Installation
 
@@ -24,7 +24,7 @@ Configure the App to connect to the BimlFlex database through the configuration 
 
 Specify the database server, database, login information for the metadata database to connect and work with metadata projects. Set up and upgrade the BimlFlex metadata database through the BimlFlex installer.
 
-![BimlFlex App Configuration -border-image](../user-guide/images/bimlflex-ss-app-configure-connection.png)
+![BimlFlex App Configuration](../user-guide/images/bimlflex-ss-app-configure-connection.png)
 
 ## Uninstallation
 

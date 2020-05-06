@@ -2,7 +2,6 @@
 
 <img
     src="images/bimlflex-app-tab-objects-actions.png"
-    class="border-image"
     title="Objects Tab - Action Buttons"
 />
 
@@ -32,7 +31,6 @@ The **Overview** is available to give quick access to the more physical properti
 
 <img
     src="images/bimlflex-app-tab-objects-view-overview.png"
-    class="border-image"
     title="Objects Tab - Overview View"
 />
 
@@ -52,7 +50,6 @@ The **Model Overrides** view allows for quick management of modeled metadata fro
 
 <img
     src="images/bimlflex-app-tab-objects-view-model-overrides.png"
-    class="border-image"
     title="Objects Tab - Model Overrides View"
 />
 
@@ -65,7 +62,6 @@ The **Query Overrides** view exposes any SQL overrides that may be required in t
 
 <img
     src="images/bimlflex-app-tab-objects-view-query-overrides.png"
-    class="border-image"
     title="Objects Tab - Query Overrides View"
 />
 
@@ -78,7 +74,6 @@ The **Dependencies** view allows for management of an **Object's** dependencies 
 
 <img
     src="images/bimlflex-app-tab-objects-view-dependencies.png"
-    class="border-image"
     title="Objects Tab - Dependencies View"
 />
 

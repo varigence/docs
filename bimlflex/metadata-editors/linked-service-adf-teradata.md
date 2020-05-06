@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for Teradata
 
 After selecting `Teradata` from the Linked Service Type dropdown, the form required for creating a Teradata Linked Service will appear.
 
-![Teradata Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-teradata-form.png "Teradata Linked Service Form")
+![Teradata Linked Service Form](images/bimlflex-ss-app-connections-adf-teradata-form.png "Teradata Linked Service Form")
 
 ## Required Fields
 

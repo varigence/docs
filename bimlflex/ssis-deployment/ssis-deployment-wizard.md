@@ -28,7 +28,6 @@ After launching the wizard, follow these steps.
 
     <img 
     src="images/locateprojectinwizard.png"
-    class="border-image"
     style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box" />
 
@@ -36,7 +35,6 @@ After launching the wizard, follow these steps.
 
     <img
     src="images/wizarddestination.png"
-    class="border-image"
     style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box" />
 
@@ -45,7 +43,6 @@ After launching the wizard, follow these steps.
 
     <img
     src="images/folderbrowse.png"
-    class="border-image"
     style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box" />
 
@@ -53,7 +50,6 @@ After launching the wizard, follow these steps.
 
     <img
     src="images/reviewanddeploy.png"
-    class="border-image"
     style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box" />
 

@@ -11,7 +11,7 @@ The current **Customer** and **Version** is displayed in the top right corner an
 
 **BimlFlex Toolbar**
 
-![BimlFlex Toolbar -border-image](images/bimlflex-app-title-bar.png "BimlFlex Toolbar")
+![BimlFlex Toolbar](images/bimlflex-app-title-bar.png "BimlFlex Toolbar")
 
 | Icon | Action | Description |
 | ---- | ------ | ----------- |

@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse
 
 After selecting `Azure SQL Data Warehouse` from the Linked Service Type dropdown, the form required for creating an Azure SQL Data Warehouse Linked Service will appear.
 
-![Azure SQL Data Warehouse Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-sql-data-warehouse-form.png "Azure SQL Data Warehouse Linked Service Form")
+![Azure SQL Data Warehouse Linked Service Form](images/bimlflex-ss-app-connections-adf-sql-data-warehouse-form.png "Azure SQL Data Warehouse Linked Service Form")
 
 ## Required Fields
 
@@ -68,7 +68,7 @@ To use Managed Identities for authentication with Azure SQL Data Warehouse, they
 
 #### Service Principal
 
-![Service Principal -border-image](images/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
+![Service Principal](images/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
 
 To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for SQL Data Warehouse Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the SQL Data Warehouse Linked Service form.
 

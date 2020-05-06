@@ -2,7 +2,6 @@
 
 <img
     src="images/bimlflex-app-tab-attributes-actions.png"
-    class="border-image"
     title="Attributes Tab - Action Buttons"
 />
 
@@ -26,7 +25,6 @@ All **Attributes** assigned to the current entity show here.  New items can be e
 
 <img
     src="images/bimlflex-app-tab-attributes-table.png"
-    class="border-image"
     title="Attributes Tab - Table Descriptions"
 />
 

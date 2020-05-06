@@ -8,7 +8,6 @@ The **Attributes Editor** is used to manage **Attributes** in the BimlFlex appli
 
 <img
     src="images/attributes.64566.png"
-    class="border-image"
     title="Attributes Editor"
 />
 
@@ -16,7 +15,6 @@ The **Attributes Editor** is used to manage **Attributes** in the BimlFlex appli
 
 <img
     src="images/attributes-action-buttons.64566.png"
-    class="border-image"
     title="Attributes Action Buttons"
 />
 
@@ -37,7 +35,6 @@ The fields available in the **Attribute** form change depending on the selected 
 
 <img
     src="images/attributes-fields.64566.png"
-    class="border-image"
     title="{Entity Plural} Editor Fields"
 />
 

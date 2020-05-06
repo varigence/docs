@@ -14,7 +14,6 @@ The following sections describe the UI elements of the Batches Editor and how th
 
 <img
     src="images/bimlflex-app-editor-batches.png"
-    class="border-image"
     title="Batches Editor"
 />
 
@@ -26,7 +25,6 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 <img
     src="images/bimlflex-app-editor-batches-actions.png"
-    class="border-image"
     title="Batches Editor Actions"
 />
 
@@ -50,7 +48,6 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 <img
     src="images/bimlflex-app-editor-batches-fields.png"
-    class="border-image"
     title="Batches Editor Fields"
 />
 
