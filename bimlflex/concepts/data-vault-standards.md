@@ -1,16 +1,16 @@
 ---
 uid: bimlflex-data-vault-standards
-title: BimlFlex Data Vault Standards
+title: BimlFlex Data Vault Best Practices
 ---
 
 # BimlFlex Data Vault Standards
 
 ## Abstract
 
-This document consolidates and outlines the various Data Vault implementation standards and explains how to configure BimlFlex to achieve the desired outcomes.
+This document consolidates and outlines the various Data Vault implementation best practices and explains how to configure BimlFlex to achieve the desired outcomes.
 
 > [!NOTE]
-> This document is intended to supplement other, published standards.
+> This document is intended to supplement other, published Data Vault standards.
 > Varigence provides a course that combines your preferred Data Vault approach with implementation guides using BimlFlex.
 
 ## Data Vault Core Constructs
