@@ -1,19 +1,14 @@
 ---
-categories: [BimlFlex]
-layout: post
-published: false
-summary: Best Practices for Deploying Data Vault on Azure Synapse 
-tags: [BimlFlex]
 uid: best-practices-for-deploying-data-vault-on-azure-synapse
 title: Best Practices for Deploying Data Vault on Azure Synapse
 ---
-
 # Best Practices for Deploying Data Vault on Azure Synapse
 
 ## Introduction
 
-Microsoft published a guide of good practices for deploying a Data Vault solution on an ![Azure Synapse](https://azure.microsoft.com/en-au/resources/deploying-data-vault/) platform.
-This white paper demonstrate how BimlFlex aligns with the best practices. It assumes the reader has some knowledge of the Data Vault 2.0 and Azure Synapse.
+Microsoft published a white paper on practices for deploying a Data Vault solution on an ![Azure Synapse](https://azure.microsoft.com/en-au/resources/deploying-data-vault/) platform.
+
+This white paper demonstrate how BimlFlex aligns with these best practices. It assumes the reader has some knowledge of the Data Vault 2.0 and Azure Synapse.
 
 ## 1. Follow the Rules
 
