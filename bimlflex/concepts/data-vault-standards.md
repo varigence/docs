@@ -3,7 +3,7 @@ uid: bimlflex-data-vault-standards
 title: BimlFlex Data Vault Best Practices
 ---
 
-# BimlFlex Data Vault Standards
+# BimlFlex Data Vault Best Practices
 
 ## Abstract
 
@@ -21,10 +21,10 @@ Before diving into the Data Vault standards and implementation, we recommend cre
 
 Create a map, model or diagram of core business concepts and relationships before using the BimlFlex accelerator to transform the source into a Data Vault. Build a conceptual model based on business processes using business terminology. Exercise caution, especially the `technical` teams, to not base the model on any existing source system. At this stage, do not concern yourself with how you will make the source data fit into this model, rather focus on the model and make sure it is an accurate representation of your business.
 
-Mapping source systems to your `Core Business Concepts` can be a challenge. However, the BimlFlex Accelerator simplifies the process by applying standard Data Vault patterns.
+Mapping source systems to your `Business Entities` can be a challenge. However, the BimlFlex Accelerator simplifies the process by applying standard Data Vault patterns.
 
 > [!IMPORTANT]
-> It is highly recommended to have a `Core Business Model` in place before using the `Data Vault Accelerator` for optimal results. We are adding additional support to create `Core Business Models` in an upcoming version of BimlFlex.
+> It is highly recommended to have a `Business Entities` in place before using the `Data Vault Accelerator` for optimal results. We are adding additional support to create `Business Models` in an upcoming version of BimlFlex.
 
 #### Hash Key
 
@@ -41,13 +41,13 @@ Mapping source systems to your `Core Business Concepts` can be a challenge. Howe
 
 #### Hash Collision
 
-When using hash values to represent the value of something else, an Integration Key or a row checksum, there is a small risk that two source values generate the same hash value. This would result in a hash collision.
+When using hash values to represent the value of something else, an alternate key or a row checksum, there is a small risk that two source values generate the same hash value. This would result in a hash collision.
 
-When two integration keys hash to the same target hash a potential effect could be that only the first would be loaded to the Data Vault Hub, with the first Integration Key value. Attributes that relate to the 2 keys would be confused and co-located.
+When two keys hash to the same target hash a potential effect could be that only the first would be loaded to the Data Vault Hub, with the first key value. Attributes that relate to the second key would be confused and co-located.
 
-Row hashing is used to detect changes in rows, all row columns/attributes are combined into a single hash value. when that value changes there is a change in one or more of the attributes, when it is the same the rows are the same. If a collision occur here, the new version of the row (with the new changes) would not be persisted in the target as it would not be identified as a change.
+Row hashing is used to detect changes in rows, all the attributes are combined into a single hash value, commonly referred to as a `HashDiff`, when that value changes there is a change in one or more of the attributes, when it is the same the rows are the same. If a collision occur here, the new version of the row (with the new changes) would not be persisted in the target as it would not be identified as a change.
 
-A way to accommodate hash collision risk is to do a reverse hash, which is a configuration option in BimlFlex.
+A way to accommodate hash collision risk is to do a reverse hash and combine this with the original hash, which is a configuration option in BimlFlex for the SSIS templates, however this will have an impact on load times.
 
 Another way is to do reconciliation checks in the Target data warehouse. For targets that don't enforce constraints, such as Synapse and Snowflake, the hash values are inserted in the target regardless of collisions. BimlFlex can be extended to create custom reconciliation queries to allow reports and analytics on key/hash comparisons. For targets that do enforce the constraints, the collision will result in a potential hard failure, allowing the scenario to be analyzed and accommodated. An option for remediation is to increase the hash length, if a collision happens using SHA1, upgrade to use SHA2_256 or SHA2_512 that have longer key length and less risk for hash collisions.
 

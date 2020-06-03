@@ -1,8 +1,8 @@
 ---
 uid: bimlflex-getting-started
-title: Getting Started with bimlFlex
+title: Getting Started with BimlFlex
 ---
-# Getting Started with bimlFlex
+# Getting Started with BimlFlex
 
 Get quickly up to speed with BimlFlex through this getting started guide!
 
