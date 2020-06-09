@@ -65,7 +65,7 @@ region = west-us-2.azure
 ***
 
 > [!TIP]
-> For additional details on finding the associated values or configuring SnowSQL refer to the below guides:
+> For additional details on finding the associated values or configuring SnowSQL refer to the below guides:  
 > Snowflake Docs: [Logging into Snowflake](https://docs.snowflake.com/en/user-guide/connecting.html)  
 > Snowflake Docs: [Configuring SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-config.html)  
 
