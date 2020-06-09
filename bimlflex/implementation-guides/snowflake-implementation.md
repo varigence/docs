@@ -14,9 +14,11 @@ Snowflake is a cloud data warehouse platform provided by Snowflake Computing Inc
 
 ## Initial Configuration
 
-Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.  This section will walk you through the required software and system configurations you will need to connect BimlFlex to your Snowflake environment.  
+Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.
+This section will walk you through the required software and system configurations you will need to connect BimlFlex to your Snowflake environment.  
 
 ### Implement Snowflake using Azure Data Factory
+
 > [!NOTE]
 > The example is intended to follow the guide for [Creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example).
 
