@@ -32,23 +32,25 @@ Loading the sample metadata from within BimlFlex is as simple as selecting the s
 
 > [!NOTE]
 >More information on the specific creation of data marts and data vaults:
-> * [Data Vault Templates](https://docs.varigence.com/bimlflex/concepts/data-vault-templates)
-> * [Data Mart Templates](https://docs.varigence.com/bimlflex/concepts/data-mart-templates)
+>* BimlFlex Docs: [Data Vault Templates](https://docs.varigence.com/bimlflex/concepts/data-vault-templates)
+>* BimlFlex Docs: [Data Mart Templates](https://docs.varigence.com/bimlflex/concepts/data-mart-templates)
 
-As with all of our examples the data here is pointed at AdventureWorksLT 2012. The imported sample metadata will have modeled point in time (PIT) tables and bridge tables, and on top of those, built data mart tables, and dimensions and facts. The connection settings remain stanard as per previously uploaded BimlFlex feature highlight videos, and should be configured as follows from within the BimlFlex **Connections** menu:
+As with all of our examples the data here is pointed at AdventureWorksLT 2012.
+The imported sample metadata will have modeled point in time (PIT) tables and bridge tables, and on top of those, built data mart tables, and dimensions and facts.
+The connection settings remain standard as per previously uploaded BimlFlex feature highlight videos, and should be configured as follows from within the BimlFlex **Connections** menu:
 
- * *Source System* is cloud enabled
- * *Staging / Landing Environment* is configured for Blob Storage configured with ADF linked services
- * *System Type* is configured for Snowflake Data Warehouse
- * *Linked Service Type* is configured for Snowflake
- * *Integration Template* is configured for ADF Source -> Target
+* *Source System* is cloud enabled
+* *Staging / Landing Environment* is configured for Blob Storage configured with ADF linked services
+* *System Type* is configured for Snowflake Data Warehouse
+* *Linked Service Type* is configured for Snowflake
+* *Integration Template* is configured for ADF Source -> Target
 
 ![Standard Connection Settings](images/connection-settings-1.png "Standard Connection Settings 1")
 
 ![Standard Connection Settings 2](images/connection-settings-2.png "Standard Connection Settings 2")
 
->[!NOTE]
->Within Azure Data Factory the "Linked Service Type" for Snowflake does not actually exist. However, when this option is selected, BimlFlex automatically knows to use the function bridge specifically created to load data into Snowflake.
+> [!NOTE]
+> Within Azure Data Factory the "Linked Service Type" for Snowflake does not actually exist. However, when this option is selected, BimlFlex automatically knows to use the function bridge specifically created to load data into Snowflake.
 
 ![Standard Connection Settings 3](images/connection-settings-3.png "Standard Connection Settings 3")
 
@@ -67,20 +69,22 @@ The output has been configured for Snowflake, deployed to Azure Data Factory, an
 ![Snowflake Solution Output](images/snowflake-solution-output.png "Snowflake Solution Output")
 
 Having now generated a solution, which may or may not consist of multiple compute warehouses targeting different batches, a user may adjust any of the following options:
- * Scale up or scale down
- * View copy commands including completions or errors.
- * Suspend a solution
+
+* Scale up or scale down
+* View copy commands including completions or errors.
+* Suspend a solution
 
 ![Completions and Errors in Solution](images/completions-and-errors-output.png "Completions and Errors in ADF")
 
 >[!NOTE]
-> Any files in error will be moved to an error folder or archived, and on the next run, those files will have already been processed and moved to an appropriate folder.
+> Any files in error will be moved to an error folder or archived. On the next run those files will have already been processed and moved to an appropriate folder.
 
 BimlFlex provides a number of easily configurable parameters for your solution, including but not limited to:
- * High watermark lookups
- * Log row counts
- * Create a Snowflake stage
- * Process a data vault
+
+* High watermark lookups
+* Log row counts
+* Create a Snowflake stage
+* Process a data vault
 
 Users are also provided the option to simultaneously process their source data and their resulting data vault, again referencing the parallelism provided by Data Vault 2.0.
 This parallelism allows users to process their files completely from end-to-end, beginning with extraction, staging, processing a persistent stage, to loading a data vault.
@@ -102,6 +106,7 @@ As a result, users have the ability to run all code using whatever orchestration
 
 >[!TIP]
 >For additional videos relating to BimlFlex and Snowflake integration, see:
-> * [BimlScript YouTube Channel: Configure Snowflake Project](https://www.youtube.com/watch?v=yPWKs65JSFo&t=1s)
-> * [BimlScript YouTube Channel: Snowflake Source to Stage](https://www.youtube.com/watch?v=9y5sGkPrfWU)
-> * [BimlScript YouTube Channel: Snowflake Parallel Loading with Integration Keys](https://www.youtube.com/watch?v=_bQ4lact0Tw)
+
+>* BimlScript YouTube Channel: [Configure Snowflake Project](https://www.youtube.com/watch?v=yPWKs65JSFo&t=1s)
+>* BimlScript YouTube Channel: [Snowflake Source to Stage](https://www.youtube.com/watch?v=9y5sGkPrfWU)
+>* BimlScript YouTube Channel: [Snowflake Parallel Loading with Integration Keys](https://www.youtube.com/watch?v=_bQ4lact0Tw)
