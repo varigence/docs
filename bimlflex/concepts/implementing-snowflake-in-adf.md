@@ -1,35 +1,58 @@
+---
+uid: bimlflex-snowflake-implementation-adf
+title: Snowflake Implementation with ADF
+---
+
 # Implementing Snowflake Using Azure Data Factory with BimlFlex
-June 3, 2020
 
 Accompanying our most recent video upload, [BimlFlex - Implement Snowflake using Azure Data Factory](https://www.youtube.com/watch?v=COGIHSjAdSg&feature=youtu.be), we seek to show BimlFlex users just how effortless the process of using Snowflake with Azure Data Factory can be.
 
 As our primary focus in this tutorial is Snowflake implementation with Azure Data Factory, note that our connection settings remain standard as per our previously uploaded feature highlight videos.
 
-*insert img001*
+![Azure Data Factory Automation Pattern](images\bimlflex-diagram-adf-automation.png "Azure Data Factory Automation Pattern")
 
-Referencing the above infographic, regardless of source data, we'll be using Azure Data Factory copy command to ingest and land the source data in Azure Blob Storage as a parquet file. Using Snowflake stored procedure code will allow one to call the function bridge to load the data into the Snowflake database and/or persistent staging area. With the source data being held in a Snowflake database, again using ADF and a function bridge, the data can then effectively be processed into data marts or data vaults.
+Referencing the above infographic, regardless of source data, we'll be using Azure Data Factory copy command to ingest and land the source data in Azure Blob Storage as a parquet file.
+Using Snowflake stored procedure code will allow one to call the function bridge to load the data into the Snowflake database and/or persistent staging area.
+With the source data being held in a Snowflake database, again using ADF and a function bridge, the data can then effectively be processed into data marts or data vaults.
 
 BimlFlex code maintains 100% standard Snowflake stored procedure code, which allows a user to stage the output of this process using other standard orchestration tools, including Snowflake load commands.
 
-Another feature specific to BimlFlex that allows users to embrace full functionality of Snowflake is the ability to load parallel data. Anyone working in an environment that sees source data generating at different intervals may wish to create parallel processes. This allows users to load said data in similarly structured timing, or to process a large batch in one computing warehouse while simultaneously processing smaller batches in a second warehouse.
+Another feature specific to BimlFlex that allows users to embrace full functionality of Snowflake is the ability to load parallel data.
+Anyone working in an environment that sees source data generating at different intervals may wish to create parallel processes.
+This allows users to load said data in similarly structured timing, or to process a large batch in one computing warehouse while simultaneously processing smaller batches in a second warehouse.
 
 Varigence recognizes that Data Vault 2.0 embraces the concept of parallel loading as a new methodology for the smart and intelligent logistical handling of information, and strives to include this agility in all of our BimlFlex processes.
 
-**How to Configure Snowflake in BimlFlex**
+## How to Configure Snowflake in BimlFlex
 
-Within BimlFlex 2020 users are provided with a number of metadata samples, with specific focus on Snowflake within Azure Data Factory. Loading the sample metadata from within Bimlflex is as simple as selecting the snapshot from a dropdown menu.
+Within BimlFlex 2020 users are provided with a number of metadata samples, with specific focus on Snowflake within Azure Data Factory.
+Loading the sample metadata from within Bimlflex is as simple as selecting the snapshot from a dropdown menu.
 
 *insert img002*
 
 As with all of our examples, the data is pointed at AdventureWorksLT 2012, and the imported sample metadata modeled some build point tables, breach tables, and on top of those built data mart tables, and dimensions and facts.
 
-Please see other videos specifically created to demonstrate the construction of data mart and data vaults here: 
+### [Links Only](#tab/youtube-links)
 
-[How to Configure Azure Data Factory Landing Area](https://www.youtube.com/watch?v=czmK6R2Y-9c)
+> [!TIP] 
+> Please see other videos specifically created to demonstrate the construction of data mart and data vaults here:  
+> [YouTube: How to Configure Azure Data Factory Landing Area](https://www.youtube.com/watch?v=czmK6R2Y-9c "How to Configure Azure Data Factory Landing Area")  
+> [YouTube: Configure Snowflake Project](https://www.youtube.com/watch?v=yPWKs65JSFo "Configure Snowflake Project")  
+> [YouTube: Business Data Vault Model](https://www.youtube.com/watch?v=JZT8rDBMhmI "Business Data Vault Model")  
 
-[Configure Snowflake Project](https://www.youtube.com/watch?v=yPWKs65JSFo)
+### [ADF Landing](#tab/youtube-adf-landing)
 
-[Business Data Vault Model](https://www.youtube.com/watch?v=JZT8rDBMhmI)
+![YouTube: How to Configure Azure Data Factory Landing Area](https://www.youtube.com/watch?v=czmK6R2Y-9c "How to Configure Azure Data Factory Landing Area")
+
+### [Configure Snowflake](#tab/youtube-configure-snowflake)
+
+![YouTube: Configure Snowflake Project](https://www.youtube.com/watch?v=yPWKs65JSFo "Configure Snowflake Project")
+
+### [Business Vault](#tab/youtube-business-data-vault)
+
+![YouTube: Business Data Vault Model](https://www.youtube.com/watch?v=JZT8rDBMhmI "Business Data Vault Model")
+
+***
 
 The configuration settings for the remainder of the process are as such:
 

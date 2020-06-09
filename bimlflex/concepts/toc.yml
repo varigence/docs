@@ -12,6 +12,8 @@
   href: data-vault-templates.md
 - name: Data Mart Templates
   href: data-mart-templates.md
+- name: Implementing Snowflake in ADF
+  href: implementing-snowflake-in-adf.md
 #- name: Batch Orchestration
 #  href: batch-orchestration.md
 - name: Extension Points
