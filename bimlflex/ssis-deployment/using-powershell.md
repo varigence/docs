@@ -25,8 +25,7 @@ Each time you build your solution, BimlFlex will also create a deployment file(s
 Once the user has deployed the `ssdt-deploy.ps1` file for each asset who's schema has changed, the user is ready to deploy their SSIS projects. Consider the following ELT solution, containing projects for a source system extract, named *EXT_AWLT_SRC*, a raw data vault load, named *LOAD_BF_RDV*, and a data mart load, named *LOAD_BFX_DM*.
 
 <img 
-    src="images/eltprojectstructure.png" 
-    class="border-image" 
+    src="images/eltprojectstructure.png"
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />

@@ -42,7 +42,7 @@ The following video walks through the common steps and considerations for deploy
 
 The general architecture of the generated Azure Data Factory is below.
 
-![-border-image](images/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
+![Azure Data Factory Landing Pattern](images/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
 
 ### High Level Steps
 
@@ -81,11 +81,11 @@ In order to generate the Staging Area, metadata for **Objects** from a Source Sy
 Once the required metadata has been imported and configured the next step is to build the solution to generate the deployable artifacts.
 Once a [BimlStudio project is setup](xref:bimlflex-setup-bimlstudio-project), this can be done simply by click the **Build** shortcut button.
 
-![-border-image](../build-solution/images/toolbarbuild.png "Build Shortcut")
+![Build Shortcut](../build-solution/images/toolbarbuild.png "Build Shortcut")
 
 Alternatively the **Build & Deploy** tab can be selected to click the **Build** button.
 
-![-border-image](../build-solution/images/mainbuild.png "Build Button")
+![Build Button](../build-solution/images/mainbuild.png "Build Button")
 
 > [!TIP]
 > For additional details on Building a Solution refer to the below guides:  
@@ -217,11 +217,11 @@ The following guides are provided for additional reference material and configur
 Once an Self-Hosted Integration Runtime is configured, it will need to be added to BimlFlex.
 This can be done by populating the BimlFlex `AzureIntegrationRuntime` **Setting**.
 
-![-border-image](images/bimflex-setting-azureintegrationruntime.png "AzureIntegrationRuntime Setting Example")
+![AzureIntegrationRuntime Setting Example](images/bimflex-setting-azureintegrationruntime.png "AzureIntegrationRuntime Setting Example")
 
 The value will then be available in the **ADF Linked Service** as an option under the *Connect Via Integration Runtime* dropdown.
 
-![-border-image](images/bimflex-linked-service-connect-via-integration-runtime-example.png "Linked Service Integration Runtime Example")
+![Linked Service Integration Runtime Example](images/bimflex-linked-service-connect-via-integration-runtime-example.png "Linked Service Integration Runtime Example")
 
 If additional values are needed, they can be entered into the field as needed.
 

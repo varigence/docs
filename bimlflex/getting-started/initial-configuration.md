@@ -74,19 +74,19 @@ Set up the connection information to the BimlFlex database.
 
 Use the **New Customer** option in the BimlFlex App to add the Customer to the Database
 
-![Create Customer -border-image](images/bimlflex-ss-v5-app-create-customer.png "Create Customer")
+![Create Customer](images/bimlflex-ss-v5-app-create-customer.png "Create Customer")
 
 ## BimlFlex App
 
 The BimlFlex App is used to manage the metadata for the BimlFlex solution.
 
-![BimlFlex App -border-image](images/bimlflex-ss-v5-app-dashboard.png "BimlFlex App")
+![BimlFlex App](images/bimlflex-ss-v5-app-dashboard.png "BimlFlex App")
 
 ## BimlFlex App Metadata Connection
 
 Start the BimlFlex App and configure it to connect to the BimlFlex database.
 
-![BimlFlex App Setup Pane -border-image](images/bimlflex-ss-v5-app-setup-pane.png "BimlFlex App Setup Pane")
+![BimlFlex App Setup Pane](images/bimlflex-ss-v5-app-setup-pane.png "BimlFlex App Setup Pane")
 
 The BimlFlex app allows easy metadata management and provides features such as metadata import and graphical Data Vault acceleration.
 
@@ -110,7 +110,7 @@ More information: [](xref:bimlflex-operational-reports)
 
 The Excel-based Metadata Editor is opened from the BimlFlex Ribbon tab in BimlStudio. The Excel Add-in provides an optional environment for bulk-editing metadata.
 
-![New project in Excel -border-image](images/bimlflex-ss-v5-excel-new-project.png "New project in Excel")
+![New project in Excel](images/bimlflex-ss-v5-excel-new-project.png "New project in Excel")
 
 The BimlFlex Excel metadata editor comes with an additional Excel tab in the Ribbon for interacting with BimlFlex.
 
@@ -130,7 +130,7 @@ This step includes the required and optional configurations available for the Bi
 
 The BimlStudio project options include settings such as the target SQL Server, SSIS versions, project, or package deployments for SSIS. Most of these are optional to change, but the target version and deployment method needs to be correct for the packages to open correctly in Visual Studio and run correctly on the destination SSIS server.
 
-![BimlStudio Project Configuration -border-image](images/bimlstudio-vid-v5-project-settings.gif "BimlStudio Project Configuration")
+![BimlStudio Project Configuration](images/bimlstudio-vid-v5-project-settings.gif "BimlStudio Project Configuration")
 
 #### Biml Engine
 

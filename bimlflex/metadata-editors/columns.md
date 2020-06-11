@@ -8,7 +8,6 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 
 <img
     src="images/bimlflex-app-editor-columns.png"
-    class="border-image"
     title="Columns Editor"
 />
 
@@ -16,7 +15,6 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 
 <img
     src="images/bimlflex-app-editor-columns-actions.png"
-    class="border-image"
     title="Columns Editor Actions"
 />
 
@@ -35,7 +33,6 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 
 <img
     src="images/bimlflex-app-editor-columns-fields.png"
-    class="border-image"
     title="Columns Editor Fields"
 />
 

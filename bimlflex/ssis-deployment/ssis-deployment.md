@@ -23,17 +23,17 @@ It is a recommendation to:
 
 A catalog needs to be created if the catalog node in Management Studio is empty for the target server. The mandated name for the Catalog and corresponding database is SSISDB.
 
-![-border-image](images/ssms-ssis-context-menu-create-catalog.png "Create Catalog")
+![Create Catalog](images/ssms-ssis-context-menu-create-catalog.png "Create Catalog")
 
 Once a catalog is available it is possible to create a folder for the projects. Multiple projects can be deployed to the same folder. The folder provides a common set of environments for all its projects.
 
 In general, it makes sense to deploy all projects related to the Data Warehouse to the same folder so that they can share all connection string and other configuration information. It is possible to test deploy new versions to a separate folder if there is no separate test environment.
 
-![-border-image](images/ssms-ssis-context-menu-create-environment.png "Create Environment")
+![Create Environment](images/ssms-ssis-context-menu-create-environment.png "Create Environment")
 
 For each folder, it is possible to create one or more Environments. The environments can be for testing/production distinction for jobs or for different sets of configurations needed.
 
-![-border-image](images/ssms-ssis-dialog-create-environment.png "Create Environment")
+![Create Environment Dialog](images/ssms-ssis-dialog-create-environment.png "Create Environment")
 
 Variables can be defined in the environment once it is created. These normally correspond to the parameters and connection strings defined in the SSIS project. Retaining names across the locations makes it easy to know what is what. The default name for a connection string in the SSIS project, when defined as a parameterized connection manager is
 
@@ -45,7 +45,7 @@ in this case, the default name for the source is
 
 By naming the environment variable the same it is easier to match them up later.
 
-![-border-image](images/ssms-ssis-dialog-environment-properties.png "Environment Properties")
+![Environment Properties](images/ssms-ssis-dialog-environment-properties.png "Environment Properties")
 
 Once the variables are defined the SSIS Project needs to be deployed for the connection to be configured.
 
@@ -83,7 +83,7 @@ The project is configured to match the target destination
 
 SSIS 2016 is used in the demo. The Project deployment checkbox is checked so connection strings for the whole project can be maintained through SSIS Catalog environments.
 
-![-border-image](images/bimlstudio-menu-project-configuration.png "BimlStudio Project Properties")
+![BimlStudio Project Properties](images/bimlstudio-menu-project-configuration.png "BimlStudio Project Properties")
 
 > [!TIP]
 > For additional details on configuring a BimlStudio project refer to the below guides:  
@@ -102,7 +102,7 @@ Once the sample metadata is created it can directly connect to the AdventureWork
 
 Import the metadata for all tables in scope of the `SalesLT` schema from the from the `AdventureWorksLT` source system.
 
-![-border-image](../metadata-editors/images/bimlflex-app-import-metadata.png "Import Metadata")
+![Import Metadata](../metadata-editors/images/bimlflex-app-import-metadata.png "Import Metadata")
 
 > [!TIP]
 > For additional details on importing metadata project refer to the below guide:  
@@ -112,7 +112,7 @@ Import the metadata for all tables in scope of the `SalesLT` schema from the fro
 
 Create all DW databases and tables from the BimlStudio generated scripts output.
 
-![-border-image](images/bimlstudio-context-menu-create-table-scripts.png "Create Table Scripts")
+![Create Table Scripts](images/bimlstudio-context-menu-create-table-scripts.png "Create Table Scripts")
 
 > [!TIP]
 > For additional details on generating the DDL refer to the below guide:  
@@ -156,7 +156,7 @@ Extension Point files should be named using a consistent naming convention. Thes
 
 Build command buttons
 
-![-border-image](images/bimlstudio-menu-build.png "Build Project")
+![Build Project](images/bimlstudio-menu-build.png "Build Project")
 
 > [!TIP]
 > For additional details on the different build methods refer to the below guides:  
@@ -169,7 +169,7 @@ The default destination for the output is a folder called output in the project 
 
 This location can be defined and changed in the project settings.
 
-![-border-image](images/bimlstudio-build-output-folder.png "Build Output Folder")
+![Build Output Folder](images/bimlstudio-build-output-folder.png "Build Output Folder")
 
 Once the build completes there will be a number of folders for the complete solution in the output folder. The folders in the screenshot above contain:
 
@@ -207,7 +207,7 @@ There are 3 main ways of deploying to the SSIS Catalog:
 
 From the command prompt, run `isdeploymentwizard.exe` from the `%ProgramFiles%\Microsoft SQL Server\130\DTS\Binn`. Folder (Note the path is SQL Server version specific) with the required parameters for either interactive or silence deployments
 
-![-border-image](images/isdeploymentwizard-deployment-options.png "Deployment Options for SSIS")
+![Deployment Options for SSIS](images/isdeploymentwizard-deployment-options.png "Deployment Options for SSIS")
 
 For this example, to deploy the generated ISPAC quietly to the local server EDW folder run:
 
@@ -250,9 +250,9 @@ Since the default behavior in Visual Studio versions vary as to what SQL Server 
 > [!NOTE]
 > \*: Starting with Visual Studio 2017 SSDT was integrated as selectable option during installation.
 
-![-border-image](images/ssdt-2015-batch-file.png "SSDT UI")
+![SSDT UI](images/ssdt-2015-batch-file.png "SSDT UI")
 
-![-border-image](images/ssdt-2015-menu-project-properties-target-server-version.png "Target Server Version")
+![Target Server Version](images/ssdt-2015-menu-project-properties-target-server-version.png "Target Server Version")
 
 Once the project is ready to be deployed to the SSIS catalog either use the Deploy option from the Project menu can be chosen, or right-click on the project in Solution explorer and Deploy.
 
@@ -260,29 +260,29 @@ Once the project is ready to be deployed to the SSIS catalog either use the Depl
 
 Once the project is deployed to the target server and the chosen folder it is available for review through SQL Server Management Studio
 
-![-border-image](images/ssms-ssis-tree-catalog-contents.png "Catalog Contents")
+![Catalog Contents](images/ssms-ssis-tree-catalog-contents.png "Catalog Contents")
 
 ## Configuring the Environment and connecting the project to it
 
 Once the project is in the Catalog it can be configured.
 
-![-border-image](images/ssms-ssis-context-menu-catalog-configure.png "Configure Catalog")
+![Configure Catalog](images/ssms-ssis-context-menu-catalog-configure.png "Configure Catalog")
 
 For the environment to be available to the project it needs to be associated
 
 From the configuration dialog, the project can be configured directly and associated with an environment. Enable the project to be configured from the created environment.
 
-![-border-image](images/ssms-ssis-dialog-browse-environments.png "Associate Environment to Project")
+![Associate Environment to Project](images/ssms-ssis-dialog-browse-environments.png "Associate Environment to Project")
 
 From the references tab, add a reference to the Local Folder Prod Environment.
 
 Once the reference is added, configure the parameters to be overridden from the environment.
 
-![-border-image](images/ssms-ssis-dialog-set-parameter-value.png "Environment Variable")
+![Environment Variable](images/ssms-ssis-dialog-set-parameter-value.png "Environment Variable")
 
 Once the project is configured to use an environment it will always require an environment specification to run, both through SQL Server Agent and the Catalog
 
-![-border-image](images/ssms-ssis-dialog-execute-package.png "Parameter Required")
+![Parameter Required](images/ssms-ssis-dialog-execute-package.png "Parameter Required")
 
 ## Creating an Agent Job and Configure it to Run the Batch with a Configured Environment
 
@@ -290,7 +290,7 @@ Once the project is configured and ready to be scheduled a SQL Server Agent Job 
 
 When configuring the job, specify the environment it will use when running.
 
-![-border-image](images/ssms-agent-dialog-new-job-step.png "Agent Configuration")
+![Agent Configuration](images/ssms-agent-dialog-new-job-step.png "Agent Configuration")
 
 Specifying the environment through the Agent job also means different scheduled jobs can be run using different environment configurations.
 

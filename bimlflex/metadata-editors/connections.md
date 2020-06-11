@@ -14,7 +14,6 @@ The following sections describe the UI elements of the **Connections Editor** an
 
 <img
     src="images/bimlflex-app-editor-connections.png"
-    class="border-image"
     title="Connections Editor"
 />
 
@@ -30,7 +29,6 @@ The **Details Tab** focuses on general **Connection** information and configurat
 
 <img
     src="images/bimlflex-app-editor-connections-actions.png"
-    class="border-image"
     title="Connections Editor Actions"
 />
 
@@ -57,7 +55,6 @@ The **Details Tab** focuses on general **Connection** information and configurat
 
 <img
     src="images/bimlflex-app-editor-connections-fields.png"
-    class="border-image"
     title="Objects Editor Fields"
 />
 

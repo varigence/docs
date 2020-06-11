@@ -11,7 +11,7 @@ title: Configuring a Linked Service Connection for Snowflake Data Warehouse
 
 After selecting `Snowflake` from the Linked Service Type dropdown, the form required for creating a Snowflake Linked Service will appear.
 
-![Snowflake Linked Service Form -border-image](images/bimlflex-ss-app-connections-snowflake-form.png "Snowflake Linked Service Form")
+![Snowflake Linked Service Form](images/bimlflex-ss-app-connections-snowflake-form.png "Snowflake Linked Service Form")
 
 ## Required Fields
 

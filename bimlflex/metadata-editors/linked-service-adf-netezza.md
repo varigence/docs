@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for Netezza
 
 After selecting `Netezza` from the Linked Service Type dropdown, the form required for creating a Netezza Linked Service will appear.
 
-![Netezza Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-netezza-form.png "Netezza Linked Service Form")
+![Netezza Linked Service Form](images/bimlflex-ss-app-connections-adf-netezza-form.png "Netezza Linked Service Form")
 
 ## Required Fields
 

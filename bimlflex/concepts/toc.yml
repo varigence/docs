@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+#- name: Microsoft Best Practices
+#  href: microsoft-best-practice-data-vault.md
 - name: Importing Metadata
   href: importing-metadata.md
 - name: Source to Staging Templates
@@ -10,6 +12,8 @@
   href: data-vault-templates.md
 - name: Data Mart Templates
   href: data-mart-templates.md
+- name: Implementing Snowflake in ADF
+  href: implementing-snowflake-in-adf.md
 #- name: Batch Orchestration
 #  href: batch-orchestration.md
 - name: Extension Points

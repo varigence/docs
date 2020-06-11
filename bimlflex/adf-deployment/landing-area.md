@@ -14,7 +14,7 @@ The general architecture is below with the Landing Area in the middle supporting
 
 <!-- TODO:  Add more notes about Landing Area.  Volatility/persistence.  Settings.  Etc. -->
 
-![-border-image](images/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
+![Azure Data Factory Landing Pattern](images/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
 
 > [!TIP]
 > For additional details on ADF or the Copy activity refer to the below guides:  

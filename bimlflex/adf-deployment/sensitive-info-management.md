@@ -18,7 +18,6 @@ The first time using BimlFlex, it is recommended that the user allows us to auto
 
 <img
     src="images/generatedakv.png"
-    class="border-image"
     style="border: 1px solid #CCC;"
     title="Apply Data Type Mappings Dialog Box"
 />

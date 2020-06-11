@@ -41,7 +41,6 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 
 <img 
     src="images/deploy-a-custom-template.png" 
-    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />
@@ -50,7 +49,6 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 
 <img 
     src="images/build-your-own-template.png" 
-    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />
@@ -59,7 +57,6 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 
 <img 
     src="images/load-template.png" 
-    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />
@@ -77,7 +74,6 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 
 <img 
     src="images/edit-parameters.png" 
-    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />
@@ -86,7 +82,6 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 
 <img 
     src="images/load-param-file.png" 
-    class="border-image" 
     style="border: 1px solid #CCC;" 
     title="Apply Data Type Mappings Dialog Box" 
 />

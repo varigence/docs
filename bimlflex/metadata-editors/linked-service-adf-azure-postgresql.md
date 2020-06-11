@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for Azure Database for Postg
 
 After selecting `Azure PostgreSQL` from the Linked Service Type dropdown, the form required for creating an Azure Database for PostgreSQL Linked Service will appear.
 
-![Azure Database for PostgreSQL Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-postgresql-form.png "Azure Database for PostgreSQL Linked Service Form")
+![Azure Database for PostgreSQL Linked Service Form](images/bimlflex-ss-app-connections-adf-postgresql-form.png "Azure Database for PostgreSQL Linked Service Form")
 
 ## Required Fields
 
@@ -50,7 +50,7 @@ When a key vault is used in place of a Connection String, Encryption Method deta
 
 #### Validate Server Certificate
 
-![Validate Server Certificate -border-image](images/bimlflex-ss-app-connections-adf-postgresql-validate-server-certificate.png "Validate Server Certificate Checkbox")
+![Validate Server Certificate](images/bimlflex-ss-app-connections-adf-postgresql-validate-server-certificate.png "Validate Server Certificate Checkbox")
 
 The checkbox for Validate Server Certificate will only appear when `SSL` or `Request SSL` are selected in the Encryption Method dropdown. The default value is unchecked, or false.
 

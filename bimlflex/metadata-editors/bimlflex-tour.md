@@ -15,7 +15,6 @@ The BimlFlex Menu provides quick navigation to the available editors and modelin
 **BimlFlex Menu**  
 <img
     src="images/bimlflex-app-menu.png"
-    class="border-image"
     title="BimlFlex Menu"
 />
 
@@ -40,7 +39,6 @@ The Editor Action Buttons provide quick access to common useful features managin
 **Editor Action Buttons**  
 <img
     src="images/bimlflex-app-editor-actions.png"
-    class="border-image"
     title="BimlFlex Editor Action Buttons"
 />
 
@@ -59,14 +57,12 @@ The entity list enumerates all of the available entities for the current filter 
 **Entity List - Single Column**  
 <img
     src="images/bimlflex-app-editor-list-single.png"
-    class="border-image"
     title="Entity List - Single Column"
 />
 
 **Entity List - Multi Column**  
 <img
     src="images/bimlflex-app-editor-list-multi.png"
-    class="border-image"
     title="Entity List - Multi Column"
 />
 
@@ -109,7 +105,6 @@ The long text string field can be resized by dragging the adjustment corner in t
 
 <img
     src="images/dialog-editor-button.64566.png"
-    class="border-image"
     title="Editor Dialog Button"
 />
 
@@ -122,7 +117,6 @@ The editor dialog will open with the text from the long text string field. The e
 
 <img
     src="images/dialog-editor.64566.png"
-    class="border-image"
     title="Editor Dialog"
 />
 

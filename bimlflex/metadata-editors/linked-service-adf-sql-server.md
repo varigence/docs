@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for SQL Server
 
 After selecting `SQL Server` from the Linked Service Type dropdown, the form required for creating a SQL Server Linked Service will appear.
 
-![SQL Server Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-sql-server-form.png "SQL Server Linked Service Form")
+![SQL Server Linked Service Form](images/bimlflex-ss-app-connections-adf-sql-server-form.png "SQL Server Linked Service Form")
 
 ## Required Fields
 

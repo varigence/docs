@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for Azure SQL Database
 
 After selecting `Azure SQL Database` from the Linked Service Type dropdown, the form required for creating an Azure SQL Database Linked Service will appear.
 
-![Azure SQL Database Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-sql-database-form.png "Azure SQL Database Linked Service Form")
+![Azure SQL Database Linked Service Form](images/bimlflex-ss-app-connections-adf-sql-database-form.png "Azure SQL Database Linked Service Form")
 
 ## Required Fields
 
@@ -68,7 +68,7 @@ To use Managed Identities for authentication with Azure SQL Database, they must 
 
 ### Service Principal
 
-![Service Principal -border-image](images/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
+![Service Principal](images/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
 
 To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for SQL Database Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the SQL Database Linked Service form.
 

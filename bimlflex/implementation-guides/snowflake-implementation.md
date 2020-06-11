@@ -14,9 +14,11 @@ Snowflake is a cloud data warehouse platform provided by Snowflake Computing Inc
 
 ## Initial Configuration
 
-Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.  This section will walk you through the required software and system configurations you will need to connect BimlFlex to your Snowflake environment.  
+Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.
+This section will walk you through the required software and system configurations you will need to connect BimlFlex to your Snowflake environment.  
 
 ### Implement Snowflake using Azure Data Factory
+
 > [!NOTE]
 > The example is intended to follow the guide for [Creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example).
 
@@ -29,7 +31,7 @@ The following video walks through the common steps and considerations for deploy
 When using SSIS Orchestration, BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components-ssis-only) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.  This requires that SnowSQL be installed and the appropriate connection created on the server executing the SSIS packages.  Follow the below link for instructions on how to install SnowSQL.  
 
 > [!TIP]
-> For additional details on installing SnowSQL refer to the below guide:
+> For additional details on installing SnowSQL refer to the below guide:  
 > Snowflake Docs: [Installing SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-install-config.html)  
 
 Once SnowSQL is installed a connection needs to be created in the specified `config` file.  The location may vary from depending on the installation but the default location for Windows is `%USERPROFILE%\.snowsql\`.  Open the file with any text editor and insert a connection following the template below.  
@@ -65,7 +67,7 @@ region = west-us-2.azure
 ***
 
 > [!TIP]
-> For additional details on finding the associated values or configuring SnowSQL refer to the below guides:
+> For additional details on finding the associated values or configuring SnowSQL refer to the below guides:  
 > Snowflake Docs: [Logging into Snowflake](https://docs.snowflake.com/en/user-guide/connecting.html)  
 > Snowflake Docs: [Configuring SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-config.html)  
 
@@ -74,7 +76,7 @@ region = west-us-2.azure
 The ODBC driver is only required if using SSIS orchestration to connect to a Snowflake `Source System`.  Currently Snowflake is not supported as a `Source System` when using ADF orchestration.  
 
 > [!TIP]
-> For additional details on installing and configuring and ODBC driver and DSN refer to the below guides:
+> For additional details on installing and configuring and ODBC driver and DSN refer to the below guides:  
 > Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
 > Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
 > Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)  

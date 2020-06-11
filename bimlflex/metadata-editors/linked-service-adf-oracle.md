@@ -11,7 +11,7 @@ title: Configuring an ADF Linked Service Connection for Oracle
 
 After selecting `Oracle` from the Linked Service Type dropdown, the form required for creating an Oracle Linked Service will appear.
 
-![Oracle Linked Service Form -border-image](images/bimlflex-ss-app-connections-adf-oracle-form.png "Oracle Linked Service Form")
+![Oracle Linked Service Form](images/bimlflex-ss-app-connections-adf-oracle-form.png "Oracle Linked Service Form")
 
 ## Required Fields
 
