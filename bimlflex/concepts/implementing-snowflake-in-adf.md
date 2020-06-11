@@ -64,7 +64,7 @@ The connection settings remain standard as per previously uploaded BimlFlex feat
 
 ![Standard Connection Settings 3](images/connection-settings-3.png "Standard Connection Settings 3")
 
-The simplicity of selecting settings paired with the intelligence of BimlFlex to execute the appropriate functions greatly streamlines the process of converging any solution into Snowflake.
+The simplicity of selecting settings, paired with the intelligence of BimlFlex to execute the appropriate functions, greatly streamlines the process of converging any solution into Snowflake.
 
 Prior to building out a solution BimlFlex also allows the opportunity to configure batches, assign batches to different compute warehouses, or adjust scaling up or down, from within the BimlFlex **Batches** menu.
 
@@ -122,3 +122,8 @@ As a result, BimlFlex offers the ability to run all code using whatever orchestr
 >* BimlScript YouTube Channel: [Configure Snowflake Project](https://www.youtube.com/watch?v=yPWKs65JSFo&t=1s)
 >* BimlScript YouTube Channel: [Snowflake Source to Stage](https://www.youtube.com/watch?v=9y5sGkPrfWU)
 >* BimlScript YouTube Channel: [Snowflake Parallel Loading with Integration Keys](https://www.youtube.com/watch?v=_bQ4lact0Tw)
+>
+>For additional documentation regarding Snowflake configuration, see:
+>
+>* BimlFlex Docs: [Snowflake Overview](xref:snowflake-implementation)
+>
