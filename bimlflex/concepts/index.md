@@ -28,3 +28,9 @@ This section covers various BimlFlex Concepts that are important to understand w
 ## Delete Detection
 
 * [](xref:bimlflex-delete-detection)
+
+<!-- TODO: await version with full support for new settings before inclusion
+## Other features
+
+* [](xref:bimlflex-ssdt-project)
+-->
