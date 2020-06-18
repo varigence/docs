@@ -11,10 +11,10 @@ BimlExpress is the best way to write Biml for free and become accustomed to the 
 
 ## BimlExpress Capabilities
 
-BimlExpress inherently features full support for Microsoft Visual Studio 2010-2019, including the most recent Version 16.6. BimlExpress is also built to work with all versions of SQL Server.
+BimlExpress inherently features full support for Microsoft Visual Studio 2010-2019, including the most recent Version 16.6. BimlExpress is built to work with all versions of SQL Server.
 BimlExpress is also subject to aligned ship cycles, ensuring that release updates continue to work with the most recent versions of any preferred database management system(s).
 
-Users can utilize BimlExpress to generate large numbers of packages while writing minimal amount of code, with improved syntax highlighting and autocomplete functionality.
+Users can utilize BimlExpress to generate large numbers of SSIS packages while writing minimal amount of code, with improved syntax highlighting and autocomplete functionality.
 The ability to create Biml files, edit them within a custom code editor, and generate SSIS packages has never been more streamlined.
 BimlExpress is the best way to write Biml code for free in a program that stays current with powerful database management systems being used today.
 
