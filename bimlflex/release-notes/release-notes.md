@@ -21,6 +21,38 @@ Build 5.0.64661.0, release date: 4 May 2020
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
+<!-- TODO: await next release
+
+## Build 5.0.nnnnn.0, release date: nn mmmm 2020
+
+* Add: New Project settings for SSDT Project Control
+* Add:
+* Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
+
+The following settings have been added to the Ssdt group:
+
+* SsdtIncludeExternalTables
+* SsdtIncludeMasterKey
+* SsdtIncludeCredential
+* SsdtIncludeExternalDataSource
+* SsdtIncludeExternalFileFormat
+* SsdtOverwriteExternalTableDefaults
+* SsdtDefaultMasterKey
+* SsdtDefaultCredential
+* SsdtDefaultExternalDataSource
+* SsdtDefaultExternalFileFormat
+
+More information on these settings: [](xref:bimlflex-ssdt-project)
+
+Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation and additional defaults for dependency objects.
+
+download links to this build:
+
+* [bimlflexdevsetup_5.0.nnnnn.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.nnnnn.0.exe)
+* [bimlflexruntimesetup_5.0.nnnnn.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.nnnnn.0.exe)
+
+-->
+
 ## BimlFlex 2020 Feature Highlights
 
 * Expanded support for Azure Data Factory
