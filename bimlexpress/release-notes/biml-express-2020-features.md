@@ -3,9 +3,9 @@ uid: biml-express-2020-features
 title: BimlExpress 2020 R1 Features and Highlights
 ---
 
-# BimlExpress 2020 R1 Features and Highlights 
+# BimlExpress 2020 R1 Features and Highlights
 
-BimlExpress, the free and powerful Visual Studio add-in, has been updated and overhauled with a whole host of new features for the 2020 R2 rollout, designed to enhance the entire Biml development experience.
+BimlExpress, the free and powerful Visual Studio add-in, has been updated and overhauled with a whole host of new features for the 2020 R1 rollout, designed to enhance the entire Biml development experience.
 
 BimlExpress is the best way to write Biml for free and become accustomed to the entire powerful suite of Biml products offered by Varigence.
 
@@ -23,6 +23,9 @@ BimlExpress is the best way to write Biml code for free in a program that stays 
 Significant changes have been made between BimlExpress 2019 R1 and the recent BimlExpress 2020 R1, improving performance of BimlExpress itself, Visual Studio 2019 integration, and the generation of SSIS packages.
 
 BimlExpress 2020 R1 is now available for free download here:
+
+>[!NOTE]
+>Insert link once available.
 
 For complete release notes, see below:
 

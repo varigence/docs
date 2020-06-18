@@ -3,7 +3,9 @@ uid: bfx-adf-feature-promotions
 title: BimlFlex 2020 and Azure Data Factory Featured Integrations 
 ---
 
-# BimlExpress 2020 and Azure Data Factory Featured Integrations
+# BimlFlex 2020 and Azure Data Factory Featured Integrations
+
+![BimlFlex 2020 & Azure Data Factory Featured Integrations](images\bfx-adf-featured-2020.png "BimlFlex 2020 & Azure Data Factory Featured Integrations")
 
 Azure Data Factory, the Microsoft cloud service built for complex ETL, ELT, and data integration projects, has become a flagship Platform-as-a-Service (PaaS) for contemporary data engineers due to its powerful systems that provide comprehensive end-to-end services, data-driven workflows, and scale data transformation processes. BimlFlex, the premiere Data Warehouse Automation (DWA) service from Varigence, seeks to continue to regularly implement, improve, and deploy new features that integrate seamlessly with the dominant presence of Azure Data Factory. The combination ADF's powerful cloud-based platform with the flexible and customizable framework provided by BimlFlex will enable your organization to expedite warehouse development, increase development productivity, and proactively adapt to changing business insights, without ever having to write a single line of code.
 
@@ -24,16 +26,16 @@ BimlFlex has added support for Azure Data Factory's ability to use Flat Files as
 
 ## Support for Dataflow
 
-Mapping dataflows is a visual depiction of data transformations, allowing users to develop data transformation logic without having to write any code. BimlExpress 2020 R1 has been optimized to support Azure Data Factory's data flows, including code translation, path optimization, and execution of routine data flow tasks.
+Mapping dataflows is a visual depiction of data transformations, allowing users to develop data transformation logic without having to write any code. BimlFlex 2020 R1 has been optimized to support Azure Data Factory's data flows, including code translation, path optimization, and execution of routine data flow tasks.
 
 ## Ability to Specify Schema on Dataset
 
-BimlExpress 2020 and Azure Data Factory now allow users to specific schema on a dataset. When copying data from a source, users may specify explicit schema mapping, allowing the ability to customize mappings based on the needs of your organization and dataset.
+BimlFlex 2020 and Azure Data Factory now allow users to specific schema on a dataset. When copying data from a source, users may specify explicit schema mapping, allowing the ability to customize mappings based on the needs of your organization and dataset.
 
 ## Ability Specify Additional Columns Collections for Copy Activities
 
 Now featured is the ability to specify additional columns upon collection of specific sources in Copy activities.
-Traditionally if users desired a specific column in the destination but it did not exist in the source, there was little recourse to transform that data. BimlExpress and Azure Data Factory allow users to add additional column(s) by putting the value as a data driven expression that will calculate it in its current context and add the column(s) to the destination.
+Traditionally if users desired a specific column in the destination but it did not exist in the source, there was little recourse to transform that data. BimlFlex and Azure Data Factory allow users to add additional column(s) by putting the value as a data driven expression that will calculate it in its current context and add the column(s) to the destination.
 
 ## Added Support for New Activities
 
