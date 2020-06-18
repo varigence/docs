@@ -27,7 +27,7 @@ Build 5.0.64661.0, release date: 4 May 2020
 
 * Add: New Project settings for SSDT Project Control
 * Add:
-* Update: 
+* Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
 
 The following settings have been added to the Ssdt group:
 
