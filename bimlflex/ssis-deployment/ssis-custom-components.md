@@ -84,31 +84,3 @@ The following components are included in the SSIS custom components for SQL Serv
 The components are delivered as a SQL Server version specific file installation that needs to be deployed to any computer running or building BimlFlex SSIS packages.
 The installation is provided as a script file for easy installation automation for SQL servers.
 The components work in conjunction with the BimlCatalog orchestration and runtime database to store audit and error information.
-
-## Icons
-
-The following Icons are used for the custom components
-
-### Audit Row
-
-<img src="../user-guide/images/bimlflex-v5-cc-auditrow.ico" alt="AuditRow Icon" width="10%"/>
-
-### Error Description
-
-<img src="../user-guide/images/bimlflex-v5-cc-errordescription.ico" alt="ErrorDescription Icon" width="10%"/>
-
-### Hash / Hash Dynamic
-
-<img src="../user-guide/images/bimlflex-v5-cc-hash.ico" alt="Hash Icon" width="10%"/>
-
-### Hash Dual
-
-<img src="../user-guide/images/bimlflex-v5-cc-hashdual.ico" alt="HashDual Icon" width="10%"/>
-
-### Hash SQL
-
-<img src="../user-guide/images/bimlflex-v5-cc-hashsql.ico" alt="HashSql Icon" width="10%"/>
-
-### Row Count
-
-<img src="../user-guide/images/bimlflex-v5-cc-RowCount.ico" alt="RowCount Icon" width="10%"/>
