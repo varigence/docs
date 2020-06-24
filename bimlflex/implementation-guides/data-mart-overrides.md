@@ -33,14 +33,14 @@ For the Data Mart this is either the *DIM ATTRIBUTE* or *FACT ATTRIBUTE* fields.
 
 #### [Attribute Value List](#tab/configuration-attribute-values)
 
-| Value   | Description                                                                                                   |
-| ------- | ------------------------------------------------------------------------------------------------------------- |
-| Ignore  | Do not add this **Configuration** to the applied Concept.                                                     |
-| Default | Calculate using the value in the *CONFIGURATION DEFAULT* field.                                               |
-| Derived | Calculate using the value in the *SQL SOURCE EXPRESSION* **\*** or *SSIS DATAFLOW EXPRESSION* **\*\*** field. |
-| Hash    | Apply hashing logic to the applicable columns.                                                                |
-| Source  | Retrieve from a column in the Source with the same name as the *CONFIGURATION VALUE*.                         |
-| Target  | Retrieve from a column in the Target with the same name as the *CONFIGURATION VALUE*.                         |
+| Value   | Description                                                                                            |
+| ------- | ------------------------------------------------------------------------------------------------------ |
+| Ignore  | Do not add this **Configuration** to the applied Concept.                                              |
+| Default | Calculate using the value in the *CONFIGURATION DEFAULT* field.                                        |
+| Derived | Calculate using the value in the *SQL SOURCE EXPRESSION* `*` or *SSIS DATAFLOW EXPRESSION* `**` field. |
+| Hash    | Apply hashing logic to the applicable columns.                                                         |
+| Source  | Retrieve from a column in the Source with the same name as the *CONFIGURATION VALUE*.                  |
+| Target  | Retrieve from a column in the Target with the same name as the *CONFIGURATION VALUE*.                  |
 
 > [!NOTE]
 > \*: When using a `SQL Based ELT` **Connection**.
@@ -73,69 +73,69 @@ The below tables outline common **Configurations** used in the Data Mart and whi
 
 ### [Description](#tab/configuration-description)
 
-| Configuration           | Description                                                                                        |
-| ----------------------- | -------------------------------------------------------------------------------------------------- |
-| RowStartDate            | Defines the start of time definition for a row in the data warehouse.                              |
-| RowEndDate              | Defines the end of time definition for a row in the data warehouse.                                |
-| RowIsCurrent            | Flag to set if the row was inferred                                                                |
-| RowIsInferred **\***    | Flag to set if the row was inferred.                                                               |
-| RowHashType1 **\*\***   | Defines the expression used to derive a row hash for type 1 attributes in a destination dimension. |
-| RowHashType2 **\*\*\*** | Defines the expression used to derive a row hash for type 2 attributes in a destination dimension. |
+| Configuration      | Description                                                                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------- |
+| RowStartDate       | Defines the start of time definition for a row in the data warehouse.                              |
+| RowEndDate         | Defines the end of time definition for a row in the data warehouse.                                |
+| RowIsCurrent       | Flag to set if the row was inferred                                                                |
+| RowIsInferred `*`  | Flag to set if the row was inferred.                                                               |
+| RowHashType1 `**`  | Defines the expression used to derive a row hash for type 1 attributes in a destination dimension. |
+| RowHashType2 `***` | Defines the expression used to derive a row hash for type 2 attributes in a destination dimension. |
 
 ### [Value](#tab/configuration-value)
 
-| Configuration           | Value (Column Name) |
-| ----------------------- | ------------------- |
-| RowStartDate            | FlexRowStartDate    |
-| RowEndDate              | FlexRowEndDate      |
-| RowIsCurrent            | FlexRowIsCurrent    |
-| RowIsInferred **\***    | FlexRowIsInferred   |
-| RowHashType1 **\*\*\*** | FlexRowHashType1    |
-| RowHashType2 **\*\*\*** | FlexRowHashType2    |
+| Configuration      | Value (Column Name) |
+| ------------------ | ------------------- |
+| RowStartDate       | FlexRowStartDate    |
+| RowEndDate         | FlexRowEndDate      |
+| RowIsCurrent       | FlexRowIsCurrent    |
+| RowIsInferred `*`  | FlexRowIsInferred   |
+| RowHashType1 `**`  | FlexRowHashType1    |
+| RowHashType2 `***` | FlexRowHashType2    |
 
 ### [Data Type](#tab/configuration-data-type)
 
-| Configuration           | Data Type                      |
-| ----------------------- | ------------------------------ |
-| RowStartDate            | DataType="DateTime2" Scale="7" |
-| RowEndDate              | DataType="DateTime2" Scale="7" |
-| RowIsCurrent            | DataType="Boolean"             |
-| RowIsInferred **\***    | DataType="Boolean"             |
-| RowHashType1 **\*\***   | DataType="Binary" Length="20"  |
-| RowHashType2 **\*\*\*** | DataType="Binary" Length="20"  |
+| Configuration      | Data Type                      |
+| ------------------ | ------------------------------ |
+| RowStartDate       | DataType="DateTime2" Scale="7" |
+| RowEndDate         | DataType="DateTime2" Scale="7" |
+| RowIsCurrent       | DataType="Boolean"             |
+| RowIsInferred `*`  | DataType="Boolean"             |
+| RowHashType1 `**`  | DataType="Binary" Length="20"  |
+| RowHashType2 `***` | DataType="Binary" Length="20"  |
 
 ### [Default](#tab/configuration-default)
 
-| Configuration           | Default      | Implied Conversion                         |
-| ----------------------- | ------------ | ------------------------------------------ |
-| RowStartDate            | '1900-01-01' | `1900-01-01 00:00:00.000000`               |
-| RowEndDate              | '9999-12-31' | `9999-12-31 00:00:00.000000`               |
-| RowIsCurrent            | 1            |                                            |
-| RowIsInferred **\***    | 0            |                                            |
-| RowHashType1 **\*\***   | 0            | `0x00000000000000000000000000000000000000` |
-| RowHashType2 **\*\*\*** | 0            | `0x00000000000000000000000000000000000000` |
+| Configuration      | Default      | Implied Conversion                         |
+| ------------------ | ------------ | ------------------------------------------ |
+| RowStartDate       | '1900-01-01' | `1900-01-01 00:00:00.000000`               |
+| RowEndDate         | '9999-12-31' | `9999-12-31 00:00:00.000000`               |
+| RowIsCurrent       | 1            |                                            |
+| RowIsInferred `*`  | 0            |                                            |
+| RowHashType1 `**`  | 0            | `0x00000000000000000000000000000000000000` |
+| RowHashType2 `***` | 0            | `0x00000000000000000000000000000000000000` |
 
-### [Expression](#tab/configuration-default)
+### [Expression](#tab/configuration-expression)
 
-| Configuration           | SQL Source Expression                               | SSIS Dataflow Expression                      |
-| ----------------------- | --------------------------------------------------- | --------------------------------------------- |
-| RowStartDate            | GETDATE()                                           | (DT_DBTIMESTAMP2, 7)GETDATE()                 |
-| RowEndDate              | CONVERT(DATETIME2(7), '9999-12-31 00:00:00.000000') | (DT_DBTIMESTAMP2, 7)"9999-12-31 00:00:00.000" |
-| RowIsCurrent            | CONVERT(BIT, 1)                                     | true                                          |
-| RowIsInferred **\***    | CONVERT(BIT, 0)                                     | false                                         |
-| RowHashType1 **\*\***   |                                                     | [vck@@this1]                                  |
-| RowHashType2 **\*\*\*** |                                                     | [vck@@this1]                                  |
+| Configuration      | SQL Source Expression                               | SSIS Dataflow Expression                      |
+| ------------------ | --------------------------------------------------- | --------------------------------------------- |
+| RowStartDate       | GETDATE()                                           | (DT_DBTIMESTAMP2, 7)GETDATE()                 |
+| RowEndDate         | CONVERT(DATETIME2(7), '9999-12-31 00:00:00.000000') | (DT_DBTIMESTAMP2, 7)"9999-12-31 00:00:00.000" |
+| RowIsCurrent       | CONVERT(BIT, 1)                                     | true                                          |
+| RowIsInferred `*`  | CONVERT(BIT, 0)                                     | false                                         |
+| RowHashType1 `**`  |                                                     | [vck@@this1]                                  |
+| RowHashType2 `***` |                                                     | [vck@@this1]                                  |
 
 ### [Attributes](#tab/configuration-concept-attributes)
 
-| Configuration           | Dim Attribute | Fact Attribute |
-| ----------------------- | ------------- | -------------- |
-| RowStartDate            | Derived       | Ignore         |
-| RowEndDate              | Derived       | Ignore         |
-| RowIsCurrent            | Derived       | Ignore         |
-| RowIsInferred **\***    | Derived       | Ignore         |
-| RowHashType1 **\*\***   | Hash          | Hash           |
-| RowHashType2 **\*\*\*** | Hash          | Ignore         |
+| Configuration      | Dim Attribute | Fact Attribute |
+| ------------------ | ------------- | -------------- |
+| RowStartDate       | Derived       | Ignore         |
+| RowEndDate         | Derived       | Ignore         |
+| RowIsCurrent       | Derived       | Ignore         |
+| RowIsInferred `*`  | Derived       | Ignore         |
+| RowHashType1 `**`  | Hash          | Hash           |
+| RowHashType2 `***` | Hash          | Ignore         |
 
 ***
 
@@ -194,6 +194,8 @@ Optional methods are also provided below to highlight where you can view a **Con
 ### [From Column](#tab/existing-override-column)
 
 <!-- TODO: Text: Not supported for **Configurations**. -->
+
+***
 
 ## Example Scenarios
 
