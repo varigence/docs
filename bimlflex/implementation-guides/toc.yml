@@ -13,7 +13,11 @@
 - name: SSIS on-premises SQL Server
   href: ssis-on-prem-sql-server.md
 
-# Other Concepts
+# Data Mart
+- name: Data Mart Configurations
+  href: data-mart-overrides.md
+
+  # Other Concepts
 #- name: Export to File
 #  href: export-to-file.md
 - name: Master Data Services
