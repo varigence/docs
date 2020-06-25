@@ -5,8 +5,6 @@ title: BimlFlex 2020 and Azure Data Factory Featured Integrations
 
 # BimlFlex 2020 R2 and Azure Data Factory Featured Integrations
 
-![BimlFlex 2020 & Azure Data Factory Featured Integrations](images\bfx-adf-featured-2020.png "BimlFlex 2020 & Azure Data Factory Featured Integrations")
-
 Azure Data Factory, the Microsoft cloud service built for complex ETL, ELT, and data integration projects, has become a flagship Platform-as-a-Service (PaaS) for contemporary data engineers due to its powerful systems that provide comprehensive end-to-end services, data-driven workflows, and scale data transformation processes. BimlFlex, the premiere Data Warehouse Automation (DWA) service from Varigence, seeks to continue to regularly implement, improve, and deploy new features that integrate seamlessly with the dominant presence of Azure Data Factory. The combination of Azure Data Factory's powerful cloud-based platform with the flexible and customizable framework provided by BimlFlex will enable your organization to expedite warehouse development, increase development productivity, and proactively adapt to changing business insights, without ever having to write a single line of code.
 
 ## New Features in BimlFlex 2020 R2
@@ -15,14 +13,14 @@ In the upcoming BimlFlex 2020 R2 Rollout, users can expect the following new fea
 
 * Flat file source and dataset support
 * Support for dataflow
-* Ability to specify schema on dataset
+* Ability to specify schema on datasets
 * Ability to specify additional columns collections for Copy activities
 * Added support for new activities
 * Added support for new connectors and connections
 
 ## Flat File Source and Dataset Support
 
-BimlFlex has added support for Azure Data Factory's ability to use flat files in datasets and sources for Copy activities, regardless of whether the data is stored on premises or in the cloud.
+BimlFlex has added support for Azure Data Factory's ability to use flat files in datasets and sources for Copy activities, regardless of whether the data is stored on-premises or in the cloud.
 
 ## Support for Dataflow
 
