@@ -165,7 +165,7 @@ A **Configuration Override** can be configured at the **Connection**, **Batch**,
 ### [Standard Method](#tab/configuration-override)
 
 A **Configuration** can be quickly added from [**Configuration Editor**](xref:configurations).
-If a field supports and override it will have clickable button with the following icon (![Overriding Possible Icon](../metadata-editors/images/svg-icons/attributes.svg "Overriding Possible Icon")).
+If a field supports and override it will have clickable button with the following icon (![Overriding Possible Icon -icon-inline](../metadata-editors/images/svg-icons/attributes.svg "Overriding Possible Icon")).
 
 ![Overriding Possible](images\bfx-configuration-override-support.png "Overriding Possible")
 
@@ -180,7 +180,7 @@ Enter the value to be used as the **Configuration Override** in the *ATTRIBUTE V
 ![Final Add Attributes Dialog](images\bfx-configuration-add-attribute-end.png "Final Add Attributes Dialog")
 
 > [!IMPORTANT]
-> Don't forget to click the **Save Button** ((![Save Icon](../metadata-editors/images/svg-icons/save.svg "Save Icon")) to record the changes.
+> Don't forget to click the **Save Button** ((![Save Icon -icon-inline](../metadata-editors/images/svg-icons/save.svg "Save Icon")) to record the changes.
 >
 
 ### [Advanced Method](#tab/configuration-override-advanced)
@@ -188,7 +188,7 @@ Enter the value to be used as the **Configuration Override** in the *ATTRIBUTE V
 The following method is classified as advanced due to the *ATTRIBUTE* field needing to be manually entered.
 The advanced method is not recommended to be used unless the user is completely familiar with the `{ConfigurationKey}_{FieldName}` naming pattern.
 
-When using any entity editor that support the **Attributes Tab** the **Add** (![Add Icon](../metadata-editors/images/svg-icons/add.svg "Add Icon")) button can be used to create an **Attribute**.
+When using any entity editor that support the **Attributes Tab** the **Add** (![Add Icon -icon-inline](../metadata-editors/images/svg-icons/add.svg "Add Icon")) button can be used to create an **Attribute**.
 
 ![Initial Add Attribute From Project](images\bfx-configuration-add-attribute-project.png "Initial Add Attribute From Project")
 
@@ -210,16 +210,21 @@ Though they do not appear as selectable values, it can still be manually entered
 
 ## Checking if an Override Exists
 
-There are various areas within BimlFlex where you can view any existing **Configuration Override**.
-When wanting to get a global view of what exists, the **Configuration Editor** is recommended as it will give you a complete view of all **Configuration Overrides** for a specific **Configuration**.
-Optional methods are also provided below to highlight where you can view a **Configuration Override** in other areas of navigation.
+A **Configuration Override** is persisted as a unique type of **Attribute**.
+Any location in BimlFlex that would list out the associated **Attributes** will also list the **Configuration Overrides** along with the **Standard Attributes**.
+
+It is recommended that when specifically looking for a **Configuration Override** that the the **Configuration Editor** is used.
+This will give a complete view of all **Configuration Overrides** for a specific **Configuration**.
+
+Examples are given below that represents how a **Configuration Override** would be shown across the **Attributes Tab**.
+Overrides have been defined at each supported level to better communicate which **Configuration Override** will appear in each associated entity editor.
 
 > [!NOTE]
-> A **Configuration Override** is persisted as a unique type of **Attribute**.
-> The *ATTRIBUTE* field uses a `{ConfigurationKey}_{FieldName}` naming pattern to identify the **Configuration Override**.
-> The value to be used as the override is then entered into the *ATTRIBUTE VALUE* field.
+> A **Configuration Override** can be identified as and **Attribute** with a `{ConfigurationKey}_{FieldName}` naming pattern.
+> Outside of the **Configuration Editor** this will have to be manaully identified as they will be displayed alongside **Standard Attributes**.
 >
-> This is different from a **Standard Attribute** and should not be confused or mistaken as improperly entered **Attribute**.
+> The value assigned to the override is entered into the *ATTRIBUTE VALUE* field.
+> This is different from a **Standard Attribute** which follows a different pattern.
 >
 
 ### [By Configuration](#tab/existing-override)
@@ -242,7 +247,7 @@ Optional methods are also provided below to highlight where you can view a **Con
 
 ![Overrides by Object](images\bfx-configuration-view-by-object.png "Overrides by Object")
 
-### [All Attributes](#tab/existing-override-object)
+### [All Attributes](#tab/existing-override-attributes)
 
 ![Overrides by Attribute](images\bfx-configuration-view-by-attribute.png "Overrides by Attribute")
 
@@ -254,11 +259,17 @@ Optional methods are also provided below to highlight where you can view a **Con
 
 ## Example Scenarios
 
-<!-- TODO: Text: Intro calling out that we will be going through some use can scenarios -->
+To better communicate the use of **Configuration Overrides** in practice, the functional scenarios below have been provided.
+These cover a few real world examples that require the use of a **Configuration Override** along with the steps required to implement them.
 
 ### Overriding Type 2 Logic
 
-<!-- TODO: Text: Set the scenario that you have a complex Type 2 configuration and can not use the standard delta pattern. -->
+> **Scenario**
+> The business has another source handling the management of effectivity dates for a specific dimension.
+> These effectivity dates should be used in place of standard `RowStartDate`, `RowEndDate` and `RowIsCurrent` **Configurations**.
+> This is a scenario that only applies to a single dimension and all other dimensions with a Type 2 **Column** should use the standard pattern of terminating effectivity on load of the dimension.
+>
+
 <!-- TODO: Text: Explain that the following configuration overrides BimlFlex Type 2 logic and outsources the calculation. -->
 <!-- TODO: Text: Walk through configuring the view. -->
 <!-- TODO: Text: Show required overrides. -->
@@ -266,7 +277,12 @@ Optional methods are also provided below to highlight where you can view a **Con
 
 ### One Time Historic Load
 
-<!-- TODO: Text: Set the scenario that you have a history from another source and want to migrate to BimlFlex. -->
+> **Scenario**
+> The business is migrating creation and maintenance of an existing Type 2 Dimension to an identical one to be maintained in BimlFlex.
+> Historic data for the dimensional attributes should be preserved, though the specific Surrogate Key values do not need to be maintained and can be regenerated.
+> Once historic data is loaded the standard pattern of terminating effectivity on load should be applied.
+>
+
 <!-- TODO: Text: Reference the prior scenario step for step and then do the following after load: -->
 <!-- TODO: Text: Removed/delete the Configuration Overrides. -->
 <!-- TODO: Text: ALTER VIEW to point to not historic/live source. -->
