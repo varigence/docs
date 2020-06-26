@@ -5,8 +5,8 @@ title: Data Mart Configurations and Overrides
 
 # BimlFlex Configurations and the Data Mart
 
-**Configurations** are used by BimlFlex to apply and drive default behavior across varying data architecture concepts.
-At a high level, these will control what concepts they get applied to and how they are calculated or retrieved.
+BimlFlex **Configurations** are used to apply and drive default behavior across multiple data architecture concepts.
+At a high level, **Configuration** values control where/when they get applied and how they are calculated.
 
 > [!TIP]
 > For additional details on managing **Configuration**, **Attributes** and **Configuration Overrides** refer to the below guides:
@@ -18,16 +18,106 @@ At a high level, these will control what concepts they get applied to and how th
 > BimlFlex Docs: [](xref:attributes)
 >
 
+## Common Configurations
+
+The below tabs outline common **Configurations** used in the Data Mart along with recommended field values.
+These are the recommendations only if choosing to enable the **Configuration(s)** and if no prior standard is in place.
+These can be adjusted to fit an organization's specific data standards.
+
+### [Description](#tab/configuration-description)
+
+| Configuration      | Description                                                             |
+| ------------------ | ----------------------------------------------------------------------- |
+| RowStartDate       | Defines the start of time definition for a row in the data warehouse.   |
+| RowEndDate         | Defines the end of time definition for a row in the data warehouse.     |
+| RowIsCurrent       | Flag to set if the row is current.                                      |
+| RowIsInferred `*`  | Flag to set if the row is inferred.                                     |
+| RowHashType1 `**`  | Defines the expression used to derive a row hash for type 1 attributes. |
+| RowHashType2 `***` | Defines the expression used to derive a row hash for type 2 attributes. |
+
+### [Value](#tab/configuration-value)
+
+| Configuration      | Value (Column Name) |
+| ------------------ | ------------------- |
+| RowStartDate       | FlexRowStartDate    |
+| RowEndDate         | FlexRowEndDate      |
+| RowIsCurrent       | FlexRowIsCurrent    |
+| RowIsInferred `*`  | FlexRowIsInferred   |
+| RowHashType1 `**`  | FlexRowHashType1    |
+| RowHashType2 `***` | FlexRowHashType2    |
+
+### [Data Type](#tab/configuration-data-type)
+
+| Configuration      | Data Type                      |
+| ------------------ | ------------------------------ |
+| RowStartDate       | DataType="DateTime2" Scale="7" |
+| RowEndDate         | DataType="DateTime2" Scale="7" |
+| RowIsCurrent       | DataType="Boolean"             |
+| RowIsInferred `*`  | DataType="Boolean"             |
+| RowHashType1 `**`  | DataType="Binary" Length="20"  |
+| RowHashType2 `***` | DataType="Binary" Length="20"  |
+
+### [Default](#tab/configuration-default)
+
+| Configuration      | Default      | Implied Conversion                         |
+| ------------------ | ------------ | ------------------------------------------ |
+| RowStartDate       | '1900-01-01' | `1900-01-01 00:00:00.000000`               |
+| RowEndDate         | '9999-12-31' | `9999-12-31 00:00:00.000000`               |
+| RowIsCurrent       | 1            |                                            |
+| RowIsInferred `*`  | 0            |                                            |
+| RowHashType1 `**`  | 0            | `0x00000000000000000000000000000000000000` |
+| RowHashType2 `***` | 0            | `0x00000000000000000000000000000000000000` |
+
+### [Expression](#tab/configuration-expression)
+
+| Configuration      | SQL Source Expression               | SSIS Dataflow Expression          |
+| ------------------ | ----------------------------------- | --------------------------------- |
+| RowStartDate       | GETDATE()                           | (DT_DBTIMESTAMP2, 7)GETDATE()     |
+| RowEndDate         | CONVERT(DATETIME2(7), '9999-12-31') | (DT_DBTIMESTAMP2, 7)"9999-12-31") |
+| RowIsCurrent       | CONVERT(BIT, 1)                     | true                              |
+| RowIsInferred `*`  | CONVERT(BIT, 0)                     | false                             |
+| RowHashType1 `**`  |                                     | [vck@@this1]                      |
+| RowHashType2 `***` |                                     | [vck@@this1]                      |
+
+### [Attributes](#tab/configuration-concept-attributes)
+
+| Configuration      | Dim Attribute | Fact Attribute |
+| ------------------ | ------------- | -------------- |
+| RowStartDate       | Derived       | Ignore         |
+| RowEndDate         | Derived       | Ignore         |
+| RowIsCurrent       | Derived       | Ignore         |
+| RowIsInferred `*`  | Derived       | Ignore         |
+| RowHashType1 `**`  | Hash          | Hash           |
+| RowHashType2 `***` | Hash          | Ignore         |
+
+***
+
+> [!NOTE]
+> \*: Requires the **Setting** `DmInferDim` to be enabled prior to use.
+>
+> \*\*: Only used if there is a **Column** with a *CHANGE TYPE* of `Type 1` in the **Object**.
+>
+> \*\*\*: Only used if there is a **Column** with a *CHANGE TYPE* of `Type 2` in the **Object**.
+>
+
 ## Setting a Configuration for the Data Mart
 
-Regardless of what Integration Stage you are configuring, all **Configurations** are set in the [**Configuration Editor**](xref:configurations).
+All **Configurations** are global and set in the [**Configuration Editor**](xref:configurations).
+These can be enabled and disable for each data architecture concept.
+
+> [!WARNING]
+> **Configurations** are global, so be aware of prior configurations before changing any of the mentioned values.
+> Some **Configurations**, such as `RowIsCurrent`, may already be being used by the Staging or Data Vault Integration Stages.
+> Any changes to a field value will impact all Integration Stages where the **Configuration** is enabled.
+> If logic needs to be different between Integration Layers consider a project level [**Configuration Override**](#overriding-configurations).
+>
 
 ### Enabling A Configuration
 
 In order for a **Configuration** to be applied the associated *{Concept} ATTRIBUTE* will need to be configured.
-For the Data Mart this is either the *DIM ATTRIBUTE* or *FACT ATTRIBUTE* fields.
+For the Data Mart this is either the *DIM ATTRIBUTE* or *FACT ATTRIBUTE* fields for a Dimension or Fact respectively.
 
-#### [Example Image](#tab/snowsql-connection-template)
+#### [Example Image](#tab/configuration-example-image)
 
 ![Enabling A Configuration for Dimensions](images\bfx-configuration-enable-example.png "Enabling A Configuration for Dimensions")
 
@@ -66,93 +156,11 @@ If required, a [**Configuration Override**](#configuring-an-override) can be app
 > BimlFlex Docs: [](xref:bimlflex-metadata-configurations)
 >
 
-## Applicable Configurations
-
-The below tables outline common **Configurations** used in the Data Mart and which ones have associated **Settings**.
-
-
-### [Description](#tab/configuration-description)
-
-| Configuration      | Description                                                                                        |
-| ------------------ | -------------------------------------------------------------------------------------------------- |
-| RowStartDate       | Defines the start of time definition for a row in the data warehouse.                              |
-| RowEndDate         | Defines the end of time definition for a row in the data warehouse.                                |
-| RowIsCurrent       | Flag to set if the row was inferred                                                                |
-| RowIsInferred `*`  | Flag to set if the row was inferred.                                                               |
-| RowHashType1 `**`  | Defines the expression used to derive a row hash for type 1 attributes in a destination dimension. |
-| RowHashType2 `***` | Defines the expression used to derive a row hash for type 2 attributes in a destination dimension. |
-
-### [Value](#tab/configuration-value)
-
-| Configuration      | Value (Column Name) |
-| ------------------ | ------------------- |
-| RowStartDate       | FlexRowStartDate    |
-| RowEndDate         | FlexRowEndDate      |
-| RowIsCurrent       | FlexRowIsCurrent    |
-| RowIsInferred `*`  | FlexRowIsInferred   |
-| RowHashType1 `**`  | FlexRowHashType1    |
-| RowHashType2 `***` | FlexRowHashType2    |
-
-### [Data Type](#tab/configuration-data-type)
-
-| Configuration      | Data Type                      |
-| ------------------ | ------------------------------ |
-| RowStartDate       | DataType="DateTime2" Scale="7" |
-| RowEndDate         | DataType="DateTime2" Scale="7" |
-| RowIsCurrent       | DataType="Boolean"             |
-| RowIsInferred `*`  | DataType="Boolean"             |
-| RowHashType1 `**`  | DataType="Binary" Length="20"  |
-| RowHashType2 `***` | DataType="Binary" Length="20"  |
-
-### [Default](#tab/configuration-default)
-
-| Configuration      | Default      | Implied Conversion                         |
-| ------------------ | ------------ | ------------------------------------------ |
-| RowStartDate       | '1900-01-01' | `1900-01-01 00:00:00.000000`               |
-| RowEndDate         | '9999-12-31' | `9999-12-31 00:00:00.000000`               |
-| RowIsCurrent       | 1            |                                            |
-| RowIsInferred `*`  | 0            |                                            |
-| RowHashType1 `**`  | 0            | `0x00000000000000000000000000000000000000` |
-| RowHashType2 `***` | 0            | `0x00000000000000000000000000000000000000` |
-
-### [Expression](#tab/configuration-expression)
-
-| Configuration      | SQL Source Expression                               | SSIS Dataflow Expression                      |
-| ------------------ | --------------------------------------------------- | --------------------------------------------- |
-| RowStartDate       | GETDATE()                                           | (DT_DBTIMESTAMP2, 7)GETDATE()                 |
-| RowEndDate         | CONVERT(DATETIME2(7), '9999-12-31 00:00:00.000000') | (DT_DBTIMESTAMP2, 7)"9999-12-31 00:00:00.000" |
-| RowIsCurrent       | CONVERT(BIT, 1)                                     | true                                          |
-| RowIsInferred `*`  | CONVERT(BIT, 0)                                     | false                                         |
-| RowHashType1 `**`  |                                                     | [vck@@this1]                                  |
-| RowHashType2 `***` |                                                     | [vck@@this1]                                  |
-
-### [Attributes](#tab/configuration-concept-attributes)
-
-| Configuration      | Dim Attribute | Fact Attribute |
-| ------------------ | ------------- | -------------- |
-| RowStartDate       | Derived       | Ignore         |
-| RowEndDate         | Derived       | Ignore         |
-| RowIsCurrent       | Derived       | Ignore         |
-| RowIsInferred `*`  | Derived       | Ignore         |
-| RowHashType1 `**`  | Hash          | Hash           |
-| RowHashType2 `***` | Hash          | Ignore         |
-
-***
-
-> [!NOTE]
-> \*: Requires the **Setting** `DmInferDim` to be enabled prior to use.
->
-> \*\*: Only used if there is a **Column** with a *CHANGE TYPE* of `Type 1` in the **Object**.
->
-> \*\*\*: Only used if there is a **Column** with a *CHANGE TYPE* of `Type 2` in the **Object**.
->
-
-
 ## Overriding Configurations
 
-
-<!-- TODO: Text: Exceptions are needed at times.  Base configurations are the standard and overrides are an exception. -->
-<!-- TODO: Text: A **Configuration Override** is a sub-type of an **Attribute**.  Explain usage pattern: {Config}_{Setting}. -->
+When a scenarios requires differing/conflicting **Configurations**, a **Configuration Override** can be applied.
+A **Configuration Override** can be configured at the **Connection**, **Batch**, **Project** or **Object** level.
+**Configurations** are applied at an object level so a column level override is not applicable/supported.
 
 ### [Standard Method](#tab/configuration-override)
 
@@ -171,31 +179,43 @@ There are various areas within BimlFlex where you can view any existing **Config
 When wanting to get a global view of what exists, the **Configuration Editor** is recommended as it will give you a complete view of all **Configuration Overrides** for a specific **Configuration**.
 Optional methods are also provided below to highlight where you can view a **Configuration Override** in other areas of navigation.
 
-### [From Configurations](#tab/existing-override)
+> [!NOTE]
+> A **Configuration Override** is persisted as a unique type of **Attribute**.
+> The *ATTRIBUTE* field uses a `{ConfigurationKey}_{FieldName}` naming pattern to identify the **Configuration Override**.
+> The value to be used as the override is then entered into the *ATTRIBUTE VALUE* field.
+>
+> This is different from a **Standard Attribute** and should not be confused or mistaken as improperly entered **Attribute**.
+>
 
-<!-- TODO: Text: Best place to see if one exists anywhere. -->
+### [By Configuration](#tab/existing-override)
 
-### [From Connection](#tab/existing-override-connection)
+![Overrides by Configuration](images\bfx-configuration-view-by-configuration.png "Overrides by Configuration")
 
-<!-- TODO: Text: All **Objects** using the **Connection**. -->
+### [By Connection](#tab/existing-override-connection)
 
-### [From Batch](#tab/existing-override-batch)
+![Overrides by Connection](images\bfx-configuration-view-by-connection.png "Overrides by Connection")
 
-<!-- TODO: Text: **Batch** level overrides. -->
+### [By Batch](#tab/existing-override-batch)
 
-### [From Project](#tab/existing-override-project)
+![Overrides by Batch](images\bfx-configuration-view-by-batch.png "Overrides by Batch")
 
-<!-- TODO: Text: **Project** level overrides. -->
+### [By Project](#tab/existing-override-project)
 
-### [From Object](#tab/existing-override-object)
+![Overrides by Project](images\bfx-configuration-view-by-project.png "Overrides by Project")
 
-<!-- TODO: Text: **Project** level overrides. -->
+### [By Object](#tab/existing-override-object)
 
-### [From Column](#tab/existing-override-column)
+![Overrides by Object](images\bfx-configuration-view-by-object.png "Overrides by Object")
 
-<!-- TODO: Text: Not supported for **Configurations**. -->
+### [All Attributes](#tab/existing-override-object)
+
+![Overrides by Attribute](images\bfx-configuration-view-by-attribute.png "Overrides by Attribute")
 
 ***
+
+> [!NOTE]
+> The values used in the screenshots in tabs above are show for example only.
+> They do not represent valid code or recommended practice.
 
 ## Example Scenarios
 
