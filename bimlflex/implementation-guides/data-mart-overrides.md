@@ -165,7 +165,7 @@ A **Configuration Override** can be configured at the **Connection**, **Batch**,
 ### [Standard Method](#tab/configuration-override)
 
 A **Configuration** can be quickly added from [**Configuration Editor**](xref:configurations).
-If a field supports and override it will have clickable button with the following icon (![Overriding Possible Icon -icon-inline](../metadata-editors/images/svg-icons/attributes.svg "Overriding Possible Icon")).
+If a field supports and override it will have clickable button with the following icon (<img class="icon-inline" src="../metadata-editors/images/svg-icons/attributes.svg" /><!--![Overriding Possible Icon -icon-inline](../metadata-editors/images/svg-icons/attributes.svg "Overriding Possible Icon")-->).
 
 ![Overriding Possible](images\bfx-configuration-override-support.png "Overriding Possible")
 
@@ -180,7 +180,7 @@ Enter the value to be used as the **Configuration Override** in the *ATTRIBUTE V
 ![Final Add Attributes Dialog](images\bfx-configuration-add-attribute-end.png "Final Add Attributes Dialog")
 
 > [!IMPORTANT]
-> Don't forget to click the **Save Button** ((![Save Icon -icon-inline](../metadata-editors/images/svg-icons/save.svg "Save Icon")) to record the changes.
+> Don't forget to click the **Save Button** (<img class="icon-inline" src="../metadata-editors/images/svg-icons/save.svg" /><!--(![Save Icon -icon-inline](../metadata-editors/images/svg-icons/save.svg "Save Icon")-->) to record the changes.
 >
 
 ### [Advanced Method](#tab/configuration-override-advanced)
@@ -188,7 +188,7 @@ Enter the value to be used as the **Configuration Override** in the *ATTRIBUTE V
 The following method is classified as advanced due to the *ATTRIBUTE* field needing to be manually entered.
 The advanced method is not recommended to be used unless the user is completely familiar with the `{ConfigurationKey}_{FieldName}` naming pattern.
 
-When using any entity editor that support the **Attributes Tab** the **Add** (![Add Icon -icon-inline](../metadata-editors/images/svg-icons/add.svg "Add Icon")) button can be used to create an **Attribute**.
+When using any entity editor that support the **Attributes Tab** the **Add** (<img class="icon-inline" src="../metadata-editors/images/svg-icons/add.svg" /><!--![Add Icon -icon-inline](../metadata-editors/images/svg-icons/add.svg "Add Icon")-->) button can be used to create an **Attribute**.
 
 ![Initial Add Attribute From Project](images\bfx-configuration-add-attribute-project.png "Initial Add Attribute From Project")
 
@@ -266,7 +266,9 @@ These cover a few real world examples that require the use of a **Configuration 
 
 > **Scenario**
 > The business has another source handling the management of effectivity dates for a specific dimension.
+>
 > These effectivity dates should be used in place of standard `RowStartDate`, `RowEndDate` and `RowIsCurrent` **Configurations**.
+>
 > This is a scenario that only applies to a single dimension and all other dimensions with a Type 2 **Column** should use the standard pattern of terminating effectivity on load of the dimension.
 >
 
@@ -279,7 +281,9 @@ These cover a few real world examples that require the use of a **Configuration 
 
 > **Scenario**
 > The business is migrating creation and maintenance of an existing Type 2 Dimension to an identical one to be maintained in BimlFlex.
+>
 > Historic data for the dimensional attributes should be preserved, though the specific Surrogate Key values do not need to be maintained and can be regenerated.
+>
 > Once historic data is loaded the standard pattern of terminating effectivity on load should be applied.
 >
 
