@@ -164,12 +164,47 @@ A **Configuration Override** can be configured at the **Connection**, **Batch**,
 
 ### [Standard Method](#tab/configuration-override)
 
-<!-- TODO: Text: Outline steps of setting from **Configuration Editor** -->
+A **Configuration** can be quickly added from [**Configuration Editor**](xref:configurations).
+If a field supports and override it will have clickable button with the following icon (![Overriding Possible Icon](../metadata-editors/images/svg-icons/attributes.svg "Overriding Possible Icon")).
+
+![Overriding Possible](images\bfx-configuration-override-support.png "Overriding Possible")
+
+Clicking this button will open a **Add Attribute Dialog Box** that is populated with the required *ATTRIBUTE* value.
+
+![Initial Add Attributes Dialog](images\bfx-configuration-add-attribute-start.png "Initial Add Attributes Dialog")
+
+Next the level of the **Configuration Override** needs to be set by assigning *ATTRIBUTE TYPE* (and any supporting fields if required).
+
+Enter the value to be used as the **Configuration Override** in the *ATTRIBUTE VALUE* field.
+
+![Final Add Attributes Dialog](images\bfx-configuration-add-attribute-end.png "Final Add Attributes Dialog")
+
+> [!IMPORTANT]
+> Don't forget to click the **Save Button** ((![Save Icon](../metadata-editors/images/svg-icons/save.svg "Save Icon")) to record the changes.
+>
 
 ### [Advanced Method](#tab/configuration-override-advanced)
 
-<!-- TODO: Text: Warn user that it is not recommended. -->
-<!-- TODO: Text: Explain usage pattern: Key = {Config}_{Setting} and Value = {New Value} -->
+The following method is classified as advanced due to the *ATTRIBUTE* field needing to be manually entered.
+The advanced method is not recommended to be used unless the user is completely familiar with the `{ConfigurationKey}_{FieldName}` naming pattern.
+
+When using any entity editor that support the **Attributes Tab** the **Add** (![Add Icon](../metadata-editors/images/svg-icons/add.svg "Add Icon")) button can be used to create an **Attribute**.
+
+![Initial Add Attribute From Project](images\bfx-configuration-add-attribute-project.png "Initial Add Attribute From Project")
+
+Clicking that **Add** button will populate the *ATTRIBUTE TYPE* (and required associated fields) for the context of the currently selected entity.
+
+![Initial Add Attributes Dialog From Project](images\bfx-configuration-add-attribute-project-initial.png "Initial Add Attributes Dialog From Project")
+
+The specific **Configuration Override** desired will have to be manually entered into the *ATTRIBUTE* field.
+Though they do not appear as selectable values, it can still be manually entered without error.
+
+> [!NOTE]
+> The `{ConfigurationKey}_{FieldName}` naming pattern used by to identify the **Configuration Override** will not populate in the selection box of allowed values.
+>
+> Not all combinations of `{ConfigurationKey}_{FieldName}` combinations are supported in all versions.
+> Use care when manually entering in values and when it doubt, use the standard method for **Configuration Override** entry.
+>
 
 ***
 
