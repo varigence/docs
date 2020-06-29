@@ -158,6 +158,9 @@ If required, a [**Configuration Override**](#configuring-an-override) can be app
 
 ## Overriding Configurations
 
+There are often many factors that go into Data Warehouse and it's environment and not everything is always under the project team's control or specifications.
+It isn't uncommon to have to maintain support for an legacy system while migrating to a new tool or standard.
+
 When a scenarios requires differing/conflicting **Configurations**, a **Configuration Override** can be applied.
 A **Configuration Override** can be configured at the **Connection**, **Batch**, **Project** or **Object** level.
 **Configurations** are applied at an object level so a column level override is not applicable/supported.
@@ -226,6 +229,12 @@ Overrides have been defined at each supported level to better communicate which 
 > The value assigned to the override is entered into the *ATTRIBUTE VALUE* field.
 > This is different from a **Standard Attribute** which follows a different pattern.
 >
+> > EXAMPLES:
+> >
+> > **Configuration Override** for a `RowStartDate`'s *SQL SOURCE EXPRESSION*: `RowStartDate_SqlSourceExpression`
+> >
+> > **Configuration Override** for a `RowIsCurrent`'s *DATA TYPE*: `RowIsCurrent_ConfigurationDataType`
+> >
 
 ### [By Configuration](#tab/existing-override)
 
@@ -257,6 +266,26 @@ Overrides have been defined at each supported level to better communicate which 
 > The values used in the screenshots in tabs above are show for example only.
 > They do not represent valid code or recommended practice.
 
+## General Implementation Notes
+
+All Data Mart **Configuration Overrides** should be placed on the Data Mart Entity itself.
+When implementing an override for a single dimension, it would be on the **Object** with the `Dimension` *OBJECT TYPE*.
+When using a higher level override it would be one containing the `Fact` or `Dimension` *OBJECT TYPE* requiring the override.
+
+If multiple identical **Configuration Overrides** are required and they all share the same naming patterns/rules consolidation may be possible through use of a **Batch**, **Project**, or **Connection** level override.
+Please note that all **Objects** contained within the scope of the effected entity will receive the applied **Configuration Override**.
+Creation and management of a separate BimlFlex **Project** to manage is useful if there is a large group of tables requiring alternate logic, but impractical if there is only a few exceptions or alternating logic.
+
+> [!IMPORTANT]
+> It is important to always keep standardization in mind as the primary goal.
+>
+> The constant creation of **Configuration Overrides** can increase the complexity of the environment and introduce additional troubleshooting costs.
+>
+> A **Configuration Override** should be used with care to handle exceptions.
+>
+> The base **Configuration** should be used to handle standards.
+>
+
 ## Example Scenarios
 
 To better communicate the use of **Configuration Overrides** in practice, the functional scenarios below have been provided.
@@ -265,21 +294,110 @@ These cover a few real world examples that require the use of a **Configuration 
 ### Overriding Type 2 Logic
 
 > **Scenario**
-> The business has another source handling the management of effectivity dates for a specific dimension.
 >
-> These effectivity dates should be used in place of standard `RowStartDate`, `RowEndDate` and `RowIsCurrent` **Configurations**.
+> The business uses another source handling the management of effectivity dates for a specific dimension.
+>
+> The business rules for effectivity dates are identical to BimlFlex besides `RowStartDate` being derived from another process PRIOR to loading the Data Mart.
+>
+> These effectivity dates should be used in place of the ones BimlFlex would normally generate on load of the Data Mart.
 >
 > This is a scenario that only applies to a single dimension and all other dimensions with a Type 2 **Column** should use the standard pattern of terminating effectivity on load of the dimension.
 >
 
-<!-- TODO: Text: Explain that the following configuration overrides BimlFlex Type 2 logic and outsources the calculation. -->
-<!-- TODO: Text: Walk through configuring the view. -->
+#### Implementation
+
+There are two basic ways to handle the scenario.
+
+**Method A** is the most versatile and is useful when there is no ability to control the name of the incoming column.
+If the source feed for the Data Mart is a physical table this is a primary candidate for implementation.
+
+**Method B** requires the incoming column to be named the same as the *CONFIGURATION VALUE* field for the **Configuration**.
+If the source feed is a view created/controlled by the developers this is a primary candidate for implementation.
+
+Each method requires only a single **Configuration Override** (per column) and performs an identical function.
+
+> [!TIP]
+> These methods will exclude a **Configuration OVerride** for the `RowEndDate` and `RowIsCurrent` columns due to the business rules for effectivity being identical.
+> When supplied with only the `RowStartDate`, BimlFlex will automatically calculate `RowEndDate` and `RowIsCurrent` identical to how the environment is currently configured.
+>
+> If business rules for effectivity where different a **Configuration Override** for `RowEndDate` and `RowIsCurrent` could be applied using an identical method outlined below.
+>
+
+##### [Method A - SQL Source Expression](#tab/scenario-1-method-a)
+
+The following method assumes the *DIM ATTRIBUTE* is already configured to `Derived` for any of the applicable **Configurations** being overridden.
+This is the recommended setting and is outlined [Common Configurations - Attributes](#configuration-concept-attributes) table above.
+
+> [!NOTE]
+> If this *DIM ATTRIBUTE* is set to a value besides `Derived`, an additional **Configuration Override** will be needed for set the *DIM ATTRIBUTE* to `Derived`.
+> The steps from [Method B](#scenario-1-method-b) can be used simply by subsituting and referce to `Source` with `Derived`.
+>
+
+When the *DIM ATTRIBUTE* is set to `Derived` the *SQL SOURCE EXPRESSION* can be substituted with a column reference.
+Following the steps outlined in applying a [Standard Override Configuration](#configuration-override) with the following values.
+
+###### [Fields](#tab/a-fields)
+
+| Field Name      | Value                                    |
+| --------------- | ---------------------------------------- |
+| Attribute Type  | Object                                   |
+| Connection      | {DimensionConnection}                    |
+| Object          | {DimensionName}                          |
+| Attribute       | RowEffectiveFromDate_SqlSourceExpression |
+| Attribute Value | {ColumnName}                             |
+
+> [!NOTE]
+> `{ ... }` indicate a variable value.
+
+###### [Example - SQL Server](#tab/a-SQL)
+
+| Field Name      | Value                                    |
+| --------------- | ---------------------------------------- |
+| Attribute Type  | Object                                   |
+| Connection      | BFX_DM                                   |
+| Object          | dim.Type2_History                        |
+| Attribute       | RowEffectiveFromDate_SqlSourceExpression |
+| Attribute Value | [BeginDate]                              |
+
+###### [Example - Snowflake](#tab/a-Snowflake)
+
+| Field Name      | Value                                    |
+| --------------- | ---------------------------------------- |
+| Attribute Type  | Object                                   |
+| Connection      | BFX_DM                                   |
+| Object          | dim.Type2_History                        |
+| Attribute       | RowEffectiveFromDate_SqlSourceExpression |
+| Attribute Value | "BeginDate"                              |
+
+***
+
 <!-- TODO: Text: Show required overrides. -->
 <!-- TODO: Text: Show data set before and after load into Dimension. -->
+
+> [!NOTE]
+> The column being reference in the *SQL SOURCE EXPRESSION* is not required to have BimlFlex **Column** metadata.
+> All that is required is for the column (or columns/values used in the expression) to be available on the Source.
+>
+
+##### [Method B - Dim Attribute](#tab/scenario-1-method-b)
+
+<!-- TODO: Text: -->
+<!-- TODO: Text: Show required overrides. -->
+<!-- TODO: Text: Walk through configuring the view. -->
+<!-- TODO: Text: Show data set before and after load into Dimension. -->
+
+ [!NOTE]
+> The column being reference in the *CONFIGURATION VALUE* is not required to have BimlFlex **Column** metadata.
+> All that is required is for a column to be available on the Source with the same name as the *CONFIGURATION VALUE*.
+>
+
+***
 
 ### One Time Historic Load
 
 > **Scenario**
+
+
 > The business is migrating creation and maintenance of an existing Type 2 Dimension to an identical one to be maintained in BimlFlex.
 >
 > Historic data for the dimensional attributes should be preserved, though the specific Surrogate Key values do not need to be maintained and can be regenerated.
@@ -292,3 +410,4 @@ These cover a few real world examples that require the use of a **Configuration 
 <!-- TODO: Text: ALTER VIEW to point to not historic/live source. -->
 <!-- TODO: Text: Show starting historic load before and after (same as above).  -->
 <!-- TODO: Text: Show dataset of incoming new change from live system and dimension after.  -->
+
