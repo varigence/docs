@@ -477,7 +477,3 @@ The new source view should be without metadata columns and verified that it will
 
 The new process and schema are now ready to be built and deployed.
 Once deployed it should be available to maintain and record any future Type 2 Dimension changes.
-
-> [!IMPORTANT]
-> If the Source **Object** had the *PROJECT* adjusted, ensure that the
->
