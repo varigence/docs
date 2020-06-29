@@ -336,7 +336,7 @@ This is the recommended setting and is outlined [Common Configurations - Attribu
 When the *DIM ATTRIBUTE* is set to `Derived` the *SQL SOURCE EXPRESSION* can be substituted with a column reference.
 Following the steps outlined in applying a [Standard Override Configuration](#configuration-override) with the following values.
 
-###### [Fields](#tab/a-fields)
+###### [Fields](#tab/scenario-1-method-a)/a-fields)
 
 | Field Name      | Value                                    |
 | --------------- | ---------------------------------------- |
@@ -349,7 +349,7 @@ Following the steps outlined in applying a [Standard Override Configuration](#co
 > [!NOTE]
 > `{ ... }` indicate a variable value.
 
-###### [Example - SQL Server](#tab/a-SQL)
+###### [Example - SQL Server](#tab/scenario-1-method-a)/a-SQL)
 
 | Field Name      | Value                                    |
 | --------------- | ---------------------------------------- |
@@ -359,7 +359,7 @@ Following the steps outlined in applying a [Standard Override Configuration](#co
 | Attribute       | RowEffectiveFromDate_SqlSourceExpression |
 | Attribute Value | [BeginDate]                              |
 
-###### [Example - Snowflake](#tab/a-Snowflake)
+###### [Example - Snowflake](#tab/scenario-1-method-a)/a-Snowflake)
 
 | Field Name      | Value                                    |
 | --------------- | ---------------------------------------- |
@@ -371,7 +371,8 @@ Following the steps outlined in applying a [Standard Override Configuration](#co
 
 ***
 
-<!-- TODO: Text: Show required overrides. -->
+Once this **Configuration Override** is in place, 
+
 <!-- TODO: Text: Show data set before and after load into Dimension. -->
 
 > [!NOTE]
@@ -396,8 +397,7 @@ Following the steps outlined in applying a [Standard Override Configuration](#co
 ### One Time Historic Load
 
 > **Scenario**
-
-
+>
 > The business is migrating creation and maintenance of an existing Type 2 Dimension to an identical one to be maintained in BimlFlex.
 >
 > Historic data for the dimensional attributes should be preserved, though the specific Surrogate Key values do not need to be maintained and can be regenerated.
