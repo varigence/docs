@@ -20,6 +20,8 @@
   href: extension-points.md
 - name: Integration Keys
   href: integration-keys.md
+- name: Driving Keys
+  href: driving-keys.md
 - name: Hashing
   href: hashing-in-bimlflex.md
 - name: Load Parameters

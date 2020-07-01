@@ -180,21 +180,11 @@ Naming conventions, Attribute Splitting, exclusions and Suffix inclusion are all
 
 ## Driving Keys
 
-All Data Vault Links are many to many relationships. If there is a Foreign Key relationship between two entities in the source, that behavior might need to be maintained in the Data Vault.
+Data Vault Links represent many to many relationships. Any Hub entity in Data Vault can therefore have multiple active relationships to other entities through Links.
 
-An example is the relationship in AdventureWorksLT between a Product and its Product Category. By definition, the source system only allows product to be part of a single Category at a given point in time. If the product is moved from a category to another it will cease to be part of the previous category.
+If there is a Foreign Key relationship between two entities in the source, or if there is application logic that manages opening and closing of relationships in mapping tables, that same behavior might need to be maintained in the Data Vault.
 
-Since links can maintain any number of relationship this behavior needs to be enforced by rules. In the Metadata Attributes tab it is possible to define Driving Keys for Link Relationships. These keys define which parts of the Link drive the changing of existing relationships.
-
-For the Product to Product Category Link this is maintained by the `LSAT_Product_ProductCategory_AWLT` Link Satellite table.
-
-The Accelerator and the BimlFlex framework will automatically apply Driving Key type relationships for any Links derived out of a Hub, as they are based on Foreign Keys in the source and by definition imply a Driving Key scenario. This will be automatically included in the load logic, no separate attribute will be added in the Attributes Sheet.
-
-If a Driving Key behavior needs to be manually defined, such as from a Link type source table, an attribute is added to the Attributes metadata.
-
-![Driving Key Metadata](../user-guide/images/bimlflex-ss-v5-app-driving-key-metadata-attributes.png "Driving Key Metadata")
-
-The Data Vault build logic will include the required processing in the Link Satellite to maintain data consistency throughout load by adding and closing relationships, emulating the behavior of the single Foreign Key relationship from the source.
+Driving Keys are documented in more detail here: [](xref:bimlflex-driving-keys)
 
 ## Multi Active Satellites
 
