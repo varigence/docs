@@ -185,9 +185,9 @@ The settings have been updated. New settings are available, some settings have b
 | -------        | --------- | --------- |
 | DvAppendBridge | BRD       | BRG       |
 
-* Add: New Settings for metadata importer behavior control. The Metadata importer default settings are now controllable through Metadata Settings. This allows for metadata driven defaults for importer behavior. The new settings are listed below and correspond to the existing User Interface options.
-
 #### New Metadata Importer Settings
+
+New Settings for metadata importer behavior control. The Metadata importer default settings are now controllable through Metadata Settings. This allows for metadata driven defaults for importer behavior. The new settings are listed below and correspond to the existing User Interface options.
 
 | Setting                          | Description |
 | -------                          | ----------- |
