@@ -32,7 +32,7 @@
 #  href: source-salesforce.md
 - name: Source Stored Procedure
   href: source-stored-procedure.md
-#- name: Source SQL Server CDC
-#  href: source-cdc.md
+- name: Source SQL Server CDC
+  href: source-cdc.md
 #- name: Source SQL Server CT
 #  href: source-ct.md
