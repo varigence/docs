@@ -26,8 +26,10 @@ Build 5.0.64678.0, release date: 1 June 2020
 ## Build 20.2.nnn.0, release date: nn mmmm 2020
 
 * Add: New Project settings for SSDT Project Control
-* Add:
+* Add: ADF Flat File load support. More information on the ADF Flat File load process: [](xref:flat-file-source-to-staging)
 * Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
+* Update: TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts
+* Update: Added additional delete detection functionality
 
 The following settings have been added to the Ssdt group:
 
@@ -41,6 +43,8 @@ The following settings have been added to the Ssdt group:
 * SsdtDefaultCredential
 * SsdtDefaultExternalDataSource
 * SsdtDefaultExternalFileFormat
+
+The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group
 
 More information on these settings: [](xref:bimlflex-ssdt-project)
 
