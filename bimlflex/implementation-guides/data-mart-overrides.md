@@ -167,6 +167,9 @@ A **Configuration Override** can be configured at the **Connection**, **Batch**,
 
 The **Configuration** itself is applied at an object level, so a column level override is not applicable or supported.
 
+> [!IMPORTANT]
+> Overriding a **Configuration** is currently only supported when using a `SQL Based ELT` **Connection**.
+
 ### [Standard Method](#tab/configuration-override)
 
 A **Configuration** can be quickly added from [**Configuration Editor**](xref:configurations).
