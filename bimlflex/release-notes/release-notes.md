@@ -30,6 +30,7 @@ Build 5.0.64678.0, release date: 1 June 2020
 * Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
 * Update: TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts
 * Update: Added additional delete detection functionality
+* Update: A scenario where the Data Vault Point In Time object creation would not allowed the object to be saved unless there were attribute datetime columns present has been addressed.
 
 The following settings have been added to the Ssdt group:
 
