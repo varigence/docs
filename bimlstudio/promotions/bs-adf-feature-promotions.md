@@ -3,13 +3,13 @@ uid: bfx-adf-feature-promotions
 title: BimlStudio 2020 and Azure Data Factory Featured Integrations 
 ---
 
-# BimlStudio 2020 R2 and Azure Data Factory Featured Integrations
+# BimlStudio 2020 R2 Update and Featured Azure Data Factory Integrations
 
-[Azure Data Factory](https://azure.microsoft.com/en-us/services/data-factory/), the Microsoft cloud service built for complex ETL, ELT, and data integration projects, has become a flagship Platform-as-a-Service (PaaS) for contemporary data engineers due to its powerful systems that provide comprehensive end-to-end services, data-driven workflows, and scale data transformation processes. [BimlStudio](https://www.varigence.com/bimlstudio) combined with [BimlFlex](https://www.varigence.com/bimlflex), the premiere Data Warehouse Automation (DWA) service from [Varigence](www.varigence.com), seeks to continue to regularly implement, improve, and deploy new features that integrate seamlessly with the dominant presence of Azure Data Factory. The combination of Azure Data Factory's powerful cloud-based platform with the flexible and customizable framework provided by BimlFlex will enable your organization to expedite warehouse development, increase development productivity, and proactively adapt to changing business insights, without ever having to write a single line of code.
+[Azure Data Factory](https://azure.microsoft.com/en-us/services/data-factory/), the Microsoft cloud service built for complex ETL, ELT, and data integration projects, has become a flagship Platform-as-a-Service (PaaS) for contemporary data engineers due to its powerful systems that provide comprehensive end-to-end services, data-driven workflows, and scale data transformation processes. [BimlStudio](https://www.varigence.com/bimlstudio) combined with [BimlFlex](https://www.varigence.com/bimlflex), the premiere Data Warehouse Automation (DWA) service from [Varigence](www.varigence.com), seek to continue to regularly implement, improve, and deploy new features that integrate seamlessly with the dominant presence of Azure Data Factory. The combination of Azure Data Factory's powerful cloud-based platform with the flexible and customizable framework provided by BimlFlex will enable your organization to expedite warehouse development, increase development productivity, and proactively adapt to changing business insights, without ever having to write a single line of code.
 
 ## New Features in BimlStudio 2020 R2
 
-In the upcoming BimlStudio 2020 R2 Rollout, users can expect the following new features and relationships which highlight the synergy between BimlStudio, BimlFlex, and Azure Data Factory:
+In the upcoming rollout of the BimlStudio 2020 R2 update, users can expect the following new features and relationships which highlight the synergy between BimlStudio, BimlFlex, and Azure Data Factory:
 
 * Flat file source and dataset support
 * Support for dataflow
@@ -56,6 +56,8 @@ BimlStudio has incorporated support for many new connectors, simplifying setting
 
 ## BimlStudio 2020 R2 Release
 
-Users can expect the BimlStudio 2020 R2 update to roll out in Q3 2020, and can expect overwhelming parity between BimlStudio, BimlFlex, and new features implemented within recent Azure Data Factory updates.
+Users can expect the BimlStudio 2020 R2 update to roll out in Q3 2020 and can expect overwhelming parity between BimlStudio, BimlFlex, and new features implemented within recent Azure Data Factory updates.
+
+Contact Varigence at sales@varigence.com to request a demo or personalized Proof of Concept to see how a subscription to BimlStudio can save your organization time, money, and resources.
 
 Join our mailing list to stay informed of updates on additional support, integrations, features, and bug fixes!
