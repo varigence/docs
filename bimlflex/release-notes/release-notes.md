@@ -30,7 +30,17 @@ Build 5.0.64678.0, release date: 1 June 2020
 * Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
 * Update: TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts
 * Update: Added additional delete detection functionality
+  Read More on the updated delete functionality here: [](xref:TODO: Add link)
 * Update: A scenario where the Data Vault Point In Time object creation would not allowed the object to be saved unless there were attribute datetime columns present has been addressed.
+* Update: The layout in the Accelerator page has been updated and the source pane is now closed by default. Click the open arrow to open the source pane to view the active source objects.
+* Update: The Accelerator and Data Vault process has several new optional configurations to better control Data Vault behavior.
+  Read More on the updated delete functionality here: [](xref:TODO: Add link)
+  This includes settings to control if individual source keys should be added to the Hubs and Links as attributes, if Link Satellites should use record source naming convention by default, if Link Satellite keys should e
+
+The Following settings have been added to control the Data Vault Accelerator:
+
+* TODO: ADD
+
 
 The following settings have been added to the Ssdt group:
 
