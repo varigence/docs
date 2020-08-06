@@ -5,75 +5,77 @@ title: Excel File Migration Error within BimlFlex 2020 R2 Update
 
 # Excel File Migration Error within BimlFlex 2020 R2 Update
 
-## Restructured Versioning 
+## Restructured Versioning
 
-With the upcoming R2 release of BimlFlex and BimlStudio, Varigence has restructured the naming convention for new versions of the programs moving forward.
-The new update will be labeled version 20.2, indicating 2020 as the release year, and .2 to indicate the second update within that year.
+With the upcoming R2 release of BimlFlex and BimlStudio, Varigence has restructured the naming convention for new versions of Biml applications moving forward.
+The new update will be labeled as version 20.2, indicating 2020 as the release year and .2 to indicate the second update within that year.
 All Varigence products will adhere to this same naming convention to provide users clarity on versions both currently installed and upcoming.
 
 Along with changes to version labelling come changes to the BimlFlex and BimlStudio installation paths.
-Dropping the former "5.0" directory from previous installations (C:\Program Files\Varigence\BimlFlex\5.0), files will now be kept in the parent directory for the pgoram, now being installed at (C:\Program Files\Varigence\BimlFlex).
+Dropping the former "5.0" directory from previous installations `(C:\Program Files\Varigence\BimlFlex\5.0)`, files will now be kept in the parent directory of the above path, `(C:\Program Files\Varigence\BimlFlex)`.
+
 When users choose to update to Version 20.2 it will not be possible to maintain side-by-side versions, as programs with database dependencies do not fare will with such assemblies. Users must lock-in one version to install.
 
 ## Known Issue for Excel Metadata Editor
 
-One feature that breaks upon installation is the Excel Metadata Editor Add-In .xlsx file, because Excel has hardcoded the path to this add-in. There is, unfortunately, no preprogrammed workaround.
+One known feature that breaks upon installation is the Excel Metadata Editor Add-In .xlsx file. Excel has hardcoded the path to this add-in and unfortunately, there is no preprogrammed workaround.
 
-Users will be required to take one of three options in order to resolve this Excel File Migration Error for the BimlFlex 20.2 update.
+Users will be required to take one of three options in order to resolve this Excel File Migration Error.
+
+This Metadata Editor update process will only need to be completed once, subsequent to the upgrade to BimlFlex 20.2.
 
 ## Resolution Methods
 
-#### Method 1: Automatic Upgrade
+### Method 1: Automatic Upgrade
 
-Perhaps the most common method users use to access the Excel Metadata Editor is through the "Excel Metadata Editor" button in the BimStudio ribbon.
+Perhaps the most common method used to access the Excel Metadata Editor is through the "Excel Metadata Editor" button in the BimStudio ribbon.
 
-![Excel Metadata Editor Ribbon Button](bimlflex\reference-documentation\images\001.png "Excel Metadata Editor Ribbon Button")
+![Excel Metadata Editor Ribbon Button](/bimlflex/reference-documentation/images/001.png "Excel Metadata Editor Ribbon Button")
 
 Click the top half of the "Excel Metadata Editor" button and a dialogue box will pop up advising users to "Upgrade BimlFlex.xlsx." Click "Upgrade" and the new path will be automatically written.
 
-![Upgrade BimlFlex.xlsx](bimlflex\reference-documentation\images\002.png "Upgrade BimlFlex.xlsx")
+![Upgrade BimlFlex.xlsx](/bimlflex/reference-documentation/images/002.png "Upgrade BimlFlex.xlsx")
 
 Users will be advised when the upgrade is successful and be given the option to then open the Metadata Editor in Excel, as usual.
 
-![Open in Excel?](bimlflex\reference-documentation\images\003.png "Open in Excel?")
+![Open in Excel?](/bimlflex/reference-documentation/images/003.png "Open in Excel?")
 
-#### Method 2: Basic Path Selection
+### Method 2: Basic Path Selection
 
-For users who have performed a standard installation of BimlFlex with no edits to the location of the install files, click the down-carrot button within the "Excel Metadata Editor" ribbon button to bring up additional installation options.
+For users who have performed a standard installation of BimlFlex with no changes to the location of the installed files, click the down-carrot button within the "Excel Metadata Editor" ribbon button to bring up additional installation options.
 
-![Upgrade BimlFlex Excel File](bimlflex\reference-documentation\images\004.png "Upgrade BimlFlex.xlsx")
+![Upgrade BimlFlex Excel File](/bimlflex/reference-documentation/images/004.png "Upgrade BimlFlex.xlsx")
 
-Select "Upgrade BimlFlex Excel File" from the dropdown menu. This will prompt a dialogue box requiring the user to select the location of the BimlFlex.xlsx file. The default location for this document is C:\Program Files\Varigence\BimlFlex. For users who have modified the location of any install files, select the location specific to your machine.
+Select "Upgrade BimlFlex Excel File" from the dropdown menu. This will prompt a dialogue box requiring the user to select the location of the BimlFlex.xlsx file. The default location for this document is `C:\Program Files\Varigence\BimlFlex`. For users who have modified the location of any install files, select the location specific to your machine.
 
-Once the file is selected, users will get the same dialogue boxes seen above. Click "Upgrade" to update the BimlFlex.xlsx file and a subsequent dialogue box will advise that the upgrade was successful with the option to open the Metadata Editor in Excel.
+Once the file is selected, users will get the same dialogue boxes seen above.
+Click "Upgrade" to update the BimlFlex.xlsx file and a subsequent dialogue box will advise that the upgrade was successful with the option to open the Metadata Editor in Excel.
 
-#### Method 3: Advanced Path Selection
+### Method 3: Advanced Path Selection
 
 For users who have modified their environment, changed the location of the installed files, or if the above two methods for whatever reason failed to upgrade the BimlFlex.xlsx file, this method will ensure detection and upgrade of the require .xlsx, .vsto, and .dll file paths, as determined by the user.
 
-![Advanced BimlFlex Excel File Upgrade](bimlflex\reference-documentation\images\005.png "Advanced BimlFlex Excel File Upgrade")
+![Advanced BimlFlex Excel File Upgrade](/bimlflex/reference-documentation/images/005.png "Advanced BimlFlex Excel File Upgrade")
 
-Click "Advanced BimlFlex Excel File Upgrade' from the Excel Metadata Editor button in the BimlStudio ribbon. This will prompt a dialogue box to appear with selection fields requing the user to enter the path to the three file types mentioned above.
+Click "Advanced BimlFlex Excel File Upgrade" from the down-carrot menu within Excel Metadata Editor button in the BimlStudio ribbon. This will prompt a dialogue box to appear with selection fields requiring the user to enter the path to the three file types mentioned above.
 
-![Upgrade BimlFlex Excel Spreadsheet](bimlflex\reference-documentation\images\006.png "Upgrade BimlFlex Excel Spreadsheet")
+The default file paths for these files are:
 
-The default file paths for these files are: 
+XLSX: `C:\Program Files\Varigence\BimlFlex\BimlFlex.xlsx`
 
-XLSX: C:\Program Files\Varigence\BimlFlex\BimlFlex.xlsx
+VSTO: `C:\Program Files\Varigence\BimlFlex\BimlFlexAddin.vsto`
 
-VSTO: C:\Program Files\Varigence\BimlFlex\BimlFlexAddin.vsto
+DLL: `C:\Program Files\Varigence\BimlFlex\BimlFlexAddin.dll`
 
-DLL: C:\Program Files\Varigence\BimlFlex\BimlFlexAddin.dll
+However, if users have altered their environments or the location of files, the file paths selected may be different.
+Browse and select the file paths according to your machine using the ellipses on the right.
 
-However, if users have aletered their environments or location of files, te file paths selected may be different.
-Select the file paths accordingly using the ellipses on the right.
-
-![Upgrade BimlFlex Excel Spreadsheet - Complete](bimlflex\reference-documentation\images\007.png "Upgrade BimlFlex Excel Spreadsheet - Complete")
+![Upgrade BimlFlex Excel Spreadsheet - Complete](/bimlflex/reference-documentation/images/007.png "Upgrade BimlFlex Excel Spreadsheet - Complete")
 
 Once all paths have been selected, click "Upgrade." Another dialogue box will again confirm the upgrade for BimlFlex.xlsx specifically. Click "Upgrade" again.
 
-![Upgrade BimlFlex.xlsx](bimlflex\reference-documentation\images\002.png "Upgrade BimlFlex.xlsx")
+![Upgrade BimlFlex.xlsx](/bimlflex/reference-documentation/images/002.png "Upgrade BimlFlex.xlsx")
+
+### Opening Metadata Editor Without BimlStudio 
 
 Users who choose to open and edit metadata within Excel without navigating through the BimlStudio ribbon button will be met with a "Customization Failed to Load" error, and will need to correct the Metadata Editor Add-in by way of any of the three above-referenced methods.
-
-This upgrade process will only need to be completed once, subsequent to the upgrade to BimlFlex 20.2.
