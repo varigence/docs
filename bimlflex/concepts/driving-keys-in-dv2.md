@@ -98,8 +98,9 @@ To manually define a Driving Key attribute, users may edit the Link Table SK col
 The Data Vault logic within the BimlFlex framework will include the required processing in the Link Satellite to maintain data consistency throughout loading by adding and closing relationships, emulating the behavior of the single Foreign Key relationship from the source.
 Once defined, ETL logic will enforce the rule that he subject entity cannot be associated with multiple relationships at any given point in time.
 
-> [!TIP]
+> [!NOTE]
 > For additional information regarding BimlFlex's assignment of Driving Keys or the technical walkthrough for manually defining Driving Keys, please reference the following documents:
+> 
 > * [Data Vault Templates](xref:data-vault-templates)
 > * [BimlFlex Data Vault Best Practices](xref:data-vault-standards)
 > * [Driving Keys](xref:driving-keys)
