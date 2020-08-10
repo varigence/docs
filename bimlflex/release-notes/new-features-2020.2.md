@@ -4,7 +4,7 @@ name: New Features in BimlFlex 2020 R2
 ---
 # New Features in BimlFlex 2020 R2 Update
 
-## Required User Action
+## Breaking Changes
 
 Upon updating to BimlFlex version 2020.2, users will be required to initiate a one-time manual update to the Excel Metadata Editor add-in.
 Microsoft Excel has hardcoded the path to the add-in, and unfortunately, there is no preprogrammed workaround.
