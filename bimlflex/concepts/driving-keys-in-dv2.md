@@ -31,7 +31,8 @@ This allows one to track specific historical changes to a relationship.
 Using LSAT is a benefit of Data Vault 2.0 that allows maintaining historical data where end-dated relationships may need to be reopened or reactivated again without fear of losing any data.
 <!-- Tweaked above paragraph and migrated from the DK section.  LSAT's do not depend on a Driving Key.  -->
 
-**For example:** Imagine the operation of a bar, which opens for business on August 10, 2020. A bar will store kegs of different varieties of beer and then distribute those beverages through their tap system.
+**For example:** Imagine the operation of a bar, which opens for business on August 10, 2020.
+A bar will store kegs of different varieties of beer and then distribute those beverages through their tap system.
 
 This hypothetical bar has five (5) varieties of beer in stock: Pale Ale, Stout, Lager, IPA, and Cider.
 There is only one (1) tap for distribution.
