@@ -25,143 +25,76 @@ Effectivity is then started and ended based on when a Business Concept was first
 ### Tracking by Historical Relationship
 
 A common model in Data Vault 2.0 methodology is to create a Satellite on the Link (LSAT) which contains history specific to the Link.
-This allows one to track specific historical changes to a relationship.
-<!-- without having to reference or query any of the Hubs or Links associated with the data. -->
-<!-- The above cut out sections doesn't really fit that well. -->
+This allows one to track specific historical changes to a relationship, without having to reference or query any of the Hubs or Links associated with said data.
 Using LSAT is a benefit of Data Vault 2.0 that allows maintaining historical data where end-dated relationships may need to be reopened or reactivated again without fear of losing any data.
-<!-- Tweaked above paragraph and migrated from the DK section.  LSAT's do not depend on a Driving Key.  -->
 
-**For example:** Imagine the operation of a bar, which opens for business on August 10, 2020.
-A bar will store kegs of different varieties of beer and then distribute those beverages through their tap system.
+**For example:** Imagine the operation of a tavern, which opens for business on August 10, 2020.
+A tavern will store kegs of different varieties of beer and then distribute those beverages through their tap system hooked up to a bar.
 
-This hypothetical bar has five (5) varieties of beer in stock: Pale Ale, Stout, Lager, IPA, and Cider.
+This hypothetical tavern has five (5) varieties of beer in stock: Pale Ale, Stout, Lager, IPA, and Cider.
 There is only one (1) tap for distribution.
 This architecture demonstrates a one-to-many relationship.
 There is one tap and many beers.
 The *type* of beer available on tap is, essentially, inconsequential.
 At any given time only one beer is going to be available despite there being five (5) different options.
 
-![One-to-Many Link Relationship](/bimlflex/concepts/images/beer-link-one-to-many.jpg "One-To_Many Link Relationship")
+![One-to-Many Link Relationship](/bimlflex/concepts/images/beer-link-one-to-many.png "One to Many Link Relationship")
 
-On month later on September 10, 2020 the bar decides to install a second tap subsequent to successful business operation.
+On month later on September 10, 2020 the tavern decides to install a second tap subsequent to successful business operation.
 Now there are two (2) possible options for available beer.
 The Hub for Taps can be edited to include a second tap without any issue.
-<!-- The architecture has now changed from a one-to-many relationship to many-to-many. -->
-<!-- 
-The above line is not correct.  The architecture is still one-to-many.  Tap #1 having both Pale Ale AND Stout at the SAME TIME would be many-to-many.
-The above example shows TWO taps, each with a separate relationships, and each only having ONE beer. 
--->
+This addition does not change the architecture of the model, and now there are two (2) one-to-many relationships.
 
-<!-- 
-## TODO: Also highlight the ability to accommodate a shift from many-to-on => many-to-many without issue.
-## Almost there but has the issues stated above.  You could use the next for lines as adjustments.
-## Take out the concept of tap and replace it with a BAR which would have multiple taps.  We start out only supplying one beer in Jan (due to one tap).
-## Then next month we add a second tap to the BAR.  At this point we have two active relationship to the bar, Pale Ale (Jan) and Stout (Feb).
-## This would be an example of many-to-many.  Important note, many-to-many CAN NOT have a Driving Key.  That is what I wanted to highlight.
--->
+![Two (2) One-to-Many Relationships](/bimlflex/concepts/images/beer-link-one-to-many-2.0.png "Two (2) One-to-Many Link Relationships")
 
-![Many-to-Many Link Relationship](/bimlflex/concepts/images/beer-link-many-to-many.jpg "Many-To_Many Link Relationship")
+To showcase a many-to-many relationship in this same example, a Hub for the Bar itself would be added with an additional Link between the Bar and the Taps.
+The Bar, a singular entity, now has many relationships to both Taps (*a possible two (2)*) and Beers (*a possible five (5)*).
 
-<!--
-##  TODO: Outline example of a Driving Key and demonstrate the termination of a new relationship coming into a driving key. ##
-##  TODO: Also highlight the requirement of a many-to-one and the potential pitfalls. ##
--->
+![Many-to-Many Link Relationship](/bimlflex/concepts/images/many-to-many-link-relationship-1.png "Many-to-Many Link Relationship")
 
-<!-- Refactor below into above examples. -->
+An additional example of a many-to-many relationship would be a single tap having both an active record for a empty keg and an active record for the current beer being served, which is detailed further below.
+
+>[!NOTE]
+> Many-to-many relationships CAN NOT have a Driving Key.
 
 ### Tracking by Driving Key
 
-<!-- 
-## TODO: Comment on how the above BEER/BAR design was an early business model which has since changed to your current BEER_TAP.
-## Something to the effect of: After the instalation of the second tap (a previously unforseen circumenstance) the old model became
-## difficulat to manage and report on.  Multiple active relationships were causing problems so after meeting with the business
-## to gather more information we created a TAP concept and associated TAP_BEER.
+In the example scenario the Taps business entity is defined as "driving," meaning that ETL enforces the logic that a single Tap cannot be associated with multiple beers at the same point in time.
 
-## There would also then also be a BAR_TAP relationship that would close the gap and complete the previous report requirements.
-## This is likely not needed to be mentioned though.  Just adding for context.
--->
+Referencing the same example of tavern operation, historical tracking through a Link Satellite in this example might look like such:
 
-<!-- 
-## Note on your Link name.  Generally the primary business concept (if there is one) would be placed first in the name.
-## In this case it is the TAP so it should really be TAP_BEER (or LNK_TAP_BEER if you want to use BFX default naming practice).
--->
+![Link Satellite Historical Tracking](/bimlflex/concepts/images/historical-tracking-lsat.png "Link Satellite Historical Tracking")
 
-In the above scenario the Taps business entity is defined as "driving," meaning that ETL enforces the logic that a single tap cannot be associated with multiple beers at the same point in time.
+"Zero Records" are optional records which indicate the first recognized interaction with a Driving Key. The paramount indicator for a zero record is an interaction with a Driving Key, not when a record first enters the system. In this instance our Driving Keys are the Tap Number, and zero records would appear as such:
 
-Referencing the above example of bar ownership again, a Link Satellite in this example might look like such:
-<!-- 
-## TODO: Do a similar example as below but for ## Historical Tracking above.
-| LNK_TAP_BAR | STATUS | EFFECTIVE_FROM | EFFECTIVE_TO | IS_CURRENT |
-| ----------- | ------ | -------------- | ------------ | ---------- |
-| 1001        | FULL   | 2020-08-10     | 9999-12-31   | Y          |
-| 2002        | FULL   | 2020-09-10     | 9999-12-31   | Y          |
--->
-
-![Link Satellite](/bimlflex/concepts/images/link-sat-beers.jpg "Link Satellite")
-
-<!-- The Link Satellite has, by design, created a "zero record" to initiate a historical data timeline. -->
-<!--The above line is not accurate for basic LSAT design, and the "zero record" is a DK reference, not LSAT. -->
-
-<!--
-The zero record acknowledges the business entity 1001 (beer on Tap #1) but acknowledges that nothing was known about this relationship until the first record, August 10, 2020, when the bar first opened and the relationship was created.
-The record for business entity 2002 (beer on Tap #2) was entered on September 10, 2020.
-This record does not require a zero record since it did not exist prior to the creation of any historical data.
--->
-<!-- The actual creation of the "zero record" is optional and not required so we should probably remove it from examples.  -->
-
-<!--
-Is isn't since when the record enters the system that determines the zero record creation, it is the relationship to the DK.
-If it is the first record of a DK (in this case it would be Tap Number) then it would get a zero record.
-2002 uses a separate TAP so it would get zero record.
-
-Corrected Zero Record Example.
-| LNK_TAP_BAR | STATUS  | EFFECTIVE_FROM | EFFECTIVE_TO | IS_CURRENT |
-| ----------- | ------- | -------------- | ------------ | ---------- |
-| 1001        | UNKNOWN | 1900-01-01     | 2020-08-10   | N          |
-| 1001        | FULL    | 2020-08-10     | 9999-12-31   | Y          |
-| 2002        | UNKNOWN | 1900-01-01     | 2020-09-10   | N          |
-| 2002        | FULL    | 2020-09-10     | 9999-12-31   | Y          |
--->
+![Zero Records](/bimlflex/concepts/images/zero-records-last.png "Zero Records")
 
 After enough pints sold a keg will be kicked (emptied).
 A new beer will then replace the old beer.
 Data Vault keeps historical data so the record for the now kicked beer will be end-dated, and a new record will be created for the new relationship.
 
-Assume that the Pale Ale on Tap #1 was kicked on October 10, 2020, and replaced later that same day with the cider being held in storage.
+Assume that the Pale Ale on Tap #1 was kicked on October 10, 2020, and replaced the following day with the cider being held in storage.
 
 The changes to inventory might appear as such in the Link and Link Satellite:
 
-![Link Satellite 2](/bimlflex/concepts/images/link-sat-beers-02.jpg "Link Satellite 2")
+![Link Satellite](/bimlflex/concepts/images/link-sat-01.png "Link Satellite")
 
-<!-- See inserted examples for what happens at each step. -->
-The record for Pale Ale on Tap #1 expired on October 10, 2020, the date the keg kicked.
+The record for Beer on Tap #1 expired on October 10, 2020, the date the keg kicked
 A new record was created to mark the termination on October 10, 2020, noting the status as "empty."
 
-| LNK_TAP_BAR | STATUS    | EFFECTIVE_FROM | EFFECTIVE_TO   | IS_CURRENT |
-| ----------- | --------- | -------------- | -------------- | ---------- |
-| 1001        | UNKNOWN   | 1900-01-01     | 2020-08-10     | N          |
-| 1001        | FULL      | 2020-08-10     | **2020-10-10** | **N**      |
-| **1001**    | **EMPTY** | **2020-10-10** | **9999-12-31** | **Y**      |
+Next, a new record will be created, and activated, to mark that a new Beer is now hooked up to Tap #1, with the status noted as "full."
 
-A new record was created, and activated, to mark the cider now hooked up to Tap #1, with the status noted as "full."
+![Link Satellite 2](/bimlflex/concepts/images/link-sat-02.png "Link Satellite 2")
 
-| LNK_TAP_BAR | STATUS   | EFFECTIVE_FROM | EFFECTIVE_TO   | IS_CURRENT |
-| ----------- | -------- | -------------- | -------------- | ---------- |
-| 1001        | UNKNOWN  | 1900-01-01     | 2020-08-10     | N          |
-| 1001        | FULL     | 2020-08-10     | 2020-10-10     | N          |
-| 1001        | EMPTY    | 2020-10-10     | **2020-10-10** | **N**      |
-| **1005**    | **FULL** | **2020-10-10** | **9999-12-31** | **Y**      |
+The two active relationships at this point in time, October 10, 2020, are Beer on Tap #1 and the separate Beer on Tap #2.
 
-The two active relationships at this point in time, October 10, 2020, are the Stout on Tap #2 and the Cider on Tap #1.
+![Link Satellite 3](/bimlflex/concepts/images/link-sat-03.png "Link Satellite 3")
 
-| LNK_TAP_BAR | STATUS  | EFFECTIVE_FROM | EFFECTIVE_TO | IS_CURRENT |
-| ----------- | ------- | -------------- | ------------ | ---------- |
-| 1001        | UNKNOWN | 1900-01-01     | 2020-08-10   | N          |
-| 1001        | FULL    | 2020-08-10     | 2020-10-10   | N          |
-| 1001        | EMPTY   | 2020-10-10     | 2020-10-10   | N          |
-| 1005        | FULL    | 2020-10-10     | 9999-12-31   | Y          |
-| 2002        | UNKNOWN | 1900-01-01     | 2020-09-10   | N          |
-| 2002        | FULL    | 2020-09-10     | 9999-12-31   | Y          |
+The final model for this architecture would look as such:
+
+![Link Satellite 4](/bimlflex/concepts/images/link-sat-04.png "Link Satellite 4")
+
+LSAT Taps Beer mirrors the records of LSAT Taps Bar, though it indicates the relationships of Taps to Beer , as opposed to Taps to Bar.
 
 ## BimlFlex Handling of Driving Keys
 
@@ -180,7 +113,7 @@ This will be automatically included in the ETL logic required and no separate **
 <!-- TODO: Show screens of the process in BimlFlex.  -->
 
 > [!NOTE]
-> Perquisites:
+> Prerequisites:
 >
 > - The Link must already be accelerated.
 > - The column to be used for the Driving Key must be on the LNK (not LSAT).
