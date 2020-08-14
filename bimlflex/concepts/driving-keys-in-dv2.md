@@ -1,9 +1,9 @@
 # Driving Keys in Data Vault
 
 A **Driving Key** is a **Unique Key** on a Link that is used to determine the effectivity of a relationship or series of relationships.
-This is commonly used when a relationship should be tracked based around a Business Concept itself as opposed to individual expiry records on the Link table.
+This is commonly used when a relationship should be tracked based around a Business Concept itself as opposed to individual expiry records on the Link Satellite.
 These can be used to enforce a many-to-one relationship on the otherwise many-to-many construct of a Link.
-The a Driving Key is used to shift the focus to a driving Business Concept from simply an observed interaction.
+The a Driving Key is used to shift the focus to a driving Business Concept over simply an observed interaction.
 
 ## Driving Key Observability
 
@@ -15,7 +15,7 @@ Driving Keys don't change a model, but rather indicate how ELT/ETL should be per
 ## Relationships in a Data Vault
 
 A core tenet of Data Vault modelling methodology is to track relationships in a Link and to be modeled as a many-to-many relationship.
-Effectivity is then tracked in a Satellite based on the observation of when a unique interaction of business concepts are observed.
+Effectivity is then tracked in a Satellite based on the observation of when a unique interaction of Business Concepts are observed.
 When a relationship is observed for the first time it is created and marked as active based on the date it was observed.
 When a relationship is terminated similar logic is used and the relationship is terminated based on the date of the observed termination.
 By nature these exist exclusively with no relation to any other observed relationship.
@@ -52,7 +52,8 @@ The Bar, a singular entity, now has many relationships to both Taps (*a possible
 
 ![Many-to-Many Link Relationship](/bimlflex/concepts/images/many-to-many-link-relationship-1.png "Many-to-Many Link Relationship")
 
-An additional example of a many-to-many relationship would be a single tap having both an active record for a empty keg and an active record for the current beer being served, which is detailed further below.
+An additional example of a many-to-many relationship would be a single tap having multiple active records for various beers that can also be active on other taps.
+This may be done when tracking status for a empty keg and an active record for the current beer being served.
 
 >[!NOTE]
 > Many-to-many relationships CAN NOT have a Driving Key.
@@ -65,7 +66,9 @@ Referencing the same example of tavern operation, historical tracking through a 
 
 ![Link Satellite Historical Tracking](/bimlflex/concepts/images/historical-tracking-lsat.png "Link Satellite Historical Tracking")
 
-"Zero Records" are optional records which indicate the first recognized interaction with a Driving Key. The paramount indicator for a zero record is an interaction with a Driving Key, not when a record first enters the system. In this instance our Driving Keys are the Taps, and zero records would appear as such:
+"Zero Records" are optional records which indicate the first recognized interaction with a Driving Key.
+The paramount indicator for a zero record is an interaction with a Driving Key, not when a record first enters the system.
+In this instance our Driving Keys are the Taps, and zero records would appear as such:
 
 ![Zero Records](/bimlflex/concepts/images/zero-records-last.png "Zero Records")
 
@@ -108,6 +111,12 @@ The simple process for both implied creation and manual creation of Driving Keys
 BimlFlex is able to automatically apply Driving Key to any relationship created from a table being loaded with a *MODEL OBJECT TYPE* = `Hub`.
 Due to the Foreign Keys in a database requiring a many-to-one in the source the application of a Driving Key scenario can be applied.
 This will be automatically included in the ETL logic required and no separate **Attribute** will be added in the **Attributes Editor**.
+
+> [!NOTE]
+> Requirements:
+>
+> - **Object** *ACCELERATOR OBJECT TYPE* = `Hub`
+> - A **Column** in the **Object** that references another *ACCELERATOR OBJECT TYPE* = `Hub`.
 
 ### Manual Creation of Driving Keys
 
