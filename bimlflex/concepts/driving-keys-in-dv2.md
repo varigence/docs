@@ -1,6 +1,6 @@
 # Driving Keys in Data Vault
 
-A **Driving Key** is a **Unique Key** on a Link that is used to determine the effectivity of relationship or series of relationships.
+A **Driving Key** is a **Unique Key** on a Link that is used to determine the effectivity of a relationship or series of relationships.
 This is commonly used when a relationship should be tracked based around a Business Concept itself as opposed to individual expiry records on the Link table.
 These can be used to enforce a many-to-one relationship on the otherwise many-to-many construct of a Link.
 The a Driving Key is used to shift the focus to a driving Business Concept from simply an observed interaction.
@@ -19,8 +19,8 @@ Effectivity is then tracked in a Satellite based on the observation of when a un
 When a relationship is observed for the first time it is created and marked as active based on the date it was observed.
 When a relationship is terminated similar logic is used and the relationship is terminated based on the date of the observed termination.
 By nature these exist exclusively with no relation to any other observed relationship.
-A Driving Key is required when a relationship should be tracked, observed and terminated based around a central Business Concept vs the relationship itself.
-Effectivity is then started and ended based on when a Business Concept was first observed and when a relationship change occurs on the driving business concept.
+A Driving Key is required when a relationship should be tracked, observed and terminated based around a central Business Concept and not simply the relationship itself.
+Effectivity is then started and ended based on when a Business Concept was first observed and when a relationship change occurs on the driving Business Concept.
 
 ### Tracking by Historical Relationship
 
@@ -40,10 +40,10 @@ At any given time only one beer is going to be available despite there being fiv
 
 ![One-to-Many Link Relationship](/bimlflex/concepts/images/beer-link-one-to-many.png "One to Many Link Relationship")
 
-On month later on September 10, 2020 the tavern decides to install a second tap subsequent to successful business operation.
+On month later on September 10, 2020 the tavern decides to install a second tap, at the same bar, subsequent to successful business operation.
 Now there are two (2) possible options for available beer.
 The Hub for Taps can be edited to include a second tap without any issue.
-This addition does not change the architecture of the model, and now there are two (2) one-to-many relationships.
+This addition does not change the architecture of the model, but now there are two (2) one-to-many relationships.
 
 ![Two (2) One-to-Many Relationships](/bimlflex/concepts/images/beer-link-one-to-many-2.0.png "Two (2) One-to-Many Link Relationships")
 
@@ -65,21 +65,21 @@ Referencing the same example of tavern operation, historical tracking through a 
 
 ![Link Satellite Historical Tracking](/bimlflex/concepts/images/historical-tracking-lsat.png "Link Satellite Historical Tracking")
 
-"Zero Records" are optional records which indicate the first recognized interaction with a Driving Key. The paramount indicator for a zero record is an interaction with a Driving Key, not when a record first enters the system. In this instance our Driving Keys are the Tap Number, and zero records would appear as such:
+"Zero Records" are optional records which indicate the first recognized interaction with a Driving Key. The paramount indicator for a zero record is an interaction with a Driving Key, not when a record first enters the system. In this instance our Driving Keys are the Taps, and zero records would appear as such:
 
 ![Zero Records](/bimlflex/concepts/images/zero-records-last.png "Zero Records")
 
 After enough pints sold a keg will be kicked (emptied).
-A new beer will then replace the old beer.
-Data Vault keeps historical data so the record for the now kicked beer will be end-dated, and a new record will be created for the new relationship.
+A new beer will then replace the now-empty beer.
+Data Vault keeps historical data so the record for the kicked beer will be end-dated and a new record will be created for the new relationship.
 
-Assume that the Pale Ale on Tap #1 was kicked on October 10, 2020, and replaced the following day with the cider being held in storage.
+Assume that the Pale Ale on Tap #1 was kicked on October 10, 2020, and replaced the following day with the Cider being held in storage.
 
 The changes to inventory might appear as such in the Link and Link Satellite:
 
 ![Link Satellite](/bimlflex/concepts/images/link-sat-01.png "Link Satellite")
 
-The record for Beer on Tap #1 expired on October 10, 2020, the date the keg kicked
+The record for Beer on Tap #1 expired on October 10, 2020, the date the keg kicked.
 A new record was created to mark the termination on October 10, 2020, noting the status as "empty."
 
 Next, a new record will be created, and activated, to mark that a new Beer is now hooked up to Tap #1, with the status noted as "full."
@@ -94,11 +94,12 @@ The final model for this architecture would look as such:
 
 ![Link Satellite 4](/bimlflex/concepts/images/link-sat-04.png "Link Satellite 4")
 
-LSAT Taps Beer mirrors the records of LSAT Taps Bar, though it indicates the relationships of Taps to Beer , as opposed to Taps to Bar.
+LSAT Taps Beer mirrors the records of LSAT Taps Bar, though it indicates the relationships of Taps to Beer, as opposed to Taps to Bar.
 
 ## BimlFlex Handling of Driving Keys
 
-<!-- TODO: General intro section. -->
+BimlFlex is optimized to recognize Driving Keys automatically, through the Accelerator allowing the framework to automatically apply Driving Key type relationships for any Links derived out of a Hub and be included in the load logic, or manual definition as determined by users.
+The simple process for both implied creation and manual creation of Driving Keys within BimlFlex are detailed below.
 
 ### Implied Creation of Driving Keys
 
@@ -109,8 +110,6 @@ Due to the Foreign Keys in a database requiring a many-to-one in the source the 
 This will be automatically included in the ETL logic required and no separate **Attribute** will be added in the **Attributes Editor**.
 
 ### Manual Creation of Driving Keys
-
-<!-- TODO: Show screens of the process in BimlFlex.  -->
 
 > [!NOTE]
 > Prerequisites:
@@ -129,6 +128,10 @@ The BimlFlex App will automatically enforce a Driving Key relationship on the LS
 | Attribute Type | Column                  |
 | Column         | Column to be used as DK |
 | Attribute      | IsDrivingKey            |
+
+The settings within BimlFlex are all adjusted in the "Add Attribute" dialogue box:
+
+![Manual Driving Key Definition](/bimlflex/concepts/images/object-field-dk.png "Manual Driving Key Definition")
 
 > [!NOTE]
 > For additional information regarding BimlFlex's assignment of Driving Keys or the technical walkthrough for manually defining Driving Keys, please reference the following documents:
