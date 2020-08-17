@@ -47,8 +47,7 @@ This addition does not change the architecture of the model, but now there are t
 
 ![Two (2) One-to-Many Relationships](/bimlflex/concepts/images/beer-link-one-to-many-2.0.png "Two (2) One-to-Many Link Relationships")
 
-To showcase a many-to-many relationship in this same example, a Hub for the Bar itself would be added with an additional Link between the Bar and the Taps.
-The Bar, a singular entity, now has many relationships to both Taps (*a possible two (2)*) and Beers (*a possible five (5)*).
+A many-to-many relationship would appear as such, showing multiple relationships between Taps (*a possible two (2)*) and Beers (*a possible five (5)*).
 
 ![Many-to-Many Link Relationship](/bimlflex/concepts/images/many-to-many-link-relationship-1.png "Many-to-Many Link Relationship")
 
@@ -94,20 +93,20 @@ The final model for this architecture would look as such:
 
 ![Link Satellite 4](/bimlflex/concepts/images/link-sat-04.png "Link Satellite 4")
 
-LSAT Taps Beer mirrors the records of LSAT Taps Bar, though it indicates the relationships of Taps to Beer, as opposed to Taps to Bar.
-
 ## BimlFlex Handling of Driving Keys
 
-BimlFlex is optimized to recognize Driving Keys automatically, through the Accelerator allowing the framework to automatically apply Driving Key type relationships for any Links derived out of a Hub and be included in the load logic, or manual definition as determined by users.
+BimlFlex is optimized to recognize Driving Keys automatically. The Accelerator allows the framework to automatically apply Driving Key type relationships for any Links derived out of a Hub and be included in the load logic. Alternatively, users may manually define Driving Keys through simple settings.
 The simple process for both implied creation and manual creation of Driving Keys within BimlFlex are detailed below.
 
 ### Implied Creation of Driving Keys
 
-<!-- TODO: Show screens of the Object table set appropriately and of the columns tab showing a relationship that will have a DK.  -->
-
 BimlFlex is able to automatically apply Driving Key to any relationship created from a table being loaded with a *MODEL OBJECT TYPE* = `Hub`.
 Due to the Foreign Keys in a database requiring a many-to-one in the source the application of a Driving Key scenario can be applied.
 This will be automatically included in the ETL logic required and no separate **Attribute** will be added in the **Attributes Editor**.
+
+![BimlFlex Objects Tab](/bimlflex/concepts/images/bfx-objects-tab.png "BimlFlex Objects Tab")
+
+![BimlFlex Reference Table and Column](/bimlflex/concepts/images/bfx-reference-table-and-column.png "BimlFlex Reference Table and Column")
 
 ### Manual Creation of Driving Keys
 
@@ -139,3 +138,4 @@ The settings within BimlFlex are all adjusted in the "Add Attribute" dialogue bo
 > - [Data Vault Templates](xref:data-vault-templates)
 > - [BimlFlex Data Vault Best Practices](xref:data-vault-standards)
 > - [Driving Keys](xref:driving-keys)
+
