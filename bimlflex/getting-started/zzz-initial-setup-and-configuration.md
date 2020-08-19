@@ -34,11 +34,11 @@ In this session, we go through the initial configuration of the BimlFlex project
 
 From the start page, create a new BimlFlex project
 
-![Create New Project](../user-guide/images/bimlflex-ss-v5-create-new-project.png "Create New Project")
+![Create New Project](images/bimlflex-ss-v5-create-new-project.png "Create New Project")
 
 Options for creating a new BimlFlex Project.
 
-![New BimlFlex Project](../user-guide/images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
+![New BimlFlex Project](images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
 
 The project creation options include project file name and location and the Excel Add-in file. The Excel file is stored in the default installation location of the software:
 
@@ -58,7 +58,7 @@ The Excel Add-in is the Excel spreadsheet with the Add-in code for the Excel-bas
 
 Once the project is created, it is possible to open it directly from the folder or by opening the project file from BimlStudio.
 
-![Empty Project](../user-guide/images/bimlflex-ss-v5-empty-project.png "Empty Project")
+![Empty Project](images/bimlflex-ss-v5-empty-project.png "Empty Project")
 
 ### Set up Databases
 
@@ -68,7 +68,7 @@ The orchestration catalog database contains run-time information about package e
 
 Create the required BimlFlex databases by clicking Setup BimlFlex in the Ribbon.
 
-![Setup BimlFlex](../user-guide/images/bimlflex-ss-v5-setup-bimlflex.png "Setup BimlFlex")
+![Setup BimlFlex](images/bimlflex-ss-v5-setup-bimlflex.png "Setup BimlFlex")
 
 The default naming convention for the database names can be overridden to identify projects or environments.
 
@@ -80,7 +80,7 @@ It is also possible to deploy the databases through the BimlFlex Support Utility
 
 Once the databases are available, it is time to create a customer. The Customer entity holds a separate set of metadata in the database and can be used to identify different projects, versions, customers, variations.
 
-![Create Customer](../user-guide/images/bimlflex-ss-v5-create-customer.png "Create Customer")
+![Create Customer](images/bimlflex-ss-v5-create-customer.png "Create Customer")
 
 The customer is represented internally in the database with a GUID, so if metadata is reused or manually managing the data in the database, it is possible to specify it here. For typical creation, it is recommended to auto-generate it.
 
@@ -92,7 +92,7 @@ Once the Project, Databases, Customer, and Version are setup the Excel-based Met
 
 The Excel-based Metadata Editor is opened from the BimlFlex Ribbon tab in BimlStudio. The editor provides a familiar and productive metadata management environment.
 
-![New project in Excel](../user-guide/images/bimlflex-ss-v5-excel-new-project.png "New project in Excel")
+![New project in Excel](images/bimlflex-ss-v5-excel-new-project.png "New project in Excel")
 
 The BimlFlex Excel metadata editor comes with an additional Excel tab in the Ribbon for interacting with BimlFlex. The first step is to open the metadata connection pane and connect to the BimlFlex metadata database (default name BimlFlex).
 
@@ -100,13 +100,13 @@ Once the connection is defined the metadata can be read into Excel. The master d
 
 Retrieve all metadata into Excel by clicking the `Get All Entities` and `Get All Settings` buttons in the Excel UI.
 
-![Get All Entities](../user-guide/images/bimlflex-ss-v5-excel-get-all-entities.png "Get All Entities")
+![Get All Entities](images/bimlflex-ss-v5-excel-get-all-entities.png "Get All Entities")
 
 The first time an empty customer is opened there is an option to create sample metadata.
 
 This helps guide the first projects and provides a base set of metadata to build on.
 
-![Create Sample Metadata](../user-guide/images/bimlflex-ss-v5-excel-create-sample-metadata.png "Create Sample Metadata")
+![Create Sample Metadata](images/bimlflex-ss-v5-excel-create-sample-metadata.png "Create Sample Metadata")
 
 Once the metadata entities and settings are refreshed, it is possible to review the sample data and default settings.
 
@@ -118,7 +118,7 @@ This step includes the required and optional configurations available for the Bi
 
 BimlStudio project options include settings such as the target SQL Server and SSIS versions and project or package deployments for SSIS. Most of these are optional to change, but the target version and deployment method needs to be correct for the packages to run on the destination server.
 
-![BimlStudio Project Configuration](../user-guide/images/bimlstudio-ss-v5-project-configuration.png "BimlStudio Project Configuration")
+![BimlStudio Project Configuration](images/bimlstudio-ss-v5-project-configuration.png "BimlStudio Project Configuration")
 
 ### Metadata configuration
 
@@ -129,4 +129,4 @@ This is described in more detail in:
 * [](xref:bimlflex-metadata-configurations)
 * [](xref:bimlflex-metadata-settings)
 
-![Metadata Configurations sheet](../user-guide/images/bimlflex-ss-v5-excel-configurations-sheet.png "Metadata Configurations sheet")
+![Metadata Configurations sheet](images/bimlflex-ss-v5-excel-configurations-sheet.png "Metadata Configurations sheet")

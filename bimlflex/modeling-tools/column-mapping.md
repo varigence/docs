@@ -20,7 +20,7 @@ Follow the guide for [Source To Staging](../concepts/source-to-staging-templates
 
 Follow the guide for [Data Vault Accelerator](accelerator.md) to get a Raw Data Vault schema which will be used in this guide.
 
-![Column Mapping User Interface](../metadata-editors/images/bimlflex-app-column-mapping-full-ui.png "Column Mapping User Interface")
+![Column Mapping User Interface](images/bimlflex-app-column-mapping-full-ui.png "Column Mapping User Interface")
 
 The screenshot above shows the Column Mapping of some Source Tables to  their Target Raw Data Vault as mapped during the Data Vault Accelerator publish.
 
@@ -32,25 +32,25 @@ By clicking on a Table or Column a user gets a pop up of all the actions buttons
 
 There are a few new actions available that are only applicable to the Column Mapping diagram which will be highlighted below.
 
-![Column Mapping Action Icons Minimized](../metadata-editors/images/bimlflex-app-column-mapping-actions-minimized.png "Column Mapping Action Icons Maximized")
+![Column Mapping Action Icons Minimized](images/bimlflex-app-column-mapping-actions-minimized.png "Column Mapping Action Icons Maximized")
 
 By Clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
 
-![Column Mapping Action Icons Maximized](../metadata-editors/images/bimlflex-app-column-mapping-actions-maximized.png "Column Mapping Action Icons Maximized")
+![Column Mapping Action Icons Maximized](images/bimlflex-app-column-mapping-actions-maximized.png "Column Mapping Action Icons Maximized")
 
 | Icon | Action | Description |
 |--- |--- |--- |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Mapping</span> | **Mapping Diagram Action**. This removes the mapping between columns. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show All Mappings</span> | **Mapping Diagram Action**. Add all the mapped tables to the view by interrogating the source or target mappings. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/filter-clear.svg"/></div> | <span class="nowrap-col m-5">Hide Table</span> | **Mapping Diagram Action**. Remove the table from the view. Convenience action which is the same as deselecting a table on the source or target selection list.  |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current schema diagram layout will be persisted in memory for you to come back to. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding `Ctrl` key.|
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Add an **Integration Key** using the selected columns. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding `Ctrl` key. Delete or Archive the selected columns. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/create-pit.svg"/></div> | <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/create-bridge.svg"/></div> | <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/split-columns.svg"/></div> | <span class="nowrap-col m-5">Spit</span> | Split columns from a Satellite. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/revert-split-columns.svg"/></div> | <span class="nowrap-col m-5">Revert Spit</span> | Revert columns that were split from a Satellite. |
+| <div class="icon-col m-5"><img src="images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Mapping</span> | **Mapping Diagram Action**. This removes the mapping between columns. |
+| <div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show All Mappings</span> | **Mapping Diagram Action**. Add all the mapped tables to the view by interrogating the source or target mappings. |
+| <div class="icon-col m-5"><img src="images/svg-icons/filter-clear.svg"/></div> | <span class="nowrap-col m-5">Hide Table</span> | **Mapping Diagram Action**. Remove the table from the view. Convenience action which is the same as deselecting a table on the source or target selection list.  |
+| <div class="icon-col m-5"><img src="images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current schema diagram layout will be persisted in memory for you to come back to. |
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding `Ctrl` key.|
+| <div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Add an **Integration Key** using the selected columns. |
+| <div class="icon-col m-5"><img src="images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding `Ctrl` key. Delete or Archive the selected columns. |
+| <div class="icon-col m-5"><img src="images/svg-icons/create-pit.svg"/></div> | <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
+| <div class="icon-col m-5"><img src="images/svg-icons/create-bridge.svg"/></div> | <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
+| <div class="icon-col m-5"><img src="images/svg-icons/split-columns.svg"/></div> | <span class="nowrap-col m-5">Spit</span> | Split columns from a Satellite. |
+| <div class="icon-col m-5"><img src="images/svg-icons/revert-split-columns.svg"/></div> | <span class="nowrap-col m-5">Revert Spit</span> | Revert columns that were split from a Satellite. |
 
 ### Drag and Drop Actions
 
@@ -66,7 +66,7 @@ Tables can be dragged around on the screen to make the layout easier to view.
 
 ### Filtering Tables
 
-![Filtered Tables](../metadata-editors/images/bimlflex-app-column-mapping-selection-panes.png "Filtered Tables")
+![Filtered Tables](images/bimlflex-app-column-mapping-selection-panes.png "Filtered Tables")
 
 Use filtering in the Selection pane to see only specific tables in your view. There are two Selection Panes in the Column Mapping diagram. The Source and Target selection panes are related and have certain rules which are enforced:
 
@@ -85,7 +85,7 @@ Examples:
 * To view only SRC => SATs a user can select the Satellites in the target pane
 * To view only SRC => HUBs and LNKs a user can select the Hubs and Links in the target pane
 
-![Filtered HUB Tables](../metadata-editors/images/bimlflex-app-column-mapping-hubs.png "Filtered HUB Tables")
+![Filtered HUB Tables](images/bimlflex-app-column-mapping-hubs.png "Filtered HUB Tables")
 
 The example above shows Source to Hub mappings.
 
@@ -100,7 +100,7 @@ To illustrate this, see the image below.
 * If a user de-selects the HUB it will only remove the HUB, but if he de-selects the HUB and the SAT it will also remove the Source table.
 * If a user de-selects the Source table it will also remove the HUB and the SAT tables.
 
-![De-Select Tables](../metadata-editors/images/bimlflex-app-column-mapping-de-select.png "De-Select Tables")
+![De-Select Tables](images/bimlflex-app-column-mapping-de-select.png "De-Select Tables")
 
 ### Moving Columns between Satellites
 
@@ -112,16 +112,16 @@ The images of the Customer table mapping below illustrate this action:
 
 * Start by splitting out the Name columns into a Name Satellite.
 
-![Split SAT Start](../metadata-editors/images/bimlflex-app-column-mapping-split-start.png "Split SAT Start")
+![Split SAT Start](images/bimlflex-app-column-mapping-split-start.png "Split SAT Start")
 
 * This is what it looks like after splitting out the Name Satellite.
 
-![Split SAT Done](../metadata-editors/images/bimlflex-app-column-mapping-split-done.png "Split SAT Done")
+![Split SAT Done](images/bimlflex-app-column-mapping-split-done.png "Split SAT Done")
 
 * Now, drag the Title column into a Name Satellite.
 
-![Split SAT Drag Title](../metadata-editors/images/bimlflex-app-column-mapping-split-drag-title.png "Split SAT Drag Title")
+![Split SAT Drag Title](images/bimlflex-app-column-mapping-split-drag-title.png "Split SAT Drag Title")
 
 * You should end up with the Title column in the Name Satellite.
 
-![Split SAT Drag Title Done](../metadata-editors/images/bimlflex-app-column-mapping-split-drag-title-done.png "Split SAT Drag Title Done")
+![Split SAT Drag Title Done](images/bimlflex-app-column-mapping-split-drag-title-done.png "Split SAT Drag Title Done")

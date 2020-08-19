@@ -20,7 +20,7 @@ Follow the guide for [Source To Staging](../concepts/source-to-staging-templates
 
 Follow the guide for [Data Vault Accelerator](accelerator.md) to get a Raw Data Vault schema which will be used in this guide.
 
-![Schema Diagram User Interface](../metadata-editors/images/bimlflex-app-schema-diagram-full-ui.png "Schema Diagram User Interface")
+![Schema Diagram User Interface](images/bimlflex-app-schema-diagram-full-ui.png "Schema Diagram User Interface")
 
 The screenshot above shows the Schema Diagram of a subset of the Raw Data Vault data as generated during the Data Vault Accelerator guide.
 
@@ -38,27 +38,27 @@ There are convenience actions available on most of the tables and columns.
 
 By clicking on a Table or Column a user gets a pop up of all the actions buttons available. The first click will show a minimized view with only the icons with tooltips.
 
-![Accelerator Action Icons Minimized](../metadata-editors/images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
+![Accelerator Action Icons Minimized](images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
 
 By Clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
 
-![Accelerator Action Icons Maximized](../metadata-editors/images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
+![Accelerator Action Icons Maximized](images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
 
 | Icon | Action | Description |
 |--- |--- |--- |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/add-reference.svg"/></div> | <span class="nowrap-col m-5">Add Reference</span> | Add a reference. This can also be done by dragging a column onto the target table. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This action removes the reference link, not the column. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current Schema Diagram layout will be persisted in memory for you to come back to. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Add an integration key using the selected columns. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show Related</span> | Add all the related tables to the view by interrogating the direct references. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive the selected columns. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/create-pit.svg"/></div> | <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/create-bridge.svg"/></div> | <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
+| <div class="icon-col m-5"><img src="images/svg-icons/add-reference.svg"/></div> | <span class="nowrap-col m-5">Add Reference</span> | Add a reference. This can also be done by dragging a column onto the target table. |
+| <div class="icon-col m-5"><img src="images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This action removes the reference link, not the column. |
+| <div class="icon-col m-5"><img src="images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current Schema Diagram layout will be persisted in memory for you to come back to. |
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key. |
+| <div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Add an integration key using the selected columns. |
+| <div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show Related</span> | Add all the related tables to the view by interrogating the direct references. |
+| <div class="icon-col m-5"><img src="images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive the selected columns. |
+| <div class="icon-col m-5"><img src="images/svg-icons/create-pit.svg"/></div> | <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
+| <div class="icon-col m-5"><img src="images/svg-icons/create-bridge.svg"/></div> | <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
 
 Note the new Actions available on the Raw Data Vault Hubs.
 
-![Hub Action Icons Maximized](../metadata-editors/images/bimlflex-app-schema-diagram-hub-actions-show-columns.png "Hub Action Icons Maximized")
+![Hub Action Icons Maximized](images/bimlflex-app-schema-diagram-hub-actions-show-columns.png "Hub Action Icons Maximized")
 
 ### Drag and Drop Actions
 
@@ -78,12 +78,12 @@ Tables can be dragged around on the screen to make the layout easier to view. Th
 
 ### Filtering Tables
 
-![Filtered Tables](../metadata-editors/images/bimlflex-app-schema-diagram-filtered-tables.png "Filtered Tables")
+![Filtered Tables](images/bimlflex-app-schema-diagram-filtered-tables.png "Filtered Tables")
 
 Use filtering in the Selection pane to see only specific tables in your view. There are selection fields for *Integration Stage*, *Record Source* and *Model Grouping* which allow fine grain filtering of tables. Note that the *Record Source* and *Model Grouping* fields will be hidden if there are no options to filter by.
 
 ### Data Vault Backbone
 
-![Data Vault Backbone](../metadata-editors/images/bimlflex-app-schema-diagram-rdv-backbone.png "Data Vault Backbone")
+![Data Vault Backbone](images/bimlflex-app-schema-diagram-rdv-backbone.png "Data Vault Backbone")
 
 The default schema will allow all tables to be selected. By selecting only the Hubs and Links in the filtering pane a user can view the Data Vault Backbone and review the CBC's and UOW's.

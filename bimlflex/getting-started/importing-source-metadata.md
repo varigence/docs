@@ -18,7 +18,7 @@ Validate the settings, unselect the `Import Views` to only import metadata from 
 
 Note that all the options in the `Import Metadata` screen are populated from Settings and can be overridden in the `Connection` or `Project` by using `Attributes`. To view all the relevant settings, filter the `Settings Group` by `Model`.
 
-![BimlStudio - Set Project Target Architecture](../metadata-editors/images/bimlflex-app-import-metadata-settings.png)
+![BimlStudio - Set Project Target Architecture](images/bimlflex-app-import-metadata-settings.png)
 
 BimlFlex will read all specified metadata from the chosen connection into the BimlFlex metadata repository.
 

@@ -34,7 +34,7 @@ More about [Import Metadata](../concepts/importing-metadata.md).
 
 Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modeling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
-![Whiteboard Model](../metadata-editors/images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
+![Whiteboard Model](images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
 Once the target model is drafted, compare the accelerated metadata with the expected outcome and tweak accordingly.
 
@@ -84,16 +84,16 @@ In the preview, it is also possible to filter the tables used for the preview fr
 
 Constraining the Data Vault Acceleration to a subset allows for a more agile delivery where valuable parts of the solution can be put to good use as soon as they are done.
 
-![Accelerator User Interface](../metadata-editors/images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
+![Accelerator User Interface](images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
 
 The Accelerator shows the source and preview side-by-side with options to collapse each pane or to resize the panes by dragging the splitter.
 
 | Icon | Description |
 | ---- | ----------- |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/diagram-view.svg"/></div> | Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/print.svg"/></div> | Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/refresh.svg"/></div> | Refresh the whole layout or you can change the layout as you like by dragging tables. |
-| <div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/publish.svg"/></div> | Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
+| <div class="icon-col m-5"><img src="images/svg-icons/diagram-view.svg"/></div> | Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
+| <div class="icon-col m-5"><img src="images/svg-icons/print.svg"/></div> | Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
+| <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg"/></div> | Refresh the whole layout or you can change the layout as you like by dragging tables. |
+| <div class="icon-col m-5"><img src="images/svg-icons/publish.svg"/></div> | Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
 
 Iterating through the metadata and updating the model to better support the target Data Vault model, each time a user should set the updated metadata to be persisted to the Metadata Database. This will create all Data Vault tables and columns as well as the Source To Target mappings needed to populate the Data Vault from the chosen source.
 
@@ -141,25 +141,25 @@ There are convenience actions available on most of the tables and columns in bot
 
 By clicking on a Table or Column a user gets a pop up of all the actions buttons available. The first click will show a minimized view with only the icons with tooltips.
 
-![Accelerator Action Icons Minimized](../metadata-editors/images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
+![Accelerator Action Icons Minimized](images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
 
 By clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
 
-![Accelerator Action Icons Maximized](../metadata-editors/images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
+![Accelerator Action Icons Maximized](images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
 
 | Icon | Action | Description |
 |--- |--- |--- |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/add-reference.svg"/></div> | <span class="nowrap-col m-5">Add Reference</span> | Source action to add a reference. This can also be done by dragging a column onto the target table. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This action removes the reference link, not the column. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Source action to navigate to table or column. The current Accelerator layout will be persisted in memory for you to come back to. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Source action to open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Source action to add an integration key using the selected columns. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show Related</span> | Source action to add all the related tables by interrogating the direct references. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Source or Preview bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive source columns. Exclude preview columns. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/split-columns.svg"/></div> | <span class="nowrap-col m-5">Spit</span> | Preview action to split columns from a Satellite. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/revert-split-columns.svg"/></div> | <span class="nowrap-col m-5">Revert Spit</span> | Preview action to revert columns that were split from a Satellite or to revert a Unit of Work. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/append-record-source.svg"/></div> | <span class="nowrap-col m-5">Append Record Source</span> | Preview action to appended record source to a Satellite name. |
-|<div class="icon-col m-5"><img src="../metadata-editors/images/svg-icons/remove-record-source.svg"/></div> | <span class="nowrap-col m-5">Remove Record Source</span> | Preview action to remove appended record source from a Satellite name. |
+|<div class="icon-col m-5"><img src="images/svg-icons/add-reference.svg"/></div> | <span class="nowrap-col m-5">Add Reference</span> | Source action to add a reference. This can also be done by dragging a column onto the target table. |
+|<div class="icon-col m-5"><img src="images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This action removes the reference link, not the column. |
+|<div class="icon-col m-5"><img src="images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Source action to navigate to table or column. The current Accelerator layout will be persisted in memory for you to come back to. |
+|<div class="icon-col m-5"><img src="images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Source action to open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key. |
+|<div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Source action to add an integration key using the selected columns. |
+|<div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show Related</span> | Source action to add all the related tables by interrogating the direct references. |
+|<div class="icon-col m-5"><img src="images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Source or Preview bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive source columns. Exclude preview columns. |
+|<div class="icon-col m-5"><img src="images/svg-icons/split-columns.svg"/></div> | <span class="nowrap-col m-5">Spit</span> | Preview action to split columns from a Satellite. |
+|<div class="icon-col m-5"><img src="images/svg-icons/revert-split-columns.svg"/></div> | <span class="nowrap-col m-5">Revert Spit</span> | Preview action to revert columns that were split from a Satellite or to revert a Unit of Work. |
+|<div class="icon-col m-5"><img src="images/svg-icons/append-record-source.svg"/></div> | <span class="nowrap-col m-5">Append Record Source</span> | Preview action to appended record source to a Satellite name. |
+|<div class="icon-col m-5"><img src="images/svg-icons/remove-record-source.svg"/></div> | <span class="nowrap-col m-5">Remove Record Source</span> | Preview action to remove appended record source from a Satellite name. |
 
 ### Drag and Drop Actions
 
@@ -184,7 +184,7 @@ The first Acceleration step is to accelerate tables defined as Satellites. It wi
 
 It is possible to split Satellite columns into separate Satellites. This is useful for when part of the data in the source table changes more frequently. Behind the scenes the ModelGrouping name will be added to the end of the Satellite name and the data from the source will go into this separate Satellite as well as the main Satellite.
 
-![Accelerator Action - Split Satellite -center](../metadata-editors/images/bimlflex-app-accelerator-actions-split-sat.png "Accelerator Action - Split Satellite")
+![Accelerator Action - Split Satellite -center](images/bimlflex-app-accelerator-actions-split-sat.png "Accelerator Action - Split Satellite")
 
 The sample above shows how the "Customer" source table Accelerated into a "HUB_Customer" and two separate Satellites. Notice the "pdv" schema shows that this is a preview. Once published the existing table will have an "rdv" schema.
 
@@ -212,7 +212,7 @@ The UOW defines the granularity of the relationship between the entities. It is 
 
 Using the ModelGrouping attribute, a user can define the granularity from the source table to group multiple Foreign Key relations into a single Link
 
-![Unit of Work Link Grouping -center](../metadata-editors/images/bimlflex-app-accelerator-actions-uow.png "Unit of Work Link Grouping")
+![Unit of Work Link Grouping -center](images/bimlflex-app-accelerator-actions-uow.png "Unit of Work Link Grouping")
 
 Watch the video to see how to group the 3 Links above into a single Unit Of Work:
 
@@ -232,11 +232,11 @@ There are overrides for Objects as well as Columns
 
 This column contains the actual table name to be used as after the solution is modelled.
 
-![Change Model Override Name](../metadata-editors/images/bimlflex-app-accelerator-actions-modeloverridename.png "Change Model Override Name")
+![Change Model Override Name](images/bimlflex-app-accelerator-actions-modeloverridename.png "Change Model Override Name")
 
 If a source system has entity names like "GL002" and the actual business name is "GeneralLedger" the Accelerator will convert this to "[HUB_GeneralLedger]" and "[SAT_GeneralLedger]"
 
-![Change Model Override Name Result](../metadata-editors/images/bimlflex-app-accelerator-actions-modeloverridename-result.png "Change Model Override Name Result")
+![Change Model Override Name Result](images/bimlflex-app-accelerator-actions-modeloverridename-result.png "Change Model Override Name Result")
 
 The image above shows the previous Unit Of Work example with "SalesOrderHeader" overridden with "Sale"
 
@@ -264,7 +264,7 @@ While the same column names are used in source to staging to persistent staging,
 
 If a source system has column names like "GL002CD123" and the actual business name is "GeneralLedgerCode" the Accelerator will convert this to "[GeneralLedgerCode]"
 
-![Change Model Override Name](../metadata-editors/images/bimlflex-app-accelerator-actions-col-modeloverridename.png "Change Model Override Name")
+![Change Model Override Name](images/bimlflex-app-accelerator-actions-col-modeloverridename.png "Change Model Override Name")
 
 The image above shows "PostalCode" overridden with "ZipCode".
 
@@ -288,7 +288,7 @@ Once the metadata has been modelled and the preview represents the target model 
 
 By clicking the Publish DV Import the new data will be committed to the Metadata database and made available as a persisted Schema Diagram, in the application screens for edit and in BimlFlex Excel for bulk edit.
 
-![Publish Metadata Changes](../metadata-editors/images/bimlflex-app-accelerator-publish.png "Publish Metadata Changes")
+![Publish Metadata Changes](images/bimlflex-app-accelerator-publish.png "Publish Metadata Changes")
 
 The target Connection and Project will be automatically selected based on your configuration and you may change the Project if you have multiple eligible target projects.
 
