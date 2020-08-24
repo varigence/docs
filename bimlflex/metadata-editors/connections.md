@@ -19,7 +19,7 @@ The following sections describe the UI elements of the **Connections Editor** an
 
 ### Cloud Based Linked Services
 
-Connections can be enabled to work with cloud based linked services. For information on linked service connections and setup see [](xref:create-linked-service-connection).
+**Connections** can be enabled to work with cloud based linked services. For information on linked service connections and setup see [](xref:create-linked-service-connection).
 
 ## Details Tab
 

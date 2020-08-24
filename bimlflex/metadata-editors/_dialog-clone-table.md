@@ -8,7 +8,7 @@ The [Clone Table] function is provided to allow for quick generation of **Dimens
 
 | Option                     | Description |
 | -------------------------- | ----------- |
-| Overwrite Existing         | When enabled if the **Object** or associated **Columns** already exists, the **Object** and/or **Columns** will be overridden with current settings.  When disabled only not existing entities will be created. |
+| Overwrite Existing         | When enabled if the **Object** or associated **Columns** already exist, the **Object** and/or **Columns** will be overridden with current settings.  When disabled only not existing entities will be created. |
 | Add Target Column Mappings | This will automatically map the appropriate **Target Columns** required to build the table. |
 | Add Identity Column        | Adds an **IDENTITY** column to be used as the **Surrogate Key** (SK) for the cloned table.  This is common among **Dimensions** to support **Type 2** (or history tracking) values.  Generally not used when building a **Fact** unless there is a specific use case. |
 

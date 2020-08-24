@@ -8,7 +8,7 @@ Parameters for load queries are added either as metadata in the Parameters sheet
 
 Extension Points can be added for more complex parameters that require custom logic.  
 
-Parameters added to a project, batch package or regular package can be used as any other SSIS parameter. BimlFlex applies standard practices for using parameters but supports any custom use of added parameters.  
+Parameters added to a project, batch package, or regular package can be used as any other SSIS parameter. BimlFlex applies standard practices for using parameters but supports any custom use of added parameters.  
 
 [More info about Parameters](../concepts/load-parameters.md).  
 

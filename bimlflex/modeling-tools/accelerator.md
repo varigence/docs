@@ -4,7 +4,7 @@ title: Data Vault Accelerator
 ---
 # Data Vault Accelerator
 
-## On Data Vault modeling
+## On Data Vault Modeling
 
 This guide provides information on the Accelerator but assumes a sound understanding of the Data Vault modeling approach.
 
@@ -30,7 +30,7 @@ Follow the guide for [Source To Staging](../concepts/source-to-staging-templates
 
 More about [Import Metadata](../concepts/importing-metadata.md).
 
-### The Source and Target model
+### The Source and Target Model
 
 Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modeling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
 
@@ -61,13 +61,13 @@ Based on the source metadata and the source database, the source model can be us
 * Is based on Core Business Concepts
 * Describes events and transactions through the relations between the Core Business Concepts.
 
-The accelerator will use the metadata in the source for the project to derive the potential Hubs, Links and Satellites. The derived Data Vault model is available to preview and refine through editing the metadata and updating the preview.
+The Accelerator will use the metadata in the source for the project to derive the potential Hubs, Links and Satellites. The derived Data Vault model is available to preview and refine through editing the metadata and updating the preview.
 
 The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault preview allows a rapid design cycle of the Raw Data Vault.
 
 Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become part of the normal metadata set.
 
-### Sample workflow
+### Sample Workflow
 
 The following narrative will guide us through the Accelerator process end to end. It is part of the overall BimlFlex workflow described earlier.
 
@@ -101,7 +101,7 @@ If there is a need to update the model and rerun the preview, it can be done at 
 
 Note that the accelerator will not resurface any entities already accelerated and marked as excluded or deleted. To see these entities, include them in the project by removing the excluded/deleted flag.
 
-## Updating the metadata to meet requirements
+## Updating the Metadata to Meet Requirements
 
 There are numerous options for manipulating the source metadata so that the Accelerator will produce the desired Data Vault model. Some of the common requirements include:
 
@@ -111,7 +111,7 @@ There are numerous options for manipulating the source metadata so that the Acce
 * Separating out data into different Satellites based on rate of change, storage requirements or similar
 * Reviewing Driving Key relationships for Links where there is no one FK relationship in the source
 
-## The Analyze Rules for BimlFlex Accelerator
+## Analyze The Rules for BimlFlex Accelerator
 
 There are a set of rules applied through the Accelerator to make it perform what it does.
 
@@ -121,11 +121,11 @@ The first rule applied is using the source metadata to derive the Table type. By
 
 Every table with no incoming foreign keys and only one outgoing foreign key with all the referencing columns also primary key columns and no other columns are part of the primary key is a candidate to become a Satellite source table.
 
-### Mark as links
+### Mark as Links
 
 Every table with no incoming foreign keys and more than one outgoing foreign key with all the referencing columns also primary key columns is a candidate to become a Link source table.
 
-### Mark as hubs
+### Mark as Hubs
 
 Tables that don't fit any of the categories above are going to be Hub source tables.
 
@@ -180,7 +180,7 @@ Tables can be dragged around on the screen to make the layout easier to view. Th
 
 ### Accelerate Satellites
 
-The first Acceleration step is to accelerate tables defined as Satellites. It will look for the defined Integration key and use it as the Surrogate Key for the connection to the Hub. Once the Key to use is defined and added as the hashed surrogate key the rest of the columns in the Satellite table are added as Satellite attributes.
+The first Acceleration step is to accelerate tables defined as Satellites. It will look for the defined Integration Key and use it as the Surrogate Key for the connection to the Hub. Once the Key to use is defined and added as the hashed Surrogate Key the rest of the columns in the Satellite table are added as Satellite attributes.
 
 It is possible to split Satellite columns into separate Satellites. This is useful for when part of the data in the source table changes more frequently. Behind the scenes the ModelGrouping name will be added to the end of the Satellite name and the data from the source will go into this separate Satellite as well as the main Satellite.
 
@@ -190,7 +190,7 @@ The sample above shows how the "Customer" source table Accelerated into a "HUB_C
 
 ### Accelerate Links
 
-The Link tables in Data Vault are many to many relationship tables. Instead of having one-way foreign keys in the entities the relationship between entities is defined in a separate table.
+The Link tables in Data Vault are many to many relationship tables. Instead of having one-way Foreign Keys in the entities the relationship between entities is defined in a separate table.
 
 The tables identified as Links by the Accelerator will be similar. They already have the relationships between the source tables defined and technical keys to the surrounding tables. The Foreign Keys will be translated into Surrogate Keys linking to the respective Hubs.
 
@@ -280,11 +280,11 @@ An example would be the "SalesOrderLine" source table where the "ShippingAddress
 
 Two relationships will be created with the ModelReference forming part of the name. This attribute is auto-generated when importing metadata and can be overridden.
 
-## Final review and preview publish
+## Final Review and Preview Publish
 
 Once the metadata has been modelled and the preview represents the target model a user will then publish the metadata to the metadata repository.
 
-### Publishing the final preview
+### Publishing the Final Preview
 
 By clicking the Publish DV Import the new data will be committed to the Metadata database and made available as a persisted Schema Diagram, in the application screens for edit and in BimlFlex Excel for bulk edit.
 

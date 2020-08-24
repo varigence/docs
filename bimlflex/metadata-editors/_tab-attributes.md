@@ -21,7 +21,7 @@
 
 ### Attributes Tab - Table Descriptions  
 
-All **Attributes** assigned to the current entity show here.  New items can be entered entered via the *Add* action button.  Existing items can be edited by clicking the *Value* field to select the **Attribute** and using the *Edit* action button.  Various [Navigational Transitions](#attributes-tab-navigational-transitions) are available on this form and outlined below.  
+All **Attributes** assigned to the current entity show here.  New items can be entered via the *Add* action button.  Existing items can be edited by clicking the *Value* field to select the **Attribute** and using the *Edit* action button.  Various [Navigational Transitions](#attributes-tab-navigational-transitions) are available on this form and outlined below.  
 
 <img
     src="images/bimlflex-app-tab-attributes-table.png"

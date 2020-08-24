@@ -30,7 +30,7 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 |Icon|Action|Description|
 |-|-|-|
-| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>| Save | This will save the currently set of staged changes.  The **Save** button is will only enable if the **Batch** has changes staged and there are no major validation issues with the current **Batch** properties. |
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>| Save | This will save the current set of staged changes.  The **Save** button is will only enable if the **Batch** has changes staged and there are no major validation issues with the current **Batch** properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Batch**. A Duplicate Batch Dialog will appear asking for a name for the new **Batch**. A new **Batch** will be created using all of the selected **Batch's** current properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Batch**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will create an [Archive Batch Dialog](#archive-batch-dialog-box) |
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Batch**. |
@@ -53,7 +53,7 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 |Field|Description|
 |-|-|
-| Batch | The name of the BimlFlex **Batch**.  This is the value will be appended by "_Batch" and used in the naming of the batch DTSX (SSIS) or Pipeline (ADF). |
+| Batch | The name of the BimlFlex **Batch**.  This is the value that will be appended by "_Batch" and used in the naming of the batch DTSX (SSIS) or Pipeline (ADF). |
 | Precedence Constraint | BimlFlex **Batches** execute packages and the Precedence Constraint can be changed from Success to Completion to continue loading in case of individual failures. Must be a valid [Precedence Constraint](#precedence-constraints). |
 | Threads | The default number of packages that can be executed in parallel within the **Batch**. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel. |
 | Containers | The default number of sequence containers that can be executed within the **Batch**. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel. |

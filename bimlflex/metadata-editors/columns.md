@@ -20,7 +20,7 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 
 | Icon | Action | Description |
 |-|-|-|
-| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button is will only enabled if there are unsaved changes in the form and no major validation errors. |
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button will only enabled if there are unsaved changes in the form and no major validation errors. |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Column**.  Clicking the **Duplicate** button will cause a [Duplicate Column Dialog](#duplicate-column-dialog) to appear. The new **Column** will be created using all of the selected **Column**'s current properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Column**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** generates an [Archive Column Dialog](#archive-column-dialog).|
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Column**. All unsaved changes will be lost. |
@@ -38,7 +38,7 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 
 | Field | Description |
 |-|-|
-| Connection | The **Connection** the the **Column** is associated with. Connection is Required. Connection is Required. |
+| Connection | The **Connection** the **Column** is associated with. Connection is Required. |
 | Object | The **Object** or table that the **Column** is associated with. Object is Required. |
 | Column | The name of the Column. Column Name is Required. Column Name must be unique for the **Object**. |
 | Data Type | The type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like hierarchyid. Data Type is required. Must be a valid [Data Type](#data-types). |

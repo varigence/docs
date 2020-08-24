@@ -29,7 +29,7 @@ The **Details Tab** focuses on general **Project** information and configuration
 
 |Icon|Action|Description|
 |-|-|-|
-|<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the currently set of staged changes.  The **Save** button is will only enable if the **Project** has changes staged and there are no major validation issues with the current **Project** properties.|
+|<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|Save|This will save the current set of staged changes.  The **Save** button is will only enable if the **Project** has changes staged and there are no major validation issues with the current **Project** properties.|
 |<div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected **Project**.  A prompt will appear for creating a new **Project** using all of the selected **Project**'s current properties.|
 |<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div>|Archive|This will hard delete the selected **Project**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will cause a [Archive Project Dialog](#archive-project-dialog-box) to appear.|
 |<div class="icon-col m-5"><img src="images/svg-icons/import-metadata.svg" /></div>|<span class="nowrap-col m-5">Import Metadata</span>|This will bring up the **Import Metadata Tool**.  Refer to the [Import Metadata from Source Database](../concepts/importing-metadata.md) guide for details on use and features.|
@@ -54,7 +54,7 @@ The **Details Tab** focuses on general **Project** information and configuration
 
 |Field|Description|
 |-|-|
-| Project |The name of the BimlFlex **Project**.  This is the value will be appended by "_Project" and used as the name of the SSIS Project when using [Project Deployment].  It is also used as a prefix in the naming of the individual DTSX packages (SSIS) or associated Pipelines (ADF).|
+| Project |The name of the BimlFlex **Project**.  This is the value that will be appended by "_Project" and used as the name of the SSIS Project when using [Project Deployment].  It is also used as a prefix in the naming of the individual DTSX packages (SSIS) or associated Pipelines (ADF).|
 | Parent Project |The parent **Project** for the current **Project**.  This is used when a **Project** requires more than one **Source Connection**, common amongst processing flat files as each file requires a separate **Connection**.  This allows for multiple child **Projects** to functionally operate as a single **Project**.|
 | Batch |The BimlFlex **Batch** to use when building out the project.|
 | Description |Optional metadata to provide description.|

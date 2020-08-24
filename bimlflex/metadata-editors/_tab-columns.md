@@ -51,7 +51,7 @@ The **Settings** view allows for quick access to all the boolean and flag proper
 
 #### View: Expressions  
 
-The **Expressions** view allows you to quickly view and manage all the expressions that may be used in the `CAST`, `CONVERT`, or general transformations that may be performed on any given **Column**.  All values in this view are used to determine the `ETT`/`ELT` logic and transformation dataflow.  
+The **Expressions** view allows you to quickly view and manage all the expressions that may be used in the `CAST`, `CONVERT`, or general transformations that may be performed on any given **Column**.  All values in this view are used to determine the `ETL`/`ELT` logic and transformation dataflow.  
 
 <img
     src="images/bimlflex-app-tab-columns-views-expressions.png"
