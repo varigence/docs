@@ -28,7 +28,7 @@ The BimlFlex developer installation allows the installation of all components us
 
 Run the developer installation and choose to install all components on the developer machine. For complete functionality all components are required.
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s4.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s4.png)
 
 The Excel-based metadata editor is a plugin for Microsoft Excel and will be visible as a separate tab in the Excel ribbon when the BimlFlex-enabled Excel workbook is opened from a BimlFlex project.
 
@@ -58,59 +58,59 @@ Check the bitness of the local installation of Microsoft Excel using the [Micros
 
 Run the installer to install the applications.
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s1.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s1.png)
 
 Accept the license agreement
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s2.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s2.png)
 
 If the installer can't identify an existing key, click the `I already have a product key` if you have a valid key, or use the request form to request a trial key for BimlFlex. It is also possible to skip this step and add the required keys later
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s3.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s3.png)
 
 Add an existing key through the `I already have a product key` dialog
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s4.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s4.png)
 
 The main feature page allows choosing the applications and features to install. For a BimlFlex developer installation, pick all. For existing installations, also check to upgrade existing databases and projects.
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s5.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s5.png)
 
 Pick BimlFlex features to install. Install the BimlFlex app as the main metadata management solution. Add the relevant bitness for Excel should there be a need to manage metadata through the legacy Excel Add-in
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s6.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s6.png)
 
 Pick BimlStudio features to install. For most developer installations, choose to install both 32-bit and 64-bit versions
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s7.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s7.png)
 
 Pick Custom components to install. Only identified available ones are available in the list. It is possible to force installation of unavailable options
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s8.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s8.png)
 
 list unavailable options
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s9.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s9.png)
 
 right-click to force installation
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s10.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s10.png)
 
 all unavailable options are picked for forced installation
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s12.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s12.png)
 
 Upgrade BimlFlex databases by adding the connection strings and then clicking the add to add the database to the upgrade tasks
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s13.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s13.png)
 
 Upgrade BimlCatalog databases by adding the connection strings and then clicking the add to add the database to the upgrade tasks
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s14.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s14.png)
 
 Review the installer tasks and allow the installation to occur
 
-![Installing BimlFlex -center -50%](../user-guide/images/bimlflex-ss-v5-bimlflex-2019-installer-s15.png)
+![Installing BimlFlex -center -50%](images/bimlflex-ss-v5-bimlflex-2019-installer-s15.png)
 
 Once the installation concludes successfully, click finish to end the installer.
 

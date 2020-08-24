@@ -36,15 +36,15 @@ If a trial key is required, please contact Varigence BimlFlex Support at [suppor
 
 From the start page, create a new **BimlFlex Project**
 
-![Create New Project](../user-guide/images/bimlflex-ss-v5-create-new-project.png "Create New Project")
+![Create New Project](images/bimlflex-ss-v5-create-new-project.png "Create New Project")
 
 Options for creating a new BimlFlex Project. Place the project in a suitable folder, the folder will contain source code for the project and should be managed through a source control system.
 
-![New BimlFlex Project](../user-guide/images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
+![New BimlFlex Project](images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
 
 Once the project is created, it is possible to open it from the folder by opening the project file, or by opening the project from BimlStudio.
 
-![Empty Project](../user-guide/images/bimlflex-ss-v5-empty-project.png "Empty Project")
+![Empty Project](images/bimlflex-ss-v5-empty-project.png "Empty Project")
 
 ### Connect to the Metadata Database
 
