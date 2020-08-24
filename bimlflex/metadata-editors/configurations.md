@@ -41,7 +41,7 @@ The **Configurations Editor** is used to manage all **Configurations**. The fiel
 | Description | An optional description for custom attributes or definitions. The default configurations are described in this document |
 | Nullable | Defines if the attribute is nullable Valid Enumeration |
 | Staging Attribute | Should the configuration be included in the staging layer, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
-| Persistant Staging Attribute | Should the configuration be included in the persistent staging layer, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
+| Persistent Staging Attribute | Should the configuration be included in the persistent staging layer, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
 | Hub Attribute | Should the configuration be included in Hubs, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
 | Satellite Attribute | Should the configuration be included in Satellites, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |
 | Link Attribute | Should the configuration be included in Links, and if so, how should it be created. Must be a valid [Configuration Attribute Type](#configuration-attributes). |

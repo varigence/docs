@@ -15,14 +15,16 @@ After selecting `Azure MySQL` from the Linked Service Type dropdown, the form re
 
 The required fields are:
 
-+ [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
-  + Server Name
-  + Database Name
-  + SSL Mode
-  + Use System Trust Store
-+ [User Name](#user-name)
-+ [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md))
+- [Configuring an ADF Linked Service Connection for Azure Database for MySQL](#configuring-an-adf-linked-service-connection-for-azure-database-for-mysql)
+  - [Required Fields](#required-fields)
+    - [Connect via Integration Runtime](#connect-via-integration-runtime)
+    - [Connection String](#connection-string)
+    - [User Name](#user-name)
+    - [Password](#password)
+    - [SSL Mode](#ssl-mode)
+    - [Use System Trust Store](#use-system-trust-store)
+    - [Additional Connection String Properties](#additional-connection-string-properties)
+    - [Azure Data Factory Linked Services Additional Information](#azure-data-factory-linked-services-additional-information)
 
 Optional fields are:
 
@@ -31,7 +33,7 @@ Optional fields are:
 
 ### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for an Azure MySQL Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for an Azure MySQL Linked Service connection. The default value is `AutoResolveIntegrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 ### Connection String
 

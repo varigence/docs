@@ -32,7 +32,7 @@ Optional fields are:
 
 ### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for a Snowflake Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for a Snowflake Linked Service connection. The default value is `AutoResolveIntegrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 ### Connection String
 

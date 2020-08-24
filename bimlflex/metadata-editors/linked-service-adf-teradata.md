@@ -17,13 +17,14 @@ After selecting `Teradata` from the Linked Service Type dropdown, the form requi
 
 The required fields are:
 
-+ [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
-  + Server Name
-  + Database Name
-  + [Authentication Method](#authentication-method)
-  + User Name
-  + [Password](#password) (or [Azure Key Vault](create-linked-service-connection.md))
+- [Configuring an ADF Linked Service Connection for Teradata](#configuring-an-adf-linked-service-connection-for-teradata)
+  - [Required Fields](#required-fields)
+    - [Connect via Integration Runtime](#connect-via-integration-runtime)
+    - [Connection String](#connection-string)
+    - [Authentication Method](#authentication-method)
+    - [Password](#password)
+    - [Additional Connection String Properties](#additional-connection-string-properties)
+  - [Azure Data Factory Linked Services Additional Information](#azure-data-factory-linked-services-additional-information)
 
 Optional fields are:
 
@@ -31,7 +32,7 @@ Optional fields are:
 
 ### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for a Teradata Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for a Teradata Linked Service connection. The default value is `AutoResolveIntegrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 ### Connection String
 

@@ -59,7 +59,7 @@ Optional fields:
 
 ### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for an Azure Blob Storage Linked Service connection. The default value is `AutoResolveIntgrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. When a custom value is saved in the linked service form, it will be added to the custom integration runtimes. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for an Azure Blob Storage Linked Service connection. The default value is `AutoResolveIntegrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. When a custom value is saved in the linked service form, it will be added to the custom integration runtimes. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 ### Authentication Method
 

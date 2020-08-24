@@ -55,13 +55,13 @@ To add a setting override, click <img class="icon-col m-5" src="images/svg-icons
 [!include[Add Attribute Dialog](_dialog-add-attribute.md)]
 
 The Attribute fields are used as the Setting Override as defined in this table.
-|Attribute field Name|Setting Field Name|Description|
+|Attribute Field Name|Setting Field Name|Description|
 |-|-|-|
-|Attribute Type||Defines the scope for when the override is applied. |
-|Attribute||Defines the Setting field that will be overridden. The **SettingValue** should always be the Attribute being overridden. |
-|Attribute Value|Setting Key|The Setting Key for the Setting that is being overridden. |
-|Attribute Property|Setting Value|The override for the Setting field defined in Attribute. |
-|Description||Description of the Setting Override|
+| Attribute Type || Defines the scope for when the override is applied. |
+| Attribute || Defines the Setting field that will be overridden. The **SettingValue** should always be the Attribute being overridden. |
+| Attribute Value | Setting Key | The Setting Key for the Setting that is being overridden. |
+| Attribute Property | Setting Value | The override for the Setting field defined in Attribute. |
+| Description || Description of the Setting Override |
 
 ### Edit or Delete a Setting Override
 
