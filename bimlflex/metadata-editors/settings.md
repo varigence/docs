@@ -11,6 +11,29 @@ The **Settings Editor** is used to manage metadata and framework settings in the
 > [!TIP]
 > The [Setting Reference Document](../reference-documentation/metadata-settings.md) serves as a complete guide for all settings available in the BimlFlex App.
 
+<!--
+TO DO: Update images of BimlFlex Setting Groups once finalized.
+-->
+
+## Settings Group
+
+Settings within the BimlFlex app are organized into essential categories, **Setting Groups,** such as Azure, Core, DataVault, Snowflake, etc., with each category containing options relevant to its parent category within.
+Hovering the mouse pointer over individual settings will display tooltips relating to same, along with brief explanation(s) as to how setting options will affect a project's output.
+<!--
+TODO: Add image of floating tool tip
+-->
+The Settings Group also contains a global Search field.
+The Search field contains a drop down menu of all settings, organized alphabetically by **Setting Group**, and allows users to search directly for specific settings.
+Settings that contain required values will be outlined in red and indicated as such.
+Searching for a specific setting will automatically navigate the user to the respective **Setting Group** and highlight the specific option within, guiding the user to the exact location needed.
+<!--
+TODO: Add image of highlighted setting option when searched. Maybe an image of the search term in the search bar, and the option in the window highlighted
+-->
+When applicable, settings that involve editing SQL code will appear in a window that mirrors standard SQL input styling and syntax.
+<!--
+TODO: Add image of SQL Editor Window (Core -> Lookup Table Pattern)
+-->
+
 ![BimlFlex App - Settings](images/bimlflex-app-settings.64566.png "BimlFlex App - Settings")
 
 ## Command Bar Buttons
@@ -21,7 +44,7 @@ The buttons in the command bar allow actions to be taken on the setting that is 
 
 |Icon|Action|Description|
 |-|-|-|
-|<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|Save|This will save any changes displayed in the Settings editor.  The **Save** button is only enabled if there are changes in the form. |
+|<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|Save|This will save any changes displayed in the Settings editor. The **Save** button is only enabled if there are changes in the form. |
 |<div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will refresh the currently displayed **Setting**. Any pending changes will be removed. |
 
 ## Setting Editor
