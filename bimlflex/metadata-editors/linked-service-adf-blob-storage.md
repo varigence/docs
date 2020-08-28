@@ -84,7 +84,7 @@ A connection to an Azure Blob Storage with Account Key authorization requires a 
 
 ![SAS URI](images/bimlflex-ss-app-connections-adf-blob-storage-sas-uri.png "SAS URI")
 
-Shared Access Signature authentication required an SAS URL or Azure Key Vault. When manually entering the SAS URL, an SAS Token will aslo be required. The SAS Token can also be replaced by an Azure Key Vault. For more information, see the [Shared access signature authentication for Azure Blob Storage documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#shared-access-signature-authentication).
+Shared Access Signature authentication required an SAS URL or Azure Key Vault. When manually entering the SAS URL, an SAS Token will also be required. The SAS Token can also be replaced by an Azure Key Vault. For more information, see the [Shared access signature authentication for Azure Blob Storage documentation](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#shared-access-signature-authentication).
 
 > [!TIP]
 > It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the SAS URL and SAS Token.
@@ -93,7 +93,7 @@ Shared Access Signature authentication required an SAS URL or Azure Key Vault. W
 
 ![Service Principal](images/bimlflex-ss-app-connections-adf-blob-storage-service-principal.png "Service Principal")
 
-To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for Blob Storage Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the Blob Storage Linked Service form.
+To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as described in the [Microsoft documentation for Blob Storage Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the Blob Storage Linked Service form.
 
 > [!TIP]
 > It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of a Service Principal Key.

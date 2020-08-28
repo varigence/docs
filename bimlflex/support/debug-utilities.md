@@ -6,7 +6,7 @@ title: BimlFlex Debug Utilities
 
 Use the `Debug Utilities` function to create a metadata and project file to send to Varigence BimlFlex support. This might be required in certain scenarios where the support team requires the project metadata and project files and extension points to be able to answer any questions.
 
-To minimise the potential waiting period, and if possible, always include the metadata debug when opening a BimlFlex support case.
+To minimize the potential waiting period, and if possible, always include the metadata debug when opening a BimlFlex support case.
 
 ![BimlFlex Debug Utilities -center](../user-guide/images/bimlflex-ss-v5-debug-bimlflex-utility.png "BimlFlex Debug Utilities")
 

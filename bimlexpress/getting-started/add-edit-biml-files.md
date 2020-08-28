@@ -1,6 +1,6 @@
 # Add and Edit Biml Files
 
-To add a Biml file to the project, right-click on the project, or on the Data Sources, Data Source Views, or SSIS Packages folders. The context menu will have an **Add New Biml File** menu opton. This will add a Biml file to the Miscellaneous folder in the project.
+To add a Biml file to the project, right-click on the project, or on the Data Sources, Data Source Views, or SSIS Packages folders. The context menu will have an **Add New Biml File** menu option. This will add a Biml file to the Miscellaneous folder in the project.
 
 Note: Right-clicking on the Miscellaneous folder will not open a context menu.
 

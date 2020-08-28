@@ -6,7 +6,7 @@ Significant changes between BimlStudio 2019 R1 and BimlStudio 2020 R1
 * Fixed issue in `ScriptComponents` where they were not emitting the right Version number, causing build errors in SSIS.
 * Added Direction property to `OLEDB Source` parameters.
 * Fixed a typo where the word "will" was displayed as "WILL" in a few object descriptions.
-* Improved logging for all components, conectionmanagers and containers.
+* Improved logging for all components, connectionmanagers and containers.
 * Fixed bug where `SsisDataTypeOverride` properties were not being used in column nodes.
 * Fixed bug where `ExportColumn Task` columns had an invalid reference id. 
 * Fixed casing issue on emission of VersionGUID for SSIS Projects
@@ -90,9 +90,9 @@ Significant changes between BimlStudio 2019 R1 and BimlStudio 2020 R1
 ## Installer
 
 * Added the ability to create and validate license keys directly in the installer.
-* Improved handling of unavailable features. Users can now force install features that were previously unavailble due to their environment right clicking on the feature and selecting the 'force install' option.
+* Improved handling of unavailable features. Users can now force install features that were previously unavailable due to their environment right clicking on the feature and selecting the 'force install' option.
 * We now support headless installations, configurable through the command line.
 * Added a comprehensive breakdown of product features by screen.
 * Added richer logging capabilities to aid in diagnosing any installation issues.
-* Added the capability to manage your BimlFlex environment, whether that is upgrading your bunlde, your BimlFlex database, or the BimlCatalog database.
+* Added the capability to manage your BimlFlex environment, whether that is upgrading your bundle, your BimlFlex database, or the BimlCatalog database.
 

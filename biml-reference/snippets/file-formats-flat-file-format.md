@@ -3,7 +3,7 @@
 ```biml
 <Biml xmlns="http://schemas.varigence.com/biml.xsd">
     <FileFormats>
-        <!-- Flat file format that specifies the columns and delimeter used to extract a table from a flat file.  -->
+        <!-- Flat file format that specifies the columns and delimiter used to extract a table from a flat file.  -->
         <FlatFileFormat Name="MetadataFileFormat" RowDelimiter="LF" ColumnNamesInFirstDataRow="true" IsUnicode="false">
             <Columns>
                 <Column Name="Category" DataType="String" Length="128" Delimiter="Tab" CodePage="1252" />

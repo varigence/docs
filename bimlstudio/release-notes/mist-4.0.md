@@ -145,7 +145,7 @@
   - Added code directive to reference C# or VB files with code directly from Biml files.  This enables a variety of scenarios around creating more complex and reusable .NET code for use within BimlScripts
   - Nested include files now work
 - Other
-  - Added ObjectTag property to all Biml API classes.  This is essentially a .NET Dictionaryt object that enables storage of .NET objects in a similar way to annotations in Biml.
+  - Added ObjectTag property to all Biml API classes.  This is essentially a .NET Dictionary object that enables storage of .NET objects in a similar way to annotations in Biml.
   - Added support for external script project files in the language
   - Added GetPropertyValue method to all Biml API objects.  This provides another option to get object property values when doing dynamic code generation.
   - Added Parse methods to all Biml API objects.  This enables easy parsing of Biml code snippets to create Biml API objects.  It is the inverse of the GetBiml functionality.

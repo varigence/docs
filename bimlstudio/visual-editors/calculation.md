@@ -4,7 +4,7 @@ Use the Calculations editor to create and edit calculations, including calculate
 
 ![Calculation Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Calculation1.png)
 
-For a Calculated Member, enter its name, parent hiearchy, format string, and other properties in its data grid row.
+For a Calculated Member, enter its name, parent hierarchy, format string, and other properties in its data grid row.
 
 ![Calculated Member](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Calculation2.png)
 

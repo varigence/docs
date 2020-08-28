@@ -5,11 +5,11 @@ Significant changes between BimlStudio 2018 and BimlStudio 2018 r2
 ## Azure Data Factory Support
 
 * `servicePrincipalId` property now correctly emits in `AzureDataLakeStore` Linked Services.
-* Updated depracated `AzureStorage` Linked Service to the `AzureBlobStorage` and `AzureTableStorage` linked services.
+* Updated deprecated `AzureStorage` Linked Service to the `AzureBlobStorage` and `AzureTableStorage` linked services.
 * Added `Parameters` collection to `Copy` activity's sink/source datasets and emit them in the corresponding `outputs`/`inputs` collection of the `Copy` activity.
 * Fixed escaping issue in Format nodes that were not correctly emitting escaped `rowDelimiter` and `columnDelimiter` values (ie \t or \n).
 * Added more validation for ADF naming conventions for pipelines, activities, datasets, and the `folderPath` property of `BlobDatasets`.
-* Added depracated `Script` property to `DatalakeUsqlActivities`.
+* Added deprecated `Script` property to `DatalakeUsqlActivities`.
 * Added `None` to `CopyBehavior` enum. 
 * Added the default value to pipeline parameters.
 * Fixed bug where parameters with a null value were being rendered as 'undefined' in the emitted json. Now they correctly emit as null.
@@ -45,7 +45,7 @@ Significant changes between BimlStudio 2018 and BimlStudio 2018 r2
 * In debug utility, we now filter out source control folders (.git/$tf/.svn) when including the project directory in your zip.
 * In debug utility, we now filter out documentation folder when including the project directory in your zip.
 * In debug utility, we now additionally track the following versions and settings: Sql Server Version, DDL Build Mode, Ssas Multidimensional Version, Ssas Tabular Version, SSIS Version, Biml Engine 32/64 bit paths, and MsBuild 32/64 bit paths. 
-* In debug utiltiy, no longer show the default BimlTemplate customer in the drop downs.
+* In debug utility, no longer show the default BimlTemplate customer in the drop downs.
 * The pre-selected customer/version in the debug utility match the configured customer/version in the bundle settings.
 * In the debug utility, Added a tool tip to provide more information to the user about what connection string properties are being obfuscated and how to proceed in the event that there is still other information that they would like to hide.
 * Added wait cursors to a few longer processes to help better communicate to the user that something is happening in the background.

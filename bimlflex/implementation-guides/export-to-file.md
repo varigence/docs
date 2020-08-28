@@ -46,7 +46,7 @@ Column and row delimiters and Last Column Delimiter
 | LF             | Line Feed - ASCII 10 |
 | Semicolon      | `;` |
 | Comma          | `,` |
-| Tab            | HT - ACSII 09|
+| Tab            | HT - ASCII 09|
 | VerticalBar    | `|` |
 | UnitSeparator  | US - ASCII 31|
 | Custom         | Any valid custom delimiter|

@@ -4,7 +4,7 @@
 > A deleted or excluded entity can be restored by flipping the appropriate flag back to `false`.  
 > To view deleted or excluded entities:  
 >  
-> 1. Navitage to **BimlFlex Options**  
+> 1. Navigate to **BimlFlex Options**  
 > 1. Enable *Show Deleted* and/or *Show Excluded*  
 > 1. Click **Apply**  
 >

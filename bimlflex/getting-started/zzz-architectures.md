@@ -8,4 +8,4 @@ Different architectural implementation approaches use different configurations a
 
 changes for normal ssis process
 
-1, activate lsats for enddating Satellite records. This is optional and activated to illustrate the usage of the Lsat structures in the Data Vault load process.
+1, activate lsats for end-dating Satellite records. This is optional and activated to illustrate the usage of the Lsat structures in the Data Vault load process.

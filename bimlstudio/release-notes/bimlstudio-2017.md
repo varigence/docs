@@ -88,7 +88,7 @@
 
 - Fixed issue where opening a standalone Biml file could crash Mist.
 - Fixed quick info and code completion in standalone Biml files.
-- Improve selection highlighting syles in BimlEditor to make it easier to read.
+- Improve selection highlighting styles in BimlEditor to make it easier to read.
 - Fixed intelliprompt in include scenarios.
 - Fixed intelliprompt in multi-line text nuggets.
 - Made some additional properties Advanced to prevent them from showing up in intelliprompt completion lists.
@@ -96,7 +96,7 @@
 **All Text Editors**
 
 - Fixing issue where BimlStudio would open txt and csv files in an external editor when opened from the logical or project view.
-- Added Cntrl+Shift+H key binding for Replace All.
+- Added Ctrl+Shift+H key binding for Replace All.
 - Added support for find/replace all to all text file types.
 - Added support to find/replace all to work with multiple root folders.
 - Added line/col status bar support for all text file types.
@@ -105,7 +105,7 @@
 **Other BimlStudio UI**
 
 - To enable FIPS compliance, changed all internally used MD5 hashes to SHA1 hashes.
-- Fixed sizing of the project converstion dialog box.
+- Fixed sizing of the project conversation dialog box.
 - Fixed an issue where Unicode characters were not being properly displayed in output window for MSBuild executions.
 - Added the friendly type name of the candidate object in all multi-select confirmation dialogs (transformer and table import overwrite confirmation dialogs).
 - Fixed issue where several ribbon buttons would not be disabled when a project is not loaded.
@@ -120,12 +120,12 @@
 - Added support for global includes in CallBimlScript target files.
 - New global directive to disable the global include for CallBimlScript files, called ApplyToCallBimlScript
 - Added LinearOnCompletion and LinearOnSuccess constraint modes to packages
-- Update to allow project and package parameters to be used whereever variables are in SSIS.
+- Update to allow project and package parameters to be used wherever variables are in SSIS.
 - Modified ScriptComponent logic so that BlobColumns are created when needed rather than using String columns.
 - Added mapping output from TextTemplating engine to permit line mappings from expanded BimlScripts to the source BimlScripts.
 - Added the DisablePackageConfigurations property to packages.  This is primarily for cases where imported packages reference package configurations but have them disabled.
 - Added SsisDataTypeOverride functionality.
-- Set default value for LogicalDisplay folder to empty string rather than null.  This simplifies coding when LogialDisplayFolder is used as a lightweight intermediate metadata source.
+- Set default value for LogicalDisplay folder to empty string rather than null.  This simplifies coding when LogicalDisplayFolder is used as a lightweight intermediate metadata source.
 - Changed BimlScriptDirectiveLanguage to include extensionpoint directive tokens.
 - Added TargetSeverVersion to SqlServerDqsConnection for Ssis2016 and above.
 - Added logging support to the DqsCleansing component.
@@ -273,7 +273,7 @@
 
 **Provider Support**
 
-- Added Db2 OLDEB provider.
+- Added Db2 OLEDB provider.
 - Added OpenEdge Odbc provider.
 - Adding basic Excel ACE OLEDB support to GetDatabaseSchema.
 
@@ -306,7 +306,7 @@
 
 - Added code to activate BS error window when build fails.
 - Updated new project screen styling and icons.
-- Added icons for connecting to network in status bar and enable/diasable logging.
+- Added icons for connecting to network in status bar and enable/disable logging.
 - Updated BimlScript ribbon tab with new icons.
 - Added blue dot to Live Biml files in the Project View.
 - Improved Project View tool tips for Biml files.
@@ -332,6 +332,6 @@
 - Fixed issue where dataflow and control flow edges would not render on machines with some locale settings.
 - Fixed partition source selector in partition editor.
 - Fixed issue where items duplicated from a BimlScript object were not fully populated and could not be modified.
-- Fixed issue where custom dataflow properties for custom components could have invaid types - particularly for System.Null.
+- Fixed issue where custom dataflow properties for custom components could have invalid types - particularly for System.Null.
 - Fixed issue where error messages for code files would not show the correct filename and line number
 

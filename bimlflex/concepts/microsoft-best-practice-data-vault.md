@@ -62,7 +62,7 @@ BimlFlex has full support for source control, including Azure DevOps (Azure Repo
 
 The BimlFlex metadata is fully versioned in the repository database.
 
-All output artefacts (such as SQL Server Data Tools projects and Azure Data Factory code) can be both version controlled and deployed through the standard Azure DevOps CI/CD approach.
+All output artifacts (such as SQL Server Data Tools projects and Azure Data Factory code) can be both version controlled and deployed through the standard Azure DevOps CI/CD approach.
 
 ## 5. Distribution
 

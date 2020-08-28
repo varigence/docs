@@ -30,7 +30,7 @@ The first time using BimlFlex, it is recommended that the user allows us to auto
 The name of the AKV that will be used by your project is determined by the `AzureKeyVault` property value in your BimlFlex settings. If you do not populate the `AzureKeyVault` setting in your project, a new AKV will be generated each time the project runs. This is typically undesired. Once you have auto-generated the AKV for the first time, the user should use this AKV name for the `AzureKeyVault` setting, so that this AKV is used going forward.
 
 >[!NOTE]
-> It is also recommended that the user renames the AKV, as the current naming pattern does not visually represent anything meaningful. This can lead to mistakes when using multiple AKV's across projects.
+> It is also recommended that the user renames the AKV, as the current naming pattern does not visually represent anything meaningful. This can lead to mistakes when using multiple AKVs across projects.
 
 ## Extension Points
 

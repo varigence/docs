@@ -190,7 +190,7 @@ Configure parameter bindings for Package Execute Package Task
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 
 <!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/Element/AstVariableParameterMappingNode -->
-<!-- The below example is adding a ParameterBinding to a ExecutePackageTask. ParameterBindings is normally combined with a PackacageParameter ExtensionPoint -->
+<!-- The below example is adding a ParameterBinding to a ExecutePackageTask. ParameterBindings is normally combined with a PackageParameter ExtensionPoint -->
 <ParameterBindings>
     <ParameterBinding Name="SnapshotDate" VariableName="User.SnapshotDate" />
 </ParameterBindings>
@@ -236,7 +236,7 @@ Add PackageConfigurations if you have unselected Use Project Deployment
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 
 <!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/Element/AstPackageConfigurationNode -->
-<!-- Use BatchPackageConfigurations to add a Configurations if you have unselectd Use Project Deployment in the BimlStudio project. When using Package Deployment instead of Project Deployment you might need to specify additional configurations. 
+<!-- Use BatchPackageConfigurations to add a Configurations if you have unselected Use Project Deployment in the BimlStudio project. When using Package Deployment instead of Project Deployment you might need to specify additional configurations. 
 Configurations can also be added to the Batch using the PackageConfigurations combined with CustomOutput.ObjectInherit = true; -->
 <# 	CustomOutput.ObjectInherit = true; #>
 <PackageConfiguration Name="LOAD_MY_Configurations">
@@ -387,7 +387,7 @@ Add PackageConfigurations if you have unselected Use Project Deployment
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
 <!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/Element/AstPackageConfigurationNode -->
-<!-- Use PackageConfigurations to add a Configurations if you have unselectd Use Project Deployment in the BimlStudio project.
+<!-- Use PackageConfigurations to add a Configurations if you have unselected Use Project Deployment in the BimlStudio project.
 When using Package Deployment instead of Project Deployment you might need to specify additional configurations. Configurations can also be added to the Batch using the PackageConfigurations combined with CustomOutput.ObjectInherit = true; -->
 <# 	CustomOutput.ObjectInherit = true; #>
 <#	var configurationPath = table.GetConfigurationValue("ConfigurationPath");
@@ -418,7 +418,7 @@ Configure parameter bound values to the package
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
 <!-- You can find more details on the Varigence website. https://www.varigence.com/Documentation/Language/Element/AstParameterNode -->
-<!-- The below example is adding a PackageParameter to the package. PackacageParameter is normally combined with a ParameterBindings ExtensionPoint -->
+<!-- The below example is adding a PackageParameter to the package. PackageParameter is normally combined with a ParameterBindings ExtensionPoint -->
 <# 	CustomOutput.ObjectInherit = true; #>
 <Parameter Name="BatchId" DataType="String"></Parameter>
 <Parameter Name="BatchInstanceId" DataType="String">0</Parameter>
@@ -2716,7 +2716,7 @@ Configure a Post Copy Activity in the pipeline.
 | Name | Type | Description |
 | ---- | ---- | ----------- |
 | pipeline | BimlFlexModelWrapper.ObjectsWrapper | Contains the related pipeline source metadata Object |
-| dependency | String | Contains the dependenty name for the previous activity |
+| dependency | String | Contains the dependency name for the previous activity |
 | attributes | Dictionary<string, string> | attributes that can be set back, such as the new dependency name |
 #### Outputs
 
@@ -2772,7 +2772,7 @@ Configure a Trigger in Azure Data Factory.
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfTrigger" #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 
-<!-- Sheduled Trigger -->
+<!-- Scheduled Trigger -->
 	<Schedule Name="ScheduleTriggerName" Frequency="Hour" Interval="1" Start="2001-01-01" End="2020-12-31">
 		<Pipelines>
 			<Pipeline PipelineName="0_<#=batch.Name #>_Batch">

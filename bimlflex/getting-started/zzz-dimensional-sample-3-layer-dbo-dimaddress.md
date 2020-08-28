@@ -16,7 +16,7 @@ This is created in the Data Vault layer and is part of a source to target mappin
 USE [BFX_RDV]
 GO
 
-CREATE OR ALTER VIEW [dbo].[dimAddress] 
+CREATE OR ALTER VIEW [dbo].[dimAddress]
 AS
 
 SELECT     pc.[Address_BK]

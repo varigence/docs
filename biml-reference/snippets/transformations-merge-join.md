@@ -15,13 +15,13 @@
                             <DirectInput>select * from SportDescription order by sport</DirectInput>
                         </OleDbSource>
 
-                        <!-- Performs a merge joing on SurveyResponses and JuniorSurveyResponses, using Response and Sport as the Left/Right join keys respectively. -->
+                        <!-- Performs a merge join on SurveyResponses and JuniorSurveyResponses, using Response and Sport as the Left/Right join keys respectively. -->
                         <MergeJoin Name="Merge Join Transformation" JoinType="InnerJoin" TreatNullsAsEqual="false" MaxBuffersPerInput="10" >
                             <LeftInputPath OutputPathName="SurveyResponses.Output"   >
                                 <Columns>
                                     <Column SourceColumn="Response" SortKeyPosition="1" TargetColumn="Response" />
                                     <Column SourceColumn="Attribute" SortKeyPosition="2" />
-                                    <Column SourceColumn="SuveryId" SortKeyPosition="3" />
+                                    <Column SourceColumn="SurveyId" SortKeyPosition="3" />
                                 </Columns>
                             </LeftInputPath>
                             <RightInputPath OutputPathName="SportDescription.Output" />

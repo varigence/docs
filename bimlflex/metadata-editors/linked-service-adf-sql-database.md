@@ -70,7 +70,7 @@ To use Managed Identities for authentication with Azure SQL Database, they must 
 
 ![Service Principal](images/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
 
-To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as descibled in the [Microsoft documentation for SQL Database Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the SQL Database Linked Service form.
+To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as described in the [Microsoft documentation for SQL Database Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the SQL Database Linked Service form.
 
 > [!TIP]
 > It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of a Service Principal Key.

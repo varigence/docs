@@ -1,4 +1,4 @@
-# Impoprting tables using BimlScript
+# Importing tables using BimlScript
 
 BimlStudio allows you to import schema and table definitions from a database, along with updating your model with the current state of the definitions at each compile. To leverage the update capability, you will need to use BimlScript to author the import logic; the BimlScript is executed during each compile, obtaining the current state of schemas and tables.
 

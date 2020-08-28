@@ -384,7 +384,7 @@ The following approach will select the source column as an alternative name and 
 | SsisDataFlowExpression | `REPLACE(ALT_@@this,"value","other value")` |
 | ColumnAlias            | `ALT_@@this`                                |
 
-Add this to the columns page or sheet, for the `EmailAddress` source column to change the select statement for it to `EmailAddres AS ALT_EmailAddress` and derive the `EmailAddress` column with a Derived Column transformation using the defined Expression that refers to the source column using the defined column alias.
+Add this to the columns page or sheet, for the `EmailAddress` source column to change the select statement for it to `EmailAddress AS ALT_EmailAddress` and derive the `EmailAddress` column with a Derived Column transformation using the defined Expression that refers to the source column using the defined column alias.
 
 ## Executing custom scripts on Snowflake using BimlFlex
 
@@ -392,7 +392,7 @@ The following example uses the custom Snowflake components to call a Snowflake d
 
 This is an example Batch Pre-processing Extension Point that injects the correct Snowflake component at the start of the Batch execution and calls the specified Stored Procedure.
 
-The Target on line 1 needs to match the target batch where the pre-processign should happen. The `SnowflakeSqlStatement` expression should contain the required Snowflake SQL Statement.
+The Target on line 1 needs to match the target batch where the pre-processing should happen. The `SnowflakeSqlStatement` expression should contain the required Snowflake SQL Statement.
 
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="BatchPreProcess" target="YOUR_BATCH_NAME" #>

@@ -338,7 +338,7 @@ This is the recommended setting and is outlined [Common Configurations - Attribu
 
 > [!NOTE]
 > If this *DIM ATTRIBUTE* is set to a value besides `Derived`, an additional **Configuration Override** will be needed for set the *DIM ATTRIBUTE* to `Derived`.
-> The steps from [Method B](#scenario-1-method-b) can be used simply by subsituting and referce to `Source` with `Derived`.
+> The steps from [Method B](#scenario-1-method-b) can be used simply by substituting and reference to `Source` with `Derived`.
 >
 
 When the *DIM ATTRIBUTE* is set to `Derived` the *SQL SOURCE EXPRESSION* can be substituted with a column reference.

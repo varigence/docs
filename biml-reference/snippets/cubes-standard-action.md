@@ -33,7 +33,7 @@
                     <Expression>// URL for linking to MSN Maps
                         "http://maps.msn.com/home.aspx?plce1=" +
 
-                        // Retreive the name of the current city
+                        // Retrieve the name of the current city
                         [Geography].[City].CurrentMember.Name + "," +
 
                         // Append state-province name
@@ -42,10 +42,10 @@
                         // Append country name
                         [Geography].[Country].CurrentMember.Name +
 
-                        // Append region paramter
+                        // Append region parameter
                         "&amp;regn1=" +
 
-                        // Determine correct region paramter value
+                        // Determine correct region parameter value
                         Case
                         When [Geography].[Country].CurrentMember Is
                         [Geography].[Country].&amp;[Australia]

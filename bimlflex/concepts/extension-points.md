@@ -109,7 +109,7 @@ To add an **Extension Point** to the project the Name and Target needs to be spe
 
 The Name is included when an Extension Point is created from the Extension Point menu in BimlStudio.
 
-The Target represents the object or entity where the Extension Point should be included. The correct taget can be identified through either of these steps:
+The Target represents the object or entity where the Extension Point should be included. The correct target can be identified through either of these steps:
 
 ### Option 1, Use Target Name
 

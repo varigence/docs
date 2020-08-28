@@ -4,7 +4,7 @@ Note: In August 2017, BIDS Helper was renamed to [BI Developer Extensions](https
 
 BI Developer Extensions is a free Visual Studio add-in that enhances development functionality in Business Intelligence Development Studio (BIDS) and SQL Server Data Tools (SSDT). It includes the Biml engine, but also includes many other features.
 
-BimlExpress is Varigence's free Visual Studio add-in, created specifically for working on Biml projects. In addition to all the features found in BI Developer Extensions, BimlExpress also provides a full BimlScript code editor with advanced Intelliprompt, support for adding code files from menus, and additional featues can be enabled per product key.
+BimlExpress is Varigence's free Visual Studio add-in, created specifically for working on Biml projects. In addition to all the features found in BI Developer Extensions, BimlExpress also provides a full BimlScript code editor with advanced Intelliprompt, support for adding code files from menus, and additional features can be enabled per product key.
 
 | Feature                                                        | BI Developer Extensions | BimlExpress |
 | -------------------------------------------------------------- |:-----------------------:|:-----------:|

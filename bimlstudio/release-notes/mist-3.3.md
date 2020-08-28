@@ -58,7 +58,7 @@
   - Added 32-bit to the title bar when running Mist in 32-bit mode. This parallels the 64-bit label.
   - Made it so that Execute Transformers context menu is hidden on script-generated assets.
   - Visibility of the grid details pane is now collapsed when multiple items in a datagrid are selected.
-  - DataGrid row hightlight style is grey instead of blue when the control is not active.  This should clarify which controls have focus.
+  - DataGrid row highlight style is grey instead of blue when the control is not active.  This should clarify which controls have focus.
   - Dotted line around the perimeter of the control when you delete the last item is now removed.
 
 - Tree Views
@@ -203,7 +203,7 @@
 
 ## Installer
 
-- Improved support for side-by-side installations with other versions and bitnesses of Mist.
+- Improved support for side-by-side installations with other versions and bitness of Mist.
 - No longer installing defunct CHM file.  All help is now online.
 - Mist installer now advertises MIME type for mist project (mst files).
 

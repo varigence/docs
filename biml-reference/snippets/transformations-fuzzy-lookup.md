@@ -18,7 +18,7 @@
                                 <Column SourceColumn="Attribute" TargetColumn="Attribute"  />
                             </Inputs>
                             <Outputs>
-                                <Column SourceColumn="Response" TargetColumn="NewReponse"  />
+                                <Column SourceColumn="Response" TargetColumn="NewResponse"  />
                             </Outputs>
                             <InputPath OutputPathName="SurveyResponses.Output" />
                         </FuzzyLookup>

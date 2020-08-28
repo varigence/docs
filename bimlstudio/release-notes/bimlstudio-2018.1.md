@@ -14,7 +14,7 @@ Added support for all ADF version 2 items and is current as of 06/20/2018. This 
 
 ## BimlScript PreCompiled Assembly Package (BSPCAP) Files
 
-* Added option to Build & Deploy ribbon to create new BimlScript PreCompiled Assembly Package (BSPCAP) files, which include the preprocessed binary assets for all of the BimlScript files in your project. This will avoid a siginificant amount of processing time in solutions with large codebases, both in interactive designer mode and for command line builds.
+* Added option to Build & Deploy ribbon to create new BimlScript PreCompiled Assembly Package (BSPCAP) files, which include the preprocessed binary assets for all of the BimlScript files in your project. This will avoid a significant amount of processing time in solutions with large codebases, both in interactive designer mode and for command line builds.
 * Added support for BSPCAP files within Biml Bundles, where they achieve even greater performance savings.
 * Added support to add BSPCAP files through all BimlStudio menus and via the command line as a source file. 
 

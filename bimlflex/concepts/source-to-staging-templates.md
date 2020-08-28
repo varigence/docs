@@ -130,7 +130,7 @@ Defining a Batch:
 2. `NoOfThreads`, Number Of Threads, control the parallelism if the execution within the Batch
 3. `UseOrchestration`, Use Orchestration, controls if the Batch will use the Orchestration function within the Batch
 4. `UseSsisExpress`, Use SSIS Express, controls if BimlFlex should generate SSIS Express packages. SSIS Express packages can run without a licensed SQL Server but has limited functionality
-5. `PrecendenceConstraint`, Precedence Constraint, controls if the execute package tasks in the batch should implement a specific Precedence Constraint
+5. `PrecedenceConstraint`, Precedence Constraint, controls if the execute package tasks in the batch should implement a specific Precedence Constraint
 
 ## Customizing Source Queries
 

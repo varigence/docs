@@ -12,7 +12,7 @@ The dashboard provides a quick view of the metadata in the version and contains 
 
 ## Sunburst
 
-The Sunburst Graph gives users a quick graphical overview of their Metadata and provides a convenient way to browse to specific tables from from the dashbaord.
+The Sunburst Graph gives users a quick graphical overview of their Metadata and provides a convenient way to browse to specific tables from from the dashboard.
 
 The default view of the Sunburst shows us concentric circles with:
 1. `Integration Stages` layer in the center
@@ -103,7 +103,7 @@ The Recent Projects pane displays the most recently updated **Projects** to allo
 
 ## Action Buttons
 
-![Dashoboard Actions](images/bimlflex-app-dashboard-actions.png "Dashboard Actions")
+![Dashboard Actions](images/bimlflex-app-dashboard-actions.png "Dashboard Actions")
 
 ### Clone Version
 

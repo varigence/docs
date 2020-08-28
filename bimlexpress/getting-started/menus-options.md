@@ -16,11 +16,11 @@ You can also add the BimlExpress buttons to your toolbar for easy access to gene
 
 If you right-click on the SSIS Project, you will be able to add new files:
 
-![BimlExpress Contect Menu on Projects](../images/bimlexpress-menu-context-project.png "BimlExpress Context Menu on Projects")
+![BimlExpress Context Menu on Projects](../images/bimlexpress-menu-context-project.png "BimlExpress Context Menu on Projects")
 
 If you right-click on a Biml file, you will be able to generate SSIS packages and check Biml for errors, in addition to adding new files:
 
-![BimlExpress Contect Menu on Biml Files](../images/bimlexpress-menu-context-file.png "BimlExpress Context Menu on Biml Files")
+![BimlExpress Context Menu on Biml Files](../images/bimlexpress-menu-context-file.png "BimlExpress Context Menu on Biml Files")
 
 ## Customizing Keyboard Shortcuts
 

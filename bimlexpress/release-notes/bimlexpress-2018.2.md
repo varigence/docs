@@ -6,7 +6,7 @@ Significant changes between BimlExpress2018 and BimlExpress2018 R2
 
 * Fixed an issue in BE where packages could not be imported until at least one Biml file had already been added.
 * Updated logging to capture 'InitializeEditor' errors during the editor initialization. 
-* Updated BimlExpress online projects to use the new global framework version setting mechansim
+* Updated BimlExpress online projects to use the new global framework version setting mechanism
 
 ## SSIS
 

@@ -380,7 +380,7 @@ The following approach will select the source column as an alternative name and 
 |SsisDataFlowExpression   |`REPLACE(ALT_@@this,"value","other value")`   |
 |ColumnAlias              |`ALT_@@this`                                  |
 
-Add this to the columns page or sheet, for the `EmailAddress` source column to change the select statement for it to `EmailAddres AS ALT_EmailAddress` and derive the `EmailAddress` column with a Derived Column transformation using the defined Expression that refers to the source column using the defined column alias.
+Add this to the columns page or sheet, for the `EmailAddress` source column to change the select statement for it to `EmailAddress AS ALT_EmailAddress` and derive the `EmailAddress` column with a Derived Column transformation using the defined Expression that refers to the source column using the defined column alias.
 
 ## Executing custom scripts on Snowflake using BimlFlex
 

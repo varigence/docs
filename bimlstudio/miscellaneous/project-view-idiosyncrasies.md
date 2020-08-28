@@ -1,4 +1,4 @@
-# Project View Idiosyncracies
+# Project View Idiosyncrasies
 
 Mist's Project View reflects the state of folders and files on disk. From within it, users can:
 

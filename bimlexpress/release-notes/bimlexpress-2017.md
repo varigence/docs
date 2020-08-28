@@ -71,7 +71,7 @@
 - Added formal support for Ingres ODBC and ADO.NET.
 - Added formal support for SAS local data provider (e.g. sas7bdat files).
 - Fixed issue where custom types from SQL Server were not being imported correctly.
-- Added Db2 OLDEB provider.
+- Added Db2 OLEDB provider.
 - Added OpenEdge Odbc provider.
 - Adding basic Excel ACE OLEDB support to GetDatabaseSchema.
 

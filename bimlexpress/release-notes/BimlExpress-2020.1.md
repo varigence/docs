@@ -12,14 +12,14 @@ Significant changes between BimlExpress 2019 R1 and BimlExpress 2020 R1
 
 ## 2019 Visual Studio Support
 * Improved background load of VS extension to get rid of slow down warning message.
-* Removed following warning: "This extension was not loaded because it uses depracated synchronous autoload APIs" when starting BimlExpress in VS 16.3 or later.
+* Removed following warning: "This extension was not loaded because it uses deprecated synchronous autoload APIs" when starting BimlExpress in VS 16.3 or later.
 * Solved issue where the first "previously open" code editor does not render correctly on startup.
 
 ## SSIS
 * Fixed issue in `ScriptComponents` where they were not emitting the right Version number, causing build errors in SSIS.
 * Added Direction property to `OLEDB Source` parameters.
 * Fixed a typo where the word "will" was displayed as "WILL" in a few object descriptions.
-* Improved logging for all components, conectionmanagers and containers.
+* Improved logging for all components, connectionmanagers and containers.
 * Fixed bug where `SsisDataTypeOverride` properties were not being used in column nodes.
 * Fixed bug where `ExportColumn Task` columns had an invalid reference id. 
 * Fixed casing issue on emission of VersionGUID for SSIS Projects

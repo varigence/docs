@@ -5,7 +5,7 @@ Mist 3.0 is a major update, which includes the following new features and enhanc
 * **Support for SQL Server 2012 SSIS**
 * Import packages into Mist and Biml
 * SSIS Project Deployment Model
-* Emmit SSIS Packages
+* Emit SSIS Packages
 * **MSBuild Integration & Build Configurations**
   Mist now uses a MSBuild-based build system, enabling complete control over builds from the command line and within Mist.
 * Additionally, Mist 3.0 introduces build configurations, which let you customize builds by:
@@ -45,7 +45,7 @@ Mist 3.0 is a major update, which includes the following new features and enhanc
     * Build Asset
     * Build Asset & Run
     * Build Asset & Open in BIDS
-    * Include Descendents in Project
+    * Include Descendent in Project
     * Open in Windows Explorer
     * Delete
     * Lock

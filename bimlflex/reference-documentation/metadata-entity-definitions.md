@@ -59,7 +59,7 @@ Configure connection attributes for both Databases and Files. The ConnectionType
 | EndDelimiter | Derived value from [meta].[SystemType] table. The column ending delimiter used by the DBMS when performing a query. |
 | IgnoreSchema | Derived value from [meta].[SystemType] table. If this is set to "Y" then the source query will omit the schema. |
 | SqlHashPattern | This value specifies the SQL Hash Pattern used by the SQL ELT pattern. |
-| SqlConcatenantePattern | This value specifies the SQL Concatenate Pattern used to concatenate Integration Keys by the SQL ELT pattern. |
+| SqlConcatenatePattern | This value specifies the SQL Concatenate Pattern used to concatenate Integration Keys by the SQL ELT pattern. |
 | SqlStringExtractPattern | This value specifies the SQL Pattern used by the extract process to standardize strings. |
 | SqlStringLoadPattern | This value specifies the SQL Pattern used by the load process to standardize strings. |
 | SqlDateExtractPattern | This value specifies the SQL Pattern used by the extract process to standardize dates. |
@@ -146,7 +146,7 @@ Object define the header information for both database tables and views and file
 | CodePage | This value specifies the code page to use for character and string manipulation of non-Unicode text. |
 | IsColumnNamesInFirstDataRow | This value specifies whether more descriptive column names are provided in the first data row to replace the column names specified in the Flat File Format Columns collection. |
 | DataRowsToSkip | This value specifies how many data rows to skip before beginning to product data. |
-| TextQualifer | This value specifies which character is used to identify contiguous blocks of text in a flat file. Column delimiters within blocks of contiguous text will be ignored and treated as text data. |
+| TextQualifier | This value specifies which character is used to identify contiguous blocks of text in a flat file. Column delimiters within blocks of contiguous text will be ignored and treated as text data. |
 | RowDelimiter | This value specifies the delimiter to use to segregate rows. |
 | ColumnDelimiter | This value specifies the delimiter string that will be used to mark the end of this column. |
 | LastColumnDelimiter | This value specifies the delimiter to use for column header rows. |
@@ -641,7 +641,7 @@ BimlFlex has a number of internal static types that can also be referred to as n
 | SqlEndDelimiter | SqlEndDelimiter |
 | SqlIgnoreSchema | SqlIgnoreSchema |
 | SqlHashPattern | SqlHashPattern |
-| SqlConcatenantePattern | SqlConcatenantePattern |
+| SqlConcatenatePattern | SqlConcatenatePattern |
 | SqlStringExtractPattern | SqlStringExtractPattern |
 | SqlStringLoadPattern | SqlStringLoadPattern |
 | SqlDateExtractPattern | SqlDateExtractPattern |

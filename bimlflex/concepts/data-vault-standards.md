@@ -92,7 +92,7 @@ Another way is to do reconciliation checks in the Target data warehouse. For tar
 
 * Consist of a distinct list of [Integration Key](#integration-key-business-key) of the `Core Business Concept`.
 * BimlFlex makes use of a concatenated key to simplify implementation and allows for single key integration and is required when choosing a `Data Vault` implementation without using Hash Keys.
-* In an upcoming version, there will be an option `DvUseHashKeys`. Integrate without a `HASH` which is very performant for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
+* In an upcoming version, there will be an option `DvUseHashKeys`. Integrate without a `HASH` which is very efficient for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
 
 > [!IMPORTANT]
 > Hubs are the core building block of the Data Vault and should reflect the **Core Business Concept** (CBC).

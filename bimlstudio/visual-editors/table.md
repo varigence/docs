@@ -34,6 +34,6 @@ Measure | Add a measure to a fact table.
 Attribute | Add an attribute to a dimension.
 Hierarchy | Add a hierarchy to a dimension.
 Relationship | Add a relationship to a dimension.
-Autogenerate Mesures | Add a measure for each table column not already associated with a measure.
+Autogenerate Measures | Add a measure for each table column not already associated with a measure.
 Apply Measure Formats | Choose to preserve or overwrite existing measure formats.
 Generate Attribute and Relationships | Choose to generate attributes, relationships, or both for a dimension.

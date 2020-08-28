@@ -22,7 +22,7 @@ name: Biml Release Notes
 - Added mapping output from TextTemplating engine to permit line mappings from expanded BimlScripts to the source BimlScripts.
 - Added the DisablePackageConfigurations property to packages. This is primarily for cases where imported packages reference package configurations but have them disabled.
 - Added SsisDataTypeOverride functionality.
-- Set default value for LogicalDisplay folder to empty string rather than null. This simplifies coding when LogialDisplayFolder is used as a lightweight intermediate metadata source.
+- Set default value for LogicalDisplay folder to empty string rather than null. This simplifies coding when LogicalDisplayFolder is used as a lightweight intermediate metadata source.
 - Changed BimlScriptDirectiveLanguage to include extensionpoint directive tokens.
 - Added TargetSeverVersion to SqlServerDqsConnection for Ssis2016 and above.
 - Added logging support to the DqsCleansing component.
