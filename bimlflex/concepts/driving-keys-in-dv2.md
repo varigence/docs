@@ -26,7 +26,7 @@ Effectivity is then started and ended based on when a Business Concept was first
 
 A common model in Data Vault 2.0 methodology is to create a Satellite on the Link (LSAT) which contains history specific to the Link.
 This allows one to track specific historical changes to a relationship, without having to reference or query any of the Hubs or Links associated with said data.
-Using LSAT is a benefit of Data Vault 2.0 that allows maintaining historical data where end-dated relationships may need to be reopened or reactivated again without fear of losing any data.
+Using a LSAT is a benefit of Data Vault 2.0 that allows maintaining historical data where end-dated relationships may need to be reopened or reactivated again without fear of losing any data.
 
 **For example:** Imagine the operation of a tavern, which opens for business on August 10, 2020.
 A tavern will store kegs of different varieties of beer and then distribute those beverages through their tap system hooked up to a bar.
@@ -40,7 +40,7 @@ At any given time only one beer is going to be available despite there being fiv
 
 ![One-to-Many Link Relationship](/bimlflex/concepts/images/beer-link-one-to-many.png "One to Many Link Relationship")
 
-On month later on September 10, 2020 the tavern decides to install a second tap, at the same bar, subsequent to successful business operation.
+One month later on September 10, 2020 the tavern decides to install a second tap, at the same bar, subsequent to successful business operation.
 Now there are two (2) possible options for available beer.
 The Hub for Taps can be edited to include a second tap without any issue.
 This addition does not change the architecture of the model, but now there are two (2) one-to-many relationships.
@@ -54,8 +54,11 @@ A many-to-many relationship would appear as such, showing multiple relationships
 An additional example of a many-to-many relationship would be a single tap having multiple active records for various beers that can also be active on other taps.
 This may be done when tracking status for a empty keg and an active record for the current beer being served.
 
+<!--
 >[!NOTE]
 > Many-to-many relationships CAN NOT have a Driving Key.
+> 
+-->
 
 ### Tracking by Driving Key
 
@@ -65,11 +68,12 @@ Referencing the same example of tavern operation, historical tracking through a 
 
 ![Link Satellite Historical Tracking](/bimlflex/concepts/images/historical-tracking-lsat.png "Link Satellite Historical Tracking")
 
+<!--
 "Zero Records" are optional records which indicate the first recognized interaction with a Driving Key.
 The paramount indicator for a zero record is an interaction with a Driving Key, not when a record first enters the system.
 In this instance our Driving Keys are the Taps, and zero records would appear as such:
-
 ![Zero Records](/bimlflex/concepts/images/zero-records-last.png "Zero Records")
+-->
 
 After enough pints sold a keg will be kicked (emptied).
 A new beer will then replace the now-empty beer.
@@ -107,23 +111,21 @@ BimlFlex is able to automatically apply Driving Key to any relationship created 
 Due to the Foreign Keys in a database requiring a many-to-one in the source the application of a Driving Key scenario can be applied.
 This will be automatically included in the ETL logic required and no separate **Attribute** will be added in the **Attributes Editor**.
 
-<<<<<<< HEAD
 ![BimlFlex Objects Tab](/bimlflex/concepts/images/bfx-objects-tab.png "BimlFlex Objects Tab")
 
 ![BimlFlex Reference Table and Column](/bimlflex/concepts/images/bfx-reference-table-and-column.png "BimlFlex Reference Table and Column")
-=======
+
 > [!NOTE]
 > Requirements:
->
+>  
 > - **Object** *ACCELERATOR OBJECT TYPE* = `Hub`
 > - A **Column** in the **Object** that references another *ACCELERATOR OBJECT TYPE* = `Hub`.
->>>>>>> c7b57aeecb63d703f7007c0cda80e9961d53920b
 
 ### Manual Creation of Driving Keys
 
 > [!NOTE]
 > Prerequisites:
->
+>  
 > - The Link must already be accelerated.
 > - The column to be used for the Driving Key must be on the LNK (not LSAT).
 
@@ -149,7 +151,3 @@ The settings within BimlFlex are all adjusted in the "Add Attribute" dialogue bo
 > - [Data Vault Templates](xref:data-vault-templates)
 > - [BimlFlex Data Vault Best Practices](xref:data-vault-standards)
 > - [Driving Keys](xref:driving-keys)
-<<<<<<< HEAD
-
-=======
->>>>>>> c7b57aeecb63d703f7007c0cda80e9961d53920b
