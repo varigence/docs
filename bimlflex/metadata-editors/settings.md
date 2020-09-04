@@ -24,17 +24,23 @@ TODO: Add image of floating tool tip
 -->
 The Settings Group also contains a global Search field.
 The Search field contains a drop down menu of all settings, organized alphabetically by **Setting Group**, and allows users to search directly for specific settings.
-Settings that contain required values will be outlined in red and indicated as such.
 Searching for a specific setting will automatically navigate the user to the respective **Setting Group** and highlight the specific option within, guiding the user to the exact location needed.
 <!--
 TODO: Add image of highlighted setting option when searched. Maybe an image of the search term in the search bar, and the option in the window highlighted
 -->
+When utilizing the Search bar, if a user hovers over a specific search term the tooltip relating to that setting will be displayed. The information displayed in the tooltip from the global search bar will the same as if the user hovered over the actual setting field, as referenced above.
+
+> [!TIP]
+> For users who are unsure of the *specific* setting they need, beginning a search with "*" will allow users to search setting descriptions as well as setting titles. This will assist in guiding users to their desired setting based on associated terminology used in their search.
+
 When applicable, settings that involve editing SQL code will appear in a window that mirrors standard SQL input styling and syntax.
 <!--
 TODO: Add image of SQL Editor Window (Core -> Lookup Table Pattern)
 -->
 
 ![BimlFlex App - Settings](images/bimlflex-app-settings.64566.png "BimlFlex App - Settings")
+
+Settings that contain required values will be outlined in red and indicated as such.
 
 ## Command Bar Buttons
 

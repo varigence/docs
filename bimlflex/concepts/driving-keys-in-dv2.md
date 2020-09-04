@@ -31,6 +31,9 @@ Using a LSAT is a benefit of Data Vault 2.0 that allows maintaining historical d
 **For example:** Imagine the operation of a tavern, which opens for business on August 10, 2020.
 A tavern will store kegs of different varieties of beer and then distribute those beverages through their tap system hooked up to a bar.
 
+>[!NOTE]
+> In this article's examples, Link Keys have been simplified in order to shift focus on Driving Key behaviors.
+
 This hypothetical tavern has five (5) varieties of beer in stock: Pale Ale, Stout, Lager, IPA, and Cider.
 There is only one (1) tap for distribution.
 This architecture demonstrates a one-to-many relationship.
@@ -38,18 +41,18 @@ There is one tap and many beers.
 The *type* of beer available on tap is, essentially, inconsequential.
 At any given time only one beer is going to be available despite there being five (5) different options.
 
-![One-to-Many Link Relationship](/bimlflex/concepts/images/beer-link-one-to-many.png "One to Many Link Relationship")
+![One-to-Many Link Relationship](images/beer-link-one-to-many.png "One to Many Link Relationship")
 
 One month later on September 10, 2020 the tavern decides to install a second tap, at the same bar, subsequent to successful business operation.
 Now there are two (2) possible options for available beer.
 The Hub for Taps can be edited to include a second tap without any issue.
 This addition does not change the architecture of the model, but now there are two (2) one-to-many relationships.
 
-![Two (2) One-to-Many Relationships](/bimlflex/concepts/images/beer-link-one-to-many-2.0.png "Two (2) One-to-Many Link Relationships")
+![Two (2) One-to-Many Relationships](images/beer-link-one-to-many-2.0.png "Two (2) One-to-Many Link Relationships")
 
 A many-to-many relationship would appear as such, showing multiple relationships between Taps (*a possible two (2)*) and Beers (*a possible five (5)*).
 
-![Many-to-Many Link Relationship](/bimlflex/concepts/images/many-to-many-link-relationship-1.png "Many-to-Many Link Relationship")
+![Many-to-Many Link Relationship](images/many-to-many-link-relationship-1.png "Many-to-Many Link Relationship")
 
 An additional example of a many-to-many relationship would be a single tap having multiple active records for various beers that can also be active on other taps.
 This may be done when tracking status for a empty keg and an active record for the current beer being served.
@@ -64,9 +67,12 @@ This may be done when tracking status for a empty keg and an active record for t
 
 In the example scenario the Taps business entity is defined as "driving," meaning that ETL enforces the logic that a single Tap cannot be associated with multiple beers at the same point in time.
 
+>[!NOTE]
+> The Hubs for Taps and Beer remain static for the remainder of this example and as such are excluded from the below imagery.
+
 Referencing the same example of tavern operation, historical tracking through a Link Satellite in this example might look like such:
 
-![Link Satellite Historical Tracking](/bimlflex/concepts/images/historical-tracking-lsat.png "Link Satellite Historical Tracking")
+![Link Satellite Historical Tracking](images/historical-tracking-lsat.png "Link Satellite Historical Tracking")
 
 <!--
 "Zero Records" are optional records which indicate the first recognized interaction with a Driving Key.
@@ -83,22 +89,22 @@ Assume that the Pale Ale on Tap #1 was kicked on October 10, 2020, and replaced 
 
 The changes to inventory might appear as such in the Link and Link Satellite:
 
-![Link Satellite](/bimlflex/concepts/images/link-sat-01.png "Link Satellite")
+![Link Satellite](images/link-sat-01.png "Link Satellite")
 
 The record for Beer on Tap #1 expired on October 10, 2020, the date the keg kicked.
 A new record was created to mark the termination on October 10, 2020, noting the status as "empty."
 
 Next, a new record will be created, and activated, to mark that a new Beer is now hooked up to Tap #1, with the status noted as "full."
 
-![Link Satellite 2](/bimlflex/concepts/images/link-sat-02.png "Link Satellite 2")
+![Link Satellite 2](images/link-sat-02.png "Link Satellite 2")
 
-The two active relationships at this point in time, October 10, 2020, are Beer on Tap #1 and the separate Beer on Tap #2.
+The two active relationships at this point in time, October 11, 2020, are Beer on Tap #1 and the separate Beer on Tap #2.
 
-![Link Satellite 3](/bimlflex/concepts/images/link-sat-03.png "Link Satellite 3")
+![Link Satellite 3](images/link-sat-03.png "Link Satellite 3")
 
 The final model for this architecture would look as such:
 
-![Link Satellite 4](/bimlflex/concepts/images/link-sat-04.png "Link Satellite 4")
+![Link Satellite 4](images/link-sat-04.png "Link Satellite 4")
 
 ## BimlFlex Handling of Driving Keys
 
@@ -111,15 +117,21 @@ BimlFlex is able to automatically apply Driving Key to any relationship created 
 Due to the Foreign Keys in a database requiring a many-to-one in the source the application of a Driving Key scenario can be applied.
 This will be automatically included in the ETL logic required and no separate **Attribute** will be added in the **Attributes Editor**.
 
-![BimlFlex Objects Tab](/bimlflex/concepts/images/bfx-objects-tab.png "BimlFlex Objects Tab")
+![BimlFlex Objects Tab](images/bfx-objects-tab.png "BimlFlex Objects Tab")
 
-![BimlFlex Reference Table and Column](/bimlflex/concepts/images/bfx-reference-table-and-column.png "BimlFlex Reference Table and Column")
+![BimlFlex Reference Table and Column](images/bfx-reference-table-and-column.png "BimlFlex Reference Table and Column")
 
 > [!NOTE]
 > Requirements:
 >  
 > - **Object** *ACCELERATOR OBJECT TYPE* = `Hub`
 > - A **Column** in the **Object** that references another *ACCELERATOR OBJECT TYPE* = `Hub`.
+
+### Default Driving Key Application
+
+The default behavior within the BimlFlex Accelerator is to automatically apply Driving Key type relationships for any Links derived out of a Hub.
+
+Any changes made to the Driving Key relationships by the user after the first accelerated modeling will be maintained in all future model accelerations.
 
 ### Manual Creation of Driving Keys
 
@@ -141,9 +153,9 @@ The BimlFlex App will automatically enforce a Driving Key relationship on the LS
 | Column         | Column to be used as DK |
 | Attribute      | IsDrivingKey            |
 
-The settings within BimlFlex are all adjusted in the "Add Attribute" dialogue box:
+The settings within BimlFlex are all adjusted in the "Add Attribute" dialog box:
 
-![Manual Driving Key Definition](/bimlflex/concepts/images/object-field-dk.png "Manual Driving Key Definition")
+![Manual Driving Key Definition](images/object-field-dk.png "Manual Driving Key Definition")
 
 > [!NOTE]
 > For additional information regarding BimlFlex's assignment of Driving Keys or the technical walkthrough for manually defining Driving Keys, please reference the following documents:
