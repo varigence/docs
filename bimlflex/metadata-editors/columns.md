@@ -6,10 +6,23 @@ title: Columns
 
 The **Columns** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.  
 
+<!--
 <img
     src="images/bimlflex-app-editor-columns.png"
     title="Columns Editor"
 />
+-->
+
+<!--
+TO DO: Add new image of Columns screen, once feature locked.
+-->
+
+**Columns** within BimlFlex are displayed in hierarchical tree view on the left sidenav menu.
+Active columns will be displayed next to the Object names in parentheses.
+
+Selecting an Object with a single Column will immediately navigate the user to the Column edit screen.
+
+Selecting an Object with multiple Columns will display a list of all active columns within. The user may navigate to any Column by selecting from the displayed list.
 
 ## Action Buttons  
 

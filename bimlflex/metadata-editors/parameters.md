@@ -16,11 +16,24 @@ Parameters added to a project, batch package, or regular package can be used as 
 
 The following sections describe the UI elements of the **Parameters Editor** and how they are used to author and manage BimlFlex **Parameters**.  
 
+<!--
 **Parameters Editor**  
 <img
     src="images/bimlflex-app-editor-parameters.png"
     title="Parameters Editor"
 />
+-->
+
+<!--
+TO DO: Add new image of Parameters screen, once feature locked.
+-->
+
+**Parameters** within BimlFlex are displayed in hierarchical tree view on the left sidenav menu.
+The number of active parameters will be displayed next to the Object names in parentheses.
+
+Selecting an Object with a single Parameter will immediately navigate the user to the Parameter edit screen.
+
+Selecting an Object with multiple Parameters will display a list of all active parameters within. The user may navigate to any Parameter by selecting from the displayed list.
 
 ## Action Buttons  
 

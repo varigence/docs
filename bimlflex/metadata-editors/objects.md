@@ -10,11 +10,25 @@ BimlFlex **Objects** closely mirror a Relational Database table, though not ever
 
 The following sections describe the UI elements of the **Objects Editor** and how they are used to author and manage BimlFlex **Objects**.
 
+<!-->
 **Objects Editor**  
 <img
     src="images/bimlflex-app-editor-objects.png"
     title="Objects Editor"
 />
+-->
+
+<!--
+TO DO: Add new image of Objects screen, once feature locked.
+-->
+
+**Objects** within BimlFlex are displayed in hierarchical tree view on the left sidenav menu.
+The number of Objects will be displayed next to the Object name in parentheses.
+
+Selecting a single Object will immediately navigate the user to the Parameter edit screen.
+
+Selecting multiple Objects will display a list of all objects available. The user may navigate to any Object by selecting from the displayed list.
+
 
 ## Details Tab
 

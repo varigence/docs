@@ -17,8 +17,8 @@ TO DO: Update images of BimlFlex Setting Groups once finalized.
 
 ## Settings Group
 
-Settings within the BimlFlex app are organized into essential categories, **Setting Groups,** such as Azure, Core, DataVault, Snowflake, etc., with each category containing options relevant to its parent category within.
-Hovering the mouse pointer over individual settings will display tooltips relating to same, along with brief explanation(s) as to how setting options will affect a project's output.
+Settings within the BimlFlex app are organized into essential categories, **Setting Groups,** such as Azure, Core, DataVault, Snowflake, etc., with each category containing options within, relevant to its parent category.
+Hovering the mouse pointer over individual settings will display tooltips relating to same, along with brief explanation(s) as to how settings will change a project.
 <!--
 TODO: Add image of floating tool tip
 -->
