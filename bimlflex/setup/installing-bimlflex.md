@@ -1,7 +1,9 @@
 ---
 uid: bimlflex-installing-bimlflex
 title: Installing BimlFlex
+summary: Documentation providing detailed steps in the installation of BimlFlex application.
 ---
+
 # Installing BimlFlex
 
 ![Installing BimlFlex](https://www.youtube.com/watch?v=T0PvDwfYqWo?rel=0&autoplay=0 "Installing BimlFlex")
@@ -52,7 +54,7 @@ Check the bitness of the local installation of Microsoft Excel using the [Micros
 
 Run the installer to install the applications.
 
-![Installing BimlFlex](images/bimlflex-ss-v5-install-bimlflex-2020.gif)
+![Installing BimlFlex](images/bimlflex-ss-v5-install-bimlflex-2020.png)
 
 #### Installer steps
 

@@ -1,6 +1,7 @@
 ---
 uid: settings
 title: Settings
+summary: Configuration of metadata and framework settings from within the BimlFlex application.
 ---
 # Settings
 
@@ -15,20 +16,30 @@ The **Settings Editor** is used to manage metadata and framework settings in the
 TO DO: Update images of BimlFlex Setting Groups once finalized.
 -->
 
-## Settings Group
+![Settings Editor](images/settings-editor.jpg "Settings Editor")
+
+## Settings Groups
 
 Settings within the BimlFlex app are organized into essential categories, **Setting Groups,** such as Azure, Core, DataVault, Snowflake, etc., with each category containing options within, relevant to its parent category.
+
+![Settings Groups](images/settings-group.png "Settings Groups")
+
 Hovering the mouse pointer over individual settings will display tooltips relating to same, along with brief explanation(s) as to how settings will change a project.
 <!--
 TODO: Add image of floating tool tip
 -->
+
+![Floating Tool Tip](images/settings-floating-tool-tip.png "Floating Tool Tips")
+
 The Settings Group also contains a global Search field.
 The Search field contains a drop down menu of all settings, organized alphabetically by **Setting Group**, and allows users to search directly for specific settings.
 Searching for a specific setting will automatically navigate the user to the respective **Setting Group** and highlight the specific option within, guiding the user to the exact location needed.
-<!--
-TODO: Add image of highlighted setting option when searched. Maybe an image of the search term in the search bar, and the option in the window highlighted
--->
+
+![Search Term Highlight](images/search-term-highlight.gif "Search Term Highlight")
+
 When utilizing the Search bar, if a user hovers over a specific search term the tooltip relating to that setting will be displayed. The information displayed in the tooltip from the global search bar will the same as if the user hovered over the actual setting field, as referenced above.
+
+![Search Bar Tool Tip](images/search-tool-tip.png "Search Bar Tool Tips")
 
 > [!TIP]
 > For users who are unsure of the *specific* setting they need, beginning a search with "*" will allow users to search setting descriptions as well as setting titles. This will assist in guiding users to their desired setting based on associated terminology used in their search.
