@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-getting-started-initial-configuration
 title: BimlFlex Initial Configuration
+summary: Initial walkthrough of setting up BimlFlex to create project, connect database, and load sample metadata
 ---
 # Initial Configuration
 
@@ -36,15 +37,15 @@ If a trial key is required, please contact Varigence BimlFlex Support at [suppor
 
 From the start page, create a new **BimlFlex Project**
 
-![Create New Project](images/bimlflex-ss-v5-create-new-project.png "Create New Project")
+![Create New Project](images/new-bs-project-screen.png "Create New Project")
 
 Options for creating a new BimlFlex Project. Place the project in a suitable folder, the folder will contain source code for the project and should be managed through a source control system.
 
-![New BimlFlex Project](images/bimlflex-ss-v5-new-bimlflex-project.png "New BimlFlex Project")
+![New BimlFlex Project](images/bfx-my-first-project.png "New BimlFlex Project")
 
 Once the project is created, it is possible to open it from the folder by opening the project file, or by opening the project from BimlStudio.
 
-![Empty Project](images/bimlflex-ss-v5-empty-project.png "Empty Project")
+![Empty Project](images/bs-new-project-screen.png "Empty Project")
 
 ### Connect to the Metadata Database
 
