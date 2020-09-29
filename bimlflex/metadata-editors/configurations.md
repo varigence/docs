@@ -11,11 +11,16 @@ The **Configurations Editor** is used to manage configurations which drive the b
 > [!TIP]
 > The [Configurations Reference Document](../reference-documentation/metadata-configurations.md) serves as a complete guide for all configurations available in the BimlFlex App.
 
+
 ![BimlFlex App - Configurations](images/bimlflex-app-configurations.64566.png "BimlFlex App - Configurations")
+
+
+![BimlFlex Configurations Editor](images/bfx-configurations-editor-overview.png "BimlFlex Configurations Editor")
 
 ## Action Buttons
 
 The action buttons modify the **Configuration** that is active in the editor.
+
 
 ![BimlFlex App - Configurations - Command Bar](images/bimlflex-app-configurations-command-bar.64566.png "BimlFlex App - Configurations - Command Bar")
 
@@ -56,19 +61,37 @@ Configuration Overrides are saved in BimlFlex as **Attributes**. The [Attributes
 
 ### Add a Configuration Override
 
-To add a **Configuration Override**, click <img class="icon-col m-5" src="images/svg-icons/attributes.svg" /> **Override Configuration** next to the field you would like to override and fill out the Add Attribute form.
+To add a **Configuration Override**, click `+ Add` on the Overrides tab. 
+
+![BimlFlex Add Configuration Override](images/bfx-add-attribute-override-plus-button.png "BimlFlex Add Configuration Override")
+
+<!--
+click <img class="icon-col m-5" src="images/svg-icons/attributes.svg" /> **Override Configuration** next to the field you would like to override and fill out the Add Attribute form.
+-->
 
 [!include[Add Attribute Dialog](_dialog-add-attribute.md)]
 
-The Attribute fields are used as the Configuration Override as defined in this table.
+![BimlFlex Attribute Override Editor](images/bfx-add-attribute-override.png "BimlFlex Attribute Override Editor")
+
+The Attribute fields are used as the Configuration Override as defined in this table. Required fields will be outlined in red.
+
+> [!NOTE]
+> It is now possible to override the configuration attribute values as needed. 
 
 |Attribute field Name|Configuration Field Name|Description|
 |-|-|-|
 | Attribute Type || Defines the scope for when the override is applied. |
+| Connection || xxx |
+| Object || xxx |
+| Column || xxx | 
+| Overridden Configuration || xxx | 
+| Attribute Value | The value to be used as the override. |
+| Description | Description of the Configuration Override. |
+
+<!--
 | Attribute | ConfigurationKey_ConfigurationField | Defines the Configuration field that will be overridden in this format: ConfigurationKey_ConfigurationField |
-| Attribute Value || The value to be used as the override. |
 | Attribute Property |||
-| Description || Description of the Configuration Override. |
+-->
 
 ### Edit or Delete a Configuration Override
 

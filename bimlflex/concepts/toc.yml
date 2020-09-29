@@ -6,8 +6,8 @@
   href: importing-metadata.md
 - name: Source to Staging Templates
   href: source-to-staging-templates.md
-- name: Data Vault Standards
-  href: data-vault-standards.md
+- name: Data Vault Best Practices
+  href: data-vault-best-practices.md
 - name: Data Vault Templates
   href: data-vault-templates.md
 - name: Data Mart Templates

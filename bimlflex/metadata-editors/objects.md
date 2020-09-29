@@ -10,7 +10,7 @@ BimlFlex **Objects** closely mirror a Relational Database table, though not ever
 
 The following sections describe the UI elements of the **Objects Editor** and how they are used to author and manage BimlFlex **Objects**.
 
-<!-->
+<!--
 **Objects Editor**  
 <img
     src="images/bimlflex-app-editor-objects.png"
@@ -18,9 +18,7 @@ The following sections describe the UI elements of the **Objects Editor** and ho
 />
 -->
 
-<!--
-TO DO: Add new image of Objects screen, once feature locked.
--->
+![BimlFlex Objects Editor](images/bfx-object-editor-overview.png "BimlFlex Objects Editor")
 
 **Objects** within BimlFlex are displayed in hierarchical tree view on the left sidenav menu.
 The number of Objects will be displayed next to the Object name in parentheses.
@@ -28,7 +26,6 @@ The number of Objects will be displayed next to the Object name in parentheses.
 Selecting a single Object will immediately navigate the user to the Parameter edit screen.
 
 Selecting multiple Objects will display a list of all objects available. The user may navigate to any Object by selecting from the displayed list.
-
 
 ## Details Tab
 
@@ -70,11 +67,15 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 The standard fields hold the bulk of the metadata that will be used to integrate the **Object**.  Additional fields to manage the modeling and the ability to toggle **Object** level persistence is provided.  
 
+![Objects Editor Fields](images/objects-details-tab-new.png "Objects Editor Fields")
+
+<!--
 <img 
     src="images/bimlflex-app-editor-objects-fields-table.png"
     style="border: 1px solid #CCC;"
     title="Objects Editor Fields"
 />
+-->
 
 |Field|Description|
 |-|-|
@@ -84,17 +85,25 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 | Object Name | The name of the **Object**.  On an [Object Type] that does not recognize the schema concept this still used in the generation of naming patterns depending on what **Settings** are being used.|
 | Short Name | The name to be used when performing ETL/ELT in an integration environment that does not support the full string of the concatenated name. |
 | Object Type | The type of **Object** that is either being extracted or created, depending on the *Integration Stage* of the **Connection** associated with the **Object**.  Must be a valid [Object Type](#object-types) (filtered for appropriate *Integration Stage*). |
-| Model Object Type | The type of **Object** that you are designing to load.  Must be a valid [Object Type](#object-types) (filtered for appropriate *Integration Stage*). |
-| Model Override Name | The name of the Business Concept or Target Object you are modeling.  This is only the name of the concept itself and not the name of the final desired [Object Name].  If loading a Customer HUB, **Customer** would be entered here and not HUB_Customer.  Suffix or prefix values are all configured via the use of **Settings** and are generated dynamically depending on entered metadata. |
-| Model Override Short Name |If populated, the value to be used when a 'Short Name' is applicable.  This is generally used in the generation and naming of Link Tables (LNKs), and other entities whose names are dynamically generated from a concatenation of entity names. |
-| Model Grouping | This column categorizes objects per subject area. This grouping can be used in the [Data Vault Accelerator] for constrained acceleration. |
+| Business Entity | xxx | 
+| Description | xxx |
+| Comments | xxx |
 | Exclude From Build | This will flag the **Object** to not generate an output artifact and be removed from the build process. |
 | Exclude From Validation | This will flag the **Object** to be ignored by the validation engine.  This is used for **Objects** that have metadata generated dynamically in a downstream process and would otherwise cause validation issues.  Note that this is not a fix to a validation error as all the downstream dependencies are still required.  This is only for entities that have late generating assets (Point In Time (PIT) and Bridge (BRG) tables mostly). |
 | Not Persistent | If this is `true` then this **Object** will not have a `Persistent Stage Area` (PSA) table created. |
 | Use Own Thread | When set to `true` the **Object** will be executed in its own thread at the start of the respective execution container.  When set to `false` the default logic has the **Objects** executed within a **Batch** based on Topological sort order and then sorted alphabetically. |
 | Threads | For SSIS it is used to control the parallelization of Dataflow tasks during package execution.  Depending on the *Integration Stage* of the associated **Connection**, this number corresponds to how many tasks, when possible, will run in parallel when loading or extracting the table. |
-| Description | Optional metadata to provide description. |
-| Comments | Optional metadata to provide developer comments. |
+
+### Model Overrides - Standard Fields
+
+![Model Overrides Fields ](images/bfx-objects-model-override.png "Model Overrides Fields")  
+
+|Field|Description|
+|-|-|
+| Accelerator Object Type | The type of **Object** that you are designing to load.  Must be a valid [Object Type](#object-types) (filtered for appropriate *Integration Stage*). |
+| Business Name | The name of the Business Concept or Target Object you are modeling.  This is only the name of the concept itself and not the name of the final desired [Object Name].  If loading a Customer HUB, **Customer** would be entered here and not HUB_Customer.  Suffix or prefix values are all configured via the use of **Settings** and are generated dynamically depending on entered metadata. |
+| Business Short Name |If populated, the value to be used when a 'Short Name' is applicable.  This is generally used in the generation and naming of Link Tables (LNKs), and other entities whose names are dynamically generated from a concatenation of entity names. |
+| Business Grouping | This column categorizes objects per subject area. This grouping can be used in the [Data Vault Accelerator] for constrained acceleration. |
 
 ### Allowed Values
 

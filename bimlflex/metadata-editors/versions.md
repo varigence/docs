@@ -8,7 +8,11 @@ The **Versions Editor** is used to manage versions of the Metadata and BimlFlex 
 
 <img class="icon-inline" src="images/svg-icons/versions.svg" /> **Versions** can be found under Administration in the application menu.
 
+<!--
 ![BimlFlex App - Versions](images/bimlflex-app-versions.64566.png "BimlFlex App - Versions")
+-->
+
+![BimlFlex Versions](images/bfx-versions-overview.png "BimlFlex Versions")
 
 ## Command Bar Buttons
 
@@ -35,6 +39,9 @@ The **Versions** form is used to manage all **Versions**. The fields in the form
 |Is Current| The Is Current toggle should be enabled for active **Versions**|
 |Comments|Comments can be included to describe the state of the metadata when the **Version** was made or the purpose of the **Version**.|
 
+
+
+<!--
 ## Related Items
 
 Below the **Version** form are tabs that will display items related specifically to the selected **Version**. The tabs will display Configurations, Data Type Mappings, and Settings as they relate specifically to the selected version.
@@ -42,3 +49,4 @@ Below the **Version** form are tabs that will display items related specifically
 ![BimlFlex App - Versions - Related Items](images/bimlflex-app-versions-related-items.64566.png "BimlFlex App - Versions - Related Items")
 
 [//]: # (TODO: Include a better description of what the related item tabs do.)
+-->

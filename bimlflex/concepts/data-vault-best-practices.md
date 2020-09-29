@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-data-vault-standards
+uid: bimlflex-data-best-practices
 title: BimlFlex Data Vault Best Practices
 ---
 

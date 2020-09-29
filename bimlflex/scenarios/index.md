@@ -8,17 +8,18 @@ BimlFlex supports a number of target Data Warehouse platforms. It provides load 
 
 Main platforms and architectures:
 
-* Snowflake
-* Azure Synapse
-* Microsoft on-premises SQL Server
+* [Snowflake](xref:snowflake-implementation)
+* [Azure Synapse](xref:synapse-implementation)
+* [Microsoft on-premises SQL Server](xref:ssis-on-prem-sql-server)
 
 ## Other Concepts
 
-* Export to File
-* Master Data Services
+* [Export to File](xref:export-to-file)
+* [Master Data Services](xref:master-data-services)
 
 ## Special sources
 
-Excel Files
+* [Excel Files](xref:source-excel-plus)
+* [Odata](xref:source-odata)
+* [Stored Procedure](xref:source-stored-procedure)
 <!-- Salesforce -->
-<!-- Stored Procedure -->

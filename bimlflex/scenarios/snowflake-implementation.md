@@ -20,11 +20,14 @@ This section will walk you through the required software and system configuratio
 ### Implement Snowflake using Azure Data Factory
 
 > [!NOTE]
-> The example is intended to follow the guide for [Creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example).
+> The example is intended to follow the guide for [Creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example). 
 
 The following video walks through the common steps and considerations for deploying an Azure Data Factory for Snowflake.
 
 ![BimlFlex - Implement Snowflake using Azure Data Factory](https://www.youtube.com/watch?v=COGIHSjAdSg?rel=0&autoplay=0 "BimlFlex - Implement Snowflake using Azure Data Factory")
+
+> [!NOTE]
+> Additional BimlFlex documentation regarding the implementation of Snowflake in Azure Data Factory can be referenced [here](xref:implementing-snowflake-in-adf)
 
 ### Installing and Configuring SnowSQL (SSIS Only)
 
