@@ -1,3 +1,8 @@
+---
+uid: bimlexpress-comparison-index
+name: BimlExpress Comparison
+---
+
 # BimlExpress Comparison
 
 ## BimlExpress
@@ -10,9 +15,9 @@ In this section the differences between BimlExpress, BimlStudio, BIDS Helper and
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[](xref:biml-language-reference)
+[Biml Language Reference](xref:biml-language-reference)
 
-[](xref:biml-api-reference)
+[Biml API Reference](xref:biml-api-reference)
 
 ## Help and Support
 

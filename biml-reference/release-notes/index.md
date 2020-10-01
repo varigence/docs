@@ -1,3 +1,8 @@
+---
+uid: biml-release-notes
+name: Biml Release Notes
+---
+
 # Biml Release Notes
 
 If you have questions about a snippet or are looking for help with a particular Biml implementation, you can search and post in the [Biml forum](https://varigence.com/Forums?forumName=Biml) for help.
@@ -10,6 +15,6 @@ While the forums are the best way to get answers, if your question contains prop
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[](xref:biml-language-reference)
+[Biml Language Reference](xref:biml-language-reference)
 
-[](xref:biml-api-reference)
+[Biml API Reference](xref:biml-api-reference)

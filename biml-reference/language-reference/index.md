@@ -16,4 +16,4 @@ While the forums are the best way to get answers, if your question contains prop
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[](xref:biml-api-reference)
+[Biml API Reference](xref:biml-api-reference)

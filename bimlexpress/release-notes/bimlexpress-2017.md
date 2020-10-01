@@ -1,3 +1,8 @@
+---
+uid: bimlexpress-release-notes-2017
+name: BimlExpress Release Notes 2017
+---
+
 # BimlExpress 2017 Release Notes
 
 ## BimlExpress 2018
@@ -59,11 +64,11 @@
 
 ### Biml Language
 
-- See [](xref:biml-release-notes)
+- See [Biml Release Notes](xref:biml-release-notes)
 
 ### Biml API
 
-- See [](xref:biml-release-notes)
+- See [Biml Release Notes](xref:biml-release-notes)
 
 ### Database Providers and Type Mappings
 

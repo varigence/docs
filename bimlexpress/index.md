@@ -1,3 +1,8 @@
+---
+uid: bimlexpress-index
+name: BimlExpress Index
+---
+
 # BimlExpress Documentation
 
 ## BimlExpress
@@ -12,9 +17,9 @@ BimlExpress provides the ability to create packages from Biml, an XML-based lang
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[](xref:biml-api-reference)
+[Biml API Reference](xref:biml-api-reference)
 
-[](xref:biml-langage-reference)
+[Biml Language Reference](xref:biml-language-reference)
 
 ## Help and Support
 

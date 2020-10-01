@@ -1,22 +1,27 @@
+---
+uid: biml-references
+name: Biml References
+---
+
 # Biml Documentation
 
 ## Biml API Reference
 
-[](xref:biml-api-reference)
+[Biml API Reference](xref:biml-api-reference)
 
 ## Biml Language Reference
 
-[](xref:biml-language-reference)
+[Biml Language Reference](xref:biml-language-reference)
 
 ## Biml Release Notes
 
-[](xref:biml-release-notes)
+[Biml Release Notes](xref:biml-release-notes)
 
 ## Biml Snippets
 
 The Biml Snippets collection includes a variety of Biml snippets for implementing assets in your Biml-based BI solution.
 
-[](xref:biml-snippets)
+[Biml Snippets](xref:biml-snippets)
 
 ## Biml Forum
 

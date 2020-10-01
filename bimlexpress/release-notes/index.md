@@ -1,3 +1,8 @@
+---
+uid: bimlexpress-release-notes
+name: BimlExpress Release Notes
+---
+
 # BimlExpress Release Notes
 
 ## BimlExpress
@@ -12,9 +17,9 @@ BimlExpress provides the ability to create packages from Biml, an XML-based lang
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[](xref:biml-language-reference)
+[Biml Language Reference](xref:biml-language-reference)
 
-[](xref:biml-api-reference)
+[Biml API Reference](xref:biml-api-reference)
 
 ## Help and Support
 
