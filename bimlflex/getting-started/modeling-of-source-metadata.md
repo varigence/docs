@@ -18,7 +18,7 @@ The following detailed steps walk through the options for modeling of source Met
 
 The end result of this modeling is available to be loaded from the sample metadata set `02 - MSSQL After Import`.
 
-More information on the sample metadata is available here: [](xref:bimlflex-getting-started-sample-metadata)
+More information on the sample metadata is available here: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
 
 ### Reviewing keys
 
@@ -52,7 +52,7 @@ BimlFlex also provides a shortcut code for accessing the current connections Rec
 
 For the trial process, verify that the `@@rs` shortcut was added to all Integration Keys by the import metadata process. For the Address table that would be `FlexToBk(@@rs, AddressID)`.
 
-More information and considerations for Integration Keys are available in the [](xref:bimlflex-getting-started-building-integration-keys-for-data-vault) section.
+More information and considerations for Integration Keys are available in the [Building Integration Keys for Data Vault](xref:bimlflex-getting-started-building-integration-keys-for-data-vault) section.
 
 ### Defining Relationships
 
@@ -418,7 +418,7 @@ As an example, the source column `ProductCategoryId` becomes `ProductCategory_BK
 
 The Data Type Mapping template that should be applied to this column. Used for data type expansion through the Data Type Mappings feature.
 
-More information: [](xref:bimlflex-getting-started-applying-data-type-mappings).
+More information: [Applying Data Type Mappings](xref:bimlflex-getting-started-applying-data-type-mappings).
 
 #### Default Value
 

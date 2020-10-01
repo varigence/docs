@@ -70,4 +70,4 @@ The default name for these are built out of the Data Vault load name with either
 
 These batches allow easy scheduling and orchestration of the Stored Procedure execution through SSIS.
 
-More information: [](xref:bimlflex-getting-started-dimensional-model)
+More information: [Data Mart Dimensional Model](xref:bimlflex-getting-started-dimensional-model)

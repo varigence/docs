@@ -358,8 +358,8 @@ You can use this script to identify which **Project** reference the **Connection
 
 More information:
 
-* [](xref:bimlflex-ssis-deployment-wizard)
-* [](xref:bimlflex-ssis-deployment-sensitive-info-management)
+* [Deployment Through the SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-wizard)
+* [Sensitive Information Management in SSIS](xref:bimlflex-ssis-deployment-sensitive-info-management)
 
 ### Video
 

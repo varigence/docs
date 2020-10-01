@@ -8,13 +8,13 @@ This section describes setup and build options of a BimlStudio Project along wit
 
 ## BimlStudio Project Setup
 
-* [](xref:bimlflex-setup-bimlstudio-project)
+* [BimlFlex - Setup BimlStudio Project](xref:bimlflex-setup-bimlstudio-project)
 
 ## Build Options
 
-* [](xref:bimlflex-interactive-build)
-* [](xref:bimlflex-command-line-build)
+* [BimlFlex Interactive Build](xref:bimlflex-interactive-build)
+* [Building Using the Command Line](xref:bimlflex-command-line-build)
 
 ## Generating DDL
 
-* [](xref:bimlflex-generating-ddl)
+* [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)

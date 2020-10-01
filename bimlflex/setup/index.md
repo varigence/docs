@@ -8,15 +8,15 @@ This section describes system requirements and the installation of the BimlFlex 
 
 ## System Requirements
 
-* [](xref:bimlflex-software-and-hardware-requirements)
+* [BimlFlex Software and Hardware requirements](xref:bimlflex-software-and-hardware-requirements)
 
 ## Application Install
 
-* [](xref:bimlflex-installing-bimlflex)
-<!-- TODO/legacy * [](xref:bimlflex-metadata-database-install)-->
-<!-- TODO * [](xref:bimlflex-build-server-install)-->
-* [](xref:bimlflex-ssis-server-install)
+* [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+<!-- TODO/legacy * [BimlFlex Metadata Database Installation](xref:bimlflex-metadata-database-install)-->
+<!-- TODO * [BimlFlex Build Server Install](xref:bimlflex-build-server-install)-->
+* [SSIS Server Installation](xref:bimlflex-ssis-server-install)
 
 ## Application Upgrade
 
-* [](xref:bimlflex-upgrade-and-testing)
+* [Upgrade and Testing Process](xref:bimlflex-upgrade-and-testing)

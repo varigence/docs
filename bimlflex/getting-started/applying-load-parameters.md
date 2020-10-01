@@ -40,4 +40,4 @@ The extract packages are expanded with the required get and set parameter tasks 
 
 As the parameters are stored in the BimlCatalog database it is necessary to reset these if a new initial load is performed, such as after rebuilding the persistent staging tables in a getting started scenario. If the tables are emptied and the load parameter is kept, a package execution will not load any of the existing source data to the staging tables.
 
-Next Step: [](xref:bimlflex-getting-started-adding-business-data-vault-performance-constructs)
+Next Step: [Adding the Business Data Vault Model](xref:bimlflex-getting-started-adding-business-data-vault-performance-constructs)

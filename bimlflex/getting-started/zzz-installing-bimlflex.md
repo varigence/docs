@@ -114,7 +114,7 @@ Review the installer tasks and allow the installation to occur
 
 Once the installation concludes successfully, click finish to end the installer.
 
-Please refer to the getting started guide to get started with BimlFlex: [](xref:bimlflex-getting-started)
+Please refer to the getting started guide to get started with BimlFlex: [Getting Started with BimlFlex](xref:bimlflex-getting-started)
 
 ### Enter product key
 

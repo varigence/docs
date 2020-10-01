@@ -18,22 +18,22 @@ Use the included sample metadata to access sample metadata, settings and configu
 
 Quick and easy overview of BimlFlex in video format
 
-More information: [](xref:bimlflex-getting-started-intro-videos)
+More information: [BimlFlex Intro Videos](xref:bimlflex-getting-started-intro-videos)
 
 ## Initial Configuration
 
 Once BimlFlex is installed, it is possible to create and configure the first project
 
-More information: [](xref:bimlflex-getting-started-initial-configuration)
+More information: [BimlFlex Initial Configuration](xref:bimlflex-getting-started-initial-configuration)
 
 ## First Project Walkthrough
 
 Get straight into building a project in BimlFlex
 
-More information: [](xref:bimlflex-getting-started-first-project-walkthrough)
+More information: [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough)
 
 ## Sample Metadata
 
 Use the included sample metadata to quickly configure a starting point for one of the supported architectures
 
-More information: [](xref:bimlflex-getting-started-sample-metadata)
+More information: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)

@@ -126,7 +126,7 @@ The Configurations and Settings sheets in the Metadata Editor contains  options 
 
 This is described in more detail in:
 
-* [](xref:bimlflex-metadata-configurations)
-* [](xref:bimlflex-metadata-settings)
+* [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
+* [BimlFlex Settings](xref:bimlflex-metadata-settings)
 
 ![Metadata Configurations sheet](images/bimlflex-ss-v5-excel-configurations-sheet.png "Metadata Configurations sheet")

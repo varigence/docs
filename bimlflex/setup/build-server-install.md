@@ -8,9 +8,9 @@ BimlFlex can be installed on a build server as part of a Continuous Integration 
 
 ## Installation Media
 
-A build server setup will require either the **BimlFlex Developer Installation** or the **BimlFlex Runtime Installation** based on the functionality of the build server. For more information on different build server setups and scenarios, see the [](xref:bimlflex-adf-continuous-integration-and-continuous-delivery) documentation.  
+A build server setup will require either the **BimlFlex Developer Installation** or the **BimlFlex Runtime Installation** based on the functionality of the build server. For more information on different build server setups and scenarios, see the [BimlFlex Continuous Integration and Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery) documentation.  
 
-The latest installer is available here: [](xref:bimlflex-release-notes)
+The latest installer is available here: [BimlFlex Release Notes](xref:bimlflex-release-notes)
 
 ## Installation
 
@@ -18,8 +18,8 @@ Depending on the build server setup and capabilities, the **BimlFlex Developer I
 
 ### BimlFlex Developer Installation
 
-For a full developer installation that will allow for more complete and customized automation, complete the BimlFlex Developer Installation using the [](xref:bimlflex-installing-bimlflex) guide.
+For a full developer installation that will allow for more complete and customized automation, complete the BimlFlex Developer Installation using the [Installing BimlFlex](xref:bimlflex-installing-bimlflex) guide.
 
 ### BimlFlex Runtime Installation
 
-For a process which uses pre-compiled SSDT packages, follow the [](xref:bimlflex-ssis-server-install) guide.
+For a process which uses pre-compiled SSDT packages, follow the [SSIS Server Installation](xref:bimlflex-ssis-server-install) guide.

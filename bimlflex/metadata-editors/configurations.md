@@ -11,9 +11,9 @@ The **Configurations Editor** is used to manage configurations which drive the b
 > [!TIP]
 > The [Configurations Reference Document](../reference-documentation/metadata-configurations.md) serves as a complete guide for all configurations available in the BimlFlex App.
 
-
+<!--
 ![BimlFlex App - Configurations](images/bimlflex-app-configurations.64566.png "BimlFlex App - Configurations")
-
+-->
 
 ![BimlFlex Configurations Editor](images/bfx-configurations-editor-overview.png "BimlFlex Configurations Editor")
 
@@ -78,7 +78,7 @@ The Attribute fields are used as the Configuration Override as defined in this t
 > [!NOTE]
 > It is now possible to override the configuration attribute values as needed. 
 
-|Attribute field Name|Configuration Field Name|Description|
+|Attribute Field Name|Configuration Field Name|Description|
 |-|-|-|
 | Attribute Type || Defines the scope for when the override is applied. |
 | Connection || xxx |

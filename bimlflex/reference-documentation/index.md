@@ -10,5 +10,5 @@ The BimlFlex Entity Definitions contain reference documentation for Metadata Ent
 
 ## Other references
 
-* [](xref:bimlflex-metadata-settings)
-* [](xref:bimlflex-data-type-conversions)
+* [BimlFlex Settings](xref:bimlflex-metadata-settings)
+* [BimlFlex Data Type Conversions](xref:bimlflex-data-type-conversions)

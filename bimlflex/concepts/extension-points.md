@@ -4,7 +4,7 @@ title: BimlFlex Extension Points
 ---
 # Extension Points
 
-Reference information is detailed in the [](xref:bimlflex-extension-point-definitions) document
+Reference information is detailed in the [BimlFlex Extension Point Definitions](xref:bimlflex-extension-point-definitions) document
 
 Extension Points are used to extend the default functionality of BimlFlex using standard Biml code. It can extend and override many different areas of the BimlFlex framework.
 

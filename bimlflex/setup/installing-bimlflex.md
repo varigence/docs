@@ -15,7 +15,7 @@ The following installers are available:
 * **BimlFlex Runtime Installation**  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
-The current installer is available through the [](xref:bimlflex-release-notes)
+The current installer is available through the [BimlFlex Release Notes](xref:bimlflex-release-notes)
 
 The BimlFlex Developer installation includes all components used in the BimlFlex framework:
 
@@ -34,7 +34,7 @@ The following detailed steps walk through the installation of BimlFlex
 
 ### Download the BimlFlex installer
 
-The current installer is available through the [](xref:bimlflex-release-notes)
+The current installer is available through the [BimlFlex Release Notes](xref:bimlflex-release-notes)
 
 ### Check bitness of Microsoft Excel
 
@@ -84,4 +84,4 @@ Run the installer to install the applications.
 
 Once the installation concludes successfully, click finish to end the installer.
 
-Refer to [](xref:bimlflex-getting-started) to get started with BimlFlex
+Refer to [Getting Started with BimlFlex](xref:bimlflex-getting-started) to get started with BimlFlex

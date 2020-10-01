@@ -8,29 +8,29 @@ This section covers various BimlFlex Concepts that are important to understand w
 
 ## Importing Metadata
 
-* [](xref:bimlflex-importing-metadata)
+* [BimlFlex Importing Metadata](xref:bimlflex-importing-metadata)
 
 ## Templates
 
-* [](xref:bimlflex-source-to-staging-templates)
-* [](xref:bimlflex-data-vault-standards)
-* [](xref:bimlflex-data-vault-templates)
-* [](xref:bimlflex-data-mart-templates)
+* [BimlFlex Source to Staging Templates](xref:bimlflex-source-to-staging-templates)
+* [BimlFlex Data Vault Best Practices](xref:bimlflex-data-vault-standards)
+* [BimlFlex Data Vault Templates](xref:bimlflex-data-vault-templates)
+* [BimlFlex Data Mart Templates](xref:bimlflex-data-mart-templates)
 
 ## Integration Keys
 
-* [](xref:bimlflex-integration-keys-and-relationships)
+* [BimlFlex Integration Keys and Relationships](xref:bimlflex-integration-keys-and-relationships)
 
 ## Load Parameters
 
-* [](xref:bimlflex-metadata-parameters)
+* [BimlFlex Parameters](xref:bimlflex-metadata-parameters)
 
 ## Delete Detection
 
-* [](xref:bimlflex-delete-detection)
+* [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 
 <!-- TODO: await version with full support for new settings before inclusion
 ## Other features
 
-* [](xref:bimlflex-ssdt-project)
+* [BimlFlex-generated SQL Server Data Tools Project](xref:bimlflex-ssdt-project)
 -->

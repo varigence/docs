@@ -69,4 +69,4 @@ These projects can be used to deploy and manage the database pipeline instead of
 
 The default output folder for these SSDT projects can be changed through the `SsdtOutputPath` Setting
 
-Next Step: [](xref:bimlflex-getting-started-applying-load-parameters)
+Next Step: [Applying Load Parameters](xref:bimlflex-getting-started-applying-load-parameters)

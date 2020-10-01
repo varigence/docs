@@ -9,7 +9,7 @@ title: The BimlFlex Trial Process
 ## Supporting BimlFlex Trial Documentation
 
 * [BimlFlex Product Information](https://varigence.com/BimlFlex)
-* [](xref:zzz-bimlflex-user-guide)
+* [Tips and Tricks](xref:zzz-bimlflex-user-guide)
 
 ## What is BimlFlex
 

@@ -12,7 +12,7 @@ This guide provides information on the Accelerator but assumes a sound understan
 
 #### BimlFlex - Data Vault Accelerator
 
-This session cover the various Data Vault modeling and configuration options available in BimlFlex.
+This session covers the various Data Vault modeling and configuration options available in BimlFlex.
 
 ![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0)
 
@@ -84,16 +84,24 @@ In the preview, it is also possible to filter the tables used for the preview fr
 
 Constraining the Data Vault Acceleration to a subset allows for a more agile delivery where valuable parts of the solution can be put to good use as soon as they are done.
 
-![Accelerator User Interface](images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
+![BimlFlex Accelerator User Interface](images/bfx-accelerator-interface.png "BimlFlex Accelerator User Interface")
 
+<!--
+![Accelerator User Interface](images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
+-->
 The Accelerator shows the source and preview side-by-side with options to collapse each pane or to resize the panes by dragging the splitter.
 
 | Icon | Description |
 | ---- | ----------- |
+| Columns | Toggle to show all columns on the source or preview panes |
+| Data Types | Toggle to show all data types in the source or preview panes |
+| Backbone | Toggle to show only Hubs and Links (the backbone) or Hubs, Links, and Satellites. |
 | <div class="icon-col m-5"><img src="images/svg-icons/diagram-view.svg"/></div> | Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
 | <div class="icon-col m-5"><img src="images/svg-icons/print.svg"/></div> | Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg"/></div> | Refresh the whole layout or you can change the layout as you like by dragging tables. |
 | <div class="icon-col m-5"><img src="images/svg-icons/publish.svg"/></div> | Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
+
+
 
 Iterating through the metadata and updating the model to better support the target Data Vault model, each time a user should set the updated metadata to be persisted to the Metadata Database. This will create all Data Vault tables and columns as well as the Source To Target mappings needed to populate the Data Vault from the chosen source.
 

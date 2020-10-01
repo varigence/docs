@@ -8,8 +8,8 @@ This section details the support process and describes how installed versions ca
 
 ## Support Process
 
-* [](xref:bimlflex-support-process)
+* [BimlFlex Support Process](xref:bimlflex-support-process)
 
 ## Check Installed Versions
 
-* [](xref:bimlflex-find-version)
+* [Find the BimlFlex versions installed](xref:bimlflex-find-version)

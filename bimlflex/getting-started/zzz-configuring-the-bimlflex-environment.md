@@ -14,13 +14,13 @@ BimlFlex uses a metadata database (BimlFlex) and an orchestration database (Biml
 
 ### BimlFlex Metadata Database
 
-More information: [](xref:bimlflex-database)
+More information: [BimlFlex metadata database](xref:bimlflex-database)
 
 The BimlFlex database contains all metadata required to build the data warehouse and the load process artifacts. It is accessed by the developers and modelers when designing and building the data warehouse. A standard installation has a single BimlFlex metadata database for all projects and all metadata.
 
 ### BimlCatalog Orchestration and Audit Log Database
 
-More information: [](xref:bimlcatalog-database)
+More information: [BimlCatalog database](xref:bimlcatalog-database)
 
 The BimlCatalog database contains parameter values, logging and audit information. A separate version of this database is normally deployed per environment. This allows the same packages to be run across the environments and they will store all audit, log and parameter data separate to each other.
 

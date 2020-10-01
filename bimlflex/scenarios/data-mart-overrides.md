@@ -11,11 +11,11 @@ At a high level, **Configuration** values control where/when they get applied an
 > [!TIP]
 > For additional details on managing **Configuration**, **Attributes** and **Configuration Overrides** refer to the below guides:
 >
-> BimlFlex Docs: [](xref:configurations)
+> BimlFlex Docs: [Configurations](xref:configurations)
 >
-> BimlFlex Docs: [](xref:bimlflex-metadata-configurations)
+> BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 >
-> BimlFlex Docs: [](xref:attributes)
+> BimlFlex Docs: [Attributes](xref:attributes)
 >
 
 ## Common Configurations
@@ -151,9 +151,9 @@ If required, a [**Configuration Override**](#configuring-an-override) can be app
 > [!TIP]
 > For additional details on **Configurations** and their definitions refer to the below guide:
 >
-> BimlFlex Docs: [](xref:configurations)
+> BimlFlex Docs: [Configurations](xref:configurations)
 >
-> BimlFlex Docs: [](xref:bimlflex-metadata-configurations)
+> BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 >
 
 ## Overriding Configurations

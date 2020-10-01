@@ -66,4 +66,4 @@ The BimlFlex getting started guide starts with the `01 - MSSQL Starting Point` s
 * **37 - SQLDB DataVault ADF Solution**  
     Azure SQL Database Data Vault ADF configuration
 
-Next Step: [](xref:bimlflex-getting-started-importing-source-metadata)
+Next Step: [Importing Source Metadata](xref:bimlflex-getting-started-importing-source-metadata)

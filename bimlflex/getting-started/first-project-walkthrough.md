@@ -13,8 +13,8 @@ The Getting Started with BimlFlex is an end to end, step by step guide to buildi
 > [!NOTE]
 > Start with the following steps
 >
-> * [](xref:bimlflex-installing-bimlflex)
-> * [](xref:bimlflex-getting-started-initial-configuration)
+> * [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+> * [BimlFlex Initial Configuration](xref:bimlflex-getting-started-initial-configuration)
 
 The getting started documentation implements an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development.
 
@@ -38,7 +38,7 @@ The following is needed:
 
 Once the installation is completed and the databases are available, it is time to create the metadata customer/project that will be used in the getting started process. Once the project is available it is time to load some sample metadata to get started.
 
-More information: [](xref:bimlflex-getting-started-setting-up-adventureworkslt2012-source-database)
+More information: [Setting up the AdventureWorksLT source database](xref:bimlflex-getting-started-setting-up-adventureworkslt2012-source-database)
 
 ## Load Sample Metadata
 
@@ -50,7 +50,7 @@ There are several sample metadata sets available for different architectures.
 
 This walkthrough uses **01 - MSSQL Starting Point**
 
-More information: [](xref:bimlflex-getting-started-sample-metadata)
+More information: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
 
 ## Import of source metadata
 
@@ -58,7 +58,7 @@ More information: [](xref:bimlflex-getting-started-sample-metadata)
 
 Source metadata management and modeling is done through the BimlFlex App. It makes it easy to import the AdventureWorksLT source metadata into the metadata repository.
 
-More information: [](xref:bimlflex-getting-started-importing-source-metadata)
+More information: [Importing Source Metadata](xref:bimlflex-getting-started-importing-source-metadata)
 
 ## Data Vault Acceleration
 
@@ -66,7 +66,7 @@ More information: [](xref:bimlflex-getting-started-importing-source-metadata)
 
 Graphical, agile data vault modeling and acceleration is done through the BimlFlex App. This allows the modeler to create the target Data Vault model with ease.
 
-More information: [](xref:bimlflex-getting-started-accelerating-the-raw-data-vault-layer)
+More information: [Accelerating the Data Vault](xref:bimlflex-getting-started-accelerating-the-raw-data-vault-layer)
 
 ## Build the Data Vault Project
 
@@ -74,7 +74,7 @@ More information: [](xref:bimlflex-getting-started-accelerating-the-raw-data-vau
 
 Once the metadata meets the data warehouse requirements it is time to use BimlStudio to build the databases, tables, scripts and load packages for the Data Warehouse process. This includes creating the table and load scripts and building SSIS packages.
 
-More information: [](xref:bimlflex-getting-started-building-the-data-vault-project)
+More information: [Building Databases, Tables and SSIS packages for source to staging](xref:bimlflex-getting-started-building-the-data-vault-project)
 
 ## Applying Load Parameters
 
@@ -82,7 +82,7 @@ More information: [](xref:bimlflex-getting-started-building-the-data-vault-proje
 
 To load only new data every time the load process is run, add load parameters where needed. The Parameters function in BimlFlex allows easy adding of high watermark load parameters to the sourcing process.
 
-More information: [](xref:bimlflex-getting-started-applying-load-parameters)
+More information: [Applying Load Parameters](xref:bimlflex-getting-started-applying-load-parameters)
 
 ## Business Data Vault Model
 
@@ -90,7 +90,7 @@ More information: [](xref:bimlflex-getting-started-applying-load-parameters)
 
 The Point in Time and Bridge table structures are used in Data Vault to make the Data Vault easier to query and to improve query performance.
 
-More information: [](xref:bimlflex-getting-started-adding-business-data-vault-performance-constructs)
+More information: [Adding the Business Data Vault Model](xref:bimlflex-getting-started-adding-business-data-vault-performance-constructs)
 
 ## Dimensional Model
 
@@ -98,4 +98,4 @@ More information: [](xref:bimlflex-getting-started-adding-business-data-vault-pe
 
 The Dimensional model is built on top of the Raw and Business Data Vault model. By using a view-based abstraction layer between the tables and the Data Mart load it is possible to more easily accommodate future changes and optimize the sources for the Dimensions and Facts.
 
-More information: [](xref:bimlflex-getting-started-dimensional-model)
+More information: [Data Mart Dimensional Model](xref:bimlflex-getting-started-dimensional-model)

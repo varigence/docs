@@ -90,7 +90,7 @@ The Snowflake load process uses a separate custom SSIS component to provide a so
 
 > [!NOTE]
 > If the components were not installed on initial installation they can be installed at a later date by re-running the installer.  For additional details on installing BimlFlex and Custom Components refer to the below guide:  
-> BimlFlex Docs: [](xref:bimlflex-installing-bimlflex)  
+> BimlFlex Docs: [Installing BimlFlex](xref:bimlflex-installing-bimlflex)  
 
 ## Configuring BimlFlex Settings
 
@@ -418,7 +418,7 @@ Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 
 > [!TIP]
 > For additional details on creating a **Connection** refer to the below guide:  
-> BimlFlex Docs: [](xref:connections)  
+> BimlFlex Docs: [Connections](xref:connections)  
 
 ### Linked Services (ADF Only)
 
@@ -442,8 +442,8 @@ host=xy12345.west-us-2.azure.snowflakecomputing.com;account=xy12345;user=MyUser;
 
 > [!TIP]
 > For additional details on creating a Linked Service refer to the below guides:  
-> BimlFlex Docs: [](xref:create-linked-service-connection)  
-> BimlFlex Docs: [](xref:linked-service-snowflake)  
+> BimlFlex Docs: [Configuring a Linked Service Connection](xref:create-linked-service-connection)  
+> BimlFlex Docs: [Configuring a Linked Service Connection for Snowflake Data Warehouse](xref:linked-service-snowflake)  
 
 ## Deploying Target Warehouse Environment
 
@@ -455,7 +455,7 @@ Using Snowflake as the target warehouse platform requires the generation of the 
 
 > [!TIP]
 > For additional details on generating DDL refer to the below guide:  
-> BimlFlex Docs: [](xref:bimlflex-generating-ddl)  
+> BimlFlex Docs: [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)  
 
 ### Deploying SnowSQL Scripts
 
@@ -490,8 +490,8 @@ Ensure these commonly missed steps are performed:
 
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
-> BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)  
-> BimlFlex Docs: [](xref:bimlflex-ssis-deployment-wizard)  
+> BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)  
+> BimlFlex Docs: [Deployment Through the SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-wizard)  
 
 ### ADF Environment and Orchestration (ADF Only)
 
@@ -509,5 +509,5 @@ Ensure these commonly missed steps are performed:
 
 > [!TIP]
 > For additional details on generating deploying ADF artifacts refer to the below guides:  
-> BimlFlex Docs: [](xref:bimlflex-adf-using-powershell)  
-> BimlFlex Docs: [](xref:using-azure-portal)  
+> BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-adf-using-powershell)  
+> BimlFlex Docs: [Deployment Through the Azure Portal](xref:using-azure-portal)  

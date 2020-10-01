@@ -17,7 +17,7 @@ If not using the PolyBase Architecture, proceed to [Configuring BimlFlex Setting
 
 > [!TIP]
 > For additional details on installing BimlFlex refer to the below guide:  
-> BimlFlex Docs: [](xref:bimlflex-installing-bimlflex)  
+> BimlFlex Docs: [Installing BimlFlex](xref:bimlflex-installing-bimlflex)  
 
 ### Installing AzCopy (PolyBase Architecture Only)
 
@@ -452,7 +452,7 @@ When used as the Target Warehouse Environment, Synapse support both a [Table Bas
 
 > [!TIP]
 > For additional details on how create a Landing Area Connection refer to the following guide:  
-> BimlFlex Docs: [](xref:bimlflex-adf-landing-area)  
+> BimlFlex Docs: [Configure Azure Data Factory Landing Area](xref:bimlflex-adf-landing-area)  
 
 ### Connection Type
 
@@ -485,7 +485,7 @@ Data Source=bfxserver.database.windows.net,1433;Initial Catalog=bfx_sqldw;User I
 
 > [!TIP]
 > For additional details on creating a **Connection** refer to the below guide:  
-> BimlFlex Docs: [](xref:connections)  
+> BimlFlex Docs: [Connections](xref:connections)  
 
 ### Linked Services (ADF Only)
 
@@ -507,8 +507,8 @@ Data Source=bfxserver.database.windows.net,1433;Initial Catalog=bfx_sqldw;User I
 
 > [!TIP]
 > For additional details on creating a Linked Service refer to the below guides:  
-> BimlFlex Docs: [](xref:create-linked-service-connection)  
-> BimlFlex Docs: [](xref:linked-service-adf-sql-datawarehouse)  
+> BimlFlex Docs: [Configuring a Linked Service Connection](xref:create-linked-service-connection)  
+> BimlFlex Docs: [Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse](xref:linked-service-adf-sql-datawarehouse)  
 
 ## Deploying Target Warehouse Environment
 
@@ -527,9 +527,9 @@ Aside from the possible inclusion of the EXTERNAL TABLE scripts, the process is 
 
 > [!TIP]
 > For additional details on PowerShell deployment refer to the below guide:  
-> BimlFlex Docs: [](xref:bimlflex-interactive-build)
-> BimlFlex Docs: [](xref:bimlflex-command-line-build)
-> BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)
+> BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-interactive-build)
+> BimlFlex Docs: [Building Using the Command Line](xref:bimlflex-command-line-build)
+> BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)
 
 ### Manual Script Deployment (SSMS)
 
@@ -557,7 +557,7 @@ The below table has been provided as a quick reminder as to when a script should
 
 > [!TIP]
 > For additional details on generating DDL refer to the below guide:  
-> BimlFlex Docs: [](xref:bimlflex-generating-ddl)  
+> BimlFlex Docs: [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)  
 
 #### Deploying SQL Scripts
 
@@ -591,8 +591,8 @@ Ensure these commonly missed steps are performed:
 
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
-> BimlFlex Docs: [](xref:bimlflex-ssis-using-powershell)  
-> BimlFlex Docs: [](xref:bimlflex-ssis-deployment-wizard)  
+> BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)  
+> BimlFlex Docs: [Deployment Through the SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-wizard)  
 
 ### ADF Environment and Orchestration (ADF Only)
 
@@ -610,5 +610,5 @@ Ensure these commonly missed steps are performed:
 
 > [!TIP]
 > For additional details on generating deploying ADF artifacts refer to the below guides:  
-> BimlFlex Docs: [](xref:bimlflex-adf-using-powershell)  
-> BimlFlex Docs: [](xref:using-azure-portal)  
+> BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-adf-using-powershell)  
+> BimlFlex Docs: [Deployment Through the Azure Portal](xref:using-azure-portal)  

@@ -55,8 +55,8 @@ The example uses the `01 - MSSQL Starting Point` metadata to generate Source Sys
 
 > [!TIP]
 > For additional details on Importing Samples and Metadata refer to the below guides:  
-> BimlFlex Docs: [](xref:bimlflex-getting-started-sample-metadata)  
-> BimlFlex Docs: [](xref:bimlflex-getting-started-importing-source-metadata)  
+> BimlFlex Docs: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)  
+> BimlFlex Docs: [Importing Source Metadata](xref:bimlflex-getting-started-importing-source-metadata)  
 
 In order to proceed a Source System **Connection** and Staging Area **Connection** is needed.
 
@@ -93,9 +93,9 @@ With familiarly of Azure Key Vaults and the deployment environment, the Linked S
 
 > [!TIP]
 > For additional details on Linked Services, Azure Key Vaults and Sensitive Information Management refer to the below guides:  
-> BimlFlex Docs: [](xref:create-linked-service-connection)  
-> BimlFlex Docs: [](xref:linked-service-azure-key-vault)  
-> BimlFlex Docs: [](xref:sensitive-info-management)  
+> BimlFlex Docs: [Configuring a Linked Service Connection](xref:create-linked-service-connection)  
+> BimlFlex Docs: [Using Azure Key Vaults for Connection settings](xref:linked-service-azure-key-vault)  
+> BimlFlex Docs: [Sensitive Information Management in Azure Data Factory](xref:sensitive-info-management)  
 > Microsoft Docs: [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/)
 > Microsoft Docs: [About keys, secrets, and certificates](https://docs.microsoft.com/en-us/azure/key-vault/general/about-keys-secrets-certificates)
 
@@ -209,7 +209,7 @@ The following Azure **Settings** are used to configure the blob destinations.
 
 > [!TIP]
 > For additional details on Blob Storage refer to the below guides:  
-> BimlFlex Docs: [](xref:bimlflex-adf-deployment-guide#blob-storage-configured-landing-area)  
+> BimlFlex Docs: [BimlFlex ADF Deployment - Blob Storage Configured Landing Area](xref:bimlflex-adf-deployment-guide#blob-storage-configured-landing-area)  
 > Microsoft Docs: [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
 > Microsoft Docs: [Manage storage account access keys](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage)
 > Microsoft Docs: [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)  

@@ -6,7 +6,7 @@ title: BimlFlex Data Vault Templates
 
 This document outlines the Data Vault templates in BimlFlex.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator: [](xref:data-vault-accelerator)
+The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator: [Data Vault Accelerator](xref:data-vault-accelerator)
 
 ## Setup
 
@@ -15,8 +15,8 @@ This document assumes the BimlFlex product has been installed, configured and th
 > [!NOTE]
 > More Information:
 >
-> * [](xref:bimlflex-getting-started-intro-videos)
-> * [](xref:bimlflex-setup-overview)
+> * [BimlFlex Getting Started Intro Videos](xref:bimlflex-getting-started-intro-videos)
+> * [BimlFlex Setup Overview](xref:bimlflex-setup-overview)
 
 The walkthrough uses the Product and Product Category entities from the AdventureWorksLT sample source to demonstrate Data Vault concepts.
 
@@ -184,7 +184,7 @@ Data Vault Links represent many to many relationships. Any Hub entity in Data Va
 
 If there is a Foreign Key relationship between two entities in the source, or if there is application logic that manages opening and closing of relationships in mapping tables, that same behavior might need to be maintained in the Data Vault.
 
-Driving Keys are documented in more detail here: [](xref:bimlflex-driving-keys)
+Driving Keys are documented in more detail here: [Data Vault Driving Keys](xref:bimlflex-driving-keys)
 
 ## Multi Active Satellites
 

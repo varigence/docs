@@ -24,4 +24,4 @@ BimlFlex will read all specified metadata from the chosen connection into the Bi
 
 The importer will associate the source connection metadata with the load project. BimlFlex will use this metadata to process data from the source system.
 
-[](xref:bimlflex-getting-started-accelerating-the-raw-data-vault-layer)
+[Accelerating the Data Vault](xref:bimlflex-getting-started-accelerating-the-raw-data-vault-layer)

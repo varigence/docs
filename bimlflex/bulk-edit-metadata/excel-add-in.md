@@ -85,7 +85,7 @@ The `Auto Freeze` function freeze the left-hand side and top of the sheet in Exc
 
 All metadata import functionality has been moved to the BimlFlex App.
 
-More information: [](xref:bimlflex-importing-metadata)
+More information: [BimlFlex Importing Metadata](xref:bimlflex-importing-metadata)
 
 ## Retrieve Metadata
 

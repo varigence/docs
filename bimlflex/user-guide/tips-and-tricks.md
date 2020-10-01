@@ -361,7 +361,7 @@ You can use this script to identify which **Project** reference the **Connection
 More information:
 
 * [Working with environments and the SSIS catalog](xref:bimlflex-ssis-deployment-guide)
-* [](xref:sensitive-info-management)
+* [Sensitive Information Management in Azure Data Factory](xref:sensitive-info-management)
 
 ### Video
 

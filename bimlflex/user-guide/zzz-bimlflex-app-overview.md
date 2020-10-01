@@ -16,7 +16,7 @@ The BimlFlex App connects to the BimlFlex metadata repository and allows managem
 
 ## Installation
 
-Download and run the consolidated BimlFlex installer to add the application to the computer. See [](xref:bimlflex-release-notes) for the latest release notes and the download link.
+Download and run the consolidated BimlFlex installer to add the application to the computer. See [BimlFlex Release Notes](xref:bimlflex-release-notes) for the latest release notes and the download link.
 
 ## Configuration
 

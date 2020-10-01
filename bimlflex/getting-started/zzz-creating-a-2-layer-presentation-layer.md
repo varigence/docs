@@ -12,7 +12,7 @@ Coming Soon
 
 ## Supporting BimlFlex Documentation
 
-[](xref:zzz-bimlflex-user-guide)
+[Tips and Tricks](xref:zzz-bimlflex-user-guide)
 
 ## Creating a 2 layer Dimensional Model in BimlFlex
 

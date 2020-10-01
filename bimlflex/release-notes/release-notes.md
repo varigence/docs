@@ -26,7 +26,7 @@ Build 5.0.64678.0, release date: 1 June 2020
 ## Build 20.2.nnn.0, release date: nn mmmm 2020
 
 * Add: New Project settings for SSDT Project Control
-* Add: ADF Flat File load support. More information on the ADF Flat File load process: [](xref:flat-file-source-to-staging)
+* Add: ADF Flat File load support. More information on the ADF Flat File load process: [Flat File Source to Staging](xref:flat-file-source-to-staging)
 * Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
 * Update: TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts
 * Update: Added additional delete detection functionality
@@ -57,7 +57,7 @@ The following settings have been added to the Ssdt group:
 
 The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group
 
-More information on these settings: [](xref:bimlflex-ssdt-project)
+More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](xref:bimlflex-ssdt-project)
 
 Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation and additional defaults for dependency objects.
 
@@ -84,13 +84,13 @@ BimlFlex now has full support for Azure Data Factory (ADF) workflows for Azure S
 
 This includes full support to build Azure ARM templates for direct deployment of the pipelines to Azure as well as json file generation for individual deployments and deployment through the ADF DevOps git integration.
 
-More information on ADF here: [](xref:adf-deployment-overview)
+More information on ADF here: [ADF Deployment Overview](xref:adf-deployment-overview)
 
 ### Data Mappings visualizations and editor for BimlFlex App
 
 The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
 
-More information on the BimlFlex app here: [](xref:metadata-editors-overview)
+More information on the BimlFlex app here: [Metadata Editors Overview](xref:metadata-editors-overview)
 
 ### BimlCatalog Operational Reporting in BimlFlex App
 
@@ -98,7 +98,7 @@ The BimlFlex app has been updated with BimlCatalog Operational Reporting capabil
 
 These reports allow direct access to the logging in the BimlCatalog from the app and help with both development and operational insights
 
-More information on operational reporting here: [](xref:bimlflex-operational-reports)
+More information on operational reporting here: [BimlFlex Operational Reports](xref:bimlflex-operational-reports)
 
 ### Restructure BimlCatalog for more agnostic logging
 
@@ -108,7 +108,7 @@ Reporting views and Stored Procedures are unchanged.
 
 ADF Stored Procedures have been updated to better support logging and orchestration.
 
-More information on the BimlCatalog here: [](xref:bimlcatalog-database)
+More information on the BimlCatalog here: [BimlCatalog database](xref:bimlcatalog-database)
 
 ### Additional Extension Points for bespoke processing requirements
 
@@ -262,7 +262,7 @@ BimlFlex 2020 Preview
 * Add: New Project settings dialog in BimlStudio. This allows easier access to control Build target and method as well as local project configurations.
 * Update: The default build versions for new projects have been updated to SQL Server 2017
 * Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
-* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here [](xref:bimlflex-source-excel-plus)
+* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here [BimlFlex COZYROC Excel Plus Source](xref:bimlflex-source-excel-plus)
 * Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical namespaces). A new utility app is available to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
 * New Extension Points: `RdvPreProcessSql`, `RdvPostProcessSql` allows injection of SQL logic in the RDV load SQL Stored Procedures.
 * Update: Some `Generate Scripts` menu options have had their `By Source` suffix removed.
@@ -278,5 +278,5 @@ download links to this build:
 
 Legacy Release Notes:
 
-* [](xref:bimlflex-release-notes-2019)
-* [](xref:bimlflex-release-notes-2018)
+* [BimlFlex Release Notes 2019](xref:bimlflex-release-notes-2019)
+* [BimlFlex Release Notes 2018](xref:bimlflex-release-notes-2018)

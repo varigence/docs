@@ -12,7 +12,7 @@ This installation is required for SQL/SSIS Servers that run BimlFlex created pac
 
 The Varigence BimlFlex Custom SSIS Components are part of the BimlFlex installation and can be installed either from the BimlFlex installer or the BimlFlex runtime installer.
 
-The latest installer is available here: [](xref:bimlflex-release-notes)
+The latest installer is available here: [BimlFlex Release Notes](xref:bimlflex-release-notes)
 
 ## Local Installation
 

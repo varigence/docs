@@ -152,7 +152,7 @@ If the source doesn't have relationships defined, such as flat files, these need
 
 ## Acceleration
 
-All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the [](xref:bimlflex-metadata-configurations)
+All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 
 ### Accelerate Satellites
 
