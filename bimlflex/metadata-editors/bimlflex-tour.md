@@ -167,11 +167,22 @@ Table content is provided when an entity features some complex logic and should 
 
 When **Multiple Views** are used, an oval selector will appear listing out alternative views.  The active view is highlighted and can be changed by clicking another available option.  The alternate views only change what properties of an entity are visible/editable and will not filter, remove or resort the underlining list of entities.  Values can be edited by double-clicking the desired property.  
 
+<!--
 **Multiple Views Content**  
 ![Multiple Views Content](images/bimlflex-app-form-views.png "Multiple Views Content")  
+-->
+
+![Multiple Views Content](images/bfx-multiple-views-content.png "Multiple Views Content")
 
 ## Navigational Transitions  
 
-BimlFlex features the ability to jump directly to another entity whenever it is referenced from a calling table or form.  Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor.  
+BimlFlex features the ability to navigate directly to another entity whenever it is referenced from a calling table or form. Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor. Click the 'Compass' icon for global navigation to any entity within the project. Every navigable entity within the BimlFlex application will have such an icon.
 
+<!--
+TO DO: ADD WHAT THE CHECKBOX UI DOES
+-->
+<!--
 ![Multiple Views](images/bimlflex-app-form-navigational-transitions.png "Multiple Views")  
+-->
+
+![Navigational Transitions](images/bfx-navigation-ui.png "Navigational Transitions")
