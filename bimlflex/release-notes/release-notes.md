@@ -26,7 +26,6 @@ Documentation providing a step-by-step walkthrough for this process can be found
 
 ## Settings Changes
 * Update: The Accelerator and Data Vault process has several new optional configurations to better control Data Vault behavior.
-  Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
   This includes settings to control if individual source keys should be added to the Hubs and Links as attributes, if Link Satellites should use record source naming convention by default. 
 * The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group.
 

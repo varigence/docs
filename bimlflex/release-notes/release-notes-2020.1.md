@@ -1,6 +1,6 @@
 ---
-uid: bimlflex-release-notes
-name: BimlFlex Release Notes
+uid: bimlflex-release-notes-2020
+name: BimlFlex Release Notes-2020
 ---
 # Release Notes
 
