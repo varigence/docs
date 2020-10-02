@@ -161,7 +161,11 @@ When changes are complete, click the **Ok** button to keep the changes that have
 Table content is provided when an entity features some complex logic and should be edited through a dialog box.  New items can be entered entered via the <img class="icon-inline" src="images/svg-icons/add.svg"/> **Add** button.  Existing items can be edited by selecting a row and then using the <img class="icon-inline" src="images/svg-icons/edit.svg"/> **Edit** button.  The same filter as sort functions that are provided on the **Entity List** are available on these content types.  
 
 **Table Content**  
+<!--
 ![Table Content](images/bimlflex-app-form-table.png "Table Content")  
+-->
+
+![Table Content](images/bfx-biml-tour-table-record.png "Table Content")
 
 ### Multiple Views  
 
@@ -174,13 +178,20 @@ When **Multiple Views** are used, an oval selector will appear listing out alter
 
 ![Multiple Views Content](images/bfx-multiple-views-content.png "Multiple Views Content")
 
-## Navigational Transitions  
+## Navigational Transitions and Checkbox Selection
 
-BimlFlex features the ability to navigate directly to another entity whenever it is referenced from a calling table or form. Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor. Click the 'Compass' icon for global navigation to any entity within the project. Every navigable entity within the BimlFlex application will have such an icon.
+BimlFlex features the ability to navigate directly to another entity whenever it is referenced from a calling table or form.
+Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor.
+Click the 'Compass' icon for global navigation to any entity within the project.
+Every navigable entity within the BimlFlex application will have such an icon.
 
-<!--
-TO DO: ADD WHAT THE CHECKBOX UI DOES
--->
+BimlFlex now features a checkbox UI feature for any list of items being viewed.
+Highlight over a single item, and a checkbox will appear on the left.
+If selected, checkboxes will appear for all items in the list. 
+Selecting the checkbox at the top of the list will select/deselect all items.
+Having multiple items selected will allow the user to bulk-archive as many items as are currently selected. 
+With multiple items selected, users may select `Integration Key` from the **Objects** Action Bar to enter the Generate Derived Integration Key with the desired items already selected.
+
 <!--
 ![Multiple Views](images/bimlflex-app-form-navigational-transitions.png "Multiple Views")  
 -->
