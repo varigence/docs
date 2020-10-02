@@ -32,6 +32,7 @@ Documentation providing a step-by-step walkthrough for this process can be found
 The Following setting has been added to control the Data Vault Accelerator:
 
 * DvAppendLinkSatelliteRecordSource
+(todo: more DVA settings?)
 
 The following settings have been added to the Ssdt group:
 
@@ -75,7 +76,6 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * Improved entity and model border styling.
 * Improved app navigation and user experience when creating a new entity.
 * We now allow users to create PIT tables without datetime columns.
-* We now allow users to specify their modeling pattern with ELM pre-selected as the default methodology.
 * Prevent navigation when there are pending configuration changes.
 
 ## BimlFlex Accelerator
@@ -93,6 +93,12 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts.
 
 Read More on the updated delete functionality here: [Delete Detection in BimlFlex](xref:bimlflex-delete-detection)
+
+
+## Business Modeling
+* We have added the ability to use a business modeling approach to Data Vault modeling.
+
+Read More on the exciting new Business Modeling functionality here: [Business Modeling in BimlFlex](xref:business-modeling)
 
 ## Data Mart/Data Vault
 * Added a fix to correctly calculate `FlexRowHashtype1` on Fact tables by using source column data types.
