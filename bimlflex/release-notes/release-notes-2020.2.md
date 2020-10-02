@@ -58,6 +58,7 @@ More information on these settings: [BimlFlex-generated SQL Server Data Tool
 * Improved connection string emission to move away from the SecureString pattern. This populates the appropriate subfields inside of Azure after deploying your assets.
 * Fixed issue when deploying by ARM template, that caused the Azure Blob Storage authentication method to incorrectly register as Service Principal ID.
 * We now can pass Integration Runtimes into BLOB Storage and DataLakeStoreGen2 Linked Services
+* Fixed issue with `Hash Column` of large Synapse Tables (greater than 500 columns).
 
 ## BimlFlex App Help Sidebar Navigation
 
@@ -99,6 +100,7 @@ Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
 * Fixed issue where the `Clone` action would include 'Transient' (TRS) and 'Ignore' (IGN) columns, as these change types are to indicate no further processing.
 * Resolved an issue where the Data Vault Point In Time object creation would not allow the object to be saved unless there were attribute datetime columns present.
 * Fixed issue with duplicate surrogate keys in STG table for REF tables.
+* Ensured all references to bridge objects to use 'BRG' rather than 'BRD', to ensure uniformity.
 
 ## Providers
 * Fixed issue with `Oracle` import where `UNISTR()` needed to be used.
