@@ -54,6 +54,9 @@ More information on these settings: [BimlFlex-generated SQL Server Data Tool
 * Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
 * Fixed an error in the app for blob storage connections that created empty string names for the integration runtime.BimlStudio errors when it tries to create an integration runtime with an empty string as a name.
 * Updated AKV linked services to use theactual url of the key vault.
+* Fixed issue with file column names in Blob Sources.
+* Improved connection string emission to move away from the SecureString pattern. This populates the appropriate subfields inside of Azure after deploying your assets.
+* Fixed issue when deploying by ARM template, that caused the Azure Blob Storage authentication method to incorrectly register as Service Principal ID.
 
 ## BimlFlex App Help Sidebar Navigation
 
@@ -65,8 +68,15 @@ BimlFlex now features sidebar Help sections for the following editor screens:
 
 The Help section sidebar navigation also features links to BimlFlex documentation for technical assistance and walkthroughs for features relevant to the page in which Help is being accessed.
 
-## BimlFlex Accelerator
+## UI Improvements
+* Autoselect customers on database change.
 * The layout in the Accelerator page has been updated and the source pane is now closed by default. Click the open arrow to open the source pane to view the active source objects.
+* Improved entity and model border styling.
+* Improved app navigation and user experience when creating a new entity.
+* We now allow users to create PIT tables without datetime columns.
+* We now allow users to specify their modeling pattern with ELM pre-selected as the default methodology.
+
+## BimlFlex Accelerator
 * Updated so that Connection point handles are displayed upon selection of entities
 * Context menu appears on paths when location is selected
 * Path calculation is updated to support multiple connection points between entities
@@ -77,7 +87,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * UOW drag now only highlights valid targets
 
 ## Delete Detection
-* Added additional delete detection functionality to both ADF and MSSQL ELT processes.
+* Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
 * TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts.
 
 Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
@@ -86,12 +96,14 @@ Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
 * Added a fix to correctly calculate `FlexRowHashtype1` on Fact tables by using source column data types.
 * Fixed issue where the `Clone` action would include 'Transient' (TRS) and 'Ignore' (IGN) columns, as these change types are to indicate no further processing.
 * Resolved an issue where the Data Vault Point In Time object creation would not allow the object to be saved unless there were attribute datetime columns present.
+* Fixed issue with duplicate surrogate keys in STG table for REF tables.
 
 ## Providers
 * Fixed issue with Oracle import where `UNISTR()` needed to be used.
 
 ## BimlFlex DB
 * Remove `ImportRequests` table from database.
+* Updated the SP to force include customer and version entities in metadata push so that metadata sets will work when no corresponding customer or version exists.
 
 ## BimlCatalog DB
 * Resolved `RowCount` stored procedure bug that resulted in orphaned open transactions.

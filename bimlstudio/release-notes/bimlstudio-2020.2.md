@@ -32,6 +32,9 @@ Significant changes between BimlStudio 2020 R1 and BimlStudio 2020 R2
  * Added DatasetSchema functionality to all datasets.
  * Changed connection string emission in linked services to avoid using `SecureString` pattern and instead depend on Azure to parse the sensitive properties.
  
+## Tabular
+* Fixed `DataCateogy` emission in SSAS Tabular emitter that was causing a compiler crash.
+
 ## BimlFlex Projects
 * Fixed a bug where sometimes Azure blob linked services were generated with empty runtime names, causing BimlStudio to error out.
 * Added `Landing Area` as a BimlFlex Integration Stage. 
