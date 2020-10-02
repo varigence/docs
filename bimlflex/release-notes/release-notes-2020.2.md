@@ -30,9 +30,9 @@ Documentation providing a step-by-step walkthrough for this process can be found
   This includes settings to control if individual source keys should be added to the Hubs and Links as attributes, if Link Satellites should use record source naming convention by default. 
 * The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group.
 
-The Following settings have been added to control the Data Vault Accelerator:
+The Following setting has been added to control the Data Vault Accelerator:
 
-* TODO: ADD
+* DvAppendLinkSatelliteRecordSource
 
 The following settings have been added to the Ssdt group:
 
@@ -57,6 +57,7 @@ More information on these settings: [BimlFlex-generated SQL Server Data Tool
 * Fixed issue with file column names in Blob Sources.
 * Improved connection string emission to move away from the SecureString pattern. This populates the appropriate subfields inside of Azure after deploying your assets.
 * Fixed issue when deploying by ARM template, that caused the Azure Blob Storage authentication method to incorrectly register as Service Principal ID.
+* We now can pass Integration Runtimes into BLOB Storage and DataLakeStoreGen2 Linked Services
 
 ## BimlFlex App Help Sidebar Navigation
 
@@ -75,6 +76,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * Improved app navigation and user experience when creating a new entity.
 * We now allow users to create PIT tables without datetime columns.
 * We now allow users to specify their modeling pattern with ELM pre-selected as the default methodology.
+* Prevent navigation when there are pending configuration changes.
 
 ## BimlFlex Accelerator
 * Updated so that Connection point handles are displayed upon selection of entities
@@ -99,7 +101,8 @@ Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
 * Fixed issue with duplicate surrogate keys in STG table for REF tables.
 
 ## Providers
-* Fixed issue with Oracle import where `UNISTR()` needed to be used.
+* Fixed issue with `Oracle` import where `UNISTR()` needed to be used.
+* Fix metadata import issue for `MSOLEDBSQL` provider
 
 ## BimlFlex DB
 * Remove `ImportRequests` table from database.
@@ -116,6 +119,8 @@ Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
 ## SSIS
 * Resolved issue where Blob Archive step in Ssis refers to the wrong account. Now Archive Staging step refers to the correct staging account, container and file.
 * Fixed issue where Type1 columns were generating in SSIS when none were present in the source.
+* Added required SsisServer to $ssisExecutionParameter generation.
+* Fixed HashTable parameter looping.
 
 Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation of, and additional defaults for, dependency objects.
 

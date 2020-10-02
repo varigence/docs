@@ -37,4 +37,5 @@ Significant changes between BimlStudio 2020 R1 and BimlStudio 2020 R2
 
 ## BimlFlex Projects
 * Fixed a bug where sometimes Azure blob linked services were generated with empty runtime names, causing BimlStudio to error out.
-* Added `Landing Area` as a BimlFlex Integration Stage. 
+* Added `Landing Area` as a BimlFlex Integration Stage.
+* Fixed issue where a source file has candidate object type set to Satellite and does not have a connection to a Hub candidate then duplicate validation errors were being reported. 
