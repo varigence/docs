@@ -101,13 +101,19 @@ The Accelerator shows the source and preview side-by-side with options to collap
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg"/></div> | Refresh the whole layout or you can change the layout as you like by dragging tables. |
 | <div class="icon-col m-5"><img src="images/svg-icons/publish.svg"/></div> | Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
 
-
-
 Iterating through the metadata and updating the model to better support the target Data Vault model, each time a user should set the updated metadata to be persisted to the Metadata Database. This will create all Data Vault tables and columns as well as the Source To Target mappings needed to populate the Data Vault from the chosen source.
 
 If there is a need to update the model and rerun the preview, it can be done at any time. Once the metadata from the preview has been published, all metadata will be available in the BimlFlex App Object and Column screens for direct manipulation there. It will also be available in the Excel metadata editor for bulk updates. The pattern of tweaking the Metadata to fit the business process and target model can be repeated however many times needed before publishing.
 
 Note that the accelerator will not resurface any entities already accelerated and marked as excluded or deleted. To see these entities, include them in the project by removing the excluded/deleted flag.
+
+## Beginning Acceleration from the Objects Screen
+
+Users may accelerate models for specific objects from the **Objects** Action Bar in BimlFlex, as opposed to the Accelerator option in the source pane.
+
+![Accelerate Option from Objects Action Bar](images/objects-accelerate-alternative.png "Accelerate Option from Objects Action Bar")
+
+Selecting either `Accelerate`, `Diagram`, or `Mapping` will navigate the user to either the BimlFlex Accelerator, Schema Diagram, or Column Mapping, respectively. This will enable users to model only the selected object without having to change menus or reselect their desired object. 
 
 ## Updating the Metadata to Meet Requirements
 
@@ -148,12 +154,18 @@ All acceleration uses default naming conventions so basic names for Hubs and Sat
 There are convenience actions available on most of the tables and columns in both the source and preview panes.
 
 By clicking on a Table or Column a user gets a pop up of all the actions buttons available. The first click will show a minimized view with only the icons with tooltips.
-
+<!--
 ![Accelerator Action Icons Minimized](images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
+-->
+![Accelerator Action Icons Minimized](images/accelerator-icons-minimized.png "Accelerator Action Icons Minimized")
 
 By clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
 
+<!--
 ![Accelerator Action Icons Maximized](images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
+-->
+
+![Accelerator Action Icons Maximized](images/accelerator-icons-maximized.png "Accelerator Action Icons Maximized")
 
 | Icon | Action | Description |
 |--- |--- |--- |
@@ -213,6 +225,20 @@ For Hub tables that have Foreign Key relationships defined the Accelerator will 
 ### Accelerate Hubs
 
 Any remaining tables and Integration Keys will be used to create Hubs. The defined Integration Key for the table will be used for the Hub Attribute and this attribute will be hashed into the Hub Surrogate Key.
+
+### Accelerate Link Satellites
+
+To accelerate Link Satellites, users must first enable the option from within the **Settings** menu.
+By default, this setting is turned off. This setting will enable the Accelerator to model Link Satellites for effectiveness and attributes from source metadata. 
+
+![Enable Link Satellite Acceleration](images/bfx-link-satellite-setting.png "Enable Link Satellite Acceleration")
+
+### Accelerate Hub and Link Keys
+
+The setting to enable acceleration of Hub Keys and Link Keys also exists within the **Settings** menu.
+By default, these settings are turned off. This setting will enable the Accelerator to add source key columns to the Hub and/or Link in addition to the Integration Key(s).
+
+![Enable Hub and Link Key Acceleration](images/bfx-accelerate-hub-link-keys-setting.png "Enable Hub and Link Key Acceleration")
 
 ### Reviewing Unit of Work
 
@@ -296,7 +322,11 @@ Once the metadata has been modelled and the preview represents the target model 
 
 By clicking the Publish DV Import the new data will be committed to the Metadata database and made available as a persisted Schema Diagram, in the application screens for edit and in BimlFlex Excel for bulk edit.
 
+<!--
 ![Publish Metadata Changes](images/bimlflex-app-accelerator-publish.png "Publish Metadata Changes")
+-->
+
+![Publish Metadata Changes](images/bfx-publish-accelerator.png "Publish Metadata Changes")
 
 The target Connection and Project will be automatically selected based on your configuration and you may change the Project if you have multiple eligible target projects.
 
