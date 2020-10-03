@@ -18,10 +18,13 @@ Build 20.2.nnn.0, release date: nn mmmm 2020
 
 ## Breaking Changes
 
-Upon updating to BimlFlex version 2020.2, users will be required to initiate a one-time manual update of the Excel Metadata Editor add-in.
-Microsoft Excel has hardcoded the path to the add-in, and unfortunately, there is no preprogrammed workaround.
+The Excel add-in location has been updated. The location of the add-in must be updated in the Excel file. This is automatically done when the `BimlFlex.xlsx` file is opened from BimlStudio. BimlStudio also has an upgrade function available in the Excel Metadata Editor dropdown that allows manual upgrades of existing Excel files. If the `BimlFlex.xlsx` file is opened directly from Excel or from the Windows file explorer it will display an error message similar to this:
 
-Documentation providing a step-by-step walkthrough for this process can be found [here](xref:excel-metadata-addin).
+`file:///C:/Program Files/Varigence/BimlFlex/5.0/BimlFlexAddin.vsto did not succeed.`
+
+Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or upgrade the Excel file from the advanced options in the BimlFlex ribbon UI, in the Excel Metadata Editor dropdown to allow it to work as expected. Once the Excel file is upgraded it can be opened directly from Excel or the Windows file explorer again.
+
+Documentation providing a step-by-step walkthrough for this process can be found [here](xref:excel-metadata-addin)
 
 ## Settings Changes
 
@@ -29,7 +32,7 @@ The Accelerator and Data Vault processes have several new optional configuration
 
 * Added settings to control if individual source keys should be added to Hubs and Links as attributes.
 * Added settings for if Link Satellites should use record source naming convention by default.
-* The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group.
+* The Existing Setting `SsdtOutputPath` has been moved to the SSDT settings group.
 
 Documentation regarding the updated delete functionality can be found here: [TO DO](xref:TODO: Add link).
 
@@ -37,7 +40,7 @@ The following setting has been added to control the Data Vault Accelerator:
 
 * DvAppendLinkSatelliteRecordSource
 
-The following settings have been added to the Ssdt group:
+The following settings have been added to the SSDT group:
 
 * SsdtIncludeExternalTables
 * SsdtIncludeMasterKey
