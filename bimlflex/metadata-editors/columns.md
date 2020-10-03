@@ -15,26 +15,31 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 
 ![BimlFlex Columns Editor](images/bfx-columns-editor.png "BimlFlex Columns Editor")
 
-**Columns** within BimlFlex are displayed in hierarchical tree view on the left sidenav menu.
-Active columns will be displayed next to the Object names in parentheses.
+**Columns** within BimlFlex are displayed organized by Connection, by default.
+Selecting a Column will navigate the user to a list of all Columns within that same Object.
+The user can navigate to any Column within that same Object by selecting it from the displayed list.
 
-Selecting an Object with a single Column will immediately navigate the user to the Column edit screen.
+Any field with the 'Compass' icon will serve as a Global Navigation Transition.
+Clicking this icon will navigate the user directly to the referenced Connection or Object.
 
-Selecting an Object with multiple Columns will display a list of all active columns within. The user may navigate to any Column by selecting from the displayed list.
+![Columns Global Navigation Transition](images/bfx-columns-global-nav.png "Columns Global Navigation Transition")
 
 ## Action Buttons  
 
+![Columns Editor Action Buttons](images/bfx-objects-action-buttons.png "Columns Editor Action Buttons")
+
+<!--
 <img
     src="images/bimlflex-app-editor-columns-actions.png"
     title="Columns Editor Actions"
 />
-
+-->
 | Icon | Action | Description |
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button will only enabled if there are unsaved changes in the form and no major validation errors. |
-| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Column**.  Clicking the **Duplicate** button will cause a [Duplicate Column Dialog](#duplicate-column-dialog) to appear. The new **Column** will be created using all of the selected **Column**'s current properties. |
+| Discard | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Column**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** generates an [Archive Column Dialog](#archive-column-dialog).|
-| <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Column**. All unsaved changes will be lost. |
+| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Column**.  Clicking the **Duplicate** button will cause a [Duplicate Column Dialog](#duplicate-column-dialog) to appear. The new **Column** will be created using all of the selected **Column**'s current properties. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Column** from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Column**.  This will remove the **Column** from processing and validation. |
 

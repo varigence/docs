@@ -21,13 +21,19 @@ The **Configurations Editor** is used to manage configurations which drive the b
 
 The action buttons modify the **Configuration** that is active in the editor.
 
-
+<!--
 ![BimlFlex App - Configurations - Command Bar](images/bimlflex-app-configurations-command-bar.64566.png "BimlFlex App - Configurations - Command Bar")
+-->
+![BimlFlex App - Configurations - Command Bar](images/bfx-configurations-command-bar.png "BimlFlex App - Configurations - Command Bar")
 
 |Icon|Action|Description|
 |-|-|-|
 | <div style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div> | Save | This will save any changes displayed in the **Configurations** editor.  The **Save** button is only enabled if there are changes in the editor. |
+| Discard | Discard | **Discard** any unsaved changes and revert to last saved form. |
+
+<!--
 | <div style="width:30px;height:30px;background:white"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will refresh the currently displayed **Configuration**. Any pending changes will be removed. |
+-->
 
 ## Configuration Editor
 
@@ -61,7 +67,10 @@ Configuration Overrides are saved in BimlFlex as **Attributes**. The [Attributes
 
 ### Add a Configuration Override
 
-To add a **Configuration Override**, click `+ Add` on the Overrides tab. 
+To add a **Configuration Override**, click `+ Add` on the Overrides tab.
+
+![BimlFlex Add Configuration Override]
+
 
 ![BimlFlex Add Configuration Override](images/bfx-add-attribute-override-plus-button.png "BimlFlex Add Configuration Override")
 

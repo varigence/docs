@@ -21,11 +21,8 @@ The following sections describe the UI elements of the **Objects Editor** and ho
 ![BimlFlex Objects Editor](images/bfx-object-editor-overview.png "BimlFlex Objects Editor")
 
 **Objects** within BimlFlex are displayed in hierarchical tree view on the left sidenav menu.
-The number of Objects will be displayed next to the Object name in parentheses.
 
-Selecting a single Object will immediately navigate the user to the Parameter edit screen.
-
-Selecting multiple Objects will display a list of all objects available. The user may navigate to any Object by selecting from the displayed list.
+Selecting an Object will navigate the user to the Details Tab edit screen.
 
 ## Details Tab
 
@@ -33,14 +30,18 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 ### Details Tab - Action Buttons
 
+![BimlFlex - Objects Editor Actions](images/bfx-app-editor-objects-action.png "BimlFlex - Objects Editor Actions")
+<!--
 <img
     src="images/bimlflex-app-editor-objects-actions.png"
     title="Objects Editor Actions"
 />
+-->
 
 |Icon|Action|Description|
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will save the current set of staged changes.  The **Save** button is will only enable if the **Object** has changes staged and there are no major validation issues with the current **Object** properties. |
+| Discard | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Object Dialog](#archive-object-dialog-box). |
 | <div class="icon-col m-5"><img src="images/svg-icons/clone-objects.svg" /></div> | Clone | This will bring up [Clone Table Dialog](#clone-table-dialog-box) that is used primarily in the creation and loading of a Data Mart. |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Object**.  A [Duplicate Table Dialog](#duplicate-table-dialog-box) will appear asking for a *Target Table Name* and a new **Object** will be created using all of the selected **Object**'s current properties. |

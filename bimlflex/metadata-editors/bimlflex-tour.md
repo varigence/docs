@@ -10,9 +10,9 @@ The following sections describe the UI elements that make up an Entity Editor an
 
 ## BimlFlex Menu  
 
-The BimlFlex Menu provides quick navigation to the available editors and modeling tools.  The menu is dynamic and automatically expands and hides based on the current size of the application window.  If the menu is hidden you can use the button annotated below to open.  
+The BimlFlex Menu provides quick navigation to the available editors and modeling tools.  The menu is dynamic and automatically expands and hides based on the current size of the application window.  If the menu is hidden you can use the button annotated below to open.
 
-**BimlFlex Menu**  
+**BimlFlex Menu**
 
 ![BimlFlex Menu](images/bfx-navigation-menu-01.png "BimlFlex Menu")
 
@@ -25,9 +25,12 @@ The BimlFlex Menu provides quick navigation to the available editors and modelin
 
 ## BimlFlex Metadata Editor Layout  
 
-The BimlFlex Metadata Editors are provided to give a streamlined and intuitive way to enter and manage your metadata.  The available features may vary from editor to editor but they all use the same layout.  What follows is a quick tour of the various editor elements and how they function.  For detailed information of the available the features reference the relevant documentation for the appropriate editor.  
+The BimlFlex Metadata Editors are provided to give a streamlined and intuitive way to enter and manage your metadata.
+The available features may vary from editor to editor but they all use the same layout.
+What follows is a quick tour of the various editor elements and how they function.
+For detailed information of the available the features reference the relevant documentation for the appropriate editor.  
 
-**Editor Layout**  
+**Editor Layout**
 
 ![BimlFlex Editor](images/bfx-metadata-editor-layout.png "BimlFlex Editor")
 
@@ -39,7 +42,7 @@ The BimlFlex Metadata Editors are provided to give a streamlined and intuitive w
 
 BimlFlex features a breadcrumb navigation to easily raise your view to a higher context when needed.  The entities shown in the breadcrumbs will depend on the entity that is being viewed and the navigation path that was used.  Elements are provided to select either the associated parent entity or to navigate without filter context to a parent element editor.  
 
-**Breadcrumb Navigation Elements**  
+**Breadcrumb Navigation Elements**
 
 ![Breadcrumb Navigation Elements](images/bfx-breadcrumb-nav-elements.png "Breadcrumb Navigation Elements")
 
@@ -79,6 +82,8 @@ The entity list enumerates all of the available entities for the current filter 
 />
 -->
 
+**Entity List - Multi-Column**
+
 ![Entity List - Mutli-Column](images/bfx-entity-list-multi-column.png "Entity List - Multi Column")
 
 <!--
@@ -92,6 +97,7 @@ The entity list enumerates all of the available entities for the current filter 
 |-|-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/sort-desc.svg"/></div> | Sort Descending | When shown the column is currently sorting in descending order.  Click to switch to ascending order. |
 | <div class="icon-col m-5"><img src="images/svg-icons/sort-asc.svg"/></div> | Sort Ascending | When shown the column is currently sorting in ascending order.  Click to switch to descending order. |
+| Hamburger | Filter | Search current list for specific name or label. Can add boolean operators to assist in filter function.
 
 > [!TIP]
 > All of the columns support the ability for filters but the button is hidden by default.  To show the button mouse over the field you would like to filter.  
