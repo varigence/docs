@@ -15,16 +15,20 @@ The BimlFlex getting started guide starts with the `01 - MSSQL Starting Point` s
 ## Sample Metadata sets
 
 * **01 - MSSQL Starting Point**  
-    A sample starting point for Microsoft SQL Server on-premises and SSIS loads. Contain sample Connections, Batches and Projects. Use this starting point to import metadata from AdventureWorksLT and build the solution.
+    A sample starting point for Microsoft SQL Server on-premises and SSIS loads. Contains sample Connections, Batches and Projects. Use this starting point to import metadata from AdventureWorksLT and build the solution
 * **02 - MSSQL After Import**  
-    A sample starting point for Microsoft SQL Server on-premises and SSIS loads. Contain sample Connections, Batches, Projects, and AdventureWorksLT source metadata objects.
-* **05 - MSSQL DataVault SSIS Solution**  
-    Microsoft SQL Server on-premises Target, SSIS and full Data Vault and Data Mart sample metadata
+    A sample starting point for Microsoft SQL Server on-premises and SSIS loads. Contains sample Connections, Batches, Projects, and AdventureWorksLT source metadata objects
+* **03 - MSSQL DataMart ETL SSIS Solution**  
+    Microsoft SQL Server on-premises Target, SSIS ETL architecture and Data Mart sample metadata. The ETL pattern uses SSIS Data Flows to execute load logic
+* **04 - MSSQL DataVault ETL SSIS Solution**  
+    Microsoft SQL Server on-premises Target, SSIS ETL architecture and full Data Vault and Data Mart sample metadata. The ETL pattern uses SSIS Data Flows to execute load logic
+* **05 - MSSQL DataVault ELT SSIS Solution**  
+    Microsoft SQL Server on-premises Target, SSIS ELT and full Data Vault and Data Mart sample metadata. The ELT pattern uses stored procedures to execute load logic
 * **06 - MSSQL DataMart SSIS Solution**  
     Microsoft SQL Server on-premises Target, SSIS and Data Mart sample metadata
 * **07 - MSSQL DataVault ADF Solution**  
     Microsoft SQL Server on-premises Target, ADF and full Data Vault and Data Mart sample metadata
-* **0**8 - MSSQL DataMart ADF Solution**  
+* **08 - MSSQL DataMart ADF Solution**  
     Microsoft SQL Server on-premises Target, ADF and Data Mart sample metadata
 * **15 - Synapse DataVault SSIS Solution**  
     Microsoft Azure Synapse Target, SSIS and full Data Vault and Data Mart sample metadata
@@ -46,6 +50,22 @@ The BimlFlex getting started guide starts with the `01 - MSSQL Starting Point` s
     Microsoft Azure SQL Database Target, ADF and full Data Vault and Data Mart sample metadata
 * **38 - SQLDB DataMart ADF Solution**  
     Microsoft Azure SQL Database Target, ADF and Data Mart sample metadata
+* **41 - Synapse Dynamics ADF Solution**  
+    Microsoft Azure Synapse Target, ADF and Dynamics CRM source sample metadata
+* **51 - File MSSQL DataVault ELT SSIS Solution**  
+    Microsoft SQL Server on-premises Target, SSIS and full Data Vault from File source sample metadata
+* **52 - File Synapse DataVault ELT SSIS Solution**  
+    Microsoft Azure Synapse Target, SSIS and full Data Vault from File source sample metadata
+* **53 - File Snowflake DataVault ELT SSIS Solution**  
+    Snowflake Target, SSIS and full Data Vault from File source sample metadata
+* **54 - File MSSQL DataVault ELT ADF Solution**  
+    Microsoft SQL Server on-premises Target, ADF and full Data Vault from File source sample metadata
+* **55 - File Synapse DataVault ELT ADF Solution**  
+    Microsoft Azure Synapse Target, ADF and full Data Vault from File source sample metadata
+* **56 - File Snowflake DataVault ELT ADF Solution**  
+    Snowflake Target, ADF and full Data Vault from File source sample metadata
+* **57 - File SQLDB DataVault ELT ADF Solution**  
+    Microsoft Azure SQL Database Target, ADF and full Data Vault from File source sample metadata
 
 ## Sample Default Configuration sets
 
