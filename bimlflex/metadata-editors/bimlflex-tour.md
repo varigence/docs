@@ -2,17 +2,17 @@
 uid: bimlflex-tour
 title: BimlFlex Tour
 ---
-# BimlFlex Tour  
+# BimlFlex Tour
 
-The following sections describe the UI elements that make up an Entity Editor and how the features provide navigation and interaction.  
+The following sections describe the UI elements that make up an Entity Editor and how the features provide navigation and interaction.
 
 [!include[BimlFlex Toolbar](_incl-toolbar.md)]
 
 ## BimlFlex Menu  
 
-The BimlFlex Menu provides quick navigation to the available editors and modeling tools.  The menu is dynamic and automatically expands and hides based on the current size of the application window.  If the menu is hidden you can use the button annotated below to open.
-
-**BimlFlex Menu**
+The BimlFlex Menu provides quick navigation to the available editors and modeling tools.
+The menu is dynamic and automatically expands and hides based on the current size of the application window.
+If the menu is hidden you can use the button annotated below to open.
 
 ![BimlFlex Menu](images/bfx-navigation-menu-01.png "BimlFlex Menu")
 
@@ -28,9 +28,9 @@ The BimlFlex Menu provides quick navigation to the available editors and modelin
 The BimlFlex Metadata Editors are provided to give a streamlined and intuitive way to enter and manage your metadata.
 The available features may vary from editor to editor but they all use the same layout.
 What follows is a quick tour of the various editor elements and how they function.
-For detailed information of the available the features reference the relevant documentation for the appropriate editor.  
+For detailed information of the available the features reference the relevant documentation for the appropriate editor.
 
-**Editor Layout**
+### Editor Layout
 
 ![BimlFlex Editor](images/bfx-metadata-editor-layout.png "BimlFlex Editor")
 
@@ -38,7 +38,7 @@ For detailed information of the available the features reference the relevant do
 ![BimlFlex Editor](images/bimlflex-app-editor.png "BimlFlex Editor")  
 -->
 
-## Breadcrumb Navigation Elements  
+### Breadcrumb Navigation Elements  
 
 BimlFlex features a breadcrumb navigation to easily raise your view to a higher context when needed.  The entities shown in the breadcrumbs will depend on the entity that is being viewed and the navigation path that was used.  Elements are provided to select either the associated parent entity or to navigate without filter context to a parent element editor.  
 
@@ -72,7 +72,7 @@ The Editor Action Buttons provide quick access to common useful features managin
 
 The entity list enumerates all of the available entities for the current filter context.  When and editor is opened through the BimlFlex Menu the default action is to open without and filter context, exposing all the the given entity type.  When an editor is opened via a [Navigation Transition] generally a context for the entities **Project** or **Connection** is applied, but ultimately may vary based on the transitional context.  The amount and availability of the the columns is determined by the editor being used.  
 
-**Entity List - Single Column**  
+### Entity List - Single Column
 
 ![Entity List - Single Column](images/bfx-entity-column.png "Entity List - Single Column")
 <!--
@@ -82,7 +82,7 @@ The entity list enumerates all of the available entities for the current filter 
 />
 -->
 
-**Entity List - Multi-Column**
+### Entity List - Multi-Column
 
 ![Entity List - Mutli-Column](images/bfx-entity-list-multi-column.png "Entity List - Multi Column")
 
@@ -106,18 +106,17 @@ The entity list enumerates all of the available entities for the current filter 
 
 The **Tab and From Action Buttons** list the actions available within the currently selected entity.  All action buttons are context specific to the currently selected tab if tab navigation function is provided the the selected editor.  As the list to large to enumerate and goes past the scope of the guide, refer to the document for the appropriate editor to view all availed actions along with their descriptions.  Many buttons feature context sensitivity and only enable/disable when appropriate.  
 
-**Tab and Form Action Buttons Example**  
-
+### Tab and Form Action Buttons Example
 
 ![Tab and Form Action Buttons](images/bfx-action-bar.png "Tab and Form Action Buttons")
 <!--
 ![Tab and Form Action Buttons Example](images/bimlflex-app-form-actions.png "Tab and Form Action Buttons Example")  
 -->
-## Tab List  
+### Tab List  
 
 If the selected editor supports them, tabs are used to switch between managing of the selected parent entity (Details Tab) and managing of the associated child entities.  
 
-**Tab List Example**  
+### Tab List Example
 
 ![Tab List](images/bfx-tabs.png "Tab List")
 
@@ -132,7 +131,7 @@ The Tab and Form Content area is where all the metadata for the associated entit
 
 A Field List provides a series of context sensitive fields.  BimlFlex will dynamically hide and expose fields depending on the current properties of the selected entity.  Additionally BimlFlex provides field level validations with the ability to highlight misconfigured metadata.  
 
-**Fields Content**  
+### Fields Content
 
 ![Fields Content](images/bfx-fields-content.png "Fields Content")
 <!--
@@ -166,7 +165,8 @@ When changes are complete, click the **Ok** button to keep the changes that have
 
 Table content is provided when an entity features some complex logic and should be edited through a dialog box.  New items can be entered entered via the <img class="icon-inline" src="images/svg-icons/add.svg"/> **Add** button.  Existing items can be edited by selecting a row and then using the <img class="icon-inline" src="images/svg-icons/edit.svg"/> **Edit** button.  The same filter as sort functions that are provided on the **Entity List** are available on these content types.  
 
-**Table Content**  
+#### Table Content
+
 <!--
 ![Table Content](images/bimlflex-app-form-table.png "Table Content")  
 -->
@@ -191,12 +191,12 @@ Click the light blue value will allow you to navigate directly to the the object
 Click the 'Compass' icon for global navigation to any entity within the project.
 Every navigable entity within the BimlFlex application will have such an icon.
 
-BimlFlex now features a checkbox UI feature for any list of items being viewed.
+BimlFlex features a checkbox UI system for any list of items being viewed.
 Highlight over a single item, and a checkbox will appear on the left.
-If selected, checkboxes will appear for all items in the list. 
+If selected, checkboxes will appear for all items in the list.
 Selecting the checkbox at the top of the list will select/deselect all items.
 Having multiple items selected will allow the user to bulk-archive as many items as are currently selected. 
-With multiple items selected, users may select `Integration Key` from the **Objects** Action Bar to enter the Generate Derived Integration Key with the desired items already selected.
+With multiple items selected, users may select `Integration Key` from the **Objects** Action Bar to enter the Generate Derived Integration Key dialog menu with the desired items already selected.
 
 <!--
 ![Multiple Views](images/bimlflex-app-form-navigational-transitions.png "Multiple Views")  

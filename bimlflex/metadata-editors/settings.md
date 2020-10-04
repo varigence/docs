@@ -45,13 +45,12 @@ When utilizing the Search bar, if a user hovers over a specific search term the 
 > For users who are unsure of the *specific* setting they need, beginning a search with "*" will allow users to search setting descriptions as well as setting titles. This will assist in guiding users to their desired setting based on associated terminology used in their search.
 
 When applicable, settings that involve editing SQL code will appear in a window that mirrors standard SQL input styling and syntax.
-<!--
-TODO: Add image of SQL Editor Window (Core -> Lookup Table Pattern)
--->
+
+Settings that are "Yes or No" selections will be presented with a checkbox UI to indicate their setting.
+
+Settings that contain required values will be outlined in red as indicated below. 
 
 ![BimlFlex App - Settings](images/bimlflex-app-settings.64566.png "BimlFlex App - Settings")
-
-Settings that contain required values will be outlined in red and indicated as such.
 
 ## Command Bar Buttons
 

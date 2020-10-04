@@ -229,7 +229,7 @@ Any remaining tables and Integration Keys will be used to create Hubs. The defin
 ### Accelerate Link Satellites
 
 To accelerate Link Satellites, users must first enable the option from within the **Settings** menu.
-By default, this setting is turned off. This setting will enable the Accelerator to model Link Satellites for effectiveness and attributes from source metadata. 
+By default, this setting is turned off. This setting will enable the Accelerator to model Link Satellites for effectiveness and attributes from source metadata.
 
 ![Enable Link Satellite Acceleration](images/bfx-link-satellite-setting.png "Enable Link Satellite Acceleration")
 

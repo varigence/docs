@@ -24,6 +24,7 @@ The action buttons modify the **Configuration** that is active in the editor.
 <!--
 ![BimlFlex App - Configurations - Command Bar](images/bimlflex-app-configurations-command-bar.64566.png "BimlFlex App - Configurations - Command Bar")
 -->
+
 ![BimlFlex App - Configurations - Command Bar](images/bfx-configurations-command-bar.png "BimlFlex App - Configurations - Command Bar")
 
 |Icon|Action|Description|
