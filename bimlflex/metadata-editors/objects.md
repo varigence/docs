@@ -34,7 +34,7 @@ Selecting an **Object** with multiple tables/columns will display a secondary li
 
 ![BimlFlex Objects Editor - List](images/bfx-object-editor-listview.png "BimlFlex Objects Editor - List")
 
-The tree view for Objects is expandable/collapsible by clicking the `<<` icon.
+The tree view for **Objects** is expandable/collapsible by clicking the `<<` icon.
 
 Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**

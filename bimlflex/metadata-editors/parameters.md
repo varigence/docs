@@ -28,12 +28,24 @@ The following sections describe the UI elements of the **Parameters Editor** and
 **Parameters** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
 The number of active parameters will be displayed next to the Object names in parentheses.
 
-Selecting an Object with a single Parameter will immediately navigate the user to the Parameter edit screen.
+Selecting an **Object** with a single **Parameter** will immediately navigate the user to the Parameter edit screen.
 
-Selecting an Object with multiple Parameters will display a list of all active parameters within. The user may navigate to any Parameter by selecting from the displayed list.
+Selecting an **Object** with multiple **Parameters** will display a list of all active parameters within. The user may navigate to any **Parameter** by selecting from the displayed list.
 
-Any instance of the 'Compass' icon will serve as a Global Navigation Transition.
-Clicking this icon will navigate the user directly to the referenced Connection or Object.
+![BimlFlex Parameters - Listview](images/bfx-parameters-listview.png "BimlFlex Parmeters - Listview")
+
+The tree view for **Parameters** is expandable/collapsible by clicking the `<<` icon.
+
+Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
+Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
+
+Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
+This option is enabled by default.
+
+The Search field is contained within the tree view menu, and will be hidden when collapsed.
+The Search field will return results in realtime, only presenting Parameters containing the term being searched.
+
+![BimlFlex Parameters - Search Field](images/bfx-parameters-search-field.png "BimlFlex Parameters - Search Field")
 
 ## Action Buttons  
 
