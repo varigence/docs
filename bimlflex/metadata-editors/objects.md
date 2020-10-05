@@ -19,10 +19,33 @@ The following sections describe the UI elements of the **Objects Editor** and ho
 -->
 
 ![BimlFlex Objects Editor](images/bfx-object-editor-overview.png "BimlFlex Objects Editor")
-
+<!--
 **Objects** within BimlFlex are displayed in hierarchical tree view on the left sidenav menu.
 
 Selecting an Object will navigate the user to the Details Tab edit screen.
+-->
+
+**Objects** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
+The number of **Objects** within a given **Connection** will be displayed in parentheses.
+
+Selecting a **Connection** with a single **Object** will immediately navigate the user to the Object edit screen.
+
+Selecting an **Object** with multiple tables/columns will display a secondary list of all editable options within. The user may navigate to any **Object** by selecting from the displayed list.
+
+![BimlFlex Objects Editor - List](images/bfx-object-editor-listview.png "BimlFlex Objects Editor - List")
+
+The tree view for Objects is expandable/collapsible by clicking the `<<` icon.
+
+Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
+Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
+
+Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
+This option is enabled by default.
+
+The Search field is contained within the tree view menu, and will be hidden when collapsed.
+The Search field will return results in realtime, only presenting Objects containing the term being searched.
+
+![BimlFlex Objects - Search Field](images/bfx-object-search-field.png "BimlFlex Objects - Search Field")
 
 ## Details Tab
 
