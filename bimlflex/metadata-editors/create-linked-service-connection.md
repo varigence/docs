@@ -2,6 +2,7 @@
 uid: create-linked-service-connection
 title: Configuring a Linked Service Connection
 ---
+
 # Configuring a Linked Service Connection
 
 [//]: # (TODO: Include a summary of Linked Service purpose and use in connections)

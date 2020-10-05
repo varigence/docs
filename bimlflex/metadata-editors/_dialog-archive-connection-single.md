@@ -1,6 +1,6 @@
 #### Archive Connection Dialog Box
 
-Confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the *Ok* button.
+Confirmation box warning against the dangers of archiving.  Users are required to confirm by both the check box and the *Ok* button.
 
 ![Archive Connection Dialog Box -mtb-20-image](images/bimlflex-app-dialog-archive-connection-single.png "Archive Connection Dialog Box")
 

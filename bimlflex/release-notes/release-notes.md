@@ -25,7 +25,7 @@ The Excel add-in location has been updated. The location of the add-in must be u
 
 Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or upgrade the Excel file from the advanced options in the BimlFlex ribbon UI, in the Excel Metadata Editor dropdown to allow it to work as expected. Once the Excel file is upgraded it can be opened directly from Excel or the Windows file explorer again.
 
-Documentation providing a step-by-step walkthrough for this process can be found [here](xref:excel-metadata-addin)
+Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Addin](xref:excel-metadata-addin)
 
 ## Settings Changes
 
@@ -34,8 +34,10 @@ The Accelerator and Data Vault processes have several new optional configuration
 * Added settings to control if individual source keys should be added to Hubs and Links as attributes.
 * Added settings for if Link Satellites should use record source naming convention by default.
 * The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group.
+* Toggle setting added to display backbone (Hubs and Links only) for accelerated models.
+* Toggle setting added to display datatypes for columns for both source models and accelerated models.
 
-Documentation regarding the updated delete functionality can be found here: [TO DO](xref:TODO: Add link).
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection).
 
 The following setting has been added to control the Data Vault Accelerator:
 
@@ -68,6 +70,8 @@ More information on these settings: [BimlFlex-generated SQL Server Data Tool
 * Fixed an issue when deploying by ARM template, that caused the Azure Blob Storage authentication method to incorrectly register as Service Principal ID.
 * Integration Runtimes can now pass into BLOB Storage and DataLakeStoreGen2 Linked Services.
 * Fixed an issue with `Hash Column` of large Synapse Tables (greater than 500 columns).
+
+More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](xref:bfx-arm-template)
 
 ## BimlFlex App Help Sidebar Navigation
 
@@ -105,7 +109,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
 * TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts.
 
-Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection).
 
 ## Business Modeling
 
