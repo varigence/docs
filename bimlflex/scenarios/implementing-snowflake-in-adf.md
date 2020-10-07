@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-snowflake-implementation-adf
 title: Snowflake Implementation with ADF
+summary: Guidance on how to implement Snowflake using Azure Data Factory for cloud based data warehouse solutions within BimlFlex
 ---
 
 # Implementing Snowflake Using Azure Data Factory with BimlFlex

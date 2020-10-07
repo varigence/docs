@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-debug-utilities
 title: BimlFlex Debug Utilities
+summary: Documentation providing resources to use BimlFlex Debug Utilities to create metadata and project files to sent to Varigence BimlFlex support
 ---
 # BimlFlex Debug Utilities
 

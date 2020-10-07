@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-find-version
 title: Find the BimlFlex versions installed
+summary: Documentation on how to find installed versions of BimlFlex, BimlStudio, and BimlFlex Excel Add-In
 ---
 
 # Find the BimlFlex versions installed

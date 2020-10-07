@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-troubleshooting-tips
 title: Troubleshooting Tips
+summary: Troubleshooting tips for when errors occur within BimlFlex or BimlStudio
 ---
 # Troubleshooting Tips
 

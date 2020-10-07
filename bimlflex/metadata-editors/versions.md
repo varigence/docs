@@ -1,6 +1,7 @@
 ---
 uid: versions
 title: Versions
+summary: Documentation regarding the BimlFlex Versions editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 ---
 # Versions
 

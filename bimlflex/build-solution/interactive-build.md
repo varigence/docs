@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-interactive-build
 title: BimlFlex Interactive Build
+summary: Guide to building assets in BimlFlex whether Cube, SSIS, or Azure Data Factory
 ---
 # BimlFlex Interactive Build
 

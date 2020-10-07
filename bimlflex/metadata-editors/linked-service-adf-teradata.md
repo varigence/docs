@@ -1,6 +1,7 @@
 ---
 uid: linked-service-adf-teradata
 title: Configuring an ADF Linked Service Connection for Teradata
+summary: Documentation on how to configure ADF Linked Service Connection for Teradata with required fields, connection strings, and links to additional information
 ---
 # Configuring an ADF Linked Service Connection for Teradata
 

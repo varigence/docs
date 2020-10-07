@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-export-to-file
 title: BimlFlex Export To File
+summary: Documentation on exporting data out of a database into files within BimlFlex, including flat file types, data rows, and delimiters
 ---
 # Export To File
 

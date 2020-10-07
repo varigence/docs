@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-driving-keys
 title: Data Vault Driving Keys
+summary: Driving Keys in Data Vault in regards to many-to-many relationships
 ---
 # Data Vault Driving Keys
 

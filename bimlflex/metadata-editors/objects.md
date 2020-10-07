@@ -1,6 +1,7 @@
 ---
 uid: objects
 title: Objects
+summary: Documentation regarding the BimlFlex Objects editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 ---
 # Objects Editor
 

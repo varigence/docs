@@ -1,6 +1,7 @@
 ---
 uid: zzz-bimlflex-app-introduction
 title: BimlFlex App Introduction
+summary: Overview and introduction to the BimlFlex application
 ---
 # BimlFlex App Introduction
 

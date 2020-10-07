@@ -1,6 +1,7 @@
 ---
 uid: bimlexpress-comparison-index
 name: BimlExpress Comparison
+summary: Resources, help, and support for creation and editing of Biml files in BimlExpress
 ---
 
 # BimlExpress Comparison

@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-ssis-deployment-wizard
 title: Deployment Through the SSIS Deployment Wizard
+summary: Documentation on deployment of generated SQL Server Integration Services (SSIS) assets
 ---
 
 # Deployment Through the SSIS Deployment Wizard

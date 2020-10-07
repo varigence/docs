@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-implementation-guides-overview
 title: BimlFlex Implementation Guides Overview
+summary: Overview of implementation guides for BimlFlex, including Snowflake, Azure Synapse, SQL Server, Export to File, Master Data Services, Excel, Odata, and Stored Procedures
 ---
 # BimlFlex Implementation Guides Overview
 

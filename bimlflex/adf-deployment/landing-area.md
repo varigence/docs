@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-adf-landing-area
 name: Configure Azure Data Factory Landing Area
+summary: Instructions on how to configure Azure Data Factory Landing Area accessible by SQL Based ELT stored procedures 
 ---
 
 # Configure Azure Data Factory Landing Area

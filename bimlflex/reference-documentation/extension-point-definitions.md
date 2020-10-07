@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-extension-point-definitions
 title: BimlFlex Extension Point Definitions
+summary: Documentation for the definitions of internal global extension points that control environment settings within BimlFlex
 ---
 
 ## BimlFlex Extension Points

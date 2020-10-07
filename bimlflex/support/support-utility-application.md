@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-support-utility-application
 title: BimlFlex Support Utility Application
+summary: Documentation on the BimlFlex support utility application, which is used to deploy and interact with databases and Bundle files
 ---
 # BimlFlex Support Utility Application
 

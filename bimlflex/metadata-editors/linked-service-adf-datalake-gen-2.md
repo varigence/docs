@@ -1,6 +1,7 @@
 ---
 uid: linked-service-adf-data-lake-gen-2
 title: Configuring an ADF Linked Service Connection for Data Lake Gen 2
+summary: Documentation on how to configure ADF Linked Service Connection for Data Lake Gen 2 with required fields, connection strings, and links to additional information
 ---
 # Configuring an ADF Linked Service Connection for Data Lake Gen 2
 

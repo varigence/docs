@@ -1,6 +1,7 @@
 ---
 uid: bfx-accelerator-updates
 name: BimlFlex 2020.2 Accelerator Updates 
+summary: Documentation regarding new features within the BimlFlex Accelerator including new features, connection points, context menu, path calculation, and matched styling
 ---
 
 # BimlFlex Accelerator Updated Features in 2020.2

@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-metadata-entity-definitions
 title: BimlFlex Metadata Entity Definitions
+summary: Documentation of the management of metadata entity definitions and properties for all editors within BimlFlex 
 ---
 
 # Metadata Repository

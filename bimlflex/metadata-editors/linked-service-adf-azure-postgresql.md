@@ -1,6 +1,7 @@
 ---
 uid: linked-service-adf-azure-postgresql
 title: Configuring an ADF Linked Service Connection for Azure Database for PostgreSQL
+summary: Documentation on how to configure ADF Linked Service Connection for Azure Database for PostgreSQL with required fields, connection strings, and links to additional information
 ---
 # Configuring an ADF Linked Service Connection for Azure Database for PostgreSQL
 

@@ -1,6 +1,7 @@
 ---
 uid: configurations
 title: Configurations
+summary: Documentation regarding the BimlFlex Configurations editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 ---
 # Configurations
 

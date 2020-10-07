@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-ssis-deployment-guide
 title: BimlFlex SSIS Deployment Guide
+summary: Documentation on project configurations and deployments to SSIS Catalog within BimlFlex
 ---
 # SSIS Deployment Guide
 

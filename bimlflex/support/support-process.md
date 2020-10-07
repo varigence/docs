@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-support-process
 title: BimlFlex Support Process
+summary: Documentation on accessing Varigence Biml support, including creating a case and required information to be provided
 ---
 # Support Process
 

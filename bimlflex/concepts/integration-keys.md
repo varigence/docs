@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-integration-keys-and-relationships
 title: BimlFlex Integration Keys and Relationships
+summary: Data Vault management of integration keys, relationships, business keys, examples, and how to accelerate in the Data Vault Accelerator
 ---
 # Integration Keys and Relationships
 

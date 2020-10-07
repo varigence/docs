@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-trial-creating-a-2-layer-presentation-layer
 title: Creating a 2 layer Dimensional Model
+summary: Guidance on how to create a 2 layer dimensional model in BimlFlex with detailed steps
 ---
 # Creating a 2 layer Dimensional Model
 

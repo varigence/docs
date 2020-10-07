@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-getting-started-installing-bimlflex
 title: Installing BimlFlex
+summary: Guidance on how to install BimlFlex via the installer file or command line
 ---
 # Installing BimlFlex
 

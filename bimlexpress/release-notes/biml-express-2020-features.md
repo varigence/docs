@@ -1,6 +1,7 @@
 ---
 uid: biml-express-2020-features
 title: BimlExpress 2020 R1 Features and Highlights
+summary: Details of the BimlExpress 2020 R1 update
 ---
 
 # BimlExpress 2020 R1 Features and Highlights

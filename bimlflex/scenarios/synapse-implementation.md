@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-synapse-implementation
 title: Synapse Implementations
+summary: Documentation on how to configure Azure Synapse as Source and a target data warehouse for both SSIS and ADF implementation within BimlFlex
 ---
 
 # Microsoft Azure Synapse Overview

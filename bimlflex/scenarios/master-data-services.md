@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-master-data-services
 title: BimlFlex Microsoft SQL Server Master Data Services (MDS) integration
+summary: Documentation on integrating Microsoft SQL Server Master Data Services within BimlFlex with sample models, sample metadata, and schema types
 ---
 # Microsoft SQL Server Master Data Services (MDS) integration
 

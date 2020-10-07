@@ -1,6 +1,7 @@
 ---
 uid: projects
 title: Projects
+summary: Documentation regarding the BimlFlex Projects editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 ---
 # Projects Editor
 

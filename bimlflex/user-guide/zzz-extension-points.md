@@ -1,6 +1,7 @@
 ---
 uid: zzz-bimlflex-extension-points-old
 title: BimlFlex Extension Points
+summary: Documentation regarding Extension Points to extend default functionality of BimlFlex using standard Biml code, with options, examples, and references
 ---
 # Extension Points
 

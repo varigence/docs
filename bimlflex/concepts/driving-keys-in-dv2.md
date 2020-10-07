@@ -1,3 +1,9 @@
+---
+uid: driving-keys-in-dv2.md
+name: Driving Keys in Data Vault 
+summary: Documentation on assignment, importance of, and tracking Driving Keys in a Linked Satellite in Data Vault with examples
+---
+
 # Driving Keys in Data Vault
 
 A **Driving Key** is a **Unique Key** on a Link that is used to determine the effectivity of a relationship or series of relationships.

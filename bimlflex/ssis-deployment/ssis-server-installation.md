@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-ssis-deployment-ssis-server-install
 title: SSIS Server Installation
+summary: Documentation regarding SSIS Server Installation for custom SSIS components used in BimlFlex
 ---
 # Server Installation
 

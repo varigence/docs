@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-source-to-staging-templates
 title: BimlFlex Source to Staging Templates
+summary: Documentation on the automation of best practice ETL and ELT patterns for metadata modeling, including import files, source to staging, pattern overview, and implementations for projects and batches
 ---
 # Source to Staging Templates
 

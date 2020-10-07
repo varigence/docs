@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-trial-installing-custom-ssis-components
 title: Installing BimlFlex Custom SSIS Components
+summary: Guidance on how to install BimlFlex custom SSIS components with Snowflake and Azure assistance
 ---
 # Installing BimlFlex Custom SSIS Components
 

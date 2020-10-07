@@ -1,6 +1,7 @@
 ---
 uid: toolbar-icons-and-options
 title: Toolbar Icons and Options
+summary: Description of BimlFlex toolbar and setup actions
 ---
 
 # Toolbar Icons and Options

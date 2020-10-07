@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-adf-concurrent-development
 title: BimlFlex Concurrent Development
+summary: Details regarding concurrent development between teams, customers, and shared metadata
 ---
 # Concurrent Development
 

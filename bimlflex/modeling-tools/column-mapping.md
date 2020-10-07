@@ -1,6 +1,7 @@
 ---
 uid: column-mapping
 title: Column Mapping
+summary: Documentation on Column Mapping within BimlFlex to review and update graphical interface, with starting point, context aware actions, action buttons, and settings
 ---
 # Column Mapping
 

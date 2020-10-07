@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-ssis-custom-components
 title: BimlFlex SSIS Custom Components
+summary: Documentation regarding custom SSIS components used for ETL load processes in SSIS packages in BimlFlex
 ---
 # SSIS Custom Components
 

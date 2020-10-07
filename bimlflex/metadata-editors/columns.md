@@ -1,6 +1,7 @@
 ---
 uid: columns
 title: Columns
+summary: Documentation regarding the BimlFlex Columns editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 ---
 # Columns Editor  
 

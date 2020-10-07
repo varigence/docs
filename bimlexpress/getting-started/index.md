@@ -1,6 +1,7 @@
 ---
 uid: bimlexpress-documentation
 name: BimlExpress Documentation
+summary: BimlExpress documentation, resources, help, and support for creating Biml files
 ---
 
 # BimlExpress Documentation

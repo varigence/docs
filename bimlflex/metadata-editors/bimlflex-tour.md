@@ -1,7 +1,9 @@
 ---
 uid: bimlflex-tour
 title: BimlFlex Tour
+summary: Documentation describing the UI elements, navigation, and interaction within the BimlFlex application
 ---
+
 # BimlFlex Tour
 
 The following sections describe the UI elements that make up an Entity Editor and how the features provide navigation and interaction.

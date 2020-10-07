@@ -1,6 +1,7 @@
 ---
 uid: parameters
 title: Parameters
+summary: Documentation regarding the BimlFlex Parameters editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 ---
 # Parameters Editor
 

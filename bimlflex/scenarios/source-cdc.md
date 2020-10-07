@@ -1,6 +1,7 @@
 ---
 uid: change-data-capture-source-to-staging
 title: Change Data Capture Source to Staging
+summary: Documentation regarding Microsoft SQL Server change data capture in source to staging with setting descriptions and additional considerations
 ---
 # Change Data Capture Source to Staging
 

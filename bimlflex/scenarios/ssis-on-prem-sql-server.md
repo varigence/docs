@@ -1,6 +1,7 @@
 ---
 uid: ssis-on-prem-sql-server
 title: SSIS with on-premises SQL Server
+summary: Documentation on steps and considerations for extracting data from a Source database through staging, persisted stage, raw data vault, and business data vault for an on-premise SQL Server
 ---
 
 # SSIS with on-premises SQL Server

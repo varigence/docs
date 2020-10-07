@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-getting-started-first-project-walkthrough
 title: First Project Walkthrough
+summary: Guidance on creating a BimlFlex project end to end, including setting up source data, accelerating a data vault, and applying load parameters
 ---
 # First Project Walkthrough
 

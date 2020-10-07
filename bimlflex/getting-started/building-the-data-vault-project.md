@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-getting-started-building-the-data-vault-project
 title: Building Databases, Tables and SSIS packages for source to staging
+summary: Documentation guiding users on building databases, tables, and SSIS packages in BimlFlex with detailed steps
 ---
 # Building Databases, Tables and SSIS packages for source to staging
 

@@ -1,7 +1,7 @@
 ---
 uid: settings
 title: Settings
-summary: Configuration of metadata and framework settings from within the BimlFlex application.
+summary: Documentation regarding the BimlFlex Settings editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 ---
 # Settings
 

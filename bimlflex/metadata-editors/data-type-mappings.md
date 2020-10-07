@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-data-type-mappings
 title: BimlFlex Data Type Mappings
+summary: Documentation regarding the BimlFlex Data Type Mappings editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 ---
 # Data Type Mappings Editor
 

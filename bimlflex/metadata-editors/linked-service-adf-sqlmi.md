@@ -1,6 +1,7 @@
 ---
 uid: linked-service-adf-sqlmi
 title: Configuring an ADF Linked Service Connection for Azure SQL Database Managed Instance
+summary: Documentation on how to configure ADF Linked Service Connection for Azure SQL Database Managed Instance with required fields, connection strings, and links to additional information
 ---
 # Configuring an ADF Linked Service Connection for Azure SQL Database Managed Instance
 

@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-data-vault-templates
 title: BimlFlex Data Vault Templates
+summary: Documentation on data vault templates in BimlFlex pillars, constructs, entities, and keys
 ---
 # Data Vault Templates
 

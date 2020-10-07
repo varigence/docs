@@ -1,6 +1,7 @@
 ---
 uid: excel-metadata-addin
 title: Excel File Migration Error within BimlFlex 2020 R2 Update
+summary: Documentation regarding the need to update the BimlFlex Excel File Add-in
 ---
 
 # Excel File Migration Error within BimlFlex 2020 R2 Update

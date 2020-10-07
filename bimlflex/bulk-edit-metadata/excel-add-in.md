@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-excel-add-in
 title: BimlFlex Excel Add-in
+summary: Guide on how to update the BimlFlex Excel add-in
 ---
 # BimlFlex Excel Add-in
 

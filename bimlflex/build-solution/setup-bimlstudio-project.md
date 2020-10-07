@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-setup-bimlstudio-project
 title: BimlFlex - Setup BimlStudio Project
+summary: Guide to creating a BimlStudio project from within BimlFlex
 ---
 # BimlFlex - Setup BimlStudio Project
 

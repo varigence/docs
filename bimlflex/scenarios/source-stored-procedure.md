@@ -1,6 +1,7 @@
 ---
 uid: bimlflex-source-stored-procedure
 title: BimlFlex Stored Procedure Source
+summary: Documentation on how to use BimlFlex stored procedure source to load data
 ---
 # BimlFlex Stored Procedure Source
 
