@@ -9,11 +9,11 @@ summary: Overview of the Business Modeling process within BimlFlex application, 
 ## Business Modeling Conceptually
 
 Business Modeling is an approach to Data Vault modeling wherein an agile, scalable model is designed around Core Business Concepts (CBC) and and Natural Business Relationships (NBR), as opposed to creating a Data Vault from an already existing source of data.
-This method is generally employed by a team of business representatives working in conjunction with technical (IT and/or data analysts or consultants) to detail the primary aspects of a business' interactions, objectives, and relationships.  
-Business Modeling in this respect, also referred to as Ensemble Logical Modeling (ELM), is traditionally performed in small technical sessions devoid of computers.
-Using whiteboards and Post-Its, small groups track, alter, and modify relationships paramount to the business operation.
-Business representatives will detail core aspects of the business, tracking who interacts with what, while data analysts and consultants will monitor the IT and technical aspects of those relationships.
-It is a system that is propagated by interaction, collaboration, and discussion.
+This method is generally employed by a team of business representatives working in conjunction with technical team members (IT, data analysts, or consultants) to detail the primary aspects of a business' interactions, objectives, and relationships.  
+Business Modeling in this respect, referred to as Ensemble Logical Modeling (ELM), is traditionally performed in small technical sessions devoid of computers.
+Using whiteboards and Post-Its, small groups track, alter, and modify relationships paramount to the business' operation.
+Business representatives will detail core aspects of the business, tracking who interacts with what, while data analysts and consultants will advise on the technical aspects of tracking and integrating those relationships.
+It is a system that is propagated by interaction, collaboration, and discussion, by those most familiar with the operations of the business.
 
 ## Business Modeling Digitally
 
