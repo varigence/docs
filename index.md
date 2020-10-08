@@ -51,7 +51,7 @@ In addition to the support here, we have developed a community at [Bimlscript.co
 <a href="biml-reference/index.md"><img src="content/images/biml.svg" alt="Biml -h24px"></a>
 
 * [Biml Language Reference](biml-reference/language-reference/Varigence.Languages.Biml.AstRootNode.html)
-* [Biml API Reference](api-reference/Varigence.Languages.Biml.AstRootNode.html)
+* [Biml API Reference](biml-reference/api-reference/Varigence.Languages.Biml.AstRootNode.html)
 * [Biml API Samples](biml-reference/snippets/index.md)
 * [Biml Forum](https://varigence.com/Forums?forumName=Biml)
 
