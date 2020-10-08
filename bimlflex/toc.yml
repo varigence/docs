@@ -33,7 +33,7 @@
     href: concepts/toc.yml
 
   - name: Scenarios
-    href: implementation-guides/toc.yml
+    href: scenarios/toc.yml
 
   - name: Support
     href: support/toc.yml
