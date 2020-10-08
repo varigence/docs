@@ -3,8 +3,9 @@ uid: bimlflex-release-notes-in-app
 name: BimlFlex Release Notes for Application
 Summary: Release Notes for current and most recent version of BimlFlex, specific to In App window viewing
 ---
+
 > [!IMPORTANT]
-> BimlFlex has been updated.
+>BimlFlex has been updated.
 
 ## Latest Release
 

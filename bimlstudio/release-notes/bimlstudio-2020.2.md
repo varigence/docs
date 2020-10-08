@@ -1,6 +1,6 @@
 # BimlStudio 2020 R2 Release Notes
 
-Significant changes between BimlStudio 2020 R1 and BimlStudio 2020 R2
+Significant changes have been implemented between BimlStudio 2020 R1 and the latest version BimlStudio 2020 R2.
 
 ## SSIS
 
