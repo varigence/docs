@@ -27,11 +27,11 @@ Selecting an Object will navigate the user to the Details Tab edit screen.
 -->
 
 **Objects** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
-The number of **Objects** within a given **Connection** will be displayed in parentheses.
+The tree view is organized by **Project** > **Source** Connection > **Object**, with the number of tables within a given **Object** displayed in parenthesis.
 
-Selecting a **Connection** with a single **Object** will immediately navigate the user to the Object edit screen.
+Selecting an **Object** with multiple tables will display a secondary list of all editable options within. The user may navigate to the Object Editor Screen by selecting any **Object** from the displayed list.
 
-Selecting an **Object** with multiple tables/columns will display a secondary list of all editable options within. The user may navigate to any **Object** by selecting from the displayed list.
+Selecting an **Object** with a single table will immediately navigate the user to the Object editor screen.
 
 ![BimlFlex Objects Editor - List](images/bfx-object-editor-listview.png "BimlFlex Objects Editor - List")
 

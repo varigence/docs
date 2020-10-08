@@ -26,12 +26,16 @@ The following sections describe the UI elements of the **Parameters Editor** and
     title="Parameters Editor"
 />
 -->
+
 **Parameters** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
-The number of active parameters will be displayed next to the Object names in parentheses.
+The tree view is organized by **Connections** > **Objects** > **Column** > **Parameters**.  
+The total number of **Parameters** will be displayed in parenthesis next to the **Connection** in the menu.  
+The individual number of **Parameters** assigned to each **Object** or **Column** will also be displayed in parenthesis.
 
-Selecting an **Object** with a single **Parameter** will immediately navigate the user to the Parameter edit screen.
+Selecting a **Column** with multiple **Parameters** will display a secondary list of all editable options within.
+The user may navigate to the Parameter Editor Screen by selecting any **Parameter** from the displayed list.
 
-Selecting an **Object** with multiple **Parameters** will display a list of all active parameters within. The user may navigate to any **Parameter** by selecting from the displayed list.
+Selecting a **Column** with a single **Parameter** will immediately navigate the user to the Parameter editor screen.
 
 ![BimlFlex Parameters - Listview](images/bfx-parameters-listview.png "BimlFlex Parmeters - Listview")
 
