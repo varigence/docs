@@ -27,6 +27,17 @@ Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or
 
 Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Addin](xref:excel-metadata-addin)
 
+## New Features
+
+* New features and behaviors for BimlFlex Accelerator
+* BimlFlex App Help Sidebar Navigation added to more menus 
+* Improved UI for Editor screens 
+* Global navigation to transition between Projects, Connections, Objects, and Columns in a single click 
+* Enhanced support for ADF and Snowflake
+* New customer scenarios for cloud-only users
+* Improved delete detection
+* Preview build of BimlFlex's Business Modeling capabilities
+
 ## Settings Changes
 
 The Accelerator and Data Vault processes have several new optional configurations to better control Data Vault behavior.
