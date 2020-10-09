@@ -23,8 +23,6 @@ Additional documentation providing a step-by-step walkthrough for this process: 
 
 ## New Features
 
-## New Features
-
 * New features and behaviors for BimlFlex Accelerator.
 * BimlFlex App Help Sidebar Navigation added to more menus.
 * Improved UI for Editor screens.
