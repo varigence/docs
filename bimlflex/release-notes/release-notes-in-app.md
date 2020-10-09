@@ -23,14 +23,16 @@ Additional documentation providing a step-by-step walkthrough for this process: 
 
 ## New Features
 
-* New features and behaviors for BimlFlex Accelerator
-* BimlFlex App Help Sidebar Navigation added to more menus 
-* Improved UI for Editor screens 
-* Global navigation to transition between Projects, Connections, Objects, and Columns in a single click 
-* Enhanced support for ADF and Snowflake
-* New customer scenarios for cloud-only users
-* Improved delete detection
-* Preview build of BimlFlex's Business Modeling capabilities
+## New Features
+
+* New features and behaviors for BimlFlex Accelerator.
+* BimlFlex App Help Sidebar Navigation added to more menus.
+* Improved UI for Editor screens.
+* Global navigation to transition between Projects, Connections, Objects, and Columns in a single click.
+* Enhanced support for ADF and Snowflake.
+* New customer scenarios for cloud-only users.
+* Improved delete detection.
+* Preview build of BimlFlex's Business Modeling capabilities.
 
 ## Settings Changes
 
