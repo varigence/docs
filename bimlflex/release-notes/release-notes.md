@@ -15,7 +15,7 @@ BimlFlex 2020 is installed and upgraded through a single consolidated installer.
 
 ## Latest Release
 
-## Build 20.2.nnn.0, release date: nn mmmm 2020
+Build 20.2.nnn.0, release date: nn mmmm 2020
 
 ## Breaking Changes
 
@@ -161,7 +161,7 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation of, and additional defaults for, dependency objects.
 --> 
 
-download links to this build:
+## Download Links to this Build
 
 * [bimlflexdevsetup_20.2.nnn.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.nnn.0.exe)
 * [bimlflexruntimesetup_20.2.nnn.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.nnn.0.exe)
