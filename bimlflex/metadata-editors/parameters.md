@@ -28,18 +28,20 @@ The following sections describe the UI elements of the **Parameters Editor** and
 -->
 
 **Parameters** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
-The tree view is organized by **Connections** > **Objects** > **Column** > **Parameters**.  
+The tree view is organized by **Connections** > **Objects** > **Columns** > **Parameters**.  
 The total number of **Parameters** will be displayed in parenthesis next to the **Connection** in the menu.  
 The individual number of **Parameters** assigned to each **Object** or **Column** will also be displayed in parenthesis.
 
-Selecting a **Column** with multiple **Parameters** will display a secondary list of all editable options within.
+Selecting a **Connection** with multiple **Parameters** will display a secondary list of all editable options within.
 The user may navigate to the Parameter Editor Screen by selecting any **Parameter** from the displayed list.
 
-Selecting a **Column** with a single **Parameter** will immediately navigate the user to the Parameter editor screen.
+Selecting a **Connection** with a single **Parameter** will immediately navigate the user to the Parameter editor screen.
 
 ![BimlFlex Parameters - Listview](images/bfx-parameters-listview.png "BimlFlex Parmeters - Listview")
 
 The tree view for **Parameters** is expandable/collapsible by clicking the `<<` icon.
+
+Selecting the checkbox(es) icon will enable users to bulk archive multiple **Parameters** at one time.
 
 Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
@@ -79,11 +81,15 @@ The Search field will return results in realtime, only presenting Parameters con
 
 ## Fields  
 
+<!--
 <img 
     src="images/bimlflex-app-editor-parameters-fields.png" 
     class="bordered-image" 
     title="Parameter Fields"
 />
+-->
+
+![BimlFlex Parameters - Fields](images/bfx-parameters-fields.png "BimlFlex Parameters - Fields")
 
 |Field|Description|
 |-|-|
