@@ -27,15 +27,17 @@ Selecting an Object will navigate the user to the Details Tab edit screen.
 -->
 
 **Objects** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
-The tree view is organized by **Project** > **Source** Connection > **Object**, with the number of tables within a given **Object** displayed in parenthesis.
+The tree view is organized by **Project** > **Source** Connection > **Objects**, with the number of tables within a given **Object** displayed in parenthesis.
 
-Selecting an **Object** with multiple tables will display a secondary list of all editable options within. The user may navigate to the Object Editor Screen by selecting any **Object** from the displayed list.
+Selecting an **Object** with multiple tables will display a secondary list of all editable options within. The user may navigate to the Object editor screen by selecting any **Object** from the displayed list.
 
 Selecting an **Object** with a single table will immediately navigate the user to the Object editor screen.
 
 ![BimlFlex Objects Editor - List](images/bfx-object-editor-listview.png "BimlFlex Objects Editor - List")
 
 The tree view for **Objects** is expandable/collapsible by clicking the `<<` icon.
+
+Selecting the checkbox(es) icon will enable users to bulk archive multiple **Objects** at one time.
 
 Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
@@ -44,7 +46,7 @@ Toggling `Descendants` will enable or disable all parameters for both the curren
 This option is enabled by default.
 
 The Search field is contained within the tree view menu, and will be hidden when collapsed.
-The Search field will return results in realtime, only presenting Objects containing the term being searched.
+The Search field will return results in realtime, only presenting **Objects** containing the term being searched.
 
 ![BimlFlex Objects - Search Field](images/bfx-object-search-field.png "BimlFlex Objects - Search Field")
 
