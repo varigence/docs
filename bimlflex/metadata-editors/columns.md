@@ -17,42 +17,28 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 ![BimlFlex Columns Editor](images/bfx-columns-editor.png "BimlFlex Columns Editor")
 
 **Columns** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
-The number of **Columns** within an **Object** will be displayed next to the Object names in parentheses.
+The total number of **Columns** within a **Project** will be displayed next to the **Project** name in parentheses.
+The total number of **Columns** within an individual **Object** will similarly be displayed next to the **Object** name.
 
-Selecting an **Object** with a single **Column** will immediately navigate the user to the **Column** edit screen.
+Selecting a **Project** will display a secondary list of all **Columns** within, organized by **Object.**
 
-Selecting an **Object** with multiple **Columns** will display a secondary list of all editable **Columns** within.
-The user may navigate to any **Column** by selecting from the displayed list.
+Selecting an **Object** will display a secondary list of all **Columns** within.
+The user may navigate to any **Column** by selecting it from the displayed list.
 
-<!--
-TO DO: Add Column "LIST VIEW" image
--->
+![BimlFlex Columns Editor - Listview](images/bfx-columns-editor-listview.png "BimlFlex Columns Editor - Listview")
 
 The tree view for **Columns** is expandable/collapsible by clicking the `<<` icon.
 
 Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
-Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
+Clicking this icon will navigate the user directly to the referenced **Project**, **Connection** or **Object**.
 
 Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
 This option is enabled by default.
 
 The Search field is contained within the tree view menu, and will be hidden when collapsed.
-The Search field will return results in realtime, only presenting Parameters containing the term being searched.
+The Search field will return results in realtime, only presenting Columns containing the term being searched.
 
-<!--
-TO DO: ADD SEARCH FIELD FOR COLUMNS 
--->
-
-<!--
-**Columns** within BimlFlex are displayed organized by Connection, by default.
-Selecting a Column will navigate the user to a list of all Columns within that same Object.
-The user can navigate to any Column within that same Object by selecting it from the displayed list.
-
-Any field with the 'Compass' icon will serve as a Global Navigation Transition.
-Clicking this icon will navigate the user directly to the referenced Connection or Object.
-
-![Columns Global Navigation Transition](images/bfx-columns-global-nav.png "Columns Global Navigation Transition")
--->
+![BimlFlex Columns Editor - Search Field](images/bfx-columns-editor-search-field.png "BimlFlex Columns Editor - Search Field")
 
 ## Action Buttons  
 
@@ -111,7 +97,7 @@ Clicking this icon will navigate the user directly to the referenced Connection 
 | Description | The **Column** described in business context. Often referred to as business metadata. |
 | Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the **Column**. |
 
-### Model Overrides Fields 
+### Model Overrides Fields
 
 ![BimlFlex Model Overrides Fields](images/bfx-columns-model-overrides.png "BimlFlex Model Overrides Fields")
 
