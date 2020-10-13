@@ -15,3 +15,5 @@
   href: ssis-server-install.md
 - name: Upgrade Process
   href: upgrade-process.md
+- name: Setup BimlStudio Project
+  href: setup-bimlstudio-project.md

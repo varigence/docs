@@ -1,7 +1,5 @@
 - name: Overview
   href: index.md
-- name: Setup BimlStudio Project
-  href: setup-bimlstudio-project.md
 - name: Generating DDL
   href: generating-ddl.md
 - name: Interactive Build
