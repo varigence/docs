@@ -33,20 +33,27 @@ Optional fields are:
 
 ### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for a Snowflake Linked Service connection. The default value is `AutoResolveIntegrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for a Snowflake Linked Service connection.
+The default value is `AutoResolveIntegrationRuntime`.
+To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings.
+The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 ### Connection String
 
-A connection to a Snowflake linked service requires a connection string. The required properties for the connection string are Server Name, Database Name, User Name, and Password. The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
+A connection to a Snowflake linked service requires a connection string.
+The required properties for the connection string are Server Name, Database Name, User Name, and Password.
+The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
 
-> [!TIP]
+> [!NOTE]
 > It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 ### Additional Connection String Properties
 
-Any additional properties entered here will be included in the Connection String. These properties should be entered the same way you want them to appear in the connection string and separated by a semicolon, e.g. `key=value;secondKey=secondValue`.
+Any additional properties entered here will be included in the Connection String.
+These properties should be entered the same way you want them to appear in the connection string and separated by a semicolon, e.g. `key=value;secondKey=secondValue`.
 
-Values entered in the Additional Connection String Properties textbox will be maintained when changing linked service types. If a required property from one service type does not have a corresponding text box in the newly selected linked service type, it will appear as an additional property.
+Values entered in the Additional Connection String Properties textbox will be maintained when changing linked service types.
+If a required property from one service type does not have a corresponding text box in the newly selected linked service type, it will appear as an additional property.
 
 ## Snowflake Additional Documentation
 

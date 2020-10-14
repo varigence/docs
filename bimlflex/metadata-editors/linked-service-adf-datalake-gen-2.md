@@ -18,7 +18,8 @@ After selecting `Data Lake Gen 2` from the Linked Service Type dropdown, the for
 
 **Common Required Fields**
 
-Most required fields for a Data Lake Gen 2 Linked Service connection depend on the Authentication Method used. There are some fields that are required regardless of Authentication Method.
+Most required fields for a Data Lake Gen 2 Linked Service connection depend on the Authentication Method used.
+There are some fields that are required regardless of Authentication Method.
 
 These common required fields are:
 
@@ -50,7 +51,11 @@ The remaining field requirements are dependent on Authentication Method.
 
 ### Connect via Integration Runtime
 
-Connect via Integration Runtime is required for a Data Lake Gen 2 Linked Service connection. The default value is `AutoResolveIntegrationRuntime`. To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings. When a custom value is saved in the linked service form, it will be added to the custom integration runtimes. The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
+Connect via Integration Runtime is required for a Data Lake Gen 2 Linked Service connection.
+The default value is `AutoResolveIntegrationRuntime`.
+To use a custom runtime, type the name into the editable dropdown or select from the Azure Integration Runtimes saved in BimlFlex settings.
+When a custom value is saved in the linked service form, it will be added to the custom integration runtimes.
+The custom values that appear in this dropdown can be maintained in Settings under Azure - AzureIntegrationRuntime.
 
 ### Authentication Method
 
@@ -68,29 +73,33 @@ If [Managed Identity](#managed-identity) is used, no authentication will be requ
 
 Account Key authorization requires a Storage Account Name and a Storage Account Key or [Azure Key Vault](create-linked-service-connection.md).
 
-> [!TIP]
+> [!NOTE]
 > It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering a Storage Account Key.
 
 ### Service Principal
 
 ![Service Principal](images/bimlflex-ss-app-connections-adf-data-lake-gen-2-service-principal.png "Service Principal")
 
-To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as described in the [Microsoft documentation for Data Lake Gen 2 Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#service-principal-authentication). The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the Data Lake Gen 2 Linked Service form.
+To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as described in the [Microsoft documentation for Data Lake Gen 2 Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#service-principal-authentication).
+The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the Data Lake Gen 2 Linked Service form.
 
-> [!TIP]
+> [!NOTE]
 > It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of a Service Principal Key.
 
 #### Managed Identity
 
 ![Managed Identity](images/bimlflex-ss-app-connections-adf-data-lake-gen-2-managed-identity.png "Managed Identity")
 
-To use Managed Identity for authentication with Data Lake Gen 2, one must be set up in Azure as described in the [Microsoft documentation for Data Lake Gen 2 Managed Identities](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#managed-identity). When using Managed Identity a Service Endpoint is required.
+To use Managed Identity for authentication with Data Lake Gen 2, one must be set up in Azure as described in the [Microsoft documentation for Data Lake Gen 2 Managed Identities](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-blob-storage#managed-identity).
+When using Managed Identity a Service Endpoint is required.
 
 #### Additional Connection String Properties
 
-Any additional properties entered here will be included in the Connection String. These properties should be entered the same way you want them to appear in the connection string and separated by a semicolon, e.g. `key=value;secondKey=secondValue`.
+Any additional properties entered here will be included in the Connection String.
+These properties should be entered the same way you want them to appear in the connection string and separated by a semicolon, e.g. `key=value;secondKey=secondValue`.
 
-Values entered in the Additional Connection String Properties textbox will be maintained when changing linked service types. If a required property from one service type does not have a corresponding text box in the newly selected linked service type, it will appear as an additional property.
+Values entered in the Additional Connection String Properties textbox will be maintained when changing linked service types.
+If a required property from one service type does not have a corresponding text box in the newly selected linked service type, it will appear as an additional property.
 
 ### Azure Data Factory Linked Service Additional Information
 
