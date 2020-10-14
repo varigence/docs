@@ -11,7 +11,7 @@ For a walk-through of creating a BimlFlex solution that targets ADF, review the 
 
 This document and video illustrates how to build and deploy Azure Data Factory ARM template artifacts using PowerShell.
 
-![BimlFlex - Overview Build and Deploy](https://www.youtube.com/watch?v=vV236jsq8Cg?rel=0&autoplay=0 "BimlFlex - Overview Build and Deploy")
+![BimlFlex - Overview Build and Deploy](https://www.youtube.com/watch?v=McTmpAzJW6c&ab_channel=BimlScript "BimlFlex - Overview Build and Deploy")
 
 For information on how to deploy through the Azure Portal: [Azure Portal Deployment Guide](xref:using-azure-portal)
 
@@ -41,6 +41,14 @@ Example parameters, including a Snowflake Azure Function Bridge
 | BimlFlexAzureFunctionBridgeSettings.value.StorageAccountName | AzureFunctionBridgeName | [VALUE]sa |
 | BimlFlexAzureFunctionBridgeSettings.value.WebFarmName | AzureFunctionBridgeName | [VALUE]-WF |
 | factoryName.value | AzureDataFactoryName | |
+
+## ARM Template Size Limitations
+
+Microsoft has provided a detailed account of ARM Template best practices [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-best-practices).
+
+The most significant ARM template limitation in reference to BimlFlex is the overall size of the final state template being less than 4MB.
+
+Additional documentation regarding BimlFlex's handling of ARM Template size restrictions and the generation of a linked template folder for individual data sets can be referenced [here](xref:bfx-arm-templates).
 
 **Example: SQL ADF arm_template_parameters.json**
 
