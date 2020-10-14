@@ -12,11 +12,8 @@ The **Settings Editor** is used to manage metadata and framework settings in the
 > [!TIP]
 > The [Setting Reference Document](../reference-documentation/metadata-settings.md) serves as a complete guide for all settings available in the BimlFlex App.
 
-<!--
-TO DO: Update images of BimlFlex Setting Groups once finalized.
--->
 
-![Settings Editor](images/settings-editor.jpg "Settings Editor")
+![Settings Editor](images/settings-editor.png "Settings Editor")
 
 ## Settings Groups
 
@@ -25,9 +22,6 @@ Settings within the BimlFlex app are organized into essential categories, **Sett
 ![Settings Groups](images/settings-group.png "Settings Groups")
 
 Hovering the mouse pointer over individual settings will display tooltips relating to same, along with brief explanation(s) as to how settings will change a project.
-<!--
-TODO: Add image of floating tool tip
--->
 
 ![Floating Tool Tip](images/settings-floating-tool-tip.png "Floating Tool Tips")
 

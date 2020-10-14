@@ -71,9 +71,6 @@ Configuration Overrides are saved in BimlFlex as **Attributes**. The [Attributes
 
 To add a **Configuration Override**, click `+ Add` on the Overrides tab.
 
-![BimlFlex Add Configuration Override]
-
-
 ![BimlFlex Add Configuration Override](images/bfx-add-attribute-override-plus-button.png "BimlFlex Add Configuration Override")
 
 <!--

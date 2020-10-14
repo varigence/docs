@@ -53,7 +53,6 @@ Additional documentation regarding the updated delete functionality: [BimlFlex D
 The following setting has been added to control the Data Vault Accelerator:
 
 * DvAppendLinkSatelliteRecordSource
-(todo: more DVA settings?)
 
 The following settings have been added to the SSDT group:
 
