@@ -112,7 +112,7 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 | Object Name | The name of the **Object**.  On an [Object Type] that does not recognize the schema concept this still used in the generation of naming patterns depending on what **Settings** are being used.|
 | Short Name | The name to be used when performing ETL/ELT in an integration environment that does not support the full string of the concatenated name. |
 | Object Type | The type of **Object** that is either being extracted or created, depending on the *Integration Stage* of the **Connection** associated with the **Object**.  Must be a valid [Object Type](#object-types) (filtered for appropriate *Integration Stage*). |
-| Business Entity | xxx | 
+| Business Entity | The Business Model Entity that this entity should be modeled to and be accelerated to. |
 | Description | The **Object** described in business context. Often referred to as business metadata. |
 | Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the **Object** |
 | Exclude From Build | This will flag the **Object** to not generate an output artifact and be removed from the build process. |
