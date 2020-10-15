@@ -73,3 +73,6 @@ For installations and configurations using SSIS with package deployment methods 
 The database must be backed up as required in case of database server failures or for rollback requirements
 
 More information: [BimlCatalog database](xref:bimlcatalog-database)
+
+### Azure SQL Database
+

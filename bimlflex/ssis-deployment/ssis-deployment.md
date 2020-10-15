@@ -84,8 +84,11 @@ The project is configured to match the target destination
 
 SSIS 2016 is used in the demo. The Project deployment checkbox is checked so connection strings for the whole project can be maintained through SSIS Catalog environments.
 
-![BimlStudio Project Properties](images/bimlstudio-menu-project-configuration.png "BimlStudio Project Properties")
+![BimlStudio Project Properties](images/bs-menu-project-configuration.png "BimlStudio Project Properties")
 
+<!--
+![BimlStudio Project Properties](images/bimlstudio-menu-project-configuration.png "BimlStudio Project Properties")
+-->
 > [!TIP]
 > For additional details on configuring a BimlStudio project refer to the below guides:  
 > BimlFlex Docs: [BimlFlex - Setup BimlStudio Project](xref:bimlflex-setup-bimlstudio-project)  
@@ -113,8 +116,11 @@ Import the metadata for all tables in scope of the `SalesLT` schema from the fro
 
 Create all DW databases and tables from the BimlStudio generated scripts output.
 
-![Create Table Scripts](images/bimlstudio-context-menu-create-table-scripts.png "Create Table Scripts")
+![BimlStudio - Create Table Scripts](images/bs-context-menu-create-table-scripts.png "BimlStudio - Create Table Scripts")
 
+<!--
+![Create Table Scripts](images/bimlstudio-context-menu-create-table-scripts.png "Create Table Scripts")
+-->
 > [!TIP]
 > For additional details on generating the DDL refer to the below guide:  
 > BimlFlex Docs: [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)  
@@ -157,7 +163,10 @@ Extension Point files should be named using a consistent naming convention. Thes
 
 Build command buttons
 
+![BimlStudio - Build Project](images/bs-menu-build.png "BimlStudio - Build Project")
+<!--
 ![Build Project](images/bimlstudio-menu-build.png "Build Project")
+-->
 
 > [!TIP]
 > For additional details on the different build methods refer to the below guides:  
