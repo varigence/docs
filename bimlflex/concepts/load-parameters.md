@@ -23,9 +23,9 @@ Here is an example of a parameter being stored in the `BimlCatalog` database in 
 | ---------- | ------------------------------------- | ------------ | ------------- | ----------- |
 | AW_SRC     | AW_SRC.Sales.SalesPerson.ModifiedDate | LastLoadDate | 20/09/2015    | 109         |
 
-## Parameters in BimlFlex Excel
+## Parameters in BimlFlex
 
-When a parameter is added to an object in BimlFlex Excel Add-in, the metadata will be managed the BimlFlex framework and used to generate all the required components to track and update the value defined. Below demonstrates how a data parameter has been incorporated into a source to target loading package. Note that this load starts and ends with sequence containers that are specifically for managing this new parameter.
+When a parameter is added to an object in BimlFlex, the metadata will be managed within BimlFlex and used to generate all the required components to track and update the value defined. Below demonstrates how a data parameter has been incorporated into a source to target loading package. Note that this load starts and ends with sequence containers that are specifically for managing this new parameter.
 
 ![Parameters ETL Pattern](../user-guide/images/bimlflex-ss-v5-parameters-etl-pattern.png "Parameters ETL Pattern")
 
@@ -36,6 +36,22 @@ The process starts before the main container. The first control flow task looks 
 The parameter value will be injected in to the source query in the normal data flow as a `WHERE` clause using the specified logic from the metadata.
 
 After the load the Set Parameters tasks will get the new value for the parameter and update the `[BimlCatalog].[ssis].[ConfigVariable]` table.
+
+## Creating Parameters in BimlFlex 
+
+Parameters can be added in BimlFlex through the **Parameters** Editor, accessible from the BimlFlex main menu.
+
+![BimlFlex - Parameters Editor](images/bfx-parameters-editor.png "BmilFlex - Parameters Editor")
+
+**Parameters** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
+The tree view is organized by **Connections** > **Objects** > **Columns** > **Parameters**.  
+The total number of **Parameters** will be displayed in parenthesis next to the **Connection** in the menu.  
+The individual number of **Parameters** assigned to each **Object** or **Column** will also be displayed in parenthesis.
+
+To add a new parameters, click the `+` button in the tree view menu.  
+On this screen, toplevel configurations to **Connection**, **Object**, **Column** may be selected from dropdown menus.
+Additional settings relating to the same parameter are maintained below, on the same page.
+Fields highlighted in red are required to save the Parameter.
 
 ## Defining and overriding the parameter behavior
 
