@@ -12,21 +12,29 @@ BimlFlex **Projects** group and help to define an ETL/ELT workload. They specify
 The following sections describe the UI elements of the **Projects Editor** and how they are used to author and manage BimlFlex **Projects**.
 
 **Projects Editor**  
+
+![BimlFlex Project Editor](images/bfx-projects-editor-overview.png "BimlFlex Project Editor")
+
+<!--
 <img
     src="images/bimlflex-app-editor-projects.png"
     title="Projects Editor"
 />
-
+-->
 ## Details Tab
 
 The **Details Tab** focuses on general **Project** information and configuration.  This tab is used to define and create the **Project** itself.
 
 ### Details Tab - Action Buttons
 
+![BimlFlex Projects - Action Buttons](images/bfx-projects-action-buttons.png "BimlFlex Projects - Action Buttons")
+
+<!--
 <img
     src="images/bimlflex-app-editor-projects-actions.png"
     title="Projects Editor Actions"
 />
+-->
 
 |Icon|Action|Description|
 |-|-|-|
