@@ -94,9 +94,9 @@ The Accelerator shows the source and preview side-by-side with options to collap
 
 | Icon | Description |
 | ---- | ----------- |
-| Columns | Toggle to show all columns on the source or preview panes |
-| Data Types | Toggle to show all data types in the source or preview panes |
-| Backbone | Toggle to show only Hubs and Links (the backbone) or Hubs, Links, and Satellites. |
+| <img src="images/bimlflex-app-action-switch.png" /> | Toggle to show all columns on the source or preview panes |
+| <img src="images/bimlflex-app-action-switch.png" /> |Toggle to show all data types in the source or preview panes |
+| <img src="images/bimlflex-app-action-switch.png" /> | Toggle to show only Hubs and Links (the backbone) or Hubs, Links, and Satellites. |
 | <div class="icon-col m-5"><img src="images/svg-icons/diagram-view.svg"/></div> | Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
 | <div class="icon-col m-5"><img src="images/svg-icons/print.svg"/></div> | Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg"/></div> | Refresh the whole layout or you can change the layout as you like by dragging tables. |

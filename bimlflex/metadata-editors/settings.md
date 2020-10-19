@@ -51,12 +51,16 @@ Settings that contain required values will be outlined in red as indicated below
 
 The buttons in the command bar allow actions to be taken on the setting that is active in the editor.
 
+![BimlFlex App - Settings - Command Bar](images/bfx-settings-command-bar.png "BimlFlex App - Settings - Command Bar")
+
+<!--
 ![BimlFlex App - Settings - Command Bar](images/bimlflex-app-settings-command-bar.64566.png "BimlFlex App - Settings - Command Bar")
+-->
 
 | Icon                                                                       | Action  | Description                                                                                                                        |
 | -------------------------------------------------------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>    | Save    | This will save any changes displayed in the Settings editor. The **Save** button is only enabled if there are changes in the form. |
-| <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will refresh the currently displayed **Setting**. Any pending changes will be removed.                                        |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 
 ## Setting Overrides
 

@@ -35,11 +35,11 @@ Selecting an **Object** with a single table will immediately navigate the user t
 
 ![BimlFlex Objects Editor - List](images/bfx-object-editor-listview.png "BimlFlex Objects Editor - List")
 
-The tree view for **Objects** is expandable/collapsible by clicking the `<<` icon.
+The tree view for **Objects** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
 Selecting the checkbox(es) icon will enable users to bulk archive multiple **Objects** at one time.
 
-Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
+Any instance of the <img class="icon-inline" src="images/svg-icons/navigate.svg"/>  icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
 
 Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
@@ -67,7 +67,7 @@ The **Details Tab** focuses on general **Object** information and configuration.
 |Icon|Action|Description|
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will save the current set of staged changes.  The **Save** button is will only enable if the **Object** has changes staged and there are no major validation issues with the current **Object** properties. |
-| Discard | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Object Dialog](#archive-object-dialog-box). |
 | <div class="icon-col m-5"><img src="images/svg-icons/clone-objects.svg" /></div> | Clone | This will bring up [Clone Table Dialog](#clone-table-dialog-box) that is used primarily in the creation and loading of a Data Mart. |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Object**.  A [Duplicate Table Dialog](#duplicate-table-dialog-box) will appear asking for a *Target Table Name* and a new **Object** will be created using all of the selected **Object**'s current properties. |

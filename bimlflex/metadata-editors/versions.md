@@ -13,19 +13,23 @@ The **Versions Editor** is used to manage versions of the Metadata and BimlFlex 
 ![BimlFlex App - Versions](images/bimlflex-app-versions.64566.png "BimlFlex App - Versions")
 -->
 
-![BimlFlex Versions](images/bfx-versions-overview.png "BimlFlex Versions")
+![BimlFlex Versions Editor - Overview](images/bfx-versions-editor-overview.png "BimlFlex Versions Editor - Overview")
 
 ## Command Bar Buttons
 
 The buttons in the command bar allow actions to be taken on the selected **Version**.
 
+<!--
 ![BimlFlex App - Versions - Command Bar](images/bimlflex-app-versions-command-bar.64566.png "BimlFlex App - Versions - Command Bar")
+-->
+
+![BimlFlex Versions - Command Bar Buttons](images/bfx-versions-command-bar.png "BimlFlex Versions - Command Bar Buttons")
 
 |Icon|Action|Description|
 |-|-|-|
 |<div class="icon-col m-5" ><img src="images/svg-icons/save.svg" /></div>|Save|This will save any changes displayed in the Versions form.  The **Save** button is only enabled if there are changes in the form.|
-|<div class="icon-col m-5" ><img src="images/svg-icons/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected **Version**.  A prompt will appear where the source and target **Version** information can be entered. The new **Version** will be created with all of the same values as the source **Version**. **Duplicate** can not be used if there are unsaved changes in the form.|
-|<div class="icon-col m-5" ><img src="images/svg-icons/refresh.svg" /></div>|Refresh|This will trigger a refresh of the metadata for the selected **Version**. The [Refresh] button is only enabled if there are unsaved changes in the form. Any unsaved changes will be lost when the form is refreshed. |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Version**.  A Duplicate Parameter Dialog will appear asking for a *Version Name* and a new **Version** will be created using all of the selected **Version**'s current properties. |
 |<div class="icon-col m-5" ><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Version**. This version will only be visible if *Show Deleted* is enabled in BimlFlex settings.|
 
 ## Versions Form

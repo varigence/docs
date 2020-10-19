@@ -27,9 +27,9 @@ The user may navigate to any **Column** by selecting it from the displayed list.
 
 ![BimlFlex Columns Editor - Listview](images/bfx-columns-editor-listview.png "BimlFlex Columns Editor - Listview")
 
-The tree view for **Columns** is expandable/collapsible by clicking the `<<` icon.
+The tree view for **Columns** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
-Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
+Any instance of the <img class="icon-inline" src="images/svg-icons/navigate.svg"/> icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Project**, **Connection** or **Object**.
 
 Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
@@ -53,7 +53,7 @@ The Search field will return results in real-time, only presenting Columns conta
 | Icon | Action | Description |
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button will only enabled if there are unsaved changes in the form and no major validation errors. |
-| Discard | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Column**. This will result in the physical removal of the selected record from the metadata database. The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** generates an [Archive Column Dialog](#archive-column-dialog).|
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Column**. Clicking the **Duplicate** button will cause a [Duplicate Column Dialog](#duplicate-column-dialog) to appear. The new **Column** will be created using all of the selected **Column**'s current properties. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Column** from processing and validation. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |

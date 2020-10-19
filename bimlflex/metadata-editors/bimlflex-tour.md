@@ -101,11 +101,11 @@ The amount and availability of the the columns is determined by the editor being
     title="Entity List - Multi Column"
 />
 -->
-| Icon                                                                        | Action          | Description                                                                                             |
-| --------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------- |  |
-| <div class="icon-col m-5"><img src="images/svg-icons/sort-desc.svg"/></div> | Sort Descending | When shown the column is currently sorting in descending order.  Click to switch to ascending order.    |
-| <div class="icon-col m-5"><img src="images/svg-icons/sort-asc.svg"/></div>  | Sort Ascending  | When shown the column is currently sorting in ascending order.  Click to switch to descending order.    |
-| Hamburger                                                                   | Filter          | Search current list for specific name or label. Can add boolean operators to assist in filter function. |
+| Icon | Action | Description |
+|-|-|-|
+| <div class="icon-col m-5"><img src="images/svg-icons/sort-desc.svg"/></div> | Sort Descending | When shown the column is currently sorting in descending order.  Click to switch to ascending order. |
+| <div class="icon-col m-5"><img src="images/svg-icons/sort-asc.svg"/></div> | Sort Ascending | When shown the column is currently sorting in ascending order.  Click to switch to descending order. |
+| <div class="icon-col m-5"><img src="images/svg-icons/hamburger.svg"/></div> | Filter | Search current list for specific name or label. Can add boolean operators to assist in filter function. |
 
 > [!NOTE]
 > All of the columns support the ability for filters but the button is hidden by default.
@@ -216,7 +216,7 @@ Values can be edited by double-clicking the desired property.
 
 BimlFlex features the ability to navigate directly to another entity whenever it is referenced from a calling table or form.
 Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor.
-Click the 'Compass' icon for global navigation to any entity within the project.
+Click the <img class="icon-inline" src="images/svg-icons/navigate.svg"/> icon for global navigation to any entity within the project.
 Every navigable entity within the BimlFlex application will have such an icon.
 
 BimlFlex features a checkbox UI system for any list of items being viewed.

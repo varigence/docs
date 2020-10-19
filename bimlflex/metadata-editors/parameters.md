@@ -39,11 +39,11 @@ Selecting a **Connection** with a single **Parameter** will immediately navigate
 
 ![BimlFlex Parameters - Listview](images/bfx-parameters-listview.png "BimlFlex Parmeters - Listview")
 
-The tree view for **Parameters** is expandable/collapsible by clicking the `<<` icon.
+The tree view for **Parameters** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
 Selecting the checkbox(es) icon will enable users to bulk archive multiple **Parameters** at one time.
 
-Any instance of the `'Compass'` icon will serve as a Global Navigation Transition.
+Any instance of the <img class="icon-inline" src="images/svg-icons/navigate.svg"/>  icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
 
 Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
@@ -68,7 +68,7 @@ The Search field will return results in realtime, only presenting Parameters con
 |Icon|Action|Description|
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will save the currently set of staged changes.  The **Save** button is will only enable if the **Parameter** has changes staged and there are no major validation issues with the current **Parameter** properties.|
-| Discard | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 |<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Parameter**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Parameter Dialog](#archive-parameter-dialog-box). |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Parameter**.  A [Duplicate Parameter Dialog](#duplicate-parameter-dialog-box) will appear asking for a *Parameter Name* and a new **Parameter** will be created using all of the selected **Parameter**'s current properties. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Parameter**.  This will remove the **Parameter** and all associated entities from processing and validation. |

@@ -59,12 +59,13 @@ The overview is simply a place for teams to add all of the individual parts of t
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| Save | Save | Save any staged changes to the model |
-| Discard | Discard | Revert any unsaved changes to the model |
-| Archive | Archive | Remove any selected entity from the model entirely. This option cannot be undone. |
-| Details | Details | Toggle to show or hide any details from the Entity cards, including any entered Business Names, Short Names, Descriptions, or Tags |
-| Attributes | Attributes | Toggle to show or hide any attributes added to any Entity cards. There is no limit to the attributes that can be added to the Entities.
-| Known As | Known As | Toggle to show or hide any "Known As" elements to any Entity cards. Any number of entities may be dragged into another. |
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Save any staged changes to the model |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Revert any unsaved changes to the model |
+| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | Remove any selected entity from the model entirely. This option cannot be undone. |
+| <img src="images/bimlflex-app-action-switch.png" /> | Details | Toggle to show or hide any details from the Entity cards, including any entered Business Names, Short Names, Descriptions, or Tags |
+| <img src="images/bimlflex-app-action-switch.png" /> | Attributes | Toggle to show or hide any attributes added to any Entity cards. There is no limit to the attributes that can be added to the Entities.
+| <img src="images/bimlflex-app-action-switch.png" /> | Known As | Toggle to show or hide any "Known As" elements to any Entity cards. Any number of entities may be dragged into another. |
+| <img src="images/bimlflex-app-action-switch.png" /> | Compact | Toggle to show smaller cards with less visible details to show more entity cards on screen |
 
 ### Attributes and "Known As" Fields
 

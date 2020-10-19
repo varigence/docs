@@ -44,7 +44,7 @@ The **Details Tab** focuses on general **Connection** information and configurat
 | Icon | Action | Description |
 |--- |--- |--- |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg"/></div> | Save | This will save the currently set of staged changes.  The **Save** button is will only enable if the **Connection** has changes staged and there are no major validation issues with the current **Connection** properties.  `Ctrl+S` shortcut available. |
-| Discard | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 |<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Connection**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Connection Dialog](#archive-connection-dialog-box). |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Connection**.  A [Duplicate Connection Dialog](#duplicate-connection-dialog-box) will appear asking for a *Connection Name* and a new **Connection** will be created using all of the selected **Connection**'s current properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/import-metadata.svg"/></div> | Import Metadata | Import Metadata from Source Database - [More info](../concepts/importing-metadata.md). |
