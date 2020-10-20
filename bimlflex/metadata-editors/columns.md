@@ -20,9 +20,7 @@ The **Columns** Editor is used to manage how BimlFlex interacts with all **Colum
 The total number of **Columns** within a **Project** will be displayed next to the **Project** name in parentheses.
 The total number of **Columns** within an individual **Object** will similarly be displayed next to the **Object** name.
 
-Selecting a **Project** will display a secondary list of all **Columns** within, organized by **Object.**
-
-Selecting an **Object** will display a secondary list of all **Columns** within.
+Selecting a **Project** will display a secondary list of all **Columns** within, organized by **Object.**  
 The user may navigate to any **Column** by selecting it from the displayed list.
 
 ![BimlFlex Columns Editor - Listview](images/bfx-columns-editor-listview.png "BimlFlex Columns Editor - Listview")

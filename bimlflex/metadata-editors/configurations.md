@@ -33,7 +33,7 @@ The action buttons modify the **Configuration** that is active in the editor.
 
 | Icon                                                                                               | Action  | Description                                                                                                                                     |
 | -------------------------------------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div style="width:30px;height:30px;background:white"><img src="images/svg-icons/save.svg" /></div> | Save    | This will save any changes displayed in the **Configurations** editor.  The **Save** button is only enabled if there are changes in the editor. |
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will save any changes displayed in the **Configurations** editor.  The **Save** button is only enabled if there are changes in the editor. |
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | **Discard** any unsaved changes and revert to last saved form.                                                                                  |
 
 <!--

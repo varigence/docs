@@ -65,13 +65,13 @@ As noted previously, available actions can vary from editor to editor but the ab
     title="BimlFlex Editor Action Buttons"
 />
 
-| Icon                                                                           | Action        | Description                                                                                                                                                                                                                                                                           |
-| ------------------------------------------------------------------------------ | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
-| <div class="icon-col m-5"><img src="images/svg-icons/add.svg"/></div>          | Add           | **Add** will create a new entity.                                                                                                                                                                                                                                                     |
-| <div class="icon-col m-5"><img src="images/svg-icons/validate.svg" /></div>    | Validate      | This will trigger validation to be run.  It will display <img class="icon-inline" src="images/svg-icons/success.svg" /> if all validation passes, or <img class="icon-inline" src="images/svg-icons/error.svg" /> if there errors and add those errors to the global validation list. |
-| <div class="icon-col m-5"><img src="images/svg-icons/filter-clear.svg"/></div> | Clear Filters | *Clear Filters* will remove any filter context that was previously entered of passed through.  This is handy when you want to manage **Settings** and **Parameters** across multiple **Projects**.                                                                                    |
-| <div class="icon-col m-5"><img src="images/svg-icons/expanded.svg"/></div>     | Collapse      | *Collapse* will cycle through the the various supported modes the Entity List can have.  Options are Full Panel, Split Panels, and Hidden.                                                                                                                                            |
-| <div class="icon-col m-5"><img src="images/svg-icons/collapsed.svg"/></div>    | Expand        | *Expand* will cycle through the the various supported modes the Entity List can have.  Options are Hidden, Split Panels, and Full Panel.                                                                                                                                              |
+| Icon | Action | Description |
+|-|-|-| 
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg"/></div> | Add | **Add** will create a new entity. |
+| <div class="icon-col m-5"><img src="images/svg-icons/validate.svg" /></div> | Validate | This will trigger validation to be run.  It will display <img class="icon-inline" src="images/svg-icons/success.svg" /> if all validation passes, or <img class="icon-inline" src="images/svg-icons/error.svg" /> if there errors and add those errors to the global validation list. |
+| <div class="icon-col m-5"><img src="images/svg-icons/filter-clear.svg"/></div> | Clear Filters | *Clear Filters* will remove any filter context that was previously entered of passed through.  This is handy when you want to manage **Settings** and **Parameters** across multiple **Projects**. |
+| <div class="icon-col m-5"><img src="images/svg-icons/expanded.svg"/></div> | Collapse | *Collapse* will cycle through the the various supported modes the Entity List can have.  Options are Full Panel, Split Panels, and Hidden. |
+| <div class="icon-col m-5"><img src="images/svg-icons/collapsed.svg"/></div> | Expand | *Expand* will cycle through the the various supported modes the Entity List can have.  Options are Hidden, Split Panels, and Full Panel. |
 
 ## Entity List  
 

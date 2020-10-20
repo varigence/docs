@@ -14,15 +14,27 @@ summary: Documentation on enabling linked service connections, connections for c
 
 In the **Connections Editor**, click  Add in the top left of the screen or select an existing connection to edit.
 
+![BimlFlex Connections Editor Menu](images/bfx-connections-module-list.png "BimlFlex Connections Editor Menu")
+
+<!--
 ![Connections Editor Menu][connections-module-list]
+-->
 
 In the **Details tab** of the Connections Editor, select the *Integration Stage*, *Connection Type*, and *System Type* for your connection. If the configuration provided is compatible with a linked service then a *Cloud* setting will appear in the action bar.
 
+![BimlFlex Connections Details Tab](images/bfx-connections-details-tab.png "BimlFlex Connections Details Tab")
+
+<!--
 ![Connection Details Tab][connections-details-tab]
+-->
 
 After toggling the *Cloud* setting, a tab for Linked Services will appear at the bottom of the form and any available linked services will appear in the *Linked Service Types dropdown*. Select a *Linked Service Type* to configure it.
 
+![BimlFlex Linked Services Tab](images/bfx-connections-linked-service-tab.png "BimlFlex Linked Services Tab")
+
+<!--
 ![Linked Service Dropdown][connections-linked-service-dropdown]
+-->
 
 ## Configuring the Linked Service Connection
 

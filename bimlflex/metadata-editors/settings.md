@@ -45,7 +45,7 @@ When applicable, settings that involve editing SQL code will appear in a window 
 
 Settings that are "Yes or No" selections will be presented with a checkbox UI to indicate their setting.
 
-Settings that contain required values will be outlined in red as indicated below.
+Settings that contain required values will be outlined in red.
 
 ## Command Bar Buttons
 

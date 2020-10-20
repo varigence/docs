@@ -11,18 +11,26 @@ BimlFlex **Data Type Mappings** provide the ability to map Data Types from a sou
 
 The following sections describe the UI elements of the Data Type Mappings Editor and how they are used to author and manage BimlFlex **Data Type Mappings**.
 
+![BimlFlex Data Type Mappings Editor - Overview](images/bfx-data-type-mappings-overview.png "BimlFlex Data Type Mappings Editor - Overview")
+
+<!--
 **Data Type Mappings Editor**  
 <img src="images/bimlflex-app-data-type-mappings.png" style="border: 1px solid #CCC;" title="Data Type Mappings Editor" />
+-->
 
 ## Action Buttons
 
+![BimlFlex Data Type Mappings Action Buttons](images/bfx-data-type-mappings-action-bar.png "BimlFlex Data Type Mappings Action Buttons")
+
+<!--
 <br/>
 <img src="images/bimlflex-app-data-type-mappings-actions.png" style="border: 1px solid #CCC;" title="AData Type Mapping Editor Action Buttons" />
+-->
 
 |Icon|Action|Description|
 |-|-|-|
 |<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|<span class="nowrap-col m-5">Save</span>|This will save the current set of staged changes.  The **Save** button is only enabled if the **Data Type Mapping** has changes staged and there are no major validation issues with the current **Data Type Mapping** properties.|
-|<div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div>|<span class="nowrap-col m-5">Refresh</span>|This will trigger a refresh of the metadata for the selected **Data Type Mapping**.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 |<div class="icon-col m-5"><img src="images/svg-icons/datatype-mappings.svg" /></div>|<span class="nowrap-col m-5">Apply Data Type Mappings</span>|Brings up the [Apply Data Type Mappings Dialog](#apply-data-type-mappings-dialog-box) to apply all **Data Type Mappings** to a specified `Record Source`.  Note that this is the complete set of **Data Type Mappings** and not just the record that was previously selected.|
 |<div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div>|<span class="nowrap-col m-5">Deleted</span>|This will soft delete the currently selected **Data Type Mapping**.  This will remove the **Data Type Mapping** from all processing and it will be excluded from all validation.|
 
