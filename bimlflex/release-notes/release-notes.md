@@ -48,7 +48,7 @@ The Accelerator and Data Vault processes have several new optional configuration
 * Toggle setting added to display backbone (Hubs and Links only) for accelerated models.
 * Toggle setting added to display datatypes for columns for both source models and accelerated models.
 
-Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection).
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 
 The following setting has been added to control the Data Vault Accelerator:
 
@@ -119,7 +119,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
 * TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts.
 
-Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection).
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 
 ## Business Modeling
 
