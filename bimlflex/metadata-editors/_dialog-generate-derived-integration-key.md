@@ -8,6 +8,6 @@ The Generate Derived Integration Key dialog will allow you to quickly generate a
 
 | Option             | Description |
 | ------------------ | ----------- |
-| Add Record Source  | This will prefix the `@@rs` to the *Column Expression*.  `@@rs` will generate the value currently assigned to *Record Source* on the associated **Connection** |
-| Is Integration Key | This will flag the generated **Column** to become the *Integration Key* for the associated **Object**.  Once selected it will automatically update *Column Ordinal* to "0" and also *Is Primary Key* to `true` |
-| Is Primary Key     | This will flag the generated **Column** as a Primary Key for the associated **Object** |
+| Add Record Source  | This will prefix the `@@rs` to the *Column Expression*.  `@@rs` will generate the value currently assigned to *Record Source* on the associated **Connection**. |
+| Is Integration Key | This will flag the generated **Column** to become the *Integration Key* for the associated **Object**.  Once selected it will automatically update *Column Ordinal* to "0" and also *Is Primary Key* to `true`. |
+| Is Primary Key     | This will flag the generated **Column** as a Primary Key for the associated **Object**. |

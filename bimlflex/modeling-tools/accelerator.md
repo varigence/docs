@@ -60,7 +60,7 @@ Based on the source metadata and the source database, the source model can be us
 * Is source agnostic
 * Is aligned with the business process
 * Is based on Core Business Concepts
-* Describes events and transactions through the relations between the Core Business Concepts.
+* Describes events and transactions through the relations between the Core Business Concepts
 
 The Accelerator will use the metadata in the source for the project to derive the potential Hubs, Links and Satellites. The derived Data Vault model is available to preview and refine through editing the metadata and updating the preview.
 
@@ -72,12 +72,12 @@ Once the Accelerator preview matches the model expectations the metadata can be 
 
 The following narrative will guide us through the Accelerator process end to end. It is part of the overall BimlFlex workflow described earlier.
 
-1. Run the metadata import for the source system if not done already. This import identifies source tables as a base for either Hubs, Links or Satellites
-1. Open the Accelerator, specify the record source and select objects to accelerate
-1. Preview the Accelerated Schema
-1. Review and tweak the metadata
-1. Publish the preview to the metadata repository by selecting the target Connection and Project
-1. Build the database artifacts and SSIS artifacts in BimlStudio from the newly published Data Vault metadata
+1. Run the metadata import for the source system if not done already. This import identifies source tables as a base for either Hubs, Links or Satellites.
+1. Open the Accelerator, specify the record source and select objects to accelerate.
+1. Preview the Accelerated Schema.
+1. Review and tweak the metadata.
+1. Publish the preview to the metadata repository by selecting the target Connection and Project.
+1. Build the database artifacts and SSIS artifacts in BimlStudio from the newly published Data Vault metadata.
 
 ### The Accelerator User Interface
 
@@ -94,8 +94,8 @@ The Accelerator shows the source and preview side-by-side with options to collap
 
 | Icon | Description |
 | ---- | ----------- |
-| <img src="images/bimlflex-app-action-switch.png" /> | Toggle to show all columns on the source or preview panes |
-| <img src="images/bimlflex-app-action-switch.png" /> |Toggle to show all data types in the source or preview panes |
+| <img src="images/bimlflex-app-action-switch.png" /> | Toggle to show all columns on the source or preview panes. |
+| <img src="images/bimlflex-app-action-switch.png" /> |Toggle to show all data types in the source or preview panes. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Toggle to show only Hubs and Links (the backbone) or Hubs, Links, and Satellites. |
 | <div class="icon-col m-5"><img src="images/svg-icons/diagram-view.svg"/></div> | Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
 | <div class="icon-col m-5"><img src="images/svg-icons/print.svg"/></div> | Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
@@ -114,17 +114,17 @@ Users may accelerate models for specific objects from the **Objects** Action Bar
 
 ![Accelerate Option from Objects Action Bar](images/objects-accelerate-alternative.png "Accelerate Option from Objects Action Bar")
 
-Selecting either `Accelerate`, `Diagram`, or `Mapping` will navigate the user to either the BimlFlex Accelerator, Schema Diagram, or Column Mapping, respectively. This will enable users to model only the selected object without having to change menus or reselect their desired object. 
+Selecting either `Accelerate`, `Diagram`, or `Mapping` will navigate the user to either the BimlFlex Accelerator, Schema Diagram, or Column Mapping, respectively. This will enable users to model only the selected object without having to change menus or reselect their desired object.
 
 ## Updating the Metadata to Meet Requirements
 
 There are numerous options for manipulating the source metadata so that the Accelerator will produce the desired Data Vault model. Some of the common requirements include:
 
-* Choosing the Integration Key used for the Hubs. By analyzing business processes and the source data it is possible to find EWBK's that aren't the technical source keys
-* Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For information, such as addresses there is normally no need to maintain complex relationships from the source. An address is just an attribute of the entity with a location
-* Adjusting the grain in UOW's so that the correct Hubs are included in Links
-* Separating out data into different Satellites based on rate of change, storage requirements or similar
-* Reviewing Driving Key relationships for Links where there is no one FK relationship in the source
+* Choosing the Integration Key used for the Hubs. By analyzing business processes and the source data it is possible to find EWBK's that aren't the technical source keys.
+* Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For information, such as addresses there is normally no need to maintain complex relationships from the source. An address is just an attribute of the entity with a location.
+* Adjusting the grain in UOW's so that the correct Hubs are included in Links.
+* Separating out data into different Satellites based on rate of change, storage requirements or similar.
+* Reviewing Driving Key relationships for Links where there is no one FK relationship in the source.
 
 ## Analyze The Rules for BimlFlex Accelerator
 
@@ -186,9 +186,9 @@ By clicking the ellipsis a user may see the maximized view which contains the wo
 
 By dragging and dropping certain columns or tables users can affect the metadata in various ways:
 
-1. Change Ordinal - Drag a source column up or down in the same table to change the ordinal.
-1. Add Reference - Drag a source column onto another table to add a reference.
-1. Unit of Work - Drag a Link onto another Link with the same Source Table to create a Unit Of Work.
+1. Change Ordinal - Drag a source column up or down in the same table to change the ordinal
+1. Add Reference - Drag a source column onto another table to add a reference
+1. Unit of Work - Drag a Link onto another Link with the same Source Table to create a Unit Of Work
 
 ### Layout Drag Options
 

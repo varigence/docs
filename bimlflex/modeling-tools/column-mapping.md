@@ -81,10 +81,10 @@ The Column Mapping auto selects all the direct mapped tables when a user makes a
 Examples:
 
 * When a user selects a source table in a SRC => RDV schema it will automatically select the HUB, LINK(s) and SAT(s).
-* To view only SRC => HUBs a user can select the Hubs in the target pane
-* To view only SRC => LNKs a user can select the Links in the target pane
-* To view only SRC => SATs a user can select the Satellites in the target pane
-* To view only SRC => HUBs and LNKs a user can select the Hubs and Links in the target pane
+* To view only SRC => HUBs a user can select the Hubs in the target pane.
+* To view only SRC => LNKs a user can select the Links in the target pane.
+* To view only SRC => SATs a user can select the Satellites in the target pane.
+* To view only SRC => HUBs and LNKs a user can select the Hubs and Links in the target pane.
 
 ![Filtered HUB Tables](images/bimlflex-app-column-mapping-hubs.png "Filtered HUB Tables")
 
@@ -111,18 +111,18 @@ Drag a satellite column onto another satellite which shares the same source to m
 
 The images of the Customer table mapping below illustrate this action:
 
-* Start by splitting out the Name columns into a Name Satellite.
+* Start by splitting out the Name columns into a Name Satellite:
 
 ![Split SAT Start](images/bimlflex-app-column-mapping-split-start.png "Split SAT Start")
 
-* This is what it looks like after splitting out the Name Satellite.
+* This is what it looks like after splitting out the Name Satellite:
 
 ![Split SAT Done](images/bimlflex-app-column-mapping-split-done.png "Split SAT Done")
 
-* Now, drag the Title column into a Name Satellite.
+* Now, drag the Title column into a Name Satellite:
 
 ![Split SAT Drag Title](images/bimlflex-app-column-mapping-split-drag-title.png "Split SAT Drag Title")
 
-* You should end up with the Title column in the Name Satellite.
+* You should end up with the Title column in the Name Satellite:
 
 ![Split SAT Drag Title Done](images/bimlflex-app-column-mapping-split-drag-title-done.png "Split SAT Drag Title Done")

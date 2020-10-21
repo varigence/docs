@@ -114,7 +114,7 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 | Object Type | The type of **Object** that is either being extracted or created, depending on the *Integration Stage* of the **Connection** associated with the **Object**.  Must be a valid [Object Type](#object-types) (filtered for appropriate *Integration Stage*). |
 | Business Entity | The Business Model Entity that this entity should be modeled to and be accelerated to. |
 | Description | The **Object** described in business context. Often referred to as business metadata. |
-| Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the **Object** |
+| Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the **Object**. |
 | Exclude From Build | This will flag the **Object** to not generate an output artifact and be removed from the build process. |
 | Exclude From Validation | This will flag the **Object** to be ignored by the validation engine.  This is used for **Objects** that have metadata generated dynamically in a downstream process and would otherwise cause validation issues.  Note that this is not a fix to a validation error as all the downstream dependencies are still required.  This is only for entities that have late generating assets (Point In Time (PIT) and Bridge (BRG) tables mostly). |
 | Not Persistent | If this is `true` then this **Object** will not have a `Persistent Stage Area` (PSA) table created. |

@@ -65,8 +65,8 @@ Note the new Actions available on the Raw Data Vault Hubs.
 
 By dragging and dropping certain columns or tables users can affect the metadata in various ways:
 
-1. Change Ordinal - Drag a source column up or down in the same table to change the ordinal.
-1. Add Reference - Drag a source column onto another table to add a reference.
+1. Change Ordinal - Drag a source column up or down in the same table to change the ordinal
+1. Add Reference - Drag a source column onto another table to add a reference
 
 ### Layout Drag Options
 
