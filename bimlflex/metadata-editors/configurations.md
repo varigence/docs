@@ -98,10 +98,10 @@ Required fields will be outlined in red.
 | Attribute Field Name     | Configuration Field Name                   | Description                                         |
 | ------------------------ | ------------------------------------------ | --------------------------------------------------- |
 | Attribute Type           |                                            | Defines the scope for when the override is applied. |
-| Connection               |                                            | xxx                                                 |
-| Object                   |                                            | xxx                                                 |
-| Column                   |                                            | xxx                                                 |
-| Overridden Configuration |                                            | xxx                                                 |
+| Connection               |                                            | Defines the **Connection** for which the attribute applies.                                                |
+| Object                   |                                            | Defines the **Object** for which the attribute applies.                                                 |
+| Column                   |                                            | Defines the **Column** for which the attribute applies.                                                 |
+| Overridden Configuration |                                            | Defines the Overridden Configuration to which the attribute applies.                                                 |
 | Attribute Value          | The value to be used as the override.      |
 | Description              | Description of the Configuration Override. |
 

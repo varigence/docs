@@ -69,8 +69,8 @@ These are the different fields required to define the scope of the **Attribute**
 
 ### Attribute Field Definitions
 
-|Field|Description|Validation|
-|-|-|-|
+|Field|Description|
+|-|-|
 | Attribute Type | Defines the scope of the BimlFlex process that the **Attribute** is applied to. Attribute Type is required and must be a valid [Attribute Type](#attribute-types). |
 | Batch | Sets the scope of the **Attribute** application to the selected **Batch**. Required if Attribute Type is Batch. |
 | Column | Sets the scope of the **Attribute** application to the selected **Column**. Required if Attribute Type is Column. |

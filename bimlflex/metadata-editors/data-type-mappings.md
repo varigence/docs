@@ -65,7 +65,7 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 | Description |Optional metadata to provide description.|
 | Column Alias |Maps to a **Columns** *Column Alias* field. Example, `DTM_@@this`|
 | Is Master |If `true` this **Data Type Mapping** may be used as a *Mapped To Data Type*.|
-| Convert Source Type |
+| Convert Source Type | When enabled, applies the *DATA TYPE, LENGTH, PRECISION* and *SCALE* from the Data Type Mappings to the *DATA TYPE, LENGTH, PRECISION* and *SCALE* property of the Columns with the defined data types if the APPLY CONVERT DATA TYPE MAPPING is selected when using the [Apply Data Type Mappings] button. |
 
 [//]: # (TODO: Create or link to a Unified System Types guide. [unified-system-types.md])
 [//]: # (TODO: Outline or link to configuration of a Data Type = 'CustomType'.)
