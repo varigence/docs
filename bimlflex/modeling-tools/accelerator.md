@@ -269,7 +269,7 @@ This column contains the actual table name to be used as after the solution is m
 
 ![Change Model Override Name](images/bimlflex-app-accelerator-actions-modeloverridename.png "Change Model Override Name")
 
-If a source system has entity names like "GL002" and the actual business name is "GeneralLedger" the Accelerator will convert this to "[HUB_GeneralLedger]" and "[SAT_GeneralLedger]"
+If a source system has entity names like "GL002" and the actual business name is "GeneralLedger" the Accelerator will convert this to "HUB_GeneralLedger" and "SAT_GeneralLedger"
 
 ![Change Model Override Name Result](images/bimlflex-app-accelerator-actions-modeloverridename-result.png "Change Model Override Name Result")
 
@@ -279,9 +279,9 @@ The image above shows the previous Unit Of Work example with "SalesOrderHeader" 
 
 This column contains the short name to be used for Links and Link Satellites after the solution is modelled.
 
-A Link between "GeneralLedger" and "ChartOfAccounts" will use the default name "[LNK_GeneralLedger_ChartOfAccounts]".
+A Link between "GeneralLedger" and "ChartOfAccounts" will use the default name "LNK_GeneralLedger_ChartOfAccounts".
 
-Setting ModelOverrideShortName to "GL_COA" will generate the name "[LNK_GL_COA]" providing easy naming flexibility through metadata when modeling more complex relationships.
+Setting ModelOverrideShortName to "GL_COA" will generate the name "LNK_GL_COA" providing easy naming flexibility through metadata when modeling more complex relationships.
 
 #### ModelObjectType
 
@@ -297,7 +297,7 @@ This is used to define the business attribute name.
 
 While the same column names are used in source to staging to persistent staging, it is usually advisable to use actual business process aligned names in the Data Vault.
 
-If a source system has column names like "GL002CD123" and the actual business name is "GeneralLedgerCode" the Accelerator will convert this to "[GeneralLedgerCode]"
+If a source system has column names like "GL002CD123" and the actual business name is "GeneralLedgerCode" the Accelerator will convert this to "GeneralLedgerCode"
 
 ![Change Model Override Name](images/bimlflex-app-accelerator-actions-col-modeloverridename.png "Change Model Override Name")
 
