@@ -12,7 +12,7 @@ Align these settings with the organization's best practices and environmental re
 
 <img class="icon-inline" src="images/svg-icons/configurations.svg" /> **Configurations** can be found under Administration in the application menu.
 
-> [!NOTE]
+> [!TIP]
 > The [Configurations Reference Document](../reference-documentation/metadata-configurations.md) serves as a complete guide for all configurations available in the BimlFlex App.
 
 <!--

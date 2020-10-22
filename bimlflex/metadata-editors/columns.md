@@ -118,7 +118,7 @@ The Search field will return results in real-time, only presenting Columns conta
 | ADF Dataflow Expression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column. |
 | Derived | Defines if the value in this **Column** is derived during the ETL process. This is generally set in conjunction with the *SSIS Dataflow Expression* field. |
 | Default Value | The default value for the **Column**. Uses Transact-SQL constant expression syntax. |
-| Display Folder | xxx |
+| Display Folder | *Placeholder for future development* |
 | Solve Order | Used when defining SSIS Dataflow Expressions that need to be parsed in a specific order. An example of use would be if you want to split a very complex calculation up into multiple expressions that are derived in a specific sequence. |
 
 <!--

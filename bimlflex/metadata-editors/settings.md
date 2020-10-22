@@ -11,7 +11,7 @@ Align these settings with the organizations best practices and environmental req
 
 <img class="icon-col m-5" src="images/svg-icons/settings.svg" /> **Settings** can be found under Administration in the application menu.
 
-> [!NOTE]
+> [!TIP]
 > The [Setting Reference Document](../reference-documentation/metadata-settings.md) serves as a complete guide for all settings available in the BimlFlex App.
 
 ![Settings Editor](images/settings-editor.png "Settings Editor")
@@ -37,7 +37,7 @@ The information displayed in the tooltip from the global search bar will the sam
 
 ![Search Bar Tool Tip](images/search-tool-tip.png "Search Bar Tool Tips")
 
-> [!NOTE]
+> [!TIP]
 > For users who are unsure of the *specific* setting they need, beginning a search with "*" will allow users to search setting descriptions as well as setting titles.
 > This will assist in guiding users to their desired setting based on associated terminology used in their search.
 

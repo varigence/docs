@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-release-notes
+uid: bimlflex-current-release-notes
 name: BimlFlex Release Notes
 Summary: Release Notes for current and most recent version of BimlFlex
 ---
@@ -9,9 +9,9 @@ Summary: Release Notes for current and most recent version of BimlFlex
 > Please make sure databases and projects are backed up before upgrading.  
 > Please email support@bimlflex.com with any installation or upgrade issues.
 
-## BimlFlex 2020
+## BimlFlex 2020 R2
 
-BimlFlex 2020 is installed and upgraded through a single consolidated installer.
+BimlFlex 2020 R2 is installed and upgraded through a single consolidated installer.
 
 ## Latest Release
 
@@ -25,9 +25,9 @@ The Excel add-in location has been updated. The location of the add-in must be u
 
 Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or upgrade the Excel file from the advanced options in the BimlFlex ribbon UI, in the Excel Metadata Editor dropdown to allow it to work as expected. Once the Excel file is upgraded it can be opened directly from Excel or the Windows file explorer again.
 
-Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Addin](xref:excel-metadata-addin)
+Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Add-in](xref:excel-metadata-addin)
 
-## New Features
+## 2020 R2 New Features
 
 * New features and behaviors for BimlFlex Accelerator.
 * BimlFlex App Help Sidebar Navigation added to more menus.
@@ -165,7 +165,7 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 > [!NOTE]
 > In BimlFlex 2019.1, External Tables were always included, which sometimes led to issues with lacking Visual Studio support.
 > Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of External Tables as part of the load packages.
-> The BimlFlex 2020.2 release adds control to the creation of, and additional defaults for, dependency objects.
+> The BimlFlex 2020 R2 release adds control to the creation of, and additional defaults for, dependency objects.
 
 <!--
 Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation of, and additional defaults for, dependency objects.

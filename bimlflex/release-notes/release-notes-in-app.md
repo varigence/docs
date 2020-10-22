@@ -3,9 +3,10 @@ uid: bimlflex-release-notes-in-app
 name: BimlFlex Release Notes for Application
 Summary: Release Notes for current and most recent version of BimlFlex, specific to In App window viewing
 ---
+# Release Notes
 
 > [!IMPORTANT]
->BimlFlex has been updated.
+>BimlFlex has been updated to version 2020 R2
 
 ## Latest Release
 
@@ -21,7 +22,7 @@ Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or
 
 Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Addin](xref:excel-metadata-addin)
 
-## New Features
+## 2020 R2 New Features
 
 * New features and behaviors for BimlFlex Accelerator.
 * BimlFlex App Help Sidebar Navigation added to more menus.
