@@ -17,6 +17,11 @@ BimlFlex 2020 R2 is installed and upgraded through a single consolidated install
 
 Build 20.2.331.0, release date: 2020 10 27
 
+* [BimlFlex Developer Setup](http://download.varigence.com/downloads/bimlflexdevsetup_20.2.331.0.exe)
+    This installer includes all parts of BimlFlex
+* [BimlFlex Runtime Setup](http://download.varigence.com/downloads/bimlflexruntimesetup_20.2.331.0.exe)
+    This installer includes the required runtime components for servers that will execute SSIS packages
+
 ## Breaking Changes
 
 The Excel add-in location has been updated. The location of the add-in must be updated in the Excel file. This is automatically done when the `BimlFlex.xlsx` file is opened from BimlStudio. BimlStudio also has an upgrade function available in the Excel Metadata Editor dropdown that allows manual upgrades of existing Excel files. If the `BimlFlex.xlsx` file is opened directly from Excel or from the Windows file explorer it will display an error message similar to this:
