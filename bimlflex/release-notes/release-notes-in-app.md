@@ -3,14 +3,14 @@ uid: bimlflex-release-notes-in-app
 name: BimlFlex Release Notes for Application
 Summary: Release Notes for current and most recent version of BimlFlex, specific to In App window viewing
 ---
-# Release Notes
+# Preview Release Notes
 
 > [!IMPORTANT]
->BimlFlex has been updated to version 2020 R2
+>BimlFlex has been updated to version 2020 R2 Preview
 
 ## Latest Release
 
-Build 20.2.328.0, release date: 2020 10 27
+Build 20.2.331.0, release date: 2020 10 27
 
 ## Breaking Changes
 
@@ -25,7 +25,7 @@ Additional documentation providing a step-by-step walkthrough for this process: 
 ## 2020 R2 New Features
 
 * New features and behaviors for BimlFlex Accelerator.
-* BimlFlex App Help Sidebar Navigation added to more menus.
+* New BimlFlex in-app Help Sidebar added to all metadata editor screens.
 * Improved UI for Editor screens.
 * Global navigation to transition between Projects, Connections, Objects, and Columns in a single click.
 * Enhanced support for ADF and Snowflake.
