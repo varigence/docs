@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: Excel Metadata Add-In
+  href: excel-metadata-addin.md
 - name: Metadata Configurations
   href: metadata-configurations.md
 - name: Metadata Settings
