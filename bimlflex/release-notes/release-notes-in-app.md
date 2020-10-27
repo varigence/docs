@@ -10,7 +10,7 @@ Summary: Release Notes for current and most recent version of BimlFlex, specific
 
 ## Latest Release
 
-Build 20.2.nnn.0, release date: nn mmmm 2020
+Build 20.2.328.0, release date: 2020 10 27
 
 ## Breaking Changes
 
