@@ -10,7 +10,7 @@ Summary: Release Notes for current and most recent version of BimlFlex, specific
 
 ## Latest Release
 
-Build 20.2.331.0, release date: 2020 10 27
+Build 20.2.331.0, release date: 27 Oct 2020
 
 ## Breaking Changes
 
@@ -112,7 +112,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 ## Delete Detection
 
 * Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
-* TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts.
+* The Delete Detection Object Model has been updated. For implementations that use bespoke Delete Detection Scripts, certain attributes will need to be updated to correctly refer to the new object model.
 
 Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 

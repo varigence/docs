@@ -15,7 +15,7 @@ BimlFlex 2020 R2 is installed and upgraded through a single consolidated install
 
 ## Latest Release
 
-Build 20.2.331.0, release date: 2020 10 27
+Build 20.2.331.0, release date: Oct 27 2020
 
 * [BimlFlex Developer Setup](http://download.varigence.com/downloads/bimlflexdevsetup_20.2.331.0.exe)
     This installer includes all parts of BimlFlex
@@ -122,7 +122,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 ## Delete Detection
 
 * Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
-* TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts.
+* The Delete Detection Object Model has been updated. For implementations that use bespoke Delete Detection Scripts, certain attributes will need to be updated to correctly refer to the new object model.
 
 Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 
@@ -178,5 +178,5 @@ Note that in the BimlFlex 2019 release the External Tables were always included,
 
 ## Download Links to this Build
 
-* [bimlflexdevsetup_20.2.nnn.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.nnn.0.exe)
-* [bimlflexruntimesetup_20.2.nnn.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.nnn.0.exe)
+* [bimlflexdevsetup_20.2.331.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.331.0.exe)
+* [bimlflexruntimesetup_20.2.331.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.331.0.exe)
