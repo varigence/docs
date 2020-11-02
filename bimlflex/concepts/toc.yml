@@ -22,6 +22,8 @@
   href: integration-keys.md
 - name: Driving Keys
   href: driving-keys.md
+- name: Driving Keys in Data Vault
+  href: driving-keys-in-data-vault.md
 - name: Hashing
   href: hashing-in-bimlflex.md
 - name: Load Parameters
