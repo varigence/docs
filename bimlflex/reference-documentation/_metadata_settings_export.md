@@ -298,7 +298,7 @@ All **Settings** in the Hash section.
 
 | Type | Setting | Description |
 | ---- | ------- | ----------- |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Hash Algorithm | The hashing algorithm to use. ("MD5"/"SHA1"/"SHA2_256"/"SHA2_512") [[Go To Permitted Values]](#tab/core-hash-permitted-hashalgorithm) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Hash Algorithm | The hashing algorithm to use. ("MD5"/"SHA1"/"SHA2_256"/"SHA2_512") [[Go To Permitted Values]](#core-hash-permitted-hashalgorithm) |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Hash Binary | Should the generated hash value be stored as a binary representation rather than a string representation |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Hash Integration Key | Should the Integration Key be hashed. This is done automatically for any project where the destination connection integration stage is Raw Data Vault as it is a requirement for a Data Vault load. For other load process designs the hashing is optional and controlled by this flag as well as the hashing configuration in the configuration sheet |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Hash | Should the SSIS inline hashing component use a hashing approach compatible with the SQL Server "HASHBYTES()" function. This is recommended so that the hashed values can be recreated using standard SQL queries when needed |
@@ -633,7 +633,7 @@ All **Settings** in the Settings section.
 
 | Type | Setting | Description |
 | ---- | ------- | ----------- |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Apply Naming Convention | Naming convention to use for objects and columns. Case sensitive options are "None", "PascalCase", "camelCase", "Proper_Case", "Proper Case", "UPPER_CASE" and "lower_case" [[Go To Permitted Values]](#tab/model-settings-permitted-applynamingconvention) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Apply Naming Convention | Naming convention to use for objects and columns. Case sensitive options are "None", "PascalCase", "camelCase", "Proper_Case", "Proper Case", "UPPER_CASE" and "lower_case" [[Go To Permitted Values]](#model-settings-permitted-applynamingconvention) |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Infer Integration Key From | Where to infer the Integration Key from. Case sensitive options are "None", "PrimaryKey", "UniqueKey", "FirstColumn", "IdentityColumn" and "ColumnName::[NameOfColumn]". When specifying "ColumnName", a name needs to be added in the Import Metadata screen or specify "ColumnName::UID" to auto populate the column name field with "UID" |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Retain Existing Metadata | What existing Metadata should be retained when doing an import of existing data. Should be specified as a comma-separated list. Options are "Data Types", "Column Orders", "References", and "All Other". I.e. specify "Column Orders, All Other" without double quotes |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Pad Integration Key | Number of Characters to pad the Integration Key to |
@@ -693,8 +693,8 @@ All **Settings** in the Naming section.
 
 | Type | Setting | Description |
 | ---- | ------- | ----------- |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Suffix Or Prefix Column | The "SuffixOrPrefixColumn" key defines the behavior when defining column names. Use Suffix or Prefix to define if the column identifiers are added after or before the column names in the solution.  "S" for Suffix will generate "Entity_BK"  "P" for Prefix Will generate "BK_Entity" [[Go To Permitted Values]](#tab/naming-naming-permitted-suffixorprefixcolumn) |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Suffix Or Prefix Object | The "SuffixOrPrefixObject" key defines the behavior when naming objects.  Use Suffix or Prefix to define if the object identifiers are added before or after the object names in the solution.  "S" for Suffix Will generate "Entity_HUB"  "P" for Prefix Will generate "HUB_Entity" [[Go To Permitted Values]](#tab/naming-naming-permitted-suffixorprefixobject) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Suffix Or Prefix Column | The "SuffixOrPrefixColumn" key defines the behavior when defining column names. Use Suffix or Prefix to define if the column identifiers are added after or before the column names in the solution.  "S" for Suffix will generate "Entity_BK"  "P" for Prefix Will generate "BK_Entity" [[Go To Permitted Values]](#naming-naming-permitted-suffixorprefixcolumn) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Suffix Or Prefix Object | The "SuffixOrPrefixObject" key defines the behavior when naming objects.  Use Suffix or Prefix to define if the object identifiers are added before or after the object names in the solution.  "S" for Suffix Will generate "Entity_HUB"  "P" for Prefix Will generate "HUB_Entity" [[Go To Permitted Values]](#naming-naming-permitted-suffixorprefixobject) |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Append Procedure Name | The string to append to procedure names |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Append Batch Name | The string to append to Batch names |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Append Load From Psa Name | The string to append to the Load From PSA process name |
@@ -795,9 +795,9 @@ All **Settings** in the Constraints section.
 
 | Type | Setting | Description |
 | ---- | ------- | ----------- |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Constraint Mode STG | The table reference constraint mode to apply for the STG (Staging) tables in BimlStudio for diagram previewing. ("DoNotCreate", "CreateAndNoCheck", "CreateAndCheck"). NOTE: That the constraints will not be add the the table create scripts [[Go To Permitted Values]](#tab/orchestration-constraints-permitted-constraintmodestg) |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Constraint Mode DV | The table reference constraint mode to apply for the DV (Data Vault) database ("DoNotCreate", "CreateAndNoCheck", "CreateAndCheck") [[Go To Permitted Values]](#tab/orchestration-constraints-permitted-constraintmodedv) |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Constraint Mode DM | The table reference constraint mode to apply for the DM (Data Mart) database ("DoNotCreate", "CreateAndNoCheck", "CreateAndCheck") [[Go To Permitted Values]](#tab/orchestration-constraints-permitted-constraintmodedm) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Constraint Mode STG | The table reference constraint mode to apply for the STG (Staging) tables in BimlStudio for diagram previewing. ("DoNotCreate", "CreateAndNoCheck", "CreateAndCheck"). NOTE: That the constraints will not be add the the table create scripts [[Go To Permitted Values]](#orchestration-constraints-permitted-constraintmodestg) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Constraint Mode DV | The table reference constraint mode to apply for the DV (Data Vault) database ("DoNotCreate", "CreateAndNoCheck", "CreateAndCheck") [[Go To Permitted Values]](#orchestration-constraints-permitted-constraintmodedv) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Constraint Mode DM | The table reference constraint mode to apply for the DM (Data Mart) database ("DoNotCreate", "CreateAndNoCheck", "CreateAndCheck") [[Go To Permitted Values]](#orchestration-constraints-permitted-constraintmodedm) |
 
 #### [Default Values](#tab/orchestration-constraints-default)
 
@@ -917,9 +917,9 @@ All **Settings** in the Process section.
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Remove Stage | Should the Snowflake stage be removed prior to loading the new stage file |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Auto Suspend | Should the Snowflake database Auto Suspend |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Scale Up | Should the Snowflake processing scale up the Snowflake Warehouse at the start of the Batch |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Scale Up Size | What size should the Snowflake Warehouse be scale up to [[Go To Permitted Values]](#tab/snowflake-process-permitted-scaleupsize) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Scale Up Size | What size should the Snowflake Warehouse be scale up to [[Go To Permitted Values]](#snowflake-process-permitted-scaleupsize) |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Scale Down | Should the Snowflake processing scale down the Snowflake Warehouse at end of the Batch |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Scale Down Size | What size should the Snowflake Warehouse be scale down to [[Go To Permitted Values]](#tab/snowflake-process-permitted-scaledownsize) |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Scale Down Size | What size should the Snowflake Warehouse be scale down to [[Go To Permitted Values]](#snowflake-process-permitted-scaledownsize) |
 
 #### [Default Values](#tab/snowflake-process-default)
 
