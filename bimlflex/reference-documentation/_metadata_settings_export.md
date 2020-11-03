@@ -925,7 +925,7 @@ All **Settings** in the Process section.
 
 | Type | Setting | Default Value |
 | ---- | ------- | ------------ |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | File Format | CREATE FILE FORMAT IF NOT EXISTS "PUBLIC".NOHEADER_PIPE_CSV_FORMAT COMPRESSION = 'GZIP' ESCAPE_UNENCLOSED_FIELD = NONE FIELD_DELIMITER = '|' RECORD_DELIMITER = '\n' SKIP_HEADER = 0 TRIM_SPACE = FALSE NULL_IF = ('\\N'); |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | File Format | CREATE FILE FORMAT IF NOT EXISTS "PUBLIC".NOHEADER_PIPE_CSV_FORMAT COMPRESSION = 'GZIP' ESCAPE_UNENCLOSED_FIELD = NONE FIELD_DELIMITER = '\|' RECORD_DELIMITER = '\n' SKIP_HEADER = 0 TRIM_SPACE = FALSE NULL_IF = ('\\N'); |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Remove Stage | `true` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Auto Suspend | `true` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Scale Up | `true` |
@@ -1037,13 +1037,13 @@ All **Settings** in the Synapse SSDT Artifacts section.
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Include External Tables | `false` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Overwrite External Table Defaults | `false` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Include Master Key | `false` |
-| ![SQL Datatype](images\svg-icons\sql.svg "SQL Datatype") | Default Master Key | CREATE MASTER KEY    ENCRYPTION BY PASSWORD ='<Strong Password>'; |
+| ![SQL Datatype](images\svg-icons\sql.svg "SQL Datatype") | Default Master Key | CREATE MASTER KEY <br>&nbsp;&nbsp;&nbsp;&nbsp;ENCRYPTION BY PASSWORD ='<Strong Password>'; |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Include Credential | `false` |
-| ![SQL Datatype](images\svg-icons\sql.svg "SQL Datatype") | Default Credential | CREATE DATABASE SCOPED CREDENTIAL [bimlflex]  WITH    IDENTITY = 'bimlflex',    SECRET = '<Storage Key>'; |
+| ![SQL Datatype](images\svg-icons\sql.svg "SQL Datatype") | Default Credential | CREATE DATABASE SCOPED CREDENTIAL [bimlflex] <br>WITH <br>&nbsp;&nbsp;&nbsp;&nbsp;IDENTITY = 'bimlflex', <br>&nbsp;&nbsp;&nbsp;&nbsp;SECRET = '<Storage Key>'; |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Include External Data Source | `false` |
-| ![SQL Datatype](images\svg-icons\sql.svg "SQL Datatype") | Default External Data Source | CREATE EXTERNAL DATA SOURCE [dwhload_storage]    WITH (      LOCATION = N'wasbs://staging@<accountname>.blob.core.windows.net'      , TYPE = HADOOP      , CREDENTIAL = [bimlflex]    ); |
+| ![SQL Datatype](images\svg-icons\sql.svg "SQL Datatype") | Default External Data Source | CREATE EXTERNAL DATA SOURCE [dwhload_storage] <br>&nbsp;&nbsp;&nbsp;&nbsp;WITH ( <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOCATION = N'wasbs://staging@<accountname>.blob.core.windows.net' <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, TYPE = HADOOP <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, CREDENTIAL = [bimlflex] <br>&nbsp;&nbsp;&nbsp;&nbsp;); |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Include External File Format | `false` |
-| ![SQL Datatype](images\svg-icons\sql.svg "SQL Datatype") | Default External File Format | CREATE EXTERNAL FILE FORMAT [pipe_zip_format]    WITH (      FORMAT_TYPE = DELIMITEDTEXT,      FORMAT_OPTIONS (        FIELD_TERMINATOR = N'|',        USE_TYPE_DEFAULT = FALSE      ),      DATA_COMPRESSION = N'org.apache.hadoop.io.compress.GzipCodec'    ); |
+| ![SQL Datatype](images\svg-icons\sql.svg "SQL Datatype") | Default External File Format | CREATE EXTERNAL FILE FORMAT [pipe_zip_format] <br>&nbsp;&nbsp;&nbsp;&nbsp;WITH ( <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FORMAT_TYPE = DELIMITEDTEXT, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FORMAT_OPTIONS ( <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIELD_TERMINATOR = N'\|', <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USE_TYPE_DEFAULT = FALSE <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;), <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DATA_COMPRESSION = N'org.apache.hadoop.io.compress.GzipCodec' <br>&nbsp;&nbsp;&nbsp;&nbsp;); |
 
 ***
 
