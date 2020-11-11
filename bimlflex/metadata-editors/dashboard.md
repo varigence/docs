@@ -3,14 +3,15 @@ uid: dashboard
 title: Dashboard
 summary: Overview of the BimlFlex dashboard with sunburst graph, navigation, menus, and loading data
 ---
-# Dashboard 
+# Dashboard
 
 ## Overview
 
 The dashboard provides a quick view of the metadata in the version and contains the most common tasks and navigation options.
 
-![BimlFlex Dashboard Overview](images/dashboard-recent-connections-recent-projects-full-small.64527.png "BimlFlex Dashboard")
+![BimlFlex Dashboard Overview](images/bfx-dashboard-new.png "BimlFlex Dashboard")
 
+<!--
 ## Sunburst
 
 The Sunburst Graph gives users a quick graphical overview of their Metadata and provides a convenient way to browse to specific tables from from the dashboard.
@@ -53,6 +54,34 @@ By clicking in the center of the Sunburst users can zoom back out to the full Su
 ### Sunburst Navigation
 
 Users can navigate to an Entity's Editor Screen by clicking on the object slice in the Sunburst.
+-->
+
+## Dashboard Top Selections
+
+At the top of the Dashboard are buttons to navigate to three of the most principal features within BimlFlex.
+
+- **Import Metadata** will navigate to the Import Metadata screen for your Source Connection.  
+- **Accelerated Modeling** will navigate to the Accelerator metadata editor screen.  
+- **Business Modeling** will navigate to the integrated Business Modeling editor screen.
+
+## Project Lineage
+
+The **Project Lineage** pane displays the current **Projects** and **Connections** for the currently selected customer.
+This pane also displayed the mapped architecture of the source connections, staging layers, data vault, and data marts.
+The number of Objects, Hubs, Links, and Satellites are displayed in between the architecture stages.
+
+Clicking on any of the **Projects** or **Connections** within the Project Lineage pane will navigate the user directly to the respective metadata editor screen.
+
+![BimlFlex Project Lineage Pane](images/bfx-project-lineage-pane.png "BimlFlex Project Lineage Pane")
+
+## Operational Reports
+
+**Operational Reports** will display the status of their package runs at a high level, allowing users to observe details and errors in failing packages, and those which were run successfully. Clicking **Operational Reports** will navigate the user to the **Operational Reports** editor screen.
+
+>[!NOTE]
+> Depending on the Source Connection, "Operational Reports" will appear as "Latest Package Runs" if using a cloud-based source, such as Azure Data Factory.
+>
+> ![ADF Latest Package Runs](images/bfx-dashboard-latest-runs.png "ADF Latest Package Runs")
 
 ## Recent Connections
 
@@ -78,6 +107,27 @@ The **Recent Connections** pane displays the most recently updated **Connections
 - Click <img class="icon-inline" src="images/svg-icons/objects.svg" > **Objects** to navigate to the **Objects** page filtered to **Objects** associated with the **Connection**. The number displayed is the number of **Objects** related to the **Connection**
 - Click <img class="icon-inline" src="images/svg-icons/columns.svg" > **Columns** to navigate to **Columns** related to the **Connection**. The number displayed in parentheses is the number of **Columns** related to the **Connection**
 
+## Recent Objects
+
+The **Recent Objects** pane on the dashboard will display the most recently updated **Objects**. It can be found on the bottom of the BimlFlex dashboard.
+
+## Recent Objects Pane Overview
+
+The **Recent Objects** pane displayed the most recently updated **Objects** to allow for quick access and modification of **Connections**.
+
+![Recent Objects Pane](images/bfx-dashboard-recent-objects.png "Recent Objects Pane")
+
+- Click the name of the **Object** to navigate to the **Object** Editor screen
+- Hover over an **Object** and click the ellipses for the quick menu options
+
+## Recent Objects Quick Menu
+
+![Recent Objects Quick Menu](images/bfx-dashboard-recent-objects-quick-menu.png "Recent Objects Quick Menu")
+
+- Click <img class="icon-inline" src="images/svg-icons/objects.svg" > **Edit Object** to navigate to the **Object** metadata editor screen.
+- Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" > **Import Metadata** to navigate to the Import Metadata screen for your Source Connection.
+
+<!--
 ## Recent Projects
 
 The Recent Projects pane on the dashboard will display the most recently updated **Projects**. It can be found in the bottom left of the dashboard window.
@@ -101,6 +151,7 @@ The Recent Projects pane displays the most recently updated **Projects** to allo
 - Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" > **Import Metadata** to navigate to the Import Metadata screen for the **Source Connection**. This link will appear for **Projects** with a **Connection** that has a `Source System` Integration Stage.
 - Click <img class="icon-inline" src="images/svg-icons/objects.svg" > **Objects** to navigate to **Objects** related to the **Project**. The number displayed is the number of **Objects** related to the **Project**
 - Click <img class="icon-inline" src="images/svg-icons/columns.svg" > **Columns**  to navigate to **Columns** related to the **Project**. The number displayed is the number of **Columns** related to the **Project**
+-->
 
 ## Action Buttons
 
@@ -192,3 +243,7 @@ Set the specified defaults on the selected target version. Unlike the Load Sampl
 ### BimlFlex User Guide
 
 Link to this documentation from within the dashboard.
+
+### Release Notes
+
+Opens the BimlFlex side pane with Release Notes for the current and most recent update.
