@@ -81,13 +81,13 @@ Use the **New Customer** option in the BimlFlex App to add the Customer to the D
 
 The BimlFlex App is used to manage the metadata for the BimlFlex solution.
 
-![BimlFlex App](images/bimlflex-ss-v5-app-dashboard.png "BimlFlex App")
+![BimlFlex App](images/bfx-dashboard-new.png "BimlFlex App")
 
 ## BimlFlex App Metadata Connection
 
 Start the BimlFlex App and configure it to connect to the BimlFlex database.
 
-![BimlFlex App Setup Pane](images/bimlflex-ss-v5-app-setup-pane.png "BimlFlex App Setup Pane")
+![BimlFlex App Setup Pane](images/bfx-new-connection.png "BimlFlex App Setup Pane")
 
 The BimlFlex app allows easy metadata management and provides features such as metadata import and graphical Data Vault acceleration.
 
