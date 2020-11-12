@@ -15,8 +15,6 @@ BimlFlex 2020 R2 is installed and upgraded through a single consolidated install
 
 ## Latest Release
 
-Build 20.2.331.0, release date: Oct 27 2020
-
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.331.0.exe)
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.331.0.exe)
@@ -32,6 +30,8 @@ Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or
 
 Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Add-in](xref:excel-metadata-addin)
 
+The default installation location has been updated. Previous installations placed the application files in a version-number-based sub-folder under the Program Files\Varigence installation. This version removes the version-number sub-folder. For scenarios where the path is used the process should be updated to reflect the new path.
+
 ## 2020 R2 New Features
 
 * New features and behaviors for BimlFlex Accelerator.
@@ -46,11 +46,13 @@ Additional documentation providing a step-by-step walkthrough for this process: 
 
 ## Settings Changes
 
+A new setting, `SsisHashNullValue`, has been added to the Core settings group. This allows control of the Null Value replacement string that is used in the SSIS packages call to the Hashing custom component. This value is left blank for backwards compatibility with previous behavior. For full SQL hash compatibility, consider using the same null-value replacement as for the `HashNullValue` setting. For backwards compatibility with existing data hashed through the SSIS components, leave it blank.
+
 The Accelerator and Data Vault processes have several new optional configurations to better control Data Vault behavior.
 
 * Added settings to control if individual source keys should be added to Hubs and Links as attributes.
 * Added settings for if Link Satellites should use record source naming convention by default.
-* The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group.
+* The Existing Setting `SsdtOutputPath` has been moved to the SSDT settings group.
 * Toggle setting added to display backbone (Hubs and Links only) for accelerated models.
 * Toggle setting added to display datatypes for columns for both source models and accelerated models.
 
