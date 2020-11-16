@@ -155,13 +155,14 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 
 ## BimlCatalog DB
 
-* Resolved a `RowCount` stored procedure bug that resulted in orphaned open transactions.
+* Resolved a `RowCount` stored procedure issue that resulted in orphaned open transactions.
 
 ## SQL Based ELT
 
-* Fixed a bug where `End Date` would only generate an update for one record.
+* Fixed an issue where `End Date` would only generate an update for one record.
 * Fixed an issue where `End Date` was retrieving the incorrect date.
 * Fixed an issue where `FlexRowIsCurrent` was not populating with values.
+* Added additional logic for RowAuditId. For a solution where RowAuditId is set to derived for target Data Vault objects, the load Stored Procedures will now correctly derive the required syntax, regardless of any additional settings.
 
 ## SSIS
 
