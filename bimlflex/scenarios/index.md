@@ -20,6 +20,7 @@ Main platforms and architectures:
 
 ## Special sources
 
+<!-- * [Dynamics CRM](xref:source-dynamics-crm) -->
 * [Excel Files](xref:source-excel-plus)
 * [Odata](xref:source-odata)
 * [Stored Procedure](xref:source-stored-procedure)

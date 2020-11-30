@@ -148,6 +148,12 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 * Fixed an issue with `Oracle` import where `UNISTR()` was required.
 * Fixed a metadata import issue for `MSOLEDBSQL` provider.
 
+## Dynamics CRM
+
+* Fixed an issue where **Parameters** would not retrieve from an Entity with >= ~50,000 records.
+* Added the ability to override the `<fetch/>` XML statement of a **Parameter** through *PARAMETER SQL*.
+* Added the ability to automatically generate the `<fetch/>` XML statement of a **Parameter** by leaving *PARAMETER SQL* blank.
+
 ## BimlFlex DB
 
 * Removed `ImportRequests` table from database.

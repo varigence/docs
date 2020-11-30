@@ -24,6 +24,8 @@
   href: master-data-services.md
 
 # Special sources
+# - name: Source Dynamics CRM
+#   href: source-dynamics-crm.md
 - name: Source Excel Plus
   href: source-excel-plus.md
 - name: Source OData
