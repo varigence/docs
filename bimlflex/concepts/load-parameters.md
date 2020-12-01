@@ -44,7 +44,7 @@ Click a tab for example or detailed column descriptions.
 
 ***
 
-Parameter history logged to the `[bfx].[AuditConfigVariable]` table.
+Parameter history is logged to the `[bfx].[AuditConfigVariable]` table.
 
 ### [Optional Details](#tab/table-AuditConfigVariable)
 
