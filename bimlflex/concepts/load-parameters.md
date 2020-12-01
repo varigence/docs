@@ -40,7 +40,8 @@ Click a tab for example or detailed column descriptions.
 | PreviousValue    | Previous `VariableValue` on the last execution                       |
 
 > [!TIP]
-> `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
+>
+> * `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
 
 ***
 
@@ -72,8 +73,9 @@ Click a tab for example or detailed column descriptions.
 | RowLastModified       | Date the audit record was created                                    |
 
 > [!TIP]
-> `*`: This value can be used to get audit record from the `[bfx].[ConfigVariable]` table.  
-> `**`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
+>
+> * `*`: This value can be used to get audit record from the `[bfx].[ConfigVariable]` table.
+> * `**`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
 
 ***
 
@@ -107,19 +109,21 @@ A following Execute SQL Task (`SQL - Set {Parameter}`) is then used to persist t
 Activities are added to the beginning of the pipeline that retrieve the last value and the next value to be recorded after execution completes.
 
 The initial Lookup Activity (`LKP_{Parameter}`) is used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
-If none are present it will generate one using the *DEFAULT* value that is configured.
-If one is present it will retrieve the value.
-The retrieved `[VariableValue]` value is then used to define the starting range`*` for the Source Query.
+If none are present, it will generate one using the *DEFAULT* value that is configured.
+If one is already present, it will retrieve the value.
+The retrieved `[VariableValue]` value is then used to define the starting range for the Source Query.
 
 The other Lookup Activity (`LKP_{ParameterToName}`) is used to query the Source System.
 This uses the *PARAMETER SQL* against the *COLUMN* and stores the value in the pipeline as the *PARAMETER TO NAME*.
 
 These values are then injected into the source query filter clause to limit values that are then returned from the Source System.
 
-> [!NOTE]
-> `*`: While the terms "starting range" and "ending range" have been used here, the actual comparison used is defined by the *OPERATOR* or *PARAMETER TO OPERATOR* fields respectively.
-
 The ending SQL Server Stored Procedure Activity (`LOG_{Parameter}`) is then used to persist the value retrieved by the *PARAMETER TO NAME* into the BimlCatalog.
+
+> [!NOTE]
+> The ADF Architecture requires **Window Parameters** when using a **Parameter**.
+>
+> See [Window Parameters](#window-parameters) for more details.
 
 ***
 
@@ -134,7 +138,7 @@ Parameters can be added in BimlFlex through the **Parameters Editor**, accessibl
 
 To add a new parameters, click the `+` button in the tree view menu.
 
-![BimlFlex - Parameters Editor](images/bfx-parameters-editor.png "BmilFlex - Parameters Editor")
+![BimlFlex - Parameters Editor](images/bfx-parameters-editor.png "BimlFlex - Parameters Editor")
 
 ### Base Parameter
 
@@ -181,8 +185,9 @@ Configuration of the base **Parameter** itself remains the same across Source Sy
 ***
 
 > [!NOTE]
-> `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.  
-> `**`: See [Parameter SQL](#parameter-sql) for more examples
+>
+> * `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.
+> * `**`: See [Parameter SQL](#parameter-sql) for more examples
 
 > [!IMPORTANT]
 > `Execute SQL On Source`, along with `Parameter To Name` and `Parameter To Operator`, are required fields when configuring a **Parameter** for ADF.
@@ -200,8 +205,10 @@ In a SQL based Source System this will correlate to a SQL Statement that is appe
 In Dynamics, this will be an XML based statement for a `<attribute/>` under the `<fetch/entity/>` node or a complete replacement of the generated `<fetch/>` statement.
 
 > [!IMPORTANT]
-> Ensure this value is configured to align with how *EXECUTE SQL ON SOURCE* is configured.  
-> When `true` this should mirror the syntax needed on the Source System.  
+> Ensure this value is configured to align with how *EXECUTE SQL ON SOURCE* is configured.
+>
+> When `true` this should mirror the syntax needed on the Source System.
+>
 > When `false` this should mirror the syntax needed on the Target System.
 
 #### [T-SQL (Microsoft)](#tab/parameter-sql-tsql)
@@ -252,13 +259,14 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
 
 > [!IMPORTANT]
 > This pattern is only valid for Dynamics entities with less than 50k records.
-> If the Dynamics Entity has more than 50k records then use the [Dynamics - Blank](#tab/parameter-sql-dynamics-blank) or [Dynamics - Fetch](#parameter-sql-dynamics-fetch) patterns.
+>
+> If the Dynamics Entity has more than 50k records then use the [Dynamics - Blank](#parameter-sql-dynamics-blank) or [Dynamics - Fetch](#parameter-sql-dynamics-fetch) patterns.
 
 #### [Dynamics - Blank](#tab/parameter-sql-dynamics-blank)
 
 When *PARAMETER SQL* is blank BimlFlex will generate a `<fetch/>` statement using the following pattern.
 
-Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
+Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*:
 
 ```XML
 <fetch distinct="false" mapping="logical">
@@ -281,9 +289,12 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
 ***
 
 > [!NOTE]
-> `*`: All SQL based Source Systems will have similar pattern but differ in syntax.  
-> `**`: When using Dynamics the first characters determine logic.  If the *PARAMETER SQL* starts with `<fetch` then it will override the entire fetch statement with.  If not, it will insert the statement 
-
+>
+> * `*`: All SQL based Source Systems will have similar pattern but differ in syntax.
+> * `**`: When using Dynamics the first characters determine logic.
+>   * If the *PARAMETER SQL* starts with `<fetch` then it will override the entire fetch statement with.
+>   * If not, it will use the [Dynamics - Attribute](parameter-sql-dynamics-attribute) pattern.
+>   * If blank it will use the [Dynamics - Blank](#parameter-sql-dynamics-blank)
 
 ### Window Parameters
 
