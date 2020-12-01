@@ -6,8 +6,8 @@ summary: Documentation for parameters for load queries added in Parameters secti
 
 # Load Parameters
 
-The most common scenario is to add parameters to a source query or add parameters that hold details about the particular BI solution.
-The approach used for these scenarios are different.
+**Paramaters** are most commonly used to define a high water mark or define a filter for what is returned from a Source System.
+The explanations and scenarios belong are generated in vein with that task.
 
 ## Parameter Management
 
@@ -15,7 +15,7 @@ Once a **Parameter** is created in BimlFlex, the BimlCatalog DB (`[BimlCatalog]`
 
 Parameter values are persisted in the `[bfx].[ConfigVariable]` table.
 
-### [Table Details](#tab/table-configvariable)
+### [Optional Details](#tab/table-configvariable)
 
 Click a tab for example or detailed column descriptions.
 
@@ -29,15 +29,15 @@ Click a tab for example or detailed column descriptions.
 
 ### [Column Definitions](#tab/table-configvariable-definition)
 
-| Column Name      | Usage                                                                   |
-| ---------------- | ----------------------------------------------------------------------- |
-| ConfigVariableID | Table SK                                                                |
-| SystemName       | Name of the **Connection** associated with the **Parameter**            |
-| ObjectName       | Full name of the **Object** the **Parameter** is used with              |
-| VariableName     | Name of the **Parameter**                                               |
-| VariableValue    | Last or current persisted value                                         |
-| ExecutionID      | The `ExecutionID` of the Package/Pipeline used to load the Parameter`*` |
-| PreviousValue    | Previous `VariableValue` on the last execution                          |
+| Column Name      | Usage                                                                |
+| ---------------- | -------------------------------------------------------------------- |
+| ConfigVariableID | Table SK                                                             |
+| SystemName       | Name of the **Connection** associated with the **Parameter**         |
+| ObjectName       | Full name of the **Object** the **Parameter** is used with           |
+| VariableName     | Name of the **Parameter**                                            |
+| VariableValue    | Last or current persisted value                                      |
+| ExecutionID`*`   | The `ExecutionID` of the Package/Pipeline used to load the Parameter |
+| PreviousValue    | Previous `VariableValue` on the last execution                       |
 
 > [!TIP]
 > `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
@@ -46,7 +46,7 @@ Click a tab for example or detailed column descriptions.
 
 Parameter history logged to the `[bfx].[AuditConfigVariable]` table.
 
-### [Table Details](#tab/table-AuditConfigVariable)
+### [Optional Details](#tab/table-AuditConfigVariable)
 
 Click a tab for example or detailed column descriptions.
 
@@ -59,20 +59,21 @@ Click a tab for example or detailed column descriptions.
 
 ### [Column Definitions](#tab/table-AuditConfigVariable-definition)
 
-| Column Name           | Usage                                                                   |
-| --------------------- | ----------------------------------------------------------------------- |
-| AuditConfigVariableID | Table SK                                                                |
-| ConfigVariableID      | `ConfigVariableID` of the **Parameter**                                 |
-| SystemName            | Name of the **Connection** associated with the **Parameter**            |
-| ObjectName            | Full name of the **Object** the **Parameter** is used with              |
-| VariableName          | Name of the **Parameter**                                               |
-| VariableValue         | Current persisted value for the listed execution                        |
-| ExecutionID           | The `ExecutionID` of the Package/Pipeline used to load the Parameter`*` |
-| PreviousValue         | Previous `VariableValue` prior to the listed execution                  |
-| RowLastModified       | Date the audit record was created                                       |
+| Column Name           | Usage                                                                |
+| --------------------- | -------------------------------------------------------------------- |
+| AuditConfigVariableID | Table SK                                                             |
+| ConfigVariableID`*`   | `ConfigVariableID` of the **Parameter**                              |
+| SystemName            | Name of the **Connection** associated with the **Parameter**         |
+| ObjectName            | Full name of the **Object** the **Parameter** is used with           |
+| VariableName          | Name of the **Parameter**                                            |
+| VariableValue         | Current persisted value for the listed execution                     |
+| ExecutionID`**`       | The `ExecutionID` of the Package/Pipeline used to load the Parameter |
+| PreviousValue         | Previous `VariableValue` prior to the listed execution               |
+| RowLastModified       | Date the audit record was created                                    |
 
 > [!TIP]
-> `*`: This value can be used to get detailed audit history from the `[bfx.Execution]` or `[rpt].[ExecutionDetails]` tables.
+> `*`: This value can be used to get audit record from the `[bfx].[ConfigVariable]` table.  
+> `**`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
 
 ***
 
@@ -117,10 +118,6 @@ These values are then injected into the source query filter clause to limit valu
 
 > [!NOTE]
 > `*`: While the terms "starting range" and "ending range" have been used here, the actual comparison used is defined by the *OPERATOR* or *PARAMETER TO OPERATOR* fields respectively.
->
-> Query Pattern: `[COLUMN]` `[OPERATOR]` `[PARAMETER]` AND `[COLUMN]` `[PARAMETER TO OPERATOR]` `[PARAMETER TO]`
->
-> Example: `[SalesLT].[ModifiedDate]` > `LastLoadDate` AND `[SalesLT].[ModifiedDate]` <= `NextLoadDate`
 
 The ending SQL Server Stored Procedure Activity (`LOG_{Parameter}`) is then used to persist the value retrieved by the *PARAMETER TO NAME* into the BimlCatalog.
 
@@ -184,7 +181,7 @@ Configuration of the base **Parameter** itself remains the same across Source Sy
 ***
 
 > [!NOTE]
-> `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.
+> `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.  
 > `**`: See [Parameter SQL](#parameter-sql) for more examples
 
 > [!IMPORTANT]
@@ -197,12 +194,14 @@ The parameter load value to use the first time the load happens, when there is n
 #### Parameter SQL
 
 Although the field is named *PARAMETER SQL*, it is easier to this of this field as a Parameter *QUERY*.
+
 In a SQL based Source System this will correlate to a SQL Statement that is appended to the the `WHERE` clause.
+
 In Dynamics, this will be an XML based statement for a `<attribute/>` under the `<fetch/entity/>` node or a complete replacement of the generated `<fetch/>` statement.
 
 > [!IMPORTANT]
-> Ensure this value is configured to align with how *EXECUTE SQL ON SOURCE* is configured.
-> When `true` this should mirror the syntax needed on the Source System.
+> Ensure this value is configured to align with how *EXECUTE SQL ON SOURCE* is configured.  
+> When `true` this should mirror the syntax needed on the Source System.  
 > When `false` this should mirror the syntax needed on the Target System.
 
 #### [T-SQL (Microsoft)](#tab/parameter-sql-tsql)
@@ -235,7 +234,7 @@ In Dynamics, this will be an XML based statement for a `<attribute/>` under the 
 | ---------------- | ------------------------------------------------------------------------------ |
 | Parameter SQL`*` | LEFT(DATE_FORMAT(DATE_ADD(MAX(@@this), INTERVAL 0 DAY), '%Y-%m-%d %T.%f'), 27) |
 
-#### [Dynamics - Attribute](#tab/parameter-sql-dynamics-fetch)
+#### [Dynamics - Attribute](#tab/parameter-sql-dynamics-attribute)
 
 | Field             | Description                                                               |
 | ----------------- | ------------------------------------------------------------------------- |
@@ -246,16 +245,16 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
 ```XML
 <fetch distinct="false" mapping="logical" aggregate="true">
   <entity name="{object}">
-  {Parameter SQL Value}
+     {Parameter SQL Value}
   </entity>
 </fetch>
 ```
 
 > [!IMPORTANT]
 > This pattern is only valid for Dynamics entities with less than 50k records.
-> If the Dynamics Entity has more than 50k records then use the [Dynamics - Blank](#tab/parameter-sql-dynamics-fetch) or [Dynamics - Fetch](#parameter-sql-dynamics-fetch) patterns.
+> If the Dynamics Entity has more than 50k records then use the [Dynamics - Blank](#tab/parameter-sql-dynamics-blank) or [Dynamics - Fetch](#parameter-sql-dynamics-fetch) patterns.
 
-#### [Dynamics - Blank](#tab/parameter-sql-dynamics-fetch)
+#### [Dynamics - Blank](#tab/parameter-sql-dynamics-blank)
 
 When *PARAMETER SQL* is blank BimlFlex will generate a `<fetch/>` statement using the following pattern.
 
@@ -313,6 +312,22 @@ These get configured by defining the below fields.
 
 > [!IMPORTANT]
 > These, along with `Execute SQL On Source`, are required fields when configuring a **Parameter** for ADF.
+
+BimlFlex Pattern for Window Parameters:
+
+```sql
+`{Existing WHERE Clause}` `{AND if Needed}`
+     `{Column}` `{Operator}` `{Parameter}`
+    AND `{Column}` `{Parameter To Operator}` `{Parameter To Name}`
+```
+
+Example:
+
+```sql
+WHERE
+    `[SalesLT].[ModifiedDate]` > `LastLoadDate`
+    AND `[SalesLT].[ModifiedDate]` <= `NextLoadDate`
+```
 
 ### Parameter Overrides
 
