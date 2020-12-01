@@ -91,10 +91,12 @@ The Search field will return results in realtime, only presenting Parameters con
 | Parameter Sql Expression | The Parameter Sql Expression. |
 | Parameter Override | Used to override the parameter part of the WHERE clause in the source query to tweak the column expression. Useful when extra logic is required for the filter. |
 | Description | Free text description. |
-| Not Persisted | Whether the parameter should be persisted to `BimlCatalog.bfx.ConfigVariable` |
+| Not Persisted | Whether the parameter should be persisted to `[bfx].[ConfigVariable]` in the BimlCatalog. |
 | Project Parameter | Project level Parameters that are commonly available in all packages in the project. |
 
-[More details about Parameter Fields](../concepts/load-parameters.md).  
+> [!NOTE]
+> For information on how these use and configure **Parameters** in BimlFlex see associated link below.  
+> BimlFlex Documentation: [Load Parameters](xref:bimlflex-metadata-parameters)
 
 ## Allowed Values  
 
