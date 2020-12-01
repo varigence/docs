@@ -88,7 +88,7 @@ Each time a package or pipeline is ran, BimlFlex will store the last value and u
 
 ### [SSIS Architecture](#tab/parameter-architecture-ssis)
 
-![Parameters ETL Pattern](images/bfx-parameters-architecture-ssis.png "Parameters ETL Pattern") -->
+![Parameters ETL Pattern](images/bfx-parameters-architecture-ssis.png "Parameters ETL Pattern")
 
 The process starts before the main container (`SEQC - Main`).
 
@@ -156,7 +156,7 @@ Configuration of the base **Parameter** itself remains the same across Source Sy
 | Parameter             | The name of the parameter.                                                                 |
 | Operator              | Operator to use again the *PARAMETER* when applied to the source **Column**.               |
 | Default               | The parameter load value to use for the first load.                                        |
-| Datatype`*`           | The Data Type to use for the parameter.  Must be a valid [Data Type](#data-types).         |
+| Datatype`*`           | The Data Type to use for the parameter.  Must be a valid Data Type.                        |
 | Parameter SQL`**`     | The query logic to derive the new parameter value.                                         |
 | Execute SQL On Source | When enabled executes the SQL on the source instead of the destination.                    |
 | Parameter Ordinal     | (Optional) The order of the parameter.                                                     |
@@ -293,8 +293,8 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*:
 > * `*`: All SQL based Source Systems will have similar pattern but differ in syntax.
 > * `**`: When using Dynamics the first characters determine logic.
 >   * If the *PARAMETER SQL* starts with `<fetch` then it will override the entire fetch statement with.
->   * If not, it will use the [Dynamics - Attribute](parameter-sql-dynamics-attribute) pattern.
->   * If blank it will use the [Dynamics - Blank](#parameter-sql-dynamics-blank)
+>   * If not, it will use the [Dynamics - Attribute](#parameter-sql-dynamics-attribute) pattern.
+>   * If blank it will use the [Dynamics - Blank](#parameter-sql-dynamics-blank) pattern.
 
 ### Window Parameters
 
