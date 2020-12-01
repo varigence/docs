@@ -5,27 +5,23 @@ summary: Documentation regarding the BimlFlex Parameters editor, including edito
 ---
 # Parameters Editor
 
-Parameters for load queries are added either as metadata in the Parameters sheet or via Extension Points. For high watermark delta loads and similar simple parameters adding the parameter to the metadata will generate and include all required logic to the load process.  
+Parameters for load queries are added either as metadata in the Parameters sheet or via Extension Points.
+For high watermark delta loads and similar simple parameters adding the **Parameter** to the metadata will generate and include all required logic to the load process.
 
-Extension Points can be added for more complex parameters that require custom logic.  
+Extension Points can be added for more complex parameters that require custom logic.
 
-Parameters added to a project, batch package, or regular package can be used as any other SSIS parameter. BimlFlex applies standard practices for using parameters but supports any custom use of added parameters.  
+Parameters added to a SSIS project, batch package, regular package, or ADF pipeline can be used as parameter normally would in the respective system.
+BimlFlex applies standard practices for using parameters but supports any custom use of added parameters.
 
-[More info about Parameters](../concepts/load-parameters.md).  
+> [!NOTE]
+> For information on how these use and configure **Parameters** in BimlFlex see associated link below.  
+> BimlFlex Documentation: [Load Parameters](xref:bimlflex-metadata-parameters)
 
 ## Editor Overview  
 
-The following sections describe the UI elements of the **Parameters Editor** and how they are used to author and manage BimlFlex **Parameters**.  
+The following sections describe the UI elements of the **Parameters Editor** and how they are used to author and manage BimlFlex **Parameters**.
 
 ![BimlFlex Parameters Editor - Overview](images/bfx-parameters-overview.png "BimlFlex Parameters Editor - Overview")
-
-<!--
-**Parameters Editor**  
-<img
-    src="images/bimlflex-app-editor-parameters.png"
-    title="Parameters Editor"
-/>
--->
 
 **Parameters** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
 The tree view is organized by **Connections** > **Objects** > **Columns** > **Parameters**.
@@ -38,7 +34,7 @@ The user may navigate to the Parameter Editor Screen by selecting any **Paramete
 
 Selecting a **Connection** with a single **Parameter** will immediately navigate the user to the Parameter editor screen.
 
-![BimlFlex Parameters - Listview](images/bfx-parameters-listview.png "BimlFlex Parmeters - Listview")
+![BimlFlex Parameters - List view](images/bfx-parameters-listview.png "BimlFlex Parameters - List view")
 
 The tree view for **Parameters** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
@@ -59,13 +55,6 @@ The Search field will return results in realtime, only presenting Parameters con
 
 ![BimlFlex Parameters Action Buttons](images/bfx-parameters-action-bar.png "BimlFlex Parameters Action Buttons")
 
-<!--
-<img
-    src="images/bimlflex-app-editor-parameters-actions.png"
-    title="Parameters Editor"
-/>
--->
-
 |Icon|Action|Description|
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will save the currently set of staged changes.  The **Save** button is will only enable if the **Parameter** has changes staged and there are no major validation issues with the current **Parameter** properties.|
@@ -81,14 +70,6 @@ The Search field will return results in realtime, only presenting Parameters con
 [!include[Duplicate Parameter Dialog Box](_dialog-duplicate-parameter.md)]
 
 ## Fields  
-
-<!--
-<img 
-    src="images/bimlflex-app-editor-parameters-fields.png" 
-    class="bordered-image" 
-    title="Parameter Fields"
-/>
--->
 
 ![BimlFlex Parameters - Fields](images/bfx-parameters-fields.png "BimlFlex Parameters - Fields")
 
