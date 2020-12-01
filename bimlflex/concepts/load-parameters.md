@@ -15,7 +15,7 @@ Once a **Parameter** is created in BimlFlex, the BimlCatalog DB (`[BimlCatalog]`
 
 Parameter values are persisted in the `[bfx].[ConfigVariable]` table.
 
-### [Optional Details](#tab/table-configvariable)
+### [[bfx].[ConfigVariable] Details](#tab/table-configvariable)
 
 Click a tab for example or detailed column descriptions.
 
@@ -47,7 +47,7 @@ Click a tab for example or detailed column descriptions.
 
 Parameter history is logged to the `[bfx].[AuditConfigVariable]` table.
 
-### [Optional Details](#tab/table-AuditConfigVariable)
+### [[bfx].[AuditConfigVariable] Details](#tab/table-AuditConfigVariable)
 
 Click a tab for example or detailed column descriptions.
 
