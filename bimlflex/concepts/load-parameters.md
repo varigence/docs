@@ -336,8 +336,8 @@ Example:
 
 ```sql
 WHERE
-    `[SalesLT].[ModifiedDate]` > `LastLoadDate`
-    AND `[SalesLT].[ModifiedDate]` <= `NextLoadDate`
+    [SalesLT].[ModifiedDate] > `{LastLoadDate Value}`
+    AND [SalesLT].[ModifiedDate] <= `{NextLoadDate Value}`
 ```
 
 ### Parameter Overrides
