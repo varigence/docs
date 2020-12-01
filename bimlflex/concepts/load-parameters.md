@@ -1,48 +1,102 @@
 ---
 uid: bimlflex-metadata-parameters
-title: BimlFlex Parameters
+title: Load Parameters
 summary: Documentation for parameters for load queries added in Parameters section or as Extension Points in BimlFlex
 ---
 
-# Parameters
+# Load Parameters
 
-Parameters for load queries are added either as metadata in the Parameters sheet or via Extension Points. For high watermark delta loads and similar simple parameters adding the Parameter to the metadata will generate and include all required logic to the load process.
+The most common scenario is to add parameters to a source query or add parameters that hold details about the particular BI solution.
+The approach used for these scenarios are different.
 
-Extension Points can be added for more complex parameters that require custom logic.
+## Parameter Management
 
-Parameters added to a project, batch package or regular package can be used as any other SSIS parameter. BimlFlex applies standard practices for using parameters but supports any custom use of added parameters.
+Once a **Parameter** is created in BimlFlex, the BimlCatalog DB (`[BimlCatalog]` by default) is used to manage them.
 
-## Basic Parameters
+Parameter values are persisted in the `[bfx].[ConfigVariable]` table.
 
-The most common scenario is to add parameters to a source query or add parameters that hold details about the particular BI solution. The approach used for these scenarios are different.
+### [Table Details](#tab/table-configvariable)
 
-When the parameter metadata is entered into BimlFlex Excel Add-in, BimlFlex uses the `[BimlCatalog]` database to manage parameterized source queries. Parameters are persisted in `[BimlCatalog].[bfx].[ConfigVariable]` and logged to `[BimlCatalog].[bfx].[AuditLog]`.
+Click a tab for example or detailed column descriptions.
 
-Here is an example of a parameter being stored in the `BimlCatalog` database in the `[bfx].[ConfigVariable]` table.
+### [Examples](#tab/table-configvariable-example)
 
-| SystemName | ObjectName                            | VariableName | VariableValue | ExecutionID |
-| ---------- | ------------------------------------- | ------------ | ------------- | ----------- |
-| AW_SRC     | AW_SRC.Sales.SalesPerson.ModifiedDate | LastLoadDate | 20/09/2015    | 109         |
+| ConfigVariableID | SystemName | ObjectName                                       | VariableName | VariableValue           | ExecutionID | PreviousValue |
+| ---------------- | ---------- | ------------------------------------------------ | ------------ | ----------------------- | ----------- | ------------- |
+| 5                | AWLT_SRC   | AWLT_SRC.SalesLT.SalesOrderDetail.ModifiedDate   | LastLoadDate | 2004-06-01 00:00:00.000 | 19          | 1900-01-01    |
+| 6                | AWLT_SRC   | AWLT_SRC.SalesLT.ProductDescription.ModifiedDate | LastLoadDate | 2004-03-11 10:32:17.973 | 20          | 1900-01-01    |
+| 7                | AWLT_SRC   | AWLT_SRC.SalesLT.Product.ModifiedDate            | LastLoadDate | 2004-03-11 10:03:55.510 | 21          | 1900-01-01    |
 
-## Parameters in BimlFlex
+### [Column Definitions](#tab/table-configvariable-definition)
 
-When a parameter is added to an object in BimlFlex, the metadata will be managed within BimlFlex and used to generate all the required components to track and update the value defined. Below demonstrates how a data parameter has been incorporated into a source to target loading package. Note that this load starts and ends with sequence containers that are specifically for managing this new parameter.
+| Column Name      | Usage                                                                   |
+| ---------------- | ----------------------------------------------------------------------- |
+| ConfigVariableID | Table SK                                                                |
+| SystemName       | Name of the **Connection** associated with the **Parameter**            |
+| ObjectName       | Full name of the **Object** the **Parameter** is used with              |
+| VariableName     | Name of the **Parameter**                                               |
+| VariableValue    | Last or current persisted value                                         |
+| ExecutionID      | The `ExecutionID` of the Package/Pipeline used to load the Parameter`*` |
+| PreviousValue    | Previous `VariableValue` on the last execution                          |
 
-<!-- TODO: Review everything above. -->
+> [!TIP]
+> `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
+
+***
+
+Parameter history logged to the `[bfx].[AuditConfigVariable]` table.
+
+### [Table Details](#tab/table-AuditConfigVariable)
+
+Click a tab for example or detailed column descriptions.
+
+### [Examples](#tab/table-AuditConfigVariable-example)
+
+| AuditConfigVariableID | ConfigVariableID | SystemName | ObjectName                                     | VariableName | VariableValue           | ExecutionID | PreviousValue           | RowLastModified             |
+| --------------------- | ---------------- | ---------- | ---------------------------------------------- | ------------ | ----------------------- | ----------- | ----------------------- | --------------------------- |
+| 1                     | 5                | AWLT_SRC   | AWLT_SRC.SalesLT.SalesOrderDetail.ModifiedDate | LastLoadDate | 2004-06-01 00:00:00.000 | 19          | 1900-01-01              | 2020-12-01 09:38:47.9900000 |
+| 17                    | 5                | AWLT_SRC   | AWLT_SRC.SalesLT.SalesOrderDetail.ModifiedDate | LastLoadDate | 2020-12-01 09:50:24.267 | 76          | 2004-06-01 00:00:00.000 | 2020-12-01 09:50:41.8066667 |
+
+### [Column Definitions](#tab/table-AuditConfigVariable-definition)
+
+| Column Name           | Usage                                                                   |
+| --------------------- | ----------------------------------------------------------------------- |
+| AuditConfigVariableID | Table SK                                                                |
+| ConfigVariableID      | `ConfigVariableID` of the **Parameter**                                 |
+| SystemName            | Name of the **Connection** associated with the **Parameter**            |
+| ObjectName            | Full name of the **Object** the **Parameter** is used with              |
+| VariableName          | Name of the **Parameter**                                               |
+| VariableValue         | Current persisted value for the listed execution                        |
+| ExecutionID           | The `ExecutionID` of the Package/Pipeline used to load the Parameter`*` |
+| PreviousValue         | Previous `VariableValue` prior to the listed execution                  |
+| RowLastModified       | Date the audit record was created                                       |
+
+> [!TIP]
+> `*`: This value can be used to get detailed audit history from the `[bfx.Execution]` or `[rpt].[ExecutionDetails]` tables.
+
+***
+
+## Parameter Usage
+
+Below demonstrates how a data parameter has been incorporated into a source to target loading package.
+Note that this load starts and ends with either a sequence containers (SSIS) or activities (ADF) that are specific for managing parameters.
+
+Each time a package or pipeline is ran, BimlFlex will store the last value and update it as it changes over time.
 
 ### [SSIS Architecture](#tab/parameter-architecture-ssis)
 
 ![Parameters ETL Pattern](images/bfx-parameters-architecture-ssis.png "Parameters ETL Pattern") -->
 
-Using the above process, a package that tracks the maximum ID as a parameter can be rerun any number of times. Each time BimlFlex will store the maximum value and update it as it increases over time.
+The process starts before the main container (`SEQC - Main`).
 
-The process starts before the main container. The first control flow task looks up any relevant parameters. LookupParameter is used to check the catalog table `[BimlCatalog].[bfx].[ConfigVariable]` for the parameter that matches the current object being loaded.
+The initial Sequence Container (`SEQC - Get Parameters`) will have a Execute SQL Task to look up any relevant parameters.
+These task (`SQL - Get {Parameter}`) are used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
 
-The parameter value will be injected in to the source query in the normal data flow as a `WHERE` clause using the specified logic from the metadata.
+The retrieved value will be injected in to the source query filter clause using the specified logic from the metadata.
 
-After the load the Set Parameters tasks will get the new value for the parameter and update the `[BimlCatalog].[bfx].[ConfigVariable]` table.
-
-<!-- TODO: Reword above paragraph and align with ADF tone. -->
+The final Sequence Container (`SEQC- Set Parameters`) after the main logic then handles setting the parameters.
+There is a Execute SQL Task to grab the latest value (`SQL - Get Current {Parameter}`) from the staged data.
+A following Execute SQL Task (`SQL - Set {Parameter}`) is then used to persist the value retrieved into the BimlCatalog.
 
 ### [ADF Architecture](#tab/parameter-architecture-adf)
 
@@ -51,13 +105,15 @@ After the load the Set Parameters tasks will get the new value for the parameter
 
 Activities are added to the beginning of the pipeline that retrieve the last value and the next value to be recorded after execution completes.
 
-The initial Lookup Activity (`LKP_{Parameter}`) is used to check the BimlCatalog table `[bfx].[ConfigVariable]` for `[VariableName]` record labeled as the *PARAMETER* (`LastLoadDate`) value.
+The initial Lookup Activity (`LKP_{Parameter}`) is used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
+If none are present it will generate one using the *DEFAULT* value that is configured.
+If one is present it will retrieve the value.
 The retrieved `[VariableValue]` value is then used to define the starting range`*` for the Source Query.
 
 The other Lookup Activity (`LKP_{ParameterToName}`) is used to query the Source System.
-This uses the *PARAMETER SQL* against the *COLUMN* and stores the value in the pipeline as the *PARAMETER TO NAME* (`NextLoadDate`).
+This uses the *PARAMETER SQL* against the *COLUMN* and stores the value in the pipeline as the *PARAMETER TO NAME*.
 
-These values are then injected into the `WHERE CLAUSE` to limit values that are then returned from the Source System.
+These values are then injected into the source query filter clause to limit values that are then returned from the Source System.
 
 > [!NOTE]
 > `*`: While the terms "starting range" and "ending range" have been used here, the actual comparison used is defined by the *OPERATOR* or *PARAMETER TO OPERATOR* fields respectively.
@@ -66,7 +122,7 @@ These values are then injected into the `WHERE CLAUSE` to limit values that are 
 >
 > Example: `[SalesLT].[ModifiedDate]` > `LastLoadDate` AND `[SalesLT].[ModifiedDate]` <= `NextLoadDate`
 
-The ending SQL Server Stored Procedure Activity (`LOG_{Parameter}`) is then used to persist the value retrieved by the *PARAMETER TO NAME* (`NextLoadDate`) into the BimlCatalog table `[bfx].[ConfigVariable]`.
+The ending SQL Server Stored Procedure Activity (`LOG_{Parameter}`) is then used to persist the value retrieved by the *PARAMETER TO NAME* into the BimlCatalog.
 
 ***
 
@@ -83,98 +139,175 @@ To add a new parameters, click the `+` button in the tree view menu.
 
 ![BimlFlex - Parameters Editor](images/bfx-parameters-editor.png "BmilFlex - Parameters Editor")
 
-On this screen, toplevel configurations to **Connection**, **Object**, **Column** may be selected from dropdown menus.
-Additional settings relating to the same parameter are maintained below, on the same page.
-Fields highlighted in red are required to save the Parameter.
-<!-- TODO: Rewrite -->
-
 ### Base Parameter
 
 The Base Parameter settings are the core fields that are required for Package/Pipeline level Parameter.
-With the exception of *PARAMETER SQL*, these are all Source System agnostic.
-This means configuration of the base **Parameter** itself remains the same across Source Systems.
-<!-- TODO: More detail -->
+With the exception of *PARAMETER SQL*, these are Source System agnostic.
+Configuration of the base **Parameter** itself remains the same across Source Systems.
 
 #### [Description](#tab/parameter-base)
 
-|Field|Description|
-|-|-|
-| Connection | The **Connection** this parameter is associated with. Parameters can be associated with Connections, Objects and Columns.  Must be an existing **Connection**. |
-| Object | The **Object** this parameter is associated with.  Must be an existing **Object**. |
-| Column | The **Column** this parameter is associated with.  Must be an existing **Column**. |
-| Parameter | The name of the parameter. |
-| Operator | This defines the operator used in the `WHERE` clause in the source select query. For a high watermark load pattern, the `>` is commonly used to load data with a higher value than the last time. |
-| Default | The parameter load value to use for the first load. |
-| Datatype | The Data Type to use for the parameter. For Dates, this is commonly defined as `String` as SSIS sometimes finds it easier to deal with string representations.  Must be a valid [Data Type](#data-types). |
-| Parameter SQL | The SQL Query to use to derive the new parameter value, commonly used to get the max value from the loaded data and use that as the from parameter value in the next load. |
-| Parameter Ordinal | (Optional) The order of the parameter. |
-| Description | (Optional) Free text description. |
-<!-- TODO: More detail -->
+| Field                 | Description                                                                                |
+| --------------------- | ------------------------------------------------------------------------------------------ |
+| Connection            | The **Connection** this parameter is associated with.  Must be an existing **Connection**. |
+| Object                | The **Object** this parameter is associated with.  Must be an existing **Object**.         |
+| Column                | The **Column** this parameter is associated with.  Must be an existing **Column**.         |
+| Parameter             | The name of the parameter.                                                                 |
+| Operator              | Operator to use again the *PARAMETER* when applied to the source **Column**.               |
+| Default               | The parameter load value to use for the first load.                                        |
+| Datatype`*`           | The Data Type to use for the parameter.  Must be a valid [Data Type](#data-types).         |
+| Parameter SQL`**`     | The query logic to derive the new parameter value.                                         |
+| Execute SQL On Source | When enabled executes the SQL on the source instead of the destination.                    |
+| Parameter Ordinal     | (Optional) The order of the parameter.                                                     |
+| Description           | (Optional) Free text description.                                                          |
+| Not Persisted         | Whether the parameter should be persisted to `[bfx].[ConfigVariable]`.                     |
+| Project Parameter     | Project level Parameters that are commonly available in all packages in the project.       |
 
 #### [Example](#tab/parameter-base-example)
 
-|Field|Description|
-|-|-|
-| Connection | AWLT_SRC |
-| Object | SalesLT.Address |
-| Column | ModifiedDate |
-| Parameter | LastLoadDate |
-| Operator | > |
-| Default | 1900-01-01 |
-| Datatype | String |
-| Parameter SQL | See [Parameter SQL](#parameter-sql) for examples|
-| Parameter Ordinal |  |
-| Description |  |
-<!-- TODO: More detail -->
+| Field                 | Description                                                     |
+| --------------------- | --------------------------------------------------------------- |
+| Connection            | AWLT_SRC                                                        |
+| Object                | SalesLT.Address                                                 |
+| Column                | ModifiedDate                                                    |
+| Parameter             | LastLoadDate                                                    |
+| Operator              | >                                                               |
+| Default               | 1900-01-01                                                      |
+| Datatype`*`           | String                                                          |
+| Parameter SQL`**`     | CONVERT(VARCHAR(27),MAX(@@this),121)                            |
+| Execute SQL On Source | `true`                                                          |
+| Parameter Ordinal     | 1                                                               |
+| Description           | Parameter to record the high water mark when loading the table. |
+| Not Persisted         | `false`                                                         |
+| Project Parameter     | `false`                                                         |
 
 ***
 
-### Parameter SQL
+> [!NOTE]
+> `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.
+> `**`: See [Parameter SQL](#parameter-sql) for more examples
+
+> [!IMPORTANT]
+> `Execute SQL On Source`, along with `Parameter To Name` and `Parameter To Operator`, are required fields when configuring a **Parameter** for ADF.
+
+#### Default
+
+The parameter load value to use the first time the load happens, when there is no existing parameter value stored in the BimlCatalog database. For high watermark scenarios this is commonly a valid value guaranteed to be lower than any existing data, such as `1900-01-01` for dates. When adding dates in Excel, use the text-defining prefix so the data is kept as text rather than transformed into Excels internal date format, `'1900-01-01`.
+
+#### Parameter SQL
 
 Although the field is named *PARAMETER SQL*, it is easier to this of this field as a Parameter *QUERY*.
-In a SQL based Source System this will correlate to a SQL Statement that is appended to the the `WHERE` clause
-<!-- TODO: More detail -->
+In a SQL based Source System this will correlate to a SQL Statement that is appended to the the `WHERE` clause.
+In Dynamics, this will be an XML based statement for a `<attribute/>` under the `<fetch/entity/>` node or a complete replacement of the generated `<fetch/>` statement.
+
+> [!IMPORTANT]
+> Ensure this value is configured to align with how *EXECUTE SQL ON SOURCE* is configured.
+> When `true` this should mirror the syntax needed on the Source System.
+> When `false` this should mirror the syntax needed on the Target System.
 
 #### [T-SQL (Microsoft)](#tab/parameter-sql-tsql)
 
-<!-- TODO: More detail -->
+| Field            | Description                          |
+| ---------------- | ------------------------------------ |
+| Parameter SQL`*` | CONVERT(VARCHAR(27),MAX(@@this),121) |
 
 #### [SnowSQL](#tab/parameter-sql-snowsql)
 
-<!-- TODO: More detail -->
+| Field            | Description                                          |
+| ---------------- | ---------------------------------------------------- |
+| Parameter SQL`*` | TO_VARCHAR(MAX(@@this), 'YYYY-MM-DD HH24:MI:SS.FF9') |
 
 #### [Oracle](#tab/parameter-sql-oracle)
 
-<!-- TODO: More detail -->
+| Field            | Description                                                                |
+| ---------------- | -------------------------------------------------------------------------- |
+| Parameter SQL`*` | CAST(TO_CHAR(MAX(@@this), 'YYYY-MM-DD HH24:MI:SS.FFFFFF') AS VARCHAR2(27)) |
 
-#### [Dynamics](#tab/parameter-sql-dynamics)
+#### [PostgresSQL](#tab/parameter-sql-postgres)
 
-<!-- TODO: More detail -->
+| Field            | Description                                                        |
+| ---------------- | ------------------------------------------------------------------ |
+| Parameter SQL`*` | CAST(TO_CHAR(MAX(@@this), 'YYYY-MM-DD HH24:MI:SS') AS VARCHAR(23)) |
 
-<!-- TODO: Call out Dynamics 3 types of behaviors -->
+#### [MySQL](#tab/parameter-sql-mysql)
+
+| Field            | Description                                                                    |
+| ---------------- | ------------------------------------------------------------------------------ |
+| Parameter SQL`*` | LEFT(DATE_FORMAT(DATE_ADD(MAX(@@this), INTERVAL 0 DAY), '%Y-%m-%d %T.%f'), 27) |
+
+#### [Dynamics - Attribute](#tab/parameter-sql-dynamics-fetch)
+
+| Field             | Description                                                               |
+| ----------------- | ------------------------------------------------------------------------- |
+| Parameter SQL`**` | \<attribute name="modifiedon" alias="next_modifiedon" aggregate="max" /\> |
+
+Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
+
+```XML
+<fetch distinct="false" mapping="logical" aggregate="true">
+  <entity name="{object}">
+  {Parameter SQL Value}
+  </entity>
+</fetch>
+```
+
+> [!IMPORTANT]
+> This pattern is only valid for Dynamics entities with less than 50k records.
+> If the Dynamics Entity has more than 50k records then use the [Dynamics - Blank](#tab/parameter-sql-dynamics-fetch) or [Dynamics - Fetch](#parameter-sql-dynamics-fetch) patterns.
+
+#### [Dynamics - Blank](#tab/parameter-sql-dynamics-fetch)
+
+When *PARAMETER SQL* is blank BimlFlex will generate a `<fetch/>` statement using the following pattern.
+
+Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
+
+```XML
+<fetch distinct="false" mapping="logical">
+    <entity name="{object}">
+        <attribute name="{column}" alias="{Parameter To Name}" />
+        <order attribute="{column}" descending="true" />
+    </entity>
+</fetch>
+```
+
+> [!TIP]
+> If you require more advanced logic you can customize the entire `<fetch/>` statement simply by defining it.
+
+#### [Dynamics - Fetch](#tab/parameter-sql-dynamics-fetch)
+
+| Field             | Description                                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Parameter SQL`**` | \<fetch distinct="false" mapping="logical"> <br/>&nbsp;&nbsp;&nbsp;&nbsp;\<entity name="account"> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<attribute name="modifiedon" alias="next_modifiedon" aggregate="max" /> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<order attribute="modifiedon" descending="true" /> <br/>&nbsp;&nbsp;&nbsp;&nbsp;\</entity> <br/>\<fetch/> |
 
 ***
 
-### Window Parameter
+> [!NOTE]
+> `*`: All SQL based Source Systems will have similar pattern but differ in syntax.  
+> `**`: When using Dynamics the first characters determine logic.  If the *PARAMETER SQL* starts with `<fetch` then it will override the entire fetch statement with.  If not, it will insert the statement 
+
+
+### Window Parameters
 
 **Window Parameters** are configured to load between two points.
-<!-- TODO: More detail -->
+
+Useful when it is not possible to derive the new parameter from the destination, such as a Blob file.
+This allows the from and to to be derived and applied in the source query using only the source data.  
+
+These get configured by defining the below fields.
 
 #### [Description](#tab/parameter-window)
 
-|Field|Description|
-|-|-|
-| Parameter To Name | Useful for windowed loads or when it is not possible to derive the new parameter from the destination. When loading to Blob files it is not possible to query the created file to get the new parameter value, so this allows the from and to to be derived and applied in the source query using only the source data.  Cannot be same as Parameter Name. |
-| Parameter To Operator | The Parameter To Operator - see above. |
-<!-- TODO: More detail -->
+| Field                 | Description                                                                          |
+| --------------------- | ------------------------------------------------------------------------------------ |
+| Parameter To Name     | Name of the parameter ending window parameter.  Cannot be same as Parameter Name.    |
+| Parameter To Operator | Operator to use again the *PARAMETER TO NAME* when applied to the source **Column**. |
 
 #### [Example](#tab/parameter-window-example)
 
-|Field|Description|
-|-|-|
-| Parameter To Name | NextLoadDate |
-| Parameter To Operator | <= |
-<!-- TODO: More detail -->
+| Field                 | Description  |
+| --------------------- | ------------ |
+| Parameter To Name     | NextLoadDate |
+| Parameter To Operator | <=           |
 
 ***
 
@@ -183,71 +316,29 @@ In a SQL based Source System this will correlate to a SQL Statement that is appe
 
 ### Parameter Overrides
 
-The override fields require more advanced usage.
-They are provided to either apply alternate workarounds or replace the automate code generation with a manual text.
-<!-- TODO: More detail -->
+These are provided to either apply alternate workarounds or replace sections of the the automated code generation.
 
 #### [Description](#tab/parameter-override)
 
-|Field|Description|
-|-|-|
-| Execute SQL On Source | Execute SQL On Source - Whether to execute the SQL on the source. |
-| Column Expression | Used to override the column part of the WHERE clause in the source query to tweak the column expression. Useful when extra logic is required for the filter. |
-| Parameter SQL Expression | The Parameter SQL Expression. |
-| Parameter Override | Used to override the parameter part of the WHERE clause in the source query to tweak the column expression. Useful when extra logic is required for the filter. |
-| Not Persisted | Whether the parameter should be persisted to `BimlCatalog.bfx.ConfigVariable` |
-| Project Parameter | Project level Parameters that are commonly available in all packages in the project. |
-<!-- TODO: More detail -->
+| Field                    | Description                                                                  |
+| ------------------------ | ---------------------------------------------------------------------------- |
+| Column Expression        | Used to override the column part of the WHERE clause in the source query.    |
+| Parameter SQL Expression | Used to override the entire WHERE clause in the source query.                |
+| Parameter Override       | Used to override the parameter part of the WHERE clause in the source query. |
 
 #### [Example](#tab/parameter-override-example)
 
-|Field|Description|
-|-|-|
-| Execute SQL On Source | `true` |
-| Column Expression |  |
-| Parameter SQL Expression |  |
-| Parameter Override |  |
-| Not Persisted | `false` |
-| Project Parameter | `false` |
-<!-- TODO: More detail -->
+| Field                    | Description                         |
+| ------------------------ | ----------------------------------- |
+| Column Expression        | COALESCE(ModifiedDate, CreatedDate) |
+| Parameter SQL Expression |                                     |
+| Parameter Override       | DATEADD(dd, -3, ?)                  |
+
+<!-- TODO: Add example Parameter SQL Expression -->
 
 ***
 
-> [!IMPORTANT]
-> `Execute SQL On Source`, along with `Parameter To Name` and `Parameter To Operator`, are required fields when configuring a **Parameter** for ADF.
-
-<!-- TODO: Review everything below. -->
-## Defining and overriding the parameter behavior
-
-There are several metadata fields to manage load parameters.
-
-### Parameter Operator
-
-This defines the operator used in the `WHERE` clause in the source select query. For a high watermark load pattern, the `>` is commonly used to load data with a higher value than the last time.
-
-### Parameter Default
-
-The parameter load value to use the first time the load happens, when there is no existing parameter value stored in the BimlCatalog database. For high watermark scenarios this is commonly a valid value guaranteed to be lower than any existing data, such as `1900-01-01` for dates. When adding dates in Excel, use the text-defining prefix so the data is kept as text rather than transformed into Excels internal date format, `'1900-01-01`.
-
-### Parameter Data Type
-
-The Data Type to use for the parameter. For Dates, this is commonly defined as `String` as SSIS sometimes finds it easier to deal with string representations.
-
-### ParameterSql
-
-The SQL Query to use to derive the new parameter value, commonly used to get the max value from the loaded data and use that as the from parameter value in the next load.
-
-sample metadata definition to get the max column value in date format
-
-```sql
-MAX(CONVERT(VARCHAR(10), @@this, 121))
-```
-
-### ParameterToName, ParameterToOperator, ExecuteSqlOnSource
-
-Useful for windowed loads or when it is not possible to derive the new parameter from the destination. When loading to Blob files it is not possible to query the created file to get the new parameter value, so this allows the from and to to be derived and applied in the source query using only the source data.
-
-### ParameterColumnExpression
+#### Column Expression
 
 Used to override the column part of the WHERE clause in the source query to tweak the column expression. Useful when extra logic is required for the filter.
 
@@ -257,7 +348,9 @@ Example expression
 COALESCE(ModifiedDate, CreatedDate)
 ```
 
-### ParameterOverride
+<!-- TODO: Add example output -->
+
+#### Parameter Override
 
 Used to override the parameter part of the WHERE clause in the source query to tweak the column expression. Useful when extra logic is required for the filter.
 
@@ -267,13 +360,16 @@ Example expression
 DATEADD(dd, -3, ?)
 ```
 
+<!-- TODO: Add example output -->
+
+<!-- TODO: Add #### Parameter SQL Expression -->
 ## Parameters in Extension Points
 
 Extension Point-based parameters are available for more complex scenarios where the logic needed for the flow and parameter isn't easily injected through the normal parameter process.
 
 It also supports specifying Project level Parameters that are commonly available in all packages in the project.
 
-### Extension Point Project Parameters
+### Extension Point Project Parameters (SSIS)
 
 Add Extension Points in BimlStudio.
 
@@ -291,13 +387,16 @@ The newly created file contains some sample scripts:
 <Parameter Name="UserPassword" DataType="String" IsRequired="true">P@ssw0rd!</Parameter>
 ```
 
-The directives are required for the Extension Point. An additional attribute for the target of the Extension Point needs to be specified. For a project parameter it is the name of the project it targets.
+The directives are required for the Extension Point. An additional attribute for the target of the Extension Point needs to be specified.
+For a project parameter it is the name of the project it targets.
 
 Once the Project Parameter is defined through the Extension Point it can be reused throughout the project in either metadata or additional Extension Points as needed.
 
-### Extension Point Package Parameters
+### Extension Point Package Parameters (SSIS)
 
-Package Parameters only affect the individual package it targets. Package parameters can be used when a single package requires bespoke logic that doesn't fit the existing parameter logic. These parameters can be used for any logic and might not need to be persisted in the BimlCatalog database.
+Package Parameters only affect the individual package it targets.
+Package parameters can be used when a single package requires bespoke logic that doesn't fit the existing parameter logic.
+These parameters can be used for any logic and might not need to be persisted in the BimlCatalog database.
 
 Add Extension Points in BimlStudio
 
@@ -314,6 +413,8 @@ The newly created file contains some sample scripts:
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>
 ```
 
-The directives are required for the Extension Point. An additional attribute for the target of the Extension Point needs to be specified. For a package parameter it is the name of the package it targets.
+The directives are required for the Extension Point.
+An additional attribute for the target of the Extension Point needs to be specified.
+For a package parameter it is the name of the package it targets.
 
 Once the Package Parameter is defined through the Extension Point it can be reused throughout the Package in either metadata or additional Extension Points as needed.
