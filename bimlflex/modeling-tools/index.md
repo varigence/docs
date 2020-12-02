@@ -26,3 +26,9 @@ The Schema Diagram provides an entity relation view of any set of metadata based
 The Column Mapping Diagram provides an view of one or more mapping relationships. It allows a user to get a quick view of mappings in a graphical interface. It allows the developer to easily add or remove mappings using column drag and drop. It also provides some of the most common actions that make sense in the context of data mapping.
 
 [More about Column Mapping](column-mapping.md)
+
+## Business Modeling
+
+The Business Modeling provides an interface for a team of business representatives working in conjunction with technical team members (IT, data analysts, or consultants) to detail the primary aspects of a business' interactions, objectives, and relationships. The Business model serves as the basis for Data Vault modeling.
+
+[More about Business Modeling](business-modeling.md)
