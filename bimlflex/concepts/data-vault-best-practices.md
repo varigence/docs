@@ -25,7 +25,9 @@ Create a map, model or diagram of core business concepts and relationships befor
 Mapping source systems to your `Business Entities` can be a challenge. However, the BimlFlex Accelerator simplifies the process by applying standard Data Vault patterns.
 
 > [!IMPORTANT]
-> It is highly recommended to have a `Business Entities` in place before using the `Data Vault Accelerator` for optimal results. We are adding additional support to create `Business Models` in an upcoming version of BimlFlex.
+> It is highly recommended to have a `Business Entities` in place before using the `Data Vault Accelerator` for optimal results. 
+
+<!-- We are adding additional support to create `Business Models` in an upcoming version of BimlFlex. -->
 
 #### Hash Key
 

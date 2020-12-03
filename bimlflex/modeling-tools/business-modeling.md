@@ -3,7 +3,7 @@ uid: business-modeling
 title: Business Modeling Overview
 summary: Overview of the Business Modeling process within BimlFlex application, including conceptual origin, creating a model, action bar, settings, and relationship models
 ---
-
+<!--
 # Business Modeling
 
 ## Business Modeling Conceptually
@@ -105,3 +105,4 @@ From the Relationship Modeling screen, users will be able to drag Hubs and Links
 Creating an agile data warehouse through Business Modeling changes the focus from optimizing existing data to ensuring that all of the proper business relationships and entities are accounted for.
 Once a business model has been created, tweaked, and agreed upon by both business professionals and IT/technical consultants, the data is then loaded into those Hubs and Links based on the agreed upon design.
 Creating a functional business model puts the onus on accurately organizing data before loading it, rather than conversely trying to organize an entire source database of data into proper Hubs and Links.
+-->
