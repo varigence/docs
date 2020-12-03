@@ -32,7 +32,6 @@ Additional documentation providing a step-by-step walkthrough for this process: 
 * New customer scenarios for cloud-only users.
 * Improved delete detection.
 * Substantially improved load performance within the BimlFlex application.
-* Preview build of BimlFlex's Business Modeling capabilities.
 
 ## Settings Changes
 
@@ -117,11 +116,13 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 
 Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 
+<!--
 ## Business Modeling
 
 * BimlFlex now features the ability to use a business modeling approach to Data Vault modeling.
 
 Read More on the exciting new Business Modeling functionality here: [Business Modeling in BimlFlex](xref:business-modeling)
+-->
 
 ## Data Mart/Data Vault
 

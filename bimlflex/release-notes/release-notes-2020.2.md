@@ -15,6 +15,8 @@ BimlFlex 2020 R2 is installed and upgraded through a single consolidated install
 
 ## Latest Release
 
+Build 20.2.331.0, release date: 27 Oct 2020
+
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.331.0.exe)
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.331.0.exe)
@@ -42,7 +44,6 @@ The default installation location has been updated. Previous installations place
 * New customer scenarios for cloud-only users.
 * Improved delete detection.
 * Substantially improved load performance within the BimlFlex application.
-* Preview build of BimlFlex's Business Modeling capabilities.
 
 ## Settings Changes
 
@@ -129,11 +130,13 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 
 Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 
+<!--
 ## Business Modeling
 
 * BimlFlex now features the ability to use a business modeling approach to Data Vault modeling.
 
 Read More on the exciting new Business Modeling functionality here: [Business Modeling in BimlFlex](xref:business-modeling)
+-->
 
 ## Data Mart/Data Vault
 

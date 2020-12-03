@@ -27,8 +27,10 @@ The Column Mapping Diagram provides an view of one or more mapping relationships
 
 [More about Column Mapping](column-mapping.md)
 
+<!--
 ## Business Modeling
 
 The Business Modeling provides an interface for a team of business representatives working in conjunction with technical team members (IT, data analysts, or consultants) to detail the primary aspects of a business' interactions, objectives, and relationships. The Business model serves as the basis for Data Vault modeling.
 
 [More about Business Modeling](business-modeling.md)
+-->
