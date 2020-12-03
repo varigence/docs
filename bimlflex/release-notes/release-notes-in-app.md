@@ -3,14 +3,14 @@ uid: bimlflex-release-notes-in-app
 name: BimlFlex Release Notes for Application
 Summary: Release Notes for current and most recent version of BimlFlex, specific to In App window viewing
 ---
-# Preview Release Notes
+# Release Notes
 
 > [!IMPORTANT]
->BimlFlex has been updated to version 2020 R2 Preview
+>BimlFlex has been updated to version 2020 R2
 
 ## Latest Release
 
-Build 20.2.331.0, release date: 27 Oct 2020
+Build 20.2.382.0, release date: 3 Dec 2020
 
 ## Breaking Changes
 

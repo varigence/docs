@@ -3,13 +3,13 @@ uid: bimlflex-release-notes-2020.2
 name: BimlFlex Release Notes
 Summary: Release Notes for BimlFlex 2020.2
 ---
-# Preview Release Notes
+# Release Notes
 
 > [!NOTE]
 > Please make sure databases and projects are backed up before upgrading.  
 > Please email support@bimlflex.com with any installation or upgrade issues.
 
-## BimlFlex 2020 R2 Preview
+## BimlFlex 2020 R2
 
 BimlFlex 2020 R2 is installed and upgraded through a single consolidated installer.
 
