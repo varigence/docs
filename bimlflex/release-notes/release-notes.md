@@ -1,6 +1,7 @@
 ---
-uid: bimlflex-release-notes-2020-R1
-name: BimlFlex Release Notes 2020 R1
+uid: bimlflex-release-notes-2020-R2
+name: BimlFlex Release Notes 2020 R2
+summary: release notes for current version of BimlFlex
 ---
 # Release Notes
 
@@ -8,41 +9,61 @@ name: BimlFlex Release Notes 2020 R1
 > Please make sure databases and projects are backed up before upgrading.  
 > Please email support@bimlflex.com with any installation or upgrade issues.
 
-## BimlFlex 2020
+## BimlFlex 2020 R2
 
-BimlFlex 2020 is installed and upgraded through a single consolidated installer.
+BimlFlex 2020 R2 is installed and upgraded through a single consolidated installer.
 
 ## Latest Release
 
-Build 5.0.64678.0, release date: 1 June 2020
+Build 20.2.382.0, release date: 3 Dec 2020
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.382.0.exe)
     This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.382.0.exe)
     This installer includes the required runtime components for servers that will execute SSIS packages
 
-<!-- TODO: await next release R2
+## Breaking Changes
 
-## Build 20.2.nnn.0, release date: nn mmmm 2020
+The Excel add-in location has been updated. The location of the add-in must be updated in the Excel file. This is automatically done when the `BimlFlex.xlsx` file is opened from BimlStudio. BimlStudio also has an upgrade function available in the Excel Metadata Editor dropdown that allows manual upgrades of existing Excel files. If the `BimlFlex.xlsx` file is opened directly from Excel or from the Windows file explorer it will display an error message similar to this:
 
-* Add: New Project settings for SSDT Project Control
-* Add: ADF Flat File load support. More information on the ADF Flat File load process: [Flat File Source to Staging](xref:flat-file-source-to-staging)
-* Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
-* Update: TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts
-* Update: Added additional delete detection functionality
-  Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
-* Update: A scenario where the Data Vault Point In Time object creation would not allowed the object to be saved unless there were attribute datetime columns present has been addressed.
-* Update: The layout in the Accelerator page has been updated and the source pane is now closed by default. Click the open arrow to open the source pane to view the active source objects.
-* Update: The Accelerator and Data Vault process has several new optional configurations to better control Data Vault behavior.
-  Read More on the updated delete functionality here: [TO DO](xref:TODO: Add link)
-  This includes settings to control if individual source keys should be added to the Hubs and Links as attributes, if Link Satellites should use record source naming convention by default, if Link Satellite keys should e
+`file:///C:/Program Files/Varigence/BimlFlex/5.0/BimlFlexAddin.vsto did not succeed.`
 
-The Following settings have been added to control the Data Vault Accelerator:
+Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or upgrade the Excel file from the advanced options in the BimlFlex ribbon UI, in the Excel Metadata Editor dropdown to allow it to work as expected. Once the Excel file is upgraded it can be opened directly from Excel or the Windows file explorer again.
 
-* TODO: ADD
+Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Add-in](xref:excel-metadata-addin)
 
+The default installation location has been updated. Previous installations placed the application files in a version-number-based sub-folder under the Program Files\Varigence installation. This version removes the version-number sub-folder. For scenarios where the path is used the process should be updated to reflect the new path.
 
-The following settings have been added to the Ssdt group:
+## 2020 R2 New Features
+
+* New features and behaviors for BimlFlex Accelerator.
+* New BimlFlex in-app Help Sidebar added to all metadata editor screens.
+* Improved UI for Editor screens.
+* Global navigation to transition between Projects, Connections, Objects, and Columns in a single click.
+* Enhanced support for ADF and Snowflake.
+* New customer scenarios for cloud-only users.
+* Improved delete detection.
+* Substantially improved load performance within the BimlFlex application.
+
+## Settings Changes
+
+A new setting, `SsisHashNullValue`, has been added to the Core settings group. This allows control of the Null Value replacement string that is used in the SSIS packages call to the Hashing custom component. This value is left blank for backwards compatibility with previous behavior. For full SQL hash compatibility, consider using the same null-value replacement as for the `HashNullValue` setting. For backwards compatibility with existing data hashed through the SSIS components, leave it blank.
+
+The Accelerator and Data Vault processes have several new optional configurations to better control Data Vault behavior.
+
+* Added settings to control if individual source keys should be added to Hubs and Links as attributes.
+* Added settings for if Link Satellites should use record source naming convention by default.
+* The Existing Setting `SsdtOutputPath` has been moved to the SSDT settings group.
+* Toggle setting added to display backbone (Hubs and Links only) for accelerated models.
+* Toggle setting added to display datatypes for columns for both source models and accelerated models.
+
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+
+The following setting has been added to control the Data Vault Accelerator:
+
+* DvAppendLinkSatelliteRecordSource
+
+The following settings have been added to the SSDT group:
 
 * SsdtIncludeExternalTables
 * SsdtIncludeMasterKey
@@ -55,228 +76,120 @@ The following settings have been added to the Ssdt group:
 * SsdtDefaultExternalDataSource
 * SsdtDefaultExternalFileFormat
 
-The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group
-
 More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](xref:bimlflex-ssdt-project)
 
-Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation and additional defaults for dependency objects.
+## Azure Data Factory (ADF)
 
-download links to this build:
+* Added ADF Flat File load support. This includes Delimited, ORC, Avro, XML and binary files. More information on the ADF Flat File load process: [Flat File Source to Staging](xref:flat-file-source-to-staging).
+* Scenarios where an SSIS load to Synapse blob storage staging file archive process used the archive SAS Token to connect to the staging account has been addressed.
+* Fixed an error in the app for blob storage connections that created empty string names for the integration runtime.BimlStudio errors when attempting to create an integration runtime with an empty string as a name.
+* Updated AKV linked services to use the actual url of the key vault.
+* Fixed an issue with file column names in Blob Sources.
+* Improved connection string emission to deviate from the SecureString pattern. This populates the appropriate subfields inside of Azure after deploying assets.
+* Fixed an issue when deploying by ARM template, that caused the Azure Blob Storage authentication method to incorrectly register as Service Principal ID.
+* Integration Runtimes can now pass into BLOB Storage and DataLakeStoreGen2 Linked Services.
+* Fixed an issue with `Hash Column` of large Synapse Tables (greater than 500 columns).
 
-* [bimlflexdevsetup_20.2.nnn.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.nnn.0.exe)
-* [bimlflexruntimesetup_20.2.nnn.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.nnn.0.exe)
+More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](xref:bfx-arm-template)
 
+## BimlFlex App Help Sidebar Navigation
+
+BimlFlex now features sidebar Help sections for the following editor screens:
+
+* Accelerator
+* Schema Mapping
+* Column Mapping Diagram
+
+The Help section sidebar navigation also features links to BimlFlex documentation for technical assistance and walkthroughs for features relevant to the page in which Help is being accessed.
+
+## UI Improvements
+
+* Autoselect customers on database change.
+* The layout in the Accelerator page has been updated so the source pane is closed by default. Click the open arrow to view the source pane and its active source objects.
+* Improved entity and model border styling.
+* Improved app navigation and user experience when creating a new entity.
+* Enabled users to create PIT tables without datetime columns.
+* Enabled users to specify modeling patterns with ELM set as the default methodology.
+* Prevent navigation when there are pending configuration changes.
+
+## BimlFlex Accelerator
+
+* Updated so that Connection point handles are displayed upon selection of entities.
+* Context menu appears on paths when location is selected.
+* Path calculation is updated to support multiple connection points between entities.
+* Drag and drop behavior is updated to add references between connection points.
+* Ellipses outside of nodes added to match application stylings.
+* Relationship modeling default grid layout now adds the relationships between entities, with smaller connectors.
+* Merged UOW now uses material modals.
+* UOW drag now only highlights valid targets.
+
+## Delete Detection
+
+* Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
+* The Delete Detection Object Model has been updated. For implementations that use bespoke Delete Detection Scripts, certain attributes will need to be updated to correctly refer to the new object model.
+
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+
+<!--
+## Business Modeling
+
+* BimlFlex now features the ability to use a business modeling approach to Data Vault modeling.
+
+Read More on the exciting new Business Modeling functionality here: [Business Modeling in BimlFlex](xref:business-modeling)
 -->
 
-## BimlFlex 2020 Feature Highlights
+## Data Mart/Data Vault
 
-* Expanded support for Azure Data Factory
-* Data Mappings visualizations and editor for BimlFlex App
-* BimlCatalog Operational Reporting in BimlFlex App
-* Restructure BimlCatalog for more agnostic logging
-* Additional Extension Points for bespoke processing requirements
-* Additional automation script creation for build and deployment
-* Support for Microsoft Dynamics CRM as source in Azure Data Factory projects
+* Added a fix to correctly calculate `FlexRowHashtype1` on fact tables by using source column data types.
+* Fixed an issue where the `Clone` action would include 'Transient' (TRS) and 'Ignore' (IGN) columns, as these change types are to indicate no further processing.
+* Resolved an issue where the Data Vault Point In Time object creation would not allow the object to be saved unless there were attribute datetime columns present.
+* Fixed an issue with duplicate surrogate keys in STG table for REF tables.
+* Ensured all references to bridge objects to use 'BRG' rather than 'BRD', to enforce uniformity.
 
-### Expanded support for Azure Data Factory
+## Providers
 
-BimlFlex now has full support for Azure Data Factory (ADF) workflows for Azure Synapse, Azure SQL DB and Snowflake target data warehouses.
+* Fixed an issue with `Oracle` import where `UNISTR()` was required.
+* Fixed a metadata import issue for `MSOLEDBSQL` provider.
 
-This includes full support to build Azure ARM templates for direct deployment of the pipelines to Azure as well as json file generation for individual deployments and deployment through the ADF DevOps git integration.
+## Dynamics CRM
 
-More information on ADF here: [ADF Deployment Overview](xref:adf-deployment-overview)
+* Fixed an issue where **Parameters** would not retrieve from an Entity with >= ~50,000 records.
+* Added the ability to override the `<fetch/>` XML statement of a **Parameter** through *PARAMETER SQL*.
+* Added the ability to automatically generate the `<fetch/>` XML statement of a **Parameter** by leaving *PARAMETER SQL* blank.
 
-### Data Mappings visualizations and editor for BimlFlex App
+## BimlFlex DB
 
-The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
+* Removed `ImportRequests` table from database.
+* Updated the SP to force include customer and version entities in metadata push so metadata sets will work when no corresponding customer or version exists.
 
-More information on the BimlFlex app here: [Metadata Editors Overview](xref:metadata-editors-overview)
+## BimlCatalog DB
 
-### BimlCatalog Operational Reporting in BimlFlex App
+* Resolved a `RowCount` stored procedure issue that resulted in orphaned open transactions.
 
-The BimlFlex app has been updated with BimlCatalog Operational Reporting capabilities.
+## SQL Based ELT
 
-These reports allow direct access to the logging in the BimlCatalog from the app and help with both development and operational insights
+* Fixed an issue where `End Date` would only generate an update for one record.
+* Fixed an issue where `End Date` was retrieving the incorrect date.
+* Fixed an issue where `FlexRowIsCurrent` was not populating with values.
+* Added additional logic for RowAuditId. For a solution where RowAuditId is set to derived for target Data Vault objects, the load Stored Procedures will now correctly derive the required syntax, regardless of any additional settings.
 
-More information on operational reporting here: [BimlFlex Operational Reports](xref:bimlflex-operational-reports)
+## SSIS
 
-### Restructure BimlCatalog for more agnostic logging
-
-The BimlCatalog schema has been updated with agnostic table names.
-
-Reporting views and Stored Procedures are unchanged.
-
-ADF Stored Procedures have been updated to better support logging and orchestration.
-
-More information on the BimlCatalog here: [BimlCatalog database](xref:bimlcatalog-database)
-
-### Additional Extension Points for bespoke processing requirements
-
-Several new Extension Points have been added to BimlFlex.
-
-Many are targeting SQL Script processing, allowing better flexibility for cloud implementations and ADF workflows.
-
-### Additional support script creation for build and deployment
-
-BimlStudio now creates additional build and deploy scripts for easy automation.
-
-When building a project, the output folder now contains the following two new folders with the new artifacts:
-
-* `Build`  
-    Automated build scripts and settings.  
-    Separate build script for SSDT projects for scenarios like SSIS where there is a dependency on tables before build
-* `Deploy`  
-    PowerShell scripts for building SSDT Projects and deploying SSDT and SSIS Projects
-
-### Support for Microsoft Dynamics CRM as source in Azure Data Factory projects
-
-New Feature: BimlFlex support for cloud and On-Premises Microsoft Dynamics CR sources for Azure Data Factory projects.
-
-This allows direct metadata import from Dynamics CRM into the BimlFlex metadata through the Metadata Import function in the BimlFlex App. Modeling and metadata management is performed as needed and the pipelines to load the data from the source is part of the created Azure Data Factory pipeline
-
-### Changes to settings
-
-The settings have been updated. New settings are available, some settings have been changed, renamed or reorganized.
-
-> [!WARNING]
-> Breaking Changes  
-> For scenarios where a changed setting is used in Extension Points or referenced elsewhere (such as in an SSIS Catalog environment project parameter) the corresponding syntax change needs to be made to match the new names
-
-#### New Settings
-
-| Setting                 | Description |
-| -------                 | ----------- |
-| AzCopyLogLevel          | The log level for AzCopy v.10 logs. Available log levels are: NONE, DEBUG, INFO, WARNING, ERROR, PANIC, and FATAL |
-| AzureArchiveContainer   | The Container Name to use for the archive process. This should be indicative of the purpose of the contents, such as "archive" |
-| AzureArchiveAccountKey  | A Storage access key to use when accessing the Blob storage. use a separate development environment and manage production keys outside the BimlFlex metadata |
-| AzureArchiveAccountName | The Azure Blob Storage Account Name to use for archiving data as files in blob storage. This is the default archive destination for the staging to archive file move process for BimlFlex solutions using Azure Synapse as destination. The Account Name is visible in the Azure Portal as the main name of the Storage Account. It is also detailed in the Settings, Access Keys blade |
-| AzureArchiveSasToken    | A Storage access SAS Token to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
-| AzureStageContainer     | The Container Name to use for the staging process. This should be indicative of the purpose of the contents, such as "staging" |
-| AzureStageAccountKey    | A Storage access key to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
-| AzureStageAccountName   | The Azure Blob Storage Account Name to use for staging data as files in blob storage. This is the default destination for the source to staging file upload process for BimlFlex solutions using Azure Synapse as destination. The Account Name is visible in the Azure Portal as the main name of the Storage Account. It is also detailed in the Settings, Access Keys blade |
-| AzureStageSasToken      | A Storage access SAS Token to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
-| AzureFunctionBridgeKey  | The default Azure Function Bridge Key to use |
-| AzureFunctionBridgeName | The default Azure Function Bridge Name to use |
-| AzurePolybaseSettings   | The default Azure PolyBase settings to use |
-| AzureResourceGroup      | The default Azure Resource Group name to use |
-| AzureErrorContainer     | The Container Name to use for the Error process. This should be indicative of the purpose of the contents, such as "error" |
-| AzureErrorAccountKey    | A Storage access key to use when accessing the Blob storage. use a separate development environment and manage production keys outside the BimlFlex metadata |
-| AzureErrorAccountName   | The Azure Blob Storage Account Name to use for error files in blob storage. This is the default Error location for BimlFlex solutions using Azure Synapse as destination. The Account Name is visible in the Azure Portal as the main name of the Storage Account. It is also detailed in the Settings, Access Keys blade |
-| AzureErrorSasToken      | A Storage access SAS Token to use when accessing the Blob storage. Use a separate development environment and manage production keys outside the BimlFlex metadata |
-| AzureSubscriptionId     | The default Azure SubscriptionId to use |
-| DvSingleChangeSatellite | Satellite loaded with single change |
-| SsisDb                  | The SSISDB database name to use |
-| SsisFolder              | The SSIS Catalog folder name to use for generated Script files |
-| SsisServer              | The SSIS Server name to use for generated Script files |
-| DeleteDetectionApplyPsa | Use default process to insert detected deletes into the Persistent table. This can be overridden by the "DeleteDetectionApplyPsa" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
-| DeleteDetectionApplyRdv | Use default process to insert detected deletes into the Data Vault Satellite tables. This can be overridden by the "DeleteDetectionApplyRdv" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
-| PsaDeltaDetectionSql    | Should the delta detection for PSA load use SQL |
-| PsaDeltaLateArriving    | Does the PSA load include late arriving deltas |
-| PsaDeltaSingleChange    | Set this to "Y" if loading into PSA and the Delta only has single changes to each key. This will provide optimized ELT loads |
-| PsaDeltaStageAllRows    | Should the Delta process stage all rows or compress row-changes |
-| PsaEltDeltaIsDerived    | Set this to "Y" if loading into PSA and the Delta has already been derived in the file. This will provide optimized ELT loads |
-| StageBypassPsaChecks    | Set to "Y" to bypass all Persistent Lookup and Checks and apply all records to Staging and Persistent Staging tables. |
-
-#### Changed settings
-
-| Old Key Name                   | New Key Name            |
-| ------------                   | ------------            |
-| AzureDestStorageAccountName    | AzureStageAccountName   |
-| AzureDestStorageAccountKey     | AzureStageAccountKey    |
-| AzureDestStorageSasToken       | AzureStageSasToken      |
-| AzureDestContainerName         | AzureStageContainer     |
-| AzureSourceStorageAccountName  | AzureErrorAccountName   |
-| AzureSourceStorageAccountKey   | AzureErrorAccountKey    |
-| AzureSourceStorageSasToken     | AzureErrorSasToken      |
-| AzureSourceContainerName       | AzureErrorContainer     |
-| AzureArchiveStorageAccountName | AzureArchiveAccountName |
-| AzureArchiveStorageAccountKey  | AzureArchiveAccountKey  |
-| AzureArchiveStorageSasToken    | AzureArchiveSasToken    |
-| AzureArchiveContainerName      | AzureArchiveContainer   |
-
-#### Changed defaults
-
-| Setting        | Old Value | New Value |
-| -------        | --------- | --------- |
-| DvAppendBridge | BRD       | BRG       |
-
-#### New Metadata Importer Settings
-
-New Settings for metadata importer behavior control. The Metadata importer default settings are now controllable through Metadata Settings. This allows for metadata driven defaults for importer behavior. The new settings are listed below and correspond to the existing User Interface options.
-
-| Setting                          | Description |
-| -------                          | ----------- |
-| ApplyNamingConvention            | Naming convention to use for objects and columns.  Case sensitive options are `None`, `PascalCase`, `camelCase`, `Proper_Case`, `Proper Case`, `UPPER_CASE` and `lower_case`. |
-| InferIntegrationKeyFrom          | Where to infer the Integration Key from.  Case sensitive options are `None`, `PrimaryKey`, `UniqueKey`, `FirstColumn`, `IdentityColumn` and `ColumnName::[NameOfColumn]`.  When specifying `ColumnName`, a name needs to be added in the Import Metadata screen or specify `ColumnName::UID` to auto populate the column name field with `UID` |
-| RetainExistingMetadata           | What existing Metadata should be retained when doing an import of existing data.  Should be specified as a comma-separated list and options are `Data Types`, `Column Orders`, `References`, and `All Other`.  I.e. specify `Column Orders, All Other` without the double quotes |
-| KeyEndsWith                      | The strings that BimlFlex interprets as key identifiers.  For a source table with a column `ProductCategoryId` that links to a ProductCategory table, BimlFlex will create a Model Reference called `ProductCategory` as name |
-| AppendIntegrationKey             | The string to append to Integration Keys |
-| PadIntegrationKey                | Number of Characters to pad the Integration Key to |
-| AddRecordSourceToIntegrationKey  | Import Metadata will add `@@rs` to Integration Keys if `Y` is specified |
-| ChangeReferencesToIntegrationKey | Import Metadata will change References to Integration Keys if `Y` is specified |
-| ImportViews                      | Should Views be imported when importing Metadata.  Options are `Y` and `N` |
-
-## Build 5.0.64678.0, release date: 1 June 2020
-
-* Update: Additional management of naming length constraint for source object names to shorten into Azure Data Factory name length limitations
-* Update: Updates to included sample metadata
-
-download links to this build:
-
-* [bimlflexdevsetup_5.0.64678.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64661.0.exe)
-* [bimlflexruntimesetup_5.0.64678.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64661.0.exe)
-
-## Build 5.0.64661.0, release date: 4 May 2020
-
-* Update: A scenario where the Build and Deploy scripts were not included in the Build output when the output folder was defined using a UNC path (\\\\server\\share\\folder) was addressed
-
-download links to this build:
-
-* [bimlflexdevsetup_5.0.64661.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64661.0.exe)
-* [bimlflexruntimesetup_5.0.64661.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64661.0.exe)
-
-## Build 5.0.64660.0, release date: 30 April 2020
-
-* Update: Additional support for SSIS build scenarios for ETL loads to Data Vault
-
-download links to this build:
-
-* [bimlflexdevsetup_5.0.64660.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64660.0.exe)
-* [bimlflexruntimesetup_5.0.64660.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64660.0.exe)
-
-## Build 5.0.64659.0, release date: 27 April 2020
-
-2020 Initial Release
-
-* Includes updates identified through the preview phase
-
-download links to this build:
-
-* [bimlflexdevsetup_5.0.64659.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64659.0.exe)
-* [bimlflexruntimesetup_5.0.64659.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64659.0.exe)
-
-## Build 5.0.64613.0, release date: 07 April 2020
-
-BimlFlex 2020 Preview
-
-* Add: New Project settings dialog in BimlStudio. This allows easier access to control Build target and method as well as local project configurations.
-* Update: The default build versions for new projects have been updated to SQL Server 2017
-* Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
-* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here [BimlFlex COZYROC Excel Plus Source](xref:bimlflex-source-excel-plus)
-* Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical namespaces). A new utility app is available to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
-* New Extension Points: `RdvPreProcessSql`, `RdvPostProcessSql` allows injection of SQL logic in the RDV load SQL Stored Procedures.
-* Update: Some `Generate Scripts` menu options have had their `By Source` suffix removed.
+* Resolved an issue where Blob Archive step in Ssis referred to the wrong account. Archive Staging step now refers to the correct staging account, container, and file.
+* Fixed an issue where Type1 columns were generating in SSIS when none were present in the source.
+* Added required SsisServer to $ssisExecutionParameter generation.
+* Fixed HashTable parameter looping.
 
 > [!NOTE]
-> change in behavior for Settings descriptions
-> The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added they must be maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
+> In BimlFlex 2019.1, External Tables were always included, which sometimes led to issues with lacking Visual Studio support.
+> Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of External Tables as part of the load packages.
+> The BimlFlex 2020 R2 release adds control to the creation of, and additional defaults for, dependency objects.
 
-download links to this build:
+<!--
+Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation of, and additional defaults for, dependency objects.
+--> 
 
-* [bimlflexdevsetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64613.0.exe)
-* [bimlflexruntimesetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64613.0.exe)
+## Download Links to this Build
 
-Legacy Release Notes:
-
-* [BimlFlex Release Notes 2019](xref:bimlflex-release-notes-2019)
-* [BimlFlex Release Notes 2018](xref:bimlflex-release-notes-2018)
+* [bimlflexdevsetup_20.2.382.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.382.0.exe)
+* [bimlflexruntimesetup_20.2.382.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.382.0.exe)
