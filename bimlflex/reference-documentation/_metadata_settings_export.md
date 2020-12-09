@@ -70,10 +70,7 @@ All **Settings** in the Data Factory section.
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Subscription Id | The default Azure SubscriptionId to use |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Resource Group | The default Azure Resource Group name to use |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Key Vault | The default Key Vault name to use for Linked Services |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | PolyBase Settings | The default Azure PolyBase settings to use |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Integration Runtime | The default Data Factory Integration Runtime name to use for Linked Services |
-| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Allow PolyBase Staging | Should the Azure Data Factory copy command use PolyBase staging or load directly to destination Azure Synapse |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Staging Settings | Any Azure Data Factory Staging settings to apply to ADF Copy activities |
 
 #### [Default Values](#tab/azure-datafactory-default)
 
@@ -83,10 +80,7 @@ All **Settings** in the Data Factory section.
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Subscription Id |  |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Resource Group |  |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Key Vault |  |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | PolyBase Settings | <PolyBaseSettings RejectType="Value" RejectValue="0" UseTypeDefault="true" /> |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Integration Runtime |  |
-| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Allow PolyBase Staging | `false` |
-| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Staging Settings | EnableStaging="true" ParallelCopies="8" DataIntegrationUnits="8" |
 
 ***
 
@@ -194,6 +188,140 @@ All **Settings** in the Staging section.
 
 ***
 
+## Azure Copy
+
+All Azure Copy related **Settings**.
+
+### Advanced Settings (Azure Copy)
+
+All **Settings** in the Advanced Settings section.
+
+#### [Description](#tab/azurecopy-advancedsettings-description)
+
+| Type | Setting | Description |
+| ---- | ------- | ----------- |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Enable Staging | Should the Azure Data Factory copy activity use Staging. Use this together with Copy Method PolyBase to load data to supported targets using PolyBase |
+| ![Biml Datatype](images\svg-icons\biml.svg "Biml Datatype") | Staging Settings | The staging settings to use when enabling Staging for the Copy Activity |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Enable Logging | Should the Copy Command use logging |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Log Settings | The Settings for the logging in the Copy Connand when logging is enabled. Use @@this to automatically use the Linked Service associated with the PolyBase Landing connection |
+
+#### [Default Values](#tab/azurecopy-advancedsettings-default)
+
+| Type | Setting | Default Value |
+| ---- | ------- | ------------ |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Enable Staging | `false` |
+| ![Biml Datatype](images\svg-icons\biml.svg "Biml Datatype") | Staging Settings | LinkedServiceName="@@this" EnableCompression="false" Path="staging" |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Enable Logging | `false` |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Log Settings | LinkedServiceName="@@this" LogLevel="Warning" Path="log" |
+
+***
+
+### Copy Method (Azure Copy)
+
+All **Settings** in the Copy Method section.
+
+#### [Description](#tab/azurecopy-copymethod-description)
+
+| Type | Setting | Description |
+| ---- | ------- | ----------- |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Copy Method | Specify the Copy Method the Copy Activity should use. Bulk Insert allows direct inserts to the target. PolyBase allows automatic staging in a Blob container and loading through external tables and PolyBase to supported targets |
+| ![Biml Datatype](images\svg-icons\biml.svg "Biml Datatype") | PolyBase Settings | The default Azure PolyBase settings to use when using Copy Method PolyBase and enabling Staging for the Copy Activity. Use @@this to automatically use the Linked Service associated with the PolyBase Landing connection |
+
+#### [Default Values](#tab/azurecopy-copymethod-default)
+
+| Type | Setting | Default Value |
+| ---- | ------- | ------------ |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Copy Method | BulkInsert |
+| ![Biml Datatype](images\svg-icons\biml.svg "Biml Datatype") | PolyBase Settings | RejectType="Value" RejectValue="0" UseTypeDefault="true" |
+
+***
+
+#### Copy Method Permitted Values (Azure Copy)
+
+All **Settings** with a permitted values list and their permitted values.
+
+##### [Select A Setting](#tab/azurecopy-copymethod-permitted-select)
+
+Click the desired tab to view a list of permitted values.
+
+##### [Copy Method](#tab/azurecopy-copymethod-permitted-copymethod)
+
+| Value |
+| ----- |
+| BulkInsert |
+| PolyBase |
+
+***
+
+### General (Azure Copy)
+
+All **Settings** in the General section.
+
+#### [Description](#tab/azurecopy-general-description)
+
+| Type | Setting | Description |
+| ---- | ------- | ----------- |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Retry Attempts | Maximum number of retry attempts |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Retry Interval | The number of seconds between each retry attempt |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Timeout | Maximum amount of time the Copy Activity can run. Default is 7 days. Format is in D.HH:MM:SS |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Secure Input | When enabled, output from the activity will not be captured in logging |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Secure Output | When enabled, input from the activity will not be captured in logging |
+
+#### [Default Values](#tab/azurecopy-general-default)
+
+| Type | Setting | Default Value |
+| ---- | ------- | ------------ |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Retry Attempts |  |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Retry Interval |  |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Timeout |  |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Secure Input | `false` |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Secure Output | `false` |
+
+***
+
+### Settings (Azure Copy)
+
+All **Settings** in the Settings section.
+
+#### [Description](#tab/azurecopy-settings-description)
+
+| Type | Setting | Description |
+| ---- | ------- | ----------- |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Data Integration Units | Specify the powerfulness of the copy executor. Value can be 2-256. When you choose "Auto", the Data Factory dynamically applies the optimal DIU setting based on your source-sink pair and data pattern. |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Degree of Copy Parallelism | For the Copy Activity, specify the degree of parallelism that data loading would use |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Data Consistency Verification | Should the Copy Activity validate data consistency for supported sources and sinks |
+
+#### [Default Values](#tab/azurecopy-settings-default)
+
+| Type | Setting | Default Value |
+| ---- | ------- | ------------ |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Data Integration Units |  |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Degree of Copy Parallelism |  |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Data Consistency Verification | `false` |
+
+***
+
+#### Settings Permitted Values (Azure Copy)
+
+All **Settings** with a permitted values list and their permitted values.
+
+##### [Select A Setting](#tab/azurecopy-settings-permitted-select)
+
+Click the desired tab to view a list of permitted values.
+
+##### [Data Integration Units](#tab/azurecopy-settings-permitted-dataintegrationunits)
+
+| Value |
+| ----- |
+| Auto |
+| 2 |
+| 4 |
+| 8 |
+| 16 |
+| 32 |
+
+***
+
 ## Azure Storage
 
 All Azure Storage related **Settings**.
@@ -274,6 +402,7 @@ All **Settings** in the Defaults section.
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Convert GUID To String | Should source column of type "GUID"/"UniqueIdentifier" be converted to Strings automatically |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use BimlCatalog | Should BimlFlex use the BimlCatalog database for logging, auditing and config variables. Disabling this also disable all dependent functionality |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Hash Null Value Replacement | The Null value replacement to be used when hashing |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | SSIS Hash Null Value Replacement | The Null value replacement to be used when hashing using the Varigence BimlFlex SSIS Custom component. Provides backwards compatibility when set to an empty string. For new implementations and SQL hash compatibility, set to the same value as used for HashNullValue |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Integration Key To Upper | Should strings in the Integration Key be uppercased. This is recommended and allows the standard SQL Server case insensitive collation to ingest business keys from multiple sources using different casings to be added to Hubs and treated as the same key without issues |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | String Concatenator | The string value used in concatenating Integration Keys and Hash values. Defaults to "~". For a source column with an "SsisDataflowExpression" using the "FlexToBk(@@rs,ProductId,OtherAttribute)" expression the resulting string Integration Key would be similar to "AWLT~680~XYZ", concatenating the record source of the connection, the ProductId column value and the OtherAttribute column value |
 
@@ -285,6 +414,7 @@ All **Settings** in the Defaults section.
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Convert GUID To String | `true` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use BimlCatalog | `true` |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | Hash Null Value Replacement | NVL |
+| ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | SSIS Hash Null Value Replacement |  |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Integration Key To Upper | `true` |
 | ![Text Datatype](images\svg-icons\text.svg "Text Datatype") | String Concatenator | ~ |
 
@@ -303,6 +433,7 @@ All **Settings** in the Hash section.
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Hash Integration Key | Should the Integration Key be hashed. This is done automatically for any project where the destination connection integration stage is Raw Data Vault as it is a requirement for a Data Vault load. For other load process designs the hashing is optional and controlled by this flag as well as the hashing configuration in the configuration sheet |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Hash | Should the SSIS inline hashing component use a hashing approach compatible with the SQL Server "HASHBYTES()" function. This is recommended so that the hashed values can be recreated using standard SQL queries when needed |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Row Hash | Should the SSIS inline hashing component for Full Row Hashing use a hashing approach compatible with the SQL Server "HASHBYTES()" function. The default is false for backward compatibility however we recommend true for new projects to make it forward compatible with cloud deployments |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Cast Boolean to True False for Hash | Should the SQL inline hashing function for MSSQL, SQLDB and Synapse convert BIT (Boolean) values to True/False instead of 1/0 |
 
 #### [Default Values](#tab/core-hash-default)
 
@@ -313,6 +444,7 @@ All **Settings** in the Hash section.
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Hash Integration Key | `false` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Hash | `true` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Row Hash | `false` |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Cast Boolean to True False for Hash | `false` |
 
 ***
 
@@ -463,6 +595,7 @@ All **Settings** in the Accelerator section.
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Link Keys | Should the Accelerator add source key columns to the Link in addition to the Integration Key |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Apply Data Type Mapping RDV | Should the Data Type Mappings be applied to the Raw Data Vault. The Data Type Mappings function allow expansion of data types. This setting controls if these expanded data types are applied to the Data Vault |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Stage Reduce Link Keys | Enable this to reduce additional Link hash keys in the staging table |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Two Way Links | Should the Accelerator split all Links into Two Way Links or combine all Non Nullable references into a single Link or Unit of Work |
 
 #### [Default Values](#tab/datavault-accelerator-default)
 
@@ -476,6 +609,7 @@ All **Settings** in the Accelerator section.
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Link Keys | `false` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Apply Data Type Mapping RDV | `true` |
 | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Stage Reduce Link Keys | `false` |
+| ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Two Way Links | `false` |
 
 ***
 

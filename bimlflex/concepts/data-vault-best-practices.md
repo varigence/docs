@@ -36,7 +36,11 @@ Mapping source systems to your `Business Entities` can be a challenge. However, 
 
 #### Hash Algorithm
 
-* Support all major hash algorithms with `SHA1` as the default. Other options by changing the `HashAlgorithm` setting to one of the following values `MD5`, `SHA1`, `SHA2_256`, `SHA2_512`.
+* Support all major hash algorithms with `SHA1` as the default. Implement other available options by changing the `HashAlgorithm` setting to one of the following values 
+  * `MD5`
+  * `SHA1`
+  * `SHA2_256`
+  * `SHA2_512`.
 * Previous SSIS versions of BimlFlex created a different hash for Unicode characters.
     The `UseSqlCompatibleHash` and `UseSqlCompatibleRowHash` settings provides for backward compatibility. They should be set to `Y` for new implementations.
 * Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the `HashBinary` setting. It is recommended to use binary hashing. With Binary hashing the hash value is stored in its native binary form, requiring half the storage space compared to the hexadecimal string representation.
