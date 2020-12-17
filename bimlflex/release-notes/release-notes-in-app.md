@@ -8,9 +8,9 @@ Summary: Release Notes for current and most recent version of BimlFlex, specific
 > [!IMPORTANT]
 >BimlFlex has been updated to version 2020 R2
 
-## Latest Release
+## This Release
 
-Build 20.2.382.0, release date: 3 Dec 2020
+Build 20.2.nnnnn.0, release date: nn Mmmm 2020
 
 ## Breaking Changes
 
@@ -20,7 +20,9 @@ The Excel add-in location has been updated. The location of the add-in must be u
 
 Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or upgrade the Excel file from the advanced options in the BimlFlex ribbon UI, in the Excel Metadata Editor dropdown to allow it to work as expected. Once the Excel file is upgraded it can be opened directly from Excel or the Windows file explorer again.
 
-Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Addin](xref:excel-metadata-addin)
+Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Add-in](xref:excel-metadata-addin)
+
+The default installation location has been updated. Previous installations placed the application files in a version-number-based sub-folder under the Program Files\Varigence installation. This version removes the version-number sub-folder. For scenarios where the path is used the process should be updated to reflect the new path.
 
 ## 2020 R2 New Features
 
@@ -35,13 +37,18 @@ Additional documentation providing a step-by-step walkthrough for this process: 
 
 ## Settings Changes
 
+A new setting group called `Azure Copy` has been added that allows more control over the Copy Activity in ADF pipelines. It is now possible to have fine grained control over the copy activity settings as well as over the way the Copy Activity uses Bulk Insert or PolyBase as copy method. The staging and logging settings for the Copy Activity are exposed as separate settings, allowing control over staging and logging settings. The location definition for these settings uses LinkedServiceName="@@this" by default. This will use the PolyBase landing connection as defined in the projects source connection.
+
+A new setting, `SsisHashNullValue`, has been added to the Core settings group. This allows control of the Null Value replacement string that is used in the SSIS packages call to the Hashing custom component. This value is left blank for backwards compatibility with previous behavior. For full SQL hash compatibility, consider using the same null-value replacement as for the `HashNullValue` setting. For backwards compatibility with existing data hashed through the SSIS components, leave it blank.
+
 The Accelerator and Data Vault processes have several new optional configurations to better control Data Vault behavior.
 
 * Added settings to control if individual source keys should be added to Hubs and Links as attributes.
 * Added settings for if Link Satellites should use record source naming convention by default.
-* The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group.
+* The Existing Setting `SsdtOutputPath` has been moved to the SSDT settings group.
 * Toggle setting added to display backbone (Hubs and Links only) for accelerated models.
 * Toggle setting added to display datatypes for columns for both source models and accelerated models.
+* The `AzureStagingSettings` has been renamed `AzureCopyStagingSettings`
 
 Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 
@@ -62,6 +69,23 @@ The following settings have been added to the SSDT group:
 * SsdtDefaultExternalDataSource
 * SsdtDefaultExternalFileFormat
 
+The following settings have been added to the Azure Copy group:
+
+* AzureCopyRetryAttempts
+* AzureCopyRetryInterval
+* AzureCopyTimeout
+* AzureCopySecureInput
+* AzureCopySecureOutput
+* AzureCopyDataIntegrationUnits
+* AzureCopyParallelCopies
+* AzureCopyValidateDataConsistency
+* AzureCopyMethod
+* AzurePolybaseSettings
+* AzureCopyEnableStaging
+* AzureCopyStagingSettings
+* AzureCopyEnableLogging
+* AzureCopyLogSettings
+
 More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](xref:bimlflex-ssdt-project)
 
 ## Azure Data Factory (ADF)
@@ -76,7 +100,7 @@ More information on these settings: [BimlFlex-generated SQL Server Data Tool
 * Integration Runtimes can now pass into BLOB Storage and DataLakeStoreGen2 Linked Services.
 * Fixed an issue with `Hash Column` of large Synapse Tables (greater than 500 columns).
 
-More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](xref:bfx-arm-template)
+More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](xref:bfx-arm-templates)
 
 ## BimlFlex App Help Sidebar Navigation
 
@@ -90,7 +114,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 
 ## UI Improvements
 
-* Autoselect customers on database change.
+* Auto select customers on database change.
 * The layout in the Accelerator page has been updated so the source pane is closed by default. Click the open arrow to view the source pane and its active source objects.
 * Improved entity and model border styling.
 * Improved app navigation and user experience when creating a new entity.
@@ -137,6 +161,12 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 * Fixed an issue with `Oracle` import where `UNISTR()` was required.
 * Fixed a metadata import issue for `MSOLEDBSQL` provider.
 
+## Dynamics CRM
+
+* Fixed an issue where **Parameters** would not retrieve from an Entity with >= ~50,000 records.
+* Added the ability to override the `<fetch/>` XML statement of a **Parameter** through *PARAMETER SQL*.
+* Added the ability to automatically generate the `<fetch/>` XML statement of a **Parameter** by leaving *PARAMETER SQL* blank.
+
 ## BimlFlex DB
 
 * Removed `ImportRequests` table from database.
@@ -144,13 +174,14 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 
 ## BimlCatalog DB
 
-* Resolved a `RowCount` stored procedure bug that resulted in orphaned open transactions.
+* Resolved a `RowCount` stored procedure issue that resulted in orphaned open transactions.
 
 ## SQL Based ELT
 
-* Fixed a bug where `End Date` would only generate an update for one record.
+* Fixed an issue where `End Date` would only generate an update for one record.
 * Fixed an issue where `End Date` was retrieving the incorrect date.
 * Fixed an issue where `FlexRowIsCurrent` was not populating with values.
+* Added additional logic for RowAuditId. For a solution where RowAuditId is set to derived for target Data Vault objects, the load Stored Procedures will now correctly derive the required syntax, regardless of any additional settings.
 
 ## SSIS
 
@@ -162,4 +193,8 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 > [!NOTE]
 > In BimlFlex 2019.1, External Tables were always included, which sometimes led to issues with lacking Visual Studio support.
 > Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of External Tables as part of the load packages.
-> The BimlFlex 2020.2 release adds control to the creation of, and additional defaults for, dependency objects.
+> The BimlFlex 2020 R2 release adds control to the creation of, and additional defaults for, dependency objects.
+
+## Tree view navigation
+
+The modeling pages Accelerator, Schema Diagram and Column Mapping have a new tree view navigation. This allows better control over what objects are visible and co-located in the navigation list.

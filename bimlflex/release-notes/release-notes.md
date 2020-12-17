@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-release-notes-2020-R2
+uid: bimlflex-release-notes
 name: BimlFlex Release Notes 2020 R2
 summary: release notes for current version of BimlFlex
 ---
@@ -47,6 +47,8 @@ The default installation location has been updated. Previous installations place
 
 ## Settings Changes
 
+A new setting group called `Azure Copy` has been added that allows more control over the Copy Activity in ADF pipelines. It is now possible to have fine grained control over the copy activity settings as well as over the way the Copy Activity uses Bulk Insert or PolyBase as copy method. The staging and logging settings for the Copy Activity are exposed as separate settings, allowing control over staging and logging settings. The location definition for these settings uses LinkedServiceName="@@this" by default. This will use the PolyBase landing connection as defined in the projects source connection.
+
 A new setting, `SsisHashNullValue`, has been added to the Core settings group. This allows control of the Null Value replacement string that is used in the SSIS packages call to the Hashing custom component. This value is left blank for backwards compatibility with previous behavior. For full SQL hash compatibility, consider using the same null-value replacement as for the `HashNullValue` setting. For backwards compatibility with existing data hashed through the SSIS components, leave it blank.
 
 The Accelerator and Data Vault processes have several new optional configurations to better control Data Vault behavior.
@@ -56,6 +58,7 @@ The Accelerator and Data Vault processes have several new optional configuration
 * The Existing Setting `SsdtOutputPath` has been moved to the SSDT settings group.
 * Toggle setting added to display backbone (Hubs and Links only) for accelerated models.
 * Toggle setting added to display datatypes for columns for both source models and accelerated models.
+* The `AzureStagingSettings` has been renamed `AzureCopyStagingSettings`
 
 Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
 
@@ -75,6 +78,23 @@ The following settings have been added to the SSDT group:
 * SsdtDefaultCredential
 * SsdtDefaultExternalDataSource
 * SsdtDefaultExternalFileFormat
+
+The following settings have been added to the Azure Copy group:
+
+* AzureCopyRetryAttempts
+* AzureCopyRetryInterval
+* AzureCopyTimeout
+* AzureCopySecureInput
+* AzureCopySecureOutput
+* AzureCopyDataIntegrationUnits
+* AzureCopyParallelCopies
+* AzureCopyValidateDataConsistency
+* AzureCopyMethod
+* AzurePolybaseSettings
+* AzureCopyEnableStaging
+* AzureCopyStagingSettings
+* AzureCopyEnableLogging
+* AzureCopyLogSettings
 
 More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](xref:bimlflex-ssdt-project)
 
@@ -104,7 +124,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 
 ## UI Improvements
 
-* Autoselect customers on database change.
+* Auto select customers on database change.
 * The layout in the Accelerator page has been updated so the source pane is closed by default. Click the open arrow to view the source pane and its active source objects.
 * Improved entity and model border styling.
 * Improved app navigation and user experience when creating a new entity.
@@ -188,6 +208,10 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 <!--
 Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation of, and additional defaults for, dependency objects.
 --> 
+
+## Tree view navigation
+
+The modeling pages Accelerator, Schema Diagram and Column Mapping have a new tree view navigation. This allows better control over what objects are visible and co-located in the navigation list.
 
 ## Download Links to this Build
 
