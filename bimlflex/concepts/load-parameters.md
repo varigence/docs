@@ -260,7 +260,7 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
 > [!IMPORTANT]
 > This pattern is only valid for Dynamics entities with less than 50k records.
 >
-> If the Dynamics Entity has more than 50k records then use the [Dynamics - Blank](#parameter-sql-dynamics-blank) or [Dynamics - Fetch](#parameter-sql-dynamics-fetch) patterns.
+> If the Dynamics Entity has more than 50k records then use the `Dynamics - Blank` or `Dynamics - Fetch` patterns.
 
 #### [Dynamics - Blank](#tab/parameter-sql-dynamics-blank)
 
@@ -293,8 +293,8 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*:
 > * `*`: All SQL based Source Systems will have similar pattern but differ in syntax.
 > * `**`: When using Dynamics the first characters determine logic.
 >   * If the *PARAMETER SQL* starts with `<fetch` then it will override the entire fetch statement with.
->   * If not, it will use the [Dynamics - Attribute](#parameter-sql-dynamics-attribute) pattern.
->   * If blank it will use the [Dynamics - Blank](#parameter-sql-dynamics-blank) pattern.
+>   * If not, it will use the `Dynamics - Attribute` pattern.
+>   * If blank it will use the `Dynamics - Blank` pattern.
 
 ### Window Parameters
 

@@ -352,13 +352,13 @@ When using ADF orchestration Snowflake only has limited support via the use of S
 
 Snowflake is not currently supported as a `Landing Area` but a Landing Area is required when using ADF to orchestrate data movement.
 The recommendation is for the `Landing Area` to be a *Connection Type* of `Azure Blob Storage` and *System Type* of `Flat File Delimited`.
-In addition to the `Landing Area` it is also important that the **Settings* for an [Azure Blob Stage Container](#azure-blob-stage-container-settings-adf-only), [Azure Blob Archive Container](#azure-blob-archive-container-settings-adf-only), and [Azure Blob Error Container](#azure-blob-error-container-settings-adf-only) are populated correctly.
+In addition to the `Landing Area` it is also important that the **Settings* for an [Azure Blob Stage Container](#azure-storage-processing-settings-adf-only), [Azure Blob Archive Container](#azure-storage-processing-settings-adf-only), and [Azure Blob Error Container](#azure-storage-processing-settings-adf-only) are populated correctly.
 
 > [!IMPORTANT]
 > Ensure that all Azure Blob Container **Settings** are configured properly:  
-> [Azure Blob Stage Container](#azure-blob-stage-container-settings-adf-only)  
-> [Azure Blob Archive Container](#azure-blob-archive-container-settings-adf-only)  
-> [Azure Blob Error Container](#azure-blob-error-container-settings-adf-only)
+> [Azure Blob Stage Container](#azure-storage-processing-settings-adf-only)  
+> [Azure Blob Archive Container](#azure-storage-processing-settings-adf-only)  
+> [Azure Blob Error Container](#azure-storage-processing-settings-adf-only)
 
 > [!TIP]
 > Additional Resources:  
@@ -383,7 +383,7 @@ When configuring a Snowflake *Integration Stage* of `Source System` set the *Con
 ### Connection String
 
 The [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components-ssis-only) uses the connection information specified in the `.SnowSQL\config` file to connect.
-See the [Snowflake SnowSQL Settings](#snowflake-snowsql-settings-ssis-only) section for instructions on how to specify the file and connection to use.
+See the [Snowflake SnowSQL Settings](#installing-and-configuring-snowsql-ssis-only) section for instructions on how to specify the file and connection to use.
 
 BimlFlex only uses the *Connection String* field to generate an associated Connection Manager in SSIS.
 The associated Connection Manager will be created in SSIS using the inputted *Connection String* but will not be used during any of the generated SSIS orchestration.
@@ -417,7 +417,7 @@ Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 
 ### Linked Services (ADF Only)
 
-Azure Data Factory does not support Snowflake as a Linked Service so BimlFlex uses an [Azure Function Bridge](#azure-function-bridge-settings-adf-only) to close the gap.
+Azure Data Factory does not support Snowflake as a Linked Service so BimlFlex uses an [Azure Function Bridge](#azure-data-factory-function-bridge-settings-adf-only) to close the gap.
 The Azure Function Bridge will use the Linked Service configured in BimlFlex to determine the appropriate connection method to use.
 
 When using an *Azure Key Vault* use the below example to assist with the creation of a connection string to be used as the the secret value.
@@ -488,9 +488,9 @@ Refer to the below guides for common deployment methods.
 Ensure these commonly missed steps are performed:
 
 - [Install and Configure SnowSQL](#installing-and-configuring-snowsql-ssis-only)  
-- [Install and Configure Snowflake ODBC DSN](#installing-and-configuring-a-snowflake-odbc-dsn-ssis-only)  
+- [Install and Configure Snowflake ODBC DSN](#installing-and-configuring-a-snowflake-odbc-dsn-importing-metadata-and-ssis-only)
 - [Install Snowflake SSIS Custom Components](#bimlflex-snowflake-custom-ssis-components-ssis-only)
-- [SSIS Environment Settings](#ssis-environment-settings-ssis-only)
+- [SSIS Environment Settings](#ssis-catalog-settings-ssis-only)
 
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
@@ -506,11 +506,11 @@ Ensure these commonly missed steps are performed:
 
 - [Landing Area Created](#landing-area-adf-only)  
 - [Linked Service Configured and Secrets Entered](#linked-services-adf-only)  
-- [Azure Environment Settings](#azure-environment-settings-adf-only)  
-- [Azure Function Bridge Settings](#azure-function-bridge-settings-adf-only)  
-- [Azure Blob Stage Container Settings](#azure-blob-stage-container-settings-adf-only)  
-- [Azure Blob Archive Container Settings](#azure-blob-archive-container-settings-adf-only)  
-- [Azure Blob Error Container Settings](#azure-blob-error-container-settings-adf-only)
+- [Azure Environment Settings](#azure-data-factory-settings-adf-only)  
+- [Azure Function Bridge Settings](#azure-data-factory-function-bridge-settings-adf-only)  
+- [Azure Blob Stage Container Settings](#azure-storage-processing-settings-adf-only)  
+- [Azure Blob Archive Container Settings](#azure-storage-processing-settings-adf-only)  
+- [Azure Blob Error Container Settings](#azure-storage-processing-settings-adf-only)
 
 > [!TIP]
 > For additional details on generating deploying ADF artifacts refer to the below guides:  

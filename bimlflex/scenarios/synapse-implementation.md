@@ -142,7 +142,7 @@ These focus more on "how" the **Connection** is used.
 >   - This is also called out in detail on the below configurations.
 > - Connection String`**`: When using ADF the *CONNECTION STRING* is only used to import the metadata withing the tool.
 >   - The connection strings used for ADF are managed in the Linked Service.
->   - See [Linked Service Configuration](#linked-service-configuration) for more details.
+>   - See [Configuring a Linked Service Connection](xref:create-linked-service-connection) for more details.
 
 ***
 
@@ -531,7 +531,7 @@ A part of the Build process, BimlStudio will generate a SQL Server Data Tools (S
 By default a SSDT deployment file named `ssdt-deploy.<DatabaseName>.ps1` is created and placed in the `...\<Output Folder>\Deploy\` folder for each database in the target warehouse environment.
 
 The SSDT project will have all the required tables, stored procedures and Data Vault default inserts required for the project.
-Through use of [Azure PolyBase Settings](#azure-polybase-settings-polybase-architecture-only) EXTERNAL TABLES can be included or excluded in this deployment file.
+Through use of [SSDT\Synapse SSDT Artifacts Settings](xref:bimlflex-metadata-settings#synapse-ssdt-artifacts-ssdt) EXTERNAL TABLES can be included or excluded in this deployment file.
 These files are commonly excluded due to PolyBase requiring a file to exist in the blob storage prior to the creation of the EXTERNAL TABLE.
 
 > [!IMPORTANT]
@@ -571,7 +571,7 @@ Additionally if using the PolyBase Architecture, the `PolyBase External Table Sc
 > [!NOTE]
 > Ensure you configure the below settings is using the `PolyBase External Table Script`:
 >
-> - [Azure PolyBase Settings](#azure-polybase-settings-polybase-architecture-only)
+> - [SSDT\Synapse SSDT Artifacts](xref:bimlflex-metadata-settings#synapse-ssdt-artifacts-ssdt)
 
 The below table has been provided as a quick reminder as to when a script should be generated.
 
