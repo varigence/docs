@@ -31,7 +31,7 @@ The following video walks through the common steps and considerations for deploy
 ![BimlFlex - Implement Snowflake using Azure Data Factory](https://www.youtube.com/watch?v=COGIHSjAdSg?rel=0&autoplay=0 "BimlFlex - Implement Snowflake using Azure Data Factory")
 
 > [!NOTE]
-> Additional BimlFlex documentation regarding the implementation of Snowflake in Azure Data Factory can be referenced [here](xref:implementing-snowflake-in-adf)
+> Additional BimlFlex documentation regarding the implementation of Snowflake in Azure Data Factory can be referenced [here](xref:bimlflex-snowflake-implementation)
 
 ### Installing and Configuring SnowSQL (SSIS Only)
 
