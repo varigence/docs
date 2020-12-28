@@ -111,7 +111,7 @@ As part of the the build process, BimlFlex will output artifacts and name them u
 > *Data Factory Name*: Uses the `AzureDataFactoryName` **Setting**, or `BimlFlex` if the *Setting* is blank.
 
 A PowerShell script named `adf-deploy.<Data Factory Name>.ps1` will be output to the `<Output Folder>\Deploy\` folder to assist with deployment.
-BimlFlex will automatically input the [Azure Environment Settings](#azure-environment-settings) if populated or these can be entered manually prior to script execution.
+BimlFlex will automatically input the [Azure Environment Settings](#adf-settings) if populated or these can be entered manually prior to script execution.
 All variables and artifacts should be reviewed prior to the execution of the script as executing the script will generate billable Azure artifacts.
 
 > [!IMPORTANT]
@@ -233,7 +233,7 @@ If additional values are needed, they can be entered into the field as needed.
 
 #### Blob Storage Configured Landing Area
 
-Outside of configuring the appropriate settings for the [Blob Containers](#azure-blob-container-settings-blob-storage-configuration-only), the appropriate Azure artifacts will first need to be created.
+Outside of configuring the appropriate settings for the [Blob Containers](#adf-settings), the appropriate Azure artifacts will first need to be created.
 
 ##### Creating a Storage Account
 
@@ -538,7 +538,7 @@ As part of the the build process, BimlFlex will output artifacts and name them u
 > *Data Factory Name*: Uses the `AzureDataFactoryName` **Setting**, or `BimlFlex` if the *Setting* is blank.
 
 A PowerShell script named `adf-deploy.<Data Factory Name>.ps1` will be output to the `<Output Folder>\Deploy\` folder to assist with deployment.
-BimlFlex will automatically input the [Azure Environment Settings](#azure-environment-settings) if populated or these can be entered manually prior to script execution.
+BimlFlex will automatically input the [Azure Environment Settings](#adf-settings) if populated or these can be entered manually prior to script execution.
 All variables and artifacts should be reviewed prior to the execution of the script as executing the script will generate billable Azure artifacts.
 
 > [!IMPORTANT]
