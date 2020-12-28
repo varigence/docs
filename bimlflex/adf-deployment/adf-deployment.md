@@ -153,9 +153,10 @@ Although features are highlight that are [Azure Synapse](xref:bimlflex-synapse-i
 The referenced implementation guides should still be consulted prior to deploying an Azure Data Factory using either platform.
 
 > [!TIP]
-> For additional details on Target Warehouse Platforms refer to the below guides:  
-> BimlFlex Docs: [Synapse Implementations](xref:bimlflex-synapse-implementation)  
-> BimlFlex Docs: [Snowflake Implementation with ADF](xref:bimlflex-snowflake-implementation)  
+> For additional details on Target Warehouse Platforms refer to the below guides:
+>
+> * BimlFlex Docs: [Synapse Implementations](xref:bimlflex-synapse-implementation)
+> * BimlFlex Docs: [Snowflake Implementation with ADF](xref:bimlflex-snowflake-implementation)  
 
 ### Configuring a Landing Area
 
@@ -277,9 +278,10 @@ The following is the minimum needed Access Policy for a User Principal needs in 
 | User          | User Principal |                 | List, Set          |                         |
 
 > [!TIP]
-> For additional details on Azure Key Vaults and Sensitive Information Management refer to the below guides:  
-> BimlFlex Docs: [Using Azure Key Vaults for Connection settings](xref:linked-service-azure-key-vault)  
-> BimlFlex Docs: [Sensitive Information Management in Azure Data Factory](xref:sensitive-info-management)  
+> For additional details on Azure Key Vaults and Sensitive Information Management refer to the below guides:
+>
+> * BimlFlex Docs: [Using Azure Key Vaults for Connection settings](xref:linked-service-azure-key-vault)
+> * BimlFlex Docs: [Sensitive Information Management in Azure Data Factory](xref:sensitive-info-management)
 
 #### Existing Azure Key Vault
 
