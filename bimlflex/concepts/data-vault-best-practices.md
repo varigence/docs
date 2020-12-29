@@ -43,18 +43,18 @@ However, the BimlFlex Accelerator simplifies the process by applying standard Da
 #### Hash Algorithm
 
 * Support all major hash algorithms with `SHA1` as the default.
-Implement other available options by changing the `HashAlgorithm` setting to one of the following values 
+Implement other available options by changing the *HASH ALGORITHM* setting to one of the following values 
   * `MD5`
   * `SHA1`
   * `SHA2_256`
   * `SHA2_512`.
 * Previous SSIS versions of BimlFlex created a different hash for Unicode characters.
-  The `UseSqlCompatibleHash` and `UseSqlCompatibleRowHash` settings provides for backward compatibility.
+  The [*USE SQL COMPATIBLE HASH*](xref:bimlflex-metadata-settings#hash-core) and [*USE SQL COMPATIBLE ROW HASH*](xref:bimlflex-metadata-settings#hash-core) settings provides for backward compatibility.
   They should be set to `Y` for new implementations.
-* Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the `HashBinary` setting.
+* Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the [*HASH BINARY*](xref:bimlflex-metadata-settings#hash-core) setting.
   It is recommended to use binary hashing.
-  With Binary hashing the hash value is stored in its native binary form, requiring half the storage space compared to the hexadecimal string representation.
-* Performance setting: `AddRowHashKeyIndex` will add an index to the `Staging` table on the `RowHashKey` to optimize the Hub ETL SSIS packages.
+  With binary hashing the hash value is stored in its native binary form, requiring half the storage space compared to the hexadecimal string representation.
+* Performance setting: [*ADD ROW HASH KEY INDEX*](xref:bimlflex-metadata-settings#settings-staging) will add an index to the staging table on the `RowHashKey` to optimize the Hub ETL SSIS packages.
 
 #### Hash Collision
 
@@ -77,30 +77,55 @@ An option for remediation is to increase the hash length, if a collision happens
 
 #### Hash Settings
 
-|SettingKey                          |SettingValue           |
-|------------------------------------|-----------------------|
-| DvUseHashKeys                      | `Y`                   |
-| HashBinary                         | `Y`                   |
-| HashAlgorithm                      | `SHA1`                |
-| UseSqlCompatibleHash               | `Y`                   |
-| UseSqlCompatibleRowHash            | `N`                   |
-| AddRowHashKeyIndex                 | `Y`                   |  
+Choose a tab below to view relevant setting descriptions or examples for Hash Keys.
+
+##### [Select:](#tab/settings-hash-key)
+
+Choose a tab to view either setting descriptions or examples.
+
+##### [Description](#tab/settings-hash-key-description)
+
+| Group      | Subgroup    | Type                                                                 | Setting                             | Description                                                                                                                                                                                                                                                                                                                                            |
+| ---------- | ----------- | -------------------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use Hash Keys                       | Should the Data Vault use Hash Keys or Natural Keys                                                                                                                                                                                                                                                                                                    |
+| Core       | Hash        | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Hash Algorithm                      | The hashing algorithm to use. ("MD5"/"SHA1"/"SHA2_256"/"SHA2_512")                                                                                                                                                                                                                                                                                     |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Hash Binary                         | Should the generated hash value be stored as a binary representation rather than a string representation                                                                                                                                                                                                                                               |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Hash Integration Key                | Should the Integration Key be hashed. This is done automatically for any project where the destination connection integration stage is Raw Data Vault as it is a requirement for a Data Vault load. For other load process designs the hashing is optional and controlled by this flag as well as the hashing configuration in the configuration sheet |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Hash             | Should the SSIS inline hashing component use a hashing approach compatible with the SQL Server "HASHBYTES()" function. This is recommended so that the hashed values can be recreated using standard SQL queries when needed                                                                                                                           |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Row Hash         | Should the SSIS inline hashing component for Full Row Hashing use a hashing approach compatible with the SQL Server "HASHBYTES()" function. The default is false for backward compatibility however we recommend true for new projects to make it forward compatible with cloud deployments                                                            |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Cast Boolean to True False for Hash | Should the SQL inline hashing function for MSSQL, SQLDB and Synapse convert BIT (Boolean) values to True/False instead of 1/0                                                                                                                                                                                                                          |
+| Staging    | Settings    | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Add Row Hash Key Index              | Enable to add a unique, non-clustered constraint on the RowHashKey and EffectiveFromDate columns in staging tables                                                                                                                                                                                                                                     |
+
+##### [Default Values](#tab/settings-hash-key-default)
+
+| Group      | Subgroup    | Type                                                                 | Setting                             | Default Value |
+| ---------- | ----------- | -------------------------------------------------------------------- | ----------------------------------- | ------------- |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use Hash Keys                       | `true`        |
+| Core       | Hash        | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Hash Algorithm                      | SHA1          |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Hash Binary                         | `false`       |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Hash Integration Key                | `false`       |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Hash             | `true`        |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use SQL Compatible Row Hash         | `false`       |
+| Core       | Hash        | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Cast Boolean to True False for Hash | `false`       |
+| Staging    | Settings    | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Add Row Hash Key Index              | `false`       |
+
+***
 
 #### Integration Key (Business Key)
 
-* BimlFlex uses the term `Integration Key` instead of `Business Key` for consistency across different data warehouse project types, including dimensional modeling.
+* BimlFlex uses the term **Integration Key** instead of **Business Key** for consistency across different data warehouse project types, including dimensional modeling.
 * The scope of the key will determine how you configure the column.
-  If the key is scoped per source system it is recommended to append the `RecordSource` to the key ensuring a unique key.
-  If the key is globally unique across the enterprise the record `RecordSource` should be omitted.
+  If the key is scoped per source system it is recommended to append the **Record Source** to the key ensuring a unique key.
+  If the key is globally unique across the enterprise the record **Record Source** should be omitted.
 * A concatenation of the key parts creating a single column for integration and optimize the performance of multi-column joins.
-* In an upcoming release will add the `DvAccelerateHubKeys` setting to also include the key parts in the Hub.
-* The `FlexToBk` helper method can be used to concatenate keys using a comma-delimited list of columns across supported implementation technologies.
-* The global parameter for RecordSource is `@@rs` referring to the originating source system, not source object, of the data can be added to the keys to make IntegrationKeys unique across sources.
+* The [*ACCELERATE HUB KEYS*](xref:bimlflex-metadata-settings#accelerator-data-vault) setting will include the key parts in the Hub.
+* The `FlexToBk( )` helper method can be used to concatenate keys using a comma-delimited list of columns across supported implementation technologies.
+* The global parameter for *RECORD SOURCE* is `@@rs` referring to the originating source system, not source object, of the data can be added to the keys to make Integration Keys unique across sources.
 * As an example, the metadata expression for the `Customer` will look like this `FlexToBk(@@rs,CustomerID)`
-* BimlFlex provides an option to add the `@@rs` to all keys on import `Add Record Source (@@rs) To Integration Key` and on the `Columns` tab for the `Objects` in the app.
-* The column name is derived by combing the `Object.ModelOverrideName` if specified otherwise the `Object.ObjectName` and the `AppendIntegrationKey` setting either before or after the name depending on the `SuffixOrPrefixColumn` setting.
+* BimlFlex provides an option to add the `@@rs` to all keys on import [*ADD RECORD SOURCE TO INTEGRATION KEY*](xref:bimlflex-metadata-settings#settings-model) and on the **Columns** tab for the **Objects** in the app.
+* The column name is derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND INTEGRATION KEY*](xref:bimlflex-metadata-settings#settings-model) setting either before or after the name depending on the [*SUFFIX OR PREFIX COLUMN*](xref:bimlflex-metadata-settings#naming-naming) setting.
 * Deriving the value of the concatenated key depends on two settings.
-  The `IntegrationKeyNullValue` that is used as a null replacement and the `IntegrationKeyToUpper` to specify if the derived value should be cast to `UPPER CASE` or left in its original case.
+  The [*HASH NULL VALUE REPLACEMENT*](xref:bimlflex-metadata-settings#defaults-core) that is used as a null replacement and the [*INTEGRATION KEY TO UPPER*](xref:bimlflex-metadata-settings#defaults-core) to specify if the derived value should be cast to `UPPER CASE` or left in its original case.
   When integrating case sensitive systems, this requires consideration.
 * As an example, the above will be implemented as follows `UPPER(COALESCE(CustomerID, 'NVL'))`
 * It is recommended to use a wide Unicode String datatype.
@@ -108,12 +133,54 @@ An option for remediation is to increase the hash length, if a collision happens
 
 #### Integration Key Settings
 
-| SettingKey                         | SettingValue          |
-|------------------------------------|-----------------------|
-| AppendIntegrationKey               | `BK`                  |
-| SuffixOrPrefixColumn               | `P`                   |
-| IntegrationKeyNullValue            | `NVL`                 |
-| IntegrationKeyToUpper              | `Y`                   |  
+Choose a tab below to view relevant setting descriptions or examples for Integration Keys.
+
+##### [Select:](#tab/settings-integration-key)
+
+Choose a tab to view either setting descriptions or examples.
+
+##### [Description](#tab/settings-integration-key-description)
+
+| Group      | Subgroup    | Type                                                                 | Setting                              | Description                                                                                                                                                                                                                                                                                                                                                                                              |
+| ---------- | ----------- | -------------------------------------------------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use Hash Keys                        | Should the Data Vault use Hash Keys or Natural Keys                                                                                                                                                                                                                                                                                                                                                      |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Link Satellite Keys       | Should the accelerator add the Integration Key to the Link Satellites for effectiveness                                                                                                                                                                                                                                                                                                                  |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Hub Keys                  | Should the Accelerator add source key columns to the Hub in addition to the Integration Key                                                                                                                                                                                                                                                                                                              |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Link Keys                 | Should the Accelerator add source key columns to the Link in addition to the Integration Key                                                                                                                                                                                                                                                                                                             |
+| Model      | Settings    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Infer Integration Key From           | Where to infer the Integration Key from.<br>Case sensitive options are "None", "PrimaryKey", "UniqueKey", "FirstColumn", "IdentityColumn" and "ColumnName::[NameOfColumn]".<br>When specifying "ColumnName", a name needs to be added in the Import Metadata screen or specify "ColumnName::UID" to auto populate the column name field with "UID"                                                       |
+| Model      | Settings    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Pad Integration Key                  | Number of Characters to pad the Integration Key to                                                                                                                                                                                                                                                                                                                                                       |
+| Model      | Settings    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Append Integration Key               | The string to append to Integration Keys                                                                                                                                                                                                                                                                                                                                                                 |
+| Model      | Settings    | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Add Record Source To Integration Key | Import Metadata will add "@@rs" to Integration Keys if true                                                                                                                                                                                                                                                                                                                                              |
+| Model      | Settings    | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Change References To Integration Key | Should Import Metadata add derived Integration Keys from source references or use source columns for references                                                                                                                                                                                                                                                                                          |
+| Naming     | Naming      | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Suffix Or Prefix Column              | The "SuffixOrPrefixColumn" key defines the behavior when defining column names. Use Suffix or Prefix to define if the column identifiers are added after or before the column names in the solution. <br>"S" for Suffix will generate "Entity_BK" <br>"P" for Prefix Will generate "BK_Entity"                                                                                                           |
+| Core       | Defaults    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Hash Null Value Replacement          | The Null value replacement to be used when hashing                                                                                                                                                                                                                                                                                                                                                       |
+| Core       | Defaults    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | SSIS Hash Null Value Replacement     | The Null value replacement to be used when hashing using the Varigence BimlFlex SSIS Custom component. Provides backwards compatibility when set to an empty string. For new implementations and SQL hash compatibility, set to the same value as used for HashNullValue                                                                                                                                 |
+| Core       | Defaults    | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Integration Key To Upper             | Should strings in the Integration Key be uppercased. This is recommended and allows the standard SQL Server case insensitive collation to ingest business keys from multiple sources using different casings to be added to Hubs and treated as the same key without issues                                                                                                                              |
+| Core       | Defaults    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | String Concatenator                  | The string value used in concatenating Integration Keys and Hash values. Defaults to "~". For a source column with an "SsisDataflowExpression" using the "FlexToBk(@@rs,ProductId,OtherAttribute)" expression the resulting string Integration Key would be similar to "AWLT~680~XYZ", concatenating the record source of the connection, the ProductId column value and the OtherAttribute column value |
+
+##### [Default Values](#tab/settings-integration-key-default)
+
+| Group      | Subgroup    | Type                                                                 | Setting                              | Default Value |
+| ---------- | ----------- | -------------------------------------------------------------------- | ------------------------------------ | ------------- |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Use Hash Keys                        | `true`        |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Link Satellite Keys       | `true`        |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Hub Keys                  | `false`       |
+| Data Vault | Accelerator | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Accelerate Link Keys                 | `false`       |
+| Model      | Settings    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Infer Integration Key From           | PrimaryKey    |
+| Model      | Settings    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Pad Integration Key                  | 100           |
+| Model      | Settings    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Append Integration Key               | BK            |
+| Model      | Settings    | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Add Record Source To Integration Key | `true`        |
+| Model      | Settings    | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Change References To Integration Key | `true`        |
+| Naming     | Naming      | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Suffix Or Prefix Column              | S             |
+| Core       | Defaults    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | Hash Null Value Replacement          | NVL           |
+| Core       | Defaults    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | SSIS Hash Null Value Replacement     |               |
+| Core       | Defaults    | ![Boolean Datatype](images\svg-icons\boolean.svg "Boolean Datatype") | Integration Key To Upper             | `true`        |
+| Core       | Defaults    | ![Text Datatype](images\svg-icons\text.svg "Text Datatype")          | String Concatenator                  | ~             |
+
+***
+
+> [!NOTE]
+> The `Model` **Setting Group** is only applied when first creating and Integration Key.  These **Settings** do not already impact generated Integration Keys.
 
 ## Data Vault Entities
 
