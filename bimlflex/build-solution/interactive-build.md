@@ -5,7 +5,7 @@ summary: Guide to building assets in BimlFlex whether Cube, SSIS, or Azure Data 
 ---
 # BimlFlex Interactive Build
 
-Once content with the configuration of the metadata, users are ready to build their assets whether they be Cube, SSIS, or Azure Data Factory. The user should already have a [BimlFlex project for BimlStudio](setup-bimlstudio-project.md) ready to go.
+Once content with the configuration of the metadata, users are ready to build their assets whether they be Cube, SSIS, or Azure Data Factory. The user should already have a [BimlFlex project for BimlStudio](xref:bimlflex-setup-bimlstudio-project) ready to go.
 
 >[!NOTE]
 > Building the project is required before deploying, any time a change is made to the metadata.
@@ -63,4 +63,4 @@ Once the project has built, its assets can be examined from within the project's
 ## Debugging
 
 If the project fails to build, examine the *Output* window at the bottom of BimlStudio.
-This window will display compiler error messages, and additional information such as the commands needed to replicate this build [in a command-line setting](command-line-build.md).
+This window will display compiler error messages, and additional information such as the commands needed to replicate this build [in a command-line setting](xref:bimlflex-command-line-build).

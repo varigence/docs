@@ -147,7 +147,7 @@ For the Data Mart this is either the *DIM ATTRIBUTE* or *FACT ATTRIBUTE* fields 
 >
 
 Once enabled, the associated **Configuration** will be applied to every instance of the associated concept, unless there is an associated **Setting** preventing this.
-If required, a [**Configuration Override**](#configuring-an-override) can be applied at either a **Connection**, **Batch**, **Project** or **Object** level.
+If required, a [**Configuration Override**](#overriding-configurations) can be applied at either a **Connection**, **Batch**, **Project** or **Object** level.
 
 > [!TIP]
 > For additional details on **Configurations** and their definitions refer to the below guide:
@@ -330,20 +330,20 @@ Each method requires only a single **Configuration Override** (per column) and p
 > Repeat the chosen method for each **Configuration** as needed.
 >
 
-If not yet done, ensure that the Dimension is created and mapped as normal, following the [](#xref:bimlflex-getting-started-dimensional-model) guide if needed.
+If not yet done, ensure that the Dimension is created and mapped as normal, following the [Data Mart Dimensional Model](xref:bimlflex-getting-started-dimensional-model) guide if needed.
 
 ##### [Method A - SQL Source Expression](#tab/scenario-1-method-a)
 
 The following method assumes the *DIM ATTRIBUTE* is already configured to `Derived` for any of the applicable **Configurations** being overridden.
-This is the recommended setting and is outlined [Common Configurations - Attributes](#configuration-concept-attributes) table above.
+This is the recommended setting and is outlined [Common Configurations - Attributes](#common-configurations) table above.
 
 > [!NOTE]
 > If this *DIM ATTRIBUTE* is set to a value besides `Derived`, an additional **Configuration Override** will be needed for set the *DIM ATTRIBUTE* to `Derived`.
-> The steps from [Method B](#scenario-1-method-b) can be used simply by substituting and reference to `Source` with `Derived`.
+> The steps from `Method B` can be used simply by substituting and reference to `Source` with `Derived`.
 >
 
 When the *DIM ATTRIBUTE* is set to `Derived` the *SQL SOURCE EXPRESSION* can be substituted with a column reference.
-Create a [Standard Override Configuration](#configuration-override) for *SQL SOURCE EXPRESSION* with the following values.
+Create a [Standard Override Configuration](#overriding-configurations) for *SQL SOURCE EXPRESSION* with the following values.
 
 | Field Name      | Value                            | Example                          |
 | --------------- | -------------------------------- | -------------------------------- |
@@ -368,7 +368,7 @@ This is all that is required and your Dimension should now be ready to accepting
 This method requires a column to exist in the Source with the same name as the **Configuration Value** for **Configuration** that will be overridden.
 Working with default **Configurations** this would be `FlexRowStartDate`.
 
-Once a column is available in the Source, Create a [Standard Override Configuration](#configuration-override) for *DIM ATTRIBUTE* with the following values.
+Once a column is available in the Source, Create a [Standard Override Configuration](#overriding-configurations) for *DIM ATTRIBUTE* with the following values.
 
 | Field Name      | Value                     | Example                   |
 | --------------- | ------------------------- | ------------------------- |
@@ -429,7 +429,7 @@ Using the existing as a Source, [Import the Metadata](xref:bimlflex-getting-star
 If any metadata columns (effectivity dates and current flag) made it into the initial import of metadata, they should be removed now.
 The only columns that should be present are the attributes we want to populate the Dimension with.
 
-Follow the normal process and ensure that the Dimension is created and mapped as normal, following the [](#xref:bimlflex-getting-started-dimensional-model) guide if needed.
+Follow the normal process and ensure that the Dimension is created and mapped as normal, following the [Data Mart Dimensional Model](xref:bimlflex-getting-started-dimensional-model) guide if needed.
 Apply **Configuration Overrides** identical to as outlined above in [Overriding Type 2 Logic](#overriding-type-2-logic).
 
 Run the process and ensure all Dimension history is created correctly.

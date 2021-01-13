@@ -14,7 +14,7 @@ This section covers various BimlFlex Concepts that are important to understand w
 ## Templates
 
 * [BimlFlex Source to Staging Templates](xref:bimlflex-source-to-staging-templates)
-* [BimlFlex Data Vault Best Practices](xref:bimlflex-data-vault-standards)
+* [BimlFlex Data Vault Best Practices](xref:bimlflex-data-best-practices)
 * [BimlFlex Data Vault Templates](xref:bimlflex-data-vault-templates)
 * [BimlFlex Data Mart Templates](xref:bimlflex-data-mart-templates)
 

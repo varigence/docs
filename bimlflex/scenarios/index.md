@@ -9,19 +9,19 @@ BimlFlex supports a number of target Data Warehouse platforms. It provides load 
 
 Main platforms and architectures:
 
-* [Snowflake](xref:snowflake-implementation)
-* [Azure Synapse](xref:synapse-implementation)
+* [Snowflake](xref:bimlflex-snowflake-implementation)
+* [Azure Synapse](xref:bimlflex-synapse-implementation)
 * [Microsoft on-premises SQL Server](xref:ssis-on-prem-sql-server)
 
 ## Other Concepts
 
-* [Export to File](xref:export-to-file)
-* [Master Data Services](xref:master-data-services)
+* [Export to File](xref:bimlflex-export-to-file)
+* [Master Data Services](xref:bimlflex-master-data-services)
 
 ## Special sources
 
 <!-- * [Dynamics CRM](xref:source-dynamics-crm) -->
-* [Excel Files](xref:source-excel-plus)
-* [Odata](xref:source-odata)
-* [Stored Procedure](xref:source-stored-procedure)
+* [Excel Files](xref:bimlflex-source-excel-plus)
+* [Odata](xref:bimlflex-source-odata)
+* [Stored Procedure](xref:bimlflex-source-stored-procedure)
 <!-- Salesforce -->
