@@ -111,7 +111,7 @@ As part of the the build process, BimlFlex will output artifacts and name them u
 > *Data Factory Name*: Uses the `AzureDataFactoryName` **Setting**, or `BimlFlex` if the *Setting* is blank.
 
 A PowerShell script named `adf-deploy.<Data Factory Name>.ps1` will be output to the `<Output Folder>\Deploy\` folder to assist with deployment.
-BimlFlex will automatically input the [Azure Environment Settings](#azure-environment-settings) if populated or these can be entered manually prior to script execution.
+BimlFlex will automatically input the [Azure Environment Settings](#adf-settings) if populated or these can be entered manually prior to script execution.
 All variables and artifacts should be reviewed prior to the execution of the script as executing the script will generate billable Azure artifacts.
 
 > [!IMPORTANT]
@@ -153,9 +153,10 @@ Although features are highlight that are [Azure Synapse](xref:bimlflex-synapse-i
 The referenced implementation guides should still be consulted prior to deploying an Azure Data Factory using either platform.
 
 > [!TIP]
-> For additional details on Target Warehouse Platforms refer to the below guides:  
-> BimlFlex Docs: [Synapse Implementations](xref:bimlflex-synapse-implementation)  
-> BimlFlex Docs: [Snowflake Implementation with ADF](xref:bimlflex-snowflake-implementation)  
+> For additional details on Target Warehouse Platforms refer to the below guides:
+>
+> * BimlFlex Docs: [Synapse Implementations](xref:bimlflex-synapse-implementation)
+> * BimlFlex Docs: [Snowflake Implementation with ADF](xref:bimlflex-snowflake-implementation)  
 
 ### Configuring a Landing Area
 
@@ -233,7 +234,7 @@ If additional values are needed, they can be entered into the field as needed.
 
 #### Blob Storage Configured Landing Area
 
-Outside of configuring the appropriate settings for the [Blob Containers](#azure-blob-container-settings-blob-storage-configuration-only), the appropriate Azure artifacts will first need to be created.
+Outside of configuring the appropriate settings for the [Blob Containers](#adf-settings), the appropriate Azure artifacts will first need to be created.
 
 ##### Creating a Storage Account
 
@@ -277,9 +278,10 @@ The following is the minimum needed Access Policy for a User Principal needs in 
 | User          | User Principal |                 | List, Set          |                         |
 
 > [!TIP]
-> For additional details on Azure Key Vaults and Sensitive Information Management refer to the below guides:  
-> BimlFlex Docs: [Using Azure Key Vaults for Connection settings](xref:linked-service-azure-key-vault)  
-> BimlFlex Docs: [Sensitive Information Management in Azure Data Factory](xref:sensitive-info-management)  
+> For additional details on Azure Key Vaults and Sensitive Information Management refer to the below guides:
+>
+> * BimlFlex Docs: [Using Azure Key Vaults for Connection settings](xref:linked-service-azure-key-vault)
+> * BimlFlex Docs: [Sensitive Information Management in Azure Data Factory](xref:sensitive-info-management)
 
 #### Existing Azure Key Vault
 
@@ -538,7 +540,7 @@ As part of the the build process, BimlFlex will output artifacts and name them u
 > *Data Factory Name*: Uses the `AzureDataFactoryName` **Setting**, or `BimlFlex` if the *Setting* is blank.
 
 A PowerShell script named `adf-deploy.<Data Factory Name>.ps1` will be output to the `<Output Folder>\Deploy\` folder to assist with deployment.
-BimlFlex will automatically input the [Azure Environment Settings](#azure-environment-settings) if populated or these can be entered manually prior to script execution.
+BimlFlex will automatically input the [Azure Environment Settings](#adf-settings) if populated or these can be entered manually prior to script execution.
 All variables and artifacts should be reviewed prior to the execution of the script as executing the script will generate billable Azure artifacts.
 
 > [!IMPORTANT]
