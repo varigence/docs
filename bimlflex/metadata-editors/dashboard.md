@@ -2,6 +2,8 @@
 uid: dashboard
 title: Dashboard
 summary: Overview of the BimlFlex dashboard with sunburst graph, navigation, menus, and loading data
+product: BimlFlex
+type: Reference
 ---
 # Dashboard
 

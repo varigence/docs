@@ -2,6 +2,8 @@
 uid: bimlflex-trial-the-bimlflex-trial-process
 title: The BimlFlex Trial Process
 summary: Documentation providing helpful links and sources for using a BimlFlex trial, proof of concept, or pilot test
+product: BimlFlex
+type: Walkthrough
 ---
 # The BimlFlex Trial Process
 

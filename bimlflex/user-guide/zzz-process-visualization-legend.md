@@ -2,6 +2,8 @@
 uid: zzz-bimlflex-process-visualization-legend
 title: BimlFlex Process Visualization Legend
 summary: Documentation of process visualization legend for BimlFlex
+product: BimlFlex
+type: Walkthrough
 ---
 # Process Visualization Legend
 

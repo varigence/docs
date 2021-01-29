@@ -2,6 +2,8 @@
 uid: bimlflex-source-odata
 title: BimlFlex OData Source
 summary: Documentation on loading an Odata source from bespoke sources within BimlFlex
+product: BimlFlex
+type: Conceptual
 ---
 # BimlFlex OData Source
 

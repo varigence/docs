@@ -2,6 +2,8 @@
 uid: flat-file-source-to-staging
 title: Flat File Source to Staging
 summary: Documentation on loading a flat file source to staging from within BimlFlex
+product: BimlFlex
+type: Conceptual
 ---
 # Flat File Source to Staging
 

@@ -2,6 +2,8 @@
 uid: bimlflex-orchestration
 title: BimlFlex Batch Orchestration
 summary: Using BimlFlex batch orchestration to control failure scenario management, auditing, and logging of runs, with the BimlCatalog database
+product: BimlFlex
+type: Conceptual
 ---
 # Batch Orchestration
 

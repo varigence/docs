@@ -2,6 +2,8 @@
 uid: bfx-arm-templates
 name: Handling ARM Templates within BimlFlex
 Summary: Description of ARM Template emission within BimlFlex based on Azure size restriction(s)
+product: BimlFlex
+type: Conceptual
 ---
 
 # Handling ARM Templates within BimlFlex

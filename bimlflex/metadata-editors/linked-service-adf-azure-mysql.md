@@ -2,6 +2,8 @@
 uid: linked-service-adf-azure-mysql
 title: Configuring an ADF Linked Service Connection for Azure Database for MySQL
 summary: Documentation on how to configure ADF Linked Service Connection for Azure Database for MySQL with required fields, connection strings, and links to additional information
+product: BimlFlex
+type: Walkthrough
 ---
 # Configuring an ADF Linked Service Connection for Azure Database for MySQL
 

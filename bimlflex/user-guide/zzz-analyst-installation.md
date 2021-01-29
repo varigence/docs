@@ -2,6 +2,8 @@
 uid: bimlflex-analyst-installation
 title: Analyst Installation
 summary: Documentation providing analyst installations for the Excel-based metadata editor environment for building BimlFlex solutions
+product: BimlFlex
+type: Walkthrough
 ---
 # Analyst installation
 

@@ -2,6 +2,8 @@
 uid: bimlflex-metadata-parameters
 title: Load Parameters
 summary: Documentation for parameters for load queries added in Parameters section or as Extension Points in BimlFlex
+product: BimlFlex
+type: Conceptual
 ---
 
 # Load Parameters

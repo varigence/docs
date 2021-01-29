@@ -2,6 +2,8 @@
 uid: bimlflex-getting-started
 title: Getting Started with BimlFlex
 summary: Guide on getting started with BimlFlex including introductory videos, initial configuration, and first project walkthrough
+product: BimlFlex
+type: Index
 ---
 # Getting Started with BimlFlex
 

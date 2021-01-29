@@ -2,6 +2,8 @@
 uid: bimlcatalog-database
 title: BimlCatalog database
 summary: Documentation on the BimlCatalog database, including deployment options, parameter values, orchestration, and reporting
+product: BimlFlex
+type: Conceptual
 ---
 # BimlCatalog database
 

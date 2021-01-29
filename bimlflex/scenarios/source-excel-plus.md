@@ -2,6 +2,8 @@
 uid: bimlflex-source-excel-plus
 title: BimlFlex COZYROC Excel Plus Source
 summary: Documentation on loading Excel source files using COZYROC Excel Plus SSIS Component within BimlFlex
+product: BimlFlex
+type: Conceptual
 ---
 # BimlFlex COZYROC Excel Plus Source
 

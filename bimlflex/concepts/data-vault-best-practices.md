@@ -2,6 +2,8 @@
 uid: bimlflex-data-best-practices
 title: BimlFlex Data Vault Best Practices
 summary: Documentation for Data Vault best practices within BimlFlex, including settings for hash key and algorithms, integration keys, and data vault entity management
+product: BimlFlex
+type: Conceptual
 ---
 
 # BimlFlex Data Vault Best Practices

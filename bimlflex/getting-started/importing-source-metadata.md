@@ -2,6 +2,8 @@
 uid: bimlflex-getting-started-importing-source-metadata
 title: Importing Source Metadata
 summary: Guide on how to import source metadata into BimlFlex
+product: BimlFlex
+type: Walkthrough
 ---
 # Importing Source Metadata
 

@@ -2,6 +2,8 @@
 uid: bimlflex-getting-started-dimensional-model
 title: Data Mart Dimensional Model
 summary: Documentation providing general architecture and detailed steps to create a dimensional model 
+product: BimlFlex
+type: Walkthrough
 ---
 # Data Mart Dimensional Model
 

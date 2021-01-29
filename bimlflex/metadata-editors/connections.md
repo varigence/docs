@@ -2,6 +2,8 @@
 uid: connections
 title: Connections
 summary: Documentation regarding the BimlFlex Connections editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
+product: BimlFlex
+type: Reference
 ---
 # Connections Editor
 

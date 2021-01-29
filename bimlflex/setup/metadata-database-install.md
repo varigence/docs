@@ -2,6 +2,8 @@
 uid: bimlflex-metadata-database-installation
 title: BimlFlex Metadata Database Installation
 summary: Detailed instructions on the installation of BimlFlex metadata database through BimlFlex installer or through BimlStudio
+product: BimlFlex
+type: Walkthrough
 ---
 # BimlFlex Metadata Database Installation
 

@@ -2,6 +2,8 @@
 uid: bimlflex-metadata-configurations
 title: BimlFlex Configurations
 summary: Documentation on the metadata and framework configurations available in BimlFlex with standard configurations and examples
+product: BimlFlex
+type: Reference
 ---
 # Metadata and framework configurations
 
