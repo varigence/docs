@@ -2,6 +2,8 @@
 uid: bimlflex-build-server-install
 title: BimlFlex Build Server Install
 summary: Assistance on how to install a BimlFlex build server as part of a CI/CD pipeline
+product: BimlFlex
+type: Walkthrough
 ---
 # BimlFlex Build Server Install
 

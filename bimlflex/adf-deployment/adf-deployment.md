@@ -2,6 +2,8 @@
 uid: bimlflex-adf-deployment-guide
 title: BimlFlex ADF Deployment Guide
 summary: Guide to assist with Azure Data Factory project creation, deployment, and standard configurations
+product: BimlFlex
+type: Conceptual
 ---
 
 # Azure Data Factory Deployment Guide

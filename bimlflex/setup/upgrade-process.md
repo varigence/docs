@@ -1,6 +1,8 @@
 ---
 uid: bimlflex-upgrade-and-testing
 title: Upgrade and Testing Process
+product: BimlFlex
+type: Walkthrough
 ---
 # Upgrade and Testing Process
 

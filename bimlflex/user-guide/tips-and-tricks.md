@@ -2,6 +2,8 @@
 uid: zzz-bimlflex-user-guide-tips-and-tricks
 title: Tips and Tricks
 summary: Documentation providing tips and tricks for BimlFlex application, including custom SSIS components, main.cmd files, extension points, and generating Biml scripts
+product: BimlFlex
+type: Walkthrough
 ---
 # BimlFlex Tips and Tricks
 

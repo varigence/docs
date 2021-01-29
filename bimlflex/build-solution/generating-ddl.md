@@ -2,6 +2,8 @@
 uid: bimlflex-generating-ddl
 title: BimlFlex Generating DDL
 summary: Generate DDL based on BimlFlex metadata using BimlStudio and DDL scripts 
+product: BimlFlex
+type: Conceptual
 ---
 # BimlFlex Generating DDL
 

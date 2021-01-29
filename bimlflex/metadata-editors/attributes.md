@@ -2,6 +2,8 @@
 uid: attributes
 title: Attributes
 summary: Documentation regarding the BimlFlex Attributes editor, including editor fields, field descriptions, and data types. 
+product: BimlFlex
+type: Reference
 ---
 # Attributes Editor
 

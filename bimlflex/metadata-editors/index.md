@@ -2,6 +2,8 @@
 uid: metadata-editors-overview
 title: Metadata Editors Overview
 summary: Overview of BimlFlex metadata editors with links to BimlFlex tour, dashboard, and editors
+product: BimlFlex
+type: Index
 ---
 # Metadata Editors Overview
 

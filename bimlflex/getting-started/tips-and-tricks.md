@@ -2,6 +2,8 @@
 uid: tips-and-tricks
 title: Tips and Tricks
 summary: Tips and tricks for BimlFlex including custom SSIS components, main.cmd file, extension points, and generating Biml scripts
+product: BimlFlex
+type: Walkthrough
 ---
 # BimlFlex Tips and Tricks
 

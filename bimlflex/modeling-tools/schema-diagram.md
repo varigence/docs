@@ -2,6 +2,8 @@
 uid: schema-diagram
 title: Schema Diagram
 summary: Documentation providing Schema Diagram overview, including starting points, context aware actions, action buttons, and user interface
+product: BimlFlex
+type: Reference
 ---
 # Schema Diagram
 

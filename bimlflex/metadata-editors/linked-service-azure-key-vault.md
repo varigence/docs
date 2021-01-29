@@ -2,6 +2,8 @@
 uid: linked-service-azure-key-vault
 title: Using Azure Key Vaults for Connection settings
 summary: Documentation on how to configure ADF Key Vaults for connection settings with menu options, secret names, and secret versions
+product: BimlFlex
+type: Walkthrough
 ---
 
 # Using Azure Key Vaults for Connection settings

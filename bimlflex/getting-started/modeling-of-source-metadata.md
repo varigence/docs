@@ -2,6 +2,8 @@
 uid: bimlflex-getting-started-modeling-of-source-metadata
 title: Modeling of Source Metadata
 summary: Guidance on how to model source data to suit data warehouse requirements with detailed steps on keys, objects, tables, and naming conventions
+product: BimlFlex
+type: Walkthrough
 ---
 # Modeling of Source Metadata
 

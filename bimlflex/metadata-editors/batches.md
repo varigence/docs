@@ -2,6 +2,8 @@
 uid: batches
 title: Batches
 summary: Documentation regarding the BimlFlex Batches editor, including editor fields, action buttons, field descriptions, and setting options. 
+product: BimlFlex
+type: Reference
 ---
 # Batches Editor
 

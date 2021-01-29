@@ -2,6 +2,8 @@
 uid: bimlflex-tour
 title: BimlFlex Tour
 summary: Documentation describing the UI elements, navigation, and interaction within the BimlFlex application
+product: BimlFlex
+type: Reference
 ---
 
 # BimlFlex Tour

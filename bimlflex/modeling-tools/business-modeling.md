@@ -2,6 +2,8 @@
 uid: business-modeling
 title: Business Modeling Overview
 summary: Overview of the Business Modeling process within BimlFlex application, including conceptual origin, creating a model, action bar, settings, and relationship models
+product: BimlFlex
+type: Reference
 ---
 <!--
 # Business Modeling

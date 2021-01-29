@@ -2,6 +2,8 @@
 uid: adf-deployment-overview
 title: ADF Deployment Overview
 summary: Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through powershell and Azure portal 
+product: BimlFlex
+type: Index
 ---
 # Azure Data Factory Deployment Overview
 

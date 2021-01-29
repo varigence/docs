@@ -2,6 +2,8 @@
 uid: bimlflex-initial-setup-and-configuration
 title: BimlFlex Initial Setup and Configuration
 summary: Guidance on initial setup and configuration of the BimlFlex framework with detailed steps and supplemental video tutorials
+product: BimlFlex
+type: Walkthrough
 ---
 # Initial Setup and Configuration
 

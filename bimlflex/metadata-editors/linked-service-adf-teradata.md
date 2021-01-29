@@ -2,6 +2,8 @@
 uid: linked-service-adf-teradata
 title: Configuring an ADF Linked Service Connection for Teradata
 summary: Documentation on how to configure ADF Linked Service Connection for Teradata with required fields, connection strings, and links to additional information
+product: BimlFlex
+type: Walkthrough
 ---
 # Configuring an ADF Linked Service Connection for Teradata
 

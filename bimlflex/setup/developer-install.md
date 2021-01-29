@@ -2,6 +2,8 @@
 uid: bimlflex-developer-installation
 title: BimlFlex Developer Installation
 summary: Documentation on how to install BimlFlex through a developer installation file
+product: BimlFlex
+type: Walkthrough
 ---
 # Developer Installation
 
