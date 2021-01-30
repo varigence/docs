@@ -1,3 +1,10 @@
+---
+uid: bimlexpress-account
+title: BimlExpress Account
+summary: Documentation of BimlExpress accounts
+product: BimlExpress
+type: Reference
+---
 # BimlExpress Account
 
 ## Why do I need an account for a free product?

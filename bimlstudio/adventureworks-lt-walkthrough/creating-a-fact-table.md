@@ -1,3 +1,10 @@
+---
+uid: creating-a-fact-table
+title: Creating a Fact Table
+summary: Documentation of how to create a fact table in BimlStudio
+product: BimlStudio
+type: Walkthrough
+---
 # Creating a Fact Table
 
 Fact tables let you model the relational parts of a table, and the analytical aspects. If your fact is going to be exposed through an OLAP cube, this allows you to model all aspects of the measure group in the same editor. The relational features are modeled the same way for all table types, while the analytical features vary depending on the purpose of the table. For facts, you can model the properties that control how a Microsoft Analysis Services measure group will be emitted through the Dimension editor.

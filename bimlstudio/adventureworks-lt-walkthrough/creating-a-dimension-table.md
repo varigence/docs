@@ -1,3 +1,10 @@
+---
+uid: creating-a-dimension-table
+title: Creating a Dimension Table
+summary: Documentation of how to create a dimension table in BimlStudio
+product: BimlStudio
+type: Walkthrough
+---
 # Creating a Dimension Table
 
 Dimension tables let you model not only the relational parts of a table, but also the analytical aspects. If your dimension is going to be exposed through an OLAP cube, this allows you to model all aspects of the dimension in the same editor. The relational features are modeled the same way for all table types, while the analytical features vary depending on the purpose of the table. For dimensions, the dimension editor lets you model the properties that control how a Microsoft Analysis Services dimension will be emitted.

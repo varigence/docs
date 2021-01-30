@@ -1,3 +1,10 @@
+---
+uid: creating-a-new-database
+title: Creating a New Database
+summary: Documentation of how to create a new database in BimlStudio
+product: BimlStudio
+type: Blog
+---
 # Creating a New Database
 
 Databases contain relational objects, such as tables, schemas, and views. Any relational object in a database automatically uses the database's connection.

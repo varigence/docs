@@ -1,3 +1,10 @@
+---
+uid: add-edit-biml-files
+title: Add and Edit Biml Files
+summary: Documentation of how to add and edit files in BimlExpress
+product: BimlExpress
+type: Knowledge Base
+---
 # Add and Edit Biml Files
 
 To add a Biml file to the project, right-click on the project, or on the Data Sources, Data Source Views, or SSIS Packages folders. The context menu will have an **Add New Biml File** menu option. This will add a Biml file to the Miscellaneous folder in the project.
