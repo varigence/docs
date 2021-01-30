@@ -1,3 +1,10 @@
+---
+uid: adding-existing-files-to-a-project
+title: Adding existing files to a project
+summary: Documentation of how to add existing files to a project
+product: BimlStudio
+type: Walkthrough
+---
 # Adding existing files to a project
 
 It's possible to add existing Biml files to a project using the Project View. This is useful if you want to reuse Biml from a previous project, or you are sharing a common Biml file between projects.

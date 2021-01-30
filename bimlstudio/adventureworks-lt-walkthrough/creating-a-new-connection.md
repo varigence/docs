@@ -1,3 +1,10 @@
+---
+uid: creating-a-new-connection
+title: Creating a New Connection
+summary: Documentation of how to create a new connection in BimlStudio
+product: BimlStudio
+type: Forum
+---
 # Creating a New Connection
 
 In BimlStudio, connections are defined once in a project and shared with all the objects that need to reference them. This allows you to easily update connections in a single location.
