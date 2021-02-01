@@ -1,7 +1,7 @@
 ---
 uid: biml-ssastrimming-enumeration
 title: SsasTrimming Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

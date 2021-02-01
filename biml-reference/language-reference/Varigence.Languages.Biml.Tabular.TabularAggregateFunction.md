@@ -1,7 +1,7 @@
 ---
 uid: biml-tabularaggregatefunction-enumeration
 title: TabularAggregateFunction Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

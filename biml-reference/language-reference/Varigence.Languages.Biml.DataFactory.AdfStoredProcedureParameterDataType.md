@@ -1,7 +1,7 @@
 ---
 uid: biml-adfstoredprocedureparameterdatatype-enumeration
 title: AdfStoredProcedureParameterDataType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

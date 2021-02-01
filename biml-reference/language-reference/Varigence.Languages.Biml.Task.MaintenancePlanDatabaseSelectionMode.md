@@ -1,7 +1,7 @@
 ---
 uid: biml-maintenanceplandatabaseselectionmode-enumeration
 title: MaintenancePlanDatabaseSelectionMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

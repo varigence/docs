@@ -1,7 +1,7 @@
 ---
 uid: biml-wmieventwatchertaskactionatevent-enumeration
 title: WmiEventWatcherTaskActionAtEvent Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

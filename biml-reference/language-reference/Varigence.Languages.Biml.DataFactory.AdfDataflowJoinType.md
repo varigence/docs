@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdataflowjointype-enumeration
 title: AdfDataflowJoinType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

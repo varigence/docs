@@ -1,7 +1,7 @@
 ---
 uid: biml-flatfilecolumntype-enumeration
 title: FlatFileColumnType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

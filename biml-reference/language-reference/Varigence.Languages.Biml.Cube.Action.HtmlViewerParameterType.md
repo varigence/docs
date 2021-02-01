@@ -1,7 +1,7 @@
 ---
 uid: biml-htmlviewerparametertype-enumeration
 title: HtmlViewerParameterType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

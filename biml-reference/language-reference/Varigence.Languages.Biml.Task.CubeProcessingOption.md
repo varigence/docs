@@ -1,7 +1,7 @@
 ---
 uid: biml-cubeprocessingoption-enumeration
 title: CubeProcessingOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

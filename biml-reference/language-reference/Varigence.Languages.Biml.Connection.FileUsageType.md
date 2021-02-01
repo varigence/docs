@@ -1,7 +1,7 @@
 ---
 uid: biml-fileusagetype-enumeration
 title: FileUsageType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

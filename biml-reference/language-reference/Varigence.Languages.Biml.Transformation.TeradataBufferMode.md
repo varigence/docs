@@ -1,7 +1,7 @@
 ---
 uid: biml-teradatabuffermode-enumeration
 title: TeradataBufferMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

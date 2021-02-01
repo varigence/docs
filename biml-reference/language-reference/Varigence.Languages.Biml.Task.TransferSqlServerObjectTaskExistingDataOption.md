@@ -1,7 +1,7 @@
 ---
 uid: biml-transfersqlserverobjecttaskexistingdataoption-enumeration
 title: TransferSqlServerObjectTaskExistingDataOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

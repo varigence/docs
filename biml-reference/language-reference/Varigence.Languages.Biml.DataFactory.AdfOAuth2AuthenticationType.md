@@ -1,7 +1,7 @@
 ---
 uid: biml-adfoauth2authenticationtype-enumeration
 title: AdfOAuth2AuthenticationType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

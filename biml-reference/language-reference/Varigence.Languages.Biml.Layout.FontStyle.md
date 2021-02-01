@@ -1,7 +1,7 @@
 ---
 uid: biml-fontstyle-enumeration
 title: FontStyle Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-ssasorderby-enumeration
 title: SsasOrderBy Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

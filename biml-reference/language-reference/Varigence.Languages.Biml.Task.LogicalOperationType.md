@@ -1,7 +1,7 @@
 ---
 uid: biml-logicaloperationtype-enumeration
 title: LogicalOperationType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

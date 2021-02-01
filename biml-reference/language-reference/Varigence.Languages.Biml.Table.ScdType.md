@@ -1,7 +1,7 @@
 ---
 uid: biml-scdtype-enumeration
 title: ScdType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

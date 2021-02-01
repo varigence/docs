@@ -1,7 +1,7 @@
 ---
 uid: biml-foreachadoloopenumerationmode-enumeration
 title: ForEachAdoLoopEnumerationMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

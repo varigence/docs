@@ -1,7 +1,7 @@
 ---
 uid: biml-ssasoptimizedstate-enumeration
 title: SsasOptimizedState Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

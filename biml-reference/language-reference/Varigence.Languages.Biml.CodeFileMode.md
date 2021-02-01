@@ -1,7 +1,7 @@
 ---
 uid: biml-codefilemode-enumeration
 title: CodeFileMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

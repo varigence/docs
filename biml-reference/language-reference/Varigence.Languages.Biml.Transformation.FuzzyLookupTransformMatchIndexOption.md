@@ -1,7 +1,7 @@
 ---
 uid: biml-fuzzylookuptransformmatchindexoption-enumeration
 title: FuzzyLookupTransformMatchIndexOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

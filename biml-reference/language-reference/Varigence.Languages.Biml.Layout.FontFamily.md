@@ -1,7 +1,7 @@
 ---
 uid: biml-fontfamily-enumeration
 title: FontFamily Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

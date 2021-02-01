@@ -1,7 +1,7 @@
 ---
 uid: biml-errorconfigurationkeyerroraction-enumeration
 title: ErrorConfigurationKeyErrorAction Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

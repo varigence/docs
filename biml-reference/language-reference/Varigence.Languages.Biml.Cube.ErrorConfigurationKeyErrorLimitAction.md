@@ -1,7 +1,7 @@
 ---
 uid: biml-errorconfigurationkeyerrorlimitaction-enumeration
 title: ErrorConfigurationKeyErrorLimitAction Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

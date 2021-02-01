@@ -1,7 +1,7 @@
 ---
 uid: biml-pivotusage-enumeration
 title: PivotUsage Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

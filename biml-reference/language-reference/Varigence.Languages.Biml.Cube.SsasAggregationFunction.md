@@ -1,7 +1,7 @@
 ---
 uid: biml-ssasaggregationfunction-enumeration
 title: SsasAggregationFunction Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-loggingmode-enumeration
 title: LoggingMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

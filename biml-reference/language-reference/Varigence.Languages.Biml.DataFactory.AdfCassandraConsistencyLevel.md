@@ -1,7 +1,7 @@
 ---
 uid: biml-adfcassandraconsistencylevel-enumeration
 title: AdfCassandraConsistencyLevel Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

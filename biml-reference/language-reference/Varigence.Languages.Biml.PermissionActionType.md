@@ -1,7 +1,7 @@
 ---
 uid: biml-permissionactiontype-enumeration
 title: PermissionActionType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

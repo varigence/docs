@@ -1,7 +1,7 @@
 ---
 uid: biml-adfusqlcompilationmode-enumeration
 title: AdfUSqlCompilationMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

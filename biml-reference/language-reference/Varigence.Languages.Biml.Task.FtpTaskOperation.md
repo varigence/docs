@@ -1,7 +1,7 @@
 ---
 uid: biml-ftptaskoperation-enumeration
 title: FtpTaskOperation Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

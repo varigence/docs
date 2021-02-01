@@ -1,7 +1,7 @@
 ---
 uid: biml-adfgeneralcompressioncodec-enumeration
 title: AdfGeneralCompressionCodec Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

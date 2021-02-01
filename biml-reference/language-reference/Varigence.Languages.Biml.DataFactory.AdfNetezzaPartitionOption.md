@@ -1,7 +1,7 @@
 ---
 uid: biml-adfnetezzapartitionoption-enumeration
 title: AdfNetezzaPartitionOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

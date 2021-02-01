@@ -1,7 +1,7 @@
 ---
 uid: biml-namedsettype-enumeration
 title: NamedSetType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

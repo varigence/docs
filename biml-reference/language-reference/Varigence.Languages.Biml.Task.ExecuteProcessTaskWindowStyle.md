@@ -1,7 +1,7 @@
 ---
 uid: biml-executeprocesstaskwindowstyle-enumeration
 title: ExecuteProcessTaskWindowStyle Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

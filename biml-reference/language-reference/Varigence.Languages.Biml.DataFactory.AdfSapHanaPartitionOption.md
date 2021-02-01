@@ -1,7 +1,7 @@
 ---
 uid: biml-adfsaphanapartitionoption-enumeration
 title: AdfSapHanaPartitionOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

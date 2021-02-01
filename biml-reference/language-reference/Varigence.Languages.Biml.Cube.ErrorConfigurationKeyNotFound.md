@@ -1,7 +1,7 @@
 ---
 uid: biml-errorconfigurationkeynotfound-enumeration
 title: ErrorConfigurationKeyNotFound Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

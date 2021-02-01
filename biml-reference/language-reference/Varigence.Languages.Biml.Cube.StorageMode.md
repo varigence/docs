@@ -1,7 +1,7 @@
 ---
 uid: biml-storagemode-enumeration
 title: StorageMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

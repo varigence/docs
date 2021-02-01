@@ -1,7 +1,7 @@
 ---
 uid: biml-ssasnullprocessing-enumeration
 title: SsasNullProcessing Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

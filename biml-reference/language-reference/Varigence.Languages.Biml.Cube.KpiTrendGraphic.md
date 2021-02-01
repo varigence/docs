@@ -1,7 +1,7 @@
 ---
 uid: biml-kpitrendgraphic-enumeration
 title: KpiTrendGraphic Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

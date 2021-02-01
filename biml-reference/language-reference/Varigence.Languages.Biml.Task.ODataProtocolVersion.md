@@ -1,7 +1,7 @@
 ---
 uid: biml-odataprotocolversion-enumeration
 title: ODataProtocolVersion Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

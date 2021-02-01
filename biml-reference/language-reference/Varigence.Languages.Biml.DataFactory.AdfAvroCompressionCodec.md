@@ -1,7 +1,7 @@
 ---
 uid: biml-adfavrocompressioncodec-enumeration
 title: AdfAvroCompressionCodec Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

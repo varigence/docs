@@ -1,7 +1,7 @@
 ---
 uid: biml-rawfiledestinationwriteoption-enumeration
 title: RawFileDestinationWriteOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-errorrowdisposition-enumeration
 title: ErrorRowDisposition Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

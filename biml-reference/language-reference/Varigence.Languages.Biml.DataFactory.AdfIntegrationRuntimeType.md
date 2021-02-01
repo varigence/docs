@@ -1,7 +1,7 @@
 ---
 uid: biml-adfintegrationruntimetype-enumeration
 title: AdfIntegrationRuntimeType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

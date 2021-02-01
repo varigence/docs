@@ -1,7 +1,7 @@
 ---
 uid: biml-proactivecachingonlinemode-enumeration
 title: ProactiveCachingOnlineMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

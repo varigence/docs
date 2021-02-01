@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdataflowunpivotdatatype-enumeration
 title: AdfDataflowUnpivotDataType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

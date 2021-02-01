@@ -1,7 +1,7 @@
 ---
 uid: biml-tabularkpistatusgraphic-enumeration
 title: TabularKpiStatusGraphic Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

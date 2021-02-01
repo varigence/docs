@@ -1,7 +1,7 @@
 ---
 uid: biml-permissiondrillthroughaccess-enumeration
 title: PermissionDrillThroughAccess Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

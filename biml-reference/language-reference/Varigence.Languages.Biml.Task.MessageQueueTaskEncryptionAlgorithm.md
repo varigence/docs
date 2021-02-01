@@ -1,7 +1,7 @@
 ---
 uid: biml-messagequeuetaskencryptionalgorithm-enumeration
 title: MessageQueueTaskEncryptionAlgorithm Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

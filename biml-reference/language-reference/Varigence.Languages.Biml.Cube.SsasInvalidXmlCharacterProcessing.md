@@ -1,7 +1,7 @@
 ---
 uid: biml-ssasinvalidxmlcharacterprocessing-enumeration
 title: SsasInvalidXmlCharacterProcessing Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

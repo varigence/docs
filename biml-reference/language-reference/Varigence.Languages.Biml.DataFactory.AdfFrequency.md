@@ -1,7 +1,7 @@
 ---
 uid: biml-adffrequency-enumeration
 title: AdfFrequency Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

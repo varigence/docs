@@ -1,7 +1,7 @@
 ---
 uid: biml-adfbuildmode-enumeration
 title: AdfBuildMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

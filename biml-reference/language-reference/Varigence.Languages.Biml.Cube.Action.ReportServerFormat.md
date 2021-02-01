@@ -1,7 +1,7 @@
 ---
 uid: biml-reportserverformat-enumeration
 title: ReportServerFormat Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

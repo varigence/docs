@@ -1,7 +1,7 @@
 ---
 uid: biml-adfhttpdatasetmethod-enumeration
 title: AdfHttpDatasetMethod Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

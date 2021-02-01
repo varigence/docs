@@ -1,7 +1,7 @@
 ---
 uid: biml-tabularrelationshipfilterdirection-enumeration
 title: TabularRelationshipFilterDirection Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

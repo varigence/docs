@@ -1,7 +1,7 @@
 ---
 uid: biml-errorconfigurationnullkeynotallowed-enumeration
 title: ErrorConfigurationNullKeyNotAllowed Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

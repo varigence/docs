@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdataflowpivotcolumnarrangement-enumeration
 title: AdfDataflowPivotColumnArrangement Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

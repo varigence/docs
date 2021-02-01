@@ -1,7 +1,7 @@
 ---
 uid: biml-eventcolumn-enumeration
 title: EventColumn Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

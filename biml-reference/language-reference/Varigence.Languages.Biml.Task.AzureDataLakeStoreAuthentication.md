@@ -1,7 +1,7 @@
 ---
 uid: biml-azuredatalakestoreauthentication-enumeration
 title: AzureDataLakeStoreAuthentication Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-updatestatisticstaskscantype-enumeration
 title: UpdateStatisticsTaskScanType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-automaticboolean-enumeration
 title: AutomaticBoolean Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

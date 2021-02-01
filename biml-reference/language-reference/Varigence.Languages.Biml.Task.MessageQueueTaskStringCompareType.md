@@ -1,7 +1,7 @@
 ---
 uid: biml-messagequeuetaskstringcomparetype-enumeration
 title: MessageQueueTaskStringCompareType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

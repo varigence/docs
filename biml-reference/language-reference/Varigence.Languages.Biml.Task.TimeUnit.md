@@ -1,7 +1,7 @@
 ---
 uid: biml-timeunit-enumeration
 title: TimeUnit Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

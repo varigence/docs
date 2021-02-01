@@ -1,7 +1,7 @@
 ---
 uid: biml-dataaggregation-enumeration
 title: DataAggregation Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-adfreadbehavior-enumeration
 title: AdfReadBehavior Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

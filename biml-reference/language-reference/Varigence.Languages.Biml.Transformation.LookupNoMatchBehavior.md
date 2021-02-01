@@ -1,7 +1,7 @@
 ---
 uid: biml-lookupnomatchbehavior-enumeration
 title: LookupNoMatchBehavior Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

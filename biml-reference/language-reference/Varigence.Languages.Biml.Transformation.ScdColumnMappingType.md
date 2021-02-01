@@ -1,7 +1,7 @@
 ---
 uid: biml-scdcolumnmappingtype-enumeration
 title: ScdColumnMappingType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

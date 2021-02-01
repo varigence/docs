@@ -1,7 +1,7 @@
 ---
 uid: biml-adfsappartitionoption-enumeration
 title: AdfSapPartitionOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

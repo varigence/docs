@@ -1,7 +1,7 @@
 ---
 uid: biml-ssastabularversion-enumeration
 title: SsasTabularVersion Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

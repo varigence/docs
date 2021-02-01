@@ -1,7 +1,7 @@
 ---
 uid: biml-webservicetaskparametertype-enumeration
 title: WebServiceTaskParameterType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

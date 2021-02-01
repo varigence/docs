@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdataflowexiststype-enumeration
 title: AdfDataflowExistsType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

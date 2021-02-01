@@ -1,7 +1,7 @@
 ---
 uid: biml-protectionlevel-enumeration
 title: ProtectionLevel Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

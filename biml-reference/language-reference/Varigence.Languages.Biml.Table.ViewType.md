@@ -1,7 +1,7 @@
 ---
 uid: biml-viewtype-enumeration
 title: ViewType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

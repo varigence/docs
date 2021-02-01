@@ -1,7 +1,7 @@
 ---
 uid: biml-databaseprocessingoption-enumeration
 title: DatabaseProcessingOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-foreignkeyconstraintmode-enumeration
 title: ForeignKeyConstraintMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

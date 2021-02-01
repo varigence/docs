@@ -1,7 +1,7 @@
 ---
 uid: biml-fuzzygroupingtransformnumeraloption-enumeration
 title: FuzzyGroupingTransformNumeralOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

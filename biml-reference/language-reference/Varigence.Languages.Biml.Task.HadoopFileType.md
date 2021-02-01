@@ -1,7 +1,7 @@
 ---
 uid: biml-hadoopfiletype-enumeration
 title: HadoopFileType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

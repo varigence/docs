@@ -1,7 +1,7 @@
 ---
 uid: biml-adfssisintegrationruntimeedition-enumeration
 title: AdfSsisIntegrationRuntimeEdition Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

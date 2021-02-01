@@ -1,7 +1,7 @@
 ---
 uid: biml-isolationlevel-enumeration
 title: IsolationLevel Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

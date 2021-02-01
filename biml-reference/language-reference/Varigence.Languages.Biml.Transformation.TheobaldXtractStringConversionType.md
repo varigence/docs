@@ -1,7 +1,7 @@
 ---
 uid: biml-theobaldxtractstringconversiontype-enumeration
 title: TheobaldXtractStringConversionType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

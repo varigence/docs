@@ -1,7 +1,7 @@
 ---
 uid: biml-adfpipelinemode-enumeration
 title: AdfPipelineMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

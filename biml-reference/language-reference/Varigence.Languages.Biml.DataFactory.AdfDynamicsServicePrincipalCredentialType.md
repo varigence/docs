@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdynamicsserviceprincipalcredentialtype-enumeration
 title: AdfDynamicsServicePrincipalCredentialType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-foreachnodelistloopinnerelementtype-enumeration
 title: ForEachNodeListLoopInnerElementType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

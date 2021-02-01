@@ -1,7 +1,7 @@
 ---
 uid: biml-odataauthentication-enumeration
 title: ODataAuthentication Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

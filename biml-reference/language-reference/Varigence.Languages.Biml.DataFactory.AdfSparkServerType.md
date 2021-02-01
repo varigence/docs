@@ -1,7 +1,7 @@
 ---
 uid: biml-adfsparkservertype-enumeration
 title: AdfSparkServerType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

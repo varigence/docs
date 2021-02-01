@@ -1,7 +1,7 @@
 ---
 uid: biml-metadatamodelvalidatorlanguage-enumeration
 title: MetadataModelValidatorLanguage Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-tabularrelationshipcardinality-enumeration
 title: TabularRelationshipCardinality Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

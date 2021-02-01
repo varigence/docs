@@ -1,7 +1,7 @@
 ---
 uid: biml-termextractiontransformtermtype-enumeration
 title: TermExtractionTransformTermType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdataflowwindowsortdirection-enumeration
 title: AdfDataflowWindowSortDirection Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-datastreaminginputusagetype-enumeration
 title: DataStreamingInputUsageType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

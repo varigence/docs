@@ -1,7 +1,7 @@
 ---
 uid: biml-hierarchymemberkeysunique-enumeration
 title: HierarchyMemberKeysUnique Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

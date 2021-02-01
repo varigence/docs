@@ -1,7 +1,7 @@
 ---
 uid: biml-actiontargettype-enumeration
 title: ActionTargetType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

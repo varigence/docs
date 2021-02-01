@@ -1,7 +1,7 @@
 ---
 uid: biml-adfjsonformatsinkfilepattern-enumeration
 title: AdfJsonFormatSinkFilePattern Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

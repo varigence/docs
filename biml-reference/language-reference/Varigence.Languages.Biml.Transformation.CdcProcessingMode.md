@@ -1,7 +1,7 @@
 ---
 uid: biml-cdcprocessingmode-enumeration
 title: CdcProcessingMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

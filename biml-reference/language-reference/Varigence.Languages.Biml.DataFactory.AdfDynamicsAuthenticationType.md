@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdynamicsauthenticationtype-enumeration
 title: AdfDynamicsAuthenticationType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

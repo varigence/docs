@@ -1,7 +1,7 @@
 ---
 uid: biml-xmltaskvalidationtype-enumeration
 title: XmlTaskValidationType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

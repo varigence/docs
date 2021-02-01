@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdayofweek-enumeration
 title: AdfDayOfWeek Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

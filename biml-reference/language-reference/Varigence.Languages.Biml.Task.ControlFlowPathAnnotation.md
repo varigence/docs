@@ -1,7 +1,7 @@
 ---
 uid: biml-controlflowpathannotation-enumeration
 title: ControlFlowPathAnnotation Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

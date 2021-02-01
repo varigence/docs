@@ -1,7 +1,7 @@
 ---
 uid: biml-packagepriorityclass-enumeration
 title: PackagePriorityClass Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

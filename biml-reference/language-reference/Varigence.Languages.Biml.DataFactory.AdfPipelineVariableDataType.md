@@ -1,7 +1,7 @@
 ---
 uid: biml-adfpipelinevariabledatatype-enumeration
 title: AdfPipelineVariableDataType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

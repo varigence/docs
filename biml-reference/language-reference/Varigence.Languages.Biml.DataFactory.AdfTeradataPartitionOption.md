@@ -1,7 +1,7 @@
 ---
 uid: biml-adfteradatapartitionoption-enumeration
 title: AdfTeradataPartitionOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

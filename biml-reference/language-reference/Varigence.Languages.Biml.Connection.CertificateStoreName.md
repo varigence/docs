@@ -1,7 +1,7 @@
 ---
 uid: biml-certificatestorename-enumeration
 title: CertificateStoreName Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

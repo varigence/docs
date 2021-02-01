@@ -1,7 +1,7 @@
 ---
 uid: biml-adffilecompressionlevel-enumeration
 title: AdfFileCompressionLevel Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

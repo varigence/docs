@@ -1,7 +1,7 @@
 ---
 uid: biml-inheritableboolean-enumeration
 title: InheritableBoolean Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

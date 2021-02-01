@@ -1,7 +1,7 @@
 ---
 uid: biml-ssasdatatype-enumeration
 title: SsasDataType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

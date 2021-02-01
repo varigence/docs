@@ -1,7 +1,7 @@
 ---
 uid: biml-errorconfigurationkeyduplicate-enumeration
 title: ErrorConfigurationKeyDuplicate Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

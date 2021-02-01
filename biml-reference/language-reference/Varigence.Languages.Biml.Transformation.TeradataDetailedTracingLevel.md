@@ -1,7 +1,7 @@
 ---
 uid: biml-teradatadetailedtracinglevel-enumeration
 title: TeradataDetailedTracingLevel Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

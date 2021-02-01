@@ -1,7 +1,7 @@
 ---
 uid: biml-measuregroupprocessingoption-enumeration
 title: MeasureGroupProcessingOption Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

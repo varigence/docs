@@ -1,7 +1,7 @@
 ---
 uid: biml-cardinalitytype-enumeration
 title: CardinalityType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

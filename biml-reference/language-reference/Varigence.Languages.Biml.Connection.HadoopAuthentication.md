@@ -1,7 +1,7 @@
 ---
 uid: biml-hadoopauthentication-enumeration
 title: HadoopAuthentication Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

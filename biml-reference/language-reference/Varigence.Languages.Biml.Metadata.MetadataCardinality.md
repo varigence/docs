@@ -1,7 +1,7 @@
 ---
 uid: biml-metadatacardinality-enumeration
 title: MetadataCardinality Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

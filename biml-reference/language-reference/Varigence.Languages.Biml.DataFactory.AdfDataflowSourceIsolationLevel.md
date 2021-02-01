@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdataflowsourceisolationlevel-enumeration
 title: AdfDataflowSourceIsolationLevel Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

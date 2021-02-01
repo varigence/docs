@@ -1,7 +1,7 @@
 ---
 uid: biml-ssasattributeusage-enumeration
 title: SsasAttributeUsage Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

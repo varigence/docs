@@ -1,7 +1,7 @@
 ---
 uid: biml-adfintegrationruntimessiscatalogpricingtier-enumeration
 title: AdfIntegrationRuntimeSsisCatalogPricingTier Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

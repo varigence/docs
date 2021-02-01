@@ -1,7 +1,7 @@
 ---
 uid: biml-adfcopycommandinsertidentity-enumeration
 title: AdfCopyCommandInsertIdentity Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-fuzzylookuptransformextendedcomparisonoptions-enumeration
 title: FuzzyLookupTransformExtendedComparisonOptions Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

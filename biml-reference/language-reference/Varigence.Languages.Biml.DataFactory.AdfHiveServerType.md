@@ -1,7 +1,7 @@
 ---
 uid: biml-adfhiveservertype-enumeration
 title: AdfHiveServerType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

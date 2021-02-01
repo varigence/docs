@@ -1,7 +1,7 @@
 ---
 uid: biml-metadatamodelvalidationseverity-enumeration
 title: MetadataModelValidationSeverity Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

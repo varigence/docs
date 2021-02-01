@@ -1,7 +1,7 @@
 ---
 uid: biml-xmltaskoperationtype-enumeration
 title: XmlTaskOperationType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

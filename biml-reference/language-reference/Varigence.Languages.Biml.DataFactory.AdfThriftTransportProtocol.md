@@ -1,7 +1,7 @@
 ---
 uid: biml-adfthrifttransportprotocol-enumeration
 title: AdfThriftTransportProtocol Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

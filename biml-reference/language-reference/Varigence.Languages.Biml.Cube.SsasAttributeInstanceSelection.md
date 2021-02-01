@@ -1,7 +1,7 @@
 ---
 uid: biml-ssasattributeinstanceselection-enumeration
 title: SsasAttributeInstanceSelection Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

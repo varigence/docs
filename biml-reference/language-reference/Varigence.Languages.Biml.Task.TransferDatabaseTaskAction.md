@@ -1,7 +1,7 @@
 ---
 uid: biml-transferdatabasetaskaction-enumeration
 title: TransferDatabaseTaskAction Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

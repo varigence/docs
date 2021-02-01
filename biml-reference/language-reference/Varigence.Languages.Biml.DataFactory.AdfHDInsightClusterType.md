@@ -1,7 +1,7 @@
 ---
 uid: biml-adfhdinsightclustertype-enumeration
 title: AdfHDInsightClusterType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

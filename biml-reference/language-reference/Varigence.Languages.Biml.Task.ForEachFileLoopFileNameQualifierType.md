@@ -1,7 +1,7 @@
 ---
 uid: biml-foreachfileloopfilenamequalifiertype-enumeration
 title: ForEachFileLoopFileNameQualifierType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-delimiter-enumeration
 title: Delimiter Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

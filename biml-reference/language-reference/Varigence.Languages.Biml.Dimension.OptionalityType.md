@@ -1,7 +1,7 @@
 ---
 uid: biml-optionalitytype-enumeration
 title: OptionalityType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

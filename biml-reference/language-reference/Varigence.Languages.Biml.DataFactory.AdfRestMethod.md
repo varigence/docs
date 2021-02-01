@@ -1,7 +1,7 @@
 ---
 uid: biml-adfrestmethod-enumeration
 title: AdfRestMethod Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

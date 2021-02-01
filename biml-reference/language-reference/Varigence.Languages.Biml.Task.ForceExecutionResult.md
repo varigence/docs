@@ -1,7 +1,7 @@
 ---
 uid: biml-forceexecutionresult-enumeration
 title: ForceExecutionResult Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

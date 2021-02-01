@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdataflowalterrowconditionaction-enumeration
 title: AdfDataflowAlterRowConditionAction Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-ssisdataflowpropertydatatype-enumeration
 title: SsisDataflowPropertyDataType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

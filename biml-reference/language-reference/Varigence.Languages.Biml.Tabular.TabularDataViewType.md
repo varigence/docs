@@ -1,7 +1,7 @@
 ---
 uid: biml-tabulardataviewtype-enumeration
 title: TabularDataViewType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

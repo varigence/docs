@@ -1,7 +1,7 @@
 ---
 uid: biml-slowlychangingdimensionincomingrowchangetype-enumeration
 title: SlowlyChangingDimensionIncomingRowChangeType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-ssispackagetype-enumeration
 title: SsisPackageType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

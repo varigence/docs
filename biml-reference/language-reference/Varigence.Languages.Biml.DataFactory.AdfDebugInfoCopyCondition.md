@@ -1,7 +1,7 @@
 ---
 uid: biml-adfdebuginfocopycondition-enumeration
 title: AdfDebugInfoCopyCondition Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-adfeventtriggereventtype-enumeration
 title: AdfEventTriggerEventType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

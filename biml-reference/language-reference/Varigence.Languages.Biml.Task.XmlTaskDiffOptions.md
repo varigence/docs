@@ -1,7 +1,7 @@
 ---
 uid: biml-xmltaskdiffoptions-enumeration
 title: XmlTaskDiffOptions Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 uid: biml-scripterrorhandlingmode-enumeration
 title: ScriptErrorHandlingMode Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

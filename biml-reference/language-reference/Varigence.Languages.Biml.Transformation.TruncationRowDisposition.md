@@ -1,7 +1,7 @@
 ---
 uid: biml-truncationrowdisposition-enumeration
 title: TruncationRowDisposition Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

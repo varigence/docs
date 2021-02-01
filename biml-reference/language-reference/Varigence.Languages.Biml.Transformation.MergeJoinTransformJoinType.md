@@ -1,7 +1,7 @@
 ---
 uid: biml-mergejointransformjointype-enumeration
 title: MergeJoinTransformJoinType Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

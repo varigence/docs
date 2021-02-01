@@ -1,7 +1,7 @@
 ---
 uid: biml-azuresqldatawarehousefilecompressionlevel-enumeration
 title: AzureSqlDataWarehouseFileCompressionLevel Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

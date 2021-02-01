@@ -1,7 +1,7 @@
 ---
 uid: biml-adfazuresqlisolationlevel-enumeration
 title: AdfAzureSqlIsolationLevel Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 

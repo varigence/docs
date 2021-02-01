@@ -1,7 +1,7 @@
 ---
 uid: biml-checkpointusage-enumeration
 title: CheckpointUsage Enumeration
-varigenceProduct: Biml Langauge
+varigenceProduct: Biml Language
 varigenceArticleType: Reference
 ---
 
