@@ -1,8 +1,8 @@
 ---
 uid: bimlflex-source-salesforce
 title: BimlFlex Salesforce Source
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 # BimlFlex Salesforce Source
 

@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-sample-metadata
 title: Load Sample Metadata
 summary: Guidance on loading sample metadata into BimlFlex with sample sets and configuration sets
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Load Sample Metadata and Default Configurations
 

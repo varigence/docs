@@ -2,8 +2,8 @@
 uid: bimlflex-database
 title: BimlFlex metadata database
 summary: Documentation on the BimlFlex database, including deployment options, customers, versions, entities, and target mappings
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 # BimlFlex metadata database
 

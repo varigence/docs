@@ -2,8 +2,8 @@
 uid: linked-service-adf-postgresql
 title: Configuring an ADF Linked Service Connection for PostgreSQL
 summary: Documentation on how to configure ADF Linked Service Connection for PostsgreSQL with required fields, connection strings, and links to additional information
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Configuring an ADF Linked Service Connection for PostgreSQL
 

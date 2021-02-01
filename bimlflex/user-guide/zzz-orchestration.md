@@ -2,8 +2,8 @@
 uid: zzz-bimlflex-orchestration
 title: BimlFlex Orchestration
 summary: Documentation regarding the BimlFlex orchestration engine that controls failure scenario management, auditing, and logging of runs
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Orchestration
 

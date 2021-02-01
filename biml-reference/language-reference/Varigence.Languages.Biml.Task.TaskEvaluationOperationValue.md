@@ -1,6 +1,8 @@
 ---
 uid: biml-taskevaluationoperationvalue-enumeration
 title: TaskEvaluationOperationValue Enumeration
+varigenceProduct: Biml Langauge
+varigenceArticleType: Reference
 ---
 
 ## TaskEvaluationOperationValue Enumeration<div class="LanguageSummary"><div class ="SummaryItem">The TaskEvaluationOperationValue enumeration provides options for determining when the constraint component of a SQL Server Integration Services task precedence constraint is satisfied.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Success</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the input task of the precedence constraint must complete successfully for this status to be valid.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Failure</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the input task of the precedence constraint must fail for this status to be valid.</div></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Completion</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the input task of the precedence constraint can complete successfully or with failure for this status to be valid.</div></td></tr></tbody></table></div>

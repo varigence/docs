@@ -1,6 +1,8 @@
 ---
 uid: biml-adfdatasetsinkcopybehavior-enumeration
 title: AdfDatasetSinkCopyBehavior Enumeration
+varigenceProduct: Biml Langauge
+varigenceArticleType: Reference
 ---
 
 ## AdfDatasetSinkCopyBehavior Enumeration<div class="LanguageSummary"><div class ="SummaryItem">Provides options for the file copy behavior to dataset sinks used by Azure Data Factory.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">None</td><td class="MemberSummary"><div class ="SummaryItem">No specified copy behavior.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">PreserveHierarchy</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the folder structure from the source will be maintained in the sink.</div></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">FlattenHierarchy</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that files from all subfolders in the source will be copied into the first level of the sink folder.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">MergeFiles</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that all files from the source folder will be merged into a single file in the sink.</div></td></tr></tbody></table></div>

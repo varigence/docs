@@ -2,8 +2,8 @@
 uid: bimlflex-command-line-build
 title: Building Using the Command Line
 summary: Guide to building solutions involving CI/CD for automated processes, using response files, Biml Compiler, and MsBuild
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 
 # Building Using the Command Line

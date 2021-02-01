@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-adding-business-data-vault-performance-constructs
 title: Adding the Business Data Vault Model
 summary: Documentation on using Point in Time and Bridge Tables to easily query and improve query performance of a Data Vault
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 # Adding the Business Data Vault Model
 

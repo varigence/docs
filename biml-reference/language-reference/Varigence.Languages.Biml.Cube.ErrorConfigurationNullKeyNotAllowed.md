@@ -1,6 +1,8 @@
 ---
 uid: biml-errorconfigurationnullkeynotallowed-enumeration
 title: ErrorConfigurationNullKeyNotAllowed Enumeration
+varigenceProduct: Biml Langauge
+varigenceArticleType: Reference
 ---
 
 ## ErrorConfigurationNullKeyNotAllowed Enumeration<div class="LanguageSummary"><div class ="SummaryItem">The ErrorConfigurationNullKeyNotAllowed enumeration provides options for how cube processing should respond when a disallowed null key is encountered.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">IgnoreError</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that when a disallowed null key is discovered, the error should be ignored entirely.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">ReportAndContinue</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that when a disallowed null key is discovered, a message should be generated, but processing should continue.</div></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">ReportAndStop</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that when a disallowed null key is discovered, a message should be generated, and processing should terminate.</div></td></tr></tbody></table></div>

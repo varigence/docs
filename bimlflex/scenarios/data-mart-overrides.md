@@ -2,6 +2,8 @@
 uid: bimlflex-data-mart-overrides
 title: Data Mart Configurations and Overrides
 summary: Documentation on BimlFlex Configurations used to drive default behavior across multiple data architecture concepts within a Data Mart
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 
 # BimlFlex Configurations and the Data Mart

@@ -2,8 +2,8 @@
 uid: bimlflex-ssdt-project
 title: BimlFlex-generated SQL Server Data Tools Project
 summary: BimlFlex and SQL Server Data Tools documentation for guidance on database management and automation of deployment processes and source control mechanisms
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 
 # BimlFlex-generated SQL Server Data Tools Project

@@ -1,6 +1,8 @@
 ---
 uid: biml-errorrowdisposition-enumeration
 title: ErrorRowDisposition Enumeration
+varigenceProduct: Biml Langauge
+varigenceArticleType: Reference
 ---
 
 ## ErrorRowDisposition Enumeration<div class="LanguageSummary"><div class ="SummaryItem">The ErrorRowDisposition enumeration provides options for how a dataflow component should handle errors that are encountered during execution.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">IgnoreFailure</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the error should be ignored and its value replaced with null.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">RedirectRow</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the row with the error should be sent to the error output path for the component.</div></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">FailComponent</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the error should cause the execution of the component to fail.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">NotUsed</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the target object is not used.</div></td></tr></tbody></table></div>

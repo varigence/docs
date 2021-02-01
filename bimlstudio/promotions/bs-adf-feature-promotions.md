@@ -2,8 +2,8 @@
 uid: bfx-adf-feature-promotions
 title: BimlStudio 2020 and Azure Data Factory Featured Integrations
 summary: New Features relating to Azure Data Factory integrations in BimlStudio 2020.2 update 
-product: BimlStudio
-type: Conceptual
+varigenceProduct: BimlStudio
+varigenceArticleType: Conceptual
 ---
 
 # BimlStudio 2020 R2 Update and Featured Azure Data Factory Integrations

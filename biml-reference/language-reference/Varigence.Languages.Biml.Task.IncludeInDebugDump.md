@@ -1,6 +1,8 @@
 ---
 uid: biml-includeindebugdump-enumeration
 title: IncludeInDebugDump Enumeration
+varigenceProduct: Biml Langauge
+varigenceArticleType: Reference
 ---
 
 ## IncludeInDebugDump Enumeration<div class="LanguageSummary"><div class ="SummaryItem">The IncludeInDebugDump enumeration specifies the options available for including or excluding the value of a variable from debug dumps in SQL Server Integration Services.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Automatic</td><td class="MemberSummary"><div class ="SummaryItem">This value specifies that the type of the variable should be used to determine whether the variable value is included in the debug dump.  String variable types will be excluded.  All other types will be included.  This prevents the inadvertent inclusion of password and other sensitive information in debug dumps.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Include</td><td class="MemberSummary"><div class ="SummaryItem">This value specifies that the variable value is included in the debug dump.</div></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Exclude</td><td class="MemberSummary"><div class ="SummaryItem">This value specifies that the variable value is excluded from the debug dump.</div></td></tr></tbody></table></div>

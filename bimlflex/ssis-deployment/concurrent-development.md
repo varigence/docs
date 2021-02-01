@@ -2,8 +2,8 @@
 uid: bimlflex-ssis-concurrent-development
 title: BimlFlex Concurrent Development
 summary: Documentation on metadata setup, customers, and versions needed for concurrent development between users in BimlFlex
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Concurrent Development
 

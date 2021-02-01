@@ -2,8 +2,8 @@
 uid: driving-keys-in-data-vault
 name: Driving Keys in Data Vault 
 summary: Documentation on assignment, importance of, and tracking Driving Keys in a Linked Satellite in Data Vault with examples
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 
 # Driving Keys in Data Vault

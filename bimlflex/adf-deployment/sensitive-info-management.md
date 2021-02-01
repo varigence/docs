@@ -2,8 +2,8 @@
 uid: sensitive-info-management
 title: Sensitive Information Management in Azure Data Factory
 summary: Management of sensitive information within Azure Data Factory key vaults and extension points 
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Sensitive Information Management in Azure Data Factory
 

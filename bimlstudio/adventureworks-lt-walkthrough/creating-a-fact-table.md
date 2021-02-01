@@ -2,8 +2,8 @@
 uid: creating-a-fact-table
 title: Creating a Fact Table
 summary: Documentation of how to create a fact table in BimlStudio
-product: BimlStudio
-type: Walkthrough
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
 ---
 # Creating a Fact Table
 

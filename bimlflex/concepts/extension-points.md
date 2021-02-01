@@ -2,8 +2,8 @@
 uid: bimlflex-extension-points
 title: BimlFlex Extension Points
 summary: Reference documentation on BimlFlex extension points to control directives, inheritance, custom code, and path variables in SSIS packages
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 # Extension Points
 

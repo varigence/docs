@@ -2,8 +2,8 @@
 uid: bimlflex-data-type-conversions
 title: BimlFlex Data Type Conversions
 summary: Documentation providing data type conversations between BimlFlex data types and SQL Server data types
-product: BimlFlex
-type: Reference
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
 ---
 
 # BimlFlex Data Type Conversions

@@ -1,0 +1,8 @@
+---
+uid: biml-adfcopycommanddateformat-enumeration
+title: AdfCopyCommandDateFormat Enumeration
+varigenceProduct: Biml Langauge
+varigenceArticleType: Reference
+---
+
+## AdfCopyCommandDateFormat Enumeration<div class="LanguageSummary"><div class ="SummaryItem">Provides Copy Command Date Format Options.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Default</td><td class="MemberSummary"></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">DMY</td><td class="MemberSummary"></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">DYM</td><td class="MemberSummary"></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">MDY</td><td class="MemberSummary"></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">MYD</td><td class="MemberSummary"></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">YDM</td><td class="MemberSummary"></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">YMD</td><td class="MemberSummary"></td></tr></tbody></table></div>

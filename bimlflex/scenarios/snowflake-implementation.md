@@ -2,8 +2,8 @@
 uid: bimlflex-snowflake-implementation
 title: Snowflake Implementation
 summary: Overview of implementing Snowflake using Azure Data Factory within BimlFlex, with installation guide, templates, and examples
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 
 # Snowflake Overview

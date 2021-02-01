@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-accelerating-the-raw-data-vault-layer
 title: Accelerating the Data Vault
 summary: Documentation on the BimlFlex Accelerator which uses source metadata and added modeling metadata to create a Raw Data Vault layer
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 # Accelerating the Data Vault
 

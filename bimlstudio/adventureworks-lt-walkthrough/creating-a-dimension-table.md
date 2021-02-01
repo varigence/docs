@@ -2,8 +2,8 @@
 uid: creating-a-dimension-table
 title: Creating a Dimension Table
 summary: Documentation of how to create a dimension table in BimlStudio
-product: BimlStudio
-type: Walkthrough
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
 ---
 # Creating a Dimension Table
 

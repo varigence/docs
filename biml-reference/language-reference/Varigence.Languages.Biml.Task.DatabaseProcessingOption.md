@@ -1,6 +1,8 @@
 ---
 uid: biml-databaseprocessingoption-enumeration
 title: DatabaseProcessingOption Enumeration
+varigenceProduct: Biml Langauge
+varigenceArticleType: Reference
 ---
 
 ## DatabaseProcessingOption Enumeration<div class="LanguageSummary"><div class ="SummaryItem">The DatabaseProcessingOption enumeration lists the different Analysis Services processing operations are are available for target objects of Database type.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">ProcessDefault</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that only the processing necessary to bring the target databases to a fully processed state will be performed.  The Analysis Services engine will automatically determine what processing is required.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">ProcessFull</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the target database and all subobjects will be processed in full, discarding the results of any previous processing operations.</div></td></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">ProcessClear</td><td class="MemberSummary"><div class ="SummaryItem">Specifies that the results of any previous processing operations on the target databases will be discarded.</div></td></tr></tbody></table></div>

@@ -2,8 +2,8 @@
 uid: bimlexpress-account
 title: BimlExpress Account
 summary: Documentation of BimlExpress accounts
-product: BimlExpress
-type: Reference
+varigenceProduct: BimlExpress
+varigenceArticleType: Reference
 ---
 # BimlExpress Account
 
