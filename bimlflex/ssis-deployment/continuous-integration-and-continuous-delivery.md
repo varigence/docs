@@ -2,8 +2,8 @@
 uid: bimlflex-ssis-continuous-integration-and-continuous-delivery
 title: BimlFlex Continuous Integration and Continuous Delivery
 summary: Documentation providing consideration and approaches to continue integration and continuous delivery within BimlFlex
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Continuous Integration and Continuous Delivery
 

@@ -2,8 +2,8 @@
 uid: create-linked-service-connection
 title: Configuring a Linked Service Connection
 summary: Documentation on enabling linked service connections, connections for cloud services, and supported linked services for BimlFlex
-product: BimlFlex
-type: Reference
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
 ---
 
 # Configuring a Linked Service Connection

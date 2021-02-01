@@ -2,8 +2,8 @@
 uid: adding-existing-files-to-a-project
 title: Adding existing files to a project
 summary: Documentation of how to add existing files to a project
-product: BimlStudio
-type: Walkthrough
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
 ---
 # Adding existing files to a project
 

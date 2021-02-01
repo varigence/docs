@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-setting-up-adventureworkslt2012-source-database
 title: Setting up the AdventureWorksLT source database
 summary: Directions on how to set up AdventureWorksLT as source database with detailed steps and supporting documentation
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Setting up the AdventureWorksLT source database
 

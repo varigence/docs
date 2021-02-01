@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-creating-and-configuring-a-bimlflex-project
 title: Creating and configuring a BimlFlex project
 summary: Supporting videos on how to create and configure a BimlFlex project through the app and through BimlStudio
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Creating and configuring a BimlFlex project
 

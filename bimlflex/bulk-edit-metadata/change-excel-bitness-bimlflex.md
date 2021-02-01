@@ -2,8 +2,8 @@
 uid: bimlflex-change-excel-bitness
 title: Change the BimlFlex Excel bitness
 summary: Changing the bitness of BimlFlex Excel through installation or project folder
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 # Change the BimlFlex Excel bitness
 

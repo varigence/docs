@@ -2,8 +2,8 @@
 uid: bimlflex-ssis-server-install
 title: SSIS Server Installation
 summary: Documentation on how to install custom SSIS compnents used in BimlFlex to generate SSIS packages
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Server Installation
 

@@ -2,8 +2,8 @@
 uid: using-azure-portal
 title: Deployment Through the Azure Portal
 summary: Guide to deploy artifacts generated in Azure Data Factory through the Azure portal
-product: BimlFlex
-type: Reference
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
 ---
 # Deployment Through the Azure Portal
 

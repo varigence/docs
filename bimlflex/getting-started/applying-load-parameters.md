@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-applying-load-parameters
 title: Applying Load Parameters
 summary: Guidance on applying load parameters that permits the way a load process derives a delta from the source system
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Applying Load Parameters
 

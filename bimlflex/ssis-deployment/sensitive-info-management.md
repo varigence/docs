@@ -2,8 +2,8 @@
 uid: bimlflex-ssis-deployment-sensitive-info-management
 name: Sensitive Information Management in SSIS
 summary: Documentation regarding sensitive information management in SSIS, Visual Studio, and extension points
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Sensitive Information Management in SSIS
 

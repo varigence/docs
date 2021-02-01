@@ -1,8 +1,8 @@
 ---
 uid: change-tracking-source-to-staging
 title: Change Data Capture Source to Staging
-product: BimlFlex
-type: Conceptual
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 # Change Tracking Source to Staging
 

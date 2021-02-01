@@ -2,8 +2,8 @@
 uid: bimlflex-scenarios-overview
 title: BimlFlex Scenarios Overview
 summary: Overview of scenarios for BimlFlex, including Snowflake, Azure Synapse, SQL Server, Export to File, Master Data Services, Excel, Odata, and Stored Procedures
-product: BimlFlex
-type: Index
+varigenceProduct: BimlFlex
+varigenceArticleType: Index
 ---
 # BimlFlex Scenarios Overview
 

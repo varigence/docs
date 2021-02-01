@@ -2,8 +2,8 @@
 uid: bimlflex-upgrading-bimlflex
 title: Upgrading BimlFlex
 summary: Documentation providing assistance in upgrading BimlFlex, including where to obtain installer and how to update
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Upgrading BimlFlex
 

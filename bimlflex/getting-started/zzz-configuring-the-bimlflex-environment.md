@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-configuring-the-bimlflex-environment
 title: Configuring the BimlFlex Environment
 summary: Guide on how to configure BimlFlex for metadata databases, BimlCatalog orchestration, and deploying databases
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Configuring the BimlFlex Environment
 

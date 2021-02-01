@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-initial-configuration
 title: BimlFlex Initial Configuration
 summary: Initial walkthrough of setting up BimlFlex to create project, connect database, and load sample metadata
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Initial Configuration
 

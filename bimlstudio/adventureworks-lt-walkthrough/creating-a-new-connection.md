@@ -2,8 +2,8 @@
 uid: creating-a-new-connection
 title: Creating a New Connection
 summary: Documentation of how to create a new connection in BimlStudio
-product: BimlStudio
-type: Forum
+varigenceProduct: BimlStudio
+varigenceArticleType: Forum
 ---
 # Creating a New Connection
 

@@ -2,8 +2,8 @@
 uid: bimlflex-installing-bimlflex
 title: Installing BimlFlex
 summary: Documentation providing detailed steps in the installation of BimlFlex application.
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 
 # Installing BimlFlex

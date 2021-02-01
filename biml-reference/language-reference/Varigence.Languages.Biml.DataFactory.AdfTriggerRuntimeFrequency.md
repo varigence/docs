@@ -1,6 +1,8 @@
 ---
 uid: biml-adftriggerruntimefrequency-enumeration
 title: AdfTriggerRuntimeFrequency Enumeration
+varigenceProduct: Biml Language
+varigenceArticleType: Reference
 ---
 
 ## AdfTriggerRuntimeFrequency Enumeration<div class="LanguageSummary"><div class ="SummaryItem">This represents the how often (in minutes or hours) that the tumbling window trigger recurs.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberTypeIconColumnHeader">&nbsp;</th><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Minutes</td><td class="MemberSummary"><div class ="SummaryItem">Minutes are used as the unit of frequency.</div></td></tr><tr class="cd1"><td align="center" class="MemberTypeIcon"><img src="enumValue.png"></img></td><td class="MemberName">Hours</td><td class="MemberSummary"><div class ="SummaryItem">Hours are used as the unit of frequency.</div></td></tr></tbody></table></div>

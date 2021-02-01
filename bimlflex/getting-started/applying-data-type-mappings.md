@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-applying-data-type-mappings
 title: Applying Data Type Mappings
 summary: Documentation on applying data type mappings to expand data types of the source to more accommodating types, with detailed steps and setting options
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Applying Data Type Mappings
 

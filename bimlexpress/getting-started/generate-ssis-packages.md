@@ -2,8 +2,8 @@
 uid: bimlexpress-account
 title: Generate SSIS Packages
 summary: Documentation of how to generate SSIS packages
-product: Biml Language
-type: Walkthrough
+varigenceProduct: Biml Language
+varigenceArticleType: Walkthrough
 ---
 # Generate SSIS Packages
 

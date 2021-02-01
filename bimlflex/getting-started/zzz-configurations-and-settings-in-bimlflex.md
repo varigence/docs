@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-configurations-and-settings-in-bimlflex
 title: Configurations and Settings in BimlFlex
 summary: Detailed steps on how to manage configurations and settings in BimlFlex with detailed steps
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Configurations and Settings in BimlFlex
 

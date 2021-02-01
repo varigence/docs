@@ -2,8 +2,8 @@
 uid: bimlflex-metadata-databases-overview
 title: BimlFlex Metadata Databases Overview
 summary: Overview of the BimlFlex metadata databases overview with reference to BimlFlex database and BimlCatalog database
-product: BimlFlex
-type: Index
+varigenceProduct: BimlFlex
+varigenceArticleType: Index
 ---
 # BimlFlex Metadata Databases Overview
 

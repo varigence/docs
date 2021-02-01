@@ -2,8 +2,8 @@
 uid: bimlflex-build-solution-overview
 title: BimlFlex Build Solution Overview
 summary: BimlFlex build solution overview including project setup, options, and generating DDL
-product: BimlFlex
-type: Index
+varigenceProduct: BimlFlex
+varigenceArticleType: Index
 ---
 # BimlFlex Build Solution Overview
 

@@ -2,8 +2,8 @@
 uid: zzz-bimlflex-user-guide
 title: BimlFlex User Guide
 summary: Overview of BimlFlex user guides, including webinars, configurations, metadata, source to staging, data vault accelerator, objects inheritance, and importing files
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # BimlFlex User Guide
 

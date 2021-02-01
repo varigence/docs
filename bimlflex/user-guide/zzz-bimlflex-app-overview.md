@@ -2,8 +2,8 @@
 uid: zzz-bimlflex-app-overview
 title: BimlFlex App Overview
 summary: Overview, installation, configuration, and uninstallation assistance for BimlFlex
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # BimlFlex App Overview
 

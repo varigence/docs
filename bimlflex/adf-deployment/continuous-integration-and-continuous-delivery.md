@@ -2,8 +2,8 @@
 uid: bimlflex-adf-continuous-integration-and-continuous-delivery
 title: BimlFlex Continuous Integration and Continuous Delivery
 summary: Guide for CI/CD for Azure Data Factory using command line scripts and changes through a build server pipeline
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Continuous Integration and Continuous Delivery
 

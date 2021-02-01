@@ -2,8 +2,8 @@
 uid: bimlflex-concepts-overview
 title: BimlFlex Concepts Overview
 summary: Overview of BimlFlex concepts including importing metadata, templates, integration keys, load parameters, and delete detection
-product: BimlFlex
-type: Index
+varigenceProduct: BimlFlex
+varigenceArticleType: Index
 ---
 # BimlFlex Concepts Overview
 

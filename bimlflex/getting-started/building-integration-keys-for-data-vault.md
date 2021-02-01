@@ -2,8 +2,8 @@
 uid: bimlflex-getting-started-building-integration-keys-for-data-vault
 title: Building Integration Keys for Data Vault
 summary: Documentation on defining integration keys in a data vault, with detailed steps for getting started
-product: BimlFlex
-type: Walkthrough
+varigenceProduct: BimlFlex
+varigenceArticleType: Walkthrough
 ---
 # Building Integration Keys for Data Vault
 
