@@ -1,3 +1,10 @@
+---
+uid: preview-expanded-biml
+name: Preview Expanded Biml
+summary: Explore how to preview the expanded BimlScript
+varigenceProduct: BimlExpress
+varigenceArticleType: Conceptual
+---
 # Preview Expanded Biml
 
 The Preview Pane was introduced in BimlExpress 2017. It lets you preview the expanded BimlScript, making development and debugging much easier:

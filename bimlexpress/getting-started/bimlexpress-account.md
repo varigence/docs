@@ -3,7 +3,7 @@ uid: bimlexpress-account
 title: BimlExpress Account
 summary: Documentation of BimlExpress accounts
 varigenceProduct: BimlExpress
-varigenceArticleType: Reference
+varigenceArticleType: Conceptual
 ---
 # BimlExpress Account
 

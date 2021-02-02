@@ -3,7 +3,7 @@ uid: attributes
 title: Attributes
 summary: Documentation regarding the BimlFlex Attributes editor, including editor fields, field descriptions, and data types. 
 varigenceProduct: BimlFlex
-varigenceArticleType: Reference
+varigenceArticleType: Conceptual
 ---
 # Attributes Editor
 

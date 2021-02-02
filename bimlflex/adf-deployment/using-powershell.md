@@ -3,7 +3,7 @@ uid: bimlflex-adf-using-powershell
 title: Deployment Through PowerShell
 summary: Guide to deploy artifacts generated in Azure Data Factory through powershell
 varigenceProduct: BimlFlex
-varigenceArticleType: Walkthrough
+varigenceArticleType: Conceptual
 ---
 # Azure Data Factory Deployment Through PowerShell
 

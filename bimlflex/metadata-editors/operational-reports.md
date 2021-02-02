@@ -3,7 +3,7 @@ uid: bimlflex-operational-reports
 title: BimlFlex Operational Reports
 summary: Documentation regarding the BimlFlex Operational Reports screen, including configuring operational reports, report screens, and execution details for batches
 varigenceProduct: BimlFlex
-varigenceArticleType:enceArticleType: Reference
+varigenceArticleType: Conceptual
 ---
 # Operational Reports
 

@@ -1,3 +1,11 @@
+---
+uid: creating-a-basic-package
+title: Creating a Basic Package
+summary: How to create a basic package in BimlStudio
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
+---
+
 # Creating a Basic Package
 
 Packages provide data integration functionality. For more information on package properties, see the [Package Element](/documentation/biml/biml_Varigence.Languages.Biml.Task.AstPackageNode.html).

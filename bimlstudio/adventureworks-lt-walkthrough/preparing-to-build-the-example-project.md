@@ -1,3 +1,10 @@
+---
+uid: preparing-to-build-the-example-project
+title: Preparing to Build the Example Project
+summary: Getting ready to build the example project in BimlStudio
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
+---
 # Preparing to Build the Example Project
 
 At this point, all the tables necessary for the example project have been modeled. This is a good point to build the project, so that you can verify what's been produced so far. There are several steps involved in building the project: verifying the physical setup of the project, checking for design time errors, and verifying project settings.

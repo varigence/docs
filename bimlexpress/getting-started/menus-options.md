@@ -1,3 +1,10 @@
+---
+uid: menus-options
+name: Menus and Options
+summary: Explore menus and options
+varigenceProduct: BimlExpress
+varigenceArticleType: Conceptual
+---
 # Menus and Options
 
 ## BimlExpress Toolbar

@@ -1,3 +1,10 @@
+---
+uid: choose-the-right-script-mode
+title: Choose the Right BimlScript Type
+summary: Discusses the three types of BimlScripts and which is right for the user's needs.
+varigenceProduct: BimlStudio
+varigenceArticleType: Conceptual
+---
 # Choose the Right BimlScript Type
 
 BimlScript is useful in a variety of situations, including those that require automation (such as repetitive tasks) or where the declarative Biml model isn't sufficient; e.g. conditionally creating a column in a table.

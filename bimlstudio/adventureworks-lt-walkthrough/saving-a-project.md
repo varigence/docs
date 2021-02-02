@@ -1,3 +1,10 @@
+---
+uid: saving-a-project
+title: Saving a Project
+summary: Save a project in BimlStudio
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
+---
 # Saving a Project
 
 There are several options for saving a project in BimlStudio.

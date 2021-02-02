@@ -3,7 +3,7 @@ uid: creating-a-new-database
 title: Creating a New Database
 summary: Documentation of how to create a new database in BimlStudio
 varigenceProduct: BimlStudio
-varigenceArticleType: Blog
+varigenceArticleType: Walkthrough
 ---
 # Creating a New Database
 

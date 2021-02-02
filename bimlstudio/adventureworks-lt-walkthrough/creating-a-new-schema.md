@@ -1,3 +1,10 @@
+---
+uid: creating-a-new-schema
+title: Creating a New Schema
+summary: How to create a new schema in BimlStudio
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
+---
 # Creating a New Schema
 
 Schemas group table assets.

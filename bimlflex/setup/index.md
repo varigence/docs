@@ -2,8 +2,6 @@
 uid: bimlflex-setup-overview
 title: BimlFlex Setup Overview
 summary: Overview of how to setup and install the BimlFlex application
-varigenceProduct: BimlFlex
-varigenceArticleType: Index
 ---
 # BimlFlex Setup Overview
 

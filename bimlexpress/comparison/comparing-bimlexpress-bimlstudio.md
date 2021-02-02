@@ -1,3 +1,10 @@
+---
+uid: comparing-bimlexpress-bimlstudio
+name: Comparing BimlExpress and BimlStudio
+summary: Comparing BimlExpress and BimlStudio.
+varigenceProduct: BimlExpress
+varigenceArticleType: Conceptual
+---
 # Comparing BimlExpress and BimlStudio
 
 BimlExpress is Varigence's free Visual Studio add-in, created specifically for working on Biml projects.
