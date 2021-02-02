@@ -3,7 +3,7 @@ uid: creating-a-new-project
 title: Creating a New Project
 summary: Documentation of how to create a new project in BimlStudio
 varigenceProduct: BimlStudio
-varigenceArticleType: Knowledge Base
+varigenceArticleType: Walkthrough
 ---
 A BimlStudio project lets you define all the assets you need to build your BI solution.
 

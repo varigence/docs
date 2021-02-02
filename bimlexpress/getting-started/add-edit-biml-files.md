@@ -3,7 +3,7 @@ uid: add-edit-biml-files
 title: Add and Edit Biml Files
 summary: Documentation of how to add and edit files in BimlExpress
 varigenceProduct: BimlExpress
-varigenceArticleType: Knowledge Base
+varigenceArticleType: Conceptual
 ---
 # Add and Edit Biml Files
 

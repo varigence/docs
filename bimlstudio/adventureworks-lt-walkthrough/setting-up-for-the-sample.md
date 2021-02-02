@@ -1,3 +1,10 @@
+---
+uid: setting-up-for-the-sample
+title: Setting up for the Sample
+summary: Setting up for the Sample project in BimlStudio
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
+---
 # Setting up for the Sample
 
 To build the sample in this walkthrough, some initial setup is required.

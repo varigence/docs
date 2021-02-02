@@ -2,8 +2,6 @@
 uid: modeling-tools-overview
 title: Modeling Tools Overview
 summary: Documentation providing BimlFlex modeling tools overview for data vault accelerator, schema diagram, and column mapping
-varigenceProduct: BimlFlex
-varigenceArticleType: Index
 ---
 # Modeling Tools Overview
 

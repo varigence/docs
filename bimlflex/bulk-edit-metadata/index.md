@@ -2,8 +2,6 @@
 uid: bulk-edit-metadata-overview
 title: Bulk Edit Overview
 summary: How to Bulk Edit metadata in BimlFlex using Microsoft Excel add-in
-varigenceProduct: BimlFlex
-varigenceArticleType: Index
 ---
 
 # Bulk Edit Overview

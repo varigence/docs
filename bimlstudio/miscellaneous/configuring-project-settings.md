@@ -1,3 +1,10 @@
+---
+uid: configuring-project-settings
+title: Configuring Project Settings
+summary: Discussion of the various project settings in BimlStudio.
+varigenceProduct: BimlStudio
+varigenceArticleType: Conceptual
+---
 # Configuring Project Settings
 
 The project settings editor lets you control project-wide configuration options.

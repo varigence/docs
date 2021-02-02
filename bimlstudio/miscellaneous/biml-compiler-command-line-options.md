@@ -1,3 +1,10 @@
+---
+uid: biml-compiler-command-line-options
+title: Biml Compiler (bimlc.exe) Options
+summary: Various bimlc compiler options
+varigenceProduct: BimlStudio
+varigenceArticleType: Conceptual
+---
 # Biml Compiler (bimlc.exe) Options
 
 The following Hadron Compiler options are sorted alphabetically.

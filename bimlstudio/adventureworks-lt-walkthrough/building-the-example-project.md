@@ -1,3 +1,10 @@
+---
+uid: building-the-example-project
+title: Building the Example Project
+summary: How to build the example project
+varigenceProduct: BimlStudio
+varigenceArticleType: Walkthrough
+---
 # Building the Example Project
 
 Building a project produces compiled output for each item included in an emittable file.

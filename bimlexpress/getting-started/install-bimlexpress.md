@@ -1,3 +1,10 @@
+---
+uid: install-bimlexpress
+name: Install BimlExpress
+summary: How to install BimlExpress
+varigenceProduct: BimlExpress
+varigenceArticleType: Conceptual
+---
 # Install BimlExpress
 
 ## Download BimlExpress
