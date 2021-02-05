@@ -6,6 +6,3 @@
 
 - name: Biml Language Reference
   href: language-reference/index.md
-
-- name: Biml Snippets
-  href: snippets/index.md
