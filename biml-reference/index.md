@@ -18,15 +18,9 @@ Biml API Reference provides information that is relevant to users when they're i
 
 [Biml Release Notes](xref:biml-release-notes)
 
-## Biml Snippets
-
-The Biml Snippets collection includes a variety of Biml snippets for implementing assets in your Biml-based BI solution.
-
-[Biml Snippets](xref:biml-snippets)
-
 ## Biml Forum
 
-If you have questions about a snippet or are looking for help with a particular Biml implementation, you can search and post in the [Biml forum](https://varigence.com/Forums?forumName=Biml) for help.
+If you have questions about the documentation or are looking for help with a particular Biml implementation, you can search and post in the [Biml forum](https://varigence.com/Forums?forumName=Biml) for help.
 
 ## Email Support
 
