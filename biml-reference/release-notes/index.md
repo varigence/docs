@@ -17,4 +17,4 @@ Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
 [Biml Language Reference](xref:biml-language-reference)
 
-[Biml API Reference](xref:biml-api-reference)
+[Biml API Reference](xref:Varigence.Languages.Biml.AstRootNode)

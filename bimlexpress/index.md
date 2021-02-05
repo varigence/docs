@@ -18,7 +18,7 @@ BimlExpress provides the ability to create packages from Biml, an XML-based lang
 
 Learn Biml on [BimlScript.com](http://bimlscript.com/)
 
-[Biml API Reference](xref:biml-api-reference)
+[Biml API Reference](xref:Varigence.Languages.Biml.AstRootNode)
 
 [Biml Language Reference](xref:biml-language-reference)
 
