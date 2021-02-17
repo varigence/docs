@@ -2,7 +2,7 @@
   href: index.md
 
 - name: Biml API Reference
-  href: api-reference/index.md
+  href: api-reference/Varigence.Languages.Biml.AstRootNode.md
 
 - name: Biml Language Reference
   href: language-reference/index.md

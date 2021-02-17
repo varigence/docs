@@ -65,4 +65,11 @@
 
   - name: Release Notes
     href: release-notes/toc.yml
-    topicHref: release-notes/index.md
+    topicHref: ../bimlstudio/release-notes/index.md
+
+<script>
+$(document).ready(function(){
+  $('div>ul.level1>li:last-child').addClass("active");
+  $('div>ul.level1>li:last-child').addClass("in");
+});
+</script>
