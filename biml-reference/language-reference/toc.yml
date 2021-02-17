@@ -1,6 +1,1983 @@
-- name: Overview
-  href: index.md
-  topicHref: index.md
+- name: Biml Language Reference
+  href: #
+  topicHref: #
+  items:
 
-- uid: biml-root-element
-  name: Biml Root Element
+    - name: Varigence.Languages.Biml
+      href: #
+      items:
+        - name: Property
+          href: Varigence.Languages.Biml.AstPropertyNode.md
+        - name: Root
+          href: Varigence.Languages.Biml.AstRootNode.md
+        - name: Annotation
+          href: Varigence.Languages.Biml.AstAnnotationNode.md
+        - name: Build Settings
+          href: Varigence.Languages.Biml.AstBuildSettingsNode.md
+    - name: Varigence.Languages.Biml.Connection
+      href: #
+      items:
+        - name: Ole Db Connection
+          href: Varigence.Languages.Biml.Connection.AstOleDbConnectionNode.md
+        - name: Excel Ole Db Connection
+          href: Varigence.Languages.Biml.Connection.AstExcelOleDbConnectionNode.md
+        - name: Ado Net Connection
+          href: Varigence.Languages.Biml.Connection.AstAdoNetConnectionNode.md
+        - name: Oracle Connection
+          href: Varigence.Languages.Biml.Connection.AstOracleConnectionNode.md
+        - name: Teradata Connection
+          href: Varigence.Languages.Biml.Connection.AstTeradataConnectionNode.md
+        - name: Odbc Connection
+          href: Varigence.Languages.Biml.Connection.AstOdbcConnectionNode.md
+        - name: Sql Server Pdw Connection
+          href: Varigence.Languages.Biml.Connection.AstSqlServerPdwConnectionNode.md
+        - name: Analysis Services Connection
+          href: Varigence.Languages.Biml.Connection.AstAnalysisServicesConnectionNode.md
+        - name: File Connection
+          href: Varigence.Languages.Biml.Connection.AstFileConnectionNode.md
+        - name: Ftp Connection
+          href: Varigence.Languages.Biml.Connection.AstFtpConnectionNode.md
+        - name: Msmq Connection
+          href: Varigence.Languages.Biml.Connection.AstMsmqConnectionNode.md
+        - name: Smtp Connection
+          href: Varigence.Languages.Biml.Connection.AstSmtpConnectionNode.md
+        - name: Http Connection
+          href: Varigence.Languages.Biml.Connection.AstHttpConnectionNode.md
+        - name: Wmi Connection
+          href: Varigence.Languages.Biml.Connection.AstWmiConnectionNode.md
+        - name: Cache Connection
+          href: Varigence.Languages.Biml.Connection.AstCacheConnectionNode.md
+        - name: Flat File Connection
+          href: Varigence.Languages.Biml.Connection.AstFlatFileConnectionNode.md
+        - name: Sql Server Management Connection
+          href: Varigence.Languages.Biml.Connection.AstSqlServerManagementConnectionNode.md
+        - name: Custom Ssis Connection
+          href: Varigence.Languages.Biml.Connection.AstCustomSsisConnectionNode.md
+        - name: Sql Server Dqs Connection
+          href: Varigence.Languages.Biml.Connection.AstSqlServerDqsConnectionNode.md
+        - name: Azure Storage Connection
+          href: Varigence.Languages.Biml.Connection.AstAzureStorageConnectionNode.md
+        - name: Azure Subscription Connection
+          href: Varigence.Languages.Biml.Connection.AstAzureSubscriptionConnectionNode.md
+        - name: Azure Data Lake Store Connection
+          href: Varigence.Languages.Biml.Connection.AstAzureDataLakeStoreConnectionNode.md
+        - name: Hadoop Connection
+          href: Varigence.Languages.Biml.Connection.AstHadoopConnectionNode.md
+        - name: HD Insight Connection
+          href: Varigence.Languages.Biml.Connection.AstHDInsightConnectionNode.md
+        - name: Azure Resource Manager Connection
+          href: Varigence.Languages.Biml.Connection.AstAzureResourceManagerConnectionNode.md
+        - name: O Data Connection
+          href: Varigence.Languages.Biml.Connection.AstODataConnectionNode.md
+        - name: Theobald Xtract Sap Connection
+          href: Varigence.Languages.Biml.Connection.AstTheobaldXtractSapConnectionNode.md
+        - name: Connection Reference Base
+          href: Varigence.Languages.Biml.Connection.AstConnectionReferenceBaseNode.md
+        - name: Connection Reference
+          href: Varigence.Languages.Biml.Connection.AstConnectionReferenceNode.md
+        - name: Analysis Services Connection Metadata
+          href: Varigence.Languages.Biml.Connection.AstAnalysisServicesConnectionMetadataNode.md
+    - name: Varigence.Languages.Biml.Cube
+      href: #
+      items:
+        - name: Cube
+          href: Varigence.Languages.Biml.Cube.AstCubeNode.md
+        - name: Cube Dimension
+          href: Varigence.Languages.Biml.Cube.AstCubeDimensionNode.md
+        - name: Kpi
+          href: Varigence.Languages.Biml.Cube.AstKpiNode.md
+        - name: Perspective
+          href: Varigence.Languages.Biml.Cube.AstPerspectiveNode.md
+        - name: Translation
+          href: Varigence.Languages.Biml.Cube.AstTranslationNode.md
+        - name: Error Configuration
+          href: Varigence.Languages.Biml.Cube.AstErrorConfigurationNode.md
+        - name: Proactive Caching
+          href: Varigence.Languages.Biml.Cube.AstProactiveCachingNode.md
+        - name: Sql Server Table Notification Proactive Caching Source
+          href: Varigence.Languages.Biml.Cube.AstSqlServerTableNotificationProactiveCachingSourceNode.md
+        - name: Client Initiated Table Notification Proactive Caching Source
+          href: Varigence.Languages.Biml.Cube.AstClientInitiatedTableNotificationProactiveCachingSourceNode.md
+        - name: Query Notification Proactive Caching Source
+          href: Varigence.Languages.Biml.Cube.AstQueryNotificationProactiveCachingSourceNode.md
+        - name: Incremental Notification Proactive Caching Source
+          href: Varigence.Languages.Biml.Cube.AstIncrementalNotificationProactiveCachingSourceNode.md
+        - name: Proactive Caching Query Notification
+          href: Varigence.Languages.Biml.Cube.AstProactiveCachingQueryNotificationNode.md
+        - name: Proactive Caching Incremental Notification
+          href: Varigence.Languages.Biml.Cube.AstProactiveCachingIncrementalNotificationNode.md
+        - name: Cube Attribute Reference
+          href: Varigence.Languages.Biml.Cube.AstCubeAttributeReferenceNode.md
+        - name: Perspective Cube Dimension Reference
+          href: Varigence.Languages.Biml.Cube.AstPerspectiveCubeDimensionReferenceNode.md
+        - name: Calculation Reference
+          href: Varigence.Languages.Biml.Cube.AstCalculationReferenceNode.md
+        - name: Kpi Reference
+          href: Varigence.Languages.Biml.Cube.AstKpiReferenceNode.md
+        - name: Action Reference
+          href: Varigence.Languages.Biml.Cube.AstActionReferenceNode.md
+        - name: Cube Dimension Regular Binding
+          href: Varigence.Languages.Biml.Cube.AstCubeDimensionRegularBindingNode.md
+        - name: Cube Dimension Reference Binding
+          href: Varigence.Languages.Biml.Cube.AstCubeDimensionReferenceBindingNode.md
+        - name: Cube Dimension Binding
+          href: Varigence.Languages.Biml.Cube.AstCubeDimensionBindingNode.md
+        - name: Cube Dimension Many To Many Binding
+          href: Varigence.Languages.Biml.Cube.AstCubeDimensionManyToManyBindingNode.md
+        - name: Cube Dimension Fact Binding
+          href: Varigence.Languages.Biml.Cube.AstCubeDimensionFactBindingNode.md
+        - name: Dimension Binding Column Reference
+          href: Varigence.Languages.Biml.Cube.AstDimensionBindingColumnReferenceNode.md
+    - name: Varigence.Languages.Biml.Cube.Action
+      href: #
+      items:
+        - name: Standard Action
+          href: Varigence.Languages.Biml.Cube.Action.AstStandardActionNode.md
+        - name: Drill Through Action
+          href: Varigence.Languages.Biml.Cube.Action.AstDrillThroughActionNode.md
+        - name: Report Action
+          href: Varigence.Languages.Biml.Cube.Action.AstReportActionNode.md
+        - name: Report Action Parameter Mapping
+          href: Varigence.Languages.Biml.Cube.Action.AstReportActionParameterMappingNode.md
+    - name: Varigence.Languages.Biml.Cube.Aggregation
+      href: #
+      items:
+        - name: Aggregation Design
+          href: Varigence.Languages.Biml.Cube.Aggregation.AstAggregationDesignNode.md
+        - name: Aggregation
+          href: Varigence.Languages.Biml.Cube.Aggregation.AstAggregationNode.md
+        - name: Aggregation Design Attribute Reference
+          href: Varigence.Languages.Biml.Cube.Aggregation.AstAggregationDesignAttributeReferenceNode.md
+        - name: Aggregation Dimension Reference
+          href: Varigence.Languages.Biml.Cube.Aggregation.AstAggregationDimensionReferenceNode.md
+        - name: Aggregation Design Dimension Reference
+          href: Varigence.Languages.Biml.Cube.Aggregation.AstAggregationDesignDimensionReferenceNode.md
+    - name: Varigence.Languages.Biml.Cube.Calculation
+      href: #
+      items:
+        - name: Mdx Script
+          href: Varigence.Languages.Biml.Cube.Calculation.AstMdxScriptNode.md
+        - name: Calculated Member
+          href: Varigence.Languages.Biml.Cube.Calculation.AstCalculatedMemberNode.md
+        - name: Script Command
+          href: Varigence.Languages.Biml.Cube.Calculation.AstScriptCommandNode.md
+        - name: Named Set
+          href: Varigence.Languages.Biml.Cube.Calculation.AstNamedSetNode.md
+        - name: Mdx File
+          href: Varigence.Languages.Biml.Cube.Calculation.AstMdxFileNode.md
+        - name: Mdx Script Calculation Property
+          href: Varigence.Languages.Biml.Cube.Calculation.AstMdxScriptCalculationPropertyNode.md
+    - name: Varigence.Languages.Biml.Cube.Partition
+      href: #
+      items:
+        - name: Partition
+          href: Varigence.Languages.Biml.Cube.Partition.AstPartitionNode.md
+        - name: Query Partition Source
+          href: Varigence.Languages.Biml.Cube.Partition.AstQueryPartitionSourceNode.md
+        - name: Database Table Partition Source
+          href: Varigence.Languages.Biml.Cube.Partition.AstDatabaseTablePartitionSourceNode.md
+        - name: Dsv Table Partition Source
+          href: Varigence.Languages.Biml.Cube.Partition.AstDsvTablePartitionSourceNode.md
+    - name: Varigence.Languages.Biml.DataFactory
+      href: #
+      items:
+        - name: Adf Databricks Jar Library
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksJarLibraryNode.md
+        - name: Adf Databricks Egg Library
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksEggLibraryNode.md
+        - name: Adf Databricks Pypi Library
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksPypiLibraryNode.md
+        - name: Adf Databricks Cran Library
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksCranLibraryNode.md
+        - name: Adf Databricks Maven Library
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksMavenLibraryNode.md
+        - name: Adf Dataflow Parameter Reference
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowParameterReferenceNode.md
+        - name: Adf Named Copy Column Mapping
+          href: Varigence.Languages.Biml.DataFactory.AstAdfNamedCopyColumnMappingNode.md
+        - name: Adf Stored Procedure Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfStoredProcedureParameterNode.md
+        - name: Adf Dataflow Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowParameterNode.md
+        - name: Adf Dataflow Name As Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowNameAsColumnNode.md
+        - name: Adf Dataflow Conditional Split Stream
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowConditionalSplitStreamNode.md
+        - name: Adf Machine Learning Web Service Configuration
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMachineLearningWebServiceConfigurationNode.md
+        - name: Adf Key Vault Secret
+          href: Varigence.Languages.Biml.DataFactory.AstAdfKeyVaultSecretNode.md
+        - name: Adf Execute Pipeline Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfExecutePipelineParameterNode.md
+        - name: Adf U Sql Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfUSqlParameterNode.md
+        - name: Adf Copy Activity Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCopyActivityParameterNode.md
+        - name: Adf HD Insight Advanced Property
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHDInsightAdvancedPropertyNode.md
+        - name: Adf Databricks Base Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksBaseParameterNode.md
+        - name: Adf Ssis Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSsisParameterNode.md
+        - name: Adf Ssis Connection
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSsisConnectionNode.md
+        - name: Adf Ssis Property Override
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSsisPropertyOverrideNode.md
+        - name: Adf Ssis Package Location
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSsisPackageLocationNode.md
+        - name: Adf Ssis Log Location
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSsisLogLocationNode.md
+        - name: Adf Hd Insight Script Action
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightScriptActionNode.md
+        - name: Adf HD Insight Definition
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHDInsightDefinitionNode.md
+        - name: Adf Activity User Property
+          href: Varigence.Languages.Biml.DataFactory.AstAdfActivityUserPropertyNode.md
+        - name: Adf Copy Source Additional Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCopySourceAdditionalColumnNode.md
+        - name: Adf Snowflake Additional Copy Option
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSnowflakeAdditionalCopyOptionNode.md
+        - name: Adf ML Pipeline Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMLPipelineParameterNode.md
+        - name: Adf Web Activity Key Value
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWebActivityKeyValueNode.md
+        - name: Adf Dataflow Dataset Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowDatasetParameterNode.md
+        - name: Adf Dataset Reference Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetReferenceParameterNode.md
+        - name: Adf Dataflow Dataset Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowDatasetColumnNode.md
+        - name: Adf Json Path Deinition Key Value
+          href: Varigence.Languages.Biml.DataFactory.AstAdfJsonPathDeinitionKeyValueNode.md
+        - name: Adf Global Parameters Key Value
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGlobalParametersKeyValueNode.md
+        - name: Adf Pipeline Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPipelineParameterNode.md
+        - name: Adf Pipeline Variable
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPipelineVariableNode.md
+        - name: Adf Dataset Parameter
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetParameterNode.md
+        - name: Adf Pipeline Parameter Value
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPipelineParameterValueNode.md
+        - name: Adf Dataflow Output Stream
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowOutputStreamNode.md
+        - name: Adf Dataflow Dataset Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowDatasetSourceNode.md
+        - name: Adf Dataflow Dataset Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowDatasetSinkNode.md
+        - name: Adf Dataflow Aggregate Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowAggregateTransformationNode.md
+        - name: Adf Dataflow Alter Row Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowAlterRowTransformationNode.md
+        - name: Adf Dataflow Derived Columns Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowDerivedColumnsTransformationNode.md
+        - name: Adf Dataflow Filter Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowFilterTransformationNode.md
+        - name: Adf Dataflow Pivot Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowPivotTransformationNode.md
+        - name: Adf Dataflow Select Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowSelectTransformationNode.md
+        - name: Adf Dataflow Sort Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowSortTransformationNode.md
+        - name: Adf Dataflow Surrogate Key Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowSurrogateKeyTransformationNode.md
+        - name: Adf Dataflow Unpivot Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowUnpivotTransformationNode.md
+        - name: Adf Dataflow Window Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowWindowTransformationNode.md
+        - name: Adf Dataflow Lookup Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowLookupTransformationNode.md
+        - name: Adf Dataflow Exists Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowExistsTransformationNode.md
+        - name: Adf Dataflow Join Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowJoinTransformationNode.md
+        - name: Adf Dataflow Union Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowUnionTransformationNode.md
+        - name: Adf Dataflow Conditional Split Transformation
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowConditionalSplitTransformationNode.md
+        - name: Adf Copy Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCopyActivityNode.md
+        - name: Adf Delete Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDeleteActivityNode.md
+        - name: Adf Azure Data Explorer Command Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataExplorerCommandActivityNode.md
+        - name: Adf Web Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWebActivityNode.md
+        - name: Adf Azure Function Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureFunctionActivityNode.md
+        - name: Adf Databricks Notebook Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksNotebookActivityNode.md
+        - name: Adf Databricks Jar Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksJarActivityNode.md
+        - name: Adf Databricks Python Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatabricksPythonActivityNode.md
+        - name: Adf Execute Dataflow Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfExecuteDataflowActivityNode.md
+        - name: Adf Execute Ssis Package Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfExecuteSsisPackageActivityNode.md
+        - name: Adf Hd Insight Hive Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightHiveActivityNode.md
+        - name: Adf Hd Insight Pig Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightPigActivityNode.md
+        - name: Adf Hd Insight Streaming Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightStreamingActivityNode.md
+        - name: Adf Hd Insight Map Reduce Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightMapReduceActivityNode.md
+        - name: Adf Hd Insight Spark Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightSparkActivityNode.md
+        - name: Adf Machine Learning Execute Pipeline Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMachineLearningExecutePipelineActivityNode.md
+        - name: Adf Machine Learning Batch Execution Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMachineLearningBatchExecutionActivityNode.md
+        - name: Adf Machine Learning Update Resource Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMachineLearningUpdateResourceActivityNode.md
+        - name: Adf Sql Server Stored Procedure Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSqlServerStoredProcedureActivityNode.md
+        - name: Adf Data Lake U Sql Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataLakeUSqlActivityNode.md
+        - name: Adf Custom Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCustomActivityNode.md
+        - name: Adf Lookup Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfLookupActivityNode.md
+        - name: Adf Get Metadata Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGetMetadataActivityNode.md
+        - name: Adf Filter Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFilterActivityNode.md
+        - name: Adf Group Container Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGroupContainerActivityNode.md
+        - name: Adf Until Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfUntilActivityNode.md
+        - name: Adf Foreach Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfForeachActivityNode.md
+        - name: Adf If Condition Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIfConditionActivityNode.md
+        - name: Adf Wait Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWaitActivityNode.md
+        - name: Adf Webhook Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWebhookActivityNode.md
+        - name: Adf Execute Pipeline Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfExecutePipelineActivityNode.md
+        - name: Adf Validation Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfValidationActivityNode.md
+        - name: Adf Append Variable Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAppendVariableActivityNode.md
+        - name: Adf Set Variable Activity
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSetVariableActivityNode.md
+        - name: Adf Event Based Trigger
+          href: Varigence.Languages.Biml.DataFactory.AstAdfEventBasedTriggerNode.md
+        - name: Adf Tumbling Window Trigger
+          href: Varigence.Languages.Biml.DataFactory.AstAdfTumblingWindowTriggerNode.md
+        - name: Adf Schedule Trigger
+          href: Varigence.Languages.Biml.DataFactory.AstAdfScheduleTriggerNode.md
+        - name: Adf Pipeline
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPipelineNode.md
+        - name: Adf Mapping Dataflow
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMappingDataflowNode.md
+        - name: Adf Managed Integration Runtime
+          href: Varigence.Languages.Biml.DataFactory.AstAdfManagedIntegrationRuntimeNode.md
+        - name: Adf Self Hosted Integration Runtime
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSelfHostedIntegrationRuntimeNode.md
+        - name: Adf Linked Self Hosted Integration Runtime
+          href: Varigence.Languages.Biml.DataFactory.AstAdfLinkedSelfHostedIntegrationRuntimeNode.md
+        - name: Adf Oracle Service Cloud Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOracleServiceCloudLinkedServiceNode.md
+        - name: Adf Hubspot Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHubspotLinkedServiceNode.md
+        - name: Adf Google Big Query Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleBigQueryLinkedServiceNode.md
+        - name: Adf Google Ad Words Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleAdWordsLinkedServiceNode.md
+        - name: Adf Marketo Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMarketoLinkedServiceNode.md
+        - name: Adf Responsys Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfResponsysLinkedServiceNode.md
+        - name: Adf Paypal Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPaypalLinkedServiceNode.md
+        - name: Adf Salesforce Marketing Cloud Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceMarketingCloudLinkedServiceNode.md
+        - name: Adf Service Now Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfServiceNowLinkedServiceNode.md
+        - name: Adf Square Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSquareLinkedServiceNode.md
+        - name: Adf Concur Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfConcurLinkedServiceNode.md
+        - name: Adf Eloqua Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfEloquaLinkedServiceNode.md
+        - name: Adf Jira Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfJiraLinkedServiceNode.md
+        - name: Adf Magento Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMagentoLinkedServiceNode.md
+        - name: Adf Shopify Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfShopifyLinkedServiceNode.md
+        - name: Adf Zoho Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfZohoLinkedServiceNode.md
+        - name: Adf Amazon Marketplace Web Service Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonMarketplaceWebServiceLinkedServiceNode.md
+        - name: Adf Xero Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfXeroLinkedServiceNode.md
+        - name: Adf Quick Books Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfQuickBooksLinkedServiceNode.md
+        - name: Adf Azure Batch Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureBatchLinkedServiceNode.md
+        - name: Adf Azure Data Lake Analytics Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeAnalyticsLinkedServiceNode.md
+        - name: Adf Azure Key Vault Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureKeyVaultLinkedServiceNode.md
+        - name: Adf Azure File Storage Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureFileStorageLinkedServiceNode.md
+        - name: Adf Azure Blob Storage Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureBlobStorageLinkedServiceNode.md
+        - name: Adf Azure Table Storage Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureTableStorageLinkedServiceNode.md
+        - name: Adf Azure Data Lake Store Gen 1 Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeStoreGen1LinkedServiceNode.md
+        - name: Adf Azure Data Lake Store Gen 2 Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeStoreGen2LinkedServiceNode.md
+        - name: Adf Office 365 Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOffice365LinkedServiceNode.md
+        - name: Adf Azure Data Explorer Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataExplorerLinkedServiceNode.md
+        - name: Adf Dynamics Ax Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsAxLinkedServiceNode.md
+        - name: Adf Share Point Online List Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSharePointOnlineListLinkedServiceNode.md
+        - name: Adf Rest Service Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfRestServiceLinkedServiceNode.md
+        - name: Adf Azure Sql Database Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlDatabaseLinkedServiceNode.md
+        - name: Adf Azure Sql Data Warehouse Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlDataWarehouseLinkedServiceNode.md
+        - name: Adf Azure Sql Mi Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlMiLinkedServiceNode.md
+        - name: Adf Sql Server Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSqlServerLinkedServiceNode.md
+        - name: Adf Azure Cosmos Db Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureCosmosDbLinkedServiceNode.md
+        - name: Adf Azure Cosmos Db Mongo Db Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureCosmosDbMongoDbLinkedServiceNode.md
+        - name: Adf Azure My Sql Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureMySqlLinkedServiceNode.md
+        - name: Adf Informix Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfInformixLinkedServiceNode.md
+        - name: Adf Odbc Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOdbcLinkedServiceNode.md
+        - name: Adf Microsoft Access Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMicrosoftAccessLinkedServiceNode.md
+        - name: Adf Teradata Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfTeradataLinkedServiceNode.md
+        - name: Adf Azure Postgre Sql Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzurePostgreSqlLinkedServiceNode.md
+        - name: Adf Couchbase Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCouchbaseLinkedServiceNode.md
+        - name: Adf Drill Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDrillLinkedServiceNode.md
+        - name: Adf Greenplum Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGreenplumLinkedServiceNode.md
+        - name: Adf Azure Maria Db Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureMariaDbLinkedServiceNode.md
+        - name: Adf Maria Db Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMariaDbLinkedServiceNode.md
+        - name: Adf Mongo Db V 2 Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMongoDbV2LinkedServiceNode.md
+        - name: Adf My Sql Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMySqlLinkedServiceNode.md
+        - name: Adf Netezza Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfNetezzaLinkedServiceNode.md
+        - name: Adf Oracle Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOracleLinkedServiceNode.md
+        - name: Adf Postgre Sql Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPostgreSqlLinkedServiceNode.md
+        - name: Adf Vertica Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfVerticaLinkedServiceNode.md
+        - name: Adf Snowflake Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSnowflakeLinkedServiceNode.md
+        - name: Adf Db 2 Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDb2LinkedServiceNode.md
+        - name: Adf H Base Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHBaseLinkedServiceNode.md
+        - name: Adf Hive Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHiveLinkedServiceNode.md
+        - name: Adf Impala Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfImpalaLinkedServiceNode.md
+        - name: Adf Phoenix Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPhoenixLinkedServiceNode.md
+        - name: Adf Presto Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPrestoLinkedServiceNode.md
+        - name: Adf Spark Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSparkLinkedServiceNode.md
+        - name: Adf Amazon Redshift Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonRedshiftLinkedServiceNode.md
+        - name: Adf Mongo Db Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMongoDbLinkedServiceNode.md
+        - name: Adf Sybase Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSybaseLinkedServiceNode.md
+        - name: Adf Sap Business Warehouse Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapBusinessWarehouseLinkedServiceNode.md
+        - name: Adf Sap Hana Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapHanaLinkedServiceNode.md
+        - name: Adf Sap Open Hub Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapOpenHubLinkedServiceNode.md
+        - name: Adf Sap Table Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapTableLinkedServiceNode.md
+        - name: Adf File Server Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFileServerLinkedServiceNode.md
+        - name: Adf Cassandra Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCassandraLinkedServiceNode.md
+        - name: Adf Dynamics Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsLinkedServiceNode.md
+        - name: Adf Dynamics Crm Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsCrmLinkedServiceNode.md
+        - name: Adf Common Data Service For Apps Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCommonDataServiceForAppsLinkedServiceNode.md
+        - name: Adf Ftp Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFtpLinkedServiceNode.md
+        - name: Adf Hdfs Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdfsLinkedServiceNode.md
+        - name: Adf Http Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHttpLinkedServiceNode.md
+        - name: Adf O Data Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfODataLinkedServiceNode.md
+        - name: Adf Salesforce Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceLinkedServiceNode.md
+        - name: Adf Salesforce Service Cloud Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceServiceCloudLinkedServiceNode.md
+        - name: Adf Sap Cloud For Customer Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapCloudForCustomerLinkedServiceNode.md
+        - name: Adf Sap Ecc Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapEccLinkedServiceNode.md
+        - name: Adf Sftp Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSftpLinkedServiceNode.md
+        - name: Adf Amazon S 3 Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonS3LinkedServiceNode.md
+        - name: Adf Google Cloud Storage Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleCloudStorageLinkedServiceNode.md
+        - name: Adf Azure Search Index Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSearchIndexLinkedServiceNode.md
+        - name: Adf Web Table Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWebTableLinkedServiceNode.md
+        - name: Adf Hd Insight Base Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightBaseLinkedServiceNode.md
+        - name: Adf Hd Insight Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightLinkedServiceNode.md
+        - name: Adf Hd Insight On Demand Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdInsightOnDemandLinkedServiceNode.md
+        - name: Adf Azure Function Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureFunctionLinkedServiceNode.md
+        - name: Adf Azure Machine Learning Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureMachineLearningLinkedServiceNode.md
+        - name: Adf Azure ML Service Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureMLServiceLinkedServiceNode.md
+        - name: Ast Adf Azure Databricks Linked Service
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDatabricksLinkedServiceNode.md
+        - name: Adf Amazon Redshift Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonRedshiftDatasetNode.md
+        - name: Adf Azure My Sql Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureMySqlDatasetNode.md
+        - name: Adf Azure Postgre Sql Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzurePostgreSqlDatasetNode.md
+        - name: Adf Azure Sql Mi Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlMiDatasetNode.md
+        - name: Adf Azure Sql Database Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlDatabaseDatasetNode.md
+        - name: Adf Azure Sql Data Warehouse Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlDataWarehouseDatasetNode.md
+        - name: Adf Db 2 Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDb2DatasetNode.md
+        - name: Adf Drill Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDrillDatasetNode.md
+        - name: Adf Greenplum Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGreenplumDatasetNode.md
+        - name: Adf Hive Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHiveDatasetNode.md
+        - name: Adf Impala Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfImpalaDatasetNode.md
+        - name: Adf Netezza Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfNetezzaDatasetNode.md
+        - name: Adf Oracle Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOracleDatasetNode.md
+        - name: Adf Phoenix Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPhoenixDatasetNode.md
+        - name: Adf Postgre Sql Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPostgreSqlDatasetNode.md
+        - name: Adf Presto Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPrestoDatasetNode.md
+        - name: Adf Sql Server Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSqlServerDatasetNode.md
+        - name: Adf Sap Hana Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapHanaDatasetNode.md
+        - name: Adf Snowflake Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSnowflakeDatasetNode.md
+        - name: Adf Spark Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSparkDatasetNode.md
+        - name: Adf Vertica Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfVerticaDatasetNode.md
+        - name: Adf Amazon Marketplace Web Service Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonMarketplaceWebServiceDatasetNode.md
+        - name: Adf Azure Data Explorer Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataExplorerDatasetNode.md
+        - name: Adf Azure Table Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureTableDatasetNode.md
+        - name: Adf Cassandra Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCassandraDatasetNode.md
+        - name: Adf Concur Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfConcurDatasetNode.md
+        - name: Adf Couchbase Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCouchbaseDatasetNode.md
+        - name: Adf Eloqua Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfEloquaDatasetNode.md
+        - name: Adf Google Ad Words Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleAdWordsDatasetNode.md
+        - name: Adf Informix Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfInformixDatasetNode.md
+        - name: Adf H Base Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHBaseDatasetNode.md
+        - name: Adf Hubspot Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHubspotDatasetNode.md
+        - name: Adf Jira Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfJiraDatasetNode.md
+        - name: Adf Magento Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMagentoDatasetNode.md
+        - name: Adf Azure Maria Db Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureMariaDbDatasetNode.md
+        - name: Adf Maria Db Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMariaDbDatasetNode.md
+        - name: Adf Marketo Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMarketoDatasetNode.md
+        - name: Adf Microsoft Access Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMicrosoftAccessDatasetNode.md
+        - name: Adf My Sql Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMySqlDatasetNode.md
+        - name: Adf Odbc Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOdbcDatasetNode.md
+        - name: Adf Office 365 Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOffice365DatasetNode.md
+        - name: Adf Oracle Service Cloud Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOracleServiceCloudDatasetNode.md
+        - name: Adf Paypal Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPaypalDatasetNode.md
+        - name: Adf Quick Books Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfQuickBooksDatasetNode.md
+        - name: Adf Responsys Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfResponsysDatasetNode.md
+        - name: Adf Sap Table Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapTableDatasetNode.md
+        - name: Adf Salesforce Marketing Cloud Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceMarketingCloudDatasetNode.md
+        - name: Adf Service Now Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfServiceNowDatasetNode.md
+        - name: Adf Shopify Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfShopifyDatasetNode.md
+        - name: Adf Square Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSquareDatasetNode.md
+        - name: Adf Sybase Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSybaseDatasetNode.md
+        - name: Adf Teradata Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfTeradataDatasetNode.md
+        - name: Adf Xero Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfXeroDatasetNode.md
+        - name: Adf Zoho Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfZohoDatasetNode.md
+        - name: Adf Salesforce Dataset Base
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceDatasetBaseNode.md
+        - name: Adf Salesforce Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceDatasetNode.md
+        - name: Adf Salesforce Service Cloud Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceServiceCloudDatasetNode.md
+        - name: Adf Azure Cosmos Db Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureCosmosDbDatasetNode.md
+        - name: Adf Azure Cosmos Db Mongo Db Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureCosmosDbMongoDbDatasetNode.md
+        - name: Adf Azure Search Index Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSearchIndexDatasetNode.md
+        - name: Adf Dynamics Crm Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsCrmDatasetNode.md
+        - name: Adf Dynamics Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsDatasetNode.md
+        - name: Adf Common Data Service For Apps Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCommonDataServiceForAppsDatasetNode.md
+        - name: Adf Google Big Query Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleBigQueryDatasetNode.md
+        - name: Adf Mongo Db Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMongoDbDatasetNode.md
+        - name: Adf Dynamics Ax Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsAxDatasetNode.md
+        - name: Adf Mongo Db V 2 Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMongoDbV2DatasetNode.md
+        - name: Adf O Data Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfODataDatasetNode.md
+        - name: Adf Sap Business Warehouse Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapBusinessWarehouseDatasetNode.md
+        - name: Adf Sap Cloud For Customer Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapCloudForCustomerDatasetNode.md
+        - name: Adf Sap Ecc Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapEccDatasetNode.md
+        - name: Adf Sap Open Hub Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapOpenHubDatasetNode.md
+        - name: Adf Web Table Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWebTableDatasetNode.md
+        - name: Adf Azure Blob Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureBlobDatasetNode.md
+        - name: Adf Azure Data Lake Gen 1 Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeGen1DatasetNode.md
+        - name: Adf Azure Data Lake Gen 2 Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeGen2DatasetNode.md
+        - name: Adf Ftp Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFtpDatasetNode.md
+        - name: Adf Hdfs Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdfsDatasetNode.md
+        - name: Adf Sftp Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSftpDatasetNode.md
+        - name: Adf File Share Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFileShareDatasetNode.md
+        - name: Adf Azure File Storage Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureFileStorageDatasetNode.md
+        - name: Adf Amazon S 3 Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonS3DatasetNode.md
+        - name: Adf Google Cloud Storage Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleCloudStorageDatasetNode.md
+        - name: Adf Http Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHttpDatasetNode.md
+        - name: Adf Rest Resource Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfRestResourceDatasetNode.md
+        - name: Adf Share Point Online List Dataset
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSharePointOnlineListDatasetNode.md
+        - name: Adf Data Factory
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataFactoryNode.md
+        - name: Adf Dataset Structure Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetStructureColumnNode.md
+        - name: Adf Activity Dependency
+          href: Varigence.Languages.Biml.DataFactory.AstAdfActivityDependencyNode.md
+        - name: Adf Policy
+          href: Varigence.Languages.Biml.DataFactory.AstAdfActivityPolicyNode.md
+        - name: Adf Activity Schedule
+          href: Varigence.Languages.Biml.DataFactory.AstAdfActivityScheduleNode.md
+        - name: Adf Dataset Availability
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetAvailabilityNode.md
+        - name: Adf Dataset Policy
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetPolicyNode.md
+        - name: Adf Dataset Structure
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetStructureNode.md
+        - name: Adf Dataset Reference
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetReferenceNode.md
+        - name: Adf Delimited Text Format
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDelimitedTextFormatNode.md
+        - name: Adf Avro Format
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAvroFormatNode.md
+        - name: Adf Orc Format
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOrcFormatNode.md
+        - name: Adf Excel Format
+          href: Varigence.Languages.Biml.DataFactory.AstAdfExcelFormatNode.md
+        - name: Adf Json Format
+          href: Varigence.Languages.Biml.DataFactory.AstAdfJsonFormatNode.md
+        - name: Adf Binary Format
+          href: Varigence.Languages.Biml.DataFactory.AstAdfBinaryFormatNode.md
+        - name: Adf Parquet Format
+          href: Varigence.Languages.Biml.DataFactory.AstAdfParquetFormatNode.md
+        - name: Adf Avro Format Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAvroFormatSinkNode.md
+        - name: Adf Delimited Text Format Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDelimitedTextFormatSinkNode.md
+        - name: Adf Json Format Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfJsonFormatSinkNode.md
+        - name: Adf Orc Format Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOrcFormatSinkNode.md
+        - name: Adf Parquet Format Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfParquetFormatSinkNode.md
+        - name: Adf Binary Format Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfBinaryFormatSinkNode.md
+        - name: Adf Avro Format Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAvroFormatSourceNode.md
+        - name: Adf Delimited Text Format Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDelimitedTextFormatSourceNode.md
+        - name: Adf Excel Format Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfExcelFormatSourceNode.md
+        - name: Adf Json Format Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfJsonFormatSourceNode.md
+        - name: Adf Orc Format Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOrcFormatSourceNode.md
+        - name: Adf Parquet Format Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfParquetFormatSourceNode.md
+        - name: Adf Binary Format Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfBinaryFormatSourceNode.md
+        - name: Adf Dataset Partitioned By
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetPartitionedByNode.md
+        - name: Adf Dataset Reference Resource
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetReferenceResourceNode.md
+        - name: Adf Dataset Definition Resource
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetDefinitionResourceNode.md
+        - name: Adf File Compression
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFileCompressionNode.md
+        - name: Adf Amazon Marketplace Web Service Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonMarketplaceWebServiceSourceNode.md
+        - name: Adf Azure My Sql Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureMySqlSourceNode.md
+        - name: Adf Azure Postgre Sql Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzurePostgreSqlSourceNode.md
+        - name: Adf Azure Table Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureTableSourceNode.md
+        - name: Adf Cassandra Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCassandraSourceNode.md
+        - name: Adf Concur Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfConcurSourceNode.md
+        - name: Adf Couchbase Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCouchbaseSourceNode.md
+        - name: Adf Drill Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDrillSourceNode.md
+        - name: Adf Eloqua Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfEloquaSourceNode.md
+        - name: Adf Google Big Query Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleBigQuerySourceNode.md
+        - name: Adf Informix Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfInformixSourceNode.md
+        - name: Adf O Data Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfODataSourceNode.md
+        - name: Adf Salesforce Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceSourceNode.md
+        - name: Adf Sap Cloud For Customer Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapCloudForCustomerSourceNode.md
+        - name: Adf Sap Ecc Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapEccSourceNode.md
+        - name: Adf Azure Sql Database Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlDatabaseSourceNode.md
+        - name: Adf Azure Sql Data Warehouse Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlDataWarehouseSourceNode.md
+        - name: Adf Azure Sql Mi Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlMiSourceNode.md
+        - name: Adf Sql Server Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSqlServerSourceNode.md
+        - name: Adf Greenplum Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGreenplumSourceNode.md
+        - name: Adf H Base Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHBaseSourceNode.md
+        - name: Adf Hive Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHiveSourceNode.md
+        - name: Adf Hubspot Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHubspotSourceNode.md
+        - name: Adf Impala Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfImpalaSourceNode.md
+        - name: Adf Jira Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfJiraSourceNode.md
+        - name: Adf Magento Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMagentoSourceNode.md
+        - name: Adf Azure Maria Db Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureMariaDbSourceNode.md
+        - name: Adf Maria Db Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMariaDbSourceNode.md
+        - name: Adf Marketo Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMarketoSourceNode.md
+        - name: Adf Netezza Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfNetezzaSourceNode.md
+        - name: Adf Oracle Service Cloud Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOracleServiceCloudSourceNode.md
+        - name: Adf Paypal Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPaypalSourceNode.md
+        - name: Adf Phoenix Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPhoenixSourceNode.md
+        - name: Adf Presto Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPrestoSourceNode.md
+        - name: Adf Quick Books Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfQuickBooksSourceNode.md
+        - name: Adf Responsys Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfResponsysSourceNode.md
+        - name: Adf Salesforce Marketing Cloud Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceMarketingCloudSourceNode.md
+        - name: Adf Service Now Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfServiceNowSourceNode.md
+        - name: Adf Shopify Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfShopifySourceNode.md
+        - name: Adf Spark Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSparkSourceNode.md
+        - name: Adf Square Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSquareSourceNode.md
+        - name: Adf Vertica Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfVerticaSourceNode.md
+        - name: Adf Xero Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfXeroSourceNode.md
+        - name: Adf Zoho Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfZohoSourceNode.md
+        - name: Adf Amazon Redshift Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonRedshiftSourceNode.md
+        - name: Adf Dynamics Ax Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsAxSourceNode.md
+        - name: Adf Google Ad Words Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleAdWordsSourceNode.md
+        - name: Adf Db 2 Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDb2SourceNode.md
+        - name: Adf My Sql Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMySqlSourceNode.md
+        - name: Adf Odbc Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOdbcSourceNode.md
+        - name: Adf Postgre Sql Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPostgreSqlSourceNode.md
+        - name: Adf Sybase Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSybaseSourceNode.md
+        - name: Adf Teradata Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfTeradataSourceNode.md
+        - name: Adf Sap Business Warehouse Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapBusinessWarehouseSourceNode.md
+        - name: Adf Sap Hana Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapHanaSourceNode.md
+        - name: Adf Azure Data Explorer Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataExplorerSourceNode.md
+        - name: Adf Azure Cosmos Db Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureCosmosDbSourceNode.md
+        - name: Adf Common Data Service For Apps Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCommonDataServiceForAppsSourceNode.md
+        - name: Adf Dynamics Crm Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsCrmSourceNode.md
+        - name: Adf Dynamics Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsSourceNode.md
+        - name: Adf Microsoft Access Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMicrosoftAccessSourceNode.md
+        - name: Adf Mongo Db Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMongoDbSourceNode.md
+        - name: Adf Oracle Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOracleSourceNode.md
+        - name: Adf Salesforce Service Cloud Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceServiceCloudSourceNode.md
+        - name: Adf Snowflake Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSnowflakeSourceNode.md
+        - name: Adf Share Point Online List Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSharePointOnlineListSourceNode.md
+        - name: Adf Azure Cosmos Db Mongo Db Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureCosmosDbMongoDbSourceNode.md
+        - name: Adf Mongo Db V 2 Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMongoDbV2SourceNode.md
+        - name: Adf Office 365 Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOffice365SourceNode.md
+        - name: Adf Sap Open Hub Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapOpenHubSourceNode.md
+        - name: Adf Sap Table Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapTableSourceNode.md
+        - name: Adf Rest Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfRestSourceNode.md
+        - name: Adf Web Table Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWebTableSourceNode.md
+        - name: Adf Azure Data Lake Gen 1 Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeGen1SourceNode.md
+        - name: Adf Azure Data Lake Gen 2 Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeGen2SourceNode.md
+        - name: Adf Sftp Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSftpSourceNode.md
+        - name: Adf Azure File Storage Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureFileStorageSourceNode.md
+        - name: Adf Amazon S 3 Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonS3SourceNode.md
+        - name: Adf Google Cloud Storage Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGoogleCloudStorageSourceNode.md
+        - name: Adf Azure Blob Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureBlobSourceNode.md
+        - name: Adf File Share Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFileShareSourceNode.md
+        - name: Adf Hdfs Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdfsSourceNode.md
+        - name: Adf Ftp Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFtpSourceNode.md
+        - name: Adf Http Source
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHttpSourceNode.md
+        - name: Adf Azure Blob Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureBlobSinkNode.md
+        - name: Adf Azure Data Lake Gen 1 Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeGen1SinkNode.md
+        - name: Adf Azure Data Lake Gen 2 Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataLakeGen2SinkNode.md
+        - name: Adf File Share Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFileShareSinkNode.md
+        - name: Adf Azure Sql Database Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlDatabaseSinkNode.md
+        - name: Adf Sql Server Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSqlServerSinkNode.md
+        - name: Adf Azure Sql Mi Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlMiSinkNode.md
+        - name: Adf Azure Sql Data Warehouse Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSqlDataWarehouseSinkNode.md
+        - name: Adf Azure Postgre Sql Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzurePostgreSqlSinkNode.md
+        - name: Adf Informix Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfInformixSinkNode.md
+        - name: Adf Microsoft Access Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMicrosoftAccessSinkNode.md
+        - name: Adf Odbc Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOdbcSinkNode.md
+        - name: Adf Oracle Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOracleSinkNode.md
+        - name: Adf Azure Cosmos Db Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureCosmosDbSinkNode.md
+        - name: Adf Azure Cosmos Db Mongo Db Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureCosmosDbMongoDbSinkNode.md
+        - name: Adf Azure Table Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureTableSinkNode.md
+        - name: Adf Azure Search Index Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureSearchIndexSinkNode.md
+        - name: Adf Dynamics Crm Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsCrmSinkNode.md
+        - name: Adf Dynamics Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicsSinkNode.md
+        - name: Adf Common Data Service For Apps Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCommonDataServiceForAppsSinkNode.md
+        - name: Adf Salesforce Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceSinkNode.md
+        - name: Adf Salesforce Service Cloud Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSalesforceServiceCloudSinkNode.md
+        - name: Adf Sap Cloud For Customer Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapCloudForCustomerSinkNode.md
+        - name: Adf Azure Data Explorer Sink
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAzureDataExplorerSinkNode.md
+        - name: Adf Self Hosted Linked Info Base
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSelfHostedLinkedInfoBaseNode.md
+        - name: Adf Key Authorization Linked Info
+          href: Varigence.Languages.Biml.DataFactory.AstAdfKeyAuthorizationLinkedInfoNode.md
+        - name: Adf Rbac Authorization Linked Info
+          href: Varigence.Languages.Biml.DataFactory.AstAdfRbacAuthorizationLinkedInfoNode.md
+        - name: Adf Integration Runtime Compute Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeComputeSettingsNode.md
+        - name: Adf Integration Runtime Dataflow Properties
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeDataflowPropertiesNode.md
+        - name: Adf Integration Runtime Vnet Properties
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeVnetPropertiesNode.md
+        - name: Adf Integration Runtime Ssis Properties
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeSsisPropertiesNode.md
+        - name: Adf Integration Runtime Catalog Info
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeCatalogInfoNode.md
+        - name: Adf Integration Runtime Custom Setup Script Properties
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeCustomSetupScriptPropertiesNode.md
+        - name: Adf Integration Runtime Data Proxy Properties
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeDataProxyPropertiesNode.md
+        - name: Adf Integration Runtime Custom Setup Base
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeCustomSetupBaseNode.md
+        - name: Adf Integration Runtime Cmd Key Setup
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeCmdKeySetupNode.md
+        - name: Adf Integration Runtime Environment Variable Setup
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeEnvironmentVariableSetupNode.md
+        - name: Adf Integration Component Setup Properties
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeComponentSetupNode.md
+        - name: Adf Amazon Redshift Source Unload Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfAmazonRedshiftSourceUnloadSettingsNode.md
+        - name: Adf Dataflow Staging Info
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowStagingInfoNode.md
+        - name: Adf Dataflow Dataset Parameter Reference
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowDatasetParameterReferenceNode.md
+        - name: Adf Cursor Methods
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCursorMethodsNode.md
+        - name: Adf Log Storage Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfLogStorageSettingsNode.md
+        - name: Adf Log Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfLogSettingsNode.md
+        - name: Adf Copy Command Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCopyCommandSettingsNode.md
+        - name: Adf Poly Base Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPolyBaseSettingsNode.md
+        - name: Adf Copy Command Default Value
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCopyCommandDefaultValueNode.md
+        - name: Adf Oracle Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOraclePartitionSettingsNode.md
+        - name: Adf Netezza Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfNetezzaPartitionSettingsNode.md
+        - name: Adf Sap Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapPartitionSettingsNode.md
+        - name: Adf Teradata Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfTeradataPartitionSettingsNode.md
+        - name: Adf Sap Hana Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSapHanaPartitionSettingsNode.md
+        - name: Adf Sql Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSqlPartitionSettingsNode.md
+        - name: Adf Snowflake Additional Format Options
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSnowflakeAdditionalFormatOptionsNode.md
+        - name: Adf Hdfs Source Dist Cp Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHdfsSourceDistCpSettingsNode.md
+        - name: Ast Adf Copy Activity Staging Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCopyActivityStagingSettingsNode.md
+        - name: Adf Copy Activity Redirect Incompatible Row Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCopyActivityRedirectIncompatibleRowSettingsNode.md
+        - name: Adf Web Activity Authentication
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWebActivityAuthenticationNode.md
+        - name: Adf Schedule
+          href: Varigence.Languages.Biml.DataFactory.AstAdfScheduleNode.md
+        - name: Adf Monthly Occurence
+          href: Varigence.Languages.Biml.DataFactory.AstAdfMonthlyOccurenceNode.md
+        - name: Adf Pipeline Execution
+          href: Varigence.Languages.Biml.DataFactory.AstAdfPipelineExecutionNode.md
+        - name: Adf Copy Activity Mapping
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCopyActivityMappingNode.md
+        - name: Adf Collection Reference
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCollectionReferenceNode.md
+        - name: Adf Dataflow Component Column Expression
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowComponentColumnExpressionNode.md
+        - name: Adf Dataflow Alter Row Condition
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowAlterRowConditionNode.md
+        - name: Adf Dataflow Condition
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowConditionNode.md
+        - name: Adf Dataflow Custom Condition
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowCustomConditionNode.md
+        - name: Adf Dataflow Fixed Mapping Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowFixedMappingColumnNode.md
+        - name: Ast Adf Dataflow Rule Mapping Column Node
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowRuleMappingColumnNode.md
+        - name: Adf Dataflow Column Pattern
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowColumnPatternNode.md
+        - name: Adf Dataflow Condition Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowConditionColumnNode.md
+        - name: Adf Dataflow Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowColumnNode.md
+        - name: Adf Dataflow Unpivot Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowUnpivotColumnNode.md
+        - name: Adf Dataflow Window Sort Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowWindowSortColumnNode.md
+        - name: Adf Dataflow Pivot Aggregate Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowPivotAggregateColumnNode.md
+        - name: Adf Get Metadata Field List
+          href: Varigence.Languages.Biml.DataFactory.AstAdfGetMetadataFieldListNode.md
+        - name: Adf Round Robin Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfRoundRobinPartitionSettingsNode.md
+        - name: Adf Hash Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfHashPartitionSettingsNode.md
+        - name: Adf Dynamic Range Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDynamicRangePartitionSettingsNode.md
+        - name: Adf Fixed Range Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfFixedRangePartitionSettingsNode.md
+        - name: Adf Key Partition Settings
+          href: Varigence.Languages.Biml.DataFactory.AstAdfKeyPartitionSettingsNode.md
+        - name: Adf Dataflow Named Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowNamedColumnNode.md
+        - name: Adf Dataflow Computed Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDataflowComputedColumnNode.md
+        - name: Adf Custom Activity Reference Objects
+          href: Varigence.Languages.Biml.DataFactory.AstAdfCustomActivityReferenceObjectsNode.md
+        - name: Adf Linked Service Connect Via
+          href: Varigence.Languages.Biml.DataFactory.AstAdfLinkedServiceConnectViaNode.md
+        - name: Adf Web Activity Body
+          href: Varigence.Languages.Biml.DataFactory.AstAdfWebActivityBodyNode.md
+        - name: Adf Linked Service Reference
+          href: Varigence.Languages.Biml.DataFactory.AstAdfLinkedServiceReferenceNode.md
+        - name: Adf Integration Runtime Reference
+          href: Varigence.Languages.Biml.DataFactory.AstAdfIntegrationRuntimeReferenceNode.md
+        - name: Adf External Integration Runtime
+          href: Varigence.Languages.Biml.DataFactory.AstAdfExternalIntegrationRuntimeNode.md
+        - name: Adf Ssis Execution Credential
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSsisExecutionCredentialNode.md
+        - name: Adf Ssis Access Credential
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSsisAccessCredentialNode.md
+        - name: Adf Tumbling Window Trigger Dependency
+          href: Varigence.Languages.Biml.DataFactory.AstAdfTumblingWindowTriggerDependencyNode.md
+        - name: Adf SSIS Child Package
+          href: Varigence.Languages.Biml.DataFactory.AstAdfSSISChildPackageNode.md
+        - name: Adf Office 365 Source Column
+          href: Varigence.Languages.Biml.DataFactory.AstAdfOffice365SourceColumnNode.md
+        - name: Adf Dataset Element Schema
+          href: Varigence.Languages.Biml.DataFactory.AstAdfDatasetSchemaElementNode.md
+    - name: Varigence.Languages.Biml.Dimension
+      href: #
+      items:
+        - name: Attribute
+          href: Varigence.Languages.Biml.Dimension.AstAttributeNode.md
+        - name: Attribute Relationship
+          href: Varigence.Languages.Biml.Dimension.AstAttributeRelationshipNode.md
+        - name: Dimension Hierarchy Level
+          href: Varigence.Languages.Biml.Dimension.AstDimensionHierarchyLevelNode.md
+        - name: Dimension Hierarchy
+          href: Varigence.Languages.Biml.Dimension.AstDimensionHierarchyNode.md
+        - name: Dimension Metadata
+          href: Varigence.Languages.Biml.Dimension.AstDimensionMetadataNode.md
+        - name: Attribute Translation
+          href: Varigence.Languages.Biml.Dimension.AstAttributeTranslationNode.md
+        - name: Attribute Reference
+          href: Varigence.Languages.Biml.Dimension.AstAttributeReferenceNode.md
+        - name: Perspective Attribute Reference
+          href: Varigence.Languages.Biml.Dimension.AstPerspectiveAttributeReferenceNode.md
+        - name: Dimension Hierarchy Reference
+          href: Varigence.Languages.Biml.Dimension.AstDimensionHierarchyReferenceNode.md
+        - name: Attribute Key Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeKeyColumnNode.md
+        - name: Attribute Snowflake Key Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeKeyColumnNode.md
+        - name: Attribute Snowflake Name Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeNameColumnNode.md
+        - name: Attribute Name Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeNameColumnNode.md
+        - name: Attribute Snowflake Value Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeValueColumnNode.md
+        - name: Attribute Value Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeValueColumnNode.md
+        - name: Attribute Custom Rollup Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeCustomRollupColumnNode.md
+        - name: Attribute Snowflake Custom Rollup Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeCustomRollupColumnNode.md
+        - name: Attribute Custom Rollup Properties Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeCustomRollupPropertiesColumnNode.md
+        - name: Attribute Snowflake Custom Rollup Properties Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeCustomRollupPropertiesColumnNode.md
+        - name: Attribute Unary Operator Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeUnaryOperatorColumnNode.md
+        - name: Attribute Snowflake Unary Operator Column
+          href: Varigence.Languages.Biml.Dimension.AstAttributeSnowflakeUnaryOperatorColumnNode.md
+    - name: Varigence.Languages.Biml.Fact
+      href: #
+      items:
+        - name: Measure
+          href: Varigence.Languages.Biml.Fact.AstMeasureNode.md
+        - name: Measure Group Metadata
+          href: Varigence.Languages.Biml.Fact.AstMeasureGroupMetadataNode.md
+        - name: Measure Reference
+          href: Varigence.Languages.Biml.Fact.AstMeasureReferenceNode.md
+    - name: Varigence.Languages.Biml.FileFormat
+      href: #
+      items:
+        - name: Flat File Column
+          href: Varigence.Languages.Biml.FileFormat.AstFlatFileColumnNode.md
+        - name: Flat File Format
+          href: Varigence.Languages.Biml.FileFormat.AstFlatFileFormatNode.md
+        - name: Raw File Format
+          href: Varigence.Languages.Biml.FileFormat.AstRawFileFormatNode.md
+        - name: Attached File
+          href: Varigence.Languages.Biml.FileFormat.AstAttachedFileNode.md
+    - name: Varigence.Languages.Biml.LogProvider
+      href: #
+      items:
+        - name: Custom Log Provider
+          href: Varigence.Languages.Biml.LogProvider.AstCustomLogProviderNode.md
+        - name: Sql Server Log Provider
+          href: Varigence.Languages.Biml.LogProvider.AstSqlServerLogProviderNode.md
+        - name: Xml Log Provider
+          href: Varigence.Languages.Biml.LogProvider.AstXmlLogProviderNode.md
+        - name: Windows Event Log Provider
+          href: Varigence.Languages.Biml.LogProvider.AstWindowsEventLogProviderNode.md
+        - name: Text Log Provider
+          href: Varigence.Languages.Biml.LogProvider.AstTextLogProviderNode.md
+        - name: Profiler Log Provider
+          href: Varigence.Languages.Biml.LogProvider.AstProfilerLogProviderNode.md
+    - name: Varigence.Languages.Biml.MeasureGroup
+      href: #
+      items:
+        - name: Cube Measure Group
+          href: Varigence.Languages.Biml.MeasureGroup.AstCubeMeasureGroupNode.md
+        - name: Cube Measure Group Reference
+          href: Varigence.Languages.Biml.MeasureGroup.AstCubeMeasureGroupReferenceNode.md
+    - name: Varigence.Languages.Biml.Metadata
+      href: #
+      items:
+        - name: Offline Schema Column
+          href: Varigence.Languages.Biml.Metadata.AstOfflineSchemaColumnNode.md
+        - name: Offline Schema
+          href: Varigence.Languages.Biml.Metadata.AstOfflineSchemaNode.md
+        - name: Metadata Model
+          href: Varigence.Languages.Biml.Metadata.AstMetadataModelNode.md
+        - name: Metadata Instance
+          href: Varigence.Languages.Biml.Metadata.AstMetadataInstanceNode.md
+        - name: Metadata Model Validator
+          href: Varigence.Languages.Biml.Metadata.AstMetadataModelValidatorNode.md
+        - name: Metadata Model Entity
+          href: Varigence.Languages.Biml.Metadata.AstMetadataModelEntityNode.md
+        - name: Metadata Model Property
+          href: Varigence.Languages.Biml.Metadata.AstMetadataModelPropertyNode.md
+        - name: Metadata Item Entity Data
+          href: Varigence.Languages.Biml.Metadata.AstMetadataItemEntityDataNode.md
+        - name: Metadata Model Entity Relationship
+          href: Varigence.Languages.Biml.Metadata.AstMetadataModelEntityRelationshipNode.md
+        - name: Offline Schema Item
+          href: Varigence.Languages.Biml.Metadata.AstOfflineSchemaItemNode.md
+        - name: Metadata Item Entity
+          href: Varigence.Languages.Biml.Metadata.AstMetadataItemEntityNode.md
+        - name: Metadata Model Property Permitted Value Set
+          href: Varigence.Languages.Biml.Metadata.AstMetadataModelPropertyPermittedValueSetNode.md
+        - name: Metadata Model Relationship Filtered Lookup Item
+          href: Varigence.Languages.Biml.Metadata.AstMetadataModelRelationshipFilteredLookupItemNode.md
+        - name: Metadata Item Relationship
+          href: Varigence.Languages.Biml.Metadata.AstMetadataItemRelationshipNode.md
+        - name: Metadata Item Property
+          href: Varigence.Languages.Biml.Metadata.AstMetadataItemPropertyNode.md
+        - name: Metadata Item Column
+          href: Varigence.Languages.Biml.Metadata.AstMetadataItemColumnNode.md
+        - name: Metadata Model Permitted Value
+          href: Varigence.Languages.Biml.Metadata.AstMetadataModelPermittedValueNode.md
+    - name: Varigence.Languages.Biml.Principal
+      href: #
+      items:
+        - name: Principal Member
+          href: Varigence.Languages.Biml.Principal.AstPrincipalMemberNode.md
+        - name: Tabular Model Permission
+          href: Varigence.Languages.Biml.Principal.AstTabularModelPermissionNode.md
+        - name: Tabular Table Permission
+          href: Varigence.Languages.Biml.Principal.AstTabularTablePermissionNode.md
+        - name: Table Permission
+          href: Varigence.Languages.Biml.Principal.AstTablePermissionNode.md
+        - name: Column Permission
+          href: Varigence.Languages.Biml.Principal.AstColumnPermissionNode.md
+        - name: Schema Permission
+          href: Varigence.Languages.Biml.Principal.AstSchemaPermissionNode.md
+        - name: Database Permission
+          href: Varigence.Languages.Biml.Principal.AstDatabasePermissionNode.md
+        - name: Stored Procedure Permission
+          href: Varigence.Languages.Biml.Principal.AstStoredProcedurePermissionNode.md
+        - name: Data Source Permission
+          href: Varigence.Languages.Biml.Principal.AstDataSourcePermissionNode.md
+        - name: Analysis Database Permission
+          href: Varigence.Languages.Biml.Principal.AstAnalysisDatabasePermissionNode.md
+        - name: Cube Permission
+          href: Varigence.Languages.Biml.Principal.AstCubePermissionNode.md
+        - name: Database Dimension Permission
+          href: Varigence.Languages.Biml.Principal.AstDatabaseDimensionPermissionNode.md
+        - name: Cube Dimension Permission
+          href: Varigence.Languages.Biml.Principal.AstCubeDimensionPermissionNode.md
+        - name: Database Dimension Attribute Permission
+          href: Varigence.Languages.Biml.Principal.AstDatabaseDimensionAttributePermissionNode.md
+        - name: Cube Dimension Attribute Permission
+          href: Varigence.Languages.Biml.Principal.AstCubeDimensionAttributePermissionNode.md
+        - name: Cube Cell Permission
+          href: Varigence.Languages.Biml.Principal.AstCubeCellPermissionNode.md
+    - name: Varigence.Languages.Biml.Project
+      href: #
+      items:
+        - name: Package Project
+          href: Varigence.Languages.Biml.Project.AstPackageProjectNode.md
+        - name: Cube Project
+          href: Varigence.Languages.Biml.Project.AstCubeProjectNode.md
+        - name: Tabular Project
+          href: Varigence.Languages.Biml.Project.AstTabularProjectNode.md
+        - name: Package Reference
+          href: Varigence.Languages.Biml.Project.AstPackageReferenceNode.md
+        - name: Cube Reference
+          href: Varigence.Languages.Biml.Project.AstCubeReferenceNode.md
+        - name: Dimension Reference
+          href: Varigence.Languages.Biml.Project.AstDimensionReferenceNode.md
+        - name: Principal Reference
+          href: Varigence.Languages.Biml.Project.AstPrincipalReferenceNode.md
+        - name: Tabular Model Reference
+          href: Varigence.Languages.Biml.Project.AstTabularModelReferenceNode.md
+    - name: Varigence.Languages.Biml.Script
+      href: #
+      items:
+        - name: Component Script Project
+          href: Varigence.Languages.Biml.Script.AstComponentScriptProjectNode.md
+        - name: Task Script Project
+          href: Varigence.Languages.Biml.Script.AstTaskScriptProjectNode.md
+        - name: Component Script Project Output Buffer
+          href: Varigence.Languages.Biml.Script.AstComponentScriptProjectOutputBufferNode.md
+        - name: Component Script Project Input Buffer
+          href: Varigence.Languages.Biml.Script.AstComponentScriptProjectInputBufferNode.md
+        - name: Component Script Project Output Buffer Column
+          href: Varigence.Languages.Biml.Script.AstComponentScriptProjectOutputBufferColumnNode.md
+        - name: Component Script Project Input Buffer Column
+          href: Varigence.Languages.Biml.Script.AstComponentScriptProjectInputBufferColumnNode.md
+        - name: Script Project Settings
+          href: Varigence.Languages.Biml.Script.AstScriptProjectSettingsNode.md
+        - name: Script Project Resources
+          href: Varigence.Languages.Biml.Script.AstScriptProjectResourcesNode.md
+        - name: Script Project Assembly Reference
+          href: Varigence.Languages.Biml.Script.AstScriptProjectAssemblyReferenceNode.md
+        - name: Script Project Variable Reference
+          href: Varigence.Languages.Biml.Script.AstScriptProjectVariableReferenceNode.md
+        - name: Script Project File
+          href: Varigence.Languages.Biml.Script.AstScriptProjectFileNode.md
+        - name: Script Project External File
+          href: Varigence.Languages.Biml.Script.AstScriptProjectExternalFileNode.md
+    - name: Varigence.Languages.Biml.Table
+      href: #
+      items:
+        - name: Table Index
+          href: Varigence.Languages.Biml.Table.AstTableIndexNode.md
+        - name: Table Identity
+          href: Varigence.Languages.Biml.Table.AstTableIdentityNode.md
+        - name: Table Primary Key
+          href: Varigence.Languages.Biml.Table.AstTablePrimaryKeyNode.md
+        - name: Table Unique Key
+          href: Varigence.Languages.Biml.Table.AstTableUniqueKeyNode.md
+        - name: Table Static Source
+          href: Varigence.Languages.Biml.Table.AstTableStaticSourceNode.md
+        - name: Principal
+          href: Varigence.Languages.Biml.Table.AstPrincipalNode.md
+        - name: Table Hashed Key Column
+          href: Varigence.Languages.Biml.Table.AstTableHashedKeyColumnNode.md
+        - name: Table Column
+          href: Varigence.Languages.Biml.Table.AstTableColumnNode.md
+        - name: Table Column Table Reference
+          href: Varigence.Languages.Biml.Table.AstTableColumnTableReferenceNode.md
+        - name: Multiple Column Table Reference
+          href: Varigence.Languages.Biml.Table.AstMultipleColumnTableReferenceNode.md
+        - name: Schema
+          href: Varigence.Languages.Biml.Table.AstSchemaNode.md
+        - name: Table
+          href: Varigence.Languages.Biml.Table.AstTableNode.md
+        - name: Table Clone
+          href: Varigence.Languages.Biml.Table.AstTableCloneNode.md
+        - name: Database
+          href: Varigence.Languages.Biml.Table.AstDatabaseNode.md
+        - name: Server
+          href: Varigence.Languages.Biml.Table.AstServerNode.md
+        - name: Partition Function
+          href: Varigence.Languages.Biml.Table.AstPartitionFunctionNode.md
+        - name: Partition Scheme
+          href: Varigence.Languages.Biml.Table.AstPartitionSchemeNode.md
+        - name: Check Constraint
+          href: Varigence.Languages.Biml.Table.AstCheckConstraintNode.md
+        - name: Database File Group Node
+          href: Varigence.Languages.Biml.Table.AstDatabaseFileGroupNode.md
+        - name: Database File
+          href: Varigence.Languages.Biml.Table.AstDatabaseFileNode.md
+        - name: Static Source Row
+          href: Varigence.Languages.Biml.Table.AstStaticSourceRowNode.md
+        - name: Static Source Column Value
+          href: Varigence.Languages.Biml.Table.AstStaticSourceColumnValueNode.md
+        - name: Table Index Column
+          href: Varigence.Languages.Biml.Table.AstTableIndexColumnNode.md
+        - name: Table Key Column
+          href: Varigence.Languages.Biml.Table.AstTableKeyColumnNode.md
+        - name: Table Index Leaf
+          href: Varigence.Languages.Biml.Table.AstTableIndexLeafNode.md
+        - name: Database File Group Resource
+          href: Varigence.Languages.Biml.Table.AstDatabaseFileGroupResourceNode.md
+        - name: External Database File Group Resource
+          href: Varigence.Languages.Biml.Table.AstExternalDatabaseFileGroupResourceNode.md
+        - name: View
+          href: Varigence.Languages.Biml.Table.AstViewNode.md
+    - name: Varigence.Languages.Biml.Tabular
+      href: #
+      items:
+        - name: Tabular Perspective Table Reference
+          href: Varigence.Languages.Biml.Tabular.AstTabularPerspectiveTableReferenceNode.md
+        - name: Tabular Perspective Column Reference
+          href: Varigence.Languages.Biml.Tabular.AstTabularPerspectiveColumnReferenceNode.md
+        - name: Tabular Sourced Relationship
+          href: Varigence.Languages.Biml.Tabular.AstTabularSourcedRelationshipNode.md
+        - name: Tabular Relationship
+          href: Varigence.Languages.Biml.Tabular.AstTabularRelationshipNode.md
+        - name: Tabular Model
+          href: Varigence.Languages.Biml.Tabular.AstTabularModelNode.md
+        - name: Tabular Metadata
+          href: Varigence.Languages.Biml.Tabular.AstTabularMetadataNode.md
+        - name: Tabular Column
+          href: Varigence.Languages.Biml.Tabular.AstTabularColumnNode.md
+        - name: Tabular Hierarchy
+          href: Varigence.Languages.Biml.Tabular.AstTabularHierarchyNode.md
+        - name: Tabular Perspective
+          href: Varigence.Languages.Biml.Tabular.AstTabularPerspectiveNode.md
+        - name: Tabular Measure
+          href: Varigence.Languages.Biml.Tabular.AstTabularMeasureNode.md
+        - name: Tabular Partition
+          href: Varigence.Languages.Biml.Tabular.AstTabularPartitionNode.md
+        - name: Tabular Level
+          href: Varigence.Languages.Biml.Tabular.AstTabularLevelNode.md
+        - name: Tabular Kpi
+          href: Varigence.Languages.Biml.Tabular.AstTabularKpiNode.md
+        - name: Tabular Metadata Reference
+          href: Varigence.Languages.Biml.Tabular.AstTabularMetadataReferenceNode.md
+    - name: Varigence.Languages.Biml.Task
+      href: #
+      items:
+        - name: Taskflow Output Path
+          href: Varigence.Languages.Biml.Task.AstTaskflowOutputPathNode.md
+        - name: Container Task
+          href: Varigence.Languages.Biml.Task.AstContainerTaskNode.md
+        - name: Staging Container Task
+          href: Varigence.Languages.Biml.Task.AstStagingContainerTaskNode.md
+        - name: For Loop Container Task
+          href: Varigence.Languages.Biml.Task.AstForLoopContainerTaskNode.md
+        - name: Retry Container Task
+          href: Varigence.Languages.Biml.Task.AstRetryContainerTaskNode.md
+        - name: Foreach File Loop
+          href: Varigence.Languages.Biml.Task.AstForEachFileLoopNode.md
+        - name: Foreach Item Loop
+          href: Varigence.Languages.Biml.Task.AstForEachItemLoopNode.md
+        - name: Foreach Ado Loop
+          href: Varigence.Languages.Biml.Task.AstForEachAdoLoopNode.md
+        - name: Foreach Ado Net Schema Loop
+          href: Varigence.Languages.Biml.Task.AstForEachAdoNetSchemaLoopNode.md
+        - name: Foreach Adls Gen 2 Loop
+          href: Varigence.Languages.Biml.Task.AstForEachAdlsGen2LoopNode.md
+        - name: For Each Adls Loop
+          href: Varigence.Languages.Biml.Task.AstForEachAdlsLoopNode.md
+        - name: For Each Azure Blob Loop
+          href: Varigence.Languages.Biml.Task.AstForEachAzureBlobLoopNode.md
+        - name: For Each Hdfs Loop
+          href: Varigence.Languages.Biml.Task.AstForEachHdfsLoopNode.md
+        - name: Foreach From Variable Loop
+          href: Varigence.Languages.Biml.Task.AstForEachFromVariableLoopNode.md
+        - name: Foreach Node List Loop
+          href: Varigence.Languages.Biml.Task.AstForEachNodeListLoopNode.md
+        - name: Foreach Smo Loop
+          href: Varigence.Languages.Biml.Task.AstForEachSmoLoopNode.md
+        - name: Package
+          href: Varigence.Languages.Biml.Task.AstPackageNode.md
+        - name: Custom Extension Container Task
+          href: Varigence.Languages.Biml.Task.AstCustomExtensionContainerTaskNode.md
+        - name: Task Event Handler
+          href: Varigence.Languages.Biml.Task.AstTaskEventHandlerNode.md
+        - name: Dataflow Task
+          href: Varigence.Languages.Biml.Task.AstDataflowTaskNode.md
+        - name: Execute Package Task
+          href: Varigence.Languages.Biml.Task.AstExecutePackageTaskNode.md
+        - name: Execute SQL Task
+          href: Varigence.Languages.Biml.Task.AstExecuteSqlTaskNode.md
+        - name: Merge Task
+          href: Varigence.Languages.Biml.Task.AstMergeTaskNode.md
+        - name: Stored Proc
+          href: Varigence.Languages.Biml.Task.AstStoredProcNode.md
+        - name: Analysis Services Execute DDL Task
+          href: Varigence.Languages.Biml.Task.AstAnalysisServicesExecuteDdlTaskNode.md
+        - name: Analysis Services Processing Task
+          href: Varigence.Languages.Biml.Task.AstAnalysisServicesProcessingTaskNode.md
+        - name: Bulk Insert Task
+          href: Varigence.Languages.Biml.Task.AstBulkInsertTaskNode.md
+        - name: Data Profiling Task
+          href: Varigence.Languages.Biml.Task.AstDataProfilingTaskNode.md
+        - name: Execute Process Task
+          href: Varigence.Languages.Biml.Task.AstExecuteProcessTaskNode.md
+        - name: File System Task
+          href: Varigence.Languages.Biml.Task.AstFileSystemTaskNode.md
+        - name: FTP Task
+          href: Varigence.Languages.Biml.Task.AstFtpTaskNode.md
+        - name: Message Queue Task
+          href: Varigence.Languages.Biml.Task.AstMessageQueueTaskNode.md
+        - name: Send Mail Task
+          href: Varigence.Languages.Biml.Task.AstSendMailTaskNode.md
+        - name: XML Task
+          href: Varigence.Languages.Biml.Task.AstXmlTaskNode.md
+        - name: WMI Event Watcher Task
+          href: Varigence.Languages.Biml.Task.AstWmiEventWatcherTaskNode.md
+        - name: WMI Data Reader Task
+          href: Varigence.Languages.Biml.Task.AstWmiDataReaderTaskNode.md
+        - name: Web Service Task
+          href: Varigence.Languages.Biml.Task.AstWebServiceTaskNode.md
+        - name: Transfer Master Stored Procedures Task
+          href: Varigence.Languages.Biml.Task.AstTransferMasterStoredProceduresTaskNode.md
+        - name: Transfer Logins Task
+          href: Varigence.Languages.Biml.Task.AstTransferLoginsTaskNode.md
+        - name: Transfer Jobs Task
+          href: Varigence.Languages.Biml.Task.AstTransferJobsTaskNode.md
+        - name: Transfer Error Messages Task
+          href: Varigence.Languages.Biml.Task.AstTransferErrorMessagesTaskNode.md
+        - name: Transfer Database Task
+          href: Varigence.Languages.Biml.Task.AstTransferDatabaseTaskNode.md
+        - name: Transfer SQL Server Objects Task
+          href: Varigence.Languages.Biml.Task.AstTransferSqlServerObjectsTaskNode.md
+        - name: Backup Database Task
+          href: Varigence.Languages.Biml.Task.AstBackupDatabaseTaskNode.md
+        - name: Maintenance Cleanup Task
+          href: Varigence.Languages.Biml.Task.AstMaintenanceCleanupTaskNode.md
+        - name: Notify Operator Task
+          href: Varigence.Languages.Biml.Task.AstNotifyOperatorTaskNode.md
+        - name: Execute SQL Server Agent Job Task
+          href: Varigence.Languages.Biml.Task.AstExecuteSqlServerAgentJobTaskNode.md
+        - name: Check Database Integrity Task
+          href: Varigence.Languages.Biml.Task.AstCheckDatabaseIntegrityTaskNode.md
+        - name: Reorganize Index Task
+          href: Varigence.Languages.Biml.Task.AstReorganizeIndexTaskNode.md
+        - name: Rebuild Index Task
+          href: Varigence.Languages.Biml.Task.AstRebuildIndexTaskNode.md
+        - name: Update Statistics Task
+          href: Varigence.Languages.Biml.Task.AstUpdateStatisticsTaskNode.md
+        - name: History Cleanup Task
+          href: Varigence.Languages.Biml.Task.AstHistoryCleanupTaskNode.md
+        - name: Execute T Sql Statement Task
+          href: Varigence.Languages.Biml.Task.AstExecuteTSqlStatementTaskNode.md
+        - name: Shrink Database Task
+          href: Varigence.Languages.Biml.Task.AstShrinkDatabaseTaskNode.md
+        - name: Script Task
+          href: Varigence.Languages.Biml.Task.AstScriptTaskNode.md
+        - name: Custom Task
+          href: Varigence.Languages.Biml.Task.AstCustomTaskNode.md
+        - name: Expression Task
+          href: Varigence.Languages.Biml.Task.AstExpressionTaskNode.md
+        - name: Cdc Control Task
+          href: Varigence.Languages.Biml.Task.AstCdcControlTaskNode.md
+        - name: Azure Sql Data Warehouse Upload Task
+          href: Varigence.Languages.Biml.Task.AstAzureSqlDataWarehouseUploadTaskNode.md
+        - name: Azure Data Lake Store File System Task
+          href: Varigence.Languages.Biml.Task.AstAzureDataLakeStoreFileSystemTaskNode.md
+        - name: Hadoop File System Task
+          href: Varigence.Languages.Biml.Task.AstHadoopFileSystemTaskNode.md
+        - name: Hadoop Hive Task
+          href: Varigence.Languages.Biml.Task.AstHadoopHiveTaskNode.md
+        - name: Hadoop Pig Task
+          href: Varigence.Languages.Biml.Task.AstHadoopPigTaskNode.md
+        - name: Azure Blob Download Task
+          href: Varigence.Languages.Biml.Task.AstAzureBlobDownloadTaskNode.md
+        - name: Azure Blob Upload Task
+          href: Varigence.Languages.Biml.Task.AstAzureBlobUploadTaskNode.md
+        - name: Azure HD Insight Hive Task
+          href: Varigence.Languages.Biml.Task.AstAzureHDInsightHiveTaskNode.md
+        - name: Azure HD Insight Pig Task
+          href: Varigence.Languages.Biml.Task.AstAzureHDInsightPigTaskNode.md
+        - name: Azure HD Insight Create Cluster Task
+          href: Varigence.Languages.Biml.Task.AstAzureHDInsightCreateClusterTaskNode.md
+        - name: Azure HD Insight Delete Cluster Task
+          href: Varigence.Languages.Biml.Task.AstAzureHDInsightDeleteClusterTaskNode.md
+        - name: Stored Proc Column
+          href: Varigence.Languages.Biml.Task.AstStoredProcColumnNode.md
+        - name: Package Configuration
+          href: Varigence.Languages.Biml.Task.AstPackageConfigurationNode.md
+        - name: Configuration Value
+          href: Varigence.Languages.Biml.Task.AstConfigurationValueNode.md
+        - name: Candidate Key Profile Request
+          href: Varigence.Languages.Biml.Task.AstCandidateKeyProfileRequestNode.md
+        - name: Column Length Distribution Profile Request
+          href: Varigence.Languages.Biml.Task.AstColumnLengthDistributionProfileRequestNode.md
+        - name: Column Null Ratio Profile Request
+          href: Varigence.Languages.Biml.Task.AstColumnNullRatioProfileRequestNode.md
+        - name: Column Pattern Profile Request
+          href: Varigence.Languages.Biml.Task.AstColumnPatternProfileRequestNode.md
+        - name: Column Statistics Profile Request
+          href: Varigence.Languages.Biml.Task.AstColumnStatisticsProfileRequestNode.md
+        - name: Column Value Distribution Profile Request
+          href: Varigence.Languages.Biml.Task.AstColumnValueDistributionProfileRequestNode.md
+        - name: Functional Dependency Profile Request
+          href: Varigence.Languages.Biml.Task.AstFunctionalDependencyProfileRequestNode.md
+        - name: Value Inclusion Profile Request
+          href: Varigence.Languages.Biml.Task.AstValueInclusionProfileRequestNode.md
+        - name: Variable
+          href: Varigence.Languages.Biml.Task.AstVariableNode.md
+        - name: Parameter
+          href: Varigence.Languages.Biml.Task.AstParameterNode.md
+        - name: Azure Sql Data Warehouse Upload Mapping
+          href: Varigence.Languages.Biml.Task.AstAzureSqlDataWarehouseUploadMappingNode.md
+        - name: Taskflow Precedence Constraints
+          href: Varigence.Languages.Biml.Task.AstTaskflowPrecedenceConstraintsNode.md
+        - name: Taskflow Input Path
+          href: Varigence.Languages.Biml.Task.AstTaskflowInputPathNode.md
+        - name: Merge Column
+          href: Varigence.Languages.Biml.Task.AstMergeColumnNode.md
+        - name: Log Event
+          href: Varigence.Languages.Biml.Task.AstLogEventNode.md
+        - name: Property Expression
+          href: Varigence.Languages.Biml.Task.AstPropertyExpressionNode.md
+        - name: Cube Processing Configuration
+          href: Varigence.Languages.Biml.Task.AstCubeProcessingConfigurationNode.md
+        - name: Database Processing Configuration
+          href: Varigence.Languages.Biml.Task.AstDatabaseProcessingConfigurationNode.md
+        - name: Measure Group Processing Configuration
+          href: Varigence.Languages.Biml.Task.AstMeasureGroupProcessingConfigurationNode.md
+        - name: Partition Processing Configuration
+          href: Varigence.Languages.Biml.Task.AstPartitionProcessingConfigurationNode.md
+        - name: Mining Model Processing Configuration
+          href: Varigence.Languages.Biml.Task.AstMiningModelProcessingConfigurationNode.md
+        - name: Dimension Processing Configuration
+          href: Varigence.Languages.Biml.Task.AstDimensionProcessingConfigurationNode.md
+        - name: Mining Structure Processing Configuration
+          href: Varigence.Languages.Biml.Task.AstMiningStructureProcessingConfigurationNode.md
+        - name: Transfer Database File
+          href: Varigence.Languages.Biml.Task.AstTransferDatabaseFileNode.md
+        - name: For Each Item Loop Row
+          href: Varigence.Languages.Biml.Task.AstForEachItemLoopRowNode.md
+        - name: For Each Item Loop Column
+          href: Varigence.Languages.Biml.Task.AstForEachItemLoopColumnNode.md
+        - name: For Each Ado Net Schema Loop Restriction Text
+          href: Varigence.Languages.Biml.Task.AstForEachAdoNetSchemaLoopRestrictionTextNode.md
+        - name: For Each Ado Net Schema Loop Restriction Variable
+          href: Varigence.Languages.Biml.Task.AstForEachAdoNetSchemaLoopRestrictionVariableNode.md
+        - name: Automatic Database Backup Destination
+          href: Varigence.Languages.Biml.Task.AstAutomaticDatabaseBackupDestinationNode.md
+        - name: Manual Database Backup Destination
+          href: Varigence.Languages.Biml.Task.AstManualDatabaseBackupDestinationNode.md
+        - name: Manual Database Backup Destination Object
+          href: Varigence.Languages.Biml.Task.AstManualDatabaseBackupDestinationObjectNode.md
+        - name: Direct Resource
+          href: Varigence.Languages.Biml.Task.AstDirectResourceNode.md
+        - name: File Resource
+          href: Varigence.Languages.Biml.Task.AstFileResourceNode.md
+        - name: Flat File Resource
+          href: Varigence.Languages.Biml.Task.AstFlatFileResourceNode.md
+        - name: Variable Resource
+          href: Varigence.Languages.Biml.Task.AstVariableResourceNode.md
+        - name: String Variable Resource
+          href: Varigence.Languages.Biml.Task.AstStringVariableResourceNode.md
+        - name: Persist File Resource
+          href: Varigence.Languages.Biml.Task.AstPersistFileResourceNode.md
+        - name: Table Resource
+          href: Varigence.Languages.Biml.Task.AstTableResourceNode.md
+        - name: Table From Variable Resource
+          href: Varigence.Languages.Biml.Task.AstTableFromVariableResourceNode.md
+        - name: File Name From Variable Resource
+          href: Varigence.Languages.Biml.Task.AstFileNameFromVariableResourceNode.md
+        - name: Unmanaged Table Resource
+          href: Varigence.Languages.Biml.Task.AstUnmanagedTableResourceNode.md
+        - name: Package Resource
+          href: Varigence.Languages.Biml.Task.AstPackageResourceNode.md
+        - name: Execute Package Sql Server Resource
+          href: Varigence.Languages.Biml.Task.AstExecutePackageSqlServerResourceNode.md
+        - name: External File Resource
+          href: Varigence.Languages.Biml.Task.AstExternalFileResourceNode.md
+        - name: Package Emit Target Resource
+          href: Varigence.Languages.Biml.Task.AstPackageEmitTargetResourceNode.md
+        - name: Variables Resource
+          href: Varigence.Languages.Biml.Task.AstVariablesResourceNode.md
+        - name: Table Column Resource
+          href: Varigence.Languages.Biml.Task.AstTableColumnResourceNode.md
+        - name: Unmanaged Table Column Resource
+          href: Varigence.Languages.Biml.Task.AstUnmanagedTableColumnResourceNode.md
+        - name: Environment Variable Resource
+          href: Varigence.Languages.Biml.Task.AstEnvironmentVariableResourceNode.md
+        - name: Indirect Sql Server Resource
+          href: Varigence.Languages.Biml.Task.AstIndirectSqlServerResourceNode.md
+        - name: Indirect File Resource
+          href: Varigence.Languages.Biml.Task.AstIndirectFileResourceNode.md
+        - name: Task Script Project Reference Resource
+          href: Varigence.Languages.Biml.Task.AstTaskScriptProjectReferenceResourceNode.md
+        - name: Task Script Project Resource
+          href: Varigence.Languages.Biml.Task.AstTaskScriptProjectResourceNode.md
+        - name: Component Script Project Reference Resource
+          href: Varigence.Languages.Biml.Task.AstComponentScriptProjectReferenceResourceNode.md
+        - name: Component Script Project Resource
+          href: Varigence.Languages.Biml.Task.AstComponentScriptProjectResourceNode.md
+        - name: Maintenance Cleanup Folder Task Resource
+          href: Varigence.Languages.Biml.Task.AstMaintenanceCleanupFolderTaskResourceNode.md
+        - name: External Project Package Resource
+          href: Varigence.Languages.Biml.Task.AstExternalProjectPackageResourceNode.md
+        - name: Component Resource
+          href: Varigence.Languages.Biml.Task.AstComponentResourceNode.md
+        - name: Azure HD Insight Job Inline Script Resource
+          href: Varigence.Languages.Biml.Task.AstAzureHDInsightJobInlineScriptResourceNode.md
+        - name: Hadoop Script Resource
+          href: Varigence.Languages.Biml.Task.AstHadoopScriptResourceNode.md
+        - name: Azure HD Insight Job Blob Script Resource
+          href: Varigence.Languages.Biml.Task.AstAzureHDInsightJobBlobScriptResourceNode.md
+        - name: Ssis Control Flow Part Resource
+          href: Varigence.Languages.Biml.Task.AstSsisControlFlowPartResourceNode.md
+        - name: Table Hint Parameter
+          href: Varigence.Languages.Biml.Task.AstTableHintParameterNode.md
+        - name: Variable Parameter Mapping
+          href: Varigence.Languages.Biml.Task.AstVariableParameterMappingNode.md
+        - name: Execute Sql Parameter Mapping Type
+          href: Varigence.Languages.Biml.Task.AstExecuteSqlParameterMappingTypeNode.md
+        - name: Web Service Parameter
+          href: Varigence.Languages.Biml.Task.AstWebServiceParameterNode.md
+        - name: Ssis Annotation
+          href: Varigence.Languages.Biml.Task.AstSsisAnnotationNode.md
+        - name: Hadoop Cluster Information
+          href: Varigence.Languages.Biml.Task.AstHadoopClusterInformationNode.md
+    - name: Varigence.Languages.Biml.Transformation
+      href: #
+      items:
+        - name: Dataflow Output Path
+          href: Varigence.Languages.Biml.Transformation.AstDataflowOutputPathNode.md
+        - name: Conditional Split Output Path
+          href: Varigence.Languages.Biml.Transformation.AstConditionalSplitOutputPathNode.md
+        - name: Aggregate Output
+          href: Varigence.Languages.Biml.Transformation.AstAggregateOutputPath.md
+        - name: Component Output Path
+          href: Varigence.Languages.Biml.Transformation.AstComponentOutputPathNode.md
+        - name: Derived Column
+          href: Varigence.Languages.Biml.Transformation.AstDerivedColumnNode.md
+        - name: Is Null Patcher Column
+          href: Varigence.Languages.Biml.Transformation.AstIsNullPatcherColumnNode.md
+        - name: Derived Column List
+          href: Varigence.Languages.Biml.Transformation.AstDerivedColumnListNode.md
+        - name: Is Null Patcher
+          href: Varigence.Languages.Biml.Transformation.AstIsNullPatcherNode.md
+        - name: OLEDB Command
+          href: Varigence.Languages.Biml.Transformation.AstOleDbCommandNode.md
+        - name: Term Lookup
+          href: Varigence.Languages.Biml.Transformation.AstTermLookupNode.md
+        - name: Conditional Split
+          href: Varigence.Languages.Biml.Transformation.AstConditionalSplitNode.md
+        - name: Multicast
+          href: Varigence.Languages.Biml.Transformation.AstMulticastNode.md
+        - name: Lookup
+          href: Varigence.Languages.Biml.Transformation.AstLookupNode.md
+        - name: Slowly Changing Dimension
+          href: Varigence.Languages.Biml.Transformation.AstSlowlyChangingDimensionNode.md
+        - name: Row Count
+          href: Varigence.Languages.Biml.Transformation.AstRowCountNode.md
+        - name: Term Extraction
+          href: Varigence.Languages.Biml.Transformation.AstTermExtractionNode.md
+        - name: Audit
+          href: Varigence.Languages.Biml.Transformation.AstAuditNode.md
+        - name: Fuzzy Lookup
+          href: Varigence.Languages.Biml.Transformation.AstFuzzyLookupNode.md
+        - name: Cache Transform
+          href: Varigence.Languages.Biml.Transformation.AstCacheTransformNode.md
+        - name: Copy Column
+          href: Varigence.Languages.Biml.Transformation.AstCopyColumnNode.md
+        - name: Data Mining Query
+          href: Varigence.Languages.Biml.Transformation.AstDataMiningQueryNode.md
+        - name: Unpivot
+          href: Varigence.Languages.Biml.Transformation.AstUnpivotNode.md
+        - name: Aggregate
+          href: Varigence.Languages.Biml.Transformation.AstAggregateNode.md
+        - name: Export Column
+          href: Varigence.Languages.Biml.Transformation.AstExportColumnNode.md
+        - name: Percentage Sampling
+          href: Varigence.Languages.Biml.Transformation.AstPercentageSamplingNode.md
+        - name: Row Sampling
+          href: Varigence.Languages.Biml.Transformation.AstRowSamplingNode.md
+        - name: Character Map
+          href: Varigence.Languages.Biml.Transformation.AstCharacterMapNode.md
+        - name: Fuzzy Grouping
+          href: Varigence.Languages.Biml.Transformation.AstFuzzyGroupingNode.md
+        - name: Sort
+          href: Varigence.Languages.Biml.Transformation.AstSortNode.md
+        - name: Pivot
+          href: Varigence.Languages.Biml.Transformation.AstPivotNode.md
+        - name: Import Column
+          href: Varigence.Languages.Biml.Transformation.AstImportColumnNode.md
+        - name: Data Conversion
+          href: Varigence.Languages.Biml.Transformation.AstDataConversionNode.md
+        - name: Script Component Transformation
+          href: Varigence.Languages.Biml.Transformation.AstScriptComponentTransformationNode.md
+        - name: Balanced Data Distributor
+          href: Varigence.Languages.Biml.Transformation.AstBalancedDataDistributorNode.md
+        - name: Cdc Splitter
+          href: Varigence.Languages.Biml.Transformation.AstCdcSplitterNode.md
+        - name: Dqs Cleansing
+          href: Varigence.Languages.Biml.Transformation.AstDqsCleansingNode.md
+        - name: XML Source
+          href: Varigence.Languages.Biml.Transformation.AstXmlSourceNode.md
+        - name: OLEDB Source
+          href: Varigence.Languages.Biml.Transformation.AstOleDbSourceNode.md
+        - name: Excel Source
+          href: Varigence.Languages.Biml.Transformation.AstExcelSourceNode.md
+        - name: Flat File Source
+          href: Varigence.Languages.Biml.Transformation.AstFlatFileSourceNode.md
+        - name: ADONET Source
+          href: Varigence.Languages.Biml.Transformation.AstAdoNetSourceNode.md
+        - name: Raw File Source
+          href: Varigence.Languages.Biml.Transformation.AstRawFileSourceNode.md
+        - name: Script Component Source
+          href: Varigence.Languages.Biml.Transformation.AstScriptComponentSourceNode.md
+        - name: Custom Component Source
+          href: Varigence.Languages.Biml.Transformation.AstCustomComponentSourceNode.md
+        - name: Azure Data Lake Store Source
+          href: Varigence.Languages.Biml.Transformation.AstAzureDataLakeStoreSourceNode.md
+        - name: Hdfs File Source
+          href: Varigence.Languages.Biml.Transformation.AstHdfsFileSourceNode.md
+        - name: O Data Source
+          href: Varigence.Languages.Biml.Transformation.AstODataSourceNode.md
+        - name: Azure Blob Source
+          href: Varigence.Languages.Biml.Transformation.AstAzureBlobSourceNode.md
+        - name: Flexible File Source
+          href: Varigence.Languages.Biml.Transformation.AstFlexibleFileSourceNode.md
+        - name: Odbc Source
+          href: Varigence.Languages.Biml.Transformation.AstOdbcSourceNode.md
+        - name: Oracle Source
+          href: Varigence.Languages.Biml.Transformation.AstOracleSourceNode.md
+        - name: Teradata Source
+          href: Varigence.Languages.Biml.Transformation.AstTeradataSourceNode.md
+        - name: Cdc Source
+          href: Varigence.Languages.Biml.Transformation.AstCdcSourceNode.md
+        - name: Theobald Xtract Sap Source
+          href: Varigence.Languages.Biml.Transformation.AstTheobaldXtractSapSourceNode.md
+        - name: Union All
+          href: Varigence.Languages.Biml.Transformation.AstUnionAllNode.md
+        - name: Merge Join
+          href: Varigence.Languages.Biml.Transformation.AstMergeJoinNode.md
+        - name: Merge
+          href: Varigence.Languages.Biml.Transformation.AstMergeNode.md
+        - name: Custom Component
+          href: Varigence.Languages.Biml.Transformation.AstCustomComponentNode.md
+        - name: Dataflow Property
+          href: Varigence.Languages.Biml.Transformation.AstDataflowPropertyNode.md
+        - name: Dataflow Output Column
+          href: Varigence.Languages.Biml.Transformation.AstDataflowOutputColumnNode.md
+        - name: Dataflow External Column
+          href: Varigence.Languages.Biml.Transformation.AstDataflowExternalColumnNode.md
+        - name: Cache Column
+          href: Varigence.Languages.Biml.Transformation.AstCacheColumnNode.md
+        - name: Audit Output Column
+          href: Varigence.Languages.Biml.Transformation.AstAuditOutputColumnNode.md
+        - name: Component Connection Reference
+          href: Varigence.Languages.Biml.Transformation.AstComponentConnectionReferenceNode.md
+        - name: Dataflow Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstDataflowColumnMappingNode.md
+        - name: Fuzzy Grouping Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstFuzzyGroupingColumnMappingNode.md
+        - name: Unpivot Column
+          href: Varigence.Languages.Biml.Transformation.AstUnpivotColumnNode.md
+        - name: Aggregate Column
+          href: Varigence.Languages.Biml.Transformation.AstAggregateColumnNode.md
+        - name: Sort Column
+          href: Varigence.Languages.Biml.Transformation.AstSortColumnNode.md
+        - name: Character Map Column
+          href: Varigence.Languages.Biml.Transformation.AstCharacterMapColumnNode.md
+        - name: Data Conversion Column
+          href: Varigence.Languages.Biml.Transformation.AstDataConversionColumnNode.md
+        - name: Import Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstImportColumnMappingNode.md
+        - name: Pivot Input Column
+          href: Varigence.Languages.Biml.Transformation.AstPivotInputColumnNode.md
+        - name: Ole Db Command Parameter
+          href: Varigence.Languages.Biml.Transformation.AstOleDbCommandParameterNode.md
+        - name: Pivot Output Column
+          href: Varigence.Languages.Biml.Transformation.AstPivotOutputColumnNode.md
+        - name: Fuzzy Lookup Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstFuzzyLookupColumnMappingNode.md
+        - name: Term Lookup Column
+          href: Varigence.Languages.Biml.Transformation.AstTermLookupColumnNode.md
+        - name: Scd Type Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstScdTypeColumnMappingNode.md
+        - name: Lookup Output Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstLookupOutputColumnMappingNode.md
+        - name: Data Streaming Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstDataStreamingColumnMappingNode.md
+        - name: Theobald Xtract Source Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstTheobaldXtractSourceColumnMappingNode.md
+        - name: Dataflow Input Path
+          href: Varigence.Languages.Biml.Transformation.AstDataflowInputPathNode.md
+        - name: Dataflow Mapped Input Path
+          href: Varigence.Languages.Biml.Transformation.AstDataflowMappedInputPathNode.md
+        - name: Component Input Path
+          href: Varigence.Languages.Biml.Transformation.AstComponentInputPathNode.md
+        - name: Export Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstExportColumnMappingNode.md
+        - name: Merge Join Key
+          href: Varigence.Languages.Biml.Transformation.AstMergeJoinKeyNode.md
+        - name: Dataflow Cloud Component File Format
+          href: Varigence.Languages.Biml.Transformation.AstDataflowCloudComponentFileFormatNode.md
+        - name: Component Error Handling
+          href: Varigence.Languages.Biml.Transformation.AstComponentErrorHandlingNode.md
+        - name: Output Error Handling
+          href: Varigence.Languages.Biml.Transformation.AstOutputErrorHandlingNode.md
+        - name: Column Error Handling
+          href: Varigence.Languages.Biml.Transformation.AstColumnErrorHandlingNode.md
+        - name: Input Error Handling
+          href: Varigence.Languages.Biml.Transformation.AstInputErrorHandlingNode.md
+        - name: Ole Db Source Parameter Mapping Type
+          href: Varigence.Languages.Biml.Transformation.AstOleDbSourceParameterMappingTypeNode.md
+        - name: Component Input Column
+          href: Varigence.Languages.Biml.Transformation.AstComponentInputColumnNode.md
+        - name: Dataflow Component Override
+          href: Varigence.Languages.Biml.Transformation.AstDataflowComponentOverrideNode.md
+        - name: Dataflow Output Path Override
+          href: Varigence.Languages.Biml.Transformation.AstDataflowOutputPathOverrideNode.md
+        - name: Dataflow Input Path Override
+          href: Varigence.Languages.Biml.Transformation.AstDataflowInputPathOverrideNode.md
+        - name: Dataflow Column Override
+          href: Varigence.Languages.Biml.Transformation.AstDataflowColumnOverrideNode.md
+        - name: Dataflow Override Property
+          href: Varigence.Languages.Biml.Transformation.AstDataflowOverridePropertyNode.md
+        - name: Dqs Cleansing Column Mapping
+          href: Varigence.Languages.Biml.Transformation.AstDqsCleansingColumnMappingNode.md
+    - name: Varigence.Languages.Biml.Transformation.Destination
+      href: #
+      items:
+        - name: ADONET Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstAdoNetDestinationNode.md
+        - name: Data Reader Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstDataReaderDestinationNode.md
+        - name: Azure Data Lake Store Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstAzureDataLakeStoreDestinationNode.md
+        - name: Hdfs File Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstHdfsFileDestinationNode.md
+        - name: Data Streaming Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstDataStreamingDestinationNode.md
+        - name: Azure Blob Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstAzureBlobDestinationNode.md
+        - name: Flexible File Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstFlexibleFileDestinationNode.md
+        - name: Flat File Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstFlatFileDestinationNode.md
+        - name: Odbc Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstOdbcDestinationNode.md
+        - name: OLEDB Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstOleDbDestinationNode.md
+        - name: Excel Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstExcelDestinationNode.md
+        - name: Oracle Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstOracleDestinationNode.md
+        - name: Recordset Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstRecordSetDestinationNode.md
+        - name: Raw File Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstRawFileDestinationNode.md
+        - name: Script Component Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstScriptComponentDestinationNode.md
+        - name: Sql Server Pdw Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstSqlServerPdwDestinationNode.md
+        - name: Teradata Destination
+          href: Varigence.Languages.Biml.Transformation.Destination.AstTeradataDestinationNode.md
