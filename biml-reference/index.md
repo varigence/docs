@@ -16,6 +16,7 @@ Biml API Reference provides information that is relevant to users when they're i
 
 ## Biml Release Notes
 
+The release notes for the various Biml products are all available here! Find out what new features, bug fixes, and other changes have made it into the latest release.
 [Biml Release Notes](xref:biml-release-notes)
 
 ## Biml Forum
