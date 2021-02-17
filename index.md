@@ -22,7 +22,7 @@ In addition to the support here, we have developed a community at [Bimlscript.co
 <div class="row">
 <div class="col-md-3">
 
-<a href="bimlflex/index.md"><img src="content/images/bimlflex.png" alt="BimlFlex -h24px"></a>
+<a href="bimlflex/index.md"><img src="content/images/bimlflex.svg" alt="BimlFlex -h24px"></a>
 
 * [Getting Started with BimlFlex](bimlflex/getting-started/index.md)
 * [BimlFlex Documentation](bimlflex/index.md)
