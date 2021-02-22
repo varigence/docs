@@ -9,8 +9,7 @@
     href: comparison/toc.yml
 
   - name: Biml Reference
-    href: ../biml-reference/toc.yml
-    topicHref: ../biml-reference/index.md
+    href: ../biml-reference/index.md
 
   - name: Release Notes
     href: release-notes/toc.yml
