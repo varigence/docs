@@ -202,9 +202,9 @@ The scenarios where configuration will need to be configured outside of the Biml
 
 -->
 
-#### On-Premise Data Source
+#### On-Premises Data Source
 
-An on-premise data source will require the installation and configuration of an Self-Hosted Integration Runtime in order for the Azure Data Factory to have access to the data.
+An on-premises data source will require the installation and configuration of an Self-Hosted Integration Runtime in order for the Azure Data Factory to have access to the data.
 The following guides are provided for additional reference material and configuration details.
 
 > [!TIP]
@@ -220,6 +220,7 @@ The following guides are provided for additional reference material and configur
 -->
 
 Once an Self-Hosted Integration Runtime is configured, it will need to be added to BimlFlex.
+
 This can be done by populating the BimlFlex `AzureIntegrationRuntime` **Setting**.
 
 ![AzureIntegrationRuntime Setting Example](images/bimflex-setting-azureintegrationruntime.png "AzureIntegrationRuntime Setting Example")
@@ -288,14 +289,19 @@ The following is the minimum needed Access Policy for a User Principal needs in 
 #### Existing Azure Key Vault
 
 BimlFlex currently only support permission assignment and Secret creation when auto generating an Azure Key Vault.
-When using an existing Azure Key Vault, all Secrets inputted into BimlFlex will have to me manually created and populated.
+
+When using an existing Azure Key Vault, all Secrets inputted into BimlFlex will have to be manually created and populated.
+
 The generated Azure Data Factory will required the following permissions granted in order to access the required Secrets.
+
 A User Principal will also need the minimum Access Policy to update required Secrets.
 
-| Access Policy | Object         | Key Permissions | Secret Permissions | Certificate Permissions |
-| ------------- | -------------- | --------------- | ------------------ | ----------------------- |
-| Application   | Data Factory   |                 | Get, List          |                         |
-| User          | User Principal |                 | List, Set          |                         |
+When using Azure Synapse Analytics Workspace and its integrated pipelines, assign access rights to the Synapse Workspace Application.
+
+| Access Policy | Object                                       | Key Permissions | Secret Permissions | Certificate Permissions |
+| ------------- | -------------------------------------------- | --------------- | ------------------ | ----------------------- |
+| Application   | Data Factory / <br/> Azure Synapse Workspace |                 | Get, List          |                         |
+| User          | User Principal                               |                 | List, Set          |                         |
 
 > [!TIP]
 > For additional details on managing Azure Key Vaults refer to the below guides:  
@@ -462,13 +468,15 @@ Alternatively the generated SSDT project can be used to create a deployment scri
 A part of the Build process, BimlStudio will generate a SnowDT folder for your **Target Warehouse Platform**.
 
 By default this is created and placed in the `...\<Output Folder>\SnowDT\` folder.
+
 Each object will have a script containing the DDL for individual object creation.
+
 The directory structure is outlined below.
 
 * **File Location and Structure:**
 * `{Output Folder}`\\SnowDT\\
-  * `{Version Name}`\\ **<== Identical to below, for each built version**
-  * Current\\ **<== Last Version build**
+  * `{Version Name}`\\ **<== Incremental, for each built version**
+  * Current\\ **<== Only Current Version build**
     * `{Database Name}`\\
       * `{Schema Name}`\\
         * Stored Procedures\\`{schema}`.`{object}`.sql **<== Stored Procedures Scripts**
@@ -476,7 +484,7 @@ The directory structure is outlined below.
       * Script.PostDeployment1.sql **<== Default Inserts**
 
 > [!TIP]
-> The name of the SnowDT folder can be configured with the **Setting** in the `Snowflake` group name *OUTPUT PATH*.
+> The location and name of the SnowDT folder can be configured with the **Setting** in the `Snowflake` group name *OUTPUT PATH*.
 
 #### [DDL (Manual)](#tab/database-ddl-manual)
 
@@ -502,7 +510,8 @@ The below table has been provided as a quick reminder as to when a script should
 > * BimlFlex Docs: [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)  
 
 Once BimlFlex generates the scripts they can be executed against the target database.
-These can be deployed through copy/paste using a SQL Server Management Studio or by another script execution clients if so desired.
+
+These can be deployed through copy/paste using a SQL Server Management Studio, or by another script execution client, if so desired.
 
 Any SQL client capable of executing DDL, such as Visual Studio Code or Azure Data Studio could also be used if preferred.
 
@@ -519,6 +528,7 @@ Any SQL client capable of executing DDL, such as Visual Studio Code or Azure Dat
 ## Deploying Orchestration
 
 BimlFlex automatically generates the orchestration artifacts as part of the standard build process.
+
 When using ADF this correlates to the generation of the required ARM Template and parameter files for the Azure Artifacts used in the orchestration process.
 
 When requiring a Azure Function Bridge, such as with a Snowflake Deployment, these artifacts will automatically be generated and included.
@@ -542,12 +552,14 @@ As part of the the build process, BimlFlex will output artifacts and name them u
 > *Data Factory Name*: Uses the `AzureDataFactoryName` **Setting**, or `BimlFlex` if the *Setting* is blank.
 
 A PowerShell script named `adf-deploy.<Data Factory Name>.ps1` will be output to the `<Output Folder>\Deploy\` folder to assist with deployment.
+
 BimlFlex will automatically input the [Azure Environment Settings](#adf-settings) if populated or these can be entered manually prior to script execution.
+
 All variables and artifacts should be reviewed prior to the execution of the script as executing the script will generate billable Azure artifacts.
 
 > [!IMPORTANT]
 > **Ensure the script and JSON artifacts are reviewed prior to deployment.**
-> The PowerShell script will create the Azure resources specified within the JSON files.
+> The PowerShell script will create the Azure resources specified within the JSON files.  
 > In addition, the script will overwrite an existing object in Azure with the one currently defined JSON values if it already exists.
 
 * **File Location and Structure:**
