@@ -8,7 +8,7 @@
 
 The BimlFlex Getting Started guide provides:
 
-* initial configuration
+* Initial configuration
 * Step by step walkthrough of using BimlFlex to build a sample Data Warehouse
 
 <!--
