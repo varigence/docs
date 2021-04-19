@@ -38,9 +38,9 @@ More overview information on building to PDF is [available in the tutorial](http
 
 ## Documentation Contents
 
-Main product content pages:
+The main product content pages are:
 
-* [Biml](biml/index.md)
-* [BimlExpress](bimlexpress/index.md)
 * [BimlFlex](bimlflex/index.md)
 * [BimlStudio](bimlstudio/index.md)
+* [BimlExpress](bimlexpress/index.md)
+* [Biml](biml/index.md)    
