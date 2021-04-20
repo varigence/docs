@@ -23,14 +23,23 @@
   - name: Metadata Databases
     href: metadata-databases/toc.yml
 
-  - name: ADF Deployment
-    href: adf-deployment/toc.yml
+  - name: Technology - Azure Data Factory
+    href: technology-adf/toc.yml
+
+  - name: Technology - Snowflake
+    href: technology-adf/toc.yml
+
+  - name: Technology - Sql Server Data Tools
+    href: technology-ssdt/toc.yml
 
   - name: SSIS Deployment
     href: ssis-deployment/toc.yml
 
   - name: Concepts
     href: concepts/toc.yml
+
+  - name: Data Solution Templates
+    href: data-solution-templates/toc.yml
 
   - name: Data Vault and BimlFlex
     href: data-vault-bimlflex/toc.yml
@@ -44,28 +53,8 @@
   - name: Reference Docs
     href: reference-documentation/toc.yml
 
-#  - name: Tips And Tricks
-#    href: tips-and-tricks/toc.yml
+  - name: Tips And Tricks
+    href: tips-and-tricks/toc.yml
 
   - name: Release Notes
     href: release-notes/toc.yml
-#    topicHref: release-notes/release-notes.md
-- name: BimlStudio Documentation
-  href: ../bimlstudio/index.md
-  topicHref: ../bimlstudio/index.md
-  items:
-  - name: AdventureWorksLT Walkthrough
-    href: ../bimlstudio/adventureworks-lt-walkthrough/toc.yml
-
-  - name: Visual Editors
-    href: ../bimlstudio/visual-editors/toc.yml
-
-  - name: Miscellaneous
-    href: ../bimlstudio/miscellaneous/toc.yml
-
-  - name: Biml Reference
-    href: ../biml-reference/toc.yml
-
-  - name: Release Notes
-    href: release-notes/toc.yml
-    topicHref: ../bimlstudio/release-notes/index.md
