@@ -1,7 +1,5 @@
 - name: Overview
   href: index.md
-#- name: Microsoft Best Practices
-#  href: microsoft-best-practice-data-vault.md
 - name: Importing Metadata
   href: importing-metadata.md
 - name: Source to Staging Templates

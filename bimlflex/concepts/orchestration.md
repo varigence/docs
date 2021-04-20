@@ -160,9 +160,9 @@ When the package is restarted the **OnPreExecute** event in the starting sequenc
 
 Batch level failures manages Orchestration and rollback for entire load across all packages in the batch.
 
-Batch package failures trigger the OnError event handler that run the execute SQL task "**SQL - Log Execution Error**". This time the parameter `@IsBatch` will be true. Within `[ssis].[LogExecutionError]` there will be a conditional check made on `@IsBatch`, where if it is true we will update the execution table to make the NextLoadStatus to be `R` for all packages of the same ExecutionID, prompting all packages in that batch to rollback on their next execution. 
+Batch package failures trigger the OnError event handler that run the execute SQL task "**SQL - Log Execution Error**". This time the parameter `@IsBatch` will be true. Within `[ssis].[LogExecutionError]` there will be a conditional check made on `@IsBatch`, where if it is true we will update the execution table to make the NextLoadStatus to be `R` for all packages of the same ExecutionID, prompting all packages in that batch to rollback on their next execution.
 
-Any configuration values associated with the failed ExecutionID are reverted to their previous values. 
+Any configuration values associated with the failed ExecutionID are reverted to their previous values.
 
 Regular statements for updating the ExecutionStatus and NextLoadStatus in `[ssis].[Execution]` to `F` and `R` respectively and adding a row to the `[ssis].[ExecutionError]` table.
 

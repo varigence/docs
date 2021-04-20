@@ -1,6 +1,6 @@
 ---
-uid: bimlflex-hashing-overview
-title: Hashing in BimlFlex
+uid: hashing-in-data-vault
+title: Hashing in BimlFlex for Data Vault
 summary: Documentation regarding hashing in Data Vault for hash-based keys and row checksums for changes to attributes
 varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual

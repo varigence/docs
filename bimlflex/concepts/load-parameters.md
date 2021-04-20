@@ -190,7 +190,6 @@ Configuration of the base **Parameter** itself remains the same across Source Sy
 >
 > * `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.
 > * `**`: See [Parameter SQL](#parameter-sql) for more examples
-
 > [!IMPORTANT]
 > `Execute SQL On Source`, along with `Parameter To Name` and `Parameter To Operator`, are required fields when configuring a **Parameter** for ADF.
 

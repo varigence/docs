@@ -32,6 +32,9 @@
   - name: Concepts
     href: concepts/toc.yml
 
+  - name: Data Vault and BimlFlex
+    href: data-vault-bimlflex/toc.yml
+
   - name: Scenarios
     href: scenarios/toc.yml
 
