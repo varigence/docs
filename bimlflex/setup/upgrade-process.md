@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-upgrade-and-testing
+uid: bimlflex-setup-upgrade-and-testing
 title: Upgrade and Testing Process
 varigenceProduct: BimlFlex
 varigenceArticleType:enceArticleType: Walkthrough

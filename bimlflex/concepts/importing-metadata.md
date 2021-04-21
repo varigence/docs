@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-importing-metadata
+uid: bimlflex-concepts-importing-metadata
 title: BimlFlex Importing Metadata
 summary: Documentation on importing metadata into BimlFlex with import options and default properties
 varigenceProduct: BimlFlex

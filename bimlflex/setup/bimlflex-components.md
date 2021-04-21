@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-components
+uid: bimlflex-setup-components
 title: Components of BimlFlex
 summary: Overview what components are part of the BimlFlex application
 ---

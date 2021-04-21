@@ -2,21 +2,16 @@
 uid: data-vault-bimlflex-index
 title: Data Vault and BimlFlex
 summary: Overview of Data Vault concepts as implemented in BimlFlex
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
-# BimlFlex Concepts Overview
+# Designing and delivering a Data Vault using BimlFlex
 
-This section covers various concepts that are important to understand when working with BimlFlex.
+Data Vault provides an easy-to-explain and flexible way to tackle complex issues for bringing data together, and BimlFlex is optimised to deliver data solutions that have adopted this approach.
 
-## Importing Metadata
+## Data Vault essentials
 
-* [BimlFlex Importing Metadata](xref:bimlflex-importing-metadata)
-
-## Templates
-
-* [BimlFlex Source to Staging Templates](xref:bimlflex-source-to-staging-templates)
-* [BimlFlex Data Vault Best Practices](xref:bimlflex-data-best-practices)
-* [BimlFlex Data Vault Templates](xref:bimlflex-data-vault-templates)
-* [BimlFlex Data Mart Templates](xref:bimlflex-data-mart-templates)
+* [A brief introduction on Data Vault](xref:data-vault-introduction)
 
 ## Integration Keys
 

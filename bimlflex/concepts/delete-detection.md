@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-delete-detection
+uid: bimlflex-concepts-delete-detection
 title: BimlFlex Delete Detection
 summary: Documentation on BimlFlex delete detection mechanism for detection of hard deleted keys from a source system
 varigenceProduct: BimlFlex

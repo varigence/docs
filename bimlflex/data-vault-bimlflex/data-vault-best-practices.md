@@ -45,7 +45,7 @@ However, the BimlFlex Accelerator simplifies the process by applying standard Da
 #### Hash Algorithm
 
 * Support all major hash algorithms with `SHA1` as the default.
-Implement other available options by changing the *HASH ALGORITHM* setting to one of the following values 
+Implement other available options by changing the *HASH ALGORITHM* setting to one of the following values
   * `MD5`
   * `SHA1`
   * `SHA2_256`
@@ -202,12 +202,12 @@ Choose a tab below to view relevant setting descriptions or examples for Hubs.
     Link names can get quite long so the **Object** *MODEL OVERRIDE SHORT NAME* can be used to shorten the left-hand portion of the name.
     If we change this to `GL` the name will now be `L_GL_ChartOfAccounts` and can be even further shortened by changing the *MODEL REFERENCE* of relationship column.
     If we also change this to `COA` the will now be `L_GL_COA`.
-  * The pattern for the name is as follows: 
+  * The pattern for the name is as follows:
     * *APPEND LINK* + `{Derived Object Name}` + *MODEL REFERENCE* **or** `{Derived Object Name}` + *MODEL REFERENCE* + *APPEND LINK*
       * `{Derived Object Name}` = (In order) *MODEL OVERRIDE SHORT NAME* **or** *MODEL OVERRIDE NAME* **or** *OBJECT NAME*
 * **2. Model Object Type** `Link` **-** `Hierarchy Link` **-** `Same As Link`
   * The Link name will be derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND LINK*](xref:bimlflex-metadata-settings#naming-data-vault-naming) **Setting**.
-  * The pattern for the name is as follows: 
+  * The pattern for the name is as follows:
     * *APPEND LINK* + `{Derived Object Name}` **or** `{Derived Object Name}` + *APPEND LINK*
       * `{Derived Object Name}` = (In order) *MODEL OVERRIDE SHORT NAME* **or** *MODEL OVERRIDE NAME* **or** *OBJECT NAME*
 

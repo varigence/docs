@@ -1,11 +1,11 @@
 ---
-uid: bimlflex-software-and-hardware-requirements
+uid: bimlflex-setup-software-and-hardware-requirements
 title: BimlFlex Software and Hardware requirements
 summary: Documentation on software and hardware requirements for installing BimlStudio, BimlFlex, BimlFlex Excel Add-In, and related databases
 varigenceProduct: BimlFlex
 varigenceArticleType:enceArticleType: Walkthrough
 ---
-# Software and Hardware requirements
+# Software and Hardware Requirements
 
 ## BimlStudio
 
