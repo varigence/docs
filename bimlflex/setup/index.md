@@ -17,6 +17,7 @@ Everything you need in order to install and work with BimlFlex.
 
 How to install the BimlFlex software, as well as supporting technology you may need.
 
+* [An overview of the BimlFlex platform components](xref:bimlflex-setup-components)
 * [Installing the BimlFlex application](xref:bimlflex-setup-installing-bimlflex)
 * [Installing the metadata database](xref:bimlflex-setup-metadata-database-installation)
 * [Installing an SSIS server](xref:bimlflex-setup-ssis-server-install)

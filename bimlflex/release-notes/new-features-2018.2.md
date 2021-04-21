@@ -1,3 +1,8 @@
+---
+uid: bimlflex-release-notes-2018-2
+name: BimlFlex Release Notes 2018.2
+summary: release notes for current version of BimlFlex
+---
 # New Features in BimlFlex 2018.2
 
 ## Snowflake-based staging and persisting

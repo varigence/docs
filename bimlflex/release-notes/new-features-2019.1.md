@@ -1,3 +1,8 @@
+---
+uid: bimlflex-release-notes-2019-1
+name: BimlFlex Release Notes 2019.1
+summary: release notes for current version of BimlFlex
+---
 # New Features in BimlFlex 2019.1
 
 * New BimlFlex App. Use the app to manage all metadata. More information on the new app can be found here: [Metadata Editors Overview](xref:metadata-editors-overview)

@@ -1,3 +1,8 @@
+---
+uid: bimlflex-release-notes-2018-1
+name: BimlFlex Release Notes 2018.1
+summary: release notes for current version of BimlFlex
+---
 # New Features in BimlFlex 2018.1
 
 ## Azure Blob Storage-based staging and persisting
