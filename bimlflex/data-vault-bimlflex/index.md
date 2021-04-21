@@ -1,5 +1,5 @@
 ---
-uid: data-vault-bimlflex-index
+uid: bimlflex-data-vault-index
 title: Data Vault and BimlFlex
 summary: Overview of Data Vault concepts as implemented in BimlFlex
 varigenceProduct: BimlFlex
@@ -11,14 +11,22 @@ Data Vault provides an easy-to-explain and flexible way to tackle complex issues
 
 ## Data Vault essentials
 
-* [A brief introduction on Data Vault](xref:data-vault-introduction)
+* [A brief introduction on Data Vault](xref:bimlflex-data-vault-introduction)
+* [Data Vault Hubs](xref:bimlflex-data-vault-concept-hub)
+* [Data Vault Links](xref:bimlflex-data-vault-concept-link)
+* [Data Vault Satellites](xref:bimlflex-data-vault-concept-satellite)
 
-## Integration Keys
+## Data Vault and BimlFlex
 
-* [BimlFlex Integration Keys and Relationships](xref:bimlflex-integration-keys-and-relationships)
+BimlFlex provides various ways to implement data solutions that utilise concepts from Data Vault methodology:
 
-## Hashing
+* [Using hashing for Data Vault](xref:bimlflex-data-vault-hashing)
+* [BimlFlex Integration Keys and Relationships](xref:bimlflex-data-vault-integration-keys-and-relationships)
+* [Implementing Data Vault Hubs in BimlFlex](xref:bimlflex-data-vault-implementation-hub)
+* [Implementing Data Vault Satellites in BimlFlex](xref:bimlflex-data-vault-implementation-satellite)
+* [Implementing Data Vault Links in BimlFlex](xref:bimlflex-data-vault-implementation-link)
+* [Driving Keys in BimlFlex](xref:bimlflex-data-vault-driving-keys)
 
-Hashing is the term used for one-way encryption which can be implemented by applying a selected encryption algorithm.
+## Recommendations for implementing Data Vault on Microsoft Azure Synapse Analytics
 
-* [Using hashing in BimlFlex](xref:hashing-in-data-vault)
+* [Implementing Data Vault on Synapse](xref:bimlflex-data-vault-best-practices-for-deploying-data-vault-on-azure-synapse)

@@ -1,5 +1,5 @@
 ---
-uid: driving-keys-in-data-vault
+uid: bimlflex-data-vault-driving-keys
 name: Driving Keys in Data Vault 
 summary: Documentation on assignment, importance of, and tracking Driving Keys in a Linked Satellite in Data Vault with examples
 varigenceProduct: BimlFlex
@@ -8,10 +8,41 @@ varigenceArticleType: Conceptual
 
 # Driving Keys in Data Vault
 
-A **Driving Key** is a **Unique Key** on a Link that is used to determine the effectivity of a relationship or series of relationships.
-This is commonly used when a relationship is tracked by a Business Concept itself, not by individual expiry records on the Link Satellite.
-Driving Keys are used to enforce a many-to-one relationship on the otherwise many-to-many construct of a Link.
-A Driving Key is used track when a relationship changes, and which side of the relationship *determines* the change.
+A **Driving Key** is a **Unique Key** (or a combination thereof) on a Link that is used to determine the effectivity of a relationship or series of relationships. The Driving Key tracks when a relationship changes, and defines which side of the relationship *determines* (drives) the change.
+
+This is commonly used when a relationship is tracked by a Business Concept itself, and not through context (e.g. expiry information) provided by source systems. This may be the case when this data is simply not available in, or provided by, the source systems.
+
+In these scenarios, implementing the Driving Key concept can help to close (end-date) relationships which otherwise would remain active.
+
+Driving Keys allow to interpret a relationship as many-to-one relationship, on the otherwise many-to-many Link structure.
+
+This section provides an overview of how Driving Keys are managed in BimlFlex.
+
+## Driving Keys in BimlFLex
+
+By design, Data Vault Links represent many-to-many relationships. However, if a relationship changes it may be required to interpret the creation of a new relationship as a closure of the previous one.
+
+An example is the relationship in AdventureWorksLT between a *Product* and its *Product Category*. By definition, the source system only allows a product to be part of a *single* Category at a given point in time. If the product is moved from one category to another, it will cease to be part of the previous category. 
+
+However, this information is not otherwise captured in the source system. There is no separate table that records the ending of the relationship between Product and Product Category, so this can only be inferred from the data event that a new relationship was created for an existing key.
+
+Since Links can maintain any number of relationship, e.g. a Product can exist in any number of Categories in the Link, this behavior needs to be enforced by rules. These rules can be implemented using the Driving Key concept in Data Vault. The Driving Key in the relationship is the consistent part of the key - the primary driver for the relationship.
+
+For the Product to Category example, the Product can be configured as the Driving Key.
+
+Defining Driving Keys for Link Relationships is done in the BimlFlex Metadata Attributes. These keys define which parts of the Link drive the changing of existing relationships.
+
+BimlFlex manages the information about the effectiveness of the relationship in the corresponding Link Satellite. For the Product to Product Category Link this is maintained by the `LSAT_Product_ProductCategory_AWLT` Link Satellite table.
+
+The Accelerator and the BimlFlex framework will automatically apply Driving Key type relationships for any Links derived out of a Hub, as they are based on Foreign Keys in the source and by definition imply a Driving Key scenario. This will be automatically included in the load logic, no separate attribute will be added in the Attributes metadata.
+
+If a Driving Key behavior needs to be manually defined, such as from a Link type source table, a corresponding Driving Key attribute is added to the Attributes metadata. This is defined using the Link table SK column that represents the Driving Key column
+
+![Driving Key Metadata](images/bimlflex-ss-v5-app-driving-key-metadata-attributes.png "Driving Key Metadata")
+
+The Data Vault build logic will include the required processing in the Link Satellite to maintain data consistency throughout load by adding and closing relationships, emulating the behavior of the single Foreign Key relationship from the source.
+
+The Driving Key logic only operates on the Effective To date of the Link Satellite, so for BimlFlex to maintain the Driving Key relationship information the Link need to have Link Satellites enabled, and that Link Satellite need to implement end dating. Both of these are controlled through Configurations and Settings. The settings for creation of Link Satellites (`DvAccelerateLinkSatellite`) and End Dating in the Data Vault (`DvEndDateSatellite`) that can be enabled selectively for only the objects that require it, or globally for all entities.
 
 ## Driving Key Observability
 

@@ -1,5 +1,5 @@
 ---
-uid: data-vault-introduction
+uid: bimlflex-data-vault-introduction
 title: A brief introduction on Data Vault
 summary: Positioning of Data Vault methodology in the data world
 varigenceProduct: BimlFlex

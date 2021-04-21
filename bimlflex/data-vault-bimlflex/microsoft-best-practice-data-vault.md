@@ -1,5 +1,5 @@
 ---
-uid: best-practices-for-deploying-data-vault-on-azure-synapse
+uid: bimlflex-data-vault-best-practices-for-deploying-data-vault-on-azure-synapse
 title: Best Practices for Deploying Data Vault on Azure Synapse
 summary: Documentation on Microsoft Azure Best Practices for Azure Synapse, with attention on interface contracts, forward only migration, version control, and distribution
 varigenceProduct: BimlFlex

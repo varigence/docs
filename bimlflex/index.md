@@ -24,7 +24,7 @@ Get started designing and delivering BimlFlex data solutions.
 
 Delivering a data solution touches on many concepts and specific technology implementations.
 
-* [Designing and implementing a Data Vault model using BimlFlex](xref:data-vault-bimlflex-index)
+* [Designing and implementing a Data Vault model using BimlFlex](xref:bimlflex-data-vault-index)
 * [Delivering a data solution on Snowflake](xref:bimlflex-snowflake-index)
 
 ## [Tips and Tricks](tips-and-tricks/index.md)
