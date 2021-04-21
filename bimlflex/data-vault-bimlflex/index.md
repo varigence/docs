@@ -1,5 +1,5 @@
 ---
-uid: data-vault-bimlflex
+uid: data-vault-bimlflex-index
 title: Data Vault and BimlFlex
 summary: Overview of Data Vault concepts as implemented in BimlFlex
 ---

@@ -17,13 +17,13 @@ This guide contains:
 
 The introductory videos provide a quick and easy overview of BimlFlex in video format. Various scenarios are explained in these videos, such as how to generate a raw Data Vault based on the structure of the underlying operational system using the BimlFlex accelerator or design a new data solution from the ground up.
 
-More information: [BimlFlex Intro Videos](xref:bimlflex-getting-started-intro-videos)
+* [BimlFlex Intro Videos](xref:bimlflex-getting-started-intro-videos)
 
 ## First Project Walkthrough
 
 Get straight into building a project in BimlFlex!
 
-More information: [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough)
+* [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough)
 
 ## Sample Metadata
 
@@ -31,4 +31,4 @@ Use the included sample metadata to quickly configure a starting point for one o
 
 BimlFlex supports platforms such as SQL Server, Azure Synapse and Snowflake as well as the SQL Server Integration Services (SSIS) and Azure Data Factory (ADF) integration engines - and of course SQL.
 
-More information: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
+* [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
