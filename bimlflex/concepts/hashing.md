@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-concepts-hashing-overview
+uid: bimlflex-concepts-hashing
 title: Hashing in BimlFlex
 summary: Overview of hashing concepts as available in BimlFlex
 varigenceProduct: BimlFlex

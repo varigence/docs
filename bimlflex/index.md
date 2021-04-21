@@ -20,7 +20,7 @@ Get started designing and delivering BimlFlex data solutions.
 * [Step-by-step walkthrough of using BimlFlex to build a sample Data Warehouse](xref:bimlflex-getting-started-first-project-walkthrough)
 * [Introduction videos](xref:bimlflex-getting-started-intro-videos)
 
-## Methodologies & Technology (concepts/index.md)
+## [Methodologies & Technology](concepts/index.md)
 
 Delivering a data solution touches on many concepts and specific technology implementations.
 

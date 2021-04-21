@@ -15,19 +15,22 @@ Everything you need in order to install and work with BimlFlex.
 
 ## Installing BimlFlex
 
-How to install the BimlFlex software as well as supporting technology you may need.
+How to install the BimlFlex software, as well as supporting technology you may need.
 
-* [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
-* [Metadata Database Installation](xref:metadata-database-install.md)
-* [SSIS Server Installation](xref:bimlflex-ssis-server-install)
-<!-- TODO * [BimlFlex Build Server Install](xref:bimlflex-build-server-install)-->
+* [Installing the BimlFlex application](xref:bimlflex-setup-installing-bimlflex)
+* [Installing the metadata database](xref:bimlflex-setup-metadata-database-installation)
+* [Installing an SSIS server](xref:bimlflex-setup-ssis-server-install)
+* [Installing a BimlFlex build server](xref:bimlflex-setup-build-server-install)
+* [Installing the BimlFlex developer tools](xref:bimlflex-setup-developer-installation)
 
 ## Upgrading BimlFlex
 
 Information on upgrading BimlFlex versions, and making sure everything still works after the upgrade.
 
-* [Upgrade and Testing Process](xref:bimlflex-upgrade-and-testing)
+* [Upgrade and Testing Process](xref:bimlflex-setup-upgrade-and-testing)
 
 ## Setting up a BimlStudio project
+
+A BimlStudio project is used to build and generate the metadata configured in BimlFlex, either directly or as part of a DevOps pipeline.
 
 * [BimlStudio project setup](xref:bimlflex-setup-bimlstudio-project)

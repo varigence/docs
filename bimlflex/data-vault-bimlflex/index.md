@@ -5,7 +5,7 @@ summary: Overview of Data Vault concepts as implemented in BimlFlex
 varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
-# Designing and delivering a Data Vault using BimlFlex
+# Designing and delivering a Data Vault with BimlFlex
 
 Data Vault provides an easy-to-explain and flexible way to tackle complex issues for bringing data together, and BimlFlex is optimised to deliver data solutions that have adopted this approach.
 
@@ -21,12 +21,4 @@ Data Vault provides an easy-to-explain and flexible way to tackle complex issues
 
 Hashing is the term used for one-way encryption which can be implemented by applying a selected encryption algorithm.
 
-* [Using hashing in BimlFlex](xref:hashing-in-bimlflex.md)
-
-## Load Parameters
-
-* [BimlFlex Parameters](xref:bimlflex-metadata-parameters)
-
-## Delete Detection
-
-* [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+* [Using hashing in BimlFlex](xref:hashing-in-data-vault)
