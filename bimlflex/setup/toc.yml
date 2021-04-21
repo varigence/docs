@@ -1,11 +1,19 @@
 - name: Overview
   href: index.md
+- name: BimlFlex Components
+  href: bimlflex-components.md
 - name: System Requirements
   href: system-requirements.md
 - name: Installing BimlFlex
   href: installing-bimlflex.md
-- name: BimlFlex components
-  href: bimlflex-components.md
+- name: Installing the Metadata Database
+  href: installing-metadata-database.md
+- name: Installing an SSIS Server
+  href: installing-ssis-server.md
+- name: Installing a BimlFlex Build Server
+  href: installing-build-server.md  
+- name: Installing BimlFlex developer tools
+  href: installing-developer-tools.md  
 - name: Upgrade Process
   href: upgrade-process.md
 - name: Setup BimlStudio Project

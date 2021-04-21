@@ -11,7 +11,7 @@ This section describes system requirements and the installation of the BimlFlex 
 
 Everything you need in order to install and work with BimlFlex.
 
-* [BimlFlex Software and Hardware requirements](xref:bimlflex-software-and-hardware-requirements)
+* [BimlFlex Software and Hardware requirements](xref:bimlflex-setup-software-and-hardware-requirements)
 
 ## Installing BimlFlex
 
