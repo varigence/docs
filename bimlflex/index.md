@@ -4,6 +4,8 @@ Welcome to the BimlFlex documentation pages! This site was designed to quickly f
 
 The links below provide an entry point for various areas of documentation, and more detailed sections are provided in the table of contents on the left side of this page.
 
+For any recommendations, feedback or clarification please reach out to our support team via [support@bimlflex.com](mailto:support@bimlflex.com).
+
 ## [Setup](setup/index.md)
 
 Everything related to the BimlFlex components, and how to get things up-and-running.

@@ -252,6 +252,7 @@ If the `FlexRowStartDate` column name has been changed from the default, update 
 <# CustomOutput.OutputPathName = @"DC - FlexRowStartDate Override.Output"; #>
 </DerivedColumns>
 ```
+
 ## Parameterize Connections
 
 SSIS Project Connections can be parameterized through BimlFlex.
@@ -261,6 +262,7 @@ Parameters are managed on a per project basis in SSIS. A Connection Manager can 
 The following video shows an example of overriding the connection string property of the connection through an extension point and defining the Project parameter through another extension point that has the target set to `@@global` so that it is applied to all projects in the solution
 
 ## Identify Connections per Project
+
 You can use this script to identify which **Project** reference the **Connection** you are adding an `ConnectionExpression` extension point for.
 
 ```biml

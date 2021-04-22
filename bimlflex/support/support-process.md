@@ -7,26 +7,40 @@ summary: Documentation on accessing Varigence Biml support, including creating a
 
 For Varigence to be able to provide the best possible support for issues encountered while using BimlFlex the following process is recommended.
 
-## Creating a support case
+## Creating a Support Case
 
 BimlFlex support is provided through a dedicated email address:
 
 [support@bimlflex.com](mailto:support@bimlflex.com)
 
-The BimlFlex Support team will communicate as appropriate to resolve issues. Reply to the ticket email to update the case with any additional information.
+The BimlFlex Support team will create a support ticket and communicate as appropriate to resolve issues. Please reply to the ticket email when updating the case with any additional information.
 
-## Required information and data in a support case
+## Support Case Required Information
 
-For Varigence to be able to analyze and provide information for a case the included information needs to be detailed enough so that the context is clear and the steps to reproduce the scenario are available.
+For Varigence to be able to analyze and provide information for a case, the included information needs to be detailed enough so that the context is clear and the steps to reproduce the scenario are available.
 
-To be able to reproduce the issue it is also important that the metadata and any Extension Points files used for the project is provided.
+To minimize the potential waiting period, and if possible, always include the metadata debug when opening a BimlFlex support case, inclujding any Extension Points that the project may have adopted.
 
-This information can be extracted through either the BimlFlex App or BimlStudio.
+This information can be extracted through either the BimlFlex application or BimlStudio.
 
-In the BimlFlex app, by using the `Export Metadata` feature in the Actions pane.
+Saving the metadata to file creates a zip file that can be sent to the BimlFlex support team. If a secure upload link is needed due to size or security concers please contact the support team.
+
+### Exporting metadata from BimlFlex
+
+In the BimlFlex application the relevant metadata can be made available, by using the `Export Metadata` feature in the Actions pane. The Actions pane is located on the home screen of the application.
 
 ![Export Metadata](../user-guide/images/bimlflex-ss-v5-bimlflexapp-actions-pane.png "Export Metadata")
 
-In BimlStudio, by using the `Debug Utilities` feature in the BimlFlex Ribbon UI.
+### Exporting metadata from BimlStudio
 
-![Debug Utilities](../user-guide/images/bimlflex-ss-v5-debug-bimlflex-utility.png "Debug Utilities")
+In BimlStudio, the exporting metadata feature can be accessed by using the `Debug Utilities` feature in the BimlFlex Ribbon.
+
+![Debug Utilities](../user-guide/images/bimlflex-ss-v5-debug-bimlflex-utility.png "Debug Utilities").
+
+From here, a connection to the BimlFlex metadata database can be made.
+
+Please choose the relevant Customer and Version in the dropdown boxes and verify the obfuscation options. Obfuscation will replace / obfuscate keys and passwords from the database connections and settings.
+
+Tick the Include Project Folder in Zip checkbox to also add the project files and Extension Points to the generated archive file.
+
+Metadata can be saved to file from here and emailed to the suppor team.
