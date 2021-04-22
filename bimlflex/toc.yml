@@ -2,26 +2,29 @@
   href: index.md
   topicHref: index.md
   items:
-  - name: Setup
+  - name: Support Guide
+    href: support/toc.yml
+
+  - name: Setting up BimlFlex
     href: setup/toc.yml
 
   - name: Getting Started
     href: getting-started/toc.yml
 
+  - name: Concepts
+    href: concepts/toc.yml
+
+  - name: BimlFlex Components
+    href: bimlflex-components/toc.yml    
+
   - name: Metadata Editors
     href: metadata-editors/toc.yml
 
-  - name: Modeling Tools
+  - name: Design & Modeling Tools
     href: modeling-tools/toc.yml
-
-  - name: Bulk Edit Metadata
-    href: bulk-edit-metadata/toc.yml
 
   - name: Build Solution
     href: build-solution/toc.yml
-
-  - name: Metadata Databases
-    href: metadata-databases/toc.yml
 
   - name: Technology - Azure Data Factory
     href: technology-adf/toc.yml
@@ -35,9 +38,6 @@
   - name: SSIS Deployment
     href: ssis-deployment/toc.yml
 
-  - name: Concepts
-    href: concepts/toc.yml
-
   - name: Data Solution Templates
     href: data-solution-templates/toc.yml
 
@@ -46,9 +46,6 @@
 
   - name: Scenarios
     href: scenarios/toc.yml
-
-  - name: Support
-    href: support/toc.yml
 
   - name: Reference Docs
     href: reference-documentation/toc.yml

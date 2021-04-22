@@ -1,5 +1,5 @@
 ---
-uid: bimlcatalog-database
+uid: bimlflex-components-bimlcatalog-database
 title: BimlCatalog database
 summary: Documentation on the BimlCatalog database, including deployment options, parameter values, orchestration, and reporting
 varigenceProduct: BimlFlex

@@ -1,7 +1,5 @@
 - name: Overview
   href: index.md
-- name: BimlFlex Components
-  href: bimlflex-components.md
 - name: System Requirements
   href: system-requirements.md
 - name: Installing BimlFlex
@@ -14,6 +12,8 @@
   href: installing-build-server.md  
 - name: Installing BimlFlex developer tools
   href: installing-developer-tools.md  
+- name: Configuring bitness for the Excel plug-in
+  href: change-excel-bitness-bimlflex.md    
 - name: Upgrade Process
   href: upgrade-process.md
 - name: Setup BimlStudio Project

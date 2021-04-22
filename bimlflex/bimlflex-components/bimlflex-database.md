@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-database
+uid: bimlflex-components-metadata-database
 title: BimlFlex metadata database
 summary: Documentation on the BimlFlex database, including deployment options, customers, versions, entities, and target mappings
 varigenceProduct: BimlFlex
@@ -7,12 +7,12 @@ varigenceArticleType: Conceptual
 ---
 # BimlFlex metadata database
 
-The database is used by BimlFlex and BimlStudio to model and build the data warehouse, and to support the automation.
+The metadata repository database is used by BimlFlex and BimlStudio to model and build the data warehouse, and to support the automation.
 
-Modelers, analysts and data warehouse team members use the BimlFlex App to model and interact with the metadata. This metadata is written to a metadata database, the BimlFlex database. BimlStudio then accesses the metadata by querying the database to provide the development and build experience for creating data warehouse artifacts.
+Modelers, analysts and data warehouse team members use the BimlFlex Application to model and interact with the metadata. This metadata is written to the BimlFlex metadata repository database. BimlStudio then accesses the metadata by querying the database to provide the development and build experience for creating data warehouse artifacts.
 
 > [!IMPORTANT]
-> The BimlFlex database contains crucial data for the data warehouse automation process. It is important to back up, and maintain a strict disaster recovery policy for, this database.
+> The BimlFlex database contains crucial data for the data warehouse automation process. It is important maintain a strict disaster recovery policy for this database.
 
 ## Deploying the BimlFlex Database
 
@@ -25,7 +25,7 @@ The database is created through the BimlFlex installer or through the `Setup Bim
 
 ### Customers and Versions
 
-Metadata is stored on a per Customer, per Version basis. This allows different projects to use the same database, and provides a convenient way to manage different versions of the metadata.
+Metadata is stored on a per Customer, per Version basis. A 'Customer' can be seen as a tenant in a multi-tenant application. This allows different projects to use the same database, and provides a convenient way to manage different versions of the metadata.
 
 ### Entities
 
