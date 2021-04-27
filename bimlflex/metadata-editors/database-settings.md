@@ -12,6 +12,4 @@ The *Database Settings* manages the connection to the BimlFlex database. It is w
 
 The database settings can be accessed from the [BimlFlex Toolbar](xref:bimlflex-application-toolbar-icons-and-options).
 
-[!include[BimlFlex Toolbar](_incl-toolbar.md)]
-
 [!include[BimlFlex Setup](_incl-settings-pane.md)]
