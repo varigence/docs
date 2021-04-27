@@ -9,5 +9,3 @@ varigenceArticleType: Reference
 # Toolbar Icons and Options
 
 [!include[BimlFlex Toolbar](_incl-toolbar.md)]
-
-[!include[BimlFlex Setup](_incl-settings-pane.md)]

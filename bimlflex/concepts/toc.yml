@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: Customer Concept
+  href: customer.md
 - name: Importing Metadata
   href: importing-metadata.md
 - name: Hashing
