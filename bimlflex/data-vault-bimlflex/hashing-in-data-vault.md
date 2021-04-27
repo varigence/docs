@@ -18,6 +18,53 @@ BimlFlex provides 2 main ways of hashing:
 * Using a custom SSIS component that provides hashing of data in the SSIS Data Flow Task for SSIS-based loads
 * Using the SQL `HASHBYTES()` script function in ELT code
 
+## Hash Keys
+
+* A [hash](#hash-algorithm) of the [Integration Key](#integration-key-business-key).
+* Not a compulsory field for `Data Vault` however currently compulsory in BimlFlex.
+  We will support a no hash implementation option in all our ELT (SQL) templates.
+
+### Hashing Algorithm
+
+* Support all major hash algorithms with `SHA1` as the default.
+Implement other available options by changing the *HASH ALGORITHM* setting to one of the following values
+  * `MD5`
+  * `SHA1`
+  * `SHA2_256`
+  * `SHA2_512`.
+* Previous SSIS versions of BimlFlex created a different hash for Unicode characters.
+  The [*USE SQL COMPATIBLE HASH*](xref:bimlflex-metadata-settings#hash-core) and [*USE SQL COMPATIBLE ROW HASH*](xref:bimlflex-metadata-settings#hash-core) settings provides for backward compatibility.
+  They should be set to `Y` for new implementations.
+* Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the [*HASH BINARY*](xref:bimlflex-metadata-settings#hash-core) setting.
+  It is recommended to use binary hashing.
+  With binary hashing the hash value is stored in its native binary form, requiring half the storage space compared to the hexadecimal string representation.
+* Performance setting: [*ADD ROW HASH KEY INDEX*](xref:bimlflex-metadata-settings#settings-staging) will add an index to the staging table on the `RowHashKey` to optimize the Hub ETL SSIS packages.
+
+### Hash Collision
+
+When using hash values to represent the value of something else, an alternate key or a row checksum, there is a small risk that two source values generate the same hash value.
+This would result in a hash collision.
+
+When two keys hash to the same target hash a potential effect could be that only the first would be loaded to the Data Vault Hub, with the first key value.
+Attributes that relate to the second key would be confused and co-located.
+
+Row hashing is used to detect changes in rows, all the attributes are combined into a single hash value, commonly referred to as a `HashDiff`, when that value changes there is a change in one or more of the attributes, when it is the same the rows are the same.
+If a collision occur here, the new version of the row (with the new changes) would not be persisted in the target as it would not be identified as a change.
+
+A way to accommodate hash collision risk is to do a reverse hash and combine this with the original hash, which is a configuration option in BimlFlex for the SSIS templates, however this will have an impact on load times.
+
+Another way is to do reconciliation checks in the Target data warehouse.
+For targets that don't enforce constraints, such as Synapse and Snowflake, the hash values are inserted in the target regardless of collisions.
+BimlFlex can be extended to create custom reconciliation queries to allow reports and analytics on key/hash comparisons.
+For targets that do enforce the constraints, the collision will result in a potential hard failure, allowing the scenario to be analyzed and accommodated.
+An option for remediation is to increase the hash length, if a collision happens using SHA1, upgrade to use SHA2_256 or SHA2_512 that have longer key length and less risk for hash collisions.
+
+### Hash Key Settings
+
+Choose a tab below to view relevant setting descriptions or examples for Hash Keys.
+
+[!include[Hash Key Metadata Settings List](_settings_hash_key.md)]
+
 ## Hash configurations
 
 Both of these approaches provides a set of optional configurations and settings. The hashing approach in the SSIS packages are controlled through the following settings:

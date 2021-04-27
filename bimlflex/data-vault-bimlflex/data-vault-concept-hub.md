@@ -8,3 +8,7 @@ varigenceArticleType: Conceptual
 # Hubs
 
 Any Hub entity in Data Vault can therefore have multiple active relationships to other entities through [Links](xref:bimlflex-data-vault-concept-link).
+
+## Implementation of the Hub concept in BimlFlex
+
+* [Hub Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-hub)

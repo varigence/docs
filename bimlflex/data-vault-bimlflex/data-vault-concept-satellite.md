@@ -6,3 +6,7 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
 # Satellites
+
+## Implementation of the Satellite concept in BimlFlex
+
+* [Hub Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-satellite)

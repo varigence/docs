@@ -12,9 +12,12 @@ Data Vault provides an easy-to-explain and flexible way to tackle complex issues
 ## Data Vault essentials
 
 * [A brief introduction on Data Vault](xref:bimlflex-data-vault-introduction)
-* [Data Vault Hubs](xref:bimlflex-data-vault-concept-hub)
-* [Data Vault Links](xref:bimlflex-data-vault-concept-link)
-* [Data Vault Satellites](xref:bimlflex-data-vault-concept-satellite)
+* [Data Vault Hubs](xref:bimlflex-data-vault-concept-hub) - the Core Business Concept
+* [Data Vault Links](xref:bimlflex-data-vault-concept-link) - the Natural Business Relationship
+* [Data Vault Satellites](xref:bimlflex-data-vault-concept-satellite) - the Context entity with descriptive information
+* [Point-in-Time and Bridge tables](xref:bimlflex-data-vault-concept-pit-bridge)
+* [Reference Data](xref:bimlflex-data-vault-concept-reference-data)
+* [Integration Key Concept](xref:bimlflex-data-vault-integration-keys-and-relationships)
 
 ## Data Vault and BimlFlex
 
@@ -22,7 +25,7 @@ BimlFlex provides various ways to implement data solutions that utilise concepts
 
 * [BimlFlex best practices for Data Vault](xref:bimlflex-data-vault-best-practices)
 * [Using hashing for Data Vault](xref:bimlflex-data-vault-hashing)
-* [BimlFlex Integration Keys and Relationships](xref:bimlflex-data-vault-integration-keys-and-relationships)
+* [Integration Keys Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-integration-keys)
 * [Implementing Data Vault Hubs in BimlFlex](xref:bimlflex-data-vault-implementation-hub)
 * [Implementing Data Vault Satellites in BimlFlex](xref:bimlflex-data-vault-implementation-satellite)
 * [Implementing Data Vault Links in BimlFlex](xref:bimlflex-data-vault-implementation-link)

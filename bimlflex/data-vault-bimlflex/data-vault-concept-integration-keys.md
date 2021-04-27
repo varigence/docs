@@ -42,3 +42,7 @@ Define the Accelerator options and preview the Data Vault to review the resultin
 ## Watch the Webinar
 
 ![Building Integration Keys for Data Vault](https://www.youtube.com/watch?v=frzWIAW-Mhs?rel=0&autoplay=0)
+
+## Implementation of the Integration Key concept in BimlFlex
+
+* [Hub Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-integration-keys)

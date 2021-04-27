@@ -6,3 +6,7 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
 # Links
+
+## Implementation of the Link concept in BimlFlex
+
+* [Hub Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-link)
