@@ -1,30 +1,5 @@
 - name: Overview
   href: index.md
-- name: Importing Metadata
-  href: importing-metadata.md
-- name: Source to Staging Templates
-  href: source-to-staging-templates.md
-- name: Data Vault Best Practices
-  href: data-vault-best-practices.md
-- name: Data Vault Templates
-  href: data-vault-templates.md
-- name: Data Mart Templates
-  href: data-mart-templates.md
-- name: Implementing Snowflake in ADF
-  href: implementing-snowflake-in-adf.md
-#- name: Batch Orchestration
-#  href: batch-orchestration.md
-- name: Extension Points
-  href: extension-points.md
-- name: Integration Keys
-  href: integration-keys.md
-- name: Driving Keys
-  href: driving-keys.md
-- name: Driving Keys in Data Vault
-  href: driving-keys-in-data-vault.md
-- name: Hashing
-  href: hashing-in-bimlflex.md
-- name: Load Parameters
-  href: load-parameters.md
-- name: Delete Detection
-  href: delete-detection.md
+- name: Working with SSDT in BimlFlex
+  href: ssdt-project.md
+
