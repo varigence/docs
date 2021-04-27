@@ -15,25 +15,25 @@ Although it is relatively straightforward to define individual metadata objects,
 
 BimlFlex provides an import tool which is accessible from the Connections and Projects screens, which can connect to a database source and manage the metadata BimlFlex uses.
 
-* [BimlFlex Importing Metadata](xref:bimlflex-importing-metadata)
+* [BimlFlex Importing Metadata](xref:bimlflex-concepts-importing-metadata)
 
 ## Hashing
 
 Hashing is the term used for one-way encryption which can be implemented by applying a selected encryption algorithm. BimlFlex provides various approaches for implementing hashing techniques for the data solution.
 
-* [Using hashing in BimlFlex](xref:hashing-in-bimlflex.md)
+* [Using hashing in BimlFlex](xref:bimlflex-concepts-hashing)
 
 ## Load Parameters
 
 BimlFlex provides a number of standard out-of-the-box parameters, as well as the functionality to create your own. Parameters can be used in many ways - for example for managing data load windows, orchestration and standardised or default values.
 
-* [BimlFlex Parameters](xref:bimlflex-metadata-parameters)
+* [BimlFlex Parameters](xref:bbimlflex-concepts-metadata-parameters)
 
 ## Extension points
 
 Extension points are one of the key ways BimlFlex provides customisation to cater for specific scenarios. While the standard templates cover most real-world scenarios, there may be a specific tweak that would improve certain edge cases. These modifications can be defined using extension points, that allow for custom logic to be added to a template at various points in the process.
 
-* [BimlFlex Parameters](xref:bimlflex-extension-points)
+* [Extension Points](xref:bimlflex-concepts-extension-points)
 
 ## Delete Detection
 
@@ -43,10 +43,10 @@ BimlFlex provides a SQL source based delete detection mechanism that allows dete
 
 This applies to 'hard deletes' where the record has been removed from the original system, as opposed to end-dating. In the data solution, the event of deletion can be stored as a 'soft' or 'logical' delete. This information can be valuable in determining the correct state of the data for delivery.
 
-* [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+* [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 
 ## Orchestration
 
 Data can be loaded in the the data solution using different scheduling approaches. For example, data can be loaded and processed in batches that run daily or multiple times each day - or data can be loaded in a continuous fashion. In all cases, the BimlFlex templates cater for the orchestration of this so that data is processed in the right order.
 
-* [Orchestration in BimlFlex](xref:bimlflex-orchestration)
+* [Orchestration in BimlFlex](xref:bimlflex-concepts-orchestration)

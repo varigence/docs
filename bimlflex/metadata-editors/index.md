@@ -3,9 +3,9 @@ uid: metadata-editors-overview
 title: Metadata Editors Overview
 summary: Overview of BimlFlex metadata editors with links to BimlFlex tour, dashboard, and editors
 ---
-# Metadata Editors Overview
+# BimlFlex App Overview
 
-The Metadata Editors allow users to add and update all the Metadata required to automate complex data warehousing solutions. Along with the Modeling tools, they empower data developers to build an end-to-end data solution without ever writing a single line of code.
+The BimlFlex App allow users to add and update all the metadata required to automate complex data warehousing solutions. Along with the Modeling tools, they empower data developers to build an end-to-end data solution without ever writing a single line of code.
 
 ## BimlFlex Tour
 

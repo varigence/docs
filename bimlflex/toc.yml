@@ -26,16 +26,16 @@
   - name: Build Solution
     href: build-solution/toc.yml
 
-  - name: Technology - Azure Data Factory
+  - name: BimlFlex for Azure Data Factory
     href: technology-adf/toc.yml
 
-  - name: Technology - Snowflake
+  - name: BimlFlex for Snowflake
     href: technology-adf/toc.yml
 
-  - name: Technology - Sql Server Data Tools
+  - name: BimlFlex for Sql Server Data Tools
     href: technology-ssdt/toc.yml
 
-  - name: SSIS Deployment
+  - name: BimlFlex for Sql Server Integration Services
     href: ssis-deployment/toc.yml
 
   - name: Data Solution Templates

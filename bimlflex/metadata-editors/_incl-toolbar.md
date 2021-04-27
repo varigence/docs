@@ -9,8 +9,6 @@ The BimlFlex Toolbar holds links to most of the higher level system configuratio
 
 The current **Customer** and **Version** is displayed in the top right corner and can be switched at any time by clicking the appropriate values.
 
-**BimlFlex Toolbar**
-
 ![BimlFlex Toolbar](images/bimlflex-app-title-bar.png "BimlFlex Toolbar")
 
 | Icon | Action | Description |
@@ -20,8 +18,8 @@ The current **Customer** and **Version** is displayed in the top right corner an
 | <div class="icon-col m-5"><img src="images/svg-icons/alert.svg"/></div> | <span class="nowrap-col m-5">Validations (Red)</span> | Global errors in metadata appear here |
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg"/></div> | <span class="nowrap-col m-5">Refresh Metadata</span> | Connect to the database and refresh all metadata for the selected **Customer** and **Version** |
 | <div class="icon-col m-5"><img src="images/svg-icons/biml-catalog-connection.svg"/></div> | <span class="nowrap-col m-5">Configure Reporting Catalog</span> | Create or select the BimlCatalog connection to be used for reports |
-| <div class="icon-col m-5"><img src="images/svg-icons/portal-settings.svg"/></div> | <span class="nowrap-col m-5">Settings</span> | Configure database settings.  This is where you can set the server and database that is used for the recording of BimlFlex metadata.  Additional properties such as *Show Deleted* and *Show Excluded* also reside here |
-| <div class="icon-col m-5"><img src="images/svg-icons/customers.svg"/></div> | <span class="nowrap-col m-5">Customer</span>|Displays the currently selected BimlFlex **Customer**.  Click to view a list of the other available BimlFlex **Customers** |
-| <div class="icon-col m-5"><img src="images/svg-icons/versions.svg"/></div> | <span class="nowrap-col m-5">Version</span>|Displays the currently selected BimlFlex **Version**.  Click to view a list of the other available BimlFlex **Versions** |
+| <div class="icon-col m-5"><img src="images/svg-icons/portal-settings.svg"/></div> | <span class="nowrap-col m-5">Settings</span> | Configure [database settings](xref:bimlflex-application-database-settings). This is where you can set the server and database that is used for the recording of BimlFlex metadata. Additional properties such as *Show Deleted* and *Show Excluded* also reside here |
+| <div class="icon-col m-5"><img src="images/svg-icons/customers.svg"/></div> | <span class="nowrap-col m-5">Customer</span>|Displays the currently selected BimlFlex **Customer**. Click to view a list of the other available BimlFlex **Customers** |
+| <div class="icon-col m-5"><img src="images/svg-icons/versions.svg"/></div> | <span class="nowrap-col m-5">Version</span>|Displays the currently selected BimlFlex **Version**. Click to view a list of the other available BimlFlex **Versions** |
 
 [//]: # (TODO: Add Icon and Row for Hamburger)

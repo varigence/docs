@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # BimlFlex Tour
 
-The following sections describe the UI elements that make up an Entity Editor and how the features provide navigation and interaction.
+The following sections describe the user interface elements that make up an Entity Editor and how the features provide navigation and interaction.
 
 [!include[BimlFlex Toolbar](_incl-toolbar.md)]
 
@@ -48,13 +48,31 @@ BimlFlex features a breadcrumb navigation to easily raise your view to a higher 
 The entities shown in the breadcrumbs will depend on the entity that is being viewed and the navigation path that was used.
 Elements are provided to select either the associated parent entity or to navigate without filter context to a parent element editor.
 
-**Breadcrumb Navigation Elements**
-
 ![Breadcrumb Navigation Elements](images/bfx-breadcrumb-nav-elements.png "Breadcrumb Navigation Elements")
 
 <!--
 ![Breadcrumb Navigation Elements](images/bimlflex-app-breadcrumbs.png "Breadcrumb Navigation Elements")  
 -->
+
+## Tab and Form Action Buttons  
+
+The **Tab and Form Action Buttons** list the actions available within the currently selected item or user interface element in BimlFlex. While most areas in the BimlFlex application will show a set of generic action buttons, they are in fact context specific to the currently selected item or element. This means that buttons will be enabled or disabled when appropriate based on the selected element.
+
+For example, if tabs are available,  different button (such as 'add') will be available than if a specific metadata element is selected.
+
+The Tab and Form Action Buttons are always located on the top of the screen, just under the application header.
+
+| Action | Overview |
+| ----------------- | ---------- |
+| Save | This will commit the values from the selected context to the metadata database. The application will prompt the user to save when context (e.g. screens) are changed and there is a risk that entered values will be lost |
+| Discard | The discard button will revert any changed values in the current context to the original values before they were updated, assuming these have not been saved yet |
+| Archive | Archive permanently deletes the metadata from the BimlFlex database |
+| Duplicate | The duplicate action button will create a new item based on the (values of) the selected item |
+| Cloud | This slide toggle will show / hide certain configuration options that are only application to cloud connections |
+| Exclude | This slide toggle can flag a selected item to be excluded from the model. The item can still be seen by users who select the 'show excluded' option in the settings.
+| Deleted | This slide toggle can flag a selected item to be considered deleted from the model, however the metadata is not physically removed from the BimlFlex database. The item can still be seen by users who select the 'show excluded' option in the settings.
+
+![Tab and Form Action Buttons](images/bfx-action-bar.png "Tab and Form Action Buttons")
 
 ## Editor Action Buttons  
 
@@ -112,20 +130,6 @@ The amount and availability of the the columns is determined by the editor being
 > [!NOTE]
 > All of the columns support the ability for filters but the button is hidden by default.
 > To show the button mouse over the field you would like to filter.
-
-## Tab and Form Action Buttons  
-
-The **Tab and From Action Buttons** list the actions available within the currently selected entity.
-All action buttons are context specific to the currently selected tab if tab navigation function is provided the the selected editor.
-As the list to large to enumerate and goes past the scope of the guide, refer to the document for the appropriate editor to view all availed actions along with their descriptions.
-Many buttons feature context sensitivity and only enable/disable when appropriate.
-
-### Tab and Form Action Buttons Example
-
-![Tab and Form Action Buttons](images/bfx-action-bar.png "Tab and Form Action Buttons")
-<!--
-![Tab and Form Action Buttons Example](images/bimlflex-app-form-actions.png "Tab and Form Action Buttons Example")  
--->
 
 ### Tab List
 
