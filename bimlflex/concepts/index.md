@@ -12,6 +12,7 @@ This section covers various concepts that are important to understand when worki
 BimlFlex provides an effective multi-tenant configuration to allow working with different models, even within a single organisation. This the *Customer* concept.
 
 * [The BimlFlex Customer Concept](xref:bimlflex-concepts-customer)
+* [Managing Versions in BimlFlex](xref:bimlflex-concepts-versions)
 
 ## Importing Metadata
 

@@ -11,7 +11,7 @@
   - name: Getting Started
     href: getting-started/toc.yml
 
-  - name: Supporting BimlFlex Connectivity
+  - name: Concepts
     href: concepts/toc.yml
 
   - name: BimlFlex Platform Components
