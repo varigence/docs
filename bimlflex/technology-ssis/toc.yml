@@ -12,7 +12,7 @@
   href: ssis-deployment-wizard.md
 - name: Using Powershell
   href: using-powershell.md
-- name: Sensitive Info Management
+- name: Managing Sensitive Data
   href: sensitive-info-management.md
 - name: Concurrent Development
   href: concurrent-development.md

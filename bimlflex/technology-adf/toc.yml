@@ -8,11 +8,9 @@
   href: using-azure-portal.md
 - name: Using Powershell
   href: using-powershell.md
-- name: Sensitive Info Management
+- name: Managing Sensitive Data
   href: sensitive-info-management.md
 - name: Concurrent Development
   href: concurrent-development.md
 - name: ARM Template Handling
   href: bfx-arm-templates.md
-#  - name: Continuous Delivery (CI/CD)
-#    href: continuous-integration-and-continuous-delivery.md

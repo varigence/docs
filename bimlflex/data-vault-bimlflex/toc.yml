@@ -4,7 +4,5 @@
   href: data-vault-best-practices.md
 - name: Integration Keys
   href: integration-keys.md
-- name: Driving Keys
-  href: driving-keys.md
 - name: Driving Keys in Data Vault
   href: driving-keys-in-data-vault.md

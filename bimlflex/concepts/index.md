@@ -7,7 +7,7 @@ summary: Overview of BimlFlex concepts including importing metadata, templates, 
 
 This section covers various concepts that are important to understand when working with BimlFlex.
 
-## Customers and multi-tenancy
+## Customers and Multi-Tenancy
 
 BimlFlex provides an effective multi-tenant configuration to allow working with different models, even within a single organisation. This the *Customer* concept.
 
@@ -22,7 +22,7 @@ Although it is relatively straightforward to define individual metadata objects,
 
 BimlFlex provides an import tool which is accessible from the Connections and Projects screens, which can connect to a database source and manage the metadata BimlFlex uses.
 
-* [BimlFlex Importing Metadata](xref:bimlflex-concepts-importing-metadata)
+* [Importing Metadata to BimlFlex](xref:bimlflex-concepts-importing-metadata)
 
 ## Hashing
 

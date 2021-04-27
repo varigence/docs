@@ -20,6 +20,7 @@ Data Vault provides an easy-to-explain and flexible way to tackle complex issues
 
 BimlFlex provides various ways to implement data solutions that utilise concepts from Data Vault methodology:
 
+* [BimlFlex best practices for Data Vault](xref:bimlflex-data-vault-best-practices)
 * [Using hashing for Data Vault](xref:bimlflex-data-vault-hashing)
 * [BimlFlex Integration Keys and Relationships](xref:bimlflex-data-vault-integration-keys-and-relationships)
 * [Implementing Data Vault Hubs in BimlFlex](xref:bimlflex-data-vault-implementation-hub)

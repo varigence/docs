@@ -12,9 +12,13 @@ This section provides a brief overview of the components that make up the BimlFl
 * BimlCatalog Database
 * BimlFlex Excel Add-In
 
-## Overview
+## BimlFlex App
 
 The BimlFlex App connects to the [BimlFlex Database](xref:bimlflex-components-metadata-database), the metadata repository, and allows management of the metadata through a user-friendly experience. Use the BimlFlex App to manage the BimlFlex metadata.
+
+For more information on the BimlFlex App please refer to:
+
+* [BimlFlex App Guide](xref:metadata-editors-overview)
 
 ## BimlFlex Database
 
