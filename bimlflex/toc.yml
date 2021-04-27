@@ -23,11 +23,14 @@
   - name: Design & Modeling Features
     href: modeling-tools/toc.yml
 
-  - name: Build Solution
+  - name: Build & Deployment
     href: build-solution/toc.yml
 
   - name: BimlFlex for Azure Data Factory
     href: technology-adf/toc.yml
+
+  - name: BimlFlex for Synapse
+    href: technology-synapse/toc.yml
 
   - name: BimlFlex for Snowflake
     href: technology-adf/toc.yml

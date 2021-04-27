@@ -7,13 +7,13 @@ varigenceArticleType: Conceptual
 ---
 # Introduction to hashing in BimlFlex
 
-BimlFlex uses hashing in two common scenarios, for Data Vault hash-based keys and for row checksums for identifying changes to attributes.
+BimlFlex uses hashing in two common scenarios, for generating surrogate Data Warehouse keys (as hash-based keys) and for row checksums to simplify identifying changes to attributes.
 
-Hashing keys in Data Vault allows integration keys to be loaded in a deterministic way from multiple sources in parallel. This also removes the need for key lookups between related entities.
+Hashing keys to generate Data Warehouse keys allows integration keys to be loaded in a deterministic way from multiple sources in parallel. This also removes the need for key lookups between related entities.
 
 Hashing row checksums for identifying changes allows the load process to compare a single generated hash to identify if an attribute has changed for a key. This allows for flexible and fast loading of only changes to data.
 
-BimlFlex provides 2 main ways of hashing:
+BimlFlex provides two main ways of hashing:
 
 * Using a custom SSIS component that provides hashing of data in the SSIS Data Flow Task for SSIS-based loads
 * Using the SQL `HASHBYTES()` script function in ELT code
@@ -26,7 +26,7 @@ Both of these approaches provides a set of optional configurations and settings.
 | ----------              | ------------ | ----------- |
 | HashAlgorithm           | `SHA1`       | Hashing Algorithm (`MD5`, `SHA1`, `SHA2_256`, `SHA2_512`) |
 | HashBinary              | `N`          | Binary or String hash representation (`Y`, `N`) |
-| HashIntegrationKey      | `N`          | Should the Object's Integration Key be hashed. This is always applied for loads with a Data Vault destination (`Y`, `N`) |
+| HashIntegrationKey      | `N`          | Should the Object's Integration Key be hashed. This is always applied for loads with a [Data Vault])xref:bimlflex-data-vault-index) target model (`Y`, `N`) |
 | UseSqlCompatibleHash    | `Y`          | Should the Integration Key hashing use a SQL `HASHBYTES()` compatible pattern (`Y`, `N`) |
 | UseSqlCompatibleRowHash | `Y`          | Should the row checksum hashing use a SQL `HASHBYTES()` compatible pattern (`Y`, `N`) |
 
@@ -71,7 +71,7 @@ it is not possible to hash a null value, therefore the BimlFlex hashing procedur
 
 ## Hashing Integration Keys
 
-A Business or Integration key is used as the main identifier for entities. This is most commonly used as the base key for Hub entities in Data Vault. BimlFlex has a built in feature to convert source columns and concatenate them into a Integration Key. There is also an optional setting to upper case the string. This is useful where the database is case insensitive and keys with different casings are considered the same entity. As different casings are hashed to different hash values whereas the database engine would consider Integration Keys with different casings to be the same this provides a convenient way to automatically align all Integration Keys. BimlFlex always store the original values in Satellites by default, so no data is lost in this process.
+A Business or Integration key is used as the main identifier for entities. This is most commonly used as the base key for Hub entities using [Data Vault](xref:bimlflex-data-vault-index) methodology. BimlFlex has a built in feature to convert source columns and concatenate them into a Integration Key. There is also an optional setting to upper case the string. This is useful where the database is case insensitive and keys with different casings are considered the same entity. As different casings are hashed to different hash values whereas the database engine would consider Integration Keys with different casings to be the same this provides a convenient way to automatically align all Integration Keys. BimlFlex always store the original values in Satellites by default, so no data is lost in this process.
 
 Sample Script used for hashing Integration Keys. When using AdventureWorksLT and the Product table the following hashes are created by the SQL Compatible SSIS Hashing component and they can be recreated using SQL Server `HASHBYTES()` and the below sample script.
 

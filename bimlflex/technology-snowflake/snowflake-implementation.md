@@ -6,19 +6,7 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
 
-# Snowflake Overview
-
-Snowflake is a cloud data warehouse platform provided by Snowflake Computing Inc.
-BimlFlex supports Snowflake as both a source and a target data warehouse platform and provides load patterns that use the BimlFlex metadata to create the required ETL and ELT for loading a Data Warehouse in Snowflake.
-BimlFlex uses Snowflake's best practice approaches to loading and managing the Snowflake data warehouse.
-This includes using the BimlFlex optimal load pattern for Snowflake to extract the data and land it in the Snowflake stage, then use the Snowflake COPY command to process the data.
-
-> [!TIP]
-> Additional Resources:  
-> [Snowflake Website](https://www.snowflake.com/)  
-> [Snowflake Documentation](https://docs.snowflake.com/)
-
-## Initial Configuration
+# Initial Configuration
 
 Before working with Snowflake metadata you should ensure that your environment is configured to use Snowflake appropriately.
 This section will walk you through the required software and system configurations you will need to connect BimlFlex to your Snowflake environment.

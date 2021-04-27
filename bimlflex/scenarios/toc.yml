@@ -1,15 +1,7 @@
 - name: Overview
   href: index.md
 
-  # Snowflake
-- name: Snowflake Implementation
-  href: snowflake-implementation.md
-
-  # Synapse
-- name: Synapse Implementation
-  href: synapse-implementation.md
-
-  # SSIS with On-Premise SQL Server 
+# SSIS with On-Premise SQL Server 
 - name: SSIS on-premises SQL Server
   href: ssis-on-prem-sql-server.md
 
