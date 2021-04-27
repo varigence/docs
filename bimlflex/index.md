@@ -24,10 +24,19 @@ Get started designing and delivering BimlFlex data solutions.
 
 ## [Methodologies & Technology](concepts/index.md)
 
+BimlFlex supports a number of target Data Warehouse platforms. The platform provides load patterns that use the BimlFlex metadata to create the required ETL and ELT for loading these Data Warehouses.
+
+The main supported platforms are:
+
+* [Snowflake](xref:bimlflex-snowflake-index)
+* [Azure Synapse](xref:bimlflex-synapse-implementation)
+* [Microsoft on-premises SQL Server](xref:ssis-on-prem-sql-server)
+
 Delivering a data solution touches on many concepts and specific technology implementations.
 
 * [Designing and implementing a Data Vault model using BimlFlex](xref:bimlflex-data-vault-index)
-* [Delivering a data solution on Snowflake](xref:bimlflex-snowflake-index)
+
+<!-- TODO: Add at least Dimensional Modelling -->
 
 ## [Tips and Tricks](tips-and-tricks/index.md)
 

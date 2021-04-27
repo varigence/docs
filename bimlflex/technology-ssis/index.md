@@ -5,6 +5,10 @@ title: SSIS Deployment Overview
 
 The ability to create SSIS projects is a central part of BimlFlex. In this section there is ample information regarding the deployment of your BimlFlex SSIS assets. When using SSIS for an ELT process, SSIS serves as the orchestration engine for running SQL-based transformations on the database. When using SSIS for an ETL process, SSIS serves both as the orchestration engine and the data transformation system. This article touches on a number of topics related to SSIS deployment.
 
+## On-Premise SQL Server and SSIS
+
+* [Implementing SSIS on an on-premise SQL Server instance](ssis-on-prem-sql-server)
+
 ## Concurrent Development
 
 The majority of BimlFlex deployments consist of several teams working on the same Data Warehouse at the same time. A successful combination of concurrent development and Data Warehouse management typically leverages several features in BimlFlex for support.

@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: SSIS with On-Premise Sql Server
+  href: ssis-on-prem-sql-server.md
 - name: SSIS Deployment Guide
   href: ssis-deployment.md
 - name: SSIS Custom Components

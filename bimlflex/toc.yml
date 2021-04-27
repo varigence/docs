@@ -11,7 +11,7 @@
   - name: Getting Started
     href: getting-started/toc.yml
 
-  - name: Concepts
+  - name: Supporting BimlFlex Connectivity
     href: concepts/toc.yml
 
   - name: BimlFlex Platform Components
@@ -33,13 +33,16 @@
     href: technology-synapse/toc.yml
 
   - name: BimlFlex for Snowflake
-    href: technology-adf/toc.yml
+    href: technology-snowflake/toc.yml
 
   - name: BimlFlex for Sql Server Data Tools
     href: technology-ssdt/toc.yml
 
   - name: BimlFlex for Sql Server Integration Services
-    href: ssis-deployment/toc.yml
+    href: technology-ssis/toc.yml
+
+  - name: Other BimlFlex Connectivity
+    href: scenarios/toc.yml
 
   - name: Data Solution Templates
     href: data-solution-templates/toc.yml
@@ -47,8 +50,8 @@
   - name: Data Vault and BimlFlex
     href: data-vault-bimlflex/toc.yml
 
-  - name: Scenarios
-    href: scenarios/toc.yml
+  - name: Data Marts
+    href: data-delivery/toc.yml
 
   - name: Reference Docs
     href: reference-documentation/toc.yml
