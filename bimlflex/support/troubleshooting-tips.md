@@ -5,7 +5,7 @@ summary: Troubleshooting tips for when errors occur within BimlFlex or BimlStudi
 ---
 # Troubleshooting Tips
 
-When an error occurs in any of the components of the BimlFlex application, these tips can help to identify the root cause.
+When an error occurs in any of the components of the BimlFlex App, these tips can help to identify the root cause.
 
 ## Reviewing BimlStudio errors
 

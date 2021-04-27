@@ -323,7 +323,7 @@ Once the metadata has been modelled and the preview represents the target model 
 
 ### Publishing the Final Preview
 
-By clicking the Publish DV Import the new data will be committed to the Metadata database and made available as a persisted Schema Diagram, in the application screens for edit and in BimlFlex Excel for bulk edit.
+By clicking the Publish DV Import the new data will be committed to the BimlFlex Database and made available as a persisted Schema Diagram, in the application screens for edit and in BimlFlex Excel for bulk edit.
 
 <!--
 ![Publish Metadata Changes](images/bimlflex-app-accelerator-publish.png "Publish Metadata Changes")

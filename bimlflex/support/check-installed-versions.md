@@ -24,7 +24,7 @@ Open a BimlFlex Excel file and navigate to the BimlFlex ribbon UI. Click the Abo
 
 The Product Information displayed includes the Build, normally in the format `5.0.nnnnn.n`
 
-## BimlFlex Application
+## BimlFlex App
 
 Review the Programs and Features list in the Windows Control Panel to see the version of the `Varigence BimlFlex` installation.
 
@@ -44,9 +44,9 @@ It is also possible to see the version by opening the bundle file in a zip appli
 
 This version file illustrates the Bundle version in the format: `bundle.nnnnn.version`
 
-## BimlFlex Metadata Database
+## BimlFlex Database
 
-Execute the `dbo.GetVersion` Stored Procedure in the BimlFlex database. This will return the version of the database (server) itself into which the BimlFlex database has been installed, so not the version of the repository schema.
+Execute the `dbo.GetVersion` Stored Procedure in the BimlFlex Database. This will return the version of the database (server) itself into which the BimlFlex database has been installed, so not the version of the repository schema.
 
 The results will include a row with the VersionNumber specified for the database, normally in the format `nnnnn`
 

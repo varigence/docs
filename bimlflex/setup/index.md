@@ -1,11 +1,11 @@
 ---
 uid: bimlflex-setup-overview
 title: BimlFlex Setup Overview
-summary: Overview of how to setup and install the BimlFlex application
+summary: Overview of how to setup and install the BimlFlex App
 ---
 # BimlFlex Setup Overview
 
-This section describes system requirements and the installation of the BimlFlex application.
+This section describes system requirements and the installation of the BimlFlex App.
 
 ## System Requirements
 
@@ -17,8 +17,8 @@ Everything you need in order to install and work with BimlFlex.
 
 How to install the BimlFlex software, as well as supporting technology you may need.
 
-* [Installing the BimlFlex application](xref:bimlflex-setup-installing-bimlflex)
-* [Installing the BimlFlex Metadata Repository database](xref:bimlflex-setup-metadata-database-installation)
+* [Installing the BimlFlex App](xref:bimlflex-setup-installing-bimlflex)
+* [Installing the BimlFlex Database](xref:bimlflex-setup-metadata-database-installation)
 * [Installing an SSIS server](xref:bimlflex-setup-ssis-server-install)
 * [Installing a BimlFlex build server](xref:bimlflex-setup-build-server-install)
 * [Installing the BimlFlex developer tools](xref:bimlflex-setup-developer-installation)
@@ -37,8 +37,8 @@ A BimlStudio project is used to build and generate the metadata configured in Bi
 
 * [BimlStudio project setup](xref:bimlflex-setup-bimlstudio-project)
 
-## Ensuring Correct Bitness For The Excel Plug-In
+## Ensuring Correct Bitness For The Excel Add-In
 
-Both Microsoft Office Excel and the BimlFlex Excel installation comes in two bitness flavors, 32-bit and 64-bit. The installed BimlFlex version needs to match the bitness of the installed version of Excel. This is initially set during installation of the BimlFlex application, but can be modified afterwards.
+Both Microsoft Office Excel and the BimlFlex Excel installation comes in two bitness flavors, 32-bit and 64-bit. The installed BimlFlex version needs to match the bitness of the installed version of Excel. This is initially set during installation of the BimlFlex App, but can be modified afterwards.
 
 * [Configuration Excel bitness](xref:bimlflex-change-excel-bitness)

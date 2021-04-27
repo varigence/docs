@@ -21,13 +21,13 @@ For Varigence to be able to analyze and provide information for a case, the incl
 
 To minimize the potential waiting period, and if possible, always include the metadata debug when opening a BimlFlex support case, inclujding any Extension Points that the project may have adopted.
 
-This information can be extracted through either the BimlFlex application or BimlStudio.
+This information can be extracted through either the BimlFlex App or BimlStudio.
 
 Saving the metadata to file creates a zip file that can be sent to the BimlFlex support team. If a secure upload link is needed due to size or security concers please contact the support team.
 
 ### Exporting metadata from BimlFlex
 
-In the BimlFlex application the relevant metadata can be made available, by using the `Export Metadata` feature in the Actions pane. The Actions pane is located on the home screen of the application.
+In the BimlFlex App the relevant metadata can be made available, by using the `Export Metadata` feature in the Actions pane. The Actions pane is located on the home screen of the application.
 
 ![Export Metadata](../user-guide/images/bimlflex-ss-v5-bimlflexapp-actions-pane.png "Export Metadata")
 

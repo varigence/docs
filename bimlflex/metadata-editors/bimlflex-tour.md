@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-tour
 title: BimlFlex Tour
-summary: Documentation describing the UI elements, navigation, and interaction within the BimlFlex application
+summary: Documentation describing the UI elements, navigation, and interaction within the BimlFlex App
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
@@ -56,7 +56,7 @@ Elements are provided to select either the associated parent entity or to naviga
 
 ## Tab and Form Action Buttons  
 
-The **Tab and Form Action Buttons** list the actions available within the currently selected item or user interface element in BimlFlex. While most areas in the BimlFlex application will show a set of generic action buttons, they are in fact context specific to the currently selected item or element. This means that buttons will be enabled or disabled when appropriate based on the selected element.
+The **Tab and Form Action Buttons** list the actions available within the currently selected item or user interface element in BimlFlex. While most areas in the BimlFlex App will show a set of generic action buttons, they are in fact context specific to the currently selected item or element. This means that buttons will be enabled or disabled when appropriate based on the selected element.
 
 For example, if tabs are available,  different button (such as 'add') will be available than if a specific metadata element is selected.
 
@@ -64,9 +64,9 @@ The Tab and Form Action Buttons are always located on the top of the screen, jus
 
 | Action | Overview |
 | ----------------- | ---------- |
-| Save | This will commit the values from the selected context to the metadata database. The application will prompt the user to save when context (e.g. screens) are changed and there is a risk that entered values will be lost |
+| Save | This will commit the values from the selected context to the BimlFlex Database. The application will prompt the user to save when context (e.g. screens) are changed and there is a risk that entered values will be lost |
 | Discard | The discard button will revert any changed values in the current context to the original values before they were updated, assuming these have not been saved yet |
-| Archive | Archive permanently deletes the metadata from the BimlFlex database |
+| Archive | Archive permanently deletes the metadata from the BimlFlex Database |
 | Duplicate | The duplicate action button will create a new item based on the (values of) the selected item |
 | Cloud | This slide toggle will show / hide certain configuration options that are only application to cloud connections |
 | Exclude | This slide toggle can flag a selected item to be excluded from the model. The item can still be seen by users who select the 'show excluded' option in the settings.
@@ -223,7 +223,7 @@ Values can be edited by double-clicking the desired property.
 BimlFlex features the ability to navigate directly to another entity whenever it is referenced from a calling table or form.
 Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor.
 Click the <img class="icon-inline" src="images/svg-icons/navigate.svg"/> icon for global navigation to any entity within the project.
-Every navigable entity within the BimlFlex application will have such an icon.
+Every navigable entity within the  will have such an icon.
 
 BimlFlex features a checkbox UI system for any list of items being viewed.
 Highlight over a single item, and a checkbox will appear on the left.

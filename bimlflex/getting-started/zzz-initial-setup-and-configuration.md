@@ -97,7 +97,7 @@ The Excel-based Metadata Editor is opened from the BimlFlex Ribbon tab in BimlSt
 
 ![New project in Excel](images/bimlflex-ss-v5-excel-new-project.png "New project in Excel")
 
-The BimlFlex Excel metadata editor comes with an additional Excel tab in the Ribbon for interacting with BimlFlex. The first step is to open the metadata connection pane and connect to the BimlFlex metadata database (default name BimlFlex).
+The BimlFlex Excel metadata editor comes with an additional Excel tab in the Ribbon for interacting with BimlFlex. The first step is to open the metadata connection pane and connect to the BimlFlex Database (default name BimlFlex).
 
 Once the connection is defined the metadata can be read into Excel. The master data is stored in the database and the working set is cached and displayed in Excel. The data is not updated in real time, so for collaborative projects, it is important to commit changes to the database and keep communicating within the team.
 

@@ -19,7 +19,7 @@ This tool can be used in any scenario where a schema is available, and there is 
 
 ### Locating the tool
 
-In the BimlFlex application, navigate to a *Source Connection* or associated *Source Project*. The Connection must have a valid connection string which points to the database which should be imported. In the details tab, click the `Import Metadata` button. This opens the Import Metadata page.
+In the BimlFlex App, navigate to a *Source Connection* or associated *Source Project*. The Connection must have a valid connection string which points to the database which should be imported. In the details tab, click the `Import Metadata` button. This opens the Import Metadata page.
 
 ![Import Metadata Ribbon](../metadata-editors/images/bimlflex-app-import-metadata-ribbon.png "Import Metadata Ribbon")
 

@@ -1,15 +1,15 @@
 ---
 uid: bimlflex-components-metadata-database
-title: BimlFlex metadata database
+title: BimlFlex Database
 summary: Documentation on the BimlFlex database, including deployment options, customers, versions, entities, and target mappings
 varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
-# BimlFlex metadata database
+# BimlFlex Database
 
-The metadata repository database is used by BimlFlex and BimlStudio to model and build the data warehouse, and to support the automation.
+The BimlFlex Database - the core metadata repository database - is used by BimlFlex and BimlStudio to model and build the data warehouse and to support the automation.
 
-Modelers, analysts and data warehouse team members use the BimlFlex Application to model and interact with the metadata. This metadata is written to the BimlFlex metadata repository database. BimlStudio then accesses the metadata by querying the database to provide the development and build experience for creating data warehouse artifacts.
+Modelers, analysts and data warehouse team members use the BimlFlex App to model and interact with the metadata. This metadata is written to the BimlFlex metadata repository database. BimlStudio then accesses the metadata by querying the database to provide the development and build experience for creating data warehouse artifacts.
 
 > [!IMPORTANT]
 > The BimlFlex database contains crucial data for the data warehouse automation process. It is important maintain a strict disaster recovery policy for this database.

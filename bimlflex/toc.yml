@@ -14,13 +14,13 @@
   - name: Concepts
     href: concepts/toc.yml
 
-  - name: BimlFlex Components
+  - name: BimlFlex Platform Components
     href: bimlflex-components/toc.yml    
 
-  - name: Metadata Editors
+  - name: BimlFlex App
     href: metadata-editors/toc.yml
 
-  - name: Design & Modeling Tools
+  - name: Design & Modeling Features
     href: modeling-tools/toc.yml
 
   - name: Build Solution

@@ -7,7 +7,7 @@ varigenceArticleType: Walkthrough
 ---
 # BimlFlex Excel Add-in
 
-BimlFlex Excel Add-in is the tool modelers and developers use to interact with the solution metadata. BimlFlex Excel Add-in connects to the BimlFlex metadata database.
+BimlFlex Excel Add-in is the tool modelers and developers use to interact with the solution metadata. BimlFlex Excel Add-in connects to the BimlFlex Database.
 
 ## Getting Started
 
@@ -29,9 +29,9 @@ The BimlFlex Excel Add-in Ribbon tab is made up of 5 main groups:
 
 Metadata Tools is as section containing tools and functionality that allows high level control over metadata. Importing metadata, connecting to various metadata sources or generating overview documentation of metadata.
 
-Retrieve Metadata is about getting the metadata from the metadata database (the BimlFlex Database) and bringing that metadata into Excel.
+Retrieve Metadata is about getting the metadata from the [BimlFlex Database](xref:bimlflex-database) and bringing that metadata into Excel.
 
-Publish Metadata allows Excel to save changed metadata back to the metadata database.
+Publish Metadata allows Excel to save changed metadata back to the BimlFlex database.
 
 Other and Status sections apply to when BimlFlex Excel Add-in is inspecting the metadata. When an issue is encountered, the Status section will display any validation messages.
 

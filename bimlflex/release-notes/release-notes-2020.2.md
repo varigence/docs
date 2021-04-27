@@ -43,7 +43,7 @@ The default installation location has been updated. Previous installations place
 * Enhanced support for ADF and Snowflake.
 * New customer scenarios for cloud-only users.
 * Improved delete detection.
-* Substantially improved load performance within the BimlFlex application.
+* Substantially improved load performance within the BimlFlex App.
 
 ## Settings Changes
 

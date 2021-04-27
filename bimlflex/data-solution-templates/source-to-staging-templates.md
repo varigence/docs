@@ -119,7 +119,7 @@ Defining a new Source to Staging project:
 1. Insert valid source and target destination connections
 1. Insert a valid staging connection, and if applicable add a valid Persistent Staging connection.
 1. Select the Source to Target integration template. Source to Staging loads uses the Source to Target template.
-1. Commit the changes to the Metadata database through the "Set Current Sheet" button on the Projects tab.
+1. Commit the changes to the BimlFlex database through the "Set Current Sheet" button on the Projects tab.
 
 ### Batch Implementation
 

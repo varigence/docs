@@ -12,7 +12,7 @@
   href: installing-build-server.md  
 - name: Installing BimlFlex developer tools
   href: installing-developer-tools.md  
-- name: Configuring bitness for the Excel plug-in
+- name: Configuring bitness for the Excel Add-In
   href: change-excel-bitness-bimlflex.md    
 - name: Upgrade Process
   href: upgrade-process.md

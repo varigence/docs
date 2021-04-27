@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-getting-started-configuring-the-bimlflex-environment
 title: Configuring the BimlFlex Environment
-summary: Guide on how to configure BimlFlex for metadata databases, BimlCatalog orchestration, and deploying databases
+summary: Guide on how to configure the BimlFlex database, BimlCatalog orchestration, and deploying databases
 varigenceProduct: BimlFlex
 varigenceArticleType: Walkthrough
 ---
@@ -9,17 +9,17 @@ varigenceArticleType: Walkthrough
 
 <!-- TODO: Delete as not applicable in current process anymore -->
 
-Once the BimlStudio and BimlFlex applications and components are installed, the BimlFlex environment needs to be configured.
+Once the BimlStudio, BimlFlex App and the required supporting components are installed, the BimlFlex environment needs to be configured.
 
 ## Configuring the BimlFlex databases
 
-BimlFlex uses a metadata database (BimlFlex) and an orchestration database (BimlCatalog). These need to be created and made available to developers so that the application can interact with them.
+BimlFlex uses a metadata database (the [BimlFlex Database](xref:bimlflex-database)) and an orchestration database (the [BimlCatalog Database](xref:bimlcatalog-database)). These need to be created and made available to developers so that the application can interact with them.
 
-### BimlFlex Metadata Database
+### BimlFlex Database
 
 More information: [BimlFlex metadata database](xref:bimlflex-database)
 
-The BimlFlex database contains all metadata required to build the data warehouse and the load process artifacts. It is accessed by the developers and modelers when designing and building the data warehouse. A standard installation has a single BimlFlex metadata database for all projects and all metadata.
+The BimlFlex database contains all metadata required to build the data warehouse and the load process artifacts. It is accessed by the developers and modelers when designing and building the data warehouse. A standard installation has a single BimlFlex Database for all projects and all metadata.
 
 ### BimlCatalog Orchestration and Audit Log Database
 

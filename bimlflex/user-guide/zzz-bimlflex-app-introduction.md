@@ -1,7 +1,7 @@
 ---
 uid: zzz-bimlflex-app-introduction
 title: BimlFlex App Introduction
-summary: Overview and introduction to the BimlFlex application
+summary: Overview and introduction to the BimlFlex App
 varigenceProduct: BimlFlex
 varigenceArticleType: Walkthrough
 ---
