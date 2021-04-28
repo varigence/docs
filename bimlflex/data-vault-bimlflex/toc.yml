@@ -13,6 +13,6 @@
 - name: Data Vault Best Practices
   href: data-vault-best-practices.md
 - name: Integration Keys
-  href: integration-keys.md
+  href: data-vault-concept-integration-keys.md
 - name: Driving Keys in Data Vault
   href: driving-keys-in-data-vault.md
