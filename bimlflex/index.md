@@ -12,7 +12,7 @@ Everything related to the BimlFlex components, and how to get things up-and-runn
 
 * [Installation and upgrade procedures](xref:bimlflex-setup-installing-bimlflex)
 * [Software and hardware requirements](xref:bimlflex-setup-software-and-hardware-requirements)
-* [Components of BimlFlex](xref:bimlflex-setup-components)
+* [Components of BimlFlex](xref:bimlflex-components-overview)
 
 ## [Getting Started](getting-started/index.md)
 
