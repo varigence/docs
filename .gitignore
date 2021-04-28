@@ -331,6 +331,9 @@ ASALocalRun/
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
 
+# Local DocFX content for local generation
+docfx/
+
 # DocFX generated content site folder
 _site/
 _pdf/

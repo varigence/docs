@@ -275,8 +275,3 @@ download links to this build:
 
 * [bimlflexdevsetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64613.0.exe)
 * [bimlflexruntimesetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64613.0.exe)
-
-Legacy Release Notes:
-
-* [BimlFlex Release Notes 2019](xref:bimlflex-release-notes-2019)
-* [BimlFlex Release Notes 2018](xref:bimlflex-release-notes-2018)

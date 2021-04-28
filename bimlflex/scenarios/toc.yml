@@ -1,43 +1,14 @@
 - name: Overview
   href: index.md
-
-  # Snowflake
-- name: Snowflake Implementation
-  href: snowflake-implementation.md
-
-  # Synapse
-- name: Synapse Implementation
-  href: synapse-implementation.md
-
-  # SSIS with On-Premise SQL Server 
-- name: SSIS on-premises SQL Server
-  href: ssis-on-prem-sql-server.md
-
-# Data Mart
-- name: Data Mart Configurations
-  href: data-mart-overrides.md
-
-# Other Concepts
-#- name: Export to File
-#  href: export-to-file.md
-- name: Master Data Services
+- name: Flat File Export
+  href: export-to-file.md
+- name: Using Master Data Services as Source
   href: master-data-services.md
-
-# Special sources
-# - name: Source Dynamics CRM
-#   href: source-dynamics-crm.md
 - name: Source Excel Plus
   href: source-excel-plus.md
-- name: Source OData
+- name: Using OData as Source
   href: source-odata.md
-#- name: Source Salesforce
-#  href: source-salesforce.md
-- name: Source Stored Procedure
+- name: Using Stored Procedures as Source
   href: source-stored-procedure.md
-- name: Source SQL Server CDC
+- name: Using SQL Server CDC as Source
   href: source-cdc.md
-#- name: Source SQL Server CT
-#  href: source-ct.md
-#- name: Source Flat File
-#  href: source-flat-file.md
-

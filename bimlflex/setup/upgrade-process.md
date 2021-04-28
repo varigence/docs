@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-upgrade-and-testing
+uid: bimlflex-setup-upgrade-and-testing
 title: Upgrade and Testing Process
 varigenceProduct: BimlFlex
 varigenceArticleType:enceArticleType: Walkthrough
@@ -12,8 +12,8 @@ BimlFlex comes in a consolidated installer that contains the following component
 * BimlFlex component of BimlStudio
 * The BimlFlex App
 * The BimlFlex Excel Add-in
-* BimlFlex Metadata database
-* BimlCatalog Orchestration database
+* BimlFlex Database
+* BimlCatalog Database
 * BimlFlex Custom SSIS Components for SQL Server
 * BimlFlex Custom SSIS Components for Snowflake
 

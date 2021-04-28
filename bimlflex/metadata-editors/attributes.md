@@ -7,7 +7,7 @@ varigenceArticleType: Conceptual
 ---
 # Attributes Editor
 
-The **Attributes Editor** is used to manage **Attributes** in the BimlFlex application. **Attributes** are used to conditionally override **Configurations** and **Settings**. They can also be used to extend the metadata model for bespoke coding requirements.
+The **Attributes Editor** is used to manage **Attributes** in the BimlFlex App. **Attributes** are used to conditionally override **Configurations** and **Settings**. They can also be used to extend the metadata model for bespoke coding requirements.
 
 ![BimlFlex - Attributes Editor](images/bfx-attributes-editor-overview.png "BimlFlex - Attributes Editor")
 

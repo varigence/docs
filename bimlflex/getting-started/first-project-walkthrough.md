@@ -41,7 +41,7 @@ The following is needed:
 
 Once the installation is completed and the databases are available, it is time to create the metadata customer/project that will be used in the getting started process. Once the project is available it is time to load some sample metadata to get started.
 
-More information: [Setting up the AdventureWorksLT source database](xref:bimlflex-getting-started-setting-up-adventureworkslt2012-source-database)
+More information please refer to the information about [setting up the AdventureWorksLT source database](xref:bimlflex-getting-started-setting-up-adventureworkslt2012-source-database)
 
 ## Load Sample Metadata
 
@@ -53,7 +53,7 @@ There are several sample metadata sets available for different architectures.
 
 This walkthrough uses **01 - MSSQL Starting Point**
 
-More information: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
+More information please refer to the guide on [loading Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
 
 ## Import of source metadata
 

@@ -1,13 +1,11 @@
 ---
-uid: bimlflex-troubleshooting-tips
+uid: bimlflex-support-troubleshooting-tips
 title: Troubleshooting Tips
 summary: Troubleshooting tips for when errors occur within BimlFlex or BimlStudio
 ---
 # Troubleshooting Tips
 
-When an error occurs in either tool, these tips will help to identify the root cause.
-
-BimlFlex is built on BimlStudio and has a data model dependency on the BimlFlex metadata database.
+When an error occurs in any of the components of the BimlFlex App, these tips can help to identify the root cause.
 
 ## Reviewing BimlStudio errors
 

@@ -1,3 +1,8 @@
+---
+uid: bimlflex-release-notes-2019-2
+name: BimlFlex Release Notes 2019.2
+summary: release notes for current version of BimlFlex
+---
 # New Features in BimlFlex 2019.2
 
 BimlFlex 2019.2 is a service release that fixes several customer reported issues as well as introduces a set of new and improved features.

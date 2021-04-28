@@ -1,27 +1,19 @@
 ---
 uid: bimlflex-scenarios-overview
 title: BimlFlex Scenarios Overview
-summary: Overview of scenarios for BimlFlex, including Snowflake, Azure Synapse, SQL Server, Export to File, Master Data Services, Excel, Odata, and Stored Procedures
----
-# BimlFlex Scenarios Overview
+summary: Overview of supporting techniques that BimlFlex provides
 
-BimlFlex supports a number of target Data Warehouse platforms. It provides load patterns that use the BimlFlex metadata to create the required ETL and ELT for loading these Data Warehouses.
+# Supporting BimlFlex Connectivity
 
-Main platforms and architectures:
-
-* [Snowflake](xref:bimlflex-snowflake-implementation)
-* [Azure Synapse](xref:bimlflex-synapse-implementation)
-* [Microsoft on-premises SQL Server](xref:ssis-on-prem-sql-server)
+A Data Warehouse usually requires more than only the right framework, database and integration software. BimlFlex supports a variety of additional connection and technology options to complete the Data Warehouse.
 
 ## Other Concepts
 
 * [Export to File](xref:bimlflex-export-to-file)
+
+## Special Data Sources
+
 * [Master Data Services](xref:bimlflex-master-data-services)
-
-## Special sources
-
-<!-- * [Dynamics CRM](xref:source-dynamics-crm) -->
 * [Excel Files](xref:bimlflex-source-excel-plus)
 * [Odata](xref:bimlflex-source-odata)
 * [Stored Procedure](xref:bimlflex-source-stored-procedure)
-<!-- Salesforce -->

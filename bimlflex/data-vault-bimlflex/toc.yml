@@ -1,0 +1,18 @@
+- name: Overview
+  href: index.md
+- name: Hubs
+  href: data-vault-concept-hub.md
+- name: Links
+  href: data-vault-concept-link.md
+- name: Satellite
+  href: data-vault-concept-satellite.md
+- name: PIT and Bridge
+  href: data-vault-concept-pit-bridge.md        
+- name: Reference Data
+  href: data-vault-concept-reference-data.md       
+- name: Data Vault Best Practices
+  href: data-vault-best-practices.md
+- name: Integration Keys
+  href: data-vault-concept-integration-keys.md
+- name: Driving Keys in Data Vault
+  href: driving-keys-in-data-vault.md
