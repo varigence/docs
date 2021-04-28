@@ -7,6 +7,8 @@ varigenceArticleType: Conceptual
 ---
 # Satellites
 
+Satellites in Data Vault are the `Context` entities, that provide descriptive information (properties, attributes) for [Core Business Concepts](xref:bimlflex-data-vault-concept-hub) and [Natural Business Relationships](xref:bimlflex-data-vault-implementation-link).
+
 ## Implementation of the Satellite concept in BimlFlex
 
-* [Hub Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-satellite)
+* [Satellite Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-satellite)

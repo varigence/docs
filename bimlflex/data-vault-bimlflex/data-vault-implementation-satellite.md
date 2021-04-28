@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-data-vault-concept-satellite
+uid: bimlflex-data-vault-implementation-satellite
 title: Data Vault Satellites
 summary: Overview of Data Vault Satellites
 varigenceProduct: BimlFlex
