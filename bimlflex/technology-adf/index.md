@@ -3,7 +3,7 @@ uid: adf-deployment-overview
 title: ADF Deployment Overview
 summary: Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through powershell and Azure portal 
 ---
-# Azure Data Factory Deployment Overview
+# BimlFlex for Azure Data Factory
 
 Azure Data Factory (ADF) is a common target for BimlFlex Data Warehouse Automation solutions. In this section we will discuss items that pertain to ADF deployment. Currently ADF only supports the ELT model. This means orchestration of SQL-based transformations only.
 
@@ -15,7 +15,9 @@ The majority of BimlFlex deployments consist of several teams working on the sam
 
 ## Continuous Integration and Continuous Delivery
 
-One of the core features of the BimlFlex Data Warehouse Automation solution is that it can be used in a CI/CD pipeline. There are many different approaches used for CI/CD. Additionally, Data Warehouses have their own special considerations compared to the more generic CI/CD processes. BimlFlex is useful both in the manual automation of build and deployment steps using command line scripts, and the automatic build and processing of changes through a build server pipeline.
+One of the core features of the BimlFlex Data Warehouse Automation solution is that it can be used in a Continuous Integration (CI) and Continuous Delivery (CD) pipeline.
+
+There are many viable approaches to configure CI/CD, and Data Warehouses have their own special considerations compared to the more generic CI/CD processes. BimlFlex caters for this, and can be used for the manual automation of build and deployment steps using command line scripts as well as the automatic build and processing of changes through a build server pipeline.
 
 [More about Continuous Integration and Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery)
 
@@ -27,7 +29,7 @@ In certain BimlFlex solutions there are properties that get stored in **Azure Ke
 
 ## PowerShell Deployment
 
-Not only does BimlFlex produce all of your Azure Data Factory assets needed for deployment, it also generates a PowerShell deployment script with values pulled directly from your settings. Deployment has never been easier!
+BimlFlex produces all Azure Data Factory assets needed for deployment, and also generates a PowerShell deployment script with values pulled directly from your settings for ease of deployment.
 
 [More about PowerShell deployment](xref:bimlflex-adf-using-powershell)
 

@@ -2,9 +2,6 @@
   href: index.md
   topicHref: index.md
   items:
-  - name: Support Guide
-    href: support/toc.yml
-
   - name: Setting up BimlFlex
     href: setup/toc.yml
 
@@ -55,6 +52,9 @@
 
   - name: Reference Docs
     href: reference-documentation/toc.yml
+
+  - name: Support Guide
+    href: support/toc.yml
 
   - name: Tips And Tricks
     href: tips-and-tricks/toc.yml
