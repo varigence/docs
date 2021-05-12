@@ -14,7 +14,7 @@ BimlFlex provides an effective multi-tenant configuration to allow working with 
 * [The BimlFlex Customer Concept](xref:bimlflex-concepts-customer)
 * [Managing Versions in BimlFlex](xref:bimlflex-concepts-versions)
 
-## Importing Metadata
+## Working with Design Metadata
 
 The primary source BimlFlex uses to generate Data Warehousing and Business Intelligence assets is metadata. Metadata is most commonly in the form of objects with corresponding attributes.
 
@@ -24,23 +24,17 @@ BimlFlex provides an import tool which is accessible from the Connections and Pr
 
 * [Importing Metadata to BimlFlex](xref:bimlflex-concepts-importing-metadata)
 
-## Hashing
+## Data Solution Concepts
 
-Hashing is the term used for one-way encryption which can be implemented by applying a selected encryption algorithm. BimlFlex provides various approaches for implementing hashing techniques for the data solution.
+A Data Solution comprises a number of concepts, technologies and decisions around information modelling and solution design. This section provides an overview of essential concepts that are part of these considerations, and how BimlFlex supports them.
 
-* [Using hashing in BimlFlex](xref:bimlflex-concepts-hashing)
+### Architecture
 
-## Load Parameters
+### Implementation
 
-BimlFlex provides a number of standard out-of-the-box parameters, as well as the functionality to create your own. Parameters can be used in many ways - for example for managing data load windows, orchestration and standardised or default values.
-
-* [BimlFlex Parameters](xref:bbimlflex-concepts-metadata-parameters)
-
-## Extension points
-
-Extension points are one of the key ways BimlFlex provides customisation to cater for specific scenarios. While the standard templates cover most real-world scenarios, there may be a specific tweak that would improve certain edge cases. These modifications can be defined using extension points, that allow for custom logic to be added to a template at various points in the process.
-
-* [Extension Points](xref:bimlflex-concepts-extension-points)
+* [Using hashing in BimlFlex](xref:bimlflex-concepts-hashing). Hashing is the term used for one-way encryption which can be implemented by applying a selected encryption algorithm. BimlFlex provides various approaches for implementing hashing techniques for the data solution.
+* [BimlFlex parameters](xref:bbimlflex-concepts-metadata-parameters). BimlFlex provides a number of standard out-of-the-box parameters, as well as the functionality to create your own. Parameters can be used in many ways - for example for managing data load windows, orchestration and standardised or default values.
+* [Extension Points](xref:bimlflex-concepts-extension-points). Extension points are one of the key ways BimlFlex provides customisation to cater for specific scenarios. While the standard templates cover most real-world scenarios, there may be a specific tweak that would improve certain edge cases. These modifications can be defined using extension points, that allow for custom logic to be added to a template at various points in the process.
 
 ## Delete Detection
 
