@@ -7,7 +7,7 @@ varigenceArticleType: Conceptual
 ---
 # Batch Orchestration
 
-<!-- TODO: Update w new flow agnostic to SSIS/ADF and new graphics, clean up-->
+Data can be loaded in the the data solution using different scheduling approaches. For example, data can be loaded and processed in batches that run daily or multiple times each day - or data can be loaded in a continuous fashion. In all cases, the BimlFlex templates cater for the orchestration of this so that data is processed in the right order.
 
 BimlFlex includes an Orchestration engine that controls failure scenario management, auditing and logging of runs. All Orchestration data is stored in the BimlCatalog database.
 

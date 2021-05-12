@@ -1,18 +1,20 @@
 ---
-uid: bimlflex-concepts-customer
-title: BimlFlex customer concept
-summary: Overview of the customer concept in BimlFlex
+uid: bimlflex-concepts-persistent-staging-area
+title: BimlFlex persistent staging area concept
+summary: Overview of the persistent staging area concept in BimlFlex
 varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
-# BimlFlex Customer Concept
+# Persistent Staging Area Concept
 
-BimlFlex offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models. These are referred to as `Customers`.
+A `Persistent Staging Area` (PSA) is an optional area in the data solution design that records the transactions (events) that were received by the data solution over time. Much like an archive, it shows the changes in data in its original form and prior to any interpretation towards data integration or delivery.
 
-Customers effectively provide a *multi-tenancy* setup that can be used to define different solutions within the same organisation.
+The PSA provides a historised view of the data received from the operational systems, even if these systems themselves do not have this data anymore. With a PSA, it is possible to reload the upstream data solution from the original transactions - *replaying the history* of transactions into a potential different information model.
 
-For example, if there is a requirement to deliver a solution for Finance indepdenent from Human Resources these areas can be defined as separate Customers in BimlFlex. Different Customers can also be created to look into different ways of deployment, for example when investigating a new technical target platform or data integration approach.
+In BimlFlex, the PSA concept is referred to as an `ODS` - an Operational Data Store. These terms can mean many things to many people, but the underlying idea is that there are two forms on a PSA / ODS that BimlFlex supports:
 
-Within a Customer, all metadata is specific to the selected Customer. So metadata that is imported or modified for a specific Customer will not appear in a different one.
+1. Full history, which captures the incoming transactions as described above. And,
+2. Current state, which only shows the most recent state of a given record.
 
-It is easy to switch between the selected Customer in BimlFlex. This can be done from the [BimlFlex Toolbar](xref:bimlflex-application-toolbar-icons-and-options).
+A PSA is a good option to include in the overall design if you gradually build out your data solution. This is because it's possible to start collecting data, and building up a history of events, while considering what the target model should look like. Once the target model (information model, or business model) is sufficiently completed the available data can be loaded into this model. It is also possible to change your mind and tweak the target model, after which the PSA can provide the data to populate the updated model.
+

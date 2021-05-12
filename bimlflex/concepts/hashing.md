@@ -7,6 +7,8 @@ varigenceArticleType: Conceptual
 ---
 # Introduction to hashing in BimlFlex
 
+Hashing is the term used for one-way encryption which can be implemented by applying a selected encryption algorithm. BimlFlex provides various approaches for implementing hashing techniques for the data solution
+
 BimlFlex uses hashing in two common scenarios, for generating surrogate Data Warehouse keys (as hash-based keys) and for row checksums to simplify identifying changes to attributes.
 
 Hashing keys to generate Data Warehouse keys allows integration keys to be loaded in a deterministic way from multiple sources in parallel. This also removes the need for key lookups between related entities.
