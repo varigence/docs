@@ -18,3 +18,4 @@ In BimlFlex, the PSA concept is referred to as an `ODS` - an Operational Data St
 
 A PSA is a good option to include in the overall design if you gradually build out your data solution. This is because it's possible to start collecting data, and building up a history of events, while considering what the target model should look like. Once the target model (information model, or business model) is sufficiently completed the available data can be loaded into this model. It is also possible to change your mind and tweak the target model, after which the PSA can provide the data to populate the updated model.
 
+In BimlFlex, a PSA can be defined as a specific `Integration Stage` for a given `Connection`. This feature will inform BimlFlex that objects mapped to this connection require PSA functionality to be created.
