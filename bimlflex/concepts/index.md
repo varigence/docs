@@ -27,7 +27,7 @@ BimlFlex provides an import tool which is accessible from the Connections and Pr
 
 ## Data Solution Concepts
 
-A Data Solution comprises a number of concepts, technologies and decisions around information modelling and solution design. This section provides an overview of essential concepts that are part of these considerations, and how BimlFlex supports them.
+A data solution comprises of a number of concepts, technologies and decisions around information modelling and solution design. This section provides an overview of essential concepts that are part of these considerations, and how BimlFlex supports them.
 
 ### Architecture
 

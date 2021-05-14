@@ -17,7 +17,7 @@ BimlFlex applies standard practices for using parameters but supports any custom
 
 > [!NOTE]
 > For information on how these use and configure **Parameters** in BimlFlex see associated link below.  
-> BimlFlex Documentation: [Load Parameters](xref:bimlflex-metadata-parameters)
+> BimlFlex Documentation: [Load Parameters](xref:bimlflex-concepts-metadata-parameters)
 
 ## Editor Overview  
 
@@ -98,7 +98,7 @@ The Search field will return results in realtime, only presenting Parameters con
 
 > [!NOTE]
 > For information on how these use and configure **Parameters** in BimlFlex see associated link below.  
-> BimlFlex Documentation: [Load Parameters](xref:bimlflex-metadata-parameters)
+> BimlFlex Documentation: [Load Parameters](xref:bimlflex-concepts-metadata-parameters)
 
 ## Allowed Values  
 

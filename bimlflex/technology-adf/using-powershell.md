@@ -192,7 +192,7 @@ Pipelines can either be run manually or started using ADF triggers.
 The following options are available for creating Triggers to run the Pipelines
 
 1. Create the Trigger in the [ADF Authoring Tool](https://docs.microsoft.com/en-us/azure/data-factory/author-visually) or through PowerShell
-1. Create the Trigger in BimlFlex through an [Extension Point](xref:bimlflex-extension-points).
+1. Create the Trigger in BimlFlex through an [Extension Point](xref:bimlflex-concepts-extension-points).
 
 An example Extension Point that creates an ADF trigger is listed below. Adding the trigger as an Extension Point will include it in the ARM template, enabling it to be deployed with the rest of the ADF assets.
 
