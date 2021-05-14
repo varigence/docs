@@ -9,4 +9,4 @@ A forward-only deployment approach (migration plan) is recommended to work with 
 
 This approach means that changes in the structures are applied as new version / structures in the target platform.
 
-For example, when a table structure changes the forward-only apporach will mean that a new table is created and the data is loading into this - as opposed to updating the table in place.
+For example, when a table structure changes the forward-only approach will mean that a new table is created and the data is loading into this - as opposed to updating the table in place.
