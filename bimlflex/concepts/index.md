@@ -33,9 +33,9 @@ A data solution comprises of a number of concepts, technologies and decisions ar
 
 Data solutions come in many shapes and forms, and BimlFlex aims to provide maximum configurability on the overall architecture of the solution. The following concepts are relevant for this:
 
-* [The Persistent Staging Area](bimlflex-concepts-persistent-staging-area)
+* [The Persistent Staging Area](xref:bimlflex-concepts-persistent-staging-area)
 
-### Implementation
+### Delivery
 
 Irrespective of the design of the data solution architecture, there are many options to make sure the design is delivered the way it is intended.
 
