@@ -13,12 +13,14 @@ The PSA provides a historised view of the data received from the operational sys
 
 The PSA tables or files have the same structure as the source they receive the data from, with a few additions to enable storing multiple version of the data based on the source primary key. Generally speaking, the PSA is a copy of the source table that can store its history.
 
-In BimlFlex, the PSA concept is referred to as an `ODS` - an Operational Data Store. These terms can mean many things to many people, but the underlying idea is that there are two forms on a PSA / ODS that BimlFlex supports:
+There are two forms on a PSA that BimlFlex supports:
 
 1. Full history, which captures the incoming transactions as described above. And,
 2. Current state, which only shows the most recent state of a given record.
 
-The main difference is that in the current state option, new changes in data are inserted (if new) or updated (if existing) whereas in the full history configuration new data is always inserted.
+The main difference is that in the full history configuration new data is always inserted, whereas in the current state option new changes in data are inserted (if new) or updated (if existing). In BimlFlex, this version of the PSA concept is referred to as an `ODS` - an Operational Data Store.
+
+In other words, by default history is recorded in the PSA but this can be configured to not store history - which creates an ODS.
 
 A PSA is a good option to include in the overall design if you gradually build out your data solution. This is because it is possible to start collecting data, and build up a history of events, while considering what the target model (information model, or business model) should look like. Once the target model is sufficiently completed the available data can be loaded into this model.
 
@@ -36,10 +38,12 @@ In this setup, an option to `Persist History` is available. When this option is 
 
 If added to the design, the PSA can be used in various ways in the solution. In the diagram below the data flow the incoming data (delta / differential) is loaded into the staging area and the PSA in the same batch. During regular processing the data is loaded into the next layers from the staging area.
 
-In this configuration the PSA can be used for re-initialization. During re-initialization the regular processing is paused and the full history from the PSA is loaded into selected staging area tables. The upstream layers can be reloaded from here and using the historical data that is now avialable. This is the 3rd data flow in the diagram.
+In this configuration the PSA can be used for re-initialization. During re-initialization the regular processing is paused and the full history from the PSA is loaded into selected staging area tables. The upstream layers can be reloaded from here and using the historical data that is now available. This is the 3rd data flow in the diagram.
 
 ![Persistent Staging](images/bimlflex-dataflow-reinitialisation.png "Persistent Staging for re-initialization")
 
 In other configurations the PSA can also be used directly to populate the upstream layers with data. This makes the PSA an integral part of the solution. The staging area is still used for various purposes, such as deriving the data delta and staging flat files.
+
+This approach uses an `Staged Query` entity type, which allows an already available (staged) dataset to be used for further processing to a Data Vault or Dimensional model. The interface between the PSA and the upstream model (Data Vault or Dimensional) must be defined as a separate object in the metadata to allow processing.
 
 ![Persistent Staging](images/bimlflex-dataflow-psa-centric.png "Persistent Staging as data solution foundation")
