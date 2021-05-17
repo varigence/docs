@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-data-vault-concept-pit-bridge
+uid: bimlflex-data-vault-concept-bridge
 title: Data Vault PIT and Bridge tables
 summary: Overview of Data Vault supporting constructs
 varigenceProduct: BimlFlex

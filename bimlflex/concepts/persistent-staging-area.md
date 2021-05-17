@@ -49,3 +49,12 @@ However, this is not the only way to do this. In other configurations the PSA ca
 This approach uses an `Staged Query` entity type, which allows an already available (staged) dataset to be used for further processing to a Data Vault or Dimensional model. The interface between the PSA and the upstream model (Data Vault or Dimensional) must be defined as a separate object in the metadata to allow processing.
 
 Essentially, the Staged Query can be used to retrieve data from the PSA.
+
+Explanation of the high level data flow numbers:
+
+1. Data is loaded into the staging area.
+2. From the staging area, data delta is inserted into the PSA. Note that in some patterns the staging area and the PSA are loaded at the same time.
+3. Data can optionally be re-initialized; copied back into the staging area for re-processing of upstream layers.
+4. The data can be merged into the Data Vault or Dimensional Model from the staging area or from the PSA. This is a configurable option.
+5. Any transformations required to map the data to the target model are applied.
+6. Data is delivered in a form that is fit for consumption.

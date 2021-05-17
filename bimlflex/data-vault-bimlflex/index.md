@@ -15,7 +15,8 @@ Data Vault provides an easy-to-explain and flexible way to tackle complex issues
 * [Data Vault Hubs](xref:bimlflex-data-vault-concept-hub) - the Core Business Concept
 * [Data Vault Links](xref:bimlflex-data-vault-concept-link) - the Natural Business Relationship
 * [Data Vault Satellites](xref:bimlflex-data-vault-concept-satellite) - the Context entity with descriptive information
-* [Point-in-Time and Bridge tables](xref:bimlflex-data-vault-concept-pit-bridge)
+* [Point-in-Time tables](xref:bimlflex-data-vault-concept-pit)
+* [Bridge tables](xref:bimlflex-data-vault-concept-bridge)
 * [Reference Data](xref:bimlflex-data-vault-concept-reference-data)
 * [Integration Key Concept](xref:bimlflex-data-vault-integration-keys-and-relationships)
 
