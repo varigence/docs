@@ -36,14 +36,16 @@ In this setup, an option to `Persist History` is available. When this option is 
 
 ## Data flows related to the PSA
 
-If added to the design, the PSA can be used in various ways in the solution. In the diagram below the data flow the incoming data (delta / differential) is loaded into the staging area and the PSA in the same batch. During regular processing the data is loaded into the next layers from the staging area.
+If added to the design, the PSA can be used in various ways in the solution.
 
-In this configuration the PSA can be used for re-initialization. During re-initialization the regular processing is paused and the full history from the PSA is loaded into selected staging area tables. The upstream layers can be reloaded from here and using the historical data that is now available. This is the 3rd data flow in the diagram.
+During regular processing the data is loaded into the next layers from the staging area. For ETL style loading patterns, data can be loaded into the staging area and the PSA in the same batch. Most ETL style patterns first load data into the staging area and then merge the differential into the PSA.
+
+The PSA can be used for *re-initialization*. During re-initialization, the regular processing is paused and the full history from the PSA is loaded into selected staging area tables. The upstream layers can be reloaded from here and using the historical data that is now available. This is the 3rd data flow in the diagram.
 
 ![Persistent Staging](images/bimlflex-dataflow-reinitialisation.png "Persistent Staging for re-initialization")
 
-In other configurations the PSA can also be used directly to populate the upstream layers with data. This makes the PSA an integral part of the solution. The staging area is still used for various purposes, such as deriving the data delta and staging flat files.
+However, this is not the only way to do this. In other configurations the PSA can also be used directly to populate the upstream layers with data. This makes the PSA an integral part of the solution. The staging area is still used for various purposes, such as deriving the data delta and staging flat files.
 
 This approach uses an `Staged Query` entity type, which allows an already available (staged) dataset to be used for further processing to a Data Vault or Dimensional model. The interface between the PSA and the upstream model (Data Vault or Dimensional) must be defined as a separate object in the metadata to allow processing.
 
-![Persistent Staging](images/bimlflex-dataflow-psa-centric.png "Persistent Staging as data solution foundation")
+Essentially, the Staged Query is used to retrieve data from the PSA.
