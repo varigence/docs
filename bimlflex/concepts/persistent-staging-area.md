@@ -58,3 +58,30 @@ Explanation of the high level data flow numbers:
 4. The data can be merged into the Data Vault or Dimensional Model from the staging area or from the PSA. This is a configurable option.
 5. Any transformations required to map the data to the target model are applied.
 6. Data is delivered in a form that is fit for consumption.
+
+---
+
+Carl social adds:
+
+## MailChimp body
+
+When considering the design of a EDW, the inclusion of a Persistent Staging Area (PSA) can range anywhere from optional to essential.
+As data requirements are (almost) certain to change over time, a PSA is an excellent way to mitigate the impact of changes both expected and unforeseen.
+A PSA in your overall design can minimize strain on source system(s), permit auditing, allow the transformation of existing data to be reloaded with new attributes, and insure against unexpected failure.
+
+BimlFlex supports two common types of Persistent Staging Areas: full history and current state, and can manage these scenarios with only a few simple settings.
+Once implemented, a PSA can be utilized based on advancements to your data requirements or react to upstream data layer changes.
+
+So whether your organization desperately needs a PSA, is already considering its implementation, or already has one but wants to maximize its utility, read more at the link below:
+
+"Persistent Staging Area (PSA) Concepts" button.
+
+## Tweets
+
+PSA: Your organization needs a PSA. Managing your Persistent Staging Area settings within BimlFlex only takes a few clicks. Find out more here:
+
+Persistent Staging Areas: Optional or essential? As data requirements continue to shift and evolve, a PSA allows you to adjust, react, and reload historical data.
+
+The benefits of a PSA far outweigh the time and cost managed to implement one. Speaking of time and cost, let BimlFlex save you both with a monthly subscription and no hefty up front costs.
+
+A PSA can be used in a variety of complex data flows. The settings in BimlFlex to control the behavior of your PSA? Not complex. Read more about how a few simple settings can yield significant changes:
