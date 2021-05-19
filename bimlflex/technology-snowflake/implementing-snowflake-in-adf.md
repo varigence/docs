@@ -35,7 +35,7 @@ Varigence recognizes that Data Vault 2.0 embraces the concept of parallel loadin
 BimlFlex 2020 automatically provides a number of metadata samples, with a specific focus on Snowflake within Azure Data Factory in this example.
 Loading the sample metadata from within BimlFlex is as simple as selecting the snapshot from the *Load Sample Metadata* dropdown menu on the BimlFlex **Dashboard**.
 
-![Snowflake Data Vault ADF Selection](images\snowflake-data-vault-adf.png "Snowflake Data Vault ADF Selection")
+![Snowflake Data Vault ADF Selection](../concepts/images/snowflake-data-vault-adf.png "Snowflake Data Vault ADF Selection")
 
 > [!NOTE]
 >More information on the specific creation of data marts and data vaults:
@@ -53,25 +53,25 @@ The connection settings remain standard as per previously uploaded BimlFlex feat
 * *Source System* is cloud enabled
 * *Staging / Landing Environment* is configured for Blob Storage configured with ADF linked services
 
-![Standard Connection Settings](images/connection-settings-1.png "Standard Connection Settings 1")
+![Standard Connection Settings](../concepts/images/connection-settings-1.png "Standard Connection Settings 1")
 
 * *System Type* is configured for Snowflake Data Warehouse
 * *Linked Service Type* is configured for Snowflake
 
-![Standard Connection Settings 2](images/connection-settings-2.png "Standard Connection Settings 2")
+![Standard Connection Settings 2](../concepts/images/connection-settings-2.png "Standard Connection Settings 2")
 
 > [!NOTE]
 > Within Azure Data Factory the "Linked Service Type" for Snowflake does not actually exist. However, when this option is selected, BimlFlex automatically knows to use the function bridge specifically created to load data into Snowflake
 
 * *Integration Template* is configured for ADF Source -> Target
 
-![Standard Connection Settings 3](images/connection-settings-3.png "Standard Connection Settings 3")
+![Standard Connection Settings 3](../concepts/images/connection-settings-3.png "Standard Connection Settings 3")
 
 The simplicity of selecting settings, paired with the intelligence of BimlFlex to execute the appropriate functions, greatly streamlines the process of converging any solution into Snowflake.
 
 Prior to building out a solution BimlFlex also allows the opportunity to configure batches, assign batches to different compute warehouses, or adjust scaling up or down, from within the BimlFlex **Batches** menu.
 
-![Configuring Batches Prior to Solution](images/batches-menu.png "Configuring Batches Prior to Solution")
+![Configuring Batches Prior to Solution](../concepts/images/batches-menu.png "Configuring Batches Prior to Solution")
 
 ## Solution Output
 
@@ -79,7 +79,7 @@ The metadata has been loaded.
 The solution has been built.  
 The output has been configured for Snowflake, deployed to Azure Data Factory, and visualized as such:  
 
-![Snowflake Solution Output](images/snowflake-solution-output.png "Snowflake Solution Output")
+![Snowflake Solution Output](../concepts/images/snowflake-solution-output.png "Snowflake Solution Output")
 
 Having now generated a solution, which may or may not consist of multiple compute warehouses targeting different batches, the following options may be adjusted:
 
@@ -87,7 +87,7 @@ Having now generated a solution, which may or may not consist of multiple comput
 * View copy commands including completions or errors.
 * Suspend a solution
 
-![Completions and Errors in Solution](images/completions-and-errors-output.png "Completions and Errors in ADF")
+![Completions and Errors in Solution](../concepts/images/completions-and-errors-output.png "Completions and Errors in ADF")
 
 >[!NOTE]
 > Any files in error will be moved to an error folder or archived. On the next run those files will have already been processed and moved to an appropriate folder.
@@ -115,7 +115,7 @@ Snowflake code within BimlFlex contains all deployed tables, stage queries, dime
 
 All BimlFlex code is compiled into 100% Snowflake stored procedures.
 
-![Snowflake Source Code](images/snowflake-source-code.png "Snowflake Source Code")
+![Snowflake Source Code](../concepts/images/snowflake-source-code.png "Snowflake Source Code")
 
 As a result, BimlFlex offers the ability to run all code using whatever orchestration framework desired by a user, straight into their solution, with no vendor locking issues whatsoever.
 
