@@ -14,7 +14,7 @@ BimlFlex has established an intuitive and effortless process to implement Snowfl
 
 ## Azure Data Factory with Snowflake Automation Architecture
 
-![Azure Data Factory Automation Architecture](images\bimlflex-diagram-adf-automation.png "Azure Data Factory Automation Architecture")
+![Azure Data Factory Automation Architecture](../concepts/images/bimlflex-diagram-adf-automation.png "Azure Data Factory Automation Architecture")
 
 Regardless of source data, this example will utilize Azure Data Factory copy commands to ingest and land the source data in Azure Blob Storage as a parquet file.
 Using Snowflake stored procedure code will call the function bridge to load the data into the Snowflake database and/or persistent staging area.
