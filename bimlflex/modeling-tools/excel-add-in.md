@@ -29,7 +29,7 @@ The BimlFlex Excel Add-in Ribbon tab is made up of 5 main groups:
 
 Metadata Tools is as section containing tools and functionality that allows high level control over metadata. Importing metadata, connecting to various metadata sources or generating overview documentation of metadata.
 
-Retrieve Metadata is about getting the metadata from the [BimlFlex Database](xref:bimlflex-database) and bringing that metadata into Excel.
+Retrieve Metadata is about getting the metadata from the [BimlFlex Database](xref:bimlflex-components-metadata-database) and bringing that metadata into Excel.
 
 Publish Metadata allows Excel to save changed metadata back to the BimlFlex database.
 
@@ -88,7 +88,7 @@ The `Auto Freeze` function freeze the left-hand side and top of the sheet in Exc
 
 All metadata import functionality has been moved to the BimlFlex App.
 
-More information: [BimlFlex Importing Metadata](xref:bimlflex-importing-metadata)
+More information: [BimlFlex Importing Metadata](xref:bimlflex-concepts-importing-metadata)
 
 ## Retrieve Metadata
 

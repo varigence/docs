@@ -21,7 +21,7 @@ The development workflow is focused around the BimlFlex App and the BimlStudio-b
 
 > [!NOTE]
 > Complete the **Setup** first  
-> More information: [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+> More information: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
 
 ## BimlStudio project
 
@@ -55,9 +55,9 @@ The BimlFlex project in BimlStudio communicate with the BimlFlex BimlFlex databa
 
 The databases are created and updated through the BimlFlex installer. It is also possible to set up the databases from the BimlFlex ribbon tab in BimlStudio.
 
-More information, creating the database through the installer: [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+More information, creating the database through the installer: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
 
-More information, creating the database through BimlStudio: [BimlFlex Metadata Database Installation](xref:bimlflex-metadata-database-installation)
+More information, creating the database through BimlStudio: [BimlFlex Metadata Database Installation](xref:bimlflex-setup-metadata-database-installation)
 
 ### Creating Customer
 
@@ -123,7 +123,7 @@ Once the connection is defined the metadata can be read into Excel. The master d
 
 Retrieve all metadata into Excel by clicking the `Get All Entities` and `Get All Settings` buttons in the Excel BimlFlex Ribbon UI.
 
-More information: [Bulk Edit Overview](xref:bulk-edit-metadata-overview)
+More information: [Bulk Edit Overview](xref:bimlflex-excel-add-in)
 
 ## Configuration
 

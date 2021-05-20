@@ -67,9 +67,9 @@ Package Main is where all the template specific logic is implemented.
 
 More information on this process:
 
-* [Source to Staging Templates](../concepts/source-to-staging-templates.md)
-* [Data Vault Templates](../concepts/data-vault-templates.md)
-* [Data Mart Templates](../concepts/data-mart-templates.md)
+* [Source to Staging Templates](xref:bimlflex-source-to-staging-templates)
+* [Data Vault Templates](xref:bimlflex-data-vault-templates)
+* [Data Mart Templates](xref:bimlflex-data-mart-templates)
 
 #### SEQC – BimlFlex Package End
 

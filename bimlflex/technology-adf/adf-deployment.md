@@ -140,7 +140,7 @@ That concludes the deployment of an Azure Data Factory.
 If not already done, the Staging Area database would also need to be completed prior to execution of any Azure Pipelines.
 Additional steps for this, and the other Integration Stages can be found in the [Deploying the Target Warehouse Environment](#deploying-target-warehouse-environment) section below.
 
-If accessing an on-premise data source, an [Integration Runtime](#on-premise-data-source) will also need to be configured.
+If accessing an on-premise data source, an Integration Runtime will also need to be configured.
 
 The example uses an Azure Key Vault with pre-configured Secrets.
 Refer to [Azure Key Vault and Secrets](#azure-key-vault-and-secrets) for details on configurations.

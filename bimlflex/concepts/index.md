@@ -12,7 +12,7 @@ This section covers various concepts that are important to understand when worki
 BimlFlex provides an effective multi-tenant configuration to allow working with different models, even within a single organisation. This the *Customer* concept.
 
 * [The BimlFlex Customer Concept](xref:bimlflex-concepts-customer)
-* [Managing Versions in BimlFlex](xref:bimlflex-concepts-versions)
+* [Managing Versions in BimlFlex](xref:bimlflex-concepts-version)
 
 ## Importing Metadata
 
@@ -50,6 +50,9 @@ BimlFlex provides a SQL source based delete detection mechanism that allows dete
 
 This applies to 'hard deletes' where the record has been removed from the original system, as opposed to end-dating. In the data solution, the event of deletion can be stored as a 'soft' or 'logical' delete. This information can be valuable in determining the correct state of the data for delivery.
 
+* [Using Hashing in BimlFlex](xref:bimlflex-concepts-hashing)
+* [Working with BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)
+* [Define Custom Behaviour Using Extension Points](xref:bimlflex-concepts-extension-points)
 * [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 
 ## Orchestration

@@ -44,7 +44,7 @@ Design and implementation notes that quickly illustrates a core BimlFlex feature
 
 * [Tips and tricks](xref:bimlflex-tips-and-tricks-overview)
 
-## [Release Notes](release-notes/release-notes.md)
+## [Release Notes](release-notes/index.md)
 
 The latest Release Notes and download information for BimlFlex.
 

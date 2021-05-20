@@ -52,14 +52,13 @@ A Satellite where multiple active records are possible for a `Hub` or `Link` at 
 > [!TIP]
 > For additional details on **Driving Keys** refer to the below articles:
 >
-> * BimlFlex Docs: [Data Vault Driving Keys](xref:bimlflex-driving-keys)
-> * BimlFlex Docs: [Driving Keys in Data Vault](xref:driving-keys-in-data-vault)
+> * BimlFlex Docs: [Data Vault Driving Keys](xref:bimlflex-data-vault-driving-keys)
 
 ## Satellite System Column Configuration
 
-* [Load Date Time Stamp](#load-date-time-stamp)
-* [Record Source](#record-source)
-* [Audit Id](#audit-id)
+* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#load-date-time-stamp)
+* [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
+* [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
 
 ### Satellite Settings
 
