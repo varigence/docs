@@ -9,7 +9,7 @@ varigenceArticleType: Conceptual
 
 Data Vault Hubs:
 
-* Consist of a distinct list of [**Integration Keys**](#integration-key-business-key) of the **Core Business Concept**.
+* Consist of a distinct list of [**Integration Keys**](xref:bimlflex-data-vault-implementation-integration-keys#integration-keys-business-key) of the **Core Business Concept**.
 * BimlFlex makes use of a concatenated key to simplify implementation and allows for single key integration and is required when choosing a Data Vault implementation without using Hash Keys.
 * The **Setting** [*USE HASH KEYS*](xref:bimlflex-metadata-settings#accelerator-data-vault) can be used to toggle between using a hashed or natural **Integration Key**.
   Integrate without a `HASH` which is very efficient for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
@@ -33,9 +33,9 @@ Data Vault Hubs:
 
 ## Hub System Column Configuration
 
-* [Load Date Time Stamp](#load-date-time-stamp)
-* [Record Source](#record-source)
-* [Audit Id](#audit-id)
+* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#load-date-time-stamp)
+* [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
+* [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
 
 ## Hub Settings
 

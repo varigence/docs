@@ -5,7 +5,7 @@ name: BimlFlex Release Notes 2019
 # Release Notes 2019
 
 > [!NOTE]
-> Please note the current Release Notes are available here: [BimlFlex Release Notes](xref:bimlflex-release-notes)
+> Please note the current Release Notes are available here: [BimlFlex Release Notes](xref:bimlflex-release-notes-overview)
 
 ## BimlFlex 2019
 
@@ -368,7 +368,7 @@ Varigence provides remote support to accommodate this upgrade for any affected c
 * Update: A scenario where the Data Mart load pattern added an unnecessary conversion in the Data Flow for smart keys (keys that don't need lookups) has been addressed. Only keys that are used in lookups are converted when needed.
 * Add: BimlFlex now supports modeling scenarios where multiple Data Vault load projects share common elements such as a core Hub object.
 
-More information on the hashing approach for SQL compatible hashing can be found here: [Hashing in BimlFlex](xref:bimlflex-hashing-overview)
+More information on the hashing approach for SQL compatible hashing can be found here: [Hashing in BimlFlex](xref:bimlflex-data-vault-hashing)
 
 * Update: the `IsAltBusinessKey` metadata entity has been renamed to `IsSourceKey` to better reflect the meaning. This metadata attribute reflects the source Primary Key definition and is used for persistent staging tables when the defined Primary Key is not persisted. This is a common scenario for Data Vault modeling. For Data Vault, the Business Key is also defined as the Primary Key for each source object. This column is normally not persisted. The columns marked as `IsSourceKey` will be used as the Primary Keys for the Persistent table in this scenario.
 * Update: the `SourceErrorHandling` Extension Point is now included in the placeholder information in the preview expanded BimlScript for packages. The `inputPath` variable being passed to the Extension Point and exemplified in the sample code as: `<InputPath OutputPathName="<#=inputPath #>" />` has been updated to include the `.Output` part of the Path specification. Existing usage of the Extension Point that previously added this syntax manually can now be simplified. The behavior now match the expected syntax of the sample code.

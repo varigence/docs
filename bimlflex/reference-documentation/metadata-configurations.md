@@ -349,7 +349,7 @@ The `RowIsDeleted` defines the pattern to derive if a row is deleted or not.
 
 This information is normally presented by the source as an additional attribute indicating that the row has been deleted.
 
-For source systems with hard deletes and no mechanism to present these deleted, consider using the Delete Detection feature in BimlFlex: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+For source systems with hard deletes and no mechanism to present these deleted, consider using the Delete Detection feature in BimlFlex: [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 
 The IsDeleted flag is an optional query helper attribute. It is used together with the `RowChangeType` attribute and it is possible to derive the `IsDeleted` value by interpreting the `RowChangeType` in the query.
 

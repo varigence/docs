@@ -31,7 +31,7 @@ It is important to remember that the Data Vault modeling approach is based aroun
 
 The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorksLT database, the Source to Staging and Persistent Staging has been completed and it is time to start integrating the staged data into the Raw Data Vault.
 
-Follow the guide for [Source To Staging](../concepts/source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
+Follow the guide for [Source To Staging](xref:bimlflex-source-to-staging-templates) and import all SalesLT tables from the AdventureWorksLT source.
 
 ### The Source and Target model
 
@@ -66,7 +66,7 @@ The accelerator will use the metadata in the source for the project to derive th
 
 The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault preview allows a rapid design cycle of the Raw Data Vault.
 
-Should the Accelerator not be needed it is possible to manually define the Data Vault artifacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault](../concepts/data-vault-templates.md).
+Should the Accelerator not be needed it is possible to manually define the Data Vault artifacts and generate out the full model through the normal BimlFlex process. This is described in more detail in the [guide for Raw and Business Data Vault]* [Data Vault Templates](xref:bimlflex-data-vault-templates).
 
 Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become part of the normal metadata set.
 

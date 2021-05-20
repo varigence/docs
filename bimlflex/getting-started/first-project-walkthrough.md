@@ -16,7 +16,7 @@ The Getting Started with BimlFlex is an end to end, step by step guide to buildi
 > [!NOTE]
 > Start with the following steps
 >
-> * [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+> * [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
 > * [BimlFlex Initial Configuration](xref:bimlflex-getting-started-initial-configuration)
 
 The getting started documentation implements an on-premises installation and uses a local installation of BimlFlex and BimlStudio for development.

@@ -18,8 +18,8 @@ Modelers, analysts and data warehouse team members use the BimlFlex App to model
 
 The database is created through the BimlFlex installer or through the `Setup BimlFlex` menu option in the BimlFlex Ribbon UI in BimlStudio.
 
-* See the Installation Guide: [Installing BimlFlex](xref:bimlflex-installing-bimlflex) for deploying the database
-* See this guide for information regarding how to deploy after installation: [BimlFlex Metadata Database Installation](xref:bimlflex-metadata-database-installation)
+* See the Installation Guide: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex) for deploying the database
+* See this guide for information regarding how to deploy after installation: [BimlFlex Metadata Database Installation](xref:bimlflex-setup-metadata-database-installation)
 
 ## BimlFlex Database contents
 

@@ -112,7 +112,7 @@ Import the metadata for all tables in scope of the `SalesLT` schema from the fro
 
 > [!TIP]
 > For additional details on importing metadata project refer to the below guide:  
-> BimlFlex Docs: [BimlFlex Importing Metadata](xref:bimlflex-importing-metadata)  
+> BimlFlex Docs: [BimlFlex Importing Metadata](xref:bimlflex-concepts-importing-metadata)  
 
 ### Step 4: Create Databases and Tables
 

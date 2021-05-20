@@ -19,7 +19,7 @@ The starting point for the examples in this document is when all source metadata
 
 [//]: # (TODO: Link to UPDATED Source To Staging document)
 
-Follow the guide for [Source To Staging](../concepts/source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
+Follow the guide for [Source To Staging](xref:bimlflex-source-to-staging-templates) and import all SalesLT tables from the AdventureWorksLT source.
 
 Follow the guide for [Data Vault Accelerator](accelerator.md) to get a Raw Data Vault schema which will be used in this guide.
 

@@ -10,6 +10,8 @@ varigenceArticleType: Conceptual
 
 This document consolidates and outlines the various best practices on Data Vault implementation using BimlFlex.
 
+
+
 > [!NOTE]
 > This document is intended to supplement other, published, Data Vault standards.
 > Varigence provides a course that combines your preferred Data Vault approach with implementation guides using BimlFlex.

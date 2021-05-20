@@ -122,7 +122,7 @@ For the Data Mart this is either the *DIM ATTRIBUTE* or *FACT ATTRIBUTE* fields 
 
 #### [Example Image](#tab/configuration-example-image)
 
-![Enabling A Configuration for Dimensions](images\bfx-configuration-enable-example.png "Enabling A Configuration for Dimensions")
+![Enabling A Configuration for Dimensions](images/bfx-configuration-enable-example.png "Enabling A Configuration for Dimensions")
 
 #### [Attribute Value List](#tab/configuration-attribute-values)
 
@@ -178,17 +178,17 @@ The **Configuration** itself is applied at an object level, so a column level ov
 A **Configuration** can be quickly added from [**Configuration Editor**](xref:configurations).
 If a field supports and override it will have clickable button with the following icon (<img class="icon-inline" src="../metadata-editors/images/svg-icons/attributes.svg" /><!--![Overriding Possible Icon -icon-inline](../metadata-editors/images/svg-icons/attributes.svg "Overriding Possible Icon")-->).
 
-![Overriding Possible](images\bfx-configuration-override-support.png "Overriding Possible")
+![Overriding Possible](images/bfx-configuration-override-support.png "Overriding Possible")
 
 Clicking this button will open a **Add Attribute Dialog Box** that is populated with the required *ATTRIBUTE* value.
 
-![Initial Add Attributes Dialog](images\bfx-configuration-add-attribute-start.png "Initial Add Attributes Dialog")
+![Initial Add Attributes Dialog](images/bfx-configuration-add-attribute-start.png "Initial Add Attributes Dialog")
 
 Next the level of the **Configuration Override** needs to be set by assigning *ATTRIBUTE TYPE* (and any supporting fields if required).
 
 Enter the value to be used as the **Configuration Override** in the *ATTRIBUTE VALUE* field.
 
-![Final Add Attributes Dialog](images\bfx-configuration-add-attribute-end.png "Final Add Attributes Dialog")
+![Final Add Attributes Dialog](images/bfx-configuration-add-attribute-end.png "Final Add Attributes Dialog")
 
 > [!IMPORTANT]
 > Don't forget to click the **Save Button** (<img class="icon-inline" src="../metadata-editors/images/svg-icons/save.svg" /><!--(![Save Icon -icon-inline](../metadata-editors/images/svg-icons/save.svg "Save Icon")-->) to record the changes.
@@ -201,11 +201,11 @@ The advanced method is not recommended to be used unless the user is completely 
 
 When using any entity editor that support the **Attributes Tab** the **Add** (<img class="icon-inline" src="../metadata-editors/images/svg-icons/add.svg" /><!--![Add Icon -icon-inline](../metadata-editors/images/svg-icons/add.svg "Add Icon")-->) button can be used to create an **Attribute**.
 
-![Initial Add Attribute From Project](images\bfx-configuration-add-attribute-project.png "Initial Add Attribute From Project")
+![Initial Add Attribute From Project](images/bfx-configuration-add-attribute-project.png "Initial Add Attribute From Project")
 
 Clicking that **Add** button will populate the *ATTRIBUTE TYPE* (and required associated fields) for the context of the currently selected entity.
 
-![Initial Add Attributes Dialog From Project](images\bfx-configuration-add-attribute-project-initial.png "Initial Add Attributes Dialog From Project")
+![Initial Add Attributes Dialog From Project](images/bfx-configuration-add-attribute-project-initial.png "Initial Add Attributes Dialog From Project")
 
 The specific **Configuration Override** desired will have to be manually entered into the *ATTRIBUTE* field.
 Though they do not appear as selectable values, it can still be manually entered without error.
@@ -246,27 +246,27 @@ Overrides have been defined at each supported level to better communicate which 
 
 ### [By Configuration](#tab/existing-override)
 
-![Overrides by Configuration](images\bfx-configuration-view-by-configuration.png "Overrides by Configuration")
+![Overrides by Configuration](images/bfx-configuration-view-by-configuration.png "Overrides by Configuration")
 
 ### [By Connection](#tab/existing-override-connection)
 
-![Overrides by Connection](images\bfx-configuration-view-by-connection.png "Overrides by Connection")
+![Overrides by Connection](images/bfx-configuration-view-by-connection.png "Overrides by Connection")
 
 ### [By Batch](#tab/existing-override-batch)
 
-![Overrides by Batch](images\bfx-configuration-view-by-batch.png "Overrides by Batch")
+![Overrides by Batch](images/bfx-configuration-view-by-batch.png "Overrides by Batch")
 
 ### [By Project](#tab/existing-override-project)
 
-![Overrides by Project](images\bfx-configuration-view-by-project.png "Overrides by Project")
+![Overrides by Project](images/bfx-configuration-view-by-project.png "Overrides by Project")
 
 ### [By Object](#tab/existing-override-object)
 
-![Overrides by Object](images\bfx-configuration-view-by-object.png "Overrides by Object")
+![Overrides by Object](images/bfx-configuration-view-by-object.png "Overrides by Object")
 
 ### [All Attributes](#tab/existing-override-attributes)
 
-![Overrides by Attribute](images\bfx-configuration-view-by-attribute.png "Overrides by Attribute")
+![Overrides by Attribute](images/bfx-configuration-view-by-attribute.png "Overrides by Attribute")
 
 ***
 

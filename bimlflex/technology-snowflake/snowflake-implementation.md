@@ -91,7 +91,7 @@ The components are installed and upgraded through the BimlFlex developer install
 > [!NOTE]
 > If the components were not installed on initial installation they can be installed at a later date by re-running the installer.
 > For additional details on installing BimlFlex and Custom Components refer to the below guide:
-> BimlFlex Docs: [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+> BimlFlex Docs: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
 
 ## Configuring BimlFlex Settings
 

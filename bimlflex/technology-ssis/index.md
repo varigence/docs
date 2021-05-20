@@ -7,7 +7,7 @@ The ability to create SSIS projects is a central part of BimlFlex. In this secti
 
 ## On-Premise SQL Server and SSIS
 
-* [Implementing SSIS on an on-premise SQL Server instance](ssis-on-prem-sql-server)
+* [Implementing SSIS on an on-premise SQL Server instance](xref:ssis-on-prem-sql-server)
 
 ## Concurrent Development
 
