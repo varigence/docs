@@ -6,8 +6,10 @@
   href: data-vault-concept-link.md
 - name: Satellite
   href: data-vault-concept-satellite.md
-- name: PIT and Bridge
+- name: Point-In-Time
   href: data-vault-implementation-pit.md
+- name: Bridge
+  href: data-vault-implementation-bridge.md
 - name: Reference Data
   href: data-vault-concept-reference-data.md
 - name: Data Vault Best Practices

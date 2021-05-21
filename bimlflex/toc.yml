@@ -2,7 +2,7 @@
   href: index.md
   topicHref: index.md
   items:
-  - name: Setting up BimlFlex
+  - name: Setting Up BimlFlex
     href: setup/toc.yml
 
   - name: Getting Started
@@ -44,10 +44,10 @@
   - name: Data Solution Templates
     href: data-solution-templates/toc.yml
 
-  - name: Data Vault and BimlFlex
+  - name: BimlFlex for Data Vault
     href: data-vault-bimlflex/toc.yml
 
-  - name: Data Marts
+  - name: Delivering Data Marts
     href: data-delivery/toc.yml
 
   - name: Reference Docs

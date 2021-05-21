@@ -2,9 +2,9 @@
   href: index.md
 - name: Support Process
   href: support-process.md
-- name: Check Installed Versions
+- name: Checking the Installed Version
   href: check-installed-versions.md
-- name: BimlOnline Shutdown Notice
-  href: biml-online-shutdown-notice.md
-- name: Troubleshooting Tips
+- name: Troubleshooting
   href: troubleshooting-tips.md
+- name: BimlOnline Shutdown Notice
+  href: biml-online-shutdown-notice.md  

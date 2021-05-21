@@ -61,7 +61,7 @@ Using this PIT table, it is easy to query what context attributes from the Satel
 
 There are some important notes to clarify on the structure of the PIT table in BimlFlex, and these are numbered in the example:
 
-1. Each PIT table contains a `[zero record](xref:bimlflex-data-vault-concept-zero-records)`, which provides an 'unknown' record in the PIT table that refers to any NULL value.
+1. Each PIT table contains a [`zero record`](xref:bimlflex-data-vault-concept-zero-records), which provides an 'unknown' record in the PIT table that refers to any NULL value.
 2. Each PIT record receives a unique PIT surrogate key that uniquely identifies a row in the PIT table. This is purely for identification purposes.
 3. BimlFlex uses a high end-date as default, which is 9999-12-13 in this example. This is to make sure that any queries on the PIT table always return a result, which is the most recent state of the data as it has been received by the data solution.
 4. If no context is available for a given point in time BimlFlex will apply (configurable) default values to highlight that no data exists. This is to allow equi-joins even when there is no data, without risking data loss.
