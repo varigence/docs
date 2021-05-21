@@ -32,6 +32,7 @@ BimlFlex provides various ways to implement data solutions that utilise concepts
 * [Implementing Data Vault Links in BimlFlex](xref:bimlflex-data-vault-implementation-link)
 * [Driving Keys in BimlFlex](xref:bimlflex-data-vault-driving-keys)
 * [BimlFlex solution templates for Data Vault](xref:bimlflex-data-vault-templates)
+* [Zero records](xref:bimlflex-data-vault-concept-zero-records)
 
 ## Recommendations for implementing Data Vault on Microsoft Azure Synapse Analytics
 
