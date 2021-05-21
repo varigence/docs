@@ -29,7 +29,7 @@ It is important to remember that the Data Vault modeling approach is based aroun
 
 The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorks LT database, the Source to Staging and Persistent Staging has been completed and it is time to start integrating the staged data into the Raw Data Vault.
 
-Follow the guide for [Source To Staging](../concepts/source-to-staging-templates.md) and import all SalesLT tables from the AdventureWorksLT source.
+Follow the guide for [Source To Staging](xref:bimlflex-source-to-staging-templates) and import all SalesLT tables from the AdventureWorksLT source.
 
 More about [Import Metadata](../concepts/importing-metadata.md).
 

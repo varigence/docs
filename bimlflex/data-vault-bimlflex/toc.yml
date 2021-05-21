@@ -7,9 +7,9 @@
 - name: Satellite
   href: data-vault-concept-satellite.md
 - name: PIT and Bridge
-  href: data-vault-concept-pit-bridge.md        
+  href: data-vault-implementation-pit.md
 - name: Reference Data
-  href: data-vault-concept-reference-data.md       
+  href: data-vault-concept-reference-data.md
 - name: Data Vault Best Practices
   href: data-vault-best-practices.md
 - name: Integration Keys

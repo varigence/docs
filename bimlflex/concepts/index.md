@@ -12,7 +12,7 @@ This section covers various concepts that are important to understand when worki
 BimlFlex provides an effective multi-tenant configuration to allow working with different models, even within a single organisation. This the *Customer* concept. More information on this and related concept is provided in the following links:
 
 * [The BimlFlex Customer Concept](xref:bimlflex-concepts-customer)
-* [Managing Versions in BimlFlex](xref:bimlflex-concepts-versions)
+* [Managing Versions in BimlFlex](xref:bimlflex-concepts-version)
 
 ## Working with Design Metadata
 
@@ -40,7 +40,7 @@ Data solutions come in many shapes and forms, and BimlFlex aims to provide maxim
 Irrespective of the design of the data solution architecture, there are many options to make sure the design is delivered the way it is intended.
 
 * [Using Hashing in BimlFlex](xref:bimlflex-concepts-hashing)
-* [Working with BimlFlex Parameters](xref:bbimlflex-concepts-metadata-parameters)
+* [Working with BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)
 * [Define Custom Behaviour Using Extension Points](xref:bimlflex-concepts-extension-points)
 * [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 * [Orchestration in BimlFlex](xref:bimlflex-concepts-orchestration)

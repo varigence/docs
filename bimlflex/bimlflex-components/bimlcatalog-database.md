@@ -16,8 +16,8 @@ The BimlCatalog database contains the orchestration and run time information nee
 
 The database is created through the BimlFlex installer or through the `Setup BimlFlex` menu option in the BimlFlex Ribbon UI in BimlStudio.
 
-* See the Installation Guide: [Installing BimlFlex](xref:bimlflex-installing-bimlflex) for deploying the database
-* See this guide for information regarding how to deploy after installation: [BimlFlex Metadata Database Installation](xref:bimlflex-metadata-database-installation)
+* See the Installation Guide: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex) for deploying the database
+* See this guide for information regarding how to deploy after installation: [BimlFlex Metadata Database Installation](xref:bimlflex-setup-metadata-database-installation)
 
 ## Parameter values
 

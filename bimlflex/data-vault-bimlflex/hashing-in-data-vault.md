@@ -20,7 +20,7 @@ BimlFlex provides 2 main ways of hashing:
 
 ## Hash Keys
 
-* A [hash](#hash-algorithm) of the [Integration Key](#integration-key-business-key).
+* A [hash](#hash-algorithm) of the [Integration Key](xref:bimlflex-data-vault-implementation-integration-keys#integration-keys-business-key).
 * Not a compulsory field for `Data Vault` however currently compulsory in BimlFlex.
   We will support a no hash implementation option in all our ELT (SQL) templates.
 

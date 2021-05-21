@@ -60,7 +60,7 @@ The Accelerator and Data Vault processes have several new optional configuration
 * Toggle setting added to display datatypes for columns for both source models and accelerated models.
 * The `AzureStagingSettings` has been renamed `AzureCopyStagingSettings`
 
-Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 
 The following setting has been added to control the Data Vault Accelerator:
 
@@ -148,7 +148,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
 * The Delete Detection Object Model has been updated. For implementations that use bespoke Delete Detection Scripts, certain attributes will need to be updated to correctly refer to the new object model.
 
-Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 
 <!--
 ## Business Modeling

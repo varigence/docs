@@ -187,7 +187,7 @@ Data Vault Links represent many to many relationships. Any Hub entity in Data Va
 
 If there is a Foreign Key relationship between two entities in the source, or if there is application logic that manages opening and closing of relationships in mapping tables, that same behavior might need to be maintained in the Data Vault.
 
-Driving Keys are documented in more detail here: [Data Vault Driving Keys](xref:bimlflex-driving-keys)
+Driving Keys are documented in more detail here: [Data Vault Driving Keys](xref:bimlflex-data-vault-driving-keys)
 
 ## Multi Active Satellites
 

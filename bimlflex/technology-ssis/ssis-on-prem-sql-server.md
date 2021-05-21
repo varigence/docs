@@ -32,7 +32,7 @@ In BimlFlex, start with applying Sample Metadata: `01 - Starting Point for MSSQL
 
 #### Import the Source Metadata from AWLT2012
 
-See [BimlFlex Importing Metadata](xref:bimlflex-importing-metadata) for more detail.
+See [BimlFlex Importing Metadata](xref:bimlflex-concepts-importing-metadata) for more detail.
 
 ![Import Metadata](images/bfx-ssis-src-stg-psa-ImportMetadata.png)
 
@@ -40,7 +40,7 @@ See [BimlFlex Importing Metadata](xref:bimlflex-importing-metadata) for more d
 
 If the project requires delete detection, it should be set up when configuring the project metadata.
 
-- See [BimlFlex Delete Detection](xref:bimlflex-delete-detection) for more detail.
+- See [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection) for more detail.
 
 ![Set Global Delete Detection](images/bfx-ssis-src-stg-psa-SetGlobalDeleteDetection.png)
 

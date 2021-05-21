@@ -9,11 +9,11 @@ varigenceArticleType: Walkthrough
 
 BimlFlex data warehouse automation metadata is stored in the BimlFlex metadata database.
 
-* More information: [BimlFlex Metadata Database](../metadata-databases/bimlflex-database.md)
+* More information: [BimlFlex Metadata Database](xref:bimlflex-components-metadata-database)
 
 Operational data, audit information, and logging data is stored in the BimlCatalog Database.
 
-* More information: [BimlCatalog Database](../metadata-databases/bimlcatalog-database.md)
+* More information: [BimlCatalog Database](xref:bimlflex-components-bimlcatalog-database)
 
 There are two different methods used to install these databases.
 The first option is to use the BimlFlex installer.
