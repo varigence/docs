@@ -40,6 +40,6 @@ There are various high-quality frameworks for investigating and addressing perfo
 > [!NOTE]
 > Public Github or 3rd party scripts and concepts are not supported by Varigence.
 
-## Reviewing BimlStudio errors
+## Reviewing BimlStudio Errors
 
 BimlStudio has an error window that will display all metadata errors and validation issues, errors, and warnings. For most metadata errors resulting in known build errors, the logical view will be left empty. This stops any follow on errors to be displayed. Review the error message in the errors list and resolve it to re-populate the entity list.

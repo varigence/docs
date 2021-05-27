@@ -6,6 +6,8 @@
   href: versions.md  
 - name: Importing Metadata
   href: importing-metadata.md
+- name: Integration Templates
+  href: integration-template.md  
 - name: Persistent Staging Area
   href: persistent-staging-area.md  
 - name: Hashing
