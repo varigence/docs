@@ -66,7 +66,7 @@ Configuration Sheets
 
 Each sheet contains columns and rows of metadata used to define entities and relationships. Managing the metadata and building the DataWarehouse is covered in the Implementation Guides and Configurations documentation.
 
-The Metadata specification is detailed in the [Metadata Reference documentation](xref:bimlflex-metadata-entity-definitions)
+The Metadata specification is detailed in the [Metadata Reference documentation](xref:bimlflex-app-reference-documentation-entitites-index)
 
 ## Metadata Tools
 

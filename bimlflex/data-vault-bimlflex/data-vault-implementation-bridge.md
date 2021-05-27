@@ -11,7 +11,7 @@ The `Bridge` table is a combination of primary keys and business keys spread acr
 
 Similar to [Point-In-Time](xref:bimlflex-data-vault-concept-pit) tables, Bridge tables are constructs that intent to simplify querying from the Data Vault model and boost performance. A Bridge table can be useful if certain Hub and Link joins are used often in queries.
 
-Since Hub and Link tables only capture business- and data warehouse (surrogate) keys, a Bridge tables provide a snapshot of key structures and does not store historical information. In other words, they are not temporal in nature as for example [Satellites](xref:xref:bimlflex-data-vault-concept-satellite) are.
+Since Hub and Link tables only capture business- and data warehouse (surrogate) keys, a Bridge tables provide a snapshot of key structures and does not store historical information. In other words, they are not temporal in nature as for example [Satellites](xref:bimlflex-data-vault-concept-satellite) are.
 
 A Bridge table, in its simplest form, is driven from a Link table. This means the starting point is the Link table, and relating Hubs are joined from there. The Bridge table will contain the surrogate key of the Link table, and the business keys and from the corresponding Hub tables.
 

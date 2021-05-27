@@ -8,7 +8,9 @@
   href: metadata-settings.md
 - name: Extension Point Definitions
   href: extension-point-definitions.md
-- name: Metadata Entity Definitions
-  href: metadata-entity-definitions.md
+- name: Entity Reference Documentation
+  href: reference-documentation-entities-index.md
+- name: Static Values
+  href: metadata-static-values.md  
 - name: Data Type Conversions
   href: data-type-conversions.md
