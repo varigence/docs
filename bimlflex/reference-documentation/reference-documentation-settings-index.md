@@ -88,52 +88,51 @@ Align these settings with the organizations best practices and environmental req
   
 |  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Archive Container](xref:bimlflex-app-reference-documentation-setting-AzureArchiveContainer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Archive Account Name](xref:bimlflex-app-reference-documentation-setting-AzureArchiveAccountName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Archive Account Key](xref:bimlflex-app-reference-documentation-setting-AzureArchiveAccountKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Archive SAS Token](xref:bimlflex-app-reference-documentation-setting-AzureArchiveSasToken) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Error Container](xref:bimlflex-app-reference-documentation-setting-AzureErrorContainer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Error Account Name](xref:bimlflex-app-reference-documentation-setting-AzureErrorAccountName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Error Account Key](xref:bimlflex-app-reference-documentation-setting-AzureErrorAccountKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Error SAS Token](xref:bimlflex-app-reference-documentation-setting-AzureErrorSasToken) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Stage Container](xref:bimlflex-app-reference-documentation-setting-AzureStageContainer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Stage Account Name](xref:bimlflex-app-reference-documentation-setting-AzureStageAccountName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Stage Account Key](xref:bimlflex-app-reference-documentation-setting-AzureStageAccountKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Stage SAS Token](xref:bimlflex-app-reference-documentation-setting-AzureStageSasToken) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Blob Storage Domain](xref:bimlflex-app-reference-documentation-setting-AzureBlobStorageDomain) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[External File Format](xref:bimlflex-app-reference-documentation-setting-AzureExternalFileFormat) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
+|[Archive Container](xref:bimlflex-app-reference-documentation-setting-AzureArchiveContainer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Container Name to use for the archive process. This should be indicative of the purpose of the contents, such as "archive".|
+|[Archive Account Name](xref:bimlflex-app-reference-documentation-setting-AzureArchiveAccountName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Azure Blob Storage Account Name to use for archiving data as files in blob storage,|
+|[Archive Account Key](xref:bimlflex-app-reference-documentation-setting-AzureArchiveAccountKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The storage Access Key to use when accessing the Blob storage.|
+|[Archive SAS Token](xref:bimlflex-app-reference-documentation-setting-AzureArchiveSasToken) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|A storage access SAS Token to use when accessing the Blob storage.|
+|[Error Container](xref:bimlflex-app-reference-documentation-setting-AzureErrorContainer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Container Name to use for the error process.|
+|[Error Account Name](xref:bimlflex-app-reference-documentation-setting-AzureErrorAccountName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Azure Blob Storage Account Name to use for error files in blob storage.|
+|[Error Account Key](xref:bimlflex-app-reference-documentation-setting-AzureErrorAccountKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|A storage Access Key to use when accessing the error file Blob storage.|
+|[Error SAS Token](xref:bimlflex-app-reference-documentation-setting-AzureErrorSasToken) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|A storage access SAS Token to use when accessing the error file Blob storage.|
+|[Stage Container](xref:bimlflex-app-reference-documentation-setting-AzureStageContainer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Container Name to use for the staging process.|
+|[Stage Account Name](xref:bimlflex-app-reference-documentation-setting-AzureStageAccountName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Azure Blob Storage Account Name to use for staging data as files in blob storage.|
+|[Stage Account Key](xref:bimlflex-app-reference-documentation-setting-AzureStageAccountKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The storage Access Key to use when accessing the staging Blob storage.|
+|[Stage SAS Token](xref:bimlflex-app-reference-documentation-setting-AzureStageSasToken) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|A storage access SAS Token to use when accessing the staging Blob storage.|
+|[Blob Storage Domain](xref:bimlflex-app-reference-documentation-setting-AzureBlobStorageDomain) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The AzCopy domain to use.|
+|[External File Format](xref:bimlflex-app-reference-documentation-setting-AzureExternalFileFormat) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default External File Format definition to use.|
 
 ## Core
   
 |  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Lookup Add Filter Table](xref:bimlflex-app-reference-documentation-setting-LookupAddFilterTable) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
 |[Add SQL Comments](xref:bimlflex-app-reference-documentation-setting-AddSqlComments) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether descriptive comments are added to the SQL ELT code.|
-|[Global Default Date](xref:bimlflex-app-reference-documentation-setting-GlobalDefaultDate) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Convert GUID To String](xref:bimlflex-app-reference-documentation-setting-ConvertGuidToString) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use BimlCatalog](xref:bimlflex-app-reference-documentation-setting-UseBimlCatalog) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Hash Null Value Replacement](xref:bimlflex-app-reference-documentation-setting-HashNullValue) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[SSIS Hash Null Value Replacement](xref:bimlflex-app-reference-documentation-setting-SsisHashNullValue) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Integration Key To Upper](xref:bimlflex-app-reference-documentation-setting-IntegrationKeyToUpper) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Lookup Table Pattern](xref:bimlflex-app-reference-documentation-setting-LookupTablePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[String Concatenator](xref:bimlflex-app-reference-documentation-setting-StringConcatenator) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Hash Algorithm](xref:bimlflex-app-reference-documentation-setting-HashAlgorithm) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Hash Binary](xref:bimlflex-app-reference-documentation-setting-HashBinary) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Hash Integration Key](xref:bimlflex-app-reference-documentation-setting-HashIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use SQL Compatible Hash](xref:bimlflex-app-reference-documentation-setting-UseSqlCompatibleHash) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use SQL Compatible Row Hash](xref:bimlflex-app-reference-documentation-setting-UseSqlCompatibleRowHash) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Cast Boolean to True False for Hash](xref:bimlflex-app-reference-documentation-setting-UseTrueFalseForBoolean) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Root Path](xref:bimlflex-app-reference-documentation-setting-RootPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Archive Path](xref:bimlflex-app-reference-documentation-setting-ArchivePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Export Path](xref:bimlflex-app-reference-documentation-setting-ExportPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Import Path](xref:bimlflex-app-reference-documentation-setting-ImportPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Lookup Cache Path](xref:bimlflex-app-reference-documentation-setting-LookupCachePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Configuration Path](xref:bimlflex-app-reference-documentation-setting-ConfigurationPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[7 Zip Path](xref:bimlflex-app-reference-documentation-setting-7ZipPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Archive Import](xref:bimlflex-app-reference-documentation-setting-ArchiveImport) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Zip Archive Import](xref:bimlflex-app-reference-documentation-setting-ZipArchiveImport) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Global Default Date](xref:bimlflex-app-reference-documentation-setting-GlobalDefaultDate) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The global default date to use for timelines.|
+|[Convert GUID To String](xref:bimlflex-app-reference-documentation-setting-ConvertGuidToString) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether a source column of type "GUID"/"UniqueIdentifier" is automatically converted to a String data type.|
+|[Use BimlCatalog](xref:bimlflex-app-reference-documentation-setting-UseBimlCatalog) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether BimlFlex uses the BimlCatalog database for logging, auditing and configuration variables.|
+|[Hash Null Value Replacement](xref:bimlflex-app-reference-documentation-setting-HashNullValue) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Null value replacement to be used when hashing.|
+|[SSIS Hash Null Value Replacement](xref:bimlflex-app-reference-documentation-setting-SsisHashNullValue) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Null value replacement to be used when hashing using the Varigence BimlFlex SSIS Custom component.|
+|[Integration Key To Upper](xref:bimlflex-app-reference-documentation-setting-IntegrationKeyToUpper) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether strings in the Integration Key will be upper-cased automatically.|
+|[Lookup Table Pattern](xref:bimlflex-app-reference-documentation-setting-LookupTablePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The table naming pattern for the Lookup Table.|
+|[String Concatenator](xref:bimlflex-app-reference-documentation-setting-StringConcatenator) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string value used in concatenating Integration Keys and Hash values (sanding element). Defaults to "~".|
+|[Hash Algorithm](xref:bimlflex-app-reference-documentation-setting-HashAlgorithm) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The hashing algorithm to use. ("MD5"/"SHA1"/"SHA2_256"/"SHA2_512").|
+|[Hash Binary](xref:bimlflex-app-reference-documentation-setting-HashBinary) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the generated hash value is stored as a binary representation, as opposed to a string representation.|
+|[Hash Integration Key](xref:bimlflex-app-reference-documentation-setting-HashIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Integration Key is hashed.|
+|[Use SQL Compatible Hash](xref:bimlflex-app-reference-documentation-setting-UseSqlCompatibleHash) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the SSIS custom inline hashing component use a hashing approach compatible with the SQL Server "HASHBYTES()" function.|
+|[Use SQL Compatible Row Hash](xref:bimlflex-app-reference-documentation-setting-UseSqlCompatibleRowHash) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the SSIS custom inline hashing component for Full Row Hashing use a hashing approach compatible with the SQL Server "HASHBYTES()" function.|
+|[Cast Boolean to True False for Hash](xref:bimlflex-app-reference-documentation-setting-UseTrueFalseForBoolean) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the SQL inline hashing function for MSSQL, SQLDB and Synapse converts BIT (Boolean) values to True/False instead of 1/0.|
+|[Root Path](xref:bimlflex-app-reference-documentation-setting-RootPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default root path for any other BimlFlex related file operations.|
+|[Archive Path](xref:bimlflex-app-reference-documentation-setting-ArchivePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default path for file archive operations.|
+|[Export Path](xref:bimlflex-app-reference-documentation-setting-ExportPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default export path for file exports.|
+|[Import Path](xref:bimlflex-app-reference-documentation-setting-ImportPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default import path for file imports.|
+|[Lookup Cache Path](xref:bimlflex-app-reference-documentation-setting-LookupCachePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default path for Cache files used in lookups.|
+|[Configuration Path](xref:bimlflex-app-reference-documentation-setting-ConfigurationPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The folder where SSIS configuration files are stored.|
+|[7 Zip Path](xref:bimlflex-app-reference-documentation-setting-7ZipPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The location of the 7-zip executable for zip operations requiring 7-zip.|
+|[Archive Import](xref:bimlflex-app-reference-documentation-setting-ArchiveImport) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether imported files are archived after processing.|
+|[Zip Archive Import](xref:bimlflex-app-reference-documentation-setting-ZipArchiveImport) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether imported files are compressed when they are archived.|
 |[Zip Output File](xref:bimlflex-app-reference-documentation-setting-ZipOutputFile) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determine whether the created output file is zipped.|
-|[Zip Extract File In Memory](xref:bimlflex-app-reference-documentation-setting-ZipExtractFileInMemory) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Zip Extract File In Memory](xref:bimlflex-app-reference-documentation-setting-ZipExtractFileInMemory) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the file zip process runs in-memory or through file streams. Files larger than 2 GB are always zipped through file streams.|
 
 ## Data Mart
   
@@ -143,9 +142,9 @@ Align these settings with the organizations best practices and environmental req
 |[Append Fact](xref:bimlflex-app-reference-documentation-setting-DmAppendFact) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Fact object names.|
 |[Append Staging](xref:bimlflex-app-reference-documentation-setting-DmAppendStaging) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to the Data Mart staging object names.|
 |[Infer Dimension Members](xref:bimlflex-app-reference-documentation-setting-DmInferDim) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Data Mart process infers Dimension Members.|
-|[Stage On Initial Load](xref:bimlflex-app-reference-documentation-setting-DmStageOnInitialLoad) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaDm) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Apply Lookup Filter](xref:bimlflex-app-reference-documentation-setting-ApplyLookupFilterDm) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Stage On Initial Load](xref:bimlflex-app-reference-documentation-setting-DmStageOnInitialLoad) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Data Mart stage process executes as part of an initial load.|
+|[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaDm) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Schema name is appended to Object names in the Data Mart.|
+|[Apply Lookup Filter](xref:bimlflex-app-reference-documentation-setting-ApplyLookupFilterDm) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the SSIS Lookup checks for existing rows and applies a filter condition when joining the source table to the destination table. This applies to Data Mart processing and aims to optimize memory usage.|
 |[Display Database Name](xref:bimlflex-app-reference-documentation-setting-DisplayDatabaseNameDm) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Database name is included in Data Mart object names.|
 |[Display Schema Name](xref:bimlflex-app-reference-documentation-setting-DisplaySchemaNameDm) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Schema name is included in Data Mart object names.|
 
@@ -153,10 +152,7 @@ Align these settings with the organizations best practices and environmental req
   
 |  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Derive Staged Query](xref:bimlflex-app-reference-documentation-setting-DvDeriveStagedQuery) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Point In Time Default](xref:bimlflex-app-reference-documentation-setting-DvPointInTimeDefault) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use Sequence Keys](xref:bimlflex-app-reference-documentation-setting-DvUseSequenceKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use Virtual Hub](xref:bimlflex-app-reference-documentation-setting-DvUseVirtualHub) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Derive Staged Query](xref:bimlflex-app-reference-documentation-setting-DvDeriveStagedQuery) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Staged Query objects be derived in the in the Data Vault source query or inherited.|
 |[Use Hash Keys](xref:bimlflex-app-reference-documentation-setting-DvUseHashKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Data Vault uses Hash Keys, alternatively Natural Keys can be used by disabling this setting.|
 |[Accelerate Link Satellite](xref:bimlflex-app-reference-documentation-setting-DvAccelerateLinkSatellite) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the BimlFlex Accelerator creates Link Satellites from source metadata, containing attributes and effectivess attributes.|
 |[Accelerate Link Satellite Keys](xref:bimlflex-app-reference-documentation-setting-DvAccelerateLinkSatelliteKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the BimlFlex Accelerator adds the Integration Key to Link Satellites.|
@@ -166,13 +162,13 @@ Align these settings with the organizations best practices and environmental req
 |[Apply Data Type Mapping RDV](xref:bimlflex-app-reference-documentation-setting-ApplyDataTypeMappingRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Data Type Mappings are applied to the Raw Data Vault. The Data Type Mappings function allow expansion of data types.|
 |[Stage Reduce Link Keys](xref:bimlflex-app-reference-documentation-setting-StageReduceLinkKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this to reduce additional Link hash keys in the staging table.|
 |[Accelerate Two Way Links](xref:bimlflex-app-reference-documentation-setting-DvAccelerateTwoWayLinks) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the BimlFlex Accelerator splits all Links into Two-Way Links. Otherwise, it will combine all Non Nullable references into a single Link or Unit of Work.|
-|[Process On Stage](xref:bimlflex-app-reference-documentation-setting-DvProcessOnStage) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Process On Stage](xref:bimlflex-app-reference-documentation-setting-DvProcessOnStage) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Data Vault stored procedure is called after the Extract has been done. For Azure projects this must be combined with "AzureStageOnExtract".|
 |[Infer Link Hub](xref:bimlflex-app-reference-documentation-setting-DvInferLinkHub) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Data Vault process loads all involved Hubs when a Link table is loaded, independent of Hub loads from referenced tables. Enabling this setting will force BimlFlex to always load all corresponding Hub tables when a Link is loaded from a given source, even though this could be redundant because the Hub information may be provided by referenced tables.This applies to scenarios where the source system reliably manages referential integrity.|
-|[Apply Lookup Filter RDV](xref:bimlflex-app-reference-documentation-setting-ApplyLookupFilterRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Apply Lookup Filter RDV](xref:bimlflex-app-reference-documentation-setting-ApplyLookupFilterRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|For Staging-to-Data Vault processes, determines whether the SSIS Lookup checks for existing rows by applying a filter condition joining the staging table to the destination table. This is to optimize memory usage.|
 |[End Date Satellite](xref:bimlflex-app-reference-documentation-setting-DvEndDateSatellite) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether end dating is applied to the Raw Data Vault Satellites.|
-|[Single Change Satellite](xref:bimlflex-app-reference-documentation-setting-DvSingleChangeSatellite) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[ELT Delta Is Derived](xref:bimlflex-app-reference-documentation-setting-DvEltDeltaIsDerived) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use Cache Lookup](xref:bimlflex-app-reference-documentation-setting-DvUseCacheLookup) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Single Change Satellite](xref:bimlflex-app-reference-documentation-setting-DvSingleChangeSatellite) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Set this to true if loading into Data Vault and the Delta only has single changes to each key. This will provide optimized ELT loads.|
+|[ELT Delta Is Derived](xref:bimlflex-app-reference-documentation-setting-DvEltDeltaIsDerived) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Set this to true if loading into Data Vault and the Delta has already been derived. This will provide optimized ELT loads for scenarios like streams or insert only transaction source tables.|
+|[Use Cache Lookup](xref:bimlflex-app-reference-documentation-setting-DvUseCacheLookup) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enables using the file based cache lookup feature of SSIS (for lookups).|
 |[Bridge Lag Days](xref:bimlflex-app-reference-documentation-setting-DvBridgeLagDays) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Specify the number of days the Bridge process should go back and look for changes to reprocess.|
 |[Pit Lag Days](xref:bimlflex-app-reference-documentation-setting-DvPitLagDays) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Specify the number of days the Point-In-Time process should go back and look for changes to reprocess.|
 

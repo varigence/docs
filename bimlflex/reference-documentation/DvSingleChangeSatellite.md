@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Single Change Satellite
 
-Set this to true if loading into Data Vault and the Delta only has single changes to each key. This will provide optimized ELT loads
+Set this to true if loading into Data Vault and the Delta only has single changes to each key. This will provide optimized ELT loads.
 
 Notes:
 * This setting is part of the `Data Vault` settings category.

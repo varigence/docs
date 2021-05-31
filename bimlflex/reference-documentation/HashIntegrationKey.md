@@ -8,11 +8,9 @@ varigenceArticleType: Reference
 
 # Hash Integration Key
 
-Should the Integration Key be hashed.
+Determines whether the Integration Key is [hashed](xref:bimlflex-concepts-hashing).This is done automatically for any project where the destination connection integration stage is Raw Data Vault as it is a requirement for a Data Vault load.
 
-This is done automatically for any project where the destination connection integration stage is Raw Data Vault as it is a requirement for a Data Vault load.
-
-For other load process designs the hashing is optional and controlled by this flag as well as the hashing configuration in the configuration sheet
+For other load process designs the hashing is optional and controlled by this flag as well as the hashing configuration in the configuration sheet.
 
 Notes:
 * This setting is part of the `Core` settings category.

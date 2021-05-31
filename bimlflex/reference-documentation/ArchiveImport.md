@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Archive Import
 
-Should imported files be archived after processing
+Determines whether imported files are archived after processing.
 
 Notes:
 * This setting is part of the `Core` settings category.

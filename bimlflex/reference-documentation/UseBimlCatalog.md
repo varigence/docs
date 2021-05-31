@@ -8,9 +8,7 @@ varigenceArticleType: Reference
 
 # Use BimlCatalog
 
-Should BimlFlex use the BimlCatalog database for logging, auditing and config variables.
-
-Disabling this also disable all dependent functionality
+Determines whether BimlFlex uses the BimlCatalog database for logging, auditing and configuration variables. Disabling this also disable all dependent functionality.
 
 Notes:
 * This setting is part of the `Core` settings category.

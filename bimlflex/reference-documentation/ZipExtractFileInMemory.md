@@ -8,9 +8,7 @@ varigenceArticleType: Reference
 
 # Zip Extract File In Memory
 
-Should the file zip process run in-memory or through file streams.
-
-Files larger than 2 GB are always zipped through file streams
+Determines whether the file zip process runs in-memory or through file streams. Files larger than 2 GB are always zipped through file streams.
 
 Notes:
 * This setting is part of the `Core` settings category.

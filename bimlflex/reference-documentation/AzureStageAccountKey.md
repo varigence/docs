@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Stage Account Key
 
-A Storage access key to use when accessing the Blob storage.
+The storage Access Key to use when accessing the staging Blob storage.
 
 Use a separate development environment and manage production keys outside the BimlFlex metadata
 

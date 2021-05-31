@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Zip Archive Import
 
-Should imported files be compressed when they are archived
+Determines whether imported files are compressed when they are archived.
 
 Notes:
 * This setting is part of the `Core` settings category.

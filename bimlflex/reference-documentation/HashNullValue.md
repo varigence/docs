@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Hash Null Value Replacement
 
-The Null value replacement to be used when hashing
+The Null value replacement to be used when [hashing](xref:bimlflex-concepts-hashing).
 
 Notes:
 * This setting is part of the `Core` settings category.

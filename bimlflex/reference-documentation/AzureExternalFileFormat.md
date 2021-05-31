@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # External File Format
 
-The default External File Format definition to use
+The default External File Format definition to use.
 
 Notes:
 * This setting is part of the `Azure Storage` settings category.

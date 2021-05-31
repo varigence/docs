@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Error SAS Token
 
-A Storage access SAS Token to use when accessing the Blob storage.
+The storage access SAS Token to use when accessing the error file Blob storage.
 
 Use a separate development environment and manage production keys outside the BimlFlex metadata
 

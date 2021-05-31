@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Archive SAS Token
 
-A Storage access SAS Token to use when accessing the Blob storage.
+A storage access SAS Token to use when accessing the Blob storage.
 
 Use a separate development environment and manage production keys outside the BimlFlex metadata
 

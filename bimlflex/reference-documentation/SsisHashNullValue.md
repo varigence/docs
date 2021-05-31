@@ -8,9 +8,9 @@ varigenceArticleType: Reference
 
 # SSIS Hash Null Value Replacement
 
-The Null value replacement to be used when hashing using the Varigence BimlFlex SSIS Custom component.
+The Null value replacement to be used when [hashing](xref:bimlflex-concepts-hashing) using the Varigence BimlFlex SSIS Custom component.
 
-Provides backwards compatibility when set to an empty string. For new implementations and SQL hash compatibility, set to the same value as used for HashNullValue
+Provides backwards compatibility when set to an empty string. For new implementations and SQL hash compatibility, set to the same value as used for HashNullValue.
 
 Notes:
 * This setting is part of the `Core` settings category.

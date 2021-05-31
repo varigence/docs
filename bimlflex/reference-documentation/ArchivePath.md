@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Archive Path
 
-The default path for file archive operations
+The default path for file archive operations.
 
 Notes:
 * This setting is part of the `Core` settings category.

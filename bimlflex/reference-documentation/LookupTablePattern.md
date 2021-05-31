@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Lookup Table Pattern
 
-The table naming pattern for the Lookup Table
+The table naming pattern for the Lookup Table.
 
 Notes:
 * This setting is part of the `Core` settings category.

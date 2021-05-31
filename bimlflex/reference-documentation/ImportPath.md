@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Import Path
 
-The default import path for file imports
+The default import path for file imports.
 
 Notes:
 * This setting is part of the `Core` settings category.

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Root Path
 
-The default root path for any other BimlFlex related file operations
+The default root path for any other BimlFlex related file operations.
 
 Notes:
 * This setting is part of the `Core` settings category.

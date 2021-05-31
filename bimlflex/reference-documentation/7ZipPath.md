@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # 7 Zip Path
 
-The location of the 7-zip executable for zip operations requiring 7-zip
+The location of the 7-zip executable for zip operations requiring 7-zip.
 
 Notes:
 * This setting is part of the `Core` settings category.

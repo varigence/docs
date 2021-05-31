@@ -8,9 +8,9 @@ varigenceArticleType: Reference
 
 # Use SQL Compatible Hash
 
-Should the SSIS inline hashing component use a hashing approach compatible with the SQL Server "HASHBYTES()" function.
+Determines whether the SSIS custom inline [hashing](xref:bimlflex-concepts-hashing) component use a hashing approach compatible with the SQL Server "HASHBYTES()" function.
 
-This is recommended so that the hashed values can be recreated using standard SQL queries when needed
+This is recommended so that the hashed values can be recreated using standard SQL queries when needed.
 
 Notes:
 * This setting is part of the `Core` settings category.

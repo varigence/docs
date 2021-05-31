@@ -8,9 +8,7 @@ varigenceArticleType: Reference
 
 # Stage On Initial Load
 
-Should the Data Mart stage process run on initial load.
-
-Disable this to not stage on initial load.
+Determines whether the Data Mart stage process executes as part of an initial load. Disable this to not stage on initial load.
 
 Any post process code that use the staging table contents will need to take this into consideration
 

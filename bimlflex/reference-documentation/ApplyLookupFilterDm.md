@@ -8,9 +8,9 @@ varigenceArticleType: Reference
 
 # Apply Lookup Filter
 
-Should the SSIS Lookup check for existing rows in the Data Mart load apply a filter condition joining the source table to the destination table to optimize memory usage.
+Determines whether the SSIS Lookup checks for existing rows and applies a filter condition when joining the source table to the destination table. This applies to Data Mart processing and aims to optimize memory usage.
 
-Use if source and destination are co-located in the same database or if cross-database joins are possible
+Use if source and destination are co-located in the same database or if cross-database joins are possible.
 
 Notes:
 * This setting is part of the `Data Mart` settings category.

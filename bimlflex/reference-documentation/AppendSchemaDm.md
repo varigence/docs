@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Append Schema
 
-Should the Schema name be appended to objects in the Data Mart.
+Determines whether the Schema name is appended to Object names in the Data Mart.
 
 Notes:
 * This setting is part of the `Data Mart` settings category.

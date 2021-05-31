@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Global Default Date
 
-The global default date to use for timelines
+The global default date to use for timelines.
 
 Notes:
 * This setting is part of the `Core` settings category.

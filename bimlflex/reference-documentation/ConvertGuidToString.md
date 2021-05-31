@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Convert GUID To String
 
-Should source column of type "GUID"/"UniqueIdentifier" be converted to Strings automatically
+Determines whether a source column of type "GUID"/"UniqueIdentifier" is automatically converted to a String data type.
 
 Notes:
 * This setting is part of the `Core` settings category.

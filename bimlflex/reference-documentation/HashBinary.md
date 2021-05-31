@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Hash Binary
 
-Should the generated hash value be stored as a binary representation rather than a string representation
+Determines whether the generated [hash value](xref:bimlflex-concepts-hashing) is stored as a binary representation, as opposed to a string representation.
 
 Notes:
 * This setting is part of the `Core` settings category.

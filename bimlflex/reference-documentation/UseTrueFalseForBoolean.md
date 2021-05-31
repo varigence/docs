@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Cast Boolean to True False for Hash
 
-Should the SQL inline hashing function for MSSQL, SQLDB and Synapse convert BIT (Boolean) values to True/False instead of 1/0
+Determines whether the SQL inline [hashing](xref:bimlflex-concepts-hashing) function for MSSQL, SQLDB and Synapse converts BIT (Boolean) values to True/False instead of 1/0.
 
 Notes:
 * This setting is part of the `Core` settings category.

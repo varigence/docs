@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Lookup Cache Path
 
-The default path for Cache files used in lookups
+The default path for Cache files used in lookups.
 
 Notes:
 * This setting is part of the `Core` settings category.

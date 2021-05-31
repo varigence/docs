@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Process On Stage
 
-Should the Data Vault stored procedure be called after the Extract has been applied. For Azure projects this must be combined with "AzureStageOnExtract".
+Determines whether the Data Vault stored procedure is called after the Extract has been done. For Azure projects this must be combined with "AzureStageOnExtract".
 
 Notes:
 * This setting is part of the `Data Vault` settings category.

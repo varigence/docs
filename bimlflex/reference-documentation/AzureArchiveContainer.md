@@ -8,9 +8,7 @@ varigenceArticleType: Reference
 
 # Archive Container
 
-The Container Name to use for the archive process.
-
-This should be indicative of the purpose of the contents, such as "archive"
+The Container Name to use for the archive process. This should be indicative of the purpose of the contents, such as "archive"
 
 Notes:
 * This setting is part of the `Azure Storage` settings category.
