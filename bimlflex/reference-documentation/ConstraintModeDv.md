@@ -1,0 +1,17 @@
+---
+uid: bimlflex-app-reference-documentation-setting-ConstraintModeDv
+title: BimlFlex Settings Definition for ConstraintModeDv
+summary: Documentation of settings option within BimlFlex for ConstraintModeDv
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
+---
+
+# Constraint Mode DV
+
+The table reference constraint mode to apply for the DV (Data Vault) database.
+
+("DoNotCreate", "CreateAndNoCheck", "CreateAndCheck")
+
+Notes:
+* This setting is part of the `Orchestration` settings category.
+ * The default value for this setting is `DoNotCreate`.

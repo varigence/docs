@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Connections
 
-
+The BimlFlex [Connections](xref:bimlflex-application-connections) provide the information required to connect to data sources. Connections are also used as containers for objects and allow setting overrides. Additionally, Connections contain metadata to identify the integration stage along with data logistics execution settings.
 
 ## Overview
   

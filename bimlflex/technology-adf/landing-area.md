@@ -206,29 +206,29 @@ Additionally the `Azure Copy` **Settings** will need to be configured as such:
 
 The following Azure **Settings** are used to configure the table destinations.
 
-- [Staging Naming\Naming](xref:bimlflex-metadata-settings#naming-staging-naming)
+- [Staging Naming\Naming](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures naming patterns for Landing Tables and other STG objects
 
 ### [Relevant Settings](#tab/landing-details/blob)
 
 The following Azure **Settings** are used to configure the blob destinations.
 
-- [Azure Storage\Processing](xref:bimlflex-metadata-settings#processing-azure-storage)
+- [Azure Storage\Processing](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the details for relevant containers
-- [Azure Storage\Settings](xref:bimlflex-metadata-settings#settings-azure-storage)
+- [Azure Storage\Settings](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the *BLOB STORAGE DOMAIN*
 
 ### [Relevant Settings](#tab/landing-details/polybase)
 
 The following Azure **Settings** are used to configure the PolyBase blob destinations.
 
-- [Azure Storage\Processing](xref:bimlflex-metadata-settings#processing-azure-storage)
+- [Azure Storage\Processing](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the names Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
-- [Azure Storage\Settings](xref:bimlflex-metadata-settings#settings-azure-storage)
+- [Azure Storage\Settings](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the *BLOB STORAGE DOMAIN*
-- [Azure Copy\Copy Method](xref:bimlflex-metadata-settings#copy-method-azure-copy)
+- [Azure Copy\Copy Method](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the *COPY METHOD* and *POLYBASE SETTINGS*
-- [Azure Copy\Advanced Settings](xref:bimlflex-metadata-settings#settings-azure-copy)
+- [Azure Copy\Advanced Settings](xref:bimlflex-app-reference-documentation-settings-index)
   - Enables and configures PolyBase Staging and Logging
 
 ***

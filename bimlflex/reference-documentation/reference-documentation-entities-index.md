@@ -17,9 +17,7 @@ Below is an outline of the properties and relationships for each entity type.
   
 | BimlFlex Entity | Description |
 | --------- | ----------- |
-|[AdfLinkedServices](xref:bimlflex-app-reference-documentation-AdfLinkedServices) | |
-|[Batches](xref:bimlflex-app-reference-documentation-Batches) | The BimlFlex [Batch](xref:bimlflex-app-batches) concept organises the data logistics workload (ETL/ELT) into groups. Batches are used by Projects to execute workloads in steps, thus managing the overall order of execution.|
-|[BuildSettings](xref:bimlflex-app-reference-documentation-BuildSettings) | |
+|[Batches](xref:bimlflex-app-reference-documentation-Batches) | Batches organise the data logistics workload. They are used by Projects to manage the order of execution, and a Project must be associated to a Batch.|
 |[BusinessAttributes](xref:bimlflex-app-reference-documentation-BusinessAttributes) | |
 |[BusinessClassifications](xref:bimlflex-app-reference-documentation-BusinessClassifications) | |
 |[BusinessEntities](xref:bimlflex-app-reference-documentation-BusinessEntities) | |
@@ -30,10 +28,9 @@ Below is an outline of the properties and relationships for each entity type.
 |[BusinessModelEntityRelationships](xref:bimlflex-app-reference-documentation-BusinessModelEntityRelationships) | |
 |[BusinessModels](xref:bimlflex-app-reference-documentation-BusinessModels) | |
 |[BusinessSubjects](xref:bimlflex-app-reference-documentation-BusinessSubjects) | |
-|[BusinessTags](xref:bimlflex-app-reference-documentation-BusinessTags) | |
 |[Columns](xref:bimlflex-app-reference-documentation-Columns) | |
 |[Configurations](xref:bimlflex-app-reference-documentation-Configurations) | |
-|[Connections](xref:bimlflex-app-reference-documentation-Connections) | |
+|[Connections](xref:bimlflex-app-reference-documentation-Connections) | Connections provide the information required to connect to data sources.|
 |[CustomAttributes](xref:bimlflex-app-reference-documentation-CustomAttributes) | |
 |[Customers](xref:bimlflex-app-reference-documentation-Customers) | |
 |[DatasetMappings](xref:bimlflex-app-reference-documentation-DatasetMappings) | |
@@ -47,5 +44,4 @@ Below is an outline of the properties and relationships for each entity type.
 |[Parameters](xref:bimlflex-app-reference-documentation-Parameters) | |
 |[Projects](xref:bimlflex-app-reference-documentation-Projects) | |
 |[Settings](xref:bimlflex-app-reference-documentation-Settings) | |
-|[UserSettings](xref:bimlflex-app-reference-documentation-UserSettings) | |
 |[Versions](xref:bimlflex-app-reference-documentation-Versions) | |

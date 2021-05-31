@@ -365,49 +365,49 @@ BimlFlex **Settings** are used for environment details and orchestration configu
 
 The following **Settings** are required when working with Azure Data Factory regardless of Source System or **Target Warehouse Environment**.
 
-* [Azure\Data Factory](xref:bimlflex-metadata-settings#data-factory-azure)
+* [Azure\Data Factory](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the *DATA FACTORY NAME*, *SUBSCRIPTION ID*, and *RESOURCE GROUP*
   * Optional configurations for an existing *KEY VAULT* or *INTEGRATION RUNTIME*
-* [Staging Naming\Naming](xref:bimlflex-metadata-settings#naming-staging-naming)
+* [Staging Naming\Naming](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the naming convention for `External Tables` and `Landing Tables`
 
 ### [Using Linked Template Deployment](#tab/settings-linked-template)
 
 These below **Settings** are only required when using a Linked Template ARM Deployment in ADF.
 
-* [Azure\Deployment](xref:bimlflex-metadata-settings#deployment-azure)
+* [Azure\Deployment](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the name of the Account, Container and Key/Token to be used with the Linked Template Deployment
 
 ### [Using Blob Storage](#tab/settings-blob-storage)
 
 These below **Settings** are only required when using Blob Storage in ADF.
 
-* [Azure Storage\Processing](xref:bimlflex-metadata-settings#processing-azure-storage)
+* [Azure Storage\Processing](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
 
 ### [Using PolyBase Staging](#tab/settings-polybase)
 
 These below **Settings** are only required when using PolyBase Staging in ADF.
 
-* [Azure Storage\Processing](xref:bimlflex-metadata-settings#processing-azure-storage)
+* [Azure Storage\Processing](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
-* [Azure Copy\Copy Method](xref:bimlflex-metadata-settings#copy-method-azure-copy)
+* [Azure Copy\Copy Method](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the *COPY METHOD* and *POLYBASE SETTINGS*
-* [Azure Copy\Advanced Settings](xref:bimlflex-metadata-settings#settings-azure-copy)
+* [Azure Copy\Advanced Settings](xref:bimlflex-app-reference-documentation-settings-index)
   * Enables and configures PolyBase Staging and Logging
 
 ### [Using Snowflake](#tab/settings-snowflake)
 
 These below **Settings** are only required when using Snowflake as a **Target Warehouse Platform** in ADF.
 
-* [Azure\Data Factory Function Bridge](xref:bimlflex-metadata-settings#data-factory-function-bridge-azure)
+* [Azure\Data Factory Function Bridge](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the details around using an Azure Function Bridge to connect to Snowflake
-* [Snowflake\Connection](xref:bimlflex-metadata-settings#connection-snowflake)
+* [Snowflake\Connection](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the *ACCOUNT*, *REGION*, *WAREHOUSE* and other Snowflake connection details
   * Also configures the location of the *SNOWSQL CONFIG* file and **SNOWSQL PATH** where SnowSQL is installed
-* [Snowflake\Process](xref:bimlflex-metadata-settings#process-snowflake)
+* [Snowflake\Process](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures features such as Auto Scaling Up/Down, *FILE FORMAT* and the optional removal of staging files
-* [Snowflake\Snowflake Data Tools](xref:bimlflex-metadata-settings#snowflake-data-tools-snowflake)
+* [Snowflake\Snowflake Data Tools](xref:bimlflex-app-reference-documentation-settings-index)
   * Configures the *OUTPUT PATH* for the SnowDT Project
 
 ***

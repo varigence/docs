@@ -33,12 +33,12 @@ Implement other available options by changing the *HASH ALGORITHM* setting to on
   * `SHA2_256`
   * `SHA2_512`.
 * Previous SSIS versions of BimlFlex created a different hash for Unicode characters.
-  The [*USE SQL COMPATIBLE HASH*](xref:bimlflex-metadata-settings#hash-core) and [*USE SQL COMPATIBLE ROW HASH*](xref:bimlflex-metadata-settings#hash-core) settings provides for backward compatibility.
+  The [*USE SQL COMPATIBLE HASH*](xref:bimlflex-app-reference-documentation-settings-index) and [*USE SQL COMPATIBLE ROW HASH*](xref:bimlflex-app-reference-documentation-settings-index) settings provides for backward compatibility.
   They should be set to `Y` for new implementations.
-* Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the [*HASH BINARY*](xref:bimlflex-metadata-settings#hash-core) setting.
+* Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the [*HASH BINARY*](xref:bimlflex-app-reference-documentation-settings-index) setting.
   It is recommended to use binary hashing.
   With binary hashing the hash value is stored in its native binary form, requiring half the storage space compared to the hexadecimal string representation.
-* Performance setting: [*ADD ROW HASH KEY INDEX*](xref:bimlflex-metadata-settings#settings-staging) will add an index to the staging table on the `RowHashKey` to optimize the Hub ETL SSIS packages.
+* Performance setting: [*ADD ROW HASH KEY INDEX*](xref:bimlflex-app-reference-documentation-settings-index) will add an index to the staging table on the `RowHashKey` to optimize the Hub ETL SSIS packages.
 
 ### Hash Collision
 
