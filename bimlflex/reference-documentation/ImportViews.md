@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Import Views
 
-Should Views be imported when importing Metadata
+Determines whether database Views are imported when importing Metadata.
 
 Notes:
 * This setting is part of the `Model` settings category.

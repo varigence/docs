@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Objects
 
-
+[`Objects`](xref:objects) in BimlFlex are the data stores that can be used as source or target for data logistics. An Object can be a database table, a flat file, Excel documents, and, via use of [`Extensions Points`](xref:bimlflex-concepts-extension-points), APIs calls.  Instead of using multiple entity types to handle these scenarios BimlFlex uses managed metadata and the *Object Type* field to annotate what type of **Object** is being referenced.
 
 ## Overview
   
@@ -51,3 +51,20 @@ varigenceArticleType: Reference
 |`Comments` | |
 |`UseOwnThread` | |
 |`NoOfThreads` | |
+
+## References
+  
+| Property | Description |
+| --------- | ----------- |
+|`ProjectUID` | The Project the Object belongs to. If you would like the Object to be referenced by additional Projects, you can use the InheritFromObject, SameAsInherited and UseInheritedName attributes. This is useful when an Object is used in an incremental load during the day and should be part of a full load during the end of day (month) process.|
+|`ConnectionUID` | Every Object is referenced through a Connection, which is set in this field.|
+|`CustomerUID` | Reference to the Customer that this Object belongs to.|
+|`VersionUID` | Reference to the Version that this Object belongs to.|
+|`ObjectTypeId` | A classification on the Object, to identify the role to play in the data processing. The Object Type is used to select the code generation to apply at Object level.|
+|`CompressionTypeId` | |
+|`PartitionSchemeId` | |
+|`AcceleratorTypeId` | |
+|`InheritFromObjectUID` | |
+|`DependOnObjectUID` | |
+|`BusinessEntityUID` | |
+

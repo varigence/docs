@@ -72,3 +72,26 @@ The BimlFlex [Connections](xref:bimlflex-application-connections) provide the in
 |`LS_SecurityTokenKVS_SecretName` | Specifies the Name of the Key Vault Secret that contains the Security Token.|
 |`LS_SecurityTokenKVS_SecretVersion` | Specifies the Version of the Key Vault Secret that contains the Security Token. If omitted, the most recent version is used.|
 |`LS_ApiVersion` | |
+
+## References
+  
+| Property | Description |
+| --------- | ----------- |
+|`CustomerUID` | Reference to the Customer that this Connection belongs to.|
+|`VersionUID` | Reference to the Version that this Connection belongs to.|
+|`ConnectionTypeId` | Defines the technical way the Connection will operate. This list will mirror the different types of Connections that can be defined in Biml.|
+|`SystemTypeId` | Defines the technical System Type (e.g. SQL Server, Azure, Synapse) of the Connections. Depending on the System Type, the relevant source and target components will be chosen.|
+|`IntegrationStageId` | The Integration Stage defines how a Connection can be used in the architecture. This is an important property of a Project as it is used to determine what template is applied to its related Objects. This information is also interpreted in the Project configuration, as it drives the possible stages for the Project. For example - if a Connection is defined with a Source System Integration Stage, and this connection is used as the source connection for a Project then this will provide different options for data processing than if the project source connection will be a Raw Data Vault stage.|
+|`OleDbConnectionUID` | Define an OLEDB Connection for ADONET connections to enable the Execute SQL Tasks.|
+|`AdoNetConnectionUID` | Define an ADONET Connection for OLEDB connections to enable the execution of script components to infer Dimension Keys for late-arriving or missing Dimension Keys.|
+|`LandingConnectionUID` | Define a file landing Connection to use with cloud data movement workflows. This will normally be an Azure Blob Storage or an Azure Data Lake connection.|
+|`LS_ConnectionStringKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the Connection String secret.|
+|`LS_PasswordKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the password secret.|
+|`LS_ServicePrincipalKeyKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the Service Principal secret.|
+|`LS_AccountKeyKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the Account Key secret.|
+|`LS_CredentialKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the Credential secret.|
+|`LS_CredStringKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the Credential String secret.|
+|`LS_SasUriKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the Shared Access Signature (SAS) URI secret.|
+|`LS_SasTokenKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the Shared Access Signature (SAS) Token secret.|
+|`LS_SecurityTokenKVS_UID` | The reference to the Azure Key Vault Linked Service that contains the Security Token secret.|
+

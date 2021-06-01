@@ -10,7 +10,7 @@ varigenceArticleType: Conceptual
 
 BimlFlex provides a number of standard out-of-the-box `parameters`, as well as the functionality to create your own. Parameters can be used in many ways - for example for managing data load windows, orchestration and standardised or default values.
 
-Paramaters are most commonly used to define a high water mark or define a filter for what is returned from a Source System. The explanations and scenarios belong are generated in vein with that task.
+Parameters are most commonly used to define a high water mark or define a filter for what is returned from a Source System. The explanations and scenarios belong are generated in vein with that task.
 
 ## Parameter Management
 

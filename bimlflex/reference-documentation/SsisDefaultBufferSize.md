@@ -8,9 +8,7 @@ varigenceArticleType: Reference
 
 # Default Buffer Size
 
-SSIS Data Flow configuration for Default Buffer Size for supported destinations.
-
-Override the value here to change the default SSIS behavior
+SSIS Data Flow configuration for Default Buffer Size for supported destinations. Override the value here to change the default SSIS behavior
 
 Notes:
 * This setting is part of the `SSIS` settings category.
