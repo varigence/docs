@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Use UTF8 Data Conversion
 
-Should SSIS Express-based extract packages apply UTF8 data conversion
+Determines whether SSIS Express-based extract packages apply UTF8 data conversion.
 
 Notes:
 * This setting is part of the `Staging` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

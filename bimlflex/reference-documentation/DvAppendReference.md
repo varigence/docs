@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Append Reference
 
-The string to append to Reference table names
+The string to append to Reference table names.
 
 Notes:
 * This setting is part of the `Data Vault Naming` settings category.
- * The default value for this setting is `REF`.
+* The default value for this setting is `REF`.

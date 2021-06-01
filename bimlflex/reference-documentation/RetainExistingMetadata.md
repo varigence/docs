@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Retain Existing Metadata
 
-What existing Metadata should be retained when doing an import of existing data.
+Comma-separated list that contains the existing Metadata that should be retained when doing an import of existing data.
 
 Should be specified as a comma-separated list.
 
@@ -18,4 +18,4 @@ I.e. specify "Column Orders, All Other" without double quotes
 
 Notes:
 * This setting is part of the `Model` settings category.
- * The default value for this setting is `All Other`.
+* The default value for this setting is `All Other`.

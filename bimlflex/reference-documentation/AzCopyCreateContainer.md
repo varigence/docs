@@ -12,4 +12,4 @@ Determines whether the pipeline include a step to create the destination contain
 
 Notes:
 * This setting is part of the `AzCopy` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

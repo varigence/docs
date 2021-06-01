@@ -12,4 +12,4 @@ Determines whether the Record Source Code from the connection is appended to the
 
 Notes:
 * This setting is part of the `Staging Naming` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

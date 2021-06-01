@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # SnowSQL Path
 
-The path to the local installation of the Snowflake SnowSQL CLI Client tool
+The path to the local installation of the Snowflake SnowSQL CLI Client tool.
 
 Notes:
 * This setting is part of the `Snowflake` settings category.
- * The default value for this setting is `C:\Program Files\Snowflake SnowSQL`.
+* The default value for this setting is `C:\Program Files\Snowflake SnowSQL`.

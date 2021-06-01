@@ -12,4 +12,4 @@ The table naming pattern for the Lookup Table.
 
 Notes:
 * This setting is part of the `Core` settings category.
- * The default value for this setting is `lkp.@@this`.
+* The default value for this setting is `lkp.@@this`.

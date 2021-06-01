@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Scale Up
 
-Should the Snowflake processing scale up the Snowflake Warehouse at the start of the Batch
+Determines whether the Snowflake processing can scale up the Snowflake Warehouse at the start of the Batch.
 
 Notes:
 * This setting is part of the `Snowflake` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

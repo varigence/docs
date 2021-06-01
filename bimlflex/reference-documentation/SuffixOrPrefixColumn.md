@@ -18,4 +18,4 @@ Use Suffix or Prefix to define if the column identifiers are added after or befo
 
 Notes:
 * This setting is part of the `Naming` settings category.
- * The default value for this setting is `S`.
+* The default value for this setting is `S`.

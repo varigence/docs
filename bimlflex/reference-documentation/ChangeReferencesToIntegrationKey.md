@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Change References To Integration Key
 
-Should Import Metadata add derived Integration Keys from source references or use source columns for references
+Determines whether the Import Metadata feature adds derived Integration Keys based on source references, or use source columns for references.
 
 Notes:
 * This setting is part of the `Model` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

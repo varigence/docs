@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Auto Suspend
 
-Should the Snowflake database Auto Suspend
+Determines where the Snowflake database can Auto Suspend.
 
 Notes:
 * This setting is part of the `Snowflake` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

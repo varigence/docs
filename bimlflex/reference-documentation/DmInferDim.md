@@ -12,4 +12,4 @@ Determines whether the Data Mart process infers Dimension Members.
 
 Notes:
 * This setting is part of the `Data Mart` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

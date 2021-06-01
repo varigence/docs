@@ -12,4 +12,4 @@ Determines whether the Azure-based Extract and Load process runs the stage proce
 
 Notes:
 * This setting is part of the `Azure` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

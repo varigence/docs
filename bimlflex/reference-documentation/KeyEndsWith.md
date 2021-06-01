@@ -14,4 +14,4 @@ For a source table with a column "ProductCategoryId" that links to a ProductCate
 
 Notes:
 * This setting is part of the `Model` settings category.
- * The default value for this setting is `Id,Code,No,Key`.
+* The default value for this setting is `Id,Code,No,Key`.

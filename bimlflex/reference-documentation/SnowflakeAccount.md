@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Account
 
-The Snowflake account name to use
+The Snowflake account name to use.
 
 Notes:
 * This setting is part of the `Snowflake` settings category.

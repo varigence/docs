@@ -12,4 +12,4 @@ Determines whether the Copy Command uses logging.
 
 Notes:
 * This setting is part of the `Azure Copy` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

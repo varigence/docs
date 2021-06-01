@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Append Point In Time
 
-The string to append to Point In Time names
+The string to append to Point In Time table names.
 
 Notes:
 * This setting is part of the `Data Vault Naming` settings category.
- * The default value for this setting is `PIT`.
+* The default value for this setting is `PIT`.

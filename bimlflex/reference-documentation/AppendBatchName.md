@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Append Batch Name
 
-The string to append to Batch names
+The string to append to Batch names.
 
 Notes:
 * This setting is part of the `Naming` settings category.

@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Delay Validation
 
-Should generated SSIS packages use delayed validation for metadata validation
+Determines whether generated SSIS packages use delayed validation for metadata validation.
 
 Notes:
 * This setting is part of the `SSIS` settings category.
- * The default value for this setting is `true`.
+* The default value for this setting is `true`.

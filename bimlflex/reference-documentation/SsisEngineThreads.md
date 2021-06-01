@@ -8,10 +8,10 @@ varigenceArticleType: Reference
 
 # Engine Threads
 
-Max number of SSIS engine threads to employ.
+Maximum number of SSIS engine threads to employ.
 
 Override the value here to change the default SSIS behavior
 
 Notes:
 * This setting is part of the `SSIS` settings category.
- * The default value for this setting is `10`.
+* The default value for this setting is `10`.

@@ -14,4 +14,4 @@ The default is false for backward compatibility however we recommend setting thi
 
 Notes:
 * This setting is part of the `Core` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

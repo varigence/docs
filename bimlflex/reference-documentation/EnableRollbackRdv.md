@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Rollback DV
 
-Should the Batch orchestration engine rollback (delete) committed changes to the DV (Data Vault) database when failed loads are detected
+Determines whether the Batch orchestration engine rolls back (deletes) committed changes to the Data Vault database in case of a failed process.
 
 Notes:
 * This setting is part of the `Orchestration` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

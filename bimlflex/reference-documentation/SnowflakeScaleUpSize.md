@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Scale Up Size
 
-What size should the Snowflake Warehouse be scaled up to
+The size the Snowflake Warehouse can be scaled up to.
 
 Notes:
 * This setting is part of the `Snowflake` settings category.
- * The default value for this setting is `MEDIUM`.
+* The default value for this setting is `MEDIUM`.

@@ -12,4 +12,4 @@ The global default date to use for timelines.
 
 Notes:
 * This setting is part of the `Core` settings category.
- * The default value for this setting is `0001-01-01`.
+* The default value for this setting is `0001-01-01`.

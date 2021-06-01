@@ -12,4 +12,4 @@ Determines whether the generated files must be uploaded using "AzCopy" as part o
 
 Notes:
 * This setting is part of the `AzCopy` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

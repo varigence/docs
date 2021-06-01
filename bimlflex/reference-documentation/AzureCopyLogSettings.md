@@ -12,4 +12,4 @@ The settings for the logging in the Copy Activity, when logging is enabled. Use 
 
 Notes:
 * This setting is part of the `Azure Copy` settings category.
- * The default value for this setting is `LinkedServiceName="@@this" LogLevel="Warning" Path="log"`.
+* The default value for this setting is `LinkedServiceName="@@this" LogLevel="Warning" Path="log"`.

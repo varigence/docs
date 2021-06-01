@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Append Satellite
 
-The string to append to Satellite names
+The string to append to Satellite names.
 
 Notes:
 * This setting is part of the `Data Vault Naming` settings category.
- * The default value for this setting is `SAT`.
+* The default value for this setting is `SAT`.

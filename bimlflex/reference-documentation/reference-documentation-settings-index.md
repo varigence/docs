@@ -20,7 +20,7 @@ Align these settings with the organizations best practices and environmental req
 
 ## AzCopy
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Path](xref:bimlflex-app-reference-documentation-setting-AzCopyPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The file path to the local installation of the "AzCopy" Command.|
 |[Log Location](xref:bimlflex-app-reference-documentation-setting-AzCopyLogLocation) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Sets the log location for AzCopy v.10 log files to the AZCOPY_LOG_LOCATION environment variable.|
@@ -35,7 +35,7 @@ Align these settings with the organizations best practices and environmental req
 
 ## Azure
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Data Factory Name](xref:bimlflex-app-reference-documentation-setting-AzureDataFactoryName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default Azure Data Factory name to use.|
 |[Subscription Id](xref:bimlflex-app-reference-documentation-setting-AzureSubscriptionId) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default Azure Subscription Id to use.|
@@ -67,7 +67,7 @@ Align these settings with the organizations best practices and environmental req
 
 ## Azure Copy
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Retry Attempts](xref:bimlflex-app-reference-documentation-setting-AzureCopyRetryAttempts) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Maximum number of retry attempts for Azure Copy.|
 |[Retry Interval](xref:bimlflex-app-reference-documentation-setting-AzureCopyRetryInterval) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The number of seconds between each retry attempt for Azure Copy.|
@@ -86,7 +86,7 @@ Align these settings with the organizations best practices and environmental req
 
 ## Azure Storage
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Archive Container](xref:bimlflex-app-reference-documentation-setting-AzureArchiveContainer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Container Name to use for the archive process. This should be indicative of the purpose of the contents, such as "archive".|
 |[Archive Account Name](xref:bimlflex-app-reference-documentation-setting-AzureArchiveAccountName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Azure Blob Storage Account Name to use for archiving data as files in blob storage,|
@@ -105,7 +105,7 @@ Align these settings with the organizations best practices and environmental req
 
 ## Core
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Add SQL Comments](xref:bimlflex-app-reference-documentation-setting-AddSqlComments) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether descriptive comments are added to the SQL ELT code.|
 |[Global Default Date](xref:bimlflex-app-reference-documentation-setting-GlobalDefaultDate) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The global default date to use for timelines.|
@@ -136,7 +136,7 @@ Align these settings with the organizations best practices and environmental req
 
 ## Data Mart
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Append Dimension](xref:bimlflex-app-reference-documentation-setting-DmAppendDim) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Dimension object names.|
 |[Append Fact](xref:bimlflex-app-reference-documentation-setting-DmAppendFact) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Fact object names.|
@@ -150,7 +150,7 @@ Align these settings with the organizations best practices and environmental req
 
 ## Data Vault
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Derive Staged Query](xref:bimlflex-app-reference-documentation-setting-DvDeriveStagedQuery) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Staged Query objects be derived in the in the Data Vault source query or inherited.|
 |[Use Hash Keys](xref:bimlflex-app-reference-documentation-setting-DvUseHashKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Data Vault uses Hash Keys, alternatively Natural Keys can be used by disabling this setting.|
@@ -174,175 +174,174 @@ Align these settings with the organizations best practices and environmental req
 
 ## Data Vault Naming
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Append Hub](xref:bimlflex-app-reference-documentation-setting-DvAppendHub) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Hub names.|
 |[Append Link](xref:bimlflex-app-reference-documentation-setting-DvAppendLink) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Link names.|
-|[Append Link Satellite](xref:bimlflex-app-reference-documentation-setting-DvAppendLinkSatellite) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Satellite](xref:bimlflex-app-reference-documentation-setting-DvAppendSatellite) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Point In Time](xref:bimlflex-app-reference-documentation-setting-DvAppendPointInTime) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Bridge](xref:bimlflex-app-reference-documentation-setting-DvAppendBridge) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Bridge names.|
-|[Append Surrogate Key](xref:bimlflex-app-reference-documentation-setting-AppendSurrogateKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Default Schema](xref:bimlflex-app-reference-documentation-setting-DvDefaultSchema) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Preview Schema](xref:bimlflex-app-reference-documentation-setting-DvPreviewSchema) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Reference](xref:bimlflex-app-reference-documentation-setting-DvAppendReference) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Hierarchy Link](xref:bimlflex-app-reference-documentation-setting-DvAppendHierarchyLink) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Same As Link](xref:bimlflex-app-reference-documentation-setting-DvAppendSameAsLink) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Display Database Name](xref:bimlflex-app-reference-documentation-setting-DisplayDatabaseNameRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Display Schema Name](xref:bimlflex-app-reference-documentation-setting-DisplaySchemaNameRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Append Link Satellite](xref:bimlflex-app-reference-documentation-setting-DvAppendLinkSatellite) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Link Satellite names.|
+|[Append Satellite](xref:bimlflex-app-reference-documentation-setting-DvAppendSatellite) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|he string to append to Satellite names.|
+|[Append Point In Time](xref:bimlflex-app-reference-documentation-setting-DvAppendPointInTime) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Point In Time table names.|
+|[Append Bridge](xref:bimlflex-app-reference-documentation-setting-DvAppendBridge) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Bridge table names.|
+|[Append Surrogate Key](xref:bimlflex-app-reference-documentation-setting-AppendSurrogateKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Surrogate/Hash Key column names.|
+|[Default Schema](xref:bimlflex-app-reference-documentation-setting-DvDefaultSchema) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default schema to use for the Raw Data Vault.|
+|[Preview Schema](xref:bimlflex-app-reference-documentation-setting-DvPreviewSchema) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The schema name to use for the Data Vault Accelerator preview objects.|
+|[Append Reference](xref:bimlflex-app-reference-documentation-setting-DvAppendReference) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Reference table names.|
+|[Append Hierarchy Link](xref:bimlflex-app-reference-documentation-setting-DvAppendHierarchyLink) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Hierarchical Link names.|
+|[Append Same As Link](xref:bimlflex-app-reference-documentation-setting-DvAppendSameAsLink) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Same-As Link names.|
+|[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the schema is appended to the names of accelerated Data Vault object.|
+|[Display Database Name](xref:bimlflex-app-reference-documentation-setting-DisplayDatabaseNameRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the database name is displayed in the Raw Data Vault.|
+|[Display Schema Name](xref:bimlflex-app-reference-documentation-setting-DisplaySchemaNameRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the schema name is displayed in the Raw Data Vault|
 
 ## Delete Detection
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Enable Delete Detection](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionEnabled) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Apply Delete Detection PSA](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionApplyPsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Apply Delete Detection RDV](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionApplyRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Enable Delete Detection](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionEnabled) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether BimlFlex applies a separate key load pattern that will enable detection of hard deletes in the source|
+|[Apply Delete Detection PSA](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionApplyPsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Use the default process to insert detected deletes into the Persistent table.|
+|[Apply Delete Detection RDV](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionApplyRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Use the default process to insert detected deletes into the Data Vault Satellite tables.|
 
 ## Model
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Apply Naming Convention](xref:bimlflex-app-reference-documentation-setting-ApplyNamingConvention) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Infer Integration Key From](xref:bimlflex-app-reference-documentation-setting-InferIntegrationKeyFrom) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Retain Existing Metadata](xref:bimlflex-app-reference-documentation-setting-RetainExistingMetadata) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Pad Integration Key](xref:bimlflex-app-reference-documentation-setting-PadIntegrationKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Integration Key](xref:bimlflex-app-reference-documentation-setting-AppendIntegrationKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Key Ends With](xref:bimlflex-app-reference-documentation-setting-KeyEndsWith) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Add Record Source To Integration Key](xref:bimlflex-app-reference-documentation-setting-AddRecordSourceToIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Change References To Integration Key](xref:bimlflex-app-reference-documentation-setting-ChangeReferencesToIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Apply Naming Convention](xref:bimlflex-app-reference-documentation-setting-ApplyNamingConvention) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Naming convention to use for objects and columns.|
+|[Infer Integration Key From](xref:bimlflex-app-reference-documentation-setting-InferIntegrationKeyFrom) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The convention to infer the `Integration Key` from. Case sensitive options are "None", "PrimaryKey", "UniqueKey", "FirstColumn", "IdentityColumn" and "ColumnName::[NameOfColumn]".|
+|[Retain Existing Metadata](xref:bimlflex-app-reference-documentation-setting-RetainExistingMetadata) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Comma-separated list that contains the existing Metadata that should be retained when doing an import of existing data.|
+|[Pad Integration Key](xref:bimlflex-app-reference-documentation-setting-PadIntegrationKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Number of Characters to pad the Integration Key to.|
+|[Append Integration Key](xref:bimlflex-app-reference-documentation-setting-AppendIntegrationKey) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Integration Keys.|
+|[Key Ends With](xref:bimlflex-app-reference-documentation-setting-KeyEndsWith) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The strings that BimlFlex interprets as key identifiers.|
+|[Add Record Source To Integration Key](xref:bimlflex-app-reference-documentation-setting-AddRecordSourceToIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Import Metadata will add "@@rs" to Integration Keys if true.|
+|[Change References To Integration Key](xref:bimlflex-app-reference-documentation-setting-ChangeReferencesToIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Import Metadata feature adds derived Integration Keys based on source references, or use source columns for references.|
 |[Import Views](xref:bimlflex-app-reference-documentation-setting-ImportViews) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
 
 ## Naming
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Suffix Or Prefix Column](xref:bimlflex-app-reference-documentation-setting-SuffixOrPrefixColumn) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Domain](xref:bimlflex-app-reference-documentation-setting-AppendDomain) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Suffix Or Prefix Object](xref:bimlflex-app-reference-documentation-setting-SuffixOrPrefixObject) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Procedure Name](xref:bimlflex-app-reference-documentation-setting-AppendProcedureName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Batch Name](xref:bimlflex-app-reference-documentation-setting-AppendBatchName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Append Load From Psa Name](xref:bimlflex-app-reference-documentation-setting-AppendLoadFromPsaName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Stage Column With Business Name](xref:bimlflex-app-reference-documentation-setting-StageColumnWithBusinessName) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Stage Object With Business Name](xref:bimlflex-app-reference-documentation-setting-StageObjectWithBusinessName) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use Record Source As Append](xref:bimlflex-app-reference-documentation-setting-UseRecordSourceAsAppend) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use Record Source As Schema](xref:bimlflex-app-reference-documentation-setting-UseRecordSourceAsSchema) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Suffix Or Prefix Column](xref:bimlflex-app-reference-documentation-setting-SuffixOrPrefixColumn) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The "SuffixOrPrefixColumn" key defines the behavior when defining column names.|
+|[Suffix Or Prefix Object](xref:bimlflex-app-reference-documentation-setting-SuffixOrPrefixObject) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The "SuffixOrPrefixObject" key defines the behavior when naming objects.|
+|[Append Procedure Name](xref:bimlflex-app-reference-documentation-setting-AppendProcedureName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to procedure names.|
+|[Append Batch Name](xref:bimlflex-app-reference-documentation-setting-AppendBatchName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Batch names.|
+|[Append Load From Psa Name](xref:bimlflex-app-reference-documentation-setting-AppendLoadFromPsaName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to the Load From PSA process name.|
+|[Stage Column With Business Name](xref:bimlflex-app-reference-documentation-setting-StageColumnWithBusinessName) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|When defining a Model Override name for a column, setting this to true will use the override name as the staging column name.|
+|[Stage Object With Business Name](xref:bimlflex-app-reference-documentation-setting-StageObjectWithBusinessName) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|When defining a Model Override name for an object, setting this to true will use the override name as the staging table name.|
+|[Use Record Source As Append](xref:bimlflex-app-reference-documentation-setting-UseRecordSourceAsAppend) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Specifies if the record source should be appended to object names|
+|[Use Record Source As Schema](xref:bimlflex-app-reference-documentation-setting-UseRecordSourceAsSchema) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the `Record Source` is used as the schema name for staging and persistent staging tables.|
 
 ## Operations
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Archive Retention Period](xref:bimlflex-app-reference-documentation-setting-ArchiveRetentionPeriod) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The archive data retention period to use for the BimlFlex database cleanup process.|
 |[Snapshot Retention Period](xref:bimlflex-app-reference-documentation-setting-SnapshotRetentionPeriod) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The snapshot data retention period to use for the BimlFlex database cleanup process.|
 
 ## Orchestration
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Constraint Mode STG](xref:bimlflex-app-reference-documentation-setting-ConstraintModeStg) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Constraint Mode DV](xref:bimlflex-app-reference-documentation-setting-ConstraintModeDv) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Constraint Mode DM](xref:bimlflex-app-reference-documentation-setting-ConstraintModeDm) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Rollback STG](xref:bimlflex-app-reference-documentation-setting-EnableRollbackStg) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Rollback PSA](xref:bimlflex-app-reference-documentation-setting-EnableRollbackPsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Rollback DV](xref:bimlflex-app-reference-documentation-setting-EnableRollbackRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Constraint Mode STG](xref:bimlflex-app-reference-documentation-setting-ConstraintModeStg) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The table reference constraint mode to apply for the STG (Staging) tables in BimlStudio for diagram previewing. Allowed values are "DoNotCreate", "CreateAndNoCheck" and "CreateAndCheck".|
+|[Constraint Mode DV](xref:bimlflex-app-reference-documentation-setting-ConstraintModeDv) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The table reference constraint mode to apply for the Data Vault database. Allowed values are "DoNotCreate", "CreateAndNoCheck" and "CreateAndCheck".|
+|[Constraint Mode DM](xref:bimlflex-app-reference-documentation-setting-ConstraintModeDm) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The table reference constraint mode to apply for the Data Mart database. Allowed values are "DoNotCreate", "CreateAndNoCheck" and "CreateAndCheck".|
+|[Rollback STG](xref:bimlflex-app-reference-documentation-setting-EnableRollbackStg) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Batch orchestration engine rolls back (delete) committed changes to the Staging database in case of a failed process.|
+|[Rollback PSA](xref:bimlflex-app-reference-documentation-setting-EnableRollbackPsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Batch orchestration engine rolls back (deletes) committed changes to the Persistent Staging database in case of a failed process.|
+|[Rollback DV](xref:bimlflex-app-reference-documentation-setting-EnableRollbackRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Batch orchestration engine rolls back (deletes) committed changes to the Data Vault database in case of a failed process.|
 
 ## Snowflake
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Account](xref:bimlflex-app-reference-documentation-setting-SnowflakeAccount) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Region](xref:bimlflex-app-reference-documentation-setting-SnowflakeRegion) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Warehouse](xref:bimlflex-app-reference-documentation-setting-SnowflakeWarehouse) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Database](xref:bimlflex-app-reference-documentation-setting-SnowflakeDatabase) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Schema](xref:bimlflex-app-reference-documentation-setting-SnowflakeSchema) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Password](xref:bimlflex-app-reference-documentation-setting-SnowflakePassword) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[User](xref:bimlflex-app-reference-documentation-setting-SnowflakeUser) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[SnowSQL Config](xref:bimlflex-app-reference-documentation-setting-SnowSqlConfig) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[SnowSQL Path](xref:bimlflex-app-reference-documentation-setting-SnowSqlPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[SnowSQL Connection](xref:bimlflex-app-reference-documentation-setting-SnowSqlConnection) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[File Format](xref:bimlflex-app-reference-documentation-setting-SnowflakeFileFormat) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Remove Stage](xref:bimlflex-app-reference-documentation-setting-SnowflakeRemoveStage) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Auto Suspend](xref:bimlflex-app-reference-documentation-setting-SnowflakeAutoSuspend) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Scale Up](xref:bimlflex-app-reference-documentation-setting-SnowflakeScaleUp) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Scale Up Size](xref:bimlflex-app-reference-documentation-setting-SnowflakeScaleUpSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Scale Down](xref:bimlflex-app-reference-documentation-setting-SnowflakeScaleDown) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Scale Down Size](xref:bimlflex-app-reference-documentation-setting-SnowflakeScaleDownSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Output Path](xref:bimlflex-app-reference-documentation-setting-SnowDtOutputPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
+|[Account](xref:bimlflex-app-reference-documentation-setting-SnowflakeAccount) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake account name to use.|
+|[Region](xref:bimlflex-app-reference-documentation-setting-SnowflakeRegion) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake region to use.|
+|[Warehouse](xref:bimlflex-app-reference-documentation-setting-SnowflakeWarehouse) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake warehouse name to use.|
+|[Database](xref:bimlflex-app-reference-documentation-setting-SnowflakeDatabase) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake database name to use.|
+|[Schema](xref:bimlflex-app-reference-documentation-setting-SnowflakeSchema) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake schema name to use.|
+|[Password](xref:bimlflex-app-reference-documentation-setting-SnowflakePassword) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake password to use.|
+|[User](xref:bimlflex-app-reference-documentation-setting-SnowflakeUser) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake user name to use.|
+|[SnowSQL Config](xref:bimlflex-app-reference-documentation-setting-SnowSqlConfig) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Location of the Snowflake SnowSQL configuration file.|
+|[SnowSQL Path](xref:bimlflex-app-reference-documentation-setting-SnowSqlPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The path to the local installation of the Snowflake SnowSQL CLI Client tool.|
+|[SnowSQL Connection](xref:bimlflex-app-reference-documentation-setting-SnowSqlConnection) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake SnowSQL connection to use.|
+|[File Format](xref:bimlflex-app-reference-documentation-setting-SnowflakeFileFormat) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Snowflake file format to use.|
+|[Remove Stage](xref:bimlflex-app-reference-documentation-setting-SnowflakeRemoveStage) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Snowflake stage is removed prior to loading the new stage file.|
+|[Auto Suspend](xref:bimlflex-app-reference-documentation-setting-SnowflakeAutoSuspend) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines where the Snowflake database can Auto Suspend.|
+|[Scale Up](xref:bimlflex-app-reference-documentation-setting-SnowflakeScaleUp) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Snowflake processing can scale up the Snowflake Warehouse at the start of the Batch.|
+|[Scale Up Size](xref:bimlflex-app-reference-documentation-setting-SnowflakeScaleUpSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The size the Snowflake Warehouse can be scaled up to.|
+|[Scale Down](xref:bimlflex-app-reference-documentation-setting-SnowflakeScaleDown) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Snowflake processing can scale down the Snowflake Warehouse at end of the Batch.|
+|[Scale Down Size](xref:bimlflex-app-reference-documentation-setting-SnowflakeScaleDownSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The size the Snowflake Warehouse can be scaled down to.|
+|[Output Path](xref:bimlflex-app-reference-documentation-setting-SnowDtOutputPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The folder where SnowDT database files are created.|
 
 ## SSDT
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Include Master Key](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeMasterKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Default Master Key](xref:bimlflex-app-reference-documentation-setting-SsdtDefaultMasterKey) |![Text Datatype](images/svg-icons/sql.svg "SQL Datatype")||
-|[Include Credential](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeCredential) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Default Credential](xref:bimlflex-app-reference-documentation-setting-SsdtDefaultCredential) |![Text Datatype](images/svg-icons/sql.svg "SQL Datatype")||
-|[Include External Data Source](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalDataSource) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Default External Data Source](xref:bimlflex-app-reference-documentation-setting-SsdtDefaultExternalDataSource) |![Text Datatype](images/svg-icons/sql.svg "SQL Datatype")||
-|[Include External File Format](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalFileFormat) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Default External File Format](xref:bimlflex-app-reference-documentation-setting-SsdtDefaultExternalFileFormat) |![Text Datatype](images/svg-icons/sql.svg "SQL Datatype")||
-|[Output Path](xref:bimlflex-app-reference-documentation-setting-SsdtOutputPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Include External Tables](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalTables) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Overwrite External Table Defaults](xref:bimlflex-app-reference-documentation-setting-SsdtOverwriteExternalTableDefaults) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Include .NET Core Project Support](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeNetCoreSupport) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Include Master Key](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeMasterKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Master Key statement is includes in the SSDT Project.|
+|[Default Master Key](xref:bimlflex-app-reference-documentation-setting-SsdtDefaultMasterKey) |![Text Datatype](images/svg-icons/sql.svg "SQL Datatype")|The default Master Key SQL Statement to use.|
+|[Include Credential](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeCredential) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Credential statement is included in the SSDT Project.|
+|[Default Credential](xref:bimlflex-app-reference-documentation-setting-SsdtDefaultCredential) |![Text Datatype](images/svg-icons/sql.svg "SQL Datatype")|The default Credential SQL Statement to use.|
+|[Include External Data Source](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalDataSource) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|etermines whether the External Data Source statement is included in the SSDT Project.|
+|[Default External Data Source](xref:bimlflex-app-reference-documentation-setting-SsdtDefaultExternalDataSource) |![Text Datatype](images/svg-icons/sql.svg "SQL Datatype")|The default External Data Source SQL Statement to use.|
+|[Include External File Format](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalFileFormat) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the External File Format statement is included in the generated SSDT Project.|
+|[Default External File Format](xref:bimlflex-app-reference-documentation-setting-SsdtDefaultExternalFileFormat) |![Text Datatype](images/svg-icons/sql.svg "SQL Datatype")|The default External File Format SQL Statement to use.|
+|[Output Path](xref:bimlflex-app-reference-documentation-setting-SsdtOutputPath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The folder where SSDT database projects are created.|
+|[Include External Tables](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalTables) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether External Tables are included in the generated SSDT Project.|
+|[Overwrite External Table Defaults](xref:bimlflex-app-reference-documentation-setting-SsdtOverwriteExternalTableDefaults) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether existing external table-related files are overwritten.|
+|[Include .NET Core Project Support](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeNetCoreSupport) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether SSDT Project files and build script files are created with .NET Core support.|
 
 ## SSIS
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Server](xref:bimlflex-app-reference-documentation-setting-SsisServer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[SSISDB](xref:bimlflex-app-reference-documentation-setting-SsisDb) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Folder](xref:bimlflex-app-reference-documentation-setting-SsisFolder) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[BLOB Temp Storage Path](xref:bimlflex-app-reference-documentation-setting-SsisBLOBTempStoragePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Buffer Temp Storage Path](xref:bimlflex-app-reference-documentation-setting-SsisBufferTempStoragePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Command Timeout](xref:bimlflex-app-reference-documentation-setting-SsisCommandTimeout) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Auto Adjust Buffer Size](xref:bimlflex-app-reference-documentation-setting-SsisAutoAdjustBufferSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Check Constraints](xref:bimlflex-app-reference-documentation-setting-SsisCheckConstraints) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Default Buffer Max Rows](xref:bimlflex-app-reference-documentation-setting-SsisDefaultBufferMaxRows) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Default Buffer Size](xref:bimlflex-app-reference-documentation-setting-SsisDefaultBufferSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Delay Validation](xref:bimlflex-app-reference-documentation-setting-SsisDelayValidation) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Engine Threads](xref:bimlflex-app-reference-documentation-setting-SsisEngineThreads) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Max Concurrent Executables](xref:bimlflex-app-reference-documentation-setting-SsisMaxConcurrentExecutables) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Maximum Insert Commit Size](xref:bimlflex-app-reference-documentation-setting-SsisMaximumInsertCommitSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Process Subfolders](xref:bimlflex-app-reference-documentation-setting-SsisProcessSubfolders) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Rows Per Batch](xref:bimlflex-app-reference-documentation-setting-SsisRowsPerBatch) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Validate External Metadata](xref:bimlflex-app-reference-documentation-setting-SsisValidateExternalMetadata) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
+|[Server](xref:bimlflex-app-reference-documentation-setting-SsisServer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The SSIS Server name to use for generated deployment script files.|
+|[SSISDB](xref:bimlflex-app-reference-documentation-setting-SsisDb) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The SSISDB database name to use for generated deployment script files.|
+|[Folder](xref:bimlflex-app-reference-documentation-setting-SsisFolder) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The SSIS Catalog folder name to use for generated deployment script files.|
+|[BLOB Temp Storage Path](xref:bimlflex-app-reference-documentation-setting-SsisBLOBTempStoragePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Blob Temporary Storage Path that SSIS uses to spool temporary data to disk when it runs out of memory.|
+|[Buffer Temp Storage Path](xref:bimlflex-app-reference-documentation-setting-SsisBufferTempStoragePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Buffer Temporary Storage Path that SSIS uses to spool temporary data to disk when it runs out of memory.|
+|[Command Timeout](xref:bimlflex-app-reference-documentation-setting-SsisCommandTimeout) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|SSIS Command Timeout to use. Override the value here to change the default SSIS behavior.|
+|[Auto Adjust Buffer Size](xref:bimlflex-app-reference-documentation-setting-SsisAutoAdjustBufferSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|SSIS Auto Adjust Buffer Size configuration for supported SQL Server versions.|
+|[Check Constraints](xref:bimlflex-app-reference-documentation-setting-SsisCheckConstraints) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|SSIS Destination configuration for checking constraints. Defaults to "False", as that is recommended for data warehouse destinations.|
+|[Default Buffer Max Rows](xref:bimlflex-app-reference-documentation-setting-SsisDefaultBufferMaxRows) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|SSIS Data Flow configuration for Default Buffer Max Rows for supported destinations.|
+|[Default Buffer Size](xref:bimlflex-app-reference-documentation-setting-SsisDefaultBufferSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|SSIS Data Flow configuration for Default Buffer Size for supported destinations.|
+|[Delay Validation](xref:bimlflex-app-reference-documentation-setting-SsisDelayValidation) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Determines whether generated SSIS packages use delayed validation for metadata validation.|
+|[Engine Threads](xref:bimlflex-app-reference-documentation-setting-SsisEngineThreads) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Maximum number of SSIS engine threads to employ.|
+|[Max Concurrent Executables](xref:bimlflex-app-reference-documentation-setting-SsisMaxConcurrentExecutables) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Maximum number of concurrent SSIS executables to employ.|
+|[Maximum Insert Commit Size](xref:bimlflex-app-reference-documentation-setting-SsisMaximumInsertCommitSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|SSIS Data Flow configuration for Maximum Insert Commit Size for supported destinations.|
+|[Process Subfolders](xref:bimlflex-app-reference-documentation-setting-SsisProcessSubfolders) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Determines whether a flat file source loop loads files in subfolders, of the specified source folder.|
+|[Rows Per Batch](xref:bimlflex-app-reference-documentation-setting-SsisRowsPerBatch) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|SSIS Data Flow configuration for Rows Per Batch for supported destinations.|
+|[Validate External Metadata](xref:bimlflex-app-reference-documentation-setting-SsisValidateExternalMetadata) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Determines whether generated SSIS packages validate external metadata.|
 
 ## Staging
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Persist History](xref:bimlflex-app-reference-documentation-setting-PersistHistory) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Apply Data Type Mapping Stg](xref:bimlflex-app-reference-documentation-setting-ApplyDataTypeMappingStg) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Persist History](xref:bimlflex-app-reference-documentation-setting-PersistHistory) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Provides an option to override the Connection level attribute "PersistHistory" for more granular control.|
+|[Apply Data Type Mapping Stg](xref:bimlflex-app-reference-documentation-setting-ApplyDataTypeMappingStg) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Data Type Mappings that are applied to source tables are used in the Staging and Persistent Staging databases.|
 |[Delete Import File](xref:bimlflex-app-reference-documentation-setting-DeleteImportFile) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether imported files are deleted after processing.|
-|[Add Row Hash Key Index](xref:bimlflex-app-reference-documentation-setting-AddRowHashKeyIndex) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Extract File Encoding](xref:bimlflex-app-reference-documentation-setting-ExtractFileEncoding) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Extract File Split Size](xref:bimlflex-app-reference-documentation-setting-ExtractFileSplitSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Apply Extract Conversion In Data Flow](xref:bimlflex-app-reference-documentation-setting-ApplyExtractConversionInDataFlow) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use UTF8 Data Conversion](xref:bimlflex-app-reference-documentation-setting-SsisExpressUseUTF8DataConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
-|[Use TRY_CAST Conversion](xref:bimlflex-app-reference-documentation-setting-UseTryCastConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the SELECT to STAGE table uses TRY_CAST and TRY_CONVERT.|
-|[Select Blob Row Order By](xref:bimlflex-app-reference-documentation-setting-SelectBlobRowOrderBy) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Select Stage Row Distinct](xref:bimlflex-app-reference-documentation-setting-SelectStageRowDistinct) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
+|[Add Row Hash Key Index](xref:bimlflex-app-reference-documentation-setting-AddRowHashKeyIndex) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to add a unique, non-clustered constraint on the RowHashKey and EffectiveFromDate columns in staging tables.|
+|[Extract File Encoding](xref:bimlflex-app-reference-documentation-setting-ExtractFileEncoding) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|For an extracted file, specify a different encoding than the standard Unicode as produced by the BimlFlex source to file process. Valid choices are "ASCII", "BigEndianUnicode", "UTF32", "UTF7", "UTF8", "Unicode".|
+|[Extract File Split Size](xref:bimlflex-app-reference-documentation-setting-ExtractFileSplitSize) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The file size to split extracted files into multiple files for.|
+|[Apply Extract Conversion In Data Flow](xref:bimlflex-app-reference-documentation-setting-ApplyExtractConversionInDataFlow) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.|
+|[Use UTF8 Data Conversion](xref:bimlflex-app-reference-documentation-setting-SsisExpressUseUTF8DataConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether SSIS Express-based extract packages apply UTF8 data conversion.|
+|[Use TRY_CAST Conversion](xref:bimlflex-app-reference-documentation-setting-UseTryCastConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the select-to-stage tables uses TRY_CAST and TRY_CONVERT.|
+|[Select Blob Row Order By](xref:bimlflex-app-reference-documentation-setting-SelectBlobRowOrderBy) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Row Order definition to use for Blob source queries.|
+|[Select Stage Row Distinct](xref:bimlflex-app-reference-documentation-setting-SelectStageRowDistinct) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the select-to-stage tables apply a row number function based on the defined key, or us a distinct based on the full row including the HASH.|
 
 ## Staging Naming
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Append Name External](xref:bimlflex-app-reference-documentation-setting-AppendNameExternal) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to External tables when using PolyBase.|
-|[Append Name Landing](xref:bimlflex-app-reference-documentation-setting-AppendNameLanding) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Schema Name Pattern](xref:bimlflex-app-reference-documentation-setting-SchemaNamePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Object Name Pattern](xref:bimlflex-app-reference-documentation-setting-ObjectNamePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Delete Object Name Pattern](xref:bimlflex-app-reference-documentation-setting-DeleteObjectNamePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")||
-|[Delete Schema Name Pattern](xref:bimlflex-app-reference-documentation-setting-DeleteSchemaNamePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The name to use for the Delete objects schema when using Delete detection|
+|[Append Name Landing](xref:bimlflex-app-reference-documentation-setting-AppendNameLanding) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to append to Landing tables when deploying using Azure Data Factory Copy directly to the database.|
+|[Schema Name Pattern](xref:bimlflex-app-reference-documentation-setting-SchemaNamePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Specific override behavior for the schema name for staging tables and other database assets.|
+|[Object Name Pattern](xref:bimlflex-app-reference-documentation-setting-ObjectNamePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Specific override behavior for the object name for staging tables.|
+|[Delete Object Name Pattern](xref:bimlflex-app-reference-documentation-setting-DeleteObjectNamePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The name to use for the Delete Objects when using Delete Detection.|
+|[Delete Schema Name Pattern](xref:bimlflex-app-reference-documentation-setting-DeleteSchemaNamePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The name to use for the Delete objects schema when using Delete detection.|
 |[Append Record Source](xref:bimlflex-app-reference-documentation-setting-AppendRecordSource) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the Record Source Code from the connection is appended to the staging object name.|
 |[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaStg) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the source Schema is appended to the object name in the staging layer.|
-|[Display Database Name](xref:bimlflex-app-reference-documentation-setting-DisplayDatabaseNameStg) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Controls if the source database name should be included in the generated SSIS package name|
+|[Display Database Name](xref:bimlflex-app-reference-documentation-setting-DisplayDatabaseNameStg) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Controls if the source database name should be included in the generated SSIS package name.|
 |[Display Schema Name](xref:bimlflex-app-reference-documentation-setting-DisplaySchemaNameStg) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Controls if the source schema name should be included in the generated SSIS package name.|
 
 ## Staging Persistent
   
-|  <div style="width:175px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaPsa) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to add to the PSA objects when Staging and Persistent Staging are co-located in the same database.|
 |[Enable End Date](xref:bimlflex-app-reference-documentation-setting-EnableEndDatePsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Apply end dating in the PSA. This will allow timelines to be maintained in the PSA. Disable this to configure an insert-only approach for the PSA for optimized load performance.|

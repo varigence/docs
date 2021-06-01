@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Apply Extract Conversion In Data Flow
 
-Should SSIS extracts to file use extract data conversion for target files in the SSIS Data Flow instead of in the source select statement
+Determines whether SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.
 
 Notes:
 * This setting is part of the `Staging` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

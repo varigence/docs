@@ -12,4 +12,4 @@ The staging settings to use when enabling Staging for the Copy Activity. Use "@@
 
 Notes:
 * This setting is part of the `Azure Copy` settings category.
- * The default value for this setting is `LinkedServiceName="@@this" EnableCompression="false" Path="staging"`.
+* The default value for this setting is `LinkedServiceName="@@this" EnableCompression="false" Path="staging"`.

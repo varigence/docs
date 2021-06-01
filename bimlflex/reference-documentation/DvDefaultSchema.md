@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Default Schema
 
-The default schema to use for the Raw Data Vault
+The default schema to use for the Raw Data Vault.
 
 Notes:
 * This setting is part of the `Data Vault Naming` settings category.
- * The default value for this setting is `rdv`.
+* The default value for this setting is `rdv`.

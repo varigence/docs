@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Scale Down
 
-Should the Snowflake processing scale down the Snowflake Warehouse at end of the Batch.
+Determines whether the Snowflake processing can scale down the Snowflake Warehouse at end of the Batch.
 
 Notes:
 * This setting is part of the `Snowflake` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

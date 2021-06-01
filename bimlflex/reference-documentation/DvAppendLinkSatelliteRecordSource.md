@@ -12,4 +12,4 @@ Determines whether the BimlFlex Accelerator appends the Record Source to the Lin
 
 Notes:
 * This setting is part of the `Data Vault` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

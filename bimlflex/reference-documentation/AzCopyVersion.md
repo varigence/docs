@@ -12,4 +12,4 @@ The AzCopy version used. This should match the AzCopy command found in the AzCop
 
 Notes:
 * This setting is part of the `AzCopy` settings category.
- * The default value for this setting is `8`.
+* The default value for this setting is `8`.

@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Remove Stage
 
-Should the Snowflake stage be removed prior to loading the new stage file
+Determines whether the Snowflake stage is removed prior to loading the new stage file.
 
 Notes:
 * This setting is part of the `Snowflake` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

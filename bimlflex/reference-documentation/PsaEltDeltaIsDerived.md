@@ -12,4 +12,4 @@ Determines if a PSA table already receives a data delta. Enable this if loading 
 
 Notes:
 * This setting is part of the `Staging Persistent` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

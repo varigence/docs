@@ -28,4 +28,4 @@ Setting the "DvInferLinkHub" to true will allow the Product to populate the Prod
 
 Notes:
 * This setting is part of the `Data Vault` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

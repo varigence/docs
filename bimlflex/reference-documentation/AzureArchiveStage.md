@@ -12,4 +12,4 @@ Determines whether the staged Blob Storage files are moved to the defined archiv
 
 Notes:
 * This setting is part of the `Azure` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

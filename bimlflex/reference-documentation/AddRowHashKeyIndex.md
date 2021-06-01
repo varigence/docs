@@ -12,4 +12,4 @@ Enable to add a unique, non-clustered constraint on the RowHashKey and Effective
 
 Notes:
 * This setting is part of the `Staging` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

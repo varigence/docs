@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Process Subfolders
 
-Should a flat file source loop load files in subfolders of the specified source folder
+Determines whether a flat file source loop loads files in subfolders, of the specified source folder.
 
 Notes:
 * This setting is part of the `SSIS` settings category.
- * The default value for this setting is `false`.
+* The default value for this setting is `false`.

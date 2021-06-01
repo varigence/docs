@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # SSISDB
 
-The SSISDB database name to use for generated deployment script files
+The SSISDB database name to use for generated deployment script files.
 
 Notes:
 * This setting is part of the `SSIS` settings category.
- * The default value for this setting is `SSISDB`.
+* The default value for this setting is `SSISDB`.

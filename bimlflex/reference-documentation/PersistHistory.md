@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Persist History
 
-Provides an option to override the Connection level attribute "PersistHistory" for more granular control.
+Provides an option to override the [Connection](xref:bimlflex-app-reference-documentation-Connections) level attribute "PersistHistory" for more granular control.
 
 Notes:
 * This setting is part of the `Staging` settings category.

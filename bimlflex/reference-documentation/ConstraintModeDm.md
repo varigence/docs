@@ -8,10 +8,8 @@ varigenceArticleType: Reference
 
 # Constraint Mode DM
 
-The table reference constraint mode to apply for the DM (Data Mart) database.
-
-("DoNotCreate", "CreateAndNoCheck", "CreateAndCheck")
+The table reference constraint mode to apply for the Data Mart database. Allowed values are "DoNotCreate", "CreateAndNoCheck" and "CreateAndCheck".
 
 Notes:
 * This setting is part of the `Orchestration` settings category.
- * The default value for this setting is `DoNotCreate`.
+* The default value for this setting is `DoNotCreate`.

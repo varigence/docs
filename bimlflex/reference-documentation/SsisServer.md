@@ -12,4 +12,4 @@ The SSIS Server name to use for generated deployment script files.
 
 Notes:
 * This setting is part of the `SSIS` settings category.
- * The default value for this setting is `localhost`.
+* The default value for this setting is `localhost`.

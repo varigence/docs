@@ -8,11 +8,11 @@ varigenceArticleType: Reference
 
 # Default External File Format
 
-The default External File Format SQL Statement to use
+The default External File Format SQL Statement to use.
 
 Notes:
 * This setting is part of the `SSDT` settings category.
- * The default value for this setting is `CREATE EXTERNAL FILE FORMAT [pipe_zip_format]
+* The default value for this setting is `CREATE EXTERNAL FILE FORMAT [pipe_zip_format]
     WITH (
         FORMAT_TYPE = DELIMITEDTEXT,
         FORMAT_OPTIONS (

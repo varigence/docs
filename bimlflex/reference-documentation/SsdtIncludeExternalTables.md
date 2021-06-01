@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Include External Tables
 
-Should External Tables be included in the SSDT Project
+Determines whether External Tables are included in the generated SSDT Project.
 
 Notes:
 * This setting is part of the `SSDT` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

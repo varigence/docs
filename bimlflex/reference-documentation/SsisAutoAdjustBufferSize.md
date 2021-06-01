@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Auto Adjust Buffer Size
 
-SSIS Auto Adjust Buffer Size configuration for supported SQL Server versions
+SSIS Auto Adjust Buffer Size configuration for supported SQL Server versions.
 
 Notes:
 * This setting is part of the `SSIS` settings category.
- * The default value for this setting is `true`.
+* The default value for this setting is `true`.

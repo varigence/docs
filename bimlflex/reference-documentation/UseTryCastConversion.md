@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Use TRY_CAST Conversion
 
-Determines whether the SELECT to STAGE table uses TRY_CAST and TRY_CONVERT.
+Determines whether the select-to-stage tables use TRY_CAST and TRY_CONVERT.
 
 Notes:
 * This setting is part of the `Staging` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

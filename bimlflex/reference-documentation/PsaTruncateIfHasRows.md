@@ -12,4 +12,4 @@ Determines whether the PSA table should be truncated if it already contains reco
 
 Notes:
 * This setting is part of the `Staging Persistent` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

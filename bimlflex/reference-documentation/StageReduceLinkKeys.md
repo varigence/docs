@@ -12,4 +12,4 @@ Enable this to reduce additional Link hash keys in the staging table.
 
 Notes:
 * This setting is part of the `Data Vault` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

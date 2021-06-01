@@ -12,4 +12,4 @@ Determines whether the Data Vault stored procedure is called after the Extract h
 
 Notes:
 * This setting is part of the `Data Vault` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

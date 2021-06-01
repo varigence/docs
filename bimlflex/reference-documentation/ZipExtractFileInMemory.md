@@ -12,4 +12,4 @@ Determines whether the file zip process runs in-memory or through file streams. 
 
 Notes:
 * This setting is part of the `Core` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

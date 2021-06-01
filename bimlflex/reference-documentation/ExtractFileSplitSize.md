@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Extract File Split Size
 
-Should the extracted files be split into multiple files of this size. Applied if the file is larger than 2x this size. Use 0 to not split files. Size in MB
+The file size to split extracted files into multiple files for. Applied if the file is larger than 2x this size. Use 0 to not split files. Size in MB
 
 Notes:
 * This setting is part of the `Staging` settings category.
- * The default value for this setting is `0`.
+* The default value for this setting is `0`.

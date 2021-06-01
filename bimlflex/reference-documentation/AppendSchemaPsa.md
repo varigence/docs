@@ -12,4 +12,4 @@ The string to add to the PSA objects when Staging and Persistent Staging are co-
 
 Notes:
 * This setting is part of the `Staging Persistent` settings category.
- * The default value for this setting is `ods`.
+* The default value for this setting is `ods`.

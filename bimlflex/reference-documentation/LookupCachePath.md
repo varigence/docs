@@ -12,4 +12,4 @@ The default path for Cache files used in lookups.
 
 Notes:
 * This setting is part of the `Core` settings category.
- * The default value for this setting is `C:\BimlFlex\Cache`.
+* The default value for this setting is `C:\BimlFlex\Cache`.

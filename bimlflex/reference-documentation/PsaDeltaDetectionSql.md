@@ -12,4 +12,4 @@ Should the delta detection for the PSA load use SQL.
 
 Notes:
 * This setting is part of the `Staging Persistent` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

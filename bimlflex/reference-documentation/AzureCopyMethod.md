@@ -12,4 +12,4 @@ For the Copy Activity, specifies the Copy Method to use. Bulk Insert allows dire
 
 Notes:
 * This setting is part of the `Azure Copy` settings category.
- * The default value for this setting is `BulkInsert`.
+* The default value for this setting is `BulkInsert`.

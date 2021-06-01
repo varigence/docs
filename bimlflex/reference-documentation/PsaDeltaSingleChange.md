@@ -12,4 +12,4 @@ Enable this if loading into PSA and the delta only has single changes to each ke
 
 Notes:
 * This setting is part of the `Staging Persistent` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

@@ -12,4 +12,4 @@ Determines whether the source Schema is appended to the object name in the stagi
 
 Notes:
 * This setting is part of the `Staging Naming` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

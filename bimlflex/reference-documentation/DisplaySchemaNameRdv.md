@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Display Schema Name
 
-Should the schema name be displayed in the Raw Data Vault
+Determines whether the schema name is displayed in the Raw Data Vault.
 
 Notes:
 * This setting is part of the `Data Vault Naming` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

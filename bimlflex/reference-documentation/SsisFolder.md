@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Folder
 
-The SSIS Catalog folder name to use for generated deployment script files
+The SSIS Catalog folder name to use for generated deployment script files.
 
 Notes:
 * This setting is part of the `SSIS` settings category.
- * The default value for this setting is `@@this`.
+* The default value for this setting is `@@this`.

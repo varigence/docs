@@ -12,4 +12,4 @@ Set this to true if loading into Data Vault and the Delta only has single change
 
 Notes:
 * This setting is part of the `Data Vault` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

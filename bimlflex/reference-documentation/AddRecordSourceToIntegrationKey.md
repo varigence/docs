@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Add Record Source To Integration Key
 
-Import Metadata will add "@@rs" to Integration Keys if true
+Import Metadata will add "@@rs" to Integration Keys if true.
 
 Notes:
 * This setting is part of the `Model` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

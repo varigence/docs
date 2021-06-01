@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Rollback PSA
 
-Should the Batch orchestration engine rollback (delete) committed changes to the PSA (Persistent Staging) database when failed loads are detected
+Determines whether the Batch orchestration engine rolls back (deletes) committed changes to the Persistent Staging database in case of a failed process.
 
 Notes:
 * This setting is part of the `Orchestration` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

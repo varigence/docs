@@ -12,4 +12,4 @@ The [hashing](xref:bimlflex-concepts-hashing) algorithm to use. ("MD5"/"SHA1"/"S
 
 Notes:
 * This setting is part of the `Core` settings category.
- * The default value for this setting is `SHA1`.
+* The default value for this setting is `SHA1`.

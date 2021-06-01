@@ -12,4 +12,4 @@ Determines whether the environment variables controlling AzCopy v.10 are set bef
 
 Notes:
 * This setting is part of the `AzCopy` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

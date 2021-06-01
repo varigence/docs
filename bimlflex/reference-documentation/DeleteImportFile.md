@@ -12,4 +12,4 @@ Determines whether imported files are deleted after processing.
 
 Notes:
 * This setting is part of the `Staging` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

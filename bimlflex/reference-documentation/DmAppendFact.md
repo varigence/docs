@@ -12,4 +12,4 @@ The string to append to Fact object names.
 
 Notes:
 * This setting is part of the `Data Mart` settings category.
- * The default value for this setting is `FACT`.
+* The default value for this setting is `FACT`.

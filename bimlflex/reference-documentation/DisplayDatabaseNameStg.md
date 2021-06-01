@@ -12,4 +12,4 @@ Controls if the source database name should be included in the generated SSIS pa
 
 Notes:
 * This setting is part of the `Staging Naming` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

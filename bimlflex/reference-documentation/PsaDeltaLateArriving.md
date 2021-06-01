@@ -12,4 +12,4 @@ Does the PSA load include late arriving deltas.
 
 Notes:
 * This setting is part of the `Staging Persistent` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

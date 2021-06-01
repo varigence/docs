@@ -12,4 +12,4 @@ Determines whether the Data Vault uses Hash Keys, alternatively Natural Keys can
 
 Notes:
 * This setting is part of the `Data Vault` settings category.
- * The default value for this setting is `Y`.
+* The default value for this setting is `Y`.

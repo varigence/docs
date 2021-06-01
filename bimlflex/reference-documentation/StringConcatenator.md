@@ -14,4 +14,4 @@ For a source column with an "SsisDataflowExpression" using the "FlexToBk(@@rs,Pr
 
 Notes:
 * This setting is part of the `Core` settings category.
- * The default value for this setting is `~`.
+* The default value for this setting is `~`.

@@ -18,30 +18,13 @@ Below is an outline of the properties and relationships for each entity type.
 | BimlFlex Entity | Description |
 | --------- | ----------- |
 |[Batches](xref:bimlflex-app-reference-documentation-Batches) | Batches organise the data logistics workload. They are used by Projects to manage the order of execution, and a Project must be associated to a Batch.|
-|[BusinessAttributes](xref:bimlflex-app-reference-documentation-BusinessAttributes) | |
-|[BusinessClassifications](xref:bimlflex-app-reference-documentation-BusinessClassifications) | |
-|[BusinessEntities](xref:bimlflex-app-reference-documentation-BusinessEntities) | |
-|[BusinessEntityRelationships](xref:bimlflex-app-reference-documentation-BusinessEntityRelationships) | |
-|[BusinessEntityTypes](xref:bimlflex-app-reference-documentation-BusinessEntityTypes) | |
-|[BusinessModelConfigurations](xref:bimlflex-app-reference-documentation-BusinessModelConfigurations) | |
-|[BusinessModelEntities](xref:bimlflex-app-reference-documentation-BusinessModelEntities) | |
-|[BusinessModelEntityRelationships](xref:bimlflex-app-reference-documentation-BusinessModelEntityRelationships) | |
-|[BusinessModels](xref:bimlflex-app-reference-documentation-BusinessModels) | |
-|[BusinessSubjects](xref:bimlflex-app-reference-documentation-BusinessSubjects) | |
-|[Columns](xref:bimlflex-app-reference-documentation-Columns) | |
-|[Configurations](xref:bimlflex-app-reference-documentation-Configurations) | |
+|[Columns](xref:bimlflex-app-reference-documentation-Columns) | The Columns screen allows for managing the individual components for an Object, for example the attributes of a database table.|
+|[Configurations](xref:bimlflex-app-reference-documentation-Configurations) | Configurations custom attributes which can be used to drive the behaviour of BimlFlex, and the output it generates.|
 |[Connections](xref:bimlflex-app-reference-documentation-Connections) | Connections provide the information required to connect to data sources.|
-|[CustomAttributes](xref:bimlflex-app-reference-documentation-CustomAttributes) | |
-|[Customers](xref:bimlflex-app-reference-documentation-Customers) | |
-|[DatasetMappings](xref:bimlflex-app-reference-documentation-DatasetMappings) | |
-|[DatasetObjects](xref:bimlflex-app-reference-documentation-DatasetObjects) | |
-|[DatasetRelationships](xref:bimlflex-app-reference-documentation-DatasetRelationships) | |
-|[Datasets](xref:bimlflex-app-reference-documentation-Datasets) | |
+|[Customers](xref:bimlflex-app-reference-documentation-Customers) | Customers are top-level groupings of metadata and models, and allow for a flexible way to configure functional areas for a data solution.|
 |[DataTypeMappings](xref:bimlflex-app-reference-documentation-DataTypeMappings) | |
-|[Environments](xref:bimlflex-app-reference-documentation-Environments) | |
-|[ExtensionPoints](xref:bimlflex-app-reference-documentation-ExtensionPoints) | |
 |[Objects](xref:bimlflex-app-reference-documentation-Objects) | |
 |[Parameters](xref:bimlflex-app-reference-documentation-Parameters) | |
-|[Projects](xref:bimlflex-app-reference-documentation-Projects) | |
+|[Projects](xref:bimlflex-app-reference-documentation-Projects) | Connections define the data logistics workload. They specify the primary orchestration engine (e.g. ADF) and the Connections for the involved the sources and targets.|
 |[Settings](xref:bimlflex-app-reference-documentation-Settings) | |
 |[Versions](xref:bimlflex-app-reference-documentation-Versions) | |

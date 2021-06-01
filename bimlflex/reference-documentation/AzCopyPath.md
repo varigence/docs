@@ -12,4 +12,4 @@ The file path to the local installation of the "AzCopy" Command. If installed in
 
 Notes:
 * This setting is part of the `AzCopy` settings category.
- * The default value for this setting is `C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy`.
+* The default value for this setting is `C:\Program Files (x86)\Microsoft SDKs\Azure\AzCopy`.

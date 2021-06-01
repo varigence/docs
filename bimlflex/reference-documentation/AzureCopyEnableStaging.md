@@ -12,4 +12,4 @@ Determines whether the Azure Data Factory Copy Activity uses Staging. Use this t
 
 Notes:
 * This setting is part of the `Azure Copy` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

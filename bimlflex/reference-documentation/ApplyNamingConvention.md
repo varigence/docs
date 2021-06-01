@@ -14,4 +14,4 @@ Case sensitive options are "None", "PascalCase", "camelCase", "Proper_Case", "Pr
 
 Notes:
 * This setting is part of the `Model` settings category.
- * The default value for this setting is `None`.
+* The default value for this setting is `None`.

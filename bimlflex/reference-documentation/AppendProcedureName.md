@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Append Procedure Name
 
-The string to append to procedure names
+The string to append to procedure names.
 
 Notes:
 * This setting is part of the `Naming` settings category.
- * The default value for this setting is `flex_`.
+* The default value for this setting is `flex_`.

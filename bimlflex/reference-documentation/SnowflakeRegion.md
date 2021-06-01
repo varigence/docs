@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Region
 
-The Snowflake region to use
+The Snowflake region to use.
 
 Notes:
 * This setting is part of the `Snowflake` settings category.

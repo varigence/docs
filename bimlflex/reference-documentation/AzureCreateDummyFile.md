@@ -12,4 +12,4 @@ Should the Staging process copy a "placeholder.dummy" file to accommodate the Po
 
 Notes:
 * This setting is part of the `Azure` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

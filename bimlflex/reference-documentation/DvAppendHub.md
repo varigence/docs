@@ -12,4 +12,4 @@ The string to append to Hub names.
 
 Notes:
 * This setting is part of the `Data Vault Naming` settings category.
- * The default value for this setting is `HUB`.
+* The default value for this setting is `HUB`.

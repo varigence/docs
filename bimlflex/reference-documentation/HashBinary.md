@@ -12,4 +12,4 @@ Determines whether the generated [hash value](xref:bimlflex-concepts-hashing) is
 
 Notes:
 * This setting is part of the `Core` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

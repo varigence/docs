@@ -12,4 +12,4 @@ Determines whether AzCopy used a SAS Token for access. This is the only supporte
 
 Notes:
 * This setting is part of the `AzCopy` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.

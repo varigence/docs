@@ -12,4 +12,4 @@ Determines whether the Staged Query objects be derived in the in the Data Vault 
 
 Notes:
 * This setting is part of the `Data Vault` settings category.
- * The default value for this setting is `N`.
+* The default value for this setting is `N`.
