@@ -22,7 +22,7 @@ Data Vault Links:
   The order of the participating hub determines the concatenation order.
   Changing the order or re-acceleration may create a different hash.
 * The Link Unique Key is the hash key of all participating hubs.
-* The key column names will inherit the source column name removing the key suffix specified in the list [*KEY ENDS WITH*](xref:bimlflex-metadata-settings#settings-model) **Setting**.
+* The key column names will inherit the source column name removing the key suffix specified in the list [*KEY ENDS WITH*](xref:bimlflex-app-reference-documentation-settings-index) **Setting**.
   This setting can be altered if your system suffix keys with a different value like `NM`,`CD`, etc.
   The result is stored in the *MODEL REFERENCE* and can be altered if required.
   This provides flexibility when a Link reference the same Hub twice and therefore will need roleplaying names.
@@ -52,9 +52,9 @@ Data Vault Links:
 * Prefix or Suffix with one of the following recommendations `LNK`, `L`, `LINK`.
 * Links can be accelerated from multiple *MODEL OBJECT TYPES* and can be placed into two categories.
 * **1. Model Object Type** `Hub`
-  * The Link name will be derived by combing the **Object** *MODEL OVERRIDE SHORT NAME* or **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND LINK*](xref:bimlflex-metadata-settings#naming-data-vault-naming) **Setting**.
+  * The Link name will be derived by combing the **Object** *MODEL OVERRIDE SHORT NAME* or **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND LINK*](xref:bimlflex-app-reference-documentation-settings-index) **Setting**.
   * This is best explained with an example.
-    Let's say we imported a table called `GeneralLedger` that has a relationship to `ChartOfAccounts` and the [*APPEND LINK*](xref:bimlflex-metadata-settings#naming-data-vault-naming) **Setting** is `L`.
+    Let's say we imported a table called `GeneralLedger` that has a relationship to `ChartOfAccounts` and the [*APPEND LINK*](xref:bimlflex-app-reference-documentation-settings-index) **Setting** is `L`.
     The default name for the Link will be `L_GeneralLedger_ChartOfAccounts`.
     Link names can get quite long so the **Object** *MODEL OVERRIDE SHORT NAME* can be used to shorten the left-hand portion of the name.
     If we change this to `GL` the name will now be `L_GL_ChartOfAccounts` and can be even further shortened by changing the *MODEL REFERENCE* of relationship column.
@@ -63,7 +63,7 @@ Data Vault Links:
     * *APPEND LINK* + `{Derived Object Name}` + *MODEL REFERENCE* **or** `{Derived Object Name}` + *MODEL REFERENCE* + *APPEND LINK*
       * `{Derived Object Name}` = (In order) *MODEL OVERRIDE SHORT NAME* **or** *MODEL OVERRIDE NAME* **or** *OBJECT NAME*
 * **2. Model Object Type** `Link` **-** `Hierarchy Link` **-** `Same As Link`
-  * The Link name will be derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND LINK*](xref:bimlflex-metadata-settings#naming-data-vault-naming) **Setting**.
+  * The Link name will be derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND LINK*](xref:bimlflex-app-reference-documentation-settings-index) **Setting**.
   * The pattern for the name is as follows:
     * *APPEND LINK* + `{Derived Object Name}` **or** `{Derived Object Name}` + *APPEND LINK*
       * `{Derived Object Name}` = (In order) *MODEL OVERRIDE SHORT NAME* **or** *MODEL OVERRIDE NAME* **or** *OBJECT NAME*

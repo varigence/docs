@@ -8,8 +8,9 @@ varigenceArticleType: Conceptual
 
 # Load Parameters
 
-**Paramaters** are most commonly used to define a high water mark or define a filter for what is returned from a Source System.
-The explanations and scenarios belong are generated in vein with that task.
+BimlFlex provides a number of standard out-of-the-box `parameters`, as well as the functionality to create your own. Parameters can be used in many ways - for example for managing data load windows, orchestration and standardised or default values.
+
+Parameters are most commonly used to define a high water mark or define a filter for what is returned from a Source System. The explanations and scenarios belong are generated in vein with that task.
 
 ## Parameter Management
 
@@ -400,7 +401,7 @@ It also supports specifying Project level Parameters that are commonly available
 
 Add Extension Points in BimlStudio.
 
-More information: [BimlFlex Extension Points](xref:bimlflex-extension-points)
+More information: [BimlFlex Extension Points](xref:bimlflex-concepts-extension-points)
 
 ![Create Project Parameter](../user-guide/images/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
 

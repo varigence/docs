@@ -11,7 +11,7 @@ Data Vault Hubs:
 
 * Consist of a distinct list of [**Integration Keys**](xref:bimlflex-data-vault-implementation-integration-keys#integration-keys-business-key) of the **Core Business Concept**.
 * BimlFlex makes use of a concatenated key to simplify implementation and allows for single key integration and is required when choosing a Data Vault implementation without using Hash Keys.
-* The **Setting** [*USE HASH KEYS*](xref:bimlflex-metadata-settings#accelerator-data-vault) can be used to toggle between using a hashed or natural **Integration Key**.
+* The **Setting** [*USE HASH KEYS*](xref:bimlflex-app-reference-documentation-settings-index) can be used to toggle between using a hashed or natural **Integration Key**.
   Integrate without a `HASH` which is very efficient for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
 
 > [!IMPORTANT]
@@ -21,7 +21,7 @@ Data Vault Hubs:
 ## Stub Hubs
 
 * A Hub created as a placeholder when a related **CBC** that is not in scope for the current iteration.
-* The [*INFER LINK HUB*](xref:bimlflex-metadata-settings#process-data-vault) setting will ensure the **Integration Keys** are always loaded enabling future expansion.
+* The [*INFER LINK HUB*](xref:bimlflex-app-reference-documentation-settings-index) setting will ensure the **Integration Keys** are always loaded enabling future expansion.
 
 > [!NOTE]
 > There isn't an *OBJECT TYPE* to define a `Stub Hub` as it is just a `Hub`.
@@ -29,7 +29,7 @@ Data Vault Hubs:
 ## Hub Naming Convention
 
 * Prefix or Suffix with one of the following recommendations `HUB`, `H`, `HB`.
-* The Hub name will be derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND HUB*](xref:bimlflex-metadata-settings#naming-data-vault-naming) **Setting**.
+* The Hub name will be derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND HUB*](xref:bimlflex-app-reference-documentation-settings-index) **Setting**.
 
 ## Hub System Column Configuration
 

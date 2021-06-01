@@ -455,29 +455,29 @@ The below **Settings** only need to be configured when using Azure Synapse as th
 
 The following **Settings** are required when working with Azure Synapse regardless of the orchestration method.
 
-- [Staging Naming\Naming](xref:bimlflex-metadata-settings#naming-staging-naming)
+- [Staging Naming\Naming](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the naming convention for `External Tables` and `Landing Tables`
 
 ### [SSIS](#tab/settings-orchestration/ssis-orchestration)
 
-- [AzCopy\Paths](xref:bimlflex-metadata-settings#paths-azcopy)
+- [AzCopy\Paths](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures location of AzCopy and Log Location
-- [AzCopy\Settings](xref:bimlflex-metadata-settings#settings-azcopy)
+- [AzCopy\Settings](xref:bimlflex-app-reference-documentation-settings-index)
   - General AzCopy Settings
-- [Azure Storage\Processing](xref:bimlflex-metadata-settings#processing-azure-storage)
+- [Azure Storage\Processing](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the names Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
-- [SSDT\Synapse SSDT Artifacts](xref:bimlflex-metadata-settings#synapse-ssdt-artifacts-ssdt)
+- [SSDT\Synapse SSDT Artifacts](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the inclusion and configuration of the `External Tables`, `Master Key`, `Credential`, `External Data Source` and `External File Format`
 
 ### [ADF](#tab/settings-orchestration/adf-orchestration)
 
-- [Azure\Data Factory](xref:bimlflex-metadata-settings#data-factory-azure)
+- [Azure\Data Factory](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the *DATA FACTORY NAME*, *SUBSCRIPTION ID*, and *RESOURCE GROUP*
   - Optional configurations for an existing *KEY VAULT* or *INTEGRATION RUNTIME*
-- (*OPTIONAL*) [Azure\Deployment](xref:bimlflex-metadata-settings#deployment-azure)
+- (*OPTIONAL*) [Azure\Deployment](xref:bimlflex-app-reference-documentation-settings-index)
   - Only required if using an ADF Linked Template Deployment
   - Configures the name of the Account, Container and Key/Token to be used with the Linked Template Deployment
-- [Azure Storage\Processing](xref:bimlflex-metadata-settings#processing-azure-storage)
+- [Azure Storage\Processing](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the names Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
 
 ### [PolyBase Staging](#tab/settings-polybase/adf-orchestration)
@@ -485,9 +485,9 @@ The following **Settings** are required when working with Azure Synapse regardle
 These below **Settings** are only required when using PolyBase Staging in ADF.
 
 - All Settings in the ADF tab
-- [Azure Copy\Copy Method](xref:bimlflex-metadata-settings#copy-method-azure-copy)
+- [Azure Copy\Copy Method](xref:bimlflex-app-reference-documentation-settings-index)
   - Configures the *COPY METHOD* and *POLYBASE SETTINGS*
-- [Azure Copy\Advanced Settings](xref:bimlflex-metadata-settings#settings-azure-copy)
+- [Azure Copy\Advanced Settings](xref:bimlflex-app-reference-documentation-settings-index)
   - Enables and configures PolyBase Staging and Logging
 
 ***
@@ -533,7 +533,7 @@ A part of the Build process, BimlStudio will generate a SQL Server Data Tools (S
 By default a SSDT deployment file named `ssdt-deploy.<DatabaseName>.ps1` is created and placed in the `...\<Output Folder>\Deploy\` folder for each database in the target warehouse environment.
 
 The SSDT project will have all the required tables, stored procedures and Data Vault default inserts required for the project.
-Through use of [SSDT\Synapse SSDT Artifacts Settings](xref:bimlflex-metadata-settings#synapse-ssdt-artifacts-ssdt) EXTERNAL TABLES can be included or excluded in this deployment file.
+Through use of [SSDT\Synapse SSDT Artifacts Settings](xref:bimlflex-app-reference-documentation-settings-index) EXTERNAL TABLES can be included or excluded in this deployment file.
 These files are commonly excluded due to PolyBase requiring a file to exist in the blob storage prior to the creation of the EXTERNAL TABLE.
 
 > [!IMPORTANT]
@@ -573,7 +573,7 @@ Additionally if using the PolyBase Architecture, the `PolyBase External Table Sc
 > [!NOTE]
 > Ensure you configure the below settings is using the `PolyBase External Table Script`:
 >
-> - [SSDT\Synapse SSDT Artifacts](xref:bimlflex-metadata-settings#synapse-ssdt-artifacts-ssdt)
+> - [SSDT\Synapse SSDT Artifacts](xref:bimlflex-app-reference-documentation-settings-index)
 
 The below table has been provided as a quick reminder as to when a script should be generated.
 

@@ -1,14 +1,16 @@
 - name: Overview
   href: index.md
+- name: Entity Reference Documentation
+  href: reference-documentation-entities-index.md
+- name: Settings Reference Documentation
+  href: reference-documentation-settings-index.md  
+- name: Static Values
+  href: metadata-static-values.md  
 - name: Excel Metadata Add-In
   href: excel-metadata-addin.md
 - name: Metadata Configurations
   href: metadata-configurations.md
-- name: Metadata Settings
-  href: metadata-settings.md
 - name: Extension Point Definitions
   href: extension-point-definitions.md
-- name: Metadata Entity Definitions
-  href: metadata-entity-definitions.md
 - name: Data Type Conversions
   href: data-type-conversions.md

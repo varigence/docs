@@ -2,10 +2,14 @@
   href: index.md
 - name: Customer Concept
   href: customer.md
-- name: Importing Metadata
-  href: importing-metadata.md
 - name: Version Concept
   href: versions.md  
+- name: Importing Metadata
+  href: importing-metadata.md
+- name: Integration Templates
+  href: integration-template.md  
+- name: Persistent Staging Area
+  href: persistent-staging-area.md  
 - name: Hashing
   href: hashing.md
 - name: Load Parameters

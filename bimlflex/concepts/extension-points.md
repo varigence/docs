@@ -7,7 +7,9 @@ varigenceArticleType: Conceptual
 ---
 # Extension Points
 
-Reference information is detailed in the [BimlFlex Extension Point Definitions](xref:bimlflex-extension-point-definitions) document
+Extension points are one of the key ways BimlFlex provides customisation to cater for specific scenarios. While the standard templates cover most real-world scenarios, there may be a specific tweak that would improve certain edge cases. These modifications can be defined using extension points, that allow for custom logic to be added to a template at various points in the process.
+
+Reference information is detailed in the [BimlFlex Extension Point Definitions](xref:bimlflex-extension-point-definitions) document.
 
 Extension Points are used to extend the default functionality of BimlFlex using standard Biml code. It can extend and override many different areas of the BimlFlex framework.
 

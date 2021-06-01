@@ -15,7 +15,8 @@ Data Vault provides an easy-to-explain and flexible way to tackle complex issues
 * [Data Vault Hubs](xref:bimlflex-data-vault-concept-hub) - the Core Business Concept
 * [Data Vault Links](xref:bimlflex-data-vault-concept-link) - the Natural Business Relationship
 * [Data Vault Satellites](xref:bimlflex-data-vault-concept-satellite) - the Context entity with descriptive information
-* [Point-in-Time and Bridge tables](xref:bimlflex-data-vault-concept-pit-bridge)
+* [Point-in-Time tables](xref:bimlflex-data-vault-concept-pit)
+* [Bridge tables](xref:bimlflex-data-vault-concept-bridge)
 * [Reference Data](xref:bimlflex-data-vault-concept-reference-data)
 * [Integration Key Concept](xref:bimlflex-data-vault-integration-keys-and-relationships)
 
@@ -31,6 +32,7 @@ BimlFlex provides various ways to implement data solutions that utilise concepts
 * [Implementing Data Vault Links in BimlFlex](xref:bimlflex-data-vault-implementation-link)
 * [Driving Keys in BimlFlex](xref:bimlflex-data-vault-driving-keys)
 * [BimlFlex solution templates for Data Vault](xref:bimlflex-data-vault-templates)
+* [Zero records](xref:bimlflex-data-vault-concept-zero-records)
 
 ## Recommendations for implementing Data Vault on Microsoft Azure Synapse Analytics
 
