@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the PowerShell deployment files include environment verification by calling Get-InstalledModule -Name Az.
 
 Notes:
+
 * This setting is part of the `Azure` settings category.
 * The default value for this setting is `Y`.

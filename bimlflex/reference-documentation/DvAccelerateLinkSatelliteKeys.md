@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the BimlFlex Accelerator adds the Integration Key to Link Satellites.
 
 Notes:
+
 * This setting is part of the `Data Vault` settings category.
 * The default value for this setting is `Y`.

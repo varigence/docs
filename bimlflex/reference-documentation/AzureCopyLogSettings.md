@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 The settings for the logging in the Copy Activity, when logging is enabled. Use "@@this" to automatically use the Linked Service associated with the PolyBase Landing connection.
 
 Notes:
+
 * This setting is part of the `Azure Copy` settings category.
 * The default value for this setting is `LinkedServiceName="@@this" LogLevel="Warning" Path="log"`.

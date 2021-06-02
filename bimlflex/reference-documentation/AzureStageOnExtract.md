@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the Azure-based Extract and Load process runs the stage process for the extracted data in the destination Azure Synapse.
 
 Notes:
+
 * This setting is part of the `Azure` settings category.
 * The default value for this setting is `Y`.

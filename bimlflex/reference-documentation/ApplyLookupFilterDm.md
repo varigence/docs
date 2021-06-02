@@ -13,5 +13,6 @@ Determines whether the SSIS Lookup checks for existing rows and applies a filter
 Use if source and destination are co-located in the same database or if cross-database joins are possible.
 
 Notes:
+
 * This setting is part of the `Data Mart` settings category.
 * The default value for this setting is `Y`.

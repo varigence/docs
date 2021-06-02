@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the SQL inline [hashing](xref:bimlflex-concepts-hashing) function for MSSQL, SQLDB and Synapse converts BIT (Boolean) values to True/False instead of 1/0.
 
 Notes:
+
 * This setting is part of the `Core` settings category.
 * The default value for this setting is `N`.

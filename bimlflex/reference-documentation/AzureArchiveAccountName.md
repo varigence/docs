@@ -15,4 +15,5 @@ This is the default archive destination for the staging to archive file move pro
 The Account Name is visible in the Azure Portal as the main name of the Storage Account. It is also detailed in the Settings, Access Keys blade,
 
 Notes:
+
 * This setting is part of the `Azure Storage` settings category.

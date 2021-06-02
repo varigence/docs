@@ -11,4 +11,5 @@ varigenceArticleType: Reference
 The default Azure Data Factory name to use.
 
 Notes:
+
 * This setting is part of the `Azure` settings category.

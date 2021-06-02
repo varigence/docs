@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether a source column of type "GUID"/"UniqueIdentifier" is automatically converted to a String data type.
 
 Notes:
+
 * This setting is part of the `Core` settings category.
 * The default value for this setting is `Y`.

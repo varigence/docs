@@ -11,4 +11,5 @@ varigenceArticleType: Reference
 For the Copy Activity, specifies the degree of parallelism that data loading should use.
 
 Notes:
+
 * This setting is part of the `Azure Copy` settings category.

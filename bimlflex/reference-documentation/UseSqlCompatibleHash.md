@@ -13,5 +13,6 @@ Determines whether the SSIS custom inline [hashing](xref:bimlflex-concepts-hashi
 This is recommended so that the hashed values can be recreated using standard SQL queries when needed.
 
 Notes:
+
 * This setting is part of the `Core` settings category.
 * The default value for this setting is `Y`.

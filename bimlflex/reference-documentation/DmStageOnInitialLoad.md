@@ -13,5 +13,6 @@ Determines whether the Data Mart stage process executes as part of an initial lo
 Any post process code that use the staging table contents will need to take this into consideration
 
 Notes:
+
 * This setting is part of the `Data Mart` settings category.
 * The default value for this setting is `N`.

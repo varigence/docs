@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the BimlFlex Accelerator adds source key columns to the Hub in addition to the Integration Key.
 
 Notes:
+
 * This setting is part of the `Data Vault` settings category.
 * The default value for this setting is `N`.

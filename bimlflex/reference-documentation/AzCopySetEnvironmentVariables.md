@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the environment variables controlling AzCopy v.10 are set before each object is loaded. This is only valid for AzCopy v.10. Set these control variables to the desired values outside of BimlFlex when not setting this in the load packages.
 
 Notes:
+
 * This setting is part of the `AzCopy` settings category.
 * The default value for this setting is `N`.

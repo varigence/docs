@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the Data Vault uses Hash Keys, alternatively Natural Keys can be used by disabling this setting.
 
 Notes:
+
 * This setting is part of the `Data Vault` settings category.
 * The default value for this setting is `Y`.
