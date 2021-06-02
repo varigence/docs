@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 The Null value replacement to be used when [hashing](xref:bimlflex-concepts-hashing).
 
 Notes:
+
 * This setting is part of the `Core` settings category.
 * The default value for this setting is `NVL`.

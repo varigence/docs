@@ -17,5 +17,6 @@ For AzCopy v.10 this is optionally set to the AZCOPY_CONCURRENCY_VALUE environme
 To reuse the current environment variable without setting this value for each object, leave this blank when using AzCopy v.10.
 
 Notes:
+
 * This setting is part of the `AzCopy` settings category.
 * The default value for this setting is `2`.

@@ -13,5 +13,6 @@ Determines whether the SSIS custom inline [hashing](xref:bimlflex-concepts-hashi
 The default is false for backward compatibility however we recommend setting this to true for new projects to make it forward compatible with cloud deployments
 
 Notes:
+
 * This setting is part of the `Core` settings category.
 * The default value for this setting is `N`.

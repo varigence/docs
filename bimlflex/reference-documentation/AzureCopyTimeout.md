@@ -11,4 +11,5 @@ varigenceArticleType: Reference
 Maximum amount of time the Azure Copy Activity can run. Default is 7 days. Format is in D.HH:MM:SS.
 
 Notes:
+
 * This setting is part of the `Azure Copy` settings category.

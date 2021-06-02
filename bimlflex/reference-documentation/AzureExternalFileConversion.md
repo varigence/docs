@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 By default, the extraction process from a source to Blob Storage applies several conversions to create files that are supported by PolyBase. This setting allows control of this conversion process.
 
 Notes:
+
 * This setting is part of the `Azure` settings category.
 * The default value for this setting is `Y`.
