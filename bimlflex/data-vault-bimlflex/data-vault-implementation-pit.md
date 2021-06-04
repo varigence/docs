@@ -78,7 +78,7 @@ The concept as described here focuses on simplifying joins using the technical t
 
 For example, if the source operational system provides its own functional timeline (effective or validity dates) these can be used to understand a functional timeline of changes in data irrespective of the order they arrived in the data solution. The PIT table concept still supports this because it collects the right data was it was available in the data solution.
 
-However, it is also possible to configure PIT tables in a different way by selecting (modelling) which timelines should be used to *construct* the PIT table. In this approach, the PIT timelines can be directly constructed from any available functional timeline.
+However, it is also possible to configure PIT tables in a different way by selecting (modeling) which timelines should be used to *construct* the PIT table. In this approach, the PIT timelines can be directly constructed from any available functional timeline.
 
 The difference between these two approaches is where the joins across the functional timeline happens, into the PIT or after the PIT is available. By default, BimlFlex first constructs the PIT and then allows any modifications of data to be done - including recalculating the results along a different timeline.
 
