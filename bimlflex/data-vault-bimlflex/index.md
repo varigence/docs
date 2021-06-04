@@ -7,7 +7,7 @@ varigenceArticleType: Conceptual
 ---
 # Designing and delivering a Data Vault with BimlFlex
 
-Data Vault provides an easy-to-explain and flexible way to tackle complex issues for bringing data together, and BimlFlex is optimised to deliver data solutions that have adopted this approach.
+Data Vault provides an easy-to-explain and flexible way to tackle complex issues for bringing data together, and BimlFlex is optimized to deliver data solutions that have adopted this approach.
 
 ## Data Vault essentials
 
@@ -22,7 +22,7 @@ Data Vault provides an easy-to-explain and flexible way to tackle complex issues
 
 ## Data Vault and BimlFlex
 
-BimlFlex provides various ways to implement data solutions that utilise concepts from Data Vault methodology:
+BimlFlex provides various ways to implement data solutions that utilize concepts from Data Vault methodology:
 
 * [BimlFlex best practices for Data Vault](xref:bimlflex-data-vault-best-practices)
 * [Using hashing for Data Vault](xref:bimlflex-data-vault-hashing)

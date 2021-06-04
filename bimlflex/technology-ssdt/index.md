@@ -1,4 +1,4 @@
-# Using BimlFlex with Sql Server Data Tools
+# Using BimlFlex with SQL Server Data Tools
 
 ## BimlFlex Generated SSDT Projects In Detail
 

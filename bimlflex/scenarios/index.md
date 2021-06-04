@@ -13,7 +13,9 @@ A Data Warehouse usually requires more than only the right framework, database a
 
 ## Special Data Sources
 
-* [Master Data Services](xref:bimlflex-master-data-services)
+* [Change Data Capture](xref:change-data-capture-source-to-staging)
 * [Excel Files](xref:bimlflex-source-excel-plus)
-* [Odata](xref:bimlflex-source-odata)
+* [Flat Files](xref:flat-file-source-to-staging)
+* [Master Data Services](xref:bimlflex-master-data-services)
+* [OData](xref:bimlflex-source-odata)
 * [Stored Procedure](xref:bimlflex-source-stored-procedure)
