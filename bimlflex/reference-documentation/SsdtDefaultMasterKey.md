@@ -11,6 +11,7 @@ varigenceArticleType: Reference
 The default Master Key SQL Statement to use.
 
 Notes:
+
 * This setting is part of the `SSDT` settings category.
 * The default value for this setting is `CREATE MASTER KEY
     ENCRYPTION BY PASSWORD ='<Strong Password>';`.

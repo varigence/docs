@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Location of the Snowflake SnowSQL configuration file.
 
 Notes:
+
 * This setting is part of the `Snowflake` settings category.
 * The default value for this setting is `%USERPROFILE%\.snowsql\config`.

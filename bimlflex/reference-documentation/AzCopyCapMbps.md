@@ -13,3 +13,4 @@ The AzCopy v.10 transfer speed cap in Mbps.
 Notes:
 
 * This setting is part of the `AzCopy` settings category.
+

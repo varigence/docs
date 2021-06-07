@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.
 
 Notes:
+
 * This setting is part of the `Staging` settings category.
 * The default value for this setting is `N`.

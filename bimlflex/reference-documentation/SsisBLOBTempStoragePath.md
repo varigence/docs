@@ -15,4 +15,6 @@ Defaults to the TEMP environmental variable. That normally means the user contex
 If the data flows spill Blobs to disk, update this value to a location with enough space and speed for the load to succeed
 
 Notes:
+
 * This setting is part of the `SSIS` settings category.
+

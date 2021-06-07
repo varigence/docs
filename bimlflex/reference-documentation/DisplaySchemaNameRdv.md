@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the schema name is displayed in the Raw Data Vault.
 
 Notes:
+
 * This setting is part of the `Data Vault Naming` settings category.
 * The default value for this setting is `N`.

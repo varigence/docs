@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 The string to append to Surrogate/Hash Key column names.
 
 Notes:
+
 * This setting is part of the `Data Vault Naming` settings category.
 * The default value for this setting is `SK`.

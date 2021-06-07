@@ -11,6 +11,7 @@ varigenceArticleType: Reference
 The default Credential SQL Statement to use.
 
 Notes:
+
 * This setting is part of the `SSDT` settings category.
 * The default value for this setting is `CREATE DATABASE SCOPED CREDENTIAL [bimlflex]
 WITH

@@ -11,4 +11,6 @@ varigenceArticleType: Reference
 Specific override behavior for the schema name for staging tables and other database assets.
 
 Notes:
+
 * This setting is part of the `Staging Naming` settings category.
+

@@ -13,3 +13,4 @@ The default Azure Function Bridge Key to use for authentication between the Azur
 Notes:
 
 * This setting is part of the `Azure` settings category.
+

@@ -13,5 +13,6 @@ Determines whether BimlFlex applies a separate key load pattern that will enable
 Use this together with the "DeleteDetectionApplyRdv" and "DeleteDetectionApplyPsa" Settings
 
 Notes:
+
 * This setting is part of the `Delete Detection` settings category.
 * The default value for this setting is `N`.
