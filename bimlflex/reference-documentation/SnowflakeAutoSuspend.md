@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines where the Snowflake database can Auto Suspend.
 
 Notes:
+
 * This setting is part of the `Snowflake` settings category.
 * The default value for this setting is `Y`.

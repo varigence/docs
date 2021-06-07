@@ -27,5 +27,6 @@ For other sources it might be necessary to load the HUB table from both sources,
 Setting the "DvInferLinkHub" to true will allow the Product to populate the ProductCategory Hub as part of that source table load.
 
 Notes:
+
 * This setting is part of the `Data Vault` settings category.
 * The default value for this setting is `N`.

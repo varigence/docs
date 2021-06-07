@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 When defining a Model Override name for a column, setting this to true will use the override name as the staging column name.
 
 Notes:
+
 * This setting is part of the `Naming` settings category.
 * The default value for this setting is `N`.

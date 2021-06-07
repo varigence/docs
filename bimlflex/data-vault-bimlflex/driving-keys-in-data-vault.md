@@ -46,21 +46,21 @@ The Driving Key logic only operates on the Effective To date of the Link Satelli
 
 ## Driving Key Observability
 
-From a modelling perspective, Driving Keys are a qualifier on an existing Key, not a new construct.
+From a modeling perspective, Driving Keys are a qualifier on an existing Key, not a new construct.
 Commonly, the Business Key of the driving Business Concept, or source key, is persisted as a degenerate field on the Link itself.
 Driving Keys do not change a model.
 Driving Keys indicate how ELT/ETL should be performed, and how a relationship is maintained.
 
 ## Relationships in a Data Vault
 
-A core tenet of Data Vault modelling methodology is to track *business relationships* in a **Link**.
+A core tenet of Data Vault modeling methodology is to track *business relationships* in a **Link**.
 A Link is made up of a unique set of business keys referencing *business concepts* represented by **Hubs**.
 One of the more challenging elements is tracking relationship effectivity and which part of the key determines or drive a new instance of the relationship.
 
-For simplicity of explanation, we focus on modelling and capturing Link effectivity and not the pros and cons of inserts versus updates, or using Link Satellites at all.
+For simplicity of explanation, we focus on modeling and capturing Link effectivity and not the pros and cons of inserts versus updates, or using Link Satellites at all.
 
 <!--
-A core tenet of Data Vault modelling methodology is to track relationships in a Link and to be modeled as a many-to-many relationship.
+A core tenet of Data Vault modeling methodology is to track relationships in a Link and to be modeled as a many-to-many relationship.
 Effectivity is then tracked in a Satellite based on the observation of when a unique interaction of Business Concepts are observed.
 When a relationship is observed for the first time it is created and marked as active based on the date it was observed.
 When a relationship is terminated similar logic is used and the relationship is terminated based on the date of the observed termination.

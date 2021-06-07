@@ -19,11 +19,11 @@ The BimlFlex Support team will create a support ticket and communicate as approp
 
 For Varigence to be able to analyze and provide information for a case, the included information needs to be detailed enough so that the context is clear and the steps to reproduce the scenario are available.
 
-To minimize the potential waiting period, and if possible, always include the metadata debug when opening a BimlFlex support case, inclujding any Extension Points that the project may have adopted.
+To minimize the potential waiting period, and if possible, always include the metadata debug when opening a BimlFlex support case, including any Extension Points that the project may have adopted.
 
 This information can be extracted through either the BimlFlex App or BimlStudio.
 
-Saving the metadata to file creates a zip file that can be sent to the BimlFlex support team. If a secure upload link is needed due to size or security concers please contact the support team.
+Saving the metadata to file creates a zip file that can be sent to the BimlFlex support team. If a secure upload link is needed due to size or security concerns, please contact the support team.
 
 ### Exporting metadata from BimlFlex
 
@@ -43,4 +43,4 @@ Please choose the relevant Customer and Version in the dropdown boxes and verify
 
 Tick the Include Project Folder in Zip checkbox to also add the project files and Extension Points to the generated archive file.
 
-Metadata can be saved to file from here and emailed to the suppor team.
+Metadata can be saved to file from here and emailed to the support team.

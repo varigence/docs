@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether end dating is applied to the Raw Data Vault Satellites.
 
 Notes:
+
 * This setting is part of the `Data Vault` settings category.
 * The default value for this setting is `N`.

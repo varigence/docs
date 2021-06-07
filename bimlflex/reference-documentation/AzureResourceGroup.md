@@ -13,3 +13,4 @@ The default Azure Resource Group name to use.
 Notes:
 
 * This setting is part of the `Azure` settings category.
+

@@ -57,7 +57,7 @@ The overview is simply a place for teams to add all of the individual parts of t
 
 ![Business Model - Entities and Overview](images/bfx-business-model-entities-overview.png "Business Model - Entities and Overview")
 
-### Business Modelling Action Bar
+### Business Modeling Action Bar
 
 | Icon | Action | Description |
 |----|-|--------|-------------|

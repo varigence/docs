@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether External Tables are included in the generated SSDT Project.
 
 Notes:
+
 * This setting is part of the `SSDT` settings category.
 * The default value for this setting is `N`.

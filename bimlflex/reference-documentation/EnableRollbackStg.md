@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 Determines whether the Batch orchestration engine rolls back (deletes) committed changes to the Staging database in case of a failed process.
 
 Notes:
+
 * This setting is part of the `Orchestration` settings category.
 * The default value for this setting is `N`.

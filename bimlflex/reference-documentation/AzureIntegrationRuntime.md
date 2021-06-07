@@ -13,3 +13,4 @@ The default Azure Data Factory Self Hosted Integration Runtime name to use for L
 Notes:
 
 * This setting is part of the `Azure` settings category.
+

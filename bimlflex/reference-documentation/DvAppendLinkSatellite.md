@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 The string to append to Link Satellite names.
 
 Notes:
+
 * This setting is part of the `Data Vault Naming` settings category.
 * The default value for this setting is `LSAT`.

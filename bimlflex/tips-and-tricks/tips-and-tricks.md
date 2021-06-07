@@ -156,13 +156,13 @@ Importing metadata from a DB2 source database requires the IBM OLE DB Provider f
 
 Sample Connection definition to connect to and allow metadata import from Db2:
 
-| Metadata Column | Sample Value |
-| --- | --- |
-| Connection | `Your Connection Name` |
+| Metadata Column  | Sample Value |
+| ---------------- | ------------ |
+| Connection       | `Your Connection Name` |
 | ConnectionString | `ConnectionString here` |
-| Catalog | `Database Name` |
-| ConnectionType | `OLEDB` |
-| SystemType | `DB2` |
+| Catalog          | `Database Name` |
+| ConnectionType   | `OLEDB` |
+| SystemType       | `DB2` |
 | IntegrationStage | `Source` |
 
 Sample Db2 connection string:
@@ -170,7 +170,7 @@ Sample Db2 connection string:
 ```
 Data Source=<Data Source Name>;User ID=<User Id>;Password=<Password>;Initial Catalog=<Catalog/Database Name>;Provider=DB2OLEDB.1;Mode=Read;Use Early Metadata=True;Rowset Cache Size=0;Database Name=<Database Name>;Network Address=<Server Address>;Network Port=<Server Post>;Package Collection=DB2OLE;AutoCommit=False;
 ```
-
+<!--
 ## Importing Metadata from Oracle Sources
 
 TODO: placeholder for tips and tricks for connecting to and importing from Oracle sources
@@ -187,12 +187,15 @@ Sample Connection definition to connect to and allow metadata import from Oracle
 | ConnectionType | `OLEDB` |
 | SystemType | `Oracle` |
 | IntegrationStage | `Source` |
+-->
 
 ## Memory usage in SSIS
 
 SQL Server SSIS projects require memory to process data and load from source to target.
 
 When the SSIS engine is running on the same server as the SQL Server engine the SSIS load process needs to contest with the database engine for memory. The default behavior and configuration for SQL Server is to use and hold on to as much memory as possible. This might lead to memory issues running SSIS Packages.
+
+BimlFlex provides a main setting to allow the lookup and delta detection process in SQL, which will minimize the memory usage in SSIS. 
 
 Apart from options to:
 

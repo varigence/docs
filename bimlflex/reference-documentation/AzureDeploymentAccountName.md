@@ -13,3 +13,4 @@ The Storage Account name to use when accessing Blob Storage for linked ARM templ
 Notes:
 
 * This setting is part of the `Azure` settings category.
+

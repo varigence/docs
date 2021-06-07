@@ -55,7 +55,7 @@ Joining to both Satellites, in order to get the descriptive attributes, will res
 
 The second row of the PIT example shows that Satellite #2 received data, and this is made available in the PIT. There was no change for Satellite #1, so the same context that was relevant previously still is the right data to join on.
 
-The third row shows yet another change for Satellite #2, and again the data for Satellite #1 remains unchanged. Lastly, in row four of this exxample new data arrives in Satellite #1 and the PIT table is updated to reflect this. Satellite #2's context has not changed so the same values from row 3 can be used.
+The third row shows yet another change for Satellite #2, and again the data for Satellite #1 remains unchanged. Lastly, in row four of this example new data arrives in Satellite #1 and the PIT table is updated to reflect this. Satellite #2's context has not changed so the same values from row 3 can be used.
 
 Using this PIT table, it is easy to query what context attributes from the Satellites were active at a certain moment in time. You pick a date, and find the record where this date is `greater or equal than` the PIT From Date (the `FlexRowEffectiveFromDate` in BimlFlex), and `smaller than` the PIT To Date (the `FlexRowEffectiveToDate` in BimlFlex). With this PIT record the corresponding Satellites can be queried with an inner join to receive the data that was valid at this point in time.
 
@@ -70,7 +70,7 @@ There are some important notes to clarify on the structure of the PIT table in B
 
 As outlined above, PIT tables are flexible constructs and can even encompass business logic (transformations, logic) if it makes sense to do so from a performance perspective. This includes computed fields or additional being- and end dates to simplify upstream queries.
 
-BimlFlex can apply [Extension Points](xref:bimlflex-concepts-extension-points) to support specific customisations for PIT tables, if required. These can provider detailed overrides to change the behaviour of the out-of-the-box solution.
+BimlFlex can apply [Extension Points](xref:bimlflex-concepts-extension-points) to support specific customizations for PIT tables, if required. These can provider detailed overrides to change the behavior of the out-of-the-box solution.
 
 ## Timelines in PIT tables
 
@@ -78,7 +78,7 @@ The concept as described here focuses on simplifying joins using the technical t
 
 For example, if the source operational system provides its own functional timeline (effective or validity dates) these can be used to understand a functional timeline of changes in data irrespective of the order they arrived in the data solution. The PIT table concept still supports this because it collects the right data was it was available in the data solution.
 
-However, it is also possible to configure PIT tables in a different way by selecting (modelling) which timelines should be used to *construct* the PIT table. In this approach, the PIT timelines can be directly constructred from any available functional timeline.
+However, it is also possible to configure PIT tables in a different way by selecting (modeling) which timelines should be used to *construct* the PIT table. In this approach, the PIT timelines can be directly constructed from any available functional timeline.
 
 The difference between these two approaches is where the joins across the functional timeline happens, into the PIT or after the PIT is available. By default, BimlFlex first constructs the PIT and then allows any modifications of data to be done - including recalculating the results along a different timeline.
 

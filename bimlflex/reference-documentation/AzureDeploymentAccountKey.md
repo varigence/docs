@@ -13,3 +13,4 @@ The Storage Access Key to use when accessing Blob Storage for linked ARM templat
 Notes:
 
 * This setting is part of the `Azure` settings category.
+

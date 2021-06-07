@@ -2,6 +2,8 @@
   href: index.md
 - name: Flat File Export
   href: export-to-file.md
+- name: Flat File Import
+  href: source-flat-file.md
 - name: Using Master Data Services as Source
   href: master-data-services.md
 - name: Source Excel Plus

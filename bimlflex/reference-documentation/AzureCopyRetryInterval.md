@@ -13,3 +13,4 @@ The number of seconds between each retry attempt for Azure Copy.
 Notes:
 
 * This setting is part of the `Azure Copy` settings category.
+

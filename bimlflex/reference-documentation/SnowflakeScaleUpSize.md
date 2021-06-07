@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 The size the Snowflake Warehouse can be scaled up to.
 
 Notes:
+
 * This setting is part of the `Snowflake` settings category.
 * The default value for this setting is `MEDIUM`.

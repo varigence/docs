@@ -37,8 +37,8 @@ File 3 ...
 
 BimlFlex ensures that if a file has a dependency the preceding file will have been deployed before or at the same time as the file that relies on it.
 
-BimlFlex will also emit a Powershell script for deploying the linked templates.
-Users will be required to provide additional variables within the Powershell script, such as: storage account name, storage account container name, and storage account key, among others.
+BimlFlex will also emit a PowerShell script for deploying the linked templates.
+Users will be required to provide additional variables within the PowerShell script, such as: storage account name, storage account container name, and storage account key, among others.
 
 ARM templates will need to be uploaded separately into Blob storage, and then referenced individually by the URL in the master template when deployed.
 

@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 The snapshot data retention period to use for the BimlFlex database cleanup process.
 
 Notes:
+
 * This setting is part of the `Operations` settings category.
 * The default value for this setting is `60`.

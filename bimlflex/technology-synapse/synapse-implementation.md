@@ -439,6 +439,7 @@ Example: `Data Source=bfxserver.database.windows.net,1433;Initial Catalog=bfx_sq
 ## Configuring Settings
 
 BimlFlex **Settings** are used for environment details and orchestration configurations.
+
 The below **Settings** only need to be configured when using Azure Synapse as the **Target Warehouse Environment**.
 
 > ### [SSIS](#tab/ssis-orchestration)

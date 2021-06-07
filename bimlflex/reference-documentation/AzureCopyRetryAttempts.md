@@ -13,3 +13,4 @@ Maximum number of retry attempts for Azure Copy.
 Notes:
 
 * This setting is part of the `Azure Copy` settings category.
+

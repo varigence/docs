@@ -11,5 +11,6 @@ varigenceArticleType: Reference
 The schema name to use for the Data Vault Accelerator preview objects.
 
 Notes:
+
 * This setting is part of the `Data Vault Naming` settings category.
 * The default value for this setting is `pdv`.

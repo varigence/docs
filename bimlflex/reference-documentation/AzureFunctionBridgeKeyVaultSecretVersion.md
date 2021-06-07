@@ -13,3 +13,4 @@ An optional Azure Key Vault secret version used by Azure Data Factory to access 
 Notes:
 
 * This setting is part of the `Azure` settings category.
+

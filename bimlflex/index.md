@@ -36,7 +36,7 @@ Delivering a data solution touches on many concepts and specific technology impl
 
 * [Designing and implementing a Data Vault model using BimlFlex](xref:bimlflex-data-vault-index)
 
-<!-- TODO: Add at least Dimensional Modelling -->
+<!-- TODO: Add at least Dimensional Modeling -->
 
 ## [Tips and Tricks](tips-and-tricks/index.md)
 

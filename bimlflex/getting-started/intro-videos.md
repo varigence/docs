@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-getting-started-intro-videos
 title: BimlFlex Intro Videos
-summary: Collection of BimlFlex introductory vidoes, including end to end walkthrough, loading sample metadata, data vault acceleration, and building a data vault project and dimensional models
+summary: Collection of BimlFlex introductory videos, including end to end walkthrough, loading sample metadata, data vault acceleration, and building a data vault project and dimensional models
 varigenceProduct: BimlFlex
 varigenceArticleType: Walkthrough
 ---

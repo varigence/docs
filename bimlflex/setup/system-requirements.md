@@ -3,7 +3,7 @@ uid: bimlflex-setup-software-and-hardware-requirements
 title: BimlFlex Software and Hardware requirements
 summary: Documentation on software and hardware requirements for installing BimlStudio, BimlFlex, BimlFlex Excel Add-In, and related databases
 varigenceProduct: BimlFlex
-varigenceArticleType:enceArticleType: Walkthrough
+varigenceArticleType: Walkthrough
 ---
 # Software and Hardware Requirements
 
@@ -75,6 +75,3 @@ For installations and configurations using SSIS with package deployment methods 
 The database must be backed up as required in case of database server failures or for rollback requirements
 
 More information: [BimlCatalog database](xref:bimlflex-components-bimlcatalog-database)
-
-### Azure SQL Database
-

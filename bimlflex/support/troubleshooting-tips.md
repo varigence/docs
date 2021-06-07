@@ -11,9 +11,9 @@ The approach of BimlFlex is to deliver high quality output (data logistics, tabl
 
 ## BimlFlex Community
 
-Even though BimlFlex contains all features necessary to deliver a complete data solution, there may be different ways a given orginsation or team would like to work with some of the (many) aspects that comprise a data solution.
+Even though BimlFlex contains all features necessary to deliver a complete data solution, there may be different ways a given organization or team would like to work with some of the (many) aspects that comprise a data solution.
 
-Varigence has created [`BimlFlex Community`](https://github.com/varigence/BimlFlex-Community), an open source repository on Github, to provide a public space to share useful scripts, additional tooling and performance tuning ideas that may help to improve your data solution.
+Varigence has created [`BimlFlex Community`](https://github.com/varigence/BimlFlex-Community), an open source repository on GitHub, to provide a public space to share useful scripts, additional tooling and performance tuning ideas that may help to improve your data solution.
 
 This repository contains various content such as, but not limited to:
 
@@ -22,7 +22,7 @@ This repository contains various content such as, but not limited to:
 * Troubleshooting hints and tips.
 
 > [!NOTE]
-> The BimlFlex Community Github content is not supported by Varigence, but managed by BimlFlex practitioners. Scripts and tooling may need to be adjusted for a local environment.
+> The BimlFlex Community GitHub content is not supported by Varigence, but managed by BimlFlex practitioners. Scripts and tooling may need to be adjusted for a local environment.
 
 ## Managing Performance Concerns
 
@@ -30,7 +30,7 @@ The topic of (adequate) performance is complex and multi-faceted. Many factors p
 
 The team at BimlFlex is always interested to understand how generated code can be improved, and feedback is welcome via [support@bimlflex.com](mailto:support@bimlflex.com).
 
-Managing the day-to-day operation of the data solution is done by the incumbent team within the organisation, for example the BI or Data Warehouse team that has designed the solution using BimlFlex.
+Managing the day-to-day operation of the data solution is done by the incumbent team within the organization, for example the BI or Data Warehouse team that has designed the solution using BimlFlex.
 
 There are various high-quality frameworks for investigating and addressing performance issues, and they are a good place to start in case performance is a concern:
 
@@ -38,7 +38,7 @@ There are various high-quality frameworks for investigating and addressing perfo
 * It is important that databases run on a maintenance plan. For this the [SQL Server maintenance solution](https://ola.hallengren.com/) by Ola Hallengren is a good solution to consider.
 
 > [!NOTE]
-> Public Github or 3rd party scripts and concepts are not supported by Varigence.
+> Public GitHub or 3rd party scripts and concepts are not supported by Varigence.
 
 ## Reviewing BimlStudio Errors
 
