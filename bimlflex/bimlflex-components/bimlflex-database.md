@@ -29,7 +29,7 @@ Metadata is stored on a per Customer, per Version basis. A 'Customer' can be see
 
 ### Entities
 
-All entities are stored in the app tables within the database. There are a [number of different entity types](xref:bimlflex-app-reference-documentation-entitites-index) that are stored in the BimlFlex database.  Some examples are: Connections, Objects, Projects, and Columns.
+All entities are stored in the app tables within the database. There are a [number of different entity types](xref:bimlflex-app-reference-documentation-entities-index) that are stored in the BimlFlex database.  Some examples are: Connections, Objects, Projects, and Columns.
 
 ### Source to Target mappings
 

@@ -25,5 +25,5 @@ Using a Bridge table, contextual data from Satellites can be directly joined to 
 There are some important notes to clarify on the structure of the Bridge table in BimlFlex, and these are numbered in the example:
 
 1. Each Bridge table contains a [`zero record`](xref:bimlflex-data-vault-concept-zero-records), which provides an 'unknown' record that replaces to any NULL value.
-2. Each Bridge record receives a surrogate key that uniquely identifies a row in the Bridge table. This is purely for identification purposes.
-3. The load date / time stamp used (`FlexRowEffectiveFromDate` in BimlFlex) is derived from the involved Hub and Link tables. When loading the Bridge table, BimlFlex will reuse the lowest (earliest) value from the tables that are in scope. This value contains the earliest moment in time a relationship between Core Business Concepts could be established.
+1. Each Bridge record receives a surrogate key that uniquely identifies a row in the Bridge table. This is purely for identification purposes.
+1. The load date / time stamp used (`FlexRowEffectiveFromDate` in BimlFlex) is derived from the involved Hub and Link tables. When loading the Bridge table, BimlFlex will reuse the lowest (earliest) value from the tables that are in scope. This value contains the earliest moment in time a relationship between Core Business Concepts could be established.

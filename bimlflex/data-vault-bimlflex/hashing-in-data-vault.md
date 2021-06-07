@@ -31,7 +31,7 @@ Implement other available options by changing the *HASH ALGORITHM* setting to on
   * `MD5`
   * `SHA1`
   * `SHA2_256`
-  * `SHA2_512`.
+  * `SHA2_512`
 * Previous SSIS versions of BimlFlex created a different hash for Unicode characters.
   The [*USE SQL COMPATIBLE HASH*](xref:bimlflex-app-reference-documentation-settings-index) and [*USE SQL COMPATIBLE ROW HASH*](xref:bimlflex-app-reference-documentation-settings-index) settings provides for backward compatibility.
   They should be set to `Y` for new implementations.
