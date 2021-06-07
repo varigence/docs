@@ -7,9 +7,9 @@ varigenceArticleType: Conceptual
 ---
 # Integration Keys and Relationships
 
-Integration Keys are a core concept in Data Vault modeling and allow the modeler to focus on defining entities and relationships based on the business process focused keys rather than the technical keys from the source system. This allows easier cross-system integration in the Data Vault.
+The Business Key is a core concept in Data Vault modeling which allow the modeler to focus on defining entities and relationships based on the business process focused keys, rather than the technical keys from the source system. This allows easier cross-system integration in the Data Vault.
 
-The video starts with a short overview of the Integration Key concept and introduces the more pragmatic Integration Key concept as an alternative. Enterprise-Wide Business Keys that uniquely and distinctly identifies an entity or process are rare in real-world scenarios. Focusing on defining keys that are suitable for the Data Warehouse enables an agile implementation approach.
+The video starts with a short overview of the Business Key concept and introduces the more pragmatic Integration Key concept as an alternative. Enterprise-Wide Business Keys that uniquely and distinctly identifies an entity or process are rare in real-world scenarios. Focusing on defining keys that are suitable for the Data Warehouse enables an agile implementation approach.
 
 The BimlFlex development workflow allows the modeler to import metadata from a source system and automatically derive Integration Keys and relationships. Once these are defined and any other required metadata manipulations are defined it is possible to use BimlStudio to build the code required for the Data Warehouse implementation.
 
