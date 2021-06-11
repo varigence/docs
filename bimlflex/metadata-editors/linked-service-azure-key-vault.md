@@ -14,7 +14,7 @@ ADF linked services allow the use of Azure Key Vault for easy management of link
 
 ## AKV Linked Service
 
-The AKV Linked Service dropdown is used to manage Azure Key Vaults in the BimlFlex application.
+The AKV Linked Service dropdown is used to manage Azure Key Vaults in the BimlFlex App.
 
 ![Azure Key Vault Drop Down](images/bimlflex-ss-app-connections-akv-dd.png "Azure Key Vault Drop Down")
 

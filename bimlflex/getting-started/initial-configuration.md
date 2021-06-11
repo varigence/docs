@@ -21,7 +21,7 @@ The development workflow is focused around the BimlFlex App and the BimlStudio-b
 
 > [!NOTE]
 > Complete the **Setup** first  
-> More information: [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+> More information: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
 
 ## BimlStudio project
 
@@ -49,19 +49,19 @@ Once the project is created, it is possible to open it from the folder by openin
 
 ![Empty Project](images/bs-new-project-screen.png "Empty Project")
 
-### Connect to the Metadata Database
+### Connect to the BimlFlex Database
 
-The BimlFlex project in BimlStudio communicate with the BimlFlex metadata database.
+The BimlFlex project in BimlStudio communicate with the BimlFlex BimlFlex database.
 
 The databases are created and updated through the BimlFlex installer. It is also possible to set up the databases from the BimlFlex ribbon tab in BimlStudio.
 
-More information, creating the database through the installer: [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+More information, creating the database through the installer: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
 
-More information, creating the database through BimlStudio: [BimlFlex Metadata Database Installation](xref:bimlflex-metadata-database-installation)
+More information, creating the database through BimlStudio: [BimlFlex Metadata Database Installation](xref:bimlflex-setup-metadata-database-installation)
 
 ### Creating Customer
 
-The **Customer** entity holds a set of metadata in the metadata database and can be used to identify different projects, versions, customers, variations.
+The **Customer** entity holds a set of metadata in the BimlFlex database and can be used to identify different projects, versions, customers, variations.
 
 A **Customer** can have multiple versions of the related metadata. An initial Version is created with the Customer. Throughout a project, it is possible to progress through multiple different versions.
 
@@ -93,7 +93,7 @@ Start the BimlFlex App and configure it to connect to the BimlFlex database.
 
 The BimlFlex app allows easy metadata management and provides features such as metadata import and graphical Data Vault acceleration.
 
-The BimlFlex app has a connection to the BimlFlex Metadata database, the customer and the version.
+The BimlFlex app has a connection to the BimlFlex Database, the customer and the version.
 
 Set up the Connection through the Setup Pane, accessed from the Settings Cog in the top right corner
 
@@ -117,13 +117,13 @@ The Excel-based Metadata Editor is opened from the BimlFlex Ribbon tab in BimlSt
 
 The BimlFlex Excel metadata editor comes with an additional Excel tab in the Ribbon for interacting with BimlFlex.
 
-Configure the BimlFlex database connection in the **Metadata Connection** pane and connect to the BimlFlex metadata database.
+Configure the BimlFlex database connection in the **Metadata Connection** pane and connect to the BimlFlex Database.
 
 Once the connection is defined the metadata can be read into Excel. The master data is stored in the database and the working set is cached and displayed in Excel. The data is not updated in real-time. It is important to commit changes to the database and to communicate within the development team to synchronize changes to the Metadata.
 
 Retrieve all metadata into Excel by clicking the `Get All Entities` and `Get All Settings` buttons in the Excel BimlFlex Ribbon UI.
 
-More information: [Bulk Edit Overview](xref:bulk-edit-metadata-overview)
+More information: [Bulk Edit Overview](xref:bimlflex-excel-add-in)
 
 ## Configuration
 

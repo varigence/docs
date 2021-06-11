@@ -1,7 +1,7 @@
 ---
-uid: bimlflex-release-notes-2020.2
-name: BimlFlex Release Notes
-Summary: Release Notes for BimlFlex 2020.2
+uid: bimlflex-release-notes-2020-r2
+name: BimlFlex Release Notes 2020 R2
+summary: release notes for current version of BimlFlex
 ---
 # Release Notes
 
@@ -15,11 +15,11 @@ BimlFlex 2020 R2 is installed and upgraded through a single consolidated install
 
 ## Latest Release
 
-Build 20.2.331.0, release date: 27 Oct 2020
+Build 20.2.458.0, release date: 4 June 2021
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.331.0.exe)
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.458.0.exe)  
     This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.331.0.exe)
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.458.0.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## Breaking Changes
@@ -43,9 +43,11 @@ The default installation location has been updated. Previous installations place
 * Enhanced support for ADF and Snowflake.
 * New customer scenarios for cloud-only users.
 * Improved delete detection.
-* Substantially improved load performance within the BimlFlex application.
+* Substantially improved load performance within the BimlFlex App.
 
 ## Settings Changes
+
+A new setting group called `Azure Copy` has been added that allows more control over the Copy Activity in ADF pipelines. It is now possible to have fine grained control over the copy activity settings as well as over the way the Copy Activity uses Bulk Insert or PolyBase as copy method. The staging and logging settings for the Copy Activity are exposed as separate settings, allowing control over staging and logging settings. The location definition for these settings uses LinkedServiceName="@@this" by default. This will use the PolyBase landing connection as defined in the projects source connection.
 
 A new setting, `SsisHashNullValue`, has been added to the Core settings group. This allows control of the Null Value replacement string that is used in the SSIS packages call to the Hashing custom component. This value is left blank for backwards compatibility with previous behavior. For full SQL hash compatibility, consider using the same null-value replacement as for the `HashNullValue` setting. For backwards compatibility with existing data hashed through the SSIS components, leave it blank.
 
@@ -56,8 +58,9 @@ The Accelerator and Data Vault processes have several new optional configuration
 * The Existing Setting `SsdtOutputPath` has been moved to the SSDT settings group.
 * Toggle setting added to display backbone (Hubs and Links only) for accelerated models.
 * Toggle setting added to display datatypes for columns for both source models and accelerated models.
+* The `AzureStagingSettings` has been renamed `AzureCopyStagingSettings`
 
-Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 
 The following setting has been added to control the Data Vault Accelerator:
 
@@ -76,6 +79,23 @@ The following settings have been added to the SSDT group:
 * SsdtDefaultExternalDataSource
 * SsdtDefaultExternalFileFormat
 
+The following settings have been added to the Azure Copy group:
+
+* AzureCopyRetryAttempts
+* AzureCopyRetryInterval
+* AzureCopyTimeout
+* AzureCopySecureInput
+* AzureCopySecureOutput
+* AzureCopyDataIntegrationUnits
+* AzureCopyParallelCopies
+* AzureCopyValidateDataConsistency
+* AzureCopyMethod
+* AzurePolybaseSettings
+* AzureCopyEnableStaging
+* AzureCopyStagingSettings
+* AzureCopyEnableLogging
+* AzureCopyLogSettings
+
 More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](xref:bimlflex-ssdt-project)
 
 ## Azure Data Factory (ADF)
@@ -90,7 +110,7 @@ More information on these settings: [BimlFlex-generated SQL Server Data Tool
 * Integration Runtimes can now pass into BLOB Storage and DataLakeStoreGen2 Linked Services.
 * Fixed an issue with `Hash Column` of large Synapse Tables (greater than 500 columns).
 
-More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](xref:bfx-arm-template)
+More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](xref:bfx-arm-templates)
 
 ## BimlFlex App Help Sidebar Navigation
 
@@ -104,7 +124,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 
 ## UI Improvements
 
-* Autoselect customers on database change.
+* Auto select customers on database change.
 * The layout in the Accelerator page has been updated so the source pane is closed by default. Click the open arrow to view the source pane and its active source objects.
 * Improved entity and model border styling.
 * Improved app navigation and user experience when creating a new entity.
@@ -128,7 +148,7 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
 * The Delete Detection Object Model has been updated. For implementations that use bespoke Delete Detection Scripts, certain attributes will need to be updated to correctly refer to the new object model.
 
-Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-delete-detection)
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 
 <!--
 ## Business Modeling
@@ -187,9 +207,13 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 
 <!--
 Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation of, and additional defaults for, dependency objects.
---> 
+-->
+
+## Tree view navigation
+
+The modeling pages Accelerator, Schema Diagram and Column Mapping have a new tree view navigation. This allows better control over what objects are visible and co-located in the navigation list.
 
 ## Download Links to this Build
 
-* [bimlflexdevsetup_20.2.331.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.331.0.exe)
-* [bimlflexruntimesetup_20.2.331.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.331.0.exe)
+* [bimlflexdevsetup_20.2.458.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.458.0.exe)
+* [bimlflexruntimesetup_20.2.458.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.458.0.exe)

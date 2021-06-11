@@ -4,15 +4,16 @@
   href: system-requirements.md
 - name: Installing BimlFlex
   href: installing-bimlflex.md
-- name: Metadata Database Install
-  href: metadata-database-install.md
-
-# Build server install waiting for contents
-#- name: Build Server Install
-#  href: build-server-install.md
-
-- name: SSIS Server Install
-  href: ssis-server-install.md
+- name: Installing the Metadata Database
+  href: installing-metadata-database.md
+- name: Installing an SSIS Server
+  href: installing-ssis-server.md
+- name: Installing a BimlFlex Build Server
+  href: installing-build-server.md  
+- name: Installing BimlFlex developer tools
+  href: installing-developer-tools.md  
+- name: Configuring bitness for the Excel Add-In
+  href: change-excel-bitness-bimlflex.md    
 - name: Upgrade Process
   href: upgrade-process.md
 - name: Setup BimlStudio Project

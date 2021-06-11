@@ -14,9 +14,17 @@ Specify the database server, database and login information for the metadata dat
 
 ### Create New Customer
 
-Click the *New Customer* button and enter a new **Customer** to create a new customer. An empty *Version* will automatically be created and selected.
+Click the *New Customer* button and enter a new **[Customer](xref:bimlflex-concepts-customer)** to create a new customer. An empty *Version* will automatically be created and selected.
 
 ![Settings - Create new Customer -mtb-20-image](images/bimlflex-app-settings-new-customer.png "Settings - Create new Customer")
+
+### Select Customer
+
+It is possible to select or change the selected [Customer](xref:bimlflex-concepts-customer) by chosing an available Customer from the *Customer* drop-down list.
+
+### Select Version
+
+If a Customer contains different versions, a specific version can be selected from the *version* drop-down list.
 
 ### Additional Options
 

@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-delete-detection
+uid: bimlflex-concepts-delete-detection
 title: BimlFlex Delete Detection
 summary: Documentation on BimlFlex delete detection mechanism for detection of hard deleted keys from a source system
 varigenceProduct: BimlFlex
@@ -7,7 +7,11 @@ varigenceArticleType: Conceptual
 ---
 # BimlFlex Delete Detection
 
-BimlFlex provides a SQL source based delete detection mechanism that allows detection of hard deleted keys from the source system.
+To be able to provide an accurate representation of the data in the Data Warehouse, it is often necessary to capture when data was physically removed from the operational systems that act as data sources.
+
+BimlFlex provides a SQL source based delete detection mechanism that allows detection of deleted keys / records from the data sources, as well as various possibilities to configure this with native or 3rd party solutions.
+
+This applies to 'hard deletes' where the record has been removed from the original system, as opposed to end-dating. In the data solution, the event of deletion can be stored as a 'soft' or 'logical' delete This information can be valuable in determining the correct state of the data for delivery.
 
 This is used in addition to the normal loads of new and changed data from the source.
 

@@ -2,67 +2,62 @@
   href: index.md
   topicHref: index.md
   items:
-  - name: Setup
+  - name: Setting Up BimlFlex
     href: setup/toc.yml
 
   - name: Getting Started
     href: getting-started/toc.yml
 
-  - name: Metadata Editors
-    href: metadata-editors/toc.yml
-
-  - name: Modeling Tools
-    href: modeling-tools/toc.yml
-
-  - name: Bulk Edit Metadata
-    href: bulk-edit-metadata/toc.yml
-
-  - name: Build Solution
-    href: build-solution/toc.yml
-
-  - name: Metadata Databases
-    href: metadata-databases/toc.yml
-
-  - name: ADF Deployment
-    href: adf-deployment/toc.yml
-
-  - name: SSIS Deployment
-    href: ssis-deployment/toc.yml
-
   - name: Concepts
     href: concepts/toc.yml
 
-  - name: Scenarios
+  - name: BimlFlex Platform Components
+    href: bimlflex-components/toc.yml    
+
+  - name: BimlFlex App
+    href: metadata-editors/toc.yml
+
+  - name: Design & Modeling Features
+    href: modeling-tools/toc.yml
+
+  - name: Build & Deployment
+    href: build-solution/toc.yml
+
+  - name: BimlFlex for Azure Data Factory
+    href: technology-adf/toc.yml
+
+  - name: BimlFlex for Synapse
+    href: technology-synapse/toc.yml
+
+  - name: BimlFlex for Snowflake
+    href: technology-snowflake/toc.yml
+
+  - name: BimlFlex for Sql Server Data Tools
+    href: technology-ssdt/toc.yml
+
+  - name: BimlFlex for Sql Server Integration Services
+    href: technology-ssis/toc.yml
+
+  - name: Other BimlFlex Connectivity
     href: scenarios/toc.yml
 
-  - name: Support
-    href: support/toc.yml
+  - name: Data Solution Templates
+    href: data-solution-templates/toc.yml
+
+  - name: BimlFlex for Data Vault
+    href: data-vault-bimlflex/toc.yml
+
+  - name: Delivering Data Marts
+    href: data-delivery/toc.yml
 
   - name: Reference Docs
     href: reference-documentation/toc.yml
 
-#  - name: Tips And Tricks
-#    href: tips-and-tricks/toc.yml
+  - name: Support Guide
+    href: support/toc.yml
+
+  - name: Tips And Tricks
+    href: tips-and-tricks/toc.yml
 
   - name: Release Notes
     href: release-notes/toc.yml
-#    topicHref: release-notes/release-notes.md
-- name: BimlStudio Documentation
-  href: ../bimlstudio/index.md
-  topicHref: ../bimlstudio/index.md
-  items:
-  - name: AdventureWorksLT Walkthrough
-    href: ../bimlstudio/adventureworks-lt-walkthrough/toc.yml
-
-  - name: Visual Editors
-    href: ../bimlstudio/visual-editors/toc.yml
-
-  - name: Miscellaneous
-    href: ../bimlstudio/miscellaneous/toc.yml
-
-  - name: Biml Reference
-    href: ../biml-reference/toc.yml
-
-  - name: Release Notes
-    href: release-notes/toc.yml
-    topicHref: ../bimlstudio/release-notes/index.md

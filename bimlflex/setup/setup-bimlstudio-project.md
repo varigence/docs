@@ -5,7 +5,7 @@ summary: Guide to creating a BimlStudio project from within BimlFlex
 varigenceProduct: BimlFlex
 varigenceArticleType: Walkthrough
 ---
-# BimlFlex - Setup BimlStudio Project
+# BimlStudio Project Setup For BimlFlex
 
 A BimlStudio project is used to build and generate the metadata configured in BimlFlex.
 

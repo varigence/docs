@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-importing-metadata
+uid: bimlflex-concepts-importing-metadata
 title: BimlFlex Importing Metadata
 summary: Documentation on importing metadata into BimlFlex with import options and default properties
 varigenceProduct: BimlFlex
@@ -13,42 +13,40 @@ The primary source BimlFlex uses to generate Data Warehousing and Business Intel
 
 Although it is relatively straightforward to define individual metadata objects, it can take considerable time and effort to create, update and maintain the number of objects that would typically be involved in an enterprise data warehouse solution.
 
-The BimlFlex App provides an import tool which is accessible from the Connections and Projects screens. It connects to a database source and populates the BimlFlex database with metadata.
+The BimlFlex platform provides an import tool which is accessible from the *Connections* and *Projects* screens. This tool connects to a database source and populates the BimlFlex database with metadata.
 
 This tool can be used in any scenario where a schema is available, and there is a need to bring that metadata into a BimlFlex project. If a change happens in the source, the metadata can be imported again to update the model.
 
-[//]: # (TODO: Add Recording)
-
 ### Locating the tool
 
-In the BimlFlex App, Navigate to a Source Connection or associated Source Project. The Connection should have a connection string which points to the database which should be imported. In the details tab, click the `Import Metadata` button. This opens the Import Metadata page.
+In the BimlFlex App, navigate to a *Source Connection* or associated *Source Project*. The Connection must have a valid connection string which points to the database which should be imported. In the details tab, click the `Import Metadata` button. This opens the Import Metadata page.
 
 ![Import Metadata Ribbon](../metadata-editors/images/bimlflex-app-import-metadata-ribbon.png "Import Metadata Ribbon")
 
-### Import Metadata UI
+### Import Metadata User Interface
 
-There are a number of options for importing metadata. Align these options with the solution architecture and metadata conventions.
+There are a number of options for importing metadata. The user must align these options with the solution architecture and metadata conventions.
 
 ![Import Metadata Options](../metadata-editors/images/bimlflex-app-import-metadata-options.png "Import Metadata Options")
 
-The example connection in the Sample Metadata is `AWLT_SRC` which points to the AdventureWorksLT database, using the project `EXT_AWLT_SRC` as the target for imported metadata.
+The example connection in the Sample Metadata is `AWLT_SRC` which points to the AdventureWorksLT database, using the project `EXT_AWLT_SRC` as the target project for imported metadata.
 
-Below the Connection and Project drop downs are all the main options. Use these to control the behavior of the import, such as what object types to import, naming conventions to apply and what to retain if the metadata has been imported before.
+Below the Connection and Project drop downs are all the main options. These can be configured to control the behavior of the import, such as what object types to import, naming conventions to apply and what to retain if the metadata has been imported before.
 
 ### Metadata Options Definitions
 
-A brief overview of the UI.
+This section provides a brief overview of the Import Metadata tool user interface.
 
 #### Filter Tables and Schemas
 
-The Schema Filter and Table Filter can be used to limit the Assets made available/visible for import. This is useful if a subset of available tables will be imported or if new tables are added to an existing repository. Filtering also improves performance when connecting to and importing large database schemas.
+The *Schema Filter* and *Table Filter* can be used to limit the metadata made available / visible for import. This is useful if a subset of available tables will be imported, or if new tables are added to an existing repository. Filtering also improves performance when connecting to and importing large database schemas.
 
 #### Source and Target
 
-| Option Name       | Definition |
+| Option | Definition |
 | ----------------- | ---------- |
-| Source Connection | Name of the connection that points to the data source the project is extracting from. The Connection String is defined in the Details tab in the Metadata |
-| Target Project    | Name of the previously defined project that will use this metadata as its source in the source to target loading. |
+| Connection | Name of the connection that points to the data source the metadata is intended to be extracted from. The corresponding Connection String is used as defined in the [Connections](xref:bimlflex-application-connections) configuration. |
+| Project | Name of the project that will use this metadata as its source in the source to target loading. This project has to be defined previously. For more information, please refer to the [Projects](xref:bimlflex-application-projects) documentation |
 
 #### Table and column names
 

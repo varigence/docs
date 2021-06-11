@@ -28,7 +28,9 @@ The Product Information displayed includes the Build, normally in the format `5.
 
 Review the Programs and Features list in the Windows Control Panel to see the version of the `Varigence BimlFlex` installation.
 
-The Version column describes the Build, normally in the format `5.0.nnnnn.n`
+The Version column describes the Build, normally in the format `5.0.nnnnn.n`.
+
+Alternatively, this information is also visible in the application on the bottom of settings pan (in light grey).
 
 ## BimlFlex Bundle file
 
@@ -42,9 +44,9 @@ It is also possible to see the version by opening the bundle file in a zip appli
 
 This version file illustrates the Bundle version in the format: `bundle.nnnnn.version`
 
-## BimlFlex metadata database
+## BimlFlex Database
 
-execute the `dbo.GetVersion` Stored Procedure in the BimlFlex database.
+Execute the `dbo.GetVersion` Stored Procedure in the BimlFlex Database. This will return the version of the database (server) itself into which the BimlFlex database has been installed, so not the version of the repository schema.
 
 The results will include a row with the VersionNumber specified for the database, normally in the format `nnnnn`
 

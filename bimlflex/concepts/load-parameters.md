@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-metadata-parameters
+uid: bimlflex-concepts-metadata-parameters
 title: Load Parameters
 summary: Documentation for parameters for load queries added in Parameters section or as Extension Points in BimlFlex
 varigenceProduct: BimlFlex
@@ -8,8 +8,9 @@ varigenceArticleType: Conceptual
 
 # Load Parameters
 
-**Paramaters** are most commonly used to define a high water mark or define a filter for what is returned from a Source System.
-The explanations and scenarios belong are generated in vein with that task.
+BimlFlex provides a number of standard out-of-the-box `parameters`, as well as the functionality to create your own. Parameters can be used in many ways - for example for managing data load windows, orchestration and standardized or default values.
+
+Parameters are most commonly used to define a high water mark or define a filter for what is returned from a Source System. The explanations and scenarios belong are generated in vein with that task.
 
 ## Parameter Management
 
@@ -190,7 +191,6 @@ Configuration of the base **Parameter** itself remains the same across Source Sy
 >
 > * `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.
 > * `**`: See [Parameter SQL](#parameter-sql) for more examples
-
 > [!IMPORTANT]
 > `Execute SQL On Source`, along with `Parameter To Name` and `Parameter To Operator`, are required fields when configuring a **Parameter** for ADF.
 
@@ -401,7 +401,7 @@ It also supports specifying Project level Parameters that are commonly available
 
 Add Extension Points in BimlStudio.
 
-More information: [BimlFlex Extension Points](xref:bimlflex-extension-points)
+More information: [BimlFlex Extension Points](xref:bimlflex-concepts-extension-points)
 
 ![Create Project Parameter](../user-guide/images/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
 

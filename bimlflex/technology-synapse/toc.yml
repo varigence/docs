@@ -1,0 +1,6 @@
+- name: Overview
+  href: index.md
+- name: Implementing BimlFlex for Synapse
+  href: synapse-implementation.md
+- name: Forward-Only Deployment
+  href: synapse-forward-only-approach.md

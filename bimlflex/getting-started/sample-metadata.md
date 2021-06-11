@@ -41,6 +41,12 @@ The BimlFlex getting started guide starts with the `01 - MSSQL Starting Point` s
     Microsoft Azure Synapse Target, ADF and full Data Vault and Data Mart sample metadata
 * **18 - Synapse DataMart ADF Solution**  
     Microsoft Azure Synapse Target, ADF Data Mart sample metadata
+* **19 - Synapse Change Tracking ADF Solution**  
+    Microsoft Azure Synapse Target, ADF, Change Tracking source sample metadata
+<!-- Placeholder for DataFlows
+* **20 - Synapse DataVault Dataflow Solution**
+* **21 - Synapse DataMart Dataflow Solution**
+-->
 * **25 - Snowflake DataVault SSIS Solution**  
     Snowflake Target, SSIS and full Data Vault and Data Mart sample metadata
 * **26 - Snowflake DataMart SSIS Solution**  

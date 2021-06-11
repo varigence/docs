@@ -1,23 +1,44 @@
 ---
 uid: bimlflex-setup-overview
 title: BimlFlex Setup Overview
-summary: Overview of how to setup and install the BimlFlex application
+summary: Overview of how to setup and install the BimlFlex App
 ---
 # BimlFlex Setup Overview
 
-This section describes system requirements and the installation of the BimlFlex application.
+This section describes system requirements and the installation of the BimlFlex App.
 
 ## System Requirements
 
-* [BimlFlex Software and Hardware requirements](xref:bimlflex-software-and-hardware-requirements)
+Everything you need in order to install and work with BimlFlex.
 
-## Application Install
+* [BimlFlex Software and Hardware requirements](xref:bimlflex-setup-software-and-hardware-requirements)
 
-* [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
-<!-- TODO/legacy * [BimlFlex Metadata Database Installation](xref:bimlflex-metadata-database-install)-->
-<!-- TODO * [BimlFlex Build Server Install](xref:bimlflex-build-server-install)-->
-* [SSIS Server Installation](xref:bimlflex-ssis-server-install)
+## Installing BimlFlex
 
-## Application Upgrade
+How to install the BimlFlex software, as well as supporting technology you may need.
 
-* [Upgrade and Testing Process](xref:bimlflex-upgrade-and-testing)
+* [Installing the BimlFlex App](xref:bimlflex-setup-installing-bimlflex)
+* [Installing the BimlFlex Database](xref:bimlflex-setup-metadata-database-installation)
+* [Installing an SSIS server](xref:bimlflex-setup-ssis-server-install)
+* [Installing a BimlFlex build server](xref:bimlflex-setup-build-server-install)
+* [Installing the BimlFlex developer tools](xref:bimlflex-setup-developer-installation)
+
+Please follow [this link for detailed information on the individual BimlFlex components](xref:bimlflex-components-overview).
+
+## Upgrading BimlFlex
+
+Information on upgrading BimlFlex versions, and making sure everything still works after the upgrade.
+
+* [Upgrade and Testing Process](xref:bimlflex-setup-upgrade-and-testing)
+
+## Setting Up a BimlStudio project
+
+A BimlStudio project is used to build and generate the metadata configured in BimlFlex, either directly or as part of a DevOps pipeline.
+
+* [BimlStudio project setup](xref:bimlflex-setup-bimlstudio-project)
+
+## Ensuring Correct Bitness For The Excel Add-In
+
+Both Microsoft Office Excel and the BimlFlex Excel installation comes in two bitness flavors, 32-bit and 64-bit. The installed BimlFlex version needs to match the bitness of the installed version of Excel. This is initially set during installation of the BimlFlex App, but can be modified afterwards.
+
+* [Configuration Excel bitness](xref:bimlflex-change-excel-bitness)

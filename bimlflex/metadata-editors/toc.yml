@@ -6,6 +6,8 @@
   href: dashboard.md
 - name: Toolbar
   href: toolbar.md
+- name: BimlFlex Database Settings
+  href: database-settings.md
 - name: Connections
   href: connections.md
 - name: Batches

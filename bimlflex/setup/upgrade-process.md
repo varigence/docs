@@ -1,8 +1,8 @@
 ---
-uid: bimlflex-upgrade-and-testing
+uid: bimlflex-setup-upgrade-and-testing
 title: Upgrade and Testing Process
 varigenceProduct: BimlFlex
-varigenceArticleType:enceArticleType: Walkthrough
+varigenceArticleType: Walkthrough
 ---
 # Upgrade and Testing Process
 
@@ -12,20 +12,20 @@ BimlFlex comes in a consolidated installer that contains the following component
 * BimlFlex component of BimlStudio
 * The BimlFlex App
 * The BimlFlex Excel Add-in
-* BimlFlex Metadata database
-* BimlCatalog Orchestration database
+* BimlFlex Database
+* BimlCatalog Database
 * BimlFlex Custom SSIS Components for SQL Server
 * BimlFlex Custom SSIS Components for Snowflake
 
 ## Downloading BimlFlex from the Varigence website
 
-The current installer is available through the [BimlFlex Release Notes](xref:bimlflex-release-notes) page
+The current installer is available through the [BimlFlex Release Notes](xref:bimlflex-release-notes-overview) page
 
 ## Preparation for upgrading existing projects
 
 Current projects with existing Extension Point script files and existing metadata needs planning and consideration before upgrading.
 
-A new version of BimlFlex and its components can include both fixes and new functionality. This is detailed in the [BimlFlex Release Notes](xref:bimlflex-release-notes) that accompany the new version.
+A new version of BimlFlex and its components can include both fixes and new functionality. This is detailed in the [BimlFlex Release Notes](xref:bimlflex-release-notes-overview) that accompany the new version.
 
 ### 1. Database Backups
 
@@ -59,14 +59,14 @@ All installations and upgrades are performed through the installer.
 * Upgrade the BimlCatalog databases
     BimlFlex uses an orchestration database for all orchestration, logging and auditing. This database needs to be updated through the installer. Add all BimlCatalog databases to the upgrade step to allow the installer to upgrade them to the new version
 
-More information: [Installing BimlFlex](xref:bimlflex-installing-bimlflex)
+More information: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
 
 ### Reviewing the upgraded versions
 
 Once the applications, databases and Bundle files have been updated it is time to open the project in BimlStudio. Once the project has opened and downloaded, metadata applied, the BimlFlex solution is ready for testing.
 
 1. Review any errors or warnings
-    There might have been updates to the logic applied by the Bundle. Review any error or warning messages in BimlStudio and review the [BimlFlex Release Notes](xref:bimlflex-release-notes) to see if any metadata or Extension Point behavior has changed.
+    There might have been updates to the logic applied by the Bundle. Review any error or warning messages in BimlStudio and review the [BimlFlex Release Notes](xref:bimlflex-release-notes-overview) to see if any metadata or Extension Point behavior has changed.
 1. Recreate the Biml and SQL Scripts
     Rebuild all projects and compare the Expanded Code files to their previous versions using a merge/file compare tool.
 1. Test build and run

@@ -108,7 +108,7 @@ Reporting views and Stored Procedures are unchanged.
 
 ADF Stored Procedures have been updated to better support logging and orchestration.
 
-More information on the BimlCatalog here: [BimlCatalog database](xref:bimlcatalog-database)
+More information on the BimlCatalog here: [BimlCatalog database](xref:bimlflex-components-bimlcatalog-database)
 
 ### Additional Extension Points for bespoke processing requirements
 
@@ -275,8 +275,3 @@ download links to this build:
 
 * [bimlflexdevsetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64613.0.exe)
 * [bimlflexruntimesetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64613.0.exe)
-
-Legacy Release Notes:
-
-* [BimlFlex Release Notes 2019](xref:bimlflex-release-notes-2019)
-* [BimlFlex Release Notes 2018](xref:bimlflex-release-notes-2018)

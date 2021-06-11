@@ -27,6 +27,12 @@ The Column Mapping Diagram provides an view of one or more mapping relationships
 
 [More about Column Mapping](column-mapping.md)
 
+## BimlFlex Excel Add-in
+
+BimlFlex Excel Add-in allows modelers and developers use to *bulk edit* the solution metadata and configurations. BimlFlex Excel Add-in connects to the BimlFlex metadata database, and provides read/write capabilities to manipulate the metadata in an Excel format.
+
+[More about BimlFlex Excel Add-in](xref:bimlflex-excel-add-in)
+
 <!--
 ## Business Modeling
 

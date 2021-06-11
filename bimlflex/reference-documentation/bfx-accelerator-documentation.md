@@ -16,7 +16,7 @@ This exclusive BimlFlex feature excels at quickly modeling data for analysts and
 Subsequent to upgrading to the new BimlFlex 2020.2 Update, users will notice many new changes and updates to the Accelerator, designed to improve user experience and streamline manual manipulation of the initial Accelerated models.
 
 > [!NOTE]
-> For additional documentation regarding the initial setup, user interface, and rules for the Accelerator, please reference [Data Vault Accelerator](xref:accelerator).
+> For additional documentation regarding the initial setup, user interface, and rules for the Accelerator, please reference [Data Vault Accelerator](xref:data-vault-accelerator).
 
 ## New Features in BimlFlex 2020.2
 
@@ -56,4 +56,4 @@ Connectors and entities now display an ellipsis for matched styling with other i
 --unable to expand on remaining updates without guidance - CJS, 8/27
 
 > [!NOTE]
-> Please reference [Data Vault Accelerator](xref:zzz-data-vault-accelerator) for additional Accelerator insight.
+> Please reference [Data Vault Accelerator](xref:data-vault-accelerator) for additional Accelerator insight.
