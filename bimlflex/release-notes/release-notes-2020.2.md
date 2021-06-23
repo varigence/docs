@@ -57,7 +57,7 @@ For existing projects using SSIS, it is recommended that the *SSIS NULL VALUE RE
 > | ---------------------------------- | -------- | ---------------------------------------- | -------- | ---------------------------------------- |
 > | NULL Single Column BK              |          | DA39A3EE5E6B4B0D3255BFEF95601890AFD80709 | NVL      | A018884EE5E8C82BAF141388E4F41592D0E68C95 |
 > | Two Column Composite BK, both NULL | ~        | 9452A87FAA0073A5238C5BF8FBCAE0BFB2A7512D | NVL~NVL  | 057581A6D1D619E3554F286F585360E902227988 |
-> | Two Column Composite BK, ne NULL  | awlt~    | 95647A96D1AF1657941526742915B61C6B3DB171 | awlt~NVL | CFB3E059BC75F656C7AE17D2B285760CDC9495F2 |
+> | Two Column Composite BK, one NULL  | awlt~    | 95647A96D1AF1657941526742915B61C6B3DB171 | awlt~NVL | CFB3E059BC75F656C7AE17D2B285760CDC9495F2 |
 
 ## 2020 R2 New Features
 
