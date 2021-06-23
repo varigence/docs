@@ -6,7 +6,7 @@ summary: release notes for current version of BimlFlex
 # Release Notes
 
 > [!NOTE]
-> Please make sure databases and projects are backed up before upgrading.  
+> Please make sure databases and projects are backed up before upgrading.
 > Please email support@bimlflex.com with any installation or upgrade issues.
 
 ## BimlFlex 2020 R2
@@ -15,14 +15,16 @@ BimlFlex 2020 R2 is installed and upgraded through a single consolidated install
 
 ## Latest Release
 
-Build 20.2.458.0, release date: 4 June 2021
+Build 20.2.461.0, release date: 23 June 2021
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.458.0.exe)  
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.461.0.exe)
     This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.458.0.exe)  
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.461.0.exe)
     This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## Breaking Changes
+
+### Excel Add-in Updated
 
 The Excel add-in location has been updated. The location of the add-in must be updated in the Excel file. This is automatically done when the `BimlFlex.xlsx` file is opened from BimlStudio. BimlStudio also has an upgrade function available in the Excel Metadata Editor dropdown that allows manual upgrades of existing Excel files. If the `BimlFlex.xlsx` file is opened directly from Excel or from the Windows file explorer it will display an error message similar to this:
 
@@ -33,6 +35,29 @@ Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or
 Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Add-in](xref:excel-metadata-addin)
 
 The default installation location has been updated. Previous installations placed the application files in a version-number-based sub-folder under the Program Files\Varigence installation. This version removes the version-number sub-folder. For scenarios where the path is used the process should be updated to reflect the new path.
+
+## Possible Breaking Changes
+
+### New Setting SSIS HASH NULL VALUE REPLACEMENT
+
+The addition of the **Setting** *SSIS HASH NULL VALUE REPLACEMENT* now allows for SSIS and SQL based ELT to output identical BK and HASH values.
+This adjusts the logic used in generating the Derived Column Expression for BKs in SSIS to now use the *SSIS HASH NULL VALUE REPLACEMENT*, instead of an empty string `""` (prior logic).
+
+For new projects it is recommended that both *HASH NULL VALUE REPLACEMENT* and *SSIS NULL VALUE REPLACEMENT* be set to identical values to ensure full SQL hashing compatibility.
+Having the same value in both **Settings** will ensure the both SSIS and SQL Based ELT with generate identical BK and hash values.
+
+For existing projects using SSIS, it is recommended that the *SSIS NULL VALUE REPLACEMENT* is left blank to ensure backwards compatibility with any null values hashed in SSIS previously.
+
+> [!IMPORTANT]
+> For existing projects using SSIS, it is recommended that the *SSIS NULL VALUE REPLACEMENT* is left blank to ensure backwards compatibility with any null values hashed in SSIS previously.
+> Using a value other than blank will alter the previous routine used by SSIS to generate a BK.
+> The below table shows a few examples of what SSIS would generate if the `NVL` was used over prior logic :
+>
+> | Example Key Type                   | Prior BK | Prior Hash                               | New BK   | New Hash                                 |
+> | ---------------------------------- | -------- | ---------------------------------------- | -------- | ---------------------------------------- |
+> | NULL Single Column BK              |          | DA39A3EE5E6B4B0D3255BFEF95601890AFD80709 | NVL      | A018884EE5E8C82BAF141388E4F41592D0E68C95 |
+> | Two Column Composite BK, both NULL | ~        | 9452A87FAA0073A5238C5BF8FBCAE0BFB2A7512D | NVL~NVL  | 057581A6D1D619E3554F286F585360E902227988 |
+> | Two Column Composite BK, one NULL  | awlt~    | 95647A96D1AF1657941526742915B61C6B3DB171 | awlt~NVL | CFB3E059BC75F656C7AE17D2B285760CDC9495F2 |
 
 ## 2020 R2 New Features
 
@@ -215,5 +240,5 @@ The modeling pages Accelerator, Schema Diagram and Column Mapping have a new tre
 
 ## Download Links to this Build
 
-* [bimlflexdevsetup_20.2.458.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.458.0.exe)
-* [bimlflexruntimesetup_20.2.458.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.458.0.exe)
+* [bimlflexdevsetup_20.2.461.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.461.0.exe)
+* [bimlflexruntimesetup_20.2.461.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.461.0.exe)
