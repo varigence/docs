@@ -74,3 +74,4 @@ Configure this setting by selecting **Projects** from the left side menu.
 
 ![Source to Staging - Persistent Stage Connection](images/source-staging-persistent-stage-connection.png "Persistent Stage Connection")
 
+If not persisting the history in the staging area, the next option is whether the connection to Staging has a Data Vault target connection.
