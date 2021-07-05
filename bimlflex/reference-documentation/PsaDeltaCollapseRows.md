@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Delta Collapse Rows
 
-Should the PSA Processing apply row collapsing logic.
+FUTURE PLACEHOLDER: Should the PSA Processing apply row collapsing logic.
 
 Assuming the FlexRowEffectiveDateTime for a given set of rows is sequential but different, but the row values (checksum) is the same for these rows only the first row is retained.
 
