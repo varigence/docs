@@ -174,13 +174,13 @@ By default the Landing Area tables will have a `land_` prefix appended to all la
 
 A Blob Landing Configuration requires a Blob Container for Staging, Archive and Error.
 These Blob Containers can be hosted inside a single Azure Storage Account or a unique account for each.
-Once the Azure artifacts are created, the appropriate settings for each account will need to be populated.
+Once the Azure artefacts are created, the appropriate settings for each account will need to be populated.
 
 ### [Details](#tab/landing-details/polybase)
 
 A PolyBase Landing Configuration requires a Blob Container for Staging, Archive and Error.
 These Blob Containers can be hosted inside a single Azure Storage Account or a unique account for each.
-Once the Azure artifacts are created, the appropriate settings for each account will need to be populated.
+Once the Azure artefacts are created, the appropriate settings for each account will need to be populated.
 
 Additionally the `Azure Copy` **Settings** will need to be configured as such:
 

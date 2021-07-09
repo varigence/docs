@@ -1,7 +1,7 @@
 ---
 uid: adf-deployment-overview
 title: ADF Deployment Overview
-summary: Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through powershell and Azure portal 
+summary: Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through PowerShell and Azure portal 
 ---
 # BimlFlex for Azure Data Factory
 
@@ -14,10 +14,10 @@ During the build process, BimlFlex produces all Azure Data Factory assets needed
 The following links contain detailed information on specific topics:
 
 * [ADF deployment guide](xref:bimlflex-adf-using-powershell). BimlFlex produces all Azure Data Factory assets needed.
-* [Deplying ADF components using Powershell](xref:bimlflex-adf-using-powershell). BimlFlex produces all Azure Data Factory assets needed for deployment, and also generates a PowerShell deployment script with values pulled directly from your settings for ease of deployment.
-* [Deploying ADF components using the Azure Portal](xref:using-azure-portal). Although the recommended practice is to use the automated deployment process using Powershell, all of the ADF assets are provided for a manual deployment via the [Azure Portal](https://portal.azure.com).
+* [Deploying ADF components using PowerShell](xref:bimlflex-adf-using-powershell). BimlFlex produces all Azure Data Factory assets needed for deployment, and also generates a PowerShell deployment script with values pulled directly from your settings for ease of deployment.
+* [Deploying ADF components using the Azure Portal](xref:using-azure-portal). Although the recommended practice is to use the automated deployment process using PowerShell, all of the ADF assets are provided for a manual deployment via the [Azure Portal](https://portal.azure.com).
 * [ARM templates for BimlFlex](xref:bfx-arm-templates). Azure Resource Manager (ARM) templates are the Microsoft preferred way of deploying infrastructure-as-code to Azure, and BimlFlex supports this as a mechanism to facilitate deployment.
-* [Configuring a Landing Area for ELT in ADF](xref:bimlflex-adf-landing-area). Using an ELT approach for data integration, BimlFlex uses a Landing Area that is accessible for Stored Procedures to transform data. This allows for data to be directly transformed while using the Copy Activity to efficienctly transfer the results.
+* [Configuring a Landing Area for ELT in ADF](xref:bimlflex-adf-landing-area). Using an ELT approach for data integration, BimlFlex uses a Landing Area that is accessible for Stored Procedures to transform data. This allows for data to be directly transformed while using the Copy Activity to efficiently transfer the results.
 * [BimlFlex Project and Batch structures in ADF](xref:bimlflex-adf-project-batch-structure). The configuration of Projects and Batches in BimlFlex metadata governs how the resulting ADF resources are organised.
 
 ## Concurrent Development
