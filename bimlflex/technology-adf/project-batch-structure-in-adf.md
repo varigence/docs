@@ -57,4 +57,4 @@ Similar to the primary solve order, the Sub-Batches only exist to ensure a corre
 
 The following diagram shows a logical overview of how Batches and Projects are deployed for ADF, based on Batch and Project definiton in BimlFlex metadata.
 
-![ADF Logical View diagram](images/ADF-logical-view-diagram-example.png"ADF Logical View diagram" )
+![ADF Logical View diagram](images/ADF-logical-view-diagram-example.png "ADF Logical View diagram" )
