@@ -9,7 +9,7 @@ This section covers various concepts that are important to understand when worki
 
 ## Customers and Multi-Tenancy
 
-BimlFlex provides an effective multi-tenant configuration to allow working with different models, even within a single organization. This is referred to as the *Customer* concept. 
+BimlFlex provides an effective multi-tenant configuration to allow working with different models, even within a single organization. This is referred to as the *Customer* concept.
 
 More information on this and related concept is provided in the following links:
 

@@ -8,10 +8,11 @@ varigenceArticleType: Conceptual
 
 # Configure Azure Data Factory Landing Area
 
-The Azure Data Factory Copy activity currently does not allow for transformations during the copying of the data.
-Therefore, BimlFlex uses a Landing Area that is accessible by SQL Based ELT stored procedures in the Staging Area.
-This allows for the data to be directly accessed by the code to perform any necessary transformations needed.
-The Azure Data Factory pipeline can then use the Copy activity to move the data to the Staging Area efficiently.
+When using an ELT approach for data integration, BimlFlex creates a number of Execute Pipelines with various procedure calls and Copy Activities.
+
+The Azure Data Factory (ADF) Copy Activity does not allow for transformations during the copying of the data. To support transformation of data using a Copy Activity, BimlFlex uses a `Landing Area` that is accessible by SQL-based Stored Procedures in the Staging Area.
+
+This way, data can be accessed directly to perform any required transformations while the ADF Execute Pipeline can use the Copy Activity to efficiently move the results to the Staging Area.
 
 The general architecture is below with the Landing Area in the middle supporting either a Database or Files.
 
@@ -173,13 +174,13 @@ By default the Landing Area tables will have a `land_` prefix appended to all la
 
 A Blob Landing Configuration requires a Blob Container for Staging, Archive and Error.
 These Blob Containers can be hosted inside a single Azure Storage Account or a unique account for each.
-Once the Azure artifacts are created, the appropriate settings for each account will need to be populated.
+Once the Azure artefacts are created, the appropriate settings for each account will need to be populated.
 
 ### [Details](#tab/landing-details/polybase)
 
 A PolyBase Landing Configuration requires a Blob Container for Staging, Archive and Error.
 These Blob Containers can be hosted inside a single Azure Storage Account or a unique account for each.
-Once the Azure artifacts are created, the appropriate settings for each account will need to be populated.
+Once the Azure artefacts are created, the appropriate settings for each account will need to be populated.
 
 Additionally the `Azure Copy` **Settings** will need to be configured as such:
 

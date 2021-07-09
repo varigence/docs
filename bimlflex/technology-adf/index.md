@@ -1,15 +1,28 @@
 ---
 uid: adf-deployment-overview
 title: ADF Deployment Overview
-summary: Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through powershell and Azure portal 
+summary: Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through PowerShell and Azure portal 
 ---
 # BimlFlex for Azure Data Factory
 
-Azure Data Factory (ADF) is a common target for BimlFlex Data Warehouse Automation solutions. In this section we will discuss items that pertain to ADF deployment. Currently ADF only supports the ELT model. This means orchestration of SQL-based transformations only.
+Azure Data Factory (ADF), the cloud-based data integration service for Microsoft Azure, is a common target for BimlFlex Data Warehouse Automation solutions. In this section we will discuss items that pertain to ADF deployment.
+
+## Azure Data Factory Build & Deployment Concepts
+
+During the build process, BimlFlex produces all Azure Data Factory assets needed for deployment. When the build has been completed, the ADF components can be deployed in a number of ways.
+
+The following links contain detailed information on specific topics:
+
+* [ADF deployment guide](xref:bimlflex-adf-using-powershell). BimlFlex produces all Azure Data Factory assets needed.
+* [Deploying ADF components using PowerShell](xref:bimlflex-adf-using-powershell). BimlFlex produces all Azure Data Factory assets needed for deployment, and also generates a PowerShell deployment script with values pulled directly from your settings for ease of deployment.
+* [Deploying ADF components using the Azure Portal](xref:using-azure-portal). Although the recommended practice is to use the automated deployment process using PowerShell, all of the ADF assets are provided for a manual deployment via the [Azure Portal](https://portal.azure.com).
+* [ARM templates for BimlFlex](xref:bfx-arm-templates). Azure Resource Manager (ARM) templates are the Microsoft preferred way of deploying infrastructure-as-code to Azure, and BimlFlex supports this as a mechanism to facilitate deployment.
+* [Configuring a Landing Area for ELT in ADF](xref:bimlflex-adf-landing-area). Using an ELT approach for data integration, BimlFlex uses a Landing Area that is accessible for Stored Procedures to transform data. This allows for data to be directly transformed while using the Copy Activity to efficiently transfer the results.
+* [BimlFlex Project and Batch structures in ADF](xref:bimlflex-adf-project-batch-structure). The configuration of Projects and Batches in BimlFlex metadata governs how the resulting ADF resources are organised.
 
 ## Concurrent Development
 
-The majority of BimlFlex deployments consist of several teams working on the same Data Warehouse at the same time. A successful combination of concurrent development and Data Warehouse management typically leverages several features in BimlFlex for support.
+The majority of BimlFlex deployments consist of several teams working on the same Data Warehouse at the same time. A successful combination of concurrent development and Data Warehouse management typically leverages several features in BimlFlex.
 
 [More about Concurrent Development](xref:bimlflex-adf-concurrent-development)
 
@@ -26,15 +39,3 @@ There are many viable approaches to configure CI/CD, and Data Warehouses have th
 In certain BimlFlex solutions there are properties that get stored in **Azure Key Vaults** (AKV) for security purposes. AKV is a cloud service that provides secure storage for sensitive information. Users can securely store keys, passwords, certificates, and other secrets.
 
 [More about Sensitive Information Management](xref:sensitive-info-management)
-
-## PowerShell Deployment
-
-BimlFlex produces all Azure Data Factory assets needed for deployment, and also generates a PowerShell deployment script with values pulled directly from your settings for ease of deployment.
-
-[More about PowerShell deployment](xref:bimlflex-adf-using-powershell)
-
-## Azure Portal Deployment
-
-Although the recommended practice is to use the automated deployment process mentioned above, all of the ADF assets are provided for a manual deployment via the [Azure Portal](https://portal.azure.com).
-
-[More about Azure Portal Deployment](xref:using-azure-portal)
