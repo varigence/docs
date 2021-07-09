@@ -107,7 +107,6 @@ Align these settings with the organizations best practices and environmental req
   
 |  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Add SQL Comments](xref:bimlflex-app-reference-documentation-setting-AddSqlComments) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether descriptive comments are added to the SQL ELT code.|
 |[Global Default Date](xref:bimlflex-app-reference-documentation-setting-GlobalDefaultDate) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The global default date to use for timelines.|
 |[Convert GUID To String](xref:bimlflex-app-reference-documentation-setting-ConvertGuidToString) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether a source column of type "GUID"/"UniqueIdentifier" is automatically converted to a String data type.|
 |[Use BimlCatalog](xref:bimlflex-app-reference-documentation-setting-UseBimlCatalog) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether BimlFlex uses the BimlCatalog database for logging, auditing and configuration variables.|
@@ -195,7 +194,7 @@ Align these settings with the organizations best practices and environmental req
   
 |  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
-|[Apply Delete Detection PSA](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionApplyPsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Use the default process to insert detected deletes into the Persistent table.|
+|[Apply Delete Detection PSA](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionApplyPsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Use the default process to insert detected deletes into the Persistent Staging Area table.|
 |[Apply Delete Detection RDV](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionApplyRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Use the default process to insert detected deletes into the Data Vault Satellite tables.|
 |[Enable Delete Detection](xref:bimlflex-app-reference-documentation-setting-DeleteDetectionEnabled) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether BimlFlex applies a separate key load pattern that will enable detection of hard deletes in the source|
 
@@ -225,7 +224,7 @@ Align these settings with the organizations best practices and environmental req
 |[Stage Column With Business Name](xref:bimlflex-app-reference-documentation-setting-StageColumnWithBusinessName) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|When defining a Model Override name for a column, setting this to true will use the override name as the staging column name.|
 |[Stage Object With Business Name](xref:bimlflex-app-reference-documentation-setting-StageObjectWithBusinessName) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|When defining a Model Override name for an object, setting this to true will use the override name as the staging table name.|
 |[Use Record Source As Append](xref:bimlflex-app-reference-documentation-setting-UseRecordSourceAsAppend) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Specifies if the record source should be appended to object names|
-|[Use Record Source As Schema](xref:bimlflex-app-reference-documentation-setting-UseRecordSourceAsSchema) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the `Record Source` is used as the schema name for staging and persistent staging tables.|
+|[Use Record Source As Schema](xref:bimlflex-app-reference-documentation-setting-UseRecordSourceAsSchema) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the `Record Source` is used as the schema name for Staging- and Persistent Staging Area tables.|
 
 ## Operations
   
@@ -345,7 +344,7 @@ Align these settings with the organizations best practices and environmental req
 | ---- | ------- | ----------- |
 |[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaPsa) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to add to the PSA objects when Staging and Persistent Staging are co-located in the same database.|
 |[Enable End Date](xref:bimlflex-app-reference-documentation-setting-EnableEndDatePsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Apply end dating in the PSA. This will allow timelines to be maintained in the PSA. Disable this to configure an insert-only approach for the PSA for optimized load performance.|
-|[Bypass Persistent Checks](xref:bimlflex-app-reference-documentation-setting-StageBypassPsaChecks) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this to bypass lookups, and directly apply all records to the Staging and Persistent Staging tables.|
+|[Bypass Persistent Checks](xref:bimlflex-app-reference-documentation-setting-StageBypassPsaChecks) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this to bypass lookups, and directly applies all records to the Staging and Persistent Staging tables.|
 |[Use Cache Lookup](xref:bimlflex-app-reference-documentation-setting-PsaUseCacheLookup) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the PSA lookup caches the data to disk when using SSIS. Use this if it is not possible to use the normal in-memory lookup behavior due to memory constraints.|
 |[Disable Stage, Persist Only](xref:bimlflex-app-reference-documentation-setting-DisableStgPsaOnly) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this to skip the staging layer and only persist changes directly in the PSA. This applies to SSIS output only.|
 |[Delta Collapse Rows](xref:bimlflex-app-reference-documentation-setting-PsaDeltaCollapseRows) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Should the PSA Processing apply row collapsing logic.|
@@ -354,5 +353,5 @@ Align these settings with the organizations best practices and environmental req
 |[Delta Is Single Change](xref:bimlflex-app-reference-documentation-setting-PsaDeltaSingleChange) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this if loading into PSA and the delta only has single changes to each key. This will provide optimized ELT loads.|
 |[Delta Stage All Rows](xref:bimlflex-app-reference-documentation-setting-PsaDeltaStageAllRows) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the delta process stages all rows. Otherwise, the process will compress row changes into distinct change rows - removing full row duplicates.|
 |[Delta Is Derived](xref:bimlflex-app-reference-documentation-setting-PsaEltDeltaIsDerived) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if a PSA table already receives a data delta. Enable this if loading into PSA and the delta has already been derived earlier.|
-|[Merge All Rows](xref:bimlflex-app-reference-documentation-setting-PsaMergeAllRows) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the PSA load merges all rows into the destination.|
+|[Merge All Rows](xref:bimlflex-app-reference-documentation-setting-PsaMergeAllRows) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|The Merge All Rows setting will replace the hash (Row Hash Type 1 and Row Hash Type 2) with a NULL value in the source-select of the merge statement. Only applies in the specific case when the source is an "Object" and the target is a "Table".|
 |[Truncate PSA If Has Rows](xref:bimlflex-app-reference-documentation-setting-PsaTruncateIfHasRows) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines whether the PSA table should be truncated if it already contains records. This should be disabled for normal PSA behavior. Enable this for specific requirements where previously loaded rows should be discarded.|

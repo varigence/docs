@@ -72,6 +72,10 @@ The BimlFlex [Connections](xref:bimlflex-application-connections) provide the in
 |`LS_SecurityTokenKVS_SecretName` | Specifies the Name of the Key Vault Secret that contains the Security Token.|
 |`LS_SecurityTokenKVS_SecretVersion` | Specifies the Version of the Key Vault Secret that contains the Security Token. If omitted, the most recent version is used.|
 |`LS_ApiVersion` | |
+|`SFDC_Url` | |
+|`SFDC_ApiVersion` | |
+|`SFDC_ConsumerKey` | |
+|`SFDC_ConsumerSecret` | |
 
 ## References
   

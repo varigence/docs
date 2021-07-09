@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Bypass Persistent Checks
 
-Enable this to bypass lookups, and directly apply all records to the Staging and Persistent Staging tables.
+Enable this to bypass lookups, and directly applies all records to the Staging and Persistent Staging tables.
 
 Notes:
 

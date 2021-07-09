@@ -17,6 +17,9 @@ The BimlFlex [`Configurations`](xref:configurations) allow for the creation and 
 |`ConfigurationKey` | The unique name of the selected configuration.|
 |`ConfigurationValue` | This column contains the value to be returned when the configuration is accessed by the framework. This attribute allows you to define naming conventions custom to your environment.|
 |`ConfigurationDataType` | The definition of the data type for a configuration being used in the solution output. Here you should enter the data type using the following format "DATATYPENAME".|
+|`Length` | |
+|`Precision` | |
+|`Scale` | |
 |`ConfigurationDefault` | The value that will used by the Configuration if no Configuration Value has been specified.|
 |`ConfigurationGrouping` | The category the configuration belongs to.|
 |`ConfigurationOrder` | An ordinal sequence for the Configuration.|
@@ -34,12 +37,13 @@ The BimlFlex [`Configurations`](xref:configurations) allow for the creation and 
 | --------- | ----------- |
 |`CustomerUID` | Reference to the Customer that this Configuration belongs to.|
 |`VersionUID` | Reference to the Version that this Configuration belongs to.|
-|`LandingAttributeId` | |
-|`StagingAttributeId` | |
-|`PersistentStagingAttributeId` | |
-|`HubAttributeId` | |
-|`SatelliteAttributeId` | |
-|`LinkAttributeId` | |
-|`DimAttributeId` | |
-|`FactAttributeId` | |
+|`DataTypeId` | |
+|`LandingAttributeId` | The landing attribute is used to control whether a configuration is applied to a landing environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
+|`StagingAttributeId` | The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
+|`PersistentStagingAttributeId` | The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
+|`HubAttributeId` | The hub attribute is used to control whether a configuration is applied to hubs when generating a data vault architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
+|`SatelliteAttributeId` | The satellite attribute is used to control when a configuration is applied to Satellites when generating a data vault architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
+|`LinkAttributeId` | The link attribute is used to control when a configuration is applied to links when generating a data vault architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
+|`DimAttributeId` | The dim attribute is used to control when a configuration is applied to dimensions when generating a data warehouse architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
+|`FactAttributeId` | The fact attribute is used to control when a configuration is applied to facts when generating a data warehouse architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
 

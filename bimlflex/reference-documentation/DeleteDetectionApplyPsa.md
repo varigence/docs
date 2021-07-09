@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Apply Delete Detection PSA
 
-Use the default process to insert detected deletes into the Persistent table.
+Use the default process to insert detected deletes into the Persistent Staging Area table.
 
 This can be overriden by the "DeleteDetectionApplyPsa" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting
 
