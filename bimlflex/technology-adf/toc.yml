@@ -14,3 +14,5 @@
   href: concurrent-development.md
 - name: ARM Template Handling
   href: bfx-arm-templates.md
+- name: Project and Batch Organization
+  href: project-batch-structure-in-adf.md
