@@ -5,7 +5,7 @@ summary: Background on supporting a forward-only approach for Synapse deployment
 ---
 # Forward Only Deployment Approach
 
-A forward-only deployment approach (migration plan) is recommended to work with Synapse, and it is how BimlFlex updates the generated data solution artefacts on the target Synapse platform.
+A forward-only deployment approach (migration plan) is recommended to work with Synapse, and it is how BimlFlex updates the generated data solution artifacts on the target Synapse platform.
 
 This approach means that changes in the structures are applied as new version / structures in the target platform.
 

@@ -7,44 +7,115 @@ varigenceArticleType: Conceptual
 ---
 # Extension Points
 
-Extension points are one of the key ways BimlFlex provides customization to cater for specific scenarios. While the standard templates cover most real-world scenarios, there may be a specific tweak that would improve certain edge cases. These modifications can be defined using extension points, that allow for custom logic to be added to a template at various points in the process.
+Extension points are one of the key features BimlFlex provides customization to cater for specific scenarios. While the standard templates cover most real-world scenarios, there may be a specific tweak that would improve certain specific requirements. These modifications can be defined using Extension Points, that allow for custom logic to be added to a template at various points in the process.
 
-Reference information is detailed in the [BimlFlex Extension Point Definitions](xref:bimlflex-extension-point-definitions) document.
+It is important to remember that many features and functions available in BimlFlex allow for customisation in a way that does not require Extension Points. For example [Load Parameters](xref:bimlflex-concepts-metadata-parameters), [Settings and Overrides](xref:bimlflex-app-reference-documentation-settings-index), custom source queries with joins and filters, inherited tables and columns, data type expansions etc. are all available without the need for Extension Points.
 
-Extension Points are used to extend the default functionality of BimlFlex using standard Biml code. It can extend and override many different areas of the BimlFlex framework.
+Extension Points are meant to modify the behaviour of the data solution when the available BimlFlex features do not meet specific requirements.
+
+> [!NOTE]
+> Detailed information on Extension Points is available in the [BimlFlex Extension Point Definitions](xref:bimlflex-extension-point-definitions) reference documentation.
+
+Extension Points are used to extend the default functionality of BimlFlex using standard Biml code. They can extend and override many different areas of the BimlFlex framework.
 
 Extension Points have four key components:
 
-* Extension Point directives that control what is injected and where
-* Inheritance options code that defines any object inheritance
-* Custom code that implements the required behavior
-* Input and output path variables for connecting the Extension Point in the SSIS package.
+* Extension Point directives that control _what_ (the Extension Point name) is injected and _where_ (the target reference).
+* Inheritance options code that defines any object inheritance.
+* Custom code that implements the required behaviour.
+* Input and output path variables for adding the Extension Point to the data logistics process.
 
 ![Extension Points Sample Code](../user-guide/images/bimlflex-ss-v5-extension-points-sample-code.png "Extension Points Sample Code")
 
-Extension Points are created in BimlStudio. In the BimlFlex Ribbon tab there are several Extension Point areas with a large number of different Extension Points available. Each Extension Point template will generate a code block that targets a specific point of the project.
+The resulting custom code created through the Extension Point can be Biml code or a combination of SQL, .Net and Biml code. However, the resulting output must always provide BimlScript compatible code so that the overall solution can complete the build process in BimlStudio.
 
-![BimlFlex Ribbon UI](../user-guide/images/bimlflex-ss-v5-bimlflex-ui-tab.png "BimlFlex Ribbon UI")
+Extension Points are created in BimlStudio, and a library of Extension Points is provided upon installation. The Extension Points are available in the BimlFlex Ribbon tab in BimlStudio, and they are organized there are several Extension Point areas with a large number of different Extension Points available. Each Extension Point template will generate a code block that targets a specific point of the project.
 
-Creating an Extension Point file and applying the required target attribute is all that is needed for it to be included into the project. when BimlFlex builds the solution any Extension Point code is injected into the resulting Packages.
+![BimlFlex Ribbon Tab](../user-guide/images/bimlflex-ss-v5-bimlflex-ui-tab.png "BimlFlex Ribbon Tab")
 
-The Extension Points are saved as Biml files in the BimlStudio Project and should be treated as source code for the solution.
+> [!NOTE]
+> Extension Points are saved as Biml files in the BimlStudio Project and should be treated as source code for the solution.
 
-## Default BimlFlex behavior
+A full overview of available Extension Points is available in the [Extension Point Reference Documentation](xref:bimlflex-extension-point-definitions).
 
-Note that there are many features and functions built into BimlFlex that don't require Extension Points. Parameters, custom source queries with joins and filters, inherited tables and columns, data type expansions etc. are all available without the need for Extension Points.
+## Creating a new Extension Point
+
+The available Extension Points in BimlStudio can be considered as templates to define code overrides. Each Extension Point template contains starter code, and when selected in BimlStudio will create a new Biml file which is automatically added to the `Bundle Extensions` folder in the BimlStudio Logical View. This indicates that the Extension Point file is part of the solution, and any code will be applied to its specified target.
+
+> [!NOTE]
+> It is a good practice to rename the Extension Point file that is created from the template, and in a way that refers to its target or scope.
+
+The newly created file will already contain the type of Extension Point, as visible in the *extensionpoint="<>"* property in the file. The target will be empty by default, and will need to be configured.
+
+Creating an Extension Point file and applying the required target attribute is all that is needed for it to be included into the project. when BimlFlex builds the solution any Extension Point code is applied to the corresponding object(s).
 
 ## Extension Point Targets
 
-Below is an example of where Extension Points can be added to the ETL structure. The red dots indicate injection points.
+Extension Point Targets define _where_ the custom code is applied, for example the object such as a connection, project, transformation or process step. In the Extension Point this is the *target=""* property or reference.
 
-![Extension Points Injection Points](../user-guide/images/bimlflex-ss-v5-extension-points-sample-flow.png "Extension Points Injection Points")
+Below is an example of where Extension Points can be added to the data logistics structure. The red dots indicate injection points (targets) for Extension Points.
 
-It is also possible to completely override the main container with an Extension Point. This can be used with pre-existing, bespoke packages. By importing the existing package into BimlStudio the Biml code version of the same package can be injected into the Extension Point.
+![Extension Points Injection Points](../user-guide/images/bimlflex-ss-v5-extension-points-sample-flow.png "Extension Points Injection Points").
+
+The target is relative to the Extension Point, and refers to the object name within the solution. This can be a Project, Connection, Column and more generally any object involved in data transformation. In BimlStudio, the objects are visible in the Logical View in principle.
+
+### Defining scoped Extension Point Targets in the BimlFlex App
+
+The BimlFlex App provides a feature that allows defining a target for an Extension Point for a collection of objects. This is the `ExtensionPointTarget` Attribute, accessible in the Attributes screen within the BimlFlex App.
+
+![Extension Point Target Attribute](../concepts/images/attribute-extension-point-target.png "Extension Point Target Attribute").
+
+The Extension Point Target BimlFlex Attribute can be configured for a specific scope and by adding the Attribute Value as the target for an Extension Point the custom code will be applied to any relevant Objects within this scope.
+
+The following can be configured:
+
+* Attribute Type. This is the scope where a drop-down allows selection from a number of values such as (but not limited to) 'Project', 'Batch', 'Customer' or 'Connection'.
+* Object. This property, which is dynamic depending on the selected Attribute Type, contains the specific details for the type of Object configured in Attribute Type. For example, for a Project the Project Name can be entered and for an Object the Connection and Object can be specified.
+* Attribute. This indicates the Attribute Type, which in this case must be an Extension Point Target Attribute ('ExtensionPointTarget').
+* Attribute Value. The value that can be used as target reference inside the Extension Point code.
+* Attribute Property. This is not used for Extension Point Target Attributes.
+* Description. Any free-format description of the intent of the Extension Point Attribute can be added here.
+
+Inside Extension Point code, the target reference can be updated to refer to the Attribute Value of an Extension Point Target Attribute, and this will apply the modified code to all related objects.
+
+### Finding Extension Point targets
+
+In addition to specifying one or more Extension Point Target Attributes, a target for an Extension Point can be identified through either of these steps:
+
+#### Option 1 - Use the Target Name
+
+* If the **Extension Point** is known and just the target name of an object is needed, right-click the Object in the Logical View in BimlStudio and click `Copy Biml`.
+
+![Copy Biml](../user-guide/images/right-click-copy-biml.png "Copy Biml")
+
+* Paste the `Biml` in `Notepad` or `Notepad ++`. the Screenshot uses Notepad ++ and have the language set to `XML` to enable highlighting.
+* Use either the `Batch` or `ObjectEntity` information depending on the Extension Point scope.
+
+![BimlFlex Target](../user-guide/images/bimlflex-package-annotations.png "BimlFlex Target")
+
+#### Option 2 - Find Extension Point Location and Target
+
+This is a more technical approach that requires some `Biml` knowledge.
+
+1. `Right Click` the target Object and choose `View Designer`.
+
+![View Designer](../user-guide/images/right-click-view-designer.png "View Designer")
+
+1. Right Click on the tab with the package name, in this case `CI_LOAD_AWLT_DM_Customer`, and choose `View in BimlScript Designer`
+
+![View BimlScript Designer](../user-guide/images/right-click-view-bimlscript-designer.png "View BimlScript Designer")
+
+1. click `Update Preview` on the `BimlScript` tab.
+1. In the `Preview Expanded BimlScript` there are `XML` comments with the available `Extension Point` types and their targets.
+1. When targeting the parent of an Object-based Extension Point, also set `CustomOutput.ObjectInherit = true;`
+
+![Update Preview](../user-guide/images/update-preview-extensionpoint-target.png "Update Preview")
 
 ## Extension Point Directives
 
-Special attention should be paid when editing the directives of an extension point because a user must have them correctly defined before they will be able to test the output of their Biml code. The purpose of a directive is to indicate to the compiler exactly what the purpose of the Biml code is that you are writing and where it should be injected. To write a directive simply insert the appropriate line of code between the following tags <#@ #>
+Special attention should be paid when editing the directives of an extension point because a user must have them correctly defined before they will be able to test the output of their Biml code.
+
+The purpose of a directive is to indicate to the compiler exactly what the purpose of the Biml code is that you are writing and where it should be injected. To write a directive simply insert the appropriate line of code between the following tags <#@ #>
 
 The following table outlines the attributes of these directives.
 
@@ -63,7 +134,7 @@ The next directive is the property directive which is specific to the type of ob
 
 ## Extension Point Inheritance Code
 
-BimlFlex extension points can inherit the attributes and related items from an object. This is useful because, in some cases, properties relating to a certain object are required as part of what is needed to effectively do what we want to in an extension point.
+Extension Points can inherit the attributes and related items from an object. This is useful because, in some cases, properties relating to a certain objects are required as part of what is needed to effectively do what we want to in an Extension Point.
 
 Below are two of the required directives that need to be in place in order to use inheritance.
 
@@ -108,57 +179,23 @@ We will see more examples of where we need to declare an output/input path varia
 <# CustomOutput.OutputPathName = @"TaskName/SequenceContainerName"; #>
 ```
 
-## How to find the Extension Point target
+## Example Extension Point - Discard Empty Rows
 
-To add an **Extension Point** to the project the Name and Target needs to be specified.
+This is an example where an SSIS Source Pipeline Extension Point is used to discard all incoming rows where the Integration Key column value is empty. This can be used in a scenario where a file was loaded with empty rows that needed to be discarded.
 
-The Name is included when an Extension Point is created from the Extension Point menu in BimlStudio.
+The following will occur:
 
-The Target represents the object or entity where the Extension Point should be included. The correct target can be identified through either of these steps:
-
-### Option 1 - Use the Target Name
-
-* If the **Extension Point** is known and just the target name of an object is needed, right-click the Object in the Logical View in BimlStudio and click `Copy Biml`.
-
-![Copy Biml](../user-guide/images/right-click-copy-biml.png "Copy Biml")
-
-* Paste the `Biml` in `Notepad` or `Notepad ++`. the Screenshot uses Notepad ++ and have the language set to `XML` to enable highlighting.
-* Use either the `Batch` or `ObjectEntity` information depending on the Extension Point scope.
-
-![BimlFlex Target](../user-guide/images/bimlflex-package-annotations.png "BimlFlex Target")
-
-### Option 2 - Find Extension Point Location and Target
-
-This is a more technical approach that requires some `Biml` knowledge.
-
-1. `Right Click` the target Object and choose `View Designer`.
-
-![View Designer](../user-guide/images/right-click-view-designer.png "View Designer")
-
-1. Right Click on the tab with the package name, in this case `CI_LOAD_AWLT_DM_Customer`, and choose `View in BimlScript Designer`
-
-![View BimlScript Designer](../user-guide/images/right-click-view-bimlscript-designer.png "View BimlScript Designer")
-
-1. click `Update Preview` on the `BimlScript` tab.
-1. In the `Preview Expanded BimlScript` there are `XML` comments with the available `Extension Point` types and their targets.
-1. When targeting the parent of an Object-based Extension Point, also set `CustomOutput.ObjectInherit = true;`
-
-![Update Preview](../user-guide/images/update-preview-extensionpoint-target.png "Update Preview")
-
-## Extension Point - Discard Empty Rows
-
-This is an example where a Source Pipeline Extension Point is used to discard all incoming rows where the Integration Key column value is empty. This was used in a scenario where a file was loaded with empty rows that needed to be discarded.
-
-Any row with an empty Integration Key is discarded.
-
-A row count of discarded rows is logged to the BimlCatalog as Exceptions
+* Any row with an empty Integration Key is discarded.
+* A count of the total number of discarded rows is logged to the BimlCatalog as an exception.
 
 Create the Extension Point in the project by choosing the **Object** button in the BimlFlex ribbon tab, Extension Points group. In the drop down, choose `Source Pipeline`.
 
-Add the source object name in the target definition. All other information will be derived automatically.
+Add the source object name in the target definition. All other information will be derived automatically. The below example contains a placeholder target reference, because for the actual full object for a file is the combination of the Connection, Schema and the Object itself.
+
+Note that the file is not the actual filename, but the object that references the files e.g. the file connector.
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourcePipeline" target="ConnectionName.SchemaName.FileName" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourcePipeline" target="<ConnectionName.SchemaName.FileName>" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="inputPath" type="String" #>
