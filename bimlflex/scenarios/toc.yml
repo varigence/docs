@@ -14,3 +14,5 @@
   href: source-stored-procedure.md
 - name: Using SQL Server CDC as Source
   href: source-cdc.md
+- name: Connecting to Salesforce
+  href: source-salesforce-rest-api.md
