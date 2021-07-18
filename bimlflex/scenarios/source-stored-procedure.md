@@ -14,7 +14,7 @@ BimlFlex can use source stored procedures as source objects to load data from a 
 To control the load of Stored Procedure-based source data, use the following metadata settings
 
 >[!TIP]
->BimlFlex can not import the metadata from the Stored Procedure, so add it manually
+>BimlFlex can not import the metadata from the Stored Procedure, so add it manually.
 
 The Stored Procedure to execute, and the formal call to the procedure, is added in the **Override SQL** metadata element.
 
