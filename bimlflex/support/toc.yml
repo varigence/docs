@@ -4,6 +4,8 @@
   href: support-process.md
 - name: Checking the Installed Version
   href: check-installed-versions.md
+- name: Excel Metadata Add-In
+  href: excel-metadata-addin.md  
 - name: Troubleshooting
   href: troubleshooting-tips.md
 - name: BimlOnline Shutdown Notice
