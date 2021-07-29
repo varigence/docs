@@ -26,6 +26,7 @@ Instructions on how to find exactly what version of the BimlFlex components is i
 Some tips to assist in pinpointing where any error may originate from.
 
 * [Troubleshooting Tips](xref:bimlflex-support-troubleshooting-tips)
+* [Excel File Migration For BimlFlex 2020 R2](xref:excel-metadata-addin)
 
 ## Support Notices
 

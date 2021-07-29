@@ -24,9 +24,9 @@ The BimlFlex [Connections](xref:bimlflex-application-connections) provide the in
 |`NoOfThreads` | The number of threads a data logistics process can use to split the workload at runtime using the selected connection. The default is 1. The amount of threads can be redefined at the object level. When using SSIS, this attribute is only used in the SRC – STG template with the Balance Data Distributor to allow for greater parallelism. Only define a value greater than zero if the server has enough CPU and Memory to accommodate additional threads.|
 |`ExcludeFromModel` | |
 |`DataSource` | Name of the server the Connection points to. This is usually omitted as a separate configuration because defining this in the Connection String is sufficient.|
-|`SqlAuthentication` | Indicator if SQL Authentication (Named User) will be used for the selected Connection.|
-|`SqlUserName` | The user name which is to be used in the Connection, in case Sql Authentication (Named User) is selected.|
-|`SqlPassword` | The password which is to be used in the Connection, in case Sql Authentication (Named User) is selected.|
+|`AuthenticationMethod` | Indicator which Authentication Method will be used for the selected Connection.|
+|`UserName` | The user name which is to be used in the Connection, in case Authentication Method (Named User) is selected.|
+|`Password` | The password which is to be used in the Connection, in case Authentication Method (Named User) is selected.|
 |`Provider` | The type of connection provider used for this connection. When using ADO.NET connections other than SQL Server this is a required field.|
 |`Description` | Free-format additional documentation about the Connection.|
 |`IsCloudEnabled` | Determines whether the Connection is cloud enabled for use with Azure Data Factory.|
