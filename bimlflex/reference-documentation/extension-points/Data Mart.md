@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-app-reference-documentation-Data Mart
+uid: bimlflex-app-reference-documentation-Data-Mart
 title: BimlFlex App Definition for Data Mart
 summary: Documentation of functionality within BimlFlex for the Data Mart Extension Point category
 varigenceProduct: BimlFlex

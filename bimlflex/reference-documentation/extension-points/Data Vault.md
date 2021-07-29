@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-app-reference-documentation-Data Vault
+uid: bimlflex-app-reference-documentation-Data-Vault
 title: BimlFlex App Definition for Data Vault
 summary: Documentation of functionality within BimlFlex for the Data Vault Extension Point category
 varigenceProduct: BimlFlex

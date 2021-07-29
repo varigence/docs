@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-app-reference-documentation-Staging Sql
+uid: bimlflex-app-reference-documentation-Staging-Sql
 title: BimlFlex App Definition for Staging Sql
 summary: Documentation of functionality within BimlFlex for the Staging Sql Extension Point category
 varigenceProduct: BimlFlex
