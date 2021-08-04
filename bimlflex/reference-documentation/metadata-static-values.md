@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 ## Metadata Static Types
 
-BimlFlex has a number of internal static types that can also be referred to as nn enumeration type or an enum that define a set of constants.
+BimlFlex has a number of internal static types that can also be referred to as an enumeration type or an enum that define a set of constants.
 
 ### AttributeTypes
 
