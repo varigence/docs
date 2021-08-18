@@ -1,18 +1,22 @@
 - name: Overview
   href: index.md
+
 - name: Current Release Notes
-  href: release-notes-2020.2.md
-- name: BimlFlex 2020.1 Release Notes
-  href: release-notes-2020.1.md
-- name: BimlFlex 2020.1 New Features
+  href: release-notes.md
+
+- name: BimlFlex 2020 R1 New Features
   href: new-features-2020.1.md
-- name: BimlFlex 2019.2 New Features
+- name: BimlFlex 2020 R1 Release Notes
+  href: release-notes-2020.1.md
+
+- name: BimlFlex 2019 R2 New Features
   href: new-features-2019.2.md
-- name: BimlFlex 2019.1 New Features
+- name: BimlFlex 2019 R1 New Features
   href: new-features-2019.1.md
-- name: BimlFlex 2018.3 New Features
+
+- name: BimlFlex 2018 R3 New Features
   href: new-features-2018.3.md
-- name: BimlFlex 2018.2 New Features
+- name: BimlFlex 2018 R2 New Features
   href: new-features-2018.2.md
-- name: BimlFlex 2018.1 New Features
+- name: BimlFlex 2018 R1 New Features
   href: new-features-2018.1.md
