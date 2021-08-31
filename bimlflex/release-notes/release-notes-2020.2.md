@@ -6,7 +6,7 @@ summary: release notes for BimlFlex 2020 R2
 # Release Notes
 
 > [!NOTE]
-> Please make sure databases and projects are backed up before upgrading.
+> Please make sure databases and projects are backed up before upgrading.  
 > Please email support@bimlflex.com with any installation or upgrade issues.
 
 ## BimlFlex 2020 R2
