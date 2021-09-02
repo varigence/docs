@@ -15,11 +15,11 @@ BimlFlex 2020 R2 is installed and upgraded through a single consolidated install
 
 ## Latest Release
 
-Build 20.2.463.0, release date: 06 July 2021
+Build 20.2.466.0, release date: 06 July 2021
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.463.0.exe)  
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.466.0.exe)  
     This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.463.0.exe)  
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.466.0.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## Breaking Changes
@@ -241,5 +241,5 @@ The modeling pages Accelerator, Schema Diagram and Column Mapping have a new tre
 
 ## Download Links to this Build
 
-* [bimlflexdevsetup_20.2.463.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.463.0.exe)
-* [bimlflexruntimesetup_20.2.463.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.463.0.exe)
+* [bimlflexdevsetup_20.2.466.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.466.0.exe)
+* [bimlflexruntimesetup_20.2.463.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.466.0.exe)
