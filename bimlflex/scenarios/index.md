@@ -18,6 +18,7 @@ A Data Warehouse usually requires more than only the right framework, database a
 * [Master Data Services](xref:bimlflex-master-data-services)
 * [OData](xref:bimlflex-source-odata)
 * [Stored Procedure](xref:bimlflex-source-stored-procedure)
+* [Azure PostgreSQL](xref:bimlflex-source-azure-postgres)
 * [Salesforce](xref:bimlflex-source-salesforce-rest-api)
 
 ## Other Connectivity Concepts

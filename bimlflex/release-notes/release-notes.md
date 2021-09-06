@@ -1,12 +1,12 @@
 ---
-uid: bimlflex-release-notes-2020-r2
+uid: bimlflex-release-notes
 name: BimlFlex Release Notes 2020 R2
 summary: release notes for current version of BimlFlex
 ---
 # Release Notes
 
 > [!NOTE]
-> Please make sure databases and projects are backed up before upgrading.
+> Please make sure databases and projects are backed up before upgrading.  
 > Please email support@bimlflex.com with any installation or upgrade issues.
 
 ## BimlFlex 2020 R2
@@ -17,9 +17,9 @@ BimlFlex 2020 R2 is installed and upgraded through a single consolidated install
 
 Build 20.2.463.0, release date: 06 July 2021
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.463.0.exe)
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_20.2.463.0.exe)  
     This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.463.0.exe)
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_20.2.463.0.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## Breaking Changes
