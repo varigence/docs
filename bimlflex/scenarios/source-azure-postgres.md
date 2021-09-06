@@ -14,7 +14,7 @@ For the purpose of this example, we use an Azure PostgreSQL database server that
 
 ## Setup Connection in BimlFlex App
 
-1. Enter the `[Connection](xref:bimlflex-application-connections) Name`, for this example we will use 'APGSQL'.
+1. Enter the [`Connection Name`](xref:bimlflex-application-connections), for this example we will use 'APGSQL'.
 2. Select `Source System` for the Integration Stage.
 3. Select `OlEDB` for the Connection Type.
 4. Select `PostgreSQL` for the System Type.
@@ -64,8 +64,6 @@ You can now use this metadata similar to any other data source in BimlFlex.
  In order to generate working SSIS components, you must have a working OleDb PostgreSQL driver installed on your machine that works with your target SSDT version.
 
 In this example we are using the [Intellisoft OLE DB Provider for PostgreSQL](https://www.pgoledb.com/index.php/component/filecabinet/?Itemid=111), note that they have a free version.
-
-For general information about creating projects that use SSIS go here [PLACEHOLDER].
 
 ## Azure Data Factory Projects
 
