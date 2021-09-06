@@ -36,7 +36,7 @@ Extension Points are created in BimlStudio, and a library of Extension Points is
 > [!NOTE]
 > Extension Points are saved as Biml files in the BimlStudio Project and should be treated as source code for the solution.
 
-A full overview of available Extension Points is available in the [Extension Point Reference Documentation](xref:bimlflex-extension-point-definitions).
+A full overview of available Extension Points is available in the [Extension Point Reference Documentation](xref:bimlflex-app-reference-documentation-extensionpoints-index).
 
 ## Creating a new Extension Point
 

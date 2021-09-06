@@ -4,15 +4,17 @@
   href: export-to-file.md
 - name: Flat File Import
   href: source-flat-file.md
-- name: Using Master Data Services as Source
+- name: Using Master Data Services as a source
   href: master-data-services.md
-- name: Source Excel Plus
+- name: Using Excel Plus as a source
   href: source-excel-plus.md
-- name: Using OData as Source
+- name: Using OData as a source
   href: source-odata.md
-- name: Using Stored Procedures as Source
+- name: Using Stored Procedures as a source
   href: source-stored-procedure.md
-- name: Using SQL Server CDC as Source
+- name: Using SQL Server CDC as a source
   href: source-cdc.md
+- name: Using Azure PostgreSQL as a source
+  href: source-azure-postgres.md  
 - name: Connecting to Salesforce
   href: source-salesforce-rest-api.md
