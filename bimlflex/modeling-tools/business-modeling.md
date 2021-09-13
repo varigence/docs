@@ -28,7 +28,7 @@ Details, such as attributes and liking similar entities, can be added to cards, 
 
 The Business Modeling feature is accessible from the main BimlFlex side menu.
 
-![BimFlex Business Modeling](images/bfx-business-model-homepage.png "BimlFlex Business Modeling")
+![BimlFlex Business Modeling](images/bfx-business-model-homepage.png "BimlFlex Business Modeling")
 
 Models may be created either by adding Subjects (People, Place, or Things) or from a top-down perspective by creating an overall model (Sales, Lawsuit, etc.) and adding subjects and events subsequently.
 
