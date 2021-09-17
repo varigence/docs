@@ -43,10 +43,6 @@ The BimlFlex getting started guide starts with the `01 - MSSQL Starting Point` s
     Microsoft Azure Synapse Target, ADF Data Mart sample metadata
 * **19 - Synapse Change Tracking ADF Solution**  
     Microsoft Azure Synapse Target, ADF, Change Tracking source sample metadata
-<!-- Placeholder for DataFlows
-* **20 - Synapse DataVault Dataflow Solution**
-* **21 - Synapse DataMart Dataflow Solution**
--->
 * **25 - Snowflake DataVault SSIS Solution**  
     Snowflake Target, SSIS and full Data Vault and Data Mart sample metadata
 * **26 - Snowflake DataMart SSIS Solution**  
@@ -61,6 +57,10 @@ The BimlFlex getting started guide starts with the `01 - MSSQL Starting Point` s
     Microsoft Azure SQL Database Target, ADF and Data Mart sample metadata
 * **41 - Synapse Dynamics ADF Solution**  
     Microsoft Azure Synapse Target, ADF and Dynamics CRM source sample metadata
+* **42 - Synapse Salesforce ADF Solution**
+    Using a Salesforce Rest API connection to a Azure Synapse Database Target with ELT stored procedures for transformations and Azure Data Factory for orchestration.
+* **43 - Synapse Salesforce SSIS Solution**
+    Using a Salesforce Rest API connection to a Azure Synapse Database Target with ELT stored procedures for transformations and SQL Server Integration Services for orchestration.
 * **51 - File MSSQL DataVault ELT SSIS Solution**  
     Microsoft SQL Server on-premises Target, SSIS and full Data Vault from File source sample metadata
 * **52 - File Synapse DataVault ELT SSIS Solution**  
@@ -75,6 +75,10 @@ The BimlFlex getting started guide starts with the `01 - MSSQL Starting Point` s
     Snowflake Target, ADF and full Data Vault from File source sample metadata
 * **57 - File SQLDB DataVault ELT ADF Solution**  
     Microsoft Azure SQL Database Target, ADF and full Data Vault from File source sample metadata
+<!--
+* **61 - Delta Lake ADF DataVault DataFlow Solution**
+* **62 - Delta Lake ADF DataMart DataFlow Solution**
+-->
 
 ## Sample Default Configuration sets
 

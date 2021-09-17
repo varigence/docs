@@ -351,7 +351,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 
 * Added additional logic to handle the `ParameterColumnExpression` with `ExecuteSqlOnSource`
 * Update to rdv helper functions for Multi Active Key End Dating
-* Update to accommodate a scenario where a Satellite exist with a Link and no Hub. This should not happen, but can  if the Data Vault is modelled incorrectly
+* Update to accommodate a scenario where a Satellite exist with a Link and no Hub. This should not happen, but can if the Data Vault is modeled incorrectly.
 * Update to `SqlDwSatEndDate` to update `RowIsCurrent`
 * Added `BusinessKeyQualifiedName`, `BusinessKeyName`, `PrimaryKeyQualifiedName` and `PrimaryKeyName` to `TableObject`
 * Update to PSA parameters for Azure SQL Data Warehouse and Satellite End Dates

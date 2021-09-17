@@ -43,7 +43,7 @@ Once the target model is drafted, compare the accelerated metadata with the expe
 
 ### Prerequisites
 
-This guide builds on the other guides in the series and assumes that the environment has been set up and configured, source metadata has been imported and that the source to staging process has been modelled and completed.
+This guide builds on the other guides in the series and assumes that the environment has been set up and configured, source metadata has been imported and that the source to staging process has been modeled and completed.
 
 ### The BimlFlex Workflow
 
@@ -267,7 +267,7 @@ There are overrides for Objects as well as Columns
 
 #### Object ModelOverrideName
 
-This column contains the actual table name to be used as after the solution is modelled.
+This column contains the actual table name to be used as after the solution is modeled.
 
 ![Change Model Override Name](images/bimlflex-app-accelerator-actions-modeloverridename.png "Change Model Override Name")
 
@@ -279,7 +279,7 @@ The image above shows the previous Unit Of Work example with "SalesOrderHeader" 
 
 #### ModelOverrideShortName
 
-This column contains the short name to be used for Links and Link Satellites after the solution is modelled.
+This column contains the short name to be used for Links and Link Satellites after the solution is modeled.
 
 A Link between "GeneralLedger" and "ChartOfAccounts" will use the default name "LNK_GeneralLedger_ChartOfAccounts".
 
@@ -319,7 +319,7 @@ Two relationships will be created with the ModelReference forming part of the na
 
 ## Final Review and Preview Publish
 
-Once the metadata has been modelled and the preview represents the target model a user will then publish the metadata to the metadata repository.
+Once the metadata has been modeled and the preview represents the target model a user will then publish the metadata to the metadata repository.
 
 ### Publishing the Final Preview
 
