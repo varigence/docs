@@ -53,16 +53,15 @@ Additional information on New Features here: [BimlFlex 2021 R1 New Features](xre
 * Added Azure PostgreSQL 'Source'.
 * Added deployable Azure PostgreSQL Linked Service.
 * Added SSIS component 'Connection' using Intellisoft PostgreSQL OLEDB.
-* Added 'Generate SQL' for querying views, querying indexes, and querying column metadata.
+* Added 'Generate SQL' command for querying views, querying indexes, and querying column metadata.
 
 ### UI Improvements
 
-* Major overhaul of the BimlFlex application, resulting in an increase of responsiveness across all areas as well as improvements in consistency and ease-of-use for all visual editors.
-This covers the Data Vault Accelerator, the Schema Diagram and the new Business Modeling feature. Parity of visual editor behaviors and layout for: Schema Diagram, Data Vault Accelerator (DVA), as well as the new Business Modeling feature.
+* Major overhaul of the BimlFlex application, resulting in an increase of responsiveness across all areas as well as improvements in consistency, parity, and ease-of-use for visual editors: Data Vault Accelerator, Schema Diagram, and the new Business Modeling feature.
 * Updated the tree view on all metadata editor screens, showing additional detail and more meaningful icons.
 * Introduced an improved 'add' feature that streamlines the creation of new metadata such as Projects, Batches and Connections.
 It is no longer necessary to navigate away if dependent objects are required, these can now be created directly as well.
-* Archiving objects now correctly applies this to all objects for which the respective object is the parent.
+* Archiving objects now correctly applies to all objects for which the respective object is the parent.
 * Tooltips have been improved across the application, in line with the online reference documentation, and are visible when hovering over elements of the user interface.
 
 ### Data Vault Accelerator
@@ -70,7 +69,7 @@ It is no longer necessary to navigate away if dependent objects are required, th
 * Increased performance for the display and visualization of large metadata sets.
 * Improved initial auto layout generation and entity manipulation.
 * Added new drag and drop settings, actions, and zoom functionality.
-* Added context-aware actions, such as split/unsplit Satellite, exclude from Data Vault, and toggling Record Source.
+* Added context-aware actions, such as split/'revert split' Satellite, exclude from Data Vault, and toggle Record Source.
 * Added 'BusinessEntities' and 'BusinessAttributes' data fields to integrate Business Modeling with the Accelerator.
 * Improved 'Merge Links,' 'Revert Split Satellite,' 'Split Link,' and 'Exclude from Data Vault' context settings.
 * Added Data Vault Accelerator Column Forms.
@@ -86,7 +85,7 @@ It is no longer necessary to navigate away if dependent objects are required, th
 
 ### Various New Support
 
-* Added a Pushdown Processing feature at Project level to direct the generation, so that code is produced that can execute against the underlying connection. This is as opposed to being loaded and then processed. This was previously managed on the Connection level.
+* Added a Pushdown Processing feature at Project level to direct the generation, so that the code produced can be executed against the underlying connection. This is instead of being loaded and then processed. This was previously managed on the Connection level.
 * Added 'Pause' in SSIS Deploy ps1 files to allow the SSIS catalog to ingest the projects without errors.
 * Added validator support for ETL configurations.
 * Modified ELT code to spawn Stored Procedures for ELT Staging process.
@@ -104,12 +103,12 @@ It is no longer necessary to navigate away if dependent objects are required, th
 
 * Added type 2 time-based fact to dimension lookups for ELT code.
 * Added type 2 lookup for sample metadata sets.
-* Removed the `Fixed` ChangeType setting
+* Removed the `Fixed` ChangeType setting.
 * Updated names for column change types. `Type 1` is now called `Update` and `Type 2` is now called `Track History`.
 
 ### .net Core
 
-* Added support for SSDT .net Core builds. 
+* Added support for SSDT .net Core builds.
 * Added support for generating project files that can be directly opened in Azure Data Studio using the database project extension.
 * Added additional script options for build ps1 files for SSDT .net Core builds.
 
@@ -132,7 +131,7 @@ It is no longer necessary to navigate away if dependent objects are required, th
 ### Azure Data Factory (ADF)
 
 * Fixed a bug where the 'RecordSourceFull' configuration was not working applied when using ADF Change Tracking.  
-    The @@this expression is now correctly interpreted as the table name in the SELECT statement.
+    * The @@this expression is now correctly interpreted as the table name in the SELECT statement.
 
 ### Azure Synapse
 
@@ -159,15 +158,15 @@ It is no longer necessary to navigate away if dependent objects are required, th
 * Fixed a bug when FlexRowChangeType exists in DWH source.
 * Fixed a bug where Data Mart RowChangeType in source.
 * Fixed a bug where a Staged Query object with a RowChangeType configuration set to 'derived' uses @@this in Source select statement instead of the table name.
-* Fixed a bug where Reload Project was failing when Source-to-Target-Mappings use a different name
+* Fixed a bug where Reload Project was failing when Source-to-Target-Mappings use a different name.
 * Fixed a bug where new flat file objects were not selected in Objects Editor and immediately disappeared.
 * Fixed a bug where deleting a parent object (Project) fails with database error.
 * Fixed a bug where multiple metadata imports with different naming conventions duplicated the IK columns. Columns are now replaced with new naming convention.
-* Fixed a bug where creating a new Batch did not enable [Use Orchestration] by default
+* Fixed a bug where creating a new Batch did not enable [Use Orchestration] by default.
 * Fixed a bug where 'Add Connection' and 'Add Column' were not working properly in the App in certain circumstances.
 * Fixed a bug where some drop-down menus overflowed text contents outside the boundary of the drop down menu.
-* Fixed a bug with incorrect passthrough of Boolean control changes to editor forms underneath the modal when adding an entity
-* Fixed a bug where blob storage staging for on-premises adds tables to model, but did not create staging/psa tables
+* Fixed a bug with incorrect passthrough of Boolean control changes to editor forms underneath the modal when adding an entity.
+* Fixed a bug where blob storage staging for on-premises adds tables to model, but did not create staging/psa tables.
 * Fixed a bug where setting the Auto Adjust Buffer Size did not work when using Visual Studio 2019.
 * Fixed a bug related to the 'RowIsDeleted' configuration. This used the value 1 as default. This has been updated to use 0 as default value.
 * Fixed a bug in the tree view that caused 'Add Object' to apply the 'Object Type' from the previously selected object.
