@@ -37,14 +37,14 @@ More information on importing Salesforce metadata here: [Connecting to a Salesfo
 
 ### Added Support for Azure PostgreSQL Connector
 
-BimlFlex now supports on-premises and Azure PostgreSQL as a Source connection.
-Azure PostgreSQL Linked Service is now deployable, as well as SSIS component `Connection` using Intellisoft PostgreSQL OLEDB.
+BimlFlex now supports on-premises and Azure PostgreSQL as a source connection.
+Azure PostgreSQL Linked Service is now deployable, as well as SSIS component connection using Intellisoft PostgreSQL OLEDB.
 Querying views, indexes, and column metadata can be performed through 'Generate SQL' command.
 
 ### User Interface Improvements for all BimlFlex Visual Editors
 
 The visual editors within BimlFlex have all been overhauled.
-This has resulted in increase of responsiveness across all areas, as well as improvements in consistency and ease-of-use for all visual editors, including the Data Vault Accelerator, the Schema Diagram, and the new Business Modeling feature.
+This has resulted in an increase of responsiveness across all areas, as well as improvements in consistency and ease-of-use for the Data Vault Accelerator, Schema Diagram, and the new Business Modeling feature.
 
 ### Preview of Azure Data Factory Mapping Data Flows
 
