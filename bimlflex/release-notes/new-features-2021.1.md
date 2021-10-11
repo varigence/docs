@@ -1,8 +1,8 @@
 ---
 uid: bimlflex-2021-r1-new-features
-name: New Features in BimlFlex 2021 R1
+name: New Features in BimlFlex 2021
 ---
-# New Features in BimlFlex 2021 R1
+# New Features in BimlFlex 2021
 
 ## Feature Highlights
 
