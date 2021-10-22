@@ -181,3 +181,103 @@ It is no longer necessary to navigate away if dependent objects are required, th
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)
     This installer includes the required runtime components for servers that will execute SSIS packages
+
+
+---------
+
+NEW RELEASE NOTE ADDITIONS (10/22/2021)
+
+## Various New Support
+
+### BimlFlex Application Added Support
+
+Added improved input validation for all metadata editors.
+Added keyboard shortcut [Ctrl]+[S] to Save form for all metadata editors.
+
+### Azure Data Factory
+
+Added 'PatternValidation' to ADF 'SecretName' fields.
+Added pre- and post-processing Extension Points for Data Mart for ADF and Synapse.
+Added pre-processing Extension Points for ADF/Synapse Data Marts.
+
+### ADF Mapping Data Flows (Preview):
+
+Added support for Link Satellites using Data Flow Mappings.
+
+## 2021 Bug Fixes
+
+### BimlFlex Application Bug Fixes
+
+Fixed a bug where "Search" was not including 'SchemaQualifiedName'.
+Fixed a bug where "Duplicate Object" renamed existing 'Object.
+Fixed a bug where tri-state checkboxes only allowed two-state selection.
+Ensured that 'Object' and 'Column' entityTypes use 'Connection' as a 'rootEntityType'.
+Ensured that authentication is hidden when KeyVaultString is configured for 'connectionstring'.
+Disabled individual SQL statement overrides when using the 'override SQL' command.
+Ensured that disabling 'Cloud' toggle disables LinkedSerivce UI before 'Save' is clicked.
+Ensured that enabling 'Cloud' toggle enables LinkedService UI before 'Save' is clicked.
+Fixed a bug where Dashboard 'Recent Connections' did not order items by history.
+Fixed a bug on the Dashboard where when 'Apply Data Type Mappings' was selected, gave error "Invalid column name 'SsisDataflowExpression'."
+Fixed ordering of column precision and scale.
+Ensured that 'UseMyExclusions' saves in Connection Form on Save.
+Ensured 'UseMyConnectionStrings' persists connection string.
+Fixed a bug where toggling 'Cloud' toggled entity on base form but not in 'Add Connection' dialog.
+Fixed a bug where PSA code only compared Staging/PSA on Source Keys, not Business Keys.
+Ensured that Business Key column order was derived from Primary Key constraint and not column ordinal.
+
+### BimlCatalog
+
+Fixed a bug where BimlCatalog was required for all storage file Sources, even where unnecessary.
+Fixed a bug where adf.LogExecutionEnd did not respect UTC configuration.
+Fixed a bug where adf.LogExecutionStart for individual pipeline did not override default 1900-01-01 as 'effectivefromdate'.
+
+### Dynamics
+
+Fixed a bug where BimlStudio reported unfound errors when Dynamics Linked Service Authentication Method "AAD Service Principal" was selected.
+
+### Azure Data Factory
+
+Fixed a bug where LS-AccountKey for ADF Connection was incorrectly saved.
+Fixed a bug where 'DataFactoryName' was not being emitted to ARM templates.
+Fixed a bug where in ADF extract projects, if the LinkedService used is an Managed Instance, no load Stored Procedures were generated.
+
+### Data Vault Accelerator
+
+Fixed a bug causing errors when combining Accelerate Link Satellite Keys and Delete Detection settings.
+Fixed a bug where tree view showed excluded items.
+Fixed a bug where HUB or LINK Object context menus were blank.
+Fixed a bug where target pane did not show all available Sources.
+Fixed a bug where 'RecordSource' was missing for Satellites.
+Fixed a bug where Entity names were uneditable in Edit Pane. 
+Fixed a bug where users were unable to edit Source entity.
+Fixed a bug where Column grid showed wrong headers.
+Fixed a bug where Column context menu actions "Navigate to Table" and "Edit Table" were missing.
+Fixed a bug where previewing and/or publishing model duplicated Columns.
+Fixed a bug where Link columns added to 'Source' were not set as 'derived'.
+Fixed a bug where "Remove Record Source" option was shown without actual Record Source.
+Renamed 'Exclude from DV' setting to 'Remove from Model'.
+Fixed a bug where Reference tables were created without Primary Key.
+Fixed a bug where Accelerator 'Publish' did not persist results.
+Fixed a bug where 'Save' in "Add Connection" field did not persist to the database.
+Fixed a bug where saving Connections cleared out Azure Key Vault details.
+Ensured that 'Add Column' persists to the database.
+Fixed a bug where users were unable to add column to new 'Object'.
+Fixed a bug where changing 'Object Type' did not save/refresh properly.
+Ensured Object caches are reset after 'Save'.
+
+### Postgre SQL
+
+Ensured that SSL property of 'connectionstring' was not forced.
+
+### ADF Mapping Data Flows (Preview)
+
+Fixed a bug where Output was empty for Sinks where none were configured in the dataflow. 
+Fixed an issue with Link Key evaluation for Mapping Data Flows.
+
+### My SQL
+
+Fixed a bug with metadata import feature (Story 8289 - for additional detail).
+
+### OLEDB SQL Server
+
+Fixed a bug where cloud OLEDB SQL Server Linked Service properties were inverted.
