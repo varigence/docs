@@ -126,6 +126,15 @@ It is no longer necessary to navigate away if dependent objects are required, th
 * Added BimlStudio support for Blob Storage Flat File Connections that are used as Source System.
 * Validator checks to ensure landing 'Connection' has a Blob Storage Landing stage when using Azure Copy Command staging and logging.
 
+## Preview Features
+
+### Mapping Data Flows
+
+* Initial support for generating Mapping Data Flow artifacts has been added to the BimlFlex 2021 release as a preview feature. This allows users to set the 'Azure Data Flow' Integration Stage at Project level, so that the generated output is created as Mapping Data Flows. These artifacts are deployed the same way as other ADF artefacts, and provide a way to generate native Mapping Data Flow data logistics processes using BimlFlex - complementing the already available approaches to generate ADF content.
+* The Biml language has been extended and thoroughly tested to cover all settings and properties available in Azure Data Factory / Mapping Data Flows.
+* The available patterns use Inline processing, allowing sources and targets to be used without requiring a dedicated Dataset object in ADF. These patterns cover Staging, Persistent Staging, Hubs, Links, Satellites and basic Dimensional Models - though not yet Bridge and PIT tables.
+* The available patterns are able to deploy a 'Delta Vault', a Data Vault that is running on the Delta Lake layer running on Azure Data Lake Gen2. This supports a 'Lake House' style architecture, which offers opportunities to work with various kinds of data in a single environment. For example, combining semi- and unstructured data or batch- and streaming processing. This means various use-cases can be supported by a single infrastructure.
+
 ## Bug Fixes
 
 ### SSIS
