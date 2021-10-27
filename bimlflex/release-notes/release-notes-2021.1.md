@@ -211,22 +211,22 @@ It is no longer necessary to navigate away if dependent objects are required, th
 ### Data Vault Accelerator
 
 - Fixed a bug causing errors when combining Accelerate Link Satellite Keys and Delete Detection settings.
-- Fixed a bug where tree view showed excluded items.
+- Fixed a bug where the tree view showed excluded items.
 - Fixed a bug where Hub or Link Object context menus were blank.
 - Fixed a bug where target pane did not show all available sources.
-- Fixed a bug where 'RecordSource' was missing for Satellites.
+- Fixed a bug where the 'RecordSource' was missing for Satellites.
 - Fixed a bug where Entity names were uneditable in the edit Pane. 
 - Fixed a bug where users were unable to edit Source entity.
-- Fixed a bug where Column grid showed wrong headers.
-- Fixed a bug where Column context menu actions 'Navigate to Table' and 'Edit Table' were missing.
+- Fixed a bug where the Column grid showed wrong headers.
+- Fixed a bug where the Column context menu actions 'Navigate to Table' and 'Edit Table' were missing.
 - Fixed a bug where previewing and/or publishing model duplicated Columns.
-- Fixed a bug where Link columns added to 'Source' were not set as 'derived'.
-- Fixed a bug where 'Remove Record Source' option was shown without actual Record Source.
-- Renamed 'Exclude from DV' setting to 'Remove from Model'.
+- Fixed a bug where Link columns added to Object were not set as 'derived'.
+- Fixed a bug where the 'Remove Record Source' option was shown without actual Record Source.
+- The context menu feature 'Exclude from DV' has been renamed to 'Remove from Model'.
 - Fixed a bug where Reference tables were created without Primary Key.
 - Fixed a bug where the Accelerator 'Publish' did not persist results in some cases.
-- Fixed a bug where 'Save' in the 'Add Connection' field did not persist to the database.
-- Ensured that 'Add Column' persists to the database.
+- Fixed a bug where the 'Save' in the 'Add Connection' field did not persist to the database.
+- Ensured that the 'Add Column' persists to the database.
 - Fixed a bug where users were unable to add column to a new Object.
 - Fixed a bug where changing 'Object Type' did not save/refresh properly.
 - Ensured Object caches are reset after 'Save', preventing information to be presented when working with other Objects.
