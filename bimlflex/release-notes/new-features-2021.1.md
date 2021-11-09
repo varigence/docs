@@ -21,7 +21,7 @@ Users can design a holistic model that describes the business' data, while avoid
 Business Modeling within BimlFlex seeks to preserve the essence of this process: collaboration, discussion, and interaction, while simultaneously digitizing the team experience.
 
 Business Models can be created using predefined Ensemble Logical Modeling (ELM) or Party & Party Role (PPR) approaches, or by defining a custom set of classifications and labels.
-For example, by defining types such as Subjects, People, Events or Places.
+For example, customization is supported by defining types such as Subjects, People, Events or Places.
 These types of Business Model objects are represented as 'cards' on the model design board.
 
 Business Models can be mapped to the data sources in BimlFlex to forward-engineer the data solution from there.
@@ -30,16 +30,16 @@ More information on Business Modeling here: [Business Modeling in BimlFlex](xref
 
 ### Added Support for Salesforce Connector
 
-BimlFlex now supports Salesforce (SFDC) as a source connection or as a dataset.
+BimlFlex now supports Salesforce (SFDC) as a 'Source' connection or dataset.
 Additional metadata samples have also been added for either Azure Data Factory or SSIS solutions.
 
 More information on importing Salesforce metadata here: [Connecting to a Salesforce REST API](xref:source-salesforce-rest-api)
 
 ### Added Support for Azure PostgreSQL Connector
 
-BimlFlex now supports on-premises and Azure PostgreSQL as a source connection.
+BimlFlex now supports on-premises and Azure PostgreSQL as a 'Source' connection.
 Azure PostgreSQL Linked Service is now deployable, as well as SSIS component connection using Intellisoft PostgreSQL OLEDB.
-Querying views, indexes, and column metadata can be performed through 'Generate SQL' command.
+Querying views, indexes, and column metadata can be performed through the 'Generate SQL' command.
 
 ### User Interface Improvements for all BimlFlex Visual Editors
 
