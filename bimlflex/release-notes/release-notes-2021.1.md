@@ -229,7 +229,7 @@ Ensured that Business Key column order was derived from Primary Key constraint a
 
 Fixed a bug where BimlCatalog was required for all storage file Sources, even where unnecessary.
 Fixed a bug where adf.LogExecutionEnd did not respect UTC configuration.
-Fixed a bug where adf.LogExecutionStart for individual pipeline did not override default 1900-01-01 as 'effectivefromdate'.
+Fixed a bug where adf.LogExecutionStart for individual pipeline did not override default 1900-01-01 as 'EffectiveFromDate'.
 
 ### Dynamics
 
@@ -237,7 +237,7 @@ Fixed a bug where BimlStudio reported unfound errors when Dynamics Linked Servic
 
 ### Azure Data Factory
 
-Fixed a bug where LS-AccountKey for ADF Connection was incorrectly saved.
+Fixed a bug where the Linked Service AccountKey for ADF Connection was incorrectly saved.
 Fixed a bug where 'DataFactoryName' was not being emitted to ARM templates.
 Fixed a bug where in ADF extract projects, if the LinkedService used is an Managed Instance, no load Stored Procedures were generated.
 
@@ -267,16 +267,16 @@ Ensured Object caches are reset after 'Save'.
 
 ### Postgre SQL
 
-Ensured that SSL property of 'connectionstring' was not forced.
+Updated the BimlFlex App metadata import support to be more robust, including ensuring that SSL property of 'connectionstring' was not required.
 
 ### ADF Mapping Data Flows (Preview)
 
-Fixed a bug where Output was empty for Sinks where none were configured in the dataflow. 
+Fixed a bug where Output was empty for Sinks where none were configured in the Data Flow. 
 Fixed an issue with Link Key evaluation for Mapping Data Flows.
 
 ### My SQL
 
-Fixed a bug with metadata import feature (Story 8289 - for additional detail).
+Updated the BimlFlex App metadata import support to be more robust
 
 ### OLEDB SQL Server
 
