@@ -1,7 +1,7 @@
 ---
 uid: sensitive-info-management
 title: Sensitive Information Management in Azure Data Factory
-summary: Management of sensitive information within Azure Data Factory key vaults and extension points 
+summary: Management of sensitive information within Azure Data Factory Key Vaults and Extension Points 
 varigenceProduct: BimlFlex
 varigenceArticleType: Walkthrough
 ---
@@ -17,23 +17,11 @@ If the user does not supply an AKV name in the project settings, BimlFlex will g
 
 `AKV-{Random Hash}`
 
-The first time using BimlFlex, it is recommended that the user allows us to auto-generate their AKV. This will scaffold out the secrets in a way that works with their project. An auto-generated AKV will generate secrets similar to the image below.
-
-<img
-    src="images/generatedakv.png"
-    style="border: 1px solid #CCC;"
-    title="Apply Data Type Mappings Dialog Box"
-/>
-
->[!IMPORTANT]
-> After these secrets are generated, values must still be populated manually.
+This name is regenerated on each build, so it is highly recommended to use a named Key Vault to allow the secrets to be maintained in a single persistent Key Vault.
 
 ## AzureKeyVault Property
 
 The name of the AKV that will be used by your project is determined by the `AzureKeyVault` property value in your BimlFlex settings. If you do not populate the `AzureKeyVault` setting in your project, a new AKV will be generated each time the project runs. This is typically undesired. Once you have auto-generated the AKV for the first time, the user should use this AKV name for the `AzureKeyVault` setting, so that this AKV is used going forward.
-
->[!NOTE]
-> It is also recommended that the user renames the AKV, as the current naming pattern does not visually represent anything meaningful. This can lead to mistakes when using multiple AKVs across projects.
 
 ## Extension Points
 
@@ -42,6 +30,6 @@ Users can also utilize BimlFlex [Extension Points](xref:bimlflex-concepts-extens
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfAzureKeyVault" #>
 
-<AzureKeyVault Name="BimlFlexKeyVault1" Url="https://<azureKeyVaultName>.vault.azure.net"></AzureKeyVault>
-<AzureKeyVault Name="BimlFlexKeyVault2" Url="https://<azureKeyVaultName>.vault.azure.net"></AzureKeyVault>
+<AzureKeyVault Name="BimlFlexKeyVault1" Url="https://<azureKeyVaultName1>.vault.azure.net"></AzureKeyVault>
+<AzureKeyVault Name="BimlFlexKeyVault2" Url="https://<azureKeyVaultName2>.vault.azure.net"></AzureKeyVault>
 ```
