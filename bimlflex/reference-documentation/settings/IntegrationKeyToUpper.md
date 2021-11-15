@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Integration Key To Upper
 
-Determines whether strings in the Integration Key will be upper-cased automatically.
+Determines if strings in the Integration Key will be upper-cased automatically.
 
 This is recommended and allows the standard SQL Server case insensitive collation to ingest business keys from multiple sources using different casings to be added to Hubs and treated as the same key without issues.
 

@@ -33,7 +33,7 @@ More information on Business Modeling here: [Business Modeling in BimlFlex](xref
 BimlFlex now supports Salesforce (SFDC) as a 'Source' connection or dataset.
 Additional metadata samples have also been added for either Azure Data Factory or SSIS solutions.
 
-More information on importing Salesforce metadata here: [Connecting to a Salesforce REST API](xref:source-salesforce-rest-api)
+More information on importing Salesforce metadata here: [Connecting to a Salesforce REST API](xref:bimlflex-source-salesforce-rest-api)
 
 ### Added Support for Azure PostgreSQL Connector
 

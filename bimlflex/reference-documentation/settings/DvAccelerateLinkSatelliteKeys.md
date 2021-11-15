@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Accelerate Link Satellite Keys
 
-Determines whether the BimlFlex Accelerator adds the Integration Key to Link Satellites.
+Determines if the BimlFlex Accelerator adds the Integration Key to Link Satellites.
 
 Notes:
 

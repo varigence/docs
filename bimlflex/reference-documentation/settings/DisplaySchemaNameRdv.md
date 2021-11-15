@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Display Schema Name
 
-Determines whether the schema name is displayed in the Raw Data Vault.
+Determines if the schema name is displayed in the Raw Data Vault.
 
 Notes:
 

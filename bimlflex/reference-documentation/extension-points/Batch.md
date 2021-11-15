@@ -12,13 +12,13 @@ The Batch category has the following available Extension Points defined.
   
 ## Parameter Bindings
 
-Configure Parameter Bindings for an Execute Package Task. This only applies to SSIS deployments. The Extension Point configures parameters from the Batch package that can be sent to the individual process packages through the EPT task in the batch package.
+Configure Parameter Bindings for an Execute Package Task. This only applies to SSIS deployments. The Extension Point configures parameters from the Batch package that can be sent to the individual process packages through the EPT task in the Batch package.
 
 ### Parameters
 
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
-batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the batch to which the parameter binding will be added. |
+batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the Batch Package to which the Parameter binding will be added. |
 
 ### Template
 
@@ -42,7 +42,7 @@ Configure additional Variables for the Batch Package, or override default BimlFl
 
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
-batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the batch to which the variables will be added |
+batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the SSIS Batch Package to which the variables will be added. |
 
 ### Template
 
@@ -57,13 +57,13 @@ batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related t
 
 ## Batch Package Configurations
 
-Add PackageConfigurations if you have unselected Use Project Deployment. This only applies to SSIS deployments.
+Add PackageConfigurations for when you have unselected Use Project Deployment. This only applies to SSIS deployments.
 
 ### Parameters
 
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
-batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the batch to which the configurations will be added. |
+batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the SSIS Batch Package to which the configurations will be added. |
 
 
 ### Outputs
@@ -96,7 +96,7 @@ Configure additional Connection references to the Batch package. This only appli
 
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
-batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the batch to which the connection will be added. |
+batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the SSIS Batch Package to which the connection will be added. |
 
 ### Template
 
@@ -112,13 +112,13 @@ batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related t
 
 ## Batch Pre Process
 
-Configure logic that will be injected before the main Batch process
+Configure logic that will be injected before the main Batch process. This only applies to SSIS deployments.
 
 ### Parameters
 
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
-batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the batch to which the process will be added |
+batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the SSIS Batch Package to which the process will be added. |
 
 ### Template
 
@@ -153,7 +153,7 @@ Configure logic that will be injected after the main Batch process. This only ap
 
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
-batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the Batch to which the batch process will be added. |
+batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the Batch to which the SSIS Batch Package process will be added. |
 
 ### Template
 

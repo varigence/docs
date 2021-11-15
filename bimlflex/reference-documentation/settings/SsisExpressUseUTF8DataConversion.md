@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Use UTF8 Data Conversion
 
-Determines whether SSIS Express-based extract packages apply UTF8 data conversion.
+Determines if SSIS Express-based extract packages apply UTF8 data conversion.
 
 Notes:
 

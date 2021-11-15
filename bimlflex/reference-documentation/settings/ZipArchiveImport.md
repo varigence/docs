@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Zip Archive Import
 
-Determines whether imported files are compressed when they are archived.
+Determines if imported files are compressed when they are archived.
 
 Notes:
 

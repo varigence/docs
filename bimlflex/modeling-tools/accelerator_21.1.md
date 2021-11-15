@@ -1,5 +1,5 @@
 ---
-uid: data-vault-accelerator
+uid: data-vault-accelerator-R21
 title: Data Vault Accelerator
 summary: Documentation regarding the BimlFlex Data Vault Accelerator, including videos, starting point, user interface, metadata requirements, and entity options
 varigenceProduct: BimlFlex

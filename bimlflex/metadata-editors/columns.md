@@ -63,12 +63,7 @@ The Search field will return results in real-time, only presenting Columns conta
 
 ## Columns Editor Fields
 
-<!--
-<img
-    src="images/bimlflex-app-editor-columns-fields.png"
-    title="Columns Editor Fields"
-/>
--->
+
 
 ![BimlFlex Columns Editor Fields](images/bfx-columns-details-tab.png "BimlFlex Columns Editor Fields")
 
@@ -88,7 +83,7 @@ The Search field will return results in real-time, only presenting Columns conta
 | Integration Key | Defines if the **Column** is the Integration Key for the **Object**. Note that the framework allows only one integration key per object. If the object has multiple columns that makes up the integration key define a derived concatenated column. An Integration Key is required for each **Object**. There can only be one Integration Key for the **Object**. |
 | Source Key | Defines if the **Column** is the Source Primary Key for the **Object**. This is generally defined if the object has multiple columns as the integration key and a derived concatenated integration key has been defined. |
 | Identity | Defines if the **Column** is the Identity Column for the **Object**. |
-| Nullable | Defines if the **Column** is nullable. |
+| Nullable | Defines if the **Column** is nullable. In other words, that it is allowed to contain NULL values. |
 | Not Persistent | Defines an Override to the Persistent Staging Connection defined as part of the **Project** entity. A good example of usage would be where derived columns should not be persisted. Note that setting it to true will exclude the column from being persisted. |
 | Reference Table | The source **Object** for this **Column**. |
 | Reference Column | The **Column** on the source object used for this **Column**. The **Column** cannot reference itself. |

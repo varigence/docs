@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Accelerate Link Keys
 
-Determines whether the BimlFlex Accelerator adds source key columns to the Link in addition to the Integration Key.
+Determines if the BimlFlex Accelerator adds source key columns to the Link in addition to the Integration Key.
 
 Notes:
 

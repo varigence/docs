@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Include External Tables
 
-Determines whether External Tables are included in the generated SSDT Project.
+Determines if External Tables are included in the generated SSDT Project.
 
 Notes:
 

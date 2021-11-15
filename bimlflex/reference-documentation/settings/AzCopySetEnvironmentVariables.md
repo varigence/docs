@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Set Environment Variables
 
-Determines whether the environment variables controlling AzCopy v.10 are set before each object is loaded. This is only valid for AzCopy v.10. Set these control variables to the desired values outside of BimlFlex when not setting this in the load packages.
+Determines if the environment variables controlling AzCopy v.10 are set before each object is loaded. This is only valid for AzCopy v.10. Set these control variables to the desired values outside of BimlFlex when not setting this in the load packages.
 
 Notes:
 

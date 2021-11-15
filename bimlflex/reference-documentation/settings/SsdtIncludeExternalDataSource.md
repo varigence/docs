@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Include External Data Source
 
-Determines whether the External Data Source statement is included in the SSDT Project. This relies on the ["SsdtIncludeExternalTables"](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeCredential) setting being enabled.
+Determines if the External Data Source statement is included in the SSDT Project. This relies on the ["SsdtIncludeExternalTables"](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeCredential) setting being enabled.
 
 Notes:
 

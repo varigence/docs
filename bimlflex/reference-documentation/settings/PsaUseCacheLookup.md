@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Use Cache Lookup
 
-Determines whether the PSA lookup caches the data to disk when using SSIS. Use this if it is not possible to use the normal in-memory lookup behavior due to memory constraints.
+Determines if the PSA lookup caches the data to disk when using SSIS. Use this if it is not possible to use the normal in-memory lookup behavior due to memory constraints.
 
 Notes:
 

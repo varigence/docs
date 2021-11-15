@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Include External File Format
 
-Determines whether the External File Format statement is included in the generated SSDT Project. This relies on the ["SsdtIncludeExternalTables"](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalTables) setting being enabled.
+Determines if the External File Format statement is included in the generated SSDT Project. This relies on the ["SsdtIncludeExternalTables"](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalTables) setting being enabled.
 
 Notes:
 

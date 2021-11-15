@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Validate External Metadata
 
-Determines whether generated SSIS packages validate external metadata.
+Determines if generated SSIS packages validate external metadata.
 
 Notes:
 

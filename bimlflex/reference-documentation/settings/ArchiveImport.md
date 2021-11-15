@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Archive Import
 
-Determines whether imported files are archived after processing.
+Determines if imported files are archived after processing.
 
 Notes:
 

@@ -1,16 +1,16 @@
 ---
-uid: bimlflex-app-reference-documentation-Staging-Sql
-title: BimlFlex App Definition for Staging Sql
-summary: Documentation of functionality within BimlFlex for the Staging Sql Extension Point category
+uid: bimlflex-app-reference-documentation-Staging-SQL
+title: BimlFlex App Definition for Staging SQL
+summary: Documentation of functionality within BimlFlex for the Staging SQL Extension Point category
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Staging Sql Extension Points
+# Staging SQL Extension Points
 
-The Staging Sql category has the following available Extension Points defined.
+The Staging SQL category has the following available Extension Points defined.
   
-## Staging Temporary Table Truncate Sql
+## Staging Temporary Table Truncate SQL
 
 Specify a SQL statement that will override the TRUNCATE used in the Source Temporary Table Query for a given target Object.
 
@@ -40,7 +40,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Staging Temporary Table Pre Source Sql
+## Staging Temporary Table Pre Source SQL
 
 Configure SQL to be injected before the Source Temporary Table Query.
 
@@ -70,7 +70,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Staging Temporary Table Source Join Sql
+## Staging Temporary Table Source Join SQL
 
 Configure SQL to be injected as a Join clause into the first Source Temporary Table Source Query.
 
@@ -100,7 +100,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Staging Temporary Table Target Join Sql
+## Staging Temporary Table Target Join SQL
 
 Configure SQL to be injected as a Join clause into the first Source Temporary Table Target Query.
 
@@ -130,7 +130,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Staging Temporary Table Post Source Sql
+## Staging Temporary Table Post Source SQL
 
 Configure SQL to be injected after the Source Temporary Table Query.
 
@@ -160,7 +160,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Staging Pre Source Sql
+## Staging Pre Source SQL
 
 Configure SQL to be injected before the Source Query
 
@@ -190,7 +190,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Staging Post Source Sql
+## Staging Post Source SQL
 
 Configure SQL to be injected after the Source Query
 
@@ -220,7 +220,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Staging Pre Stage Sql
+## Staging Pre Stage SQL
 
 Configure SQL to be injected before the Stage Query
 
@@ -250,7 +250,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Staging Post Stage Sql
+## Staging Post Stage SQL
 
 Configure SQL to be injected after the Stage Query
 
@@ -278,5 +278,152 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 
 <# 	CustomOutput.ObjectInherit = false; #>
 /* Add your SQL fragment here */
+```
+
+## Persistent Staging Pre SQL Call Process
+
+Add Before the Persistent Staging SQL Call
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| --------- | ----------- |
+sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added |
+precedenceConstraint | String | Contains the Precedence Constraint of the preceding task unless it is the first task |
+
+
+### Outputs
+
+| <div style="width:150px">Name</div> | Type | Description |
+| --------- | ----------- |
+ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next Data Flow task. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PsaPreSqlCallProcess" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="precedenceConstraint" type="String" #>
+
+
+<#	var sourceObject = new TableObject(sourceTable, sourceTable.Connection.RelatedItem.IntegrationStage, "SRC");
+	var targetObject = new TableObject(targetTable, targetTable.Connection.RelatedItem.IntegrationStage, "TGT");
+#>
+<#	CustomOutput.ObjectInherit = true; #>
+<ExecuteSQL Name="SQL - PsaPreSqlCallProcess" ConnectionName="<#=targetObject.Connection.Name#>">
+<#	if (!string.IsNullOrEmpty(precedenceConstraint)) {#>
+	<PrecedenceConstraints>
+		<Inputs>
+			<Input OutputPathName="<#=precedenceConstraint #>" />
+		</Inputs>
+	</PrecedenceConstraints>
+<#	} #>
+	<Parameters>
+		<Parameter Name="0" VariableName="User.ExecutionID" DataType="Int64" />
+	</Parameters>
+	<DirectInput>EXEC <#=targetObject.SystemType.StoredProcedureName(sourceObject, targetObject.Schema, targetObject.StartDelimiter, targetObject.EndDelimiter)#> ?</DirectInput>
+<# 	CustomOutput.OutputPathName = @"SQL - PsaPreSqlCallProcess.Output"; #>
+</ExecuteSQL>
+```
+
+## Persistent Staging Post SQL Call Process
+
+Add After the Persistent Staging SQL Call
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| --------- | ----------- |
+sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added |
+precedenceConstraint | String | Contains the Precedence Constraint of the preceding task unless it is the first task |
+
+
+### Outputs
+
+| <div style="width:150px">Name</div> | Type | Description |
+| --------- | ----------- |
+ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next Data Flow task. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PsaPostSqlCallProcess" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="precedenceConstraint" type="String" #>
+
+
+<#	var sourceObject = new TableObject(sourceTable, sourceTable.Connection.RelatedItem.IntegrationStage, "SRC");
+	var targetObject = new TableObject(targetTable, targetTable.Connection.RelatedItem.IntegrationStage, "TGT");
+#>
+<#	CustomOutput.ObjectInherit = true; #>
+<ExecuteSQL Name="SQL - PsaPreSqlCallProcess" ConnectionName="<#=targetObject.Connection.Name#>">
+<#	if (!string.IsNullOrEmpty(precedenceConstraint)) {#>
+	<PrecedenceConstraints>
+		<Inputs>
+			<Input OutputPathName="<#=precedenceConstraint #>" />
+		</Inputs>
+	</PrecedenceConstraints>
+<#	} #>
+	<Parameters>
+		<Parameter Name="0" VariableName="User.ExecutionID" DataType="Int64" />
+	</Parameters>
+	<DirectInput>EXEC <#=targetObject.SystemType.StoredProcedureName(sourceObject, targetObject.Schema, targetObject.StartDelimiter, targetObject.EndDelimiter)#> ?</DirectInput>
+<# 	CustomOutput.OutputPathName = @"SQL - PsaPreSqlCallProcess.Output"; #>
+</ExecuteSQL>
+```
+
+## Persistent Staging SQL Call Override
+
+Override the Persistent Staging SQL Call
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| --------- | ----------- |
+sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added |
+precedenceConstraint | String | Contains the Precedence Constraint of the preceding task unless it is the first task |
+
+
+### Outputs
+
+| <div style="width:150px">Name</div> | Type | Description |
+| --------- | ----------- |
+ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next Data Flow task. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PsaSqlCallOverride" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="precedenceConstraint" type="String" #>
+
+
+<#	var sourceObject = new TableObject(sourceTable, sourceTable.Connection.RelatedItem.IntegrationStage, "SRC");
+	var targetObject = new TableObject(targetTable, targetTable.Connection.RelatedItem.IntegrationStage, "TGT");
+#>
+<#	CustomOutput.ObjectInherit = true; #>
+<ExecuteSQL Name="SQL - PsaPreSqlCallProcess" ConnectionName="<#=targetObject.Connection.Name#>">
+<#	if (!string.IsNullOrEmpty(precedenceConstraint)) {#>
+	<PrecedenceConstraints>
+		<Inputs>
+			<Input OutputPathName="<#=precedenceConstraint #>" />
+		</Inputs>
+	</PrecedenceConstraints>
+<#	} #>
+	<Parameters>
+		<Parameter Name="0" VariableName="User.ExecutionID" DataType="Int64" />
+	</Parameters>
+	<DirectInput>EXEC <#=targetObject.SystemType.StoredProcedureName(sourceObject, targetObject.Schema, targetObject.StartDelimiter, targetObject.EndDelimiter)#> ?</DirectInput>
+<# 	CustomOutput.OutputPathName = @"SQL - PsaPreSqlCallProcess.Output"; #>
+</ExecuteSQL>
 ```
 

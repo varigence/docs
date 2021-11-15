@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Append Link Satellite Record Source
 
-Determines whether the BimlFlex Accelerator appends the Record Source to the Link Satellite name.
+Determines if the BimlFlex Accelerator appends the Record Source to the Link Satellite name.
 
 Notes:
 

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Include Credential
 
-Determines whether the Credential statement is included in the SSDT Project. This relies on the ["SsdtIncludeExternalTables"](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalTables) setting being enabled.
+Determines if the Credential statement is included in the SSDT Project. This relies on the ["SsdtIncludeExternalTables"](xref:bimlflex-app-reference-documentation-setting-SsdtIncludeExternalTables) setting being enabled.
 
 Notes:
 

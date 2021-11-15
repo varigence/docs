@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Infer Dimension Members
 
-Determines whether the Data Mart process infers Dimension Members.
+Determines if the Data Mart process infers Dimension Members.
 
 Notes:
 

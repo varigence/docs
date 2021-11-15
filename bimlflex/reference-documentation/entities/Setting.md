@@ -16,27 +16,27 @@ BimlFlex offer many [`Settings`](xref:configuring-project-settings) that provide
   
 | Property | Description |
 | --------- | ----------- |
-|`SettingKey` | The name of the Setting.|
-|`SettingValue` | |
-|`SettingDataType` | |
-|`SettingDefault` | |
-|`SettingDisplayGrouping` | |
-|`SettingDisplayRow` | |
-|`SettingDisplayOrder` | |
-|`SettingDisplaySection` | |
-|`SettingDisplayLabel` | |
-|`SettingControlWidth` | |
-|`PermittedValueSet` | |
-|`IsRequired` | |
-|`Description` | |
-|`ToolTipDescription` | |
-|`IsToolTipEnabled` | |
+|SettingKey | The name of the Setting.|
+|SettingValue | |
+|SettingDataType | |
+|SettingDefault | |
+|SettingDisplayGrouping | |
+|SettingDisplayRow | |
+|SettingDisplayOrder | |
+|SettingDisplaySection | |
+|SettingDisplayLabel | |
+|SettingControlWidth | |
+|PermittedValueSet | |
+|IsRequired | |
+|Description | |
+|ToolTipDescription | |
+|IsToolTipEnabled | |
 
 ## References
   
 | Property | Description |
 | --------- | ----------- |
-|`CustomerUID` | Reference to the Customer that this Setting belongs to.|
-|`VersionUID` | Reference to the Version that this Setting belongs to.|
-|`SettingTypeId` | |
+|CustomerUID | Reference to the Customer that this Setting belongs to.|
+|VersionUID | Reference to the Version that this Setting belongs to.|
+|SettingTypeId | |
 
