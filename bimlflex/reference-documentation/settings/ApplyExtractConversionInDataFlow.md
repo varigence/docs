@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Apply Extract Conversion In Data Flow
 
-Determines whether SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.
+Determines if SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.
 
 Notes:
 

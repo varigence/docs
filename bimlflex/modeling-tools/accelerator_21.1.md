@@ -1,5 +1,5 @@
 ---
-uid: data-vault-accelerator
+uid: data-vault-accelerator-R21
 title: Data Vault Accelerator
 summary: Documentation regarding the BimlFlex Data Vault Accelerator, including videos, starting point, user interface, metadata requirements, and entity options
 varigenceProduct: BimlFlex
@@ -51,7 +51,7 @@ Once the target model is drafted, compare the accelerated metadata with the expe
 
 ## Prerequisites
 
-This guide assumes that the environment has been set up and configured, source metadata has been imported and that the source to staging process has been modelled and completed. There are several sample metadata sets where a target Data Vault model has been created, and a Sample 02 - MSSQL After Import where only source metadata has been imported, that is ready for Data Vault modeling and acceleration.
+This guide assumes that the environment has been set up and configured, source metadata has been imported and that the source to staging process has been modeled and completed. There are several sample metadata sets where a target Data Vault model has been created, and a Sample 02 - MSSQL After Import where only source metadata has been imported, that is ready for Data Vault modeling and acceleration.
 
 ## The BimlFlex Workflow
 

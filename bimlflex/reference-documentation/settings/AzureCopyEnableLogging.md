@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Enable Logging
 
-Determines whether the Copy Command uses logging.
+Enable to use logging in the Azure Data Factory Copy Command.
 
 Notes:
 

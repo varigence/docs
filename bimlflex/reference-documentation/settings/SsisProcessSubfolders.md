@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Process Subfolders
 
-Determines whether a flat file source loop loads files in subfolders, of the specified source folder.
+Determines if a flat file source loop loads files in subfolders, of the specified source folder.
 
 Notes:
 

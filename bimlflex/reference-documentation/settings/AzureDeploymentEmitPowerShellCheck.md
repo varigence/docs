@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Emit Powershell Environment Checks
 
-Determines whether the PowerShell deployment files include environment verification by calling Get-InstalledModule -Name Az.
+Determines if the PowerShell deployment files include environment verification by calling Get-InstalledModule -Name Az.
 
 Notes:
 

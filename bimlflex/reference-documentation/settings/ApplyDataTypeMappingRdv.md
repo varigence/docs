@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Apply Data Type Mapping RDV
 
-Determines whether the Data Type Mappings are applied to the Raw Data Vault. The Data Type Mappings function allow expansion of data types. This setting controls if these expanded data types are applied to the Data Vault.
+Determines if the Data Type Mappings are applied to the Raw Data Vault or not. The Data Type Mappings function allow expansion of data types. This setting controls if these expanded data types are applied to the Data Vault.
 
 Notes:
 

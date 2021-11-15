@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Remove Stage
 
-Determines whether the Snowflake stage is removed prior to loading the new stage file.
+Determines if the Snowflake stage is removed prior to loading the new stage file.
 
 Notes:
 

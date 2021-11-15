@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Include .NET Core Project Support
 
-Determines whether SSDT Project files and build script files are created with .NET Core support.
+Determines if SSDT Project files and build script files are created with .NET Core support.
 
 This allows opening the SSDT project in Azure Data Studio using the Microsoft SQL Server Database Projects extension.
 

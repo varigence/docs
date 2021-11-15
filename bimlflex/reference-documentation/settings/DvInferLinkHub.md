@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Infer Link Hub
 
-Determines whether the Data Vault process loads all involved Hubs when a Link table is loaded, independent of Hub loads from referenced tables. Enabling this setting will force BimlFlex to always load all corresponding Hub tables when a Link is loaded from a given source, even though this could be redundant because the Hub information may be provided by referenced tables.This applies to scenarios where the source system reliably manages referential integrity. Because it can be guaranteed the Hub data will be provided by another table, it can be considered to defer Hub processing to the separate table.
+Determines if the Data Vault process loads all involved Hubs when a Link table is loaded, independent of Hub loads from referenced tables. Enabling this setting will force BimlFlex to always load all corresponding Hub tables when a Link is loaded from a given source, even though this could be redundant because the Hub information may be provided by referenced tables.This applies to scenarios where the source system reliably manages referential integrity. Because it can be guaranteed the Hub data will be provided by another table, it can be considered to defer Hub processing to the separate table.
 
 Sample Scenario:
 

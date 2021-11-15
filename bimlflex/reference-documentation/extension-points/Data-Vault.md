@@ -251,7 +251,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 </OleDbDestination>
 ```
 
-## Data Vault Pre Process Sql
+## Data Vault Pre Process SQL
 
 Configure SQL to be injected at the start of the Data Vault stored procedure
 
@@ -281,7 +281,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Post Process Sql
+## Data Vault Post Process SQL
 
 Configure SQL to be injected at the end of the Data Vault stored procedure
 
@@ -311,7 +311,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Pre Source Sql
+## Data Vault Pre Source SQL
 
 Configure SQL to be injected before the staging query in the Data Vault stored procedure
 
@@ -341,7 +341,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Post Source Sql
+## Data Vault Post Source SQL
 
 Configure SQL to be injected after the staging query in the Data Vault stored procedure
 
@@ -371,7 +371,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Pre Target Sql
+## Data Vault Pre Target SQL
 
 Configure SQL to be injected before the target source query in the Data Vault stored procedure
 
@@ -401,7 +401,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Post Target Sql
+## Data Vault Post Target SQL
 
 Configure SQL to be injected after the target insert query in the Data Vault stored procedure
 
@@ -431,7 +431,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Pit Custom Sql
+## Data Vault Pit Custom SQL
 
 Configure custom SQL for the Data Vault PIT
 
@@ -490,7 +490,7 @@ RdvPitOverrideSql | String | XXXX |
 *#>
 ```
 
-## Data Vault Pit Pre Process Sql
+## Data Vault Pit Pre Process SQL
 
 Configure SQL to be injected before the Point In Time Query
 
@@ -520,7 +520,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Pit Post Process Sql
+## Data Vault Pit Post Process SQL
 
 Configure SQL to be injected after the Point In Time Query
 
@@ -550,7 +550,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Bridge Custom Sql
+## Data Vault Bridge Custom SQL
 
 Configure custom SQL for the Data Vault Bridge
 
@@ -601,7 +601,7 @@ RdvBridgeOverrideSql | String | XXXX |
 *#>
 ```
 
-## Data Vault Bridge Pre Process Sql
+## Data Vault Bridge Pre Process SQL
 
 Configure SQL to be injected before the Bridge Query
 
@@ -631,7 +631,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 /* Add your SQL fragment here */
 ```
 
-## Data Vault Bridge Post Process Sql
+## Data Vault Bridge Post Process SQL
 
 Configure SQL to be injected after the Bridge Query
 

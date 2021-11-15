@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Scale Up
 
-Determines whether the Snowflake processing can scale up the Snowflake Warehouse at the start of the Batch.
+Determines if the Snowflake processing should scale up the Snowflake Warehouse at the start of the Batch.
 
 Notes:
 

@@ -32,9 +32,9 @@ From the BimlFlex menu, click **Connections** and select "SFDC_SRC" from the nav
 
 Under the **Connection** tab, ensure the following settings are set as indicated:
 
-* *Integration Stage* is `Source System`  
-* *Connection Type* is `Rest API`  
-* *System Type* is `Salesforce`  
+* *Integration Stage* is `Source System`
+* *Connection Type* is `Rest API`
+* *System Type* is `Salesforce`
 * *Enable for Cloud* is `enabled`
 
 By default, when using Snapshot 42 or 43 these settings will already be set.
@@ -67,7 +67,8 @@ This distinction is why Consumer Key and Secret are required in addition to simp
 
 It is first required to log in to your [Salesforce Lightning Developer](https://login.salesforce.com) account.
 
-Once logged in and on the Salesforce Lightning Developer homepage, in the sidebar menu, navigate to *Platform Tools* > *App* > *App Manager.*  
+Once logged in and on the Salesforce Lightning Developer homepage, in the sidebar menu, navigate to *Platform Tools* > *App* > *App Manager.*
+
 Click *New Connected App* (top right).
 
 ![Salesforce New Connected App Creation](images/bfx-sfdc-new-connected-app.png "Salesforce New Connected App Creation")
@@ -95,7 +96,7 @@ In the **API (Enable OAuth Settings)** menu ensure that the following required f
 Click *Save* once completed.
 Note that Salesforce advises that changes can take up to ten (10) minutes to take effect.
 
-Users should then be redirected to the **Manage Connected Apps** menu for the newly created App. 
+Users should then be redirected to the **Manage Connected Apps** menu for the newly created App.
 The following information is populated in their respective fields:
 
 * *Consumer Key*
@@ -118,23 +119,25 @@ Click *Save*.
 
 ### Additional Salesforce Application Settings
 
-Navigate back to the **App Manager** menu within Salesforce.  
-Locate the newly created Connected App and click the `down chevron` in the far-right column.  
+Navigate back to the **App Manager** menu within Salesforce.
+
+Locate the newly created Connected App and click the `down chevron` in the far-right column.
+
 Click *Manage*.
 
 ![Salesforce Manage Connected App](images/bfx-sfdc-app-manager-manage-app.png "Salesforce Manage Connected App")
 
 Click *Edit Policies* (top middle).
-  
-Change the *IP Relaxation* setting from the default `Enforce IP Restrictions` to `Relax IP Restrictions.`, and click *Save*.
+
+Change the *IP Relaxation* setting from the default `Enforce IP Restrictions` to `Relax IP Restrictions`, and click *Save*.
 
 ![Salesforce Edit Policies](images/bfx-sfdc-edit-policies-ip-relaxation.png "Salesforce Edit Policies")
 
 ### Finalizing the Connection
 
-Once all of the **Connection** settings have been entered into BimlFlex, and modified within the Salesforce application, click *Save* in the **Connections** editor.  
+Once all of the **Connection** settings have been entered into BimlFlex, and modified within the Salesforce application, click *Save* in the **Connections** editor.
 
-Click *Import Metadata*. On the next screen, click *Connect to Database.*
+Click *Import Metadata*. On the next screen, click *Connect to Database*.
 
 ![BimlFlex Connect to Database](images/bfx-sfdc-connect-to-database.png "Connect to Database")
 
@@ -143,3 +146,41 @@ If all information was entered accurately, the application will successfully con
 ![BimlFlex Imported Salesforce Objects](images/bfx-sfdc-imported-objects-complete.png "BimlFlex Imported Salesforce Objects")
 
 Select the desired **Objects** to import and click *Import Metadata* one final time to complete the process.
+
+## Notes, Considerations and Limitations
+
+BimlFlex leverages the [Salesforce Bulk API 2.0](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_intro.htm) to import the metadata.
+
+As such, [Bulk API 2.0 Limits](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/bulk_common_limits.htm), and by extension [Bulk API limits](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/asynch_api_concepts_limits.htm) are also imposed on the import of the metadata.
+
+ Bulk API doesn’t support queries with any of the following:
+
+* GROUP BY, OFFSET, or TYPEOF clauses
+* Aggregate functions such as COUNT()
+* Date functions in GROUP BY clauses (date functions in WHERE clauses are supported)
+* Compound address fields or compound geolocations fields
+
+>[!Note]
+>
+> Additional links:
+>
+> - [Salesforce: Address Compound Fields](https://developer.salesforce.com/docs/atlas.en-us.188.0.api.meta/api/compound_fields_address.htm)
+> - [Salesforce: Geolocation Compound Field](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_geolocation.htm)
+> - [Salesforce: Compound Field Considerations and Limitations](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_limitations.htm)
+
+### Accessing Compound Fields with ADF
+
+When using [Azure Data Factory Saleforce Linked Service](https://docs.microsoft.com/en-us/azure/data-factory/connector-salesforce), compound fields will not be available inside any select statement and will result in an error.
+
+The compound field itself is not available via metadata but the same data can be generated using the underlining composite fields.
+
+### Accessing Compound Fields in SSIS (COZYROC Salesforce Connector)
+
+When using the COZYROC Saleforce Connector for SSSIS, the compound fields can be accessed if they are manually entered as part of the the SELECT statement against the API.
+
+This can be achieved by manually entering a metadata **Column** with the name of the compound field.
+Example `BillingAddress` in the `Account` entity.
+
+>[!Important]
+> ADF does not support any reference to a compound field.
+> If a compound field is introduced into your solution, it will no longer be available for direct migration to ADF unless you configure a derived/calculated column to replace the original compound field reference.

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Delete Import File
 
-Determines whether imported files are deleted after processing.
+Determines if imported files are deleted after processing.
 
 Notes:
 

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Append Record Source
 
-Determines whether the Record Source Code from the connection is appended to the staging object name. This code is normally used as the schema name
+Determines if the Record Source Code from the connection is appended to the staging object name. This code is normally used as the schema name
 
 Notes:
 

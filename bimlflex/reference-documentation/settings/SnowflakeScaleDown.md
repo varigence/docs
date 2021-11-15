@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Scale Down
 
-Determines whether the Snowflake processing can scale down the Snowflake Warehouse at end of the Batch.
+Determines if the Snowflake processing should scale down the Snowflake Warehouse at end of the Batch.
 
 Notes:
 

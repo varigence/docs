@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Import Views
 
-Determines whether database Views are imported when importing Metadata.
+Determines if database Views are imported when importing Metadata.
 
 Notes:
 

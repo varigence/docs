@@ -1,41 +1,32 @@
 ---
 uid: objects
-title: Objects
-summary: Documentation regarding the BimlFlex Objects editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
+title: Object Editor
+summary: Documentation regarding the BimlFlex Object editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Objects Editor
+# Object Editor
 
-BimlFlex **Objects** closely mirror a Relational Database table, though not every **Object** will translate as a table 1 for 1 due to  BimlFlex having the ability to process flat files, Excel documents and, via use of Extensions Points, APIs calls.  Instead of using multiple entity types to handle these scenarios BimlFlex uses managed metadata and the *Object Type* field to annotate what type of **Object** is being referenced.  
+BimlFlex *Objects* are data sets defined in metadata. They closely mirror a Relational Database table, though not every Object will translate directly to a table because BimlFlex also supports flat files, Excel documents and, via use of Extensions Points, APIs calls. Instead of using multiple entity types to handle these different sources of data, BimlFlex defines each as an Object and uses the *Object Type* field to annotate what type of Object is being referenced.  
 
-## Editor Overview
+Objects are managed using the *Object Editor*.
 
-The following sections describe the UI elements of the **Objects Editor** and how they are used to author and manage BimlFlex **Objects**.
+The following sections describe the User Interface elements of the Object Editor and how they are used to author and manage BimlFlex Objects.
 
-<!--
-**Objects Editor**  
-<img
-    src="images/bimlflex-app-editor-objects.png"
-    title="Objects Editor"
-/>
--->
+> [!IMPORTANT]
+> Detailed descriptions of all Object fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Objects).
+
+## Overview
+
+Objects are displayed in a hierarchical tree view on the left Side Navigation menu. The tree view is organized by Project > Source Connection > Objects, with the number of tables within a given Object displayed in parenthesis.
 
 ![BimlFlex Objects Editor](images/bfx-object-editor-overview.png "BimlFlex Objects Editor")
-<!--
-**Objects** within BimlFlex are displayed in hierarchical tree view on the left sidenav menu.
-
-Selecting an Object will navigate the user to the Details Tab edit screen.
--->
-
-**Objects** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
-The tree view is organized by **Project** > **Source** Connection > **Objects**, with the number of tables within a given **Object** displayed in parenthesis.
 
 Selecting an **Object** with multiple tables will display a secondary list of all editable options within. The user may navigate to the Object editor screen by selecting any **Object** from the displayed list.
 
 Selecting an **Object** with a single table will immediately navigate the user to the Object editor screen.
 
-![BimlFlex Objects Editor - List](images/bfx-object-editor-listview.png "BimlFlex Objects Editor - List")
+![BimlFlex Object Editor - List](images/bfx-object-editor-listview.png "BimlFlex Objects Editor - List")
 
 The tree view for **Objects** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
@@ -48,7 +39,7 @@ Toggling `Descendants` will enable or disable all parameters for both the curren
 This option is enabled by default.
 
 The Search field is contained within the tree view menu, and will be hidden when collapsed.
-The Search field will return results in realtime, only presenting **Objects** containing the term being searched.
+The Search field will return results in real-time, only presenting **Objects** containing the term being searched.
 
 ![BimlFlex Objects - Search Field](images/bfx-object-search-field.png "BimlFlex Objects - Search Field")
 
@@ -59,12 +50,6 @@ The **Details Tab** focuses on general **Object** information and configuration.
 ### Details Tab - Action Buttons
 
 ![BimlFlex - Objects Editor Actions](images/bfx-app-editor-objects-action.png "BimlFlex - Objects Editor Actions")
-<!--
-<img
-    src="images/bimlflex-app-editor-objects-actions.png"
-    title="Objects Editor Actions"
-/>
--->
 
 |Icon|Action|Description|
 |-|-|-|
@@ -80,8 +65,6 @@ The **Details Tab** focuses on general **Object** information and configuration.
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Object** and all associated entities from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Object**.  This will remove the **Object** and all associated entities from processing and validation. |
 
-[//]: # (TODO: Find a switch SVG to use for Deleted)
-
 [!include[Restore Entities Tip](_tip-restore-entities.md)]
 
 ### Additional Dialogs
@@ -94,45 +77,13 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 ### Details Tab - Standard Fields
 
-The standard fields hold the bulk of the metadata that will be used to integrate the **Object**.  Additional fields to manage the modeling and the ability to toggle **Object** level persistence is provided.  
+The standard fields hold the bulk of the metadata that will be used to integrate the Object. Additional fields to manage the modeling and the ability to toggle Object level persistence is provided.  
 
 ![Objects Editor Fields](images/objects-details-tab-new.png "Objects Editor Fields")
-
-<!--
-<img 
-    src="images/bimlflex-app-editor-objects-fields-table.png"
-    style="border: 1px solid #CCC;"
-    title="Objects Editor Fields"
-/>
--->
-
-|Field|Description|
-|-|-|
-| Project | The **Project** used to process the **Object**.  Must be an existing **Project**. |
-| Connection | The **Connection** to the source for the **Object**.  Must be an existing **Connection**. |
-| Schema | The schema assigned to the current **Object**.  |
-| Object Name | The name of the **Object**.  On an [Object Type] that does not recognize the schema concept this still used in the generation of naming patterns depending on what **Settings** are being used.|
-| Short Name | The name to be used when performing ETL/ELT in an integration environment that does not support the full string of the concatenated name. |
-| Object Type | The type of **Object** that is either being extracted or created, depending on the *Integration Stage* of the **Connection** associated with the **Object**.  Must be a valid [Object Type](#object-types) (filtered for appropriate *Integration Stage*). |
-| Business Entity | The Business Model Entity that this entity should be modeled to and be accelerated to. |
-| Description | The **Object** described in business context. Often referred to as business metadata. |
-| Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the **Object**. |
-| Exclude From Build | This will flag the **Object** to not generate an output artifact and be removed from the build process. |
-| Exclude From Validation | This will flag the **Object** to be ignored by the validation engine.  This is used for **Objects** that have metadata generated dynamically in a downstream process and would otherwise cause validation issues.  Note that this is not a fix to a validation error as all the downstream dependencies are still required.  This is only for entities that have late generating assets (Point In Time (PIT) and Bridge (BRG) tables mostly). |
-| Not Persistent | If this is `true` then this **Object** will not have a `Persistent Stage Area` (PSA) table created. |
-| Use Own Thread | When set to `true` the **Object** will be executed in its own thread at the start of the respective execution container.  When set to `false` the default logic has the **Objects** executed within a **Batch** based on Topological sort order and then sorted alphabetically. |
-| Threads | For SSIS it is used to control the parallelization of Dataflow tasks during package execution.  Depending on the *Integration Stage* of the associated **Connection**, this number corresponds to how many tasks, when possible, will run in parallel when loading or extracting the table. |
 
 ### Model Overrides - Standard Fields
 
 ![Model Overrides Fields ](images/bfx-objects-model-override.png "Model Overrides Fields")  
-
-|Field|Description|
-|-|-|
-| Accelerator Object Type | The type of **Object** that you are designing to load.  Must be a valid [Object Type](#object-types) (filtered for appropriate *Integration Stage*). |
-| Business Name | The name of the Business Concept or Target Object you are modeling.  This is only the name of the concept itself and not the name of the final desired [Object Name].  If loading a Customer HUB, **Customer** would be entered here and not HUB_Customer.  Suffix or prefix values are all configured via the use of **Settings** and are generated dynamically depending on entered metadata. |
-| Business Short Name |If populated, the value to be used when a 'Short Name' is applicable.  This is generally used in the generation and naming of Link Tables (LNKs), and other entities whose names are dynamically generated from a concatenation of entity names. |
-| Business Grouping | This column categorizes objects per subject area. This grouping can be used in the [Data Vault Accelerator] for constrained acceleration. |
 
 ### Allowed Values
 

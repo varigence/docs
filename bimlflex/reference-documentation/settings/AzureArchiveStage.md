@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Archive Stage
 
-Determines whether the staged Blob Storage files are moved to the defined archive container, once processing has completed. This will use AzCopy v.10 commands, so requires AzCopy v.10 and SAS Tokens for access.
+Determines if the staged Blob Storage files are moved to the defined archive container, once processing is completed. This will use AzCopy v.10 commands, so requires AzCopy v.10 and SAS Tokens for access.
 
 Notes:
 

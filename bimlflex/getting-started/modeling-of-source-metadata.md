@@ -322,7 +322,7 @@ The change type of the column. For source columns, use `Key` or `Type 1`. For Di
 
 #### Is Primary Key
 
-Marks the primary keys of the source table. For Data Vault acceleration, relationships and keys are modelled using the Integration Keys instead of the source primary keys.
+Marks the primary keys of the source table. For Data Vault acceleration, relationships and keys are modeled using the Integration Keys instead of the source primary keys.
 
 When Importing metadata for the trial, the `Change References to Integration Keys` checkbox was checked. This changed the primary key definitions for the source tables to the derived Integration Keys. As the trial mainly focuses on building a Data Vault, this is the expected behavior. Another column can only reference the Primary Key of a table.
 

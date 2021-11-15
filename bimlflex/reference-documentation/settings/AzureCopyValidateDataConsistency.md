@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Data Consistency Verification
 
-Determines whether the Copy Activity validates data consistency for supported sources and sinks.
+Determines if the Copy Activity validates data consistency for supported sources and sinks.
 
 Notes:
 

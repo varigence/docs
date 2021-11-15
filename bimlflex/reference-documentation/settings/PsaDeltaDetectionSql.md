@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Delta Detection in SQL
 
-Determines whether the delta detection applied when loading changes to the PSA uses a SQL procedure that runs on the Staging Area table, and not as part of the PSA pattern. 
+Determines if the delta detection applied when loading changes to the PSA uses a SQL procedure that runs on the Staging Area table, and not as part of the PSA pattern. 
 
 This setting applies to SSIS output only, and only works when the "Disable Staging, Persist Only" setting is disabled. These settings are not compatible.
 

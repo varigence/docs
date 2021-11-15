@@ -22,7 +22,8 @@ CustomerUID | GUID | The Customer UID to use for the metadata connection |
 Version | String | The Version Name to use for the metadata connection |
 Server | String | The Server Name to use for the metadata connection |
 Database | String | The Database Name of the metadata database |
-UseWindowsAuthentication | Boolean | Should the metadata connection use Windows Authentication |
+UseWindowsAuthentication | Boolean | Legacy for backward compatibility should the metadata connection use Windows Authentication |
+Authentication | String | SQL Server authentication method to connect to metadata database. |
 Provider | String | Connection Provider to use |
 UserId | String | SQL Authentication User Id |
 Password | String | SQL Authentication Password |
@@ -39,7 +40,7 @@ CustomOutput.CustomerUID = GetBundleSetting("BimlFlex.bimlb", null, "CustomerUID
 CustomOutput.Version = GetBundleSetting("BimlFlex.bimlb", null, "Version");
 CustomOutput.Server = GetBundleSetting("BimlFlex.bimlb", null, "Server");
 CustomOutput.Database= GetBundleSetting("BimlFlex.bimlb", null, "Database");
-CustomOutput.UseWindowsAuthentication = GetBundleSetting("BimlFlex.bimlb", null, "UseWindowsAuthentication");
+CustomOutput.Authentication = GetBundleSetting("BimlFlex.bimlb", null, "Authentication");
 CustomOutput.Provider = GetBundleSetting("BimlFlex.bimlb", null, "Provider");
 CustomOutput.UserId = GetBundleSetting("BimlFlex.bimlb", null, "UserId");
 CustomOutput.Password = GetBundleSetting("BimlFlex.bimlb", null, "Password");

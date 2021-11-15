@@ -8,13 +8,13 @@
   href: toolbar.md
 - name: BimlFlex Database Settings
   href: database-settings.md
-- name: Connections
+- name: Connection Editor
   href: connections.md
-- name: Batches
+- name: Batch Editor
   href: batches.md
-- name: Projects
+- name: Project Editor
   href: projects.md
-- name: Objects
+- name: Object Editor
   href: objects.md
 - name: Columns
   href: columns.md
