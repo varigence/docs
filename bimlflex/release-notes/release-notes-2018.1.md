@@ -179,7 +179,7 @@ Update: Derived Hubs from Links (to same Hub) no longer use same BK for second h
 > Breaking change in feature.
 > The 63013 Bundle introduces a new feature that requires the BimlFlex database to be updated to the same version.
 
-* Add: New Feature: support for Transient ChangeType. This can be used for columns that are used in the pipeline and excluded from the target and hashing.
+* Add: New Feature: support for Transient ChangeType. This can be used for columns that are used in the pipeline and excluded from the target and hashing - SSIS only.
 * Add: `NoOfContainers` configuration to `Batch` allowing specification of the max number of Sequence Containers included per batch.
 * Add: New Feature: support for [Microsoft SQL Server Change Tracking](https://docs.microsoft.com/en-us/sql/relational-databases/track-changes/about-change-tracking-sql-server) as Source Type.
 * Add: support for ODBC based SQL ELT patterns to support calling of future Snowflake templates.
