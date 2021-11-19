@@ -241,5 +241,5 @@ The modeling pages Accelerator, Schema Diagram and Column Mapping have a new tre
 
 ## Download Links to this Build
 
-* [bimlflexdevsetup_20.2.466.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.469.0.exe)
-* [bimlflexruntimesetup_20.2.463.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.469.0.exe)
+* [bimlflexdevsetup_20.2.469.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.469.0.exe)
+* [bimlflexruntimesetup_20.2.469.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.469.0.exe)
