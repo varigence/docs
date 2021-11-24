@@ -16,7 +16,7 @@ Parameters are most commonly used to define a high water mark or define a filter
 
 Once a **Parameter** is created in BimlFlex, the BimlCatalog DB (`[BimlCatalog]` by default) is used to manage them.
 
-Parameter values are persisted in the `[bfx].[ConfigVariable]` table.
+**Parameter values are persisted in the `[bfx].[ConfigVariable]` table.**
 
 ### [[bfx].[ConfigVariable] Details](#tab/table-configvariable)
 
@@ -24,23 +24,28 @@ Click a tab for example or detailed column descriptions.
 
 ### [Examples](#tab/table-configvariable-example)
 
-| ConfigVariableID | SystemName | ObjectName                                       | VariableName | VariableValue           | ExecutionID | PreviousValue |
-| ---------------- | ---------- | ------------------------------------------------ | ------------ | ----------------------- | ----------- | ------------- |
-| 5                | AWLT_SRC   | AWLT_SRC.SalesLT.SalesOrderDetail.ModifiedDate   | LastLoadDate | 2004-06-01 00:00:00.000 | 19          | 1900-01-01    |
-| 6                | AWLT_SRC   | AWLT_SRC.SalesLT.ProductDescription.ModifiedDate | LastLoadDate | 2004-03-11 10:32:17.973 | 20          | 1900-01-01    |
-| 7                | AWLT_SRC   | AWLT_SRC.SalesLT.Product.ModifiedDate            | LastLoadDate | 2004-03-11 10:03:55.510 | 21          | 1900-01-01    |
+| ConfigVariableID | SystemName | ObjectName                                       | VariableName   | VariableValue           | ExecutionID`*` | PreviousValue | DataTypeOverride`**` |
+| ---------------- | ---------- | ------------------------------------------------ | -------------- | ----------------------- | -------------- | ------------- | -------------------- |
+| 5                | AWLT_SRC   | AWLT_SRC.SalesLT.SalesOrderDetail.ModifiedDate   | LastLoadDate   | 2004-06-01 00:00:00.000 | 19             | 1900-01-01    | {NULL}               |
+| 6                | AWLT_SRC   | AWLT_SRC.SalesLT.ProductDescription.ModifiedDate | LastLoadDate   | 2004-03-11 10:32:17.973 | 20             | 1900-01-01    | {NULL}               |
+| 7                | AWLT_SRC   | AWLT_SRC.SalesLT.Product.CustomerID              | LastCustomerID | 21002135                | 21             | 19001010      | int                  |
+
+> [!TIP]
+>
+> * `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
 
 ### [Column Definitions](#tab/table-configvariable-definition)
 
-| Column Name      | Usage                                                                |
-| ---------------- | -------------------------------------------------------------------- |
-| ConfigVariableID | Table SK                                                             |
-| SystemName       | Name of the **Connection** associated with the **Parameter**         |
-| ObjectName       | Full name of the **Object** the **Parameter** is used with           |
-| VariableName     | Name of the **Parameter**                                            |
-| VariableValue    | Last or current persisted value                                      |
-| ExecutionID`*`   | The `ExecutionID` of the Package/Pipeline used to load the Parameter |
-| PreviousValue    | Previous `VariableValue` on the last execution                       |
+| Column Name          | Usage                                                                                                  |
+| -------------------- | ------------------------------------------------------------------------------------------------------ |
+| ConfigVariableID     | Table SK                                                                                               |
+| SystemName           | Name of the **Connection** associated with the **Parameter**                                           |
+| ObjectName           | Full name of the **Object** the **Parameter** is used with                                             |
+| VariableName         | Name of the **Parameter**                                                                              |
+| VariableValue        | Last or current persisted value                                                                        |
+| ExecutionID`*`       | The `ExecutionID` of the Package/Pipeline used to load the Parameter                                   |
+| PreviousValue        | Previous `VariableValue` on the last execution                                                         |
+| DataTypeOverride`**` | Overrides the implicit variable detection.  See [DataTypeOverride Details](#datatypeoverride-details). |
 
 > [!TIP]
 >
@@ -48,7 +53,60 @@ Click a tab for example or detailed column descriptions.
 
 ***
 
-Parameter history is logged to the `[bfx].[AuditConfigVariable]` table.
+#### DataTypeOverride Details
+
+`[DataTypeOverride]` is not a column that is populated by default and is only required in limited edge case scenarios.
+This column should be ignored unless you are experiencing errors during processing as a result of one of the below scenarios.
+
+##### Usage Scenario for DataTypeOverride
+
+Currently the only know edge case happens when a loading an `int` or `decimal` value.
+
+* Parameter is an `int` or `decimal` datatype
+* Parameter already has an entry in `[bfx].[ConfigVariable]`
+* The current `[VariableValue]` can be evaluated as a date
+  * Specifically if `ISDATE( [VariableValue] ) = 1` on SQL Server
+* The value being loaded does CAN NOT be evaluated as a date
+  * Specifically if `ISDATE( [VariableValue] ) = 0` on SQL Server
+
+##### Updating DataTypeOverride
+
+The `[DataTypeOverride]` can only be accessed/viewed on the `[bfx].[ConfigVariable]` table in the **BimlCatalog**.
+To populate this column use SQL UPDATE statement as outlined in the template below.
+
+#### Usage of DataTypeOverride
+
+##### [SQL Script Template](#tab/update-datatypeoverride-template)
+
+```sql
+UPDATE
+    [bfx].[ConfigVariable]
+SET
+    [DataTypeOverride] = [ "int" | "decimal" ]
+WHERE
+    [ConfigVariableID] = { ConfigVariableID }
+
+```
+
+##### [SQL Script Example](#tab/update-datatypeoverride-sample)
+
+```sql
+UPDATE
+    [bfx].[ConfigVariable]
+SET
+    [DataTypeOverride] = "int"
+WHERE
+    [ConfigVariableID] = 7
+
+```
+
+***
+
+> [!NOTE]
+>
+> `[DataTypeOverride]` currently only support the `int` and `decimal` values.
+
+**Parameter history is logged to the `[bfx].[AuditConfigVariable]` table.**
 
 ### [[bfx].[AuditConfigVariable] Details](#tab/table-AuditConfigVariable)
 
@@ -303,7 +361,7 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*:
 **Window Parameters** are configured to load between two points.
 
 Useful when it is not possible to derive the new parameter from the destination, such as a Blob file.
-This allows the from and to to be derived and applied in the source query using only the source data.  
+This allows the from and to to be derived and applied in the source query using only the source data.
 
 These get configured by defining the below fields.
 
