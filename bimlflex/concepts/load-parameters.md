@@ -56,11 +56,12 @@ Click a tab for example or detailed column descriptions.
 #### DataTypeOverride Details
 
 `[DataTypeOverride]` is not a column that is populated by default and is only required in limited edge case scenarios.
-This column should be ignored unless you are experiencing errors during processing as a result of one of the below scenarios.
+This column should be ignored unless you are experiencing issues with the **Parameter** updating as a result of one of the below scenarios.
 
 ##### Usage Scenario for DataTypeOverride
 
 Currently the only know edge case happens when a loading an `int` or `decimal` value.
+The **Parameter** will fail to update in the `[bfx].[ConfigVariable]` if all the below are true:
 
 * Parameter is an `int` or `decimal` datatype
 * Parameter already has an entry in `[bfx].[ConfigVariable]`
@@ -82,7 +83,7 @@ To populate this column use SQL UPDATE statement as outlined in the template bel
 UPDATE
     [bfx].[ConfigVariable]
 SET
-    [DataTypeOverride] = [ "int" | "decimal" ]
+    [DataTypeOverride] = [ 'int' | 'decimal' ]
 WHERE
     [ConfigVariableID] = { ConfigVariableID }
 
@@ -94,7 +95,7 @@ WHERE
 UPDATE
     [bfx].[ConfigVariable]
 SET
-    [DataTypeOverride] = "int"
+    [DataTypeOverride] = 'int'
 WHERE
     [ConfigVariableID] = 7
 
