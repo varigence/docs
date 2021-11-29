@@ -1,8 +1,8 @@
 ---
-uid: bimlflex-2021-r1-new-features
-name: New Features in BimlFlex 2021
+uid: bimlflex-2022-r1-new-features
+name: New Features in BimlFlex 2022
 ---
-# New Features in BimlFlex 2021
+# New Features in BimlFlex 2022
 
 ## Feature Highlights
 
@@ -48,7 +48,7 @@ This has resulted in an increase of responsiveness across all areas, as well as 
 
 ### Preview of Azure Data Factory Mapping Data Flows
 
-As of the 2021 release, generating the data logistics in native Mapping Data Flows for Azure Data Factory is available in preview.
+As of the 2022 release, generating the data logistics in native Mapping Data Flows for Azure Data Factory is available in preview.
 This is especially geared towards Delta Lake use-cases.
 
 Delta Lake is an open-source storage layer that can be used 'on top off' Azure Data Lake Gen2, where it provides transaction control (Atomicity, Consistency, Isolation and Durability, or 'ACID') features to the data lake.

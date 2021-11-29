@@ -1,7 +1,7 @@
 ---
-uid: bimlflex-release-notes-2021-r1
-name: BimlFlex Release Notes 2021
-summary: release notes for BimlFlex 2021
+uid: bimlflex-release-notes-2022-r1
+name: BimlFlex Release Notes 2022
+summary: Release Notes for BimlFlex 2022
 ---
 # Release Notes
 
@@ -9,20 +9,20 @@ summary: release notes for BimlFlex 2021
 > Please make sure databases and projects are backed up before upgrading.  
 > Please email support@bimlflex.com with any installation or upgrade issues.
 
-## BimlFlex 2021
+## BimlFlex 2022
 
-BimlFlex 2021 is installed and upgraded through a single consolidated installer.
+BimlFlex 2022 is installed and upgraded through a single consolidated installer.
 
 ## Latest Release
 
-Build 21.1.nnn.0, release date: dd mmmm yyyy
+Build 22.1.nnn.0, release date: dd mmmm yyyy
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
-## 2021 New Features
+## 2022 New Features
 
 * Business Modeling Now Available
 * Added support for Salesforce connector
@@ -30,7 +30,7 @@ Build 21.1.nnn.0, release date: dd mmmm yyyy
 * User Interface Improvements for all BimlFlex Visual Editors
 * Preview of Azure Data Factory Mapping Data Flows
 
-Additional information here: [BimlFlex 2021 New Features](xref:bimlflex-2021-r1-new-features)
+Additional information here: [BimlFlex 2022 New Features](xref:bimlflex-2022-r1-new-features)
 
 ### Salesforce (SFDC)
 
@@ -82,7 +82,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 * Added new drag and drop settings, actions, and zoom functionality.
 * Improved anchor point connection manipulation.
 
-## 2021 Added Support
+## BimlFlex 2022 - Added Support
 
 ### Various New Support
 
@@ -121,7 +121,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 * Added support for Flat File in Blob Storage `Source`.
 * Validator checks to ensure landing Connection has Blob landing when using Azure Copy Command staging and logging.
 
-## 2021 Bug Fixes
+## BimlFlex 2022 - Bug Fixes
 
 ### SSIS
 

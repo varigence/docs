@@ -234,7 +234,7 @@ If additional values are needed, they can be entered into the field as needed.
 If a shared integration is used, add the Linked Resource Id to the metadata. This information is available from the Azure Portal from the Sharing Data Factory's Integration Runtime details. The Data Factory should also be granted access to this shared resource in the Azure Portal or through a script or similar.
 
 > [!WARNING]
-> BimlFlex did not support a Shared Integration Runtime through automation prior to version 2021.
+> BimlFlex did not support a Shared Integration Runtime through automation prior to version 2022.
 > If a Shared Integration Runtime is required in an earlier version it will have to be manually assigned after build.
 
 #### Blob Storage Configured Landing Area

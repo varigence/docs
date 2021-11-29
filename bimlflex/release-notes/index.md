@@ -7,7 +7,7 @@ summary: An overview of key new features for the corresponding BimlFlex releases
 
 ## Current Release
 
-<!-- * [BimlFlex 2021 release notes](xref:bimlflex-release-notes-2021-r1) -->
+<!-- * [BimlFlex 2022 release notes](xref:bimlflex-release-notes-2022-r1) -->
 * [BimlFlex 2020 R2 release notes](xref:bimlflex-release-notes-2020-r2)
 
 ## Previous Releases & Information
