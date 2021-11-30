@@ -1,33 +1,19 @@
 ---
-uid: attributes
+uid: bimlflex-attribute-editor
 title: Attributes
-summary: Documentation regarding the BimlFlex Attributes editor, including editor fields, field descriptions, and data types. 
+summary: Documentation regarding the BimlFlex Attribute editor, including editor fields, field descriptions, and data types. 
 varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
-# Attributes Editor
+# Attribute Editor
 
-The **Attributes Editor** is used to manage **Attributes** in the BimlFlex App. **Attributes** are used to conditionally override **Configurations** and **Settings**. They can also be used to extend the metadata model for bespoke coding requirements.
+The **Attribute Editor** is used to manage **Attributes** in the BimlFlex App. **Attributes** are used to conditionally override **Configurations** and **Settings**. They can also be used to extend the metadata model for bespoke coding requirements.
 
-![BimlFlex - Attributes Editor](images/bfx-attributes-editor-overview.png "BimlFlex - Attributes Editor")
-
-<!--
-<img
-    src="images/attributes.64566.png"
-    title="Attributes Editor"
-/>
--->
+![BimlFlex - Attribute Editor](images/bfx-attributes-editor-overview.png "BimlFlex - Attribute Editor")
 
 ## Action Buttons
 
-![BimlFlex Attributes Editor - Action Buttons](images/bfx-attributes-action-buttons.png "BimlFlex Attributes Editor - Action Buttons")
-
-<!--
-<img
-    src="images/attributes-action-buttons.64566.png"
-    title="Attributes Action Buttons"
-/>
--->
+![BimlFlex Attribute Editor - Action Buttons](images/bfx-attributes-action-buttons.png "BimlFlex Attribute Editor - Action Buttons")
 
 | Icon | Action | Description |
 |-|-|-|
@@ -41,7 +27,7 @@ The **Attributes Editor** is used to manage **Attributes** in the BimlFlex App. 
 | <div class="icon-col m-5"><img src="/images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Attribute**.  A [Duplicate Attribute dialog](#duplicate-attribute-dialog) will appear asking for a new name. A new **Attribute** will be created using all of the selected **Attribute's** properties. |
 | <div class="icon-col m-5"><img src="/images/bimlflex-app-action-switch.png" /></div> | Deleted | This will soft delete the currently selected **Attribute**.  This will remove the **Attribute** from processing and validation. |
 
-## Attributes Editor Fields
+## Attribute Editor Fields
 
 The fields available in the **Attribute** form change depending on the selected [Attribute Type](#attribute-types). The `Attribute Type` defines the scope of the BimlFlex process that the **Attribute** is applied to.
 

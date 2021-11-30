@@ -165,7 +165,7 @@ The simple process for both implied creation and manual creation of Driving Keys
 
 BimlFlex can automatically apply a Driving Key to any relationship created from a table being loaded with a *MODEL OBJECT TYPE* = `Hub`.
 Due to the Foreign Keys in a database requiring a many-to-one in the source, the application of a Driving Key scenario can be applied.
-This will be automatically included in the ETL logic and no separate **Attribute** will be added in the **Attributes Editor**.
+This will be automatically included in the ETL logic and no separate **Attribute** will be added in the **Attribute Editor**.
 
 ![BimlFlex Objects Tab](images/bfx-objects-tab-a.png "BimlFlex Objects Tab")
 

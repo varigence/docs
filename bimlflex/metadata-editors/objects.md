@@ -1,5 +1,5 @@
 ---
-uid: objects
+uid: bimlflex-object-editor
 title: Object Editor
 summary: Documentation regarding the BimlFlex Object editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex

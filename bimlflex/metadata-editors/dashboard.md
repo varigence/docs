@@ -1,5 +1,5 @@
 ---
-uid: dashboard
+uid: bimlflex-dashboard
 title: Dashboard
 summary: Overview of the BimlFlex dashboard with sunburst graph, navigation, menus, and loading data
 varigenceProduct: BimlFlex
@@ -104,7 +104,7 @@ The **Recent Connections** pane displays the most recently updated **Connections
 
 ![Recent Connections Pane](images/dashboard-recent-connections-menu.64527.png "Connection Pane Overview")
 
-- Click <img class="icon-inline" src="images/svg-icons/connections.svg" > **Edit Connection** to navigate to the **Connections Editor**
+- Click <img class="icon-inline" src="images/svg-icons/connections.svg" > **Edit Connection** to navigate to the **Connection Editor**
 - Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" > **Import Metadata** to navigate to the Import Metadata screen for your Source Connection. This link will only appear for **Connections** with a Source System Integration Stage.
 - Click <img class="icon-inline" src="images/svg-icons/objects.svg" > **Objects** to navigate to the **Objects** page filtered to **Objects** associated with the **Connection**. The number displayed is the number of **Objects** related to the **Connection**
 - Click <img class="icon-inline" src="images/svg-icons/columns.svg" > **Columns** to navigate to **Columns** related to the **Connection**. The number displayed in parentheses is the number of **Columns** related to the **Connection**

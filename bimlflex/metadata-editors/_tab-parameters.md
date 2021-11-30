@@ -32,5 +32,5 @@ All **Parameters** assigned to the current entity show here.  New items can be e
 
 |Item|Action|Entity Documentation|
 |-|-|-|
-|Column|Navigate to **Columns Editor**, selecting clicked **Column**|[Columns Documentation](columns.md)
-|Name|Navigate to **Parameters Editor**, selecting clicked **Parameter**|[Parameters Documentation](parameters.md)
+|Column|Navigate to **Column Editor**, selecting clicked **Column**|[Column Documentation](columns.md)
+|Name|Navigate to **Parameter Editor**, selecting clicked **Parameter**|[Parameter Documentation](parameters.md)

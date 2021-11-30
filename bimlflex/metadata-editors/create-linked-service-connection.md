@@ -14,14 +14,14 @@ varigenceArticleType: Reference
 
 ## Enable Connection for Cloud Services
 
-In the **Connections Editor**, click  Add in the top left of the screen or select an existing connection to edit.
+In the **Connection Editor**, click  Add in the top left of the screen or select an existing connection to edit.
 
-![BimlFlex Connections Editor Menu](images/bfx-connections-module-list.png "BimlFlex Connections Editor Menu")
+![BimlFlex Connection Editor Menu](images/bfx-connections-module-list.png "BimlFlex Connection Editor Menu")
 
-In the **Details tab** of the Connections Editor, select the *Integration Stage*, *Connection Type*, and *System Type* for your connection.
+In the **Details tab** of the Connection Editor, select the *Integration Stage*, *Connection Type*, and *System Type* for your connection.
 If the configuration provided is compatible with a linked service then a *Cloud* setting will appear in the action bar.
 
-![BimlFlex Connections Details Tab](images/bfx-connections-details-tab.png "BimlFlex Connections Details Tab")
+![BimlFlex Connection Details Tab](images/bfx-connections-details-tab.png "BimlFlex Connection Details Tab")
 
 After toggling the *Cloud* setting, a tab for Linked Services will appear at the bottom of the form and any available linked services will appear in the *Linked Service Types dropdown*.
 Select a *Linked Service Type* to configure it.

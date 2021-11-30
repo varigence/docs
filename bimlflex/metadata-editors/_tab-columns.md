@@ -29,7 +29,7 @@ All **Columns** assigned to the current entity show here.  New items can be ente
 
 |Item|Action|Entity Documentation|
 |-|-|-|
-|Column Value|Navigate to **Columns Editor**, selecting clicked **Column**|[Columns Documentation](columns.md)
+|Column Value|Navigate to **Column Editor**, selecting clicked **Column**|[Column Documentation](columns.md)
 
 #### View: Overview  
 
@@ -42,7 +42,7 @@ The **Overview** is available to give quick access to the more physical properti
 
 #### View: Settings  
 
-The **Settings** view allows for quick access to all the boolean and flag properties associated with the **Columns**.  In addition to the keys the ability to flag database concepts (such as `IDENTITY` or `NULL`), persistence, whether or not the **Column** is `Derived`, and the ability to flag as `Excluded` or `Deleted`.  
+The **Settings** view allows for quick access to all the Boolean and flag properties associated with the **Columns**.  In addition to the keys the ability to flag database concepts (such as `IDENTITY` or `NULL`), persistence, whether or not the **Column** is `Derived`, and the ability to flag as `Excluded` or `Deleted`.  
 
 <img
     src="images/bimlflex-app-tab-columns-views-settings.png"

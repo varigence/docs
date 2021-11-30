@@ -191,16 +191,16 @@ The ending SQL Server Stored Procedure Activity (`LOG_{Parameter}`) is then used
 
 ## Creating Parameters in BimlFlex
 
-Parameters can be added in BimlFlex through the **Parameters Editor**, accessible from the BimlFlex main menu.
+Parameters can be added in BimlFlex through the **Parameter Editor**, accessible from the BimlFlex main menu.
 
 > [!NOTE]
-> For information on the **Parameters Editor** and its usage refer to the below guide:
+> For information on the **Parameter Editor** and its usage refer to the below guide:
 >
-> * BimlFlex Docs: [Parameters Editor](xref:parameters)
+> * BimlFlex Docs: [Parameter Editor](xref:bimlflex-parameter-editor)
 
 To add a new parameters, click the `+` button in the tree view menu.
 
-![BimlFlex - Parameters Editor](images/bfx-parameters-editor.png "BimlFlex - Parameters Editor")
+![BimlFlex - Parameter Editor](images/bfx-parameters-editor.png "BimlFlex - Parameter Editor")
 
 ### Base Parameter
 

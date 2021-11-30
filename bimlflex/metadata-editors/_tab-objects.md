@@ -43,8 +43,8 @@ Various [Navigational Transitions](#objects-tab-overview-navigational-transition
 
 | Item             | Action                                                               | Entity Documentation                        |
 | ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
-| Project Value    | Navigate to **Projects Editor**, selecting clicked **Project**       | [Projects Documentation](projects.md)       |
-| Connection Value | Navigate to **Connections Editor**, selecting clicked **Connection** | [Connections Documentation](connections.md) |
+| Project Value    | Navigate to **Project Editor**, selecting clicked **Project**       | [Projects Documentation](projects.md)       |
+| Connection Value | Navigate to **Connection Editor**, selecting clicked **Connection** | [Connections Documentation](connections.md) |
 | Object Value     | Navigate to **Object Editor**, selecting clicked **Object**         | [Objects Documentation](objects.md)         |
 
 > [!NOTE]
