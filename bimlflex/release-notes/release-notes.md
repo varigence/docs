@@ -180,7 +180,7 @@ Additional documentation regarding the updated delete functionality: [BimlFlex D
 
 * BimlFlex now features the ability to use a business modeling approach to Data Vault modeling.
 
-Read More on the exciting new Business Modeling functionality here: [Business Modeling in BimlFlex](xref:business-modeling)
+Read More on the exciting new Business Modeling functionality here: [Business Modeling in BimlFlex](xref:bimlflex-business-modeling)
 -->
 
 ## Data Mart/Data Vault

@@ -60,7 +60,7 @@ The **Expressions** view allows you to quickly view and manage all the expressio
 
 #### View: Mappings  
 
-The **Mappings** view shows the references and targets associated with the **Columns**.  References are the equivalent of a Foreign Key in a Relational Database, though the enforcement of an actual constraint is configurable.  References control how and where other tables relate to each other.  Targets are the the **Object** and **Column** that the entity will populate in the associated **Project's Target Connection**.  It is recommended that you use the [Data Vault Accelerator](../modeling-tools/accelerator.md) or the [Schema Diagram](../modeling-tools/schema-diagram.md) to populate these fields.  This view is intended as easy way to reference and maintain previously entered metadata.  
+The **Mappings** view shows the references and targets associated with the **Columns**.  References are the equivalent of a Foreign Key in a Relational Database, though the enforcement of an actual constraint is configurable.  References control how and where other tables relate to each other.  Targets are the the **Object** and **Column** that the entity will populate in the associated **Project's Target Connection**.  It is recommended that you use the [Data Vault Accelerator](accelerator.md) or the [Schema Diagram](schema-diagram.md) to populate these fields.  This view is intended as easy way to reference and maintain previously entered metadata.  
 
 <img
     src="images/bimlflex-app-tab-columns-views-mappings.png"
@@ -69,7 +69,7 @@ The **Mappings** view shows the references and targets associated with the **Col
 
 #### View: Overrides  
 
-The **Overrides** view is available to allow for quick management of modeled metadata from the [Data Vault Accelerator](../modeling-tools/accelerator.md) or the [Schema Diagram](../modeling-tools/schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.  
+The **Overrides** view is available to allow for quick management of modeled metadata from the [Data Vault Accelerator](accelerator.md) or the [Schema Diagram](schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.  
 
 <img
     src="images/bimlflex-app-tab-columns-views-overrides.png"

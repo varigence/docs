@@ -1,5 +1,5 @@
 ---
-uid: data-vault-accelerator-R21
+uid: bimlflex-data-vault-accelerator-R21
 title: Data Vault Accelerator
 summary: Documentation regarding the BimlFlex Data Vault Accelerator, including videos, starting point, user interface, metadata requirements, and entity options
 varigenceProduct: BimlFlex
@@ -272,7 +272,7 @@ It is possible to manage details about the source object, such as the related Bu
 
 Allows the Accelerator to use a pre-defined Business Entity as the target definition. Use Business Modeling to define the Business Model that should be used and map source objects and columns to these targets to allow the Accelerator to use names and attribute definitions in the target model.
 
-More detailed information on the Business Modeling is available here: [Business Modeling](xref:business-modeling)
+More detailed information on the Business Modeling is available here: [Business Modeling](xref:bimlflex-business-modeling)
 
 ### Object Business Name
 

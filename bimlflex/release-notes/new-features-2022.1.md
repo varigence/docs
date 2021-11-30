@@ -26,7 +26,7 @@ These types of Business Model objects are represented as 'cards' on the model de
 
 Business Models can be mapped to the data sources in BimlFlex to forward-engineer the data solution from there.
 
-More information on Business Modeling here: [Business Modeling in BimlFlex](xref:business-modeling)
+More information on Business Modeling here: [Business Modeling in BimlFlex](xref:bimlflex-business-modeling)
 
 ### Added Support for Salesforce Connector
 

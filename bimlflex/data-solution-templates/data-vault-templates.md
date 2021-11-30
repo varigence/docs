@@ -9,7 +9,7 @@ varigenceArticleType: Conceptual
 
 This document outlines the Data Vault templates in BimlFlex.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator: [Data Vault Accelerator](xref:data-vault-accelerator)
+The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator: [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator)
 
 ## Setup
 

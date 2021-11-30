@@ -81,7 +81,7 @@ Objects, Columns, Parameters, and Attributes may need to be modified. For exampl
 
 ### Accelerate and Publish Stage and Persisted-Stage Metadata
 
-Accelerate and publish the STG and PSA metadata so that the project can be build and deployed. For information on how to accelerate and publish, see the [Data Vault Accelerator](xref:data-vault-accelerator).
+Accelerate and publish the STG and PSA metadata so that the project can be build and deployed. For information on how to accelerate and publish, see the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator).
 
 ### BimlStudio: Generate and Deploy DDL Scripts
 
@@ -176,7 +176,7 @@ Objects, Columns, Parameters, and Attributes may need to be modified. For exampl
 
 ### Accelerate and Publish
 
-To complete the RDV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [Data Vault Accelerator](xref:data-vault-accelerator).
+To complete the RDV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator).
 
 1. In the **Accelerator**, select all tables then click **Publish**  
 1. In BimlStudio, generate the Create Table scripts again  

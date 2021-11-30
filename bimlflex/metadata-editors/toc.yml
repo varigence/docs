@@ -4,12 +4,8 @@
   href: bimlflex-tour.md
 - name: Dashboard
   href: dashboard.md
-- name: Operational Reports
-  href: operational-reports.md  
-- name: Customers
-  href: customers.md
-- name: Versions
-  href: versions.md  
+- name: Customer Selection
+  href: customers.md  
 - name: Connection Editor
   href: connections.md
 - name: Batch Editor
@@ -30,4 +26,15 @@
   href: settings.md
 - name: Data Type Mappings
   href: data-type-mappings.md
+- name: Version Management
+  href: versions.md    
+- name: Operational Reports
+  href: operational-reports.md 
+- name: Accelerator
+  href: accelerator.md 
+- name: Schema Diagram
+  href: schema-diagram.md 
+- name: Data Lineage
+  href: data-lineage.md       
+   
 
