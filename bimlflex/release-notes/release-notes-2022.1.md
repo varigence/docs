@@ -210,7 +210,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 * Fixed a bug where Data Mart RowChangeType existed in source.
 * Fixed a bug where a Staged Query object with a RowChangeType configuration set to `derived` used @@this in Source SELECT statement, instead of the table name.
 * Fixed a bug where Reload Project was failing when Source-to-Target-Mappings used a different name.
-* Fixed a bug where new flat file objects were not selected in Objects Editor and immediately disappeared.
+* Fixed a bug where new flat file objects were not selected in Object Editor and immediately disappeared.
 * Fixed a bug where deleting a parent object (Project) failed with database error.
 * Fixed a bug where multiple metadata imports with different naming conventions duplicated the IK columns. Columns are now replaced with new naming convention.
 * Fixed a bug where creating a new Batch did not enable [Use Orchestration] by default.

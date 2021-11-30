@@ -4,8 +4,6 @@
   href: bimlflex-tour.md
 - name: Dashboard
   href: dashboard.md
-- name: Toolbar
-  href: toolbar.md
 - name: BimlFlex Database Settings
   href: database-settings.md
 - name: Connection Editor

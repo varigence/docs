@@ -20,7 +20,7 @@ Click the *New Customer* button and enter a new **[Customer](xref:bimlflex-conce
 
 ### Select Customer
 
-It is possible to select or change the selected [Customer](xref:bimlflex-concepts-customer) by chosing an available Customer from the *Customer* drop-down list.
+It is possible to select or change the selected [Customer](xref:bimlflex-concepts-customer) by choosing an available Customer from the *Customer* drop-down list.
 
 ### Select Version
 

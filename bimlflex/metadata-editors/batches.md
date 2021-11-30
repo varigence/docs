@@ -5,7 +5,7 @@ summary: Documentation regarding the BimlFlex Batches editor, including editor f
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Batches Editor
+# Batch Editor
 
 BimlFlex **Batches** group and help to define an ETL/ELT workload.  They are used by **Projects** to set execution grouping.
 
@@ -13,7 +13,7 @@ BimlFlex **Batches** group and help to define an ETL/ELT workload.  They are use
 
 The following sections describe the UI elements of the Batches Editor and how they are used to author and manage BimlFlex **Batches**.
 
-**Batches Editor**
+**Batch Editor**
 
 ![BimlFlex - Batches Editor](images/bfx-batches-editor-overview.png "BimlFlex - Batches Editor")
 

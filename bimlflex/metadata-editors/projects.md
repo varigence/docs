@@ -13,7 +13,7 @@ BimlFlex **Projects** group and help to define an ETL/ELT workload. They specify
 
 The following sections describe the UI elements of the **Projects Editor** and how they are used to author and manage BimlFlex **Projects**.
 
-**Projects Editor**  
+**Project Editor**
 
 ![BimlFlex Project Editor](images/bfx-projects-editor-overview.png "BimlFlex Project Editor")
 

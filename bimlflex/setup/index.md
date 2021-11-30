@@ -3,7 +3,7 @@ uid: bimlflex-setup-overview
 title: BimlFlex Setup Overview
 summary: Overview of how to setup and install the BimlFlex App
 ---
-# BimlFlex Setup Overview
+# BimlFlex Installation Overview
 
 This section describes system requirements and the installation of the BimlFlex App.
 

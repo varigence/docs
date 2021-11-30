@@ -66,7 +66,7 @@ The **Details Tab** focuses on general **Connection** information and configurat
 
 <img
     src="images/bimlflex-app-editor-connections-fields.png"
-    title="Objects Editor Fields"
+    title="Object Editor Fields"
 />
 
 | Field | Description |

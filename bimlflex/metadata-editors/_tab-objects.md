@@ -45,12 +45,12 @@ Various [Navigational Transitions](#objects-tab-overview-navigational-transition
 | ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
 | Project Value    | Navigate to **Projects Editor**, selecting clicked **Project**       | [Projects Documentation](projects.md)       |
 | Connection Value | Navigate to **Connections Editor**, selecting clicked **Connection** | [Connections Documentation](connections.md) |
-| Object Value     | Navigate to **Objects Editor**, selecting clicked **Object**         | [Objects Documentation](objects.md)         |
+| Object Value     | Navigate to **Object Editor**, selecting clicked **Object**         | [Objects Documentation](objects.md)         |
 
 > [!NOTE]
 > The **Object** navigational transition is the only one provided on the additional views.
 > As such, no further callouts will be made to this.
-> Functionality on the below forms however is consistent: click the **Object** name to navigate to the selected **Object** in the [Objects Editor](objects.md).
+> Functionality on the below forms however is consistent: click the **Object** name to navigate to the selected **Object** in the [Object Editor](objects.md).
 
 #### View: Model Overrides
 
@@ -78,7 +78,7 @@ When these cases are encounter they can be seen and managed from this view.
 />
 
 > [!IMPORTANT]
-> Due to the BimlFlex App not requiring a connection to the raw source systems (this is done during ELT/ELT Orchestration and Integration), auto-complete and intellisense are not provided.
+> Due to the BimlFlex App not requiring a connection to the raw source systems (this is done during ELT/ELT Orchestration and Integration), auto-complete and Intellisense are not provided.
 This is designed for developers/architects who have a strong understanding of SQL and knowledge of the Source Systems that are designing from.
 
 #### View: Dependencies
@@ -91,11 +91,3 @@ Inheritance is a provided feature that allows for controlled reuse of previously
     src="images/bimlflex-app-tab-objects-view-dependencies.png"
     title="Objects Tab - Dependencies View"
 />
-
-<!--
-[//]: # (TODO: Add Links for Dependencies and Inheritance documentation.)
-[//]: # (> [!NOTE])
-[//]: # (> For more information about dependencies and inheritance refer to the appropriate link\(s\) below:  )
-[//]: # (> [Object Dependencies]  - Links to come...  )
-[//]: # (> [Object Inheritance]  - Links to come...  )
--->

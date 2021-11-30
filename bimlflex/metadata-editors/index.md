@@ -5,25 +5,19 @@ summary: Overview of BimlFlex metadata editors with links to BimlFlex tour, dash
 ---
 # BimlFlex App Overview
 
-The BimlFlex App allow users to add and update all the metadata required to automate complex data warehousing solutions. Along with the Modeling tools, they empower data developers to build an end-to-end data solution without ever writing a single line of code.
+The BimlFlex App allows users to add and update all the metadata required to automate complex data warehousing solutions without ever writing a single line of code.
 
 ## BimlFlex Tour
 
-A quick overview of the UI elements that make up an Entity Editor and how the features provides navigation and interaction.
+A quick overview of the User Interface elements that make up an Entity Editor and how the features provides navigation and interaction.
 
-[More about BimlFlex Tour](bimlflex-tour.md)
+* [More about BimlFlex Tour](bimlflex-tour.md)
 
 ## Dashboard
 
 The dashboard provides a quick view of the metadata in the version and contains the most common tasks and navigation options.
 
 [More about the Dashboard](dashboard.md)
-
-## Toolbar
-
-The BimlFlex Toolbar holds links to most of the higher level system configurations. It also contains validations and notifications for ensuring the integrity of the Metadata.
-
-[More about the Toolbar](toolbar.md)
 
 ## Connections Editor
 
@@ -43,11 +37,11 @@ BimlFlex **Projects** group and help to define an ETL/ELT workload. They specify
 
 [More about the Projects Editor](projects.md)
 
-## Objects Editor
+## Object Editor
 
 BimlFlex **Objects** closely mirror a Relational Database table, though not every **Object** will translate as a table 1 for 1 due to BimlFlex having the ability to process flat files, Excel documents and, via use of Extensions Points, APIs calls.
 
-[More about the Objects Editor](objects.md)
+[More about the Object Editor](objects.md)
 
 ## Columns Editor
 

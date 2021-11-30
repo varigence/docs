@@ -5,16 +5,9 @@ summary: Documentation regarding the BimlFlex Columns editor, including editor f
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Columns Editor
+# Column Editor
 
-The **Columns** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.
-
-<!--
-<img
-    src="images/bimlflex-app-editor-columns.png"
-    title="Columns Editor"
-/>
--->
+The **Column** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.
 
 ![BimlFlex Columns Editor](images/bfx-columns-editor.png "BimlFlex Columns Editor")
 
@@ -44,12 +37,6 @@ The Search field will return results in real-time, only presenting Columns conta
 
 ![Columns Editor Action Buttons](images/bfx-objects-action-buttons.png "Columns Editor Action Buttons")
 
-<!--
-<img
-    src="images/bimlflex-app-editor-columns-actions.png"
-    title="Columns Editor Actions"
-/>
--->
 | Icon | Action | Description |
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button will only enabled if there are unsaved changes in the form and no major validation errors. |
@@ -61,9 +48,7 @@ The Search field will return results in real-time, only presenting Columns conta
 
 [!include[Restore Entities Tip](_tip-restore-entities.md)]
 
-## Columns Editor Fields
-
-
+## Column Editor Fields
 
 ![BimlFlex Columns Editor Fields](images/bfx-columns-details-tab.png "BimlFlex Columns Editor Fields")
 

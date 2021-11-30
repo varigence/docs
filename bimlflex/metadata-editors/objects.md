@@ -20,13 +20,13 @@ The following sections describe the User Interface elements of the Object Editor
 
 Objects are displayed in a hierarchical tree view on the left Side Navigation menu. The tree view is organized by Project > Source Connection > Objects, with the number of tables within a given Object displayed in parenthesis.
 
-![BimlFlex Objects Editor](images/bfx-object-editor-overview.png "BimlFlex Objects Editor")
+![BimlFlex Object Editor](images/bfx-object-editor-overview.png "BimlFlex Object Editor")
 
 Selecting an **Object** with multiple tables will display a secondary list of all editable options within. The user may navigate to the Object editor screen by selecting any **Object** from the displayed list.
 
 Selecting an **Object** with a single table will immediately navigate the user to the Object editor screen.
 
-![BimlFlex Object Editor - List](images/bfx-object-editor-listview.png "BimlFlex Objects Editor - List")
+![BimlFlex Object Editor - List](images/bfx-object-editor-listview.png "BimlFlex Object Editor - List")
 
 The tree view for **Objects** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
@@ -49,7 +49,7 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 ### Details Tab - Action Buttons
 
-![BimlFlex - Objects Editor Actions](images/bfx-app-editor-objects-action.png "BimlFlex - Objects Editor Actions")
+![BimlFlex - Object Editor Actions](images/bfx-app-editor-objects-action.png "BimlFlex - Object Editor Actions")
 
 |Icon|Action|Description|
 |-|-|-|
@@ -79,7 +79,7 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 The standard fields hold the bulk of the metadata that will be used to integrate the Object. Additional fields to manage the modeling and the ability to toggle Object level persistence is provided.  
 
-![Objects Editor Fields](images/objects-details-tab-new.png "Objects Editor Fields")
+![Object Editor Fields](images/objects-details-tab-new.png "Object Editor Fields")
 
 ### Model Overrides - Standard Fields
 
@@ -97,7 +97,7 @@ The majority of the SQL Overrides are provided to handle the various scenarios w
 
 <img
     src="images/bimlflex-app-editor-objects-fields-sql-overrides.png"
-    title="Objects Editor SQL Overrides Fields"
+    title="Object Editor SQL Overrides Fields"
 />
 
 |Field|Description|

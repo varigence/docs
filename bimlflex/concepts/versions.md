@@ -15,6 +15,6 @@ Versions can be used to manage changes in metadata, for example to contain certa
 
 In the BimlFlex App, there are options to manage versions for a selected Customer. This can be done in the Administration section in the application. This is further detailed in the [Versions sections in the BimlFlex App documentation](xref:bimlflex-application-versions).
 
-You can switch between Versions directly in the [BimlFlex Toolbar](xref:bimlflex-application-toolbar-icons-and-options), or in the [Database Settings](xref:bimlflex-application-database-settings) menu.
+You can switch between Versions directly in the [BimlFlex Toolbar](xref:bimlflex-tour#bimlflex-toolbar), or in the [Database Settings](xref:bimlflex-application-database-settings) menu.
 
 In addition to regular versioning as described in this section, BimlFlex internally also records history of changes within each version so that a full audit trail is always available.

@@ -2,7 +2,7 @@
   href: index.md
   topicHref: index.md
   items:
-  - name: Setting Up BimlFlex
+  - name: Installation
     href: setup/toc.yml
 
   - name: Getting Started
@@ -11,7 +11,7 @@
   - name: Concepts
     href: concepts/toc.yml
 
-  - name: BimlFlex Platform Components
+  - name: BimlFlex Components
     href: bimlflex-components/toc.yml    
 
   - name: BimlFlex App
