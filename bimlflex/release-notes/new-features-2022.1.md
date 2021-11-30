@@ -1,8 +1,9 @@
 ---
 uid: bimlflex-2022-r1-new-features
-name: New Features in BimlFlex 2022
+name: New Features in BimlFlex 2022 R1
+summary: New Features Included Within BimlFlex 2022 R1
 ---
-# New Features in BimlFlex 2022
+# New Features in BimlFlex 2022 R1
 
 ## Feature Highlights
 
@@ -64,3 +65,7 @@ Even better, using Data Flows can use integration runtimes for the compute witho
 This is the inline feature and makes it possible to configure an Azure Storage Account (Azure Data Lake Gen2) and use the Delta Lake features without any further configuration.
 
 In the preview version, it is possible to deploy your solution using the 'Azure Data Flow' Integration Template against new 'Azure Data Lake Store' connections combined with the new 'Delta Lake' System Type.
+
+## BimlFlex 2022 R1 Release Notes
+
+* Read the complete BimlFlex 2022 R1 Release Notes [here](xref:bimlflex-release-notes-2022-r1)
