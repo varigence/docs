@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Change References To Integration Key
 
-Determines whether the Import Metadata feature adds derived Integration Keys based on source references, or use source columns for references.
+Determines if the Import Metadata feature adds derived Integration Keys based on source references, or use source columns for references.
 
 Notes:
 

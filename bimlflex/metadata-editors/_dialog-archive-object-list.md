@@ -1,6 +1,6 @@
 #### Archive Object Dialog Box
 
-Archiving means that metadata is physicall deleted. A confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the *OK* button.
+Archiving means that metadata is physically deleted. A confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the *OK* button.
 
 ![Archive Multiple Objects Dialog Box -mtb-20-image](images/bimlflex-app-dialog-archive-object-list.png "Archive Multiple Objects Dialog Box")
 

@@ -179,7 +179,7 @@ Update: Derived Hubs from Links (to same Hub) no longer use same BK for second h
 > Breaking change in feature.
 > The 63013 Bundle introduces a new feature that requires the BimlFlex database to be updated to the same version.
 
-* Add: New Feature: support for Transient ChangeType. This can be used for columns that are used in the pipeline and excluded from the target and hashing.
+* Add: New Feature: support for Transient ChangeType. This can be used for columns that are used in the pipeline and excluded from the target and hashing - SSIS only.
 * Add: `NoOfContainers` configuration to `Batch` allowing specification of the max number of Sequence Containers included per batch.
 * Add: New Feature: support for [Microsoft SQL Server Change Tracking](https://docs.microsoft.com/en-us/sql/relational-databases/track-changes/about-change-tracking-sql-server) as Source Type.
 * Add: support for ODBC based SQL ELT patterns to support calling of future Snowflake templates.
@@ -351,7 +351,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 
 * Added additional logic to handle the `ParameterColumnExpression` with `ExecuteSqlOnSource`
 * Update to rdv helper functions for Multi Active Key End Dating
-* Update to accommodate a scenario where a Satellite exist with a Link and no Hub. This should not happen, but can  if the Data Vault is modelled incorrectly
+* Update to accommodate a scenario where a Satellite exist with a Link and no Hub. This should not happen, but can if the Data Vault is modeled incorrectly.
 * Update to `SqlDwSatEndDate` to update `RowIsCurrent`
 * Added `BusinessKeyQualifiedName`, `BusinessKeyName`, `PrimaryKeyQualifiedName` and `PrimaryKeyName` to `TableObject`
 * Update to PSA parameters for Azure SQL Data Warehouse and Satellite End Dates

@@ -1,28 +1,21 @@
 ---
 uid: bimlflex-app-batches
 title: Batches
-summary: Documentation regarding the BimlFlex Batches editor, including editor fields, action buttons, field descriptions, and setting options. 
+summary: Documentation regarding the BimlFlex Batch Editor, including editor fields, action buttons, field descriptions, and setting options. 
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Batches Editor
+# Batch Editor
 
 BimlFlex **Batches** group and help to define an ETL/ELT workload.  They are used by **Projects** to set execution grouping.
 
 ## Editor Overview
 
-The following sections describe the UI elements of the Batches Editor and how they are used to author and manage BimlFlex **Batches**.
+The following sections describe the UI elements of the Batch Editor and how they are used to author and manage BimlFlex **Batches**.
 
-**Batches Editor**
+**Batch Editor**
 
-![BimlFlex - Batches Editor](images/bfx-batches-editor-overview.png "BimlFlex - Batches Editor")
-
-<!--
-<img
-    src="images/bimlflex-app-editor-batches.png"
-    title="Batches Editor"
-/>
--->
+![BimlFlex - Batch Editor](images/bfx-batches-editor-overview.png "BimlFlex - Batch Editor")
 
 ## Details Tab
 
@@ -30,14 +23,8 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 ### Details Tab - Action Buttons  
 
-![BimlFlex Batches Editor - Action Buttons](images/bfx-batches-action-buttons.png "BimlFlex Batches Editor - Action Buttons")
+![BimlFlex Batch Editor - Action Buttons](images/bfx-batches-action-buttons.png "BimlFlex Batch Editor - Action Buttons")
 
-<!--
-<img
-    src="images/bimlflex-app-editor-batches-actions.png"
-    title="Batches Editor Actions"
-/>
--->
 
 |Icon|Action|Description|
 |-|-|-|
@@ -59,7 +46,7 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 <img
     src="images/bimlflex-app-editor-batches-fields.png"
-    title="Batches Editor Fields"
+    title="Batch Editor Fields"
 />
 
 |Field|Description|

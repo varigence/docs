@@ -1,3 +1,11 @@
+---
+uid: bimlflex-reference-documentation-index
+title: BimlFlex Reference Documentation
+summary: The BimlFlex Reference Documentation contains detailed information about the many ways BimlFlex can be configured
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
+---
+
 # BimlFlex Reference Documentation
 
 The BimlFlex Reference Documentation contains detailed information about the many ways BimlFlex can be configured.

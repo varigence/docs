@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Process On Stage
 
-Determines whether the Data Vault stored procedure be called after the source extract to staging process has been completed.
+Determines if the Data Vault stored procedure be called after the source extract to staging process has been completed.
 
 For Azure projects. this must be combined with "AzureStageOnExtract".
 

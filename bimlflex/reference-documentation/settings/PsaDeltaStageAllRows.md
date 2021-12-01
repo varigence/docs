@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Delta Stage All Rows
 
-Determines whether the delta process stages all rows. Otherwise, the process will compress row changes into distinct change rows - removing full row duplicates.
+Determines if the delta process stages all rows. Otherwise, the process will compress row changes into distinct change rows - removing full row duplicates.
 
 Assuming the FlexRowEffectiveDateTime for a given set of rows is sequential but different, but the row values (checksum) is the same for these rows only the first row is retained.
 

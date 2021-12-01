@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Enable Delete Detection
 
-Determines whether BimlFlex applies a separate key load pattern that will enable detection of hard deletes in the source.
+Determines if BimlFlex applies a separate key load pattern that will enable detection of hard deletes in the source.
 
 Use this together with the "DeleteDetectionApplyRdv" and "DeleteDetectionApplyPsa" Settings
 

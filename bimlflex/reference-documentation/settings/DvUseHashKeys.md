@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Use Hash Keys
 
-Determines whether the Data Vault uses Hash Keys, alternatively Natural Keys can be used by disabling this setting.
+Determines if the Data Vault uses Hash Keys. Alternatively, Natural Keys can be used by disabling this setting.
 
 Notes:
 

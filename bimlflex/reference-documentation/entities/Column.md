@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Columns
 
-The BimlFlex [`Column`](xref:columns) concept contains the components of an [Column](xref:objects).Columns define the detailed information to transform and map data from source to target.<br><br>Columns within BimlFlex are displayed in a hierarchical tree view on the left side navigation menu. The total number of Columns within a Project will be displayed next to the Project name in parentheses. The total number of Columns within an individual Object will similarly be displayed next to the Object name. 
+The BimlFlex [`Column`](xref:bimlflex-column-editor) concept contains the components of an [Column](xref:bimlflex-object-editor).Columns define the detailed information to transform and map data from source to target.<br><br>Columns within BimlFlex are displayed in a hierarchical tree view on the left side navigation menu. The total number of Columns within a Project will be displayed next to the Project name in parentheses. The total number of Columns within an individual Object will similarly be displayed next to the Object name. 
 	<br><br>Selecting a Project will display a secondary list of all Columns within, organized by Object.
 The user may navigate to any Column by selecting it from the displayed list.
 
@@ -16,44 +16,44 @@ The user may navigate to any Column by selecting it from the displayed list.
   
 | Property | Description |
 | --------- | ----------- |
-|`Name` | Name of the Column within the Object. For any column other than the source we recommend using CamelCase. For ORACLE we recommend UPPERCASE separated by underscores.|
-|`Length` | This value specifies the length parameter for the column data type. Set to -1 to indicate MAX length.<br><br>This property applies only to column types that support a length specification, such as String and Binary types.|
-|`Precision` | This value specifies the precision parameter for the column data type. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.|
-|`Scale` | This value specifies the scale parameter for the column data type. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.|
-|`Ordinal` | This value specifies the length parameter for the column type associated with this column. Set to -1 to indicate MAX length.<br><br>This property applies only to column types that support a length specification, such as String and Binary types.|
-|`IsPrimaryKey` | `Y` if this column is the primary key of the object. The PRIMARY KEY uniquely identifies each record in a database table. Primary keys must contain UNIQUE values. A primary key column cannot contain NULL values.|
-|`IsIntegrationKey` | `Y` if this column is the integration key of the object. Note that the framework allows only one integration key per object. If the object has multiple columns that makes up the integration key define a derived concatenated column.|
-|`IsSourceKey` | `Y` if this column is the source primary key of the object. This is generally defined if the object has multiple columns as the integration key and a derived concatenated integration key has been defined.|
-|`IsIdentity` | Enable to inform BimlFlex that this column is an identity Column for the Object.|
-|`IsNullable` | `Y` if this column is the allow NULL (empty) values|
-|`IsNotPersistent` | Defines an override that applies to a Column for a Connection, that applies to the behaviour in the Persistent Staging Area (PSA). When enabled, the Column will not be stored in the PSA. In other words, setting this override to `Y` will exclude the column from being persisted.|
-|`ExcludeFromModel` | Entering Y into this column will determine if this column will be built along with the rest of the solution when the BimlFlex solution is being compiled.|
-|`BusinessName` | This column contains the business column name users want the object to appear as after the solution is deployed. This is better described with and example. Let’s say you have a source system with cryptic names like GL002 and the actual business name is GeneralLedgerCode. By defining a value and generating a Data Vault using the BimlFlex Accelerator the resulting column will be [GeneralLedgerCode]|
-|`BusinessGrouping` | This attribute is used to group columns into their own satellites. Example would be if you have a customer table that has a column `LastLoginDate` that changes frequently you might want to model this in a separate satellite. All columns with the same BusinessGrouping will be generated into separate satellites. It is also used to define a Unit Of Work on Links|
-|`BusinessReference` | This attribute is used multiple table references. Example would be the SalesOrder table with a ShippingAddress and BillingAddress reference to the Address table. Two links will be created with the BusinessReference forming part of the name. This attribute is autogenerated by our schema import and can be overridden.|
-|`DefaultValue` | This value specifies a default value for the column using Transact-SQL constant expression syntax.|
-|`SqlSourceExpression` | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. Example: `CONVERT(VARCHAR(27), @@this, 121)`|
-|`SqlTargetExpression` | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. Example: `CONVERT(VARCHAR(27), @@this, 121)`|
-|`DataflowExpression` | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.|
-|`DataflowDataType` | This attribute is used to overwrite the data type for the `DataflowExpression`.|
-|`IsDerived` | `Y` if the value in this column is derived during the ETL process. This is generally set in conjunction with the `SsisDataflowExpression` attribute.|
-|`SolveOrder` | This attribute is used when defining `DataflowExpressions` that need to be parsed in a specific order. Example would be if you want to split a very complex calculation up into multiple expressions that is derived in a specific sequence.|
-|`ColumnAlias` | Alias for the column. Generally used in conjunction with SqlSourceExpression.|
-|`FriendlyName` | Business Friendly name of column.|
-|`Description` | The column described in business context. Often referred to as business metadata.|
-|`Comments` | Generic comments for use by the Analyst and Modelers to keep notes related to the column.|
+|Name | Name of the Column within the Object. For any column other than the source we recommend using CamelCase. For ORACLE we recommend UPPERCASE separated by underscores.|
+|Length | This value specifies the length parameter for the column data type. Set to -1 to indicate MAX length.<br><br>This property applies only to column types that support a length specification, such as String and Binary types.|
+|Precision | This value specifies the precision parameter for the column data type. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.|
+|Scale | This value specifies the scale parameter for the column data type. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.|
+|Ordinal | This value specifies the length parameter for the column type associated with this column. Set to -1 to indicate MAX length.<br><br>This property applies only to column types that support a length specification, such as String and Binary types.|
+|IsPrimaryKey | `Y` if this column is the primary key of the object. The PRIMARY KEY uniquely identifies each record in a database table. Primary keys must contain UNIQUE values. A primary key column cannot contain NULL values.|
+|IsIntegrationKey | `Y` if this column is the integration key of the object. Note that the framework allows only one integration key per object. If the object has multiple columns that makes up the integration key define a derived concatenated column.|
+|IsSourceKey | `Y` if this column is the source primary key of the object. This is generally defined if the object has multiple columns as the integration key and a derived concatenated integration key has been defined.|
+|IsIdentity | Enable to inform BimlFlex that this column is an identity Column for the Object.|
+|IsNullable | `Y` if this column is the allow NULL (empty) values|
+|IsNotPersistent | Defines an override that applies to a Column for a Connection, that applies to the behaviour in the Persistent Staging Area (PSA). When enabled, the Column will not be stored in the PSA. In other words, setting this override to `Y` will exclude the column from being persisted.|
+|ExcludeFromModel | Entering Y into this column will determine if this column will be built along with the rest of the solution when the BimlFlex solution is being compiled.|
+|BusinessName | This column contains the business column name users want the object to appear as after the solution is deployed. This is better described with and example. Let’s say you have a source system with cryptic names like GL002 and the actual business name is GeneralLedgerCode. By defining a value and generating a Data Vault using the BimlFlex Accelerator the resulting column will be [GeneralLedgerCode]|
+|BusinessSubject | This attribute is used to group columns into their own satellites. Example would be if you have a customer table that has a column `LastLoginDate` that changes frequently you might want to model this in a separate satellite. All columns with the same BusinessSubject will be generated into separate satellites. It is also used to define a Unit Of Work on Links|
+|BusinessReference | This attribute is used multiple table references. Example would be the SalesOrder table with a ShippingAddress and BillingAddress reference to the Address table. Two links will be created with the BusinessReference forming part of the name. This attribute is autogenerated by our schema import and can be overridden.|
+|DefaultValue | This value specifies a default value for the column using Transact-SQL constant expression syntax.|
+|SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. Example: `CONVERT(VARCHAR(27), @@this, 121)`|
+|SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. Example: `CONVERT(VARCHAR(27), @@this, 121)`|
+|DataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.|
+|DataflowDataType | This attribute is used to overwrite the data type for the `DataflowExpression`.|
+|IsDerived | `Y` if the value in this column is derived during the ETL process. This is generally set in conjunction with the `SsisDataflowExpression` attribute.|
+|SolveOrder | This attribute is used when defining `DataflowExpressions` that need to be parsed in a specific order. Example would be if you want to split a very complex calculation up into multiple expressions that is derived in a specific sequence.|
+|ColumnAlias | Alias for the column. Generally used in conjunction with SqlSourceExpression.|
+|FriendlyName | Business Friendly name of column.|
+|Description | The column described in business context. Often referred to as business metadata.|
+|Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the column.|
 
 ## References
   
 | Property | Description |
 | --------- | ----------- |
-|`ObjectUID` | Relationship to the Object for this column.|
-|`CustomerUID` | Reference to the Customer that this Column belongs to.|
-|`VersionUID` | Reference to the Version that this Column belongs to.|
-|`DataTypeId` | This value specifies the type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like `hierarchyid`. Below is a list of the current possible Data Types.|
-|`ChangeTypeId` | This value specifies the slowly changing dimension type for the column. Below is a list of the current possible Change Types.|
-|`BusinessAttributeUID` | |
-|`DataTypeMappingUID` | |
-|`ReferenceColumnUID` | Relationship between this column and the reference object. Reference columns are used to define logical relationships between object (tables). This is used to relate IntegrationKeys in Data Vault sources and ForeignKeys in the Data Warehouse targets.|
-|`TargetColumnUID` | Source to Target column mapping.|
+|ObjectUID | Relationship to the Object for this column.|
+|CustomerUID | Reference to the Customer that this Column belongs to.|
+|VersionUID | Reference to the Version that this Column belongs to.|
+|DataTypeId | This value specifies the type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like `hierarchyid`. Below is a list of the current possible Data Types.|
+|ChangeTypeId | This value specifies the slowly changing dimension type for the column. Below is a list of the current possible Change Types.|
+|BusinessAttributeUID | |
+|DataTypeMappingUID | |
+|ReferenceColumnUID | Relationship between this column and the reference object. Reference columns are used to define logical relationships between object (tables). This is used to relate IntegrationKeys in Data Vault sources and ForeignKeys in the Data Warehouse targets.|
+|TargetColumnUID | Source to Target column mapping.|
 

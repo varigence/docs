@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Use Function Bridge Key Vault
 
-Determines whether the Azure Function Bridge uses the Azure Key Vault specified in the AzureFunctionBridgeKeyVault settings. Alternatively, the Azure Function Bridge can instantiate the Linked Service with the Key directly in the Data Factory using the default settings.
+Determines if the Azure Function Bridge uses the Azure Key Vault specified in the AzureFunctionBridgeKeyVault settings. Alternatively, the Azure Function Bridge can instantiate the Linked Service with the Key directly in the Data Factory using the default settings.
 
 Notes:
 

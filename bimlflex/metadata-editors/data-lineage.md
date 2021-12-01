@@ -1,7 +1,7 @@
 ---
-uid: column-mapping
-title: Column Mapping
-summary: Documentation on Column Mapping within BimlFlex to review and update graphical interface, with starting point, context aware actions, action buttons, and settings
+uid: bimlflex-data-lineage
+title: Data Lineage
+summary: Documentation on Data Lineage within BimlFlex to review and update graphical interface, with starting point, context aware actions, action buttons, and settings
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---

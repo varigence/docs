@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Zip Output File
 
-Determine whether the created output file is zipped.
+Determine if the created output file is zipped.
 
 Notes:
 

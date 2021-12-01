@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Delay Validation
 
-Determines whether generated SSIS packages use delayed validation for metadata validation.
+Determines if generated SSIS packages use delayed validation for metadata validation.
 
 Notes:
 

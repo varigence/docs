@@ -4,23 +4,21 @@
   href: bimlflex-tour.md
 - name: Dashboard
   href: dashboard.md
-- name: Toolbar
-  href: toolbar.md
-- name: BimlFlex Database Settings
-  href: database-settings.md
-- name: Connections
+- name: Customer Selection
+  href: customers.md  
+- name: Connection Editor
   href: connections.md
-- name: Batches
+- name: Batch Editor
   href: batches.md
-- name: Projects
+- name: Project Editor
   href: projects.md
-- name: Objects
+- name: Object Editor
   href: objects.md
-- name: Columns
+- name: Column Editor
   href: columns.md
-- name: Parameters
+- name: Parameter Editor
   href: parameters.md
-- name: Attributes
+- name: Attribute Editor
   href: attributes.md
 - name: Configurations
   href: configurations.md
@@ -28,7 +26,15 @@
   href: settings.md
 - name: Data Type Mappings
   href: data-type-mappings.md
-- name: Versions
-  href: versions.md
-- name: Reports
-  href: operational-reports.md
+- name: Version Management
+  href: versions.md    
+- name: Operational Reports
+  href: operational-reports.md 
+- name: Accelerator
+  href: accelerator.md 
+- name: Schema Diagram
+  href: schema-diagram.md 
+- name: Data Lineage
+  href: data-lineage.md       
+   
+

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Overwrite External Table Defaults
 
-Determines whether existing external table-related files are overwritten.
+Determines if existing external table-related files are overwritten.
 
 Disable this if the values for Credentials, Data Sources, External Table Formats have been manually updated in the SSDT project to keep the build from overwriting these files
 

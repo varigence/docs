@@ -10,6 +10,6 @@
 | Raw Data Vault          | A uniquely linked set of normalized tables that support one or more functional areas of business and provides historical tracking. |
 | Business Data Vault     | This layer represents the data following the application of the soft business rules that may be required.                          |
 | Data Mart               | A subset of data stored within the data warehouse, for the needs of a specific team, section or department within the enterprise.  |
-| Master Data Services    | Microsoft's solution for handling "master" data within an enterprise.                                                              |
+| Master Data Services    | Microsoft's solution for handling "master" data within an enterprise using SQL Server.                                             |
 | File Export             | A file or series of files that contain a subset of the data in a Data Warehouse.                                                   |
 | Landing Area            | Only applicable to Cloud Enabled Connections.                                                                                      |

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Hash Binary
 
-Determines whether the generated [hash value](xref:bimlflex-concepts-hashing) is stored as a binary representation, as opposed to a string representation.
+Determines if the generated [hash value](xref:bimlflex-concepts-hashing) is stored as a binary representation or as a string representation.
 
 Notes:
 

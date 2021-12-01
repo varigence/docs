@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Use TRY_CAST Conversion
 
-Determines whether the select-to-stage tables use TRY_CAST and TRY_CONVERT.
+Determines if the select-to-stage tables use TRY_CAST and TRY_CONVERT.
 
 Notes:
 

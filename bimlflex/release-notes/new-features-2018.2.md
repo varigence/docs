@@ -51,7 +51,7 @@ A new `Proper_Case` naming override has been introduced in addition to existing 
 
 ## Transient Change Type
 
-A new column change type has been added. The transient column will be available in the data flow pipeline but not included in the target or hashing operations.
+A new column change type has been added. The transient column will be available in the data flow pipeline (SSIS only) but *not* included in the target or hashing operations.
 
 ## Number of containers control in Batches
 

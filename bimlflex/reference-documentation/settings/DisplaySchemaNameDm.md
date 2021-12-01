@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Display Schema Name
 
-Determines whether the Schema name is included in Data Mart object names.
+Determines if the Schema name is included in Data Mart object names.
 
 This setting affects the name of the object as it is shown in the logical view in Bimlstudio (the expanded model). This is related to the "Append Schema" setting in the Data Mart setting group.
 

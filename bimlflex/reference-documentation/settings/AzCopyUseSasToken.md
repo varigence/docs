@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Use SAS Token
 
-Determines whether AzCopy used a SAS Token for access. This is the only supported authentication mechanism for AzCopy v.10. For legacy versions (5/8) you can use Account Key or SAS Token.
+Determines if AzCopy uses a SAS Token for access. This is the only supported authentication mechanism for AzCopy v.10. For legacy versions (5/8) it is possible to use an Account Key or a SAS Token.
 
 Notes:
 

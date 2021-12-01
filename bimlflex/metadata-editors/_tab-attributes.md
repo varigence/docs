@@ -32,6 +32,6 @@ All **Attributes** assigned to the current entity show here.  New items can be e
 
 | Item | Action | Entity Documentation |
 | ---- | ------ | -------------------- |
-| Object Value | Navigate to **Objects Editor**, selecting clicked **Object** | [Objects Documentation](objects.md) |
-| Column Value | Navigate to **Columns Editor**, selecting clicked **Column** | [Columns Documentation](columns.md) |
-| Attribute Value | Navigate to **Attributes Editor**, selecting clicked **Attribute** | [Attributes Documentation](attributes.md) |
+| Object Value | Navigate to **Object Editor**, selecting clicked **Object** | [Object Documentation](objects.md) |
+| Column Value | Navigate to **Column Editor**, selecting clicked **Column** | [Column Documentation](columns.md) |
+| Attribute Value | Navigate to **Attribute Editor**, selecting clicked **Attribute** | [Attribute Documentation](attributes.md) |

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Rollback DV
 
-Determines whether the Batch orchestration engine rolls back (deletes) committed changes to the Data Vault database in case of a failed process.
+Determines if the Batch orchestration engine rolls back (deletes) committed changes to the Data Vault database in case of a failed process.
 
 Notes:
 

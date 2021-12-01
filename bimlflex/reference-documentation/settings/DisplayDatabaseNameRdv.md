@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Display Database Name
 
-Determines whether the database name is displayed in the Raw Data Vault.
+Determines if the database name is displayed in the Raw Data Vault.
 
 Notes:
 

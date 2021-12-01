@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Display Database Name
 
-Determines whether the Database name is included in Data Mart object names.
+Determines if the Database name is included in Data Mart object names.
 
 Notes:
 

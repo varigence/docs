@@ -1,28 +1,21 @@
 ---
 uid: bimlflex-application-connections
 title: Connections
-summary: Documentation regarding the BimlFlex Connections editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
+summary: Documentation regarding the BimlFlex Connection editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Connections Editor
+# Connection Editor
 
 **Connections** provide the information required to connect to data sources. It also acts as containers for objects and allows setting overrides. Additionally, it has metadata to identify the integration stage along with package execution settings.
 
 ## Editor Overview
 
-The following sections describe the UI elements of the **Connections Editor** and how they are used to author and manage BimlFlex **Connections**.
+The following sections describe the UI elements of the **Connection Editor** and how they are used to author and manage BimlFlex **Connections**.
 
-**Connections Editor**
+**Connection Editor**
 
-![BimlFlex - Connections Editor](images/bfx-connections-editor.png "BimlFlex - Connections Editor")
-
-<!--
-<img
-    src="images/bimlflex-app-editor-connections.png"
-    title="Connections Editor"
-/>
--->
+![BimlFlex - Connection Editor](images/bfx-connections-editor.png "BimlFlex - Connection Editor")
 
 ### Cloud Based Linked Services
 
@@ -39,7 +32,7 @@ The **Details Tab** focuses on general **Connection** information and configurat
 <!--
 <img
     src="images/bimlflex-app-editor-connections-actions.png"
-    title="Connections Editor Actions"
+    title="Connection Editor Actions"
 />
 -->
 
@@ -66,7 +59,7 @@ The **Details Tab** focuses on general **Connection** information and configurat
 
 <img
     src="images/bimlflex-app-editor-connections-fields.png"
-    title="Objects Editor Fields"
+    title="Object Editor Fields"
 />
 
 | Field | Description |

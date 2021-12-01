@@ -1,31 +1,24 @@
 ---
-uid: columns
+uid: bimlflex-column-editor
 title: Columns
-summary: Documentation regarding the BimlFlex Columns editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
+summary: Documentation regarding the BimlFlex Column editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Columns Editor
+# Column Editor
 
-The **Columns** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.
+The **Column** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.
 
-<!--
-<img
-    src="images/bimlflex-app-editor-columns.png"
-    title="Columns Editor"
-/>
--->
+![BimlFlex Column Editor](images/bfx-columns-editor.png "BimlFlex Column Editor")
 
-![BimlFlex Columns Editor](images/bfx-columns-editor.png "BimlFlex Columns Editor")
-
-**Columns** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
+**Columns** within BimlFlex are displayed in a hierarchical tree view on the left side-navigation menu.
 The total number of **Columns** within a **Project** will be displayed next to the **Project** name in parentheses.
 The total number of **Columns** within an individual **Object** will similarly be displayed next to the **Object** name.
 
 Selecting a **Project** will display a secondary list of all **Columns** within, organized by **Object.**  
 The user may navigate to any **Column** by selecting it from the displayed list.
 
-![BimlFlex Columns Editor - Listview](images/bfx-columns-editor-listview.png "BimlFlex Columns Editor - Listview")
+![BimlFlex Column Editor - Listview](images/bfx-columns-editor-listview.png "BimlFlex Column Editor - Listview")
 
 The tree view for **Columns** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
@@ -38,18 +31,12 @@ This option is enabled by default.
 The Search field is contained within the tree view menu, and will be hidden when collapsed.
 The Search field will return results in real-time, only presenting Columns containing the term being searched.
 
-![BimlFlex Columns Editor - Search Field](images/bfx-columns-editor-search-field.png "BimlFlex Columns Editor - Search Field")
+![BimlFlex Column Editor - Search Field](images/bfx-columns-editor-search-field.png "BimlFlex Column Editor - Search Field")
 
 ## Action Buttons
 
-![Columns Editor Action Buttons](images/bfx-objects-action-buttons.png "Columns Editor Action Buttons")
+![Column Editor Action Buttons](images/bfx-objects-action-buttons.png "Column Editor Action Buttons")
 
-<!--
-<img
-    src="images/bimlflex-app-editor-columns-actions.png"
-    title="Columns Editor Actions"
-/>
--->
 | Icon | Action | Description |
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button will only enabled if there are unsaved changes in the form and no major validation errors. |
@@ -61,23 +48,16 @@ The Search field will return results in real-time, only presenting Columns conta
 
 [!include[Restore Entities Tip](_tip-restore-entities.md)]
 
-## Columns Editor Fields
+## Column Editor Fields
 
-<!--
-<img
-    src="images/bimlflex-app-editor-columns-fields.png"
-    title="Columns Editor Fields"
-/>
--->
-
-![BimlFlex Columns Editor Fields](images/bfx-columns-details-tab.png "BimlFlex Columns Editor Fields")
+![BimlFlex Columnn Editor Fields](images/bfx-columns-details-tab.png "BimlFlex Column Editor Fields")
 
 | Field | Description |
 | ----- | ----------- |
 | Connection | The **Connection** the **Column** is associated with. Connection is Required. |
 | Object | The **Object** or table that the **Column** is associated with. Object is Required. |
 | Column | The name of the Column. Column Name is Required. Column Name must be unique for the **Object**. |
-| Data Type | The type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like hierarchyid. Data Type is required. Must be a valid [Data Type](#data-types). |
+| Data Type | The type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like 'hierarchyid'. Data Type is required. Must be a valid [Data Type](#data-types). |
 | Length | The length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types. Set to `-1` to indicate MAX length. Length is required. Length cannot be less than -1. |
 | Business Attribute | The Business Model Attribute that this source column should be modeled to and be accelerated to. |
 | Short Name | Business friendly name for the column. |
@@ -88,7 +68,7 @@ The Search field will return results in real-time, only presenting Columns conta
 | Integration Key | Defines if the **Column** is the Integration Key for the **Object**. Note that the framework allows only one integration key per object. If the object has multiple columns that makes up the integration key define a derived concatenated column. An Integration Key is required for each **Object**. There can only be one Integration Key for the **Object**. |
 | Source Key | Defines if the **Column** is the Source Primary Key for the **Object**. This is generally defined if the object has multiple columns as the integration key and a derived concatenated integration key has been defined. |
 | Identity | Defines if the **Column** is the Identity Column for the **Object**. |
-| Nullable | Defines if the **Column** is nullable. |
+| Nullable | Defines if the **Column** is nullable. In other words, that it is allowed to contain NULL values. |
 | Not Persistent | Defines an Override to the Persistent Staging Connection defined as part of the **Project** entity. A good example of usage would be where derived columns should not be persisted. Note that setting it to true will exclude the column from being persisted. |
 | Reference Table | The source **Object** for this **Column**. |
 | Reference Column | The **Column** on the source object used for this **Column**. The **Column** cannot reference itself. |

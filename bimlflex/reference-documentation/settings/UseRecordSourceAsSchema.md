@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Use Record Source As Schema
 
-Determines whether the `Record Source` is used as the schema name for Staging- and Persistent Staging Area tables.
+Determines if the `Record Source` is used as the schema name for Staging- and Persistent Staging Area tables.
 
 Example: Source table "SalesLT.Product" from the AdventureWorksLT source is staged in table "AWLT.Product".
 

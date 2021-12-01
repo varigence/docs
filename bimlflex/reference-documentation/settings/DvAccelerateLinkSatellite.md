@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Accelerate Link Satellite
 
-Determines whether the BimlFlex Accelerator creates Link Satellites from source metadata, containing attributes and effectivess attributes.
+Determines if the BimlFlex Accelerator creates Link Satellites from source metadata, containing attributes and effectivess attributes.
 
 Notes:
 

@@ -1,7 +1,7 @@
 #### Mist User Guide
 ##### Connection Editor
 
-Use the Connections editor to edit properties and connection strings.
+Use the Connection editor to edit properties and connection strings.
 
 For database connections, enter a connection string and provide authentication information.
 

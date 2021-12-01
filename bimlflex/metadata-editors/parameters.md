@@ -1,11 +1,11 @@
 ---
-uid: parameters
+uid: bimlflex-parameter-editor
 title: Parameters
-summary: Documentation regarding the BimlFlex Parameters editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
+summary: Documentation regarding the BimlFlex Parameter editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Parameters Editor
+# Parameter Editor
 
 Parameters for load queries are added either as metadata in the Parameters sheet or via Extension Points.
 For high watermark delta loads and similar simple parameters adding the **Parameter** to the metadata will generate and include all required logic to the load process.
@@ -21,11 +21,11 @@ BimlFlex applies standard practices for using parameters but supports any custom
 
 ## Editor Overview  
 
-The following sections describe the UI elements of the **Parameters Editor** and how they are used to author and manage BimlFlex **Parameters**.
+The following sections describe the UI elements of the **Parameter Editor** and how they are used to author and manage BimlFlex **Parameters**.
 
-![BimlFlex Parameters Editor - Overview](images/bfx-parameters-overview.png "BimlFlex Parameters Editor - Overview")
+![BimlFlex Parameter Editor - Overview](images/bfx-parameters-overview.png "BimlFlex Parameter Editor - Overview")
 
-**Parameters** within BimlFlex are displayed in a hierarchical tree view on the left sidenav menu.
+**Parameters** within BimlFlex are displayed in a hierarchical tree view on the left side-navigation menu.
 The tree view is organized by **Connections** > **Objects** > **Columns** > **Parameters**.
 
 The total number of **Parameters** will be displayed in parenthesis next to the **Connection** in the menu.

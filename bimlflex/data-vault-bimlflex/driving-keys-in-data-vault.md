@@ -165,7 +165,7 @@ The simple process for both implied creation and manual creation of Driving Keys
 
 BimlFlex can automatically apply a Driving Key to any relationship created from a table being loaded with a *MODEL OBJECT TYPE* = `Hub`.
 Due to the Foreign Keys in a database requiring a many-to-one in the source, the application of a Driving Key scenario can be applied.
-This will be automatically included in the ETL logic and no separate **Attribute** will be added in the **Attributes Editor**.
+This will be automatically included in the ETL logic and no separate **Attribute** will be added in the **Attribute Editor**.
 
 ![BimlFlex Objects Tab](images/bfx-objects-tab-a.png "BimlFlex Objects Tab")
 
@@ -186,8 +186,8 @@ Any changes made to the Driving Key relationships by the user after the first ac
 > - The Link must already be accelerated.
 > - The column to be used for the Driving Key must be on the LNK (not LSAT).
 
-The simplest way to define a Driving Key within BimlFlex is from the **Objects** Editor.
-Upon selecting the **Link** from the Objects editor tree and selecting the **Columns** view, a Driving Key may be assigned from the drop down menu in the *Change Type* column.
+The simplest way to define a Driving Key within BimlFlex is from the **Object** Editor.
+Upon selecting the **Link** from the Object editor tree and selecting the **Columns** view, a Driving Key may be assigned from the drop down menu in the *Change Type* column.
 
 ![Driving Key Assignment within Columns View](images/bfx-columns-view-driving-key.png "Driving Key Assignment within Colums View")
 
