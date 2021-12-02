@@ -23,7 +23,7 @@ Follow the guide for [Source To Staging](xref:bimlflex-source-to-staging-templat
 
 Follow the guide for [Data Vault Accelerator](accelerator.md) to get a Raw Data Vault schema which will be used in this guide.
 
-![Column Mapping User Interface](images/bimlflex-app-column-mapping-full-ui.png "Column Mapping User Interface")
+![Column Mapping User Interface](images/bimlflex-app-data-lineage-full-ui.png "Column Mapping User Interface")
 
 The screenshot above shows the Column Mapping of some Source Tables to  their Target Raw Data Vault as mapped during the Data Vault Accelerator publish.
 
@@ -35,11 +35,11 @@ By clicking on a Table or Column a user gets a pop up of all the actions buttons
 
 There are a few new actions available that are only applicable to the Column Mapping diagram which will be highlighted below.
 
-![Column Mapping Action Icons Minimized](images/bimlflex-app-column-mapping-actions-minimized.png "Column Mapping Action Icons Maximized")
+![Column Mapping Action Icons Minimized](images/bimlflex-app-data-lineage-actions-minimized.png "Column Mapping Action Icons Maximized")
 
 By Clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
 
-![Column Mapping Action Icons Maximized](images/bimlflex-app-column-mapping-actions-maximized.png "Column Mapping Action Icons Maximized")
+![Column Mapping Action Icons Maximized](images/bimlflex-app-data-lineage-actions-maximized.png "Column Mapping Action Icons Maximized")
 
 | Icon | Action | Description |
 |--- |--- |--- |
@@ -69,7 +69,7 @@ Tables can be dragged around on the screen to make the layout easier to view.
 
 ### Filtering Tables
 
-![Filtered Tables](images/bimlflex-app-column-mapping-selection-panes.png "Filtered Tables")
+![Filtered Tables](images/bimlflex-app-data-lineage-selection-panes.png "Filtered Tables")
 
 Use filtering in the Selection pane to see only specific tables in your view. There are two Selection Panes in the Column Mapping diagram. The Source and Target selection panes are related and have certain rules which are enforced:
 
@@ -88,7 +88,7 @@ Examples:
 * To view only SRC => SATs a user can select the Satellites in the target pane.
 * To view only SRC => HUBs and LNKs a user can select the Hubs and Links in the target pane.
 
-![Filtered HUB Tables](images/bimlflex-app-column-mapping-hubs.png "Filtered HUB Tables")
+![Filtered HUB Tables](images/bimlflex-app-data-lineage-hubs.png "Filtered HUB Tables")
 
 The example above shows Source to Hub mappings.
 
@@ -103,7 +103,7 @@ To illustrate this, see the image below.
 * If a user de-selects the HUB it will only remove the HUB, but if he de-selects the HUB and the SAT it will also remove the Source table.
 * If a user de-selects the Source table it will also remove the HUB and the SAT tables.
 
-![De-Select Tables](images/bimlflex-app-column-mapping-de-select.png "De-Select Tables")
+![De-Select Tables](images/bimlflex-app-data-lineage-de-select.png "De-Select Tables")
 
 ### Moving Columns between Satellites
 
@@ -115,16 +115,16 @@ The images of the Customer table mapping below illustrate this action:
 
 * Start by splitting out the Name columns into a Name Satellite:
 
-![Split SAT Start](images/bimlflex-app-column-mapping-split-start.png "Split SAT Start")
+![Split SAT Start](images/bimlflex-app-data-lineage-split-start.png "Split SAT Start")
 
 * This is what it looks like after splitting out the Name Satellite:
 
-![Split SAT Done](images/bimlflex-app-column-mapping-split-done.png "Split SAT Done")
+![Split SAT Done](images/bimlflex-app-data-lineage-split-done.png "Split SAT Done")
 
 * Now, drag the Title column into a Name Satellite:
 
-![Split SAT Drag Title](images/bimlflex-app-column-mapping-split-drag-title.png "Split SAT Drag Title")
+![Split SAT Drag Title](images/bimlflex-app-data-lineage-split-drag-title.png "Split SAT Drag Title")
 
 * You should end up with the Title column in the Name Satellite:
 
-![Split SAT Drag Title Done](images/bimlflex-app-column-mapping-split-drag-title-done.png "Split SAT Drag Title Done")
+![Split SAT Drag Title Done](images/bimlflex-app-data-lineage-split-drag-title-done.png "Split SAT Drag Title Done")
