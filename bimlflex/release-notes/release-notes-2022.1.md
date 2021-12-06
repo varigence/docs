@@ -24,7 +24,7 @@ Build 22.1.nnn.0, release date: 10 12 2022
 
 ## 2022 R1 New Features
 
-* Business Modeling Now Available
+* New feature: Business Modeling
 * Added support for Salesforce connector
 * Added support for Azure PostgreSQL connector
 * User Interface Improvements for all BimlFlex Visual Editors
@@ -54,7 +54,7 @@ Additional information here: [BimlFlex 2022 R1 New Features](xref:bimlflex-2022-
 * Added deployable Azure PostgreSQL Linked Service.
 * Added SSIS component Connection using Intellisoft PostgreSQL OLEDB.
 * Added *Generate SQL* command for querying views, querying indexes, and querying column metadata.
-* Updated the BimlFlex App metadata import support to be more robust, including ensuring that SSL property of 'connectionstring' was not required.
+* Updated the BimlFlex App metadata import support to be more robust, including ensuring that SSL property of `connectionstring` was not required.
 
 ### UI Improvements
 
@@ -86,7 +86,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 
 ### Various New Support
 
-* Added a Pushdown Processing feature at **Project** level to direct the generation, so that the code produced can be executed against the underlying connection. This is instead of being loaded and then processed. This was previously managed on the Connection level.
+* Added a Pushdown Processing feature at **Project** level to direct the generation, so that the code produced can be executed against the underlying connection. This is instead of being loaded and then processed. This was previously managed on the **Connection** level.
 * Added `Pause` in SSIS Deploy ps1 files to allow the SSIS catalog to ingest the projects without errors.
 * Added validator support for ETL configurations.
 * Modified ELT code to spawn Stored Procedures for ELT Staging process.
@@ -231,7 +231,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 * Ensured that **Object** and **Column** entityTypes use **Connection** as a *rootEntityType*.
 * Ensured that authentication is hidden when KeyVaultString is configured for `connectionstring`.
 * Disabled individual SQL statement overrides when using the `override SQL` command.
-* Ensured that disabling *Cloud* toggle disables LinkedSerivce UI before **Save** is clicked.
+* Ensured that disabling *Cloud* toggle disables LinkedService UI before **Save** is clicked.
 * Ensured that enabling *Cloud* toggle enables LinkedService UI before **Save** is clicked.
 * Fixed a bug where toggling *Cloud* toggled entity on base form but not in `Add Connection` dialog.
 * Fixed a bug where Dashboard *Recent Connections* did not order items by history.

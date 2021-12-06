@@ -22,7 +22,7 @@ Users can design a holistic model that describes the business' data, while avoid
 Business Modeling within BimlFlex seeks to preserve the essence of this process: collaboration, discussion, and interaction, while simultaneously digitizing the team experience.
 
 Business Models can be created using predefined Ensemble Logical Modeling (ELM) or Party & Party Role (PPR) approaches, or by defining a custom set of classifications and labels.
-For example, customization is supported by defining types such as Subjects, People, Events or Places.
+For example, customization is supported by defining types such as Subjects, People, Events, or Places.
 These types of Business Model objects are represented as 'cards' on the model design board.
 
 Business Models can be mapped to the data sources in BimlFlex to forward-engineer the data solution from there.
