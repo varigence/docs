@@ -9,9 +9,10 @@ Get up to speed with BimlFlex quickly with this starter guide!
 
 This guide contains:
 
-* Introductory videos that give you an overview of BimlFlex's features, and to get you familiar with them quickly.
-* The First Project Walkthrough - a starter guide for an end-to-end BimlFlex project from the initial configuration all the way to delivery.
-* Instructions on how to access sample metadata, settings and configurations that cover many real-world scenarios.
+* Introductory videos that give you an overview of BimlFlex's features, and to get you familiar with them quickly
+* The First Project Walkthrough - a starter guide for an end-to-end BimlFlex project from the initial configuration all the way to delivery
+* A first high level overview of how the BimlFlex ecosystem can be configured and used
+* Instructions on how to access sample metadata, settings and configurations that cover many real-world scenarios
 
 ## Introductory Videos
 
@@ -19,11 +20,12 @@ The introductory videos provide a quick and easy overview of BimlFlex in video f
 
 * [BimlFlex Intro Videos](xref:bimlflex-getting-started-intro-videos)
 
-## First Project Walkthrough
+## Working with BimlFlex
 
 Get straight into building a project in BimlFlex!
 
 * [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough)
+* [BimlFlex Configuration Overview](xref:bimlflex-getting-started-initial-configuration)
 
 ## Sample Metadata
 

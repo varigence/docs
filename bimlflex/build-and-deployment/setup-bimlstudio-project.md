@@ -10,7 +10,7 @@ varigenceArticleType: Walkthrough
 A BimlStudio project is used to build and generate the metadata configured in BimlFlex.
 
 > [!TIP]
-> [Watch this video guide](xref:bimlflex-getting-started-initial-configuration) on creating a BimlFlex and BimlStudio Project.
+> [Watch this video guide on creating a BimlFlex and BimlStudio Project](xref:bimlflex-getting-started-initial-configuration).
 
 ## Create the BimlStudio Project
 

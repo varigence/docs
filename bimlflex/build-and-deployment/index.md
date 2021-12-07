@@ -3,23 +3,24 @@ uid: bimlflex-build-solution-overview
 title: BimlFlex Build Solution Overview
 summary: BimlFlex build solution overview including project setup, options, and generating DDL
 ---
-# BimlFlex Build Solution Overview
+# BimlFlex Build & Deployment Overview
 
-This section describes the setup and build options of a BimlStudio Project along with a guide for generating the Data Definition Language (DDL) for creating target data structures.
+This section describes how to configure a BimlStudio Project for use with BimlFlex, and how to 'build' the metadata into deployable artifacts along with a guide for generating the Data Definition Language (DDL) for creating target data structures.
+
+The build process in BimlStudio uses the BimlFlex metadata, expands this into BimlScript and then compiles this code to produce the relevant output and support scripting.
+
+The resulting output can then be deployed to the designated environment, for example to Azure Data Factory.
 
 ## BimlStudio Project Setup
 
-* [BimlFlex - Setup BimlStudio Project](xref:bimlflex-setup-bimlstudio-project)
+* [Setting Up a BimlStudio Project for BimlFlex](xref:bimlflex-setup-bimlstudio-project)
 
-## Build Process
+## Managing Data Structures
 
 * [Using SQL Server Data Tools (SSDT) projects](xref:bimlflex-ssdt-project)
+* [Generating DDL in BimlStudio](xref:bimlflex-generating-ddl)
 
 ## Build Options
 
 * [BimlFlex Interactive Build](xref:bimlflex-interactive-build)
 * [Building Using the Command Line](xref:bimlflex-command-line-build)
-
-## Generating BimlFlex DDL using BimlStudio
-
-* [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)

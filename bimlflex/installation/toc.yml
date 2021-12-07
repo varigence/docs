@@ -10,7 +10,7 @@
   href: installing-ssis-server.md
 - name: Installing a BimlFlex Build Server
   href: installing-build-server.md  
-- name: Installing BimlFlex developer tools
+- name: Installing BimlFlex Developer Tools
   href: installing-developer-tools.md  
 - name: Configuring bitness for the Excel Add-In
   href: change-excel-bitness-bimlflex.md    

@@ -20,3 +20,5 @@
   href: delete-detection.md
 - name: Orchestration
   href: orchestration.md
+- name: Build Process
+  href: build-process.md  

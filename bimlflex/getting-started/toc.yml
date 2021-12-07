@@ -2,11 +2,9 @@
   href: index.md
 - name: Introductory Videos
   href: intro-videos.md
-#- name: Initial Configuration
-#  href: initial-configuration.md
+- name: Initial Configuration Overview
+  href: initial-configuration.md
 - name: First Project Walkthrough
   href: first-project-walkthrough.md
 - name: Sample Content
   href: sample-metadata.md
-#- name: Tips and Tricks
-#  href: tips-and-tricks.md
