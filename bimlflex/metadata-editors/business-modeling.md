@@ -7,38 +7,76 @@ varigenceArticleType: Reference
 ---
 # Business Modeling
 
-## Business Modeling Conceptually
+The BimlFlex **Business Modelling** feature supports designing a holistic model that describes the business' data, while avoiding bias from already existing systems and data structures.
 
-Business Modeling is an approach to Data Vault modeling wherein an agile, scalable model is designed around Core Business Concepts (CBC) and and Natural Business Relationships (NBR), as opposed to creating a Data Vault from an already existing source of data.
-This method is generally employed by a team of business representatives working in conjunction with technical team members (IT, data analysts, or consultants) to detail the primary aspects of a business' interactions, objectives, and relationships.
+Traditionally, this process involves a team of IT and business representatives collaborating in a series of workshops to define the business' Core Business Concepts (CBC), how they are described and how they interact with each other.
 
-Business Modeling in this respect, referred to as Ensemble Logical Modeling (ELM), is traditionally performed in small technical sessions devoid of computers.
-Using whiteboards and Post-Its, small groups track, alter, and modify relationships paramount to the business' operation.
-Business representatives will detail core aspects of the business, tracking who interacts with what, while data analysts and consultants will advise on the technical aspects of tracking and integrating those relationships.
-It is a system that is propagated by interaction, collaboration, and discussion, by those most familiar with the operations of the business.
+Business Models can be created using predefined Ensemble Logical Modeling (ELM) or Party & Party Role (PPR) approaches, or by defining a custom set of classifications and labels. For example, by defining types such as Subjects, People, Events or Places. These types of Business Model objects are represented as 'cards' on the model design board.
 
-## Business Modeling Digitally
+While working on a Business Model, these cards can be rearranged, detailed and updated on the model design board with minimal effort in a way that is similar to reorganizing Post-It notes on a whiteboard.
 
-The Business Modeling feature within BimlFlex seeks to take the trusted aspects of traditional Business Modeling, collaborating on Core Business Concepts prior to considering any form of data management, and allow teams to share, present, and discuss.
-Model metadata, containing any changes, can be easily shared between team members.
-Events and Entities can be rearranged as easily as Post Its on a whiteboard.
-Details, such as attributes and liking similar entities, can be added to cards, combined, or separated, with less effort than reorganizing Post-Its on a whiteboard.
+The **Business Modeling** feature is accessible from the main BimlFlex side menu, under the 'Modeling' section.
 
-## Business Modeling in BimlFlex
+## Business Modeling Configuration
 
-The Business Modeling feature is accessible from the main BimlFlex side menu.
+When you use the **Business Modelling** feature for the first time, you will be asked to select a **Modeling Configuration**. This sets the default that is used as template for creating new Business Models.
 
-![BimlFlex Business Modeling](images/bfx-business-model-homepage.png "BimlFlex Business Modeling")
+![Selecting a Modeling Configuration](images/business-modeling-configuration.png "Selecting a Modeling Configuration")
 
-Models may be created either by adding Subjects (People, Place, or Things) or from a top-down perspective by creating an overall model (Sales, Lawsuit, etc.) and adding subjects and events subsequently.
+The **Modeling Configuration** provides a number of predefined Entity Types that will allow the various Business Entities to be organized on the **Business Model Canvas**. The Entity Types will represent 'swimlanes' on the **Business Model Canvas** where individual Business Entities can be placed.
 
-Model settings can be configured through the `Configure Model` button.
-Users may alter whether to create their model using either Ensemble Logical Modeling or Party & Party Role Model.
-Other settings allow users to modify default entity types, business types, and business classifications.
+After the initial selection, the default configuration can be adjusted using the **Configure Modeling** button.
 
-![BimlFlex Configure Model Settings](images/bfx-business-model-configure-settings.png "BimlFlex Configure Model Settings")
+### Configuring Event Types
+
+ On the first tab of the **Configure Modeling** screen, new Event Types can be added and existing ones removed.
+
+![Adjusting the Modeling Configuration](images/business-modeling-adjust-modeling-configuration.png "Adjusting the Modeling Configuration")
+
+Here, the following Entity Type details can be changed:
+
+* Name - the name or label of the Entity Type
+* Is Event - an indicator if the Entity Type is considered an Event. This will allow an **Event Matrix** to be created from a Business Entity that has been classified as this Entity Type
+* Color - a specification of the color a Business Concept will be presented with on the **Business Model Canvas** when classified as this Entity Type
+* Icon - the assigned icon for an Entity Type provides a visual cue in the **Treeview**, where all Business Entities are visible. Also, this icon appears next to the Entity Type name on the **Business Model Canvas**
+
+It is also possible to direct the **Business Model Canvas** to create a second row of swimlanes. This can be implemented by dragging an Entity Type to the second row, following the 'Drop here to place in bottom row' cue.
+
+For example, moving the default 'Person' Entity Type to the second row will visualize the swimlanes on the **Business Model Canvas** as follows:
+
+![Creating a second row of swimlanes](images/business-modeling-second-swimlane.png "Creating a second row of swimlanes")
+
+### Configuring Business Subjects
+
+A **Business Subject** provide an additional way to classify Business Entities. Each Business Entity can be associated with a single **Business Subject**, and a **Business Subject** can contain multiple Business Entities.
+
+This feature is intended to provide a grouping of related Business Entities.
+
+Business Entities can be created from the **Configure Modeling** screen (shown below), or alternatively directly from the Business Entity selection.
+
+![Defining Business Subjects](images/business-modeling-business-subjects.png "Defining Business Subjects")
+
+### Configuring Classifications
+
+![Defining Classifications](images/business-modeling-classifications.png "Defining Classifications")
+
+**Classifications** are visible on a Business Entity Tile once assigned.
+
+![Classifications as visible on a Business Entity](images/business-modeling-classifications-tile.png "Classifications as visible on a Business Entity")
+
+### Configuring Tags
+
+Like **Classifications**, **Tags** can be added to an existing Business Entity to provide additional context. **Tags** also appear directly on the Business Entity Tile on the **Business Canvas**.
+
+**Tags** can be created from the **Modeling Configuration** screen as shown below, or directly by adding one or more tags to an existing Business Entity on the **Business Canvas**.
+
+Defining **Tags** as part of the **Modeling Configuration** creates a central reusable library of **Tags**.
+
+![Defining Tags](images/business-modeling-tags.png "Defining Tags")
 
 ## Creating a Business Model
+
+Models may be created either by adding Subjects (People, Place, or Things) or from a top-down perspective by creating an overall model (Sales, Lawsuit, etc.) and adding subjects and events subsequently.
 
 After deciding on the best basic model settings, the process can be started by clicking `Add Model` (or `Add Subject` alternatively).
 A dialog box requiring a Name and Subject is all that is required to proceed with building out a model. 
@@ -97,13 +135,8 @@ This allows edits to be made "across the board," and to maintain parity between 
 As users go through all of the created events, edits and alterations to each Matrix should be performed to only have relevant Entities exist within that Matrix.
 As changes are made, metadata relating to the model may be easily shared with team members for approval or subsequent edits.
 
-### Relationship Modeling (Coming Soon!)
+### Relationship Modeling
 
 Relationship Modeling is the next step of the Business Modeling process, though not included in the application features currently.  
+
 From the Relationship Modeling screen, users will be able to drag Hubs and Links, while indicating relationship interactions between entities, as well as create additional relationships that may or may not have been intended or recognized from the initial model creation.
-
-## Business Modeling Endgame
-
-Creating an agile data warehouse through Business Modeling changes the focus from optimizing existing data to ensuring that all of the proper business relationships and entities are accounted for.
-Once a business model has been created, tweaked, and agreed upon by both business professionals and IT/technical consultants, the data is then loaded into those Hubs and Links based on the agreed upon design.
-Creating a functional business model puts the onus on accurately organizing data before loading it, rather than conversely trying to organize an entire source database of data into proper Hubs and Links.

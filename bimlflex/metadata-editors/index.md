@@ -54,14 +54,4 @@ The Modeling features provides graphical tools for users to accomplish a range o
 |[Accelerator](xref:bimlflex-data-vault-accelerator) | The Data Vault Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of the source metadata. It is configurable and provides a preview that can be rerun as many times as necessary so that the initial Data Vault modeling can be completed faster than through manual metadata modeling.|
 |[Schema Diagram](xref:bimlflex-schema-diagram) | The Schema Diagram provides an entity relation view of any set of metadata based on the integration stage. It allows a user to get an overview of what the metadata looks like in an easy to understand view. It also helps the developer to execute the most common actions on the data in a graphical interface.|
 |[Data Lineage](xref:bimlflex-data-lineage) | The Column Mapping Diagram provides an view of one or more mapping relationships at column level. It allows a user to get a quick view of mappings in a graphical interface. It allows the developer to easily add or remove mappings using column drag and drop. It also provides some of the most common actions that make sense in the context of data mapping.|
-|[Data Lineage](xref:bimlflex-data-lineage) | The Column Mapping Diagram provides an view of one or more mapping relationships at column level. It allows a user to get a quick view of mappings in a graphical interface. It allows the developer to easily add or remove mappings using column drag and drop. It also provides some of the most common actions that make sense in the context of data mapping.|
-
-bimlflex-business-modeling
-
-<!--
-## Business Modeling
-
-The Business Modeling provides an interface for a team of business representatives working in conjunction with technical team members (IT, data analysts, or consultants) to detail the primary aspects of a business' interactions, objectives, and relationships. The Business model serves as the basis for Data Vault modeling.
-
-[More about Business Modeling](business-modeling.md)
--->
+|[Business Modeling](xref:bimlflex-business-modeling) | Design a holistic model that describes the business' data, while avoiding bias from already existing systems and data structures. Traditionally, this process involves a team of IT and business representatives collaborating in a series of workshops to define the business' Core Business Concepts (CBC), how they are described and how they interact with each other. The Business Modeling feature seeks to preserve the essence of this process: collaboration, discussion, and interaction, while simultaneously digitizing the team experience.|
