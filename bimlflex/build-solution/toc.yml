@@ -1,8 +1,0 @@
-- name: Overview
-  href: index.md
-- name: Generating DDL
-  href: generating-ddl.md
-- name: Interactive Build
-  href: interactive-build.md
-- name: Command Line Build
-  href: command-line-build.md

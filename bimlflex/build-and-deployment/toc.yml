@@ -1,0 +1,12 @@
+- name: Overview
+  href: index.md
+- name: Configuring a BimlStudio Project for BimlFlex
+  href: setup-bimlstudio-project.md  
+- name: Using SQL Server Data Tools (SSDT)
+  href: ssdt-project.md  
+- name: Generating DDL using BimlStudio
+  href: generating-ddl.md
+- name: Interactive Build
+  href: interactive-build.md
+- name: Command Line Build
+  href: command-line-build.md

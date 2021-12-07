@@ -85,11 +85,11 @@ In order to generate the Staging Area, metadata for **Objects** from a Source Sy
 Once the required metadata has been imported and configured the next step is to build the solution to generate the deployable artifacts.
 Once a [BimlStudio project is setup](xref:bimlflex-setup-bimlstudio-project), this can be done simply by click the **Build** shortcut button.
 
-![Build Shortcut](../build-solution/images/toolbarbuild.png "Build Shortcut")
+![Build Shortcut](../build-and-deployment/images/toolbarbuild.png "Build Shortcut")
 
 Alternatively the **Build & Deploy** tab can be selected to click the **Build** button.
 
-![Build Button](../build-solution/images/mainbuild.png "Build Button")
+![Build Button](../build-and-deployment/images/mainbuild.png "Build Button")
 
 > [!TIP]
 > For additional details on Building a Solution refer to the below guides:
@@ -410,11 +410,11 @@ These below **Settings** are only required when using Snowflake as a **Target Wa
 Once the required metadata has been imported and configured the next step is to build the solution to generate the deployable artifacts.
 Once a [BimlStudio project is setup](xref:bimlflex-setup-bimlstudio-project), this can be done simply by click the **Build** shortcut button.
 
-![Build Shortcut](../build-solution/images/toolbarbuild.png "Build Shortcut")
+![Build Shortcut](../build-and-deployment/images/toolbarbuild.png "Build Shortcut")
 
 Alternatively the **Build & Deploy** tab can be selected to click the **Build** button.
 
-![Build Button](../build-solution/images/mainbuild.png "Build Button")
+![Build Button](../build-and-deployment/images/mainbuild.png "Build Button")
 
 > [!TIP]
 > For additional details on Building a Solution refer to the below guides:

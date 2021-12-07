@@ -3,7 +3,7 @@
   topicHref: index.md
   items:
   - name: Installation
-    href: setup/toc.yml
+    href: installation/toc.yml
 
   - name: Getting Started
     href: getting-started/toc.yml
@@ -18,7 +18,7 @@
     href: metadata-editors/toc.yml
 
   - name: Build & Deployment
-    href: build-solution/toc.yml
+    href: build-and-deployment/toc.yml
 
   - name: BimlFlex for Azure Data Factory
     href: technology-adf/toc.yml
@@ -29,10 +29,7 @@
   - name: BimlFlex for Snowflake
     href: technology-snowflake/toc.yml
 
-  - name: BimlFlex for Sql Server Data Tools
-    href: technology-ssdt/toc.yml
-
-  - name: BimlFlex for Sql Server Integration Services
+  - name: BimlFlex for SQL Server Integration Services
     href: technology-ssis/toc.yml
 
   - name: Other BimlFlex Connectivity
