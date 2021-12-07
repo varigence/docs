@@ -27,9 +27,3 @@ Some tips to assist in pinpointing where any error may originate from.
 
 * [Troubleshooting Tips](xref:bimlflex-support-troubleshooting-tips)
 * [Excel File Migration For BimlFlex 2020 R2](xref:excel-metadata-addin)
-
-## Support Notices
-
-Any global and generic communications related to support and availability of services.
-
-* [BimlOnline Shutdown Notice](xref:biml-online-shutdown-notice)

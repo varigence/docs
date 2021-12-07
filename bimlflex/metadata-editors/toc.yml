@@ -36,5 +36,7 @@
   href: schema-diagram.md 
 - name: Data Lineage
   href: data-lineage.md       
-   
+- name: Business Modeling
+  href: business-modeling.md      
+
 

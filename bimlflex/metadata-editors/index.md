@@ -54,6 +54,9 @@ The Modeling features provides graphical tools for users to accomplish a range o
 |[Accelerator](xref:bimlflex-data-vault-accelerator) | The Data Vault Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of the source metadata. It is configurable and provides a preview that can be rerun as many times as necessary so that the initial Data Vault modeling can be completed faster than through manual metadata modeling.|
 |[Schema Diagram](xref:bimlflex-schema-diagram) | The Schema Diagram provides an entity relation view of any set of metadata based on the integration stage. It allows a user to get an overview of what the metadata looks like in an easy to understand view. It also helps the developer to execute the most common actions on the data in a graphical interface.|
 |[Data Lineage](xref:bimlflex-data-lineage) | The Column Mapping Diagram provides an view of one or more mapping relationships at column level. It allows a user to get a quick view of mappings in a graphical interface. It allows the developer to easily add or remove mappings using column drag and drop. It also provides some of the most common actions that make sense in the context of data mapping.|
+|[Data Lineage](xref:bimlflex-data-lineage) | The Column Mapping Diagram provides an view of one or more mapping relationships at column level. It allows a user to get a quick view of mappings in a graphical interface. It allows the developer to easily add or remove mappings using column drag and drop. It also provides some of the most common actions that make sense in the context of data mapping.|
+
+bimlflex-business-modeling
 
 <!--
 ## Business Modeling
