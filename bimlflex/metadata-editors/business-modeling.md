@@ -27,9 +27,9 @@ The **Modeling Configuration** provides a number of predefined Entity Types that
 
 After the initial selection, the default configuration can be adjusted using the **Configure Modeling** button.
 
-### Configuring Event Types
+### Entity Types
 
- On the first tab of the **Configure Modeling** screen, new Event Types can be added and existing ones removed.
+ On the first tab of the **Configure Modeling** screen, new Entity Types can be added and existing ones removed.
 
 ![Adjusting the Modeling Configuration](images/business-modeling-adjust-modeling-configuration.png "Adjusting the Modeling Configuration")
 
@@ -46,7 +46,7 @@ For example, moving the default 'Person' Entity Type to the second row will visu
 
 ![Creating a second row of swimlanes](images/business-modeling-second-swimlane.png "Creating a second row of swimlanes")
 
-### Configuring Business Subjects
+### Business Subjects
 
 A **Business Subject** provide an additional way to classify Business Entities. Each Business Entity can be associated with a single **Business Subject**, and a **Business Subject** can contain multiple Business Entities.
 
@@ -56,17 +56,19 @@ Business Entities can be created from the **Configure Modeling** screen (shown b
 
 ![Defining Business Subjects](images/business-modeling-business-subjects.png "Defining Business Subjects")
 
-### Configuring Classifications
+### Classifications
+
+**Classifications** can be defined as part of the modeling configuration defaults. They can be added to an existing Business Entity to provide a categorization that is different from the Entity Type. This assists in organizing the Business Entities in different ways, by being able to organize them according to classification - or to simply notify other modelers of a specific function or intent.
 
 ![Defining Classifications](images/business-modeling-classifications.png "Defining Classifications")
 
-**Classifications** are visible on a Business Entity Tile once assigned.
+**Classifications** are visible on a Business Entity Tile once assigned. It is possible to add additional **Classifications** directly to a Business Entity, after which they will also appear on the **Configure Modeling** screen.
 
-![Classifications as visible on a Business Entity](images/business-modeling-classifications-tile.png "Classifications as visible on a Business Entity")
+![Classifications as visible on a Business Entity](images/business-modeling-classifications-on-tile.png "Classifications as visible on a Business Entity")
 
-### Configuring Tags
+### Tags
 
-Like **Classifications**, **Tags** can be added to an existing Business Entity to provide additional context. **Tags** also appear directly on the Business Entity Tile on the **Business Canvas**.
+Like **Classifications**, **Tags** can be added to an existing Business Entity to provide additional context. **Tags** also appear directly on the Business Entity Tile on the **Business Model Canvas**.
 
 **Tags** can be created from the **Modeling Configuration** screen as shown below, or directly by adding one or more tags to an existing Business Entity on the **Business Canvas**.
 
@@ -76,67 +78,135 @@ Defining **Tags** as part of the **Modeling Configuration** creates a central re
 
 ## Creating a Business Model
 
-Models may be created either by adding Subjects (People, Place, or Things) or from a top-down perspective by creating an overall model (Sales, Lawsuit, etc.) and adding subjects and events subsequently.
+After deciding on the best **Modeling Configuration**, a **Business Model** can be created by clicking the **Create Model** button. This will open a dialog box requiring a _Name_ and optional _Description_.
 
-After deciding on the best basic model settings, the process can be started by clicking `Add Model` (or `Add Subject` alternatively).
-A dialog box requiring a Name and Subject is all that is required to proceed with building out a model. 
+The default Entity Types from the **Modeling Configuration** are also displayed here, and it is possible to add and remove Entity types. The selected Entity Types will appear as swimlanes on the **Business Model Canvas**.
 
-![Create Business Model](images/bfx-business-model-creation-dialog.png "Create Business Model")
+This is all that is required to proceed with building out a model.
 
-Next, users are presented with the interface to build their Business Model.
+![Creating a Business Model](images/business-modeling-add-business-model.png "Creating a Business Model")
 
-![Business Model Overview](images/bfx-business-model-overview.png "Business Model Overview")
+## Business Model Canvas
 
-Events are the primary relationships and interactions between business entities.
-Events will be modeled as a Link.  
-Entities such as Person, Place, Thing, and Other will be modeled as Hubs.
-Entities added to the overview are not categorized in any methodical method.  
-The overview is simply a place for teams to add all of the individual parts of their model, with organization to follow.
+After creating a Business Model and opening it, users are presented with the interface to build their Business Model - the **Business Model Canvas**.
 
-![Business Model - Entities and Overview](images/bfx-business-model-entities-overview.png "Business Model - Entities and Overview")
+![Business Model Canvas](images/business-modeling-business-model-canvas.png "Business Model Canvas")
 
-### Business Modeling Action Bar
+The **Business Model Canvas** allows the creation of Business Entities by clicking on one of the swimlanes visible on the canvas, where each swimlane corresponds to an Entity Type.
+
+When doing so, an empty Business Entity tile will be created in the corresponding swimlane and a _name_ for the new Business Entity can be entered.
+
+The **Business Model Canvas** encourages collaboration between business- and technical teams to workshop a model of how the business operates and on what terms and definitions to standardize. This process prevents models from being to influenced by how operational (IT) systems are used, and attempts to define the more generic terms that capture the business process instead.
+
+The canvas can be restructured by moving tiles across to different swimlanes, or by dragging tiles to other tiles. The changes made on the canvas will save automatically.
+
+### Business Model Canvas Action Bar
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | Save any staged changes to the model |
-| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Revert any unsaved changes to the model |
-| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | Remove any selected entity from the model entirely. This option cannot be undone. |
-| <img src="images/bimlflex-app-action-switch.png" /> | Details | Toggle to show or hide any details from the Entity cards, including any entered Business Names, Short Names, Descriptions, or Tags |
-| <img src="images/bimlflex-app-action-switch.png" /> | Attributes | Toggle to show or hide any attributes added to any Entity cards. There is no limit to the attributes that can be added to the Entities.
-| <img src="images/bimlflex-app-action-switch.png" /> | Known As | Toggle to show or hide any "Known As" elements to any Entity cards. Any number of entities may be dragged into another. |
-| <img src="images/bimlflex-app-action-switch.png" /> | Compact | Toggle to show smaller cards with less visible details to show more entity cards on screen |
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Edit | This icon will appear when hovering over the Business Model _name_. The edit screen for the Business Model can be opened from here.|
+| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Expanded | Toggle to show smaller tiles with less visible details, allowing more tiles on the screen. The expanded view will also show **Classifications** and **Tags**.|
 
-### Attributes and "Known As" Fields
+### Editing or Archiving a Business Model
 
-Similar entities may simply be dragged onto one another, for grouping and tracking different entities under one uniform Entity.
+A Business Model can be edited by hovering over the Business Model _name_ and clicking either the name or the 'Edit' icon.
 
->[!NOTE]
-> In the above example, "Plaintiff" and "Defendant" are both a "Party" to the accident. However, they could be tracked in the same Hub as "Party." As such, "Plaintiff" and "Defendant" were combined with "Party," as that Hub would track the two entities independently.
+In the **Edit Business Model** dialog the Business Model _name_, _description_ and in-scope Entity Types can be modified. Also, the model can be archived (discarded) altogether.
 
-![Combined Entity Card](images/bfx-party-combined.png "Combined Entity Card")
+![Editing a Business Model](images/business-modeling-edit-business-model.png "Editing a Business Model")
 
-If alterations are needed, clicking the `X` next to any "Known As" will remove the entity from the grouping and return it to the overview as an individual entity.  
-Clicking the `X` next to any attribute will remove it from that card.  
-Clicking the `...` will allow users to Edit the card's details, or remove the card from the overview entirely.
+### Managing Synonyms
 
-![Edit Entity Card Details](images/bfx-edit-entity-card.png "Edit Entity Card Details")
+It is a common practice in Business Modeling workshop to first capture all involved Business Entities (concepts) and process steps on the **Business Model Canvas**, and to organize these by Event Type.
 
-### Creating an Event Matrix
+In the course of capturing all involved concepts, it is common to find Business Entities that actually mean the same thing but have different names. Understanding these nuances and selecting the 'right' name for a Business Entity is a key outcome of the Business Modeling process. The collective team will together define which name for the Business Entity will be used, and why this is the case.
 
-Clicking the `Generate Event Matrix` button in the lower-right corner of an Event will take users to the Matrix for that Event only.
-From here, users will manually remove and edit Entities that only relate to that Event.
+BimlFlex supports this approach with the **Known As** feature. Business Entities that are synonymous can simply be dragged onto one another, and this will present the user with a dialog to instruct BimlFlex to manage this as a **Known As** (synonym) or **Attribute** (column or property).
 
-![Event Matrix Overview](images/bfx-collision-matrix.png "Event Matrix Overview")
+![Known-As](images/business-modeling-known-as.png "Known-As")
 
-Any edits that are made to Entity cards in a Matrix view will be match in the Overview.
-This allows edits to be made "across the board," and to maintain parity between the Business Model overview and individual Event matrices.
+For example, the 'Vendor' and 'Seller' Business Entities are synonyms of each other. By dragging the 'Seller' Business Entity to the 'Vendor' Business Entity and selecting **Known As** this will be recorded and visible on the **Business Model Canvas**.
 
-As users go through all of the created events, edits and alterations to each Matrix should be performed to only have relevant Entities exist within that Matrix.
-As changes are made, metadata relating to the model may be easily shared with team members for approval or subsequent edits.
+![Synonyms on the Business Model Canvas](images/business-modeling-known-as-outcome.png "Synonyms on the Business Model Canvas")
 
-### Relationship Modeling
+If alterations are needed, clicking the `X` next to any **Known As** will association that this Business Entity has and return it to the canvas as an individual Business Entity.  
 
-Relationship Modeling is the next step of the Business Modeling process, though not included in the application features currently.  
+>[!TIP]
+>Defining synonyms in the Business Model records the outcomes of the Business Modeling workshops, and serves as a reminder on what the agreed terms and definitions are to organize data in the target data solution.
 
-From the Relationship Modeling screen, users will be able to drag Hubs and Links, while indicating relationship interactions between entities, as well as create additional relationships that may or may not have been intended or recognized from the initial model creation.
+In BimlFlex, Business Entities can be mapped to **Objects** in the **Object Editor** or the **Accelerator**.
+
+### Managing Attributes
+
+As part of organizing the Business Entities on the **Business Model Canvas**, it may be found that certain Business Entities are not really (core) business concepts but rather descriptive properties of other Business Entities.
+
+BimlFlex allows dragging a Business Entity on to another one to declare it an **Attribute**. This works the same way as defining one Business Entity to be a synonym another one, but here the **Attribute** feature should be used if the user wants declare the dragged Business Entity as a property of the target Business Entity.
+
+Once the Business Entity has been attributed this way, it will appear as a Business Attribute to the Business Entity.
+
+For example, the 'Price' Business Entity can become a Business Attribute to the 'Product' Business Entity by dragging the 'Price' tile to the 'Product' tile. After selecting **Attribute** the 'Product' tile will show an indicator that this Business Entity has one (1) Business Attribute.
+
+![Attributes on the Business Model Canvas](images/business-modeling-attribute-outcome.png "Attributes on the Business Model Canvas")
+
+### Viewing and Editing Business Entity Details
+
+There are two ways to view and edit the details of a Business Entity.
+
+* Double-clicking on the Business Entity tile. This will open the **Business Entity Editor**
+* Hovering over the tile will show the details ellipsis, this will display a menu for further navigation
+
+![Editing a Business Entity](images/business-modeling-edit-business-entity.png "Editing a Business Entity")
+
+This this menu the following options are available:
+
+* `Remove` will disconnect the Business Entity from the Business Model and withdraw it from the canvas. The Business Entity still exists, but is not associated with the visible Business Model anymore
+* `Details` will display the side navigation panel of the **Business Model Canvas**, which will allow for direct editing of Business Entity details that directly apply
+* `Edit` will open the **Business Entity Editor**
+
+#### Business Entity Editor
+
+#### Business Entity Side Panel
+
+The side panel can be opened by clicking on the panel icon (<img src="images/svg-icons/right-sidenav-toggle.svg" width="2%" height="2%" />) on the **Business Model Canvas**, or by selecting `Details` from the Business Entity tile ellipsis menu.
+
+![Editing a Business Entity in the side panel](images/business-modeling-business-entity-side-panel.png "Editing a Business Entity in the side panel")
+
+The following controls are available to operate the side panel:
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/nav-collapsed.svg" /></div> | Collapse | This will hide the side panel.|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the Business Entity.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes to the Business Entity will be discarded.|
+| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | Archive will remove the Business Entity from the active metadata repository, and move it to the metadata archive.|
+| <div class="icon-col m-5"><img src="images/svg-icons/pin.svg" /></div> | Pin | The side navigation panel can be pinned and unpinned from the **Business Model Canvas**, depending if the user wants to keep it visible or not.|
+
+The side panel enables editing of the main Business Entity properties:
+
+| <div style="width:150px">Property</div> | Description |
+| --------- | ----------- |
+|`Name`| The name of the Business Entity.|
+|`Short Name`| An abbreviated name for the Business Entity that can serve as alias.|
+|`Definition`| A brief formal definition of the Business Entity.|
+|`Description`| A meaningful overview of the Business Entity in a few words or sentences.|
+|`Entity Type`| The **Event Type** of the Business Entity|
+|`Business Subject`| The **Business Subject** to which the Business Entity is part of.|
+|`Classifications`| The **Classifications** that are applied to the Business Entity.|
+|`Tags`| The **Tags** that are applied to the Business Entity|
+
+### Creating an Event Matrix from the Business Model Canvas
+
+Clicking the **Event Details** button (<img src="images/svg-icons/__events.svg" width="2%" height="2%" />) in the lower-right corner of a Business Entity that has been classified as an `Event` Entity Type will navigate to the **Event Matrix** for that Business Entity. If no **Event Matrix** exists yet one will be created.
+
+## Event Matrix Canvas
+
+The **Event Matrix** is a specialized **Business Model Canvas**. However, the **Event Matrix** only displays Business Entities that are related to the Event.
+
+The intent of the Event Matrix is to capture which Business Entities relate to a specific Event. From the **Event Matrix**, users can manually remove and edit Business Entities that only relate to that Event.
+
+![Event Matrix Overview](images/business-modeling-event-matrix.png "Event Matrix Overview")
+
+Any edits that are made to Business Entity tiles in this view will also apply to the **Business Model Canvas**. This allows edits to maintain parity between the **Business Model Canvas** and each individual **Event Matrix**.
+
+>[!TIP]
+>Workshopping an **Event Matrix** assist in clarifying relationships between Business Entities.
