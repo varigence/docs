@@ -35,10 +35,10 @@ After the initial selection, the default configuration can be adjusted using the
 
 Here, the following Entity Type details can be changed:
 
-* Name - the name or label of the Entity Type
-* Is Event - an indicator if the Entity Type is considered an Event. This will allow an **Event Matrix** to be created from a Business Entity that has been classified as this Entity Type
-* Color - a specification of the color a Business Concept will be presented with on the **Business Model Canvas** when classified as this Entity Type
-* Icon - the assigned icon for an Entity Type provides a visual cue in the **Treeview**, where all Business Entities are visible. Also, this icon appears next to the Entity Type name on the **Business Model Canvas**
+* `Name` - the name or label of the Entity Type
+* `Is Event` - an indicator if the Entity Type is considered an Event. This will allow an **Event Matrix** to be created from a Business Entity that has been classified as this Entity Type
+* `Color` - a specification of the color a Business Concept will be presented with on the **Business Model Canvas** when classified as this Entity Type
+* `Icon` - the assigned icon for an Entity Type provides a visual cue in the **Treeview**, where all Business Entities are visible. Also, this icon appears next to the Entity Type name on the **Business Model Canvas**
 
 It is also possible to direct the **Business Model Canvas** to create a second row of swimlanes. This can be implemented by dragging an Entity Type to the second row, following the 'Drop here to place in bottom row' cue.
 
