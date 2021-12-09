@@ -35,10 +35,10 @@ After the initial selection, the default configuration can be adjusted using the
 
 Here, the following Entity Type details can be changed:
 
-* `Name` - the name or label of the Entity Type
-* `Is Event` - an indicator if the Entity Type is considered an Event. This will allow an **Event Matrix** to be created from a Business Entity that has been classified as this Entity Type
-* `Color` - a specification of the color a Business Concept will be presented with on the **Business Model Canvas** when classified as this Entity Type
-* `Icon` - the assigned icon for an Entity Type provides a visual cue in the **Treeview**, where all Business Entities are visible. Also, this icon appears next to the Entity Type name on the **Business Model Canvas**
+* Name - the name or label of the Entity Type
+* Is Event - an indicator if the Entity Type is considered an Event. This will allow an **Event Matrix** to be created from a Business Entity that has been classified as this Entity Type
+* Color - a specification of the color a Business Concept will be presented with on the **Business Model Canvas** when classified as this Entity Type
+* Icon - the assigned icon for an Entity Type provides a visual cue in the **Treeview**, where all Business Entities are visible. Also, this icon appears next to the Entity Type name on the **Business Model Canvas**
 
 It is also possible to direct the **Business Model Canvas** to create a second row of swimlanes. This can be implemented by dragging an Entity Type to the second row, following the 'Drop here to place in bottom row' cue.
 
@@ -165,6 +165,99 @@ This this menu the following options are available:
 
 #### Business Entity Editor
 
+Business Entities can be modified by double-clicking on the Business Entity tile. This will open the **Business Entity Editor** which allows editing of the main Business Entity properties, but also its Business Attributes and Relationships.
+
+![Editing a Business Entity](images/business-modeling-business-entity-editor-main.png "Editing a Business Entity")
+
+##### Entity Tab
+
+By default, the **Business Entity Editor** will open on the Entity tab. The following properties of the Business Entity can be edited here:
+
+| <div style="width:150px">Property</div> | Description |
+| --------- | ----------- |
+|Name| The name of the Business Entity.|
+|Short Name| An abbreviated name for the Business Entity that can serve as alias.|
+|Definition| A brief formal definition of the Business Entity.|
+|Description| A meaningful overview of the Business Entity in a few words or sentences.|
+|Entity Type| The **Event Type** of the Business Entity|
+|Business Subject| The **Business Subject** to which the Business Entity is part of.|
+|Classifications| The **Classifications** that are applied to the Business Entity.|
+|Tags| The **Tags** that are applied to the Business Entity|
+
+The following options are available:
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the Business Entity.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes to the Business Entity will be discarded.|
+| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | Archive will remove the Business Entity from the active metadata repository, and move it to the metadata archive.|
+
+##### Attributes Tab
+
+The second tab in the **Business Entity Editor** shows the Business Attributes that belong to the selected Business Entity. Business Attributes can be added or removed (Archived) from the Business Entity.
+
+![Viewing the Business Attributes for a Business Entity](images/business-modeling-business-entity-editor-attributes.png "Viewing the Business Attributes for a Business Entity")
+
+>[!NOTE]
+>Archiving a Business Attribute will remove the object completely, not only disconnect it from the Business Entity.
+
+From here, clicking on the name of a Business Attribute will open the **Business Attribute Editor**.
+
+The following options are available:
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div> | Add | Open the **Business Attribute Editor** to create a new Business Attribute, which will be added to the selected Business Entity.|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the Business Attribute in the overview.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes to the Business Attribute in the overview will be discarded.|
+
+When checking a single Business Attribute in the overview two additional options will become visible. When selecting two or more Business Attributes only the *Archive* option will be visible.
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Edit | Open the **Business Attribute Editor** to modify and existing Business Attribute. This will only be visible when selecting a single Business Attribute in the overview.|
+| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | Archive will remove the Business Attribute from the active metadata repository, and move it to the metadata archive.|
+
+In the overview, the Business Entity properties in the table below are editable directly. Other properties require opening of the **Business Attribute Editor**.
+
+| <div style="width:150px">Property</div> | Description |
+| --------- | ----------- |
+|Business Subject| The **Business Subject** to which the Business Entity is part of.|
+|Data Type| The domain of the Business Attribute defining the type of values it can accept.|
+|Length|The maximum allowed character length.|
+|Precision|The maximum allowed numeric length.|
+|Scale|The number of positions behind the comma for numeric values.|
+|Ordinal|The order in which the Business Attributes are displayed.|
+
+##### Relationships Tab
+
+The third tab in the **Business Entity Editor** shows the Relationships the selected Business Entity has to other Business Entities. Relationships can be added or removed (Archived) from the Business Entity.
+
+![Viewing the relationships for a Business Entity](images/business-modeling-business-entity-editor-relationships.png "Viewing the Business Attributes for a Business Entity")
+
+The following options are available:
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div> | Add | Open the **Business Entity Relationship Editor** to create a new relationship between two Business Entities.|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the relationship in the overview.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes to the relationship in the overview will be discarded.|
+
+When checking a single relationship in the overview two additional options will become visible. When selecting two or more relationships only the *Archive* option will be visible.
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Edit | Open the **Business Entity Relationship Editor** to modify and existing relationships. This will only be visible when selecting a single relationship in the overview.|
+| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | Archive will remove the relationship that exists between two Business Entities, and keep the Business Entities intact otherwise.|
+
+In the overview, the relationship properties in the table below are editable directly. These properties can also be edited via the **Business Entity Relationship Editor**.
+
+| <div style="width:150px">Property</div> | Description |
+| --------- | ----------- |
+|Entity| The Business Entity for which the relationship is being edited. Changing the Business Entity to another one will effectively move the relationship to the new Business Entity. It will then no longer be visible by editing the Business Entity that it was originally part of.|
+|Related Entity| The Business Entity to which the relationship refers.|
+|Label|A descriptive text explaining the nature of the relationship.|
+
 #### Business Entity Side Panel
 
 The side panel can be opened by clicking on the panel icon (<img src="images/svg-icons/right-sidenav-toggle.svg" width="2%" height="2%" />) on the **Business Model Canvas**, or by selecting `Details` from the Business Entity tile ellipsis menu.
@@ -185,18 +278,76 @@ The side panel enables editing of the main Business Entity properties:
 
 | <div style="width:150px">Property</div> | Description |
 | --------- | ----------- |
-|`Name`| The name of the Business Entity.|
-|`Short Name`| An abbreviated name for the Business Entity that can serve as alias.|
-|`Definition`| A brief formal definition of the Business Entity.|
-|`Description`| A meaningful overview of the Business Entity in a few words or sentences.|
-|`Entity Type`| The **Event Type** of the Business Entity|
-|`Business Subject`| The **Business Subject** to which the Business Entity is part of.|
-|`Classifications`| The **Classifications** that are applied to the Business Entity.|
-|`Tags`| The **Tags** that are applied to the Business Entity|
+|Name| The name of the Business Entity.|
+|Short Name| An abbreviated name for the Business Entity that can serve as alias.|
+|Definition| A brief formal definition of the Business Entity.|
+|Description| A meaningful overview of the Business Entity in a few words or sentences.|
+|Entity Type| The **Event Type** of the Business Entity.|
+|Business Subject| The **Business Subject** to which the Business Entity is part of.|
+|Classifications| The **Classifications** that are applied to the Business Entity.|
+|Tags| The **Tags** that are applied to the Business Entity.|
+
+#### Business Attribute Editor
+
+The **Business Attribute Editor** is accessed by double-clicking on a Business Entity tile on the **Business Model Canvas** and navigating to the Attributes Tab. Either selecting a Business Attribute in the overview or clicking on the Business Attribute name will open the **Business Attribute Editor**.
+
+![Business Attribute Editor](images/business-modeling-business-attribute-editor.png "Business Attribute Editor")
+
+The following details can be provided:
+
+| <div style="width:150px">Property</div> | Description |
+| --------- | ----------- |
+|Name| The name of the Business Entity.|
+|Short Name| An abbreviated name for the Business Entity that can serve as alias.|
+|Definition| A brief formal definition of the Business Entity.|
+|Description| A meaningful overview of the Business Entity in a few words or sentences.|
+|Entity Type| The **Event Type** of the Business Entity.|
+|Business Subject| The **Business Subject** to which the Business Entity is part of.|
+|Classifications| The **Classifications** that are applied to the Business Entity.|
+|Tags| The **Tags** that are applied to the Business Entity.|
+
+The following controls are available when creating a new Business Attribute using the **Business Attribute Editor**.
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the Business Attribute.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes to the Business Attribute will be discarded.|
+
+If an existing Business Attribute is edited, for example by clicking on the name on the Attributes Tab then two additional options are shown:
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | Archive will remove the Business Attribute from the active metadata repository, and move it to the metadata archive.|
+| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | Allows to make a copy of the selected Business Attribute. A new dialog will be shown to provide a new unique name for the new Business Attribute.|
+
+#### Business Entity Relationship Editor
+
+The **Business Entity Relationship Editor** is accessed by double-clicking on a Business Entity tile on the **Business Model Canvas** and navigating to the Relationships Tab. The editor can be opened by clicking on the `Add` (<img src="images/svg-icons/add.svg" width="2%" height="2%" />) button.
+
+![Business Entity Relationship Editor](images/business-modeling-relationship-editor.png "Business Entity Relationship Editor")
+
+When the editor is opened, the name of the selected Business Entity will already be pre-selected in the `Entity` field.
+
+The following details can be provided:
+
+| <div style="width:150px">Property</div> | Description |
+| --------- | ----------- |
+|Entity| The Business Entity for which the relationship is being edited. Changing the Business Entity to another one will effectively move the relationship to the new Business Entity. It will then no longer be visible by editing the Business Entity that it was originally part of.|
+|Related Entity| The Business Entity to which the relationship refers.|
+|Label|A descriptive text explaining the nature of the relationship.|
+
+The following controls are available:
+
+| Icon | Action | Description |
+|----|-|--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the Business Attribute.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes to the Business Attribute will be discarded.|
 
 ### Creating an Event Matrix from the Business Model Canvas
 
-Clicking the **Event Details** button (<img src="images/svg-icons/__events.svg" width="2%" height="2%" />) in the lower-right corner of a Business Entity that has been classified as an `Event` Entity Type will navigate to the **Event Matrix** for that Business Entity. If no **Event Matrix** exists yet one will be created.
+Clicking the **Event Details** button (<img src="images/svg-icons/__events.svg" width="2%" height="2%" />) in the lower-right corner of a Business Entity that has been classified as an `Event` Entity Type will navigate to the **Event Matrix** for that Business Entity. 
+
+If no **Event Matrix** exists yet one will be created.
 
 ## Event Matrix Canvas
 
@@ -207,6 +358,8 @@ The intent of the Event Matrix is to capture which Business Entities relate to a
 ![Event Matrix Overview](images/business-modeling-event-matrix.png "Event Matrix Overview")
 
 Any edits that are made to Business Entity tiles in this view will also apply to the **Business Model Canvas**. This allows edits to maintain parity between the **Business Model Canvas** and each individual **Event Matrix**.
+
+When an **Event Matrix** is created, a supporting **Business Model Diagram** will also be initialized. This diagram will contain the Business Entities that are associated with the event in the **Event Matrix**.
 
 >[!TIP]
 >Workshopping an **Event Matrix** assist in clarifying relationships between Business Entities.
