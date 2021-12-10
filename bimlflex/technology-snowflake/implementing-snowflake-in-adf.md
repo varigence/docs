@@ -41,7 +41,7 @@ Loading the sample metadata from within BimlFlex is as simple as selecting the s
 >More information on the specific creation of data marts and data vaults:
 >
 >* BimlFlex Docs: [Data Vault Templates](xref:bimlflex-data-vault-templates)
->* BimlFlex Docs: [Data Mart Templates](xref:bimlflex-data-mart-templates)
+>* BimlFlex Docs: [Data Mart Templates](xref:bimlflex-data-delivery-index)
 
 As with all examples the data here is pointed at AdventureWorksLT 2012.
 The imported sample metadata will have modeled point in time (PIT) tables and bridge tables, and on top of those, built data mart tables, and dimensions and facts.

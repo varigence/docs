@@ -22,4 +22,4 @@ The [Clone Table] function is provided to allow for quick generation of **Dimens
 > [Dimensional Model](xref:bimlflex-getting-started-dimensional-model)
 >
 > Concepts:  
-> [Data Mart Templates](xref:bimlflex-data-mart-templates)
+> [Data Mart Templates](xref:bimlflex-data-delivery-index)

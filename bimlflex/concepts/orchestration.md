@@ -69,7 +69,7 @@ More information on this process:
 
 * [Source to Staging Templates](xref:bimlflex-source-to-staging-templates)
 * [Data Vault Templates](xref:bimlflex-data-vault-templates)
-* [Data Mart Templates](xref:bimlflex-data-mart-templates)
+* [Data Mart Templates](xref:bimlflex-data-delivery-index)
 
 #### SEQC – BimlFlex Package End
 

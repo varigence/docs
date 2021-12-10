@@ -1,5 +1,10 @@
 - name: Overview
   href: index.md
+- name: Configuration
+  href: data-mart-configuration.md
 - name: Data Mart Template Overrides
   href: data-mart-overrides.md
-
+- name: Fact Pattern
+  href: fact-pattern.md
+- name: Dimension Pattern
+  href: dimension-pattern.md
