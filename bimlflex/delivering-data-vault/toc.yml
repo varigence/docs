@@ -6,7 +6,7 @@
   href: data-vault-concept-hub.md
 - name: Links
   href: data-vault-concept-link.md
-- name: Satellite
+- name: Satellites
   href: data-vault-concept-satellite.md
 - name: Point-In-Time
   href: data-vault-implementation-pit.md
@@ -14,9 +14,11 @@
   href: data-vault-implementation-bridge.md
 - name: Reference Data
   href: data-vault-concept-reference-data.md
-- name: Data Vault Best Practices
-  href: data-vault-best-practices.md
 - name: Integration Keys
   href: data-vault-concept-integration-keys.md
+- name: Data Vault Best Practices
+  href: data-vault-best-practices.md
+- name: Hashing
+  href: hashing-in-data-vault.md
 - name: Driving Keys in Data Vault
   href: driving-keys-in-data-vault.md

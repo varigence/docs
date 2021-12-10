@@ -11,7 +11,7 @@ The BimlFlex **Business Modelling** feature supports designing a holistic model 
 
 Traditionally, this process involves a team of IT and business representatives collaborating in a series of workshops to define the business' Core Business Concepts (CBCs), how they are described and how they interact with each other.
 
-Business Models can be created using predefined Ensemble Logical Modeling (ELM) or Party & Party Role (PPR) approaches, or by defining a custom set of classifications and labels. For example, by defining types such as Subjects, People, Events or Places. 
+Business Models can be created using predefined Ensemble Logical Modeling (ELM) or Party & Party Role (PPR) approaches, or by defining a custom set of classifications and labels. For example, by defining types such as Subjects, People, Events or Places.
 
 These types of Business Model objects are represented as 'tiles' or 'cards' on the model design board.
 
@@ -499,6 +499,9 @@ New relationships can be created by simply dragging a line between one Business 
 ![Creating a new relationship](images/business-modeling-diagram-new-relationship.png "Creating a new relationship")
 
 The relationship is created by drawing a line between two **Connection Nodes**.
+
+>[!NOTE]
+>It is currently supported to have only one (1) relationship between Business Entities. This will be extended in subsequent releases.
 
 #### Modifying Relationships
 

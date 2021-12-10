@@ -9,21 +9,19 @@ varigenceArticleType: Conceptual
 
 Data Vault provides an easy-to-explain and flexible way to tackle complex issues for bringing data together, and BimlFlex is optimized to deliver data solutions that have adopted this approach.
 
-The Data Vault can be accelerated using the BimlFlex Data Vault Accelerator: [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator).
+The Data Vault design and development can be done quickly and efficiently, using the BimlFlex Data Vault Accelerator: [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator).
 
 This guide assumes the BimlFlex product has been installed, configured and that the sample source metadata is ready to be modeled.
 
 > [!NOTE]
-> More Information:
+> More information on getting started:
 >
 > * [BimlFlex Getting Started Intro Videos](xref:bimlflex-getting-started-intro-videos)
 > * [BimlFlex Setup Overview](xref:bimlflex-setup-overview)
 
 The walkthrough uses the Product and Product Category entities from the AdventureWorksLT sample source to demonstrate Data Vault concepts.
 
-![Import Metadata -center](../user-guide/images/bimlflex-ss-v5-app-import-metadata-product.png "Import Metadata")
-
-## Data Vault essentials
+## Data Vault Essentials
 
 * [A brief introduction on Data Vault](xref:bimlflex-data-vault-introduction)
 * [Data Vault Hubs](xref:bimlflex-data-vault-concept-hub) - the Core Business Concept
@@ -34,13 +32,12 @@ The walkthrough uses the Product and Product Category entities from the Adventur
 * [Reference Data](xref:bimlflex-data-vault-concept-reference-data)
 * [Integration Key Concept](xref:bimlflex-data-vault-integration-keys-and-relationships)
 
-## Data Vault and BimlFlex
+## BimlFlex Concepts for Data Vault
 
 BimlFlex provides various ways to implement data solutions that utilize concepts from Data Vault methodology:
 
 * [BimlFlex best practices for Data Vault](xref:bimlflex-data-vault-best-practices)
 * [Using hashing for Data Vault](xref:bimlflex-data-vault-hashing)
-* [Integration Keys Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-integration-keys)
 * [Driving Keys in BimlFlex](xref:bimlflex-data-vault-driving-keys)
 * [BimlFlex solution templates for Data Vault](xref:bimlflex-data-vault-index)
 * [Zero records](xref:bimlflex-data-vault-concept-zero-records)
