@@ -46,3 +46,7 @@ Define the Accelerator options and preview the Data Vault to review the resultin
 ## Implementation of the Integration Key concept in BimlFlex
 
 * [Hub Implementation in BimlFlex](xref:bimlflex-data-vault-implementation-integration-keys)
+
+### Surrogate Keys
+
+BimlFlex normally hash the Integration Key value to a Surrogate Key column in the Hub. The Data Type and Hash Algorithm are configurable through the BimlFlex Settings. A common default is to use the SHA1 algorithm and store that in a Binary key column

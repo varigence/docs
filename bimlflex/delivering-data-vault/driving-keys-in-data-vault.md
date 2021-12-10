@@ -210,6 +210,6 @@ Driving Key settings are all adjusted in the "Add Attribute" dialog box:
 > [!NOTE]
 > For additional information regarding BimlFlex's assignment of Driving Keys or the technical walkthrough for manually defining Driving Keys, please reference the following documents:
 >
-> - [Data Vault Templates](xref:bimlflex-data-vault-templates)
+> - [Data Vault Templates](xref:bimlflex-data-vault-index)
 > - [BimlFlex Data Vault Best Practices](xref:bimlflex-data-vault-best-practices)
 > - [Driving Keys](xref:bimlflex-data-vault-driving-keys)

@@ -31,3 +31,14 @@ Especially the relationship with Agile is often mentioned; hub-and-spoke type ap
 Data Vault belongs to the family of hybrid modeling approaches that can be classified as **Ensemble Logical Models** (ELM) - also known as Ensemble Modeling Patterns (EMP) which also include Head and Version modeling, Anchor modeling, Focal Point modeling and various related ways of thinking.
 
 From this family of similar approaches, Data Vault is the most popular and adopted globally. The shared characteristic of these techniques is to focus the information (data) modeling around the definition of core business concepts, and to 'separate concerns'.
+
+As a summary:
+
+* Data Vault Models are built entirely upon Hubs, Links and Satellites
+* Data Vault Hubs and Links contain no descriptive attributes
+* Satellites contain all descriptive attributes (all context, details, time slices, etc.)
+* Data Vault Hubs contain no Foreign Keys/relationships
+* Satellites contain one-and-only-one Foreign Key/relationship (for the Hub or Link to which it is attached)
+* All relationships represented in a Data Vault are manifest through Link Tables
+* Satellites can attach directly to one-and-only-one Hub or Link
+* Data Vault Hubs and Links all use a Sequence ID or Hash for a primary key

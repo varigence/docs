@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: Introduction to Data Vault
+  href: data-vault-introduction.md  
 - name: Hubs
   href: data-vault-concept-hub.md
 - name: Links
