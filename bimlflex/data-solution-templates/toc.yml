@@ -1,8 +1,0 @@
-- name: Overview
-  href: index.md
-- name: Source to Staging Templates
-  href: source-to-staging-templates.md
-- name: Data Vault Templates
-  href: data-vault-templates.md
-- name: Data Mart Templates
-  href: data-mart-templates.md

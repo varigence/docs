@@ -35,14 +35,14 @@
   - name: Other BimlFlex Connectivity
     href: scenarios/toc.yml
 
-  - name: Data Solution Templates
-    href: data-solution-templates/toc.yml
+  - name: Delivering Data Staging
+    href: delivering-data-staging/toc.yml
 
-  - name: BimlFlex for Data Vault
-    href: data-vault-bimlflex/toc.yml
+  - name: Delivering Data Vault
+    href: delivering-data-vault/toc.yml
 
   - name: Delivering Data Marts
-    href: data-delivery/toc.yml
+    href: delivering-data-marts/toc.yml
 
   - name: Reference Docs
     href: reference-documentation/toc.yml
