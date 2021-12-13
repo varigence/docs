@@ -25,9 +25,7 @@ The resulting Business Entities can be mapped to Data Vault Hubs in the [**Objec
 
 The Hub should accommodate all incoming data without judging, therefore it is recommended to use the most forgiving data type available.
 
-For the Integration Key, it is recommended to use a wide Unicode (nvarchar) datatype. This accommodates data coming from many sources.
-
-This configuration allows data to be integrated that might not adhere to the earlier assumed datatype of the Integration Key.
+For the Integration Key, it is recommended to use a wide Unicode (nvarchar) datatype. This accommodates data coming from many sources. This configuration allows data to be integrated that might not adhere to the earlier assumed datatype of the Integration Key.
 
 > [!IMPORTANT]
 > Hubs are the core building block of the Data Vault and should reflect the **Core Business Concept** (CBC).
@@ -75,9 +73,21 @@ Using the [**Object Editor**](xref:bimlflex-object-editor), a new **Object** wit
 
 Once the **Object** is available, the relevant **Columns** can be added. In order to generate the correct data integration code, the **Columns** must match the conventions of the solution.
 
-By default, a Hub Object at least contains two **Columns**: a [**Surrogate Key**](xref:bimlflex-data-vault-integration-keys-and-relationships#surrogate-keys) and an **Integration Key**.
+By default, a Hub Object contains at least two **Columns**: a [**Surrogate Key**](xref:bimlflex-data-vault-integration-keys-and-relationships#surrogate-keys) and an **Integration Key**. Other columns can be either added or configured using the [**Configurations**](xref:bimlflex-data-vault-concept-hub#hub-column-configuration).
 
-When this **Object** is ready, it can be mapped to from the source **Objects**. In BimlFlex, the source-to-target mappings are defined against as part of the source **Object**.
+### Manually adding Hub Mappings
+
+When the new Hub object has been defined, it can be mapped to from the source objects. In BimlFlex, the source-to-target mappings are defined against as part of the source object using the **Object Editor**.
+
+In BimlFlex, you define a 'main' source object to be the central data set that populates the Hub directly. This is configured by creating a **Column Mapping** from the designated **Integration Key** in the source object to its counterpart in the Hub. The mapping is done to the Hub **Integration Key**, not to the **Surrogate Key** because the latter is derived from the **Integration Key**.
+
+As an example, in the screenshot below the 'SalesLT.Product' object is mapped to the 'Hub_Example' object by mapping the source **Integration Key** to the target (Hub) **Integration Key** which is called 'Example_BK'.
+
+![Creating a Hub Mapping](images/hub-manual-create-mapping.png "Creating a Hub Mapping")
+
+Hub objects can be loaded from multiple source objects, but this does not necessarily has to be mapped for all of them. If there are references defined between the source objects using **Integration Keys**, and these references are pointing to a source object that loads a Hub then all source objects can load that Hub.
+
+This is controlled using the The [*Infer Link Hub*](xref:bimlflex-app-reference-documentation-setting-DvInferLinkHub) setting in the *Data Vault* setting category. By default, this will be disabled and BimlFlex will manage the order of load dependency to avoid Referential Integrity issues.
 
 ## Hub Column Configuration
 
