@@ -34,11 +34,11 @@ From this family of similar approaches, Data Vault is the most popular and adopt
 
 As a summary:
 
-* Data Vault Models are built entirely upon Hubs, Links and Satellites
+* Data Vault Models are hub-and-spoke, and built entirely using Hub (concepts), Link (relationship) and Satellites (context) entities
 * Data Vault Hubs and Links contain no descriptive attributes
 * Satellites contain all descriptive attributes (all context, details, time slices, etc.)
 * Data Vault Hubs contain no Foreign Keys/relationships
 * Satellites contain one-and-only-one Foreign Key/relationship (for the Hub or Link to which it is attached)
 * All relationships represented in a Data Vault are manifest through Link Tables
 * Satellites can attach directly to one-and-only-one Hub or Link
-* Data Vault Hubs and Links all use a Sequence ID or Hash for a primary key
+* Data Vault Hubs and Links all use a Sequence ID or Hash for a Primary Key

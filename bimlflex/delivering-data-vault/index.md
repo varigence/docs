@@ -19,14 +19,12 @@ This guide assumes the BimlFlex product has been installed, configured and that 
 > * [BimlFlex Getting Started Intro Videos](xref:bimlflex-getting-started-intro-videos)
 > * [BimlFlex Setup Overview](xref:bimlflex-setup-overview)
 
-The walkthrough uses the Product and Product Category entities from the AdventureWorksLT sample source to demonstrate Data Vault concepts.
-
 ## Data Vault Essentials
 
-* [A brief introduction on Data Vault](xref:bimlflex-data-vault-introduction)
+* [A brief introduction of Data Vault](xref:bimlflex-data-vault-introduction)
 * [Data Vault Hubs](xref:bimlflex-data-vault-concept-hub) - the Core Business Concept
 * [Data Vault Links](xref:bimlflex-data-vault-concept-link) - the Natural Business Relationship
-* [Data Vault Satellites](xref:bimlflex-data-vault-concept-satellite) - the Context entity with descriptive information
+* [Data Vault Satellites](xref:bimlflex-data-vault-concept-satellite) - the Context entity containing descriptive information
 * [Point-in-Time tables](xref:bimlflex-data-vault-concept-pit)
 * [Bridge tables](xref:bimlflex-data-vault-concept-bridge)
 * [Reference Data](xref:bimlflex-data-vault-concept-reference-data)
