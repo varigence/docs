@@ -531,14 +531,16 @@ The side panel enables editing of the following relationship properties:
 
 Relationships are not always limited to only two involved Business Entities. In many cases, the correct granularity of a relationship includes three or more Business Entities.
 
-In the **Business Model Diagram** this can be reflected by creating a **Keyed Instance**. This is a specific Business Entity that captures the granularity of the relationships and refers to all Business Entities that are involved.
+In the **Business Model Diagram** this can be reflected by creating a **Keyed Instance**. This is a specific Business Entity that captures the granularity of the relationships and refers to all Business Entities that are involved. It is a Business Entity with multiple relationships to other Business Entities, and represents the relationships between these.
 
+<!--
 Relationships that are eligible for a **Keyed Instance** to be created have a small circle visible in the diagram. This circle can be dragged to other circles to define a new **Keyed Instance**.
 
 ![Creating a Keyed Instance](images/business-modeling-diagram-keyed-instance.png "Creating a Keyed Instance")
 
 The result will be a new Business Entity that connects to the associated Business Entity. The existing relationships will be removed, as the **Keyed Instance** will act as intersection entity between the involved Business Entities.
+-->
 
-The **Keyed Instance** Business Entity will have a special Event Type, a `Relationship`. This will always classify **Keyed Instances** as relationships, and will organize them accordingly in the **Treeview**.
+A **Keyed Instance** can be created by adding a new Business Entity with the Event Type, a `Relationship`. This will always classify **Keyed Instances** as relationships, and will organize them accordingly in the **Treeview**.
 
 ![Reviewing a Keyed Instance](images/business-modeling-diagram-keyed-instance-outcome.png "Reviewing a Keyed Instance")
