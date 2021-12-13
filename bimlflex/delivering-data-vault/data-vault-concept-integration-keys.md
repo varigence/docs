@@ -62,9 +62,13 @@ Once the Integration Keys and relationships are defined in the metadata for the 
 
 Define the Accelerator options and preview the Data Vault to review the resulting model. refine the metadata and update the preview for any required tweaks and publish the metadata once it matches the required destination logical model.
 
-### Surrogate Keys
+## Surrogate Keys
 
-BimlFlex normally hash the Integration Key value to a Surrogate Key column in the Hub. The Data Type and Hash Algorithm are configurable through the BimlFlex Settings. A common default is to use the SHA1 algorithm and store that in a Binary key column
+By default, BimlFlex will 'hash' the **Integration Key** value to  be used as a **Surrogate Key** column. The **Surrogate Key** will act as the Primary Key for a Hub and Link Objects, and be part of the Primary Key for Satellite Objects.
+
+Because of this, the **Surrogate Key** will be used in Data Vault Foreign Key references if referential integrity is configured.
+
+The Data Type and applied Hashing Algorithm are configurable through the BimlFlex Settings. The default used by BimlFlex is to use the `SHA1` algorithm and store this value as Binary value.
 
 ## Integration Key Settings
 

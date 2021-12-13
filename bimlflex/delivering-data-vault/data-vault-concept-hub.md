@@ -58,11 +58,17 @@ For more information, please refer to the [**Accelerator**](xref:bimlflex-data-v
 
 ### Manually defining a Hub Object
 
-To manually create a Hub in BimlFlex, an Object first needs to be defined in the **Connection** that represents the Data Vault.
+To manually create a Hub in BimlFlex, an **Object** first needs to be defined in the **Connection** that represents the Data Vault.
 
 ![Defining a new Hub Object](images/hub-manual-create-object.png "Defining a new Hub Object")
 
-Using the [**Object Editor**](xref:bimlflex-object-editor), a new Object with the Object Type `Hub` can be created.
+Using the [**Object Editor**](xref:bimlflex-object-editor), a new **Object** with the Object Type `Hub` can be created.
+
+Once the **Object** is available, the relevant **Columns** can be added. In order to generate the correct data integration code, the **Columns** must match the conventions of the solution.
+
+By default, a Hub Object at least contains two **Columns**: a [**Surrogate Key**](xref:bimlflex-data-vault-integration-keys-and-relationships#surrogate-keys) and an **Integration Key**.
+
+When this **Object** is ready, it can be mapped to from the source **Objects**. In BimlFlex, the source-to-target mappings are defined against as part of the source **Object**.
 
 ## Inferred Hubs
 
