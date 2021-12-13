@@ -7,7 +7,7 @@ varigenceArticleType: Conceptual
 ---
 # Hubs
 
-A Hub in Data Vault is the representation of a **Core Business Concept**. These are the main 'things' that are important to an organisation.
+A Hub in Data Vault is the representation of a **Core Business Concept**. These are the main 'things' that are important to an organisation. In the Data Vault model, the Hub serves as integration point when merging together disparate data sets.
 
 **Core Business Concepts** are related to other ones through [**Natural Business Relationships**](xref:bimlflex-data-vault-concept-link) (Links) and are described using [**Context**](xref:bimlflex-data-vault-concept-satellite) (Satellites) entities.
 
@@ -15,13 +15,11 @@ Any Hub entity in Data Vault can therefore have multiple active relationships to
 
 Each Hub maintains a distinct list of [**Integration Keys**](xref:bimlflex-data-vault-integration-keys-and-relationships) that represent unique instances of the identified concept.
 
-In the model, the Hub serves as integration point when merging together disparate data sets.
-
 ## A Business Focused Approach for Data Integration
 
 To be able to integrate data across systems and versions, the actual business terms used should be identified and used where possible to name Hubs and the corresponding Integration Key column.
 
-In BimlFlex, this is supported through the [**Business Modeling**](xref:bimlflex-business-modeling) feature. **Business Modelling** supports an interactive workshop-style modeling of the involved processes and terminology, so that the right business terms can be defined.
+In BimlFlex, this is supported through the [**Business Modeling**](xref:bimlflex-business-modeling) feature. [**Business Modeling**](xref:bimlflex-business-modeling) supports an interactive workshop-style modeling of the involved processes and terminology, so that the right business terms can be defined.
 
 The resulting Business Entities can be mapped to Data Vault Hubs in the [**Object Editor**](xref:bimlflex-object-editor) or the Data Vault [**Accelerator**](xref:bimlflex-data-vault-accelerator).
 
@@ -50,11 +48,22 @@ There are two ways to define a Hub in BimlFlex:
 
 The easiest and quickest way to define a new Hub is to define one based on source metadata using the Data Vault [**Accelerator**](xref:bimlflex-data-vault-accelerator).
 
-This way, the target Hub Object and source-to-target mappings that facilitate the loading process are added automatically.
-
-If required, this can be updated by modifying Accelerator settings or manually updating the Hub Object.
+This way, the target Hub Object and source-to-target mappings that facilitate the loading process are added automatically. If required, this can be updated by modifying Accelerator settings or manually updating the Hub Object.
 
 For more information, please refer to the [**Accelerator**](xref:bimlflex-data-vault-accelerator) documentation.
+
+#### Hub Naming Convention
+
+The name of the Hub, and how this will be derived in the **Accelerator**, is managed through a number of **Settings**:
+
+* The [*Append Hub*](xref:bimlflex-app-reference-documentation-setting-DvAppendHub) setting in the *Data Vault Naming* setting category contains the label which will be added to a new Hub **Object**, for example 'HUB'
+* Whether the above label will be added as a `Prefix` or `Suffix` is managed in the [*Suffix or Prefix Object*](xref:bimlflex-app-reference-documentation-setting-SuffixOrPrefixObject) setting which is found in the *Naming* setting category
+
+Varigence recommends to use `HUB`, `H`, `HB` as the convention to name the Hub in the *Append Hub* **Setting**. The value `HUB` is the default.
+
+The Hub name will be derived from the *Business Entity* or *Business Name* of the source object. If both the *Business Entity* and *Business Name* are set then the *Business Entity* value will take precedence.
+
+Otherwise, the *Object Name* from the source object will be used to name the target Hub.
 
 ### Manually defining a Hub Object
 
@@ -70,6 +79,18 @@ By default, a Hub Object at least contains two **Columns**: a [**Surrogate Key**
 
 When this **Object** is ready, it can be mapped to from the source **Objects**. In BimlFlex, the source-to-target mappings are defined against as part of the source **Object**.
 
+## Hub Column Configuration
+
+By default, BimlFlex will add the following **Columns** to a Hub. These are not visible in the **Object** details, and do not need to be manually added.
+
+* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#load-date-time-stamp)
+* [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
+* [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
+
+Columns such as these are defined in the BimlFlex [**Configurations**](xref:bimlflex-configurations). The **Configurations** screen in the BimlFlex App enables modelers to define which **Columns** apply to certain **Object Types**. For a **Column** to be added to the Hub, the **Configuration** will need to be configured so that the *Hub Attribute* is set to be `Derived`.
+
+If additional standard **Columns** are required for the Hub, then these are recommended to be implemented as **Configurations**.
+
 ## Inferred Hubs
 
 A Hub created as a placeholder when a related **Core Business Concept** that is not in scope for the current iteration.
@@ -78,17 +99,6 @@ The [*INFER LINK HUB*](xref:bimlflex-app-reference-documentation-settings-index)
 
 > [!NOTE]
 > There isn't an *OBJECT TYPE* to define a `Stub Hub` as it is just a `Hub`.
-
-## Hub Naming Convention
-
-* Prefix or Suffix with one of the following recommendations `HUB`, `H`, `HB`.
-* The Hub name will be derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND HUB*](xref:bimlflex-app-reference-documentation-settings-index) **Setting**.
-
-## Hub System Column Configuration
-
-* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#load-date-time-stamp)
-* [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
-* [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
 
 ## Integration Key Definition
 
