@@ -10,7 +10,10 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 
 ## BimlStudio Improvements
 
-- Removed ellipses from status messages on the BimlStudio splash screen.
+### bimlc.exe
+
+- Added support for improved and more robust product key caching.
+- Alternate spelling of licenseKey (licenceKey) is now accepted as a command line argument.
 
 ### BimlFlex Projects
 
@@ -18,20 +21,12 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 - Added the ability to connect to Azure SQL BimlFlex databases. Password, MFA, and Integrated connections now supported.
 - Added the ability to deploy dacpacs directly to Azure SQL databases.
 
-### bimlc.exe
-
-- Added support for improved and more robust product key caching.
-- Alternate spelling of licenseKey (licenceKey) is now accepted as a command line argument.
-
-### Biml Language Updates
-
-- Added `EmitAsStringLiteral` property to *AstAdfDataflowParameterReferenceNodes*. This meta property is used to determine how values should be emitted.
-
 ## Azure Data Factory
 
 - Added support for `CustomEvents` triggers.
 - Added `AzureCloudType` enum attribute to all Azure-based LinkedService nodes.
 - Fixed bug where missing icons caused the app to crash for various LinkedServices.
+- Added `EmitAsStringLiteral` property to *AstAdfDataflowParameterReferenceNodes*. This meta property is used to determine how values should be emitted.
 - Added extended support for Dynamic Content so that parameters can be passed in to an ADF Pipeline or Mapping Data Flow and then evaluated at run time.
 
 - Added connector support for:  
