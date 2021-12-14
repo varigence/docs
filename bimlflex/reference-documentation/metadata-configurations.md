@@ -5,43 +5,30 @@ summary: Documentation on the metadata and framework configurations available in
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Metadata and framework configurations
+# Configurations
 
-This document outlines the metadata and framework configurations available in BimlFlex.
+This document outlines the [**Configurations**](xref:bimlflex-configurations) that are available in BimlFlex by default.
 
-These configurations drive the behavior of the BimlFlex product.
+These configurations drive the behavior of the BimlFlex product, by adding **Columns** to **Objects** where they have been configured to apply to.
 
-By changing them the produced artifacts can adapt to support requirements for file locations, naming conventions, data conventions etc.
+The default configuration values are recommended by Varigence, but these can be modified if there is a requirement to tweak specific behaviors or align to specific standards and conventions.
 
-The Configuration defaults are the Varigence recommended values and there is no need to change or configure unless there is a requirement to change specific behaviors. Align these settings with the organizations best practices and environmental requirements.
+Existing configurations can be modified, and new ones can be added, using the [**Configuration Editor**](xref:bimlflex-configurations) in the BimlFlex App.
 
-## Metadata column overview
+> [!TIP]
+> Align the **Configuration** values to best match your organization's best practices, conventions and naming standards.
 
-| Key                          | Value |
-| ---------------------------- | ----- |
-| Configuration Key            | The Configuration Key, the internal key BimlFlex refers to, cannot be changed |
-| Configuration Value          | The Configured Value, can be updated to support a different design pattern or behavior. For column names, change the name here to adhere to the required naming convention |
-| Configuration Data Type      | The data type the configuration uses. Needs to be a valid data type definition |
-| Configuration Default        | The Configuration Key's Default Value |
-| Configuration Grouping       | BimlFlex Internal Grouping of configurations |
-| Configuration Order          | BimlFlex Internal Ordering of configurations |
-| SSIS Expression              | The SSIS Expression used to derive the value. Needs to be a valid SSIS Expression. Uses the shorthand `@@this` to define the current entity |
-| Is Nullable                  | Defines If the attribute is nullable Valid Enumeration {`Empty`, `Y`, `N`} |
-| Staging Attribute            | Should the configuration be included in the staging layer, and if so, how should it be created. Valid Enumeration {`Ignore`, `Derived`, `Source`, `Default`, `Target`, `Hash`} |
-| Persistent Staging Attribute | Should the configuration be included in the persistent staging layer, and if so, how should it be created. Valid Enumeration {`Ignore`, `Derived`, `Source`, `Default`, `Target`, `Hash`} |
-| Hub Attribute                | Should the configuration be included in Hubs, and if so, how should it be created. Valid Enumeration {`Ignore`, `Derived`, `Source`, `Default`, `Target`, `Hash`} |
-| Satellite Attribute          | Should the configuration be included in Satellites, and if so, how should it be created. Valid Enumeration {`Ignore`, `Derived`, `Source`, `Default`, `Target`, `Hash`} |
-| Link Attribute               | Should the configuration be included in Links, and if so, how should it be created. Valid Enumeration {`Ignore`, `Derived`, `Source`, `Default`, `Target`, `Hash`} |
-| Dim Attribute                | Should the configuration be included in Dimensions, and if so, how should it be created. Valid Enumeration {`Ignore`, `Derived`, `Source`, `Default`, `Target`, `Hash`} |
-| Fact Attribute               | Should the configuration be included in Facts, and if so, how should it be created. Valid Enumeration {`Ignore`, `Derived`, `Source`, `Default`, `Target`, `Hash`} |
-| Description                  | An optional description for custom attributes or definitions. The default configurations are described in this document|
-| Is Deleted                   | Flag to set if a custom attribute has been entered but is now no longer needed and should be considered deleted. Unused Settings should be left as is and not be deleted. Valid Enumeration {`Empty`, `Y`, `N`} |
+## Default Configurations
 
-## Standard configurations
+The following **Configurations** are made available by default in BimlFlex.
 
 ### RowEffectiveFromDate
 
-The `RowEffectiveFromDate` defines the start of time for timelines in the data warehouse. The `DateTime2(7)` data type supports a wider range of dates than traditional DateTime meaning starting on 1 Jan 0001 will support most use cases. If a specific start DateTime for timelines is needed, such as to support an existing design template, this can be updated to support it. Unless there is a good reason to change it, it is recommended to keep the default.
+The `RowEffectiveFromDate` is intended to represent the moment the record is loaded in the Data Warehouse, the time of arrival. It is typically used to represent the 'technical timeline' in a bi-temporal context.
+
+By default this is configured as a `DateTime2(7)` data type. This high precision DateTime data type supports a wider range of dates compared to traditional DateTime domain. If a specific start DateTime for timelines is needed, such as to support an existing design template, this can be updated to support it. 
+
+Unless there is a good reason to change it, it is recommended to keep the default.
 
 The SSIS Expression is used in the Staging and Persistent Staging loads to derive the RowEffectiveFromDate from the `@[User::ParentBatchStartTime]` variable. This is inserted into the Data Flow to give each row its effectiveness date. The default configuration is to use the start date time of the parent Batch for this column.
 

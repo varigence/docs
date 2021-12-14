@@ -79,11 +79,11 @@ Choose a tab below to view relevant setting descriptions or examples for Integra
 > [!NOTE]
 > The `Model` **Setting Group** is only applied when first creating and Integration Key.  These **Settings** do not already impact generated Integration Keys.
 
-* The [*ACCELERATE HUB KEYS*](xref:bimlflex-app-reference-documentation-settings-index) setting will include the key parts in the Hub.
-* BimlFlex provides an option to add the `@@rs` to all keys on import [*ADD RECORD SOURCE TO INTEGRATION KEY*](xref:bimlflex-app-reference-documentation-settings-index) and on the **Columns** tab for the **Objects** in the app.
-* The column name is derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*APPEND INTEGRATION KEY*](xref:bimlflex-app-reference-documentation-settings-index) setting either before or after the name depending on the [*SUFFIX OR PREFIX COLUMN*](xref:bimlflex-app-reference-documentation-settings-index) setting.
+* The [*Accelerate Hub Keys*](xref:bimlflex-app-reference-documentation-settings-index) setting will include the key parts in the Hub.
+* BimlFlex provides an option to add the `@@rs` to all keys on import [*Add Record Source to Integration Key*](xref:bimlflex-app-reference-documentation-settings-index) and on the **Columns** tab for the **Objects** in the app.
+* The column name is derived by combing the **Object** *MODEL OVERRIDE NAME* if specified otherwise the **Object** *OBJECT NAME* and the [*Append Integration Key*](xref:bimlflex-app-reference-documentation-settings-index) setting either before or after the name depending on the [*Suffix or Prefix Column*](xref:bimlflex-app-reference-documentation-settings-index) setting.
 * Deriving the value of the concatenated key depends on two settings.
-  The [*HASH NULL VALUE REPLACEMENT*](xref:bimlflex-app-reference-documentation-settings-index) that is used as a null replacement and the [*INTEGRATION KEY TO UPPER*](xref:bimlflex-app-reference-documentation-settings-index) to specify if the derived value should be cast to `UPPER CASE` or left in its original case.
+  The [*Hash NULL Value Replacement*](xref:bimlflex-app-reference-documentation-settings-index) that is used as a null replacement and the [*Integration Key To Upper**](xref:bimlflex-app-reference-documentation-settings-index) to specify if the derived value should be cast to `UPPER CASE` or left in its original case.
   When integrating case sensitive systems, this requires consideration.
 * As an example, the above will be implemented as follows `UPPER(COALESCE(CustomerID, 'NVL'))`
 * It is recommended to use a wide Unicode String datatype.

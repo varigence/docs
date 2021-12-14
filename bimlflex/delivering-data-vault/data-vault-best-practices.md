@@ -10,45 +10,47 @@ varigenceArticleType: Conceptual
 
 This document consolidates and outlines the various best practices on Data Vault implementation using BimlFlex.
 
-
-
 > [!NOTE]
 > This document is intended to supplement other, published, Data Vault standards.
-> Varigence provides a course that combines your preferred Data Vault approach with implementation guides using BimlFlex.
 
 ## Information Modeling
 
 ### Define the Business Model
 
-Before diving into the Data Vault standards and implementation, we recommend creating a high-level model of your business or at least the business area in scope.
+Before diving into the Data Vault standards and implementation we recommend creating a high-level model of your business, or at least for the business area in scope. This is a conceptual model based on business processes, using business terminology. BimlFlex provides the [**Business Modeling**](xref:bimlflex-business-modeling) feature to support creating this.
 
-Build a conceptual model based on business processes using business terminology.
-Exercise caution, especially the `technical` teams, to not base the model on any existing source system.
-At this stage, do not concern yourself with how you will make the source data fit into this model, rather focus on the model and make sure it is an accurate representation of your business.
+The intent of the business modelling feature is to maintain a holistic view on the business processes, and define a model that avoids bias that may be caused by how existing operational systems are implemented.
+
+At this stage, the focus is recommended to be on the module and making sure it is an accurate representation of the business. Defining how the source data will fit into this model will be done in subsequent steps.
 
 A recommended approach is the Business Ontology, as discussed in [The Elephant in the Fridge](https://www.amazon.com.au/Elephant-Fridge-Success-Building-Business-Centered/dp/1634624890) by John Giles, or [Ensemble Logical Model](http://dvstandards.com/) as taught by Genesee Academy.
 
-Create a map, model or diagram of the [Core Business Concepts](xref:bimlflex-data-vault-concept-hub), [Natural Business Relationships](xref:bimlflex-data-vault-concept-link) and any supporting [Context Data](xref:bimlflex-data-vault-concept-satellite) before using the BimlFlex accelerator to transform the source into a Data Vault. The accelerator provides a starting point, and a way to quickly configure a target model. But it still must be aligned and tweaked to fit the business model.
+Using [**Business Modeling](xref:bimlflex-business-modeling) you can create a map, model or diagram of the [Core Business Concepts](xref:bimlflex-data-vault-concept-hub), [Natural Business Relationships](xref:bimlflex-data-vault-concept-link) and any supporting [Context Data](xref:bimlflex-data-vault-concept-satellite). These can be used by the BimlFlex [**Accelerator**](xref:bimlflex-data-vault-accelerator) to transform the source data into a Data Vault model.
 
-Mapping source systems to your `Business Entities` can be a challenge. However, the BimlFlex Accelerator simplifies the process by applying standard Data Vault patterns.
+The Accelerator provides a starting point, a way to quickly configure an initial target Data Vault model. But it still must be aligned and tweaked to fit the business model.
 
 > [!IMPORTANT]
-> It is highly recommended to have a `Business Entities` in place before using the `Data Vault Accelerator` for optimal results.
+> It is highly recommended to have your Business Entities in place before using the Data Vault **Accelerator** for optimal results.
 
-## Data Vault System Columns
+## Recommended Data Vault Columns
 
-* BimlFlex implements all system columns using **Configurations** and a matrix allowing users options for granular configuration.
-* It is possible to override the global configuration for specific projects or objects using **Custom Attributes**.
+BimlFlex implements all standard system columns using [**Configurations**](xref:bimlflex-configurations). The **Configurations** feature allows the definition of specific columns that only apply to certain types of objects.
 
-### Load Date Time Stamp
+For a more granular configuration, it is possible to override the global configuration using **Custom Attributes** so that certain configurations only for specific projects or objects.
 
-* ConfigurationKey `RowEffectiveFromDate`.
-  The *CONFIGURATION VALUE* can be renamed based on your naming conventions.
-* This is optional, but recommended value if supported by your target platform.
-* Not part of the Hub primary key.
-* The default name is `FlexRowEffectiveFromDate` and the recommended name is `DWH_LOAD_DT` changed to conform to your naming standards.
+The following is a list of default columns that specifically apply to Data Vault methodology:
+
+### RowEffectiveFromDate
+
+The `RowEffectiveFromDate` aligns to the Load Date Time Stamp (LDTS) in Data Vault methodology. The LDTS conceptually represents the moment the record is loaded in the Data Warehouse, the time of arrival. It is typically used to represent the 'technical timeline' in a bi-temporal context.
+
+In BimlFlex, this is represented using the [`RowEffectiveFromDate`](xref:bimlflex-metadata-configurations#roweffectivefromdate) configuration.
+
+By default, this configuration is applied to every Data Vault object by BimlFlex. But only for Satellite objects it will be part of the Primary Key definition.
 
 ### Record Source
+
+
 
 * ConfigurationKey `RowRecordSource`.
   The *CONFIGURATION VALUE* can be renamed based on your naming conventions.

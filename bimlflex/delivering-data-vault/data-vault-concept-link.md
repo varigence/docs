@@ -104,7 +104,7 @@ Data Vault Links:
 
 ## Link System Column Configuration
 
-* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#load-date-time-stamp)
+* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#roweffectivefromdate)
 * [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
 * [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
 

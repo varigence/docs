@@ -57,11 +57,18 @@ The name of the Hub, and how this will be derived in the **Accelerator**, is man
 * The [*Append Hub*](xref:bimlflex-app-reference-documentation-setting-DvAppendHub) setting in the *Data Vault Naming* setting category contains the label which will be added to a new Hub **Object**, for example 'HUB'
 * Whether the above label will be added as a `Prefix` or `Suffix` is managed in the [*Suffix or Prefix Object*](xref:bimlflex-app-reference-documentation-setting-SuffixOrPrefixObject) setting which is found in the *Naming* setting category
 
-Varigence recommends to use `HUB`, `H`, `HB` as the convention to name the Hub in the *Append Hub* **Setting**. The value `HUB` is the default.
+Varigence recommends to use `HUB`, or just `H` as the convention to name the Hub in the *Append Hub* setting. The value `HUB` is the default.
 
 The Hub name will be derived from the *Business Entity* or *Business Name* of the source object. If both the *Business Entity* and *Business Name* are set then the *Business Entity* value will take precedence.
 
 Otherwise, the *Object Name* from the source object will be used to name the target Hub.
+
+#### Inferred Hubs
+
+In cases where the source object directly maps to a Link, or when additional **Integration Keys** are defined, the Accelerator will display a placeholder Hub.
+
+> [!NOTE]
+> There isn't an **Object Type** to define a `Stub Hub`. It is just a `Hub`.
 
 ### Manually defining a Hub Object
 
@@ -93,22 +100,13 @@ This is controlled using the The [*Infer Link Hub*](xref:bimlflex-app-reference-
 
 By default, BimlFlex will add the following **Columns** to a Hub. These are not visible in the **Object** details, and do not need to be manually added.
 
-* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#load-date-time-stamp)
+* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#roweffectivefromdate)
 * [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
 * [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
 
 Columns such as these are defined in the BimlFlex [**Configurations**](xref:bimlflex-configurations). The **Configurations** screen in the BimlFlex App enables modelers to define which **Columns** apply to certain **Object Types**. For a **Column** to be added to the Hub, the **Configuration** will need to be configured so that the *Hub Attribute* is set to be `Derived`.
 
 If additional standard **Columns** are required for the Hub, then these are recommended to be implemented as **Configurations**.
-
-## Inferred Hubs
-
-A Hub created as a placeholder when a related **Core Business Concept** that is not in scope for the current iteration.
-
-The [*INFER LINK HUB*](xref:bimlflex-app-reference-documentation-settings-index) setting will ensure the **Integration Keys** are always loaded enabling future expansion.
-
-> [!NOTE]
-> There isn't an *OBJECT TYPE* to define a `Stub Hub` as it is just a `Hub`.
 
 ## Integration Key Definition
 
@@ -133,7 +131,7 @@ Using the Infer Integration Key setting in the metadata importer will add the In
 
 `FlexToBk(@@rs,ProductID)` will generate Product_BK column data from the Connection Record Source and the ID (example: `awlt~680`)
 
-### Multiple key columns
+### Keys with Multiple Columns
 
 Some Hub designs require multiple source key columns to define the Hub through the Integration Key. Sources with key overlap might need a system or source string added, multiple source keys might need to be combined to form a distinct Hub Integration key.
 
