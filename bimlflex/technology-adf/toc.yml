@@ -16,3 +16,5 @@
   href: bfx-arm-templates.md
 - name: Project and Batch Organization
   href: project-batch-structure-in-adf.md
+- name: Azure Function App
+  href: azure-function-app.md
