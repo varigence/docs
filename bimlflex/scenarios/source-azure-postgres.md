@@ -8,13 +8,13 @@ varigenceArticleType: Conceptual
 
 # Using Azure PostgreSQL Sources in BimlFlex
 
-This section covers importing metadata from an Azure PostgreSQL ('Postgres') database, so that this metadata becomes available in the BimlFlex app to further generate Azure Data Factory (ADF) and SSIS assets.
+This section covers importing metadata from an Azure PostgreSQL ('Postgres') database, so that this metadata becomes available in the BimlFlex app to further generate Azure Data Factory (ADF) and SQL Server Integration Services (SSIS) assets.
 
 For the purpose of this example, we use an Azure PostgreSQL database server that has been populated with the [AdventureWorks for Postgres Database](https://github.com/lorint/AdventureWorks-for-Postgres).
 
 ## Setup Connection in BimlFlex App
 
-1. Enter the [`Connection Name`](xref:bimlflex-connection-editor), for this example we will use 'APGSQL'.
+1. Enter the [`Connection Name`](xref:bimlflex-connection-editor), for this example we will use `APGSQL`.
 2. Select `Source System` for the Integration Stage.
 3. Select `OlEDB` for the Connection Type.
 4. Select `PostgreSQL` for the System Type.
@@ -29,13 +29,13 @@ The next part is to configure the connection string. This is used to connect to 
 
 The following properties of the Connection String are configurable:
 
-**Provider** - This value is only used in an SSIS context. We are using the [Intellisoft OLE DB Provider for PostgreSQL](https://www.pgoledb.com/index.php/component/filecabinet/?Itemid=111) for connecting to Azure Postgres. In order to emit a working SSIS source component, the *PGNP.1* provider must be specified. It is not needed for the metadata import or for ADF sources.
+**Provider** - This value is only used in an SSIS context. The [Intellisoft OLE DB Provider for PostgreSQL](https://www.pgoledb.com/index.php/component/filecabinet/?Itemid=111) is used here for connecting to Azure Postgres. In order to emit a working SSIS source component, the *PGNP.1* provider must be specified. It is not needed for the metadata import or for ADF sources.
 
 **Host** - This is the URL of your Azure PostgreSQL database server. The URL can be found by checking the database in Azure Portal.
 
-**Port** - The default value is 5432. This is typically only relevant for an on-premise scenario.
+**Port** - The default value is 5432. This is typically only relevant for an on-premises scenario.
 
-**User Name** - The fully qualified user id that will be connecting to the Azure PostgresSQL database. Note that the database server identifier (the part before the .postgres.database.azure.com of the host address) is required.
+**User Name** - The fully qualified user id that will be connecting to the Azure PostgreSQL database. Note that the database server identifier (the part before the .postgres.database.azure.com of the host address) is required.
 
 **Password** - The password used to log in the specified user.
 
@@ -45,7 +45,7 @@ Once this information is filled out, you can click `[Test]` and verify that you 
 
 ## Importing Metadata
 
-Once you have established a working connection string, you are ready to import your metadata. Click the `[Import Metadata]` button at the top of the connection screen.
+Once a working connection string is established, it is possible to import metadata. Click the `[Import Metadata]` button at the top of the connection screen.
 
 Once taken to the new screen, click `[Connect To Database]`. If you have a working database connection you will then see a list of Schemas / Tables for you to select for importing.
 
