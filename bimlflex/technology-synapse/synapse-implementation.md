@@ -106,7 +106,7 @@ These focus more on "how" the **Connection** is used.
 > [!TIP]
 > For additional details on creating a **Connection** refer to the below guide:
 >
-> - BimlFlex Docs: [Connections](configuration editor)  
+> - BimlFlex Docs: [Connections](xref:bimlflex-connection-editor)
 
 > ### [SSIS](#tab/ssis-orchestration)
 >

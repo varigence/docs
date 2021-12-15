@@ -14,7 +14,7 @@ For the purpose of this example, we use an Azure PostgreSQL database server that
 
 ## Setup Connection in BimlFlex App
 
-1. Enter the [`Connection Name`](configuration editor), for this example we will use 'APGSQL'.
+1. Enter the [`Connection Name`](xref:bimlflex-connection-editor), for this example we will use 'APGSQL'.
 2. Select `Source System` for the Integration Stage.
 3. Select `OlEDB` for the Connection Type.
 4. Select `PostgreSQL` for the System Type.

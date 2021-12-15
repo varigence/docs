@@ -403,7 +403,7 @@ Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 
 > [!TIP]
 > For additional details on creating a **Connection** refer to the below guide:  
-> BimlFlex Docs: [Connections](configuration editor)
+> BimlFlex Docs: [Connections](xref:bimlflex-connection-editor)
 
 ### Linked Services (ADF Only)
 
