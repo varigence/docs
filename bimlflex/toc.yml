@@ -23,14 +23,23 @@
   - name: BimlFlex for Azure Data Factory
     href: technology-adf/toc.yml
 
-  - name: BimlFlex for Synapse
-    href: technology-synapse/toc.yml
-
-  - name: BimlFlex for Snowflake
-    href: technology-snowflake/toc.yml
+  - name: BimlFlex for Azure Mapping Data Flows
+    href: technology-data-flow/toc.yml
 
   - name: BimlFlex for SQL Server Integration Services
     href: technology-ssis/toc.yml
+
+  - name: BimlFlex on SQL Server
+    href: technology-sql-server/toc.yml
+  
+  - name: BimlFlex on Synapse
+    href: technology-synapse/toc.yml
+
+  - name: BimlFlex on Snowflake
+    href: technology-snowflake/toc.yml
+
+  - name: BimlFlex on Delta Lake
+    href: technology-delta-lake/toc.yml
 
   - name: Other BimlFlex Connectivity
     href: scenarios/toc.yml
@@ -49,9 +58,6 @@
 
   - name: Support Guide
     href: support/toc.yml
-
-  - name: Tips And Tricks
-    href: tips-and-tricks/toc.yml
 
   - name: Release Notes
     href: release-notes/toc.yml

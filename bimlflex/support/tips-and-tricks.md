@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-tips-and-tricks-tips-and-tricks
+uid: bimlflex-tips-and-tricks-overview
 title: Tips and Tricks
 summary: BimlFlex tips and tricks including custom SSIS components, Extension Point abilities, importing metadata, custom scripts and setting options 
 varigenceProduct: BimlFlex

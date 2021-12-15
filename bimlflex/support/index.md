@@ -27,3 +27,9 @@ Some tips to assist in pinpointing where any error may originate from.
 
 * [Troubleshooting Tips](xref:bimlflex-support-troubleshooting-tips)
 * [Excel File Migration For BimlFlex 2020 R2](xref:excel-metadata-addin)
+
+## Tips and Tricks
+
+The tips-and-tricks section contains focused design and implementation notes that illustrate core BimlFlex features, nifty tricks or similar.
+
+* [Tips and tricks](xref:bimlflex-tips-and-tricks-overview)
