@@ -30,10 +30,10 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 * Added extended support for Dynamic Content so that parameters can be passed in to an ADF Pipeline or Mapping Data Flow and then evaluated at run time.
 
 * Added connector support for:  
-    * AmazonS3Compatible as `LinkedService`/`Dataset`/`Source`
-    * AzureDatabricksDeltaLake as `LinkedService`/`Dataset`/`Source`/`Sink`
-    * MongoDbAtlas as `LinkedService`/`Dataset`/`Source`
-    * OracleCloudStorage as `LinkedService`/`Dataset`/`Source`
+    * AmazonS3Compatible as `LinkedService`, `Dataset`, `Source`
+    * AzureDatabricksDeltaLake as `LinkedService`, `Dataset`, `Source`, `Sink`
+    * MongoDbAtlas as `LinkedService`, `Dataset`, `Source`
+    * OracleCloudStorage as `LinkedService`, `Dataset`, `Source`
     * AzureFileStorage as `Sink`
 
 * Added the following properties to `MachineLearningExecutePipeline` activities:
