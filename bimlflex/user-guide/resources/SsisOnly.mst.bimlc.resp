@@ -1,1 +1,0 @@
---targetPath="output" --buildDocumentation- --docOutputPath="documentation" --bundleSetting="SsisOnly.bimlb.settings" --version=SqlServer2017 --version=Ssas2017 --version=SsasTabular2017 --version=Ssis2017 --ssisDeploymentModel=Project --ddlBuildMode="None" --warnAsError=False --warn=4 --cleanOutputFolder=True --EnableBimlFlex=True

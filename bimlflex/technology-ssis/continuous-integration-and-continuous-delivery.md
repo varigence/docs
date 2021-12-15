@@ -105,10 +105,6 @@ Once the ispaq file is built it is possible to deploy it to a SSIS Catalog on an
 
 When it has been deployed for the first time, use the Catalog environment feature to override relevant project parameters, such as connection strings, for the environment.
 
-## Sample Scripts
-
-Download link to sample files: [bimlflex-cicd-sample-files.zip](../user-guide/resources/bimlflex-cicd-sample-files.zip)
-
 ### Sample Script using MSBuild
 
 location: project root folder  

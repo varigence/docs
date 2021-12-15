@@ -460,14 +460,14 @@ It also supports specifying Project level Parameters that are commonly available
 
 Add Extension Points in BimlStudio.
 
-More information: [BimlFlex Extension Points](xref:bimlflex-concepts-extension-points)
+More information: [BimlFlex Extension Points](xref:bimlflex-concepts-extension-points)
 
-![Create Project Parameter](../user-guide/images/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
+![Create Project Parameter](images/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
 
 The newly created file contains some sample scripts:
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="ProjectName" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="<ProjectName>" #>
 
 <Parameter Name="ServerName" DataType="String" IsRequired="true">localhost</Parameter>
 <Parameter Name="UserName" DataType="String" IsRequired="true">varigence</Parameter>
@@ -475,24 +475,27 @@ The newly created file contains some sample scripts:
 ```
 
 The directives are required for the Extension Point. An additional attribute for the target of the Extension Point needs to be specified.
-For a project parameter it is the name of the project it targets.
+
+For a project parameter, this is the name of the project it targets.
 
 Once the Project Parameter is defined through the Extension Point it can be reused throughout the project in either metadata or additional Extension Points as needed.
 
 ### Extension Point Package Parameters (SSIS)
 
 Package Parameters only affect the individual package it targets.
+
 Package parameters can be used when a single package requires bespoke logic that doesn't fit the existing parameter logic.
+
 These parameters can be used for any logic and might not need to be persisted in the BimlCatalog database.
 
 Add Extension Points in BimlStudio
 
-![Create Package Parameter](../user-guide/images/bimlflex-ss-v5-extension-points-create-package-parameter.png "Create Package Parameter")
+![Create Package Parameter](images/bimlflex-ss-v5-extension-points-create-package-parameter.png "Create Package Parameter")
 
 The newly created file contains some sample scripts:
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PackageVariable" target="ObjectName"#>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PackageVariable" target="<ObjectName>"#>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
 <#* CustomOutput.ObjectInherit = true; *#>
@@ -501,7 +504,9 @@ The newly created file contains some sample scripts:
 ```
 
 The directives are required for the Extension Point.
+
 An additional attribute for the target of the Extension Point needs to be specified.
-For a package parameter it is the name of the package it targets.
+
+For a package parameter, this is the name of the package it targets.
 
 Once the Package Parameter is defined through the Extension Point it can be reused throughout the Package in either metadata or additional Extension Points as needed.

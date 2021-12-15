@@ -11,7 +11,7 @@ One core feature in using the BimlFlex Data Warehouse Automation solution is tha
 
 > [!NOTE]
 > The following guide is from tailored specifically for ADF.  
-> For a details and considerations on implementing CI/CD in SSIS see the [BimlFlex Continuous Integration and Continuous Delivery](xref:bimlflex-ssis-continuous-integration-and-continuous-delivery).
+> For a details and considerations on implementing CI/CD in SSIS see the [BimlFlex Continuous Integration and Continuous Delivery](xref:bimlflex-ssis-continuous-integration-and-continuous-delivery).
 
 There are numerous approaches used for CI/CD and Data Warehouses have their special considerations compared to the more common web based or software development based CI/CD processes.
 
@@ -108,8 +108,6 @@ Once the ispaq file is built it is possible to deploy it to a SSIS Catalog on an
 When it has been deployed for the first time, use the Catalog environment feature to override relevant project parameters, such as connection strings, for the environment.
 
 ## Sample Scripts
-
-Download link to sample files: [bimlflex-cicd-sample-files.zip](../user-guide/resources/bimlflex-cicd-sample-files.zip)
 
 ### Sample Script using MSBuild
 

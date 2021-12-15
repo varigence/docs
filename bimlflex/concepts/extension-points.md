@@ -25,13 +25,13 @@ Extension Points have four key components:
 * Custom code that implements the required behaviour.
 * Input and output path variables for adding the Extension Point to the data logistics process.
 
-![Extension Points Sample Code](../user-guide/images/bimlflex-ss-v5-extension-points-sample-code.png "Extension Points Sample Code")
+![Extension Points Sample Code](images/bimlflex-ss-v5-extension-points-sample-code.png "Extension Points Sample Code")
 
 The resulting custom code created through the Extension Point can be Biml code or a combination of SQL, .Net and Biml code. However, the resulting output must always provide BimlScript compatible code so that the overall solution can complete the build process in BimlStudio.
 
 Extension Points are created in BimlStudio, and a library of Extension Points is provided upon installation. The Extension Points are available in the BimlFlex Ribbon tab in BimlStudio, and they are organized there are several Extension Point areas with a large number of different Extension Points available. Each Extension Point template will generate a code block that targets a specific point of the project.
 
-![BimlFlex Ribbon Tab](../user-guide/images/bimlflex-ss-v5-bimlflex-ui-tab.png "BimlFlex Ribbon Tab")
+![BimlFlex Ribbon Tab](images/bimlflex-ss-v5-bimlflex-ui-tab.png "BimlFlex Ribbon Tab")
 
 > [!NOTE]
 > Extension Points are saved as Biml files in the BimlStudio Project and should be treated as source code for the solution.
@@ -55,7 +55,7 @@ Extension Point Targets define _where_ the custom code is applied, for example t
 
 Below is an example of where Extension Points can be added to the data logistics structure. The red dots indicate injection points (targets) for Extension Points.
 
-![Extension Points Injection Points](../user-guide/images/bimlflex-ss-v5-extension-points-sample-flow.png "Extension Points Injection Points").
+![Extension Points Injection Points](images/bimlflex-ss-v5-extension-points-sample-flow.png "Extension Points Injection Points").
 
 The target is relative to the Extension Point, and refers to the object name within the solution. This can be a Project, Connection, Column and more generally any object involved in data transformation. In BimlStudio, the objects are visible in the Logical View in principle.
 
@@ -63,7 +63,7 @@ The target is relative to the Extension Point, and refers to the object name wit
 
 The BimlFlex App provides a feature that allows defining a target for an Extension Point for a collection of objects. This is the `ExtensionPointTarget` Attribute, accessible in the Attributes screen within the BimlFlex App.
 
-![Extension Point Target Attribute](../concepts/images/attribute-extension-point-target.png "Extension Point Target Attribute").
+![Extension Point Target Attribute](images/attribute-extension-point-target.png "Extension Point Target Attribute").
 
 The Extension Point Target BimlFlex Attribute can be configured for a specific scope and by adding the Attribute Value as the target for an Extension Point the custom code will be applied to any relevant Objects within this scope.
 
@@ -86,12 +86,12 @@ In addition to specifying one or more Extension Point Target Attributes, a targe
 
 * If the **Extension Point** is known and just the target name of an object is needed, right-click the Object in the Logical View in BimlStudio and click `Copy Biml`.
 
-![Copy Biml](../user-guide/images/right-click-copy-biml.png "Copy Biml")
+![Copy Biml](images/right-click-copy-biml.png "Copy Biml")
 
-* Paste the `Biml` in `Notepad` or `Notepad ++`. the Screenshot uses Notepad ++ and have the language set to `XML` to enable highlighting.
+* Paste the `Biml` into a text editor, such as `Notepad` or `Visual Studio Code`. the Screenshot uses Notepad ++ and have the language set to `XML` to enable highlighting.
 * Use either the `Batch` or `ObjectEntity` information depending on the Extension Point scope.
 
-![BimlFlex Target](../user-guide/images/bimlflex-package-annotations.png "BimlFlex Target")
+![BimlFlex Target](images/bimlflex-package-annotations.png "BimlFlex Target")
 
 #### Option 2 - Find Extension Point Location and Target
 
@@ -99,17 +99,17 @@ This is a more technical approach that requires some `Biml` knowledge.
 
 1. `Right Click` the target Object and choose `View Designer`.
 
-![View Designer](../user-guide/images/right-click-view-designer.png "View Designer")
+![View Designer](images/right-click-view-designer.png "View Designer")
 
 1. Right Click on the tab with the package name, in this case `CI_LOAD_AWLT_DM_Customer`, and choose `View in BimlScript Designer`
 
-![View BimlScript Designer](../user-guide/images/right-click-view-bimlscript-designer.png "View BimlScript Designer")
+![View BimlScript Designer](images/right-click-view-bimlscript-designer.png "View BimlScript Designer")
 
 1. click `Update Preview` on the `BimlScript` tab.
 1. In the `Preview Expanded BimlScript` there are `XML` comments with the available `Extension Point` types and their targets.
 1. When targeting the parent of an Object-based Extension Point, also set `CustomOutput.ObjectInherit = true;`
 
-![Update Preview](../user-guide/images/update-preview-extensionpoint-target.png "Update Preview")
+![Update Preview](images/update-preview-extensionpoint-target.png "Update Preview")
 
 ## Extension Point Directives
 
