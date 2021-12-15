@@ -12,5 +12,5 @@ Used to control the converted DateTime in the FlexToBk to ensure compatability w
 
 Notes:
 
-* This setting is part of the `Core` settings category.
+* This setting is part of the *Core* settings category.
 * The default value for this setting is `Y`.

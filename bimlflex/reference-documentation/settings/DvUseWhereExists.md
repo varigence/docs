@@ -12,5 +12,5 @@ Enable to use WHERE EXISTS type SQL statements instead of LEFT JOIN type stateme
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

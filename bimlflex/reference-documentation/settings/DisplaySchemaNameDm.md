@@ -16,5 +16,5 @@ By using this setting the objects are created as separate entities because of th
 
 Notes:
 
-* This setting is part of the `Data Mart` settings category.
+* This setting is part of the *Data Mart* settings category.
 * The default value for this setting is `N`.

@@ -12,5 +12,5 @@ Enable to use logging in the Azure Data Factory Copy Command.
 
 Notes:
 
-* This setting is part of the `Azure Copy` settings category.
+* This setting is part of the *Azure Copy* settings category.
 * The default value for this setting is `N`.

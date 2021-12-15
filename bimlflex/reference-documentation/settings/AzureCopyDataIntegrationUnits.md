@@ -12,5 +12,5 @@ Specify the powerfulness of the copy executor. Value can be 2-256. When you choo
 
 Notes:
 
-* This setting is part of the `Azure Copy` settings category.
+* This setting is part of the *Azure Copy* settings category.
 

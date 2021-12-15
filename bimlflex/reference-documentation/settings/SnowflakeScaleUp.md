@@ -12,5 +12,5 @@ Determines if the Snowflake processing should scale up the Snowflake Warehouse a
 
 Notes:
 
-* This setting is part of the `Snowflake` settings category.
+* This setting is part of the *Snowflake* settings category.
 * The default value for this setting is `Y`.

@@ -16,5 +16,5 @@ If some objects in the connection should be persisted and some should not, overr
 
 Notes:
 
-* This setting is part of the `Staging` settings category.
+* This setting is part of the *Staging* settings category.
 

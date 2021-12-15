@@ -12,5 +12,5 @@ The file size to split extracted files into multiple files for. Applied if the f
 
 Notes:
 
-* This setting is part of the `Staging` settings category.
+* This setting is part of the *Staging* settings category.
 * The default value for this setting is `0`.

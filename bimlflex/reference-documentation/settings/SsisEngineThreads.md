@@ -12,5 +12,5 @@ Maximum number of SSIS engine threads to employ. Override the value here to chan
 
 Notes:
 
-* This setting is part of the `SSIS` settings category.
+* This setting is part of the *SSIS* settings category.
 * The default value for this setting is `10`.

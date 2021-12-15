@@ -18,5 +18,5 @@ If this setting is disabled, the data logistics process will perform a lookup an
 
 Notes:
 
-* This setting is part of the `Staging Persistent` settings category.
+* This setting is part of the *Staging Persistent* settings category.
 * The default value for this setting is `N`.

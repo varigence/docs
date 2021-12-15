@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Batches
 
-The BimlFlex [`Batch`](xref:bimlflex-batch-editor) concept organises the data logistics workload (ETL/ELT) into groups. Batches are used by [`Projects`](xref:bimlflex-project-editor) to execute workloads in steps, thus managing the overall order of execution. A Project must be associated to a Batch.
+The BimlFlex [**Batch**](xref:bimlflex-batch-editor) concept organises the data logistics workload (ETL/ELT) into groups. Batches are used by [**Projects**](xref:bimlflex-project-editor) to execute workloads in steps, thus managing the overall order of execution. A Project must be associated to a Batch.
 
 ## Overview
   

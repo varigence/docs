@@ -14,5 +14,5 @@ Disable this if the values for Credentials, Data Sources, External Table Formats
 
 Notes:
 
-* This setting is part of the `SSDT` settings category.
+* This setting is part of the *SSDT* settings category.
 * The default value for this setting is `N`.

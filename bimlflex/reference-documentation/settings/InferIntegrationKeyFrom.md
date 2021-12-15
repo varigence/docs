@@ -14,5 +14,5 @@ When specifying "ColumnName", a name needs to be added in the Import Metadata sc
 
 Notes:
 
-* This setting is part of the `Model` settings category.
+* This setting is part of the *Model* settings category.
 * The default value for this setting is `PrimaryKey`.

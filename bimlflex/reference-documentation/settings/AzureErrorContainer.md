@@ -14,5 +14,5 @@ This should be indicative of the purpose of the contents, such as "error".
 
 Notes:
 
-* This setting is part of the `Azure Storage` settings category.
+* This setting is part of the *Azure Storage* settings category.
 * The default value for this setting is `error`.

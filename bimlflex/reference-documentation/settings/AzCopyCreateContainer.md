@@ -12,5 +12,5 @@ Determines if the pipeline include a step to create the destination container. L
 
 Notes:
 
-* This setting is part of the `AzCopy` settings category.
+* This setting is part of the *AzCopy* settings category.
 * The default value for this setting is `N`.

@@ -12,5 +12,5 @@ SSIS Data Flow configuration for Default Buffer Max Rows for supported destinati
 
 Notes:
 
-* This setting is part of the `SSIS` settings category.
+* This setting is part of the *SSIS* settings category.
 * The default value for this setting is `10000`.

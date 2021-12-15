@@ -12,5 +12,5 @@ The folder where SnowDT database files are created. Use @@OutputPath for the def
 
 Notes:
 
-* This setting is part of the `Snowflake` settings category.
+* This setting is part of the *Snowflake* settings category.
 * The default value for this setting is `@@OutputPath\SnowDT\@@CustomerUid\@@VersionName`.

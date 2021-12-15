@@ -12,5 +12,5 @@ Determines if BimlFlex uses the BimlCatalog database for logging, auditing and c
 
 Notes:
 
-* This setting is part of the `Core` settings category.
+* This setting is part of the *Core* settings category.
 * The default value for this setting is `Y`.

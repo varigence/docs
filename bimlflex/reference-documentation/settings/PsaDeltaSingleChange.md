@@ -14,5 +14,5 @@ In this configuration, no record collapsing is applied because the assumption ma
 
 Notes:
 
-* This setting is part of the `Staging Persistent` settings category.
+* This setting is part of the *Staging Persistent* settings category.
 * The default value for this setting is `N`.

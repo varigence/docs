@@ -12,5 +12,5 @@ The setting "Merge All Rows" is *only* used when the source is an "object" and t
 
 Notes:
 
-* This setting is part of the `Staging Persistent` settings category.
+* This setting is part of the *Staging Persistent* settings category.
 * The default value for this setting is `N`.

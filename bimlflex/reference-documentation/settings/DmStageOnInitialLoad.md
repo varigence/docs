@@ -14,5 +14,5 @@ Any post process code that use the staging table contents will need to take this
 
 Notes:
 
-* This setting is part of the `Data Mart` settings category.
+* This setting is part of the *Data Mart* settings category.
 * The default value for this setting is `N`.

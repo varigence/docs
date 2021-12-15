@@ -14,5 +14,5 @@ This is recommended so that the hashed values can be recreated using standard SQ
 
 Notes:
 
-* This setting is part of the `Core` settings category.
+* This setting is part of the *Core* settings category.
 * The default value for this setting is `Y`.

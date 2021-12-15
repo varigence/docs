@@ -14,5 +14,5 @@ This can be overriden by the "DeleteDetectionApplyPsa" Extension Point. Use this
 
 Notes:
 
-* This setting is part of the `Delete Detection` settings category.
+* This setting is part of the *Delete Detection* settings category.
 * The default value for this setting is `Y`.

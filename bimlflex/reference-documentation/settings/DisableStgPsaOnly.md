@@ -14,5 +14,5 @@ This setting applies to SSIS output only, and only works when the "Delta Detecti
 
 Notes:
 
-* This setting is part of the `Staging Persistent` settings category.
+* This setting is part of the *Staging Persistent* settings category.
 * The default value for this setting is `N`.

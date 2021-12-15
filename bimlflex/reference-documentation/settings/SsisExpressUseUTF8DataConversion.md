@@ -12,5 +12,5 @@ Determines if SSIS Express-based extract packages apply UTF8 data conversion.
 
 Notes:
 
-* This setting is part of the `Staging` settings category.
+* This setting is part of the *Staging* settings category.
 * The default value for this setting is `Y`.

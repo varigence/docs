@@ -12,5 +12,5 @@ The name of the Azure Key Vault used by Azure Data Factory to access the functio
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 

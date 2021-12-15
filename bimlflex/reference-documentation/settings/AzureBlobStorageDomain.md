@@ -12,5 +12,5 @@ The AzCopy domain to use. Classic blob storage uses "blob.core.windows.net" Azur
 
 Notes:
 
-* This setting is part of the `Azure Storage` settings category.
+* This setting is part of the *Azure Storage* settings category.
 * The default value for this setting is `blob.core.windows.net`.

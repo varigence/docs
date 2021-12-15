@@ -12,5 +12,5 @@ Specific override behavior for the object name for staging tables.
 
 Notes:
 
-* This setting is part of the `Staging Naming` settings category.
+* This setting is part of the *Staging Naming* settings category.
 

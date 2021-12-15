@@ -12,5 +12,5 @@ The archive data retention period to use for the BimlFlex database cleanup proce
 
 Notes:
 
-* This setting is part of the `Operations` settings category.
+* This setting is part of the *Operations* settings category.
 * The default value for this setting is `30`.

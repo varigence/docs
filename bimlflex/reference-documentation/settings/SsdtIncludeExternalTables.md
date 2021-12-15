@@ -12,5 +12,5 @@ Determines if External Tables are included in the generated SSDT Project.
 
 Notes:
 
-* This setting is part of the `SSDT` settings category.
+* This setting is part of the *SSDT* settings category.
 * The default value for this setting is `N`.

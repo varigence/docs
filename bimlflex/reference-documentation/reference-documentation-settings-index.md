@@ -7,7 +7,7 @@ varigenceArticleType: Reference
 ---
 # BimlFlex Settings Reference Documentation
 
-This document outlines the metadata and framework `settings` available in BimlFlex.
+This document outlines the metadata and framework **Settings** available in BimlFlex.
 
 These settings drive the behavior of the BimlFlex product.
 
@@ -16,7 +16,7 @@ By changing settings, the produced artifacts can adapt to specific requirements 
 Align these settings with the organizations best practices and environmental requirements.
 
 > [!NOTE]
-> For additional details on using the **Settings Editor** in BimlFlex refer to [Installing BimlFlex](xref:bimlflex-settings).
+> For additional information about using **Settings** in BimlFlex, please refer to the [Settings Editor](xref:bimlflex-settings) documentation.
 
 ## AzCopy
   
@@ -114,7 +114,8 @@ Align these settings with the organizations best practices and environmental req
 |[Use BimlCatalog](xref:bimlflex-app-reference-documentation-setting-UseBimlCatalog) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if BimlFlex uses the BimlCatalog database for logging, auditing and configuration variables.|
 |[Hash Null Value Replacement](xref:bimlflex-app-reference-documentation-setting-HashNullValue) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Null value replacement to be used when hashing.|
 |[SSIS Hash Null Value Replacement](xref:bimlflex-app-reference-documentation-setting-SsisHashNullValue) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Null value replacement to be used when hashing using the Varigence BimlFlex SSIS Custom component.|
-|[SSIS Convert Date To String With Scale](xref:bimlflex-app-reference-documentation-setting-SsisConvertDateWithScale) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Used to control the converted DateTime in the FlexToBk to ensure compatability with the SQL code.|
+|[SSIS Convert Date To String With Scale](xref:bimlflex-app-reference-documentation-setting-SsisConvertDateWithScale) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Used to control the converted DateTime in the FlexToBk to ensure compatability with the SQL code.|
+|[Use SSIS Compatable Date Format](xref:bimlflex-app-reference-documentation-setting-UseSsisCompatableDateFormat) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Used to control the converted DateTime in the FlexToBk to ensure compatability with the SQL code.|
 |[Integration Key To Upper](xref:bimlflex-app-reference-documentation-setting-IntegrationKeyToUpper) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if strings in the Integration Key will be upper-cased automatically.|
 |[Lookup Table Pattern](xref:bimlflex-app-reference-documentation-setting-LookupTablePattern) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The table naming pattern for the Lookup Table.|
 |[String Concatenator](xref:bimlflex-app-reference-documentation-setting-StringConcatenator) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string value used in concatenating Integration Keys and Hash values (sanding element). Defaults to "~".|
@@ -305,7 +306,7 @@ Align these settings with the organizations best practices and environmental req
 |[Server](xref:bimlflex-app-reference-documentation-setting-SsisServer) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The SSIS Server name to use for generated deployment script files.|
 |[SSISDB](xref:bimlflex-app-reference-documentation-setting-SsisDb) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The SSISDB database name to use for generated deployment script files.|
 |[Folder](xref:bimlflex-app-reference-documentation-setting-SsisFolder) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The SSIS Catalog folder name to use for generated deployment script files.|
-|[Create Folder](xref:bimlflex-app-reference-documentation-setting-SsisCreateFolder) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Add Create SSIS Catalog Folder in deployment script files.|
+|[Create Folder](xref:bimlflex-app-reference-documentation-setting-SsisCreateFolder) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Add Create SSIS Catalog Folder in SSIS deployment script files.|
 |[SqlCmd Override](xref:bimlflex-app-reference-documentation-setting-SqlCmdOverride) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Override the `sqlcmd` connection in the Create SSIS Catalog folder in the deployment script.|
 |[BLOB Temp Storage Path](xref:bimlflex-app-reference-documentation-setting-SsisBLOBTempStoragePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Blob Temporary Storage Path that SSIS uses to spool temporary data to disk when it runs out of memory.|
 |[Buffer Temp Storage Path](xref:bimlflex-app-reference-documentation-setting-SsisBufferTempStoragePath) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Buffer Temporary Storage Path that SSIS uses to spool temporary data to disk when it runs out of memory.|

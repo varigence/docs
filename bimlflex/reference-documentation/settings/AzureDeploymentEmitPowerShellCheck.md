@@ -12,5 +12,5 @@ Determines if the PowerShell deployment files include environment verification b
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 * The default value for this setting is `Y`.

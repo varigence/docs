@@ -12,5 +12,5 @@ The Snowflake warehouse name to use.
 
 Notes:
 
-* This setting is part of the `Snowflake` settings category.
+* This setting is part of the *Snowflake* settings category.
 

@@ -12,5 +12,5 @@ The folder where SSIS configuration files are stored. Used for non-project confi
 
 Notes:
 
-* This setting is part of the `Core` settings category.
+* This setting is part of the *Core* settings category.
 * The default value for this setting is `C:\BimlFlex\Configurations`.

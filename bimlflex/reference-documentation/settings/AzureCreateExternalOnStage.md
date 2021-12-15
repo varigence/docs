@@ -12,5 +12,5 @@ Should the Staging process "DROP" and "CREATE EXTERNAL TABLE" before running the
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 * The default value for this setting is `N`.

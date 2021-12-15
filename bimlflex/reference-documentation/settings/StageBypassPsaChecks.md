@@ -12,5 +12,5 @@ Enable this to bypass lookups, and directly applies all records to the Staging a
 
 Notes:
 
-* This setting is part of the `Staging Persistent` settings category.
+* This setting is part of the *Staging Persistent* settings category.
 * The default value for this setting is `N`.

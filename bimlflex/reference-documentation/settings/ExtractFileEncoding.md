@@ -12,5 +12,5 @@ For an extracted file, specify a different encoding than the standard Unicode as
 
 Notes:
 
-* This setting is part of the `Staging` settings category.
+* This setting is part of the *Staging* settings category.
 * The default value for this setting is `Unicode`.

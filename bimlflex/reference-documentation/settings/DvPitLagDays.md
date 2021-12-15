@@ -12,5 +12,5 @@ Specify the number of days the Point-In-Time process should go back and look for
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `1`.

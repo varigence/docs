@@ -12,5 +12,5 @@ The Storage Container to use when accessing Blob Storage for linked ARM template
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 * The default value for this setting is `deployment`.

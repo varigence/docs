@@ -12,5 +12,5 @@ Should we prefix the Hubs and Links Surrogate Keys.
 
 Notes:
 
-* This setting is part of the `Data Vault Naming` settings category.
+* This setting is part of the *Data Vault Naming* settings category.
 * The default value for this setting is `Links`.

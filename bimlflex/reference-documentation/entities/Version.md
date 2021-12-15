@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Versions
 
-The BimlFlex [`Version`](xref:bimlflex-concepts-version) concept supports management of changes in metadata over time. These changes are managed in Versions.
-    A Version is part of a BimlFlex [Customer](xref:bimlflex-concepts-customer), and a Customer can contain many (one or more) versions of the metadata.
+The BimlFlex [**Version**](xref:bimlflex-concepts-version) concept supports management of changes in metadata over time. These changes are managed in Versions.
+    A Version is part of a BimlFlex [**Customer**](xref:bimlflex-concepts-customer), and a Customer can contain many (one or more) versions of the metadata.
 
 ## Overview
   

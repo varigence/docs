@@ -12,5 +12,5 @@ Determines if the Snowflake stage is removed prior to loading the new stage file
 
 Notes:
 
-* This setting is part of the `Snowflake` settings category.
+* This setting is part of the *Snowflake* settings category.
 * The default value for this setting is `Y`.

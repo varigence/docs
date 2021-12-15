@@ -14,5 +14,5 @@ Use if source and destination are co-located in the same database or if cross-da
 
 Notes:
 
-* This setting is part of the `Data Mart` settings category.
+* This setting is part of the *Data Mart* settings category.
 * The default value for this setting is `Y`.

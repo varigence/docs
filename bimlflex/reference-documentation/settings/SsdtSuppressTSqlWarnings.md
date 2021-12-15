@@ -12,5 +12,5 @@ Suppress TSql Build Warnings.
 
 Notes:
 
-* This setting is part of the `SSDT` settings category.
+* This setting is part of the *SSDT* settings category.
 * The default value for this setting is `71562,71502,70588`.

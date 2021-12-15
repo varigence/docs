@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Columns
 
-The BimlFlex [`Column`](xref:bimlflex-column-editor) concept contains the components of an [Column](xref:bimlflex-object-editor).Columns define the detailed information to transform and map data from source to target.<br><br>Columns within BimlFlex are displayed in a hierarchical tree view on the left side navigation menu. The total number of Columns within a Project will be displayed next to the Project name in parentheses. The total number of Columns within an individual Object will similarly be displayed next to the Object name. 
+The BimlFlex [**Column**](xref:bimlflex-column-editor) concept contains the components of an [**Column**](xref:bimlflex-object-editor). Columns define the detailed information to transform and map data from source to target.<br><br>Columns within BimlFlex are displayed in a hierarchical tree view on the left side navigation menu. The total number of Columns within a Project will be displayed next to the Project name in parentheses. The total number of Columns within an individual Object will similarly be displayed next to the Object name. 
 	<br><br>Selecting a Project will display a secondary list of all Columns within, organized by Object.
 The user may navigate to any Column by selecting it from the displayed list.
 

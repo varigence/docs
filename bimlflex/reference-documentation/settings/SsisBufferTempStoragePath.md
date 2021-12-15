@@ -16,5 +16,5 @@ If the data flows spill buffer data to disk, update this value to a location wit
 
 Notes:
 
-* This setting is part of the `SSIS` settings category.
+* This setting is part of the *SSIS* settings category.
 

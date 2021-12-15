@@ -8,9 +8,9 @@ varigenceArticleType: Reference
 
 # Objects
 
-Objects in BimlFlex are the data stores that can be used as source, or target, for data logistics. Objects are managed in the [`Object Editor`](xref:bimlflex-object-editor).
+Objects in BimlFlex are the data stores that can be used as source, or target, for data logistics. Objects are managed in the [**Object Editor**](xref:bimlflex-object-editor).
 
-An Object can be a database table, a flat file, Excel documents, and, via use of [`Extensions Points`](xref:bimlflex-concepts-extension-points), APIs calls.
+An Object can be a database table, a flat file, Excel documents, and, via use of [**Extensions Points**](xref:bimlflex-concepts-extension-points), APIs calls.
 
 Instead of using multiple entity types to handle these scenarios BimlFlex uses managed metadata and the *Object Type* field to annotate what type of Object is being referenced.
 
@@ -69,7 +69,7 @@ Instead of using multiple entity types to handle these scenarios BimlFlex uses m
 |ConnectionUID | Every Object is referenced through a Connection, which is set in this field.|
 |CustomerUID | Reference to the Customer that this Object belongs to.|
 |VersionUID | Reference to the Version that this Object belongs to.|
-|ObjectTypeId | An Object Type is a classification of the Object, to identify the role to play in the data processing. The Object Type is used to select the code generation to apply at Object level. The most common Object Types are Table or Flat File, but various types exist. Please refer to the [`Object Editor`](xref:bimlflex-object-editor) for the full list of allowed values and descriptions.|
+|ObjectTypeId | An Object Type is a classification of the Object, to identify the role to play in the data processing. The Object Type is used to select the code generation to apply at Object level. The most common Object Types are Table or Flat File, but various types exist. Please refer to the [**Object Editor**](xref:bimlflex-object-editor) for the full list of allowed values and descriptions.|
 |CompressionTypeId | |
 |PartitionSchemeId | |
 |BusinessEntityUID | |

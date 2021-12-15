@@ -12,5 +12,5 @@ The Snowflake SnowSQL connection to use.
 
 Notes:
 
-* This setting is part of the `Snowflake` settings category.
+* This setting is part of the *Snowflake* settings category.
 * The default value for this setting is `bimlflex_db`.

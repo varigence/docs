@@ -12,5 +12,5 @@ Determines if the External File Format statement is included in the generated SS
 
 Notes:
 
-* This setting is part of the `SSDT` settings category.
+* This setting is part of the *SSDT* settings category.
 * The default value for this setting is `N`.

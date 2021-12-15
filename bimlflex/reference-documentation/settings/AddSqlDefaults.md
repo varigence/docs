@@ -12,5 +12,5 @@ Enable to add SQL Default constraints to tables created. SQL Defaults are always
 
 Notes:
 
-* This setting is part of the `Core` settings category.
+* This setting is part of the *Core* settings category.
 * The default value for this setting is `N`.

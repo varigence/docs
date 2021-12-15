@@ -12,5 +12,5 @@ Override the `sqlcmd` connection in the Create SSIS Catalog folder in the deploy
 
 Notes:
 
-* This setting is part of the `SSIS` settings category.
+* This setting is part of the *SSIS* settings category.
 

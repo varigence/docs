@@ -12,7 +12,7 @@ The default External Data Source SQL Statement to use.
 
 Notes:
 
-* This setting is part of the `SSDT` settings category.
+* This setting is part of the *SSDT* settings category.
 * The default value for this setting is `CREATE EXTERNAL DATA SOURCE [dwhload_storage]
     WITH (
         LOCATION = N'wasbs://staging@<accountname>.blob.core.windows.net'

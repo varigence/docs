@@ -12,5 +12,5 @@ The string to append to Batch names.
 
 Notes:
 
-* This setting is part of the `Naming` settings category.
+* This setting is part of the *Naming* settings category.
 

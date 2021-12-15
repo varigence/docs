@@ -8,11 +8,11 @@ varigenceArticleType: Reference
 
 # Create Folder
 
-Add the Create SSIS Catalog folder in the deployment script files.
+Add a command to create the SSIS Catalog Folder in the deployment script files.
 
-NOTE: This will use the `sqlcmd` with integrated security unless the SqlCmdOverride has not been specified.
+NOTE: This will use the `sqlcmd` with integrated security unless a SqlCmdOverride value is provided.
 
 Notes:
 
-* This setting is part of the `SSIS` settings category.
+* This setting is part of the *SSIS* settings category.
 * The default value for this setting is `Y`.

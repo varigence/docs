@@ -20,5 +20,5 @@ CONSTRAINT [UK_\<schema\>_\<table\>_FlexRowHashKey] UNIQUE NONCLUSTERED<br>(<br>
 
 Notes:
 
-* This setting is part of the `Staging` settings category.
+* This setting is part of the *Staging* settings category.
 * The default value for this setting is `N`.

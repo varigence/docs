@@ -11,7 +11,7 @@ varigenceArticleType: Reference
 This page lists the available Extensions Point for each category. 
 
 > [!NOTE]
-> The Extension Point concept is explained in detail in the [Extension Point Concept](xref:bimlflex-concepts-extension-points) documentation.
+> The Extension Point concept is explained in detail in the [Extension Point](xref:bimlflex-concepts-extension-points) documentation.
  
 ## Overview
   

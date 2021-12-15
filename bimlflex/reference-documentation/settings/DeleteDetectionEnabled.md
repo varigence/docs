@@ -14,5 +14,5 @@ Use this together with the "DeleteDetectionApplyRdv" and "DeleteDetectionApplyPs
 
 Notes:
 
-* This setting is part of the `Delete Detection` settings category.
+* This setting is part of the *Delete Detection* settings category.
 * The default value for this setting is `N`.

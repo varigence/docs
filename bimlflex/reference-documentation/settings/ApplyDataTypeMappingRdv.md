@@ -12,5 +12,5 @@ Determines if the Data Type Mappings are applied to the Raw Data Vault or not. T
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `Y`.

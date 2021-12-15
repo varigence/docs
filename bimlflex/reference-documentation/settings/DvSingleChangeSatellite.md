@@ -14,5 +14,5 @@ This will provide optimized ELT loads, because it bypasses the row compression s
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Configurations
 
-The BimlFlex [`Configurations`](xref:bimlflex-configurations) allow for the creation and management of custom attributes which can assist in driving the behavior of the BimlFlex output.
+The BimlFlex [**Configurations**](xref:bimlflex-configurations) allow for the creation and management of custom attributes which can assist in driving the behavior of the BimlFlex output.
 
 ## Overview
   

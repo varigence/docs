@@ -12,5 +12,5 @@ The compression level to apply for the Azure Data Factory target File Dataset.
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 

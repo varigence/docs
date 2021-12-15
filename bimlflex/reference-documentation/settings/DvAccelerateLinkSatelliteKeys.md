@@ -12,5 +12,5 @@ Determines if the BimlFlex Accelerator adds the Integration Key to Link Satellit
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `Y`.

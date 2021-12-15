@@ -12,5 +12,5 @@ Determines if the Azure-based Extract and Load process runs the stage process fo
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 * The default value for this setting is `Y`.

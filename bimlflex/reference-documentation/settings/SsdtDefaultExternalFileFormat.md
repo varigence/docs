@@ -12,7 +12,7 @@ The default External File Format SQL Statement to use.
 
 Notes:
 
-* This setting is part of the `SSDT` settings category.
+* This setting is part of the *SSDT* settings category.
 * The default value for this setting is `CREATE EXTERNAL FILE FORMAT [pipe_zip_format]
     WITH (
         FORMAT_TYPE = DELIMITEDTEXT,

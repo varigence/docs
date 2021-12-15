@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Settings
 
-BimlFlex offer many [`Settings`](xref:configuring-project-settings) that provide detailed configuration of the way metadata is managed and output is generated, for a variety of the supported data logistics platforms (e.g. ADF, SQL, Snowflake).<br>
+BimlFlex offer many [**Settings**](xref:bimlflex-settings) that provide detailed configuration of the way metadata is managed and output is generated, for a variety of the supported data logistics platforms (e.g. ADF, SQL, Snowflake).<br>
 > [!TIP]
 > The [Setting Reference Document](xref:bimlflex-app-reference-documentation-settings-index) serves as a complete guide for all settings available in the BimlFlex App.
 

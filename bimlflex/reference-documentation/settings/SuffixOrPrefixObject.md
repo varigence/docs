@@ -18,5 +18,5 @@ Use Suffix or Prefix to define if the object identifiers are added before or aft
 
 Notes:
 
-* This setting is part of the `Naming` settings category.
+* This setting is part of the *Naming* settings category.
 * The default value for this setting is `P`.

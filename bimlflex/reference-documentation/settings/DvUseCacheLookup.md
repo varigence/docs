@@ -14,5 +14,5 @@ Cache files will be created as part of the SSIS process and used for the lookups
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

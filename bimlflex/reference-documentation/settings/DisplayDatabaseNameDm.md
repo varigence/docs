@@ -12,5 +12,5 @@ Determines if the Database name is included in Data Mart object names.
 
 Notes:
 
-* This setting is part of the `Data Mart` settings category.
+* This setting is part of the *Data Mart* settings category.
 * The default value for this setting is `N`.

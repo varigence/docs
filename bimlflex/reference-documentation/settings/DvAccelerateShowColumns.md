@@ -12,5 +12,5 @@ Enable to set the default Accelerator view to show all Columns.
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

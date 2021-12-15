@@ -16,5 +16,5 @@ The Account Name is visible in the Azure Portal as the main name of the Storage 
 
 Notes:
 
-* This setting is part of the `Azure Storage` settings category.
+* This setting is part of the *Azure Storage* settings category.
 

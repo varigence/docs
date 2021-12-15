@@ -16,5 +16,5 @@ This row contains the actual change, and any subsequent rows in this set will be
 
 Notes:
 
-* This setting is part of the `Staging Persistent` settings category.
+* This setting is part of the *Staging Persistent* settings category.
 * The default value for this setting is `N`.

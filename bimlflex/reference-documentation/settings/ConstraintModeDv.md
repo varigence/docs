@@ -12,5 +12,5 @@ The table reference constraint mode to apply for the Data Vault database. Allowe
 
 Notes:
 
-* This setting is part of the `Orchestration` settings category.
+* This setting is part of the *Orchestration* settings category.
 * The default value for this setting is `DoNotCreate`.

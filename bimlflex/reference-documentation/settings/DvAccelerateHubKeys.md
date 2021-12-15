@@ -12,5 +12,5 @@ Determines if the BimlFlex Accelerator adds source key columns to the Hub in add
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

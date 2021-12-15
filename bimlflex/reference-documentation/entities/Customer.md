@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Customers
 
-The BimlFlex [`Customer`](xref:bimlflex-concepts-customer) offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models.
+The BimlFlex [**Customer**](xref:bimlflex-concepts-customer) offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models.
 
 ## Overview
   

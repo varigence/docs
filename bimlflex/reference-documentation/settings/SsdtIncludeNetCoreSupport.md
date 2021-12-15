@@ -16,5 +16,5 @@ This also creates separate build files that use the dotnet.exe build engine for 
 
 Notes:
 
-* This setting is part of the `SSDT` settings category.
+* This setting is part of the *SSDT* settings category.
 * The default value for this setting is `N`.

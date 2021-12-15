@@ -12,5 +12,5 @@ Apply end dating in the PSA. This will allow timelines to be maintained in the P
 
 Notes:
 
-* This setting is part of the `Staging Persistent` settings category.
+* This setting is part of the *Staging Persistent* settings category.
 * The default value for this setting is `N`.

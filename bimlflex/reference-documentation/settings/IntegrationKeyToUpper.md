@@ -14,5 +14,5 @@ This is recommended and allows the standard SQL Server case insensitive collatio
 
 Notes:
 
-* This setting is part of the `Core` settings category.
+* This setting is part of the *Core* settings category.
 * The default value for this setting is `Y`.

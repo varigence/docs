@@ -18,5 +18,5 @@ If not using this then the Data Vault is loaded through a separate load project.
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

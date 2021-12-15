@@ -12,5 +12,5 @@ Determines if the source Schema is appended to the object name in the staging la
 
 Notes:
 
-* This setting is part of the `Staging Naming` settings category.
+* This setting is part of the *Staging Naming* settings category.
 * The default value for this setting is `N`.

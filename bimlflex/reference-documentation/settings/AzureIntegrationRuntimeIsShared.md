@@ -12,5 +12,5 @@ Is the referenced Self Hosted Integration Runtime shared from another Data Facto
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 

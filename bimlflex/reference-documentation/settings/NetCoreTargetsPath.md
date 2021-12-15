@@ -14,5 +14,5 @@ Download these files separately or use the Azure Data Studio SSDT Project suppor
 
 Notes:
 
-* This setting is part of the `SSDT` settings category.
+* This setting is part of the *SSDT* settings category.
 * The default value for this setting is `%USERPROFILE%\.azuredatastudio\extensions\microsoft.sql-database-projects-<version>\BuildDirectory`.

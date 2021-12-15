@@ -12,5 +12,5 @@ The Storage Access SAS Token to use when accessing Blob Storage for linked ARM t
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 

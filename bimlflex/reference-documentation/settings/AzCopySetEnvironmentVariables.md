@@ -12,5 +12,5 @@ Determines if the environment variables controlling AzCopy v.10 are set before e
 
 Notes:
 
-* This setting is part of the `AzCopy` settings category.
+* This setting is part of the *AzCopy* settings category.
 * The default value for this setting is `N`.

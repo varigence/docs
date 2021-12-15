@@ -12,5 +12,5 @@ Determines if the select-to-stage tables apply a row number function based on th
 
 Notes:
 
-* This setting is part of the `Staging` settings category.
+* This setting is part of the *Staging* settings category.
 * The default value for this setting is `N`.

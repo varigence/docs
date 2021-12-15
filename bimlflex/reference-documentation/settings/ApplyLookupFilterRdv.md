@@ -14,5 +14,5 @@ This is to optimize memory usage. Use if staging and Data Vault is co-located in
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `Y`.

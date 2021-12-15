@@ -12,5 +12,5 @@ Determines if the generated files must be uploaded using "AzCopy" as part of the
 
 Notes:
 
-* This setting is part of the `AzCopy` settings category.
+* This setting is part of the *AzCopy* settings category.
 * The default value for this setting is `Y`.

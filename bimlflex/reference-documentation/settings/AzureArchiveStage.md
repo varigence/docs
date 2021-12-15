@@ -12,5 +12,5 @@ Determines if the staged Blob Storage files are moved to the defined archive con
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 * The default value for this setting is `N`.

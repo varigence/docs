@@ -12,5 +12,5 @@ Enable to wrap Data Vault ELT load processes in transaction statements.
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

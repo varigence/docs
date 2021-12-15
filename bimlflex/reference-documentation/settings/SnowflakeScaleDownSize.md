@@ -12,5 +12,5 @@ The size the Snowflake Warehouse can be scaled down to.
 
 Notes:
 
-* This setting is part of the `Snowflake` settings category.
+* This setting is part of the *Snowflake* settings category.
 * The default value for this setting is `XSMALL`.

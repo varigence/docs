@@ -18,5 +18,5 @@ I.e. specify "Column Orders, All Other" without double quotes
 
 Notes:
 
-* This setting is part of the `Model` settings category.
+* This setting is part of the *Model* settings category.
 * The default value for this setting is `All Other`.

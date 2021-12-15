@@ -12,5 +12,5 @@ Determines if the PSA lookup caches the data to disk when using SSIS. Use this i
 
 Notes:
 
-* This setting is part of the `Staging Persistent` settings category.
+* This setting is part of the *Staging Persistent* settings category.
 * The default value for this setting is `N`.

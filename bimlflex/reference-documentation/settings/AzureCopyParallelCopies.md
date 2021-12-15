@@ -12,5 +12,5 @@ For the Copy Activity, specifies the degree of parallelism that data loading sho
 
 Notes:
 
-* This setting is part of the `Azure Copy` settings category.
+* This setting is part of the *Azure Copy* settings category.
 

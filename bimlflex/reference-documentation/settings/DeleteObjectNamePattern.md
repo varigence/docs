@@ -12,5 +12,5 @@ The name to use for the Delete Objects when using Delete Detection. "@@this_DEL"
 
 Notes:
 
-* This setting is part of the `Staging Naming` settings category.
+* This setting is part of the *Staging Naming* settings category.
 * The default value for this setting is `@@this_DEL`.

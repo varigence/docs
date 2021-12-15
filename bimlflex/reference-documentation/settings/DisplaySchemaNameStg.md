@@ -12,5 +12,5 @@ Controls if the source schema name should be included in the generated SSIS pack
 
 Notes:
 
-* This setting is part of the `Staging Naming` settings category.
+* This setting is part of the *Staging Naming* settings category.
 * The default value for this setting is `N`.

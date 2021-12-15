@@ -12,5 +12,5 @@ The string to append to procedure names.
 
 Notes:
 
-* This setting is part of the `Naming` settings category.
+* This setting is part of the *Naming* settings category.
 * The default value for this setting is `flex_`.

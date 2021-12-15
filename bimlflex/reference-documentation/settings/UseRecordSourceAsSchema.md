@@ -16,5 +16,5 @@ This groups source tables from sources in separate schemas
 
 Notes:
 
-* This setting is part of the `Naming` settings category.
+* This setting is part of the *Naming* settings category.
 * The default value for this setting is `Y`.

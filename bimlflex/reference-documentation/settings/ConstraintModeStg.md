@@ -14,5 +14,5 @@ NOTE: These constraints will not be add the the table create scripts
 
 Notes:
 
-* This setting is part of the `Orchestration` settings category.
+* This setting is part of the *Orchestration* settings category.
 * The default value for this setting is `DoNotCreate`.

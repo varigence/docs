@@ -12,5 +12,5 @@ Determines if a source column of type "GUID"/"UniqueIdentifier" is automatically
 
 Notes:
 
-* This setting is part of the `Core` settings category.
+* This setting is part of the *Core* settings category.
 * The default value for this setting is `Y`.

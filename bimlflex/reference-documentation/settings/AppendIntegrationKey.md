@@ -12,5 +12,5 @@ The string to append to Integration Keys.
 
 Notes:
 
-* This setting is part of the `Model` settings category.
+* This setting is part of the *Model* settings category.
 * The default value for this setting is `BK`.

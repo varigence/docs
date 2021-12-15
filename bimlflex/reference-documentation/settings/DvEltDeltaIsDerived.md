@@ -12,5 +12,5 @@ Enable if loading into Data Vault and the Delta has already been derived. This w
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

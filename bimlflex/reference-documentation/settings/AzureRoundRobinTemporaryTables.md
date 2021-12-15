@@ -12,5 +12,5 @@ Enable to use Round Robin distribution in Azure Synapose temporary tables instea
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 * The default value for this setting is `N`.

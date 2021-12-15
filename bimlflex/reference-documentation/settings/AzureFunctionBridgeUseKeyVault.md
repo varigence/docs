@@ -12,5 +12,5 @@ Determines if the Azure Function Bridge uses the Azure Key Vault specified in th
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 * The default value for this setting is `N`.

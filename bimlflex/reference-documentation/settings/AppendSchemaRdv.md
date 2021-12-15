@@ -12,5 +12,5 @@ Determines if the schema is appended to the names of accelerated Data Vault obje
 
 Notes:
 
-* This setting is part of the `Data Vault Naming` settings category.
+* This setting is part of the *Data Vault Naming* settings category.
 * The default value for this setting is `N`.

@@ -12,5 +12,5 @@ Determines if SSIS extracts-to-file apply data conversion for target files in th
 
 Notes:
 
-* This setting is part of the `Staging` settings category.
+* This setting is part of the *Staging* settings category.
 * The default value for this setting is `N`.

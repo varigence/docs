@@ -12,5 +12,5 @@ Should the Accelerator correct Integration Key names based on the Object Busines
 
 Notes:
 
-* This setting is part of the `Data Vault` settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

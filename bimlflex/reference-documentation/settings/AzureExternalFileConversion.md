@@ -12,5 +12,5 @@ By default, the extraction process from a source to Blob Storage applies several
 
 Notes:
 
-* This setting is part of the `Azure` settings category.
+* This setting is part of the *Azure* settings category.
 * The default value for this setting is `Y`.
