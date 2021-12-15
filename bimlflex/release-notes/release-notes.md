@@ -134,7 +134,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 ### Azure Data Factory (ADF)
 
 * Fixed a bug where the `RecordSourceFull` configuration was not working applied when using ADF Change Tracking.  
-    * The @@this expression is now correctly interpreted as the table name in the SELECT statement.
+* The `@@this` expression is now correctly interpreted as the table name in the SELECT statement.
 * Added 'PatternValidation' to ADF *SecretName* fields.
 * Added pre- and post-processing Extension Points for Data Mart for ADF and Synapse.
 * Added pre-processing Extension Points for ADF/Synapse Data Marts.
@@ -244,7 +244,5 @@ It is no longer necessary to navigate away if dependent objects are required, as
 
 ## Download Links to this Build
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)
-    This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)
-    This installer includes the required runtime components for servers that will execute SSIS packages
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe) - this installer includes all parts of BimlFlex
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe) - this installer includes the required runtime components for servers that will execute SSIS packages
