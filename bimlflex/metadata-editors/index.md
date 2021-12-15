@@ -28,9 +28,9 @@ The BimlFlex App contains many editors to make managing the design of your data 
 
 | <div style="width:150px">App Feature</div> | Description |
 | --------- | ----------- |
-|[Connection Editor](xref:bimlflex-application-connections) | BimlFlex Connections provide the information required to connect to data sources. It also acts as containers for objects and allows setting overrides. Additionally, it has metadata to identify the integration stage along with package execution settings.|
-|[Batch Editor](xref:bimlflex-app-batches) | BimlFlex Batches group and help to define an ETL/ELT workload. They are used by Projects to set execution grouping.|
-|[Project Editor](xref:bimlflex-application-projects) | BimlFlex Projects group and help to define an ETL/ELT workload. They specify the primary orchestration engine (SSIS or ADF) and define the Connections for the Source to Target pipeline.|
+|[Connection Editor](configuration editor) | BimlFlex Connections provide the information required to connect to data sources. It also acts as containers for objects and allows setting overrides. Additionally, it has metadata to identify the integration stage along with package execution settings.|
+|[Batch Editor](xref:bimlflex-batch-editor) | BimlFlex Batches group and help to define an ETL/ELT workload. They are used by Projects to set execution grouping.|
+|[Project Editor](xref:bimlflex-project-editor) | BimlFlex Projects group and help to define an ETL/ELT workload. They specify the primary orchestration engine (SSIS or ADF) and define the Connections for the Source to Target pipeline.|
 |[Object Editor](xref:bimlflex-object-editor) | BimlFlex Objects closely mirror a Relational Database table, though not every Object will translate as a table one-for-one due to BimlFlex having the ability to process flat files, Excel documents and, via use of Extensions Points, APIs calls.|
 |[Column Editor](xref:bimlflex-column-editor) | The Column Editor is used to manage how BimlFlex interacts with all Columns in the BimlFlex process.|
 |[Attribute Editor](xref:bimlflex-attribute-editor) | Attributes are used to conditionally override Configurations and Settings. They can also be used to extend the metadata model for bespoke coding requirements.|

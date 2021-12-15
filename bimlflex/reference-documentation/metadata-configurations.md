@@ -26,7 +26,7 @@ The following **Configurations** are made available by default in BimlFlex.
 
 The `RowEffectiveFromDate` is intended to represent the moment the record is loaded in the Data Warehouse, the time of arrival. It is typically used to represent the 'technical timeline' in a bi-temporal context.
 
-By default this is configured as a `DateTime2(7)` data type. This high precision DateTime data type supports a wider range of dates compared to traditional DateTime domain. If a specific start DateTime for timelines is needed, such as to support an existing design template, this can be updated to support it. 
+By default this is configured as a `DateTime2(7)` data type. This high precision DateTime data type supports a wider range of dates compared to traditional DateTime domain. If a specific start DateTime for timelines is needed, such as to support an existing design template, this can be updated to support it.
 
 Unless there is a good reason to change it, it is recommended to keep the default.
 

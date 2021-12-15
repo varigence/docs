@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-application-connections
+uid: bimlflex-connection-editor
 title: Connections
 summary: Documentation regarding the BimlFlex Connection editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex
@@ -12,8 +12,6 @@ varigenceArticleType: Reference
 ## Editor Overview
 
 The following sections describe the UI elements of the **Connection Editor** and how they are used to author and manage BimlFlex **Connections**.
-
-**Connection Editor**
 
 ![BimlFlex - Connection Editor](images/bfx-connections-editor.png "BimlFlex - Connection Editor")
 

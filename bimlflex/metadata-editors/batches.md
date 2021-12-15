@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-app-batches
+uid: bimlflex-batch-editor
 title: Batches
 summary: Documentation regarding the BimlFlex Batch Editor, including editor fields, action buttons, field descriptions, and setting options. 
 varigenceProduct: BimlFlex

@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-application-projects
+uid: bimlflex-project-editor
 title: Projects
 summary: Documentation regarding the BimlFlex Projects editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex
@@ -12,8 +12,6 @@ BimlFlex **Projects** group and help to define an ETL/ELT workload. They specify
 ## Editor Overview
 
 The following sections describe the UI elements of the **Projects Editor** and how they are used to author and manage BimlFlex **Projects**.
-
-**Project Editor**
 
 ![BimlFlex Project Editor](images/bfx-projects-editor-overview.png "BimlFlex Project Editor")
 

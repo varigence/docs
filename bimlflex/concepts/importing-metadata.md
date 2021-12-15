@@ -45,8 +45,8 @@ The *Schema Filter* and *Table Filter* can be used to limit the metadata made av
 
 | Option | Definition |
 | ----------------- | ---------- |
-| Connection | Name of the connection that points to the data source the metadata is intended to be extracted from. The corresponding Connection String is used as defined in the [Connections](xref:bimlflex-application-connections) configuration. |
-| Project | Name of the project that will use this metadata as its source in the source to target loading. This project has to be defined previously. For more information, please refer to the [Projects](xref:bimlflex-application-projects) documentation |
+| Connection | Name of the connection that points to the data source the metadata is intended to be extracted from. The corresponding Connection String is used as defined in the [Connections](configuration editor) configuration. |
+| Project | Name of the project that will use this metadata as its source in the source to target loading. This project has to be defined previously. For more information, please refer to the [Projects](xref:bimlflex-project-editor) documentation |
 
 #### Table and column names
 

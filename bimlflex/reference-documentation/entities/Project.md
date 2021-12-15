@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Projects
 
-The BimlFlex [`Project`](xref:bimlflex-application-projects) concept defines a data logistics workload.<br><br>Projects specify the primary orchestration engine (SSIS or ADF) and define the [`Connections`](xref:bimlflex-application-connections) for the Source to Target pipeline.
+The BimlFlex [`Project`](xref:bimlflex-project-editor) concept defines a data logistics workload.<br><br>Projects specify the primary orchestration engine (SSIS or ADF) and define the [`Connections`](configuration editor) for the Source to Target pipeline.
 
 ## Overview
   

@@ -23,16 +23,16 @@ Extension points are one of the key features BimlFlex provides customization to 
 
 This section covers the details on the structure of the BimlFlex App and metadata, for example the overview of all the BimlFlex screens and controls. These are sometimes referred to as Metadata Entities, because they correspond to the structures and classes used in the metadata object model.
 
-* [BimlFlex App Metadata Reference Documentation](xref:bimlflex-app-reference-documentation-entities-index)
+* [BimlFlex App Metadata Reference Documentation](xref:bimlflex-app-reference-documentation-entities-index)
 
 ## BimlFlex Settings
 
 The details on the various configurable Settings are provided in this section. This refers to the 'Settings' screen in BimlFlex where global and local (override) Settings can be configured.
 
-* [BimlFlex Settings Reference Documentation](xref:bimlflex-app-reference-documentation-settings-index)
+* [BimlFlex Settings Reference Documentation](xref:bimlflex-app-reference-documentation-settings-index)
 
 ## Other Reference Details
 
-* [BimlFlex Data Type Conversions](xref:bimlflex-data-type-conversions)
-* [BimlFlex Static Values](xref:bimlflex-metadata-static-values)
+* [BimlFlex Data Type Conversions](xref:bimlflex-data-type-conversions)
+* [BimlFlex Static Values](xref:bimlflex-metadata-static-values)
 * [Standard Metadata Configurations](xref:bimlflex-metadata-configurations)
