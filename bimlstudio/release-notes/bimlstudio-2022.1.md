@@ -35,8 +35,6 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * OracleCloudStorage as `LinkedService`, `Dataset`, `Source`
     * AzureFileStorage as `Sink`
 
-&nbsp;
-
 * Added the following properties to `MachineLearningExecutePipeline` activities:
 
 | Name | Property Type |  Data Type | Description |
@@ -82,7 +80,6 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * `SQL Server`
     * `Synapse`
     * `XML`
-
 &nbsp;
 
 * Added the following Inline Dataset Sink support:
@@ -121,13 +118,12 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 | *TraceLevel* | Attribute | TraceLevelEnum | Trace level setting used for data flow monitoring output. Supported values are: `coarse`, `fine`, and `none`.|
 
 &nbsp;
-&nbsp;
 
+* Added *LogicalDisplayFolder* property to dataflow nodes.
 * Added the following to the *FormatSettings* property of Dataflow source nodes:
     * `TarGZipSettings`
     * `TarSettings`
     * `XmlSettings`
-* Added *LogicalDisplayFolder* property to dataflow nodes.
 
 ## AzureCosmosDB
 
