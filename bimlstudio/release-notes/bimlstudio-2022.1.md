@@ -29,14 +29,13 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 * Added `EmitAsStringLiteral` property to *AstAdfDataflowParameterReferenceNodes*. This meta property is used to determine how values should be emitted.
 * Added extended support for Dynamic Content so that parameters can be passed in to an ADF Pipeline or Mapping Data Flow and then evaluated at run time.
 
-&nbsp;
-
 * Added connector support for:
     * AmazonS3Compatible as `LinkedService`, `Dataset`, `Source`
     * AzureDatabricksDeltaLake as `LinkedService`, `Dataset`, `Source`, `Sink`
     * MongoDbAtlas as `LinkedService`, `Dataset`, `Source`
     * OracleCloudStorage as `LinkedService`, `Dataset`, `Source`
     * AzureFileStorage as `Sink`
+
 &nbsp;
 
 * Added the following properties to `MachineLearningExecutePipeline` activities:
@@ -85,6 +84,8 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * `Synapse`
     * `XML`
 
+&nbsp;
+
 * Added the following Inline Dataset Sink support:
     * `Avro`
     * `Azure MySQL`
@@ -127,9 +128,6 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * `TarGZipSettings`
     * `TarSettings`
     * `XmlSettings`
-
-&nbsp;
-
 * Added *LogicalDisplayFolder* property to dataflow nodes.
 
 ## AzureCosmosDB
@@ -152,9 +150,6 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 | *ServicePrincipalCredentialType* | Attribute | CredentialTypeEnum | Specifies what type of service principal credential will be used for authentication.|
 | *ServicePrincipalId* | Attribute | String | Specifies the service principal ID to be used during authentication. |
 | *ServicePrincipalCredential* |  Attribute | String | Specifies the service principal credential to be used during authentication. (Also supports *ServicePrincipalCredentialKVS*). |
-
-&nbsp;
-&nbsp;
 
 * Removed the following properties from `AzureCosmosDb` source nodes:
     * *NestingSeparator*
