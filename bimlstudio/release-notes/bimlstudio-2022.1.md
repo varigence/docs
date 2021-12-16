@@ -28,9 +28,10 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 * Fixed bug where missing icons caused the app to crash for various LinkedServices.
 * Added `EmitAsStringLiteral` property to *AstAdfDataflowParameterReferenceNodes*. This meta property is used to determine how values should be emitted.
 * Added extended support for Dynamic Content so that parameters can be passed in to an ADF Pipeline or Mapping Data Flow and then evaluated at run time.
+
 &nbsp;
 
-* Added connector support for:  
+* Added connector support for:
     * AmazonS3Compatible as `LinkedService`, `Dataset`, `Source`
     * AzureDatabricksDeltaLake as `LinkedService`, `Dataset`, `Source`, `Sink`
     * MongoDbAtlas as `LinkedService`, `Dataset`, `Source`
@@ -69,7 +70,6 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 ### Mapping Data Flow Support
 
 * Added the following Inline Dataset Source support:
-
     * `Avro`
     * `Azure MySQL`
     * `Azure PostgreSQL`
@@ -86,7 +86,6 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * `XML`
 
 * Added the following Inline Dataset Sink support:
-
     * `Avro`
     * `Azure MySQL`
     * `Azure PostgreSQL`
@@ -128,6 +127,7 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * `TarGZipSettings`
     * `TarSettings`
     * `XmlSettings`
+
 &nbsp;
 
 * Added *LogicalDisplayFolder* property to dataflow nodes.
