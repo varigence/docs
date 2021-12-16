@@ -7,7 +7,7 @@ varigenceArticleType: Reference
 ---
 # Business Modeling
 
-The BimlFlex **Business Modelling** feature supports designing a holistic model that describes the business' data, while avoiding bias from already existing systems and data structures.
+The BimlFlex **Business Modeling** feature supports designing a holistic model that describes the business' data, while avoiding bias from already existing systems and data structures.
 
 Traditionally, this process involves a team of IT and business representatives collaborating in a series of workshops to define the business' Core Business Concepts (CBCs), how they are described and how they interact with each other.
 
@@ -21,7 +21,7 @@ The **Business Modeling** feature is accessible from the main BimlFlex side menu
 
 ## Business Modeling Configuration
 
-When you use the **Business Modelling** feature for the first time, you will be asked to select a **Modeling Configuration**. This sets the default that is used as template for creating new Business Models.
+When you use the **Business Modeling** feature for the first time, you will be asked to select a **Modeling Configuration**. This sets the default that is used as template for creating new Business Models.
 
 ![Selecting a Modeling Configuration](images/business-modeling-configuration.png "Selecting a Modeling Configuration")
 
@@ -107,7 +107,7 @@ The canvas can be restructured by moving tiles across to different swimlanes, or
 ### Business Model Canvas Action Bar
 
 | Icon | Action | Description |
-|----|-|--------|-------------|
+|----- |--------|-------------|
 | <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Edit | This icon will appear when hovering over the Business Model _name_. The edit screen for the Business Model can be opened from here.|
 | <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Expanded | Toggle to show smaller tiles with less visible details, allowing more tiles on the screen. The expanded view will also show **Classifications** and **Tags**.|
 
