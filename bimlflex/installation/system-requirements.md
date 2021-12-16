@@ -11,6 +11,7 @@ varigenceArticleType: Walkthrough
 
 * Internet access (required for installing and running the application)
 * Network access for the BimlFlex database
+* A supported version of Microsoft Windows
 * Same requirements as recommended for the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-au/windows/windows-10-specifications)
 * Same requirements as approved for the Visual Studio version and edition in use [(For Visual Studio 2015: https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)](https://www.visualstudio.com/en-us/productinfo/vs2015-sysrequirements-vs)
 * BimlStudio supports Visual Studio 2010, 2012, 2013, 2015, 2017 and 2019. The version of [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt) (SSDT BI) and Visual Studio used depends on the SQL Server version used for the SSIS Server
@@ -22,7 +23,9 @@ varigenceArticleType: Walkthrough
 
 * Internet access (required for installing and running the application)
 * Network access for BimlFlex database access
+* A supported version of Microsoft Windows
 * Same requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-us/windows/windows-10-specifications)
+* Microsoft .NET Framework version 4.8
 * Available memory to hold the model
 * Available processing power to process the model
 
@@ -30,6 +33,7 @@ varigenceArticleType: Walkthrough
 
 * Internet access (required for installing and running the application)
 * Network access for BimlFlex database access
+* A supported version of Microsoft Windows
 * Same minimum requirements as the Windows version in use [(For Windows 10: https://www.microsoft.com/en-us/windows/windows-10-specifications)](https://www.microsoft.com/en-us/windows/windows-10-specifications)
 * Same requirements as  the Excel version and edition in use [(For Excel 2016: https://products.office.com/en-us/office-system-requirements)](https://products.office.com/en-us/office-system-requirements)
 * The current Excel Add-in supports Excel 2013, 2016 and Excel for Office 365, 32 or 64-bit versions
@@ -40,11 +44,13 @@ varigenceArticleType: Walkthrough
 
 ## Databases
 
-* Requires a supported SQL Server version
+* A supported version of Microsoft SQL Server
 * Same requirements as the SQL Server environment it is running in [(For SQL Server 2016 Enterprise Edition: https://msdn.microsoft.com/en-us/library/ms143506.aspx)](https://msdn.microsoft.com/en-us/library/ms143506.aspx)
-* Available CPU, Memory and disk space to host and process the BimlFlex databases as well as the DW databases
+* Available CPU, Memory and disk space to host and process the BimlFlex databases as well as the Data Warehouse databases
 
 ## Server installation
+
+* A supported version of Microsoft SQL Server
 
 The base requirements for installing Microsoft SQL Server can be found here: [https://docs.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server](https://docs.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server)
 
@@ -64,7 +70,7 @@ All developers and analysts using either BimlStudio, the BimlFlex app or the Exc
 
 The database must be backed up as required in case of database server failures or for rollback requirements
 
-More information: [BimlFlex metadata database](xref:bimlflex-components-metadata-database)
+More information: [BimlFlex metadata database](xref:bimlflex-components-metadata-database)
 
 ### BimlCatalog
 
@@ -74,4 +80,4 @@ For installations and configurations using SSIS with package deployment methods 
 
 The database must be backed up as required in case of database server failures or for rollback requirements
 
-More information: [BimlCatalog database](xref:bimlflex-components-bimlcatalog-database)
+More information: [BimlCatalog database](xref:bimlflex-components-bimlcatalog-database)
