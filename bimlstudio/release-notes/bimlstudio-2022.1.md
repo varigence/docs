@@ -28,6 +28,7 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 * Fixed bug where missing icons caused the app to crash for various LinkedServices.
 * Added `EmitAsStringLiteral` property to *AstAdfDataflowParameterReferenceNodes*. This meta property is used to determine how values should be emitted.
 * Added extended support for Dynamic Content so that parameters can be passed in to an ADF Pipeline or Mapping Data Flow and then evaluated at run time.
+&nbsp;
 
 * Added connector support for:  
     * AmazonS3Compatible as `LinkedService`, `Dataset`, `Source`
@@ -35,6 +36,7 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * MongoDbAtlas as `LinkedService`, `Dataset`, `Source`
     * OracleCloudStorage as `LinkedService`, `Dataset`, `Source`
     * AzureFileStorage as `Sink`
+&nbsp;
 
 * Added the following properties to `MachineLearningExecutePipeline` activities:
 
@@ -43,11 +45,17 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 | *MlPipelineEndpointId* | Attribute | String | The ID of the published ML pipeline endpoint. |
 | *Version* | Attribute | String | The version of the endpoint.|
 
+&nbsp;
+&nbsp;
+
 * Added the following property to `Custom` activities:
 
 | Name | Property Type |  Data Type | Description |
 |----------|:-------------:|:------:| -----|
 | *AutoUserSpecification* | Attribute | String | Elevation level and scope for the user, default is nonadmin task. |
+
+&nbsp;
+&nbsp;
 
 * Added the following properties to `SapOpenHub` LinkedServices:
 
@@ -61,6 +69,7 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 ### Mapping Data Flow Support
 
 * Added the following Inline Dataset Source support:
+
     * `Avro`
     * `Azure MySQL`
     * `Azure PostgreSQL`
@@ -77,6 +86,7 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * `XML`
 
 * Added the following Inline Dataset Sink support:
+
     * `Avro`
     * `Azure MySQL`
     * `Azure PostgreSQL`
@@ -90,6 +100,8 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * `SQL Server`
     * `Synapse`
 
+&nbsp;
+
 * Added support for the following properties for Dataflow `Lookup` Transformations:
 
 | Name | Property Type |  Data Type | Description |
@@ -99,6 +111,8 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 | *MatchOn* | Attribute | String | Specifies matching behavior in the lookup stream. Only valid when MatchMultipleRows is set to false.|
 | *SortConditions* | Child | Collection of SortColumnNodes | This is a collection of conditions that will be used for sorting.|
 
+&nbsp;
+
 * Added the following properties to `ExecuteDataflow` activities:
 
 | Name | Property Type |  Data Type | Description |
@@ -107,10 +121,14 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 | *RunConcurrently* | Attribute | Bool | Concurrent run setting used for data flow execution. Allows sinks with the same save order to be processed concurrently.|
 | *TraceLevel* | Attribute | TraceLevelEnum | Trace level setting used for data flow monitoring output. Supported values are: `coarse`, `fine`, and `none`.|
 
-* Added the following to the *FormatSettings* property of Dataflow source nodes:  
+&nbsp;
+&nbsp;
+
+* Added the following to the *FormatSettings* property of Dataflow source nodes:
     * `TarGZipSettings`
     * `TarSettings`
     * `XmlSettings`
+&nbsp;
 
 * Added *LogicalDisplayFolder* property to dataflow nodes.
 
@@ -123,6 +141,9 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 | *DetectDateTime* | Attribute | Bool | Whether detect primitive values as datetime values.|
 | *PageSize* | Attribute | Int | Specifies the allowed page size.|
 
+&nbsp;
+&nbsp;
+
 * Added the following properties to `AzureCosmosDb` LinkedServices:
 
 | Name | Property Type |  Data Type | Description |
@@ -131,6 +152,9 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
 | *ServicePrincipalCredentialType* | Attribute | CredentialTypeEnum | Specifies what type of service principal credential will be used for authentication.|
 | *ServicePrincipalId* | Attribute | String | Specifies the service principal ID to be used during authentication. |
 | *ServicePrincipalCredential* |  Attribute | String | Specifies the service principal credential to be used during authentication. (Also supports *ServicePrincipalCredentialKVS*). |
+
+&nbsp;
+&nbsp;
 
 * Removed the following properties from `AzureCosmosDb` source nodes:
     * *NestingSeparator*
