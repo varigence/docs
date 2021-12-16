@@ -22,10 +22,11 @@ The primary source BimlFlex uses to generate Data Warehousing and Business Intel
 
 Although it is relatively straightforward to define individual metadata objects, it can take considerable time and effort to create, update and maintain the number of objects that would typically be involved in an enterprise data solution.
 
-BimlFlex provides an import tool which is accessible from the Connections and Projects screens, which can connect to a database source and manage the metadata BimlFlex uses. The following links provide more information about managing design metadata: 
+BimlFlex provides an import tool which is accessible from the Connections and Projects screens, which can connect to a database source and manage the metadata BimlFlex uses. The following links provide more information about managing design metadata:
 
-* [Importing Metadata to BimlFlex](xref:bimlflex-concepts-importing-metadata)
+* [Importing Metadata to BimlFlex](xref:bimlflex-concepts-importing-metadata)
 * [The BimlFlex Database](xref:bimlflex-components-metadata-database)
+* [Integration Keys](xref:bimlflex-concept-integration-keys)
 
 ## Data Solution Concepts
 
@@ -42,7 +43,7 @@ Data solutions come in many shapes and forms, and BimlFlex aims to provide maxim
 Irrespective of the design of the data solution architecture, there are many options to make sure the design is delivered the way it is intended.
 
 * [Using Hashing in BimlFlex](xref:bimlflex-concepts-hashing)
-* [Working with BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)
+* [Working with BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)
 * [Define Custom Behavior Using Extension Points](xref:bimlflex-concepts-extension-points)
-* [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
+* [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
 * [Orchestration in BimlFlex](xref:bimlflex-concepts-orchestration)

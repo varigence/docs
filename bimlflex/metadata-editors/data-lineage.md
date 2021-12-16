@@ -5,19 +5,15 @@ summary: Documentation on Data Lineage within BimlFlex to review and update grap
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Column Mapping
+# Data Lineage
 
-In this document, we show how the Column Mapping tool can be used to review and update your Column Mappings in an easy graphical interface.
+In this document, we show how the Data Lineage tool can be used to review and update your **Column Mappings** in an easy graphical interface.
 
-## Column Mapping Overview
-
-The Column Mapping Diagram provides an view of one or more mapping relationships. It allows a user to get a quick view of mappings in a graphical interface. It allows the developer to easily add or remove mappings using column drag and drop. It also provides some of the most common actions that make sense in the context of data mapping.
+The **Data Lineage Designer** provides an view of one or more mapping relationships. It allows a user to get a quick view of mappings in a graphical interface, as well as making it easy to add or remove mappings using column drag and drop. It also provides some of the most common actions that make sense in the context of data mapping.
 
 ### Starting Point
 
 The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorksLT database, the Source to Staging and Persistent Staging has been completed and the Raw Data Vault has been published via the Accelerator.
-
-[//]: # (TODO: Link to UPDATED Source To Staging document)
 
 Follow the guide for [Source To Staging](xref:bimlflex-source-to-staging-templates) and import all SalesLT tables from the AdventureWorksLT source.
 

@@ -103,7 +103,9 @@ Below is a screen shot of an example project. Generally, it will follow the usua
 
 ### Objects and Columns
 
-Now to add both the source file definition and the target table definition in the objects metadata spreadsheet. Below is an example of the target transactions file that is intend to be loaded to. Note that, so far, specified in the first row, are the column names, the type of flat file, whether to skip any empty rows at the beginning of the file, row delimiter type, column delimiter, line delimiter or last column delimiter, code page and finally whether the file is Unicode or not. Supplying BimlFlex with this metadata will ensure the correct file formats are being loaded further on in the development and build stages.
+Now to add both the source file definition and the target table definition in the objects metadata spreadsheet. Below is an example of the target transactions file that is intend to be loaded to. Note that, so far, specified in the first row, are the column names, the type of flat file, whether to skip any empty rows at the beginning of the file, row delimiter type, column delimiter, line delimiter or last column delimiter, code page and finally whether the file is Unicode or not.
+
+Supplying BimlFlex with this metadata will ensure the correct file formats are being loaded further on in the development and build stages.
 
 ![Metadata](images/bimlflex-ss-v5-excel-file-export-objects-sample-1.png "Metadata")
 
