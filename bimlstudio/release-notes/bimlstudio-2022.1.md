@@ -35,6 +35,7 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * OracleCloudStorage as `LinkedService`, `Dataset`, `Source`
     * AzureFileStorage as `Sink`
 
+&nbsp;
 * Added the following properties to `MachineLearningExecutePipeline` activities:
 
 | Name | Property Type |  Data Type | Description |
@@ -80,8 +81,8 @@ There have been significant changes implemented into BimlStudio 2022 R1 since th
     * `SQL Server`
     * `Synapse`
     * `XML`
-&nbsp;
 
+&nbsp;
 * Added the following Inline Dataset Sink support:
     * `Avro`
     * `Azure MySQL`
