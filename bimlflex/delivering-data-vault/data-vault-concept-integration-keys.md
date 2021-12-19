@@ -8,11 +8,11 @@ varigenceArticleType: Conceptual
 
 # Integration Keys
 
-The Business Key is a core concept in Data Vault modeling. It allows the modeler to focus on defining entities and relationships based on the business process focused keys, rather than the technical keys from the operational (source) system. This allows easier cross-system integration in the Data Vault.
+The Enterprise-Wide Business Key (EWBK) is a core concept in Data Vault modeling. It allows the modeler to focus on defining entities and relationships based on the business process focused keys, rather than the technical keys from the operational (source) system. This allows easier cross-system integration in the Data Vault.
 
-While defining an Enterprise-Wide Business Key is the design goal for a Data Vault model, it is rare to find these directly available in existing source systems.
+While defining an EWBK is the design goal for a Data Vault model, it is rare to find these directly available in existing source systems.
 
-BimlFlex uses the term [**Integration Key**](xref:bimlflex-concept-integration-keys) instead of **Business Key** for consistency across different Data Warehouse project types, including Dimensional Modeling.
+BimlFlex uses the concept [**Integration Key**](xref:bimlflex-concept-integration-keys) instead of **Business Key** for consistency across different Data Warehouse project types, including Dimensional Modeling.
 
 > [!NOTE]
 > The [**Integration Key**](xref:bimlflex-concept-integration-keys) is a core concept for BimlFlex. It is explained in more detail in the [Concepts section](xref:bimlflex-concepts-overview).
@@ -32,16 +32,16 @@ By default, BimlFlex will 'hash' the **Integration Key** value to  be used as a 
 
 Because of this, the **Surrogate Key** will be used in Data Vault Foreign Key references if referential integrity is configured.
 
-The Data Type and applied Hashing Algorithm are configurable through the BimlFlex Settings. The default used by BimlFlex is to use the `SHA1` algorithm and store this value as Binary value.
+The Data Type and applied hashing algorithm are configurable through the BimlFlex Settings. The default used by BimlFlex is to use the `SHA1` algorithm and store this value as Binary value.
 
 ## Integration Key Settings for Data Vault
 
-Choose a tab below to view relevant setting descriptions or examples for Integration Keys.
+BimlFlex offers many [**Settings**](xref:bimlflex-settings) to manage how the integration key will be used in the solution. Choose a tab below to view relevant setting descriptions or examples for integration keys.
 
 [!include[Integration Key Metadata Settings List](_settings_integration_key.md)]
 
 > [!NOTE]
-> The `Model` **Setting Group** is only applied when first creating and Integration Key.  These **Settings** do not already impact generated Integration Keys.
+> The `Model` **Setting Group** is only applied when first creating and Integration Key.  These [**Settings**](xref:bimlflex-settings) do not already impact generated Integration Keys.
 
 * The [*Accelerate Hub Keys*](xref:bimlflex-app-reference-documentation-settings-index) setting will include the key parts in the Hub.
 * BimlFlex provides an option to add the `@@rs` to all keys on import [*Add Record Source to Integration Key*](xref:bimlflex-app-reference-documentation-settings-index) and on the **Columns** tab for the **Objects** in the app.
