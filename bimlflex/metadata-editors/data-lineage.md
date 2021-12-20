@@ -7,9 +7,9 @@ varigenceArticleType: Reference
 ---
 # Data Lineage
 
-The **Data Lineage Designer** can be used to review and update your **Column Mappings** in an easy graphical interface.
+The **Data Lineage Designer** can be used to review your **Column Mappings** in an easy graphical interface.
 
-The designer provides an view of one or more relationships between **Columns**, referred to as source-target mappings or simply 'mappings'. This designer allows a modeler to get a quick view of mappings in a graphical interface, as well as making it easy to add or remove mappings using column drag and drop. Common actions in the context of data mapping are also supported.
+The designer provides an view of one or more relationships between **Columns**, referred to as source-target mappings or simply 'mappings'. This designer allows a modeler to get a quick view of mappings in a graphical interface.
 
 ![Column Mapping User Interface](images/bimlflex-app-data-lineage-full-ui.png "Column Mapping User Interface")
 
@@ -21,7 +21,7 @@ The screenshot above shows the mapping from a source Object to the various targe
 |----- |--------|-------------|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the **Objects** and **Columns** modified in the designer.|
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes made to the **Objects** and **Columns** will be discarded.|
-| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Columns | Toggle to show the **Columns** for all **Objects** on the canvas.|
+| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Columns | Toggle to show the **Columns** for all **Objects** on the canvas, and display the column-level mappings. Any mappings that have an expression or formula applied will display the `fx` label.|
 | <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Data Types | Toggle to show the **Columns** for all **Objects** on the canvas.|
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /> | Layout | Reset the way the diagram is rendered on the screen to its default.|
 | <div class="icon-col m-5"><img src="images/svg-icons/print.svg" /> | Print | Creates printable image from the diagram, and opens the Windows print dialog.|
@@ -29,7 +29,9 @@ The screenshot above shows the mapping from a source Object to the various targe
 
 ## Overview
 
-It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the `Expand Overview` icon (<img src="images/svg-icons/expand-toggle-blue.svg" width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.|
+It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the **Expand Overview** icon (<img src="images/svg-icons/expand-toggle-blue.svg" width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.
+
+On the canvas, you can zoom in and out using the mouse scroll button to get a higher level view as well. When the details become too small due to zooming out, BimlFlex will hide these and display the objects instead.
 
 ## Treeview Interaction
 
@@ -61,7 +63,7 @@ The following options are available:
 
 The side panel that contains **Object** details can be opened by double-clicking on the **Object** or by using the **Object Details** button in the [**Object Action Menu**](xref:bimlflex-data-lineage#object-action-menu).
 
-![Object Editor Side Panel](images/side-panel-object-editor.png "Object Editor Side Panel")
+[!include[Object Editor Side Panel](_incl-side-panel-object-editor.md)]
 
 ### Column Action Menu
 
@@ -69,46 +71,29 @@ Clicking on the ellipsis for any column will show the column-level action option
 
 ![Column Actions in the Data Lineage Designer](images/data-lineage-column-level-context-actions.png "Column Actions in the Data Lineage Designer")
 
+| Icon | Action | Description |
+|----- |--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Column Details | This open the [Column Side Panel](xref:bimlflex-data-lineage#column-side-panel), which will allow modification of various **Column** details.|
+
+### Column Side Panel
+
+The side panel that contains **Column** details can be opened by double-clicking on the **Column** or by using the **Column Details** button in the [**Column Action Menu**](xref:bimlflex-data-lineage#column-action-menu).
+
+[!include[Column Editor Side Panel](_incl-side-panel-column-editor.md)]
+
+### Relationship Side Panel
+
+**Relationships** between **Columns** can be viewed by double-clicking on the lines between the columns. These lines represent individual column mappings. The relationship editor allows for direct manipulation of the selected relationship.
+
+>[!NOTE]
+>Mappings that have an `fx` label have an **Expression** applied. The label provides a visual cue to highlight this.
+
+[!include[Relationship Side Panel](_incl-side-panel-relationship-editor.md)]
+
 ## Drag and Drop Actions
 
 **Objects** can be moved on the canvas to make the layout easier to view. This can be done by hovering over the object name until the Arrow Cross mouse pointer appears.
 
+<!--
 At **Column** level, drag-and-drop operations can be used to create new mapping relationships between columns.
-
-## Filtering Tables
-
-![Filtered Tables](images/bimlflex-app-data-lineage-selection-panes.png "Filtered Tables")
-
-Use filtering in the Selection pane to see only specific tables in your view. There are two Selection Panes in the Column Mapping diagram. The Source and Target selection panes are related and have certain rules which are enforced:
-
-1. The target pane can not show source **Integration Stages**.
-1. The target pane has to have a **Integration Stage** that is down-stream from the source **Integration Stage**, i.e. if the source is an RDV, then the target cannot be RDV, but can be Data Mart.
-
-## Auto Selection of Mapped Tables
-
-The Column Mapping auto selects all the direct mapped tables when a user makes a selection. This can be utilized by users to easily select the views they are interested in.
-
-Examples:
-
-* When a user selects a source table in a SRC => RDV schema it will automatically select the HUB, LINK(s) and SAT(s).
-* To view only SRC => HUBs a user can select the Hubs in the target pane.
-* To view only SRC => LNKs a user can select the Links in the target pane.
-* To view only SRC => SATs a user can select the Satellites in the target pane.
-* To view only SRC => HUBs and LNKs a user can select the Hubs and Links in the target pane.
-
-![Filtered HUB Tables](images/bimlflex-app-data-lineage-hubs.png "Filtered HUB Tables")
-
-The example above shows Source to Hub mappings.
-
-## Auto De-Selection of Mapped Tables
-
-When a user de-selects a table the Column Mapping diagram will also remove the mapped table if it is the last mapping.
-
-When a user de-selects a table the Column Mapping diagram which is not the last mapping the mapped table will not be removed.
-
-To illustrate this, see the image below.
-
-* If a user de-selects the HUB it will only remove the HUB, but if he de-selects the HUB and the SAT it will also remove the Source table.
-* If a user de-selects the Source table it will also remove the HUB and the SAT tables.
-
-![De-Select Tables](images/bimlflex-app-data-lineage-de-select.png "De-Select Tables")
+-->

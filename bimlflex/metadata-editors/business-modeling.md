@@ -474,7 +474,7 @@ Business Entities can be moved around the canvas by dragging and dropping each i
 
 #### Diagram Overview
 
-It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the `Expand Overview` icon (<img src="images/svg-icons/expand-toggle-blue.svg" width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.
+It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the **Expand Overview** icon (<img src="images/svg-icons/expand-toggle-blue.svg" width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.
 
 #### Using the Treeview
 
