@@ -15,7 +15,7 @@ BimlFlex 2022 R1 is installed and upgraded through a single consolidated install
 
 ## Latest Release
 
-Build 22.1.73.0, release date: 15 Dec 2022
+Build 22.1.85.0, release date: 21 Dec 2022
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
