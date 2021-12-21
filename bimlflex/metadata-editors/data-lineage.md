@@ -42,7 +42,7 @@ Selecting **Objects** in the **Treeview** will add these objects to the canvas, 
 
 The context-aware actions that the Data Lineage Designer allows will sometimes also check or un-check objects in the Treeview to produce the right visual.
 
-## Context-Specific Actions
+## Context Specific Actions
 
 Depending on whether you select an **Object**, **Column** or **Relationship** there are various convenience actions that become available.
 

@@ -7,86 +7,88 @@ varigenceArticleType: Reference
 ---
 # Schema Diagram
 
-In this document, we discuss the Schema Diagram tool with reference to how it provides a simple view of your data and accelerates your development tasks.
+The **Schema Diagram Designer** provides an Entity-Relationship view of the BimlFlex metadata. It assists the modeler in getting an overview of the metadata, and helps to execute common actions in a graphical interface.
 
-## Schema Diagram Overview
+![Schema Diagram User Interface](images/schema-diagram-overview.png "Schema Diagram User Interface")
 
-The Schema Diagram provides an entity relation view of any set of metadata based on the integration stage. It allows a user to get an overview of what the metadata looks like in an easy to understand view. It also helps the developer to execute the most common actions on the data in a graphical interface.
+The screenshot above shows the Schema Diagram of a subset of the imported source **Objects**.
 
-### Starting Point
+Using the **Schema Diagram Designer** the properties of **Objects**, **Columns** can be modified. It is also possible to define new **Integration Keys** and use these to define references to other **Objects**.
 
-The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorksLT database, the Source to Staging and Persistent Staging has been completed and the Raw Data Vault has been published via the Accelerator.
+These references, in turn, can be used to deliver the correct models using the [**Accelerator**](xref:bimlflex-data-vault-accelerator)
 
-[//]: # (TODO: Link to UPDATED Source To Staging document)
-
-Follow the guide for [Source To Staging](xref:bimlflex-source-to-staging-templates) and import all SalesLT tables from the AdventureWorksLT source.
-
-Follow the guide for [Data Vault Accelerator](accelerator.md) to get a Raw Data Vault schema which will be used in this guide.
-
-![Schema Diagram User Interface](images/bimlflex-app-schema-diagram-full-ui.png "Schema Diagram User Interface")
-
-The screenshot above shows the Schema Diagram of a subset of the Raw Data Vault data as generated during the Data Vault Accelerator guide.
-
-### Difference between the Data Vault Accelerator and Schema Diagram
-
-While the two tools look similar it is important to understand that there is a difference between them in that the Accelerator works with the Preview Data Vault. Actions on the Preview side of the Accelerator actually affect the Source tables and columns whereas actions in the Schema Diagram affects the actual metadata for those tables.
-
-An example of this is; If you want to split a Satellite, the appropriate place to do that is in the Accelerator. If you make the required changes in the rdv schema, they may be overridden the next time someone publishes the accelerator data unless the source data has been updated to reflect the target schema.
-
-As such the Context Aware Actions are slightly different than the Accelerator Actions.
-
-### Context Aware Actions
-
-There are convenience actions available on most of the tables and columns.
-
-By clicking on a Table or Column a user gets a pop up of all the actions buttons available. The first click will show a minimized view with only the icons with tooltips.
-
-![Accelerator Action Icons Minimized](images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
-
-By Clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
-
-![Accelerator Action Icons Maximized](images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
+## Action Bar
 
 | Icon | Action | Description |
-|--- |--- |--- |
-| <div class="icon-col m-5"><img src="images/svg-icons/add-reference.svg"/></div> | <span class="nowrap-col m-5">Add Reference</span> | Add a reference. This can also be done by dragging a column onto the target table. |
-| <div class="icon-col m-5"><img src="images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Reference</span> | Remove a reference. This action removes the reference link, not the column. |
-| <div class="icon-col m-5"><img src="images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Navigate to table or column. The current Schema Diagram layout will be persisted in memory for you to come back to. |
-| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Open a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key. |
-| <div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Add an integration key using the selected columns. |
-| <div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show Related</span> | Add all the related tables to the view by interrogating the direct references. |
-| <div class="icon-col m-5"><img src="images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive the selected columns. |
-| <div class="icon-col m-5"><img src="images/svg-icons/create-pit.svg"/></div> | <span class="nowrap-col m-5">Create Pit</span> | Action available on HUB tables to create an Point in Time table. |
-| <div class="icon-col m-5"><img src="images/svg-icons/create-bridge.svg"/></div> | <span class="nowrap-col m-5">Create Bridge</span> | Action available on HUB tables to create a Bridge table. |
+|----- |--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the **Objects** and **Columns** modified in the designer.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes made to the **Objects** and **Columns** will be discarded.|
+| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Columns | Toggle to show the **Columns** for all **Objects** on the canvas, and display the column-level mappings. Any mappings that have an expression or formula applied will display the `fx` label.|
+| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Data Types | Toggle to show the **Columns** for all **Objects** on the canvas.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /> | Layout | Reset the way the diagram is rendered on the screen to its default.|
+| <div class="icon-col m-5"><img src="images/svg-icons/print.svg" /> | Print | Creates printable image from the diagram, and opens the Windows print dialog.|
 
-Note the new Actions available on the Raw Data Vault Hubs.
+## Overview
 
-![Hub Action Icons Maximized](images/bimlflex-app-schema-diagram-hub-actions-show-columns.png "Hub Action Icons Maximized")
+It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the **Expand Overview** icon (<img src="images/svg-icons/expand-toggle-blue.svg" width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.
 
-### Drag and Drop Actions
+On the canvas, you can zoom in and out using the mouse scroll button to get a higher level view as well. When the details become too small due to zooming out, BimlFlex will hide these and display the objects instead.
 
-By dragging and dropping certain columns or tables users can affect the metadata in various ways:
+## Treeview Interaction
 
-1. Change Ordinal - Drag a source column up or down in the same table to change the ordinal
-1. Add Reference - Drag a source column onto another table to add a reference
+Selecting **Objects** in the **Treeview** will add these objects to the canvas. Conversely, un-checking **Objects** will remove them from the canvas.
 
-### Layout Drag Options
+The context-aware actions that the Schema Diagram Designer allows will sometimes also check or un-check objects in the Treeview to produce the right visual. For example when using the **Show Related** button for an object.
 
-Tables can be dragged around on the screen to make the layout easier to view. There are four ways to drag tables around.
+## Context Specific Actions
 
-1. Drag - Drag an individual table to another location
-1. Ctrl Drag - Drag a Hub and its Satellites
-1. Shift Drag - Drag all selected tables and their Satellites
-1. Ctrl+Shift Drag - Drag all selected tables and their referenced tables and Satellites
+Depending on whether you select an **Object** or **Column** there are various convenience actions that become available.
 
-### Filtering Tables
+### Object Action Menu
 
-![Filtered Tables](images/bimlflex-app-schema-diagram-filtered-tables.png "Filtered Tables")
+By clicking on a ellipsis on the object, the designer will be presented with the object-level actions.
 
-Use filtering in the Selection pane to see only specific tables in your view. There are selection fields for *Integration Stage*, *Record Source* and *Model Grouping* which allow fine grain filtering of tables. Note that the *Record Source* and *Model Grouping* fields will be hidden if there are no options to filter by.
+![Object Actions in the Schema Diagram Designer](images/schema-diagram-object-level-context-actions.png "Object Actions in the Schema Diagram Designer")
 
-### Data Vault Backbone
+The following options are available:
 
-![Data Vault Backbone](images/bimlflex-app-schema-diagram-rdv-backbone.png "Data Vault Backbone")
+| Icon | Action | Description |
+|----- |--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Object Details | This open the [Object Side Panel](xref:bimlflex-schema-diagram#object-side-panel), which will allow modification of various **Object** details.|
+| <div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | Show Related | Add the **Objects** to the canvas that have a relationship (reference) to, or from, the selected **Object**.|
+| <div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | Add Integration Key | Opens the **Integration Key Editor** screen, so that a new integration key can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Source System`.|
+| <div class="icon-col m-5"><img src="images/svg-icons/create-bridge.svg"/></div> | Create Bridge | Opens the **Bridge Editor** screen, so that a new Bridge table can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Raw Data Vault` and the **Object Type** is `Hub`.|
+| <div class="icon-col m-5"><img src="images/svg-icons/create-pit.svg"/></div> | Create PIT | Opens the **Point-In-Time Editor** screen, so that a new Point-In-Time (PIT) table can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Raw Data Vault` and the **Object Type** is `Hub`.|
 
-The default schema will allow all tables to be selected. By selecting only the Hubs and Links in the filtering pane a user can view the Data Vault Backbone and review the CBC's and UOW's.
+If an **Object** is part of a **Connection** that has the `Raw Data Vault` **Integration Stage** additional options Clicking on the ellipsis for any column will show the column-level action options:
+
+### Object Side Panel
+
+The side panel that contains **Object** details can be opened by double-clicking on the **Object** or by using the **Object Details** button in the [**Object Action Menu**](xref:bimlflex-schema-diagram#object-action-menu).
+
+[!include[Object Editor Side Panel](_incl-side-panel-object-editor.md)]
+
+### Column Action Menu
+
+Clicking on the ellipsis for any column will show the column-level action options:
+
+![Column Actions in the Schema Diagram Designer](images/schema-diagram-column-level-context-actions.png "Column Actions in the Schema Diagram Designer")
+
+| Icon | Action | Description |
+|----- |--------|-------------|
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Column Details | This open the [Column Side Panel](xref:bimlflex-schema-diagram#column-side-panel), which will allow modification of various **Column** details.|
+| <div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | Add Integration Key | Opens the **Integration Key Editor** screen, so that a new integration key can be defined for the selected **Object**. This will apply to the **Object** the selected **Column** belongs to. This option is only available if the **Object** the **Column** belongs to is part of a **Connection** that has an **Integration Stage** of `Source System`. |
+
+### Column Side Panel
+
+The side panel that contains **Column** details can be opened by double-clicking on the **Column** or by using the **Column Details** button in the [**Column Action Menu**](xref:bimlflex-schema-diagram#column-action-menu).
+
+[!include[Column Editor Side Panel](_incl-side-panel-column-editor.md)]
+
+## Drag and Drop Actions
+
+**Objects** can be moved on the canvas to make the layout easier to view. This can be done by hovering over the object name until the Arrow Cross mouse pointer appears.
+
+You can also drag a **Column** to another **Integration Key** or **Primary Key** to create a reference.
+
+![Adding a new reference in the Schema Diagram Designer](images/schema-diagram-create-reference.png "Adding a new reference in the Schema Diagram Designer")
