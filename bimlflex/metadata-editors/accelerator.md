@@ -9,336 +9,291 @@ varigenceArticleType: Reference
 
 ## On Data Vault Modeling
 
-This guide provides information on the Accelerator but assumes a sound understanding of the Data Vault modeling approach.
+This guide provides information on using the BimlFlex Data Vault Accelerator and assumes a sound understanding of the Data Vault modeling approach.
 
-### Watch Recordings
+## BimlFlex - Data Vault Accelerator
 
-#### BimlFlex - Data Vault Accelerator
+<!-- This session covers the various Data Vault modeling and configuration options available in BimlFlex. -->
 
-This session covers the various Data Vault modeling and configuration options available in BimlFlex.
+<!-- TODO: Update video with the 21.1 UI once available -->
+![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=<placeholder>?rel=0&autoplay=0)
 
-![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0)
+## Introduction to the Accelerator
 
-### Introduction to the Accelerator
+The Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of source metadata. It is configurable and provides a live preview of the target Data Vault while modeling. The accelerator can be rerun as many times as necessary for incremental modeling and rapid generation and regeneration of Data Vault artifacts.
 
-The Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of the source metadata. It is configurable and provides a preview that can be rerun as many times as necessary so that the initial Data Vault modeling can be completed faster than through manual metadata modeling.
+It is important to remember that the Data Vault modeling approach is based around **Core Business Concepts** (CBC) that are built upon **Integration Keys** or **Enterprise-Wide Business Keys** (EWBK) to allow for inter-system integrations. These Integration Keys are normally added to the source objects as part of the Data Vault modeling process.
 
-It is important to remember that the Data Vault modeling approach is based around **Core Business Concepts** (CBC) that are built upon **Enterprise-Wide Business Keys** (EWBK) to allow for intra-systems integrations. The Accelerator does it's best to derive this from the source metadata but there is a need for a modeler with enterprise knowledge to translate the data and events into a source-system agnostic model. The Accelerator makes it easy to get started and iterate through variations so that the analysts and subject matter experts can validate and tune the model to best match business processes.
+The Accelerator derives the initial model information from source metadata. Based on this, a modeler with enterprise knowledge translates the data and events into a source-system agnostic Data Vault model.
 
-### Starting Point
+The Accelerator makes it easy to get started and iterate through variations so that the analysts and subject matter experts can validate and tune the model to best match business processes using the iterative approach and the graphical representation of the model in the Accelerator.
 
-The starting point for the examples in this document is when all source metadata has been imported for the AdventureWorks LT database, the Source to Staging and Persistent Staging has been completed and it is time to start integrating the staged data into the Raw Data Vault.
+## Starting Point
 
-Follow the guide for [Source To Staging](xref:bimlflex-source-to-staging-templates) and import all SalesLT tables from the AdventureWorksLT source.
+The BimlFlex Data Vault Accelerator is creating the Data Vault model based on metadata existing in the App. The initial metadata is generally imported from a source system, however the BimlFlex accelerator also allows direct acceleration from an object (such as an imported view) through the "Staged Query" approach.
 
-More about [Import Metadata](../concepts/importing-metadata.md).
+**Source metadata decoration**
 
-### The Source and Target Model
+By decorating the source metadata with additional information for the Accelerator, it is possible to load the Data Vault directly from the staged data from the source. This is used when the source representation somewhat matches the Data Vault Target model. An example is a source table with Product information that should be loaded to a Product Hub and a Product Satellite. By decorating the source object metadata with additional attributes, such as the Business Name, the Accelerator can create the Data Vault straight from the source. This is a straight-forward and convenient way to model and load the Data Vault without requiring additional metadata entities.
 
-Before starting the integration and acceleration of the technical artifacts, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target model so some analysis and modeling are required. The technical implementation in the source is then tweaked to match the expected Data Vault model.
+**Staged Query metadata acceleration**
 
-![Whiteboard Model](images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
+If the Data Vault modeling and load requirements are more complex, BimlFlex allows the use of a Staged Query object to load the Data Vault. This is often used when the source data needs to be manipulated before it is fit for loading to the Data Vault. Some examples where this is used could be when the data from multiple tables needs to be joined for a complete dataset for the Data Vault load, or when a source table contains multiple entities that should be split into multiple Data Vault loads.
+
+## The Source and Target Model
+
+Before considering the acceleration, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target Data Vault model, so some analysis and modeling is required. The technical implementation in the source is then tweaked to match the expected Data Vault model using either source metadata decoration or the staged query approach.
+
+![Whiteboard Model -center -50%](images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
 
 Once the target model is drafted, compare the accelerated metadata with the expected outcome and tweak accordingly.
 
-### Prerequisites
+## Prerequisites
 
-This guide builds on the other guides in the series and assumes that the environment has been set up and configured, source metadata has been imported and that the source to staging process has been modeled and completed.
+This guide assumes that the environment has been set up and configured, source metadata has been imported and that the source to staging process has been modeled and completed. There are several sample metadata sets where a target Data Vault model has been created, and a Sample 02 - MSSQL After Import where only source metadata has been imported, that is ready for Data Vault modeling and acceleration.
 
-### The BimlFlex Workflow
+## The BimlFlex Workflow
 
-The Accelerator integrates into and is part of the normal BimlFlex workflow.
+The Accelerator is part of the BimlFlex App.
 
-[//]: # (TODO: New Image for UPDATED BimlFlex workflow)
+![Accelerator in BimlFlex App](images/ss-bfx-21.1-app-accelerator-full-ui.png "Accelerator in BimlFlex App")
 
-The workflow uses the BimlFlex App to model and manage all metadata. The data can be pushed and updated from both Excel and the BimlFlex App. BimlFlex Excel is useful for bulk changes on multiple columns.
-
-See more info about the [BimlFlex Excel Add-In](xref:bimlflex-excel-add-in)
+The Accelerator screen in the BimlFlex App allows metadata manipulation to directly control the target Data Vault. By editing the entities, such as splitting satellites or joining relationships into units of work or renaming targets, it is possible to directly control the accelerated model.
 
 ## Accelerate the Model
 
-Based on the source metadata and the source database, the source model can be used to relate the data in the staging area. Based on information gained from the business process a user can derive a target data model that:
+Based on the available source (or staged query) metadata, the Accelerator shows a preview of the Data Vault model. It is rare that this will be enough to derive a completed Data Vault target model. 
+
+Based on information gained from understanding the business process, a user can create a target data model that:
 
 * Is source agnostic
 * Is aligned with the business process
 * Is based on Core Business Concepts
 * Describes events and transactions through the relations between the Core Business Concepts
 
-The Accelerator will use the metadata in the source for the project to derive the potential Hubs, Links and Satellites. The derived Data Vault model is available to preview and refine through editing the metadata and updating the preview.
+The Accelerator will use the metadata and decorations from the source to derive the target Data Vault and its Hubs, Links and Satellites. The derived Data Vault model is available to preview and refine through editing the metadata, giving the modeler a live preview of the target.
 
-The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault preview allows a rapid design cycle of the Raw Data Vault.
+Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become instantiated parts of the metadata set.
 
-Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become part of the normal metadata set.
+The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault allows a rapid design cycle that can be repeated as needed.
 
-### Sample Workflow
+## Sample Workflow
 
 The following narrative will guide us through the Accelerator process end to end. It is part of the overall BimlFlex workflow described earlier.
 
-1. Run the metadata import for the source system if not done already. This import identifies source tables as a base for either Hubs, Links or Satellites.
-1. Open the Accelerator, specify the record source and select objects to accelerate.
-1. Preview the Accelerated Schema.
-1. Review and tweak the metadata.
-1. Publish the preview to the metadata repository by selecting the target Connection and Project.
-1. Build the database artifacts and SSIS artifacts in BimlStudio from the newly published Data Vault metadata.
+1. Run the metadata import for the source system if not done already. For the samples, start with sample `02 - MSSQL After Import`
+1. Open the Accelerator, select objects to include in the Acceleration
+1. Preview the Accelerated target model
+1. Review and tweak the metadata
+1. Publish the model to the metadata repository
+1. Refresh the metadata into the BimlStudio project
+1. Build and review the database and SSIS/ADF artifacts in BimlStudio
 
-### The Accelerator User Interface
+## The Accelerator User Interface
 
-In the preview, it is also possible to filter the tables used for the preview from the source. This is useful where the full set of source tables have been included but the Data Vault is built piece by piece. Starting to source and persist changes from the source without having to consider the Data Vault process means the Staging part of the solution can be completed sooner.
+It is possible to select only a subset of objects, or filter the objects visible in the Acceleration. This is useful where the full set of source tables have been included but the Data Vault is modeled and built in an agile, iterative process. Starting to source and persist changes from the source without having to consider the Data Vault process means the Staging part of the solution can be completed sooner.
 
 Constraining the Data Vault Acceleration to a subset allows for a more agile delivery where valuable parts of the solution can be put to good use as soon as they are done.
 
-![BimlFlex Accelerator User Interface](images/bfx-accelerator-interface.png "BimlFlex Accelerator User Interface")
-
-<!--
 ![Accelerator User Interface](images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
--->
-The Accelerator shows the source and preview side-by-side with options to collapse each pane or to resize the panes by dragging the splitter.
+
+The Accelerator shows available source objects in the left-hand tree view and a preview of the target Data Vault model in the content pane. The page has a toolbar with several interaction options available
 
 | Icon | Description |
 | ---- | ----------- |
-| <img src="images/bimlflex-app-action-switch.png" /> | Toggle to show all columns on the source or preview panes. |
-| <img src="images/bimlflex-app-action-switch.png" /> |Toggle to show all data types in the source or preview panes. |
-| <img src="images/bimlflex-app-action-switch.png" /> | Toggle to show only Hubs and Links (the backbone) or Hubs, Links, and Satellites. |
-| <div class="icon-col m-5"><img src="images/svg-icons/diagram-view.svg"/></div> | Show all the columns and/or data types on both the source and preview panes by clicking the View Options Icon. |
-| <div class="icon-col m-5"><img src="images/svg-icons/print.svg"/></div> | Download a printable Database Schema Diagram svg image which details the tables and their relationships in an easy to review diagram. |
-| <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg"/></div> | Refresh the whole layout or you can change the layout as you like by dragging tables. |
-| <div class="icon-col m-5"><img src="images/svg-icons/publish.svg"/></div> | Publish the accelerated schema after tweaking the Metadata to fit the business process. You will be able to revisit the model and iteratively make more changes as required. |
+| Search | Search through entities in the tree view |
+| Filter funnel | Filter Funnel allows filtering contents in the tree view based on Integration Stage and Record Source |
+| Save | Save the current model view for later acceleration |
+| Discard | Discard any changes being made to the model that has not yet been saved |
+| Publish | Publish the previewed model to the repository to instantiate the entities into the metadata, allowing them to be used in load processes |
+| Project | Select which Data Vault load project should be used when publishing |
+| Settings | Quick View access to settings related to the Data Vault Accelerator |
+| <img src="images/bimlflex-app-action-switch.png" /> Columns | Toggle to show all columns on the source or preview panes. |
+| <img src="images/bimlflex-app-action-switch.png" /> Data Types | Toggle to show all data types in the source or preview panes. |
+| <img src="images/bimlflex-app-action-switch.png" /> Expanded | Toggle to show expanded view (including Satellites) or the backbone of the model (only Hubs and Links) |
+| Refresh Layout | Re-layout the diagram in the content pane |
+| <div class="icon-col m-5"><img src="images/svg-icons/print.svg"/></div> | Download the diagram shown in the contents pane in `svg` format |
 
-Iterating through the metadata and updating the model to better support the target Data Vault model, each time a user should set the updated metadata to be persisted to the Metadata Database. This will create all Data Vault tables and columns as well as the Source To Target mappings needed to populate the Data Vault from the chosen source.
+### Content mini-map
 
-If there is a need to update the model and rerun the preview, it can be done at any time. Once the metadata from the preview has been published, all metadata will be available in the BimlFlex App Object and Column screens for direct manipulation there. It will also be available in the Excel metadata editor for bulk updates. The pattern of tweaking the Metadata to fit the business process and target model can be repeated however many times needed before publishing.
+The content pane has an overview mini-map that shows the visible area in relation to the full model.
 
-Note that the accelerator will not resurface any entities already accelerated and marked as excluded or deleted. To see these entities, include them in the project by removing the excluded/deleted flag.
+### Content layout
 
-## Beginning Acceleration from the Objects Screen
+The objects in the preview can be laid out automatically or arranged manually by dragging the entities. The refresh layout button allows applying an automated layout to the contents.
 
-Users may accelerate models for specific objects from the **Objects** Action Bar in BimlFlex, as opposed to the Accelerator option in the source pane.
+To move the viewport perspective in the diagram pane, hold the `ctrl` or `space` button while clicking and dragging. To select multiple entities in the preview pane, click and drag a selection area with the mouse.
+
+### Beginning Acceleration from the Objects Screen
+
+Users may accelerate models for specific objects from the **Objects** Action Bar in BimlFlex, as opposed to navigating to the Accelerator option in the main navigation.
 
 ![Accelerate Option from Objects Action Bar](images/objects-accelerate-alternative.png "Accelerate Option from Objects Action Bar")
 
-Selecting either `Accelerate`, `Diagram`, or `Mapping` will navigate the user to either the BimlFlex Accelerator, Schema Diagram, or Column Mapping, respectively. This will enable users to model only the selected object without having to change menus or reselect their desired object.
-
-## Updating the Metadata to Meet Requirements
+## Updating the Model to Meet Requirements
 
 There are numerous options for manipulating the source metadata so that the Accelerator will produce the desired Data Vault model. Some of the common requirements include:
 
-* Choosing the Integration Key used for the Hubs. By analyzing business processes and the source data it is possible to find EWBK's that aren't the technical source keys.
-* Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For information, such as addresses there is normally no need to maintain complex relationships from the source. An address is just an attribute of the entity with a location.
-* Adjusting the grain in UOW's so that the correct Hubs are included in Links.
-* Separating out data into different Satellites based on rate of change, storage requirements or similar.
-* Reviewing Driving Key relationships for Links where there is no one FK relationship in the source.
+* Choosing the Integration Key used for the Hubs. By analyzing business processes and the source data it is possible to identify any Enterprise Wide Business Keys that aren't the technical source keys.
+* Pulling disparate information stored in complex relationships in the source into a Satellite connected to the relevant Hub. For descriptive attributes, such as addresses, there is normally no need to maintain complex relationships from the source. An address could instead be modeled as an attribute of the entity with a location.
+* Adjusting the grain in a Unit of Work, so that the correct Hubs are included in Links.
+* Separating data into different Satellites based on rate of change, storage requirements or similar.
+* Reviewing Driving Key relationships for Links.
 
-## Analyze The Rules for BimlFlex Accelerator
+## Model the target using the Accelerator
 
-There are a set of rules applied through the Accelerator to make it perform what it does.
+The BimlFlex Data Vault Accelerator applies the existing source metadata to create the target model. The modeler adds and updates the information in the Accelerator to allow the Accelerator to create the expected target model. 
 
-The first rule applied is using the source metadata to derive the Table type. By using relationships defined in the source and imported through the source metadata import a user can run the following table logic.
+### Object Accelerator Type
 
-### Mark potential satellite tables
+Each source object in the model has a target Accelerator Type:
 
-Every table with no incoming foreign keys and only one outgoing foreign key with all the referencing columns also primary key columns and no other columns are part of the primary key is a candidate to become a Satellite source table.
+* Satellite
+* Link
+* Hub
+* Link Satellite
+* Reference
+* Reference Satellite
+* Exclude DV
+* Same As Link
+* Hierarchy Link
 
-### Mark as Links
+By default, each source table will be defined as a Hub Accelerator Type.
 
-Every table with no incoming foreign keys and more than one outgoing foreign key with all the referencing columns also primary key columns is a candidate to become a Link source table.
+### Satellite Accelerator Type
 
-### Mark as Hubs
+An object that has a set of descriptive attributes for another Hub object can be defined and accelerated to a Satellite. The source object needs a defined Integration Key that has a relationship defined to the main Hub source object through the reference table/column metadata attribute.
 
-Tables that don't fit any of the categories above are going to be Hub source tables.
+### Link Accelerator Type
 
-If the source doesn't have relationships defined, such as flat files, these needs to be added to the metadata for the Accelerator to derive the table types.
+An object that mainly is used to describe relationships can be defined and accelerated to a Link table. The source object needs a defined primary Integration Key that will be the primary key of the Link table. The source object also needs columns defining each relationship to other source tables describing the related Hubs. Any attribute in the Link source table that is not a primary/relationship Integration Key will be accelerated to a default Link Satellite attached to the Link.
 
-## Acceleration
+### Hub Accelerator Type
 
-All acceleration uses default naming conventions so basic names for Hubs and Satellites will be derived automatically according to the **Configurations** and **Settings**
+An object that describes a Core Business Concept can be defined and accelerated to a Hub table. The source object needs a defined primary Integration Key that will be the integration key of the Hub table. Any outgoing relationship from the source table to other tables can be defined using reference columns and will allow the Accelerator to create a Link table defining the relationship. Two or more relationships can be grouped together to form a single Link relationship instead of multiple separate Link tables. Any attributes that are not defining the Hub or relationships will be accelerated to a default Satellite attached to the Hub.
 
-### Context Aware Actions
+### Link Satellite Accelerator Type
 
-There are convenience actions available on most of the tables and columns in both the source and preview panes.
+An object that has a set of descriptive attributes for another Link object can be defined and accelerated to a Link Satellite. The source object needs a defined Integration Key that has a relationship defined to the main Link source object through the reference table/column metadata attribute.
 
-By clicking on a Table or Column a user gets a pop up of all the actions buttons available. The first click will show a minimized view with only the icons with tooltips.
-<!--
-![Accelerator Action Icons Minimized](images/bimlflex-app-accelerator-actions-minimized.png "Accelerator Action Icons Maximized")
--->
-![Accelerator Action Icons Minimized](images/accelerator-icons-minimized.png "Accelerator Action Icons Minimized")
+### Reference Accelerator Type
 
-By clicking the ellipsis a user may see the maximized view which contains the words alongside the icons.
+An object that holds disconnected reference data can be Accelerated to a Reference table. The reference table does not contain a hashed primary key, instead relying on the defined Integration Key as the primary key.
 
-<!--
-![Accelerator Action Icons Maximized](images/bimlflex-app-accelerator-actions-maximized.png "Accelerator Action Icons Maximized")
--->
+### Reference Satellite Accelerator Type
 
-![Accelerator Action Icons Maximized](images/accelerator-icons-maximized.png "Accelerator Action Icons Maximized")
+An object that describes a Core Business Concept where no relationships should be instantiated can be defined and accelerated to a Reference Satellite table. The source object needs a defined primary Integration Key that will be the integration key of the Hub table. Any outgoing relationship from the source table to other tables will be ignored.Any attributes that are not defining the Hub will be accelerated to a default Satellite attached to the Hub.
 
-| Icon | Action | Description |
-|--- |--- |--- |
-|<div class="icon-col m-5"><img src="images/svg-icons/add-reference.svg"/></div> | <span class="nowrap-col m-5">Add Reference</span> | Source action to add a reference. This can also be done by dragging a column onto the target table. |
-|<div class="icon-col m-5"><img src="images/svg-icons/remove-reference.svg"/></div> | <span class="nowrap-col m-5">Remove Reference</span> | Source action to remove a reference. This action removes the reference link, not the column. |
-|<div class="icon-col m-5"><img src="images/svg-icons/navigate.svg"/></div> | <span class="nowrap-col m-5">Navigate</span> | Source action to navigate to table or column. The current Accelerator layout will be persisted in memory for you to come back to. |
-|<div class="icon-col m-5"><img src="images/svg-icons/edit.svg"/></div> | <span class="nowrap-col m-5">Edit</span> | Source action to open a pop over a side panel to edit the table or column. This can also be a bulk action when multiple columns are chosen while holding Ctrl key. |
-|<div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | <span class="nowrap-col m-5">Add Integration Key</span> | Source action to add an integration key using the selected columns. |
-|<div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | <span class="nowrap-col m-5">Show Related</span> | Source action to add all the related tables by interrogating the direct references. |
-|<div class="icon-col m-5"><img src="images/svg-icons/exclude.svg"/></div> | <span class="nowrap-col m-5">Bulk Delete</span> | Source or Preview bulk action when multiple columns are chosen while holding Ctrl key. Delete or Archive source columns. Exclude preview columns. |
-|<div class="icon-col m-5"><img src="images/svg-icons/split-columns.svg"/></div> | <span class="nowrap-col m-5">Spit</span> | Preview action to split columns from a Satellite. |
-|<div class="icon-col m-5"><img src="images/svg-icons/revert-split-columns.svg"/></div> | <span class="nowrap-col m-5">Revert Spit</span> | Preview action to revert columns that were split from a Satellite or to revert a Unit of Work. |
-|<div class="icon-col m-5"><img src="images/svg-icons/append-record-source.svg"/></div> | <span class="nowrap-col m-5">Append Record Source</span> | Preview action to appended record source to a Satellite name. |
-|<div class="icon-col m-5"><img src="images/svg-icons/remove-record-source.svg"/></div> | <span class="nowrap-col m-5">Remove Record Source</span> | Preview action to remove appended record source from a Satellite name. |
+### Exclude DV Accelerator Type
 
-### Drag and Drop Actions
+Any source object that should not be included in the Data Vault can be defined to be excluded from the Data Vault Accelerator.
 
-By dragging and dropping certain columns or tables users can affect the metadata in various ways:
+### Same As Link Accelerator Type
 
-1. Change Ordinal - Drag a source column up or down in the same table to change the ordinal
-1. Add Reference - Drag a source column onto another table to add a reference
-1. Unit of Work - Drag a Link onto another Link with the same Source Table to create a Unit Of Work
+An object that is used to describe a same-as relationship can be defined and accelerated to a Same As Link table. The source object needs a defined primary Integration Key that will be the primary key of the Link table. The source object also needs columns defining the two relationships to the source table describing the related Hub. Any attribute in the source table that is not a primary/relationship Integration Key will be accelerated to a default Link Satellite attached to the Link.
 
-### Layout Drag Options
+### Hierarchy Link Accelerator Type
 
-Tables can be dragged around on the screen to make the layout easier to view. There are four ways to drag tables around.
+An object that is used to describe a hierarchical relationship can be defined and accelerated to a Hierarchy Link table. The source object needs a defined primary Integration Key that will be the primary key of the Link table. The source object also needs columns defining the two relationships to the source table describing the related Hub. Any attribute in the source table that is not a primary/relationship Integration Key will be accelerated to a default Link Satellite attached to the Link.
 
-1. Drag - Drag an individual table to another location
-1. Ctrl Drag - Drag a Hub and it's Satellites
-1. Shift Drag - Drag all selected tables and their Satellites
-1. Ctrl+Shift Drag - Drag all selected tables and their referenced tables and Satellites
+## Acceleration Settings
 
-### Accelerate Satellites
+All acceleration uses behaviors derived from the DataVault Settings. These settings are available in the Settings pages and can also be directly accessed from the Accelerator through the Settings Dialog
 
-The first Acceleration step is to accelerate tables defined as Satellites. It will look for the defined Integration Key and use it as the Surrogate Key for the connection to the Hub. Once the Key to use is defined and added as the hashed Surrogate Key the rest of the columns in the Satellite table are added as Satellite attributes.
+![Accelerator Settings](images/ss-bfx-21.1-accelerator-data-vault-settings.png "Accelerator Settings")
 
-It is possible to split Satellite columns into separate Satellites. This is useful for when part of the data in the source table changes more frequently. Behind the scenes the ModelGrouping name will be added to the end of the Satellite name and the data from the source will go into this separate Satellite as well as the main Satellite.
+## Context Actions
 
-![Accelerator Action - Split Satellite -center](images/bimlflex-app-accelerator-actions-split-sat.png "Accelerator Action - Split Satellite")
+There are modeling actions available on most of the tables and columns in the preview pane. By clicking on the header for an object or the on the column BimlFlex shows an ellipsis button that allows a context menu to be shown.
 
-The sample above shows how the "Customer" source table Accelerated into a "HUB_Customer" and two separate Satellites. Notice the "pdv" schema shows that this is a preview. Once published the existing table will have an "rdv" schema.
+### Context Action for Satellite Objects
 
-### Accelerate Links
+When clicking the object header for a Satellite the following actions might be available:
 
-The Link tables in Data Vault are many to many relationship tables. Instead of having one-way Foreign Keys in the entities the relationship between entities is defined in a separate table.
+**Remove RecordSource**
 
-The tables identified as Links by the Accelerator will be similar. They already have the relationships between the source tables defined and technical keys to the surrounding tables. The Foreign Keys will be translated into Surrogate Keys linking to the respective Hubs.
+When a Satellite has an automatic name that includes the connection Record Source, this action will remove the Record Source code from the Satellite name. Using the Record Source in the name allows for automatic source agnosticism in the Data Vault, removing it is a modeling choice.
 
-All created Links will have an effectiveness Link Satellite added.
+**Revert Split**
 
-Any attributes left in the source Link Table will be added to the default Link Satellite. They can be separated out into their own Satellites if needed using the ModelGrouping override.
+If a source object has been split to load several Satellites, then split Satellites can have the slit reverted from the object context menu. This will restore the columns into the original Satellite.
 
-It's worth noting that if there are source system applied rules for relationships (such as a product can only be in one category) they will need to be specified as Driving Keys in the Accelerated Link unless the Accelerator can derive the behavior from relationship constraints.
+### Context Action for Satellite Columns
 
-For Hub tables that have Foreign Key relationships defined the Accelerator will generate Links for each Foreign Key between the defined Integration Keys. These Links will need to be reviewed as the UOW they describe might not align with the business process.
+When clicking a column for a Satellite the following actions might be available:
 
-### Accelerate Hubs
+**Exclude From DV**
 
-Any remaining tables and Integration Keys will be used to create Hubs. The defined Integration Key for the table will be used for the Hub Attribute and this attribute will be hashed into the Hub Surrogate Key.
+Choose this to exclude the column from the Data Vault load. The column will still be loaded from source to staging/persistent staging if applicable, but will be excluded from the Data Vault load.
 
-### Accelerate Link Satellites
+**Split Satellite**
 
-To accelerate Link Satellites, users must first enable the option from within the **Settings** menu.
-By default, this setting is turned off. This setting will enable the Accelerator to model Link Satellites for effectiveness and attributes from source metadata.
+Choose this to slit one or more columns into its own Satellite. This allows maintaining multiple Satellites loaded from the same source object. Splitting Satellites allows control over different rates of change, different storage locations for target tables and context management.
 
-![Enable Link Satellite Acceleration](images/bfx-link-satellite-setting.png "Enable Link Satellite Acceleration")
+### Context Action for Link Objects
 
-### Accelerate Hub and Link Keys
+When clicking the object header for a Link the following actions might be available:
 
-The setting to enable acceleration of Hub Keys and Link Keys also exists within the **Settings** menu.
-By default, these settings are turned off. This setting will enable the Accelerator to add source key columns to the Hub and/or Link in addition to the Integration Key(s).
+**Split Link**
 
-![Enable Hub and Link Key Acceleration](images/bfx-accelerate-hub-link-keys-setting.png "Enable Hub and Link Key Acceleration")
+When two or more Links have been joined, it is possible to revert that action and split the Links into individual relationships.
 
-### Reviewing Unit of Work
+### Context Action for Satellite Columns
 
-The UOW defines the granularity of the relationship between the entities. It is vital that the granularity is correct and that it properly describes the business process a user is interested in.
+## Drag Actions
 
-Using the ModelGrouping attribute, a user can define the granularity from the source table to group multiple Foreign Key relations into a single Link
+There are modeling actions available on some objects, allowing a modeler to drop an object on top of another to introduce a model change.
 
-![Unit of Work Link Grouping -center](images/bimlflex-app-accelerator-actions-uow.png "Unit of Work Link Grouping")
+### Drag Action for Link Objects
 
-Watch the video to see how to group the 3 Links above into a single Unit Of Work:
+**Join links to create Unit of Work**
 
-<iframe width="500" height="281" src="https://www.youtube-nocookie.com/embed/w1UTANpF_ug?start=275&amp;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+When dropping a Link object on top of another Link object created from the same source table, it is possible to join them together into a single Link, or Unit of Work. When joining the objects, the new Link name is specified in the dialog.
 
-## Adjusting Model Overrides
+## Adjusting Model behavior
 
 The **Model** attributes for Source Objects and Columns are used by the Data Vault Accelerator.
 
-Updating this metadata with target model information allows the Accelerator to generate the correct Data Vault model.
+Updating this with target model information allows the Accelerator to generate the correct Data Vault model.
 
 There are overrides for Objects as well as Columns
 
 ### Object Overrides
 
-#### Object ModelOverrideName
+Double-clicking on a Data Vault Object in the preview opens a details pane that shows details about the target as well as about any source object mapping to the target. 
 
-This column contains the actual table name to be used as after the solution is modeled.
+It is possible to manage details about the target object, such as the related Business Entity.
 
-![Change Model Override Name](images/bimlflex-app-accelerator-actions-modeloverridename.png "Change Model Override Name")
+It is possible to manage details about the source object, such as the related Business Entity as well as control the Business Name, Business Short Name and Business Grouping. These Business attributes control the behavior of the Accelerator and allows easy control of the generated target model.
 
-If a source system has entity names like "GL002" and the actual business name is "GeneralLedger" the Accelerator will convert this to "HUB_GeneralLedger" and "SAT_GeneralLedger"
+### Object Business Entity
 
-![Change Model Override Name Result](images/bimlflex-app-accelerator-actions-modeloverridename-result.png "Change Model Override Name Result")
+Allows the Accelerator to use a pre-defined Business Entity as the target definition. Use Business Modeling to define the Business Model that should be used and map source objects and columns to these targets to allow the Accelerator to use names and attribute definitions in the target model.
 
-The image above shows the previous Unit Of Work example with "SalesOrderHeader" overridden with "Sale"
+More detailed information on the Business Modeling is available here: [Business Modeling](xref:bimlflex-business-modeling)
 
-#### ModelOverrideShortName
+### Object Business Name
 
-This column contains the short name to be used for Links and Link Satellites after the solution is modeled.
+When not using Business Modeling, add the expected target Business Name here. This will be used to drive target names. For a source object with Accelerator Type Hub, the Business Name will be used for the Hub name as well as the default Satellite name
 
-A Link between "GeneralLedger" and "ChartOfAccounts" will use the default name "LNK_GeneralLedger_ChartOfAccounts".
+Example: If a source system has an entity name of "GL002" and the actual business name is "GeneralLedger" the Accelerator will convert this to "HUB_GeneralLedger" and "SAT_GeneralLedger_<rs>" when the Business Name for the source object is defined as GeneralLedger.
 
-Setting ModelOverrideShortName to "GL_COA" will generate the name "LNK_GL_COA" providing easy naming flexibility through metadata when modeling more complex relationships.
+### Object Business Short Name
 
-#### ModelObjectType
+The Business Short Name is used when naming Links from a Hub source object. The default 2-way Link Name is based on the 2 Hub source Objects Business names, or if present, Business Short Names. For a source Object with an outgoing relationship, the Accelerator will create a Link instantiating the relationship. For the AdventureWorksLT Product source object and its relationship to the Product Category, the default Link name generated is: `LNK_Product_ProductCategory`. Using a Business Short Name `Prd` for the Product will generate the shorter Link name `LNK_Prd_ProductCategory`.
 
-Interpreted when importing metadata from source and can be overridden after additional analysis. The rules defined above uses the keys and relationships to derive Hub, Link or Satellite as the type.
+The second part of the Link Name is generated from the Business Grouping or Business Reference attribute of the column generating the relationship. This is normally the relationship Integration Key that has the reference set to the related table. For the SalesLT.Product source table it is the `ProductCategory_BK` column for the relationship to the ProductCategory Hub source object.
 
-Please note that this attribute is only relevant when using BimlFlex to generate a Raw Data Vault model.
+Edit the related columns Business Reference or Business Grouping to reflect the expected name. The Business Reference attribute controls both the column name in the Link table and the Link Object name, the Business Grouping controls the Object name.
 
-### Column Overrides
+### Object Business Grouping
 
-#### Column ModelOverrideName
+The Business Grouping is used to group related Objects together for Acceleration. The Filtering option in the tree view allows the user to filter on defined Business Groupings. This allows for iterative modeling where a team works on a grouping at a time.
 
-This is used to define the business attribute name.
+## Saving the Model
 
-While the same column names are used in source to staging to persistent staging, it is usually advisable to use actual business process aligned names in the Data Vault.
+Saving the Accelerator Model will persist the layout and current state to the repository.
 
-If a source system has column names like "GL002CD123" and the actual business name is "GeneralLedgerCode" the Accelerator will convert this to "GeneralLedgerCode"
+## Publish the Model
 
-![Change Model Override Name](images/bimlflex-app-accelerator-actions-col-modeloverridename.png "Change Model Override Name")
-
-The image above shows "PostalCode" overridden with "ZipCode".
-
-#### ModelGrouping
-
-This attribute is used to group columns and split them into separate Satellites and to group columns defining a Unit of Work for Links.
-
-#### ModelReference
-
-This attribute is used to define the Link and Link Satellite concatenated table name. It is required when multiple table references exist on the source table.
-
-An example would be the "SalesOrderLine" source table where the "ShippingAddress" and "BillingAddress" both reference the "Address" table.
-
-Two relationships will be created with the ModelReference forming part of the name. This attribute is auto-generated when importing metadata and can be overridden.
-
-## Final Review and Preview Publish
-
-Once the metadata has been modeled and the preview represents the target model a user will then publish the metadata to the metadata repository.
-
-### Publishing the Final Preview
-
-By clicking the Publish DV Import the new data will be committed to the BimlFlex Database and made available as a persisted Schema Diagram, in the application screens for edit and in BimlFlex Excel for bulk edit.
-
-<!--
-![Publish Metadata Changes](images/bimlflex-app-accelerator-publish.png "Publish Metadata Changes")
--->
-
-![Publish Metadata Changes](images/bfx-publish-accelerator.png "Publish Metadata Changes")
-
-The target Connection and Project will be automatically selected based on your configuration and you may change the Project if you have multiple eligible target projects.
-
-Once the Metadata is published it is possible to update the metadata in various ways:
-
-1. BimlFlex App Object and Column Screens - for quick review and individual updates
-1. Schema Diagram - for viewing the persisted RDV schema
-1. Accelerator - for further modeling
-1. Column Mapping - to verify source to target column mappings
-1. BimlFlex Excel - for bulk editing actions
-
-Once reviewed it is possible to generate all Tables and database structures as well as SSIS packages based on the Accelerated metadata from within BimlStudio.
+Publishing the Accelerator Model will create the Data Vault Objects and instantiate the source to target mappings for each defined source object. The model must be published before the entities can be built and used in the Data Warehouse.

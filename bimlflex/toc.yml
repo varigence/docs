@@ -29,8 +29,8 @@
   - name: BimlFlex for SQL Server Integration Services
     href: technology-ssis/toc.yml
 
-  - name: BimlFlex on SQL Server
-    href: technology-sql-server/toc.yml
+#  - name: BimlFlex on SQL Server
+#    href: technology-sql-server/toc.yml
   
   - name: BimlFlex on Synapse
     href: technology-synapse/toc.yml
@@ -38,8 +38,8 @@
   - name: BimlFlex on Snowflake
     href: technology-snowflake/toc.yml
 
-  - name: BimlFlex on Delta Lake
-    href: technology-delta-lake/toc.yml
+#  - name: BimlFlex on Delta Lake
+#    href: technology-delta-lake/toc.yml
 
   - name: Other BimlFlex Connectivity
     href: scenarios/toc.yml
