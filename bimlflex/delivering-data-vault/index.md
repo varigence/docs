@@ -9,7 +9,7 @@ varigenceArticleType: Conceptual
 
 Data Vault provides an easy-to-explain and flexible way to tackle complex issues for bringing data together, and BimlFlex is optimized to deliver data solutions that have adopted this approach.
 
-The Data Vault design and development can be done quickly and efficiently, using the BimlFlex Data Vault Accelerator: [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator).
+The Data Vault design and development can be done quickly and efficiently, using the BimlFlex Data Vault Accelerator: [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator).
 
 This guide assumes the BimlFlex product has been installed, configured and that the sample source metadata is ready to be modeled.
 
@@ -17,7 +17,7 @@ This guide assumes the BimlFlex product has been installed, configured and that 
 > More information on getting started:
 >
 > * [BimlFlex Getting Started Intro Videos](xref:bimlflex-getting-started-intro-videos)
-> * [BimlFlex Setup Overview](xref:bimlflex-setup-overview)
+> * [BimlFlex Setup Overview](xref:bimlflex-setup-overview)
 
 ## Data Vault Essentials
 
@@ -39,6 +39,13 @@ BimlFlex provides various ways to implement data solutions that utilize concepts
 * [Driving Keys in BimlFlex](xref:bimlflex-data-vault-driving-keys)
 * [BimlFlex solution templates for Data Vault](xref:bimlflex-data-vault-index)
 * [Zero records](xref:bimlflex-data-vault-concept-zero-records)
+
+## Delivering Data
+
+BimlFlex allows the creation of a Dimensional Model (Data Mart) from metadata. This can be based on existing objects, such as Satellites, Point-In-Time or Bridge objects, or views added as a separation-of-concern layer on top of the 'Raw' and 'Business' Data Vault constructs.
+
+* [Business Data Vault](xref:bimlflex-data-vault-business-data-vault)
+* [Facts and Dimensions on Data vault](xref:bimlflex-data-vault-dimensional-model)
 
 ## Recommendations for implementing Data Vault on Microsoft Azure Synapse Analytics
 
