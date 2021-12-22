@@ -7,20 +7,9 @@ varigenceArticleType: Reference
 ---
 # Data Vault Accelerator
 
-## On Data Vault Modeling
+This guide provides information on using the BimlFlex Data Vault **Accelerator**, and assumes a sound understanding of the Data Vault modeling approach.
 
-This guide provides information on using the BimlFlex Data Vault Accelerator and assumes a sound understanding of the Data Vault modeling approach.
-
-## BimlFlex - Data Vault Accelerator
-
-<!-- This session covers the various Data Vault modeling and configuration options available in BimlFlex. -->
-
-<!-- TODO: Update video with the 21.1 UI once available -->
-![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=<placeholder>?rel=0&autoplay=0)
-
-## Introduction to the Accelerator
-
-The Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of source metadata. It is configurable and provides a live preview of the target Data Vault while modeling. The accelerator can be rerun as many times as necessary for incremental modeling and rapid generation and regeneration of Data Vault artifacts.
+The Accelerator provides a quick-start opportunity with a best effort, technical modeling of Data Vault constructs out of source metadata. It is configurable and provides a live preview of the target Data Vault while modeling. The Accelerator can be rerun as many times as necessary for incremental modeling and rapid generation and regeneration of Data Vault artifacts.
 
 It is important to remember that the Data Vault modeling approach is based around **Core Business Concepts** (CBC) that are built upon **Integration Keys** or **Enterprise-Wide Business Keys** (EWBK) to allow for inter-system integrations. These Integration Keys are normally added to the source objects as part of the Data Vault modeling process.
 
@@ -28,9 +17,13 @@ The Accelerator derives the initial model information from source metadata. Base
 
 The Accelerator makes it easy to get started and iterate through variations so that the analysts and subject matter experts can validate and tune the model to best match business processes using the iterative approach and the graphical representation of the model in the Accelerator.
 
+For a quick introduction, please watch the following video:
+
+![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=<placeholder>?rel=0&autoplay=0)
+
 ## Starting Point
 
-The BimlFlex Data Vault Accelerator is creating the Data Vault model based on metadata existing in the App. The initial metadata is generally imported from a source system, however the BimlFlex accelerator also allows direct acceleration from an object (such as an imported view) through the "Staged Query" approach.
+The BimlFlex Data Vault Accelerator is creating the Data Vault model based on metadata existing in the App. The initial metadata is generally imported from a source system, however the BimlFlex accelerator also allows direct acceleration from an object (such as an imported view) through the **Staged Query** approach.
 
 **Source metadata decoration**
 
@@ -236,19 +229,13 @@ When clicking the object header for a Link the following actions might be availa
 
 **Split Link**
 
-When two or more Links have been joined, it is possible to revert that action and split the Links into individual relationships.
+When two or more Links have been joined, it is possible to revert that action and 'split' the Links into individual relationships.
 
 ### Context Action for Satellite Columns
 
-## Drag Actions
+## Drag and Drop Actions
 
-There are modeling actions available on some objects, allowing a modeler to drop an object on top of another to introduce a model change.
-
-### Drag Action for Link Objects
-
-**Join links to create Unit of Work**
-
-When dropping a Link object on top of another Link object created from the same source table, it is possible to join them together into a single Link, or Unit of Work. When joining the objects, the new Link name is specified in the dialog.
+When dropping a Link object on top of another Link object that is created from the same source object, it is possible to join them together into a single Link, or Unit of Work. When joining the objects, the new Link name is specified in the dialog.
 
 ## Adjusting Model behavior
 
@@ -260,7 +247,7 @@ There are overrides for Objects as well as Columns
 
 ### Object Overrides
 
-Double-clicking on a Data Vault Object in the preview opens a details pane that shows details about the target as well as about any source object mapping to the target. 
+Double-clicking on a Data Vault Object in the preview opens a details pane that shows details about the target as well as about any source object mapping to the target.
 
 It is possible to manage details about the target object, such as the related Business Entity.
 
@@ -294,6 +281,6 @@ The Business Grouping is used to group related Objects together for Acceleration
 
 Saving the Accelerator Model will persist the layout and current state to the repository.
 
-## Publish the Model
+## Publishing the Model
 
 Publishing the Accelerator Model will create the Data Vault Objects and instantiate the source to target mappings for each defined source object. The model must be published before the entities can be built and used in the Data Warehouse.
