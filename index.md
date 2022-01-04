@@ -1,12 +1,10 @@
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 
 # Varigence Support Documentation
 
 <p>&nbsp;</p>
 
-<ci-search style="justify-content:left;"></ci-search>
+<ci-search style="justify-content:left;margin-top:0px;"></ci-search>
 
 <p>&nbsp;</p>
 
