@@ -112,8 +112,7 @@ If additional standard **Columns** are required for the Hub, then these are reco
 
 BimlFlex makes use of a concatenated key to simplify implementation and allows for single key integration and is required when choosing a Data Vault implementation without using Hash Keys.
 
-The **Setting** [*USE HASH KEYS*](xref:bimlflex-app-reference-documentation-settings-index) can be used to toggle between using a hashed or natural **Integration Key**.
-  Integrate without a `HASH` which is very efficient for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
+The [*Use Hash Keys*](xref:bimlflex-app-reference-documentation-settings-index) setting can be used to toggle between using a hashed or natural **Integration Key**. Integrate without a `Hash` which is very efficient for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
 
 The Hub Integration key needs to accommodate data from existing sources as well as being able to accommodate changes in the existing sources and new sources added later.
 
