@@ -8,6 +8,12 @@ varigenceArticleType: Conceptual
 
 ## An overview of Data Vault methodology
 
+BimlFlex fully supports Data Vault methodology end-to-end. Data Vault methodology, however, covers a broad variety of topics concepts and ideas - some of which can be interpreted or implemented in different ways.
+
+With BimlFlex, it is possible to deliver a Data Vault solution conform many of these interpretations. To get the best outcome, these concepts need to be fully understood so that the right settings and conventions can be applied for your Data Vault. This introduction section provides a first high level overview of Data Vault methodology.
+
+## What is Data Vault?
+
 The Data Vault is defined as a **detail oriented**, **historical tracking** and **uniquely linked** set of **normalized tables** that support one or more functional areas of business. It is a hybrid data modeling approach encompassing the best of breed between 3rd normal form (3NF) and star schema (Dimensional), both of which are traditional techniques to design Data Warehouse platforms.
 
 The concept is officially titled as the 'Common Foundational Integration Modeling Architecture', but is more widely known under the name Data Vault.
@@ -19,7 +25,7 @@ The keywords 'detail oriented', 'historical tracking','uniquely linked' and 'nor
 * Uniquely linked refers to the modeling of relationships as they (logically) are between business concepts
 * Normalized aims at the separation between core business concepts and keys (Hubs) and contextual data (Satellites)
 
-These are very similar to the well-known Data Warehouse definitions of 'subject-oriented', 'integrated', 'time-variant' and 'nonvolatile' as defined by Bill Inmon. Data Vault is a Data Warehouse approach, and the technique fully adheres to this more generic definition.
+These are very similar to the well-known Data Warehouse definitions of 'subject-oriented', 'integrated', 'time-variant' and 'non-volatile' as defined by Bill Inmon. Data Vault is a Data Warehouse approach, and the technique fully adheres to this more generic definition.
 
 Data Vault was first published in 2002 by Dan Linstedt in The Data Warehouse Newsletter (TDAN) with of five articles covering
 the data modeling fundamentals. These articles can be found [here](http://tdan.com/data-vault-series-1-data-vault-overview/5054).

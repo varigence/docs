@@ -16,6 +16,8 @@
   href: data-vault-concept-reference-data.md
 - name: Integration Keys
   href: data-vault-concept-integration-keys.md
+- name: Raw Data Vault
+  href: data-vault-raw.md 
 - name: Business Data Vault
   href: data-vault-business-data-vault.md  
 - name: Dimensional Model Delivery

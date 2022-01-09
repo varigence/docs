@@ -7,13 +7,13 @@ varigenceArticleType: Conceptual
 ---
 # Links
 
-A Link in Data Vault is the representation of a `Natural Business Relationship`. 
+A Link in Data Vault is the representation of a **Natural Business Relationship**.
 
-These are the relationships between [Core Business Concepts](xref:bimlflex-data-vault-concept-hub). Similar to a Core Business Concept, they can also be described using [Context](xref:bimlflex-data-vault-concept-satellite) entities - in this case describing the relationship.
+**Natural Business Relationships** are the relationships between [**Core Business Concepts**](xref:bimlflex-data-vault-concept-hub). Similar to a Core Business Concept, they can be described using [**Context**](xref:bimlflex-data-vault-concept-satellite) entities - in this case describing the relationship.
 
-Links maintain relationships between two or more Hubs. The Link is also a distinct set of all occurrences of the combination of hubs ever seen. These relationships have their effectiveness maintained through (Link) Satellites or derived from related Hub Satellites.
+Links maintain relationships between two or more Hubs. The Link contains a distinct set of all occurrences of the combination of Hubs keys that were ever seen. These relationships have their effectiveness maintained through (Link) Satellites or derived from related Hub Satellites.
 
-Some Links need to emulate the Foreign Key constraints in their source, this is managed by defining **Driving Keys** for the Link Satellite.
+Some Links need to emulate the Foreign Key constraints in their source, this is managed by defining [**Driving Keys**](xref:bimlflex-data-vault-driving-keys) for the Link Satellite.
 
 The Link forms the base for the **Unit of Work**, UOW. The UOW defines the required granularity to properly identify the relationship; the UOW forms the grain of the relationship.
 
@@ -63,18 +63,18 @@ Data Vault Links:
 
 ## Hierarchical Link
 
-* A `Link` that is used to specify a recursive or hierarchy relationship
+* A Link that is used to specify a recursive or hierarchy relationship
 * Specifying a *MODEL OBJECT TYPE* of `Hierarchy Link` (HAL) on the source object is provided for, however, the result is a Link as there is no functional or structural difference.
 
 ## Same-As Link
 
-* A `Link` is used to specify a relationship between similar or the same Hub members.
+* A Link is used to specify a relationship between similar or the same Hub members.
 * Specifying a *MODEL OBJECT TYPE* of `Same-As Link` (SAL) on the source object is provided for, however, the result is a Link as there is no functional or structural difference.
 * Additional matching attributes that describe the relationship like similarity and matching confidence should be stored in an attached Link Satellite.
 
 ## Non-Historized or Transaction Links
 
-* A `Link` containing immutable data that is never updated or changed.
+* A Link containing immutable data that is never updated or changed.
   Along with the key columns referencing Hubs, it can include additional association or degenerate keys.
 * It is recommended not to have Effectivity Link Satellites for this type of Link as they do not change over time.
 
