@@ -35,7 +35,7 @@ Enabling delete detection will generate dedicated processes that can run separat
 
 ### Enabling Delete Detection
 
-Delete Detection can be implemented in two ways:
+At a high level, Delete Detection can be implemented in two ways:
 
 * Enabling the **Enable Delete Detection** (global), and *exclude* **Projects** and / or **Objects** using the **Overrides**. Or alternatively,
 * Disabling the **Enable Delete Detection** setting and *include* the **Projects** and / or **Objects** that should have delete detection applied
@@ -44,7 +44,7 @@ Delete Detection can be implemented in two ways:
 
 Enabling delete detection will create new Staging Area tables. By default, these will be named as `<RecordSourceAsSchema>.<TableName>_DEL`.
 
-The name used is controlled by the following settings. These settings are part of the [**Staging Naming**](xref:xref:bimlflex-app-reference-documentation-settings-index#staging-naming) settings group.
+The name used is controlled by the following settings. These settings are part of the [**Staging Naming**](xref:bimlflex-app-reference-documentation-settings-index#staging-naming) settings group.
 
 * The [**Delete Object Name Pattern**](xref:bimlflex-app-reference-documentation-setting-DeleteObjectNamePattern) setting. The default value: `@@this_DEL`. This will concatenates the **Object** name, using the `@@this` shorthand code with the `_DEL` suffix
 * The [**Delete Schema Name Pattern**](xref:bimlflex-app-reference-documentation-setting-DeleteSchemaNamePattern). The default value is `@@rs`. The `@@rs` code is the Record Source as defined in the **Connection** to which the object belongs
