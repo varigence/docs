@@ -31,6 +31,8 @@ It is possible to override the global default for specific **Projects** or **Obj
 
 Enabling delete detection will generate dedicated processes that can run separate from any of the regular data loading processes. This allows an end to end processing pipeline for deletes.
 
+The delete detection processes will load all defined Source- and Integration Keys from the source data set into a deleted table that corresponds to the object that the delete detection is applied for. This table (for ADF) or cache (for SSIS) will be used to compare the incoming source data with. If a key is missing from the source compared to what is in the delete object, it is identified as a *deleted key*.
+
 ## Implementing Delete Detection
 
 ### Enabling Delete Detection
@@ -55,7 +57,11 @@ Detailed delete specifications can be defined [**Row Change Type**](xrefe:bimlfl
 
 This configuration can be customized so that the delete information can be derived as needed. For example, it is possible to reuse a source delete flag for data sets that provide this status information. In other cases, the way the delete record is recorded can be defined.
 
-For example, the default values can be set (default `I`) as well as the expressions used. This works the same way as any other [**Configuration**](xref:bimlflex-configurations) in BimlFlex.
+The Row Change Type works the same way as any other [**Configuration**](xref:bimlflex-configurations) in BimlFlex, and to an extent this is configurable in BimlFlex. The defaults are:
+
+* `I` for a newly detected key / record. This is the default value for the Row Change Type, and can be configured
+* `U` for a detected update related to an existing key / record
+* `D` for a detected delete
 
 By default, the **Row Change Type** is not applied to any specific area. When global settings to enable delete detection are used, the configuration can be defined to apply to certain areas of the solution.
 
