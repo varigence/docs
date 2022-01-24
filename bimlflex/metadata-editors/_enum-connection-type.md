@@ -4,7 +4,7 @@
 | --------------------- | ------------------------------------------------------------- |
 | OLEDB                 | An OleDb connection is used to connect to the data source.    |
 | ADONET                | An Ado .NET connection is used to connect to the data source. |
-| FILE                  | An connection to a file.                                      |
+| FILE                  | A connection to a file.                                      |
 | ODBC                  | An ODBC connection is used to connect to the data source.     |
 | TERADATA              | A connection to a Teradata data source.                       |
 | ORACLE                | A connection to a Teradata data source.                       |

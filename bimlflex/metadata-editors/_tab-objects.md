@@ -2,6 +2,8 @@
 
 <img
     src="images/bimlflex-app-tab-objects-actions.png"
+    class="border-image"
+    style="border:1px solid #CCC;"
     title="Objects Tab - Action Buttons"
 />
 
@@ -9,8 +11,9 @@
 | --------------------------------------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div>            | <span class="nowrap-col m-5">Add</span>     | **Add** will create a new **Object** associated with current entity. Clicking **Add** will open an [Add Object Dialog](#add-object-dialog-box).                                                                                                                                                                                                                         |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Object** has changes staged and there are no major validation issues with the current list of **Object** properties.                                                                                                                                              |
-| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | <span class="nowrap-col m-5">Archive</span> | **Archive** will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the BimlFlex Database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will open an [Archive Objects Dialog](#archive-object-dialog-box). |
-| <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div>        | <span class="nowrap-col m-5">Refresh</span> | **Refresh** will trigger a refresh of the metadata for the selected list of **Objects**.                                                                                                                                                                                                                                                                                |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form.|
+|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Object Dialog](#archive-object-dialog-box).|
+|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Object Dialog](#edit-object-dialog-box) to edit the currently selected **Object**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
 
 ### Additional Dialogs
 
@@ -21,11 +24,11 @@
 ### Objects Tab - Views
 
 The **Objects Tab** provides quick and easy access to all **Objects** associated with the selected entity.
-While the items in the list will not change, the views provide a quick concise view of various groupings of attributes.
+While the items in the list will not change, the views provide a quick and concise view of various groupings of attributes.
 General purpose and overview of each view will be outlined below.
 
 > [!NOTE]
-> See the [Objects Documentation](objects.md) for further details on creating or editing and **Object** along with details on individual property values.
+> See the [Objects Documentation](objects.md) for further details on creating or editing an **Object** along with details on individual property values.
 
 #### View: Overview
 
@@ -36,6 +39,8 @@ Various [Navigational Transitions](#objects-tab-overview-navigational-transition
 
 <img
     src="images/bimlflex-app-tab-objects-view-overview.png"
+    class="border-image"
+    style="border:1px solid #CCC;"
     title="Objects Tab - Overview View"
 />
 
@@ -43,8 +48,7 @@ Various [Navigational Transitions](#objects-tab-overview-navigational-transition
 
 | Item             | Action                                                               | Entity Documentation                        |
 | ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
-| Project Value    | Navigate to **Project Editor**, selecting clicked **Project**       | [Projects Documentation](projects.md)       |
-| Connection Value | Navigate to **Connection Editor**, selecting clicked **Connection** | [Connections Documentation](connections.md) |
+| Project Value   | Navigate to **Project Editor** by clicking <img class="icon-inline" src="images/svg-icons/navigate.svg" style="width: 18px"/>       | [Projects Documentation](projects.md)       |
 | Object Value     | Navigate to **Object Editor**, selecting clicked **Object**         | [Objects Documentation](objects.md)         |
 
 > [!NOTE]
@@ -59,6 +63,8 @@ This view is intended as an easy way to reference and maintain previously entere
 
 <img
     src="images/bimlflex-app-tab-objects-view-model-overrides.png"
+    class="border-image"
+    style="border:1px solid #CCC;"
     title="Objects Tab - Model Overrides View"
 />
 
@@ -74,20 +80,11 @@ When these cases are encounter they can be seen and managed from this view.
 
 <img
     src="images/bimlflex-app-tab-objects-view-query-overrides.png"
+    class="border-image"
+    style="border:1px solid #CCC;"
     title="Objects Tab - Query Overrides View"
 />
 
 > [!IMPORTANT]
 > Due to the BimlFlex App not requiring a connection to the raw source systems (this is done during ELT/ELT Orchestration and Integration), auto-complete and Intellisense are not provided.
-This is designed for developers/architects who have a strong understanding of SQL and knowledge of the Source Systems that are designing from.
-
-#### View: Dependencies
-
-The **Dependencies** view allows for management of an **Object's** dependencies or inheritance.
-Dependencies are provided to instruct BimlFlex as to what **Objects** are required to be processed or managed before another.
-Inheritance is a provided feature that allows for controlled reuse of previously entered metadata.
-
-<img
-    src="images/bimlflex-app-tab-objects-view-dependencies.png"
-    title="Objects Tab - Dependencies View"
-/>
+This is designed for developers/architects who have a strong understanding of SQL and knowledge of the Source Systems that they are designing from.

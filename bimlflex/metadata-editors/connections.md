@@ -7,32 +7,35 @@ varigenceArticleType: Reference
 ---
 # Connection Editor
 
-**Connections** provide the information required to connect to data sources. It also acts as containers for objects and allows setting overrides. Additionally, it has metadata to identify the integration stage along with package execution settings.
+BimlFlex **Connections** provide the information required to connect to data sources. It also acts as containers for objects and allows setting overrides. Additionally, it has metadata to identify the integration stage along with package execution settings.
 
 ## Editor Overview
 
 The following sections describe the UI elements of the **Connection Editor** and how they are used to author and manage BimlFlex **Connections**.
 
-![BimlFlex - Connection Editor](images/bfx-connections-editor.png "BimlFlex - Connection Editor")
+<img
+    src="images/bimlflex-app-editor-connections.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
+    title="Connections Editor"
+/>
 
 ### Cloud Based Linked Services
 
 **Connections** can be enabled to work with cloud based linked services. For information on linked service connections and setup see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
 
-## Details Tab
+## Connection Tab
 
-The **Details Tab** focuses on general **Connection** information and configuration.  This tab is used to define and create the **Connection** itself.
+The **Connection Tab** focuses on general **Connection** information and configuration.  This tab is used to define and create the **Connection** itself.
 
-### Details Tab - Action Buttons
+### Connection Tab - Action Buttons
 
-![BimlFlex Editor - Action Buttons](images/bfx-connections-action-buttons.png "BimlFlex Editor - Action Buttons")
-
-<!--
 <img
     src="images/bimlflex-app-editor-connections-actions.png"
-    title="Connection Editor Actions"
+    class="border-image"
+    style="border: 1px solid #CCC;"
+    title="Connections Editor Actions"
 />
--->
 
 | Icon | Action | Description |
 |--- |--- |--- |
@@ -53,11 +56,13 @@ The **Details Tab** focuses on general **Connection** information and configurat
 
 [!include[Duplicate Connection Dialog Box](_dialog-duplicate-connection.md)]
 
-### Details Tab - Fields
+### Connection Tab - Fields
 
 <img
     src="images/bimlflex-app-editor-connections-fields.png"
-    title="Object Editor Fields"
+    class="border-image"
+    style="border: 1px solid #CCC;"
+    title="Objects Editor Fields"
 />
 
 | Field | Description |
@@ -97,8 +102,6 @@ The **Details Tab** focuses on general **Connection** information and configurat
 
 [!include[System Types](_enum-system-type.md)]
 
-## Tab Details
-
 ## Objects Tab
 
 The **Objects Tab** provides quick access to all **Objects** included in the **Connection**.
@@ -114,5 +117,8 @@ The **Attributes Tab** provides a view of any **Configurations** or **Settings**
 ## Parameters Tab
 
 The **Parameters Tab** provides a view of any **Parameters** overrides that are associated with the selected **Connection**.  
+
+>[!NOTE]
+> This is exclusive to the **Connection** level.  Additional overrides may be present on any grains higher or lower than the **Connection**.
 
 [!include[Parameters Tab](_tab-parameters.md)]
