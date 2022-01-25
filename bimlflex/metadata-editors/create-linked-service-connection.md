@@ -14,19 +14,34 @@ varigenceArticleType: Reference
 
 ## Enable Connection for Cloud Services
 
-In the **Connection Editor**, click  Add in the top left of the screen or select an existing connection to edit.
+In the **Connection Editor**, click  the `+` to Add New Connection in the top left of the screen or select an existing connection to edit.
 
-![BimlFlex Connection Editor Menu](images/bfx-connections-module-list.png "BimlFlex Connection Editor Menu")
+<img
+    src="images/bimlflex-app-connections-module-list.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
+    title="BimlFlex Connection Editor Menu"
+/>
 
-In the **Details tab** of the Connection Editor, select the *Integration Stage*, *Connection Type*, and *System Type* for your connection.
-If the configuration provided is compatible with a linked service then a *Cloud* setting will appear in the action bar.
+In the **Connection Tab**, provide the *Integration Stage*, *Connection Type*, and *System Type* for the connection.
+If the configuration provided is compatible with a linked service, then a *Cloud* setting will appear in the action bar.
 
-![BimlFlex Connection Details Tab](images/bfx-connections-details-tab.png "BimlFlex Connection Details Tab")
+<img
+    src="images/bimlflex-app-connections-connection-tab.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
+    title="BimlFlex Connection Tab"
+/>
 
 After toggling the *Cloud* setting, a tab for Linked Services will appear at the bottom of the form and any available linked services will appear in the *Linked Service Types dropdown*.
 Select a *Linked Service Type* to configure it.
 
-![BimlFlex Linked Services Tab](images/bfx-connections-linked-service-tab.png "BimlFlex Linked Services Tab")
+<img
+    src="images/bimlflex-app-connections-connection-tab-linked-service.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
+    title="BimlFlex Linked Services Tab"
+/>
 
 ## Configuring the Linked Service Connection
 
@@ -41,13 +56,13 @@ This form will maintain the values that are entered if the Linked Service Type i
 ### ADF Linked Service
 
 There are two main components, the base Linked Service details and then the Connection details.
-These details are remain unchanged regardless of how the connection details are configured.
+These details will remain unchanged regardless of how the connection details are configured.
 
 #### [Description](#tab/ls-description)
 
 | Field                              | Description                                                         |
 | ---------------------------------- | ------------------------------------------------------------------- |
-| Linked Service Type                | The type ofLinked Service being used                                |
+| Linked Service Type                | The type of Linked Service being used                                |
 | Connect Via Integration Runtime`*` | (If required) The name of the Integration Runtime to use to connect |
 
 > [!TIP]
