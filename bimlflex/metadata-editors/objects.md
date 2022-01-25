@@ -55,9 +55,9 @@ The **Details Tab** focuses on general **Object** information and configuration.
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will save the current set of staged changes.  The **Save** button is will only enable if the **Object** has changes staged and there are no major validation issues with the current **Object** properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Object Dialog](#archive-object-dialog-box). |
-| <div class="icon-col m-5"><img src="images/svg-icons/clone-objects.svg" /></div> | Clone | This will bring up [Clone Table Dialog](#clone-table-dialog-box) that is used primarily in the creation and loading of a Data Mart. |
-| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Object**.  A [Duplicate Table Dialog](#duplicate-table-dialog-box) will appear asking for a *Target Table Name* and a new **Object** will be created using all of the selected **Object**'s current properties. |
+| <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Object Dialog](#archive-object-dialog). |
+| <div class="icon-col m-5"><img src="images/svg-icons/clone-objects.svg" /></div> | Clone | This will bring up [Clone Table Dialog](#clone-table-dialog) that is used primarily in the creation and loading of a Data Mart. |
+| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Object**.  A [Duplicate Table Dialog](#duplicate-table-dialog) will appear asking for a *Target Table Name* and a new **Object** will be created using all of the selected **Object**'s current properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Object**. |
 | <div class="icon-col m-5"><img src="images/svg-icons/accelerator.svg" /></div> | Accelerate | This will transition to the [Data Vault Accelerator](accelerator.md) and select the current active **Object**.  See the annotated link for details on use and function.|
 | <div class="icon-col m-5"><img src="images/svg-icons/schema-diagram.svg" /></div> | Diagram | This will transition to the [Schema Diagram](schema-diagram.md) and select the current active **Object**.  See the annotated link for details on use and function.|
@@ -69,11 +69,11 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 ### Additional Dialogs
 
-[!include[Archive Object Dialog Box](_dialog-archive-object-single.md)]
+[!include[Archive Object Dialog](_dialog-archive-object-single.md)]
 
-[!include[Clone Table Dialog Box](_dialog-clone-table.md)]
+[!include[Clone Table Dialog](_dialog-clone-table.md)]
 
-[!include[Duplicate Table Dialog Box](_dialog-duplicate-table.md)]
+[!include[Duplicate Table Dialog](_dialog-duplicate-table.md)]
 
 ### Details Tab - Standard Fields
 

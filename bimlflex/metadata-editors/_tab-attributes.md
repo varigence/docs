@@ -1,4 +1,4 @@
-### Attributes Tab - Action Buttons  
+### Attributes Tab - Action Buttons
 
 <img
     src="images/bimlflex-app-tab-attributes-actions.png"
@@ -9,11 +9,11 @@
 
 | Icon | Action | Description |
 | ---- | ------ | ----------- |
-| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div> | <span class="nowrap-col m-5">Add</span> | **Add** will create a new **Attribute** and assign it to the current entity.  When adding an attribute via this button *Attribute Type*, along with the respective linked fields, will be pre-filled on the created [Add Attribute Dialog](#add-attribute-dialog-box). |
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div> | <span class="nowrap-col m-5">Add</span> | **Add** will create a new **Attribute** and assign it to the current entity.  When adding an attribute via this button *Attribute Type*, along with the respective linked fields, will be pre-filled on the created [Add Attribute Dialog](#add-attribute-dialog). |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Attribute** has changes staged and there are no major validation issues with the current list of **Attribute** properties.                                                                                                                                              |
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form.|
-|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog-box).|
-|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Attribute Dialog](#edit-attribute-dialog-box) to edit the currently selected **Attribute**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
+|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog).|
+|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Attribute Dialog](#edit-attribute-dialog) to edit the currently selected **Attribute**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
 
 ### Additional Dialogs  
 

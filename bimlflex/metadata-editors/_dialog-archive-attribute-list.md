@@ -1,8 +1,8 @@
 #### Archive Attribute Dialog
 
-Confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the *Ok* button.
+Confirmation warning against the dangers of archiving.  You are required to confirm by both the check box and the *Ok* button.
 
-![Archive Multiple Attributes Dialog Box -mtb-20-image](images/bimlflex-app-dialog-archive-attribute-list.png "Archive Multiple Attributes Dialog Box")
+![Archive Multiple Attributes Dialog -mtb-20-image](images/bimlflex-app-dialog-archive-attribute-list.png "Archive Multiple Attributes Dialog")
 
 >[!WARNING]
 > Archiving is a permanent removal of the selected entity from it's associated table in the BimlFlex database.  The best practice is to first use the *Deleted* flag to soft delete if you need to remove an entity.  *Archive* should only be used in the case that both:

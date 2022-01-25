@@ -156,7 +156,7 @@ If required, a [**Configuration Override**](#overriding-configurations) can be a
 >
 > BimlFlex Docs: [Configurations](xref:bimlflex-configurations)
 >
-> BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
+> BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 >
 
 ## Overriding Configurations
@@ -180,7 +180,7 @@ If a field supports and override it will have clickable button with the followin
 
 ![Overriding Possible](images/bfx-configuration-override-support.png "Overriding Possible")
 
-Clicking this button will open a **Add Attribute Dialog Box** that is populated with the required *ATTRIBUTE* value.
+Clicking this button will open a **Add Attribute Dialog** that is populated with the required *ATTRIBUTE* value.
 
 ![Initial Add Attributes Dialog](images/bfx-configuration-add-attribute-start.png "Initial Add Attributes Dialog")
 

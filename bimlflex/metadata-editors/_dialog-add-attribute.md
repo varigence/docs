@@ -1,4 +1,4 @@
-#### Add Attribute Dialog Box
+#### Add Attribute Dialog
 
 Creates an **Attribute** and associates it with the current entity.  Once entry is finished ensure that the <img class="icon-inline" src="images/svg-icons/save.svg" /> **Save** button is clicked.
 
@@ -6,5 +6,5 @@ Creates an **Attribute** and associates it with the current entity.  Once entry 
     src="images/bimlflex-app-dialog-add-attribute.png"
     class="border-image"
     style="border:1px solid #CCC;"
-    title="Add Attribute Dialog Box"
+    title="Add Attribute Dialog"
 />

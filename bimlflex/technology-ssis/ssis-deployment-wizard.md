@@ -32,14 +32,14 @@ After launching the wizard, follow these steps.
     <img 
     src="images/locateprojectinwizard.png"
     style="border: 1px solid #CCC;"
-    title="Apply Data Type Mappings Dialog Box" />
+    title="Apply Data Type Mappings Dialog" />
 
 1. Enter the destination server name and the folder that will house the project in the Integration Services catalog. Simply browse and select your desired server and then **Browse** and select your desired SSIS Folder. This value should typically be the same as your SSIS Folder value in your BimlFlex settings.
 
     <img
     src="images/wizarddestination.png"
     style="border: 1px solid #CCC;"
-    title="Apply Data Type Mappings Dialog Box" />
+    title="Apply Data Type Mappings Dialog" />
 
     >[!IMPORTANT]
     > The user must ensure that the SSIS catalog exists on the destination server.
@@ -47,13 +47,13 @@ After launching the wizard, follow these steps.
     <img
     src="images/folderbrowse.png"
     style="border: 1px solid #CCC;"
-    title="Apply Data Type Mappings Dialog Box" />
+    title="Apply Data Type Mappings Dialog" />
 
 1. Review and Deploy. Ensure that everything has been set up correctly and then click Deploy.
 
     <img
     src="images/reviewanddeploy.png"
     style="border: 1px solid #CCC;"
-    title="Apply Data Type Mappings Dialog Box" />
+    title="Apply Data Type Mappings Dialog" />
 
     Observe that the project has successfully deployed. Once the project has been deployed, the user should deploy the next project in solution.

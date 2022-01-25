@@ -1,4 +1,4 @@
-#### Edit Attribute Dialog Box
+#### Edit Attribute Dialog
 
 Edit the selected **Attribute**.  Once entry is finished ensure that the <img class="icon-inline" src="images/svg-icons/save.svg" /> **Save** button is clicked.
 
@@ -6,5 +6,5 @@ Edit the selected **Attribute**.  Once entry is finished ensure that the <img cl
     src="images/bimlflex-app-dialog-edit-attribute.png"
     class="border-image"
     style="border:1px solid #CCC;"
-    title="Edit Attribute Dialog Box"
+    title="Edit Attribute Dialog"
 />

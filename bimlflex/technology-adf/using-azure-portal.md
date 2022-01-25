@@ -45,7 +45,7 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 <img 
     src="images/deploy-a-custom-template.png" 
     style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
+    title="Apply Data Type Mappings Dialog" 
 />
 
 1. Click **Build your own temple in the editor**
@@ -53,7 +53,7 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 <img 
     src="images/build-your-own-template.png" 
     style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
+    title="Apply Data Type Mappings Dialog" 
 />
 
 1. Click **Load File**
@@ -61,7 +61,7 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 <img 
     src="images/load-template.png" 
     style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
+    title="Apply Data Type Mappings Dialog" 
 />
 
 1. Navigate, within your output folder, to:
@@ -78,7 +78,7 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 <img 
     src="images/edit-parameters.png" 
     style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
+    title="Apply Data Type Mappings Dialog" 
 />
 
 1. Click **Load File**.
@@ -86,7 +86,7 @@ Once the Azure Data Factory (ADF) artifacts are generated the next step in the p
 <img 
     src="images/load-param-file.png" 
     style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
+    title="Apply Data Type Mappings Dialog" 
 />
 
     > [!NOTE]

@@ -1,11 +1,11 @@
-#### Duplicate Table Dialog Box
+#### Duplicate Table Dialog
 
 This will create a copy of the selected **Object** and properties along with a copy of all the **Columns**.
 
 > [!IMPORTANT]
 > **Attributes** and **Parameters** are not copied over.
 
-![Duplicate Table Dialog Box -mtb-20-image](images/bimlflex-app-dialog-duplicate-table.png "Duplicate Table Dialog Box")
+![Duplicate Table Dialog - mtb-20-image](images/bimlflex-app-dialog-duplicate-table.png "Duplicate Table Dialog")
 
 ##### Duplicate Table Options
 

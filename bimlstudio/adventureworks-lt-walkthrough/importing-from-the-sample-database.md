@@ -18,11 +18,11 @@ To import database assets, you first need to create a connection to the database
     ![Import Tables Ribbon Button](https://varigencecom.blob.core.windows.net/images-mistdocumentation/005_Step02.png)
 1. Select the connection to use for importing (AdventureWorksLT in this example). The connection state indicator will turn green to indicate a good connection.
 1. Also select the project database to import the schemas and tables into (AdventureWorksLTDatabase in this example).
-    ![Import Tables Connection Combo Box](https://varigencecom.blob.core.windows.net/images-mistdocumentation/005_Step03.png)
+    ![Import Tables Connection Combo](https://varigencecom.blob.core.windows.net/images-mistdocumentation/005_Step03.png)
 1. Select the schemas and tables that you would like to import. For this example, all tables (not views) for SalesLT schema should be selected.
 1. Click **Import** to begin the import.
 1. Once the import is complete, there will be 10 tables under the Tables folder in the logical view, as well as 1 schema under the Schema folder.
-    ![Import Tables Connection Combo Box](https://varigencecom.blob.core.windows.net/images-mistdocumentation/005_Step04.png)
+    ![Import Tables Connection Combo](https://varigencecom.blob.core.windows.net/images-mistdocumentation/005_Step04.png)
 1. When it completes, save the project to persist your changes.
 
 ## Import Tables using BimlScript

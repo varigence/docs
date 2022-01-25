@@ -41,8 +41,8 @@ The **Connection Tab** focuses on general **Connection** information and configu
 |--- |--- |--- |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg"/></div> | Save | This will save the currently set of staged changes.  The **Save** button is will only enable if the **Connection** has changes staged and there are no major validation issues with the current **Connection** properties.  `Ctrl+S` shortcut available. |
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Connection**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Connection Dialog](#archive-connection-dialog-box). |
-| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Connection**.  A [Duplicate Connection Dialog](#duplicate-connection-dialog-box) will appear asking for a *Connection Name* and a new **Connection** will be created using all of the selected **Connection**'s current properties. |
+|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Connection**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Connection Dialog](#archive-connection-dialog). |
+| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Connection**.  A [Duplicate Connection Dialog](#duplicate-connection-dialog) will appear asking for a *Connection Name* and a new **Connection** will be created using all of the selected **Connection**'s current properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/import-metadata.svg"/></div> | Import Metadata | Import Metadata from Source Database - [More info](../concepts/importing-metadata.md). |
 | <img src="images/bimlflex-app-action-switch.png" /> | Cloud | This is only required if using ADF.  When enabled allows the configuration of Linked Services and shows the Linked Service fields. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Connection** and all associated entities from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
@@ -52,9 +52,9 @@ The **Connection Tab** focuses on general **Connection** information and configu
 
 ### Additional Dialogs
 
-[!include[Archive Connection Dialog Box](_dialog-archive-connection-single.md)]
+[!include[Archive Connection Dialog](_dialog-archive-connection-single.md)]
 
-[!include[Duplicate Connection Dialog Box](_dialog-duplicate-connection.md)]
+[!include[Duplicate Connection Dialog](_dialog-duplicate-connection.md)]
 
 ### Connection Tab - Fields
 
@@ -110,7 +110,7 @@ The **Objects Tab** provides quick access to all **Objects** included in the **C
 
 ## Attributes Tab
 
-The **Attributes Tab** provides a view of any **Configurations** or **Settings** overrides that have been applied to the selected **Connection**.  
+The **Attributes Tab** provides a view of any **Configuration** or **Setting** overrides that have been applied to the selected **Connection**.  
 
 [!include[Attributes Tab](_tab-attributes.md)]
 

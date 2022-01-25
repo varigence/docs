@@ -9,17 +9,17 @@
 
 | Icon                                                                              | Action                                      | Description                                                                                                                                                                                                                                                                                                                                                             |
 | --------------------------------------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div>            | <span class="nowrap-col m-5">Add</span>     | **Add** will create a new **Object** associated with current entity. Clicking **Add** will open an [Add Object Dialog](#add-object-dialog-box).                                                                                                                                                                                                                         |
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div>            | <span class="nowrap-col m-5">Add</span>     | **Add** will create a new **Object** associated with current entity. Clicking **Add** will open an [Add Object Dialog](#add-object-dialog).                                                                                                                                                                                                                         |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Object** has changes staged and there are no major validation issues with the current list of **Object** properties.                                                                                                                                              |
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form.|
-|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Object Dialog](#archive-object-dialog-box).|
-|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Object Dialog](#edit-object-dialog-box) to edit the currently selected **Object**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
+|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Object Dialog](#archive-object-dialog).|
+|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an Edit Object Dialog to edit the currently selected **Object**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
 
 ### Additional Dialogs
 
-[!include[Add Object Dialog Box](_dialog-add-object.md)]
+[!include[Add Object Dialog](_dialog-add-object.md)]
 
-[!include[Archive Object Dialog Box](_dialog-archive-object-list.md)]
+[!include[Archive Object Dialog](_dialog-archive-object-list.md)]
 
 ### Objects Tab - Views
 
