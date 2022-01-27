@@ -1,4 +1,4 @@
-### Columns Tab - Action Buttons
+### Action Buttons
 
 <img
     src="images/bimlflex-app-tab-columns-actions.png"
@@ -21,17 +21,17 @@
 
 [!include[Generate Derived Integration Key Dialog](_dialog-generate-derived-integration-key.md)]  
 
-### Columns Tab - Views  
+### Columns Tab Views  
 
 All **Columns** assigned to the current entity show here.  New items can be entered entered via the <img class="icon-inline" src="images/svg-icons/add.svg" /> **Add** action button.  Existing items can be edited by double clicking the field needing adjustment.  All the views have the same links to the **Column**.  
 
-#### Columns Tab Navigational Transitions  
+#### Navigational Transitions  
 
 |Item|Action|Entity Documentation|
 |-|-|-|
-|Column Value|Navigate to **Column Editor**, selecting clicked **Column**|[Column Documentation](columns.md)
+|Column Value|Navigate to **Column Editor**, selecting clicked **Column**|[Column Documentation](xref:bimlflex-column-editor)
 
-#### View: Overview  
+#### Overview  
 
 The **Overview** is available to give quick access to the more physical properties of the **Columns** relating to the selected entity.  These are representations of the physical `Source System` and represent the raw definitions of the object in it's original form.  Quick access is also provided for the various keys used across the separate **Integration Layers** or **Integration Stages**.  
 
@@ -40,7 +40,7 @@ The **Overview** is available to give quick access to the more physical properti
     title="Columns - Overview View"
 />
 
-#### View: Settings  
+#### Settings  
 
 The **Settings** view allows for quick access to all the Boolean and flag properties associated with the **Columns**.  In addition to the keys the ability to flag database concepts (such as `IDENTITY` or `NULL`), persistence, whether or not the **Column** is `Derived`, and the ability to flag as `Excluded` or `Deleted`.  
 
@@ -49,7 +49,7 @@ The **Settings** view allows for quick access to all the Boolean and flag proper
     title="Columns - Settings View"
 />
 
-#### View: Expressions  
+#### Expressions  
 
 The **Expressions** view allows you to quickly view and manage all the expressions that may be used in the `CAST`, `CONVERT`, or general transformations that may be performed on any given **Column**.  All values in this view are used to determine the `ETL`/`ELT` logic and transformation dataflow.  
 
@@ -58,18 +58,18 @@ The **Expressions** view allows you to quickly view and manage all the expressio
     title="Columns - Expressions View"
 />
 
-#### View: Mappings  
+#### Mappings  
 
-The **Mappings** view shows the references and targets associated with the **Columns**.  References are the equivalent of a Foreign Key in a Relational Database, though the enforcement of an actual constraint is configurable.  References control how and where other tables relate to each other.  Targets are the the **Object** and **Column** that the entity will populate in the associated **Project's Target Connection**.  It is recommended that you use the [Data Vault Accelerator](accelerator.md) or the [Schema Diagram](schema-diagram.md) to populate these fields.  This view is intended as easy way to reference and maintain previously entered metadata.  
+The **Mappings** view shows the references and targets associated with the **Columns**.  References are the equivalent of a Foreign Key in a Relational Database, though the enforcement of an actual constraint is configurable.  References control how and where other tables relate to each other.  Targets are the the **Object** and **Column** that the entity will populate in the associated **Project's Target Connection**.  It is recommended that you use the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator) or the [Schema Diagram](schema-diagram.md) to populate these fields.  This view is intended as easy way to reference and maintain previously entered metadata.  
 
 <img
     src="images/bimlflex-app-tab-columns-views-mappings.png"
     title="Columns - Mappings View"
 />
 
-#### View: Overrides  
+#### Overrides  
 
-The **Overrides** view is available to allow for quick management of modeled metadata from the [Data Vault Accelerator](accelerator.md) or the [Schema Diagram](schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.  
+The **Overrides** view is available to allow for quick management of modeled metadata from the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator) or the [Schema Diagram](schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.  
 
 <img
     src="images/bimlflex-app-tab-columns-views-overrides.png"

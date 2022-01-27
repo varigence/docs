@@ -5,7 +5,4 @@ Confirmation warning against the dangers of archiving.  You are required to conf
 ![Archive Object Dialog -mtb-20-image](images/bimlflex-app-dialog-archive-object-single.png "Archive Object Dialog")
 
 >[!WARNING]
-> Archiving is a permanent removal of the selected entity from it's associated table in the BimlFlex database.  The best practice is to first use the *Deleted* flag to soft delete if you need to remove an entity.  *Archive* should only be used in the case that both:
->
-> 1. The only fix to the current issue requires the *Archive* of the selected entity
-> 2. The full implication of permanently removing the selected entity from the metadata system is understood.
+> Archiving is a permanent removal of the selected entity from its associated table in the BimlFlex Database. The best practice is to first use the *Deleted* flag (soft delete) as an indication that the connection may need to be removed.

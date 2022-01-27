@@ -9,6 +9,9 @@ varigenceArticleType: Reference
 
 The **Column** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.
 
+> [!IMPORTANT]
+> Detailed descriptions of all **Column** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Columns).
+
 ## Overview
 
 ![BimlFlex Column Editor](images/bfx-columns-editor.png "BimlFlex Column Editor")

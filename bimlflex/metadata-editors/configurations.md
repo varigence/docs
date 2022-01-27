@@ -13,6 +13,9 @@ Configurations can be used to support requirements for file locations, naming co
 
 The defaults for the configurations that are set as part of the BimlFlex installation are the Varigence recommended values. There is no need to change or configure unless there is a requirement to change specific behaviors. Align these settings with the organization's best practices and environmental requirements.
 
+> [!IMPORTANT]
+> Detailed descriptions of all **Configuration** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Configurations).
+
 ## Overview
 
 <img class="icon-inline" src="images/svg-icons/configurations.svg" /> **Configurations** can be found under Administration in the BimlFlex App menu.

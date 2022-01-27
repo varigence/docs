@@ -1,31 +1,6 @@
-### Attributes Tab - Action Buttons
+### Action Buttons
 
-<img
-    src="images/bimlflex-app-tab-attributes-actions.png"
-    class="border-image"
-    style="border:1px solid #CCC;"
-    title="Attributes Tab - Action Buttons"
-/>
-
-| Icon | Action | Description |
-| ---- | ------ | ----------- |
-| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div> | <span class="nowrap-col m-5">Add</span> | **Add** will create a new **Attribute** and assign it to the current entity.  When adding an attribute via this button, *Attribute Type* and the respective linked fields, will be pre-filled on the created [Add Attribute Dialog](#add-attribute-dialog). |
-| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Attribute** has changes staged and there are no major validation issues with the current list of **Attribute** properties.                                                                                                                                              |
-| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form.|
-|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog).|
-|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Attribute Dialog](#edit-attribute-dialog) to edit the currently selected **Attribute**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
-
-### Additional Dialogs  
-
-[!include[Add Attribute Dialog](_dialog-add-attribute.md)]  
-
-[!include[Edit Attribute Dialog](_dialog-edit-attribute.md)]  
-
-[!include[Archive Attribute Dialog](_dialog-archive-attribute-list.md)]
-
-### Attributes Tab - Table Descriptions  
-
-All **Attributes** assigned to the current entity show here.  New items can be entered via the *Add* action button.  Existing items can be edited by clicking the *Value* field to select the **Attribute** and using the *Edit* action button.  Various [Navigational Transitions](#attributes-tab-navigational-transitions) are available on this form and outlined below.  
+All **Attributes** assigned to the current entity show here.  New items can be entered via the *Add* action button.  Existing items can be edited by clicking the *Value* field to select the **Attribute** and using the *Edit* action button.  Various [navigational transitions](#navigational-transitions) are available on this form and outlined below.  
 
 <img
     src="images/bimlflex-app-tab-attributes-table.png"
@@ -34,10 +9,49 @@ All **Attributes** assigned to the current entity show here.  New items can be e
     title="Attributes Tab - Table Descriptions"
 />
 
-#### Attributes Tab Navigational Transitions
+The following options are available:
 
-| Item | Action | Entity Documentation |
-| ---- | ------ | -------------------- |
-| Object Value | Navigate to **Object Editor**, by clicking <img class="icon-inline" src="images/svg-icons/navigate.svg" style="width: 18px"/> | [Object Documentation](objects.md) |
-| Column Value | Navigate to **Column Editor**, selecting clicked **Column** | [Column Documentation](columns.md) |
-| Attribute Value | Navigate to **Attribute Editor**, selecting clicked **Attribute** | [Attribute Documentation](attributes.md) |
+| Icon | Action | Description |
+| ---- | ------ | ----------- |
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div> | <span class="nowrap-col m-5">Add</span> | **Add** will create a new **Attribute** and assign it to the current entity.  When adding an attribute via this button, *Attribute Type* and the respective linked fields, will be pre-filled on the created [Add Attribute Dialog](#add-attribute-dialog). |
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Attribute** has changes staged and there are no major validation issues with the current list of **Attribute** properties.                                                                                                                                              |
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form.|
+
+When checking a single **Attribute** in the overview two additional options will become visible. When selecting two or more attributes only the Archive option will be visible.
+
+| Icon| Action| Description|
+| ----| ----- | ---------- |
+|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog).|
+|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Attribute Dialog](#edit-attribute-dialog) to edit the currently selected **Attribute**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
+
+### Additional Dialogs  
+
+[!include[Add Attribute Dialog](_dialog-add-attribute.md)]  
+
+#### Edit Attribute Dialog
+
+Edit the selected **Attribute**.  Once entry is finished ensure that the <img class="icon-inline" src="images/svg-icons/save.svg" /> **Save** button is clicked.
+
+<img
+    src="images/bimlflex-app-dialog-edit-attribute.png"
+    class="border-image"
+    style="border:1px solid #CCC;"
+    title="Edit Attribute Dialog"
+/>
+
+#### Archive Attribute Dialog
+
+Confirmation warning against the dangers of archiving.  You are required to confirm by both the check box and the *Ok* button.
+
+![Archive Multiple Attributes Dialog -mtb-20-image](images/bimlflex-app-dialog-archive-attribute-list.png "Archive Multiple Attributes Dialog")
+
+>[!WARNING]
+> Archiving is a permanent removal of the selected entity from its associated table in the BimlFlex Database. The best practice is to first use the *Deleted* flag (soft delete) as an indication that the connection may need to be removed.
+
+### Navigational Transitions
+
+| Item | Action |
+| ---- | ------ |
+| Object Value | Navigate to the [**Object Editor**](xref:bimlflex-object-editor), by clicking <img class="icon-inline" src="images/svg-icons/navigate.svg" style="width: 18px"/> |
+| Column Value | Navigate to [**Column Editor**](xref:bimlflex-column-editor), selecting clicked **Column** |
+| Attribute Value | Navigate to [**Attribute Editor**](xref:bimlflex-attribute-editor), selecting clicked **Attribute** |

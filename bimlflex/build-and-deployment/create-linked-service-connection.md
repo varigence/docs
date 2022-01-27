@@ -5,7 +5,6 @@ summary: Documentation on enabling linked service connections, connections for c
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-
 # Configuring a Linked Service
 
 **Connections** can be enabled to be used as Linked Services in Azure Data Factory (ADF).

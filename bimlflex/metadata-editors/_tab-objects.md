@@ -1,41 +1,62 @@
-### Objects Tab - Action Buttons
+---
+uid: bimlflex-includes-object-tab-details
+title: Objects Tab details
+summary: Documentation regarding the Objects Tab, as used in the Connection and Project Editors
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
+---
+### Action Buttons
 
-<img
-    src="images/bimlflex-app-tab-objects-actions.png"
-    class="border-image"
-    style="border:1px solid #CCC;"
-    title="Objects Tab - Action Buttons"
-/>
+The following options are available:
 
-| Icon                                                                              | Action                                      | Description                                                                                                                                                                                                                                                                                                                                                             |
-| --------------------------------------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div>            | <span class="nowrap-col m-5">Add</span>     | **Add** will create a new **Object** associated with current entity. Clicking **Add** will open an [Add Object Dialog](#add-object-dialog).                                                                                                                                                                                                                         |
-| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Object** has changes staged and there are no major validation issues with the current list of **Object** properties.                                                                                                                                              |
-| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form.|
-|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Object Dialog](#archive-object-dialog).|
-|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an Edit Object Dialog to edit the currently selected **Object**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
+| Icon| Action| Description|
+| ----| ----- | ---------- |
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg" /></div>            | <span class="nowrap-col m-5">Add</span>     | *Add* will create a new **Object**. Clicking *Add* will open an [Add Object Dialog](#add-object-dialog).|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | *Save* will save the currently set of staged changes. The *Save button* is only enabled if any **Object** has changes staged and when there are no validation issues.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will *Discard* any unsaved changes and revert to last saved details.|
+
+When checking a single **Object** in the overview two additional options will become visible. When selecting two or more objects only the Archive option will be visible.
+
+| Icon| Action| Description|
+| ----| ----- | ---------- |
+|<div class="icon-col m-5" ><img src="images/svg-icons/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>| *Archive* will remove the **Object** from the active metadata repository, and move it to the metadata archive. Clicking **Archive** will create an [Archive Object Dialog](#archive-object-dialog).|
+|<div class="icon-col m-5" ><img src="images/svg-icons/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an Edit Object Dialog to edit the currently selected **Object**. After edits are complete, be sure to click the **Save** button to confirm the changes.|
 
 ### Additional Dialogs
 
-[!include[Add Object Dialog](_dialog-add-object.md)]
+#### Add Object Dialog
 
-[!include[Archive Object Dialog](_dialog-archive-object-list.md)]
+Creates a new **Object**. Once entry is finished ensure that the <img class="icon-inline" src="images/svg-icons/save.svg" /> *Save* button is clicked.
 
-### Objects Tab - Views
+<img
+    src="images/bimlflex-app-dialog-add-object.png"
+    class="border-image"
+    style="border: 1px solid #CCC;"
+    title="Add Object Dialog"
+/>
 
-The **Objects Tab** provides quick and easy access to all **Objects** associated with the selected entity.
-While the items in the list will not change, the views provide a quick and concise view of various groupings of attributes.
-General purpose and overview of each view will be outlined below.
+#### Archive Object Dialog
+
+Archiving means that metadata will be physically deleted. A confirmation box warning against the dangers of archiving.  You are required to confirm by both the check box and the *Ok* button.
+
+![Archive Multiple Objects Dialog -mtb-20-image](images/bimlflex-app-dialog-archive-object-list.png "Archive Multiple Objects Dialog")
+
+>[!WARNING]
+> Archiving is a permanent removal of the selected entity from its associated table in the BimlFlex Database. The best practice is to first use the *Deleted* flag (soft delete) as an indication that the connection may need to be removed.
+
+### Objects Tab Views
+
+The **Objects Tab Views** provide different ways to review the properties of **Objects** associated with the selected entity.
+ The general purpose and overview of each view will be outlined below.
 
 > [!NOTE]
-> See the [Objects Documentation](objects.md) for further details on creating or editing an **Object** along with details on individual property values.
+> See the [Objects Editor](xref:bimlflex-object-editor) for further details on creating or editing an **Object** along with details on individual property values.
 
-#### View: Overview
+#### Overview
 
-The **Overview** is available to give quick access to the more physical properties of the **Objects** relating to the selected entity.
-These are representations of the physical `Source System` and represent the raw definitions of the object in its original form.
-Additional properties are available for bulk management such as controlling exclusions, disabling persistence, or flagging an **Object** for deletion.
-Various [Navigational Transitions](#objects-tab-overview-navigational-transitions) are available on view form and outlined below.
+The **Overview** is available to give quick access to the more physical properties of the **Objects** relating to the selected entity. Additional properties are available for bulk management such as controlling exclusions, disabling persistence, or flagging one or more **Object(s)** for deletion.
+
+Various [navigational transitions](#navigational-transitions) are available on view form and outlined below.
 
 <img
     src="images/bimlflex-app-tab-objects-view-overview.png"
@@ -44,22 +65,20 @@ Various [Navigational Transitions](#objects-tab-overview-navigational-transition
     title="Objects Tab - Overview View"
 />
 
-#### Objects Tab (Overview) Navigational Transitions
+##### Navigational Transitions
 
-| Item             | Action                                                               | Entity Documentation                        |
-| ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
-| Project Value   | Navigate to **Project Editor** by clicking <img class="icon-inline" src="images/svg-icons/navigate.svg" style="width: 18px"/>       | [Projects Documentation](projects.md)       |
-| Object Value     | Navigate to **Object Editor**, selecting clicked **Object**         | [Objects Documentation](objects.md)         |
+| Item             | Action                                                               |
+| ---------------- | -------------------------------------------------------------------- |
+| Project Value   | Navigate to the [**Project Editor**](xref:bimlflex-project-editor) by clicking <img class="icon-inline" src="images/svg-icons/navigate.svg" style="width: 18px"/>       |
+| Object Value     | Navigate to the [Object Editor](xref:bimlflex-object-editor), selecting the clicked **Object**|
 
 > [!NOTE]
-> The **Object** navigational transition is the only one provided on the additional views.
-> As such, no further callouts will be made to this.
-> Functionality on the below forms however is consistent: click the **Object** name to navigate to the selected **Object** in the [Object Editor](objects.md).
+> The **Object** navigational transition is the only one provided on the additional views. As such, no further callouts will be made to this.
+> Functionality on the below forms however is consistent: click the **Object** name to navigate to the selected **Object** in the [Object Editor](xref:bimlflex-object-editor).
 
-#### View: Model Overrides
+#### Model Overrides
 
-The **Model Overrides** view allows for quick management of modeled metadata from the [Data Vault Accelerator](accelerator.md) or the [Schema Diagram](schema-diagram.md).
-This view is intended as an easy way to reference and maintain previously entered metadata.
+The **Model Overrides** view allows for quick management of metadata configured through the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator), [Business Modeling](xref:bimlflex-business-modeling) or the [Schema Diagram](xref:bimlflex-schema-diagram). This view is intended as an easy way to review, reference and maintain previously entered metadata.
 
 <img
     src="images/bimlflex-app-tab-objects-view-model-overrides.png"
@@ -69,14 +88,11 @@ This view is intended as an easy way to reference and maintain previously entere
 />
 
 > [!IMPORTANT]
-> Although it is possible for an experienced user to manage their high level metadata from this screen, it is recommended that you use the [Data Vault Accelerator](accelerator.md) until you are strongly confident in your abilities to manually model metadata.
-> The [Data Vault Accelerator](accelerator.md) is specifically designed to simplify and improve the experience of modeling metadata via a graphical designer as opposed to the table entry that this view provides.
+> Although it is possible to manage high level metadata from this screen, it is recommended to you use the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator) for implementing changes in the design. The [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator) is specifically designed to simplify and improve the experience of modeling metadata via a graphical designer as opposed to the table entry that this view provides.
 
-#### View: Query Overrides
+#### Query Overrides
 
-The **Query Overrides** view exposes any SQL overrides that may be required in the creation and maintenance of the **Object**.
-By default the SQL required to perform most ETL/ELT task are dynamically generated and in many cases these overrides are not required.
-When these cases are encounter they can be seen and managed from this view.
+The **Query Overrides** view exposes any SQL overrides that may be defined for the **Object**. Any SQL that is commonly used to perform most ETL/ELT tasks are dynamically generated by the BimlFlex framework, and in many cases these providing SQLQ query overrides is not required. However, in cases that these are necessary this view can be used to review these across all objects.
 
 <img
     src="images/bimlflex-app-tab-objects-view-query-overrides.png"
@@ -86,5 +102,4 @@ When these cases are encounter they can be seen and managed from this view.
 />
 
 > [!IMPORTANT]
-> Due to the BimlFlex App not requiring a connection to the raw source systems (this is done during ELT/ELT Orchestration and Integration), auto-complete and Intellisense are not provided.
-This is designed for developers/architects who have a strong understanding of SQL and knowledge of the Source Systems that they are designing from.
+> This is designed for developers/architects who have a strong understanding of SQL. Intellisense and code auto completing and validation are not provided in the BimlFlex App because a direct connection to the data is not supported for security reasons.

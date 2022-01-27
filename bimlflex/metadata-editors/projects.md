@@ -15,6 +15,9 @@ The following sections describe the UI elements of the **Projects Editor** and h
 
 ![BimlFlex Project Editor](images/bfx-projects-editor-overview.png "BimlFlex Project Editor")
 
+> [!IMPORTANT]
+> Detailed descriptions of all **Project** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Projects).
+
 ## Details Tab
 
 The **Details Tab** focuses on general **Project** information and configuration.  This tab is used to define and create the **Project** itself.
