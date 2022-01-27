@@ -65,6 +65,18 @@ Various [navigational transitions](#navigational-transitions) are available on v
     title="Objects Tab - Overview View"
 />
 
+#### Objects Tab (Overview) Table Components
+
+| Component              | Type                 | Description                        |
+| ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
+| Project            | Value                | The current **Project** used to process the **Object**.  Must be an existing **Project**. See [Projects Documentation](xref:project).                |
+| Object             | Value                | The name of the **Objects** within the current Source **Connection**. See [Objects Documentation](xref:object.md).                                     |
+| Object Type        | Value                | The type of **Object** that is being extracted or created. See [Valid Object Types](xref:_enum-object-type).  |
+| Excluded           | Checkbox (Tri-state) | Setting to determine whether the selected entity will be built out with the rest of the solution when the BimlFlex solution is being compiled. The state of being "partially checked" is based on the selection of its child elements (below). |
+| Exclude Build      | Checkbox (Y/N)       | Toggle to determine whether the **Object** is excluded from the build when the BimlFlex solution is being compiled.          |
+| Not Persistent     | Checkbox (Y/N)       | Toggle to determine whether the **Object** is excluded from Persistent Staging Layer. When enables, the **Object** will not be stored in the PSA.   |
+| Deleted            | Checkbox (Y/N)       | Toggle to determine whether the **Object** is soft-deleted from the build when the BimlFlex solution is being compiled.         |
+
 ##### Navigational Transitions
 
 | Item             | Action                                                               |
