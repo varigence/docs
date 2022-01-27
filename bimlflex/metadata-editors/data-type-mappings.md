@@ -9,7 +9,7 @@ varigenceArticleType: Reference
 
 BimlFlex **Data Type Mappings** provide the ability to map Data Types from a source system to another more standardized data type.  This can be either a conversion of the Data Type entirely, such as a `int` to a `bigint`, the expansion of an existing Data Type, such as `nvarchar(13)` to `nvarchar(20)`, or the combination of both, such as `char(1)` to `nvarchar(10)`.  
 
-## Editor Overview
+## Overview
 
 The following sections describe the UI elements of the Data Type Mappings Editor and how they are used to author and manage BimlFlex **Data Type Mappings**.
 

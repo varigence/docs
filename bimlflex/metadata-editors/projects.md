@@ -9,7 +9,7 @@ varigenceArticleType: Reference
 
 BimlFlex **Projects** group and help to define an ETL/ELT workload. They specify the primary orchestration engine (SSIS or ADF) and define the  Connections for the Source to Target pipeline.
 
-## Editor Overview
+## Overview
 
 The following sections describe the UI elements of the **Projects Editor** and how they are used to author and manage BimlFlex **Projects**.
 

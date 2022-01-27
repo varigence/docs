@@ -8,7 +8,7 @@ varigenceArticleType: Walkthrough
 # Configuring an ADF Linked Service Connection for Azure Database for MySQL
 
 > [!NOTE]
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
 
 After selecting `Azure MySQL` from the Linked Service Type dropdown, the form required for creating an Azure Database for MySQL Linked Service will appear.
 

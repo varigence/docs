@@ -19,7 +19,7 @@ BimlFlex applies standard practices for using parameters but supports any custom
 > For information on how these use and configure **Parameters** in BimlFlex see associated link below.  
 > BimlFlex Documentation: [Load Parameters](xref:bimlflex-concepts-metadata-parameters)
 
-## Editor Overview  
+## Overview  
 
 The following sections describe the UI elements of the **Parameter Editor** and how they are used to author and manage BimlFlex **Parameters**.
 

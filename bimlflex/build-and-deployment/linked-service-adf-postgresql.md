@@ -8,7 +8,7 @@ varigenceArticleType: Walkthrough
 # Configuring an ADF Linked Service Connection for PostgreSQL
 
 > [!NOTE]
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
 
 [//]: # (TODO List of stages, connection types, and system types that can use PostgreSQL)
 

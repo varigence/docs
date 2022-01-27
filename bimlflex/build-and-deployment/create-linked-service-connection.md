@@ -6,25 +6,15 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Configuring a Linked Service Connection
+# Configuring a Linked Service
 
-[//]: # (TODO: Include a summary of Linked Service purpose and use in connections)
+**Connections** can be enabled to be used as Linked Services in Azure Data Factory (ADF).
 
-**Connections** can be enabled to work with cloud based linked services.
+## Enable a Connection as a Linked Service
 
-## Enable Connection for Cloud Services
+In the **Connection Tab** of the [**Connection Editor**](xref:bimlflex-connection-editor), provide the *Integration Stage*, *Connection Type*, and *System Type* for the connection.
 
-In the **Connection Editor**, click  the `+` to Add New Connection in the top left of the screen or select an existing connection to edit.
-
-<img
-    src="images/bimlflex-app-connections-module-list.png"
-    class="border-image"
-    style="border: 1px solid #CCC;"
-    title="BimlFlex Connection Editor Menu"
-/>
-
-In the **Connection Tab**, provide the *Integration Stage*, *Connection Type*, and *System Type* for the connection.
-If the configuration provided is compatible with a linked service, then a *Cloud* setting will appear in the action bar.
+If the resulting configuration provided is compatible with a Linked Service, then a *Cloud* setting will appear in the action bar.
 
 <img
     src="images/bimlflex-app-connections-connection-tab.png"
@@ -33,8 +23,7 @@ If the configuration provided is compatible with a linked service, then a *Cloud
     title="BimlFlex Connection Tab"
 />
 
-After toggling the *Cloud* setting, a tab for Linked Services will appear at the bottom of the form and any available linked services will appear in the *Linked Service Types dropdown*.
-Select a *Linked Service Type* to configure it.
+After toggling the *Cloud* setting, a tab for Linked Services will appear at the bottom of the form and any available linked services will appear in the *Linked Service Types dropdown*. Select a *Linked Service Type* to configure it.
 
 <img
     src="images/bimlflex-app-connections-connection-tab-linked-service.png"
@@ -43,20 +32,16 @@ Select a *Linked Service Type* to configure it.
     title="BimlFlex Linked Services Tab"
 />
 
-## Configuring the Linked Service Connection
+## Configuring the Linked Service
 
-Linked Services are used in Azure Data Factory to define a data source.
-The linked service form allows for input of all required data points needed to make the linked service connection.
-Any additional data points can be entered in the additional properties field.
-This form will maintain the values that are entered if the Linked Service Type is changed.
+Linked Services are used in Azure Data Factory (ADF) to define a data source. The Linked Service form allows for input of all required data points needed to allow BimlFlex to generate a corresponding Linked Service.
 
 > [!IMPORTANT]
-> To configure a **Linked Service** select a **Connection** and `enable` the *CLOUD* selector at the top.
+> To configure a **Linked Service**, select a **Connection** and enable the *Cloud selector* at the top.
 
-### ADF Linked Service
+### ADF Linked Service Tab
 
-There are two main components, the base Linked Service details and then the Connection details.
-These details will remain unchanged regardless of how the connection details are configured.
+There are two main components, the base Linked Service details and then the Connection details. These details will remain unchanged regardless of how the connection details are configured.
 
 #### [Description](#tab/ls-description)
 
@@ -86,13 +71,13 @@ The linked services that are currently supported are listed below.
 Select a linked service type for information on filling out the Linked Service form.
 
 - [Azure Blob Storage](linked-service-adf-blob-storage.md)
-- [Azure My SQL](linked-service-adf-azure-mysql.md)
+- [Azure My SQL](xref:linked-service-adf-azure-mysql)
 - [Azure PostgreSQL](linked-service-adf-azure-postgresql.md)
 - [Azure SQL Database](linked-service-adf-sql-database.md)
 - [Azure SQL Database Managed Instance (Azure SQL MI)](linked-service-adf-sqlmi.md)
 - [Azure Synapse Analytics (Azure SQL Data Warehouse)](linked-service-adf-sql-data-warehouse.md)
 - [Data Lake Gen 2](linked-service-adf-datalake-gen-2.md)
-- [MySQL](linked-service-adf-mysql.md)
+- [MySQL](xref:linked-service-adf-azure-mysql)
 - [Oracle](linked-service-adf-sql-server.md)
 - [PostgreSQL](linked-service-adf-sql-server.md)
 - [Snowflake](linked-service-snowflake.md)
@@ -147,7 +132,7 @@ Showing configuration for plain text connection string.
 
 ### Authentication Details
 
-Depending on the *AUTHENTICATION METHOD*, options to specify an AKV Secret for either a User's *PASSWORD* or *SERVICE PRINCIPAL KEY* can also be provided.
+Depending on the *Authentication Method*, options to specify an AKV Secret for either a User's *Password* or *Service* can also be provided.
 
 #### [SQL Authentication](#tab/ls-auth-sql-password/ls-connection-string)
 

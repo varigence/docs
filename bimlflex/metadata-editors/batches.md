@@ -9,11 +9,9 @@ varigenceArticleType: Reference
 
 BimlFlex **Batches** group and help to define an ETL/ELT workload.  They are used by **Projects** to set execution grouping.
 
-## Editor Overview
+## Overview
 
 The following sections describe the UI elements of the Batch Editor and how they are used to author and manage BimlFlex **Batches**.
-
-**Batch Editor**
 
 ![BimlFlex - Batch Editor](images/bfx-batches-editor-overview.png "BimlFlex - Batch Editor")
 

@@ -7,11 +7,15 @@ varigenceArticleType: Reference
 ---
 # Connection Editor
 
-BimlFlex **Connections** provide the information required to connect to data sources. It also acts as containers for objects and allows setting overrides. Additionally, it has metadata to identify the integration stage along with package execution settings.
+BimlFlex **Connections** provide the information required to connect to data sources. They also acts as containers for [**Objects**](xref:bimlflex-object-editor) and allow [**Setting Overrides**](xref:bimlflex-settings#setting-overrides).
 
-## Editor Overview
+Additionally, a connection definition includes metadata to identify the *Integration Stage* along with package execution settings.
 
-The following sections describe the UI elements of the **Connection Editor** and how they are used to author and manage BimlFlex **Connections**.
+Connections are used in [**Projects**](xref:bimlflex-project-editor) to direct BimlFlex in generating the overall intended flow of data.
+
+## Overview
+
+The following sections describe the User Interface elements of the **Connection Editor**, and how they are used to author and manage BimlFlex **Connections**. Detailed descriptions of each component is also available in the [reference documentation covering connections](xref:bimlflex-app-reference-documentation-Connections).
 
 <img
     src="images/bimlflex-app-editor-connections.png"
@@ -20,15 +24,13 @@ The following sections describe the UI elements of the **Connection Editor** and
     title="Connections Editor"
 />
 
-### Cloud Based Linked Services
-
-**Connections** can be enabled to work with cloud based linked services. For information on linked service connections and setup see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
+The **Connection Editor** contains four main tabs that can be used to modify connection details, as well as various properties and settings related to the **Objects** that are associated with the selected connection.
 
 ## Connection Tab
 
-The **Connection Tab** focuses on general **Connection** information and configuration.  This tab is used to define and create the **Connection** itself.
+The **Connection Tab** is the first tab in the **Connection Editor**, and it is selected by default. The connection tab focuses on general connection information and configuration. This tab is used to define and create the **Connection** itself.
 
-### Connection Tab - Action Buttons
+### Action Buttons
 
 <img
     src="images/bimlflex-app-editor-connections-actions.png"
@@ -39,16 +41,18 @@ The **Connection Tab** focuses on general **Connection** information and configu
 
 | Icon | Action | Description |
 |--- |--- |--- |
-| <div class="icon-col m-5"><img src="images/svg-icons/save.svg"/></div> | Save | This will save the currently set of staged changes.  The **Save** button is will only enable if the **Connection** has changes staged and there are no major validation issues with the current **Connection** properties.  `Ctrl+S` shortcut available. |
-| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg"/></div> | Save | This will persist changed made to the **Connection** modified in the designer. `Ctrl+S` can also be used as a shortcut.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will Discard any unsaved changes and revert to last saved form.|
 |<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Connection**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Connection Dialog](#archive-connection-dialog). |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Connection**.  A [Duplicate Connection Dialog](#duplicate-connection-dialog) will appear asking for a *Connection Name* and a new **Connection** will be created using all of the selected **Connection**'s current properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/import-metadata.svg"/></div> | Import Metadata | Import Metadata from Source Database - [More info](../concepts/importing-metadata.md). |
-| <img src="images/bimlflex-app-action-switch.png" /> | Cloud | This is only required if using ADF.  When enabled allows the configuration of Linked Services and shows the Linked Service fields. |
+| <img src="images/bimlflex-app-action-switch.png" /> | Cloud | When enabled, this allows the configuration of Linked Services. This only applies to Azure Data Factory (ADF) deployments.|
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Connection** and all associated entities from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Connection**.  This will remove the **Connection** and all associated entities from processing and validation. |
 
-[//]: # (TODO: Connection String Editor document an link from Connection String Field)
+### Linked Services
+
+**Connections** can be configured to be `cloud enabled` by modifying the *Cloud selection* button on the top-right of the connection screen. This will show (or hide) the Linked Services detailsEnablinenabled to work with cloud based linked services. For information on linked service connections and setup see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
 
 ### Additional Dialogs
 

@@ -8,7 +8,7 @@ varigenceArticleType: Walkthrough
 # Configuring an ADF Linked Service Connection for Azure Blob Storage
 
 > [!NOTE]
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Azure Blob Storage)
 
@@ -38,9 +38,9 @@ The remaining field requirements are dependent on Authentication Method.
 
 **Required fields for [Account Key Authentication](#account-key)**:
 
-+ [Connection String](#account-key-connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
++ [Connection String](#account-key-connection-string) (or [Azure Key Vault](xref:create-linked-service-connection))
   + Storage Account Name
-  + Storage Account Key (or [Azure Key Vault](create-linked-service-connection.md))
+  + Storage Account Key (or [Azure Key Vault](xref:create-linked-service-connection))
 
 Optional fields:
 
@@ -48,14 +48,14 @@ Optional fields:
 
 **Required fields for [SAS URI Authentication](#sas-uri)**:
 
-+ SAS URL (or [Azure Key Vault](create-linked-service-connection.md))
-  + SAS Token (or [Azure Key Vault](create-linked-service-connection.md))
++ SAS URL (or [Azure Key Vault](xref:create-linked-service-connection))
+  + SAS Token (or [Azure Key Vault](xref:create-linked-service-connection))
 
 **Required fields for [Service Principal Authentication](#service-principal)**:
 
 + Tenant (Tenant ID)
 + Service Principal ID (Application ID)
-+ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md))
++ Service Principal Key (Application Key) (or [Azure Key Vault](xref:create-linked-service-connection))
 
 **Required fields for [Managed Identity Authentication](#managed-identity)**:
 
@@ -80,7 +80,7 @@ For [Service Principal Authentication](#service-principal), Service Principal ID
 
 ![Account Key](images/bimlflex-ss-app-connections-adf-blob-storage-form.png "Account Key")
 
-Account Key authorization requires a [Connection String](#account-key-connection-string) that contains a Storage Account Name, a Storage Account Key or [Azure Key Vault](create-linked-service-connection.md), and optionally an Endpoint Suffix.
+Account Key authorization requires a [Connection String](#account-key-connection-string) that contains a Storage Account Name, a Storage Account Key or [Azure Key Vault](xref:create-linked-service-connection), and optionally an Endpoint Suffix.
 
 #### Account Key Connection String
 

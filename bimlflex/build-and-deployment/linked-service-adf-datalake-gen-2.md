@@ -8,7 +8,7 @@ varigenceArticleType: Walkthrough
 # Configuring an ADF Linked Service Connection for Data Lake Gen 2
 
 > [!NOTE]
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Data Lake Gen 2)
 
@@ -39,13 +39,13 @@ The remaining field requirements are dependent on Authentication Method.
 **Required fields for [Account Key Authentication](#account-key)**:
 
 + Storage Account Name (URL)
-+ Storage Account Key (or [Azure Key Vault](create-linked-service-connection.md))
++ Storage Account Key (or [Azure Key Vault](xref:create-linked-service-connection))
 
 **Required fields for [Service Principal Authentication](#service-principal)**:
 
 + Tenant (Tenant ID)
 + Service Principal ID (Application ID)
-+ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md))
++ Service Principal Key (Application Key) (or [Azure Key Vault](xref:create-linked-service-connection))
 
 **Required fields for [Managed Identity Authentication](#managed-identity)**:
 
@@ -73,7 +73,7 @@ If [Managed Identity](#managed-identity) is used, no authentication will be requ
 
 ![Account Key](images/bimlflex-ss-app-connections-adf-data-lake-gen-2-form.png "Account Key")
 
-Account Key authorization requires a Storage Account Name and a Storage Account Key or [Azure Key Vault](create-linked-service-connection.md).
+Account Key authorization requires a Storage Account Name and a Storage Account Key or [Azure Key Vault](xref:create-linked-service-connection).
 
 > [!NOTE]
 > It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering a Storage Account Key.
