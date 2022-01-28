@@ -69,9 +69,9 @@ Various [navigational transitions](#navigational-transitions) are available on v
 
 | Component              | Type                 | Description                        |
 | ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
-| Project            | Value                | The current **Project** used to process the **Object**.  Must be an existing **Project**. See [Projects Documentation](xref:project).                |
-| Object             | Value                | The name of the **Objects** within the current Source **Connection**. See [Objects Documentation](xref:object.md).                                     |
-| Object Type        | Value                | The type of **Object** that is being extracted or created. See [Valid Object Types](xref:_enum-object-type).  |
+| Project            | Value                | The current **Project** used to process the **Object**.  Must be an existing **Project**. See [Projects Documentation](xref:bimlflex-project-editor).                |
+| Object             | Value                | The name of the **Objects** within the current Source **Connection**. See [Objects Documentation](xref:bimlflex-object-editor).                                     |
+| Object Type        | Value                | The type of **Object** that is being extracted or created. See [Valid Object Types](_enum-object-type.md).  |
 | Excluded           | Checkbox (Tri-state) | Setting to determine whether the selected entity will be built out with the rest of the solution when the BimlFlex solution is being compiled. The state of being "partially checked" is based on the selection of its child elements (below). |
 | Exclude Build      | Checkbox (Y/N)       | Toggle to determine whether the **Object** is excluded from the build when the BimlFlex solution is being compiled.          |
 | Not Persistent     | Checkbox (Y/N)       | Toggle to determine whether the **Object** is excluded from Persistent Staging Layer. When enables, the **Object** will not be stored in the PSA.   |

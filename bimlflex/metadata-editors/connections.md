@@ -35,13 +35,6 @@ The **Connection Tab** is the first tab in the **Connection Editor**, and it is 
 
 ### Action Buttons
 
-<img
-    src="images/bimlflex-app-editor-connections-actions.png"
-    class="border-image"
-    style="border: 1px solid #CCC;"
-    title="Connections Editor Actions"
-/>
-
 | Icon | Action | Description |
 |--- |--- |--- |
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg"/></div> | Save | This will persist changed made to the **Connection** modified in the designer. `Ctrl+S` can also be used as a shortcut.|
