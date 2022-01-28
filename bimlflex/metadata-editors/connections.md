@@ -37,7 +37,7 @@ The **Connection Tab** is the first tab in the **Connection Editor**, and it is 
 
 | Icon | Action | Description |
 |--- |--- |--- |
-| <div class="icon-col m-5"><img src="images/svg-icons/save.svg"/></div> | Save | This will persist changed made to the **Connection** modified in the designer. `Ctrl+S` can also be used as a shortcut.|
+| <div class="icon-col m-5"><img src="images/svg-icons/save.svg"/></div> | Save | This will persist changes made to the **Connection** modified in the designer. `Ctrl+S` can also be used as a shortcut.|
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will Discard any unsaved changes and revert to last saved form.|
 |<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | Archive will remove the **Connection** from the active metadata repository, and move it to the metadata archive. Clicking **Archive** displays the [Archive Connection Dialog](#archive-connection-dialog). |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Connection**.  A [Duplicate Connection Dialog](#duplicate-connection-dialog) will appear asking for a *Connection Name*. A new **Connection** will be created using most of the selected **Connection**'s current properties (except **Attributes** and **Parameters**).|

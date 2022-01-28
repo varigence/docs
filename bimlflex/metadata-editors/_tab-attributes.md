@@ -2,13 +2,6 @@
 
 All **Attributes** assigned to the current entity show here.  New items can be entered via the *Add* action button.  Existing items can be edited by clicking the *Value* field to select the **Attribute** and using the *Edit* action button.  Various [navigational transitions](#navigational-transitions) are available on this form and outlined below.  
 
-<img
-    src="images/bimlflex-app-tab-attributes-table.png"
-    class="border-image"
-    style="border:1px solid #CCC;"
-    title="Attributes Tab - Table Descriptions"
-/>
-
 The following options are available:
 
 | Icon | Action | Description |
@@ -48,7 +41,30 @@ Confirmation warning against the dangers of archiving.  You are required to conf
 >[!WARNING]
 > Archiving is a permanent removal of the selected entity from its associated table in the BimlFlex Database. The best practice is to first use the *Deleted* flag (soft delete) as an indication that the connection may need to be removed.
 
-### Navigational Transitions
+### Attribute Tab View
+
+The **Attribute Tab** provides a different way to review the properties of **Attributes** associated with the selected entity.
+
+#### Overview
+
+<img
+    src="images/bimlflex-app-tab-attributes-table.png"
+    class="border-image"
+    style="border:1px solid #CCC;"
+    title="Attributes Tab - Table Descriptions"
+/>
+
+#### Attributes Tab Table Components
+
+| Component              | Type                 | Description                        |
+| ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
+| Object            | Value                | The name of the **Objects** within the current Source **Connection**. See [Objects Documentation](xref:bimlflex-object-editor).                |
+| Column        | Navigational Value                | Define the scope of the **Attribute** application to the selected **Object**. See [Attributes Documentation](xref:bimlflex-attribute-editor) |
+| Attribute           | Navigational Value | Define the scope of the BimlFlex process that the **Attribute** is applied to. Attribute Type is required and must be a valid [Attribute Type](bimlflex-attribute-editor#attribute-types). |
+| Value      | Value | The value to be returned when the custom attribute is accessed by the framework. See [Attributes Documentation](xref:bimlflex-attribute-editor) |
+| Property     | Field       | Define the value for a custom attribute if it is not specified in the Attribute Value field. See [Attributes Documentation](xref:bimlflex-attribute-editor) |
+
+##### Navigational Transitions
 
 | Item | Action |
 | ---- | ------ |
