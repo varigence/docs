@@ -37,3 +37,16 @@ ARM templates will need to be uploaded separately into Blob storage, and then re
 
 > [!NOTE]
 > In addition to the Best Practices document above, Microsoft has published documentation on the creation, editing, and deployment of ARM templates, referenced [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-the-portal).
+
+## Excluding parts of ARM template from deployment
+
+When deploying the ARM template, it is possible to exclude parts of the template through the defined parameters.
+The `arm_template_parameters.json` file contains an attribute for excluding entities from the deployment:
+
+``` json
+"excludeFromDeployment": {
+  "value": []
+},
+```
+
+Any resource defined in the ARM template that is also defined in the `excludeFromDeployment` list will be excluded from the deployment.

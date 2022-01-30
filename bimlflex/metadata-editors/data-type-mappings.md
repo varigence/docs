@@ -9,7 +9,7 @@ varigenceArticleType: Reference
 
 BimlFlex **Data Type Mappings** provide the ability to map Data Types from a source system to another more standardized data type.  This can be either a conversion of the Data Type entirely, such as a `int` to a `bigint`, the expansion of an existing Data Type, such as `nvarchar(13)` to `nvarchar(20)`, or the combination of both, such as `char(1)` to `nvarchar(10)`.  
 
-## Editor Overview
+## Overview
 
 The following sections describe the UI elements of the Data Type Mappings Editor and how they are used to author and manage BimlFlex **Data Type Mappings**.
 
@@ -33,14 +33,14 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 |-|-|-|
 |<div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>|<span class="nowrap-col m-5">Save</span>|This will save the current set of staged changes.  The **Save** button is only enabled if the **Data Type Mapping** has changes staged and there are no major validation issues with the current **Data Type Mapping** properties.|
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-|<div class="icon-col m-5"><img src="images/svg-icons/datatype-mappings.svg" /></div>|<span class="nowrap-col m-5">Apply Data Type Mappings</span>|Brings up the [Apply Data Type Mappings Dialog](#apply-data-type-mappings-dialog-box) to apply all **Data Type Mappings** to a specified `Record Source`.  Note that this is the complete set of **Data Type Mappings** and not just the record that was previously selected.|
+|<div class="icon-col m-5"><img src="images/svg-icons/datatype-mappings.svg" /></div>|<span class="nowrap-col m-5">Apply Data Type Mappings</span>|Brings up the [Apply Data Type Mappings Dialog](#apply-data-type-mappings-dialog) to apply all **Data Type Mappings** to a specified `Record Source`.  Note that this is the complete set of **Data Type Mappings** and not just the record that was previously selected.|
 |<div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div>|<span class="nowrap-col m-5">Deleted</span>|This will soft delete the currently selected **Data Type Mapping**.  This will remove the **Data Type Mapping** from all processing and it will be excluded from all validation.|
 
 [//]: # (TODO: Find a switch SVG to use for Deleted)
 
 ## Additional Dialogs
 
-[!include[Apply Data Type Mappings Dialog Box](_dialog-apply-data-type-mappings.md)]
+[!include[Apply Data Type Mappings Dialog](_dialog-apply-data-type-mappings.md)]
 
 ## Fields
 

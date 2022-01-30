@@ -30,7 +30,7 @@ Once the user has deployed the `ssdt-deploy.ps1` file for each asset who's schem
 <img 
     src="images/eltprojectstructure.png"
     style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
+    title="Apply Data Type Mappings Dialog" 
 />
 
 Once you build your BimlFlex solution, you will now have deployment files for each of these projects. Inside of the `...\outout\Deploy` folder, there will now be the following deployment files:

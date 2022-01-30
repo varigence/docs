@@ -66,14 +66,6 @@ Within the dialog, users may select settings for `Biml Engine`, `Build`, `Target
 From within `Project Settings`, users may edit the output of their project by selecting common output settings from multiple drop down menus.
 Users may set their target SQL Server versions, ADF Build Modes, and SSAS analytical services.
 
-<!--
-<img 
-    src="images/targetversionsettings.png" 
-    style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
-/>
--->
-
 >[!NOTE]
 > Users should also check that their output path is correctly configured. If one is not provided then the generated assets will be created in the `output` folder of the directory that contains the .mst file.
 
@@ -83,21 +75,6 @@ In the application, navigate to the *Build & Deploy* tab and locate the build bu
 Alternatively, users can also use the build icon located in the toolbar. 
 
 ![BimlStudio - Build Buttons](images/bs-build-buttons.png "BimlStudio - Build Buttons")
-<!--
-<img 
-    src="images/mainbuild.png" 
-    style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
-/>
-
-Users can also use the build button located in the toolbar.
-
-<img 
-    src="images/toolbarbuild.png" 
-    style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
-/>
--->
 
 Once the project has built, the user can navigate to the project's output directory and examine their assets.
 

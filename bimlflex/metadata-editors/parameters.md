@@ -19,7 +19,10 @@ BimlFlex applies standard practices for using parameters but supports any custom
 > For information on how these use and configure **Parameters** in BimlFlex see associated link below.  
 > BimlFlex Documentation: [Load Parameters](xref:bimlflex-concepts-metadata-parameters)
 
-## Editor Overview  
+> [!IMPORTANT]
+> Detailed descriptions of all **Parameter** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Parameters).
+
+## Overview  
 
 The following sections describe the UI elements of the **Parameter Editor** and how they are used to author and manage BimlFlex **Parameters**.
 
@@ -49,7 +52,7 @@ Toggling `Descendants` will enable or disable all parameters for both the curren
 This option is enabled by default.
 
 The Search field is contained within the tree view menu, and will be hidden when collapsed.
-The Search field will return results in realtime, only presenting Parameters containing the term being searched.
+The Search field will return results in real-time, only presenting Parameters containing the term being searched.
 
 ![BimlFlex Parameters - Search Field](images/bfx-parameters-search-field.png "BimlFlex Parameters - Search Field")
 
@@ -61,15 +64,15 @@ The Search field will return results in realtime, only presenting Parameters con
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will save the currently set of staged changes.  The **Save** button is will only enable if the **Parameter** has changes staged and there are no major validation issues with the current **Parameter** properties.|
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Parameter**.  This will result in the physical removal of the selected record from the BimlFlex Database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Parameter Dialog](#archive-parameter-dialog-box). |
-| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Parameter**.  A [Duplicate Parameter Dialog](#duplicate-parameter-dialog-box) will appear asking for a *Parameter Name* and a new **Parameter** will be created using all of the selected **Parameter**'s current properties. |
+|<div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Parameter**.  This will result in the physical removal of the selected record from the BimlFlex Database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Parameter Dialog](#archive-parameter-dialog). |
+| <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Parameter**.  A [Duplicate Parameter Dialog](#duplicate-parameter-dialog) will appear asking for a *Parameter Name* and a new **Parameter** will be created using all of the selected **Parameter**'s current properties. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Parameter**.  This will remove the **Parameter** and all associated entities from processing and validation. |
 
 ## Additional Dialogs  
 
-[!include[Archive Parameter Dialog Box](_dialog-archive-parameter-single.md)]
+[!include[Archive Parameter Dialog](_dialog-archive-parameter-single.md)]
 
-[!include[Duplicate Parameter Dialog Box](_dialog-duplicate-parameter.md)]
+[!include[Duplicate Parameter Dialog](_dialog-duplicate-parameter.md)]
 
 ## Fields  
 

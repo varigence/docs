@@ -25,7 +25,7 @@ Project settings can be accessed by clicking *File* then *Project Settings*.
 <img 
     src="images/targetversionsettings.png" 
     style="border: 1px solid #CCC;" 
-    title="Apply Data Type Mappings Dialog Box" 
+    title="Apply Data Type Mappings Dialog" 
 />
 
 >[!NOTE]
@@ -50,7 +50,7 @@ In BimlStudio, navigate to the *Build & Deploy* tab and locate the build button 
 <img 
     src="images/mainbuild.png"
     style="border: 1px solid #CCC;"
-    title="Apply Data Type Mappings Dialog Box"
+    title="Apply Data Type Mappings Dialog"
 />
 
 Alternatively, a build button can also be accessed from the toolbar.
@@ -58,7 +58,7 @@ Alternatively, a build button can also be accessed from the toolbar.
 <img 
     src="images/toolbarbuild.png"
     style="border: 1px solid #CCC;"
-    title="Apply Data Type Mappings Dialog Box"
+    title="Apply Data Type Mappings Dialog"
 />
 
 Once the project has built, its assets can be examined from within the project's output directory.

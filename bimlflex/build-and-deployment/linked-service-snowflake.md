@@ -8,7 +8,7 @@ varigenceArticleType: Walkthrough
 # Configuring a Linked Service Connection for Snowflake Data Warehouse
 
 > [!NOTE]
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
 
 [//]: # (TODO List of stages, connection types, and system types that can use Snowflake)
 
@@ -21,7 +21,7 @@ After selecting `Snowflake` from the Linked Service Type dropdown, the form requ
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
++ [Connection String](#connection-string) (or [Azure Key Vault](xref:create-linked-service-connection))
   + Account
   + Region
   + Warehouse

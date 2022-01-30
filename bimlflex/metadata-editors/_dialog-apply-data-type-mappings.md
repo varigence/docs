@@ -1,8 +1,8 @@
-#### Apply Data Type Mappings Dialog Box  
+#### Apply Data Type Mappings Dialog
 
 From here you can apply your **Data Type Mappings** to an individual **Record Source**.  Select your **Record Source** from the dropdown, enable the options you want and click **Apply**.  Defaults should be acceptable for most cases but options are provided to support user cases where you may only be concerned with a particular property.
 
-![Apply Data Type Mappings Dialog Box -mtb-20-image](images/bimlflex-app-dialog-apply-data-type-mappings.png "Apply Data Type Mappings Dialog Box")
+![Apply Data Type Mappings Dialog -mtb-20-image](images/bimlflex-app-dialog-apply-data-type-mappings.png "Apply Data Type Mappings Dialog")
 
 ##### Apply Data Type Mapping Options
 

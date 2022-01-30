@@ -8,7 +8,7 @@ varigenceArticleType: Walkthrough
 # Configuring an ADF Linked Service Connection for Azure SQL Database Managed Instance
 
 > [!NOTE]
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection.md).
+> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](xref:create-linked-service-connection).
 
 [//]: # (TODO List of stages, connection types, and system types that can use SQL Managed Instance)
 
@@ -21,7 +21,7 @@ After selecting `Azure SQL MI` from the Linked Service Type dropdown, the form r
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection.md))
++ [Connection String](#connection-string) (or [Azure Key Vault](xref:create-linked-service-connection))
   + Fully Qualified Domain Name
   + Database Name
 + [Authentication Method](#authentication-method)
@@ -29,12 +29,12 @@ The required fields are:
 Required for [SQL Authentication](#sql-authentication):
 
 + User Name
-+ Password (or [Azure Key Vault](create-linked-service-connection.md))
++ Password (or [Azure Key Vault](xref:create-linked-service-connection))
 
 Required for [Service Principal Authentication](#service-principal):
 
 + Service Principal ID (Application ID)
-+ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection.md))
++ Service Principal Key (Application Key) (or [Azure Key Vault](xref:create-linked-service-connection))
 + Tenant (Tenant ID)
 
 Optional fields are:

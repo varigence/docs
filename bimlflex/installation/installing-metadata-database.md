@@ -75,7 +75,7 @@ When the BimlFlex project is opened in BimlStudio, the metadata database setup o
 
 Set up the databases through the **Setup BimlFlex** dialog.
 
-![Setup BimlFlex Dialog Box](images/metadata-database-setup-dialog.png "Setup BimlFlex Dialog Box")
+![Setup BimlFlex Dialog](images/metadata-database-setup-dialog.png "Setup BimlFlex Dialog")
 
 Configure the connection string to point to the database instance where the database should be created.
 
