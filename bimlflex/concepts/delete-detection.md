@@ -15,7 +15,7 @@ This applies to 'hard deletes' where the records have physically been removed fr
 
 This information can be valuable in determining the correct state of the data for delivery.
 
-The deleted information is derived bt comparing the rows available in the source with the current set of active rows in the target PSA. Implementing and loading a queryable PSA is therefore a requirement for the default delete detection process.
+The deleted information is derived by comparing the rows available in the source with the current set of active rows in the target PSA. Implementing and loading a queryable PSA is therefore a requirement for the default delete detection process.
 
 Certain sources might be able to deliver deleted rows as a separate source, such as the SQL Server CDC feature. when a source delivers records with the state deleted it is possible to directly load them from that source into the target staging, persistent staging and Data Vault and reuse the source delete state without comparing against the existing PSA. 
 
