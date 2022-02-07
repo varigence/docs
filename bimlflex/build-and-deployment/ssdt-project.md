@@ -49,6 +49,7 @@ External Tables for on-premises SQL Server and Synapse is used by some load proc
 BimlFlex provides an optional build process for these entities. The following settings control if they are included in the build, as well as their default values:
 
 | Setting                            | Default Value | Description |
+| ---------------------------------- | ------------- | ----------- |
 | SsdtIncludeExternalTables          | N             | Should External Tables be included in the SSDT Project |
 | SsdtIncludeMasterKey               | N             | Should the Master Key statement be include in the SSDT Project. Depends on "SsdtIncludeExternalTables" = "Y" |
 | SsdtIncludeCredential              | N             | Should the Credential statement be include in the SSDT Project. Depends on "SsdtIncludeExternalTables" = "Y" |
