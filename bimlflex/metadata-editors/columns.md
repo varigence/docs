@@ -49,13 +49,11 @@ The Search field will return results in real-time, only presenting Columns conta
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Column**. This will result in the physical removal of the selected record from the BimlFlex Database. The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** generates an [Archive Column Dialog](#archive-column-dialog).|
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Column**. Clicking the **Duplicate** button will cause a [Duplicate Column Dialog](#duplicate-column-dialog) to appear. The new **Column** will be created using all of the selected **Column**'s current properties. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Column** from processing and validation. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
-| <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Column**. This will remove the **Column** from processing and validation. |
-
-[!include[Restore Entities Tip](_tip-restore-entities.md)]
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Column**. This will remove the **Column** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
 
 ## Column Editor Fields
 
-![BimlFlex Columnn Editor Fields](images/bfx-columns-details-tab.png "BimlFlex Column Editor Fields")
+![BimlFlex Column Editor Fields](images/bfx-columns-details-tab.png "BimlFlex Column Editor Fields")
 
 | Field | Description |
 | ----- | ----------- |

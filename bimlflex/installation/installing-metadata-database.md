@@ -90,3 +90,17 @@ Click **Deploy** to deploy the databases
 
 Once setup completes, configure the BimlFlex Project and BimlFlex App metadata connections to use the new **BimlFlex** database.
 Configure The project and the Operational Reports to use the **BimlCatalog** database.
+
+## Command Line/Terminal-Based Setup
+
+To deploy the databases using the Microsoft `SqlPackage.exe` application (https://docs.microsoft.com/en-us/sql/tools/sqlpackage), or a similar task/process, the following process can be used.
+
+The BimlFlex metadata database and BimlCatalog orchestration and auditing databases are delivered as dacpac files, with a pre-upgrade script for upgrades of existing databases. 
+
+The dacpac and pre-upgrade script files can be extracted from BimlStudio.
+
+Open a BimlFlex project in BimlStudio, navigate to the BimlFlex Ribbon UI tab, click the Debug Utilities option, click Extact DACPAC Folder button.
+
+Once the dacpacs and scripts are available, it is possible to deploy them to a target using the `SqlPackage.exe` application.
+
+Note that any existing database must be updated by first running the corresponding `BimlFlex_PreDacpac_Deployment.sql` or `BimlCatalog_PreDacpac_Deployment.sql` script.

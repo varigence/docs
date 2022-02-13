@@ -26,18 +26,16 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 
 ![BimlFlex Batch Editor - Action Buttons](images/bfx-batches-action-buttons.png "BimlFlex Batch Editor - Action Buttons")
 
-
 |Icon|Action|Description|
 |-|-|-|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div>| Save | This will save the current set of staged changes.  The **Save** button is will only enable if the **Batch** has changes staged and there are no major validation issues with the current **Batch** properties. |
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div>| Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 | <div class="icon-col m-5"><img src="images/svg-icons/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Batch**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will create an [Archive Batch Dialog](#archive-batch-dialog). |
 | <div class="icon-col m-5"><img src="images/svg-icons/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Batch**. A Duplicate Batch Dialog will appear asking for a name for the new **Batch**. A new **Batch** will be created using all of the selected **Batch's** current properties. |
-| <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Batch**.  This will remove the **Batch** from all processing and it will be excluded from all validation. |
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Batch**. This will remove the **Batch** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
 
-[//]: # (TODO: Find a switch SVG to use for Deleted)
-
-[!include[Restore Entities Tip](_tip-restore-entities.md)]
+> [!NOTE]
+> A **Batch** itself can not be excluded, only deleted. If certain parts of the data solution should be excluded, then this should be applied at **Project** level in the **Project Editor**.
 
 ### Additional Dialogs
 

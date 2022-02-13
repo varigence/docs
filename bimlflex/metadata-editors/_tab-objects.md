@@ -79,6 +79,8 @@ The following details are shown in this view:
 
 ##### Navigational Transitions
 
+From the **Objects Tab**, it is possible to navigate directly to the following areas of BimlFlex:
+
 | Item             | Action                                                               |
 | ---------------- | -------------------------------------------------------------------- |
 | Project Value   | Navigate to the [**Project Editor**](xref:bimlflex-project-editor) by clicking <img class="icon-inline" src="images/svg-icons/navigate.svg" style="width: 18px"/>       |
