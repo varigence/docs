@@ -9,6 +9,24 @@ varigenceArticleType: Conceptual
 
 The tips-and-tricks section contains focused design and implementation notes that illustrate core BimlFlex features, nifty tricks or similar.
 
+## Restoring an Excluded or Deleted Entity
+
+In BimlFlex, it is possible to soft-delete an entity (i.e. object, column, project etc.). This removes the entities, as well as directly associated (child) entities, from processing and validation but does not physically remove it from the metadata repository.
+
+It is possible to add these entities back to the BimlFlex metadata scope used for validation and processing.
+
+A deleted or excluded entity can be restored by flipping the appropriate flag back to `false`.
+
+To view deleted or excluded entities:  
+
+1. Navigate to **BimlFlex Options**
+2. Enable *Show Deleted* and/or *Show Excluded*
+3. Click **Apply**
+
+![Enabled Deleted Entities](images/bimlflex-app-options-show-deleted.png "Enabled Deleted Entities")
+
+This will allow deleted and/or excluded entities to appear. Please ensure that the option is disabled once the deleted/excluded member has been restored.
+
 ## Adding BimlFlex custom SSIS components to Azure Integration Runtime
 
 The Azure Integrated Runtime allows deployment and running of SSIS packages in the Azure cloud environment.

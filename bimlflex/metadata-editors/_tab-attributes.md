@@ -58,13 +58,15 @@ The following details are shown in this view:
 
 | Component              | Type                 | Description                        |
 | ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
-| Object            | Value                | The name of the **Objects** as associated with the current **Connection**. See the [Object Editor](xref:bimlflex-object-editor) documentation for more details..                |
+| Object            | Value                | The name of the **Objects** as associated with the current **Connection**. See the [Object Editor](xref:bimlflex-object-editor) documentation for more details.|
 | Column        | Navigational Value                | Define the scope of the **Attribute**. See the [Attribute Editor](xref:bimlflex-attribute-editor) for more details. |
 | Attribute           | Navigational Value | Define the scope of the BimlFlex process that the **Attribute** is applied to. Attribute Type is required and must be a valid [Attribute Type](xref:bimlflex-attribute-editor#attribute-types). |
 | Value      | Value | The value to be returned when the custom attribute is accessed by the framework. See the [Attribute Editor](xref:bimlflex-attribute-editor) for more details.|
 | Property     | Field       | Define the value for a custom attribute if it is not specified in the Attribute Value field. See the [Attribute Editor](xref:bimlflex-attribute-editor) for more details.|
 
 ##### Navigational Transitions
+
+From the **Attribute Tab**, it is possible to navigate directly to the following areas of BimlFlex:
 
 | Item | Action |
 | ---- | ------ |

@@ -63,6 +63,8 @@ The **Parameters Tab View** provides a different way to review the properties of
 
 ##### Navigational Transitions
 
+From the **Parameters Tab**, it is possible to navigate directly to the following areas of BimlFlex:
+
 |Item|Action|
 |-|-|
 |Object|Navigate to [**Object Editor**](xref:bimlflex-object-editor), by clicking <img class="icon-inline" src="images/svg-icons/navigate.svg" style="width: 18px"/> |

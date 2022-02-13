@@ -63,9 +63,7 @@ The **Details Tab** focuses on general **Object** information and configuration.
 | <div class="icon-col m-5"><img src="images/svg-icons/schema-diagram.svg" /></div> | Diagram | This will transition to the [Schema Diagram](schema-diagram.md) and select the current active **Object**.  See the annotated link for details on use and function.|
 | <div class="icon-col m-5"><img src="images/svg-icons/target-mappings.svg" /></div> | Lineage | This will transition to the [Data Lineage](data-lineage.md) and select the current active **Object**.  **Data Lineage** provides and insight to the data linage of the **Object**.  See the annotated link for details on use and function. |
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Object** and all associated entities from processing and validation.  This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
-| <img src="images/bimlflex-app-action-switch.png" /> | Deleted | This will soft delete the currently selected **Object**.  This will remove the **Object** and all associated entities from processing and validation. |
-
-[!include[Restore Entities Tip](_tip-restore-entities.md)]
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Object**. This will remove the **Object** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
 
 ### Additional Dialogs
 
