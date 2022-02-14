@@ -96,7 +96,7 @@ Having now generated a solution, which may or may not consist of multiple comput
 
 BimlFlex provides a number of easily configurable parameters for solutions, including but not limited to:
 
-* High watermark lookups
+* High water mark lookups
 * Log row counts
 * Create a Snowflake stage
 * Process a data vault

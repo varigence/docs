@@ -17,13 +17,13 @@ Instead of loading every row from the source every time, only loading the delta 
 
 For some sources there are delta data sets presented for easy consumption, others have Change Data Capture (CDC) or Change Tracking (CT) enabled. Some sources have no concept of change tracking so the data warehouse architect needs to analyze change patterns and derive an alternate change detection or delta sourcing approach.
 
-One common approach is to use a high watermark column that serve as a parameter for loading. The columns max value, after each load, is stored in the parameters table in the BimlCatalog and that value is used as a query parameter on the next load.
+One common approach is to use a high water mark column that serve as a parameter for loading. The columns max value, after each load, is stored in the parameters table in the BimlCatalog and that value is used as a query parameter on the next load.
 
 BimlFlex has direct support for parameter management, and can either use a simple single value for sources where the new value can be easily derived (such as for a database destination), or it can support source windowing by querying both the from and to values directly from the source for blob storage destinations.
 
 The load process can use any number of parameters and the get and set process can be tweaked to match the sourcing requirements through the Extension Points feature.
 
-For the getting started process, a high watermark load parameter is used. The AdventureWorksLT source system has been analyzed, and the `ModifiedDate` column has been determined to be trustworthy enough to be used as a high watermark column. Table loads can use this column as a parameter to only get the data that has changed since last load.
+For the getting started process, a high water mark load parameter is used. The AdventureWorksLT source system has been analyzed, and the `ModifiedDate` column has been determined to be trustworthy enough to be used as a high water mark column. Table loads can use this column as a parameter to only get the data that has changed since last load.
 
 Add load parameters through the BimlFlex App on the source objects.
 

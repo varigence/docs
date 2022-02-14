@@ -83,7 +83,7 @@ More information: [Building Databases, Tables and SSIS packages for sourc
 
 ![Applying Load Parameters](https://www.youtube.com/watch?v=7GwiIC5vbs8?rel=0&autoplay=0 "Applying Load Parameters")
 
-To load only new data every time the load process is run, add load parameters where needed. The Parameters function in BimlFlex allows easy adding of high watermark load parameters to the sourcing process.
+To load only new data every time the load process is run, add load parameters where needed. The Parameters function in BimlFlex allows easy adding of high water mark load parameters to the sourcing process.
 
 More information: [Applying Load Parameters](xref:bimlflex-getting-started-applying-load-parameters)
 

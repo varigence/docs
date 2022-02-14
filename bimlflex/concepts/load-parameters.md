@@ -255,7 +255,7 @@ Configuration of the base **Parameter** itself remains the same across Source Sy
 
 #### Default
 
-The parameter load value to use the first time the load happens, when there is no existing parameter value stored in the BimlCatalog database. For high watermark scenarios this is commonly a valid value guaranteed to be lower than any existing data, such as `1900-01-01` for dates. When adding dates in Excel, use the text-defining prefix so the data is kept as text rather than transformed into Excels internal date format, `'1900-01-01`.
+The parameter load value to use the first time the load happens, when there is no existing parameter value stored in the BimlCatalog database. For high water mark scenarios this is commonly a valid value guaranteed to be lower than any existing data, such as `1900-01-01` for dates. When adding dates in Excel, use the text-defining prefix so the data is kept as text rather than transformed into Excels internal date format, `'1900-01-01`.
 
 #### Parameter SQL
 
