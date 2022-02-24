@@ -268,11 +268,19 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 <!-- This extension point allows the addition of bespoke logic to be added as the last step in the targeted (individual process) ADF Pipeline. -->
 <!-- The below example shows 'Wait' step to be added after the main processing in the Pipeline has completed. -->
 
-<Wait Name="Wait for Ten Seconds" WaitTimeInSeconds="10">
+<#
+// The following is an example of how BimlScript can be used for this extension point.
+var outputPathName = "Wait for Ten Seconds Post Copy";
+#>
+<Wait Name="<#=outputPathName#>" WaitTimeInSeconds="10">
 	<Dependencies>
-		<Dependency Condition="Succeeded" DependsOnActivityName="<#=dependency#>.output"></Dependency>
+		<Dependency Condition="Succeeded" DependsOnActivityName="<#=dependency#>"></Dependency>
 	</Dependencies>
 </Wait>
+
+<#
+// The output path name is set here, so that BimlFlex can connect this activity to the other generated components.
+CustomOutput.OutputPathName = outputPathName;#>
 
 ```
 
@@ -838,9 +846,10 @@ CustomOutput.ObjectInherit = true;
 var outputPathName = "Wait for Ten Seconds Post Process";
 
 // To manage incoming dependencies for this post-process, it is possible to define a list of activity names.
-// These can be added using the GetBimlDependency method, and the result can be added to the Biml.
+// These can be added using the GetBimlDependency method, and the result can be added to the Biml. This method will create the Biml code snippet.
+// It is also possible to add the required BimlScript syntax instead of using GetBimlDependency.
 var postProcessDependencyList = new List<string>();
-postProcessDependencyList.Add("LOG_LastLoadDate");
+postProcessDependencyList.Add("LogLastLoadDate");
 
 #>
 <Wait Name="<#=outputPathName#>" WaitTimeInSeconds="10">
