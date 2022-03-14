@@ -7,7 +7,7 @@ summary: Overview of the BimlFlex databases, with reference to the BimlFlex- and
 
 This section provides a brief overview of the components that make up the BimlFlex solution:
 
-* Metadata Editors - the BimlFlex App and Excel Add-In
+* Metadata Editors - the [BimlFlex App](xref:metadata-editors-overview) and the supporting [Excel Add-In](xref:bimlflex-excel-add-in)
 * BimlFlex Database
 * BimlCatalog Database
 * BimlStudio
@@ -16,7 +16,7 @@ This section provides a brief overview of the components that make up the BimlFl
 
 BimlFlex provides different ways to enter, review and otherwise interact with the design metadata. The BimlFlex App provides a modern Graphical User Interface (GUI) to design and manage your data solution.
 
-The BimlFlex App connects to the [BimlFlex Database](xref:bimlflex-components-metadata-database), the metadata repository, and allows management of the metadata through a user-friendly experience.
+The BimlFlex App connects to the [BimlFlex Database](xref:bimlflex-setup-metadata-database-installation), the metadata repository, and allows management of the metadata through a user-friendly experience.
 
 For users that prefer working with Microsoft Office an Excel Add-In is available that can connect to the BimlFlex Database. This is installed as part of the main BimlFlex App installation.
 
@@ -30,14 +30,14 @@ For more information on the Metadata Editors,please refer to:
 
 The BimlFlex Database contains the metadata required to build out Data Warehouse processes using BimlFlex. Use the BimlFlex App or Excel Add-In to manage the BimlFlex metadata.
 
-* [BimlFlex Database Overview](xref:bimlflex-components-metadata-database)
+* [BimlFlex Database Overview](xref:bimlflex-setup-metadata-database-installation)
 * [Installing the BimlFlex Database](xref:bimlflex-setup-metadata-database-installation).
 
 ## BimlCatalog Database
 
 The BimlCatalog Database contains the orchestration and run time information needed to properly load the Data Warehouse. Audit information and errors from processes are logged in this database. The BimlCatalog is also used to provide orchestration direction for batches in case failures occur mid load.
 
-* [BimlCatalog Database Overview](xref:bimlflex-components-bimlcatalog-database)
+* [BimlCatalog Database Overview](xref:bimlflex-setup-bimlcatalog-database-installation)
 
 The BimlCatalog Database is created through the BimlFlex installer, or through the Setup BimlFlex menu option in the BimlFlex Ribbon UI in BimlStudio.
 

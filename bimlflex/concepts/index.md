@@ -25,7 +25,7 @@ Although it is relatively straightforward to define individual metadata objects,
 BimlFlex provides an import tool which is accessible from the Connections and Projects screens, which can connect to a database source and manage the metadata BimlFlex uses. The following links provide more information about managing design metadata:
 
 * [Importing Metadata to BimlFlex](xref:bimlflex-concepts-importing-metadata)
-* [The BimlFlex Database](xref:bimlflex-components-metadata-database)
+* [The BimlFlex Database](xref:bimlflex-setup-metadata-database-installation)
 * [Integration Keys](xref:bimlflex-concept-integration-keys)
 
 ## Data Solution Concepts

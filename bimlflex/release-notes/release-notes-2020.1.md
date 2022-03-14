@@ -108,7 +108,7 @@ Reporting views and Stored Procedures are unchanged.
 
 ADF Stored Procedures have been updated to better support logging and orchestration.
 
-More information on the BimlCatalog here: [BimlCatalog database](xref:bimlflex-components-bimlcatalog-database)
+More information on the BimlCatalog here: [BimlCatalog database](xref:bimlflex-setup-bimlcatalog-database-installation)
 
 ### Additional Extension Points for bespoke processing requirements
 

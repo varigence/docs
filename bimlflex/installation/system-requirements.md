@@ -70,7 +70,7 @@ All developers and analysts using either BimlStudio, the BimlFlex app or the Exc
 
 The database must be backed up as required in case of database server failures or for rollback requirements
 
-More information: [BimlFlex metadata database](xref:bimlflex-components-metadata-database)
+More information: [BimlFlex metadata database](xref:bimlflex-setup-metadata-database-installation)
 
 ### BimlCatalog
 
@@ -80,4 +80,4 @@ For installations and configurations using SSIS with package deployment methods 
 
 The database must be backed up as required in case of database server failures or for rollback requirements
 
-More information: [BimlCatalog database](xref:bimlflex-components-bimlcatalog-database)
+More information: [BimlCatalog database](xref:bimlflex-setup-bimlcatalog-database-installation)

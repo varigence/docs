@@ -37,6 +37,8 @@
 - name: Data Lineage
   href: data-lineage.md       
 - name: Business Modeling
-  href: business-modeling.md      
+  href: business-modeling.md
+- name: Excel Add-In
+  href: excel-add-in.md        
 
 
