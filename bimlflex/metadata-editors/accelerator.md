@@ -33,11 +33,11 @@ The BimlFlex Data Vault Accelerator creates the Data Vault model based on metada
 
  The initial metadata is generally imported from a source system, however the BimlFlex accelerator also allows direct acceleration from an object (such as an imported view) through the **Staged Query** approach.
 
-**Source metadata decoration**
+### Source metadata decoration
 
 By decorating the source metadata with additional information for the Accelerator, it is possible to load the Data Vault directly from the staged data from the source. This is used when the source representation somewhat matches the Data Vault Target model. An example is a source table with Product information that should be loaded to a Product Hub and a Product Satellite. By decorating the source object metadata with additional attributes, such as the Business Name, the Accelerator can create the Data Vault straight from the source. This is a straight-forward and convenient way to model and load the Data Vault without requiring additional metadata entities.
 
-**Staged Query metadata acceleration**
+### Staged Query metadata acceleration
 
 If the Data Vault modeling and load requirements are more complex, BimlFlex allows the use of a Staged Query object to load the Data Vault. This is often used when the source data needs to be manipulated before it is fit for loading to the Data Vault. Some examples where this is used could be when the data from multiple tables needs to be joined for a complete dataset for the Data Vault load, or when a source table contains multiple entities that should be split into multiple Data Vault loads.
 
@@ -47,7 +47,7 @@ The Accelerator derives the initial model information from source metadata. Base
 
 Before considering the acceleration, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target Data Vault model, so some analysis and modeling is required.
 
-BimlFlex supports this through the [**Business Modeling**](xref:bimlflex-business-modeling) feature. This assists the modeler to define an initial model that is agnostic of the available data soruces.
+BimlFlex supports this through the [**Business Modeling**](xref:bimlflex-business-modeling) feature. This assists the modeler to define an initial model that is agnostic of the available data sources.
 
 The technical implementation in the source is then tweaked to match the expected Data Vault model using either source metadata decoration or the staged query approach.
 
@@ -217,11 +217,11 @@ There are modeling actions available on most of the tables and columns in the pr
 
 When clicking the object header for a Satellite the following actions might be available:
 
-**Remove RecordSource**
+#### Remove RecordSource
 
 When a Satellite has an automatic name that includes the connection Record Source, this action will remove the Record Source code from the Satellite name. Using the Record Source in the name allows for automatic source agnosticism in the Data Vault, removing it is a modeling choice.
 
-**Revert Split**
+#### Revert Split
 
 If a source object has been split to load several Satellites, then split Satellites can have the slit reverted from the object context menu. This will restore the columns into the original Satellite.
 
@@ -229,11 +229,11 @@ If a source object has been split to load several Satellites, then split Satelli
 
 When clicking a column for a Satellite the following actions might be available:
 
-**Exclude From DV**
+#### Exclude From DV
 
 Choose this to exclude the column from the Data Vault load. The column will still be loaded from source to staging/persistent staging if applicable, but will be excluded from the Data Vault load.
 
-**Split Satellite**
+#### Split Satellite
 
 Choose this to slit one or more columns into its own Satellite. This allows maintaining multiple Satellites loaded from the same source object. Splitting Satellites allows control over different rates of change, different storage locations for target tables and context management.
 
@@ -241,11 +241,9 @@ Choose this to slit one or more columns into its own Satellite. This allows main
 
 When clicking the object header for a Link the following actions might be available:
 
-**Split Link**
+#### Split Link
 
 When two or more Links have been joined, it is possible to revert that action and 'split' the Links into individual relationships.
-
-### Context Action for Satellite Columns
 
 ## Drag and Drop Actions
 

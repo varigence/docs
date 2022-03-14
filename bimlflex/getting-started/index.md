@@ -24,6 +24,7 @@ The introductory videos provide a quick and easy overview of BimlFlex in video f
 
 Get straight into building a project in BimlFlex!
 
+* [An overview of the BimlFlex components](xref:bimlflex-components-overview)
 * [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough)
 * [BimlFlex Configuration Overview](xref:bimlflex-getting-started-initial-configuration)
 

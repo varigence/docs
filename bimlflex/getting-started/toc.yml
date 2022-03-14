@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: BimlFlex Components
+  href: bimlflex-components-overview.md  
 - name: Introductory Videos
   href: intro-videos.md
 - name: Initial Configuration Overview

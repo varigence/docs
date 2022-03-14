@@ -26,7 +26,7 @@ The BimlFlex Developer installation includes all components used in the BimlFlex
 * BimlFlex Excel-based metadata editor
 * SSIS Custom Components for SQL Server
 * SSIS Custom Components for Snowflake
-* Installation of new, or upgrades of existing, [BimlFlex](xref:bimlflex-components-metadata-database) and [BimlCatalog](xref:bimlflex-components-bimlcatalog-database) databases
+* Installation of new, or upgrades of existing, [BimlFlex](xref:bimlflex-setup-metadata-database-installation) and [BimlCatalog](xref:bimlflex-setup-bimlcatalog-database-installation) databases
 
 The first time BimlStudio or the BimlFlex Excel Add-in file is opened from a BimlFlex project it will ask for a license key. Add a BimlFlex-enabled license key to enable the application. The key is validated online and once validation completes it is possible to run the applications. It is also possible to add the license key through the installation program.
 

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 # Parameter Editor
 
 Parameters for load queries are added either as metadata in the Parameters sheet or via Extension Points.
-For high watermark delta loads and similar simple parameters adding the **Parameter** to the metadata will generate and include all required logic to the load process.
+For high water mark delta loads and similar simple parameters adding the **Parameter** to the metadata will generate and include all required logic to the load process.
 
 Extension Points can be added for more complex parameters that require custom logic.
 
@@ -84,7 +84,7 @@ The Search field will return results in real-time, only presenting Parameters co
 | Object | The **Object** this parameter is associated with.  Must be an existing **Object**. |
 | Column | The **Column** this parameter is associated with.  Must be an existing **Column**. |
 | Parameter | The name of the parameter. |
-| Operator | This defines the operator used in the `WHERE` clause in the source select query. For a high watermark load pattern, the `>` is commonly used to load data with a higher value than the last time. |
+| Operator | This defines the operator used in the `WHERE` clause in the source select query. For a high water mark load pattern, the `>` is commonly used to load data with a higher value than the last time. |
 | Default | The parameter load value to use for the first load. |
 | Data Type | The Data Type to use for the parameter. For Dates, this is commonly defined as `String` as SSIS sometimes finds it easier to deal with string representations.  Must be a valid [Data Type](#data-types). |
 | Parameter Sql | The SQL Query to use to derive the new parameter value, commonly used to get the max value from the loaded data and use that as the from parameter value in the next load. |

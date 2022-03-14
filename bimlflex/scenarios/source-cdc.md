@@ -35,7 +35,7 @@ The Metadata required for the object load is imported from the base tables. The 
 
 ## Parameters
 
-The CDC Process uses an automatically created high watermark parameter for loading that equates to the last loaded max LSN and its corresponding mapped date time.
+The CDC Process uses an automatically created high water mark parameter for loading that equates to the last loaded max LSN and its corresponding mapped date time.
 
 ## Configuration Overrides and Considerations
 

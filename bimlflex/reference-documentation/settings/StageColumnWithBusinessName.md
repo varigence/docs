@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Stage Column With Business Name
 
-When defining a Model Override name for a column, setting this to true will use the override name as the staging column name.
+When defining a Business Name for an Column in the Business Overrides section, setting this to true will use the Business Name as the staging column name.
 
 Notes:
 

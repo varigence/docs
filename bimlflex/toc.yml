@@ -11,9 +11,6 @@
   - name: Concepts
     href: concepts/toc.yml
 
-  - name: BimlFlex Components
-    href: bimlflex-components/toc.yml    
-
   - name: BimlFlex App
     href: metadata-editors/toc.yml
 

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Stage Object With Business Name
 
-When defining a Model Override name for an object, setting this to true will use the override name as the staging table name.
+When defining a Business Name for an Object in the Business Overrides section, setting this to true will use the Business Name as the staging table name.
 
 Notes:
 

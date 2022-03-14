@@ -152,14 +152,14 @@ Additional reading is provided under the [Detailed Configuration](#detailed-conf
 
 In addition to the scenario given the example, BimlFlex support multiple Integration Stages and Target Warehouse Platforms.
 The following sections outline the specific considerations when Azure Data Factory across various architectures and platforms.
-Although features are highlight that are [Azure Synapse](xref:bimlflex-synapse-implementation) or [Snowflake](xref:bimlflex-snowflake-implementation) specific, the following articles are only designed to highlight the Azure Data Factory implications.
+Although features are highlight that are [Azure Synapse](xref:bimlflex-synapse-implementation) or [Snowflake](xref:bimlflex-snowflake-configuration-overview) specific, the following articles are only designed to highlight the Azure Data Factory implications.
 The referenced implementation guides should still be consulted prior to deploying an Azure Data Factory using either platform.
 
 > [!TIP]
 > For additional details on Target Warehouse Platforms refer to the below guides:
 >
 > * BimlFlex Docs: [Synapse Implementations](xref:bimlflex-synapse-implementation)
-> * BimlFlex Docs: [Snowflake Implementation with ADF](xref:bimlflex-snowflake-implementation)  
+> * BimlFlex Docs: [Snowflake Implementation with ADF](xref:bimlflex-snowflake-configuration-overview)
 
 ### Configuring a Landing Area
 

@@ -4,8 +4,10 @@
   href: system-requirements.md
 - name: Installing BimlFlex
   href: installing-bimlflex.md
-- name: Installing the Metadata Database
+- name: Installing the BimlFlex Database
   href: installing-metadata-database.md
+- name: Installing the BimlCatalog Database
+  href: installing-bimlcatalog-database.md  
 - name: Installing an SSIS Server
   href: installing-ssis-server.md
 - name: Installing a BimlFlex Build Server

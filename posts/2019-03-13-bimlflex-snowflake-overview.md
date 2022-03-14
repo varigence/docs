@@ -31,7 +31,7 @@ BimlFlex makes this super easy and support all the major source systems you simp
 
 Getting your data into Snowflake is actually quite easy to automate using the recommended Snowflake Stage with SnowSql path. Other options using S3, [Azure Blob Storage](https://azure.microsoft.com/en-au/services/storage/blobs/) or [Azure Data Lake](https://azure.microsoft.com/en-us/solutions/data-lake/) is also available, but that is for another day.
 
-Well, actually it turns out that it is not quite that simple because you have to accommodate for change data capture and high watermark source extracts. Luckily we have already solved this for our [Azure SQL Data Warehouse](https://azure.microsoft.com/en-au/services/sql-data-warehouse/) templates and it turns out that being able to split the extract into multiple files has measurable performance improvement when loading the data into Snowflake using their `COPY` command.
+Well, actually it turns out that it is not quite that simple because you have to accommodate for change data capture and high water mark source extracts. Luckily we have already solved this for our [Azure SQL Data Warehouse](https://azure.microsoft.com/en-au/services/sql-data-warehouse/) templates and it turns out that being able to split the extract into multiple files has measurable performance improvement when loading the data into Snowflake using their `COPY` command.
 
 ![Snowflake Multi Thread Files](images/bimlflex-snowflake-multi-thread-files.png "Snowflake Multi Thread Files")
 
