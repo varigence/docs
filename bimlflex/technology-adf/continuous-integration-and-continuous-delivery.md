@@ -64,5 +64,5 @@ Remove-Item -Path $destinationRoot\DatabaseProjects\$databaseProjectName\ -Force
 Copy-Item -Path $sourceRoot\SSDT\Current\$databaseProjectName\ -Filter "*.*" -Recurse -Destination $destinationRoot\DatabaseProjects\ -Container -Force
 ```
 
- [!NOTE]
+> [!NOTE]
 > In the example above, the SSDT project is also copied. This is because the entire database project (structure) can also be built and deployed using build pipelines. The recommended approach is to keep these artifacts in the same Git repository.
