@@ -14,18 +14,18 @@ Microsoft has made Delta Lake connectors available for Azure Data Factory (ADF) 
 
 There are many ways to do this. Fundamentally, there is a split between where the data resides (storage) and where the processing takes place (compute). The technologies used for each of these components defines the technical architecture to a large extent.
 
-For example, you can use a Databricks cluster to store files in the local storage or *mount* a file or directory from the Data Lake or other file storage provider. You can also use connectors to access Data Lake files from Databricks so that other data sources (including Data Lake) can be made available without necessarily using the local storage.
+For example, you can use an existing Databricks cluster to store files in the local storage or *mount* a file or directory from the Data Lake or other file storage provider. You can also use connectors to access Data Lake files from Databricks so that other data sources (including Data Lake) can be made available without necessarily using the local storage.
 
 When connecting to the cluster via ADF (Linked Service) you can run queries against this existing cluster and its tables using the Delta Lake layer. The cluster will do the compute, and the result can be written to a sink as defined in ADF. Delta Lake will manage transaction control.
 
 The Data Lake is fundamentally a file-based environment, but the transaction controls that Delta Lake provides allow it to be used as a relational database to some extent.
 
-Data Flows provides an additional approach for using the Delta Lake. Data Flows can use integration runtimes for the compute without requiring a separate cluster that hosts the actual Delta Lake storage layer. This is the _inline_ feature, and makes it possible to configure an Azure Storage Account (Azure Data Lake Gen2) and use the Delta Lake features without any further configuration.
+Data Flows provides an additional approach for using the Delta Lake. Data Flows can use integration runtimes for the compute without requiring a separate cluster that hosts the actual Delta Lake storage layer. This is the *inline* feature, and makes it possible to configure an Azure Storage Account (Azure Data Lake Gen2) and use the Delta Lake features without any further configuration.
 
 To summarize:
 
 * ADF Pipelines can connect to *existing* Databricks clusters using an 'Azure Databricks Delta Lake' Linked Service. This way queries can be run against the Delta Lake, but only when a cluster is available. Queries cannot be run against the Data Lake directly, a cluster is always needed
-* Data Flows can connect to Data Lakes directly and interact with these as if they were databases using inline processing through the Delta Lake connector. This does not support querying so all transformations need to be specific in the data flow
+* Data Flows can connect to Data Lakes directly and interact with these as if they were databases using inline processing through the Delta Lake connector. This does not support querying so all transformations need to be specified in the data flow
 
 ## Use Cases
 

@@ -12,3 +12,7 @@
   href: interactive-build.md
 - name: Command Line Build
   href: command-line-build.md
+- name: Concurrent Development
+  href: concurrent-development.md
+- name: Continuous Integration and Delivery
+  href: continuous-integration-and-delivery.md

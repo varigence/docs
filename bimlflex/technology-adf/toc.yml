@@ -10,11 +10,9 @@
   href: using-powershell.md
 - name: Managing Sensitive Data
   href: sensitive-info-management.md
-- name: Concurrent Development
-  href: concurrent-development.md
 - name: ARM Template Handling
   href: bfx-arm-templates.md
 - name: Project and Batch Organization
   href: project-batch-structure-in-adf.md
-- name: Azure Function App
-  href: azure-function-app.md
+- name: Azure Function Bridge
+  href: azure-function-bridge.md

@@ -8,19 +8,19 @@
   - name: Getting Started
     href: getting-started/toc.yml
 
-  - name: Concepts
+  - name: BimlFlex Concepts
     href: concepts/toc.yml
 
   - name: BimlFlex App
     href: metadata-editors/toc.yml
 
-  - name: Build & Deployment
+  - name: Development, Build & Deployment
     href: build-and-deployment/toc.yml
 
   - name: BimlFlex for Azure Data Factory
     href: technology-adf/toc.yml
 
-  - name: BimlFlex for Azure Mapping Data Flows
+  - name: BimlFlex for Mapping Data Flows
     href: technology-data-flow/toc.yml
 
   - name: BimlFlex for SQL Server Integration Services
