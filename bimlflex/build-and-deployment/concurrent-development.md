@@ -9,11 +9,12 @@ varigenceArticleType: Conceptual
 
 Most BimlFlex deployments feature several teams working on the same data solution at the same time. A successful combination of concurrent development and regular data solution maintenance normally involves several features in BimlFlex for support.
 
-This section covers various scenarios on how to manage bigger teams to work on shared metadata.
+This section covers various scenarios on how to manage bigger teams that are working on shared metadata.
 
  [!NOTE]
-> The concepts in this section are closely related to Continuous Integration / Continuous Delivery (CI/CD). Varigence has provided specific guides related to this for ADF and SSIS:
+> The concepts in this section are closely related to Continuous Integration / Continuous Delivery (CI/CD). Varigence has provided specific guides related to this for ADF and SSIS, as well as a more generic one:
 >
+> * [CI/CD using BimlFlex](xref:bimlflex-continuous-integration-and-delivery)
 > * [CI/CD using SSIS](xref:bimlflex-ssis-continuous-integration-and-continuous-delivery)
 > * [CI/CD using ADF](xref:bimlflex-adf-continuous-integration-and-continuous-delivery)
 
@@ -21,25 +22,25 @@ This section covers various scenarios on how to manage bigger teams to work on s
 
 Use a single [BimlFlex (metadata) database](xref:bimlflex-setup-metadata-database-installation). The metadata database is a development resource and does not need to be provisioned per environment. It is only used by the development team.
 
-The [BimlCatalog](xref:bimlflex-setup-bimlcatalog-database-installation) audit and logging database is used at run time by the loading processes. The BimlCatalog needs to be available as a separate database in each environment. This is because [parameter](xref:bimlflex-concepts-metadata-parameters) and configuration values are stored, and these are related directly to the data logistics processes. It is also important that each BimlCatalog database is backed-up regularly, because it is an essential component to maintain a correct audit trails and parameter integrity.
+The [BimlCatalog](xref:bimlflex-setup-bimlcatalog-database-installation) audit and logging database, however, is used at run time by the loading processes. The BimlCatalog needs to be available as a separate database in each environment. This is because [parameter](xref:bimlflex-concepts-metadata-parameters) and configuration values are stored, and these are related directly to the data logistics processes. It is also important that each BimlCatalog database is backed-up regularly, because it is an essential component to maintain a correct audit trails and parameter integrity.
 
 ## Customers and Versions
 
-The recommended approach is to use a single [Customer](xref:bimlflex-concepts-customer) per target data solution. Most projects will have a single data solution, and thus only need a single Customer defined in BimlFlex.
+The recommended approach is to use a _single_ [Customer](xref:bimlflex-concepts-customer) per target data solution. Most projects will have a single data solution, and thus only need a single Customer defined in BimlFlex.
 
 Use [Versions](xref:bimlflex-concepts-version) to progress through development cycles. For sprint scenarios, name the current Version after the current sprint, e.g. 'Sprint 23'.
 
-Using a single Customer, and making sure all developers work on the same Version, means that all artifacts are located in a single BimlFlex metadata context. This will also direct the compiler to generate a SQL Server Data Tools (SSDT) database project that represents a complete database, and that all shared artifacts for the Data Vault are co-located.
+Using a single Customer, and making sure all developers work on the same Version, means that all artifacts are located in a single BimlFlex metadata context. This will also direct the compiler to generate a SQL Server Data Tools (SSDT) database project that represents a complete database, and that all shared artifacts are co-located.
 
-This simplifies the building of [Point-In-Time](xref:bimlflex-data-vault-concept-pit) constructs across data from multiple sources, and also makes it possible to track any potential object name collisions in the target layer.
+This simplifies the building of [Point-In-Time](xref:bimlflex-data-vault-concept-pit) constructs across data from multiple sources, and more generally makes it possible to track any potential object name collisions in the target layer.
 
 ## Use exclusions for work separation
 
 BimlFlex has a metadata exclusion feature, **Exclude From Model**, that can be used to exclude metadata from the current scope. This is available both globally, and for individual developers. This property can be set on most of the metadata components in BimlFlex.
 
-For example, a global exclusion at [Project](xref:bimlflex-project-editor) level can be used for the scenario that source system metadata has been imported, but that needs to be put on hold while a more high-priority source is processed. The global exclusion for that project will hide it completely from the visible metadata. Once the project is ready to be picked up, it can be included back into the live metadata set.
+For example, a global exclusion at [Project](xref:bimlflex-project-editor) level can be used for the scenario that operational system metadata has been imported, but that needs to be put on hold while a more high-priority data set is processed. The global exclusions for that project will hide it completely from the visible metadata. Once the project is ready to be picked up, it can be included back into the live metadata set by disabling the Exclude From Model slider.
 
-For scenarios where multiple developers work on different sources or projects in the same repository, use the **Use My Exclusions** feature to exclude the Projects that are currently out of scope for each developer. This typically includes already delivered Projects, as well as Projects other teams are working on.
+For scenarios where multiple developers work on different data sets or Projects in the same repository, use the **Use My Exclusions** feature to exclude the Projects that are currently out of scope for each developer. This typically includes already delivered Projects, as well as Projects other teams are working on.
 
 The following example scenario illustrates the process:
 
@@ -57,9 +58,13 @@ The developers within each Team collaborate and communicate on their respective 
 
 ## Automated build considerations
 
-The recommended approach is to use a dedicated Version for the build (compilation) process. Before running a build, always clone the current version to a dedicated 'build' version - e.g. the build Version is used by the automated build process.
+The recommended approach is to use a dedicated Version for the build (compilation) process. Before running a build, always **clone** the current version to a dedicated 'build' version - e.g. the build Version is used by the automated build process.
 
-When a build is needed, commit the current repository with the required Extension Points, merge the repository to the build branch in source control, and clone the metadata to the build version, overwriting the existing build version.
+ [!NOTE]
+> When cloning versions, if possible please us a _new_ name for the clone so that a history of build versions are retained.
+> By using naming conventions for the build version, the latest one can be retrieved by querying the BimlFlex database for use in automated pipelines.
+
+When it is time to process a build, commit the current repository with the required Extension Points, merge the repository to the build branch in source control, and clone the metadata to the build version, overwriting the existing build version.
 
 A pipeline can be used to build the outputs from the committed data in the build branch, using Build version metadata.
 

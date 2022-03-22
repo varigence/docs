@@ -17,11 +17,13 @@ In this document the following approaches are discussed:
 * Manual automation of build and deployment steps using command line scripts
 * Automatic build and processing of changes through a build server pipeline
 
-The manual scripted approach is a low-cost entry into automation that it doesn't rely on configuring build servers or pipelines. It allows developers and testers to script and use the same process over and over again to build and deploy a solution.
+The manual scripted approach is a low-cost entry into automation, that it doesn't rely on configuring build servers or pipelines. It allows developers and testers to script and use the same process over and over again to build and deploy a solution.
 
-The automated, build server-based approach takes a slightly different approach in that it builds an automatic deployment out of the contents of a source repository/source control project.
+The automated, build server-based approach takes a slightly different approach in that it builds an automatic deployment from the contents of a source control project.
 
-For a data solution, it is not enough to make sure the structures and processes are in place for the builds and deployments. The dependencies and outcomes of the data itself also needs to be taken into account. Compared to regular software development, in essence the build and deployment is half the work. Once the artifacts are in place, the data still needs to be adjusted to fit into the new structures and data logistics process will have to run to reflect the changes of the design in the data.
+For a data solution, it is not enough to make sure the data structures and data logistics processes that result from a build are properly deployed. While this is an important firs step, the dependencies and outcomes of the data itself _also_ needs to be taken into account. Compared to regular software development, the build and deployment in essence is half the work. Once the artifacts are in place, the data still needs to be adjusted to fit into the new structures and data logistics process will have to run to reflect the changes of the design in the data.
+
+In short: a full deployment includes the build and deployment as well as an execution of the data logistics processes.
 
 ## Platform-specific CI/CD considerations
 
@@ -43,8 +45,6 @@ In this section, the following approaches are discussed:
 
 #### Manual / scripted approach
 
-The manual or scripted approach is a low-cost entry into automation that it doesn't rely on configuring build servers or pipelines. It allows developers and testers to script and use the same process over and over again to build and deploy a solution.
-
 As part of the build process, BimlFlex will by default generate the SQL Server Data Tools (SSDT, or 'database') project that contains the SQL artifacts used for the project. In addition, all of the data logistics artifacts will be created for the target platforms. For example, SSIS packages, ADF ARM templates and JSON files or Stored Procedure scripts.
 
 BimlFlex will also generate starter scripts for deployment that contain pre-populated connection settings based on the BimlFlex design metadata. These scripts are available in the `Deploy` directory that is part of the BimlStudio build output.
@@ -53,7 +53,7 @@ These scripts can be called, either directly or via another script, to build the
 
 #### Build server based approach
 
-The automated, build server-based approach takes a slightly different approach in that it builds an automatic deployment out of the contents of a source repository/source control project. In this approach, the output artifacts are moved or copied to a source control repository (e.g. Git) from which a commit can trigger a build process.
+The automated, build server-based approach takes a slightly different approach in that it builds an automatic deployment from the contents of a source control repository. In this approach, the output artifacts are moved or copied to a source control repository (e.g. Git) from which a commit can trigger a build process.
 
 ## Special considerations when using Extension Points
 
