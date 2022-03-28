@@ -99,12 +99,12 @@ One major advantage of using Script Activities is broader support for connection
 
 ### Data Vault Accelerator
 
-* Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. 'Business Subject' on the relationship building column defines the full LInk table name
+* Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. The 'Business Subject' on the relationship building column defines the full LInk table name
 * Fixed a bug that replicated a Source Object in the side panel when updating the Business Name
 
 ### Schema Diagram
 
-* Fixed a bug where creating a relationship to a non-IK column drew a line, but did nothing else
+* Fixed a bug where creating a relationship to a non-Integration Key column drew a line, but did nothing else. It is now not possible anymore to draw a relationship where this is not supported
 * Fixed a bug where columns that could not be used to create a reference were allowed to be connected
 * Fixed a bug where selecting 'Show Related' from the context menu would only show outgoing relationships
 
@@ -132,8 +132,8 @@ One major advantage of using Script Activities is broader support for connection
 ### ADF
 
 * Fixed a bug where default values for ADF pipeline parameters were not correctly generated. While this does not cause issues when running the batch processes, it makes debugging or running individual pipelines harder than it needs to be. Parameter default values are now set with correct values for every pipeline
-* Added support for `Stage With Model Override Name` for ADF for **Objects** and **Columns**
-* `Stage With Business Name` now correctly uses 'Business Name' at **Object** and **Column** level, if corresponding setting is checked
+* Ensured correct operation of the `Stage With Model Override Name` setting for ADF for **Objects** and **Columns**
+* Ensured that `Stage With Business Name` now correctly uses the 'Business Name' at **Object** and **Column** level
 * Fixed a bug where parameters for the Data Mart were generating the 'GET' tasks, but not the 'SET' tasks in some scenarios
 
 ### Snowflake
