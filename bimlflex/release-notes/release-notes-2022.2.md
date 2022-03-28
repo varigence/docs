@@ -43,28 +43,23 @@ One major advantage of using Script Activities is broader support for connection
 
 ### Various
 
-* Added the automatic installation of `vcredist` to application installer. This caused some errors in a clean installation in rare cases
-* Added support for Extension Points to target implicitly named **Batches**, such as the RDV Individual Batches for separate record sources
-* Added [archive] tables to all Execution and Audit tables to improve performance and reduce deadlocks.
+* Added the automatic installation of `vcredist` to the application installer. This caused some errors in a clean installation in rare cases
+* Added [archive] tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the BimlFlex App
 * Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have functional high water mark parameters
-* Added a Staged Query ELT feature, allowing in-database Staging-to-PSA processes without needing to use an external engine.
-* Added validation warnings on pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked have different databases
+* Added validation warnings for pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked are configured to have different databases. Pushdown processing only works if the connections point to the same database
 
 ### Connection Editor
 
-* Ensured that all Connection Editor validators available in the BimlStudio validation framework are also available in the BimlFlex application
-* Changed the styling of ADF tabs for Connection String and Azure Key Vault, to better convey "one or the other" selection
+* Ensured that all **Connection Editor** validators that are available in the BimlStudio validation framework are also available in the BimlFlex application
+* Changed the styling of ADF tabs for Connection String and Azure Key Vault, to better convey 'one or the other' selection
 
 ### Business Modeling
 
-* Added data entry validators on Business Attribute Editor when known impossible combinations of fields were present
+* Added data entry validators on the **Business Attribute Editor** to prevent entering impossible combinations of fields
 
 ### Azure Data Factory (ADF)
 
-* Added support for 'StageWithModelOverrideName' for ADF for **Objects** and **Columns**
-* 'StageWithBusinessName' now correctly uses 'Business Name' at **Object** and **Column** level, if corresponding setting is checked
-* Added feature to allow ADF Post Copy Extension Point to sit between main process and a 'Set Parameter' (or any other activity) if available
-* Added feature to connect ADF Post Copy Extension Point to subsequent Activities, if present
+* Added feature to connect ADF Post Copy Extension Point to subsequent Activities, if present. For example, the setting of parameters
 
 ### Mapping Data Flows  
 
@@ -76,9 +71,8 @@ One major advantage of using Script Activities is broader support for connection
 
 ### SSIS
 
-* Added a setting to use 'UseCustomComponents' that will remove all SSIS Custom Components from all SSIS templates.
-* Added SSIS Data Flow properties to Extension Points for FELC properties.
-* Added "Setting" for continue on failure that changes Error Handling.
+* Added a setting to use `Use Custom Components` that will remove all SSIS Custom Components from all SSIS templates in favour of native components
+* Added SSIS Extension Point at Data Flow level to control For Each Loop Container (FELC) properties
 
 ## BimlFlex 2022 R2 - Bug Fixes
 
@@ -87,34 +81,32 @@ One major advantage of using Script Activities is broader support for connection
 * Fixed an issue where certain tooltips would not be displayed when hovering over the BimlFlex user interface component
 * Fixed a bug where saving items in the App would sometimes generate a constraint error
 * Fixed a bug where imported metadata sometimes did not use local connection strings when configured to do so
-* Fixed an issue in the generated BimlScript where the Dynamics 'ServicePrincipalCredentialKVS' XML was missing a closing tag, causing build errors
+* Fixed an issue in the generated BimlScript where the Dynamics `ServicePrincipalCredentialKVS` XML was missing a closing tag, causing build errors
 * Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog staging 'Extracted Metadata empty, extraction failed'. This has now been corrected
-* Fixed a bug where 'Use My Exclusions' did not exclude **Column**, **Connection**, **Object**, and **Project** entities even though these were marked as excluded
+* Fixed a bug where `Use My Exclusions` did not exclude **Column**, **Connection**, **Object**, and **Project** entities even though these were marked as excluded
 * Removed 'Data Warehouse SQL by Source' option from the BimlFlex Bundle options for code generation. Functionally, all data warehouse SQL emission is now controlled by the 'Data Warehouse SQL' option
 * Fixed various smaller issues related to Multi-Factor Authentication (MFA), which mitigates certain known issues in the installer and DACPAC deployment
-
-* Fixed a bug where the Function App lists soft-deleted blobs, causing copy to fail. The listing will now only include and copy actual files.
-* Fixed a bug where Data Type Mappings were not applied to Delete landing tables.
-* Fixed a bug where parameters for the Data Mart were generating the 'GET' tasks but not the 'SET' tasks.
-* Fixed a bug regarding the mismanagement of the CLOB datatype.
-* Fixed application-wide instances of navigation icon(s) overlapping column text.
-* Fixed a bug that produced an incorrect error message when creating a new Customer and Version in the BimlCatalog.
-* Changed the 'Snapshot' feature to include everything, including 'excluded' or 'deleted' items to allow users to create a snapshot, and then after a rollback, include the excluded items again.
+* Fixed a bug where the Azure Function Bridge failed due to listing soft-deleted blob containers. The listing will now only include and copy actual files
+* Fixed a bug where Data Type Mappings were not applied to Delete process landing tables
+* Fixed a bug where the Oracle CLOB datatype was not properly generated in BimlScript
+* Fixed application-wide instances of navigation icon(s) overlapping column text
+* Fixed a bug that produced an incorrect error message when creating a new **Customer** and **Version** in the BimlCatalog in some cases
+* Changed the **Snapshot** feature to include everything, including `excluded` or `deleted` items. This makes it possible to consistently create a snapshot, and then after a rollback, include the previously excluded items again
 
 ### Data Lineage Editor
 
-* Fixed a bug where removing a relationship or reference prevented the ability to save.
+* Fixed a bug where removing a relationship or reference prevented the ability to save the metadata
 
 ### Data Vault Accelerator
 
 * Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. 'Business Subject' on the relationship building column defines the full LInk table name
-* Fixed a bug that replicated a Source Object in the side panel when updating the Business Name.
+* Fixed a bug that replicated a Source Object in the side panel when updating the Business Name
 
 ### Schema Diagram
 
-* Fixed a bug where creating a relationship to a non-IK column drew a line, but did nothing else.
-* Fixed a bug where columns that could not be used to create a reference were allowed to be connected.
-* Fixed a bug where selecting 'Show Related' from the context menu would only show outgoing relationships.
+* Fixed a bug where creating a relationship to a non-IK column drew a line, but did nothing else
+* Fixed a bug where columns that could not be used to create a reference were allowed to be connected
+* Fixed a bug where selecting 'Show Related' from the context menu would only show outgoing relationships
 
 ### Connection Editor
 
@@ -140,6 +132,9 @@ One major advantage of using Script Activities is broader support for connection
 ### ADF
 
 * Fixed a bug where default values for ADF pipeline parameters were not correctly generated. While this does not cause issues when running the batch processes, it makes debugging or running individual pipelines harder than it needs to be. Parameter default values are now set with correct values for every pipeline
+* Added support for `Stage With Model Override Name` for ADF for **Objects** and **Columns**
+* `Stage With Business Name` now correctly uses 'Business Name' at **Object** and **Column** level, if corresponding setting is checked
+* Fixed a bug where parameters for the Data Mart were generating the 'GET' tasks, but not the 'SET' tasks in some scenarios
 
 ### Snowflake
 
@@ -153,3 +148,7 @@ One major advantage of using Script Activities is broader support for connection
 ### SSIS
 
 * Fixed a bug where the `Process Subfolders` SSIS setting was not consistently applied to the Delete processes. SSIS Delete processes now correctly traverse subfolders / subdirectories
+
+### Extension Points
+
+* Fixed an issue where targeting _implicitly_ named **Batches**, such as the Raw Data Vault batches, did to work. You can now correctly target Batch pipelines by their name in all cases
