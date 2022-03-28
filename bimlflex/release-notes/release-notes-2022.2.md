@@ -6,62 +6,73 @@ summary: Release Notes for BimlFlex 2022 R2
 
 # Release Notes
 
-> [!NOTE]
-> Please make sure databases and projects are backed up before upgrading.  
-> Please email support@bimlflex.com with any installation or upgrade issues.
+Varigence is excited to release the 2022 R2 version of the BimlFlex platform for data solution automation!
 
-## BimlFlex 2022 R2
+> [!NOTE]
+>
+> * Please make sure databases and projects are backed up before upgrading
+> * Please email support@bimlflex.com with any installation or upgrade issues
+
+## Installation
 
 BimlFlex 2022 R2 is installed and upgraded through a single consolidated installer.
 
-## Latest Release
-
 Build 22.2.xx.x, release date: DD MMM YYYY
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
-    This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
-    This installer includes the required runtime components for servers that will execute SSIS packages
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
-## 2022 R1 New Features
+## BimlFlex 2022 R2 - New Features
 
-* Added support for Azure Data Factory (Scott said "all the ADF stuff would be a new feature, but I don't quite know how to phrase that)
+### Pushdown Extraction
 
-## BimlFlex 2022 R2 - Added Support
+With the 2022 R2 release, it is now possible to use the new [**Pushdown Extraction** feature](https://www.varigence.com/Blog/Post/112) to integrate data without requiring a separate landing step or Copy Activity. This feature can be considered when a 'source' operational system shares the technical environment with the data solution. For example, when the 'source' is located on the same database server as the data solution. In scenarios such as these, it can be efficient to make sure _all_ processing occurs in this environment. This way, the data does not have to 'leave' the environment to be processed.
 
-### Various New Support
+### Script Activity
 
-* Added the automatic installation of `vcredist` to application installer.
-* Added MFA support to application installer for dacpac deployment.
-* Added support for Extension Points to target implicitly named **Batches**, such as the RDV Individual Batches for separate record sources.
+Added support for [Azure Data Factory Script Activity](https://www.varigence.com/Blog/Post/113). The Script Activity provides a versatile way to execute SQL statements against the configured connection. BimlFlex now uses the Script Activity in many patterns that previously used Lookup or Stored Procedure Activities. While this is not a functional difference, it makes the resulting pipelines easier to understand and debug - if required.
+
+The use of Script Activities is not supported for Salesforce and Dynamics connections at the time of release. These data sets will still be connected to using either Lookup or Stored Procedure activities, until ADF supports the use of Script Activities for these connection types.
+
+One major advantage of using Script Activities is broader support for connection types such as Snowflake. Our patterns have been updated to use the Script Activity instead of the proprietary Azure Function Bridge solution that was in place up to this release.
+
+> [!IMPORTANT]
+> The use of the Script Activity in combination with Self Hosted Integration Runtimes requires the runtime to be upgraded to v15.5 or higher. If your Self Hosted Integration Runtime is of a lower version, upgrading this is required to correctly execute the pipelines.
+
+## BimlFlex 2022 R2 - Improvements
+
+### Various
+
+* Added the automatic installation of `vcredist` to application installer. This caused some errors in a clean installation in rare cases
+* Added support for Extension Points to target implicitly named **Batches**, such as the RDV Individual Batches for separate record sources
 * Added [archive] tables to all Execution and Audit tables to improve performance and reduce deadlocks.
-* Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have functional high water mark parameters.
+* Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have functional high water mark parameters
 * Added a Staged Query ELT feature, allowing in-database Staging-to-PSA processes without needing to use an external engine.
-* Added validation warnings on pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked have different databases.
+* Added validation warnings on pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked have different databases
 
 ### Connection Editor
 
-* Ensured that all Connection Editor validators available in the BimlStudio validation framework are also available in the BimlFlex application.
-* Changed the styling of ADF tabs for Connection String and Azure Key Vault, to better convey "one or the other" selection.
+* Ensured that all Connection Editor validators available in the BimlStudio validation framework are also available in the BimlFlex application
+* Changed the styling of ADF tabs for Connection String and Azure Key Vault, to better convey "one or the other" selection
 
 ### Business Modeling
 
-* Added data entry validators on Business Attribute Editor when known impossible combinations of fields were present.
+* Added data entry validators on Business Attribute Editor when known impossible combinations of fields were present
 
 ### Azure Data Factory (ADF)
 
-* Added support for 'StageWithModelOverrideName' for ADF for **Objects** and **Columns**.
-* 'StageWithBusinessName' now correctly uses 'Business Name' at **Object** and **Column** level, if corresponding setting is checked.
-* Added feature to allow ADF Post Copy Extension Point to sit between main process and a 'Set Parameter' (or any other activity) if available.
-* Added feature to connect ADF Post Copy Extension Point to subsequent Activities, if present.
+* Added support for 'StageWithModelOverrideName' for ADF for **Objects** and **Columns**
+* 'StageWithBusinessName' now correctly uses 'Business Name' at **Object** and **Column** level, if corresponding setting is checked
+* Added feature to allow ADF Post Copy Extension Point to sit between main process and a 'Set Parameter' (or any other activity) if available
+* Added feature to connect ADF Post Copy Extension Point to subsequent Activities, if present
 
 ### Mapping Data Flows  
 
-* Added a 'Landing' step to Mapping Data Flows templates when direct connection was not supported.
-* Added configurable container locations, including: using a directory path to be used in the container or introducing the file path control as used in flat file connections.
-* Added the ability to differentiate PSA/ODS **Object** name from STG **Object** name.
-* Added **Parameter** support for inline processes.
-* Disabled reference column validation for **Objects** that belong to a Project with the Integration Stage 'Mapping Data Flow'.
+* Enable [connectivity to data sources that are not directly supported by Mapping Data Flows](https://www.varigence.com/Blog/Post/108). When configuring a connection that is not natively supported, BimlFlex allows the user to define a 'Landing step' for the **Connection**, which directs the Mapping Data Flows templates to include an initial Copy Activity to 'land' the data before processing it further using Mapping Data Flows
+* Enabled [custom file paths for Delta Lake **Connections**](https://www.varigence.com/Blog/Post/110). This is supported by using a file path in the container definition, or by using the new File Path component which has been added too the Delta Lake **Connection** screen
+* Added the ability to differentiate PSA/ODS **Object** names from STG **Object** names, so that both object types can be loaded into the same data lake container. Previously, using the same container for PSA and STG objects would cause conflicts in writing the data
+* Added [support for **Parameters** for Mapping Data Flow templates](https://www.varigence.com/Blog/Post/109), enabling the configuration of load windows and filters
+* Added [support for **Derived Columns** in Mapping Data Flows templates](https://www.varigence.com/Blog/Post/107). This enables our users to incorporate complex bespoke logic using the data flows expression language, which will then be incorporated into the corresponding generated data flows
 
 ### SSIS
 
@@ -73,22 +84,22 @@ Build 22.2.xx.x, release date: DD MMM YYYY
 
 ### Various Application Fixes
 
-* Fixed an issue where certain tooltips would not display when hovering over control.
-* Fixed a bug where saving items would generate a constraint error in the VSTO tables due to the AddSet{Entity} web service being called multiple times.
-* Fixed a bug where imported metadata did not use local connection strings when called to use local connection strings.
-* Fixed an issue with BimlScript generation of the Dynamics 'ServicePrincipalCredentialKVS' tag body.
-* Fixed null reference exception (NRE) when accessing missing fields in metadata .json.
-* Fixed a bug where 'Use My Exclusions' were unable to exclude the following entities, when marked as excluded in the base metadata: **Column**, **Connection**, **Object**, **Project**.
-* Fixed a binding error in BimlStudio and the BimlFlex Excel add-in.
-* Removed superfluous options from within the BimlFlex Bundle options.
-* Disabled Data Views Integration template in the BimlFlex database.
+* Fixed an issue where certain tooltips would not be displayed when hovering over the BimlFlex user interface component
+* Fixed a bug where saving items in the App would sometimes generate a constraint error
+* Fixed a bug where imported metadata sometimes did not use local connection strings when configured to do so
+* Fixed an issue in the generated BimlScript where the Dynamics 'ServicePrincipalCredentialKVS' XML was missing a closing tag, causing build errors
+* Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog staging 'Extracted Metadata empty, extraction failed'. This has now been corrected
+* Fixed a bug where 'Use My Exclusions' did not exclude **Column**, **Connection**, **Object**, and **Project** entities even though these were marked as excluded
+* Removed 'Data Warehouse SQL by Source' option from the BimlFlex Bundle options for code generation. Functionally, all data warehouse SQL emission is now controlled by the 'Data Warehouse SQL' option
+* Fixed various smaller issues related to Multi-Factor Authentication (MFA), which mitigates certain known issues in the installer and DACPAC deployment
+
 * Fixed a bug where the Function App lists soft-deleted blobs, causing copy to fail. The listing will now only include and copy actual files.
 * Fixed a bug where Data Type Mappings were not applied to Delete landing tables.
 * Fixed a bug where parameters for the Data Mart were generating the 'GET' tasks but not the 'SET' tasks.
 * Fixed a bug regarding the mismanagement of the CLOB datatype.
 * Fixed application-wide instances of navigation icon(s) overlapping column text.
 * Fixed a bug that produced an incorrect error message when creating a new Customer and Version in the BimlCatalog.
-* Changed the 'Snapshot' feature to include everything, including 'excluded' or 'deleted' items to allow users to create a snapshop, and then after a rollback, include the excluded items again.
+* Changed the 'Snapshot' feature to include everything, including 'excluded' or 'deleted' items to allow users to create a snapshot, and then after a rollback, include the excluded items again.
 
 ### Data Lineage Editor
 
@@ -107,51 +118,38 @@ Build 22.2.xx.x, release date: DD MMM YYYY
 
 ### Connection Editor
 
-* Fixed a bug where 'GetSettingValue' was not being checked.
-* Fixed a bug where clicking "refresh" in the toolbar did not prompt a check for unsaved changes.
-* Fixed a bug where changing Customer or Version in the toolbar did not prompt a check for unsaved changes.
-
-* Fixed a bug where when selecting 'DB2' as 'System Type' did not generate any Linked Service Type selections.
-* Fixed a bug that when modifying a **Connection** by adding a Azure Key Vault, cleared all existing **Connection** fields.
-
-* Fixed a bug where 'Test Connection' would erroneously fail, despite successfully importing metadata.
-* Fixed issues with the Connection String Builder dialog where connection strings were not interpreted correctly.
-* Fixed a bug where Connection String Builder dialog used saved values instead of the selected values.
-* Fixed a bug in the Connection String Builder where the 'Test' button only tested connections to the SqlClient library, but failed for all other types of database systems.
-
-* Fixed a bug where a Landing Connection was able to incorrectly select itself as a 'Polybase Connection'.
-* Fixed a bug where '[+] New Connection' did not prepopulate the Integration Stage.
-* Fixed a bug where 'Add New Connection' from the Project Add Form did not show newly created connections.
+* Fixed a bug where clicking `refresh` did not prompt a check for unsaved changes
+* Fixed a bug where changing **Customer** or **Version** did not prompt a check for unsaved changes
+* Fixed a bug where when selecting `DB2` as **System Type** did not display a DB2 Linked Service option. DB2 is now selectable as Linked Service and the corresponding Linked Service code is generated accordingly
+* Fixed a bug that cleared all existing **Connection** fields when modifying a **Connection** by adding an Azure Key Vault. Previously entered details are now properly retained while configuring a connection
+* Fixed a bug where **Test Connection** would report failure, despite connecting successfully. This occurred for some non-SQL Server connections
+* Fixed issues in the **Connection String Builder** dialog where connection strings were not interpreted correctly
+* Fixed a bug where **Connection String Builder** dialog used previously saved values instead of the current entered values
+* Fixed a bug where a Landing **Connection** was able to select itself as a `Polybase Connection`, this is incorrect and not possible anymore
+* Fixed a bug where **[+] New Connection** did not pre-populate the **Integration Stage**
 * Fixed a bug where saving a record would change or reset the view from the current tree view nav selection.
-
-* Fixed a bug when switching between Linked Service Connection String and Azure Key Vault set form "guard" even when no change was made.
+* Fixed a bug where switching between **Linked Service Connection String** and **Azure Key Vault** did not prompt a check for unsaved changes
+* Fixed a bug where ADO.NET connections do not correctly connect when attempting to import metadata, or list databases in the Connection configuration // TODO Need to check if this actually gets completed. Story is https://dev.azure.com/varigence/Varigence/_workitems/edit/8700
+* Because of known issues using other Integration Runtimes than the default `AutoResolveIntegrationRuntime`, we have disabled this feature and only allow the default `AutoResolveIntegrationRuntime` to be defined for a **Connection** Linked Service. Modification to this should be made either in ADF after deployment, or by updating the ARM template after build
 
 ### Project Editor
 
-* Fixed a bug where 'GetSettingValue' was not being checked in Project Editor.
-* Fixed a bug where 'Add Connection' from 'Project Add Form' did not display newly created connection.
+* Fixed a bug where **Add New Connection** did not immediately display the newly created **Connection** as a selection option for the **Project**
+* Removed the `Data Views` **Integration Template**. This was a superfluous template that has now been deprecated
 
 ### ADF
 
-* Fixed a bug where ADF sub-batch Parameters default vaules were not generated correctly.
-* Resolved an issue when calls made from ADF to Snowflake result in a timeout and process failure. This code is now allowed to take as long as it needs without failing.
+* Fixed a bug where default values for ADF pipeline parameters were not correctly generated. While this does not cause issues when running the batch processes, it makes debugging or running individual pipelines harder than it needs to be. Parameter default values are now set with correct values for every pipeline
+
+### Snowflake
+
+* Resolved an issue when calls made from ADF to Snowflake sometimes resulted in a timeout and process failure. As part of this solution, the Snowflake calls have been replaced by the new [ADF Script Activity](https://www.varigence.com/Blog/Post/113). Previously, calls to Snowflake were handled by the Azure Function Bridge. Timeouts have also been increased to 10 minutes
+* Known issues in ADF prevent the use of Connection String Key Vaults to store the entire Snowflake connection string. Because of this, we have disabled the option to configure Snowflake connections to use a Key Vault for the connection string. This is an issue in Azure Data Factory that has been reported. The consequence is that Snowflake connection _must_ be configured using a manual connection string in BimlFlex. It is still possible to configure a Key Vault to store the password only
 
 ### Salesforce
 
-* Fixed a bug where where the application indicated "Import metadata successful," but in reality, import failed.
-* Fixed metadata import error/success messages for Salesforce.
+* Fixed a bug where where the App indicated 'Import metadata successful', even though this failed in reality. Correct success or failure messages are now displayed when working with Salesforce metadata
 
 ### SSIS
 
-* Fixed a bug where SSIS Delete File processing was not using Process Subfolder settings for delete file load.
-
-### ADO.NET
-
-* Fixed a bug where 'GetClientDatabaseList()' did not work for ADO.NET connections.
-
-## Download Links to this Build
-
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)
-    This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)
-    This installer includes the required runtime components for servers that will execute SSIS packages
+* Fixed a bug where the `Process Subfolders` SSIS setting was not consistently applied to the Delete processes. SSIS Delete processes now correctly traverse subfolders / subdirectories
