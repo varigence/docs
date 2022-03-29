@@ -10,8 +10,8 @@ Varigence is excited to release the 2022 R2 version of the BimlFlex platform for
 
 > [!NOTE]
 >
-> * Please make sure databases and projects are backed up before upgrading
-> * Please email support@bimlflex.com with any installation or upgrade issues
+> * Please make sure databases and projects are backed up before upgrading.
+> * Please email support@bimlflex.com with any installation or upgrade issues.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Build 22.2.xx.x, release date: DD MMM YYYY
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
-## BimlFlex 2022 R2 - New Features
+## 2022 R2 - New Features
 
 ### Pushdown Extraction
 
@@ -30,28 +30,28 @@ With the 2022 R2 release, it is now possible to use the new [**Pushdown Extracti
 
 ### Script Activity
 
-Added support for [Azure Data Factory Script Activity](https://www.varigence.com/Blog/Post/113). The Script Activity provides a versatile way to execute SQL statements against the configured connection. BimlFlex now uses the Script Activity in many patterns that previously used Lookup or Stored Procedure Activities. While this is not a functional difference, it makes the resulting pipelines easier to understand and debug - if required.
+Added support for [Azure Data Factory Script Activity](https://www.varigence.com/Blog/Post/113). The Script Activity provides a versatile way to execute SQL statements against the configured connection. BimlFlex now uses the Script Activity in many patterns that previously used Lookup or Stored Procedure Activities. While this is not a functional difference, it makes the resulting pipelines easier to understand and debug, if required.
 
-The use of Script Activities is not supported for Salesforce and Dynamics connections at the time of release. These data sets will still be connected to using either Lookup or Stored Procedure activities, until ADF supports the use of Script Activities for these connection types.
+The use of Script Activities is not supported for Salesforce and Dynamics connections at the time of release. These data sets must still be connected to using either Lookup or Stored Procedure activities, until ADF supports the use of Script Activities for these connection types.
 
 One major advantage of using Script Activities is broader support for connection types such as Snowflake. Our patterns have been updated to use the Script Activity instead of the proprietary Azure Function Bridge solution that was in place up to this release.
 
 > [!IMPORTANT]
-> The use of the Script Activity in combination with Self Hosted Integration Runtimes requires the runtime to be upgraded to v15.5 or higher. If your Self Hosted Integration Runtime is of a lower version, upgrading this is required to correctly execute the pipelines.
+> The use of the Script Activity in combination with Self Hosted Integration Runtimes requires the runtime to be upgraded to v15.5 or higher. If using a lower version of Self Hosted Integration Runtime, upgrading is required to correctly execute the pipelines.
 
-## BimlFlex 2022 R2 - Improvements
+## 2022 R2 - Improvements
 
 ### Various
 
 * Added the automatic installation of `vcredist` to the application installer. This caused some errors in a clean installation in rare cases
-* Added [archive] tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the BimlFlex App
+* Added [archive] tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the application
 * Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have functional high water mark parameters
 * Added validation warnings for pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked are configured to have different databases. Pushdown processing only works if the connections point to the same database
 
 ### Connection Editor
 
 * Ensured that all **Connection Editor** validators that are available in the BimlStudio validation framework are also available in the BimlFlex application
-* Changed the styling of ADF tabs for Connection String and Azure Key Vault, to better convey 'one or the other' selection
+* Changed the styling of ADF tabs for Connection String and Azure Key Vault to better convey 'one or the other' selection
 
 ### Business Modeling
 
@@ -61,20 +61,20 @@ One major advantage of using Script Activities is broader support for connection
 
 * Added feature to connect ADF Post Copy Extension Point to subsequent Activities, if present. For example, the setting of parameters
 
-### Mapping Data Flows  
+### Mapping Data Flows
 
-* Enable [connectivity to data sources that are not directly supported by Mapping Data Flows](https://www.varigence.com/Blog/Post/108). When configuring a connection that is not natively supported, BimlFlex allows the user to define a 'Landing step' for the **Connection**, which directs the Mapping Data Flows templates to include an initial Copy Activity to 'land' the data before processing it further using Mapping Data Flows
-* Enabled [custom file paths for Delta Lake **Connections**](https://www.varigence.com/Blog/Post/110). This is supported by using a file path in the container definition, or by using the new File Path component which has been added too the Delta Lake **Connection** screen
+* Enabled [connectivity to data sources that are not directly supported by Mapping Data Flows](https://www.varigence.com/Blog/Post/108). When configuring a connection that is not natively supported, BimlFlex allows the user to define a 'Landing step' for the **Connection**. This directs the Mapping Data Flows templates to include an initial Copy Activity to 'land' the data before processing it further using Mapping Data Flows
+* Enabled [custom file paths for Delta Lake **Connections**](https://www.varigence.com/Blog/Post/110). This is supported by using a file path in the container definition, or by using the new File Path component which has been added to the Delta Lake **Connection** screen
 * Added the ability to differentiate PSA/ODS **Object** names from STG **Object** names, so that both object types can be loaded into the same data lake container. Previously, using the same container for PSA and STG objects would cause conflicts in writing the data
 * Added [support for **Parameters** for Mapping Data Flow templates](https://www.varigence.com/Blog/Post/109), enabling the configuration of load windows and filters
 * Added [support for **Derived Columns** in Mapping Data Flows templates](https://www.varigence.com/Blog/Post/107). This enables our users to incorporate complex bespoke logic using the data flows expression language, which will then be incorporated into the corresponding generated data flows
 
 ### SSIS
 
-* Added a setting to use `Use Custom Components` that will remove all SSIS Custom Components from all SSIS templates in favour of native components
-* Added SSIS Extension Point at Data Flow level to control For Each Loop Container (FELC) properties
+* Added a setting to use `Use Custom Components` that will remove all SSIS Custom Components from all SSIS templates in favor of native components
+* Added an SSIS Extension Point at the Data Flow level to control For Each Loop Container (FELC) properties
 
-## BimlFlex 2022 R2 - Bug Fixes
+## 2022 R2 - Bug Fixes
 
 ### Various Application Fixes
 
@@ -83,9 +83,9 @@ One major advantage of using Script Activities is broader support for connection
 * Fixed a bug where imported metadata sometimes did not use local connection strings when configured to do so
 * Fixed an issue in the generated BimlScript where the Dynamics `ServicePrincipalCredentialKVS` XML was missing a closing tag, causing build errors
 * Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog staging 'Extracted Metadata empty, extraction failed'. This has now been corrected
-* Fixed a bug where `Use My Exclusions` did not exclude **Column**, **Connection**, **Object**, and **Project** entities even though these were marked as excluded
+* Fixed a bug where `Use My Exclusions` did not exclude **Column**, **Connection**, **Object**, or **Project** entities even though these were marked as excluded
 * Removed 'Data Warehouse SQL by Source' option from the BimlFlex Bundle options for code generation. Functionally, all data warehouse SQL emission is now controlled by the 'Data Warehouse SQL' option
-* Fixed various smaller issues related to Multi-Factor Authentication (MFA), which mitigates certain known issues in the installer and DACPAC deployment
+* Fixed various small issues related to Multi-Factor Authentication (MFA), which mitigates certain known issues in the installer and DACPAC deployment
 * Fixed a bug where the Azure Function Bridge failed due to listing soft-deleted blob containers. The listing will now only include and copy actual files
 * Fixed a bug where Data Type Mappings were not applied to Delete process landing tables
 * Fixed a bug where the Oracle CLOB datatype was not properly generated in BimlScript
@@ -99,7 +99,7 @@ One major advantage of using Script Activities is broader support for connection
 
 ### Data Vault Accelerator
 
-* Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. The 'Business Subject' on the relationship building column defines the full LInk table name
+* Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. The 'Business Subject' on the relationship building column defines the full Link table name
 * Fixed a bug that replicated a Source Object in the side panel when updating the Business Name
 
 ### Schema Diagram
@@ -117,29 +117,29 @@ One major advantage of using Script Activities is broader support for connection
 * Fixed a bug where **Test Connection** would report failure, despite connecting successfully. This occurred for some non-SQL Server connections
 * Fixed issues in the **Connection String Builder** dialog where connection strings were not interpreted correctly
 * Fixed a bug where **Connection String Builder** dialog used previously saved values instead of the current entered values
-* Fixed a bug where a Landing **Connection** was able to select itself as a `Polybase Connection`, this is incorrect and not possible anymore
+* Fixed a bug where a Landing **Connection** was able to select itself as a `Polybase Connection`. This is incorrect and not possible anymore
 * Fixed a bug where **[+] New Connection** did not pre-populate the **Integration Stage**
 * Fixed a bug where saving a record would change or reset the view from the current tree view nav selection.
 * Fixed a bug where switching between **Linked Service Connection String** and **Azure Key Vault** did not prompt a check for unsaved changes
-* Fixed a bug where ADO.NET connections do not correctly connect when attempting to import metadata, or list databases in the Connection configuration // TODO Need to check if this actually gets completed. Story is https://dev.azure.com/varigence/Varigence/_workitems/edit/8700
-* Because of known issues using other Integration Runtimes than the default `AutoResolveIntegrationRuntime`, we have disabled this feature and only allow the default `AutoResolveIntegrationRuntime` to be defined for a **Connection** Linked Service. Modification to this should be made either in ADF after deployment, or by updating the ARM template after build
+* Fixed a bug where ADO.NET connections do not correctly connect when attempting to import metadata, or list databases in the Connection configuration // **TODO Need to check if this actually gets completed. Story is https://dev.azure.com/varigence/Varigence/_workitems/edit/8700**
+* Because of known issues using Integration Runtimes other than the default `AutoResolveIntegrationRuntime`, this feature has been disabled. Only the default `AutoResolveIntegrationRuntime` may be used to define a **Connection** Linked Service.Modification should be made either in ADF after deployment, or by updating the ARM template after build
 
 ### Project Editor
 
-* Fixed a bug where **Add New Connection** did not immediately display the newly created **Connection** as a selection option for the **Project**
+* Fixed a bug where **Add New Connection** did not immediately display a newly created **Connection** as a selection option for the **Project**
 * Removed the `Data Views` **Integration Template**. This was a superfluous template that has now been deprecated
 
 ### ADF
 
-* Fixed a bug where default values for ADF pipeline parameters were not correctly generated. While this does not cause issues when running the batch processes, it makes debugging or running individual pipelines harder than it needs to be. Parameter default values are now set with correct values for every pipeline
+* Fixed a bug where default values for ADF pipeline parameters were not correctly generated. While this did not cause issues when running batch processes, it made debugging or running individual pipelines harder than it needs to be. Parameter default values are now set with correct values for every pipeline
 * Ensured correct operation of the `Stage With Model Override Name` setting for ADF for **Objects** and **Columns**
 * Ensured that `Stage With Business Name` now correctly uses the 'Business Name' at **Object** and **Column** level
-* Fixed a bug where parameters for the Data Mart were generating the 'GET' tasks, but not the 'SET' tasks in some scenarios
+* Fixed a bug where parameters for the Data Mart generated the 'GET' tasks, but not the 'SET' tasks in some scenarios
 
 ### Snowflake
 
 * Resolved an issue when calls made from ADF to Snowflake sometimes resulted in a timeout and process failure. As part of this solution, the Snowflake calls have been replaced by the new [ADF Script Activity](https://www.varigence.com/Blog/Post/113). Previously, calls to Snowflake were handled by the Azure Function Bridge. Timeouts have also been increased to 10 minutes
-* Known issues in ADF prevent the use of Connection String Key Vaults to store the entire Snowflake connection string. Because of this, we have disabled the option to configure Snowflake connections to use a Key Vault for the connection string. This is an issue in Azure Data Factory that has been reported. The consequence is that Snowflake connection _must_ be configured using a manual connection string in BimlFlex. It is still possible to configure a Key Vault to store the password only
+* Known issues in ADF prevent the use of Connection String Key Vaults to store the entire Snowflake connection string. Because of this, the option to configure Snowflake connections to use a Key Vault for the connection string have been disabled. This is a known issue in Azure Data Factory that has been reported. The consequence is that a Snowflake connection _must_ be configured using a manual connection string in BimlFlex. It is still possible to configure a Key Vault to store the password only
 
 ### Salesforce
 
@@ -151,4 +151,9 @@ One major advantage of using Script Activities is broader support for connection
 
 ### Extension Points
 
-* Fixed an issue where targeting _implicitly_ named **Batches**, such as the Raw Data Vault batches, did to work. You can now correctly target Batch pipelines by their name in all cases
+* Fixed an issue where targeting _implicitly_ named **Batches**, such as the Raw Data Vault batches, did to work. Users can now correctly target Batch pipelines by their name in all cases
+
+## Download Links to this Build
+
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all parts of BimlFlex
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
