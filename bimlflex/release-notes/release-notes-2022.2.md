@@ -26,7 +26,7 @@ Build 22.2.xx.x, release date: DD MMM YYYY
 
 ### Pushdown Extraction
 
-With the 2022 R2 release, it is now possible to use the new [**Pushdown Extraction** feature](https://www.varigence.com/Blog/Post/112) to integrate data without requiring a separate landing step or Copy Activity. This feature can be considered when a 'source' operational system shares the technical environment with the data solution. For example, when the 'source' is located on the same database server as the data solution. In scenarios such as these, it can be efficient to make sure _all_ processing occurs in this environment. This way, the data does not have to 'leave' the environment to be processed.
+With the 2022 R2 release, it is now possible to use the new [**Pushdown Extraction** feature](https://www.varigence.com/Blog/Post/112) to integrate data without requiring a separate Landing step or Copy Activity. This feature can be considered when a 'source' operational system shares the technical environment with the data solution. For example, when the 'source' is located on the same database server as the data solution. In scenarios such as these, it can be efficient to make sure _all_ processing occurs in this environment. This way, the data does not have to 'leave' the environment to be processed.
 
 This feature can be helpful for example when your database servers hosts multiple applications, or when you are using a Snowflake tenant for multiple applications.
 
@@ -54,7 +54,7 @@ A major advantage of using Script Activities is broader support for connection t
 
 ### Connection Editor
 
-* Ensured that all **Connection Editor** validators in the BimlStudio validation framework are also available in the BimlFlex App
+* Ensured that all **Connection Editor** validators in the BimlStudio validation framework are also available in the BimlFlex app
 * Changed the styling of ADF tabs for Connection String and Azure Key Vault to better convey a 'one or the other' selection
 
 ### Business Modeling
@@ -83,10 +83,10 @@ A major advantage of using Script Activities is broader support for connection t
 ### Various Application Fixes
 
 * Fixed an issue where certain tooltips would not be displayed when hovering over the BimlFlex user interface component
-* Fixed a bug where saving items in the App would sometimes generate a constraint error
+* Fixed a bug where saving items in the app would sometimes generate a constraint error
 * Fixed a bug where imported metadata sometimes did not use local connection strings, when configured to do so
 * Fixed an issue in the generated BimlScript where the Dynamics `ServicePrincipalCredentialKVS` XML was missing a closing tag, causing build errors in some cases
-* Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog staging 'Extracted Metadata empty, extraction failed'
+* Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog stating 'Extracted Metadata empty, extraction failed'
 * Fixed a bug where `Use My Exclusions` did not exclude **Column**, **Connection**, **Object**, or **Project** entities even though these were marked as excluded
 * Removed 'Data Warehouse SQL by Source' option from the BimlFlex Bundle options for code generation. Functionally, all data warehouse SQL emission is now controlled by the 'Data Warehouse SQL' option
 * Fixed various small issues related to Multi-Factor Authentication (MFA), which mitigates certain known issues in the installer and DACPAC deployment
@@ -104,11 +104,11 @@ A major advantage of using Script Activities is broader support for connection t
 ### Data Vault Accelerator
 
 * Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. The 'Business Subject' on the relationship building column defines the Link table name
-* Fixed a bug that replicated a Source Object in the side panel when updating the Business Name. This was only a front-end replication of the fields, but while not impacting any metadata this was still confusing
+* Fixed a bug that replicated a Source Object in the side panel when updating the 'Business Name.' This was only a front-end replication of the fields, but while not impacting any metadata, this caused undue confusion.
 
 ### Schema Diagram
 
-* Fixed a bug where creating a relationship to a non-Integration Key column drew a line, but did nothing else. It is now not possible anymore to draw a relationship where this is not supported
+* Fixed a bug where creating a relationship to a non-Integration Key column drew a line but did nothing else. It is now no longer possible to draw a relationship where this is not supported
 * Fixed a bug where columns that could not be used to create a reference were allowed to be connected
 * Fixed a bug where selecting 'Show Related' from the context menu would only show outgoing relationships
 
@@ -134,7 +134,7 @@ A major advantage of using Script Activities is broader support for connection t
 
 ### ADF
 
-* Fixed a bug where default values for ADF pipeline parameters were not correctly generated. While this did not cause issues when running batch processes, it made debugging or running individual pipelines harder than it needs to be. Parameter default values are now set with correct values for every pipeline
+* Fixed a bug where default values for ADF pipeline parameters were not correctly generated. While this did not cause issues when running batch processes, it made debugging or running individual pipelines harder than it needed to be. Parameter default values are now set with correct values for every pipeline
 * Ensured correct operation of the `Stage With Model Override Name` setting for ADF for **Objects** and **Columns**
 * Ensured that `Stage With Business Name` now correctly uses the 'Business Name' at **Object** and **Column** level
 * Fixed a bug where parameters for the Data Mart generated the 'GET' tasks, but not the 'SET' tasks in some scenarios
@@ -146,7 +146,7 @@ A major advantage of using Script Activities is broader support for connection t
 
 ### Salesforce
 
-* Fixed a bug where where the App indicated 'Import metadata successful', even though this failed in reality. Correct success or failure messages are now displayed when working with Salesforce metadata
+* Fixed a bug where where the app indicated 'Import metadata successful', even though this failed in reality. Accurate success or failure messages are now displayed when working with Salesforce metadata
 
 ### SSIS
 
@@ -156,7 +156,19 @@ A major advantage of using Script Activities is broader support for connection t
 
 * Fixed an issue where targeting _implicitly_ named **Batches**, such as the Raw Data Vault batches, did to work. Users can now correctly target Batch pipelines by their name in all cases
 
-## Download Links to this Build
+## BimlStudio 2022 R2
+
+* Enabled live BimlScripts to reference wrapper assemblies inside BimlFlex.bimlb
+    https://varigence.visualstudio.com/Varigence/_sprints/taskboard/Varigence%20Team/Varigence/Sprint%2054?workitem=10827
+* BimlStudio 'Copy SQL Script' takes in 'Column Business Name' into consideration when `StageColumnBusinessName` setting is checked
+    https://varigence.visualstudio.com/Varigence/_sprints/taskboard/Varigence%20Team/Varigence/Sprint%2054?workitem=3427 (in acceptance criteria)
+* Fixed a bug in the Debug Utility dialog where if 'Obfuscate Connection Strings' was enabled, 'Save Metadata to File' would produce an 'Extraction Failed' error
+    https://varigence.visualstudio.com/Varigence/_sprints/taskboard/Varigence%20Team/Varigence/Sprint%2055?workitem=10856
+* Ensured that all **Connection Editor** validators in the BimlStudio validation framework are also available in the BimlFlex app
+* Added caching to the 'Generate Script Options' dialog to remember user's last selected 'Script Type' selection
+    https://varigence.visualstudio.com/Varigence/_search?text=generate*&type=workitem&lp=workitems-Project&filters=Projects%7BVarigence%7D&pageSize=25
+
+## Download Links to BimlFlex 2022 R2
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all parts of BimlFlex
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
