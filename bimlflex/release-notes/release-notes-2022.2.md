@@ -158,15 +158,9 @@ A major advantage of using Script Activities is broader support for connection t
 
 ## BimlStudio 2022 R2
 
-* Enabled live BimlScripts to reference wrapper assemblies inside BimlFlex.bimlb
-    https://varigence.visualstudio.com/Varigence/_sprints/taskboard/Varigence%20Team/Varigence/Sprint%2054?workitem=10827
-* BimlStudio 'Copy SQL Script' takes in 'Column Business Name' into consideration when `StageColumnBusinessName` setting is checked
-    https://varigence.visualstudio.com/Varigence/_sprints/taskboard/Varigence%20Team/Varigence/Sprint%2054?workitem=3427 (in acceptance criteria)
+* The BimlStudio 'Copy SQL Script' takes in 'Column Business Name' into consideration when the `Stage Column Business Name` setting is enabled
 * Fixed a bug in the Debug Utility dialog where if 'Obfuscate Connection Strings' was enabled, 'Save Metadata to File' would produce an 'Extraction Failed' error
-    https://varigence.visualstudio.com/Varigence/_sprints/taskboard/Varigence%20Team/Varigence/Sprint%2055?workitem=10856
-* Ensured that all **Connection Editor** validators in the BimlStudio validation framework are also available in the BimlFlex app
-* Added caching to the 'Generate Script Options' dialog to remember user's last selected 'Script Type' selection
-    https://varigence.visualstudio.com/Varigence/_search?text=generate*&type=workitem&lp=workitems-Project&filters=Projects%7BVarigence%7D&pageSize=25
+* Added caching to the 'Generate Script Options' dialog to remember the user's last selected 'Script Type' selection
 
 ## Download Links to BimlFlex 2022 R2
 
