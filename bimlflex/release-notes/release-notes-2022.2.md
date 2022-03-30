@@ -28,13 +28,17 @@ Build 22.2.xx.x, release date: DD MMM YYYY
 
 With the 2022 R2 release, it is now possible to use the new [**Pushdown Extraction** feature](https://www.varigence.com/Blog/Post/112) to integrate data without requiring a separate landing step or Copy Activity. This feature can be considered when a 'source' operational system shares the technical environment with the data solution. For example, when the 'source' is located on the same database server as the data solution. In scenarios such as these, it can be efficient to make sure _all_ processing occurs in this environment. This way, the data does not have to 'leave' the environment to be processed.
 
+This feature can be helpful for example when your database servers hosts multiple applications, or when you are using a Snowflake tenant for multiple applications.
+
+Many of the BimlFlex sample configurations have been updated to include examples of how pushdown extraction can be used.
+
 ### Script Activity
 
-Added support for [Azure Data Factory Script Activity](https://www.varigence.com/Blog/Post/113). The Script Activity provides a versatile way to execute SQL statements against the configured connection. BimlFlex now uses the Script Activity in many patterns that previously used Lookup or Stored Procedure Activities. While this is not a functional difference, it makes the resulting pipelines easier to understand and debug, if required.
+Support for [Azure Data Factory Script Activity](https://www.varigence.com/Blog/Post/113) has been added as part of the 2022 R2 release. The Script Activity provides a versatile way to execute SQL statements against the configured connection. BimlFlex now uses the Script Activity in many patterns that previously used Lookup or Stored Procedure Activities. While this is not a functional difference, it makes the resulting pipelines easier to understand and debug, if required.
 
 The use of Script Activities is not supported for Salesforce and Dynamics connections at the time of release. These data sets must still be connected to using either Lookup or Stored Procedure activities, until ADF supports the use of Script Activities for these connection types.
 
-One major advantage of using Script Activities is broader support for connection types such as Snowflake. Our patterns have been updated to use the Script Activity instead of the proprietary Azure Function Bridge solution that was in place up to this release.
+A major advantage of using Script Activities is broader support for connection types such as Snowflake. Our patterns have been updated to use the Script Activity instead of the proprietary Azure Function Bridge solution that was in place up to this release.
 
 > [!IMPORTANT]
 > The use of the Script Activity in combination with Self Hosted Integration Runtimes requires the runtime to be upgraded to v15.5 or higher. If using a lower version of Self Hosted Integration Runtime, upgrading is required to correctly execute the pipelines.
@@ -43,15 +47,15 @@ One major advantage of using Script Activities is broader support for connection
 
 ### Various
 
-* Added the automatic installation of `vcredist` to the application installer. This caused some errors in a clean installation in rare cases
-* Added [archive] tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the application
-* Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have functional high water mark parameters
-* Added validation warnings for pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked are configured to have different databases. Pushdown processing only works if the connections point to the same database
+* Added the automatic installation of `vcredist` to the application installer. In rare cases, this caused some errors during a clean installation
+* Added `archive` tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the application
+* Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have example 'high water mark' parameters for data delta selection
+* Added validation warnings for pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked are configured to have different databases. Pushdown processing can only work if the involved connections all point to the same database
 
 ### Connection Editor
 
-* Ensured that all **Connection Editor** validators that are available in the BimlStudio validation framework are also available in the BimlFlex application
-* Changed the styling of ADF tabs for Connection String and Azure Key Vault to better convey 'one or the other' selection
+* Ensured that all **Connection Editor** validators in the BimlStudio validation framework are also available in the BimlFlex App
+* Changed the styling of ADF tabs for Connection String and Azure Key Vault to better convey a 'one or the other' selection
 
 ### Business Modeling
 
@@ -80,9 +84,9 @@ One major advantage of using Script Activities is broader support for connection
 
 * Fixed an issue where certain tooltips would not be displayed when hovering over the BimlFlex user interface component
 * Fixed a bug where saving items in the App would sometimes generate a constraint error
-* Fixed a bug where imported metadata sometimes did not use local connection strings when configured to do so
-* Fixed an issue in the generated BimlScript where the Dynamics `ServicePrincipalCredentialKVS` XML was missing a closing tag, causing build errors
-* Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog staging 'Extracted Metadata empty, extraction failed'. This has now been corrected
+* Fixed a bug where imported metadata sometimes did not use local connection strings, when configured to do so
+* Fixed an issue in the generated BimlScript where the Dynamics `ServicePrincipalCredentialKVS` XML was missing a closing tag, causing build errors in some cases
+* Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog staging 'Extracted Metadata empty, extraction failed'
 * Fixed a bug where `Use My Exclusions` did not exclude **Column**, **Connection**, **Object**, or **Project** entities even though these were marked as excluded
 * Removed 'Data Warehouse SQL by Source' option from the BimlFlex Bundle options for code generation. Functionally, all data warehouse SQL emission is now controlled by the 'Data Warehouse SQL' option
 * Fixed various small issues related to Multi-Factor Authentication (MFA), which mitigates certain known issues in the installer and DACPAC deployment
@@ -99,8 +103,8 @@ One major advantage of using Script Activities is broader support for connection
 
 ### Data Vault Accelerator
 
-* Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. The 'Business Subject' on the relationship building column defines the full Link table name
-* Fixed a bug that replicated a Source Object in the side panel when updating the Business Name
+* Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. The 'Business Subject' on the relationship building column defines the Link table name
+* Fixed a bug that replicated a Source Object in the side panel when updating the Business Name. This was only a front-end replication of the fields, but while not impacting any metadata this was still confusing
 
 ### Schema Diagram
 
@@ -121,7 +125,6 @@ One major advantage of using Script Activities is broader support for connection
 * Fixed a bug where **[+] New Connection** did not pre-populate the **Integration Stage**
 * Fixed a bug where saving a record would change or reset the view from the current tree view nav selection.
 * Fixed a bug where switching between **Linked Service Connection String** and **Azure Key Vault** did not prompt a check for unsaved changes
-* Fixed a bug where ADO.NET connections do not correctly connect when attempting to import metadata, or list databases in the Connection configuration // **TODO Need to check if this actually gets completed. Story is https://dev.azure.com/varigence/Varigence/_workitems/edit/8700**
 * Because of known issues using Integration Runtimes other than the default `AutoResolveIntegrationRuntime`, this feature has been disabled. Only the default `AutoResolveIntegrationRuntime` may be used to define a **Connection** Linked Service.Modification should be made either in ADF after deployment, or by updating the ARM template after build
 
 ### Project Editor
