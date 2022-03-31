@@ -60,7 +60,7 @@ The developers within each Team collaborate and communicate on their respective 
 
 The recommended approach is to use a dedicated Version for the build (compilation) process. Before running a build, always **clone** the current version to a dedicated 'build' version - e.g. the build Version is used by the automated build process.
 
- [!NOTE]
+> [!NOTE]
 > When cloning versions, if possible please us a _new_ name for the clone so that a history of build versions are retained.
 > By using naming conventions for the build version, the latest one can be retrieved by querying the BimlFlex database for use in automated pipelines.
 
