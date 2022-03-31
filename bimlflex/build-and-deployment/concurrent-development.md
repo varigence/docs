@@ -11,7 +11,7 @@ Most BimlFlex deployments feature several teams working on the same data solutio
 
 This section covers various scenarios on how to manage bigger teams that are working on shared metadata.
 
- [!NOTE]
+> [!NOTE]
 > The concepts in this section are closely related to Continuous Integration / Continuous Delivery (CI/CD). Varigence has provided specific guides related to this for ADF and SSIS, as well as a more generic one:
 >
 > * [CI/CD using BimlFlex](xref:bimlflex-continuous-integration-and-delivery)
@@ -60,7 +60,7 @@ The developers within each Team collaborate and communicate on their respective 
 
 The recommended approach is to use a dedicated Version for the build (compilation) process. Before running a build, always **clone** the current version to a dedicated 'build' version - e.g. the build Version is used by the automated build process.
 
- [!NOTE]
+> [!NOTE]
 > When cloning versions, if possible please us a _new_ name for the clone so that a history of build versions are retained.
 > By using naming conventions for the build version, the latest one can be retrieved by querying the BimlFlex database for use in automated pipelines.
 
