@@ -11,7 +11,7 @@ Most BimlFlex deployments feature several teams working on the same data solutio
 
 This section covers various scenarios on how to manage bigger teams that are working on shared metadata.
 
- [!NOTE]
+> [!NOTE]
 > The concepts in this section are closely related to Continuous Integration / Continuous Delivery (CI/CD). Varigence has provided specific guides related to this for ADF and SSIS, as well as a more generic one:
 >
 > * [CI/CD using BimlFlex](xref:bimlflex-continuous-integration-and-delivery)
