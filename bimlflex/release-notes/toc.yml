@@ -1,9 +1,11 @@
 - name: Overview
   href: index.md
 
-- name: Current Release Notes
+- name: Current (Preview) Release Notes
   href: release-notes.md
 
+- name: BimlFlex 2022 R2 (Preview) Release Notes
+  href: release-notes-2022.2.md
 - name: BimlFlex 2022 R1 New Features
   href: new-features-2022.1.md
 - name: BimlFlex 2022 R1 Release Notes

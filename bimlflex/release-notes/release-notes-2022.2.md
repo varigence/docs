@@ -161,8 +161,3 @@ A major advantage of using Script Activities is broader support for connection t
 * The BimlStudio 'Copy SQL Script' takes in 'Column Business Name' into consideration when the `Stage Column Business Name` setting is enabled
 * Fixed a bug in the Debug Utility dialog where if 'Obfuscate Connection Strings' was enabled, 'Save Metadata to File' would produce an 'Extraction Failed' error
 * Added caching to the 'Generate Script Options' dialog to remember the user's last selected 'Script Type' selection
-
-## Download Links to BimlFlex 2022 R2
-
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
