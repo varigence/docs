@@ -6,7 +6,7 @@ summary: Release Notes for BimlFlex 2022 R2
 
 # Release Notes
 
-Varigence is excited to release the 2022 R2 version of the BimlFlex platform for data solution automation!
+Varigence is excited to release the 2022 R2 (*PREVIEW*) version of the BimlFlex platform for data solution automation!
 
 > [!NOTE]
 >
@@ -17,7 +17,7 @@ Varigence is excited to release the 2022 R2 version of the BimlFlex platform for
 
 BimlFlex 2022 R2 is installed and upgraded through a single consolidated installer.
 
-Build 22.2.xx.x, release date: DD MMM YYYY
+Build 22.2.113, release date: 15 Apr 2022
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
@@ -147,6 +147,7 @@ A major advantage of using Script Activities is broader support for connection t
 ### Salesforce
 
 * Fixed a bug where where the app indicated 'Import metadata successful', even though this failed in reality. Accurate success or failure messages are now displayed when working with Salesforce metadata
+* Addressed an issue where users would get a 'Runtime Error' when using Snowflake components. To resolve this issue, users should redeploy the necessary runtime components.
 
 ### SSIS
 
