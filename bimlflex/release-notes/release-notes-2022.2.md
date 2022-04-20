@@ -51,6 +51,7 @@ A major advantage of using Script Activities is broader support for connection t
 * Added `archive` tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the application
 * Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have example 'high water mark' parameters for data delta selection
 * Added validation warnings for pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked are configured to have different databases. Pushdown processing can only work if the involved connections all point to the same database
+* Upon successful conclusion of a metadata import the application will now navigate to a **Schema Diagram** of the imported tables. 
 
 ### Connection Editor
 
@@ -64,6 +65,10 @@ A major advantage of using Script Activities is broader support for connection t
 ### Azure Data Factory (ADF)
 
 * Added feature to connect ADF Post Copy Extension Point to subsequent Activities, if present. For example, the setting of parameters
+
+### Salesforce
+
+* Improvements made to the Salesforce metadata import process, especially in regard to custom **Objects**
 
 ### Mapping Data Flows
 
@@ -162,3 +167,4 @@ A major advantage of using Script Activities is broader support for connection t
 * The BimlStudio 'Copy SQL Script' takes in 'Column Business Name' into consideration when the `Stage Column Business Name` setting is enabled
 * Fixed a bug in the Debug Utility dialog where if 'Obfuscate Connection Strings' was enabled, 'Save Metadata to File' would produce an 'Extraction Failed' error
 * Added caching to the 'Generate Script Options' dialog to remember the user's last selected 'Script Type' selection
+* Improvements made for caching product keys that are entered in the Command Line, so as to not be re-entered on each build. This is particularly relevant for virtual environments.
