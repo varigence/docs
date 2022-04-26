@@ -80,17 +80,22 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 <!-- You can find more details on the Varigence website. https://docs.varigence.com/biml-reference/language-reference/Varigence.Languages.Biml.DataFactory.AstAdfPipelineParameterNode. -->
 <!-- For examples and additional resources, please also refer to http://bimlscript.com. -->
 
-<!-- This extension point allows the manipulation of metadata parameters that are used in the data logistics. -->
+<!-- This extension point allows the manipulation of metadata parameters that are used in the data logistics, for example to create load windows or high-water mark values. -->
 <!-- The most common use-case is to change the behaviour of the parameters that are already defined in the metadata. -->
-<!-- In this case, the parameter code will be replaced by the contents on this Extension Point. -->
+<!-- In this case, the parameter code will be replaced by the contents of this Extension Point. -->
 
 <!-- This extension point affects all Parameters that are added before the main 'Copy Data' activity in the targeted ADF Pipeline. -->
-<!-- The below example shows how parameters (e.g. LKP_LastLoadDate, LKP_NextLoadDate) are replaced by values retrieved from metadata. -->
+<!-- The below example shows how parameters (e.g. LkpLastLoadDate, LlkpNextLoadDate) are replaced by values retrieved from metadata. -->
+<!-- Compared to the default template, this override uses a Lookup Activity to retrieve the target parameter value. -->
 
-<# 	CustomOutput.ObjectInherit = false; #>
+<# 
+// Object inheritance is disabled for this extension point example.
+// This means the target can be set either as individual object or parent objects (e.g. Batch-level), but that this extension will not be applied to any child objects.
+CustomOutput.ObjectInherit = false;
+#>
 
 <#	
-  var srcObj = new TableObject(table, table.Connection.RelatedItem.IntegrationStage, "SRC");
+	var srcObj = new TableObject(table, table.Connection.RelatedItem.IntegrationStage, "SRC");
 	var parameters = srcObj.Parameters;
   
 	if (!parameters.Any()) return null; 
@@ -105,8 +110,8 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 			: parameterColumn;
 		var parameterSourceElement = srcObj.SourceAdfSourceElement;
 #>
-<Lookup Name="LKP_<#=parameter.ParameterName#>">
-    <<#=parameterSourceElement#> StoredProcedure="[adf].[GetConfigVariable]" DatasetName="BimlCatalog">
+	<Lookup Name="Lkp<#=parameter.ParameterName#>">
+    	<<#=parameterSourceElement#> StoredProcedure="[adf].[GetConfigVariable]" DatasetName="BimlCatalog">
 			<StoredProcedureParameters>
 				<Parameter Name="SystemName" DataType="String" IsNull="false"><#=srcObj.SourceConnection.Name#></Parameter>
 				<Parameter Name="ObjectName" DataType="String" IsNull="false"><#=parameterColumn#></Parameter>
@@ -116,16 +121,34 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 			</StoredProcedureParameters>
 		</<#=parameterSourceElement#>>
 	</Lookup>
-	<Lookup Name="LKP_<#=parameter.ParameterToName#>" FirstRowOnly="true">
+	<Lookup Name="Lkp<#=parameter.ParameterToName#>" FirstRowOnly="true">
 		<Dependencies>
-			<Dependency DependsOnActivityName="LKP_<#=parameter.ParameterName#>" />
+			<Dependency DependsOnActivityName="Lkp<#=parameter.ParameterName#>" />
 		</Dependencies>
 		<<#=parameterSourceElement#> DatasetName="<#=srcObj.SourceDatasetName#>">
 			<Query><#=parameter.GetSourceParameterSql() #></Query>
 		</<#=parameterSourceElement#>>
 	</Lookup>
-	<# CustomOutput.OutputPathName = $"LKP_{parameter.ParameterToName}"; #>  
-<#	} #>
+	<SetVariable Name="Set<#=parameter.ParameterName#>" VariableName="<#=parameter.ParameterName#>">
+		<Dependencies>
+			<Dependency Condition="Succeeded" DependsOnActivityName="Lkp<#=parameter.ParameterName#>"></Dependency>
+		</Dependencies>
+		<Value>
+			@activity('Lkp<#=parameter.ParameterName#>').output.firstRow.VariableValue
+		</Value>
+	</SetVariable>	
+	<SetVariable Name="Set<#=parameter.ParameterToName#>" VariableName="<#=parameter.ParameterToName#>">
+		<Dependencies>
+			<Dependency Condition="Succeeded" DependsOnActivityName="Set<#=parameter.ParameterName#>"></Dependency>
+			<Dependency Condition="Succeeded" DependsOnActivityName="Lkp<#=parameter.ParameterToName#>"></Dependency>
+		</Dependencies>
+		<Value>
+			@{if(contains(activity('Lkp<#=parameter.ParameterToName#>').output,'firstRow'), activity('Lkp<#=parameter.ParameterToName#>').output.firstRow.<#=parameter.ParameterToName#>, variables('<#=parameter.ParameterName#>'))}
+		</Value>
+	</SetVariable>
+<# CustomOutput.OutputPathName = $"Set{parameter.ParameterToName}";
+}
+#>
 
 ```
 
@@ -237,7 +260,7 @@ TRUNCATE TABLE <#=targetTable.Name#>
 
 ## ADF Post Copy
 
-Configure logic that will be applied as the final step after the main activities in the targeted individual process pipeline.
+Configure bespoke logic that will be applied immediately after the Copy Activity that is part of the 'MainActivity' IfCondition container, for the targeted individual process Execute Pipeline.
 
 ### Parameters
 
@@ -265,13 +288,16 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 <!-- You can find more details on the Varigence website. https://docs.varigence.com/biml-reference/language-reference/Varigence.Languages.Biml.DataFactory.AstAdfPipelineNode. -->
 <!-- For examples and additional resources, please also refer to http://bimlscript.com. -->
 
-<!-- This extension point allows the addition of bespoke logic to be added as the last step in the targeted (individual process) ADF Pipeline. -->
+<!-- This extension point allows the addition of bespoke logic that will be applied immediately after the Copy Activity that is part of the 'MainActivity' IfCondition container, for the targeted individual process Execute Pipeline.-->
+<!-- Please note that a Copy Activity is only relevant for source-to-staging type processes that receive and land data from external data sources. -->
+<!-- In the Biml output, the location is specified as 'Placeholder for extensionpoint="AdfPostCopy"' -->
 <!-- The below example shows 'Wait' step to be added after the main processing in the Pipeline has completed. -->
 
 <#
 // The following is an example of how BimlScript can be used for this extension point.
-var outputPathName = "Wait for Ten Seconds Post Copy";
+var outputPathName = "Wait For Ten Seconds Post Copy";
 #>
+
 <Wait Name="<#=outputPathName#>" WaitTimeInSeconds="10">
 	<Dependencies>
 		<Dependency Condition="Succeeded" DependsOnActivityName="<#=dependency#>"></Dependency>
@@ -807,7 +833,7 @@ CustomOutput.OutputPathName = outputPathName;#>
 
 ## ADF Post Process
 
-Add an activity as the last step in the MainActivity IfCondition of an individual execute pipeline.
+Add bespoke logic as the last step in the 'MainActivity' IfCondition before any parameters are updated, for the targeted individual Execute Pipeline.
 
 ### Parameters
 
@@ -826,34 +852,27 @@ targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information rel
 <!-- You can find more details on the Varigence website. https://docs.varigence.com/biml-reference/language-reference/Varigence.Languages.Biml.DataFactory.AstAdfPipelineNode. -->
 <!-- For examples and additional resources, please also refer to http://bimlscript.com. -->
 
+<!-- The ADF Post Process extension points targets an ADF Pipeline as the last part of the 'MainActivity' IfCondition before any parameters are updated.-->
+<!-- This extension point can be used to add bespoke logic using BimlScript syntax as the last step in the IfCondition. -->
+<!-- The parameters (load windows) are still updated after this extension point, in case there are failures. -->
+<!-- In the Biml output, the location is specified as 'Placeholder for extensionpoint="AdfPostProcess"'. -->
+<!-- The below example shows 'Wait' step to be added after the main processing in the Pipeline has completed. -->
+
 <# 
 // Object inheritance is enabled by default.
 // This means the target can be set either as individual object or parent objects (e.g. Batch-level), and this extension will be applied to all child objects.
 CustomOutput.ObjectInherit = true;
-
-// The ADF Post Process extension points targets an ADF Pipeline as the last component in the 'MainActivity' IfCondition.
-// This extension point can be used to add an Activity using BimlScript syntax as the last one in the IfCondition.
-// In the Biml output, the location is specified as <!-- Placeholder for extensionpoint="AdfPostProcess" -->.
-
-// This extension point comes with input parameters 'sourceTable' and 'targetTable', which can be used in the logic.
-// Their properties (e.g. sourceTable.Name) can be viewed using the BimlStudio Intellisense.
-
-// Being a post-process, any incoming dependencies must be managed in the extension point. An example is provided below in code.
 #>
 
 <#
 // The following is an example of how BimlScript can be used for this extension point.
-var outputPathName = "Wait for Ten Seconds Post Process";
-
-// To manage incoming dependencies for this post-process, it is possible to define a list of activity names.
-// These can be added using the GetBimlDependency method, and the result can be added to the Biml. This method will create the Biml code snippet.
-// It is also possible to add the required BimlScript syntax instead of using GetBimlDependency.
-var postProcessDependencyList = new List<string>();
-postProcessDependencyList.Add("LogLastLoadDate");
-
+var outputPathName = "Wait For Ten Seconds Post Process";
 #>
+
 <Wait Name="<#=outputPathName#>" WaitTimeInSeconds="10">
-	<#=Varigence.Biml.Flex.DataFactoryHelper.GetBimlDependency(postProcessDependencyList)#>
+	<Dependencies>
+		<Dependency Condition="Succeeded" DependsOnActivityName="<#=dependency#>"></Dependency>
+	</Dependencies>
 </Wait>
 <# 
 
