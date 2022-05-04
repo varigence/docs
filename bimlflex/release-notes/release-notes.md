@@ -1,248 +1,169 @@
 ---
 uid: bimlflex-release-notes
-name: BimlFlex Release Notes 2022 R1
-summary: Release Notes for BimlFlex 2022 R1
+name: BimlFlex Release Notes  
+summary: Release Notes for the current version of BimlFlex
 ---
 # Release Notes
 
+Varigence is excited to release the 2022 R2 version of the BimlFlex platform for data solution automation!
+
 > [!NOTE]
-> Please make sure databases and projects are backed up before upgrading.  
-> Please email support@bimlflex.com with any installation or upgrade issues.
+>
+> * Please make sure databases and projects are backed up before upgrading.
+> * Please email support@bimlflex.com with any installation or upgrade issues.
 
-## BimlFlex 2022 R1
+## Installation
 
-BimlFlex 2022 R1 is installed and upgraded through a single consolidated installer.
+BimlFlex 2022 R2 is installed and upgraded through a single consolidated installer.
 
-## Latest Release
+Build 22.2.113, release date: 13 May 2022
 
-Build 22.1.87.0, release date: 22 Dec 2022
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
-    This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
-    This installer includes the required runtime components for servers that will execute SSIS packages
+## 2022 R2 - New Features
 
-## 2022 R1 New Features
+### Pushdown Extraction
 
-* New feature: Business Modeling
-* Added support for Salesforce connector
-* Added support for Azure PostgreSQL connector
-* User Interface Improvements for all BimlFlex Visual Editors
-* Preview of Azure Data Factory Mapping Data Flows
+With the 2022 R2 release, it is now possible to use the new [**Pushdown Extraction** feature](https://www.varigence.com/Blog/Post/112) to integrate data without requiring a separate Landing step or Copy Activity. This feature can be considered when a 'source' operational system shares the technical environment with the data solution. For example, when the 'source' is located on the same database server as the data solution. In scenarios such as these, it can be efficient to make sure _all_ processing occurs in this environment. This way, the data does not have to 'leave' the environment to be processed.
 
-Additional information here: [BimlFlex 2022 R1 New Features](xref:bimlflex-2022-r1-new-features)
+This feature can be helpful for example when your database servers hosts multiple applications, or when you are using a Snowflake tenant for multiple applications.
 
-### Salesforce (SFDC)
+Many of the BimlFlex sample configurations have been updated to include examples of how pushdown extraction can be used.
 
-* Added Salesforce (SFDC) metadata importer to BimlFlex application.
-* Added the following Salesforce Metadata Samples:
-  * 42 - Synapse Salesforce ADF Solution
-  * 43 - Synapse Salesforce SSIS Solution
-* Added support for SFDC Linked Service, `Source` connection via REST API, and as dataset.
-* Added SFDC Consumer Columns to **Connections**
-* Added *PrimaryKey* information for data fields
-* Added *ApiName* property
-* Ensured correctly populated Salesforce Linked Service Friendly Names
-* Ensured Salesforce required fields presence on appropriate Connection types
-* Ensured same naming standard for Consumer Key from Salesforce REST API and BimlFlex application
-* Ensured correct determination of Foreign Key information from child relationship property
-* Ensured *Connection String Editor* is available for Salesforce
+### Script Activity
 
-### On-premises and Azure PostgreSQL
+Support for [Azure Data Factory Script Activity](https://www.varigence.com/Blog/Post/113) has been added as part of the 2022 R2 release. The Script Activity provides a versatile way to execute SQL statements against the configured connection. BimlFlex now uses the Script Activity in many patterns that previously used Lookup or Stored Procedure Activities. While this is not a functional difference, it makes the resulting pipelines easier to understand and debug, if required.
 
-* Added Azure `PostgreSQL Source.`
-* Added deployable Azure PostgreSQL Linked Service
-* Added SSIS component Connection using Intellisoft PostgreSQL OLEDB
-* Added *Generate SQL* command for querying views, querying indexes, and querying column metadata
-* Updated the BimlFlex App metadata import support to be more robust, including ensuring that SSL property of `connectionstring` was not required
+The use of Script Activities is not supported for Salesforce and Dynamics connections at the time of release. These data sets must still be connected to using either Lookup or Stored Procedure activities, until ADF supports the use of Script Activities for these connection types.
 
-### UI Improvements
+A major advantage of using Script Activities is broader support for connection types such as Snowflake. Our patterns have been updated to use the Script Activity instead of the proprietary Azure Function Bridge solution that was in place up to this release.
 
-* Major overhaul of the BimlFlex application, resulting in an increase of responsiveness across all areas, as well as improvements in consistency, parity, and ease-of-use for visual editors: Data Vault Accelerator, Schema Diagram, and the new Business Modeling feature
-* Updated the tree view on all metadata editor screens, showing additional detail and more meaningful icons
-* Introduced an improved `Add` feature that streamlines the creation of new metadata such as **Projects**, **Batches** and **Connections**
-It is no longer necessary to navigate away if dependent objects are required, as these can now be created directly
-* Archiving objects now correctly applies to all objects for which the respective object is the parent
-* Tooltips have been improved across the application, in line with the online reference documentation, and are visible when hovering over elements of the user interface
+> [!IMPORTANT]
+> The use of the Script Activity in combination with Self Hosted Integration Runtimes requires the runtime to be upgraded to v15.5 or higher. If using a lower version of Self Hosted Integration Runtime, upgrading is required to correctly execute the pipelines.
 
-### Data Vault Accelerator (Added Support)
+## 2022 R2 - Improvements
 
-* Increased performance for the display and visualization of large metadata sets
-* Improved initial auto layout generation and entity manipulation
-* Added new drag and drop settings, actions, and zoom functionality
-* Added context-aware actions, such as `split`/`revert split Satellite`, `exclude from Data Vault`, and `toggle Record Source`
-* Added *Business Entities* and *Business Attributes* data fields to integrate Business Modeling with Data Vault Accelerator
-* Improved `Merge Links`, `Revert Split Satellite`, `Split Link`, and `Exclude from Data Vault` context settings
-* Added Data Vault Accelerator Column Forms
+### Various
 
-### Schema Diagram
+* Added the automatic installation of `vcredist` to the application installer. In rare cases, this caused some errors during a clean installation
+* Added `archive` tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the application
+* Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have example 'high water mark' parameters for data delta selection
+* Added validation warnings for pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked are configured to have different databases. Pushdown processing can only work if the involved connections all point to the same database
+* Upon successful conclusion of a metadata import the application will now navigate to a **Schema Diagram** of the imported tables. 
 
-* Increased performance for the display and visualization of large metadata sets
-* Improved initial auto layout generation and entity manipulation
-* Added new drag and drop settings, actions, and zoom functionality
-* Improved anchor point connection manipulation
+### Connection Editor
 
-## BimlFlex 2022 R1 - Added Support
+* Ensured that all **Connection Editor** validators in the BimlStudio validation framework are also available in the BimlFlex app
+* Changed the styling of ADF tabs for Connection String and Azure Key Vault to better convey a 'one or the other' selection
 
-### Various New Support
+### Business Modeling
 
-* Added a Pushdown Processing feature at **Project** level to direct the generation, so that the code produced can be executed against the underlying connection. This is instead of being loaded and then processed. This was previously managed on the **Connection** level
-* Added `Pause` in SSIS Deploy ps1 files to allow the SSIS catalog to ingest the projects without errors
-* Added validator support for ETL configurations
-* Modified ELT code to spawn Stored Procedures for ELT Staging process
-* Added a feature that, when deploying an SSIS solution, will automatically create folders in SSISDB in case these do not yet exist
-* Added SSDT Option to disregard certain warnings from projects
-* Added Incremental Delete Detection for delta flat files
-* Added additional Azure authentication options to BimlFlex database access for BimlStudio, BimlFlex, and BimlFlex Excel-Add In
-* Added support for self-referencing relationships from a Link when creating a Bridge table
-* Added configurable transaction wrappers for Hub and Link lookups in ELT loads for improved concurrency support with parallel loads
-* Added ability to allow a multi-active (Link-)Satellite to reference a Link
-* Added support to optionally remove Business Keys from Link Satellites when using the Data Vault Accelerator
-* Added support for delete detection when using Data Type Mappings for Data Vault
-* Added improved input validation for all metadata editors
-* Added keyboard shortcut [Ctrl]+[S] to Save form for all metadata editors
-
-### Slowly Changing Dimensions
-
-* Added type 2 time-based fact to dimension lookups for ELT code
-* Added type 2 lookup for sample metadata sets
-* Removed the `Fixed` ChangeType setting
-* Updated names for column change types. `Type 1` is now `Update` and `Type 2` is now `Track History`
-
-### .net Core
-
-* Added support for SSDT .net Core builds
-* Added support for generating project files that can be directly opened in Azure Data Studio using the database project extension
-* Added additional script options to build ps1 files for SSDT .net Core builds
-
-### Blob Storage
-
-* BimlFlex file path name container now `Source` for Blob storage
-* Added support for Flat File in Blob Storage `Source`
-* Validator checks to ensure landing Connection has Blob landing when using Azure Copy Command staging and logging
-
-## BimlFlex 2022 R1 - Bug Fixes
-
-### SSIS
-
-* Fixed a bug for SSIS deployment which caused a higher thread count than one to duplicate a RowSourceId in the output when used
-* Fixed a bug where setting a null value replacement for hashing was not correctly applied to the Integration Key hash using SSIS
-* Fixed a bug where Data Type Mappings were not correctly applied when using SSIS in conjunction with Synapse, leading to incorrect column mappings
-* Fixed a bug where the Business Key was truncated when using a timestamp (DateTime and DateTime2) using SSIS
-* Fixed the operation of the *DisplaySchemaNameStg* setting so that it properly appends the schema name to the table and package names in SSIS, so that the object names are unique
+* Added data entry validators on the **Business Attribute Editor** to prevent entering impossible combinations of fields
 
 ### Azure Data Factory (ADF)
 
-* Fixed a bug where the `RecordSourceFull` configuration was not working applied when using ADF Change Tracking
-* The `@@this` expression is now correctly interpreted as the table name in the SELECT statement
-* Added 'PatternValidation' to ADF *SecretName* fields
-* Added pre- and post-processing Extension Points for Data Mart for ADF and Synapse
-* Added pre-processing Extension Points for ADF/Synapse Data Marts
-* Fixed a bug where the Linked Service AccountKey for ADF Connection was incorrectly saved
-* Fixed a bug where `DataFactoryName` was not being emitted to ARM templates
-* Fixed a bug where in ADF extract projects, if the LinkedService used is an Managed Instance, no load Stored Procedures were generated
+* Added feature to connect ADF Post Copy Extension Point to subsequent Activities, if present. For example, the setting of parameters
 
-### Azure Synapse
+### Salesforce
 
-* Fixed a bug where a Staged Query for Synapse used the Model Override Name instead of the Column Name
+* Improvements made to the Salesforce metadata import process, especially in regard to custom **Objects**
 
-### ADF Mapping Data Flows (Preview)
+### Mapping Data Flows
 
-* Added support for Link Satellites using Data Flow Mappings
-* Fixed a bug where Output was empty for Sinks where none were configured in the Data Flow
-* Fixed an issue with Link Key evaluation for Mapping Data Flows
+* Enabled [connectivity to data sources that are not directly supported by Mapping Data Flows](https://www.varigence.com/Blog/Post/108). When configuring a connection that is not natively supported, BimlFlex allows the user to define a 'Landing step' for the **Connection**. This directs the Mapping Data Flows templates to include an initial Copy Activity to 'land' the data before processing it further using Mapping Data Flows
+* Enabled [custom file paths for Delta Lake **Connections**](https://www.varigence.com/Blog/Post/110). This is supported by using a file path in the container definition, or by using the new File Path component which has been added to the Delta Lake **Connection** screen
+* Added the ability to differentiate PSA/ODS **Object** names from STG **Object** names, so that both object types can be loaded into the same data lake container. Previously, using the same container for PSA and STG objects would cause conflicts in writing the data
+* Added [support for **Parameters** for Mapping Data Flow templates](https://www.varigence.com/Blog/Post/109), enabling the configuration of load windows and filters
+* Added [support for **Derived Columns** in Mapping Data Flows templates](https://www.varigence.com/Blog/Post/107). This enables our users to incorporate complex bespoke logic using the data flows expression language, which will then be incorporated into the corresponding generated data flows
 
-### ADONET
+### SSIS
 
-* Fixed a bug where the Connection String Builder automatically added a provider to the connection string when creating ADO.NET connections. The provider is no longer added when defining an ADO.NET connection
+* Added a setting to use `Use Custom Components` that will remove all SSIS Custom Components from all SSIS templates in favor of native components
+* Added an SSIS Extension Point at the Data Flow level to control For Each Loop Container (FELC) properties
 
-### COZYROC
+## 2022 R2 - Bug Fixes
 
-* Fixed a bug where column names were not populated when using the COZYROC connector for Salesforce
+### Various Application Fixes
 
-### Microsoft Dynamics
+* Fixed an issue where certain tooltips would not be displayed when hovering over the BimlFlex user interface component
+* Fixed a bug where saving items in the app would sometimes generate a constraint error
+* Fixed a bug where imported metadata sometimes did not use local connection strings, when configured to do so
+* Fixed an issue in the generated BimlScript where the Dynamics `ServicePrincipalCredentialKVS` XML was missing a closing tag, causing build errors in some cases
+* Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog stating 'Extracted Metadata empty, extraction failed'
+* Fixed a bug where `Use My Exclusions` did not exclude **Column**, **Connection**, **Object**, or **Project** entities even though these were marked as excluded
+* Removed 'Data Warehouse SQL by Source' option from the BimlFlex Bundle options for code generation. Functionally, all data warehouse SQL emission is now controlled by the 'Data Warehouse SQL' option
+* Fixed various small issues related to Multi-Factor Authentication (MFA), which mitigates certain known issues in the installer and DACPAC deployment
+* Fixed a bug where the Azure Function Bridge failed due to listing soft-deleted blob containers. The listing will now only include and copy actual files
+* Fixed a bug where Data Type Mappings were not applied to Delete process landing tables
+* Fixed a bug where the Oracle CLOB datatype was not properly generated in BimlScript
+* Fixed application-wide instances of navigation icon(s) overlapping column text
+* Fixed a bug that produced an incorrect error message when creating a new **Customer** and **Version** in the BimlCatalog in some cases
+* Changed the **Snapshot** feature to include everything, including `excluded` or `deleted` items. This makes it possible to consistently create a snapshot, and then after a rollback, include the previously excluded items again
 
-* Fixed a bug where BimlStudio reported unfound errors when Dynamics Linked Service Authentication Method `AAD Service Principal` was selected
+### Data Lineage Editor
 
-### My SQL
+* Fixed a bug where removing a relationship or reference prevented the ability to save the metadata
 
-* Updated the BimlFlex App metadata import support to be more robust
+### Data Vault Accelerator
 
-### OLEDB SQL Server
+* Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. The 'Business Subject' on the relationship building column defines the Link table name
+* Fixed a bug that replicated a Source Object in the side panel when updating the 'Business Name.' This was only a front-end replication of the fields, but while not impacting any metadata, this caused undue confusion.
 
-* Fixed a bug where cloud OLEDB SQL Server Linked Service properties were inverted
+### Schema Diagram
 
-### Data Vault Accelerator (Bug Fixes)
+* Fixed a bug where creating a relationship to a non-Integration Key column drew a line but did nothing else. It is now no longer possible to draw a relationship where this is not supported
+* Fixed a bug where columns that could not be used to create a reference were allowed to be connected
+* Fixed a bug where selecting 'Show Related' from the context menu would only show outgoing relationships
 
-* Fixed a bug causing errors when combining Accelerate Link Satellite Keys and Delete Detection settings
-* Fixed a bug where tree view showed excluded items
-* Fixed a bug where HUB or LINK Object context menus were blank
-* Fixed a bug where target pane did not show all available Sources
-* Fixed a bug where `RecordSource` was missing for Satellites
-* Fixed a bug where Entity names were uneditable in Edit Pane
-* Fixed a bug where users were unable to edit Source entity
-* Fixed a bug where Column grid showed wrong headers
-* Fixed a bug where Column context menu actions `Navigate to Table` and `Edit Table` were missing
-* Fixed a bug where previewing and/or publishing model duplicated Columns
-* Fixed a bug where Link columns added to `Source` were not set as `derived`
-* Fixed a bug where `Remove Record Source` option was shown without actual Record Source
-* Renamed `Exclude from DV` setting to `Remove from Model`
-* Fixed a bug where Reference tables were created without Primary Key
-* Fixed a bug where Accelerator `Publish` did not persist results
-* Fixed a bug where `Save` in *Add Connection* field did not persist to the database
-* Fixed a bug where saving Connections cleared out Azure Key Vault details
-* Ensured that `Add Column` persists to the database
-* Fixed a bug where users were unable to add column to new **Object**
-* Fixed a bug where changing `Object Type` did not save/refresh properly
-* Ensured Object caches are reset after `Save`
+### Connection Editor
 
-### BimlFlex Excel Metadata Editor Add-in
+* Fixed a bug where clicking `refresh` did not prompt a check for unsaved changes
+* Fixed a bug where changing **Customer** or **Version** did not prompt a check for unsaved changes
+* Fixed a bug where when selecting `DB2` as **System Type** did not display a DB2 Linked Service option. DB2 is now selectable as Linked Service and the corresponding Linked Service code is generated accordingly
+* Fixed a bug that cleared all existing **Connection** fields when modifying a **Connection** by adding an Azure Key Vault. Previously entered details are now properly retained while configuring a connection
+* Fixed a bug where **Test Connection** would report failure, despite connecting successfully. This occurred for some non-SQL Server connections
+* Fixed issues in the **Connection String Builder** dialog where connection strings were not interpreted correctly
+* Fixed a bug where **Connection String Builder** dialog used previously saved values instead of the current entered values
+* Fixed a bug where a Landing **Connection** was able to select itself as a `Polybase Connection`. This is incorrect and not possible anymore
+* Fixed a bug where **[+] New Connection** did not pre-populate the **Integration Stage**
+* Fixed a bug where saving a record would change or reset the view from the current tree view nav selection.
+* Fixed a bug where switching between **Linked Service Connection String** and **Azure Key Vault** did not prompt a check for unsaved changes
+* Because of known issues using Integration Runtimes other than the default `AutoResolveIntegrationRuntime`, this feature has been disabled. Only the default `AutoResolveIntegrationRuntime` may be used to define a **Connection** Linked Service. Modification should be made either in ADF after deployment, or by updating the ARM template after build
 
-* Fixed a bug that caused objects to remain visible even though their parent Project was deleted
+### Project Editor
 
-### BimlFlex Application Bug Fixes
+* Fixed a bug where **Add New Connection** did not immediately display a newly created **Connection** as a selection option for the **Project**
+* Removed the `Data Views` **Integration Template**. This was a superfluous template that has now been deprecated
 
-* Fixed a bug that caused the settings `Infer Link Hub` and `Accelerate Hub Keys` to generate incorrect code when used together
-* Fixed a bug where the Data Vault setting `Use Where Exist` did not generate the NOT EXIST statements properly in some cases
-* Fixed a bug where duplicating Extension Point files placed the duplicates in the wrong folder
-* Fixed a bug generating ghost/zero records when the datatype is too small
-* Fixed a bug when FlexRowChangeType existed in DWH source
-* Fixed a bug where Data Mart RowChangeType existed in source
-* Fixed a bug where a Staged Query object with a RowChangeType configuration set to `derived` used @@this in Source SELECT statement, instead of the table name
-* Fixed a bug where Reload Project was failing when Source-to-Target-Mappings used a different name
-* Fixed a bug where new flat file objects were not selected in Object Editor and immediately disappeared
-* Fixed a bug where deleting a parent object (Project) failed with database error
-* Fixed a bug where multiple metadata imports with different naming conventions duplicated the IK columns. Columns are now replaced with new naming convention
-* Fixed a bug where creating a new Batch did not enable [Use Orchestration] by default
-* Fixed a bug where `Add Connection` and `Add Column` were not working properly in the App in certain circumstances
-* Fixed a bug where some drop-down menus overflowed text contents outside the boundary of the drop down menu
-* Fixed a bug with incorrect passthrough of Boolean control changes to editor forms underneath the modal when adding an entity
-* Fixed a bug where blob storage staging for on-premises adds tables to model, but did not create staging/PSA tables
-* Fixed a bug where setting the Auto Adjust Buffer Size did not work when using Visual Studio 2019
-* Fixed a bug related to the `RowIsDeleted` configuration. This used the value 1 as default. This has been updated to use 0 as default value
-* Fixed a bug in the tree view that caused `Add Object` to apply the `Object Type` from the previously selected object
-* Fixed a bug where reference (`REF`) tables contained columns that were marked as excluded
-* Fixed a bug which prevented users to archive two or more objects at the same time
-* Fixed a bug causing BimlStudio to report errors when a Dynamics Linked Service Authentication Method AAD Service principal is selected
-* Fixed a bug that incorrectly applied zero records to PIT tables in certain scenarios
-* Fixed a bug where *Search* was not including `SchemaQualifiedName`
-* Fixed a bug where `Duplicate Object` renamed existing **Object**
-* Fixed a bug where tri-state checkboxes only allowed two-state selection
-* Ensured that **Object** and **Column** entityTypes use **Connection** as a *rootEntityType*
-* Ensured that authentication is hidden when KeyVaultString is configured for `connectionstring`
-* Disabled individual SQL statement overrides when using the `override SQL` command
-* Ensured that disabling *Cloud* toggle disables LinkedService UI before **Save** is clicked
-* Ensured that enabling *Cloud* toggle enables LinkedService UI before **Save** is clicked
-* Fixed a bug where toggling *Cloud* toggled entity on base form but not in `Add Connection` dialog
-* Fixed a bug where Dashboard *Recent Connections* did not order items by history
-* Fixed a bug on the Dashboard where when `Apply Data Type Mappings` was selected, gave error "Invalid column name 'SsisDataflowExpression'."
-* Fixed ordering of column precision and scale
-* Ensured that `UseMyExclusions` saves in Connection Form on Save
-* Ensured `UseMyConnectionStrings` persists connection string
-* Fixed a bug where PSA code only compared Staging/PSA on Source Keys, not Business Keys
-* Ensured that Business Key column order was derived from Primary Key constraint and not column ordinal
+### ADF
 
-## Download Links to this Build
+* Fixed a bug where default values for ADF pipeline parameters were not correctly generated. While this did not cause issues when running batch processes, it made debugging or running individual pipelines harder than it needed to be. Parameter default values are now set with correct values for every pipeline
+* Ensured correct operation of the `Stage With Model Override Name` setting for ADF for **Objects** and **Columns**
+* Ensured that `Stage With Business Name` now correctly uses the 'Business Name' at **Object** and **Column** level
+* Fixed a bug where parameters for the Data Mart generated the 'GET' tasks, but not the 'SET' tasks in some scenarios
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe) - this installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe) - this installer includes the required runtime components for servers that will execute SSIS packages
+### Snowflake
+
+* Resolved an issue when calls made from ADF to Snowflake sometimes resulted in a timeout and process failure. As part of this solution, the Snowflake calls have been replaced by the new [ADF Script Activity](https://www.varigence.com/Blog/Post/113). Previously, calls to Snowflake were handled by the Azure Function Bridge. Timeouts have also been increased to 10 minutes
+* Known issues in ADF prevent the use of Connection String Key Vaults to store the entire Snowflake connection string. Because of this, the option to configure Snowflake connections to use a Key Vault for the connection string have been disabled. This is a known issue in Azure Data Factory that has been reported. The consequence is that a Snowflake connection _must_ be configured using a manual connection string in BimlFlex. It is still possible to configure a Key Vault to store the password only
+
+### Salesforce
+
+* Fixed a bug where where the app indicated 'Import metadata successful', even though this failed in reality. Accurate success or failure messages are now displayed when working with Salesforce metadata
+* Addressed an issue where users would get a 'Runtime Error' when using Snowflake components. To resolve this issue, users should redeploy the necessary runtime components.
+
+### SSIS
+
+* Fixed a bug where the `Process Subfolders` SSIS setting was not consistently applied to the Delete processes. SSIS Delete processes now correctly traverse subfolders / subdirectories
+
+### Extension Points
+
+* Fixed an issue where targeting _implicitly_ named **Batches**, such as the Raw Data Vault batches, did to work. Users can now correctly target Batch pipelines by their name in all cases
+
+## BimlStudio 2022 R2
+
+* The BimlStudio 'Copy SQL Script' takes in 'Column Business Name' into consideration when the `Stage Column Business Name` setting is enabled
+* Fixed a bug in the Debug Utility dialog where if 'Obfuscate Connection Strings' was enabled, 'Save Metadata to File' would produce an 'Extraction Failed' error
+* Added caching to the 'Generate Script Options' dialog to remember the user's last selected 'Script Type' selection
+* Improvements made for caching product keys that are entered in the Command Line, so as to not be re-entered on each build. This is particularly relevant for virtual environments.

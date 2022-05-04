@@ -6,7 +6,7 @@ summary: Release Notes for BimlFlex 2022 R2
 
 # Release Notes
 
-Varigence is excited to release the 2022 R2 (*PREVIEW*) version of the BimlFlex platform for data solution automation!
+Varigence is excited to release the 2022 R2 version of the BimlFlex platform for data solution automation!
 
 > [!NOTE]
 >
@@ -17,7 +17,7 @@ Varigence is excited to release the 2022 R2 (*PREVIEW*) version of the BimlFlex 
 
 BimlFlex 2022 R2 is installed and upgraded through a single consolidated installer.
 
-Build 22.2.113, release date: 15 Apr 2022
+Build 22.2.113, release date: 13 May 2022
 
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
@@ -130,7 +130,7 @@ A major advantage of using Script Activities is broader support for connection t
 * Fixed a bug where **[+] New Connection** did not pre-populate the **Integration Stage**
 * Fixed a bug where saving a record would change or reset the view from the current tree view nav selection.
 * Fixed a bug where switching between **Linked Service Connection String** and **Azure Key Vault** did not prompt a check for unsaved changes
-* Because of known issues using Integration Runtimes other than the default `AutoResolveIntegrationRuntime`, this feature has been disabled. Only the default `AutoResolveIntegrationRuntime` may be used to define a **Connection** Linked Service.Modification should be made either in ADF after deployment, or by updating the ARM template after build
+* Because of known issues using Integration Runtimes other than the default `AutoResolveIntegrationRuntime`, this feature has been disabled. Only the default `AutoResolveIntegrationRuntime` may be used to define a **Connection** Linked Service. Modification should be made either in ADF after deployment, or by updating the ARM template after build
 
 ### Project Editor
 
