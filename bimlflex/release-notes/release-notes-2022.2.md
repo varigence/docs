@@ -17,8 +17,13 @@ Varigence is excited to release the 2022 R2 version of the BimlFlex platform for
 
 BimlFlex 2022 R2 is installed and upgraded through a single consolidated installer.
 
-Build 22.2.113, release date: 13 May 2022
+<!--
+MANUALLY UPDATE BUILD NUMBER UPON RELEASE
+-->
 
+Build 22.2.161.0, release date: 25 May 2022
+
+>
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
@@ -45,7 +50,7 @@ A major advantage of using Script Activities is broader support for connection t
 
 ## 2022 R2 - Improvements
 
-### Various
+### Various Application Improvements
 
 * Added the automatic installation of `vcredist` to the application installer. In rare cases, this caused some errors during a clean installation
 * Added `archive` tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the application
@@ -57,6 +62,10 @@ A major advantage of using Script Activities is broader support for connection t
 
 * Ensured that all **Connection Editor** validators in the BimlStudio validation framework are also available in the BimlFlex app
 * Changed the styling of ADF tabs for Connection String and Azure Key Vault to better convey a 'one or the other' selection
+
+### Data Vault Accelerator
+
+* Added the ability to define a "Stub Hub" using the Data Vault Accelerator. This will allow users to generate a "placeholder" Hub by modifying **Column** properties (*ChangeType* set to `Stub Hub`)
 
 ### Business Modeling
 
@@ -89,9 +98,12 @@ A major advantage of using Script Activities is broader support for connection t
 
 * Fixed an issue where certain tooltips would not be displayed when hovering over the BimlFlex user interface component
 * Fixed a bug where saving items in the app would sometimes generate a constraint error
+* Fixed a bug where tree view navigation container would sometimes obscure objects, or clip elements from view
 * Fixed a bug where imported metadata sometimes did not use local connection strings, when configured to do so
+* Fixed a bug that would sometimes prompt the user for unsaved changes, but did not actually clear the changes when accepting
 * Fixed an issue in the generated BimlScript where the Dynamics `ServicePrincipalCredentialKVS` XML was missing a closing tag, causing build errors in some cases
 * Fixed a bug that prevented correct export of metadata when connections strings are obfuscated. This would report a failure dialog stating 'Extracted Metadata empty, extraction failed'
+* Fixed a bug where **Columns** and *DataTypes* would sometimes reset when saving an **Object**
 * Fixed a bug where `Use My Exclusions` did not exclude **Column**, **Connection**, **Object**, or **Project** entities even though these were marked as excluded
 * Removed 'Data Warehouse SQL by Source' option from the BimlFlex Bundle options for code generation. Functionally, all data warehouse SQL emission is now controlled by the 'Data Warehouse SQL' option
 * Fixed various small issues related to Multi-Factor Authentication (MFA), which mitigates certain known issues in the installer and DACPAC deployment
