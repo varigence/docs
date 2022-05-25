@@ -21,7 +21,7 @@ BimlFlex 2022 R2 is installed and upgraded through a single consolidated install
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
 
-Build 22.2.161.0, release date: 25 May 2022
+Build 22.2.165.0, release date: 25 May 2022
 
 >
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
@@ -56,7 +56,7 @@ A major advantage of using Script Activities is broader support for connection t
 * Added `archive` tables to all Execution and Audit tables to improve performance and reduce deadlocks. The default archive threshold is `30 days`, but can be configured in the application
 * Reconfigured metadata samples 41 (Synapse Dynamics ADF Solution) and 43 (Synapse Salesforce SSIS Solution) to have example 'high water mark' parameters for data delta selection
 * Added validation warnings for pushdown processing when Azure SQL connections in a **Project** that have `pushdown` checked are configured to have different databases. Pushdown processing can only work if the involved connections all point to the same database
-* Upon successful conclusion of a metadata import the application will now navigate to a **Schema Diagram** of the imported tables. 
+* Upon successful conclusion of a metadata import the application will now navigate to a **Schema Diagram** of the imported tables
 
 ### Connection Editor
 
@@ -121,7 +121,7 @@ A major advantage of using Script Activities is broader support for connection t
 ### Data Vault Accelerator
 
 * Fixed a bug where the logic for naming an Implicit Link unintentionally changed between 2021 R1 and 2022 R1. The 'Business Subject' on the relationship building column defines the Link table name
-* Fixed a bug that replicated a Source Object in the side panel when updating the 'Business Name.' This was only a front-end replication of the fields, but while not impacting any metadata, this caused undue confusion.
+* Fixed a bug that replicated a Source Object in the side panel when updating the 'Business Name.' This was only a front-end replication of the fields, but while not impacting any metadata, this caused undue confusion
 
 ### Schema Diagram
 
@@ -140,7 +140,7 @@ A major advantage of using Script Activities is broader support for connection t
 * Fixed a bug where **Connection String Builder** dialog used previously saved values instead of the current entered values
 * Fixed a bug where a Landing **Connection** was able to select itself as a `Polybase Connection`. This is incorrect and not possible anymore
 * Fixed a bug where **[+] New Connection** did not pre-populate the **Integration Stage**
-* Fixed a bug where saving a record would change or reset the view from the current tree view nav selection.
+* Fixed a bug where saving a record would change or reset the view from the current tree view nav selection
 * Fixed a bug where switching between **Linked Service Connection String** and **Azure Key Vault** did not prompt a check for unsaved changes
 * Because of known issues using Integration Runtimes other than the default `AutoResolveIntegrationRuntime`, this feature has been disabled. Only the default `AutoResolveIntegrationRuntime` may be used to define a **Connection** Linked Service. Modification should be made either in ADF after deployment, or by updating the ARM template after build
 
@@ -164,7 +164,7 @@ A major advantage of using Script Activities is broader support for connection t
 ### Salesforce
 
 * Fixed a bug where where the app indicated 'Import metadata successful', even though this failed in reality. Accurate success or failure messages are now displayed when working with Salesforce metadata
-* Addressed an issue where users would get a 'Runtime Error' when using Snowflake components. To resolve this issue, users should redeploy the necessary runtime components.
+* Addressed an issue where users would get a 'Runtime Error' when using Snowflake components. To resolve this issue, users should redeploy the necessary runtime components
 
 ### SSIS
 
@@ -173,14 +173,10 @@ A major advantage of using Script Activities is broader support for connection t
 ### Extension Points
 
 * Fixed an issue where targeting _implicitly_ named **Batches**, such as the Raw Data Vault batches, did to work. Users can now correctly target Batch pipelines by their name in all cases
-* Added the initial Extension Points for Mapping Data Flows. These include the following that can be added in data flows:
-  * Post Source, to add bespoke logic directly after the Source transformation
-  * Post Derived Column, to add logic after the initial evaluation of standard columns
-  * Add Sink, to be able to add a custom Sink transformation and connect it anywhere in the data flow
 
 ## BimlStudio 2022 R2
 
 * The BimlStudio 'Copy SQL Script' takes in 'Column Business Name' into consideration when the `Stage Column Business Name` setting is enabled
 * Fixed a bug in the Debug Utility dialog where if 'Obfuscate Connection Strings' was enabled, 'Save Metadata to File' would produce an 'Extraction Failed' error
 * Added caching to the 'Generate Script Options' dialog to remember the user's last selected 'Script Type' selection
-* Improvements made for caching product keys that are entered in the Command Line, so as to not be re-entered on each build. This is particularly relevant for virtual environments.
+* Improvements made for caching product keys that are entered in the Command Line, so as to not be re-entered on each build. This is particularly relevant for virtual environments

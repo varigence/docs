@@ -3,6 +3,7 @@ uid: bimlflex-release-notes
 name: BimlFlex Release Notes  
 summary: Release Notes for the current version of BimlFlex
 ---
+
 # Release Notes
 
 Varigence is excited to release the 2022 R2 version of the BimlFlex platform for data solution automation!
