@@ -173,6 +173,10 @@ A major advantage of using Script Activities is broader support for connection t
 ### Extension Points
 
 * Fixed an issue where targeting _implicitly_ named **Batches**, such as the Raw Data Vault batches, did to work. Users can now correctly target Batch pipelines by their name in all cases
+* Added the initial Extension Points for Mapping Data Flows. These include the following that can be added in data flows:
+  * Post Source, to add bespoke logic directly after the Source transformation
+  * Post Derived Column, to add logic after the initial evaluation of standard columns
+  * Add Sink, to be able to add a custom Sink transformation and connect it anywhere in the data flow
 
 ## BimlStudio 2022 R2
 
