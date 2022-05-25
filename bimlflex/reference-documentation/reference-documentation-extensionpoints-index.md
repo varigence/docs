@@ -25,4 +25,5 @@ This page lists the available Extensions Point for each category.
 |[Staging SQL](xref:bimlflex-app-reference-documentation-Staging-SQL) | Extension Points that allow modification of SQL code at various places in the process of loading data from source to staging.|
 |[Data Vault](xref:bimlflex-app-reference-documentation-Data-Vault) | Extension Points that allow modification of steps and logic in Data Vault related processes.|
 |[Data Mart](xref:bimlflex-app-reference-documentation-Data-Mart) | Extension Points that can modify the approach to load Data Marts.|
-|[Azure](xref:bimlflex-app-reference-documentation-Azure) | Extension Points specifically catering for Azure and ADF.|
+|[Data Factory](xref:bimlflex-app-reference-documentation-Data-Factory) | Extension Points specifically catering for Azure and ADF.|
+|[Mapping Data Flows](xref:bimlflex-app-reference-documentation-Mapping-Data-Flows) | Extension Points specifically catering for Azure Data Factory Mapping Data Flows.|
