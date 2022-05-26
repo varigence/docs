@@ -13,13 +13,22 @@ summary: Release Notes for BimlFlex 2022 R1
 
 BimlFlex 2022 R1 is installed and upgraded through a single consolidated installer.
 
-## Latest Release
+## Latest Patched Release
 
-Build 22.1.87.0, release date: 22 Dec 2022
+Build 22.1.124.0, release date: 28 Feb 2022
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.1.124.0.exe)  
     This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.1.124.0.exe)  
+    This installer includes the required runtime components for servers that will execute SSIS packages
+
+## Original Release
+
+Build 22.1.87.0, release date: 22 Dec 2021
+
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.1.87.0.exe)  
+    This installer includes all parts of BimlFlex
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.1.87.0.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## 2022 R1 New Features
