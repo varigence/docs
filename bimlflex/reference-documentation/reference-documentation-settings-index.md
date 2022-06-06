@@ -65,6 +65,9 @@ Align these settings with the organizations best practices and environmental req
 |[Create External On Stage](xref:bimlflex-app-reference-documentation-setting-AzureCreateExternalOnStage) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Should the Staging process "DROP" and "CREATE EXTERNAL TABLE" before running the Staging Stored Procedure.|
 |[External File Conversion](xref:bimlflex-app-reference-documentation-setting-AzureExternalFileConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|By default, the extraction process from a source to blob storage applies several conversions to create files that are supported by PolyBase. This setting allows control of this conversion process.|
 |[Distribute Round Robin Temporary Tables](xref:bimlflex-app-reference-documentation-setting-AzureRoundRobinTemporaryTables) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to use Round Robin distribution in Azure Synapose temporary tables instead of the default Hash distribution.|
+|[Archive Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureArchiveLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are moved to the defined archive container, once processing is completed.|
+|[OnError Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureOnErrorLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are moved to the defined error container on error, once processing is completed.|
+|[OnError Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureOnErrorLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are deleted once processing is completed.|
 
 ## Azure Copy
   

@@ -39,6 +39,7 @@ Instead of using multiple entity types to handle these scenarios BimlFlex uses m
 |BusinessSubject | This column categories Objects per subject area. This grouping can be used in the Data Vault Accelerator for constrained acceleration.|
 |SameAsInherited | Defines if the InheritFromObject is the same object. Entering Y into this column will instruct BimlFLex to reuse the inherited tables for loading.|
 |UseInheritedName | Defines if the InheritFromObject has the same object. Entering Y into this column will instruct BimlFLex to reuse the inherited tables ObjectName for loading.|
+|CollectionReference | |
 |IsColumnNamesInFirstDataRow | This value specifies whether more descriptive column names are provided in the first data row to replace the column names specified in the Flat File Format Columns collection.|
 |FlatFileType | The FlatFileType provides options for the type of flat file row format that will be used.|
 |DataRowsToSkip | This value specifies how many data rows to skip before beginning to product data.|
