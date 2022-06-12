@@ -14,36 +14,36 @@ The BimlFlex [**Configurations**](xref:bimlflex-configurations) allow for the cr
   
 | Property | Description |
 | --------- | ----------- |
-|ConfigurationKey | The unique name of the selected configuration.|
-|ConfigurationValue | This column contains the value to be returned when the configuration is accessed by the framework. This attribute allows you to define naming conventions custom to your environment.|
-|ConfigurationDataType | The definition of the data type for a configuration being used in the solution output. Here you should enter the data type using the following format "DATATYPENAME".|
+|Configuration Key | The unique name of the selected configuration.|
+|Configuration Value | This column contains the value to be returned when the Configuration is accessed by the framework. This attribute allows you to define naming conventions custom to your environment.|
+|Configuration Data Type | The definition of the data type for a Configuration being used in the solution output. Here you should enter the data type using the following format "DATATYPENAME".|
 |Length | |
 |Precision | |
 |Scale | |
 |ConfigurationDefault | The value that will used by the Configuration if no Configuration Value has been specified.|
-|ConfigurationGrouping | The category the configuration belongs to.|
-|ConfigurationOrder | An ordinal sequence for the Configuration.|
-|SqlSourceExpression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.<br><br>Example: `CONVERT(VARCHAR(27), @@this, 121)`|
-|SqlTargetExpression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements.<br><br>Example: `CONVERT(VARCHAR(27), @@this, 121)`|
-|SsisDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.|
-|AdfCopyExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Copy Activity expression syntax is used. Utilize the same syntax as the Derived Column.|
-|AdfDataflowExpression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.|
-|IsNullable | This column allows to you define if the configuration value is able to be null without throwing an error when building BimlFlex solution. To make the configuration nullable simply enter "Y" otherwise "N" will set the configuration to be non-nullable.|
+|Configuration Group | The category the Configuration belongs to.|
+|Configuration Order | The ordinal sequence for the Configuration.|
+|SQL Source Expression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.<br><br>Example: `CONVERT(VARCHAR(27), @@this, 121)`|
+|SQL Target Expression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements.<br><br>Example: `CONVERT(VARCHAR(27), @@this, 121)`|
+|SSIS Dataflow Expression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.|
+|ADF Copy Expression | This value specifies the expression used to calculate the value of the derived column. The ADF Copy Activity expression syntax is used. Utilize the same syntax as the Derived Column.|
+|ADF Dataflow Expression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.|
+|Is Nullable | This column allows to you define if the configuration value is able to be null without throwing an error when building BimlFlex solution. To make the configuration nullable simply enter "Y" otherwise "N" will set the configuration to be non-nullable.|
 |Description | Option annotations for the Configuration.|
 
 ## References
   
 | Property | Description |
 | --------- | ----------- |
-|CustomerUID | Reference to the Customer that this Configuration belongs to.|
-|VersionUID | Reference to the Version that this Configuration belongs to.|
+|Customer | Reference to the Customer that this Configuration belongs to.|
+|Version | Reference to the Version that this Configuration belongs to.|
 |DataTypeId | |
-|LandingAttributeId | The landing attribute is used to control whether a configuration is applied to a landing environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
-|StagingAttributeId | The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
-|PersistentStagingAttributeId | The staging attribute is used to control whether a configuration is applied to a staging environment of the solution architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
-|HubAttributeId | The hub attribute is used to control whether a configuration is applied to hubs when generating a data vault architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
-|SatelliteAttributeId | The satellite attribute is used to control when a configuration is applied to Satellites when generating a data vault architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
-|LinkAttributeId | The link attribute is used to control when a configuration is applied to links when generating a data vault architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
-|DimAttributeId | The dim attribute is used to control when a configuration is applied to dimensions when generating a data warehouse architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
-|FactAttributeId | The fact attribute is used to control when a configuration is applied to facts when generating a data warehouse architecture. Simply enter the name of the annotation to use when being referenced in the framework.|
+|Landing Attribute | The Landing Attribute is used to control whether a Configuration is applied to a landing environment of the solution architecture.|
+|Staging Attribute | The Staging Attribute is used to control whether a Configuration is applied to a staging environment of the solution architecture.|
+|Persistent Staging Attribute | The Persistent Staging Attribute is used to control whether a Configuration is applied to a staging environment of the solution architecture.|
+|Hub Attribute | The Hub Attribute is used to control whether a Configuration is applied to Hubs when generating a Data Vault solution.|
+|Satellite Attribute | The Satellite Attribute is used to control when a Configuration is applied to Satellites when generating a Data Vault solution.|
+|Link Attribute | The Link Attribute is used to control when a Configuration is applied to Links when generating a Data Vault solution.|
+|Dimension Attribute | The Dimension Attribute is used to control when a Configuration is applied to Dimensions when generating a data warehouse solution.|
+|Fact Attribute | The Fact Attribute is used to control when a Configuration is applied to Facts when generating a data warehouse solution.|
 
