@@ -70,13 +70,13 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Linked Service Host | Specifies the Host Name for on-premise Dynamics CRM instances.|
 |Linked Service Service URI | Specifies the address of the Dynamics instance. Typically in the form of: https://adfdynamics.crm.dynamics.com.|
 |Dynamics CRM Linked Service Port Number | Specifies the port for on-premise Dynamics CRM instances. If omitted then port 443 will be used.|
-|LS_EnableSsl | |
-|LS_EnableServerCertificateValidation | |
-|LS_SkipHostKeyValidation | |
-|LS_HostKeyFingerprint | |
-|LS_PassPhrase | |
-|LS_PrivateKeyContent | |
-|LS_PrivateKeyPath | |
+|Linked Service Enable SSL | Enable Secure Socket Layer (SSL) as a property for the generated Linked Service.|
+|Linked Service Enable Certificate Validation | Enable the validation of the security certificate as a property for the generated Linked Service.|
+|Linked Service Skip Host Key Validation | Skip the Host Key Valiation for the generated Linked Service.|
+|Linked Service Host Key Fingerprint | Ensure that the Host Key Fingerprint is applied as property for Linked Service SSH connections.|
+|Linked Service Passphrase | The passphrase to be used for the Linked Service.|
+|Linked Service Private Key Content | The way the Private Key information is provided for the Linked Service.|
+|Linked Service Private Key Path | The location of the Private Key for the Linked Service.|
 |Linked Service Security Token Authentication | Specifies the Security Token to use for authentication.|
 |Linked Service Security Token Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Security Token.|
 |Linked Service Security Token Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Security Token. If omitted, the most recent version is used.|

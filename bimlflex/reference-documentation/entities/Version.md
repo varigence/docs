@@ -16,17 +16,17 @@ The BimlFlex [**Version**](xref:bimlflex-concepts-version) concept supports mana
 | Property | Description |
 | --------- | ----------- |
 |Name | The name of the selected Version.|
-|IsCurrent | Identifier that defines if the Version is current. Only current Versions are visible in the selection.|
-|EffectiveFromDate | The date / time the Version is active from (validity period).|
-|EffectiveToDate | The date / time the Version is active to (validity period).|
+|Is Current | Identifier that defines if the Version is current. Only current Versions are visible in the BimlFlex version selection.|
+|Effective From Date | The date / time the Version is active from (validity period).|
+|Effective To Date | The date / time the Version is active to (validity period).|
 |Comments | Optional free-format notes about the Version.|
-|CreatedOn | The date / time the Version has been created.|
-|LastClonedOn | The most recent date / time the Version was cloned.|
-|LastMergedOn | The most recent date / time the Version was merged.|
+|Created On | The date / time the Version has been created.|
+|Last Cloned On | The most recent date / time the Version was cloned.|
+|Last Merged On | The most recent date / time the Version was merged.|
 
 ## References
   
 | Property | Description |
 | --------- | ----------- |
-|CustomerUID | Reference to the Customer that this Version belongs to.|
+|Customer | Reference to the Customer that this Version belongs to.|
 

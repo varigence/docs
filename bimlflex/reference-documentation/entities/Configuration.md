@@ -17,9 +17,9 @@ The BimlFlex [**Configurations**](xref:bimlflex-configurations) allow for the cr
 |Configuration Key | The unique name of the selected configuration.|
 |Configuration Value | This column contains the value to be returned when the Configuration is accessed by the framework. This attribute allows you to define naming conventions custom to your environment.|
 |Configuration Data Type | The definition of the data type for a Configuration being used in the solution output. Here you should enter the data type using the following format "DATATYPENAME".|
-|Length | |
-|Precision | |
-|Scale | |
+|Length | The length of the Configuration Column.|
+|Precision | The precision of the Configuration Column.|
+|Scale | The scale of the Configuration Column.|
 |ConfigurationDefault | The value that will used by the Configuration if no Configuration Value has been specified.|
 |Configuration Group | The category the Configuration belongs to.|
 |Configuration Order | The ordinal sequence for the Configuration.|
@@ -37,7 +37,7 @@ The BimlFlex [**Configurations**](xref:bimlflex-configurations) allow for the cr
 | --------- | ----------- |
 |Customer | Reference to the Customer that this Configuration belongs to.|
 |Version | Reference to the Version that this Configuration belongs to.|
-|DataTypeId | |
+|DataTypeId | The data type of the Configuration Column.|
 |Landing Attribute | The Landing Attribute is used to control whether a Configuration is applied to a landing environment of the solution architecture.|
 |Staging Attribute | The Staging Attribute is used to control whether a Configuration is applied to a staging environment of the solution architecture.|
 |Persistent Staging Attribute | The Persistent Staging Attribute is used to control whether a Configuration is applied to a staging environment of the solution architecture.|
