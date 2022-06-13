@@ -16,7 +16,7 @@ BimlFlex offer many [**Settings**](xref:bimlflex-settings) that provide detailed
   
 | Property | Description |
 | --------- | ----------- |
-|SettingKey | The name of the Setting.|
+|SettingKey | The unique name of the Setting.|
 |SettingValue | |
 |SettingDataType | |
 |SettingDefault | |
