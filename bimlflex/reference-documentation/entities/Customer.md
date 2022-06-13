@@ -12,7 +12,7 @@ The BimlFlex [**Customer**](xref:bimlflex-concepts-customer) offers a flexible w
 
 ## Overview
   
-| Property | Description |
+| <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Name | The name of the Customer (tenant). This is a unique name within the BimlFlex database.|
-|IsActive | Indicator whether the Customer is set as Active (enabled).|
+|Active | Indicator whether the Customer is set as Active (enabled).|

@@ -26,5 +26,4 @@ Below is an outline of the properties and relationships for each entity type.
 |[Objects](xref:bimlflex-app-reference-documentation-Objects) | Objects in BimlFlex are the data stores that can be used as source or target for data logistics.|
 |[Parameters](xref:bimlflex-app-reference-documentation-Parameters) | Parameters are customizable values that can be set throughout the solution.|
 |[Projects](xref:bimlflex-app-reference-documentation-Projects) | Connections define the data logistics workload. They specify the primary orchestration engine (e.g. ADF) and the Connections for the involved the sources and targets.|
-|[Settings](xref:bimlflex-app-reference-documentation-Settings) | The Settings Editor is used to manage metadata and framework settings in BimlFlex.|
 |[Versions](xref:bimlflex-app-reference-documentation-Versions) | Versions support management of changes in metadata over time.|

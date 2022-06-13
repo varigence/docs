@@ -12,27 +12,27 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 
 ## Overview
   
-| Property | Description |
+| <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Name | The name of the Connection. This must be unique for the selected Customer.|
 |Connection String | Connection string to be used by this connection to access the data. Please note that this connection string will be parsed at build time (in BimlStudio) if the underlying platform requires testing for object existence (e.g. using SSIS). For Cloud Connections, this connectin string is only used to import and update design metadata. A separate runtime connection for Cloud Connections is specified in BimlFlex under the Linked Service.|
 |Catalog | The database name that the connection points to. For an Excel file connection this will be the worksheet name. If you work in an environment where the production database is named differently to other environments, it is recommended using the production name. For example, using AdventureWorks (Production) instead of AdventureWorks_DEV (Development).|
-|RecordSource | A name or abbreviation that uniquely identifies the source of the data. This is a mandatory field for Connections with an Integration Stage of `Source System`. The Record Source is defined as an Ansi String of lentgh 10 data type by default, but this can be changed to any value in the Configurations screen. BimlFlex will notify the user if a length is entered that exceeds that of the defined datatype in the Configuration. The Record Source value is used throughout the BimlFlex implementation as additional data points and to support auditability. It also is used within conventions such as creation of schema- and table names. Because of this, it is often easiest to use an abbreviation and adhere to standard database object naming - e.g. no spaces and commas.|
+|Record Source | A name or abbreviation that uniquely identifies the source of the data. This is a mandatory field for Connections with an Integration Stage of `Source System`. The Record Source is defined as an Ansi String of lentgh 10 data type by default, but this can be changed to any value in the Configurations screen. BimlFlex will notify the user if a length is entered that exceeds that of the defined datatype in the Configuration. The Record Source value is used throughout the BimlFlex implementation as additional data points and to support auditability. It also is used within conventions such as creation of schema- and table names. Because of this, it is often easiest to use an abbreviation and adhere to standard database object naming - e.g. no spaces and commas.|
 |File Path | The path where the files are located. Only applies to a Connection that has the Connection Type of File. The Biml templates will use this attribute in a &lt;ForEachFileLoop&gt; to load all files in this path / directory and that match the File Pattern.|
 |File Pattern | The pattern, or wildcard, that can be used to identify which files will be loaded. For example *.csv. Only applies to a Connection that has the Connection Type of `File`.|
 |Persist History | For a Connection with the Integration Stage of Source System, this setting manages history tracking in the Persistent Staging Area (PSA) corresponding to the Connection. This requires a Persistent Staging Connection to be defined in the Project that uses the Source Connection. If this setting is disabled (but a PSA connection is configured), the PSA database only maintains the most recent change (state). This way, the PSA becomes an Operational Data Store (ODS) containing only the most recently received data but no history. Having a current-state only PSA can be useful to provide as an ODS, and can be delivered quickly using the source metadata.|
 |Use Temporal Tables | Temporal tables (also known as system-versioned temporal tables) supports providing data as it was at an historical point in time, rather than only showing the data available at the current point in time. By enabling Temporal Tables in BimlFlex, the Objects belonging to the selected Connection will be created using Temporal Table syntax. This enables data to be be queried at a specific point-in-time following the supported SQL Server syntax. In BimlFlex, this is only supported for Persistent Staging Area connections, and only applies to SQL Server database (either on-premise, or made accessible via a self-hosted integration runtime), Managed Instance, or Azure SQL databases.|
-|Number Of Threads | The number of threads a data logistics process can use to split the workload at runtime using the selected connection. The default is 1. The amount of threads can be redefined at the object level. When using SSIS, this attribute is only used in the SRC – STG template with the Balance Data Distributor to allow for greater parallelism. Only define a value greater than zero if the server has enough CPU and Memory to accommodate additional threads.|
-|Exclude From Model | Hide the Connection from the model. Can still be seen if the user has Show Excluded enabled.|
+|Number of Threads | The number of threads a data logistics process can use to split the workload at runtime using the selected connection. The default is 1. The amount of threads can be redefined at the object level. When using SSIS, this attribute is only used in the SRC – STG template with the Balance Data Distributor to allow for greater parallelism. Only define a value greater than zero if the server has enough CPU and Memory to accommodate additional threads.|
+|Exclude from Model | Hide the Connection from the model. Can still be seen if the user has Show Excluded enabled.|
 |Data Source | Name of the server the Connection points to. This is usually omitted as a separate configuration because defining this in the Connection String is sufficient.|
 |Authentication Method | Indicator which Authentication Method will be used for the selected Connection.|
 |User Name | The user name which is to be used in the Connection, in case Authentication Method (Named User) is selected.|
 |Password | The password which is to be used in the Connection, in case Authentication Method (Named User) is selected.|
 |Provider | The type of connection provider used for this connection. When using ADO.NET connections other than SQL Server this is a required field.|
 |Description | Free-format additional documentation about the Connection.|
-|Is Cloud Enabled | Determines whether the Connection is cloud enabled for use with Azure Data Factory.|
+|Cloud Enabled | Determines whether the Connection is cloud enabled for use with Azure Data Factory.|
 |Linked Service Type | The type of Linked Service that will be generated for ADF, e.g. the connector used. For example Data Lake Gen2, SQL Server, or Azure Synapse Analytics.|
-|Connect Via Integration Runtime | The name of the Azure Data Factory (ADF) Integration Runtime (IR) that is used to access the Linked Service. This must be already preconfigured / available in ADF.|
+|Connect via Integration Runtime | The name of the Azure Data Factory (ADF) Integration Runtime (IR) that is used to access the Linked Service. This must be already preconfigured / available in ADF.|
 |Linked Service Connection String | Specifies the Connection String that contains information necessary to connect to the Azure Data Factory Linked Service.|
 |Linked Service Connection String Key Vault Secret Name | Specifies the name of the Key Vault Secret that contains the Connection String.|
 |Linked Service Connection String Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Connection String. If omitted, the most recent version is used.|
@@ -88,7 +88,7 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 
 ## References
   
-| Property | Description |
+| <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Customer | Reference to the Customer that this Connection belongs to.|
 |Version | Reference to the Version that this Connection belongs to.|

@@ -12,17 +12,17 @@ The BimlFlex [**Project**](xref:bimlflex-project-editor) concept defines a data 
 
 ## Overview
   
-| Property | Description |
+| <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Name | The name of the Project. The Project Name must be unique for the selected Customer.|
 |Pushdown Processing | Only applies to SSIS Integration Templates, and only when the target is an SQL Server database (either on-premise, or made accessible via a self-hosted integration runtime), Managed Instance, or an Azure SQL database. Enabling Pushdown Processing will direct BimlFlex to generate the data logistics processes as Stored Procedures that are executed in the database, as opposed to be generated as SSIS packages. Packages would still be created, but only to orchestrate the Stored Procedures. Note that for Azure SQL Project Connections, all Azure SQL Connections must have the same database configured. This is because Azure SQL does not support cross-database queries.|
 |Pushdown Extraction | When enabled, allows the source data extract to load the data using pushdown to the engine, such as using a SQL Query in SQL Server instead of using a Data Flow in SSIS or a Copy Activity in ADF. This only works when the source data is queryable from the target platform.|
-|Exclude From Model | Enabled Exclude From Model will exclude the project from the BimlFlex solution, but still keep it available.|
+|Exclude from Model | Enabled Exclude from Model will exclude the project from the BimlFlex solution, but still keep it available.|
 |Description | Free-format additional documentation about the Project.|
 
 ## References
   
-| Property | Description |
+| <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Customer | Reference to the Customer that this Project belongs to.|
 |Version | Reference to the Version that this Project belongs to.|

@@ -13,10 +13,10 @@ The BimlFlex [**Version**](xref:bimlflex-concepts-version) concept supports mana
 
 ## Overview
   
-| Property | Description |
+| <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Name | The name of the selected Version.|
-|Is Current | Identifier that defines if the Version is current. Only current Versions are visible in the BimlFlex version selection.|
+|Current | Identifier that defines if the Version is current. Only current Versions are visible in the BimlFlex version selection.|
 |Effective From Date | The date / time the Version is active from (validity period).|
 |Effective To Date | The date / time the Version is active to (validity period).|
 |Comments | Optional free-format notes about the Version.|
@@ -26,7 +26,7 @@ The BimlFlex [**Version**](xref:bimlflex-concepts-version) concept supports mana
 
 ## References
   
-| Property | Description |
+| <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Customer | Reference to the Customer that this Version belongs to.|
 
