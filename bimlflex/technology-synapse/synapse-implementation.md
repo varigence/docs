@@ -93,8 +93,6 @@ When using Azure Synapse as the **Target Warehouse Environment** it is recommend
 
 This may result in the **Staging Area**, **Persistent Staging Area**, **Raw Data Vault** and **Data Mart** all pointing to the same database.
 
-<!-- TODO: Create a Staged Query guide and link to it. -->
-
 ### Connection Details
 
 Below is the details further details on a the specific **Connection**.

@@ -22,4 +22,4 @@
 | Change Tracking     | An object used for change tracking.                                 |
 | Same As Link        | Same As Link, linking a Hub in a Same As relationship.              |
 | Hierarchy Link      | Hierarchy Link, linking a Hub in a Hierarchy relationship.          |
-| Staged Query        | A database query used to create a representation of data.           |
+| Staged Query        | A database query used to create a specific representation of data so that this can be used as a 'source' **Object**. Staging and Persistent Staging processes are not generated for Staged Queries, because the involved data would already have been staged and/or persistent through other source objects.|

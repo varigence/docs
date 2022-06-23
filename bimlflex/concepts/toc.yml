@@ -1,26 +1,28 @@
 - name: Overview
   href: index.md
+- name: Build Process
+  href: build-process.md
 - name: Customer Concept
   href: customer.md
-- name: Version Concept
-  href: versions.md  
+- name: Delete Detection
+  href: delete-detection.md
+- name: Extension Points
+  href: extension-points.md  
+- name: Hashing
+  href: hashing.md  
 - name: Importing Metadata
   href: importing-metadata.md
 - name: Integration Keys
   href: integration-keys.md    
 - name: Integration Templates
-  href: integration-template.md  
-- name: Persistent Staging Area
-  href: persistent-staging-area.md  
-- name: Hashing
-  href: hashing.md
+  href: integration-template.md
 - name: Load Parameters
   href: load-parameters.md
-- name: Extension Points
-  href: extension-points.md  
-- name: Delete Detection
-  href: delete-detection.md
 - name: Orchestration
   href: orchestration.md
-- name: Build Process
-  href: build-process.md  
+- name: Persistent Staging Area
+  href: persistent-staging-area.md
+- name: Staged Queries
+  href: staged-query.md
+- name: Version Concept
+  href: versions.md
