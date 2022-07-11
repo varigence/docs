@@ -556,7 +556,7 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DataFlowOverride" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DataflowOverride" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="precedenceConstraint" type="String" #>
@@ -604,7 +604,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DataFlowProperties" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DataflowProperties" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
 <!-- You can find more details on the Varigence website. https://docs.varigence.com/biml/language-reference/Varigence.Languages.Biml.Task.AstPropertyExpressionNode -->
@@ -637,7 +637,7 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PreDataFlow" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PreDataflow" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="precedenceConstraint" type="String" #>
 
@@ -687,7 +687,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PostDataFlow" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PostDataflow" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="precedenceConstraint" type="String" #>
 

@@ -106,6 +106,8 @@ Align these settings with the organizations best practices and environmental req
 |[Stage SAS Token](xref:bimlflex-app-reference-documentation-setting-AzureStageSasToken) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The storage access SAS Token to use when accessing the staging Blob storage.|
 |[Blob Storage Domain](xref:bimlflex-app-reference-documentation-setting-AzureBlobStorageDomain) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The AzCopy domain to use.|
 |[External File Format](xref:bimlflex-app-reference-documentation-setting-AzureExternalFileFormat) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default External File Format definition to use.|
+|[Folder Naming Convention](xref:bimlflex-app-reference-documentation-setting-AzureFolderNamingConvention) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Naming convention to use for Azure Storage Folders.|
+|[File Naming Convention](xref:bimlflex-app-reference-documentation-setting-AzureFileNamingConvention) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Naming convention to use for Azure Storage Files.|
 
 ## Core
   
@@ -341,7 +343,7 @@ Align these settings with the organizations best practices and environmental req
 |[Use TRY_CAST Conversion](xref:bimlflex-app-reference-documentation-setting-UseTryCastConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the select-to-stage tables uses TRY_CAST and TRY_CONVERT.|
 |[Select Blob Row Order By](xref:bimlflex-app-reference-documentation-setting-SelectBlobRowOrderBy) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Row Order definition to use for Blob source queries.|
 |[Select Stage Row Distinct](xref:bimlflex-app-reference-documentation-setting-SelectStageRowDistinct) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the select-to-stage tables apply a row number function based on the defined key, or us a distinct based on the full row including the HASH.|
-|[Apply Extract Conversion In Data Flow](xref:bimlflex-app-reference-documentation-setting-ApplyExtractConversionInDataFlow) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.|
+|[Apply Extract Conversion In Data Flow](xref:bimlflex-app-reference-documentation-setting-ApplyExtractConversionInDataflow) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.|
 
 ## Staging Naming
   
