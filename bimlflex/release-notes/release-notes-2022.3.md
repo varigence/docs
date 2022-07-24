@@ -49,7 +49,10 @@ Build 22.2.168.0, release date: 25 May 2022
 
 ### Azure Data Factory (ADF)
 
-* TBD
+* The 'Truncate Landing', or 'SQL_TRUNCATE_LND' Stored Procedure call in source-to-staging Execute Pipelines has been replaced by a 'Pre Copy Script', which has been added to the Copy Activity. This addresses a reported issue where Copy Activity timeout and retry values did not correctly work with the truncate step. The Copy Activity would populate the Landing Area, but upon retry this data was not truncated which resulted in duplicates. By adding the Pre Copy Script to perform the truncation, these operations are performed in a more functionally cohesive way.
+
+>[!NOTE]
+>For users that use the 'ADF Pre Copy Script' Extension Point, please make sure that this is updated to include the necessary truncate statements. The statement used is _@concat('TRUNCATE TABLE [',pipeline().parameters.TargetSchemaName,'].[',pipeline().parameters.TargetTableName,']')_.
 
 ### Salesforce
 
