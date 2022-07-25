@@ -23,8 +23,11 @@ In BimlFlex, [**Parameters**](xref:bimlflex-concepts-metadata-parameters) are cu
 |Parameter To Name | This attribute specifies the name of the Parameter being used in the data logistics process. Use this attribute to define a from and to variable on a Column.|
 |Parameter To Operator | This attribute define an operator to be used in combination with ParameterToName.|
 |Execute SQL on Source | Specify if the `ParameterSql` should be executed against the source Connection to retrieve the next load value.|
+|Parameter To Expression | Override the To Expression used in Azure Data Factory.|
 |Parameter Column Expression | The definition for a Parameter to override the ColumnName. Sometimes we need to use a column that was joined from another table to determine change like the LastModifiedDate. Normally this table join will use an alias and we can then override the WHERE clause here. EG. e.[LastModifiedDate] or e.@@this.|
 |Parameter SQL Expression | In this column, we can define more complex scenarios like `(ISNULL(@@this, GETDATE()) > ? OR ISNULL(@@this, GETDATE()) <= ?)`.|
+|Parameter From Sql | Override the FROM clause logic expressed using SQL.|
+|Parameter Where Sql | Override the WHERE clause logic expressed using SQL.|
 |Parameter Override | A definition for an override of the default Parameter definition for SSIS. This will override the ? in the WHERE [ColumnName] = ? clause.|
 |Parameter Ordinal | When multiple Parameters are defined for the same Object, the Parameter Ordinal directs the order in which they are applied in a SQL statement.|
 |Description | Optional parameter description, to capture free-format notes.|

@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # OnError Landing Files
 
-Determines if the landed files are deleted once processing is completed.
+Determines if the landed files are moved to the defined error container on error, once processing is completed.
 
 Notes:
 

@@ -1236,6 +1236,7 @@ Configure Error Handling configuration logic that will be injected in the source
 | --------- | ----------- |
 sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
 targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added |
+inputPath | String | Contains the output path of the preceding task |
 
 
 ### Outputs
@@ -1243,6 +1244,7 @@ targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information rel
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
 ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next Data Flow task. |
 
 ### Template
 
@@ -1250,6 +1252,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceErrorHandlingConfiguration" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="inputPath" type="String" #>
 
 <!-- You can find more details on the Varigence website. https://docs.varigence.com/biml/language-reference/Varigence.Languages.Biml.Task.AstDataflowTaskNode_Transformations -->
 <!-- For examples and additional resources, please also refer to http://bimlscript.com -->

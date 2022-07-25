@@ -67,7 +67,7 @@ Align these settings with the organizations best practices and environmental req
 |[Distribute Round Robin Temporary Tables](xref:bimlflex-app-reference-documentation-setting-AzureRoundRobinTemporaryTables) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to use Round Robin distribution in Azure Synapose temporary tables instead of the default Hash distribution.|
 |[Archive Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureArchiveLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are moved to the defined archive container, once processing is completed.|
 |[OnError Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureOnErrorLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are moved to the defined error container on error, once processing is completed.|
-|[OnError Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureOnErrorLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are deleted once processing is completed.|
+|[Delete Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureDeleteLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are deleted once processing is completed.|
 
 ## Azure Copy
   
@@ -170,6 +170,7 @@ Align these settings with the organizations best practices and environmental req
 |[Accelerate Link Integration Keys](xref:bimlflex-app-reference-documentation-setting-DvAccelerateLinkIntegrationKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
 |[Accelerate Correct Key Names](xref:bimlflex-app-reference-documentation-setting-DvAccelerateCorrectKeyNames) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Should the Accelerator correct Integration Key names based on the Object Business Name|
 |[Apply Data Type Mapping RDV](xref:bimlflex-app-reference-documentation-setting-ApplyDataTypeMappingRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the Data Type Mappings are applied to the Raw Data Vault. The Data Type Mappings function allow expansion of data types.|
+|[Naming Convention](xref:bimlflex-app-reference-documentation-setting-DvNamingConvention) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Naming convention to use for Data Vault Accelerator.|
 |[Stage Reduce Link Keys](xref:bimlflex-app-reference-documentation-setting-StageReduceLinkKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this to reduce additional Link hash keys in the staging table.|
 |[Accelerate Show Columns](xref:bimlflex-app-reference-documentation-setting-DvAccelerateShowColumns) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to set the default Accelerator view to show all Columns.|
 |[Accelerate Show Expanded](xref:bimlflex-app-reference-documentation-setting-DvAccelerateShowExpanded) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to set the default Accelerator view to show the Expanded view (Hubs, Links and Satellites) instead of the Data Vault Backbone (Only Hubs and Links).|
@@ -230,6 +231,7 @@ Align these settings with the organizations best practices and environmental req
 |[Add Record Source To Integration Key](xref:bimlflex-app-reference-documentation-setting-AddRecordSourceToIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Import Metadata will add "@@rs" to Integration Keys if true.|
 |[Change References To Integration Key](xref:bimlflex-app-reference-documentation-setting-ChangeReferencesToIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the Import Metadata feature adds derived Integration Keys based on source references, or use source columns for references.|
 |[Import Views](xref:bimlflex-app-reference-documentation-setting-ImportViews) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if database Views are imported when importing Metadata.|
+|[Integration Key Concatenation Order](xref:bimlflex-app-reference-documentation-setting-IntegrationKeyConcatenationOrder) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Determines the column order in the derived Integration Key.|
 
 ## Naming
   
@@ -365,6 +367,7 @@ Align these settings with the organizations best practices and environmental req
 |  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaPsa) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to add to the PSA objects when Staging and Persistent Staging are co-located in the same database.|
+|[Temporal Table Pattern Name](xref:bimlflex-app-reference-documentation-setting-PsaTemporalTableName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to add to the Temporal PSA objects when Staging and Persistent Staging are co-located in the same database.|
 |[Enable End Date](xref:bimlflex-app-reference-documentation-setting-EnableEndDatePsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Apply end dating in the PSA. This will allow timelines to be maintained in the PSA. Disable this to configure an insert-only approach for the PSA for optimized load performance.|
 |[Bypass Persistent Checks](xref:bimlflex-app-reference-documentation-setting-StageBypassPsaChecks) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this to bypass lookups, and directly applies all records to the Staging and Persistent Staging tables.|
 |[Use Cache Lookup](xref:bimlflex-app-reference-documentation-setting-PsaUseCacheLookup) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the PSA lookup caches the data to disk when using SSIS. Use this if it is not possible to use the normal in-memory lookup behavior due to memory constraints.|
