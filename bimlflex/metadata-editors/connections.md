@@ -13,7 +13,7 @@ Additionally, a connection definition includes metadata to identify the [*Integr
 
 Connections are used in [**Projects**](xref:bimlflex-project-editor) to direct BimlFlex in generating the overall intended flow of data.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Detailed descriptions of all **Connection** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
 
 ## Overview

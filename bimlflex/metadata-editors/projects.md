@@ -13,7 +13,7 @@ Each project requires an [**Integration Template**](xref:bimlflex-concepts-integ
 
 All **Objects** belonging to the connections configured in the project will be subject to the selected integration template. This means that, for example, if you use a connection as a source that data logistics will be generated for _all_ objects associated with this (source) connection.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Detailed descriptions of all **Project** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Projects).
 
 ## Overview
@@ -22,9 +22,9 @@ The following sections describe the user interface elements of the **Project Edi
 
 ![BimlFlex Project Editor](images/bfx-projects-editor-overview.png "BimlFlex Project Editor")
 
-## Details Tab
+## Project Tab
 
-The **Details Tab** focuses on general **Project** information and configuration. This tab is used to define and create the **Project** itself.
+The **Project Tab** is the first tab in the **Project Editor**, and it is selected by default. The project tab focuses on general connection information and configuration. This tab is used to define and create the project itself.
 
 ### Action Buttons
 

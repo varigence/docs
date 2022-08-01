@@ -29,6 +29,20 @@ Build 22.2.168.0, release date: 25 May 2022
 
 ## 2022 R3 - New Features
 
+### Triggers
+
+Azure Data Factory *Triggers* are now supported in BimlFlex, for Projects that are configured to generate Azure Data Factory or Mapping Data Flows output. When a Project has either the `Azure Data Factory (ADF)` or `Azure Mapping Data Flows (ADF)` Integration Template, the Trigger option will become available in the Batch Editor for the Batch that is associated with the Project.
+
+The Trigger feature supports Tumbling Window and Scheduled triggers to be created in ADF. Additional configurations that can be applied in the same editor are:
+
+* Name
+* Start- and End Date (timestamps)
+* Recurrence
+* Delay
+* Concurrency
+* Retry configuration
+* Runtime state
+
 ## 2022 R3 - Improvements
 
 ### Various Application Improvements
