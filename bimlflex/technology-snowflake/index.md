@@ -21,3 +21,7 @@ BimlFlex uses Snowflake's best practice approaches to loading and managing the S
 
 * [Configuring BimlFlex for Snowflake](xref:bimlflex-snowflake-configuration-overview)
 * [Designing ADF processes for Snowflake](xref:bimlflex-snowflake-implementation-adf)
+
+## Unsupported Snowflake Features and Known Issues
+
+* [An overview of Snowflake features that are not supported by BimlFlex](xref:bimlflex-snowflake-unsupported-features)

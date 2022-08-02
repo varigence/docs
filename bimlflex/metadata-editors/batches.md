@@ -37,6 +37,7 @@ The **Batch Tab** is the first tab in the **Batch Editor**, and it is selected b
 > [!NOTE]
 > A **Batch** itself can not be excluded, only deleted. If certain parts of the data solution should be excluded, then this should be applied at **Project** level in the **Project Editor**.
 
+<!--
 ### Triggers
 
 Azure Data Factory **Triggers** are supported in BimlFlex, for Projects that are configured to generate Azure Data Factory or Mapping Data Flows output. When a Project has either the `Azure Data Factory (ADF)` or `Azure Mapping Data Flows (ADF)` **Integration Template**, the  option to specify triggers will become available in the **Batch Editor** for the batch that is associated with the project.
@@ -56,6 +57,7 @@ The Trigger feature supports `Tumbling Window` and `Scheduled` triggers to be cr
 ![BimlFlex - Batch Editor](images/bfx-batches-editor-trigger.png "BimlFlex - Batch Editor")
 
 Additional information on trigger fields are found in the [batch reference documentation](xref:bimlflex-app-reference-documentation-Batches).
+-->
 
 ### Additional Dialogs
 
