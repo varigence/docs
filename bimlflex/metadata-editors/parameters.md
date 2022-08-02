@@ -28,8 +28,8 @@ The following sections describe the UI elements of the **Parameter Editor** and 
 
 ![BimlFlex Parameter Editor - Overview](images/bfx-parameters-overview.png "BimlFlex Parameter Editor - Overview")
 
-**Parameters** within BimlFlex are displayed in a hierarchical tree view on the left side-navigation menu.
-The tree view is organized by **Connections** > **Objects** > **Columns** > **Parameters**.
+**Parameters** within BimlFlex are displayed in a hierarchical **Treeview** on the left side-navigation menu.
+The treeview is organized by **Connections** > **Objects** > **Columns** > **Parameters**.
 
 The total number of **Parameters** will be displayed in parenthesis next to the **Connection** in the menu.
 The individual number of **Parameters** assigned to each **Object** or **Column** will also be displayed in parenthesis.
@@ -41,7 +41,7 @@ Selecting a **Connection** with a single **Parameter** will immediately navigate
 
 ![BimlFlex Parameters - List view](images/bfx-parameters-listview.png "BimlFlex Parameters - List view")
 
-The tree view for **Parameters** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
+The treeview for **Parameters** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
 Selecting the checkbox(es) icon will enable users to bulk archive multiple **Parameters** at one time.
 
@@ -51,7 +51,7 @@ Clicking this icon will navigate the user directly to the referenced **Connectio
 Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
 This option is enabled by default.
 
-The Search field is contained within the tree view menu, and will be hidden when collapsed.
+The Search field is contained within the treeview menu, and will be hidden when collapsed.
 The Search field will return results in real-time, only presenting Parameters containing the term being searched.
 
 ![BimlFlex Parameters - Search Field](images/bfx-parameters-search-field.png "BimlFlex Parameters - Search Field")

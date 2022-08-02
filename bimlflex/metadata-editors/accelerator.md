@@ -85,12 +85,12 @@ Constraining the Data Vault Acceleration to a subset allows for a more agile del
 
 ![Accelerator User Interface](images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
 
-The Accelerator shows available source objects in the left-hand tree view and a preview of the target Data Vault model in the content pane. The page has a toolbar with several interaction options available
+The Accelerator shows available source objects in the left-hand **Treeview** and a preview of the target Data Vault model in the content pane. The page has a toolbar with several interaction options available
 
 | Icon | Description |
 | ---- | ----------- |
-| Search | Search through entities in the tree view |
-| Filter funnel | Filter Funnel allows filtering contents in the tree view based on Integration Stage and Record Source |
+| Search | Search through entities in the treeview |
+| Filter funnel | Filter Funnel allows filtering contents in the **Treeview** based on Integration Stage and Record Source |
 | Save | Save the current model view for later acceleration |
 | Discard | Discard any changes being made to the model that has not yet been saved |
 | Publish | Publish the previewed model to the repository to instantiate the entities into the metadata, allowing them to be used in load processes |
@@ -268,4 +268,4 @@ Edit the related columns Business Reference or Business Grouping to reflect the 
 
 ### Object Business Grouping
 
-The Business Grouping is used to group related Objects together for Acceleration. The Filtering option in the tree view allows the user to filter on defined Business Groupings. This allows for iterative modeling where a team works on a grouping at a time.
+The Business Grouping is used to group related Objects together for Acceleration. The Filtering option in the **Treeview** allows the user to filter on defined Business Groupings. This allows for iterative modeling where a team works on a grouping at a time.

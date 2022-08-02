@@ -18,7 +18,7 @@ The following sections describe the User Interface elements of the Object Editor
 
 ## Overview
 
-Objects are displayed in a hierarchical tree view on the left Side Navigation menu. The tree view is organized by Project > Source Connection > Objects, with the number of tables within a given Object displayed in parenthesis.
+Objects are displayed in a hierarchical **Treeview** on the left Side Navigation menu. The treeview is organized by Project > Source Connection > Objects, with the number of tables within a given Object displayed in parenthesis.
 
 ![BimlFlex Object Editor](images/bfx-object-editor-overview.png "BimlFlex Object Editor")
 
@@ -28,7 +28,7 @@ Selecting an **Object** with a single table will immediately navigate the user t
 
 ![BimlFlex Object Editor - List](images/bfx-object-editor-listview.png "BimlFlex Object Editor - List")
 
-The tree view for **Objects** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
+The treeview for **Objects** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
 
 Selecting the checkbox(es) icon will enable users to bulk archive multiple **Objects** at one time.
 
@@ -38,7 +38,7 @@ Clicking this icon will navigate the user directly to the referenced **Connectio
 Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
 This option is enabled by default.
 
-The Search field is contained within the tree view menu, and will be hidden when collapsed.
+The Search field is contained within the treeview menu, and will be hidden when collapsed.
 The Search field will return results in real-time, only presenting **Objects** containing the term being searched.
 
 ![BimlFlex Objects - Search Field](images/bfx-object-search-field.png "BimlFlex Objects - Search Field")

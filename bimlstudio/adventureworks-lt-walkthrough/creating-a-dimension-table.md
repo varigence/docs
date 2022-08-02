@@ -97,7 +97,7 @@ To create a dimension, follow these steps:
 
 10.  Next, you will add a hierarchy. Right click in the empty Hierarchies area, and select Add Hierarchy.  
     ![Context Menu - Add Hierarchy](https://varigencecom.blob.core.windows.net/images-mistdocumentation/007_Step10.gif)
-11.  Rename the hierarchy to Categories. You can add levels to the hierarchy by right-clicking it and choosing Add Attributes from the context menu, or by dragging and dropping the attributes from the Attributes tree view. Add the following attributes (in order): Category Name, Subcategory Name, and Product Name. The Hierarchies area should look like this when you are finished:  
+11.  Rename the hierarchy to Categories. You can add levels to the hierarchy by right-clicking it and choosing Add Attributes from the context menu, or by dragging and dropping the attributes from the Attributes treeview. Add the following attributes (in order): Category Name, Subcategory Name, and Product Name. The Hierarchies area should look like this when you are finished:  
 Drag and drop the attribute on the Hierarchy node (Categories) to add the attribute as a new level at the end. Dropping an attribute on an existing level will replace the level's associated attribute. You can also drag and drop levels within a hierarchy.
 
 12.  Save the project to commit your changes.

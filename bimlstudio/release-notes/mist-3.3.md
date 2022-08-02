@@ -61,7 +61,7 @@
   - DataGrid row highlight style is grey instead of blue when the control is not active.  This should clarify which controls have focus.
   - Dotted line around the perimeter of the control when you delete the last item is now removed.
 
-- Tree Views
+- Treeviews
   - When you single-click an already focused tree item, it enters edit mode.
   - Expanding/collapsing a node will now ensure move it to the appropriate place within the scroll window.
   - Focus now remains consistent on expand/collapse.
@@ -85,7 +85,7 @@
 - Table/Dimension/Fact Designers
   - Fixed broken drag/drop scenarios with snowflake columns from dimension columns to attributes.
   - Added multiselect support to all drag/drop operations
-  - Whitespace padding has been added to the bottom of the Table Editor tree views to create an unambiguous drop zone for drag/drop operations
+  - Whitespace padding has been added to the bottom of the Table Editor treeviews to create an unambiguous drop zone for drag/drop operations
   - The focus is now set to the object created when a column is dropped.  This reduces confusion, especially when that item needs to be immediately deleted.
 
 - Script Project Designer

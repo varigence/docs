@@ -198,7 +198,7 @@ Parameters can be added in BimlFlex through the **Parameter Editor**, accessible
 >
 > * BimlFlex Docs: [Parameter Editor](xref:bimlflex-parameter-editor)
 
-To add a new parameters, click the `+` button in the tree view menu.
+To add a new parameters, click the `+` button in the **Treeview** menu.
 
 ![BimlFlex - Parameter Editor](images/bfx-parameters-editor.png "BimlFlex - Parameter Editor")
 

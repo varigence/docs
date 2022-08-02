@@ -49,7 +49,7 @@ Once a working connection string is established, it is possible to import metada
 
 Once taken to the new screen, click `[Connect To Database]`. If you have a working database connection you will then see a list of Schemas / Tables for you to select for importing.
 
-For this example, we are only interested in three tables from the Person schema (Address, Person, and EmailAddress) and one table from the HumanResources schema (Employee). Our tree view would look like this:
+For this example, we are only interested in three tables from the Person schema (Address, Person, and EmailAddress) and one table from the HumanResources schema (Employee). Our treeview would look like this:
 
 ![Connection String](images/azurepostgres/metadata-import.png)
 

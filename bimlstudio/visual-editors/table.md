@@ -16,7 +16,7 @@ Edit a measure's name, SSAS type, measure format, aggregation type, and other pr
 
 ![Measure](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Table4.png)
 
-Edit a dimension's attributes, hierarchies, and relationships directly in their tree views.
+Edit a dimension's attributes, hierarchies, and relationships directly in their treeviews.
 
 ![Attribute, Hierarchies, and Relationships](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Table5.png)
 

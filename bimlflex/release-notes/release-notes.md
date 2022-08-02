@@ -98,7 +98,7 @@ A major advantage of using Script Activities is broader support for connection t
 
 * Fixed an issue where certain tooltips would not be displayed when hovering over the BimlFlex user interface component
 * Fixed a bug where saving items in the app would sometimes generate a constraint error
-* Fixed a bug where tree view navigation container would sometimes obscure objects, or clip elements from view
+* Fixed a bug where treeview navigation container would sometimes obscure objects, or clip elements from view
 * Fixed a bug where imported metadata sometimes did not use local connection strings, when configured to do so
 * Fixed a bug that would sometimes prompt the user for unsaved changes, but did not actually clear the changes when accepting
 * Fixed an issue in the generated BimlScript where the Dynamics `ServicePrincipalCredentialKVS` XML was missing a closing tag, causing build errors in some cases
@@ -140,7 +140,7 @@ A major advantage of using Script Activities is broader support for connection t
 * Fixed a bug where **Connection String Builder** dialog used previously saved values instead of the current entered values
 * Fixed a bug where a Landing **Connection** was able to select itself as a `Polybase Connection`. This is incorrect and not possible anymore
 * Fixed a bug where **[+] New Connection** did not pre-populate the **Integration Stage**
-* Fixed a bug where saving a record would change or reset the view from the current tree view nav selection
+* Fixed a bug where saving a record would change or reset the view from the current treeview nav selection
 * Fixed a bug where switching between **Linked Service Connection String** and **Azure Key Vault** did not prompt a check for unsaved changes
 * Because of known issues using Integration Runtimes other than the default `AutoResolveIntegrationRuntime`, this feature has been disabled. Only the default `AutoResolveIntegrationRuntime` may be used to define a **Connection** Linked Service. Modification should be made either in ADF after deployment, or by updating the ARM template after build
 

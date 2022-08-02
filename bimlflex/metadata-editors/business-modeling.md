@@ -478,9 +478,9 @@ It is possible to show a smaller **Overview** when working with large models. Yo
 
 #### Using the Treeview
 
-If a Business Entity already exists, but is not yet part of the diagram it can be added using the **Treeview** feature. The **Treeview** contains an overview of Business Entities organized by **Entity Type**. By checking or unchecking a Business Entity it can be added or removed from the diagram.
+If a Business Entity already exists, but is not yet part of the diagram it can be added using the **Treeview** feature. The treeview contains an overview of Business Entities organized by **Entity Type**. By checking or unchecking a Business Entity it can be added or removed from the diagram.
 
-The **Treeview** is represented as a side panel on the left of the main diagram canvas, but by default it is in a collapsed state. It can be accessed by clicking on the `Expand` icon (<img src="images/svg-icons/collapsed.svg" width="2%" height="2%" />). Conversely, the panel can be closed by clicking on the `Collapse` icon (<img src="images/svg-icons/expanded.svg" width="2%" height="2%" />).
+The treeview is represented as a side panel on the left of the main diagram canvas, but by default it is in a collapsed state. It can be accessed by clicking on the `Expand` icon (<img src="images/svg-icons/collapsed.svg" width="2%" height="2%" />). Conversely, the panel can be closed by clicking on the `Collapse` icon (<img src="images/svg-icons/expanded.svg" width="2%" height="2%" />).
 
 ![Diagram Treeview](images/business-modeling-diagram-treeview.png "Diagram Treeview")
 
