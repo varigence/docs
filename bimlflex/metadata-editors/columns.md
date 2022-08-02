@@ -7,36 +7,32 @@ varigenceArticleType: Reference
 ---
 # Column Editor
 
-The **Column** Editor is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex process.
+The **Column Editor** is used to manage how BimlFlex interacts with all **Columns** in the BimlFlex design process. The column editor provides a fine-grained means of configuring specific data logistics behavior.
 
-> [!IMPORTANT]
+Mappings from source to target are defined at column level in BimlFlex, and the column editor provides various ways to influence how this design metadata is translated into data logistics artifacts.
+
+> [!NOTE]
 > Detailed descriptions of all **Column** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Columns).
 
 ## Overview
 
+**Columns** within BimlFlex are displayed in the [**Treeview**](xref:bimlflex-treeview) on the left side-navigation menu. Columns belong to an [**Object**](xref:bimlflex-object-editor), and can be access by opening the object in the treeview or by navigating to the columns tab in the **Object Editor** .
+
+From any editor, any instance of the <img class="icon-inline" src="images/svg-icons/navigate.svg"/> icon will serve as a Global Navigation Transition. Clicking this icon will navigate the user directly to the referenced **Project**, **Connection** or **Object**.
+
+### Accessing the Column Editor from the Treeview
+
+Selecting any column from the treeview will display the column editor.
+
 ![BimlFlex Column Editor](images/bfx-columns-editor.png "BimlFlex Column Editor")
 
-**Columns** within BimlFlex are displayed in a hierarchical tree view on the left side-navigation menu.
-The total number of **Columns** within a **Project** will be displayed next to the **Project** name in parentheses.
-The total number of **Columns** within an individual **Object** will similarly be displayed next to the **Object** name.
+### Accessing the Column Editor via the Object Editor
 
-Selecting a **Project** will display a secondary list of all **Columns** within, organized by **Object.**  
-The user may navigate to any **Column** by selecting it from the displayed list.
+The column editor can also be accessed via the object editor, from various locations in the App. When an object is selected, the columns tab is visible in the  editor. Navigating to the columns tab will show a grid view of all the columns belonging to the object.
 
-![BimlFlex Column Editor - Listview](images/bfx-columns-editor-listview.png "BimlFlex Column Editor - Listview")
+The user may navigate to any column by selecting it from the displayed list.
 
-The tree view for **Columns** is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/>icons.
-
-Any instance of the <img class="icon-inline" src="images/svg-icons/navigate.svg"/> icon will serve as a Global Navigation Transition.
-Clicking this icon will navigate the user directly to the referenced **Project**, **Connection** or **Object**.
-
-Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
-This option is enabled by default.
-
-The Search field is contained within the tree view menu, and will be hidden when collapsed.
-The Search field will return results in real-time, only presenting Columns containing the term being searched.
-
-![BimlFlex Column Editor - Search Field](images/bfx-columns-editor-search-field.png "BimlFlex Column Editor - Search Field")
+![BimlFlex Column Editor - Grid View](images/bfx-columns-editor-listview.png "BimlFlex Column Editor - Grid View")
 
 ## Action Buttons
 
@@ -51,65 +47,23 @@ The Search field will return results in real-time, only presenting Columns conta
 | <img src="images/bimlflex-app-action-switch.png" /> | Exclude | This will remove the **Column** from processing and validation. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-app-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Column**. This will remove the **Column** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
 
-## Column Editor Fields
+## Column Details
 
-![BimlFlex Column Editor Fields](images/bfx-columns-details-tab.png "BimlFlex Column Editor Fields")
+Detailed reference documentation on each of the fields in the column editor is found in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Columns). A brief overview will be provided here.
 
-| Field | Description |
-| ----- | ----------- |
-| Connection | The **Connection** the **Column** is associated with. Connection is Required. |
-| Object | The **Object** or table that the **Column** is associated with. Object is Required. |
-| Column | The name of the Column. Column Name is Required. Column Name must be unique for the **Object**. |
-| Data Type | The type of the data stored in this column using the unified type system. Additional logic is required to cater for data types with a CustomType like 'hierarchyid'. Data Type is required. Must be a valid [Data Type](#data-types). |
-| Length | The length parameter for the column type associated with this column. This property applies only to column types that support a length specification, such as String and Binary types. Set to `-1` to indicate MAX length. Length is required. Length cannot be less than -1. |
-| Business Attribute | The Business Model Attribute that this source column should be modeled to and be accelerated to. |
-| Short Name | Business friendly name for the column. |
-| Column Alias | Alias for the column. Generally used in conjunction with SQL Source Expression. |
-| Change Type | This value specifies the slowly changing dimension type for the column. Change Type is Required. Must be a valid [Change Type](#change-types). |
-| Ordinal | Defines the order of the **Columns** in the target **Object**. It is recommended that the Business and Primary Keys is defined as the top ordinals. Ordinal is used in ascending order. Ordinal is Required. Ordinal cannot be less than zero. |
-| Primary Key | Defines if the **Column** is the Primary Key for the **Object**. The primary key uniquely identifies each record in a database table. Primary keys must contain UNIQUE values. A primary key column cannot contain NULL values. A Primary Key is required for each **Object**. |
-| Integration Key | Defines if the **Column** is the Integration Key for the **Object**. Note that the framework allows only one integration key per object. If the object has multiple columns that makes up the integration key define a derived concatenated column. An Integration Key is required for each **Object**. There can only be one Integration Key for the **Object**. |
-| Source Key | Defines if the **Column** is the Source Primary Key for the **Object**. This is generally defined if the object has multiple columns as the integration key and a derived concatenated integration key has been defined. |
-| Identity | Defines if the **Column** is the Identity Column for the **Object**. |
-| Nullable | Defines if the **Column** is nullable. In other words, that it is allowed to contain NULL values. |
-| Not Persistent | Defines an Override to the Persistent Staging Connection defined as part of the **Project** entity. A good example of usage would be where derived columns should not be persisted. Note that setting it to true will exclude the column from being persisted. |
-| Reference Table | The source **Object** for this **Column**. |
-| Reference Column | The **Column** on the source object used for this **Column**. The **Column** cannot reference itself. |
-| Target Table | The target **Object** for this **Column**. |
-| Target Column | The **Column** on the target **Object** used for this **Column**. The **Column** cannot target itself. |
-| Description | The **Column** described in business context. Often referred to as business metadata. |
-| Comments | Generic comments for use by the Analyst and Modelers to keep notes related to the **Column**. |
+The column editor is organized in three different groups.
 
-### Model Overrides Fields
+### Technical Specification
 
-![BimlFlex Model Overrides Fields](images/bfx-columns-model-overrides.png "BimlFlex Model Overrides Fields")
+The main column details capture the technical specifications of the column. This includes the way the column is used in the physical model. The (Foreign Key) references to another object and the mapping to the target column (and object) are also administered here.
 
-| Field | Description |
-|-|-|
-| Business Name | This is the name that will be used for the **Column** after the solution is deployed. An example of use would be if you have a source **Column** with a cryptic name like GL002 and the actual business name is GeneralLedgerCode; by defining a [Business Name] and generating a Data Vault using the BimlFlex Accelerator the resulting column will be GeneralLedgerCode. |
-| Model Grouping | This attribute is used to group columns into their own satellites for satellite attribute columns, or Unit of Work for Link reference columns. For satellites, all columns with the same Model Grouping will be generated into a corresponding, separate satellite. Example would be if you have a customer table that has a column "LastLoginDate" that changes very frequently you might want to model this in a separate satellite. It is also used to define a Unit Of Work on Links. By setting the Model Grouping to the same value for multiple reference columns, all the grouped columns are added to the same Link. Without Model Grouping these columns would accelerate to separate Links. |
-| Link Reference | This attribute is used multiple table references. This attribute is auto-generated by our schema import and can be overridden. An example of use would be the SalesOrder table with a ShippingAddress and BillingAddress reference to the Address table. Two links will be created with the Link Reference forming part of the name. |
-| Datatype Mapping | The BimlFlex `Data Type Mappings` to use with this **Column**. Must be a [Data Type Mapping](data-type-mappings.md) defined in BimlFlex. |
+### Business Overrides
 
-### SQL Overrides Fields
+The Business Overrides section contains information from the business model. Please refer to the [**Business Modeling**](xref:bimlflex-business-modeling) feature for more information about the definition of a business model. This section also specifies the data type conversion that must be applied to a column when propagating it through the data solution architecture. For example, when deriving the Staging Area or Data Vault columns.
 
-![BimlFlex SQL Overrides Fields](images/bfx-columns-sql-overrides.png "BimlFlex SQL Overrides Fields")
+### SQL Overrides
 
-| Field | Description |
-| ----- | ----------- |
-| SQL Source Expression | SQL expression for the **Column** that is used to extend source queries. Generally used for source type casting and case statements. Example: CONVERT(VARCHAR(27), @@this, 121) |
-| SQL Target Expression | SQL expression for the **Column** that is used to extend target queries. Generally used for type casting and case statements. Example: CONVERT(VARCHAR(27), @@this, 121) |
-| SSIS Dataflow Expression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column. |
-| ADF Dataflow Expression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column. |
-| Derived | Defines if the value in this **Column** is derived during the ETL process. This is generally set in conjunction with the *SSIS Dataflow Expression* field. |
-| Default Value | The default value for the **Column**. Uses Transact-SQL constant expression syntax. |
-| Display Folder | *Placeholder for future development* |
-| Solve Order | Used when defining SSIS Dataflow Expressions that need to be parsed in a specific order. An example of use would be if you want to split a very complex calculation up into multiple expressions that are derived in a specific sequence. |
-
-<!--
-| Model Grouping | This attribute is used to group columns into their own satellites. All columns with the same ModelGrouping will be generated into separate satellites. It is also used to define a Unit Of Work on Links. Example would be if you have a customer table that has a column "LastLoginDate" that changes very frequently you might want to model this in a separate satellite. |
-| Model Reference | This attribute is used multiple table references. This attribute is auto-generated by our schema import and can be overridden. An example of use would be the SalesOrder table with a ShippingAddress and BillingAddress reference to the Address table. Two links will be created with the ModelReference forming part of the name. |
--->
+Lastly, the SQL Overrides section allows for detailed modification of the way the column is used. This is where custom transformation logic at column level can be defined using the various override fields available.
 
 ### Additional Dialogs
 

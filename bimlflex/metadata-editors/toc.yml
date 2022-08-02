@@ -6,6 +6,8 @@
   href: dashboard.md
 - name: Customer Selection
   href: customers.md  
+- name: Treeview
+  href: treeview.md  
 - name: Connection Editor
   href: connections.md
 - name: Batch Editor

@@ -11,7 +11,7 @@ A **Staged Query** is a database query that is used to create a specific represe
 
 The `Staged Query` object type will direct the framework to skip any Staging and/or Persistent Staging steps in the generated patterns, because the involved data would have been staged and/or persisted through other source objects already.
 
-In principle, staged queries can be applied to any architecture where there is a need to create separate data logistics processes for subsets of the data. 
+In principle, staged queries can be applied to any architecture where there is a need to create separate data logistics processes for subsets of the data.
 
 However, the most common use case applies specifically to Data Vault architectures.
 
