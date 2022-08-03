@@ -67,6 +67,11 @@ The Trigger feature supports Tumbling Window and Scheduled triggers to be create
 
 * Two new Linked Service options have been added for Azure Data Factory. These can be defined using the Connection Editor: Rest API and sFTP. By selecting these System Types and enabling Cloud, you can configure the details to generate these connections as Linked Services.
 
+### Connections
+
+* BimlFlex now supports a new REST API and sFTP Linked Service that can be generated as part of a project's connection. Configuring these new types will support the generation of a corresponding Linked Service in ADF
+* For file types, `parquet` is now available for supported file connections
+
 ## 2022 R3 - Bug Fixes
 
 ### Various Application Fixes
