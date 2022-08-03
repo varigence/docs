@@ -13,8 +13,8 @@ Objects are managed using the *Object Editor*.
 
 The following sections describe the User Interface elements of the Object Editor and how they are used to author and manage BimlFlex Objects.
 
-> [!IMPORTANT]
-> Detailed descriptions of all **Object** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Objects).
+> [!NOTE]
+> Detailed descriptions of all **Object Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Objects).
 
 ## Overview
 

@@ -14,7 +14,7 @@ Each project requires an [**Integration Template**](xref:bimlflex-concepts-integ
 All **Objects** belonging to the connections configured in the project will be subject to the selected integration template. This means that, for example, if you use a connection as a source that data logistics will be generated for _all_ objects associated with this (source) connection.
 
 > [!NOTE]
-> Detailed descriptions of all **Project** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Projects).
+> Detailed descriptions of all **Project Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Projects).
 
 ## Overview
 

@@ -7,7 +7,12 @@ varigenceArticleType: Conceptual
 ---
 # Attribute Editor
 
-The **Attribute Editor** is used to manage **Attributes** in the BimlFlex App. **Attributes** are used to conditionally override **Configurations** and **Settings**. They can also be used to extend the metadata model for bespoke coding requirements.
+The **Attribute Editor** is used to manage **Attributes** in the BimlFlex App. Attributes are used to conditionally override **Configurations** and **Settings**. They can also be used to extend the metadata model for bespoke coding requirements.
+
+> [!NOTE]
+> Detailed descriptions of all **Attribute Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
+
+## Overview
 
 ![BimlFlex - Attribute Editor](images/bfx-attributes-editor-overview.png "BimlFlex - Attribute Editor")
 
@@ -49,21 +54,6 @@ These are the different fields required to define the scope of the **Attribute**
 | Object | Connection, Object |
 | Project | Project |
 
-### Attribute Field Definitions
-
-|Field|Description|
-|-|-|
-| Attribute Type | Defines the scope of the BimlFlex process that the **Attribute** is applied to. Attribute Type is required and must be a valid [Attribute Type](#attribute-types). |
-| Batch | Sets the scope of the **Attribute** application to the selected **Batch**. Required if Attribute Type is Batch. |
-| Column | Sets the scope of the **Attribute** application to the selected **Column**. Required if Attribute Type is Column. |
-| Connection | Sets the scope of the **Attribute** application to the selected **Connection**. Required if Attribute Type is Column, Connection, or Object. |
-| Object | Sets the scope of the **Attribute** application to the selected **Object**. Required if Attribute Type is Column or Object. |
-| Project | Sets the scope of the **Attribute** application to the selected **Project**. Required if Attribute Type is Project. |
-| Attribute Name | Unique name for the **Attribute** in the BimlFlex app. Attribute Name is required. Attribute name must be unique. |
-| Attribute Value | The value to be returned when the custom attribute accessed by the framework. Attribute Value is required. |
-| Attribute Property | The default value for the custom attribute if it is not specified in the AttributeValue. |
-| Description | The **Attribute** described in business context. |
-
 ### Additional Dialogs
 
 [!include[Archive Attribute Dialog](_dialog-archive-attribute-single.md)]
@@ -72,4 +62,6 @@ These are the different fields required to define the scope of the **Attribute**
 
 ### Allowed Values
 
-[!include[Attribute Types](_enum-attribute-type.md)]
+#### Attribute Types
+
+[!include[Attribute Types](../reference-documentation/static-data/_enum-attribute-type.md)]

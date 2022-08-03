@@ -53,7 +53,7 @@ Detailed reference documentation on each of the fields in the column editor is f
 
 The column editor is organized in three different groups.
 
-### Technical Specification
+### Column Specification
 
 The main column details capture the technical specifications of the column. This includes the way the column is used in the physical model. The (Foreign Key) references to another object and the mapping to the target column (and object) are also administered here.
 
@@ -73,6 +73,8 @@ Lastly, the SQL Overrides section allows for detailed modification of the way th
 
 ### Allowed Values
 
-[!include[Change Types](_enum-change-type.md)]
+#### Change Types
+
+[!include[Change Types](../reference-documentation/static-data/_enum-change-type.md)]
 
 [!include[Data Type](_enum-data-type.md)]

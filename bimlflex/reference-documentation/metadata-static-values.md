@@ -6,40 +6,19 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-## Metadata Static Types
+# Metadata Types
 
-BimlFlex has a number of internal static types that can also be referred to as an enumeration type or an enum that define a set of constants.
+BimlFlex has a number of internal static types that are used to classify metadata. They can also be referred to as an enumeration type (or enum) and represent the constant values that can be used in the App.
 
-### AttributeTypes
+## Attribute Types
 
-| Code | Value |
-| ---- | ----- |
-| COL | Column |
-| OBJ | Object |
-| PRJ | Project |
-| CON | Connection |
-| CUS | Customer |
-| BAT | Batch |
+[!include[Attribute Types](static-data/_enum-attribute-type.md)]
 
-### ChangeTypes
+## Change Types
 
-| Code | Value |
-| ---- | ----- |
-| CHG | Type 1 |
-| HST | Type 2 |
-| FIX | Fixed |
-| KEY | Key |
-| MAK | Multi Active Key |
-| IGN | Ignore |
-| EXC | Exclude DV |
-| REF | Link Reference |
-| CDC | Change Data Capture |
-| ALT | Alternate |
-| HDK | Hash Distribution |
-| DGA | Link Degenerate |
-| TRS | Transient |
+[!include[Change Types](static-data/_enum-change-type.md)]
 
-### ConfigurationAttributes
+## Configuration Attributes
 
 | Code | Value |
 | ---- | ----- |
@@ -50,7 +29,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | TGT | Target |
 | HSH | Hash |
 
-### ConnectionTypes
+## Connection Types
 
 | Code | Value |
 | ---- | ----- |
@@ -74,7 +53,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | OLECDC | OLEDB CDC |
 | CUSTOM | Custom Component |
 
-### DataTypes
+## Data Types
 
 | Code | Value |
 | ---- | ----- |
@@ -110,7 +89,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | geography | Geography |
 | smallmoney | SmallMoney |
 
-### ParameterDataTypes
+## Parameter Data Types
 
 | Code | Value |
 | ---- | ----- |
@@ -130,7 +109,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | Single | Single |
 | String | String |
 
-### IntegrationStages
+## Integration Stages
 
 | Code | Value |
 | ---- | ----- |
@@ -145,7 +124,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | MDS | Master Data Services |
 | EXP | File Export |
 
-### IntegrationTemplates
+## Integration Templates
 
 | Code | Value |
 | ---- | ----- |
@@ -154,7 +133,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | S2FIL | SSIS: Source -> File Extract |
 | S2ZIP | SSIS: Source -> Zip File Extract |
 
-### ObjectTypes
+## Object Types
 
 | Code | Value |
 | ---- | ----- |
@@ -178,7 +157,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | TCL | CDC Last |
 | TCT | Change Tracking |
 
-### ModelObjectTypes
+## Model Object Types
 
 | Code | Value |
 | ---- | ----- |
@@ -192,14 +171,14 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | IGN | Ignore |
 | EXC | Exclude DV |
 
-### PrecedenceConstraints
+## Precedence Constraints
 
 | Code | Value |
 | ---- | ----- |
 | Success | Success |
 | Completion | Completion |
 
-### SystemTypes
+## System Types
 
 | Code | Value |
 | ---- | ----- |
@@ -297,7 +276,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | LS_XERO | Xero |
 | LS_ZOHO | Zoho |
 
-### FlatFileTypes
+## Flat File Types
 
 | Code | Value |
 | ---- | ----- |
@@ -305,7 +284,7 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | FixedWidth | FixedWidth |
 | RaggedRight | RaggedRight |
 
-### Delimiters
+## Delimiters
 
 | Code | Value |
 | ---- | ----- |
@@ -319,14 +298,14 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | UnitSeparator | UnitSeparator |
 | LF | LF |
 
-### Booleans
+## Booleans
 
 | Code | Value |
 | ---- | ----- |
 | Y | Y |
 | N | N |
 
-### AttributeKeys
+## Attribute Keys
 
 | Code | Value |
 | ---- | ----- |
@@ -351,13 +330,13 @@ BimlFlex has a number of internal static types that can also be referred to as a
 | SqlStringDataType | SqlStringDataType |
 | SqlAnsiStringDataType | SqlAnsiStringDataType |
 
-### AttributeValues
+## Attribute Values
 
 | Code | Value |
 | ---- | ----- |
 | EncryptSensitiveWithUserKey | EncryptSensitiveWithUserKey |
 
-### AttributeProperties
+## Attribute Properties
 
 | Code | Value |
 | ---- | ----- |

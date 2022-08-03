@@ -10,7 +10,7 @@ varigenceArticleType: Reference
 BimlFlex **Batches** group and help to define a data logistics (i.e. ETL/ELT) workload. They are used by **Projects** to set execution grouping.
 
 > [!NOTE]
-> Detailed descriptions of all **Batch** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Batches).
+> Detailed descriptions of all **Batch Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Batches).
 
 ## Overview
 
