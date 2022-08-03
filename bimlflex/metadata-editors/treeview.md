@@ -20,7 +20,7 @@ Clicking this icon will navigate the user directly to the referenced **Project**
 
 ## Context Sensitive
 
-### Connections Treeview
+### Connection Treeview
 
 Depending on which menu item is selected, the treeview may show a different hierarchy of items.
 
@@ -31,8 +31,6 @@ Clicking on any of the items will open the corresponding editor. In the example 
 The following menu items use the Connections Treeview:
 
 * Connections
-* Parameters
-* Attributes
 * Accelerator
 * Schema Diagram
 * Data Lineage
@@ -40,6 +38,10 @@ The following menu items use the Connections Treeview:
 ### Batch and Project Treeview
 
 For **Batches** and **Projects**, only the top-level component is visible. No child items will be visible in the treeview. Clicking on an item in the treeview here will open the **Batch Editor** or **Project Editor** respectively.
+
+### Parameter and Attribute Treeview
+
+For **Parameters** and **Attributes** the object will not show its columns, but it's relevant parameters and attributes instead. By clicking on any of these, the corresponding editor will be opened.
 
 ## Search
 
