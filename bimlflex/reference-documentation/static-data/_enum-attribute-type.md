@@ -9,7 +9,9 @@ varigenceArticleType: Reference
 Attribute Types
 Header not included because it is used in different ways
 -->
-**Attribute Types** are applied using the [**Attribute Editor**](xref:bimlflex-attribute-editor) and govern the scope for which the **Attribute** is applied. The following options are available:
+**Attribute Types** are applied using the [**Attribute Editor**](xref:bimlflex-attribute-editor) and govern the scope for which the **Attribute** is applied. Selecting the attribute type will then show available options for the selected type.
+
+The following options are available:
 
 | Attribute Type  | Code | Description                          |
 | --------------- | ---- | ------------------------------------ |
