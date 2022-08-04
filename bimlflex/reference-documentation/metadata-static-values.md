@@ -91,18 +91,7 @@ BimlFlex has a number of internal static types that are used to classify metadat
 
 ## Integration Stages
 
-| Code | Value |
-| ---- | ----- |
-| SRC | Source |
-| STG | Staging |
-| PSA | Persistent Staging |
-| INT | Intermediate |
-| DWH | Data Warehouse |
-| RDV | Raw Data Vault |
-| BDV | Business Data Vault |
-| DM | Data Mart |
-| MDS | Master Data Services |
-| EXP | File Export |
+[!include[Integration Stages](static-data/_enum-integration-stage.md)]
 
 ## Integration Templates
 
