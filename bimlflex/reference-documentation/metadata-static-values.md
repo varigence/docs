@@ -95,12 +95,7 @@ BimlFlex has a number of internal static types that are used to classify metadat
 
 ## Integration Templates
 
-| Code | Value |
-| ---- | ----- |
-| S2T_SSIS | SSIS: Source -> Target |
-| S2T_ADF | ADF: Source -> Target |
-| S2FIL | SSIS: Source -> File Extract |
-| S2ZIP | SSIS: Source -> Zip File Extract |
+[!include[Integration Stages](static-data/_enum-integration-template.md)]
 
 ## Object Types
 

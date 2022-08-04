@@ -12,7 +12,7 @@ Before working with Snowflake metadata, you should ensure that your environment 
 
 ## Installing and Configuring SnowSQL (SSIS Only)
 
-When using an SSIS [Integration Template](xref:bimlflex-concepts-integration-template), BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.
+When using an SSIS [Integration Template](xref:bimlflex-metadata-static-values#integration-templates), BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.
 
 This requires that SnowSQL be installed and the appropriate connection created on the server executing the SSIS packages.
 
