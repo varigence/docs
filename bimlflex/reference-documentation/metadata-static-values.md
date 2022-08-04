@@ -31,27 +31,7 @@ BimlFlex has a number of internal static types that are used to classify metadat
 
 ## Connection Types
 
-| Code | Value |
-| ---- | ----- |
-| OLEDB | OLEDB |
-| ADONET | ADONET |
-| FILE | FILE |
-| ODBC | ODBC |
-| TD | TERADATA |
-| ORA | ORACLE |
-| PDW | Microsoft APS |
-| AZB | Azure Blob Storage |
-| AZDLS | Azure Data Lake Store |
-| SFLSTG | Snowflake Stage |
-| AZLS | Analysis Linked Service |
-| AST | Analysis Services Tabular |
-| ASM | Analysis Services Multi Dimensional |
-| MDS | Microsoft MDS |
-| OLESQL | OLEDB SQL Based ELT |
-| ADOSQL | ADONET SQL Based ELT |
-| ODBCSQL | ODBC SQL Based ELT |
-| OLECDC | OLEDB CDC |
-| CUSTOM | Custom Component |
+[!include[Change Types](static-data/_enum-connection-type.md)]
 
 ## Data Types
 

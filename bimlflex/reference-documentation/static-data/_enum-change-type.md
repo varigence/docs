@@ -9,12 +9,11 @@ varigenceArticleType: Reference
 Change Types
 Header not included because it is used in different ways
 -->
-
 **Change Types** are applied using the [**Column Editor**](xref:bimlflex-column-editor) and drive the behavior and purpose of the **Column** for the design and code generation process. The following options are available:
 
 The available change types are dependent on the way the **Connection** is used in a BimlFlex **Project**. Depending on the connection's **Integration Stage** some options may, or may not be, available.
 
-| Value               | Code | Description | Applies To |
+| Change Type         | Code | Description | Applies To |
 | ------------------- | ---- | ----------- | ---------- |
 | Update              | CHG  | Assigns the column to track the latest value assigned to the column. Also used as default for attribute columns. In Dimensional Modeling, this corresponds to a 'Type 1' column.| All integration stages, any column. |
 | Key                 | KEY  | Indicates that the column is treated as a key value in downstream processing. It is part of the object's Primary Key definition for all intents and purposes.| All integration stages, any column. |
