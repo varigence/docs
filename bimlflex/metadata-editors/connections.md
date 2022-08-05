@@ -73,7 +73,9 @@ When a connection is archived, BimlFlex will display a confirmation box warning 
 
 [!include[Connection Types](../reference-documentation/static-data/_enum-connection-type.md)]
 
-[!include[System Types](_enum-system-type.md)]
+#### System Types
+
+[!include[Connection Types](../reference-documentation/static-data/_enum-system-type.md)]
 
 ## Objects Tab
 
