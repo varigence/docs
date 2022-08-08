@@ -13,8 +13,8 @@ The **Integration Stage** is a **Connection** property that defines and drives h
 
 The following integration stages are available:
 
-| Integration Stage       | Code | Description                                                                                        | Applies To                    |
-| ----------------------- | -----| -------------------------------------------------------------------------------------------------- | ----------------------------- |
+| Integration Stage   | Code | Description | Applies To |
+| ------------------- | ---- | ----------- | ---------- |
 | Business Data Vault     | BDV  | This layer represents the data following the application of the soft business rules that may be required. | Any connection. Selecting this integration stage will limit the available connection types and system types to BimlFlex supported target platforms. |
 | Data Mart               | DM   | A subset of data stored within the data warehouse, for the needs of a specific team, section or department within the enterprise. | Any connection. Selecting this integration stage will limit the available connection types and system types to BimlFlex supported target platforms. The allowed change types at column level will also be scope to support Dimensional Modeling. |
 | Data Warehouse          | DWH  | The connection type dedicated for the [BimlCatalog](xref:bimlflex-components-overview). A connection with the `Data Warehouse` integration stage can not be used in project definitions. | BimlCatalog connections only.|

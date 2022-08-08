@@ -9,9 +9,9 @@ varigenceArticleType: Reference
 Change Types
 Header not included because it is used in different ways
 -->
-**Change Types** are applied using the [**Column Editor**](xref:bimlflex-column-editor) and drive the behavior and purpose of the **Column** for the design and code generation process. The following options are available:
+**Change Types** are applied using the [**Column Editor**](xref:bimlflex-column-editor) and drive the behavior and purpose of the **Column** for the design and code generation process. The available change types are dependent on the way the **Connection** is used in a BimlFlex **Project**. Depending on the connection's **Integration Stage** some options may, or may not be, available.
 
-The available change types are dependent on the way the **Connection** is used in a BimlFlex **Project**. Depending on the connection's **Integration Stage** some options may, or may not be, available.
+The following options are available:
 
 | Change Type         | Code | Description | Applies To |
 | ------------------- | ---- | ----------- | ---------- |

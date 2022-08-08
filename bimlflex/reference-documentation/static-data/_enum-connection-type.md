@@ -11,8 +11,8 @@ Header not included because it is used in different ways
 -->
 **Connection Types** are configured using the [**Connection Editor**](xref:bimlflex-connection-editor) to define what kind of data source or target is connected to.
 
-| Connection Type       | Code   | Description                                                                            | Applies To |
-| --------------------- | ----------------------------------------------------------------------------------------------- | ---------- |
+| Connection Type     | Code | Description | Applies To |
+| ------------------- | ---- | ----------- | ---------- |
 | ADONET                | ADONET | An ADO.NET connection is used to connect to the data.                                  | Any Connection.|
 | Azure Blob Storage    | AZB    | A connection to an Azure Blob Storage Account.                                         | Connections with a `Source System`, `Landing Area`, or `Staging Area` integration stage.|
 | Azure Data Lake Store | AZDLS  | A connection to Azure Data Lake Storage Account.                                       | Any Connection except if defined with integration stage `Data Warehouse`.|

@@ -85,9 +85,9 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 
 ### Allowed Values
 
-[!include[Object Types](_enum-object-type.md)]
+#### Object Types
 
-[!include[Model Object Types](_enum-model-object-type.md)]
+[!include[Object Types](../reference-documentation/static-data/_enum-object-type.md)]
 
 ### Details Tab - SQL Overrides Fields
 

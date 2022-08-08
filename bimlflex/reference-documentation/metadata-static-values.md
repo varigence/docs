@@ -99,41 +99,7 @@ BimlFlex has a number of internal static types that are used to classify metadat
 
 ## Object Types
 
-| Code | Value |
-| ---- | ----- |
-| TBL | Table |
-| TBV | View |
-| DIM | Dimension |
-| DMV | Dimension View |
-| FCT | Fact |
-| FCV | Fact View |
-| SAT | Satellite |
-| LNK | Link |
-| HUB | Hub |
-| LSAT | Link Satellite |
-| REF | Reference |
-| PIT | Point In Time |
-| BRG | Bridge |
-| RSAT | Reference Satellite |
-| FIL | Flat File |
-| EXT | External |
-| TCA | CDC All |
-| TCL | CDC Last |
-| TCT | Change Tracking |
-
-## Model Object Types
-
-| Code | Value |
-| ---- | ----- |
-| HUB | Hub |
-| LNK | Link |
-| SAT | Satellite |
-| SAL | Same As Link |
-| HAL | Hierarchy Link |
-| REF | Reference |
-| RSAT | Reference Satellite |
-| IGN | Ignore |
-| EXC | Exclude DV |
+[!include[Integration Stages](static-data/_enum-object-type.md)]
 
 ## System Types
 
