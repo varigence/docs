@@ -47,4 +47,6 @@ Parameters in BimlFlex are displayed in the [**Treeview**](xref:bimlflex-treevie
 
 ## Allowed Values  
 
-[!include[Data Types](_enum-data-type.md)]  
+### Data Types
+
+[!include[Data Types](../reference-documentation/static-data/_enum-data-type.md)]

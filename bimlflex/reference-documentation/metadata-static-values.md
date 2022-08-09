@@ -35,39 +35,7 @@ BimlFlex has a number of internal static types that are used to classify metadat
 
 ## Data Types
 
-| Code | Value |
-| ---- | ----- |
-| AnsiString | AnsiString |
-| AnsiStringFixedLength | AnsiStringFixedLength |
-| Binary | Binary |
-| Boolean | Boolean |
-| Byte | Byte |
-| Currency | Currency |
-| Date | Date |
-| DateTime | DateTime |
-| DateTime2 | DateTime2 |
-| DateTimeOffset | DateTimeOffset |
-| Decimal | Decimal |
-| Double | Double |
-| Guid | Guid |
-| Int16 | Int16 |
-| Int32 | Int32 |
-| Int64 | Int64 |
-| Object | Object |
-| SByte | SByte |
-| Single | Single |
-| String | String |
-| StringFixedLength | StringFixedLength |
-| Time | Time |
-| UInt16 | UInt16 |
-| UInt32 | UInt32 |
-| UInt64 | UInt64 |
-| VarNumeric | VarNumeric |
-| Xml | Xml |
-| hierarchyid | HierarchyId |
-| geometry | Geometry |
-| geography | Geography |
-| smallmoney | SmallMoney |
+[!include[Change Types](static-data/_enum-data-type.md)]
 
 ## Parameter Data Types
 

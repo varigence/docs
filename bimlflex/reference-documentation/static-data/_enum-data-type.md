@@ -1,6 +1,17 @@
-#### Data Types
+---
+uid: bimlflex-metadata-static-values-data-types
+title: Data Types
+summary: Documentation of the management of metadata values
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
+---
+<!--
+Data Types
+Header not included because it is used in different ways
+-->
+**Data Types** are the allowed values that can be used to specify **Columns** in BimlFlex.
 
-| Value                 | Description                                                           |
+| Data Type             | Description                                                           |
 | --------------------- | --------------------------------------------------------------------- |
 | AnsiString            | ANSI string.                                                          |
 | AnsiStringFixedLength | Fixed length ANSI string.                                             |
@@ -10,7 +21,7 @@
 | Currency              | Money or currency.                                                    |
 | Date                  | Date only.                                                            |
 | DateTime              | Date and time.                                                        |
-| DateTime2             | Variable precision date and time.  Increased precision over DateTime. |
+| DateTime2             | Variable precision date and time. Increased precision over DateTime.  |
 | DateTimeOffset        | Data and time with time zone offset.                                  |
 | Decimal               | Fixed precision and scale numbers.                                    |
 | Double                | Float or Double.                                                      |
@@ -33,8 +44,8 @@
 | Geometry              | SQL Server geometry data type.                                        |
 | Geography             | SQL Server geography data type.                                       |
 | SmallMoney            | Small money.                                                          |
-| Variant               | Variant.  Non explicit data type.                                     |
+| Variant               | Variant. Non explicit data type.                                      |
 
 > [!NOTE]
 > For information on how these map to SQL Server, Synapse and Snowflake data types see associated link below.  
-> BimlFlex Documentation: [BimlFlex Data Type Conversions](xref:bimlflex-data-type-conversions)
+> BimlFlex Documentation: [BimlFlex Data Type Conversions](xref:bimlflex-data-type-conversions).

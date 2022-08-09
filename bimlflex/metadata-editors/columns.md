@@ -77,4 +77,6 @@ Lastly, the SQL Overrides section allows for detailed modification of the way th
 
 [!include[Change Types](../reference-documentation/static-data/_enum-change-type.md)]
 
-[!include[Data Type](_enum-data-type.md)]
+#### Data Types
+
+[!include[Data Types](../reference-documentation/static-data/_enum-data-type.md)]

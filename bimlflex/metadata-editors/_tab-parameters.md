@@ -52,14 +52,14 @@ The **Parameters Tab View** provides a different way to review the properties of
 
 #### Parameters Tab Table Components
 
-| Component              | Type                 | Description                        |
-| ---------------- | -------------------------------------------------------------------- | ------------------------------------------- |
-| Object            | Value                | The name of the **Object** within the current Source **Connection**. See [Objects Documentation](xref:bimlflex-object-editor).                |
-| Column             | Value                | The name of the **Column** within the current entity. See [Columns Documentation](xref:bimlflex-column-editor).                                     |
-| Parameter        | Navigational Value                | The name of the **Parameter** that is being applied to the selected entity. See [Parameters Documentation](xref:bimlflex-parameter-editor).  |
-| Operator           | Value | Operator to use in the **Parameter** when applied to the source **Column**. |
-| Default      | Date       | The parameter load value to use for the first load.          |
-| Data Type     | Value       | The data type to use for the **Parameter**.  Must be a valid data type. See [Valid Data Types](../metadata-editors/_enum-data-type.md) |
+| Component        | Type                 | Description                        |
+| ---------------- | -------------------- | ---------------------------------- |
+| Object           | Value                | The name of the **Object** within the current Source **Connection**. See [Objects Documentation](xref:bimlflex-object-editor).|
+| Column           | Value                | The name of the **Column** within the current entity. See [Columns Documentation](xref:bimlflex-column-editor).|
+| Parameter        | Navigational Value   | The name of the **Parameter** that is being applied to the selected entity. See [Parameters Documentation](xref:bimlflex-parameter-editor).  |
+| Operator         | Value                | Operator to use in the **Parameter** when applied to the source **Column**. |
+| Default          | Date                 | The parameter load value to use for the first load.          |
+| Data Type        | Value                | The data type to use for the **Parameter**.  Must be a valid data type. See [Valid Data Types](xref:bimlflex-metadata-static-values#data-types). |
 
 ##### Navigational Transitions
 

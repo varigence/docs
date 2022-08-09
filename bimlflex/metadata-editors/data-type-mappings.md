@@ -84,7 +84,9 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 
 ## Allowed Values
 
-[!include[Data Types](_enum-data-type.md)]
+### Data Types
+
+[!include[Data Types](../reference-documentation/static-data/_enum-data-type.md)]
 
 ### System Types
 

@@ -65,7 +65,12 @@ Additional information on trigger fields are found in the [batch reference docum
 
 ### Allowed Values
 
-[!include[Precedence Constraints](_enum-precedence-constraint.md)]
+#### Precedence Constraints
+
+| Value      | Description          |
+| ---------- | -------------------- |
+| Success    | Automatically create precedence constraints so that tasks will run only run one after the other if the prior tasks are successful.|
+| Completion | Automatically create precedence constraints so that tasks will run one after the other after they are completed regardless of whether they succeed or fail. |
 
 ## Objects Tab
 
