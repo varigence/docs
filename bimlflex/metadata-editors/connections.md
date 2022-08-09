@@ -13,9 +13,6 @@ Additionally, a connection definition includes metadata to identify the [*Integr
 
 Connections are used in [**Projects**](xref:bimlflex-project-editor) to direct BimlFlex in generating the overall intended flow of data.
 
-> [!NOTE]
-> Detailed descriptions of all **Connection Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
-
 ## Overview
 
 The following sections describe the User Interface elements of the **Connection Editor**, and how they are used to author and manage BimlFlex **Connections**. Detailed descriptions of each component is also available in the [reference documentation covering connections](xref:bimlflex-app-reference-documentation-Connections).
@@ -26,6 +23,9 @@ The following sections describe the User Interface elements of the **Connection 
     style="border: 1px solid #CCC;"
     title="Connections Editor"
 />
+
+> [!NOTE]
+> Detailed descriptions of all **Connection Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
 
 The **Connection Editor** contains four main tabs that can be used to modify connection details, as well as various properties and settings related to the **Objects** that are associated with the selected connection.
 

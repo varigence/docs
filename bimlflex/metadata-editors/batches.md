@@ -9,14 +9,14 @@ varigenceArticleType: Reference
 
 BimlFlex **Batches** group and help to define a data logistics (i.e. ETL/ELT) workload. They are used by **Projects** to set execution grouping.
 
-> [!NOTE]
-> Detailed descriptions of all **Batch Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Batches).
-
 ## Overview
 
 The following sections describe the User Interface elements of the Batch Editor and how they are used to author and manage BimlFlex **Batches**.
 
 ![BimlFlex - Batch Editor](images/bfx-batches-editor-overview.png "BimlFlex - Batch Editor")
+
+> [!NOTE]
+> Detailed descriptions of all **Batch Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Batches).
 
 ## Batch Tab
 

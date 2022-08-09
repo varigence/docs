@@ -18,16 +18,9 @@ BimlFlex has a number of internal static types that are used to classify metadat
 
 [!include[Change Types](static-data/_enum-change-type.md)]
 
-## Configuration Attributes
+## Configuration Attribute Types
 
-| Code | Value |
-| ---- | ----- |
-| IGN | Ignore |
-| DER | Derived |
-| SRC | Source |
-| DEF | Default |
-| TGT | Target |
-| HSH | Hash |
+[!include[Attribute Types](static-data/_enum-configuration-attribute-type.md)]
 
 ## Connection Types
 

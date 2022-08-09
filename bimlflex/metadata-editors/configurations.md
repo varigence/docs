@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-configurations
+uid: bimlflex-configuration-editor
 title: Configurations
 summary: Documentation regarding the BimlFlex Configuration editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex
@@ -13,17 +13,17 @@ Configurations can be used to support requirements for file locations, naming co
 
 The defaults for the configurations that are set as part of the BimlFlex installation are the Varigence recommended values. There is no need to change or configure unless there is a requirement to change specific behaviors. Align these settings with the organization's best practices and environmental requirements.
 
-> [!NOTE]
-> Detailed descriptions of all **Configuration Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
+> [!TIP]
+> Details on all default BimlFlex **Configurations** can be found in the [Configuration Reference Documentation](xref:bimlflex-metadata-configurations).
 
 ## Overview
 
 <img class="icon-inline" src="images/svg-icons/configurations.svg" /> **Configurations** can be found under Administration in the BimlFlex App menu.
 
-> [!TIP]
-> The [Configurations Reference Documentation](../reference-documentation/metadata-configurations.md) serves as a complete guide for all configurations available in the BimlFlex App.
-
 ![BimlFlex Configuration Editor](images/bfx-configurations-editor-overview.png "BimlFlex Configuration Editor")
+
+> [!NOTE]
+> Detailed descriptions of all **Configuration Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Configurations).
 
 ## Action Buttons
 
@@ -37,22 +37,6 @@ The action buttons modify the **Configuration** that is active in the editor.
 ## Configuration Editor Overview
 
 The **Configuration Editor** is used to manage all **Configurations**. The fields in the editor are defined in this table along with the validation rules.
-
-### Configuration Value Properties
-
-| <div style="width:200px">Field</div>| Description |
-|------------------------------------ | ----------- |
-| Configuration Key            | The Configuration Key is the internal unique key BimlFlex refers to for the given **Configuration**. This value cannot be changed.|
-| Configuration Value          | The Configuration Value corresponds to the name of the **Column** that will be created for the **Object** this configuration will be applied to. This can be modified to support a different pattern or behavior.|
-| Configuration Data Type      | The data type the  **Configuration** uses. This needs to be a valid data type definition.|
-| Configuration Default        | The value that will be inserted by default when a NULL value is encountered for the **Configuration**.|
-| SQL Source Expression        | SQL to be used by the **Configuration** when being applied to source data.|
-| SQL Target Expression        | SQL to be used by the **Configuration** when being applied to the target data.|
-| SSIS Dataflow Expression     | The SSIS Expression that will be applied to the column to derive a specific value. Needs to be a valid SSIS Expression. The  shorthand `@@this` to define the current entity.|
-| ADF Copy Expression          | The expression that will be used in an ADF Copy activity to derive a specific value. Needs to be a valid ADF expression. The  shorthand `@@this` to define the current entity.|
-|ADF Dataflow Expression      | Used to derive a value when using an ADF Dataflow. Adf Dataflow Expression is required with a derived Staging Attribute setting for Adf: Source -> Target Projects.|
-| Description                  | An optional description for custom attributes or definitions. The default configurations are described in this document.|
-| Nullable                     | Defines If the attribute is nullable Valid Enumeration {`Empty`, `Y`, `N`}|
 
 ### Configuration Application Properties
 
@@ -69,16 +53,9 @@ The definition of each configuration can be seen as a *Global Configuration*, an
 | Dim Attribute                | Determines if the configuration is applied to objects that have the `Dimension` object type, and how this is done. If any Dimension objects in the project have `Type 2` columns, *Dim Attribute* must be set to `Derived`.|
 | Fact Attribute               | Determines if the configuration is applied to objects that have the `Fact` object type, and how this is done.|
 
-Each property will allow a list of values to be selected, which impacts how the configuration is applied to the in-scope objects.
+### Configuration Attribute Types
 
-| Value   | Description| Short Code |
-| ------- | ---------- | ---------- |
-| Ignore  | Ignore the configuration for the assigned object or layer.| IGN |
-| Derived | Derive the configuration using the value specified in the appropriate *Expression* column. This is dependent on the **Integration Template** used.| DER |
-| Source  | Use the value as is available from the source object. This column will need to be named as specified by the *Configuration Value* column for the **Configuration** in the source object. | SRC |
-| Default | Use the value specified in the *Configuration Default* field for the **Configuration**.|
-| Target  | Defined by the Target.| TGT |
-| Hash    | Apply hashing logic when loading the value.|
+[!include[Object Types](../reference-documentation/static-data/_enum-configuration-attribute-type.md)]
 
 ## Configuration Overrides
 

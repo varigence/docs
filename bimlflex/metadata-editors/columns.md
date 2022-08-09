@@ -11,12 +11,12 @@ The **Column Editor** is used to manage how BimlFlex interacts with all **Column
 
 Mappings from source to target are defined at column level in BimlFlex, and the column editor provides various ways to influence how this design metadata is translated into data logistics artifacts.
 
-> [!NOTE]
-> Detailed descriptions of all **Column** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Columns).
-
 ## Overview
 
 **Columns** within BimlFlex are displayed in the [**Treeview**](xref:bimlflex-treeview) on the left side-navigation menu. Columns belong to an [**Object**](xref:bimlflex-object-editor), and can be access by opening the object in the treeview or by navigating to the columns tab in the **Object Editor** .
+
+> [!NOTE]
+> Detailed descriptions of all **Column** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Columns).
 
 From any editor, any instance of the <img class="icon-inline" src="images/svg-icons/navigate.svg"/> icon will serve as a Global Navigation Transition. Clicking this icon will navigate the user directly to the referenced **Project**, **Connection** or **Object**.
 

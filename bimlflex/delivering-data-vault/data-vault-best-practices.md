@@ -34,7 +34,7 @@ The Accelerator provides a starting point, a way to quickly configure an initial
 
 ## Recommended Data Vault Columns
 
-BimlFlex implements all standard system columns using [**Configurations**](xref:bimlflex-configurations). The **Configurations** feature allows the definition of specific columns that only apply to certain types of objects.
+BimlFlex implements all standard system columns using [**Configurations**](xref:bimlflex-configuration-editor). The **Configurations** feature allows the definition of specific columns that only apply to certain types of objects.
 
 For a more granular configuration, it is possible to override the global configuration using **Custom Attributes** so that certain configurations only for specific projects or objects.
 

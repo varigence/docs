@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Configurations
 
-The BimlFlex [**Configurations**](xref:bimlflex-configurations) allow for the creation and management of custom attributes which can assist in driving the behavior of the BimlFlex output.
+The BimlFlex [**Configurations**](xref:bimlflex-metadata-configurations) allow for the creation and management of custom attributes which can assist in driving the behavior of the BimlFlex output.
 
 ## Overview
   
@@ -46,4 +46,3 @@ The BimlFlex [**Configurations**](xref:bimlflex-configurations) allow for the cr
 |Link Attribute | The Link Attribute is used to control when a Configuration is applied to Links when generating a Data Vault solution.|
 |Dimension Attribute | The Dimension Attribute is used to control when a Configuration is applied to Dimensions when generating a data warehouse solution.|
 |Fact Attribute | The Fact Attribute is used to control when a Configuration is applied to Facts when generating a data warehouse solution.|
-

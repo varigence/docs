@@ -14,9 +14,6 @@ The BimlFlex **Parameter Editor** defines **Parameters** that can be used to man
 
 Parameters added to a SSIS project, batch package, regular package, or ADF pipeline can be used as parameter normally would in the respective system. Parameters can also be used in [Extension Points](xref:bimlflex-concepts-extension-points), if additional and more complex parameters that require custom logic are required.
 
-> [!NOTE]
-> Detailed descriptions of all **Parameter Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
-
 ## Overview  
 
 The following sections describe the User Interface elements of the Parameter Editor and how they are used to author and manage BimlFlex parameters.
@@ -26,6 +23,9 @@ The following sections describe the User Interface elements of the Parameter Edi
 Parameters in BimlFlex are displayed in the [**Treeview**](xref:bimlflex-treeview). Selecting any parameter will open the editor.
 
 ![BimlFlex Parameter Editor](images/bfx-parameter-editor.png "BimlFlex Parameter Editor")
+
+> [!NOTE]
+> Detailed descriptions of all **Parameter Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
 
 ## Action Buttons  
 

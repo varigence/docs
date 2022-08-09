@@ -7,13 +7,13 @@ varigenceArticleType: Reference
 ---
 # Configurations
 
-This document outlines the [**Configurations**](xref:bimlflex-configurations) that are available in BimlFlex by default.
+This document outlines the [**Configurations**](xref:bimlflex-configuration-editor) that are available in BimlFlex by default.
 
 These configurations drive the behavior of the BimlFlex product, by adding **Columns** to **Objects** where they have been configured to apply to.
 
 The default configuration values are recommended by Varigence, but these can be modified if there is a requirement to tweak specific behaviors or align to specific standards and conventions.
 
-Existing configurations can be modified, and new ones can be added, using the [**Configuration Editor**](xref:bimlflex-configurations) in the BimlFlex App.
+Existing configurations can be modified, and new ones can be added, using the [**Configuration Editor**](xref:bimlflex-configuration-editor) in the BimlFlex App.
 
 > [!TIP]
 > Align the **Configuration** values to best match your organization's best practices, conventions and naming standards.

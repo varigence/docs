@@ -13,14 +13,14 @@ Objects are managed using the *Object Editor*.
 
 The following sections describe the User Interface elements of the Object Editor and how they are used to author and manage BimlFlex Objects.
 
-> [!NOTE]
-> Detailed descriptions of all **Object Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Objects).
-
 ## Overview
 
 Objects are displayed in a hierarchical **Treeview** on the left Side Navigation menu. The treeview is organized by Project > Source Connection > Objects, with the number of tables within a given Object displayed in parenthesis.
 
 ![BimlFlex Object Editor](images/bfx-object-editor-overview.png "BimlFlex Object Editor")
+
+> [!NOTE]
+> Detailed descriptions of all **Object Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Objects).
 
 Selecting an **Object** with multiple tables will display a secondary list of all editable options within. The user may navigate to the Object editor screen by selecting any **Object** from the displayed list.
 

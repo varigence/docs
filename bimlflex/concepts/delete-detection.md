@@ -67,11 +67,11 @@ The name used is controlled by the following settings. These settings are part o
 
 ### Directing Specific Delete Behavior
 
-The metadata column for the delete specifications is defined through the [**Row Change Type**](xrefe:bimlflex-metadata-configurations#RowChangeType) **Configuration**.
+The metadata column for the delete specifications is defined through the [**Row Change Type**](xref:bimlflex-metadata-configurations#rowchangetype) **Configuration**.
 
 This configuration can be customized so that the delete information can be derived as needed. For example, it is possible to reuse a source delete flag for data sets that provide this status information. In other cases, the way the delete record is recorded can be defined.
 
-The Row Change Type works the same way as any other [**Configuration**](xref:bimlflex-configurations) in BimlFlex, and to an extent this is configurable in BimlFlex. The defaults are:
+The Row Change Type works the same way as any other [**Configuration**](xref:bimlflex-configuration-editor) in BimlFlex, and to an extent this is configurable in BimlFlex. The defaults are:
 
 * `I` for a newly detected key / record. This is the default value for the Row Change Type
 * `U` for a detected update related to an existing key / record

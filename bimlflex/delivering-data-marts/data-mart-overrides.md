@@ -14,7 +14,7 @@ At a high level, **Configuration** values control where/when they get applied an
 > [!TIP]
 > For additional details on managing **Configuration**, **Attributes** and **Configuration Overrides** refer to the below guides:
 >
-> BimlFlex Docs: [Configurations](xref:bimlflex-configurations)
+> BimlFlex Docs: [Configurations](xref:bimlflex-configuration-editor)
 >
 > BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 >
@@ -105,7 +105,7 @@ These can be adjusted to fit an organization's specific data standards.
 
 ## Setting a Configuration for the Data Mart
 
-All **Configurations** are global and set in the [**Configuration Editor**](xref:bimlflex-configurations).
+All **Configurations** are global and set in the [**Configuration Editor**](xref:bimlflex-configuration-editor).
 These can be enabled and disabled for each data architecture concept.
 
 > [!WARNING]
@@ -154,9 +154,9 @@ If required, a [**Configuration Override**](#overriding-configurations) can be a
 > [!TIP]
 > For additional details on **Configurations** and their definitions refer to the below guide:
 >
-> BimlFlex Docs: [Configurations](xref:bimlflex-configurations)
+> BimlFlex Docs: [Configuration Editor](xref:bimlflex-configuration-editor)
 >
-> BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
+> BimlFlex Docs: [Default BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 >
 
 ## Overriding Configurations
@@ -175,7 +175,7 @@ The **Configuration** itself is applied at an object level, so a column level ov
 
 ### [Standard Method](#tab/configuration-override)
 
-A **Configuration** can be quickly added from [**Configuration Editor**](xref:bimlflex-configurations).
+A **Configuration** can be quickly added from [**Configuration Editor**](xref:bimlflex-configuration-editor).
 If a field supports and override it will have clickable button with the following icon (<img class="icon-inline" src="../metadata-editors/images/svg-icons/attributes.svg" /><!--![Overriding Possible Icon -icon-inline](../metadata-editors/images/svg-icons/attributes.svg "Overriding Possible Icon")-->).
 
 ![Overriding Possible](images/bfx-configuration-override-support.png "Overriding Possible")
