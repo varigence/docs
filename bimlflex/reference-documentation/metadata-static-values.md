@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Metadata Types
 
-BimlFlex has a number of internal static types that are used to classify metadata. They can also be referred to as an enumeration type (or enum) and represent the constant values that can be used in the App.
+BimlFlex has a number of internal static types that are used to classify metadata. They can also be referred to as an enumeration type (or 'enum'), and represent the constant values that can be used in the App.
 
 ## Attribute Types
 

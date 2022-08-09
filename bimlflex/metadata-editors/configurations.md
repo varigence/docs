@@ -40,18 +40,18 @@ The **Configuration Editor** is used to manage all **Configurations**. The field
 
 ### Configuration Application Properties
 
-The definition of each configuration can be seen as a *Global Configuration*, and will apply to specific **Objects** based on their design. The configuration properties below control where each configuration applies.
+The definition of each configuration can be seen as a *Global Configuration*, and will apply to specific **Objects** based on their configuration. The configuration properties below control where each configuration applies. Exactly *how* the configuration applies depends on the selected **Configuration Attribute Type** for each individual application property.
 
 | <div style="width:200px">Field</div>| Description |
 |------------------------------------ | ----------- |
-| Landing Attribute            | Determines if the configuration is applied to objects in a `Landing` connection, and how this is done.|
-| Staging Attribute            | Determines if the configuration is applied to objects in a `Staging` connection, and how this is done.|
-| Persistent Staging Attribute | Determines if the configuration is applied to objects in a `Persistent Staging` connection, and how this is done.|
-| Hub Attribute                | Determines if the configuration is applied to objects that have the `Hub` object type, and how this is done.|
-| Satellite Attribute          | Determines if the configuration is applied to objects that have the `Satellite` object type, and how this is done.|
-| Link Attribute               | Determines if the configuration is applied to objects that have the `Link` object type, and how this is done.|
-| Dim Attribute                | Determines if the configuration is applied to objects that have the `Dimension` object type, and how this is done. If any Dimension objects in the project have `Type 2` columns, *Dim Attribute* must be set to `Derived`.|
-| Fact Attribute               | Determines if the configuration is applied to objects that have the `Fact` object type, and how this is done.|
+| Landing Attribute            | Determines if the configuration is applied to objects in a `Landing` connection.|
+| Staging Attribute            | Determines if the configuration is applied to objects in a `Staging` connection.|
+| Persistent Staging Attribute | Determines if the configuration is applied to objects in a `Persistent Staging` connection.|
+| Hub Attribute                | Determines if the configuration is applied to objects that have the `Hub` object type.|
+| Satellite Attribute          | Determines if the configuration is applied to objects that have the `Satellite` object type.|
+| Link Attribute               | Determines if the configuration is applied to objects that have the `Link` object type.|
+| Dim Attribute                | Determines if the configuration is applied to objects that have the `Dimension` object type. If any Dimension objects in the project have `Type 2` columns, *Dim Attribute* must be set to `Derived`.|
+| Fact Attribute               | Determines if the configuration is applied to objects that have the `Fact` object type.|
 
 ### Configuration Attribute Types
 
