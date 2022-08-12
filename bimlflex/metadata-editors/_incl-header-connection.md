@@ -13,6 +13,6 @@ A connection definition includes the configuration of the [**Integration Stages*
 
 For connections that are configured for Cloud Computing, additional configuration options will be made available to support generating the connection as a Linked Service in Azure Data Factory (ADF).
 
-A new BimlFlex solution always starts with defining your connections to your data sources and targets depending on your intended data solution architecture.
+A new BimlFlex solution always starts with defining connections to your data sources and targets depending on your intended data solution architecture. The design work commences by importing the objects for the source connection (configurated with a `Source System` integration stage).
 
 Connections are created and modified using the [**Connection Editor**](xref:bimlflex-connection-editor) in the [BimlFlex App](xref:metadata-editors-overview).
