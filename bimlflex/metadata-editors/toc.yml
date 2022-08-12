@@ -9,11 +9,11 @@
 - name: Treeview
   href: treeview.md  
 - name: Connection Editor
-  href: connections.md
+  href: connection-editor.md
 - name: Batch Editor
   href: batches.md
 - name: Project Editor
-  href: projects.md
+  href: project-editor.md
 - name: Object Editor
   href: objects.md
 - name: Column Editor

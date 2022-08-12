@@ -7,11 +7,7 @@ varigenceArticleType: Reference
 ---
 # Connection Editor
 
-BimlFlex **Connections** provide the information required to connect to data sources. They also acts as containers for [**Objects**](xref:bimlflex-object-editor) and allow [**Setting Overrides**](xref:bimlflex-settings#setting-overrides).
-
-Additionally, a connection definition includes metadata to identify the [*Integration Stage*](#integration-stages) along with package execution settings.
-
-Connections are used in [**Projects**](xref:bimlflex-project-editor) to direct BimlFlex in generating the overall intended flow of data.
+[!include[Connections](_incl-header-connection.md)]
 
 ## Overview
 

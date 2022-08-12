@@ -5,11 +5,7 @@ summary: Overview of BimlFlex metadata editors with links to BimlFlex tour, dash
 ---
 # BimlFlex App Overview
 
-## Introducing the BimlFlex App
-
-The BimlFlex App allows users to add and update all the metadata required to automate complex data warehousing solutions without ever writing a single line of code.
-
-Developing data solutions is not always easy, and may need many specific designs and modifications to fully meet requirements. To be able to manage this complexity in a streamlined way, BimlFlex provides a variety of editors, configurations, overrides and design features.
+[!include[Connections](_incl-header-bimlflex-app.md)]
 
 A quick overview of the User Interface elements that make up the BimlFlex App is provided in our [BimlFlex Tour](xref:bimlflex-tour), which demonstrates what features are available and how to navigate to them.
 

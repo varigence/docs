@@ -7,7 +7,7 @@ varigenceArticleType: Reference
 ---
 # Batch Editor
 
-BimlFlex **Batches** group and help to define a data logistics (i.e. ETL/ELT) workload. They are used by **Projects** to set execution grouping.
+[!include[Connections](_incl-header-batch.md)]
 
 ## Overview
 
