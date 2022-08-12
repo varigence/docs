@@ -11,7 +11,7 @@ The project configuration includes the specification of the involved [**Connecti
 
 Each project requires an [**Integration Template**](xref:bimlflex-metadata-static-values#integration-templates), which specifies for which target technology the data logistics processes will be generated. A project is also associated to a [**Batch**](xref:bimlflex-batch-editor) to generate a batch process executable for the targeted technology (integration template).
 
-All **Objects** belonging to the connections configured in the project will be subject to the selected integration template. This means that, for example, if you use a connection as a source that data logistics will be generated for _all_ objects associated with this (source) connection.
+All [**Objects**](xref:bimlflex-object-editor) belonging to the connections configured in the project will be subject to the selected integration template. This means that, for example, if you use a connection as a source that data logistics will be generated for _all_ objects associated with this (source) connection.
 
 Projects are created and edited using the [**Project Editor**](xref:bimlflex-project-editor) in the [BimlFlex App](xref:metadata-editors-overview).
 
