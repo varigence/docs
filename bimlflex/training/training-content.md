@@ -17,4 +17,8 @@ summary: Guide on working with BimlFlex. Meant to be generated as hand-out.
 
 ### Batches
 
-[!include[Connections](../metadata-editors/_incl-header-batch.md)]
+[!include[Batches](../metadata-editors/_incl-header-batch.md)]
+
+### Projects
+
+[!include[Projects](../metadata-editors/_incl-header-project.md)]
