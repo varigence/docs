@@ -7,11 +7,14 @@ varigenceArticleType: Conceptual
 ---
 # Attribute Editor
 
-The **Attribute Editor** is used to manage **Attributes** in the BimlFlex App. Attributes are used to conditionally override **Configurations** and **Settings**. They can also be used to extend the metadata model for bespoke coding requirements.
+The **Attribute Editor** is used to manage **Attributes** in the [BimlFlex App](xref:metadata-editors-overview). Attributes are used to conditionally override **Configurations** and **Settings**, and are one of the ways detailed customizations can be defined in BimlFlex. They can also be used to extend the metadata model for bespoke coding requirements.
 
 ## Overview
 
 ![BimlFlex - Attribute Editor](images/bfx-attributes-editor-overview.png "BimlFlex - Attribute Editor")
+
+> [!NOTE]
+> Detailed descriptions of all **Attribute Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-entities-index).
 
 ## Action Buttons
 
@@ -42,12 +45,12 @@ The fields available in the **Attribute** form change depending on the selected 
 
 These are the different fields required to define the scope of the **Attribute** in BimlFlex.
 
-| Attribute Type (Scope) | Required Fields |
+| Attribute Type (Scope) | Applies To |
 |-|-|
 | Batch | Batch |
 | Column | Connection, Object, Column |
 | Connection | Connection |
-| Customer | |
+| Customer | Everything |
 | Object | Connection, Object |
 | Project | Project |
 

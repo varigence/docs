@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-application-versions
+uid: bimlflex-version-editor
 title: Versions
 summary: Documentation regarding the BimlFlex Versions editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex

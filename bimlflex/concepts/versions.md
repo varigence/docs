@@ -13,7 +13,7 @@ A Version is part of a BimlFlex [Customer](xref:bimlflex-concepts-customer), and
 
 Versions can be used to manage changes in metadata, for example to contain certain releases for internal use. A common use-case in a DevOps context is to configure a 'development' version where the teams can work on, and a 'build' version that is deployed in a DevOps process / pipeline.
 
-In the BimlFlex App, there are options to manage versions for a selected Customer. This can be done in the Administration section in the application. This is further detailed in the [Versions sections in the BimlFlex App documentation](xref:bimlflex-application-versions).
+In the BimlFlex App, there are options to manage versions for a selected Customer. This can be done in the Administration section in the application. This is further detailed in the [Versions sections in the BimlFlex App documentation](xref:bimlflex-version-editor).
 
 You can switch between Versions directly in the [BimlFlex Toolbar](xref:bimlflex-tour#bimlflex-toolbar), or in the [Database Settings](xref:bimlflex-application-database-settings) menu.
 
