@@ -21,7 +21,7 @@
 - name: Parameter Editor
   href: parameters.md
 - name: Attribute Editor
-  href: attributes.md
+  href: attribute-editor.md
 - name: Configuration Editor
   href: configurations.md
 - name: Settings

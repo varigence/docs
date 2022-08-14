@@ -30,26 +30,6 @@ BimlFlex has a number of internal static types that are used to classify metadat
 
 [!include[Change Types](static-data/_enum-data-type.md)]
 
-## Parameter Data Types
-
-| Code | Value |
-| ---- | ----- |
-| Boolean | Boolean |
-| Byte | Byte |
-| Char | Char |
-| DateTime | DateTime |
-| DBNull | DBNull |
-| Decimal | Decimal |
-| Double | Double |
-| Empty | Empty |
-| Int16 | Int16 |
-| Int32 | Int32 |
-| Int64 | Int64 |
-| Object | Object |
-| SByte | SByte |
-| Single | Single |
-| String | String |
-
 ## Integration Stages
 
 [!include[Integration Stages](static-data/_enum-integration-stage.md)]
@@ -65,42 +45,3 @@ BimlFlex has a number of internal static types that are used to classify metadat
 ## System Types
 
 [!include[Connection Types](static-data/_enum-system-type.md)]
-
-## Attribute Keys
-
-| Code | Value |
-| ---- | ----- |
-| SettingValue | SettingValue |
-| IsDrivingKey | IsDrivingKey |
-| CreateBridge | CreateBridge |
-| CreatePIT | CreatePIT |
-| DistributeRoundRobin | DistributeRoundRobin |
-| DistributeReplicate | DistributeReplicate |
-| RowStoreIndex | RowStoreIndex |
-| RowCountSum | RowCountSum |
-| ProtectionLevel | ProtectionLevel |
-| SqlStartDelimiter | SqlStartDelimiter |
-| SqlEndDelimiter | SqlEndDelimiter |
-| SqlIgnoreSchema | SqlIgnoreSchema |
-| SqlHashPattern | SqlHashPattern |
-| SqlConcatenatePattern | SqlConcatenatePattern |
-| SqlStringExtractPattern | SqlStringExtractPattern |
-| SqlStringLoadPattern | SqlStringLoadPattern |
-| SqlDateExtractPattern | SqlDateExtractPattern |
-| SqlDateLoadPattern | SqlDateLoadPattern |
-| SqlStringDataType | SqlStringDataType |
-| SqlAnsiStringDataType | SqlAnsiStringDataType |
-
-## Attribute Values
-
-| Code | Value |
-| ---- | ----- |
-| EncryptSensitiveWithUserKey | EncryptSensitiveWithUserKey |
-
-## Attribute Properties
-
-| Code | Value |
-| ---- | ----- |
-| IsPrimaryHub,AddKey | IsPrimaryHub,AddKey |
-| IsPrimaryHub | IsPrimaryHub |
-| AddKey | AddKey |

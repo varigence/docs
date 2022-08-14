@@ -76,7 +76,7 @@ Clicking the links in the Overrides table will navigate to the item listed.
 To edit or delete the Setting Override, click the value in the Key column.
 
 Setting Overrides are saved in BimlFlex as **Attributes**.
-The [Attributes Documentation](attributes.md) provides information on **Attributes** and how to manage them.
+The [Attributes Documentation](xref:bimlflex-attribute-editor) provides information on **Attributes** and how to manage them.
 
 ### Add a Setting Override
 
@@ -98,4 +98,4 @@ The Attribute fields are used as the Setting Override as defined in this table.
 
 **Setting Overrides** are managed as **Attributes** in BimlFlex.
 To manage a setting override, click the value in the Key column of the Overrides table.
-The [Attributes Documentation](attributes.md) provides information on **Attributes** and how to manage them.
+The [Attributes Documentation](xref:bimlflex-attribute-editor) provides information on **Attributes** and how to manage them.

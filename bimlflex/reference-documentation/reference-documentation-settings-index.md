@@ -114,7 +114,7 @@ Align these settings with the organizations best practices and environmental req
 |  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Add SQL Defaults](xref:bimlflex-app-reference-documentation-setting-AddSqlDefaults) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to add SQL Default constraints to tables created. SQL Defaults are always added to staging layer tables.|
-|[Global Default Date](xref:bimlflex-app-reference-documentation-setting-GlobalDefaultDate) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The global default date to use for timelines.|
+|[Global Default Date](xref:bimlflex-app-reference-documentation-setting-GlobalDefaultDate) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The global default date to use for timelines. Please note that this value does not override the RowEffectiveFromDate.|
 |[Convert GUID To String](xref:bimlflex-app-reference-documentation-setting-ConvertGuidToString) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if a source column of type "GUID"/"UniqueIdentifier" is automatically converted to a String data type.|
 |[Use BimlCatalog](xref:bimlflex-app-reference-documentation-setting-UseBimlCatalog) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if BimlFlex uses the BimlCatalog database for logging, auditing and configuration variables.|
 |[Use Custom Components](xref:bimlflex-app-reference-documentation-setting-UseCustomComponents) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if BimlFlex uses the Ssis Custom Components to log RowCounts and Generate Hash Keys.|
