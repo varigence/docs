@@ -32,3 +32,7 @@ BimlFlex offers a wide array of customization mechanisms that allow specific twe
 ### Parameters
 
 [!include[Parameters](../metadata-editors/_incl-header-parameter.md)]
+
+### Attributes
+
+[!include[Attributes](../metadata-editors/_incl-header-attribute.md)]
