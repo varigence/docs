@@ -29,6 +29,10 @@ No data solution can be completely delivered by only using generic patterns. Cus
 
 BimlFlex offers a wide array of customization mechanisms that allow specific tweaking of the solution at a very detailed level.
 
+### Settings
+
+[!include[Settings](../metadata-editors/_incl-header-setting.md)]
+
 ### Parameters
 
 [!include[Parameters](../metadata-editors/_incl-header-parameter.md)]

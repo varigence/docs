@@ -5,11 +5,11 @@ summary: Documentation regarding the BimlFlex Settings editor, including editor 
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-# Settings
+# Settings Editor
 
-The **Settings Editor** is used to manage metadata and framework settings in the BimlFlex App.
-By changing settings, the produced artifacts can adapt to specific requirements for file locations, naming conventions, data conventions, etc.
-Align these settings with the organizations best practices and environmental requirements.
+[!include[Settings](_incl-header-setting.md)]
+
+## Overview
 
 <img class="icon-col m-5" src="images/svg-icons/settings.svg" /> **Settings** can be found under Administration in the application menu.
 
@@ -17,7 +17,6 @@ Align these settings with the organizations best practices and environmental req
 > The [Setting Reference Document](xref:bimlflex-app-reference-documentation-settings-index) serves as a complete guide for all settings available in the BimlFlex App.
 
 ![Settings Editor](images/settings-editor.png "Settings Editor")
-
 ## Settings Groups
 
 Settings within the BimlFlex app are organized into essential categories, **Setting Groups,** such as Azure, Core, DataVault, Snowflake, etc., with each category containing options within, relevant to its parent category.
