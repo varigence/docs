@@ -5,6 +5,8 @@ summary: Guide on working with BimlFlex. Meant to be generated as hand-out.
 ---
 # BimlFlex Training Manual
 
+This guide provides an end-to-end overview of the BimlFlex design process.
+
 ## BimlFlex App
 
 [!include[BimlFlex](../metadata-editors/_incl-header-bimlflex-app.md)]
@@ -22,6 +24,24 @@ summary: Guide on working with BimlFlex. Meant to be generated as hand-out.
 ### Projects
 
 [!include[Projects](../metadata-editors/_incl-header-project.md)]
+
+## Solution Design
+
+Once the high level architecture in terms of connections, projects and batches has been defined, a detailed and custom design can be implemented. The design process starts with the imported metadata and provides an initial foundation of the solution, including a Staging Area, Persistent Staging Area (PSA - if configured) and initial technical Data Vault model (if configured).
+
+In BimlFlex, subsequent design decision for the physical model are saved against the source object. This means that during the design process, the source object is enriched with further details that allow downstream (target) objects to be generated as well as the data logistics processes to populate these.
+
+This section covers the main design features that BimlFlex provides.
+
+### Business Modeling
+
+[!include[BusinessModeling](../metadata-editors/_incl-header-business-modeling.md)]
+
+### Data Vault Accelerator
+
+### Schema Diagram
+
+### Object Editor
 
 ## Advanced Customization
 

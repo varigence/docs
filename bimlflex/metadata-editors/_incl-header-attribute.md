@@ -9,4 +9,4 @@ varigenceArticleType: Reference
 
 Attributes are created as a result of specifically defining an override in either configuration or settings, for example by enabling a global setting but excluding specific objects from it. Attributes can be viewed and modified in the [**Attribute Editor**](xref:bimlflex-attribute-editor) in the [BimlFlex App](xref:metadata-editors-overview).
 
-The attribute editor provides an alternative view using the [treeview](xref:bimlflex-treeview), at object level, on the specific overrides that apply to the data solution.
+The attribute editor provides an alternative view using the [**Treeview**](xref:bimlflex-treeview), at object level, on the specific overrides that apply to the data solution.
