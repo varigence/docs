@@ -7,12 +7,7 @@ varigenceArticleType: Reference
 ---
 # Parameter Editor
 
-The BimlFlex **Parameter Editor** defines **Parameters** that can be used to manage load windows. For high water mark delta loads and similar simple parameters, adding the **Parameter** to the metadata will include all required logic to the load process.
-
-> [!TIP]
-> For detailed information on how to and configure the **Parameter** concept in BimlFlex please refer to our [Load Parameter Concept](xref:bimlflex-concepts-metadata-parameters) guide.
-
-Parameters added to a SSIS project, batch package, regular package, or ADF pipeline can be used as parameter normally would in the respective system. Parameters can also be used in [Extension Points](xref:bimlflex-concepts-extension-points), if additional and more complex parameters that require custom logic are required.
+[!include[Parameters](_incl-header-parameter.md)]
 
 ## Overview  
 

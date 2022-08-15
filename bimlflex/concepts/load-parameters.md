@@ -8,21 +8,22 @@ varigenceArticleType: Conceptual
 
 # Load Parameters
 
-BimlFlex provides a number of standard out-of-the-box `parameters`, as well as the functionality to create your own. Parameters can be used in many ways - for example for managing data load windows, orchestration and standardized or default values.
+BimlFlex [**Parameters**](xref:bimlflex-parameter-editor) can be used in many ways. For example, for managing data load windows, filtering and adding default values.
 
-Parameters are most commonly used to define a high water mark or define a filter for what is returned from a Source System. The explanations and scenarios belong are generated in vein with that task.
+Parameters are most commonly used to define a 'high water mark' or define a filter for what is returned from a source system.
 
 ## Parameter Management
 
-Once a **Parameter** is created in BimlFlex, the BimlCatalog DB (`[BimlCatalog]` by default) is used to manage them.
+Once a parameter is created in BimlFlex, the values for the parameter will be managed in the [BimlCatalog](xref:bimlflex-setup-metadata-database-installation) is used to manage them.
 
-**Parameter values are persisted in the `[bfx].[ConfigVariable]` table.**
+> [!NOTE]
+> Parameter values are persisted in the `[bfx].[ConfigVariable]` table, and parameter history is logged to the `[bfx].[AuditConfigVariable]` table.
 
 ### [[bfx].[ConfigVariable] Details](#tab/table-configvariable)
 
 Click a tab for example or detailed column descriptions.
 
-### [Examples](#tab/table-configvariable-example)
+### [Example](#tab/table-configvariable-example)
 
 | ConfigVariableID | SystemName | ObjectName                                       | VariableName   | VariableValue           | ExecutionID`*` | PreviousValue | DataTypeOverride`**` |
 | ---------------- | ---------- | ------------------------------------------------ | -------------- | ----------------------- | -------------- | ------------- | -------------------- |
@@ -38,14 +39,14 @@ Click a tab for example or detailed column descriptions.
 
 | Column Name          | Usage                                                                                                  |
 | -------------------- | ------------------------------------------------------------------------------------------------------ |
-| ConfigVariableID     | Table SK                                                                                               |
-| SystemName           | Name of the **Connection** associated with the **Parameter**                                           |
-| ObjectName           | Full name of the **Object** the **Parameter** is used with                                             |
-| VariableName         | Name of the **Parameter**                                                                              |
+| ConfigVariableID     | Primary Key value, for internal use only                                                               |
+| SystemName           | Name of the **Connection** associated with the parameter                                               |
+| ObjectName           | Full name of the **Object** the parameter is used with                                                 |
+| VariableName         | Name of the parameter                                                                                  |
 | VariableValue        | Last or current persisted value                                                                        |
-| ExecutionID`*`       | The `ExecutionID` of the Package/Pipeline used to load the Parameter                                   |
+| ExecutionID`*`       | The `ExecutionID` of the data logistics process execution used to load the parameter                   |
 | PreviousValue        | Previous `VariableValue` on the last execution                                                         |
-| DataTypeOverride`**` | Overrides the implicit variable detection.  See [DataTypeOverride Details](#datatypeoverride-details). |
+| DataTypeOverride     | Overrides the implicit variable detection                                                              |
 
 > [!TIP]
 >
@@ -53,29 +54,27 @@ Click a tab for example or detailed column descriptions.
 
 ***
 
-#### DataTypeOverride Details
+#### Data Type Override
 
 `[DataTypeOverride]` is not a column that is populated by default and is only required in limited edge case scenarios.
-This column should be ignored unless you are experiencing issues with the **Parameter** updating as a result of one of the below scenarios.
+This column should be ignored unless you are experiencing issues with the parameter updating as a result of one of the below scenarios.
 
-##### Usage Scenario for DataTypeOverride
-
-Currently the only know edge case happens when a loading an `int` or `decimal` value.
-The **Parameter** will fail to update in the `[bfx].[ConfigVariable]` if all the below are true:
+The parameter will fail to update in the `[bfx].[ConfigVariable]` if all the below are true:
 
 * Parameter is an `int` or `decimal` datatype
 * Parameter already has an entry in `[bfx].[ConfigVariable]`
-* The current `[VariableValue]` can be evaluated as a date
-  * Specifically if `ISDATE( [VariableValue] ) = 1` on SQL Server
-* The value being loaded does CAN NOT be evaluated as a date
-  * Specifically if `ISDATE( [VariableValue] ) = 0` on SQL Server
+* The current `[VariableValue]` can be evaluated as a date, specifically if `ISDATE( [VariableValue] ) = 1` on SQL Server
+* The value being loaded does can *not* be evaluated as a date, specifically if `ISDATE( [VariableValue] ) = 0` on SQL Server
 
-##### Updating DataTypeOverride
+> [!NOTE]
+>
+> `[DataTypeOverride]` currently only supports the `int` and `decimal` values.
+
+##### Updating Data Type Override
 
 The `[DataTypeOverride]` can only be accessed/viewed on the `[bfx].[ConfigVariable]` table in the **BimlCatalog**.
-To populate this column use SQL UPDATE statement as outlined in the template below.
 
-#### Usage of DataTypeOverride
+To populate this column use SQL UPDATE statement as outlined in the template below.
 
 ##### [SQL Script Template](#tab/update-datatypeoverride-template)
 
@@ -102,12 +101,6 @@ WHERE
 ```
 
 ***
-
-> [!NOTE]
->
-> `[DataTypeOverride]` currently only support the `int` and `decimal` values.
-
-**Parameter history is logged to the `[bfx].[AuditConfigVariable]` table.**
 
 ### [[bfx].[AuditConfigVariable] Details](#tab/table-AuditConfigVariable)
 
@@ -165,7 +158,7 @@ A following Execute SQL Task (`SQL - Set {Parameter}`) is then used to persist t
 
 ### [ADF Architecture](#tab/parameter-architecture-adf)
 
-<!-- TODO: Take picture of ADF Archtecture -->
+<!-- TODO: Take picture of ADF Architecture -->
 <!-- ![Parameters ETL Pattern](images/bfx-parameters-architecture-adf.png "Parameters ETL Pattern") -->
 
 Activities are added to the beginning of the pipeline that retrieve the last value and the next value to be recorded after execution completes.
@@ -191,12 +184,7 @@ The ending SQL Server Stored Procedure Activity (`LOG_{Parameter}`) is then used
 
 ## Creating Parameters in BimlFlex
 
-Parameters can be added in BimlFlex through the **Parameter Editor**, accessible from the BimlFlex main menu.
-
-> [!NOTE]
-> For information on the **Parameter Editor** and its usage refer to the below guide:
->
-> * BimlFlex Docs: [Parameter Editor](xref:bimlflex-parameter-editor)
+Parameters can be added in BimlFlex through the [**Parameter Editor**](xref:bimlflex-parameter-editor), accessible from the BimlFlex main menu.
 
 To add a new parameters, click the `+` button in the **Treeview** menu.
 
@@ -204,47 +192,8 @@ To add a new parameters, click the `+` button in the **Treeview** menu.
 
 ### Base Parameter
 
-The Base Parameter settings are the core fields that are required for Package/Pipeline level Parameter.
-With the exception of *PARAMETER SQL*, these are Source System agnostic.
+The Base Parameter settings are the core fields that are required to define a parameter in BimlFlex. With the exception of *PARAMETER SQL*, these are Source System agnostic.
 Configuration of the base **Parameter** itself remains the same across Source Systems.
-
-#### [Description](#tab/parameter-base)
-
-| Field                 | Description                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------ |
-| Connection            | The **Connection** this parameter is associated with.  Must be an existing **Connection**. |
-| Object                | The **Object** this parameter is associated with.  Must be an existing **Object**.         |
-| Column                | The **Column** this parameter is associated with.  Must be an existing **Column**.         |
-| Parameter             | The name of the parameter.                                                                 |
-| Operator              | Operator to use again the *PARAMETER* when applied to the source **Column**.               |
-| Default               | The parameter load value to use for the first load.                                        |
-| Datatype`*`           | The Data Type to use for the parameter.  Must be a valid Data Type.                        |
-| Parameter SQL`**`     | The query logic to derive the new parameter value.                                         |
-| Execute SQL On Source | When enabled executes the SQL on the source instead of the destination.                    |
-| Parameter Ordinal     | (Optional) The order of the parameter.                                                     |
-| Description           | (Optional) Free text description.                                                          |
-| Not Persisted         | Whether the parameter should be persisted to `[bfx].[ConfigVariable]`.                     |
-| Project Parameter     | Project level Parameters that are commonly available in all packages in the project.       |
-
-#### [Example](#tab/parameter-base-example)
-
-| Field                 | Description                                                     |
-| --------------------- | --------------------------------------------------------------- |
-| Connection            | AWLT_SRC                                                        |
-| Object                | SalesLT.Address                                                 |
-| Column                | ModifiedDate                                                    |
-| Parameter             | LastLoadDate                                                    |
-| Operator              | >                                                               |
-| Default               | 1900-01-01                                                      |
-| Datatype`*`           | String                                                          |
-| Parameter SQL`**`     | CONVERT(VARCHAR(27),MAX(@@this),121)                            |
-| Execute SQL On Source | `true`                                                          |
-| Parameter Ordinal     | 1                                                               |
-| Description           | Parameter to record the high water mark when loading the table. |
-| Not Persisted         | `false`                                                         |
-| Project Parameter     | `false`                                                         |
-
-***
 
 > [!NOTE]
 >

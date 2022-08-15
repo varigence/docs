@@ -19,7 +19,7 @@
 - name: Column Editor
   href: columns.md
 - name: Parameter Editor
-  href: parameters.md
+  href: parameter-editor.md
 - name: Attribute Editor
   href: attribute-editor.md
 - name: Configuration Editor
@@ -29,7 +29,7 @@
 - name: Data Type Mappings
   href: data-type-mappings.md
 - name: Version Editor
-  href: versions.md    
+  href: version-editor.md    
 - name: Operational Reports
   href: operational-reports.md 
 - name: Accelerator

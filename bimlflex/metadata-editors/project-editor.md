@@ -7,7 +7,7 @@ varigenceArticleType: Reference
 ---
 # Project Editor
 
-[!include[Connections](_incl-header-project.md)]
+[!include[Projects](_incl-header-project.md)]
 
 ## Overview
 
