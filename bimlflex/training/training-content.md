@@ -3,7 +3,7 @@ uid: bimlflex-training-content
 title: BimlFlex Training Content
 summary: Guide on working with BimlFlex. Meant to be generated as hand-out.
 ---
-# BimlFlex Training
+# BimlFlex Training Manual
 
 ## BimlFlex App
 
@@ -40,3 +40,7 @@ BimlFlex offers a wide array of customization mechanisms that allow specific twe
 ### Attributes
 
 [!include[Attributes](../metadata-editors/_incl-header-attribute.md)]
+
+### Extension Points
+
+[!include[ExtensionPoints](../concepts/_incl-header-extension-point.md)]
