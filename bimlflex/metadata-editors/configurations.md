@@ -7,14 +7,7 @@ varigenceArticleType: Reference
 ---
 # Configuration Editor
 
-The **Configuration Editor** is used to manage standard **Columns** and how, when and where these are added to **Objects**. These standard columns can be configured to drive the behavior of the output that BimlFlex generates.
-
-Configurations can be used to support requirements for file locations, naming conventions, data conventions and standard system columns.
-
-The defaults for the configurations that are set as part of the BimlFlex installation are the Varigence recommended values. There is no need to change or configure unless there is a requirement to change specific behaviors. Align these settings with the organization's best practices and environmental requirements.
-
-> [!TIP]
-> Details on all default BimlFlex **Configurations** can be found in the [Configuration Reference Documentation](xref:bimlflex-metadata-configurations).
+[!include[Configurations](_incl-header-configuration.md)]
 
 ## Overview
 
