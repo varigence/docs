@@ -15,9 +15,9 @@
 - name: Project Editor
   href: project-editor.md
 - name: Object Editor
-  href: objects.md
+  href: object-editor.md
 - name: Column Editor
-  href: columns.md
+  href: column-editor.md
 - name: Parameter Editor
   href: parameter-editor.md
 - name: Attribute Editor

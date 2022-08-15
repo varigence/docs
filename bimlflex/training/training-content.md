@@ -47,6 +47,8 @@ This section covers the main design features that BimlFlex provides.
 
 ### Object Editor
 
+[!include[Objects](../metadata-editors/_incl-header-object.md)]
+
 ## Advanced Customization
 
 No data solution can be completely delivered by only using generic patterns. Customization of certain areas in the solution will be needed to cater for situation-specific edge cases that are unique to your environment, requirements and challenges.
