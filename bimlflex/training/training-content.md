@@ -43,6 +43,8 @@ This section covers the main design features that BimlFlex provides.
 
 ### Schema Diagram
 
+[!include[SchemaDiagram](../metadata-editors/_incl-header-schema-diagram.md)]
+
 ### Object Editor
 
 ## Advanced Customization
