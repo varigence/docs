@@ -39,6 +39,8 @@ This section covers the main design features that BimlFlex provides.
 
 ### Data Vault Accelerator
 
+[!include[Accelerator](../metadata-editors/_incl-header-accelerator.md)]
+
 ### Schema Diagram
 
 ### Object Editor
