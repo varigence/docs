@@ -19,8 +19,6 @@ The deleted information is derived by comparing the rows available in the source
 
 Certain sources might be able to deliver deleted rows as a separate source, such as the SQL Server CDC feature. when a source delivers records with the state deleted it is possible to directly load them from that source into the target staging, persistent staging and Data Vault and reuse the source delete state without comparing against the existing PSA. 
 
-## BimlFlex Features for Delete Detection
-
 The **Delete Detection** feature is used in addition to the normal loads of new and changed data from the data source.
 
 The delete detection is controlled by manipulating the following **Settings** in the [Delete Detection Settings Group](xref:bimlflex-app-reference-documentation-settings-index#delete-detection):
@@ -46,18 +44,18 @@ At a high level, Delete Detection can be implemented in two ways:
 * Enabling the **Enable Delete Detection** (global), and *exclude* **Projects** and / or **Objects** using the **Overrides**. Or alternatively,
 * Disabling the **Enable Delete Detection** setting and *include* the **Projects** and / or **Objects** that should have delete detection applied
 
-Enabling Delete Detection allows the creation of the Delete Detection load process.
+Enabling Delete Detection allows the creation of the Delete Detection load process for the in-scope objects.
 
-Additional settings control if the identified delete rows are loaded into PSA and Data Vault targets. unless a separate, bespoke, process is used for delete record processing it is recommended to allow BimlFlex to autogenerate the process.
+Additional settings control if the identified delete rows are loaded into PSA and Data Vault targets. Unless a separate, bespoke, process is used for delete record processing it is recommended to allow BimlFlex to autogenerate the process.
 
 * Apply Delete Detection PSA
 * Apply Delete Detection RDV
 
-Enabling the Apply pattern will create ELT load procedures and call these once the source extract and delete detection has finished.
+Enabling the above 'Apply' patterns will create ('ELT' / 'load') Stored Procedures and call these once the source extract and delete detection has finished.
 
 ### Naming Conventions
 
-Enabling delete detection will create new Landing and Staging Area tables. By default, these will be named as `<RecordSourceAsSchema>.land_<TableName>_DEL` and `<RecordSourceAsSchema>.<TableName>_DEL`.
+Enabling delete detection will create new Landing and Staging Area tables that are dedicated to delete detection. By default, these will be named as `<RecordSourceAsSchema>.land_<TableName>_DEL` and `<RecordSourceAsSchema>.<TableName>_DEL`.
 
 The name used is controlled by the following settings. These settings are part of the [**Staging Naming**](xref:bimlflex-app-reference-documentation-settings-index#staging-naming) settings group.
 
@@ -65,7 +63,7 @@ The name used is controlled by the following settings. These settings are part o
 * The [**Delete Object Name Pattern**](xref:bimlflex-app-reference-documentation-setting-DeleteObjectNamePattern) setting.  The default value is: `@@this_DEL`.  This pattern creates the **Object** name, using the `@@this` shorthand code with the `_DEL` suffix
 * The [**Delete Schema Name Pattern**](xref:bimlflex-app-reference-documentation-setting-DeleteSchemaNamePattern).  The default value is `@@rs`.  The `@@rs` code is the Record Source as defined in the **Connection** to which the object belongs
 
-### Directing Specific Delete Behavior
+### Capturing Delete Detection Outcomes
 
 The metadata column for the delete specifications is defined through the [**Row Change Type**](xref:bimlflex-metadata-configurations#rowchangetype) **Configuration**.
 
@@ -81,6 +79,9 @@ By default, the **Row Change Type** is not applied to any specific area. When gl
 
 If specific objects are configured for delete detection these will need to be accompanied by a specific **Row Change Type** configuration.
 
-### Overriding default Delete patterns
+> [!IMPORTANT]
+> For delete detection to work correctly, the **Row Change Type** configuration must be applied to the object that has been configured for delete detection.
 
-When using the Apply Delete Detection function it is possible to also use the **Delete Detect Apply Psa Override** and **Delete Detect Apply Rdv Override** Extension Points to override the generated apply stored procedure.
+### Overriding Delete Patterns Using Extension Points
+
+When using the Apply Delete Detection function it is possible to also use the **Delete Detect Apply Psa** and **Delete Detect Apply Rdv Override** Extension Points to override the generated apply stored procedure.
