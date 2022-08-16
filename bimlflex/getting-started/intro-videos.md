@@ -26,12 +26,8 @@ More information: [Load Sample Metadata](xref:bimlflex-getting-started-sample-me
 ## Business Modeling
 
 ![How Business Modeling helps to design a better Data Vault](https://www.youtube.com/watch?v=tNbPGnFr8AI)
-![Using Business Modeling and Data Vault to automate an Azure Synapse solution](https://www.youtube.com/watch?v=EeDTDV__cBM")
 
-
-(1)	(2022) Using Business Modeling to Simplify Data Vault Integration - YouTube
-(2)	(1) (2022) Using Business Modeling and Data Vault to Automate an Azure Synapse Data Solution - YouTube
-
+![Using Business Modeling and Data Vault to automate an Azure Synapse solution](https://www.youtube.com/watch?v=EeDTDV__cBM)
 
 ## Data Vault Acceleration
 
