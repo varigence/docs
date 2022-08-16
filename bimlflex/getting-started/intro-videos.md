@@ -7,7 +7,9 @@ varigenceArticleType: Walkthrough
 ---
 # BimlFlex Introductory Videos
 
-Get quickly up to speed with BimlFlex through this set of introductory videos! These videos are designed to give you an overview of BimlFlex's features and quickly get you familiar with them. BimlFlex comes with support for data platforms like SQL Server, Azure Synapse and Snowflake as well as the SQL Server Integration Services (SSIS) and Azure Data Factory (ADF) integration engines. These videos use SSIS and SQL Server, but the sample metadata allows easy access to configurations for all supported scenarios.
+Get quickly up to speed with BimlFlex through this set of introductory videos! These videos are designed to give you an overview of BimlFlex's features and quickly get you familiar with them. BimlFlex comes with support for data platforms like SQL Server, Azure Synapse and Snowflake as well as the SQL Server Integration Services (SSIS) and Azure Data Factory (ADF) integration engines.
+
+Videos that cover various aspects of BimlFlex are also available in the [Varigence YouTube channel](https://www.youtube.com/user/varigence).
 
 ## End To End Walkthrough
 
@@ -20,6 +22,16 @@ More information: [First Project Walkthrough](xref:bimlflex-getting-started-fi
 ![Load Sample Metadata](https://www.youtube.com/watch?v=2rL853XpST4?rel=0&autoplay=0 "Load Sample Metadata")
 
 More information: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
+
+## Business Modeling
+
+![How Business Modeling helps to design a better Data Vault](https://www.youtube.com/watch?v=tNbPGnFr8AI)
+![Using Business Modeling and Data Vault to automate an Azure Synapse solution](https://www.youtube.com/watch?v=EeDTDV__cBM")
+
+
+(1)	(2022) Using Business Modeling to Simplify Data Vault Integration - YouTube
+(2)	(1) (2022) Using Business Modeling and Data Vault to Automate an Azure Synapse Data Solution - YouTube
+
 
 ## Data Vault Acceleration
 
