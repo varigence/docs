@@ -5,7 +5,7 @@ summary: Overview of the BimlFlex Version concept.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-BimlFlex supports management of changes in metadata over time. These changes are managed in **Versions**.
+BimlFlex supports management of changes in metadata over time. These changes are managed in [**Versions**](xref:bimlflex-version-concept-header).
 
 A version is part of a BimlFlex [Customer](xref:bimlflex-concepts-customer), and a Customer can contain zero, one or more versions of the metadata.
 

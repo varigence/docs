@@ -5,7 +5,7 @@ summary: Overview of the BimlFlex Customer concept.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-BimlFlex offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models. These are referred to as **Customers**.
+BimlFlex offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models. These are referred to as [**Customers**](xref:bimlflex-customer-header).
 
 Customers effectively provide a *multi-tenancy* setup that can be used to define different solutions within the same organization.
 
