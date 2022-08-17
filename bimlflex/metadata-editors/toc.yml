@@ -24,8 +24,8 @@
   href: attribute-editor.md
 - name: Configuration Editor
   href: configurations.md
-- name: Settings
-  href: settings.md
+- name: Setting Editor
+  href: setting-editor.md
 - name: Data Type Mappings
   href: data-type-mappings.md
 - name: Version Editor

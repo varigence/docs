@@ -7,6 +7,18 @@ summary: Guide on working with BimlFlex. Meant to be generated as hand-out.
 
 This guide provides an end-to-end overview of the BimlFlex design process.
 
+## Essential Concepts
+
+### Customers
+
+[!include[Customers](../concepts/_incl-header-customer.md)]
+
+### Versions
+
+[!include[Versions](../concepts/_incl-header-version.md)]
+
+[!include[Versions](../metadata-editors/_incl-header-version.md)]
+
 ## BimlFlex App
 
 [!include[BimlFlex](../metadata-editors/_incl-header-bimlflex-app.md)]

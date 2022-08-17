@@ -7,16 +7,18 @@ varigenceArticleType: Conceptual
 ---
 # Version Editor
 
-The **Version Editor** is used to manage versions of the metadata and BimlFlex versions for the active customer. The [Version Concept](xref:bimlflex-concepts-version) allows for capturing changes in metadata and managing versions over time.
+[!include[Versions](../concepts/_incl-header-version.md)]
 
-> [!NOTE]
-> Detailed descriptions of all **Version Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
+[!include[Versions](_incl-header-version.md)]
 
 ## Overview
 
 <img class="icon-inline" src="images/svg-icons/versions.svg" /> **Versions** can be found under Administration in the application menu.
 
 ![BimlFlex Versions Editor - Overview](images/bfx-versions-editor-overview.png "BimlFlex Versions Editor - Overview")
+
+> [!NOTE]
+> Detailed descriptions of all **Version Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Connections).
 
 ## Action Buttons
 
