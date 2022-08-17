@@ -64,4 +64,4 @@ By default, BimlFlex will 'hash' the **Integration Key** value to be used as a *
 
 Because of this, the **Surrogate Key** will be used in Data Vault Foreign Key references, if referential integrity is configured.
 
-The Data Type and applied hashing algorithm are configurable through the BimlFlex [**Settings**](xref:bimlflex-settings). The default used by BimlFlex is to use the `SHA1` algorithm and store this value as Binary value.
+The Data Type and applied hashing algorithm are configurable through the BimlFlex [**Settings**](xref:bimlflex-setting-editor). The default used by BimlFlex is to use the `SHA1` algorithm and store this value as Binary value.

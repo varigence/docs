@@ -72,8 +72,8 @@ The example uses imported metadata from the tables included in [AdventureWorksLT
 > [!TIP]
 > For additional details on Importing Samples and Metadata refer to the below guides:
 >
-> * BimlFlex Docs: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
-> * BimlFlex Docs: [Importing Source Metadata](xref:bimlflex-getting-started-importing-source-metadata)
+> * BimlFlex Docs: [Load Sample Metadata](xref:bimlflex-sample-metadata)
+> * BimlFlex Docs: [Importing Source Metadata](xref:bimlflex-concepts-importing-metadata)
 > * Microsoft Docs: [AdventureWorks installation and configuration](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure)
 
 In order to generate the Staging Area, metadata for **Objects** from a Source System will be needed.

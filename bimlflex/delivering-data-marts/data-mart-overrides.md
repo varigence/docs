@@ -427,7 +427,7 @@ The Historical Data will need to include all the dimensional attributes along wi
 As with Scenario 1, the only values required are the `RowStartDate` values.
 BimlFlex will implement the `RowEndDate` and `RowIsCurrent` automatically after the first load.
 
-Using the existing as a Source, [Import the Metadata](xref:bimlflex-getting-started-importing-source-metadata) for the Dimension.
+Using the existing as a Source, [Import the Metadata](xref:bimlflex-concepts-importing-metadata) for the Dimension.
 If any metadata columns (effectivity dates and current flag) made it into the initial import of metadata, they should be removed now.
 The only columns that should be present are the attributes we want to populate the Dimension with.
 

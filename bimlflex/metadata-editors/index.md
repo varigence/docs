@@ -36,7 +36,7 @@ The BimlFlex App contains many editors to make managing the design of your data 
 
 | <div style="width:150px">App Feature</div> | Description |
 | --------- | ----------- |
-|[Settings](xref:bimlflex-settings) | The Settings module is used to manage metadata and framework settings in the BimlFlex App. By changing settings, the produced artifacts can adapt to specific requirements for file locations, naming conventions, data conventions etc. Align these settings with the organizations best practices and environmental requirements.|
+|[Settings](xref:bimlflex-setting-editor) | The Settings module is used to manage metadata and framework settings in the BimlFlex App. By changing settings, the produced artifacts can adapt to specific requirements for file locations, naming conventions, data conventions etc. Align these settings with the organizations best practices and environmental requirements.|
 |[Data Type Mappings](xref:bimlflex-data-type-mappings) | BimlFlex Data Type Mappings provide the ability to map Data Types from a source system to another more standardized data type. This can be either a conversion of the Data Type entirely, such as a int to a bigint, the expansion of an existing Data Type, such as nvarchar(13) to nvarchar(20), or the combination of both, such as char(1) to nvarchar(10).|
 |[Versions](xref:bimlflex-version-editor) | The Versions module is used to manage versions of the Metadata and BimlFlex versions for the active customer. Versions allow for changes in metadata or versions over time.|
 |[Operational Reports](xref:bimlflex-operational-reports) | Operational Reporting screens allow users to see the status of their package runs at a high level and to drill down into details and view errors in failing packages.|

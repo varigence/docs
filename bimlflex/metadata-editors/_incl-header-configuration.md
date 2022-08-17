@@ -7,7 +7,7 @@ varigenceArticleType: Reference
 ---
 BimlFlex [**Configurations**](xref:bimlflex-configuration-editor) define exactly how data is intended to be processed, through which steps in the architecture, and by using what technology.
 
-The [**Configuration Editor**](xref:bimlflex-configuration-editor) is used to manage standard **Columns** and how, when and where these are added to **Objects**. These standard columns can be configured to drive the behavior of the output that BimlFlex generates.
+The [**Configuration Editor**](xref:bimlflex-configuration-editor) is used to manage standard [**Columns**](xref:bimlflex-column-editor) and how, when and where these are added to [**Objects**](xref:bimlflex-object-editor). These standard columns can be configured to drive the behavior of the output that BimlFlex generates.
 
 Configurations can be used to support requirements for file locations, naming conventions, data conventions and standard system columns.
 

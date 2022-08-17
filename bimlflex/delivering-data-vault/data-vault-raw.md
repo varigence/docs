@@ -13,7 +13,7 @@ When loading the source data to the Raw Data Vault, no *destructive transformati
 
 Conceptually, it should still be possible to reconstruct the original data from the Raw Data Vault.
 
-The Raw Data Vault contains [**Hub**](xref:bimlflex-data-vault-concept-hub), [**Link**](xref:bimlflex-data-vault-concept-link) and [**Satellite**](xref:bimlflex-data-vault-concept-satellite) style entities, which all follow configurable Data Vault conventions that can be modified through [**Settings**](xref:bimlflex-settings) and [**Configurations**](xref:bimlflex-configuration-editor).
+The Raw Data Vault contains [**Hub**](xref:bimlflex-data-vault-concept-hub), [**Link**](xref:bimlflex-data-vault-concept-link) and [**Satellite**](xref:bimlflex-data-vault-concept-satellite) style entities, which all follow configurable Data Vault conventions that can be modified through [**Settings**](xref:bimlflex-setting-editor) and [**Configurations**](xref:bimlflex-configuration-editor).
 
 The Raw Data Vault records the original source data in the central Data Vault model so that it can be easily integrated with other data sources. As part of this process, the data is time-stamped, standardized and unique data solution keys are assigned to Hubs and Links.
 

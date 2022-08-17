@@ -11,6 +11,8 @@ Header not included because it is used in different ways
 -->
 An **Integration Template** in BimlFlex drives which code generation patterns are applied to the design metadata. In other words, the Integration Template defines *how* the output will be generated. An integration template is set for a **Project**, and all data logistics defined in this project will be generated for the selected template.
 
+BimlFlex supports SQL Server Integration Services (SSIS), Azure Data Factory (ADF) Execute Pipelines and Mapping Data Flows as runtime integration engines, and depending on specific [**Connection**](xref:bimlflex-connection-editor) properties also generates SQL-based Stored Procedures.
+
 The following integration templates are supported in BimlFlex:
 
 | Integration Template                     | Code | Description                                                                                        |

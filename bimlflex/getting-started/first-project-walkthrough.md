@@ -53,7 +53,7 @@ There are several sample metadata sets available for different architectures.
 
 This walkthrough uses **01 - MSSQL Starting Point**
 
-More information please refer to the guide on [loading Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
+More information please refer to the guide on [loading Sample Metadata](xref:bimlflex-sample-metadata)
 
 ## Import of source metadata
 
@@ -61,7 +61,7 @@ More information please refer to the guide on [loading Sample Metadata](xref:bim
 
 Source metadata management and modeling is done through the BimlFlex App. It makes it easy to import the AdventureWorksLT source metadata into the metadata repository.
 
-More information: [Importing Source Metadata](xref:bimlflex-getting-started-importing-source-metadata)
+More information: [Importing Source Metadata](xref:bimlflex-concepts-importing-metadata)
 
 ## Data Vault Acceleration
 

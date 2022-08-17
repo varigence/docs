@@ -16,7 +16,7 @@ By changing settings, the produced artifacts can adapt to specific requirements 
 Align these settings with the organizations best practices and environmental requirements.
 
 > [!NOTE]
-> For additional information about using **Settings** in BimlFlex, please refer to the [Settings Editor](xref:bimlflex-settings) documentation.
+> For additional information about using **Settings** in BimlFlex, please refer to the [Settings Editor](xref:bimlflex-setting-editor) documentation.
 
 ## AzCopy
   

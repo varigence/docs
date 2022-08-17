@@ -59,8 +59,8 @@ The example uses the `01 - MSSQL Starting Point` metadata to generate Source Sys
 
 > [!TIP]
 > For additional details on Importing Samples and Metadata refer to the below guides:  
-> BimlFlex Docs: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)  
-> BimlFlex Docs: [Importing Source Metadata](xref:bimlflex-getting-started-importing-source-metadata)  
+> BimlFlex Docs: [Load Sample Metadata](xref:bimlflex-sample-metadata)  
+> BimlFlex Docs: [Importing Source Metadata](xref:bimlflex-concepts-importing-metadata)  
 
 In order to proceed a Source System **Connection** and Staging Area **Connection** is needed.
 

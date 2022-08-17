@@ -9,6 +9,10 @@ This guide provides an end-to-end overview of the BimlFlex design process.
 
 ## Essential Concepts
 
+### Dashboard
+
+[!include[Dashboard](../metadata-editors/_incl-header-dashboard.md)]
+
 ### Customers
 
 [!include[Customers](../concepts/_incl-header-customer.md)]
@@ -48,6 +52,10 @@ This section covers the main design features that BimlFlex provides.
 ### Business Modeling
 
 [!include[BusinessModeling](../metadata-editors/_incl-header-business-modeling.md)]
+
+### Importing Metadata
+
+[!include[Versions](../concepts/_incl-header-metadata-import.md)]
 
 ### Data Vault Accelerator
 

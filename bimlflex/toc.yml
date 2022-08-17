@@ -2,9 +2,6 @@
   href: index.md
   topicHref: index.md
   items:
-  - name: Installation
-    href: installation/toc.yml
-
   - name: Getting Started
     href: getting-started/toc.yml
 
@@ -55,6 +52,9 @@
 
   - name: Support Guide
     href: support/toc.yml
+
+  - name: Installation
+    href: installation/toc.yml    
 
   - name: Release Notes
     href: release-notes/toc.yml

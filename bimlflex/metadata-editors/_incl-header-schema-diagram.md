@@ -9,8 +9,8 @@ The [**Schema Diagram Designer**](xref:bimlflex-schema-diagram) provides an Enti
 
 ![Schema Diagram User Interface](images/schema-diagram-overview.png "Schema Diagram User Interface")
 
-The screenshot above shows the Schema Diagram of a subset of the imported source **Objects**.
+The screenshot above shows the Schema Diagram of a subset of the imported source [**Objects**](xref:bimlflex-object-editor).
 
-Using the **Schema Diagram Designer** the properties of **Objects**, **Columns** can be modified. It is also possible to define new **Integration Keys** and use these to define references to other **Objects**.
+Using the Schema Diagram Designer, the properties of objects and [**Columns**](xref:bimlflex-column-editor) can be modified. It is also possible to define new [**Integration Keys**](xref:bimlflex-concept-integration-keys) and use these to define references to other objects.
 
 These references, in turn, can be used to deliver the correct models using the [**Accelerator**](xref:bimlflex-data-vault-accelerator).

@@ -7,8 +7,6 @@ varigenceArticleType: Walkthrough
 ---
 # Modeling of Source Metadata
 
-<!-- TODO: update with new metadata approach and new app ui -->
-
 Once the source system metadata has been imported into BimlFlex it is possible to model it to suit the data warehouse requirements.
 
 Modeling through metadata management is the way to tweak the process to match ingestion and business requirements and allows BimlFlex to automatically generate the required SQL structures and SSIS packages for the load process.
@@ -21,7 +19,7 @@ The following detailed steps walk through the options for modeling of source Met
 
 The end result of this modeling is available to be loaded from the sample metadata set `02 - MSSQL After Import`.
 
-More information on the sample metadata is available here: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
+More information on the sample metadata is available here: [Load Sample Metadata](xref:bimlflex-sample-metadata)
 
 ### Reviewing keys
 

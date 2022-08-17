@@ -7,56 +7,7 @@ varigenceArticleType: Reference
 ---
 # Dashboard
 
-## Overview
-
-The dashboard provides a quick view of the metadata in the version and contains the most common tasks and navigation options.
-
-![BimlFlex Dashboard Overview](images/bfx-dashboard-new.png "BimlFlex Dashboard")
-
-<!--
-## Sunburst
-
-The Sunburst Graph gives users a quick graphical overview of their Metadata and provides a convenient way to browse to specific tables from from the dashboard.
-
-The default view of the Sunburst shows us concentric circles with:
-1. `Integration Stages` layer in the center
-1. `Connections` layer next layer out from the center
-1. `Object Types` the third layer
-1. `Objects` outer layer
-
-<img
-    src="images/bimlflex-app-dashboard-sunburst.png"
-    class="bordered-image"
-    title="Sunburst"
-/>
-
-### Sunburst Zooming and Hovering
-
-By clicking a slice of a layer the Sunburst zooms into that slice's information.
-
-When a user hovers over a slice of a layer the information on the right will dynamically update the show the contextual data for that slice.
-
-In the image below the sunburst is zoomed into the Raw Data Vault `Integration Stage` and the mouse is hovering over the Hub `Object Type`.
-
-<img
-    src="images/bimlflex-app-dashboard-sunburst-hover-hub.png"
-    title="Sunburst Zoom Link Hover Table"
-/>
-
-In the image below the sunburst is zoomed into the Link `Object Type` and the mouse is hovering over the LNK_Product_ProductCategory `Table`.
-
-<img
-    src="images/bimlflex-app-dashboard-sunburst-zoom-link-hover-table.png"
-    class="bordered-image"
-    title="Sunburst Hover Hub"
-/>
-
-By clicking in the center of the Sunburst users can zoom back out to the full Sunburst view.
-
-### Sunburst Navigation
-
-Users can navigate to an Entity's Editor Screen by clicking on the object slice in the Sunburst.
--->
+[!include[Dashboard](_incl-header-dashboard.md)]
 
 ## Dashboard Top Selections
 
@@ -128,32 +79,6 @@ The **Recent Objects** pane displayed the most recently updated **Objects** to a
 
 - Click <img class="icon-inline" src="images/svg-icons/objects.svg" > **Edit Object** to navigate to the **Object** metadata editor screen.
 - Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" > **Import Metadata** to navigate to the Import Metadata screen for your Source Connection.
-
-<!--
-## Recent Projects
-
-The Recent Projects pane on the dashboard will display the most recently updated **Projects**. It can be found in the bottom left of the dashboard window.
-
-## Recent Projects Pane Overview
-
-The Recent Projects pane displays the most recently updated **Projects** to allow for quick access and modification of **Projects**.
-
-![Recent Projects Pane](images/dashboard-recent-projects.64527.png "Project Pane Overview")
-
-- The type of **Project** is represented by the Project icon
-- Click the name of the **Project** to navigate to the **Projects Editor**
-- Hovering over a **Project** name will show when the most recent change was made
-- Hover over a **Project** and click the ellipses for the quick menu options
-
-## Projects Quick Menu
-
-![Recent Projects Pane](images/dashboard-recent-projects-menu.64527.png "Project Pane Overview")
-
-- Click <img class="icon-inline" src="images/svg-icons/projects.svg" > **Edit Projects** to navigate to the **Projects Editor**
-- Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" > **Import Metadata** to navigate to the Import Metadata screen for the **Source Connection**. This link will appear for **Projects** with a **Connection** that has a `Source System` Integration Stage.
-- Click <img class="icon-inline" src="images/svg-icons/objects.svg" > **Objects** to navigate to **Objects** related to the **Project**. The number displayed is the number of **Objects** related to the **Project**
-- Click <img class="icon-inline" src="images/svg-icons/columns.svg" > **Columns**  to navigate to **Columns** related to the **Project**. The number displayed is the number of **Columns** related to the **Project**
--->
 
 ## Action Buttons
 
@@ -230,7 +155,7 @@ Getting Started contains info and complete sets of Metadata examples to quickly 
 
 Contains complete sets of Metadata to serve as an example for users to refer to. These examples are also useful when following along with the Getting Started Videos.
 
-[More info](../getting-started/sample-metadata.md) about the various Sample Metadata sets.
+[More info](xref:bimlflex-sample-metadata) about the various Sample Metadata sets.
 
 ### Load Defaults
 

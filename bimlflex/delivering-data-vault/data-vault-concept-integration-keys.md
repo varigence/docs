@@ -36,12 +36,12 @@ The Data Type and applied hashing algorithm are configurable through the BimlFle
 
 ## Integration Key Settings for Data Vault
 
-BimlFlex offers many [**Settings**](xref:bimlflex-settings) to manage how the integration key will be used in the solution. Choose a tab below to view relevant setting descriptions or examples for integration keys.
+BimlFlex offers many [**Settings**](xref:bimlflex-setting-editor) to manage how the integration key will be used in the solution. Choose a tab below to view relevant setting descriptions or examples for integration keys.
 
 [!include[Integration Key Metadata Settings List](_settings_integration_key.md)]
 
 > [!NOTE]
-> The `Model` **Setting Group** is only applied when first creating and Integration Key.  These [**Settings**](xref:bimlflex-settings) do not already impact generated Integration Keys.
+> The `Model` **Setting Group** is only applied when first creating and Integration Key.  These [**Settings**](xref:bimlflex-setting-editor) do not already impact generated Integration Keys.
 
 * The [*Accelerate Hub Keys*](xref:bimlflex-app-reference-documentation-settings-index) setting will include the key parts in the Hub.
 * BimlFlex provides an option to add the `@@rs` to all keys on import [*Add Record Source to Integration Key*](xref:bimlflex-app-reference-documentation-settings-index) and on the **Columns** tab for the **Objects** in the app.

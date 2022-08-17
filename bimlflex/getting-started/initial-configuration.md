@@ -19,10 +19,6 @@ Once the BimlFlex installation is completed, it is time to set up the environmen
 
 The development workflow is focused around the BimlFlex App and the BimlStudio-based BimlFlex project.
 
-> [!NOTE]
-> Complete the **Setup** first  
-> More information: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
-
 ## BimlStudio project
 
 Open the BimlStudio Application and create a new, empty BimlFlex project.
@@ -81,9 +77,8 @@ Use the **New Customer** option in the BimlFlex App to add the Customer to the D
 
 ## BimlFlex App
 
-The BimlFlex App is used to manage the metadata for the BimlFlex solution.
-
-![BimlFlex App](images/bfx-dashboard-new.png "BimlFlex App")
+[!include[Dashboard](../metadata-editors/_incl-header-dashboard.md)]
+[!include[BimlFlex](../metadata-editors/_incl-header-bimlflex-app.md)]
 
 ## BimlFlex App Metadata Connection
 

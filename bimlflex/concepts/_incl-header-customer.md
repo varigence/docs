@@ -1,13 +1,13 @@
 ---
-uid: bimlflex-customer-header
+uid: bimlflex-customer-concept-header
 title: Customers
 summary: Overview of the BimlFlex Customer concept.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-BimlFlex offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models. These are referred to as [**Customers**](xref:bimlflex-customer-header).
+BimlFlex offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models. These are referred to as [**Customers**](xref:bimlflex-customer-concept-header).
 
-Customers effectively provide a *multi-tenancy* setup that can be used to define different solutions within the same organization.
+Customers effectively provide a *multi-tenancy* setup that can be used to define different solutions, even within the same organization.
 
 For example, if there is a requirement to deliver a solution for 'Finance' independent from 'Human Resources' these areas can be defined as separate customers in BimlFlex. Different Customers can also be created to look into different ways of deployment, for example when investigating a new technical target platform or data integration approach.
 

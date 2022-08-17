@@ -21,7 +21,7 @@ More information: [First Project Walkthrough](xref:bimlflex-getting-started-fi
 
 ![Load Sample Metadata](https://www.youtube.com/watch?v=2rL853XpST4?rel=0&autoplay=0 "Load Sample Metadata")
 
-More information: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
+More information: [Load Sample Metadata](xref:bimlflex-sample-metadata)
 
 ## Business Modeling
 

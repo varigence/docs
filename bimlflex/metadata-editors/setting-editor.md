@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-settings
+uid: bimlflex-setting-editor
 title: Setting Editor
 summary: Documentation regarding the BimlFlex Settings editor, including editor fields, action buttons, field descriptions, setting options, and overrides.
 varigenceProduct: BimlFlex

@@ -79,7 +79,7 @@ The ODBC driver is only required if using SSIS orchestration to connect to a Sno
 
 ## Configuring BimlFlex for Snowflake
 
-BimlFlex uses [**Settings**](xref:bimlflex-settings) to adapt to specific requirements for file locations, naming conventions, data conventions etc.
+BimlFlex uses [**Settings**](xref:bimlflex-setting-editor) to adapt to specific requirements for file locations, naming conventions, data conventions etc.
 
 Align these settings with the organizations best practices and environmental requirements.
 
@@ -94,7 +94,7 @@ These settings define the connectivity configuration from BimlFlex to Snowflake,
 
 ### Azure Storage Processing Settings (ADF Only)
 
-The following Azure [**Settings**](xref:bimlflex-settings) are used to configure the blob destinations. This is mandatory when using Snowflake.
+The following Azure [**Settings**](xref:bimlflex-setting-editor) are used to configure the blob destinations. This is mandatory when using Snowflake.
 
 ### [Settings](#tab/azure-storage-processing-settings)
 
@@ -291,7 +291,7 @@ Ensure these commonly missed steps are performed:
 * [Install and Configure SnowSQL](#installing-and-configuring-snowsql-ssis-only)  
 * [Install and Configure Snowflake ODBC DSN](#installing-and-configuring-a-snowflake-odbc-dsn)
 * [Install Snowflake SSIS Custom Components](#bimlflex-snowflake-custom-ssis-components)
-* [Configure and review the generic SSIS environment settings](xref:bimlflex-settings)
+* [Configure and review the generic SSIS environment settings](xref:bimlflex-setting-editor)
 
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
@@ -307,7 +307,7 @@ As a final check, please ensure the following configurations were made:
 
 * [Create a Landing Area](#landing-area-adf-only)  
 * [Provide a configured Linked Service with Secrets entered](#linked-services-adf-only)  
-* [Configure and review the generic Azure and Azure Data Factory environment settings](xref:bimlflex-settings)
+* [Configure and review the generic Azure and Azure Data Factory environment settings](xref:bimlflex-setting-editor)
 * [Azure Blob Stage Container Settings](#azure-storage-processing-settings-adf-only)  
 * [Azure Blob Archive Container Settings](#azure-storage-processing-settings-adf-only)  
 * [Azure Blob Error Container Settings](#azure-storage-processing-settings-adf-only)

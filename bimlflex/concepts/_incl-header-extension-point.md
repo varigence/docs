@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-extension-point-header
+uid: bimlflex-extension-point-concept-header
 title: Extension Points
 summary: Overview of the BimlFlex Extension Point concept.
 varigenceProduct: BimlFlex

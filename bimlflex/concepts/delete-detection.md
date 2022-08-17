@@ -29,7 +29,7 @@ The delete detection is controlled by manipulating the following **Settings** in
 
 The **Enable Delete Detection** setting is global and will be applied to all **Projects**. The supporting PSA and Raw Data Vault settings (Apply Delete Detection PSA, Apply Delete Detection RDV) provide means to insert the detected deletes (if any) into each specific area, or not.
 
-It is possible to override the global default for specific **Projects** or **Objects**. This can be implementing using [**Setting Overrides**](xref:bimlflex-settings#setting-overrides). Any defined overrides will disregard the global settings and apply to the specific scope that the override has been defined for.
+It is possible to override the global default for specific **Projects** or **Objects**. This can be implementing using [**Setting Overrides**](xref:bimlflex-setting-editor#setting-overrides). Any defined overrides will disregard the global settings and apply to the specific scope that the override has been defined for.
 
 Enabling delete detection will generate dedicated processes that can run separate from any of the regular data loading processes. This allows an end to end processing pipeline for deletes.
 

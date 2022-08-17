@@ -7,7 +7,7 @@ varigenceArticleType: Reference
 ---
 This guide provides information on using the BimlFlex [**Data Vault Accelerator**](xref:bimlflex-data-vault-accelerator), which can be used to simplify the delivery of data solutions that adopt the [**Data Vault**](xref:bimlflex-data-vault-index) modeling approach.
 
-The Accelerator allows the modeler to create and modify the target Data Vault from available source **Objects** and other modeled entities, such as views.
+The Accelerator allows the modeler to create and modify the target Data Vault from available source [**Objects**](xref:bimlflex-object-editor) and other modeled entities, such as views.
 
 Initially, the Accelerator will use the available source metadata to suggest an initial Data Vault model. This provides a best-effort, though technical, representation of the ('Raw') Data Vault based on the references and constraints available in the source metadata. This initial technical Data Vault model can then be further modified and configured to complete the intended target Data Vault model.
 
