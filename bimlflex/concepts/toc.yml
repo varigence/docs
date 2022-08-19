@@ -1,7 +1,5 @@
 - name: Overview
   href: index.md
-- name: Build Process
-  href: build-process.md
 - name: Customer Concept
   href: customer.md
 - name: Delete Detection

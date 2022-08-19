@@ -7,17 +7,23 @@ summary: Guide on working with BimlFlex. Meant to be generated as hand-out.
 
 This guide provides an end-to-end overview of the BimlFlex design process.
 
-## Essential Concepts
+The guide covers the components that make up the BimlFlex ecosystem, and how to interact with them. The essential concepts are also covered in detail. These are necessary to get the initial data solution up and running.
 
-### Dashboard
+Detailed modeling and customization to cater for specific requirements are outlined in the customization sections at the end of this guide.
+
+[!include[Components](../getting-started/bimlflex-components-overview.md)]
+
+# Essential Concepts
+
+## Dashboard
 
 [!include[Dashboard](../metadata-editors/_incl-header-dashboard.md)]
 
-### Customers
+## Customers
 
 [!include[Customers](../concepts/_incl-header-customer.md)]
 
-### Versions
+## Versions
 
 [!include[Versions](../concepts/_incl-header-version.md)]
 
@@ -27,21 +33,21 @@ This guide provides an end-to-end overview of the BimlFlex design process.
 
 [!include[BimlFlex](../metadata-editors/_incl-header-bimlflex-app.md)]
 
-## Connections, Batches and Projects
+# Connections, Batches and Projects
 
-### Connections
+## Connections
 
 [!include[Connections](../metadata-editors/_incl-header-connection.md)]
 
-### Batches
+## Batches
 
 [!include[Batches](../metadata-editors/_incl-header-batch.md)]
 
-### Projects
+## Projects
 
 [!include[Projects](../metadata-editors/_incl-header-project.md)]
 
-## Solution Design
+# Solution Design
 
 Once the high level architecture in terms of connections, projects and batches has been defined, a detailed and custom design can be implemented. The design process starts with the imported metadata and provides an initial foundation of the solution, including a Staging Area, Persistent Staging Area (PSA - if configured) and initial technical Data Vault model (if configured).
 
@@ -49,48 +55,52 @@ In BimlFlex, subsequent design decision for the physical model are saved against
 
 This section covers the main design features that BimlFlex provides.
 
-### Business Modeling
+## Business Modeling
 
 [!include[BusinessModeling](../metadata-editors/_incl-header-business-modeling.md)]
 
-### Importing Metadata
+## Importing Metadata
 
 [!include[Versions](../concepts/_incl-header-metadata-import.md)]
 
-### Data Vault Accelerator
+## Data Vault Accelerator
 
 [!include[Accelerator](../metadata-editors/_incl-header-accelerator.md)]
 
-### Schema Diagram
+## Schema Diagram
 
 [!include[SchemaDiagram](../metadata-editors/_incl-header-schema-diagram.md)]
 
-### Object Editor
+## Object Editor
 
 [!include[Objects](../metadata-editors/_incl-header-object.md)]
 
-## Advanced Customization
+# Advanced Customization
 
 No data solution can be completely delivered by only using generic patterns. Customization of certain areas in the solution will be needed to cater for situation-specific edge cases that are unique to your environment, requirements and challenges.
 
 BimlFlex offers a wide array of customization mechanisms that allow specific tweaking of the solution at a very detailed level.
 
-### Configurations
+## Configurations
 
 [!include[Configurations](../metadata-editors/_incl-header-configuration.md)]
 
-### Settings
+## Settings
 
 [!include[Settings](../metadata-editors/_incl-header-setting.md)]
 
-### Parameters
+## Parameters
 
 [!include[Parameters](../metadata-editors/_incl-header-parameter.md)]
 
-### Attributes
+## Attributes
 
 [!include[Attributes](../metadata-editors/_incl-header-attribute.md)]
 
-### Extension Points
+## Extension Points
 
 [!include[ExtensionPoints](../concepts/_incl-header-extension-point.md)]
+
+# Key Features
+
+## Delete Detection

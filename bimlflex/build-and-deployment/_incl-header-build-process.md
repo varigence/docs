@@ -1,18 +1,14 @@
 ---
-uid: bimlflex-concepts-build-process
+uid: bimlflex-build-process-header
 title: BimlFlex build process
 summary: Overview of the build process for BimlFlex
 varigenceProduct: BimlFlex
-varigenceArticleType: Conceptual
+varigenceArticleType: Reference
 ---
-# Build Process
 
-The Build Process in BimlStudio uses the BimlFlex metadata, expands this into BimlScript and then compiles this code to produce the relevant output and support scripting.
+The [Build Process](xref:bimlflex-build-solution-overview) in BimlStudio uses the BimlFlex metadata, expands this into BimlScript and then compiles this code to produce the relevant output and support scripting.
 
 The process will access the BimlFlex metadata through the framework, expand this into BimlScript and then compile the result into artifacts than can be deployed to the designated target environment.
-
-> [!TIP]
-> The [Build & Deployment](xref:bimlflex-build-solution-overview) section contains practical details on how to configure BimlStudio for use with BimlFlex and build solution.
 
 The Build Process can be started from BimlStudio by clicking the 'hammer and anvil' icon in the top-left corner.
 
@@ -22,6 +18,6 @@ If the Build is successful, the output artifacts will be available in the target
 
 * SSIS Packages
 * ARM templates and JSON files for ADF components
-* SQL (views, DDL, DML)
+* SQL (Views, DDL, DML)
 * SQL Server Data Tools (SSDT) Projects
 * Deployment scripts in PowerShell

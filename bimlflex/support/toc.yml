@@ -8,5 +8,7 @@
   href: excel-metadata-addin.md  
 - name: Troubleshooting
   href: troubleshooting-tips.md
+- name: Setting up an AdventureWorks sample source
+  href: setting-up-adventureworkslt2012-source-database.md
 - name: Tips and Tricks
   href: tips-and-tricks.md  
