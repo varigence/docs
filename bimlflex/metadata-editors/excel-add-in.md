@@ -7,6 +7,18 @@ varigenceArticleType: Walkthrough
 ---
 # BimlFlex Excel Add-in
 
+The Excel-based Metadata Editor is opened from the BimlFlex Ribbon tab in BimlStudio. The Excel Add-in provides an optional environment for bulk-editing metadata.
+
+![New project in Excel](images/bimlflex-ss-v5-excel-new-project.png "New project in Excel")
+
+The BimlFlex Excel metadata editor comes with an additional Excel tab in the Ribbon for interacting with BimlFlex.
+
+Configure the BimlFlex database connection in the **Metadata Connection** pane and connect to the BimlFlex Database.
+
+Once the connection is defined the metadata can be read into Excel. The main data is stored in the database and the working set is cached and displayed in Excel. The data is not updated in real-time. It is important to commit changes to the database and to communicate within the development team to synchronize changes to the Metadata.
+
+Retrieve all metadata into Excel by clicking the `Get All Entities` and `Get All Settings` buttons in the Excel BimlFlex Ribbon UI.
+
 BimlFlex Excel Add-in is the tool modelers and developers use to interact with the solution metadata. BimlFlex Excel Add-in connects to the BimlFlex Database.
 
 ## Getting Started

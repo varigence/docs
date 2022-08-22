@@ -101,6 +101,19 @@ BimlFlex offers a wide array of customization mechanisms that allow specific twe
 
 [!include[ExtensionPoints](../concepts/_incl-header-extension-point.md)]
 
-# Key Features
+# Notable Features
+
+Besides the support for bringing together disparate data sets into an integrated model for data delivery, BimlFlex provides a number of features intended to complete the data solution.
 
 ## Delete Detection
+
+[!include[DeleteDetection](../concepts/_incl-header-delete-detection.md)]
+
+# Getting Started With BimlFlex
+
+So far, a comprehensive overview of BimlFlex has been provided. The next step is to configure the BimlFlex ecosystem and get started with any of the existing sample projects - or by creating your own.
+
+The following resources have been made available for this:
+
+* [Configuring BimlFlex](xref:bimlflex-getting-started-initial-configuration)
+* [Sample Solutions](xref:bimlflex-sample-metadata)

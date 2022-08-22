@@ -1,6 +1,6 @@
 - name: Overview
   href: index.md
-- name: Customer Concept
+- name: Customers
   href: customer.md
 - name: Delete Detection
   href: delete-detection.md
@@ -20,7 +20,7 @@
   href: persistent-staging-area.md
 - name: Staged Queries
   href: staged-query.md
-- name: Version Concept
+- name: Versions
   href: versions.md
 - name: Sample Metadata
   href: sample-metadata.md

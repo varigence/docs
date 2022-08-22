@@ -12,3 +12,7 @@ The Customer Selection is used to change the context of the metadata that can be
 Additional information on the Customer feature is available in the [Customer Concept Overview](xref:bimlflex-concepts-customer).
 
 ![Customer Selection](images/bfx-customer-selection.png "Customer Selection")
+
+## New Customer Creation
+
+[!include[NewCustomer](_incl-header-new-customer.md)]

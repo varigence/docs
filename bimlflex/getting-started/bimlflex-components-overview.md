@@ -36,7 +36,7 @@ The database can be queried for custom documentation, reporting and generally un
 
 ## BimlCatalog Database
 
-The [BimlCatalog database](xref:bimlflex-setup-bimlcatalog-database-installation) contains the orchestration and runtime information needed to properly load the data solution. Audit information and errors from processes are logged in this database. The BimlCatalog is also used to provide orchestration direction for batches in case failures occur mid load.
+The [BimlCatalog database](xref:bimlflex-setup-bimlcatalog-database-installation) contains the orchestration and runtime information needed to properly load the data solution. Audit information and errors from processes are logged in this database. The BimlCatalog is also used to provide orchestration direction for batches in case failures occur during data processing.
 
 The BimlCatalog Database is created through the BimlFlex installer, or through the Setup BimlFlex menu option in the BimlFlex Ribbon UI in BimlStudio.
 
