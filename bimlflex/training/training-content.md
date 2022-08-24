@@ -117,3 +117,4 @@ The following resources have been made available for this:
 
 * [Configuring BimlFlex](xref:bimlflex-getting-started-initial-configuration)
 * [Sample Solutions](xref:bimlflex-sample-metadata)
+* A [First BimlFlex Solution Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough)
