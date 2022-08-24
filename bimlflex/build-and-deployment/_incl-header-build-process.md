@@ -21,3 +21,6 @@ If the Build is successful, the output artifacts will be available in the target
 * SQL (Views, DDL, DML)
 * SQL Server Data Tools (SSDT) Projects
 * Deployment scripts in PowerShell
+
+> [!TIP]
+> The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=qYu8pwqgAm0?rel=0&autoplay=0) provides an overview of how to build/compile sample metadata into data solution artifacts.

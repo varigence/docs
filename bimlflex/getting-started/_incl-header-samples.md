@@ -14,3 +14,6 @@ For example, samples cover how to load files using [SQL Server Integration Servi
 In the [BimlFlex App](xref:metadata-editors-overview), use the **Load Sample Metadata** button in the **Getting Started** pane on the [Dashboard](xref:bimlflex-dashboard) to load sample metadata to the current active **Customer**.
 
 ![Import Sample Metadata](images/bimflex-dashboard-import-samples.png "Import Sample Metadata")
+
+> [!TIP]
+> The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=2rL853XpST4?rel=0&autoplay=0) provides an overview of how to load sample metadata into BimlFlex.

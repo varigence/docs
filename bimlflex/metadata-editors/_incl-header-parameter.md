@@ -13,3 +13,6 @@ varigenceArticleType: Reference
 Parameters can also be used in [Extension Points](xref:bimlflex-concepts-extension-points), if additional and more complex parameters that require custom logic are required.
 
 Parameters are created and edited using the [**Parameter Editor**](xref:bimlflex-parameter-editor) in the [BimlFlex App](xref:metadata-editors-overview).
+
+> [!TIP]
+> The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=7GwiIC5vbs8?rel=0&autoplay=0) provides an example of how to apply load parameters.

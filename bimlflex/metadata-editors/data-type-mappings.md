@@ -9,6 +9,19 @@ varigenceArticleType: Reference
 
 BimlFlex **Data Type Mappings** provide the ability to map Data Types from a source system to another more standardized data type.  This can be either a conversion of the Data Type entirely, such as a `int` to a `bigint`, the expansion of an existing Data Type, such as `nvarchar(13)` to `nvarchar(20)`, or the combination of both, such as `char(1)` to `nvarchar(10)`.  
 
+Data Type Mappings is a BimlFlex feature that expands the Data Types of the source to a larger data type that is more accommodating. This is done to accommodate changes in the source system without the need to update the data solution, or the load process. The most common expansions are for short string representations that might be updated in the source.
+
+A 'Name' field of 20 characters might be updated to 250 to accommodate longer customer names, or it might be changed from `varchar` to `nvarchar` to accommodate international characters. An `integer` might be updated to `big int` when the source counter nears its maximum allowed value.
+
+By expanding incoming data it is possible to cater for these future changes before they become a load issue.
+
+>[!NOTE]
+> Note that larger data types might require more database resources.
+
+BimlFlex provides a rules engine for applying the expansions based on the Business Requirements. Based on the configuration, BimlFlex can apply the expansions across all columns for a source and all tables and load patterns will take the new expanded type into consideration.
+
+The expanded data types will be used in the source to staging load and the new data types will be used in both Staging and Persistent Staging. When the Data Vault accelerator is run on the source metadata the Satellite attributes will inherit the expanded data types from the source definition.
+
 ## Overview
 
 The following sections describe the UI elements of the Data Type Mappings Editor and how they are used to author and manage BimlFlex **Data Type Mappings**.

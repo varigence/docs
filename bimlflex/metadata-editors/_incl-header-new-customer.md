@@ -5,20 +5,19 @@ summary: Steps to create a new Customer.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-The **Customer** entity holds a set of metadata in the BimlFlex database and can be used to identify different projects, versions, customers, variations.
+The [**Customer**](xref:bimlflex-concepts-customer) is the top-level grouping of metadata in the BimlFlex database. A customer represents an independent logical area for which the metadata is separated from other customers.
 
-A **Customer** can have multiple **Versions** of metadata. An initial Version is created for a new Customer.
+Customers can be used to identify different companies, teams or initiatives. Any metadata defined for a specific customer can not be used by other customers in BimlFlex.
 
-The Customer can be created through:
+A customer can contain multiple [**Versions**](xref:bimlflex-version-editor) to manage changes in metadata over time, but can also be used for a more fine-grained approach to separate metadata. For example, if you want to organize BimlFlex to use a single customer to represent the company, versions can be defined to represent separate teams or initiatives.
 
-* BimlStudio > BimlFlex Ribbon > Open Bundle > New Customer
-* BimlFlex App > Settings Pane > New Customer
-* BimlFlex Excel Add-in > BimlFlex Ribbon > Metadata Connection pane > New Customer
+A customer can have multiple versions of metadata. An initial version is created for a new customer.
 
-Set up the connection information to the BimlFlex database.
-
-Use the **New Customer** option in the BimlFlex App to add the Customer to the Database
+Use the **New Customer Button** in the BimlFlex App to add the customer to the BimlFlex database.
 
 ![Create Customer](images/bimlflex-ss-v5-app-create-customer.png "Create Customer")
 
-This step includes the required and optional configurations available for the BimlFlex framework.
+The customer can also be created through:
+
+* BimlStudio > BimlFlex Ribbon > Open Bundle > New Customer
+* BimlFlex Excel Add-in > BimlFlex Ribbon > Metadata Connection pane > New Customer

@@ -17,6 +17,26 @@ BimlFlex implements a single-key modeling approach. Any **Integration Key** in t
 > [!NOTE]
 > The when designing a Data Vault solution, the **Integration Key** assumes the role of the Business Key concept by default. This is explained in more detail in the [Data Vault](xref:bimlflex-data-vault-index) sections.
 
+## Reviewing Keys
+
+BimlFlex has three types of keys managed through metadata:
+
+* Primary Key
+* Integration Key
+* Source Key
+
+A Primary Key is used to define the grain of the table, same way as a database primary key normally works. For a staging and persistent staging load the primary key is used to differentiate between a new row and an update to an already loaded row. When generating table scripts from BimlFlex the defined primary key columns will be used to build the staging and persistent staging primary keys. The default behavior is to generate the Primary Key together with the `RowEffectiveFrom` column.
+
+A source table can have multiple columns in the Primary Key definition.
+
+An Integration Key is the key describing the business entity stored in the table. It is used in Data Vault modeling to describe the Core Business Concept or Enterprise Wide Business Key candidate that will be used to model and load Hubs for system integration. The Integration Key can be the same as the Source Primary Key or it can be derived from a combination of attributes. The Integration Key is always a string representation so the default creation behavior in BimlFlex is to apply the `FlexToBk()` expression to convert the source column data types to a string. The import metadata function can derive an Integration Key from either the Primary Keys or the Unique Constraints of the source.
+
+A Source Key is used to define the source Primary Key when the modeled primary key definition needs to be changed in the modeling process. If there are Primary Key columns defined as derived columns that aren't persisted into the Persistent Staging layer BimlFlex will use the Source Key instead. This is the normal approach for a Data Vault model.
+
+For the trial process using a Data Vault destination layer and using the Accelerator to accelerate the Data Vault objects, the source modeling will use the Integration Keys to define the relationships. This allows the Accelerator to derive all Hubs, Links and Satellites based on the source metadata and the Integration Key definitions used as well as their relationships. This will also use the defined Integration Key as the single Primary key to allow the relationships to be defined in the metadata.
+
+In the `Import Metadata` dialog, the option to redefine relationships based on Integration Keys was used. This has created a Main Integration Key per imported table, based on the Primary Key of the source. This has also been set as the Primary Key for the table. For each foreign key constraint, an additional Integration Key has been created. The related table and column data has been set between these Integration Keys and the related main Integration Key column. This will allow the BimlFlex Data Vault Accelerator to create Hubs and Links using the defined Integration Keys without additional configuration.
+
 ## Defining an Integration Key
 
 The BimlFlex development workflow supports the modeler in importing metadata from various locations, and automatically deriving integration keys and relationships based on the identified references. Depending on the details of the imported metadata, the modeler may want to manually add additional **Integration Keys** and relationships to the design.
@@ -32,9 +52,16 @@ The modeler can modify these definitions at any point in the development lifecyc
 
 In some cases, the integration key may include multiple columns. For example if the original source Primary Key in the imported metadata was a composite key. The integration key will be a concatenation of the individual key parts, creating a single column for integration and optimize the performance of what would otherwise be multi-column joins.
 
+BimlFlex provides an expression to concatenate and separate columns into the Integration Key using the `FlexToBk(@@rs, Column1, Column2, Column3)` function. This can be applied in SSIS for SSIS load patterns and in SQL for SQL patterns. The trial uses the SSIS pattern and will implement the expression in a derived column in the generated SSIS packages.
+
 In the BimlFlex metadata, the integration key is defined using the `FlexToBk( )` function. This is an internal convention that BimlFlex uses to translate multiple columns and values into a single concatenated key.
 
 As an example, the metadata expression for the 'Customer' will look like this `FlexToBk(@@rs,CustomerID)`. This indicates that the **Integration Key** will be a concatenation of the **Record Source** and the 'CustomerID' column value.
+
+The concatenation character used with multiple columns is defined in the BimlFlex Settings using the `String Concatenator` setting. The default concatenation character is `~`.
+
+> [!NOTE]
+> Defining Integration Keys to use for Data Vault modeling typically requires extensive analysis. Finding the correct Integration Key definition relies on business process and source system knowledge as well as source system data profiling.
 
 ## A Practical Example of Integration Key Matching or Collision
 

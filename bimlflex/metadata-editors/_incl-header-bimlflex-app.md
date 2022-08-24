@@ -5,7 +5,7 @@ summary: Overview of the BimlFlex App.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-The primary source BimlFlex uses to generate data solutions assets is *design metadata*, simply referred to as 'metadata'. Metadata is most commonly in the form of **Objects** with corresponding properties, such as **Columns** and **Settings**.
+The primary source BimlFlex uses to generate data solutions assets is *design metadata*, simply referred to as 'metadata'. Metadata is most commonly in the form of [**Objects**](xref:bimlflex-object-editor) with corresponding properties, such as [**Columns**](xref:bimlflex-column-editor) and [**Settings**](xref:bimlflex-setting-editor).
 
 Although it is relatively straightforward to define individual metadata objects, it can take considerable time and effort to create, update and maintain the number of objects that would typically be involved in an enterprise data solution.
 

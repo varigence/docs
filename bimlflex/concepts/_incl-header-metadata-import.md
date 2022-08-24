@@ -14,3 +14,6 @@ The [**Connection**](xref:bimlflex-connection-editor) for which metadata will be
 The import metadata feature can be used in any scenario where a schema is available, and there is a need to bring that metadata into a BimlFlex solution. If the data structure changes, the metadata can be imported again so that the model can be updated.
 
 Importing metadata typically applies to connections that have been configured with the `Source System` [**Integration Stage**](xref:bimlflex-connection-editor#integration-stages) - as a 'source connection'.
+
+> [!TIP]
+> The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=ClMJcZPdSks?rel=0&autoplay=0) provides an overview of how to import data structures as metadata into the BimlFlex database.

@@ -332,8 +332,6 @@ Each method requires only a single **Configuration Override** (per column) and p
 > Repeat the chosen method for each **Configuration** as needed.
 >
 
-If not yet done, ensure that the Dimension is created and mapped as normal, following the [Data Mart Dimensional Model](xref:bimlflex-getting-started-dimensional-model) guide if needed.
-
 ##### [Method A - SQL Source Expression](#tab/scenario-1-method-a)
 
 The following method assumes the *DIM ATTRIBUTE* is already configured to `Derived` for any of the applicable **Configurations** being overridden.
@@ -431,7 +429,8 @@ Using the existing as a Source, [Import the Metadata](xref:bimlflex-concepts-imp
 If any metadata columns (effectivity dates and current flag) made it into the initial import of metadata, they should be removed now.
 The only columns that should be present are the attributes we want to populate the Dimension with.
 
-Follow the normal process and ensure that the Dimension is created and mapped as normal, following the [Data Mart Dimensional Model](xref:bimlflex-getting-started-dimensional-model) guide if needed.
+Follow the normal process and ensure that the Dimension is created and mapped as normal.
+
 Apply **Configuration Overrides** identical to as outlined above in [Overriding Type 2 Logic](#overriding-type-2-logic).
 
 Run the process and ensure all Dimension history is created correctly.
