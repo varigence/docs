@@ -48,58 +48,15 @@ Open the BimlStudio application and create a new, empty BimlFlex project.
 
 ### Creating the BimlFlex project
 
-From the start page, create a new **BimlFlex Project**.
-
-![Create New Project](images/new-bs-project-screen.png "Create New Project")
-
-Place the project in a suitable folder, the folder will contain source code for the project and should be managed through a source control system.
-
-![New BimlFlex Project](images/bfx-my-first-project.png "New BimlFlex Project")
-
-Once the new BimlStudio project is created, it is possible to open it from the folder by opening the project file directly, or by opening the project from BimlStudio.
-
-At this stage, a new BimlFlex project has been created in BimlStudio, but this has not yet been connected to the metadata repository.
-
-![Empty Project](images/bs-new-project-screen.png "Empty Project")
-
-> [!TIP]
-> The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=qhDTwv-jYKc?rel=0&autoplay=0) provides an overview of creating a new BimlFlex project in BimlStudio.
+[!include[BimlFlexProject](../build-and-deployment/_incl-header-bimlstudio-project.md)]
 
 ### Connect to the BimlFlex Database
 
-The BimlStudio project needs to access the metadata in the BimlFlex database in order to generate output.
-
-> [!NOTE]
-> The databases are created and updated through the [BimlFlex installer](xref:bimlflex-setup-installing-bimlflex). It is also possible to set up the databases from the BimlFlex ribbon tab in BimlStudio, or directly by using the **Setup BimlFlex Databases** button.
-> Additional information is available in the[BimlFlex database installation section](xref:bimlflex-setup-metadata-database-installation).
-
-To connect the BimlStudio project to the BimlFlex database, connectivity details to the metadata database need to be provided.
-
-![Create New Project](images/bs-new-project-screen-connectivity.png "Create New Project")
-
-When the connectivity to the BimlFlex database is established, a customer and version can be selected from the drop-down lists. Selecting a customer and version here and saving the project will ensure the right output is generated.
-
-> [!TIP]
-> Connectivity from BimlStudio to the BimlFlex database can always be opened by clicking the **Open Bundle** option in the BimlFlex ribbon.
-
-When the BimlStudio project is associated with a customer and version, the metadata can be refreshed on an ongoing basis by clicking the **Refresh Metadata** option in the BimlFlex ribbon. This will reload the metadata, parse and validate it, and update the **Logical View** in BimlStudio.
+[!include[BimlFlexDatabaseConnection](../build-and-deployment/_incl-header-bimlstudio-connect.md)]
 
 ### BimlStudio Project Settings
 
-For further, more detailed configuration, the BimlStudio project options include settings such as the target SQL Server version, SSIS and ADF versions, and whether to use the project or package deployment model for SSIS.
-
-Most of these are optional to change, but when using SSIS the target version and deployment method needs to be correct for the packages to open correctly in Visual Studio, and run correctly on the destination SSIS server.
-
-![BimlStudio Project Settings](images/bs-new-project-settings.png "BimlStudio Project Settings")
-
-The project settings can be accessed via the 'File' menu in BimlStudio, and then selecting 'Project Settings' from the menu.
-
-> [!IMPORTANT]
-> Once all settings are completed, restart BimlStudio and reopen the BimlFlex project to load the metadata.
-
-The most important settings to configure initially are the **Build** and **Target Versions** settings.
-
-For additional information, please refer to the [BimlStudio reference documentation](xref:bimlstudio-user-guide).
+[!include[BimlFlexProjectSettings](../build-and-deployment/_incl-header-bimlstudio-project-settings.md)]
 
 #### Build
 

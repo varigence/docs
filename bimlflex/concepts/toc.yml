@@ -14,10 +14,6 @@
   href: integration-keys.md    
 - name: Load Parameters
   href: load-parameters.md
-- name: Orchestration
-  href: orchestration.md
-- name: Persistent Staging Area
-  href: persistent-staging-area.md
 - name: Staged Queries
   href: staged-query.md
 - name: Versions

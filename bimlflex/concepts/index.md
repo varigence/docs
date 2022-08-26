@@ -32,12 +32,6 @@ BimlFlex provides an import tool which is accessible from the Connections and Pr
 
 A data solution comprises of a number of concepts, technologies and decisions around information modeling and solution design. This section provides an overview of essential concepts that are part of these considerations, and how BimlFlex supports them.
 
-### Architecture
-
-Data solutions come in many shapes and forms, and BimlFlex aims to provide maximum configurability on the overall architecture of the solution. The following concepts are relevant for this:
-
-* [The Persistent Staging Area](xref:bimlflex-concepts-persistent-staging-area)
-
 ### Delivery
 
 Irrespective of the design of the data solution architecture, there are many options to make sure the design is delivered the way it is intended.
@@ -46,4 +40,3 @@ Irrespective of the design of the data solution architecture, there are many opt
 * [Working with BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)
 * [Define Custom Behavior Using Extension Points](xref:bimlflex-concepts-extension-points)
 * [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)
-* [Orchestration in BimlFlex](xref:bimlflex-concepts-orchestration)

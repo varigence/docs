@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-concepts-persistent-staging-area
+uid: bimlflex-deliver-persistent-staging-area
 title: BimlFlex persistent staging area concept
 summary: Overview of the persistent staging area concept in BimlFlex
 varigenceProduct: BimlFlex

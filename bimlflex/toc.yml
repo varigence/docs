@@ -5,7 +5,7 @@
   - name: Getting Started
     href: getting-started/toc.yml
 
-  - name: BimlFlex Concepts
+  - name: Key Concepts and Features
     href: concepts/toc.yml
 
   - name: BimlFlex App
@@ -38,14 +38,17 @@
   - name: Other BimlFlex Connectivity
     href: scenarios/toc.yml
 
-  - name: Delivering Data Staging
-    href: delivering-data-staging/toc.yml
+  - name: Delivering Staging
+    href: delivering-staging/toc.yml
 
   - name: Delivering Data Vault
     href: delivering-data-vault/toc.yml
 
   - name: Delivering Data Marts
     href: delivering-data-marts/toc.yml
+
+  - name: Orchestration
+    href: orchestration/toc.yml
 
   - name: Reference Docs
     href: reference-documentation/toc.yml

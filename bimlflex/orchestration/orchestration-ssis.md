@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-concepts-orchestration
+uid: bimlflex-concepts-orchestration-ssis
 title: BimlFlex Batch Orchestration
 summary: Using BimlFlex batch orchestration to control failure scenario management, auditing, and logging of runs, with the BimlCatalog database
 varigenceProduct: BimlFlex
@@ -64,12 +64,6 @@ EXEC [ssis].[LogExecution]
 #### SEQC – BimlFlex Package Main
 
 Package Main is where all the template specific logic is implemented.
-
-More information on this process:
-
-* [Source to Staging Templates](xref:bimlflex-source-to-staging-templates)
-* [Data Vault Templates](xref:bimlflex-data-vault-index)
-* [Data Mart Templates](xref:bimlflex-data-delivery-index)
 
 #### SEQC – BimlFlex Package End
 
