@@ -15,11 +15,8 @@ At a high level, **Configuration** values control where/when they get applied an
 > For additional details on managing **Configuration**, **Attributes** and **Configuration Overrides** refer to the below guides:
 >
 > * [Configurations](xref:bimlflex-configuration-editor)
->
 > * [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
->
 > * [Attributes](xref:bimlflex-attribute-editor)
->
 
 ## Common Configurations
 

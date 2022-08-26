@@ -6,11 +6,9 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
 
-# Dimension Table Loading Pattern
+# Dimension Loading Pattern
 
-The Dimension Load Pattern is configured in the metadata in a Data Mart project.
-
-The load has a Source Object, normally an abstraction view, a staging table or a Data Vault construct.
+The Dimension Load Pattern is configured in the metadata in a Data Mart project. The load has a Source Object, normally an abstraction view, a staging table or a Data Vault construct.
 
 The source object has an Integration Key set that is used for Dimension Lookups
 

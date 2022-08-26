@@ -8,10 +8,6 @@ varigenceArticleType: Conceptual
 
 # Microsoft Azure Synapse Overview
 
-<!-- TODO: Intro: Speak briefly to what Azure Synapse is. -->
-
-<!-- TODO: TIP: Link to Microsoft Synapse Documentation -->
-
 ## Orchestration Method
 
 BimlFlex supports Microsoft Azure Synapse across both SQL Server Integration Services (SSIS) and Azure Data Factory (ADF).
@@ -32,18 +28,6 @@ This page is currently configured for SQL Server Integration Services (SSIS).
 This page is currently configured for Azure Data Factory (ADF).
 
 ***
-
-<!-- ## High Level Architecture
-
-### [SSIS Architecture](#tab/architecture/ssis-orchestration)
-
-TODO: SSIS Architecture Diagram
-
-### [ADF Architecture](#tab/architecture/adf-orchestration)
-
-TODO: ADF Architecture Diagram
-
-*** -->
 
 ## Assumptions and Prerequisites
 
@@ -87,9 +71,7 @@ Select a tab to view field descriptions and an example configuration for a **Con
 A **BimlFlex Connection** is configured by logical role.
 If the same physical database is to participate in multiple **Integration Stages** then a **BimlFlex Connection** will need to be configured for each.
 
-When using Azure Synapse as the **Target Warehouse Environment** it is recommended`*` that you use the same database for storage and separate the layers via schema and naming conventions.
-
-> `*`: Unless specific organizational or architectural concerns are preventing such.
+When using Azure Synapse as the **Target Warehouse Environment** it is recommended`*` that you use the same database for storage and separate the layers via schema and naming conventions, unless specific organizational or architectural concerns are preventing this.
 
 This may result in the **Staging Area**, **Persistent Staging Area**, **Raw Data Vault** and **Data Mart** all pointing to the same database.
 
@@ -102,19 +84,17 @@ These may be a mandatory settings or an alternate use for a shared field.
 These focus more on "how" the **Connection** is used.
 
 > [!TIP]
-> For additional details on creating a **Connection** refer to the below guide:
->
-> * [Connections](xref:bimlflex-connection-editor)
+> For additional details on creating a **Connection**, please refer to the [**Connection Editor**](xref:bimlflex-connection-editor).
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+ This page is currently configured for SQL Server Integration Services (SSIS).
+
+ ### [ADF](#tab/adf-orchestration)
+
+ This page is currently configured for Azure Data Factory (ADF).
+
+ ***
 
 #### [SSIS Specific](#tab/orchestration-specific/ssis-orchestration)
 
@@ -379,15 +359,15 @@ Linked Services are used in Azure Data Factory to define a data source.
 
 To configure a **Linked Service** select a **Connection** and `enable` the *CLOUD* selector at the top.
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+This page is currently configured for SQL Server Integration Services (SSIS).
+
+### [ADF](#tab/adf-orchestration)
+
+This page is currently configured for Azure Data Factory (ADF).
+
+***
 
 ### ADF Linked Service
 
@@ -429,15 +409,15 @@ BimlFlex **Settings** are used for environment details and orchestration configu
 
 The below **Settings** only need to be configured when using Azure Synapse as the **Target Warehouse Environment**.
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+This page is currently configured for SQL Server Integration Services (SSIS).
+
+### [ADF](#tab/adf-orchestration)
+
+This page is currently configured for Azure Data Factory (ADF).
+
+***
 
 ### Mandatory Settings
 
@@ -505,15 +485,15 @@ Prior to deploying the **Target Warehouse Environment** ensure that the followin
 - [Build the Project](#building-the-project).
 - [Configure Settings](#configuring-settings).
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+This page is currently configured for SQL Server Integration Services (SSIS).
+
+### [ADF](#tab/adf-orchestration)
+
+This page is currently configured for Azure Data Factory (ADF).
+
+***
 
 ### [PowerShell](#tab/deployment-powershell/ssis-orchestration)
 
@@ -597,15 +577,15 @@ Prior to deploying the orchestration ensure that the following steps are complet
 - [Configure Settings](#configuring-settings).
 - [Deploy Target Warehouse Environment](#database-deployment).
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+This page is currently configured for SQL Server Integration Services (SSIS).
+
+### [ADF](#tab/adf-orchestration)
+
+This page is currently configured for Azure Data Factory (ADF).
+
+***
 
 ### [SSIS Project](#tab/orchestration/ssis-orchestration)
 
