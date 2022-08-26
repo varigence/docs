@@ -100,7 +100,7 @@ A Satellite where multiple active records are possible for a `Hub` or `Link` at 
 > [!TIP]
 > For additional details on **Driving Keys** refer to the below articles:
 >
-> * BimlFlex Docs: [Data Vault Driving Keys](xref:bimlflex-data-vault-driving-keys)
+> * [Data Vault Driving Keys](xref:bimlflex-data-vault-driving-keys)
 
 ## Satellite System Column Configuration
 

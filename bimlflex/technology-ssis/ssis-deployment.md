@@ -59,8 +59,7 @@ BimlFlex uses several custom SSIS components in the generated packages. These co
 If the project is deployed using the wrong Visual Studio SSIS Target Server/Version specification there will be errors when running these components.
 
 > [!TIP]
-> For additional details on installing SSIS Custom Components refer to the below guide:  
-> BimlFlex Docs: [BimlFlex SSIS Custom Components](xref:bimlflex-ssis-custom-components)  
+> For additional details please refer to the below guide [BimlFlex SSIS Custom Components](xref:bimlflex-ssis-custom-components) guide.  
 
 ## Project Deployment for SQL Server 2017 Using the Catalog
 
@@ -88,13 +87,8 @@ SSIS 2016 is used in the demo. The Project deployment checkbox is checked so con
 
 ![BimlStudio Project Properties](images/bs-menu-project-configuration.png "BimlStudio Project Properties")
 
-<!--
-![BimlStudio Project Properties](images/bimlstudio-menu-project-configuration.png "BimlStudio Project Properties")
--->
 > [!TIP]
-> For additional details on configuring a BimlStudio project refer to the below guides:  
-> BimlFlex Docs: [BimlFlex - Setup BimlStudio Project](xref:bimlflex-setup-bimlstudio-project)  
-
+> For additional details on configuring a BimlStudio project please refer to the [BimlStudio Project Setup](xref:bimlflex-setup-bimlstudio-project) guide.
 
 ### Step 2: Load BimlFlex Sample Metadata
 
@@ -111,8 +105,7 @@ Import the metadata for all tables in scope of the `SalesLT` schema from the fro
 ![Import Metadata](../metadata-editors/images/bimlflex-app-import-metadata.png "Import Metadata")
 
 > [!TIP]
-> For additional details on importing metadata project refer to the below guide:  
-> BimlFlex Docs: [BimlFlex Importing Metadata](xref:bimlflex-concepts-importing-metadata)  
+> For additional details on importing metadata project refer to the [BimlFlex Metadata Import](xref:bimlflex-concepts-importing-metadata) guide.
 
 ### Step 4: Create Databases and Tables
 
@@ -120,12 +113,8 @@ Create all DW databases and tables from the BimlStudio generated scripts output.
 
 ![BimlStudio - Create Table Scripts](images/bs-context-menu-create-table-scripts.png "BimlStudio - Create Table Scripts")
 
-<!--
-![Create Table Scripts](images/bimlstudio-context-menu-create-table-scripts.png "Create Table Scripts")
--->
 > [!TIP]
-> For additional details on generating the DDL refer to the below guide:  
-> BimlFlex Docs: [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)  
+> For additional details on generating the DDL refer to the below guide [BimlFlex DDL Generation](xref:bimlflex-generating-ddl) guide.
 
 ### Step 5: Define Project Parameters
 
@@ -157,9 +146,10 @@ When the project is opened in Visual Studio the project connection manager can b
 Extension Point files should be named using a consistent naming convention. These files form part of the source code for the project itself and need to be maintained as such. The contents of the Extension Point files are not maintained in the metadata database.
 
 > [!TIP]
-> For additional details on project parameters and extension points refer to the below guides:  
-> BimlFlex Docs: [BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)  
-> BimlFlex Docs: [BimlFlex Extension Points](xref:bimlflex-concepts-extension-points)  
+> For additional details on project parameters and extension points refer to the below guides: 
+>
+> * BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)  
+> * [BimlFlex Extension Points](xref:bimlflex-concepts-extension-points)  
 
 ### Step 6: Build the Projects in BimlStudio
 
@@ -168,9 +158,10 @@ Build command buttons
 ![BimlStudio - Build Project](images/bs-menu-build.png "BimlStudio - Build Project")
 
 > [!TIP]
-> For additional details on the different build methods refer to the below guides:  
-> BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-build-bimlstudio-project  
-> BimlFlex Docs: [Building Using the Command Line](xref:bimlflex-command-line-build)  
+> For additional details on the different build methods refer to the below guides:
+>
+> * [BimlFlex Interactive Build](xref:bimlflex-build-bimlstudio-project  
+> * [Building Using the Command Line](xref:bimlflex-command-line-build)  
 
 ### Step 7: Review the Generated SSIS Projects
 
@@ -229,9 +220,10 @@ The Visual Studio deploy wizard review dialog also provides the command line par
 For automated deployments, this would normally be defined through a script file or a deployment tool.
 
 > [!TIP]
-> For additional details on deployment methods refer to the below guides:  
-> BimlFlex Docs: [Deployment Through the SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-wizard)  
-> BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)  
+> For additional details on deployment methods refer to the below guides:
+>
+> * [Deployment Through the SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-wizard)  
+> * [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)  
 
 ## Opening the Project in Visual Studio 2015 and Deploying to the Catalog
 

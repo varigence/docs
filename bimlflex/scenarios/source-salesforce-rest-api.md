@@ -161,12 +161,11 @@ As such, [Bulk API 2.0 Limits](https://developer.salesforce.com/docs/atlas.en-us
 * Compound address fields or compound geolocations fields
 
 >[!Note]
->
 > Additional links:
 >
-> - [Salesforce: Address Compound Fields](https://developer.salesforce.com/docs/atlas.en-us.188.0.api.meta/api/compound_fields_address.htm)
-> - [Salesforce: Geolocation Compound Field](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_geolocation.htm)
-> - [Salesforce: Compound Field Considerations and Limitations](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_limitations.htm)
+> * [Salesforce: Address Compound Fields](https://developer.salesforce.com/docs/atlas.en-us.188.0.api.meta/api/compound_fields_address.htm)
+> * [Salesforce: Geolocation Compound Field](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_geolocation.htm)
+> * [Salesforce: Compound Field Considerations and Limitations](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_limitations.htm)
 
 ### Accessing Compound Fields with ADF
 

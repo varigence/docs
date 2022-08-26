@@ -50,8 +50,7 @@ There are two main components, the base Linked Service details and then the Conn
 | Connect Via Integration Runtime`*` | (If required) The name of the Integration Runtime to use to connect |
 
 > [!TIP]
->
-> - `*`: This setting is generally only used for an On-Premises data source.
+> `*`: This setting is generally only used for an On-Premises data source.
 
 #### [Example](#tab/ls-example)
 
@@ -61,8 +60,7 @@ There are two main components, the base Linked Service details and then the Conn
 | Connect Via Integration Runtime`*` | AutoResolveIntegrationRuntime    |
 
 > [!TIP]
->
-> - `*`: Use `AutoResolveIntegrationRuntime` if no specific Integration Runtime is needed.
+> `*`: Use `AutoResolveIntegrationRuntime` if no specific Integration Runtime is needed.
 
 ***
 

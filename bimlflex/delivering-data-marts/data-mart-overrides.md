@@ -14,11 +14,11 @@ At a high level, **Configuration** values control where/when they get applied an
 > [!TIP]
 > For additional details on managing **Configuration**, **Attributes** and **Configuration Overrides** refer to the below guides:
 >
-> BimlFlex Docs: [Configurations](xref:bimlflex-configuration-editor)
+> * [Configurations](xref:bimlflex-configuration-editor)
 >
-> BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
+> * [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 >
-> BimlFlex Docs: [Attributes](xref:bimlflex-attribute-editor)
+> * [Attributes](xref:bimlflex-attribute-editor)
 >
 
 ## Common Configurations
@@ -154,9 +154,9 @@ If required, a [**Configuration Override**](#overriding-configurations) can be a
 > [!TIP]
 > For additional details on **Configurations** and their definitions refer to the below guide:
 >
-> BimlFlex Docs: [Configuration Editor](xref:bimlflex-configuration-editor)
+> * [Configuration Editor](xref:bimlflex-configuration-editor)
 >
-> BimlFlex Docs: [Default BimlFlex Configurations](xref:bimlflex-metadata-configurations)
+> * [Default BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 >
 
 ## Overriding Configurations
@@ -449,11 +449,11 @@ Adjust the *PROJECT*, *CONNECTION*, *SCHEMA*, *OBJECT NAME*, and *SOURCE CREATE 
 > Objects are only adjusted or added based on the generated artifacts name.
 > Check your system for the following potential orphaned artifacts and address as needed.
 >
-> - View (Used to load history)
-> - Staging Table
-> - Stored Procedure
-> - DTSX Package
-> - ADF Pipeline
+> * View (Used to load history)
+> * Staging Table
+> * Stored Procedure
+> * DTSX Package
+> * ADF Pipeline
 >
 > Naming pattern for these artifacts differ between environments but generally involve the use of the *PROJECT*, *CONNECTION*, *SCHEMA* and *OBJECT NAME*.
 > When checking for orphaned artifacts ensure you are looking for the prior values, not the current assigned values.

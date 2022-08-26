@@ -222,7 +222,8 @@ Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 
 > [!TIP]
 > For additional details on creating a **Connection** refer to the below guide:  
-> BimlFlex Docs: [Connections](xref:bimlflex-connection-editor)
+>
+> * [Connections](xref:bimlflex-connection-editor)
 
 ### Linked Services (ADF Only)
 
@@ -248,8 +249,9 @@ host=xy12345.west-us-2.azure.snowflakecomputing.com;account=xy12345;user=MyUser;
 
 > [!TIP]
 > For additional details on creating a Linked Service refer to the below guides:  
-> BimlFlex Docs: [Configuring a Linked Service Connection](xref:create-linked-service-connection)  
-> BimlFlex Docs: [Configuring a Linked Service Connection for Snowflake Data Warehouse](xref:linked-service-snowflake)
+>
+> * [Configuring a Linked Service Connection](xref:create-linked-service-connection)  
+> * [Configuring a Linked Service Connection for Snowflake Data Warehouse](xref:linked-service-snowflake)
 
 ## Deploying the target Warehouse Environment
 
@@ -315,5 +317,5 @@ As a final check, please ensure the following configurations were made:
 > [!TIP]
 > For additional details on generating deploying ADF artifacts refer to the below guides:
 >
-> * BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-adf-using-powershell)  
-> * BimlFlex Docs: [Deployment Through the Azure Portal](xref:using-azure-portal)
+> * [Deployment Through PowerShell](xref:bimlflex-adf-using-powershell)  
+> * [Deployment Through the Azure Portal](xref:using-azure-portal)
