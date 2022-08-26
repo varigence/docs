@@ -97,11 +97,11 @@ Alternatively the **Build & Deploy** tab can be selected to click the **Build** 
 >
 > * BimlFlex Docs: [BimlFlex - Setup BimlStudio Project](xref:bimlflex-setup-bimlstudio-project)
 > * BimlFlex Docs: [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)
-> * BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-interactive-build)
+> * BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-build-bimlstudio-project)
 > * BimlFlex Docs: [Building Using the Command Line](xref:bimlflex-command-line-build)
 > * BimlFlex Docs: [BimlFlex Continuous Integration and Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery)
 
-The process outlined is know as an [Interactive Build](xref:bimlflex-interactive-build), but a [Command Line Build](xref:bimlflex-command-line-build) can also be configured to assist with automation and a [Continuous Integration/Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery) framework.
+The process outlined is know as an [Interactive Build](xref:bimlflex-build-bimlstudio-project), but a [Command Line Build](xref:bimlflex-command-line-build) can also be configured to assist with automation and a [Continuous Integration/Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery) framework.
 
 ### Deploy the Solution
 
@@ -430,11 +430,11 @@ Alternatively the **Build & Deploy** tab can be selected to click the **Build** 
 >
 > * BimlFlex Docs: [BimlFlex - Setup BimlStudio Project](xref:bimlflex-setup-bimlstudio-project)
 > * BimlFlex Docs: [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)
-> * BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-interactive-build)
+> * BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-build-bimlstudio-project)
 > * BimlFlex Docs: [Building Using the Command Line](xref:bimlflex-command-line-build)
 > * BimlFlex Docs: [BimlFlex Continuous Integration and Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery)
 
-The process outlined is know as an [Interactive Build](xref:bimlflex-interactive-build), but a [Command Line Build](xref:bimlflex-command-line-build) can also be configured to assist with automation and a [Continuous Integration/Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery) framework.
+The process outlined is know as an [Interactive Build](xref:bimlflex-build-bimlstudio-project), but a [Command Line Build](xref:bimlflex-command-line-build) can also be configured to assist with automation and a [Continuous Integration/Continuous Delivery](xref:bimlflex-adf-continuous-integration-and-continuous-delivery) framework.
 
 ## Deploying Target Warehouse Environment
 

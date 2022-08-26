@@ -24,7 +24,7 @@ The resulting output can then be deployed to the designated environment, for exa
 
 ## Build Options
 
-* [BimlFlex Interactive Build](xref:bimlflex-interactive-build)
+* [BimlStudio Build Process](xref:bimlflex-build-bimlstudio-project)
 * [Building Using the Command Line](xref:bimlflex-command-line-build)
 
 ## Development Approaches

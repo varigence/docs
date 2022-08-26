@@ -11,11 +11,11 @@ A BimlStudio project is used to build and generate the metadata configured in Bi
 
 ## Create the BimlStudio Project
 
-[!include[BimlFlexProject](../build-and-deployment/_incl-header-bimlstudio-project.md)]
+[!include[BimlFlexProject](_incl-header-bimlstudio-project.md)]
 
 ## Connect to the BimlFlex Database
 
-[!include[BimlFlexDatabaseConnection](../build-and-deployment/_incl-header-bimlstudio-connect.md)]
+[!include[BimlFlexDatabaseConnection](_incl-header-bimlstudio-connect.md)]
 
 ## Building Assets
 
@@ -30,17 +30,8 @@ Open the project by double clicking the `.mst` file in the Windows File Explorer
 
 ### Project Settings
 
-[!include[BimlFlexProjectSettings](../build-and-deployment/_incl-header-bimlstudio-project-settings.md)]
+[!include[BimlFlexProjectSettings](_incl-header-bimlstudio-project-settings.md)]
 
-### Build the Project
+#### Build Output
 
-In the application, navigate to the *Build & Deploy* tab and locate the build button.
-Alternatively, users can also use the build icon located in the toolbar. 
-
-![BimlStudio - Build Buttons](images/bs-build-buttons.png "BimlStudio - Build Buttons")
-
-Once the project has built, the user can navigate to the project's output directory and examine their assets.
-
-### Debugging
-
-If the project fails to build, the user can examine the *Output* window at the bottom of the application. This window will display compiler error messages, as well as additional information, like the commands needed to replicate this build [in a command-line setting](xref:bimlflex-command-line-build).
+[!include[BimlFlexProjectSettings](_incl-header-bimlstudio-project-build-output-settings.md)]

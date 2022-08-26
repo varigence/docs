@@ -58,9 +58,9 @@ Open the BimlStudio application and create a new, empty BimlFlex project.
 
 [!include[BimlFlexProjectSettings](../build-and-deployment/_incl-header-bimlstudio-project-settings.md)]
 
-#### Build
+#### Build Output
 
-In the build section, the output locations and options for built artifacts. Use these settings to direct where the output artifacts will be created.
+[!include[BimlFlexProjectSettings](../build-and-deployment/_incl-header-bimlstudio-project-build-output-settings.md)]
 
 #### Target Versions
 

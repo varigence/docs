@@ -166,13 +166,10 @@ Extension Point files should be named using a consistent naming convention. Thes
 Build command buttons
 
 ![BimlStudio - Build Project](images/bs-menu-build.png "BimlStudio - Build Project")
-<!--
-![Build Project](images/bimlstudio-menu-build.png "Build Project")
--->
 
 > [!TIP]
 > For additional details on the different build methods refer to the below guides:  
-> BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-interactive-build)  
+> BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-build-bimlstudio-project  
 > BimlFlex Docs: [Building Using the Command Line](xref:bimlflex-command-line-build)  
 
 ### Step 7: Review the Generated SSIS Projects

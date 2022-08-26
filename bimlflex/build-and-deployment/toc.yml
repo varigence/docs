@@ -2,16 +2,16 @@
   href: index.md
 - name: Configuring a BimlStudio Project for BimlFlex
   href: setup-bimlstudio-project.md  
+- name: Building a BimlStudio Project for BimlFlex
+  href: build-bimlstudio-project.md  
+- name: Command Line Build
+  href: command-line-build.md
 - name: Using SQL Server Data Tools (SSDT)
   href: ssdt-project.md  
 - name: Configuring a Linked Service
   href: create-linked-service-connection.md
 - name: Generating DDL using BimlStudio
-  href: generating-ddl.md
-- name: Interactive Build
-  href: interactive-build.md
-- name: Command Line Build
-  href: command-line-build.md
+  href: generating-ddl.md  
 - name: Concurrent Development
   href: concurrent-development.md
 - name: Continuous Integration and Delivery

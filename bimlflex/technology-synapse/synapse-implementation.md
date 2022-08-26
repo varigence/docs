@@ -503,7 +503,7 @@ Prior to building the project ensure that the following steps is completed:
 > [!TIP]
 > For additional details on PowerShell deployment refer to the below guide:
 >
-> - BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-interactive-build)
+> - BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-build-bimlstudio-project)
 > - BimlFlex Docs: [Building Using the Command Line](xref:bimlflex-command-line-build)
 
 ## Database Deployment
