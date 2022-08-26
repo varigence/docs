@@ -1,5 +1,7 @@
 - name: Overview
   href: index.md
+- name: Configuring a Linked Service
+  href: create-linked-service-connection.md  
 - name: Landing Area
   href: landing-area.md
 - name: ADF Deployment Guide

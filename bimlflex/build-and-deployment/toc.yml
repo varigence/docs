@@ -8,8 +8,6 @@
   href: command-line-build.md
 - name: Using SQL Server Data Tools (SSDT)
   href: ssdt-project.md  
-- name: Configuring a Linked Service
-  href: create-linked-service-connection.md
 - name: Generating DDL using BimlStudio
   href: generating-ddl.md  
 - name: Concurrent Development
