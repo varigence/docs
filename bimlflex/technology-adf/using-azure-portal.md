@@ -9,7 +9,7 @@ varigenceArticleType: Conceptual
 
 Once the Azure Data Factory (ADF) artifacts are generated, the next step in the process is to deploy them. The recommended practice is to use the automated deployment process outlined in the [PowerShell Deployment Guide](xref:bimlflex-adf-using-powershell). However, all assets are provided for a manual deployment via the [Azure Portal](https://portal.azure.com).  
 
-This document covers the manual deployment process of the ARM templates using the Azure Portal](https://portal.azure.com).
+This document covers the manual deployment process of the ARM templates using the [Azure Portal](https://portal.azure.com).
 
 > [!IMPORTANT]
 > PowerShell, along with the Azure cmdlets, is required in order to use the generated PowerShell script. BimlFlex will automatically generate the commands needed to both install the cmdlets and connect to specified environment. If further details on the generated commands are needed, or to create these commands manually, refer to the articles below.  
@@ -59,7 +59,7 @@ Click 'Save'. From here, select the resource group, review the terms and conditi
 The deployment of the ADF assets using the `Azure Portal` should now be successful. Navigating to the Data Factory and opening the `ADF Authoring Tool` should now show the Pipeline(s) available to be tested and verified as needed.
 
 >[!NOTE]
-> Your Data Factory will be either be named `ADF-<HashKey>`, or it will use the `Settings.AzureDataFactoryName`.
+> Your Data Factory will be either be named `ADF-<HashKey>`, or it will use the `Azure Data Factory Name` setting value.
 
 ## Post Deployment
 
