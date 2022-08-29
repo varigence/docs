@@ -18,6 +18,14 @@ In the treeview, the total number of items within an individual component will b
 Any instance of the <img class="icon-inline" src="images/svg-icons/navigate.svg"/> icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Project**, **Connection** or **Object**.
 
+The treeview side-panel contains a number of buttons and features that can be interacted with:
+
+| Icon | Action | Description |
+|-|-|-| 
+| <div class="icon-col m-5"><img src="images/svg-icons/add.svg"/></div> | Add | **Add** will create a new entity. The exact entity depends on which editor is active. |
+| <div class="icon-col m-5"><img src="images/svg-icons/expanded.svg"/></div> | Collapse | *Collapse* will cycle through the the various supported modes the Entity List can have.  Options are Full Panel, Split Panels, and Hidden. |
+| <div class="icon-col m-5"><img src="images/svg-icons/collapsed.svg"/></div> | Expand | *Expand* will cycle through the the various supported modes the Entity List can have.  Options are Hidden, Split Panels, and Full Panel. |
+
 ## Context Sensitive
 
 ### Connection Treeview
