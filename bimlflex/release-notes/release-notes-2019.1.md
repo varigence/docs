@@ -79,7 +79,7 @@ download links to this build:
 * Update: BimlFlex App: Allow `Ctrl+S` (Save) shortcut key combination on all metadata screens to save changes
 * Update: BimlFlex App: Allow add and remove record source on Link Satellites
 * Update: BimlFlex App: Metadata Import uses table chunking and provides better progress feedback.
-* Update: BimlFlex App: Fix issue where deselecting on sub type in Tree View deselects all
+* Update: BimlFlex App: Fix issue where deselecting on sub type in treeview deselects all
 * Update: BimlFlex App: updates to error notifications from SQL with more helpful information
 * Update: BimlFlex App: Default version selection on customer change now use the `IsCurrent` flag
 * Update: BimlFlex App: Updated to prevent Object.Columns.Object circular references

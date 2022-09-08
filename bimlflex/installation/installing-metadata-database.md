@@ -14,7 +14,6 @@ Modelers, analysts and data team members use the BimlFlex App to model and inter
 > [!IMPORTANT]
 > The BimlFlex database contains crucial data for the data warehouse automation process. It is important maintain a strict disaster recovery policy for this database.
 
-
 There are two different methods used to install the repository databases. The first option is to use the BimlFlex installer. The second option is to use BimlStudio.
 
 ## Installation

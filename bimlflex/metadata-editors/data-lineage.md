@@ -40,7 +40,7 @@ Selecting **Objects** in the **Treeview** will add these objects to the canvas, 
 * If you select **Objects** from a **Connection** with a `Source System` **Integration Stage** the upstream (outgoing) objects will be displayed on the canvas
 * If you select **Objects**  where the associated **Connection** has the **Integration Stage** of `Raw Data Vault` or `Data Mart`, then the downstream (incoming) objects will be made visible
 
-The context-aware actions that the Data Lineage Designer allows will sometimes also check or un-check objects in the Treeview to produce the right visual.
+The context-aware actions that the Data Lineage Designer allows will sometimes also check or un-check objects in the treeview to produce the right visual.
 
 ## Context Specific Actions
 

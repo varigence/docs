@@ -18,16 +18,8 @@ One of the advantages of using Data Flows, aside from the visual representation 
 
 Also, and especially in data lake scenarios, they offer a way to manage where the compute takes place without requiring additional compute clusters.
 
-# Available Features
+# Using Mapping Data Flows
 
-Mapping Data Flows are currently in preview, as part of the 2022 R1 release of BimlFlex. This means that both documentation and features are being expanded on.
+Mapping Data Flows support for BimlFlex is continued to be rolled out. This means that both documentation and features are being expanded on.
 
-The current features are that:
-
-* The Biml language fully supports Mapping Data Flows, and BimlStudio can be used for any ADF and Mapping Data Flow development
-* BimlFlex supports the `Azure Mapping Data Flows` **Integration Stage** which directs the framework to generate Mapping Data Flow outputs. This can be defined in the [**Project Editor**](xref:bimlflex-project-editor)
-* The following patterns are supported:
-  * Source to Staging
-  * Staging to Persistent Staging (optional)
-  * Staging to Data Vault
-  * Data Vault to Data Mart
+In most ways, using Data Flows in BimlFlex works similarly to configuring solutions for Azure Data Factory. The difference is, in order for the BimlFlex engine to generate Data Flows the **Integration Stage** for the [**Project**](xref:bimlflex-project-editor) must be set to `Azure Mapping Data Flows`.

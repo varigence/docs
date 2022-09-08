@@ -7,145 +7,64 @@ varigenceArticleType: Walkthrough
 ---
 # Initial Configuration
 
-The initial setup of BimlFlex include the steps to set up the full development environment:
+Once the BimlFlex installation is completed, it is time to set up the environment for a BimlFlex project. The initial setup of BimlFlex include the steps to set up the full development environment:
 
-* Creating the project
-* Connecting to the databases
-* Loading the Sample Metadata
-
-These steps are required for the full BimlFlex framework to work.
-
-Once the BimlFlex installation is completed, it is time to set up the environment for a BimlFlex project.
-
-The development workflow is focused around the BimlFlex App and the BimlStudio-based BimlFlex project.
-
-> [!NOTE]
-> Complete the **Setup** first  
-> More information: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
-
-## BimlStudio project
-
-Open the BimlStudio Application and create a new, empty BimlFlex project.
-
-BimlStudio and BimlFlex Excel Add-in will prompt for a License Key the first time a new installation starts.
-
-If a trial key is required, please contact Varigence BimlFlex Support at [support@bimlflex.com](mailto:support@bimlflex.com).
-
-### Video Walkthrough
-
-![BimlFlex Initial Configuration](https://www.youtube.com/watch?v=qhDTwv-jYKc?rel=0&autoplay=0)
-
-### Creating the BimlFlex project
-
-From the start page, create a new **BimlFlex Project**
-
-![Create New Project](images/new-bs-project-screen.png "Create New Project")
-
-Options for creating a new BimlFlex Project. Place the project in a suitable folder, the folder will contain source code for the project and should be managed through a source control system.
-
-![New BimlFlex Project](images/bfx-my-first-project.png "New BimlFlex Project")
-
-Once the project is created, it is possible to open it from the folder by opening the project file, or by opening the project from BimlStudio.
-
-![Empty Project](images/bs-new-project-screen.png "Empty Project")
-
-### Connect to the BimlFlex Database
-
-The BimlFlex project in BimlStudio communicate with the BimlFlex BimlFlex database.
-
-The databases are created and updated through the BimlFlex installer. It is also possible to set up the databases from the BimlFlex ribbon tab in BimlStudio.
-
-More information, creating the database through the installer: [Installing BimlFlex](xref:bimlflex-setup-installing-bimlflex)
-
-More information, creating the database through BimlStudio: [BimlFlex Metadata Database Installation](xref:bimlflex-setup-metadata-database-installation)
-
-### Creating Customer
-
-The **Customer** entity holds a set of metadata in the BimlFlex database and can be used to identify different projects, versions, customers, variations.
-
-A **Customer** can have multiple versions of the related metadata. An initial Version is created with the Customer. Throughout a project, it is possible to progress through multiple different versions.
-
-It is recommended that the **BimlStudio Project** and the **Metadata Customer** has the same name.
-
-The Customer can be created through:
-
-* BimlStudio > BimlFlex Ribbon > Open Bundle > New Customer
-* BimlFlex App > Settings Pane > New Customer
-* BimlFlex Excel Add-in > BimlFlex Ribbon > Metadata Connection pane > New Customer
-
-Set up the connection information to the BimlFlex database.
-
-Use the **New Customer** option in the BimlFlex App to add the Customer to the Database
-
-![Create Customer](images/bimlflex-ss-v5-app-create-customer.png "Create Customer")
+* Connecting to the BimlFlex database
+* Loading sample metadata (optional)
+* Creating the BimlStudio project
 
 ## BimlFlex App
 
-The BimlFlex App is used to manage the metadata for the BimlFlex solution.
+[!include[Dashboard](../metadata-editors/_incl-header-dashboard.md)]
+[!include[BimlFlex](../metadata-editors/_incl-header-bimlflex-app.md)]
 
-![BimlFlex App](images/bfx-dashboard-new.png "BimlFlex App")
+## Metadata Connection
 
-## BimlFlex App Metadata Connection
-
-Start the BimlFlex App and configure it to connect to the BimlFlex database.
+To begin designing your data solution, start the BimlFlex App and configure it to connect to the BimlFlex database.
 
 ![BimlFlex App Setup Pane](images/bfx-new-connection.png "BimlFlex App Setup Pane")
 
-The BimlFlex app allows easy metadata management and provides features such as metadata import and graphical Data Vault acceleration.
+Set up the Connection through the **Database Setup Pane**, which can be accessed from the **Database Settings Cog** in the top menu bar. The database setup pane contains options to specify connectivity to the BimlFlex database. The **Update Button** can be pressed to refresh the database contents when connection details have been modified.
 
-The BimlFlex app has a connection to the BimlFlex Database, the customer and the version.
+Once connection has been established, a new [**Customer**](xref:bimlflex-concepts-customer) can be created. Or, an existing Customer and [**Version**](xref:bimlflex-concepts-version) can be selected.
 
-Set up the Connection through the Setup Pane, accessed from the Settings Cog in the top right corner
+### New Customer Creation
 
-More information: [Metadata Editors Overview](xref:metadata-editors-overview)
+[!include[NewCustomer](../metadata-editors/_incl-header-new-customer.md)]
 
-## BimlFlex App Reports Connection
+### Load Sample Metadata
 
-The BimlFlex App has a Reports function that can connect to a BimlCatalog database and show execution information.
+[!include[Samples](_incl-header-samples.md)]
 
-Set up the required connections through the **Select BimlCatalog Connection** option in the App.
+## BimlStudio Configuration
 
-View Reports in the **Reports** Page in the App
+With the BimlFlex database available, and a new customer created, the metadata can be connected to via BimlStudio so that the metadata can be compiled into the various data solution artifacts - table scripts, procedures and data logistics processes.
 
-More information: [BimlFlex Operational Reports](xref:bimlflex-operational-reports)
+Open the BimlStudio application and create a new, empty BimlFlex project.
 
-## Excel Add-in Metadata Editor
+> [!NOTE]
+> BimlStudio and the BimlFlex Excel Add-in will prompt for a License Key the first time a new installation starts.
+> If a trial key is required, please contact Varigence BimlFlex Support at [support@bimlflex.com](mailto:support@bimlflex.com).
 
-The Excel-based Metadata Editor is opened from the BimlFlex Ribbon tab in BimlStudio. The Excel Add-in provides an optional environment for bulk-editing metadata.
+### Creating the BimlFlex project
 
-![New project in Excel](images/bimlflex-ss-v5-excel-new-project.png "New project in Excel")
+[!include[BimlFlexProject](../build-and-deployment/_incl-header-bimlstudio-project.md)]
 
-The BimlFlex Excel metadata editor comes with an additional Excel tab in the Ribbon for interacting with BimlFlex.
+### Connect to the BimlFlex Database
 
-Configure the BimlFlex database connection in the **Metadata Connection** pane and connect to the BimlFlex Database.
-
-Once the connection is defined the metadata can be read into Excel. The main data is stored in the database and the working set is cached and displayed in Excel. The data is not updated in real-time. It is important to commit changes to the database and to communicate within the development team to synchronize changes to the Metadata.
-
-Retrieve all metadata into Excel by clicking the `Get All Entities` and `Get All Settings` buttons in the Excel BimlFlex Ribbon UI.
-
-More information: [Bulk Edit Overview](xref:bimlflex-excel-add-in)
-
-## Configuration
-
-This step includes the required and optional configurations available for the BimlFlex framework.
+[!include[BimlFlexDatabaseConnection](../build-and-deployment/_incl-header-bimlstudio-connect.md)]
 
 ### BimlStudio Project Settings
 
-The BimlStudio project options include settings such as the target SQL Server, SSIS versions, project, or package deployments for SSIS. Most of these are optional to change, but the target version and deployment method needs to be correct for the packages to open correctly in Visual Studio and run correctly on the destination SSIS server.
+[!include[BimlFlexProjectSettings](../build-and-deployment/_incl-header-bimlstudio-project-settings.md)]
 
-![BimlStudio Project Configuration](images/bimlstudio-vid-v5-project-settings.gif "BimlStudio Project Configuration")
+#### Build Output
 
-#### Biml Engine
-
-The Engine to use (bimlc.exe/MSBuild) as well as their respective paths and options.
-
-#### Build
-
-Output locations and options for built artifacts.
+[!include[BimlFlexProjectSettings](../build-and-deployment/_incl-header-bimlstudio-project-build-output-settings.md)]
 
 #### Target Versions
 
-The target versions to use. Update these to match the target architecture.
+In the target version section, the correct versions of the technical environment can be specified. These settings will direct the Biml compiler to output the generated artifacts in a way that matches the version, so these settings should match the target architecture.
 
 SQL and DDL
 
@@ -154,7 +73,7 @@ SQL and DDL
 
 Data Integration
 
-* ADF Build Mode, ADF can be managed through multiple, separate .json files or Azure ArmTemplate files
+* ADF Build Mode. ADF can be managed through multiple, separate JSON files or Azure ArmTemplate files
 * SSIS, the SSIS Server version to build for
 * Use Project Deployment, should the build spawn Project Deployment ready projects and packages. This is the preferred deployment methodology for SSIS since SQL Server 2012
 
@@ -162,13 +81,3 @@ SQL Server Analysis Services
 
 * SSAS Multidimensional, not included in BimlFlex projects
 * SSAS Tabular, not included in BimlFlex projects
-
-#### Options
-
-Generic Editor options
-
-#### Externals
-
-Paths and arguments to external tools
-
-Once all settings are completed, restart BimlStudio and reopen the BimlFlex project to load the metadata.

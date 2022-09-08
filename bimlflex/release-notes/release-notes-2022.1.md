@@ -68,7 +68,7 @@ Additional information here: [BimlFlex 2022 R1 New Features](xref:bimlflex-2022-
 ### UI Improvements
 
 * Major overhaul of the BimlFlex application, resulting in an increase of responsiveness across all areas, as well as improvements in consistency, parity, and ease-of-use for visual editors: Data Vault Accelerator, Schema Diagram, and the new Business Modeling feature.
-* Updated the tree view on all metadata editor screens, showing additional detail and more meaningful icons.
+* Updated the treeview on all metadata editor screens, showing additional detail and more meaningful icons.
 * Introduced an improved `Add` feature that streamlines the creation of new metadata such as **Projects**, **Batches** and **Connections**.
 It is no longer necessary to navigate away if dependent objects are required, as these can now be created directly.
 * Archiving objects now correctly applies to all objects for which the respective object is the parent.
@@ -184,7 +184,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 ### Data Vault Accelerator (Bug Fixes)
 
 * Fixed a bug causing errors when combining Accelerate Link Satellite Keys and Delete Detection settings.
-* Fixed a bug where tree view showed excluded items.
+* Fixed a bug where treeview showed excluded items.
 * Fixed a bug where HUB or LINK Object context menus were blank.
 * Fixed a bug where target pane did not show all available Sources.
 * Fixed a bug where `RecordSource` was missing for Satellites.
@@ -229,7 +229,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 * Fixed a bug where blob storage staging for on-premises adds tables to model, but did not create staging/psa tables.
 * Fixed a bug where setting the Auto Adjust Buffer Size did not work when using Visual Studio 2019.
 * Fixed a bug related to the `RowIsDeleted` configuration. This used the value 1 as default. This has been updated to use 0 as default value.
-* Fixed a bug in the tree view that caused `Add Object` to apply the `Object Type` from the previously selected object.
+* Fixed a bug in the treeview that caused `Add Object` to apply the `Object Type` from the previously selected object.
 * Fixed a bug where reference (`REF`) tables contained columns that were marked as excluded.
 * Fixed a bug which prevented users to archive two or more objects at the same time.
 * Fixed a bug causing BimlStudio to report errors when a Dynamics Linked Service Authentication Method AAD Service principal is selected.

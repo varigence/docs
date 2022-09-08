@@ -13,7 +13,7 @@ For on-premises loads it is possible to use either the ETL load pattern or the E
 
 Sample metadata for Data Mart load scenarios for the supported project types is included in BimlFlex.
 
-More information: [Load Sample Metadata](xref:bimlflex-getting-started-sample-metadata)
+More information: [Load Sample Metadata](xref:bimlflex-sample-metadata)
 
 ## Project Configuration
 

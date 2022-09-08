@@ -1,5 +1,9 @@
 ---
+uid: bimlflex-ssis-overview
 title: SSIS Deployment Overview
+summary: Overview of the version concept in BimlFlex
+varigenceProduct: BimlFlex
+varigenceArticleType: Conceptual
 ---
 # SSIS Deployment Overview
 

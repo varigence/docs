@@ -11,7 +11,7 @@ The BimlFlex [Batch](xref:bimlflex-app-reference-documentation-Batches) and [Pro
 
 In BimlFlex, a Batch definition ultimately governs which data logistics processes are executed in the same group or container. A Batch can belong to more than one Project, and Projects themselves can be configured as a hierarchy (using the Parent Project concept).
 
-The Project property [Integration Template](xref:bimlflex-concepts-integration-template) directs the technical delivery; how data transformation code will be generated, and for what target platform.
+The Project property [Integration Template](xref:bimlflex-metadata-static-values#integration-templates) directs the technical delivery; how data transformation code will be generated, and for what target platform.
 
 This page intends to provide an overview of the concepts at play when building and deploying BimlFlex-generated ADF components, and explain why they appear in ADF the way they do.
 

@@ -8,10 +8,6 @@ varigenceArticleType: Conceptual
 
 # Microsoft Azure Synapse Overview
 
-<!-- TODO: Intro: Speak briefly to what Azure Synapse is. -->
-
-<!-- TODO: TIP: Link to Microsoft Synapse Documentation -->
-
 ## Orchestration Method
 
 BimlFlex supports Microsoft Azure Synapse across both SQL Server Integration Services (SSIS) and Azure Data Factory (ADF).
@@ -32,18 +28,6 @@ This page is currently configured for SQL Server Integration Services (SSIS).
 This page is currently configured for Azure Data Factory (ADF).
 
 ***
-
-<!-- ## High Level Architecture
-
-### [SSIS Architecture](#tab/architecture/ssis-orchestration)
-
-TODO: SSIS Architecture Diagram
-
-### [ADF Architecture](#tab/architecture/adf-orchestration)
-
-TODO: ADF Architecture Diagram
-
-*** -->
 
 ## Assumptions and Prerequisites
 
@@ -87,13 +71,9 @@ Select a tab to view field descriptions and an example configuration for a **Con
 A **BimlFlex Connection** is configured by logical role.
 If the same physical database is to participate in multiple **Integration Stages** then a **BimlFlex Connection** will need to be configured for each.
 
-When using Azure Synapse as the **Target Warehouse Environment** it is recommended`*` that you use the same database for storage and separate the layers via schema and naming conventions.
-
-> `*`: Unless specific organizational or architectural concerns are preventing such.
+When using Azure Synapse as the **Target Warehouse Environment** it is recommended`*` that you use the same database for storage and separate the layers via schema and naming conventions, unless specific organizational or architectural concerns are preventing this.
 
 This may result in the **Staging Area**, **Persistent Staging Area**, **Raw Data Vault** and **Data Mart** all pointing to the same database.
-
-<!-- TODO: Create a Staged Query guide and link to it. -->
 
 ### Connection Details
 
@@ -104,19 +84,17 @@ These may be a mandatory settings or an alternate use for a shared field.
 These focus more on "how" the **Connection** is used.
 
 > [!TIP]
-> For additional details on creating a **Connection** refer to the below guide:
->
-> - BimlFlex Docs: [Connections](xref:bimlflex-connection-editor)
+> For additional details on creating a **Connection**, please refer to the [**Connection Editor**](xref:bimlflex-connection-editor).
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+ This page is currently configured for SQL Server Integration Services (SSIS).
+
+ ### [ADF](#tab/adf-orchestration)
+
+ This page is currently configured for Azure Data Factory (ADF).
+
+ ***
 
 #### [SSIS Specific](#tab/orchestration-specific/ssis-orchestration)
 
@@ -196,17 +174,10 @@ Viewing configuration for a **Data Mart**.
 | Persist History`*` | `true`: store history in the *PERSISTENT STAGE CONNECTION*; `false`: store only latest change in the *PERSISTENT STAGE CONNECTION* |
 
 > [!IMPORTANT]
->
-> - Persist History`*`: Requires a **Project** that with a *PERSISTENT STAGE CONNECTION* to use.
->   - If not *PERSISTENT STAGE CONNECTION* is present this checkbox will not impact the **Project**.
+> Persist History`*` requires a **Project** with a **Persistent Stage Connection** defined.
 
 > [!TIP]
-> When using ADF an additional **Landing Area** will need to be configured.
->
-> For additional details on how create a Landing Area Connection refer to the following guide:
->
-> - BimlFlex Docs: [Configure Azure Data Factory Landing Area](xref:bimlflex-adf-landing-area)
-
+> When using ADF an additional **Landing Area** will need to be configured. For additional details on how create a Landing Area Connection refer to the [Azure Data Factory Landing Area Example](xref:bimlflex-adf-landing-area).
 
 #### [Example](#tab/connection-example/src)
 
@@ -269,11 +240,7 @@ Viewing configuration for a **Data Mart**.
 | PolyBase Connection | {Empty}                                                                                      |
 
 > [!TIP]
-> This is used in conjunction with a **Landing Area** to indicate the location to use for a PolyBase load.
->
-> For additional details on how create a Landing Area Connection refer to the following guide:
->
-> - BimlFlex Docs: [Configure Azure Data Factory Landing Area](xref:bimlflex-adf-landing-area)
+> This is used in conjunction with a **Landing Area** to indicate the location to use for a PolyBase load. For additional details on how create a Landing Area Connection please refer to the [Azure Data Factory Landing Area Example](xref:bimlflex-adf-landing-area).
 
 #### [Example](#tab/connection-example/ply)
 
@@ -392,15 +359,15 @@ Linked Services are used in Azure Data Factory to define a data source.
 
 To configure a **Linked Service** select a **Connection** and `enable` the *CLOUD* selector at the top.
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+This page is currently configured for SQL Server Integration Services (SSIS).
+
+### [ADF](#tab/adf-orchestration)
+
+This page is currently configured for Azure Data Factory (ADF).
+
+***
 
 ### ADF Linked Service
 
@@ -410,8 +377,8 @@ For details on configuration, please refer to the links below.
 > [!TIP]
 > For additional details on creating a Linked Service refer to the below guides:
 >
-> - BimlFlex Docs: [Configuring a Linked Service Connection](xref:create-linked-service-connection)
-> - BimlFlex Docs: [Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse](xref:linked-service-adf-sql-datawarehouse)
+> * [Configuring a Linked Service Connection](xref:create-linked-service-connection)
+> * [Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse](xref:linked-service-adf-sql-datawarehouse)
 
 #### [Linked Service: N/A](#tab/ls-connection-na/ssis-orchestration)
 
@@ -442,15 +409,15 @@ BimlFlex **Settings** are used for environment details and orchestration configu
 
 The below **Settings** only need to be configured when using Azure Synapse as the **Target Warehouse Environment**.
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+This page is currently configured for SQL Server Integration Services (SSIS).
+
+### [ADF](#tab/adf-orchestration)
+
+This page is currently configured for Azure Data Factory (ADF).
+
+***
 
 ### Mandatory Settings
 
@@ -505,8 +472,8 @@ Prior to building the project ensure that the following steps is completed:
 > [!TIP]
 > For additional details on PowerShell deployment refer to the below guide:
 >
-> - BimlFlex Docs: [BimlFlex Interactive Build](xref:bimlflex-interactive-build)
-> - BimlFlex Docs: [Building Using the Command Line](xref:bimlflex-command-line-build)
+> * [BimlFlex Interactive Build](xref:bimlflex-build-bimlstudio-project)
+> * [Building Using the Command Line](xref:bimlflex-command-line-build)
 
 ## Database Deployment
 
@@ -518,15 +485,15 @@ Prior to deploying the **Target Warehouse Environment** ensure that the followin
 - [Build the Project](#building-the-project).
 - [Configure Settings](#configuring-settings).
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+This page is currently configured for SQL Server Integration Services (SSIS).
+
+### [ADF](#tab/adf-orchestration)
+
+This page is currently configured for Azure Data Factory (ADF).
+
+***
 
 ### [PowerShell](#tab/deployment-powershell/ssis-orchestration)
 
@@ -546,7 +513,7 @@ Aside from the possible inclusion of the EXTERNAL TABLE scripts, the process is 
 > [!TIP]
 > For additional details on PowerShell deployment refer to the below guide:
 >
-> BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)
+> * [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)
 
 ### [PowerShell](#tab/deployment-powershell/adf-orchestration)
 
@@ -560,9 +527,7 @@ The SSDT project will have all the required tables, stored procedures and Data V
 > The generated SSDT project does not contain any configuration information for Azure settings and will be created with whatever default Microsoft is currently using for *Performance Level*.
 
 > [!TIP]
-> For additional details on PowerShell deployment refer to the below guide:
->
->   - BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)
+> For additional details on PowerShell deployment refer to the guide covering [deployment through PowerShell](xref:bimlflex-ssis-using-powershell).
 
 ### [Generated DDL](#tab/deployment-ddl)
 
@@ -572,9 +537,7 @@ Azure Synapse tables are required to be created by `Azure Synapse Table Script` 
 Additionally if using the PolyBase Architecture, the `PolyBase External Table Script` will need to be ran to generate the CREATE EXTERNAL TABLE scripts.
 
 > [!NOTE]
-> Ensure you configure the below settings is using the `PolyBase External Table Script`:
->
-> - [SSDT\Synapse SSDT Artifacts](xref:bimlflex-app-reference-documentation-settings-index)
+> Ensure the below settings are using the `PolyBase External Table Script`
 
 The below table has been provided as a quick reminder as to when a script should be generated.
 
@@ -589,17 +552,16 @@ The below table has been provided as a quick reminder as to when a script should
 | Business Vault Procedure Script  | When using PIT or Bridge Tables                 |
 
 > [!TIP]
-> For additional details on generating DDL refer to the below guide:
->
-> - BimlFlex Docs: [BimlFlex Generating DDL](xref:bimlflex-generating-ddl)  
+> For additional details on generating DDL refer to the [BimlFlex DDL generation](xref:bimlflex-generating-ddl) guide.
 
 Once BimlFlex generates the scripts they can be executed against the target database.
 These can be deployed through copy/paste using a SQL Server Management Studio or by another script execution clients if so desired.
 
 > [!TIP]
-> For additional details on installing or using SSMS refer to the below guides:  
-> Microsoft Docs: [Download SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)  
-> Microsoft Docs: [What is SQL Server Management Studio (SSMS)?](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms)  
+> For additional details on installing or using SSMS refer to the below guides:
+>
+> * Microsoft Docs: [Download SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)  
+> * Microsoft Docs: [What is SQL Server Management Studio (SSMS)?](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms)  
 
 ***
 
@@ -615,15 +577,15 @@ Prior to deploying the orchestration ensure that the following steps are complet
 - [Configure Settings](#configuring-settings).
 - [Deploy Target Warehouse Environment](#database-deployment).
 
-> ### [SSIS](#tab/ssis-orchestration)
->
-> This page is currently configured for SQL Server Integration Services (SSIS).
->
-> ### [ADF](#tab/adf-orchestration)
->
-> This page is currently configured for Azure Data Factory (ADF).
->
-> ***
+### [SSIS](#tab/ssis-orchestration)
+
+This page is currently configured for SQL Server Integration Services (SSIS).
+
+### [ADF](#tab/adf-orchestration)
+
+This page is currently configured for Azure Data Factory (ADF).
+
+***
 
 ### [SSIS Project](#tab/orchestration/ssis-orchestration)
 
@@ -633,8 +595,8 @@ Refer to the below guides for common deployment methods.
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:
 >
-> -BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)
-> -BimlFlex Docs: [Deployment Through the SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-wizard)
+> * [Deployment Through PowerShell](xref:bimlflex-ssis-using-powershell)
+> * [Deployment Through the SSIS Deployment Wizard](xref:bimlflex-ssis-deployment-wizard)
 
 ### [Azure Resources](#tab/orchestration/adf-orchestration)
 
@@ -643,5 +605,5 @@ The process of deploying the Azure Resources itself remains unchanged.
 > [!TIP]
 > For additional details on generating deploying ADF artifacts refer to the below guides:
 >
-> - BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-adf-using-powershell)  
-> - BimlFlex Docs: [Deployment Through the Azure Portal](xref:using-azure-portal)  
+> * [Deployment Through PowerShell](xref:bimlflex-adf-using-powershell)
+> * [Deployment Through the Azure Portal](xref:using-azure-portal)

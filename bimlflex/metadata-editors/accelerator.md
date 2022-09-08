@@ -7,88 +7,59 @@ varigenceArticleType: Reference
 ---
 # Data Vault Accelerator
 
-This guide provides information on using the BimlFlex Data Vault **Accelerator**, and assumes a sound understanding of the [**Data Vault**](xref:bimlflex-data-vault-index) modeling approach.
+[!include[Accelerator](_incl-header-accelerator.md)]
 
-The Accelerator initially provides a quick-start and best effort, technical modeling of (raw) Data Vault constructs based on the data source metadata that can then be configured to define the final model. It is a graphical user interface in the BimlFlex app that allows the modeler to create and modify the target raw Data Vault from source objects and from other modeled entities, such as views.
+> [!NOTE]
+> For a quick overview, please watch the [BimlFlex Data Vault Accelerator Introduction Video](https://www.youtube.com/watch?v=<placeholder>?rel=0&autoplay=0)
 
-The Accelerator will use the available source metadata to suggest an initial raw Data Vault. The modeler then manipulates the metadata to tweak the target Data Vault into the intended outcome. This includes using Business Names or [**Business Modeling**](xref:bimlflex-business-modeling) to create the correct names and entities in the target model, defining the target object to be created (Hub, Link, Satellite, reference etc.), and grouping and splitting entities, relationships, or attributes as needed.
+## Defining the Target Model
 
-Multiple relationships can be grouped together to create a single unit of work, or split back into multiple links. Attributes can be split into multiple Satellites or grouped back into a single Satellite.
+Before starting the Data Vault design process, it is important to have an understanding of the expected target model, as well as how the source data should be loaded into this target. BimlFlex supports this through the [**Business Modeling**](xref:bimlflex-business-modeling) feature. This helps define an initial model that is agnostic to the available data sources.
 
-It is configurable and provides a live preview of the target Data Vault while modeling. The Accelerator can be rerun as many times as necessary for incremental modeling and rapid generation and regeneration of Data Vault artifacts.
+Ideally, this target Data Vault model has the following characteristics:
 
-It is important to remember that the Data Vault modeling approach is based around **Core Business Concepts** (CBC) that are built upon **Integration Keys** or **Enterprise-Wide Business Keys** (EWBK) to allow for inter-system integrations. These Integration Keys are normally added to the source objects as part of the Data Vault modeling process.
+* Source agnostic
+* Aligned with the business process
+* Based on Core Business Concepts
+* Describes events and transactions through the relationships between the Core Business Concepts
 
-The Accelerator makes it easy to get started and iterate through variations so that the analysts and subject matter experts can validate and tune the model to best match business processes using the iterative approach and the graphical representation of the model in the Accelerator.
+The Accelerator always (re)creates the Data Vault model using the source object metadata. This metadata is initially imported using the [**Metadata Importer**](xref:bimlflex-concepts-importing-metadata), or entered manually. This also includes objects that are specifically defined to act as source, such as **Staged Queries**.
 
-For a quick introduction, please watch the following video:
+This means that any modifications made to the source object, either via the Accelerator or by directly manipulating the object, are always stored against the source object. This is referred to as _source metadata decoration_. The Data Vault model is always generated based on the source object metadata.
 
-![BimlFlex Data Vault Accelerator](https://www.youtube.com/watch?v=<placeholder>?rel=0&autoplay=0)
+Once changes are made, compare the accelerated metadata with the expected outcome, and tweak accordingly.
 
-## Starting Point
+### Source Metadata Decoration
 
-The BimlFlex Data Vault Accelerator creates the Data Vault model based on metadata existing in the App. This metadata is initially imported using the [**Metadata Importer**](xref:bimlflex-concepts-importing-metadata) or entered manually.
+By enhancing the source object with additional Accelerator information, it is possible to load the Data Vault directly from the staged data from the source. This is used when the source representation somewhat matches the Data Vault Target model. An example is a source table with Product information that should be loaded to a Product Hub and a Product Satellite. By decorating the source object metadata with additional attributes, such as the Business Name, the Accelerator can create the Data Vault straight from the source. This is a straight-forward and convenient way to model and load the Data Vault without requiring additional metadata entities.
 
- The metadata importer imports source object, their key definitions, and their relationships. This can be used in the Data Vault modeling to create the initial raw Data Vault.  
-
- The initial metadata is generally imported from a source system, however the BimlFlex accelerator also allows direct acceleration from an object (such as an imported view) through the **Staged Query** approach.
-
-### Source metadata decoration
-
-By decorating the source metadata with additional information for the Accelerator, it is possible to load the Data Vault directly from the staged data from the source. This is used when the source representation somewhat matches the Data Vault Target model. An example is a source table with Product information that should be loaded to a Product Hub and a Product Satellite. By decorating the source object metadata with additional attributes, such as the Business Name, the Accelerator can create the Data Vault straight from the source. This is a straight-forward and convenient way to model and load the Data Vault without requiring additional metadata entities.
-
-### Staged Query metadata acceleration
+### Using Staged Queries
 
 If the Data Vault modeling and load requirements are more complex, BimlFlex allows the use of a Staged Query object to load the Data Vault. This is often used when the source data needs to be manipulated before it is fit for loading to the Data Vault. Some examples where this is used could be when the data from multiple tables needs to be joined for a complete dataset for the Data Vault load, or when a source table contains multiple entities that should be split into multiple Data Vault loads.
 
-## The Source and Target Model
+## Accelerating the Data Vault
 
-The Accelerator derives the initial model information from source metadata. Based on this, a modeler with enterprise knowledge translates the data and events into a source-system agnostic Data Vault model.
+Based on the available source (and/or staged query) metadata, the Accelerator will show the resulting Data Vault model. When starting this process directly after importing the metadata, it is rare that the accelerated result will be sufficient for the final Data Vault model. The more tweaks will be made, the more the accelerated result will match the intended target model.
 
-Before considering the acceleration, it is important to have an understanding of the expected target model and how the data from the source model can be loaded into this target. The source model is defined by the source. In most cases, the source model is not directly transposable to the target Data Vault model, so some analysis and modeling is required.
-
-BimlFlex supports this through the [**Business Modeling**](xref:bimlflex-business-modeling) feature. This assists the modeler to define an initial model that is agnostic of the available data sources.
-
-The technical implementation in the source is then tweaked to match the expected Data Vault model using either source metadata decoration or the staged query approach.
-
-![Whiteboard Model -center -50%](images/bimlflex-app-accelerator-sample-whiteboard-model.png "Whiteboard Model")
-
-Once the target model is drafted, compare the accelerated metadata with the expected outcome and tweak accordingly.
-
-## Prerequisites
-
-This guide assumes that the environment has been set up and configured, source metadata has been imported and that the source to staging process has been modeled and completed. There are several sample metadata sets where a target Data Vault model has been created, and a Sample 02 - MSSQL After Import where only source metadata has been imported, that is ready for Data Vault modeling and acceleration.
-
-## The BimlFlex Workflow
-
-The Accelerator is part of the BimlFlex App.
-
-![Accelerator in BimlFlex App](images/ss-bfx-21.1-app-accelerator-full-ui.png "Accelerator in BimlFlex App")
-
-The Accelerator screen in the BimlFlex App allows metadata manipulation to directly control the target Data Vault. By editing the entities, such as splitting satellites or joining relationships into units of work or renaming targets, it is possible to directly control the accelerated model.
-
-## Accelerate the Model
-
-Based on the available source (or staged query) metadata, the Accelerator shows a preview of the Data Vault model. It is rare that this will be enough to derive a completed Data Vault target model. 
-
-Based on information gained from understanding the business process, a user can create a target data model that:
-
-* Is source agnostic
-* Is aligned with the business process
-* Is based on Core Business Concepts
-* Describes events and transactions through the relations between the Core Business Concepts
-
-The Accelerator will use the metadata and decorations from the source to derive the target Data Vault and its Hubs, Links and Satellites. The derived Data Vault model is available to preview and refine through editing the metadata, giving the modeler a live preview of the target.
+Because the Accelerator will always use the source object metadata to generate the Data Vault, it effectively provides a live preview of the design.
 
 Once the Accelerator preview matches the model expectations the metadata can be published to the repository and become instantiated parts of the metadata set.
 
-The workflow where metadata is updated and tweaked and reprocessed through the Accelerator into the Data Vault allows a rapid design cycle that can be repeated as needed.
+## Saving the Model
+
+Saving the Accelerator Model will persist the layout and current state to the repository.
+
+## Publishing the Model
+
+Publishing the Accelerator Model will create the Data Vault Objects and instantiate the source to target mappings for each defined source object. The model must be published before the entities can be built and used in the Data Warehouse.
 
 ## Sample Workflow
 
-The following narrative will guide us through the Accelerator process end to end. It is part of the overall BimlFlex workflow described earlier.
+This guide assumes that the BimlFlex environment has been set up and configured, source metadata has been imported and that the source-to-staging process has been defined. There are several sample metadata sets available for which a Data Vault model has been created. There is also a 'Sample 02 - MSSQL After Import' where only source metadata has been imported.
 
-1. Run the metadata import for the source system if not done already. For the samples, start with sample `02 - MSSQL After Import`
+The following guide will take us through the Accelerator process end to end.
+
+1. Start with sample `02 - MSSQL After Import`
 1. Open the Accelerator, select objects to include in the Acceleration
 1. Preview the Accelerated target model
 1. Review and tweak the metadata
@@ -96,7 +67,7 @@ The following narrative will guide us through the Accelerator process end to end
 1. Refresh the metadata into the BimlStudio project
 1. Build and review the database and SSIS/ADF artifacts in BimlStudio
 
-## The Accelerator User Interface
+### User Interface
 
 It is possible to select only a subset of objects, or filter the objects visible in the Acceleration. This is useful where the full set of source tables have been included but the Data Vault is modeled and built in an agile, iterative process. Starting to source and persist changes from the source without having to consider the Data Vault process means the Staging part of the solution can be completed sooner.
 
@@ -104,12 +75,12 @@ Constraining the Data Vault Acceleration to a subset allows for a more agile del
 
 ![Accelerator User Interface](images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
 
-The Accelerator shows available source objects in the left-hand tree view and a preview of the target Data Vault model in the content pane. The page has a toolbar with several interaction options available
+The Accelerator shows available source objects in the left-hand **Treeview** and a preview of the target Data Vault model in the content pane. The page has a toolbar with several interaction options available
 
 | Icon | Description |
 | ---- | ----------- |
-| Search | Search through entities in the tree view |
-| Filter funnel | Filter Funnel allows filtering contents in the tree view based on Integration Stage and Record Source |
+| Search | Search through entities in the treeview |
+| Filter funnel | Filter Funnel allows filtering contents in the **Treeview** based on Integration Stage and Record Source |
 | Save | Save the current model view for later acceleration |
 | Discard | Discard any changes being made to the model that has not yet been saved |
 | Publish | Publish the previewed model to the repository to instantiate the entities into the metadata, allowing them to be used in load processes |
@@ -287,12 +258,4 @@ Edit the related columns Business Reference or Business Grouping to reflect the 
 
 ### Object Business Grouping
 
-The Business Grouping is used to group related Objects together for Acceleration. The Filtering option in the tree view allows the user to filter on defined Business Groupings. This allows for iterative modeling where a team works on a grouping at a time.
-
-## Saving the Model
-
-Saving the Accelerator Model will persist the layout and current state to the repository.
-
-## Publishing the Model
-
-Publishing the Accelerator Model will create the Data Vault Objects and instantiate the source to target mappings for each defined source object. The model must be published before the entities can be built and used in the Data Warehouse.
+The Business Grouping is used to group related Objects together for Acceleration. The Filtering option in the **Treeview** allows the user to filter on defined Business Groupings. This allows for iterative modeling where a team works on a grouping at a time.

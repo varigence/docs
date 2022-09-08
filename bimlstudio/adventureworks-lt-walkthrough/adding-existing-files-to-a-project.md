@@ -17,7 +17,7 @@ To add existing Biml files to a project, follow these steps:
 
 1. Select the Project View tool window. It normally appears as a tab beside the Logical View tool window at the right side of the BimlStudio application window. If it is not visible, use the View button on the Home tab of the Ribbon to display it.
 
-1. Expand the tree and Right-click the Tables item in the tree view, and choose Add > Existing Item...
+1. Expand the tree and Right-click the Tables item in the treeview, and choose Add > Existing Item...
 
 ![Context Menu - Add Existing Files](https://varigencecom.blob.core.windows.net/images-mistdocumentation/009_Step03.png)
 

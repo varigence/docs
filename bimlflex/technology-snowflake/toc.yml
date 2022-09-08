@@ -4,3 +4,5 @@
   href: snowflake-configuration.md  
 - name: Implementing ADF Pipelines for Snowflake
   href: implementing-snowflake-in-adf.md
+- name: Unsupported Snowflake Features
+  href: unsupported-snowflake-features.md

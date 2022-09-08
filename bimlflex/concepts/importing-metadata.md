@@ -7,23 +7,9 @@ varigenceArticleType: Conceptual
 ---
 # Importing Metadata
 
-## Import Metadata
+[!include[Customers](_incl-header-metadata-import.md)]
 
-The primary source BimlFlex uses to generate Data Warehousing and Business Intelligence assets is metadata. Metadata is most commonly in the form of objects with corresponding attributes.
-
-Although it is relatively straightforward to define individual metadata objects, it can take considerable time and effort to create, update and maintain the number of objects that would typically be involved in an enterprise data warehouse solution.
-
-The BimlFlex platform provides an import tool which is accessible from the *Connections* and *Projects* screens. This tool connects to a database source and populates the BimlFlex database with metadata.
-
-This tool can be used in any scenario where a schema is available, and there is a need to bring that metadata into a BimlFlex project. If a change happens in the source, the metadata can be imported again to update the model.
-
-### Locating the tool
-
-In the BimlFlex App, navigate to a *Source Connection* or associated *Source Project*. The Connection must have a valid connection string which points to the database which should be imported. In the details tab, click the `Import Metadata` button. This opens the Import Metadata page.
-
-![Import Metadata Ribbon](../metadata-editors/images/bimlflex-app-import-metadata-ribbon.png "Import Metadata Ribbon")
-
-### Import Metadata User Interface
+## Import Metadata User Interface
 
 There are a number of options for importing metadata. The user must align these options with the solution architecture and metadata conventions.
 
@@ -32,6 +18,9 @@ There are a number of options for importing metadata. The user must align these 
 The example connection in the Sample Metadata is `AWLT_SRC` which points to the AdventureWorksLT database, using the project `EXT_AWLT_SRC` as the target project for imported metadata.
 
 Below the Connection and Project drop downs are all the main options. These can be configured to control the behavior of the import, such as what object types to import, naming conventions to apply and what to retain if the metadata has been imported before.
+
+> [!TIP]
+> Have a look at our [recorded video](https://www.youtube.com/watch?v=ClMJcZPdSks?rel=0&autoplay=0) covering how to import metadata using BimlFlex.
 
 ### Metadata Options Definitions
 

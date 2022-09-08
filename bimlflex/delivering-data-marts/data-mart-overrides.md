@@ -14,12 +14,9 @@ At a high level, **Configuration** values control where/when they get applied an
 > [!TIP]
 > For additional details on managing **Configuration**, **Attributes** and **Configuration Overrides** refer to the below guides:
 >
-> BimlFlex Docs: [Configurations](xref:bimlflex-configurations)
->
-> BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
->
-> BimlFlex Docs: [Attributes](xref:bimlflex-attribute-editor)
->
+> * [Configurations](xref:bimlflex-configuration-editor)
+> * [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
+> * [Attributes](xref:bimlflex-attribute-editor)
 
 ## Common Configurations
 
@@ -105,7 +102,7 @@ These can be adjusted to fit an organization's specific data standards.
 
 ## Setting a Configuration for the Data Mart
 
-All **Configurations** are global and set in the [**Configuration Editor**](xref:bimlflex-configurations).
+All **Configurations** are global and set in the [**Configuration Editor**](xref:bimlflex-configuration-editor).
 These can be enabled and disabled for each data architecture concept.
 
 > [!WARNING]
@@ -154,9 +151,9 @@ If required, a [**Configuration Override**](#overriding-configurations) can be a
 > [!TIP]
 > For additional details on **Configurations** and their definitions refer to the below guide:
 >
-> BimlFlex Docs: [Configurations](xref:bimlflex-configurations)
+> * [Configuration Editor](xref:bimlflex-configuration-editor)
 >
-> BimlFlex Docs: [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
+> * [Default BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 >
 
 ## Overriding Configurations
@@ -175,7 +172,7 @@ The **Configuration** itself is applied at an object level, so a column level ov
 
 ### [Standard Method](#tab/configuration-override)
 
-A **Configuration** can be quickly added from [**Configuration Editor**](xref:bimlflex-configurations).
+A **Configuration** can be quickly added from [**Configuration Editor**](xref:bimlflex-configuration-editor).
 If a field supports and override it will have clickable button with the following icon (<img class="icon-inline" src="../metadata-editors/images/svg-icons/attributes.svg" /><!--![Overriding Possible Icon -icon-inline](../metadata-editors/images/svg-icons/attributes.svg "Overriding Possible Icon")-->).
 
 ![Overriding Possible](images/bfx-configuration-override-support.png "Overriding Possible")
@@ -332,8 +329,6 @@ Each method requires only a single **Configuration Override** (per column) and p
 > Repeat the chosen method for each **Configuration** as needed.
 >
 
-If not yet done, ensure that the Dimension is created and mapped as normal, following the [Data Mart Dimensional Model](xref:bimlflex-getting-started-dimensional-model) guide if needed.
-
 ##### [Method A - SQL Source Expression](#tab/scenario-1-method-a)
 
 The following method assumes the *DIM ATTRIBUTE* is already configured to `Derived` for any of the applicable **Configurations** being overridden.
@@ -427,11 +422,12 @@ The Historical Data will need to include all the dimensional attributes along wi
 As with Scenario 1, the only values required are the `RowStartDate` values.
 BimlFlex will implement the `RowEndDate` and `RowIsCurrent` automatically after the first load.
 
-Using the existing as a Source, [Import the Metadata](xref:bimlflex-getting-started-importing-source-metadata) for the Dimension.
+Using the existing as a Source, [Import the Metadata](xref:bimlflex-concepts-importing-metadata) for the Dimension.
 If any metadata columns (effectivity dates and current flag) made it into the initial import of metadata, they should be removed now.
 The only columns that should be present are the attributes we want to populate the Dimension with.
 
-Follow the normal process and ensure that the Dimension is created and mapped as normal, following the [Data Mart Dimensional Model](xref:bimlflex-getting-started-dimensional-model) guide if needed.
+Follow the normal process and ensure that the Dimension is created and mapped as normal.
+
 Apply **Configuration Overrides** identical to as outlined above in [Overriding Type 2 Logic](#overriding-type-2-logic).
 
 Run the process and ensure all Dimension history is created correctly.
@@ -450,11 +446,11 @@ Adjust the *PROJECT*, *CONNECTION*, *SCHEMA*, *OBJECT NAME*, and *SOURCE CREATE 
 > Objects are only adjusted or added based on the generated artifacts name.
 > Check your system for the following potential orphaned artifacts and address as needed.
 >
-> - View (Used to load history)
-> - Staging Table
-> - Stored Procedure
-> - DTSX Package
-> - ADF Pipeline
+> * View (Used to load history)
+> * Staging Table
+> * Stored Procedure
+> * DTSX Package
+> * ADF Pipeline
 >
 > Naming pattern for these artifacts differ between environments but generally involve the use of the *PROJECT*, *CONNECTION*, *SCHEMA* and *OBJECT NAME*.
 > When checking for orphaned artifacts ensure you are looking for the prior values, not the current assigned values.

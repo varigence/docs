@@ -24,6 +24,7 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Use Temporal Tables | Temporal tables (also known as system-versioned temporal tables) supports providing data as it was at an historical point in time, rather than only showing the data available at the current point in time. By enabling Temporal Tables in BimlFlex, the Objects belonging to the selected Connection will be created using Temporal Table syntax. This enables data to be be queried at a specific point-in-time following the supported SQL Server syntax. In BimlFlex, this is only supported for Persistent Staging Area connections, and only applies to SQL Server database (either on-premise, or made accessible via a self-hosted integration runtime), Managed Instance, or Azure SQL databases.|
 |Number of Threads | The number of threads a data logistics process can use to split the workload at runtime using the selected connection. The default is 1. The amount of threads can be redefined at the object level. When using SSIS, this attribute is only used in the SRC – STG template with the Balance Data Distributor to allow for greater parallelism. Only define a value greater than zero if the server has enough CPU and Memory to accommodate additional threads.|
 |Exclude from Model | Hide the Connection from the model. Can still be seen if the user has Show Excluded enabled.|
+|Display Folder | Display Folder is used for grouping Connections and their Datasets.|
 |Data Source | Name of the server the Connection points to. This is usually omitted as a separate configuration because defining this in the Connection String is sufficient.|
 |Authentication Method | Indicator which Authentication Method will be used for the selected Connection.|
 |User Name | The user name which is to be used in the Connection, in case Authentication Method (Named User) is selected.|
@@ -75,7 +76,12 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Linked Service Skip Host Key Validation | Skip the Host Key Valiation for the generated Linked Service.|
 |Linked Service Host Key Fingerprint | Ensure that the Host Key Fingerprint is applied as property for Linked Service SSH connections.|
 |Linked Service Passphrase | The passphrase to be used for the Linked Service.|
+|Linked Service Pass Phrase Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Pass Phrase.|
+|Linked Service Pass Phrase Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Pass Phrase. If omitted, the most recent version is used.|
+|LS_PrivateKeyType | |
 |Linked Service Private Key Content | The way the Private Key information is provided for the Linked Service.|
+|Linked Service PrivateKey Content Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the PrivateKey Content.|
+|Linked Service PrivateKey Content Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the PrivateKey Content. If omitted, the most recent version is used.|
 |Linked Service Private Key Path | The location of the Private Key for the Linked Service.|
 |Linked Service Security Token Authentication | Specifies the Security Token to use for authentication.|
 |Linked Service Security Token Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Security Token.|
@@ -106,5 +112,7 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Linked Service Credential String Key Vault | The reference to the Azure Key Vault Linked Service that contains the Credential String secret.|
 |Linked Service SAS URI Key Vault | The reference to the Azure Key Vault (AKV) Linked Service that contains the Shared Access Signature (SAS) URI secret.|
 |Linked Service SAS Token Key Vault | The reference to the Azure Key Vault Linked Service that contains the Shared Access Signature (SAS) Token secret.|
+|LS_PassPhraseKVS_UID | |
+|LS_PrivateKeyContentKVS_UID | |
 |Linked Service Security Token Key Vault | The reference to the Azure Key Vault Linked Service that contains the Security Token secret.|
 

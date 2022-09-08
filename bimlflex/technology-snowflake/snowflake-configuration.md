@@ -12,7 +12,7 @@ Before working with Snowflake metadata, you should ensure that your environment 
 
 ## Installing and Configuring SnowSQL (SSIS Only)
 
-When using an SSIS [Integration Template](xref:bimlflex-concepts-integration-template), BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.
+When using an SSIS [Integration Template](xref:bimlflex-metadata-static-values#integration-templates), BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.
 
 This requires that SnowSQL be installed and the appropriate connection created on the server executing the SSIS packages.
 
@@ -79,7 +79,7 @@ The ODBC driver is only required if using SSIS orchestration to connect to a Sno
 
 ## Configuring BimlFlex for Snowflake
 
-BimlFlex uses [**Settings**](xref:bimlflex-settings) to adapt to specific requirements for file locations, naming conventions, data conventions etc.
+BimlFlex uses [**Settings**](xref:bimlflex-setting-editor) to adapt to specific requirements for file locations, naming conventions, data conventions etc.
 
 Align these settings with the organizations best practices and environmental requirements.
 
@@ -94,7 +94,7 @@ These settings define the connectivity configuration from BimlFlex to Snowflake,
 
 ### Azure Storage Processing Settings (ADF Only)
 
-The following Azure [**Settings**](xref:bimlflex-settings) are used to configure the blob destinations. This is mandatory when using Snowflake.
+The following Azure [**Settings**](xref:bimlflex-setting-editor) are used to configure the blob destinations. This is mandatory when using Snowflake.
 
 ### [Settings](#tab/azure-storage-processing-settings)
 
@@ -222,7 +222,8 @@ Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 
 > [!TIP]
 > For additional details on creating a **Connection** refer to the below guide:  
-> BimlFlex Docs: [Connections](xref:bimlflex-connection-editor)
+>
+> * [Connections](xref:bimlflex-connection-editor)
 
 ### Linked Services (ADF Only)
 
@@ -248,8 +249,9 @@ host=xy12345.west-us-2.azure.snowflakecomputing.com;account=xy12345;user=MyUser;
 
 > [!TIP]
 > For additional details on creating a Linked Service refer to the below guides:  
-> BimlFlex Docs: [Configuring a Linked Service Connection](xref:create-linked-service-connection)  
-> BimlFlex Docs: [Configuring a Linked Service Connection for Snowflake Data Warehouse](xref:linked-service-snowflake)
+>
+> * [Configuring a Linked Service Connection](xref:create-linked-service-connection)  
+> * [Configuring a Linked Service Connection for Snowflake Data Warehouse](xref:linked-service-snowflake)
 
 ## Deploying the target Warehouse Environment
 
@@ -291,7 +293,7 @@ Ensure these commonly missed steps are performed:
 * [Install and Configure SnowSQL](#installing-and-configuring-snowsql-ssis-only)  
 * [Install and Configure Snowflake ODBC DSN](#installing-and-configuring-a-snowflake-odbc-dsn)
 * [Install Snowflake SSIS Custom Components](#bimlflex-snowflake-custom-ssis-components)
-* [Configure and review the generic SSIS environment settings](xref:bimlflex-settings)
+* [Configure and review the generic SSIS environment settings](xref:bimlflex-setting-editor)
 
 > [!TIP]
 > For additional details on generating deploying SSIS packages refer to the below guides:  
@@ -307,7 +309,7 @@ As a final check, please ensure the following configurations were made:
 
 * [Create a Landing Area](#landing-area-adf-only)  
 * [Provide a configured Linked Service with Secrets entered](#linked-services-adf-only)  
-* [Configure and review the generic Azure and Azure Data Factory environment settings](xref:bimlflex-settings)
+* [Configure and review the generic Azure and Azure Data Factory environment settings](xref:bimlflex-setting-editor)
 * [Azure Blob Stage Container Settings](#azure-storage-processing-settings-adf-only)  
 * [Azure Blob Archive Container Settings](#azure-storage-processing-settings-adf-only)  
 * [Azure Blob Error Container Settings](#azure-storage-processing-settings-adf-only)
@@ -315,5 +317,5 @@ As a final check, please ensure the following configurations were made:
 > [!TIP]
 > For additional details on generating deploying ADF artifacts refer to the below guides:
 >
-> * BimlFlex Docs: [Deployment Through PowerShell](xref:bimlflex-adf-using-powershell)  
-> * BimlFlex Docs: [Deployment Through the Azure Portal](xref:using-azure-portal)
+> * [Deployment Through PowerShell](xref:bimlflex-adf-using-powershell)  
+> * [Deployment Through the Azure Portal](xref:using-azure-portal)

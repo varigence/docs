@@ -1,14 +1,14 @@
 - name: Overview
   href: index.md
-- name: App Reference Documentation
+- name: Metadata Editors
   href: reference-documentation-entities-index.md
-- name: Settings Reference Documentation
+- name: Settings
   href: reference-documentation-settings-index.md  
-- name: Extension Point Reference Documentation
+- name: Extension Points
   href: reference-documentation-extensionpoints-index.md
 - name: Static Values
   href: metadata-static-values.md  
-- name: Metadata Configurations
+- name: Configurations
   href: metadata-configurations.md
 - name: Data Type Conversions
   href: data-type-conversions.md

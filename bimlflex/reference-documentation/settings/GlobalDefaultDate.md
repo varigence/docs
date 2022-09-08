@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Global Default Date
 
-The global default date to use for timelines.
+The global default date to use for timelines. Please note that this value does not override the RowEffectiveFromDate.
 
 Notes:
 

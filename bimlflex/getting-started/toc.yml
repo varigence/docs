@@ -2,11 +2,11 @@
   href: index.md
 - name: BimlFlex Components
   href: bimlflex-components-overview.md  
-- name: Introductory Videos
-  href: intro-videos.md
-- name: Initial Configuration Overview
+- name: Initial Configuration
   href: initial-configuration.md
 - name: First Project Walkthrough
   href: first-project-walkthrough.md
-- name: Sample Content
-  href: sample-metadata.md
+- name: Introductory Videos
+  href: intro-videos.md  
+- name: Sample Metadata
+  href: sample-metadata.md  

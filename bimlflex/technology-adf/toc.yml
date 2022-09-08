@@ -1,12 +1,14 @@
 - name: Overview
   href: index.md
+- name: Configuring a Linked Service
+  href: create-linked-service-connection.md  
 - name: Landing Area
   href: landing-area.md
-- name: ADF Deployment Guide
+- name: ADF Deployment Overview
   href: adf-deployment.md
-- name: Using Azure Portal
+- name: Azure Portal Deployment
   href: using-azure-portal.md
-- name: Using Powershell
+- name: Powershell Deployment
   href: using-powershell.md
 - name: Managing Sensitive Data
   href: sensitive-info-management.md

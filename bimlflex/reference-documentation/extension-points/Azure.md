@@ -230,7 +230,6 @@ Configure a Pre Copy Script Attribute for the Sink property of a Copy Activity.
 sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the (source) Object, from which the data will be copied in the Copy Activity. |
 targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the (target) Object, which will act as the sink for the Copy Activity. |
 
-
 ### Outputs
 
 | <div style="width:150px">Name</div> | Type | Description |

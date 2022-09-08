@@ -1,7 +1,7 @@
 ---
-uid: bimlflex-app-reference-documentation-setting-ApplyExtractConversionInDataFlow
-title: BimlFlex Settings Definition for ApplyExtractConversionInDataFlow
-summary: Documentation of settings option within BimlFlex for ApplyExtractConversionInDataFlow
+uid: bimlflex-app-reference-documentation-setting-ApplyExtractConversionInDataflow
+title: BimlFlex Settings Definition for ApplyExtractConversionInDataflow
+summary: Documentation of settings option within BimlFlex for ApplyExtractConversionInDataflow
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---

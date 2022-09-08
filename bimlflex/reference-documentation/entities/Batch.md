@@ -21,6 +21,18 @@ The BimlFlex [**Batch**](xref:bimlflex-batch-editor) concept organises the data 
 |Precendence Constraint | The evaluation criteria to start the next process in a Batch. This can be on Success or on Completion (disregarding the outcome) of the current executing process. The Precedence Constraint Completion setting forces BimlFlex to continue loading in case of individual failures. This setting applies to all processes in the batch.|
 |Number of Containers | The number of containers (groupings) that can be executed within the Batch. This setting can be used to throttle the parallel processing within a batch. A higher number of containers will decrease the degree of parallelism in the execution of the data logistics processes within a batch.|
 |Description | Free-format description of the Batch.|
+|Trigger Name | Name of the Trigger, if ommitted the Batch name and Trigger Type will be concatenated.|
+|Trigger Type | The tumbling window trigger and the schedule trigger.|
+|Trigger Start Date | A date-time value. For basic schedules, the value of the startTime property applies to the first occurrence. For complex schedules, the trigger starts no sooner than the specified startTime value.|
+|Trigger End Date | The end date and time for the trigger. The trigger does not execute after the specified end date and time. The value for the property can not be in the past.|
+|Trigger Timezone | The time zone. For a list of supported time zones, see Create a trigger that runs a pipeline on a schedule.|
+|Trigger Recurrence Every | The unit of frequency at which the trigger recurs. The supported values include minute, hour, day, week, and month.|
+|Trigger Recurrence Unit | A positive integer that denotes the interval for the frequency value. The frequency value determines how often the trigger runs. For example, if the interval is 3 and the frequency is week, the trigger recurs every three weeks.|
+|Trigger Delay | The amount of time to delay the start of data processing for the window.|
+|Trigger Max Concurrency | The number of simultaneous trigger runs that are fired for windows that are ready.|
+|Trigger Retry Count | The number of retries before the pipeline run is marked as Failed.|
+|Trigger Retry Interval | The delay between retry attempts specified in seconds.|
+|Trigger Runtime State | The current state of the trigger run time. Started, Stopped, Disabled|
 
 ## References
   

@@ -7,31 +7,21 @@ varigenceArticleType: Reference
 ---
 # Business Modeling
 
-The BimlFlex **Business Modeling** feature supports designing a holistic model that describes the business' data, while avoiding bias from already existing systems and data structures.
-
-Traditionally, this process involves a team of IT and business representatives collaborating in a series of workshops to define the business' Core Business Concepts (CBCs), how they are described and how they interact with each other.
-
-Business Models can be created using predefined Ensemble Logical Modeling (ELM) or Party & Party Role (PPR) approaches, or by defining a custom set of classifications and labels. For example, by defining types such as Subjects, People, Events or Places.
-
-These types of Business Model objects are represented as 'tiles' or 'cards' on the model design board.
-
-While working on a Business Model, these tiles can be rearranged, detailed and updated on the model design board with minimal effort in a way that is similar to reorganizing Post-It notes on a whiteboard.
-
-The **Business Modeling** feature is accessible from the main BimlFlex side menu, under the 'Modeling' section.
+[!include[BusinessModeling](_incl-header-business-modeling.md)]
 
 ## Business Modeling Configuration
 
-When you use the **Business Modeling** feature for the first time, you will be asked to select a **Modeling Configuration**. This sets the default that is used as template for creating new Business Models.
+When you use the Business Modeling feature for the first time, you will be asked to select a **Modeling Configuration**. This sets the default that is used as template for creating new Business Models.
 
 ![Selecting a Modeling Configuration](images/business-modeling-configuration.png "Selecting a Modeling Configuration")
 
-The **Modeling Configuration** provides a number of predefined Entity Types that will allow the various Business Entities to be organized on the **Business Model Canvas**. The Entity Types will represent 'swimlanes' on the **Business Model Canvas** where individual Business Entities can be placed.
+The Modeling Configuration provides a number of predefined Entity Types that will allow the various Business Entities to be organized on the **Business Model Canvas**. The Entity Types will represent 'swimlanes' on the Business Model Canvas where individual Business Entities can be placed.
 
 After the initial selection, the default configuration can be adjusted using the **Configure Modeling** button.
 
 ### Entity Types
 
- On the first tab of the **Configure Modeling** screen, new Entity Types can be added and existing ones removed.
+ On the first tab of the Configure Modeling screen, new Entity Types can be added and existing ones removed.
 
 ![Adjusting the Modeling Configuration](images/business-modeling-adjust-modeling-configuration.png "Adjusting the Modeling Configuration")
 
@@ -478,9 +468,9 @@ It is possible to show a smaller **Overview** when working with large models. Yo
 
 #### Using the Treeview
 
-If a Business Entity already exists, but is not yet part of the diagram it can be added using the **Treeview** feature. The **Treeview** contains an overview of Business Entities organized by **Entity Type**. By checking or unchecking a Business Entity it can be added or removed from the diagram.
+If a Business Entity already exists, but is not yet part of the diagram it can be added using the **Treeview** feature. The treeview contains an overview of Business Entities organized by **Entity Type**. By checking or unchecking a Business Entity it can be added or removed from the diagram.
 
-The **Treeview** is represented as a side panel on the left of the main diagram canvas, but by default it is in a collapsed state. It can be accessed by clicking on the `Expand` icon (<img src="images/svg-icons/collapsed.svg" width="2%" height="2%" />). Conversely, the panel can be closed by clicking on the `Collapse` icon (<img src="images/svg-icons/expanded.svg" width="2%" height="2%" />).
+The treeview is represented as a side panel on the left of the main diagram canvas, but by default it is in a collapsed state. It can be accessed by clicking on the `Expand` icon (<img src="images/svg-icons/collapsed.svg" width="2%" height="2%" />). Conversely, the panel can be closed by clicking on the `Collapse` icon (<img src="images/svg-icons/expanded.svg" width="2%" height="2%" />).
 
 ![Diagram Treeview](images/business-modeling-diagram-treeview.png "Diagram Treeview")
 

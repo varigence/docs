@@ -235,9 +235,9 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation of, and additional defaults for, dependency objects.
 -->
 
-## Tree view navigation
+## Treeview navigation
 
-The modeling pages Accelerator, Schema Diagram and Column Mapping have a new tree view navigation. This allows better control over what objects are visible and co-located in the navigation list.
+The modeling pages Accelerator, Schema Diagram and Column Mapping have a new treeview navigation. This allows better control over what objects are visible and co-located in the navigation list.
 
 ## Download Links to this Build
 

@@ -158,10 +158,10 @@ The simple process for both implied creation and manual creation of Driving Keys
 ### Implied Creation of Driving Keys
 
 > [!NOTE]
-> Requirements:
+> The following requirements apply:
 >  
-> - **Object** *ACCELERATOR OBJECT TYPE* = `Hub`
-> - A **Column** in the **Object** that references another *ACCELERATOR OBJECT TYPE* = `Hub`.
+> * The **Accelerator Object Type** for the **Object** *must be `Hub`
+> * A **Column** must exists in the **Object** that references an **Accelerator Object Type** other than `Hub`
 
 BimlFlex can automatically apply a Driving Key to any relationship created from a table being loaded with a *MODEL OBJECT TYPE* = `Hub`.
 Due to the Foreign Keys in a database requiring a many-to-one in the source, the application of a Driving Key scenario can be applied.
@@ -170,7 +170,6 @@ This will be automatically included in the ETL logic and no separate **Attribute
 ![BimlFlex Objects Tab](images/bfx-objects-tab-a.png "BimlFlex Objects Tab")
 
 ![BimlFlex Reference Table and Column](images/bfx-reference-table-and-column-a.png "BimlFlex Reference Table and Column")
-
 
 ### Default Driving Key Application
 
@@ -181,10 +180,10 @@ Any changes made to the Driving Key relationships by the user after the first ac
 ### Manual Creation of Driving Keys
 
 > [!NOTE]
-> Prerequisites:
+> The following prerequisites apply:
 >  
-> - The Link must already be accelerated.
-> - The column to be used for the Driving Key must be on the LNK (not LSAT).
+> * The Link must already be accelerated
+> * The column to be used for the Driving Key must be on the LNK (not LSAT)
 
 The simplest way to define a Driving Key within BimlFlex is from the **Object** Editor.
 Upon selecting the **Link** from the Object editor tree and selecting the **Columns** view, a Driving Key may be assigned from the drop down menu in the *Change Type* column.
@@ -210,6 +209,6 @@ Driving Key settings are all adjusted in the "Add Attribute" dialog box:
 > [!NOTE]
 > For additional information regarding BimlFlex's assignment of Driving Keys or the technical walkthrough for manually defining Driving Keys, please reference the following documents:
 >
-> - [Data Vault Templates](xref:bimlflex-data-vault-index)
-> - [BimlFlex Data Vault Best Practices](xref:bimlflex-data-vault-best-practices)
-> - [Driving Keys](xref:bimlflex-data-vault-driving-keys)
+> * [Data Vault Templates](xref:bimlflex-data-vault-index)
+> * [BimlFlex Data Vault Best Practices](xref:bimlflex-data-vault-best-practices)
+> * [Driving Keys](xref:bimlflex-data-vault-driving-keys)

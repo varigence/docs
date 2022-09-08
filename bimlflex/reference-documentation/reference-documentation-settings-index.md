@@ -16,7 +16,7 @@ By changing settings, the produced artifacts can adapt to specific requirements 
 Align these settings with the organizations best practices and environmental requirements.
 
 > [!NOTE]
-> For additional information about using **Settings** in BimlFlex, please refer to the [Settings Editor](xref:bimlflex-settings) documentation.
+> For additional information about using **Settings** in BimlFlex, please refer to the [Settings Editor](xref:bimlflex-setting-editor) documentation.
 
 ## AzCopy
   
@@ -60,14 +60,14 @@ Align these settings with the organizations best practices and environmental req
 |[File Encoding Name](xref:bimlflex-app-reference-documentation-setting-AzureFileEncodingName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The File Encoding Name for the Azure Data Factory target File Dataset.|
 |[File Null Value](xref:bimlflex-app-reference-documentation-setting-AzureFileNullValue) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The Null value definition to use for the Azure Data Factory target File Dataset.|
 |[Archive Stage](xref:bimlflex-app-reference-documentation-setting-AzureArchiveStage) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the staged Blob Storage files are moved to the defined archive container, once processing is completed. This will use AzCopy v.10 commands, so requires AzCopy v.10 and SAS Tokens for access.|
-|[Stage On Extract](xref:bimlflex-app-reference-documentation-setting-AzureStageOnExtract) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the Azure-based Extract and Load process runs the stage process for the extracted data in the destination Azure Synapse.|
+|[Stage On Extract](xref:bimlflex-app-reference-documentation-setting-AzureStageOnExtract) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the Azure-based Extract and Load process runs the stage process for the extracted data in the destination database.|
 |[Create Dummy File](xref:bimlflex-app-reference-documentation-setting-AzureCreateDummyFile) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Should the Staging package copy a "placeholder.dummy" file to accommodate the PolyBase limitation when no files exist.|
 |[Create External On Stage](xref:bimlflex-app-reference-documentation-setting-AzureCreateExternalOnStage) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Should the Staging process "DROP" and "CREATE EXTERNAL TABLE" before running the Staging Stored Procedure.|
-|[External File Conversion](xref:bimlflex-app-reference-documentation-setting-AzureExternalFileConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|By default, the extraction process from a source to blob storage applies several conversions to create files that are supported by PolyBase. This setting allows control of this conversion process.|
+|[External File Conversion](xref:bimlflex-app-reference-documentation-setting-AzureExternalFileConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|By default, the extraction process from a source to blob storage applies several conversions to create files that are supported the target storage type. This setting allows control of this conversion process.|
 |[Distribute Round Robin Temporary Tables](xref:bimlflex-app-reference-documentation-setting-AzureRoundRobinTemporaryTables) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to use Round Robin distribution in Azure Synapose temporary tables instead of the default Hash distribution.|
 |[Archive Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureArchiveLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are moved to the defined archive container, once processing is completed.|
 |[OnError Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureOnErrorLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are moved to the defined error container on error, once processing is completed.|
-|[OnError Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureOnErrorLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are deleted once processing is completed.|
+|[Delete Landing Files](xref:bimlflex-app-reference-documentation-setting-AzureDeleteLandingFiles) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the landed files are deleted once processing is completed.|
 
 ## Azure Copy
   
@@ -106,13 +106,15 @@ Align these settings with the organizations best practices and environmental req
 |[Stage SAS Token](xref:bimlflex-app-reference-documentation-setting-AzureStageSasToken) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The storage access SAS Token to use when accessing the staging Blob storage.|
 |[Blob Storage Domain](xref:bimlflex-app-reference-documentation-setting-AzureBlobStorageDomain) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The AzCopy domain to use.|
 |[External File Format](xref:bimlflex-app-reference-documentation-setting-AzureExternalFileFormat) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The default External File Format definition to use.|
+|[Folder Naming Convention](xref:bimlflex-app-reference-documentation-setting-AzureFolderNamingConvention) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Naming convention to use for Azure Storage Folders.|
+|[File Naming Convention](xref:bimlflex-app-reference-documentation-setting-AzureFileNamingConvention) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Naming convention to use for Azure Storage Files.|
 
 ## Core
   
 |  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Add SQL Defaults](xref:bimlflex-app-reference-documentation-setting-AddSqlDefaults) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to add SQL Default constraints to tables created. SQL Defaults are always added to staging layer tables.|
-|[Global Default Date](xref:bimlflex-app-reference-documentation-setting-GlobalDefaultDate) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The global default date to use for timelines.|
+|[Global Default Date](xref:bimlflex-app-reference-documentation-setting-GlobalDefaultDate) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The global default date to use for timelines. Please note that this value does not override the RowEffectiveFromDate.|
 |[Convert GUID To String](xref:bimlflex-app-reference-documentation-setting-ConvertGuidToString) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if a source column of type "GUID"/"UniqueIdentifier" is automatically converted to a String data type.|
 |[Use BimlCatalog](xref:bimlflex-app-reference-documentation-setting-UseBimlCatalog) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if BimlFlex uses the BimlCatalog database for logging, auditing and configuration variables.|
 |[Use Custom Components](xref:bimlflex-app-reference-documentation-setting-UseCustomComponents) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if BimlFlex uses the Ssis Custom Components to log RowCounts and Generate Hash Keys.|
@@ -168,6 +170,7 @@ Align these settings with the organizations best practices and environmental req
 |[Accelerate Link Integration Keys](xref:bimlflex-app-reference-documentation-setting-DvAccelerateLinkIntegrationKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")||
 |[Accelerate Correct Key Names](xref:bimlflex-app-reference-documentation-setting-DvAccelerateCorrectKeyNames) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Should the Accelerator correct Integration Key names based on the Object Business Name|
 |[Apply Data Type Mapping RDV](xref:bimlflex-app-reference-documentation-setting-ApplyDataTypeMappingRdv) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the Data Type Mappings are applied to the Raw Data Vault. The Data Type Mappings function allow expansion of data types.|
+|[Naming Convention](xref:bimlflex-app-reference-documentation-setting-DvNamingConvention) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Naming convention to use for Data Vault Accelerator.|
 |[Stage Reduce Link Keys](xref:bimlflex-app-reference-documentation-setting-StageReduceLinkKeys) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this to reduce additional Link hash keys in the staging table.|
 |[Accelerate Show Columns](xref:bimlflex-app-reference-documentation-setting-DvAccelerateShowColumns) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to set the default Accelerator view to show all Columns.|
 |[Accelerate Show Expanded](xref:bimlflex-app-reference-documentation-setting-DvAccelerateShowExpanded) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable to set the default Accelerator view to show the Expanded view (Hubs, Links and Satellites) instead of the Data Vault Backbone (Only Hubs and Links).|
@@ -228,6 +231,7 @@ Align these settings with the organizations best practices and environmental req
 |[Add Record Source To Integration Key](xref:bimlflex-app-reference-documentation-setting-AddRecordSourceToIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Import Metadata will add "@@rs" to Integration Keys if true.|
 |[Change References To Integration Key](xref:bimlflex-app-reference-documentation-setting-ChangeReferencesToIntegrationKey) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the Import Metadata feature adds derived Integration Keys based on source references, or use source columns for references.|
 |[Import Views](xref:bimlflex-app-reference-documentation-setting-ImportViews) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if database Views are imported when importing Metadata.|
+|[Integration Key Concatenation Order](xref:bimlflex-app-reference-documentation-setting-IntegrationKeyConcatenationOrder) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Determines the column order in the derived Integration Key.|
 
 ## Naming
   
@@ -341,7 +345,7 @@ Align these settings with the organizations best practices and environmental req
 |[Use TRY_CAST Conversion](xref:bimlflex-app-reference-documentation-setting-UseTryCastConversion) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the select-to-stage tables uses TRY_CAST and TRY_CONVERT.|
 |[Select Blob Row Order By](xref:bimlflex-app-reference-documentation-setting-SelectBlobRowOrderBy) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|Row Order definition to use for Blob source queries.|
 |[Select Stage Row Distinct](xref:bimlflex-app-reference-documentation-setting-SelectStageRowDistinct) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the select-to-stage tables apply a row number function based on the defined key, or us a distinct based on the full row including the HASH.|
-|[Apply Extract Conversion In Data Flow](xref:bimlflex-app-reference-documentation-setting-ApplyExtractConversionInDataFlow) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.|
+|[Apply Extract Conversion In Data Flow](xref:bimlflex-app-reference-documentation-setting-ApplyExtractConversionInDataflow) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if SSIS extracts-to-file apply data conversion for target files in the SSIS Data Flow instead of in the source select statement.|
 
 ## Staging Naming
   
@@ -363,6 +367,7 @@ Align these settings with the organizations best practices and environmental req
 |  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
 | ---- | ------- | ----------- |
 |[Append Schema](xref:bimlflex-app-reference-documentation-setting-AppendSchemaPsa) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to add to the PSA objects when Staging and Persistent Staging are co-located in the same database.|
+|[Temporal Table Pattern Name](xref:bimlflex-app-reference-documentation-setting-PsaTemporalTableName) |![Text Datatype](images/svg-icons/text.svg "Text Datatype")|The string to add to the Temporal PSA objects when Staging and Persistent Staging are co-located in the same database.|
 |[Enable End Date](xref:bimlflex-app-reference-documentation-setting-EnableEndDatePsa) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Apply end dating in the PSA. This will allow timelines to be maintained in the PSA. Disable this to configure an insert-only approach for the PSA for optimized load performance.|
 |[Bypass Persistent Checks](xref:bimlflex-app-reference-documentation-setting-StageBypassPsaChecks) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Enable this to bypass lookups, and directly applies all records to the Staging and Persistent Staging tables.|
 |[Use Cache Lookup](xref:bimlflex-app-reference-documentation-setting-PsaUseCacheLookup) |![Text Datatype](images/svg-icons/boolean.svg "Boolean Datatype")|Determines if the PSA lookup caches the data to disk when using SSIS. Use this if it is not possible to use the normal in-memory lookup behavior due to memory constraints.|

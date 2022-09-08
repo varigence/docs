@@ -43,7 +43,7 @@ A single Batch per connection should be created. There is a one to one match bet
 
 A single Project per connection should be created. There is a one to one match between the Connection, the Object, the Batch and the Project in the ADF environment
 
-The Project should be configured to use the File connection, the separate file Batch, the Target connections and the Integration Template for ADF `ADF: Source -> Target`
+The Project should be configured to use the File connection, the separate file Batch, the Target connections and the Integration Template for ADF `Azure Data Factory`
 
 ### Object
 

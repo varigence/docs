@@ -39,6 +39,15 @@ Instead of using multiple entity types to handle these scenarios BimlFlex uses m
 |Business Subject | Categorizes Objects into a subject area grouping. This grouping can be used in the Data Vault Accelerator for constrained acceleration.|
 |Same as Inherited | Defines if the Inherit From Object is the same Object. Enabling this will instruct BimlFLex to reuse the inherited tables for loading.|
 |Use Inherited Name | Defines if the Inherit From Object has the same object. Entering Y into this column will instruct BimlFLex to reuse the inherited tables ObjectName for loading.|
+|Source File Path | The path where the source file are located. Not applicable to SQL Server Integration Services (SSIS) projects.|
+|Source File Pattern | The pattern of the source file. Not applicable to SQL Server Integration Services (SSIS) projects.|
+|Target File Path | The path where the target files should placed. Not applicable to SQL Server Integration Services (SSIS) projects.|
+|Target File Pattern | The pattern of the target file. Not applicable to SQL Server Integration Services (SSIS) projects.|
+|Databricks Partitioned By Clause | Databricks CREATE TABLE an optional clause to partition the table by a subset of columns.|
+|Databricks Location Clause | Databricks CREATE TABLE an optional path to the directory where table data is stored, which could be a path on distributed storage.|
+|Databricks Cluster By Clause | Databricks CREATE TABLE optionally cluster the table or each partition into a fixed number of hash buckets using a subset of the columns.|
+|Databricks Table Properties | Databricks CREATE TABLE optionally sets one or more user defined properties. Recommended to add `TBLPROPERTIES (delta.autoOptimize.optimizeWrite = true, delta.autoOptimize.autoCompact = true)`|
+|Databricks Option Clause | Databricks CREATE TABLE sets or resets one or more user defined table options.|
 |Column Names in First Data Row | This value specifies whether more descriptive column names are provided in the first data row to replace the column names specified in the Flat File Format Columns collection.|
 |Flat File Type | The Flat File Type provides options for the type of flat file row format that will be used.|
 |Data Rows to Skip | This value specifies how many data rows to skip before beginning to product data.|

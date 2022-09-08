@@ -6,17 +6,17 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
 
-# Dimension Table Loading Pattern
+# Dimension Loading Pattern
 
-The Dimension Load Pattern is configured in the metadata in a Data Mart project.
+The Dimension Load Pattern is configured in the BimlFlex metadata in a Data Mart **Project**. This is a project where the **Target Connection** has an **Integration Stage** of `Data Mart`.
 
-The load has a Source Object, normally an abstraction view, a staging table or a Data Vault construct.
+The **Source Connection** for the project can be a view, Staging Area object, or a Data Vault construct.
 
-The source object has an Integration Key set that is used for Dimension Lookups
+The **Integration Key** for the source object (the object(s) in the source connection) will be used for Dimension key lookups.
 
 The target Dimension Object can be cloned from the Source Object. The target has an additional Sequence Identified (Identity Column) added as the Primary Key of the Dimension.
 
-The ETL Pattern is implemented in, and orchestrated through, SSIS.
+## SSIS 'ETL' Implementation
 
 **Dimension Load** ETL Pattern for Type 1 Dimensions, implemented in the SSIS package
 
@@ -52,25 +52,25 @@ The ETL Pattern is implemented in, and orchestrated through, SSIS.
     1. DST - Load Destination Staging Table, and Dimension Table at Initial Load
 1. SQL - Merge Staged data into Target Table for non-initial loads
 
-#### Dimension ELT Patterns
+### Dimension ELT Patterns
 
-The ELT Pattern is implemented in SQL and orchestrated through SSIS or ADF as needed.
+The ELT Pattern is implemented in SQL and orchestrated through SSIS or ADF depending on the **Integration Template** of the **Project**.
 
-**Dimension Load** ELT Pattern for Type 1 Dimensions, implemented in a Stored Procedure
+The pattern for Type 1 Dimension loading, as implemented in a Stored Procedure, is as follows:
 
-1. Select into initial temporary Stage
+1. Select into initial temporary Staging table
     Derive Attribute Hash as needed
-1. Create Temporary Upsert Table from Stage and Target
+1. Create Temporary 'Upsert' Table from Stage and Target
 1. Update any existing, changed rows
 1. Insert any new rows
 
-**Dimension Load** ELT Pattern for Type 2 Dimensions, implemented in a Stored Procedure
+The pattern for Type 1 Dimension loading, as implemented in a Stored Procedure, is as follows:
 
 1. Select into initial temporary Stage
-    Derive Attribute Hash as needed for Type 1 and Type 2 sets
+    Derive Attribute Hash as needed for Type 1 and Type 2 column sets
     Derive Metadata as required
 1. Insert new and Type 2 changed rows in target
 1. End Date any Type 2 changes
     Dimensions have their rows Effective To and the next rows Effective From separated by a millisecond
-1. Create Temporary Upsert Table from Stage and Target for Type 1 changes
+1. Create Temporary 'Upsert' Table from Stage and Target for Type 1 changes
 1. Update any existing, changed Type 1 Attributes

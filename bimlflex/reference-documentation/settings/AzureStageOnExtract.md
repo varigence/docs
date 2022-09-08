@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Stage On Extract
 
-Determines if the Azure-based Extract and Load process runs the stage process for the extracted data in the destination Azure Synapse.
+Determines if the Azure-based Extract and Load process runs the stage process for the extracted data in the destination database
 
 Notes:
 

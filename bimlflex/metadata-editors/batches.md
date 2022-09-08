@@ -7,22 +7,22 @@ varigenceArticleType: Reference
 ---
 # Batch Editor
 
-BimlFlex **Batches** group and help to define an ETL/ELT workload.  They are used by **Projects** to set execution grouping.
-
-> [!IMPORTANT]
-> Detailed descriptions of all **Batch** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Batches).
+[!include[Connections](_incl-header-batch.md)]
 
 ## Overview
 
-The following sections describe the UI elements of the Batch Editor and how they are used to author and manage BimlFlex **Batches**.
+The following sections describe the User Interface elements of the Batch Editor and how they are used to author and manage BimlFlex **Batches**.
 
 ![BimlFlex - Batch Editor](images/bfx-batches-editor-overview.png "BimlFlex - Batch Editor")
 
-## Details Tab
+> [!NOTE]
+> Detailed descriptions of all **Batch Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-app-reference-documentation-Batches).
 
-The **Details Tab** focuses on general batch information and configuration.  This tab is used to define and create the **Batch** itself.
+## Batch Tab
 
-### Details Tab - Action Buttons  
+The **Batch Tab** is the first tab in the **Batch Editor**, and it is selected by default. The batch tab focuses on general batch information and configuration. This tab is used to define and create the batch itself.
+
+### Action Buttons  
 
 ![BimlFlex Batch Editor - Action Buttons](images/bfx-batches-action-buttons.png "BimlFlex Batch Editor - Action Buttons")
 
@@ -37,30 +37,40 @@ The **Details Tab** focuses on general batch information and configuration.  Thi
 > [!NOTE]
 > A **Batch** itself can not be excluded, only deleted. If certain parts of the data solution should be excluded, then this should be applied at **Project** level in the **Project Editor**.
 
+<!--
+### Triggers
+
+Azure Data Factory **Triggers** are supported in BimlFlex, for Projects that are configured to generate Azure Data Factory or Mapping Data Flows output. When a Project has either the `Azure Data Factory (ADF)` or `Azure Mapping Data Flows (ADF)` **Integration Template**, the  option to specify triggers will become available in the **Batch Editor** for the batch that is associated with the project.
+
+The generated trigger will be associated with the (batch-level) ADF Execute Pipeline for which they are specified.
+
+The Trigger feature supports `Tumbling Window` and `Scheduled` triggers to be created in ADF. Additional configurations that can be applied in the same editor are:
+
+* Name
+* Start- and End Date (timestamps)
+* Recurrence
+* Delay
+* Concurrency
+* Retry configuration
+* Runtime state
+
+![BimlFlex - Batch Editor](images/bfx-batches-editor-trigger.png "BimlFlex - Batch Editor")
+
+Additional information on trigger fields are found in the [batch reference documentation](xref:bimlflex-app-reference-documentation-Batches).
+-->
+
 ### Additional Dialogs
 
 [!include[Archive Batch Dialog](_dialog-archive-batch-single.md)]
 
-### Details Tab - Fields
-
-<img
-    src="images/bimlflex-app-editor-batches-fields.png"
-    title="Batch Editor Fields"
-/>
-
-|Field|Description|
-|-|-|
-| Batch | The name of the BimlFlex **Batch**.  This is the value that will be appended by "_Batch" and used in the naming of the batch DTSX (SSIS) or Pipeline (ADF). |
-| Precedence Constraint | BimlFlex **Batches** execute packages and the Precedence Constraint can be changed from Success to Completion to continue loading in case of individual failures. Must be a valid [Precedence Constraint](#precedence-constraints). |
-| Threads | The default number of packages that can be executed in parallel within the **Batch**. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel. |
-| Containers | The default number of sequence containers that can be executed within the **Batch**. Based on the topological sort and dependencies packages are grouped into execution layers. Within each layer (Sequence Container) multiple control flows pipelines can be executed in parallel. |
-| Description | Optional metadata to provide description. |
-| Use Ssis Express | Set this value to `true` when extracting data from a source that only has SQL Server Express installed. Note that with SSIS Express there is limited functionality. |
-| Use Orchestration | BimlFlex comes with an orchestration framework that will control the ability to restart a failed batch. Set this attribute to `false` if you would like to bypass the default behavior. |
-
 ### Allowed Values
 
-[!include[Precedence Constraints](_enum-precedence-constraint.md)]
+#### Precedence Constraints
+
+| Value      | Description          |
+| ---------- | -------------------- |
+| Success    | Automatically create precedence constraints so that tasks will run only run one after the other if the prior tasks are successful.|
+| Completion | Automatically create precedence constraints so that tasks will run one after the other after they are completed regardless of whether they succeed or fail. |
 
 ## Objects Tab
 

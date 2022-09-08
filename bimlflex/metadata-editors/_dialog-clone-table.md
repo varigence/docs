@@ -7,13 +7,7 @@ For example, if a given object is part of a project that targets a Data Vault **
 The most common use case for using the clone feature is to create a Data Mart target for a manually created view, typically sourcing from the Data Vault. This view has already been created for the intended target state and structure.
 
 > [!NOTE]
-> For more details on building a **Data Mart** see the associated link(s).
->
-> Getting Started:  
-> [Dimensional Model](xref:bimlflex-getting-started-dimensional-model)
->
-> Concepts:  
-> [Data Mart Templates](xref:bimlflex-data-delivery-index)
+> Please refer to the [**Data Mart**](xref:bimlflex-data-delivery-index) section for more information on delivering data using Data Marts and Dimensional Models.
 
 When cloning an object, please provide the intended *Target Schema*, choose your *Target Object Type*, set your [Clone Table Options](#clone-table-options) and click <img class="icon-inline" src="images/svg-icons/save.svg" /> **Save**.
 
