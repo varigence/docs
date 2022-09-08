@@ -21,7 +21,7 @@ BimlFlex 2022 R3 is installed and upgraded through a single consolidated install
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
 
-Build 22.2.168.0, release date: 25 May 2022
+Build 22.3.163.0, release date: 12 Sep 2022
 
 >
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
