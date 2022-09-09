@@ -1,7 +1,7 @@
 ---
-uid: bimlflex-release-notes-2022-r3
-name: BimlFlex Release Notes 2022 R3
-summary: Release Notes for BimlFlex 2022 R3
+uid: bimlflex-release-notes
+name: BimlFlex Release Notes
+summary: Release Notes for the current version of BimlFlex
 ---
 
 # Release Notes
@@ -28,7 +28,8 @@ Build 22.3.163.0, release date: 12 Sep 2022
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
 >[!NOTE]
->Manual database installation and update scripts should be used to update BimlFlex and BimlCatalog databases that require `Multi-Factor Authentication` due to this reported issue: [Microsoft DacServices not Work with SqlClient 5.0](https://github.com/microsoft/DacFx/issues/126).
+>Manual database installation and update scripts should be used to update BimlFlex and BimlCatalog databases that require `Multi-Factor Authentication` due to this reported issue: [Microsoft DacServices does not work with SqlClient 5.0](https://github.com/microsoft/DacFx/issues/126).
+>
 >
 >* [BimlFlex Database Manual Deployment](https://varigence.com/downloads/manual-deploy-bimlflex.zip). This script includes all BimlFlex components for a manual database deployment.
 >* [BimlCatalog Database Manual Deployment](https://varigence.com/downloads/manual-deploy-bimlcatalog.zip). This script includes all BimlCatalog components for a manual database deployment.
