@@ -27,6 +27,11 @@ Build 22.3.163.0, release date: 12 Sep 2022
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe). This installer includes all BimlFlex components
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
+Manual database instalation sripts should be used for `Multi Factor Authentication` due to this reported issue [DacServices not Work with SqlClient 5.0](https://github.com/microsoft/DacFx/issues/126).
+>
+* [BimlFlex Database Manual Deployment](https://varigence.com/downloads/manual-deploy-bimlflex.zip). This script includes all BimlFlex components for a manual database deployment.
+* [BimlCatalog Database Manual Deployment](https://varigence.com/downloads/manual-deploy-bimlcatalog.zip). This script includes all BimlCatalog components for a manual database deployment.
+
 ## 2022 R3 - New Features
 
 <!--
