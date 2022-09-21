@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-data-vault-business-data-vault
 title: Business Data Vault
-summary: Overview of implementing a Business Data Vault based on a Raw Data Vault
+summary: Overview of implementing a Business Data Vault based on a Data Vault
 varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
@@ -35,7 +35,7 @@ The BimlFlex recommended approach is to implement the above for each operational
 
 ### Batch
 
-A dedicated **Batch** can be defined for each operational system, so that the corresponding Business Data Vault objects are processed together - or at least when the Raw Data Vault for the required underlying objects has been completed.
+A dedicated **Batch** can be defined for each operational system, so that the corresponding Business Data Vault objects are processed together - or at least when the Data Vault for the required underlying objects has been completed.
 
 It is recommended to use a meaningful naming convention for the batch name, which can be used for the related project and connection also. For example 'derived', or 'bdv'.
 

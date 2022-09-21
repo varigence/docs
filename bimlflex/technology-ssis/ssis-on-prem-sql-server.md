@@ -8,7 +8,7 @@ varigenceArticleType: Conceptual
 
 # SSIS with on-premises SQL Server
 
-This document describes the steps and considerations for extracting data from a **Source** database and moving it through **Staging**, **Persisted Stage**, **Raw Data Vault**, and **Business Data Vault** on an on-premise SQL Server.
+This document describes the steps and considerations for extracting data from a **Source** database and moving it through **Staging**, **Persisted Stage**, **Data Vault**, and **Business Data Vault** on an on-premise SQL Server.
 
 ## Source to Stage (STG) and Persisted Stage (PSA)
 
@@ -131,13 +131,13 @@ WHERE p.PackageName = '01_EXT_AWLT_SRC_Batch'
 
 ---
 
-## Raw Data Vault (RDV)
+## Data Vault (DV)
 
-After Stage and Persisted Stage steps have been completed - setup can begin for the Raw Data Vault step of this process.
+After Stage and Persisted Stage steps have been completed - setup can begin for the Data Vault step of this process.
 
-In this scenario, setting up the RDV will include the following steps.
+In this scenario, setting up the DV will include the following steps.
 
-1. Configure the RDV Project
+1. Configure the DV Project
 1. Apply modeling overrides to the source metadata
     a. Object overrides
     b. Column overrides
@@ -152,23 +152,23 @@ In this scenario, setting up the RDV will include the following steps.
 1. Create BDV database and tables using BimlStudio script
 1. Build SSIS Packages for the target version
 1. Deploy database artifacts through the SSDT project
-1. Test run SSIS packages and validate the data that is loaded to the RDV
+1. Test run SSIS packages and validate the data that is loaded to the DV
 
-### Configure the RDV Project
+### Configure the DV Project
 
-1. Change the RDV connection's connection type.
+1. Change the DV connection's connection type.
 1. Enable acceleration of Linked Satellites.
 
-#### Change the RDV connection's connection Type
+#### Change the DV connection's connection Type
 
 1. Navigate to **Connections**  
   ![ssis-op-sql-menu-connections.png](images/ssis-op-sql-menu-connections.png)
-1. Select the BFX_RDV Connection  
+1. Select the BFX_DV Connection  
   ![ssis-op-sql-connections-list.png](images/ssis-op-sql-connections-list.png)
 1. Change the Connection Type to "OLEDB" or "OLEDB with ELT" and save  
   ![ssis-op-sql-connections-save.png](images/ssis-op-sql-connections-save.png)
 
-At this point, the RDV can be configured to work with ETL or ELT. For ETL choose the standard Connection Type, i.e. "OLEDB". For ELT choose the connection type that specifies ELT, i.e. "OLEDB with ELT".
+At this point, the DV can be configured to work with ETL or ELT. For ETL choose the standard Connection Type, i.e. "OLEDB". For ELT choose the connection type that specifies ELT, i.e. "OLEDB with ELT".
 
 ### Model Data Vault Metadata
 
@@ -176,7 +176,7 @@ Objects, Columns, Parameters, and Attributes may need to be modified. For exampl
 
 ### Accelerate and Publish
 
-To complete the RDV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator).
+To complete the DV setup in BimlFlex, accelerate all tables and publish. For information on how to accelerate and publish, see the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator).
 
 1. In the **Accelerator**, select all tables then click **Publish**  
 1. In BimlStudio, generate the Create Table scripts again  
@@ -217,7 +217,7 @@ Make any necessary changes to the Business Data Vault Metadata. For more informa
 Once the BDV entities are modeled we will need to deploy the structures.  For this we use BimlStudio.  By default, BimlStudio will attempt to build all our artifacts.  Before we can do that we will require that the entities exist else we will get an error when attempting to validate the SSIS packages.  This is resolved by first generating and executing the [Create Tables Script] before building.  BimlStudio will also build an SSDT project should you want the ability to deploy via DACPAC or publish directly from Visual Studio.  The following section outlines the steps required to add new BDV entities (PITs and/or BRGs) to the Data Vault.
 
 > [!IMPORTANT]
-> Please ensure you follow prior deployment guides for STG, PSA, and RDV.
+> Please ensure you follow prior deployment guides for STG, PSA, and DV.
 
 #### Manually Deploy Tables
 
@@ -286,11 +286,11 @@ Publishing projects via SSDT (or the built DACPAC) is the equivalent of running 
 1. Open the `SSDTS` folder.  
 1. Open the folder with your `Customer GUID`.  
 1. Open the folder for the `Version` you just built.  
-1. Open the `BFX_RDV` folder.  
-1. Select the `BFX_RDV.sqlproj` file and click **Open**.  
+1. Open the `BFX_DV` folder.  
+1. Select the `BFX_DV.sqlproj` file and click **Open**.  
 1. Navigate to the  Solution Explorer on the right.  
   ![Visual Studio Solution Explorer](images/ssis-op-sql-ssdt-1.png "Visual Studio Solution Explorer")
-1. Right-Click the project `BFX_RDV`.  
+1. Right-Click the project `BFX_DV`.  
   ![Right Click Project](images/ssis-op-sql-ssdt-2.png "Right Click Project")
 1. Select *Publish...* to get the Publish Database dialog box.  
   ![Publish Database Dialog](images/ssis-op-sql-ssdt-3.png "Publish Database Dialog")
@@ -306,7 +306,7 @@ Publishing projects via SSDT (or the built DACPAC) is the equivalent of running 
    > The demo lab uses Windows Authentication.
 1. Input the Database Name.  
    > [!NOTE]
-   > The demo uses "BFX_RDV".
+   > The demo uses "BFX_DV".
 1. Click **OK**.  
 1. Click **Publish**  
    ![Publish](images/ssis-op-sql-ssdt-6.png)
@@ -317,7 +317,7 @@ Publishing projects via SSDT (or the built DACPAC) is the equivalent of running 
 1. Deployment via SSDT complete.  
 
    > [!IMPORTANT]
-   > It should be noted again that this is only for the RDV / BDV layer.  This does not deploy any Staging (STG) or Persistent Staging (PSA) tables or artifacts.  Additionally, this is only for the tables and does not include any SSIS packages that may be required.
+   > It should be noted again that this is only for the DV / BDV layer.  This does not deploy any Staging (STG) or Persistent Staging (PSA) tables or artifacts.  Additionally, this is only for the tables and does not include any SSIS packages that may be required.
 
 ---
 
@@ -347,8 +347,8 @@ Once the projects are built the next step in the process is to execute the packa
 
 1. Open the output folder.
 
-1. Open the LOAD_BFX_RDV folder.
+1. Open the LOAD_BFX_DV folder.
 
-1. Select LOAD_BFX_RDV_Project.dtproj and click *Open*.
+1. Select LOAD_BFX_DV_Project.dtproj and click *Open*.
 
 1. Run SSIS Packages

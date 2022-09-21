@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-data-vault-dimensional-model
 title: Data Vault Dimensional Model
-summary: Overview of implementing a Dimensional Model based on a Raw Data Vault
+summary: Overview of implementing a Dimensional Model based on a Data Vault
 varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---

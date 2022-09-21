@@ -167,7 +167,7 @@ Rollback will remove partially loaded rows from the target tables. Depending on 
 * If the integration stage is Source the target table will be truncated.
 * If the integration stage is not in the data warehouse, an ExecuteSQL task with a `DELETE` is executed on all records in the target table where the LastExecutionID is greater than the latest successful batch execution.
 * If the integration stage is Source and the data is being persisted in a PSA environment, an ExecuteSQL task with a `DELETE` statement is executed on all records in the target table in Persisted Staging where the LastExecutionID is greater than the latest successful batch execution.
-* If the integration stage is data vault (RDV/BDV) and the target tables are either a Satellite or Link Satellite, an update is executed on the table, setting the `RowEffectiveToDate` to `9999-12-31` and the `RowIsCurrent` to `true` where the `LastExecutionID` is greater than the latest successful batch execution.
+* If the integration stage is data vault (DV/BDV) and the target tables are either a Satellite or Link Satellite, an update is executed on the table, setting the `RowEffectiveToDate` to `9999-12-31` and the `RowIsCurrent` to `true` where the `LastExecutionID` is greater than the latest successful batch execution.
 * If the integration stage is in the data warehouse or data mart, the regular loading of data via hashed rows will detect the data that needs to be updated and will be synced as normal operation.
 
 ### Sample Execution Error workflow
@@ -218,4 +218,4 @@ The rollback function is controlled per layer in the Configurations and all are 
 | ----------------- | ------------------ |
 | EnableRollbackStg | N |
 | EnableRollbackPsa | N |
-| EnableRollbackRdv | N |
+| EnableRollbackDv | N |

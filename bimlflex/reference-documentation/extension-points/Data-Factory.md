@@ -700,20 +700,20 @@ dataFactoryName | String | The Azure Data Factory name the Extension Point is ap
 			</Dependencies>
 		</ExecutePipeline>
 		<!-- Run Data Vault PIT and BRG Pipelines -->
-		<ExecutePipeline Name="01_LOAD_BFX_RDV_BRG_Batch" PipelineName="01_LOAD_BFX_RDV_BRG_Batch" WaitOnCompletion="true">
+		<ExecutePipeline Name="01_LOAD_BFX_DV_BRG_Batch" PipelineName="01_LOAD_BFX_DV_BRG_Batch" WaitOnCompletion="true">
 			<Dependencies>
 				<Dependency DependsOnActivityName="01_EXT_AWLT_SRC_DEL_Batch" Condition="Succeeded"></Dependency>
 			</Dependencies>
 		</ExecutePipeline>
-		<ExecutePipeline Name="01_LOAD_BFX_RDV_PIT_Batch" PipelineName="01_LOAD_BFX_RDV_PIT_Batch" WaitOnCompletion="true">
+		<ExecutePipeline Name="01_LOAD_BFX_DV_PIT_Batch" PipelineName="01_LOAD_BFX_DV_PIT_Batch" WaitOnCompletion="true">
 			<Dependencies>
-				<Dependency DependsOnActivityName="01_LOAD_BFX_RDV_BRG_Batch" Condition="Succeeded"></Dependency>
+				<Dependency DependsOnActivityName="01_LOAD_BFX_DV_BRG_Batch" Condition="Succeeded"></Dependency>
 			</Dependencies>
 		</ExecutePipeline>
 		<!-- Run Data Mart Pipeline -->
 		<ExecutePipeline Name="01_LOAD_BFX_DM_Batch" PipelineName="01_LOAD_BFX_DM_Batch" WaitOnCompletion="true">
 			<Dependencies>
-				<Dependency DependsOnActivityName="01_LOAD_BFX_RDV_PIT_Batch" Condition="Succeeded"></Dependency>
+				<Dependency DependsOnActivityName="01_LOAD_BFX_DV_PIT_Batch" Condition="Succeeded"></Dependency>
 			</Dependencies>
 		</ExecutePipeline>
 	</Activities>
@@ -1161,7 +1161,7 @@ var outputPathName = "SQL_PROCESS_DV";
 <Script Name="<#=outputPathName#>" Timeout="0.00:30:00" LinkedServiceName="<#=targetTable.Connection.RelatedItem.Name#>">
     <Scripts>
         <Script ScriptType="Query">
-            <Query>CALL rdv.flex_<#=targetTable.Connection.RelatedItem.RecordSource#>_<#=targetTable.ObjectName#>;</Query>
+            <Query>CALL dv.flex_<#=targetTable.Connection.RelatedItem.RecordSource#>_<#=targetTable.ObjectName#>;</Query>
             <Parameters>
 				<Parameter Name="RowAuditId" DataType="Int64" Direction="Input" TreatAsNull="false">@activity('LogExecutionStart').output.firstRow.ExecutionID</Parameter>
             </Parameters>

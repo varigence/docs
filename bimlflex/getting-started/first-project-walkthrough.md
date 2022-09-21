@@ -77,11 +77,11 @@ The BimlFlex App provides a graphical accelerator allowing the modeler to create
 
 When the preview matches the model expectations, it is published to the metadata repository. This can be done by selecting *all* objects for the 'AWLT_SRC' connection and clicking the **Publish** button. The column and object names will change from cursive to regular, indicating that the changes have been committed.
 
-The new Data Vault objects can be reviewed in the BimlFlex App, in the Data Vault Project under the objects tab, or as part of the objects in the [**Treeview**](xref:bimlflex-treeview) under the connection that has been configured for the Data Vault layer in the solution - 'BFX_RDV' in this example.
+The new Data Vault objects can be reviewed in the BimlFlex App, in the Data Vault Project under the objects tab, or as part of the objects in the [**Treeview**](xref:bimlflex-treeview) under the connection that has been configured for the Data Vault layer in the solution - 'BFX_DV' in this example.
 
 ![BimlFlex Accelerator](images/bimlflex-accelerator-after-publish.png "BimlFlex Accelerator")
 
-If any objects need to be changed, these can always be archived from the 'BFX_RDV' connection and re-accelerated. In BimlFlex, design metadata is saved against the source objects. Any time the Accelerator is used, the relevant information will be evaluated against what has been defined in the source objects.
+If any objects need to be changed, these can always be archived from the 'BFX_DV' connection and re-accelerated. In BimlFlex, design metadata is saved against the source objects. Any time the Accelerator is used, the relevant information will be evaluated against what has been defined in the source objects.
 
 ## Building the Data Vault Project
 
@@ -234,7 +234,7 @@ BimlFlex will use a null default value placeholder for PIT and BRG entities with
 
 Scrips for these placeholder records are created through the `Generate Script`, `Data Vault Default Insert Script`. This will generate SQL insert scripts for all relevant entities. Deploy these to the Data Vault database to simplify the required queries.
 
-The script is also part of the SSDT Database project for the RDV database, in the form of a Post Deployment script.
+The script is also part of the SSDT Database project for the DV database, in the form of a Post Deployment script.
 
 Run the placeholder create script in SQL Server Management Studio to create the placeholder values.
 
@@ -252,8 +252,8 @@ Once the metadata for the PIT and BRG objects has been loaded in BimlStudio ther
 
 The default name for these are built out of the Data Vault load name with either PIT or BRG added, in the trial demo case the following Batch packages are added to the Load Data Vault SSIS project:
 
-* `LOAD_BFX_RDV_BRG_Batch`
-* `LOAD_BFX_RDV_PIT_Batch`
+* `LOAD_BFX_DV_BRG_Batch`
+* `LOAD_BFX_DV_PIT_Batch`
 
 These batches allow easy scheduling and orchestration of the Stored Procedure execution through SSIS.
 
@@ -270,7 +270,7 @@ This type of layer has many names, Information Mart, Data Mart, Kimball Model, D
 
 The getting started process follows the general dimensional approach of building Fact tables that contain metrics and connections to Dimension members and Dimension tables that contain descriptive attributes.
 
-While the Raw Data Vault is loaded with uninterpreted data, the Dimensional model normally requires that a set of Business rules are applied to the data so that it is fit for the required analytical purpose. In the process of creating the end to end solution, it is common to also create raw versions of these artifacts that are used to refine the business rules used to create the final model.
+While the Data Vault is loaded with uninterpreted data, the Dimensional model normally requires that a set of Business rules are applied to the data so that it is fit for the required analytical purpose. In the process of creating the end to end solution, it is common to also create raw versions of these artifacts that are used to refine the business rules used to create the final model.
 
 In this process, both Fact and Dimensional source views are created, based either on the staging tables or the raw Data Vault or on the Point In Time and Bridge tables in the Data Vault layer. These are used to populate a dimensional model in a Data Mart as a presentation/reporting layer.
 
@@ -278,7 +278,7 @@ Querying the Data Vault layer can be made easier by utilizing the Point In Time 
 
 ### Architecture
 
-The Dimensional model is created in the BimlFlex metadata in the form of a source to target mappings set of objects and columns. The source is generally implemented as a view on top of the existing staging or Data Vault constructs. For Data Vault, this includes tables from the Raw Data Vault, Business Vault constructs, Point In Time and Bridge tables and any extra required interpretation views and abstraction views that are required to feed the dimensional model.
+The Dimensional model is created in the BimlFlex metadata in the form of a source to target mappings set of objects and columns. The source is generally implemented as a view on top of the existing staging or Data Vault constructs. For Data Vault, this includes tables from the Data Vault, Business Vault constructs, Point In Time and Bridge tables and any extra required interpretation views and abstraction views that are required to feed the dimensional model.
 
 For the getting started process, a set of views are provided in the sample metadata and used as the source objects for the dimensional model.
 

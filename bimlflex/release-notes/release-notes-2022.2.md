@@ -172,7 +172,7 @@ A major advantage of using Script Activities is broader support for connection t
 
 ### Extension Points
 
-* Fixed an issue where targeting _implicitly_ named **Batches**, such as the Raw Data Vault batches, did to work. Users can now correctly target Batch pipelines by their name in all cases
+* Fixed an issue where targeting _implicitly_ named **Batches**, such as the Data Vault batches, did to work. Users can now correctly target Batch pipelines by their name in all cases
 
 ## BimlStudio 2022 R2
 

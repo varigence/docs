@@ -49,10 +49,10 @@ The following options are available:
 | <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Object Details | This open the [Object Side Panel](xref:bimlflex-schema-diagram#object-side-panel), which will allow modification of various **Object** details.|
 | <div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | Show Related | Add the **Objects** to the canvas that have a relationship (reference) to, or from, the selected **Object**.|
 | <div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | Add Integration Key | Opens the **Integration Key Editor** screen, so that a new integration key can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Source System`.|
-| <div class="icon-col m-5"><img src="images/svg-icons/create-bridge.svg"/></div> | Create Bridge | Opens the **Bridge Editor** screen, so that a new Bridge table can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Raw Data Vault` and the **Object Type** is `Hub`.|
-| <div class="icon-col m-5"><img src="images/svg-icons/create-pit.svg"/></div> | Create PIT | Opens the **Point-In-Time Editor** screen, so that a new Point-In-Time (PIT) table can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Raw Data Vault` and the **Object Type** is `Hub`.|
+| <div class="icon-col m-5"><img src="images/svg-icons/create-bridge.svg"/></div> | Create Bridge | Opens the **Bridge Editor** screen, so that a new Bridge table can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Data Vault` and the **Object Type** is `Hub`.|
+| <div class="icon-col m-5"><img src="images/svg-icons/create-pit.svg"/></div> | Create PIT | Opens the **Point-In-Time Editor** screen, so that a new Point-In-Time (PIT) table can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Data Vault` and the **Object Type** is `Hub`.|
 
-If an **Object** is part of a **Connection** that has the `Raw Data Vault` **Integration Stage** additional options Clicking on the ellipsis for any column will show the column-level action options:
+If an **Object** is part of a **Connection** that has the `Data Vault` **Integration Stage** additional options Clicking on the ellipsis for any column will show the column-level action options:
 
 ### Object Side Panel
 

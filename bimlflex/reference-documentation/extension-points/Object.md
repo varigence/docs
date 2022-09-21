@@ -1989,7 +1989,7 @@ var persistentTable = new TableObject(table, "PSA", "PSA");
 var tableConfigurations = new TableConfigurations(table, "STG");
 var psaTableConfigurations = new TableConfigurations(table, "PSA");
 var enableEndDatePsa = tableConfigurations.EnableEndDatePsa;
-var enableEndDateRdv = tableConfigurations.DvEndDateSatellite;
+var enableEndDateDv = tableConfigurations.DvEndDateSatellite;
 var isCurrent = tableConfigurations.RowIsCurrent.PersistentStagingAttribute;
 var deleteObjectNamePattern = tableConfigurations.DeleteObjectNamePattern;
 
@@ -2046,7 +2046,7 @@ var sqlPsaSelectMultiActiveKeys = "";
 var sqlPsaSatSelectMultiActiveKeys = "";
 foreach (var multiActiveKey in sqlPsaMultiActiveKeys)
 {
-	var sqlCompareMultiActiveKeys = multiActiveKey.GetSqlToBk(stagingTable.StartDelimiter, stagingTable.EndDelimiter, "PSA", "RDV");
+	var sqlCompareMultiActiveKeys = multiActiveKey.GetSqlToBk(stagingTable.StartDelimiter, stagingTable.EndDelimiter, "PSA", "DV");
 	sqlPsaSelectMultiActiveKeys += $"\n\t\t\t\t,{sqlCompareMultiActiveKeys}";
 	sqlPsaSatSelectMultiActiveKeys += $"\n\t\t\t\t,{sqlCompareMultiActiveKeys} AS {sd}{multiActiveKey.GetColumnName()}{ed}";
 	sqlPsaCompareMultiActiveKeys += $"\n\t\t\tAND\t{sqlCompareMultiActiveKeys} = {sqlCompareMultiActiveKeys.Replace("PSA.", "DEL.")}";
@@ -2126,9 +2126,9 @@ BEGIN
 </ExecuteSQL>
 ```
 
-## Delete Detect Apply Rdv Override
+## Delete Detect Apply Dv Override
 
-Override the SQL that is used by the Delete Detection Raw Data Vault process
+Override the SQL that is used by the Delete Detection Data Vault process
 
 ### Parameters
 
@@ -2147,7 +2147,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DeleteDetectionApplyRdv" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DeleteDetectionApplyDv" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="precedenceConstraint" type="String" #>
 
@@ -2159,7 +2159,7 @@ var persistentTable = new TableObject(table, "PSA", "PSA");
 var tableConfigurations = new TableConfigurations(table, "STG");
 var psaTableConfigurations = new TableConfigurations(table, "PSA");
 var enableEndDatePsa = tableConfigurations.EnableEndDatePsa;
-var enableEndDateRdv = tableConfigurations.DvEndDateSatellite;
+var enableEndDateDv = tableConfigurations.DvEndDateSatellite;
 var isCurrent = tableConfigurations.RowIsCurrent.PersistentStagingAttribute;
 var deleteObjectNamePattern = tableConfigurations.DeleteObjectNamePattern;
 
@@ -2216,7 +2216,7 @@ var sqlPsaSelectMultiActiveKeys = "";
 var sqlPsaSatSelectMultiActiveKeys = "";
 foreach (var multiActiveKey in sqlPsaMultiActiveKeys)
 {
-	var sqlCompareMultiActiveKeys = multiActiveKey.GetSqlToBk(stagingTable.StartDelimiter, stagingTable.EndDelimiter, "PSA", "RDV");
+	var sqlCompareMultiActiveKeys = multiActiveKey.GetSqlToBk(stagingTable.StartDelimiter, stagingTable.EndDelimiter, "PSA", "DV");
 	sqlPsaSelectMultiActiveKeys += $"\n\t\t\t\t,{sqlCompareMultiActiveKeys}";
 	sqlPsaSatSelectMultiActiveKeys += $"\n\t\t\t\t,{sqlCompareMultiActiveKeys} AS {sd}{multiActiveKey.GetColumnName()}{ed}";
 	sqlPsaCompareMultiActiveKeys += $"\n\t\t\tAND\t{sqlCompareMultiActiveKeys} = {sqlCompareMultiActiveKeys.Replace("PSA.", "DEL.")}";
@@ -2227,9 +2227,9 @@ foreach (var multiActiveKey in sqlPsaMultiActiveKeys)
 	var satelliteObjectType = satellite.ObjectType;
 	var hubPk = satellitePk.ReferenceColumn.RelatedItem;
 	var hubObject = hubPk.Object.RelatedItem;
-	var rdvConnection = satellite.Connection.RelatedItem;
-	var satelliteTable = new TableObject(satellite, "RDV", "SAT");
-	var hubTable = new TableObject(hubPk.Object.RelatedItem, "RDV", "HUB");
+	var dvConnection = satellite.Connection.RelatedItem;
+	var satelliteTable = new TableObject(satellite, "DV", "SAT");
+	var hubTable = new TableObject(hubPk.Object.RelatedItem, "DV", "HUB");
 	var satelliteConfigurations = new TableConfigurations(satellite, "SAT");
 
 	var satelliteConfigurationsQualifiedRowIsCurrent = satelliteConfigurations.RowIsCurrent.SatelliteAttribute == "IGN" ? "" : satelliteConfigurations.QualifiedRowIsCurrent;
@@ -2254,7 +2254,7 @@ foreach (var multiActiveKey in sqlPsaMultiActiveKeys)
 			var targetLinkColumn = linkHubColumn.TargetColumn.RelatedItem;
 			var targetLinkHubColumn = targetLinkColumn.ReferenceColumn.RelatedItem;
 			if (targetLinkHubColumn == null) continue;
-			var linkHubTable = new TableObject(targetLinkHubColumn.Object.RelatedItem, "RDV", "HUB");
+			var linkHubTable = new TableObject(targetLinkHubColumn.Object.RelatedItem, "DV", "HUB");
 			//.Where(c => c.ReferenceColumn.RelatedItem != null && new []{"HUB"}.Contains(c.ReferenceColumn.RelatedItem.Object.RelatedItem.ObjectType) && c.Object.RelatedItem == hubObject);
 
 			linkHubJoinSk += $"\n\t\tINNER JOIN {linkHubTable.QualifiedName} H{iHub}\n\t\t\tON\tHUB.{sd}{targetLinkColumn.GetColumnName()}{ed} = H{iHub}.{linkHubTable.PrimaryKeyQualifiedName}";
@@ -2270,11 +2270,11 @@ foreach (var multiActiveKey in sqlPsaMultiActiveKeys)
 
 
 			linkPsaBk = linkPsaBk.Substring(1);
-			var lsatHubTable = new TableObject(mappedHubObject, "RDV", "HUB");
+			var lsatHubTable = new TableObject(mappedHubObject, "DV", "HUB");
 			//linkHubJoin = $"\n\t\tINNER JOIN {lsatHubTable.QualifiedName} LHUB\n\t\t\tON\tHUB.[{linkHubColumn.GetColumnName()}] = LHUB.[{lsatHubTable.GetPrimaryKey().GetColumnName()}]";
 			//psaKeyJoin = $"\tON\tLHUB.[{lsatHubTable.BusinessKey.GetColumnName()}] = ";
 		} else if (satelliteObjectType == "LSAT" && mappedHubObject != null) {
-			var lsatHubTable = new TableObject(mappedHubObject, "RDV", "HUB");
+			var lsatHubTable = new TableObject(mappedHubObject, "DV", "HUB");
 			linkHubJoinSk = $"\n\t\tINNER JOIN {lsatHubTable.QualifiedName} LHUB\n\t\t\tON\tHUB.{lsatHubTable.PrimaryKeyQualifiedName} = LHUB.{lsatHubTable.PrimaryKeyQualifiedName}";
 			linkHubJoinBk = $"\n\t\tAND\tLHUB.{lsatHubTable.IntegrationKeyQualifiedName} = PSA.{stagingTable.IntegrationKeyQualifiedName}";
 		hubAlias = "LHUB";
@@ -2283,7 +2283,7 @@ foreach (var multiActiveKey in sqlPsaMultiActiveKeys)
 			hubAlias = "HUB";
 		}
 #>
-<ExecuteSQL Name="SQL - Insert Deleted Into <#=satellite.ObjectName.MakeSsisSafe()#>" ConnectionName="<#=rdvConnection.Name #>" ResultSet="None">
+<ExecuteSQL Name="SQL - Insert Deleted Into <#=satellite.ObjectName.MakeSsisSafe()#>" ConnectionName="<#=dvConnection.Name #>" ResultSet="None">
 	<#	if (!string.IsNullOrEmpty(precedenceConstraint)) {#>
 	<PrecedenceConstraints>
 		<Inputs>
@@ -2321,7 +2321,7 @@ BEGIN
 			ON		HUB.[<#=hubPk.GetColumnName()#>] = SAT.[<#=satellitePk.GetColumnName() #>]<#=linkHubJoinSk #>
 			AND EXISTS (
 				SELECT 1 FROM (
-						SELECT	 <#if (!string.IsNullOrEmpty(linkPsaBk)) {#><#=linkPsaBk #><#} else {#><#=stagingTable.IntegrationKey.GetSqlToBk(sd, ed, "PSA", "RDV")#> AS <#=stagingTable.IntegrationKeyQualifiedName#>
+						SELECT	 <#if (!string.IsNullOrEmpty(linkPsaBk)) {#><#=linkPsaBk #><#} else {#><#=stagingTable.IntegrationKey.GetSqlToBk(sd, ed, "PSA", "DV")#> AS <#=stagingTable.IntegrationKeyQualifiedName#>
 		<#} #><#=sqlPsaSatSelectMultiActiveKeys #>
 					FROM	<#=deleteTableDatabaseQualifiedName #> PSA ) AS DEL
 				WHERE

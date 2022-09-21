@@ -169,7 +169,7 @@ The settings have been updated. New settings are available, some settings have b
 | SsisFolder              | The SSIS Catalog folder name to use for generated Script files |
 | SsisServer              | The SSIS Server name to use for generated Script files |
 | DeleteDetectionApplyPsa | Use default process to insert detected deletes into the Persistent table. This can be overridden by the "DeleteDetectionApplyPsa" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
-| DeleteDetectionApplyRdv | Use default process to insert detected deletes into the Data Vault Satellite tables. This can be overridden by the "DeleteDetectionApplyRdv" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
+| DeleteDetectionApplyDv | Use default process to insert detected deletes into the Data Vault Satellite tables. This can be overridden by the "DeleteDetectionApplyDv" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting |
 | PsaDeltaDetectionSql    | Should the delta detection for PSA load use SQL |
 | PsaDeltaLateArriving    | Does the PSA load include late arriving deltas |
 | PsaDeltaSingleChange    | Set this to "Y" if loading into PSA and the Delta only has single changes to each key. This will provide optimized ELT loads |
@@ -264,7 +264,7 @@ BimlFlex 2020 Preview
 * Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
 * Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here [BimlFlex COZYROC Excel Plus Source](xref:bimlflex-source-excel-plus)
 * Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical namespaces). A new utility app is available to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
-* New Extension Points: `RdvPreProcessSql`, `RdvPostProcessSql` allows injection of SQL logic in the RDV load SQL Stored Procedures.
+* New Extension Points: `DvPreProcessSql`, `DvPostProcessSql` allows injection of SQL logic in the DV load SQL Stored Procedures.
 * Update: Some `Generate Scripts` menu options have had their `By Source` suffix removed.
 
 > [!NOTE]

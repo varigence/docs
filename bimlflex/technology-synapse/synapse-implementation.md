@@ -73,7 +73,7 @@ If the same physical database is to participate in multiple **Integration Stages
 
 When using Azure Synapse as the **Target Warehouse Environment** it is recommended`*` that you use the same database for storage and separate the layers via schema and naming conventions, unless specific organizational or architectural concerns are preventing this.
 
-This may result in the **Staging Area**, **Persistent Staging Area**, **Raw Data Vault** and **Data Mart** all pointing to the same database.
+This may result in the **Staging Area**, **Persistent Staging Area**, **Data Vault** and **Data Mart** all pointing to the same database.
 
 ### Connection Details
 
@@ -149,9 +149,9 @@ Viewing configuration for a **Staging Area**.
 
 Viewing configuration for a **Persistent Staging Area**.
 
-### [Raw Data Vault (RDV)](#tab/rdv)
+### [Data Vault (DV)](#tab/dv)
 
-Viewing configuration for a **Raw Data Vault**.
+Viewing configuration for a **Data Vault**.
 
 ### [Data Mart (DM)](#tab/dm)
 
@@ -303,27 +303,27 @@ Viewing configuration for a **Data Mart**.
 | Connection String | Data Source=mysqlserver.database.windows.net,1433;Initial Catalog=BFX_DW;Provider=SQLNCLI11.1;User ID=userName;Password=P@$$Word; |
 | Catalog           | BFX_DW                                                                                                                            |
 
-#### [Description](#tab/connection-description/rdv)
+#### [Description](#tab/connection-description/dv)
 
 | Field             | Description                                                                                  |
 | ----------------- | -------------------------------------------------------------------------------------------- |
 | Connection        | Name of the **Connection**.  Must be unique.                                                 |
-| Integration Stage | Raw Data Vault                                                                               |
+| Integration Stage | Data Vault                                                                               |
 | Connection Type   | { OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }                               |
 | System Type       | Azure Synapse                                                                                |
 | Description       | An optional description for the **Connection**                                               |
 | Connection String | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database. |
 | Catalog           | Name of the Database (Ensure this matches the `Initial Catalog` in your connection string)   |
 
-#### [Example](#tab/connection-example/rdv)
+#### [Example](#tab/connection-example/dv)
 
 | Field             | Description                                                                                                                       |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | Connection        | BFX_DM                                                                                                                            |
-| Integration Stage | Raw Data Vault                                                                                                                    |
+| Integration Stage | Data Vault                                                                                                                    |
 | Connection Type   | OLEDB SQL Based ELT                                                                                                               |
 | System Type       | Azure Synapse                                                                                                                     |
-| Description       | Connection to an Azure Synapse Raw Data Vault                                                                                     |
+| Description       | Connection to an Azure Synapse Data Vault                                                                                     |
 | Connection String | Data Source=mysqlserver.database.windows.net,1433;Initial Catalog=BFX_DW;Provider=SQLNCLI11.1;User ID=userName;Password=P@$$Word; |
 | Catalog           | BFX_DW                                                                                                                            |
 

@@ -36,9 +36,9 @@ For addition details of alternate configurations refer to the [detailed configur
 ### High Level Steps
 
 * Start with a sample metadata set. This example uses the `01 - MSSQL Starting Point`, which includes connections for a sample on-premises SSIS data solution including **Batch** and **Project** definitions
-* Archive the `BFX_RDV` and `BFX_DM` **Project** and **Batches** to minimize the amount of additional metadata that is visible in the app
+* Archive the `BFX_DV` and `BFX_DM` **Project** and **Batches** to minimize the amount of additional metadata that is visible in the app
 * Update the `EXT_AWLT_SRC` extract **Project** to have the target set to the staging area connection, `BFX_STG`
-* Archive the `BFX_RDV` and `BFX_DM` **Connections**
+* Archive the `BFX_DV` and `BFX_DM` **Connections**
 * Navigate to the Connections page, create a Landing connection by duplicating the BFX_STG connection
   * Name the new connection `BFX_LND`
   * Update the **Integration Stage**for the **Connection** to `Landing Area`

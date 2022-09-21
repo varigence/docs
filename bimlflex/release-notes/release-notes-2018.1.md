@@ -70,7 +70,7 @@ FROM
 
 * Add: new validator to check Data Mart objects and projects. For a Data Mart load the mapped objects needs to be in the same project. If table/view `sourceForFactTable` has source to target mappings to load to `FactTable` then both these objects needs to be part of the same project (such as project `Load_DataMart`). This is enforced to ensure that multiple load processes are properly separated in BimlFlex.
 * Update: to the end dating logic for SSIS PSA loads to allow multiple loaded updates to be end dated efficiently.
-* Update: added additional Batch logic to separate multiple Batches in projects with multiple sources into separate Batch packages for Azure SQL Data Warehouse loads. The new Batch name will include the Connection Record Source (`BFX_LOAD_RDV_Batch` -> `BFX_LOAD_RDV_AWLT_Batch`). This allows multiple sources to be maintained within the same Project/Batch metadata even if there are object name duplications.
+* Update: added additional Batch logic to separate multiple Batches in projects with multiple sources into separate Batch packages for Azure SQL Data Warehouse loads. The new Batch name will include the Connection Record Source (`BFX_LOAD_DV_Batch` -> `BFX_LOAD_DV_AWLT_Batch`). This allows multiple sources to be maintained within the same Project/Batch metadata even if there are object name duplications.
 
 ## Bundle 63403
 
@@ -96,13 +96,13 @@ FROM
 * Add: `ModelGrouping` to DataVault Accelerator. Please read this blog post for more information: [Agile Data Vault Acceleration](https://www.varigence.com/Blog/Post/84)
 * Add: Support for Data Vault `Same As` and `Hierarchy` Links in the `ModelObjectType`, including the ability to specify naming convention in the Settings using `DvAppendSameAsLink` and `DvAppendHierarchyLink`
 * Add: Support for `Snowflake` SRC - STG - PSA including an SSIS Custom Task. This is work in progress and we are working with a customer in a private preview. This is in `BETA` at the moment and not for production use.
-* Add: `GROUP BY` clause to `Hub` and `Link` lookups to return unique list when used with `ApplyLookupFilterRdv = "Y"`
+* Add: `GROUP BY` clause to `Hub` and `Link` lookups to return unique list when used with `ApplyLookupFilterDv = "Y"`
 * Add: Functionality to support file source in line expressions. You can now use `SsisExpression` like `REPLACENULL(RAW_@@this, "")` with `ColumnAlias` set to `RAW_@@this` and `DataTypeMapping` like `String(20)`
 * Add: Extension Points `StagingTargetPipeline`, `SourceFileArchiveOverride` and `SourceErrorHandling` to provide greater flexibility when loading flat files
 * Add: static package ID's to all generated SSIS packages. The package id is normally generated dynamically by the SSIS build process. By adding a static ID it is easier to track actual changes to packages.
 * Update: Remove `RowHash` from `Change Data Capture` and `Change Tracking` staging tables to reduce table size
-* Update: Extension Point `DwhSourceOverride` and `RdvSourceOverride` to allow additional flexibility to the Data Mart and Data Vault process.
-* Update: Extension Point `DwhTargetPipelinePre`, `DwhTargetPipelinePost`, `RdvTargetPipelinePre` and `RdvTargetPipelinePost` to allow additional flexibility to the Data Mart and Data Vault process.
+* Update: Extension Point `DwhSourceOverride` and `DvSourceOverride` to allow additional flexibility to the Data Mart and Data Vault process.
+* Update: Extension Point `DwhTargetPipelinePre`, `DwhTargetPipelinePost`, `DvTargetPipelinePre` and `DvTargetPipelinePost` to allow additional flexibility to the Data Mart and Data Vault process.
 * Update: Extension Point `DwhType2Pipeline` to allow additional flexibility to the Data Mart process.
 * Update: Extension Point `DwhType1Pipeline` to allow additional flexibility to the Data Mart process.
 * Update: Extension Point `DwhInsertPipeline` to allow additional flexibility to the Data Mart process.
@@ -287,7 +287,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Fix: A scenario where end dating of Satellites did not behave as expected
 * Update: Optimization to SQL templates
 * New: Add concurrency configuration to `AzCopy`
-* New: Refactor Data Vault patterns to exclude end dating code when `EnableEndDateRdv` setting is set to `"N"`
+* New: Refactor Data Vault patterns to exclude end dating code when `EnableEndDateDv` setting is set to `"N"`
 
 ## Bundle 80223
 
@@ -350,7 +350,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 ## Bundle 71204
 
 * Added additional logic to handle the `ParameterColumnExpression` with `ExecuteSqlOnSource`
-* Update to rdv helper functions for Multi Active Key End Dating
+* Update to dv helper functions for Multi Active Key End Dating
 * Update to accommodate a scenario where a Satellite exist with a Link and no Hub. This should not happen, but can if the Data Vault is modeled incorrectly.
 * Update to `SqlDwSatEndDate` to update `RowIsCurrent`
 * Added `BusinessKeyQualifiedName`, `BusinessKeyName`, `PrimaryKeyQualifiedName` and `PrimaryKeyName` to `TableObject`
@@ -378,7 +378,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Updates to references in Data Vault Accelerator Publish function
 * Internal Replacing of Tables classes with `TableObject` class
 * Update to INIT from PSA table name when STG and PSA database is the same database
-* Rename rdv flatten files to correct case
+* Rename dv flatten files to correct case
 * Refactor Azure SQL Data Warehouse `DataMart` class to correctly End Date Type 2 Dimensions
 * Added setting to Delete Import File without archiving
 
@@ -448,7 +448,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 * Updates to remove the need to emit Staging objects when using PolyBase and Azure SQL Data Warehouse projects
 * Added optional `ProtectionLevel` to `CustomAttributes` to enable ability to compile for `EncryptSensitiveWithUserKey`
 * Updates to BimlCatalog Orchestration to use Project Name when logging to accommodate duplicate package names
-* Added `ApplyLookupFilterRdv` to filter SSIS lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This cross database join functionality requires the databases to be co-located or the tables to be in the same database
+* Added `ApplyLookupFilterDv` to filter SSIS lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This cross database join functionality requires the databases to be co-located or the tables to be in the same database
 * Added Lookup Filter for Surrogate Key Dimensional `LookupSql`
 * Added Foreign Key Lookups for dimension surrogate key lookups
 * Updates to `RowCount` SSIS Custom Component logic to add aggregate columns for source queries
@@ -469,7 +469,7 @@ Use Extension Point `ProjectParameter` with target `@@global`:
 
 They now require `sourceTable` and `destinationTable` definitions
 
-* Connection of RDV lookups to sourceTable
+* Connection of DV lookups to sourceTable
 
 ## Bundle 70904
 
@@ -570,7 +570,7 @@ They now require `sourceTable` and `destinationTable` definitions
 
 ### DataTypeMappings
 
-* Added functionality to map data types into Staging and RDV. This enables expansion of data types to accommodate future source system changes
+* Added functionality to map data types into Staging and DV. This enables expansion of data types to accommodate future source system changes
 * Added Stored Procedure `wcf.SetApplyDataTypeMappings` to support DataTypeMappings
 * Fixed DataTypeMappings when target columns exist
 * Fixed DataType mappings for Source to Stage adding Data Conversion and Error Handling
