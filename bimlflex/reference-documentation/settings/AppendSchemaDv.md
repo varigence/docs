@@ -1,7 +1,7 @@
 ---
-uid: bimlflex-app-reference-documentation-setting-AppendSchemaRdv
-title: BimlFlex Settings Definition for AppendSchemaRdv
-summary: Documentation of settings option within BimlFlex for AppendSchemaRdv
+uid: bimlflex-app-reference-documentation-setting-AppendSchemaDv
+title: BimlFlex Settings Definition for AppendSchemaDv
+summary: Documentation of settings option within BimlFlex for AppendSchemaDv
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---

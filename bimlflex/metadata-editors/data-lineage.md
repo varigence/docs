@@ -38,7 +38,7 @@ On the canvas, you can zoom in and out using the mouse scroll button to get a hi
 Selecting **Objects** in the **Treeview** will add these objects to the canvas, including the objects they are receiving data from or where they themselves act as a source for a data mapping.
 
 * If you select **Objects** from a **Connection** with a `Source System` **Integration Stage** the upstream (outgoing) objects will be displayed on the canvas
-* If you select **Objects**  where the associated **Connection** has the **Integration Stage** of `Raw Data Vault` or `Data Mart`, then the downstream (incoming) objects will be made visible
+* If you select **Objects**  where the associated **Connection** has the **Integration Stage** of `Data Vault` or `Data Mart`, then the downstream (incoming) objects will be made visible
 
 The context-aware actions that the Data Lineage Designer allows will sometimes also check or un-check objects in the treeview to produce the right visual.
 

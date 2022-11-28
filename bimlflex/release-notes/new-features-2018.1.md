@@ -67,7 +67,7 @@ BimlFlex Metadata management now has support to save and restore Snapshots of th
 ### BimlFlex full support for insert only Data Vault implementations
 
 BimlFlex Data Vault patterns now have full, end to end support for insert only Data Warehouses. This removes effective to dates, is current flags as well as the end dating logic to optimize for data warehouse load performance. As a query support construct, Point In Time tables can be used to derive full timelines when necessary.
-To exclude end dating code, use the setting `EnableEndDateRdv`. Set to `"N"` for insert only scenarios.
+To exclude end dating code, use the setting `EnableEndDateDv`. Set to `"N"` for insert only scenarios.
 
 ## Data Vault Acceleration
 
@@ -131,7 +131,7 @@ The BimlFlex custom SSIS Component used for in-stream hashing of keys has been u
 
 ### SSIS Optimization
 
-Added `ApplyLookupFilterRdv` to filter SSIS lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This optional cross database join functionality requires the databases to be co-located or the tables to be in the same database
+Added `ApplyLookupFilterDv` to filter SSIS lookups by joining to the Staging layer. This minimizes memory usage for lookup components. This optional cross database join functionality requires the databases to be co-located or the tables to be in the same database
 
 ### Auditing and Logging
 

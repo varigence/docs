@@ -362,7 +362,7 @@ The Target on line 1 needs to match the target batch where the pre-processing sh
     <Tasks>
         <CustomTask Name="SFLSQL - CALL flex_WW_VW_WW_STAGE" CreationName="Varigence.Ssis.Snowflake.SnowflakeSql, Varigence.Ssis.Snowflake<#=componentVersion #>, Culture=neutral, PublicKeyToken=e9fb56b2a63ffbab" TaskContact="">
             <Expressions>
-                <Expression ExternalProperty="SnowflakeSqlStatement">"CALL \"rdv\".\"flex_RS_ENTITY_STAGE\"();"</Expression>
+                <Expression ExternalProperty="SnowflakeSqlStatement">"CALL \"dv\".\"flex_RS_ENTITY_STAGE\"();"</Expression>
             </Expressions>
             <ObjectData>&lt;InnerObject&gt;
             &lt;SnowflakeAccount Type="8" Value="User::SnowflakeAccount" /&gt;

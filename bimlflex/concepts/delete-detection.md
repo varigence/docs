@@ -23,7 +23,7 @@ Enabling Delete Detection allows the creation of the Delete Detection load proce
 Additional settings control if the identified delete rows are loaded into PSA and Data Vault targets. Unless a separate, bespoke, process is used for delete record processing it is recommended to allow BimlFlex to autogenerate the process.
 
 * Apply Delete Detection PSA
-* Apply Delete Detection RDV
+* Apply Delete Detection DV
 
 Enabling the above 'Apply' patterns will create ('ELT' / 'load') Stored Procedures and call these once the source extract and delete detection has finished.
 
@@ -58,4 +58,4 @@ If specific objects are configured for delete detection these will need to be ac
 
 ### Overriding Delete Patterns Using Extension Points
 
-When using the Apply Delete Detection function it is possible to also use the **Delete Detect Apply Psa** and **Delete Detect Apply Rdv Override** Extension Points to override the generated apply stored procedure.
+When using the Apply Delete Detection function it is possible to also use the **Delete Detect Apply Psa** and **Delete Detect Apply Dv Override** Extension Points to override the generated apply stored procedure.

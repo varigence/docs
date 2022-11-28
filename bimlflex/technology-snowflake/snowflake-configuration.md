@@ -143,7 +143,7 @@ This section outlines any specific considerations needed when configuring BimlFl
 
 | Field               | Supported Values                                                                  | Guide                                |
 | ------------------- | --------------------------------------------------------------------------------- | ------------------------------------ |
-| Integration Stage   | Source System\*, Staging Area, Persistent Staging Area, Raw Data Vault, Data Mart | [Details](#integration-stage)        |
+| Integration Stage   | Source System\*, Staging Area, Persistent Staging Area, Data Vault, Data Mart | [Details](#integration-stage)        |
 | Connection Type     | ODBC\*, ODBC SQL Based ELT\*                                                      | [Details](#connection-type)          |
 | System Type         | Snowflake Data Warehouse                                                          | [Details](#system-type)              |
 | Connection String   | Dsn={DSN Name};Uid={User Name};Pwd={Password};Database={Database Name};\*         | [Details](#connection-string)        |

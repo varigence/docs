@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # End Date Satellite
 
-Determines if end dating is applied to the Raw Data Vault Satellites.
+Determines if end dating is applied to the Data Vault Satellites.
 
 Notes:
 

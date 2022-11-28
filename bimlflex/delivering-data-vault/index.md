@@ -25,7 +25,7 @@ This guide assumes the BimlFlex product has been installed, configured and that 
 * [Data Vault Hubs](xref:bimlflex-data-vault-concept-hub) - the Core Business Concept
 * [Data Vault Links](xref:bimlflex-data-vault-concept-link) - the Natural Business Relationship
 * [Data Vault Satellites](xref:bimlflex-data-vault-concept-satellite) - the Context entity containing descriptive information
-* [Raw Data Vault](xref:bimlflex-data-vault-raw) and [Business Data Vault](xref:bimlflex-data-vault-business-data-vault)
+* [Data Vault](xref:bimlflex-data-vault) and [Business Data Vault](xref:bimlflex-data-vault-business-data-vault)
 * [Point-in-Time tables](xref:bimlflex-data-vault-concept-pit)
 * [Bridge tables](xref:bimlflex-data-vault-concept-bridge)
 * [Reference Data](xref:bimlflex-data-vault-concept-reference-data)

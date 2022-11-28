@@ -1,7 +1,7 @@
 ---
-uid: bimlflex-app-reference-documentation-setting-EnableRollbackRdv
-title: BimlFlex Settings Definition for EnableRollbackRdv
-summary: Documentation of settings option within BimlFlex for EnableRollbackRdv
+uid: bimlflex-app-reference-documentation-setting-EnableRollbackDv
+title: BimlFlex Settings Definition for EnableRollbackDv
+summary: Documentation of settings option within BimlFlex for EnableRollbackDv
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---

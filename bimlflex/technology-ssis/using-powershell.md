@@ -25,7 +25,7 @@ Each time you build your solution, BimlFlex will also create a deployment file(s
 
 ## Generated SSIS Project Deployment Files
 
-Once the user has deployed the `ssdt-deploy.ps1` file for each asset who's schema has changed, the user is ready to deploy their SSIS projects. Consider the following ELT solution, containing projects for a source system extract, named *EXT_AWLT_SRC*, a raw data vault load, named *LOAD_BF_RDV*, and a data mart load, named *LOAD_BFX_DM*.
+Once the user has deployed the `ssdt-deploy.ps1` file for each asset who's schema has changed, the user is ready to deploy their SSIS projects. Consider the following ELT solution, containing projects for a source system extract, named *EXT_AWLT_SRC*, a raw data vault load, named *LOAD_BF_DV*, and a data mart load, named *LOAD_BFX_DM*.
 
 <img 
     src="images/eltprojectstructure.png"
@@ -36,7 +36,7 @@ Once the user has deployed the `ssdt-deploy.ps1` file for each asset who's schem
 Once you build your BimlFlex solution, you will now have deployment files for each of these projects. Inside of the `...\outout\Deploy` folder, there will now be the following deployment files:
 
 * `ssis-deploy.EXT_AWLT_SRC_Project.ps1`
-* `ssis-deploy.LOAD_BF_RDV_Project.ps1`
+* `ssis-deploy.LOAD_BF_DV_Project.ps1`
 * `ssis-deploy.LOAD_BFX_DM_Project.ps1`
 
 >[!IMPORTANT]

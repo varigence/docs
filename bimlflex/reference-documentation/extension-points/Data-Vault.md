@@ -31,7 +31,7 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvSourceOverride" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvSourceOverride" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
 <!-- You can find more details on the Varigence website. https://docs.varigence.com/biml/language-reference/Varigence.Languages.Biml.Task.AstDataflowTaskNode_Transformations -->
@@ -71,7 +71,7 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvSourcePipelinePre" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvSourcePipelinePre" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="inputPath" type="String" #>
@@ -111,7 +111,7 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvSourcePipelinePost" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvSourcePipelinePost" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="inputPath" type="String" #>
@@ -151,7 +151,7 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvTargetPipelinePre" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvTargetPipelinePre" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="inputPath" type="String" #>
@@ -192,7 +192,7 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvTargetPipelinePost" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvTargetPipelinePost" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="inputPath" type="String" #>
@@ -232,7 +232,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvTargetOverride" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvTargetOverride" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="inputPath" type="String" #>
@@ -272,7 +272,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPreProcessSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPreProcessSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -302,7 +302,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPostProcessSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPostProcessSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -332,7 +332,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPreSourceSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPreSourceSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -362,7 +362,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPostSourceSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPostSourceSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -392,7 +392,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPreTargetSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPreTargetSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -422,7 +422,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPostTargetSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPostTargetSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -447,46 +447,46 @@ table | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related t
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
 ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
-RdvPitAddParameter | String | XXXX |
-RdvPitLagSql | String | XXXX |
-RdvPitDateWhereSql | String | XXXX |
-RdvPitDateOverrideWhereSql | String | XXXX |
-RdvPitHubWhereSql | String | XXXX |
-RdvPitHubOverrideWhereSql | String | XXXX |
-RdvPitSatWhereSql | String | XXXX |
-RdvPitSatOverrideWhereSql | String | XXXX |
-RdvPitDeleteWhereSql | String | XXXX |
-RdvPitDeleteOverrideWhereSql | String | XXXX |
-RdvPitSourceAddSelect | String | XXXX |
-RdvPitTargetAddInsert | String | XXXX |
-RdvPitTargetAddSelect | String | XXXX |
-RdvPitColumnElements | String | XXXX |
-RdvPitOverrideSql | String | XXXX |
+DvPitAddParameter | String | XXXX |
+DvPitLagSql | String | XXXX |
+DvPitDateWhereSql | String | XXXX |
+DvPitDateOverrideWhereSql | String | XXXX |
+DvPitHubWhereSql | String | XXXX |
+DvPitHubOverrideWhereSql | String | XXXX |
+DvPitSatWhereSql | String | XXXX |
+DvPitSatOverrideWhereSql | String | XXXX |
+DvPitDeleteWhereSql | String | XXXX |
+DvPitDeleteOverrideWhereSql | String | XXXX |
+DvPitSourceAddSelect | String | XXXX |
+DvPitTargetAddInsert | String | XXXX |
+DvPitTargetAddSelect | String | XXXX |
+DvPitColumnElements | String | XXXX |
+DvPitOverrideSql | String | XXXX |
 
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPitSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPitSql" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
-<!-- Use RdvPitSql combined the below samples to add additional logic to the PIT load procedure. -->
+<!-- Use DvPitSql combined the below samples to add additional logic to the PIT load procedure. -->
 <#*
 <# 	CustomOutput.ObjectInherit = false; #>
-<# 	CustomOutput.RdvPitAddParameter = @"	,@TenantCode			VARCHAR(10) = NULL"; #>
-<# 	CustomOutput.RdvPitLagSql = @"SET @Lag = -7"; #>
-<# 	CustomOutput.RdvPitDateWhereSql = @"AND [FlexRowRecordSource] = 'AW'"; #>
-<# 	CustomOutput.RdvPitDateOverrideWhereSql = @"WHERE [FlexRowEffectiveFromDate] > '1900-01-01'AND [FlexRowRecordSource] = 'AW'"; #>
-<# 	CustomOutput.RdvPitDeleteWhereSql = @"AND [FlexRowRecordSource] = 'AW'"; #>
-<# 	CustomOutput.RdvPitDeleteOverrideWhereSql = @"WHERE [FlexRowEffectiveFromDate] > '1900-01-01'AND [FlexRowRecordSource] = 'AW'"; #>
-<# 	CustomOutput.RdvPitHubWhereSql = @"AND [FlexRowRecordSource] = 'AW'"; #>
-<# 	CustomOutput.RdvPitHubOverrideWhereSql = @"WHERE [FlexRowEffectiveFromDate] > '1900-01-01'AND [FlexRowRecordSource] = 'AW'"; #>
-<# 	CustomOutput.RdvPitSatWhereSql = @"AND [FlexRowRecordSource] = 'AW'"; #>
-<# 	CustomOutput.RdvPitSatOverrideWhereSql = @"WHERE [FlexRowEffectiveFromDate] > '1900-01-01'AND [FlexRowRecordSource] = 'AW'"; #>
-<# 	CustomOutput.RdvPitSourceAddSelect = @",l1.[TenantCode] "; #>
-<# 	CustomOutput.RdvPitTargetAddInsert = @",[TenantCode] "; #>
-<# 	CustomOutput.RdvPitTargetAddSelect = @",[TenantCode] "; #>
-<# 	CustomOutput.RdvPitColumnElements = @"<Column Name=""TenantCode"" DataType=""AnsiString"" Length=""3"" IsNullable=""true"" />"; #>
-<# 	CustomOutput.RdvPitOverrideSql = @"Add SQL here to completely override the PIT Code."; #>
+<# 	CustomOutput.DvPitAddParameter = @"	,@TenantCode			VARCHAR(10) = NULL"; #>
+<# 	CustomOutput.DvPitLagSql = @"SET @Lag = -7"; #>
+<# 	CustomOutput.DvPitDateWhereSql = @"AND [FlexRowRecordSource] = 'AW'"; #>
+<# 	CustomOutput.DvPitDateOverrideWhereSql = @"WHERE [FlexRowEffectiveFromDate] > '1900-01-01'AND [FlexRowRecordSource] = 'AW'"; #>
+<# 	CustomOutput.DvPitDeleteWhereSql = @"AND [FlexRowRecordSource] = 'AW'"; #>
+<# 	CustomOutput.DvPitDeleteOverrideWhereSql = @"WHERE [FlexRowEffectiveFromDate] > '1900-01-01'AND [FlexRowRecordSource] = 'AW'"; #>
+<# 	CustomOutput.DvPitHubWhereSql = @"AND [FlexRowRecordSource] = 'AW'"; #>
+<# 	CustomOutput.DvPitHubOverrideWhereSql = @"WHERE [FlexRowEffectiveFromDate] > '1900-01-01'AND [FlexRowRecordSource] = 'AW'"; #>
+<# 	CustomOutput.DvPitSatWhereSql = @"AND [FlexRowRecordSource] = 'AW'"; #>
+<# 	CustomOutput.DvPitSatOverrideWhereSql = @"WHERE [FlexRowEffectiveFromDate] > '1900-01-01'AND [FlexRowRecordSource] = 'AW'"; #>
+<# 	CustomOutput.DvPitSourceAddSelect = @",l1.[TenantCode] "; #>
+<# 	CustomOutput.DvPitTargetAddInsert = @",[TenantCode] "; #>
+<# 	CustomOutput.DvPitTargetAddSelect = @",[TenantCode] "; #>
+<# 	CustomOutput.DvPitColumnElements = @"<Column Name=""TenantCode"" DataType=""AnsiString"" Length=""3"" IsNullable=""true"" />"; #>
+<# 	CustomOutput.DvPitOverrideSql = @"Add SQL here to completely override the PIT Code."; #>
 *#>
 ```
 
@@ -511,7 +511,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPitPreProcessSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPitPreProcessSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -541,7 +541,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvPitPostProcessSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvPitPostProcessSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -566,38 +566,38 @@ table | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related t
 | <div style="width:150px">Name</div> | Type | Description |
 | --------- | ----------- |
 ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
-RdvBridgeLagSql | String | XXXX |
-RdvBridgeDateWhereSql | String | XXXX |
-RdvBridgeDateOverrideWhereSql | String | XXXX |
-RdvBridgeWhereSql | String | XXXX |
-RdvBridgeOverrideWhereSql | String | XXXX |
-RdvBridgeHubWhereSql | String | XXXX |
-RdvBridgeHubOverrideWhereSql | String | XXXX |
-RdvBridgeColumnSelect | String | XXXX |
-RdvBridgeColumnInsert | String | XXXX |
-RdvBridgeColumnElements | String | XXXX |
-RdvBridgeOverrideSql | String | XXXX |
+DvBridgeLagSql | String | XXXX |
+DvBridgeDateWhereSql | String | XXXX |
+DvBridgeDateOverrideWhereSql | String | XXXX |
+DvBridgeWhereSql | String | XXXX |
+DvBridgeOverrideWhereSql | String | XXXX |
+DvBridgeHubWhereSql | String | XXXX |
+DvBridgeHubOverrideWhereSql | String | XXXX |
+DvBridgeColumnSelect | String | XXXX |
+DvBridgeColumnInsert | String | XXXX |
+DvBridgeColumnElements | String | XXXX |
+DvBridgeOverrideSql | String | XXXX |
 
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvBridgeSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvBridgeSql" #>
 <#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
-<!-- Use RdvBridgeSql combined the below samples to add additional logic to the Bridge load procedure. -->
+<!-- Use DvBridgeSql combined the below samples to add additional logic to the Bridge load procedure. -->
 <#*
 <# 	CustomOutput.ObjectInherit = false; #>
-<# 	CustomOutput.RdvBridgeColumnSelect = @"";#>
-<# 	CustomOutput.RdvBridgeColumnInsert = @""; #>
-<# 	CustomOutput.RdvBridgeDateWhereSql = @""; #>
-<# 	CustomOutput.RdvBridgeDateOverrideWhereSql = @""; #>
-<# 	CustomOutput.RdvBridgeWhereSql = @""; #>
-<# 	CustomOutput.RdvBridgeOverrideWhereSql = @""; #>
-<# 	CustomOutput.RdvBridgeHubWhereSql = @""; #>
-<# 	CustomOutput.RdvBridgeHubOverrideWhereSql = @""; #>
-<# 	CustomOutput.RdvBridgeOverrideWhereSql = @""; #>
-<# 	CustomOutput.RdvBridgeColumnElements = @""; #>
-<# 	CustomOutput.RdvBridgeOverrideSql = @"Add SQL here to completely override the BRIDGE Code."; #>
+<# 	CustomOutput.DvBridgeColumnSelect = @"";#>
+<# 	CustomOutput.DvBridgeColumnInsert = @""; #>
+<# 	CustomOutput.DvBridgeDateWhereSql = @""; #>
+<# 	CustomOutput.DvBridgeDateOverrideWhereSql = @""; #>
+<# 	CustomOutput.DvBridgeWhereSql = @""; #>
+<# 	CustomOutput.DvBridgeOverrideWhereSql = @""; #>
+<# 	CustomOutput.DvBridgeHubWhereSql = @""; #>
+<# 	CustomOutput.DvBridgeHubOverrideWhereSql = @""; #>
+<# 	CustomOutput.DvBridgeOverrideWhereSql = @""; #>
+<# 	CustomOutput.DvBridgeColumnElements = @""; #>
+<# 	CustomOutput.DvBridgeOverrideSql = @"Add SQL here to completely override the BRIDGE Code."; #>
 *#>
 ```
 
@@ -622,7 +622,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvBridgePreProcessSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvBridgePreProcessSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
@@ -652,7 +652,7 @@ ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extensio
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="RdvBridgePostProcessSql" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DvBridgePostProcessSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 

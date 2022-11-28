@@ -178,7 +178,7 @@ BimlFlex 2019.2 is a service release that fixes identified issues as well as int
 * Update: The BimlFlex App UI for metadata import now correctly uses `@@rs` casing for Record Source codes
 * Update: Additional source support for Teradata to Azure SQL Data Warehouse workloads with PolyBase conversion support
 * Add: Pre- and Post-processing tasks Extension Points for Source to File load processes
-* Add: Support to derive `RowRecordSource` in RDV load process for Azure SQL Data Warehouse
+* Add: Support to derive `RowRecordSource` in DV load process for Azure SQL Data Warehouse
 * Update: a scenario where Hash distribution keys were not derived correctly for ELT code for Point In Time constructs was addressed
 * Add: Additional support for Teradata ODBC-based metadata import
 * Add: Support to better define the SSDT project output folder used for Builds. The setting `SsdtOutputPath` allows defining an output path such as: `@@OutputPath\SSDT\@@CustomerUid\@@VersionName`
@@ -287,19 +287,19 @@ Bridge Attributes Metadata:
 
 | Connection | Object                        | ColumnName | AttributeKey | AttributeValue            | AttributeProperty |
 | ---------- | ----------------------------- | ---------- | ------------ | ------------------------- | ----------------- |
-| DWH        | rdv.HUB_AccountsPayableConfig |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
-| DWH        | rdv.HUB_AccountsPayableLog    |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
-| DWH        | rdv.HUB_Department            |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
-| DWH        | rdv.HUB_Venue                 |            | CreateBridge | BRG_AccountsPayableConfig | IsPrimaryHub,AddKey |
-| DWH        | rdv.LNK_AccountsPayableConfig |            | CreateBridge | BRG_AccountsPayableConfig | |
-| DWH        | rdv.LNK_AccountsPayableLog    |            | CreateBridge | BRG_AccountsPayableConfig | |
+| DWH        | dv.HUB_AccountsPayableConfig |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | dv.HUB_AccountsPayableLog    |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | dv.HUB_Department            |            | CreateBridge | BRG_AccountsPayableConfig | AddKey |
+| DWH        | dv.HUB_Venue                 |            | CreateBridge | BRG_AccountsPayableConfig | IsPrimaryHub,AddKey |
+| DWH        | dv.LNK_AccountsPayableConfig |            | CreateBridge | BRG_AccountsPayableConfig | |
+| DWH        | dv.LNK_AccountsPayableLog    |            | CreateBridge | BRG_AccountsPayableConfig | |
 
 Here, both included Links link to both the Department and Venue Hubs. The primary Hub is the Venue Hub so the Department is now included twice in the Bridge table, once for each Link reference.
 
 Before:
 
 ```sql
-CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
+CREATE TABLE [dv].[BRG_AccountsPayableConfig](
     [BRG_AccountsPayableConfig_SK] varchar(40) NOT NULL
 ,    [Venue_SK] varchar(40) NOT NULL
 ,    [Venue_BK] nvarchar(100) NOT NULL
@@ -316,7 +316,7 @@ CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
 After:
 
 ```sql
-CREATE TABLE [rdv].[BRG_AccountsPayableConfig](
+CREATE TABLE [dv].[BRG_AccountsPayableConfig](
     [BRG_AccountsPayableConfig_SK] varchar(40) NOT NULL
 ,    [Venue_SK] varchar(40) NOT NULL
 ,    [Venue_BK] nvarchar(100) NOT NULL
