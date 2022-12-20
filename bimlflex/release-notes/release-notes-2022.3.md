@@ -21,11 +21,11 @@ BimlFlex 2022 R3 is installed and upgraded through a single consolidated install
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
 
-Build 22.3.166.0, release date: 19 Sep 2022
+Build 22.3.200.0, release date: 21 Dec 2022
 
 >
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.3.166.0.exe). This installer includes all BimlFlex components
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.3.166.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.3.200.0.exe). This installer includes all BimlFlex components
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.3.200.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
 >[!NOTE]
 >Manual database installation and update scripts should be used to update BimlFlex and BimlCatalog databases that require `Multi-Factor Authentication` due to this reported issue: [Microsoft DacServices does not work with SqlClient 5.0](https://github.com/microsoft/DacFx/issues/126).
