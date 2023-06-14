@@ -43,7 +43,7 @@ The Editor Action Buttons are always located on the top of the screen, just unde
 | Archive | Archive permanently deletes the metadata from the BimlFlex Database |
 | Duplicate | The duplicate action button will create a new item based on the (values of) the selected item |
 | Cloud | This slide toggle will show / hide certain configuration options that are only application to cloud connections |
-| Exclude | This slide toggle can flag a selected item to be excluded from the model. The item can still be seen by users who select the 'show excluded' option in the settings.
+| Excluded | This will determine if a selected item and its metadata will be excluded along with the rest of the solution. The item can still be seen by users who select the 'show excluded' option in the settings.
 | Deleted | This slide toggle can flag a selected item to be considered deleted from the model, however the metadata is not physically removed from the BimlFlex database. The item can still be seen by users who select the 'show excluded' option in the settings.
 
 >[!NOTE]
