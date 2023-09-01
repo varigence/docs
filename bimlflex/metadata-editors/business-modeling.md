@@ -53,6 +53,7 @@ Business Entities can be created from the **Configure Modeling** screen (shown b
 ### Classifications
 
 **Classifications** can be defined as part of the modeling configuration defaults. They can be added to an existing Business Entity to provide a categorization that is different from the Entity Type. This assists in organizing the Business Entities in different ways, by being able to organize them according to classification - or to simply notify other modelers of a specific function or intent.
+Classification is the process of categorizing businesses into different groups based on their characteristics, such as their size, industry, products or services, target customers, and business model. This classification is important in business modeling as it helps to identify similarities and differences among businesses and to develop appropriate strategies and models for each category. Common classifications include industry-based, as well as size-based classifications such as small, medium, and large enterprises.
 
 ![Defining Classifications](images/business-modeling-classifications.png "Defining Classifications")
 
