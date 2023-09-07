@@ -28,7 +28,7 @@ Build 23.1.328.0, release date: 01 Jul 2023
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.3.207.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
 
-## Databricks Templates with Data Mesh Capability
+## Databricks Templates with Data Mesh, Data Vault and Data Mart Capability
 
 ### Databricks Linked Services Support
 
@@ -118,6 +118,26 @@ Build 23.1.328.0, release date: 01 Jul 2023
 - **Benefit**: 
   - **Batch Concurrency**: Ensures that if a pipeline is already running, additional triggers won't initiate new instances, thereby avoiding data duplication or overlap.
   - **File Archiving**: Eliminates the risk of archiving unprocessed files, ensuring that only successfully processed files are moved to the archive location.
+
+## New Documentation Feature
+
+### Overview
+Introducing the BimlFlex Documentation generator, a comprehensive tool designed to streamline the creation and deployment of your documentation.
+
+### Initialization
+- **Setup**: Learn how to set up the BimlFlex Documentation generator.
+- **Files**: Understand the core files generated, including:
+  - `bundle.js`: The main JavaScript file.
+  - `bundleInfo.json`: Metadata about the `bundle.js`.
+  - `editor.worker.js`: Assists with real-time editing.
+  - `index.html`: The primary display file.
+  - `metadata.bundle.js`: Contains information about the documentation's structure.
+
+### Deployment Methods
+- **File System Deployment**: Access documentation offline directly from your local system.
+- **Web Server Deployment**: Deploy on servers like Microsoft's IIS or Nginx.
+- **Cloud Platforms**: Use platforms like Netlify, GitHub Pages, Vercel, or Firebase for hosting.
+- **Integration with Jira**: Embed your documentation within a Jira page using an iframe.
 
 ## BimlFlex Application Improvements
 
