@@ -119,110 +119,155 @@ Build 23.1.328.0, release date: 01 Jul 2023
   - **Batch Concurrency**: Ensures that if a pipeline is already running, additional triggers won't initiate new instances, thereby avoiding data duplication or overlap.
   - **File Archiving**: Eliminates the risk of archiving unprocessed files, ensuring that only successfully processed files are moved to the archive location.
 
+## BimlFlex Application Improvements
 
+### Parquet File Format Importer
 
+- **Feature**: Metadata Import from Parquet Files
+- **Description**: Introduces a new capability to automatically import metadata information directly from Parquet files into your data pipeline.
+- **Benefit**: Simplifies the data ingestion process by eliminating manual metadata configuration, thereby accelerating data pipeline development and reducing the risk of errors.
 
+### SQL Server Data Tools
 
-5. **Parquet File Format Importer**: Added a new feature to import metadata information from parquet files.
+- **Feature**: Database Variables in SSDT Projects
+- **Description**: The BimlFlex build process now allows SSDT database projects to use database variables, facilitating cross-database interactions without hardcoding database names.
+- **Benefit**: This feature enhances modularity and promotes best practices by allowing data engineers to manage cross-database interactions more efficiently.
 
-6. **Database Variable Usage in SSDT**: Added the ability for the SSDT database projects created by the BimlFlex build process to utilize database variables for cross-database interactions.
+- **Feature**:  Added functionality to specify pre and post-deployment scripts in SSDT.
+- **Description**: Users can now specify custom scripts to run before or after the deployment process in SSDT, offering more control over the deployment lifecycle.
+- **Benefit**: The added flexibility in specifying pre and post-deployment scripts enables data engineers to automate tasks like data validation or cleanup, thereby streamlining the deployment process.
 
-7. **User Specified Pre/Post Deployment Scripts in SSDT**: Added the ability for users to specify pre/post deployment scripts in SSDT.
+### Transaction Support in Satellite and Link Satellite Templates
 
-8. **Transaction to SAT and LSAT Templates**: Added the ability to use transactions in SAT and LSAT templates.
+- **Feature**: Transactional Integrity in SAT and LSAT Templates
+- **Description**: Introduces transactional capabilities into Satellite (SAT) and Link Satellite (LSAT) templates. This feature ensures that data operations are either fully committed or rolled back in the event of errors such as timeouts.
+- **Benefit**: Enhances data consistency and reliability by applying an all-or-nothing approach to data changes. This prevents partial updates that could lead to data inconsistencies, thereby improving the robustness of your ETL pipelines.
 
-9. **ADF Batch Concurrency and ADF Archiving Source Files**: Added support for ADF Batch Concurrency and ADF Archiving Source Files.
+### Loading Same Table from Two Different Projects
 
-10. **Loading Same Table from Two Different Projects**: Added the ability to load the same table from two different projects.
-
-## Bug Fixes
-
-1. **Naming Standards**: Resolved an issue with conflicting tenses in the flags on the Entities. The Exclude and Deleted flags now use consistent tenses.
-
-2. **Parameter Editor**: Fixed an issue where selecting a Parent Node with only one value would change to an Editor instead of a list view, causing UI inconsistency.
-
-3. **Attribute Editor**: Resolved an issue where Parent Node would show an Editor instead of a list view when there was only one record inside the parent node, leading to an inconsistent and confusing experience.
-
-4. **Attribute Editor**: Fixed an issue where the Attribute Editor was not active after the [Save] button was clicked.
-
-5. **DB2, SSIS**: Fixed issues with the `XML`, `TIMESTAMP( )`, and `DECIMAL( )` data types from DB2 in SSIS packages.
-
-6. **Grids**: Fixed a formatting issue where selecting a Monaco Field would expand the column and change the column size formatting.
-
-7. **Connection Editor**: Fixed an issue where switching from an Account key authentication method to Managed Identity in Linked Service would still contain the account key properties, including the secret name.
-
-8. **Attribute Builder**: Fixed an issue where discarding a new attribute would cause an ng0100 error, ExpressionChangedAfterItHasBeenCheckedError.
-
-9. **Tree Nav Tool Tips**: Fixed an issue where tool tips were obstructive and caused navigation issues.
-
-10. **Delete Detection, Delta Is Derived**: Fixed an issue where PK uses BK but BK is not defined.
-
-11. **Integration Key**: Fixed an issue where Record Source was added by default, even when the setting was disabled.
-
-12. **Biml Table and Field Comments**: Fixed an issue where Biml was not reading or generating any table or field comments from source tables.
-
-13. **Database**: Fixed an issue where a bad version number was being entered into the database.
-
-14. **Audit Tables**: Fixed inconsistencies on RowEffectiveFromDate and RowEffectiveToDate columns.
-
-15. **SSDT**: Fixed an issue where the output column mappings for the COZYROC Salesforce source did not line up with the actual output columns.
-
-## Infrastructure Changes
-
-1. **BimlFlex Runtime
-
-Migration**: Migrated BimlFlex Runtime Components to its own repository and adjusted build pipelines to use it correctly.
-
-2. **BimlFlexUX Migration**: Migrated BimlFlexUX to its own repository and adjusted build pipelines to use it correctly.
-
-3. **Angular-HTML -> JSON Parser**: Created an Angular-HTML -> JSON parser.
+- **Feature**: Multi-Project Table Loading
+- **Description**: Introduces the capability to load a single table from multiple projects. This feature accommodates different data pipelines that may need to populate the same table.
+- **Benefit**: Provides flexibility in data ingestion by allowing the same table to be loaded from different projects, each with its own schedule and triggers. This enables more dynamic and responsive data workflows, catering to various data sources and operational requirements.
 
 ## Bug Fixes
 
-- **Naming Standards**: Resolved an issue with conflicting tenses in the flags on the Entities. The Exclude and Deleted flags now have consistent tenses.
-- **Parameter Editor**: Fixed a UI inconsistency issue where selecting a Parent Node with only one value changes to an Editor instead of a list view.
-- **Attribute Editor**: Fixed an issue where Parent Node would show an Editor instead of a list view when it contained only one record. This was causing an inconsistent and confusing experience.
-- **Attribute Editor**: Resolved an issue where the Attribute Editor was not active after the [Save] Button was clicked.
-- **Grids**: Fixed a formatting issue caused by Monaco fields when a field was selected.
-- **Connection Editor**: Fixed an issue where switching from an Account key authentication method to Managed Identity resulted in incorrect JSON emission for the Linked Service.
-- **DB2, SSIS**: Fixed issues with the `XML`,`TIMESTAMP( )`, and `DECIMAL( )` data types from DB2 in SSIS packages.
-- **Attribute Builder**: Fixed an issue where discarding a new attribute caused an ng0100 error, ExpressionChangedAfterItHasBeenCheckedError.
-- **Tree Nav Tool Tips**: Fixed an issue where tool tips were obstructive and caused navigation issues.
-- **SetConnections**: Fixed an issue where more records than intended were removed from [app].[UserSettings].
-- **Viewport Schema Printing**: Fixed an issue where schemas were cut off or not displayed with full details when printing the diagram in Accelerator/Schema Diagram/Data Lineage.
-- **Integration Key**: Fixed an issue where the record source was added to the integration key by default, even when the setting was disabled.
-- **Database**: Fixed an issue where a bad version number was being entered into the database.
-- **Audit Tables**: Fixed inconsistencies on RowEffectiveFromDate and RowEffectiveToDate columns when a version was cloned vs. updating a record.
-- **SSDT**: Fixed an issue where the output column mappings for the COZYROC Salesforce source did not line up with the actual output columns.
+- **Parameter Editor**: Fixed an issue where selecting a Parent Node with only one value would change to an Editor instead of a list view, causing UI inconsistency.
 
-## New Features
+- **Attribute Editor**: Resolved an issue where Parent Node would show an Editor instead of a list view when there was only one record inside the parent node, leading to an inconsistent and confusing experience.
 
-- **Databricks Linked Services**: Added a new feature to support Databricks Linked Services. This allows customers to define a connection to their existing Databricks cluster and use their existing infrastructure.
-- **Execute Pipeline Parameter**: Added an Extension Point to allow for the creation of a Parameter to be called and passed to the Execute Pipeline Activities in ADF Batches.
-- **Databricks Connection Support**: Added support for Databricks connection in the App, allowing for the configuration of a Databricks cluster in the Connection screen.
-- **Databricks Data Vault Templates**: Added Databricks Data Vault Templates.
-- **Parquet File Format Importer**: Added a feature to import metadata information from parquet files.
-- **Database Variable Usage in SSDT**: Added the use of database variables for cross-database interactions in SSDT database projects created by the BimlFlex build process.
-- **User Specified Pre/Post Deployment Scripts in SSDT**: Added the ability for users to specify pre/post deployment scripts in SSDT.
-- **Transaction to SAT and LSAT Templates**: Added a transaction to SAT and LSAT templates connected to DvUseTransactions.
-- **ADF Batch Concurrency and ADF Archiving Source Files**: Added ADF Batch Concurrency and ADF Archiving source files.
-- **Use Transaction to SAT and LSAT Templates**: Added the use of transactions to SAT and LSAT templates.
+- **Attribute Editor**: Fixed an issue where the Attribute Editor was not active after the [Save] button was clicked.
 
-## Improvements
+- **DB2, SSIS**: Fixed issues with the `XML`, `TIMESTAMP( )`, and `DECIMAL( )` data types from DB2 in SSIS packages.
 
-- **Loading Same Table from Two Different Projects**: Improved the ability to load the same table from two different projects, even when they have different connections.
-- **Biml Table and Field Comments
+- **Grids**: Fixed a formatting issue where selecting a Monaco Field would expand the column and change the column size formatting.
 
-**: Improved the handling of table and field comments from source tables in Biml. Now, Biml is capable of reading and generating table or field comments from source tables.
-- **Databricks - Option to Toggle Off Truncate and Drop Scripts**: Added an option to toggle off truncate and drop scripts for Databricks tables for production deployment. This provides developers with more control and prevents unintentional data loss during production deployment.
-- **Angular-HTML -> JSON Parser**: Developed a new Angular-HTML to JSON parser to enhance data processing capabilities.
+- **Connection Editor**: Fixed an issue where switching from an Account key authentication method to Managed Identity in Linked Service would still contain the account key properties, including the secret name.
 
-## Known Issues
+- **Delete Detection, Delta Is Derived**: Fixed an issue where PrimaryKey uses IntegrationKey but IntegrationKey is not defined.
 
-- **Snowflakes Procedure Settings**: Currently, Biml-generated procedures do not have the "Execute as owner" option. We are working on a solution to control this setting or use "execute as caller" instead.
-- **Integration Key**: The record source is added to the integration key by default, even when the setting is disabled. We are working on a fix for this issue.
-- **Biml Table and Field Comments**: Biml is currently not reading or generating table or field comments from source tables. We are working on enhancements to address this.
-- **Database**: There is an issue where a bad version number is being entered into the database. We are working on a fix for this issue.
-- **Audit Tables**: There are inconsistencies on RowEffectiveFromDate and RowEffectiveToDate columns when a version is cloned vs. updating a record. We are working on a fix for this issue.
+- **Integration Key**: Fixed an issue where Record Source was added by default, even when the setting was disabled.
 
-Please note that this is a major release and we recommend testing in a non-production environment before upgrading your production environment. As always, please contact our support team if you encounter any issues or have any questions.
+- **Table and Column Comments**: Fixed an issue where BimlFlex was not reading or generating any table or column comments from source tables.
+
+- **Audit Tables**: Fixed inconsistencies on RowEffectiveFromDate and RowEffectiveToDate columns.
+
+## New Settings 
+
+### Azure Data Factory
+
+- **Data Factory Location**: Defines the geographical location of the Azure Data Factory instance and its data operations.
+- **Delete Source Files**: Option to delete source files post-processing.
+- **OnError Source Files**: Option to move source files to a specified error container if an error occurs during processing.
+- **Archive Source Files**: Option to move source files to a specified archive container post-processing.
+- **Copy Behavior**: Sets the data transfer method from source to destination in Azure Copy Activity, particularly when destination already has data files.
+- **Is Recursive**: Determines if the Copy Activity should recurse into sub-folders of the source directory when reading files.
+- **Source Settings**: Controls how data is read, including query timeout, partitioning for parallel reads, and fault tolerance. Enhances data extraction control and optimization.
+- **Enable Logging**: Logs detailed events from Azure Data Factory scripts or activities when enabled. Facilitates troubleshooting and performance optimization.
+- **Execution Timeout**: Sets the wait time in minutes for the script block execution operation to complete before it times out in Azure Script Activity.
+- **Log Settings**: Customizes log capture and storage during script execution. Assists in identifying errors and debugging processes in data pipelines.
+- **Retry Attempts**: Sets the maximum duration for Azure Script Activity to run. Default is 7 days. Format is D.HH:MM:SS.
+- **Retry Interval**: Sets the interval in seconds between each retry attempt for Azure Script Activity.
+- **Secure Input**: When enabled, input from Azure Script Activity will not be captured in Azure Data Factory logging.
+- **Secure Output**: When enabled, output from Azure Script Activity will not be captured in Azure Data Factory logging.
+
+### Data Vault
+- **Apply Data Type Mapping DV:** Determines if the Data Type Mappings are applied to the Raw Data Vault. This function allows for the expansion of data types.
+- **Apply Lookup Filter DV:** Optimizes memory usage by determining if the SSIS Lookup checks for existing rows by applying a filter condition joining the staging table to the destination table in Staging-to-Data Vault processes.
+- **Uniform Change Type:** Prevents duplication and preserves attribute history by treating all source inserts and updates alike. No new record is added if `RowChangeType` is the only difference.
+- **Zero Key Expression:** Overrides the default SQL expression to generate Zero keys in Data Vault insert scripts. Use with caution as altering this expression may affect data consistency.
+- **Add Zero Keys:** Automatically uses a Zero Key for Link Keys when the key column is empty, ensuring all records are linked even if some key data is missing.
+- **Column Naming Convention:** Sets the naming convention for Columns in the Data Vault Accelerator.
+- **Create Satellite Views:** Generates easy-to-use DataVault satellite views that include effectivity timelines and current statuses for simpler data analysis over time.
+- **Current View Suffix:** Sets the prefix for `Current` satellite views. Default is `_CURR`.
+- **ELT Delta Is Derived:** Optimizes ELT loads for scenarios like streams or insert-only transaction source tables by enabling if loading into Data Vault and the Delta has already been derived.
+- **Effectivity View Suffix:** Sets the prefix for `Effectivity` satellite views. Default is `_EFDT`.
+- **Prefix View Name:** Sets the prefix for `Current` (CURR) and `Effectivity` (EFDT) satellite views.
+- **Schema Bridge:** Overrides the Default Schema used in the `Create Bridge` dialog.
+- **Schema Point In Time:** Overrides the Default Schema used in the `Create Point In Time` dialog.
+- **Append Schema:** Determines if the schema is appended to the names of accelerated Data Vault objects.
+- **Display Database Name:** Determines if the database name is displayed in the Data Vault.
+- **Display Schema Name:** Determines if the schema name is displayed in the Data Vault.
+
+### Databricks
+
+- **Add Create Catalog**  Enables the inclusion of `CREATE CATALOG IF NOT EXISTS` statement in table creation scripts.
+- **Add Drop Notebooks**  Generates notebooks that drop all existing tables in the workspace. Recommended for development environments only.
+- **Add Sql Comments**  Includes user-defined metadata as SQL comments in `CREATE TABLE` scripts.
+- **Add Truncate Notebooks**  Generates notebooks that truncate all existing tables in workspace. Recommended for development environments only.
+- **Append Notebook Name**  Appends a specified string to generated Databricks Notebooks.
+- **Build Output Path**  Specifies the folder for creating Databricks files upon build.
+- **Copy Format Options**  Customizes properties of the file format used during the COPY INTO operation.
+- **Copy Options**  Customizes `COPY_OPTION` for the COPY INTO operation.
+- **Data Time Zone**  Sets the time zone for loading timestamps in notebooks without altering original data.
+- **Display Time Zone**  Sets the time zone for displaying timestamps in notebooks without altering original data.
+- **Notebook Path**  Specifies the folder containing Databricks files for runtime.
+- **Repository Name**  Identifies the Repository containing Databricks files for runtime.
+- **Retry Attempts**  Defines the number of retry attempts for re-running failed Databricks Notebook Activity.
+- **Retry Interval**  Specifies the wait time before retrying a failed Databricks Notebook Activity.
+- **Secure Input**  Protects sensitive data passed into Databricks Notebook by masking input values.
+- **Secure Output**  Secures the output of Databricks Notebook Activity, hiding it from activity logs.
+- **Table Properties**  Defines properties for creating tables in Databricks using CREATE TABLE statement.
+- **Timeout**  Sets maximum wait time for Azure Data Factory to complete Databricks Notebook Activity.
+- **Use Global Parameters**  Determines if Azure Data Factory will call Databricks Notebooks using Global arameters.
+- **Use Managed Tables**  Decides if table creation scripts should use `Unity Catalog` or `LOCATION` clause.
+- **Use Temporary Views**  Allows notebooks to use `CREATE OR REPLACE TEMPORARY VIEW` SQL statement for quicker data access.
+- **Use Unity Catalog**  Specifies if table creation scripts should use `Unity Catalog` or `LOCATION` clause.
+
+### Documentation
+
+- **Hide Footer**: This setting allows you to control the visibility of the footer div in the HTML template when the documentation is in preview mode.
+- **Hide Header**: This setting enables you to determine the visibility of the header div in the HTML template during preview mode of the documentation.
+- **HTML Template Path**: This setting provides an option to specify the path to a replacement HTML file that will serve as the foundation for the generated documentation.
+- **Include Connection Schema Diagrams**: This setting decides whether or not to include schema diagrams in the documentation for each connection.
+- **Include Object Lineage Diagrams**: This setting determines if lineage diagrams should be included in the documentation for each object.
+- **Item Settings JSON**: This setting allows you to specify JSON code that can be used to customize the settings for each item in the documentation.
+- **Property Display Mode**: This setting controls which properties are shown for each entity based on their values in the generated documentation for a BimlFlex project.
+- **Property Order**: This setting allows you to determine the order in which properties are displayed for each entity in the generated documentation for a BimlFlex project.
+
+### Business Modeling
+- **Attribute Naming Convention** Introducing a new setting to specify the naming convention for attributes in your business model. You can now select from predefined conventions such as `PascalCase`, `camelCase`, `UPPER_CASE`, `lower_case`, and more.
+- **Attribute Technical Naming Convention** We've added a setting that allows you to define the technical naming convention for attributes in your business model. Choose from options like `PascalCase`, `camelCase`, `UPPER_CASE`, `lower_case`, among others.
+- **Entity Naming Convention** We have a new setting that specifies the naming convention used for entities in your business model. Select from predefined conventions such as `PascalCase`, `camelCase`, `UPPER_CASE`, `lower_case`, and more.
+- **Entity Technical Naming Convention** Our latest update includes a setting that specifies the technical naming convention used for entities in your business model. You can choose from predefined conventions like `PascalCase`, `camelCase`, `UPPER_CASE`, `lower_case`, etc.
+
+
+### Snowflake
+- **Add Sql Comments** Enable this new setting to include user-defined metadata as SQL comments in your `CREATE TABLE` scripts. This will allow you to add descriptive information or notes directly in your SQL code for better understanding and readability.
+- **Clean Output Path** We have added a new setting that specifies whether the output folder for the SnowDT (Snowflake Data Tools) project should be cleared during the build process. This can help you maintain a clean workspace by removing outdated or unnecessary files.
+- **Execute As** This new setting allows you to choose how to execute commands in Snowflake: as the `CALLER` initiating the operation, or as the `OWNER` of the object being accessed. This provides more control and flexibility over command execution in Snowflake.
+
+### SQL Server Data Tools
+- **Clean Output Path** This setting allows you to decide if the output folder for your SSDT (SQL Server Data Tools) project should be cleared during the build process.
+- **Solution Name** With this setting, you can specify the SSDT Solution Name used when the 'Use Database References' feature is enabled. This aids in better organization and identification of your project within your development environment.
+- **Use Database References** This setting enables SSDT (SQL Server Data Tools) database projects to use database variables, allowing for more dynamic cross-database interactions. It promotes modularity and removes the need to hardcode database names.
+- **Visual Studio Version** This setting lets you specify the version of Visual Studio you are using or targeting for your project.
+
+### Staging
+- **Staged Object Configurations** Choose how to handle the `StagingAttribute` for each object. Options include `Derived`, `Source`, and `Inherit`. This setting allows you to override the default behavior for greater customization.
+- **Delta Is Derived** Determines if a PSA table already receives a data delta. Enable this if loading into PSA and the delta has already been derived earlier.
+- **Delta Use Hash Diff** Enable this option to use Hash Diff comparisons for Change Data Capture and Change Tracking sources. This method provides a more robust way to identify and capture only the changes, but may increase load time.
+
+> [!NOTE]
+>
+> * This is a major release and we recommend testing in a non-production environment before upgrading your production environment. 
+> * As always, please contact our support team if you encounter any issues or have any questions.
