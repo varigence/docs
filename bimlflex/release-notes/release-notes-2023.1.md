@@ -17,6 +17,7 @@ Varigence is excited to release the 2023 R1 version of the BimlFlex platform for
 
 BimlFlex 2023 R1 is installed and upgraded through a single consolidated installer.
 
+
 <!--
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
@@ -26,6 +27,24 @@ Build 23.1.328.0, release date: 01 Jul 2023
 >
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.3.207.0.exe). This installer includes all BimlFlex components
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.3.207.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
+
+## Installer
+
+Split installers into 32-bit and 64-bit versions for smaller size and increased flexibility
+
+Added support for MSI installation, if the bundled EXE installer is not supported by group policy
+
+Removed large locale-specific PAK files from Chromium browser host, as they are not required for customer workflows
+
+Changed Add/Remove Programs entries to list each installed application separately, rather than condensing them under the Setup Bundle executable. This means that BimlFlex Dev, BimlFlex Runtime, and BimlStudio installers no longer corrupt each others' installations.
+
+Added MFA support in dacpac deployment in the installer
+
+When testing a connection string for database deployment in BimlFlex Dev Installer, if the database is not present, the connection to the server will be validated for a new database deployment
+
+Added BimlFlex SSIS Snowflake CustomComponents for SQL 2022
+
+Updated AzureFunctionBridge to the latest version of Azure Functions
 
 
 ## Databricks Templates with Data Mesh, Data Vault and Data Mart Capability
@@ -147,6 +166,46 @@ Introducing the BimlFlex Documentation generator, a comprehensive tool designed 
 - **Description**: Introduces a new capability to automatically import metadata information directly from Parquet files into your data pipeline.
 - **Benefit**: Simplifies the data ingestion process by eliminating manual metadata configuration, thereby accelerating data pipeline development and reducing the risk of errors.
 
+### Flat File Format Importer
+
+- **Feature**:
+- **Description**:
+- **Benefit**:
+
+### Database Schema Importer
+
+Added support for importing Streams
+
+Complete refactor of the import UI to allow for:
+ - XXX
+ - Schema and Object name filtering at the server level for improved import performance
+ - Filtering of schema and object post import on the client
+
+### Diagram Improvements
+
+- **Feature**:
+- **Description**:
+- **Benefits**:
+  - Column to column edges (rather than all being connected at the object level)
+  - Edges are now grouped when they point to the same column
+  - Edge rerouting on drag
+  - Colors on Schema Diagram
+  - Edge routing handlers are more indicative of how to be interacted with
+  - Edge arrow styles
+  - Added logical entity groupings (SATS/HUBS, LINKS/LSATS, etc.)
+  - New diagram display options:
+    - Zoom controls
+    - Toggles now live in dropdown menu
+    - Style of overview graph has changed
+    - Removed dropdown arrow on object. Users cannot individually hide the columns on certain objects when ‘Show Columns’ is active (this is a regression).
+
+### Diagrams Embedded in Object Editor Tabs
+
+- **Feature**:
+- **Description**:
+- **Benefit**:
+
+
 ### SQL Server Data Tools
 
 - **Feature**: Database Variables in SSDT Projects
@@ -169,7 +228,23 @@ Introducing the BimlFlex Documentation generator, a comprehensive tool designed 
 - **Description**: Introduces the capability to load a single table from multiple projects. This feature accommodates different data pipelines that may need to populate the same table.
 - **Benefit**: Provides flexibility in data ingestion by allowing the same table to be loaded from different projects, each with its own schedule and triggers. This enables more dynamic and responsive data workflows, catering to various data sources and operational requirements.
 
-## Bug Fixes
+## BimlStudio Build and Customization Improvements
+
+Huge performance improvements on project loading and build
+
+Added DesignerBimlPath to all Extension Point templates for improved intellisense capabilities
+
+Default Build Engine for new projects changed to Bimlc.exe.
+
+## Excel Add-in
+
+Added MFA support
+
+Fixed ability to list databases in some circumstances
+
+Fixed issue where add-in would fail to cache login information for non-Windows authentication
+
+## Bug Fixes and Misc Improvements
 
 - **Parameter Editor**: Fixed an issue where selecting a Parent Node with only one value would change to an Editor instead of a list view, causing UI inconsistency.
 
@@ -179,7 +254,11 @@ Introducing the BimlFlex Documentation generator, a comprehensive tool designed 
 
 - **DB2, SSIS**: Fixed issues with the `XML`, `TIMESTAMP( )`, and `DECIMAL( )` data types from DB2 in SSIS packages.
 
-- **Grids**: Fixed a formatting issue where selecting a Monaco Field would expand the column and change the column size formatting.
+- **Grids**: Multiple fixes, including
+  - Fixed a formatting issue where selecting a Monaco Field would expand the column and change the column size formatting.
+  - Pivoted to using standard textareas in grids for Monaco fields with full Monaco experience only in popup dialog
+  - Improved dirty field checks across all grids, especially for Monaco fields
+  - Improved disabled cell logic across all grids
 
 - **Connection Editor**: Fixed an issue where switching from an Account key authentication method to Managed Identity in Linked Service would still contain the account key properties, including the secret name.
 
@@ -190,6 +269,18 @@ Introducing the BimlFlex Documentation generator, a comprehensive tool designed 
 - **Table and Column Comments**: Fixed an issue where BimlFlex was not reading or generating any table or column comments from source tables.
 
 - **Audit Tables**: Fixed inconsistencies on RowEffectiveFromDate and RowEffectiveToDate columns.
+
+- **Form Field Logic**: No longer working from model stored in DB. Uses form field values instead.
+
+ - **Entity Folders**: Added Entity Folders to the Project hierarchy and a project grid control to display projects inside the folders
+
+ - **UI Labels**: Improved labels (such as Retention Settings) to include the unit of measurement (e.g. Days) and changed Exclude to Excluded to align with other options
+
+ - **Touch Mode**: Improved interface while in touch mode to make tree views easier to use with bigger touch targets
+
+ - **Tooltips**: Standardized tooltip delay at 1100 ms. Also moved margin outside of the overlay so that tooltip would immediately disappear when moving mouse away from label.
+
+ - **Prepopulated Fields**: Added smarter field prepopulation when creating new Parameters and Custom Attributes
 
 ## New Settings 
 
