@@ -260,13 +260,13 @@ An example of a previous version of the landing page, where values for an entity
     },
 ```
 
-![image.png](/.attachments/image-18a23420-a973-49a8-a933-5b3e23554f29.png)
+![Default Documentation Landing Page](images/docs-gen-default.png "Default Documentation Landing Page")
 
-A second pass at the landing page where entity metrics were pulled from the bimlFlexMetadata file directly allowed for the creation of the following:
+By customizing the HTML file the documentation landing page could be edited to look like:
 
-![image.png](/.attachments/image-d76ab26f-f4ad-46b5-9196-641b8fbc2382.png)
+![Customized Documentation Landing Page](images/docs-gen-customization.png "Customized Documentation Landing Page")
 
-The above examples show the extent to which the landing page is fully customizable. 
+The above examples show the extent to which the landing page is fully customizable.
 
 **Dashboard**
 The dashboard, which is the heading of the landing page, is denoted by the `<div>` tag with the id `config-landingHeader`. This serves as the main entry point for the project.
@@ -397,13 +397,14 @@ The Monaco Editor offers many more features and customizations. Explore them in 
 
 This serves as the main method of navigating through the BimlFlex Documentation. The menu is made up of nodes for each entity present in the BimlFlex configuration, forming tree menus that represent the relationships between each item.
 
-  ![Screenshot 2023-08-04 151725.png](/.attachments/Screenshot%202023-08-04%20151725-7650faee-9c29-4600-804a-7ea243ab53c7.png)
+
+![Documentation Navigation Tree Menu](images/docs-gen-nav-window.png "Documentation Landing Navigation Tree Menu")
 
 - **Search**
 
 Above the menu is a search bar that will filter the menu based on the entered content.
 
-  ![Screenshot 2023-08-04 151809.png](/.attachments/Screenshot%202023-08-04%20151809-0893aef2-4f8f-4598-85ad-49d5827edbd6.png)
+![Documentation Search Menu](images/docs-gen-search.png "Documentation Landing Navigation Tree Search Menu")
 
 - **URL**
 Every entity has a unique identifier (UID) that the URL uses to load the associated entity. This allows navigation directly through the URL where any entity can be directed by adding # followed by the entity's UID to the Documentation's default URL.
