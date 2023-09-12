@@ -14,6 +14,9 @@
   - name: Development, Build & Deployment
     href: build-and-deployment/toc.yml
 
+#  - name: Documentation Generation
+#    href: docs-gen/toc.yml
+
   - name: BimlFlex for Azure Data Factory
     href: technology-adf/toc.yml
 
