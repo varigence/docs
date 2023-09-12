@@ -21,11 +21,11 @@ BimlFlex 2023 R1 is installed and upgraded through a single consolidated install
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
 
-Build 23.1.328.0, release date: 01 Jul 2023
+Build 23.1.432.0, release date: 14 Sep 2023
 
 >
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.3.207.0.exe). This installer includes all BimlFlex components
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.3.207.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
+* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_23.1.432.0.exe). This installer includes all BimlFlex components
+* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_23.1.432.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## Installer File Enhancements
 
@@ -92,16 +92,13 @@ BimlFlex has been updated to incorporate Databricks functionality, enhancing its
 * **Description**: BimlFlex now allows the configuration of a connection to a Databricks cluster directly within the platform. This connection can be leveraged in Azure Data Factory pipelines as both a data source and target.
 * **Benefit**: This feature simplifies the process of integrating Databricks into data pipelines. By enabling a direct connection to Databricks clusters, data engineers can more easily orchestrate complex data workflows that require Databricks' advanced analytics capabilities, all while managing it from a single platform.
 
-<!--
-CJSxxx - should "Truncate and Drop Scripts" be included in BFX release notes? It doesn't seem to go along with the Databricks content above it.
 #### Truncate and Drop Scripts in BimlStudio
 
 * **Feature**: Toggleable Truncate and Drop Scripts
 
-* **Description**: BimlStudio now allows developers to enable or disable the generation of truncate and drop scripts as part of the build process.
+* **Description**: BimlStudio now allows developers to enable or disable the generation of truncate and drop scripts as part of the build process for BimlFlex projects.
 
 * **Benefit**: This feature provides data engineers with the flexibility to safely manage database objects in production environments while still having the convenience of utility scripts for development and testing phases.
--->
 
 ### Azure Data Factory (ADF)
 
@@ -132,9 +129,7 @@ Once generated, documentation can be deployed through the following methods:
 * **Cloud Platforms**: Use platforms like Netlify, GitHub Pages, Vercel, or Firebase for hosting
 * **Integration with Jira**: Embed your documentation within a Jira page using an iframe
 
-<!--
-CJSxxx do we have a link to documentation generator? or is that only internal wiki usage right now? 
--->
+See the [Documentation Generation User Guide](https://docs.varigence.com/bimlflex/docs-gen) for more information.
 
 ### Metadata Import
 
@@ -142,19 +137,7 @@ CJSxxx do we have a link to documentation generator? or is that only internal wi
 
 * **Flat File Format Importer** now enables automatic metadata import from flat files, simplifying data ingestion by eliminating manual metadata configuration, thus expediting data pipeline development and reducing the risk of errors.
 
-* **Database Schema Importer** now has added support for importing Streams. Additionally, the user interface has been refactored to enable improved import performance, schema and object name filtering at the server level, and post-import filtering of schema and objects on the client-side.
-
-<!--
-CJSxxx, not really sure how to parse "Database Schema Importer", but bullet point edited above, from original section included in comment
-### Database Schema Importer
-
-Added support for importing Streams
-
-Complete refactor of the import UI to allow for:
- - XXX
- - Schema and Object name filtering at the server level for improved import performance
- - Filtering of schema and object post import on the client
--->
+* **Database Schema Importer** now has added support for importing Streams. Additionally, the user interface has been refactored to enable improved import performance, schema and object name filtering at the server level, post-import filtering of schema and objects on the client-side, and improved use of screen real estate.
 
 ### Metadata Editor Diagrams
 
@@ -173,15 +156,9 @@ BimlFlex metadata editors which utilize model-diagrammed visualizations (Acceler
   * Overall change to graph style
   * Removed dropdown arrow on object. Users cannot individually hide the columns on certain objects when 'Show Columns' is active (this is a regression).
 
-<!--
-CJSxxx -- this needs to be turned into a bullet point or fleshed out 
-
 ### Diagrams Embedded in Object Editor Tabs
 
-- **Feature**:
-- **Description**:
-- **Benefit**:
--->
+The Object editor screen has added tabs for Schema Diagram, Accelerator, and Data Lineage where applicable. This enables visual inspection and editing of objects and their related entities without having to leave the Object editor. The tabs host the full-featured modeling diagrams with presets configured to maximize productivity.
 
 ### SQL Server Data Tools
 
@@ -369,10 +346,7 @@ CJSxxx -- this needs to be turned into a bullet point or fleshed out
 
 ## Excel Add-in
 
-* Fixed ability to list databases in some circumstances
-<!-- 
-CJSxxx -- what circumstances? can expand bullet point if additional information available
--->
+* Fixed ability to list databases when using multi-factor authentication
 
 * Fixed issue where add-in would fail to cache login information for non-Windows authentication.
 
