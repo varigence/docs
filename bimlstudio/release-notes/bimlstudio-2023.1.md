@@ -43,9 +43,9 @@ Build 23.1.432.0, release date: 14 Sep 2023
 
 ### SSIS
 
-* Added EscapeQualifier to Flat File Destination
 * Added SSIS 2022 emission
-
+* Added EscapeQualifier to Flat File Destination
+ 
 ### Tabular
 
 * Added support for explicitly setting compatibility levels and improved logic for autodetecting compatibility level based on target settings
@@ -59,7 +59,8 @@ Build 23.1.432.0, release date: 14 Sep 2023
 ### Metadata Import
 
 * Added schema import from Databricks
-* Added support for Multi-Factor authentication both in import UI and in programmatic import APIs
+* Added support for Multi-Factor Authentication both in import UI and in programmatic import APIs
+* Added encrypted Token Cache for Multi-Factor Authentication (MFA) when using Active Directory Interactive, which prevents the user from having to revalidate via MFA on every build or import operation.
 
 ### Logging
 

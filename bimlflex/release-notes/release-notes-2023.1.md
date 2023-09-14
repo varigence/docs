@@ -169,6 +169,7 @@ The Object editor screen has added tabs for Schema Diagram, Accelerator, and Dat
 * Huge performance improvements on project loading and build.
 * Added DesignerBimlPath to all Extension Point templates for improved intellisense capabilities. This improvement provides users with more intelligent and error-resistant Biml code suggestions and streamlined development.
 * Default Build Engine for new projects changed to Bimlc.exe. This offers faster compliation times, better resource utilization, and increased build stability.
+* Added encrypted Token Cache for Multi-Factor Authentication (MFA) when using Active Directory Interactive, which prevents the user from having to revalidate via MFA on every build or import operation.
 
 ## 2023 R1 - Enhancements and New Settings
 
