@@ -95,19 +95,14 @@ BimlFlex has been updated to incorporate Databricks functionality, enhancing its
 #### Truncate and Drop Scripts in BimlStudio
 
 * **Feature**: Toggleable Truncate and Drop Scripts
-
 * **Description**: BimlStudio now allows developers to enable or disable the generation of truncate and drop scripts as part of the build process for BimlFlex projects.
-
 * **Benefit**: This feature provides data engineers with the flexibility to safely manage database objects in production environments while still having the convenience of utility scripts for development and testing phases.
 
 ### Azure Data Factory (ADF)
 
 * Added **Native Support for Change Data Capture (CDC)** in ADF Pipleines, allowing automatic capture of changes in source databases and real-time reflection in data warehouses or lakes. This eliminates the need for batch processing, providing real-time data integration that enhances data freshness and reduces latency for data engineers requiring up-to-the-minute data for analytics or reporting.
-
 * Added **Separate Change Tracking Configuration Overrides for ADF Variables** to allow for `SET_INITIAL_QUERY` (initial data load) and `SET_CHANGE_QUERY` (change tracking). This provides fine-grained control over data pipelines, allowing users to tailor the `SET_CHANGE_QUERY` to specific use-cases without impacing the `SET_INITIAL_QUERY`, facilitating more efficient management and optimization.
-
 * Added **Decoupling of Parameter Activity from Main Processing** in ADF Pipelines, which introduces a modular architecture that triggers the Main Processing pipeline only when there's actual data to process. This approach eliminates idle processing time, optimizes resource utilization, and reduces operational costs.
-
 * Added control over **Pipeline Concurrency and Intelligent File Archiving**. This allows uers to limit concurrent pipeline executions and archive files only after successful processing, preventing data duplication and ensuring that only processed files are archived.
 
 ### BimlFlex Documentation Generator
@@ -134,9 +129,7 @@ See the [Documentation Generation User Guide](https://docs.varigence.com/bimlfle
 ### Metadata Import
 
 * **Parquet File Format Importer** now allows automatic metadata import from Parquet files, streaminling data ingestion by eliminating manual metadata configuration, thus accelerating data pipeline development and minimizing the resk of errors.
-
 * **Flat File Format Importer** now enables automatic metadata import from flat files, simplifying data ingestion by eliminating manual metadata configuration, thus expediting data pipeline development and reducing the risk of errors.
-
 * **Database Schema Importer** now has added support for importing Streams. Additionally, the user interface has been refactored to enable improved import performance, schema and object name filtering at the server level, post-import filtering of schema and objects on the client-side, and improved use of screen real estate.
 
 ### Metadata Editor Diagrams
@@ -347,7 +340,6 @@ The Object editor screen has added tabs for Schema Diagram, Accelerator, and Dat
 ## Excel Add-in
 
 * Fixed ability to list databases when using multi-factor authentication
-
 * Fixed issue where add-in would fail to cache login information for non-Windows authentication.
 
 > [!NOTE]

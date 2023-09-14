@@ -19,15 +19,11 @@ This section covers the setup of BimlFlex Documentation, including important fil
 
 The following files are generated when the Documentation is ready for publishing or sharing. Interactions with these files may occur during deployment or management of the completed Documentation.
 
-- **bundle.js**: A JavaScript file that contains all the necessary code to run the Documentation. It is compiled and optimized to ensure a rapid and efficient loading. This file is essential for Documentation being deployed on a web server.
-
-- **bundleInfo.json**: A JSON file that carries metadata about the bundle.js. This file may contain information such as version number, file size, and other details related to the build process. Although primarily used internally by the app, it can provide insights into the specific build if required for troubleshooting or version management.
-
-- **editor.worker.js**: A web worker script that assists with real-time editing functions within the Documentation. This script handles tasks such as spell-check and grammar analysis without slowing down the main browser thread.
-
-- **index.html**: The main HTML file used to display the Documentation. It references other files, like bundle.js, and contains the structure and content of the Documentation. If hosting the Documentation on a web server, this will be the file that requests to view the content. This is also the primary file used for customization(s). For more information on how to implement personal templates and styling, refer to the [HTML](#html) and [CSS](#css) sections of [Customization](#customization).
-
-- **metadata.bundle.js**: A JavaScript file that contains organized information about the structure, content, and configuration of the Documentation. It may include elements such as the table of contents, index, and other organizational data. It assists the app or web browser in understanding how to present the Documentation and navigate between different sections.
+* **bundle.js**: A JavaScript file that contains all the necessary code to run the Documentation. It is compiled and optimized to ensure a rapid and efficient loading. This file is essential for Documentation being deployed on a web server.
+* **bundleInfo.json**: A JSON file that carries metadata about the bundle.js. This file may contain information such as version number, file size, and other details related to the build process. Although primarily used internally by the app, it can provide insights into the specific build if required for troubleshooting or version management.
+* **editor.worker.js**: A web worker script that assists with real-time editing functions within the Documentation. This script handles tasks such as spell-check and grammar analysis without slowing down the main browser thread.
+* **index.html**: The main HTML file used to display the Documentation. It references other files, like bundle.js, and contains the structure and content of the Documentation. If hosting the Documentation on a web server, this will be the file that requests to view the content. This is also the primary file used for customization(s). For more information on how to implement personal templates and styling, refer to the [HTML](#html) and [CSS](#css) sections of [Customization](#customization).
+* **metadata.bundle.js**: A JavaScript file that contains organized information about the structure, content, and configuration of the Documentation. It may include elements such as the table of contents, index, and other organizational data. It assists the app or web browser in understanding how to present the Documentation and navigate between different sections.
 
 ### Deployment
 
@@ -36,27 +32,29 @@ This section provides detailed instructions on the various methods for deploying
 **Method 1: File System Deployment**  
 For viewing a site without an active internet connection, Documentation can be accessed directly from a local file system:
 
-- Navigate to the directory containing the HTML file.
-- Right-click on the file and select "Open with" from the dropdown menu.
-- Select a web browser from the list of programs.
+* Navigate to the directory containing the HTML file.
+* Right-click on the file and select "Open with" from the dropdown menu.
+* Select a web browser from the list of programs.
 
->Note: Some features might not function as anticipated due to security restrictions when loading web pages directly from the file system.
+> [!NOTE]
+>
+> * Some features might not function as anticipated due to security restrictions when loading web pages directly from the file system.
 
 **Method 2: Web Server Deployment**  
 Deploying a site on a web server allows anyone with the server's IP address or domain to access it. Two web server deployment options covered below are: Microsoft's IIS server, suitable for Windows environments, and Nginx, a popular lightweight server for various platforms.
 
-Microsoft IIS
+**Microsoft IIS**
 
-- Install IIS via the "Turn Windows features on or off" panel in the Control Panel.
-- Once installed, open the IIS Manager.
-- In the Connections panel, expand the tree and right-click on "Sites", then select "Add Website".
-- Enter the site name, physical path (location of the HTML/JavaScript files), and binding information, then click "OK."
+* Install IIS via the "Turn Windows features on or off" panel in the Control Panel.
+* Once installed, open the IIS Manager.
+* In the Connections panel, expand the tree and right-click on "Sites", then select "Add Website".
+* Enter the site name, physical path (location of the HTML/JavaScript files), and binding information, then click "OK."
 
-Nginx
+**Nginx**
 
-- Install Nginx, typically through a package manager like apt for Ubuntu or brew for macOS.
-- Copy the HTML and JavaScript files to the appropriate directory. For a basic setup, this is usually /usr/share/nginx/html.
-- Start or restart Nginx. On most systems, this can be done with the command `sudo systemctl restart nginx`.
+* Install Nginx, typically through a package manager like apt for Ubuntu or brew for macOS.
+* Copy the HTML and JavaScript files to the appropriate directory. For a basic setup, this is usually /usr/share/nginx/html.
+* Start or restart Nginx. On most systems, this can be done with the command `sudo systemctl restart nginx`.
 
 **Method 3: Deployment on Cloud Platforms**  
 Various cloud platforms can host an HTML/JavaScript site. Platforms like Netlify, GitHub Pages, Vercel, or Firebase offer free or affordable hosting. These platforms typically require uploading of files or connecting to a source code repository, and then handle the remainder of the deployment process.
@@ -64,11 +62,11 @@ Various cloud platforms can host an HTML/JavaScript site. Platforms like Netlify
 **Method 4: Integrating into an Existing Jira Site**  
 Although not designed to host websites, an HTML/JavaScript site can be embedded within a Jira page using an iframe, by doing the following:
 
-- Host the site using any of the above methods.
-- Once the site is live, copy the URL.
-- On the Jira page, select the option to edit the page.
-- Add an HTML macro to the page where the site should appear.
-- In the macro, include an iframe that references the site. An example of code that could be used:
+* Host the site using any of the above methods.
+* Once the site is live, copy the URL.
+* On the Jira page, select the option to edit the page.
+* Add an HTML macro to the page where the site should appear.
+* In the macro, include an iframe that references the site. An example of code that could be used:
 
 ```html
 <iframe src="SAMPLE_SITE_URL" width="100%" height="600"></iframe>
@@ -76,21 +74,25 @@ Although not designed to host websites, an HTML/JavaScript site can be embedded 
 
 Replace `SAMPLE_SITE_URL` with the URL of the live site. The width and height values can be adjusted as needed.
 
->Note: When embedding a site within Jira, ensure the server where the site is hosted allows it to be loaded within iframes from the Jira site's domain. This is controlled by the 'X-Frame-Options' or 'Content-Security-Policy' HTTP header.
+> [!NOTE]
+>
+> * When embedding a site within Jira, ensure the server where the site is hosted allows it to be loaded within iframes from the Jira site's domain. This is controlled by the 'X-Frame-Options' or 'Content-Security-Policy' HTTP header.
 
 **Method 5: Using Confluence to Serve HTML**  
 Confluence permits serving static content including HTML pages, CSS, JavaScript, images, and other files. This can be especially useful for serving static HTML pages, storing content to reference from other Confluence pages or other sites, providing files to download without Confluence's size limitations, setting search engine rules through robots.txt, and more.
 
 To utilize this feature:
 
-- Place any file to be served in the `<CONFLUENCE_INSTALL>/confluence/` directory on the Confluence server. These files will not be affected by Confluence's style and will be served as independent files.
-- The content can be accessed via the URL using the pattern `http://<confluence-url>/myfile.html.` If a file is saved as `<CONFLUENCE_INSTALL>/confluence/myfile.html`, it can be accessed at that URL, and HTML files will be rendered by the browser.
-- Other file types will be displayed as plain text, or downloaded, depending on the browser settings. Modern browsers may also play media content like audio, video, or PDF files in the browser.
-- To organize the files, folders can be created within the `<CONFLUENCE_INSTALL>/confluence/` directory. The directory name must be added to the URL to access the file, such as `http://<confluence-url>/mydir/myfile.html`.
+* Place any file to be served in the `<CONFLUENCE_INSTALL>/confluence/` directory on the Confluence server. These files will not be affected by Confluence's style and will be served as independent files.
+* The content can be accessed via the URL using the pattern `http://<confluence-url>/myfile.html.` If a file is saved as `<CONFLUENCE_INSTALL>/confluence/myfile.html`, it can be accessed at that URL, and HTML files will be rendered by the browser.
+* Other file types will be displayed as plain text, or downloaded, depending on the browser settings. Modern browsers may also play media content like audio, video, or PDF files in the browser.
+* To organize the files, folders can be created within the `<CONFLUENCE_INSTALL>/confluence/` directory. The directory name must be added to the URL to access the file, such as `http://<confluence-url>/mydir/myfile.html`.
 
 This method allows serving static content independently from Confluence and can be a useful way to provide additional resources, pages, or files.
 
->Note: While the above methods offers the foundational knowledge needed to deploy an HTML/Javascript site, each deployment is unique and the ideal deployment method depends on the specific needs and resources of the user.
+> [!NOTE]
+>
+> * While the above methods offers the foundational knowledge needed to deploy an HTML/Javascript site, each deployment is unique and the ideal deployment method depends on the specific needs and resources of the user.
 
 ## **Customization**
 
@@ -100,20 +102,21 @@ The configuration for the Documentation viewer is defined using a set of interfa
 
 #### General Settings
 
-- **htmlTemplatePath** (optional): Path to the HTML template file used to render the documentation.
-- **useMonacoEditor** (optional): A boolean value that enables or disables the Monaco editor, a popular code editor.
-- **showEmptyFields** (optional): A boolean value that controls whether empty fields are displayed. Set to `true` to show them or `false` to hide them.
-- **propertyOrder** (optional): Defines the order in which properties are displayed. Options are `Default`, `Alphabetical`, `Reverse Alphabetical`, and `BimlFlex App Order`.
-- **propertyDisplayMode** (optional): Controls how properties are displayed. Options are `Always`, `Non-Empty`, and `Truthy`.
-- **includeObjectLineageDiagrams** (optional): A boolean value that controls whether to include diagrams depicting object lineage.
-- **includeConnectionSchemaDiagrams** (optional): A boolean value that controls whether to include diagrams depicting connection schemas.
+* **htmlTemplatePath** (optional): Path to the HTML template file used to render the documentation.
+* **useMonacoEditor** (optional): A boolean value that enables or disables the Monaco editor, a popular code editor.
+* **showEmptyFields** (optional): A boolean value that controls whether empty fields are displayed. Set to `true` to show them or `false` to hide them.
+* **propertyOrder** (optional): Defines the order in which properties are displayed. Options are `Default`, `Alphabetical`, `Reverse Alphabetical`, and `BimlFlex App Order`.
+* **propertyDisplayMode** (optional): Controls how properties are displayed. Options are `Always`, `Non-Empty`, and `Truthy`.
+* **includeObjectLineageDiagrams** (optional): A boolean value that controls whether to include diagrams depicting object lineage.
+* **includeConnectionSchemaDiagrams** (optional): A boolean value that controls whether to include diagrams depicting connection schemas.
 
 #### Item Settings
 
-- **itemSettings** (optional): An object containing configurations for individual items, where the key is the qualified name of the item. Possible settings for each item include:
-  - **isExcluded** (optional): Boolean value that excludes the item if set to `true`.
-  - **displayMode** (optional): Controls how the property is displayed, using the same values as `propertyDisplayMode`.
-  - **propertyOrder** (optional): Defines the order of properties, using the same values as `propertyOrder`.
+*  **itemSettings** (optional): An object containing configurations for individual items, where the key is the qualified name of the item. Possible settings for each item include:
+
+  * **isExcluded** (optional): Boolean value that excludes the item if set to `true`.
+  * **displayMode** (optional): Controls how the property is displayed, using the same values as `propertyDisplayMode`.
+  * **propertyOrder** (optional): Defines the order of properties, using the same values as `propertyOrder`.
 
 ### HTML
 
@@ -215,9 +218,9 @@ An example script to access and display the first `Connection` entity:
 
 **Important Notes:**
 
-- To access the `allBimlFlexMetadata` object, specify the type of data (such as `Entities` or `Meta`) and the specific object type (such as `Connection` or `AttributeType`).
-- Using jQuery's `$(document).ready()` function ensures that `allBimlFlexMetadata` has been initialized and changes made won't be overridden by the config file.
-- While not strictly necessary, elements that store and display data should have an `config-` formatted `id` to maintain consistency and to signify which elements should be configurable. 
+* To access the `allBimlFlexMetadata` object, specify the type of data (such as `Entities` or `Meta`) and the specific object type (such as `Connection` or `AttributeType`).
+* Using jQuery's `$(document).ready()` function ensures that `allBimlFlexMetadata` has been initialized and changes made won't be overridden by the config file.
+* While not strictly necessary, elements that store and display data should have an `config-` formatted `id` to maintain consistency and to signify which elements should be configurable. 
 
 **Method 3: Direct HTML Changes**
 
@@ -269,9 +272,11 @@ By customizing the HTML file the documentation landing page could be edited to l
 The above examples show the extent to which the landing page is fully customizable.
 
 **Dashboard**
+
 The dashboard, which is the heading of the landing page, is denoted by the `<div>` tag with the id `config-landingHeader`. This serves as the main entry point for the project.
 
 **Project Lineage**
+
 The `project-lineage` `<div>` simply contains the text "project" but should be changed to reflect the specifications of the docs being implemented.
 
 **User Information**
@@ -284,11 +289,12 @@ This section is contained within the `user-information` `<div>`.
 | **Version** | `config-version` | denotes the version of the system or project | 
 | **Date Generated** | `config-dateGenerated` | the date this data or page was generated | 
 
-
 **Entity Summary**
+
 This section, enclosed in the `entity-summary` `<div>`, provides an overview of the various entities present in the project. These entities are subdivided into various sections, each representing a different entity type. The character `_` denotes a placeholder where changes should be made to the values associated with each of the following:
-| Item | HTML ID | Description |  
-| ---- | ------- | ----------- | 
+
+| Item | HTML ID | Description |
+| ---- | ------- | ----------- |
 | **Connections** | `config-numConnections` | the number of connections in the project | 
 | **Objects** | `config-numObjects` | the number of objects present | 
 | **Columns** | `config-numColumns` | signifies the number of columns |
@@ -312,10 +318,10 @@ Custom styling can be added by following these steps:
 
 2. **Add Custom Styles:** Open the CSS file in a text editor and write or paste custom styles. The elements most likely to be of interest for customization in the documentation include:
 
-- The root-header and root-footer classes of elements.
-- The tree-container element.
-- The data-header class of elements.
-- The expander-header class of elements.
+* The root-header and root-footer classes of elements.
+* The tree-container element.
+* The data-header class of elements.
+* The expander-header class of elements.
 
 3. **Link the CSS File in HTML:** If a new CSS file was created, it must be linked in index.html. Open the index.html file in a text editor, and add the following line in the <head> section.
 
@@ -333,12 +339,12 @@ By following the above steps, styling of the HTML/JavaScript app can be modified
 
 Cell-label tooltips are generated using the `Tippy.js` package included in every documentation bundle. To customize the CSS of these tooltips, reference them by the id `tippy-box`. Further customization of the tooltips may be possible be injecting JavaScript code into index.html and manipulating the `tippy()` object provided by `Tippy.js`. This function accepts an options object which allows the specification of several properties:
 
-- **content:** A String or Element that represents the tooltip's content.
-- **placement:** This can be 'top', 'bottom', 'left', 'right', or 'auto', defining the tooltip's position relative to its target.
-- **delay:** A Number or Array defining the delay in milliseconds before the tooltip is shown and hidden.
-- **duration:** A Number or Array determining the duration of the tooltip's show and hide animations.
-- **animation:** A String specifying the type of animation to be used for the tooltip.
-- **interactive:** A Boolean value determining whether the tooltip should be interactive (e.g., whether it remains visible when hovered over or clicked on).
+* **content:** A String or Element that represents the tooltip's content.
+* **placement:** This can be 'top', 'bottom', 'left', 'right', or 'auto', defining the tooltip's position relative to its target.
+* **delay:** A Number or Array defining the delay in milliseconds before the tooltip is shown and hidden.
+* **duration:** A Number or Array determining the duration of the tooltip's show and hide animations.
+* **animation:** A String specifying the type of animation to be used for the tooltip.
+* **interactive:** A Boolean value determining whether the tooltip should be interactive (e.g., whether it remains visible when hovered over or clicked on).
 
 See below for an example:
 
@@ -361,25 +367,25 @@ The Monaco Editor is the code editor that powers Visual Studio Code, a popular o
 
 One can modify the Monaco Editor object through various options and methods provided by the library.
 
-- Changing the content: The content in the editor can be changed using the setValue() method:
+* Changing the content: The content in the editor can be changed using the setValue() method:
 
 ```javascript
 editor.setValue('New code text');
 ```
 
-- Changing the language: The language of the editor can be changed by calling the setModelLanguage() method:
+* Changing the language: The language of the editor can be changed by calling the setModelLanguage() method:
 
 ```javascript
 monaco.editor.setModelLanguage(editor.getModel(), 'python');
 ```
 
-- Changing the theme: The editor theme can be changed by using the setTheme() method:
+* Changing the theme: The editor theme can be changed by using the setTheme() method:
 
 ```javascript
 monaco.editor.setTheme('vs-dark');
 ```
 
-- Listening to changes: One can listen to content changes by adding an event listener on the onDidChangeModelContent event:
+* Listening to changes: One can listen to content changes by adding an event listener on the onDidChangeModelContent event:
 
 ```javascript
 editor.onDidChangeModelContent(() => {
@@ -393,36 +399,45 @@ The Monaco Editor offers many more features and customizations. Explore them in 
 
 ### Navigation
 
-- **Navigation Menu**
+#### **Navigation Menu**
 
 This serves as the main method of navigating through the BimlFlex Documentation. The menu is made up of nodes for each entity present in the BimlFlex configuration, forming tree menus that represent the relationships between each item.
 
-
 ![Documentation Navigation Tree Menu](images/docs-gen-nav-window.png "Documentation Landing Navigation Tree Menu")
 
-- **Search**
+#### **Search**
 
 Above the menu is a search bar that will filter the menu based on the entered content.
 
 ![Documentation Search Menu](images/docs-gen-search.png "Documentation Landing Navigation Tree Search Menu")
 
-- **URL**
+#### **URL**
+
 Every entity has a unique identifier (UID) that the URL uses to load the associated entity. This allows navigation directly through the URL where any entity can be directed by adding # followed by the entity's UID to the Documentation's default URL.
 
-- **In-Form Navigation**
+#### **In-Form Navigation**
 
 Entities that are linked to other entities such as Projects to Batches, will have blue hyperlinks that contain the URL for the linked entity.
 
 ### Understanding the Documentation
 
-- **Menu** 
+#### **Menu**
+
 This contains all of the entities that have been included in the Documentation. It is the main navigation hub of the Documentation.
-- **Forms** 
-  - Each entity has a form which displays all fields based on the current configuration settings.
-  - The fields are displayed in tables which are separated by their respective grouping.
-  - Tables are composed of each field and their value.
-  - At the top-right of each form is a empty fields toggle which will add or remove empty fields.
-    > Note: This will only effect **empty** fields. Fields with false values, such as empty checkboxes, will not change.
-  - Entities with Parameters and/or Custom Attributes will have a table listing all such Entities.
-  - Lineage Diagrams are located at the bottom of applicable forms.
-    > Note: Lineage diagrams can be zoomed by clicking and moved by dragging.
+
+#### **Forms**
+
+Each entity has a form which displays all fields based on the current configuration settings.
+
+  * The fields are displayed in tables which are separated by their respective grouping.
+  * Tables are composed of each field and their value.
+  * At the top-right of each form is a empty fields toggle which will add or remove empty fields.
+    > [!NOTE]
+>This will only effect **empty** fields. Fields with false values, such as empty checkboxes, will not change.
+
+  * Entities with Parameters and/or Custom Attributes will have a table listing all such Entities.
+  * Lineage Diagrams are located at the bottom of applicable forms.
+
+    > [!NOTE]
+>
+>Lineage diagrams can be zoomed by clicking and moved by dragging.

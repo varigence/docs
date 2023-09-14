@@ -56,12 +56,12 @@ Build 23.1.432.0, release date: 14 Sep 2023
 * Added support for IsKey and IsUnique to tabular columns
 * Added support for Calculation Groups
 
-## Metadata Import
+### Metadata Import
 
 * Added schema import from Databricks
 * Added support for Multi-Factor authentication both in import UI and in programmatic import APIs
 
-# Logging
+### Logging
 
 Added ability for BST main window to refresh logging manager when the registered default is changed by BimlScript code
 
@@ -97,11 +97,11 @@ Added ability for BST main window to refresh logging manager when the registered
 * Hardening tabular validators against null reference exceptions
 * Fixed emission of Tabular roles that contained special characters in their names
 
-## Build Enhancements
+### Build Enhancements
 
 * Fixed issue where Clean Output Folder would not always empty the output folder
 * Default Build Engine for new projects changed to Bimlc.exe. Also added a more descriptive warning for token acquisition failures when running old MSBuild
 
-## Source Control
+### Source Control
 
 * Updated Git integration to work with Azure DevOps, including additional authentication types
