@@ -42,7 +42,7 @@ Build 23.1.455.0, release date: 10 Oct 2023
 
 ### Databricks Integration and Templates
 
-BimlFlex has been updated to incorporate Databricks functionality, enhancing its capabilities in data management and prcoessing. The integration of these two solutions results in a robust environment for data management, providing users with a seamless and efficient means to unlock the potential of their data, whether its architecutre be Data Mesh, Data Vault, or Data Mart.
+BimlFlex has been updated to incorporate Databricks functionality, enhancing its capabilities in data management and processing. The integration of these two solutions results in a robust environment for data management, providing users with a seamless and efficient means to unlock the potential of their data, whether its architecture be Data Mesh, Data Vault, or Data Mart.
 
 #### Linked Services Support
 
@@ -100,10 +100,10 @@ BimlFlex has been updated to incorporate Databricks functionality, enhancing its
 
 ### Azure Data Factory (ADF)
 
-* Added **Native Support for Change Data Capture (CDC)** in ADF Pipleines, allowing automatic capture of changes in source databases and real-time reflection in data warehouses or lakes. This eliminates the need for batch processing, providing real-time data integration that enhances data freshness and reduces latency for data engineers requiring up-to-the-minute data for analytics or reporting.
-* Added **Separate Change Tracking Configuration Overrides for ADF Variables** to allow for `SET_INITIAL_QUERY` (initial data load) and `SET_CHANGE_QUERY` (change tracking). This provides fine-grained control over data pipelines, allowing users to tailor the `SET_CHANGE_QUERY` to specific use-cases without impacing the `SET_INITIAL_QUERY`, facilitating more efficient management and optimization.
+* Added **Native Support for Change Data Capture (CDC)** in ADF Pipelines, allowing automatic capture of changes in source databases and real-time reflection in data warehouses or lakes. This eliminates the need for batch processing, providing real-time data integration that enhances data freshness and reduces latency for data engineers requiring up-to-the-minute data for analytics or reporting.
+* Added **Separate Change Tracking Configuration Overrides for ADF Variables** to allow for `SET_INITIAL_QUERY` (initial data load) and `SET_CHANGE_QUERY` (change tracking). This provides fine-grained control over data pipelines, allowing users to tailor the `SET_CHANGE_QUERY` to specific use-cases without impacting the `SET_INITIAL_QUERY`, facilitating more efficient management and optimization.
 * Added **Decoupling of Parameter Activity from Main Processing** in ADF Pipelines, which introduces a modular architecture that triggers the Main Processing pipeline only when there's actual data to process. This approach eliminates idle processing time, optimizes resource utilization, and reduces operational costs.
-* Added control over **Pipeline Concurrency and Intelligent File Archiving**. This allows uers to limit concurrent pipeline executions and archive files only after successful processing, preventing data duplication and ensuring that only processed files are archived.
+* Added control over **Pipeline Concurrency and Intelligent File Archiving**. This allows users to limit concurrent pipeline executions and archive files only after successful processing, preventing data duplication and ensuring that only processed files are archived.
 
 ### BimlFlex Documentation Generator
 
@@ -128,7 +128,7 @@ See the [Documentation Generation User Guide](https://docs.varigence.com/bimlfle
 
 ### Metadata Import
 
-* **Parquet File Format Importer** now allows automatic metadata import from Parquet files, streaminling data ingestion by eliminating manual metadata configuration, thus accelerating data pipeline development and minimizing the resk of errors.
+* **Parquet File Format Importer** now allows automatic metadata import from Parquet files, streamlining data ingestion by eliminating manual metadata configuration, thus accelerating data pipeline development and minimizing the risk of errors.
 * **Flat File Format Importer** now enables automatic metadata import from flat files, simplifying data ingestion by eliminating manual metadata configuration, thus expediting data pipeline development and reducing the risk of errors.
 * **Database Schema Importer** now has added support for importing Streams. Additionally, the user interface has been refactored to enable improved import performance, schema and object name filtering at the server level, post-import filtering of schema and objects on the client-side, and improved use of screen real estate.
 
@@ -155,7 +155,7 @@ The Object editor screen has added tabs for Schema Diagram, Accelerator, and Dat
 
 ### SQL Server Data Tools
 
-* Added **Database Variables in SSDT projects** to promote modularity and best practices by facilitating efficient management of cross-database interactions without the need for hardocded database names.
+* Added **Database Variables in SSDT projects** to promote modularity and best practices by facilitating efficient management of cross-database interactions without the need for hardcoded database names.
 * Added functionality to specify **Pre and Post-deployment Scripts in SSDT**, granting users greater control over the deployment lifecycle. This added flexibility allows data engineers to automate tasks like data validation or cleanup, streamlining the deployment process.
 * Added **Transactional Integrity** into Satellite (SAT) and Link Satellite (LSAT) templates, ensuring data operations are either fully committed or rolled back in case of errors such as timeouts. This enhances data consistency and reliability by adopting an all-or-nothing approach to data changes, preventing partial updates and improving ETL pipeline robustness.
 * Added **Multi-Project Table Loading**, the capability to load a single table from multiple projects. This enhancement offers greater flexibility in data ingestion by accommodating different data pipelines that may need to populate the same table. It enables each project to have its own schedule and triggers, promoting dynamic and responsive data workflows to cater to various data sources and operational requirements.
@@ -168,7 +168,7 @@ The Object editor screen has added tabs for Schema Diagram, Accelerator, and Dat
 
 * Huge performance improvements on project loading and build.
 * Added DesignerBimlPath to all Extension Point templates for improved intellisense capabilities. This improvement provides users with more intelligent and error-resistant Biml code suggestions and streamlined development.
-* Default Build Engine for new projects changed to Bimlc.exe. This offers faster compliation times, better resource utilization, and increased build stability.
+* Default Build Engine for new projects changed to Bimlc.exe. This offers faster compilation times, better resource utilization, and increased build stability.
 * Added encrypted Token Cache for Multi-Factor Authentication (MFA) when using Active Directory Interactive, which prevents the user from having to revalidate via MFA on every build or import operation.
 
 ## 2023 R1 - Enhancements and New Settings
@@ -229,7 +229,7 @@ The Object editor screen has added tabs for Schema Diagram, Accelerator, and Dat
 * **Secure Output**: Secures the output of Databricks Notebook Activity, hiding it from activity logs
 * **Table Properties**: Defines properties for creating tables in Databricks using CREATE TABLE statement
 * **Timeout**: Sets maximum wait time for Azure Data Factory to complete Databricks Notebook Activity
-* **Use Global Parameters**: Determines if Azure Data Factory will call Databricks Notebooks using Global arameters
+* **Use Global Parameters**: Determines if Azure Data Factory will call Databricks Notebooks using Global parameters
 * **Use Managed Tables**: Decides if table creation scripts should use `Unity Catalog` or `LOCATION` clause
 * **Use Temporary Views**: Allows notebooks to use `CREATE OR REPLACE TEMPORARY VIEW` SQL statement for quicker data access
 * **Use Unity Catalog**: Specifies if table creation scripts should use `Unity Catalog` or `LOCATION` clause
