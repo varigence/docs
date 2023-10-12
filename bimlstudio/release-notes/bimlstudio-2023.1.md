@@ -16,10 +16,10 @@ BimlStudio 2023 R1 is installed and upgraded through a single consolidated insta
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
 
-Build 23.1.456.0, release date: 12 Oct 2023
+Build 23.1.457.0, release date: 13 Oct 2023
 
-* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_23.1.456.0.exe)
-* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlflexruntimesetup_x86_23.1.456.0.exe)
+* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_23.1.457.0.exe)
+* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlflexruntimesetup_x86_23.1.457.0.exe)
 
 
 # BimlStudio
