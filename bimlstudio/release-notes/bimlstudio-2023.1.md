@@ -1,16 +1,16 @@
 ---
 uid: bimlstudio-2023-r1
 name: BimlStudio Release Notes 2023 R1
-summary: Release Notes for BimlStudio 2023 R1
+summary: Release Notes for BimlStudio 2023 R1 Preview
 ---
 
-# Release Notes
+# Preview Release Notes
 
 Varigence is excited to release the 2023 R1 version of the BimlStudio Integrated Developer Environment!
 
 ## Installation
 
-BimlStudio 2023 R1 is installed and upgraded through a single consolidated installer.
+BimlStudio 2023 R1 Preview is installed and upgraded through a single consolidated installer.
 
 <!--
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE

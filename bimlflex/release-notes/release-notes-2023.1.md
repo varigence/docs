@@ -1,12 +1,12 @@
 ---
 uid: bimlflex-release-notes-2023-r1
 name: BimlFlex Release Notes 2023 R1
-summary: Release Notes for BimlFlex 2023 R1
+summary: Release Notes for BimlFlex 2023 R1 Preview
 ---
 
-# Release Notes
+# Preview Release Notes
 
-Varigence is excited to release the 2023 R1 version of the BimlFlex platform for data solution automation!
+Varigence is excited to release the 2023 R1 Preview version of the BimlFlex platform for data solution automation!
 
 > [!NOTE]
 >
@@ -15,7 +15,7 @@ Varigence is excited to release the 2023 R1 version of the BimlFlex platform for
 
 ## Installation
 
-BimlFlex 2023 R1 is installed and upgraded through a single consolidated installer.
+BimlFlex 2023 R1 Preview is installed and upgraded through a single consolidated installer.
 
 <!--
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
@@ -24,8 +24,10 @@ MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 Build 23.1.457.0, release date: 13 Oct 2023
 
 >
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_23.1.457.0.exe). This installer includes all BimlFlex components
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_23.1.457.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
+* [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_23.1.457.0.exe). This installer includes all BimlFlex components for 64-bit
+* [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_23.1.457.0.exe). This installer includes all BimlFlex components for 32-bit
+* [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_23.1.457.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit.
+* [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_23.1.457.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit.
 
 ## Installer File Enhancements
 
