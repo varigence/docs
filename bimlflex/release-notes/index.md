@@ -7,8 +7,8 @@ summary: An overview of key new features for the corresponding BimlFlex releases
 
 ## Current Release
 
-<!--* [BimlFlex 2023 R1 release notes](xref:bimlflex-release-notes-2023-r1)-->
 * [BimlFlex 2022 R3 release notes](xref:bimlflex-release-notes)
+* [BimlFlex 2023 R1 Preview release notes](xref:bimlflex-release-notes)
 
 ## Previous Releases & Information
 
