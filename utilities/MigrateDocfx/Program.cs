@@ -1,201 +1,161 @@
-﻿using System.Diagnostics;
+﻿using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Xml.Linq;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-var docFxRootDirectory = @"C:\varigencedocs\bimlflex"; // Path to your DocFX project
-var docusaurusRootDirectory = @"C:\varigencedocs\varigence\docs\bimlflex"; // Path to your Docusaurus project
+string docfxDirectory = "C:\\varigencedocs\\bimlflex";
+string docusaurusDirectory = "C:\\varigencedocs\\varigence\\docs\\bimlflex";
+var imageExtensions = new[] {".png", ".gif", ".svg", ".jpg", ".jpeg"};
 
-var docFxDirectory = $@"{docFxRootDirectory}"; // Path to your DocFX project
-var docusaurusDirectory = $@"{docusaurusRootDirectory}"; // Path to your Docusaurus project
-string[] imageExtensions = {".png", ".gif", ".svg", ".jpg", ".jpeg"};
-
-foreach (var file in Directory.EnumerateFiles(docFxRootDirectory, "*.*", SearchOption.AllDirectories).Where(s => imageExtensions.Any(ext => ext == Path.GetExtension(s))))
+foreach (string filePath in Directory.EnumerateFiles(docfxDirectory, "*.*", SearchOption.AllDirectories)
+             .Where(file => imageExtensions.Any(ext => file.EndsWith(ext, StringComparison.OrdinalIgnoreCase))))
 {
-    CopyFile(file, docFxRootDirectory, docusaurusRootDirectory);
+    CopyFile(filePath, docfxDirectory, docusaurusDirectory);
 }
 
 var fileUids = new Dictionary<string, Tuple<string, string>>();
 var includeFiles = new Dictionary<string, Tuple<string, string>>();
 var tocFiles = new Dictionary<string, Tuple<string, string>>();
 
-foreach (var file in Directory.EnumerateFiles(docFxDirectory, "*.md", SearchOption.AllDirectories))
-{
-    GetFileDictionaries(file, ref fileUids, ref includeFiles);
-}
-
-GetTocSidebar(docFxRootDirectory, ref fileUids, ref tocFiles, docFxDirectory, docusaurusDirectory);
-
-foreach (var file in Directory.EnumerateFiles(docFxDirectory, "*.md", SearchOption.AllDirectories))
-{
-    MigrateFile(file, fileUids, includeFiles, docFxDirectory, docusaurusDirectory);
-}
+foreach (string enumerateFile in Directory.EnumerateFiles(docfxDirectory, "*.md", SearchOption.AllDirectories)) GetFileDictionaries(enumerateFile, ref fileUids, ref includeFiles);
+GetTocSidebar(docfxDirectory, ref fileUids, ref tocFiles, docfxDirectory, docusaurusDirectory);
+foreach (string enumerateFile in Directory.EnumerateFiles(docfxDirectory, "*.md", SearchOption.AllDirectories)) MigrateFile(enumerateFile, fileUids, includeFiles, docfxDirectory, docusaurusDirectory);
 
 static void MigrateFile(string filePath, Dictionary<string, Tuple<string, string>> fileUids, Dictionary<string, Tuple<string, string>> includeFiles, string docFxDirectory, string docusaurusDirectory)
 {
-    var fileContent = File.ReadAllText(filePath);
+    var content = File.ReadAllText(filePath);
 
-    fileContent = Regex.Replace(fileContent, @"(uid:\W.*\s)", "");
-    fileContent = Regex.Replace(fileContent, @"(name:\W)", "title: ");
-    fileContent = Regex.Replace(fileContent, @"(summary:\W)", "description: ");
-    fileContent = Regex.Replace(fileContent, @"(varigenceProduct:\W)(.*?)(\r\n)(varigenceArticleType:\W)(.*?)(\r\n)", "tags: [$2, $5]$6", RegexOptions.Compiled);
+    // Applying multiple Regex.Replace operations
+    content = Regex.Replace(content, "(uid:\\W.*\\s)", "");
+    content = Regex.Replace(content, "(name:\\W)", "title: ");
+    content = Regex.Replace(content, "(summary:\\W)", "description: ");
+    content = Regex.Replace(content, "(varigenceProduct:\\W)(.*?)(\\r\\n)(varigenceArticleType:\\W)(.*?)(\\r\\n)", "tags: [$2, $5]$6", RegexOptions.Compiled);
+    content = Regex.Replace(content, "(^>\\[!)", "> [!");
+    content = Regex.Replace(content, "(^>\\W\\[!)", "$\r\n$2");
+    content = Regex.Replace(content, "(\\s)(^>\\W\\[!NOTE\\]\\s)(?s)(.+?)(^\\s*$)", ":::note$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    // Repeat for other patterns as in the original code
+    content = Regex.Replace(content, "(\\s)(^>\\W\\[!TIP\\]\\s)(?s)(.+?)(^\\s*$)", ":::tip$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, "(\\s)(^>\\W\\[!INFO\\]\\s)(?s)(.+?)(^\\s*$)", ":::info$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, "(\\s)(^>\\W\\[!WARNING\\]\\s)(?s)(.+?)(^\\s*$)", ":::warning$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, "(\\s)(^>\\W\\[!IMPORTANT\\]\\s)(?s)(.+?)(^\\s*$)", ":::danger$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, "(^>\\W)", "\r\n");
+    content = Regex.Replace(content, "(!\\[.*?\\]\\()(/bimlflex/)", "$1../");
+    content = Regex.Replace(content, "(<#.*?#>)", "`$1`");
+    content = Regex.Replace(content, "(\"`)(<#.*?#>)(`\")", "\"$2\"");
+    content = Regex.Replace(content, "(<br>)", "<br/>");
+    content = Regex.Replace(content, "(\\*\\*)(\\<==\\W)(.*?)(\\*\\*)", "**($3)**");
 
-    fileContent = Regex.Replace(fileContent, @"(^>\[!)", "> [!");
-    fileContent = Regex.Replace(fileContent, @"(^>\W\[!)", "$\r\n$2");
-    fileContent = Regex.Replace(fileContent, @"(\s)(^>\W\[!NOTE\]\s)(?s)(.+?)(^\s*$)", ":::note$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    fileContent = Regex.Replace(fileContent, @"(\s)(^>\W\[!NOTE\]\s)(?s)(.+?)(^\s*$)", ":::note$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    fileContent = Regex.Replace(fileContent, @"(\s)(^>\W\[!TIP\]\s)(?s)(.+?)(^\s*$)", ":::tip$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    fileContent = Regex.Replace(fileContent, @"(\s)(^>\W\[!INFO\]\s)(?s)(.+?)(^\s*$)", ":::info$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    fileContent = Regex.Replace(fileContent, @"(\s)(^>\W\[!WARNING\]\s)(?s)(.+?)(^\s*$)", ":::warning$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    fileContent = Regex.Replace(fileContent, @"(\s)(^>\W\[!IMPORTANT\]\s)(?s)(.+?)(^\s*$)", ":::danger$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    fileContent = Regex.Replace(fileContent, @"(^>\W)", "\r\n");
-    fileContent = Regex.Replace(fileContent, @"(!\[.*?\]\()(/bimlflex/)", "$1../");
-    fileContent = Regex.Replace(fileContent, @"(<#.*?#>)", "`$1`");
-    fileContent = Regex.Replace(fileContent, @"(""`)(<#.*?#>)(`"")", "\"$2\"");
-    fileContent = Regex.Replace(fileContent, @"(<br>)", "<br/>");
-    fileContent = Regex.Replace(fileContent, @"(\*\*)(\<==\W)(.*?)(\*\*)", "**($3)**");
-
+    // Processing fileUids
     foreach (var fileUid in fileUids)
     {
-        var replace = "(" + fileUid.Key.Replace("C:\\varigencedocs", "/docs").Replace(@"\", "/").Replace(".md", "") + ")";
-        fileContent = Regex.Replace(fileContent, $@"(\(xref:{fileUid.Key}\))", replace, RegexOptions.IgnoreCase);
+        var replacement = "(" + fileUid.Key.Replace("C:\\varigencedocs", "/docs").Replace("\\", "/").Replace(".md", "") + ")";
+        content = Regex.Replace(content, "(\\(xref:" + fileUid.Key + "\\))", replacement, RegexOptions.IgnoreCase);
     }
 
-    var position = fileContent.IndexOf("---", fileContent.IndexOf("---", StringComparison.OrdinalIgnoreCase) + 3, StringComparison.OrdinalIgnoreCase) + 3;
-    var importText = "";
+    // Finding the header index
+    var headerIndex = content.IndexOf("---", content.IndexOf("---", StringComparison.OrdinalIgnoreCase) + 3, StringComparison.OrdinalIgnoreCase) + 3;
+    var importStatements = "";
+
+    // Processing includeFiles
     foreach (var includeFile in includeFiles)
     {
-        var regex = new Regex($@"(\[!include.*?\()((.*?\/)?{includeFile.Key})(\)\])", RegexOptions.IgnoreCase);
-        foreach (Match match in regex.Matches(fileContent))
+        foreach (Match match in new Regex("(\\[!include.*?\\()((.*?\\/)?" + includeFile.Key + ")(\\)\\])", RegexOptions.IgnoreCase).Matches(content))
         {
             if (match.Success)
             {
-                var extension = includeFile.Value.Item2;
-                var importFile = match.Groups[2].Value.Trim();
-                importFile = (importFile.StartsWith(".") ? "" : "./") + importFile;
-                importText += $"\r\nimport {includeFile.Value.Item1} from '{importFile.Replace(".md", extension)}';";
-                fileContent = fileContent.Replace(match.Groups[0].Value, $"<{includeFile.Value.Item1} />");
-                if (includeFile.Key == "_incl-header-new-customer.md")
-                {
-                    var here = "";
-                }
+                var newValue = includeFile.Value.Item2;
+                var pathPrefix = match.Groups[2].Value.Trim();
+                var formattedPath = (pathPrefix.StartsWith(".") ? "" : "./") + pathPrefix;
+                importStatements += $"\r\nimport {includeFile.Value.Item1} from '{formattedPath.Replace(".md", newValue)}';";
+                content = content.Replace(match.Groups[0].Value, $"<{includeFile.Value.Item1} />");
             }
         }
     }
 
-    if (!string.IsNullOrWhiteSpace(importText))
+    // Adding import statements
+    if (!string.IsNullOrWhiteSpace(importStatements))
     {
-        fileContent = fileContent.Substring(0, position) + $"\r\n{importText}\r\n" + fileContent.Substring(position);
+        content = content.Substring(0, headerIndex) + "\r\n" + importStatements + "\r\n" + content.Substring(headerIndex);
         filePath = filePath.Replace(".md", ".mdx");
     }
 
-    if(filePath.StartsWith("_") && filePath.EndsWith(".md"))
-    {
+    // Saving the modified content to a new path
+    var newPath = filePath.Replace(docFxDirectory, docusaurusDirectory);
+    var directoryName = Path.GetDirectoryName(newPath);
+    if (!Directory.Exists(directoryName)) Directory.CreateDirectory(directoryName);
 
-    }
-    
-    var newFilePath = filePath.Replace(docFxDirectory, docusaurusDirectory);
-    var newDirectory = Path.GetDirectoryName(newFilePath);
-    if (!Directory.Exists(newDirectory))
-    {
-        Directory.CreateDirectory(newDirectory);
-    }
-    File.WriteAllText(newFilePath, fileContent);
+    File.WriteAllText(newPath, content);
 }
 
 static void GetFileDictionaries(string filePath, ref Dictionary<string, Tuple<string, string>> fileUids, ref Dictionary<string, Tuple<string, string>> includeFiles)
 {
-    var fileContent = File.ReadAllText(filePath);
+    var input = File.ReadAllText(filePath);
     var fileName = Path.GetFileName(filePath);
-    var extension = fileContent.Contains("[!include", StringComparison.OrdinalIgnoreCase) ? ".mdx" : ".md";
-
-    if (fileName == extension) return;
-
-
+    var str = input.Contains("[!include", StringComparison.OrdinalIgnoreCase) ? ".mdx" : ".md";
+    if (fileName == str) return;
 
     if (!fileName.EndsWith("index.md", StringComparison.OrdinalIgnoreCase))
     {
-        var importName = ToPascalCase(fileName.Replace(".md", ""));
+        string pascalCase = ToPascalCase(fileName.Replace(".md", ""));
         if (!includeFiles.TryGetValue(fileName, out _))
-        {
-            includeFiles.Add(fileName, new Tuple<string, string>(importName, extension));
-        }
+            includeFiles.Add(fileName, new Tuple<string, string>(pascalCase, str));
         else
-        {
             Console.WriteLine(fileName + " " + filePath);
-        }
     }
 
-    var regex = new Regex(@"(uid:)(.*\s)", RegexOptions.IgnoreCase | RegexOptions.Multiline);
-
-    foreach (Match match in regex.Matches(fileContent))
+    foreach (Match match in new Regex("(uid:)(.*\\s)", RegexOptions.IgnoreCase | RegexOptions.Multiline).Matches(input))
     {
         if (match.Success)
         {
-            var uid = match.Groups[2].Value.Trim();
-            if (!fileUids.TryGetValue(uid, out _))
-            {
-                fileUids.Add(uid, new Tuple<string, string>(filePath, extension));
-            }
+            var key = match.Groups[2].Value.Trim();
+            if (!fileUids.TryGetValue(key, out _))
+                fileUids.Add(key, new Tuple<string, string>(filePath, str));
             else
-            {
-                Console.WriteLine(uid + " " + filePath);
-            }
+                Console.WriteLine(key + " " + filePath);
         }
     }
 }
 
-static void GetTocSidebar(string docFxRootDirectory, ref Dictionary<string, Tuple<string, string>> fileUids, ref Dictionary<string, Tuple<string, string>> tocFiles, string docFxDirectory, string docusaurusDirectory)
-{
-    var filePath = Path.Combine(docFxRootDirectory, "toc.yml");
-    
-    var tocPosition = 1;
-    GetTocDictionary(docFxRootDirectory, filePath, ref tocPosition, ref fileUids, ref tocFiles, docFxDirectory, docusaurusDirectory);
 
-    var test = "here";
+static void GetTocSidebar(string docFxRootDirectory, ref Dictionary<string, Tuple<string, string>> fileUids, ref Dictionary<string, Tuple<string, string>> tocFiles, string docFxDirectory,
+    string docusaurusDirectory)
+{
+    string filePath = Path.Combine(docFxRootDirectory, "toc.yml");
+    int tocPosition = 1;
+    GetTocDictionary(docFxRootDirectory, filePath, ref tocPosition, ref fileUids, ref tocFiles, docFxDirectory, docusaurusDirectory);
 }
 
-static void GetTocDictionary(string rootDirectory, string filePath, ref int tocPosition, ref Dictionary<string, Tuple<string, string>> fileUids, ref Dictionary<string, Tuple<string, string>> tocFiles, string docFxDirectory, string docusaurusDirectory)
+static void GetTocDictionary(string rootDirectory, string filePath, ref int tocPosition, ref Dictionary<string, Tuple<string, string>> fileUids, ref Dictionary<string, Tuple<string, string>> tocFiles,
+    string docFxDirectory, string docusaurusDirectory)
 {
-    var yamlContent = File.ReadAllText(filePath);
-    var deserializer = new DeserializerBuilder()
-        .WithNamingConvention(CamelCaseNamingConvention.Instance)
-        .Build();
-
-    var tocEntries = deserializer.Deserialize<List<TocEntry>>(yamlContent);
+    var input = File.ReadAllText(filePath);
+    var tocEntries = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance).Build().Deserialize<List<TocEntry>>(input);
 
     var position = 1;
-    foreach(var tocEntry in tocEntries)
+    foreach (var tocEntry in tocEntries)
     {
-        
         if (tocEntry.items != null && tocEntry.items.Any())
         {
             foreach (var item in tocEntry.items)
             {
                 if (item.href.EndsWith(".yml"))
                 {
-                    var categoryJson = $"{{\r\n\t\"label\": \"{item.name}\",\r\n\t\"position\": {tocPosition},\r\n\t\"link\": {{\r\n\t\"type\": \"generated-index\"\r\n\t}}\r\n}}";
-                    var tocFilePath = Path.Combine(rootDirectory, item.href);
-
-                    var newDirectory = Path.GetDirectoryName(tocFilePath).Replace(docFxDirectory, docusaurusDirectory);
-                    var newFilePath = Path.Combine(newDirectory, "_category_.json");
-                    
-                    if (!Directory.Exists(newDirectory))
-                    {
-                        Directory.CreateDirectory(newDirectory);
-                    }
-                    File.WriteAllText(newFilePath, categoryJson);
-
-                    GetTocDictionary(Path.GetDirectoryName(tocFilePath), tocFilePath, ref tocPosition, ref fileUids, ref tocFiles, docFxDirectory, docusaurusDirectory);
+                    var configJson = $"{{\r\n\t\"label\": \"{item.name}\",\r\n\t\"position\": {tocPosition},\r\n\t\"link\": {{\r\n\t\"type\": \"generated-index\"\r\n\t}}\r\n}}";
+                    var str1 = Path.Combine(rootDirectory, item.href);
+                    var str2 = Path.GetDirectoryName(str1).Replace(docFxDirectory, docusaurusDirectory);
+                    var path = Path.Combine(str2, "_category_.json");
+                    if (!Directory.Exists(str2)) Directory.CreateDirectory(str2);
+                    File.WriteAllText(path, configJson);
+                    GetTocDictionary(Path.GetDirectoryName(str1), str1, ref tocPosition, ref fileUids, ref tocFiles, docFxDirectory, docusaurusDirectory);
                     tocPosition++;
                 }
+
                 if (item.href.EndsWith(".md"))
                 {
                     tocFiles.Add(Path.Combine(rootDirectory, item.href), new Tuple<string, string>(item.name, $"sidebar_position: {position}"));
-
                     position++;
                 }
             }
@@ -203,27 +163,21 @@ static void GetTocDictionary(string rootDirectory, string filePath, ref int tocP
     }
 }
 
-static void CopyFile(string filePath, string docFxDirectory, string docusaurusDirectory)
+static void CopyFile(string filePath, string docfxDirectory, string docusaurusDirectory)
 {
-    // Define the new file path based on Docusaurus's expected structure
-    var newFilePath = filePath.Replace(docFxDirectory, docusaurusDirectory);
-
-    // Create the directory if it doesn't exist
-    var newDirectory = Path.GetDirectoryName(newFilePath);
-    if (!Directory.Exists(newDirectory))
-    {
-        Directory.CreateDirectory(newDirectory);
-    }
-
+    var newFilePath = filePath.Replace(docfxDirectory, docusaurusDirectory);
+    var newDirectoryName = Path.GetDirectoryName(newFilePath);
+    if (!Directory.Exists(newDirectoryName)) Directory.CreateDirectory(newDirectoryName);
     try
     {
-        File.Copy(filePath, newFilePath, true); // true allows the file to be overwritten if it already exists
+        File.Copy(filePath, newFilePath, true);
     }
-    catch (IOException iox)
+    catch (IOException ex)
     {
-        Console.WriteLine(iox.Message);
+        Console.WriteLine(ex.Message);
     }
 }
+
 
 static string ToPascalCase(string s)
 {

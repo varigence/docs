@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/build-and-deployment/generating-ddl",
+  "title": "BimlFlex Generating DDL",
+  "description": "BimlStudio is used to create DDL based on BimlFlex Metadata.",
+  "source": "@site/docs/bimlflex/build-and-deployment/generating-ddl.mdx",
+  "sourceDirName": "bimlflex/build-and-deployment",
+  "slug": "/bimlflex/build-and-deployment/generating-ddl",
+  "permalink": "/docs/bimlflex/build-and-deployment/generating-ddl",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/build-and-deployment/generating-ddl.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-generating-ddl",
+    "title": "BimlFlex Generating DDL",
+    "summary": "Generate DDL based on BimlFlex metadata using BimlStudio and DDL scripts",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Continuous Integration and Delivery (CI/CD)",
+    "permalink": "/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery"
+  },
+  "next": {
+    "title": "BimlFlex - Setup BimlStudio Project",
+    "permalink": "/docs/bimlflex/build-and-deployment/setup-bimlstudio-project"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/entities/DataTypeMapping",
+  "title": "BimlFlex App Definition for DataTypeMappings",
+  "description": "Documentation of functionality within BimlFlex for DataTypeMappings",
+  "source": "@site/docs/bimlflex/reference-documentation/entities/DataTypeMapping.md",
+  "sourceDirName": "bimlflex/reference-documentation/entities",
+  "slug": "/bimlflex/reference-documentation/entities/DataTypeMapping",
+  "permalink": "/docs/bimlflex/reference-documentation/entities/DataTypeMapping",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/DataTypeMapping.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex App Definition for DataTypeMappings",
+    "description": "Documentation of functionality within BimlFlex for DataTypeMappings",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Customers",
+    "permalink": "/docs/bimlflex/reference-documentation/entities/Customer"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Objects",
+    "permalink": "/docs/bimlflex/reference-documentation/entities/Object"
+  }
+}

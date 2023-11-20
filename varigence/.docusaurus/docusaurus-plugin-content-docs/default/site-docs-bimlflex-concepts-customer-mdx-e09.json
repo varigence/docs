@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/concepts/customer",
+  "title": "BimlFlex customer concept",
+  "description": "Overview of the customer concept in BimlFlex",
+  "source": "@site/docs/bimlflex/concepts/customer.mdx",
+  "sourceDirName": "bimlflex/concepts",
+  "slug": "/bimlflex/concepts/customer",
+  "permalink": "/docs/bimlflex/concepts/customer",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/concepts/customer.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex customer concept",
+    "description": "Overview of the customer concept in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Key Concepts and Features",
+    "permalink": "/docs/category/key-concepts-and-features"
+  },
+  "next": {
+    "title": "BimlFlex Delete Detection",
+    "permalink": "/docs/bimlflex/concepts/delete-detection"
+  }
+}

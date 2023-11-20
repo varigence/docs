@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/technology-ssis/ssis-deployment-wizard",
+  "title": "Deployment Through the SSIS Deployment Wizard",
+  "description": "Documentation on deployment of generated SQL Server Integration Services (SSIS) assets",
+  "source": "@site/docs/bimlflex/technology-ssis/ssis-deployment-wizard.md",
+  "sourceDirName": "bimlflex/technology-ssis",
+  "slug": "/bimlflex/technology-ssis/ssis-deployment-wizard",
+  "permalink": "/docs/bimlflex/technology-ssis/ssis-deployment-wizard",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/ssis-deployment-wizard.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Deployment Through the SSIS Deployment Wizard",
+    "description": "Documentation on deployment of generated SQL Server Integration Services (SSIS) assets",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex SSIS Custom Components",
+    "permalink": "/docs/bimlflex/technology-ssis/ssis-custom-components"
+  },
+  "next": {
+    "title": "BimlFlex SSIS Deployment Guide",
+    "permalink": "/docs/bimlflex/technology-ssis/ssis-deployment"
+  }
+}

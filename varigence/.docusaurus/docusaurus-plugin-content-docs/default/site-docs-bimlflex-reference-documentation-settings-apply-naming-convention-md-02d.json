@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ApplyNamingConvention",
+  "title": "BimlFlex Settings Definition for ApplyNamingConvention",
+  "description": "Documentation of settings option within BimlFlex for ApplyNamingConvention",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ApplyNamingConvention.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ApplyNamingConvention",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ApplyNamingConvention",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ApplyNamingConvention.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for ApplyNamingConvention",
+    "description": "Documentation of settings option within BimlFlex for ApplyNamingConvention",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ApplyLookupFilterDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDv"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for ArchiveImport",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ArchiveImport"
+  }
+}

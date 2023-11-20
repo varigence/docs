@@ -1,0 +1,28 @@
+{
+  "id": "getting-started/bimlflex-components-overview",
+  "title": "BimlFlex Components Overview",
+  "description": "BimlFlex comprises of various components to deliver data solutions:",
+  "source": "@site/docs/getting-started/bimlflex-components-overview.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/bimlflex-components-overview",
+  "permalink": "/docs/getting-started/bimlflex-components-overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/bimlflex-components-overview.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-components-overview",
+    "title": "BimlFlex Components Overview",
+    "summary": "Overview of the components of the BimlFlex ecosystem, with reference to the BimlFlex- and BimlCatalog database"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started with BimlFlex",
+    "permalink": "/docs/getting-started/"
+  },
+  "next": {
+    "title": "First Project Walkthrough",
+    "permalink": "/docs/getting-started/first-project-walkthrough"
+  }
+}

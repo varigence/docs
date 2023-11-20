@@ -55,10 +55,10 @@ The **Recent Connections** pane displays the most recently updated **Connections
 
 ![Recent Connections Pane](images/dashboard-recent-connections-menu.64527.png "Connection Pane Overview")
 
-- Click <img class="icon-inline" src="images/svg-icons/connections.svg" /> **Edit Connection** to navigate to the **Connection Editor**
-- Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" /> **Import Metadata** to navigate to the Import Metadata screen for your Source Connection. This link will only appear for **Connections** with a Source System Integration Stage.
-- Click <img class="icon-inline" src="images/svg-icons/objects.svg" /> **Objects** to navigate to the **Objects** page filtered to **Objects** associated with the **Connection**. The number displayed is the number of **Objects** related to the **Connection**
-- Click <img class="icon-inline" src="images/svg-icons/columns.svg" /> **Columns** to navigate to **Columns** related to the **Connection**. The number displayed in parentheses is the number of **Columns** related to the **Connection**
+- Click <img class="icon-inline" src="images/svg-icons/connections.svg" > **Edit Connection** to navigate to the **Connection Editor**
+- Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" > **Import Metadata** to navigate to the Import Metadata screen for your Source Connection. This link will only appear for **Connections** with a Source System Integration Stage.
+- Click <img class="icon-inline" src="images/svg-icons/objects.svg" > **Objects** to navigate to the **Objects** page filtered to **Objects** associated with the **Connection**. The number displayed is the number of **Objects** related to the **Connection**
+- Click <img class="icon-inline" src="images/svg-icons/columns.svg" > **Columns** to navigate to **Columns** related to the **Connection**. The number displayed in parentheses is the number of **Columns** related to the **Connection**
 
 ## Recent Objects
 
@@ -77,8 +77,8 @@ The **Recent Objects** pane displayed the most recently updated **Objects** to a
 
 ![Recent Objects Quick Menu](images/bfx-dashboard-recent-objects-quick-menu.png "Recent Objects Quick Menu")
 
-- Click <img class="icon-inline" src="images/svg-icons/objects.svg" /> **Edit Object** to navigate to the **Object** metadata editor screen.
-- Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" /> **Import Metadata** to navigate to the Import Metadata screen for your Source Connection.
+- Click <img class="icon-inline" src="images/svg-icons/objects.svg" > **Edit Object** to navigate to the **Object** metadata editor screen.
+- Click <img class="icon-inline" src="images/svg-icons/import-metadata.svg" > **Import Metadata** to navigate to the Import Metadata screen for your Source Connection.
 
 ## Action Buttons
 
@@ -110,10 +110,10 @@ Hover over **Capture Snapshot** and click the ellipses for more options.
     title="Snapshot Sub Menu"
 />
 
-- Capture - Capture a snapshot of the current version's metadata.
-- Rollback - Rollback this version from a previous metadata snapshot.
-- Archive - Archive (delete) snapshot based on snapshot type and age.
-- Clone - Clone a snapshot to a Customer and Version. Create a new version or override an old version.
+* Capture - Capture a snapshot of the current version's metadata.
+* Rollback - Rollback this version from a previous metadata snapshot.
+* Archive - Archive (delete) snapshot based on snapshot type and age.
+* Clone - Clone a snapshot to a Customer and Version. Create a new version or override an old version.
 
 ### Archive Deleted Entities
 

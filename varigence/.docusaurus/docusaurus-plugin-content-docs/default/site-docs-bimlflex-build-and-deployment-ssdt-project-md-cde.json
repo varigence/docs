@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/build-and-deployment/ssdt-project",
+  "title": "BimlFlex-generated SQL Server Data Tools Project",
+  "description": "BimlFlex and SQL Server Data Tools documentation for guidance on database management and automation of deployment processes and source control mechanisms",
+  "source": "@site/docs/bimlflex/build-and-deployment/ssdt-project.md",
+  "sourceDirName": "bimlflex/build-and-deployment",
+  "slug": "/bimlflex/build-and-deployment/ssdt-project",
+  "permalink": "/docs/bimlflex/build-and-deployment/ssdt-project",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/build-and-deployment/ssdt-project.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex-generated SQL Server Data Tools Project",
+    "description": "BimlFlex and SQL Server Data Tools documentation for guidance on database management and automation of deployment processes and source control mechanisms",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex - Setup BimlStudio Project",
+    "permalink": "/docs/bimlflex/build-and-deployment/setup-bimlstudio-project"
+  },
+  "next": {
+    "title": "BimlFlex for Azure Data Factory",
+    "permalink": "/docs/category/bimlflex-for-azure-data-factory"
+  }
+}

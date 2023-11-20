@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/StringConcatenator",
+  "title": "BimlFlex Settings Definition for StringConcatenator",
+  "description": "The string value used in concatenating Integration Keys and Hash values (sanding element). Defaults to \"~\".",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/StringConcatenator.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/StringConcatenator",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/StringConcatenator",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/StringConcatenator.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-StringConcatenator",
+    "title": "BimlFlex Settings Definition for StringConcatenator",
+    "summary": "Documentation of settings option within BimlFlex for StringConcatenator",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for StageReduceLinkKeys",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/StageReduceLinkKeys"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SuffixOrPrefixColumn",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn"
+  }
+}

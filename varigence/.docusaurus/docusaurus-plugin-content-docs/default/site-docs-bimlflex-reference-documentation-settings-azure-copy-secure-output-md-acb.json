@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureCopySecureOutput",
+  "title": "BimlFlex Settings Definition for AzureCopySecureOutput",
+  "description": "Documentation of settings option within BimlFlex for AzureCopySecureOutput",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureCopySecureOutput.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureCopySecureOutput",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopySecureOutput",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureCopySecureOutput.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureCopySecureOutput",
+    "description": "Documentation of settings option within BimlFlex for AzureCopySecureOutput",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureCopySecureInput",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopySecureInput"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureCopyStagingSettings",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyStagingSettings"
+  }
+}

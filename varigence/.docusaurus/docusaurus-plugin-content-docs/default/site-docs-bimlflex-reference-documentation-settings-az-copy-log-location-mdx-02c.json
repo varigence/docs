@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzCopyLogLocation",
+  "title": "BimlFlex Settings Definition for AzCopyLogLocation",
+  "description": "Sets the log location for AzCopy v.10 log files to the AZCOPYLOGLOCATION environment variable.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzCopyLogLocation.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzCopyLogLocation",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyLogLocation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzCopyLogLocation.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzCopyLogLocation",
+    "title": "BimlFlex Settings Definition for AzCopyLogLocation",
+    "summary": "Documentation of settings option within BimlFlex for AzCopyLogLocation",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzCopyLogLevel",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyLogLevel"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzCopyPath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyPath"
+  }
+}

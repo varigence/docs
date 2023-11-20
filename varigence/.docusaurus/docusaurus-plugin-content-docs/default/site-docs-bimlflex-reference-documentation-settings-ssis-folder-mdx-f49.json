@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsisFolder",
+  "title": "BimlFlex Settings Definition for SsisFolder",
+  "description": "The SSIS Catalog folder name to use for generated deployment script files.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsisFolder.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsisFolder",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsisFolder",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsisFolder.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SsisFolder",
+    "title": "BimlFlex Settings Definition for SsisFolder",
+    "summary": "Documentation of settings option within BimlFlex for SsisFolder",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsisExpressUseUTF8DataConversion",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisExpressUseUTF8DataConversion"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsisHashNullValue",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisHashNullValue"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa",
+  "title": "BimlFlex Settings Definition for DeleteDetectionApplyPsa",
+  "description": "Use the default process to insert detected deletes into the Persistent Staging Area table.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-DeleteDetectionApplyPsa",
+    "title": "BimlFlex Settings Definition for DeleteDetectionApplyPsa",
+    "summary": "Documentation of settings option within BimlFlex for DeleteDetectionApplyPsa",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DeleteDetectionApplyDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyDv"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DeleteDetectionEnabled",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionEnabled"
+  }
+}

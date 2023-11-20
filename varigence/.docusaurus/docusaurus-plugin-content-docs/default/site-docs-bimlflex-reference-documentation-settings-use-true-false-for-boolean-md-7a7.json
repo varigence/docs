@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/UseTrueFalseForBoolean",
+  "title": "BimlFlex Settings Definition for UseTrueFalseForBoolean",
+  "description": "Documentation of settings option within BimlFlex for UseTrueFalseForBoolean",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for UseTrueFalseForBoolean",
+    "description": "Documentation of settings option within BimlFlex for UseTrueFalseForBoolean",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for UseSsisCompatableDateFormat",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for UseTryCastConversion",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseTryCastConversion"
+  }
+}

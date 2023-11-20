@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/delivering-data-vault/data-vault-concept-reference-data",
+  "title": "Data Vault reference data",
+  "description": "Overview of Data Vault handling of reference data",
+  "source": "@site/docs/bimlflex/delivering-data-vault/data-vault-concept-reference-data.md",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/data-vault-concept-reference-data",
+  "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-concept-reference-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/data-vault-concept-reference-data.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Data Vault reference data",
+    "description": "Overview of Data Vault handling of reference data",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Data Vault Links",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-concept-link"
+  },
+  "next": {
+    "title": "Data Vault Satellites",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-concept-satellite"
+  }
+}

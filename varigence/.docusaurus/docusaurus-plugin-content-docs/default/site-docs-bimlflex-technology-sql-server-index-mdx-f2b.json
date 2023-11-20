@@ -1,0 +1,28 @@
+{
+  "id": "bimlflex/technology-sql-server/index",
+  "title": "BimlFlex on SQL Server and Azure SQL",
+  "description": "",
+  "source": "@site/docs/bimlflex/technology-sql-server/index.mdx",
+  "sourceDirName": "bimlflex/technology-sql-server",
+  "slug": "/bimlflex/technology-sql-server/",
+  "permalink": "/docs/bimlflex/technology-sql-server/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-sql-server/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-technology-sql-server",
+    "title": "BimlFlex on SQL Server and Azure SQL",
+    "summary": "BimlFlex on SQL Server and Azure SQL"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Snowflake features not supported by BimlFlex",
+    "permalink": "/docs/bimlflex/technology-snowflake/unsupported-snowflake-features"
+  },
+  "next": {
+    "title": "SSIS Deployment Overview",
+    "permalink": "/docs/bimlflex/technology-ssis/"
+  }
+}

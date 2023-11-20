@@ -1,0 +1,15 @@
+{
+  "title": "Persistent Staging Area",
+  "slug": "/category/persistent-staging-area",
+  "permalink": "/docs/category/persistent-staging-area",
+  "navigation": {
+    "previous": {
+      "title": "BimlFlex Stored Procedure Source",
+      "permalink": "/docs/bimlflex/scenarios/source-stored-procedure"
+    },
+    "next": {
+      "title": "Delivering a Staging Layer using BimlFlex",
+      "permalink": "/docs/bimlflex/delivering-staging/"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows",
+  "title": "BimlFlex Settings Definition for SsisDefaultBufferMaxRows",
+  "description": "SSIS Data Flow configuration for Default Buffer Max Rows for supported destinations. Override the value here to change the default SSIS behavior",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SsisDefaultBufferMaxRows",
+    "title": "BimlFlex Settings Definition for SsisDefaultBufferMaxRows",
+    "summary": "Documentation of settings option within BimlFlex for SsisDefaultBufferMaxRows",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsisDb",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisDb"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsisDefaultBufferSize",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferSize"
+  }
+}

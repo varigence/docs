@@ -1,0 +1,15 @@
+{
+  "title": "BimlFlex on Snowflake",
+  "slug": "/category/bimlflex-on-snowflake",
+  "permalink": "/docs/category/bimlflex-on-snowflake",
+  "navigation": {
+    "previous": {
+      "title": "Synapse Implementations",
+      "permalink": "/docs/bimlflex/technology-synapse/synapse-implementation"
+    },
+    "next": {
+      "title": "Snowflake Implementation with ADF",
+      "permalink": "/docs/bimlflex/technology-snowflake/implementing-snowflake-in-adf"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/HashAlgorithm",
+  "title": "BimlFlex Settings Definition for HashAlgorithm",
+  "description": "The hashing algorithm to use. (\"MD5\"/\"SHA1\"/\"SHA2256\"/\"SHA2512\").",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/HashAlgorithm.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/HashAlgorithm",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/HashAlgorithm",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/HashAlgorithm.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-HashAlgorithm",
+    "title": "BimlFlex Settings Definition for HashAlgorithm",
+    "summary": "Documentation of settings option within BimlFlex for HashAlgorithm",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for GlobalDefaultDate",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/GlobalDefaultDate"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for HashBinary",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/HashBinary"
+  }
+}

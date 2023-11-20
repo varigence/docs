@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/entities/Project",
+  "title": "BimlFlex App Definition for Projects",
+  "description": "Documentation of functionality within BimlFlex for Projects",
+  "source": "@site/docs/bimlflex/reference-documentation/entities/Project.md",
+  "sourceDirName": "bimlflex/reference-documentation/entities",
+  "slug": "/bimlflex/reference-documentation/entities/Project",
+  "permalink": "/docs/bimlflex/reference-documentation/entities/Project",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Project.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex App Definition for Projects",
+    "description": "Documentation of functionality within BimlFlex for Projects",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Parameters",
+    "permalink": "/docs/bimlflex/reference-documentation/entities/Parameter"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Settings",
+    "permalink": "/docs/bimlflex/reference-documentation/entities/Setting"
+  }
+}

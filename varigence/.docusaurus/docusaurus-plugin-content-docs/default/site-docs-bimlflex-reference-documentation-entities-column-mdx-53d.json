@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/entities/Column",
+  "title": "BimlFlex App Definition for Columns",
+  "description": "The BimlFlex Column concept contains the components of an Column. Columns define the detailed information to transform and map data from source to target.Columns within BimlFlex are displayed in a hierarchical tree view on the left side navigation menu. The total number of Columns within a Project will be displayed next to the Project name in parentheses. The total number of Columns within an individual Object will similarly be displayed next to the Object name.Selecting a Project will display a secondary list of all Columns within, organized by Object.",
+  "source": "@site/docs/bimlflex/reference-documentation/entities/Column.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/entities",
+  "slug": "/bimlflex/reference-documentation/entities/Column",
+  "permalink": "/docs/bimlflex/reference-documentation/entities/Column",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Column.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-Columns",
+    "title": "BimlFlex App Definition for Columns",
+    "summary": "Documentation of functionality within BimlFlex for Columns",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Batches",
+    "permalink": "/docs/bimlflex/reference-documentation/entities/Batch"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Configurations",
+    "permalink": "/docs/bimlflex/reference-documentation/entities/Configuration"
+  }
+}

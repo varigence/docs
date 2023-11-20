@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/extension-points/Global",
+  "title": "BimlFlex App Definition for Global",
+  "description": "The Global category has the following available Extension Points defined.",
+  "source": "@site/docs/bimlflex/reference-documentation/extension-points/Global.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/extension-points",
+  "slug": "/bimlflex/reference-documentation/extension-points/Global",
+  "permalink": "/docs/bimlflex/reference-documentation/extension-points/Global",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Global.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-Global",
+    "title": "BimlFlex App Definition for Global",
+    "summary": "Documentation of functionality within BimlFlex for the Global Extension Point category",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Data Vault",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Data-Vault"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Mapping Data Flows",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows"
+  }
+}

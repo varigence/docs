@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AppendSchemaDm",
+  "title": "BimlFlex Settings Definition for AppendSchemaDm",
+  "description": "Determines if the Schema name is appended to Object names in the Data Mart.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AppendSchemaDm.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AppendSchemaDm",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AppendSchemaDm",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AppendSchemaDm.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AppendSchemaDm",
+    "title": "BimlFlex Settings Definition for AppendSchemaDm",
+    "summary": "Documentation of settings option within BimlFlex for AppendSchemaDm",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AppendRecordSource",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AppendRecordSource"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AppendSchemaDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AppendSchemaDv"
+  }
+}

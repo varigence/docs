@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DisplaySchemaNameDm",
+  "title": "BimlFlex Settings Definition for DisplaySchemaNameDm",
+  "description": "Documentation of settings option within BimlFlex for DisplaySchemaNameDm",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDm.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DisplaySchemaNameDm",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDm",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDm.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for DisplaySchemaNameDm",
+    "description": "Documentation of settings option within BimlFlex for DisplaySchemaNameDm",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DisplayDatabaseNameStg",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameStg"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DisplaySchemaNameDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDv"
+  }
+}

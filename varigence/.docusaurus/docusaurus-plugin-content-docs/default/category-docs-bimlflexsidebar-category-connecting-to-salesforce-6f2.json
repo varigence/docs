@@ -1,0 +1,15 @@
+{
+  "title": "Connecting to Salesforce",
+  "slug": "/category/connecting-to-salesforce",
+  "permalink": "/docs/category/connecting-to-salesforce",
+  "navigation": {
+    "previous": {
+      "title": "Snowflake features not supported by BimlFlex",
+      "permalink": "/docs/bimlflex/technology-snowflake/unsupported-snowflake-features"
+    },
+    "next": {
+      "title": "BimlFlex Export To File",
+      "permalink": "/docs/bimlflex/scenarios/export-to-file"
+    }
+  }
+}

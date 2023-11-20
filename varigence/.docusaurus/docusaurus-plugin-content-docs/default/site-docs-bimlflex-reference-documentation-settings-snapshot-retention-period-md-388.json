@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SnapshotRetentionPeriod",
+  "title": "BimlFlex Settings Definition for SnapshotRetentionPeriod",
+  "description": "Documentation of settings option within BimlFlex for SnapshotRetentionPeriod",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SnapshotRetentionPeriod.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SnapshotRetentionPeriod",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SnapshotRetentionPeriod",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SnapshotRetentionPeriod.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for SnapshotRetentionPeriod",
+    "description": "Documentation of settings option within BimlFlex for SnapshotRetentionPeriod",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SelectStageRowDistinct",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SelectStageRowDistinct"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SnowDtOutputPath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SnowDtOutputPath"
+  }
+}

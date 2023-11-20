@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/concepts/hashing",
+  "title": "Hashing in BimlFlex",
+  "description": "Hashing is the term used for one-way encryption which can be implemented by applying a selected encryption algorithm. BimlFlex provides various approaches for implementing hashing techniques for the data solution",
+  "source": "@site/docs/bimlflex/concepts/hashing.mdx",
+  "sourceDirName": "bimlflex/concepts",
+  "slug": "/bimlflex/concepts/hashing",
+  "permalink": "/docs/bimlflex/concepts/hashing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/concepts/hashing.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-concepts-hashing",
+    "title": "Hashing in BimlFlex",
+    "summary": "Overview of hashing concepts as available in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Extension Points",
+    "permalink": "/docs/bimlflex/concepts/extension-points"
+  },
+  "next": {
+    "title": "BimlFlex Importing Metadata",
+    "permalink": "/docs/bimlflex/concepts/importing-metadata"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/scenarios/source-azure-postgres",
+  "title": "BimlFlex PostgreSQL Source",
+  "description": "This section covers importing metadata from an Azure PostgreSQL ('Postgres') database, so that this metadata becomes available in the BimlFlex app to further generate Azure Data Factory (ADF) and SQL Server Integration Services (SSIS) assets.",
+  "source": "@site/docs/bimlflex/scenarios/source-azure-postgres.mdx",
+  "sourceDirName": "bimlflex/scenarios",
+  "slug": "/bimlflex/scenarios/source-azure-postgres",
+  "permalink": "/docs/bimlflex/scenarios/source-azure-postgres",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/scenarios/source-azure-postgres.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-source-azure-postgres",
+    "title": "BimlFlex PostgreSQL Source",
+    "summary": "Documentation on connecting to Postgres metadata in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Microsoft SQL Server Master Data Services (MDS) integration",
+    "permalink": "/docs/bimlflex/scenarios/master-data-services"
+  },
+  "next": {
+    "title": "Change Data Capture Source to Staging",
+    "permalink": "/docs/bimlflex/scenarios/source-cdc"
+  }
+}

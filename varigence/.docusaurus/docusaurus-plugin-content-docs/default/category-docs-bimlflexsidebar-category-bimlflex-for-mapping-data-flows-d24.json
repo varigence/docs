@@ -1,0 +1,15 @@
+{
+  "title": "BimlFlex for Mapping Data Flows",
+  "slug": "/category/bimlflex-for-mapping-data-flows",
+  "permalink": "/docs/category/bimlflex-for-mapping-data-flows",
+  "navigation": {
+    "previous": {
+      "title": "Deployment Through PowerShell",
+      "permalink": "/docs/bimlflex/technology-adf/using-powershell"
+    },
+    "next": {
+      "title": "BimlFlex for Azure Mapping Data Flows",
+      "permalink": "/docs/bimlflex/technology-data-flow/"
+    }
+  }
+}

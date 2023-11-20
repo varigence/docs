@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ConvertGuidToString",
+  "title": "BimlFlex Settings Definition for ConvertGuidToString",
+  "description": "Documentation of settings option within BimlFlex for ConvertGuidToString",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ConvertGuidToString.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ConvertGuidToString",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ConvertGuidToString",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ConvertGuidToString.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for ConvertGuidToString",
+    "description": "Documentation of settings option within BimlFlex for ConvertGuidToString",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ConstraintModeStg",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ConstraintModeStg"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DeleteDetectionApplyDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyDv"
+  }
+}

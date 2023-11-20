@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/concepts/staged-query",
+  "title": "BimlFlex Staged Query concept",
+  "description": "A Staged Query is a database query that is used to create a specific representation of data, so that this can be used in the BimlFlex framework as a 'source' object. A staged query is a specific Object Type, defined at Object level when creating, or modifying, a staged query object.",
+  "source": "@site/docs/bimlflex/concepts/staged-query.mdx",
+  "sourceDirName": "bimlflex/concepts",
+  "slug": "/bimlflex/concepts/staged-query",
+  "permalink": "/docs/bimlflex/concepts/staged-query",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/concepts/staged-query.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-concepts-staged-query",
+    "title": "BimlFlex Staged Query concept",
+    "summary": "Overview of the Staged Query concept in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Model Overrides",
+    "permalink": "/docs/bimlflex/concepts/model-overrides"
+  },
+  "next": {
+    "title": "BimlFlex version concept",
+    "permalink": "/docs/bimlflex/concepts/versions"
+  }
+}

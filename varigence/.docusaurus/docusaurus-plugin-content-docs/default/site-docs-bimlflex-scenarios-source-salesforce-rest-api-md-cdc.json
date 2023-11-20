@@ -1,0 +1,39 @@
+{
+  "id": "bimlflex/scenarios/source-salesforce-rest-api",
+  "title": "Connecting to Salesforce REST API through BimlFlex",
+  "description": "BimlFlex can access data from Salesforce into the data warehouse using the REST API Connection Type.",
+  "source": "@site/docs/bimlflex/scenarios/source-salesforce-rest-api.md",
+  "sourceDirName": "bimlflex/scenarios",
+  "slug": "/bimlflex/scenarios/source-salesforce-rest-api",
+  "permalink": "/docs/bimlflex/scenarios/source-salesforce-rest-api",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/scenarios/source-salesforce-rest-api.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Connecting to Salesforce REST API through BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex OData Source",
+    "permalink": "/docs/bimlflex/scenarios/source-odata"
+  },
+  "next": {
+    "title": "BimlFlex Stored Procedure Source",
+    "permalink": "/docs/bimlflex/scenarios/source-stored-procedure"
+  }
+}

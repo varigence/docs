@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/scenarios/source-cdc",
+  "title": "Change Data Capture Source to Staging",
+  "description": "Microsoft SQL Server provides a feature to capture information about changes in tables called Change Data Capture (CDC). This runs on the source server, monitors the defined table for changes and present a list of those identified changes in a separate table. SQL Server provides a set of functions that allows extraction of the change records as well as metadata about the change.",
+  "source": "@site/docs/bimlflex/scenarios/source-cdc.mdx",
+  "sourceDirName": "bimlflex/scenarios",
+  "slug": "/bimlflex/scenarios/source-cdc",
+  "permalink": "/docs/bimlflex/scenarios/source-cdc",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/scenarios/source-cdc.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "change-data-capture-source-to-staging",
+    "title": "Change Data Capture Source to Staging",
+    "summary": "Documentation regarding Microsoft SQL Server change data capture in source to staging with setting descriptions and additional considerations",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex PostgreSQL Source",
+    "permalink": "/docs/bimlflex/scenarios/source-azure-postgres"
+  },
+  "next": {
+    "title": "BimlFlex COZYROC Excel Plus Source",
+    "permalink": "/docs/bimlflex/scenarios/source-excel-plus"
+  }
+}

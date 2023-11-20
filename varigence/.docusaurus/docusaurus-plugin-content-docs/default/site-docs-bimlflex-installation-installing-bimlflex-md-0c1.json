@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/installation/installing-bimlflex",
+  "title": "Installing BimlFlex",
+  "description": "Documentation providing detailed steps in the installation of BimlFlex App.",
+  "source": "@site/docs/bimlflex/installation/installing-bimlflex.md",
+  "sourceDirName": "bimlflex/installation",
+  "slug": "/bimlflex/installation/installing-bimlflex",
+  "permalink": "/docs/bimlflex/installation/installing-bimlflex",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/installation/installing-bimlflex.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Installing BimlFlex",
+    "description": "Documentation providing detailed steps in the installation of BimlFlex App.",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlCatalog Database Installation",
+    "permalink": "/docs/bimlflex/installation/installing-bimlcatalog-database"
+  },
+  "next": {
+    "title": "BimlFlex Build Server Install",
+    "permalink": "/docs/bimlflex/installation/installing-build-server"
+  }
+}

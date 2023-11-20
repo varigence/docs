@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/getting-started/first-project-walkthrough",
+  "title": "First Project Walkthrough",
+  "description": "Guidance on creating a BimlFlex project end to end, including setting up source data, accelerating a data vault, and applying load parameters",
+  "source": "@site/docs/bimlflex/getting-started/first-project-walkthrough.md",
+  "sourceDirName": "bimlflex/getting-started",
+  "slug": "/bimlflex/getting-started/first-project-walkthrough",
+  "permalink": "/docs/bimlflex/getting-started/first-project-walkthrough",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/getting-started/first-project-walkthrough.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "First Project Walkthrough",
+    "description": "Guidance on creating a BimlFlex project end to end, including setting up source data, accelerating a data vault, and applying load parameters",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Components Overview",
+    "permalink": "/docs/bimlflex/getting-started/bimlflex-components-overview"
+  },
+  "next": {
+    "title": "Getting Started with BimlFlex",
+    "permalink": "/docs/bimlflex/getting-started/"
+  }
+}

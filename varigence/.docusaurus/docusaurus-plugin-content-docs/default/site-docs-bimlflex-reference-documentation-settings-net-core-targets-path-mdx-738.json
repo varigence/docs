@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/NetCoreTargetsPath",
+  "title": "BimlFlex Settings Definition for NetCoreTargetsPath",
+  "description": "The folder where the .NET Core Target and build support files are located.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/NetCoreTargetsPath.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/NetCoreTargetsPath",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/NetCoreTargetsPath",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/NetCoreTargetsPath.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-NetCoreTargetsPath",
+    "title": "BimlFlex Settings Definition for NetCoreTargetsPath",
+    "summary": "Documentation of settings option within BimlFlex for NetCoreTargetsPath",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for LookupTablePattern",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/LookupTablePattern"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for ObjectNamePattern",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ObjectNamePattern"
+  }
+}

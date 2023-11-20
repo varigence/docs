@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureFileCompressionLevel",
+  "title": "BimlFlex Settings Definition for AzureFileCompressionLevel",
+  "description": "Documentation of settings option within BimlFlex for AzureFileCompressionLevel",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureFileCompressionLevel.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureFileCompressionLevel",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFileCompressionLevel",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureFileCompressionLevel.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureFileCompressionLevel",
+    "description": "Documentation of settings option within BimlFlex for AzureFileCompressionLevel",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureFileCompressionCodec",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFileCompressionCodec"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureFileEncodingName",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFileEncodingName"
+  }
+}

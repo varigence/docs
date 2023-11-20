@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/concepts/delete-detection",
+  "title": "BimlFlex Delete Detection",
+  "description": "Documentation on BimlFlex delete detection mechanism for detection of hard deleted keys from a source system",
+  "source": "@site/docs/bimlflex/concepts/delete-detection.mdx",
+  "sourceDirName": "bimlflex/concepts",
+  "slug": "/bimlflex/concepts/delete-detection",
+  "permalink": "/docs/bimlflex/concepts/delete-detection",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/concepts/delete-detection.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Delete Detection",
+    "description": "Documentation on BimlFlex delete detection mechanism for detection of hard deleted keys from a source system",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex customer concept",
+    "permalink": "/docs/bimlflex/concepts/customer"
+  },
+  "next": {
+    "title": "BimlFlex Extension Points",
+    "permalink": "/docs/bimlflex/concepts/extension-points"
+  }
+}

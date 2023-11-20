@@ -16,7 +16,7 @@ The available Extension Points in BimlStudio can be considered as templates to d
 > [!NOTE]
 > It is a good practice to rename the Extension Point file that is created from the template, and in a way that refers to its target or scope.
 
-The newly created file will already contain the type of Extension Point, as visible in the *extensionpoint="\{ExtensionPointName\}"* property in the file. The target will be empty by default, and will need to be configured.
+The newly created file will already contain the type of Extension Point, as visible in the *extensionpoint="<>"* property in the file. The target will be empty by default, and will need to be configured.
 
 Creating an Extension Point file and applying the required target attribute is all that is needed for it to be included into the project. when BimlFlex builds the solution any Extension Point code is applied to the corresponding object(s).
 

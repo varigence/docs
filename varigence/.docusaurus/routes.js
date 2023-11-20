@@ -1,0 +1,193 @@
+import React from 'react';
+import ComponentCreator from '@docusaurus/ComponentCreator';
+
+export default [
+  {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '8ae'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', 'bc3'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', '17b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', '182'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '738'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '7bb'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '046'),
+    exact: true
+  },
+  {
+    path: '/blog',
+    component: ComponentCreator('/blog', '42d'),
+    exact: true
+  },
+  {
+    path: '/blog/archive',
+    component: ComponentCreator('/blog/archive', '68d'),
+    exact: true
+  },
+  {
+    path: '/blog/first-blog-post',
+    component: ComponentCreator('/blog/first-blog-post', '998'),
+    exact: true
+  },
+  {
+    path: '/blog/long-blog-post',
+    component: ComponentCreator('/blog/long-blog-post', 'cba'),
+    exact: true
+  },
+  {
+    path: '/blog/mdx-blog-post',
+    component: ComponentCreator('/blog/mdx-blog-post', 'b60'),
+    exact: true
+  },
+  {
+    path: '/blog/tags',
+    component: ComponentCreator('/blog/tags', '84f'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/docusaurus',
+    component: ComponentCreator('/blog/tags/docusaurus', '0b0'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/facebook',
+    component: ComponentCreator('/blog/tags/facebook', '45c'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/hello',
+    component: ComponentCreator('/blog/tags/hello', 'd43'),
+    exact: true
+  },
+  {
+    path: '/blog/tags/hola',
+    component: ComponentCreator('/blog/tags/hola', 'bd4'),
+    exact: true
+  },
+  {
+    path: '/blog/welcome',
+    component: ComponentCreator('/blog/welcome', 'f86'),
+    exact: true
+  },
+  {
+    path: '/markdown-page',
+    component: ComponentCreator('/markdown-page', '12a'),
+    exact: true
+  },
+  {
+    path: '/docs',
+    component: ComponentCreator('/docs', '8c2'),
+    routes: [
+      {
+        path: '/docs',
+        component: ComponentCreator('/docs', '6e7'),
+        routes: [
+          {
+            path: '/docs',
+            component: ComponentCreator('/docs', '320'),
+            routes: [
+              {
+                path: '/docs/category/tutorial---basics',
+                component: ComponentCreator('/docs/category/tutorial---basics', 'd44'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/category/tutorial---extras',
+                component: ComponentCreator('/docs/category/tutorial---extras', 'f09'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/intro',
+                component: ComponentCreator('/docs/tutorials/intro', 'ffb'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/tutorial-basics/congratulations',
+                component: ComponentCreator('/docs/tutorials/tutorial-basics/congratulations', '134'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/tutorial-basics/create-a-blog-post',
+                component: ComponentCreator('/docs/tutorials/tutorial-basics/create-a-blog-post', '087'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/tutorial-basics/create-a-document',
+                component: ComponentCreator('/docs/tutorials/tutorial-basics/create-a-document', 'dd2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/tutorial-basics/create-a-page',
+                component: ComponentCreator('/docs/tutorials/tutorial-basics/create-a-page', '6e8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/tutorial-basics/deploy-your-site',
+                component: ComponentCreator('/docs/tutorials/tutorial-basics/deploy-your-site', '0ef'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/tutorial-basics/markdown-features',
+                component: ComponentCreator('/docs/tutorials/tutorial-basics/markdown-features', '8a9'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/tutorial-extras/manage-docs-versions',
+                component: ComponentCreator('/docs/tutorials/tutorial-extras/manage-docs-versions', '2fa'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tutorials/tutorial-extras/translate-your-site',
+                component: ComponentCreator('/docs/tutorials/tutorial-extras/translate-your-site', '86b'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    path: '/',
+    component: ComponentCreator('/', 'cb3'),
+    exact: true
+  },
+  {
+    path: '*',
+    component: ComponentCreator('*'),
+  },
+];

@@ -17,6 +17,8 @@ This section covers various concepts that are important to understand when worki
 
 [!include[Versions](../concepts/_incl-header-version.md)]
 
+[!include[Versions](../metadata-editors/_incl-header-version.md)]
+
 ## Working with Design Metadata
 
 [!include[BimlFlex](../metadata-editors/_incl-header-bimlflex-app.md)]

@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/extension-points/Mapping-Data-Flows",
+  "title": "BimlFlex App Definition for Mapping Data Flows",
+  "description": "The Mapping Data Flows category has the following available Extension Points defined.",
+  "source": "@site/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/extension-points",
+  "slug": "/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows",
+  "permalink": "/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-Mapping-Data-Flows",
+    "title": "BimlFlex App Definition for Mapping Data Flows",
+    "summary": "Documentation of functionality within BimlFlex for the Mapping Data Flows Extension Point category",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Global",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Global"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Object",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Object"
+  }
+}

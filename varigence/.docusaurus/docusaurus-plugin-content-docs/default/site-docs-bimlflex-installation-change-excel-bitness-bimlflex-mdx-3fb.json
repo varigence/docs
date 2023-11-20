@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/installation/change-excel-bitness-bimlflex",
+  "title": "Change the BimlFlex Excel bitness",
+  "description": "Both Microsoft Office Excel and the BimlFlex Excel installation comes in 2 bitness flavors, 32-bit and 64-bit. The installed BimlFlex version needs to match the bitness of the installed version of Excel.",
+  "source": "@site/docs/bimlflex/installation/change-excel-bitness-bimlflex.mdx",
+  "sourceDirName": "bimlflex/installation",
+  "slug": "/bimlflex/installation/change-excel-bitness-bimlflex",
+  "permalink": "/docs/bimlflex/installation/change-excel-bitness-bimlflex",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/installation/change-excel-bitness-bimlflex.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-change-excel-bitness",
+    "title": "Change the BimlFlex Excel bitness",
+    "summary": "Changing the bitness of BimlFlex Excel through installation or project folder",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Setup Overview",
+    "permalink": "/docs/bimlflex/installation/"
+  },
+  "next": {
+    "title": "BimlCatalog Database Installation",
+    "permalink": "/docs/bimlflex/installation/installing-bimlcatalog-database"
+  }
+}

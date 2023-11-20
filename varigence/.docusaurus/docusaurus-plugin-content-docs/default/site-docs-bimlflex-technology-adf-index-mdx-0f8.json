@@ -1,0 +1,28 @@
+{
+  "id": "bimlflex/technology-adf/index",
+  "title": "ADF Deployment Overview",
+  "description": "Azure Data Factory (ADF), the cloud-based data integration service for Microsoft Azure, is a common target for BimlFlex data solutions. In this section we will discuss items that pertain to ADF deployment.",
+  "source": "@site/docs/bimlflex/technology-adf/index.mdx",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/",
+  "permalink": "/docs/bimlflex/technology-adf/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "adf-deployment-overview",
+    "title": "ADF Deployment Overview",
+    "summary": "Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through PowerShell and Azure portal"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Troubleshooting Tips",
+    "permalink": "/docs/bimlflex/support/troubleshooting-tips"
+  },
+  "next": {
+    "title": "BimlFlex ADF Deployment Guide",
+    "permalink": "/docs/bimlflex/technology-adf/adf-deployment"
+  }
+}

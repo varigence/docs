@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DvInferLinkHub",
+  "title": "BimlFlex Settings Definition for DvInferLinkHub",
+  "description": "Documentation of settings option within BimlFlex for DvInferLinkHub",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DvInferLinkHub.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DvInferLinkHub",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DvInferLinkHub",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DvInferLinkHub.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for DvInferLinkHub",
+    "description": "Documentation of settings option within BimlFlex for DvInferLinkHub",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DvEndDateSatellite",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvEndDateSatellite"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DvNamingConvention",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvNamingConvention"
+  }
+}

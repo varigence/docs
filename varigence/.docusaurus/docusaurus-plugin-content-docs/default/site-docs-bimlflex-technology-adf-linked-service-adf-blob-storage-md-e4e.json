@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/technology-adf/linked-service-adf-blob-storage",
+  "title": "Configuring an ADF Linked Service Connection for Azure Blob Storage",
+  "description": "Documentation on how to configure ADF Linked Service Connection for Azure Blob Storage with required fields, connection strings, and links to additional information",
+  "source": "@site/docs/bimlflex/technology-adf/linked-service-adf-blob-storage.md",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/linked-service-adf-blob-storage",
+  "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-blob-storage",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/linked-service-adf-blob-storage.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Configuring an ADF Linked Service Connection for Azure Blob Storage",
+    "description": "Documentation on how to configure ADF Linked Service Connection for Azure Blob Storage with required fields, connection strings, and links to additional information",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Configuring an ADF Linked Service Connection for Azure Database for PostgreSQL",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-azure-postgresql"
+  },
+  "next": {
+    "title": "Configuring an ADF Linked Service Connection for Data Lake Gen 2",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-datalake-gen-2"
+  }
+}

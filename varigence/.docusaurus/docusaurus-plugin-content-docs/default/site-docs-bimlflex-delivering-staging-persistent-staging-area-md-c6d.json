@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/delivering-staging/persistent-staging-area",
+  "title": "BimlFlex persistent staging area concept",
+  "description": "!include[PersistentStagingArea]",
+  "source": "@site/docs/bimlflex/delivering-staging/persistent-staging-area.md",
+  "sourceDirName": "bimlflex/delivering-staging",
+  "slug": "/bimlflex/delivering-staging/persistent-staging-area",
+  "permalink": "/docs/bimlflex/delivering-staging/persistent-staging-area",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-staging/persistent-staging-area.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-deliver-persistent-staging-area",
+    "title": "BimlFlex persistent staging area concept",
+    "summary": "Overview of the persistent staging area concept in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Delivering a Staging Layer using BimlFlex",
+    "permalink": "/docs/bimlflex/delivering-staging/"
+  },
+  "next": {
+    "title": "BimlFlex Documentation Viewer User Guide",
+    "permalink": "/docs/bimlflex/docs-gen/"
+  }
+}

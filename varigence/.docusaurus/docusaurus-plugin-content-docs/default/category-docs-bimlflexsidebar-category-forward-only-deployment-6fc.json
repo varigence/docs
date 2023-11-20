@@ -1,0 +1,15 @@
+{
+  "title": "Forward-Only Deployment",
+  "slug": "/category/forward-only-deployment",
+  "permalink": "/docs/category/forward-only-deployment",
+  "navigation": {
+    "previous": {
+      "title": "Deployment Through PowerShell",
+      "permalink": "/docs/bimlflex/technology-ssis/using-powershell"
+    },
+    "next": {
+      "title": "BimlFlex Synapse overview",
+      "permalink": "/docs/bimlflex/technology-synapse/"
+    }
+  }
+}

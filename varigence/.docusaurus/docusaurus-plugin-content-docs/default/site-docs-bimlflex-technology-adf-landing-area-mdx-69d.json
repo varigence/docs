@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/technology-adf/landing-area",
+  "title": "Azure Data Factory Landing Area",
+  "description": "When using an ELT ('pushdown') approach for data integration, BimlFlex creates a number of Execute Pipelines with various Stored Procedure calls and Copy Activities.",
+  "source": "@site/docs/bimlflex/technology-adf/landing-area.mdx",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/landing-area",
+  "permalink": "/docs/bimlflex/technology-adf/landing-area",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/landing-area.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-adf-landing-area",
+    "name": "Configure Azure Data Factory Landing Area",
+    "summary": "Instructions on how to configure Azure Data Factory Landing Area accessible by SQL Based ELT stored procedures",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Configuring a Linked Service Connection",
+    "permalink": "/docs/bimlflex/technology-adf/create-linked-service-connection"
+  },
+  "next": {
+    "title": "Configuring an ADF Linked Service Connection for Azure Database for MySQL",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-azure-mysql"
+  }
+}

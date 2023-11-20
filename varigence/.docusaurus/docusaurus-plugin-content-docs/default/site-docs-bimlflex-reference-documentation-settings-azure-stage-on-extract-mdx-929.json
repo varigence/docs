@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureStageOnExtract",
+  "title": "BimlFlex Settings Definition for AzureStageOnExtract",
+  "description": "Determines if the Azure-based Extract and Load process runs the stage process for the extracted data in the destination database",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureStageOnExtract",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureStageOnExtract",
+    "title": "BimlFlex Settings Definition for AzureStageOnExtract",
+    "summary": "Documentation of settings option within BimlFlex for AzureStageOnExtract",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureStageContainer",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageContainer"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureStageSasToken",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageSasToken"
+  }
+}

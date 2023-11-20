@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/delivering-data-vault/hashing-in-data-vault",
+  "title": "Hashing in BimlFlex for Data Vault",
+  "description": "BimlFlex uses hashing in two common scenarios, for Data Vault hash-based keys and for row checksums for identifying changes to attributes.",
+  "source": "@site/docs/bimlflex/delivering-data-vault/hashing-in-data-vault.md",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/hashing-in-data-vault",
+  "permalink": "/docs/bimlflex/delivering-data-vault/hashing-in-data-vault",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/hashing-in-data-vault.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-data-vault-hashing",
+    "title": "Hashing in BimlFlex for Data Vault",
+    "summary": "Documentation regarding hashing in Data Vault for hash-based keys and row checksums for changes to attributes",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Driving Keys in Data Vault",
+    "permalink": "/docs/bimlflex/delivering-data-vault/driving-keys-in-data-vault"
+  },
+  "next": {
+    "title": "Best Practices for Deploying Data Vault on Azure Synapse",
+    "permalink": "/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault"
+  }
+}

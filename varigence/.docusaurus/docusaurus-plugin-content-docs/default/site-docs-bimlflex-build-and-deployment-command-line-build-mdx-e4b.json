@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/build-and-deployment/command-line-build",
+  "title": "Building Using the Command Line",
+  "description": "A frequent scenario in BimlFlex solutions involve Continuous Integration and Continuous Delivery (CI/CD) and other automated processes that simply will not work with manually building your project in the app or in BimlStudio. In order to remedy this situation, BimlFlex supports automated builds that use both MsBuild.exe and bimlc.exe, the biml compiler. In this article each approach will be discussed.",
+  "source": "@site/docs/bimlflex/build-and-deployment/command-line-build.mdx",
+  "sourceDirName": "bimlflex/build-and-deployment",
+  "slug": "/bimlflex/build-and-deployment/command-line-build",
+  "permalink": "/docs/bimlflex/build-and-deployment/command-line-build",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/build-and-deployment/command-line-build.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-command-line-build",
+    "title": "Building Using the Command Line",
+    "summary": "Guide to building solutions involving CI/CD for automated processes, using response files, Biml Compiler, and MsBuild",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Building a BimlFlex project from BimlStudio.",
+    "permalink": "/docs/bimlflex/build-and-deployment/build-bimlstudio-project"
+  },
+  "next": {
+    "title": "Concurrent Development",
+    "permalink": "/docs/bimlflex/build-and-deployment/concurrent-development"
+  }
+}

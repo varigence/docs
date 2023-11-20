@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/extension-points/Data-Factory",
+  "title": "BimlFlex App Definition for Data Factory",
+  "description": "The Data Factory category has the following available Extension Points defined.",
+  "source": "@site/docs/bimlflex/reference-documentation/extension-points/Data-Factory.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/extension-points",
+  "slug": "/bimlflex/reference-documentation/extension-points/Data-Factory",
+  "permalink": "/docs/bimlflex/reference-documentation/extension-points/Data-Factory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Data-Factory.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-Data-Factory",
+    "title": "BimlFlex App Definition for Data Factory",
+    "summary": "Documentation of functionality within BimlFlex for the Data Factory Extension Point category",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Connection",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Connection"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Data Mart",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Data-Mart"
+  }
+}

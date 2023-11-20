@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureCopyTimeout",
+  "title": "BimlFlex Settings Definition for AzureCopyTimeout",
+  "description": "Documentation of settings option within BimlFlex for AzureCopyTimeout",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureCopyTimeout.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureCopyTimeout",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyTimeout",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureCopyTimeout.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureCopyTimeout",
+    "description": "Documentation of settings option within BimlFlex for AzureCopyTimeout",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureCopyStagingSettings",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyStagingSettings"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureCopyValidateDataConsistency",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency"
+  }
+}

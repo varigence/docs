@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/technology-snowflake/index",
+  "title": "BimlFlex Snowflake overview",
+  "description": "Overview of BimlFlex support for Snowflake",
+  "source": "@site/docs/bimlflex/technology-snowflake/index.md",
+  "sourceDirName": "bimlflex/technology-snowflake",
+  "slug": "/bimlflex/technology-snowflake/",
+  "permalink": "/docs/bimlflex/technology-snowflake/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-snowflake/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Snowflake overview",
+    "description": "Overview of BimlFlex support for Snowflake"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Snowflake Implementation with ADF",
+    "permalink": "/docs/bimlflex/technology-snowflake/implementing-snowflake-in-adf"
+  },
+  "next": {
+    "title": "Snowflake Implementation",
+    "permalink": "/docs/bimlflex/technology-snowflake/snowflake-configuration"
+  }
+}

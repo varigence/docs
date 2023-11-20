@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/installation/system-requirements",
+  "title": "BimlFlex Software and Hardware requirements",
+  "description": "BimlStudio",
+  "source": "@site/docs/bimlflex/installation/system-requirements.mdx",
+  "sourceDirName": "bimlflex/installation",
+  "slug": "/bimlflex/installation/system-requirements",
+  "permalink": "/docs/bimlflex/installation/system-requirements",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/installation/system-requirements.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-setup-software-and-hardware-requirements",
+    "title": "BimlFlex Software and Hardware requirements",
+    "summary": "Documentation on software and hardware requirements for installing BimlStudio, BimlFlex, BimlFlex Excel Add-In, and related databases",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "SSIS Server Installation",
+    "permalink": "/docs/bimlflex/installation/installing-ssis-server"
+  },
+  "next": {
+    "title": "Upgrade and Testing Process",
+    "permalink": "/docs/bimlflex/installation/upgrade-process"
+  }
+}

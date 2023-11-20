@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AppendSchemaStg",
+  "title": "BimlFlex Settings Definition for AppendSchemaStg",
+  "description": "Determines if the source Schema is appended to the object name in the staging layer. The default naming convention is to name tables using the Record Source and object name. The AdventureWorksLT Source table \"SalesLT.Product\" is normally staged in the \"AWLT.Product\" table. For sources with multiple schemas, enable this to distinguish between tables. For the product table the new staging table name would be \"AWLT.SalesLT_Product\"",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AppendSchemaStg.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AppendSchemaStg",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AppendSchemaStg",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AppendSchemaStg.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AppendSchemaStg",
+    "title": "BimlFlex Settings Definition for AppendSchemaStg",
+    "summary": "Documentation of settings option within BimlFlex for AppendSchemaStg",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AppendSchemaPsa",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AppendSchemaPsa"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AppendSurrogateKey",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AppendSurrogateKey"
+  }
+}

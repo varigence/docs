@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/concepts/index",
+  "title": "Overview of main BimlFlex concepts",
+  "description": "Overview of BimlFlex concepts including importing metadata, templates, integration keys, load parameters, and delete detection",
+  "source": "@site/docs/bimlflex/concepts/index.mdx",
+  "sourceDirName": "bimlflex/concepts",
+  "slug": "/bimlflex/concepts/",
+  "permalink": "/docs/bimlflex/concepts/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/concepts/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Overview of main BimlFlex concepts",
+    "description": "Overview of BimlFlex concepts including importing metadata, templates, integration keys, load parameters, and delete detection"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Importing Metadata",
+    "permalink": "/docs/bimlflex/concepts/importing-metadata"
+  },
+  "next": {
+    "title": "BimlFlex Integration Keys",
+    "permalink": "/docs/bimlflex/concepts/integration-keys"
+  }
+}

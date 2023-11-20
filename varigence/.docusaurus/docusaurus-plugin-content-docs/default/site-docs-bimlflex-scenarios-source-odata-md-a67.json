@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/scenarios/source-odata",
+  "title": "BimlFlex OData Source",
+  "description": "Documentation on loading an Odata source from bespoke sources within BimlFlex",
+  "source": "@site/docs/bimlflex/scenarios/source-odata.md",
+  "sourceDirName": "bimlflex/scenarios",
+  "slug": "/bimlflex/scenarios/source-odata",
+  "permalink": "/docs/bimlflex/scenarios/source-odata",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/scenarios/source-odata.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex OData Source",
+    "description": "Documentation on loading an Odata source from bespoke sources within BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Flat File Source to Staging",
+    "permalink": "/docs/bimlflex/scenarios/source-flat-file"
+  },
+  "next": {
+    "title": "Connecting to Salesforce REST API through BimlFlex",
+    "permalink": "/docs/bimlflex/scenarios/source-salesforce-rest-api"
+  }
+}

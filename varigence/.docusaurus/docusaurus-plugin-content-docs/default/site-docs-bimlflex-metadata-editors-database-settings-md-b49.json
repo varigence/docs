@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/metadata-editors/database-settings",
+  "title": "Toolbar Icons and Options",
+  "description": "The Database Settings manages the connection to the BimlFlex database. It is where you can set the server and database that is used for the recording of BimlFlex metadata. Additional properties such as Show Deleted and Show Excluded also reside here.",
+  "source": "@site/docs/bimlflex/metadata-editors/database-settings.md",
+  "sourceDirName": "bimlflex/metadata-editors",
+  "slug": "/bimlflex/metadata-editors/database-settings",
+  "permalink": "/docs/bimlflex/metadata-editors/database-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/database-settings.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-application-database-settings",
+    "title": "Toolbar Icons and Options",
+    "summary": "Description of BimlFlex toolbar and setup actions",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Data Type Mappings",
+    "permalink": "/docs/bimlflex/metadata-editors/data-type-mappings"
+  },
+  "next": {
+    "title": "BimlFlex Excel Add-in",
+    "permalink": "/docs/bimlflex/metadata-editors/excel-add-in"
+  }
+}

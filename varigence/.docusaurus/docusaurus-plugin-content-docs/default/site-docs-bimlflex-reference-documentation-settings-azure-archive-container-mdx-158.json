@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureArchiveContainer",
+  "title": "BimlFlex Settings Definition for AzureArchiveContainer",
+  "description": "The Container Name to use for the archive process. This should be indicative of the purpose of the contents, such as \"archive\"",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureArchiveContainer.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureArchiveContainer",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureArchiveContainer",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureArchiveContainer.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureArchiveContainer",
+    "title": "BimlFlex Settings Definition for AzureArchiveContainer",
+    "summary": "Documentation of settings option within BimlFlex for AzureArchiveContainer",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureArchiveAccountName",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountName"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureArchiveLandingFiles",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureArchiveLandingFiles"
+  }
+}

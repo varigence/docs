@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/technology-sql-server/index",
+  "title": "BimlFlex on SQL Server and Azure SQL",
+  "description": "BimlFlex on SQL Server and Azure SQL",
+  "source": "@site/docs/bimlflex/technology-sql-server/index.md",
+  "sourceDirName": "bimlflex/technology-sql-server",
+  "slug": "/bimlflex/technology-sql-server/",
+  "permalink": "/docs/bimlflex/technology-sql-server/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-sql-server/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex on SQL Server and Azure SQL",
+    "description": "BimlFlex on SQL Server and Azure SQL"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "An overview of Delta Vault",
+    "permalink": "/docs/bimlflex/technology-delta-lake/delta-vault"
+  },
+  "next": {
+    "title": "BimlFlex Training Overview",
+    "permalink": "/docs/bimlflex/training/"
+  }
+}

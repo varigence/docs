@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/build-and-deployment/continuous-integration-and-delivery",
+  "title": "Continuous Integration and Delivery (CI/CD)",
+  "description": "For effective management of the data solution, BimlFlex artifacts can be used in a CI/CD pipeline.",
+  "source": "@site/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery.mdx",
+  "sourceDirName": "bimlflex/build-and-deployment",
+  "slug": "/bimlflex/build-and-deployment/continuous-integration-and-delivery",
+  "permalink": "/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-continuous-integration-and-delivery",
+    "title": "Continuous Integration and Delivery (CI/CD)",
+    "summary": "Documentation providing considerations and approaches for CI/CD using BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Concurrent Development",
+    "permalink": "/docs/bimlflex/build-and-deployment/concurrent-development"
+  },
+  "next": {
+    "title": "BimlFlex Generating DDL",
+    "permalink": "/docs/bimlflex/build-and-deployment/generating-ddl"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/release-notes/release-notes-2022.3",
+  "title": "BimlFlex Release Notes 2022 R3",
+  "description": "Release Notes for BimlFlex 2022 R3",
+  "source": "@site/docs/bimlflex/release-notes/release-notes-2022.3.md",
+  "sourceDirName": "bimlflex/release-notes",
+  "slug": "/bimlflex/release-notes/release-notes-2022.3",
+  "permalink": "/docs/bimlflex/release-notes/release-notes-2022.3",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/release-notes/release-notes-2022.3.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Release Notes 2022 R3",
+    "description": "Release Notes for BimlFlex 2022 R3"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Release Notes 2022 R2",
+    "permalink": "/docs/bimlflex/release-notes/release-notes-2022.2"
+  },
+  "next": {
+    "title": "BimlFlex Release Notes 2023 R1",
+    "permalink": "/docs/bimlflex/release-notes/release-notes-2023.1"
+  }
+}

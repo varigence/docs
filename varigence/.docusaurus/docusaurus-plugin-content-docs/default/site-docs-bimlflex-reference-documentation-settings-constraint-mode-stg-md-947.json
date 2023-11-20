@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ConstraintModeStg",
+  "title": "BimlFlex Settings Definition for ConstraintModeStg",
+  "description": "Documentation of settings option within BimlFlex for ConstraintModeStg",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ConstraintModeStg.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ConstraintModeStg",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ConstraintModeStg",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ConstraintModeStg.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for ConstraintModeStg",
+    "description": "Documentation of settings option within BimlFlex for ConstraintModeStg",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ConstraintModeDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ConstraintModeDv"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for ConvertGuidToString",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ConvertGuidToString"
+  }
+}

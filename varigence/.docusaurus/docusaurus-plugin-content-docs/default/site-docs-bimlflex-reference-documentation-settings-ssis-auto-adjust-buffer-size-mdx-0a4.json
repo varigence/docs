@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize",
+  "title": "BimlFlex Settings Definition for SsisAutoAdjustBufferSize",
+  "description": "SSIS Auto Adjust Buffer Size configuration for supported SQL Server versions.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SsisAutoAdjustBufferSize",
+    "title": "BimlFlex Settings Definition for SsisAutoAdjustBufferSize",
+    "summary": "Documentation of settings option within BimlFlex for SsisAutoAdjustBufferSize",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsdtSuppressTSqlWarnings",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsisBLOBTempStoragePath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisBLOBTempStoragePath"
+  }
+}

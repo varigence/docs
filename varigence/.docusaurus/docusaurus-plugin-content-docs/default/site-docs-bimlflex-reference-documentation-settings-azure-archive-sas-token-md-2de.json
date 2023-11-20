@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureArchiveSasToken",
+  "title": "BimlFlex Settings Definition for AzureArchiveSasToken",
+  "description": "Documentation of settings option within BimlFlex for AzureArchiveSasToken",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureArchiveSasToken.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureArchiveSasToken",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureArchiveSasToken",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureArchiveSasToken.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureArchiveSasToken",
+    "description": "Documentation of settings option within BimlFlex for AzureArchiveSasToken",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureArchiveLandingFiles",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureArchiveLandingFiles"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureArchiveStage",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureArchiveStage"
+  }
+}

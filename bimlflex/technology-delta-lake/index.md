@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-technology-delta-lake
-title: Delta Lake
-summary: Delta Lake
+title: 
+summary:  
 ---
 
 # Delta Lake

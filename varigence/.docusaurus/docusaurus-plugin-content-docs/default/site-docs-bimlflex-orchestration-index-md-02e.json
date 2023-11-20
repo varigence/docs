@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/orchestration/index",
+  "title": "Organizing data logistics orchestration using BimlFlex",
+  "description": "Organizing data logistics orchestration using BimlFlex",
+  "source": "@site/docs/bimlflex/orchestration/index.md",
+  "sourceDirName": "bimlflex/orchestration",
+  "slug": "/bimlflex/orchestration/",
+  "permalink": "/docs/bimlflex/orchestration/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/orchestration/index.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Organizing data logistics orchestration using BimlFlex",
+    "description": "Organizing data logistics orchestration using BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Orchestration",
+    "permalink": "/docs/category/orchestration"
+  },
+  "next": {
+    "title": "BimlFlex Batch Orchestration",
+    "permalink": "/docs/bimlflex/orchestration/orchestration-ssis"
+  }
+}

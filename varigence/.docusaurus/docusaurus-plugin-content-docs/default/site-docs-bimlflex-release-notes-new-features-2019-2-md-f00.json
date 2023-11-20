@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/release-notes/new-features-2019.2",
+  "title": "BimlFlex Release Notes 2019.2",
+  "description": "release notes for current version of BimlFlex",
+  "source": "@site/docs/bimlflex/release-notes/new-features-2019.2.md",
+  "sourceDirName": "bimlflex/release-notes",
+  "slug": "/bimlflex/release-notes/new-features-2019.2",
+  "permalink": "/docs/bimlflex/release-notes/new-features-2019.2",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/release-notes/new-features-2019.2.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Release Notes 2019.2",
+    "description": "release notes for current version of BimlFlex"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Release Notes 2019.1",
+    "permalink": "/docs/bimlflex/release-notes/new-features-2019.1"
+  },
+  "next": {
+    "title": "New Features in BimlFlex 2020",
+    "permalink": "/docs/bimlflex/release-notes/new-features-2020.1"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsdtOutputPath",
+  "title": "BimlFlex Settings Definition for SsdtOutputPath",
+  "description": "Documentation of settings option within BimlFlex for SsdtOutputPath",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsdtOutputPath.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsdtOutputPath",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtOutputPath",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsdtOutputPath.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for SsdtOutputPath",
+    "description": "Documentation of settings option within BimlFlex for SsdtOutputPath",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsdtIncludeNetCoreSupport",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsdtOverwriteExternalTableDefaults",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtOverwriteExternalTableDefaults"
+  }
+}

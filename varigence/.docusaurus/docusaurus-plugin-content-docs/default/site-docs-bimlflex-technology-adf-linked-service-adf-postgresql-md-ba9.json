@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/technology-adf/linked-service-adf-postgresql",
+  "title": "Configuring an ADF Linked Service Connection for PostgreSQL",
+  "description": "Documentation on how to configure ADF Linked Service Connection for PostsgreSQL with required fields, connection strings, and links to additional information",
+  "source": "@site/docs/bimlflex/technology-adf/linked-service-adf-postgresql.md",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/linked-service-adf-postgresql",
+  "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-postgresql",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/linked-service-adf-postgresql.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Configuring an ADF Linked Service Connection for PostgreSQL",
+    "description": "Documentation on how to configure ADF Linked Service Connection for PostsgreSQL with required fields, connection strings, and links to additional information",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Configuring an ADF Linked Service Connection for Oracle",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-oracle"
+  },
+  "next": {
+    "title": "Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-sql-data-warehouse"
+  }
+}

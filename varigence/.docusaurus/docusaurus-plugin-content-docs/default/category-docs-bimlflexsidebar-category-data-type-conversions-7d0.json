@@ -1,0 +1,15 @@
+{
+  "title": "Data Type Conversions",
+  "slug": "/category/data-type-conversions",
+  "permalink": "/docs/category/data-type-conversions",
+  "navigation": {
+    "previous": {
+      "title": "BimlFlex Batch Orchestration",
+      "permalink": "/docs/bimlflex/orchestration/orchestration-ssis"
+    },
+    "next": {
+      "title": "BimlFlex Data Type Conversions",
+      "permalink": "/docs/bimlflex/reference-documentation/data-type-conversions"
+    }
+  }
+}

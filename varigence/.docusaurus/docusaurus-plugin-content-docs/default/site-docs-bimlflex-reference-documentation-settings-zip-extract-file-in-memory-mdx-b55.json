@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ZipExtractFileInMemory",
+  "title": "BimlFlex Settings Definition for ZipExtractFileInMemory",
+  "description": "Determines if the file zip process runs in-memory or through file streams. Files larger than 2 GB are always zipped through file streams.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ZipExtractFileInMemory",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-ZipExtractFileInMemory",
+    "title": "BimlFlex Settings Definition for ZipExtractFileInMemory",
+    "summary": "Documentation of settings option within BimlFlex for ZipExtractFileInMemory",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ZipArchiveImport",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ZipArchiveImport"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for ZipOutputFile",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ZipOutputFile"
+  }
+}

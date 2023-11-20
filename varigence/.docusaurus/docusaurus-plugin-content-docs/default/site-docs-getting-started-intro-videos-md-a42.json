@@ -1,0 +1,30 @@
+{
+  "id": "getting-started/intro-videos",
+  "title": "BimlFlex Intro Videos",
+  "description": "Get up to speed with BimlFlex through this set of introductory videos!",
+  "source": "@site/docs/getting-started/intro-videos.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/intro-videos",
+  "permalink": "/docs/getting-started/intro-videos",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/intro-videos.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-getting-started-intro-videos",
+    "title": "BimlFlex Intro Videos",
+    "summary": "Collection of BimlFlex introductory videos, including end to end walkthrough, loading sample metadata, data vault acceleration, and building a data vault project and dimensional models",
+    "varigenceProduct": "BimlFlex",
+    "varigenceArticleType": "Walkthrough"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "First Project Walkthrough",
+    "permalink": "/docs/getting-started/first-project-walkthrough"
+  },
+  "next": {
+    "title": "Sample Metadata",
+    "permalink": "/docs/getting-started/sample-metadata"
+  }
+}

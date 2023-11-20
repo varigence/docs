@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SuffixOrPrefixColumn",
+  "title": "BimlFlex Settings Definition for SuffixOrPrefixColumn",
+  "description": "Documentation of settings option within BimlFlex for SuffixOrPrefixColumn",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for SuffixOrPrefixColumn",
+    "description": "Documentation of settings option within BimlFlex for SuffixOrPrefixColumn",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for StringConcatenator",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/StringConcatenator"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SuffixOrPrefixObject",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject"
+  }
+}

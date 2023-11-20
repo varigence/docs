@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/technology-adf/using-powershell",
+  "title": "Deployment Through PowerShell",
+  "description": "Guide to deploy artifacts generated in Azure Data Factory through PowerShell",
+  "source": "@site/docs/bimlflex/technology-adf/using-powershell.md",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/using-powershell",
+  "permalink": "/docs/bimlflex/technology-adf/using-powershell",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/using-powershell.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Deployment Through PowerShell",
+    "description": "Guide to deploy artifacts generated in Azure Data Factory through PowerShell",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Deployment Through the Azure Portal",
+    "permalink": "/docs/bimlflex/technology-adf/using-azure-portal"
+  },
+  "next": {
+    "title": "BimlFlex for Mapping Data Flows",
+    "permalink": "/docs/category/bimlflex-for-mapping-data-flows"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "bimlflex/training/index",
+  "title": "BimlFlex Training Overview",
+  "description": "Get up to speed with BimlFlex training.",
+  "source": "@site/docs/bimlflex/training/index.mdx",
+  "sourceDirName": "bimlflex/training",
+  "slug": "/bimlflex/training/",
+  "permalink": "/docs/bimlflex/training/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/training/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-training-index",
+    "title": "BimlFlex Training Overview",
+    "summary": "Guide on working with BimlFlex"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Synapse Implementations",
+    "permalink": "/docs/bimlflex/technology-synapse/synapse-implementation"
+  },
+  "next": {
+    "title": "BimlFlex Training Content",
+    "permalink": "/docs/bimlflex/training/training-content"
+  }
+}

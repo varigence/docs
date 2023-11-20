@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/technology-adf/index",
+  "title": "ADF Deployment Overview",
+  "description": "Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through PowerShell and Azure portal",
+  "source": "@site/docs/bimlflex/technology-adf/index.md",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/",
+  "permalink": "/docs/bimlflex/technology-adf/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "ADF Deployment Overview",
+    "description": "Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through PowerShell and Azure portal"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Configuring a Linked Service Connection",
+    "permalink": "/docs/bimlflex/technology-adf/create-linked-service-connection"
+  },
+  "next": {
+    "title": "Configure Azure Data Factory Landing Area",
+    "permalink": "/docs/bimlflex/technology-adf/landing-area"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName",
+  "title": "BimlFlex Settings Definition for AzureFunctionBridgeKeyVaultName",
+  "description": "The name of the Azure Key Vault used by Azure Data Factory to access the function key for the Azure Function Bridge when the \"AzureFunctionBridgeUseKeyVault\" setting is enabled.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureFunctionBridgeKeyVaultName",
+    "title": "BimlFlex Settings Definition for AzureFunctionBridgeKeyVaultName",
+    "summary": "Documentation of settings option within BimlFlex for AzureFunctionBridgeKeyVaultName",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureFunctionBridgeKey",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKey"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureFunctionBridgeKeyVaultSecret",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecret"
+  }
+}

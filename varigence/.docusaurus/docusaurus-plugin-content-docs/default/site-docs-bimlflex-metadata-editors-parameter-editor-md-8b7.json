@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/metadata-editors/parameter-editor",
+  "title": "Parameters",
+  "description": "!include[Parameters]",
+  "source": "@site/docs/bimlflex/metadata-editors/parameter-editor.md",
+  "sourceDirName": "bimlflex/metadata-editors",
+  "slug": "/bimlflex/metadata-editors/parameter-editor",
+  "permalink": "/docs/bimlflex/metadata-editors/parameter-editor",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/parameter-editor.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-parameter-editor",
+    "title": "Parameters",
+    "summary": "Documentation regarding the BimlFlex Parameter editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Operational Reports",
+    "permalink": "/docs/bimlflex/metadata-editors/operational-reports"
+  },
+  "next": {
+    "title": "Projects",
+    "permalink": "/docs/bimlflex/metadata-editors/project-editor"
+  }
+}

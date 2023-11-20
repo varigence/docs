@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureCopyEnableLogging",
+  "title": "BimlFlex Settings Definition for AzureCopyEnableLogging",
+  "description": "Enable to use logging in the Azure Data Factory Copy Command.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureCopyEnableLogging.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureCopyEnableLogging",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyEnableLogging",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureCopyEnableLogging.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureCopyEnableLogging",
+    "title": "BimlFlex Settings Definition for AzureCopyEnableLogging",
+    "summary": "Documentation of settings option within BimlFlex for AzureCopyEnableLogging",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureCopyDataIntegrationUnits",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyDataIntegrationUnits"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureCopyEnableStaging",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyEnableStaging"
+  }
+}

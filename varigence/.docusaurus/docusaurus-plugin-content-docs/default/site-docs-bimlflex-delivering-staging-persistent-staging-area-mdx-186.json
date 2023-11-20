@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/delivering-staging/persistent-staging-area",
+  "title": "BimlFlex persistent staging area concept",
+  "description": "Overview of the persistent staging area concept in BimlFlex",
+  "source": "@site/docs/bimlflex/delivering-staging/persistent-staging-area.mdx",
+  "sourceDirName": "bimlflex/delivering-staging",
+  "slug": "/bimlflex/delivering-staging/persistent-staging-area",
+  "permalink": "/docs/bimlflex/delivering-staging/persistent-staging-area",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-staging/persistent-staging-area.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex persistent staging area concept",
+    "description": "Overview of the persistent staging area concept in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Delivering a Staging Layer using BimlFlex",
+    "permalink": "/docs/bimlflex/delivering-staging/"
+  },
+  "next": {
+    "title": "Delivering Data Vault",
+    "permalink": "/docs/category/delivering-data-vault"
+  }
+}

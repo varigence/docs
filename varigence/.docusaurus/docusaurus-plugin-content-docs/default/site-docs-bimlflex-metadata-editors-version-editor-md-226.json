@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/metadata-editors/version-editor",
+  "title": "Versions",
+  "description": "!include[Versions]",
+  "source": "@site/docs/bimlflex/metadata-editors/version-editor.md",
+  "sourceDirName": "bimlflex/metadata-editors",
+  "slug": "/bimlflex/metadata-editors/version-editor",
+  "permalink": "/docs/bimlflex/metadata-editors/version-editor",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/version-editor.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-version-editor",
+    "title": "Versions",
+    "summary": "Documentation regarding the BimlFlex Versions editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Treeview",
+    "permalink": "/docs/bimlflex/metadata-editors/treeview"
+  },
+  "next": {
+    "title": "Versions",
+    "permalink": "/docs/bimlflex/metadata-editors/version-editor"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "bimlflex/patterns/source-to-staging-pattern",
+  "title": "Source to Staging Project Pattern",
+  "description": "The following pattern, outlined below, details the customary route to establish a Source to Staging workflow within the BimlFlex application.",
+  "source": "@site/docs/bimlflex/patterns/source-to-staging-pattern.md",
+  "sourceDirName": "bimlflex/patterns",
+  "slug": "/bimlflex/patterns/source-to-staging-pattern",
+  "permalink": "/docs/bimlflex/patterns/source-to-staging-pattern",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/patterns/source-to-staging-pattern.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Documentation",
+    "permalink": "/docs/bimlflex/"
+  },
+  "next": {
+    "title": "Configuring Connections and Projects for BimlFlex Databricks Solution",
+    "permalink": "/docs/bimlflex/technology-databricks/databricks-configuring-connections-and-projects"
+  }
+}

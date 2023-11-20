@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsisProcessSubfolders",
+  "title": "BimlFlex Settings Definition for SsisProcessSubfolders",
+  "description": "Determines if a flat file source loop loads files in subfolders, of the specified source folder.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsisProcessSubfolders.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsisProcessSubfolders",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsisProcessSubfolders",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsisProcessSubfolders.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SsisProcessSubfolders",
+    "title": "BimlFlex Settings Definition for SsisProcessSubfolders",
+    "summary": "Documentation of settings option within BimlFlex for SsisProcessSubfolders",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsisMaximumInsertCommitSize",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisMaximumInsertCommitSize"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsisRowsPerBatch",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisRowsPerBatch"
+  }
+}

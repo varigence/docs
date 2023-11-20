@@ -1,0 +1,28 @@
+{
+  "id": "bimlflex/training/training-content",
+  "title": "BimlFlex Training Content",
+  "description": "This guide provides an end-to-end overview of the BimlFlex design process.",
+  "source": "@site/docs/bimlflex/training/training-content.md",
+  "sourceDirName": "bimlflex/training",
+  "slug": "/bimlflex/training/training-content",
+  "permalink": "/docs/bimlflex/training/training-content",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/training/training-content.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-training-content",
+    "title": "BimlFlex Training Content",
+    "summary": "Guide on working with BimlFlex. Meant to be generated as hand-out."
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Training Overview",
+    "permalink": "/docs/bimlflex/training/"
+  },
+  "next": {
+    "title": "BimlFlex Training Content",
+    "permalink": "/docs/bimlflex/training/training-content"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/delivering-data-vault/data-vault-concept-integration-keys",
+  "title": "BimlFlex Integration Keys and Relationships",
+  "description": "Data Vault management of integration keys, relationships, business keys, examples, and how to accelerate in the Data Vault Accelerator",
+  "source": "@site/docs/bimlflex/delivering-data-vault/data-vault-concept-integration-keys.mdx",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/data-vault-concept-integration-keys",
+  "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-concept-integration-keys",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/data-vault-concept-integration-keys.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Integration Keys and Relationships",
+    "description": "Data Vault management of integration keys, relationships, business keys, examples, and how to accelerate in the Data Vault Accelerator",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Data Vault Hubs",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-concept-hub"
+  },
+  "next": {
+    "title": "Data Vault Links",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-concept-link"
+  }
+}

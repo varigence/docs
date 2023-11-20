@@ -36,7 +36,7 @@ Sample Connection:
 | Connection Type   | Script Source                                                                                                      |
 | System Type       | Microsoft SQL Server                                                                                               |
 | Description       | Sample OData source connection.                                                                                    |
-| Connection String | \{Any Value\} <br/>*Note: Not used, see [Connection Override Extension Point](#connection-override-extension-point)* |
+| Connection String | {Any Value} <br/>*Note: Not used, see [Connection Override Extension Point](#connection-override-extension-point)* |
 | Catalog           | NWND_SRC                                                                                                           |
 | Record Source     | nwnd                                                                                                               |
 | Persist History   | true                                                                                                               |
@@ -67,7 +67,7 @@ Set the OData Connection as the source for the Project.
 | Attribute                   | Value                                                   |
 | --------------------------- | ------------------------------------------------------- |
 | Name                        | EXT_NWND_SRC                                            |
-| Parent Project              | \{empty\}                                                 |
+| Parent Project              | {empty}                                                 |
 | Batch                       | EXT_NWND_SRC                                            |
 | Description                 | Sample Source Project configuration for Northwind OData |
 | Integration Template        | SQL Server Integration Service (SSIS)                   |

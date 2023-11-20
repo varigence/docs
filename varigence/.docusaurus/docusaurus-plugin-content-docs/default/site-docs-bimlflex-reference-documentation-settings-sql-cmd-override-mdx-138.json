@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SqlCmdOverride",
+  "title": "BimlFlex Settings Definition for SqlCmdOverride",
+  "description": "Override the sqlcmd connection in the Create SSIS Catalog folder in the deployment script.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SqlCmdOverride.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SqlCmdOverride",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SqlCmdOverride",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SqlCmdOverride.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SqlCmdOverride",
+    "title": "BimlFlex Settings Definition for SqlCmdOverride",
+    "summary": "Documentation of settings option within BimlFlex for SqlCmdOverride",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SnowflakeWarehouse",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SnowflakeWarehouse"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsdtDefaultCredential",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtDefaultCredential"
+  }
+}

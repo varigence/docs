@@ -1,0 +1,28 @@
+{
+  "id": "bimlflex/release-notes/release-notes",
+  "title": "Release Notes",
+  "description": "Varigence is excited to release the 2022 R3 version of the BimlFlex platform for data solution automation!",
+  "source": "@site/docs/bimlflex/release-notes/release-notes.mdx",
+  "sourceDirName": "bimlflex/release-notes",
+  "slug": "/bimlflex/release-notes/",
+  "permalink": "/docs/bimlflex/release-notes/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/release-notes/release-notes.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-release-notes",
+    "name": "BimlFlex Release Notes",
+    "summary": "Release Notes for the current version of BimlFlex"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Preview Release Notes",
+    "permalink": "/docs/bimlflex/release-notes/release-notes-2023.1"
+  },
+  "next": {
+    "title": "BimlFlex Scenarios Overview",
+    "permalink": "/docs/bimlflex/scenarios/"
+  }
+}

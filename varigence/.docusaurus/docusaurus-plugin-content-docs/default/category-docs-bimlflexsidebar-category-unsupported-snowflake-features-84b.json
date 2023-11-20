@@ -1,0 +1,15 @@
+{
+  "title": "Unsupported Snowflake Features",
+  "slug": "/category/unsupported-snowflake-features",
+  "permalink": "/docs/category/unsupported-snowflake-features",
+  "navigation": {
+    "previous": {
+      "title": "Synapse Implementations",
+      "permalink": "/docs/bimlflex/technology-synapse/synapse-implementation"
+    },
+    "next": {
+      "title": "Snowflake Implementation with ADF",
+      "permalink": "/docs/bimlflex/technology-snowflake/implementing-snowflake-in-adf"
+    }
+  }
+}

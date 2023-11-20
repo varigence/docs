@@ -1,0 +1,28 @@
+{
+  "id": "bimlflex/installation/index",
+  "title": "BimlFlex Setup Overview",
+  "description": "This section describes system requirements and the installation of the BimlFlex App.",
+  "source": "@site/docs/bimlflex/installation/index.mdx",
+  "sourceDirName": "bimlflex/installation",
+  "slug": "/bimlflex/installation/",
+  "permalink": "/docs/bimlflex/installation/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/installation/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-setup-overview",
+    "title": "BimlFlex Setup Overview",
+    "summary": "Overview of how to setup and install the BimlFlex App"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Documentation",
+    "permalink": "/docs/bimlflex/"
+  },
+  "next": {
+    "title": "Change the BimlFlex Excel bitness",
+    "permalink": "/docs/bimlflex/installation/change-excel-bitness-bimlflex"
+  }
+}

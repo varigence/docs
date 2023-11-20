@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureCopySecureInput",
+  "title": "BimlFlex Settings Definition for AzureCopySecureInput",
+  "description": "When enabled, input from the activity will not be captured in ADF logging.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureCopySecureInput.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureCopySecureInput",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopySecureInput",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureCopySecureInput.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureCopySecureInput",
+    "title": "BimlFlex Settings Definition for AzureCopySecureInput",
+    "summary": "Documentation of settings option within BimlFlex for AzureCopySecureInput",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureCopyRetryInterval",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyRetryInterval"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureCopySecureOutput",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopySecureOutput"
+  }
+}

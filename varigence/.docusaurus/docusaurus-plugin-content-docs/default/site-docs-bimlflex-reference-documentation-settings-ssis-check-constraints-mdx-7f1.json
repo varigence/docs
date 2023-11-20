@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsisCheckConstraints",
+  "title": "BimlFlex Settings Definition for SsisCheckConstraints",
+  "description": "SSIS Destination configuration for checking constraints. Defaults to \"False\", as that is recommended for data warehouse destinations.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsisCheckConstraints.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsisCheckConstraints",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsisCheckConstraints",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsisCheckConstraints.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SsisCheckConstraints",
+    "title": "BimlFlex Settings Definition for SsisCheckConstraints",
+    "summary": "Documentation of settings option within BimlFlex for SsisCheckConstraints",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsisBufferTempStoragePath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisBufferTempStoragePath"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsisCommandTimeout",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisCommandTimeout"
+  }
+}

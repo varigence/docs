@@ -1,0 +1,15 @@
+{
+  "title": "Excel Add-In",
+  "slug": "/category/excel-add-in",
+  "permalink": "/docs/category/excel-add-in",
+  "navigation": {
+    "previous": {
+      "title": "BimlFlex version concept",
+      "permalink": "/docs/bimlflex/concepts/versions"
+    },
+    "next": {
+      "title": "Data Vault Accelerator",
+      "permalink": "/docs/bimlflex/metadata-editors/accelerator"
+    }
+  }
+}
