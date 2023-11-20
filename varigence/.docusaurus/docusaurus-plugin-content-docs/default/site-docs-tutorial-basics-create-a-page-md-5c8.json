@@ -15,10 +15,10 @@
   "frontMatter": {
     "sidebar_position": 1
   },
-  "sidebar": "bimlflexSidebar",
+  "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Tutorial - Basics",
-    "permalink": "/docs/category/tutorial---basics-2"
+    "permalink": "/docs/category/tutorial---basics"
   },
   "next": {
     "title": "Create a Document",

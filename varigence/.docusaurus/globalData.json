@@ -8,51 +8,51 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "tutorials/intro",
+          "mainDocId": "intro",
           "docs": [
             {
-              "id": "tutorials/intro",
-              "path": "/docs/tutorials/intro",
+              "id": "intro",
+              "path": "/docs/intro",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorials/tutorial-basics/congratulations",
-              "path": "/docs/tutorials/tutorial-basics/congratulations",
+              "id": "tutorial-basics/congratulations",
+              "path": "/docs/tutorial-basics/congratulations",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorials/tutorial-basics/create-a-blog-post",
-              "path": "/docs/tutorials/tutorial-basics/create-a-blog-post",
+              "id": "tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial-basics/create-a-blog-post",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorials/tutorial-basics/create-a-document",
-              "path": "/docs/tutorials/tutorial-basics/create-a-document",
+              "id": "tutorial-basics/create-a-document",
+              "path": "/docs/tutorial-basics/create-a-document",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorials/tutorial-basics/create-a-page",
-              "path": "/docs/tutorials/tutorial-basics/create-a-page",
+              "id": "tutorial-basics/create-a-page",
+              "path": "/docs/tutorial-basics/create-a-page",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorials/tutorial-basics/deploy-your-site",
-              "path": "/docs/tutorials/tutorial-basics/deploy-your-site",
+              "id": "tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial-basics/deploy-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorials/tutorial-basics/markdown-features",
-              "path": "/docs/tutorials/tutorial-basics/markdown-features",
+              "id": "tutorial-basics/markdown-features",
+              "path": "/docs/tutorial-basics/markdown-features",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorials/tutorial-extras/manage-docs-versions",
-              "path": "/docs/tutorials/tutorial-extras/manage-docs-versions",
+              "id": "tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial-extras/manage-docs-versions",
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "tutorials/tutorial-extras/translate-your-site",
-              "path": "/docs/tutorials/tutorial-extras/translate-your-site",
+              "id": "tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial-extras/translate-your-site",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -70,11 +70,10 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/tutorials/intro",
-                "label": "tutorials/intro"
+                "path": "/docs/intro",
+                "label": "intro"
               }
-            },
-            "bimlflexSidebar": {}
+            }
           }
         }
       ],

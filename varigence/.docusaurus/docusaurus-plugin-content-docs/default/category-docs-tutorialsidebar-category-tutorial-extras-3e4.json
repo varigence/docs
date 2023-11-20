@@ -5,11 +5,11 @@
   "navigation": {
     "previous": {
       "title": "Congratulations!",
-      "permalink": "/docs/tutorials/tutorial-basics/congratulations"
+      "permalink": "/docs/tutorial-basics/congratulations"
     },
     "next": {
       "title": "Manage Docs Versions",
-      "permalink": "/docs/tutorials/tutorial-extras/manage-docs-versions"
+      "permalink": "/docs/tutorial-extras/manage-docs-versions"
     }
   }
 }

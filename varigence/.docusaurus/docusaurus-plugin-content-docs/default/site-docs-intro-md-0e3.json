@@ -15,9 +15,9 @@
   "frontMatter": {
     "sidebar_position": 1
   },
-  "sidebar": "bimlflexSidebar",
+  "sidebar": "tutorialSidebar",
   "next": {
-    "title": "Tutorial - Extras",
-    "permalink": "/docs/category/tutorial---extras-1"
+    "title": "Tutorial - Basics",
+    "permalink": "/docs/category/tutorial---basics"
   }
 }

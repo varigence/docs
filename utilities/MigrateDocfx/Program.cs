@@ -1,16 +1,13 @@
-﻿using System.Globalization;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
+﻿using System.Text;
 using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-string docfxDirectory = "C:\\varigencedocs\\bimlflex";
-string docusaurusDirectory = "C:\\varigencedocs\\varigence\\docs\\bimlflex";
+var docfxDirectory = @"C:\varigencedocs\bimlflex";
+var docusaurusDirectory = @"C:\varigencedocs\varigence\docs\bimlflex";
 var imageExtensions = new[] {".png", ".gif", ".svg", ".jpg", ".jpeg"};
 
-foreach (string filePath in Directory.EnumerateFiles(docfxDirectory, "*.*", SearchOption.AllDirectories)
+foreach (var filePath in Directory.EnumerateFiles(docfxDirectory, "*.*", SearchOption.AllDirectories)
              .Where(file => imageExtensions.Any(ext => file.EndsWith(ext, StringComparison.OrdinalIgnoreCase))))
 {
     CopyFile(filePath, docfxDirectory, docusaurusDirectory);
@@ -29,30 +26,29 @@ static void MigrateFile(string filePath, Dictionary<string, Tuple<string, string
     var content = File.ReadAllText(filePath);
 
     // Applying multiple Regex.Replace operations
-    content = Regex.Replace(content, "(uid:\\W.*\\s)", "");
-    content = Regex.Replace(content, "(name:\\W)", "title: ");
-    content = Regex.Replace(content, "(summary:\\W)", "description: ");
-    content = Regex.Replace(content, "(varigenceProduct:\\W)(.*?)(\\r\\n)(varigenceArticleType:\\W)(.*?)(\\r\\n)", "tags: [$2, $5]$6", RegexOptions.Compiled);
-    content = Regex.Replace(content, "(^>\\[!)", "> [!");
-    content = Regex.Replace(content, "(^>\\W\\[!)", "$\r\n$2");
-    content = Regex.Replace(content, "(\\s)(^>\\W\\[!NOTE\\]\\s)(?s)(.+?)(^\\s*$)", ":::note$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    // Repeat for other patterns as in the original code
-    content = Regex.Replace(content, "(\\s)(^>\\W\\[!TIP\\]\\s)(?s)(.+?)(^\\s*$)", ":::tip$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    content = Regex.Replace(content, "(\\s)(^>\\W\\[!INFO\\]\\s)(?s)(.+?)(^\\s*$)", ":::info$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    content = Regex.Replace(content, "(\\s)(^>\\W\\[!WARNING\\]\\s)(?s)(.+?)(^\\s*$)", ":::warning$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    content = Regex.Replace(content, "(\\s)(^>\\W\\[!IMPORTANT\\]\\s)(?s)(.+?)(^\\s*$)", ":::danger$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
-    content = Regex.Replace(content, "(^>\\W)", "\r\n");
-    content = Regex.Replace(content, "(!\\[.*?\\]\\()(/bimlflex/)", "$1../");
+    content = Regex.Replace(content, @"(uid:\W.*\s)", "");
+    content = Regex.Replace(content, @"(name:\W)", "title: ");
+    content = Regex.Replace(content, @"(summary:\W)", "description: ");
+    content = Regex.Replace(content, @"(varigenceProduct:\W)(.*?)(\r\n)(varigenceArticleType:\W)(.*?)(\r\n)", "tags: [$2, $5]$6", RegexOptions.Compiled);
+    content = Regex.Replace(content, @"(^>\[!)", "> [!");
+    content = Regex.Replace(content, @"(^>\W\[!)", "$\r\n$2");
+    content = Regex.Replace(content, @"(\s)(^>\W\[!NOTE\]\s)(?s)(.+?)(^\s*$)", ":::note$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, @"(\s)(^>\W\[!TIP\]\s)(?s)(.+?)(^\s*$)", ":::tip$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, @"(\s)(^>\W\[!INFO\]\s)(?s)(.+?)(^\s*$)", ":::info$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, @"(\s)(^>\W\[!WARNING\]\s)(?s)(.+?)(^\s*$)", ":::warning$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, @"(\s)(^>\W\[!IMPORTANT\]\s)(?s)(.+?)(^\s*$)", ":::danger$1$1$3$1:::$1$1$4", RegexOptions.Multiline);
+    content = Regex.Replace(content, @"(^>\W)", "\r\n");
+    content = Regex.Replace(content, @"(!\[.*?\]\()(/bimlflex/)", "$1../");
     content = Regex.Replace(content, "(<#.*?#>)", "`$1`");
     content = Regex.Replace(content, "(\"`)(<#.*?#>)(`\")", "\"$2\"");
     content = Regex.Replace(content, "(<br>)", "<br/>");
-    content = Regex.Replace(content, "(\\*\\*)(\\<==\\W)(.*?)(\\*\\*)", "**($3)**");
+    content = Regex.Replace(content, @"(\*\*)(\<==\W)(.*?)(\*\*)", "**($3)**");
 
     // Processing fileUids
     foreach (var fileUid in fileUids)
     {
-        var replacement = "(" + fileUid.Key.Replace("C:\\varigencedocs", "/docs").Replace("\\", "/").Replace(".md", "") + ")";
-        content = Regex.Replace(content, "(\\(xref:" + fileUid.Key + "\\))", replacement, RegexOptions.IgnoreCase);
+        var replacement = "(" + fileUid.Key.Replace(@"C:\varigencedocs", "/docs").Replace(@"\", "/").Replace(".md", "") + ")";
+        content = Regex.Replace(content, $@"(\(xref:{fileUid.Key}\))", replacement, RegexOptions.IgnoreCase);
     }
 
     // Finding the header index
@@ -62,7 +58,7 @@ static void MigrateFile(string filePath, Dictionary<string, Tuple<string, string
     // Processing includeFiles
     foreach (var includeFile in includeFiles)
     {
-        foreach (Match match in new Regex("(\\[!include.*?\\()((.*?\\/)?" + includeFile.Key + ")(\\)\\])", RegexOptions.IgnoreCase).Matches(content))
+        foreach (Match match in new Regex(@"(\[!include.*?\()((.*?\/)?{includeFile.Key})(\)\])", RegexOptions.IgnoreCase).Matches(content))
         {
             if (match.Success)
             {
@@ -119,12 +115,11 @@ static void GetFileDictionaries(string filePath, ref Dictionary<string, Tuple<st
     }
 }
 
-
 static void GetTocSidebar(string docFxRootDirectory, ref Dictionary<string, Tuple<string, string>> fileUids, ref Dictionary<string, Tuple<string, string>> tocFiles, string docFxDirectory,
     string docusaurusDirectory)
 {
-    string filePath = Path.Combine(docFxRootDirectory, "toc.yml");
-    int tocPosition = 1;
+    var filePath = Path.Combine(docFxRootDirectory, "toc.yml");
+    var tocPosition = 1;
     GetTocDictionary(docFxRootDirectory, filePath, ref tocPosition, ref fileUids, ref tocFiles, docFxDirectory, docusaurusDirectory);
 }
 
@@ -144,12 +139,12 @@ static void GetTocDictionary(string rootDirectory, string filePath, ref int tocP
                 if (item.href.EndsWith(".yml"))
                 {
                     var configJson = $"{{\r\n\t\"label\": \"{item.name}\",\r\n\t\"position\": {tocPosition},\r\n\t\"link\": {{\r\n\t\"type\": \"generated-index\"\r\n\t}}\r\n}}";
-                    var str1 = Path.Combine(rootDirectory, item.href);
-                    var str2 = Path.GetDirectoryName(str1).Replace(docFxDirectory, docusaurusDirectory);
-                    var path = Path.Combine(str2, "_category_.json");
-                    if (!Directory.Exists(str2)) Directory.CreateDirectory(str2);
-                    File.WriteAllText(path, configJson);
-                    GetTocDictionary(Path.GetDirectoryName(str1), str1, ref tocPosition, ref fileUids, ref tocFiles, docFxDirectory, docusaurusDirectory);
+                    var hrefFilePath = Path.Combine(rootDirectory, item.href);
+                    var newDirectory = Path.GetDirectoryName(hrefFilePath).Replace(docFxDirectory, docusaurusDirectory);
+                    var newFilePath = Path.Combine(newDirectory, "_category_.json");
+                    if (!Directory.Exists(newDirectory)) Directory.CreateDirectory(newDirectory);
+                    File.WriteAllText(newFilePath, configJson);
+                    GetTocDictionary(Path.GetDirectoryName(hrefFilePath), hrefFilePath, ref tocPosition, ref fileUids, ref tocFiles, docFxDirectory, docusaurusDirectory);
                     tocPosition++;
                 }
 

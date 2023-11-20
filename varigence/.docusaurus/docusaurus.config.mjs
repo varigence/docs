@@ -42,6 +42,7 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
+      "title": "My Site",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/logo.svg"
@@ -52,12 +53,6 @@ export default {
           "sidebarId": "tutorialSidebar",
           "position": "left",
           "label": "Tutorial"
-        },
-        {
-          "type": "docSidebar",
-          "sidebarId": "bimlflexSidebar",
-          "position": "left",
-          "label": "BimlFlex"
         },
         {
           "to": "/blog",

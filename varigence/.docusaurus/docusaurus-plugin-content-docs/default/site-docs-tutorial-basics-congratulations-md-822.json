@@ -15,13 +15,13 @@
   "frontMatter": {
     "sidebar_position": 6
   },
-  "sidebar": "bimlflexSidebar",
+  "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Deploy your site",
     "permalink": "/docs/tutorial-basics/deploy-your-site"
   },
   "next": {
     "title": "Tutorial - Extras",
-    "permalink": "/docs/category/tutorial---extras-1"
+    "permalink": "/docs/category/tutorial---extras"
   }
 }

@@ -14,5 +14,14 @@
   "sidebarPosition": 1,
   "frontMatter": {
     "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorial - Extras",
+    "permalink": "/docs/category/tutorial---extras"
+  },
+  "next": {
+    "title": "Translate your site",
+    "permalink": "/docs/tutorial-extras/translate-your-site"
   }
 }
