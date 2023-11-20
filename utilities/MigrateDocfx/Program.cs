@@ -55,10 +55,19 @@ static void MigrateFile(string filePath, Dictionary<string, Tuple<string, string
     var headerIndex = content.IndexOf("---", content.IndexOf("---", StringComparison.OrdinalIgnoreCase) + 3, StringComparison.OrdinalIgnoreCase) + 3;
     var importStatements = "";
 
+    if (filePath.EndsWith("parameter-editor.md"))
+    {
+        var test = "here";
+    }
+
     // Processing includeFiles
     foreach (var includeFile in includeFiles)
     {
-        foreach (Match match in new Regex(@"(\[!include.*?\()((.*?\/)?{includeFile.Key})(\)\])", RegexOptions.IgnoreCase).Matches(content))
+        if (includeFile.Key == "_incl-header-parameter.md")
+        {
+            var again = "here";
+        }
+        foreach (Match match in new Regex($@"(\[!include.*?\()((.*?\/)?{includeFile.Key})(\)\])", RegexOptions.IgnoreCase).Matches(content))
         {
             if (match.Success)
             {
@@ -90,25 +99,25 @@ static void GetFileDictionaries(string filePath, ref Dictionary<string, Tuple<st
 {
     var input = File.ReadAllText(filePath);
     var fileName = Path.GetFileName(filePath);
-    var str = input.Contains("[!include", StringComparison.OrdinalIgnoreCase) ? ".mdx" : ".md";
-    if (fileName == str) return;
+    var extension = input.Contains("[!include", StringComparison.OrdinalIgnoreCase) ? ".mdx" : ".md";
+    if (fileName == extension) return;
 
     if (!fileName.EndsWith("index.md", StringComparison.OrdinalIgnoreCase))
     {
         string pascalCase = ToPascalCase(fileName.Replace(".md", ""));
         if (!includeFiles.TryGetValue(fileName, out _))
-            includeFiles.Add(fileName, new Tuple<string, string>(pascalCase, str));
+            includeFiles.Add(fileName, new Tuple<string, string>(pascalCase, extension));
         else
             Console.WriteLine(fileName + " " + filePath);
     }
 
-    foreach (Match match in new Regex("(uid:)(.*\\s)", RegexOptions.IgnoreCase | RegexOptions.Multiline).Matches(input))
+    foreach (Match match in new Regex(@"(uid:\W)(.*\s)", RegexOptions.IgnoreCase | RegexOptions.Multiline).Matches(input))
     {
         if (match.Success)
         {
             var key = match.Groups[2].Value.Trim();
             if (!fileUids.TryGetValue(key, out _))
-                fileUids.Add(key, new Tuple<string, string>(filePath, str));
+                fileUids.Add(key, new Tuple<string, string>(filePath, extension));
             else
                 Console.WriteLine(key + " " + filePath);
         }

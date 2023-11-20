@@ -9,8 +9,6 @@ varigenceArticleType: Conceptual
 
 [!include[Versions](../concepts/_incl-header-version.md)]
 
-[!include[Versions](_incl-header-version.md)]
-
 ## Overview
 
 <img class="icon-inline" src="images/svg-icons/versions.svg" /> **Versions** can be found under Administration in the application menu.

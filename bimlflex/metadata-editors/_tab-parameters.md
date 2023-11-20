@@ -1,3 +1,10 @@
+---
+uid: bimlflex-includes-parameters-tab
+title: Parameters Tab
+summary: Documentation regarding the Parameters Tab
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
+---
 ### Action Buttons
 
 All **Parameters** assigned to the current entity show here.  New items can be entered entered via the <img class="icon-inline" src="images/svg-icons/add.svg" /> **Add** action button.  Existing items can be edited by clicking the `Value` field to select the **Parameters** and using the <img class="icon-inline" src="images/svg-icons/edit.svg" /> **Edit** action button.  Various [navigational transitions](#navigational-transitions) are available on this form and outlined below.

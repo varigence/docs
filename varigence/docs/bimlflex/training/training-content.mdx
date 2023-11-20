@@ -1,8 +1,28 @@
 ---
-uid: bimlflex-training-content
 title: BimlFlex Training Content
-summary: Guide on working with BimlFlex. Meant to be generated as hand-out.
+description: Guide on working with BimlFlex. Meant to be generated as hand-out.
 ---
+
+import InclHeaderCustomer from '../concepts/_incl-header-customer.md';
+import InclHeaderDeleteDetection from '../concepts/_incl-header-delete-detection.md';
+import InclHeaderExtensionPoint from '../concepts/_incl-header-extension-point.md';
+import InclHeaderMetadataImport from '../concepts/_incl-header-metadata-import.md';
+import InclHeaderVersion from '../concepts/_incl-header-version.md';
+import BimlflexComponentsOverview from '../getting-started/bimlflex-components-overview.md';
+import InclHeaderAccelerator from '../metadata-editors/_incl-header-accelerator.md';
+import InclHeaderAttribute from '../metadata-editors/_incl-header-attribute.md';
+import InclHeaderBatch from '../metadata-editors/_incl-header-batch.md';
+import InclHeaderBimlflexApp from '../metadata-editors/_incl-header-bimlflex-app.md';
+import InclHeaderBusinessModeling from '../metadata-editors/_incl-header-business-modeling.md';
+import InclHeaderConfiguration from '../metadata-editors/_incl-header-configuration.md';
+import InclHeaderConnection from '../metadata-editors/_incl-header-connection.md';
+import InclHeaderDashboard from '../metadata-editors/_incl-header-dashboard.md';
+import InclHeaderObject from '../metadata-editors/_incl-header-object.md';
+import InclHeaderParameter from '../metadata-editors/_incl-header-parameter.md';
+import InclHeaderProject from '../metadata-editors/_incl-header-project.md';
+import InclHeaderSchemaDiagram from '../metadata-editors/_incl-header-schema-diagram.md';
+import InclHeaderSetting from '../metadata-editors/_incl-header-setting.md';
+
 # BimlFlex Training Manual
 
 This guide provides an end-to-end overview of the BimlFlex design process.
@@ -11,39 +31,39 @@ The guide covers the components that make up the BimlFlex ecosystem, and how to 
 
 Detailed modeling and customization to cater for specific requirements are outlined in the customization sections at the end of this guide.
 
-[!include[Components](../getting-started/bimlflex-components-overview.md)]
+<BimlflexComponentsOverview />
 
 # Essential Concepts
 
 ## Dashboard
 
-[!include[Dashboard](../metadata-editors/_incl-header-dashboard.md)]
+<InclHeaderDashboard />
 
 ## Customers
 
-[!include[Customers](../concepts/_incl-header-customer.md)]
+<InclHeaderCustomer />
 
 ## Versions
 
-[!include[Versions](../concepts/_incl-header-version.md)]
+<InclHeaderVersion />
 
 ## BimlFlex App
 
-[!include[BimlFlex](../metadata-editors/_incl-header-bimlflex-app.md)]
+<InclHeaderBimlflexApp />
 
 # Connections, Batches and Projects
 
 ## Connections
 
-[!include[Connections](../metadata-editors/_incl-header-connection.md)]
+<InclHeaderConnection />
 
 ## Batches
 
-[!include[Batches](../metadata-editors/_incl-header-batch.md)]
+<InclHeaderBatch />
 
 ## Projects
 
-[!include[Projects](../metadata-editors/_incl-header-project.md)]
+<InclHeaderProject />
 
 # Solution Design
 
@@ -55,23 +75,23 @@ This section covers the main design features that BimlFlex provides.
 
 ## Business Modeling
 
-[!include[BusinessModeling](../metadata-editors/_incl-header-business-modeling.md)]
+<InclHeaderBusinessModeling />
 
 ## Importing Metadata
 
-[!include[Versions](../concepts/_incl-header-metadata-import.md)]
+<InclHeaderMetadataImport />
 
 ## Data Vault Accelerator
 
-[!include[Accelerator](../metadata-editors/_incl-header-accelerator.md)]
+<InclHeaderAccelerator />
 
 ## Schema Diagram
 
-[!include[SchemaDiagram](../metadata-editors/_incl-header-schema-diagram.md)]
+<InclHeaderSchemaDiagram />
 
 ## Object Editor
 
-[!include[Objects](../metadata-editors/_incl-header-object.md)]
+<InclHeaderObject />
 
 # Advanced Customization
 
@@ -81,23 +101,23 @@ BimlFlex offers a wide array of customization mechanisms that allow specific twe
 
 ## Configurations
 
-[!include[Configurations](../metadata-editors/_incl-header-configuration.md)]
+<InclHeaderConfiguration />
 
 ## Settings
 
-[!include[Settings](../metadata-editors/_incl-header-setting.md)]
+<InclHeaderSetting />
 
 ## Parameters
 
-[!include[Parameters](../metadata-editors/_incl-header-parameter.md)]
+<InclHeaderParameter />
 
 ## Attributes
 
-[!include[Attributes](../metadata-editors/_incl-header-attribute.md)]
+<InclHeaderAttribute />
 
 ## Extension Points
 
-[!include[ExtensionPoints](../concepts/_incl-header-extension-point.md)]
+<InclHeaderExtensionPoint />
 
 # Notable Features
 
@@ -105,7 +125,7 @@ Besides the support for bringing together disparate data sets into an integrated
 
 ## Delete Detection
 
-[!include[DeleteDetection](../concepts/_incl-header-delete-detection.md)]
+<InclHeaderDeleteDetection />
 
 # Getting Started With BimlFlex
 
@@ -113,6 +133,6 @@ So far, a comprehensive overview of BimlFlex has been provided. The next step is
 
 The following resources have been made available for this:
 
-* [Configuring BimlFlex](xref:bimlflex-getting-started-initial-configuration)
-* [Sample Solutions](xref:bimlflex-sample-metadata)
-* A [First BimlFlex Solution Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough)
+* [Configuring BimlFlex](bimlflex-getting-started-initial-configuration)
+* [Sample Solutions](bimlflex-sample-metadata)
+* A [First BimlFlex Solution Walkthrough](bimlflex-getting-started-first-project-walkthrough)

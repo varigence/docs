@@ -99,11 +99,11 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '389'),
+    component: ComponentCreator('/docs', '5b1'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '3e7'),
+        component: ComponentCreator('/docs', 'b27'),
         routes: [
           {
             path: '/docs/tags',
@@ -137,2402 +137,3001 @@ export default [
           },
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'a53'),
+            component: ComponentCreator('/docs', 'ee0'),
             routes: [
               {
                 path: '/docs/bimlflex/',
-                component: ComponentCreator('/docs/bimlflex/', '516'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/', 'bf3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/build-and-deployment/',
-                component: ComponentCreator('/docs/bimlflex/build-and-deployment/', '99d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/build-and-deployment/', '9de'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/build-and-deployment/build-bimlstudio-project',
-                component: ComponentCreator('/docs/bimlflex/build-and-deployment/build-bimlstudio-project', '0af'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/build-and-deployment/build-bimlstudio-project', '47e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/build-and-deployment/command-line-build',
-                component: ComponentCreator('/docs/bimlflex/build-and-deployment/command-line-build', 'aef'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/build-and-deployment/command-line-build', '765'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/build-and-deployment/concurrent-development',
-                component: ComponentCreator('/docs/bimlflex/build-and-deployment/concurrent-development', 'fa5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/build-and-deployment/concurrent-development', 'dd4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery',
-                component: ComponentCreator('/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery', '4dc'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery', '63a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/build-and-deployment/generating-ddl',
-                component: ComponentCreator('/docs/bimlflex/build-and-deployment/generating-ddl', 'd7b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/build-and-deployment/generating-ddl', 'a51'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/build-and-deployment/setup-bimlstudio-project',
-                component: ComponentCreator('/docs/bimlflex/build-and-deployment/setup-bimlstudio-project', '37b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/build-and-deployment/setup-bimlstudio-project', 'd1d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/build-and-deployment/ssdt-project',
-                component: ComponentCreator('/docs/bimlflex/build-and-deployment/ssdt-project', '294'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/build-and-deployment/ssdt-project', 'fad'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/',
-                component: ComponentCreator('/docs/bimlflex/concepts/', '57d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/', 'e4a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/customer',
-                component: ComponentCreator('/docs/bimlflex/concepts/customer', 'e45'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/customer', '7cc'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/delete-detection',
-                component: ComponentCreator('/docs/bimlflex/concepts/delete-detection', '582'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/delete-detection', 'f95'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/extension-points',
-                component: ComponentCreator('/docs/bimlflex/concepts/extension-points', '9fe'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/extension-points', '8b6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/hashing',
-                component: ComponentCreator('/docs/bimlflex/concepts/hashing', 'a0c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/hashing', 'f9e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/importing-metadata',
-                component: ComponentCreator('/docs/bimlflex/concepts/importing-metadata', '2ae'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/importing-metadata', '8dd'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/integration-keys',
-                component: ComponentCreator('/docs/bimlflex/concepts/integration-keys', '2f1'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/integration-keys', 'f18'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/load-parameters',
-                component: ComponentCreator('/docs/bimlflex/concepts/load-parameters', '219'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/load-parameters', '100'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/model-overrides',
-                component: ComponentCreator('/docs/bimlflex/concepts/model-overrides', '9d6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/model-overrides', '9d8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/staged-query',
-                component: ComponentCreator('/docs/bimlflex/concepts/staged-query', '920'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/staged-query', '915'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/concepts/versions',
-                component: ComponentCreator('/docs/bimlflex/concepts/versions', 'c8f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/concepts/versions', '1d8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-marts/',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/', '9fa'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/', 'a22'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-marts/data-mart-configuration',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/data-mart-configuration', 'b7a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/data-mart-configuration', 'e5f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-marts/data-mart-overrides',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/data-mart-overrides', '256'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/data-mart-overrides', '2dd'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-marts/dimension-pattern',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/dimension-pattern', '0e5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/dimension-pattern', '042'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-marts/fact-pattern',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/fact-pattern', '1ab'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-marts/fact-pattern', '189'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/', '489'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/', '01e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault', '959'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault', 'b0e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-best-practices',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-best-practices', '07f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-best-practices', 'a96'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault', '3a8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault', 'f1d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-concept-hub',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-hub', '047'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-hub', '505'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-concept-integration-keys',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-integration-keys', 'f4e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-integration-keys', '7b8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-concept-link',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-link', 'd45'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-link', 'fb5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-concept-reference-data',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-reference-data', 'c79'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-reference-data', 'eaa'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-concept-satellite',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-satellite', '66c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-satellite', 'd1a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-concept-zero-records',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-zero-records', 'e3c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-concept-zero-records', '0a9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-dimensional-model',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-dimensional-model', '020'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-dimensional-model', 'f37'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge', '02d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge', 'ba0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-implementation-pit',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-implementation-pit', 'cbf'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-implementation-pit', 'e69'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/data-vault-introduction',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-introduction', 'e4d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/data-vault-introduction', '21f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/driving-keys-in-data-vault',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/driving-keys-in-data-vault', '8a4'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/driving-keys-in-data-vault', '626'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/hashing-in-data-vault',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/hashing-in-data-vault', 'b18'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/hashing-in-data-vault', '3a1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault',
-                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault', '54b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault', '61a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-staging/',
-                component: ComponentCreator('/docs/bimlflex/delivering-staging/', '008'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-staging/', '245'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/delivering-staging/persistent-staging-area',
-                component: ComponentCreator('/docs/bimlflex/delivering-staging/persistent-staging-area', '2ca'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/delivering-staging/persistent-staging-area', '1be'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/docs-gen/',
-                component: ComponentCreator('/docs/bimlflex/docs-gen/', '586'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/docs-gen/', 'fdb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/getting-started/',
-                component: ComponentCreator('/docs/bimlflex/getting-started/', 'a23'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/getting-started/', 'ada'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/getting-started/bimlflex-components-overview',
-                component: ComponentCreator('/docs/bimlflex/getting-started/bimlflex-components-overview', '25c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/getting-started/bimlflex-components-overview', 'a77'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/getting-started/first-project-walkthrough',
-                component: ComponentCreator('/docs/bimlflex/getting-started/first-project-walkthrough', 'cde'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/getting-started/first-project-walkthrough', '6f4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/getting-started/initial-configuration',
-                component: ComponentCreator('/docs/bimlflex/getting-started/initial-configuration', '4eb'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/getting-started/initial-configuration', '108'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/getting-started/intro-videos',
-                component: ComponentCreator('/docs/bimlflex/getting-started/intro-videos', '10d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/getting-started/intro-videos', 'ae2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/getting-started/sample-metadata',
-                component: ComponentCreator('/docs/bimlflex/getting-started/sample-metadata', 'b30'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/getting-started/sample-metadata', '6f3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/',
-                component: ComponentCreator('/docs/bimlflex/installation/', 'f32'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/', '3e8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/change-excel-bitness-bimlflex',
-                component: ComponentCreator('/docs/bimlflex/installation/change-excel-bitness-bimlflex', 'c1b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/change-excel-bitness-bimlflex', '4ba'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/installing-bimlcatalog-database',
-                component: ComponentCreator('/docs/bimlflex/installation/installing-bimlcatalog-database', '819'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/installing-bimlcatalog-database', 'fd8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/installing-bimlflex',
-                component: ComponentCreator('/docs/bimlflex/installation/installing-bimlflex', '741'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/installing-bimlflex', '467'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/installing-build-server',
-                component: ComponentCreator('/docs/bimlflex/installation/installing-build-server', 'e5a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/installing-build-server', '74e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/installing-developer-tools',
-                component: ComponentCreator('/docs/bimlflex/installation/installing-developer-tools', '040'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/installing-developer-tools', '42f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/installing-metadata-database',
-                component: ComponentCreator('/docs/bimlflex/installation/installing-metadata-database', 'd8f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/installing-metadata-database', '054'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/installing-ssis-server',
-                component: ComponentCreator('/docs/bimlflex/installation/installing-ssis-server', '85a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/installing-ssis-server', 'aaa'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/system-requirements',
-                component: ComponentCreator('/docs/bimlflex/installation/system-requirements', 'eab'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/system-requirements', '82b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/installation/upgrade-process',
-                component: ComponentCreator('/docs/bimlflex/installation/upgrade-process', '652'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/installation/upgrade-process', 'ac0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/', '0a3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/', '7ce'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/accelerator',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/accelerator', 'f4b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/accelerator', 'a5f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/attribute-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/attribute-editor', '5a1'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/attribute-editor', '7b8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/batches',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/batches', '146'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/batches', 'aec'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/bimlflex-tour',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/bimlflex-tour', 'be1'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/bimlflex-tour', 'c1a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/business-modeling',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/business-modeling', '9b6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/business-modeling', '813'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/column-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/column-editor', '20c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/column-editor', '339'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/configuration-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/configuration-editor', '1a0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/configuration-editor', '039'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/connection-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/connection-editor', '729'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/connection-editor', '802'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/customers',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/customers', 'aa3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/customers', '855'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/dashboard',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/dashboard', '13a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/dashboard', '2fe'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/data-lineage',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/data-lineage', '622'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/data-lineage', 'bad'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/data-type-mappings',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/data-type-mappings', '296'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/data-type-mappings', '808'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/database-settings',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/database-settings', 'df0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/database-settings', '1fd'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/excel-add-in',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/excel-add-in', 'd4a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/excel-add-in', '983'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/object-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/object-editor', '978'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/object-editor', '8ba'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/operational-reports',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/operational-reports', '4f0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/operational-reports', '58f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/parameter-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/parameter-editor', 'a66'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/parameter-editor', '841'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/project-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/project-editor', '911'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/project-editor', '4e9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/schema-diagram',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/schema-diagram', '66a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/schema-diagram', '0cb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/setting-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/setting-editor', '438'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/setting-editor', 'e87'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/treeview',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/treeview', 'ec8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/treeview', '13a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/metadata-editors/version-editor',
-                component: ComponentCreator('/docs/bimlflex/metadata-editors/version-editor', '5a6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/metadata-editors/version-editor', '57e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/orchestration/',
-                component: ComponentCreator('/docs/bimlflex/orchestration/', '63e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/orchestration/', 'c42'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/orchestration/orchestration-ssis',
-                component: ComponentCreator('/docs/bimlflex/orchestration/orchestration-ssis', '9f5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/orchestration/orchestration-ssis', '5dd'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/patterns/source-to-staging-pattern',
-                component: ComponentCreator('/docs/bimlflex/patterns/source-to-staging-pattern', 'f98'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/patterns/source-to-staging-pattern', 'ba3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/', '7a7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/', '2a9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/data-type-conversions',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/data-type-conversions', 'a6f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/data-type-conversions', 'dcb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Batch',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Batch', 'd6a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Batch', '040'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Column',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Column', '348'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Column', '1c8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Configuration',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Configuration', 'cc2'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Configuration', '779'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Connection',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Connection', 'a8a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Connection', '1c9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Customer',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Customer', 'cf8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Customer', 'bee'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/DataTypeMapping',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/DataTypeMapping', '675'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/DataTypeMapping', '9d3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Object',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Object', '1e7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Object', '6c6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Parameter',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Parameter', '59f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Parameter', '738'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Project',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Project', '12f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Project', 'f24'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Setting',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Setting', '1a6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Setting', '7f9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/entities/Version',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Version', '98c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/entities/Version', 'd26'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Azure',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Azure', '20f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Azure', '185'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Batch',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Batch', '7b2'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Batch', 'b50'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Connection',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Connection', '8dd'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Connection', '607'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Data-Factory',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Data-Factory', 'ded'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Data-Factory', 'f2a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Data-Mart',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Data-Mart', 'a97'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Data-Mart', 'f17'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Data-Vault',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Data-Vault', '4b1'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Data-Vault', '1ad'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Global',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Global', '028'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Global', 'e4b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows', 'b1c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows', '9a1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Object',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Object', '89b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Object', '00c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Project',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Project', '6e4'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Project', 'fb7'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/extension-points/Staging-Sql',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Staging-Sql', '334'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/extension-points/Staging-Sql', 'd90'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/metadata-configurations',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/metadata-configurations', 'aad'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/metadata-configurations', '7e5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/metadata-static-values',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/metadata-static-values', 'a8c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/metadata-static-values', '5cf'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/reference-documentation-entities-index',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/reference-documentation-entities-index', 'a5f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/reference-documentation-entities-index', 'c97'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index', '858'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index', 'eea'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/reference-documentation-settings-index',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/reference-documentation-settings-index', 'afe'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/reference-documentation-settings-index', 'f1b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/7ZipPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/7ZipPath', 'da8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/7ZipPath', '4c9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey', '588'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey', '0c4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AddRowHashKeyIndex',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AddRowHashKeyIndex', 'cc7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AddRowHashKeyIndex', '963'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AddSqlDefaults',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AddSqlDefaults', 'ef5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AddSqlDefaults', 'f15'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendBatchName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendBatchName', '6ab'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendBatchName', '556'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendIntegrationKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendIntegrationKey', '7a8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendIntegrationKey', '471'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendLoadFromPsaName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendLoadFromPsaName', '110'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendLoadFromPsaName', '1de'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendNameExternal',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendNameExternal', 'e4b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendNameExternal', '285'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendNameLanding',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendNameLanding', '51b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendNameLanding', 'c17'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendProcedureName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendProcedureName', '761'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendProcedureName', '637'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendRecordSource',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendRecordSource', '0c5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendRecordSource', '03f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendSchemaDm',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSchemaDm', '023'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSchemaDm', '5b6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendSchemaDv',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSchemaDv', '147'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSchemaDv', '599'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendSchemaPsa',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSchemaPsa', 'c6f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSchemaPsa', 'b51'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendSchemaStg',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSchemaStg', '622'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSchemaStg', '57a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AppendSurrogateKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSurrogateKey', '444'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AppendSurrogateKey', 'fc1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappingDv',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappingDv', 'f83'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappingDv', '9c9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappingStg',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappingStg', '7b0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappingStg', '2cc'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ApplyExtractConversionInDataFlow',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyExtractConversionInDataFlow', '57c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyExtractConversionInDataFlow', '617'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDm',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDm', '26d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDm', 'dc0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDv',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDv', '95d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDv', '5b6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ApplyNamingConvention',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyNamingConvention', '7f8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ApplyNamingConvention', '58b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ArchiveImport',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ArchiveImport', '147'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ArchiveImport', '95f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ArchivePath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ArchivePath', '0d5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ArchivePath', '811'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ArchiveRetentionPeriod',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ArchiveRetentionPeriod', '4c9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ArchiveRetentionPeriod', '7ef'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyCapMbps',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyCapMbps', 'f47'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyCapMbps', '378'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyConcurrency',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyConcurrency', 'dca'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyConcurrency', 'a31'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyCreateContainer',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyCreateContainer', '0b6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyCreateContainer', 'be6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyEnabled',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyEnabled', 'c92'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyEnabled', 'ed3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyLogLevel',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyLogLevel', 'd76'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyLogLevel', 'acc'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyLogLocation',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyLogLocation', '2b4'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyLogLocation', 'a27'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyPath', '2ef'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyPath', 'c00'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopySetEnvironmentVariables',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopySetEnvironmentVariables', 'db2'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopySetEnvironmentVariables', '207'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyUseSasToken',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyUseSasToken', 'd41'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyUseSasToken', '8ec'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzCopyVersion',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyVersion', '3f3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzCopyVersion', '1b7'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountKey', '052'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountKey', '257'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountName', 'c42'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountName', '0ad'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureArchiveContainer',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveContainer', '410'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveContainer', '4e3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureArchiveLandingFiles',
                 component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveLandingFiles', 'ce4'),
-                exact: true
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureArchiveSasToken',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveSasToken', '4c6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveSasToken', '6eb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureArchiveStage',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveStage', '89a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureArchiveStage', 'bce'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureBlobStorageDomain',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureBlobStorageDomain', '99b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureBlobStorageDomain', '6ca'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyDataIntegrationUnits',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyDataIntegrationUnits', '129'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyDataIntegrationUnits', '2d1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyEnableLogging',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyEnableLogging', '053'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyEnableLogging', '8f3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyEnableStaging',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyEnableStaging', 'ea0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyEnableStaging', '4fa'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyLogSettings',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyLogSettings', 'b71'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyLogSettings', '61c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyMethod',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyMethod', '673'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyMethod', '6b4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyParallelCopies',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyParallelCopies', 'b21'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyParallelCopies', 'fc1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyRetryAttempts',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyRetryAttempts', '8bf'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyRetryAttempts', '7d9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyRetryInterval',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyRetryInterval', 'c42'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyRetryInterval', 'd79'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopySecureInput',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopySecureInput', '897'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopySecureInput', 'b9d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopySecureOutput',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopySecureOutput', '2ba'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopySecureOutput', '70d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyStagingSettings',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyStagingSettings', 'a63'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyStagingSettings', '9cd'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyTimeout',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyTimeout', '545'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyTimeout', 'd6d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency', '97c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency', '6a2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCreateDummyFile',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCreateDummyFile', '3a3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCreateDummyFile', '0b3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureCreateExternalOnStage',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCreateExternalOnStage', '590'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureCreateExternalOnStage', '936'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureDataFactoryName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDataFactoryName', '128'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDataFactoryName', 'e78'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles', 'ce7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles', 'b53'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountKey', '479'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountKey', '9dc'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountName', '618'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountName', '6cd'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureDeploymentContainer',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentContainer', '9f7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentContainer', 'a1b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureDeploymentEmitPowerShellCheck',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentEmitPowerShellCheck', '823'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentEmitPowerShellCheck', 'ca9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureDeploymentSasToken',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentSasToken', 'ba5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureDeploymentSasToken', '7a1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureErrorAccountKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureErrorAccountKey', '278'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureErrorAccountKey', '0c9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureErrorAccountName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureErrorAccountName', '067'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureErrorAccountName', '452'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureErrorContainer',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureErrorContainer', '583'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureErrorContainer', '9fb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureErrorSasToken',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureErrorSasToken', '146'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureErrorSasToken', '9e3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureExternalFileConversion',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureExternalFileConversion', '0ca'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureExternalFileConversion', '79a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureExternalFileFormat',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureExternalFileFormat', 'e29'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureExternalFileFormat', '85c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFileCompressionCodec',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileCompressionCodec', 'cfd'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileCompressionCodec', 'de3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFileCompressionLevel',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileCompressionLevel', '351'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileCompressionLevel', '6b5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFileEncodingName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileEncodingName', '88f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileEncodingName', 'c73'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFileNamingConvention',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileNamingConvention', '2b7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileNamingConvention', '2fc'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFileNullValue',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileNullValue', '094'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFileNullValue', '5bb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFolderNamingConvention',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFolderNamingConvention', 'fb3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFolderNamingConvention', '909'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKey', '564'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKey', 'fac'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName', '453'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName', '55a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecret',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecret', '008'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecret', 'cd2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecretVersion',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecretVersion', '71d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecretVersion', '5a5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeName', 'a0a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeName', '95c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeUseKeyVault',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeUseKeyVault', '43f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeUseKeyVault', 'f0d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntime',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntime', '2dd'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntime', '0a6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntimeIsShared',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntimeIsShared', 'c90'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntimeIsShared', '701'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntimeResourceId',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntimeResourceId', '9c6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntimeResourceId', '4f5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureKeyVault',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureKeyVault', '538'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureKeyVault', '429'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureOnErrorLandingFiles',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureOnErrorLandingFiles', '1ff'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureOnErrorLandingFiles', '286'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzurePolybaseSettings',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzurePolybaseSettings', 'ebc'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzurePolybaseSettings', 'cab'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureResourceGroup',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureResourceGroup', '97d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureResourceGroup', '6ed'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables', '8bc'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables', 'b97'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureStageAccountKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageAccountKey', 'd4a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageAccountKey', '14b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureStageAccountName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageAccountName', '11a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageAccountName', '678'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureStageContainer',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageContainer', '66a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageContainer', '07e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract', '128'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract', '9b0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureStageSasToken',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageSasToken', 'e67'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureStageSasToken', '806'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/AzureSubscriptionId',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureSubscriptionId', '346'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/AzureSubscriptionId', 'fe4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/BmNamingConvention',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/BmNamingConvention', '9f1'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/BmNamingConvention', '08c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/BmUseShortNames',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/BmUseShortNames', 'b3d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/BmUseShortNames', 'a2c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ChangeReferencesToIntegrationKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ChangeReferencesToIntegrationKey', '0d0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ChangeReferencesToIntegrationKey', '2a2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ConfigurationPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConfigurationPath', '6b7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConfigurationPath', '446'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ConstraintModeDm',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConstraintModeDm', 'd49'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConstraintModeDm', '82a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ConstraintModeDv',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConstraintModeDv', '5e9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConstraintModeDv', '27c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ConstraintModeStg',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConstraintModeStg', '72e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConstraintModeStg', 'ec2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ConvertGuidToString',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConvertGuidToString', '770'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ConvertGuidToString', '328'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyDv',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyDv', 'ef3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyDv', 'a4b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa', '08d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa', '200'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DeleteDetectionEnabled',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteDetectionEnabled', '100'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteDetectionEnabled', 'd6c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DeleteImportFile',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteImportFile', 'a34'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteImportFile', '098'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DeleteObjectNamePattern',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteObjectNamePattern', '757'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteObjectNamePattern', '6b7'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DeleteSchemaNamePattern',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteSchemaNamePattern', 'b84'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DeleteSchemaNamePattern', '7fb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DisableStgPsaOnly',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisableStgPsaOnly', '41a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisableStgPsaOnly', '61f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameDm',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameDm', 'bc9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameDm', 'e82'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameDv',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameDv', 'd1d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameDv', '3a9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameStg',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameStg', '01d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameStg', 'd22'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDm',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDm', '1fe'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDm', 'a1f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDv',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDv', '257'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDv', '389'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameStg',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameStg', '6d9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameStg', '91d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DmAppendDim',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmAppendDim', '882'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmAppendDim', '51f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DmAppendFact',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmAppendFact', 'c6f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmAppendFact', '413'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DmAppendStaging',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmAppendStaging', '334'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmAppendStaging', '7a4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DmInferDim',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmInferDim', '1fb'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmInferDim', 'b13'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DmStageOnInitialLoad',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmStageOnInitialLoad', 'd58'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DmStageOnInitialLoad', 'f2c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames', 'ef6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames', '1bc'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateHubKeys',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateHubKeys', '3b7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateHubKeys', '01b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkIntegrationKeys',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkIntegrationKeys', '0f7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkIntegrationKeys', '62f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkKeys',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkKeys', 'fa3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkKeys', '30c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatellite',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatellite', '6ec'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatellite', '454'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys', '303'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys', '2c4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateShowColumns',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateShowColumns', 'd6f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateShowColumns', '3b7'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateShowExpanded',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateShowExpanded', 'cca'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateShowExpanded', 'e28'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks', 'd93'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks', '319'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendBridge',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendBridge', 'b5d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendBridge', 'aa2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendHierarchyLink',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendHierarchyLink', '9ab'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendHierarchyLink', 'de9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendHub',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendHub', '871'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendHub', '74d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendLink',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendLink', '54b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendLink', 'def'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendLinkSatellite',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendLinkSatellite', '057'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendLinkSatellite', '804'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendLinkSatelliteRecordSource',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendLinkSatelliteRecordSource', '064'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendLinkSatelliteRecordSource', 'a43'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendPointInTime',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendPointInTime', '321'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendPointInTime', 'ab8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendReference',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendReference', 'd7e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendReference', 'c78'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendSameAsLink',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendSameAsLink', '852'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendSameAsLink', '553'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvAppendSatellite',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendSatellite', 'ac1'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvAppendSatellite', '550'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvBridgeLagDays',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvBridgeLagDays', 'aa8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvBridgeLagDays', '125'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvDefaultSchema',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvDefaultSchema', 'ae2'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvDefaultSchema', 'f36'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvEltDeltaIsDerived',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvEltDeltaIsDerived', '068'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvEltDeltaIsDerived', 'bac'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvEndDateSatellite',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvEndDateSatellite', 'd23'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvEndDateSatellite', 'a9f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvInferLinkHub',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvInferLinkHub', '105'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvInferLinkHub', 'b50'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvNamingConvention',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvNamingConvention', '06e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvNamingConvention', '4aa'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvParallelProcessing',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvParallelProcessing', '34d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvParallelProcessing', '49a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvPitLagDays',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvPitLagDays', 'abd'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvPitLagDays', 'b8e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvPrefixSurrogateKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvPrefixSurrogateKey', '259'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvPrefixSurrogateKey', 'dd5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvPreviewSchema',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvPreviewSchema', 'ef4'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvPreviewSchema', '0ce'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvProcessOnStage',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvProcessOnStage', '28e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvProcessOnStage', 'bb3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvSingleChangeSatellite',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvSingleChangeSatellite', 'fde'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvSingleChangeSatellite', '2c9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvStageSurrogateKeys',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvStageSurrogateKeys', '838'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvStageSurrogateKeys', '0b1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvUseCacheLookup',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvUseCacheLookup', '25d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvUseCacheLookup', '9ec'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvUseHashKeys',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvUseHashKeys', '904'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvUseHashKeys', 'ec8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvUseTransactions',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvUseTransactions', 'cb9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvUseTransactions', '8eb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/DvUseWhereExists',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvUseWhereExists', '191'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/DvUseWhereExists', 'da3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/EnableEndDatePsa',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/EnableEndDatePsa', '398'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/EnableEndDatePsa', 'dc9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/EnableRollbackDv',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/EnableRollbackDv', 'bf6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/EnableRollbackDv', 'bbb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/EnableRollbackPsa',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/EnableRollbackPsa', '42b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/EnableRollbackPsa', 'c1b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/EnableRollbackStg',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/EnableRollbackStg', 'd4a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/EnableRollbackStg', 'f33'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ExportPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ExportPath', '7a4'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ExportPath', 'eab'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ExtractFileEncoding',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ExtractFileEncoding', '641'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ExtractFileEncoding', 'e6d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ExtractFileSplitSize',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ExtractFileSplitSize', '51f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ExtractFileSplitSize', '48b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/GlobalDefaultDate',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/GlobalDefaultDate', 'e44'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/GlobalDefaultDate', '825'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/HashAlgorithm',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/HashAlgorithm', '165'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/HashAlgorithm', '20b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/HashBinary',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/HashBinary', '58d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/HashBinary', '630'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/HashIntegrationKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/HashIntegrationKey', '7c3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/HashIntegrationKey', '9c3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/HashNullValue',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/HashNullValue', '8fb'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/HashNullValue', 'a32'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ImportPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ImportPath', '82f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ImportPath', '15d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ImportViews',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ImportViews', '4c3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ImportViews', '79d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom', 'da8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom', 'daf'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/IntegrationKeyColumnOrder',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/IntegrationKeyColumnOrder', '982'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/IntegrationKeyColumnOrder', '6ad'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/IntegrationKeyConcatenationOrder',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/IntegrationKeyConcatenationOrder', '3e5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/IntegrationKeyConcatenationOrder', 'c19'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/IntegrationKeyToUpper',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/IntegrationKeyToUpper', '9ac'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/IntegrationKeyToUpper', '4f5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/KeyEndsWith',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/KeyEndsWith', '227'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/KeyEndsWith', 'eff'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/LookupCachePath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/LookupCachePath', '315'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/LookupCachePath', 'c89'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/LookupTablePattern',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/LookupTablePattern', '8bd'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/LookupTablePattern', '657'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/NetCoreTargetsPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/NetCoreTargetsPath', '52d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/NetCoreTargetsPath', '830'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ObjectNamePattern',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ObjectNamePattern', 'a3b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ObjectNamePattern', '4bd'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PadIntegrationKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PadIntegrationKey', '781'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PadIntegrationKey', 'c85'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PersistHistory',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PersistHistory', 'bb2'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PersistHistory', 'a94'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaDeltaCollapseRows',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaCollapseRows', '5bf'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaCollapseRows', 'e79'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaDeltaDetectionSql',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaDetectionSql', '8cb'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaDetectionSql', 'cb9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaDeltaLateArriving',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaLateArriving', 'fa8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaLateArriving', '72a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaDeltaSingleChange',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaSingleChange', 'd29'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaSingleChange', '438'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows', '4d6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows', 'cc2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaEltDeltaIsDerived',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaEltDeltaIsDerived', '969'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaEltDeltaIsDerived', '179'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaMergeAllRows',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaMergeAllRows', 'd73'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaMergeAllRows', 'ef7'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaTemporalTableName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaTemporalTableName', '29a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaTemporalTableName', 'd62'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaTruncateIfHasRows',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaTruncateIfHasRows', '2fc'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaTruncateIfHasRows', 'a18'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/PsaUseCacheLookup',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaUseCacheLookup', 'e2c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/PsaUseCacheLookup', 'e24'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/RetainExistingMetadata',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/RetainExistingMetadata', '279'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/RetainExistingMetadata', '66c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/RootPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/RootPath', 'aaf'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/RootPath', '409'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SchemaNamePattern',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SchemaNamePattern', '671'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SchemaNamePattern', 'faa'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SelectBlobRowOrderBy',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SelectBlobRowOrderBy', 'd05'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SelectBlobRowOrderBy', '96b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SelectStageRowDistinct',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SelectStageRowDistinct', '775'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SelectStageRowDistinct', 'b0a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnapshotRetentionPeriod',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnapshotRetentionPeriod', '160'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnapshotRetentionPeriod', 'fe5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowDtOutputPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowDtOutputPath', 'd8b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowDtOutputPath', '606'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeAccount',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeAccount', '433'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeAccount', '529'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeAutoSuspend',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeAutoSuspend', '37b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeAutoSuspend', 'd3d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeDatabase',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeDatabase', 'ef0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeDatabase', '9ac'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeFileFormat',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeFileFormat', '608'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeFileFormat', 'c29'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakePassword',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakePassword', '756'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakePassword', '7b6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeRegion',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeRegion', '525'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeRegion', '19c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeRemoveStage',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeRemoveStage', '659'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeRemoveStage', '3fe'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeScaleDown',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeScaleDown', '2ed'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeScaleDown', '68d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeScaleDownSize',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeScaleDownSize', 'bc1'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeScaleDownSize', '11b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeScaleUp',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeScaleUp', 'b60'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeScaleUp', '231'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeScaleUpSize',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeScaleUpSize', '4ac'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeScaleUpSize', 'fe8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeSchema',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeSchema', '867'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeSchema', '5af'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeUser',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeUser', 'f15'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeUser', '130'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowflakeWarehouse',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeWarehouse', 'c99'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowflakeWarehouse', 'bb8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowSqlConfig',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowSqlConfig', '8c6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowSqlConfig', '89e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowSqlConnection',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowSqlConnection', '038'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowSqlConnection', '5d5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SnowSqlPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowSqlPath', '1af'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SnowSqlPath', '725'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SqlCmdOverride',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SqlCmdOverride', '3aa'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SqlCmdOverride', '3cc'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtDefaultCredential',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtDefaultCredential', '89f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtDefaultCredential', '4a0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtDefaultExternalDataSource',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtDefaultExternalDataSource', '124'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtDefaultExternalDataSource', '868'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtDefaultExternalFileFormat',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtDefaultExternalFileFormat', '349'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtDefaultExternalFileFormat', '469'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtDefaultMasterKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtDefaultMasterKey', 'a99'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtDefaultMasterKey', '087'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtIncludeCredential',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeCredential', 'd1c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeCredential', '098'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalDataSource',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalDataSource', '386'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalDataSource', 'a46'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat', 'a8c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat', '4e4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalTables',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalTables', '550'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalTables', 'eaa'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtIncludeMasterKey',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeMasterKey', 'e75'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeMasterKey', '92b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport', '517'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport', '92d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtOutputPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtOutputPath', '0ba'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtOutputPath', '4e9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtOverwriteExternalTableDefaults',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtOverwriteExternalTableDefaults', 'afe'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtOverwriteExternalTableDefaults', '6f9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings', 'ac4'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings', '196'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize', 'd4c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize', 'c82'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisBLOBTempStoragePath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisBLOBTempStoragePath', '2a9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisBLOBTempStoragePath', 'ca3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisBufferTempStoragePath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisBufferTempStoragePath', '33a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisBufferTempStoragePath', 'f7d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisCheckConstraints',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisCheckConstraints', '3ab'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisCheckConstraints', '1e1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisCommandTimeout',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisCommandTimeout', 'b59'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisCommandTimeout', 'c41'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisConvertDateWithScale',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisConvertDateWithScale', 'fc6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisConvertDateWithScale', '880'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisCreateFolder',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisCreateFolder', '303'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisCreateFolder', 'd61'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisDb',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisDb', 'bca'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisDb', '849'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows', 'f91'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows', '61d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferSize',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferSize', '123'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferSize', '003'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisDelayValidation',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisDelayValidation', '4df'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisDelayValidation', '78f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisEngineThreads',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisEngineThreads', '728'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisEngineThreads', '075'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisExpressUseUTF8DataConversion',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisExpressUseUTF8DataConversion', '54e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisExpressUseUTF8DataConversion', '590'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisFolder',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisFolder', '37a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisFolder', '022'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisHashNullValue',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisHashNullValue', '2d5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisHashNullValue', '29c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisMaxConcurrentExecutables',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisMaxConcurrentExecutables', '7aa'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisMaxConcurrentExecutables', 'bfe'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisMaximumInsertCommitSize',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisMaximumInsertCommitSize', '03b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisMaximumInsertCommitSize', '530'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisProcessSubfolders',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisProcessSubfolders', 'b35'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisProcessSubfolders', '98d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisRowsPerBatch',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisRowsPerBatch', '80e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisRowsPerBatch', '8f5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisServer',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisServer', '845'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisServer', 'e5a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SsisValidateExternalMetadata',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisValidateExternalMetadata', 'c9d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SsisValidateExternalMetadata', 'e84'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/StageBypassPsaChecks',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StageBypassPsaChecks', 'c16'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StageBypassPsaChecks', '598'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/StageColumnWithBusinessName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StageColumnWithBusinessName', '1e5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StageColumnWithBusinessName', 'ba4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/StageObjectWithBusinessName',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StageObjectWithBusinessName', 'be6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StageObjectWithBusinessName', '6ab'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/StageReduceLinkKeys',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StageReduceLinkKeys', '041'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StageReduceLinkKeys', '93e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/StringConcatenator',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StringConcatenator', '12c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/StringConcatenator', 'c8c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn', '5fc'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn', 'e31'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject', '073'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject', 'ba4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseBimlCatalog',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseBimlCatalog', 'dfb'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseBimlCatalog', 'e20'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseCustomComponents',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseCustomComponents', '24a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseCustomComponents', '6d2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsAppend',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsAppend', 'f74'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsAppend', '85c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsSchema',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsSchema', 'd28'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsSchema', '2f2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleHash',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleHash', 'c6e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleHash', '4f4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleRowHash',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleRowHash', '2ab'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleRowHash', '4a1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat', 'e60'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat', '966'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean', 'e05'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean', '3db'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/UseTryCastConversion',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseTryCastConversion', 'e06'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/UseTryCastConversion', '58b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ZipArchiveImport',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ZipArchiveImport', '28c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ZipArchiveImport', '20a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory', '951'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory', 'c60'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/reference-documentation/settings/ZipOutputFile',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ZipOutputFile', 'e34'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/ZipOutputFile', '78b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/',
-                component: ComponentCreator('/docs/bimlflex/release-notes/', 'd92'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/', 'c86'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/',
-                component: ComponentCreator('/docs/bimlflex/release-notes/', '4fa'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/', 'e52'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/new-features-2018.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2018.1', '7b3'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2018.1', 'f69'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/new-features-2018.2',
-                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2018.2', '0e0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2018.2', 'c45'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/new-features-2018.3',
-                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2018.3', 'bba'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2018.3', 'ec5'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/new-features-2019.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2019.1', 'de8'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2019.1', 'fde'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/new-features-2019.2',
-                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2019.2', '437'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2019.2', '2c6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/new-features-2020.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2020.1', 'e63'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2020.1', '3cb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/new-features-2022.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2022.1', 'cab'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/new-features-2022.1', 'f5d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/release-notes-2018.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2018.1', 'f7b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2018.1', '3b6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/release-notes-2019.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2019.1', 'ca5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2019.1', '4c4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/release-notes-2020.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2020.1', 'c3c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2020.1', '3c2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/release-notes-2020.2',
-                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2020.2', '545'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2020.2', '797'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/release-notes-2022.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2022.1', 'f35'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2022.1', '774'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/release-notes-2022.2',
-                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2022.2', '443'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2022.2', '570'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/release-notes-2022.3',
-                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2022.3', 'f19'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2022.3', '1d1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/release-notes/release-notes-2023.1',
-                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2023.1', '5db'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/release-notes/release-notes-2023.1', 'dac'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/',
-                component: ComponentCreator('/docs/bimlflex/scenarios/', 'd35'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/', 'e18'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/export-to-file',
-                component: ComponentCreator('/docs/bimlflex/scenarios/export-to-file', '837'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/export-to-file', '466'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/master-data-services',
-                component: ComponentCreator('/docs/bimlflex/scenarios/master-data-services', 'e1b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/master-data-services', '5d4'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/source-azure-postgres',
-                component: ComponentCreator('/docs/bimlflex/scenarios/source-azure-postgres', 'b5a'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/source-azure-postgres', '6c0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/source-cdc',
-                component: ComponentCreator('/docs/bimlflex/scenarios/source-cdc', '847'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/source-cdc', '095'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/source-excel-plus',
-                component: ComponentCreator('/docs/bimlflex/scenarios/source-excel-plus', '83c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/source-excel-plus', '093'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/source-flat-file',
-                component: ComponentCreator('/docs/bimlflex/scenarios/source-flat-file', 'c5c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/source-flat-file', '9d0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/source-odata',
-                component: ComponentCreator('/docs/bimlflex/scenarios/source-odata', 'bc5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/source-odata', '91e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/source-salesforce-rest-api',
-                component: ComponentCreator('/docs/bimlflex/scenarios/source-salesforce-rest-api', '4ba'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/source-salesforce-rest-api', 'a4e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/scenarios/source-stored-procedure',
-                component: ComponentCreator('/docs/bimlflex/scenarios/source-stored-procedure', '3b0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/scenarios/source-stored-procedure', 'be2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/support/',
-                component: ComponentCreator('/docs/bimlflex/support/', '3bb'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/support/', 'd4f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/support/check-installed-versions',
-                component: ComponentCreator('/docs/bimlflex/support/check-installed-versions', '44d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/support/check-installed-versions', 'd8a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/support/excel-metadata-addin',
-                component: ComponentCreator('/docs/bimlflex/support/excel-metadata-addin', '0ba'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/support/excel-metadata-addin', 'e3e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/support/setting-up-adventureworkslt2012-source-database',
-                component: ComponentCreator('/docs/bimlflex/support/setting-up-adventureworkslt2012-source-database', 'a7e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/support/setting-up-adventureworkslt2012-source-database', '710'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/support/support-process',
-                component: ComponentCreator('/docs/bimlflex/support/support-process', 'f51'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/support/support-process', '739'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/support/tips-and-tricks',
-                component: ComponentCreator('/docs/bimlflex/support/tips-and-tricks', '129'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/support/tips-and-tricks', '8e7'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/support/troubleshooting-tips',
-                component: ComponentCreator('/docs/bimlflex/support/troubleshooting-tips', 'f7b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/support/troubleshooting-tips', 'fd2'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/', 'f4d'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/', 'e54'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/adf-deployment',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/adf-deployment', '958'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/adf-deployment', '7b6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/azure-function-bridge',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/azure-function-bridge', 'cfe'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/azure-function-bridge', '313'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/bfx-arm-templates',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/bfx-arm-templates', 'ff9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/bfx-arm-templates', '6c9'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/continuous-integration-and-continuous-delivery',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/continuous-integration-and-continuous-delivery', '532'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/continuous-integration-and-continuous-delivery', 'eec'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/create-linked-service-connection',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/create-linked-service-connection', '158'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/create-linked-service-connection', '349'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/landing-area',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/landing-area', '480'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/landing-area', '6b3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-azure-mysql',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-azure-mysql', '67c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-azure-mysql', 'f31'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-azure-postgresql',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-azure-postgresql', 'ad9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-azure-postgresql', '187'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-blob-storage',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-blob-storage', 'bf5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-blob-storage', '960'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-datalake-gen-2',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-datalake-gen-2', '02c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-datalake-gen-2', '5b8'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-mysql',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-mysql', '8b2'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-mysql', '3fe'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-netezza',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-netezza', '08b'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-netezza', '735'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-oracle',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-oracle', 'c2e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-oracle', '83f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-postgresql',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-postgresql', '36c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-postgresql', 'bfe'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-sql-data-warehouse',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-sql-data-warehouse', '9b6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-sql-data-warehouse', '408'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-sql-database',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-sql-database', '477'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-sql-database', 'e9d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-sql-server',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-sql-server', 'bbb'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-sql-server', '047'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-sqlmi',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-sqlmi', '90c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-sqlmi', '125'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-adf-teradata',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-teradata', '750'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-adf-teradata', '814'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-azure-key-vault',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-azure-key-vault', 'b61'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-azure-key-vault', '590'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/linked-service-snowflake',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-snowflake', '2d0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/linked-service-snowflake', '1bb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/project-batch-structure-in-adf',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/project-batch-structure-in-adf', 'b13'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/project-batch-structure-in-adf', '9d0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/sensitive-info-management',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/sensitive-info-management', 'f32'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/sensitive-info-management', '916'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/using-azure-portal',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/using-azure-portal', 'da2'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/using-azure-portal', '716'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-adf/using-powershell',
-                component: ComponentCreator('/docs/bimlflex/technology-adf/using-powershell', '8c9'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-adf/using-powershell', 'bdf'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-data-flow/',
-                component: ComponentCreator('/docs/bimlflex/technology-data-flow/', '27c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-data-flow/', 'adb'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-delta-lake/',
-                component: ComponentCreator('/docs/bimlflex/technology-delta-lake/', '2f6'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-delta-lake/', '348'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-delta-lake/delta-vault',
-                component: ComponentCreator('/docs/bimlflex/technology-delta-lake/delta-vault', '48f'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-delta-lake/delta-vault', 'f94'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-snowflake/',
-                component: ComponentCreator('/docs/bimlflex/technology-snowflake/', '1b5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-snowflake/', '08e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-snowflake/implementing-snowflake-in-adf',
-                component: ComponentCreator('/docs/bimlflex/technology-snowflake/implementing-snowflake-in-adf', '6a0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-snowflake/implementing-snowflake-in-adf', '779'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-snowflake/snowflake-configuration',
-                component: ComponentCreator('/docs/bimlflex/technology-snowflake/snowflake-configuration', 'be5'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-snowflake/snowflake-configuration', 'db6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-snowflake/unsupported-snowflake-features',
-                component: ComponentCreator('/docs/bimlflex/technology-snowflake/unsupported-snowflake-features', '4c0'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-snowflake/unsupported-snowflake-features', 'dea'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-sql-server/',
-                component: ComponentCreator('/docs/bimlflex/technology-sql-server/', 'af4'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-sql-server/', '754'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/', '03c'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/', '1a1'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/concurrent-development',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/concurrent-development', 'a27'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/concurrent-development', '94a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery', '0a7'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery', 'b92'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/sensitive-info-management',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/sensitive-info-management', 'e01'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/sensitive-info-management', '1e0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/ssis-custom-components',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-custom-components', '5fb'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-custom-components', 'ffa'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/ssis-deployment',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-deployment', '07e'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-deployment', 'dae'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/ssis-deployment-wizard',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-deployment-wizard', '685'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-deployment-wizard', '671'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/ssis-on-prem-sql-server',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-on-prem-sql-server', '8f2'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-on-prem-sql-server', '137'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/ssis-server-installation',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-server-installation', '425'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/ssis-server-installation', 'c06'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-ssis/using-powershell',
-                component: ComponentCreator('/docs/bimlflex/technology-ssis/using-powershell', '1fd'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-ssis/using-powershell', 'd4b'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-synapse/',
-                component: ComponentCreator('/docs/bimlflex/technology-synapse/', '506'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-synapse/', 'db0'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-synapse/synapse-forward-only-approach',
-                component: ComponentCreator('/docs/bimlflex/technology-synapse/synapse-forward-only-approach', '756'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-synapse/synapse-forward-only-approach', 'd40'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/technology-synapse/synapse-implementation',
-                component: ComponentCreator('/docs/bimlflex/technology-synapse/synapse-implementation', '755'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/technology-synapse/synapse-implementation', 'a30'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/training/',
-                component: ComponentCreator('/docs/bimlflex/training/', 'e86'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/training/', '558'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
               },
               {
                 path: '/docs/bimlflex/training/training-content',
-                component: ComponentCreator('/docs/bimlflex/training/training-content', '0c4'),
-                exact: true
+                component: ComponentCreator('/docs/bimlflex/training/training-content', '351'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/bimlflex-app',
+                component: ComponentCreator('/docs/category/bimlflex-app', 'e1d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/bimlflex-for-azure-data-factory',
+                component: ComponentCreator('/docs/category/bimlflex-for-azure-data-factory', '94c'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/bimlflex-for-mapping-data-flows',
+                component: ComponentCreator('/docs/category/bimlflex-for-mapping-data-flows', '765'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/bimlflex-for-sql-server-integration-services',
+                component: ComponentCreator('/docs/category/bimlflex-for-sql-server-integration-services', 'f42'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/bimlflex-on-snowflake',
+                component: ComponentCreator('/docs/category/bimlflex-on-snowflake', 'b3f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/bimlflex-on-synapse',
+                component: ComponentCreator('/docs/category/bimlflex-on-synapse', '6cc'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/delivering-data-marts',
+                component: ComponentCreator('/docs/category/delivering-data-marts', 'fb6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/delivering-data-vault',
+                component: ComponentCreator('/docs/category/delivering-data-vault', 'd68'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/delivering-staging',
+                component: ComponentCreator('/docs/category/delivering-staging', 'd07'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/development-build--deployment',
+                component: ComponentCreator('/docs/category/development-build--deployment', '51d'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/getting-started',
+                component: ComponentCreator('/docs/category/getting-started', 'ec6'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/installation',
+                component: ComponentCreator('/docs/category/installation', '6d7'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/key-concepts-and-features',
+                component: ComponentCreator('/docs/category/key-concepts-and-features', '77a'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/orchestration',
+                component: ComponentCreator('/docs/category/orchestration', '910'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/other-bimlflex-connectivity',
+                component: ComponentCreator('/docs/category/other-bimlflex-connectivity', 'a2f'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/reference-docs',
+                component: ComponentCreator('/docs/category/reference-docs', 'ec3'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/release-notes',
+                component: ComponentCreator('/docs/category/release-notes', 'd5e'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/support-guide',
+                component: ComponentCreator('/docs/category/support-guide', '4bd'),
+                exact: true,
+                sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/category/tutorial---basics',
+                component: ComponentCreator('/docs/category/tutorial---basics', 'd44'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/category/tutorial---extras',
+                component: ComponentCreator('/docs/category/tutorial---extras', 'f09'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/intro',
-                component: ComponentCreator('/docs/tutorial/intro', '800'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/intro', '22a'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/tutorial-basics/congratulations',
-                component: ComponentCreator('/docs/tutorial/tutorial-basics/congratulations', '02d'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/congratulations', '338'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/docs/tutorial/tutorial-basics/create-a-blog-post', 'ff0'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/create-a-blog-post', 'b54'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/tutorial-basics/create-a-document',
-                component: ComponentCreator('/docs/tutorial/tutorial-basics/create-a-document', '6c3'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/create-a-document', '9a5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/tutorial-basics/create-a-page',
-                component: ComponentCreator('/docs/tutorial/tutorial-basics/create-a-page', '3ca'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/create-a-page', '4a8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/docs/tutorial/tutorial-basics/deploy-your-site', '5dc'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/deploy-your-site', 'e64'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/tutorial-basics/markdown-features',
-                component: ComponentCreator('/docs/tutorial/tutorial-basics/markdown-features', 'c1d'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/tutorial-basics/markdown-features', 'bc8'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/docs/tutorial/tutorial-extras/manage-docs-versions', '0b8'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/tutorial-extras/manage-docs-versions', '8b0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               },
               {
                 path: '/docs/tutorial/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/docs/tutorial/tutorial-extras/translate-your-site', '0ee'),
-                exact: true
+                component: ComponentCreator('/docs/tutorial/tutorial-extras/translate-your-site', 'cf2'),
+                exact: true,
+                sidebar: "tutorialSidebar"
               }
             ]
           }

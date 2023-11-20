@@ -1,10 +1,13 @@
 ---
-uid: bimlflex-includes-columns-tab
 title: Columns Tab details
-summary: Documentation regarding the Columns Tab
-varigenceProduct: BimlFlex
-varigenceArticleType: Reference
+description: Documentation regarding the Columns Tab
+tags: [BimlFlex, Reference]
 ---
+
+import DialogAddColumn from './_dialog-add-column.md';
+import DialogArchiveColumnList from './_dialog-archive-column-list.md';
+import DialogGenerateDerivedIntegrationKey from './_dialog-generate-derived-integration-key.md';
+
 ### Action Buttons
 
 <img
@@ -22,11 +25,11 @@ varigenceArticleType: Reference
 
 ### Additional Dialogs  
 
-[!include[Add Column Dialog](_dialog-add-column.md)]  
+<DialogAddColumn />  
 
-[!include[Archive Column Dialog](_dialog-archive-column-list.md)]  
+<DialogArchiveColumnList />  
 
-[!include[Generate Derived Integration Key Dialog](_dialog-generate-derived-integration-key.md)]  
+<DialogGenerateDerivedIntegrationKey />  
 
 ### Columns Tab Views  
 
@@ -36,7 +39,7 @@ All **Columns** assigned to the current entity show here.  New items can be ente
 
 |Item|Action|Entity Documentation|
 |-|-|-|
-|Column Value|Navigate to **Column Editor**, selecting clicked **Column**|[Column Documentation](xref:bimlflex-column-editor)
+|Column Value|Navigate to **Column Editor**, selecting clicked **Column**|[Column Documentation](bimlflex-column-editor)
 
 #### Overview  
 
@@ -67,7 +70,7 @@ The **Expressions** view allows you to quickly view and manage all the expressio
 
 #### Mappings  
 
-The **Mappings** view shows the references and targets associated with the **Columns**.  References are the equivalent of a Foreign Key in a Relational Database, though the enforcement of an actual constraint is configurable.  References control how and where other tables relate to each other.  Targets are the the **Object** and **Column** that the entity will populate in the associated **Project's Target Connection**.  It is recommended that you use the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator) or the [Schema Diagram](schema-diagram.md) to populate these fields.  This view is intended as easy way to reference and maintain previously entered metadata.  
+The **Mappings** view shows the references and targets associated with the **Columns**.  References are the equivalent of a Foreign Key in a Relational Database, though the enforcement of an actual constraint is configurable.  References control how and where other tables relate to each other.  Targets are the the **Object** and **Column** that the entity will populate in the associated **Project's Target Connection**.  It is recommended that you use the [Data Vault Accelerator](bimlflex-data-vault-accelerator) or the [Schema Diagram](schema-diagram.md) to populate these fields.  This view is intended as easy way to reference and maintain previously entered metadata.  
 
 <img
     src="images/bimlflex-app-tab-columns-views-mappings.png"
@@ -76,7 +79,7 @@ The **Mappings** view shows the references and targets associated with the **Col
 
 #### Overrides  
 
-The **Overrides** view is available to allow for quick management of modeled metadata from the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator) or the [Schema Diagram](schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.  
+The **Overrides** view is available to allow for quick management of modeled metadata from the [Data Vault Accelerator](bimlflex-data-vault-accelerator) or the [Schema Diagram](schema-diagram.md).  This view is intended as easy way to reference and maintain previously entered metadata.  
 
 <img
     src="images/bimlflex-app-tab-columns-views-overrides.png"

@@ -6,11 +6,11 @@
   "navigation": {
     "previous": {
       "title": "Tutorial Intro",
-      "permalink": "/docs/intro"
+      "permalink": "/docs/tutorial/intro"
     },
     "next": {
       "title": "Create a Page",
-      "permalink": "/docs/tutorial-basics/create-a-page"
+      "permalink": "/docs/tutorial/tutorial-basics/create-a-page"
     }
   }
 }
