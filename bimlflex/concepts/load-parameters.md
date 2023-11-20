@@ -327,7 +327,7 @@ These get configured by defining the below fields.
 | Field                 | Description  |
 | --------------------- | ------------ |
 | Parameter To Name     | NextLoadDate |
-| Parameter To Operator | <=           |
+| Parameter To Operator | `<=`         |
 
 ***
 

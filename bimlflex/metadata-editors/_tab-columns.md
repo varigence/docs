@@ -1,3 +1,10 @@
+---
+uid: bimlflex-includes-columns-tab-details
+title: Columns Tab details
+summary: Documentation regarding the Columns Tab, as used in the Object Editors
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
+---
 ### Action Buttons
 
 <img

@@ -16,7 +16,7 @@ Example:
 
 
 
-CONSTRAINT [UK_\<schema\>_\<table\>_FlexRowHashKey] UNIQUE NONCLUSTERED<br>(<br>  [FlexRowHashKey] Asc,[FlexRowEffectiveFromDate] Asc) WITH (PAD_INDEX = OFF,IGNORE_DUP_KEY = OFF) ON "default"<br>)
+CONSTRAINT [UK_\<schema\>_\<table\>_FlexRowHashKey] UNIQUE NONCLUSTERED<br>(<br>[FlexRowHashKey] Asc, [FlexRowEffectiveFromDate] Asc) WITH (PAD_INDEX = OFF,IGNORE_DUP_KEY = OFF) ON "default"
 
 Notes:
 

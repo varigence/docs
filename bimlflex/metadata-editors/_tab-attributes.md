@@ -1,6 +1,13 @@
+---
+uid: bimlflex-includes-attributes-tab-details
+title: Attributes Tab details
+summary: Documentation regarding the Attributes Tab, as used in the Object Editors
+varigenceProduct: BimlFlex
+varigenceArticleType: Reference
+---
 ### Action Buttons
 
-All **Attributes** assigned to the current entity show here.  New items can be entered via the *Add* action button.  Existing items can be edited by clicking the *Value* field to select the **Attribute** and using the *Edit* action button.  Various [navigational transitions](#navigational-transitions) are available on this form and outlined below.  
+All **Attributes** assigned to the current entity are shown here.  New items can be entered via the *Add* action button.  Existing items can be edited by clicking the *Value* field to select the **Attribute** and using the *Edit* action button.  Various [navigational transitions](#navigational-transitions) are available on this form and outlined below.  
 
 The following options are available:
 

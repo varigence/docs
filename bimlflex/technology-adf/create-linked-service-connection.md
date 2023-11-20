@@ -247,7 +247,7 @@ Showing configuration for plain text Service Principal Key.
 | ------------------ | -------------------------- |
 | AKV Linked Service | bfx-kv                     |
 | Secret Name        | BFX-DW-ServicePrincipalKey |
-| Secret Version     | {Blank}                    |
+| Secret Version     | \{Blank\}                    |
 
 ##### [Description](#tab/ls-auth-service-string-description/ls-auth-service-string)
 
@@ -260,7 +260,7 @@ Showing configuration for plain text Service Principal Key.
 
 | Field                                   | Example                         |
 | --------------------------------------- | ------------------------------- |
-| Service Principal Key                   | {Service Principal Key}         |
+| Service Principal Key                   | \{Service Principal Key\}         |
 | Additional Connection String Properties | key=value;secondKey=secondValue |
 
 ***
