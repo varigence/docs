@@ -41,7 +41,7 @@ static void MigrateFile(string filePath, Dictionary<string, Tuple<string, string
     content = Regex.Replace(content, @"(!\[.*?\]\()(/bimlflex/)", "$1../");
     content = Regex.Replace(content, "(<#.*?#>)", "`$1`");
     content = Regex.Replace(content, "(\"`)(<#.*?#>)(`\")", "\"$2\"");
-    content = Regex.Replace(content, "(<br>)", "<br/>");
+    content = Regex.Replace(content, "(<br/>)", "<br/>");
     content = Regex.Replace(content, @"(\*\*)(\<==\W)(.*?)(\*\*)", "**($3)**");
 
     // Processing fileUids

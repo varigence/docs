@@ -36,7 +36,7 @@ The JSON files that BimlFlex generates can be moved or copied into the directory
 * `linkedService`
 * `pipeline`
 
-All three directories are located in the /output/DataFactories/<datafactory name>/multipleJsonFiles/ directory.
+All three directories are located in the /output/DataFactories/`{datafactory name}`/multipleJsonFiles/ directory.
 
 The copy (or move) step from the BimlStudio output directory to the Git repository, and subsequence commits, can be automated as part of the build pipeline. For example, by using a script modified from the below example:
 

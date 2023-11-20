@@ -1,6 +1,6 @@
 ---
-title: 
-description:  
+title: Delta Lake
+description: Delta Lake
 ---
 
 # Delta Lake

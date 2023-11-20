@@ -332,7 +332,7 @@ Custom styling can be added by following these steps:
 * The data-header class of elements.
 * The expander-header class of elements.
 
-3. **Link the CSS File in HTML:** If a new CSS file was created, it must be linked in index.html. Open the index.html file in a text editor, and add the following line in the <head> section.
+3. **Link the CSS File in HTML:** If a new CSS file was created, it must be linked in index.html. Open the index.html file in a text editor, and add the following line in the `<head>` section.
 
 ```html
 <link rel="stylesheet" type="text/css" href="path/to/templatecss.css">

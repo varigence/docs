@@ -23,8 +23,8 @@ The BimlFlex [**Configurations**](xref:bimlflex-configuration-editor) allow for 
 |Configuration Default | The value that will used by the configuration if no **Configuration Value** has been specified.|
 |Configuration Group | The category the configuration belongs to.|
 |Configuration Order | The ordinal sequence for the configuration.|
-|SQL Source Expression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.<br><br>Example: `CONVERT(VARCHAR(27), @@this, 121)`|
-|SQL Target Expression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements.<br><br>Example: `CONVERT(VARCHAR(27), @@this, 121)`|
+|SQL Source Expression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements.<br/><br/>Example: `CONVERT(VARCHAR(27), @@this, 121)`|
+|SQL Target Expression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements.<br/><br/>Example: `CONVERT(VARCHAR(27), @@this, 121)`|
 |SSIS Dataflow Expression | This value specifies the expression used to calculate the value of the derived column. The SSIS expression syntax is used. Utilize the same syntax as the Derived Column.|
 |ADF Copy Expression | This value specifies the expression used to calculate the value of the derived column. The ADF Copy Activity expression syntax is used. Utilize the same syntax as the Derived Column.|
 |ADF Dataflow Expression | This value specifies the expression used to calculate the value of the derived column. The ADF Dataflow expression syntax is used. Utilize the same syntax as the Derived Column.|

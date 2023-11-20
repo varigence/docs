@@ -44,7 +44,7 @@ Expandable Transformers are BimlScripts let you apply modifications across a lar
 
 7. The template directive's addtoheadofcollections attribute controls how the assets, declared within collections, are merged into a node's already existing  collections. By setting this to true, the variable declared in the transformer will be inserted at the head of any Package's variables collection.
 
-<br>
+<br/>
 
 6. While writing the script, you can click on the notification bar to save the BimlScript.
 

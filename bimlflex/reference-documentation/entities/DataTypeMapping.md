@@ -15,10 +15,10 @@ The [**Data Type Mapping**](xref:bimlflex-data-type-mappings) concept provide th
 | <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Name | The name of the selected data type mapping.|
-|Length | This value specifies the length parameter for the Column data type. Set to -1 to indicate MAX length.<br><br>This property applies only to column types that support a length specification, such as String and Binary types.|
+|Length | This value specifies the length parameter for the Column data type. Set to -1 to indicate MAX length.<br/><br/>This property applies only to column types that support a length specification, such as String and Binary types.|
 |Precision | This value specifies the precision parameter for the Column data type. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.|
 |Scale | This value specifies the scale parameter for the Column data type. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.|
-|Ordinal | This value specifies the length parameter for the column type associated with this Column. Set to -1 to indicate MAX length.<br><br>This property applies only to column types that support a length specification, such as String and Binary types.|
+|Ordinal | This value specifies the length parameter for the column type associated with this Column. Set to -1 to indicate MAX length.<br/><br/>This property applies only to column types that support a length specification, such as String and Binary types.|
 |Default Value | The default value the Column should receive if no data is provided.|
 |SQL Source Expression | SQL expression for this column is used to extend source queries. Generally used for source type casting and case statements. Example: `CONVERT(VARCHAR(27), @@this, 121)`|
 |SQL Target Expression | SQL expression for this column is used to extend target queries. Generally used for source type casting and case statements. Example: `CONVERT(VARCHAR(27), @@this, 121)`|

@@ -55,6 +55,12 @@ export default {
           "label": "Tutorial"
         },
         {
+          "type": "docSidebar",
+          "sidebarId": "bimlflexSidebar",
+          "position": "left",
+          "label": "BimlFlex"
+        },
+        {
           "to": "/blog",
           "label": "Blog",
           "position": "left"

@@ -101,7 +101,7 @@ These focus more on "how" the **Connection** is used.
 | Field             | Description                                                                                                      |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Cloud             | `false`                                                                                                          |
-| Connection Type   | { OLEDB , ADONET , Script Source }                                                                               |
+| Connection Type   | `{ OLEDB , ADONET , Script Source }`                                                                               |
 | Connection String | Used to connect to the database in SSIS, as the deploy target for the PowerShell Scripts and to import metadata. |
 | Threads           | Amount of threads available to create in SSIS.  Use `0` for no limit.                                            |
 
@@ -110,7 +110,7 @@ These focus more on "how" the **Connection** is used.
 | Field                 | Description                                                                                 |
 | --------------------- | ------------------------------------------------------------------------------------------- |
 | Cloud                 | `true`                                                                                      |
-| Connection Type`*`    | { OLEDB SQL Based ELT`*` , ADONET SQL Based ELT`*` , Script Source }                        |
+| Connection Type`*`    | `{ OLEDB SQL Based ELT`*` , ADONET SQL Based ELT`*` , Script Source }`                        |
 | Connection String`**` | Only used as the deploy target for the PowerShell Scripts and to import metadata.           |
 | Threads               | This is not used in ADF.                                                                    |
 | Landing Connection    | Only used with a `Source System`.  Designates the connection to use for the `Landing Area`. |
@@ -165,7 +165,7 @@ Viewing configuration for a **Data Mart**.
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
 | Connection         | Name of the **Connection**.  Must be unique.                                                                                       |
 | Integration Stage  | Source System                                                                                                                      |
-| Connection Type    | { OLEDB , ADONET , Script Source }                                                                                                 |
+| Connection Type    | `{ OLEDB , ADONET , Script Source }`                                                                                                 |
 | System Type        | Azure Synapse                                                                                                                      |
 | Description        | An optional description for the **Connection**                                                                                     |
 | Connection String  | Connection String to the connect to the Database                                                                                   |
@@ -199,7 +199,7 @@ Viewing configuration for a **Data Mart**.
 | ------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Connection          | Name of the **Connection**.  Must be unique.                                                                    |
 | Integration Stage   | Landing Area                                                                                                    |
-| Connection Type     | { OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }                                                  |
+| Connection Type     | `{ OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }`                                                  |
 | System Type         | Azure Synapse                                                                                                   |
 | Description         | An optional description for the **Connection**                                                                  |
 | Connection String   | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database.                    |
@@ -232,12 +232,12 @@ Viewing configuration for a **Data Mart**.
 | ------------------- | -------------------------------------------------------------------------------------------- |
 | Connection          | Name of the **Connection**.  Must be unique.                                                 |
 | Integration Stage   | Landing Area                                                                                 |
-| Connection Type     | { Azure Blob Storage , Azure Data Lake Store }                                               |
+| Connection Type     | `{ Azure Blob Storage , Azure Data Lake Store }`                                               |
 | System Type         | Parquet Format                                                                               |
 | Description         | An optional description for the **Connection**                                               |
 | Connection String   | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database. |
 | Catalog             | Name of the Database (Ensure this matches the `Initial Catalog` in your connection string)   |
-| PolyBase Connection | {Empty}                                                                                      |
+| PolyBase Connection | `{Empty}`                                                                                      |
 
 > [!TIP]
 > This is used in conjunction with a **Landing Area** to indicate the location to use for a PolyBase load. For additional details on how create a Landing Area Connection please refer to the [Azure Data Factory Landing Area Example](xref:bimlflex-adf-landing-area).
@@ -253,7 +253,7 @@ Viewing configuration for a **Data Mart**.
 | Description         | Connection for PolyBase Staging                                                                                                   |
 | Connection String   | Data Source=mysqlserver.database.windows.net,1433;Initial Catalog=BFX_DW;Provider=SQLNCLI11.1;User ID=userName;Password=P@$$Word; |
 | Catalog             | BFX_DW                                                                                                                            |
-| PolyBase Connection | {Empty}                                                                                                                           |
+| PolyBase Connection | `{Empty}`                                                                                                                           |
 
 #### [Description](#tab/connection-description/stg)
 
@@ -261,7 +261,7 @@ Viewing configuration for a **Data Mart**.
 | ----------------- | -------------------------------------------------------------------------------------------- |
 | Connection        | Name of the **Connection**.  Must be unique.                                                 |
 | Integration Stage | Staging Area                                                                                 |
-| Connection Type   | { OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }                               |
+| Connection Type   | `{ OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }`                               |
 | System Type       | Azure Synapse                                                                                |
 | Description       | An optional description for the **Connection**                                               |
 | Connection String | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database. |
@@ -285,7 +285,7 @@ Viewing configuration for a **Data Mart**.
 | ----------------- | -------------------------------------------------------------------------------------------- |
 | Connection        | Name of the **Connection**.  Must be unique.                                                 |
 | Integration Stage | Persistent Staging Area                                                                      |
-| Connection Type   | { OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }                               |
+| Connection Type   | `{ OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }`                               |
 | System Type       | Azure Synapse                                                                                |
 | Description       | An optional description for the **Connection**                                               |
 | Connection String | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database. |
@@ -309,7 +309,7 @@ Viewing configuration for a **Data Mart**.
 | ----------------- | -------------------------------------------------------------------------------------------- |
 | Connection        | Name of the **Connection**.  Must be unique.                                                 |
 | Integration Stage | Data Vault                                                                               |
-| Connection Type   | { OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }                               |
+| Connection Type   | `{ OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }`                               |
 | System Type       | Azure Synapse                                                                                |
 | Description       | An optional description for the **Connection**                                               |
 | Connection String | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database. |
@@ -333,7 +333,7 @@ Viewing configuration for a **Data Mart**.
 | ----------------- | -------------------------------------------------------------------------------------------- |
 | Connection        | Name of the **Connection**.  Must be unique.                                                 |
 | Integration Stage | Data Mart                                                                                    |
-| Connection Type   | { OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }                               |
+| Connection Type   | `{ OLEDB SQL Based ELT , ADONET SQL Based ELT , Script Source }`                               |
 | System Type       | Azure Synapse                                                                                |
 | Description       | An optional description for the **Connection**                                               |
 | Connection String | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database. |

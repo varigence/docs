@@ -164,7 +164,7 @@ This section outlines any specific considerations needed when configuring BimlFl
 | Integration Stage   | Source System\*, Staging Area, Persistent Staging Area, Data Vault, Data Mart | [Details](#integration-stage)        |
 | Connection Type     | ODBC\*, ODBC SQL Based ELT\*                                                      | [Details](#connection-type)          |
 | System Type         | Snowflake Data Warehouse                                                          | [Details](#system-type)              |
-| Connection String   | Dsn={DSN Name};Uid={User Name};Pwd={Password};Database={Database Name};\*         | [Details](#connection-string)        |
+| Connection String   | Dsn=`{DSN Name}`;Uid=`{User Name}`;Pwd=`{Password}`;Database=`{Database Name}`;\*         | [Details](#connection-string)        |
 | Linked Service Type | Snowflake (ADF Only)                                                              | [Details](#linked-services-adf-only) |
 
 ### Integration Stage
@@ -232,7 +232,7 @@ BimlFlex only uses the *Connection String* field to generate an associated Conne
 ### [SSIS Connection String](#tab/snowflake-connection-string-ssis)
 
 ```cmd
-Dsn={DSN Name};Uid={User Name};Pwd={Password};Database={Database Name};
+Dsn=`{DSN Name}`;Uid=`{User Name}`;Pwd=`{Password}`;Database=`{Database Name}`;
 ```
 
 ### [Example](#tab/snowflake-connection-string-ssis-example)
@@ -274,7 +274,7 @@ If using a *Connection String* version of a Linked Service fill out the required
 ### [ADF Connection String](#tab/snowflake-connection-string-adf)
 
 ```cmd
-host={Server Address};account={Account Name};user={User Name};password={Password};db={Database Name};schema={Schema Name};warehouse={Warehouse Name};
+host=`{Server Address}`;account=`{Account Name}`;user=`{User Name}`;password=`{Password}`;db=`{Database Name}`;schema=`{Schema Name}`;warehouse=`{Warehouse Name}`;
 ```
 
 ### [Example](#tab/snowflake-connection-string-adf-example)
