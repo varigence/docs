@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureBlobStorageDomain",
+  "title": "BimlFlex Settings Definition for AzureBlobStorageDomain",
+  "description": "Documentation of settings option within BimlFlex for AzureBlobStorageDomain",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureBlobStorageDomain.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureBlobStorageDomain",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureBlobStorageDomain",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureBlobStorageDomain.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureBlobStorageDomain",
+    "description": "Documentation of settings option within BimlFlex for AzureBlobStorageDomain",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureArchiveStage",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureArchiveStage"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureCopyDataIntegrationUnits",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyDataIntegrationUnits"
+  }
+}

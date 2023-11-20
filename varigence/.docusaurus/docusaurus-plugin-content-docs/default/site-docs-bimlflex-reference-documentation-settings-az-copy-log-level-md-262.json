@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzCopyLogLevel",
+  "title": "BimlFlex Settings Definition for AzCopyLogLevel",
+  "description": "Documentation of settings option within BimlFlex for AzCopyLogLevel",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzCopyLogLevel.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzCopyLogLevel",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyLogLevel",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzCopyLogLevel.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzCopyLogLevel",
+    "description": "Documentation of settings option within BimlFlex for AzCopyLogLevel",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzCopyEnabled",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyEnabled"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzCopyLogLocation",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyLogLocation"
+  }
+}

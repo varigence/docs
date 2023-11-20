@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DvParallelProcessing",
+  "title": "BimlFlex Settings Definition for DvParallelProcessing",
+  "description": "PLACEHOLDER for future functionality",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DvParallelProcessing.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DvParallelProcessing",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DvParallelProcessing",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DvParallelProcessing.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-DvParallelProcessing",
+    "title": "BimlFlex Settings Definition for DvParallelProcessing",
+    "summary": "Documentation of settings option within BimlFlex for DvParallelProcessing",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DvNamingConvention",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvNamingConvention"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DvPitLagDays",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvPitLagDays"
+  }
+}

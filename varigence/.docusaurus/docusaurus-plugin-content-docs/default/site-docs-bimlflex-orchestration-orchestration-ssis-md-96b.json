@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/orchestration/orchestration-ssis",
+  "title": "BimlFlex Batch Orchestration",
+  "description": "Using BimlFlex batch orchestration to control failure scenario management, auditing, and logging of runs, with the BimlCatalog database",
+  "source": "@site/docs/bimlflex/orchestration/orchestration-ssis.md",
+  "sourceDirName": "bimlflex/orchestration",
+  "slug": "/bimlflex/orchestration/orchestration-ssis",
+  "permalink": "/docs/bimlflex/orchestration/orchestration-ssis",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/orchestration/orchestration-ssis.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Batch Orchestration",
+    "description": "Using BimlFlex batch orchestration to control failure scenario management, auditing, and logging of runs, with the BimlCatalog database",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Organizing data logistics orchestration using BimlFlex",
+    "permalink": "/docs/bimlflex/orchestration/"
+  },
+  "next": {
+    "title": "Reference Docs",
+    "permalink": "/docs/category/reference-docs"
+  }
+}

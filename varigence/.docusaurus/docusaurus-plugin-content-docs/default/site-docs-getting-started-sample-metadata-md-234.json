@@ -1,0 +1,26 @@
+{
+  "id": "getting-started/sample-metadata",
+  "title": "Sample Metadata",
+  "description": "!include[Samples]",
+  "source": "@site/docs/getting-started/sample-metadata.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/sample-metadata",
+  "permalink": "/docs/getting-started/sample-metadata",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/sample-metadata.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-sample-metadata",
+    "title": "Sample Metadata",
+    "summary": "Guidance on loading sample metadata into BimlFlex.",
+    "varigenceProduct": "BimlFlex",
+    "varigenceArticleType": "Reference"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "First Project Walkthrough",
+    "permalink": "/docs/getting-started/first-project-walkthrough"
+  }
+}

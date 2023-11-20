@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AppendNameLanding",
+  "title": "BimlFlex Settings Definition for AppendNameLanding",
+  "description": "Documentation of settings option within BimlFlex for AppendNameLanding",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AppendNameLanding.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AppendNameLanding",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AppendNameLanding",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AppendNameLanding.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AppendNameLanding",
+    "description": "Documentation of settings option within BimlFlex for AppendNameLanding",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AppendNameExternal",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AppendNameExternal"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AppendProcedureName",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AppendProcedureName"
+  }
+}

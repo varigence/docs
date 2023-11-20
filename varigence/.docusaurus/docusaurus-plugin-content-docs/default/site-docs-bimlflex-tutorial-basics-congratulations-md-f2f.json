@@ -1,0 +1,23 @@
+{
+  "id": "bimlflex/tutorial-basics/congratulations",
+  "title": "Congratulations!",
+  "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+  "source": "@site/docs/bimlflex/tutorial-basics/congratulations.md",
+  "sourceDirName": "bimlflex/tutorial-basics",
+  "slug": "/bimlflex/tutorial-basics/congratulations",
+  "permalink": "/docs/bimlflex/tutorial-basics/congratulations",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/tutorial-basics/congratulations.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Deploy your site",
+    "permalink": "/docs/bimlflex/tutorial-basics/deploy-your-site"
+  }
+}

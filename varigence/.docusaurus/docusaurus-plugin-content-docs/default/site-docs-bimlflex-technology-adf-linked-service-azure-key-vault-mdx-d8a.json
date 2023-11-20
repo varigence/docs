@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/technology-adf/linked-service-azure-key-vault",
+  "title": "Using Azure Key Vaults for Connection settings",
+  "description": "ADF linked services allow the use of Azure Key Vault for easy management of linked service settings. We suggest using Azure Key Vault to maintain safe handling of sensitive information. When possible, an Azure Key Vault tab will appear as an alternative to manually filling out connection settings.",
+  "source": "@site/docs/bimlflex/technology-adf/linked-service-azure-key-vault.mdx",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/linked-service-azure-key-vault",
+  "permalink": "/docs/bimlflex/technology-adf/linked-service-azure-key-vault",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/linked-service-azure-key-vault.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "linked-service-azure-key-vault",
+    "title": "Using Azure Key Vaults for Connection settings",
+    "summary": "Documentation on how to configure ADF Key Vaults for connection settings with menu options, secret names, and secret versions",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Configuring an ADF Linked Service Connection for Teradata",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-teradata"
+  },
+  "next": {
+    "title": "Configuring a Linked Service Connection for Snowflake Data Warehouse",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-snowflake"
+  }
+}

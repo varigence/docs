@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/technology-adf/linked-service-adf-netezza",
+  "title": "Configuring an ADF Linked Service Connection for Netezza",
+  "description": "For information on how to enable a connection for use with linked services, see Configuring a Linked Service Connection.",
+  "source": "@site/docs/bimlflex/technology-adf/linked-service-adf-netezza.mdx",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/linked-service-adf-netezza",
+  "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-netezza",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/linked-service-adf-netezza.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "linked-service-adf-netezza",
+    "title": "Configuring an ADF Linked Service Connection for Netezza",
+    "summary": "Documentation on how to configure ADF Linked Service Connection for Netezza with required fields, connection strings, and links to additional information",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Configuring an ADF Linked Service Connection for MySQL",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-mysql"
+  },
+  "next": {
+    "title": "Configuring an ADF Linked Service Connection for Oracle",
+    "permalink": "/docs/bimlflex/technology-adf/linked-service-adf-oracle"
+  }
+}

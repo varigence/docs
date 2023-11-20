@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/metadata-editors/excel-add-in",
+  "title": "BimlFlex Excel Add-in",
+  "description": "Guide on how to update the BimlFlex Excel add-in",
+  "source": "@site/docs/bimlflex/metadata-editors/excel-add-in.md",
+  "sourceDirName": "bimlflex/metadata-editors",
+  "slug": "/bimlflex/metadata-editors/excel-add-in",
+  "permalink": "/docs/bimlflex/metadata-editors/excel-add-in",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/excel-add-in.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Excel Add-in",
+    "description": "Guide on how to update the BimlFlex Excel add-in",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Toolbar Icons and Options",
+    "permalink": "/docs/bimlflex/metadata-editors/database-settings"
+  },
+  "next": {
+    "title": "Metadata Editors Overview",
+    "permalink": "/docs/bimlflex/metadata-editors/"
+  }
+}

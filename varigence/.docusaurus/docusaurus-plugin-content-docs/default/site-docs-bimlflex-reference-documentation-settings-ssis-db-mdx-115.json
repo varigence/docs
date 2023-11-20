@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsisDb",
+  "title": "BimlFlex Settings Definition for SsisDb",
+  "description": "The SSISDB database name to use for generated deployment script files.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsisDb.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsisDb",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsisDb",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsisDb.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SsisDb",
+    "title": "BimlFlex Settings Definition for SsisDb",
+    "summary": "Documentation of settings option within BimlFlex for SsisDb",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsisCreateFolder",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisCreateFolder"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsisDefaultBufferMaxRows",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows"
+  }
+}

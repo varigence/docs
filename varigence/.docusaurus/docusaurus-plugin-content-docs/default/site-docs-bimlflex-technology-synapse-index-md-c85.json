@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/technology-synapse/index",
+  "title": "BimlFlex Synapse overview",
+  "description": "Overview of BimlFlex support for Synapse",
+  "source": "@site/docs/bimlflex/technology-synapse/index.md",
+  "sourceDirName": "bimlflex/technology-synapse",
+  "slug": "/bimlflex/technology-synapse/",
+  "permalink": "/docs/bimlflex/technology-synapse/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-synapse/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Synapse overview",
+    "description": "Overview of BimlFlex support for Synapse"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex on Synapse",
+    "permalink": "/docs/category/bimlflex-on-synapse"
+  },
+  "next": {
+    "title": "BimlFlex Synapse forward-only approach for deployment",
+    "permalink": "/docs/bimlflex/technology-synapse/synapse-forward-only-approach"
+  }
+}

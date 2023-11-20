@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/installation/installing-metadata-database",
+  "title": "BimlFlex Metadata Database Installation",
+  "description": "The BimlFlex Database - the core metadata repository database - is used by BimlFlex and BimlStudio to model and build the data solution, and to support the automation.",
+  "source": "@site/docs/bimlflex/installation/installing-metadata-database.mdx",
+  "sourceDirName": "bimlflex/installation",
+  "slug": "/bimlflex/installation/installing-metadata-database",
+  "permalink": "/docs/bimlflex/installation/installing-metadata-database",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/installation/installing-metadata-database.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-setup-metadata-database-installation",
+    "title": "BimlFlex Metadata Database Installation",
+    "summary": "Detailed instructions on the installation of BimlFlex metadata database through BimlFlex installer or through BimlStudio",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Developer Installation",
+    "permalink": "/docs/bimlflex/installation/installing-developer-tools"
+  },
+  "next": {
+    "title": "SSIS Server Installation",
+    "permalink": "/docs/bimlflex/installation/installing-ssis-server"
+  }
+}

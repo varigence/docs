@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DvAccelerateShowExpanded",
+  "title": "BimlFlex Settings Definition for DvAccelerateShowExpanded",
+  "description": "Enable to set the default Accelerator view to show the Expanded view (Hubs, Links and Satellites) instead of the Data Vault Backbone (Only Hubs and Links).",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DvAccelerateShowExpanded.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DvAccelerateShowExpanded",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DvAccelerateShowExpanded",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DvAccelerateShowExpanded.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-DvAccelerateShowExpanded",
+    "title": "BimlFlex Settings Definition for DvAccelerateShowExpanded",
+    "summary": "Documentation of settings option within BimlFlex for DvAccelerateShowExpanded",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DvAccelerateShowColumns",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvAccelerateShowColumns"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DvAccelerateTwoWayLinks",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks"
+  }
+}

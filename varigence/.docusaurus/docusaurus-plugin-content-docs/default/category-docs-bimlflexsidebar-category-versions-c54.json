@@ -1,0 +1,15 @@
+{
+  "title": "Versions",
+  "slug": "/category/versions",
+  "permalink": "/docs/category/versions",
+  "navigation": {
+    "previous": {
+      "title": "Sample Metadata",
+      "permalink": "/docs/bimlflex/getting-started/sample-metadata"
+    },
+    "next": {
+      "title": "BimlFlex customer concept",
+      "permalink": "/docs/bimlflex/concepts/customer"
+    }
+  }
+}

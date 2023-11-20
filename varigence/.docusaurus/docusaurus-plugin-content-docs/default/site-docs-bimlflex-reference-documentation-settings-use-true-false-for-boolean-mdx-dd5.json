@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/UseTrueFalseForBoolean",
+  "title": "BimlFlex Settings Definition for UseTrueFalseForBoolean",
+  "description": "Determines if the SQL inline hashing function for MSSQL, SQLDB and Synapse converts BIT (Boolean) values to True/False instead of 1/0.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-UseTrueFalseForBoolean",
+    "title": "BimlFlex Settings Definition for UseTrueFalseForBoolean",
+    "summary": "Documentation of settings option within BimlFlex for UseTrueFalseForBoolean",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for UseSsisCompatableDateFormat",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for UseTryCastConversion",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseTryCastConversion"
+  }
+}

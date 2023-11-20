@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/build-and-deployment/concurrent-development",
+  "title": "Concurrent Development",
+  "description": "Details regarding concurrent development between teams, customers, and shared metadata",
+  "source": "@site/docs/bimlflex/build-and-deployment/concurrent-development.md",
+  "sourceDirName": "bimlflex/build-and-deployment",
+  "slug": "/bimlflex/build-and-deployment/concurrent-development",
+  "permalink": "/docs/bimlflex/build-and-deployment/concurrent-development",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/build-and-deployment/concurrent-development.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Concurrent Development",
+    "description": "Details regarding concurrent development between teams, customers, and shared metadata",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Building Using the Command Line",
+    "permalink": "/docs/bimlflex/build-and-deployment/command-line-build"
+  },
+  "next": {
+    "title": "Continuous Integration and Delivery (CI/CD)",
+    "permalink": "/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery"
+  }
+}

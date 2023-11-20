@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ImportViews",
+  "title": "BimlFlex Settings Definition for ImportViews",
+  "description": "Determines if database Views are imported when importing Metadata.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ImportViews.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ImportViews",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ImportViews",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ImportViews.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-ImportViews",
+    "title": "BimlFlex Settings Definition for ImportViews",
+    "summary": "Documentation of settings option within BimlFlex for ImportViews",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ImportPath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ImportPath"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for InferIntegrationKeyFrom",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom"
+  }
+}

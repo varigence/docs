@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/metadata-editors/dashboard",
+  "title": "Dashboard",
+  "description": "Overview of the BimlFlex dashboard with sunburst graph, navigation, menus, and loading data",
+  "source": "@site/docs/bimlflex/metadata-editors/dashboard.mdx",
+  "sourceDirName": "bimlflex/metadata-editors",
+  "slug": "/bimlflex/metadata-editors/dashboard",
+  "permalink": "/docs/bimlflex/metadata-editors/dashboard",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/dashboard.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Dashboard",
+    "description": "Overview of the BimlFlex dashboard with sunburst graph, navigation, menus, and loading data",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Customers",
+    "permalink": "/docs/bimlflex/metadata-editors/customers"
+  },
+  "next": {
+    "title": "Data Lineage",
+    "permalink": "/docs/bimlflex/metadata-editors/data-lineage"
+  }
+}

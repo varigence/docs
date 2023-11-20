@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureStageSasToken",
+  "title": "BimlFlex Settings Definition for AzureStageSasToken",
+  "description": "The storage access SAS Token to use when accessing the staging Blob storage.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureStageSasToken.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureStageSasToken",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageSasToken",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureStageSasToken.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureStageSasToken",
+    "title": "BimlFlex Settings Definition for AzureStageSasToken",
+    "summary": "Documentation of settings option within BimlFlex for AzureStageSasToken",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureStageOnExtract",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureSubscriptionId",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureSubscriptionId"
+  }
+}

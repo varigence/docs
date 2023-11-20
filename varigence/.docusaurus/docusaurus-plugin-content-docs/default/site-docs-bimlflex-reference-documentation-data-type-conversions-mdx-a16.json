@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/data-type-conversions",
+  "title": "BimlFlex Data Type Conversions",
+  "description": "BimlFlex uses a separate collection of data types that closely mirror .NET data types with a few additions to provide better support in modeling.  This allows for easy, hassle free development as the modeler no longer has to worry about what systems support what data types.",
+  "source": "@site/docs/bimlflex/reference-documentation/data-type-conversions.mdx",
+  "sourceDirName": "bimlflex/reference-documentation",
+  "slug": "/bimlflex/reference-documentation/data-type-conversions",
+  "permalink": "/docs/bimlflex/reference-documentation/data-type-conversions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/data-type-conversions.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-data-type-conversions",
+    "title": "BimlFlex Data Type Conversions",
+    "summary": "Documentation providing data type conversations between BimlFlex data types and SQL Server data types",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Reference Documentation",
+    "permalink": "/docs/bimlflex/reference-documentation/"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Batches",
+    "permalink": "/docs/bimlflex/reference-documentation/entities/Batch"
+  }
+}

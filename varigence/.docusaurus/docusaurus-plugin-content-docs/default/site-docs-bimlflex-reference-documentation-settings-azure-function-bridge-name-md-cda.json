@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureFunctionBridgeName",
+  "title": "BimlFlex Settings Definition for AzureFunctionBridgeName",
+  "description": "Documentation of settings option within BimlFlex for AzureFunctionBridgeName",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeName.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureFunctionBridgeName",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeName",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeName.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureFunctionBridgeName",
+    "description": "Documentation of settings option within BimlFlex for AzureFunctionBridgeName",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureFunctionBridgeKeyVaultSecretVersion",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecretVersion"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureFunctionBridgeUseKeyVault",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeUseKeyVault"
+  }
+}

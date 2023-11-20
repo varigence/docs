@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureCreateDummyFile",
+  "title": "BimlFlex Settings Definition for AzureCreateDummyFile",
+  "description": "Documentation of settings option within BimlFlex for AzureCreateDummyFile",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureCreateDummyFile.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureCreateDummyFile",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCreateDummyFile",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureCreateDummyFile.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureCreateDummyFile",
+    "description": "Documentation of settings option within BimlFlex for AzureCreateDummyFile",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureCopyValidateDataConsistency",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureCreateExternalOnStage",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCreateExternalOnStage"
+  }
+}

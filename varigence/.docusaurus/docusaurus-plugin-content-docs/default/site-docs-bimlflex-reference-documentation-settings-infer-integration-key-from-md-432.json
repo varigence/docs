@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/InferIntegrationKeyFrom",
+  "title": "BimlFlex Settings Definition for InferIntegrationKeyFrom",
+  "description": "Documentation of settings option within BimlFlex for InferIntegrationKeyFrom",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for InferIntegrationKeyFrom",
+    "description": "Documentation of settings option within BimlFlex for InferIntegrationKeyFrom",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ImportViews",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ImportViews"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for IntegrationKeyColumnOrder",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/IntegrationKeyColumnOrder"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Development, Build & Deployment",
+  "slug": "/category/development-build--deployment",
+  "permalink": "/docs/category/development-build--deployment",
+  "navigation": {
+    "previous": {
+      "title": "Versions",
+      "permalink": "/docs/bimlflex/metadata-editors/version-editor"
+    },
+    "next": {
+      "title": "Building a BimlFlex project from BimlStudio.",
+      "permalink": "/docs/bimlflex/build-and-deployment/build-bimlstudio-project"
+    }
+  }
+}

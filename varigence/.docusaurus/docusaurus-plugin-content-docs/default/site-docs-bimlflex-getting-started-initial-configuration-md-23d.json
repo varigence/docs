@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/getting-started/initial-configuration",
+  "title": "BimlFlex Initial Configuration",
+  "description": "Once the BimlFlex installation is completed, it is time to set up the environment for a BimlFlex project. The initial setup of BimlFlex include the steps to set up the full development environment:",
+  "source": "@site/docs/bimlflex/getting-started/initial-configuration.md",
+  "sourceDirName": "bimlflex/getting-started",
+  "slug": "/bimlflex/getting-started/initial-configuration",
+  "permalink": "/docs/bimlflex/getting-started/initial-configuration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/getting-started/initial-configuration.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-getting-started-initial-configuration",
+    "title": "BimlFlex Initial Configuration",
+    "summary": "Initial walkthrough of setting up BimlFlex to create project, connect database, and load sample metadata",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "First Project Walkthrough",
+    "permalink": "/docs/bimlflex/getting-started/first-project-walkthrough"
+  },
+  "next": {
+    "title": "BimlFlex Intro Videos",
+    "permalink": "/docs/bimlflex/getting-started/intro-videos"
+  }
+}

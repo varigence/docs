@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureStageAccountKey",
+  "title": "BimlFlex Settings Definition for AzureStageAccountKey",
+  "description": "Documentation of settings option within BimlFlex for AzureStageAccountKey",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureStageAccountKey.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureStageAccountKey",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageAccountKey",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureStageAccountKey.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureStageAccountKey",
+    "description": "Documentation of settings option within BimlFlex for AzureStageAccountKey",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureRoundRobinTemporaryTables",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureStageAccountName",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageAccountName"
+  }
+}

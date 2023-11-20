@@ -1,0 +1,15 @@
+{
+  "title": "Orchestration",
+  "slug": "/category/orchestration",
+  "permalink": "/docs/category/orchestration",
+  "navigation": {
+    "previous": {
+      "title": "Data delivery",
+      "permalink": "/docs/bimlflex/delivering-data-marts/"
+    },
+    "next": {
+      "title": "Organizing data logistics orchestration using BimlFlex",
+      "permalink": "/docs/bimlflex/orchestration/"
+    }
+  }
+}

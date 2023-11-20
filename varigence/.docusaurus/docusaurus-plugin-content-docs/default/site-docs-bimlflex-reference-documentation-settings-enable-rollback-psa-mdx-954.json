@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/EnableRollbackPsa",
+  "title": "BimlFlex Settings Definition for EnableRollbackPsa",
+  "description": "Determines if the Batch orchestration engine rolls back (deletes) committed changes to the Persistent Staging database in case of a failed process.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/EnableRollbackPsa.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/EnableRollbackPsa",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/EnableRollbackPsa",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/EnableRollbackPsa.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-EnableRollbackPsa",
+    "title": "BimlFlex Settings Definition for EnableRollbackPsa",
+    "summary": "Documentation of settings option within BimlFlex for EnableRollbackPsa",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for EnableRollbackDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/EnableRollbackDv"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for EnableRollbackStg",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/EnableRollbackStg"
+  }
+}

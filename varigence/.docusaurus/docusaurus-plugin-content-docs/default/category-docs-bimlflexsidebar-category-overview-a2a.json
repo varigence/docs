@@ -1,0 +1,15 @@
+{
+  "title": "Overview",
+  "slug": "/category/overview",
+  "permalink": "/docs/category/overview",
+  "navigation": {
+    "previous": {
+      "title": "Deployment Through PowerShell",
+      "permalink": "/docs/bimlflex/technology-adf/using-powershell"
+    },
+    "next": {
+      "title": "BimlFlex for Azure Mapping Data Flows",
+      "permalink": "/docs/bimlflex/technology-data-flow/"
+    }
+  }
+}

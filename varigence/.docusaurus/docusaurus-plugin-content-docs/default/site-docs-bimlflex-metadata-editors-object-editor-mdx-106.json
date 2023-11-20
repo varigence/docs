@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/metadata-editors/object-editor",
+  "title": "Object Editor",
+  "description": "Documentation regarding the BimlFlex Object editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
+  "source": "@site/docs/bimlflex/metadata-editors/object-editor.mdx",
+  "sourceDirName": "bimlflex/metadata-editors",
+  "slug": "/bimlflex/metadata-editors/object-editor",
+  "permalink": "/docs/bimlflex/metadata-editors/object-editor",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/object-editor.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Object Editor",
+    "description": "Documentation regarding the BimlFlex Object editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Metadata Editors Overview",
+    "permalink": "/docs/bimlflex/metadata-editors/"
+  },
+  "next": {
+    "title": "BimlFlex Operational Reports",
+    "permalink": "/docs/bimlflex/metadata-editors/operational-reports"
+  }
+}

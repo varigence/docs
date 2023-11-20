@@ -1,0 +1,15 @@
+{
+  "title": "Support Guide",
+  "slug": "/category/support-guide",
+  "permalink": "/docs/category/support-guide",
+  "navigation": {
+    "previous": {
+      "title": "BimlFlex Settings Definition for ZipOutputFile",
+      "permalink": "/docs/bimlflex/reference-documentation/settings/ZipOutputFile"
+    },
+    "next": {
+      "title": "Find the BimlFlex versions installed",
+      "permalink": "/docs/bimlflex/support/check-installed-versions"
+    }
+  }
+}

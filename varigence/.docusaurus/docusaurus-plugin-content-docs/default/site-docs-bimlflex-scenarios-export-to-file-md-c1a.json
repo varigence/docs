@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/scenarios/export-to-file",
+  "title": "BimlFlex Export To File",
+  "description": "Documentation on exporting data out of a database into files within BimlFlex, including flat file types, data rows, and delimiters",
+  "source": "@site/docs/bimlflex/scenarios/export-to-file.md",
+  "sourceDirName": "bimlflex/scenarios",
+  "slug": "/bimlflex/scenarios/export-to-file",
+  "permalink": "/docs/bimlflex/scenarios/export-to-file",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/scenarios/export-to-file.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Export To File",
+    "description": "Documentation on exporting data out of a database into files within BimlFlex, including flat file types, data rows, and delimiters",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Other BimlFlex Connectivity",
+    "permalink": "/docs/category/other-bimlflex-connectivity"
+  },
+  "next": {
+    "title": "BimlFlex Scenarios Overview",
+    "permalink": "/docs/bimlflex/scenarios/"
+  }
+}

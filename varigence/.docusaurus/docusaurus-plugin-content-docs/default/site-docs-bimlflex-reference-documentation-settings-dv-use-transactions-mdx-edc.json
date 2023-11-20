@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DvUseTransactions",
+  "title": "BimlFlex Settings Definition for DvUseTransactions",
+  "description": "Enable to wrap Data Vault ELT load processes in transaction statements.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DvUseTransactions.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DvUseTransactions",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DvUseTransactions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DvUseTransactions.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-DvUseTransactions",
+    "title": "BimlFlex Settings Definition for DvUseTransactions",
+    "summary": "Documentation of settings option within BimlFlex for DvUseTransactions",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DvUseHashKeys",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvUseHashKeys"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DvUseWhereExists",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvUseWhereExists"
+  }
+}

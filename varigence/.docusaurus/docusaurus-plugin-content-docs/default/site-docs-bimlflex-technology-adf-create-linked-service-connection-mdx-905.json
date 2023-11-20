@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/technology-adf/create-linked-service-connection",
+  "title": "Configuring a Linked Service Connection",
+  "description": "Connections can be enabled to be used as Linked Services in Azure Data Factory (ADF).",
+  "source": "@site/docs/bimlflex/technology-adf/create-linked-service-connection.mdx",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/create-linked-service-connection",
+  "permalink": "/docs/bimlflex/technology-adf/create-linked-service-connection",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/create-linked-service-connection.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "create-linked-service-connection",
+    "title": "Configuring a Linked Service Connection",
+    "summary": "Documentation on enabling linked service connections, connections for cloud services, and supported linked services for BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Continuous Integration and Continuous Delivery",
+    "permalink": "/docs/bimlflex/technology-adf/continuous-integration-and-continuous-delivery"
+  },
+  "next": {
+    "title": "Azure Data Factory Landing Area",
+    "permalink": "/docs/bimlflex/technology-adf/landing-area"
+  }
+}

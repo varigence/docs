@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DvAppendReference",
+  "title": "BimlFlex Settings Definition for DvAppendReference",
+  "description": "The string to append to Reference table names.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DvAppendReference.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DvAppendReference",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DvAppendReference",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DvAppendReference.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-DvAppendReference",
+    "title": "BimlFlex Settings Definition for DvAppendReference",
+    "summary": "Documentation of settings option within BimlFlex for DvAppendReference",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DvAppendPointInTime",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvAppendPointInTime"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DvAppendSameAsLink",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvAppendSameAsLink"
+  }
+}

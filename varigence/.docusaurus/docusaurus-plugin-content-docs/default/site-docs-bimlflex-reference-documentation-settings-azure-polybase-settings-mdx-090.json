@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzurePolybaseSettings",
+  "title": "BimlFlex Settings Definition for AzurePolybaseSettings",
+  "description": "The default Azure PolyBase settings to use when using the PolyBase Copy Method and enabling Staging for the Copy Activity.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzurePolybaseSettings.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzurePolybaseSettings",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzurePolybaseSettings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzurePolybaseSettings.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzurePolybaseSettings",
+    "title": "BimlFlex Settings Definition for AzurePolybaseSettings",
+    "summary": "Documentation of settings option within BimlFlex for AzurePolybaseSettings",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureOnErrorLandingFiles",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureOnErrorLandingFiles"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureResourceGroup",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureResourceGroup"
+  }
+}

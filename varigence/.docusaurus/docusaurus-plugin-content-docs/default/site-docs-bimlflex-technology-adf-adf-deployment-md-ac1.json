@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/technology-adf/adf-deployment",
+  "title": "BimlFlex ADF Deployment Guide",
+  "description": "Guide to assist with Azure Data Factory project creation, deployment, and standard configurations",
+  "source": "@site/docs/bimlflex/technology-adf/adf-deployment.md",
+  "sourceDirName": "bimlflex/technology-adf",
+  "slug": "/bimlflex/technology-adf/adf-deployment",
+  "permalink": "/docs/bimlflex/technology-adf/adf-deployment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/adf-deployment.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex ADF Deployment Guide",
+    "description": "Guide to assist with Azure Data Factory project creation, deployment, and standard configurations",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex for Azure Data Factory",
+    "permalink": "/docs/category/bimlflex-for-azure-data-factory"
+  },
+  "next": {
+    "title": "The BimlFlex utility Azure Function Bridge",
+    "permalink": "/docs/bimlflex/technology-adf/azure-function-bridge"
+  }
+}

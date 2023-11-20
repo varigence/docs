@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/support/check-installed-versions",
+  "title": "Find the BimlFlex versions installed",
+  "description": "Documentation on how to find installed versions of BimlFlex, BimlStudio, and BimlFlex Excel Add-In",
+  "source": "@site/docs/bimlflex/support/check-installed-versions.md",
+  "sourceDirName": "bimlflex/support",
+  "slug": "/bimlflex/support/check-installed-versions",
+  "permalink": "/docs/bimlflex/support/check-installed-versions",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/support/check-installed-versions.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Find the BimlFlex versions installed",
+    "description": "Documentation on how to find installed versions of BimlFlex, BimlStudio, and BimlFlex Excel Add-In"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Support Guide",
+    "permalink": "/docs/category/support-guide"
+  },
+  "next": {
+    "title": "Excel File Migration Error within BimlFlex 2020 R2 Update",
+    "permalink": "/docs/bimlflex/support/excel-metadata-addin"
+  }
+}

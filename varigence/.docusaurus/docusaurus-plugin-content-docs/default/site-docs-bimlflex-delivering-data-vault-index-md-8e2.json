@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/delivering-data-vault/index",
+  "title": "Data Vault and BimlFlex",
+  "description": "Overview of Data Vault concepts as implemented in BimlFlex",
+  "source": "@site/docs/bimlflex/delivering-data-vault/index.md",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/",
+  "permalink": "/docs/bimlflex/delivering-data-vault/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/index.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Data Vault and BimlFlex",
+    "description": "Overview of Data Vault concepts as implemented in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Hashing in BimlFlex for Data Vault",
+    "permalink": "/docs/bimlflex/delivering-data-vault/hashing-in-data-vault"
+  },
+  "next": {
+    "title": "Best Practices for Deploying Data Vault on Azure Synapse",
+    "permalink": "/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault"
+  }
+}

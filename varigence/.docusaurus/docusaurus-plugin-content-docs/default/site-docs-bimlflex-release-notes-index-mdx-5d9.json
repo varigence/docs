@@ -1,0 +1,28 @@
+{
+  "id": "bimlflex/release-notes/index",
+  "title": "BimlFlex release notes",
+  "description": "Current Release",
+  "source": "@site/docs/bimlflex/release-notes/index.mdx",
+  "sourceDirName": "bimlflex/release-notes",
+  "slug": "/bimlflex/release-notes/",
+  "permalink": "/docs/bimlflex/release-notes/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/release-notes/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-release-notes-overview",
+    "title": "BimlFlex release notes",
+    "summary": "An overview of key new features for the corresponding BimlFlex releases"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ZipOutputFile",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ZipOutputFile"
+  },
+  "next": {
+    "title": "New Features in BimlFlex 2018.1",
+    "permalink": "/docs/bimlflex/release-notes/new-features-2018.1"
+  }
+}

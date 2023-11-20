@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/training/index",
+  "title": "BimlFlex Training Overview",
+  "description": "Guide on working with BimlFlex",
+  "source": "@site/docs/bimlflex/training/index.md",
+  "sourceDirName": "bimlflex/training",
+  "slug": "/bimlflex/training/",
+  "permalink": "/docs/bimlflex/training/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/training/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Training Overview",
+    "description": "Guide on working with BimlFlex"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex on SQL Server and Azure SQL",
+    "permalink": "/docs/bimlflex/technology-sql-server/"
+  },
+  "next": {
+    "title": "BimlFlex Training Content",
+    "permalink": "/docs/bimlflex/training/training-content"
+  }
+}

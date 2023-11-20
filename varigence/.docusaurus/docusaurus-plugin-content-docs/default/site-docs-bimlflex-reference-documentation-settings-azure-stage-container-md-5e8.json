@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureStageContainer",
+  "title": "BimlFlex Settings Definition for AzureStageContainer",
+  "description": "Documentation of settings option within BimlFlex for AzureStageContainer",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureStageContainer.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureStageContainer",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageContainer",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureStageContainer.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AzureStageContainer",
+    "description": "Documentation of settings option within BimlFlex for AzureStageContainer",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureStageAccountName",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageAccountName"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureStageOnExtract",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract"
+  }
+}

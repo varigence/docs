@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DeleteObjectNamePattern",
+  "title": "BimlFlex Settings Definition for DeleteObjectNamePattern",
+  "description": "The name to use for the Delete Objects when using Delete Detection. \"@@thisDEL\" will us the current object name (table name) and append \"DEL\" at the end. Update this to use a specific naming convention for delete tables",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DeleteObjectNamePattern.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DeleteObjectNamePattern",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DeleteObjectNamePattern",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DeleteObjectNamePattern.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-DeleteObjectNamePattern",
+    "title": "BimlFlex Settings Definition for DeleteObjectNamePattern",
+    "summary": "Documentation of settings option within BimlFlex for DeleteObjectNamePattern",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DeleteImportFile",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DeleteImportFile"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DeleteSchemaNamePattern",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DeleteSchemaNamePattern"
+  }
+}

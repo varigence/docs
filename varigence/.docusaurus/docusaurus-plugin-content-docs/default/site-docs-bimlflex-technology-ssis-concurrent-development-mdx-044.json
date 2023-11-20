@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/technology-ssis/concurrent-development",
+  "title": "BimlFlex Concurrent Development",
+  "description": "Most BimlFlex deployments feature several teams working on the same Data Warehouse at the same time. A successful combination of concurrent development and Data Warehouse management normally uses several features in BimlFlex for support. A sample process is described below.",
+  "source": "@site/docs/bimlflex/technology-ssis/concurrent-development.mdx",
+  "sourceDirName": "bimlflex/technology-ssis",
+  "slug": "/bimlflex/technology-ssis/concurrent-development",
+  "permalink": "/docs/bimlflex/technology-ssis/concurrent-development",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/concurrent-development.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-ssis-concurrent-development",
+    "title": "BimlFlex Concurrent Development",
+    "summary": "Documentation on metadata setup, customers, and versions needed for concurrent development between users in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "SSIS Deployment Overview",
+    "permalink": "/docs/bimlflex/technology-ssis/"
+  },
+  "next": {
+    "title": "BimlFlex Continuous Integration and Continuous Delivery",
+    "permalink": "/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery"
+  }
+}

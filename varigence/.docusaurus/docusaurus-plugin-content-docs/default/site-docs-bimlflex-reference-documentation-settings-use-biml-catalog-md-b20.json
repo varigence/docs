@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/UseBimlCatalog",
+  "title": "BimlFlex Settings Definition for UseBimlCatalog",
+  "description": "Documentation of settings option within BimlFlex for UseBimlCatalog",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/UseBimlCatalog.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/UseBimlCatalog",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/UseBimlCatalog",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/UseBimlCatalog.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for UseBimlCatalog",
+    "description": "Documentation of settings option within BimlFlex for UseBimlCatalog",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SuffixOrPrefixObject",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for UseCustomComponents",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseCustomComponents"
+  }
+}

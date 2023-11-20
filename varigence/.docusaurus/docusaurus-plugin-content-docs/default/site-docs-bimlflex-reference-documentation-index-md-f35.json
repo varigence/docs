@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/index",
+  "title": "BimlFlex Reference Documentation",
+  "description": "The BimlFlex Reference Documentation contains detailed information about the many ways BimlFlex can be configured",
+  "source": "@site/docs/bimlflex/reference-documentation/index.md",
+  "sourceDirName": "bimlflex/reference-documentation",
+  "slug": "/bimlflex/reference-documentation/",
+  "permalink": "/docs/bimlflex/reference-documentation/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/index.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Reference Documentation",
+    "description": "The BimlFlex Reference Documentation contains detailed information about the many ways BimlFlex can be configured",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Staging SQL",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Staging-Sql"
+  },
+  "next": {
+    "title": "BimlFlex Configurations",
+    "permalink": "/docs/bimlflex/reference-documentation/metadata-configurations"
+  }
+}

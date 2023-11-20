@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/UseCustomComponents",
+  "title": "BimlFlex Settings Definition for UseCustomComponents",
+  "description": "Documentation of settings option within BimlFlex for UseCustomComponents",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/UseCustomComponents.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/UseCustomComponents",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/UseCustomComponents",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/UseCustomComponents.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for UseCustomComponents",
+    "description": "Documentation of settings option within BimlFlex for UseCustomComponents",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for UseBimlCatalog",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseBimlCatalog"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for UseRecordSourceAsAppend",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsAppend"
+  }
+}

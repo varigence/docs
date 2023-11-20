@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/scenarios/index",
+  "title": "BimlFlex Scenarios Overview",
+  "description": "Overview of supporting techniques that BimlFlex provides",
+  "source": "@site/docs/bimlflex/scenarios/index.md",
+  "sourceDirName": "bimlflex/scenarios",
+  "slug": "/bimlflex/scenarios/",
+  "permalink": "/docs/bimlflex/scenarios/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/scenarios/index.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Scenarios Overview",
+    "description": "Overview of supporting techniques that BimlFlex provides",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Export To File",
+    "permalink": "/docs/bimlflex/scenarios/export-to-file"
+  },
+  "next": {
+    "title": "BimlFlex Microsoft SQL Server Master Data Services (MDS) integration",
+    "permalink": "/docs/bimlflex/scenarios/master-data-services"
+  }
+}

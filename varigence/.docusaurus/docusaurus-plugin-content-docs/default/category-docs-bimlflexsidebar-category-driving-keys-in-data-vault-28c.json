@@ -1,0 +1,15 @@
+{
+  "title": "Driving Keys in Data Vault",
+  "slug": "/category/driving-keys-in-data-vault",
+  "permalink": "/docs/category/driving-keys-in-data-vault",
+  "navigation": {
+    "previous": {
+      "title": "BimlFlex persistent staging area concept",
+      "permalink": "/docs/bimlflex/delivering-staging/persistent-staging-area"
+    },
+    "next": {
+      "title": "BimlFlex Data Vault Best Practices",
+      "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-best-practices"
+    }
+  }
+}

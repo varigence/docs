@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/extension-points/Object",
+  "title": "BimlFlex App Definition for Object",
+  "description": "Documentation of functionality within BimlFlex for the Object Extension Point category",
+  "source": "@site/docs/bimlflex/reference-documentation/extension-points/Object.md",
+  "sourceDirName": "bimlflex/reference-documentation/extension-points",
+  "slug": "/bimlflex/reference-documentation/extension-points/Object",
+  "permalink": "/docs/bimlflex/reference-documentation/extension-points/Object",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Object.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex App Definition for Object",
+    "description": "Documentation of functionality within BimlFlex for the Object Extension Point category",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Mapping Data Flows",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Project",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Project"
+  }
+}

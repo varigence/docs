@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureExternalFileConversion",
+  "title": "BimlFlex Settings Definition for AzureExternalFileConversion",
+  "description": "By default, the extraction process from a source to Blob Storage applies several conversions to create files that are supported by the target storage type. This setting allows control of this conversion process. This setting only applies for Azure Data Factory integration templates.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureExternalFileConversion.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureExternalFileConversion",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureExternalFileConversion",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureExternalFileConversion.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureExternalFileConversion",
+    "title": "BimlFlex Settings Definition for AzureExternalFileConversion",
+    "summary": "Documentation of settings option within BimlFlex for AzureExternalFileConversion",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureErrorSasToken",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureErrorSasToken"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureExternalFileFormat",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureExternalFileFormat"
+  }
+}

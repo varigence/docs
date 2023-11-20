@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
+  "title": "BimlFlex Settings Definition for AddRecordSourceToIntegrationKey",
+  "description": "Documentation of settings option within BimlFlex for AddRecordSourceToIntegrationKey",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for AddRecordSourceToIntegrationKey",
+    "description": "Documentation of settings option within BimlFlex for AddRecordSourceToIntegrationKey",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for 7ZipPath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/7ZipPath"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AddRowHashKeyIndex",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AddRowHashKeyIndex"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat",
+  "title": "BimlFlex Settings Definition for SsdtIncludeExternalFileFormat",
+  "description": "Documentation of settings option within BimlFlex for SsdtIncludeExternalFileFormat",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for SsdtIncludeExternalFileFormat",
+    "description": "Documentation of settings option within BimlFlex for SsdtIncludeExternalFileFormat",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsdtIncludeExternalDataSource",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalDataSource"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsdtIncludeExternalTables",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalTables"
+  }
+}

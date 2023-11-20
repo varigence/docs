@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureDeleteLandingFiles",
+  "title": "BimlFlex Settings Definition for AzureDeleteLandingFiles",
+  "description": "Determines if the landed files are deleted once processing is completed.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureDeleteLandingFiles",
+    "title": "BimlFlex Settings Definition for AzureDeleteLandingFiles",
+    "summary": "Documentation of settings option within BimlFlex for AzureDeleteLandingFiles",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureDataFactoryName",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureDataFactoryName"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureDeploymentAccountKey",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountKey"
+  }
+}

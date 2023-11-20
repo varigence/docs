@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ZipExtractFileInMemory",
+  "title": "BimlFlex Settings Definition for ZipExtractFileInMemory",
+  "description": "Documentation of settings option within BimlFlex for ZipExtractFileInMemory",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ZipExtractFileInMemory",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for ZipExtractFileInMemory",
+    "description": "Documentation of settings option within BimlFlex for ZipExtractFileInMemory",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ZipArchiveImport",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ZipArchiveImport"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for ZipOutputFile",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ZipOutputFile"
+  }
+}

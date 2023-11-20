@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/reference-documentation-extensionpoints-index",
+  "title": "BimlFlex App Reference Documentation",
+  "description": "Documentation of components and properties for all Extension Points within BimlFlex",
+  "source": "@site/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index.md",
+  "sourceDirName": "bimlflex/reference-documentation",
+  "slug": "/bimlflex/reference-documentation/reference-documentation-extensionpoints-index",
+  "permalink": "/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex App Reference Documentation",
+    "description": "Documentation of components and properties for all Extension Points within BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Reference Documentation",
+    "permalink": "/docs/bimlflex/reference-documentation/reference-documentation-entities-index"
+  },
+  "next": {
+    "title": "BimlFlex App reference Documentation for Settings",
+    "permalink": "/docs/bimlflex/reference-documentation/reference-documentation-settings-index"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsisConvertDateWithScale",
+  "title": "BimlFlex Settings Definition for SsisConvertDateWithScale",
+  "description": "Used to control the converted DateTime in the FlexToBk to ensure compatability with the SQL code.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsisConvertDateWithScale.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsisConvertDateWithScale",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsisConvertDateWithScale",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsisConvertDateWithScale.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SsisConvertDateWithScale",
+    "title": "BimlFlex Settings Definition for SsisConvertDateWithScale",
+    "summary": "Documentation of settings option within BimlFlex for SsisConvertDateWithScale",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsisCommandTimeout",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisCommandTimeout"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsisCreateFolder",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisCreateFolder"
+  }
+}

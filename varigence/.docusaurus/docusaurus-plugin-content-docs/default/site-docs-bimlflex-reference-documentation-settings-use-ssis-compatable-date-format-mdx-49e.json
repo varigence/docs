@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat",
+  "title": "BimlFlex Settings Definition for UseSsisCompatableDateFormat",
+  "description": "Used to control the converted DateTime in the FlexToBk to ensure compatability with the SQL code.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-UseSsisCompatableDateFormat",
+    "title": "BimlFlex Settings Definition for UseSsisCompatableDateFormat",
+    "summary": "Documentation of settings option within BimlFlex for UseSsisCompatableDateFormat",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for UseSqlCompatibleRowHash",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleRowHash"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for UseTrueFalseForBoolean",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean"
+  }
+}

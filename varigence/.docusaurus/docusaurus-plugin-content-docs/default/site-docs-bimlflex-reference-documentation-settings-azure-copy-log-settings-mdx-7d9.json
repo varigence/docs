@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureCopyLogSettings",
+  "title": "BimlFlex Settings Definition for AzureCopyLogSettings",
+  "description": "The settings for the logging in the Copy Activity, when logging is enabled. Use \"@@this\" to automatically use the Linked Service associated with the PolyBase Landing connection.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureCopyLogSettings.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureCopyLogSettings",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyLogSettings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureCopyLogSettings.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureCopyLogSettings",
+    "title": "BimlFlex Settings Definition for AzureCopyLogSettings",
+    "summary": "Documentation of settings option within BimlFlex for AzureCopyLogSettings",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureCopyEnableStaging",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyEnableStaging"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureCopyMethod",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyMethod"
+  }
+}

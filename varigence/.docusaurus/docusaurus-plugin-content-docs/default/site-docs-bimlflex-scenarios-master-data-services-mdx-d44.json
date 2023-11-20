@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/scenarios/master-data-services",
+  "title": "BimlFlex Microsoft SQL Server Master Data Services (MDS) integration",
+  "description": "Microsoft SQL Server Master Data Services (MDS) is an enterprise data management tool included in the Enterprise Edition of SQL Server.",
+  "source": "@site/docs/bimlflex/scenarios/master-data-services.mdx",
+  "sourceDirName": "bimlflex/scenarios",
+  "slug": "/bimlflex/scenarios/master-data-services",
+  "permalink": "/docs/bimlflex/scenarios/master-data-services",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/scenarios/master-data-services.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-master-data-services",
+    "title": "BimlFlex Microsoft SQL Server Master Data Services (MDS) integration",
+    "summary": "Documentation on integrating Microsoft SQL Server Master Data Services within BimlFlex with sample models, sample metadata, and schema types",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Export To File",
+    "permalink": "/docs/bimlflex/scenarios/export-to-file"
+  },
+  "next": {
+    "title": "BimlFlex PostgreSQL Source",
+    "permalink": "/docs/bimlflex/scenarios/source-azure-postgres"
+  }
+}

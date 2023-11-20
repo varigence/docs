@@ -1,0 +1,15 @@
+{
+  "title": "Azure Function Bridge",
+  "slug": "/category/azure-function-bridge",
+  "permalink": "/docs/category/azure-function-bridge",
+  "navigation": {
+    "previous": {
+      "title": "BimlFlex-generated SQL Server Data Tools Project",
+      "permalink": "/docs/bimlflex/build-and-deployment/ssdt-project"
+    },
+    "next": {
+      "title": "BimlFlex ADF Deployment Guide",
+      "permalink": "/docs/bimlflex/technology-adf/adf-deployment"
+    }
+  }
+}

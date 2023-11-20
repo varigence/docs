@@ -1,0 +1,39 @@
+{
+  "id": "bimlflex/installation/upgrade-process",
+  "title": "Upgrade and Testing Process",
+  "description": "BimlFlex comes in a consolidated installer that contains the following components that are upgraded when a later version is installed:",
+  "source": "@site/docs/bimlflex/installation/upgrade-process.md",
+  "sourceDirName": "bimlflex/installation",
+  "slug": "/bimlflex/installation/upgrade-process",
+  "permalink": "/docs/bimlflex/installation/upgrade-process",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/installation/upgrade-process.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Upgrade and Testing Process",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Software and Hardware requirements",
+    "permalink": "/docs/bimlflex/installation/system-requirements"
+  },
+  "next": {
+    "title": "Release Notes",
+    "permalink": "/docs/category/release-notes"
+  }
+}

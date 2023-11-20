@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/technology-ssis/ssis-deployment",
+  "title": "BimlFlex SSIS Deployment Guide",
+  "description": "Modern versions of SQL Server (2012+) supports project configurations and deployments to the SSIS Catalog. This document details how to use the project deployment model in BimlFlex and how to align that deployment to the SSIS Catalog environments for variable assignments. This can be used to populate passwords and connection strings for connections and inject them when the package is running on the SSIS Server",
+  "source": "@site/docs/bimlflex/technology-ssis/ssis-deployment.mdx",
+  "sourceDirName": "bimlflex/technology-ssis",
+  "slug": "/bimlflex/technology-ssis/ssis-deployment",
+  "permalink": "/docs/bimlflex/technology-ssis/ssis-deployment",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/ssis-deployment.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-ssis-deployment-guide",
+    "title": "BimlFlex SSIS Deployment Guide",
+    "summary": "Documentation on project configurations and deployments to SSIS Catalog within BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Deployment Through the SSIS Deployment Wizard",
+    "permalink": "/docs/bimlflex/technology-ssis/ssis-deployment-wizard"
+  },
+  "next": {
+    "title": "SSIS with on-premises SQL Server",
+    "permalink": "/docs/bimlflex/technology-ssis/ssis-on-prem-sql-server"
+  }
+}

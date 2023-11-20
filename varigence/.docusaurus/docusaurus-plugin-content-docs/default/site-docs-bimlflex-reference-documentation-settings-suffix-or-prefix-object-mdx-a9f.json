@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SuffixOrPrefixObject",
+  "title": "BimlFlex Settings Definition for SuffixOrPrefixObject",
+  "description": "The \"SuffixOrPrefixObject\" key defines the behavior when naming objects.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SuffixOrPrefixObject",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SuffixOrPrefixObject",
+    "title": "BimlFlex Settings Definition for SuffixOrPrefixObject",
+    "summary": "Documentation of settings option within BimlFlex for SuffixOrPrefixObject",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SuffixOrPrefixColumn",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for UseBimlCatalog",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/UseBimlCatalog"
+  }
+}

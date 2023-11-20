@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/scenarios/source-cdc",
+  "title": "Change Data Capture Source to Staging",
+  "description": "Documentation regarding Microsoft SQL Server change data capture in source to staging with setting descriptions and additional considerations",
+  "source": "@site/docs/bimlflex/scenarios/source-cdc.md",
+  "sourceDirName": "bimlflex/scenarios",
+  "slug": "/bimlflex/scenarios/source-cdc",
+  "permalink": "/docs/bimlflex/scenarios/source-cdc",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/scenarios/source-cdc.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Change Data Capture Source to Staging",
+    "description": "Documentation regarding Microsoft SQL Server change data capture in source to staging with setting descriptions and additional considerations",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex PostgreSQL Source",
+    "permalink": "/docs/bimlflex/scenarios/source-azure-postgres"
+  },
+  "next": {
+    "title": "BimlFlex COZYROC Excel Plus Source",
+    "permalink": "/docs/bimlflex/scenarios/source-excel-plus"
+  }
+}

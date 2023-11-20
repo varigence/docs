@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/delivering-data-vault/data-vault-business-data-vault",
+  "title": "Business Data Vault",
+  "description": "Overview of implementing a Business Data Vault based on a Data Vault",
+  "source": "@site/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault.md",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/data-vault-business-data-vault",
+  "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Business Data Vault",
+    "description": "Overview of implementing a Business Data Vault based on a Data Vault",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Data Vault Best Practices",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-best-practices"
+  },
+  "next": {
+    "title": "Data Vault Hubs",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-concept-hub"
+  }
+}

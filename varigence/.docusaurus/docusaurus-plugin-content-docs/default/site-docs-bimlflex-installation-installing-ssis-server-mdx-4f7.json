@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/installation/installing-ssis-server",
+  "title": "SSIS Server Installation",
+  "description": "For SSIS Server installations, the Varigence Custom SSIS components used in BimlFlex generated SSIS packages are required to be available on the server.",
+  "source": "@site/docs/bimlflex/installation/installing-ssis-server.mdx",
+  "sourceDirName": "bimlflex/installation",
+  "slug": "/bimlflex/installation/installing-ssis-server",
+  "permalink": "/docs/bimlflex/installation/installing-ssis-server",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/installation/installing-ssis-server.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-setup-ssis-server-install",
+    "title": "SSIS Server Installation",
+    "summary": "Documentation on how to install custom SSIS components used in BimlFlex to generate SSIS packages",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Metadata Database Installation",
+    "permalink": "/docs/bimlflex/installation/installing-metadata-database"
+  },
+  "next": {
+    "title": "BimlFlex Software and Hardware requirements",
+    "permalink": "/docs/bimlflex/installation/system-requirements"
+  }
+}

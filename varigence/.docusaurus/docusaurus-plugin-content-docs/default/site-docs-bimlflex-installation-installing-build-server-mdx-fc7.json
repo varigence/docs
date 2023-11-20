@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/installation/installing-build-server",
+  "title": "BimlFlex Build Server Install",
+  "description": "BimlFlex can be installed on a build server as part of a Continuous Integration and Continuous Delivery pipeline.",
+  "source": "@site/docs/bimlflex/installation/installing-build-server.mdx",
+  "sourceDirName": "bimlflex/installation",
+  "slug": "/bimlflex/installation/installing-build-server",
+  "permalink": "/docs/bimlflex/installation/installing-build-server",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/installation/installing-build-server.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-setup-build-server-install",
+    "title": "BimlFlex Build Server Install",
+    "summary": "Assistance on how to install a BimlFlex build server as part of a CI/CD pipeline",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Installing BimlFlex",
+    "permalink": "/docs/bimlflex/installation/installing-bimlflex"
+  },
+  "next": {
+    "title": "BimlFlex Developer Installation",
+    "permalink": "/docs/bimlflex/installation/installing-developer-tools"
+  }
+}

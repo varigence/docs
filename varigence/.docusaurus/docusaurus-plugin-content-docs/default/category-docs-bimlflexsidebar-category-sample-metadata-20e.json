@@ -1,0 +1,15 @@
+{
+  "title": "Sample Metadata",
+  "slug": "/category/sample-metadata",
+  "permalink": "/docs/category/sample-metadata",
+  "navigation": {
+    "previous": {
+      "title": "BimlFlex Documentation",
+      "permalink": "/docs/bimlflex/"
+    },
+    "next": {
+      "title": "Getting Started with BimlFlex",
+      "permalink": "/docs/bimlflex/getting-started/"
+    }
+  }
+}

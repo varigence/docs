@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ConstraintModeStg",
+  "title": "BimlFlex Settings Definition for ConstraintModeStg",
+  "description": "The table reference constraint mode to apply for the STG (Staging) tables in BimlStudio for diagram previewing. Allowed values are \"DoNotCreate\", \"CreateAndNoCheck\" and \"CreateAndCheck\".",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ConstraintModeStg.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ConstraintModeStg",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ConstraintModeStg",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ConstraintModeStg.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-ConstraintModeStg",
+    "title": "BimlFlex Settings Definition for ConstraintModeStg",
+    "summary": "Documentation of settings option within BimlFlex for ConstraintModeStg",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ConstraintModeDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ConstraintModeDv"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for ConvertGuidToString",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ConvertGuidToString"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/delivering-data-vault/microsoft-best-practice-data-vault",
+  "title": "Best Practices for Deploying Data Vault on Azure Synapse",
+  "description": "Documentation on Microsoft Azure Best Practices for Azure Synapse, with attention on interface contracts, forward only migration, version control, and distribution",
+  "source": "@site/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault.md",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault",
+  "permalink": "/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Best Practices for Deploying Data Vault on Azure Synapse",
+    "description": "Documentation on Microsoft Azure Best Practices for Azure Synapse, with attention on interface contracts, forward only migration, version control, and distribution",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Data Vault and BimlFlex",
+    "permalink": "/docs/bimlflex/delivering-data-vault/"
+  },
+  "next": {
+    "title": "Delivering Data Marts",
+    "permalink": "/docs/category/delivering-data-marts"
+  }
+}

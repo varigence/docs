@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/PsaDeltaStageAllRows",
+  "title": "BimlFlex Settings Definition for PsaDeltaStageAllRows",
+  "description": "Determines if the delta process stages all rows. Otherwise, the process will compress row changes into distinct change rows - removing full row duplicates.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-PsaDeltaStageAllRows",
+    "title": "BimlFlex Settings Definition for PsaDeltaStageAllRows",
+    "summary": "Documentation of settings option within BimlFlex for PsaDeltaStageAllRows",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for PsaDeltaSingleChange",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/PsaDeltaSingleChange"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for PsaEltDeltaIsDerived",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/PsaEltDeltaIsDerived"
+  }
+}

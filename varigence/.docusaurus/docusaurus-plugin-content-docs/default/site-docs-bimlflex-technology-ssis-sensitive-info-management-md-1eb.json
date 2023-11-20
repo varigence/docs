@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/technology-ssis/sensitive-info-management",
+  "title": "Sensitive Information Management in SSIS",
+  "description": "Documentation regarding sensitive information management in SSIS, Visual Studio, and extension points",
+  "source": "@site/docs/bimlflex/technology-ssis/sensitive-info-management.md",
+  "sourceDirName": "bimlflex/technology-ssis",
+  "slug": "/bimlflex/technology-ssis/sensitive-info-management",
+  "permalink": "/docs/bimlflex/technology-ssis/sensitive-info-management",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/sensitive-info-management.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Sensitive Information Management in SSIS",
+    "description": "Documentation regarding sensitive information management in SSIS, Visual Studio, and extension points",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "SSIS Deployment Overview",
+    "permalink": "/docs/bimlflex/technology-ssis/"
+  },
+  "next": {
+    "title": "BimlFlex SSIS Custom Components",
+    "permalink": "/docs/bimlflex/technology-ssis/ssis-custom-components"
+  }
+}

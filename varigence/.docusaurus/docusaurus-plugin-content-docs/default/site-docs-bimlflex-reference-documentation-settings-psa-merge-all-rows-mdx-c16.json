@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/PsaMergeAllRows",
+  "title": "BimlFlex Settings Definition for PsaMergeAllRows",
+  "description": "The setting \"Merge All Rows\" is only used when the source is an \"object\" and the target is of the object type \"Table\". Using this setup, when the target also has the \"hash\" option for the \"RowHashType1\" or \"RowHashType2\", the Merge All Rows setting will replace the hash with a NULL value in the source-select of the merge statement.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/PsaMergeAllRows.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/PsaMergeAllRows",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/PsaMergeAllRows",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/PsaMergeAllRows.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-PsaMergeAllRows",
+    "title": "BimlFlex Settings Definition for PsaMergeAllRows",
+    "summary": "Documentation of settings option within BimlFlex for PsaMergeAllRows",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for PsaEltDeltaIsDerived",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/PsaEltDeltaIsDerived"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for PsaTemporalTableName",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/PsaTemporalTableName"
+  }
+}

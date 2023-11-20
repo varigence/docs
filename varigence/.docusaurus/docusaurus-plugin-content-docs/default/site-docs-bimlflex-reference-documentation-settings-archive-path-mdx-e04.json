@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ArchivePath",
+  "title": "BimlFlex Settings Definition for ArchivePath",
+  "description": "The default path for file archive operations.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ArchivePath.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ArchivePath",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ArchivePath",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ArchivePath.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-ArchivePath",
+    "title": "BimlFlex Settings Definition for ArchivePath",
+    "summary": "Documentation of settings option within BimlFlex for ArchivePath",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ArchiveImport",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ArchiveImport"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for ArchiveRetentionPeriod",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ArchiveRetentionPeriod"
+  }
+}

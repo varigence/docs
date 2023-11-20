@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ExtractFileSplitSize",
+  "title": "BimlFlex Settings Definition for ExtractFileSplitSize",
+  "description": "The file size to split extracted files into multiple files for. Applied if the file is larger than 2x this size. Use 0 to not split files. Size in MB",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ExtractFileSplitSize.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ExtractFileSplitSize",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ExtractFileSplitSize",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ExtractFileSplitSize.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-ExtractFileSplitSize",
+    "title": "BimlFlex Settings Definition for ExtractFileSplitSize",
+    "summary": "Documentation of settings option within BimlFlex for ExtractFileSplitSize",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ExtractFileEncoding",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ExtractFileEncoding"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for GlobalDefaultDate",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/GlobalDefaultDate"
+  }
+}

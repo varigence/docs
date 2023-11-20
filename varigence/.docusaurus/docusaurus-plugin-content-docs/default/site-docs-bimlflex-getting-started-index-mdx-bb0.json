@@ -1,0 +1,28 @@
+{
+  "id": "bimlflex/getting-started/index",
+  "title": "Getting Started with BimlFlex",
+  "description": "Get up to speed with BimlFlex with this starter guide!",
+  "source": "@site/docs/bimlflex/getting-started/index.mdx",
+  "sourceDirName": "bimlflex/getting-started",
+  "slug": "/bimlflex/getting-started/",
+  "permalink": "/docs/bimlflex/getting-started/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/getting-started/index.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-getting-started",
+    "title": "Getting Started with BimlFlex",
+    "summary": "Guide on getting started with BimlFlex including introductory videos, initial configuration, and first project walkthrough"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Documentation Viewer User Guide",
+    "permalink": "/docs/bimlflex/docs-gen/"
+  },
+  "next": {
+    "title": "BimlFlex Components Overview",
+    "permalink": "/docs/bimlflex/getting-started/bimlflex-components-overview"
+  }
+}

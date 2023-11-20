@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/extension-points/Batch",
+  "title": "BimlFlex App Definition for Batch",
+  "description": "Documentation of functionality within BimlFlex for the Batch Extension Point category",
+  "source": "@site/docs/bimlflex/reference-documentation/extension-points/Batch.md",
+  "sourceDirName": "bimlflex/reference-documentation/extension-points",
+  "slug": "/bimlflex/reference-documentation/extension-points/Batch",
+  "permalink": "/docs/bimlflex/reference-documentation/extension-points/Batch",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Batch.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex App Definition for Batch",
+    "description": "Documentation of functionality within BimlFlex for the Batch Extension Point category",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex App Definition for Azure",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Azure"
+  },
+  "next": {
+    "title": "BimlFlex App Definition for Connection",
+    "permalink": "/docs/bimlflex/reference-documentation/extension-points/Connection"
+  }
+}

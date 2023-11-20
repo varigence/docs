@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport",
+  "title": "BimlFlex Settings Definition for SsdtIncludeNetCoreSupport",
+  "description": "Documentation of settings option within BimlFlex for SsdtIncludeNetCoreSupport",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for SsdtIncludeNetCoreSupport",
+    "description": "Documentation of settings option within BimlFlex for SsdtIncludeNetCoreSupport",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsdtIncludeMasterKey",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeMasterKey"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsdtOutputPath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsdtOutputPath"
+  }
+}

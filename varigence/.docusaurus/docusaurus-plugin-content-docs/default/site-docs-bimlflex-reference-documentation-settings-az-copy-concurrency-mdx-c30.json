@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzCopyConcurrency",
+  "title": "BimlFlex Settings Definition for AzCopyConcurrency",
+  "description": "Specify the number of concurrent AzCopy operations to start.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzCopyConcurrency.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzCopyConcurrency",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyConcurrency",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzCopyConcurrency.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzCopyConcurrency",
+    "title": "BimlFlex Settings Definition for AzCopyConcurrency",
+    "summary": "Documentation of settings option within BimlFlex for AzCopyConcurrency",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzCopyCapMbps",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyCapMbps"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzCopyCreateContainer",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzCopyCreateContainer"
+  }
+}

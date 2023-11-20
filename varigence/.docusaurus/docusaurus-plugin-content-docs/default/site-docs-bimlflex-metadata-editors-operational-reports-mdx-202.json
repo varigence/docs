@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/metadata-editors/operational-reports",
+  "title": "BimlFlex Operational Reports",
+  "description": "Operational Reports screens allow users to see the status of their package runs at a high level and to drill down into details and view errors in failing packages.",
+  "source": "@site/docs/bimlflex/metadata-editors/operational-reports.mdx",
+  "sourceDirName": "bimlflex/metadata-editors",
+  "slug": "/bimlflex/metadata-editors/operational-reports",
+  "permalink": "/docs/bimlflex/metadata-editors/operational-reports",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/operational-reports.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-operational-reports",
+    "title": "BimlFlex Operational Reports",
+    "summary": "Documentation regarding the BimlFlex Operational Reports screen, including configuring operational reports, report screens, and execution details for batches",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Object Editor",
+    "permalink": "/docs/bimlflex/metadata-editors/object-editor"
+  },
+  "next": {
+    "title": "Parameters",
+    "permalink": "/docs/bimlflex/metadata-editors/parameter-editor"
+  }
+}

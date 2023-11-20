@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/support/setting-up-adventureworkslt2012-source-database",
+  "title": "Setting up the AdventureWorksLT source database",
+  "description": "Directions on how to set up AdventureWorksLT as source database with detailed steps and supporting documentation",
+  "source": "@site/docs/bimlflex/support/setting-up-adventureworkslt2012-source-database.md",
+  "sourceDirName": "bimlflex/support",
+  "slug": "/bimlflex/support/setting-up-adventureworkslt2012-source-database",
+  "permalink": "/docs/bimlflex/support/setting-up-adventureworkslt2012-source-database",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/support/setting-up-adventureworkslt2012-source-database.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Setting up the AdventureWorksLT source database",
+    "description": "Directions on how to set up AdventureWorksLT as source database with detailed steps and supporting documentation",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Support Overview",
+    "permalink": "/docs/bimlflex/support/"
+  },
+  "next": {
+    "title": "BimlFlex Support Process",
+    "permalink": "/docs/bimlflex/support/support-process"
+  }
+}

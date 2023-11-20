@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/RetainExistingMetadata",
+  "title": "BimlFlex Settings Definition for RetainExistingMetadata",
+  "description": "Documentation of settings option within BimlFlex for RetainExistingMetadata",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/RetainExistingMetadata.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/RetainExistingMetadata",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/RetainExistingMetadata",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/RetainExistingMetadata.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for RetainExistingMetadata",
+    "description": "Documentation of settings option within BimlFlex for RetainExistingMetadata",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for PsaUseCacheLookup",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/PsaUseCacheLookup"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for RootPath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/RootPath"
+  }
+}

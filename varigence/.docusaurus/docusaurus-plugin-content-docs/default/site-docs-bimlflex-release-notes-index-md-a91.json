@@ -1,0 +1,27 @@
+{
+  "id": "bimlflex/release-notes/index",
+  "title": "BimlFlex release notes",
+  "description": "An overview of key new features for the corresponding BimlFlex releases",
+  "source": "@site/docs/bimlflex/release-notes/index.md",
+  "sourceDirName": "bimlflex/release-notes",
+  "slug": "/bimlflex/release-notes/",
+  "permalink": "/docs/bimlflex/release-notes/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/release-notes/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex release notes",
+    "description": "An overview of key new features for the corresponding BimlFlex releases"
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Release Notes",
+    "permalink": "/docs/category/release-notes"
+  },
+  "next": {
+    "title": "BimlFlex Release Notes 2018.1",
+    "permalink": "/docs/bimlflex/release-notes/new-features-2018.1"
+  }
+}

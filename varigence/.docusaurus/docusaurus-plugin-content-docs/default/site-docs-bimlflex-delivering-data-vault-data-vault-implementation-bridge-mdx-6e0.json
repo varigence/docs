@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/delivering-data-vault/data-vault-implementation-bridge",
+  "title": "Data Vault Bridge tables",
+  "description": "The Bridge table is a combination of primary keys and business keys spread across multiple Hub and Link tables.",
+  "source": "@site/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge.mdx",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/data-vault-implementation-bridge",
+  "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-data-vault-concept-bridge",
+    "title": "Data Vault Bridge tables",
+    "summary": "Overview of Data Vault Bridge tables",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Data Vault Dimensional Model",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-dimensional-model"
+  },
+  "next": {
+    "title": "Data Vault Point-In-Time tables",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-implementation-pit"
+  }
+}

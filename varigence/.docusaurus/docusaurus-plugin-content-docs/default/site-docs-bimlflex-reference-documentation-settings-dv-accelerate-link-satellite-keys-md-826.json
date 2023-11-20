@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys",
+  "title": "BimlFlex Settings Definition for DvAccelerateLinkSatelliteKeys",
+  "description": "Documentation of settings option within BimlFlex for DvAccelerateLinkSatelliteKeys",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for DvAccelerateLinkSatelliteKeys",
+    "description": "Documentation of settings option within BimlFlex for DvAccelerateLinkSatelliteKeys",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for DvAccelerateLinkSatellite",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatellite"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for DvAccelerateShowColumns",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/DvAccelerateShowColumns"
+  }
+}

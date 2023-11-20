@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/delivering-data-vault/data-vault-business-data-vault",
+  "title": "Business Data Vault",
+  "description": "A Business Data Vault is a conceptual construct that separates the original, unchanged, data from the data against which transformations have been applied. When defining a Data Vault, a typical approach is to map the source data sets as closely as possible to the intended target Data Vault model without changing the meaning of the data.",
+  "source": "@site/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault.mdx",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/data-vault-business-data-vault",
+  "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-data-vault-business-data-vault",
+    "title": "Business Data Vault",
+    "summary": "Overview of implementing a Business Data Vault based on a Data Vault",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Data Vault Best Practices",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-best-practices"
+  },
+  "next": {
+    "title": "Data Vault Hubs",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-concept-hub"
+  }
+}

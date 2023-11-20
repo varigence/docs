@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/SsisRowsPerBatch",
+  "title": "BimlFlex Settings Definition for SsisRowsPerBatch",
+  "description": "SSIS Data Flow configuration for Rows Per Batch for supported destinations.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/SsisRowsPerBatch.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/SsisRowsPerBatch",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/SsisRowsPerBatch",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/SsisRowsPerBatch.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-SsisRowsPerBatch",
+    "title": "BimlFlex Settings Definition for SsisRowsPerBatch",
+    "summary": "Documentation of settings option within BimlFlex for SsisRowsPerBatch",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for SsisProcessSubfolders",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisProcessSubfolders"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for SsisServer",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/SsisServer"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ConstraintModeDm",
+  "title": "BimlFlex Settings Definition for ConstraintModeDm",
+  "description": "The table reference constraint mode to apply for the Data Mart database. Allowed values are \"DoNotCreate\", \"CreateAndNoCheck\" and \"CreateAndCheck\".",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ConstraintModeDm.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ConstraintModeDm",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ConstraintModeDm",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ConstraintModeDm.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-ConstraintModeDm",
+    "title": "BimlFlex Settings Definition for ConstraintModeDm",
+    "summary": "Documentation of settings option within BimlFlex for ConstraintModeDm",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ConfigurationPath",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ConfigurationPath"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for ConstraintModeDv",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ConstraintModeDv"
+  }
+}

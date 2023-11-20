@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/delivering-data-vault/data-vault-implementation-bridge",
+  "title": "Data Vault Bridge tables",
+  "description": "Overview of Data Vault Bridge tables",
+  "source": "@site/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge.md",
+  "sourceDirName": "bimlflex/delivering-data-vault",
+  "slug": "/bimlflex/delivering-data-vault/data-vault-implementation-bridge",
+  "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Conceptual",
+      "permalink": "/docs/tags/conceptual"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Data Vault Bridge tables",
+    "description": "Overview of Data Vault Bridge tables",
+    "tags": [
+      "BimlFlex",
+      "Conceptual"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Data Vault Dimensional Model",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-dimensional-model"
+  },
+  "next": {
+    "title": "Data Vault Point-In-Time tables",
+    "permalink": "/docs/bimlflex/delivering-data-vault/data-vault-implementation-pit"
+  }
+}

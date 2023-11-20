@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/technology-ssis/continuous-integration-and-continuous-delivery",
+  "title": "BimlFlex Continuous Integration and Continuous Delivery",
+  "description": "The following guide is from tailored specifically for SSIS.",
+  "source": "@site/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery.mdx",
+  "sourceDirName": "bimlflex/technology-ssis",
+  "slug": "/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery",
+  "permalink": "/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-ssis-continuous-integration-and-continuous-delivery",
+    "title": "BimlFlex Continuous Integration and Continuous Delivery",
+    "summary": "Documentation providing consideration and approaches to continue integration and continuous delivery within BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Concurrent Development",
+    "permalink": "/docs/bimlflex/technology-ssis/concurrent-development"
+  },
+  "next": {
+    "title": "Sensitive Information Management in SSIS",
+    "permalink": "/docs/bimlflex/technology-ssis/sensitive-info-management"
+  }
+}

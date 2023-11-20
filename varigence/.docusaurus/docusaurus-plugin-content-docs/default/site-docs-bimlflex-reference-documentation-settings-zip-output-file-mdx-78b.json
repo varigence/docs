@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/ZipOutputFile",
+  "title": "BimlFlex Settings Definition for ZipOutputFile",
+  "description": "Determine if the created output file is zipped.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/ZipOutputFile.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/ZipOutputFile",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/ZipOutputFile",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/ZipOutputFile.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-ZipOutputFile",
+    "title": "BimlFlex Settings Definition for ZipOutputFile",
+    "summary": "Documentation of settings option within BimlFlex for ZipOutputFile",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for ZipExtractFileInMemory",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory"
+  },
+  "next": {
+    "title": "BimlFlex release notes",
+    "permalink": "/docs/bimlflex/release-notes/"
+  }
+}

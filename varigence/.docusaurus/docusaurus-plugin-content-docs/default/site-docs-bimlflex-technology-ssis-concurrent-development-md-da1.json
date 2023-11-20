@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/technology-ssis/concurrent-development",
+  "title": "BimlFlex Concurrent Development",
+  "description": "Documentation on metadata setup, customers, and versions needed for concurrent development between users in BimlFlex",
+  "source": "@site/docs/bimlflex/technology-ssis/concurrent-development.md",
+  "sourceDirName": "bimlflex/technology-ssis",
+  "slug": "/bimlflex/technology-ssis/concurrent-development",
+  "permalink": "/docs/bimlflex/technology-ssis/concurrent-development",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/concurrent-development.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Walkthrough",
+      "permalink": "/docs/tags/walkthrough"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Concurrent Development",
+    "description": "Documentation on metadata setup, customers, and versions needed for concurrent development between users in BimlFlex",
+    "tags": [
+      "BimlFlex",
+      "Walkthrough"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex for SQL Server Integration Services",
+    "permalink": "/docs/category/bimlflex-for-sql-server-integration-services"
+  },
+  "next": {
+    "title": "BimlFlex Continuous Integration and Continuous Delivery",
+    "permalink": "/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery"
+  }
+}

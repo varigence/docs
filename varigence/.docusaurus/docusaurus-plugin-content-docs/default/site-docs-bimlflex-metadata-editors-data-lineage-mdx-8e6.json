@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/metadata-editors/data-lineage",
+  "title": "Data Lineage",
+  "description": "Documentation on Data Lineage within BimlFlex to review and update graphical interface, with starting point, context aware actions, action buttons, and settings",
+  "source": "@site/docs/bimlflex/metadata-editors/data-lineage.mdx",
+  "sourceDirName": "bimlflex/metadata-editors",
+  "slug": "/bimlflex/metadata-editors/data-lineage",
+  "permalink": "/docs/bimlflex/metadata-editors/data-lineage",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/data-lineage.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "Data Lineage",
+    "description": "Documentation on Data Lineage within BimlFlex to review and update graphical interface, with starting point, context aware actions, action buttons, and settings",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "Dashboard",
+    "permalink": "/docs/bimlflex/metadata-editors/dashboard"
+  },
+  "next": {
+    "title": "BimlFlex Data Type Mappings",
+    "permalink": "/docs/bimlflex/metadata-editors/data-type-mappings"
+  }
+}

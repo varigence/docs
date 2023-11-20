@@ -1,0 +1,41 @@
+{
+  "id": "bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency",
+  "title": "BimlFlex Settings Definition for AzureCopyValidateDataConsistency",
+  "description": "Determines if the Copy Activity validates data consistency for supported sources and sinks.",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency.mdx",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency.mdx",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-app-reference-documentation-setting-AzureCopyValidateDataConsistency",
+    "title": "BimlFlex Settings Definition for AzureCopyValidateDataConsistency",
+    "summary": "Documentation of settings option within BimlFlex for AzureCopyValidateDataConsistency",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for AzureCopyTimeout",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCopyTimeout"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for AzureCreateDummyFile",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/AzureCreateDummyFile"
+  }
+}

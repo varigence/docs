@@ -1,0 +1,40 @@
+{
+  "id": "bimlflex/reference-documentation/settings/StageObjectWithBusinessName",
+  "title": "BimlFlex Settings Definition for StageObjectWithBusinessName",
+  "description": "Documentation of settings option within BimlFlex for StageObjectWithBusinessName",
+  "source": "@site/docs/bimlflex/reference-documentation/settings/StageObjectWithBusinessName.md",
+  "sourceDirName": "bimlflex/reference-documentation/settings",
+  "slug": "/bimlflex/reference-documentation/settings/StageObjectWithBusinessName",
+  "permalink": "/docs/bimlflex/reference-documentation/settings/StageObjectWithBusinessName",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/settings/StageObjectWithBusinessName.md",
+  "tags": [
+    {
+      "label": "BimlFlex",
+      "permalink": "/docs/tags/biml-flex"
+    },
+    {
+      "label": "Reference",
+      "permalink": "/docs/tags/reference"
+    }
+  ],
+  "version": "current",
+  "frontMatter": {
+    "title": "BimlFlex Settings Definition for StageObjectWithBusinessName",
+    "description": "Documentation of settings option within BimlFlex for StageObjectWithBusinessName",
+    "tags": [
+      "BimlFlex",
+      "Reference"
+    ]
+  },
+  "sidebar": "bimlflexSidebar",
+  "previous": {
+    "title": "BimlFlex Settings Definition for StageColumnWithBusinessName",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/StageColumnWithBusinessName"
+  },
+  "next": {
+    "title": "BimlFlex Settings Definition for StageReduceLinkKeys",
+    "permalink": "/docs/bimlflex/reference-documentation/settings/StageReduceLinkKeys"
+  }
+}

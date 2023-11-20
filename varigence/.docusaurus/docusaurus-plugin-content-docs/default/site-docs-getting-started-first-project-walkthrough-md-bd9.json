@@ -1,0 +1,26 @@
+{
+  "id": "getting-started/first-project-walkthrough",
+  "title": "First Project Walkthrough",
+  "description": "This is a step-by-step guide for building a data solution using BimlFlex. For these examples, a local installation of BimlFlex and BimlStudio are used for development.",
+  "source": "@site/docs/getting-started/first-project-walkthrough.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/first-project-walkthrough",
+  "permalink": "/docs/getting-started/first-project-walkthrough",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/getting-started/first-project-walkthrough.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "uid": "bimlflex-getting-started-first-project-walkthrough",
+    "title": "First Project Walkthrough",
+    "summary": "Guidance on creating a BimlFlex project end to end, including setting up source data, accelerating a data vault, and applying load parameters",
+    "varigenceProduct": "BimlFlex",
+    "varigenceArticleType": "Walkthrough"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started with BimlFlex",
+    "permalink": "/docs/getting-started/"
+  }
+}
