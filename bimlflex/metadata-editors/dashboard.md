@@ -135,7 +135,7 @@ Archive deleted entities of the selected types. Be aware that this action cannot
 
 The Data Type Mappings are added to all columns for a specific `Record Source`
 
-See [More info](data-type-mappings.md).
+See [More info](xref:bimlflex-data-type-mappings).
 
 ## Export Metadata
 

@@ -67,7 +67,7 @@ Pipeline(s) are now available for verification or running inside [ADF](https://d
 
 1. Create the Triggers manually, and deploy them to the Data Factory. This can be done either in the [Authoring Tool](https://docs.microsoft.com/en-us/azure/data-factory/author-visually), or via PowerShell.
 
-2. Users can take advantage of BimlFlex [Extension Points](/./bimlflex\reference-documentation\extension-point-definitions.md) and create triggers for each Batch. An example extension point that creates an ADF trigger is listed below. This trigger will now be created inside of the ARM template file and deployed with the rest of the ADF assets.
+2. Users can take advantage of BimlFlex [Extension Points](xref:bimlflex-concepts-extension-points) and create triggers for each Batch. An example extension point that creates an ADF trigger is listed below. This trigger will now be created inside of the ARM template file and deployed with the rest of the ADF assets.
 
 ```Biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfTrigger" #>
