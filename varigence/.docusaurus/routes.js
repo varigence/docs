@@ -99,11 +99,11 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '5b1'),
+    component: ComponentCreator('/docs', '1c7'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b27'),
+        component: ComponentCreator('/docs', '3a1'),
         routes: [
           {
             path: '/docs/tags',
@@ -113,6 +113,11 @@ export default [
           {
             path: '/docs/tags/biml-flex',
             component: ComponentCreator('/docs/tags/biml-flex', '583'),
+            exact: true
+          },
+          {
+            path: '/docs/tags/biml-studio',
+            component: ComponentCreator('/docs/tags/biml-studio', '1e0'),
             exact: true
           },
           {
@@ -137,7 +142,7 @@ export default [
           },
           {
             path: '/docs',
-            component: ComponentCreator('/docs', 'ee0'),
+            component: ComponentCreator('/docs', '18a'),
             routes: [
               {
                 path: '/docs/bimlflex/',
@@ -2958,6 +2963,346 @@ export default [
                 component: ComponentCreator('/docs/bimlflex/training/training-content', '351'),
                 exact: true,
                 sidebar: "bimlflexSidebar"
+              },
+              {
+                path: '/docs/bimlstudio/',
+                component: ComponentCreator('/docs/bimlstudio/', '05c'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/', '399'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project', 'a47'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/building-the-example-project',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/building-the-example-project', '123'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table', '24c'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table', '19e'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table', '6cb'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection', 'a81'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database', '2de'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project', 'df3'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema', 'd8f'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql', '45d'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database', '1c8'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project', 'c29'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/saving-a-project',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/saving-a-project', '181'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample',
+                component: ComponentCreator('/docs/bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample', 'c1d'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/', '999'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/biml-compiler-command-line-options',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/biml-compiler-command-line-options', '8aa'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/choose-the-right-script-mode',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/choose-the-right-script-mode', '90f'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/configuring-project-settings',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/configuring-project-settings', '6d1'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/create-an-expandable-transformer',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/create-an-expandable-transformer', 'da2'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/creating-a-basic-package',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/creating-a-basic-package', '85b'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/importing-tables-using-bimlscript',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/importing-tables-using-bimlscript', 'dcd'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/project-view-idiosyncrasies',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/project-view-idiosyncrasies', '988'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/source-control-setup',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/source-control-setup', '68d'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/switching-build-types-for-biml-files',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/switching-build-types-for-biml-files', '97b'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/miscellaneous/using-configuration-files',
+                component: ComponentCreator('/docs/bimlstudio/miscellaneous/using-configuration-files', '862'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/promotions/bs-adf-feature-promotions',
+                component: ComponentCreator('/docs/bimlstudio/promotions/bs-adf-feature-promotions', '374'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/', '715'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2017',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2017', 'c5b'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2018.1',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2018.1', 'b8e'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2018.2',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2018.2', 'd03'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2018.3',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2018.3', 'cc7'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2019.1',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2019.1', '71f'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/BimlStudio-2020.1',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/BimlStudio-2020.1', '348'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2020.2',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2020.2', 'e90'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2022.1',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2022.1', '77f'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2022.2',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2022.2', '1c0'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2022.3',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2022.3', 'e6e'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/bimlstudio-2023.1',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/bimlstudio-2023.1', '907'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/mist-2.0',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/mist-2.0', '0ff'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/mist-3.0',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/mist-3.0', '826'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/mist-3.1',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/mist-3.1', '842'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/mist-3.2',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/mist-3.2', 'a01'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/mist-3.3',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/mist-3.3', 'a1b'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/mist-3.4',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/mist-3.4', 'a44'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/mist-4.0',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/mist-4.0', '73c'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/release-notes/mist-4.0-update-1',
+                component: ComponentCreator('/docs/bimlstudio/release-notes/mist-4.0-update-1', '873'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/', 'f63'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/action',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/action', '23e'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/aggregation-design',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/aggregation-design', '634'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/biml',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/biml', '49b'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/bimlscript',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/bimlscript', 'a86'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/calculation',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/calculation', 'f7a'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/common-tool-windows',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/common-tool-windows', 'ee4'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/connection',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/connection', '005'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/cube',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/cube', 'a36'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/file-format',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/file-format', 'd7f'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/kpi',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/kpi', 'e7c'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/package',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/package', '74e'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/package-tool-windows',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/package-tool-windows', '37e'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/partition',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/partition', '395'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/perspective',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/perspective', '84d'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/principal',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/principal', '5c7'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/schema',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/schema', '1ca'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/script-project',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/script-project', 'c1b'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/static-source',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/static-source', '7c0'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlstudio/visual-editors/table',
+                component: ComponentCreator('/docs/bimlstudio/visual-editors/table', '52b'),
+                exact: true
               },
               {
                 path: '/docs/category/bimlflex-app',

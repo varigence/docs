@@ -23,7 +23,7 @@ Databases contain relational objects, such as tables, schemas, and views. Any re
 
     ![Finished Database Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation/004a_Step04.gif)
 
-1. Save the project to persist your changes to the project files. See [Saving a Project](saving-a-project.md) for more information.
+1. Save the project to persist your changes to the project files. See [Saving a Project](xref:saving-a-project) for more information.
 
 ## View Biml
 

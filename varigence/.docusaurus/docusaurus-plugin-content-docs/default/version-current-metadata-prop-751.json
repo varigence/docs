@@ -6403,6 +6403,346 @@
       "description": "Guide on working with BimlFlex. Meant to be generated as hand-out.",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project",
+      "title": "Adding existing files to a project",
+      "description": "Documentation of how to add existing files to a project"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/building-the-example-project": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/building-the-example-project",
+      "title": "Building the Example Project",
+      "description": "How to build the example project"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table",
+      "title": "Creating a Basic Table",
+      "description": "Documentation of how to create a basic table in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table",
+      "title": "Creating a Dimension Table",
+      "description": "Documentation of how to create a dimension table in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table",
+      "title": "Creating a Fact Table",
+      "description": "Documentation of how to create a fact table in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection",
+      "title": "Creating a New Connection",
+      "description": "Documentation of how to create a new connection in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database",
+      "title": "Creating a New Database",
+      "description": "Documentation of how to create a new database in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project",
+      "title": "Creating a New Project",
+      "description": "Documentation of how to create a new project in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema",
+      "title": "Creating a New Schema",
+      "description": "How to create a new schema in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql",
+      "title": "Deploying Tables to SQL",
+      "description": "How to deploy user created tables to SQL"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database",
+      "title": "Importing from the Sample Database",
+      "description": "How to import from the sample database using BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/index": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/index",
+      "title": "AdventureWorksLT Walkthrough",
+      "description": "This section of the user guide walks through common operations in Mist, with detailed instructions and screenshots to explain how to accomplish those tasks."
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project",
+      "title": "Preparing to Build the Example Project",
+      "description": "Getting ready to build the example project in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/saving-a-project": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/saving-a-project",
+      "title": "Saving a Project",
+      "description": "Save a project in BimlStudio"
+    },
+    "bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample": {
+      "id": "bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample",
+      "title": "Setting up for the Sample",
+      "description": "Setting up for the Sample project in BimlStudio"
+    },
+    "bimlstudio/index": {
+      "id": "bimlstudio/index",
+      "title": "BimlStudio User Guide",
+      "description": "The BimlStudio User Guide describes all aspects of the BimlStudio user interface."
+    },
+    "bimlstudio/miscellaneous/biml-compiler-command-line-options": {
+      "id": "bimlstudio/miscellaneous/biml-compiler-command-line-options",
+      "title": "Biml Compiler (bimlc.exe) Options",
+      "description": "Various bimlc compiler options"
+    },
+    "bimlstudio/miscellaneous/choose-the-right-script-mode": {
+      "id": "bimlstudio/miscellaneous/choose-the-right-script-mode",
+      "title": "Choose the Right BimlScript Type",
+      "description": "Discusses the three types of BimlScripts and which is right for the user's needs."
+    },
+    "bimlstudio/miscellaneous/configuring-project-settings": {
+      "id": "bimlstudio/miscellaneous/configuring-project-settings",
+      "title": "Configuring Project Settings",
+      "description": "Discussion of the various project settings in BimlStudio."
+    },
+    "bimlstudio/miscellaneous/create-an-expandable-transformer": {
+      "id": "bimlstudio/miscellaneous/create-an-expandable-transformer",
+      "title": "create-an-expandable-transformer",
+      "description": "Mist User Guide"
+    },
+    "bimlstudio/miscellaneous/creating-a-basic-package": {
+      "id": "bimlstudio/miscellaneous/creating-a-basic-package",
+      "title": "Creating a Basic Package",
+      "description": "How to create a basic package in BimlStudio"
+    },
+    "bimlstudio/miscellaneous/importing-tables-using-bimlscript": {
+      "id": "bimlstudio/miscellaneous/importing-tables-using-bimlscript",
+      "title": "Importing tables using BimlScript",
+      "description": "BimlStudio allows you to import schema and table definitions from a database, along with updating your model with the current state of the definitions at each compile. To leverage the update capability, you will need to use BimlScript to author the import logic; the BimlScript is executed during each compile, obtaining the current state of schemas and tables."
+    },
+    "bimlstudio/miscellaneous/index": {
+      "id": "bimlstudio/miscellaneous/index",
+      "title": "Mist Editors and Tool Windows Overview",
+      "description": "This portion of the user guide includes various topics that don't fit elsewhere."
+    },
+    "bimlstudio/miscellaneous/project-view-idiosyncrasies": {
+      "id": "bimlstudio/miscellaneous/project-view-idiosyncrasies",
+      "title": "Project View Idiosyncrasies",
+      "description": "Mist's Project View reflects the state of folders and files on disk. From within it, users can:"
+    },
+    "bimlstudio/miscellaneous/source-control-setup": {
+      "id": "bimlstudio/miscellaneous/source-control-setup",
+      "title": "Source Control Setup",
+      "description": "BimlStudio has the ability to work with projects that are stored in TFS and Subversion source control environments. To work with either source control environment, some additional setup is required."
+    },
+    "bimlstudio/miscellaneous/switching-build-types-for-biml-files": {
+      "id": "bimlstudio/miscellaneous/switching-build-types-for-biml-files",
+      "title": "Switching Build Types for Biml Files",
+      "description": "Switching the build type of a Biml file controls whether the file provides only metadata to the compilation process, or if it will produce compiled output. Files marked as Reference are used for metadata or as transformers. Files marked as Live will produce compiled output for the objects they contain."
+    },
+    "bimlstudio/miscellaneous/using-configuration-files": {
+      "id": "bimlstudio/miscellaneous/using-configuration-files",
+      "title": "Using Configuration Files",
+      "description": "Introduction"
+    },
+    "bimlstudio/promotions/bs-adf-feature-promotions": {
+      "id": "bimlstudio/promotions/bs-adf-feature-promotions",
+      "title": "BimlStudio 2020 and Azure Data Factory Featured Integrations",
+      "description": "New Features relating to Azure Data Factory integrations in BimlStudio 2020.2 update"
+    },
+    "bimlstudio/release-notes/bimlstudio-2017": {
+      "id": "bimlstudio/release-notes/bimlstudio-2017",
+      "title": "Significant changes between Mist 4.0 Update 1 and BimlStudio 2017",
+      "description": "Breaking Changes"
+    },
+    "bimlstudio/release-notes/bimlstudio-2018.1": {
+      "id": "bimlstudio/release-notes/bimlstudio-2018.1",
+      "title": "BimlStudio 2018.1 Release Notes",
+      "description": "Significant changes between BimlStudio 2017 and BimlStudio 2018"
+    },
+    "bimlstudio/release-notes/bimlstudio-2018.2": {
+      "id": "bimlstudio/release-notes/bimlstudio-2018.2",
+      "title": "BimlStudio 2018 r2 Release Notes",
+      "description": "Significant changes between BimlStudio 2018 and BimlStudio 2018 r2"
+    },
+    "bimlstudio/release-notes/bimlstudio-2018.3": {
+      "id": "bimlstudio/release-notes/bimlstudio-2018.3",
+      "title": "BimlStudio 2018 R3 Release Notes",
+      "description": "Significant changes between BimlStudio 2018 R2 and BimlStudio 2018 R3"
+    },
+    "bimlstudio/release-notes/bimlstudio-2019.1": {
+      "id": "bimlstudio/release-notes/bimlstudio-2019.1",
+      "title": "BimlStudio 2019 R1 Release Notes",
+      "description": "Significant changes between BimlStudio 2018 R3 and BimlStudio 2019 R1"
+    },
+    "bimlstudio/release-notes/BimlStudio-2020.1": {
+      "id": "bimlstudio/release-notes/BimlStudio-2020.1",
+      "title": "BimlStudio 2020 R1 Release Notes",
+      "description": "Significant changes between BimlStudio 2019 R1 and BimlStudio 2020 R1"
+    },
+    "bimlstudio/release-notes/bimlstudio-2020.2": {
+      "id": "bimlstudio/release-notes/bimlstudio-2020.2",
+      "title": "BimlStudio 2020 R2 Release Notes",
+      "description": "Significant changes have been implemented between BimlStudio 2020 R1 and the latest version BimlStudio 2020 R2."
+    },
+    "bimlstudio/release-notes/bimlstudio-2022.1": {
+      "id": "bimlstudio/release-notes/bimlstudio-2022.1",
+      "title": "BimlStudio Release Notes 2022 R1",
+      "description": "Release Notes for BimlStudio 2022 R1"
+    },
+    "bimlstudio/release-notes/bimlstudio-2022.2": {
+      "id": "bimlstudio/release-notes/bimlstudio-2022.2",
+      "title": "BimlStudio Release Notes 2022 R2",
+      "description": "Release Notes for BimlStudio 2022 R2"
+    },
+    "bimlstudio/release-notes/bimlstudio-2022.3": {
+      "id": "bimlstudio/release-notes/bimlstudio-2022.3",
+      "title": "BimlStudio Release Notes 2022 R3",
+      "description": "Release Notes for BimlStudio 2022 R3"
+    },
+    "bimlstudio/release-notes/bimlstudio-2023.1": {
+      "id": "bimlstudio/release-notes/bimlstudio-2023.1",
+      "title": "BimlStudio Release Notes 2023 R1",
+      "description": "Release Notes for BimlStudio 2023 R1 Preview"
+    },
+    "bimlstudio/release-notes/index": {
+      "id": "bimlstudio/release-notes/index",
+      "title": "Release Notes",
+      "description": "This portion of the user guide provides release notes for recent BimlStudio releases."
+    },
+    "bimlstudio/release-notes/mist-2.0": {
+      "id": "bimlstudio/release-notes/mist-2.0",
+      "title": "New Features in 2.0",
+      "description": "Mist 2.0 and Biml 2.0 add several important new features to the available functionality."
+    },
+    "bimlstudio/release-notes/mist-3.0": {
+      "id": "bimlstudio/release-notes/mist-3.0",
+      "title": "New Features in 3.0",
+      "description": "Mist 3.0 is a major update, which includes the following new features and enhancements:"
+    },
+    "bimlstudio/release-notes/mist-3.1": {
+      "id": "bimlstudio/release-notes/mist-3.1",
+      "title": "New Features in 3.1",
+      "description": "Mist 3.1 begins our move to a steady, and more frequent, update schedule. Mist 3.1's goals include fixing remaining usability issues and implementing targeted features:"
+    },
+    "bimlstudio/release-notes/mist-3.2": {
+      "id": "bimlstudio/release-notes/mist-3.2",
+      "title": "New Features in 3.2",
+      "description": "Mist 3.2 continues our commitment to frequent updates. Mist 3.2's theme is improving the user experience, and providing several enhancements."
+    },
+    "bimlstudio/release-notes/mist-3.3": {
+      "id": "bimlstudio/release-notes/mist-3.3",
+      "title": "New Features in Mist 3.3",
+      "description": "- ODBC"
+    },
+    "bimlstudio/release-notes/mist-3.4": {
+      "id": "bimlstudio/release-notes/mist-3.4",
+      "title": "New Features in Mist 3.4",
+      "description": "ist 3.4 is another successful short release cycle that delivers powerful new features - less than 6 weeks after Mist 3.3."
+    },
+    "bimlstudio/release-notes/mist-4.0": {
+      "id": "bimlstudio/release-notes/mist-4.0",
+      "title": "New Features in Mist 4.0",
+      "description": "BREAKING CHANGES"
+    },
+    "bimlstudio/release-notes/mist-4.0-update-1": {
+      "id": "bimlstudio/release-notes/mist-4.0-update-1",
+      "title": "New Features in Mist 4.0 Update 1",
+      "description": "Mist Designers and Editors"
+    },
+    "bimlstudio/visual-editors/action": {
+      "id": "bimlstudio/visual-editors/action",
+      "title": "Action Editor",
+      "description": "Use the actions editor to view and edit actions for the selected cube."
+    },
+    "bimlstudio/visual-editors/aggregation-design": {
+      "id": "bimlstudio/visual-editors/aggregation-design",
+      "title": "Aggregation Design Editor",
+      "description": "Use the Aggregation Design editor to create and edit aggregation designs, which generate aggregations based on their settings."
+    },
+    "bimlstudio/visual-editors/biml": {
+      "id": "bimlstudio/visual-editors/biml",
+      "title": "Biml Editor",
+      "description": "Use the Biml editor to edit Biml files."
+    },
+    "bimlstudio/visual-editors/bimlscript": {
+      "id": "bimlstudio/visual-editors/bimlscript",
+      "title": "BimlScript Editor",
+      "description": "Use the BimlScript editor to create, edit, preview, and execute BimlScript files."
+    },
+    "bimlstudio/visual-editors/calculation": {
+      "id": "bimlstudio/visual-editors/calculation",
+      "title": "Calculation Editor",
+      "description": "Use the Calculations editor to create and edit calculations, including calculated members, named sets, and MDX script commands."
+    },
+    "bimlstudio/visual-editors/common-tool-windows": {
+      "id": "bimlstudio/visual-editors/common-tool-windows",
+      "title": "Common Tool Windows Overview",
+      "description": "There are several tool windows that provide access to project assets and aid in development. They are listed below in alphabetical order."
+    },
+    "bimlstudio/visual-editors/connection": {
+      "id": "bimlstudio/visual-editors/connection",
+      "title": "connection",
+      "description": "Mist User Guide"
+    },
+    "bimlstudio/visual-editors/cube": {
+      "id": "bimlstudio/visual-editors/cube",
+      "title": "Cube Editor",
+      "description": "Use the cube editor to create and modify cube dimension and measure groups, along with dimension relationships between cube dimensions and measure groups."
+    },
+    "bimlstudio/visual-editors/file-format": {
+      "id": "bimlstudio/visual-editors/file-format",
+      "title": "File Format Editor",
+      "description": "Use the File Format editor to define the columns in a file format."
+    },
+    "bimlstudio/visual-editors/index": {
+      "id": "bimlstudio/visual-editors/index",
+      "title": "Mist Editors and Tool Windows Overview",
+      "description": "This portion of the user guide describes the different editors and tool windows available in Mist."
+    },
+    "bimlstudio/visual-editors/kpi": {
+      "id": "bimlstudio/visual-editors/kpi",
+      "title": "KPI Editor",
+      "description": "Use the KPI editor to create and edit KPIs."
+    },
+    "bimlstudio/visual-editors/package": {
+      "id": "bimlstudio/visual-editors/package",
+      "title": "Package Editor",
+      "description": "Use the package editor to construct and edit a control flow in a package."
+    },
+    "bimlstudio/visual-editors/package-tool-windows": {
+      "id": "bimlstudio/visual-editors/package-tool-windows",
+      "title": "Package Tool Windows Overview",
+      "description": "Certain tool windows only appear when a package is opened in the package editor. These tool windows are specifically for editing the properties of packages and their child items. They are listed below in alphabetical order."
+    },
+    "bimlstudio/visual-editors/partition": {
+      "id": "bimlstudio/visual-editors/partition",
+      "title": "Partition Editor",
+      "description": "Use the Partitions editor to create and modify partitions, including storage and proactive caching settings, for each cube measure group."
+    },
+    "bimlstudio/visual-editors/perspective": {
+      "id": "bimlstudio/visual-editors/perspective",
+      "title": "Perspective Editor",
+      "description": "Use the Perspective editor to create and modify perspectives."
+    },
+    "bimlstudio/visual-editors/principal": {
+      "id": "bimlstudio/visual-editors/principal",
+      "title": "Principal Editor",
+      "description": "Use the Principal editor to edit a principal, and add and edit permissions for a principal."
+    },
+    "bimlstudio/visual-editors/schema": {
+      "id": "bimlstudio/visual-editors/schema",
+      "title": "Schema Editor",
+      "description": "Use the Schema editor to edit schema properties."
+    },
+    "bimlstudio/visual-editors/script-project": {
+      "id": "bimlstudio/visual-editors/script-project",
+      "title": "Script Project Editor",
+      "description": "Use the Script Project editor to create and edit script projects that are associated with SSIS script tasks and script components."
+    },
+    "bimlstudio/visual-editors/static-source": {
+      "id": "bimlstudio/visual-editors/static-source",
+      "title": "Static Source Editor",
+      "description": "Use the Static Source editor to add and edit static source rows."
+    },
+    "bimlstudio/visual-editors/table": {
+      "id": "bimlstudio/visual-editors/table",
+      "title": "Table Editor",
+      "description": "Use the Table editor to edit tables, by adding, changing, or removing columns, keys, indexes, and fact or dimension specific objects."
+    },
     "tutorial/intro": {
       "id": "tutorial/intro",
       "title": "Tutorial Intro",

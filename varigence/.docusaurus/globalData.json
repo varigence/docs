@@ -2361,6 +2361,278 @@
               "sidebar": "bimlflexSidebar"
             },
             {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/building-the-example-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/building-the-example-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/index",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/saving-a-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/saving-a-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample"
+            },
+            {
+              "id": "bimlstudio/index",
+              "path": "/docs/bimlstudio/"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/biml-compiler-command-line-options",
+              "path": "/docs/bimlstudio/miscellaneous/biml-compiler-command-line-options"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/choose-the-right-script-mode",
+              "path": "/docs/bimlstudio/miscellaneous/choose-the-right-script-mode"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/configuring-project-settings",
+              "path": "/docs/bimlstudio/miscellaneous/configuring-project-settings"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/create-an-expandable-transformer",
+              "path": "/docs/bimlstudio/miscellaneous/create-an-expandable-transformer"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/creating-a-basic-package",
+              "path": "/docs/bimlstudio/miscellaneous/creating-a-basic-package"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/importing-tables-using-bimlscript",
+              "path": "/docs/bimlstudio/miscellaneous/importing-tables-using-bimlscript"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/index",
+              "path": "/docs/bimlstudio/miscellaneous/"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/project-view-idiosyncrasies",
+              "path": "/docs/bimlstudio/miscellaneous/project-view-idiosyncrasies"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/source-control-setup",
+              "path": "/docs/bimlstudio/miscellaneous/source-control-setup"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/switching-build-types-for-biml-files",
+              "path": "/docs/bimlstudio/miscellaneous/switching-build-types-for-biml-files"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/using-configuration-files",
+              "path": "/docs/bimlstudio/miscellaneous/using-configuration-files"
+            },
+            {
+              "id": "bimlstudio/promotions/bs-adf-feature-promotions",
+              "path": "/docs/bimlstudio/promotions/bs-adf-feature-promotions"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2017",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2017"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2018.1",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2018.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2018.2",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2018.2"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2018.3",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2018.3"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2019.1",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2019.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/BimlStudio-2020.1",
+              "path": "/docs/bimlstudio/release-notes/BimlStudio-2020.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2020.2",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2020.2"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2022.1",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2022.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2022.2",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2022.2"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2022.3",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2022.3"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2023.1",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2023.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/index",
+              "path": "/docs/bimlstudio/release-notes/"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-2.0",
+              "path": "/docs/bimlstudio/release-notes/mist-2.0"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.0",
+              "path": "/docs/bimlstudio/release-notes/mist-3.0"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.1",
+              "path": "/docs/bimlstudio/release-notes/mist-3.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.2",
+              "path": "/docs/bimlstudio/release-notes/mist-3.2"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.3",
+              "path": "/docs/bimlstudio/release-notes/mist-3.3"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.4",
+              "path": "/docs/bimlstudio/release-notes/mist-3.4"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-4.0",
+              "path": "/docs/bimlstudio/release-notes/mist-4.0"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-4.0-update-1",
+              "path": "/docs/bimlstudio/release-notes/mist-4.0-update-1"
+            },
+            {
+              "id": "bimlstudio/visual-editors/action",
+              "path": "/docs/bimlstudio/visual-editors/action"
+            },
+            {
+              "id": "bimlstudio/visual-editors/aggregation-design",
+              "path": "/docs/bimlstudio/visual-editors/aggregation-design"
+            },
+            {
+              "id": "bimlstudio/visual-editors/biml",
+              "path": "/docs/bimlstudio/visual-editors/biml"
+            },
+            {
+              "id": "bimlstudio/visual-editors/bimlscript",
+              "path": "/docs/bimlstudio/visual-editors/bimlscript"
+            },
+            {
+              "id": "bimlstudio/visual-editors/calculation",
+              "path": "/docs/bimlstudio/visual-editors/calculation"
+            },
+            {
+              "id": "bimlstudio/visual-editors/common-tool-windows",
+              "path": "/docs/bimlstudio/visual-editors/common-tool-windows"
+            },
+            {
+              "id": "bimlstudio/visual-editors/connection",
+              "path": "/docs/bimlstudio/visual-editors/connection"
+            },
+            {
+              "id": "bimlstudio/visual-editors/cube",
+              "path": "/docs/bimlstudio/visual-editors/cube"
+            },
+            {
+              "id": "bimlstudio/visual-editors/file-format",
+              "path": "/docs/bimlstudio/visual-editors/file-format"
+            },
+            {
+              "id": "bimlstudio/visual-editors/index",
+              "path": "/docs/bimlstudio/visual-editors/"
+            },
+            {
+              "id": "bimlstudio/visual-editors/kpi",
+              "path": "/docs/bimlstudio/visual-editors/kpi"
+            },
+            {
+              "id": "bimlstudio/visual-editors/package",
+              "path": "/docs/bimlstudio/visual-editors/package"
+            },
+            {
+              "id": "bimlstudio/visual-editors/package-tool-windows",
+              "path": "/docs/bimlstudio/visual-editors/package-tool-windows"
+            },
+            {
+              "id": "bimlstudio/visual-editors/partition",
+              "path": "/docs/bimlstudio/visual-editors/partition"
+            },
+            {
+              "id": "bimlstudio/visual-editors/perspective",
+              "path": "/docs/bimlstudio/visual-editors/perspective"
+            },
+            {
+              "id": "bimlstudio/visual-editors/principal",
+              "path": "/docs/bimlstudio/visual-editors/principal"
+            },
+            {
+              "id": "bimlstudio/visual-editors/schema",
+              "path": "/docs/bimlstudio/visual-editors/schema"
+            },
+            {
+              "id": "bimlstudio/visual-editors/script-project",
+              "path": "/docs/bimlstudio/visual-editors/script-project"
+            },
+            {
+              "id": "bimlstudio/visual-editors/static-source",
+              "path": "/docs/bimlstudio/visual-editors/static-source"
+            },
+            {
+              "id": "bimlstudio/visual-editors/table",
+              "path": "/docs/bimlstudio/visual-editors/table"
+            },
+            {
               "id": "tutorial/intro",
               "path": "/docs/tutorial/intro",
               "sidebar": "tutorialSidebar"

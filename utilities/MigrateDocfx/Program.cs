@@ -3,8 +3,8 @@ using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-var docfxDirectory = @"C:\varigencedocs\bimlflex";
-var docusaurusDirectory = @"C:\varigencedocs\varigence\docs\bimlflex";
+var docfxDirectory = @"C:\varigencedocs\bimlstudio";
+var docusaurusDirectory = @"C:\varigencedocs\varigence\docs\bimlstudio";
 var imageExtensions = new[] {".png", ".gif", ".svg", ".jpg", ".jpeg"};
 
 foreach (var filePath in Directory.EnumerateFiles(docfxDirectory, "*.*", SearchOption.AllDirectories)

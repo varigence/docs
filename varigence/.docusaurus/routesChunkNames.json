@@ -186,13 +186,13 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-5b1": {
+  "/docs-1c7": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docs-815-eee"
     }
   },
-  "/docs-b27": {
+  "/docs-3a1": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
@@ -203,6 +203,10 @@
   "/docs/tags/biml-flex-583": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---docs-tags-biml-flex-8-de-e6f"
+  },
+  "/docs/tags/biml-studio-1e0": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---docs-tags-biml-studio-4-f-2-7f3"
   },
   "/docs/tags/conceptual-8a5": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
@@ -220,7 +224,7 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---docs-tags-walkthroughe-89-5c8"
   },
-  "/docs-ee0": {
+  "/docs-18a": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/bimlflex/-bf3": {
@@ -2102,6 +2106,278 @@
   "/docs/bimlflex/training/training-content-351": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-bimlflex-training-training-contentc-18-690"
+  },
+  "/docs/bimlstudio/-05c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-437-62c"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/-399": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-a-2-c-2b2"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project-a47": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-adding-existing-files-to-a-project-85-c-d47"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/building-the-example-project-123": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-building-the-example-project-122-589"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table-24c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-creating-a-basic-table-475-f87"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table-19e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-creating-a-dimension-table-390-92b"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table-6cb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-creating-a-fact-tablec-59-7dd"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection-a81": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-creating-a-new-connectiond-55-c2c"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database-2de": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-creating-a-new-database-832-2ff"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project-df3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-creating-a-new-project-2-cd-2b5"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema-d8f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-creating-a-new-schema-40-d-9b4"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql-45d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-deploying-tables-to-sql-185-ec6"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database-1c8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-importing-from-the-sample-databasec-92-e11"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project-c29": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-preparing-to-build-the-example-project-965-24c"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/saving-a-project-181": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-saving-a-project-77-a-007"
+  },
+  "/docs/bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample-c1d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-adventureworks-lt-walkthrough-setting-up-for-the-samplef-43-8a7"
+  },
+  "/docs/bimlstudio/miscellaneous/-999": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-21-a-587"
+  },
+  "/docs/bimlstudio/miscellaneous/biml-compiler-command-line-options-8aa": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-biml-compiler-command-line-optionse-7-e-e01"
+  },
+  "/docs/bimlstudio/miscellaneous/choose-the-right-script-mode-90f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-choose-the-right-script-mode-86-d-a00"
+  },
+  "/docs/bimlstudio/miscellaneous/configuring-project-settings-6d1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-configuring-project-settingsf-91-9bd"
+  },
+  "/docs/bimlstudio/miscellaneous/create-an-expandable-transformer-da2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-create-an-expandable-transformer-7-dd-fe3"
+  },
+  "/docs/bimlstudio/miscellaneous/creating-a-basic-package-85b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-creating-a-basic-packageef-5-ff5"
+  },
+  "/docs/bimlstudio/miscellaneous/importing-tables-using-bimlscript-dcd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-importing-tables-using-bimlscriptffc-c58"
+  },
+  "/docs/bimlstudio/miscellaneous/project-view-idiosyncrasies-988": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-project-view-idiosyncrasies-45-b-151"
+  },
+  "/docs/bimlstudio/miscellaneous/source-control-setup-68d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-source-control-setup-2-ab-4aa"
+  },
+  "/docs/bimlstudio/miscellaneous/switching-build-types-for-biml-files-97b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-switching-build-types-for-biml-filesc-5-d-ab9"
+  },
+  "/docs/bimlstudio/miscellaneous/using-configuration-files-862": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-miscellaneous-using-configuration-files-6-da-dc4"
+  },
+  "/docs/bimlstudio/promotions/bs-adf-feature-promotions-374": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-promotions-bs-adf-feature-promotions-261-8df"
+  },
+  "/docs/bimlstudio/release-notes/-715": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-cab-405"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2017-c5b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-20176-bd-fcb"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2018.1-b8e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2018-1-d-8-f-a1a"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2018.2-d03": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2018-217-e-e33"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2018.3-cc7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2018-3506-2d3"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2019.1-71f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2019-1490-759"
+  },
+  "/docs/bimlstudio/release-notes/BimlStudio-2020.1-348": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-biml-studio-2020-13-b-4-241"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2020.2-e90": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2020-2-a-4-d-e4f"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2022.1-77f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2022-173-d-efa"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2022.2-1c0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2022-2777-b9f"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2022.3-e6e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2022-33-eb-20b"
+  },
+  "/docs/bimlstudio/release-notes/bimlstudio-2023.1-907": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-bimlstudio-2023-1-f-1-f-56c"
+  },
+  "/docs/bimlstudio/release-notes/mist-2.0-0ff": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-mist-2-05-c-3-355"
+  },
+  "/docs/bimlstudio/release-notes/mist-3.0-826": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-mist-3-0711-374"
+  },
+  "/docs/bimlstudio/release-notes/mist-3.1-842": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-mist-3-19-ad-334"
+  },
+  "/docs/bimlstudio/release-notes/mist-3.2-a01": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-mist-3-22-eb-dc0"
+  },
+  "/docs/bimlstudio/release-notes/mist-3.3-a1b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-mist-3-38-a-9-49b"
+  },
+  "/docs/bimlstudio/release-notes/mist-3.4-a44": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-mist-3-44-a-4-8e7"
+  },
+  "/docs/bimlstudio/release-notes/mist-4.0-73c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-mist-4-03-c-9-f2f"
+  },
+  "/docs/bimlstudio/release-notes/mist-4.0-update-1-873": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-release-notes-mist-4-0-update-1-a-19-67b"
+  },
+  "/docs/bimlstudio/visual-editors/-f63": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-1-d-9-e82"
+  },
+  "/docs/bimlstudio/visual-editors/action-23e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-action-554-05e"
+  },
+  "/docs/bimlstudio/visual-editors/aggregation-design-634": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-aggregation-design-84-e-70f"
+  },
+  "/docs/bimlstudio/visual-editors/biml-49b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-biml-689-7a7"
+  },
+  "/docs/bimlstudio/visual-editors/bimlscript-a86": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-bimlscriptcd-8-fab"
+  },
+  "/docs/bimlstudio/visual-editors/calculation-f7a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-calculation-118-79c"
+  },
+  "/docs/bimlstudio/visual-editors/common-tool-windows-ee4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-common-tool-windowsb-0-e-c57"
+  },
+  "/docs/bimlstudio/visual-editors/connection-005": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-connectionf-90-c3a"
+  },
+  "/docs/bimlstudio/visual-editors/cube-a36": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-cube-16-d-887"
+  },
+  "/docs/bimlstudio/visual-editors/file-format-d7f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-file-format-0-e-6-e76"
+  },
+  "/docs/bimlstudio/visual-editors/kpi-e7c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-kpi-39-f-bc8"
+  },
+  "/docs/bimlstudio/visual-editors/package-74e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-package-7-c-1-308"
+  },
+  "/docs/bimlstudio/visual-editors/package-tool-windows-37e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-package-tool-windowsb-6-c-eaa"
+  },
+  "/docs/bimlstudio/visual-editors/partition-395": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-partitionbcf-038"
+  },
+  "/docs/bimlstudio/visual-editors/perspective-84d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-perspective-4-b-2-d20"
+  },
+  "/docs/bimlstudio/visual-editors/principal-5c7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-principal-54-d-fb7"
+  },
+  "/docs/bimlstudio/visual-editors/schema-1ca": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-schema-166-06e"
+  },
+  "/docs/bimlstudio/visual-editors/script-project-c1b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-script-project-198-31c"
+  },
+  "/docs/bimlstudio/visual-editors/static-source-7c0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-static-source-444-6b4"
+  },
+  "/docs/bimlstudio/visual-editors/table-52b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlstudio-visual-editors-table-586-e5e"
   },
   "/docs/category/bimlflex-app-e1d": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",

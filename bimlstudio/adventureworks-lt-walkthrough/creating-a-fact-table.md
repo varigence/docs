@@ -11,7 +11,7 @@ Fact tables let you model the relational parts of a table, and the analytical as
 
 To create a fact, follow these steps:
 
-1. Add a new table and rename it to FactSales. For more information about creating the relational portions of fact table using the designer, see [Creating a Basic Table](creating-a-basic-table.md).
+1. Add a new table and rename it to FactSales. For more information about creating the relational portions of fact table using the designer, see [Creating a Basic Table](xref:creating-a-basic-table).
 
 2. To create the relational portion of the table, you will edit the Biml directly. Right click the in the logical view and choose View Biml.
 
