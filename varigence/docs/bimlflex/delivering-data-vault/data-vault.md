@@ -1,4 +1,5 @@
 ---
+sidebar_position: 10
 title: Data Vault
 description: Overview of implementing a Data Vault
 tags: [BimlFlex, Conceptual]

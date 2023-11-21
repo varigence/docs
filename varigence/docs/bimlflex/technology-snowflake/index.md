@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Snowflake overview
+sidebar_position: 1
+title: Overview
 description: Overview of BimlFlex support for Snowflake
 ---
 # Using BimlFlex with Snowflake

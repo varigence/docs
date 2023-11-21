@@ -1,5 +1,6 @@
 ---
-title: BimlStudio Release Notes 2023 R1
+sidebar_position: 1
+title: BimlStudio 2023.1 Preview
 description: Release Notes for BimlStudio 2023 R1 Preview
 ---
 

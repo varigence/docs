@@ -11,6 +11,82 @@
           "mainDocId": "tutorial/intro",
           "docs": [
             {
+              "id": "bimlexpress/comparison/comparing-bimlexpress-bidshelper-bideveloperextensions",
+              "path": "/docs/bimlexpress/comparison/comparing-bimlexpress-bidshelper-bideveloperextensions"
+            },
+            {
+              "id": "bimlexpress/comparison/comparing-bimlexpress-bimlstudio",
+              "path": "/docs/bimlexpress/comparison/comparing-bimlexpress-bimlstudio"
+            },
+            {
+              "id": "bimlexpress/comparison/index",
+              "path": "/docs/bimlexpress/comparison/"
+            },
+            {
+              "id": "bimlexpress/getting-started/add-edit-biml-files",
+              "path": "/docs/bimlexpress/getting-started/add-edit-biml-files"
+            },
+            {
+              "id": "bimlexpress/getting-started/bimlexpress-account",
+              "path": "/docs/bimlexpress/getting-started/bimlexpress-account"
+            },
+            {
+              "id": "bimlexpress/getting-started/generate-ssis-packages",
+              "path": "/docs/bimlexpress/getting-started/generate-ssis-packages"
+            },
+            {
+              "id": "bimlexpress/getting-started/index",
+              "path": "/docs/bimlexpress/getting-started/"
+            },
+            {
+              "id": "bimlexpress/getting-started/install-bimlexpress",
+              "path": "/docs/bimlexpress/getting-started/install-bimlexpress"
+            },
+            {
+              "id": "bimlexpress/getting-started/menus-options",
+              "path": "/docs/bimlexpress/getting-started/menus-options"
+            },
+            {
+              "id": "bimlexpress/getting-started/preview-expanded-biml",
+              "path": "/docs/bimlexpress/getting-started/preview-expanded-biml"
+            },
+            {
+              "id": "bimlexpress/index",
+              "path": "/docs/bimlexpress/"
+            },
+            {
+              "id": "bimlexpress/release-notes/biml-express-2020-features",
+              "path": "/docs/bimlexpress/release-notes/biml-express-2020-features"
+            },
+            {
+              "id": "bimlexpress/release-notes/bimlexpress-2017",
+              "path": "/docs/bimlexpress/release-notes/bimlexpress-2017"
+            },
+            {
+              "id": "bimlexpress/release-notes/bimlexpress-2018.1",
+              "path": "/docs/bimlexpress/release-notes/bimlexpress-2018.1"
+            },
+            {
+              "id": "bimlexpress/release-notes/bimlexpress-2018.2",
+              "path": "/docs/bimlexpress/release-notes/bimlexpress-2018.2"
+            },
+            {
+              "id": "bimlexpress/release-notes/bimlexpress-2018.3",
+              "path": "/docs/bimlexpress/release-notes/bimlexpress-2018.3"
+            },
+            {
+              "id": "bimlexpress/release-notes/BimlExpress-2019.1",
+              "path": "/docs/bimlexpress/release-notes/BimlExpress-2019.1"
+            },
+            {
+              "id": "bimlexpress/release-notes/BimlExpress-2020.1",
+              "path": "/docs/bimlexpress/release-notes/BimlExpress-2020.1"
+            },
+            {
+              "id": "bimlexpress/release-notes/index",
+              "path": "/docs/bimlexpress/release-notes/"
+            },
+            {
               "id": "bimlflex/build-and-deployment/build-bimlstudio-project",
               "path": "/docs/bimlflex/build-and-deployment/build-bimlstudio-project",
               "sidebar": "bimlflexSidebar"

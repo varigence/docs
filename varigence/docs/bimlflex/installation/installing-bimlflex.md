@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 title: Installing BimlFlex
 description: Documentation providing detailed steps in the installation of BimlFlex App.
 tags: [BimlFlex, Walkthrough]

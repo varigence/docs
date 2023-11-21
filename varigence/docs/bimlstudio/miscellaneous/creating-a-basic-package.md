@@ -1,5 +1,6 @@
 ---
-title: Creating a Basic Package
+sidebar_position: 3
+title: Creating A Basic Package
 description: How to create a basic package in BimlStudio
 tags: [BimlStudio, Walkthrough]
 ---

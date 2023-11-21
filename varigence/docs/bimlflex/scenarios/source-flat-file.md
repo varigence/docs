@@ -1,5 +1,6 @@
 ---
-title: Flat File Source to Staging
+sidebar_position: 3
+title: Flat File Import
 description: Documentation on loading a flat file source to staging from within BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 4
 title: First Project Walkthrough
 description: Guidance on creating a BimlFlex project end to end, including setting up source data, accelerating a data vault, and applying load parameters
 tags: [BimlFlex, Walkthrough]

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Dimension Table Pattern
+sidebar_position: 5
+title: Dimension Pattern
 description: Documentation of the way BimlFlex deploys Dimension Table structures and data logistics
 tags: [BimlFlex, Conceptual]
 ---

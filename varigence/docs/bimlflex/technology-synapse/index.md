@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Synapse overview
+sidebar_position: 1
+title: Overview
 description: Overview of BimlFlex support for Synapse
 ---
 # Using BimlFlex with Synapse

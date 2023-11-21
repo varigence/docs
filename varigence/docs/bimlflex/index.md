@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 title: BimlFlex Documentation
 description: The home page of all BimlFlex documentation
 tags: [BimlFlex, Reference]

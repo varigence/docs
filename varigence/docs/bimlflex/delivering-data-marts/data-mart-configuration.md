@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Data Mart Configuration
+sidebar_position: 2
+title: Configuration
 description: Documentation of the process to implement a Data Mart layer in BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

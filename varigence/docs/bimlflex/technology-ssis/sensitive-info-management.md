@@ -1,5 +1,6 @@
 ---
-title: Sensitive Information Management in SSIS
+sidebar_position: 8
+title: Managing Sensitive Data
 description: Documentation regarding sensitive information management in SSIS, Visual Studio, and extension points
 tags: [BimlFlex, Walkthrough]
 ---

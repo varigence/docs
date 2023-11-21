@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Continuous Integration and Continuous Delivery
+sidebar_position: 10
+title: Continuous Delivery (CI/CD)
 description: Documentation providing consideration and approaches to continue integration and continuous delivery within BimlFlex
 tags: [BimlFlex, Walkthrough]
 ---
@@ -79,7 +80,8 @@ When it has been deployed for the first time, use the Catalog environment featur
 ### Sample script using MSBuild
 
 location: project root folder  
-filetitle: `_1.build_sql_msbuild.bat`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 ```batch
 @echo off
@@ -96,7 +98,8 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"SqlOnly.mst.resp"
 ### Sample script for Dacpac build
 
 location: project root folder  
-filetitle: `_2.build_sql_Dacpac.bat`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 ```batch
 @echo off
@@ -123,7 +126,8 @@ for %%i in %DatabaseList% do "%programfiles(x86)%\Microsoft Visual Studio\%VSVer
 ### Sample script to deploy Dacpac
 
 location: project root folder  
-filetitle: `_3.deploy_sql_Dacpac.bat`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 ```batch
 @echo off
@@ -149,7 +153,8 @@ for %%i in %DatabaseList% do "%programfiles(x86)%\Microsoft SQL Server\%SqlServe
 ## Sample File to build SSIS Packages with MSBuild
 
 location: project root folder  
-filetitle: `_4.build_ssis_msbuild.bat`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 ```batch
 @echo off
@@ -166,7 +171,8 @@ C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe @"SsisOnly.mst.resp"
 ## Deploy ispac file with SSIS packages to the SSIS Catalog
 
 location: project root folder  
-filetitle: `_5.deploy_ssis_ispac.bat`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 ```batch
 @echo off
@@ -205,7 +211,8 @@ rem optionally call a script to map project variables to environment variables h
 ## Sample settings file for SQL Only builds
 
 location: project root folder  
-filetitle: `SqlOnly.bimlb.settings`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 Update this file to reflect project settings and configurations
 
@@ -272,7 +279,8 @@ Update this file to reflect project settings and configurations
 ## Sample settings file for SSIS Only builds
 
 location: project root folder  
-filetitle: `SsisOnly.bimlb.settings`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 Update this file to reflect project settings and configurations
 
@@ -339,7 +347,8 @@ Update this file to reflect project settings and configurations
 ## Sample SqlOnly.mst.ProjectView.bimlproj settings file
 
 location: project root folder  
-filetitle: `SqlOnly.mst.ProjectView.bimlproj`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -359,7 +368,8 @@ filetitle: `SqlOnly.mst.ProjectView.bimlproj`
 ## Sample SqlOnly.mst.resp settings file
 
 location: project root folder  
-filetitle: `SqlOnly.mst.resp`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 Remove the LicenseKey parameter to use the local registered user key
 
@@ -370,7 +380,8 @@ Remove the LicenseKey parameter to use the local registered user key
 ## Sample SsisOnly.mst.ProjectView.bimlproj settings file
 
 location: project root folder  
-filetitle: `SsisOnly.mst.ProjectView.bimlproj`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -390,7 +401,8 @@ filetitle: `SsisOnly.mst.ProjectView.bimlproj`
 ## Sample SsisOnly.mst.resp settings file
 
 location: project root folder  
-filetitle: `SsisOnly.mst.resp`
+filesidebar_position: 10
+title: Continuous Delivery (CI/CD)
 
 Remove the LicenseKey parameter to use the local registered user key
 

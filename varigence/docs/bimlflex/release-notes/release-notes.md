@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Release Notes
+sidebar_position: 2
+title: Current Release Notes
 description: Release Notes for the current version of BimlFlex
 ---
 

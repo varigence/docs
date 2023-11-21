@@ -99,11 +99,11 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '1c7'),
+    component: ComponentCreator('/docs', 'cfa'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '3a1'),
+        component: ComponentCreator('/docs', '7dd'),
         routes: [
           {
             path: '/docs/tags',
@@ -111,8 +111,18 @@ export default [
             exact: true
           },
           {
+            path: '/docs/tags/biml-express',
+            component: ComponentCreator('/docs/tags/biml-express', '1a6'),
+            exact: true
+          },
+          {
             path: '/docs/tags/biml-flex',
             component: ComponentCreator('/docs/tags/biml-flex', '583'),
+            exact: true
+          },
+          {
+            path: '/docs/tags/biml-language',
+            component: ComponentCreator('/docs/tags/biml-language', 'ced'),
             exact: true
           },
           {
@@ -142,8 +152,103 @@ export default [
           },
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '18a'),
+            component: ComponentCreator('/docs', '4ad'),
             routes: [
+              {
+                path: '/docs/bimlexpress/',
+                component: ComponentCreator('/docs/bimlexpress/', '2e1'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/comparison/',
+                component: ComponentCreator('/docs/bimlexpress/comparison/', 'eff'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/comparison/comparing-bimlexpress-bidshelper-bideveloperextensions',
+                component: ComponentCreator('/docs/bimlexpress/comparison/comparing-bimlexpress-bidshelper-bideveloperextensions', '592'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/comparison/comparing-bimlexpress-bimlstudio',
+                component: ComponentCreator('/docs/bimlexpress/comparison/comparing-bimlexpress-bimlstudio', '314'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/getting-started/',
+                component: ComponentCreator('/docs/bimlexpress/getting-started/', '315'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/getting-started/add-edit-biml-files',
+                component: ComponentCreator('/docs/bimlexpress/getting-started/add-edit-biml-files', 'f44'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/getting-started/bimlexpress-account',
+                component: ComponentCreator('/docs/bimlexpress/getting-started/bimlexpress-account', '1a4'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/getting-started/generate-ssis-packages',
+                component: ComponentCreator('/docs/bimlexpress/getting-started/generate-ssis-packages', '935'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/getting-started/install-bimlexpress',
+                component: ComponentCreator('/docs/bimlexpress/getting-started/install-bimlexpress', '15b'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/getting-started/menus-options',
+                component: ComponentCreator('/docs/bimlexpress/getting-started/menus-options', 'a6f'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/getting-started/preview-expanded-biml',
+                component: ComponentCreator('/docs/bimlexpress/getting-started/preview-expanded-biml', '3c8'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/release-notes/',
+                component: ComponentCreator('/docs/bimlexpress/release-notes/', '12b'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/release-notes/biml-express-2020-features',
+                component: ComponentCreator('/docs/bimlexpress/release-notes/biml-express-2020-features', '09a'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/release-notes/bimlexpress-2017',
+                component: ComponentCreator('/docs/bimlexpress/release-notes/bimlexpress-2017', '26f'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/release-notes/bimlexpress-2018.1',
+                component: ComponentCreator('/docs/bimlexpress/release-notes/bimlexpress-2018.1', '19c'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/release-notes/bimlexpress-2018.2',
+                component: ComponentCreator('/docs/bimlexpress/release-notes/bimlexpress-2018.2', '7ed'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/release-notes/bimlexpress-2018.3',
+                component: ComponentCreator('/docs/bimlexpress/release-notes/bimlexpress-2018.3', 'bee'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/release-notes/BimlExpress-2019.1',
+                component: ComponentCreator('/docs/bimlexpress/release-notes/BimlExpress-2019.1', '046'),
+                exact: true
+              },
+              {
+                path: '/docs/bimlexpress/release-notes/BimlExpress-2020.1',
+                component: ComponentCreator('/docs/bimlexpress/release-notes/BimlExpress-2020.1', '688'),
+                exact: true
+              },
               {
                 path: '/docs/bimlflex/',
                 component: ComponentCreator('/docs/bimlflex/', 'bf3'),

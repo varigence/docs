@@ -1,5 +1,6 @@
 ---
-title: BimlFlex COZYROC Excel Plus Source
+sidebar_position: 5
+title: Using Excel Plus as a source
 description: Documentation on loading Excel source files using COZYROC Excel Plus SSIS Component within BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Release Notes 2019.1
+sidebar_position: 12
+title: BimlFlex 2019 R1 New Features
 description: release notes for current version of BimlFlex
 ---
 # New Features in BimlFlex 2019.1

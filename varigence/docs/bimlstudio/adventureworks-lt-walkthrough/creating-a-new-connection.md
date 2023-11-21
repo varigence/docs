@@ -1,4 +1,5 @@
 ---
+sidebar_position: 4
 title: Creating a New Connection
 description: Documentation of how to create a new connection in BimlStudio
 tags: [BimlStudio, Walkthrough]

@@ -1,5 +1,6 @@
 ---
-title: Biml Compiler (bimlc.exe) Options
+sidebar_position: 6
+title: Biml Compiler Command Line Options
 description: Various bimlc compiler options
 tags: [BimlStudio, Conceptual]
 ---

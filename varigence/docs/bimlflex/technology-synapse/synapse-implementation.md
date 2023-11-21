@@ -1,5 +1,6 @@
 ---
-title: Synapse Implementations
+sidebar_position: 2
+title: Implementing BimlFlex for Synapse
 description: Documentation on how to configure Azure Synapse as Source and a target data warehouse for both SSIS and ADF implementation within BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

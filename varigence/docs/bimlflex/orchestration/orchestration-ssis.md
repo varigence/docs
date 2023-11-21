@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Batch Orchestration
+sidebar_position: 2
+title: Orchestration using SSIS
 description: Using BimlFlex batch orchestration to control failure scenario management, auditing, and logging of runs, with the BimlCatalog database
 tags: [BimlFlex, Conceptual]
 ---

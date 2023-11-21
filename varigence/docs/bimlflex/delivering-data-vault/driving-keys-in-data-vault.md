@@ -1,5 +1,6 @@
 ---
-title: Driving Keys in Data Vault 
+sidebar_position: 15
+title: Driving Keys in Data Vault
 description: Documentation on assignment, importance of, and tracking Driving Keys in a Linked Satellite in Data Vault with examples
 tags: [BimlFlex, Conceptual]
 ---

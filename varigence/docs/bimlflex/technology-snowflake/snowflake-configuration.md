@@ -1,5 +1,6 @@
 ---
-title: Snowflake Implementation
+sidebar_position: 2
+title: Snowflake Configuration Overview
 description: Overview of implementing Snowflake using Azure Data Factory within BimlFlex, with installation guide, templates, and examples
 tags: [BimlFlex, Conceptual]
 ---

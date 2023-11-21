@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Staged Query concept
+sidebar_position: 9
+title: Staged Queries
 description: Overview of the Staged Query concept in BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

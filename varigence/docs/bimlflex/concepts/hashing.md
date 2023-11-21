@@ -1,5 +1,6 @@
 ---
-title: Hashing in BimlFlex
+sidebar_position: 5
+title: Hashing
 description: Overview of hashing concepts as available in BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

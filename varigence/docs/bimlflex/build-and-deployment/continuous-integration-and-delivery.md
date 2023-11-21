@@ -1,5 +1,6 @@
 ---
-title: Continuous Integration and Delivery (CI/CD)
+sidebar_position: 8
+title: Continuous Integration and Delivery
 description: Documentation providing considerations and approaches for CI/CD using BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

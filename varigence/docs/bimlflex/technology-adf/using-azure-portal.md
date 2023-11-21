@@ -1,5 +1,6 @@
 ---
-title: Deployment Through the Azure Portal
+sidebar_position: 5
+title: Azure Portal Deployment
 description: Guide to deploy artifacts generated in Azure Data Factory through the Azure portal
 tags: [BimlFlex, Conceptual]
 ---

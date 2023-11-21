@@ -1,4 +1,5 @@
 ---
+sidebar_position: 13
 title: Deploying Tables to SQL
 description: How to deploy user created tables to SQL
 tags: [BimlStudio, Walkthrough]

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Support Process
+sidebar_position: 2
+title: Support Process
 description: Documentation on accessing Varigence Biml support, including creating a case and required information to be provided
 ---
 # Support Process

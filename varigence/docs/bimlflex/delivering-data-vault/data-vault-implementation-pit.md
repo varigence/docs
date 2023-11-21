@@ -1,5 +1,6 @@
 ---
-title: Data Vault Point-In-Time tables
+sidebar_position: 6
+title: Point-In-Time
 description: Overview of Data Vault Point-In-Time tables
 tags: [BimlFlex, Conceptual]
 ---

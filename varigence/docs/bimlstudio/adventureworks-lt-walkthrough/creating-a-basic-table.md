@@ -1,4 +1,5 @@
 ---
+sidebar_position: 9
 title: Creating a Basic Table
 description: Documentation of how to create a basic table in BimlStudio
 tags: [BimlStudio, Walkthrough]

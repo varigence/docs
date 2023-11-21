@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Synapse forward-only approach for deployment
+sidebar_position: 3
+title: Forward-Only Deployment
 description: Background on supporting a forward-only approach for Synapse deployment
 ---
 # Forward Only Deployment Approach

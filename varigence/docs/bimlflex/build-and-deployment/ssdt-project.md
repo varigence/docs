@@ -1,5 +1,6 @@
 ---
-title: BimlFlex-generated SQL Server Data Tools Project
+sidebar_position: 5
+title: Using SQL Server Data Tools (SSDT)
 description: BimlFlex and SQL Server Data Tools documentation for guidance on database management and automation of deployment processes and source control mechanisms
 tags: [BimlFlex, Walkthrough]
 ---

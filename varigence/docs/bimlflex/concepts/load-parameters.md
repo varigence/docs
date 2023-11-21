@@ -1,4 +1,5 @@
 ---
+sidebar_position: 8
 title: Load Parameters
 description: Documentation for parameters for load queries added in Parameters section or as Extension Points in BimlFlex
 tags: [BimlFlex, Conceptual]

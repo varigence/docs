@@ -1,5 +1,6 @@
 ---
-title: Sensitive Information Management in Azure Data Factory
+sidebar_position: 7
+title: Managing Sensitive Data
 description: Management of sensitive information within Azure Data Factory Key Vaults and Extension Points 
 tags: [BimlFlex, Walkthrough]
 ---

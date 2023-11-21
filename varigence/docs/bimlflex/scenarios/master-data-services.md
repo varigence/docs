@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Microsoft SQL Server Master Data Services (MDS) integration
+sidebar_position: 4
+title: Using Master Data Services as a source
 description: Documentation on integrating Microsoft SQL Server Master Data Services within BimlFlex with sample models, sample metadata, and schema types
 tags: [BimlFlex, Conceptual]
 ---

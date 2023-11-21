@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 title: Saving a Project
 description: Save a project in BimlStudio
 tags: [BimlStudio, Walkthrough]

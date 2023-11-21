@@ -1,5 +1,6 @@
 ---
-title: BimlCatalog Database Installation
+sidebar_position: 5
+title: Installing the BimlCatalog Database
 description: Detailed instructions on the installation of the BimlCatalog through BimlFlex installer or through BimlStudio
 tags: [BimlFlex, Walkthrough]
 ---

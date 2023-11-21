@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Fact Table Pattern
+sidebar_position: 4
+title: Fact Pattern
 description: Documentation of the way BimlFlex deploys Fact Table structures and data logistics
 tags: [BimlFlex, Conceptual]
 ---

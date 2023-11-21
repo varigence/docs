@@ -1,5 +1,6 @@
 ---
-title: Building Using the Command Line
+sidebar_position: 4
+title: Command Line Build
 description: Guide to building solutions involving CI/CD for automated processes, using response files, Biml Compiler, and MsBuild
 tags: [BimlFlex, Walkthrough]
 ---

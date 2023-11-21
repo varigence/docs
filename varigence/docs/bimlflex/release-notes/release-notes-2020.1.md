@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Release Notes 2020
+sidebar_position: 10
+title: BimlFlex 2020 R1 Release Notes
 ---
 # Release Notes
 :::note

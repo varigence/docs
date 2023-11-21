@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Metadata Database Installation
+sidebar_position: 4
+title: Installing the BimlFlex Database
 description: Detailed instructions on the installation of BimlFlex metadata database through BimlFlex installer or through BimlStudio
 tags: [BimlFlex, Walkthrough]
 ---

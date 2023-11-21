@@ -1,5 +1,6 @@
 ---
-title: Project and Batch structure for ADF
+sidebar_position: 9
+title: Project and Batch Organization
 description: Explanation of how Projects and Batches are translated into ADF folder structures and containers
 tags: [BimlFlex, Conceptual]
 ---

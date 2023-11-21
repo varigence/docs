@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Operational Reports
+sidebar_position: 17
+title: Operational Reports
 description: Documentation regarding the BimlFlex Operational Reports screen, including configuring operational reports, report screens, and execution details for batches
 tags: [BimlFlex, Conceptual]
 ---

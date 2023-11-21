@@ -1,5 +1,6 @@
 ---
-title: BimlFlex PostgreSQL Source
+sidebar_position: 9
+title: Using Azure PostgreSQL as a source
 description: Documentation on connecting to Postgres metadata in BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex App reference Documentation for Settings
+sidebar_position: 3
+title: Settings
 description: Documentation on metadata and framework settings within BimlFlex
 tags: [BimlFlex, Reference]
 ---

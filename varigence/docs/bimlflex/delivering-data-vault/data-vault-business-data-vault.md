@@ -1,4 +1,5 @@
 ---
+sidebar_position: 11
 title: Business Data Vault
 description: Overview of implementing a Business Data Vault based on a Data Vault
 tags: [BimlFlex, Conceptual]

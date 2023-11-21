@@ -1,5 +1,6 @@
 ---
-title: Setting up the AdventureWorksLT source database
+sidebar_position: 6
+title: Setting up an AdventureWorks sample source
 description: Directions on how to set up AdventureWorksLT as source database with detailed steps and supporting documentation
 tags: [BimlFlex, Walkthrough]
 ---

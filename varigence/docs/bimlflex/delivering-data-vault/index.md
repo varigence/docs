@@ -1,5 +1,6 @@
 ---
-title: Data Vault and BimlFlex
+sidebar_position: 1
+title: Overview
 description: Overview of Data Vault concepts as implemented in BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

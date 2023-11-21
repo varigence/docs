@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Software and Hardware requirements
+sidebar_position: 2
+title: System Requirements
 description: Documentation on software and hardware requirements for installing BimlStudio, BimlFlex, BimlFlex Excel Add-In, and related databases
 tags: [BimlFlex, Walkthrough]
 ---

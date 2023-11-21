@@ -1,5 +1,6 @@
 ---
-title: SSIS Deployment Overview
+sidebar_position: 1
+title: Overview
 description: Overview of the version concept in BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

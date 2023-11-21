@@ -1,5 +1,6 @@
 ---
-title: BimlFlex ADF Deployment Guide
+sidebar_position: 4
+title: ADF Deployment Overview
 description: Guide to assist with Azure Data Factory project creation, deployment, and standard configurations
 tags: [BimlFlex, Conceptual]
 ---

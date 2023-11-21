@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Release Notes 2023 R1
+sidebar_position: 3
+title: BimlFlex 2023 R1 Preview Release Notes
 description: Release Notes for BimlFlex 2023 R1 Preview
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex release notes
+sidebar_position: 1
+title: Overview
 description: An overview of key new features for the corresponding BimlFlex releases
 ---
 # Release Notes Overview

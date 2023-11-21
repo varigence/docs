@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Data Vault Best Practices
+sidebar_position: 13
+title: Data Vault Best Practices
 description: Documentation for Data Vault best practices within BimlFlex, including settings for hash key and algorithms, integration keys, and data vault entity management
 tags: [BimlFlex, Conceptual]
 ---

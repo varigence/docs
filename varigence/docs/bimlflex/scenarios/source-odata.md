@@ -1,5 +1,6 @@
 ---
-title: BimlFlex OData Source
+sidebar_position: 6
+title: Using OData as a source
 description: Documentation on loading an Odata source from bespoke sources within BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

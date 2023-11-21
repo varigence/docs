@@ -1,5 +1,6 @@
 ---
-title: Change the BimlFlex Excel bitness
+sidebar_position: 9
+title: Configuring bitness for the Excel Add-In
 description: Changing the bitness of BimlFlex Excel through installation or project folder
 tags: [BimlFlex, Conceptual]
 ---

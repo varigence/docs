@@ -1,5 +1,6 @@
 ---
-title: Snowflake Implementation with ADF
+sidebar_position: 3
+title: Implementing ADF Pipelines for Snowflake
 description: Guidance on how to implement Snowflake using Azure Data Factory for cloud based data warehouse solutions within BimlFlex
 tags: [BimlFlex, Conceptual]
 ---

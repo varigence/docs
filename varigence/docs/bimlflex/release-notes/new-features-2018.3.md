@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Release Notes 2018.3
+sidebar_position: 13
+title: BimlFlex 2018 R3 New Features
 description: release notes for current version of BimlFlex
 ---
 # New Features in BimlFlex 2018.3

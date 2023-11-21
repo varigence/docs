@@ -1,5 +1,6 @@
 ---
-title: Data Mart Configurations and Overrides
+sidebar_position: 3
+title: Data Mart Template Overrides
 description: Documentation on BimlFlex Configurations used to drive default behavior across multiple data architecture concepts within a Data Mart
 tags: [BimlFlex, Conceptual]
 ---

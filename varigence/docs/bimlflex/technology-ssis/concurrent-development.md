@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Concurrent Development
+sidebar_position: 9
+title: Concurrent Development
 description: Documentation on metadata setup, customers, and versions needed for concurrent development between users in BimlFlex
 tags: [BimlFlex, Walkthrough]
 ---

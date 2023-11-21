@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Export To File
+sidebar_position: 2
+title: Flat File Export
 description: Documentation on exporting data out of a database into files within BimlFlex, including flat file types, data rows, and delimiters
 tags: [BimlFlex, Conceptual]
 ---

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Data Type Conversions
+sidebar_position: 7
+title: Data Type Conversions
 description: Documentation providing data type conversations between BimlFlex data types and SQL Server data types
 tags: [BimlFlex, Reference]
 ---

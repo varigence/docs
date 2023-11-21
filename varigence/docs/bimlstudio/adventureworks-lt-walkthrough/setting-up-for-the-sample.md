@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 title: Setting up for the Sample
 description: Setting up for the Sample project in BimlStudio
 tags: [BimlStudio, Walkthrough]

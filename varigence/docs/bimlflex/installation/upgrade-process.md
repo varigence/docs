@@ -1,5 +1,6 @@
 ---
-title: Upgrade and Testing Process
+sidebar_position: 10
+title: Upgrade Process
 tags: [BimlFlex, Walkthrough]
 ---
 # Upgrade and Testing Process

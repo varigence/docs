@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Excel Add-in
+sidebar_position: 22
+title: Excel Add-In
 description: Guide on how to update the BimlFlex Excel add-in
 tags: [BimlFlex, Walkthrough]
 ---

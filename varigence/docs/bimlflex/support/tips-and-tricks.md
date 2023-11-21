@@ -1,4 +1,5 @@
 ---
+sidebar_position: 7
 title: Tips and Tricks
 description: BimlFlex tips and tricks including custom SSIS components, Extension Point abilities, importing metadata, custom scripts and setting options 
 tags: [BimlFlex, Conceptual]
@@ -316,7 +317,8 @@ To replace an existing source column with a new, derived column from an SSIS Exp
 
 As an example, consider the need to apply an operation to a source column in a load process. In this case, replace part of an email address with another value.
 
-The following approach will select the source column as an alternative name and replace it's value in the Data Flow with the SSIS expression in a Derived Column transformation. The replaced values will be sent to the target using the original column title: 
+The following approach will select the source column as an alternative name and replace it's value in the Data Flow with the SSIS expression in a Derived Column transformation. The replaced values will be sent to the target using the original column sidebar_position: 7
+title: Tips and Tricks
 
 |Column                   |Expression                                    |
 |---                      |---                                           |

@@ -1,5 +1,6 @@
 ---
-title: Snowflake features not supported by BimlFlex
+sidebar_position: 4
+title: Unsupported Snowflake Features
 description: Overview of Snowflake features that are not supported by BimlFlex
 ---
 # Unsupported Features

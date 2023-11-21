@@ -1,5 +1,6 @@
 ---
-title: Connecting to Salesforce REST API through BimlFlex
+sidebar_position: 10
+title: Connecting to Salesforce
 tags: [BimlFlex, Conceptual]
 ---
 

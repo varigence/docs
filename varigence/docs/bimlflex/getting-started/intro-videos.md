@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Intro Videos
+sidebar_position: 5
+title: Introductory Videos
 description: Collection of BimlFlex introductory videos, including end to end walkthrough, loading sample metadata, data vault acceleration, and building a data vault project and dimensional models
 tags: [BimlFlex, Walkthrough]
 ---

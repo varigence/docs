@@ -1,5 +1,6 @@
 ---
-title: SSIS with on-premises SQL Server
+sidebar_position: 2
+title: SSIS with On-Premise Sql Server
 description: Documentation on steps and considerations for extracting data from a Source database through staging, persisted stage, raw data vault, and business data vault for an on-premise SQL Server
 tags: [BimlFlex, Conceptual]
 ---

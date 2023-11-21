@@ -1,5 +1,6 @@
 ---
-title: Configuring a Linked Service Connection
+sidebar_position: 2
+title: Configuring a Linked Service
 description: Documentation on enabling linked service connections, connections for cloud services, and supported linked services for BimlFlex
 tags: [BimlFlex, Reference]
 ---

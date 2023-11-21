@@ -1,5 +1,6 @@
 ---
-title: Data Vault reference data
+sidebar_position: 8
+title: Reference Data
 description: Overview of Data Vault handling of reference data
 tags: [BimlFlex, Conceptual]
 ---

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex SSIS Custom Components
+sidebar_position: 4
+title: SSIS Custom Components
 description: Documentation regarding custom SSIS components used for ETL load processes in SSIS packages in BimlFlex
 tags: [BimlFlex, Walkthrough]
 ---

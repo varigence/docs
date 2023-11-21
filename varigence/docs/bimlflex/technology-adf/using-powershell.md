@@ -1,5 +1,6 @@
 ---
-title: Deployment Through PowerShell
+sidebar_position: 6
+title: Powershell Deployment
 description: Guide to deploy artifacts generated in Azure Data Factory through PowerShell
 tags: [BimlFlex, Conceptual]
 ---
@@ -119,7 +120,8 @@ This example file illustrates a Snowflake deployment file with parameters define
 
 BimlFlex creates PowerShell deployment scripts for SQL Server Data Tools projects. These are used to deploy SSDT database project definitions to compatible targets.
 
-A deploy all script is created with the title: 
+A deploy all script is created with the sidebar_position: 6
+title: Powershell Deployment
 
 `_ssdt-deploy-all.ps1`
 

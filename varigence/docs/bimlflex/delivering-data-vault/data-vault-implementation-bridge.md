@@ -1,5 +1,6 @@
 ---
-title: Data Vault Bridge tables
+sidebar_position: 7
+title: Bridge
 description: Overview of Data Vault Bridge tables
 tags: [BimlFlex, Conceptual]
 ---

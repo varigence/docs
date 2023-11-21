@@ -1,5 +1,6 @@
 ---
-title: BimlStudio Release Notes 2022 R3
+sidebar_position: 2
+title: BimlStudio 2022.3
 description: Release Notes for BimlStudio 2022 R3
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Scenarios Overview
+sidebar_position: 1
+title: Overview
 description: Overview of supporting techniques that BimlFlex provides
 tags: [BimlFlex, Conceptual]
 ---

@@ -1,5 +1,6 @@
 ---
-title: A brief introduction on Data Vault
+sidebar_position: 2
+title: Introduction to Data Vault
 description: Positioning of Data Vault methodology in the data world
 tags: [BimlFlex, Conceptual]
 ---

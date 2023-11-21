@@ -1,4 +1,5 @@
 ---
+sidebar_position: 14
 title: Preparing to Build the Example Project
 description: Getting ready to build the example project in BimlStudio
 tags: [BimlStudio, Walkthrough]

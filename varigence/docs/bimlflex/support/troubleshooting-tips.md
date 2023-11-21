@@ -1,5 +1,6 @@
 ---
-title: Troubleshooting Tips
+sidebar_position: 5
+title: Troubleshooting
 description: Troubleshooting tips for when errors occur within BimlFlex or BimlStudio
 ---
 # Troubleshooting Tips

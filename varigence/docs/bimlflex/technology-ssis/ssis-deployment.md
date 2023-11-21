@@ -1,5 +1,6 @@
 ---
-title: BimlFlex SSIS Deployment Guide
+sidebar_position: 3
+title: SSIS Deployment Guide
 description: Documentation on project configurations and deployments to SSIS Catalog within BimlFlex
 tags: [BimlFlex, Walkthrough]
 ---

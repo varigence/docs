@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Setup Overview
+sidebar_position: 1
+title: Overview
 description: Overview of how to setup and install the BimlFlex App
 ---
 # BimlFlex Installation Overview

@@ -1,5 +1,6 @@
 ---
-title: Data delivery
+sidebar_position: 1
+title: Overview
 description: Delivering data using BimlFlex
 tags: [BimlFlex, Reference]
 ---

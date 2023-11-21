@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Treeview
+sidebar_position: 5
+title: Treeview
 description: Overview of the BimlFlex Treeview
 tags: [BimlFlex, Conceptual]
 ---

@@ -1,5 +1,6 @@
 ---
-title: Handling ARM Templates within BimlFlex
+sidebar_position: 8
+title: ARM Template Handling
 Summary: Description of ARM Template emission within BimlFlex based on Azure size restriction(s)
 varigenceProduct:eProduct: BimlFlex
 varigenceArticleType: Conceptual

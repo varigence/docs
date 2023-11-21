@@ -1,5 +1,6 @@
 ---
-title: BimlFlex App Reference Documentation
+sidebar_position: 2
+title: Metadata Editors
 description: Documentation of components and properties for all editors within BimlFlex 
 tags: [BimlFlex, Reference]
 ---

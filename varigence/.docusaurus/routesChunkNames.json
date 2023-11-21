@@ -186,13 +186,13 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-1c7": {
+  "/docs-cfa": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docs-815-eee"
     }
   },
-  "/docs-3a1": {
+  "/docs-7dd": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "version": "version---docs-935-398"
   },
@@ -200,9 +200,17 @@
     "__comp": "__comp---theme-doc-tags-list-page-372-89e",
     "tags": "tags---docs-tags-559-5e5"
   },
+  "/docs/tags/biml-express-1a6": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---docs-tags-biml-express-694-f88"
+  },
   "/docs/tags/biml-flex-583": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---docs-tags-biml-flex-8-de-e6f"
+  },
+  "/docs/tags/biml-language-ced": {
+    "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
+    "tag": "tag---docs-tags-biml-language-619-5e0"
   },
   "/docs/tags/biml-studio-1e0": {
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
@@ -224,8 +232,84 @@
     "__comp": "__comp---theme-doc-tag-doc-list-pagedf-2-9f0",
     "tag": "tag---docs-tags-walkthroughe-89-5c8"
   },
-  "/docs-18a": {
+  "/docs-4ad": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/bimlexpress/-2e1": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-58-a-f11"
+  },
+  "/docs/bimlexpress/comparison/-eff": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-comparison-34-d-a6c"
+  },
+  "/docs/bimlexpress/comparison/comparing-bimlexpress-bidshelper-bideveloperextensions-592": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-comparison-comparing-bimlexpress-bidshelper-bideveloperextensions-455-87c"
+  },
+  "/docs/bimlexpress/comparison/comparing-bimlexpress-bimlstudio-314": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-comparison-comparing-bimlexpress-bimlstudio-727-f5a"
+  },
+  "/docs/bimlexpress/getting-started/-315": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-getting-started-4-ad-9c7"
+  },
+  "/docs/bimlexpress/getting-started/add-edit-biml-files-f44": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-getting-started-add-edit-biml-files-928-d52"
+  },
+  "/docs/bimlexpress/getting-started/bimlexpress-account-1a4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-getting-started-bimlexpress-accountc-3-c-3b2"
+  },
+  "/docs/bimlexpress/getting-started/generate-ssis-packages-935": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-getting-started-generate-ssis-packagesce-0-881"
+  },
+  "/docs/bimlexpress/getting-started/install-bimlexpress-15b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-getting-started-install-bimlexpress-514-675"
+  },
+  "/docs/bimlexpress/getting-started/menus-options-a6f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-getting-started-menus-options-55-a-7cd"
+  },
+  "/docs/bimlexpress/getting-started/preview-expanded-biml-3c8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-getting-started-preview-expanded-biml-70-f-f79"
+  },
+  "/docs/bimlexpress/release-notes/-12b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-release-notes-704-ba4"
+  },
+  "/docs/bimlexpress/release-notes/biml-express-2020-features-09a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-release-notes-biml-express-2020-featuresdc-7-f9e"
+  },
+  "/docs/bimlexpress/release-notes/bimlexpress-2017-26f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-release-notes-bimlexpress-2017-f-98-553"
+  },
+  "/docs/bimlexpress/release-notes/bimlexpress-2018.1-19c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-release-notes-bimlexpress-2018-1406-8a1"
+  },
+  "/docs/bimlexpress/release-notes/bimlexpress-2018.2-7ed": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-release-notes-bimlexpress-2018-2-a-2-c-93a"
+  },
+  "/docs/bimlexpress/release-notes/bimlexpress-2018.3-bee": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-release-notes-bimlexpress-2018-32-fa-bdc"
+  },
+  "/docs/bimlexpress/release-notes/BimlExpress-2019.1-046": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-release-notes-biml-express-2019-1-f-04-a17"
+  },
+  "/docs/bimlexpress/release-notes/BimlExpress-2020.1-688": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-bimlexpress-release-notes-biml-express-2020-1-a-90-487"
   },
   "/docs/bimlflex/-bf3": {
     "__comp": "__comp---theme-doc-item-178-a40",

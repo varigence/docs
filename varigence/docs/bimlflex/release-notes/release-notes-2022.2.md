@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Release Notes 2022 R2
+sidebar_position: 5
+title: BimlFlex 2022 R2 Release Notes
 description: Release Notes for BimlFlex 2022 R2
 ---
 

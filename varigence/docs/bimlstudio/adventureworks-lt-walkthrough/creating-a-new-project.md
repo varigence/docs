@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 title: Creating a New Project
 description: Documentation of how to create a new project in BimlStudio
 tags: [BimlStudio, Walkthrough]

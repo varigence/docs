@@ -1,4 +1,5 @@
 ---
+sidebar_position: 7
 title: Concurrent Development
 description: Details regarding concurrent development between teams, customers, and shared metadata
 tags: [BimlFlex, Conceptual]

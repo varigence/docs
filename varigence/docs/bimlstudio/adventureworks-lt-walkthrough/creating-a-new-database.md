@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 title: Creating a New Database
 description: Documentation of how to create a new database in BimlStudio
 tags: [BimlStudio, Walkthrough]

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Stored Procedure Source
+sidebar_position: 7
+title: Using Stored Procedures as a source
 description: Documentation on how to use BimlFlex stored procedure source to load data
 tags: [BimlFlex, Conceptual]
 ---

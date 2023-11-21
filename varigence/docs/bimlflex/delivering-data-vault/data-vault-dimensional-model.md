@@ -1,5 +1,6 @@
 ---
-title: Data Vault Dimensional Model
+sidebar_position: 12
+title: Dimensional Model Delivery
 description: Overview of implementing a Dimensional Model based on a Data Vault
 tags: [BimlFlex, Conceptual]
 ---

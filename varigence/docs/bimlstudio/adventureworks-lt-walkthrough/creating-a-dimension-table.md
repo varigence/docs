@@ -1,4 +1,5 @@
 ---
+sidebar_position: 10
 title: Creating a Dimension Table
 description: Documentation of how to create a dimension table in BimlStudio
 tags: [BimlStudio, Walkthrough]

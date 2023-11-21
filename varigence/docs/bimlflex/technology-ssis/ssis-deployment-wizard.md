@@ -1,5 +1,6 @@
 ---
-title: Deployment Through the SSIS Deployment Wizard
+sidebar_position: 6
+title: SSIS Deployment Wizard
 description: Documentation on deployment of generated SQL Server Integration Services (SSIS) assets
 tags: [BimlFlex, Walkthrough]
 ---

@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Components Overview
+sidebar_position: 2
+title: BimlFlex Components
 description: Overview of the components of the BimlFlex ecosystem, with reference to the BimlFlex- and BimlCatalog database
 ---
 # Components of BimlFlex

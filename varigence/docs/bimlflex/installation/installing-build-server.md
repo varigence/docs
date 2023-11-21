@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Build Server Install
+sidebar_position: 7
+title: Installing a BimlFlex Build Server
 description: Assistance on how to install a BimlFlex build server as part of a CI/CD pipeline
 tags: [BimlFlex, Walkthrough]
 ---

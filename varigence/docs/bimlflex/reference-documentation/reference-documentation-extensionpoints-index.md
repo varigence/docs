@@ -1,5 +1,6 @@
 ---
-title: BimlFlex App Reference Documentation
+sidebar_position: 4
+title: Extension Points
 description: Documentation of components and properties for all Extension Points within BimlFlex 
 tags: [BimlFlex, Reference]
 ---

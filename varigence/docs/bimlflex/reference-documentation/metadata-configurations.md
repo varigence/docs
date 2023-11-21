@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Configurations
+sidebar_position: 6
+title: Configurations
 description: Documentation on the metadata and framework configurations available in BimlFlex with standard configurations and examples
 tags: [BimlFlex, Reference]
 ---
@@ -26,7 +27,8 @@ The following default **Configurations** are made available by default in BimlFl
 
 ### RowAuditId
 
-The `RowAuditId` intends to capture the execution instance id from the process that loads the object. Auditability is supported by querying this id in the BimlCatalog, so that additional information on the context in which the process was run can be viewed. The default derives the audit id from the ExecutionID user variable. This value will be added to all rows as the audit id, default column title: `FlexRowAuditId`
+The `RowAuditId` intends to capture the execution instance id from the process that loads the object. Auditability is supported by querying this id in the BimlCatalog, so that additional information on the context in which the process was run can be viewed. The default derives the audit id from the ExecutionID user variable. This value will be added to all rows as the audit id, default column sidebar_position: 6
+title: Configurations
 
 #### Examples
 

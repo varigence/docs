@@ -1,5 +1,6 @@
 ---
-title: New Features in BimlFlex 2022 R1
+sidebar_position: 6
+title: BimlFlex 2022 R1 New Features
 description: New Features Included Within BimlFlex 2022 R1
 ---
 # New Features in BimlFlex 2022 R1

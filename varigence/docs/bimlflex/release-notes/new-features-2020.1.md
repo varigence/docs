@@ -1,5 +1,6 @@
 ---
-title: New Features in BimlFlex 2020
+sidebar_position: 9
+title: BimlFlex 2020 R1 New Features
 ---
 # New Features in BimlFlex 2020
 

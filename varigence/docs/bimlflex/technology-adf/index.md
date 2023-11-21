@@ -1,5 +1,6 @@
 ---
-title: ADF Deployment Overview
+sidebar_position: 1
+title: Overview
 description: Guidance in Azure Data Factory concurrent development, CI/CD delivery, sensitive information management, and deployment through PowerShell and Azure portal 
 ---
 # BimlFlex for Azure Data Factory

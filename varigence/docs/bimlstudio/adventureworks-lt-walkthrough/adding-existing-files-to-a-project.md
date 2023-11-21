@@ -1,5 +1,6 @@
 ---
-title: Adding existing files to a project
+sidebar_position: 11
+title: Adding Existing Files to a Project
 description: Documentation of how to add existing files to a project
 tags: [BimlStudio, Walkthrough]
 ---

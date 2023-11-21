@@ -1,5 +1,6 @@
 ---
-title: Excel File Migration Error within BimlFlex 2020 R2 Update
+sidebar_position: 4
+title: Excel Metadata Add-In
 description: Documentation regarding the need to update the BimlFlex Excel File Add-in
 tags: [BimlFlex, Reference]
 ---

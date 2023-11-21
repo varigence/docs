@@ -1,5 +1,6 @@
 ---
-title: Find the BimlFlex versions installed
+sidebar_position: 3
+title: Checking the Installed Version
 description: Documentation on how to find installed versions of BimlFlex, BimlStudio, and BimlFlex Excel Add-In
 ---
 

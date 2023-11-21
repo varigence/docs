@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Support Overview
+sidebar_position: 1
+title: Overview
 description: Overview of BimlFlex support overview with support process assistance
 ---
 # BimlFlex Support Overview

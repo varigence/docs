@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Integration Keys
+sidebar_position: 7
+title: Integration Keys
 description: Explanation of the Integration Keys concept, what it is and why it matters
 tags: [BimlFlex, Conceptual]
 ---

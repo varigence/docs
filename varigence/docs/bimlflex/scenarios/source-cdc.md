@@ -1,5 +1,6 @@
 ---
-title: Change Data Capture Source to Staging
+sidebar_position: 8
+title: Using SQL Server CDC as a source
 description: Documentation regarding Microsoft SQL Server change data capture in source to staging with setting descriptions and additional considerations
 tags: [BimlFlex, Conceptual]
 ---

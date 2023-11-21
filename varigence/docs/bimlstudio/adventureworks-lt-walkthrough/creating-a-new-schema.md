@@ -1,4 +1,5 @@
 ---
+sidebar_position: 8
 title: Creating a New Schema
 description: How to create a new schema in BimlStudio
 tags: [BimlStudio, Walkthrough]

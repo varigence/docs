@@ -1,5 +1,6 @@
 ---
-title: Getting Started with BimlFlex
+sidebar_position: 1
+title: Overview
 description: Guide on getting started with BimlFlex including introductory videos, initial configuration, and first project walkthrough
 ---
 # Getting Started with BimlFlex

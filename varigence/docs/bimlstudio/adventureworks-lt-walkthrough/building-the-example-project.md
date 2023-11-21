@@ -1,4 +1,5 @@
 ---
+sidebar_position: 15
 title: Building the Example Project
 description: How to build the example project
 tags: [BimlStudio, Walkthrough]

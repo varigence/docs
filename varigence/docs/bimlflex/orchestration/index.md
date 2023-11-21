@@ -1,5 +1,6 @@
 ---
-title: Organizing data logistics orchestration using BimlFlex
+sidebar_position: 1
+title: Overview
 description: Organizing data logistics orchestration using BimlFlex
 tags: [BimlFlex, Reference]
 ---

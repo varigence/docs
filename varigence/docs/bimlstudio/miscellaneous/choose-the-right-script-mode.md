@@ -1,5 +1,6 @@
 ---
-title: Choose the Right BimlScript Type
+sidebar_position: 9
+title: Choose The Right Script Mode
 description: Discusses the three types of BimlScripts and which is right for the user's needs.
 tags: [BimlStudio, Conceptual]
 ---

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 12
 title: Creating a Fact Table
 description: Documentation of how to create a fact table in BimlStudio
 tags: [BimlStudio, Walkthrough]

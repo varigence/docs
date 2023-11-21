@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Generating DDL
+sidebar_position: 6
+title: Generating DDL using BimlStudio
 description: Generate DDL based on BimlFlex metadata using BimlStudio and DDL scripts 
 tags: [BimlFlex, Conceptual]
 ---

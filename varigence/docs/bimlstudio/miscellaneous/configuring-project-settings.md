@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 title: Configuring Project Settings
 description: Discussion of the various project settings in BimlStudio.
 tags: [BimlStudio, Conceptual]

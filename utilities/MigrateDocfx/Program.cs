@@ -3,12 +3,11 @@ using System.Text.RegularExpressions;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-var docfxDirectory = @"C:\varigencedocs\bimlstudio";
-var docusaurusDirectory = @"C:\varigencedocs\varigence\docs\bimlstudio";
+var docfxDirectory = @"C:\varigencedocs\bimlexpress";
+var docusaurusDirectory = @"C:\varigencedocs\varigence\docs\bimlexpress";
 var imageExtensions = new[] {".png", ".gif", ".svg", ".jpg", ".jpeg"};
 
-foreach (var filePath in Directory.EnumerateFiles(docfxDirectory, "*.*", SearchOption.AllDirectories)
-             .Where(file => imageExtensions.Any(ext => file.EndsWith(ext, StringComparison.OrdinalIgnoreCase))))
+foreach (var filePath in Directory.EnumerateFiles(docfxDirectory, "*.*", SearchOption.AllDirectories).Where(file => imageExtensions.Any(ext => file.EndsWith(ext, StringComparison.OrdinalIgnoreCase))))
 {
     CopyFile(filePath, docfxDirectory, docusaurusDirectory);
 }
@@ -19,9 +18,11 @@ var tocFiles = new Dictionary<string, Tuple<string, string>>();
 
 foreach (string enumerateFile in Directory.EnumerateFiles(docfxDirectory, "*.md", SearchOption.AllDirectories)) GetFileDictionaries(enumerateFile, ref fileUids, ref includeFiles);
 GetTocSidebar(docfxDirectory, ref fileUids, ref tocFiles, docfxDirectory, docusaurusDirectory);
-foreach (string enumerateFile in Directory.EnumerateFiles(docfxDirectory, "*.md", SearchOption.AllDirectories)) MigrateFile(enumerateFile, fileUids, includeFiles, docfxDirectory, docusaurusDirectory);
+foreach (string enumerateFile in Directory.EnumerateFiles(docfxDirectory, "*.md", SearchOption.AllDirectories))
+    MigrateFile(enumerateFile, fileUids, includeFiles, tocFiles, docfxDirectory, docusaurusDirectory);
 
-static void MigrateFile(string filePath, Dictionary<string, Tuple<string, string>> fileUids, Dictionary<string, Tuple<string, string>> includeFiles, string docFxDirectory, string docusaurusDirectory)
+static void MigrateFile(string filePath, Dictionary<string, Tuple<string, string>> fileUids, Dictionary<string, Tuple<string, string>> includeFiles, Dictionary<string, Tuple<string, string>> tocFiles,
+    string docFxDirectory, string docusaurusDirectory)
 {
     var content = File.ReadAllText(filePath);
 
@@ -51,22 +52,22 @@ static void MigrateFile(string filePath, Dictionary<string, Tuple<string, string
         content = Regex.Replace(content, $@"(\(xref:{fileUid.Key}\))", replacement, RegexOptions.IgnoreCase);
     }
 
+    // Processing title
+    foreach (var tocFile in tocFiles)
+    {
+        if (tocFile.Key == filePath)
+        {
+            content = Regex.Replace(content, @"(title:\W)(.*\s)", $"{tocFile.Value.Item2}\r\ntitle: {tocFile.Value.Item1}\r\n");
+        }
+    }
+
     // Finding the header index
     var headerIndex = content.IndexOf("---", content.IndexOf("---", StringComparison.OrdinalIgnoreCase) + 3, StringComparison.OrdinalIgnoreCase) + 3;
     var importStatements = "";
 
-    if (filePath.EndsWith("parameter-editor.md"))
-    {
-        var test = "here";
-    }
-
     // Processing includeFiles
     foreach (var includeFile in includeFiles)
     {
-        if (includeFile.Key == "_incl-header-parameter.md")
-        {
-            var again = "here";
-        }
         foreach (Match match in new Regex($@"(\[!include.*?\()((.*?\/)?{includeFile.Key})(\)\])", RegexOptions.IgnoreCase).Matches(content))
         {
             if (match.Success)
@@ -163,6 +164,11 @@ static void GetTocDictionary(string rootDirectory, string filePath, ref int tocP
                     position++;
                 }
             }
+        }
+        if (tocEntry.href.EndsWith(".md"))
+        {
+            tocFiles.Add(Path.Combine(rootDirectory, tocEntry.href), new Tuple<string, string>(tocEntry.name, $"sidebar_position: {position}"));
+            position++;
         }
     }
 }

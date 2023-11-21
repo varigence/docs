@@ -1,5 +1,6 @@
 ---
-title: SSIS Server Installation
+sidebar_position: 6
+title: Installing an SSIS Server
 description: Documentation on how to install custom SSIS components used in BimlFlex to generate SSIS packages
 tags: [BimlFlex, Walkthrough]
 ---

@@ -1,5 +1,6 @@
 ---
-title: BimlStudio User Guide
+sidebar_position: 1
+title: BimlStudio Documentation
 ---
 # BimlStudio User Guide
 

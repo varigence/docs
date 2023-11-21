@@ -1,5 +1,6 @@
 ---
-title: Configure Azure Data Factory Landing Area
+sidebar_position: 3
+title: Landing Area
 description: Instructions on how to configure Azure Data Factory Landing Area accessible by SQL Based ELT stored procedures 
 tags: [BimlFlex, Conceptual]
 ---

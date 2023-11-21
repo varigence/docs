@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Reference Documentation
+sidebar_position: 1
+title: Overview
 description: The BimlFlex Reference Documentation contains detailed information about the many ways BimlFlex can be configured
 tags: [BimlFlex, Reference]
 ---

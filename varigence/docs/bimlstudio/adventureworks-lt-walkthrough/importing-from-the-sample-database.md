@@ -1,4 +1,5 @@
 ---
+sidebar_position: 7
 title: Importing from the Sample Database
 description: How to import from the sample database using BimlStudio
 tags: [BimlStudio, Walkthrough]

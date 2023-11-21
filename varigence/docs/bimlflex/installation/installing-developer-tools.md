@@ -1,5 +1,6 @@
 ---
-title: BimlFlex Developer Installation
+sidebar_position: 8
+title: Installing BimlFlex Developer Tools
 description: Documentation on how to install BimlFlex through a developer installation file
 tags: [BimlFlex, Walkthrough]
 ---
