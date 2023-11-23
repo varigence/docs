@@ -11,19 +11,21 @@ Before working with Snowflake metadata, you should ensure that your environment 
 
 ## Installing and Configuring SnowSQL (SSIS Only)
 
-When using an SSIS [Integration Template](xref:bimlflex-metadata-static-values#integration-templates), BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.
+When using an SSIS [Integration Template](../reference-documentation/metadata-static-values#integration-templates), BimlFlex uses a [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components) that leverages SnowSQL and the SnowSQL `config` file to connect and move data.
 
 This requires that SnowSQL be installed and the appropriate connection created on the server executing the SSIS packages.
 
 Follow the below link for instructions on how to install SnowSQL.
-:::tip
 
 
-> For additional details on installing SnowSQL refer to the following Snowflake Docs guides:
->
-> * [Installing SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-install-config.html).
-> * [Logging into Snowflake](https://docs.snowflake.com/en/user-guide/connecting.html)  
-> * [Configuring SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-config.html)
+
+:::tip
+
+For additional details on installing SnowSQL refer to the following Snowflake Docs guides:
+
+* [Installing SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-install-config.html).
+* [Logging into Snowflake](https://docs.snowflake.com/en/user-guide/connecting.html)  
+* [Configuring SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-config.html)
 
 :::
 
@@ -65,51 +67,57 @@ region = west-us-2.azure
 ## BimlFlex Snowflake Custom SSIS Components
 
 The Snowflake load process uses a custom SSIS component to provide a robust query management experience in SSIS. The required components are installed and upgraded through the BimlFlex developer installation, or by using the separate runtime installation for custom components.
-:::note
 
 
-> If the components were not installed on initial installation they can be installed at a later date by re-running the installer.
-> For additional details on installing BimlFlex and Custom Components refer to the [BimlFlex installation guide](bimlflex-setup-installing-bimlflex).
+
+:::note
+
+If the components were not installed on initial installation they can be installed at a later date by re-running the installer.
+For additional details on installing BimlFlex and Custom Components refer to the [BimlFlex installation guide](../installation/installing-bimlflex).
 
 :::
 
 
 ## Installing and Configuring a Snowflake ODBC DSN
 
-The ODBC driver is only required if using SSIS orchestration to connect to a Snowflake `Source System`, or using the [**Metadata Importer**](bimlflex-concepts-importing-metadata) to bring Snowflake metadata into the BimlFlex framework when Snowflake data sources are part of the solution.
-:::tip
+The ODBC driver is only required if using SSIS orchestration to connect to a Snowflake `Source System`, or using the [**Metadata Importer**](../concepts/importing-metadata) to bring Snowflake metadata into the BimlFlex framework when Snowflake data sources are part of the solution.
 
 
-> For additional details on installing and configuring and ODBC driver and DSN, refer to the below Snowflake Docs guides:  
->
-> * [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
-> * [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
+
+:::tip
+
+For additional details on installing and configuring and ODBC driver and DSN, refer to the below Snowflake Docs guides:  
+
+* [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
+* [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
 
 :::
 
 
 ## Configuring BimlFlex for Snowflake
 
-BimlFlex uses [**Settings**](bimlflex-setting-editor) to adapt to specific requirements for file locations, naming conventions, data conventions etc.
+BimlFlex uses [**Settings**](../metadata-editors/setting-editor) to adapt to specific requirements for file locations, naming conventions, data conventions etc.
 
 Align these settings with the organizations best practices and environmental requirements.
 
 ### Snowflake Settings
 
-The following Snowflake [**Snowflake-specific settings**](xref:bimlflex-app-reference-documentation-settings-index#snowflake) are used to configure overall orchestration options for Snowflake.
+The following Snowflake [**Snowflake-specific settings**](../reference-documentation/reference-documentation-settings-index#snowflake) are used to configure overall orchestration options for Snowflake.
 
 These settings define the connectivity configuration from BimlFlex to Snowflake, and are used in the resulting data solution when deployed to the target environment. For example, these settings are used to define the Linked Service and file locations.
-:::danger
 
 
-> Please configure and review the above settings carefully, as they are essential for correct connectivity to Snowflake in the compiled data solution.
+
+:::danger
+
+Please configure and review the above settings carefully, as they are essential for correct connectivity to Snowflake in the compiled data solution.
 
 :::
 
 
 ### Azure Storage Processing Settings (ADF Only)
 
-The following Azure [**Settings**](bimlflex-setting-editor) are used to configure the blob destinations. This is mandatory when using Snowflake.
+The following Azure [**Settings**](../metadata-editors/setting-editor) are used to configure the blob destinations. This is mandatory when using Snowflake.
 
 ### [Settings](#tab/azure-storage-processing-settings)
 
@@ -146,10 +154,12 @@ The following Azure [**Settings**](bimlflex-setting-editor) are used to configur
 | Stage Account Key    | `<StorageAccountKey>`== |
 | Stage SAS Token      | ?`<SasToken>`           |
 | Blob Storage Domain  | blob.core.windows.net   |
-:::tip
 
 
-> For additional details, please refer to the following Microsoft guide on [creating an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas).
+
+:::tip
+
+For additional details, please refer to the following Microsoft guide on [creating an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas).
 
 :::
 
@@ -185,26 +195,30 @@ Snowflake is not currently supported as a `Landing Area` but a Landing Area is r
 The recommendation is for the `Landing Area` to be a *Connection Type* of `Azure Blob Storage` and *System Type* of `Flat File Delimited`.
 
 In addition to the `Landing Area` it is also important that the **Settings* for an [Azure Blob Stage Container](#azure-storage-processing-settings-adf-only), [Azure Blob Archive Container](#azure-storage-processing-settings-adf-only), and [Azure Blob Error Container](#azure-storage-processing-settings-adf-only) are populated correctly.
-:::danger
 
 
-> Ensure that all Azure Blob Container **Settings** are configured properly:
->
-> * [Azure Blob Stage Container](#azure-storage-processing-settings-adf-only)
-> * [Azure Blob Archive Container](#azure-storage-processing-settings-adf-only)  
-> * [Azure Blob Error Container](#azure-storage-processing-settings-adf-only)
-:::tip
+
+:::danger
+
+Ensure that all Azure Blob Container **Settings** are configured properly:
+
+* [Azure Blob Stage Container](#azure-storage-processing-settings-adf-only)
+* [Azure Blob Archive Container](#azure-storage-processing-settings-adf-only)  
+* [Azure Blob Error Container](#azure-storage-processing-settings-adf-only)
 
 :::
 
 
 
-> Additional resources are available on the Microsoft Docs sections:
->
-> * [Storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)  
-> * [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)  
-> * [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)  
-> * [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)
+
+:::tip
+
+Additional resources are available on the Microsoft Docs sections:
+
+* [Storage account overview](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)  
+* [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)  
+* [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)  
+* [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)
 
 :::
 
@@ -222,10 +236,12 @@ The *System Type* should always be `Snowflake Data Warehouse` for any Snowflake 
 The [Snowflake Custom SSIS Component](#bimlflex-snowflake-custom-ssis-components) uses the connection information specified in the `.SnowSQL\config` file to connect. See the [Snowflake SnowSQL Settings](#installing-and-configuring-snowsql-ssis-only) section for instructions on how to specify the file and connection to use.
 
 BimlFlex only uses the *Connection String* field to generate an associated Connection Manager in SSIS. The associated Connection Manager will be created in SSIS using the inputted *Connection String* but will not be used during any of the generated SSIS orchestration.
-:::note
 
 
-> This guide only covers *Connection String* which is only used by SSIS orchestration. For details on configuring the values of a Connection String Secret see the ADF Connection String Example in [Linked Services Section](#linked-services-adf-only).
+
+:::note
+
+This guide only covers *Connection String* which is only used by SSIS orchestration. For details on configuring the values of a Connection String Secret see the ADF Connection String Example in [Linked Services Section](#linked-services-adf-only).
 
 :::
 
@@ -241,25 +257,29 @@ Dsn=`{DSN Name}`;Uid=`{User Name}`;Pwd=`{Password}`;Database=`{Database Name}`;
 ```cmd
 Dsn=Snowflake_DSN;Uid=MyUser;Pwd=P@$$Word;Database=bfx_sfl;
 ```
-:::danger
 
 
-> Then Connection Manager will also require the appropriate ODBC driver to be installed and a DSN created.  For additional details refer to the below guides:
->
-> Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
-> Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
-> Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)
+
+:::danger
+
+Then Connection Manager will also require the appropriate ODBC driver to be installed and a DSN created.  For additional details refer to the below guides:
+
+Snowflake Docs: [ODBC Driver](https://docs.snowflake.com/en/user-guide/odbc.html)  
+Snowflake Docs: [Installing and Configuring the ODBC Driver for Windows](https://docs.snowflake.com/en/user-guide/odbc-windows.html)  
+Microsoft Docs: [ODBC Data Source Administrator](https://docs.microsoft.com/en-us/sql/odbc/admin/odbc-data-source-administrator)
 
 :::
 
 
 ***
-:::tip
 
 
-> For additional details on creating a **Connection** refer to the below guide:  
->
-> * [Connections](bimlflex-connection-editor)
+
+:::tip
+
+For additional details on creating a **Connection** refer to the below guide:  
+
+* [Connections](../metadata-editors/connection-editor)
 
 :::
 
@@ -285,13 +305,15 @@ host=xy12345.west-us-2.azure.snowflakecomputing.com;account=xy12345;user=MyUser;
 ```
 
 ***
-:::tip
 
 
-> For additional details on creating a Linked Service refer to the below guides:  
->
-> * [Configuring a Linked Service Connection](create-linked-service-connection)  
-> * [Configuring a Linked Service Connection for Snowflake Data Warehouse](linked-service-snowflake)
+
+:::tip
+
+For additional details on creating a Linked Service refer to the below guides:  
+
+* [Configuring a Linked Service Connection](../technology-adf/create-linked-service-connection)  
+* [Configuring a Linked Service Connection for Snowflake Data Warehouse](../technology-adf/linked-service-snowflake)
 
 :::
 
@@ -305,10 +327,12 @@ Once generated the scripts can be manually deployed to the required database.
 ### Generating SnowSQL Scripts
 
 Using Snowflake as the target warehouse platform requires the generation of the `Snowflake Table Script` and `Snowflake Procedure Script` options when using **Generate Scripts** in BimlStudio. Additionally if Data Vault is being used the standard `Data Vault Default Insert Script` can be used to generate the required Ghost Keys.
-:::tip
 
 
-> For additional details on generating DDL refer to the [BimlFlex DDL generation guide](bimlflex-generating-ddl).
+
+:::tip
+
+For additional details on generating DDL refer to the [BimlFlex DDL generation guide](../build-and-deployment/generating-ddl).
 
 :::
 
@@ -317,20 +341,24 @@ Using Snowflake as the target warehouse platform requires the generation of the 
 
 Once BimlFlex generates the scripts they can be executed against the target database.
 These can be deployed through copy/paste using a Snowflake Worksheet or by a SnowSQL command if desired.
-:::danger
 
 
-> Ensure you are using the appropriate WAREHOUSE and DATABASE when executing the SnowSQL scripts. The scripts do not contain a `USE DATABASE` or `USE WAREHOUSE` clause and depend on the user executing the script to have select the appropriate values.
-:::tip
+
+:::danger
+
+Ensure you are using the appropriate WAREHOUSE and DATABASE when executing the SnowSQL scripts. The scripts do not contain a `USE DATABASE` or `USE WAREHOUSE` clause and depend on the user executing the script to have select the appropriate values.
 
 :::
 
 
 
-> For additional details on using the SnowSQL CLI or Worksheets refer to the below Snowflake Docs guides:
->
-> * [Using SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-use.html)  
-> * [Using Worksheets for Queries](https://docs.snowflake.com/en/user-guide/ui-worksheet.html)
+
+:::tip
+
+For additional details on using the SnowSQL CLI or Worksheets refer to the below Snowflake Docs guides:
+
+* [Using SnowSQL](https://docs.snowflake.com/en/user-guide/snowsql-use.html)  
+* [Using Worksheets for Queries](https://docs.snowflake.com/en/user-guide/ui-worksheet.html)
 
 :::
 
@@ -348,14 +376,16 @@ Ensure these commonly missed steps are performed:
 * [Install and Configure SnowSQL](#installing-and-configuring-snowsql-ssis-only)  
 * [Install and Configure Snowflake ODBC DSN](#installing-and-configuring-a-snowflake-odbc-dsn)
 * [Install Snowflake SSIS Custom Components](#bimlflex-snowflake-custom-ssis-components)
-* [Configure and review the generic SSIS environment settings](bimlflex-setting-editor)
-:::tip
+* [Configure and review the generic SSIS environment settings](../metadata-editors/setting-editor)
 
 
-> For additional details on generating deploying SSIS packages refer to the below guides:  
->
-> * [Deployment Through PowerShell](bimlflex-ssis-using-powershell)  
-> * [Deployment Through the SSIS Deployment Wizard](bimlflex-ssis-deployment-wizard)
+
+:::tip
+
+For additional details on generating deploying SSIS packages refer to the below guides:  
+
+* [Deployment Through PowerShell](../technology-ssis/using-powershell)  
+* [Deployment Through the SSIS Deployment Wizard](../technology-ssis/ssis-deployment-wizard)
 
 :::
 
@@ -368,17 +398,19 @@ As a final check, please ensure the following configurations were made:
 
 * [Create a Landing Area](#landing-area-adf-only)  
 * [Provide a configured Linked Service with Secrets entered](#linked-services-adf-only)  
-* [Configure and review the generic Azure and Azure Data Factory environment settings](bimlflex-setting-editor)
+* [Configure and review the generic Azure and Azure Data Factory environment settings](../metadata-editors/setting-editor)
 * [Azure Blob Stage Container Settings](#azure-storage-processing-settings-adf-only)  
 * [Azure Blob Archive Container Settings](#azure-storage-processing-settings-adf-only)  
 * [Azure Blob Error Container Settings](#azure-storage-processing-settings-adf-only)
-:::tip
 
 
-> For additional details on generating deploying ADF artifacts refer to the below guides:
->
-> * [Deployment Through PowerShell](bimlflex-adf-using-powershell)  
-> * [Deployment Through the Azure Portal](using-azure-portal)
+
+:::tip
+
+For additional details on generating deploying ADF artifacts refer to the below guides:
+
+* [Deployment Through PowerShell](../technology-adf/using-powershell)  
+* [Deployment Through the Azure Portal](../technology-adf/using-azure-portal)
 
 :::
 

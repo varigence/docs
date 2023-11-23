@@ -26,7 +26,7 @@ Batch Orchestration is controlled per Batch in the Batches metadata sheet.
 
 The following diagram illustrates the package control flow.
 
-![Orchestration Package Overview](images/bimlflex-ss-v5-orchestration-package-overview.png "Orchestration Package Overview")
+![Orchestration Package Overview](/img/bimlflex/bimlflex-ss-v5-orchestration-package-overview.png "Orchestration Package Overview")
 
 The Orchestration Framework enables packages to maintain process and data integrity in case of an error condition. If a Package or Batch fail the Orchestration manages what runs in the next sequence and can, optionally, handle rollback of inconsistent data.
 
@@ -40,7 +40,7 @@ Every package is broken up into the following three main segments
 
 The start sequence container holds the OnPreExecute event handler that controls the Orchestration path. The diagram below illustrates the event handler logic.
 
-![Orchestration Start](images/bimlflex-ss-v5-orchestration-package-start.png "Orchestration Start")
+![Orchestration Start](/img/bimlflex/bimlflex-ss-v5-orchestration-package-start.png "Orchestration Start")
 
 The following Stored Procedure is executed by the Start Event
 
@@ -173,7 +173,7 @@ Rollback will remove partially loaded rows from the target tables. Depending on 
 
 The following illustrates the Orchestration of a main load sequence
 
-![Main Sequence](images/bimlflex-ss-v5-orchestration-sample-main-sequence.png "Main Sequence")
+![Main Sequence](/img/bimlflex/bimlflex-ss-v5-orchestration-sample-main-sequence.png "Main Sequence")
 
 An error condition in the second run will generate the following Status Flag updates for the run.
 

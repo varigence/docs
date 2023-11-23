@@ -6,7 +6,7 @@ You can import database assets by following these steps:
 
 1. Select the Home tab in the ribbon and click the BimlScript button. You can also right click the Utilities folder and click **Add BimlScript**. This will open the **New Item** dialog, click **Add**.
 
-    ![Biml Script Ribbon Button](https://varigencecom.blob.core.windows.net/images-mistdocumentation-importingtableswithbimlscript/005a_Step1.png)
+    ![Biml Script Ribbon Button](/img/bimlstudio/005a_Step1.png)
 
 1. This creates a BimlFile that's added in the Logical View under Library\Utilities.
 
@@ -17,17 +17,17 @@ You can import database assets by following these steps:
 1. For importing assets from the AdventureWorksLT database, you can copy and paste this BimlScript into the **BimlScript Input Editor** pane. You can also use this sample as a starting point for writing your own import script.
 
 ```biml
-        `<#@ template language="C#" hostspecific="True" tier#>`
-        `<# var importResult = ExternalDataAccess.GetDatabaseSchema(RootNode.DbConnections["AdventureWorksLT"], new[]{"SalesLT"}, null, ImportOptions.ExcludeForeignKey | ImportOptions.ExcludeColumnDefault | ImportOptions.ExcludeViews | ImportOptions.ExcludeIdentity);#>`
+        <#@ template language="C#" hostspecific="True" tier#>
+        <# var importResult = ExternalDataAccess.GetDatabaseSchema(RootNode.DbConnections["AdventureWorksLT"], new[]{"SalesLT"}, null, ImportOptions.ExcludeForeignKey | ImportOptions.ExcludeColumnDefault | ImportOptions.ExcludeViews | ImportOptions.ExcludeIdentity);#>
 
         <Biml xmlns="http://schemas.varigence.com/biml.xsd">
             <Schemas>
-                `<#=importResult.SchemaNodes.GetBiml()#>`
+                <#=importResult.SchemaNodes.GetBiml()#>
             </Schemas>
             <Tables> 
-                `<#=importResult.TableNodes.GetBiml()#>`
+                <#=importResult.TableNodes.GetBiml()#>
             </Tables>
-                `<#=importResult.TableNodes.GetBiml()#>`
+                <#=importResult.TableNodes.GetBiml()#>
             </Tables>
         </Biml>
 ```
@@ -40,6 +40,6 @@ You can import database assets by following these steps:
 
 1. While writing the script, you can click on the notification bar to save the BimlScript and examine its output. The Update Preview ribbon button also refreshes the Output editor.
 
-    ![Expanded BimlScript Output](https://varigencecom.blob.core.windows.net/images-mistdocumentation-importingtableswithbimlscript/005a_Step2.png)
+    ![Expanded BimlScript Output](/img/bimlstudio/005a_Step2.png)
 
 1. Once the output looks correct, press the **Execute** button in the ribbon to import the assets into your model.

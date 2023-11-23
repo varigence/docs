@@ -10,7 +10,7 @@ Fact tables let you model the relational parts of a table, and the analytical as
 
 To create a fact, follow these steps:
 
-1. Add a new table and rename it to FactSales. For more information about creating the relational portions of fact table using the designer, see [Creating a Basic Table](creating-a-basic-table).
+1. Add a new table and rename it to FactSales. For more information about creating the relational portions of fact table using the designer, see [Creating a Basic Table](./creating-a-basic-table).
 
 2. To create the relational portion of the table, you will edit the Biml directly. Right click the in the logical view and choose View Biml.
 
@@ -48,11 +48,11 @@ To create a fact, follow these steps:
 
 1. To create the measures for this fact table, click **Measure Group** from the **Table Tools** ribbon, then click **Generate Measures**. This will populate the measures grid with default measures based on the columns defined in the table.
 
-    ![Table Ribbon - Autogenerate Measures](https://varigencecom.blob.core.windows.net/images-mistdocumentation/010_Step06.gif)
+    ![Table Ribbon - Autogenerate Measures](/img/bimlstudio/010_Step06.gif)
 
 1. The following measures should be generated:
 
-    ![Fact Table Editor - Measures Data Grid](https://varigencecom.blob.core.windows.net/images-mistdocumentation/010_Step07.png)
+    ![Fact Table Editor - Measures Data Grid](/img/bimlstudio/010_Step07.png)
 
 1. Save the project to persist your changes.
 

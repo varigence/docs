@@ -8,7 +8,7 @@ tags: [BimlFlex, Reference]
 
 Determines if the delta detection applied when loading changes to the PSA uses a SQL procedure that runs on the Staging Area table, and not as part of the PSA pattern. 
 
-This setting applies to SSIS output only, and only works when the "Disable Staging, Persist Only" setting is disabled. These settings are not compatible.
+This setting applies to SSIS output only, and only works when the `Disable Staging, Persist Only` setting is disabled. These settings are not compatible.
 
 In this configuration, the process loads all data into the staging area and then runs a procedure that compares the data from the staging area with the PSA, calculates the data delta and then reloads this back into the staging table. The data is then loaded into the PSA using regular processing.
 

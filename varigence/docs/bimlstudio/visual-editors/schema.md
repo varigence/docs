@@ -2,4 +2,4 @@
 
 Use the Schema editor to edit schema properties.
 
-![Schema Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Schema1.png)
+![Schema Designer](/img/bimlstudio/Schema1.png)

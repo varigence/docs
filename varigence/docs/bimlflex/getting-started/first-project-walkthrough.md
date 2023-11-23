@@ -9,13 +9,15 @@ tags: [BimlFlex, Walkthrough]
 This is a step-by-step guide for building a data solution using BimlFlex. For these examples, a local installation of BimlFlex and BimlStudio are used for development.
 
 The examples here use SQL Server as the technical environment, with on-premise SSIS for the load process. The Microsoft AdventureWorksLT sample database is used as a data source.
-:::note
 
 
-> Before following this example, please start with the following steps:
->
-> * [Installing BimlFlex](bimlflex-setup-installing-bimlflex)
-> * [BimlFlex Initial Configuration](bimlflex-getting-started-initial-configuration)
+
+:::note
+
+Before following this example, please start with the following steps:
+
+* [Installing BimlFlex](../installation/installing-bimlflex)
+* [BimlFlex Initial Configuration](./initial-configuration)
 
 :::
 
@@ -32,45 +34,45 @@ The following software is needed to reproduce this sample:
 * SQL Server 2017/2019 with SQL Server engine and SSIS/Integration services
 * Visual Studio 2017/2019 with SSDT and SSIS components
 * SQL Server Management Studio or similar, for managing databases and running SQL Scripts
-* The [AdventureWorksLT database](bimlflex-getting-started-setting-up-adventureworkslt2012-source-database) installed on the SQL Server
+* The [AdventureWorksLT database](../support/setting-up-adventureworkslt2012-source-database) installed on the SQL Server
 
 ## Loading Sample Metadata
 
 The BimlFlex App includes ready-made sample metadata that can be loaded into the project. There are several sample metadata sets available for different architectures.
 
-This walkthrough uses the **01 - MSSQL Starting Point** sample. This sample provides a default configuration for on-premise SQL Server and SSIS, with [**Projects**](bimlflex-project-editor) and [**Batches**](bimlflex-batch-editor) already created.
+This walkthrough uses the **01 - MSSQL Starting Point** sample. This sample provides a default configuration for on-premise SQL Server and SSIS, with [**Projects**](../metadata-editors/project-editor) and [**Batches**](../metadata-editors/batches) already created.
 
-More information please refer to the guide for [loading sample metadata](bimlflex-sample-metadata).
+More information please refer to the guide for [loading sample metadata](./sample-metadata).
 
 ## Importing Source Metadata
 
-Source metadata management and modeling is done through the BimlFlex App. BimlFlex makes it easy to import the AdventureWorksLT source metadata into the metadata repository using the [Importing Metadata](bimlflex-concepts-importing-metadata) feature.
+Source metadata management and modeling is done through the BimlFlex App. BimlFlex makes it easy to import the AdventureWorksLT source metadata into the metadata repository using the [Importing Metadata](../concepts/importing-metadata) feature.
 
 For this walkthrough, the AdventureWorks metadata can be imported in the 'AWLT_SRC' connection that has been prepared as part of the selected sample version.
 
-![New BimlFlex Project](images/bimlflex-walkthrough-import-adventureworks-metadata.png "New BimlFlex Project")
+![New BimlFlex Project](/img/bimlflex/bimlflex-walkthrough-import-adventureworks-metadata.png "New BimlFlex Project")
 
 After clicking the **Import Metadata** button, the App will navigate the user to the import feature. If connectivity is successful, the AdventureWorks database can be accessed and its contents will be visible after pressing the **Connect to Database** button.
 
 For this guide, please select all table objects (not the views) in the 'SalesLT' schema and press **Import Metadata**.
 
-![New BimlFlex Project](images/bimlflex-walkthrough-import-adventureworks-metadata-contents.png "New BimlFlex Project")
+![New BimlFlex Project](/img/bimlflex/bimlflex-walkthrough-import-adventureworks-metadata-contents.png "New BimlFlex Project")
 
-Doing this will create the source [**Objects**](bimlflex-object-editor) as part of the 'AWLT_SRC' [**Connection**](bimlflex-connection-editor) and navigate to the [**Schema Diagram**](bimlflex-schema-diagram) designer, showing a visual representation of the imported objects.
+Doing this will create the source [**Objects**](../metadata-editors/object-editor) as part of the 'AWLT_SRC' [**Connection**](../metadata-editors/connection-editor) and navigate to the [**Schema Diagram**](../metadata-editors/schema-diagram) designer, showing a visual representation of the imported objects.
 
-![New BimlFlex Project](images/bimlflex-walkthrough-import-adventureworks-schema-diagram-view.png "New BimlFlex Project")
+![New BimlFlex Project](/img/bimlflex/bimlflex-walkthrough-import-adventureworks-schema-diagram-view.png "New BimlFlex Project")
 
-Using these source definitions, BimlFlex can provide a started Data Vault model using the [**Data Vault Accelerator**](bimlflex-data-vault-accelerator).
+Using these source definitions, BimlFlex can provide a started Data Vault model using the [**Data Vault Accelerator**](../metadata-editors/accelerator).
 
 ## Data Vault Acceleration
 
-The BimlFlex App provides a [Data Vault Accelerator](bimlflex-data-vault-accelerator) that creates Data Vault objects from the available source metadata.
+The BimlFlex App provides a [Data Vault Accelerator](../metadata-editors/accelerator) that creates Data Vault objects from the available source metadata.
 
 Data Vault acceleration is recommended to be performed once the Enterprise Logical Model (ELM) has been completed, so that the path from the initial, technical-focused, Data Vault to the final business-focused Data Vault is clear.
 
 The Data Vault acceleration uses the source metadata, added modeling metadata, and its defined relationships to create a Data Vault physical model. Based on this metadata, BimlFlex can create the required Data Vault structures, and the source-to-target mappings in the metadata repository.
 
-![BimlFlex Accelerator](../metadata-editors/images/bimlflex-app-accelerator-full-ui.png "BimlFlex Accelerator")
+![BimlFlex Accelerator](/img/bimlflex/bimlflex-app-accelerator-full-ui.png "BimlFlex Accelerator")
 
 The accelerator aims to simplify adding additional source object to the model in an iterative fashion. In the accelerator, the initial Data Vault can be adjusted to better represent the business-focused target state.
 
@@ -80,19 +82,21 @@ The BimlFlex App provides a graphical accelerator allowing the modeler to create
 
 When the preview matches the model expectations, it is published to the metadata repository. This can be done by selecting *all* objects for the 'AWLT_SRC' connection and clicking the **Publish** button. The column and object names will change from cursive to regular, indicating that the changes have been committed.
 
-The new Data Vault objects can be reviewed in the BimlFlex App, in the Data Vault Project under the objects tab, or as part of the objects in the [**Treeview**](bimlflex-treeview) under the connection that has been configured for the Data Vault layer in the solution - 'BFX_DV' in this example.
+The new Data Vault objects can be reviewed in the BimlFlex App, in the Data Vault Project under the objects tab, or as part of the objects in the [**Treeview**](../metadata-editors/treeview) under the connection that has been configured for the Data Vault layer in the solution - 'BFX_DV' in this example.
 
-![BimlFlex Accelerator](images/bimlflex-accelerator-after-publish.png "BimlFlex Accelerator")
+![BimlFlex Accelerator](/img/bimlflex/bimlflex-accelerator-after-publish.png "BimlFlex Accelerator")
 
 If any objects need to be changed, these can always be archived from the 'BFX_DV' connection and re-accelerated. In BimlFlex, design metadata is saved against the source objects. Any time the Accelerator is used, the relevant information will be evaluated against what has been defined in the source objects.
 
 ## Building the Data Vault Project
 
 Once the metadata meets the data warehouse requirements it is time to use BimlStudio to build the databases, tables, scripts and load packages for the Data Warehouse process. This includes creating the table and load scripts and building SSIS packages.
-:::tip
 
 
-> The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=a4-dgVcpE2o?rel=0&autoplay=0) shows an example of how to build/compile output for the source-to-staging process.
+
+:::tip
+
+The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=a4-dgVcpE2o?rel=0&autoplay=0) shows an example of how to build/compile output for the source-to-staging process.
 
 :::
 
@@ -208,11 +212,13 @@ The `Point in Time` (PIT) and `Bridge` (BRG) structures are used in Data Vault t
 ### Point in Time introduction
 
 For insert-only Data Vault solutions, the Point in Time constructs provide a convenient way to recreate timelines and end date records so that timeline-sensitive queries are easier to create. This is useful when a Hub has multiple Satellites attached and there is a requirement to query data from several of these Satellites for an event DateTime.
-:::note
 
 
-> Example:
-> A Sales Order has a sale event DateTime when the sale occurred. The customer involved is identified through a link between the SalesOrder Hub and the Customer Hub. The Customer has a Satellite with demographic information as well as Satellites for marketing and promotions data, geographic/address information and loyalty status. All these satellites have individual timelines and finding the relevant rows from each table for the sale event time can require a complex query. The Point In Time table would pre-calculate these timelines so that the query becomes more straightforward.
+
+:::note
+
+Example:
+A Sales Order has a sale event DateTime when the sale occurred. The customer involved is identified through a link between the SalesOrder Hub and the Customer Hub. The Customer has a Satellite with demographic information as well as Satellites for marketing and promotions data, geographic/address information and loyalty status. All these satellites have individual timelines and finding the relevant rows from each table for the sale event time can require a complex query. The Point In Time table would pre-calculate these timelines so that the query becomes more straightforward.
 
 :::
 
@@ -220,11 +226,13 @@ For insert-only Data Vault solutions, the Point in Time constructs provide a con
 ### Bridge introduction
 
 The Bridge constructs allow multiple Links surrounding a Hub to be combined in one table, minimizing the required joins.
-:::note
 
 
-> Example:
-> A Sales Order Core Business Concept is stored in a Hub. This has several separate Link table relationships to Hubs for Customer, Shipping Address, Billing Address, Product, Marketing Campaign, Store etc. A query to gather attributes from multiple attached Satellites from the linked entities would need to join from the main Hub to the Links to the related Hubs to Satellites or Point In Time tables for each related entity. This rapidly becomes a large number of joins. The Bridge table pre-calculate the joins and allows for more straightforward queries.
+
+:::note
+
+Example:
+A Sales Order Core Business Concept is stored in a Hub. This has several separate Link table relationships to Hubs for Customer, Shipping Address, Billing Address, Product, Marketing Campaign, Store etc. A query to gather attributes from multiple attached Satellites from the linked entities would need to join from the main Hub to the Links to the related Hubs to Satellites or Point In Time tables for each related entity. This rapidly becomes a large number of joins. The Bridge table pre-calculate the joins and allows for more straightforward queries.
 
 :::
 
@@ -275,10 +283,12 @@ These batches allow easy scheduling and orchestration of the Stored Procedure ex
 ## Dimensional Model
 
 The Dimensional model is built on top of the Raw and Business Data Vault model. By using a view-based abstraction layer between the tables and the Data Mart load it is possible to more easily accommodate future changes and optimize the sources for the Dimensions and Facts.
-:::tip
 
 
-> The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=UKq-libt3xg?rel=0&autoplay=0) provides an overview of delivering Dimensional Models using BimlFlex.
+
+:::tip
+
+The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=UKq-libt3xg?rel=0&autoplay=0) provides an overview of delivering Dimensional Models using BimlFlex.
 
 :::
 

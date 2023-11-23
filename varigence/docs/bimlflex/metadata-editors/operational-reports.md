@@ -16,7 +16,7 @@ The Operational Reports BimlCatalog is set up on a per-customer basis and is onl
 
 Create BimlCatalog connections for each environment by providing the Name and Connection String.
 
-![Operational Reports Selection -center](images/bimlflex-app-operational-reports-selected.png "Operational Reports Selection")
+![Operational Reports Selection -center](/img/bimlflex/bimlflex-app-operational-reports-selected.png "Operational Reports Selection")
 
 ## Reports Screens
 
@@ -30,15 +30,15 @@ The report screens are broken up into three views of the data:
 
 Level 1 - Latest execution details for each batch:
 
-![Operational Reports Level 1 -center](images/bimlflex-app-operational-reports-level1.png "Operational Reports Level 1")
+![Operational Reports Level 1 -center](/img/bimlflex/bimlflex-app-operational-reports-level1.png "Operational Reports Level 1")
 
 Level 2 - 5 most recent execution runs for a specific batch:
 
-![Operational Reports Level 2 -center](images/bimlflex-app-operational-reports-level2.png "Operational Reports Level 2")
+![Operational Reports Level 2 -center](/img/bimlflex/bimlflex-app-operational-reports-level2.png "Operational Reports Level 2")
 
 Level 3 - details of specific execution batch and its child packages:
 
-![Operational Reports Level 3 -center](images/bimlflex-app-operational-reports-level3.png "Operational Reports Level 3")
+![Operational Reports Level 3 -center](/img/bimlflex/bimlflex-app-operational-reports-level3.png "Operational Reports Level 3")
 
 ### Lookup Execution Id
 

@@ -7,17 +7,19 @@ tags: [BimlFlex, Conceptual]
 
 # Load Parameters
 
-BimlFlex [**Parameters**](bimlflex-parameter-editor) can be used in many ways. For example, for managing data load windows, filtering and adding default values.
+BimlFlex [**Parameters**](../metadata-editors/parameter-editor) can be used in many ways. For example, for managing data load windows, filtering and adding default values.
 
 Parameters are most commonly used to define a 'high water mark' or define a filter for what is returned from a source system.
 
 ## Parameter Management
 
-Once a parameter is created in BimlFlex, the values for the parameter will be managed in the [BimlCatalog](bimlflex-setup-metadata-database-installation) is used to manage them.
-:::note
+Once a parameter is created in BimlFlex, the values for the parameter will be managed in the [BimlCatalog](../installation/installing-metadata-database) is used to manage them.
 
 
-> Parameter values are persisted in the `[bfx].[ConfigVariable]` table, and parameter history is logged to the `[bfx].[AuditConfigVariable]` table.
+
+:::note
+
+Parameter values are persisted in the `[bfx].[ConfigVariable]` table, and parameter history is logged to the `[bfx].[AuditConfigVariable]` table.
 
 :::
 
@@ -33,11 +35,13 @@ Click a tab for example or detailed column descriptions.
 | 5                | AWLT_SRC   | AWLT_SRC.SalesLT.SalesOrderDetail.ModifiedDate   | LastLoadDate   | 2004-06-01 00:00:00.000 | 19             | 1900-01-01    | `{NULL}`               |
 | 6                | AWLT_SRC   | AWLT_SRC.SalesLT.ProductDescription.ModifiedDate | LastLoadDate   | 2004-03-11 10:32:17.973 | 20             | 1900-01-01    | `{NULL}`               |
 | 7                | AWLT_SRC   | AWLT_SRC.SalesLT.Product.CustomerID              | LastCustomerID | 21002135                | 21             | 19001010      | int                  |
-:::tip
 
 
->
-> * `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
+
+:::tip
+
+
+* `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
 
 :::
 
@@ -54,11 +58,13 @@ Click a tab for example or detailed column descriptions.
 | ExecutionID`*`       | The `ExecutionID` of the data logistics process execution used to load the parameter                   |
 | PreviousValue        | Previous `VariableValue` on the last execution                                                         |
 | DataTypeOverride     | Overrides the implicit variable detection                                                              |
-:::tip
 
 
->
-> * `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
+
+:::tip
+
+
+* `*`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
 
 :::
 
@@ -76,11 +82,13 @@ The parameter will fail to update in the `[bfx].[ConfigVariable]` if all the bel
 * Parameter already has an entry in `[bfx].[ConfigVariable]`
 * The current `[VariableValue]` can be evaluated as a date, specifically if `ISDATE( [VariableValue] ) = 1` on SQL Server
 * The value being loaded does can *not* be evaluated as a date, specifically if `ISDATE( [VariableValue] ) = 0` on SQL Server
-:::note
 
 
->
-> `[DataTypeOverride]` currently only supports the `int` and `decimal` values.
+
+:::note
+
+
+`[DataTypeOverride]` currently only supports the `int` and `decimal` values.
 
 :::
 
@@ -141,12 +149,14 @@ Click a tab for example or detailed column descriptions.
 | ExecutionID`**`       | The `ExecutionID` of the Package/Pipeline used to load the Parameter |
 | PreviousValue         | Previous `VariableValue` prior to the listed execution               |
 | RowLastModified       | Date the audit record was created                                    |
-:::tip
 
 
->
-> * `*`: This value can be used to get audit record from the `[bfx].[ConfigVariable]` table.
-> * `**`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
+
+:::tip
+
+
+* `*`: This value can be used to get audit record from the `[bfx].[ConfigVariable]` table.
+* `**`: This value can be used to get detailed audit history from the `[bfx].[Execution]` or `[rpt].[ExecutionDetails]` tables.
 
 :::
 
@@ -162,43 +172,45 @@ Each time a package or pipeline is ran, BimlFlex will store the last value and u
 
 ### [SSIS Architecture](#tab/parameter-architecture-ssis)
 
-![Parameters ETL Pattern](images/bfx-parameters-architecture-ssis.png "Parameters ETL Pattern")
+![Parameters ETL Pattern](/img/bimlflex/bfx-parameters-architecture-ssis.png "Parameters ETL Pattern")
 
 The process starts before the main container (`SEQC - Main`).
 
 The initial Sequence Container (`SEQC - Get Parameters`) will have a Execute SQL Task to look up any relevant parameters.
-These task (`SQL - Get `{Parameter}``) are used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
+These task (`SQL - Get Parameter`) are used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
 
 The retrieved value will be injected in to the source query filter clause using the specified logic from the metadata.
 
 The final Sequence Container (`SEQC- Set Parameters`) after the main logic then handles setting the parameters.
-There is a Execute SQL Task to grab the latest value (`SQL - Get Current `{Parameter}``) from the staged data.
-A following Execute SQL Task (`SQL - Set `{Parameter}``) is then used to persist the value retrieved into the BimlCatalog.
+There is a Execute SQL Task to grab the latest value (`SQL - Get Current Parameter`) from the staged data.
+A following Execute SQL Task (`SQL - Set Parameter`) is then used to persist the value retrieved into the BimlCatalog.
 
 ### [ADF Architecture](#tab/parameter-architecture-adf)
 
 <!-- TODO: Take picture of ADF Architecture -->
-<!-- ![Parameters ETL Pattern](images/bfx-parameters-architecture-adf.png "Parameters ETL Pattern") -->
+<!-- ![Parameters ETL Pattern](/img/bimlflex/bfx-parameters-architecture-adf.png "Parameters ETL Pattern") -->
 
 Activities are added to the beginning of the pipeline that retrieve the last value and the next value to be recorded after execution completes.
 
-The initial Lookup Activity (`LKP_`{Parameter}``) is used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
+The initial Lookup Activity (`LKP_Parameter`) is used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
 If none are present, it will generate one using the *DEFAULT* value that is configured.
 If one is already present, it will retrieve the value.
 The retrieved `[VariableValue]` value is then used to define the starting range for the Source Query.
 
-The other Lookup Activity (`LKP_`{ParameterToName}``) is used to query the Source System.
+The other Lookup Activity (`LKP_ParameterToName`) is used to query the Source System.
 This uses the *PARAMETER SQL* against the *COLUMN* and stores the value in the pipeline as the *PARAMETER TO NAME*.
 
 These values are then injected into the source query filter clause to limit values that are then returned from the Source System.
 
-The ending SQL Server Stored Procedure Activity (`LOG_`{Parameter}``) is then used to persist the value retrieved by the *PARAMETER TO NAME* into the BimlCatalog.
-:::note
+The ending SQL Server Stored Procedure Activity (`LOG_Parameter`) is then used to persist the value retrieved by the *PARAMETER TO NAME* into the BimlCatalog.
 
 
-> The ADF Architecture requires **Window Parameters** when using a **Parameter**.
->
-> See [Window Parameters](#window-parameters) for more details.
+
+:::note
+
+The ADF Architecture requires **Window Parameters** when using a **Parameter**.
+
+See [Window Parameters](#window-parameters) for more details.
 
 :::
 
@@ -207,28 +219,32 @@ The ending SQL Server Stored Procedure Activity (`LOG_`{Parameter}``) is then us
 
 ## Creating Parameters in BimlFlex
 
-Parameters can be added in BimlFlex through the [**Parameter Editor**](bimlflex-parameter-editor), accessible from the BimlFlex main menu.
+Parameters can be added in BimlFlex through the [**Parameter Editor**](../metadata-editors/parameter-editor), accessible from the BimlFlex main menu.
 
 To add a new parameters, click the `+` button in the **Treeview** menu.
 
-![BimlFlex - Parameter Editor](images/bfx-parameters-editor.png "BimlFlex - Parameter Editor")
+![BimlFlex - Parameter Editor](/img/bimlflex/bfx-parameters-editor.png "BimlFlex - Parameter Editor")
 
 ### Base Parameter
 
 The Base Parameter settings are the core fields that are required to define a parameter in BimlFlex. With the exception of *PARAMETER SQL*, these are Source System agnostic.
 Configuration of the base **Parameter** itself remains the same across Source Systems.
-:::note
 
 
->
-> * `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.
-> * `**`: See [Parameter SQL](#parameter-sql) for more examples:::danger
+
+:::note
 
 
-> `Execute SQL On Source`, along with `Parameter To Name` and `Parameter To Operator`, are required fields when configuring a **Parameter** for ADF.
+* `*`: It is recommended that you use `String` for dates as SSIS sometimes finds it easier to deal with string representations.
+* `**`: See [Parameter SQL](#parameter-sql) for more examples
 
 :::
 
+
+
+:::danger
+
+`Execute SQL On Source`, along with `Parameter To Name` and `Parameter To Operator`, are required fields when configuring a **Parameter** for ADF.
 
 :::
 
@@ -244,14 +260,16 @@ Although the field is named *PARAMETER SQL*, it is easier to this of this field 
 In a SQL based Source System this will correlate to a SQL Statement that is appended to the the `WHERE` clause.
 
 In Dynamics, this will be an XML based statement for a `<attribute/>` under the `<fetch/entity/>` node or a complete replacement of the generated `<fetch/>` statement.
-:::danger
 
 
-> Ensure this value is configured to align with how *EXECUTE SQL ON SOURCE* is configured.
->
-> When `true` this should mirror the syntax needed on the Source System.
->
-> When `false` this should mirror the syntax needed on the Target System.
+
+:::danger
+
+Ensure this value is configured to align with how *EXECUTE SQL ON SOURCE* is configured.
+
+When `true` this should mirror the syntax needed on the Source System.
+
+When `false` this should mirror the syntax needed on the Target System.
 
 :::
 
@@ -301,12 +319,14 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
   </entity>
 </fetch>
 ```
-:::danger
 
 
-> This pattern is only valid for Dynamics entities with less than 50k records.
->
-> If the Dynamics Entity has more than 50k records then use the `Dynamics - Blank` or `Dynamics - Fetch` patterns.
+
+:::danger
+
+This pattern is only valid for Dynamics entities with less than 50k records.
+
+If the Dynamics Entity has more than 50k records then use the `Dynamics - Blank` or `Dynamics - Fetch` patterns.
 
 :::
 
@@ -325,10 +345,12 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*:
     </entity>
 </fetch>
 ```
-:::tip
 
 
-> If you require more advanced logic you can customize the entire `<fetch/>` statement simply by defining it.
+
+:::tip
+
+If you require more advanced logic you can customize the entire `<fetch/>` statement simply by defining it.
 
 :::
 
@@ -340,15 +362,17 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*:
 | Parameter SQL`**` | \<fetch distinct="false" mapping="logical"> <br/>&nbsp;&nbsp;&nbsp;&nbsp;\<entity name="account"> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<attribute name="modifiedon" alias="next_modifiedon" aggregate="max" /> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\<order attribute="modifiedon" descending="true" /> <br/>&nbsp;&nbsp;&nbsp;&nbsp;\</entity> <br/>\<fetch/> |
 
 ***
-:::note
 
 
->
-> * `*`: All SQL based Source Systems will have similar pattern but differ in syntax.
-> * `**`: When using Dynamics the first characters determine logic.
->   * If the *PARAMETER SQL* starts with `<fetch` then it will override the entire fetch statement with.
->   * If not, it will use the `Dynamics - Attribute` pattern.
->   * If blank it will use the `Dynamics - Blank` pattern.
+
+:::note
+
+
+* `*`: All SQL based Source Systems will have similar pattern but differ in syntax.
+* `**`: When using Dynamics the first characters determine logic.
+  * If the *PARAMETER SQL* starts with `<fetch` then it will override the entire fetch statement with.
+  * If not, it will use the `Dynamics - Attribute` pattern.
+  * If blank it will use the `Dynamics - Blank` pattern.
 
 :::
 
@@ -377,10 +401,12 @@ These get configured by defining the below fields.
 | Parameter To Operator | `<=`           |
 
 ***
-:::danger
 
 
-> These, along with `Execute SQL On Source`, are required fields when configuring a **Parameter** for ADF.
+
+:::danger
+
+These, along with `Execute SQL On Source`, are required fields when configuring a **Parameter** for ADF.
 
 :::
 
@@ -388,17 +414,17 @@ These get configured by defining the below fields.
 BimlFlex Pattern for Window Parameters:
 
 ```sql
-``{Existing WHERE Clause}`` ``{AND if Needed}``
-     ``{Column}`` ``{Operator}`` ``{Parameter}``
-    AND ``{Column}`` ``{Parameter To Operator}`` ``{Parameter To Name}``
+`{Existing WHERE Clause}` `{AND if Needed}`
+     `{Column}` `{Operator}` `Parameter`
+    AND `{Column}` `{Parameter To Operator}` `{Parameter To Name}`
 ```
 
 Example:
 
 ```sql
 WHERE
-    [SalesLT].[ModifiedDate] > ``{LastLoadDate Value}``
-    AND [SalesLT].[ModifiedDate] <= ``{NextLoadDate Value}``
+    [SalesLT].[ModifiedDate] > `{LastLoadDate Value}`
+    AND [SalesLT].[ModifiedDate] <= `{NextLoadDate Value}`
 ```
 
 ### Parameter Overrides
@@ -460,14 +486,14 @@ It also supports specifying Project level Parameters that are commonly available
 
 Add Extension Points in BimlStudio.
 
-More information: [BimlFlex Extension Points](bimlflex-concepts-extension-points)
+More information: [BimlFlex Extension Points](./extension-points)
 
-![Create Project Parameter](images/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
+![Create Project Parameter](/img/bimlflex/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
 
 The newly created file contains some sample scripts:
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="<ProjectName>" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="<ProjectName>" #>
 
 <Parameter Name="ServerName" DataType="String" IsRequired="true">localhost</Parameter>
 <Parameter Name="UserName" DataType="String" IsRequired="true">varigence</Parameter>
@@ -490,15 +516,15 @@ These parameters can be used for any logic and might not need to be persisted in
 
 Add Extension Points in BimlStudio
 
-![Create Package Parameter](images/bimlflex-ss-v5-extension-points-create-package-parameter.png "Create Package Parameter")
+![Create Package Parameter](/img/bimlflex/bimlflex-ss-v5-extension-points-create-package-parameter.png "Create Package Parameter")
 
 The newly created file contains some sample scripts:
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PackageVariable" target="<ObjectName>"#>`
-`<#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="PackageVariable" target="<ObjectName>"#>
+<#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
-`<#* CustomOutput.ObjectInherit = true; *#>`
+<#* CustomOutput.ObjectInherit = true; *#>
 <Variable Name="TenantCode" DataType="String">UNK</Variable>
 <Variable Name="CurrentModifiedDate" DataType="String" Namespace="User">1900-01-01</Variable>
 ```

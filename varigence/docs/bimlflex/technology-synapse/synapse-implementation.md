@@ -81,10 +81,12 @@ Below is the details further details on a the specific **Connection**.
 The first table will highlight specific configurations details concerning the selected orchestration method.
 These may be a mandatory settings or an alternate use for a shared field.
 These focus more on "how" the **Connection** is used.
-:::tip
 
 
-> For additional details on creating a **Connection**, please refer to the [**Connection Editor**](bimlflex-connection-editor).
+
+:::tip
+
+For additional details on creating a **Connection**, please refer to the [**Connection Editor**](../metadata-editors/connection-editor).
 
 :::
 
@@ -117,16 +119,18 @@ These focus more on "how" the **Connection** is used.
 | Connection String`**` | Only used as the deploy target for the PowerShell Scripts and to import metadata.           |
 | Threads               | This is not used in ADF.                                                                    |
 | Landing Connection    | Only used with a `Source System`.  Designates the connection to use for the `Landing Area`. |
-:::danger
 
 
->
-> - Connection Type`*`: When configuration a `Source System` the non-ELT base types are used.
->   - `Source System` is the only exception to this.  All other *INTEGRATION STAGES* should use the ELT variant.
->   - This is also called out in detail on the below configurations.
-> - Connection String`**`: When using ADF the *CONNECTION STRING* is only used to import the metadata withing the tool.
->   - The connection strings used for ADF are managed in the Linked Service.
->   - See [Configuring a Linked Service Connection](create-linked-service-connection) for more details.
+
+:::danger
+
+
+- Connection Type`*`: When configuration a `Source System` the non-ELT base types are used.
+  - `Source System` is the only exception to this.  All other *INTEGRATION STAGES* should use the ELT variant.
+  - This is also called out in detail on the below configurations.
+- Connection String`**`: When using ADF the *CONNECTION STRING* is only used to import the metadata withing the tool.
+  - The connection strings used for ADF are managed in the Linked Service.
+  - See [Configuring a Linked Service Connection](../technology-adf/create-linked-service-connection) for more details.
 
 :::
 
@@ -179,17 +183,21 @@ Viewing configuration for a **Data Mart**.
 | Catalog            | Name of the Database                                                                                                               |
 | Record Source      | Value to use for **Objects** from this records source.  Required for Data Vault.                                                   |
 | Persist History`*` | `true`: store history in the *PERSISTENT STAGE CONNECTION*; `false`: store only latest change in the *PERSISTENT STAGE CONNECTION* |
-:::danger
 
 
-> Persist History`*` requires a **Project** with a **Persistent Stage Connection** defined.
-:::tip
+
+:::danger
+
+Persist History`*` requires a **Project** with a **Persistent Stage Connection** defined.
 
 :::
 
 
 
-> When using ADF an additional **Landing Area** will need to be configured. For additional details on how create a Landing Area Connection refer to the [Azure Data Factory Landing Area Example](bimlflex-adf-landing-area).
+
+:::tip
+
+When using ADF an additional **Landing Area** will need to be configured. For additional details on how create a Landing Area Connection refer to the [Azure Data Factory Landing Area Example](../technology-adf/landing-area).
 
 :::
 
@@ -220,14 +228,16 @@ Viewing configuration for a **Data Mart**.
 | Connection String   | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database.                    |
 | Catalog             | Name of the Database (Ensure this matches the `Initial Catalog` in your connection string)                      |
 | PolyBase Connection | Optional: When using PolyBase Staged Copy, the **Connection** holding the Azure Storage Account Linked Service. |
-:::tip
 
 
-> When using Azure Synapse this should be configured to the same Database as the primary target warehouse.
->
-> This can be configured to be landed directly into an Azure Synapse table or into Blob Storage and then use PolyBase to Stage.
->
-> See the PolyBase Connection tab for more details.
+
+:::tip
+
+When using Azure Synapse this should be configured to the same Database as the primary target warehouse.
+
+This can be configured to be landed directly into an Azure Synapse table or into Blob Storage and then use PolyBase to Stage.
+
+See the PolyBase Connection tab for more details.
 
 :::
 
@@ -257,10 +267,12 @@ Viewing configuration for a **Data Mart**.
 | Connection String   | Only used to Import Metadata in BimlFlex.  Connection String to the connect to the Database. |
 | Catalog             | Name of the Database (Ensure this matches the `Initial Catalog` in your connection string)   |
 | PolyBase Connection | `{Empty}`                                                                                      |
-:::tip
 
 
-> This is used in conjunction with a **Landing Area** to indicate the location to use for a PolyBase load. For additional details on how create a Landing Area Connection please refer to the [Azure Data Factory Landing Area Example](bimlflex-adf-landing-area).
+
+:::tip
+
+This is used in conjunction with a **Landing Area** to indicate the location to use for a PolyBase load. For additional details on how create a Landing Area Connection please refer to the [Azure Data Factory Landing Area Example](../technology-adf/landing-area).
 
 :::
 
@@ -396,13 +408,15 @@ This page is currently configured for Azure Data Factory (ADF).
 
 There are no special caveats when configuring an Azure Synapse Linked Service.
 For details on configuration, please refer to the links below.
-:::tip
 
 
-> For additional details on creating a Linked Service refer to the below guides:
->
-> * [Configuring a Linked Service Connection](create-linked-service-connection)
-> * [Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse](linked-service-adf-sql-datawarehouse)
+
+:::tip
+
+For additional details on creating a Linked Service refer to the below guides:
+
+* [Configuring a Linked Service Connection](../technology-adf/create-linked-service-connection)
+* [Configuring an ADF Linked Service Connection for Azure SQL Data Warehouse](../technology-adf/linked-service-adf-sql-data-warehouse)
 
 :::
 
@@ -421,17 +435,21 @@ A pattern and example can be found below.
 Pattern: `Data Source=<server name>.database.windows.net,<port>;Initial Catalog=<database>;User ID=<user>;Password=<password>;`
 
 Example: `Data Source=bfxserver.database.windows.net,1433;Initial Catalog=bfx_sqldw;User ID=MyUser;Password=P@$$Word;`
-:::danger
 
 
-> Connection Strings for Linked Services DO NOT support the `Provider` keyword.
-:::tip
+
+:::danger
+
+Connection Strings for Linked Services DO NOT support the `Provider` keyword.
 
 :::
 
 
 
-> If the **Linked Service** configuration is not showing up, ensure that *CLOUD* is `enabled` on the selected **Connection**.
+
+:::tip
+
+If the **Linked Service** configuration is not showing up, ensure that *CLOUD* is `enabled` on the selected **Connection**.
 
 :::
 
@@ -458,29 +476,29 @@ This page is currently configured for Azure Data Factory (ADF).
 
 The following **Settings** are required when working with Azure Synapse regardless of the orchestration method.
 
-- [Staging Naming\Naming](bimlflex-app-reference-documentation-settings-index)
+- [Staging Naming\Naming](../reference-documentation/reference-documentation-settings-index)
   - Configures the naming convention for `External Tables` and `Landing Tables`
 
 ### [SSIS](#tab/settings-orchestration/ssis-orchestration)
 
-- [AzCopy\Paths](bimlflex-app-reference-documentation-settings-index)
+- [AzCopy\Paths](../reference-documentation/reference-documentation-settings-index)
   - Configures location of AzCopy and Log Location
-- [AzCopy\Settings](bimlflex-app-reference-documentation-settings-index)
+- [AzCopy\Settings](../reference-documentation/reference-documentation-settings-index)
   - General AzCopy Settings
-- [Azure Storage\Processing](bimlflex-app-reference-documentation-settings-index)
+- [Azure Storage\Processing](../reference-documentation/reference-documentation-settings-index)
   - Configures the names Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
-- [SSDT\Synapse SSDT Artifacts](bimlflex-app-reference-documentation-settings-index)
+- [SSDT\Synapse SSDT Artifacts](../reference-documentation/reference-documentation-settings-index)
   - Configures the inclusion and configuration of the `External Tables`, `Master Key`, `Credential`, `External Data Source` and `External File Format`
 
 ### [ADF](#tab/settings-orchestration/adf-orchestration)
 
-- [Azure\Data Factory](bimlflex-app-reference-documentation-settings-index)
+- [Azure\Data Factory](../reference-documentation/reference-documentation-settings-index)
   - Configures the *DATA FACTORY NAME*, *SUBSCRIPTION ID*, and *RESOURCE GROUP*
   - Optional configurations for an existing *KEY VAULT* or *INTEGRATION RUNTIME*
-- (*OPTIONAL*) [Azure\Deployment](bimlflex-app-reference-documentation-settings-index)
+- (*OPTIONAL*) [Azure\Deployment](../reference-documentation/reference-documentation-settings-index)
   - Only required if using an ADF Linked Template Deployment
   - Configures the name of the Account, Container and Key/Token to be used with the Linked Template Deployment
-- [Azure Storage\Processing](bimlflex-app-reference-documentation-settings-index)
+- [Azure Storage\Processing](../reference-documentation/reference-documentation-settings-index)
   - Configures the names Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
 
 ### [PolyBase Staging](#tab/settings-polybase/adf-orchestration)
@@ -488,9 +506,9 @@ The following **Settings** are required when working with Azure Synapse regardle
 These below **Settings** are only required when using PolyBase Staging in ADF.
 
 - All Settings in the ADF tab
-- [Azure Copy\Copy Method](bimlflex-app-reference-documentation-settings-index)
+- [Azure Copy\Copy Method](../reference-documentation/reference-documentation-settings-index)
   - Configures the *COPY METHOD* and *POLYBASE SETTINGS*
-- [Azure Copy\Advanced Settings](bimlflex-app-reference-documentation-settings-index)
+- [Azure Copy\Advanced Settings](../reference-documentation/reference-documentation-settings-index)
   - Enables and configures PolyBase Staging and Logging
 
 ***
@@ -503,13 +521,15 @@ This process is identical to the standard build process and can be referenced in
 Prior to building the project ensure that the following steps is completed:
 
 - [Configure Settings](#configuring-settings).
-:::tip
 
 
-> For additional details on PowerShell deployment refer to the below guide:
->
-> * [BimlFlex Interactive Build](bimlflex-build-bimlstudio-project)
-> * [Building Using the Command Line](bimlflex-command-line-build)
+
+:::tip
+
+For additional details on PowerShell deployment refer to the below guide:
+
+* [BimlFlex Interactive Build](../build-and-deployment/build-bimlstudio-project)
+* [Building Using the Command Line](../build-and-deployment/command-line-build)
 
 :::
 
@@ -540,24 +560,28 @@ A part of the Build process, BimlStudio will generate a SQL Server Data Tools (S
 By default a SSDT deployment file named `ssdt-deploy.<DatabaseName>.ps1` is created and placed in the `...\<Output Folder>\Deploy\` folder for each database in the target warehouse environment.
 
 The SSDT project will have all the required tables, stored procedures and Data Vault default inserts required for the project.
-Through use of [SSDT\Synapse SSDT Artifacts Settings](bimlflex-app-reference-documentation-settings-index) EXTERNAL TABLES can be included or excluded in this deployment file.
+Through use of [SSDT\Synapse SSDT Artifacts Settings](../reference-documentation/reference-documentation-settings-index) EXTERNAL TABLES can be included or excluded in this deployment file.
 These files are commonly excluded due to PolyBase requiring a file to exist in the blob storage prior to the creation of the EXTERNAL TABLE.
-:::danger
 
 
-> It is HIGHLY recommended that the Synapse server in created manually in Azure prior to executing the `ssdt-deploy` PowerShell script.
-> The generated SSDT project does not contain any configuration information for Azure settings and will be created with whatever default Microsoft is currently using for *Performance Level*.
+
+:::danger
+
+It is HIGHLY recommended that the Synapse server in created manually in Azure prior to executing the `ssdt-deploy` PowerShell script.
+The generated SSDT project does not contain any configuration information for Azure settings and will be created with whatever default Microsoft is currently using for *Performance Level*.
 
 :::
 
 
 Aside from the possible inclusion of the EXTERNAL TABLE scripts, the process is identical to a standard SQL Server deployment.
-:::tip
 
 
-> For additional details on PowerShell deployment refer to the below guide:
->
-> * [Deployment Through PowerShell](bimlflex-ssis-using-powershell)
+
+:::tip
+
+For additional details on PowerShell deployment refer to the below guide:
+
+* [Deployment Through PowerShell](../technology-ssis/using-powershell)
 
 :::
 
@@ -568,18 +592,22 @@ A part of the Build process, BimlStudio will generate a SQL Server Data Tools (S
 By default a SSDT deployment file named `ssdt-deploy.<DatabaseName>.ps1` is created and placed in the `...\<Output Folder>\Deploy\` folder for each database in the target warehouse environment.
 
 The SSDT project will have all the required tables, stored procedures and Data Vault default inserts required for the project.
-:::danger
 
 
-> It is HIGHLY recommended that the Synapse server in created manually in Azure prior to executing the `ssdt-deploy` PowerShell script.
-> The generated SSDT project does not contain any configuration information for Azure settings and will be created with whatever default Microsoft is currently using for *Performance Level*.
-:::tip
+
+:::danger
+
+It is HIGHLY recommended that the Synapse server in created manually in Azure prior to executing the `ssdt-deploy` PowerShell script.
+The generated SSDT project does not contain any configuration information for Azure settings and will be created with whatever default Microsoft is currently using for *Performance Level*.
 
 :::
 
 
 
-> For additional details on PowerShell deployment refer to the guide covering [deployment through PowerShell](bimlflex-ssis-using-powershell).
+
+:::tip
+
+For additional details on PowerShell deployment refer to the guide covering [deployment through PowerShell](../technology-ssis/using-powershell).
 
 :::
 
@@ -590,10 +618,12 @@ Generating Azure Synapse DDL scripts are similar to a standard SQL Server deploy
 Azure Synapse tables are required to be created by `Azure Synapse Table Script` instead of the use of `Create Table Script`.
 `Create Table Script` is not needed for a Azure Synapse target warehouse environment.
 Additionally if using the PolyBase Architecture, the `PolyBase External Table Script` will need to be ran to generate the CREATE EXTERNAL TABLE scripts.
-:::note
 
 
-> Ensure the below settings are using the `PolyBase External Table Script`
+
+:::note
+
+Ensure the below settings are using the `PolyBase External Table Script`
 
 :::
 
@@ -609,23 +639,27 @@ The below table has been provided as a quick reminder as to when a script should
 | Data Mart Procedure Script       | When using a SQL Based ELT Data Mart            |
 | Persistent Procedure Script      | When using a SQL Based ELT Staging Area w/ PSA  |
 | Business Vault Procedure Script  | When using PIT or Bridge Tables                 |
-:::tip
 
 
-> For additional details on generating DDL refer to the [BimlFlex DDL generation](bimlflex-generating-ddl) guide.
+
+:::tip
+
+For additional details on generating DDL refer to the [BimlFlex DDL generation](../build-and-deployment/generating-ddl) guide.
 
 :::
 
 
 Once BimlFlex generates the scripts they can be executed against the target database.
 These can be deployed through copy/paste using a SQL Server Management Studio or by another script execution clients if so desired.
-:::tip
 
 
-> For additional details on installing or using SSMS refer to the below guides:
->
-> * Microsoft Docs: [Download SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)  
-> * Microsoft Docs: [What is SQL Server Management Studio (SSMS)?](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms)  
+
+:::tip
+
+For additional details on installing or using SSMS refer to the below guides:
+
+* Microsoft Docs: [Download SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)  
+* Microsoft Docs: [What is SQL Server Management Studio (SSMS)?](https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-ssms)  
 
 :::
 
@@ -658,13 +692,15 @@ This page is currently configured for Azure Data Factory (ADF).
 
 Deploying SSIS orchestration while using Azure Synapse as a target platform is no different a standard SSIS deployment using BimlFlex.
 Refer to the below guides for common deployment methods.
-:::tip
 
 
-> For additional details on generating deploying SSIS packages refer to the below guides:
->
-> * [Deployment Through PowerShell](bimlflex-ssis-using-powershell)
-> * [Deployment Through the SSIS Deployment Wizard](bimlflex-ssis-deployment-wizard)
+
+:::tip
+
+For additional details on generating deploying SSIS packages refer to the below guides:
+
+* [Deployment Through PowerShell](../technology-ssis/using-powershell)
+* [Deployment Through the SSIS Deployment Wizard](../technology-ssis/ssis-deployment-wizard)
 
 :::
 
@@ -672,13 +708,15 @@ Refer to the below guides for common deployment methods.
 ### [Azure Resources](#tab/orchestration/adf-orchestration)
 
 The process of deploying the Azure Resources itself remains unchanged.
-:::tip
 
 
-> For additional details on generating deploying ADF artifacts refer to the below guides:
->
-> * [Deployment Through PowerShell](bimlflex-adf-using-powershell)
-> * [Deployment Through the Azure Portal](using-azure-portal)
+
+:::tip
+
+For additional details on generating deploying ADF artifacts refer to the below guides:
+
+* [Deployment Through PowerShell](../technology-adf/using-powershell)
+* [Deployment Through the Azure Portal](../technology-adf/using-azure-portal)
 
 :::
 

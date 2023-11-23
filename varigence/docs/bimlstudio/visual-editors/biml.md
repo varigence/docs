@@ -2,17 +2,17 @@
 
 Use the Biml editor to edit Biml files.
 
-![Biml Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Biml1.png)
+![Biml Designer](/img/bimlstudio/Biml1.png)
 
 Every item in the Logical View has an associated Biml file. While the item's editor and the property grid can typically provide complete customization for an item, it may be convenient to alter Biml directly.
 
-![Designer and Biml side by side](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Biml2.png)
+![Designer and Biml side by side](/img/bimlstudio/Biml2.png)
 
 Syntax highlighting, quick info popups, and Intelliprompt are all available.
 
-![Biml QuickInfo](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Biml3.png)
+![Biml QuickInfo](/img/bimlstudio/Biml3.png)
 
-![Biml Intelliprompt](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Biml4.png)
+![Biml Intelliprompt](/img/bimlstudio/Biml4.png)
 
 The Biml editor's ribbon provides the following functions:
 

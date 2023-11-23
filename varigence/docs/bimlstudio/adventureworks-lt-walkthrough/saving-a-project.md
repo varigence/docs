@@ -12,8 +12,8 @@ There are several options for saving a project in BimlStudio.
 
 * Click the Save button on the Home tab of the ribbon.
 
-![Save All Ribbon Button](https://varigencecom.blob.core.windows.net/images-mistdocumentation/004_Step01.png)
+![Save All Ribbon Button](/img/bimlstudio/004_Step01.png)
 
 * Click the Save button on the Quick Access Toolbar, which is located at the far upper left of the application window. The Quick Access toolbar is visible regardless of which ribbon is currently shown.
 
-![Save All Quick Access Toolbar Button](https://varigencecom.blob.core.windows.net/images-mistdocumentation/004_Step02.png)
+![Save All Quick Access Toolbar Button](/img/bimlstudio/004_Step02.png)

@@ -12,7 +12,7 @@ Determines if the Data Vault process loads all involved Hubs when a Link table i
 
 Sample Scenario:
 
-A source to staging to Data Vault load is done on the "Product" and "ProductCategory" tables from AdventureWorksLT.
+A source to staging to Data Vault load is done on the `Product` and `ProductCategory` tables from AdventureWorksLT.
 
 The Product table populates the HUB_Product table. The ProductCategory table populates the HUB_ProductCategory table.
 
@@ -24,7 +24,7 @@ In this case, because the source is a database, it can be assumed that the refer
 
 For other sources it might be necessary to load the HUB table from both sources, either due to late arriving data, missing data or timing issues.
 
-Setting the "DvInferLinkHub" to true will allow the Product to populate the ProductCategory Hub as part of that source table load.
+Setting the `DvInferLinkHub` to true will allow the Product to populate the ProductCategory Hub as part of that source table load.
 
 Notes:
 

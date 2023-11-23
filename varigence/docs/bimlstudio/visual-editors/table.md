@@ -2,27 +2,27 @@
 
 Use the Table editor to edit tables, by adding, changing, or removing columns, keys, indexes, and fact or dimension specific objects.
 
-![Table Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Table1.png)
+![Table Designer](/img/bimlstudio/Table1.png)
 
 Enter a column's name, data type, length, precision, and other properties in the column's data grid row. Drag and drop a column to create related keys, indexes, or attributes.
 
-![Table Column](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Table2.png)
+![Table Column](/img/bimlstudio/Table2.png)
 
 Edit a table reference column's table and snowflake columns in its data grid row's details area. Drag and drop a snowflake column to create related keys, indexes, or attributes.
 
-![Table Reference Column](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Table3.png)
+![Table Reference Column](/img/bimlstudio/Table3.png)
 
 Edit a measure's name, SSAS type, measure format, aggregation type, and other properties in its data grid row.
 
-![Measure](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Table4.png)
+![Measure](/img/bimlstudio/Table4.png)
 
 Edit a dimension's attributes, hierarchies, and relationships directly in their treeviews.
 
-![Attribute, Hierarchies, and Relationships](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Table5.png)
+![Attribute, Hierarchies, and Relationships](/img/bimlstudio/Table5.png)
 
 The table editor's ribbon provides the following functions:
 
-![Table Ribbon](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Table6.png)
+![Table Ribbon](/img/bimlstudio/Table6.png)
 
 Button | Description
 --- | ---

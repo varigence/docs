@@ -16,13 +16,13 @@ Videos that cover various aspects of BimlFlex are also available in the [Varigen
 
 ![BimlFlex End to End Walkthrough](https://www.youtube.com/watch?v=6BgkXqjDtvY?rel=0&autoplay=0 "BimlFlex End to End Walkthrough")
 
-More information: [First Project Walkthrough](bimlflex-getting-started-first-project-walkthrough)
+More information: [First Project Walkthrough](./first-project-walkthrough)
 
 ## Loading Sample Metadata
 
 ![Load Sample Metadata](https://www.youtube.com/watch?v=2rL853XpST4?rel=0&autoplay=0 "Load Sample Metadata")
 
-More information: [Load Sample Metadata](bimlflex-sample-metadata)
+More information: [Load Sample Metadata](./sample-metadata)
 
 ## Using Business Modeling
 
@@ -30,22 +30,22 @@ More information: [Load Sample Metadata](bimlflex-sample-metadata)
 
 ![Using Business Modeling and Data Vault to automate an Azure Synapse solution](https://www.youtube.com/watch?v=EeDTDV__cBM)
 
-More information: [Business Modeling](bimlflex-business-modeling)
+More information: [Business Modeling](../metadata-editors/business-modeling)
 
 ## Data Vault Acceleration
 
 ![Data Vault Acceleration](https://www.youtube.com/watch?v=w1UTANpF_ug?rel=0&autoplay=0 "Data Vault Acceleration")
 
-More information: [Accelerating the Data Vault](bimlflex-data-vault-accelerator)
+More information: [Accelerating the Data Vault](../metadata-editors/accelerator)
 
 ## Building a Data Vault Project
 
 ![Build the Data Vault Project](https://www.youtube.com/watch?v=qYu8pwqgAm0?rel=0&autoplay=0 "Build the Data Vault Project")
 
-More information: [Build Process Overview](bimlflex-build-solution-overview)
+More information: [Build Process Overview](../build-and-deployment)
 
 ## Dimensional Modeling
 
 ![Dimensional Model](https://www.youtube.com/watch?v=UKq-libt3xg?rel=0&autoplay=0 "Dimensional Model")
 
-More information: [Data Mart Dimensional Model](bimlflex-data-delivery-index)
+More information: [Data Mart Dimensional Model](../delivering-data-marts)

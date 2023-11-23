@@ -19,17 +19,17 @@ For any recommendations, feedback or clarification please reach out to our suppo
 
 Everything related to the BimlFlex components, and how to get things up-and-running.
 
-* [Installation and upgrade procedures](bimlflex-setup-installing-bimlflex)
-* [Software and hardware requirements](bimlflex-setup-software-and-hardware-requirements)
-* [Components of the BimlFlex platform](bimlflex-components-overview)
+* [Installation and upgrade procedures](installation/installing-bimlflex)
+* [Software and hardware requirements](installation/system-requirements)
+* [Components of the BimlFlex platform](getting-started/bimlflex-components-overview)
 
 ## Getting Started
 
 Get started designing and delivering data solutions using BimlFlex.
 
-* [Initial configuration overview](bimlflex-getting-started-initial-configuration)
-* [Step-by-step walkthrough of using BimlFlex to build a sample Data Warehouse](bimlflex-getting-started-first-project-walkthrough)
-* [Introduction videos](bimlflex-getting-started-intro-videos)
+* [Initial configuration overview](getting-started/initial-configuration)
+* [Step-by-step walkthrough of using BimlFlex to build a sample Data Warehouse](getting-started/first-project-walkthrough)
+* [Introduction videos](getting-started/intro-videos)
 
 ## Methodologies & Technology
 
@@ -37,24 +37,24 @@ BimlFlex supports a number of target Data Warehouse platforms. The platform prov
 
 The main supported platforms are:
 
-* [Snowflake](bimlflex-snowflake-index)
-* [Azure Synapse](bimlflex-synapse-implementation)
-* [Microsoft on-premises SQL Server](ssis-on-prem-sql-server)
+* [Snowflake](technology-snowflake)
+* [Azure Synapse](technology-synapse/synapse-implementation)
+* [Microsoft on-premises SQL Server](technology-ssis/ssis-on-prem-sql-server)
 
 Delivering a data solution touches on many concepts and specific technology implementations.
 
-* [Designing and implementing a Data Vault model using BimlFlex](bimlflex-data-vault-index)
-* [Delivering data for consumption](bimlflex-data-delivery-index)
+* [Designing and implementing a Data Vault model using BimlFlex](delivering-data-vault)
+* [Delivering data for consumption](delivering-data-marts)
 
 ## Support and Reference Documentation
 
 Reference documentation on BimlFlex User Interface components, Extension Points and Settings as well as design and implementation notes that quickly illustrates a core BimlFlex feature, nifty trick or similar.
 
-* [Reference documentation](bimlflex-reference-documentation-index)
-* [Tips and tricks](bimlflex-tips-and-tricks-overview)
+* [Reference documentation](reference-documentation)
+* [Tips and tricks](support/tips-and-tricks)
 
 ## Release Notes
 
 The latest Release Notes and download information for BimlFlex.
 
-* [Release notes](bimlflex-release-notes-overview)
+* [Release notes](release-notes)

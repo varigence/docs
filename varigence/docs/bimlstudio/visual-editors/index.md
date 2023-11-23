@@ -4,27 +4,27 @@ This portion of the user guide describes the different editors and tool windows 
 
 The Mist UI looks as follows:
 
-![Mist UI](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Home1.png)
+![Mist UI](/img/bimlstudio/Home1.png)
 
 Add assets and execute operations using the ribbon along the top of the window.
 
-![Ribbon](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Home2.png)
+![Ribbon](/img/bimlstudio/Home2.png)
 
 Easily modify any asset using its visual editor.
 
-![Designer Tab](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Home3.png)
+![Designer Tab](/img/bimlstudio/Home3.png)
 
 Modify an asset's Biml directly in the Biml editor.
 
-![Biml Tab](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Home4.png)
+![Biml Tab](/img/bimlstudio/Home4.png)
 
 Add and edit child assets in Mist's tool windows.
 
-![Tool Windows](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Home5.png)
+![Tool Windows](/img/bimlstudio/Home5.png)
 
 The home ribbon provides the following functions:
 
-![Home Ribbon](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/Home10.png)
+![Home Ribbon](/img/bimlstudio/Home10.png)
 
 Button | Description
 --- | ---

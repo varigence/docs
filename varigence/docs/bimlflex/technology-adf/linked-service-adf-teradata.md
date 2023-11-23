@@ -4,10 +4,12 @@ description: Documentation on how to configure ADF Linked Service Connection for
 tags: [BimlFlex, Walkthrough]
 ---
 # Configuring an ADF Linked Service Connection for Teradata
-:::note
 
 
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection).
+
+:::note
+
+For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](./create-linked-service-connection).
 
 :::
 
@@ -16,7 +18,7 @@ tags: [BimlFlex, Walkthrough]
 
 After selecting `Teradata` from the Linked Service Type dropdown, the form required for creating a Teradata Linked Service will appear.
 
-![Teradata Linked Service Form](images/bimlflex-ss-app-connections-adf-teradata-form.png "Teradata Linked Service Form")
+![Teradata Linked Service Form](/img/bimlflex/bimlflex-ss-app-connections-adf-teradata-form.png "Teradata Linked Service Form")
 
 ## Required Fields
 
@@ -47,10 +49,12 @@ The custom values that appear in this dropdown can be maintained in Settings und
 A connection to a Teradata linked service requires a Connection String.
 The required properties for the Connection String are Server Name, Database Name, User Name, and Password.
 The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 :::
 
@@ -65,10 +69,12 @@ If Windows Authentication is used, User Name and Password are still required.
 
 Password will be used by the Linked Service form for SQL Authentication or Windows Authentication with the Teradata Linked Service.
 Password is required - except when using SQL Authentication with Azure Key Vault in place of a manually entering a Connection String.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the password.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the password.
 
 :::
 

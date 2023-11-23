@@ -43,11 +43,13 @@ Header not included because it is used in different ways
 | Geography             | SQL Server geography data type.                                       |
 | SmallMoney            | Small money.                                                          |
 | Variant               | Variant. Non explicit data type.                                      |
-:::note
 
 
-> For information on how these map to SQL Server, Synapse and Snowflake data types see associated link below.  
-> BimlFlex Documentation: [BimlFlex Data Type Conversions](bimlflex-data-type-conversions).
+
+:::note
+
+For information on how these map to SQL Server, Synapse and Snowflake data types see associated link below.  
+BimlFlex Documentation: [BimlFlex Data Type Conversions](../data-type-conversions).
 
 :::
 

@@ -34,26 +34,26 @@ BimlStudio has the ability to work with projects that are stored in TFS and Subv
 
 1. In Project View, right click on the project and select **Properties**.
 
-    ![Project Context menu](https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/1.png)
+    ![Project Context menu](/img/bimlstudio/1.png)
 
 1. In the Properties designer, press the **Locate tf...** button.
 
-    ![Locate tf button highlighted](https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/2.png)
+    ![Locate tf button highlighted](/img/bimlstudio/2.png)
 
 1. Find tf.exe on your system and press **Open**. The path to tf.exe will be automatically inserted in the tf Path textbox.
 
-    ![Locate tf dialog box](https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/3.png)
+    ![Locate tf dialog box](/img/bimlstudio/3.png)
 
-    ![tf Path textbox](https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/3a.png)
+    ![tf Path textbox](/img/bimlstudio/3a.png)
 
 1. If your TFS enlistment requires logon credentials, press the **Change Credentials** button.
 
-    ![Change Credentials button highlighted](https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/4.png)
+    ![Change Credentials button highlighted](/img/bimlstudio/4.png)
 
 1. Enter your username and password in the Credentials dialog box and press **OK**.
 
-    ![Credentials dialog box](https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/5.png)
+    ![Credentials dialog box](/img/bimlstudio/5.png)
 
 1. Click the **Reload Project** button.
 
-    ![Reload Project button highlighted](https://varigencecom.blob.core.windows.net/images-mistdocumentation-sourcecontrolsetup/6.png)
+    ![Reload Project button highlighted](/img/bimlstudio/6.png)

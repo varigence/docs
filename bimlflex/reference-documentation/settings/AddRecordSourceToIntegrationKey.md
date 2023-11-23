@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Add Record Source To Integration Key
 
-Import Metadata will add "@@rs" to Integration Keys if true.
+Import Metadata will add `@@rs` to Integration Keys if true.
 
 Notes:
 

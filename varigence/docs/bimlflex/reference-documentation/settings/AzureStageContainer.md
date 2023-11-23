@@ -8,7 +8,7 @@ tags: [BimlFlex, Reference]
 
 The Container Name to use for the staging process.
 
-This should be indicative of the purpose of the contents, such as "staging"
+This should be indicative of the purpose of the contents, such as `staging`
 
 Notes:
 

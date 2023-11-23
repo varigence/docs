@@ -10,9 +10,9 @@ Comma-separated list that contains the existing Metadata that should be retained
 
 Should be specified as a comma-separated list.
 
-Options are "Data Types", "Column Orders", "References", and "All Other".
+Options are `Data Types`, `Column Orders`, `References`, and `All Other`.
 
-I.e. specify "Column Orders, All Other" without double quotes
+I.e. specify `Column Orders, All Other` without double quotes
 
 Notes:
 

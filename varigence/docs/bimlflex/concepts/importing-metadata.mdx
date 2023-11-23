@@ -15,15 +15,17 @@ import InclHeaderMetadataImport from './_incl-header-metadata-import.md';
 
 There are a number of options for importing metadata. The user must align these options with the solution architecture and metadata conventions.
 
-![Import Metadata Options](../metadata-editors/images/bimlflex-app-import-metadata-options.png "Import Metadata Options")
+![Import Metadata Options](/img/bimlflex/bimlflex-app-import-metadata-options.png "Import Metadata Options")
 
 The example connection in the Sample Metadata is `AWLT_SRC` which points to the AdventureWorksLT database, using the project `EXT_AWLT_SRC` as the target project for imported metadata.
 
 Below the Connection and Project drop downs are all the main options. These can be configured to control the behavior of the import, such as what object types to import, naming conventions to apply and what to retain if the metadata has been imported before.
-:::tip
 
 
-> Have a look at our [recorded video](https://www.youtube.com/watch?v=ClMJcZPdSks?rel=0&autoplay=0) covering how to import metadata using BimlFlex.
+
+:::tip
+
+Have a look at our [recorded video](https://www.youtube.com/watch?v=ClMJcZPdSks?rel=0&autoplay=0) covering how to import metadata using BimlFlex.
 
 :::
 
@@ -40,8 +42,8 @@ The *Schema Filter* and *Table Filter* can be used to limit the metadata made av
 
 | Option | Definition |
 | ----------------- | ---------- |
-| Connection | Name of the connection that points to the data source the metadata is intended to be extracted from. The corresponding Connection String is used as defined in the [Connections](bimlflex-connection-editor) configuration. |
-| Project | Name of the project that will use this metadata as its source in the source to target loading. This project has to be defined previously. For more information, please refer to the [Projects](bimlflex-project-editor) documentation |
+| Connection | Name of the connection that points to the data source the metadata is intended to be extracted from. The corresponding Connection String is used as defined in the [Connections](../metadata-editors/connection-editor) configuration. |
+| Project | Name of the project that will use this metadata as its source in the source to target loading. This project has to be defined previously. For more information, please refer to the [Projects](../metadata-editors/project-editor) documentation |
 
 #### Table and column names
 
@@ -101,7 +103,7 @@ Click the `Connect to Database` button. If the Connection String is correct and 
 
 The Importable Assets list is read from the Source Connection. Choose items that should be included in the metadata import.
 
-![Import Metadata](../metadata-editors/images/bimlflex-app-import-metadata.png "Import Metadata")
+![Import Metadata](/img/bimlflex/bimlflex-app-import-metadata.png "Import Metadata")
 
 Upon clicking the `Import Metadata` button, the metadata will be imported into the BimlFlex app and will be available for review and modeling.
 
@@ -109,7 +111,7 @@ Upon clicking the `Import Metadata` button, the metadata will be imported into t
 
 Navigate back to the Connection or Project and view the Objects tab. You should see all the newly imported Objects.
 
-![Imported Metadata Objects](../metadata-editors/images/bimlflex-app-import-metadata-objects.png "Imported Metadata Objects")
+![Imported Metadata Objects](/img/bimlflex/bimlflex-app-import-metadata-objects.png "Imported Metadata Objects")
 
 ## Import Metadata Over Existing Metadata
 

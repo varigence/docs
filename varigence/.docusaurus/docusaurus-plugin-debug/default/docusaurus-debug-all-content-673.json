@@ -2234,13 +2234,13 @@
               "id": "bimlflex/docs-gen/index",
               "title": "BimlFlex Documentation Viewer User Guide",
               "description": "Documentation for generating, deploying, and customizing BimlFlex Documentation",
-              "source": "@site/docs/bimlflex/docs-gen/index.md",
+              "source": "@site/docs/bimlflex/docs-gen/index.mdx",
               "sourceDirName": "bimlflex/docs-gen",
               "slug": "/bimlflex/docs-gen/",
               "permalink": "/docs/bimlflex/docs-gen/",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/docs-gen/index.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/docs-gen/index.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -3024,50 +3024,8 @@
                 "permalink": "/docs/bimlflex/metadata-editors/parameter-editor"
               },
               "next": {
-                "title": "Configuration Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/configuration-editor"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/batches",
-              "title": "Batch Editor",
-              "description": "Documentation regarding the BimlFlex Batch Editor, including editor fields, action buttons, field descriptions, and setting options.",
-              "source": "@site/docs/bimlflex/metadata-editors/batches.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/batches",
-              "permalink": "/docs/bimlflex/metadata-editors/batches",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/batches.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Reference",
-                  "permalink": "/docs/tags/reference"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 7,
-              "frontMatter": {
-                "sidebar_position": 7,
-                "title": "Batch Editor",
-                "description": "Documentation regarding the BimlFlex Batch Editor, including editor fields, action buttons, field descriptions, and setting options.",
-                "tags": [
-                  "BimlFlex",
-                  "Reference"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Connection Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/connection-editor"
-              },
-              "next": {
-                "title": "Project Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/project-editor"
+                "title": "Setting Editor",
+                "permalink": "/docs/bimlflex/metadata-editors/setting-editor"
               }
             },
             {
@@ -3104,180 +3062,12 @@
               },
               "sidebar": "bimlflexSidebar",
               "previous": {
-                "title": "Overview",
-                "permalink": "/docs/bimlflex/metadata-editors/"
+                "title": "BimlFlex App",
+                "permalink": "/docs/category/bimlflex-app"
               },
               "next": {
                 "title": "Dashboard",
                 "permalink": "/docs/bimlflex/metadata-editors/dashboard"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/business-modeling",
-              "title": "Business Modeling",
-              "description": "Overview of the Business Modeling process within BimlFlex App, including conceptual origin, creating a model, action bar, settings, and relationship models",
-              "source": "@site/docs/bimlflex/metadata-editors/business-modeling.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/business-modeling",
-              "permalink": "/docs/bimlflex/metadata-editors/business-modeling",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/business-modeling.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Reference",
-                  "permalink": "/docs/tags/reference"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 21,
-              "frontMatter": {
-                "sidebar_position": 21,
-                "title": "Business Modeling",
-                "description": "Overview of the Business Modeling process within BimlFlex App, including conceptual origin, creating a model, action bar, settings, and relationship models",
-                "tags": [
-                  "BimlFlex",
-                  "Reference"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Data Lineage",
-                "permalink": "/docs/bimlflex/metadata-editors/data-lineage"
-              },
-              "next": {
-                "title": "Excel Add-In",
-                "permalink": "/docs/bimlflex/metadata-editors/excel-add-in"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/column-editor",
-              "title": "Column Editor",
-              "description": "Documentation regarding the BimlFlex Column editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-              "source": "@site/docs/bimlflex/metadata-editors/column-editor.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/column-editor",
-              "permalink": "/docs/bimlflex/metadata-editors/column-editor",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/column-editor.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Reference",
-                  "permalink": "/docs/tags/reference"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 10,
-              "frontMatter": {
-                "sidebar_position": 10,
-                "title": "Column Editor",
-                "description": "Documentation regarding the BimlFlex Column editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-                "tags": [
-                  "BimlFlex",
-                  "Reference"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Object Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/object-editor"
-              },
-              "next": {
-                "title": "Parameter Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/parameter-editor"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/configuration-editor",
-              "title": "Configuration Editor",
-              "description": "Documentation regarding the BimlFlex Configuration editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-              "source": "@site/docs/bimlflex/metadata-editors/configuration-editor.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/configuration-editor",
-              "permalink": "/docs/bimlflex/metadata-editors/configuration-editor",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/configuration-editor.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Reference",
-                  "permalink": "/docs/tags/reference"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 13,
-              "frontMatter": {
-                "sidebar_position": 13,
-                "title": "Configuration Editor",
-                "description": "Documentation regarding the BimlFlex Configuration editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-                "tags": [
-                  "BimlFlex",
-                  "Reference"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Attribute Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/attribute-editor"
-              },
-              "next": {
-                "title": "Setting Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/setting-editor"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/connection-editor",
-              "title": "Connection Editor",
-              "description": "Documentation regarding the BimlFlex Connection editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-              "source": "@site/docs/bimlflex/metadata-editors/connection-editor.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/connection-editor",
-              "permalink": "/docs/bimlflex/metadata-editors/connection-editor",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/connection-editor.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Reference",
-                  "permalink": "/docs/tags/reference"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 6,
-              "frontMatter": {
-                "sidebar_position": 6,
-                "title": "Connection Editor",
-                "description": "Documentation regarding the BimlFlex Connection editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-                "tags": [
-                  "BimlFlex",
-                  "Reference"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Treeview",
-                "permalink": "/docs/bimlflex/metadata-editors/treeview"
-              },
-              "next": {
-                "title": "Batch Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/batches"
               }
             },
             {
@@ -3402,50 +3192,8 @@
                 "permalink": "/docs/bimlflex/metadata-editors/schema-diagram"
               },
               "next": {
-                "title": "Business Modeling",
-                "permalink": "/docs/bimlflex/metadata-editors/business-modeling"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/data-type-mappings",
-              "title": "Data Type Mappings",
-              "description": "Documentation regarding the BimlFlex Data Type Mappings editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-              "source": "@site/docs/bimlflex/metadata-editors/data-type-mappings.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/data-type-mappings",
-              "permalink": "/docs/bimlflex/metadata-editors/data-type-mappings",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/data-type-mappings.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Reference",
-                  "permalink": "/docs/tags/reference"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 15,
-              "frontMatter": {
-                "sidebar_position": 15,
-                "title": "Data Type Mappings",
-                "description": "Documentation regarding the BimlFlex Data Type Mappings editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-                "tags": [
-                  "BimlFlex",
-                  "Reference"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Setting Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/setting-editor"
-              },
-              "next": {
-                "title": "Version Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/version-editor"
+                "title": "Excel Add-In",
+                "permalink": "/docs/bimlflex/metadata-editors/excel-add-in"
               }
             },
             {
@@ -3522,83 +3270,12 @@
               },
               "sidebar": "bimlflexSidebar",
               "previous": {
-                "title": "Business Modeling",
-                "permalink": "/docs/bimlflex/metadata-editors/business-modeling"
+                "title": "Data Lineage",
+                "permalink": "/docs/bimlflex/metadata-editors/data-lineage"
               },
               "next": {
                 "title": "Toolbar Icons and Options",
                 "permalink": "/docs/bimlflex/metadata-editors/database-settings"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/index",
-              "title": "Overview",
-              "description": "Overview of BimlFlex metadata editors with links to BimlFlex tour, dashboard, and editors",
-              "source": "@site/docs/bimlflex/metadata-editors/index.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/",
-              "permalink": "/docs/bimlflex/metadata-editors/",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/index.mdx",
-              "tags": [],
-              "version": "current",
-              "sidebarPosition": 1,
-              "frontMatter": {
-                "sidebar_position": 1,
-                "title": "Overview",
-                "description": "Overview of BimlFlex metadata editors with links to BimlFlex tour, dashboard, and editors"
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "BimlFlex App",
-                "permalink": "/docs/category/bimlflex-app"
-              },
-              "next": {
-                "title": "BimlFlex Tour",
-                "permalink": "/docs/bimlflex/metadata-editors/bimlflex-tour"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/object-editor",
-              "title": "Object Editor",
-              "description": "Documentation regarding the BimlFlex Object editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-              "source": "@site/docs/bimlflex/metadata-editors/object-editor.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/object-editor",
-              "permalink": "/docs/bimlflex/metadata-editors/object-editor",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/object-editor.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Reference",
-                  "permalink": "/docs/tags/reference"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 9,
-              "frontMatter": {
-                "sidebar_position": 9,
-                "title": "Object Editor",
-                "description": "Documentation regarding the BimlFlex Object editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-                "tags": [
-                  "BimlFlex",
-                  "Reference"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Project Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/project-editor"
-              },
-              "next": {
-                "title": "Column Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/column-editor"
               }
             },
             {
@@ -3635,8 +3312,8 @@
               },
               "sidebar": "bimlflexSidebar",
               "previous": {
-                "title": "Version Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/version-editor"
+                "title": "Setting Editor",
+                "permalink": "/docs/bimlflex/metadata-editors/setting-editor"
               },
               "next": {
                 "title": "Accelerator",
@@ -3677,54 +3354,12 @@
               },
               "sidebar": "bimlflexSidebar",
               "previous": {
-                "title": "Column Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/column-editor"
+                "title": "Treeview",
+                "permalink": "/docs/bimlflex/metadata-editors/treeview"
               },
               "next": {
                 "title": "Attribute Editor",
                 "permalink": "/docs/bimlflex/metadata-editors/attribute-editor"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/project-editor",
-              "title": "Project Editor",
-              "description": "Documentation regarding the BimlFlex Projects editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-              "source": "@site/docs/bimlflex/metadata-editors/project-editor.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/project-editor",
-              "permalink": "/docs/bimlflex/metadata-editors/project-editor",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/project-editor.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Reference",
-                  "permalink": "/docs/tags/reference"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 8,
-              "frontMatter": {
-                "sidebar_position": 8,
-                "title": "Project Editor",
-                "description": "Documentation regarding the BimlFlex Projects editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-                "tags": [
-                  "BimlFlex",
-                  "Reference"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Batch Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/batches"
-              },
-              "next": {
-                "title": "Object Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/object-editor"
               }
             },
             {
@@ -3803,12 +3438,12 @@
               },
               "sidebar": "bimlflexSidebar",
               "previous": {
-                "title": "Configuration Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/configuration-editor"
+                "title": "Attribute Editor",
+                "permalink": "/docs/bimlflex/metadata-editors/attribute-editor"
               },
               "next": {
-                "title": "Data Type Mappings",
-                "permalink": "/docs/bimlflex/metadata-editors/data-type-mappings"
+                "title": "Operational Reports",
+                "permalink": "/docs/bimlflex/metadata-editors/operational-reports"
               }
             },
             {
@@ -3849,50 +3484,8 @@
                 "permalink": "/docs/bimlflex/metadata-editors/customers"
               },
               "next": {
-                "title": "Connection Editor",
-                "permalink": "/docs/bimlflex/metadata-editors/connection-editor"
-              }
-            },
-            {
-              "id": "bimlflex/metadata-editors/version-editor",
-              "title": "Version Editor",
-              "description": "Documentation regarding the BimlFlex Versions editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-              "source": "@site/docs/bimlflex/metadata-editors/version-editor.mdx",
-              "sourceDirName": "bimlflex/metadata-editors",
-              "slug": "/bimlflex/metadata-editors/version-editor",
-              "permalink": "/docs/bimlflex/metadata-editors/version-editor",
-              "draft": false,
-              "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/metadata-editors/version-editor.mdx",
-              "tags": [
-                {
-                  "label": "BimlFlex",
-                  "permalink": "/docs/tags/biml-flex"
-                },
-                {
-                  "label": "Conceptual",
-                  "permalink": "/docs/tags/conceptual"
-                }
-              ],
-              "version": "current",
-              "sidebarPosition": 16,
-              "frontMatter": {
-                "sidebar_position": 16,
-                "title": "Version Editor",
-                "description": "Documentation regarding the BimlFlex Versions editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-                "tags": [
-                  "BimlFlex",
-                  "Conceptual"
-                ]
-              },
-              "sidebar": "bimlflexSidebar",
-              "previous": {
-                "title": "Data Type Mappings",
-                "permalink": "/docs/bimlflex/metadata-editors/data-type-mappings"
-              },
-              "next": {
-                "title": "Operational Reports",
-                "permalink": "/docs/bimlflex/metadata-editors/operational-reports"
+                "title": "Parameter Editor",
+                "permalink": "/docs/bimlflex/metadata-editors/parameter-editor"
               }
             },
             {
@@ -4049,13 +3642,13 @@
               "id": "bimlflex/reference-documentation/entities/Batch",
               "title": "BimlFlex App Definition for Batches",
               "description": "Documentation of functionality within BimlFlex for Batches",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Batch.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Batch.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Batch",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Batch",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Batch.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Batch.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4089,13 +3682,13 @@
               "id": "bimlflex/reference-documentation/entities/Column",
               "title": "BimlFlex App Definition for Columns",
               "description": "Documentation of functionality within BimlFlex for Columns",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Column.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Column.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Column",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Column",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Column.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Column.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4129,13 +3722,13 @@
               "id": "bimlflex/reference-documentation/entities/Configuration",
               "title": "BimlFlex App Definition for Configurations",
               "description": "Documentation of functionality within BimlFlex for Configurations",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Configuration.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Configuration.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Configuration",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Configuration",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Configuration.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Configuration.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4169,13 +3762,13 @@
               "id": "bimlflex/reference-documentation/entities/Connection",
               "title": "BimlFlex App Definition for Connections",
               "description": "Documentation of functionality within BimlFlex for Connections",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Connection.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Connection.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Connection",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Connection",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Connection.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Connection.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4209,13 +3802,13 @@
               "id": "bimlflex/reference-documentation/entities/Customer",
               "title": "BimlFlex App Definition for Customers",
               "description": "Documentation of functionality within BimlFlex for Customers",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Customer.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Customer.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Customer",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Customer",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Customer.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Customer.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4249,13 +3842,13 @@
               "id": "bimlflex/reference-documentation/entities/DataTypeMapping",
               "title": "BimlFlex App Definition for DataTypeMappings",
               "description": "Documentation of functionality within BimlFlex for DataTypeMappings",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/DataTypeMapping.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/DataTypeMapping.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/DataTypeMapping",
               "permalink": "/docs/bimlflex/reference-documentation/entities/DataTypeMapping",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/DataTypeMapping.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/DataTypeMapping.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4289,13 +3882,13 @@
               "id": "bimlflex/reference-documentation/entities/Object",
               "title": "BimlFlex App Definition for Objects",
               "description": "Documentation of functionality within BimlFlex for Objects",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Object.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Object.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Object",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Object",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Object.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Object.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4329,13 +3922,13 @@
               "id": "bimlflex/reference-documentation/entities/Parameter",
               "title": "BimlFlex App Definition for Parameters",
               "description": "Documentation of functionality within BimlFlex for Parameters",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Parameter.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Parameter.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Parameter",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Parameter",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Parameter.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Parameter.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4369,13 +3962,13 @@
               "id": "bimlflex/reference-documentation/entities/Project",
               "title": "BimlFlex App Definition for Projects",
               "description": "Documentation of functionality within BimlFlex for Projects",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Project.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Project.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Project",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Project",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Project.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Project.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4449,13 +4042,13 @@
               "id": "bimlflex/reference-documentation/entities/Version",
               "title": "BimlFlex App Definition for Versions",
               "description": "Documentation of functionality within BimlFlex for Versions",
-              "source": "@site/docs/bimlflex/reference-documentation/entities/Version.md",
+              "source": "@site/docs/bimlflex/reference-documentation/entities/Version.mdx",
               "sourceDirName": "bimlflex/reference-documentation/entities",
               "slug": "/bimlflex/reference-documentation/entities/Version",
               "permalink": "/docs/bimlflex/reference-documentation/entities/Version",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Version.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/entities/Version.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4489,13 +4082,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Azure",
               "title": "BimlFlex App Definition for Azure",
               "description": "Documentation of functionality within BimlFlex for the Azure Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Azure.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Azure.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Azure",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Azure",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Azure.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Azure.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4529,13 +4122,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Batch",
               "title": "BimlFlex App Definition for Batch",
               "description": "Documentation of functionality within BimlFlex for the Batch Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Batch.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Batch.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Batch",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Batch",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Batch.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Batch.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4569,13 +4162,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Connection",
               "title": "BimlFlex App Definition for Connection",
               "description": "Documentation of functionality within BimlFlex for the Connection Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Connection.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Connection.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Connection",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Connection",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Connection.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Connection.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4609,13 +4202,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Data-Factory",
               "title": "BimlFlex App Definition for Data Factory",
               "description": "Documentation of functionality within BimlFlex for the Data Factory Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Data-Factory.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Data-Factory.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Data-Factory",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Data-Factory",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Data-Factory.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Data-Factory.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4649,13 +4242,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Data-Mart",
               "title": "BimlFlex App Definition for Data Mart",
               "description": "Documentation of functionality within BimlFlex for the Data Mart Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Data-Mart.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Data-Mart.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Data-Mart",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Data-Mart",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Data-Mart.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Data-Mart.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4689,13 +4282,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Data-Vault",
               "title": "BimlFlex App Definition for Data Vault",
               "description": "Documentation of functionality within BimlFlex for the Data Vault Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Data-Vault.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Data-Vault.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Data-Vault",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Data-Vault",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Data-Vault.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Data-Vault.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4729,13 +4322,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Global",
               "title": "BimlFlex App Definition for Global",
               "description": "Documentation of functionality within BimlFlex for the Global Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Global.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Global.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Global",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Global",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Global.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Global.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4769,13 +4362,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Mapping-Data-Flows",
               "title": "BimlFlex App Definition for Mapping Data Flows",
               "description": "Documentation of functionality within BimlFlex for the Mapping Data Flows Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4809,13 +4402,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Object",
               "title": "BimlFlex App Definition for Object",
               "description": "Documentation of functionality within BimlFlex for the Object Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Object.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Object.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Object",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Object",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Object.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Object.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4849,13 +4442,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Project",
               "title": "BimlFlex App Definition for Project",
               "description": "Documentation of functionality within BimlFlex for the Project Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Project.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Project.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Project",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Project",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Project.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Project.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -4889,13 +4482,13 @@
               "id": "bimlflex/reference-documentation/extension-points/Staging-Sql",
               "title": "BimlFlex App Definition for Staging SQL",
               "description": "Documentation of functionality within BimlFlex for the Staging SQL Extension Point category",
-              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Staging-Sql.md",
+              "source": "@site/docs/bimlflex/reference-documentation/extension-points/Staging-Sql.mdx",
               "sourceDirName": "bimlflex/reference-documentation/extension-points",
               "slug": "/bimlflex/reference-documentation/extension-points/Staging-Sql",
               "permalink": "/docs/bimlflex/reference-documentation/extension-points/Staging-Sql",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Staging-Sql.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/extension-points/Staging-Sql.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -5055,13 +4648,13 @@
               "id": "bimlflex/reference-documentation/reference-documentation-entities-index",
               "title": "Metadata Editors",
               "description": "Documentation of components and properties for all editors within BimlFlex",
-              "source": "@site/docs/bimlflex/reference-documentation/reference-documentation-entities-index.md",
+              "source": "@site/docs/bimlflex/reference-documentation/reference-documentation-entities-index.mdx",
               "sourceDirName": "bimlflex/reference-documentation",
               "slug": "/bimlflex/reference-documentation/reference-documentation-entities-index",
               "permalink": "/docs/bimlflex/reference-documentation/reference-documentation-entities-index",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/reference-documentation-entities-index.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/reference-documentation-entities-index.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -5097,13 +4690,13 @@
               "id": "bimlflex/reference-documentation/reference-documentation-extensionpoints-index",
               "title": "Extension Points",
               "description": "Documentation of components and properties for all Extension Points within BimlFlex",
-              "source": "@site/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index.md",
+              "source": "@site/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index.mdx",
               "sourceDirName": "bimlflex/reference-documentation",
               "slug": "/bimlflex/reference-documentation/reference-documentation-extensionpoints-index",
               "permalink": "/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -5139,13 +4732,13 @@
               "id": "bimlflex/reference-documentation/reference-documentation-settings-index",
               "title": "Settings",
               "description": "Documentation on metadata and framework settings within BimlFlex",
-              "source": "@site/docs/bimlflex/reference-documentation/reference-documentation-settings-index.md",
+              "source": "@site/docs/bimlflex/reference-documentation/reference-documentation-settings-index.mdx",
               "sourceDirName": "bimlflex/reference-documentation",
               "slug": "/bimlflex/reference-documentation/reference-documentation-settings-index",
               "permalink": "/docs/bimlflex/reference-documentation/reference-documentation-settings-index",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/reference-documentation-settings-index.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/reference-documentation/reference-documentation-settings-index.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -17311,13 +16904,13 @@
               "id": "bimlflex/technology-adf/create-linked-service-connection",
               "title": "Configuring a Linked Service",
               "description": "Documentation on enabling linked service connections, connections for cloud services, and supported linked services for BimlFlex",
-              "source": "@site/docs/bimlflex/technology-adf/create-linked-service-connection.md",
+              "source": "@site/docs/bimlflex/technology-adf/create-linked-service-connection.mdx",
               "sourceDirName": "bimlflex/technology-adf",
               "slug": "/bimlflex/technology-adf/create-linked-service-connection",
               "permalink": "/docs/bimlflex/technology-adf/create-linked-service-connection",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/create-linked-service-connection.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-adf/create-linked-service-connection.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -18696,13 +18289,13 @@
               "id": "bimlflex/technology-ssis/ssis-deployment-wizard",
               "title": "SSIS Deployment Wizard",
               "description": "Documentation on deployment of generated SQL Server Integration Services (SSIS) assets",
-              "source": "@site/docs/bimlflex/technology-ssis/ssis-deployment-wizard.md",
+              "source": "@site/docs/bimlflex/technology-ssis/ssis-deployment-wizard.mdx",
               "sourceDirName": "bimlflex/technology-ssis",
               "slug": "/bimlflex/technology-ssis/ssis-deployment-wizard",
               "permalink": "/docs/bimlflex/technology-ssis/ssis-deployment-wizard",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/ssis-deployment-wizard.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/ssis-deployment-wizard.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -18822,13 +18415,13 @@
               "id": "bimlflex/technology-ssis/using-powershell",
               "title": "Using Powershell",
               "description": "Documentation regarding SSIS asset deployment using PowerShell scripts generated by BimlFlex",
-              "source": "@site/docs/bimlflex/technology-ssis/using-powershell.md",
+              "source": "@site/docs/bimlflex/technology-ssis/using-powershell.mdx",
               "sourceDirName": "bimlflex/technology-ssis",
               "slug": "/bimlflex/technology-ssis/using-powershell",
               "permalink": "/docs/bimlflex/technology-ssis/using-powershell",
               "draft": false,
               "unlisted": false,
-              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/using-powershell.md",
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/bimlflex/technology-ssis/using-powershell.mdx",
               "tags": [
                 {
                   "label": "BimlFlex",
@@ -20804,10 +20397,6 @@
                 "items": [
                   {
                     "type": "doc",
-                    "id": "bimlflex/metadata-editors/index"
-                  },
-                  {
-                    "type": "doc",
                     "id": "bimlflex/metadata-editors/bimlflex-tour"
                   },
                   {
@@ -20824,26 +20413,6 @@
                   },
                   {
                     "type": "doc",
-                    "id": "bimlflex/metadata-editors/connection-editor"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "bimlflex/metadata-editors/batches"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "bimlflex/metadata-editors/project-editor"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "bimlflex/metadata-editors/object-editor"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "bimlflex/metadata-editors/column-editor"
-                  },
-                  {
-                    "type": "doc",
                     "id": "bimlflex/metadata-editors/parameter-editor"
                   },
                   {
@@ -20852,19 +20421,7 @@
                   },
                   {
                     "type": "doc",
-                    "id": "bimlflex/metadata-editors/configuration-editor"
-                  },
-                  {
-                    "type": "doc",
                     "id": "bimlflex/metadata-editors/setting-editor"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "bimlflex/metadata-editors/data-type-mappings"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "bimlflex/metadata-editors/version-editor"
                   },
                   {
                     "type": "doc",
@@ -20881,10 +20438,6 @@
                   {
                     "type": "doc",
                     "id": "bimlflex/metadata-editors/data-lineage"
-                  },
-                  {
-                    "type": "doc",
-                    "id": "bimlflex/metadata-editors/business-modeling"
                   },
                   {
                     "type": "doc",

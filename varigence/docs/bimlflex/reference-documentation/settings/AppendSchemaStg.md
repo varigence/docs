@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Append Schema
 
-Determines if the source Schema is appended to the object name in the staging layer. The default naming convention is to name tables using the Record Source and object name. The AdventureWorksLT Source table "SalesLT.Product" is normally staged in the "AWLT.Product" table. For sources with multiple schemas, enable this to distinguish between tables. For the product table the new staging table name would be "AWLT.SalesLT_Product"
+Determines if the source Schema is appended to the object name in the staging layer. The default naming convention is to name tables using the Record Source and object name. The AdventureWorksLT Source table `SalesLT.Product` is normally staged in the `AWLT.Product` table. For sources with multiple schemas, enable this to distinguish between tables. For the product table the new staging table name would be `AWLT.SalesLT_Product`
 
 Notes:
 

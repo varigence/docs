@@ -88,7 +88,7 @@ The table has now been created and is part of the model.
 
 #### View Biml
 If you right click the table and click **View Biml** it should look similar to the following snippet.
-
+```biml
         <Biml xmlns="http://schemas.varigence.com/biml.xsd">
             <Tables>
                 <Table Name="EtlLog" SchemaName="AdventureWorksLTDataMartDatabase.AdventureWorksLTDataMartSchema" LogicalDisplayFolder="AwDm">
@@ -115,3 +115,4 @@ If you right click the table and click **View Biml** it should look similar to t
                 </Table>
             </Tables>
         </Biml>
+```

@@ -40,7 +40,7 @@ During regular processing the data is loaded into the next layers from the stagi
 
 The PSA can be used for *re-initialization*. During re-initialization, the regular processing is paused and the full history from the PSA is loaded into selected staging area tables. The upstream layers can be reloaded from here and using the historical data that is now available. This is the 3rd data flow in the diagram.
 
-![Persistent Staging](images/bimlflex-dataflow-reinitialisation.png "Persistent Staging for re-initialization")
+![Persistent Staging](/img/bimlflex/bimlflex-dataflow-reinitialisation.png "Persistent Staging for re-initialization")
 
 However, this is not the only way to do this. In other configurations the PSA can also be used directly to populate the upstream layers with data. This makes the PSA an integral part of the solution. The staging area is still used for various purposes, such as deriving the data delta and staging flat files.
 

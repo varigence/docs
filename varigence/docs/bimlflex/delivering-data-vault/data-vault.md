@@ -12,15 +12,15 @@ When loading the source data to the Data Vault, no *destructive transformations*
 
 Conceptually, it should still be possible to reconstruct the original data from the Data Vault.
 
-The Data Vault contains [**Hub**](bimlflex-data-vault-concept-hub), [**Link**](bimlflex-data-vault-concept-link) and [**Satellite**](bimlflex-data-vault-concept-satellite) style entities, which all follow configurable Data Vault conventions that can be modified through [**Settings**](bimlflex-setting-editor) and [**Configurations**](bimlflex-configuration-editor).
+The Data Vault contains [**Hub**](./data-vault-concept-hub), [**Link**](./data-vault-concept-link) and [**Satellite**](./data-vault-concept-satellite) style entities, which all follow configurable Data Vault conventions that can be modified through [**Settings**](../metadata-editors/setting-editor) and [**Configurations**](../metadata-editors/configuration-editor).
 
 The Data Vault records the original source data in the central Data Vault model so that it can be easily integrated with other data sources. As part of this process, the data is time-stamped, standardized and unique data solution keys are assigned to Hubs and Links.
 
-The names of the objects and columns in the Data Vault are typically already business focused. Any technical names that may be part of the operational system are usually avoided in favor of an agreed term of definition. BimlFlex supports the process of defining these business-focused terms through the [**Business Modeling**](bimlflex-business-modeling) feature.
+The names of the objects and columns in the Data Vault are typically already business focused. Any technical names that may be part of the operational system are usually avoided in favor of an agreed term of definition. BimlFlex supports the process of defining these business-focused terms through the [**Business Modeling**](../metadata-editors/business-modeling) feature.
 
 ## Relationship to the Business Data Vault
 
-A [**Business Data Vault**](bimlflex-data-vault-business-data-vault) is a conceptual construct that separates the original, unchanged, data in the Data Vault from the data against which transformations have been applied.
+A [**Business Data Vault**](./data-vault-business-data-vault) is a conceptual construct that separates the original, unchanged, data in the Data Vault from the data against which transformations have been applied.
 
 The Business Data Vault uses these original data sets to apply an interpretation, which alters the meaning of the data. In other words, destructive transformations may be applied in the Business Data Vault.
 
@@ -40,11 +40,11 @@ In all cases, it is in the data solution that the resulting different data sets 
 
 To make sure no bias from the original operational system creeps into the Data Vault model, it is recommended to start any new development by defining a **Business Model**. A Business Model provides a system-agnostic way of defining terms and definitions in a way that is clear and agreed for all involved parties.
 
- This can be done using the [**Business Modeling**](bimlflex-business-modeling) feature. The resulting  **Business Entities** and **Business Attributes** can be used to direct the way the Data Vault is created, and assists in ensuring a true holistic representation of the business is created.
+ This can be done using the [**Business Modeling**](../metadata-editors/business-modeling) feature. The resulting  **Business Entities** and **Business Attributes** can be used to direct the way the Data Vault is created, and assists in ensuring a true holistic representation of the business is created.
 
 ### Creating a Data Vault in BimlFlex
 
-In BimlFlex, a Data Vault is defined centrally. Data is loaded into the Data Vault as part of each individual source data set load process. This means that once a source data set is defined and mapped, the resulting data logistics processes to load the data from the source into the Data Vault are created as part of the same [**Batch**](bimlflex-batch-editor).
+In BimlFlex, a Data Vault is defined centrally. Data is loaded into the Data Vault as part of each individual source data set load process. This means that once a source data set is defined and mapped, the resulting data logistics processes to load the data from the source into the Data Vault are created as part of the same [**Batch**](../metadata-editors/batches).
 
 This way, each data set, delta or differential will be loaded into the Data Vault as soon as possible and independent of loading processes for other data sources.
 
@@ -61,6 +61,6 @@ For each data source, the following is recommended:
 
 When the project that is meant to process the source data has been defined, and the source metadata has been imported everything is in place to define the Data Vault. The next step is to actually define the Data Vault objects themselves.
 
-BimlFlex provides the [**Data Vault Accelerator**](bimlflex-data-vault-accelerator) for this. The Accelerator will define an initial Data Vault suggestion based on the structure of the selected source objects.
+BimlFlex provides the [**Data Vault Accelerator**](../metadata-editors/accelerator) for this. The Accelerator will define an initial Data Vault suggestion based on the structure of the selected source objects.
 
-From here, the Data Vault can be fine-tuned into its target design and also mapped to the Business Model. For more information on this please refer to the [**Accelerator**](bimlflex-data-vault-accelerator) and [**Business Modeling**](bimlflex-business-modeling) sections.
+From here, the Data Vault can be fine-tuned into its target design and also mapped to the Business Model. For more information on this please refer to the [**Accelerator**](../metadata-editors/accelerator) and [**Business Modeling**](../metadata-editors/business-modeling) sections.

@@ -4,10 +4,12 @@ description: Documentation on how to configure ADF Linked Service Connection for
 tags: [BimlFlex, Walkthrough]
 ---
 # Configuring an ADF Linked Service Connection for Azure SQL Database Managed Instance
-:::note
 
 
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection).
+
+:::note
+
+For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](./create-linked-service-connection).
 
 :::
 
@@ -16,14 +18,14 @@ tags: [BimlFlex, Walkthrough]
 
 After selecting `Azure SQL MI` from the Linked Service Type dropdown, the form required for creating an Azure SQL Database Managed Instance Linked Service will appear.
 
-![SQL Managed Instance Linked Service Form](images/bimlflex-ss-app-connections-adf-sqlmi-form.png "SQL Managed Instance Linked Service Form")
+![SQL Managed Instance Linked Service Form](/img/bimlflex/bimlflex-ss-app-connections-adf-sqlmi-form.png "SQL Managed Instance Linked Service Form")
 
 ## Required Fields
 
 The required fields are:
 
 + [Connect via Integration Runtime](#connect-via-integration-runtime)
-+ [Connection String](#connection-string) (or [Azure Key Vault](create-linked-service-connection))
++ [Connection String](#connection-string) (or [Azure Key Vault](./create-linked-service-connection))
   + Fully Qualified Domain Name
   + Database Name
 + [Authentication Method](#authentication-method)
@@ -31,12 +33,12 @@ The required fields are:
 Required for [SQL Authentication](#sql-authentication):
 
 + User Name
-+ Password (or [Azure Key Vault](create-linked-service-connection))
++ Password (or [Azure Key Vault](./create-linked-service-connection))
 
 Required for [Service Principal Authentication](#service-principal):
 
 + Service Principal ID (Application ID)
-+ Service Principal Key (Application Key) (or [Azure Key Vault](create-linked-service-connection))
++ Service Principal Key (Application Key) (or [Azure Key Vault](./create-linked-service-connection))
 + Tenant (Tenant ID)
 
 Optional fields are:
@@ -56,10 +58,12 @@ The custom values that appear in this dropdown can be maintained in Settings und
 A connection to an Azure SQL Database Managed Instance linked service requires a connection string.
 The required properties for the connection string are Fully Qualified Domain Name, Database Name, User Name, and Password.
 The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 :::
 
@@ -75,10 +79,12 @@ For [Service Principal Authentication](#service-principal), Service Principal ID
 
 User Name and Password will be required by the Linked Service form for SQL Authentication except when using Azure Key Vault in place of a manually entering a Connection String.
 When using User Name and Password with SQL Authentication they will be included in the Connection String.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the Password.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the Password.
 
 :::
 
@@ -90,14 +96,16 @@ When using Managed Identities, no other authentication details are required.
 
 ### Service Principal
 
-![Service Principal](images/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
+![Service Principal](/img/bimlflex/bimlflex-ss-app-connections-adf-sql-database-service-principal.png "Service Principal")
 
 To use Service Principal authentication, an Azure Active Directory application must be set up in your Azure portal as described in the [Microsoft documentation for SQL Database Managed Instance Service Principal Authentication](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-database-managed-instance#service-principal-authentication).
 The Service Principal (Application) ID, Service Principal (Application) Key, and Tenant ID will be required in the SQL Database Linked Service form.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of a Service Principal Key.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of a Service Principal Key.
 
 :::
 

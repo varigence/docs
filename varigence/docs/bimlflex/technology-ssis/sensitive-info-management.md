@@ -25,7 +25,7 @@ Configure the Attribute Key `ProtectionLevel` with the Attribute Value `EncryptS
 Create a `Project Parameter` Extension Point with the connection string and the sensitive password parameter as a separate project parameter.
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="<Project_Name>_Project" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="<Project_Name>_Project" #>
 
 <!-- Normal Connection String and a separate password parameter set as IsSensitive. Rename the target and parameter names to match the environment -->
 
@@ -38,8 +38,8 @@ Create a `Project Parameter` Extension Point with the connection string and the 
 Create a `Connection Expression` Extension Point with the connection string and the sensitive password parameter as a separate project parameter.
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionExpression" target="<ConnectionName>"#>`
-`<#@ property name="connection" type="BimlFlexModelWrapper.ConnectionsWrapper" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionExpression" target="<ConnectionName>"#>
+<#@ property name="connection" type="BimlFlexModelWrapper.ConnectionsWrapper" #>
 
 <!-- Target the specific connection, override the two relevant attributes. Rename the target and parameter names to match the environment -->
 

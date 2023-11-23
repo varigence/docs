@@ -4,12 +4,14 @@ description: Guide for CI/CD for Azure Data Factory using command line scripts a
 tags: [BimlFlex, Conceptual]
 ---
 # Continuous Integration and Continuous Delivery
-:::note
 
 
-> The following guide is from tailored specifically for Azure Data Factory.  
-> For a details and considerations on implementing CI/CD in SSIS see the [BimlFlex CI/CD for SSIS](bimlflex-ssis-continuous-integration-and-continuous-delivery).
-> A generic platform-independent overview of CI/CD concepts is available in the more generic [CI/CD section](bimlflex-continuous-integration-and-delivery).
+
+:::note
+
+The following guide is from tailored specifically for Azure Data Factory.  
+For a details and considerations on implementing CI/CD in SSIS see the [BimlFlex CI/CD for SSIS](../technology-ssis/continuous-integration-and-continuous-delivery).
+A generic platform-independent overview of CI/CD concepts is available in the more generic [CI/CD section](../build-and-deployment/continuous-integration-and-delivery).
 
 :::
 
@@ -66,5 +68,6 @@ Remove-Item -Path $destinationRoot\DatabaseProjects\$databaseProjectName\ -Force
 Copy-Item -Path $sourceRoot\SSDT\Current\$databaseProjectName\ -Filter "*.*" -Recurse -Destination $destinationRoot\DatabaseProjects\ -Container -Force
 ```
 
-> [!NOTE]
-> In the example above, the SSDT project is also copied. This is because the entire database project (structure) can also be built and deployed using build pipelines. The recommended approach is to keep these artifacts in the same Git repository.
+
+[!NOTE]
+In the example above, the SSDT project is also copied. This is because the entire database project (structure) can also be built and deployed using build pipelines. The recommended approach is to keep these artifacts in the same Git repository.

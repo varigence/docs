@@ -8,9 +8,9 @@ varigenceArticleType: Reference
 
 # Retry Attempts
 
-Maximum number of retry attempts for Azure Copy.
+Maximum number of retry attempts for Azure Copy Activity.
 
 Notes:
 
 * This setting is part of the *Azure Copy* settings category.
-
+* The default value for this setting is `0`.

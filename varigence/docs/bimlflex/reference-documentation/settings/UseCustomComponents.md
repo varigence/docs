@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Use Custom Components
 
-Determines if BimlFlex uses the Ssis Custom Components to log RowCounts and Generate Hash Keys. Set this to "N" if deploying to Amazon RDS.
+Determines if BimlFlex uses the Ssis Custom Components to log RowCounts and Generate Hash Keys. Set this to `N` if deploying to Amazon RDS.
 
 Notes:
 

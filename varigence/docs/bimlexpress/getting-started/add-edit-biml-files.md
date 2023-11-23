@@ -10,16 +10,16 @@ To add a Biml file to the project, right-click on the project, or on the Data So
 
 Note: Right-clicking on the Miscellaneous folder will not open a context menu.
 
-![Adding a Biml File](../images/adding-a-biml-file.jpg "Adding a Biml File")
+![Adding a Biml File](/img/bimlexpress/adding-a-biml-file.jpg "Adding a Biml File")
 
 After adding a Biml file, double-click to open it in the BimlExpress code editor, which includes syntax highlighting for Biml and BimlScript code nuggets, autocomplete, and error highlighting.
 
-![Biml Code Editor](../images/code-editor-1.jpg "Biml Code Editor")
+![Biml Code Editor](/img/bimlexpress/code-editor-1.jpg "Biml Code Editor")
 
 Autocomplete can be opened by pressing **Ctrl+Space** while editing a Biml tag.
 
-![Biml Autocomplete](../images/code-editor-intellisense.jpg "Biml Autocomplete")
+![Biml Autocomplete](/img/bimlexpress/code-editor-intellisense.jpg "Biml Autocomplete")
 
 After adding Biml code to a file, it can be checked for errors by choosing the **Check Biml for Errors** option from the context menu.
 
-![Check Biml For Errors](../images/check-for-errors.jpg "Check Biml For Errors")
+![Check Biml For Errors](/img/bimlexpress/check-for-errors.jpg "Check Biml For Errors")

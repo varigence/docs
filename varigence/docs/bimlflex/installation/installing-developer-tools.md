@@ -16,7 +16,7 @@ Varigence provides a single consolidated installer for all BimlFlex components:
 
 * `BimlFlexDevSetup(_OptionalVersion).exe`
 
-The current installer is available through the [BimlFlex Release Notes](bimlflex-release-notes-overview) page
+The current installer is available through the [BimlFlex Release Notes](../release-notes) page
 
 ## BimlFlex Setup Installation Wizard
 

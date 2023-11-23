@@ -8,7 +8,7 @@ tags: [BimlFlex, Reference]
 
 The strings that BimlFlex interprets as key identifiers.
 
-For a source table with a column "ProductCategoryId" that links to a ProductCategory table, BimlFlex will create a Model Reference called "ProductCategory" as name
+For a source table with a column `ProductCategoryId` that links to a ProductCategory table, BimlFlex will create a Model Reference called `ProductCategory` as name
 
 Notes:
 

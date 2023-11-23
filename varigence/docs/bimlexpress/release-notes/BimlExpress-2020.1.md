@@ -23,7 +23,7 @@ Significant changes between BimlExpress 2019 R1 and BimlExpress 2020 R1
 * Fixed bug where `SsisDataTypeOverride` properties were not being used in column nodes.
 * Fixed bug where `ExportColumn Task` columns had an invalid reference id. 
 * Fixed casing issue on emission of VersionGUID for SSIS Projects
-* Fixed issue where `Flat File` definitions did not support the use of brace-wrapped shorthand as in the SSDT designer. For example: {CRLF} in place of /r/n
+* Fixed issue where `Flat File` definitions did not support the use of brace-wrapped shorthand as in the SSDT designer. For example: `CRLF` in place of /r/n
 * Fixed bug in `AdoNetConnection`, `AnalysisServices`, `ExcelConnection`, `OdbcConnection`, `OleDbConnection`, `OracleConnection` and `SqlServerPdwConnection` nodes where `RetainSameConnection` property was not being correctly emitted.
 * Added support for `Teradata ODBC` provider
 * Added root guard to XSD parsing to prevent root_ID column from being added to simple `XML Source` column collections.

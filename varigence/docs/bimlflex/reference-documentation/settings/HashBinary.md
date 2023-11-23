@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Hash Binary
 
-Determines if the generated [hash value](bimlflex-concepts-hashing) is stored as a binary representation or as a string representation.
+Determines if the generated [hash value](../../concepts/hashing) is stored as a binary representation or as a string representation.
 
 Notes:
 

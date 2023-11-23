@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Columns
 
-The BimlFlex [**Column**](xref:bimlflex-column-editor) concept contains the components of an [**Column**](xref:bimlflex-object-editor). Columns define the detailed information to transform and map data from source to target.<br/><br/>Columns within BimlFlex are displayed in a hierarchical tree view on the left side navigation menu. The total number of Columns within a Project will be displayed next to the Project name in parentheses. The total number of Columns within an individual Object will similarly be displayed next to the Object name. 
-	<br/><br/>Selecting a Project will display a secondary list of all Columns within, organized by Object.
+The BimlFlex [**Column**](xref:bimlflex-column-editor) concept contains the components of an [**Column**](xref:bimlflex-object-editor). Columns define the detailed information to transform and map data from source to target.<br><br>Columns within BimlFlex are displayed in a hierarchical tree view on the left side navigation menu. The total number of Columns within a Project will be displayed next to the Project name in parentheses. The total number of Columns within an individual Object will similarly be displayed next to the Object name. 
+	<br><br>Selecting a Project will display a secondary list of all Columns within, organized by Object.
 The user may navigate to any Column by selecting it from the displayed list.
 
 ## Overview
@@ -17,10 +17,10 @@ The user may navigate to any Column by selecting it from the displayed list.
 | <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Name | Name of the Column within the Object. For any column other than the source we recommend using CamelCase. For ORACLE we recommend UPPERCASE separated by underscores.|
-|Length | This value specifies the length parameter for the Column data type. Set to -1 to indicate MAX length.<br/><br/>This property applies only to column types that support a length specification, such as String and Binary types.|
+|Length | This value specifies the length parameter for the Column data type. Set to -1 to indicate MAX length.<br><br>This property applies only to column types that support a length specification, such as String and Binary types.|
 |Precision | This value specifies the precision parameter for the Column data type. Precision is the number of digits stored for a numeric value. This property applies only to column types that support precision, such as Decimal.|
 |Scale | This value specifies the scale parameter for the Column data type. Scale is the number of digits to the right of the decimal point in a numeric value. This property applies only to column types that support precision, such as Decimal.|
-|Ordinal | This value specifies the length parameter for the column type associated with this Column. Set to -1 to indicate MAX length.<br/><br/>This property applies only to column types that support a length specification, such as String and Binary types.|
+|Ordinal | This value specifies the length parameter for the column type associated with this Column. Set to -1 to indicate MAX length.<br><br>This property applies only to column types that support a length specification, such as String and Binary types.|
 |Primary Key | When enabled, this Column is considered to be part of the Primary Key of the Object. The Primary Key uniquely identifies each record in a database table. Primary keys must contain unique values. A primary key column cannot contain NULL values.|
 |Integration Key | When enabled, this Column is considered to be the Integration Key of the Object. Note that the BimlFlex framework allows only one Integration Key per Object. If the Object has multiple Columns that makes up the Integration Key a derived concatenated Column should be derived.|
 |IsSourceKey | When enabled, this Column is considered to be part of the Primary Key of the Object. This is generally defined if the Object has multiple Columns that define the Integration Key or a derived concatenated Integration Key has been defined.|

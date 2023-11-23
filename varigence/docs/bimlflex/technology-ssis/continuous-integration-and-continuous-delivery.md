@@ -5,12 +5,14 @@ description: Documentation providing consideration and approaches to continue in
 tags: [BimlFlex, Walkthrough]
 ---
 # Continuous Integration and Continuous Delivery
-:::note
 
 
-> The following guide is from tailored specifically for SSIS.  
-> For a details and considerations on implementing CI/CD in ADF see the [BimlFlex CI/CD for ADF](bimlflex-adf-continuous-integration-and-continuous-delivery).
-> A generic platform-independent overview of CI/CD concepts is available in the more generic [CI/CD section](bimlflex-continuous-integration-and-delivery).
+
+:::note
+
+The following guide is from tailored specifically for SSIS.  
+For a details and considerations on implementing CI/CD in ADF see the [BimlFlex CI/CD for ADF](../technology-adf/continuous-integration-and-continuous-delivery).
+A generic platform-independent overview of CI/CD concepts is available in the more generic [CI/CD section](../build-and-deployment/continuous-integration-and-delivery).
 
 :::
 
@@ -54,8 +56,14 @@ Before the compilation it is sometimes necessary to consider changes and migrati
 
 The Dacpac build process uses the MSBuild.exe file to build the Dacpac file from the .sqlproj project file
 
->[!NOTE]
+
+
+:::note
+
 >Note that the default destination folder under the `output` folder is `SSDT\<CustomerUID>\<VersionName>\<DatabaseName>`. The build script needs to reference the correct project file for each database. The SSDT output folder is configurable in the settings.
+
+:::
+
 
 The sample script loops through all databases in the defined list and builds them all.
 

@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Hash Null Value Replacement
 
-The Null value replacement to be used when [hashing](bimlflex-concepts-hashing).
+The Null value replacement to be used when [hashing](../../concepts/hashing).
 
 Notes:
 

@@ -8,7 +8,7 @@ tags: [BimlFlex, Conceptual]
 
 Delivering a Dimensional Model, one or more Data Marts, that is created 'on top off' a Data Vault model in BimlFlex is not fundamentally different compared to doing this on a different underlying model.
 
-BimlFlex supports [Point-In-Time](bimlflex-data-vault-concept-pit) (PIT) and [Bridge](bimlflex-data-vault-concept-bridge) constructs that assist in managing (join) performance and complexities, but in terms of defining the Dimensional Model itself the process is as per the chapter on [delivering Data Marts](bimlflex-data-delivery-index).
+BimlFlex supports [Point-In-Time](./data-vault-implementation-pit) (PIT) and [Bridge](./data-vault-implementation-bridge) constructs that assist in managing (join) performance and complexities, but in terms of defining the Dimensional Model itself the process is as per the chapter on [delivering Data Marts](../delivering-data-marts).
 
 ## Combining Data Vault Objects for Delivery
 
@@ -18,4 +18,4 @@ The proxy object is recommended to be given a name that distinguishes it from th
 
 The source object in this case is defined as a view or procedure that contains the joins and transformations to define the intended Dimension- or Fact object. In this view, the various Data Vault objects including PIT and Bridge objects can be used.
 
-The standard Dimensional Model logic can be applied to manage the resulting data changes (via the view) as to how they are historized. Please refer to the [Dimensional Modelling sections](bimlflex-data-delivery-index) for more information about this.
+The standard Dimensional Model logic can be applied to manage the resulting data changes (via the view) as to how they are historized. Please refer to the [Dimensional Modelling sections](../delivering-data-marts) for more information about this.

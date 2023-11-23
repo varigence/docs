@@ -20,7 +20,7 @@ The BimlFlex Menu provides quick navigation to the available editors and modelin
 
 If the menu is hidden, for example due to the size of the BimlFlex window or screen resolution, you can use the **Collapse** <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> and **Expand** <img class="icon-inline" src="images/svg-icons/expanded.svg"/> icons annotated below to open or close the menu.
 
-![BimlFlex Menu](images/bfx-navigation-menu-01.png "BimlFlex Menu")
+![BimlFlex Menu](/img/bimlflex/bfx-navigation-menu-01.png "BimlFlex Menu")
 
 ## Editor Layout  
 
@@ -28,7 +28,7 @@ The BimlFlex metadata editors aim to provide a streamlined and intuitive way to 
 
 What follows is a quick tour of the various editor elements and how they function. For detailed information of the available the features reference the relevant documentation for the appropriate editor.
 
-![BimlFlex Editor](images/bfx-metadata-editor-layout.png "BimlFlex Editor")
+![BimlFlex Editor](/img/bimlflex/bfx-metadata-editor-layout.png "BimlFlex Editor")
 
 ### Editor Action Buttons  
 
@@ -36,7 +36,7 @@ The **Editor Action Buttons** list the actions available within the currently se
 
 For example, if tabs are available,  different button (such as 'add') will be available than if a specific metadata element is selected.
 
-The Editor Action Buttons are always located on the top of the screen, just under the [BimlFlex Toolbar](xref:bimlflex-tour#bimlflex-toolbar).
+The Editor Action Buttons are always located on the top of the screen, just under the [BimlFlex Toolbar](./bimlflex-tour#bimlflex-toolbar).
 
 | Action | Overview |
 | ----------------- | ---------- |
@@ -48,26 +48,44 @@ The Editor Action Buttons are always located on the top of the screen, just unde
 | Excluded | This will determine if a selected item and its metadata will be excluded along with the rest of the solution. The item can still be seen by users who select the 'show excluded' option in the settings.
 | Deleted | This slide toggle can flag a selected item to be considered deleted from the model, however the metadata is not physically removed from the BimlFlex database. The item can still be seen by users who select the 'show excluded' option in the settings.
 
->[!NOTE]
-> In some cases, action buttons will appear greyed out. This indicates these are disabled for the current context.
+
+
+:::note
+
+In some cases, action buttons will appear greyed out. This indicates these are disabled for the current context.
+
+:::
+
 
 ### Treeview
 
-The [**Treeview**](bimlflex-treeview) provides an overview of existing components relative to the selected editor, and quick access to common features for managing the selected component.
+The [**Treeview**](./treeview) provides an overview of existing components relative to the selected editor, and quick access to common features for managing the selected component.
 
 When an editor is opened through the BimlFlex Menu, the default action is to show all components for the selected editor without any filtering applied.
 
->[!TIP]
-> For additional information on the [**Treeview**](bimlflex-treeview), including the **Search** and **Filtering** options, please refer to the [**Treeview Documentation**](bimlflex-treeview).
+
+
+:::tip
+
+For additional information on the [**Treeview**](./treeview), including the **Search** and **Filtering** options, please refer to the [**Treeview Documentation**](./treeview).
+
+:::
+
 
 ### Editor Tabs
 
 If the selected editor supports them, tabs are used to switch between managing of the selected parent component (with the name of the active editor) and managing of the associated child components.
 
->[!TIP]
-> The first tab is considered the 'main' tab for an editor, and has the name of the active selected editor. For example 'Connection', 'Project' or 'Batch'.
 
-![Tab List](images/bfx-tabs.png "Tab List")
+
+:::tip
+
+The first tab is considered the 'main' tab for an editor, and has the name of the active selected editor. For example 'Connection', 'Project' or 'Batch'.
+
+:::
+
+
+![Tab List](/img/bimlflex/bfx-tabs.png "Tab List")
 
 ## Current Editor Content
 
@@ -83,7 +101,7 @@ A Field List provides a series of context sensitive fields that can be used to e
 
 Additionally, BimlFlex automatically applies field-level validations to prevent misconfiguration of metadata.
 
-![Fields Content](images/bfx-fields-content.png "Fields Content")
+![Fields Content](/img/bimlflex/bfx-fields-content.png "Fields Content")
 
 #### String Field
 
@@ -107,7 +125,7 @@ The long text string field can be resized by dragging the adjustment corner in t
 
 The editor dialog is accessed by clicking the <img class="icon-inline" src="images/svg-icons/edit.svg"/> icon when the long text string field is in focus.
 
-![Editor Dialog Button](images/dialog-editor-button.64566.png "Editor Dialog Button")
+![Editor Dialog Button](/img/bimlflex/dialog-editor-button.64566.png "Editor Dialog Button")
 
 The editor dialog will open with the text from the long text string field. The editor dialog features include:  
 
@@ -116,7 +134,7 @@ The editor dialog will open with the text from the long text string field. The e
 * Scroll preview
 * Line numbers
 
-![Editor Dialog](images/dialog-editor.64566.png "Editor Dialog")
+![Editor Dialog](/img/bimlflex/dialog-editor.64566.png "Editor Dialog")
 
 When changes are complete, click the '**Ok**' button to keep the changes that have been made. Click '**Cancel**' to discard the changes that have been made and close the editor.
 
@@ -128,7 +146,7 @@ Existing items can be edited by selecting a row and then using the <img class="i
 
 #### Table Content
 
-![Table Content](images/bfx-biml-tour-table-record.png "Table Content")
+![Table Content](/img/bimlflex/bfx-biml-tour-table-record.png "Table Content")
 
 ### Multiple Views  
 
@@ -137,7 +155,7 @@ The active view is highlighted and can be changed by clicking another available 
 The alternate views only change what properties of an entity are visible/editable and will not filter, remove or resort the underlining list of entities.
 Values can be edited by double-clicking the desired property.
 
-![Multiple Views Content](images/bfx-multiple-views-content.png "Multiple Views Content")
+![Multiple Views Content](/img/bimlflex/bfx-multiple-views-content.png "Multiple Views Content")
 
 ### Sorting and Filtering
 
@@ -145,11 +163,13 @@ All grid views support sorting and filtering. Sorting can be done by clicking on
 
 Hovering over the header will show the <img class="icon-inline" src="images/svg-icons/filter-clear.svg"/> **Filter** button. Clicking this opens the filter dialog.
 
-![Filter Dialog](images/bfx-filter-dialog.png "Filter Dialog")
-:::note
+![Filter Dialog](/img/bimlflex/bfx-filter-dialog.png "Filter Dialog")
 
 
-> All of the columns support the ability for filters but the button is hidden by default. To show the button mouse over the field you would like to filter.
+
+:::note
+
+All of the columns support the ability for filters but the button is hidden by default. To show the button mouse over the field you would like to filter.
 
 :::
 
@@ -167,4 +187,4 @@ Selecting the checkbox at the top of the list will select/deselect all items. Ha
 
 With multiple items selected, users may select `Integration Key` from the **Objects** Action Bar to enter the Generate Derived Integration Key dialog menu with the desired items already selected.
 
-![Navigational Transitions](images/bfx-navigation-ui.png "Navigational Transitions")
+![Navigational Transitions](/img/bimlflex/bfx-navigation-ui.png "Navigational Transitions")

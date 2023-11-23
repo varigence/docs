@@ -16,7 +16,7 @@ The following installers are available:
 * **BimlFlex Runtime Installation**  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
-The current installer is available through the [BimlFlex Release Notes](bimlflex-release-notes-overview)
+The current installer is available through the [BimlFlex Release Notes](../release-notes)
 
 The BimlFlex Developer installation includes all components used in the BimlFlex framework:
 
@@ -25,7 +25,7 @@ The BimlFlex Developer installation includes all components used in the BimlFlex
 * BimlFlex Excel-based metadata editor
 * SSIS Custom Components for SQL Server
 * SSIS Custom Components for Snowflake
-* Installation of new, or upgrades of existing, [BimlFlex](bimlflex-setup-metadata-database-installation) and [BimlCatalog](bimlflex-setup-bimlcatalog-database-installation) databases
+* Installation of new, or upgrades of existing, [BimlFlex](./installing-metadata-database) and [BimlCatalog](./installing-bimlcatalog-database) databases
 
 The first time BimlStudio or the BimlFlex Excel Add-in file is opened from a BimlFlex project it will ask for a license key. Add a BimlFlex-enabled license key to enable the application. The key is validated online and once validation completes it is possible to run the applications. It is also possible to add the license key through the installation program.
 
@@ -35,13 +35,15 @@ The following detailed steps walk through the installation of BimlFlex
 
 ### Download the BimlFlex installer
 
-The current installer is available through the [BimlFlex Release Notes](bimlflex-release-notes-overview)
+The current installer is available through the [BimlFlex Release Notes](../release-notes)
 
 ### Check bitness of Microsoft Excel
-:::note
 
 
-> Microsoft Excel is a prerequisite for installing and using the BimlFlex Excel Add-in Metadata Editor.
+
+:::note
+
+Microsoft Excel is a prerequisite for installing and using the BimlFlex Excel Add-in Metadata Editor.
 
 :::
 
@@ -51,10 +53,12 @@ The Excel-based metadata editor is a plugin for Microsoft Excel. This tool adds 
 When installing it is important to match the Excel bitness version. Verify the Excel bitness version before starting the installation and only install the matching version of BimlFlex.
 
 Check the bitness of the local installation of Microsoft Excel using the [Microsoft guidelines available here](https://support.office.com/en-us/article/About-Office-What-version-of-Office-am-I-using-932788B8-A3CE-44BF-BB09-E334518B8B19).
-:::warning
 
 
-> Install only the bitness version that matches the installed Excel version.
+
+:::warning
+
+Install only the bitness version that matches the installed Excel version.
 
 :::
 
@@ -63,7 +67,7 @@ Check the bitness of the local installation of Microsoft Excel using the [Micros
 
 Run the installer to install the applications.
 
-![Installing BimlFlex](images/bimlflex-ss-v5-install-bimlflex-2020.png)
+![Installing BimlFlex](/img/bimlflex/bimlflex-ss-v5-install-bimlflex-2020.png)
 
 #### Installer steps
 
@@ -93,4 +97,4 @@ Run the installer to install the applications.
 
 Once the installation concludes successfully, click finish to end the installer.
 
-Refer to [Getting Started with BimlFlex](bimlflex-getting-started) to get started with BimlFlex
+Refer to [Getting Started with BimlFlex](../getting-started) to get started with BimlFlex

@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Create Dummy File
 
-Should the Staging process copy a "placeholder.dummy" file to accommodate the PolyBase limitation when no files exist.
+Should the Staging process copy a `placeholder.dummy` file to accommodate the PolyBase limitation when no files exist.
 
 Notes:
 

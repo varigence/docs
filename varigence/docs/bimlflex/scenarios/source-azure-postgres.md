@@ -13,18 +13,18 @@ For the purpose of this example, we use an Azure PostgreSQL database server that
 
 ## Setup Connection in BimlFlex App
 
-1. Enter the [`Connection Name`](bimlflex-connection-editor), for this example we will use `APGSQL`.
+1. Enter the [`Connection Name`](../metadata-editors/connection-editor), for this example we will use `APGSQL`.
 2. Select `Source System` for the Integration Stage.
 3. Select `OlEDB` for the Connection Type.
 4. Select `PostgreSQL` for the System Type.
 
-![Connection Screen](images/azurepostgres/connection.png)
+![Connection Screen](/img/bimlflex/connection.png)
 
 ## Connection String Editor
 
 The next part is to configure the connection string. This is used to connect to the Azure Postgres database for importing your metadata. If you are using an Integration Stage that emits SSIS assets, this connection string is also used in those source components.
 
-![Connection String](images/azurepostgres/connectionstring.png)
+![Connection String](/img/bimlflex/connectionstring.png)
 
 The following properties of the Connection String are configurable:
 
@@ -50,11 +50,11 @@ Once taken to the new screen, click `[Connect To Database]`. If you have a worki
 
 For this example, we are only interested in three tables from the Person schema (Address, Person, and EmailAddress) and one table from the HumanResources schema (Employee). Our treeview would look like this:
 
-![Connection String](images/azurepostgres/metadata-import.png)
+![Connection String](/img/bimlflex/metadata-import.png)
 
 Now click `[Import Metadata]` and wait for the success message. You can now go to your connection and see your imported metadata.
 
-![Connection String](images/azurepostgres/oledb-example.png)
+![Connection String](/img/bimlflex/oledb-example.png)
  
 You can now use this metadata similar to any other data source in BimlFlex.
 
@@ -68,7 +68,7 @@ In this example we are using the [Intellisoft OLE DB Provider for PostgreSQL](ht
 
  In the top right corner of the Connection editor, select the `[Cloud]` toggle button to enable the Linked Service connection editor:  
 
-![Connection String](images/azurepostgres/ADF-projects.png)
+![Connection String](/img/bimlflex/ADF-projects.png)
 
 **Linked Service Type** - Choose between an AzurePostgreSQL linked service or a PostgreSQL linked service. This will be the type of ADF linked service that will be emitted.  
 **Connection String** - You have the option of providing an Azure Key Vault reference that contains your connection string, or manually entering the properties that will be used to create the ADF connection string.

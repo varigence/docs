@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Enable Staging
 
-Determines if the Azure Data Factory Copy Activity uses Staging. Use this together with Copy Method "PolyBase" to load data to PolyBase supported targets.
+Determines if the Azure Data Factory Copy Activity uses Staging. Use this together with Copy Method `PolyBase` to load data to PolyBase supported targets.
 
 Notes:
 

@@ -56,7 +56,7 @@ This is the content of an example source extract with the property values stripp
 
 | Property Name       | Project Setting | Description |
 | ------------------- | --------------- | ----------- |
-| {TargetVersion}     | SQL Server      | This is in BimlStudio project settings and specifies the target version of SQL Server to use |
-| {ProjectOutputPath} | Output Path     | This is the BimlStudio project setting for output path |
-| {ProjectName}       | Project Name    | This is the name of the project the user wishes to deploy |
-| {SSISFolder}        | SSIS Folder     | This folder MUST exist in the SSIS Catalog prior to deployment. This is configured in your BimlFlex settings |
+| `TargetVersion`     | SQL Server      | This is in BimlStudio project settings and specifies the target version of SQL Server to use |
+| `ProjectOutputPath` | Output Path     | This is the BimlStudio project setting for output path |
+| `ProjectName`       | Project Name    | This is the name of the project the user wishes to deploy |
+| `SSISFolder`        | SSIS Folder     | This folder MUST exist in the SSIS Catalog prior to deployment. This is configured in your BimlFlex settings |

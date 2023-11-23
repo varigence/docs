@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Enable Logging
 
-Enable to use logging in the Azure Data Factory Copy Command.
+Enable to use logging in the Azure Data Factory Copy Activity.
 
 Notes:
 

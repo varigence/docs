@@ -22,7 +22,7 @@ BimlFlex provides 2 main ways of hashing:
 
 ## Hash Keys
 
-* A [hash](#hash-algorithm) of the [Integration Key](bimlflex-data-vault-integration-keys-and-relationships).
+* A [hash](#hash-algorithm) of the [Integration Key](./data-vault-concept-integration-keys).
 * Not a compulsory field for `Data Vault` however currently compulsory in BimlFlex.
   We will support a no hash implementation option in all our ELT (SQL) templates.
 
@@ -35,12 +35,12 @@ Implement other available options by changing the *HASH ALGORITHM* setting to on
   * `SHA2_256`
   * `SHA2_512`
 * Previous SSIS versions of BimlFlex created a different hash for Unicode characters.
-  The [*USE SQL COMPATIBLE HASH*](bimlflex-app-reference-documentation-settings-index) and [*USE SQL COMPATIBLE ROW HASH*](bimlflex-app-reference-documentation-settings-index) settings provides for backward compatibility.
+  The [*USE SQL COMPATIBLE HASH*](../reference-documentation/reference-documentation-settings-index) and [*USE SQL COMPATIBLE ROW HASH*](../reference-documentation/reference-documentation-settings-index) settings provides for backward compatibility.
   They should be set to `Y` for new implementations.
-* Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the [*HASH BINARY*](bimlflex-app-reference-documentation-settings-index) setting.
+* Support for `binary` and `text` hash representation depending on your requirements and can be configured by changing the [*HASH BINARY*](../reference-documentation/reference-documentation-settings-index) setting.
   It is recommended to use binary hashing.
   With binary hashing the hash value is stored in its native binary form, requiring half the storage space compared to the hexadecimal string representation.
-* Performance setting: [*ADD ROW HASH KEY INDEX*](bimlflex-app-reference-documentation-settings-index) will add an index to the staging table on the `RowHashKey` to optimize the Hub ETL SSIS packages.
+* Performance setting: [*ADD ROW HASH KEY INDEX*](../reference-documentation/reference-documentation-settings-index) will add an index to the staging table on the `RowHashKey` to optimize the Hub ETL SSIS packages.
 
 ### Hash Collision
 

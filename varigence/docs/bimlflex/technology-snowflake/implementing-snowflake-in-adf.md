@@ -13,7 +13,7 @@ BimlFlex has established an intuitive process to implement Snowflake using Azure
 
 ## Architecture
 
-![Azure Data Factory Automation Architecture](../concepts/images/bimlflex-diagram-adf-automation.png "Azure Data Factory Automation Architecture")
+![Azure Data Factory Automation Architecture](/img/bimlflex/bimlflex-diagram-adf-automation.png "Azure Data Factory Automation Architecture")
 
 Regardless of source data, this example will utilize ADF copy commands to ingest and land (stage) the source data in Azure Blob Storage, as a parquet file.
 
@@ -22,10 +22,12 @@ BimlFlex will provide logic to map the resulting files so that the generated Sno
 With the source data being held in a Snowflake database, again using Azure Data Factory and function bridge, the data can then effectively be processed into Data Marts or Data Vaults.
 
 ### Implement Snowflake using Azure Data Factory
-:::note
 
 
-> The example is intended to follow the guide for [Creating a Landing Area](xref:bimlflex-adf-landing-area#configure-a-landing-area-by-example).
+
+:::note
+
+The example is intended to follow the guide for [Creating a Landing Area](../technology-adf/landing-area#configure-a-landing-area-by-example).
 
 :::
 
@@ -33,17 +35,19 @@ With the source data being held in a Snowflake database, again using Azure Data 
 The following video walks through the common steps and considerations for deploying an Azure Data Factory for Snowflake.
 
 ![BimlFlex - Implement Snowflake using Azure Data Factory](https://www.youtube.com/watch?v=COGIHSjAdSg?rel=0&autoplay=0 "BimlFlex - Implement Snowflake using Azure Data Factory")
-:::note
 
 
-> Additional BimlFlex documentation regarding the implementation of Snowflake in Azure Data Factory can be referenced [here](bimlflex-snowflake-configuration-overview).
+
+:::note
+
+Additional BimlFlex documentation regarding the implementation of Snowflake in Azure Data Factory can be referenced [here](./snowflake-configuration).
 
 :::
 
 
 ## How to Configure Snowflake in BimlFlex
 
-Detailed prerequisites on working with Snowflake and BimlFlex are provided in the [Snowflake configuration overview](bimlflex-snowflake-configuration-overview) section. The below information assumes this configuration has been completed.
+Detailed prerequisites on working with Snowflake and BimlFlex are provided in the [Snowflake configuration overview](./snowflake-configuration) section. The below information assumes this configuration has been completed.
 
 ### Snowflake Samples
 
@@ -51,14 +55,16 @@ BimlFlex provides a number of metadata samples, including samples that have a sp
 
 Loading the sample metadata from within BimlFlex is as simple as selecting the snapshot from the *Load Sample Metadata* dropdown menu on the BimlFlex **Dashboard**.
 
-![Snowflake Data Vault ADF Selection](../concepts/images/snowflake-data-vault-adf.png "Snowflake Data Vault ADF Selection")
-:::note
+![Snowflake Data Vault ADF Selection](/img/bimlflex/snowflake-data-vault-adf.png "Snowflake Data Vault ADF Selection")
 
+
+
+:::note
 
 >More information on the specific creation of Data Marts and Data Vaults:
->
->* [Data Vault Templates](bimlflex-data-vault-index)
->* [Data Mart Templates](bimlflex-data-delivery-index)
+
+>* [Data Vault Templates](../delivering-data-vault)
+>* [Data Mart Templates](../delivering-data-marts)
 
 :::
 
@@ -72,29 +78,31 @@ The connection settings remain standard as per previously uploaded BimlFlex feat
 * *Source System* is cloud enabled
 * *Staging / Landing Environment* is configured for Blob Storage configured with ADF linked services
 
-![Standard Connection Settings](../concepts/images/connection-settings-1.png "Standard Connection Settings 1")
+![Standard Connection Settings](/img/bimlflex/connection-settings-1.png "Standard Connection Settings 1")
 
 * *System Type* is configured for Snowflake Data Warehouse
 * *Linked Service Type* is configured for Snowflake
 
-![Standard Connection Settings 2](../concepts/images/connection-settings-2.png "Standard Connection Settings 2")
-:::note
+![Standard Connection Settings 2](/img/bimlflex/connection-settings-2.png "Standard Connection Settings 2")
 
 
-> Within Azure Data Factory the "Linked Service Type" for Snowflake does not actually exist. However, when this option is selected, BimlFlex automatically knows to use the function bridge specifically created to load data into Snowflake
+
+:::note
+
+Within Azure Data Factory the "Linked Service Type" for Snowflake does not actually exist. However, when this option is selected, BimlFlex automatically knows to use the function bridge specifically created to load data into Snowflake
 
 :::
 
 
 * *Integration Template* is configured for ADF Source -> Target
 
-![Standard Connection Settings 3](../concepts/images/connection-settings-3.png "Standard Connection Settings 3")
+![Standard Connection Settings 3](/img/bimlflex/connection-settings-3.png "Standard Connection Settings 3")
 
 The simplicity of selecting settings, paired with the intelligence of BimlFlex to execute the appropriate functions, greatly streamlines the process of converging any solution into Snowflake.
 
 Prior to building out a solution BimlFlex also allows the opportunity to configure batches, assign batches to different compute warehouses, or adjust scaling up or down, from within the BimlFlex **Batches** menu.
 
-![Configuring Batches Prior to Solution](../concepts/images/batches-menu.png "Configuring Batches Prior to Solution")
+![Configuring Batches Prior to Solution](/img/bimlflex/batches-menu.png "Configuring Batches Prior to Solution")
 
 ## Output
 
@@ -102,11 +110,11 @@ BimlFlex will provide all necessary Snowflake code, such as table, queries, and 
 
 Depending on the selected **Integration Template**, BimlFlex will also generate supporting orchestration artifacts in either SSIS or ADF. But, because the data logistics themselves are running fully on Snowflake using Stored Procedures, it is possible to use third party orchestration approaches or tools to direct the overall process.
 
-![Snowflake Source Code](../concepts/images/snowflake-source-code.png "Snowflake Source Code")
+![Snowflake Source Code](/img/bimlflex/snowflake-source-code.png "Snowflake Source Code")
 
 The output has been configured for Snowflake, deployed to Azure Data Factory, and visualized as such:  
 
-![Snowflake Solution Output](../concepts/images/snowflake-solution-output.png "Snowflake Solution Output")
+![Snowflake Solution Output](/img/bimlflex/snowflake-solution-output.png "Snowflake Solution Output")
 
 Having now generated a solution, which may or may not consist of multiple compute warehouses targeting different batches, the following options may be adjusted:
 
@@ -114,16 +122,28 @@ Having now generated a solution, which may or may not consist of multiple comput
 * View copy commands including completions or errors.
 * Suspend a solution
 
-![Completions and Errors in Solution](../concepts/images/completions-and-errors-output.png "Completions and Errors in ADF")
+![Completions and Errors in Solution](/img/bimlflex/completions-and-errors-output.png "Completions and Errors in ADF")
 
->[!NOTE]
-> Any files in error will be moved to an error folder or archived. On the next run those files will have already been processed and moved to an appropriate folder.
 
->[!TIP]
+
+:::note
+
+Any files in error will be moved to an error folder or archived. On the next run those files will have already been processed and moved to an appropriate folder.
+
+:::
+
+
+
+
+:::tip
+
 >For additional videos relating to BimlFlex and Snowflake integration, see:
->
+
 >* [Configure Snowflake Project](https://www.youtube.com/watch?v=yPWKs65JSFo&t=1s)
 >* [Snowflake Source to Stage](https://www.youtube.com/watch?v=9y5sGkPrfWU)
 >* [Snowflake Parallel Loading with Integration Keys](https://www.youtube.com/watch?v=_bQ4lact0Tw)
->
->For additional documentation regarding Snowflake configuration please refer to the [Snowflake Configuration Overview](bimlflex-snowflake-configuration-overview).
+
+>For additional documentation regarding Snowflake configuration please refer to the [Snowflake Configuration Overview](./snowflake-configuration).
+
+:::
+

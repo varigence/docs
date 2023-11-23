@@ -12,8 +12,9 @@ BimlFlex **Configurations** are used to apply and drive default behavior across 
 At a high level, **Configuration** values control where/when they get applied and how they are calculated.
 
 > [!TIP]
+
 > For additional details on managing **Configuration**, **Attributes** and **Configuration Overrides** refer to the below guides:
->
+
 > * [Configurations](xref:bimlflex-configuration-editor)
 > * [BimlFlex Configurations](xref:bimlflex-metadata-configurations)
 > * [Attributes](xref:bimlflex-attribute-editor)
@@ -73,7 +74,7 @@ These can be adjusted to fit an organization's specific data standards.
 | Configuration      | SQL Source Expression               | SSIS Dataflow Expression          |
 | ------------------ | ----------------------------------- | --------------------------------- |
 | RowStartDate       | GETDATE()                           | (DT_DBTIMESTAMP2, 7)GETDATE()     |
-| RowEndDate         | CONVERT(DATETIME2(7), '9999-12-31') | (DT_DBTIMESTAMP2, 7)"9999-12-31") |
+| RowEndDate         | CONVERT(DATETIME2(7), '9999-12-31') | (DT_DBTIMESTAMP2, 7)"9999-12-31"  |
 | RowIsCurrent       | CONVERT(BIT, 1)                     | true                              |
 | RowIsInferred `*`  | CONVERT(BIT, 0)                     | false                             |
 | RowHashType1 `**`  |                                     | [vck@@this1]                      |
@@ -114,7 +115,7 @@ These can be enabled and disabled for each data architecture concept.
 
 ### Enabling A Configuration
 
-In order for a **Configuration** to be applied the associated *{Concept} ATTRIBUTE* will need to be configured.
+In order for a **Configuration** to be applied the associated *`Concept` ATTRIBUTE* will need to be configured.
 For the Data Mart this is either the *DIM ATTRIBUTE* or *FACT ATTRIBUTE* fields for a Dimension or Fact respectively.
 
 #### [Example Image](#tab/configuration-example-image)
@@ -345,10 +346,10 @@ Create a [Standard Override Configuration](#overriding-configurations) for *SQL 
 | Field Name      | Value                            | Example                          |
 | --------------- | -------------------------------- | -------------------------------- |
 | Attribute Type  | Object                           | Object                           |
-| Connection      | {DimensionConnection}            | BFX_DM                           |
-| Object          | {DimensionName}                  | dim.Type2_History                |
+| Connection      | \{DimensionConnection\}           | BFX_DM                           |
+| Object          | \{DimensionName\}                  | dim.Type2_History                |
 | Attribute       | RowStartDate_SqlSourceExpression | RowStartDate_SqlSourceExpression |
-| Attribute Value | {QualifiedColumnName}            | [BeginDate]                      |
+| Attribute Value | \{QualifiedColumnName\}            | [BeginDate]                      |
 
 > [!NOTE]
 > `{ ... }` indicate a variable value.
@@ -370,8 +371,8 @@ Once a column is available in the Source, Create a [Standard Override Configurat
 | Field Name      | Value                     | Example                   |
 | --------------- | ------------------------- | ------------------------- |
 | Attribute Type  | Object                    | Object                    |
-| Connection      | {DimensionConnection}     | BFX_DM                    |
-| Object          | {DimensionName}           | dim.Type2_History         |
+| Connection      | \{DimensionConnection\}     | BFX_DM                    |
+| Object          | \{DimensionName\}           | dim.Type2_History         |
 | Attribute       | RowStartDate_DimAttribute | RowStartDate_DimAttribute |
 | Attribute Value | Source                    | Source                    |
 

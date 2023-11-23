@@ -22,7 +22,7 @@ To view deleted or excluded entities:
 2. Enable *Show Deleted* and/or *Show Excluded*
 3. Click **Apply**
 
-![Enabled Deleted Entities](images/bimlflex-app-options-show-deleted.png "Enabled Deleted Entities")
+![Enabled Deleted Entities](/img/bimlflex/bimlflex-app-options-show-deleted.png "Enabled Deleted Entities")
 
 This will allow deleted and/or excluded entities to appear. Please ensure that the option is disabled once the deleted/excluded member has been restored.
 
@@ -74,12 +74,12 @@ It includes a set of test scripts for testing the Staging and Persistent Staging
     string IntegrationStage;
     string selectstatement;
 #>
--- SELECT TOP `<#=limit#>` per table for STG
+-- SELECT TOP <#=limit#> per table for STG
 
 <#
     foreach (var table in  RootNode.Tables) { 
         if (table.GetTag("IntegrationStage") == "STG") {#>
-            USE `<#=table.PackageSubpath #>`
+            USE <#=table.PackageSubpath #>
             GO
             <#break;
  }} #>
@@ -89,15 +89,15 @@ It includes a set of test scripts for testing the Staging and Persistent Staging
         if (table.GetTag("IntegrationStage") == "STG") {
             tablename = table.Schema + "." + table.Name;
 #>
-SELECT TOP `<#=limit#>` * FROM `<#=tablename#>`
-`<# }} #>`
+SELECT TOP <#=limit#> * FROM <#=tablename#>
+<# }} #>
 
--- SELECT TOP `<#=limit#>` per table for PSA
+-- SELECT TOP <#=limit#> per table for PSA
 
 <# 
     foreach (var table in  RootNode.Tables) {
         if (table.GetTag("IntegrationStage") == "PSA") {#>
-            USE `<#=table.PackageSubpath #>`
+            USE <#=table.PackageSubpath #>
             GO
             <#break;
  }} #>
@@ -107,15 +107,15 @@ foreach (var table in  RootNode.Tables) {
     if (table.GetTag("IntegrationStage") == "PSA") {
             tablename = table.Schema + "." + table.Name;
 #>
-SELECT TOP `<#=limit#>` * FROM `<#=tablename#>`
-`<# }} #>`
+SELECT TOP <#=limit#> * FROM <#=tablename#>
+<# }} #>
 
 -- truncate all PSA tables
 /*
 <# 
     foreach (var table in  RootNode.Tables) { 
         if (table.GetTag("IntegrationStage") == "PSA") {#>
-            USE `<#=table.PackageSubpath #>`
+            USE <#=table.PackageSubpath #>
             GO
             <#break;
  }} #>
@@ -125,15 +125,15 @@ foreach (var table in  RootNode.Tables) {
     if (table.GetTag("IntegrationStage") == "PSA") {
             tablename = table.Schema + "." + table.Name;
 #>
-TRUNCATE TABLE `<#=tablename#>`
-`<#}}#>`
+TRUNCATE TABLE <#=tablename#>
+<#}}#>
 */
 
 -- Rowcounts per database per table
 <# 
     foreach (var table in  RootNode.Tables) {
         if (table.GetTag("IntegrationStage") == "STG") {#>
-            USE `<#=table.PackageSubpath #>`
+            USE <#=table.PackageSubpath #>
             GO
             <#break;
  }} #>
@@ -145,13 +145,13 @@ foreach (var table in  RootNode.Tables) {
             tablename = table.Schema + "." + table.Name;
             selectstatement += "SELECT '" + tablename + "' AS TableName, Count(1) AS [RowCount] FROM " +tablename + " UNION ALL\n";
 #>
-`<# }} #>`
-`<#=selectstatement.Substring(0, selectstatement.Length-11)#>`
+<# }} #>
+<#=selectstatement.Substring(0, selectstatement.Length-11)#>
 
 <#
     foreach (var table in  RootNode.Tables) {
         if (table.GetTag("IntegrationStage") == "PSA") {#>
-            USE `<#=table.PackageSubpath #>`
+            USE <#=table.PackageSubpath #>
             GO
             <#break;
  }} #>
@@ -163,8 +163,8 @@ foreach (var table in  RootNode.Tables) {
             tablename = table.Schema + "." + table.Name;
             selectstatement += "SELECT '" + tablename + "' AS TableName, Count(1) AS [RowCount] FROM " +tablename + " UNION ALL\n";
 #>
-`<# }} #>`
-`<#=selectstatement.Substring(0, selectstatement.Length-11)#>`
+<# }} #>
+<#=selectstatement.Substring(0, selectstatement.Length-11)#>
 ```
 
 ## Importing Metadata from DB2 Sources
@@ -258,18 +258,18 @@ Add the target Batch name in the `target` definition. This will override all Dim
 If the `FlexRowStartDate` column name has been changed from the default, update to the new name in the derived column transformation.
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DwhInsertPipeline" target="LOAD_BFX_DM" #>`
-`<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>`
-`<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>`
-`<#@ property name="inputPath" type="String" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DwhInsertPipeline" target="LOAD_BFX_DM" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="inputPath" type="String" #>
 
-`<# CustomOutput.ObjectInherit = true; #>`
+<# CustomOutput.ObjectInherit = true; #>
 <DerivedColumns Name="DC - FlexRowStartDate Override">
     <InputPath OutputPathName="<#=inputPath #>" />
     <Columns>
         <Column Name="FlexRowStartDate" DataType="DateTime" Length="100" ReplaceExisting="true">(DT_DBTIMESTAMP2, 7)"1900-01-01 00:00:00.000"</Column>
     </Columns>
-`<# CustomOutput.OutputPathName = @"DC - FlexRowStartDate Override.Output"; #>`
+<# CustomOutput.OutputPathName = @"DC - FlexRowStartDate Override.Output"; #>
 </DerivedColumns>
 ```
 
@@ -286,26 +286,26 @@ The following video shows an example of overriding the connection string propert
 You can use this script to identify which **Project** reference the **Connection** you are adding an `ConnectionExpression` extension point for.
 
 ```biml
-`<#@ template language="C#" hostspecific="True" tier="99999"#>`
+<#@ template language="C#" hostspecific="True" tier="99999"#>
 <#    foreach(var project in RootNode.PackageProjects){
            var connections = new List<string>();
         foreach (var package in RootNode.Packages.Where(i=> i.PackageSubpath == project.ProjectSubpath)){
             foreach(var packageConnection in package.Connections.Where(c => c.Connection != null && !string.IsNullOrWhiteSpace(c.Connection.Name)).Select(c => c.Connection.Name).Distinct()){
                 connections.Add(packageConnection);
             } #>
-`<# } #>`
-`<#=project.Name #>`
-`<#    foreach(var connection in connections.Distinct()) {#>`
-    `<#=connection #>`
-`<# } #>`
+<# } #>
+<#=project.Name #>
+<#    foreach(var connection in connections.Distinct()) {#>
+    <#=connection #>
+<# } #>
 
-`<# } #>`
+<# } #>
 ```
 
 More information:
 
-* [Deployment Through the SSIS Deployment Wizard](bimlflex-ssis-deployment-wizard)
-* [Sensitive Information Management in SSIS](bimlflex-ssis-deployment-sensitive-info-management)
+* [Deployment Through the SSIS Deployment Wizard](../technology-ssis/ssis-deployment-wizard)
+* [Sensitive Information Management in SSIS](../technology-ssis/sensitive-info-management)
 
 ### Video
 
@@ -338,8 +338,8 @@ This is an example Batch Pre-processing Extension Point that injects the correct
 The Target on line 1 needs to match the target batch where the pre-processing should happen. The `SnowflakeSqlStatement` expression should contain the required Snowflake SQL Statement.
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="BatchPreProcess" target="YOUR_BATCH_NAME" #>`
-`<#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="BatchPreProcess" target="YOUR_BATCH_NAME" #>
+<#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 
 <#   var ssisVersion = RootNode.BuildSettings.SsisVersion.ToString();
     var componentVersion = ssisVersion == "Ssis2008R2" ? ".2008, Version=1.5.0.0"
@@ -360,7 +360,7 @@ The Target on line 1 needs to match the target batch where the pre-processing sh
 
 <Container Name="SEQC - Snowflake BatchPreProcess" ConstraintMode="Parallel">
     <Tasks>
-        <CustomTask Name="SFLSQL - CALL flex_WW_VW_WW_STAGE" CreationName="Varigence.Ssis.Snowflake.SnowflakeSql, Varigence.Ssis.Snowflake`<#=componentVersion #>`, Culture=neutral, PublicKeyToken=e9fb56b2a63ffbab" TaskContact="">
+        <CustomTask Name="SFLSQL - CALL flex_WW_VW_WW_STAGE" CreationName="Varigence.Ssis.Snowflake.SnowflakeSql, Varigence.Ssis.Snowflake<#=componentVersion #>, Culture=neutral, PublicKeyToken=e9fb56b2a63ffbab" TaskContact="">
             <Expressions>
                 <Expression ExternalProperty="SnowflakeSqlStatement">"CALL \"dv\".\"flex_RS_ENTITY_STAGE\"();"</Expression>
             </Expressions>

@@ -4,17 +4,19 @@ description: Documentation on how to configure ADF Linked Service Connection for
 tags: [BimlFlex, Walkthrough]
 ---
 # Configuring an ADF Linked Service Connection for Azure Database for MySQL
-:::note
 
 
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection).
+
+:::note
+
+For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](./create-linked-service-connection).
 
 :::
 
 
 After selecting `Azure MySQL` from the Linked Service Type dropdown, the form required for creating an Azure Database for MySQL Linked Service will appear.
 
-![Azure MySQL Linked Service Form](images/bimlflex-ss-app-connections-azure-mysql-form.png "Azure MySQL Linked Service Form")
+![Azure MySQL Linked Service Form](/img/bimlflex/bimlflex-ss-app-connections-azure-mysql-form.png "Azure MySQL Linked Service Form")
 
 ## Required Fields
 
@@ -48,10 +50,12 @@ The custom values that appear in this dropdown can be maintained in Settings und
 A connection to an Azure MySQL linked service requires a Connection String.
 The required properties for the Connection String are Server Name, Database Name, User Name, and Password.
 The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 :::
 
@@ -65,10 +69,12 @@ User Name is required - except when using Azure Key Vault in place of a manually
 
 Password is will be used by the Linked Service form for authentication with the Azure MySQL Linked Service.
 Password is required - except when using Azure Key Vault in place of a manually entering a Connection String.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the Password.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the Password.
 
 :::
 

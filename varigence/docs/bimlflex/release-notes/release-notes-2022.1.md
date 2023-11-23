@@ -4,11 +4,13 @@ title: BimlFlex 2022 R1 Release Notes
 description: Release Notes for BimlFlex 2022 R1
 ---
 # Release Notes
-:::note
 
 
-> Please make sure databases and projects are backed up before upgrading.  
-> Please email support@bimlflex.com with any installation or upgrade issues.
+
+:::note
+
+Please make sure databases and projects are backed up before upgrading.  
+Please email support@bimlflex.com with any installation or upgrade issues.
 
 :::
 
@@ -43,7 +45,7 @@ Build 22.1.87.0, release date: 22 Dec 2021
 * User Interface Improvements for all BimlFlex Visual Editors
 * Preview of Azure Data Factory Mapping Data Flows
 
-Additional information here: [BimlFlex 2022 R1 New Features](bimlflex-2022-r1-new-features)
+Additional information here: [BimlFlex 2022 R1 New Features](./new-features-2022.1)
 
 ### Salesforce (SFDC)
 

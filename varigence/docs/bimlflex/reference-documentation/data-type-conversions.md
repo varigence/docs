@@ -226,10 +226,12 @@ The general mappings are the base guidelines that are followed when generating D
 | Binary(`length`)                | varbinary(`length`)          |                   |                           |
 | Guid                            | uniqueidentifier             | nvarchar(50)      | varchar(50)               |
 | Object                          | sql_variant                  |                   | varbinary(8388608)        |
-:::note
 
+
+
+:::note
  
-> A blank column indicates no change in logic vs the **SQL Server Data Type**.
+A blank column indicates no change in logic vs the **SQL Server Data Type**.
 
 :::
 
@@ -248,13 +250,15 @@ In a few cases BimlFlex will implicitly convert a source data type into another 
 | smallmoney         |                      | varbinary(8000)   | decimal(19,4)       |
 | Guid               | **nvarchar(50)**\*   | nvarchar(50)      | varchar(50)         |
 | Xml                | nvarchar(`length`)   | varbinary(8000)   | varchar(`length`)   |
-:::note
 
 
-> A blank column indicates no change in logic vs the **BimlFlex Data Type**.  
->  
-> \*: Default logic for SQL Server is to use a `uniqueidentifier` data type for Guid columns.  
-> The column will only use a `nvarchar(50)` data type if the `CovertGuidToString` setting in the **Settings Editor** is set to `Y`.
+
+:::note
+
+A blank column indicates no change in logic vs the **BimlFlex Data Type**.  
+ 
+\*: Default logic for SQL Server is to use a `uniqueidentifier` data type for Guid columns.  
+The column will only use a `nvarchar(50)` data type if the `CovertGuidToString` setting in the **Settings Editor** is set to `Y`.
 
 :::
 
@@ -277,13 +281,15 @@ In cases where required metadata is omitted or values exceed certain thresholds 
 | time(`--`)                | time(7)                |                    |
 | datetime2(`--`)           | datetime2(7)           | timestamp(7)       |
 | datetimeoffset(`--`)      | datetimeoffset(7)      | timestamp_tz(7)    |
-:::note
 
+
+
+:::note
  
-> A blank column indicates no change in logic vs the *Default*.  
-> `+` Indicates any number greater or equal to.  
-> `-` Indicates any number lower than or equal to.  
-> `--` Indicates an unassigned value.  
+A blank column indicates no change in logic vs the *Default*.  
+`+` Indicates any number greater or equal to.  
+`-` Indicates any number lower than or equal to.  
+`--` Indicates an unassigned value.  
 
 :::
 

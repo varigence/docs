@@ -13,23 +13,23 @@ BimlFlex support is provided through our dedicated support email address: [suppo
 
 A new support request can be created by emailing [support@bimlflex.com](mailto:support@bimlflex.com) and providing an export of the BimlFlex metadata.
 
-* [BimlFlex Support Process](bimlflex-support-process)
+* [BimlFlex Support Process](./support-process)
 
 ## Check Installed Versions
 
 Instructions on how to find exactly what version of the BimlFlex components is installed.
 
-* [Find the installed BimlFlex versions](bimlflex-find-version)
+* [Find the installed BimlFlex versions](./check-installed-versions)
 
 ## Troubleshooting
 
 Some tips to assist in pinpointing where any error may originate from.
 
-* [Troubleshooting Tips](bimlflex-support-troubleshooting-tips)
-* [Excel File Migration For BimlFlex 2020 R2](excel-metadata-addin)
+* [Troubleshooting Tips](./troubleshooting-tips)
+* [Excel File Migration For BimlFlex 2020 R2](./excel-metadata-addin)
 
 ## Tips and Tricks
 
 The tips-and-tricks section contains focused design and implementation notes that illustrate core BimlFlex features, nifty tricks or similar.
 
-* [Tips and tricks](bimlflex-tips-and-tricks-overview)
+* [Tips and tricks](./tips-and-tricks)

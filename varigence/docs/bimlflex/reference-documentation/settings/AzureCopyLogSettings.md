@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Log Settings
 
-The settings for the logging in the Copy Activity, when logging is enabled. Use "@@this" to automatically use the Linked Service associated with the PolyBase Landing connection.
+The settings for the logging in the Copy Activity, when logging is enabled. Use `@@this` to automatically use the Linked Service associated with the PolyBase Landing connection.
 
 Notes:
 

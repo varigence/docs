@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Degree of Copy Parallelism
 
-For the Copy Activity, specifies the degree of parallelism that data loading should use.
+For the Azure Copy Activity, specifies the degree of parallelism that data loading should use.
 
 Notes:
 

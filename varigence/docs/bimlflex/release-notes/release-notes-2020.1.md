@@ -3,11 +3,13 @@ sidebar_position: 10
 title: BimlFlex 2020 R1 Release Notes
 ---
 # Release Notes
-:::note
 
 
-> Please make sure databases and projects are backed up before upgrading.  
-> Please email support@bimlflex.com with any installation or upgrade issues.
+
+:::note
+
+Please make sure databases and projects are backed up before upgrading.  
+Please email support@bimlflex.com with any installation or upgrade issues.
 
 :::
 
@@ -30,7 +32,7 @@ Build 5.0.64678.0, release date: 1 June 2020
 ## Build 20.2.nnn.0, release date: nn mmmm 2020
 
 * Add: New Project settings for SSDT Project Control
-* Add: ADF Flat File load support. More information on the ADF Flat File load process: [Flat File Source to Staging](flat-file-source-to-staging)
+* Add: ADF Flat File load support. More information on the ADF Flat File load process: [Flat File Source to Staging](../scenarios/source-flat-file)
 * Update: A scenario where an SSIS load to Synapse blob storage staging file archive process would use the archive SAS Token to connect to the staging account has been addressed.
 * Update: TODO: Add note on Delete detection change on tuples to named classes for customers who use existing bespoke scripts and biml scripts
 * Update: Added additional delete detection functionality
@@ -61,7 +63,7 @@ The following settings have been added to the Ssdt group:
 
 The Existing Setting `SsdtOutputPath` has been moved to the Ssdt settings group
 
-More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](bimlflex-ssdt-project)
+More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](../build-and-deployment/ssdt-project)
 
 Note that in the BimlFlex 2019 release the External Tables were always included, sometimes leading to issues with lacking Visual Studio support. Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of external tables as part of the load packages. This release adds control to the creation and additional defaults for dependency objects.
 
@@ -88,13 +90,13 @@ BimlFlex now has full support for Azure Data Factory (ADF) workflows for Azure S
 
 This includes full support to build Azure ARM templates for direct deployment of the pipelines to Azure as well as json file generation for individual deployments and deployment through the ADF DevOps git integration.
 
-More information on ADF here: [ADF Deployment Overview](adf-deployment-overview)
+More information on ADF here: [ADF Deployment Overview](../technology-adf)
 
 ### Data Mappings visualizations and editor for BimlFlex App
 
 The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
 
-More information on the BimlFlex app here: [Metadata Editors Overview](metadata-editors-overview)
+More information on the BimlFlex app here: [Metadata Editors Overview](../metadata-editors)
 
 ### BimlCatalog Operational Reporting in BimlFlex App
 
@@ -102,7 +104,7 @@ The BimlFlex app has been updated with BimlCatalog Operational Reporting capabil
 
 These reports allow direct access to the logging in the BimlCatalog from the app and help with both development and operational insights
 
-More information on operational reporting here: [BimlFlex Operational Reports](bimlflex-operational-reports)
+More information on operational reporting here: [BimlFlex Operational Reports](../metadata-editors/operational-reports)
 
 ### Restructure BimlCatalog for more agnostic logging
 
@@ -112,7 +114,7 @@ Reporting views and Stored Procedures are unchanged.
 
 ADF Stored Procedures have been updated to better support logging and orchestration.
 
-More information on the BimlCatalog here: [BimlCatalog database](bimlflex-setup-bimlcatalog-database-installation)
+More information on the BimlCatalog here: [BimlCatalog database](../installation/installing-bimlcatalog-database)
 
 ### Additional Extension Points for bespoke processing requirements
 
@@ -141,11 +143,13 @@ This allows direct metadata import from Dynamics CRM into the BimlFlex metadata 
 ### Changes to settings
 
 The settings have been updated. New settings are available, some settings have been changed, renamed or reorganized.
-:::warning
 
 
-> Breaking Changes  
-> For scenarios where a changed setting is used in Extension Points or referenced elsewhere (such as in an SSIS Catalog environment project parameter) the corresponding syntax change needs to be made to match the new names
+
+:::warning
+
+Breaking Changes  
+For scenarios where a changed setting is used in Extension Points or referenced elsewhere (such as in an SSIS Catalog environment project parameter) the corresponding syntax change needs to be made to match the new names
 
 :::
 
@@ -270,15 +274,17 @@ BimlFlex 2020 Preview
 * Add: New Project settings dialog in BimlStudio. This allows easier access to control Build target and method as well as local project configurations.
 * Update: The default build versions for new projects have been updated to SQL Server 2017
 * Add: Support for SQL Server 2019 SSIS custom components. All custom components are now available in a SQL Server 2019 compatible version.
-* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here [BimlFlex COZYROC Excel Plus Source](bimlflex-source-excel-plus)
+* Add: Support for COZYROC Excel+ Source component. Ingest data from an Excel source file using this new component. More information in the dedicated Excel source documentation here [BimlFlex COZYROC Excel Plus Source](../scenarios/source-excel-plus)
 * Add: Additional support for archiving files in Azure Data Lake Storage (Azure Blob storage with hierarchical namespaces). A new utility app is available to communicate with the blob storage in a supported format while awaiting similar support in AzCopy
 * New Extension Points: `DvPreProcessSql`, `DvPostProcessSql` allows injection of SQL logic in the DV load SQL Stored Procedures.
 * Update: Some `Generate Scripts` menu options have had their `By Source` suffix removed.
-:::note
 
 
-> change in behavior for Settings descriptions
-> The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added they must be maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
+
+:::note
+
+change in behavior for Settings descriptions
+The descriptions for all settings for all metadata customers will now be updated to the template descriptions on each update. Previously BimlFlex would maintain any custom descriptions. As the descriptions are updated as new features are added they must be maintained to properly reflect the current BimlFlex functionality. This is a change in behavior. If custom descriptions are maintained, please retain them outside the settings table before performing the update.
 
 :::
 

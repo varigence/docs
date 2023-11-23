@@ -19,7 +19,7 @@ The architecture can use existing keys from the underlying layers, or implement 
 
 ## Data Marts Overview
 
-* [Configuring a Data Mart solution in BimlFlex](bimlflex-data-mart-configuration)
-* [Customizing Data Marts using overrides](bimlflex-data-mart-overrides)
-* [Fact Data Loading Pattern](bimlflex-data-mart-fact-pattern)
-* [Dimension Data Loading Pattern](bimlflex-data-mart-dimension-pattern)
+* [Configuring a Data Mart solution in BimlFlex](./data-mart-configuration)
+* [Customizing Data Marts using overrides](./data-mart-overrides)
+* [Fact Data Loading Pattern](./fact-pattern)
+* [Dimension Data Loading Pattern](./dimension-pattern)

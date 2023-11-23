@@ -12,7 +12,7 @@ Databases contain relational objects, such as tables, schemas, and views. Any re
 
 1. Go to the Home tab on the ribbon, and click the Database button.
 
-    ![Database Button](https://varigencecom.blob.core.windows.net/images-mistdocumentation/004a_Step01.png)
+    ![Database Button](/img/bimlstudio/004a_Step01.png)
 
 1. The Database Properties should be open on the right, if not Double-click on the database to open the designer for it.
 
@@ -20,9 +20,9 @@ Databases contain relational objects, such as tables, schemas, and views. Any re
 
 1. Change the Name value from Database1 to AdventureWorksLTDatabase to give the database a meaningful name.
 
-    ![Finished Database Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation/004a_Step04.gif)
+    ![Finished Database Designer](/img/bimlstudio/004a_Step04.gif)
 
-1. Save the project to persist your changes to the project files. See [Saving a Project](saving-a-project) for more information.
+1. Save the project to persist your changes to the project files. See [Saving a Project](./saving-a-project) for more information.
 
 ## View Biml
 

@@ -10,7 +10,7 @@ A `Point In Time` (PIT) table is an optional concept in Data Vault that facilita
 
 By design, a Data Vault model can contain many entities. To build the required data set for delivery it is often necessary to join many of these entities together.
 
-For example, a Hub ([Core Business Concept](bimlflex-data-vault-concept-hub)) can have many Satellites [Contextual Entities](bimlflex-data-vault-concept-satellite) providing details about the Hub. Each of these Satellites will receive data at different times depending on their scheduling frequency and the rate of change of data in the operational system that provided the data. This means that each Satellite typically contains data that is valid for a (potentially) different *point in time*, as per the effective date of the Satellite. The effective date of the Satellite is the `FlexRowEffectiveDateTime`, which conceptually is the load date / time stamp (LDTS) as per Data Vault standards.
+For example, a Hub ([Core Business Concept](./data-vault-concept-hub)) can have many Satellites [Contextual Entities](./data-vault-concept-satellite) providing details about the Hub. Each of these Satellites will receive data at different times depending on their scheduling frequency and the rate of change of data in the operational system that provided the data. This means that each Satellite typically contains data that is valid for a (potentially) different *point in time*, as per the effective date of the Satellite. The effective date of the Satellite is the `FlexRowEffectiveDateTime`, which conceptually is the load date / time stamp (LDTS) as per Data Vault standards.
 
 A PIT table is a flexible construct. It can encompass many entities that span across multiple Hubs, Links and Satellites. A PIT table may also be comprised of a single Link and that Link's surrounding Satellites. When it makes sense, it is even an option to store business logic in the PIT. This may be useful when a certain calculation has to be done many times and the PIT is already on the right level of detail anyway.
 
@@ -35,10 +35,12 @@ In a snapshot configuration it is important to have a snapshot in place for each
 In BimlFlex, this snapshot concept is implemented as a `range table` to reduce the number (and corresponding maintenance) of snapshots. Instead of having -for example- seven snapshots for each day in a week, BimlFlex will add an effective- and expiry date for which the snapshot is valid.
 
 This significantly reduces the data volume while still retaining all the PIT functionality. Instead of querying the PIT table directly on a snapshot date, the point in time value to check (e.g. a specific day or time) must be between the PIT effective- and expiry dates.
-:::note
 
 
-> Snapshots and date ranges are conceptually variations of the same theme. A snapshot can be converted into a date-range and vice-versa. BimlFlex has opted to use date ranges for delivering PIT tables, which we consider is easiest to manage and still delivers good performance.
+
+:::note
+
+Snapshots and date ranges are conceptually variations of the same theme. A snapshot can be converted into a date-range and vice-versa. BimlFlex has opted to use date ranges for delivering PIT tables, which we consider is easiest to manage and still delivers good performance.
 
 :::
 
@@ -46,15 +48,17 @@ This significantly reduces the data volume while still retaining all the PIT fun
 ## Point In Time example
 
 The following example shows a PIT table created from a Hub and two supporting Satellites. The sample data is as it would be after data has gradually become available, and thus simulates the state after a few weeks of processing.
-:::note
 
 
-> PIT tables are incrementally updated when new data becomes available in the Data Vault tables that support them. BimlFlex can configure the number of days should be taken into consideration for this refresh.
+
+:::note
+
+PIT tables are incrementally updated when new data becomes available in the Data Vault tables that support them. BimlFlex can configure the number of days should be taken into consideration for this refresh.
 
 :::
 
 
-![Point In Time example](images/point-in-time-example.png "Point In Time example")
+![Point In Time example](/img/bimlflex/point-in-time-example.png "Point In Time example")
 
 In this example, the first time information about the business key 'PRD0154' became available in the data solution was at 2021-03-28. At this point in time one of the Satellites (#1) contained data for this business key, however the other one (#2) does not (yet) have any information. The join fields for Satellite #2 are defaulted to 'unknown' values to record that no data is available for this point in time.
 
@@ -68,7 +72,7 @@ Using this PIT table, it is easy to query what context attributes from the Satel
 
 There are some important notes to clarify on the structure of the PIT table in BimlFlex, and these are numbered in the example:
 
-1. Each PIT table contains a [`zero record`](bimlflex-data-vault-concept-zero-records), which provides an 'unknown' record in the PIT table that refers to any NULL value.
+1. Each PIT table contains a [`zero record`](./data-vault-concept-zero-records), which provides an 'unknown' record in the PIT table that refers to any NULL value.
 2. Each PIT record receives a unique PIT surrogate key that uniquely identifies a row in the PIT table. This is purely for identification purposes.
 3. BimlFlex uses a high end-date as default, which is 9999-12-13 in this example. This is to make sure that any queries on the PIT table always return a result, which is the most recent state of the data as it has been received by the data solution.
 4. If no context is available for a given point in time BimlFlex will apply (configurable) default values to highlight that no data exists. This is to allow equi-joins even when there is no data, without risking data loss.
@@ -77,7 +81,7 @@ There are some important notes to clarify on the structure of the PIT table in B
 
 As outlined above, PIT tables are flexible constructs and can even encompass business logic (transformations, logic) if it makes sense to do so from a performance perspective. This includes computed fields or additional being- and end dates to simplify upstream queries.
 
-BimlFlex can apply [Extension Points](bimlflex-concepts-extension-points) to support specific customizations for PIT tables, if required. These can provider detailed overrides to change the behavior of the out-of-the-box solution.
+BimlFlex can apply [Extension Points](../concepts/extension-points) to support specific customizations for PIT tables, if required. These can provider detailed overrides to change the behavior of the out-of-the-box solution.
 
 ## Timelines in PIT tables
 

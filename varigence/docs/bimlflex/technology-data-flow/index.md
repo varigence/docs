@@ -22,4 +22,4 @@ Also, and especially in data lake scenarios, they offer a way to manage where th
 
 Mapping Data Flows support for BimlFlex is continued to be rolled out. This means that both documentation and features are being expanded on.
 
-In most ways, using Data Flows in BimlFlex works similarly to configuring solutions for Azure Data Factory. The difference is, in order for the BimlFlex engine to generate Data Flows the **Integration Stage** for the [**Project**](bimlflex-project-editor) must be set to `Azure Mapping Data Flows`.
+In most ways, using Data Flows in BimlFlex works similarly to configuring solutions for Azure Data Factory. The difference is, in order for the BimlFlex engine to generate Data Flows the **Integration Stage** for the [**Project**](../metadata-editors/project-editor) must be set to `Azure Mapping Data Flows`.

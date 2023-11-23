@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Display Database Name
 
-Controls if the source database name should be included in the generated SSIS package name. E.g. the default "EXT_AWLT_Customer" package name would be named "EXT_AWLT_AdventureWorksLT2012_Customer" when enabled
+Controls if the source database name should be included in the generated SSIS package name. E.g. the default `EXT_AWLT_Customer` package name would be named `EXT_AWLT_AdventureWorksLT2012_Customer` when enabled
 
 Notes:
 

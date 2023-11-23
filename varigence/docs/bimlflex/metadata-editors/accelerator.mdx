@@ -10,17 +10,19 @@ import InclHeaderAccelerator from './_incl-header-accelerator.md';
 # Data Vault Accelerator
 
 <InclHeaderAccelerator />
-:::note
 
 
-> For a quick overview, please watch the [BimlFlex Data Vault Accelerator Introduction Video](https://www.youtube.com/watch?v=<placeholder>?rel=0&autoplay=0)
+
+:::note
+
+For a quick overview, please watch the [BimlFlex Data Vault Accelerator Introduction Video](https://www.youtube.com/watch?v=<placeholder>?rel=0&autoplay=0)
 
 :::
 
 
 ## Defining the Target Model
 
-Before starting the Data Vault design process, it is important to have an understanding of the expected target model, as well as how the source data should be loaded into this target. BimlFlex supports this through the [**Business Modeling**](bimlflex-business-modeling) feature. This helps define an initial model that is agnostic to the available data sources.
+Before starting the Data Vault design process, it is important to have an understanding of the expected target model, as well as how the source data should be loaded into this target. BimlFlex supports this through the [**Business Modeling**](./business-modeling) feature. This helps define an initial model that is agnostic to the available data sources.
 
 Ideally, this target Data Vault model has the following characteristics:
 
@@ -29,7 +31,7 @@ Ideally, this target Data Vault model has the following characteristics:
 * Based on Core Business Concepts
 * Describes events and transactions through the relationships between the Core Business Concepts
 
-The Accelerator always (re)creates the Data Vault model using the source object metadata. This metadata is initially imported using the [**Metadata Importer**](bimlflex-concepts-importing-metadata), or entered manually. This also includes objects that are specifically defined to act as source, such as **Staged Queries**.
+The Accelerator always (re)creates the Data Vault model using the source object metadata. This metadata is initially imported using the [**Metadata Importer**](../concepts/importing-metadata), or entered manually. This also includes objects that are specifically defined to act as source, such as **Staged Queries**.
 
 This means that any modifications made to the source object, either via the Accelerator or by directly manipulating the object, are always stored against the source object. This is referred to as _source metadata decoration_. The Data Vault model is always generated based on the source object metadata.
 
@@ -79,7 +81,7 @@ It is possible to select only a subset of objects, or filter the objects visible
 
 Constraining the Data Vault Acceleration to a subset allows for a more agile delivery where valuable parts of the solution can be put to good use as soon as they are done.
 
-![Accelerator User Interface](images/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
+![Accelerator User Interface](/img/bimlflex/bimlflex-app-accelerator-full-ui.png "Accelerator User Interface")
 
 The Accelerator shows available source objects in the left-hand **Treeview** and a preview of the target Data Vault model in the content pane. The page has a toolbar with several interaction options available
 
@@ -112,7 +114,7 @@ To move the viewport perspective in the diagram pane, hold the `ctrl` or `space`
 
 Users may accelerate models for specific objects from the **Objects** Action Bar in BimlFlex, as opposed to navigating to the Accelerator option in the main navigation.
 
-![Accelerate Option from Objects Action Bar](images/objects-accelerate-alternative.png "Accelerate Option from Objects Action Bar")
+![Accelerate Option from Objects Action Bar](/img/bimlflex/objects-accelerate-alternative.png "Accelerate Option from Objects Action Bar")
 
 ## Updating the Model to Meet Requirements
 
@@ -184,7 +186,7 @@ An object that is used to describe a hierarchical relationship can be defined an
 
 All acceleration uses behaviors derived from the DataVault Settings. These settings are available in the Settings pages and can also be directly accessed from the Accelerator through the Settings Dialog
 
-![Accelerator Settings](images/ss-bfx-21.1-accelerator-data-vault-settings.png "Accelerator Settings")
+![Accelerator Settings](/img/bimlflex/ss-bfx-21.1-accelerator-data-vault-settings.png "Accelerator Settings")
 
 ## Context Actions
 
@@ -246,7 +248,7 @@ It is possible to manage details about the source object, such as the related Bu
 
 Allows the Accelerator to use a pre-defined Business Entity as the target definition. Use Business Modeling to define the Business Model that should be used and map source objects and columns to these targets to allow the Accelerator to use names and attribute definitions in the target model.
 
-More detailed information on the Business Modeling is available here: [Business Modeling](bimlflex-business-modeling)
+More detailed information on the Business Modeling is available here: [Business Modeling](./business-modeling)
 
 ### Object Business Name
 

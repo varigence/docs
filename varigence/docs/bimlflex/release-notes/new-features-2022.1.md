@@ -27,14 +27,14 @@ These types of Business Model objects are represented as 'cards' on the model de
 
 Business Models can be mapped to the data sources in BimlFlex to forward-engineer the data solution from there.
 
-More information on Business Modeling here: [Business Modeling in BimlFlex](bimlflex-business-modeling)
+More information on Business Modeling here: [Business Modeling in BimlFlex](../metadata-editors/business-modeling)
 
 ### Added Support for Salesforce Connector
 
 BimlFlex now supports Salesforce (SFDC) as a 'Source' connection or dataset.
 Additional metadata samples have also been added for either Azure Data Factory or SSIS solutions.
 
-More information on importing Salesforce metadata here: [Connecting to a Salesforce REST API](bimlflex-source-salesforce-rest-api)
+More information on importing Salesforce metadata here: [Connecting to a Salesforce REST API](../scenarios/source-salesforce-rest-api)
 
 ### Added Support for Azure PostgreSQL Connector
 
@@ -68,4 +68,4 @@ In the preview version, it is possible to deploy your solution using the 'Azure 
 
 ## BimlFlex 2022 R1 Release Notes
 
-* Read the complete BimlFlex 2022 R1 Release Notes [here](bimlflex-release-notes-2022-r1)
+* Read the complete BimlFlex 2022 R1 Release Notes [here](./release-notes-2022.1)

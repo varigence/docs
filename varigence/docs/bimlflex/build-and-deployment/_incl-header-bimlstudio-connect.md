@@ -4,30 +4,36 @@ description: onnect to the BimlFlex database from BimlStudio
 tags: [BimlFlex, Reference]
 ---
 The BimlStudio project needs to access the metadata in the BimlFlex database in order to generate output.
-:::note
 
 
-> The databases are created and updated through the [BimlFlex installer](bimlflex-setup-installing-bimlflex). It is also possible to set up the databases from the BimlFlex ribbon tab in BimlStudio, or directly by using the **Setup BimlFlex Databases** button.
-> Additional information is available in the[BimlFlex database installation section](bimlflex-setup-metadata-database-installation).
+
+:::note
+
+The databases are created and updated through the [BimlFlex installer](../installation/installing-bimlflex). It is also possible to set up the databases from the BimlFlex ribbon tab in BimlStudio, or directly by using the **Setup BimlFlex Databases** button.
+Additional information is available in the[BimlFlex database installation section](../installation/installing-metadata-database).
 
 :::
 
 
 To connect the BimlStudio project to the BimlFlex database, connectivity details to the metadata database need to be provided.
 
-![Create New Project](images/bs-new-project-screen-connectivity.png "Create New Project")
+![Create New Project](/img/bimlflex/bs-new-project-screen-connectivity.png "Create New Project")
 
 When the connectivity to the BimlFlex database is established, a customer and version can be selected from the drop-down lists. Selecting a customer and version here and saving the project will ensure the right output is generated.
-:::tip
 
 
-> Connectivity from BimlStudio to the BimlFlex database can always be opened by clicking the **Open Bundle** option in the BimlFlex ribbon.:::danger
 
+:::tip
 
-> After updating a Customer or Version, close and re-open the application.
+Connectivity from BimlStudio to the BimlFlex database can always be opened by clicking the **Open Bundle** option in the BimlFlex ribbon.
 
 :::
 
+
+
+:::danger
+
+After updating a Customer or Version, close and re-open the application.
 
 :::
 

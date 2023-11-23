@@ -13,5 +13,5 @@ BimlFlex supports Synapse as a source- and target connection and platform.
 
 ## Implementing BimlFlex on Synapse
 
-* [Working with BimlFlex on Synapse](bimlflex-synapse-implementation)
-* [Adopting a forward-only approach for deployment](bimlflex-synapse-forward-only)
+* [Working with BimlFlex on Synapse](./synapse-implementation)
+* [Adopting a forward-only approach for deployment](./synapse-forward-only-approach)

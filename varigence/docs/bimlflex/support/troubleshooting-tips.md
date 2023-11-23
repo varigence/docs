@@ -20,10 +20,12 @@ This repository contains various content such as, but not limited to:
 * SQL scripts that validate the data solution against conventions.
 * Additional reporting models for Power BI.
 * Troubleshooting hints and tips.
-:::note
 
 
-> The BimlFlex Community GitHub content is not supported by Varigence, but managed by BimlFlex practitioners. Scripts and tooling may need to be adjusted for a local environment.
+
+:::note
+
+The BimlFlex Community GitHub content is not supported by Varigence, but managed by BimlFlex practitioners. Scripts and tooling may need to be adjusted for a local environment.
 
 :::
 
@@ -40,10 +42,12 @@ There are various high-quality frameworks for investigating and addressing perfo
 
 * The '[First Responder Kit](https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit)' for SQL Server by Brent Ozar has extensive monitoring capabilities, and will find many common issues.
 * It is important that databases run on a maintenance plan. For this the [SQL Server maintenance solution](https://ola.hallengren.com/) by Ola Hallengren is a good solution to consider.
-:::note
 
 
-> Public GitHub or 3rd party scripts and concepts are not supported by Varigence.
+
+:::note
+
+Public GitHub or 3rd party scripts and concepts are not supported by Varigence.
 
 :::
 

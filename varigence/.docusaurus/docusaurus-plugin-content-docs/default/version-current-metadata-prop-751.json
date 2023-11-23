@@ -244,13 +244,6 @@
         "items": [
           {
             "type": "link",
-            "label": "Overview",
-            "href": "/docs/bimlflex/metadata-editors/",
-            "docId": "bimlflex/metadata-editors/index",
-            "unlisted": false
-          },
-          {
-            "type": "link",
             "label": "BimlFlex Tour",
             "href": "/docs/bimlflex/metadata-editors/bimlflex-tour",
             "docId": "bimlflex/metadata-editors/bimlflex-tour",
@@ -279,41 +272,6 @@
           },
           {
             "type": "link",
-            "label": "Connection Editor",
-            "href": "/docs/bimlflex/metadata-editors/connection-editor",
-            "docId": "bimlflex/metadata-editors/connection-editor",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "Batch Editor",
-            "href": "/docs/bimlflex/metadata-editors/batches",
-            "docId": "bimlflex/metadata-editors/batches",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "Project Editor",
-            "href": "/docs/bimlflex/metadata-editors/project-editor",
-            "docId": "bimlflex/metadata-editors/project-editor",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "Object Editor",
-            "href": "/docs/bimlflex/metadata-editors/object-editor",
-            "docId": "bimlflex/metadata-editors/object-editor",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "Column Editor",
-            "href": "/docs/bimlflex/metadata-editors/column-editor",
-            "docId": "bimlflex/metadata-editors/column-editor",
-            "unlisted": false
-          },
-          {
-            "type": "link",
             "label": "Parameter Editor",
             "href": "/docs/bimlflex/metadata-editors/parameter-editor",
             "docId": "bimlflex/metadata-editors/parameter-editor",
@@ -328,30 +286,9 @@
           },
           {
             "type": "link",
-            "label": "Configuration Editor",
-            "href": "/docs/bimlflex/metadata-editors/configuration-editor",
-            "docId": "bimlflex/metadata-editors/configuration-editor",
-            "unlisted": false
-          },
-          {
-            "type": "link",
             "label": "Setting Editor",
             "href": "/docs/bimlflex/metadata-editors/setting-editor",
             "docId": "bimlflex/metadata-editors/setting-editor",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "Data Type Mappings",
-            "href": "/docs/bimlflex/metadata-editors/data-type-mappings",
-            "docId": "bimlflex/metadata-editors/data-type-mappings",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "Version Editor",
-            "href": "/docs/bimlflex/metadata-editors/version-editor",
-            "docId": "bimlflex/metadata-editors/version-editor",
             "unlisted": false
           },
           {
@@ -380,13 +317,6 @@
             "label": "Data Lineage",
             "href": "/docs/bimlflex/metadata-editors/data-lineage",
             "docId": "bimlflex/metadata-editors/data-lineage",
-            "unlisted": false
-          },
-          {
-            "type": "link",
-            "label": "Business Modeling",
-            "href": "/docs/bimlflex/metadata-editors/business-modeling",
-            "docId": "bimlflex/metadata-editors/business-modeling",
             "unlisted": false
           },
           {
@@ -1269,13 +1199,6 @@
             "items": [
               {
                 "type": "link",
-                "label": "BimlFlex App Definition for Azure",
-                "href": "/docs/bimlflex/reference-documentation/extension-points/Azure",
-                "docId": "bimlflex/reference-documentation/extension-points/Azure",
-                "unlisted": false
-              },
-              {
-                "type": "link",
                 "label": "BimlFlex App Definition for Batch",
                 "href": "/docs/bimlflex/reference-documentation/extension-points/Batch",
                 "docId": "bimlflex/reference-documentation/extension-points/Batch",
@@ -1480,6 +1403,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for ApplyDataTypeMappings",
+                "href": "/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappings",
+                "docId": "bimlflex/reference-documentation/settings/ApplyDataTypeMappings",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for ApplyExtractConversionInDataflow",
                 "href": "/docs/bimlflex/reference-documentation/settings/ApplyExtractConversionInDataFlow",
                 "docId": "bimlflex/reference-documentation/settings/ApplyExtractConversionInDataFlow",
@@ -1634,6 +1564,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for AzureArchiveSourceFiles",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureArchiveSourceFiles",
+                "docId": "bimlflex/reference-documentation/settings/AzureArchiveSourceFiles",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for AzureArchiveStage",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzureArchiveStage",
                 "docId": "bimlflex/reference-documentation/settings/AzureArchiveStage",
@@ -1644,6 +1581,13 @@
                 "label": "BimlFlex Settings Definition for AzureBlobStorageDomain",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzureBlobStorageDomain",
                 "docId": "bimlflex/reference-documentation/settings/AzureBlobStorageDomain",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureCopyBehavior",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureCopyBehavior",
+                "docId": "bimlflex/reference-documentation/settings/AzureCopyBehavior",
                 "unlisted": false
               },
               {
@@ -1665,6 +1609,13 @@
                 "label": "BimlFlex Settings Definition for AzureCopyEnableStaging",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzureCopyEnableStaging",
                 "docId": "bimlflex/reference-documentation/settings/AzureCopyEnableStaging",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureCopyIsRecursive",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureCopyIsRecursive",
+                "docId": "bimlflex/reference-documentation/settings/AzureCopyIsRecursive",
                 "unlisted": false
               },
               {
@@ -1718,6 +1669,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for AzureCopySourceSettings",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureCopySourceSettings",
+                "docId": "bimlflex/reference-documentation/settings/AzureCopySourceSettings",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for AzureCopyStagingSettings",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzureCopyStagingSettings",
                 "docId": "bimlflex/reference-documentation/settings/AzureCopyStagingSettings",
@@ -1753,6 +1711,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for AzureDataFactoryLocation",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureDataFactoryLocation",
+                "docId": "bimlflex/reference-documentation/settings/AzureDataFactoryLocation",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for AzureDataFactoryName",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzureDataFactoryName",
                 "docId": "bimlflex/reference-documentation/settings/AzureDataFactoryName",
@@ -1763,6 +1728,13 @@
                 "label": "BimlFlex Settings Definition for AzureDeleteLandingFiles",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles",
                 "docId": "bimlflex/reference-documentation/settings/AzureDeleteLandingFiles",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureDeleteSourceFiles",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureDeleteSourceFiles",
+                "docId": "bimlflex/reference-documentation/settings/AzureDeleteSourceFiles",
                 "unlisted": false
               },
               {
@@ -1963,6 +1935,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for AzureOnErrorSourceFiles",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureOnErrorSourceFiles",
+                "docId": "bimlflex/reference-documentation/settings/AzureOnErrorSourceFiles",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for AzurePolybaseSettings",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzurePolybaseSettings",
                 "docId": "bimlflex/reference-documentation/settings/AzurePolybaseSettings",
@@ -1980,6 +1959,62 @@
                 "label": "BimlFlex Settings Definition for AzureRoundRobinTemporaryTables",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables",
                 "docId": "bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureScriptEnableLogging",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureScriptEnableLogging",
+                "docId": "bimlflex/reference-documentation/settings/AzureScriptEnableLogging",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureScriptExeutionTimeout",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureScriptExeutionTimeout",
+                "docId": "bimlflex/reference-documentation/settings/AzureScriptExeutionTimeout",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureScriptLogSettings",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureScriptLogSettings",
+                "docId": "bimlflex/reference-documentation/settings/AzureScriptLogSettings",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureScriptRetryAttempts",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureScriptRetryAttempts",
+                "docId": "bimlflex/reference-documentation/settings/AzureScriptRetryAttempts",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureScriptRetryInterval",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureScriptRetryInterval",
+                "docId": "bimlflex/reference-documentation/settings/AzureScriptRetryInterval",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureScriptSecureInput",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureScriptSecureInput",
+                "docId": "bimlflex/reference-documentation/settings/AzureScriptSecureInput",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureScriptSecureOutput",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureScriptSecureOutput",
+                "docId": "bimlflex/reference-documentation/settings/AzureScriptSecureOutput",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for AzureScriptTimeout",
+                "href": "/docs/bimlflex/reference-documentation/settings/AzureScriptTimeout",
+                "docId": "bimlflex/reference-documentation/settings/AzureScriptTimeout",
                 "unlisted": false
               },
               {
@@ -2022,6 +2057,34 @@
                 "label": "BimlFlex Settings Definition for AzureSubscriptionId",
                 "href": "/docs/bimlflex/reference-documentation/settings/AzureSubscriptionId",
                 "docId": "bimlflex/reference-documentation/settings/AzureSubscriptionId",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for BmAttributeNamingConvention",
+                "href": "/docs/bimlflex/reference-documentation/settings/BmAttributeNamingConvention",
+                "docId": "bimlflex/reference-documentation/settings/BmAttributeNamingConvention",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for BmAttributeTechnicalNamingConvention",
+                "href": "/docs/bimlflex/reference-documentation/settings/BmAttributeTechnicalNamingConvention",
+                "docId": "bimlflex/reference-documentation/settings/BmAttributeTechnicalNamingConvention",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for BmEntityNamingConvention",
+                "href": "/docs/bimlflex/reference-documentation/settings/BmEntityNamingConvention",
+                "docId": "bimlflex/reference-documentation/settings/BmEntityNamingConvention",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for BmEntityTechnicalNamingConvention",
+                "href": "/docs/bimlflex/reference-documentation/settings/BmEntityTechnicalNamingConvention",
+                "docId": "bimlflex/reference-documentation/settings/BmEntityTechnicalNamingConvention",
                 "unlisted": false
               },
               {
@@ -2082,6 +2145,160 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksActivityRetryAttempts",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksActivityRetryAttempts",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksActivityRetryAttempts",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksActivityRetryInterval",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksActivityRetryInterval",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksActivityRetryInterval",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksActivitySecureInput",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksActivitySecureInput",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksActivitySecureInput",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksActivitySecureOutput",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksActivitySecureOutput",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksActivitySecureOutput",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksActivityTimeout",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksActivityTimeout",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksActivityTimeout",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksAddCreateCatalog",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksAddCreateCatalog",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksAddCreateCatalog",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksAddDropNotebooks",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksAddDropNotebooks",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksAddDropNotebooks",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksAddSqlComments",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksAddSqlComments",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksAddSqlComments",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksAddTruncateNotebooks",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksAddTruncateNotebooks",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksAddTruncateNotebooks",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksAppendNotebookName",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksAppendNotebookName",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksAppendNotebookName",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksCopyFormatOptions",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksCopyFormatOptions",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksCopyFormatOptions",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksCopyOptions",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksCopyOptions",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksCopyOptions",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksDataTimeZone",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksDataTimeZone",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksDataTimeZone",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksDisplayTimeZone",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksDisplayTimeZone",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksDisplayTimeZone",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksNotebookPath",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksNotebookPath",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksNotebookPath",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksOutputPath",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksOutputPath",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksOutputPath",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksRepositoryName",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksRepositoryName",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksRepositoryName",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksTableProperties",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksTableProperties",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksTableProperties",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksUseGlobalParameters",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksUseGlobalParameters",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksUseGlobalParameters",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksUseManagedTables",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksUseManagedTables",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksUseManagedTables",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksUseTemporaryViews",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksUseTemporaryViews",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksUseTemporaryViews",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DatabricksUseUnityCatalog",
+                "href": "/docs/bimlflex/reference-documentation/settings/DatabricksUseUnityCatalog",
+                "docId": "bimlflex/reference-documentation/settings/DatabricksUseUnityCatalog",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for DeleteDetectionApplyDv",
                 "href": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyDv",
                 "docId": "bimlflex/reference-documentation/settings/DeleteDetectionApplyDv",
@@ -2096,9 +2313,37 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for DeleteDetectionArchiveFiles",
+                "href": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionArchiveFiles",
+                "docId": "bimlflex/reference-documentation/settings/DeleteDetectionArchiveFiles",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DeleteDetectionDeleteFiles",
+                "href": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionDeleteFiles",
+                "docId": "bimlflex/reference-documentation/settings/DeleteDetectionDeleteFiles",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for DeleteDetectionEnabled",
                 "href": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionEnabled",
                 "docId": "bimlflex/reference-documentation/settings/DeleteDetectionEnabled",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DeleteDetectionOnErrorFiles",
+                "href": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionOnErrorFiles",
+                "docId": "bimlflex/reference-documentation/settings/DeleteDetectionOnErrorFiles",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DeleteDetectionOnStage",
+                "href": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionOnStage",
+                "docId": "bimlflex/reference-documentation/settings/DeleteDetectionOnStage",
                 "unlisted": false
               },
               {
@@ -2208,6 +2453,76 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationFormItemSettings",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationFormItemSettings",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationFormItemSettings",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationHideEmptyGroups",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationHideEmptyGroups",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationHideEmptyGroups",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationHtmlTemplatePath",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationHtmlTemplatePath",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationHtmlTemplatePath",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationIncludeConnectionSchemaDiagrams",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationIncludeConnectionSchemaDiagrams",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationIncludeConnectionSchemaDiagrams",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationIncludeObjectLineageDiagrams",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationIncludeObjectLineageDiagrams",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationIncludeObjectLineageDiagrams",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationPreviewHideFooter",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationPreviewHideFooter",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationPreviewHideFooter",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationPreviewHideHeader",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationPreviewHideHeader",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationPreviewHideHeader",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationPropertyDisplayMode",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationPropertyDisplayMode",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationPropertyDisplayMode",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationPropertyOrder",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationPropertyOrder",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationPropertyOrder",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DocumentationSensitivePropertyMode",
+                "href": "/docs/bimlflex/reference-documentation/settings/DocumentationSensitivePropertyMode",
+                "docId": "bimlflex/reference-documentation/settings/DocumentationSensitivePropertyMode",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for DvAccelerateCorrectKeyNames",
                 "href": "/docs/bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames",
                 "docId": "bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames",
@@ -2267,6 +2582,13 @@
                 "label": "BimlFlex Settings Definition for DvAccelerateTwoWayLinks",
                 "href": "/docs/bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks",
                 "docId": "bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvAddZeroKeys",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvAddZeroKeys",
+                "docId": "bimlflex/reference-documentation/settings/DvAddZeroKeys",
                 "unlisted": false
               },
               {
@@ -2348,9 +2670,51 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for DvColumnNamingConvention",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvColumnNamingConvention",
+                "docId": "bimlflex/reference-documentation/settings/DvColumnNamingConvention",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvCreateSatelliteViews",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvCreateSatelliteViews",
+                "docId": "bimlflex/reference-documentation/settings/DvCreateSatelliteViews",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvCurrentViewSuffix",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvCurrentViewSuffix",
+                "docId": "bimlflex/reference-documentation/settings/DvCurrentViewSuffix",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for DvDefaultSchema",
                 "href": "/docs/bimlflex/reference-documentation/settings/DvDefaultSchema",
                 "docId": "bimlflex/reference-documentation/settings/DvDefaultSchema",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvDeltaIsDerived",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvDeltaIsDerived",
+                "docId": "bimlflex/reference-documentation/settings/DvDeltaIsDerived",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvDeriveStagedObject",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvDeriveStagedObject",
+                "docId": "bimlflex/reference-documentation/settings/DvDeriveStagedObject",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvEffectivityViewSuffix",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvEffectivityViewSuffix",
+                "docId": "bimlflex/reference-documentation/settings/DvEffectivityViewSuffix",
                 "unlisted": false
               },
               {
@@ -2372,6 +2736,13 @@
                 "label": "BimlFlex Settings Definition for DvInferLinkHub",
                 "href": "/docs/bimlflex/reference-documentation/settings/DvInferLinkHub",
                 "docId": "bimlflex/reference-documentation/settings/DvInferLinkHub",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvInsertScriptWithTable",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvInsertScriptWithTable",
+                "docId": "bimlflex/reference-documentation/settings/DvInsertScriptWithTable",
                 "unlisted": false
               },
               {
@@ -2404,6 +2775,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for DvPrefixViewName",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvPrefixViewName",
+                "docId": "bimlflex/reference-documentation/settings/DvPrefixViewName",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for DvPreviewSchema",
                 "href": "/docs/bimlflex/reference-documentation/settings/DvPreviewSchema",
                 "docId": "bimlflex/reference-documentation/settings/DvPreviewSchema",
@@ -2418,6 +2796,48 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for DvSchemaBridge",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvSchemaBridge",
+                "docId": "bimlflex/reference-documentation/settings/DvSchemaBridge",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvSchemaHub",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvSchemaHub",
+                "docId": "bimlflex/reference-documentation/settings/DvSchemaHub",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvSchemaLink",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvSchemaLink",
+                "docId": "bimlflex/reference-documentation/settings/DvSchemaLink",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvSchemaLinkSatellite",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvSchemaLinkSatellite",
+                "docId": "bimlflex/reference-documentation/settings/DvSchemaLinkSatellite",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvSchemaPointInTime",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvSchemaPointInTime",
+                "docId": "bimlflex/reference-documentation/settings/DvSchemaPointInTime",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvSchemaSatellite",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvSchemaSatellite",
+                "docId": "bimlflex/reference-documentation/settings/DvSchemaSatellite",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for DvSingleChangeSatellite",
                 "href": "/docs/bimlflex/reference-documentation/settings/DvSingleChangeSatellite",
                 "docId": "bimlflex/reference-documentation/settings/DvSingleChangeSatellite",
@@ -2428,6 +2848,13 @@
                 "label": "BimlFlex Settings Definition for DvStageSurrogateKeys",
                 "href": "/docs/bimlflex/reference-documentation/settings/DvStageSurrogateKeys",
                 "docId": "bimlflex/reference-documentation/settings/DvStageSurrogateKeys",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvUniformChangeType",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvUniformChangeType",
+                "docId": "bimlflex/reference-documentation/settings/DvUniformChangeType",
                 "unlisted": false
               },
               {
@@ -2456,6 +2883,13 @@
                 "label": "BimlFlex Settings Definition for DvUseWhereExists",
                 "href": "/docs/bimlflex/reference-documentation/settings/DvUseWhereExists",
                 "docId": "bimlflex/reference-documentation/settings/DvUseWhereExists",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for DvZeroKeyExpression",
+                "href": "/docs/bimlflex/reference-documentation/settings/DvZeroKeyExpression",
+                "docId": "bimlflex/reference-documentation/settings/DvZeroKeyExpression",
                 "unlisted": false
               },
               {
@@ -2540,6 +2974,13 @@
                 "label": "BimlFlex Settings Definition for HashNullValue",
                 "href": "/docs/bimlflex/reference-documentation/settings/HashNullValue",
                 "docId": "bimlflex/reference-documentation/settings/HashNullValue",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for HideSecondaryExclusions",
+                "href": "/docs/bimlflex/reference-documentation/settings/HideSecondaryExclusions",
+                "docId": "bimlflex/reference-documentation/settings/HideSecondaryExclusions",
                 "unlisted": false
               },
               {
@@ -2649,6 +3090,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for PsaDeltaIsDerived",
+                "href": "/docs/bimlflex/reference-documentation/settings/PsaDeltaIsDerived",
+                "docId": "bimlflex/reference-documentation/settings/PsaDeltaIsDerived",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for PsaDeltaLateArriving",
                 "href": "/docs/bimlflex/reference-documentation/settings/PsaDeltaLateArriving",
                 "docId": "bimlflex/reference-documentation/settings/PsaDeltaLateArriving",
@@ -2666,6 +3114,13 @@
                 "label": "BimlFlex Settings Definition for PsaDeltaStageAllRows",
                 "href": "/docs/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows",
                 "docId": "bimlflex/reference-documentation/settings/PsaDeltaStageAllRows",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for PsaDeltaUseHashDiff",
+                "href": "/docs/bimlflex/reference-documentation/settings/PsaDeltaUseHashDiff",
+                "docId": "bimlflex/reference-documentation/settings/PsaDeltaUseHashDiff",
                 "unlisted": false
               },
               {
@@ -2747,6 +3202,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for SnowDtCleanOutputPath",
+                "href": "/docs/bimlflex/reference-documentation/settings/SnowDtCleanOutputPath",
+                "docId": "bimlflex/reference-documentation/settings/SnowDtCleanOutputPath",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for SnowDtOutputPath",
                 "href": "/docs/bimlflex/reference-documentation/settings/SnowDtOutputPath",
                 "docId": "bimlflex/reference-documentation/settings/SnowDtOutputPath",
@@ -2782,6 +3244,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for SnowflakeAddSqlComments",
+                "href": "/docs/bimlflex/reference-documentation/settings/SnowflakeAddSqlComments",
+                "docId": "bimlflex/reference-documentation/settings/SnowflakeAddSqlComments",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for SnowflakeAutoSuspend",
                 "href": "/docs/bimlflex/reference-documentation/settings/SnowflakeAutoSuspend",
                 "docId": "bimlflex/reference-documentation/settings/SnowflakeAutoSuspend",
@@ -2792,6 +3261,13 @@
                 "label": "BimlFlex Settings Definition for SnowflakeDatabase",
                 "href": "/docs/bimlflex/reference-documentation/settings/SnowflakeDatabase",
                 "docId": "bimlflex/reference-documentation/settings/SnowflakeDatabase",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for SnowflakeExecuteAs",
+                "href": "/docs/bimlflex/reference-documentation/settings/SnowflakeExecuteAs",
+                "docId": "bimlflex/reference-documentation/settings/SnowflakeExecuteAs",
                 "unlisted": false
               },
               {
@@ -2880,6 +3356,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for SsdtCleanOutputPath",
+                "href": "/docs/bimlflex/reference-documentation/settings/SsdtCleanOutputPath",
+                "docId": "bimlflex/reference-documentation/settings/SsdtCleanOutputPath",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for SsdtDefaultCredential",
                 "href": "/docs/bimlflex/reference-documentation/settings/SsdtDefaultCredential",
                 "docId": "bimlflex/reference-documentation/settings/SsdtDefaultCredential",
@@ -2964,9 +3447,30 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for SsdtSolutionName",
+                "href": "/docs/bimlflex/reference-documentation/settings/SsdtSolutionName",
+                "docId": "bimlflex/reference-documentation/settings/SsdtSolutionName",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for SsdtSuppressTSqlWarnings",
                 "href": "/docs/bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings",
                 "docId": "bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for SsdtUseDatabaseReferences",
+                "href": "/docs/bimlflex/reference-documentation/settings/SsdtUseDatabaseReferences",
+                "docId": "bimlflex/reference-documentation/settings/SsdtUseDatabaseReferences",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for SsdtVisualStudioVersion",
+                "href": "/docs/bimlflex/reference-documentation/settings/SsdtVisualStudioVersion",
+                "docId": "bimlflex/reference-documentation/settings/SsdtVisualStudioVersion",
                 "unlisted": false
               },
               {
@@ -3146,6 +3650,13 @@
               },
               {
                 "type": "link",
+                "label": "BimlFlex Settings Definition for StagedObjectConfigurations",
+                "href": "/docs/bimlflex/reference-documentation/settings/StagedObjectConfigurations",
+                "docId": "bimlflex/reference-documentation/settings/StagedObjectConfigurations",
+                "unlisted": false
+              },
+              {
+                "type": "link",
                 "label": "BimlFlex Settings Definition for StringConcatenator",
                 "href": "/docs/bimlflex/reference-documentation/settings/StringConcatenator",
                 "docId": "bimlflex/reference-documentation/settings/StringConcatenator",
@@ -3226,6 +3737,13 @@
                 "label": "BimlFlex Settings Definition for UseTryCastConversion",
                 "href": "/docs/bimlflex/reference-documentation/settings/UseTryCastConversion",
                 "docId": "bimlflex/reference-documentation/settings/UseTryCastConversion",
+                "unlisted": false
+              },
+              {
+                "type": "link",
+                "label": "BimlFlex Settings Definition for UseUserNullAssignment",
+                "href": "/docs/bimlflex/reference-documentation/settings/UseUserNullAssignment",
+                "docId": "bimlflex/reference-documentation/settings/UseUserNullAssignment",
                 "unlisted": false
               },
               {
@@ -4056,40 +4574,10 @@
       "description": "Documentation regarding the BimlFlex Attribute editor, including editor fields, field descriptions, and data types.",
       "sidebar": "bimlflexSidebar"
     },
-    "bimlflex/metadata-editors/batches": {
-      "id": "bimlflex/metadata-editors/batches",
-      "title": "Batch Editor",
-      "description": "Documentation regarding the BimlFlex Batch Editor, including editor fields, action buttons, field descriptions, and setting options.",
-      "sidebar": "bimlflexSidebar"
-    },
     "bimlflex/metadata-editors/bimlflex-tour": {
       "id": "bimlflex/metadata-editors/bimlflex-tour",
       "title": "BimlFlex Tour",
       "description": "Documentation describing the UI elements, navigation, and interaction within the BimlFlex App",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/metadata-editors/business-modeling": {
-      "id": "bimlflex/metadata-editors/business-modeling",
-      "title": "Business Modeling",
-      "description": "Overview of the Business Modeling process within BimlFlex App, including conceptual origin, creating a model, action bar, settings, and relationship models",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/metadata-editors/column-editor": {
-      "id": "bimlflex/metadata-editors/column-editor",
-      "title": "Column Editor",
-      "description": "Documentation regarding the BimlFlex Column editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/metadata-editors/configuration-editor": {
-      "id": "bimlflex/metadata-editors/configuration-editor",
-      "title": "Configuration Editor",
-      "description": "Documentation regarding the BimlFlex Configuration editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/metadata-editors/connection-editor": {
-      "id": "bimlflex/metadata-editors/connection-editor",
-      "title": "Connection Editor",
-      "description": "Documentation regarding the BimlFlex Connection editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/metadata-editors/customers": {
@@ -4110,12 +4598,6 @@
       "description": "Documentation on Data Lineage within BimlFlex to review and update graphical interface, with starting point, context aware actions, action buttons, and settings",
       "sidebar": "bimlflexSidebar"
     },
-    "bimlflex/metadata-editors/data-type-mappings": {
-      "id": "bimlflex/metadata-editors/data-type-mappings",
-      "title": "Data Type Mappings",
-      "description": "Documentation regarding the BimlFlex Data Type Mappings editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-      "sidebar": "bimlflexSidebar"
-    },
     "bimlflex/metadata-editors/database-settings": {
       "id": "bimlflex/metadata-editors/database-settings",
       "title": "Toolbar Icons and Options",
@@ -4128,18 +4610,6 @@
       "description": "Guide on how to update the BimlFlex Excel add-in",
       "sidebar": "bimlflexSidebar"
     },
-    "bimlflex/metadata-editors/index": {
-      "id": "bimlflex/metadata-editors/index",
-      "title": "Overview",
-      "description": "Overview of BimlFlex metadata editors with links to BimlFlex tour, dashboard, and editors",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/metadata-editors/object-editor": {
-      "id": "bimlflex/metadata-editors/object-editor",
-      "title": "Object Editor",
-      "description": "Documentation regarding the BimlFlex Object editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-      "sidebar": "bimlflexSidebar"
-    },
     "bimlflex/metadata-editors/operational-reports": {
       "id": "bimlflex/metadata-editors/operational-reports",
       "title": "Operational Reports",
@@ -4150,12 +4620,6 @@
       "id": "bimlflex/metadata-editors/parameter-editor",
       "title": "Parameter Editor",
       "description": "Documentation regarding the BimlFlex Parameter editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/metadata-editors/project-editor": {
-      "id": "bimlflex/metadata-editors/project-editor",
-      "title": "Project Editor",
-      "description": "Documentation regarding the BimlFlex Projects editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/metadata-editors/schema-diagram": {
@@ -4174,12 +4638,6 @@
       "id": "bimlflex/metadata-editors/treeview",
       "title": "Treeview",
       "description": "Overview of the BimlFlex Treeview",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/metadata-editors/version-editor": {
-      "id": "bimlflex/metadata-editors/version-editor",
-      "title": "Version Editor",
-      "description": "Documentation regarding the BimlFlex Versions editor, including editor fields, action buttons, field descriptions, setting options, and overrides.",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/orchestration/index": {
@@ -4270,12 +4728,6 @@
       "id": "bimlflex/reference-documentation/entities/Version",
       "title": "BimlFlex App Definition for Versions",
       "description": "Documentation of functionality within BimlFlex for Versions",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/reference-documentation/extension-points/Azure": {
-      "id": "bimlflex/reference-documentation/extension-points/Azure",
-      "title": "BimlFlex App Definition for Azure",
-      "description": "Documentation of functionality within BimlFlex for the Azure Extension Point category",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/extension-points/Batch": {
@@ -4476,6 +4928,12 @@
       "description": "Documentation of settings option within BimlFlex for ApplyDataTypeMappingDv",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/ApplyDataTypeMappings": {
+      "id": "bimlflex/reference-documentation/settings/ApplyDataTypeMappings",
+      "title": "BimlFlex Settings Definition for ApplyDataTypeMappings",
+      "description": "Documentation of settings option within BimlFlex for ApplyDataTypeMappings",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/ApplyDataTypeMappingStg": {
       "id": "bimlflex/reference-documentation/settings/ApplyDataTypeMappingStg",
       "title": "BimlFlex Settings Definition for ApplyDataTypeMappingStg",
@@ -4614,6 +5072,12 @@
       "description": "Documentation of settings option within BimlFlex for AzureArchiveSasToken",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/AzureArchiveSourceFiles": {
+      "id": "bimlflex/reference-documentation/settings/AzureArchiveSourceFiles",
+      "title": "BimlFlex Settings Definition for AzureArchiveSourceFiles",
+      "description": "Documentation of settings option within BimlFlex for AzureArchiveSourceFiles",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/AzureArchiveStage": {
       "id": "bimlflex/reference-documentation/settings/AzureArchiveStage",
       "title": "BimlFlex Settings Definition for AzureArchiveStage",
@@ -4624,6 +5088,12 @@
       "id": "bimlflex/reference-documentation/settings/AzureBlobStorageDomain",
       "title": "BimlFlex Settings Definition for AzureBlobStorageDomain",
       "description": "Documentation of settings option within BimlFlex for AzureBlobStorageDomain",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureCopyBehavior": {
+      "id": "bimlflex/reference-documentation/settings/AzureCopyBehavior",
+      "title": "BimlFlex Settings Definition for AzureCopyBehavior",
+      "description": "Documentation of settings option within BimlFlex for AzureCopyBehavior",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/AzureCopyDataIntegrationUnits": {
@@ -4642,6 +5112,12 @@
       "id": "bimlflex/reference-documentation/settings/AzureCopyEnableStaging",
       "title": "BimlFlex Settings Definition for AzureCopyEnableStaging",
       "description": "Documentation of settings option within BimlFlex for AzureCopyEnableStaging",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureCopyIsRecursive": {
+      "id": "bimlflex/reference-documentation/settings/AzureCopyIsRecursive",
+      "title": "BimlFlex Settings Definition for AzureCopyIsRecursive",
+      "description": "Documentation of settings option within BimlFlex for AzureCopyIsRecursive",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/AzureCopyLogSettings": {
@@ -4686,6 +5162,12 @@
       "description": "Documentation of settings option within BimlFlex for AzureCopySecureOutput",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/AzureCopySourceSettings": {
+      "id": "bimlflex/reference-documentation/settings/AzureCopySourceSettings",
+      "title": "BimlFlex Settings Definition for AzureCopySourceSettings",
+      "description": "Documentation of settings option within BimlFlex for AzureCopySourceSettings",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/AzureCopyStagingSettings": {
       "id": "bimlflex/reference-documentation/settings/AzureCopyStagingSettings",
       "title": "BimlFlex Settings Definition for AzureCopyStagingSettings",
@@ -4716,6 +5198,12 @@
       "description": "Documentation of settings option within BimlFlex for AzureCreateExternalOnStage",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/AzureDataFactoryLocation": {
+      "id": "bimlflex/reference-documentation/settings/AzureDataFactoryLocation",
+      "title": "BimlFlex Settings Definition for AzureDataFactoryLocation",
+      "description": "Documentation of settings option within BimlFlex for AzureDataFactoryLocation",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/AzureDataFactoryName": {
       "id": "bimlflex/reference-documentation/settings/AzureDataFactoryName",
       "title": "BimlFlex Settings Definition for AzureDataFactoryName",
@@ -4726,6 +5214,12 @@
       "id": "bimlflex/reference-documentation/settings/AzureDeleteLandingFiles",
       "title": "BimlFlex Settings Definition for AzureDeleteLandingFiles",
       "description": "Documentation of settings option within BimlFlex for AzureDeleteLandingFiles",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureDeleteSourceFiles": {
+      "id": "bimlflex/reference-documentation/settings/AzureDeleteSourceFiles",
+      "title": "BimlFlex Settings Definition for AzureDeleteSourceFiles",
+      "description": "Documentation of settings option within BimlFlex for AzureDeleteSourceFiles",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/AzureDeploymentAccountKey": {
@@ -4896,6 +5390,12 @@
       "description": "Documentation of settings option within BimlFlex for AzureOnErrorLandingFiles",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/AzureOnErrorSourceFiles": {
+      "id": "bimlflex/reference-documentation/settings/AzureOnErrorSourceFiles",
+      "title": "BimlFlex Settings Definition for AzureOnErrorSourceFiles",
+      "description": "Documentation of settings option within BimlFlex for AzureOnErrorSourceFiles",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/AzurePolybaseSettings": {
       "id": "bimlflex/reference-documentation/settings/AzurePolybaseSettings",
       "title": "BimlFlex Settings Definition for AzurePolybaseSettings",
@@ -4912,6 +5412,54 @@
       "id": "bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables",
       "title": "BimlFlex Settings Definition for AzureRoundRobinTemporaryTables",
       "description": "Documentation of settings option within BimlFlex for AzureRoundRobinTemporaryTables",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureScriptEnableLogging": {
+      "id": "bimlflex/reference-documentation/settings/AzureScriptEnableLogging",
+      "title": "BimlFlex Settings Definition for AzureScriptEnableLogging",
+      "description": "Documentation of settings option within BimlFlex for AzureScriptEnableLogging",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureScriptExeutionTimeout": {
+      "id": "bimlflex/reference-documentation/settings/AzureScriptExeutionTimeout",
+      "title": "BimlFlex Settings Definition for AzureScriptExeutionTimeout",
+      "description": "Documentation of settings option within BimlFlex for AzureScriptExeutionTimeout",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureScriptLogSettings": {
+      "id": "bimlflex/reference-documentation/settings/AzureScriptLogSettings",
+      "title": "BimlFlex Settings Definition for AzureScriptLogSettings",
+      "description": "Documentation of settings option within BimlFlex for AzureScriptLogSettings",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureScriptRetryAttempts": {
+      "id": "bimlflex/reference-documentation/settings/AzureScriptRetryAttempts",
+      "title": "BimlFlex Settings Definition for AzureScriptRetryAttempts",
+      "description": "Documentation of settings option within BimlFlex for AzureScriptRetryAttempts",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureScriptRetryInterval": {
+      "id": "bimlflex/reference-documentation/settings/AzureScriptRetryInterval",
+      "title": "BimlFlex Settings Definition for AzureScriptRetryInterval",
+      "description": "Documentation of settings option within BimlFlex for AzureScriptRetryInterval",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureScriptSecureInput": {
+      "id": "bimlflex/reference-documentation/settings/AzureScriptSecureInput",
+      "title": "BimlFlex Settings Definition for AzureScriptSecureInput",
+      "description": "Documentation of settings option within BimlFlex for AzureScriptSecureInput",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureScriptSecureOutput": {
+      "id": "bimlflex/reference-documentation/settings/AzureScriptSecureOutput",
+      "title": "BimlFlex Settings Definition for AzureScriptSecureOutput",
+      "description": "Documentation of settings option within BimlFlex for AzureScriptSecureOutput",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/AzureScriptTimeout": {
+      "id": "bimlflex/reference-documentation/settings/AzureScriptTimeout",
+      "title": "BimlFlex Settings Definition for AzureScriptTimeout",
+      "description": "Documentation of settings option within BimlFlex for AzureScriptTimeout",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/AzureStageAccountKey": {
@@ -4948,6 +5496,30 @@
       "id": "bimlflex/reference-documentation/settings/AzureSubscriptionId",
       "title": "BimlFlex Settings Definition for AzureSubscriptionId",
       "description": "Documentation of settings option within BimlFlex for AzureSubscriptionId",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/BmAttributeNamingConvention": {
+      "id": "bimlflex/reference-documentation/settings/BmAttributeNamingConvention",
+      "title": "BimlFlex Settings Definition for BmAttributeNamingConvention",
+      "description": "Documentation of settings option within BimlFlex for BmAttributeNamingConvention",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/BmAttributeTechnicalNamingConvention": {
+      "id": "bimlflex/reference-documentation/settings/BmAttributeTechnicalNamingConvention",
+      "title": "BimlFlex Settings Definition for BmAttributeTechnicalNamingConvention",
+      "description": "Documentation of settings option within BimlFlex for BmAttributeTechnicalNamingConvention",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/BmEntityNamingConvention": {
+      "id": "bimlflex/reference-documentation/settings/BmEntityNamingConvention",
+      "title": "BimlFlex Settings Definition for BmEntityNamingConvention",
+      "description": "Documentation of settings option within BimlFlex for BmEntityNamingConvention",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/BmEntityTechnicalNamingConvention": {
+      "id": "bimlflex/reference-documentation/settings/BmEntityTechnicalNamingConvention",
+      "title": "BimlFlex Settings Definition for BmEntityTechnicalNamingConvention",
+      "description": "Documentation of settings option within BimlFlex for BmEntityTechnicalNamingConvention",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/BmNamingConvention": {
@@ -4998,6 +5570,138 @@
       "description": "Documentation of settings option within BimlFlex for ConvertGuidToString",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/DatabricksActivityRetryAttempts": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksActivityRetryAttempts",
+      "title": "BimlFlex Settings Definition for DatabricksActivityRetryAttempts",
+      "description": "Documentation of settings option within BimlFlex for DatabricksActivityRetryAttempts",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksActivityRetryInterval": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksActivityRetryInterval",
+      "title": "BimlFlex Settings Definition for DatabricksActivityRetryInterval",
+      "description": "Documentation of settings option within BimlFlex for DatabricksActivityRetryInterval",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksActivitySecureInput": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksActivitySecureInput",
+      "title": "BimlFlex Settings Definition for DatabricksActivitySecureInput",
+      "description": "Documentation of settings option within BimlFlex for DatabricksActivitySecureInput",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksActivitySecureOutput": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksActivitySecureOutput",
+      "title": "BimlFlex Settings Definition for DatabricksActivitySecureOutput",
+      "description": "Documentation of settings option within BimlFlex for DatabricksActivitySecureOutput",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksActivityTimeout": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksActivityTimeout",
+      "title": "BimlFlex Settings Definition for DatabricksActivityTimeout",
+      "description": "Documentation of settings option within BimlFlex for DatabricksActivityTimeout",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksAddCreateCatalog": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksAddCreateCatalog",
+      "title": "BimlFlex Settings Definition for DatabricksAddCreateCatalog",
+      "description": "Documentation of settings option within BimlFlex for DatabricksAddCreateCatalog",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksAddDropNotebooks": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksAddDropNotebooks",
+      "title": "BimlFlex Settings Definition for DatabricksAddDropNotebooks",
+      "description": "Documentation of settings option within BimlFlex for DatabricksAddDropNotebooks",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksAddSqlComments": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksAddSqlComments",
+      "title": "BimlFlex Settings Definition for DatabricksAddSqlComments",
+      "description": "Documentation of settings option within BimlFlex for DatabricksAddSqlComments",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksAddTruncateNotebooks": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksAddTruncateNotebooks",
+      "title": "BimlFlex Settings Definition for DatabricksAddTruncateNotebooks",
+      "description": "Documentation of settings option within BimlFlex for DatabricksAddTruncateNotebooks",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksAppendNotebookName": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksAppendNotebookName",
+      "title": "BimlFlex Settings Definition for DatabricksAppendNotebookName",
+      "description": "Documentation of settings option within BimlFlex for DatabricksAppendNotebookName",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksCopyFormatOptions": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksCopyFormatOptions",
+      "title": "BimlFlex Settings Definition for DatabricksCopyFormatOptions",
+      "description": "Documentation of settings option within BimlFlex for DatabricksCopyFormatOptions",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksCopyOptions": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksCopyOptions",
+      "title": "BimlFlex Settings Definition for DatabricksCopyOptions",
+      "description": "Documentation of settings option within BimlFlex for DatabricksCopyOptions",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksDataTimeZone": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksDataTimeZone",
+      "title": "BimlFlex Settings Definition for DatabricksDataTimeZone",
+      "description": "Documentation of settings option within BimlFlex for DatabricksDataTimeZone",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksDisplayTimeZone": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksDisplayTimeZone",
+      "title": "BimlFlex Settings Definition for DatabricksDisplayTimeZone",
+      "description": "Documentation of settings option within BimlFlex for DatabricksDisplayTimeZone",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksNotebookPath": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksNotebookPath",
+      "title": "BimlFlex Settings Definition for DatabricksNotebookPath",
+      "description": "Documentation of settings option within BimlFlex for DatabricksNotebookPath",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksOutputPath": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksOutputPath",
+      "title": "BimlFlex Settings Definition for DatabricksOutputPath",
+      "description": "Documentation of settings option within BimlFlex for DatabricksOutputPath",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksRepositoryName": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksRepositoryName",
+      "title": "BimlFlex Settings Definition for DatabricksRepositoryName",
+      "description": "Documentation of settings option within BimlFlex for DatabricksRepositoryName",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksTableProperties": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksTableProperties",
+      "title": "BimlFlex Settings Definition for DatabricksTableProperties",
+      "description": "Documentation of settings option within BimlFlex for DatabricksTableProperties",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksUseGlobalParameters": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksUseGlobalParameters",
+      "title": "BimlFlex Settings Definition for DatabricksUseGlobalParameters",
+      "description": "Documentation of settings option within BimlFlex for DatabricksUseGlobalParameters",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksUseManagedTables": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksUseManagedTables",
+      "title": "BimlFlex Settings Definition for DatabricksUseManagedTables",
+      "description": "Documentation of settings option within BimlFlex for DatabricksUseManagedTables",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksUseTemporaryViews": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksUseTemporaryViews",
+      "title": "BimlFlex Settings Definition for DatabricksUseTemporaryViews",
+      "description": "Documentation of settings option within BimlFlex for DatabricksUseTemporaryViews",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DatabricksUseUnityCatalog": {
+      "id": "bimlflex/reference-documentation/settings/DatabricksUseUnityCatalog",
+      "title": "BimlFlex Settings Definition for DatabricksUseUnityCatalog",
+      "description": "Documentation of settings option within BimlFlex for DatabricksUseUnityCatalog",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/DeleteDetectionApplyDv": {
       "id": "bimlflex/reference-documentation/settings/DeleteDetectionApplyDv",
       "title": "BimlFlex Settings Definition for DeleteDetectionApplyDv",
@@ -5010,10 +5714,34 @@
       "description": "Documentation of settings option within BimlFlex for DeleteDetectionApplyPsa",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/DeleteDetectionArchiveFiles": {
+      "id": "bimlflex/reference-documentation/settings/DeleteDetectionArchiveFiles",
+      "title": "BimlFlex Settings Definition for DeleteDetectionArchiveFiles",
+      "description": "Documentation of settings option within BimlFlex for DeleteDetectionArchiveFiles",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DeleteDetectionDeleteFiles": {
+      "id": "bimlflex/reference-documentation/settings/DeleteDetectionDeleteFiles",
+      "title": "BimlFlex Settings Definition for DeleteDetectionDeleteFiles",
+      "description": "Documentation of settings option within BimlFlex for DeleteDetectionDeleteFiles",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/DeleteDetectionEnabled": {
       "id": "bimlflex/reference-documentation/settings/DeleteDetectionEnabled",
       "title": "BimlFlex Settings Definition for DeleteDetectionEnabled",
       "description": "Documentation of settings option within BimlFlex for DeleteDetectionEnabled",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DeleteDetectionOnErrorFiles": {
+      "id": "bimlflex/reference-documentation/settings/DeleteDetectionOnErrorFiles",
+      "title": "BimlFlex Settings Definition for DeleteDetectionOnErrorFiles",
+      "description": "Documentation of settings option within BimlFlex for DeleteDetectionOnErrorFiles",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DeleteDetectionOnStage": {
+      "id": "bimlflex/reference-documentation/settings/DeleteDetectionOnStage",
+      "title": "BimlFlex Settings Definition for DeleteDetectionOnStage",
+      "description": "Documentation of settings option within BimlFlex for DeleteDetectionOnStage",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/DeleteImportFile": {
@@ -5106,6 +5834,66 @@
       "description": "Documentation of settings option within BimlFlex for DmStageOnInitialLoad",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/DocumentationFormItemSettings": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationFormItemSettings",
+      "title": "BimlFlex Settings Definition for DocumentationFormItemSettings",
+      "description": "Documentation of settings option within BimlFlex for DocumentationFormItemSettings",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationHideEmptyGroups": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationHideEmptyGroups",
+      "title": "BimlFlex Settings Definition for DocumentationHideEmptyGroups",
+      "description": "Documentation of settings option within BimlFlex for DocumentationHideEmptyGroups",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationHtmlTemplatePath": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationHtmlTemplatePath",
+      "title": "BimlFlex Settings Definition for DocumentationHtmlTemplatePath",
+      "description": "Documentation of settings option within BimlFlex for DocumentationHtmlTemplatePath",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationIncludeConnectionSchemaDiagrams": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationIncludeConnectionSchemaDiagrams",
+      "title": "BimlFlex Settings Definition for DocumentationIncludeConnectionSchemaDiagrams",
+      "description": "Documentation of settings option within BimlFlex for DocumentationIncludeConnectionSchemaDiagrams",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationIncludeObjectLineageDiagrams": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationIncludeObjectLineageDiagrams",
+      "title": "BimlFlex Settings Definition for DocumentationIncludeObjectLineageDiagrams",
+      "description": "Documentation of settings option within BimlFlex for DocumentationIncludeObjectLineageDiagrams",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationPreviewHideFooter": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationPreviewHideFooter",
+      "title": "BimlFlex Settings Definition for DocumentationPreviewHideFooter",
+      "description": "Documentation of settings option within BimlFlex for DocumentationPreviewHideFooter",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationPreviewHideHeader": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationPreviewHideHeader",
+      "title": "BimlFlex Settings Definition for DocumentationPreviewHideHeader",
+      "description": "Documentation of settings option within BimlFlex for DocumentationPreviewHideHeader",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationPropertyDisplayMode": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationPropertyDisplayMode",
+      "title": "BimlFlex Settings Definition for DocumentationPropertyDisplayMode",
+      "description": "Documentation of settings option within BimlFlex for DocumentationPropertyDisplayMode",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationPropertyOrder": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationPropertyOrder",
+      "title": "BimlFlex Settings Definition for DocumentationPropertyOrder",
+      "description": "Documentation of settings option within BimlFlex for DocumentationPropertyOrder",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DocumentationSensitivePropertyMode": {
+      "id": "bimlflex/reference-documentation/settings/DocumentationSensitivePropertyMode",
+      "title": "BimlFlex Settings Definition for DocumentationSensitivePropertyMode",
+      "description": "Documentation of settings option within BimlFlex for DocumentationSensitivePropertyMode",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames": {
       "id": "bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames",
       "title": "BimlFlex Settings Definition for DvAccelerateCorrectKeyNames",
@@ -5158,6 +5946,12 @@
       "id": "bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks",
       "title": "BimlFlex Settings Definition for DvAccelerateTwoWayLinks",
       "description": "Documentation of settings option within BimlFlex for DvAccelerateTwoWayLinks",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvAddZeroKeys": {
+      "id": "bimlflex/reference-documentation/settings/DvAddZeroKeys",
+      "title": "BimlFlex Settings Definition for DvAddZeroKeys",
+      "description": "Documentation of settings option within BimlFlex for DvAddZeroKeys",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/DvAppendBridge": {
@@ -5226,10 +6020,46 @@
       "description": "Documentation of settings option within BimlFlex for DvBridgeLagDays",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/DvColumnNamingConvention": {
+      "id": "bimlflex/reference-documentation/settings/DvColumnNamingConvention",
+      "title": "BimlFlex Settings Definition for DvColumnNamingConvention",
+      "description": "Documentation of settings option within BimlFlex for DvColumnNamingConvention",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvCreateSatelliteViews": {
+      "id": "bimlflex/reference-documentation/settings/DvCreateSatelliteViews",
+      "title": "BimlFlex Settings Definition for DvCreateSatelliteViews",
+      "description": "Documentation of settings option within BimlFlex for DvCreateSatelliteViews",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvCurrentViewSuffix": {
+      "id": "bimlflex/reference-documentation/settings/DvCurrentViewSuffix",
+      "title": "BimlFlex Settings Definition for DvCurrentViewSuffix",
+      "description": "Documentation of settings option within BimlFlex for DvCurrentViewSuffix",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/DvDefaultSchema": {
       "id": "bimlflex/reference-documentation/settings/DvDefaultSchema",
       "title": "BimlFlex Settings Definition for DvDefaultSchema",
       "description": "Documentation of settings option within BimlFlex for DvDefaultSchema",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvDeltaIsDerived": {
+      "id": "bimlflex/reference-documentation/settings/DvDeltaIsDerived",
+      "title": "BimlFlex Settings Definition for DvDeltaIsDerived",
+      "description": "Documentation of settings option within BimlFlex for DvDeltaIsDerived",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvDeriveStagedObject": {
+      "id": "bimlflex/reference-documentation/settings/DvDeriveStagedObject",
+      "title": "BimlFlex Settings Definition for DvDeriveStagedObject",
+      "description": "Documentation of settings option within BimlFlex for DvDeriveStagedObject",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvEffectivityViewSuffix": {
+      "id": "bimlflex/reference-documentation/settings/DvEffectivityViewSuffix",
+      "title": "BimlFlex Settings Definition for DvEffectivityViewSuffix",
+      "description": "Documentation of settings option within BimlFlex for DvEffectivityViewSuffix",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/DvEltDeltaIsDerived": {
@@ -5248,6 +6078,12 @@
       "id": "bimlflex/reference-documentation/settings/DvInferLinkHub",
       "title": "BimlFlex Settings Definition for DvInferLinkHub",
       "description": "Documentation of settings option within BimlFlex for DvInferLinkHub",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvInsertScriptWithTable": {
+      "id": "bimlflex/reference-documentation/settings/DvInsertScriptWithTable",
+      "title": "BimlFlex Settings Definition for DvInsertScriptWithTable",
+      "description": "Documentation of settings option within BimlFlex for DvInsertScriptWithTable",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/DvNamingConvention": {
@@ -5274,6 +6110,12 @@
       "description": "Documentation of settings option within BimlFlex for DvPrefixSurrogateKey",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/DvPrefixViewName": {
+      "id": "bimlflex/reference-documentation/settings/DvPrefixViewName",
+      "title": "BimlFlex Settings Definition for DvPrefixViewName",
+      "description": "Documentation of settings option within BimlFlex for DvPrefixViewName",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/DvPreviewSchema": {
       "id": "bimlflex/reference-documentation/settings/DvPreviewSchema",
       "title": "BimlFlex Settings Definition for DvPreviewSchema",
@@ -5286,6 +6128,42 @@
       "description": "Documentation of settings option within BimlFlex for DvProcessOnStage",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/DvSchemaBridge": {
+      "id": "bimlflex/reference-documentation/settings/DvSchemaBridge",
+      "title": "BimlFlex Settings Definition for DvSchemaBridge",
+      "description": "Documentation of settings option within BimlFlex for DvSchemaBridge",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvSchemaHub": {
+      "id": "bimlflex/reference-documentation/settings/DvSchemaHub",
+      "title": "BimlFlex Settings Definition for DvSchemaHub",
+      "description": "Documentation of settings option within BimlFlex for DvSchemaHub",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvSchemaLink": {
+      "id": "bimlflex/reference-documentation/settings/DvSchemaLink",
+      "title": "BimlFlex Settings Definition for DvSchemaLink",
+      "description": "Documentation of settings option within BimlFlex for DvSchemaLink",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvSchemaLinkSatellite": {
+      "id": "bimlflex/reference-documentation/settings/DvSchemaLinkSatellite",
+      "title": "BimlFlex Settings Definition for DvSchemaLinkSatellite",
+      "description": "Documentation of settings option within BimlFlex for DvSchemaLinkSatellite",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvSchemaPointInTime": {
+      "id": "bimlflex/reference-documentation/settings/DvSchemaPointInTime",
+      "title": "BimlFlex Settings Definition for DvSchemaPointInTime",
+      "description": "Documentation of settings option within BimlFlex for DvSchemaPointInTime",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvSchemaSatellite": {
+      "id": "bimlflex/reference-documentation/settings/DvSchemaSatellite",
+      "title": "BimlFlex Settings Definition for DvSchemaSatellite",
+      "description": "Documentation of settings option within BimlFlex for DvSchemaSatellite",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/DvSingleChangeSatellite": {
       "id": "bimlflex/reference-documentation/settings/DvSingleChangeSatellite",
       "title": "BimlFlex Settings Definition for DvSingleChangeSatellite",
@@ -5296,6 +6174,12 @@
       "id": "bimlflex/reference-documentation/settings/DvStageSurrogateKeys",
       "title": "BimlFlex Settings Definition for DvStageSurrogateKeys",
       "description": "Documentation of settings option within BimlFlex for DvStageSurrogateKeys",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvUniformChangeType": {
+      "id": "bimlflex/reference-documentation/settings/DvUniformChangeType",
+      "title": "BimlFlex Settings Definition for DvUniformChangeType",
+      "description": "Documentation of settings option within BimlFlex for DvUniformChangeType",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/DvUseCacheLookup": {
@@ -5320,6 +6204,12 @@
       "id": "bimlflex/reference-documentation/settings/DvUseWhereExists",
       "title": "BimlFlex Settings Definition for DvUseWhereExists",
       "description": "Documentation of settings option within BimlFlex for DvUseWhereExists",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/DvZeroKeyExpression": {
+      "id": "bimlflex/reference-documentation/settings/DvZeroKeyExpression",
+      "title": "BimlFlex Settings Definition for DvZeroKeyExpression",
+      "description": "Documentation of settings option within BimlFlex for DvZeroKeyExpression",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/EnableEndDatePsa": {
@@ -5392,6 +6282,12 @@
       "id": "bimlflex/reference-documentation/settings/HashNullValue",
       "title": "BimlFlex Settings Definition for HashNullValue",
       "description": "Documentation of settings option within BimlFlex for HashNullValue",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/HideSecondaryExclusions": {
+      "id": "bimlflex/reference-documentation/settings/HideSecondaryExclusions",
+      "title": "BimlFlex Settings Definition for HideSecondaryExclusions",
+      "description": "Documentation of settings option within BimlFlex for HideSecondaryExclusions",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/ImportPath": {
@@ -5484,6 +6380,12 @@
       "description": "Documentation of settings option within BimlFlex for PsaDeltaDetectionSql",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/PsaDeltaIsDerived": {
+      "id": "bimlflex/reference-documentation/settings/PsaDeltaIsDerived",
+      "title": "BimlFlex Settings Definition for PsaDeltaIsDerived",
+      "description": "Documentation of settings option within BimlFlex for PsaDeltaIsDerived",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/PsaDeltaLateArriving": {
       "id": "bimlflex/reference-documentation/settings/PsaDeltaLateArriving",
       "title": "BimlFlex Settings Definition for PsaDeltaLateArriving",
@@ -5500,6 +6402,12 @@
       "id": "bimlflex/reference-documentation/settings/PsaDeltaStageAllRows",
       "title": "BimlFlex Settings Definition for PsaDeltaStageAllRows",
       "description": "Documentation of settings option within BimlFlex for PsaDeltaStageAllRows",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/PsaDeltaUseHashDiff": {
+      "id": "bimlflex/reference-documentation/settings/PsaDeltaUseHashDiff",
+      "title": "BimlFlex Settings Definition for PsaDeltaUseHashDiff",
+      "description": "Documentation of settings option within BimlFlex for PsaDeltaUseHashDiff",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/PsaEltDeltaIsDerived": {
@@ -5568,6 +6476,12 @@
       "description": "Documentation of settings option within BimlFlex for SnapshotRetentionPeriod",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/SnowDtCleanOutputPath": {
+      "id": "bimlflex/reference-documentation/settings/SnowDtCleanOutputPath",
+      "title": "BimlFlex Settings Definition for SnowDtCleanOutputPath",
+      "description": "Documentation of settings option within BimlFlex for SnowDtCleanOutputPath",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/SnowDtOutputPath": {
       "id": "bimlflex/reference-documentation/settings/SnowDtOutputPath",
       "title": "BimlFlex Settings Definition for SnowDtOutputPath",
@@ -5580,6 +6494,12 @@
       "description": "Documentation of settings option within BimlFlex for SnowflakeAccount",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/SnowflakeAddSqlComments": {
+      "id": "bimlflex/reference-documentation/settings/SnowflakeAddSqlComments",
+      "title": "BimlFlex Settings Definition for SnowflakeAddSqlComments",
+      "description": "Documentation of settings option within BimlFlex for SnowflakeAddSqlComments",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/SnowflakeAutoSuspend": {
       "id": "bimlflex/reference-documentation/settings/SnowflakeAutoSuspend",
       "title": "BimlFlex Settings Definition for SnowflakeAutoSuspend",
@@ -5590,6 +6510,12 @@
       "id": "bimlflex/reference-documentation/settings/SnowflakeDatabase",
       "title": "BimlFlex Settings Definition for SnowflakeDatabase",
       "description": "Documentation of settings option within BimlFlex for SnowflakeDatabase",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/SnowflakeExecuteAs": {
+      "id": "bimlflex/reference-documentation/settings/SnowflakeExecuteAs",
+      "title": "BimlFlex Settings Definition for SnowflakeExecuteAs",
+      "description": "Documentation of settings option within BimlFlex for SnowflakeExecuteAs",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/SnowflakeFileFormat": {
@@ -5682,6 +6608,12 @@
       "description": "Documentation of settings option within BimlFlex for SqlCmdOverride",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/SsdtCleanOutputPath": {
+      "id": "bimlflex/reference-documentation/settings/SsdtCleanOutputPath",
+      "title": "BimlFlex Settings Definition for SsdtCleanOutputPath",
+      "description": "Documentation of settings option within BimlFlex for SsdtCleanOutputPath",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/SsdtDefaultCredential": {
       "id": "bimlflex/reference-documentation/settings/SsdtDefaultCredential",
       "title": "BimlFlex Settings Definition for SsdtDefaultCredential",
@@ -5754,10 +6686,28 @@
       "description": "Documentation of settings option within BimlFlex for SsdtOverwriteExternalTableDefaults",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/SsdtSolutionName": {
+      "id": "bimlflex/reference-documentation/settings/SsdtSolutionName",
+      "title": "BimlFlex Settings Definition for SsdtSolutionName",
+      "description": "Documentation of settings option within BimlFlex for SsdtSolutionName",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings": {
       "id": "bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings",
       "title": "BimlFlex Settings Definition for SsdtSuppressTSqlWarnings",
       "description": "Documentation of settings option within BimlFlex for SsdtSuppressTSqlWarnings",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/SsdtUseDatabaseReferences": {
+      "id": "bimlflex/reference-documentation/settings/SsdtUseDatabaseReferences",
+      "title": "BimlFlex Settings Definition for SsdtUseDatabaseReferences",
+      "description": "Documentation of settings option within BimlFlex for SsdtUseDatabaseReferences",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/SsdtVisualStudioVersion": {
+      "id": "bimlflex/reference-documentation/settings/SsdtVisualStudioVersion",
+      "title": "BimlFlex Settings Definition for SsdtVisualStudioVersion",
+      "description": "Documentation of settings option within BimlFlex for SsdtVisualStudioVersion",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize": {
@@ -5898,6 +6848,12 @@
       "description": "Documentation of settings option within BimlFlex for StageColumnWithBusinessName",
       "sidebar": "bimlflexSidebar"
     },
+    "bimlflex/reference-documentation/settings/StagedObjectConfigurations": {
+      "id": "bimlflex/reference-documentation/settings/StagedObjectConfigurations",
+      "title": "BimlFlex Settings Definition for StagedObjectConfigurations",
+      "description": "Documentation of settings option within BimlFlex for StagedObjectConfigurations",
+      "sidebar": "bimlflexSidebar"
+    },
     "bimlflex/reference-documentation/settings/StageObjectWithBusinessName": {
       "id": "bimlflex/reference-documentation/settings/StageObjectWithBusinessName",
       "title": "BimlFlex Settings Definition for StageObjectWithBusinessName",
@@ -5980,6 +6936,12 @@
       "id": "bimlflex/reference-documentation/settings/UseTryCastConversion",
       "title": "BimlFlex Settings Definition for UseTryCastConversion",
       "description": "Documentation of settings option within BimlFlex for UseTryCastConversion",
+      "sidebar": "bimlflexSidebar"
+    },
+    "bimlflex/reference-documentation/settings/UseUserNullAssignment": {
+      "id": "bimlflex/reference-documentation/settings/UseUserNullAssignment",
+      "title": "BimlFlex Settings Definition for UseUserNullAssignment",
+      "description": "Documentation of settings option within BimlFlex for UseUserNullAssignment",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/ZipArchiveImport": {

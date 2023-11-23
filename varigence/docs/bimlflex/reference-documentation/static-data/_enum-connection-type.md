@@ -7,7 +7,7 @@ tags: [BimlFlex, Reference]
 Connection Types
 Header not included because it is used in different ways
 -->
-**Connection Types** are configured using the [**Connection Editor**](bimlflex-connection-editor) to define what kind of data source or target is connected to.
+**Connection Types** are configured using the [**Connection Editor**](../../metadata-editors/connection-editor) to define what kind of data source or target is connected to.
 
 | Connection Type     | Code | Description | Applies To |
 | ------------------- | ---- | ----------- | ---------- |

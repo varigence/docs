@@ -7,7 +7,7 @@ tags: [BimlFlex, Reference]
 
 import InclSidePanelColumnEditor from './_incl-side-panel-column-editor.md';
 import InclSidePanelObjectEditor from './_incl-side-panel-object-editor.md';
-import InclSidePanelRelationshipEditor from './_incl-side-panel-relationship-editor.md';
+import InclSidePanelRelationshipEditor from './_incl-side-panel-relationship-editor.mdx';
 
 # Data Lineage
 
@@ -15,7 +15,7 @@ The **Data Lineage Designer** can be used to review your **Column Mappings** in 
 
 The designer provides an view of one or more relationships between **Columns**, referred to as source-target mappings or simply 'mappings'. This designer allows a modeler to get a quick view of mappings in a graphical interface.
 
-![Column Mapping User Interface](images/bimlflex-app-data-lineage-full-ui.png "Column Mapping User Interface")
+![Column Mapping User Interface](/img/bimlflex/bimlflex-app-data-lineage-full-ui.png "Column Mapping User Interface")
 
 The screenshot above shows the mapping from a source Object to the various target Data Vault objects.
 
@@ -54,18 +54,18 @@ Depending on whether you select an **Object**, **Column** or **Relationship** th
 
 By clicking on a ellipsis on the object, the designer will be presented with the object-level actions.
 
-![Object Actions in the Data Lineage Designer](images/data-lineage-object-level-context-actions.png "Object Actions in the Data Lineage Designer")
+![Object Actions in the Data Lineage Designer](/img/bimlflex/data-lineage-object-level-context-actions.png "Object Actions in the Data Lineage Designer")
 
 The following options are available:
 
 | Icon | Action | Description |
 |----- |--------|-------------|
-| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Object Details | This open the [Object Side Panel](xref:bimlflex-data-lineage#object-side-panel), which will allow modification of various **Object** details.|
-| <div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | Show All Mappings | Add the **Objects** to the canvas that have a mapping to, or from, the selected **Object**. If incoming or outgoing related objects are added depends on the **Integration Stage** of the **Connection** that the selected object is associated with. Please refer to [Treeview Interaction](xref:bimlflex-data-lineage#treeview-interaction) for more details. |
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Object Details | This open the [Object Side Panel](./data-lineage#object-side-panel), which will allow modification of various **Object** details.|
+| <div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | Show All Mappings | Add the **Objects** to the canvas that have a mapping to, or from, the selected **Object**. If incoming or outgoing related objects are added depends on the **Integration Stage** of the **Connection** that the selected object is associated with. Please refer to [Treeview Interaction](./data-lineage#treeview-interaction) for more details. |
 
 ### Object Side Panel
 
-The side panel that contains **Object** details can be opened by double-clicking on the **Object** or by using the **Object Details** button in the [**Object Action Menu**](xref:bimlflex-data-lineage#object-action-menu).
+The side panel that contains **Object** details can be opened by double-clicking on the **Object** or by using the **Object Details** button in the [**Object Action Menu**](./data-lineage#object-action-menu).
 
 <InclSidePanelObjectEditor />
 
@@ -73,15 +73,15 @@ The side panel that contains **Object** details can be opened by double-clicking
 
 Clicking on the ellipsis for any column will show the column-level action options:
 
-![Column Actions in the Data Lineage Designer](images/data-lineage-column-level-context-actions.png "Column Actions in the Data Lineage Designer")
+![Column Actions in the Data Lineage Designer](/img/bimlflex/data-lineage-column-level-context-actions.png "Column Actions in the Data Lineage Designer")
 
 | Icon | Action | Description |
 |----- |--------|-------------|
-| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Column Details | This open the [Column Side Panel](xref:bimlflex-data-lineage#column-side-panel), which will allow modification of various **Column** details.|
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Column Details | This open the [Column Side Panel](./data-lineage#column-side-panel), which will allow modification of various **Column** details.|
 
 ### Column Side Panel
 
-The side panel that contains **Column** details can be opened by double-clicking on the **Column** or by using the **Column Details** button in the [**Column Action Menu**](xref:bimlflex-data-lineage#column-action-menu).
+The side panel that contains **Column** details can be opened by double-clicking on the **Column** or by using the **Column Details** button in the [**Column Action Menu**](./data-lineage#column-action-menu).
 
 <InclSidePanelColumnEditor />
 
@@ -89,8 +89,14 @@ The side panel that contains **Column** details can be opened by double-clicking
 
 **Relationships** between **Columns** can be viewed by double-clicking on the lines between the columns. These lines represent individual column mappings. The relationship editor allows for direct manipulation of the selected relationship.
 
->[!NOTE]
+
+
+:::note
+
 >Mappings that have an `fx` label have an **Expression** applied. The label provides a visual cue to highlight this.
+
+:::
+
 
 <InclSidePanelRelationshipEditor />
 

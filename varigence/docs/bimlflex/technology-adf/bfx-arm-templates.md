@@ -34,10 +34,12 @@ BimlFlex ensures that when a file has a dependency, the preceding file will be d
 BimlFlex also provides a PowerShell script for deploying the linked templates. Users will be required to provide metadata, or additional variables within the PowerShell script, such as: storage account name, storage account container name, and storage account key, among others.
 
 ARM templates will need to be uploaded separately into Blob storage, and then referenced individually by the URL in the main template when deployed. This is included in the generated deployment script for linked template ARM files.
-:::note
 
 
-> In addition to the Best Practices document above, Microsoft has published documentation on the creation, editing, and deployment of ARM templates, referenced [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-the-portal).
+
+:::note
+
+In addition to the Best Practices document above, Microsoft has published documentation on the creation, editing, and deployment of ARM templates, referenced [here](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/quickstart-create-templates-use-the-portal).
 
 :::
 

@@ -4,7 +4,7 @@ description: Documentation of settings option within BimlFlex for SsdtSuppressTS
 tags: [BimlFlex, Reference]
 ---
 
-# Suppress TSql Build Warnings
+# Suppress TSql Warnings
 
 Suppress TSql Build Warnings.
 

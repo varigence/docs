@@ -18,20 +18,20 @@ To add existing Biml files to a project, follow these steps:
 
 1. Expand the tree and Right-click the Tables item in the treeview, and choose Add > Existing Item...
 
-![Context Menu - Add Existing Files](https://varigencecom.blob.core.windows.net/images-mistdocumentation/009_Step03.png)
+![Context Menu - Add Existing Files](/img/bimlstudio/009_Step03.png)
 
 1. In the **Add Existing Files** dialog, locate the folder that contains the Biml files. Select the files that you want to add. Multiple files can be selected from this dialog.
 
-    ![Browse for Biml Files](https://varigencecom.blob.core.windows.net/images-mistdocumentation/009_Step04.png)
+    ![Browse for Biml Files](/img/bimlstudio/009_Step04.png)
 
 1. Click **Open** to add the files to the project.
 
 1. Using the **Logical View** you might need to **Convert to Live BimlScript** the files.
 
-    ![Logical View - Dimensions](https://varigencecom.blob.core.windows.net/images-mistdocumentation/008_Step01.png)
+    ![Logical View - Dimensions](/img/bimlstudio/008_Step01.png)
 
 1. Save to project to commit your changes.
 
 For the AdventureWorksLT sample, you will need to download a zip file containing two Biml files: DimDate and DimCustomer for [Here](https://varigence.com/downloads/walkthrough_addexistingfiles.zip). After unzipping the file add them to your project. After adding the files, the logical view should include the DimDate and DimCustomer dimensions.
 
-![Logical View - Dimensions](https://varigencecom.blob.core.windows.net/images-mistdocumentation/008_Step02.png)
+![Logical View - Dimensions](/img/bimlstudio/008_Step02.png)

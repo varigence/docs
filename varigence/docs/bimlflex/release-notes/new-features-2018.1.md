@@ -30,7 +30,7 @@ Project Parameters might be used across multiple SSIS projects. This global targ
 Use Extension Point `ProjectParameter` with target `@@global`:
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="@@global" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="@@global" #>
 <Parameter Name="YourParameterName" DataType="String" IsRequired="true">DefaultParameterValue</Parameter>
 ```
 

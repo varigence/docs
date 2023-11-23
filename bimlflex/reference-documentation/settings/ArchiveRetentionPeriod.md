@@ -6,9 +6,9 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Archive Retention Period
+# Archive Retention Period (Days)
 
-The archive data retention period to use for the BimlFlex database cleanup process.
+The archive data retention period in days to use for the BimlFlex database cleanup process.
 
 Notes:
 

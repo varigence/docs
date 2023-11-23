@@ -7,12 +7,14 @@ description: Release Notes for BimlFlex 2022 R2
 # Release Notes
 
 Varigence is excited to release the 2022 R2 version of the BimlFlex platform for data solution automation!
-:::note
 
 
->
-> * Please make sure databases and projects are backed up before upgrading.
-> * Please email support@bimlflex.com with any installation or upgrade issues.
+
+:::note
+
+
+* Please make sure databases and projects are backed up before upgrading.
+* Please email support@bimlflex.com with any installation or upgrade issues.
 
 :::
 
@@ -27,7 +29,7 @@ MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 
 Build 22.2.168.0, release date: 25 May 2022
 
->
+
 * [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.2.168.0.exe). This installer includes all BimlFlex components
 * [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.2.168.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
@@ -48,10 +50,12 @@ Support for [Azure Data Factory Script Activity](https://www.varigence.com/Blog/
 The use of Script Activities is not supported for Salesforce and Dynamics connections at the time of release. These data sets must still be connected to using either Lookup or Stored Procedure activities, until ADF supports the use of Script Activities for these connection types.
 
 A major advantage of using Script Activities is broader support for connection types such as Snowflake. Our patterns have been updated to use the Script Activity instead of the proprietary Azure Function Bridge solution that was in place up to this release.
-:::danger
 
 
-> The use of the Script Activity in combination with Self Hosted Integration Runtimes requires the runtime to be upgraded to v15.5 or higher. If using a lower version of Self Hosted Integration Runtime, upgrading is required to correctly execute the pipelines.
+
+:::danger
+
+The use of the Script Activity in combination with Self Hosted Integration Runtimes requires the runtime to be upgraded to v15.5 or higher. If using a lower version of Self Hosted Integration Runtime, upgrading is required to correctly execute the pipelines.
 
 :::
 

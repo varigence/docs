@@ -11,15 +11,15 @@ A Data Warehouse usually requires more than only the right framework, database a
 
 ## Connecting to Special Data Sources
 
-* [Change Data Capture](change-data-capture-source-to-staging)
-* [Excel Files](bimlflex-source-excel-plus)
-* [Flat Files](flat-file-source-to-staging)
-* [Master Data Services](bimlflex-master-data-services)
-* [OData](bimlflex-source-odata)
-* [Stored Procedure](bimlflex-source-stored-procedure)
-* [Azure PostgreSQL](bimlflex-source-azure-postgres)
-* [Salesforce](bimlflex-source-salesforce-rest-api)
+* [Change Data Capture](./source-cdc)
+* [Excel Files](./source-excel-plus)
+* [Flat Files](./source-flat-file)
+* [Master Data Services](./master-data-services)
+* [OData](./source-odata)
+* [Stored Procedure](./source-stored-procedure)
+* [Azure PostgreSQL](./source-azure-postgres)
+* [Salesforce](./source-salesforce-rest-api)
 
 ## Other Connectivity Concepts
 
-* [Export to File](bimlflex-export-to-file)
+* [Export to File](./export-to-file)

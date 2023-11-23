@@ -8,10 +8,12 @@ tags: [BimlFlex, Walkthrough]
 # Building Using the Command Line
 
 A frequent scenario in BimlFlex solutions involve Continuous Integration and Continuous Delivery (CI/CD) and other automated processes that simply will not work with manually building your project in the app or in BimlStudio. In order to remedy this situation, BimlFlex supports automated builds that use both `MsBuild.exe` and `bimlc.exe`, the biml compiler. In this article each approach will be discussed.
-:::tip
 
 
-> Please see our article on [ADF Continuous Integration and Continuous Delivery](bimlflex-adf-continuous-integration-and-continuous-delivery) for more examples of the automated build process.
+
+:::tip
+
+Please see our article on [ADF Continuous Integration and Continuous Delivery](../technology-adf/continuous-integration-and-continuous-delivery) for more examples of the automated build process.
 
 :::
 
@@ -28,8 +30,14 @@ For a `bimlc.exe` build, take note of the following text in the output window:
 bimlc.exe @"$$\DemoProject\output\DemoProject.mst.bimlc.resp"
 ```
 
->[!NOTE]
-> The $$ represents the base path.
+
+
+:::note
+
+The $$ represents the base path.
+
+:::
+
 
 In order to run run this build in an automated scenario, using `bimlc.exe`, simply pass in the command above. The `.bimlc.resp` file is generated based off the project's settings. You can manually edit these fields yourself in the file, or change the project settings in BimlStudio and rebuild your project. 
 

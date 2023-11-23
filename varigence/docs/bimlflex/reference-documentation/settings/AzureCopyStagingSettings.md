@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Staging Settings
 
-The staging settings to use when enabling Staging for the Copy Activity. Use "@@this" to automatically use the Linked Service associated with the PolyBase Landing connection.
+The staging settings to use when enabling Staging for the Copy Activity. Use `@@this` to automatically use the Linked Service associated with the PolyBase Landing connection.
 
 Notes:
 

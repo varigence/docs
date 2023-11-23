@@ -14,7 +14,7 @@ Whenever we talk to Microsoft or other potential partners about doing things tha
 
 BimlExpress creates a toolbar menu in Visual Studio, which allows you to view your account settings by clicking **About BimlExpress**.
 
-![About BimlExpress](../images/dropdown.jpg "About BimlExpress")
+![About BimlExpress](/img/bimlexpress/dropdown.jpg "About BimlExpress")
 
 This opens a dialog that allows you to access the following features:
 
@@ -22,8 +22,8 @@ This opens a dialog that allows you to access the following features:
 - **Copy your product information:** This button copies information about the BimlExpress version and build to your clipboard. This information is often needed when answering support requests. To access this, paste it into an email or text file.
 - **Copy your machine code:** This button copies your unique machine code to your clipboard. To access this information, paste it into an email or text file.
 
-![BimlExpress Account](../images/about.jpg "BimlExpress Account")
+![BimlExpress Account](/img/bimlexpress/about.jpg "BimlExpress Account")
 
 By default, if you already have BIDS Helper installed, BimlExpress removes the Biml-specific menu options from BIDS Helper and replaces them with BimlExpress functionality. To undo this, click **Toggle BIDS Helper Menus** in the BimlExpress toolbar and restart Visual Studio.
 
-![Toggle BIDS Helper Functionality](../images/dropdown-2.jpg "Toggle BIDS Helper Functionality")
+![Toggle BIDS Helper Functionality](/img/bimlexpress/dropdown-2.jpg "Toggle BIDS Helper Functionality")

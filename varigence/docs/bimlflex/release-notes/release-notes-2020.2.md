@@ -4,11 +4,13 @@ title: BimlFlex 2020 R2 Release Notes
 description: release notes for BimlFlex 2020 R2
 ---
 # Release Notes
-:::note
 
 
-> Please make sure databases and projects are backed up before upgrading.  
-> Please email support@bimlflex.com with any installation or upgrade issues.
+
+:::note
+
+Please make sure databases and projects are backed up before upgrading.  
+Please email support@bimlflex.com with any installation or upgrade issues.
 
 :::
 
@@ -36,7 +38,7 @@ The Excel add-in location has been updated. The location of the add-in must be u
 
 Open the `BimlFlex.xlsx` file from BimlStudio to upgrade the add-in location, or upgrade the Excel file from the advanced options in the BimlFlex ribbon UI, in the Excel Metadata Editor dropdown to allow it to work as expected. Once the Excel file is upgraded it can be opened directly from Excel or the Windows file explorer again.
 
-Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Add-in](excel-metadata-addin)
+Additional documentation providing a step-by-step walkthrough for this process: [Excel Metadata Add-in](../support/excel-metadata-addin)
 
 The default installation location has been updated. Previous installations placed the application files in a version-number-based sub-folder under the Program Files\Varigence installation. This version removes the version-number sub-folder. For scenarios where the path is used the process should be updated to reflect the new path.
 
@@ -51,18 +53,20 @@ For new projects it is recommended that both *HASH NULL VALUE REPLACEMENT* and *
 Having the same value in both **Settings** will ensure the both SSIS and SQL Based ELT with generate identical BK and hash values.
 
 For existing projects using SSIS, it is recommended that the *SSIS NULL VALUE REPLACEMENT* is left blank to ensure backwards compatibility with any null values hashed in SSIS previously.
-:::danger
 
 
-> For existing projects using SSIS, it is recommended that the *SSIS NULL VALUE REPLACEMENT* is left blank to ensure backwards compatibility with any null values hashed in SSIS previously.
-> Using a value other than blank will alter the previous routine used by SSIS to generate a BK.
-> The below table shows a few examples of what SSIS would generate if the `NVL` was used over prior logic :
->
-> | Example Key Type                   | Prior BK | Prior Hash                               | New BK   | New Hash                                 |
-> | ---------------------------------- | -------- | ---------------------------------------- | -------- | ---------------------------------------- |
-> | NULL Single Column BK              |          | DA39A3EE5E6B4B0D3255BFEF95601890AFD80709 | NVL      | A018884EE5E8C82BAF141388E4F41592D0E68C95 |
-> | Two Column Composite BK, both NULL | ~        | 9452A87FAA0073A5238C5BF8FBCAE0BFB2A7512D | NVL~NVL  | 057581A6D1D619E3554F286F585360E902227988 |
-> | Two Column Composite BK, one NULL  | awlt~    | 95647A96D1AF1657941526742915B61C6B3DB171 | awlt~NVL | CFB3E059BC75F656C7AE17D2B285760CDC9495F2 |
+
+:::danger
+
+For existing projects using SSIS, it is recommended that the *SSIS NULL VALUE REPLACEMENT* is left blank to ensure backwards compatibility with any null values hashed in SSIS previously.
+Using a value other than blank will alter the previous routine used by SSIS to generate a BK.
+The below table shows a few examples of what SSIS would generate if the `NVL` was used over prior logic :
+
+| Example Key Type                   | Prior BK | Prior Hash                               | New BK   | New Hash                                 |
+| ---------------------------------- | -------- | ---------------------------------------- | -------- | ---------------------------------------- |
+| NULL Single Column BK              |          | DA39A3EE5E6B4B0D3255BFEF95601890AFD80709 | NVL      | A018884EE5E8C82BAF141388E4F41592D0E68C95 |
+| Two Column Composite BK, both NULL | ~        | 9452A87FAA0073A5238C5BF8FBCAE0BFB2A7512D | NVL~NVL  | 057581A6D1D619E3554F286F585360E902227988 |
+| Two Column Composite BK, one NULL  | awlt~    | 95647A96D1AF1657941526742915B61C6B3DB171 | awlt~NVL | CFB3E059BC75F656C7AE17D2B285760CDC9495F2 |
 
 :::
 
@@ -93,7 +97,7 @@ The Accelerator and Data Vault processes have several new optional configuration
 * Toggle setting added to display datatypes for columns for both source models and accelerated models.
 * The `AzureStagingSettings` has been renamed `AzureCopyStagingSettings`
 
-Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](bimlflex-concepts-delete-detection)
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](../concepts/delete-detection)
 
 The following setting has been added to control the Data Vault Accelerator:
 
@@ -129,11 +133,11 @@ The following settings have been added to the Azure Copy group:
 * AzureCopyEnableLogging
 * AzureCopyLogSettings
 
-More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](bimlflex-ssdt-project)
+More information on these settings: [BimlFlex-generated SQL Server Data Tools Project](../build-and-deployment/ssdt-project)
 
 ## Azure Data Factory (ADF)
 
-* Added ADF Flat File load support. This includes Delimited, ORC, Avro, XML and binary files. More information on the ADF Flat File load process: [Flat File Source to Staging](flat-file-source-to-staging).
+* Added ADF Flat File load support. This includes Delimited, ORC, Avro, XML and binary files. More information on the ADF Flat File load process: [Flat File Source to Staging](../scenarios/source-flat-file).
 * Scenarios where an SSIS load to Synapse blob storage staging file archive process used the archive SAS Token to connect to the staging account has been addressed.
 * Fixed an error in the app for blob storage connections that created empty string names for the integration runtime.BimlStudio errors when attempting to create an integration runtime with an empty string as a name.
 * Updated AKV linked services to use the actual url of the key vault.
@@ -143,7 +147,7 @@ More information on these settings: [BimlFlex-generated SQL Server Data Tool
 * Integration Runtimes can now pass into BLOB Storage and DataLakeStoreGen2 Linked Services.
 * Fixed an issue with `Hash Column` of large Synapse Tables (greater than 500 columns).
 
-More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](bfx-arm-templates)
+More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](../technology-adf/bfx-arm-templates)
 
 ## BimlFlex App Help Sidebar Navigation
 
@@ -181,14 +185,14 @@ The Help section sidebar navigation also features links to BimlFlex documentatio
 * Added additional delete detection functionality to SSIS, ADF and MSSQL ELT processes.
 * The Delete Detection Object Model has been updated. For implementations that use bespoke Delete Detection Scripts, certain attributes will need to be updated to correctly refer to the new object model.
 
-Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](bimlflex-concepts-delete-detection)
+Additional documentation regarding the updated delete functionality: [BimlFlex Delete Detection](../concepts/delete-detection)
 
 <!--
 ## Business Modeling
 
 * BimlFlex now features the ability to use a business modeling approach to Data Vault modeling.
 
-Read More on the exciting new Business Modeling functionality here: [Business Modeling in BimlFlex](bimlflex-business-modeling)
+Read More on the exciting new Business Modeling functionality here: [Business Modeling in BimlFlex](../metadata-editors/business-modeling)
 -->
 
 ## Data Mart/Data Vault
@@ -233,12 +237,14 @@ Read More on the exciting new Business Modeling functionality here: [Business Mo
 * Added required SsisServer to $ssisExecutionParameter generation.
 * Fixed HashTable parameter looping.
 * Fixed an issue where using certain date *DATA TYPES* would result in a delta in the PSA when none was present.
-:::note
 
 
-> In BimlFlex 2019.1, External Tables were always included, which sometimes led to issues with lacking Visual Studio support.
-> Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of External Tables as part of the load packages.
-> The BimlFlex 2020 R2 release adds control to the creation of, and additional defaults for, dependency objects.
+
+:::note
+
+In BimlFlex 2019.1, External Tables were always included, which sometimes led to issues with lacking Visual Studio support.
+Earlier BimlFlex 2020 releases removed these SSDT artifacts and applied creation of External Tables as part of the load packages.
+The BimlFlex 2020 R2 release adds control to the creation of, and additional defaults for, dependency objects.
 
 :::
 

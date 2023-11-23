@@ -2,10 +2,12 @@
 title: BimlFlex Release Notes 2018
 ---
 # Release Notes 2018
-:::note
 
 
-> Please note the current Release Notes are available here: [BimlFlex Release Notes](bimlflex-release-notes-overview)
+
+:::note
+
+Please note the current Release Notes are available here: [BimlFlex Release Notes](./index)
 
 :::
 
@@ -15,15 +17,17 @@ title: BimlFlex Release Notes 2018
 Legacy Release Notes for BimlFlex 2018
 
 ## Bundle 63502
-:::danger
 
 
-> The 63502 Bundle version requires that the BimlStudio 2018 R3 release is installed first.
->
-> Please download and upgrade from the following links:
->
-> * BimlStudio: [https://www.varigence.com/downloads/bimlstudiosetup.exe](https://www.varigence.com/downloads/bimlstudiosetup.exe)
-> * BimlFlex: [https://www.varigence.com/downloads/bimlflexsetup.exe](https://www.varigence.com/downloads/bimlflexsetup.exe)
+
+:::danger
+
+The 63502 Bundle version requires that the BimlStudio 2018 R3 release is installed first.
+
+Please download and upgrade from the following links:
+
+* BimlStudio: [https://www.varigence.com/downloads/bimlstudiosetup.exe](https://www.varigence.com/downloads/bimlstudiosetup.exe)
+* BimlFlex: [https://www.varigence.com/downloads/bimlflexsetup.exe](https://www.varigence.com/downloads/bimlflexsetup.exe)
 
 :::
 
@@ -45,11 +49,13 @@ Legacy Release Notes for BimlFlex 2018
 * Update: RowCount for file source objects are now logged on a per source file basis in the BimlCatalog. This allows separate row counts to be persisted in the BimlCatalog. Previously the row counts for files were transient and only the last file was persisted.
 * Add: support for Point In Time and Bridge tables for Snowflake
 * Update: ZipArchive functionality now zips files as expected in source file ETL SSIS packages
-:::note
 
 
-> An update to the CDC source mechanism has been implemented in this Bundle. This requires both the Bundle and the BimlFlex database to be updated.  
-> A scenario where multiple LSN numbers were mapped to the same completion time and where multiple updates to the same key was captured across these LSN's could lead to key collisions. This update allows any number of updates across a given transaction datetime. The derived individual `FlexRowEffectiveFrom` datetime values are now also being derived in DateTime2(7) increments instead of the SQL Server CDC-process native DateTime resolution. This will minimize the risk for updates to the same key across LSN datetimes to result in key collisions. Note that BimlFlex captures all changes to keys and assign unique `RowEffectiveFrom` values to each row. In a scenario where there are more changes introduced than there are time units available the load might fail due to Key collisions.
+
+:::note
+
+An update to the CDC source mechanism has been implemented in this Bundle. This requires both the Bundle and the BimlFlex database to be updated.  
+A scenario where multiple LSN numbers were mapped to the same completion time and where multiple updates to the same key was captured across these LSN's could lead to key collisions. This update allows any number of updates across a given transaction datetime. The derived individual `FlexRowEffectiveFrom` datetime values are now also being derived in DateTime2(7) increments instead of the SQL Server CDC-process native DateTime resolution. This will minimize the risk for updates to the same key across LSN datetimes to result in key collisions. Note that BimlFlex captures all changes to keys and assign unique `RowEffectiveFrom` values to each row. In a scenario where there are more changes introduced than there are time units available the load might fail due to Key collisions.
 
 :::
 
@@ -100,10 +106,12 @@ FROM
 * Update: The BimlFlex database sample metadata created connections with the character `N` in the provider field. This is not a valid provider for the sample metadata and has been removed in this build. Any existing projects based on the sample metadata with this character as provider should be updated and the `N` removed.
 
 ## Bundle 63317
-:::warning
 
 
-> This bundle require a BimlStudio build greater than `Build 5.0.63175.0` and updated BimlCatalog and BimlFlex databases.
+
+:::warning
+
+This bundle require a BimlStudio build greater than `Build 5.0.63175.0` and updated BimlCatalog and BimlFlex databases.
 
 :::
 
@@ -137,13 +145,16 @@ FROM
 * Add: additional `Clone Table` target object type options to the Excel metadata management tool
 * Add: support for `Proper_Case` in naming conventions in the Excel metadata management tool import metadata options
 
-> [!Note]
-> Behavior change - this bundle delegates the model object type definition task to the modeler. Review the destination logical model and the source system relationships and update the `ModelObjectType` definition of object based on that. Previous releases used technical analysis of the source to prepopulate choices other than Hub.
-:::warning
+
+[!Note]
+Behavior change - this bundle delegates the model object type definition task to the modeler. Review the destination logical model and the source system relationships and update the `ModelObjectType` definition of object based on that. Previous releases used technical analysis of the source to prepopulate choices other than Hub.
 
 
-> Breaking change in feature.
-> Update: Rename Object Extension Point `Connection` to `PackageAddConnection`. Please search your project for `extensionpoint="Connection"` and replace it with `extensionpoint="PackageAddConnection"`
+
+:::warning
+
+Breaking change in feature.
+Update: Rename Object Extension Point `Connection` to `PackageAddConnection`. Please search your project for `extensionpoint="Connection"` and replace it with `extensionpoint="PackageAddConnection"`
 
 :::
 
@@ -193,11 +204,13 @@ Update: Derived Hubs from Links (to same Hub) no longer use same BK for second h
 * Add: BimlCatalog: 2 new views `rpt.CurrentExecutions` and `rpt.LatestBatchExecutions` to provide quick overview of current executing packages and the last five batches
 
 ## Bundle 63013
-:::warning
 
 
-> Breaking change in feature.
-> The 63013 Bundle introduces a new feature that requires the BimlFlex database to be updated to the same version.
+
+:::warning
+
+Breaking change in feature.
+The 63013 Bundle introduces a new feature that requires the BimlFlex database to be updated to the same version.
 
 :::
 
@@ -269,12 +282,14 @@ Update: Derived Hubs from Links (to same Hub) no longer use same BK for second h
 ## Bundle 80329
 
 * Add: New feature: Control if the Data Vault Accelerator should create Link Satellites for generated Links. New setting `DvAccelerateLinkSatellite` has been added to the `Settings` sheet. This controls if Link Satellites should be accelerated. Breaking change This feature has a default value of `N`, meaning no Link Satellites will be accelerated unless it is updated to `Y`. Overrides can be created using attribute `SettingValue` definitions for individual source tables.
-:::warning
 
 
-> The default setting for `DvAccelerateLinkSatellite` is `N`.
->
-> Existing projects using Link Satellites should update it to `Y` to maintain behavior
+
+:::warning
+
+The default setting for `DvAccelerateLinkSatellite` is `N`.
+
+Existing projects using Link Satellites should update it to `Y` to maintain behavior
 
 :::
 
@@ -287,7 +302,7 @@ Update: Derived Hubs from Links (to same Hub) no longer use same BK for second h
 Use Extension Point `ProjectParameter` with target `@@global`:
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="@@global" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ProjectParameter" target="@@global" #>
 <Parameter Name="YourParameterName" DataType="String" IsRequired="true">DefaultParameterValue</Parameter>
 ```
 

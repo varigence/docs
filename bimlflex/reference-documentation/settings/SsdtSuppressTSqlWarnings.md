@@ -6,7 +6,7 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Suppress TSql Build Warnings
+# Suppress TSql Warnings
 
 Suppress TSql Build Warnings.
 

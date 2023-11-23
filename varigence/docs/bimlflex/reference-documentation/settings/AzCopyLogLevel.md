@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Log Level
 
-The log level for AzCopy v.10 logs. Available log levels are: "NONE", "DEBUG", "INFO", "WARNING", "ERROR", "PANIC", and "FATAL"
+The log level for AzCopy v.10 logs. Available log levels are: `NONE`, `DEBUG`, `INFO`, `WARNING`, `ERROR`, `PANIC`, and `FATAL`
 
 Notes:
 

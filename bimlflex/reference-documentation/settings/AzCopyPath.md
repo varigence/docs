@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Path
 
-The file path to the local installation of the "AzCopy" Command. If installed in a non-default location, update this setting to match.
+The file path to the local installation of the `AzCopy` Command. If installed in a non-default location, update this setting to match.
 
 Notes:
 

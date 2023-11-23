@@ -19,13 +19,13 @@ BimlFlex now has full support for Azure Data Factory (ADF) workflows for Azure S
 
 This includes full support to build Azure ARM templates for direct deployment of the pipelines to Azure as well as json file generation for individual deployments and deployment through the ADF DevOps git integration.
 
-More information on ADF here: [ADF Deployment Overview](adf-deployment-overview)
+More information on ADF here: [ADF Deployment Overview](../technology-adf)
 
 ### Data Mappings visualizations and editor for BimlFlex App
 
 The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
 
-More information on the BimlFlex app here: [Metadata Editors Overview](metadata-editors-overview)
+More information on the BimlFlex app here: [Metadata Editors Overview](../metadata-editors)
 
 ### BimlCatalog Operational Reporting in BimlFlex App
 
@@ -33,7 +33,7 @@ The BimlFlex app has been updated with BimlCatalog Operational Reporting capabil
 
 These reports allow direct access to the logging in the BimlCatalog from the app and help with both development and operational insights
 
-More information on operational reporting here: [BimlFlex Operational Reports](bimlflex-operational-reports)
+More information on operational reporting here: [BimlFlex Operational Reports](../metadata-editors/operational-reports)
 
 ### Additional Extension Points for bespoke processing requirements
 

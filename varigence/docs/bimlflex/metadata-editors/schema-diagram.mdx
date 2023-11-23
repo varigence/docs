@@ -44,13 +44,13 @@ Depending on whether you select an **Object** or **Column** there are various co
 
 By clicking on a ellipsis on the object, the designer will be presented with the object-level actions.
 
-![Object Actions in the Schema Diagram Designer](images/schema-diagram-object-level-context-actions.png "Object Actions in the Schema Diagram Designer")
+![Object Actions in the Schema Diagram Designer](/img/bimlflex/schema-diagram-object-level-context-actions.png "Object Actions in the Schema Diagram Designer")
 
 The following options are available:
 
 | Icon | Action | Description |
 |----- |--------|-------------|
-| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Object Details | This open the [Object Side Panel](xref:bimlflex-schema-diagram#object-side-panel), which will allow modification of various **Object** details.|
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Object Details | This open the [Object Side Panel](./schema-diagram#object-side-panel), which will allow modification of various **Object** details.|
 | <div class="icon-col m-5"><img src="images/svg-icons/show-related.svg"/></div> | Show Related | Add the **Objects** to the canvas that have a relationship (reference) to, or from, the selected **Object**.|
 | <div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | Add Integration Key | Opens the **Integration Key Editor** screen, so that a new integration key can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Source System`.|
 | <div class="icon-col m-5"><img src="images/svg-icons/create-bridge.svg"/></div> | Create Bridge | Opens the **Bridge Editor** screen, so that a new Bridge table can be defined for the selected **Object**. This option is only available if the **Object** is part of a **Connection** that has an **Integration Stage** of `Data Vault` and the **Object Type** is `Hub`.|
@@ -60,7 +60,7 @@ If an **Object** is part of a **Connection** that has the `Data Vault` **Integra
 
 ### Object Side Panel
 
-The side panel that contains **Object** details can be opened by double-clicking on the **Object** or by using the **Object Details** button in the [**Object Action Menu**](xref:bimlflex-schema-diagram#object-action-menu).
+The side panel that contains **Object** details can be opened by double-clicking on the **Object** or by using the **Object Details** button in the [**Object Action Menu**](./schema-diagram#object-action-menu).
 
 <InclSidePanelObjectEditor />
 
@@ -68,16 +68,16 @@ The side panel that contains **Object** details can be opened by double-clicking
 
 Clicking on the ellipsis for any column will show the column-level action options:
 
-![Column Actions in the Schema Diagram Designer](images/schema-diagram-column-level-context-actions.png "Column Actions in the Schema Diagram Designer")
+![Column Actions in the Schema Diagram Designer](/img/bimlflex/schema-diagram-column-level-context-actions.png "Column Actions in the Schema Diagram Designer")
 
 | Icon | Action | Description |
 |----- |--------|-------------|
-| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Column Details | This open the [Column Side Panel](xref:bimlflex-schema-diagram#column-side-panel), which will allow modification of various **Column** details.|
+| <div class="icon-col m-5"><img src="images/svg-icons/edit.svg" /></div> | Column Details | This open the [Column Side Panel](./schema-diagram#column-side-panel), which will allow modification of various **Column** details.|
 | <div class="icon-col m-5"><img src="images/svg-icons/composite-key.svg"/></div> | Add Integration Key | Opens the **Integration Key Editor** screen, so that a new integration key can be defined for the selected **Object**. This will apply to the **Object** the selected **Column** belongs to. This option is only available if the **Object** the **Column** belongs to is part of a **Connection** that has an **Integration Stage** of `Source System`. |
 
 ### Column Side Panel
 
-The side panel that contains **Column** details can be opened by double-clicking on the **Column** or by using the **Column Details** button in the [**Column Action Menu**](xref:bimlflex-schema-diagram#column-action-menu).
+The side panel that contains **Column** details can be opened by double-clicking on the **Column** or by using the **Column Details** button in the [**Column Action Menu**](./schema-diagram#column-action-menu).
 
 <InclSidePanelColumnEditor />
 
@@ -87,4 +87,4 @@ The side panel that contains **Column** details can be opened by double-clicking
 
 You can also drag a **Column** to another **Integration Key** or **Primary Key** to create a reference.
 
-![Adding a new reference in the Schema Diagram Designer](images/schema-diagram-create-reference.png "Adding a new reference in the Schema Diagram Designer")
+![Adding a new reference in the Schema Diagram Designer](/img/bimlflex/schema-diagram-create-reference.png "Adding a new reference in the Schema Diagram Designer")

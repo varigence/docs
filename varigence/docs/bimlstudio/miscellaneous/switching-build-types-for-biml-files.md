@@ -12,8 +12,8 @@ You can switch a Biml file's Biml type by doing one of the following:
 
 * From the Project View, right click on the file, select "Mist Action", and then choose the desired type from the context menu to change the type.
 
-![Context Menu - Switch Biml Type](https://varigencecom.blob.core.windows.net/walkthroughs/015_Step01-2.png)
+![Context Menu - Switch Biml Type](/img/bimlstudio/015_Step01-2.png)
 
 * If a file is already using the reference action, from the Logical View, right click the file under the BimlScript Library, and then click "Convert to Live BimlScript."
 
-![Project View - Drag and Drop](https://varigencecom.blob.core.windows.net/walkthroughs/015_Step02-2.png)
+![Project View - Drag and Drop](/img/bimlstudio/015_Step02-2.png)

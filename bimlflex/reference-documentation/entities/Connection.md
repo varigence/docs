@@ -20,6 +20,7 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Record Source | A name or abbreviation that uniquely identifies the source of the data. This is a mandatory field for Connections with an Integration Stage of `Source System`. The Record Source is defined as an Ansi String of lentgh 10 data type by default, but this can be changed to any value in the Configurations screen. BimlFlex will notify the user if a length is entered that exceeds that of the defined datatype in the Configuration. The Record Source value is used throughout the BimlFlex implementation as additional data points and to support auditability. It also is used within conventions such as creation of schema- and table names. Because of this, it is often easiest to use an abbreviation and adhere to standard database object naming - e.g. no spaces and commas.|
 |File Path | The path where the files are located. Only applies to a Connection that has the Connection Type of File. The Biml templates will use this attribute in a &lt;ForEachFileLoop&gt; to load all files in this path / directory and that match the File Pattern.|
 |File Pattern | The pattern, or wildcard, that can be used to identify which files will be loaded. For example *.csv. Only applies to a Connection that has the Connection Type of `File`.|
+|External Location | The external storage location associated with the connection.|
 |Persist History | For a Connection with the Integration Stage of Source System, this setting manages history tracking in the Persistent Staging Area (PSA) corresponding to the Connection. This requires a Persistent Staging Connection to be defined in the Project that uses the Source Connection. If this setting is disabled (but a PSA connection is configured), the PSA database only maintains the most recent change (state). This way, the PSA becomes an Operational Data Store (ODS) containing only the most recently received data but no history. Having a current-state only PSA can be useful to provide as an ODS, and can be delivered quickly using the source metadata.|
 |Use Temporal Tables | Temporal tables (also known as system-versioned temporal tables) supports providing data as it was at an historical point in time, rather than only showing the data available at the current point in time. By enabling Temporal Tables in BimlFlex, the Objects belonging to the selected Connection will be created using Temporal Table syntax. This enables data to be be queried at a specific point-in-time following the supported SQL Server syntax. In BimlFlex, this is only supported for Persistent Staging Area connections, and only applies to SQL Server database (either on-premise, or made accessible via a self-hosted integration runtime), Managed Instance, or Azure SQL databases.|
 |Number of Threads | The number of threads a data logistics process can use to split the workload at runtime using the selected connection. The default is 1. The amount of threads can be redefined at the object level. When using SSIS, this attribute is only used in the SRC – STG template with the Balance Data Distributor to allow for greater parallelism. Only define a value greater than zero if the server has enough CPU and Memory to accommodate additional threads.|
@@ -78,7 +79,7 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Linked Service Passphrase | The passphrase to be used for the Linked Service.|
 |Linked Service Pass Phrase Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Pass Phrase.|
 |Linked Service Pass Phrase Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Pass Phrase. If omitted, the most recent version is used.|
-|LS_PrivateKeyType | |
+|Private Key Type | The type of the private key used in this connection.|
 |Linked Service Private Key Content | The way the Private Key information is provided for the Linked Service.|
 |Linked Service PrivateKey Content Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the PrivateKey Content.|
 |Linked Service PrivateKey Content Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the PrivateKey Content. If omitted, the most recent version is used.|
@@ -87,6 +88,21 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Linked Service Security Token Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Security Token.|
 |Linked Service Security Token Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Security Token. If omitted, the most recent version is used.|
 |Linked Service Salesforce API Version | For Salesforce Connections only. Specify the Salesforce REST/Bulk API version to use, e.g. 52.0.|
+|Databricks Access Token | The access token for connecting to Databricks.|
+|Databricks Access Token KVS Secret Name | The name of the Key Vault Secret containing the Databricks access token.|
+|Databricks Access Token KVS Secret Version | The version of the Key Vault Secret containing the Databricks access token.|
+|Databricks Workspace Resource ID | The resource identifier for the Databricks Workspace.|
+|Databricks Existing Cluster ID | The identifier for an existing Databricks cluster that this connection uses.|
+|Databricks Instance Pool ID | The identifier for a Databricks instance pool.|
+|Databricks New Cluster Version | The version of Databricks runtime for a new cluster.|
+|Databricks New Cluster Node Type | The node type for a new Databricks cluster.|
+|Databricks New Cluster Option | Configuration options for creating a new Databricks cluster.|
+|Number of Workers | Specifies the number of worker nodes in the Databricks cluster.|
+|Spark Configuration | Configuration settings for the Spark session on the Databricks cluster.|
+|Spark Environment Variables | Environment variables for the Spark session on the Databricks cluster.|
+|Custom Tags | Custom tags associated with the Databricks cluster.|
+|Initialization Scripts | Scripts to run when the Databricks cluster is initialized.|
+|Log Destination | Destination path where the logs of Databricks cluster are stored.|
 |Salesforce Service URL | For Salesforce Connections only, this is the URL or endpoint to connect to the Salesforce service.|
 |Salesforce API Version | For Salesforce Connections only. Specify the Salesforce REST/Bulk API version to use, e.g. 52.0.|
 |Salesforce Consumer Key | For Salesforce Connections only, the consumer key is used to authenticate to Salesforce together with the consumer secret.|
@@ -100,10 +116,9 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Version | Reference to the Version that this Connection belongs to.|
 |Connection Type | Defines the technical way the Connection will operate. This list will mirror the different types of Connections that can be defined in Biml.|
 |System Type | Defines the technical System Type (e.g. SQL Server, Azure, Synapse) of the Connection.|
-|Integration Stage | The Integration Stage defines how a Connection can be used in the architecture. This is an important property of a Connection as it is used to determine what template is applied to its related Objects. This information is also interpreted in the Project configuration, as it drives the possible stages for the Project. For example - if a Connection is defined with a Source System Integration Stage, and this connection is used as the source connection for a Project then this will provide different options for data processing than if the project source connection will be a Data Vault stage.|
+|Integration Stage | The Integration Stage defines how a Connection can be used in the architecture. This is an important property of a Connection as it is used to determine what template is applied to its related Objects. This information is also interpreted in the Project configuration, as it drives the possible stages for the Project. For example - if a Connection is defined with a Source System Integration Stage, and this connection is used as the source connection for a Project then this will provide different options for data processing than if the project source connection will be a Raw Data Vault stage.|
 |OLEDB Connection | Define an OLEDB Connection for ADONET connections to enable the Execute SQL Tasks.|
 |ADONET Connection | Define an ADONET Connection for OLEDB connections to enable the execution of script components to infer Dimension Keys for late-arriving or missing Dimension Keys.|
-|Landing Connection | For PolyBase only. Define a file landing Connection to use for cloud data movement workflows. This must be a Landing Connection that has either the Azure Blob Storage or Azure Data Lake Connection Type with a `Delimited` System Type.|
 |Linked Service Connection String Key Vault | The reference to the Azure Key Vault Linked Service that contains the Connection String secret.|
 |Linked Service Password Key Vault | The reference to the Azure Key Vault Linked Service that contains the password secret.|
 |Linked Service Principal Key Vault | The reference to the Azure Key Vault Linked Service that contains the Service Principal secret.|
@@ -112,7 +127,8 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Linked Service Credential String Key Vault | The reference to the Azure Key Vault Linked Service that contains the Credential String secret.|
 |Linked Service SAS URI Key Vault | The reference to the Azure Key Vault (AKV) Linked Service that contains the Shared Access Signature (SAS) URI secret.|
 |Linked Service SAS Token Key Vault | The reference to the Azure Key Vault Linked Service that contains the Shared Access Signature (SAS) Token secret.|
-|LS_PassPhraseKVS_UID | |
-|LS_PrivateKeyContentKVS_UID | |
+|Passphrase KVS User ID | The unique identifier for the Key Vault Secret associated with the passphrase.|
+|Private Key Content KVS User ID | The unique identifier for the Key Vault Secret associated with the private key content.|
 |Linked Service Security Token Key Vault | The reference to the Azure Key Vault Linked Service that contains the Security Token secret.|
+|Databricks Access Token KVS User ID | The unique identifier for the Key Vault Secret associated with the Databricks access token.|
 

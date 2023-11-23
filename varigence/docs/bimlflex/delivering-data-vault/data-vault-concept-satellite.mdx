@@ -9,7 +9,7 @@ import SettingsSatellite from './_settings_satellite.md';
 
 # Satellites
 
-Satellites in Data Vault are the `Context` entities, that provide descriptive information (properties, attributes) for [Core Business Concepts](bimlflex-data-vault-concept-hub) and [Natural Business Relationships](bimlflex-data-vault-concept-link).
+Satellites in Data Vault are the `Context` entities, that provide descriptive information (properties, attributes) for [Core Business Concepts](./data-vault-concept-hub) and [Natural Business Relationships](./data-vault-concept-link).
 
 A Satellite is connected to either a Hub or a Link and maintain descriptive information about the Hub or Link. Satellites are the bearer of all descriptive attributes, context information and time-slice history in the Data Vault model.
 
@@ -57,7 +57,7 @@ Data Vault Links represent many to many relationships. Any Hub entity in Data Va
 
 If there is a Foreign Key relationship between two entities in the source, or if there is application logic that manages opening and closing of relationships in mapping tables, that same behavior might need to be maintained in the Data Vault.
 
-Driving Keys are documented in more detail here: [Data Vault Driving Keys](bimlflex-data-vault-driving-keys)
+Driving Keys are documented in more detail here: [Data Vault Driving Keys](./driving-keys-in-data-vault)
 
 ## Multi Active Satellites
 
@@ -98,21 +98,23 @@ A Satellite where multiple active records are possible for a `Hub` or `Link` at 
 
 * Track effectivity of a Link based on the **Driving Key**.
 * A **Driving Key** is indicated in BimlFlex by setting the **Column** *CHANGE TYPE* on
-:::tip
 
 
-> For additional details on **Driving Keys** refer to the below articles:
->
-> * [Data Vault Driving Keys](bimlflex-data-vault-driving-keys)
+
+:::tip
+
+For additional details on **Driving Keys** refer to the below articles:
+
+* [Data Vault Driving Keys](./driving-keys-in-data-vault)
 
 :::
 
 
 ## Satellite System Column Configuration
 
-* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#roweffectivefromdate)
-* [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
-* [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
+* [Load Date Time Stamp](./data-vault-best-practices#roweffectivefromdate)
+* [Record Source](./data-vault-best-practices#record-source)
+* [Audit Id](./data-vault-best-practices#audit-id)
 
 ### Satellite Settings
 

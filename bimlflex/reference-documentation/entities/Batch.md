@@ -20,6 +20,8 @@ The BimlFlex [**Batch**](xref:bimlflex-batch-editor) concept organises the data 
 |Use SSIS Express | Set this value to Y when extracting data from a Sql Server Express source connection. Note that with SSIS Express there is limited functionality.|
 |Precendence Constraint | The evaluation criteria to start the next process in a Batch. This can be on Success or on Completion (disregarding the outcome) of the current executing process. The Precedence Constraint Completion setting forces BimlFlex to continue loading in case of individual failures. This setting applies to all processes in the batch.|
 |Number of Containers | The number of containers (groupings) that can be executed within the Batch. This setting can be used to throttle the parallel processing within a batch. A higher number of containers will decrease the degree of parallelism in the execution of the data logistics processes within a batch.|
+|Concurrency Limit | The maximum number of processes that can be executed in parallel within the Batch.|
+|Elapsed Time | The total time taken for the completion of the Batch process, measured from start to finish.|
 |Description | Free-format description of the Batch.|
 |Trigger Name | Name of the Trigger, if ommitted the Batch name and Trigger Type will be concatenated.|
 |Trigger Type | The tumbling window trigger and the schedule trigger.|

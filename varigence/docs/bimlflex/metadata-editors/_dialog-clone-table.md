@@ -5,17 +5,19 @@ The **Clone Table** feature is primarily provided to allow for quick generation 
 For example, if a given object is part of a project that targets a Data Vault **Connection**, the cloned object will be created in this connection.
 
 The most common use case for using the clone feature is to create a Data Mart target for a manually created view, typically sourcing from the Data Vault. This view has already been created for the intended target state and structure.
-:::note
 
 
-> Please refer to the [**Data Mart**](bimlflex-data-delivery-index) section for more information on delivering data using Data Marts and Dimensional Models.
+
+:::note
+
+Please refer to the [**Data Mart**](../delivering-data-marts) section for more information on delivering data using Data Marts and Dimensional Models.
 
 :::
 
 
 When cloning an object, please provide the intended *Target Schema*, choose your *Target Object Type*, set your [Clone Table Options](#clone-table-options) and click <img class="icon-inline" src="images/svg-icons/save.svg" /> **Save**.
 
-![Clone Table Dialog - mtb-20-image](images/bimlflex-app-dialog-clone-table.png "Clone Table Dialog")
+![Clone Table Dialog - mtb-20-image](/img/bimlflex/bimlflex-app-dialog-clone-table.png "Clone Table Dialog")
 
 ##### Clone Table Options
 

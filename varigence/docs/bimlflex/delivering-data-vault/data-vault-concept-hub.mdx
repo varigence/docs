@@ -11,28 +11,30 @@ import SettingsHub from './_settings_hub.md';
 
 A Hub in Data Vault is the representation of a **Core Business Concept**. These are the main 'things' that are important to an organisation. In the Data Vault model, the Hub serves as integration point when merging together disparate data sets.
 
-**Core Business Concepts** are related to other ones through [**Natural Business Relationships**](bimlflex-data-vault-concept-link) (Links) and are described using [**Context**](bimlflex-data-vault-concept-satellite) (Satellites) entities.
+**Core Business Concepts** are related to other ones through [**Natural Business Relationships**](./data-vault-concept-link) (Links) and are described using [**Context**](./data-vault-concept-satellite) (Satellites) entities.
 
-Any Hub entity in Data Vault can therefore have multiple active relationships to other entities through [Links](bimlflex-data-vault-concept-link).
+Any Hub entity in Data Vault can therefore have multiple active relationships to other entities through [Links](./data-vault-concept-link).
 
-Each Hub maintains a distinct list of [**Integration Keys**](bimlflex-data-vault-integration-keys-and-relationships) that represent unique instances of the identified concept.
+Each Hub maintains a distinct list of [**Integration Keys**](./data-vault-concept-integration-keys) that represent unique instances of the identified concept.
 
 ## A Business Focused Approach for Data Integration
 
 To be able to integrate data across systems and versions, the actual business terms used should be identified and used where possible to name Hubs and the corresponding Integration Key column.
 
-In BimlFlex, this is supported through the [**Business Modeling**](bimlflex-business-modeling) feature. [**Business Modeling**](bimlflex-business-modeling) supports an interactive workshop-style modeling of the involved processes and terminology, so that the right business terms can be defined.
+In BimlFlex, this is supported through the [**Business Modeling**](../metadata-editors/business-modeling) feature. [**Business Modeling**](../metadata-editors/business-modeling) supports an interactive workshop-style modeling of the involved processes and terminology, so that the right business terms can be defined.
 
-The resulting Business Entities can be mapped to Data Vault Hubs in the [**Object Editor**](bimlflex-object-editor) or the Data Vault [**Accelerator**](bimlflex-data-vault-accelerator).
+The resulting Business Entities can be mapped to Data Vault Hubs in the [**Object Editor**](../metadata-editors/object-editor) or the Data Vault [**Accelerator**](../metadata-editors/accelerator).
 
 The Hub should accommodate all incoming data without judging, therefore it is recommended to use the most forgiving data type available.
 
 For the Integration Key, it is recommended to use a wide Unicode (nvarchar) datatype. This accommodates data coming from many sources. This configuration allows data to be integrated that might not adhere to the earlier assumed datatype of the Integration Key.
-:::danger
 
 
-> Hubs are the core building block of the Data Vault and should reflect the **Core Business Concept** (CBC).
-> The implementation team is recommended to identify and map Hubs to the **Business Model** as a priority.
+
+:::danger
+
+Hubs are the core building block of the Data Vault and should reflect the **Core Business Concept** (CBC).
+The implementation team is recommended to identify and map Hubs to the **Business Model** as a priority.
 
 :::
 
@@ -50,18 +52,18 @@ There are two ways to define a Hub in BimlFlex:
 
 ### Accelerating a Hub Object
 
-The easiest and quickest way to define a new Hub is to define one based on source metadata using the Data Vault [**Accelerator**](bimlflex-data-vault-accelerator).
+The easiest and quickest way to define a new Hub is to define one based on source metadata using the Data Vault [**Accelerator**](../metadata-editors/accelerator).
 
 This way, the target Hub Object and source-to-target mappings that facilitate the loading process are added automatically. If required, this can be updated by modifying Accelerator settings or manually updating the Hub Object.
 
-For more information, please refer to the [**Accelerator**](bimlflex-data-vault-accelerator) documentation.
+For more information, please refer to the [**Accelerator**](../metadata-editors/accelerator) documentation.
 
 #### Hub Naming Convention
 
 The name of the Hub, and how this will be derived in the **Accelerator**, is managed through a number of **Settings**:
 
-* The [*Append Hub*](bimlflex-app-reference-documentation-setting-DvAppendHub) setting in the *Data Vault Naming* setting category contains the label which will be added to a new Hub **Object**, for example 'HUB'
-* Whether the above label will be added as a `Prefix` or `Suffix` is managed in the [*Suffix or Prefix Object*](bimlflex-app-reference-documentation-setting-SuffixOrPrefixObject) setting which is found in the *Naming* setting category
+* The [*Append Hub*](../reference-documentation/settings/DvAppendHub) setting in the *Data Vault Naming* setting category contains the label which will be added to a new Hub **Object**, for example 'HUB'
+* Whether the above label will be added as a `Prefix` or `Suffix` is managed in the [*Suffix or Prefix Object*](../reference-documentation/settings/SuffixOrPrefixObject) setting which is found in the *Naming* setting category
 
 Varigence recommends to use `HUB`, or just `H` as the convention to name the Hub in the *Append Hub* setting. The value `HUB` is the default.
 
@@ -72,10 +74,12 @@ Otherwise, the *Object Name* from the source object will be used to name the tar
 #### Inferred Hubs
 
 In cases where the source object directly maps to a Link, or when additional **Integration Keys** are defined, the Accelerator will display a placeholder Hub.
-:::note
 
 
-> There isn't an **Object Type** to define a `Stub Hub`. It is just a `Hub`.
+
+:::note
+
+There isn't an **Object Type** to define a `Stub Hub`. It is just a `Hub`.
 
 :::
 
@@ -84,13 +88,13 @@ In cases where the source object directly maps to a Link, or when additional **I
 
 To manually create a Hub in BimlFlex, an **Object** first needs to be defined in the **Connection** that represents the Data Vault.
 
-![Defining a new Hub Object](images/hub-manual-create-object.png "Defining a new Hub Object")
+![Defining a new Hub Object](/img/bimlflex/hub-manual-create-object.png "Defining a new Hub Object")
 
-Using the [**Object Editor**](bimlflex-object-editor), a new **Object** with the Object Type `Hub` can be created.
+Using the [**Object Editor**](../metadata-editors/object-editor), a new **Object** with the Object Type `Hub` can be created.
 
 Once the **Object** is available, the relevant **Columns** can be added. In order to generate the correct data integration code, the **Columns** must match the conventions of the solution.
 
-By default, a Hub Object contains at least two **Columns**: a [**Surrogate Key**](xref:bimlflex-data-vault-integration-keys-and-relationships#surrogate-keys) and an **Integration Key**. Other columns can be either added or configured using the [**Configurations**](xref:bimlflex-data-vault-concept-hub#hub-column-configuration).
+By default, a Hub Object contains at least two **Columns**: a [**Surrogate Key**](./data-vault-concept-integration-keys#surrogate-keys) and an **Integration Key**. Other columns can be either added or configured using the [**Configurations**](./data-vault-concept-hub#hub-column-configuration).
 
 ### Manually adding Hub Mappings
 
@@ -100,21 +104,21 @@ In BimlFlex, you define a 'main' source object to be the central data set that p
 
 As an example, in the screenshot below the 'SalesLT.Product' object is mapped to the 'Hub_Example' object by mapping the source **Integration Key** to the target (Hub) **Integration Key** which is called 'Example_BK'.
 
-![Creating a Hub Mapping](images/hub-manual-create-mapping.png "Creating a Hub Mapping")
+![Creating a Hub Mapping](/img/bimlflex/hub-manual-create-mapping.png "Creating a Hub Mapping")
 
 Hub objects can be loaded from multiple source objects, but this does not necessarily has to be mapped for all of them. If there are references defined between the source objects using **Integration Keys**, and these references are pointing to a source object that loads a Hub then all source objects can load that Hub.
 
-This is controlled using the The [*Infer Link Hub*](bimlflex-app-reference-documentation-setting-DvInferLinkHub) setting in the *Data Vault* setting category. By default, this will be disabled and BimlFlex will manage the order of load dependency to avoid Referential Integrity issues.
+This is controlled using the The [*Infer Link Hub*](../reference-documentation/settings/DvInferLinkHub) setting in the *Data Vault* setting category. By default, this will be disabled and BimlFlex will manage the order of load dependency to avoid Referential Integrity issues.
 
 ## Hub Column Configuration
 
 By default, BimlFlex will add the following **Columns** to a Hub. These are not visible in the **Object** details, and do not need to be manually added.
 
-* [Load Date Time Stamp](xref:bimlflex-data-vault-best-practices#roweffectivefromdate)
-* [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
-* [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
+* [Load Date Time Stamp](./data-vault-best-practices#roweffectivefromdate)
+* [Record Source](./data-vault-best-practices#record-source)
+* [Audit Id](./data-vault-best-practices#audit-id)
 
-Columns such as these are defined in the BimlFlex [**Configurations**](bimlflex-configuration-editor). The **Configurations** screen in the BimlFlex App enables modelers to define which **Columns** apply to certain **Object Types**. For a **Column** to be added to the Hub, the **Configuration** will need to be configured so that the *Hub Attribute* is set to be `Derived`.
+Columns such as these are defined in the BimlFlex [**Configurations**](../metadata-editors/configuration-editor). The **Configurations** screen in the BimlFlex App enables modelers to define which **Columns** apply to certain **Object Types**. For a **Column** to be added to the Hub, the **Configuration** will need to be configured so that the *Hub Attribute* is set to be `Derived`.
 
 If additional standard **Columns** are required for the Hub, then these are recommended to be implemented as **Configurations**.
 
@@ -122,7 +126,7 @@ If additional standard **Columns** are required for the Hub, then these are reco
 
 BimlFlex makes use of a concatenated key to simplify implementation and allows for single key integration and is required when choosing a Data Vault implementation without using Hash Keys.
 
-The [*Use Hash Keys*](bimlflex-app-reference-documentation-settings-index) setting can be used to toggle between using a hashed or natural **Integration Key**. Integrate without a `Hash` which is very efficient for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
+The [*Use Hash Keys*](../reference-documentation/reference-documentation-settings-index) setting can be used to toggle between using a hashed or natural **Integration Key**. Integrate without a `Hash` which is very efficient for modern data warehouse solutions like [Snowflake](https://www.snowflake.com/) and [Azure Synapse](https://azure.microsoft.com/en-us/services/synapse-analytics/).
 
 The Hub Integration key needs to accommodate data from existing sources as well as being able to accommodate changes in the existing sources and new sources added later.
 
@@ -143,10 +147,12 @@ Using the Infer Integration Key setting in the metadata importer will add the In
 ### Keys with Multiple Columns
 
 Some Hub designs require multiple source key columns to define the Hub through the Integration Key. Sources with key overlap might need a system or source string added, multiple source keys might need to be combined to form a distinct Hub Integration key.
-:::note
 
 
-> Deriving the Integration keys for the CBC/EWBK's is one of the more important design exercises in modeling the Data Vault. This guide does not include details on the required analysis and design process.
+
+:::note
+
+Deriving the Integration keys for the CBC/EWBK's is one of the more important design exercises in modeling the Data Vault. This guide does not include details on the required analysis and design process.
 
 :::
 

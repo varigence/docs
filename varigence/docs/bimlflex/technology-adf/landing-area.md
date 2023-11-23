@@ -15,13 +15,15 @@ This way, data can be accessed directly to perform any required transformations 
 
 The general architecture is below with the Landing Area in the middle, supporting either a database or files.
 
-![Azure Data Factory Landing Pattern](images/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
-:::tip
+![Azure Data Factory Landing Pattern](/img/bimlflex/diagram-adf-landing-pattern.png "Azure Data Factory Landing Pattern")
 
 
-> For additional details on ADF or the Copy activity refer to the below guides:  
-> Microsoft Docs: [Azure Data Factory documentation](https://docs.microsoft.com/en-us/azure/data-factory/)  
-> Microsoft Docs: [Copy Activity in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview)  
+
+:::tip
+
+For additional details on ADF or the Copy activity refer to the below guides:  
+Microsoft Docs: [Azure Data Factory documentation](https://docs.microsoft.com/en-us/azure/data-factory/)  
+Microsoft Docs: [Copy Activity in Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview)  
 
 :::
 
@@ -32,10 +34,12 @@ This section walks through the common steps and considerations for creating and 
 This example uses sample metadata to configure an appropriate Landing Area for a [Table-Based Configuration](#detailed-configuration).
 
 For addition details of alternate configurations refer to the [detailed configuration](#detailed-configuration) section.
-:::tip
 
 
-> The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=czmK6R2Y-9c?rel=0&autoplay=0) walks through how to configure a Landing Area for Azure Data Factory using BimlFlex.
+
+:::tip
+
+The Varigence YouTube channel contains various introduction videos about using BimlFlex and BimlStudio. [This video](https://www.youtube.com/watch?v=czmK6R2Y-9c?rel=0&autoplay=0) walks through how to configure a Landing Area for Azure Data Factory using BimlFlex.
 
 :::
 
@@ -62,22 +66,26 @@ For addition details of alternate configurations refer to the [detailed configur
 ### Importing Metadata
 
 The example uses the `01 - MSSQL Starting Point` metadata to generate Source System and Staging Area **Connections**.
-:::tip
 
 
-> For additional details on Importing Samples and Metadata refer to the below guides: 
+
+:::tip
+
+For additional details on Importing Samples and Metadata refer to the below guides: 
 
 :::
 
  
-> * [Load Sample Metadata](bimlflex-sample-metadata)
-> * [Importing Source Metadata](bimlflex-concepts-importing-metadata)  
+* [Load Sample Metadata](../getting-started/sample-metadata)
+* [Importing Source Metadata](../concepts/importing-metadata)  
 
 In order to proceed a Source System **Connection** and Staging Area **Connection** is needed.
-:::note
 
 
-> The example could be followed along with using any supported Source System and any Stage Area that supports a [Table-Based Configuration](#detailed-configuration) for the Landing Area (Microsoft SQL Server, Azure Synapse).
+
+:::note
+
+The example could be followed along with using any supported Source System and any Stage Area that supports a [Table-Based Configuration](#detailed-configuration) for the Landing Area (Microsoft SQL Server, Azure Synapse).
 
 :::
 
@@ -86,10 +94,12 @@ In order to proceed a Source System **Connection** and Staging Area **Connection
 
 The video archives multiple BimlFlex Entities to illustrate the minimal configuration needed to implement and configure a Landing Area.
 These are optional steps to streamline and minimize configuration.
-:::warning
 
 
-> Do not archive any BimlFlex Entities if following along with your own metadata.
+
+:::warning
+
+Do not archive any BimlFlex Entities if following along with your own metadata.
 
 :::
 
@@ -97,10 +107,12 @@ These are optional steps to streamline and minimize configuration.
 ### Create a Landing Connection
 
 When using a [Table Based Configuration](#detailed-configuration) the Landing Area and Staging Area should share the same connection details. The easiest way to achieve this is by duplicating the Staging Area **Connection**, naming it appropriately and updating the **Integration Stage** to `Landing Area`.
-:::note
 
 
-> In this configuration, the Landing Area is a *conceptual separation* via naming practice only. Ensure that the `Catalog` and `Connection String` for the Staging Area and Landing Area are the same.
+
+:::note
+
+In this configuration, the Landing Area is a *conceptual separation* via naming practice only. Ensure that the `Catalog` and `Connection String` for the Staging Area and Landing Area are the same.
 
 :::
 
@@ -110,16 +122,18 @@ When using a [Table Based Configuration](#detailed-configuration) the Landing Ar
 Azure Data Factory requires the use of Linked Services. These are defined as part of the **Connection** but are configured separately on each connection once enabled. For each connection that will be used by the ADF process, the **Cloud** field is required to be enabled in order to expose the configuration for the corresponding **Linked Service**.
 
 The example uses a pre-created Azure Key Vault to manage the complete connection string through use of a Secret. With familiarly of Azure Key Vaults and the deployment environment, the Linked Services can be configured to suit individual sensitive information management practices.
-:::tip
 
 
-> For additional details on Linked Services, Azure Key Vaults and Sensitive Information Management refer to the below guides:
->
-> * [Configuring a Linked Service Connection](create-linked-service-connection)
-> * [Using Azure Key Vaults for Connection settings](linked-service-azure-key-vault)
-> * [Sensitive Information Management in Azure Data Factory](sensitive-info-management)
-> * [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/)
-> * [About keys, secrets, and certificates](https://docs.microsoft.com/en-us/azure/key-vault/general/about-keys-secrets-certificates)
+
+:::tip
+
+For additional details on Linked Services, Azure Key Vaults and Sensitive Information Management refer to the below guides:
+
+* [Configuring a Linked Service Connection](./create-linked-service-connection)
+* [Using Azure Key Vaults for Connection settings](./linked-service-azure-key-vault)
+* [Sensitive Information Management in Azure Data Factory](./sensitive-info-management)
+* [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/)
+* [About keys, secrets, and certificates](https://docs.microsoft.com/en-us/azure/key-vault/general/about-keys-secrets-certificates)
 
 :::
 
@@ -128,10 +142,12 @@ The example uses a pre-created Azure Key Vault to manage the complete connection
 
 The last step is to configure the BimlFlex **Project** to use the integration template of `Azure Data Factory`.
 This step is performed last to ensure there are no validation errors when saving the **Project**.
-:::note
 
 
-> The `Azure Data Factory` integration template requires all **Connections** to have cloud enabled.
+
+:::note
+
+The `Azure Data Factory` integration template requires all **Connections** to have cloud enabled.
 
 :::
 
@@ -182,20 +198,24 @@ Configured for Azure Blob landing.
 
 It is important to note that although the Landing Area is configured as a separate BimlFlex **Connection**, in a Table Based Configuration it should be considered the same database as the Staging Area.
 As such the Landing Area does not deploy separately, and instead deploys with the Staging Area.
-:::danger
 
 
-> A Table Based Configuration requires the Landing Area to be in the same database as the Staging Area.  Ensure the connection string, catalog and applicable Linked Service configurations are identical to that of the Staging Area **Connection**.
+
+:::danger
+
+A Table Based Configuration requires the Landing Area to be in the same database as the Staging Area.  Ensure the connection string, catalog and applicable Linked Service configurations are identical to that of the Staging Area **Connection**.
 
 :::
 
 
 When using a Table-Based Configuration, the Landing Area is a group of tables separated through use of naming conventions. By default the Landing Area tables will have a `land_` prefix appended to all landing tables.
-:::note
 
 
-> The prefix appended to landing tables can be configured by updating the `Append Name Landing` BimlFlex **Setting** in the `Staging Naming` group.
-> The default configuration is `land`.
+
+:::note
+
+The prefix appended to landing tables can be configured by updating the `Append Name Landing` BimlFlex **Setting** in the `Staging Naming` group.
+The default configuration is `land`.
 
 :::
 
@@ -223,14 +243,16 @@ Additionally the `Azure Copy` **Settings** will need to be configured as such:
 * (Optional) `Enable` *Enable Logging*
 * (Optional) Configure log settings
   * Recommend you use the following value if unsure: `LinkedServiceName="@@this" LogLevel="Warning" Path="log"`
-:::tip
 
 
-> For additional details on configuring a PolyBase Connection see the below guides:
->
-> * [Synapse Implementations - Connection Details](xref:bimlflex-synapse-implementation#connection-details)
->   * See ADF configuration for `Landing Area (LND)` and `PolyBase Connection (PLY)`
-> * [Copy and transform data in Azure Synapse Analytics by using Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse#use-polybase-to-load-data-into-azure-synapse-analytics)
+
+:::tip
+
+For additional details on configuring a PolyBase Connection see the below guides:
+
+* [Synapse Implementations - Connection Details](../technology-synapse/synapse-implementation#connection-details)
+  * See ADF configuration for `Landing Area (LND)` and `PolyBase Connection (PLY)`
+* [Copy and transform data in Azure Synapse Analytics by using Azure Data Factory](https://docs.microsoft.com/en-us/azure/data-factory/connector-azure-sql-data-warehouse#use-polybase-to-load-data-into-azure-synapse-analytics)
 
 :::
 
@@ -241,34 +263,36 @@ Additionally the `Azure Copy` **Settings** will need to be configured as such:
 
 The following Azure **Settings** are used to configure the table destinations.
 
-* [Staging Naming\Naming](bimlflex-app-reference-documentation-settings-index) - configures naming patterns for Landing Tables and other Staging **Objects**
+* [Staging Naming\Naming](../reference-documentation/reference-documentation-settings-index) - configures naming patterns for Landing Tables and other Staging **Objects**
 
 ### [Relevant Settings](#tab/landing-details/blob)
 
 The following Azure **Settings** are used to configure the blob destinations.
 
-* [Azure Storage\Processing](bimlflex-app-reference-documentation-settings-index) -configures the details for relevant containers
-* [Azure Storage\Settings](bimlflex-app-reference-documentation-settings-index)- Configures the blob storage domain
+* [Azure Storage\Processing](../reference-documentation/reference-documentation-settings-index) -configures the details for relevant containers
+* [Azure Storage\Settings](../reference-documentation/reference-documentation-settings-index)- Configures the blob storage domain
 
 ### [Relevant Settings](#tab/landing-details/polybase)
 
 The following Azure **Settings** are used to configure the PolyBase blob destinations.
 
-* [Azure Storage\Processing](bimlflex-app-reference-documentation-settings-index) -configures the names Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
-* [Azure Storage\Settings](bimlflex-app-reference-documentation-settings-index) -configures the blob storage domain
-* [Azure Copy\Copy Method](bimlflex-app-reference-documentation-settings-index) - configures the copy method and Polybase settings
-* [Azure Copy\Advanced Settings](bimlflex-app-reference-documentation-settings-index) - enables and configures PolyBase Staging and Logging
+* [Azure Storage\Processing](../reference-documentation/reference-documentation-settings-index) -configures the names Accounts, Container Names and Keys/Tokens to be used with the Blob destination for AzCopy
+* [Azure Storage\Settings](../reference-documentation/reference-documentation-settings-index) -configures the blob storage domain
+* [Azure Copy\Copy Method](../reference-documentation/reference-documentation-settings-index) - configures the copy method and Polybase settings
+* [Azure Copy\Advanced Settings](../reference-documentation/reference-documentation-settings-index) - enables and configures PolyBase Staging and Logging
 
 ***
-:::tip
 
 
-> For additional details on Blob Storage refer to the below guides:
->
-> * [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
-> * [Manage storage account access keys](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage)
-> * [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)
-> * [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)
+
+:::tip
+
+For additional details on Blob Storage refer to the below guides:
+
+* [Create an Azure Storage account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
+* [Manage storage account access keys](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage)
+* [Create an account SAS](https://docs.microsoft.com/en-us/rest/api/storageservices/create-account-sas)
+* [Quickstart: Upload, download, and list blobs with the Azure portal](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)
 
 :::
 

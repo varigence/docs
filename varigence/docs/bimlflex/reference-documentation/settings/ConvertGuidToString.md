@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Convert GUID To String
 
-Determines if a source column of type "GUID"/"UniqueIdentifier" is automatically converted to a String data type.
+Determines if a source column of type `GUID`/`UniqueIdentifier` is automatically converted to a String data type.
 
 Notes:
 

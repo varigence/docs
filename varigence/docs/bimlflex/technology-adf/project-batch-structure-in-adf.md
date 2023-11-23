@@ -6,11 +6,11 @@ tags: [BimlFlex, Conceptual]
 ---
 # Projects and Batch structures for ADF
 
-The BimlFlex [Batch](bimlflex-app-reference-documentation-Batches) and [Project](bimlflex-app-reference-documentation-Projects) configuration in the [BimlFlex App](metadata-editors-overview) define the way how data logistics are organized.
+The BimlFlex [Batch](../reference-documentation/entities/Batch) and [Project](../reference-documentation/entities/Project) configuration in the [BimlFlex App](../metadata-editors) define the way how data logistics are organized.
 
 In BimlFlex, a Batch definition ultimately governs which data logistics processes are executed in the same group or container. A Batch can belong to more than one Project, and Projects themselves can be configured as a hierarchy (using the Parent Project concept).
 
-The Project property [Integration Template](xref:bimlflex-metadata-static-values#integration-templates) directs the technical delivery; how data transformation code will be generated, and for what target platform.
+The Project property [Integration Template](../reference-documentation/metadata-static-values#integration-templates) directs the technical delivery; how data transformation code will be generated, and for what target platform.
 
 This page intends to provide an overview of the concepts at play when building and deploying BimlFlex-generated ADF components, and explain why they appear in ADF the way they do.
 
@@ -20,7 +20,7 @@ In the Logical View, the tree of Factory Resources in ADF, the Batches are group
 
 If there is no Project hierarchy, the Batch will just be placed in the 'Batch' folder inside a folder with the Project name.
 
-![Example Folder Structure in ADF Factory Resources](images/ADF-logical-view.png "Example Folder Structure in ADF Factory Resources")
+![Example Folder Structure in ADF Factory Resources](/img/bimlflex/ADF-logical-view.png "Example Folder Structure in ADF Factory Resources")
 
 The Batch represents the executable to start the data integration processes, and will start any processes that have been configured for the Batch.
 
@@ -60,4 +60,4 @@ Similar to the primary solve order, the Sub-Batches only exist to ensure a corre
 
 The following diagram shows a logical overview of how Batches and Projects are deployed for ADF, based on Batch and Project definition in BimlFlex metadata.
 
-![ADF Logical View diagram](images/ADF-logical-view-diagram-example.png "ADF Logical View diagram" )
+![ADF Logical View diagram](/img/bimlflex/ADF-logical-view-diagram-example.png "ADF Logical View diagram" )

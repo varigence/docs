@@ -6,10 +6,12 @@ tags: [BimlFlex, Reference]
 
 # Settings
 
-BimlFlex offer many [**Settings**](bimlflex-setting-editor) that provide detailed configuration of the way metadata is managed and output is generated, for a variety of the supported data logistics platforms (e.g. ADF, SQL, Snowflake).<br/>:::tip
+BimlFlex offer many [**Settings**](../../metadata-editors/setting-editor) that provide detailed configuration of the way metadata is managed and output is generated, for a variety of the supported data logistics platforms (e.g. ADF, SQL, Snowflake).<br/>
 
 
-> The [Setting Reference Document](bimlflex-app-reference-documentation-settings-index) serves as a complete guide for all settings available in the BimlFlex App.
+:::tip
+
+The [Setting Reference Document](../reference-documentation-settings-index) serves as a complete guide for all settings available in the BimlFlex App.
 
 :::
 

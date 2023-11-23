@@ -10,7 +10,7 @@ The project settings editor lets you control project-wide configuration options.
 
 1. Open the project settings editor by double-clicking the project node in the Logical View.
 
-![Logical View - Project Settings](https://varigencecom.blob.core.windows.net/images-mistdocumentation/013_Step01.png)
+![Logical View - Project Settings](/img/bimlstudio/013_Step01.png)
 
 1. See the table below for an explanation of the settings on this page.
 
@@ -21,7 +21,7 @@ Project Setting | Description
  | **General**
 Hadron Path | The path to the 32-bit version of the Hadron compiler.
 64-bit Hadron Path | The path to the 64-bit version of the Hadron compiler.
-Extra Command Line Options | Allows additional compiler settings to be passed to the Hadron compiler. See [Biml Compiler Command Line Options](biml-compiler-command-line-options) for details on the available options.
+Extra Command Line Options | Allows additional compiler settings to be passed to the Hadron compiler. See [Biml Compiler Command Line Options](./biml-compiler-command-line-options) for details on the available options.
 Generate Response File | Creates a response file, based on the current project settings, that can be used for command line builds.
  | **Source Control**
 tf Path | The path to the Team Foundation executable. This is only needed if you are using Team Foundation Server for source control.

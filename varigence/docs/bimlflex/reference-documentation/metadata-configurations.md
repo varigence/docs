@@ -6,17 +6,19 @@ tags: [BimlFlex, Reference]
 ---
 # Configurations
 
-This document outlines the [**Configurations**](bimlflex-configuration-editor) that are available in BimlFlex by default.
+This document outlines the [**Configurations**](../metadata-editors/configuration-editor) that are available in BimlFlex by default.
 
 These configurations drive the behavior of the BimlFlex product, by adding **Columns** to **Objects** where they have been configured to apply to.
 
 The default configuration values are recommended by Varigence, but these can be modified if there is a requirement to tweak specific behaviors or align to specific standards and conventions.
 
-Existing configurations can be modified, and new ones can be added, using the [**Configuration Editor**](bimlflex-configuration-editor) in the BimlFlex App.
-:::tip
+Existing configurations can be modified, and new ones can be added, using the [**Configuration Editor**](../metadata-editors/configuration-editor) in the BimlFlex App.
 
 
-> Align the **Configuration** values to best match your organization's best practices, conventions and naming standards.
+
+:::tip
+
+Align the **Configuration** values to best match your organization's best practices, conventions and naming standards.
 
 :::
 
@@ -230,7 +232,7 @@ CONVERT(BIT, 1)
 
 The `RowIsDeleted` defines the pattern to derive if a row is logically deleted or not. This information is normally presented by the source as an additional attribute indicating that the row has been deleted.
 
-For source systems with hard deletes and no mechanism to present these deleted, consider using the Delete Detection feature in BimlFlex: [BimlFlex Delete Detection](bimlflex-concepts-delete-detection)
+For source systems with hard deletes and no mechanism to present these deleted, consider using the Delete Detection feature in BimlFlex: [BimlFlex Delete Detection](../concepts/delete-detection)
 
 The IsDeleted flag is an optional query helper attribute. It is used together with the `RowChangeType` attribute and it is possible to derive the `IsDeleted` value by interpreting the `RowChangeType` in the query.
 

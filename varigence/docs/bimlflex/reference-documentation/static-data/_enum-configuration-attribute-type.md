@@ -7,7 +7,7 @@ tags: [BimlFlex, Reference]
 Configuration Attribute Types
 Header not included because it is used in different ways
 -->
-**Configuration Attribute Types** are the allowed values to configure the attribution of a **Configuration** to a specific area of the data solution architecture. This is defined using the [**Configuration Editor**](bimlflex-configuration-editor) and governs the location in the data logistics process for which the **Configuration** is applied.
+**Configuration Attribute Types** are the allowed values to configure the attribution of a **Configuration** to a specific area of the data solution architecture. This is defined using the [**Configuration Editor**](../../metadata-editors/configuration-editor) and governs the location in the data logistics process for which the **Configuration** is applied.
 
 Each configuration property will allow a list of values to be selected, which impacts how the configuration is applied to the in-scope objects.
 

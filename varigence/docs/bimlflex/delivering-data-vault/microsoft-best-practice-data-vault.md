@@ -134,7 +134,7 @@ It is recommended that the Azure Synapse SQL pool have AUTO_CREATE_STATISTICS co
 It is also possible to use the BimlFlex metadata and the Extension Points framework to generate Create and Update statements through automation code:
 
 ```biml
-CREATE STATISTICS [`<#=ObjectName#>`_`<#=ColumnName#>`] ON [`<#=SchemaName#>`].[`<#=ObjectName#>`]([`<#=ColumnName#>`]);
+CREATE STATISTICS [<#=ObjectName#>_<#=ColumnName#>] ON [<#=SchemaName#>].[<#=ObjectName#>]([<#=ColumnName#>]);
 ```
 
 This can be generated as a separate statement or added to a process pipeline to be automatically executed after each processing step is completed.

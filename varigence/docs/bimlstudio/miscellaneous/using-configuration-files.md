@@ -16,7 +16,7 @@ Starting with Mist 3.0, a user can leverage configurations to do far more than a
 
 To build a Mist project, select the ribbon's Build & Deploy tab. Within this tab, a user can choose a 32 or 64 bit build, select the desired build configuration, and begin a build by pressing the Build button.
 
-![Build & Deploy Ribbon](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/1.png)
+![Build & Deploy Ribbon](/img/bimlstudio/1.png)
 
 When initiating a build, the selected configuration file is processed. Within each configuration file is a build configuration, describing which Biml files to compile and which Biml files should provide metadata. Thus, the emit type information that used to be stored solely in Project View has now been moved into configuration files. Adding this layer of indirection is what enables far more customized and powerful builds in Mist.
 
@@ -43,7 +43,7 @@ all.bimlproj | Generates assets from all Biml files under the project's director
 
 To better understand the contents of configurations, let's review an example from a sample Mist project. This project's logical view comprises of:
 
-![Logical View - Highlighted Assets](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/2.png)
+![Logical View - Highlighted Assets](/img/bimlstudio/2.png)
 
 The Biml files, that contain the yellow highlighted assets in the logical view, are only added to DDL configurations. The Biml files, that contain the green highlighted assets, are only added to ETL configurations. The Biml files, containing the blue highlighted assets, are added to DDL and ETL configurations.
 
@@ -51,17 +51,17 @@ The Biml files, that contain the yellow highlighted assets in the logical view, 
 
 Our sample project contains the following files:
 
-![Project View](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/3.png)
+![Project View](/img/bimlstudio/3.png)
 
 Notice that one configuration file is already included; Mist automatically adds a configuration file to all projects.
 
 To generate the default configurations, select the Build & Deploy ribbon tab and press the Generate Default Configurations button.
 
-![Build & Deploy Ribbon - Highlighted Default Configurations button](https://varigencecomstaging.blob.core.windows.net/images-mistdocumentation-configfilesguide/4.png)
+![Build & Deploy Ribbon - Highlighted Default Configurations button](/img/bimlstudio/4.png)
 
 Afterwards, four new files will be added to Project View:
 
-![Project View - Highlighted Configuration Files](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/5.png)
+![Project View - Highlighted Configuration Files](/img/bimlstudio/5.png)
 
 These are the newly generated configuration files. Double clicking on a configuration file opens it in the configuration designer.
 
@@ -69,7 +69,7 @@ These are the newly generated configuration files. Double clicking on a configur
 
 The configuration designer, displaying the ddlConfig.bimlproj file's contents, consists of 3 data grids and 2 text boxes.
 
-![ddlConfig Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/6.png)
+![ddlConfig Designer](/img/bimlstudio/6.png)
 
 #### Biml Wildcard Paths
 
@@ -81,13 +81,13 @@ Remember that the listed Biml files contain the yellow and blue highlighted asse
 
 Opening the etlConfig.bimlproj in the configuration designer shows the following:
 
-![etlConfig Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/7.png)
+![etlConfig Designer](/img/bimlstudio/7.png)
 
 This configuration lists Biml files that include ETLs and related assets, which are the green and blue highlighted assets in the sample project's logical view.
 
 Next, this is the configuration within the buildConfig.bimlproj file:
 
-![buildConfig Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/8.png)
+![buildConfig Designer](/img/bimlstudio/8.png)
 
 First, notice that the Biml Wildcard Paths data grid is empty. That's because this configuration doesn't directly process any Biml files. Instead, it references other configuration files.
 
@@ -103,7 +103,7 @@ Note that configuration paths and Biml wildcard paths are not mutually exclusive
 
 Finally, the configuration within the allConfig.bimlproj file is as follows:
 
-![allConfig Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/9.png)
+![allConfig Designer](/img/bimlstudio/9.png)
 
 ##### Wildcards
 
@@ -127,7 +127,7 @@ Default configurations can be useful in numerous scenarios, especially when serv
 
 To add a new configuration to your project, right click on any folder in Project View and select Add -&gt; New Configuration File.
 
-![New Configuration File Context Menu](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/10.png)
+![New Configuration File Context Menu](/img/bimlstudio/10.png)
 
 Use the New Configuration File dialog to name your configuration file and choose its location. Once done, press Save to create the file and add it to Project View.
 
@@ -135,7 +135,7 @@ Use the New Configuration File dialog to name your configuration file and choose
 
 Interacting with the configuration designer is very easy. The Configuration ribbon contains buttons for adding Biml Wildcard Paths, Pre-Hadron Configuration Paths, and Post-Hadron Configuration Paths.
 
-![Configuration Ribbon Tab](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/11.png)
+![Configuration Ribbon Tab](/img/bimlstudio/11.png)
 
 Additionally, you can drag and drop a Biml file from Project View onto the Biml Wildcard Paths data grid to create a new row with the Biml file's path in it. Similarly, you can drag and drop a configuration file from Project View to the Pre and Post Hadron Configuration Paths data grids to add a new row containing a path to the dropped configuration file.
 
@@ -153,11 +153,11 @@ The configuration designer and its XML editor are synchronized. Any changes with
 
 This configuration file references the ddlConfig.bimlproj file by using a PreConfiguration item. When this configuration is built, MSBuild will execute the ddlConfig.bimlproj file, using a [MSBuild task](http://msdn.microsoft.com/en-us/library/7z253716.aspx). The PreConfiguration item's Targets metadata maps to the Target cell in the Pre-Hadron Configuration data grid. More information on MSBuild targets can be found [here](http://msdn.microsoft.com/en-us/library/ms171462.aspx).
 
-![Build Configuration in XML Editor](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/12.png)
+![Build Configuration in XML Editor](/img/bimlstudio/12.png)
 
 This configuration file lists paths to the Biml files that will be compiled when building. The Sources element is for files whose assets should be generated when building; the element maps to the Generate Assets build action in the Configuration designer. The Includes element is for files whose assets should only be referenced, not generated, during compilation. This element maps to the Provide Metadata build action.
 
-![DDL Configuration in XML Editor](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/12a.png)
+![DDL Configuration in XML Editor](/img/bimlstudio/12a.png)
 
 ### Using the Project View Configuration
 
@@ -167,6 +167,6 @@ All Mist projects have a built-in "Project View" configuration. This configurati
 
 To control a Biml file's Mist Action, select the Biml file in Project View and then display the Property Grid tool window. Each Biml file has a Mist Action property, with values of Live and Reference.
 
-![BimlFile Property Grid](https://varigencecom.blob.core.windows.net/images-mistdocumentation-configfilesguide/13.png)
+![BimlFile Property Grid](/img/bimlstudio/13.png)
 
 Biml files that have a Live mist action are treated as source files. Biml files that have a Reference mist action are treated as metadata files. Remember that you can use multi-select (via Ctrl+Click or Select+Click) to select multiple Biml files and set their Mist Actions simultaneously.

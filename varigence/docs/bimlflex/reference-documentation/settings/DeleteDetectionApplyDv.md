@@ -8,7 +8,7 @@ tags: [BimlFlex, Reference]
 
 Use the default process to insert detected deletes into the Data Vault Satellite tables.
 
-This can be overriden by the "DeleteDetectionApplyDv" Extension Point. Use this together with the "DeleteDetectionEnabled" Setting
+This can be overriden by the `DeleteDetectionApplyDv` Extension Point. Use this together with the `DeleteDetectionEnabled` Setting
 
 Notes:
 

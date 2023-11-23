@@ -14,17 +14,19 @@ This installation is required for SQL/SSIS Servers that run BimlFlex created pac
 
 The Varigence BimlFlex Custom SSIS Components are part of the BimlFlex installation and can be installed either from the BimlFlex installer or the BimlFlex runtime installer.
 
-The latest installer is available here: [BimlFlex Release Notes](bimlflex-release-notes-overview)
+The latest installer is available here: [BimlFlex Release Notes](../release-notes)
 
 ## Local Installation
 
 Run the installer on the SSIS Server and install the custom components version matching the SSIS Server version and target architecture.
 
 For Snowflake targets, install both the BimlFlex SSIS Components 2020 and the BimlFlex Snowflake SSIS Components 2020 for your SSIS and SQL Server version.
-:::note
 
 
-> Only run one of the installers. For minimal installation on a server, only install the components from the Runtime installer
+
+:::note
+
+Only run one of the installers. For minimal installation on a server, only install the components from the Runtime installer
 
 :::
 

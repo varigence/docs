@@ -8,49 +8,51 @@ tags: [BimlFlex, Conceptual]
 
 Data Vault provides an easy-to-explain and flexible way to tackle complex issues for bringing data together, and BimlFlex is optimized to deliver data solutions that have adopted this approach.
 
-The Data Vault design and development can be done quickly and efficiently, using the BimlFlex [Data Vault Accelerator](bimlflex-data-vault-accelerator).
+The Data Vault design and development can be done quickly and efficiently, using the BimlFlex [Data Vault Accelerator](../metadata-editors/accelerator).
 
 This guide assumes the BimlFlex product has been installed, configured and that the sample source metadata is ready to be modeled.
-:::note
 
 
-> More information on getting started with BimlFlex:
->
-> * [BimlFlex Getting Started Intro Videos](bimlflex-getting-started-intro-videos)
-> * [BimlFlex Setup Overview](bimlflex-setup-overview)
+
+:::note
+
+More information on getting started with BimlFlex:
+
+* [BimlFlex Getting Started Intro Videos](../getting-started/intro-videos)
+* [BimlFlex Setup Overview](../installation)
 
 :::
 
 
 ## Data Vault Essentials
 
-* [A brief introduction of Data Vault](bimlflex-data-vault-introduction)
-* [Data Vault Hubs](bimlflex-data-vault-concept-hub) - the Core Business Concept
-* [Data Vault Links](bimlflex-data-vault-concept-link) - the Natural Business Relationship
-* [Data Vault Satellites](bimlflex-data-vault-concept-satellite) - the Context entity containing descriptive information
-* [Data Vault](bimlflex-data-vault) and [Business Data Vault](bimlflex-data-vault-business-data-vault)
-* [Point-in-Time tables](bimlflex-data-vault-concept-pit)
-* [Bridge tables](bimlflex-data-vault-concept-bridge)
-* [Reference Data](bimlflex-data-vault-concept-reference-data)
+* [A brief introduction of Data Vault](./data-vault-introduction)
+* [Data Vault Hubs](./data-vault-concept-hub) - the Core Business Concept
+* [Data Vault Links](./data-vault-concept-link) - the Natural Business Relationship
+* [Data Vault Satellites](./data-vault-concept-satellite) - the Context entity containing descriptive information
+* [Data Vault](./data-vault) and [Business Data Vault](./data-vault-business-data-vault)
+* [Point-in-Time tables](./data-vault-implementation-pit)
+* [Bridge tables](./data-vault-implementation-bridge)
+* [Reference Data](./data-vault-concept-reference-data)
 
 ## BimlFlex Concepts for Data Vault
 
 BimlFlex provides various ways to implement data solutions that utilize concepts from Data Vault methodology:
 
-* [BimlFlex best practices for Data Vault](bimlflex-data-vault-best-practices)
-* [Integration Key Concept](bimlflex-data-vault-integration-keys-and-relationships)
-* [Using hashing for Data Vault](bimlflex-data-vault-hashing)
-* [Driving Keys in BimlFlex](bimlflex-data-vault-driving-keys)
-* [BimlFlex solution templates for Data Vault](bimlflex-data-vault-index)
-* [Zero records](bimlflex-data-vault-concept-zero-records)
+* [BimlFlex best practices for Data Vault](./data-vault-best-practices)
+* [Integration Key Concept](./data-vault-concept-integration-keys)
+* [Using hashing for Data Vault](./hashing-in-data-vault)
+* [Driving Keys in BimlFlex](./driving-keys-in-data-vault)
+* [BimlFlex solution templates for Data Vault](./index)
+* [Zero records](./data-vault-concept-zero-records)
 
 ## Delivering Data
 
 BimlFlex allows the creation of a Dimensional Model (Data Mart) from metadata. This can be based on existing objects, such as Satellites, Point-In-Time or Bridge objects, or views added as a separation-of-concern layer on top of the 'Raw' and 'Business' Data Vault constructs.
 
-* [Business Data Vault](bimlflex-data-vault-business-data-vault)
-* [Facts and Dimensions on Data vault](bimlflex-data-vault-dimensional-model)
+* [Business Data Vault](./data-vault-business-data-vault)
+* [Facts and Dimensions on Data vault](./data-vault-dimensional-model)
 
 ## Recommendations for implementing Data Vault on Microsoft Azure Synapse Analytics
 
-* [Implementing Data Vault on Synapse](bimlflex-data-vault-best-practices-for-deploying-data-vault-on-azure-synapse)
+* [Implementing Data Vault on Synapse](./microsoft-best-practice-data-vault)

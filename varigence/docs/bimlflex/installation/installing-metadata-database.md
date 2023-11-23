@@ -9,10 +9,12 @@ tags: [BimlFlex, Walkthrough]
 The BimlFlex Database - the core metadata repository database - is used by BimlFlex and BimlStudio to model and build the data solution, and to support the automation.
 
 Modelers, analysts and data team members use the BimlFlex App to model and interact with the metadata. This metadata is written to the BimlFlex metadata repository database. BimlStudio then accesses the metadata by querying the database to provide the development and build experience for creating data warehouse artifacts.
-:::danger
 
 
-> The BimlFlex database contains crucial data for the data warehouse automation process. It is important maintain a strict disaster recovery policy for this database.
+
+:::danger
+
+The BimlFlex database contains crucial data for the data warehouse automation process. It is important maintain a strict disaster recovery policy for this database.
 
 :::
 
@@ -27,7 +29,7 @@ There are two different methods used to install the repository databases. The fi
 
 On the first pane of the installation process, there is the option to setup and install the BimlFlex database. Check this box before continuing.
 
-![Setup BimlFlex Button](images/bfxinstalldbs.png "Setup BimlFlex Button")
+![Setup BimlFlex Button](/img/bimlflex/bfxinstalldbs.png "Setup BimlFlex Button")
 
 #### Setting the Connection Strings
 
@@ -37,16 +39,22 @@ This represents the location(s) of the BimlFlex databases to be installed.
 Click `Test` to test the target connection and ensure that it is valid. `Test` will change to `Valid` once confirmed.  
 Once a working connection string has been validated, click the `Add` button to finalize the database configuration. 
 
-![Configure Connection](images/bfx-install-test.png "Configure Connection")
+![Configure Connection](/img/bimlflex/bfx-install-test.png "Configure Connection")
 
-![Valid Connection](images/bfx-install-valid.png "Valid Connection")
+![Valid Connection](/img/bimlflex/bfx-install-valid.png "Valid Connection")
 
-![Valid Connection Added](images/bfx-install-added.png "Valid Connection Added")
+![Valid Connection Added](/img/bimlflex/bfx-install-added.png "Valid Connection Added")
 
 The desired installation location is now saved and will be used to install the database.
 
->[!IMPORTANT]
-> It is important to back up any databases prior to an upgrade.
+
+
+:::danger
+
+It is important to back up any databases prior to an upgrade.
+
+:::
+
 
 Press `Next` to repeat this same configuration process for **BimlCatalog**.
 
@@ -61,23 +69,25 @@ Press `Upgrade` or `Install` to finalize the BimlFlex database installation or u
 
 Alternatively, it is also possible to install the databases from the BimlFlex project in BimlStudio.
 
-In order to setup the databases, first create a [BimlFlex project for BimlStudio](bimlflex-setup-bimlstudio-project).
+In order to setup the databases, first create a [BimlFlex project for BimlStudio](../build-and-deployment/setup-bimlstudio-project).
 
 When the BimlFlex project is opened in BimlStudio, the metadata database setup option is available in the BimlFlex Ribbon.
 
-![Setup BimlFlex Button](images/metadata-database-setup-btn.png "Setup BimlFlex Button")  
+![Setup BimlFlex Button](/img/bimlflex/metadata-database-setup-btn.png "Setup BimlFlex Button")  
 
 #### Setting the Connection String
 
 Set up the databases through the **Setup BimlFlex** dialog.
 
-![Setup BimlFlex Dialog](images/metadata-database-setup-dialog.png "Setup BimlFlex Dialog")
+![Setup BimlFlex Dialog](/img/bimlflex/metadata-database-setup-dialog.png "Setup BimlFlex Dialog")
 
 Configure the connection string to point to the database instance where the database should be created.
-:::note
 
 
-> Change the name of the databases from its default, **BimlFlex**, as needed
+
+:::note
+
+Change the name of the databases from its default, **BimlFlex**, as needed
 
 :::
 
@@ -86,7 +96,7 @@ Configure the connection string to point to the database instance where the data
 
 Click **Deploy** to deploy the databases
 
-![Deploying BimlFlex Databases](images/installing-text.png "Deploying BimlFlex Databases")
+![Deploying BimlFlex Databases](/img/bimlflex/installing-text.png "Deploying BimlFlex Databases")
 
 Once setup completes, configure the BimlFlex Project and BimlFlex App metadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reports to use the **BimlCatalog** database.
 
@@ -110,7 +120,7 @@ Metadata is stored on a per Customer, per Version basis. A 'Customer' can be see
 
 ### Entities
 
-All entities are stored in the app tables within the database. There are a [number of different entity types](bimlflex-app-reference-documentation-entities-index) that are stored in the BimlFlex database.  Some examples are: Connections, Objects, Projects, and Columns.
+All entities are stored in the app tables within the database. There are a [number of different entity types](../reference-documentation/reference-documentation-entities-index) that are stored in the BimlFlex database.  Some examples are: Connections, Objects, Projects, and Columns.
 
 ### Source to Target mappings
 

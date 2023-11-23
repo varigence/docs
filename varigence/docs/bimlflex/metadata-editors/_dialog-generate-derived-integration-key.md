@@ -2,7 +2,7 @@
 
 The Generate Derived Integration Key dialog will allow you to quickly generate an **Integration Key**.  The selected **Columns** from the prior screen should already be selected and a *Column Name* is automatically populated based on the associated **Objects** *Model Override Name* or, if that is empty, the *Object Name*.  The "_BK" suffix can be controlled with the **Setting** **AppendIntegrationKey**.
 
-![Generate Derived Integration Key Dialog -mtb-20-image](images/bimlflex-app-dialog-generate-derived-integration-key.png "Generate Derived Integration Key Dialog")
+![Generate Derived Integration Key Dialog -mtb-20-image](/img/bimlflex/bimlflex-app-dialog-generate-derived-integration-key.png "Generate Derived Integration Key Dialog")
 
 ##### Generate Derived Integration Key Options
 

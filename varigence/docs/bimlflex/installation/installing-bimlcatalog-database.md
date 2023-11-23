@@ -7,10 +7,12 @@ tags: [BimlFlex, Walkthrough]
 # BimlCatalog Database
 
 The BimlCatalog database ('BimlCatalog') contains the orchestration and run time information needed to properly load the data solution. It logs audit information and errors from processes and provides orchestration for batches in case failures occur, mid load.
-:::danger
 
 
-> The BimlCatalog database contains crucial data for the data warehouse auditing, logging and orchestration. It is important to back up and maintain a disaster recovery policy that matches the organizational requirements for this database.
+
+:::danger
+
+The BimlCatalog database contains crucial data for the data warehouse auditing, logging and orchestration. It is important to back up and maintain a disaster recovery policy that matches the organizational requirements for this database.
 
 :::
 
@@ -31,7 +33,7 @@ There are various different methods used to install the BimlCatalog:
 
 On the first pane of the installation process, there is the option to setup and install the BimlCatalog databases. Check this box before continuing.
 
-![Setup BimlFlex Button](images/bfxinstalldbs.png "Setup BimlFlex Button")
+![Setup BimlFlex Button](/img/bimlflex/bfxinstalldbs.png "Setup BimlFlex Button")
 
 #### Setting the Connection Strings
 
@@ -40,16 +42,22 @@ Proceed through the setup until the "Install or Upgrade BimlFlex Databases" scre
 Click `Test` to test the target connection and ensure that it is valid. `Test` will change to `Valid` once confirmed.  
 Once a working connection string has been validated, click the `Add` button to finalize the database configuration.
 
-![Configure Connection](images/bfx-install-test.png "Configure Connection")
+![Configure Connection](/img/bimlflex/bfx-install-test.png "Configure Connection")
 
-![Valid Connection](images/bfx-install-valid.png "Valid Connection")
+![Valid Connection](/img/bimlflex/bfx-install-valid.png "Valid Connection")
 
-![Valid Connection Added](images/bfx-install-added.png "Valid Connection Added")
+![Valid Connection Added](/img/bimlflex/bfx-install-added.png "Valid Connection Added")
 
 The desired installation location is now saved and will be used to install the database.
 
->[!IMPORTANT]
-> It is important to back up any databases prior to an upgrade.
+
+
+:::danger
+
+It is important to back up any databases prior to an upgrade.
+
+:::
+
 
 Before finalizing the BimlCatalog upgrade or installation, examine the *Pending Actions* list. Ensure that there is a pending action that corresponds to the desired database installation.
 
@@ -61,21 +69,23 @@ Press `Upgrade` or `Install` to finalize the database installation or upgrade.
 
 Alternatively, it is also possible to install the databases from the BimlFlex project in BimlStudio.
 
-In order to setup the databases, first create a [BimlFlex project for BimlStudio](bimlflex-setup-bimlstudio-project). When the BimlFlex project is opened in BimlStudio, the metadata database setup option is available in the BimlFlex Ribbon.
+In order to setup the databases, first create a [BimlFlex project for BimlStudio](../build-and-deployment/setup-bimlstudio-project). When the BimlFlex project is opened in BimlStudio, the metadata database setup option is available in the BimlFlex Ribbon.
 
-![Setup BimlFlex Button](images/metadata-database-setup-btn.png "Setup BimlFlex Button")  
+![Setup BimlFlex Button](/img/bimlflex/metadata-database-setup-btn.png "Setup BimlFlex Button")  
 
 #### Setting the Connection String
 
 Set up the databases through the **Setup BimlFlex** dialog.
 
-![Setup BimlFlex Dialog](images/metadata-database-setup-dialog.png "Setup BimlFlex Dialog")
+![Setup BimlFlex Dialog](/img/bimlflex/metadata-database-setup-dialog.png "Setup BimlFlex Dialog")
 
 Configure the connection string to point to the database instance where the database should be created.
-:::note
 
 
-> Change the name of the databases from its default, **BimlCatalog**, as needed.
+
+:::note
+
+Change the name of the databases from its default, **BimlCatalog**, as needed.
 
 :::
 
@@ -84,7 +94,7 @@ Configure the connection string to point to the database instance where the data
 
 Click **Deploy** to deploy the databases
 
-![Deploying BimlFlex Databases](images/installing-text.png "Deploying BimlFlex Databases")
+![Deploying BimlFlex Databases](/img/bimlflex/installing-text.png "Deploying BimlFlex Databases")
 
 Once setup completes, configure the BimlFlex Project and BimlFlex App metadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reports to use the **BimlCatalog** database.
 
@@ -116,7 +126,7 @@ The BimlCatalog database is open, and can be queried by the data team. It also p
 
 ### Reporting Views
 
-For reporting there are views provided that simplifies querying information about the data logistics. Some of these are available from the [BimlFlex App](metadata-editors-overview), and additional reporting can be found as part of the open source [BimlFlex Community Repository](https://github.com/varigence/BimlCatalog/).
+For reporting there are views provided that simplifies querying information about the data logistics. Some of these are available from the [BimlFlex App](../metadata-editors), and additional reporting can be found as part of the open source [BimlFlex Community Repository](https://github.com/varigence/BimlCatalog/).
 
 Specifically, a Power BI Dashboard is [available in the BimlFlex Community Repository](https://github.com/varigence/BimlCatalog/tree/master/BimlCatalogReporting/PowerBI) that displays overview statistics as well as more detailed information about the data logistics executions recorded in the BimlCatalog database.
 

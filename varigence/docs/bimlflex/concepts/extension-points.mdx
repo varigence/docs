@@ -14,10 +14,12 @@ import InclHeaderExtensionPoint from './_incl-header-extension-point.md';
 ## Creating a new Extension Point
 
 The available Extension Points in BimlStudio can be considered as templates to define code overrides. Each Extension Point template contains starter code, and when selected in BimlStudio will create a new Biml file which is automatically added to the `Bundle Extensions` folder in the BimlStudio Logical View. This indicates that the Extension Point file is part of the solution, and any code will be applied to its specified target.
-:::note
 
 
-> It is a good practice to rename the Extension Point file that is created from the template, and in a way that refers to its target or scope.
+
+:::note
+
+It is a good practice to rename the Extension Point file that is created from the template, and in a way that refers to its target or scope.
 
 :::
 
@@ -32,7 +34,7 @@ Extension Point Targets define _where_ the custom code is applied, for example t
 
 Below is an example of where Extension Points can be added to the data logistics structure. The red dots indicate injection points (targets) for Extension Points.
 
-![Extension Points Injection Points](images/bimlflex-ss-v5-extension-points-sample-flow.png "Extension Points Injection Points").
+![Extension Points Injection Points](/img/bimlflex/bimlflex-ss-v5-extension-points-sample-flow.png "Extension Points Injection Points").
 
 The target is relative to the Extension Point, and refers to the object name within the solution. This can be a Project, Connection, Column and more generally any object involved in data transformation. In BimlStudio, the objects are visible in the Logical View in principle.
 
@@ -40,7 +42,7 @@ The target is relative to the Extension Point, and refers to the object name wit
 
 The BimlFlex App provides a feature that allows defining a target for an Extension Point for a collection of objects. This is the `ExtensionPointTarget` Attribute, accessible in the Attributes screen within the BimlFlex App.
 
-![Extension Point Target Attribute](images/attribute-extension-point-target.png "Extension Point Target Attribute").
+![Extension Point Target Attribute](/img/bimlflex/attribute-extension-point-target.png "Extension Point Target Attribute").
 
 The Extension Point Target BimlFlex Attribute can be configured for a specific scope and by adding the Attribute Value as the target for an Extension Point the custom code will be applied to any relevant Objects within this scope.
 
@@ -63,12 +65,12 @@ In addition to specifying one or more Extension Point Target Attributes, a targe
 
 * If the **Extension Point** is known and just the target name of an object is needed, right-click the Object in the Logical View in BimlStudio and click `Copy Biml`.
 
-![Copy Biml](images/right-click-copy-biml.png "Copy Biml")
+![Copy Biml](/img/bimlflex/right-click-copy-biml.png "Copy Biml")
 
 * Paste the `Biml` into a text editor, such as `Notepad` or `Visual Studio Code`. the Screenshot uses Notepad ++ and have the language set to `XML` to enable highlighting.
 * Use either the `Batch` or `ObjectEntity` information depending on the Extension Point scope.
 
-![BimlFlex Target](images/bimlflex-package-annotations.png "BimlFlex Target")
+![BimlFlex Target](/img/bimlflex/bimlflex-package-annotations.png "BimlFlex Target")
 
 #### Option 2 - Find Extension Point Location and Target
 
@@ -76,17 +78,17 @@ This is a more technical approach that requires some `Biml` knowledge.
 
 1. `Right Click` the target Object and choose `View Designer`.
 
-![View Designer](images/right-click-view-designer.png "View Designer")
+![View Designer](/img/bimlflex/right-click-view-designer.png "View Designer")
 
 1. Right Click on the tab with the package name, in this case `CI_LOAD_AWLT_DM_Customer`, and choose `View in BimlScript Designer`
 
-![View BimlScript Designer](images/right-click-view-bimlscript-designer.png "View BimlScript Designer")
+![View BimlScript Designer](/img/bimlflex/right-click-view-bimlscript-designer.png "View BimlScript Designer")
 
 1. click `Update Preview` on the `BimlScript` tab.
 1. In the `Preview Expanded BimlScript` there are `XML` comments with the available `Extension Point` types and their targets.
 1. When targeting the parent of an Object-based Extension Point, also set `CustomOutput.ObjectInherit = true;`
 
-![Update Preview](images/update-preview-extensionpoint-target.png "Update Preview")
+![Update Preview](/img/bimlflex/update-preview-extensionpoint-target.png "Update Preview")
 
 ## Extension Point Directives
 
@@ -116,8 +118,8 @@ Extension Points can inherit the attributes and related items from an object. Th
 Below are two of the required directives that need to be in place in order to use inheritance.
 
 ```biml
-`<#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper"  #>`
-`<#@ import namespace="Varigence.Biml.Flex"  #>`
+<#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper"  #>
+<#@ import namespace="Varigence.Biml.Flex"  #>
 ```
 
 A small block of BimlScript code will enable us to gain access to the items we need. A BimlScript is a piece of C\# that is injected into a Biml file that gives us the ability to use Biml in a programmatic way. We will use C# methods to create variables that contain the objects and information we need.
@@ -125,13 +127,13 @@ A small block of BimlScript code will enable us to gain access to the items we n
 First, we will need to write the first line that will allow us to obtain a copy of the targeted object. This is done by entering the following line.
 
 ```biml
-`<# CustomOutput.ObjectInherit = true; #>`
+<# CustomOutput.ObjectInherit = true; #>
 ```
 
 Next, we will declare the variables we need to hold our information and use methods to obtain the objects of interest in this example. First, create a variable by using the `var` keyword and then giving the variable an appropriate name. In this example, we will get the source connection of a given table and add it as the value of the variable. Because we have already added the table as a property in our directive we can reference it directly.
 
 ```biml
-`<# var sourceConnection = EntityHelper.GetSourceConnection(table); #>`
+<# var sourceConnection = EntityHelper.GetSourceConnection(table); #>
 ```
 
 From here if we want to pull out any of the information about the object, we can insert it directly into our Biml code using the following tags: `<#= #>`. This will take the value stored in any variable, convert it to a string and insert in place of where the original BimlScript tags were.
@@ -139,7 +141,7 @@ From here if we want to pull out any of the information about the object, we can
 For example:
 
 ```biml
-`<#=sourceConnection.Name#>`
+<#=sourceConnection.Name#>
 ```
 
 ## Output Path and Input Path Variables - Optional
@@ -172,31 +174,31 @@ Add the source object name in the target definition. All other information will 
 Note that the file is not the actual filename, but the object that references the files e.g. the file connector.
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourcePipeline" target="<ConnectionName.SchemaName.FileName>" #>`
-`<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>`
-`<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>`
-`<#@ property name="inputPath" type="String" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourcePipeline" target="<ConnectionName.SchemaName.FileName>" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="inputPath" type="String" #>
 
 <!-- Will discard any row with an empty value in the Integration Key column and log the row count as an Exception (Type 8) in the BimlCatalog -->
 
-`<# var tgtTable = new TableObject(targetTable, "STG", "STG");  #>`
+<# var tgtTable = new TableObject(targetTable, "STG", "STG");  #>
 
 <ConditionalSplit Name="CSPL - Discard Empty Rows">
     <InputPath OutputPathName="<#=inputPath #>" />
     <OutputPaths>
         <OutputPath Name="Discard">
-            <Expression>`<#=tgtTable.IntegrationKeyName #>` == &quot;&quot;</Expression>
+            <Expression><#=tgtTable.IntegrationKeyName #> == &quot;&quot;</Expression>
         </OutputPath>
     </OutputPaths>
 </ConditionalSplit>
 
-<CustomComponent Name="FLX - Discarded `<#= tgtTable.SourceSsisSafeScopedName #>`" ComponentTypeName="Varigence.Ssis.RowCount, Varigence.Ssis`<#=RootNode.ObjectTag["ComponentVersion"]#>`, Culture=neutral, PublicKeyToken=e9fb56b2a63ffbab">
+<CustomComponent Name="FLX - Discarded <#= tgtTable.SourceSsisSafeScopedName #>" ComponentTypeName="Varigence.Ssis.RowCount, Varigence.Ssis<#=RootNode.ObjectTag["ComponentVersion"]#>, Culture=neutral, PublicKeyToken=e9fb56b2a63ffbab">
     <InputPaths>
         <InputPath OutputPathName="CSPL - Discard Empty Rows.Discard" HasSideEffects="true" ErrorOrTruncationOperation="" Identifier="RowCountInput"></InputPath>
     </InputPaths>
     <CustomProperties>
-        <CustomProperty Name="RowCountObject" DataType="String" SupportsExpression="true">`<#= tgtTable.SourceSsisSafeScopedName #>`</CustomProperty>
-        <CustomProperty Name="RowCountType" DataType="Int32" TypeConverter="Varigence.Ssis.RowCountSerialize+RowCountTypeEnum, Varigence.Ssis`<#=RootNode.ObjectTag["ComponentVersion"]#>`, Culture=neutral, PublicKeyToken=e9fb56b2a63ffbab" UITypeEditor="">8</CustomProperty>
+        <CustomProperty Name="RowCountObject" DataType="String" SupportsExpression="true"><#= tgtTable.SourceSsisSafeScopedName #></CustomProperty>
+        <CustomProperty Name="RowCountType" DataType="Int32" TypeConverter="Varigence.Ssis.RowCountSerialize+RowCountTypeEnum, Varigence.Ssis<#=RootNode.ObjectTag["ComponentVersion"]#>, Culture=neutral, PublicKeyToken=e9fb56b2a63ffbab" UITypeEditor="">8</CustomProperty>
         <CustomProperty Name="RowCountSum" DataType="String" SupportsExpression="true"></CustomProperty>
     </CustomProperties>
     <Connections>
@@ -204,5 +206,5 @@ Note that the file is not the actual filename, but the object that references th
     </Connections>
 </CustomComponent>
 
-`<# CustomOutput.OutputPathName = @"CSPL - Discard Empty Rows.Default"; #>`
+<# CustomOutput.OutputPathName = @"CSPL - Discard Empty Rows.Default"; #>
 ```

@@ -12,11 +12,11 @@ In BimlStudio, connections are defined once in a project and shared with all the
 
 1. Go to the Home tab on the ribbon, and click the **Connection** button. The Connection button is a split button. Clicking the top half will create a new OLE DB connection, and clicking the bottom half will list all the available connection types.
 
-    ![Connection Button](https://varigencecom.blob.core.windows.net/images-mistdocumentation/003_Step01.png)
+    ![Connection Button](/img/bimlstudio/003_Step01.png)
 
 1. Click the **OLE DB** menu item to create an OLE DB Connection. When the connection is created, it will appear in the Logical View under Connections.
 
-    ![Logical View](https://varigencecom.blob.core.windows.net/images-mistdocumentation/003_Step02.png)
+    ![Logical View](/img/bimlstudio/003_Step02.png)
 
 1. The connection designer should be open on the right, if not Double-click on the connection to open the designer for it.
 
@@ -31,13 +31,13 @@ In BimlStudio, connections are defined once in a project and shared with all the
     * Choose and **Authentication** method
     * Specify a **Database name** or click the **Update** link to get a list of available databases
 
-    ![Connection Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation/003_Step03.png)
+    ![Connection Designer](/img/bimlstudio/003_Step03.png)
 
 1. Change the Name value from OleDbConnection1 to AdventureWorksLT to give the connection a meaningful name. You will be prompted "Do you also want to rename the asset's Biml file?" click **Yes**
 
-    ![Finished Connection Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation/003_Step05.png)
+    ![Finished Connection Designer](/img/bimlstudio/003_Step05.png)
 
-1. Save the project to persist your changes to the project files. See [Saving a Project](saving-a-project) for more information.
+1. Save the project to persist your changes to the project files. See [Saving a Project](./saving-a-project) for more information.
 
 1. Once you've entered a connection string, you can click the **Test** button in the Connection Tools. Connections tab in order to validate it.
 

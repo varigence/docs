@@ -7,16 +7,22 @@ tags: [BimlFlex, Reference]
 
 # Data Logistics Orchestration
 
-BimlFlex provides an orchestration framework that is automatically added to the generated output. This framework creates the necessary hooks and wrappers around each individual data logistics process to integrate with the [BimlCatalog](xref:bimlflex-components-overview#bimlcatalog-database) runtime repository.
+BimlFlex provides an orchestration framework that is automatically added to the generated output. This framework creates the necessary hooks and wrappers around each individual data logistics process to integrate with the [BimlCatalog](../getting-started/bimlflex-components-overview#bimlcatalog-database) runtime repository.
 
 The BimlCatalog keeps track of process execution, and directs the data logistics processes on handling exceptions. In practice, this means that each batch, pipeline, or SSIS package contains various calls to interface with the BimlCatalog.
 
->[!NOTE]
-> Orchestration through BimlFlex may be implemented in different ways depending on the **Integration Template**, but always works the same.
+
+
+:::note
+
+Orchestration through BimlFlex may be implemented in different ways depending on the **Integration Template**, but always works the same.
+
+:::
+
 
 ## Technology Specific Implementations
 
-* [Orchestration in SSIS](bimlflex-concepts-orchestration-ssis)
+* [Orchestration in SSIS](./orchestration-ssis)
 
 ## Batch Orchestration
 

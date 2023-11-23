@@ -8,7 +8,7 @@ tags: [BimlFlex, Reference]
 
 The Container Name to use for the error process.
 
-This should be indicative of the purpose of the contents, such as "error".
+This should be indicative of the purpose of the contents, such as `error`.
 
 Notes:
 

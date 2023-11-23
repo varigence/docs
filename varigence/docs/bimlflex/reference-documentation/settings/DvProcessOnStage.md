@@ -8,7 +8,7 @@ tags: [BimlFlex, Reference]
 
 Determines if the Data Vault stored procedure be called after the source extract to staging process has been completed.
 
-For Azure projects. this must be combined with "AzureStageOnExtract".
+For Azure projects. this must be combined with `AzureStageOnExtract`.
 
 This allows the load from source to Data Vault to be performed by the extract package or pipeline.
 

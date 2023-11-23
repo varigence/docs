@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Display Schema Name
 
-Controls if the source schema name should be included in the generated SSIS package name. E.g. the default "EXT_AWLT_Customer" package name would be named "EXT_AWLT_SalesLT_Customer" when enabled
+Controls if the source schema name should be included in the generated SSIS package name. E.g. the default `EXT_AWLT_Customer` package name would be named `EXT_AWLT_SalesLT_Customer` when enabled
 
 Notes:
 

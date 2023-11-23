@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Constraint Mode DV
 
-The table reference constraint mode to apply for the Data Vault database. Allowed values are "DoNotCreate", "CreateAndNoCheck" and "CreateAndCheck".
+The table reference constraint mode to apply for the Data Vault database. Allowed values are `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`.
 
 Notes:
 

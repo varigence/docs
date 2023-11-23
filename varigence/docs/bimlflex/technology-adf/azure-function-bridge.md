@@ -17,9 +17,9 @@ The Function Bridge provides the following functionality:
 * File processing features used to provide functionality, such as moving a file in Blob storage from a staging location to an archive location
 * Call queries or procedures on platforms that are not (yet) natively supported by Azure Data Factory in exception cases
 
-The configuration of the Function Bridge is managed in the BimlFlex App, in the [`Function Bridge Name` Setting](bimlflex-app-reference-documentation-setting-AzureFunctionBridgeName). This includes the name of the intended Function Bridge resource in Azure. If this information is not provided, the ARM template will include generated names.
+The configuration of the Function Bridge is managed in the BimlFlex App, in the [`Function Bridge Name` Setting](../reference-documentation/settings/AzureFunctionBridgeName). This includes the name of the intended Function Bridge resource in Azure. If this information is not provided, the ARM template will include generated names.
 
-Because generated names will change on each build, which is likely to create redundant resources in the Azure Resource Group. It is recommended to properly define the `Function Bridge Name`. This, and other supporting settings are available in the [`Azure` Settings Group](xref:bimlflex-app-reference-documentation-settings-index#azure).
+Because generated names will change on each build, which is likely to create redundant resources in the Azure Resource Group. It is recommended to properly define the `Function Bridge Name`. This, and other supporting settings are available in the [`Azure` Settings Group](../reference-documentation/reference-documentation-settings-index#azure).
 
 Deployment of the Function Bridge is automatically provided by the ARM templates that BimlFlex generates. The Function Bridge will have a corresponding Linked Service in the Azure Data Factory that has been defined for the Project.
 

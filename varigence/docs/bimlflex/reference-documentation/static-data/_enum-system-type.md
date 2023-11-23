@@ -7,7 +7,7 @@ tags: [BimlFlex, Reference]
 System Types
 Header not included because it is used in different ways
 -->
-**System Types** are configured using the [**Connection Editor**](bimlflex-connection-editor) to define what kind of data source or target is connected to as part of the **Connection Type** configuration.
+**System Types** are configured using the [**Connection Editor**](../../metadata-editors/connection-editor) to define what kind of data source or target is connected to as part of the **Connection Type** configuration.
 
 | System Type                | Code    | Description                                                                            | Supported by Connection Type |
 | -------------------------- | ------- | -------------------------------------------------------------------------------------- | ---------------------------- |

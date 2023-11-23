@@ -6,6 +6,7 @@ const config: Config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
+  staticDirectories: ['public', 'static'],
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -48,7 +49,7 @@ const config: Config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       } satisfies Preset.Options,
     ],

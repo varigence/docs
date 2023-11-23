@@ -40,10 +40,12 @@ Sample Connection:
 | Record Source     | nwnd                                                                                                               |
 | Persist History   | true                                                                                                               |
 | Threads           | 0                                                                                                                  |
-:::note
 
 
-> The actual definition of this connection will be defined using the [Connection Override Extension Point](#connection-override-extension-point) below.
+
+:::note
+
+The actual definition of this connection will be defined using the [Connection Override Extension Point](#connection-override-extension-point) below.
 
 :::
 
@@ -91,10 +93,12 @@ Add the Object information through the BimlFlex App.
 | Schema      | odata        |
 | Object Name | Products     |
 | Object Type | Table        |
-:::note
 
 
-> Metadata Import is not supported yet for OData so **Object** and **Column** information will have to be manually added.
+
+:::note
+
+Metadata Import is not supported yet for OData so **Object** and **Column** information will have to be manually added.
 
 :::
 
@@ -115,10 +119,12 @@ Add the Column information as described in the OData service definition, with co
 | NWND_SRC   | odata.Products | UnitsOnOrder    | Int16         | Update      | 8       | false       | false           | false      |
 | NWND_SRC   | odata.Products | ReorderLevel    | Int16         | Update      | 9       | false       | false           | false      |
 | NWND_SRC   | odata.Products | Discontinued    | Bool          | Update      | 10      | false       | false           | false      |
-:::note
 
 
-> Metadata Import is not supported yet for OData so **Object** and **Column** information will have to be manually added.
+
+:::note
+
+Metadata Import is not supported yet for OData so **Object** and **Column** information will have to be manually added.
 
 :::
 
@@ -134,21 +140,23 @@ Source, authentication etc. are all embedded in the `ObjectData`, for configurab
 This connection connects to odata.org to access a publicly available data set using OData v3 and the Northwind sample source.
 
 Sample Extension Point: `NWND_SRC_ConnectionOverride.biml`
-:::note
 
 
-> If converting to your own solution, the `target=` should be set to the *CONNECTION NAME* of the OData **Connection**.
->
-> Additionally, ensure you configure the attributes of the `<CustomSsisConnection/>` to reflect the values you want.
->
-> When defining the `ObjectData`, ensure you are using the proper XML Escape Characters, and setting the `Url`, `ConnectString`, `Service Document`, and other fields required for custom component configuration, as needed.
+
+:::note
+
+If converting to your own solution, the `target=` should be set to the *CONNECTION NAME* of the OData **Connection**.
+
+Additionally, ensure you configure the attributes of the `<CustomSsisConnection/>` to reflect the values you want.
+
+When defining the `ObjectData`, ensure you are using the proper XML Escape Characters, and setting the `Url`, `ConnectString`, `Service Document`, and other fields required for custom component configuration, as needed.
 
 :::
 
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionOverride" target="NWND_SRC" #>`
-`<#@ property name="connection" type="BimlFlexModelWrapper.ConnectionsWrapper" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="ConnectionOverride" target="NWND_SRC" #>
+<#@ property name="connection" type="BimlFlexModelWrapper.ConnectionsWrapper" #>
 
 <!--
 This ConnectionOverride Extension Point adds the connection Object for the OData source.
@@ -162,11 +170,13 @@ This connection connects to odata.org to access a publicly available data set us
     ObjectData="&lt;ODataConnectionManager UserName=&quot;&quot; Url=&quot;http://services.odata.org/V3/Northwind/Northwind.svc&quot; ConnectionString=&quot;Service Document Url=https://services.odata.org/V3/Northwind/Northwind.svc;&quot; MicrosoftOnlineServicesAuth=&quot;False&quot; AuthType=&quot;WindowsAuthentication&quot; /&gt;"
 />
 ```
-:::danger
 
 
-> In order to get the Northwind OData connection to work it requires `http` instead of `https`.
-> The fix provided in [TLS Issue with SSIS package while accessing OData Source like Dynamics AX Online](https://docs.microsoft.com/en-au/archive/blogs/dataaccesstechnologies/tls-issue-with-ssis-package-while-accessing-odata-source-like-dynamics-ax-online) may also be required.
+
+:::danger
+
+In order to get the Northwind OData connection to work it requires `http` instead of `https`.
+The fix provided in [TLS Issue with SSIS package while accessing OData Source like Dynamics AX Online](https://docs.microsoft.com/en-au/archive/blogs/dataaccesstechnologies/tls-issue-with-ssis-package-while-accessing-odata-source-like-dynamics-ax-online) may also be required.
 
 :::
 
@@ -176,17 +186,19 @@ This connection connects to odata.org to access a publicly available data set us
 The following **Extension Point** is also required in order to properly build out the data flow.
 
 Sample Extension Point: `EXT_NWND_SRC_SourceOverride.biml`
-:::note
 
 
-> If converting to your own solution, the `target=` should be set to the *PROJECT NAME* of the OData **Project**.
+
+:::note
+
+If converting to your own solution, the `target=` should be set to the *PROJECT NAME* of the OData **Project**.
 
 :::
 
 
 ```biml
-`<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceOverride" target="EXT_NWND_SRC"#>`
-`<#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>`
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="SourceOverride" target="EXT_NWND_SRC"#>
+<#@ property name="table" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 
 <!--
 This SourceOverride Extension Point dynamically creates the source component for the OData Objects based on the metadata.
@@ -201,7 +213,7 @@ TableObject sourceTable = new TableObject(table, table.Connection.RelatedItem.In
 
 <CustomComponent Name="OData Source" ComponentTypeName="Microsoft.OData" ContactInfo="OData Source Component;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0" UsesDispositions="true">
     <CustomProperties>
-        <CustomProperty Name="CollectionName" DataType="String" SupportsExpression="true" Description="Name of the collection to be retrieved from the service.">`<#=sourceTable.ObjectName #>`</CustomProperty>
+        <CustomProperty Name="CollectionName" DataType="String" SupportsExpression="true" Description="Name of the collection to be retrieved from the service."><#=sourceTable.ObjectName #></CustomProperty>
         <CustomProperty Name="DefaultStringLength" DataType="Int32" Description="The default maximum length for a string that has no maxlength specified in the schema.">255</CustomProperty>
         <CustomProperty Name="Query" DataType="String" SupportsExpression="true" Description="Query in the url."></CustomProperty>
         <CustomProperty Name="ResourcePath" DataType="String" SupportsExpression="true" Description="Resource path of the collection to be retrieved from the service."></CustomProperty>
@@ -210,28 +222,28 @@ TableObject sourceTable = new TableObject(table, table.Connection.RelatedItem.In
     <OutputPaths>
         <OutputPath Name="Output">
             <OutputColumns>
-                `<# foreach (var col in sourceTable.Columns.Where(c => c.IsDerived=="N")) `{ #>`
-                <OutputColumn Name="<#=col.ColumnName #>" `<#=col.GetDataTypeBiml() #>` ExternalMetadataColumnName="<#=col.ColumnName #>" ErrorOrTruncationOperation="Conversion" ErrorRowDisposition="FailComponent" TruncationRowDisposition="FailComponent" />
-                `<# }` #>`
+                <# foreach (var col in sourceTable.Columns.Where(c => c.IsDerived=="N")) `{ #>
+                <OutputColumn Name="<#=col.ColumnName #>" <#=col.GetDataTypeBiml() #> ExternalMetadataColumnName="<#=col.ColumnName #>" ErrorOrTruncationOperation="Conversion" ErrorRowDisposition="FailComponent" TruncationRowDisposition="FailComponent" />
+                <# }` #>
             </OutputColumns>
             <ExternalColumns>
-                `<# foreach (var col in sourceTable.Columns.Where(c => c.IsDerived=="N")) `{ #>`
-                <ExternalColumn Name="<#=col.ColumnName #>"  `<#=col.GetDataTypeBiml() #>` />
-                `<# }` #>`
+                <# foreach (var col in sourceTable.Columns.Where(c => c.IsDerived=="N")) `{ #>
+                <ExternalColumn Name="<#=col.ColumnName #>"  <#=col.GetDataTypeBiml() #> />
+                <# }` #>
             </ExternalColumns>
         </OutputPath>
         <OutputPath Name="Error output" IsErrorOutput="true">
             <OutputColumns>
-                `<# foreach (var col in sourceTable.Columns.Where(c => c.IsDerived=="N")) `{ #>`
-                <OutputColumn Name="<#=col.ColumnName #>" `<#=col.GetDataTypeBiml() #>` />
-                `<# }` #>`
+                <# foreach (var col in sourceTable.Columns.Where(c => c.IsDerived=="N")) `{ #>
+                <OutputColumn Name="<#=col.ColumnName #>" <#=col.GetDataTypeBiml() #> />
+                <# }` #>
             </OutputColumns>
         </OutputPath>
     </OutputPaths>
     <Connections>
         <Connection Name="Connection" ConnectionName="<#=sourceTable.ConnectionName #>" />
     </Connections>
-    `<# CustomOutput.OutputPathName = @"OData Source.Output"; #>`
+    <# CustomOutput.OutputPathName = @"OData Source.Output"; #>
 </CustomComponent>
 ```
 

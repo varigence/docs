@@ -7,7 +7,7 @@ tags: [BimlFlex, Reference]
 Change Types
 Header not included because it is used in different ways
 -->
-**Change Types** are applied using the [**Column Editor**](bimlflex-column-editor) and drive the behavior and purpose of the **Column** for the design and code generation process. The available change types are dependent on the way the **Connection** is used in a BimlFlex **Project**. Depending on the connection's **Integration Stage** some options may, or may not be, available.
+**Change Types** are applied using the [**Column Editor**](../../metadata-editors/column-editor) and drive the behavior and purpose of the **Column** for the design and code generation process. The available change types are dependent on the way the **Connection** is used in a BimlFlex **Project**. Depending on the connection's **Integration Stage** some options may, or may not be, available.
 
 The following options are available:
 

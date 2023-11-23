@@ -4,9 +4,9 @@ description: Documentation of settings option within BimlFlex for SnapshotRetent
 tags: [BimlFlex, Reference]
 ---
 
-# Snapshot Retention Period
+# Snapshot Retention Period (Days)
 
-The snapshot data retention period to use for the BimlFlex database cleanup process.
+The snapshot data retention period in days to use for the BimlFlex database cleanup process.
 
 Notes:
 

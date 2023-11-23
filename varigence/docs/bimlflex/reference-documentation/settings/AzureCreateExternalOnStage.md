@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Create External On Stage
 
-Should the Staging process "DROP" and "CREATE EXTERNAL TABLE" before running the Staging Stored Procedure.
+Should the Staging process `DROP` and `CREATE EXTERNAL TABLE` before running the Staging Stored Procedure.
 
 Notes:
 

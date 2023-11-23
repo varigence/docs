@@ -8,7 +8,7 @@ tags: [BimlFlex, Reference]
 
 Naming convention to use for objects and columns.
 
-Case sensitive options are "None", "PascalCase", "camelCase", "Proper_Case", "Proper Case", "UPPER_CASE" and "lower_case"
+Case sensitive options are `None`, `PascalCase`, `camelCase`, `Proper_Case`, `Proper Case`, `UPPER_CASE` and `lower_case`
 
 Notes:
 

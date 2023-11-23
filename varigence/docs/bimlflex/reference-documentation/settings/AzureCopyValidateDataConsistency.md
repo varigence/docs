@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Data Consistency Verification
 
-Determines if the Copy Activity validates data consistency for supported sources and sinks.
+Determines if the Azure Copy Activity validates data consistency for supported sources and sinks.
 
 Notes:
 

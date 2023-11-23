@@ -10,7 +10,7 @@ The **Treeview** is one of the core ways of navigating through, and interacting 
 
 The treeview is a context-sensitive visual representation of the relationships between metadata components. Where a component contains child components, it can be collapsed or expanded. It is located in the left-side navigation panel, between the menu items and the metadata editors.
 
-![BimlFlex Treeview](images/bfx-treeview.png "BimlFlex Treeview")
+![BimlFlex Treeview](/img/bimlflex/bfx-treeview.png "BimlFlex Treeview")
 
 In the treeview, the total number of items within an individual component will be displayed next to the object name. The treeview is expandable/collapsible by clicking the <img class="icon-inline" src="images/svg-icons/collapsed.svg"/> / <img class="icon-inline" src="images/svg-icons/expanded.svg"/> icons.
 

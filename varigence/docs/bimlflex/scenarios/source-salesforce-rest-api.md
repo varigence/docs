@@ -38,7 +38,7 @@ Under the **Connection** tab, ensure the following settings are set as indicated
 
 By default, when using Snapshot 42 or 43 these settings will already be set.
 
-![Salesforce Source Connection REST API](images/bfx-sfdc-rest-api-connection-sample.png "Salesforce Source Connection via Sample Metadata")
+![Salesforce Source Connection REST API](/img/bimlflex/bfx-sfdc-rest-api-connection-sample.png "Salesforce Source Connection via Sample Metadata")
 
 ### Creating a New Salesforce Connection
 
@@ -48,7 +48,7 @@ Click `+` from the navigation tree and in the **Add Connection** dialog, fill in
 
 Click *Save* and refresh for your new connection to appear within the navigation tree.
 
-![Salesforce Source Connection from New](images/bfx-sfdc-rest-api-new-connection.png "Salesforce Source Connection from New")
+![Salesforce Source Connection from New](/img/bimlflex/bfx-sfdc-rest-api-new-connection.png "Salesforce Source Connection from New")
 
 ### Required Connection Settings
 
@@ -70,7 +70,7 @@ Once logged in and on the Salesforce Lightning Developer homepage, in the sideba
 
 Click *New Connected App* (top right).
 
-![Salesforce New Connected App Creation](images/bfx-sfdc-new-connected-app.png "Salesforce New Connected App Creation")
+![Salesforce New Connected App Creation](/img/bimlflex/bfx-sfdc-new-connected-app.png "Salesforce New Connected App Creation")
 
 The required fields in the **Basic Information** section of the **New Connected App** screen are:
 
@@ -80,7 +80,7 @@ The required fields in the **Basic Information** section of the **New Connected 
 
 Fill in these fields with your application and/or business information.
 
-![Salesforce New Connected App Required Fields 1](images/bfx-sfdc-new-connected-app-required-fields.png "Required Fields 1")
+![Salesforce New Connected App Required Fields 1](/img/bimlflex/bfx-sfdc-new-connected-app-required-fields.png "Required Fields 1")
 
 In the **API (Enable OAuth Settings)** menu ensure that the following required fields are set as follows:
 
@@ -90,7 +90,7 @@ In the **API (Enable OAuth Settings)** menu ensure that the following required f
 * *Selected OAuth Scopes* is `Access and manage your data (api)`
 * *Require Secret for Refresh Token Flow* is `enabled`
 
-![Salesforce New Connected App Required Fields for OData](images/bfx-sfdc-new-connected-app-oath-required-fields.png "Salesforce OAuth Required Fields")
+![Salesforce New Connected App Required Fields for OData](/img/bimlflex/bfx-sfdc-new-connected-app-oath-required-fields.png "Salesforce OAuth Required Fields")
 
 Click *Save* once completed.
 Note that Salesforce advises that changes can take up to ten (10) minutes to take effect.
@@ -102,16 +102,18 @@ The following information is populated in their respective fields:
 * *Consumer Secret*
 * *Callback URL*
 
-![Salesforce Manage Connected App](images/bfx-sfdc-manage-connected-app.png "Salesforce Managed Connected App Menu")
+![Salesforce Manage Connected App](/img/bimlflex/bfx-sfdc-manage-connected-app.png "Salesforce Managed Connected App Menu")
 
 The data above can be copied and pasted into the BimlFlex **Connections** tab.
 
-![BimlFlex Connections Tab Completed](images/bfx-sfdc-completed-connection-field.png "BimlFlex Completed Connection Field")
+![BimlFlex Connections Tab Completed](/img/bimlflex/bfx-sfdc-completed-connection-field.png "BimlFlex Completed Connection Field")
 
->[!Note]
-> Double-clicking on the *Connection String* field will bring up a dialog box that allows users to enter their Username and Password into individual fields, instead of editing the entire string.
 
->[!Note]
+[!Note]
+Double-clicking on the *Connection String* field will bring up a dialog box that allows users to enter their Username and Password into individual fields, instead of editing the entire string.
+
+
+[!Note]
 >The *Catalog* is where Users will define their schema. Salesforce itself does not have the concept of schema, but when imported, it does exist within the realm of relational databases.
 
 Click *Save*.
@@ -124,13 +126,13 @@ Locate the newly created Connected App and click the `down chevron` in the far-r
 
 Click *Manage*.
 
-![Salesforce Manage Connected App](images/bfx-sfdc-app-manager-manage-app.png "Salesforce Manage Connected App")
+![Salesforce Manage Connected App](/img/bimlflex/bfx-sfdc-app-manager-manage-app.png "Salesforce Manage Connected App")
 
 Click *Edit Policies* (top middle).
 
 Change the *IP Relaxation* setting from the default `Enforce IP Restrictions` to `Relax IP Restrictions`, and click *Save*.
 
-![Salesforce Edit Policies](images/bfx-sfdc-edit-policies-ip-relaxation.png "Salesforce Edit Policies")
+![Salesforce Edit Policies](/img/bimlflex/bfx-sfdc-edit-policies-ip-relaxation.png "Salesforce Edit Policies")
 
 ### Finalizing the Connection
 
@@ -138,11 +140,11 @@ Once all of the **Connection** settings have been entered into BimlFlex, and mod
 
 Click *Import Metadata*. On the next screen, click *Connect to Database*.
 
-![BimlFlex Connect to Database](images/bfx-sfdc-connect-to-database.png "Connect to Database")
+![BimlFlex Connect to Database](/img/bimlflex/bfx-sfdc-connect-to-database.png "Connect to Database")
 
 If all information was entered accurately, the application will successfully connect to Salesforce. The screen will refresh with all of the imported Objects listed by schema (as named by the User in the *Catalog* data field above.)
 
-![BimlFlex Imported Salesforce Objects](images/bfx-sfdc-imported-objects-complete.png "BimlFlex Imported Salesforce Objects")
+![BimlFlex Imported Salesforce Objects](/img/bimlflex/bfx-sfdc-imported-objects-complete.png "BimlFlex Imported Salesforce Objects")
 
 Select the desired **Objects** to import and click *Import Metadata* one final time to complete the process.
 
@@ -159,12 +161,13 @@ As such, [Bulk API 2.0 Limits](https://developer.salesforce.com/docs/atlas.en-us
 * Date functions in GROUP BY clauses (date functions in WHERE clauses are supported)
 * Compound address fields or compound geolocations fields
 
->[!Note]
-> Additional links:
->
-> * [Salesforce: Address Compound Fields](https://developer.salesforce.com/docs/atlas.en-us.188.0.api.meta/api/compound_fields_address.htm)
-> * [Salesforce: Geolocation Compound Field](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_geolocation.htm)
-> * [Salesforce: Compound Field Considerations and Limitations](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_limitations.htm)
+
+[!Note]
+Additional links:
+
+* [Salesforce: Address Compound Fields](https://developer.salesforce.com/docs/atlas.en-us.188.0.api.meta/api/compound_fields_address.htm)
+* [Salesforce: Geolocation Compound Field](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_geolocation.htm)
+* [Salesforce: Compound Field Considerations and Limitations](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/compound_fields_limitations.htm)
 
 ### Accessing Compound Fields with ADF
 
@@ -179,6 +182,7 @@ When using the COZYROC Saleforce Connector for SSSIS, the compound fields can be
 This can be achieved by manually entering a metadata **Column** with the name of the compound field.
 Example `BillingAddress` in the `Account` entity.
 
->[!Important]
-> ADF does not support any reference to a compound field.
-> If a compound field is introduced into your solution, it will no longer be available for direct migration to ADF unless you configure a derived/calculated column to replace the original compound field reference.
+
+[!Important]
+ADF does not support any reference to a compound field.
+If a compound field is introduced into your solution, it will no longer be available for direct migration to ADF unless you configure a derived/calculated column to replace the original compound field reference.

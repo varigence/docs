@@ -11,4 +11,4 @@ Determines if generated SSIS packages use delayed validation for metadata valida
 Notes:
 
 * This setting is part of the *SSIS* settings category.
-* The default value for this setting is `true`.
+* The default value for this setting is `Y`.

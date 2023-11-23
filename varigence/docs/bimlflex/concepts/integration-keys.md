@@ -12,10 +12,12 @@ The **Integration Key** concept is a pragmatic design feature in BimlFlex, that 
 In short, defining **Integration Keys** allows modelers to define their own relationships between data sets. BimlFlex will use these relationships to generate data integration code.
 
 BimlFlex implements a single-key modeling approach. Any **Integration Key** in the solution is a single string representation of one or more (source) values.
-:::note
 
 
-> The when designing a Data Vault solution, the **Integration Key** assumes the role of the Business Key concept by default. This is explained in more detail in the [Data Vault](bimlflex-data-vault-index) sections.
+
+:::note
+
+The when designing a Data Vault solution, the **Integration Key** assumes the role of the Business Key concept by default. This is explained in more detail in the [Data Vault](../delivering-data-vault) sections.
 
 :::
 
@@ -62,10 +64,12 @@ In the BimlFlex metadata, the integration key is defined using the `FlexToBk( )`
 As an example, the metadata expression for the 'Customer' will look like this `FlexToBk(@@rs,CustomerID)`. This indicates that the **Integration Key** will be a concatenation of the **Record Source** and the 'CustomerID' column value.
 
 The concatenation character used with multiple columns is defined in the BimlFlex Settings using the `String Concatenator` setting. The default concatenation character is `~`.
-:::note
 
 
-> Defining Integration Keys to use for Data Vault modeling typically requires extensive analysis. Finding the correct Integration Key definition relies on business process and source system knowledge as well as source system data profiling.
+
+:::note
+
+Defining Integration Keys to use for Data Vault modeling typically requires extensive analysis. Finding the correct Integration Key definition relies on business process and source system knowledge as well as source system data profiling.
 
 :::
 
@@ -82,7 +86,7 @@ In the case of a source having a ProductID key, the expression `FlexToBk(@@rs, P
 
 Integration keys allow relationships to be defined in metadata. A column can reference another object's Primary Key. In BimlFlex, the object's Primary Key by default is also an integration key. But this is not necessarily the case, and depends on the chosen design approach.
 
-These keys and references are used by BimlFlex to accelerate and build [Data Vault](bimlflex-data-vault-index) objects when using the [**Accelerator**](bimlflex-data-vault-accelerator).
+These keys and references are used by BimlFlex to accelerate and build [Data Vault](../delivering-data-vault) objects when using the [**Accelerator**](../metadata-editors/accelerator).
 
 These are used by BimlFlex to accelerate and build Hub and Link entities for Data Vault implementations.
 
@@ -90,12 +94,12 @@ A reference column can only refer to another table's Primary Key. The Data Vault
 
 The **Import Metadata Dialog** can create integration keys and defines the references between integration keys automatically using the source key references. It is also possible to create and define integration key references manually using the `Create Integration Key` function and the `Reference Table` and `Reference Column Name` fields.
 
-This can be done in the [**Object Editor**](bimlflex-object-editor) and the [**Schema Diagram**](bimlflex-schema-diagram).
+This can be done in the [**Object Editor**](../metadata-editors/object-editor) and the [**Schema Diagram**](../metadata-editors/schema-diagram).
 
 ## Relationship to Surrogate Keys
 
-By default, BimlFlex will 'hash' the **Integration Key** value to be used as a **Surrogate Key** column in [Data Vault](bimlflex-data-vault-index). The **Surrogate Key** will act as the Primary Key for a Hub, and will be part of the Primary Key for Link and Satellite objects.
+By default, BimlFlex will 'hash' the **Integration Key** value to be used as a **Surrogate Key** column in [Data Vault](../delivering-data-vault). The **Surrogate Key** will act as the Primary Key for a Hub, and will be part of the Primary Key for Link and Satellite objects.
 
 Because of this, the **Surrogate Key** will be used in Data Vault Foreign Key references, if referential integrity is configured.
 
-The Data Type and applied hashing algorithm are configurable through the BimlFlex [**Settings**](bimlflex-setting-editor). The default used by BimlFlex is to use the `SHA1` algorithm and store this value as Binary value.
+The Data Type and applied hashing algorithm are configurable through the BimlFlex [**Settings**](../metadata-editors/setting-editor). The default used by BimlFlex is to use the `SHA1` algorithm and store this value as Binary value.

@@ -5,7 +5,7 @@ title: Database Connection Settings
 
 Configure BimlFlex to connect to the BimlFlex database through the configuration pane opened by the settings cog on the right-hand side of the main toolbar.
 
-![Settings -mtb-20-image](images/bimlflex-app-settings-database-connection.png "Settings")
+![Settings -mtb-20-image](/img/bimlflex/bimlflex-app-settings-database-connection.png "Settings")
 
 ### Database Connection Settings
 
@@ -13,13 +13,13 @@ Specify the database server, database and login information for the metadata dat
 
 ### Create New Customer
 
-Click the *New Customer* button and enter a new **[Customer](bimlflex-concepts-customer)** to create a new customer. An empty *Version* will automatically be created and selected.
+Click the *New Customer* button and enter a new **[Customer](../concepts/customer)** to create a new customer. An empty *Version* will automatically be created and selected.
 
-![Settings - Create new Customer -mtb-20-image](images/bimlflex-app-settings-new-customer.png "Settings - Create new Customer")
+![Settings - Create new Customer -mtb-20-image](/img/bimlflex/bimlflex-app-settings-new-customer.png "Settings - Create new Customer")
 
 ### Select Customer
 
-It is possible to select or change the selected [Customer](bimlflex-concepts-customer) by choosing an available Customer from the *Customer* drop-down list.
+It is possible to select or change the selected [Customer](../concepts/customer) by choosing an available Customer from the *Customer* drop-down list.
 
 ### Select Version
 

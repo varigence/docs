@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Append Schema
 
-Determines if the schema is appended to the names of accelerated Data Vault object. For the source table "SalesLT.Product" the Hub accelerated would be named "HUB_SalesLT_Product" rather than the default "HUB_Product"
+Determines if the schema is appended to the names of accelerated Data Vault object. For the source table `SalesLT.Product` the Hub accelerated would be named `HUB_SalesLT_Product` rather than the default `HUB_Product`
 
 Notes:
 

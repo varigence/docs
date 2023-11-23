@@ -103,9 +103,15 @@ CREATE EXTERNAL FILE FORMAT [pipe_zip_format]
     );
 ```
 
->[!TIP]
->
-> For additional information on Microsoft SQL Server Data Tools, see:
->
-> * Visual Studio documentation: [SQL Server Data Tools for Visual Studio](https://visualstudio.microsoft.com/vs/features/ssdt/)
-> * Microsoft Docs Documentation: [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/sql-server-data-tools?view=sql-server-ver15)
+
+
+:::tip
+
+
+For additional information on Microsoft SQL Server Data Tools, see:
+
+* Visual Studio documentation: [SQL Server Data Tools for Visual Studio](https://visualstudio.microsoft.com/vs/features/ssdt/)
+* Microsoft Docs Documentation: [SQL Server Data Tools](https://docs.microsoft.com/en-us/sql/ssdt/sql-server-data-tools?view=sql-server-ver15)
+
+:::
+

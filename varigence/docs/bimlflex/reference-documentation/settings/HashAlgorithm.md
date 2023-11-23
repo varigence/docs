@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Hash Algorithm
 
-The [hashing](bimlflex-concepts-hashing) algorithm to use. ("MD5"/"SHA1"/"SHA2_256"/"SHA2_512").
+The [hashing](../../concepts/hashing) algorithm to use. (`MD5`/`SHA1`/`SHA2_256`/`SHA2_512`).
 
 Notes:
 

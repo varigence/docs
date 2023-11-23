@@ -12,7 +12,7 @@ To build a project:
 
 1. On the **Build & Deploy** tab, click the Build button.
 
-    ![Home Ribbon - Build Button](https://varigencecom.blob.core.windows.net/images-mistdocumentation/012_Step01.png)
+    ![Home Ribbon - Build Button](/img/bimlstudio/012_Step01.png)
 
 1. Using the 32-bit or 64-bit version of BimlStudio. For the example, choose the version that matches your BimlStudio installation.
     You can determine whether BimlStudio is running in 32-bit or 64-bit by looking in the title bar of theBimlStudioMist window. If you see [64-bit], then BimlStudio is running as a 64-bit process. Otherwise, it's running in 32-bit.
@@ -21,7 +21,7 @@ To build a project:
 
 1. Scroll to the bottom of the Output tool window to see the results of the build. You should see values similar to this:
 
-    ![Output Window - Error Listing](https://varigencecom.blob.core.windows.net/images-mistdocumentation/012_Step04.png)
+    ![Output Window - Error Listing](/img/bimlstudio/012_Step04.png)
 
 If the build completed with no errors, you can check the project's output folder to see what was produced.
 

@@ -7,6 +7,10 @@ export default {
   "title": "My Site",
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
+  "staticDirectories": [
+    "public",
+    "static"
+  ],
   "url": "https://your-docusaurus-site.example.com",
   "baseUrl": "/",
   "organizationName": "facebook",
@@ -34,7 +38,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "./src/css/custom.css"
+          "customCss": "C:\\varigencedocs\\varigence\\src\\css\\custom.css"
         }
       }
     ]
@@ -342,9 +346,6 @@ export default {
   },
   "baseUrlIssueBanner": true,
   "onDuplicateRoutes": "warn",
-  "staticDirectories": [
-    "static"
-  ],
   "customFields": {},
   "plugins": [],
   "themes": [],

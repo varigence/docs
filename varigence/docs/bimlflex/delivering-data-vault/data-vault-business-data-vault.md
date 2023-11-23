@@ -58,7 +58,7 @@ The only information required is to define the **Source Connection** and the **T
 
 At this point, the fundamental process to populate Business Data Vault objects is in place. The next step is to actually define the objects themselves.
 
-BimlFlex requires an existing object or view to be used as source, and this works the same way as any other data sources is mapped to the Data Vault - using the [**Accelerator**](bimlflex-data-vault-accelerator).
+BimlFlex requires an existing object or view to be used as source, and this works the same way as any other data sources is mapped to the Data Vault - using the [**Accelerator**](../metadata-editors/accelerator).
 
 The most common approach is to define a view or procedure that acts as the data source. In BimlFlex, you can create an object in the Business Data Vault connection and use the **Source Create SQL** property to capture the view in metadata. The **Columns** are either imported or manually added as with any other data source.
 

@@ -28,8 +28,8 @@ In short: a full deployment includes the build and deployment as well as an exec
 
 This documentation section covers the broader CI/CD concepts and approaches for implementing these with BimlFlex. Depending on the target data integration platform used, specific configurations may apply. These can be found in the following links:
 
-* [BimlFlex CI/CD for SQL Server Integration Services (SSIS)](bimlflex-ssis-continuous-integration-and-continuous-delivery).
-* [BimlFlex CI/CD for Azure Data Factory (ADF)](bimlflex-adf-continuous-integration-and-continuous-delivery).
+* [BimlFlex CI/CD for SQL Server Integration Services (SSIS)](../technology-ssis/continuous-integration-and-continuous-delivery).
+* [BimlFlex CI/CD for Azure Data Factory (ADF)](../technology-adf/continuous-integration-and-continuous-delivery).
 
 ## Build Automation
 

@@ -8,7 +8,7 @@ tags: [BimlFlex, Reference]
 
 Determines if BimlFlex applies a separate key load pattern that will enable detection of hard deletes in the source.
 
-Use this together with the "DeleteDetectionApplyDv" and "DeleteDetectionApplyPsa" Settings
+Use this together with the `DeleteDetectionApplyDv` and `DeleteDetectionApplyPsa` Settings
 
 Notes:
 

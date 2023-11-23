@@ -12,8 +12,14 @@ BimlFlex can use source stored procedures as source objects to load data from a 
 
 To control the load of Stored Procedure-based source data, use the following metadata settings
 
->[!TIP]
+
+
+:::tip
+
 >BimlFlex can not import the metadata from the Stored Procedure, so add it manually.
+
+:::
+
 
 The Stored Procedure to execute, and the formal call to the procedure, is added in the **Override SQL** metadata element.
 
@@ -43,8 +49,8 @@ END
 
 ### Sample Object Metadata
 
-![Stored Procedure Source Object Metadata](images/bfx-ssis-sp-src-object.png "Stored Procedure Source Object Metadata")
+![Stored Procedure Source Object Metadata](/img/bimlflex/bfx-ssis-sp-src-object.png "Stored Procedure Source Object Metadata")
 
 ### Sample Column Metadata
 
-![Stored Procedure Source Columns Metadata](images/bfx-ssis-sp-src-columns.png "Stored Procedure Source Columns Metadata")
+![Stored Procedure Source Columns Metadata](/img/bimlflex/bfx-ssis-sp-src-columns.png "Stored Procedure Source Columns Metadata")

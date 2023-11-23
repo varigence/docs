@@ -6,7 +6,7 @@ tags: [BimlFlex, Reference]
 
 # Include Master Key
 
-Determines if the Master Key statement is includes in the SSDT Project. This relies on the ["SsdtIncludeExternalTables"](bimlflex-app-reference-documentation-setting-SsdtIncludeExternalTables) setting being enabled.
+Determines if the Master Key statement is includes in the SSDT Project. This relies on the [`SsdtIncludeExternalTables`](./SsdtIncludeExternalTables) setting being enabled.
 
 Notes:
 

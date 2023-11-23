@@ -5,15 +5,15 @@ Expandable Transformers are BimlScripts let you apply modifications across a lar
 
 1. To create an Expandable Transformer, you need a BimlScript. BimlScripts can be created from the Home ribbon tab, or from the context menu for packages in the logical view. For this example, select the BimlScript button on the Home tab of the ribbon bar.
 
-![Biml Script Ribbon Button](https://varigencecom.blob.core.windows.net/images-mistdocumentation-importingtableswithbimlscript/1.png)
+![Biml Script Ribbon Button](/img/bimlstudio/1.png)
 
 2. This creates a Biml file that's added in the Logical View under BimlScript Library.
 
-![BimlScript in Logical View](https://varigencecom.blob.core.windows.net/images-mistdocumentation-importingtableswithbimlscript/2.png)
+![BimlScript in Logical View](/img/bimlstudio/2.png)
 
 3. Double click on the Biml file to open the BimlScript designer.
 
-![BimlScript Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-importingtableswithbimlscript/3.png)
+![BimlScript Designer](/img/bimlstudio/3.png)
 
 4. Enter your BimlScript in the Input editor. Remember that Expandable Transformers are intended to edit all Biml elements of a specific type.
 
@@ -48,18 +48,18 @@ Expandable Transformers are BimlScripts let you apply modifications across a lar
 
 6. While writing the script, you can click on the notification bar to save the BimlScript.
 
-![BimlScript Notification Bar](https://varigencecom.blob.core.windows.net/images-mistdocumentation/220_Step06.png)
+![BimlScript Notification Bar](/img/bimlstudio/220_Step06.png)
 
 7. To preview the transformer's output on a particular Package, select a Package from the Preview Target Node dropdown. Assuming the BimlScript has no errors, Preview Expanded BimlScript pane will display the new Biml that would result from running the transformer.
 
-![BimlScript Preview](https://varigencecom.blob.core.windows.net/images-mistdocumentation/220_Step07.png)
+![BimlScript Preview](/img/bimlstudio/220_Step07.png)
 
 8. Once the output looks correct and you're ready to apply the changes, press the Expand button in the ribbon.
 
-![BimlScript Ribbon Highlighted Expand button](https://varigencecom.blob.core.windows.net/images-mistdocumentation/220_Step08.png)
+![BimlScript Ribbon Highlighted Expand button](/img/bimlstudio/220_Step08.png)
 
 9. The last step before applying the transformer is to select which assets to transform. Using the above sample, all Packages in the project are listed. You can check any package, or check Select All to apply the transform to all of them. When finished, click the Transform button to apply the transformer.
 
-![Confirm items to Transform dialog](https://varigencecom.blob.core.windows.net/images-mistdocumentation/220_Step09.png)
+![Confirm items to Transform dialog](/img/bimlstudio/220_Step09.png)
 
 10. All transformed packages now include the ID variable that was defined in the Expandable Transformer.

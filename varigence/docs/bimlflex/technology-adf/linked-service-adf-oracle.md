@@ -4,10 +4,12 @@ description: Documentation on how to configure ADF Linked Service Connection for
 tags: [BimlFlex, Walkthrough]
 ---
 # Configuring an ADF Linked Service Connection for Oracle
-:::note
 
 
-> For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](create-linked-service-connection).
+
+:::note
+
+For information on how to enable a connection for use with linked services, see [Configuring a Linked Service Connection](./create-linked-service-connection).
 
 :::
 
@@ -16,7 +18,7 @@ tags: [BimlFlex, Walkthrough]
 
 After selecting `Oracle` from the Linked Service Type dropdown, the form required for creating an Oracle Linked Service will appear.
 
-![Oracle Linked Service Form](images/bimlflex-ss-app-connections-adf-oracle-form.png "Oracle Linked Service Form")
+![Oracle Linked Service Form](/img/bimlflex/bimlflex-ss-app-connections-adf-oracle-form.png "Oracle Linked Service Form")
 
 ## Required Fields
 
@@ -50,10 +52,12 @@ The custom values that appear in this dropdown can be maintained in Settings und
 A connection to an Oracle linked service requires a Connection String.
 The required properties for the Connection String are Host, Port, Oracle Connection Type, Service Name, SID, User Name, and Password.
 The Linked Service connection form will provide text boxes for these values and will use them to construct the connections string.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering Connection String details.
 
 :::
 
@@ -79,10 +83,12 @@ The value entered will be used to construct the Connection String
 
 Password will be used by the Linked Service form for authentication with the Oracle Linked Service.
 Password is required - except when using Azure Key Vault in place of a manually entering a Connection String.
-:::note
 
 
-> It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the password.
+
+:::note
+
+It is suggested that [Azure Key Vault](linked-service-azure-key-vault.md) be used in place of manually entering the password.
 
 :::
 

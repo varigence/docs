@@ -2,19 +2,19 @@
 
 Use the Script Project editor to create and edit script projects that are associated with SSIS script tasks and script components.
 
-![Script Project Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/ScriptProject1.png)
+![Script Project Designer](/img/bimlstudio/ScriptProject1.png)
 
 Select a file to open it in the editor. The editor provides syntax highlighting, region collapsing, and intelliprompt for efficient coding.
 
-![Script Project Editor](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/ScriptProject2.png)
+![Script Project Editor](/img/bimlstudio/ScriptProject2.png)
 
 Select other items in the Script Project Explorer (../user-guide/resources, Settings, References, etc...) to display their editors.
 
-![Script Project Explorer](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/ScriptProject3.png)
+![Script Project Explorer](/img/bimlstudio/ScriptProject3.png)
 
 The Script Project editor's ribbon provides the following functions:
 
-![Script Project Ribbon](https://varigencecom.blob.core.windows.net/images-mistdocumentation-editoroverviews/ScriptProject4.png)
+![Script Project Ribbon](/img/bimlstudio/ScriptProject4.png)
 
 Button | Description
 --- | ---

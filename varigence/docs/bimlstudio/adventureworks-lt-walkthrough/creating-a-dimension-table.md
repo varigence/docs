@@ -10,7 +10,7 @@ Dimension tables let you model not only the relational parts of a table, but als
 
 To create a dimension, follow these steps:
 
-1.  Follow the directions from the [Creating a Basic Table](creating-a-basic-table) topic to define the relational portion of the dimension, using this information:  
+1.  Follow the directions from the [Creating a Basic Table](./creating-a-basic-table) topic to define the relational portion of the dimension, using this information:  
     **Table Name:** DimProduct
     **Schema:** AdventureWorksLTDataMartSchema
     **Keys:** IK_DimProduct (using column ProductID)
@@ -76,13 +76,13 @@ To create a dimension, follow these steps:
 
     The table editor should look like this:
 
-    ![Table Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation/007_Step02.png)
+    ![Table Designer](/img/bimlstudio/007_Step02.png)
 2.  To add the dimension attributes click **Dimension** on the **Table Tools** ribbon.
 3.  The Attributes area lets you define the attributes that will appear in the OLAP dimension. You can populate this by dragging and dropping columns from the columns grid into the Attributes area. Drag the ProductID column to the Attributes area. Notice that when you select an attribute, you can view and edit all its properties in the Property Grid.
 4.  Right click on the Product attribute to set the attribute usage to Key.  
 5.  Rename the attribute to Product Name using the context menu or by pressing F2 with the attribute selected.
 6.  Drag and drop the ProductName column to the Name Column folder item under the Product Name attribute.  
-    ![Table Designer - Add Column to Attribute Name](https://varigencecom.blob.core.windows.net/images-mistdocumentation/007_Step06.gif)
+    ![Table Designer - Add Column to Attribute Name](/img/bimlstudio/007_Step06.gif)
 7.  You can create additional attributes by using an Accelerator. On the Table Tools ribbon, Tables tab, click the Generate Attributes and Relationships split button. Choosing the Generate Attributes and Relationships menu item will automatically create attributes for appropriate columns from the table, and relationships for those attributes.  
 8.  The attributes and relationships will be populated  
 
@@ -95,7 +95,7 @@ To create a dimension, follow these steps:
     This creates a relationship chain that includes Product Name -> Subcategory Name -> Category Name.
 
 10.  Next, you will add a hierarchy. Right click in the empty Hierarchies area, and select Add Hierarchy.  
-    ![Context Menu - Add Hierarchy](https://varigencecom.blob.core.windows.net/images-mistdocumentation/007_Step10.gif)
+    ![Context Menu - Add Hierarchy](/img/bimlstudio/007_Step10.gif)
 11.  Rename the hierarchy to Categories. You can add levels to the hierarchy by right-clicking it and choosing Add Attributes from the context menu, or by dragging and dropping the attributes from the Attributes treeview. Add the following attributes (in order): Category Name, Subcategory Name, and Product Name. The Hierarchies area should look like this when you are finished:  
 Drag and drop the attribute on the Hierarchy node (Categories) to add the attribute as a new level at the end. Dropping an attribute on an existing level will replace the level's associated attribute. You can also drag and drop levels within a hierarchy.
 

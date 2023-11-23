@@ -28,4 +28,4 @@ To summarize:
 
 ## Use Cases
 
-* [Delta Vault](bimlflex-technology-delta-vault), a full BimlFlex-generated [Data Vault](bimlflex-data-vault-index) that runs on Delta Lake
+* [Delta Vault](./delta-vault), a full BimlFlex-generated [Data Vault](../delivering-data-vault) that runs on Delta Lake

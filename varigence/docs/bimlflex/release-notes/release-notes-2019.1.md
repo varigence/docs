@@ -2,10 +2,12 @@
 title: BimlFlex Release Notes 2019
 ---
 # Release Notes 2019
-:::note
 
 
-> Please note the current Release Notes are available here: [BimlFlex Release Notes](bimlflex-release-notes-overview)
+
+:::note
+
+Please note the current Release Notes are available here: [BimlFlex Release Notes](./index)
 
 :::
 
@@ -241,7 +243,7 @@ download links to this build:
 
 ## BimlFlex 2019 Version 64108
 
-* Update: CI/CD and command line builds require an update to the response files to work with BimlFlex. Please see [BimlFlex Continuous Integration and Continuous Delivery](bimlflex-ssis-continuous-integration-and-continuous-delivery) for new template samples
+* Update: CI/CD and command line builds require an update to the response files to work with BimlFlex. Please see [BimlFlex Continuous Integration and Continuous Delivery](../technology-ssis/continuous-integration-and-continuous-delivery) for new template samples
 * Update: Some scenarios in the graphical Data Vault Accelerator has been updated to better align with user expectation
 
 ## Bundle 64106
@@ -265,10 +267,12 @@ download links to this build:
 * Update: A new IsInitialLoad check query is used that aims to provide better performance for larger PSA tables
 
 ## Bundle 63921
-:::danger
 
 
-> This version introduces updated Bridge logic that accommodates more complex Bridge scenarios. This can result in breaking changes to column naming for existing implementations. Please review the breaking change note below.
+
+:::danger
+
+This version introduces updated Bridge logic that accommodates more complex Bridge scenarios. This can result in breaking changes to column naming for existing implementations. Please review the breaking change note below.
 
 :::
 
@@ -359,13 +363,15 @@ Varigence provides remote support to accommodate this upgrade for any affected c
 * Add: `DvPitLagDays` and `DvBridgeLagDays` settings that allow for Overriding the number of days the `Point In Time` and `Bridge` process should go back and look for changes to reprocess.
 * Update: `Point In Time` code to correctly end date records. It is recommended to truncate the PIT tables and executing the newly generated code to apply the new logic on existing tables.
 * Added `Extract DACPAC Folder` button to the `Debug Utility`. This allows the user to get the `Dacpac` folder from the bundle and save it where they please. This folder contains the database definitions and pre-deployment scripts and can be used in pipeline deployments of BimlFlex database updates. (This is a companion feature in BimlStudio 2019)
-:::note
 
 
-> The following metadata columns have been renamed and any bespoke code referring to them require corresponding updates
->
-> * `IsBusinessKey` is now called `IsIntegrationKey`
-> * `IsAltBusinessKey` is now called `IsSourceKey`
+
+:::note
+
+The following metadata columns have been renamed and any bespoke code referring to them require corresponding updates
+
+* `IsBusinessKey` is now called `IsIntegrationKey`
+* `IsAltBusinessKey` is now called `IsSourceKey`
 
 :::
 
@@ -379,7 +385,7 @@ Varigence provides remote support to accommodate this upgrade for any affected c
 * Update: A scenario where the Data Mart load pattern added an unnecessary conversion in the Data Flow for smart keys (keys that don't need lookups) has been addressed. Only keys that are used in lookups are converted when needed.
 * Add: BimlFlex now supports modeling scenarios where multiple Data Vault load projects share common elements such as a core Hub object.
 
-More information on the hashing approach for SQL compatible hashing can be found here: [Hashing in BimlFlex](bimlflex-data-vault-hashing)
+More information on the hashing approach for SQL compatible hashing can be found here: [Hashing in BimlFlex](../delivering-data-vault/hashing-in-data-vault)
 
 * Update: the `IsAltBusinessKey` metadata entity has been renamed to `IsSourceKey` to better reflect the meaning. This metadata attribute reflects the source Primary Key definition and is used for persistent staging tables when the defined Primary Key is not persisted. This is a common scenario for Data Vault modeling. For Data Vault, the Business Key is also defined as the Primary Key for each source object. This column is normally not persisted. The columns marked as `IsSourceKey` will be used as the Primary Keys for the Persistent table in this scenario.
 * Update: the `SourceErrorHandling` Extension Point is now included in the placeholder information in the preview expanded BimlScript for packages. The `inputPath` variable being passed to the Extension Point and exemplified in the sample code as: `<InputPath OutputPathName="<#=inputPath #>" />` has been updated to include the `.Output` part of the Path specification. Existing usage of the Extension Point that previously added this syntax manually can now be simplified. The behavior now match the expected syntax of the sample code.
@@ -403,10 +409,12 @@ More information on the hashing approach for SQL compatible hashing can be found
 * Update: Fix a scenario where the Data Vault Publisher wouldn't take the new Expression columns into account.
 
 This Bundle introduces additional metadata attributes for columns and configurations that is planned to be used in the Azure Data Factory patters, such as `AdfDataFlowExpression`. It also renames the `SsisExpression` attribute to `SsisDataFlowExpression`. The Excel plugin, the Bundle as well as the database all need to be updated to accommodate this update.
-:::note
 
 
-> Any existing code or override expression that use SSIS expression need to be updated to use the new naming convention `SsisDataflowExpression` instead of `SsisExpression`. This is commonly used in Attribute overrides for audit columns, such as `RowEffectiveFromDate_SsisDataflowExpression`. An update is included in the new version of the database, however for scenarios that aren't picked up by that update, a manual update of bespoke expressions are required.
+
+:::note
+
+Any existing code or override expression that use SSIS expression need to be updated to use the new naming convention `SsisDataflowExpression` instead of `SsisExpression`. This is commonly used in Attribute overrides for audit columns, such as `RowEffectiveFromDate_SsisDataflowExpression`. An update is included in the new version of the database, however for scenarios that aren't picked up by that update, a manual update of bespoke expressions are required.
 
 :::
 

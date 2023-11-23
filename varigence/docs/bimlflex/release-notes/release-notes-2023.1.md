@@ -7,12 +7,14 @@ description: Release Notes for BimlFlex 2023 R1 Preview
 # Preview Release Notes
 
 Varigence is excited to release the 2023 R1 Preview version of the BimlFlex platform for data solution automation!
-:::note
 
 
->
-> * Please make sure databases and projects are backed up before upgrading.
-> * Please email support@bimlflex.com with any installation or upgrade issues.
+
+:::note
+
+
+* Please make sure databases and projects are backed up before upgrading.
+* Please email support@bimlflex.com with any installation or upgrade issues.
 
 :::
 
@@ -27,7 +29,7 @@ MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 
 Build 23.1.457.0, release date: 13 Oct 2023
 
->
+
 * [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_23.1.457.0.exe). This installer includes all BimlFlex components for 64-bit
 * [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_23.1.457.0.exe). This installer includes all BimlFlex components for 32-bit
 * [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_23.1.457.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit.
@@ -348,12 +350,14 @@ The Object editor screen has added tabs for Schema Diagram, Accelerator, and Dat
 
 * Fixed ability to list databases when using multi-factor authentication
 * Fixed issue where add-in would fail to cache login information for non-Windows authentication.
-:::note
 
 
->
-> * This is a major release and we recommend testing in a non-production environment before upgrading your production environment.
-> * As always, please contact our support team if you encounter any issues or have any questions.
+
+:::note
+
+
+* This is a major release and we recommend testing in a non-production environment before upgrading your production environment.
+* As always, please contact our support team if you encounter any issues or have any questions.
 
 :::
 
