@@ -38,7 +38,7 @@ In BimlStudio, connections are defined once in a project and shared with all the
 
     ![Finished Connection Designer](https://varigencecom.blob.core.windows.net/images-mistdocumentation/003_Step05.png)
 
-1. Save the project to persist your changes to the project files. See [Saving a Project](saving-a-project.md) for more information.
+1. Save the project to persist your changes to the project files. See [Saving a Project](xref:saving-a-project) for more information.
 
 1. Once you've entered a connection string, you can click the **Test** button in the Connection Tools. Connections tab in order to validate it.
 

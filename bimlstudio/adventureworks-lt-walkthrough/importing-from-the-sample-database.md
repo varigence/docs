@@ -9,7 +9,7 @@ varigenceArticleType: Walkthrough
 
 BimlStudio provides an import capability. This allows you to pull existing schema and table definitions from a database into your model. These items are then imported as new objects in the model. Once imported, you can edit them as needed.
 
-To import database assets, you first need to create a connection to the database. See [Creating a Connection](creating-a-new-connection.md) for more information. Then, you then need to create a database asset. See [Creating a Database](creating-a-new-database.md) for more information.
+To import database assets, you first need to create a connection to the database. See [Creating a Connection](xref:creating-a-new-connection) for more information. Then, you then need to create a database asset. See [Creating a Database](xref:creating-a-new-database) for more information.
 
 ## Import Tables using BimlStudio Ribbon
 

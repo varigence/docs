@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-technology-mapping-data-flow
-title: 
-summary:  
+title: Azure Mapping Data Flows
+summary: Azure Mapping Data Flows
 ---
 
 # BimlFlex for Azure Mapping Data Flows

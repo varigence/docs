@@ -27,8 +27,8 @@ Click a tab for example or detailed column descriptions.
 
 | ConfigVariableID | SystemName | ObjectName                                       | VariableName   | VariableValue           | ExecutionID`*` | PreviousValue | DataTypeOverride`**` |
 | ---------------- | ---------- | ------------------------------------------------ | -------------- | ----------------------- | -------------- | ------------- | -------------------- |
-| 5                | AWLT_SRC   | AWLT_SRC.SalesLT.SalesOrderDetail.ModifiedDate   | LastLoadDate   | 2004-06-01 00:00:00.000 | 19             | 1900-01-01    | {NULL}               |
-| 6                | AWLT_SRC   | AWLT_SRC.SalesLT.ProductDescription.ModifiedDate | LastLoadDate   | 2004-03-11 10:32:17.973 | 20             | 1900-01-01    | {NULL}               |
+| 5                | AWLT_SRC   | AWLT_SRC.SalesLT.SalesOrderDetail.ModifiedDate   | LastLoadDate   | 2004-06-01 00:00:00.000 | 19             | 1900-01-01    | `{NULL}`               |
+| 6                | AWLT_SRC   | AWLT_SRC.SalesLT.ProductDescription.ModifiedDate | LastLoadDate   | 2004-03-11 10:32:17.973 | 20             | 1900-01-01    | `{NULL}`               |
 | 7                | AWLT_SRC   | AWLT_SRC.SalesLT.Product.CustomerID              | LastCustomerID | 21002135                | 21             | 19001010      | int                  |
 
 > [!TIP]
@@ -84,7 +84,7 @@ UPDATE
 SET
     [DataTypeOverride] = [ 'int' | 'decimal' ]
 WHERE
-    [ConfigVariableID] = { ConfigVariableID }
+    [ConfigVariableID] = `{ ConfigVariableID }`
 
 ```
 
@@ -148,13 +148,13 @@ Each time a package or pipeline is ran, BimlFlex will store the last value and u
 The process starts before the main container (`SEQC - Main`).
 
 The initial Sequence Container (`SEQC - Get Parameters`) will have a Execute SQL Task to look up any relevant parameters.
-These task (`SQL - Get {Parameter}`) are used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
+These task (`SQL - Get Parameter`) are used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
 
 The retrieved value will be injected in to the source query filter clause using the specified logic from the metadata.
 
 The final Sequence Container (`SEQC- Set Parameters`) after the main logic then handles setting the parameters.
-There is a Execute SQL Task to grab the latest value (`SQL - Get Current {Parameter}`) from the staged data.
-A following Execute SQL Task (`SQL - Set {Parameter}`) is then used to persist the value retrieved into the BimlCatalog.
+There is a Execute SQL Task to grab the latest value (`SQL - Get Current Parameter`) from the staged data.
+A following Execute SQL Task (`SQL - Set Parameter`) is then used to persist the value retrieved into the BimlCatalog.
 
 ### [ADF Architecture](#tab/parameter-architecture-adf)
 
@@ -163,17 +163,17 @@ A following Execute SQL Task (`SQL - Set {Parameter}`) is then used to persist t
 
 Activities are added to the beginning of the pipeline that retrieve the last value and the next value to be recorded after execution completes.
 
-The initial Lookup Activity (`LKP_{Parameter}`) is used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
+The initial Lookup Activity (`LKP_Parameter`) is used to check the BimlCatalog for an existing parameter value for the *PARAMETER*.
 If none are present, it will generate one using the *DEFAULT* value that is configured.
 If one is already present, it will retrieve the value.
 The retrieved `[VariableValue]` value is then used to define the starting range for the Source Query.
 
-The other Lookup Activity (`LKP_{ParameterToName}`) is used to query the Source System.
+The other Lookup Activity (`LKP_ParameterToName`) is used to query the Source System.
 This uses the *PARAMETER SQL* against the *COLUMN* and stores the value in the pipeline as the *PARAMETER TO NAME*.
 
 These values are then injected into the source query filter clause to limit values that are then returned from the Source System.
 
-The ending SQL Server Stored Procedure Activity (`LOG_{Parameter}`) is then used to persist the value retrieved by the *PARAMETER TO NAME* into the BimlCatalog.
+The ending SQL Server Stored Procedure Activity (`LOG_Parameter`) is then used to persist the value retrieved by the *PARAMETER TO NAME* into the BimlCatalog.
 
 > [!NOTE]
 > The ADF Architecture requires **Window Parameters** when using a **Parameter**.
@@ -261,8 +261,8 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*
 
 ```XML
 <fetch distinct="false" mapping="logical" aggregate="true">
-  <entity name="{object}">
-     {Parameter SQL Value}
+  <entity name="`{object}`">
+     `{Parameter SQL Value}`
   </entity>
 </fetch>
 ```
@@ -280,9 +280,9 @@ Dynamics Pattern for `<Attribute/>` *PARAMETER SQL*:
 
 ```XML
 <fetch distinct="false" mapping="logical">
-    <entity name="{object}">
-        <attribute name="{column}" alias="{Parameter To Name}" />
-        <order attribute="{column}" descending="true" />
+    <entity name="`{object}`">
+        <attribute name="`{column}`" alias="`{Parameter To Name}`" />
+        <order attribute="`{column}`" descending="true" />
     </entity>
 </fetch>
 ```
@@ -327,7 +327,7 @@ These get configured by defining the below fields.
 | Field                 | Description  |
 | --------------------- | ------------ |
 | Parameter To Name     | NextLoadDate |
-| Parameter To Operator | <=           |
+| Parameter To Operator | `<=`           |
 
 ***
 
@@ -338,7 +338,7 @@ BimlFlex Pattern for Window Parameters:
 
 ```sql
 `{Existing WHERE Clause}` `{AND if Needed}`
-     `{Column}` `{Operator}` `{Parameter}`
+     `{Column}` `{Operator}` `Parameter`
     AND `{Column}` `{Parameter To Operator}` `{Parameter To Name}`
 ```
 

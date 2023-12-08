@@ -10,6 +10,103 @@ varigenceArticleType: Reference
 
 The Mapping Data Flows category has the following available Extension Points defined.
   
+## Add Sink
+
+Extension Point for Mapping Data Flows, which can be used to add one or more custom Sink Activities to a Mapping Data Flow.
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the activity will be added. |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the activity will be added. |
+| dependency | String | Contains the dependency name for the previous activity. |
+
+
+### Outputs
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DflAddSink" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="dependency" type="String" #>
+
+
+
+<# 
+// The Mapping Data Flow Add Sink extension points targets the data flow itself, so that bespoke Sinkscan be added and connected to existing transformations in the data flow.
+// In the Biml output, the location is specified as <!-- Placeholder for extensionpoint="DflAddSink" -->.
+
+// The transformation to connect the Sink can be specified by using the dependency, the input path name.
+// It can also be specified in the extension point by providing the name of the transformation to connect as the InputStreamName property.
+
+// This example shows how an additional Sink is connected to a default Derived Column transformation.
+// A sink is always the last step in a Mapping Data Flow. So no further transformations can be connected to it.
+#>
+						<InlineDeltaDataset Name="CustomSink" CompressionType="Snappy" FileSystem="ExampleFileName" Folder="ExampleDirectory" LinkedServiceName="BFX_STG" InputStreamName="<#=dependency#>.Output" SkipDuplicateInputColumns="false" SkipDuplicateOutputColumns="false" AllowSchemaDrift="true">
+							<DatabaseSinkSettings TableAction="Truncate" AllowInsert="true"></DatabaseSinkSettings>
+						</InlineDeltaDataset>			
+
+```
+
+## Post Derived Column
+
+Extension Point for Mapping Data Flows, inserted directly after the first Derived Column Transformation.
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the activity will be added. |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the activity will be added. |
+| dependency | String | Contains the dependency name for the previous activity. |
+
+
+### Outputs
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+| OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next task. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DflPostDerivedColumn" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="dependency" type="String" #>
+
+
+
+<# 
+// The Mapping Data Flow Post Derived Column extension points targets the data flow itself, so that bespoke logic can be added directly after the first Derived Column transformation.
+// In the Biml output, the location is specified as <!-- Placeholder for extensionpoint="DflPostDerivedColumn" -->.
+
+// The dependency, or input path, can be set to connect using the derived input parameter, or it can be set manually in the extension point logic.
+// However, outgoing dependencies need to be defined by using CustomOutput.OutputPathName. 
+// The CustomOutput.OutputPathName needs to be set for the extension point to be integrated properly.
+
+// This example shows two Derived Column transformations of which the second one connects to the first one.
+#>
+						<DerivedColumns Name="ExamplePostDerivedColumn" InputStreamName="<#=dependency#>.Output">
+							<Columns>
+								<Column Name="CustomColumn">'SourceKey'</Column>
+                            </Columns>
+                        </DerivedColumns>						
+<#
+// The output path needs to be explicitly set, otherwise the subsequent activity in the Mapping Data Flow will not be able to connect to this custom logic.
+CustomOutput.OutputPathName = "ExamplePostDerivedColumn";
+#>
+
+```
+
 ## Post Source
 
 Extension Point for Mapping Data Flows, inserted directly after the Source Activity.
@@ -17,18 +114,18 @@ Extension Point for Mapping Data Flows, inserted directly after the Source Activ
 ### Parameters
 
 | <div style="width:150px">Name</div> | Type | Description |
-| --------- | ----------- |
-sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the activity will be added. |
-targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the activity will be added. |
-dependency | String | Contains the dependency name for the previous activity. |
+| :--------- | :----------- | :----------- |
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the activity will be added. |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the activity will be added. |
+| dependency | String | Contains the dependency name for the previous activity. |
 
 
 ### Outputs
 
 | <div style="width:150px">Name</div> | Type | Description |
-| --------- | ----------- |
-ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
-OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next task. |
+| :--------- | :----------- | :----------- |
+| ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+| OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next task. |
 
 ### Template
 
@@ -38,8 +135,7 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="dependency" type="String" #>
 
-<!-- You can find more details on the Varigence website. https://docs.varigence.com/biml-reference/language-reference/Varigence.Languages.Biml.DataFactory.AstAdfPipelineNode. -->
-<!-- For examples and additional resources, please also refer to http://bimlscript.com. -->
+
 
 <# 
 // The Mapping Data Flow Post Source extension points targets the data flow itself, so that bespoke logic can be added directly after the initial 'source'.
@@ -70,105 +166,6 @@ OutputPathName | String | You must add CustomOutput.OutputPathName with the last
 // The output path needs to be explicitly set, otherwise the subsequent activity in the Mapping Data Flow will not be able to connect to this custom logic.
 CustomOutput.OutputPathName = "ExampleDerivedColumnTwo";
 #>
-
-```
-
-## Post Derived Column
-
-Extension Point for Mapping Data Flows, inserted directly after the first Derived Column Transformation.
-
-### Parameters
-
-| <div style="width:150px">Name</div> | Type | Description |
-| --------- | ----------- |
-sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the activity will be added. |
-targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the activity will be added. |
-dependency | String | Contains the dependency name for the previous activity. |
-
-
-### Outputs
-
-| <div style="width:150px">Name</div> | Type | Description |
-| --------- | ----------- |
-ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
-OutputPathName | String | You must add CustomOutput.OutputPathName with the last task to connect it with the next task. |
-
-### Template
-
-```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DflPostDerivedColumn" #>
-<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
-<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
-<#@ property name="dependency" type="String" #>
-
-<!-- You can find more details on the Varigence website. https://docs.varigence.com/biml-reference/language-reference/Varigence.Languages.Biml.DataFactory.AstAdfPipelineNode. -->
-<!-- For examples and additional resources, please also refer to http://bimlscript.com. -->
-
-<# 
-// The Mapping Data Flow Post Derived Column extension points targets the data flow itself, so that bespoke logic can be added directly after the first Derived Column transformation.
-// In the Biml output, the location is specified as <!-- Placeholder for extensionpoint="DflPostDerivedColumn" -->.
-
-// The dependency, or input path, can be set to connect using the derived input parameter, or it can be set manually in the extension point logic.
-// However, outgoing dependencies need to be defined by using CustomOutput.OutputPathName. 
-// The CustomOutput.OutputPathName needs to be set for the extension point to be integrated properly.
-
-// This example shows two Derived Column transformations of which the second one connects to the first one.
-#>
-						<DerivedColumns Name="ExamplePostDerivedColumn" InputStreamName="<#=dependency#>.Output">
-							<Columns>
-								<Column Name="CustomColumn">'SourceKey'</Column>
-                            </Columns>
-                        </DerivedColumns>						
-<#
-// The output path needs to be explicitly set, otherwise the subsequent activity in the Mapping Data Flow will not be able to connect to this custom logic.
-CustomOutput.OutputPathName = "ExamplePostDerivedColumn";
-#>
-
-```
-
-## Add Sink
-
-Extension Point for Mapping Data Flows, which can be used to add one or more custom Sink Activities to a Mapping Data Flow.
-
-### Parameters
-
-| <div style="width:150px">Name</div> | Type | Description |
-| --------- | ----------- |
-sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the activity will be added. |
-targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the activity will be added. |
-dependency | String | Contains the dependency name for the previous activity. |
-
-
-### Outputs
-
-| <div style="width:150px">Name</div> | Type | Description |
-| --------- | ----------- |
-ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
-
-### Template
-
-```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="DflAddSink" #>
-<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
-<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
-<#@ property name="dependency" type="String" #>
-
-<!-- You can find more details on the Varigence website. https://docs.varigence.com/biml-reference/language-reference/Varigence.Languages.Biml.DataFactory.AstAdfPipelineNode. -->
-<!-- For examples and additional resources, please also refer to http://bimlscript.com. -->
-
-<# 
-// The Mapping Data Flow Add Sink extension points targets the data flow itself, so that bespoke Sinkscan be added and connected to existing transformations in the data flow.
-// In the Biml output, the location is specified as <!-- Placeholder for extensionpoint="DflAddSink" -->.
-
-// The transformation to connect the Sink can be specified by using the dependency, the input path name.
-// It can also be specified in the extension point by providing the name of the transformation to connect as the InputStreamName property.
-
-// This example shows how an additional Sink is connected to a default Derived Column transformation.
-// A sink is always the last step in a Mapping Data Flow. So no further transformations can be connected to it.
-#>
-						<InlineDeltaDataset Name="CustomSink" CompressionType="Snappy" FileSystem="ExampleFileName" Folder="ExampleDirectory" LinkedServiceName="BFX_STG" InputStreamName="<#=dependency#>.Output" SkipDuplicateInputColumns="false" SkipDuplicateOutputColumns="false" AllowSchemaDrift="true">
-							<DatabaseSinkSettings TableAction="Truncate" AllowInsert="true"></DatabaseSinkSettings>
-						</InlineDeltaDataset>			
 
 ```
 

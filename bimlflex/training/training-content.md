@@ -27,8 +27,6 @@ Detailed modeling and customization to cater for specific requirements are outli
 
 [!include[Versions](../concepts/_incl-header-version.md)]
 
-[!include[Versions](../metadata-editors/_incl-header-version.md)]
-
 ## BimlFlex App
 
 [!include[BimlFlex](../metadata-editors/_incl-header-bimlflex-app.md)]

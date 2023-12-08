@@ -122,7 +122,9 @@ Of course, live BimlScript can also be used to generate Biml assets.
 
 In this example, a new Dataflow task is created for each table in a project that is not in the dbo schema. Each Dataflow task retrieves a table's data from a Source connection and copies that data to a Target connection. This illustrates that BimlScript can take advantage of conditionals like any .NET code.
 
+<!--
 ![Rebuild Warehouse Data package](https://varigencecomstaging.blob.core.windows.net/images-mistdocumentation/230_RebuildWarehouseDataPackage.png)
+-->
 
 If the above sample had been applied as executable BimlScript, and new tables were added in the project, Dataflow tasks for those tables wouldn't be automatically added to the package. This illustrates the key difference between executable vs. live BimlScript: one-time generation of editable assets vs. always up-to-date and un-editable assets.
 

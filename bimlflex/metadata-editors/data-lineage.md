@@ -21,11 +21,11 @@ The screenshot above shows the mapping from a source Object to the various targe
 |----- |--------|-------------|
 | <div class="icon-col m-5"><img src="images/svg-icons/save.svg" /></div> | Save | This will persist changed made to the **Objects** and **Columns** modified in the designer.|
 | <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Discard | Pending changes made to the **Objects** and **Columns** will be discarded.|
-| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Columns | Toggle to show the **Columns** for all **Objects** on the canvas, and display the column-level mappings. Any mappings that have an expression or formula applied will display the `fx` label.|
-| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /> | Data Types | Toggle to show the **Columns** for all **Objects** on the canvas.|
-| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /> | Layout | Reset the way the diagram is rendered on the screen to its default.|
-| <div class="icon-col m-5"><img src="images/svg-icons/print.svg" /> | Print | Creates printable image from the diagram, and opens the Windows print dialog.|
-| <div class="icon-col m-5"><img src="images/svg-icons/right-sidenav-toggle.svg" /> | Expand Side Panel | Opens the Side Panel that enables editing of selected **Objects**, **Columns** and **Relationships**. This is context-aware, visible fields will depend on the selected item on the canvas.
+| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div> | Columns | Toggle to show the **Columns** for all **Objects** on the canvas, and display the column-level mappings. Any mappings that have an expression or formula applied will display the `fx` label.|
+| <div class="icon-col m-5"><img src="images/bimlflex-app-action-switch.png" /></div> | Data Types | Toggle to show the **Columns** for all **Objects** on the canvas.|
+| <div class="icon-col m-5"><img src="images/svg-icons/discard.svg" /></div> | Layout | Reset the way the diagram is rendered on the screen to its default.|
+| <div class="icon-col m-5"><img src="images/svg-icons/print.svg" /></div> | Print | Creates printable image from the diagram, and opens the Windows print dialog.|
+| <div class="icon-col m-5"><img src="images/svg-icons/right-sidenav-toggle.svg" /></div> | Expand Side Panel | Opens the Side Panel that enables editing of selected **Objects**, **Columns** and **Relationships**. This is context-aware, visible fields will depend on the selected item on the canvas.
 
 ## Overview
 

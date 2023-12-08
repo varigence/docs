@@ -1,0 +1,48 @@
+---
+sidebar_position: 2
+title: Configuring a BimlStudio Project for BimlFlex
+description: Guide to creating a BimlStudio project from within BimlFlex
+tags: [BimlFlex, Walkthrough]
+---
+
+import InclHeaderBimlstudioConnect from './_incl-header-bimlstudio-connect.md';
+import InclHeaderBimlstudioProjectBuildOutputSettings from './_incl-header-bimlstudio-project-build-output-settings.md';
+import InclHeaderBimlstudioProjectSettings from './_incl-header-bimlstudio-project-settings.md';
+import InclHeaderBimlstudioProject from './_incl-header-bimlstudio-project.md';
+
+# BimlStudio Project Setup For BimlFlex
+
+A BimlStudio project is used to build and generate the metadata configured in BimlFlex.
+
+## Create the BimlStudio Project
+
+<InclHeaderBimlstudioProject />
+
+## Connect to the BimlFlex Database
+
+<InclHeaderBimlstudioConnect />
+
+## Building Assets
+
+Once the user is content with the configuration of their metadata, they are ready to build their assets for the configured target architecture and technology. At this stage, the user should already have a [BimlFlex project for BimlStudio](./setup-bimlstudio-project) ready to go.
+
+
+
+:::note
+
+Any time a change is made in the metadata, it is required to build the project and deploy the generated artifacts to update the solution.
+
+:::
+
+
+### Open the Project
+
+Open the project by double clicking the `.mst` file in the Windows File Explorer or by opening BimlStudio and locating the `.mst` file in the dialog.
+
+### Project Settings
+
+<InclHeaderBimlstudioProjectSettings />
+
+#### Build Output
+
+<InclHeaderBimlstudioProjectBuildOutputSettings />

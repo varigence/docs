@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Use AzCopy
 
-Determines if the generated files must be uploaded using "AzCopy" as part of the SSIS Packages. Disable if the solution uses an alternative file management process.
+Determines if the generated files must be uploaded using `AzCopy` as part of the SSIS Packages. Disable if the solution uses an alternative file management process.
 
 Notes:
 

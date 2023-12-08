@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Constraint Mode DM
 
-The table reference constraint mode to apply for the Data Mart database. Allowed values are "DoNotCreate", "CreateAndNoCheck" and "CreateAndCheck".
+The table reference constraint mode to apply for the Data Mart database. Allowed values are `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`.
 
 Notes:
 

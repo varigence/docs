@@ -150,6 +150,8 @@ BimlFlex metadata editors which utilize model-diagrammed visualizations (Acceler
   * Toggles now live in dropdown menus
   * Overall change to graph style
   * Removed dropdown arrow on object. Users cannot individually hide the columns on certain objects when 'Show Columns' is active (this is a regression).
+* Fixed bulk edit for columns in Schema Diagram so that changes can be committed.
+* Refresh metadata no longer causes navigation away from diagram views
 
 ### Diagrams Embedded in Object Editor Tabs
 
@@ -287,6 +289,10 @@ The Object editor screen has added tabs for Schema Diagram, Accelerator, and Dat
 
 * Resolved an issue where Parent Node would show an Editor instead of a list view when there was only one record inside the parent node, leading to an inconsistent and confusing experience
 * Fixed an issue where the Attribute Editor was not active after the [Save] button was clicked
+
+### Setting Editor
+
+* Clicking on a Setting link in the Settings Override grid now navigates directly to that setting override in the Attribute editor
 
 ### Grids
 

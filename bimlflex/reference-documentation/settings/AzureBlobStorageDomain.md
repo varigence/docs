@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Blob Storage Domain
 
-The AzCopy domain to use. Classic blob storage uses "blob.core.windows.net" Azure Data Lake Storage Gen2 targets (with hierarchical namespace) uses "dfs.core.windows.net"
+The AzCopy domain to use. Classic blob storage uses `blob.core.windows.net` Azure Data Lake Storage Gen2 targets (with hierarchical namespace) uses `dfs.core.windows.net`
 
 Notes:
 

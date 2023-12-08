@@ -17,19 +17,19 @@ Internal Global Extension Point that control environment settings. This has been
 ### Outputs
 
 | <div style="width:150px">Name</div> | Type | Description |
-| --------- | ----------- |
-CustomerUID | GUID | The Customer UID to use for the metadata connection |
-Version | String | The Version Name to use for the metadata connection |
-Server | String | The Server Name to use for the metadata connection |
-Database | String | The Database Name of the metadata database |
-UseWindowsAuthentication | Boolean | Legacy for backward compatibility should the metadata connection use Windows Authentication |
-Authentication | String | SQL Server authentication method to connect to metadata database. |
-Provider | String | Connection Provider to use |
-UserId | String | SQL Authentication User Id |
-Password | String | SQL Authentication Password |
-IsUserConnectionMode | Boolean | Should User Connection Mode be used |
-IsUserMode | Boolean | Should User Mode be used |
-IsQuickParse | Boolean | Should Quick Parse be used |
+| :--------- | :----------- | :----------- |
+| CustomerUID | GUID | The Customer UID to use for the metadata connection |
+| Version | String | The Version Name to use for the metadata connection |
+| Server | String | The Server Name to use for the metadata connection |
+| Database | String | The Database Name of the metadata database |
+| UseWindowsAuthentication | Boolean | Legacy for backward compatibility should the metadata connection use Windows Authentication |
+| Authentication | String | SQL Server authentication method to connect to metadata database. |
+| Provider | String | Connection Provider to use |
+| UserId | String | SQL Authentication User Id |
+| Password | String | SQL Authentication Password |
+| IsUserConnectionMode | Boolean | Should User Connection Mode be used |
+| IsUserMode | Boolean | Should User Mode be used |
+| IsQuickParse | Boolean | Should Quick Parse be used |
 
 ### Template
 

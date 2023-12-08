@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Secure Output
 
-When enabled, output from the activity will not be captured in ADF logging.
+When enabled, output from the Azure Copy Activity will not be captured in Azure Data Factory logging.
 
 Notes:
 

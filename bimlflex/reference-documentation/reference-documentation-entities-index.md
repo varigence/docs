@@ -18,6 +18,7 @@ Below is an outline of the properties and relationships for each entity type.
 | <div style="width:150px">BimlFlex Entity</div> | Description |
 | --------- | ----------- |
 |[Batches](xref:bimlflex-app-reference-documentation-Batches) | Batches organise the data logistics workload. They are used by Projects to manage the order of execution, and a Project must be associated to a Batch.|
+|[BusinessDomains](xref:bimlflex-app-reference-documentation-BusinessDomains) | |
 |[Columns](xref:bimlflex-app-reference-documentation-Columns) | The Columns screen allows for managing the individual components for an Object, for example the attributes of a database table. Columns define the detailed information to transform and map data from source to target.|
 |[Configurations](xref:bimlflex-app-reference-documentation-Configurations) | Configurations are custom attributes which can be used to drive the behaviour of BimlFlex, and the output it generates.|
 |[Connections](xref:bimlflex-app-reference-documentation-Connections) | Connections provide the information required to connect to data sources.|

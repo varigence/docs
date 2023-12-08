@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Secure Input
 
-When enabled, input from the activity will not be captured in ADF logging.
+When enabled, input from the Azure Copy Activity will not be captured in Azure Data Factory logging.
 
 Notes:
 

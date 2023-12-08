@@ -1,0 +1,3247 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "tutorial/intro",
+          "docs": [
+            {
+              "id": "bimlexpress/comparison/comparing-bimlexpress-bidshelper-bideveloperextensions",
+              "path": "/docs/bimlexpress/comparison/comparing-bimlexpress-bidshelper-bideveloperextensions"
+            },
+            {
+              "id": "bimlexpress/comparison/comparing-bimlexpress-bimlstudio",
+              "path": "/docs/bimlexpress/comparison/comparing-bimlexpress-bimlstudio"
+            },
+            {
+              "id": "bimlexpress/comparison/index",
+              "path": "/docs/bimlexpress/comparison/"
+            },
+            {
+              "id": "bimlexpress/getting-started/add-edit-biml-files",
+              "path": "/docs/bimlexpress/getting-started/add-edit-biml-files"
+            },
+            {
+              "id": "bimlexpress/getting-started/bimlexpress-account",
+              "path": "/docs/bimlexpress/getting-started/bimlexpress-account"
+            },
+            {
+              "id": "bimlexpress/getting-started/generate-ssis-packages",
+              "path": "/docs/bimlexpress/getting-started/generate-ssis-packages"
+            },
+            {
+              "id": "bimlexpress/getting-started/index",
+              "path": "/docs/bimlexpress/getting-started/"
+            },
+            {
+              "id": "bimlexpress/getting-started/install-bimlexpress",
+              "path": "/docs/bimlexpress/getting-started/install-bimlexpress"
+            },
+            {
+              "id": "bimlexpress/getting-started/menus-options",
+              "path": "/docs/bimlexpress/getting-started/menus-options"
+            },
+            {
+              "id": "bimlexpress/getting-started/preview-expanded-biml",
+              "path": "/docs/bimlexpress/getting-started/preview-expanded-biml"
+            },
+            {
+              "id": "bimlexpress/index",
+              "path": "/docs/bimlexpress/"
+            },
+            {
+              "id": "bimlexpress/release-notes/biml-express-2020-features",
+              "path": "/docs/bimlexpress/release-notes/biml-express-2020-features"
+            },
+            {
+              "id": "bimlexpress/release-notes/bimlexpress-2017",
+              "path": "/docs/bimlexpress/release-notes/bimlexpress-2017"
+            },
+            {
+              "id": "bimlexpress/release-notes/bimlexpress-2018.1",
+              "path": "/docs/bimlexpress/release-notes/bimlexpress-2018.1"
+            },
+            {
+              "id": "bimlexpress/release-notes/bimlexpress-2018.2",
+              "path": "/docs/bimlexpress/release-notes/bimlexpress-2018.2"
+            },
+            {
+              "id": "bimlexpress/release-notes/bimlexpress-2018.3",
+              "path": "/docs/bimlexpress/release-notes/bimlexpress-2018.3"
+            },
+            {
+              "id": "bimlexpress/release-notes/BimlExpress-2019.1",
+              "path": "/docs/bimlexpress/release-notes/BimlExpress-2019.1"
+            },
+            {
+              "id": "bimlexpress/release-notes/BimlExpress-2020.1",
+              "path": "/docs/bimlexpress/release-notes/BimlExpress-2020.1"
+            },
+            {
+              "id": "bimlexpress/release-notes/index",
+              "path": "/docs/bimlexpress/release-notes/"
+            },
+            {
+              "id": "bimlflex/build-and-deployment/build-bimlstudio-project",
+              "path": "/docs/bimlflex/build-and-deployment/build-bimlstudio-project",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/build-and-deployment/command-line-build",
+              "path": "/docs/bimlflex/build-and-deployment/command-line-build",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/build-and-deployment/concurrent-development",
+              "path": "/docs/bimlflex/build-and-deployment/concurrent-development",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/build-and-deployment/continuous-integration-and-delivery",
+              "path": "/docs/bimlflex/build-and-deployment/continuous-integration-and-delivery",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/build-and-deployment/generating-ddl",
+              "path": "/docs/bimlflex/build-and-deployment/generating-ddl",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/build-and-deployment/index",
+              "path": "/docs/bimlflex/build-and-deployment/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/build-and-deployment/setup-bimlstudio-project",
+              "path": "/docs/bimlflex/build-and-deployment/setup-bimlstudio-project",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/build-and-deployment/ssdt-project",
+              "path": "/docs/bimlflex/build-and-deployment/ssdt-project",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/customer",
+              "path": "/docs/bimlflex/concepts/customer",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/delete-detection",
+              "path": "/docs/bimlflex/concepts/delete-detection",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/extension-points",
+              "path": "/docs/bimlflex/concepts/extension-points",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/hashing",
+              "path": "/docs/bimlflex/concepts/hashing",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/importing-metadata",
+              "path": "/docs/bimlflex/concepts/importing-metadata",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/index",
+              "path": "/docs/bimlflex/concepts/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/integration-keys",
+              "path": "/docs/bimlflex/concepts/integration-keys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/load-parameters",
+              "path": "/docs/bimlflex/concepts/load-parameters",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/model-overrides",
+              "path": "/docs/bimlflex/concepts/model-overrides",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/staged-query",
+              "path": "/docs/bimlflex/concepts/staged-query",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/concepts/versions",
+              "path": "/docs/bimlflex/concepts/versions",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-marts/data-mart-configuration",
+              "path": "/docs/bimlflex/delivering-data-marts/data-mart-configuration",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-marts/data-mart-overrides",
+              "path": "/docs/bimlflex/delivering-data-marts/data-mart-overrides",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-marts/dimension-pattern",
+              "path": "/docs/bimlflex/delivering-data-marts/dimension-pattern",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-marts/fact-pattern",
+              "path": "/docs/bimlflex/delivering-data-marts/fact-pattern",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-marts/index",
+              "path": "/docs/bimlflex/delivering-data-marts/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-best-practices",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-best-practices",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-business-data-vault",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-business-data-vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-concept-hub",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-concept-hub",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-concept-integration-keys",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-concept-integration-keys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-concept-link",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-concept-link",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-concept-reference-data",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-concept-reference-data",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-concept-satellite",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-concept-satellite",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-concept-zero-records",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-concept-zero-records",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-dimensional-model",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-dimensional-model",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-implementation-bridge",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-implementation-bridge",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-implementation-pit",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-implementation-pit",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/data-vault-introduction",
+              "path": "/docs/bimlflex/delivering-data-vault/data-vault-introduction",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/driving-keys-in-data-vault",
+              "path": "/docs/bimlflex/delivering-data-vault/driving-keys-in-data-vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/hashing-in-data-vault",
+              "path": "/docs/bimlflex/delivering-data-vault/hashing-in-data-vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/index",
+              "path": "/docs/bimlflex/delivering-data-vault/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-data-vault/microsoft-best-practice-data-vault",
+              "path": "/docs/bimlflex/delivering-data-vault/microsoft-best-practice-data-vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-staging/index",
+              "path": "/docs/bimlflex/delivering-staging/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/delivering-staging/persistent-staging-area",
+              "path": "/docs/bimlflex/delivering-staging/persistent-staging-area",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/docs-gen/index",
+              "path": "/docs/bimlflex/docs-gen/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/getting-started/bimlflex-components-overview",
+              "path": "/docs/bimlflex/getting-started/bimlflex-components-overview",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/getting-started/first-project-walkthrough",
+              "path": "/docs/bimlflex/getting-started/first-project-walkthrough",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/getting-started/index",
+              "path": "/docs/bimlflex/getting-started/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/getting-started/initial-configuration",
+              "path": "/docs/bimlflex/getting-started/initial-configuration",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/getting-started/intro-videos",
+              "path": "/docs/bimlflex/getting-started/intro-videos",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/getting-started/sample-metadata",
+              "path": "/docs/bimlflex/getting-started/sample-metadata",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/index",
+              "path": "/docs/bimlflex/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/change-excel-bitness-bimlflex",
+              "path": "/docs/bimlflex/installation/change-excel-bitness-bimlflex",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/index",
+              "path": "/docs/bimlflex/installation/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/installing-bimlcatalog-database",
+              "path": "/docs/bimlflex/installation/installing-bimlcatalog-database",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/installing-bimlflex",
+              "path": "/docs/bimlflex/installation/installing-bimlflex",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/installing-build-server",
+              "path": "/docs/bimlflex/installation/installing-build-server",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/installing-developer-tools",
+              "path": "/docs/bimlflex/installation/installing-developer-tools",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/installing-metadata-database",
+              "path": "/docs/bimlflex/installation/installing-metadata-database",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/installing-ssis-server",
+              "path": "/docs/bimlflex/installation/installing-ssis-server",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/system-requirements",
+              "path": "/docs/bimlflex/installation/system-requirements",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/installation/upgrade-process",
+              "path": "/docs/bimlflex/installation/upgrade-process",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/accelerator",
+              "path": "/docs/bimlflex/metadata-editors/accelerator",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/attribute-editor",
+              "path": "/docs/bimlflex/metadata-editors/attribute-editor",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/bimlflex-tour",
+              "path": "/docs/bimlflex/metadata-editors/bimlflex-tour",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/customers",
+              "path": "/docs/bimlflex/metadata-editors/customers",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/dashboard",
+              "path": "/docs/bimlflex/metadata-editors/dashboard",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/data-lineage",
+              "path": "/docs/bimlflex/metadata-editors/data-lineage",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/database-settings",
+              "path": "/docs/bimlflex/metadata-editors/database-settings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/excel-add-in",
+              "path": "/docs/bimlflex/metadata-editors/excel-add-in",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/operational-reports",
+              "path": "/docs/bimlflex/metadata-editors/operational-reports",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/parameter-editor",
+              "path": "/docs/bimlflex/metadata-editors/parameter-editor",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/schema-diagram",
+              "path": "/docs/bimlflex/metadata-editors/schema-diagram",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/setting-editor",
+              "path": "/docs/bimlflex/metadata-editors/setting-editor",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/metadata-editors/treeview",
+              "path": "/docs/bimlflex/metadata-editors/treeview",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/orchestration/index",
+              "path": "/docs/bimlflex/orchestration/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/orchestration/orchestration-ssis",
+              "path": "/docs/bimlflex/orchestration/orchestration-ssis",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/patterns/source-to-staging-pattern",
+              "path": "/docs/bimlflex/patterns/source-to-staging-pattern",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/data-type-conversions",
+              "path": "/docs/bimlflex/reference-documentation/data-type-conversions",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Batch",
+              "path": "/docs/bimlflex/reference-documentation/entities/Batch",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Column",
+              "path": "/docs/bimlflex/reference-documentation/entities/Column",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Configuration",
+              "path": "/docs/bimlflex/reference-documentation/entities/Configuration",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Connection",
+              "path": "/docs/bimlflex/reference-documentation/entities/Connection",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Customer",
+              "path": "/docs/bimlflex/reference-documentation/entities/Customer",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/DataTypeMapping",
+              "path": "/docs/bimlflex/reference-documentation/entities/DataTypeMapping",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Object",
+              "path": "/docs/bimlflex/reference-documentation/entities/Object",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Parameter",
+              "path": "/docs/bimlflex/reference-documentation/entities/Parameter",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Project",
+              "path": "/docs/bimlflex/reference-documentation/entities/Project",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Setting",
+              "path": "/docs/bimlflex/reference-documentation/entities/Setting",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/entities/Version",
+              "path": "/docs/bimlflex/reference-documentation/entities/Version",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Batch",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Batch",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Connection",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Connection",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Data-Factory",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Data-Factory",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Data-Mart",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Data-Mart",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Data-Vault",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Data-Vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Global",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Global",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Mapping-Data-Flows",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Mapping-Data-Flows",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Object",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Object",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Project",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Project",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/extension-points/Staging-Sql",
+              "path": "/docs/bimlflex/reference-documentation/extension-points/Staging-Sql",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/index",
+              "path": "/docs/bimlflex/reference-documentation/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/metadata-configurations",
+              "path": "/docs/bimlflex/reference-documentation/metadata-configurations",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/metadata-static-values",
+              "path": "/docs/bimlflex/reference-documentation/metadata-static-values",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/reference-documentation-entities-index",
+              "path": "/docs/bimlflex/reference-documentation/reference-documentation-entities-index",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/reference-documentation-extensionpoints-index",
+              "path": "/docs/bimlflex/reference-documentation/reference-documentation-extensionpoints-index",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/reference-documentation-settings-index",
+              "path": "/docs/bimlflex/reference-documentation/reference-documentation-settings-index",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/7ZipPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/7ZipPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AddRowHashKeyIndex",
+              "path": "/docs/bimlflex/reference-documentation/settings/AddRowHashKeyIndex",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AddSqlDefaults",
+              "path": "/docs/bimlflex/reference-documentation/settings/AddSqlDefaults",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendBatchName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendBatchName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendIntegrationKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendIntegrationKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendLoadFromPsaName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendLoadFromPsaName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendNameExternal",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendNameExternal",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendNameLanding",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendNameLanding",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendProcedureName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendProcedureName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendRecordSource",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendRecordSource",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendSchemaDm",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendSchemaDm",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendSchemaDv",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendSchemaDv",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendSchemaPsa",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendSchemaPsa",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendSchemaStg",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendSchemaStg",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AppendSurrogateKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/AppendSurrogateKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ApplyDataTypeMappingDv",
+              "path": "/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappingDv",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ApplyDataTypeMappings",
+              "path": "/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ApplyDataTypeMappingStg",
+              "path": "/docs/bimlflex/reference-documentation/settings/ApplyDataTypeMappingStg",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ApplyExtractConversionInDataFlow",
+              "path": "/docs/bimlflex/reference-documentation/settings/ApplyExtractConversionInDataFlow",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ApplyLookupFilterDm",
+              "path": "/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDm",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ApplyLookupFilterDv",
+              "path": "/docs/bimlflex/reference-documentation/settings/ApplyLookupFilterDv",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ApplyNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/ApplyNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ArchiveImport",
+              "path": "/docs/bimlflex/reference-documentation/settings/ArchiveImport",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ArchivePath",
+              "path": "/docs/bimlflex/reference-documentation/settings/ArchivePath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ArchiveRetentionPeriod",
+              "path": "/docs/bimlflex/reference-documentation/settings/ArchiveRetentionPeriod",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyCapMbps",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyCapMbps",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyConcurrency",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyConcurrency",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyCreateContainer",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyCreateContainer",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyEnabled",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyEnabled",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyLogLevel",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyLogLevel",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyLogLocation",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyLogLocation",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopySetEnvironmentVariables",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopySetEnvironmentVariables",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyUseSasToken",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyUseSasToken",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzCopyVersion",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzCopyVersion",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureArchiveAccountKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureArchiveAccountName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureArchiveAccountName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureArchiveContainer",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureArchiveContainer",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureArchiveLandingFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureArchiveLandingFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureArchiveSasToken",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureArchiveSasToken",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureArchiveSourceFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureArchiveSourceFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureArchiveStage",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureArchiveStage",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureBlobStorageDomain",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureBlobStorageDomain",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyBehavior",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyBehavior",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyDataIntegrationUnits",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyDataIntegrationUnits",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyEnableLogging",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyEnableLogging",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyEnableStaging",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyEnableStaging",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyIsRecursive",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyIsRecursive",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyLogSettings",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyLogSettings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyMethod",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyMethod",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyParallelCopies",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyParallelCopies",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyRetryAttempts",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyRetryAttempts",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyRetryInterval",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyRetryInterval",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopySecureInput",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopySecureInput",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopySecureOutput",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopySecureOutput",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopySourceSettings",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopySourceSettings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyStagingSettings",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyStagingSettings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyTimeout",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyTimeout",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCopyValidateDataConsistency",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCreateDummyFile",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCreateDummyFile",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureCreateExternalOnStage",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureCreateExternalOnStage",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDataFactoryLocation",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDataFactoryLocation",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDataFactoryName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDataFactoryName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDeleteLandingFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDeleteLandingFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDeleteSourceFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDeleteSourceFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDeploymentAccountKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDeploymentAccountName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDeploymentAccountName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDeploymentContainer",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDeploymentContainer",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDeploymentEmitPowerShellCheck",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDeploymentEmitPowerShellCheck",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureDeploymentSasToken",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureDeploymentSasToken",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureErrorAccountKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureErrorAccountKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureErrorAccountName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureErrorAccountName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureErrorContainer",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureErrorContainer",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureErrorSasToken",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureErrorSasToken",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureExternalFileConversion",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureExternalFileConversion",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureExternalFileFormat",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureExternalFileFormat",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFileCompressionCodec",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFileCompressionCodec",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFileCompressionLevel",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFileCompressionLevel",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFileEncodingName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFileEncodingName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFileNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFileNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFileNullValue",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFileNullValue",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFolderNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFolderNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFunctionBridgeKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecret",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecret",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecretVersion",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeKeyVaultSecretVersion",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFunctionBridgeName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureFunctionBridgeUseKeyVault",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureFunctionBridgeUseKeyVault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureIntegrationRuntime",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntime",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureIntegrationRuntimeIsShared",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntimeIsShared",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureIntegrationRuntimeResourceId",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureIntegrationRuntimeResourceId",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureKeyVault",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureKeyVault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureOnErrorLandingFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureOnErrorLandingFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureOnErrorSourceFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureOnErrorSourceFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzurePolybaseSettings",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzurePolybaseSettings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureResourceGroup",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureResourceGroup",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureRoundRobinTemporaryTables",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureScriptEnableLogging",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureScriptEnableLogging",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureScriptExeutionTimeout",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureScriptExeutionTimeout",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureScriptLogSettings",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureScriptLogSettings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureScriptRetryAttempts",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureScriptRetryAttempts",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureScriptRetryInterval",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureScriptRetryInterval",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureScriptSecureInput",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureScriptSecureInput",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureScriptSecureOutput",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureScriptSecureOutput",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureScriptTimeout",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureScriptTimeout",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureStageAccountKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureStageAccountKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureStageAccountName",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureStageAccountName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureStageContainer",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureStageContainer",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureStageOnExtract",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureStageOnExtract",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureStageSasToken",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureStageSasToken",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/AzureSubscriptionId",
+              "path": "/docs/bimlflex/reference-documentation/settings/AzureSubscriptionId",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/BmAttributeNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/BmAttributeNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/BmAttributeTechnicalNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/BmAttributeTechnicalNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/BmEntityNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/BmEntityNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/BmEntityTechnicalNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/BmEntityTechnicalNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/BmNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/BmNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/BmUseShortNames",
+              "path": "/docs/bimlflex/reference-documentation/settings/BmUseShortNames",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ChangeReferencesToIntegrationKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/ChangeReferencesToIntegrationKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ConfigurationPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/ConfigurationPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ConstraintModeDm",
+              "path": "/docs/bimlflex/reference-documentation/settings/ConstraintModeDm",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ConstraintModeDv",
+              "path": "/docs/bimlflex/reference-documentation/settings/ConstraintModeDv",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ConstraintModeStg",
+              "path": "/docs/bimlflex/reference-documentation/settings/ConstraintModeStg",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ConvertGuidToString",
+              "path": "/docs/bimlflex/reference-documentation/settings/ConvertGuidToString",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksActivityRetryAttempts",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksActivityRetryAttempts",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksActivityRetryInterval",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksActivityRetryInterval",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksActivitySecureInput",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksActivitySecureInput",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksActivitySecureOutput",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksActivitySecureOutput",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksActivityTimeout",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksActivityTimeout",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksAddCreateCatalog",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksAddCreateCatalog",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksAddDropNotebooks",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksAddDropNotebooks",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksAddSqlComments",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksAddSqlComments",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksAddTruncateNotebooks",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksAddTruncateNotebooks",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksAppendNotebookName",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksAppendNotebookName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksCopyFormatOptions",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksCopyFormatOptions",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksCopyOptions",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksCopyOptions",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksDataTimeZone",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksDataTimeZone",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksDisplayTimeZone",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksDisplayTimeZone",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksNotebookPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksNotebookPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksOutputPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksOutputPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksRepositoryName",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksRepositoryName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksTableProperties",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksTableProperties",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksUseGlobalParameters",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksUseGlobalParameters",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksUseManagedTables",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksUseManagedTables",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksUseTemporaryViews",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksUseTemporaryViews",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DatabricksUseUnityCatalog",
+              "path": "/docs/bimlflex/reference-documentation/settings/DatabricksUseUnityCatalog",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteDetectionApplyDv",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyDv",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionApplyPsa",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteDetectionArchiveFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionArchiveFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteDetectionDeleteFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionDeleteFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteDetectionEnabled",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionEnabled",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteDetectionOnErrorFiles",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionOnErrorFiles",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteDetectionOnStage",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteDetectionOnStage",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteImportFile",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteImportFile",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteObjectNamePattern",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteObjectNamePattern",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DeleteSchemaNamePattern",
+              "path": "/docs/bimlflex/reference-documentation/settings/DeleteSchemaNamePattern",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DisableStgPsaOnly",
+              "path": "/docs/bimlflex/reference-documentation/settings/DisableStgPsaOnly",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DisplayDatabaseNameDm",
+              "path": "/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameDm",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DisplayDatabaseNameDv",
+              "path": "/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameDv",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DisplayDatabaseNameStg",
+              "path": "/docs/bimlflex/reference-documentation/settings/DisplayDatabaseNameStg",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DisplaySchemaNameDm",
+              "path": "/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDm",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DisplaySchemaNameDv",
+              "path": "/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameDv",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DisplaySchemaNameStg",
+              "path": "/docs/bimlflex/reference-documentation/settings/DisplaySchemaNameStg",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DmAppendDim",
+              "path": "/docs/bimlflex/reference-documentation/settings/DmAppendDim",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DmAppendFact",
+              "path": "/docs/bimlflex/reference-documentation/settings/DmAppendFact",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DmAppendStaging",
+              "path": "/docs/bimlflex/reference-documentation/settings/DmAppendStaging",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DmInferDim",
+              "path": "/docs/bimlflex/reference-documentation/settings/DmInferDim",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DmStageOnInitialLoad",
+              "path": "/docs/bimlflex/reference-documentation/settings/DmStageOnInitialLoad",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationFormItemSettings",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationFormItemSettings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationHideEmptyGroups",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationHideEmptyGroups",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationHtmlTemplatePath",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationHtmlTemplatePath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationIncludeConnectionSchemaDiagrams",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationIncludeConnectionSchemaDiagrams",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationIncludeObjectLineageDiagrams",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationIncludeObjectLineageDiagrams",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationPreviewHideFooter",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationPreviewHideFooter",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationPreviewHideHeader",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationPreviewHideHeader",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationPropertyDisplayMode",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationPropertyDisplayMode",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationPropertyOrder",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationPropertyOrder",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DocumentationSensitivePropertyMode",
+              "path": "/docs/bimlflex/reference-documentation/settings/DocumentationSensitivePropertyMode",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateCorrectKeyNames",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateHubKeys",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateHubKeys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateLinkIntegrationKeys",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkIntegrationKeys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateLinkKeys",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkKeys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateLinkSatellite",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatellite",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateLinkSatelliteKeys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateShowColumns",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateShowColumns",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateShowExpanded",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateShowExpanded",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAccelerateTwoWayLinks",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAddZeroKeys",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAddZeroKeys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendBridge",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendBridge",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendHierarchyLink",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendHierarchyLink",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendHub",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendHub",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendLink",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendLink",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendLinkSatellite",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendLinkSatellite",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendLinkSatelliteRecordSource",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendLinkSatelliteRecordSource",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendPointInTime",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendPointInTime",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendReference",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendReference",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendSameAsLink",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendSameAsLink",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvAppendSatellite",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvAppendSatellite",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvBridgeLagDays",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvBridgeLagDays",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvColumnNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvColumnNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvCreateSatelliteViews",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvCreateSatelliteViews",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvCurrentViewSuffix",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvCurrentViewSuffix",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvDefaultSchema",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvDefaultSchema",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvDeltaIsDerived",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvDeltaIsDerived",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvDeriveStagedObject",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvDeriveStagedObject",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvEffectivityViewSuffix",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvEffectivityViewSuffix",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvEltDeltaIsDerived",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvEltDeltaIsDerived",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvEndDateSatellite",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvEndDateSatellite",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvInferLinkHub",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvInferLinkHub",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvInsertScriptWithTable",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvInsertScriptWithTable",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvNamingConvention",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvNamingConvention",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvParallelProcessing",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvParallelProcessing",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvPitLagDays",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvPitLagDays",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvPrefixSurrogateKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvPrefixSurrogateKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvPrefixViewName",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvPrefixViewName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvPreviewSchema",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvPreviewSchema",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvProcessOnStage",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvProcessOnStage",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvSchemaBridge",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvSchemaBridge",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvSchemaHub",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvSchemaHub",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvSchemaLink",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvSchemaLink",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvSchemaLinkSatellite",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvSchemaLinkSatellite",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvSchemaPointInTime",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvSchemaPointInTime",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvSchemaSatellite",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvSchemaSatellite",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvSingleChangeSatellite",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvSingleChangeSatellite",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvStageSurrogateKeys",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvStageSurrogateKeys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvUniformChangeType",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvUniformChangeType",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvUseCacheLookup",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvUseCacheLookup",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvUseHashKeys",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvUseHashKeys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvUseTransactions",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvUseTransactions",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvUseWhereExists",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvUseWhereExists",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/DvZeroKeyExpression",
+              "path": "/docs/bimlflex/reference-documentation/settings/DvZeroKeyExpression",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/EnableEndDatePsa",
+              "path": "/docs/bimlflex/reference-documentation/settings/EnableEndDatePsa",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/EnableRollbackDv",
+              "path": "/docs/bimlflex/reference-documentation/settings/EnableRollbackDv",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/EnableRollbackPsa",
+              "path": "/docs/bimlflex/reference-documentation/settings/EnableRollbackPsa",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/EnableRollbackStg",
+              "path": "/docs/bimlflex/reference-documentation/settings/EnableRollbackStg",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ExportPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/ExportPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ExtractFileEncoding",
+              "path": "/docs/bimlflex/reference-documentation/settings/ExtractFileEncoding",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ExtractFileSplitSize",
+              "path": "/docs/bimlflex/reference-documentation/settings/ExtractFileSplitSize",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/GlobalDefaultDate",
+              "path": "/docs/bimlflex/reference-documentation/settings/GlobalDefaultDate",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/HashAlgorithm",
+              "path": "/docs/bimlflex/reference-documentation/settings/HashAlgorithm",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/HashBinary",
+              "path": "/docs/bimlflex/reference-documentation/settings/HashBinary",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/HashIntegrationKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/HashIntegrationKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/HashNullValue",
+              "path": "/docs/bimlflex/reference-documentation/settings/HashNullValue",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/HideSecondaryExclusions",
+              "path": "/docs/bimlflex/reference-documentation/settings/HideSecondaryExclusions",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ImportPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/ImportPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ImportViews",
+              "path": "/docs/bimlflex/reference-documentation/settings/ImportViews",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/InferIntegrationKeyFrom",
+              "path": "/docs/bimlflex/reference-documentation/settings/InferIntegrationKeyFrom",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/IntegrationKeyColumnOrder",
+              "path": "/docs/bimlflex/reference-documentation/settings/IntegrationKeyColumnOrder",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/IntegrationKeyConcatenationOrder",
+              "path": "/docs/bimlflex/reference-documentation/settings/IntegrationKeyConcatenationOrder",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/IntegrationKeyToUpper",
+              "path": "/docs/bimlflex/reference-documentation/settings/IntegrationKeyToUpper",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/KeyEndsWith",
+              "path": "/docs/bimlflex/reference-documentation/settings/KeyEndsWith",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/LookupCachePath",
+              "path": "/docs/bimlflex/reference-documentation/settings/LookupCachePath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/LookupTablePattern",
+              "path": "/docs/bimlflex/reference-documentation/settings/LookupTablePattern",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/NetCoreTargetsPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/NetCoreTargetsPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ObjectNamePattern",
+              "path": "/docs/bimlflex/reference-documentation/settings/ObjectNamePattern",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PadIntegrationKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/PadIntegrationKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PersistHistory",
+              "path": "/docs/bimlflex/reference-documentation/settings/PersistHistory",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaDeltaCollapseRows",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaDeltaCollapseRows",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaDeltaDetectionSql",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaDeltaDetectionSql",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaDeltaIsDerived",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaDeltaIsDerived",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaDeltaLateArriving",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaDeltaLateArriving",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaDeltaSingleChange",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaDeltaSingleChange",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaDeltaStageAllRows",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaDeltaStageAllRows",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaDeltaUseHashDiff",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaDeltaUseHashDiff",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaEltDeltaIsDerived",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaEltDeltaIsDerived",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaMergeAllRows",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaMergeAllRows",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaTemporalTableName",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaTemporalTableName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaTruncateIfHasRows",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaTruncateIfHasRows",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/PsaUseCacheLookup",
+              "path": "/docs/bimlflex/reference-documentation/settings/PsaUseCacheLookup",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/RetainExistingMetadata",
+              "path": "/docs/bimlflex/reference-documentation/settings/RetainExistingMetadata",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/RootPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/RootPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SchemaNamePattern",
+              "path": "/docs/bimlflex/reference-documentation/settings/SchemaNamePattern",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SelectBlobRowOrderBy",
+              "path": "/docs/bimlflex/reference-documentation/settings/SelectBlobRowOrderBy",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SelectStageRowDistinct",
+              "path": "/docs/bimlflex/reference-documentation/settings/SelectStageRowDistinct",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnapshotRetentionPeriod",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnapshotRetentionPeriod",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowDtCleanOutputPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowDtCleanOutputPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowDtOutputPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowDtOutputPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeAccount",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeAccount",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeAddSqlComments",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeAddSqlComments",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeAutoSuspend",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeAutoSuspend",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeDatabase",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeDatabase",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeExecuteAs",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeExecuteAs",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeFileFormat",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeFileFormat",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakePassword",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakePassword",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeRegion",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeRegion",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeRemoveStage",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeRemoveStage",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeScaleDown",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeScaleDown",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeScaleDownSize",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeScaleDownSize",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeScaleUp",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeScaleUp",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeScaleUpSize",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeScaleUpSize",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeSchema",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeSchema",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeUser",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeUser",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowflakeWarehouse",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowflakeWarehouse",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowSqlConfig",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowSqlConfig",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowSqlConnection",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowSqlConnection",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SnowSqlPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/SnowSqlPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SqlCmdOverride",
+              "path": "/docs/bimlflex/reference-documentation/settings/SqlCmdOverride",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtCleanOutputPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtCleanOutputPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtDefaultCredential",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtDefaultCredential",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtDefaultExternalDataSource",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtDefaultExternalDataSource",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtDefaultExternalFileFormat",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtDefaultExternalFileFormat",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtDefaultMasterKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtDefaultMasterKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtIncludeCredential",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeCredential",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtIncludeExternalDataSource",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalDataSource",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalFileFormat",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtIncludeExternalTables",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeExternalTables",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtIncludeMasterKey",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeMasterKey",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtIncludeNetCoreSupport",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtOutputPath",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtOutputPath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtOverwriteExternalTableDefaults",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtOverwriteExternalTableDefaults",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtSolutionName",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtSolutionName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtSuppressTSqlWarnings",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtUseDatabaseReferences",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtUseDatabaseReferences",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsdtVisualStudioVersion",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsdtVisualStudioVersion",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisAutoAdjustBufferSize",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisBLOBTempStoragePath",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisBLOBTempStoragePath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisBufferTempStoragePath",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisBufferTempStoragePath",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisCheckConstraints",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisCheckConstraints",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisCommandTimeout",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisCommandTimeout",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisConvertDateWithScale",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisConvertDateWithScale",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisCreateFolder",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisCreateFolder",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisDb",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisDb",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferMaxRows",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisDefaultBufferSize",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisDefaultBufferSize",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisDelayValidation",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisDelayValidation",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisEngineThreads",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisEngineThreads",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisExpressUseUTF8DataConversion",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisExpressUseUTF8DataConversion",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisFolder",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisFolder",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisHashNullValue",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisHashNullValue",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisMaxConcurrentExecutables",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisMaxConcurrentExecutables",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisMaximumInsertCommitSize",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisMaximumInsertCommitSize",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisProcessSubfolders",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisProcessSubfolders",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisRowsPerBatch",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisRowsPerBatch",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisServer",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisServer",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SsisValidateExternalMetadata",
+              "path": "/docs/bimlflex/reference-documentation/settings/SsisValidateExternalMetadata",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/StageBypassPsaChecks",
+              "path": "/docs/bimlflex/reference-documentation/settings/StageBypassPsaChecks",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/StageColumnWithBusinessName",
+              "path": "/docs/bimlflex/reference-documentation/settings/StageColumnWithBusinessName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/StagedObjectConfigurations",
+              "path": "/docs/bimlflex/reference-documentation/settings/StagedObjectConfigurations",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/StageObjectWithBusinessName",
+              "path": "/docs/bimlflex/reference-documentation/settings/StageObjectWithBusinessName",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/StageReduceLinkKeys",
+              "path": "/docs/bimlflex/reference-documentation/settings/StageReduceLinkKeys",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/StringConcatenator",
+              "path": "/docs/bimlflex/reference-documentation/settings/StringConcatenator",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SuffixOrPrefixColumn",
+              "path": "/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixColumn",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/SuffixOrPrefixObject",
+              "path": "/docs/bimlflex/reference-documentation/settings/SuffixOrPrefixObject",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseBimlCatalog",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseBimlCatalog",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseCustomComponents",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseCustomComponents",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseRecordSourceAsAppend",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsAppend",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseRecordSourceAsSchema",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseRecordSourceAsSchema",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseSqlCompatibleHash",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleHash",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseSqlCompatibleRowHash",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseSqlCompatibleRowHash",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseSsisCompatableDateFormat",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseTrueFalseForBoolean",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseTrueFalseForBoolean",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseTryCastConversion",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseTryCastConversion",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/UseUserNullAssignment",
+              "path": "/docs/bimlflex/reference-documentation/settings/UseUserNullAssignment",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ZipArchiveImport",
+              "path": "/docs/bimlflex/reference-documentation/settings/ZipArchiveImport",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ZipExtractFileInMemory",
+              "path": "/docs/bimlflex/reference-documentation/settings/ZipExtractFileInMemory",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/reference-documentation/settings/ZipOutputFile",
+              "path": "/docs/bimlflex/reference-documentation/settings/ZipOutputFile",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/index",
+              "path": "/docs/bimlflex/release-notes/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/new-features-2018.1",
+              "path": "/docs/bimlflex/release-notes/new-features-2018.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/new-features-2018.2",
+              "path": "/docs/bimlflex/release-notes/new-features-2018.2",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/new-features-2018.3",
+              "path": "/docs/bimlflex/release-notes/new-features-2018.3",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/new-features-2019.1",
+              "path": "/docs/bimlflex/release-notes/new-features-2019.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/new-features-2019.2",
+              "path": "/docs/bimlflex/release-notes/new-features-2019.2",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/new-features-2020.1",
+              "path": "/docs/bimlflex/release-notes/new-features-2020.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/new-features-2022.1",
+              "path": "/docs/bimlflex/release-notes/new-features-2022.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes",
+              "path": "/docs/bimlflex/release-notes/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes-2018.1",
+              "path": "/docs/bimlflex/release-notes/release-notes-2018.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes-2019.1",
+              "path": "/docs/bimlflex/release-notes/release-notes-2019.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes-2020.1",
+              "path": "/docs/bimlflex/release-notes/release-notes-2020.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes-2020.2",
+              "path": "/docs/bimlflex/release-notes/release-notes-2020.2",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes-2022.1",
+              "path": "/docs/bimlflex/release-notes/release-notes-2022.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes-2022.2",
+              "path": "/docs/bimlflex/release-notes/release-notes-2022.2",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes-2022.3",
+              "path": "/docs/bimlflex/release-notes/release-notes-2022.3",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/release-notes/release-notes-2023.1",
+              "path": "/docs/bimlflex/release-notes/release-notes-2023.1",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/export-to-file",
+              "path": "/docs/bimlflex/scenarios/export-to-file",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/index",
+              "path": "/docs/bimlflex/scenarios/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/master-data-services",
+              "path": "/docs/bimlflex/scenarios/master-data-services",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/source-azure-postgres",
+              "path": "/docs/bimlflex/scenarios/source-azure-postgres",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/source-cdc",
+              "path": "/docs/bimlflex/scenarios/source-cdc",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/source-excel-plus",
+              "path": "/docs/bimlflex/scenarios/source-excel-plus",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/source-flat-file",
+              "path": "/docs/bimlflex/scenarios/source-flat-file",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/source-odata",
+              "path": "/docs/bimlflex/scenarios/source-odata",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/source-salesforce-rest-api",
+              "path": "/docs/bimlflex/scenarios/source-salesforce-rest-api",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/scenarios/source-stored-procedure",
+              "path": "/docs/bimlflex/scenarios/source-stored-procedure",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/support/check-installed-versions",
+              "path": "/docs/bimlflex/support/check-installed-versions",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/support/excel-metadata-addin",
+              "path": "/docs/bimlflex/support/excel-metadata-addin",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/support/index",
+              "path": "/docs/bimlflex/support/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/support/setting-up-adventureworkslt2012-source-database",
+              "path": "/docs/bimlflex/support/setting-up-adventureworkslt2012-source-database",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/support/support-process",
+              "path": "/docs/bimlflex/support/support-process",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/support/tips-and-tricks",
+              "path": "/docs/bimlflex/support/tips-and-tricks",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/support/troubleshooting-tips",
+              "path": "/docs/bimlflex/support/troubleshooting-tips",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/adf-deployment",
+              "path": "/docs/bimlflex/technology-adf/adf-deployment",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/azure-function-bridge",
+              "path": "/docs/bimlflex/technology-adf/azure-function-bridge",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/bfx-arm-templates",
+              "path": "/docs/bimlflex/technology-adf/bfx-arm-templates",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/continuous-integration-and-continuous-delivery",
+              "path": "/docs/bimlflex/technology-adf/continuous-integration-and-continuous-delivery",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/create-linked-service-connection",
+              "path": "/docs/bimlflex/technology-adf/create-linked-service-connection",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/index",
+              "path": "/docs/bimlflex/technology-adf/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/landing-area",
+              "path": "/docs/bimlflex/technology-adf/landing-area",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-azure-mysql",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-azure-mysql",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-azure-postgresql",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-azure-postgresql",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-blob-storage",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-blob-storage",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-datalake-gen-2",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-datalake-gen-2",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-mysql",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-mysql",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-netezza",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-netezza",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-oracle",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-oracle",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-postgresql",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-postgresql",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-sql-data-warehouse",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-sql-data-warehouse",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-sql-database",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-sql-database",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-sql-server",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-sql-server",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-sqlmi",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-sqlmi",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-adf-teradata",
+              "path": "/docs/bimlflex/technology-adf/linked-service-adf-teradata",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-azure-key-vault",
+              "path": "/docs/bimlflex/technology-adf/linked-service-azure-key-vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/linked-service-snowflake",
+              "path": "/docs/bimlflex/technology-adf/linked-service-snowflake",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/project-batch-structure-in-adf",
+              "path": "/docs/bimlflex/technology-adf/project-batch-structure-in-adf",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/sensitive-info-management",
+              "path": "/docs/bimlflex/technology-adf/sensitive-info-management",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/using-azure-portal",
+              "path": "/docs/bimlflex/technology-adf/using-azure-portal",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-adf/using-powershell",
+              "path": "/docs/bimlflex/technology-adf/using-powershell",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-data-flow/index",
+              "path": "/docs/bimlflex/technology-data-flow/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-delta-lake/delta-vault",
+              "path": "/docs/bimlflex/technology-delta-lake/delta-vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-delta-lake/index",
+              "path": "/docs/bimlflex/technology-delta-lake/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-snowflake/implementing-snowflake-in-adf",
+              "path": "/docs/bimlflex/technology-snowflake/implementing-snowflake-in-adf",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-snowflake/index",
+              "path": "/docs/bimlflex/technology-snowflake/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-snowflake/snowflake-configuration",
+              "path": "/docs/bimlflex/technology-snowflake/snowflake-configuration",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-snowflake/unsupported-snowflake-features",
+              "path": "/docs/bimlflex/technology-snowflake/unsupported-snowflake-features",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-sql-server/index",
+              "path": "/docs/bimlflex/technology-sql-server/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/concurrent-development",
+              "path": "/docs/bimlflex/technology-ssis/concurrent-development",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/continuous-integration-and-continuous-delivery",
+              "path": "/docs/bimlflex/technology-ssis/continuous-integration-and-continuous-delivery",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/index",
+              "path": "/docs/bimlflex/technology-ssis/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/sensitive-info-management",
+              "path": "/docs/bimlflex/technology-ssis/sensitive-info-management",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/ssis-custom-components",
+              "path": "/docs/bimlflex/technology-ssis/ssis-custom-components",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/ssis-deployment",
+              "path": "/docs/bimlflex/technology-ssis/ssis-deployment",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/ssis-deployment-wizard",
+              "path": "/docs/bimlflex/technology-ssis/ssis-deployment-wizard",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/ssis-on-prem-sql-server",
+              "path": "/docs/bimlflex/technology-ssis/ssis-on-prem-sql-server",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/ssis-server-installation",
+              "path": "/docs/bimlflex/technology-ssis/ssis-server-installation",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-ssis/using-powershell",
+              "path": "/docs/bimlflex/technology-ssis/using-powershell",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-synapse/index",
+              "path": "/docs/bimlflex/technology-synapse/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-synapse/synapse-forward-only-approach",
+              "path": "/docs/bimlflex/technology-synapse/synapse-forward-only-approach",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/technology-synapse/synapse-implementation",
+              "path": "/docs/bimlflex/technology-synapse/synapse-implementation",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/training/index",
+              "path": "/docs/bimlflex/training/",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlflex/training/training-content",
+              "path": "/docs/bimlflex/training/training-content",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/adding-existing-files-to-a-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/building-the-example-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/building-the-example-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-basic-table"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-dimension-table"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-fact-table"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-connection"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-database"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/creating-a-new-schema"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/deploying-tables-to-sql"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/importing-from-the-sample-database"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/index",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/preparing-to-build-the-example-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/saving-a-project",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/saving-a-project"
+            },
+            {
+              "id": "bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample",
+              "path": "/docs/bimlstudio/adventureworks-lt-walkthrough/setting-up-for-the-sample"
+            },
+            {
+              "id": "bimlstudio/index",
+              "path": "/docs/bimlstudio/"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/biml-compiler-command-line-options",
+              "path": "/docs/bimlstudio/miscellaneous/biml-compiler-command-line-options"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/choose-the-right-script-mode",
+              "path": "/docs/bimlstudio/miscellaneous/choose-the-right-script-mode"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/configuring-project-settings",
+              "path": "/docs/bimlstudio/miscellaneous/configuring-project-settings"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/create-an-expandable-transformer",
+              "path": "/docs/bimlstudio/miscellaneous/create-an-expandable-transformer"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/creating-a-basic-package",
+              "path": "/docs/bimlstudio/miscellaneous/creating-a-basic-package"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/importing-tables-using-bimlscript",
+              "path": "/docs/bimlstudio/miscellaneous/importing-tables-using-bimlscript"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/index",
+              "path": "/docs/bimlstudio/miscellaneous/"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/project-view-idiosyncrasies",
+              "path": "/docs/bimlstudio/miscellaneous/project-view-idiosyncrasies"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/source-control-setup",
+              "path": "/docs/bimlstudio/miscellaneous/source-control-setup"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/switching-build-types-for-biml-files",
+              "path": "/docs/bimlstudio/miscellaneous/switching-build-types-for-biml-files"
+            },
+            {
+              "id": "bimlstudio/miscellaneous/using-configuration-files",
+              "path": "/docs/bimlstudio/miscellaneous/using-configuration-files"
+            },
+            {
+              "id": "bimlstudio/promotions/bs-adf-feature-promotions",
+              "path": "/docs/bimlstudio/promotions/bs-adf-feature-promotions"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2017",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2017"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2018.1",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2018.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2018.2",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2018.2"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2018.3",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2018.3"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2019.1",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2019.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/BimlStudio-2020.1",
+              "path": "/docs/bimlstudio/release-notes/BimlStudio-2020.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2020.2",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2020.2"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2022.1",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2022.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2022.2",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2022.2"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2022.3",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2022.3"
+            },
+            {
+              "id": "bimlstudio/release-notes/bimlstudio-2023.1",
+              "path": "/docs/bimlstudio/release-notes/bimlstudio-2023.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/index",
+              "path": "/docs/bimlstudio/release-notes/"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-2.0",
+              "path": "/docs/bimlstudio/release-notes/mist-2.0"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.0",
+              "path": "/docs/bimlstudio/release-notes/mist-3.0"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.1",
+              "path": "/docs/bimlstudio/release-notes/mist-3.1"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.2",
+              "path": "/docs/bimlstudio/release-notes/mist-3.2"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.3",
+              "path": "/docs/bimlstudio/release-notes/mist-3.3"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-3.4",
+              "path": "/docs/bimlstudio/release-notes/mist-3.4"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-4.0",
+              "path": "/docs/bimlstudio/release-notes/mist-4.0"
+            },
+            {
+              "id": "bimlstudio/release-notes/mist-4.0-update-1",
+              "path": "/docs/bimlstudio/release-notes/mist-4.0-update-1"
+            },
+            {
+              "id": "bimlstudio/visual-editors/action",
+              "path": "/docs/bimlstudio/visual-editors/action"
+            },
+            {
+              "id": "bimlstudio/visual-editors/aggregation-design",
+              "path": "/docs/bimlstudio/visual-editors/aggregation-design"
+            },
+            {
+              "id": "bimlstudio/visual-editors/biml",
+              "path": "/docs/bimlstudio/visual-editors/biml"
+            },
+            {
+              "id": "bimlstudio/visual-editors/bimlscript",
+              "path": "/docs/bimlstudio/visual-editors/bimlscript"
+            },
+            {
+              "id": "bimlstudio/visual-editors/calculation",
+              "path": "/docs/bimlstudio/visual-editors/calculation"
+            },
+            {
+              "id": "bimlstudio/visual-editors/common-tool-windows",
+              "path": "/docs/bimlstudio/visual-editors/common-tool-windows"
+            },
+            {
+              "id": "bimlstudio/visual-editors/connection",
+              "path": "/docs/bimlstudio/visual-editors/connection"
+            },
+            {
+              "id": "bimlstudio/visual-editors/cube",
+              "path": "/docs/bimlstudio/visual-editors/cube"
+            },
+            {
+              "id": "bimlstudio/visual-editors/file-format",
+              "path": "/docs/bimlstudio/visual-editors/file-format"
+            },
+            {
+              "id": "bimlstudio/visual-editors/index",
+              "path": "/docs/bimlstudio/visual-editors/"
+            },
+            {
+              "id": "bimlstudio/visual-editors/kpi",
+              "path": "/docs/bimlstudio/visual-editors/kpi"
+            },
+            {
+              "id": "bimlstudio/visual-editors/package",
+              "path": "/docs/bimlstudio/visual-editors/package"
+            },
+            {
+              "id": "bimlstudio/visual-editors/package-tool-windows",
+              "path": "/docs/bimlstudio/visual-editors/package-tool-windows"
+            },
+            {
+              "id": "bimlstudio/visual-editors/partition",
+              "path": "/docs/bimlstudio/visual-editors/partition"
+            },
+            {
+              "id": "bimlstudio/visual-editors/perspective",
+              "path": "/docs/bimlstudio/visual-editors/perspective"
+            },
+            {
+              "id": "bimlstudio/visual-editors/principal",
+              "path": "/docs/bimlstudio/visual-editors/principal"
+            },
+            {
+              "id": "bimlstudio/visual-editors/schema",
+              "path": "/docs/bimlstudio/visual-editors/schema"
+            },
+            {
+              "id": "bimlstudio/visual-editors/script-project",
+              "path": "/docs/bimlstudio/visual-editors/script-project"
+            },
+            {
+              "id": "bimlstudio/visual-editors/static-source",
+              "path": "/docs/bimlstudio/visual-editors/static-source"
+            },
+            {
+              "id": "bimlstudio/visual-editors/table",
+              "path": "/docs/bimlstudio/visual-editors/table"
+            },
+            {
+              "id": "tutorial/intro",
+              "path": "/docs/tutorial/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial/tutorial-basics/congratulations",
+              "path": "/docs/tutorial/tutorial-basics/congratulations",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial/tutorial-basics/create-a-blog-post",
+              "path": "/docs/tutorial/tutorial-basics/create-a-blog-post",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial/tutorial-basics/create-a-document",
+              "path": "/docs/tutorial/tutorial-basics/create-a-document",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial/tutorial-basics/create-a-page",
+              "path": "/docs/tutorial/tutorial-basics/create-a-page",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial/tutorial-basics/deploy-your-site",
+              "path": "/docs/tutorial/tutorial-basics/deploy-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial/tutorial-basics/markdown-features",
+              "path": "/docs/tutorial/tutorial-basics/markdown-features",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial/tutorial-extras/manage-docs-versions",
+              "path": "/docs/tutorial/tutorial-extras/manage-docs-versions",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial/tutorial-extras/translate-your-site",
+              "path": "/docs/tutorial/tutorial-extras/translate-your-site",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---basics",
+              "path": "/docs/category/tutorial---basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---extras",
+              "path": "/docs/category/tutorial---extras",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/getting-started",
+              "path": "/docs/category/getting-started",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/key-concepts-and-features",
+              "path": "/docs/category/key-concepts-and-features",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/bimlflex-app",
+              "path": "/docs/category/bimlflex-app",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/development-build--deployment",
+              "path": "/docs/category/development-build--deployment",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/bimlflex-for-azure-data-factory",
+              "path": "/docs/category/bimlflex-for-azure-data-factory",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/bimlflex-for-mapping-data-flows",
+              "path": "/docs/category/bimlflex-for-mapping-data-flows",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/bimlflex-for-sql-server-integration-services",
+              "path": "/docs/category/bimlflex-for-sql-server-integration-services",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/bimlflex-on-synapse",
+              "path": "/docs/category/bimlflex-on-synapse",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/bimlflex-on-snowflake",
+              "path": "/docs/category/bimlflex-on-snowflake",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/other-bimlflex-connectivity",
+              "path": "/docs/category/other-bimlflex-connectivity",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/delivering-staging",
+              "path": "/docs/category/delivering-staging",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/delivering-data-vault",
+              "path": "/docs/category/delivering-data-vault",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/delivering-data-marts",
+              "path": "/docs/category/delivering-data-marts",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/orchestration",
+              "path": "/docs/category/orchestration",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/reference-docs",
+              "path": "/docs/category/reference-docs",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/support-guide",
+              "path": "/docs/category/support-guide",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/installation",
+              "path": "/docs/category/installation",
+              "sidebar": "bimlflexSidebar"
+            },
+            {
+              "id": "/category/release-notes",
+              "path": "/docs/category/release-notes",
+              "sidebar": "bimlflexSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/tutorial/intro",
+                "label": "tutorial/intro"
+              }
+            },
+            "bimlflexSidebar": {
+              "link": {
+                "path": "/docs/category/getting-started",
+                "label": "Getting Started"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

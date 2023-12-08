@@ -6,7 +6,7 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Cast Boolean to True False for Hash
+# Cast Boolean to True False
 
 Determines if the SQL inline [hashing](xref:bimlflex-concepts-hashing) function for MSSQL, SQLDB and Synapse converts BIT (Boolean) values to True/False instead of 1/0.
 

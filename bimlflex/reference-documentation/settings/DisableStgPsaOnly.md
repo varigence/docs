@@ -10,7 +10,7 @@ varigenceArticleType: Reference
 
 Enable this to skip the staging layer and only persist changes directly in the PSA.
 
-This setting applies to SSIS output only, and only works when the "Delta Detection in SQL" setting is disabled. These settings are not compatible.
+This setting applies to SSIS output only, and only works when the `Delta Detection in SQL` setting is disabled. These settings are not compatible.
 
 Notes:
 
