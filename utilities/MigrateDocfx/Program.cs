@@ -11,8 +11,8 @@ MigrateDocFx();
 static void MigrateDocFx()
 {
     var docsFolder = "bimlstudio";
-    var docfxRootDirectory = @"C:\varigencedocs";
-    var docusaurusRootDirectory = @"C:\varigencedocs\varigence";
+    var docfxRootDirectory = @"C:\github\varigence\docs";
+    var docusaurusRootDirectory = @"C:\github\varigence\docs\varigence";
 
     var docfxDirectory = Path.Combine(docfxRootDirectory, docsFolder);
     var docusaurusDirectory = Path.Combine(docusaurusRootDirectory, "docs", docsFolder);
@@ -65,10 +65,9 @@ static void MigrateFile(string filePath, string imageRegex, string docsFolder, s
     }
 
     // Applying multiple Regex.Replace operations
-    content = Regex.Replace(content, @"(uid:\W.*\s)", "");
+    content = Regex.Replace(content, @"(uid:\W)", "id: ");
     content = Regex.Replace(content, @"(name:\W)", "title: ");
     content = Regex.Replace(content, @"(summary:\W)", "description: ");
-    content = Regex.Replace(content, @"(varigenceProduct:\W)(.*?)(\r\n)(varigenceArticleType:\W)(.*?)(\r\n)", "tags: [$2, $5]$6", RegexOptions.Compiled);
     content = Regex.Replace(content, @"(^)(>\[!)", "$1> [!", RegexOptions.Multiline);
     content = Regex.Replace(content, @"(^)(>\W\[!)", "\r\n$1$2", RegexOptions.Multiline);
     content = Regex.Replace(content, @"(^)(>\W\[!NOTE\]\s)(?s)(.+?)(^\s*$)", "\r\n:::note\r\n$3\r\n:::\r\n\r\n$4", RegexOptions.Multiline);
@@ -83,6 +82,9 @@ static void MigrateFile(string filePath, string imageRegex, string docsFolder, s
     content = Regex.Replace(content, "(<br>)", "<br/>");
     content = Regex.Replace(content, @"(\*\*)(\<==\W)(.*?)(\*\*)", "**($3)**");
     content = Regex.Replace(content, imageRegex, $"$1/img/{docsFolder}/$4");
+
+    content = TransformMetaTags(content);
+
 
     // Processing fileUids
     foreach (var fileUid in fileUids)
@@ -344,6 +346,58 @@ static void SaveImageFromUrl(string file_name, string url)
         Console.WriteLine(ex.Message);
     }
 }
+
+static string TransformMetaTags(string content)
+{
+    string varigenceProductMetaTag = null;
+    string varigenceArticleTypeMetaTag = null;
+
+    var varigenceProductMetaTagMatch = Regex.Match(content, @"(varigenceProduct:\W)([^\r\n]*)[\r\n]*", RegexOptions.Compiled);
+    if (varigenceProductMetaTagMatch.Success)
+    {
+        //content = Regex.Replace(content, @"(varigenceProduct:\W)(.*?)(\r\n)(varigenceArticleType:\W)(.*?)(\r\n)", "tags: [$2, $5]$6", RegexOptions.Compiled);
+        varigenceProductMetaTag = varigenceProductMetaTagMatch.Groups[2].Value;
+        content = Regex.Replace(content, @"(varigenceProduct:\W)([^\r\n]*)[\r\n]*", string.Empty, RegexOptions.Compiled);
+    }
+
+    var varigenceArticleTypeMetaTagMatch = Regex.Match(content, @"(varigenceArticleType:\W)([^\r\n]*)[\r\n]*", RegexOptions.Compiled);
+    if (varigenceArticleTypeMetaTagMatch.Success)
+    {
+        //content = Regex.Replace(content, @"(varigenceProduct:\W)(.*?)(\r\n)(varigenceArticleType:\W)(.*?)(\r\n)", "tags: [$2, $5]$6", RegexOptions.Compiled);
+        varigenceArticleTypeMetaTag = varigenceArticleTypeMetaTagMatch.Groups[2].Value;
+        content = Regex.Replace(content, @"(varigenceArticleType:\W)([^\r\n]*)[\r\n]*", string.Empty, RegexOptions.Compiled);
+    }
+
+    if (!string.IsNullOrWhiteSpace(varigenceProductMetaTag) || !string.IsNullOrWhiteSpace(varigenceArticleTypeMetaTag))
+    {
+        const string frontMatterDelimter = "---";
+        var endOfFrontMatterIndex = content.IndexOf(frontMatterDelimter, content.IndexOf(frontMatterDelimter) + 1) + frontMatterDelimter.Length;
+        if (endOfFrontMatterIndex < 0)
+        {
+            endOfFrontMatterIndex = 0;
+        }
+
+        var builder = new StringBuilder();
+        builder.AppendLine();
+        builder.AppendLine("<head>");
+        if (!string.IsNullOrWhiteSpace(varigenceProductMetaTag))
+        {
+            builder.AppendLine($@"  <meta name=""varigenceProduct"" content=""{varigenceProductMetaTag}""></meta>");
+        }
+
+        if (!string.IsNullOrWhiteSpace(varigenceProductMetaTag))
+        {
+            builder.AppendLine($@"  <meta name=""varigenceArticleType"" content=""{varigenceArticleTypeMetaTag}""></meta>");
+        }
+
+        builder.AppendLine("</head>");
+
+        content = content.Insert(endOfFrontMatterIndex, builder.ToString());
+    }
+
+    return content;
+}
+
 public class TocEntry
 {
     public string name { get; set; }
@@ -351,4 +405,3 @@ public class TocEntry
     public string topicHref { get; set; }
     public List<TocEntry> items { get; set; }
 }
-
