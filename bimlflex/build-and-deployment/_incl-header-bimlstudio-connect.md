@@ -1,7 +1,7 @@
 ---
 uid: bimlflex-bimlstudio-connect-header
 title: Connect to the BimlFlex database from BimlStudio
-summary: onnect to the BimlFlex database from BimlStudio
+summary: Connect to the BimlFlex database from BimlStudio
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---

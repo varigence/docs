@@ -1,6 +1,6 @@
 ---
 title: Connect to the BimlFlex database from BimlStudio
-description: onnect to the BimlFlex database from BimlStudio
+description: Connect to the BimlFlex database from BimlStudio
 tags: [BimlFlex, Reference]
 ---
 The BimlStudio project needs to access the metadata in the BimlFlex database in order to generate output.
