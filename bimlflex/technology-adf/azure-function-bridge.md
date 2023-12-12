@@ -2,7 +2,7 @@
 uid: bfx-azure-function-bridge
 name: The BimlFlex utility Azure Function Bridge
 Summary: The BimlFlex generated Azure Function Bridge provides bridge features to support file operations and to support calls to unsupported technology or services.
-varigenceProduct:eProduct: BimlFlex
+varigenceProduct: BimlFlex
 varigenceArticleType: Conceptual
 ---
 
