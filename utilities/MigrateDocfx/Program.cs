@@ -65,7 +65,7 @@ static void MigrateFile(string filePath, string imageRegex, string docsFolder, s
     }
 
     // Applying multiple Regex.Replace operations
-    content = Regex.Replace(content, @"(uid:\W)", "id: ");
+    content = Regex.Replace(content, @"(uid:\W.*\s)", "");
     content = Regex.Replace(content, @"(name:\W)", "title: ");
     content = Regex.Replace(content, @"(summary:\W)", "description: ");
     content = Regex.Replace(content, @"(^)(>\[!)", "$1> [!", RegexOptions.Multiline);
