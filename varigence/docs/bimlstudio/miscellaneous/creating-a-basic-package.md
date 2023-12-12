@@ -1,9 +1,14 @@
 ---
+id: creating-a-basic-package
 sidebar_position: 3
 title: Creating A Basic Package
 description: How to create a basic package in BimlStudio
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 
 # Creating a Basic Package
 

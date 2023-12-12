@@ -1,9 +1,14 @@
 ---
+id: importing-from-the-sample-database
 sidebar_position: 7
 title: Importing from the Sample Database
 description: How to import from the sample database using BimlStudio
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 # Importing from the Sample Database
 
 BimlStudio provides an import capability. This allows you to pull existing schema and table definitions from a database into your model. These items are then imported as new objects in the model. Once imported, you can edit them as needed.

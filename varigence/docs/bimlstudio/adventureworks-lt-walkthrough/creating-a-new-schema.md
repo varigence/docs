@@ -1,9 +1,14 @@
 ---
+id: creating-a-new-schema
 sidebar_position: 8
 title: Creating a New Schema
 description: How to create a new schema in BimlStudio
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 # Creating a New Schema
 
 Schemas group table assets.

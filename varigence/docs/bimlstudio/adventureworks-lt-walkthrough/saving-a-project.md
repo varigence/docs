@@ -1,9 +1,14 @@
 ---
+id: saving-a-project
 sidebar_position: 5
 title: Saving a Project
 description: Save a project in BimlStudio
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 # Saving a Project
 
 There are several options for saving a project in BimlStudio.

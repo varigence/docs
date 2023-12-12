@@ -1,9 +1,14 @@
 ---
+id: creating-a-basic-table
 sidebar_position: 9
 title: Creating a Basic Table
 description: Documentation of how to create a basic table in BimlStudio
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 Biml supports several types of tables, so when you are creating a new one, your first action will be to choose a type. Here are the types and their uses:
 
 <table>

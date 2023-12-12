@@ -1,9 +1,14 @@
 ---
+id: creating-a-new-project
 sidebar_position: 3
 title: Creating a New Project
 description: Documentation of how to create a new project in BimlStudio
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 A BimlStudio project lets you define all the assets you need to build your BI solution.
 
 To create a new project in BimlStudio:

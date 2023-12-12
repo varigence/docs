@@ -1,9 +1,14 @@
 ---
+id: deploying-tables-to-sql
 sidebar_position: 13
 title: Deploying Tables to SQL
 description: How to deploy user created tables to SQL
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 # Deploying Tables to SQL
 
 When building and deploying a cube, newly created relational tables need to be deployed to a SQL database. A package, using SSIS ExecutePackage tasks, can accomplish this.

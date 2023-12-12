@@ -1,9 +1,14 @@
 ---
+id: configuring-project-settings
 sidebar_position: 5
 title: Configuring Project Settings
 description: Discussion of the various project settings in BimlStudio.
-tags: [BimlStudio, Conceptual]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Conceptual"></meta>
+</head>
+
 # Configuring Project Settings
 
 The project settings editor lets you control project-wide configuration options.

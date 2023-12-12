@@ -1,9 +1,14 @@
 ---
+id: setting-up-for-the-sample
 sidebar_position: 2
 title: Setting up for the Sample
 description: Setting up for the Sample project in BimlStudio
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 # Setting up for the Sample
 
 To build the sample in this walkthrough, some initial setup is required.

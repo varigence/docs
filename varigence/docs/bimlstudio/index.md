@@ -1,4 +1,5 @@
 ---
+id: bimlstudio-user-guide
 sidebar_position: 1
 title: BimlStudio Documentation
 ---

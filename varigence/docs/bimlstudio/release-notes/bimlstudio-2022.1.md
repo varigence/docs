@@ -1,4 +1,5 @@
 ---
+id: bimlstudio-release-notes-2022-r1
 sidebar_position: 4
 title: BimlStudio 2022.1
 description: Release Notes for BimlStudio 2022 R1

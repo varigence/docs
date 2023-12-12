@@ -1,9 +1,14 @@
 ---
+id: biml-compiler-command-line-options
 sidebar_position: 6
 title: Biml Compiler Command Line Options
 description: Various bimlc compiler options
-tags: [BimlStudio, Conceptual]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Conceptual"></meta>
+</head>
+
 # Biml Compiler (bimlc.exe) Options
 
 The following Hadron Compiler options are sorted alphabetically.

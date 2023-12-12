@@ -1,9 +1,14 @@
 ---
+id: building-the-example-project
 sidebar_position: 15
 title: Building the Example Project
 description: How to build the example project
-tags: [BimlStudio, Walkthrough]
 ---
+<head>
+<meta name="varigenceProduct" content="BimlStudio"></meta>
+<meta name="varigenceArticleType" content="Walkthrough"></meta>
+</head>
+
 # Building the Example Project
 
 Building a project produces compiled output for each item included in an emittable file.
