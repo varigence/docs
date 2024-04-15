@@ -1,0 +1,12 @@
+- name: Configurations
+  href: configuration-editor.md
+- name: Settings
+  href: setting-editor.md
+- name: Data Type Mappings
+  href: data-type-mappings.md
+- name: Versions
+  href: version-editor.md    
+- name: Reports
+  href: operational-reports.md
+- name: Documentation
+  href: documentation-editor.md

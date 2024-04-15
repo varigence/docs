@@ -1277,13 +1277,6 @@
             "items": [
               {
                 "type": "link",
-                "label": "BimlFlex Settings Definition for 7ZipPath",
-                "href": "/docs/bimlflex/reference-documentation/settings/7ZipPath",
-                "docId": "bimlflex/reference-documentation/settings/7ZipPath",
-                "unlisted": false
-              },
-              {
-                "type": "link",
                 "label": "BimlFlex Settings Definition for AddRecordSourceToIntegrationKey",
                 "href": "/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
                 "docId": "bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
@@ -4824,12 +4817,6 @@
       "id": "bimlflex/reference-documentation/reference-documentation-settings-index",
       "title": "Settings",
       "description": "Documentation on metadata and framework settings within BimlFlex",
-      "sidebar": "bimlflexSidebar"
-    },
-    "bimlflex/reference-documentation/settings/7ZipPath": {
-      "id": "bimlflex/reference-documentation/settings/7ZipPath",
-      "title": "BimlFlex Settings Definition for 7ZipPath",
-      "description": "Documentation of settings option within BimlFlex for 7ZipPath",
       "sidebar": "bimlflexSidebar"
     },
     "bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey": {

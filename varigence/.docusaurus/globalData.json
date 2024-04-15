@@ -612,11 +612,6 @@
               "sidebar": "bimlflexSidebar"
             },
             {
-              "id": "bimlflex/reference-documentation/settings/7ZipPath",
-              "path": "/docs/bimlflex/reference-documentation/settings/7ZipPath",
-              "sidebar": "bimlflexSidebar"
-            },
-            {
               "id": "bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
               "path": "/docs/bimlflex/reference-documentation/settings/AddRecordSourceToIntegrationKey",
               "sidebar": "bimlflexSidebar"

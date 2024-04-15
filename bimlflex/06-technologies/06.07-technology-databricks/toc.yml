@@ -1,0 +1,8 @@
+- name: Overview
+  href: index.md
+- name: Databricks Configuration Overview
+  href: databricks-configuration.md  
+- name: Implementing ADF Pipelines for Databricks
+  href: implementing-databricks-in-adf.md
+- name: Unsupported Databricks Features
+  href: unsupported-databricks-features.md
