@@ -28,18 +28,15 @@ varigenceArticleType: Conceptual
 | <div class="icon-col m-5"><img src="../../static/img/collapsed.svg"/></div> | Expand | This will allow users to expand the existing **Attributes** pane. |
 | <div class="icon-col m-5"><img src="../../static/img/save.svg"/></div> | Save | Saves any changes made in the form. The **Save** button is will only enabled if there are unsaved changes in the form and no major validation errors. |
 | <div class="icon-col m-5"><img src="../../static/img/discard.svg"/></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg"/></div> | Archive | This will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog). |
+| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg"/></div> | Archive | This will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex Applicationand will require a Database Administrator to restore, if possible. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog). |
 | <div class="icon-col m-5"><img src="../../static/img/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Attribute**.  A [Duplicate Attribute dialog](#duplicate-attribute-dialog) will appear asking for a new name. A new **Attribute** will be created using all of the selected **Attribute's** properties. |
-| <div class="icon-col m-5"><img src="images/bimlflex-action-switch.png" /></div> | Deleted | This will soft delete the currently selected **Attribute**.  This will remove the **Attribute** from processing and validation. |
+| <div class="icon-col m-5"><img src="../../static/img/bimlflex-action-switch.png" /></div> | Deleted | This will soft delete the currently selected **Attribute**.  This will remove the **Attribute** from processing and validation. |
 
 ## Attribute Editor Fields
 
 The fields available in the **Attribute** form change depending on the selected [Attribute Type](#attribute-types). The `Attribute Type` defines the scope of the BimlFlex process that the **Attribute** is applied to.
 
-<img
-    src="../../static/img/attributes-fields.64566.png"
-    title="{Entity Plural} Editor Fields"
-/>
+<img src="../../static/img/attributes-fields.64566.png" title="{Entity Plural} Editor Fields"/>
 
 ### Defining Attribute Scope
 

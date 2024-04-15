@@ -13,4 +13,3 @@ Specifies the path to a replacement HTML file to serve as the basis for the gene
 Notes:
 
 * This setting is part of the *Documentation* settings category.
-

@@ -16,7 +16,7 @@ The following sections describe the user interface elements of the **Project Edi
 ![BimlFlex Project Editor](../../static/img/bfx-projects-editor-overview.png "BimlFlex Project Editor")
 
 > [!NOTE]
-> Detailed descriptions of all **Project Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-Projects).
+> Detailed descriptions of all **Project Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-project-entity).
 
 ## Project Tab
 
@@ -32,7 +32,7 @@ The **Project Tab** is the first tab in the **Project Editor**, and it is select
 |<div class="icon-col m-5"><img src="../../static/img/duplicate-objects.svg" /></div>|Duplicate|This will create a duplicate of the selected **Project**.  A prompt will appear for creating a new **Project** using all of the selected **Project**'s current properties.|
 |<div class="icon-col m-5"><img src="../../static/img/import-metadata.svg" /></div>|<span class="nowrap-col m-5">Import Metadata</span>|This will bring up the **Metadata Importer**. Refer to the [Import Metadata](xref:bimlflex-concepts-importing-metadata) guide for more information.|
 | <div class="icon-col m-5"><img src="../../static/img/checkbox-indeterminate.svg" /></div> | Excluded | This will determine if the **Project** and all associated entities will be excluded from processing and validation along with the rest of the solution. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Project**. This will remove the **Project** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="../../static/img/bimlflex-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Project**. This will remove the **Project** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
 
 ### Additional Dialogs
 

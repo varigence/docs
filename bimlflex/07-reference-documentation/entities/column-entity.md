@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-columns
+uid: bimlflex-reference-documentation-column-entity
 title: BimlFlex Definition for Columns
 summary: Documentation of functionality within BimlFlex for Columns
 varigenceProduct: BimlFlex

@@ -50,7 +50,7 @@ Microsoft has provided a detailed account of ARM Template best practices [here](
 
 The most significant ARM template limitation in reference to BimlFlex is the overall size of the final state template being less than 4MB.
 
-Additional documentation regarding BimlFlex's handling of ARM Template size restrictions and the generation of a linked template folder for individual data sets can be referenced [here](xref:bfx-arm-templates).
+Additional documentation regarding BimlFlex's handling of ARM Template size restrictions and the generation of a linked template folder for individual data sets can be referenced [here](xref:bimlflex-arm-templates).
 
 **Example: SQL ADF arm_template_parameters.json**
 
@@ -192,7 +192,7 @@ Pipelines can either be run manually or started using ADF triggers.
 The following options are available for creating Triggers to run the Pipelines
 
 1. Create the Trigger in the [ADF Authoring Tool](https://docs.microsoft.com/en-us/azure/data-factory/author-visually) or through PowerShell
-1. Create the Trigger in BimlFlex through an [Extension Point](xref:bimlflex-concepts-extension-points).
+1. Create the Trigger in BimlFlex through an [Extension Point](xref:bimlflex-concepts-extensionpoints).
 
 An example Extension Point that creates an ADF trigger is listed below. Adding the trigger as an Extension Point will include it in the ARM template, enabling it to be deployed with the rest of the ADF assets.
 

@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-objects
+uid: bimlflex-reference-documentation-object-entity
 title: BimlFlex Definition for Objects
 summary: Documentation of functionality within BimlFlex for Objects
 varigenceProduct: BimlFlex
@@ -10,7 +10,7 @@ varigenceArticleType: Reference
 
 Objects in BimlFlex are the data stores that can be used as source, or target, for data logistics. Objects are managed in the [**Object Editor**](xref:bimlflex-object-editor).
 
-An Object can be a database table, a flat file, Excel documents, and, via use of [**Extensions Points**](xref:bimlflex-concepts-extension-points), APIs calls.
+An Object can be a database table, a flat file, Excel documents, and, via use of [**Extensions Points**](xref:bimlflex-concepts-extensionpoints), APIs calls.
 
 Instead of using multiple entity types to handle these scenarios BimlFlex uses managed metadata and the *Object Type* field to annotate what type of Object is being referenced.
 

@@ -13,7 +13,7 @@ Legacy Release Notes for BimlFlex 2019
 
 ## Build 5.0.64335.0, release date: 15 October 2019
 
-* Add: The BimlFlex App now provides a connection string builder for connections. Click the edit icon in the connection string field to open
+* Add: The BimlFlex Applicationnow provides a connection string builder for connections. Click the edit icon in the connection string field to open
 * Add: New setting `DvProcessOnStage` to process DV loads for the source file once the files are uploaded to staging. This allows the full end to end load from source to staging blob files to Data Vault to happen in one SSIS package. (only For Azure SQL Data Warehouse)
 * Add: New setting `AzureCreateDummyFile` option to upload a placeholder file to blob storage. This allows PolyBase to function without issues when all data files are moved out of the staging area. (only For Azure SQL Data Warehouse)
 * Add: New Extension Points `AzurePreArchiveStage` and `AzurePostArchiveStage` for extending the archive process in Azure SQL Data Warehouse loads.
@@ -32,7 +32,7 @@ download links to this build:
 
 ## Build 5.0.64317.0, release date: 27 September 2019
 
-* Update: An installation issue where some users experience a corrupted dependency file for BimlFlex App has been addressed
+* Update: An installation issue where some users experience a corrupted dependency file for BimlFlex Applicationhas been addressed
 
 download links to this build:
 
@@ -41,7 +41,7 @@ download links to this build:
 
 ## Build 5.0.64313.0, release date: 26 September 2019
 
-* Update: A scenario that could leave the BimlFlex App Accelerator empty in certain scenarios has been addressed
+* Update: A scenario that could leave the BimlFlex ApplicationAccelerator empty in certain scenarios has been addressed
 * Update: A scenario where the SSDT project was not using the correct template has been addressed
 * Update: A scenario where PIT Stored Procedures produced unexpected results when no Satellites were selected has been addressed
 
@@ -55,23 +55,23 @@ download links to this build:
 * Add: BimlFlex can now generate Snowflake Stored Procedures to push down logic into the Snowflake engine. As Snowflake previously didn't support Stored Procedures, the BimlFlex process would instead run the required queries from the orchestration engine as needed. Use the `Generate Scripts` menu to create the Stored Procedures.
 * Update: The BimlStudio `Generate Scripts` Menu option has a new option for `Snowflake Procedure Script`
 * Add: New advanced targeting system for Extension Points. It is now possible to assign a target name for one or more entities and use that attribute as the Extension Point target. This is useful in scenarios where a single Extension Point should be used in multiple location. E.g. a Batch pre-processing Extension Point can be added to any number of Batches by setting the Extension Point target to an attribute associated with the Batches in Scope. Use the `ExtensionPointTarget` AttributeKey and assign the target name in the AttributeValue.
-* Add: The BimlFlex App now supports touch mode in some UI interactions. Switch on Touch Mode in the BimlFlex App under settings to allow usage of touch gestures, such as double-tap instead of Ctrl+click.
+* Add: The BimlFlex Applicationnow supports touch mode in some UI interactions. Switch on Touch Mode in the BimlFlex Applicationunder settings to allow usage of touch gestures, such as double-tap instead of Ctrl+click.
 * Update: Unicode file objects no longer complain about missing code page definitions for the object.
 * Update: In certain scenarios the `AddRowHashKeyIndex` setting, which allows an additional Unique Constraint in the Staging Layer based on the Integration Key Hash, would create the constraint on the table without the RowEffectiveFrom column. This has been reviewed and the Constraint will now include both columns.
 * Update: The Data Vault accelerator now supports removal of the Record Source name from Link Satellites through the Accelerator UI in the same was as for Hub Satellites.
 * Update: The Data Vault accelerator now supports adding individual Source Keys to the Hub as a composite key. This feature is optional for scenarios where the Integration Key should be complimented with the individual key columns in their source formats.
-* Update: The Data Vault Accelerator has been removed from the BimlStudio Ribbon UI. The updated Accelerator has features that can only be supported in the BimlFlex app. Use the BimlFlex app for all Data Vault Acceleration.
+* Update: The Data Vault Accelerator has been removed from the BimlStudio Ribbon UI. The updated Accelerator has features that can only be supported in the BimlFlex app. Use the BimlFlex Applicationfor all Data Vault Acceleration.
 * Update: For certain ELT scenarios, the Link Satellite End Dating and Driving Key logic produced unexpected results. This has been addressed and updated logic for these scenarios is included in this version.
 * Update: A scenario where ELT processing in Azure SQL Data Warehouse was using Replicated temporary tables has been updated to use Round Robin distribution for these temporary tables.
 * Update: Adding the product key in the `msbuild` response file `*.mst.resp` using the `/p:LicenseKey="YourKeyHere"` now works as expected for automated build/build agent scenarios.
-* Update: BimlFlex App Performance – Most column updates do not need to reload the columns dataset from the database.
-* Add: BimlFlex App Notification Log
+* Update: BimlFlex ApplicationPerformance – Most column updates do not need to reload the columns dataset from the database.
+* Add: BimlFlex ApplicationNotification Log
 * Add: BimlFlex Export Metadata now available from the App Dashboard
-* Update: BimlFlex App Graph layout improvements - Re-Layout dependent lists into top-level tabs with tab-context sensitive action buttons to prevent confusion
-* Update: BimlFlex App - Show dependent entity counts on tabs
+* Update: BimlFlex ApplicationGraph layout improvements - Re-Layout dependent lists into top-level tabs with tab-context sensitive action buttons to prevent confusion
+* Update: BimlFlex Application- Show dependent entity counts on tabs
 * Update: BimlFlex now use the wording `Locally` for Exclude and Connection String when `Use My Exclusions` and `Use My Connection Strings` are active for the session
-* Add: BimlFlex App now supports printing layout graphs to an SVG image
-* Update: BimlFlex App Now provides a `Navigate to` for Object and Column from graphs
+* Add: BimlFlex Applicationnow supports printing layout graphs to an SVG image
+* Update: BimlFlex ApplicationNow provides a `Navigate to` for Object and Column from graphs
 * Update: BimlFlex App: Add `Ctrl+A` (Select All) shortcut key combination to allow select all graph tables (Move all selected with Shift+Mouse move)
 * Update: BimlFlex App: The accelerator pane splitter is now draggable
 * Update: BimlFlex App: Allow column ordinal sort in graphs using column drag-drop
@@ -96,7 +96,7 @@ download links to this build:
 * Update: The Point In Time process has been updated with additional logic to accommodate certain scenarios.
 * Update: In certain scenarios, column in the LSK keys were emitted in the wrong order, leading to unexpected hash values.
 * Update: In certain scenarios, an update to SQL Server Data Tools led to errors from the BimlFlex Custom SSIS Components. This release resolves this with updated custom components.
-* Update: Changing Customer in the BimlFlex App now defaults to the first active version for that Customer.
+* Update: Changing Customer in the BimlFlex Applicationnow defaults to the first active version for that Customer.
 * Update: database delimiter characters are now added to all temporary tables used. In certain scenarios, some object names could lead to invalid names being used for temporary processing tables.
 
 download links to this build:
@@ -147,7 +147,7 @@ download links to this build:
 
 ## Build 5.0.64252.0, release date: 01 August 2019
 
-* Update: the BimlFlex app now works on machines without Internet connectivity and online resources (such as icons/glyph fonts) are now cached locally
+* Update: the BimlFlex Applicationnow works on machines without Internet connectivity and online resources (such as icons/glyph fonts) are now cached locally
 * Update: in certain scenarios the HDK for satellites were not hashed using the same pattern as previous versions. This has been addressed
 
 download links to this build:
@@ -161,21 +161,21 @@ download links to this build:
 BimlFlex 2019.2 is a service release that fixes identified issues as well as introduces a set of new and improved features.
 
 * Update: BimlStudio performance enhancements for metadata operations. BimlStudio should now refresh and perform better with large metadata sets.
-* Update: BimlFlex App - Selectively load only changed Objects and Columns using LastModified date for better performance
-* Update: BimlFlex App - Fix `Show Exclusions` logic for `Use My Exclusions`
-* Add: BimlFlex App - Notification Log
-* Update: BimlFlex App - Prevent Refresh and Collapse menu bar buttons from overlapping
-* Add: BimlFlex App - allow users to copy validation messages to clipboard
-* Update: BimlFlex App - Accelerator should not error when the selected table references tables that are excluded or deleted, but should ignore the references
-* Update: BimlFlex App - Add button on setup screen to refresh customers from selected database
-* Add: BimlFlex App - Add Toast success messages to all the actions on the dashboard
-* Update: BimlFlex App - Prevent version going out of sync when changing customer
-* Update: BimlFlex App - Database communication command timeout set to 10 minutes
+* Update: BimlFlex Application- Selectively load only changed Objects and Columns using LastModified date for better performance
+* Update: BimlFlex Application- Fix `Show Exclusions` logic for `Use My Exclusions`
+* Add: BimlFlex Application- Notification Log
+* Update: BimlFlex Application- Prevent Refresh and Collapse menu bar buttons from overlapping
+* Add: BimlFlex Application- allow users to copy validation messages to clipboard
+* Update: BimlFlex Application- Accelerator should not error when the selected table references tables that are excluded or deleted, but should ignore the references
+* Update: BimlFlex Application- Add button on setup screen to refresh customers from selected database
+* Add: BimlFlex Application- Add Toast success messages to all the actions on the dashboard
+* Update: BimlFlex Application- Prevent version going out of sync when changing customer
+* Update: BimlFlex Application- Database communication command timeout set to 10 minutes
 * Add: Support for AzCopy v.10
 * Add: Support for using SAS Tokens for AzCopy access control for both legacy AzCopy versions and AzCopy v.10
 * Update: A scenario where ModelOverrideName introduced issues in Snowflake Staging was addressed
 * Update: additional support for CDC sources to snowflake has been added
-* Update: The BimlFlex App UI for metadata import now correctly uses `@@rs` casing for Record Source codes
+* Update: The BimlFlex ApplicationUI for metadata import now correctly uses `@@rs` casing for Record Source codes
 * Update: Additional source support for Teradata to Azure SQL Data Warehouse workloads with PolyBase conversion support
 * Add: Pre- and Post-processing tasks Extension Points for Source to File load processes
 * Add: Support to derive `RowRecordSource` in DV load process for Azure SQL Data Warehouse
@@ -229,8 +229,8 @@ download links to this build:
 * Update: A scenario where the PSA Primary keys were derived incorrectly for Multi Active Satellite source objects has been addressed.
 * Update: the Data Vault accelerator now respects existing changes to Data Vault when accelerating from source objects targeting these entities
 * Update: Schema Diagram and Accelerator UI now displays refresh button in the menu bar and exposes the show columns/show data types in a drop down for better productivity
-* Update: The BimlFlex App no longer display spell checking on text areas
-* Update: BimlFlex app now has a separate pane for the getting started entries on the dashboard
+* Update: The BimlFlex Applicationno longer display spell checking on text areas
+* Update: BimlFlex Applicationnow has a separate pane for the getting started entries on the dashboard
 * Update: A scenario where the load parameter value for `ParameterSqlExpression` expression was ignored has been addressed
 * Update: A scenario where Data Vault reference tables were not properly loaded in on-premises ELT code has been addressed
 * Update: A scenario where the reload from PSA project was not displayed for on-premises ELT solutions has been addressed and this project is now included by default with both ELT and ETL patterns
@@ -246,18 +246,18 @@ download links to this build:
 * Update: The Bundle used in projects is now centralized to the compiler location. For normal usage this means projects will use the bundle in the `%PROGRMFILES%\Varigence\BimlStudio\5.0\` location. The installer experience has been simplified and there is no Bundle upgrade process. This aims to simplify the version experience and allow the development process to always use the current Bundle. Note that the Bundle Upgrade step has been removed from the installer. Note that even through existing projects will have a Bundle file in the local folder, BimlStudio will use the centrally located Bundle.
 * Update: A scenario where an ANSI-compatible delete statement was used in Azure SQL Data Warehouse PIT processing procedures has been updated to instead use Azure SQL Data warehouse optimized syntax.
 * Update: A scenario where some DROP statements for temporary tables in ELT code weren't included has been addressed and all temporary tables are now dropped before and after use.
-* Update: The BimlFlex App UX now allows filters to be applied to the Connections column in the Columns page
-* Update: The BimlFlex App sometimes did not show a global validation warning for Model Reference information on columns used in references in Data Vault.
+* Update: The BimlFlex ApplicationUX now allows filters to be applied to the Connections column in the Columns page
+* Update: The BimlFlex Applicationsometimes did not show a global validation warning for Model Reference information on columns used in references in Data Vault.
 
 ## Bundle 64029
 
 * Add: All new installer experience. The BimlStudio and BimlFlex as well as all components are now available to install through a single installer. This allows upgrades to existing installations as well as databases and projects
-* Add: Full support for BimlFlex App. Use the BimlFlex App to manage metadata and to perform Data Vault Acceleration
+* Add: Full support for BimlFlex App. Use the BimlFlex Applicationto manage metadata and to perform Data Vault Acceleration
 * Add: Support for BimlStudio 2019
-* Update: Data Vault Acceleration is now performed through the BimlFlex App for maximum convenience
-* Update: BimlFlex Excel Add-in is supported for legacy installations, but usage of the BimlFlex App is recommended for all users
+* Update: Data Vault Acceleration is now performed through the BimlFlex Applicationfor maximum convenience
+* Update: BimlFlex Excel Add-in is supported for legacy installations, but usage of the BimlFlex Applicationis recommended for all users
 * Update: BimlFlex Excel Add-in support for Entity Archive action has been simplified to only selected entities
-* UpdateL BimlFlex App now provides Import Metadata functionality, this was previously provided through the Excel Add-in
+* UpdateL BimlFlex Applicationnow provides Import Metadata functionality, this was previously provided through the Excel Add-in
 * Update: BimlStudio no longer includes integrated upgrade features, all upgrades to applications, components, databases, bundle files are performed through the separate consolidated installer
 * Update: A new IsInitialLoad check query is used that aims to provide better performance for larger PSA tables
 

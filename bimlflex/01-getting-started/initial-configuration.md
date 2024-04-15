@@ -20,9 +20,9 @@ Once the BimlFlex installation is completed, it is time to set up the environmen
 
 ## Metadata Connection
 
-To begin designing your data solution, start the BimlFlex App and configure it to connect to the BimlFlex database.
+To begin designing your data solution, start the BimlFlex Applicationand configure it to connect to the BimlFlex database.
 
-![BimlFlex App Setup Pane](../static/img/bfx-new-connection.png "BimlFlex App Setup Pane")
+![BimlFlex ApplicationSetup Pane](../static/img/bfx-new-connection.png "BimlFlex ApplicationSetup Pane")
 
 Set up the Connection through the **Database Setup Pane**, which can be accessed from the **Database Settings Cog** in the top menu bar. The database setup pane contains options to specify connectivity to the BimlFlex database. The **Update Button** can be pressed to refresh the database contents when connection details have been modified.
 

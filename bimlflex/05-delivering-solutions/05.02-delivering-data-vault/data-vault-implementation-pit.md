@@ -70,7 +70,7 @@ There are some important notes to clarify on the structure of the PIT table in B
 
 As outlined above, PIT tables are flexible constructs and can even encompass business logic (transformations, logic) if it makes sense to do so from a performance perspective. This includes computed fields or additional being- and end dates to simplify upstream queries.
 
-BimlFlex can apply [Extension Points](xref:bimlflex-concepts-extension-points) to support specific customizations for PIT tables, if required. These can provider detailed overrides to change the behavior of the out-of-the-box solution.
+BimlFlex can apply [Extension Points](xref:bimlflex-concepts-extensionpoints) to support specific customizations for PIT tables, if required. These can provider detailed overrides to change the behavior of the out-of-the-box solution.
 
 ## Timelines in PIT tables
 

@@ -89,7 +89,7 @@ The **Recent Objects** pane displayed the most recently updated **Objects** to a
 Clone the current version to a new version.
 
 <img
-    src="images/bimlflex-dashboard-clone-version.png"
+    src="../../static/img/bimlflex-dashboard-clone-version.png"
     class="bordered-image"
     title="Clone Version"
 />
@@ -97,7 +97,7 @@ Clone the current version to a new version.
 ### Snapshots
 
 <img
-    src="images/bimlflex-dashboard-snapshots.png"
+    src="../../static/img/bimlflex-dashboard-snapshots.png"
     class="bordered-image"
     title="Capture Snapshot"
 />
@@ -105,7 +105,7 @@ Clone the current version to a new version.
 Hover over **Capture Snapshot** and click the ellipses for more options.
 
 <img
-    src="images/bimlflex-dashboard-snapshots-submenu.png"
+    src="../../static/img/bimlflex-dashboard-snapshots-submenu.png"
     class="bordered-image"
     title="Snapshot Sub Menu"
 />
@@ -118,7 +118,7 @@ Hover over **Capture Snapshot** and click the ellipses for more options.
 ### Archive Deleted Entities
 
 <img
-    src="images/bimlflex-dashboard-archive-entities.png"
+    src="../../static/img/bimlflex-dashboard-archive-entities.png"
     class="bordered-image"
     title="Archive Deleted Entities"
 />
@@ -128,7 +128,7 @@ Archive deleted entities of the selected types. Be aware that this action cannot
 ### Apply Data Type Mappings
 
 <img
-    src="images/bimlflex-dashboard-apply-data-type-mappings.png"
+    src="../../static/img/bimlflex-dashboard-apply-data-type-mappings.png"
     class="bordered-image"
     title="Apply Data Type Mappings"
 />
@@ -148,7 +148,7 @@ Getting Started contains info and complete sets of Metadata examples to quickly 
 ### Load Sample Metadata
 
 <img
-    src="images/bimlflex-dashboard-sample-metadata.png"
+    src="../../static/img/bimlflex-dashboard-sample-metadata.png"
     class="bordered-image"
     title="Load Sample Metadata"
 />
@@ -160,7 +160,7 @@ Contains complete sets of Metadata to serve as an example for users to refer to.
 ### Load Defaults
 
 <img
-    src="images/bimlflex-dashboard-load-defaults.png"
+    src="../../static/img/bimlflex-dashboard-load-defaults.png"
     class="bordered-image"
     title="Load Defaults"
 />

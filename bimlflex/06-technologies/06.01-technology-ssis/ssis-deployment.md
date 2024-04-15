@@ -149,7 +149,7 @@ Extension Point files should be named using a consistent naming convention. Thes
 > For additional details on project parameters and extension points refer to the below guides: 
 >
 > * BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)  
-> * [BimlFlex Extension Points](xref:bimlflex-concepts-extension-points)  
+> * [BimlFlex Extension Points](xref:bimlflex-concepts-extensionpoints)  
 
 ### Step 6: Build the Projects in BimlStudio
 

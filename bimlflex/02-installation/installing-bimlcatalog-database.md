@@ -79,7 +79,7 @@ Click **Deploy** to deploy the databases
 
 ![Deploying BimlFlex Databases](../static/img/installing-text.png "Deploying BimlFlex Databases")
 
-Once setup completes, configure the BimlFlex Project and BimlFlex App metadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reports to use the **BimlCatalog** database.
+Once setup completes, configure the BimlFlex Project and BimlFlex Applicationmetadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reports to use the **BimlCatalog** database.
 
 ### Command Line/Terminal-Based Installation
 
@@ -109,7 +109,7 @@ The BimlCatalog database is open, and can be queried by the data team. It also p
 
 ### Reporting Views
 
-For reporting there are views provided that simplifies querying information about the data logistics. Some of these are available from the [BimlFlex App](xref:metadata-editors-overview), and additional reporting can be found as part of the open source [BimlFlex Community Repository](https://github.com/varigence/BimlCatalog/).
+For reporting there are views provided that simplifies querying information about the data logistics. Some of these are available from the [BimlFlex Application](xref:bimlflex-editors-overview), and additional reporting can be found as part of the open source [BimlFlex Community Repository](https://github.com/varigence/BimlCatalog/).
 
 Specifically, a Power BI Dashboard is [available in the BimlFlex Community Repository](https://github.com/varigence/BimlCatalog/tree/master/BimlCatalogReporting/PowerBI) that displays overview statistics as well as more detailed information about the data logistics executions recorded in the BimlCatalog database.
 

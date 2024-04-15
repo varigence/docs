@@ -22,7 +22,7 @@ When checking a single **Attribute** in the overview two additional options will
 
 | Icon| Action| Description|
 | ----| ----- | ---------- |
-|<div class="icon-col m-5" ><img src="../../static/img/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog).|
+|<div class="icon-col m-5" ><img src="../../static/img/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex Applicationand will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog).|
 |<div class="icon-col m-5" ><img src="../../static/img/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Attribute Dialog](#edit-attribute-dialog) to edit the currently selected **Attribute**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
 
 ### Additional Dialogs  
@@ -34,7 +34,7 @@ When checking a single **Attribute** in the overview two additional options will
 Edit the selected **Attribute**.  Once entry is finished ensure that the <img class="icon-inline" src="../../static/img/save.svg" /> **Save** button is clicked.
 
 <img
-    src="images/bimlflex-dialog-edit-attribute.png"
+    src="../../static/img/bimlflex-dialog-edit-attribute.png"
     class="border-image"
     style="border:1px solid #CCC;"
     title="Edit Attribute Dialog"
@@ -56,7 +56,7 @@ The **Attribute Tab** provides a different way to review the properties of **Att
 #### Overview
 
 <img
-    src="images/bimlflex-tab-attributes-table.png"
+    src="../../static/img/bimlflex-tab-attributes-table.png"
     class="border-image"
     style="border:1px solid #CCC;"
     title="Attributes Tab - Table Descriptions"

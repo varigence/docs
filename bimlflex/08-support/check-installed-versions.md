@@ -28,7 +28,7 @@ The Product Information displayed includes the Build, normally in the format `22
 
 ## BimlFlex App
 
-Open the BimlFlex App and open the settings side pane by clicking the settings cog in the top toolbar.
+Open the BimlFlex Applicationand open the settings side pane by clicking the settings cog in the top toolbar.
 
 The Version id displayed at the bottom of the pane, normally in the format `22.1.nnnn.0`.
 

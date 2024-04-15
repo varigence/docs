@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-customers
+uid: bimlflex-reference-documentation-customer-entity
 title: BimlFlex Definition for Customers
 summary: Documentation of functionality within BimlFlex for Customers
 varigenceProduct: BimlFlex
@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Customers
 
-The BimlFlex [**Customer**](xref:bimlflex-concepts-customer) offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models.
+The Customer offers a flexible way to configure different functional areas which act as top-level groupings of metadata and models.
 
 ## Overview
   

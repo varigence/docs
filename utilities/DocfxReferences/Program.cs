@@ -19,14 +19,14 @@ static void DocfxReferences()
     var imageSrcRegex = $@"(src="")((.*\/)?(.*?(\.({imageExtensions.Aggregate((current, next) => $"{current.Replace(".", "")})" + "|" + $"({next.Replace(".", "")}")}))))";
     var allImageFiles = new Dictionary<string, string?>();
 
-    foreach (var enumerateFile in Directory.EnumerateFiles(docfxDirectory, "*.*", SearchOption.AllDirectories)
-                 .Where(file => imageExtensions.Any(ext => file.EndsWith(ext, StringComparison.OrdinalIgnoreCase))))
-    {
-        if (enumerateFile.Replace($"\\{Path.GetFileName(enumerateFile)}", "") != Path.Combine(docfxDirectory, @"static\img"))
-        {
-            CopyFile(enumerateFile, Path.Combine(docfxDirectory, @"static\img"), true);
-        }
-    }
+    //foreach (var enumerateFile in Directory.EnumerateFiles(docfxDirectory, "*.*", SearchOption.AllDirectories)
+    //             .Where(file => imageExtensions.Any(ext => file.EndsWith(ext, StringComparison.OrdinalIgnoreCase))))
+    //{
+    //    if (enumerateFile.Replace($"\\{Path.GetFileName(enumerateFile)}", "") != Path.Combine(docfxDirectory, @"static\img"))
+    //    {
+    //        CopyFile(enumerateFile, Path.Combine(docfxDirectory, @"static\img"), true);
+    //    }
+    //}
 
     var allFiles = new Dictionary<string, string?>();
     foreach (var enumerateFile in Directory.EnumerateFiles(docfxDirectory, "*.md", SearchOption.AllDirectories))
@@ -105,73 +105,73 @@ static void RemapFileReferences(string filePath, string imageRegex, string image
     var input = File.ReadAllText(filePath);
     var changed = false;
 
-    foreach (Match match in new Regex($@"(\[!include.*?\()(.*?)(_incl.*?.md)(\)\])", RegexOptions.IgnoreCase).Matches(input))
-    {
-        if (match.Success)
-        {
-            var includeFileName = match.Groups[3].Value.Trim();
+    //    foreach (Match match in new Regex($@"(\[!include.*?\()(.*?)(_incl.*?.md)(\)\])", RegexOptions.IgnoreCase).Matches(input))
+    //    {
+    //        if (match.Success)
+    //        {
+    //            var includeFileName = match.Groups[3].Value.Trim();
 
-            if (allFiles.TryGetValue(includeFileName, out var includeFilePath))
-            {
-                var relativeUri = new Uri(filePath).MakeRelativeUri(new Uri(includeFilePath));
-                var relativePath = Uri.UnescapeDataString(relativeUri.ToString());
+    //            if (allFiles.TryGetValue(includeFileName, out var includeFilePath))
+    //            {
+    //                var relativeUri = new Uri(filePath).MakeRelativeUri(new Uri(includeFilePath));
+    //                var relativePath = Uri.UnescapeDataString(relativeUri.ToString());
 
-                input = input.Replace(match.Groups[0].Value, $"{match.Groups[1].Value}{relativePath})]");
-                changed = true;
-            }
-        }
-    }
+    //                input = input.Replace(match.Groups[0].Value, $"{match.Groups[1].Value}{relativePath})]");
+    //                changed = true;
+    //            }
+    //        }
+    //    }
 
-    foreach (Match match in new Regex($@"(\[!include.*?\()(.*?)(_enum.*?.md)(\)\])", RegexOptions.IgnoreCase).Matches(input))
-    {
-        if (match.Success)
-        {
-            var includeFileName = match.Groups[3].Value.Trim();
+    //    foreach (Match match in new Regex($@"(\[!include.*?\()(.*?)(_enum.*?.md)(\)\])", RegexOptions.IgnoreCase).Matches(input))
+    //    {
+    //        if (match.Success)
+    //        {
+    //            var includeFileName = match.Groups[3].Value.Trim();
 
-            if (allFiles.TryGetValue(includeFileName, out var includeFilePath))
-            {
-                var relativeUri = new Uri(filePath).MakeRelativeUri(new Uri(includeFilePath));
-                var relativePath = Uri.UnescapeDataString(relativeUri.ToString());
+    //            if (allFiles.TryGetValue(includeFileName, out var includeFilePath))
+    //            {
+    //                var relativeUri = new Uri(filePath).MakeRelativeUri(new Uri(includeFilePath));
+    //                var relativePath = Uri.UnescapeDataString(relativeUri.ToString());
 
-                input = input.Replace(match.Groups[0].Value, $"{match.Groups[1].Value}{relativePath})]");
-                changed = true;
-            }
-        }
-    }
+    //                input = input.Replace(match.Groups[0].Value, $"{match.Groups[1].Value}{relativePath})]");
+    //                changed = true;
+    //            }
+    //        }
+    //    }
 
-    foreach (Match match in new Regex($@"(\[!include.*?\()(.*?)(_dialog.*?.md)(\)\])", RegexOptions.IgnoreCase).Matches(input))
-    {
-        if (match.Success)
-        {
-            var includeFileName = match.Groups[3].Value.Trim();
+    //    foreach (Match match in new Regex($@"(\[!include.*?\()(.*?)(_dialog.*?.md)(\)\])", RegexOptions.IgnoreCase).Matches(input))
+    //    {
+    //        if (match.Success)
+    //        {
+    //            var includeFileName = match.Groups[3].Value.Trim();
 
-            if (allFiles.TryGetValue(includeFileName, out var includeFilePath))
-            {
-                var relativeUri = new Uri(filePath).MakeRelativeUri(new Uri(includeFilePath));
-                var relativePath = Uri.UnescapeDataString(relativeUri.ToString());
+    //            if (allFiles.TryGetValue(includeFileName, out var includeFilePath))
+    //            {
+    //                var relativeUri = new Uri(filePath).MakeRelativeUri(new Uri(includeFilePath));
+    //                var relativePath = Uri.UnescapeDataString(relativeUri.ToString());
 
-                input = input.Replace(match.Groups[0].Value, $"{match.Groups[1].Value}{relativePath})]");
-                changed = true;
-            }
-        }
-    }
+    //                input = input.Replace(match.Groups[0].Value, $"{match.Groups[1].Value}{relativePath})]");
+    //                changed = true;
+    //            }
+    //        }
+    //    }
 
-    foreach (Match match in new Regex(imageRegex, RegexOptions.IgnoreCase).Matches(input))
-    {
-        if (match.Success)
-        {
-            var imageFileName = match.Groups[4].Value.Trim();
+    //    foreach (Match match in new Regex(imageRegex, RegexOptions.IgnoreCase).Matches(input))
+    //    {
+    //        if (match.Success)
+    //        {
+    //            var imageFileName = match.Groups[4].Value.Trim();
 
-            if (allImageFiles.TryGetValue(imageFileName, out var imageFilePath))
-            {
-                var relativeUri = new Uri(filePath).MakeRelativeUri(new Uri(imageFilePath));
-                var relativePath = Uri.UnescapeDataString(relativeUri.ToString());
+    //            if (allImageFiles.TryGetValue(imageFileName, out var imageFilePath))
+    //            {
+    //                var relativeUri = new Uri(filePath).MakeRelativeUri(new Uri(imageFilePath));
+    //                var relativePath = Uri.UnescapeDataString(relativeUri.ToString());
 
-                input = input.Replace(match.Groups[0].Value, $"{match.Groups[1].Value}{relativePath}");
-                changed = true;
-            }
-        }
-    }
+    //                input = input.Replace(match.Groups[0].Value, $"{match.Groups[1].Value}{relativePath}");
+    //                changed = true;
+    //            }
+    //        }
+    //    }
 
     foreach (Match match in new Regex(imageSrcRegex, RegexOptions.IgnoreCase).Matches(input))
     {

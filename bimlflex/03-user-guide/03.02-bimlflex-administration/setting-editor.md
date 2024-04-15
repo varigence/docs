@@ -20,7 +20,7 @@ varigenceArticleType: Reference
 
 ## Setting Groups
 
-Settings within the BimlFlex app are organized into categories, **Setting Groups,** such as Azure, Core, DataVault, Snowflake, etc. Each setting group contains settings that share a common purpose or area.
+Settings within the BimlFlex Applicationare organized into categories, **Setting Groups,** such as Azure, Core, DataVault, Snowflake, etc. Each setting group contains settings that share a common purpose or area.
 
 Hovering the mouse pointer over individual settings will display tooltips relating to same, along with brief explanation as to how settings will impact the solution.
 
@@ -50,7 +50,7 @@ Settings that contain required values will be outlined in red.
 
 The buttons in the command bar allow actions to be taken on the setting that is active in the editor.
 
-![BimlFlex App - Settings - Command Bar](../../static/img/bfx-settings-command-bar.png "BimlFlex App - Settings - Command Bar")
+![BimlFlex Application- Settings - Command Bar](../../static/img/bfx-settings-command-bar.png "BimlFlex Application- Settings - Command Bar")
 
 | Icon                                       | Action  | Description                                                                                                  |
 | ------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------ |

@@ -2,6 +2,8 @@
   href: index.md
 - name: Customers
   href: customer.md
+- name: Versions
+  href: versions.md
 - name: Delete Detection
   href: delete-detection.md
 - name: Extension Points
@@ -14,7 +16,5 @@
   href: integration-keys.md    
 - name: Load Parameters
   href: load-parameters.md
-- name: Staged Queries
-  href: staged-query.md
-- name: Versions
-  href: versions.md
+- name: Staged Objects
+  href: staged-objects.md

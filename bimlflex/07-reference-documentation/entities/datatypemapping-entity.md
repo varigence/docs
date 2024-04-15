@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-datatypemappings
+uid: bimlflex-reference-documentation-datatypemapping-entity
 title: BimlFlex Definition for DataTypeMappings
 summary: Documentation of functionality within BimlFlex for DataTypeMappings
 varigenceProduct: BimlFlex

@@ -139,4 +139,4 @@ The following details are shown in this view:
 See the [Objects Editor](xref:bimlflex-object-editor) documentation for additional information on the above fields and more.
 
 > [!IMPORTANT]
-> This is designed for developers/architects who have a strong understanding of SQL. Intellisense and code auto completing and validation are not provided in the BimlFlex App because a direct connection to the data is not supported for security reasons.
+> This is designed for developers/architects who have a strong understanding of SQL. Intellisense and code auto completing and validation are not provided in the BimlFlex Applicationbecause a direct connection to the data is not supported for security reasons.

@@ -23,13 +23,13 @@ More information on ADF here: [ADF Deployment Overview](xref:adf-deployment-ov
 
 ### Data Mappings visualizations and editor for BimlFlex App
 
-The BimlFlex App now supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
+The BimlFlex Applicationnow supports Source to target data mapping visualizations and direct metadata manipulation. This allows easy visualization of the source to target mappings on a column level.
 
-More information on the BimlFlex app here: [Metadata Editors Overview](xref:metadata-editors-overview)
+More information on the BimlFlex Applicationhere: [Metadata Editors Overview](xref:bimlflex-editors-overview)
 
 ### BimlCatalog Operational Reporting in BimlFlex App
 
-The BimlFlex app has been updated with BimlCatalog Operational Reporting capabilities.
+The BimlFlex Applicationhas been updated with BimlCatalog Operational Reporting capabilities.
 
 These reports allow direct access to the logging in the BimlCatalog from the app and help with both development and operational insights
 

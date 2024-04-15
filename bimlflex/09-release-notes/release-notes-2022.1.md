@@ -63,7 +63,7 @@ Additional information here: [BimlFlex 2022 R1 New Features](xref:bimlflex-2022-
 * Added deployable Azure PostgreSQL Linked Service.
 * Added SSIS component Connection using Intellisoft PostgreSQL OLEDB.
 * Added *Generate SQL* command for querying views, querying indexes, and querying column metadata.
-* Updated the BimlFlex App metadata import support to be more robust, including ensuring that SSL property of `connectionstring` was not required.
+* Updated the BimlFlex Applicationmetadata import support to be more robust, including ensuring that SSL property of `connectionstring` was not required.
 
 ### UI Improvements
 
@@ -175,7 +175,7 @@ It is no longer necessary to navigate away if dependent objects are required, as
 
 ### My SQL
 
-* Updated the BimlFlex App metadata import support to be more robust.
+* Updated the BimlFlex Applicationmetadata import support to be more robust.
 
 ### OLEDB SQL Server
 

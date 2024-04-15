@@ -16,7 +16,7 @@ Objects are displayed in a hierarchical **Treeview** on the left Side Navigation
 ![BimlFlex Object Editor](../../static/img/bfx-object-editor-overview.png "BimlFlex Object Editor")
 
 > [!NOTE]
-> Detailed descriptions of all **Object Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-Objects).
+> Detailed descriptions of all **Object Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-object-entity).
 
 Selecting an **Object** with multiple tables will display a secondary list of all editable options within. The user may navigate to the Object editor screen by selecting any **Object** from the displayed list.
 
@@ -51,7 +51,7 @@ The **Details Tab** focuses on general **Object** information and configuration.
 |-|-|-|
 | <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will save the current set of staged changes.  The **Save** button is will only enable if the **Object** has changes staged and there are no major validation issues with the current **Object** properties. |
 | <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Object Dialog](#archive-object-dialog). |
+| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex Applicationand will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Object Dialog](#archive-object-dialog). |
 | <div class="icon-col m-5"><img src="../../static/img/clone-objects.svg" /></div> | Clone | This will bring up [Clone Table Dialog](#clone-table-dialog) that is used primarily in the creation and loading of a Data Mart. |
 | <div class="icon-col m-5"><img src="../../static/img/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Object**.  A [Duplicate Table Dialog](#duplicate-table-dialog) will appear asking for a *Target Table Name* and a new **Object** will be created using all of the selected **Object**'s current properties. |
 | <div class="icon-col m-5"><img src="../../static/img/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Object**. |
@@ -59,7 +59,7 @@ The **Details Tab** focuses on general **Object** information and configuration.
 | <div class="icon-col m-5"><img src="../../static/img/schema-diagram.svg" /></div> | Diagram | This will transition to the [Schema Diagram](xref:bimlflex-schema-diagram) and select the current active **Object**.  See the annotated link for details on use and function.|
 | <div class="icon-col m-5"><img src="../../static/img/target-mappings.svg" /></div> | Lineage | This will transition to the [Data Lineage](xref:bimlflex-data-lineage) and select the current active **Object**.  **Data Lineage** provides and insight to the data linage of the **Object**.  See the annotated link for details on use and function. |
 | <div class="icon-col m-5"><img src="../../static/img/checkbox-indeterminate.svg" /></div> | Excluded | This will determine if the **Object** and its metadata will be exluded along with the rest of the BimlFlex solution. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Object**. This will remove the **Object** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="../../static/img/bimlflex-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Object**. This will remove the **Object** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
 
 ### Additional Dialogs
 
@@ -90,7 +90,7 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 The majority of the SQL Overrides are provided to handle the various scenarios where overrides to the default SQL generated out of the box by BimlFlex.  These fields are to be consider more advanced than the standard use cases and should only be used by a DBA or Architect that is familiar with the SQL required should use the SQL properties.  The ability to inherit **Columns** or other properties are also provide along with the ability to annotate a dependant on another **Object**.
 
 <img
-    src="images/bimlflex-editor-objects-fields-sql-overrides.png"
+    src="../../static/img/bimlflex-editor-objects-fields-sql-overrides.png"
     title="Object Editor SQL Overrides Fields"
 />
 

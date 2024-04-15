@@ -15,6 +15,6 @@ For connections that are configured for Cloud Computing, additional configuratio
 
 A new BimlFlex solution always starts with defining connections to your data sources and targets depending on your intended data solution architecture. The design work commences by importing the objects for the source connection (configured with a `Source System` integration stage).
 
-Connections are created and modified using the [**Connection Editor**](xref:bimlflex-connection-editor) in the [BimlFlex App](xref:metadata-editors-overview).
+Connections are created and modified using the [**Connection Editor**](xref:bimlflex-connection-editor) in the [BimlFlex Application](xref:bimlflex-editors-overview).
 
 BimlFlex supports platforms such as SQL Server, Azure Synapse and Snowflake for the data solution, but can connect to many different data sources.

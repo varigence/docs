@@ -135,9 +135,9 @@ More information on these settings: [BimlFlex-generated SQL Server Data Tool
 * Integration Runtimes can now pass into BLOB Storage and DataLakeStoreGen2 Linked Services.
 * Fixed an issue with `Hash Column` of large Synapse Tables (greater than 500 columns).
 
-More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](xref:bfx-arm-templates)
+More information regarding BimlFlex's handling of ARM Template emissions: [ARM Templates within BimlFlex](xref:bimlflex-arm-templates)
 
-## BimlFlex App Help Sidebar Navigation
+## BimlFlex ApplicationHelp Sidebar Navigation
 
 BimlFlex now features sidebar Help sections for the following editor screens:
 

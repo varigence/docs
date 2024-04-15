@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-connections
+uid: bimlflex-reference-documentation-connection-entity
 title: BimlFlex Definition for Connections
 summary: Documentation of functionality within BimlFlex for Connections
 varigenceProduct: BimlFlex

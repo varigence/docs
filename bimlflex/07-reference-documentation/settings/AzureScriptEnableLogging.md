@@ -13,4 +13,3 @@ When enabled, this feature logs detailed events from Azure Data Factory scripts 
 Notes:
 
 * This setting is part of the *Azure Script* settings category.
-

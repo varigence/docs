@@ -13,4 +13,4 @@ For example, if there is a requirement to deliver a solution for 'Finance' indep
 
 Within a Customer, all metadata is specific to the selected customer. So metadata that is imported or modified for a specific customer will not appear in a different one.
 
-It is easy to switch between the selected customer in BimlFlex. This can be done from the [BimlFlex Toolbar](xref:bimlflex-tour#bimlflex-toolbar).
+It is easy to switch between the selected customer in BimlFlex. This can be done from the [BimlFlex Toolbar](xref:bimlflex-editors-overview#bimlflex-toolbar).

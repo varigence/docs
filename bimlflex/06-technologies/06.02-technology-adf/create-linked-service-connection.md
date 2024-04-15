@@ -16,7 +16,7 @@ In the **Connection Tab** of the [**Connection Editor**](xref:bimlflex-connectio
 If the resulting configuration provided is compatible with a Linked Service, then a *Cloud* setting will appear in the action bar.
 
 <img
-    src="images/bimlflex-connections-connection-tab.png"
+    src="../../static/img/bimlflex-connections-connection-tab.png"
     class="border-image"
     style="border: 1px solid #CCC;"
     title="BimlFlex Connection Tab"
@@ -25,7 +25,7 @@ If the resulting configuration provided is compatible with a Linked Service, the
 After toggling the *Cloud* setting, a tab for Linked Services will appear at the bottom of the form and any available linked services will appear in the *Linked Service Types dropdown*. Select a *Linked Service Type* to configure it.
 
 <img
-    src="images/bimlflex-connections-connection-tab-linked-service.png"
+    src="../../static/img/bimlflex-connections-connection-tab-linked-service.png"
     class="border-image"
     style="border: 1px solid #CCC;"
     title="BimlFlex Linked Services Tab"

@@ -66,7 +66,7 @@ The SQL Server where the BimlFlex metadata databases are deployed requires no sp
 
 The BimlFlex environment requires a metadata database installed/configured and available on SQL Server.
 
-All developers and analysts using either BimlStudio, the BimlFlex app or the Excel-based metadata management plugin need access to and rights to the metadata database. These access rights can be defined through AD accounts or SQL Logins.
+All developers and analysts using either BimlStudio, the BimlFlex Applicationor the Excel-based metadata management plugin need access to and rights to the metadata database. These access rights can be defined through AD accounts or SQL Logins.
 
 The database must be backed up as required in case of database server failures or for rollback requirements
 

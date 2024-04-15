@@ -44,7 +44,7 @@ BimlFlex provides a number of metadata samples, including samples that have a sp
 
 Loading the sample metadata from within BimlFlex is as simple as selecting the snapshot from the *Load Sample Metadata* dropdown menu on the BimlFlex **Dashboard**.
 
-![Databricks Data Vault ADF Selection](../concepts/images/databricks-data-vault-adf.png "Databricks Data Vault ADF Selection")
+![Databricks Data Vault ADF Selection](../../static/img/snowflake-data-vault-adf.png "Databricks Data Vault ADF Selection")
 
 > [!NOTE]
 >More information on the specific creation of Data Marts and Data Vaults:
@@ -87,11 +87,11 @@ BimlFlex will provide all necessary Databricks code, such as table, queries, and
 
 Depending on the selected **Integration Template**, BimlFlex will also generate supporting orchestration artifacts in either SSIS or ADF. But, because the data logistics themselves are running fully on Databricks using Stored Procedures, it is possible to use third party orchestration approaches or tools to direct the overall process.
 
-![Databricks Source Code](../concepts/images/databricks-source-code.png "Databricks Source Code")
+![Databricks Source Code](../../static/img/snowflake-source-code.png "Databricks Source Code")
 
 The output has been configured for Databricks, deployed to Azure Data Factory, and visualized as such:  
 
-![Databricks Solution Output](../concepts/images/databricks-solution-output.png "Databricks Solution Output")
+![Databricks Solution Output](../../static/img/snowflake-solution-output.png "Databricks Solution Output")
 
 Having now generated a solution, which may or may not consist of multiple compute warehouses targeting different batches, the following options may be adjusted:
 

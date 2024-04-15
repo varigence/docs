@@ -11,4 +11,4 @@ Batches are generated into data logistics 'batch' processes that, in turn, start
 
 The degree of parallelism for executing the individual processes can be managed through the batch configuration.
 
-Batches are created and modified using the [**Batch Editor**](xref:bimlflex-batch-editor) in the [BimlFlex App](xref:metadata-editors-overview).
+Batches are created and modified using the [**Batch Editor**](xref:bimlflex-batch-editor) in the [BimlFlex Application](xref:bimlflex-editors-overview).

@@ -17,7 +17,7 @@ Each project requires an [**Integration Template**](xref:bimlflex-metadata-stati
 
 All [**Objects**](xref:bimlflex-object-editor) belonging to the connections configured in the project will be subject to the selected integration template. This means that, for example, if you use a connection as a source that data logistics will be generated for _all_ objects associated with this (source) connection.
 
-Projects are created and edited using the [**Project Editor**](xref:bimlflex-project-editor) in the [BimlFlex App](xref:metadata-editors-overview).
+Projects are created and edited using the [**Project Editor**](xref:bimlflex-project-editor) in the [BimlFlex Application](xref:bimlflex-editors-overview).
 
 In the BimlFlex design workflow, a project is typically the third component to configure - after having created the connections and batch to reference the project to.
 

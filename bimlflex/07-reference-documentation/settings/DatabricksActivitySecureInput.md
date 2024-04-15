@@ -13,4 +13,3 @@ Enable this option to protect sensitive data passed into the Databricks Notebook
 Notes:
 
 * This setting is part of the *Databricks* settings category.
-

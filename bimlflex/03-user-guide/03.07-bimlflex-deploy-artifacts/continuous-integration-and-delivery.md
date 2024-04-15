@@ -102,7 +102,7 @@ Feature options available to the installer:
 
 Please note that the feature options are case sensitive.
 
-Build servers would normally only require installation of the BimlStudio application for the automated build process. The generated artifacts would then be passed to a more static environment for the actual execution of the packages. Only installations where a person interacts with the application for metadata management would normally require the BimlFlex App or the BimlFlex Excel Add-in.
+Build servers would normally only require installation of the BimlStudio application for the automated build process. The generated artifacts would then be passed to a more static environment for the actual execution of the packages. Only installations where a person interacts with the application for metadata management would normally require the BimlFlex Applicationor the BimlFlex Excel Add-in.
 
 Note that running this will not spawn any dialogs nor give any feedback. Verify the installation through the installation logs in the `%temp%` folder or through the `Apps and Features` list.
 

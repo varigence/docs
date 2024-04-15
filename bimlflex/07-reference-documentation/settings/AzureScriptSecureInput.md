@@ -13,4 +13,3 @@ When enabled, input from the Azure Script Activity will not be captured in Azure
 Notes:
 
 * This setting is part of the *Azure Script* settings category.
-

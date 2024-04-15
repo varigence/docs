@@ -15,8 +15,8 @@ varigenceArticleType: Reference
 |----- |--------|-------------|
 | <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the **Objects** and **Columns** modified in the designer.|
 | <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes made to the **Objects** and **Columns** will be discarded.|
-| <div class="icon-col m-5"><img src="images/bimlflex-action-switch.png" /></div> | Columns | Toggle to show the **Columns** for all **Objects** on the canvas, and display the column-level mappings. Any mappings that have an expression or formula applied will display the `fx` label.|
-| <div class="icon-col m-5"><img src="images/bimlflex-action-switch.png" /></div> | Data Types | Toggle to show the **Columns** for all **Objects** on the canvas.|
+| <div class="icon-col m-5"><img src="../../static/img/bimlflex-action-switch.png" /></div> | Columns | Toggle to show the **Columns** for all **Objects** on the canvas, and display the column-level mappings. Any mappings that have an expression or formula applied will display the `fx` label.|
+| <div class="icon-col m-5"><img src="../../static/img/bimlflex-action-switch.png" /></div> | Data Types | Toggle to show the **Columns** for all **Objects** on the canvas.|
 | <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Layout | Reset the way the diagram is rendered on the screen to its default.|
 | <div class="icon-col m-5"><img src="../../static/img/print.svg" /></div> | Print | Creates printable image from the diagram, and opens the Windows print dialog.|
 

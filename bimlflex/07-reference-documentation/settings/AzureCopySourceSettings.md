@@ -13,4 +13,3 @@ Settings enable the customization of how data is read from the source data store
 Notes:
 
 * This setting is part of the *Azure Copy* settings category.
-

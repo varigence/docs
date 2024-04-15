@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-batches
+uid: bimlflex-reference-documentation-batch-entity
 title: BimlFlex Definition for Batches
 summary: Documentation of functionality within BimlFlex for Batches
 varigenceProduct: BimlFlex

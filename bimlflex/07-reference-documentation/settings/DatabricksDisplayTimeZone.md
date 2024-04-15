@@ -13,4 +13,3 @@ Sets the time zone for displaying timestamps in notebooks. This setting does not
 Notes:
 
 * This setting is part of the *Databricks* settings category.
-

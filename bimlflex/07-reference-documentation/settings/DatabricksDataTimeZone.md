@@ -13,4 +13,3 @@ Sets the time zone for loading timestamps in notebooks. This setting does not al
 Notes:
 
 * This setting is part of the *Databricks* settings category.
-

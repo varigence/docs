@@ -13,4 +13,3 @@ The default Azure Subscription Id to use.
 Notes:
 
 * This setting is part of the *Azure* settings category.
-

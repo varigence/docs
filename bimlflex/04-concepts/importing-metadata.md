@@ -97,7 +97,7 @@ The Importable Assets list is read from the Source Connection. Choose items that
 
 ![Import Metadata](../static/img/bimlflex-import-metadata.png "Import Metadata")
 
-Upon clicking the `Import Metadata` button, the metadata will be imported into the BimlFlex app and will be available for review and modeling.
+Upon clicking the `Import Metadata` button, the metadata will be imported into the BimlFlex Applicationand will be available for review and modeling.
 
 ### Verify Imported Metadata
 

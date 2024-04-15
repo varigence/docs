@@ -1,6 +1,6 @@
 ---
 uid: bimlflex-reference-documentation-settings-index
-title: BimlFlex App reference Documentation for Settings
+title: BimlFlex Applicationreference Documentation for Settings
 summary: Documentation on metadata and framework settings within BimlFlex
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
@@ -16,7 +16,7 @@ By changing settings, the produced artifacts can adapt to specific requirements 
 Align these settings with the organizations best practices and environmental requirements.
 
 > [!NOTE]
-> For additional information about using **Settings** in BimlFlex, please refer to the [Settings Editor](xref:bimlflex-settings) documentation.
+> For additional information about using **Settings** in BimlFlex, please refer to the [Settings Editor](xref:bimlflex-setting-editor) documentation.
 
 ## AzCopy
   
@@ -226,6 +226,33 @@ Align these settings with the organizations best practices and environmental req
 |[Append Schema](xref:bimlflex-reference-documentation-setting-AppendSchemaDv) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Determines if the schema is appended to the names of accelerated Data Vault object.|
 |[Display Database Name](xref:bimlflex-reference-documentation-setting-DisplayDatabaseNameDv) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Determines if the database name is displayed in the Data Vault.|
 |[Display Schema Name](xref:bimlflex-reference-documentation-setting-DisplaySchemaNameDv) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Determines if the schema name is displayed in the Data Vault|
+
+## Databricks
+  
+|  <div style="width:200px">Setting</div>  | <div style="width:30px">Type</div> | Description |
+| ---- | ------- | ----------- |
+|[Retry Attempts](xref:bimlflex-reference-documentation-setting-DatabricksActivityRetryAttempts) |![Text Datatype](../static/img/text.svg "Text Datatype")|Number of retry attempts specifies how many times the Data Factory service will attempt to re-run the Databricks Notebook Activity in case of failure.|
+|[Retry Interval](xref:bimlflex-reference-documentation-setting-DatabricksActivityRetryInterval) |![Text Datatype](../static/img/text.svg "Text Datatype")|Retry Interval specifies the amount of time to wait before attempting to retry a failed Databricks Notebook Activity. The interval is defined in seconds. A value of 0 indicates no retries will be attempted. Recommended value is between 30 to 600 seconds for most use-cases.|
+|[Timeout](xref:bimlflex-reference-documentation-setting-DatabricksActivityTimeout) |![Text Datatype](../static/img/text.svg "Text Datatype")|Maximum amount of time that the Azure Data Factory will wait for the Databricks Notebook Activity to complete can run. Default is 12 hours days. Format is in D.HH:MM:SS.|
+|[Secure Input](xref:bimlflex-reference-documentation-setting-DatabricksActivitySecureInput) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Enable this option to protect sensitive data passed into the Databricks Notebook. When this setting is enabled, the input values will be masked and not visible in logs or metadata. This is recommended for passing confidential or sensitive information.|
+|[Secure Output](xref:bimlflex-reference-documentation-setting-DatabricksActivitySecureOutput) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|When enabled, the output of this Databricks Notebook Activity will be securely stored and not visible in activity logs, ensuring sensitive data is protected. Disabling this option may expose sensitive output data in logs.|
+|[Build Output Path](xref:bimlflex-reference-documentation-setting-DatabricksOutputPath) |![Text Datatype](../static/img/text.svg "Text Datatype")|The folder where Databricks files are created upon build.|
+|[Repository Name](xref:bimlflex-reference-documentation-setting-DatabricksRepositoryName) |![Text Datatype](../static/img/text.svg "Text Datatype")|The name of the Repository where the Databricks files are located for runtime.|
+|[Notebook Path](xref:bimlflex-reference-documentation-setting-DatabricksNotebookPath) |![Text Datatype](../static/img/text.svg "Text Datatype")|The folder where the Databricks files are located for runtime.|
+|[Append Notebook Name](xref:bimlflex-reference-documentation-setting-DatabricksAppendNotebookName) |![Text Datatype](../static/img/text.svg "Text Datatype")|The string to append to identified generated Databricks Notebooks.|
+|[Add Sql Comments](xref:bimlflex-reference-documentation-setting-DatabricksAddSqlComments) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Enable this option to include user-defined metadata as SQL comments in your `CREATE TABLE` scripts.|
+|[Use Unity Catalog](xref:bimlflex-reference-documentation-setting-DatabricksUseUnityCatalog) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Specifies if the table create scripts should use `Unity Catalog` or the `LOCATION` clause.|
+|[Use Managed Tables](xref:bimlflex-reference-documentation-setting-DatabricksUseManagedTables) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Specifies if the table create scripts should use `Unity Catalog` or the `LOCATION` clause.|
+|[Use Global Parameters](xref:bimlflex-reference-documentation-setting-DatabricksUseGlobalParameters) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Specifies if the Azure Data Factory will call Databricks Notebooks using Global Parameters.|
+|[Use Temporary Views](xref:bimlflex-reference-documentation-setting-DatabricksUseTemporaryViews) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|When enabled, notebooks will use the `CREATE OR REPLACE TEMPORARY VIEW` SQL statement to store data in memory for quicker access, rather than the `CREATE TABLE IF NOT EXISTS` statement which stores data on disk.|
+|[Add Create Catalog](xref:bimlflex-reference-documentation-setting-DatabricksAddCreateCatalog) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Specifies if the table create scripts should include the `CREATE CATALOG IF NOT EXISTS` statement.|
+|[Add Truncate Notebooks](xref:bimlflex-reference-documentation-setting-DatabricksAddTruncateNotebooks) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Enable to generate notebooks that will truncate all existing tables in the workspace. Recommended for development environments only.|
+|[Add Drop Notebooks](xref:bimlflex-reference-documentation-setting-DatabricksAddDropNotebooks) |![Text Datatype](../static/img/boolean.svg "Boolean Datatype")|Enable to generate notebooks that will drop all existing tables in the workspace. Recommended for development environments only.|
+|[Table Properties](xref:bimlflex-reference-documentation-setting-DatabricksTableProperties) |![Text Datatype](../static/img/text.svg "Text Datatype")|Specifies the table properties to be used for creating tables in Databricks using the CREATE TABLE statement.|
+|[Copy Format Options](xref:bimlflex-reference-documentation-setting-DatabricksCopyFormatOptions) |![Text Datatype](../static/img/text.svg "Text Datatype")|Customize various properties of the file format used during the COPY INTO operation. Properly configuring these options can improve performance and compatibility.|
+|[Copy Options](xref:bimlflex-reference-documentation-setting-DatabricksCopyOptions) |![Text Datatype](../static/img/text.svg "Text Datatype")|Customize `COPY_OPTION` for the COPY INTO operation. The default is COPY_OPTIONS ('mergeSchema' = 'true').|
+|[Display Time Zone](xref:bimlflex-reference-documentation-setting-DatabricksDisplayTimeZone) |![Text Datatype](../static/img/text.svg "Text Datatype")|Sets the time zone for displaying timestamps in notebooks. This setting does not alter the original data but converts displayed timestamps to the chosen time zone for easier interpretation.|
+|[Data Time Zone](xref:bimlflex-reference-documentation-setting-DatabricksDataTimeZone) |![Text Datatype](../static/img/text.svg "Text Datatype")|Sets the time zone for loading timestamps in notebooks. This setting does not alter the original data but converts timestamps to the chosen time zone.|
 
 ## Delete Detection
   

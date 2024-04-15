@@ -8,7 +8,7 @@ varigenceArticleType: Conceptual
 
 # Using Azure PostgreSQL Sources in BimlFlex
 
-This section covers importing metadata from an Azure PostgreSQL ('Postgres') database, so that this metadata becomes available in the BimlFlex app to further generate Azure Data Factory (ADF) and SQL Server Integration Services (SSIS) assets.
+This section covers importing metadata from an Azure PostgreSQL ('Postgres') database, so that this metadata becomes available in the BimlFlex Applicationto further generate Azure Data Factory (ADF) and SQL Server Integration Services (SSIS) assets.
 
 For the purpose of this example, we use an Azure PostgreSQL database server that has been populated with the [AdventureWorks for Postgres Database](https://github.com/lorint/AdventureWorks-for-Postgres).
 

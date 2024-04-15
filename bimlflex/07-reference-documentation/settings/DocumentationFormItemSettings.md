@@ -13,4 +13,3 @@ Specifies JSON code that should be used to customize the settings for each item 
 Notes:
 
 * This setting is part of the *Documentation* settings category.
-

@@ -13,4 +13,3 @@ Override the Default Schema used in the Accelerator for Hub tables.
 Notes:
 
 * This setting is part of the *Data Vault Naming* settings category.
-

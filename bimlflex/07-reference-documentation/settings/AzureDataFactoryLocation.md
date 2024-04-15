@@ -13,4 +13,3 @@ This refers to the geographical location where the Azure Data Factory instance a
 Notes:
 
 * This setting is part of the *Azure* settings category.
-

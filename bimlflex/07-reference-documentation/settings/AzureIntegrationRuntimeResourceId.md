@@ -13,4 +13,3 @@ The Resource Id for the referenced Self Hosted Integration Runtime Linked Servic
 Notes:
 
 * This setting is part of the *Azure* settings category.
-

@@ -11,7 +11,7 @@ These samples support various common use-cases and scenarios and are intended to
 
 For example, samples cover how to load files using [SQL Server Integration Services (SSIS)](xref:bimlflex-ssis-overview), how to implement [delete detection](xref:bimlflex-concepts-delete-detection) to load data into Azure, or how to deliver a [Data Vault](xref:bimlflex-data-vault-index) model on [Snowflake](xref:bimlflex-snowflake-index).
 
-In the [BimlFlex App](xref:metadata-editors-overview), use the **Load Sample Metadata** button in the **Getting Started** pane on the [Dashboard](xref:bimlflex-dashboard) to load sample metadata to the current active **Customer**.
+In the [BimlFlex Application](xref:bimlflex-editors-overview), use the **Load Sample Metadata** button in the **Getting Started** pane on the [Dashboard](xref:bimlflex-dashboard) to load sample metadata to the current active **Customer**.
 
 ![Import Sample Metadata](../../static/img/bimflex-dashboard-import-samples.png "Import Sample Metadata")
 

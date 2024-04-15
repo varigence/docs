@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-parameters
+uid: bimlflex-reference-documentation-parameter-entity
 title: BimlFlex Definition for Parameters
 summary: Documentation of functionality within BimlFlex for Parameters
 varigenceProduct: BimlFlex

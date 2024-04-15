@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-configurations
+uid: bimlflex-reference-documentation-configuration-entity
 title: BimlFlex Definition for Configurations
 summary: Documentation of functionality within BimlFlex for Configurations
 varigenceProduct: BimlFlex
@@ -38,8 +38,8 @@ The BimlFlex [**Configurations**](xref:bimlflex-configuration-editor) allow for 
   
 | <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
-|Customer | Reference to the [**Customer**](xref:bimlflex-application-customers) that this configuration belongs to.|
-|Version | Reference to the [**Version**](xref:bimlflex-version-editor) that this configuration belongs to.|
+|Customer | Reference to the Customer that this configuration belongs to.|
+|Version | Reference to the Version that this configuration belongs to.|
 |Data Type | The data type of the column that is part of the configuration.|
 |Landing Attribute | The Landing Attribute is used to control if a configuration is applied to the landing environment of the solution architecture.|
 |Staging Attribute | The Staging Attribute is used to control if a configuration is applied to the staging environment of the solution architecture.|

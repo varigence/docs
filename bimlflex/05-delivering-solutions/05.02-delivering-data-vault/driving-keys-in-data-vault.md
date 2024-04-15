@@ -192,7 +192,7 @@ Upon selecting the **Link** from the Object editor tree and selecting the **Colu
 
 BimlFlex also allows manual definition of Driving Keys by way of **Column Attributes**.
 This is done be flagging the required **Column** on the LNK with an **Attribute** to indicate that it is the Driving Key.
-The BimlFlex App will automatically enforce a Driving Key relationship on the LSATs associated with the LNK, terminating relationships as needed.
+The BimlFlex Applicationwill automatically enforce a Driving Key relationship on the LSATs associated with the LNK, terminating relationships as needed.
 
 **Objects** => Select LNK => Attributes Tab => [Add]
 

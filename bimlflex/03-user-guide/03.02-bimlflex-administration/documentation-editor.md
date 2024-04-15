@@ -105,7 +105,7 @@ The configuration for the Documentation viewer is defined using a set of interfa
 * **htmlTemplatePath** (optional): Path to the HTML template file used to render the documentation.
 * **useMonacoEditor** (optional): A boolean value that enables or disables the Monaco editor, a popular code editor.
 * **showEmptyFields** (optional): A boolean value that controls whether empty fields are displayed. Set to `true` to show them or `false` to hide them.
-* **propertyOrder** (optional): Defines the order in which properties are displayed. Options are `Default`, `Alphabetical`, `Reverse Alphabetical`, and `BimlFlex App Order`.
+* **propertyOrder** (optional): Defines the order in which properties are displayed. Options are `Default`, `Alphabetical`, `Reverse Alphabetical`, and `BimlFlex ApplicationOrder`.
 * **propertyDisplayMode** (optional): Controls how properties are displayed. Options are `Always`, `Non-Empty`, and `Truthy`.
 * **includeObjectLineageDiagrams** (optional): A boolean value that controls whether to include diagrams depicting object lineage.
 * **includeConnectionSchemaDiagrams** (optional): A boolean value that controls whether to include diagrams depicting connection schemas.
@@ -179,7 +179,7 @@ For instance, for an HTML element like `<div id="config-numConnections"> there a
 
 **Method 2: Using the `allBimlFlexMetadata` Global Variable**
 
-Metadata for the BimlFlex app is stored in a global variable called `allBimlFlexMetadata`, assigned to a JSON object. A simplified structure of the object would be:
+Metadata for the BimlFlex Applicationis stored in a global variable called `allBimlFlexMetadata`, assigned to a JSON object. A simplified structure of the object would be:
 
 ```javascript
 {
@@ -241,7 +241,7 @@ In `index.html` find the following element:
 
 This element is used to store the HTML responsible for creating the landing page for the documentation.
 
-It can be fully customized following the [HTML](#HTML) guide.
+It can be fully customized following the [HTML](#html) guide.
 
 An example of a previous version of the landing page, where values for an entity summary were loaded from a metadata file, would appear with the following structure:
 

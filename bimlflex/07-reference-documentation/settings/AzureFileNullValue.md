@@ -13,4 +13,3 @@ The Null value definition to use for the Azure Data Factory target File Dataset.
 Notes:
 
 * This setting is part of the *Azure* settings category.
-

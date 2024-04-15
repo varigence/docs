@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-versions
+uid: bimlflex-reference-documentation-version-entity
 title: BimlFlex Definition for Versions
 summary: Documentation of functionality within BimlFlex for Versions
 varigenceProduct: BimlFlex
@@ -8,8 +8,8 @@ varigenceArticleType: Reference
 
 # Versions
 
-The BimlFlex [**Version**](xref:bimlflex-concepts-version) concept supports management of changes in metadata over time. These changes are managed in Versions.
-    A Version is part of a BimlFlex [**Customer**](xref:bimlflex-concepts-customer), and a Customer can contain many (one or more) versions of the metadata.
+The Version concept supports management of changes in metadata over time. These changes are managed in Versions.
+    A Version is part of a Customer, and a Customer can contain many (one or more) versions of the metadata.
 
 ## Overview
   

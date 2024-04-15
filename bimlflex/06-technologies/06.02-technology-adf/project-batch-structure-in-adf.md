@@ -7,7 +7,7 @@ varigenceArticleType: Conceptual
 ---
 # Projects and Batch structures for ADF
 
-The BimlFlex [Batch](xref:bimlflex-reference-documentation-Batches) and [Project](xref:bimlflex-reference-documentation-Projects) configuration in the [BimlFlex App](xref:metadata-editors-overview) define the way how data logistics are organized.
+The BimlFlex [Batch](xref:bimlflex-reference-documentation-batch-entity) and [Project](xref:bimlflex-reference-documentation-project-entity) configuration in the [BimlFlex Application](xref:bimlflex-editors-overview) define the way how data logistics are organized.
 
 In BimlFlex, a Batch definition ultimately governs which data logistics processes are executed in the same group or container. A Batch can belong to more than one Project, and Projects themselves can be configured as a hierarchy (using the Parent Project concept).
 

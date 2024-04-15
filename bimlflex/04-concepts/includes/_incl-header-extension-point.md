@@ -5,7 +5,7 @@ summary: Overview of the BimlFlex Extension Point concept.
 varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
-[Extension Points](xref:bimlflex-concepts-extension-points) are one of the key features BimlFlex provides customization to cater for specific scenarios. While the standard templates cover most real-world scenarios, there may be a specific tweak that would improve certain specific requirements. These modifications can be defined using Extension Points, that allow for custom logic to be added to a template at various points in the process.
+[Extension Points](xref:bimlflex-concepts-extensionpoints) are one of the key features BimlFlex provides customization to cater for specific scenarios. While the standard templates cover most real-world scenarios, there may be a specific tweak that would improve certain specific requirements. These modifications can be defined using Extension Points, that allow for custom logic to be added to a template at various points in the process.
 
 It is important to remember that many features and functions available in BimlFlex allow for customisation in a way that does not require Extension Points. For example [Load Parameters](xref:bimlflex-concepts-metadata-parameters), [Settings and Overrides](xref:bimlflex-reference-documentation-settings-index), custom source queries with joins and filters, inherited tables and columns, data type expansions etc. are all available without the need for Extension Points.
 

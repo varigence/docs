@@ -86,9 +86,9 @@ The Accelerator shows available source objects in the left-hand **Treeview** and
 | Publish | Publish the previewed model to the repository to instantiate the entities into the metadata, allowing them to be used in load processes |
 | Project | Select which Data Vault load project should be used when publishing |
 | Settings | Quick View access to settings related to the Data Vault Accelerator |
-| <img src="images/bimlflex-action-switch.png" /> Columns | Toggle to show all columns on the source or preview panes. |
-| <img src="images/bimlflex-action-switch.png" /> Data Types | Toggle to show all data types in the source or preview panes. |
-| <img src="images/bimlflex-action-switch.png" /> Expanded | Toggle to show expanded view (including Satellites) or the backbone of the model (only Hubs and Links) |
+| <img src="../../static/img/bimlflex-action-switch.png" /> Columns | Toggle to show all columns on the source or preview panes. |
+| <img src="../../static/img/bimlflex-action-switch.png" /> Data Types | Toggle to show all data types in the source or preview panes. |
+| <img src="../../static/img/bimlflex-action-switch.png" /> Expanded | Toggle to show expanded view (including Satellites) or the backbone of the model (only Hubs and Links) |
 | Refresh Layout | Re-layout the diagram in the content pane |
 | <div class="icon-col m-5"><img src="../../static/img/print.svg"/></div> | Download the diagram shown in the contents pane in `svg` format |
 

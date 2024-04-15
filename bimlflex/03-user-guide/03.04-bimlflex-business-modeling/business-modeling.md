@@ -100,7 +100,7 @@ The canvas can be restructured by moving tiles across to different swimlanes, or
 | Icon | Action | Description |
 |----- |--------|-------------|
 | <div class="icon-col m-5"><img src="../../static/img/edit.svg" /></div> | Edit | This icon will appear when hovering over the Business Model _name_. The edit screen for the Business Model can be opened from here.|
-| <div class="icon-col m-5"><img src="images/bimlflex-action-switch.png" /></div> | Expanded | Toggle to show smaller tiles with less visible details, allowing more tiles on the screen. The expanded view will also show **Classifications** and **Tags**.|
+| <div class="icon-col m-5"><img src="../../static/img/bimlflex-action-switch.png" /></div> | Expanded | Toggle to show smaller tiles with less visible details, allowing more tiles on the screen. The expanded view will also show **Classifications** and **Tags**.|
 
 ### Editing or Archiving a Business Model
 

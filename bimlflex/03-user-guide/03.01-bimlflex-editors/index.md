@@ -1,26 +1,24 @@
 ---
-uid: metadata-editors-overview
-title: Metadata Editors Overview
+uid: bimlflex-editors-overview
+title: BimlFlex Editors Overview
 summary: Overview of BimlFlex metadata editors with links to BimlFlex tour, dashboard, and editors
 ---
-# BimlFlex App Overview
+# BimlFlex ApplicationOverview
 
 [!include[Connections](../includes/_incl-header-bimlflex-app.md)]
 
-A quick overview of the User Interface elements that make up the BimlFlex App is provided in our [BimlFlex Tour](xref:bimlflex-tour), which demonstrates what features are available and how to navigate to them.
-
-## BimlFlex App Components
+## BimlFlex ApplicationComponents
 
 ### Overviews
 
 | <div style="width:150px">App Feature</div> | Description |
 | --------- | ----------- |
 |[Dashboard](xref:bimlflex-dashboard) | The dashboard provides a quick view of the metadata in the version and contains the most common tasks and navigation options.|
-|[Customers](xref:bimlflex-application-customers) | Customers provide a way to separate different organizations that can each define their own designs and versions thereof.|
+|[Customers](#customer-selection) | Customers provide a way to separate different organizations that can each define their own designs and versions thereof.|
 
 ### Editors
 
-The BimlFlex App contains many editors to make managing the design of your data solution as easy as possible. An overview of the editing functionality covered by the App is provided below.
+The BimlFlex Applicationcontains many editors to make managing the design of your data solution as easy as possible. An overview of the editing functionality covered by the App is provided below.
 
 | <div style="width:150px">App Feature</div> | Description |
 | --------- | ----------- |
@@ -84,11 +82,11 @@ What follows is a quick tour of the various editor elements and how they functio
 
 ### Editor Action Buttons  
 
-The **Editor Action Buttons** list the actions available within the currently selected item or user interface element in BimlFlex. While most areas in the BimlFlex App will show a set of generic action buttons, they are in fact context specific to the currently selected item or element. This means that buttons will be enabled or disabled when appropriate based on the selected element.
+The **Editor Action Buttons** list the actions available within the currently selected item or user interface element in BimlFlex. While most areas in the BimlFlex Applicationwill show a set of generic action buttons, they are in fact context specific to the currently selected item or element. This means that buttons will be enabled or disabled when appropriate based on the selected element.
 
-For example, if tabs are available,  different button (such as 'add') will be available than if a specific metadata element is selected.
+For example, if tabs are available,  different button (such as 'add') will be available than i a specific metadata element is selected.
 
-The Editor Action Buttons are always located on the top of the screen, just under the [BimlFlex Toolbar](xref:bimlflex-tour#bimlflex-toolbar).
+The Editor Action Buttons are always located on the top of the screen, just under the [BimlFlex Toolbar](#bimlflex-toolbar).
 
 | Action | Overview |
 | ----------------- | ---------- |
@@ -102,15 +100,6 @@ The Editor Action Buttons are always located on the top of the screen, just unde
 
 >[!NOTE]
 > In some cases, action buttons will appear greyed out. This indicates these are disabled for the current context.
-
-### Treeview
-
-The [**Treeview**](xref:bimlflex-treeview) provides an overview of existing components relative to the selected editor, and quick access to common features for managing the selected component.
-
-When an editor is opened through the BimlFlex Menu, the default action is to show all components for the selected editor without any filtering applied.
-
->[!TIP]
-> For additional information on the [**Treeview**](xref:bimlflex-treeview), including the **Search** and **Filtering** options, please refer to the [**Treeview Documentation**](xref:bimlflex-treeview).
 
 ### Editor Tabs
 
@@ -217,7 +206,7 @@ With multiple items selected, users may select `Integration Key` from the **Obje
 
 ![Navigational Transitions](../../static/img/bfx-navigation-ui.png "Navigational Transitions")
 
-# BimlFlex Treeview
+# Treeview
 
 The **Treeview** is one of the core ways of navigating through, and interacting with, the design metadata captured in BimlFlex.
 

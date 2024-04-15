@@ -409,7 +409,7 @@ It also supports specifying Project level Parameters that are commonly available
 
 Add Extension Points in BimlStudio.
 
-More information: [BimlFlex Extension Points](xref:bimlflex-concepts-extension-points)
+More information: [BimlFlex Extension Points](xref:bimlflex-concepts-extensionpoints)
 
 ![Create Project Parameter](../static/img/bimlflex-ss-v5-extension-points-create-project-parameter.png "Create Project Parameter")
 

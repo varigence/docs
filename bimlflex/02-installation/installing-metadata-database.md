@@ -9,7 +9,7 @@ varigenceArticleType: Walkthrough
 
 The BimlFlex Database - the core metadata repository database - is used by BimlFlex and BimlStudio to model and build the data solution, and to support the automation.
 
-Modelers, analysts and data team members use the BimlFlex App to model and interact with the metadata. This metadata is written to the BimlFlex metadata repository database. BimlStudio then accesses the metadata by querying the database to provide the development and build experience for creating data warehouse artifacts.
+Modelers, analysts and data team members use the BimlFlex Applicationto model and interact with the metadata. This metadata is written to the BimlFlex metadata repository database. BimlStudio then accesses the metadata by querying the database to provide the development and build experience for creating data warehouse artifacts.
 
 > [!IMPORTANT]
 > The BimlFlex database contains crucial data for the data warehouse automation process. It is important maintain a strict disaster recovery policy for this database.
@@ -81,7 +81,7 @@ Click **Deploy** to deploy the databases
 
 ![Deploying BimlFlex Databases](../static/img/installing-text.png "Deploying BimlFlex Databases")
 
-Once setup completes, configure the BimlFlex Project and BimlFlex App metadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reports to use the **BimlCatalog** database.
+Once setup completes, configure the BimlFlex Project and BimlFlex Applicationmetadata connections to use the new **BimlFlex** database. Configure The project and the Operational Reports to use the **BimlCatalog** database.
 
 ### Command Line/Terminal-Based Setup
 

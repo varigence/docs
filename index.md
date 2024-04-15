@@ -22,11 +22,12 @@ In addition to the support here, we have developed a community at [Bimlscript.co
 
 <a href="bimlflex/index.md"><img src="content/images/bimlflex.png" alt="BimlFlex -h24px"></a>
 
-* [Getting Started with BimlFlex](bimlflex/getting-started/index.md)
+* [Getting Started with BimlFlex](bimlflex/01-getting-started/index.md)
 * [BimlFlex Documentation](bimlflex/index.md)
-* [Reference Documentation](bimlflex/reference-documentation/index.md)
+* [Reference Documentation](bimlflex/07-reference-documentation/index.md)
 
 </div>
+
 <div class="col-md-3">
 
 <a href="bimlstudio/index.md"><img src="content/images/bimlstudio.svg" alt="BimlStudio -h24px"></a>

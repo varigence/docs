@@ -13,4 +13,3 @@ For the Azure Copy Activity, specifies the degree of parallelism that data loadi
 Notes:
 
 * This setting is part of the *Azure Copy* settings category.
-

@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-concepts-extension-points
+uid: bimlflex-concepts-extensionpoints
 title: BimlFlex Extension Points
 summary: Reference documentation on BimlFlex extension points to control directives, inheritance, custom code, and path variables in SSIS packages
 varigenceProduct: BimlFlex
@@ -32,7 +32,7 @@ The target is relative to the Extension Point, and refers to the object name wit
 
 ### Defining scoped Extension Point Targets in the BimlFlex App
 
-The BimlFlex App provides a feature that allows defining a target for an Extension Point for a collection of objects. This is the `ExtensionPointTarget` Attribute, accessible in the Attributes screen within the BimlFlex App.
+The BimlFlex Applicationprovides a feature that allows defining a target for an Extension Point for a collection of objects. This is the `ExtensionPointTarget` Attribute, accessible in the Attributes screen within the BimlFlex App.
 
 ![Extension Point Target Attribute](../static/img/attribute-extension-point-target.png "Extension Point Target Attribute").
 

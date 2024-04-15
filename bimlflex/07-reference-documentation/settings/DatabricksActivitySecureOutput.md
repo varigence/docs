@@ -13,4 +13,3 @@ When enabled, the output of this Databricks Notebook Activity will be securely s
 Notes:
 
 * This setting is part of the *Databricks* settings category.
-

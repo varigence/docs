@@ -13,10 +13,10 @@ Mappings from source to target are defined at column level in BimlFlex, and the 
 
 ## Overview
 
-**Columns** within BimlFlex are displayed in the [**Treeview**](xref:bimlflex-treeview) on the left side-navigation menu. Columns belong to an [**Object**](xref:bimlflex-object-editor), and can be access by opening the object in the treeview or by navigating to the columns tab in the **Object Editor** .
+**Columns** within BimlFlex are displayed in the [**Treeview**](xref:bimlflex-editors-overview#treeview) on the left side-navigation menu. Columns belong to an [**Object**](xref:bimlflex-object-editor), and can be access by opening the object in the treeview or by navigating to the columns tab in the **Object Editor** .
 
 > [!NOTE]
-> Detailed descriptions of all **Column** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-Columns).
+> Detailed descriptions of all **Column** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-column-entity).
 
 From any editor, any instance of the <img class="icon-inline" src="../../static/img/navigate.svg"/> icon will serve as a Global Navigation Transition. Clicking this icon will navigate the user directly to the referenced **Project**, **Connection** or **Object**.
 
@@ -42,14 +42,14 @@ The user may navigate to any column by selecting it from the displayed list.
 |-|-|-|
 | <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | Saves any changes made in the form. The **Save** button will only enabled if there are unsaved changes in the form and no major validation errors. |
 | <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Column**. This will result in the physical removal of the selected record from the BimlFlex Database. The data will no longer be accessible by the BimlFlex app and will require a Database Administrator to restore, if possible. Clicking **Archive** generates an [Archive Column Dialog](#archive-column-dialog).|
+| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Column**. This will result in the physical removal of the selected record from the BimlFlex Database. The data will no longer be accessible by the BimlFlex Applicationand will require a Database Administrator to restore, if possible. Clicking **Archive** generates an [Archive Column Dialog](#archive-column-dialog).|
 | <div class="icon-col m-5"><img src="../../static/img/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Column**. Clicking the **Duplicate** button will cause a [Duplicate Column Dialog](#duplicate-column-dialog) to appear. The new **Column** will be created using all of the selected **Column**'s current properties. |
 | <div class="icon-col m-5"><img src="../../static/img/checkbox-indeterminate.svg" /></div> | Excluded | This will determine if the **Column** will be excluded from processing and validation along with the rest of the solution. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
-|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="images/bimlflex-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Column**. This will remove the **Column** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
+|<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="../../static/img/bimlflex-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Column**. This will remove the **Column** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
 
 ## Column Details
 
-Detailed reference documentation on each of the fields in the column editor is found in the [Reference Documentation](xref:bimlflex-reference-documentation-Columns). A brief overview will be provided here.
+Detailed reference documentation on each of the fields in the column editor is found in the [Reference Documentation](xref:bimlflex-reference-documentation-column-entity). A brief overview will be provided here.
 
 The column editor is organized in three different groups.
 

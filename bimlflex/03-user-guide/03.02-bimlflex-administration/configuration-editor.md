@@ -11,12 +11,12 @@ varigenceArticleType: Reference
 
 ## Overview
 
-<img class="icon-inline" src="../../static/img/configurations.svg" /> **Configurations** can be found under Administration in the BimlFlex App menu.
+<img class="icon-inline" src="../../static/img/configurations.svg" /> **Configurations** can be found under Administration in the BimlFlex Applicationmenu.
 
 ![BimlFlex Configuration Editor](../../static/img/bfx-configurations-editor-overview.png "BimlFlex Configuration Editor")
 
 > [!NOTE]
-> Detailed descriptions of all **Configuration Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-Configurations).
+> Detailed descriptions of all **Configuration Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-configuration-entity).
 
 ## Action Buttons
 

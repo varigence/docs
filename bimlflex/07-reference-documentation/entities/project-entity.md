@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-reference-documentation-projects
+uid: bimlflex-reference-documentation-project-entity
 title: BimlFlex Definition for Projects
 summary: Documentation of functionality within BimlFlex for Projects
 varigenceProduct: BimlFlex

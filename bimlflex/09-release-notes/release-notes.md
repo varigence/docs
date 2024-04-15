@@ -54,7 +54,7 @@ The Trigger feature supports Tumbling Window and Scheduled triggers to be create
 
 ### Extension Points
 
-* Added various Script Activity related Extension Points, including Snowflake Scale Up and Down, Snowflake Create Stage, Staging Area, and Data Vault processing. Additional information is found in the updated [Extension Point documentation](xref:bimlflex-concepts-extension-points)
+* Added various Script Activity related Extension Points, including Snowflake Scale Up and Down, Snowflake Create Stage, Staging Area, and Data Vault processing. Additional information is found in the updated [Extension Point documentation](xref:bimlflex-concepts-extensionpoints)
 
 ### Connections
 
@@ -67,7 +67,7 @@ The Trigger feature supports Tumbling Window and Scheduled triggers to be create
 ### Various Application Improvements
 
 * Added improved support for metadata import from a DB2 source using OLEDB. This resolves a few known issues, most importantly a syntax problem related to a missing DATA_COMPRESSION statement
-* Various metadata editor components of the BimlFlex App now have updated icons representing the technology that applies. For example, connections display an icon representing the system type they are configured for. **Projects** and **Batches** show an icon representing the integration template they are associated with. This provides an easy visual reminder of the technology used in the connection
+* Various metadata editor components of the BimlFlex Applicationnow have updated icons representing the technology that applies. For example, connections display an icon representing the system type they are configured for. **Projects** and **Batches** show an icon representing the integration template they are associated with. This provides an easy visual reminder of the technology used in the connection
 
 ### Azure Data Factory (ADF)
 

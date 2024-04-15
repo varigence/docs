@@ -52,7 +52,7 @@ The developers in Team A create a Project for the CRM ingestion in the metadata.
 
 The developers in Team A Switch on the `Use My Exclusions` feature in the BimlFlex app. Once this is completed, they both set the Finance project as Excluded. Team B does the same but excludes the 'CRM project Team A is working on.
 
-The BimlFlex app will only display the relevant source Projects for the members in the respective development teams, allowing them to work in the same Customer at the same time.
+The BimlFlex Applicationwill only display the relevant source Projects for the members in the respective development teams, allowing them to work in the same Customer at the same time.
 
 The developers within each Team collaborate and communicate on their respective responsibilities, the start with importing the metadata from the source together and then start modeling of the source in grouped iterations. They use the **Model Grouping** feature of the source Objects to divide the work up in smaller deliverables.
 

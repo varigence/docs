@@ -13,4 +13,3 @@ Override the Default Schema used in the `Create Bridge` dialog.
 Notes:
 
 * This setting is part of the *Data Vault Naming* settings category.
-

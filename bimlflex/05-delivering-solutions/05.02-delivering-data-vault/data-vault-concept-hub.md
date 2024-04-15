@@ -104,7 +104,7 @@ By default, BimlFlex will add the following **Columns** to a Hub. These are not 
 * [Record Source](xref:bimlflex-data-vault-best-practices#record-source)
 * [Audit Id](xref:bimlflex-data-vault-best-practices#audit-id)
 
-Columns such as these are defined in the BimlFlex [**Configurations**](xref:bimlflex-configuration-editor). The **Configurations** screen in the BimlFlex App enables modelers to define which **Columns** apply to certain **Object Types**. For a **Column** to be added to the Hub, the **Configuration** will need to be configured so that the *Hub Attribute* is set to be `Derived`.
+Columns such as these are defined in the BimlFlex [**Configurations**](xref:bimlflex-configuration-editor). The **Configurations** screen in the BimlFlex Applicationenables modelers to define which **Columns** apply to certain **Object Types**. For a **Column** to be added to the Hub, the **Configuration** will need to be configured so that the *Hub Attribute* is set to be `Derived`.
 
 If additional standard **Columns** are required for the Hub, then these are recommended to be implemented as **Configurations**.
 

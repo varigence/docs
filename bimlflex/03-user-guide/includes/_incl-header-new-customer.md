@@ -13,7 +13,7 @@ A customer can contain multiple [**Versions**](xref:bimlflex-version-editor) to 
 
 A customer can have multiple versions of metadata. An initial version is created for a new customer.
 
-Use the **New Customer Button** in the BimlFlex App to add the customer to the BimlFlex database.
+Use the **New Customer Button** in the BimlFlex Applicationto add the customer to the BimlFlex database.
 
 ![Create Customer](../../static/img/bimlflex-ss-v5-app-create-customer.png "Create Customer")
 

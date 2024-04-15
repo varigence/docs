@@ -13,8 +13,8 @@ Versions can be used to manage changes in metadata, for example to develop certa
 
 Additional information on how versions are used in a concurrent development and DevOps context is available in the [build and deployment sections](xref:bimlflex-concurrent-development).
 
-In the [BimlFlex App](xref:metadata-editors-overview), there are options to manage versions for a selected Customer. This can be done in the Administration section in the application, using the [Version Editor](xref:bimlflex-version-editor).
+In the [BimlFlex Application](xref:bimlflex-editors-overview), there are options to manage versions for a selected Customer. This can be done in the Administration section in the application, using the [Version Editor](xref:bimlflex-version-editor).
 
-You can switch between versions directly in the [BimlFlex Toolbar](xref:bimlflex-tour#bimlflex-toolbar), or in the [Database Settings](xref:bimlflex-application-database-settings) menu.
+You can switch between versions directly in the [BimlFlex Toolbar](xref:bimlflex-editors-overview#bimlflex-toolbar), or in the [Database Settings](xref:bimlflex-application-database-settings) menu.
 
 In addition to regular versioning as described in this section, BimlFlex internally also records history of changes within each version so that a full audit trail is always available.

@@ -109,7 +109,7 @@ Hint: don’t use SQL Merge
 
 BimlFlex automates the ELT SQL code for both performance and Synapse compatibility. The default architecture is an insert-only Data Vault (that doesn't use SQL Merge statements). It is also possible to define end-dating for some or all tables as required. This will update existing rows when new rows are added, still without using SQL Merge statements.
 
-BimlFlex recommends using Point in Time tables to maintain timelines instead of end-dating individual Satellites in the Data Vault. These are automatically created through the BimlFlex App and the table definitions and the load code is automatically generated.
+BimlFlex recommends using Point in Time tables to maintain timelines instead of end-dating individual Satellites in the Data Vault. These are automatically created through the BimlFlex Applicationand the table definitions and the load code is automatically generated.
 
 ## 9. Optimize Resource Class
 

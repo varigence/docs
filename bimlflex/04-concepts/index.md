@@ -36,5 +36,5 @@ Irrespective of the design of the data solution architecture, there are many opt
 
 * [Using Hashing in BimlFlex](xref:bimlflex-concepts-hashing)
 * [Working with BimlFlex Parameters](xref:bimlflex-concepts-metadata-parameters)
-* [Define Custom Behavior Using Extension Points](xref:bimlflex-concepts-extension-points)
+* [Define Custom Behavior Using Extension Points](xref:bimlflex-concepts-extensionpoints)
 * [BimlFlex Delete Detection](xref:bimlflex-concepts-delete-detection)

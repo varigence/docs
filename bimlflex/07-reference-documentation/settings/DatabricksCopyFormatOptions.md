@@ -13,4 +13,3 @@ Customize various properties of the file format used during the COPY INTO operat
 Notes:
 
 * This setting is part of the *Databricks* settings category.
-

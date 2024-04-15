@@ -77,7 +77,7 @@ SELECT * FROM [BFX_ODS].[awlt].[Product] WHERE [Name] <> 'Test Cycle' -- Should 
 
 ### Configure Project Parameters and Metadata for STG and PSA
 
-Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough). For information on how to manipulate metadata see the [Metadata Editors Overview](xref:metadata-editors-overview).
+Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough). For information on how to manipulate metadata see the [Metadata Editors Overview](xref:bimlflex-editors-overview).
 
 ### Accelerate and Publish Stage and Persisted-Stage Metadata
 
@@ -172,7 +172,7 @@ At this point, the DV can be configured to work with ETL or ELT. For ETL choose 
 
 ### Model Data Vault Metadata
 
-Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough). For information on how to manipulate metadata see the [Metadata Editors Overview](xref:metadata-editors-overview).
+Objects, Columns, Parameters, and Attributes may need to be modified. For examples of changes that can be made see the [First Project Walkthrough](xref:bimlflex-getting-started-first-project-walkthrough). For information on how to manipulate metadata see the [Metadata Editors Overview](xref:bimlflex-editors-overview).
 
 ### Accelerate and Publish
 

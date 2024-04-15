@@ -15,4 +15,3 @@ Provides backwards compatibility when set to an empty string. For new implementa
 Notes:
 
 * This setting is part of the *Core* settings category.
-

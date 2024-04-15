@@ -13,4 +13,3 @@ Customize `COPY_OPTION` for the COPY INTO operation. The default is COPY_OPTIONS
 Notes:
 
 * This setting is part of the *Databricks* settings category.
-

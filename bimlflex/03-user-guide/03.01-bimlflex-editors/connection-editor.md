@@ -11,17 +11,17 @@ varigenceArticleType: Reference
 
 ## Overview
 
-The following sections describe the User Interface elements of the **Connection Editor**, and how they are used to author and manage BimlFlex **Connections**. Detailed descriptions of each component is also available in the [reference documentation covering connections](xref:bimlflex-reference-documentation-Connections).
+The following sections describe the User Interface elements of the **Connection Editor**, and how they are used to author and manage BimlFlex **Connections**. Detailed descriptions of each component is also available in the [reference documentation covering connections](xref:bimlflex-reference-documentation-connection-entity).
 
 <img
-    src="images/bimlflex-editor-connections.png"
+    src="../../static/img/bimlflex-editor-connections.png"
     class="border-image"
     style="border: 1px solid #CCC;"
     title="Connections Editor"
 />
 
 > [!NOTE]
-> Detailed descriptions of all **Connection Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-Connections).
+> Detailed descriptions of all **Connection Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-connection-entity).
 
 The **Connection Editor** contains four main tabs that can be used to modify connection details, as well as various properties and settings related to the **Objects** that are associated with the selected connection.
 
@@ -38,9 +38,9 @@ The **Connection Tab** is the first tab in the **Connection Editor**, and it is 
 |<div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the **Connection** from the active metadata repository, and move it to the metadata archive. Clicking **Archive** displays the [Archive Connection Dialog](#archive-connection-dialog).|
 | <div class="icon-col m-5"><img src="../../static/img/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Connection**.  A [Duplicate Connection Dialog](#duplicate-connection-dialog) will appear asking for a *Connection Name*. A new **Connection** will be created using most of the selected **Connection**'s current properties (except **Attributes** and **Parameters**).|
 | <div class="icon-col m-5"><img src="../../static/img/import-metadata.svg"/></div> | Import Metadata | Import Metadata using the configured connection details. For more information please refer to the [importing metadata section](xref:bimlflex-concepts-importing-metadata). |
-| <img src="images/bimlflex-action-switch.png" /> | Cloud | When enabled, this allows the configuration of Linked Services. This only applies to Azure Data Factory (ADF) deployments.|
+| <img src="../../static/img/bimlflex-action-switch.png" /> | Cloud | When enabled, this allows the configuration of Linked Services. This only applies to Azure Data Factory (ADF) deployments.|
 | <div class="icon-col m-5"><img src="../../static/img/checkbox-indeterminate.svg" /></div> | Excluded | This will determine if the **Connection** and its associated entities will be excluded along with the rest of the solution. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
-| <img src="images/bimlflex-action-switch.png" /> | Deleted | This will soft-delete the selected **Connection**.  This will remove the **Connection** and all associated entities from processing and validation.|
+| <img src="../../static/img/bimlflex-action-switch.png" /> | Deleted | This will soft-delete the selected **Connection**.  This will remove the **Connection** and all associated entities from processing and validation.|
 
 ### Linked Services
 

@@ -13,4 +13,3 @@ Specify the powerfulness of the Azure Copy Activity executor. Value can be 2-256
 Notes:
 
 * This setting is part of the *Azure Copy* settings category.
-

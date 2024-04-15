@@ -13,7 +13,7 @@ varigenceArticleType: Walkthrough
 The following installers are available:
 
 * **BimlFlex Developer Installation**  
-    This installer includes all parts of the product framework and is suited for modelers, who use the BimlFlex App for modeling and developers, who build the solution in BimlStudio and test the resulting packages in Visual Studio
+    This installer includes all parts of the product framework and is suited for modelers, who use the BimlFlex Applicationfor modeling and developers, who build the solution in BimlStudio and test the resulting packages in Visual Studio
 * **BimlFlex Runtime Installation**  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
@@ -67,7 +67,7 @@ Run the installer to install the applications.
 1. The main feature page allows choosing the applications and features to install.  
     For a BimlFlex developer installation, pick all. Also check to install new, or upgrade existing, databases and projects
 1. Pick BimlFlex features to install  
-    BimlFlex App: Install the BimlFlex app as the main metadata management solution
+    BimlFlex App: Install the BimlFlex Applicationas the main metadata management solution
     Excel Add-in: Add the matching bitness for the installed version of Excel
 1. Pick BimlStudio features to install  
     For most developer installations, choose to install both 32-bit and 64-bit versions

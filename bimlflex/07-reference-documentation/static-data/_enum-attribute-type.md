@@ -15,9 +15,9 @@ The following options are available:
 
 | Attribute Type  | Code | Description                          |
 | --------------- | ---- | ------------------------------------ |
-| Batch           | BAT  | A [**Batch**](xref:bimlflex-reference-documentation-Batches) in the BimlFlex App.      |
-| Column          | COL  | A [**Column**](xref:bimlflex-reference-documentation-Columns) in the BimlFlex App.     |
-| Connection      | CON  | A [**Connection**](xref:bimlflex-reference-documentation-Connections) in the BimlFlex App. |
-| Customer        | CUS  | A [**Customer**](xref:bimlflex-reference-documentation-Customers) in the BimlFlex App.   |
-| Object          | OBJ  | An [**Object**](xref:bimlflex-reference-documentation-Objects) in the BimlFlex App.    |
-| Project         | PRJ  | A [**Project**](xref:bimlflex-reference-documentation-Projects) in the BimlFlex App.    |
+| Batch           | BAT  | A [**Batch**](xref:bimlflex-reference-documentation-batch-entity) in the BimlFlex App.      |
+| Column          | COL  | A [**Column**](xref:bimlflex-reference-documentation-column-entity) in the BimlFlex App.     |
+| Connection      | CON  | A [**Connection**](xref:bimlflex-reference-documentation-connection-entity) in the BimlFlex App. |
+| Customer        | CUS  | A [**Customer**](xref:bimlflex-reference-documentation-customer-entity) in the BimlFlex App.   |
+| Object          | OBJ  | An [**Object**](xref:bimlflex-reference-documentation-object-entity) in the BimlFlex App.    |
+| Project         | PRJ  | A [**Project**](xref:bimlflex-reference-documentation-project-entity) in the BimlFlex App.    |
