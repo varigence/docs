@@ -11,7 +11,7 @@ varigenceArticleType: Reference
 
 ## Overview
 
-<img class="icon-col m-5" src="../../static/img/settings.svg" /> **Settings** can be found under Administration in the application menu.
+<img class="icon-col m-5" src="../../static/svg/settings.svg" /> **Settings** can be found under Administration in the application menu.
 
 > [!NOTE]
 > The [Settings Reference Documentation](xref:bimlflex-reference-documentation-settings-index) serves as a complete guide for all settings available in the BimlFlex App.
@@ -54,8 +54,8 @@ The buttons in the command bar allow actions to be taken on the setting that is 
 
 | Icon                                       | Action  | Description                                                                                                  |
 | ------------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------ |
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div>    | Save    | This will save any changes displayed in the Settings editor. The **Save** button is only enabled if there are changes in the form. |
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div>    | Save    | This will save any changes displayed in the Settings editor. The **Save** button is only enabled if there are changes in the form. |
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
 
 ## Setting Overrides
 
@@ -72,7 +72,7 @@ The setting overrides are presented in a grid view, and overrides can be selecte
 
 ### Adding a Setting Override
 
-To add a setting override, click <img class="icon-col m-5" src="../../static/img/add.svg" /> Add in the top right of the overrides section, and fill out the **Add Setting Override** form.
+To add a setting override, click <img class="icon-col m-5" src="../../static/svg/add.svg" /> Add in the top right of the overrides section, and fill out the **Add Setting Override** form.
 
 ![Adding a setting override](../../static/img/bfx-setting-editor-overrides.png "Adding a setting override")
 

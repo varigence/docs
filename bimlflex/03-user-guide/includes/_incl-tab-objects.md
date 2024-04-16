@@ -11,22 +11,22 @@ The following options are available:
 
 | Icon| Action| Description|
 | ----| ----- | ---------- |
-| <div class="icon-col m-5"><img src="../../static/img/add.svg" /></div>            | <span class="nowrap-col m-5">Add</span>     | *Add* will create a new **Object**. Clicking *Add* will open an [Add Object Dialog](#add-object-dialog).|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | *Save* will save the currently set of staged changes. The *Save button* is only enabled if any **Object** has changes staged and when there are no validation issues.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | This will *Discard* any unsaved changes and revert to last saved details.|
+| <div class="icon-col m-5"><img src="../../static/svg/add.svg" /></div>            | <span class="nowrap-col m-5">Add</span>     | *Add* will create a new **Object**. Clicking *Add* will open an [Add Object Dialog](#add-object-dialog).|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | *Save* will save the currently set of staged changes. The *Save button* is only enabled if any **Object** has changes staged and when there are no validation issues.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | This will *Discard* any unsaved changes and revert to last saved details.|
 
 When checking a single **Object** in the overview two additional options will become visible. When selecting two or more objects only the Archive option will be visible.
 
 | Icon| Action| Description|
 | ----| ----- | ---------- |
-|<div class="icon-col m-5" ><img src="../../static/img/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>| *Archive* will remove the **Object** from the active metadata repository, and move it to the metadata archive. Clicking **Archive** will create an [Archive Object Dialog](#archive-object-dialog).|
-|<div class="icon-col m-5" ><img src="../../static/img/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an Edit Object Dialog to edit the currently selected **Object**. After edits are complete, be sure to click the **Save** button to confirm the changes.|
+|<div class="icon-col m-5" ><img src="../../static/svg/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>| *Archive* will remove the **Object** from the active metadata repository, and move it to the metadata archive. Clicking **Archive** will create an [Archive Object Dialog](#archive-object-dialog).|
+|<div class="icon-col m-5" ><img src="../../static/svg/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an Edit Object Dialog to edit the currently selected **Object**. After edits are complete, be sure to click the **Save** button to confirm the changes.|
 
 ### Additional Dialogs
 
 #### Add Object Dialog
 
-Creates a new **Object**. Once entry is finished ensure that the <img class="icon-inline" src="../../static/img/save.svg" /> *Save* button is clicked.
+Creates a new **Object**. Once entry is finished ensure that the <img class="icon-inline" src="../../static/svg/save.svg" /> *Save* button is clicked.
 
 <img
     src="../../static/img/bimlflex-dialog-add-object.png"
@@ -83,7 +83,7 @@ From the **Objects Tab**, it is possible to navigate directly to the following a
 
 | Item             | Action                                                               |
 | ---------------- | -------------------------------------------------------------------- |
-| Project Value   | Navigate to the [**Project Editor**](xref:bimlflex-project-editor) by clicking <img class="icon-inline" src="../../static/img/navigate.svg style="width: 18px"/>       |
+| Project Value   | Navigate to the [**Project Editor**](xref:bimlflex-project-editor) by clicking <img class="icon-inline" src="../../static/svg/navigate.svg style="width: 18px"/>       |
 | Object Value     | Navigate to the [**Object Editor**](xref:bimlflex-object-editor), selecting the clicked **Object**|
 
 > [!NOTE]

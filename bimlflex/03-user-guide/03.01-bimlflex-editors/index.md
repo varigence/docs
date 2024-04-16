@@ -68,7 +68,7 @@ Additional information on the Customer feature is available in the [Customer Con
 
 The BimlFlex Menu provides quick navigation to the available editors and modeling tools. The menu is dynamic and automatically expands and hides based on the current size of the application window.
 
-If the menu is hidden, for example due to the size of the BimlFlex window or screen resolution, you can use the **Collapse** <img class="icon-inline" src="../../static/img/expanded.svg"/> icons annotated below to open or close the menu.
+If the menu is hidden, for example due to the size of the BimlFlex window or screen resolution, you can use the **Collapse** <img class="icon-inline" src="../../static/svg/expanded.svg"/> icons annotated below to open or close the menu.
 
 ![BimlFlex Menu](../../static/img/bfx-navigation-menu-01.png "BimlFlex Menu")
 
@@ -146,7 +146,7 @@ The checkbox, or Boolean, field can be turned on or off. When the checkbox has b
 
 The long text string field can be resized by dragging the adjustment corner in the field. It also include an editor dialog with enhanced features for when a lot of information needs to be entered.
 
-The editor dialog is accessed by clicking the <img class="icon-inline" src="../../static/img/edit.svg"/> icon when the long text string field is in focus.
+The editor dialog is accessed by clicking the <img class="icon-inline" src="../../static/svg/edit.svg"/> icon when the long text string field is in focus.
 
 ![Editor Dialog Button](../../static/img/dialog-editor-button.64566.png "Editor Dialog Button")
 
@@ -163,9 +163,9 @@ When changes are complete, click the '**Ok**' button to keep the changes that ha
 
 ### Table  
 
-Table content is provided when an entity features some complex logic and should be edited through a dialog box. New items can be entered entered via the <img class="icon-inline" src="../../static/img/add.svg"/> **Add** button.
+Table content is provided when an entity features some complex logic and should be edited through a dialog box. New items can be entered entered via the <img class="icon-inline" src="../../static/svg/add.svg"/> **Add** button.
 
-Existing items can be edited by selecting a row and then using the <img class="icon-inline" src="../../static/img/edit.svg"/> **Edit** button.
+Existing items can be edited by selecting a row and then using the <img class="icon-inline" src="../../static/svg/edit.svg"/> **Edit** button.
 
 #### Table Content
 
@@ -184,7 +184,7 @@ Values can be edited by double-clicking the desired property.
 
 All grid views support sorting and filtering. Sorting can be done by clicking on the grid header, and repeat clicking will change the sorting direction.
 
-Hovering over the header will show the <img class="icon-inline" src="../../static/img/filter-clear.svg"/> **Filter** button. Clicking this opens the filter dialog.
+Hovering over the header will show the <img class="icon-inline" src="../../static/svg/filter-clear.svg"/> **Filter** button. Clicking this opens the filter dialog.
 
 ![Filter Dialog](../../static/img/bfx-filter-dialog.png "Filter Dialog")
 
@@ -195,7 +195,7 @@ Hovering over the header will show the <img class="icon-inline" src="../../stati
 
 BimlFlex features the ability to navigate directly to another component whenever it is referenced by a table or form. 
 
-Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor. Click the <img class="icon-inline" src="../../static/img/navigate.svg"/> icon for global navigation to any entity within the project.
+Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor. Click the <img class="icon-inline" src="../../static/svg/navigate.svg"/> icon for global navigation to any entity within the project.
 Every navigable entity within the  will have such an icon.
 
 BimlFlex features a checkbox UI system for any list of items being viewed. Highlight over a single item, and a checkbox will appear on the left. If selected, checkboxes will appear for all items in the list.
@@ -214,18 +214,18 @@ The treeview is a context-sensitive visual representation of the relationships b
 
 ![BimlFlex Treeview](../../static/img/bfx-treeview.png "BimlFlex Treeview")
 
-In the treeview, the total number of items within an individual component will be displayed next to the object name. The treeview is expandable/collapsible by clicking the <img class="icon-inline" src="../../static/img/expanded.svg"/> icons.
+In the treeview, the total number of items within an individual component will be displayed next to the object name. The treeview is expandable/collapsible by clicking the <img class="icon-inline" src="../../static/svg/expanded.svg"/> icons.
 
-Any instance of the <img class="icon-inline" src="../../static/img/navigate.svg"/> icon will serve as a Global Navigation Transition.
+Any instance of the <img class="icon-inline" src="../../static/svg/navigate.svg"/> icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Project**, **Connection** or **Object**.
 
 The treeview side-panel contains a number of buttons and features that can be interacted with:
 
 | Icon | Action | Description |
 |-|-|-| 
-| <div class="icon-col m-5"><img src="../../static/img/add.svg"/></div> | Add | **Add** will create a new entity. The exact entity depends on which editor is active. |
-| <div class="icon-col m-5"><img src="../../static/img/expanded.svg"/></div> | Collapse | *Collapse* will cycle through the the various supported modes the Entity List can have.  Options are Full Panel, Split Panels, and Hidden. |
-| <div class="icon-col m-5"><img src="../../static/img/collapsed.svg"/></div> | Expand | *Expand* will cycle through the the various supported modes the Entity List can have.  Options are Hidden, Split Panels, and Full Panel. |
+| <div class="icon-col m-5"><img src="../../static/svg/add.svg"/></div> | Add | **Add** will create a new entity. The exact entity depends on which editor is active. |
+| <div class="icon-col m-5"><img src="../../static/svg/expanded.svg"/></div> | Collapse | *Collapse* will cycle through the the various supported modes the Entity List can have.  Options are Full Panel, Split Panels, and Hidden. |
+| <div class="icon-col m-5"><img src="../../static/svg/collapsed.svg"/></div> | Expand | *Expand* will cycle through the the various supported modes the Entity List can have.  Options are Hidden, Split Panels, and Full Panel. |
 
 ## Context Sensitive
 

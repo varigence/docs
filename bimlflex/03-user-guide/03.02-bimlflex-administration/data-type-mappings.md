@@ -44,9 +44,9 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 
 |Icon|Action|Description|
 |-|-|-|
-|<div class="icon-col m-5"><img src="../../static/img/save.svg" /></div>|<span class="nowrap-col m-5">Save</span>|This will save the current set of staged changes.  The **Save** button is only enabled if the **Data Type Mapping** has changes staged and there are no major validation issues with the current **Data Type Mapping** properties.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-|<div class="icon-col m-5"><img src="../../static/img/datatype-mappings.svg" /></div>|<span class="nowrap-col m-5">Apply Data Type Mappings</span>|Brings up the [Apply Data Type Mappings Dialog](#apply-data-type-mappings-dialog) to apply all **Data Type Mappings** to a specified `Record Source`.  Note that this is the complete set of **Data Type Mappings** and not just the record that was previously selected.|
+|<div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div>|<span class="nowrap-col m-5">Save</span>|This will save the current set of staged changes.  The **Save** button is only enabled if the **Data Type Mapping** has changes staged and there are no major validation issues with the current **Data Type Mapping** properties.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+|<div class="icon-col m-5"><img src="../../static/svg/datatype-mappings.svg" /></div>|<span class="nowrap-col m-5">Apply Data Type Mappings</span>|Brings up the [Apply Data Type Mappings Dialog](#apply-data-type-mappings-dialog) to apply all **Data Type Mappings** to a specified `Record Source`.  Note that this is the complete set of **Data Type Mappings** and not just the record that was previously selected.|
 |<div class="icon-col m-5"><img src="../../static/img/bimlflex-action-switch.png" /></div>|<span class="nowrap-col m-5">Deleted</span>|This will soft delete the currently selected **Data Type Mapping**.  This will remove the **Data Type Mapping** from all processing and it will be excluded from all validation.|
 
 [//]: # (TODO: Find a switch SVG to use for Deleted)

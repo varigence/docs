@@ -11,7 +11,7 @@ varigenceArticleType: Reference
 
 ## Overview
 
-<img class="icon-inline" src="../../static/img/configurations.svg" /> **Configurations** can be found under Administration in the BimlFlex Applicationmenu.
+<img class="icon-inline" src="../../static/svg/configurations.svg" /> **Configurations** can be found under Administration in the BimlFlex Applicationmenu.
 
 ![BimlFlex Configuration Editor](../../static/img/bfx-configurations-editor-overview.png "BimlFlex Configuration Editor")
 
@@ -24,8 +24,8 @@ The action buttons modify the **Configuration** that is active in the editor.
 
 | Icon | Action | Description |
 | ---- | ------ | ----------- |
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will save any changes displayed in the **Configurations** editor.  The **Save** button is only enabled if there are changes in the editor.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | **Discard** any unsaved changes and revert to last saved form.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will save any changes displayed in the **Configurations** editor.  The **Save** button is only enabled if there are changes in the editor.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | **Discard** any unsaved changes and revert to last saved form.|
 
 ## Configuration Editor Overview
 
@@ -107,10 +107,10 @@ Compared to adding a new override there are additional options when editing an e
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the override.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the override will be discarded.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the override from the active metadata repository, and move it to the metadata archive.|
-| <div class="icon-col m-5"><img src="../../static/img/duplicate-objects.svg" /></div> | Duplicate | Allows to make a copy of the selected override. A new dialog will be shown to provide a new unique name for the new override and modify its details.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the override.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the override will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the override from the active metadata repository, and move it to the metadata archive.|
+| <div class="icon-col m-5"><img src="../../static/svg/duplicate-objects.svg" /></div> | Duplicate | Allows to make a copy of the selected override. A new dialog will be shown to provide a new unique name for the new override and modify its details.|
 
 ### Using the Attribute Editor
 

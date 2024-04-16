@@ -90,7 +90,7 @@ The Accelerator shows available source objects in the left-hand **Treeview** and
 | <img src="../../static/img/bimlflex-action-switch.png" /> Data Types | Toggle to show all data types in the source or preview panes. |
 | <img src="../../static/img/bimlflex-action-switch.png" /> Expanded | Toggle to show expanded view (including Satellites) or the backbone of the model (only Hubs and Links) |
 | Refresh Layout | Re-layout the diagram in the content pane |
-| <div class="icon-col m-5"><img src="../../static/img/print.svg"/></div> | Download the diagram shown in the contents pane in `svg` format |
+| <div class="icon-col m-5"><img src="../../static/svg/print.svg"/></div> | Download the diagram shown in the contents pane in `svg` format |
 
 ### Content mini-map
 

@@ -99,7 +99,7 @@ The canvas can be restructured by moving tiles across to different swimlanes, or
 
 | Icon | Action | Description |
 |----- |--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/edit.svg" /></div> | Edit | This icon will appear when hovering over the Business Model _name_. The edit screen for the Business Model can be opened from here.|
+| <div class="icon-col m-5"><img src="../../static/svg/edit.svg" /></div> | Edit | This icon will appear when hovering over the Business Model _name_. The edit screen for the Business Model can be opened from here.|
 | <div class="icon-col m-5"><img src="../../static/img/bimlflex-action-switch.png" /></div> | Expanded | Toggle to show smaller tiles with less visible details, allowing more tiles on the screen. The expanded view will also show **Classifications** and **Tags**.|
 
 ### Editing or Archiving a Business Model
@@ -185,9 +185,9 @@ The following options are available:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the Business Entity.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the Business Entity will be discarded.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the Business Entity from the active metadata repository, and move it to the metadata archive.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the Business Entity.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the Business Entity will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the Business Entity from the active metadata repository, and move it to the metadata archive.|
 
 ##### Attributes Tab
 
@@ -204,16 +204,16 @@ The following options are available:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/add.svg" /></div> | Add | Open the **Business Attribute Editor** to create a new Business Attribute, which will be added to the selected Business Entity.|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the Business Attribute in the overview.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the Business Attribute in the overview will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/add.svg" /></div> | Add | Open the **Business Attribute Editor** to create a new Business Attribute, which will be added to the selected Business Entity.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the Business Attribute in the overview.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the Business Attribute in the overview will be discarded.|
 
 When checking a single Business Attribute in the overview two additional options will become visible. When selecting two or more Business Attributes only the *Archive* option will be visible.
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/edit.svg" /></div> | Edit | Open the **Business Attribute Editor** to modify and existing Business Attribute. This will only be visible when selecting a single Business Attribute in the overview.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the Business Attribute from the active metadata repository, and move it to the metadata archive.|
+| <div class="icon-col m-5"><img src="../../static/svg/edit.svg" /></div> | Edit | Open the **Business Attribute Editor** to modify and existing Business Attribute. This will only be visible when selecting a single Business Attribute in the overview.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the Business Attribute from the active metadata repository, and move it to the metadata archive.|
 
 In the overview, the Business Entity properties in the table below are editable directly. Other properties require opening of the **Business Attribute Editor**.
 
@@ -236,16 +236,16 @@ The following options are available:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/add.svg" /></div> | Add | Open the **Business Entity Relationship Editor** to create a new relationship between two Business Entities.|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the relationship in the overview.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the relationship in the overview will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/add.svg" /></div> | Add | Open the **Business Entity Relationship Editor** to create a new relationship between two Business Entities.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the relationship in the overview.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the relationship in the overview will be discarded.|
 
 When checking a single relationship in the overview two additional options will become visible. When selecting two or more relationships only the *Archive* option will be visible.
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/edit.svg" /></div> | Edit | Open the **Business Entity Relationship Editor** to modify and existing relationships. This will only be visible when selecting a single relationship in the overview.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the relationship that exists between two Business Entities, and keep the Business Entities intact otherwise.|
+| <div class="icon-col m-5"><img src="../../static/svg/edit.svg" /></div> | Edit | Open the **Business Entity Relationship Editor** to modify and existing relationships. This will only be visible when selecting a single relationship in the overview.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the relationship that exists between two Business Entities, and keep the Business Entities intact otherwise.|
 
 In the overview, the relationship properties in the table below are editable directly. These properties can also be edited via the **Business Entity Relationship Editor**.
 
@@ -257,7 +257,7 @@ In the overview, the relationship properties in the table below are editable dir
 
 #### Business Entity Side Panel
 
-The side panel can be opened by clicking on the panel icon (<img src="../../static/img/right-sidenav-toggle.svg width="2%" height="2%" />) on the **Business Model Canvas**, or by selecting `Details` from the Business Entity tile ellipsis menu.
+The side panel can be opened by clicking on the panel icon (<img src="../../static/svg/right-sidenav-toggle.svg width="2%" height="2%" />) on the **Business Model Canvas**, or by selecting `Details` from the Business Entity tile ellipsis menu.
 
 ![Editing a Business Entity in the side panel](../../static/img/business-modeling-business-entity-side-panel.png "Editing a Business Entity in the side panel")
 
@@ -265,11 +265,11 @@ The following controls are available to operate the side panel:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/nav-collapsed.svg" /></div> | Collapse | This will hide the side panel.|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the Business Entity.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the Business Entity will be discarded.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the Business Entity from the active metadata repository, and move it to the metadata archive.|
-| <div class="icon-col m-5"><img src="../../static/img/pin.svg" /></div> | Pin | The side navigation panel can be pinned and unpinned from the **Business Model Canvas**, depending if the user wants to keep it visible or not.|
+| <div class="icon-col m-5"><img src="../../static/svg/nav-collapsed.svg" /></div> | Collapse | This will hide the side panel.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the Business Entity.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the Business Entity will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the Business Entity from the active metadata repository, and move it to the metadata archive.|
+| <div class="icon-col m-5"><img src="../../static/svg/pin.svg" /></div> | Pin | The side navigation panel can be pinned and unpinned from the **Business Model Canvas**, depending if the user wants to keep it visible or not.|
 
 The side panel enables editing of the main Business Entity properties:
 
@@ -307,19 +307,19 @@ The following controls are available when creating a new Business Attribute usin
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the Business Attribute.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the Business Attribute will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the Business Attribute.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the Business Attribute will be discarded.|
 
 If an existing Business Attribute is edited, for example by clicking on the name on the Attributes Tab then two additional options are shown:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the Business Attribute from the active metadata repository, and move it to the metadata archive.|
-| <div class="icon-col m-5"><img src="../../static/img/duplicate-objects.svg" /></div> | Duplicate | Allows to make a copy of the selected Business Attribute. A new dialog will be shown to provide a new unique name for the new Business Attribute.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the Business Attribute from the active metadata repository, and move it to the metadata archive.|
+| <div class="icon-col m-5"><img src="../../static/svg/duplicate-objects.svg" /></div> | Duplicate | Allows to make a copy of the selected Business Attribute. A new dialog will be shown to provide a new unique name for the new Business Attribute.|
 
 #### Business Entity Relationship Editor
 
-The **Business Entity Relationship Editor** is accessed by double-clicking on a Business Entity tile on the **Business Model Canvas** and navigating to the Relationships Tab. The editor can be opened by clicking on the `Add` (<img src="../../static/img/add.svg width="2%" height="2%" />) button.
+The **Business Entity Relationship Editor** is accessed by double-clicking on a Business Entity tile on the **Business Model Canvas** and navigating to the Relationships Tab. The editor can be opened by clicking on the `Add` (<img src="../../static/svg/add.svg width="2%" height="2%" />) button.
 
 ![Business Entity Relationship Editor](../../static/img/business-modeling-relationship-editor.png "Business Entity Relationship Editor")
 
@@ -337,12 +337,12 @@ The following controls are available:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the Business Attribute.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the Business Attribute will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the Business Attribute.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the Business Attribute will be discarded.|
 
 ### Creating an Event Matrix from the Business Model Canvas
 
-Clicking the **Event Details** button (<img src="../../static/img/__events.svg width="2%" height="2%" />) in the lower-right corner of a Business Entity that has been classified as an `Event` Entity Type will navigate to the **Event Matrix** for that Business Entity. 
+Clicking the **Event Details** button (<img src="../../static/svg/__events.svg width="2%" height="2%" />) in the lower-right corner of a Business Entity that has been classified as an `Event` Entity Type will navigate to the **Event Matrix** for that Business Entity. 
 
 If no **Event Matrix** exists yet one will be created.
 
@@ -367,7 +367,7 @@ When an **Event Matrix** is created, a supporting **Business Model Diagram** wil
 
 The **Event Matrix** works the same way as the **Business Model Canvas**, and it is possible to add and remove Business Entities by interacting with the canvas.
 
-The name of the **Event Matrix** will be displayed in the top-left corner of the canvas. Similar to the **Business Model Canvas**, hovering over the name will display the Edit icon (<img src="../../static/img/edit.svg width="2%" height="2%" />). 
+The name of the **Event Matrix** will be displayed in the top-left corner of the canvas. Similar to the **Business Model Canvas**, hovering over the name will display the Edit icon (<img src="../../static/svg/edit.svg width="2%" height="2%" />). 
 
 Either clicking on the name or Edit icon will open the **Event Matrix Editor**.
 
@@ -379,9 +379,9 @@ The following controls are available:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the **Event Matrix**.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the **Event Matrix** will be discarded.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the **Event Matrix** from the active metadata repository, and move it to the metadata archive. It will no longer be visible as part of the Business Model.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the **Event Matrix**.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the **Event Matrix** will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the **Event Matrix** from the active metadata repository, and move it to the metadata archive. It will no longer be visible as part of the Business Model.|
 
 The following properties of the **Event Matrix** can be edited here:
 
@@ -417,9 +417,9 @@ The following controls are available:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the **Business Model Diagram**.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the **Business Model Diagram** will be discarded.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the **Business Model Diagram** from the active metadata repository, and move it to the metadata archive. It will no longer be visible as part of the Business Model.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the **Business Model Diagram**.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the **Business Model Diagram** will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the **Business Model Diagram** from the active metadata repository, and move it to the metadata archive. It will no longer be visible as part of the Business Model.|
 
 The following properties of the **Business Model Diagram** can be edited here:
 
@@ -432,7 +432,7 @@ The following properties of the **Business Model Diagram** can be edited here:
 
 ### Editing or Archiving a Business Model Diagram
 
-Editing the **Business Model Diagram** configuration works the same way as the **Business Model Canvas** and **Event Matrix**. The name of the **Business Model Diagram** will be displayed in the top-left corner of the canvas. Hovering over the name will display the Edit icon (<img src="../../static/img/edit.svg width="2%" height="2%" />).
+Editing the **Business Model Diagram** configuration works the same way as the **Business Model Canvas** and **Event Matrix**. The name of the **Business Model Diagram** will be displayed in the top-left corner of the canvas. Hovering over the name will display the Edit icon (<img src="../../static/svg/edit.svg width="2%" height="2%" />).
 
 Either clicking on the name or Edit icon will open the **Business Model Diagram Editor**.
 
@@ -444,9 +444,9 @@ The following controls are available:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the **Business Model Diagram**.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the **Business Model Diagram** will be discarded.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the **Business Model Diagram** from the active metadata repository, and move it to the metadata archive. It will no longer be visible as part of the Business Model.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the **Business Model Diagram**.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the **Business Model Diagram** will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the **Business Model Diagram** from the active metadata repository, and move it to the metadata archive. It will no longer be visible as part of the Business Model.|
 
 The following properties of the **Business Model Diagram** can be edited here:
 
@@ -465,13 +465,13 @@ Business Entities can be moved around the canvas by dragging and dropping each i
 
 #### Diagram Overview
 
-It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the **Expand Overview** icon (<img src="../../static/img/expand-toggle-blue.svg width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.
+It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the **Expand Overview** icon (<img src="../../static/svg/expand-toggle-blue.svg width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.
 
 #### Using the Treeview
 
 If a Business Entity already exists, but is not yet part of the diagram it can be added using the **Treeview** feature. The treeview contains an overview of Business Entities organized by **Entity Type**. By checking or unchecking a Business Entity it can be added or removed from the diagram.
 
-The treeview is represented as a side panel on the left of the main diagram canvas, but by default it is in a collapsed state. It can be accessed by clicking on the `Expand` icon (<img src="../../static/img/expanded.svg width="2%" height="2%" />).
+The treeview is represented as a side panel on the left of the main diagram canvas, but by default it is in a collapsed state. It can be accessed by clicking on the `Expand` icon (<img src="../../static/svg/expanded.svg width="2%" height="2%" />).
 
 ![Diagram Treeview](../../static/img/business-modeling-diagram-treeview.png "Diagram Treeview")
 
@@ -504,11 +504,11 @@ The following controls are available to operate this side panel:
 
 | Icon | Action | Description |
 |----|-|--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/nav-collapsed.svg" /></div> | Collapse | This will hide the side panel.|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the relationship.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes to the relationship will be discarded.|
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | Archive will remove the relationship from the active metadata repository, and move it to the metadata archive.|
-| <div class="icon-col m-5"><img src="../../static/img/pin.svg" /></div> | Pin | The side navigation panel can be pinned and unpinned from the **Business Model Diagram**, depending if the user wants to keep it visible or not.|
+| <div class="icon-col m-5"><img src="../../static/svg/nav-collapsed.svg" /></div> | Collapse | This will hide the side panel.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the relationship.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes to the relationship will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | Archive will remove the relationship from the active metadata repository, and move it to the metadata archive.|
+| <div class="icon-col m-5"><img src="../../static/svg/pin.svg" /></div> | Pin | The side navigation panel can be pinned and unpinned from the **Business Model Diagram**, depending if the user wants to keep it visible or not.|
 
 The side panel enables editing of the following relationship properties:
 

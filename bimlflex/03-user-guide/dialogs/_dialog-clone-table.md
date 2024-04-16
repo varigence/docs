@@ -9,7 +9,7 @@ The most common use case for using the clone feature is to create a Data Mart ta
 > [!NOTE]
 > Please refer to the [**Data Mart**](xref:bimlflex-data-delivery-index) section for more information on delivering data using Data Marts and Dimensional Models.
 
-When cloning an object, please provide the intended *Target Schema*, choose your *Target Object Type*, set your [Clone Table Options](#clone-table-options) and click <img class="icon-inline" src="../../static/img/save.svg" /> **Save**.
+When cloning an object, please provide the intended *Target Schema*, choose your *Target Object Type*, set your [Clone Table Options](#clone-table-options) and click <img class="icon-inline" src="../../static/svg/save.svg" /> **Save**.
 
 ![Clone Table Dialog - mtb-20-image](../../static/img/bimlflex-dialog-clone-table.png "Clone Table Dialog")
 

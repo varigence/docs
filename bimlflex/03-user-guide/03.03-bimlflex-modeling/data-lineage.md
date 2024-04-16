@@ -19,17 +19,17 @@ The screenshot above shows the mapping from a source Object to the various targe
 
 | Icon | Action | Description |
 |----- |--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will persist changed made to the **Objects** and **Columns** modified in the designer.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | Pending changes made to the **Objects** and **Columns** will be discarded.|
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will persist changed made to the **Objects** and **Columns** modified in the designer.|
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | Pending changes made to the **Objects** and **Columns** will be discarded.|
 | <div class="icon-col m-5"><img src="../../static/img/bimlflex-action-switch.png" /></div> | Columns | Toggle to show the **Columns** for all **Objects** on the canvas, and display the column-level mappings. Any mappings that have an expression or formula applied will display the `fx` label.|
 | <div class="icon-col m-5"><img src="../../static/img/bimlflex-action-switch.png" /></div> | Data Types | Toggle to show the **Columns** for all **Objects** on the canvas.|
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Layout | Reset the way the diagram is rendered on the screen to its default.|
-| <div class="icon-col m-5"><img src="../../static/img/print.svg" /></div> | Print | Creates printable image from the diagram, and opens the Windows print dialog.|
-| <div class="icon-col m-5"><img src="../../static/img/right-sidenav-toggle.svg" /></div> | Expand Side Panel | Opens the Side Panel that enables editing of selected **Objects**, **Columns** and **Relationships**. This is context-aware, visible fields will depend on the selected item on the canvas.
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Layout | Reset the way the diagram is rendered on the screen to its default.|
+| <div class="icon-col m-5"><img src="../../static/svg/print.svg" /></div> | Print | Creates printable image from the diagram, and opens the Windows print dialog.|
+| <div class="icon-col m-5"><img src="../../static/svg/right-sidenav-toggle.svg" /></div> | Expand Side Panel | Opens the Side Panel that enables editing of selected **Objects**, **Columns** and **Relationships**. This is context-aware, visible fields will depend on the selected item on the canvas.
 
 ## Overview
 
-It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the **Expand Overview** icon (<img src="../../static/img/expand-toggle-blue.svg width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.
+It is possible to show a smaller **Overview** when working with large models. You can open this overview by clicking the **Expand Overview** icon (<img src="../../static/svg/expand-toggle-blue.svg width="2%" height="2%" />)in the top-right corner of the canvas. The **Overview** can be used to navigate the model quickly by dragging and zooming in the **Overview**.
 
 On the canvas, you can zoom in and out using the mouse scroll button to get a higher level view as well. When the details become too small due to zooming out, BimlFlex will hide these and display the objects instead.
 
@@ -56,8 +56,8 @@ The following options are available:
 
 | Icon | Action | Description |
 |----- |--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/edit.svg" /></div> | Object Details | This open the [Object Side Panel](xref:bimlflex-data-lineage#object-side-panel), which will allow modification of various **Object** details.|
-| <div class="icon-col m-5"><img src="../../static/img/show-related.svg"/></div> | Show All Mappings | Add the **Objects** to the canvas that have a mapping to, or from, the selected **Object**. If incoming or outgoing related objects are added depends on the **Integration Stage** of the **Connection** that the selected object is associated with. Please refer to [Treeview Interaction](xref:bimlflex-data-lineage#treeview-interaction) for more details. |
+| <div class="icon-col m-5"><img src="../../static/svg/edit.svg" /></div> | Object Details | This open the [Object Side Panel](xref:bimlflex-data-lineage#object-side-panel), which will allow modification of various **Object** details.|
+| <div class="icon-col m-5"><img src="../../static/svg/show-related.svg"/></div> | Show All Mappings | Add the **Objects** to the canvas that have a mapping to, or from, the selected **Object**. If incoming or outgoing related objects are added depends on the **Integration Stage** of the **Connection** that the selected object is associated with. Please refer to [Treeview Interaction](xref:bimlflex-data-lineage#treeview-interaction) for more details. |
 
 ### Object Side Panel
 
@@ -73,7 +73,7 @@ Clicking on the ellipsis for any column will show the column-level action option
 
 | Icon | Action | Description |
 |----- |--------|-------------|
-| <div class="icon-col m-5"><img src="../../static/img/edit.svg" /></div> | Column Details | This open the [Column Side Panel](xref:bimlflex-data-lineage#column-side-panel), which will allow modification of various **Column** details.|
+| <div class="icon-col m-5"><img src="../../static/svg/edit.svg" /></div> | Column Details | This open the [Column Side Panel](xref:bimlflex-data-lineage#column-side-panel), which will allow modification of various **Column** details.|
 
 ### Column Side Panel
 

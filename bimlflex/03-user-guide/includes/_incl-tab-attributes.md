@@ -14,16 +14,16 @@ The following options are available:
 
 | Icon | Action | Description |
 | ---- | ------ | ----------- |
-| <div class="icon-col m-5"><img src="../../static/img/add.svg" /></div> | <span class="nowrap-col m-5">Add</span> | **Add** will create a new **Attribute** and assign it to the current entity.  When adding an attribute via this button, *Attribute Type* and the respective linked fields, will be pre-filled on the created [Add Attribute Dialog](#add-attribute-dialog). |
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Attribute** has changes staged and there are no major validation issues with the current list of **Attribute** properties.                                                                                                                                              |
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form.|
+| <div class="icon-col m-5"><img src="../../static/svg/add.svg" /></div> | <span class="nowrap-col m-5">Add</span> | **Add** will create a new **Attribute** and assign it to the current entity.  When adding an attribute via this button, *Attribute Type* and the respective linked fields, will be pre-filled on the created [Add Attribute Dialog](#add-attribute-dialog). |
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div>           | <span class="nowrap-col m-5">Save</span>    | **Save** will save the currently set of staged changes.  The **Save** button is only enabled if any **Attribute** has changes staged and there are no major validation issues with the current list of **Attribute** properties.                                                                                                                                              |
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form.|
 
 When checking a single **Attribute** in the overview two additional options will become visible. When selecting two or more attributes only the Archive option will be visible.
 
 | Icon| Action| Description|
 | ----| ----- | ---------- |
-|<div class="icon-col m-5" ><img src="../../static/img/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex Applicationand will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog).|
-|<div class="icon-col m-5" ><img src="../../static/img/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Attribute Dialog](#edit-attribute-dialog) to edit the currently selected **Attribute**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
+|<div class="icon-col m-5" ><img src="../../static/svg/archive-delete.svg" /></div>|<span class="nowrap-col m-5">Archive</span>|**Archive** will hard delete the selected **Attribute**.  This will result in the physical removal of the selected record from the BimlFlex database.  The data will no longer be accessible by the BimlFlex Applicationand will require a Database Administrator to restore. Clicking **Archive** will create an [Archive Attribute Dialog](#archive-attribute-dialog).|
+|<div class="icon-col m-5" ><img src="../../static/svg/edit.svg" /></div>|<span class="nowrap-col m-5">Edit</span>|**Edit** will open an [Edit Attribute Dialog](#edit-attribute-dialog) to edit the currently selected **Attribute**.  After edits are complete, be sure to click the **Save** button to confirm the changes.|
 
 ### Additional Dialogs  
 
@@ -31,7 +31,7 @@ When checking a single **Attribute** in the overview two additional options will
 
 #### Edit Attribute Dialog
 
-Edit the selected **Attribute**.  Once entry is finished ensure that the <img class="icon-inline" src="../../static/img/save.svg" /> **Save** button is clicked.
+Edit the selected **Attribute**.  Once entry is finished ensure that the <img class="icon-inline" src="../../static/svg/save.svg" /> **Save** button is clicked.
 
 <img
     src="../../static/img/bimlflex-dialog-edit-attribute.png"
@@ -78,6 +78,6 @@ From the **Attribute Tab**, it is possible to navigate directly to the following
 
 | Item | Action |
 | ---- | ------ |
-| Object Value | Navigate to the [**Object Editor**](xref:bimlflex-object-editor), by clicking <img class="icon-inline" src="../../static/img/navigate.svg style="width: 18px"/> |
+| Object Value | Navigate to the [**Object Editor**](xref:bimlflex-object-editor), by clicking <img class="icon-inline" src="../../static/svg/navigate.svg style="width: 18px"/> |
 | Column Value | Navigate to [**Column Editor**](xref:bimlflex-column-editor), selecting clicked **Column** |
 | Attribute Value | Navigate to [**Attribute Editor**](xref:bimlflex-attribute-editor), selecting clicked **Attribute** |

@@ -24,11 +24,11 @@ Selecting an **Object** with a single table will immediately navigate the user t
 
 ![BimlFlex Object Editor - List](../../static/img/bfx-object-editor-listview.png "BimlFlex Object Editor - List")
 
-The treeview for **Objects** is expandable/collapsible by clicking the <img class="icon-inline" src="../../static/img/expanded.svg"/>icons.
+The treeview for **Objects** is expandable/collapsible by clicking the <img class="icon-inline" src="../../static/svg/expanded.svg"/>icons.
 
 Selecting the checkbox(es) icon will enable users to bulk archive multiple **Objects** at one time.
 
-Any instance of the <img class="icon-inline" src="../../static/img/navigate.svg"/>  icon will serve as a Global Navigation Transition.
+Any instance of the <img class="icon-inline" src="../../static/svg/navigate.svg"/>  icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
 
 Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
@@ -49,16 +49,16 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 |Icon|Action|Description|
 |-|-|-|
-| <div class="icon-col m-5"><img src="../../static/img/save.svg" /></div> | Save | This will save the current set of staged changes.  The **Save** button is will only enable if the **Object** has changes staged and there are no major validation issues with the current **Object** properties. |
-| <div class="icon-col m-5"><img src="../../static/img/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
-| <div class="icon-col m-5"><img src="../../static/img/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex Applicationand will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Object Dialog](#archive-object-dialog). |
-| <div class="icon-col m-5"><img src="../../static/img/clone-objects.svg" /></div> | Clone | This will bring up [Clone Table Dialog](#clone-table-dialog) that is used primarily in the creation and loading of a Data Mart. |
-| <div class="icon-col m-5"><img src="../../static/img/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Object**.  A [Duplicate Table Dialog](#duplicate-table-dialog) will appear asking for a *Target Table Name* and a new **Object** will be created using all of the selected **Object**'s current properties. |
-| <div class="icon-col m-5"><img src="../../static/img/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Object**. |
-| <div class="icon-col m-5"><img src="../../static/img/accelerator.svg" /></div> | Accelerate | This will transition to the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator) and select the current active **Object**.  See the annotated link for details on use and function.|
-| <div class="icon-col m-5"><img src="../../static/img/schema-diagram.svg" /></div> | Diagram | This will transition to the [Schema Diagram](xref:bimlflex-schema-diagram) and select the current active **Object**.  See the annotated link for details on use and function.|
-| <div class="icon-col m-5"><img src="../../static/img/target-mappings.svg" /></div> | Lineage | This will transition to the [Data Lineage](xref:bimlflex-data-lineage) and select the current active **Object**.  **Data Lineage** provides and insight to the data linage of the **Object**.  See the annotated link for details on use and function. |
-| <div class="icon-col m-5"><img src="../../static/img/checkbox-indeterminate.svg" /></div> | Excluded | This will determine if the **Object** and its metadata will be exluded along with the rest of the BimlFlex solution. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
+| <div class="icon-col m-5"><img src="../../static/svg/save.svg" /></div> | Save | This will save the current set of staged changes.  The **Save** button is will only enable if the **Object** has changes staged and there are no major validation issues with the current **Object** properties. |
+| <div class="icon-col m-5"><img src="../../static/svg/discard.svg" /></div> | Discard | This will **Discard** any unsaved changes and revert to last saved form. |
+| <div class="icon-col m-5"><img src="../../static/svg/archive-delete.svg" /></div> | Archive | This will hard delete the selected **Object**.  This will result in the physical removal of the selected record from the metadata database.  The data will no longer be accessible by the BimlFlex Applicationand will require a Database Administrator to restore, if possible. Clicking **Archive** creates an [Archive Object Dialog](#archive-object-dialog). |
+| <div class="icon-col m-5"><img src="../../static/svg/clone-objects.svg" /></div> | Clone | This will bring up [Clone Table Dialog](#clone-table-dialog) that is used primarily in the creation and loading of a Data Mart. |
+| <div class="icon-col m-5"><img src="../../static/svg/duplicate-objects.svg" /></div> | Duplicate | This will create a duplicate of the selected **Object**.  A [Duplicate Table Dialog](#duplicate-table-dialog) will appear asking for a *Target Table Name* and a new **Object** will be created using all of the selected **Object**'s current properties. |
+| <div class="icon-col m-5"><img src="../../static/svg/refresh.svg" /></div> | Refresh | This will trigger a refresh of the metadata for the selected **Object**. |
+| <div class="icon-col m-5"><img src="../../static/svg/accelerator.svg" /></div> | Accelerate | This will transition to the [Data Vault Accelerator](xref:bimlflex-data-vault-accelerator) and select the current active **Object**.  See the annotated link for details on use and function.|
+| <div class="icon-col m-5"><img src="../../static/svg/schema-diagram.svg" /></div> | Diagram | This will transition to the [Schema Diagram](xref:bimlflex-schema-diagram) and select the current active **Object**.  See the annotated link for details on use and function.|
+| <div class="icon-col m-5"><img src="../../static/svg/target-mappings.svg" /></div> | Lineage | This will transition to the [Data Lineage](xref:bimlflex-data-lineage) and select the current active **Object**.  **Data Lineage** provides and insight to the data linage of the **Object**.  See the annotated link for details on use and function. |
+| <div class="icon-col m-5"><img src="../../static/svg/checkbox-indeterminate.svg" /></div> | Excluded | This will determine if the **Object** and its metadata will be exluded along with the rest of the BimlFlex solution. This is designed to be paired with the `Use My Exclusions (Locally)` global setting to allow for multiple developers to work on different functional areas without deleting or globally excluding entities. |
 |<div class="icon-col m-5" style="width:30px; height:30px;background:#EEE;"><img style="filter: brightness(100%) contrast(95%) grayscale(100%);" src="../../static/img/bimlflex-action-switch.png" /></div>|Deleted|This will soft delete the currently selected **Object**. This will remove the **Object** and all associated entities from processing and validation. For information on how to add excluded or deleted items back to the scope, please read our [tips and tricks section](xref:bimlflex-tips-and-tricks-overview#restoring-an-excluded-or-deleted-entity).|
 
 ### Additional Dialogs
