@@ -1,8 +1,0 @@
-- name: Overview
-  href: index.md
-- name: Using SQL Server Data Tools (SSDT)
-  href: ssdt-project.md  
-- name: Concurrent Development
-  href: concurrent-development.md
-- name: Continuous Integration and Delivery
-  href: continuous-integration-and-delivery.md

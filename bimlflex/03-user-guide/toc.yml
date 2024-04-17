@@ -8,3 +8,5 @@
   href: 03.04-bimlflex-business-modeling/toc.yml
 - name: Excel Addin
   href: 03.05-bimlflex-excel-addin/toc.yml
+- name: Build & Deploy
+  href: 03.06-bimlflex-build-deploy-artifacts/toc.yml
