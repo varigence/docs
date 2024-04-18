@@ -1,0 +1,8 @@
+---
+uid: biml-adfazurecloudtype-enumeration
+title: AdfAzureCloudType Enumeration
+varigenceProduct: Biml Language
+varigenceArticleType: Reference
+---
+
+## AdfAzureCloudType Enumeration<div class="LanguageSummary"><div class ="SummaryItem">Indicates the azure cloud type of the service principle auth.</div></div><div class="EnumValueGroup">### Enumeration Values<table id="EnumValue" class="MemberList"><tbody><tr><th class="MemberNameColumnHeader">Name</th><th class="MemberSummaryColumnHeader">Summary</th></tr><tr class="cd0"><td class="MemberName">None</td><td class="MemberSummary"><div class ="SummaryItem">Default.</div> </td></tr><tr class="cd1"><td class="MemberName">AzurePublic</td><td class="MemberSummary"> </td></tr><tr class="cd0"><td class="MemberName">AzureChina</td><td class="MemberSummary"> </td></tr><tr class="cd1"><td class="MemberName">AzureUsGovernment</td><td class="MemberSummary"> </td></tr><tr class="cd0"><td class="MemberName">AzureGermany</td><td class="MemberSummary"> </td></tr></tbody></table></div>
