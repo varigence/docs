@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/__docusaurus/debug',
+    component: ComponentCreator('/__docusaurus/debug', '8ae'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/config',
+    component: ComponentCreator('/__docusaurus/debug/config', 'bc3'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/content',
+    component: ComponentCreator('/__docusaurus/debug/content', '17b'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/globalData',
+    component: ComponentCreator('/__docusaurus/debug/globalData', '182'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/metadata',
+    component: ComponentCreator('/__docusaurus/debug/metadata', '738'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/registry',
+    component: ComponentCreator('/__docusaurus/debug/registry', '7bb'),
+    exact: true
+  },
+  {
+    path: '/__docusaurus/debug/routes',
+    component: ComponentCreator('/__docusaurus/debug/routes', '046'),
+    exact: true
+  },
+  {
     path: '/blog',
     component: ComponentCreator('/blog', '42d'),
     exact: true
@@ -64,11 +99,11 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '3e6'),
+    component: ComponentCreator('/docs', '81f'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '578'),
+        component: ComponentCreator('/docs', '665'),
         routes: [
           {
             path: '/docs/tags',
@@ -117,7 +152,7 @@ export default [
           },
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '15e'),
+            component: ComponentCreator('/docs', '049'),
             routes: [
               {
                 path: '/docs/bimlexpress/',
@@ -841,12 +876,6 @@ export default [
               {
                 path: '/docs/bimlflex/reference-documentation/reference-documentation-settings-index',
                 component: ComponentCreator('/docs/bimlflex/reference-documentation/reference-documentation-settings-index', '788'),
-                exact: true,
-                sidebar: "bimlflexSidebar"
-              },
-              {
-                path: '/docs/bimlflex/reference-documentation/settings/7ZipPath',
-                component: ComponentCreator('/docs/bimlflex/reference-documentation/settings/7ZipPath', '4c9'),
                 exact: true,
                 sidebar: "bimlflexSidebar"
               },

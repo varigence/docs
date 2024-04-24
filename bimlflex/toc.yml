@@ -3,64 +3,28 @@
   topicHref: index.md
   items:
   - name: Getting Started
-    href: getting-started/toc.yml
-
-  - name: Key Concepts and Features
-    href: concepts/toc.yml
-
-  - name: BimlFlex App
-    href: metadata-editors/toc.yml
-
-  - name: Development, Build & Deployment
-    href: build-and-deployment/toc.yml
-
-#  - name: Documentation Generation
-#    href: docs-gen/toc.yml
-
-  - name: BimlFlex for Azure Data Factory
-    href: technology-adf/toc.yml
-
-  - name: BimlFlex for Mapping Data Flows
-    href: technology-data-flow/toc.yml
-
-  - name: BimlFlex for SQL Server Integration Services
-    href: technology-ssis/toc.yml
-
-#  - name: BimlFlex on SQL Server
-#    href: technology-sql-server/toc.yml
-  
-  - name: BimlFlex on Synapse
-    href: technology-synapse/toc.yml
-
-  - name: BimlFlex on Snowflake
-    href: technology-snowflake/toc.yml
-
-#  - name: BimlFlex on Delta Lake
-#    href: technology-delta-lake/toc.yml
-
-  - name: Other BimlFlex Connectivity
-    href: scenarios/toc.yml
-
-  - name: Delivering Staging
-    href: delivering-staging/toc.yml
-
-  - name: Delivering Data Vault
-    href: delivering-data-vault/toc.yml
-
-  - name: Delivering Data Marts
-    href: delivering-data-marts/toc.yml
-
-  - name: Orchestration
-    href: orchestration/toc.yml
-
-  - name: Reference Docs
-    href: reference-documentation/toc.yml
-
-  - name: Support Guide
-    href: support/toc.yml
+    href: 01-getting-started/toc.yml
 
   - name: Installation
-    href: installation/toc.yml    
+    href: 02-installation/toc.yml    
+
+  - name: User Guide
+    href: 03-user-guide/toc.yml
+
+  - name: Concepts
+    href: 04-concepts/toc.yml
+
+  - name: Delivering Solutions
+    href: 05-delivering-solutions/toc.yml
+
+  - name: Technologies
+    href: 06-technologies/toc.yml
+
+  - name: Reference
+    href: 07-reference-documentation/toc.yml
+
+  - name: Support Guide
+    href: 08-support/toc.yml
 
   - name: Release Notes
-    href: release-notes/toc.yml
+    href: 09-release-notes/toc.yml
