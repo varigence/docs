@@ -7,7 +7,7 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Guidance
 ---
 
-# Overview
+# Documentation Generator
 
 This guide aims to provide a step by step process of utilizing the BimlFlex Documentation generator. A table of contents for each section is outlined below.
 
