@@ -3,28 +3,28 @@
   topicHref: index.md
   items:
   - name: Getting Started
-    href: 01-getting-started/toc.yml
+    href: getting-started/toc.yml
 
   - name: Installation
-    href: 02-installation/toc.yml    
+    href: installation/toc.yml    
 
   - name: User Guide
-    href: 03-user-guide/toc.yml
+    href: user-guide/toc.yml
 
   - name: Concepts
-    href: 04-concepts/toc.yml
+    href: concepts/toc.yml
 
   - name: Delivering Solutions
-    href: 05-delivering-solutions/toc.yml
+    href: delivering-solutions/toc.yml
 
   - name: Technologies
-    href: 06-technologies/toc.yml
+    href: technologies/toc.yml
 
   - name: Reference
-    href: 07-reference-documentation/toc.yml
+    href: reference-documentation/toc.yml
 
   - name: Support Guide
-    href: 08-support/toc.yml
+    href: support/toc.yml
 
   - name: Release Notes
-    href: 09-release-notes/toc.yml
+    href: release-notes/toc.yml

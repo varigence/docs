@@ -1,0 +1,16 @@
+- name: SQL Server Integration Services
+  href: technology-ssis/toc.yml
+- name: Azure Data Factory
+  href: technology-adf/toc.yml
+# - name: Data Flow
+#   href: technology-data-flow/toc.yml
+- name: SQL Server
+  href: technology-sql-server/toc.yml
+- name: Azure Synapse
+  href: technology-synapse/toc.yml
+- name: Snowflake
+  href: technology-snowflake/toc.yml
+- name: Databricks
+  href: technology-databricks/toc.yml
+- name: Delta Lake
+  href: technology-delta-lake/toc.yml

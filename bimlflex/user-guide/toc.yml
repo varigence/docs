@@ -1,0 +1,12 @@
+- name: Editors
+  href: bimlflex-editors/toc.yml
+- name: Administration
+  href: bimlflex-administration/toc.yml
+- name: Modeling
+  href: bimlflex-modeling/toc.yml
+- name: Business Modeling
+  href: bimlflex-business-modeling/toc.yml
+- name: Excel Addin
+  href: bimlflex-excel-addin/toc.yml
+- name: Build & Deploy
+  href: bimlflex-build-deploy-artifacts/toc.yml
