@@ -53,6 +53,10 @@ For this guide, please select all table objects (not the views) in the 'SalesLT'
 
 ![New BimlFlex Project](../static/img/bimlflex-walkthrough-import-adventureworks-metadata-contents.png "New BimlFlex Project")
 
+![New BimlFlex Project](../static/img/bimlflex-walkthrough-import-adventureworks-metadata-settings.png "New BimlFlex Project")
+
+![New BimlFlex Project](../static/img/bimlflex-walkthrough-import-adventureworks-metadata-listobjects.png "New BimlFlex Project")
+
 Doing this will create the source [**Objects**](xref:bimlflex-object-editor) as part of the 'AWLT_SRC' [**Connection**](xref:bimlflex-connection-editor) and navigate to the [**Schema Diagram**](xref:bimlflex-schema-diagram) designer, showing a visual representation of the imported objects.
 
 ![New BimlFlex Project](../static/img/bimlflex-walkthrough-import-adventureworks-schema-diagram-view.png "New BimlFlex Project")

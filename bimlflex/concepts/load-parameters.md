@@ -190,6 +190,8 @@ To add a new parameters, click the `+` button in the **Treeview** menu.
 
 ![BimlFlex - Parameter Editor](../static/img/bfx-parameters-editor.png "BimlFlex - Parameter Editor")
 
+![BimlFlex - Parameter Editor](../static/img/bfx-add-parameters.png "BimlFlex - Add Parameter")
+
 ### Base Parameter
 
 The Base Parameter settings are the core fields that are required to define a parameter in BimlFlex. With the exception of *PARAMETER SQL*, these are Source System agnostic.

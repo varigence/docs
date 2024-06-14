@@ -25,6 +25,8 @@ To view deleted or excluded entities:
 
 ![Enabled Deleted Entities](../static/img/bimlflex-options-show-deleted.png "Enabled Deleted Entities")
 
+![Enabled Deleted Entities](../static/img/bimlflex-options-show-deleted-and-or-excluded.png "Enabled Deleted Entities")
+
 This will allow deleted and/or excluded entities to appear. Please ensure that the option is disabled once the deleted/excluded member has been restored.
 
 ## Adding BimlFlex custom SSIS components to Azure Integration Runtime

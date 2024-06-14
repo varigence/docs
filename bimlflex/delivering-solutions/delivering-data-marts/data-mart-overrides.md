@@ -174,11 +174,10 @@ The **Configuration** itself is applied at an object level, so a column level ov
 ### [Standard Method](#tab/configuration-override)
 
 A **Configuration** can be quickly added from [**Configuration Editor**](xref:bimlflex-configuration-editor).
-If a field supports and override it will have clickable button with the following icon (<img class="icon-inline" src="../../static/svg/attributes.svg "Overriding Possible Icon")-->).
-
-![Overriding Possible](../../static/img/bfx-configuration-override-support.png "Overriding Possible")
 
 Clicking this button will open a **Add Attribute Dialog** that is populated with the required *ATTRIBUTE* value.
+
+![Initial Add Attributes Button](../../static/img/bfx-configuration-add-attribute-button.png "Initial Add Attributes Button")
 
 ![Initial Add Attributes Dialog](../../static/img/bfx-configuration-add-attribute-start.png "Initial Add Attributes Dialog")
 
@@ -188,8 +187,7 @@ Enter the value to be used as the **Configuration Override** in the *ATTRIBUTE V
 
 ![Final Add Attributes Dialog](../../static/img/bfx-configuration-add-attribute-end.png "Final Add Attributes Dialog")
 
-> [!IMPORTANT]
-> Don't forget to click the **Save Button** (<img class="icon-inline" src="../../static/svg/save.svg "Save Icon")-->) to record the changes.
+> Don't forget to click the **Save Button** to record the changes.
 >
 
 ### [Advanced Method](#tab/configuration-override-advanced)
@@ -197,7 +195,7 @@ Enter the value to be used as the **Configuration Override** in the *ATTRIBUTE V
 The following method is classified as advanced due to the *ATTRIBUTE* field needing to be manually entered.
 The advanced method is not recommended to be used unless the user is completely familiar with the `{ConfigurationKey}_{FieldName}` naming pattern.
 
-When using any entity editor that support the **Attributes Tab** the **Add** (<img class="icon-inline" src="../../static/svg/add.svg "Add Icon")-->) button can be used to create an **Attribute**.
+When using any entity editor that support the **Attributes Tab** the **Add** button can be used to create an **Attribute**.
 
 ![Initial Add Attribute From Project](../../static/img/bfx-configuration-add-attribute-project.png "Initial Add Attribute From Project")
 

@@ -139,7 +139,9 @@ Once all of the **Connection** settings have been entered into BimlFlex, and mod
 
 Click *Import Metadata*. On the next screen, click *Connect to Database*.
 
-![BimlFlex Connect to Database](../../static/img/bfx-sfdc-connect-to-database.png "Connect to Database")
+![BimlFlex Connect to Database Release 24](../../static/img/bfx-sfdc-connect-to-database-R24.png "Connect to Database Release24")
+
+![BimlFlex Import Metadata Settings Release 24](../../static/img/bfx-sfdc-import-metadata-settings-R24.png "Import Metadata Settings Release24")
 
 If all information was entered accurately, the application will successfully connect to Salesforce. The screen will refresh with all of the imported Objects listed by schema (as named by the User in the *Catalog* data field above.)
 

@@ -27,7 +27,7 @@ Saving the metadata to file creates a zip file that can be sent to the BimlFlex 
 
 ### Exporting metadata from BimlFlex
 
-In the BimlFlex Applicationthe relevant metadata can be made available, by using the `Export Metadata` feature in the Actions pane. The Actions pane is located on the home screen of the application.
+In the BimlFlex Application the relevant metadata can be made available, by using the `Export Metadata` feature in the Actions pane. The Actions pane is located on the home screen of the application.
 
 ![Export Metadata](../static/img/bimlflex-ss-v5-bimlflexapp-actions-pane.png "Export Metadata")
 

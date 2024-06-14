@@ -15,6 +15,8 @@ There are a number of options for importing metadata. The user must align these 
 
 ![Import Metadata Options](../static/img/bimlflex-import-metadata-options.png "Import Metadata Options")
 
+![Import Metadata Settings](../static/img/bimlflex-import-metadata-settings.png "Import Metadata Settings")
+
 The example connection in the Sample Metadata is `AWLT_SRC` which points to the AdventureWorksLT database, using the project `EXT_AWLT_SRC` as the target project for imported metadata.
 
 Below the Connection and Project drop downs are all the main options. These can be configured to control the behavior of the import, such as what object types to import, naming conventions to apply and what to retain if the metadata has been imported before.
