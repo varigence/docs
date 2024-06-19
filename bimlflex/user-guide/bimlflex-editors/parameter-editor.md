@@ -44,4 +44,4 @@ Parameters in BimlFlex are displayed in the [**Treeview**](xref:bimlflex-editors
 
 ### Data Types
 
-[!include[Data Types](../../07-reference-documentation/static-data/_enum-data-type.md)]
+[!include[Data Types](../../reference-documentation/static-data/_enum-data-type.md)]

@@ -99,8 +99,8 @@ The following sections describe the UI elements of the Data Type Mappings Editor
 
 ### Data Types
 
-[!include[Data Types](../../07-reference-documentation/static-data/_enum-data-type.md)]
+[!include[Data Types](../../reference-documentation/static-data/_enum-data-type.md)]
 
 ### System Types
 
-[!include[Connection Types](../../07-reference-documentation/static-data/_enum-system-type.md)]
+[!include[Connection Types](../../reference-documentation/static-data/_enum-system-type.md)]

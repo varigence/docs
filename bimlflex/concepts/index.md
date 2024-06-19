@@ -19,7 +19,7 @@ This section covers various concepts that are important to understand when worki
 
 ## Working with Design Metadata
 
-[!include[BimlFlex](../03-user-guide/includes/_incl-header-bimlflex-app.md)]
+[!include[BimlFlex](../user-guide/includes/_incl-header-bimlflex-app.md)]
 
 BimlFlex provides an import tool which is accessible from the Connections and Projects screens, which can connect to a database source and manage the metadata BimlFlex uses. The following links provide more information about managing design metadata:
 

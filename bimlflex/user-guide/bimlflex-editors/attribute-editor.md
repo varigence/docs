@@ -61,4 +61,4 @@ These are the different fields required to define the scope of the **Attribute**
 
 #### Attribute Types
 
-[!include[Attribute Types](../../07-reference-documentation/static-data/_enum-attribute-type.md)]
+[!include[Attribute Types](../../reference-documentation/static-data/_enum-attribute-type.md)]

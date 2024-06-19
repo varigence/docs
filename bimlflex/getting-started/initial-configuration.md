@@ -15,8 +15,8 @@ Once the BimlFlex installation is completed, it is time to set up the environmen
 
 ## BimlFlex App
 
-[!include[Dashboard](../03-user-guide/includes/_incl-header-dashboard.md)]
-[!include[BimlFlex](../03-user-guide/includes/_incl-header-bimlflex-app.md)]
+[!include[Dashboard](../user-guide/includes/_incl-header-dashboard.md)]
+[!include[BimlFlex](../user-guide/includes/_incl-header-bimlflex-app.md)]
 
 ## Metadata Connection
 
@@ -30,7 +30,7 @@ Once connection has been established, a new [**Customer**](xref:bimlflex-concept
 
 ### New Customer Creation
 
-[!include[NewCustomer](../03-user-guide/includes/_incl-header-new-customer.md)]
+[!include[NewCustomer](../user-guide/includes/_incl-header-new-customer.md)]
 
 ### Load Sample Metadata
 
@@ -48,19 +48,19 @@ Open the BimlStudio application and create a new, empty BimlFlex project.
 
 ### Creating the BimlFlex project
 
-[!include[BimlFlexProject](../03-user-guide/includes/_incl-header-bimlstudio-project.md)]
+[!include[BimlFlexProject](../user-guide/includes/_incl-header-bimlstudio-project.md)]
 
 ### Connect to the BimlFlex Database
 
-[!include[BimlFlexDatabaseConnection](../03-user-guide/includes/_incl-header-bimlstudio-connect.md)]
+[!include[BimlFlexDatabaseConnection](../user-guide/includes/_incl-header-bimlstudio-connect.md)]
 
 ### BimlStudio Project Settings
 
-[!include[BimlFlexProjectSettings](../03-user-guide/includes/_incl-header-bimlstudio-project-settings.md)]
+[!include[BimlFlexProjectSettings](../user-guide/includes/_incl-header-bimlstudio-project-settings.md)]
 
 #### Build Output
 
-[!include[BimlFlexProjectSettings](../03-user-guide/includes/_incl-header-bimlstudio-project-build-output-settings.md)]
+[!include[BimlFlexProjectSettings](../user-guide/includes/_incl-header-bimlstudio-project-build-output-settings.md)]
 
 #### Target Versions
 

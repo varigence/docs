@@ -83,7 +83,7 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 
 #### Object Types
 
-[!include[Object Types](../../07-reference-documentation/static-data/_enum-object-type.md)]
+[!include[Object Types](../../reference-documentation/static-data/_enum-object-type.md)]
 
 ### Details Tab - SQL Overrides Fields
 

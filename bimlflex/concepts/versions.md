@@ -7,4 +7,4 @@ varigenceArticleType: Conceptual
 ---
 # BimlFlex Version Concept
 
-[!include[Versions](../03-user-guide/includes/_incl-header-version.md)]
+[!include[Versions](../user-guide/includes/_incl-header-version.md)]
