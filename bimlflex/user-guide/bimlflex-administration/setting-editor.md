@@ -22,7 +22,7 @@ varigenceArticleType: Reference
 
 Settings within the BimlFlex Applicationare organized into categories, **Setting Groups,** such as Azure, Core, DataVault, Snowflake, etc. Each setting group contains settings that share a common purpose or area.
 
-Hovering the mouse pointer over individual settings will display tooltips relating to same, along with brief explanation as to how settings will impact the solution.
+Hovering the mouse pointer over individual settings will display tooltips relating to some, along with brief explanation as to how settings will impact the solution.
 
 ![Tooltips](../../static/img/settings-floating-tool-tip.png "Tooltips")
 
@@ -34,7 +34,7 @@ When using the search bar, if a user hovers over a specific search term the tool
 
 Searching for a specific setting will automatically navigate the user to the respective **Setting Group** and highlight the specific setting within, guiding the user to the exact location needed.
 
-![Search Term Highlight](../../static/img/search-highlight.gif) "Search Term Highlight")
+![Search Term Highlight](../../static/img/search-highlight.png) "Search Term Highlight")
 
 > [!TIP]
 > For users who are unsure of the *specific* setting they need, beginning a search with "*" will allow users to search setting descriptions as well as setting titles.

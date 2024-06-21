@@ -11,16 +11,16 @@ varigenceArticleType: Reference
 
 ## Overview
 
-Objects are displayed in a hierarchical **Treeview** on the left Side Navigation menu. The treeview is organized by Project > Source Connection > Objects, with the number of tables within a given Object displayed in parenthesis.
+Objects are displayed in a hierarchical **Treeview** Navigation menu. The treeview is organized by Source Connection > Objects > Columns, with the number of tables within a given Source Connection displayed in parenthesis.
 
 ![BimlFlex Object Editor](../../static/img/bfx-object-editor-overview.png "BimlFlex Object Editor")
 
 > [!NOTE]
 > Detailed descriptions of all **Object Editor** fields and options are available in the [Reference Documentation](xref:bimlflex-reference-documentation-object-entity).
 
-Selecting an **Object** with multiple tables will display a secondary list of all editable options within. The user may navigate to the Object editor screen by selecting any **Object** from the displayed list.
+Selecting a **Connection** will by default display the Connection Editor which contains four main tabs that can be used to modify connection details, as well as various properties and settings related to the Objects that are associated with the elected connection. 
 
-Selecting an **Object** with a single table will immediately navigate the user to the Object editor screen.
+The **Objects Tab** provides quick access to all **Objects** associated with the **Connection**. The user may navigate to the Object editor screen by selecting any **Object** from the displayed list.
 
 ![BimlFlex Object Editor - List](../../static/img/bfx-object-editor-listview.png "BimlFlex Object Editor - List")
 
@@ -31,19 +31,18 @@ Selecting the checkbox(es) icon will enable users to bulk archive multiple **Obj
 Any instance of the <img class="icon-inline" src="../../static/svg/navigate.svg"/>  icon will serve as a Global Navigation Transition.
 Clicking this icon will navigate the user directly to the referenced **Connection, Object,** or **Column.**
 
-Toggling `Descendants` will enable or disable all parameters for both the currently selected node and all of its descendant nodes.
-This option is enabled by default.
-
 The Search field is contained within the treeview menu, and will be hidden when collapsed.
 The Search field will return results in real-time, only presenting **Objects** containing the term being searched.
 
 ![BimlFlex Objects - Search Field](../../static/img/bfx-object-search-field.png "BimlFlex Objects - Search Field")
 
-## Details Tab
+## Objects Editor
 
-The **Details Tab** focuses on general **Object** information and configuration.  This tab is used to define and create the **Object** itself.
+Selecting an **Object** in the Treeview will by default display the Object Editor which contains seven main tabs that can be used to modify Object details, as well as various properties and settings related to the Columns that are associated with the elected Object.
 
-### Details Tab - Action Buttons
+The **Object Tab** focuses on general **Object** information and configuration.  This tab is used to define and create the **Object** itself.
+
+### Object Editor - Action Buttons
 
 ![BimlFlex - Object Editor Actions](../../static/img/bfx-app-editor-objects-action.png "BimlFlex - Object Editor Actions")
 
@@ -69,13 +68,13 @@ The **Details Tab** focuses on general **Object** information and configuration.
 
 [!include[Duplicate Table Dialog](../dialogs/_dialog-duplicate-table.md)]
 
-### Details Tab - Standard Fields
+### Object Tab - Standard Fields
 
 The standard fields hold the bulk of the metadata that will be used to integrate the Object. Additional fields to manage the modeling and the ability to toggle Object level persistence is provided.  
 
 ![Object Editor Fields](../../static/img/objects-details-tab-new.png "Object Editor Fields")
 
-### Model Overrides - Standard Fields
+### Business Overrides - Standard Fields
 
 ![Model Overrides Fields ](../../static/img/bfx-objects-model-override.png "Model Overrides Fields")  
 
@@ -85,7 +84,7 @@ The standard fields hold the bulk of the metadata that will be used to integrate
 
 [!include[Object Types](../../07-reference-documentation/static-data/_enum-object-type.md)]
 
-### Details Tab - SQL Overrides Fields
+### Object Tab - Query Overrides Fields
 
 The majority of the SQL Overrides are provided to handle the various scenarios where overrides to the default SQL generated out of the box by BimlFlex.  These fields are to be consider more advanced than the standard use cases and should only be used by a DBA or Architect that is familiar with the SQL required should use the SQL properties.  The ability to inherit **Columns** or other properties are also provide along with the ability to annotate a dependant on another **Object**.
 

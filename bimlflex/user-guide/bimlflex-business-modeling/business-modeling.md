@@ -148,9 +148,12 @@ For example, the 'Price' Business Entity can become a Business Attribute to the 
 There are two ways to view and edit the details of a Business Entity.
 
 * Double-clicking on the Business Entity tile. This will open the **Business Entity Editor**
+
+![Editing a Business Entity](../../static/img/business-modeling-open-edit-business-entity.png "Editing a Business Entity")
+
 * Hovering over the tile will show the details ellipsis, this will display a menu for further navigation
 
-![Editing a Business Entity](../../static/img/business-modeling-edit-business-entity.png "Editing a Business Entity")
+![Editing a Business Entity](../../static/img/business-modeling-hover-over-edit-business-entity.png "Editing a Business Entity")
 
 This this menu the following options are available:
 

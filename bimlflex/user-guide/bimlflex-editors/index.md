@@ -68,7 +68,24 @@ Additional information on the Customer feature is available in the [Customer Con
 
 The BimlFlex Menu provides quick navigation to the available editors and modeling tools. The menu is dynamic and automatically expands and hides based on the current size of the application window.
 
-If the menu is hidden, for example due to the size of the BimlFlex window or screen resolution, you can use the **Collapse** <img class="icon-inline" src="../../static/svg/expanded.svg"/> icons annotated below to open or close the menu.
+Using the BimlFlex Menu
+
+1. Return to Home Page
+
+    Located at the top-left corner of the interface.  Click on the BimlFlex logo to return to the home page.
+
+2. Collapse / Expand
+
+    Located at the top of the menu section.  Allows you to collapse or expand the menu for more working space.
+
+3. Current Editor
+
+    Indicates the currently active editor or section.  In the image, the active section is "Connections" under the submenu "AWLT_SRC."
+
+4. Menu
+
+    Located on the left sidebar.  Contains various sections for navigation
+
 
 ![BimlFlex Menu](../../static/img/bfx-navigation-menu-01.png "BimlFlex Menu")
 
@@ -77,6 +94,35 @@ If the menu is hidden, for example due to the size of the BimlFlex window or scr
 The BimlFlex metadata editors aim to provide a streamlined and intuitive way to enter and manage your metadata. The visible features may vary from editor to editor, but they all use the same layout.
 
 What follows is a quick tour of the various editor elements and how they function. For detailed information of the available the features reference the relevant documentation for the appropriate editor.
+
+Key Sections:
+
+1. Treeview
+
+   Displays a hierarchical list of items such as connections, objects and columns.
+   Click on any item in the treeview (e.g., AWLT_SRC, BFX_DIM) to select and display its details in the editor area.
+   Expand or collapse items to view nested resources.
+   
+2. Current Editor Content
+
+     Displays detailed information and configuration options for the selected item from the treeview.
+
+3. Editor Tabs
+
+   Provides multiple tabs to navigate through different aspects of the selected item.
+
+   Tabs Include:
+
+   Connection: Basic connection details.
+
+   Objects: List of objects associated with the connection.
+
+   Attributes: Attributes related to the connection.
+
+   Parameters: Parameters used in the connection.
+
+4. Editor Action Buttons
+   Provides action buttons for managing the current editor content.
 
 ![BimlFlex Editor](../../static/img/bfx-metadata-editor-layout.png "BimlFlex Editor")
 
@@ -108,6 +154,15 @@ If the selected editor supports them, tabs are used to switch between managing o
 >[!TIP]
 > The first tab is considered the 'main' tab for an editor, and has the name of the active selected editor. For example 'Connection', 'Project' or 'Batch'.
 
+1. Active Tab
+
+   The active tab is usually in bold text to indicate it is currently selected and displays the content and details associated with this tab in the editor area.  In the example below The Connection tab is the active tab.
+
+2. Inactive Tabs
+
+   The inactive tabs usually are not bold and have regular text to indicate they are not selected. These tabs are available for selection, and clicking on them will display their respective content in the editor area.  In the example below The Objects (0), Attributes (0), and Parameters (0) tabs are inactive.
+   These tabs are not currently selected, and their content is not displayed. The numbers in parentheses indicate the count of items or configurations in each tab.
+
 ![Tab List](../../static/img/bfx-tabs.png "Tab List")
 
 ## Current Editor Content
@@ -126,25 +181,25 @@ Additionally, BimlFlex automatically applies field-level validations to prevent 
 
 ![Fields Content](../../static/img/bfx-fields-content.png "Fields Content")
 
-#### String Field
+1.  String Field
 
-A string field allows for textual values, such as names or codes in free-text. An example is a name for a batch or connection.
+    A string field allows for textual values, such as names or codes in free-text. An example is a name for a batch or connection.
 
-#### Combo Box
+2. Combo Box
 
-A combo box, or constrained list field, shows possible values that can be selected from a drop-down list. These are the options provided by BimlFlex.
+   A combo box, or constrained list field, shows possible values that can be selected from a drop-down list. These are the options provided by BimlFlex.
 
-#### Number
+3. Number
 
-A number, or integer, field accepts a natural number. The value can be increased or decreased by clicking on the up- and down arrows.
+   A number, or integer, field accepts a natural number. The value can be increased or decreased by clicking on the up- and down arrows.
 
-#### Checkbox
+4. Checkbox
 
-The checkbox, or Boolean, field can be turned on or off. When the checkbox has been enabled, a check will be visible. In some cases, a tri-state checkbox is available in BimlFlex. This indicates that lower-level features include a mix of enabled and disabled checkboxes.
+   The checkbox, or Boolean, field can be turned on or off. When the checkbox has been enabled, a check will be visible. In some cases, a tri-state checkbox is available in BimlFlex. This indicates that lower-level features include a mix of enabled and disabled checkboxes.
 
-#### Long Text String Field  
+5. Long Text String Field  
 
-The long text string field can be resized by dragging the adjustment corner in the field. It also include an editor dialog with enhanced features for when a lot of information needs to be entered.
+   The long text string field can be resized by dragging the adjustment corner in the field. It also include an editor dialog with enhanced features for when a lot of information needs to be entered.
 
 The editor dialog is accessed by clicking the <img class="icon-inline" src="../../static/svg/edit.svg"/> icon when the long text string field is in focus.
 
@@ -169,11 +224,19 @@ Existing items can be edited by selecting a row and then using the <img class="i
 
 #### Table Content
 
+1. Viewing and Modifying Object Details
+
+   Once an object is selected by clicking on the checkbox next to the object, you can view its details and modify them if necessary.   In below example the object "SalesLT.Address' is the selected record.
+   
+2. Action Buttons performing various actions on the selected record such as "Add", "Save", 
+    "Discard", "Archive" and "Edit".
+
+
 ![Table Content](../../static/img/bfx-biml-tour-table-record.png "Table Content")
 
 ### Multiple Views  
 
-When **Multiple Views** are used, an oval selector will appear listing out alternative views.
+1. When **Multiple Views** are used, an oval selector will appear listing out alternative views.
 The active view is highlighted and can be changed by clicking another available option.
 The alternate views only change what properties of an entity are visible/editable and will not filter, remove or resort the underlining list of entities.
 Values can be edited by double-clicking the desired property.
@@ -198,13 +261,15 @@ BimlFlex features the ability to navigate directly to another component whenever
 Click the light blue value will allow you to navigate directly to the the object referenced in the associated editor. Click the <img class="icon-inline" src="../../static/svg/navigate.svg"/> icon for global navigation to any entity within the project.
 Every navigable entity within the  will have such an icon.
 
+![Navigational Transitions](../../static/img/bfx-navigation-object-reference.png "Navigational Transitions")
+
 BimlFlex features a checkbox UI system for any list of items being viewed. Highlight over a single item, and a checkbox will appear on the left. If selected, checkboxes will appear for all items in the list.
 
 Selecting the checkbox at the top of the list will select/deselect all items. Having multiple items selected will allow the user to bulk-archive as many items as are currently selected.
 
-With multiple items selected, users may select `Integration Key` from the **Objects** Action Bar to enter the Generate Derived Integration Key dialog menu with the desired items already selected.
-
 ![Navigational Transitions](../../static/img/bfx-navigation-ui.png "Navigational Transitions")
+
+With multiple items selected, users may select `Integration Key` from the **Objects** Action Bar to enter the Generate Derived Integration Key dialog menu with the desired items already selected.
 
 # Treeview
 
