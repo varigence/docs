@@ -63,15 +63,15 @@ When a connection is archived, BimlFlex will display a confirmation box warning 
 
 #### Integration Stages
 
-[!include[Integration Stages](../../07-reference-documentation/static-data/_enum-integration-stage.md)]
+[!include[Integration Stages](../../reference-documentation/static-data/_enum-integration-stage.md)]
 
 #### Connection Types
 
-[!include[Connection Types](../../07-reference-documentation/static-data/_enum-connection-type.md)]
+[!include[Connection Types](../../reference-documentation/static-data/_enum-connection-type.md)]
 
 #### System Types
 
-[!include[Connection Types](../../07-reference-documentation/static-data/_enum-system-type.md)]
+[!include[Connection Types](../../reference-documentation/static-data/_enum-system-type.md)]
 
 ## Objects Tab
 

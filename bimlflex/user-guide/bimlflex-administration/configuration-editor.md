@@ -48,7 +48,7 @@ The definition of each configuration can be seen as a *Global Configuration*, an
 
 ### Configuration Attribute Types
 
-[!include[Object Types](../../07-reference-documentation/static-data/_enum-configuration-attribute-type.md)]
+[!include[Object Types](../../reference-documentation/static-data/_enum-configuration-attribute-type.md)]
 
 ## Configuration Overrides
 

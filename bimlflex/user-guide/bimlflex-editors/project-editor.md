@@ -49,7 +49,7 @@ Confirmation box warning against the dangers of archiving.  You are required to 
 
 #### Integration Templates
 
-[!include[Integration Templates](../../07-reference-documentation/static-data/_enum-integration-template.md)]
+[!include[Integration Templates](../../eference-documentation/static-data/_enum-integration-template.md)]
 
 ## Objects Tab
 
