@@ -13,4 +13,4 @@ When enabled, notebooks will use the `CREATE OR REPLACE TEMPORARY VIEW` SQL stat
 Notes:
 
 * This setting is part of the *Databricks* settings category.
-* The default value for this setting is `N`.
+* The default value for this setting is `Y`.

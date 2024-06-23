@@ -9,6 +9,9 @@ varigenceArticleType: Reference
 # Extension Points
 
 This page lists the available Extensions Point for each category.
+
+> [!NOTE]
+> The Extension Point concept is explained in detail in the [Extension Point](xref:bimlflex-concepts-extensionpoints) documentation.
  
 ## Overview
   
@@ -23,7 +26,6 @@ This page lists the available Extensions Point for each category.
 |[Data Vault](xref:bimlflex-reference-documentation-data-vault-extensionpoints) | Extension Points that allow modification of steps and logic in Data Vault related processes.|
 |[Data Mart](xref:bimlflex-reference-documentation-data-mart-extensionpoints) | Extension Points that can modify the approach to load Data Marts.|
 |[Data Factory](xref:bimlflex-reference-documentation-data-factory-extensionpoints) | Extension Points specifically catering for Azure and Data Factory.|
-|[Mapping Data Flows](xref:bimlflex-reference-documentation-mapping-data-flows-extensionpoints) | Extension Points specifically catering for Data Factory Mapping Data Flows.|
 ## Diagrams
 
 Various diagrams have been created to facilitate better understanding where certain extension points apply in addition to the reference documentation provided in this section.

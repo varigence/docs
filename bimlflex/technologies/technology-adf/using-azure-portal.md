@@ -70,7 +70,7 @@ Pipeline(s) are now available for verification or running inside [ADF](https://d
 2. Users can take advantage of BimlFlex [Extension Points](xref:bimlflex-concepts-extensionpoints) and create triggers for each Batch. An example extension point that creates an ADF trigger is listed below. This trigger will now be created inside of the ARM template file and deployed with the rest of the ADF assets.
 
 ```Biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfTrigger" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfBatchTrigger" #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 <Schedule Name="ScheduleTriggerName" Frequency="Hour" Interval="1" Start="2001-01-01" End="2020-12-31">
         <Pipelines>

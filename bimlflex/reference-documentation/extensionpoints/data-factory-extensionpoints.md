@@ -181,23 +181,36 @@ Configure Data Factory Batch Parameters.
 | <div style="width:150px">Name</div> | Type | Description |
 | :--------- | :----------- | :----------- |
 | batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information about the Data Factory (Batch) Pipeline to which the Parameter will be added. |
-| dependency | String | Contains the dependency name for the previous (incoming) activity. |
 
 ### Template
 
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfBatchParameter" #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
-<#@ property name="dependency" type="String" #>
 
-
-
-<!-- This extension point allows the addition of a Parameter to an existing Batch Pipeline. -->
-<!-- A Batch Pipeline in the BimlFlex ADF deployment is a Pipeline that calls other Pipelines and is located in a 'Batch' folder in ADF. -->
-
-<!-- The below example shows a Bimlscript Parameter code snippet, which will be added to the specific Batch Pipeline. -->
 
 <Parameter Name="MyAdfParameter" DataType="Bool">false</Parameter>
+
+```
+
+## Batch Variable
+
+Configure Data Factory Batch Variables.
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information about the Data Factory (Batch) Pipeline to which the Parameter will be added. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfBatchVariable" #>
+<#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
+
+
+<Variable Name="MyAdfVariable" DataType="String"></Variable>
 
 ```
 
@@ -219,10 +232,6 @@ Configure logic that will be injected after the targeted main Batch Pipeline pro
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 <#@ property name="dependency" type="String" #>
 
-
-
-<!-- This extension point allows the addition of bespoke logic to be added as the last step in the targeted (Batch) ADF Pipeline. -->
-<!-- The below example shows 'Wait' step to be added after the main processing in the Pipeline has completed. -->
 
 <Wait Name="Wait for Ten Seconds" WaitTimeInSeconds="10">
 	<Dependencies>
@@ -442,34 +451,29 @@ CustomOutput.ObjectInherit = false;
 
 ## Global Parameter
 
-Configure a Global Parameter in Data Factory. This can be linked to a Batch Pipeline process.
+Configure a Global Parameter in Data Factory.
 
 ### Parameters
 
 | <div style="width:150px">Name</div> | Type | Description |
 | :--------- | :----------- | :----------- |
-| batch | BimlFlexModelWrapper.BatchesWrapper | Contains all information related to the Batch to which the Trigger will be added. |
-
-
-### Outputs
-
-| <div style="width:150px">Name</div> | Type | Description |
-| :--------- | :----------- | :----------- |
-| ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the Batch. |
+| instance | BimlFlexModelWrapper | The metadata instance to which the Data Factory belongs. There is no 'Data Factory' object in the metadata model that can directly be accessed, and the instance object allows for full access to all metadata to define the specific behaviour of the Integration Runtime that is added using this Extension Point. |
+| dataFactoryName | String | The Data Factory name the Extension Point is applied to. E.g. where the Integration Runtime will be added. |
 
 ### Template
 
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfGlobalParameter" #>
-<#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
+<#@ property name="instance" type="BimlFlexModelWrapper" #>
+<#@ property name="dataFactoryName" type="String" #>
 
 
 
-<!-- The below example adds a Schedule Trigger and connects it to a Batch Pipeline in Data Factory. -->
+<!-- The below example adds a Schedule Trigger and connects it to a Data Factory. -->
 
 <Schedule Name="ScheduleTriggerName" Frequency="Hour" Interval="1" Start="2021-01-01" End="2025-12-31">
 	<Pipelines>
-		<Pipeline PipelineName="01_<#=batch.Name #>_Batch">
+		<Pipeline PipelineName="MyDataFactory">
 			<Parameters>
 				<Parameter Name="IsInitialLoad">false</Parameter>
 			</Parameters>
@@ -842,6 +846,85 @@ Adds a bespoke Pipeline to an Data Factory.
 		</ExecutePipeline>
 	</Activities>
 </Pipeline>
+
+```
+
+## Trigger
+
+Configure a Trigger in Data Factory.
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| instance | BimlFlexModelWrapper | The metadata instance of which the Data Factory is part. There is no 'Data Factory' object in the metadata model that can directly be accessed, and the instance object allows for full access to all metadata to define the specific behaviour of the Pipeline that is added using this Extension Point. |
+| dataFactoryName | String | The Data Factory name the Extension Point is applied to. E.g. where the Pipeline will be added. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfTrigger" #>
+<#@ property name="instance" type="BimlFlexModelWrapper" #>
+<#@ property name="dataFactoryName" type="String" #>
+
+
+<!-- The below example adds a Schedule Trigger and connects it to a Data Factory Pipeline. -->
+
+<Schedule Name="ScheduleTriggerName" Frequency="Hour" Interval="1" Start="2021-01-01" End="2025-12-31">
+	<Pipelines>
+		<Pipeline PipelineName="MyPipelineName">
+			<Parameters>
+				<Parameter Name="IsInitialLoad">false</Parameter>
+			</Parameters>
+		</Pipeline>
+	</Pipelines>
+</Schedule>
+
+```
+
+## Pipeline Parameter
+
+Configure Data Factory Pipeline Parameters.
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the Object for which the pipeline is created. |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfPipelineParameter" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+
+
+<Parameter Name="MyAdfParameter" DataType="Bool">false</Parameter>
+
+```
+
+## Pipeline Variable
+
+Configure Data Factory Pipeline Variables.
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the Object for which the pipeline is created. |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfPipelineVariable" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+
+
+<Variable Name="MyAdfVariable" DataType="String"></Variable>
 
 ```
 
@@ -1389,9 +1472,9 @@ CustomOutput.OutputPathName = outputPathName;#>
 
 ```
 
-## Trigger
+## Batch Trigger
 
-Configure a Trigger in Data Factory. This can be linked to a Batch Pipeline process.
+Configure a Batch Trigger in Data Factory. This can be linked to a Batch Pipeline process.
 
 ### Parameters
 
@@ -1409,7 +1492,7 @@ Configure a Trigger in Data Factory. This can be linked to a Batch Pipeline proc
 ### Template
 
 ```biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfTrigger" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfBatchTrigger" #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 
 
