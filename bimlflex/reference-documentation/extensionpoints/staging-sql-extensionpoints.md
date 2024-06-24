@@ -12,7 +12,7 @@ The Staging SQL category has the following available Extension Points defined.
   
 ## Persistent Staging Post SQL Call Process
 
-Add After the Persistent Staging SQL Call
+Add After the Persistent Staging SQL Call (SSIS Only)
 
 ### Parameters
 
@@ -42,7 +42,7 @@ Add After the Persistent Staging SQL Call
 	var targetObject = new TableObject(targetTable, targetTable.Connection.RelatedItem.IntegrationStage, "TGT");
 #>
 <#	CustomOutput.ObjectInherit = true; #>
-<ExecuteSQL Name="SQL - PsaPreSqlCallProcess" ConnectionName="<#=targetObject.Connection.Name#>">
+<ExecuteSQL Name="SQL - PsaPostSqlCallProcess" ConnectionName="<#=targetObject.Connection.Name#>">
 <#	if (!string.IsNullOrEmpty(precedenceConstraint)) {#>
 	<PrecedenceConstraints>
 		<Inputs>
@@ -54,13 +54,13 @@ Add After the Persistent Staging SQL Call
 		<Parameter Name="0" VariableName="User.ExecutionID" DataType="Int64" />
 	</Parameters>
 	<DirectInput>EXEC <#=targetObject.SystemType.StoredProcedureName(sourceObject, targetObject.Schema, targetObject.StartDelimiter, targetObject.EndDelimiter)#> ?</DirectInput>
-<# 	CustomOutput.OutputPathName = @"SQL - PsaPreSqlCallProcess.Output"; #>
+<# 	CustomOutput.OutputPathName = @"SQL - PsaPostSqlCallProcess.Output"; #>
 </ExecuteSQL>
 ```
 
 ## Persistent Staging Pre SQL Call Process
 
-Add Before the Persistent Staging SQL Call
+Add Before the Persistent Staging SQL Call (SSIS Only)
 
 ### Parameters
 
@@ -108,7 +108,7 @@ Add Before the Persistent Staging SQL Call
 
 ## Persistent Staging SQL Call Override
 
-Override the Persistent Staging SQL Call
+Override the Persistent Staging SQL Call(SSIS Only)
 
 ### Parameters
 
@@ -416,6 +416,66 @@ Specify a SQL statement that will override the TRUNCATE used in the Source Tempo
 
 ```biml
 <#@ extension bundle="BimlFlex.bimlb" extensionpoint="StgTempTableTruncateSql" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+
+
+<# 	CustomOutput.ObjectInherit = false; #>
+/* Add your SQL fragment here */
+```
+
+## Staging Pre Process SQL
+
+Configure SQL to be injected at the start of the Staging stored procedure
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added |
+
+
+### Outputs
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="StgPreProcessSql" #>
+<#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+<#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
+
+
+<# 	CustomOutput.ObjectInherit = false; #>
+/* Add your SQL fragment here */
+```
+
+## Staging Post Process SQL
+
+Configure SQL to be injected at the end of the Staging stored procedure
+
+### Parameters
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| sourceTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the object to which the pipeline will be added |
+| targetTable | BimlFlexModelWrapper.ObjectsWrapper | Contains all information related to the target object to which the pipeline will be added |
+
+
+### Outputs
+
+| <div style="width:150px">Name</div> | Type | Description |
+| :--------- | :----------- | :----------- |
+| ObjectInherit | Boolean | If CustomOutput.ObjectInherit = true then the Extension Point will be applied to all the Objects associated with the batch. |
+
+### Template
+
+```biml
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="StgPostProcessSql" #>
 <#@ property name="sourceTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 <#@ property name="targetTable" type="BimlFlexModelWrapper.ObjectsWrapper" #>
 

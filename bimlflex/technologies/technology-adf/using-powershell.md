@@ -197,7 +197,7 @@ The following options are available for creating Triggers to run the Pipelines
 An example Extension Point that creates an ADF trigger is listed below. Adding the trigger as an Extension Point will include it in the ARM template, enabling it to be deployed with the rest of the ADF assets.
 
 ```Biml
-<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfTrigger" Target="<AddBatchNameAsTargetHere>" #>
+<#@ extension bundle="BimlFlex.bimlb" extensionpoint="AdfBatchTrigger" Target="<AddBatchNameAsTargetHere>" #>
 <#@ property name="batch" type="BimlFlexModelWrapper.BatchesWrapper" #>
 <Schedule Name="ScheduleTriggerName" Frequency="Hour" Interval="1" Start="2001-01-01" End="2020-12-31">
     <Pipelines>
