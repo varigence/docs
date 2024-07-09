@@ -13,6 +13,14 @@ Varigence is excited to release the 2024 R1 version of the BimlFlex platform for
 > * Please make sure databases and projects are backed up before upgrading.
 > * Please email support@bimlflex.com with any installation or upgrade issues.
 
+> [!IMPORTANT]
+>
+> **Important Update for BimlFlex 2024 Upgrade**
+>
+> When upgrading to BimlFlex 2024, it is mandatory to also upgrade the BimlCatalog across all your environments. This update introduces the SourceScopedName and TargetScopedName parameters, enhancing runtime debugging capabilities, particularly within Azure Data Factory with limitations related to pipeline name lengths.
+>
+> **Action Required**: All SSIS packages and ADF pipelines must be redeployed following the upgrade. This step is crucial for ensuring compatibility and taking full advantage of the new features.
+
 ## Installation
 
 BimlFlex 2024 R1 is installed and upgraded through a single consolidated installer.
