@@ -22,21 +22,20 @@ Varigence is excited to release the 2024 R1 version of the BimlFlex platform for
 >
 > **Action Required**: All SSIS packages and ADF pipelines must be redeployed following the upgrade. This step is crucial for ensuring compatibility and taking full advantage of the new features.
 
+<!--START:ONLINE-ONLY-->
 ## Installation
 
 BimlFlex 2024 R1 is installed and upgraded through a single consolidated installer.
 
-<!--
-MANUALLY UPDATE BUILD NUMBER UPON RELEASE
--->
-
-Build 24.1.325.0, release date: 16 Jun 2024
+<!-- MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
+Build 24.1.348.0, release date: 16 Jun 2024
 
 >
-* [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.1.325.0.exe). This installer includes all BimlFlex components for 64-bit
-* [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.1.325.0.exe). This installer includes all BimlFlex components for 32-bit
-* [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.1.325.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit.
-* [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.1.325.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit.
+* [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.1.348.0.exe). This installer includes all BimlFlex components for 64-bit
+* [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.1.348.0.exe). This installer includes all BimlFlex components for 32-bit
+* [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.1.348.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit.
+* [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.1.348.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit.
+<!--END:ONLINE-ONLY-->
 
 ## Installer File Enhancements
 
