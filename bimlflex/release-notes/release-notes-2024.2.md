@@ -1,12 +1,12 @@
 ---
-uid: bimlflex-release-notes-2024-r1
-name: BimlFlex Release Notes 2024 R1
-summary: Release Notes for BimlFlex 2024 R1
+uid: bimlflex-release-notes-2024-r2
+name: BimlFlex Release Notes 2024 R2
+summary: Release Notes for BimlFlex 2024 R2
 ---
 
 # Release Notes
 
-Varigence is excited to release the 2024 R1 version of the BimlFlex platform for data solution automation!
+Varigence is excited to release the 2024 R2 version of the BimlFlex platform for data solution automation!
 
 > [!NOTE]
 >
