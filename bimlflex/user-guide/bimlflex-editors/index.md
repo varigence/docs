@@ -3,11 +3,11 @@ uid: bimlflex-editors-overview
 title: BimlFlex Editors Overview
 summary: Overview of BimlFlex metadata editors with links to BimlFlex tour, dashboard, and editors
 ---
-# BimlFlex ApplicationOverview
+# BimlFlex Application Overview
 
 [!include[Connections](../includes/_incl-header-bimlflex-app.md)]
 
-## BimlFlex ApplicationComponents
+## BimlFlex Application Components
 
 ### Overviews
 
