@@ -57,6 +57,8 @@ Users can now import entities of any type from a CSV file.
 
 BimlFlex templates have been updated to incorporate schemachange (formerly "snowchange") functionality, futher enhancing its ability to manage Snowflake objects.
 
+Additional information regarding schemachange can be found at the [Snowflake Labs GitHub](https://github.com/Snowflake-Labs/schemachange) and the [Snowflake Quickstart Guide](https://quickstarts.snowflake.com/guide/devops_dcm_schemachange_github/#0).
+
 ### Business Modelling
 
 #### Batch Save Model
