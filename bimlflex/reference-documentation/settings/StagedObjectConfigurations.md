@@ -6,7 +6,7 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Staged Object Configurations
+# Configurations
 
 Choose how to handle the StagingAttribute for each object. Options include `Derived`, `Source`, and `Inherit`. This setting allows you to override the default behavior for greater customization.
 

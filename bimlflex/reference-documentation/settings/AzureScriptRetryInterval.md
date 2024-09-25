@@ -12,5 +12,5 @@ The number of seconds between each retry attempt for Azure Script Activity.
 
 Notes:
 
-* This setting is part of the *Azure Script* settings category.
+* This setting is part of the *Azure Activity* settings category.
 * The default value for this setting is `30`.

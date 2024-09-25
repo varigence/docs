@@ -8,7 +8,7 @@ varigenceArticleType: Reference
 
 # Default Schema
 
-The default schema to use for the Data Vault.
+The default schema to use for the Data Vault in the Accelerator.
 
 Notes:
 

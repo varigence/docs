@@ -12,5 +12,5 @@ The default Timeout used for the Azure Script Activity in Azure Data Factory.
 
 Notes:
 
-* This setting is part of the *Azure Script* settings category.
+* This setting is part of the *Azure Activity* settings category.
 * The default value for this setting is `0.12:00:00`.

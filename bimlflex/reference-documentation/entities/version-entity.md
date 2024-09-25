@@ -16,7 +16,7 @@ The Version concept supports management of changes in metadata over time. These 
 | <div style="width:200px">Property</div> | Description |
 | --------- | ----------- |
 |Name | The name of the selected Version.|
-|Current | Identifier that defines if the Version is current. Only current Versions are visible in the BimlFlex version selection.|
+|Is Current | Identifier that defines if the Version is current. Only current Versions are visible in the BimlFlex version selection.|
 |Effective From Date | The date / time the Version is active from (validity period).|
 |Effective To Date | The date / time the Version is active to (validity period).|
 |Comments | Optional free-format notes about the Version.|

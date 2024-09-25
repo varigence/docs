@@ -6,11 +6,11 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Constraint Mode DM
+# Constraint Mode
 
 The table reference constraint mode to apply for the Data Mart database. Allowed values are `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`.
 
 Notes:
 
-* This setting is part of the *Orchestration* settings category.
+* This setting is part of the *Data Mart* settings category.
 * The default value for this setting is `DoNotCreate`.

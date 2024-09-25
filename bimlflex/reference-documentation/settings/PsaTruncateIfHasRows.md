@@ -6,9 +6,9 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Truncate PSA If Has Rows
+# Truncate If Source Has Rows
 
-Determines if the PSA table should be truncated if it already contains records. This should be disabled for normal PSA behavior. Enable this for specific requirements where previously loaded rows should be discarded.
+Checks if the Persistent Staging Area (PSA) should be truncated if there is source data pending processing. Currently, this feature is not supported in Databricks and Snowflake environments.
 
 Notes:
 

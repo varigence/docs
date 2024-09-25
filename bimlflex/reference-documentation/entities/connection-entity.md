@@ -23,7 +23,7 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |External Location | The external storage location associated with the connection.|
 |Persist History | For a Connection with the Integration Stage of Source System, this setting manages history tracking in the Persistent Staging Area (PSA) corresponding to the Connection. This requires a Persistent Staging Connection to be defined in the Project that uses the Source Connection. If this setting is disabled (but a PSA connection is configured), the PSA database only maintains the most recent change (state). This way, the PSA becomes an Operational Data Store (ODS) containing only the most recently received data but no history. Having a current-state only PSA can be useful to provide as an ODS, and can be delivered quickly using the source metadata.|
 |Use Temporal Tables | Temporal tables (also known as system-versioned temporal tables) supports providing data as it was at an historical point in time, rather than only showing the data available at the current point in time. By enabling Temporal Tables in BimlFlex, the Objects belonging to the selected Connection will be created using Temporal Table syntax. This enables data to be be queried at a specific point-in-time following the supported SQL Server syntax. In BimlFlex, this is only supported for Persistent Staging Area connections, and only applies to SQL Server database (either on-premise, or made accessible via a self-hosted integration runtime), Managed Instance, or Azure SQL databases.|
-|Number of Threads | The number of threads a data logistics process can use to split the workload at runtime using the selected connection. The default is 1. The amount of threads can be redefined at the object level. When using SSIS, this attribute is only used in the SRC – STG template with the Balance Data Distributor to allow for greater parallelism. Only define a value greater than zero if the server has enough CPU and Memory to accommodate additional threads.|
+|Threads | The number of threads a data logistics process can use to split the workload at runtime using the selected connection. The default is 1. The amount of threads can be redefined at the object level. When using SSIS, this attribute is only used in the SRC – STG template with the Balance Data Distributor to allow for greater parallelism. Only define a value greater than zero if the server has enough CPU and Memory to accommodate additional threads.|
 |Exclude from Model | Hide the Connection from the model. Can still be seen if the user has Show Excluded enabled.|
 |Display Folder | Display Folder is used for grouping Connections and their Datasets.|
 |Data Source | Name of the server the Connection points to. This is usually omitted as a separate configuration because defining this in the Connection String is sufficient.|
@@ -40,73 +40,73 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Linked Service Connection String Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Connection String. If omitted, the most recent version is used.|
 |Linked Service Password Key Vault Secret Name | Specifies the name of the Key Vault Secret to use for the password.|
 |Linked Service Password Key Vault Secret Version | Specifies the Version of the Key Vault Secret for the password. If omitted, the most recent version is used.|
-|Linked Service Principal Id | The Id of the client credential required to access the Linked Service.|
-|Linked Service Principal Key | The key required to access the Linked Service.|
+|Service Principal Id | The Id of the client credential required to access the Linked Service.|
+|Service Principal Key | The key required to access the Linked Service.|
 |Linked Service Principal Key Vault Secret Name | Specifies the name of the Key Vault Secret to use.|
 |Linked Service Principal Key Vault Secret Version | Specifies the Version of the Key Vault Secret for the Service Principal. If omitted, the most recent version is used.|
-|Linked Service Tenant | Domain or Tenant Id that hosts the application.|
+|Tenant | Domain or Tenant Id that hosts the application.|
 |Linked Service User Name | Specifies the User Name when not using Windows Authentication.|
 |Linked Service Password | Specifies the Password when not using Windows Authentication.|
 |Linked Service Authentication Method | Specifies the authentication method for the Azure Data Factory Linked Service.|
-|Linked Service Account Key | The acccess key used to authenticate to the specified storage account name or endpoint.|
-|Linked Service Account Key Key Vault Secret Name | Specifies the name of the Key Vault Secret that contains the Account Key.|
-|Linked Service Account Key Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Account Key. If omitted, the most recent version is used.|
-|Linked Service Database Name | The name of the database to connect to using the Linked Service.|
+|Storage Account Key | The acccess key used to authenticate to the specified storage account name or endpoint.|
+|Linked Service Account Key Vault Secret Name | Specifies the name of the Key Vault Secret that contains the Account Key.|
+|Linked Service Account Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Account Key. If omitted, the most recent version is used.|
+|Database Name | The name of the database to connect to using the Linked Service.|
 |Linked Service Credential | Specifies the credential portion of the connection string. This is done in a key/value format that is also driver-specific.|
 |Linked Service Credential Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Credential.|
 |Linked Service Credential Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Credential. If omitted, the most recent version is used.|
-|Linked Service Authentication Type | Apecifies the type of authentication that is used for accessing the ODBC data store. The supported types are Basic and Anonymous.|
-|Linked Service Server Name | Specifies the name of the Server that the Azure Data Factory Linked Service will connect to.|
+|Authentication Type | Apecifies the type of authentication that is used for accessing the ODBC data store. The supported types are Basic and Anonymous.|
+|Server Name | Specifies the name of the Server that the Azure Data Factory Linked Service will connect to.|
 |Linked Service Credential String Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Credential String.|
 |Linked Service Credential String Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Credential String. If omitted, the most recent version is used.|
 |Linked Service Encryped Credential | Specifies the encrypted credential that will be used to authenticate the Azure Data Factory Linked Service.|
-|Linked Service SAS URI | Specifies the Shared Access Signature URI that contains information necessary to connect to the Azure Data Factory Linked Service.|
+|SAS URL | Specifies the Shared Access Signature URI that contains information necessary to connect to the Azure Data Factory Linked Service.|
 |Linked Service SAS URI Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Shared Access Signature (SAS) URI.|
 |Linked Service SAS URI Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Shared Access Signature (SAS) URI. If omitted, the most recent version is used.|
 |Linked Service SAS Token Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Shared Access Signature (SAS) Token.|
 |Linked Service SAS Token Key Vault Secret Version | Specifies the Version of the Azure Key Vault (AKV) Secret that contains the Shared Access Signature (SAS) Token. If omitted, the most recent version is used.|
-|Linked Service Endpoint | URL that hosts the Azure Blob Storage.|
-|Linked Service URL | Specify the URL of the instance, API or endpoint to connect to (e.g. https://login.salesforce.com for Salesforce).|
+|Endpoint Suffix | URL that hosts the Azure Blob Storage.|
+|Linked Service Url | Specify the URL of the instance, API or endpoint to connect to (e.g. https://login.salesforce.com for Salesforce).|
 |Linked Service Deployment Type | Specifies the type of Dynamics instance that will be used. Permitted values are Online and OnPremisesWithIfd.|
-|Linked Service Organization | Specifies the name of the organization for the Dynamics CRM instance.|
-|Linked Service Host | Specifies the Host Name for on-premise Dynamics CRM instances.|
-|Linked Service Service URI | Specifies the address of the Dynamics instance. Typically in the form of: https://adfdynamics.crm.dynamics.com.|
-|Dynamics CRM Linked Service Port Number | Specifies the port for on-premise Dynamics CRM instances. If omitted then port 443 will be used.|
-|Linked Service Enable SSL | Enable Secure Socket Layer (SSL) as a property for the generated Linked Service.|
-|Linked Service Enable Certificate Validation | Enable the validation of the security certificate as a property for the generated Linked Service.|
-|Linked Service Skip Host Key Validation | Skip the Host Key Valiation for the generated Linked Service.|
-|Linked Service Host Key Fingerprint | Ensure that the Host Key Fingerprint is applied as property for Linked Service SSH connections.|
+|Organization Name | Specifies the name of the organization for the Dynamics CRM instance.|
+|Host | Specifies the Host Name for on-premise Dynamics CRM instances.|
+|Service Uri | Specifies the address of the Dynamics instance. Typically in the form of: https://adfdynamics.crm.dynamics.com.|
+|Port | Specifies the port for on-premise Dynamics CRM instances. If omitted then port 443 will be used.|
+|Enable SSL | Enable Secure Socket Layer (SSL) as a property for the generated Linked Service.|
+|Enable Server Certificate Validation | Enable the validation of the security certificate as a property for the generated Linked Service.|
+|SSH Host Key Validation | Skip the Host Key Valiation for the generated Linked Service.|
+|SSH Host Key Finger-print | Ensure that the Host Key Fingerprint is applied as property for Linked Service SSH connections.|
 |Linked Service Passphrase | The passphrase to be used for the Linked Service.|
 |Linked Service Pass Phrase Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Pass Phrase.|
 |Linked Service Pass Phrase Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Pass Phrase. If omitted, the most recent version is used.|
 |Private Key Type | The type of the private key used in this connection.|
-|Linked Service Private Key Content | The way the Private Key information is provided for the Linked Service.|
+|Private Key Content | The way the Private Key information is provided for the Linked Service.|
 |Linked Service PrivateKey Content Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the PrivateKey Content.|
 |Linked Service PrivateKey Content Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the PrivateKey Content. If omitted, the most recent version is used.|
 |Linked Service Private Key Path | The location of the Private Key for the Linked Service.|
-|Linked Service Security Token Authentication | Specifies the Security Token to use for authentication.|
+|Security Token | Specifies the Security Token to use for authentication.|
 |Linked Service Security Token Key Vault Secret Name | Specifies the Name of the Key Vault Secret that contains the Security Token.|
 |Linked Service Security Token Key Vault Secret Version | Specifies the Version of the Key Vault Secret that contains the Security Token. If omitted, the most recent version is used.|
 |Linked Service Salesforce API Version | For Salesforce Connections only. Specify the Salesforce REST/Bulk API version to use, e.g. 52.0.|
-|Databricks Access Token | The access token for connecting to Databricks.|
+|Access Token | The access token for connecting to Databricks.|
 |Databricks Access Token KVS Secret Name | The name of the Key Vault Secret containing the Databricks access token.|
 |Databricks Access Token KVS Secret Version | The version of the Key Vault Secret containing the Databricks access token.|
-|Databricks Workspace Resource ID | The resource identifier for the Databricks Workspace.|
-|Databricks Existing Cluster ID | The identifier for an existing Databricks cluster that this connection uses.|
-|Databricks Instance Pool ID | The identifier for a Databricks instance pool.|
-|Databricks New Cluster Version | The version of Databricks runtime for a new cluster.|
-|Databricks New Cluster Node Type | The node type for a new Databricks cluster.|
-|Databricks New Cluster Option | Configuration options for creating a new Databricks cluster.|
-|Number of Workers | Specifies the number of worker nodes in the Databricks cluster.|
-|Spark Configuration | Configuration settings for the Spark session on the Databricks cluster.|
-|Spark Environment Variables | Environment variables for the Spark session on the Databricks cluster.|
-|Custom Tags | Custom tags associated with the Databricks cluster.|
-|Initialization Scripts | Scripts to run when the Databricks cluster is initialized.|
-|Log Destination | Destination path where the logs of Databricks cluster are stored.|
-|Salesforce Service URL | For Salesforce Connections only, this is the URL or endpoint to connect to the Salesforce service.|
-|Salesforce API Version | For Salesforce Connections only. Specify the Salesforce REST/Bulk API version to use, e.g. 52.0.|
-|Salesforce Consumer Key | For Salesforce Connections only, the consumer key is used to authenticate to Salesforce together with the consumer secret.|
-|Salesforce Consumer Secret | For Salesforce Connections only, the consumer secret is used to authenticate to Salesforce together with the consumer key.|
+|Workspace Resource ID | The resource identifier for the Databricks Workspace.|
+|Existing Cluster ID | The identifier for an existing Databricks cluster that this connection uses.|
+|Existing Pool ID | The identifier for a Databricks instance pool.|
+|Cluster Version | The version of Databricks runtime for a new cluster.|
+|Cluster Node Type | The node type for a new Databricks cluster.|
+|Worker Option | Configuration options for creating a new Databricks cluster.|
+|Workers | Specifies the number of worker nodes in the Databricks cluster.|
+|Cluster Spark Config | Configuration settings for the Spark session on the Databricks cluster.|
+|Cluster Spark Environment Variables | Environment variables for the Spark session on the Databricks cluster.|
+|Cluster Custom Tags | Custom tags associated with the Databricks cluster.|
+|Databricks Init Scripts | Scripts to run when the Databricks cluster is initialized.|
+|Cluster Log Dbfs Destination | Destination path where the logs of Databricks cluster are stored.|
+|Salesforce Service Url | For Salesforce Connections only, this is the URL or endpoint to connect to the Salesforce service.|
+|API Version | For Salesforce Connections only. Specify the Salesforce REST/Bulk API version to use, e.g. 52.0.|
+|Consumer Key | For Salesforce Connections only, the consumer key is used to authenticate to Salesforce together with the consumer secret.|
+|Consumer Secret | For Salesforce Connections only, the consumer secret is used to authenticate to Salesforce together with the consumer key.|
 
 ## References
   
@@ -122,7 +122,7 @@ The BimlFlex [**Connections**](xref:bimlflex-connection-editor) provide the info
 |Linked Service Connection String Key Vault | The reference to the Azure Key Vault Linked Service that contains the Connection String secret.|
 |Linked Service Password Key Vault | The reference to the Azure Key Vault Linked Service that contains the password secret.|
 |Linked Service Principal Key Vault | The reference to the Azure Key Vault Linked Service that contains the Service Principal secret.|
-|Linked Service Account Key Key Vault | The reference to the Azure Key Vault Linked Service that contains the Account Key secret.|
+|Linked Service Account Key Vault | The reference to the Azure Key Vault Linked Service that contains the Account Key secret.|
 |Linked Service Credential Key Vault | The reference to the Azure Key Vault Linked Service that contains the Credential secret.|
 |Linked Service Credential String Key Vault | The reference to the Azure Key Vault Linked Service that contains the Credential String secret.|
 |Linked Service SAS URI Key Vault | The reference to the Azure Key Vault (AKV) Linked Service that contains the Shared Access Signature (SAS) URI secret.|

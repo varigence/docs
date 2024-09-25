@@ -8,11 +8,7 @@ varigenceArticleType: Reference
 
 # Delta Collapse Rows
 
-FUTURE PLACEHOLDER: Should the PSA Processing apply row collapsing logic.
-
-Assuming the FlexRowEffectiveDateTime for a given set of rows is sequential but different, but the row values (checksum) is the same for these rows only the first row is retained.
-
-This row contains the actual change, and any subsequent rows in this set will be discarded as full-row duplicates even though the timestamp is different.
+Enables row collapsing in Persistent Staging Area (PSA) Processing by retaining the first row of sequences with identical values and differing timestamps, discarding subsequent duplicates to enhance storage efficiency.
 
 Notes:
 

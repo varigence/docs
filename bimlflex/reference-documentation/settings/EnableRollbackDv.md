@@ -6,11 +6,11 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Rollback DV
+# Enable Rollback
 
-Determines if the Batch orchestration engine rolls back (deletes) committed changes to the Data Vault database in case of a failed process.
+For SSIS Only. Determines if the Batch orchestration engine rolls back (deletes) committed changes to the Data Vault database in case of a failed process.
 
 Notes:
 
-* This setting is part of the *Orchestration* settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `N`.

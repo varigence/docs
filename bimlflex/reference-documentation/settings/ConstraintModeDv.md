@@ -6,11 +6,11 @@ varigenceProduct: BimlFlex
 varigenceArticleType: Reference
 ---
 
-# Constraint Mode DV
+# Constraint Mode
 
 The table reference constraint mode to apply for the Data Vault database. Allowed values are `DoNotCreate`, `CreateAndNoCheck` and `CreateAndCheck`.
 
 Notes:
 
-* This setting is part of the *Orchestration* settings category.
+* This setting is part of the *Data Vault* settings category.
 * The default value for this setting is `DoNotCreate`.

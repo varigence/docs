@@ -12,5 +12,5 @@ Allows for customization of log capture and storage during script execution. Fac
 
 Notes:
 
-* This setting is part of the *Azure Script* settings category.
+* This setting is part of the *Azure Activity* settings category.
 * The default value for this setting is `LogDestination="ActivityOutput"`.

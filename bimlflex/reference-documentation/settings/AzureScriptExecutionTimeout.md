@@ -12,4 +12,4 @@ The wait time in minutes for the script block execution operation to complete be
 
 Notes:
 
-* This setting is part of the *Azure Script* settings category.
+* This setting is part of the *Azure Activity* settings category.

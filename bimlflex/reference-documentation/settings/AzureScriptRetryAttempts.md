@@ -12,5 +12,5 @@ Maximum amount of time the Azure Script Activity can run. Default is 7 days. For
 
 Notes:
 
-* This setting is part of the *Azure Script* settings category.
+* This setting is part of the *Azure Activity* settings category.
 * The default value for this setting is `0`.

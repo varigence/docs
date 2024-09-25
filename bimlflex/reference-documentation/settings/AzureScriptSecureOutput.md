@@ -12,4 +12,4 @@ When enabled, output from the Azure Script Activity will not be captured in Azur
 
 Notes:
 
-* This setting is part of the *Azure Script* settings category.
+* This setting is part of the *Azure Activity* settings category.
