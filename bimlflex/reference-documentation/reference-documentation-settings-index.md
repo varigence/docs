@@ -291,6 +291,10 @@ Align these settings with the organizations best practices and environmental req
 |[Change References To Integration Key](xref:bimlflex-reference-documentation-setting-ChangeReferencesToIntegrationKey) |![Text Datatype](../static/svg/boolean.svg "Boolean Datatype")|Determines if the Import Metadata feature adds derived Integration Keys based on source references, or use source columns for references.|
 |[Import Views](xref:bimlflex-reference-documentation-setting-ImportViews) |![Text Datatype](../static/svg/boolean.svg "Boolean Datatype")|Determines if database Views are imported when importing Metadata.|
 |[Integration Key Concatenation Order](xref:bimlflex-reference-documentation-setting-IntegrationKeyConcatenationOrder) |![Text Datatype](../static/svg/text.svg "Text Datatype")|Determines the column order in the derived Integration Key.|
+|[FlexToBk on IntegrationKey](xref:bimlflex-reference-documentation-setting-ValidateFlexToBkOnIntegrationKey) |![Text Datatype](../static/svg/boolean.svg "Boolean Datatype")|Enable this setting to verify that all source objects define the `FlexToBk` expression for their integration keys.|
+|[FlexToBk on Reference](xref:bimlflex-reference-documentation-setting-ValidateFlexToBkOnReferenceKey) |![Text Datatype](../static/svg/boolean.svg "Boolean Datatype")|Enable this setting to verify that all source objects define the `FlexToBk` expression for their reference keys.|
+|[FlexToBk on Reference](xref:bimlflex-reference-documentation-setting-ValidateFlexToBkOnReferenceKey) |![Text Datatype](../static/svg/boolean.svg "Boolean Datatype")|Enable this setting to verify that all source objects define the `FlexToBk` expression for their reference keys.|
+|[@@rs on FlexToBk](xref:bimlflex-reference-documentation-setting-ValidateRecordSourceOnFlexToBk) |![Text Datatype](../static/svg/boolean.svg "Boolean Datatype")|Enable this setting to verify that all keys using the FlexToBk expression include the @@rs parameter for source objects.|
 
 ## Naming
   
