@@ -1,12 +1,12 @@
 ---
-uid: bimlflex-release-notes-2024-Sept
-name: BimlFlex Release Notes Sept 2024
-summary: Release Notes for BimlFlex Sept 2024 September
+uid: bimlflex-release-notes-2024-Oct
+name: BimlFlex Release Notes Oct
+summary: Release Notes for BimlFlex Oct 2024
 ---
 
 # Release Notes
 
-Varigence is excited to release the September 2024 version of the BimlFlex platform for data solution automation!
+Varigence is excited to release the October 2024 version of the BimlFlex platform for data solution automation!
 
 > [!NOTE]
 >
@@ -18,7 +18,7 @@ Varigence is excited to release the September 2024 version of the BimlFlex platf
 > **New Naming Convention for Release Notes**
 >
 > Varigence has implemented a new naming convention for all upcoming release notes. The first release of each new year will be named after the year alone (e.g., the first release of 2025 will be titled "BimlFlex 2025"). Subsequent releases within the same year will be named after the year and the month of the release. 
-> This current release, expected to be "BimlFlex 2024 R2" will be named "BimlFlex September 2024." 
+> This current release, expected to be "BimlFlex 2024 R2" will be named "BimlFlex October 2024." 
 > This naming convention is designed to align with the release note structures of other popular applications, such as VS Code, Microsoft Office, and Adobe Creative Cloud.
 > Users can verify their version number within the application to determine the corresponding release notes. 
 >
@@ -31,10 +31,10 @@ Varigence is excited to release the September 2024 version of the BimlFlex platf
 <!--START:ONLINE-ONLY-->
 ## Installation
 
-BimlFlex September 2024 is installed and upgraded through a single consolidated installer.
+BimlFlex October 2024 is installed and upgraded through a single consolidated installer.
 
 <!-- MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
-Build 24.1.348.0, release date: xx Sept 2024
+Build 24.1.348.0, release date: xx Oct 2024
 
 >
 * [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.1.348.0.exe). This installer includes all BimlFlex components for 64-bit
@@ -43,7 +43,7 @@ Build 24.1.348.0, release date: xx Sept 2024
 * [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.1.348.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit.
 <!--END:ONLINE-ONLY-->
 
-## Sept 2024 - New Features
+## Oct 2024 - New Features
 
 ### Metadata Import
 
@@ -65,7 +65,7 @@ Additional information regarding schemachange can be found at the [Snowflake Lab
 
 benefit of batch save model
 
-## Sept 2024 - Enhancements and New Settings
+## Oct 2024 - Enhancements and New Settings
 
 ### Installer File Enhancements
 
@@ -75,7 +75,7 @@ benefit of batch save model
 
 ### Metadata Editors
 
-#### Colum Mapping Grid Experience
+#### Column Mapping Grid Experience
 
 * change
 
