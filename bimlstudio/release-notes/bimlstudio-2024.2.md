@@ -16,24 +16,30 @@ BimlStudio October 2024 is installed and upgraded through a single consolidated 
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
 
-Build 24.2.xxx.0, release date: xx Oct 2024
+Build 24.2.121.0, release date: 16 Oct 2024
 
-* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_23.1.457.0.exe)
-* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlflexruntimesetup_x86_23.1.457.0.exe)
+* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_24.2.121.0.exe)
+* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.2.121.0.exe)
 
-## Oct 2024 \* New Features
 
-### feature 1
+## Azure Data Factory
 
-### feature 2
+- Added support for the new SnowflakeV2 Linked Service. This is referenced with the 'Snowflake' element in Biml and the previous linked service is referenced with the 'SnowflakeLegacy' element
+- Added support for the new MySqlV2 Linked Service. This is referenced with the 'MySql' element in Biml and the previous linked service is referenced with the 'MySqlLegacy' element
+- Added support for the new PostgreSqlV2 Linked Service. This is referenced with the 'PostgreSql' element in Biml and the previous linked service is referenced with the 'PostgreSqlLegacy' element
+- Added support for the new MariaDB Linked Service encoding, which was changed by the ADF team without preserving legacy support
 
-### feature 3
+## Script Components
 
-## Oct 2024 \* Enhancements and New Settings
+- Updated Script component emission to use VSTAMajorVersion of 16 when targeting SQL Server Integration Services (SSIS) 2022 or later
+- 
+## Metadata Import
 
-### new thing 1
+- Fixed metadata import data type mapping when the source connection is parameterized
+- Added import of views across all system types
 
-### new thing 2
+## Multi-Factor Authentication (MFA) Improvements
 
-### new thing 3
+- Improvements to BimlStudio MFA handling across app and helper APIs
+- Added command line option to disable the token cache in BimlStudio builds for customers with restrictive MSAL policies
 
