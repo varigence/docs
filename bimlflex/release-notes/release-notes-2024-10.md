@@ -23,9 +23,11 @@ Varigence is excited to release the October 2024 version of the BimlFlex platfor
 > This naming convention is designed to better communicate the timing of releases and to align with naming of other popular applications with multiple releases per year.
 > Users can verify their version number within the application to determine the corresponding release notes.
 
-> [!IMPORTANT] > **Important Update for BimlFlex 2024 Upgrade**
+> [!IMPORTANT] 
+> 
+>**Important Update for BimlFlex 2024 Upgrade**
 >
-> When upgrading to BimlFlex 2024, it is mandatory to also upgrade the BimlCatalog across all your environments. This update introduces the SourceScopedName and TargetScopedName parameters, enhancing runtime debugging capabilities, particularly within Azure Data Factory with limitations related to pipeline name lengths.
+> When upgrading to BimlFlex 2024, it is mandatory to also upgrade the BimlCatalog across all of your environments. This update introduces the SourceScopedName and TargetScopedName parameters, enhancing runtime debugging capabilities, particularly within Azure Data Factory with limitations related to pipeline name lengths.
 >
 > **Action Required**: All SSIS packages and ADF pipelines must be redeployed following the upgrade. This step is crucial for ensuring compatibility and taking full advantage of the new features.
 
@@ -35,7 +37,7 @@ Varigence is excited to release the October 2024 version of the BimlFlex platfor
 
 BimlFlex October 2024 is installed and upgraded through a single consolidated installer.
 
-<!-\* MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
+<!--\* MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
 
 Build 24.2.125.0, release date: 16 Oct 2024
 
@@ -43,8 +45,8 @@ Build 24.2.125.0, release date: 16 Oct 2024
 
 - [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.2.125.0.exe). This installer includes all BimlFlex components for 64-bit
 - [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.2.125.0.exe). This installer includes all BimlFlex components for 32-bit
-- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.2.125.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit.
-- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.2.125.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit.
+- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.2.125.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
+- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.2.125.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
 <!--END:ONLINE-ONLY-->
 
 ## Oct 2024 \* New Features
@@ -59,7 +61,7 @@ BimlFlex templates have been updated to incorporate schemachange (formerly "snow
 
 Additional information regarding schemachange can be found at the [Snowflake Labs GitHub](https://github.com/Snowflake-Labs/schemachange) and the [Snowflake Quickstart Guide](https://quickstarts.snowflake.com/guide/devops_dcm_schemachange_github/#0).
 
-Enable the use of database variables for compatability with SchemaChange for dynamic cross-database interactions with the `Snowflake Use Database References` and `Snowflake Database Variable` setting.
+Enable the use of database variables for compatability with schemachange for dynamic cross-database interactions with the `Snowflake Use Database References` and `Snowflake Database Variable` settings.
 
 ### Business Modeling Save Paradigm
 
@@ -100,13 +102,13 @@ Enable the use of database variables for compatability with SchemaChange for dyn
 
 #### Project Editor
 
-- Added Persistent Landing Connection selector for Projects that use Pushdown Extraction with Source Connections that reference Azure Blob Storage or Azure Data Lake Store.
+- Added Persistent Landing Connection selector for Projects that use Pushdown Extraction with Source Connections that reference Azure Blob Storage or Azure Data Lake Store
 
 ### Modeling
 
 #### Business Entity Editor
 
-- Fixed issue where naming conventions were being automatically applied for Business Entities even after manual editing
+- Fixed an issue where naming conventions were being automatically applied for Business Entities even after manual editing
 
 #### Business Attribute Editor and Grid
 
@@ -117,53 +119,53 @@ Enable the use of database variables for compatability with SchemaChange for dyn
 - Improved Accelerator DBType inference to include the specified Element, if any
 - Enhanced Accelerator Type inference to use mapped Business Entity Object Types
 - Fixed some cases where the Accelerator detected potential changes to publish despite the model semantics remaining the same
-- Fixed issue where the Accelerator was not creating LSATs for Links with some Business Subjects
+- Fixed an issue where the Accelerator was not creating LSATs for Links with some Business Subjects
 
 ### Shared Components
 
 #### Pending Entity Changes Summary
 
-- Added tabs for changes in accelerator that will be applied on Save vs Publish
+- Added tabs for changes in the Accelerator that will be applied on Save versus Publish
 - Included newly added entities to the pending changes list
 - Improved formatting, especially for large numbers of pending changes
 
 #### Column Mapping Grid Experience
 
-- Many fields in entity grids that were not previously editable can now be edited inline.
+- Many fields in entity grids that were not previously editable can now be edited inline
 - Enhanced styling for added, edited, and validations
 
 #### Navigation Guards
 
-- Many instances of blocked navigation due to background changes have been resolved.
+- Many instances of blocked navigation due to background changes have been resolved
 - The navigation guard confirmation dialog box is now consistent with BimlFlex styling
-- Fixed issue where entity duplication would result in a navigation guard
+- Fixed an issue where entity duplication would result in a navigation guard
 
 #### Validators
 
-- Added Column validator to ensure that TargetColumn is specified for columns with a change type of Hub Reference, Link Reference, or Link Satellite Reference.
-- Fixed BimlCatalog validator to always fire when BimlCatalog is deleted \* even if 'Show Deleted' is enabled.
-- Previously, all Version not marked as IsCurrent were producing a global validation warning that polluted the validation list. This validation is now only shown in the context of the Version editor.
+- Added Column validator to ensure that TargetColumn is specified for columns with a change type of Hub Reference, Link Reference, or Link Satellite Reference
+- Fixed BimlCatalog validator to always fire when BimlCatalog is deleted, \*\*even if 'Show Deleted' is enabled\*\*
+- Previously, all Version not marked as IsCurrent were producing a global validation warning that polluted the validation list. This validation is now only shown in the context of the Version editor
 
 #### Metadata Import
 
-- Fixed metadata import data type mapping when the source connection is parameterized.
+- Fixed metadata import data type mapping when the source connection is parameterized
 - Added import of views across all system types
 
 ### Code Generation
 
 #### Data Vault
 
-- Fixed issue where FlexRowHash was being incorrectly inserted in some generated stored procedures when PSA was disabled on the corresponding Objects.
-- Updated the `Point In Time` and `Bridge` artifacts to utilize MERGE statements, significantly improving the efficiency and performance of data loading processes.
-- Added setting `Bridge Add SurrogateKey` to toggle the use of a concatenated surrogate key in the `Bridge` table, comprising the Link keys. This is enabled by default to allow backward compatability.
-- Added setting `Pit Add SurrogateKey` to toggle the use of a concatenated surrogate key in the `PointInTime` table, comprising the Hub key and the RowEffectiveFromDate.
+- Fixed an issue where FlexRowHash was being incorrectly inserted in some generated stored procedures when PSA was disabled on the corresponding Objects
+- Updated the `Point In Time` and `Bridge` artifacts to utilize MERGE statements, significantly improving the efficiency and performance of data loading processes
+- Added setting `Bridge Add SurrogateKey` to toggle the use of a concatenated surrogate key in the `Bridge` table, comprising the Link keys. This is enabled by default to allow backward compatability
+- Added setting `Pit Add SurrogateKey` to toggle the use of a concatenated surrogate key in the `PointInTime` table, comprising the Hub key and the RowEffectiveFromDate
 
 #### Azure Data Factory
 
-- Added support for the new SnowflakeV2 Linked Service. This is referenced with the 'Snowflake' element in Biml and the previous linked service is referenced with the 'SnowflakeLegacy' element.
-- Added support for the new MySqlV2 Linked Service. This is referenced with the 'MySql' element in Biml and the previous linked service is referenced with the 'MySqlLegacy' element.
-- Added support for the new PostgreSqlV2 Linked Service. This is referenced with the 'PostgreSql' element in Biml and the previous linked service is referenced with the 'PostgreSqlLegacy' element.
-- Added support for the new MariaDB Linked Service encoding, which was changed by the ADF team without preserving legacy support.
+- Added support for the new SnowflakeV2 Linked Service. This is referenced with the 'Snowflake' element in Biml and the previous linked service is referenced with the 'SnowflakeLegacy' element
+- Added support for the new MySqlV2 Linked Service. This is referenced with the 'MySql' element in Biml and the previous linked service is referenced with the 'MySqlLegacy' element
+- Added support for the new PostgreSqlV2 Linked Service. This is referenced with the 'PostgreSql' element in Biml and the previous linked service is referenced with the 'PostgreSqlLegacy' element
+- Added support for the new MariaDB Linked Service encoding, which was changed by the ADF team without preserving legacy support
 - Added setting for Activity Limit to increase the number of activities in a single pipeline to up to 80, enabling more parallel calls, especially beneficial for batch pipelines
 
 #### Script Components
@@ -172,5 +174,5 @@ Enable the use of database variables for compatability with SchemaChange for dyn
 
 #### System Column Placement
 
-- Added support to control the placement of system columns relative to the defined table columns based on configurations. Choose whether system columns should be added before or after the table columns.
-- System columns can now be added before table columns to ensure compatibility with Snowflake's `CREATE OR ALTER TABLE` statements and to facilitate modifications of Data Vault Satellite structures.
+- Added support to control the placement of system columns relative to the defined table columns based on configurations. Choose whether system columns should be added before or after the table columns
+- System columns can now be added before table columns to ensure compatibility with Snowflake's `CREATE OR ALTER TABLE` statements and to facilitate modifications of Data Vault Satellite structures
