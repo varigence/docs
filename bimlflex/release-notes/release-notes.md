@@ -67,7 +67,7 @@ Enable the use of database variables for compatability with schemachange for dyn
 
 - Business modeling now enables the user to make changes across multiple kanban cards, dialog boxes, and side bars. These changes are kept pending and can be viewed in the Pending Entity Changes Summary dialog. All of the changes can be saved or discarded in bulk or individual changes can be reversed through the dialog. The save paradigm for Business Modeling now matches the other modeling screens such as Schema Diagram and Accelerator.
 
-#### Views
+### Views
 
 - Introduced support for `Persistent` and `Data Vault` views, including end-dating capabilities for current data, enabling efficient point-in-time querying.
 - Introduced `Persistent Views` to enable querying or reloading historical data seamlessly.

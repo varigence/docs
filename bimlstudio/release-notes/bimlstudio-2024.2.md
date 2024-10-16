@@ -32,7 +32,7 @@ Build 24.2.122.0, release date: 16 Oct 2024
 ## Script Components
 
 - Updated Script component emission to use VSTAMajorVersion of 16 when targeting SQL Server Integration Services (SSIS) 2022 or later
-- 
+
 ## Metadata Import
 
 - Fixed metadata import data type mapping when the source connection is parameterized
