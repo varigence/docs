@@ -32,7 +32,7 @@ BimlFlex November 2024 is installed and upgraded through a single consolidated i
 
 <!--\* MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
 
-Build 24.3.xxx.0, release date: xx Nov 2024
+Build 24.3.xxx.0, release date: 18 Nov 2024
 
 >
 
@@ -54,8 +54,9 @@ Build 24.3.xxx.0, release date: xx Nov 2024
 
 ## Bug Fixes
 
-- Enhanced FilterMyProjects functionality to ensure seamless compatibility with Azure-hosted BimlFlex databases.
-- Improved the FlatFile Importer to support files without headers, ensuring all fields are correctly returned.
-- Enhanced the business diagram functionality to improve accuracy when managing batched edits and saves.
-- Enhanced LineariseString with Alias to correctly manage DataVault End Dating scenarios. This improvement ensures more accurate and reliable handling of end-dating processes.
-- Improved Business Model Actions in Kanban to ensure relevant actions are displayed at the appropriate times.
+
+- Enhanced FilterMyProjects functionality to ensure seamless compatibility with Azure-hosted BimlFlex databases
+- Improved the FlatFile Importer to support files without headers, ensuring all fields are correctly returned
+- Enhanced the business diagram functionality to improve accuracy when managing batched edits and saves
+- Enhanced LineariseString with Alias to correctly manage DataVault End Dating scenarios. This improvement ensures more accurate and reliable handling of end-dating processes
+- Improved Business Model Actions in Kanban to ensure relevant actions are displayed at the appropriate times
