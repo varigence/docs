@@ -14,21 +14,14 @@ Varigence is excited to release the November 2024 version of the BimlFlex platfo
 > - Please make sure databases and projects are backed up before upgrading.
 > - Please email support@bimlflex.com with any installation or upgrade issues.
 
-> [!IMPORTANT]
->
-> **New Naming Convention for Release Notes**
->
-> Varigence has implemented a new naming convention for all upcoming release notes. The first release of each new year will be named after the year alone (e.g., the first release of 2025 will be titled "BimlFlex 2025"). Subsequent releases within the same year will be named after the year and the month of the release.
-> This current release, which would have been called "BimlFlex 2024 R3" under the previous naming convention, will be named "BimlFlex November 2024."
-> This naming convention is designed to better communicate the timing of releases and to align with naming of other popular applications with multiple releases per year.
-> Users can verify their version number within the application to determine the corresponding release notes.
 
 > [!IMPORTANT] 
 > 
 >**Important Update for BimlFlex 2024 Upgrade**
 >
-> When upgrading to BimlFlex 2024, it is mandatory to also upgrade the BimlCatalog across all of your environments. This update introduces the SourceScopedName and TargetScopedName parameters, enhancing runtime debugging capabilities, particularly within Azure Data Factory with limitations related to pipeline name lengths.
->
+> If you are upgrading from a version prior to BimlFlex October 2024, please review the release notes for that version carefully, as it contains crucial information about breaking changes. 
+> When upgrading to BimlFlex 2024, it is mandatory to upgrade the BimlCatalog across all your environments to ensure compatibility.
+> This release introduces the new `SourceScopedName` and `TargetScopedName` parameters, which enhance runtime debugging capabilities, particularly within Azure Data Factory, addressing limitations related to pipeline name lengths.
 > **Action Required**: All SSIS packages and ADF pipelines must be redeployed following the upgrade. This step is crucial for ensuring compatibility and taking full advantage of the new features.
 
 <!--START:ONLINE-ONLY-->
@@ -49,20 +42,20 @@ Build 24.3.xxx.0, release date: xx Nov 2024
 - [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.2.125.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
 <!--END:ONLINE-ONLY-->
 
-## Nov 2024 \* New Features
+## New Features
 
-### 
+- Introducing enhanced support for running multiple instances of the BimlFlex app, especially optimized for Citrix environments. This improvement boosts productivity and flexibility for users working across multiple sessions.
 
-#### 
+## Enhancements and New Settings
 
-## Nov 2024 \* Enhancements and New Settings
+- Introduced a new setting `Projects By Record Source` that enables the segmentation of DataVault projects based on their respective record sources. This enhancement streamlines deployment for SSIS Projects, improving efficiency and organization.
+- Introduced a new setting `Object Separator` that allows greater customization of how naming parts for objects are combined, particularly beneficial for the Accelerator. By default, an underscore is used to maintain naming consistency.
+- Introduced a new setting `Column Separator` that allows greater customization of how naming parts for columns are combined, particularly beneficial for the Accelerator. By default, an underscore is used to maintain naming consistency.
 
-### 
+## Bug Fixes
 
-#### 
-
-## Nov 2024 \* Bug Fixes
-
-###
-
-####
+- Enhanced FilterMyProjects functionality to ensure seamless compatibility with Azure-hosted BimlFlex databases.
+- Improved the FlatFile Importer to support files without headers, ensuring all fields are correctly returned.
+- Enhanced the business diagram functionality to improve accuracy when managing batched edits and saves.
+- Enhanced LineariseString with Alias to correctly manage DataVault End Dating scenarios. This improvement ensures more accurate and reliable handling of end-dating processes.
+- Improved Business Model Actions in Kanban to ensure relevant actions are displayed at the appropriate times.

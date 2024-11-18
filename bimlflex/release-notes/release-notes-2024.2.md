@@ -49,7 +49,7 @@ Build 24.2.124.0, release date: 16 Oct 2024
 - [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.2.124.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
 <!--END:ONLINE-ONLY-->
 
-## Oct 2024 \* New Features
+## New Features
 
 ### Filter My Projects
 
@@ -73,7 +73,7 @@ Enable the use of database variables for compatability with schemachange for dyn
 - Introduced `Persistent Views` to enable querying or reloading historical data seamlessly.
 - Added customizable settings for managing naming conventions of Persistent Views, including support for adding `WHERE` clauses for more refined data handling.
 
-## Oct 2024 \* Enhancements and New Settings
+## Enhancements and New Settings
 
 ### Installer Enhancements
 
