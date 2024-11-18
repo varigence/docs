@@ -60,3 +60,4 @@ Build 24.3.102.0, release date: 18 Nov 2024
 - Enhanced the business diagram functionality to improve accuracy when managing batched edits and saves
 - Enhanced LineariseString with Alias to correctly manage DataVault End Dating scenarios. This improvement ensures more accurate and reliable handling of end-dating processes
 - Improved Business Model Actions in Kanban to ensure relevant actions are displayed at the appropriate times
+- Corrected the HostIdentifier specified in Biml-generated SSIS Script tasks and components to be "160" for SSIS 2022 build targets.
