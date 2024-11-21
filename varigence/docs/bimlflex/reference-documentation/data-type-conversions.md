@@ -174,58 +174,57 @@ The general mappings are the base guidelines that are followed when generating D
 | Guid                            | varchar(50)                  |
 | Object                          | varbinary(8388608)           |
 
-## [Full List](#tab/tabid-4)
+## [Databricks](#tab/tabid-4)
 
-### String  
+### String
 
-| BimlFlex Data Type              | SQL Server Data Type         | Synapse Data Type | Snowflake Data Type       |
-| ------------------------------- | ---------------------------- | ----------------- | ------------------------- |
-| AnsiStringFixedLength(`length`) | char(`length`)               |                   |                           |
-| StringFixedLength(`length`)     | nchar(`length`)              |                   | char(`length`)            |
-| AnsiString(`length`)            | varchar(`length`)            |                   |                           |
-| String(`length`)                | nvarchar(`length`)           |                   | varchar(`length`)         |
+| BimlFlex Data Type             | Databricks SQL Data Type |
+| ------------------------------ | ------------------------ |
+| geometry                       | STRING                   | 
+| geography                      | STRING                   | 
+| hierarchyid                    | STRING                   | 
+| AnsiString                     | STRING                   | 
+| AnsiStringFixedLength          | STRING                   | 
+| String                         | STRING                   | 
+| StringFixedLength              | STRING                   | 
+| Xml                            | STRING                   | 
 
-### Number  
+### Number
 
-| BimlFlex Data Type              | SQL Server Data Type         | Synapse Data Type | Snowflake Data Type       |
-| ------------------------------- | ---------------------------- | ----------------- | ------------------------- |
-| smallmoney                      | smallmoney                   | varbinary(8000)   | decimal(19,4)             |
-| Currency                        | money                        |                   | decimal(19,4)             |
-| Boolean                         | bit                          |                   | boolean                   |
-| Byte                            | tinyint                      |                   |                           |
-| SByte                           | smallint                     |                   |                           |
-| Int16                           | smallint                     |                   |                           |
-| UInt16                          | smallint                     |                   |                           |
-| Int32                           | int                          |                   |                           |
-| UInt32                          | int                          |                   |                           |
-| Int64                           | bigint                       |                   |                           |
-| Uint64                          | bigint                       |                   |                           |
-| Decimal(`precision`,`scale`)    | decimal(`precision`,`scale`) |                   |                           |
-| VarNumeric(`precision`,`scale`) | decimal(`precision`,`scale`) |                   |                           |
-| Single(`precision`)             | float(`precision`)           |                   |                           |
-| Double(`precision`)             | float(`precision`)           |                   |                           |
+| BimlFlex Data Type             | Databricks SQL Data Type |
+| ------------------------------ | ------------------------ |
+| smallmoney                     | DOUBLE                   | 
+| Currency                       | DOUBLE                   | 
+| Single                         | DOUBLE                   | 
+| Double                         | DOUBLE                   | 
+| SByte                          | TINYINT                  | 
+| Byte                           | TINYINT                  | 
+| Int16                          | SMALLINT                 | 
+| UInt16                         | SMALLINT                 | 
+| Int32                          | INT                      | 
+| UInt32                         | INT                      | 
+| Int64                          | BIGINT                   | 
+| UInt64                         | BIGINT                   | 
+| Decimal (`precision`, `scale`) | DECIMAL (`precision`, `scale`) | 
 
-### Time  
+### Time
 
-| BimlFlex Data Type              | SQL Server Data Type         | Synapse Data Type | Snowflake Data Type       |
-| ------------------------------- | ---------------------------- | ----------------- | ------------------------- |
-| Time(`precision`)               | time(`precision`)            |                   |                           |
-| Date                            | date                         |                   |                           |
-| DateTime(`precision`)           | datetime(`precision`)        |                   |                           |
-| DateTime2(`precision`)          | datetime2(`precision`)       |                   | timestamp(`precision`)    |
-| DateTimeOffset(`precision`)     | datetimeoffset(`precision`)  |                   | timestamp_tz(`precision`) |
+| BimlFlex Data Type             | Databricks SQL Data Type |
+| ------------------------------ | ------------------------ |
+| Time                           | TIMESTAMP                | 
+| Date                           | DATE                     | 
+| DateTime                       | TIMESTAMP                | 
+| DateTime2                      | TIMESTAMP                | 
+| DateTimeOffset                 | TIMESTAMP                | 
 
-### Other  
+### Other
 
-| BimlFlex Data Type              | SQL Server Data Type         | Synapse Data Type | Snowflake Data Type       |
-| ------------------------------- | ---------------------------- | ----------------- | ------------------------- |
-| geometry                        | geometry                     | varbinary(8000)   | varbinary(8388608)        |
-| geography                       | geography                    | varbinary(8000)   | varbinary(8388608)        |
-| hierarchyid                     | hierarchyid                  | varbinary(8000)   | varbinary(8388608)        |
-| Xml                             | nvarchar(`length`)           |                   | varchar(`length`)         |
-| Binary(`length`)                | varbinary(`length`)          |                   |                           |
-| Guid                            | uniqueidentifier             | nvarchar(50)      | varchar(50)               |
-| Object                          | sql_variant                  |                   | varbinary(8388608)        |
+| BimlFlex Data Type             | Databricks SQL Data Type |
+| ------------------------------ | ------------------------ |
+| Binary                         | BINARY                   | 
+| Boolean                        | BOOLEAN                  | 
+| Guid                           | STRING                   | 
+| Object                         | Custom                   | 
 
 
 
