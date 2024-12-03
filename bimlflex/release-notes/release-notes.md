@@ -32,14 +32,14 @@ BimlFlex November 2024 is installed and upgraded through a single consolidated i
 
 <!--\* MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
 
-Build 24.3.102.0, release date: 18 Nov 2024
+Build 24.3.109.0, release date: 3 Dec 2024
 
 >
 
-- [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.3.102.0.exe). This installer includes all BimlFlex components for 64-bit
-- [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.3.102.0.exe). This installer includes all BimlFlex components for 32-bit
-- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.3.102.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
-- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.3.102.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
+- [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.3.109.0.exe). This installer includes all BimlFlex components for 64-bit
+- [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.3.109.0.exe). This installer includes all BimlFlex components for 32-bit
+- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.3.109.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
+- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.3.109.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
 <!--END:ONLINE-ONLY-->
 
 ## New Features
@@ -51,6 +51,7 @@ Build 24.3.102.0, release date: 18 Nov 2024
 - Introduced a new setting `Projects By Record Source` that enables the segmentation of DataVault projects based on their respective record sources. This enhancement streamlines deployment for SSIS Projects, improving efficiency and organization.
 - Introduced a new setting `Object Separator` that allows greater customization of how naming parts for objects are combined, particularly beneficial for the Accelerator. By default, an underscore is used to maintain naming consistency.
 - Introduced a new setting `Column Separator` that allows greater customization of how naming parts for columns are combined, particularly beneficial for the Accelerator. By default, an underscore is used to maintain naming consistency.
+- Added metadata import support for Microsoft OLE DB Provider for DB2
 
 ## Bug Fixes
 
@@ -59,4 +60,6 @@ Build 24.3.102.0, release date: 18 Nov 2024
 - Enhanced the business diagram functionality to improve accuracy when managing batched edits and saves
 - Enhanced LineariseString with Alias to correctly manage DataVault End Dating scenarios. This improvement ensures more accurate and reliable handling of end-dating processes
 - Improved Business Model Actions in Kanban to ensure relevant actions are displayed at the appropriate times
-- Corrected the HostIdentifier specified in Biml-generated SSIS Script tasks and components to be "160" for SSIS 2022 build targets.
+- Corrected the HostIdentifier specified in Biml-generated SSIS Script tasks and components to be "160" for SSIS 2022 build targets
+- Fixed issues with retrieving Projects and Business Entities when the Parent object is a recursive reference to itself
+- Fixed Global Temporary views when using Databricks with Staged Object

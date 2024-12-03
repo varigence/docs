@@ -16,10 +16,15 @@ BimlStudio November 2024 is installed and upgraded through a single consolidated
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
 
-Build 24.3.102.0, release date: 18 Nov 2024
+Build 24.3.109.0, release date: 3 Dec 2024
 
-* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_24.3.102.0.exe)
-* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x86_24.3.102.0.exe)
+* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_24.3.109.0.exe)
+* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x86_24.3.109.0.exe)
+
+
+## New Features
+
+- Added metadata import support for Microsoft OLE DB Provider for DB2
 
 
 ## Bug Fixes
