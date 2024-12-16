@@ -32,14 +32,14 @@ BimlFlex November 2024 is installed and upgraded through a single consolidated i
 
 <!--\* MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
 
-Build 24.3.109.0, release date: 3 Dec 2024
+Build 24.3.110.0, release date: 3 Dec 2024
 
 >
 
-- [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.3.109.0.exe). This installer includes all BimlFlex components for 64-bit
-- [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.3.109.0.exe). This installer includes all BimlFlex components for 32-bit
-- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.3.109.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
-- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.3.109.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
+- [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.3.110.0.exe). This installer includes all BimlFlex components for 64-bit
+- [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.3.110.0.exe). This installer includes all BimlFlex components for 32-bit
+- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.3.110.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
+- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.3.110.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
 <!--END:ONLINE-ONLY-->
 
 ## New Features
@@ -63,3 +63,4 @@ Build 24.3.109.0, release date: 3 Dec 2024
 - Corrected the HostIdentifier specified in Biml-generated SSIS Script tasks and components to be "160" for SSIS 2022 build targets
 - Fixed issues with retrieving Projects and Business Entities when the Parent object is a recursive reference to itself
 - Fixed Global Temporary views when using Databricks with Staged Object
+- Fixed an issue with overidding the Snowflake Execute As caller via table configurations
