@@ -25,11 +25,11 @@ Varigence is excited to release the February 2025 version of the BimlFlex platfo
 
 ## Installation
 
-BimlFlex February 2025 is installed and upgraded through a single consolidated installer.
+BimlFlex March 2025 is installed and upgraded through a single consolidated installer.
 
 <!--\* MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
 
-Build 25.1.100.0, release date: 15 Feb 2025
+Build 25.1.100.0, release date: 15 Mar 2025
 
 >
 

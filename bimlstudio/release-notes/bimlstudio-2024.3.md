@@ -16,10 +16,10 @@ BimlStudio November 2024 is installed and upgraded through a single consolidated
 MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 -->
 
-Build 24.3.110.0, release date: 3 Dec 2024
+Build 24.3.116.0, latest release date: 31 Jan 2025
 
-* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_24.3.110.0.exe)
-* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x86_24.3.110.0.exe)
+* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_24.3.116.0.exe)
+* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x86_24.3.116.0.exe)
 
 
 ## New Features
