@@ -36,10 +36,10 @@ Build 24.3.116.0, latest release date: 31 Jan 2025
 
 >
 
-- [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.3.116.0.exe). This installer includes all BimlFlex components for 64-bit
-- [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.3.116.0.exe). This installer includes all BimlFlex components for 32-bit
-- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.3.116.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
-- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.3.116.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
+- [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.3.123.0.exe). This installer includes all BimlFlex components for 64-bit
+- [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.3.123.0.exe). This installer includes all BimlFlex components for 32-bit
+- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.3.123.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
+- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.3.123.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
 <!--END:ONLINE-ONLY-->
 
 ## New Features
@@ -52,6 +52,7 @@ Build 24.3.116.0, latest release date: 31 Jan 2025
 - Introduced a new setting `Object Separator` that allows greater customization of how naming parts for objects are combined, particularly beneficial for the Accelerator. By default, an underscore is used to maintain naming consistency.
 - Introduced a new setting `Column Separator` that allows greater customization of how naming parts for columns are combined, particularly beneficial for the Accelerator. By default, an underscore is used to maintain naming consistency.
 - Added metadata import support for Microsoft OLE DB Provider for DB2
+- Improved batch creation logic to handle null or empty parent project batches, preventing errors and enhancing stability. Also fixed an issue where SSIS Projects could have blank batch and sub-batch groupings.
 
 ## Bug Fixes
 
