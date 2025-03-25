@@ -32,7 +32,7 @@ BimlFlex November 2024 is installed and upgraded through a single consolidated i
 
 <!--\* MANUALLY UPDATE BUILD NUMBER UPON RELEASE -->
 
-Build 24.3.116.0, latest release date: 31 Jan 2025
+Build 24.3.123.0, latest release date: 25 Mar 2025
 
 >
 
