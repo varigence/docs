@@ -35,4 +35,4 @@ Follow the below steps for properly setting or toggling your Local Exclusions to
 
 # Note
 
-See more in the documentation about [Working Concurrently](https://docs.varigence.com/bimlflex/technology-ssis/concurrent-development)
+See more in the documentation about [Working Concurrently](xref:bimlflex-ssis-concurrent-development)
