@@ -1,6 +1,6 @@
 ---
 uid: kb-resolving-error-could-not-resolve-reference
-title: "Resolving Error: Could not resolve reference to '[Hash]Output' in property 'OutputPath'. '' is invalid."
+title: Resolving Error - Could not resolve reference to '[Hash]Output' in property 'OutputPath'. '' is invalid.
 summary: "How to resolve the error encountered in BimlStudio: Could not resolve reference to '[Hash]Output' in property 'OutputPath'. '' is invalid"
 varigenceProduct: Shared
 varigenceArticleType: KnowledgeBase

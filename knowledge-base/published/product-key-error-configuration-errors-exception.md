@@ -1,6 +1,6 @@
 ---
 uid: kb-product-key-error-configuration-errors-exception
-title: System.ConfigurationErrorsException" Product Key Activation Error
+title: System.ConfigurationErrorsException - Product Key Activation Error
 summary: Users may encounter a System.ConfigurationErrorsException error upon entering a product key in the BimlStudio Product Key Activation dialog box.
 varigenceProduct: Shared
 varigenceArticleType: KnowledgeBase
