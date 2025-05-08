@@ -1,6 +1,6 @@
 ---
 uid: kb-resolving-msbuild-error-file-paths-too-long
-title: "Resolving MSBUILD Error: File Paths Too Long"
+title: Resolving MSBUILD Error - File Paths Too Long
 summary: Guidance on how to circumvent the MSBUILD error when file paths exceed the character limit
 varigenceProduct: Shared
 varigenceArticleType: KnowledgeBase

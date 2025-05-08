@@ -1,0 +1,15 @@
+- name: Knowledge Base Documentation
+  href: index.md
+  topicHref: index.md
+  items:
+  - name: Approved Articles
+    href: approved/toc.yml
+
+  - name: Archived Articles
+    href: archived/toc.yml    
+
+  - name: Draft Articles
+    href: draft/toc.yml
+
+  - name: Published Articles
+    href: published/toc.yml

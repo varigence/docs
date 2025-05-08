@@ -1,6 +1,6 @@
 ---
 uid: kb-using-extension-points-custom-init-from-psa
-title: "Using Extension Points: Custom Init From PSA"
+title: Using Extension Points - Custom Init From PSA
 summary: Describes a use case for extension points.
 varigenceProduct: Shared
 varigenceArticleType: KnowledgeBase

@@ -1,0 +1,20 @@
+- name: OutOfMemoryException on DACPAC Installation for BimlFlex 2022R3
+  href: outofmemory-exception-on-dacpac-installation.md
+- name: Populate Derived Key Using SQL Target Expression
+  href: populate-derived-key-using-sql-target-expression.md
+- name: Using Exclusions to Work Concurrently
+  href: using-exclusions-to-work-concurrently.md
+- name: RowChangeType must be set to Derived for the Hub Attribute in order to make generated SQL work.
+  href: rowchangetype-must-be-set-to-derived.md
+- name: Attempt to Parse the Expression "FlexToBk_Missing" Failed
+  href: attempt-to-parse-the-expression-flex-to-bk-missing-failed.md
+- name: Using Azure Blob Files with an On-Prem SSIS Solution
+  href: using-azure-blob-files-with-an-on-prem-ssis-solution.md
+- name: Using Extension Points - Custom Init From PSA
+  href: using-extension-points-custom-init-from-psa.md
+- name: Providing Solutions Using Cloud and On-Premises Infrastructure
+  href: providing-solutions-using-cloud-and-on-premises-infrastructure.md
+- name: Preserve Schema Name in PSA Table Extract
+  href: preserve-schema-name-in-psa-table-extract.md
+- name: Duplicates in PIT Tables
+  href: duplicates-in-pit-tables.md

@@ -1,5 +1,5 @@
 ---
-uid: kb-adding-headers-and body-to-web-activities
+uid: kb-adding-headers-and-body-to-web-activities
 title: Adding Headers and Body to Web Activities in Azure Data Factory (ADF)
 summary: How to populate header and body properties to use a Web Activity to call a REST endpoint from inside of a pipeline in Azure Data Factory
 varigenceProduct: Shared

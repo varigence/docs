@@ -1,0 +1,18 @@
+- name: BimlFlex Runtime Features Unavailable for Installation
+  href: bimlflex-runtime-features-unavailable-for-installation.md
+- name: Bitness and BimlStudio
+  href: bitness-and-bimlstudio.md
+- name: Azure Data Factory Script Execution Timeout Error
+  href: azure-data-factory-script-execution-timeout-error.md
+- name: Local Type Inference Error on BimlStudio
+  href: local-type-inference-error-on-bimlstudio.md  
+- name: Run Scripts After Code Generation
+  href: run-scripts-after-code-generation.md  
+- name: Formerly Available Methods No Longer Accessible
+  href: formerly-available-methods-no-longer-accessible.md
+- name: Synthetic Column is Blocking Data Movement
+  href: synthetic-column-is-blocking-data-movement.md
+- name: Using Special Characters in BimlFlex
+  href: using-special-characters-in-bimlflex.md    
+- name: Delete Customer From BimlFlex
+  href: delete-customer-from-bimlflex.md
