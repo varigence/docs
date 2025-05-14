@@ -1,0 +1,8 @@
+- name: Connecting to Oracle as a Data Source
+  href: connecting-to-oracle-as-a-data-source.md
+- name: Determining the Appropriate Version of a SQL Server Instance
+  href: determining-the-appropriate-version-of-a-sql-server-instance.md
+- name: Resolving An SSL Provider Authentication Error
+  href: resolving-an-ssl-provider-authentication-error.md
+- name: Submitting a Support Request Dependent on User Environment
+  href: submitting-a-support-request-dependent-on-user-environment.md

@@ -1,0 +1,10 @@
+- name: Assembly Name Directive with Custom Library Locks the Target DLL
+  href: assembly-name-directive-with-custom-library-locks-the-target-dll.md
+- name: BimlStudio Fails to Open or Crashes Unexpectedly
+  href: bimlstudio-fails-to-open-or-crashes-unexpectedly.md
+- name: Fixing the DTSRuntimeWrap Error
+  href: fixing-the-dtsruntimewrap-error.md
+- name: Resolving Error - Could not resolve reference to '[Hash]Output' in property 'OutputPath'. '' is invalid.
+  href: resolving-error-could-not-resolve-reference.md
+- name: Resolving MSBUILD Error - File Paths Too Long
+  href: resolving-msbuild-error-file-paths-too-long.md

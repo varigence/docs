@@ -1,0 +1,8 @@
+- name: Account Admin Web Role Permission
+  href: account-admin-web-role-permission.md
+- name: System.ConfigurationErrorsException - Product Key Activation Error
+  href: product-key-error-configuration-errors-exception.md
+- name: Self-Generating Offline Product Keys
+  href: self-generating-offline-product-keys.md
+- name: The Varigence Account Portal
+  href: the-varigence-account-portal.md
