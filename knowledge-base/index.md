@@ -8,7 +8,6 @@ summary: The home page of all Knowledge Base Documentation
 ## Biml Language
 
 *   [Protected XML Characters in Biml](xref:kb-protected-xml-characters-in-biml)
-    
     This article identifies the protected xml characters, and ways to still use them in your Biml code
     
 
@@ -194,7 +193,6 @@ summary: The home page of all Knowledge Base Documentation
 ## Policies and Procedures
 
 *   [Product Key Acquisition](xref:kb-product-key-acquisition)
-    
     How quickly product keys can be obtained based on method of payment
     
 *   [Purchase Options and Payment Terms](xref:kb-purchase-options-and-payment-terms)
