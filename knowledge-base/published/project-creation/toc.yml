@@ -1,0 +1,4 @@
+- name: Building Against a Database That Cannot Be Connected To In BimlExpress
+  href: building-against-a-database-that-cannot-be-connected.md
+- name: Fixing a Biml Generated Package Using Visual Studio
+  href: fixing-a-biml-generated-package-using-visual-studio.md
