@@ -9,7 +9,7 @@ varigenceArticleType: KnowledgeBase
 
 When entering a product key in the BimlStudio Product Key Activation dialog box, users may encounter a System.Configuration.ConfigurationErrorsException error. 
 
-![Product Key Activation Error Screenshot](../static/img/kb-product-key-error-configuration-errors-exception.png "Product Key Activation Error Screenshot")
+![Product Key Activation Error Screenshot](../../static/img/kb-product-key-error-configuration-errors-exception.png "Product Key Activation Error Screenshot")
 
 
 # Cause

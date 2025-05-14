@@ -46,12 +46,12 @@ In the event that certain components have been marked as "unavailable," but need
   
 Click \`View Unavailable Features\` on the "Select BimlFlex Runtime Features" screen of the BimlFlex installer.   
   
-![Select BimlFlex Runtime Features](../static/img/kb-force-installing-unavailable-bimlflex-runtime-features-img1.png "Select BimlFlex Runtime Features")  
+![Select BimlFlex Runtime Features](../../static/img/kb-force-installing-unavailable-bimlflex-runtime-features-img1.png "Select BimlFlex Runtime Features")  
   
 Identify the Custom Components that are needed, and right-click to select the only option from the context menu, \`Force Install.\` Be sure to select both flavors of bitness for each Custom Component.   
   
 Custom Components that have been selected for force installation will be tagged as such in the installation dialog.   
   
-![Installation Dialog](../static/img/kb-force-installing-unavailable-bimlflex-runtime-features-img2.png "Installation Dialog")   
+![Installation Dialog](../../static/img/kb-force-installing-unavailable-bimlflex-runtime-features-img2.png "Installation Dialog")   
   
 Forced installation of the unavailable components will enable compatibility between BimlFlex and SSIS, allowing users to avoid the BimlFlex Runtime Features being marked as unavailable.

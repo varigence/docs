@@ -13,7 +13,7 @@ The Varigence Account Portal ("the portal") serves as a singular access point fo
 
 Existing accounts can access and login to the portal [here](https://varigence.com/Account). Alternatively, click the "Account" icon in the top right of the page from anywhere on Varigence.com.    
   
-![Account](../static/img/kb-the-varigence-account-portal-img1.png "Account") 
+![Account](../../static/img/kb-the-varigence-account-portal-img1.png "Account") 
   
 **New Accounts**  
   
@@ -24,7 +24,7 @@ Register for a new Varigence account [here](https://varigence.com/account/regist
 _e.g._: "User X" creates an account with their email address UserX@gmail.com. However, User X's employer had previously assigned their product key to UserX@greendale.edu. When User X logs in, with their personal email address, they will _not_ see any of their assigned licenses. This will prevent the user from seeing and/or managing their license(s). 
 
 # Account Details  
-![Account Details](../static/img/kb-the-varigence-account-portal-img2.png "Account Details") 
+![Account Details](../../static/img/kb-the-varigence-account-portal-img2.png "Account Details") 
 
 **1\. User Information**  
   
@@ -71,7 +71,7 @@ f. Additional "License Details" button. More information below.
   
 **Quotes**  
   
-![Quotes](../static/img/kb-the-varigence-account-portal-img3.png "Quotes") 
+![Quotes](../../static/img/kb-the-varigence-account-portal-img3.png "Quotes") 
   
 The [Varigence Store](https://varigence.com/store) offers immediate checkout and key acquisition when paying by credit card. However, many organizations still prefer the traditional Quote > Purchase Order > Invoice method for purchases. Through the Varigence Store, users can add the products and quantity needed to their cart, and instead of checking out, generate a quote for their purchase and share as needed.  
   
@@ -87,7 +87,7 @@ _e.g._: UserX@greendale.edu is assigned a BimlFlex license purchased as a monthl
   
 Clicking "License Details" will expand a window displaying more product key details and some management options.  
   
-![License Details button](../static/img/kb-the-varigence-account-portal-img4.png "License Details button") 
+![License Details button](../../static/img/kb-the-varigence-account-portal-img4.png "License Details button") 
   
 The primary feature offered within this window is the ability to self-generate machine-locked offline keys. Offline keys are frequently needed by organizations or environments where developers cannot authenticate the product keys due to either a firewall or the complete absence of internet connectivity.  
   
@@ -107,7 +107,7 @@ More information the Account Admin web role can be found [here](xref:kb-account-
   
 Once expanded, all licenses assigned to _all users at the organization_ will be displayed.  
   
-![Collapse/Expand Organization Licenses](../static/img/kb-the-varigence-account-portal-img5.png "Collapse/Expand Organization Licenses") 
+![Collapse/Expand Organization Licenses](../../static/img/kb-the-varigence-account-portal-img5.png "Collapse/Expand Organization Licenses") 
   
   
 **Note:** If the Account Admin also has a product key assigned to them, those same keys will also appear in the Organization Licenses list. The duplication of product keys between the Licenses tab and those listed in the Organization Licenses list is expected.  
@@ -116,6 +116,6 @@ The Account Admin will be able to generate offline machine codes for other users
   
 The Account Admin can select from an existing list of users within the organization, or create new users, and then assign a product key accordingly.  
   
-![Assign Product Key](../static/img/kb-the-varigence-account-portal-img6.png "Assign Product Key") 
+![Assign Product Key](../../static/img/kb-the-varigence-account-portal-img6.png "Assign Product Key") 
   
 Generating an offline machine code on behalf of another user is the same process described [here](xref:kb-self-generating-offline-product-keys), but requires that the Account Admin have the machine code of the user who needs an offline key, _not their own machine code._

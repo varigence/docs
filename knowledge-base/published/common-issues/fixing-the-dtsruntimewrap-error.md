@@ -36,16 +36,16 @@ In the scenario described above, the solution would involve changing the target 
 If using BimlExpress, simply open the SSIS project and examine the top of the Solution Explorer to confirm the targeted version of SQL Server. The example below confirms that this particular project is targeting SQL Server 2017.   
  
 
-![SQL Server 2017](../static/img/kb-fixing-the-dtsruntimewrap-error-img1.png "SQL Server 2017") 
+![SQL Server 2017](../../static/img/kb-fixing-the-dtsruntimewrap-error-img1.png "SQL Server 2017") 
 
 To change the target server version in BimlExpress, right-click on the project in the Solution Explorer and select "_Properties."_ Next, click on "_Configuration Properties"_ and change the SQL Server version from within the drop-down menu.   
  
 
-![SQL Server version](../static/img/kb-fixing-the-dtsruntimewrap-error-img2.png "SQL Server version") 
+![SQL Server version](../../static/img/kb-fixing-the-dtsruntimewrap-error-img2.png "SQL Server version") 
 
 If using BimlStudio, click _"File"_ then _"__Project Settings."_ Select _"Target Versions"_ from the dialog that appears. This menu will display the targeted version of SQL Server. The SQL Server may be changed by simply by selecting from the drop-down menu. The example below confirms that this particular project is targeting SQL Server 2019.
 
-![Targeting SQL Server 2019](../static/img/kb-fixing-the-dtsruntimewrap-error-img3.png "Targeting SQL Server 2019") 
+![Targeting SQL Server 2019](../../static/img/kb-fixing-the-dtsruntimewrap-error-img3.png "Targeting SQL Server 2019") 
 
 **Method 2: Download the Appropriate Version of SSIS** 
 
@@ -57,7 +57,7 @@ The second method for resolution of the DTSRuntimeWrap Error is to download the 
 To identify the current version of SSIS being used, from within Microsoft Visual Studio, select "_Help_" from the menu bar and then "_About Microsoft Visual Studio_." Scroll down the list of Installed Products to and select "SQL Server Integration Services" to display the installed version in the Product Details window.   
  
 
-![Download the Appropriate Version of SSIS](../static/img/kb-fixing-the-dtsruntimewrap-error-img4.png "Download the Appropriate Version of SSIS ") 
+![Download the Appropriate Version of SSIS](../../static/img/kb-fixing-the-dtsruntimewrap-error-img4.png "Download the Appropriate Version of SSIS ") 
 
 # Conclusion 
 

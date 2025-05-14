@@ -33,13 +33,13 @@ Open the 'Run' command **(Win+R)** and type gpedit.msc and press Enter. This wi
   
 Computer Configuration > Administrative Templates > System > Filesystem   
   
-![Enable Long File Paths in Group Policy Editor Step 1](../static/img/kb-resolving-msbuild-error-file-paths-too-long-img1.png "Enable Long File Paths in Group Policy Editor Step 1")  
+![Enable Long File Paths in Group Policy Editor Step 1](../../static/img/kb-resolving-msbuild-error-file-paths-too-long-img1.png "Enable Long File Paths in Group Policy Editor Step 1")  
   
 Click \`Filesystem\` and then double-click \`Enable Win32 long paths\` to open the Policy settings.   
   
 In the Enable Win32long paths window, choose \`Enabled\` followed by \`Apply\`. Win32 long paths are now enabled.   
   
-![Enable Long File Paths in Group Policy Editor Step 2](../static/img/kb-resolving-msbuild-error-file-paths-too-long-img2.png "Enable Long File Paths in Group Policy Editor Step 2") 
+![Enable Long File Paths in Group Policy Editor Step 2](../../static/img/kb-resolving-msbuild-error-file-paths-too-long-img2.png "Enable Long File Paths in Group Policy Editor Step 2") 
   
 **To Revert:** Follow the above steps and toggle the setting back to \`Disabled\`.  
   
@@ -51,11 +51,11 @@ Open the 'Run' command (Win+R) and type Regedit and press Enter. This will ope
 
 HKEY\_LOCAL\_MACHINE\\SYSTEM\\ControlSet001\\Control\\FileSystem  
   
-![Enable Long File Paths in Registry Editor Step 1](../static/img/kb-resolving-msbuild-error-file-paths-too-long-img3.png "Enable Long File Paths in Registry Editor Step 1") 
+![Enable Long File Paths in Registry Editor Step 1](../../static/img/kb-resolving-msbuild-error-file-paths-too-long-img3.png "Enable Long File Paths in Registry Editor Step 1") 
   
 Locate the REG\_DWORD file named \`LongPathsEnabled.\` Double-click the file, and change the Value Data from 0 to 1.   
   
-![Enable Long File Paths in Registry Editor Step 2](../static/img/kb-resolving-msbuild-error-file-paths-too-long-img4.png "Enable Long File Paths in Registry Editor Step 2") 
+![Enable Long File Paths in Registry Editor Step 2](../../static/img/kb-resolving-msbuild-error-file-paths-too-long-img4.png "Enable Long File Paths in Registry Editor Step 2") 
   
 Close the Registry Editor Console and restart the system. Win2 Long Paths are now enabled.   
   

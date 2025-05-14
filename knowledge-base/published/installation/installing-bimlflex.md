@@ -27,7 +27,7 @@ After downloading the BimlFlex installation file, navigate to the location where
 The next screen will prompt users to select the applications and features to install. For a BimlFlex developer installation, select all options.
 
   
-![BimlFlex Developer Installation](../static/img/kb-installing-bimlflex-img1.png "BimlFlex Developer Installation")   
+![BimlFlex Developer Installation](../../static/img/kb-installing-bimlflex-img1.png "BimlFlex Developer Installation")   
   
 The next screen will prompt users to select the bitness versions. For most developer installations, choose to install both 32-bit and 64-bit versions of BimlFlex Excel Add-In and BimlFlex Metadata Entry. 
 
@@ -37,11 +37,11 @@ The next screen will allow users to select BimlFlex custom runtime features and 
 
 **\*Note:** Only identified and available versions are represented in the list. It is possible to force the installation of unavailable options. Click "_View Unavailable Features,"_ to display unavailable features.   
   
-![Select BimlFlex Custom Runtime Features](../static/img/kb-installing-bimlflex-img2.png "Select BimlFlex Custom Runtime Features")   
+![Select BimlFlex Custom Runtime Features](../../static/img/kb-installing-bimlflex-img2.png "Select BimlFlex Custom Runtime Features")   
   
 On the subsequent screen, right-click on any feature and select "_Force Install"_ to queue the feature for installation.    
   
-![Force Install](../static/img/kb-installing-bimlflex-img3.png "Force Install") 
+![Force Install](../../static/img/kb-installing-bimlflex-img3.png "Force Install") 
   
 The next screen will install and/or upgrade BimlFlex databases by adding the connection string(s) and clicking "_Add"_ to add the database to the upgrade tasks. Click "_Test"_ to test connection string(s) for any existing databases. 
 

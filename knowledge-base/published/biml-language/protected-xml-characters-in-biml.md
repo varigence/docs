@@ -14,7 +14,7 @@ Biml is an XML (eXtensible Markup Language) based language, and as such there ar
 
 The following characters are protected in XML and may pose an issue when incorporated into any created Biml code.
 
-![Protected Characters](../static/img/kb-protected-xml-characters-in-biml-img1.png "Protected Characters") 
+![Protected Characters](../../static/img/kb-protected-xml-characters-in-biml-img1.png "Protected Characters") 
 
 List sourced from [https://en.wikipedia.org/wiki/List\_of\_XML\_and\_HTML\_character\_entity\_references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
 
@@ -56,7 +56,7 @@ Rather than using the CDATA tag, especially if only handling few protected chara
 
 Below is a list of the commonly used Biml protected characters and the code needed to use to escape them.   
   
-![Escape Sequences](../static/img/kb-protected-xml-characters-in-biml-img2.png "Escape Sequences") 
+![Escape Sequences](../../static/img/kb-protected-xml-characters-in-biml-img2.png "Escape Sequences") 
 
 Referencing the sample code above, the solution using escape sequences would appear as such: 
 

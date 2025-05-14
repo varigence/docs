@@ -18,7 +18,7 @@ Open the BimlFlex and navigate to Settings.
   
 Click on the Settings tab and locate the BLOB TEMP STORAGE PATH and BUFFER TEMP STORAGE PATH settings.  
   
-![SSIS Settings](../static/img/kb-failed-to-retrieve-long-data-for-ntext-datatype-column-in-ssis-packages.png "SSIS Settings") 
+![SSIS Settings](../../static/img/kb-failed-to-retrieve-long-data-for-ntext-datatype-column-in-ssis-packages.png "SSIS Settings") 
   
 Ensure that both the paths specified in these settings exist and are accessible to the user running the SSIS package.  
   

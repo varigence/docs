@@ -38,21 +38,21 @@ Once the Account Admin permission has been added to a user's account, Varigence 
   
 Users, whether they have the Account Admin permission or not, can access a list of their cases through the "My Cases" tab on the [Varigence Support Self-Service Portal](http://support.varigence.com).   
   
-![Account Admin Web Role Permission My Cases](../static/img/kb-account-admin-web-role-permission-img1.png "Account Admin Web Role Permission My Cases")  
+![Account Admin Web Role Permission My Cases](../../static/img/kb-account-admin-web-role-permission-img1.png "Account Admin Web Role Permission My Cases")  
   
 The Varigence Portal gives users the option to display All Active Cases, All Resolved Cases, or both by clicking the dropdown menu of view options.   
   
-![Account Admin Web Role Permission My Active Cases](../static/img/kb-account-admin-web-role-permission-img2.png "Account Admin Web Role Permission My Active Cases")  
+![Account Admin Web Role Permission My Active Cases](../../static/img/kb-account-admin-web-role-permission-img2.png "Account Admin Web Role Permission My Active Cases")  
   
 If the user has the Account Admin permission, "My Active Cases" and "My Closed Cases" will display cases for all users in their organization.  
   
 **Example:** "My Active Cases" view of a user who is not an Account Admin:   
   
-![Account Admin Web Role Permission My Active Cases View](../static/img/kb-account-admin-web-role-permission-img3.png "Account Admin Web Role Permission My Active Cases View")  
+![Account Admin Web Role Permission My Active Cases View](../../static/img/kb-account-admin-web-role-permission-img3.png "Account Admin Web Role Permission My Active Cases View")  
   
 **Example:** "My Active Cases" view of a user who is an Account Admin:    
   
-![Account Admin Web Role Permission My Active Support Cases](../static/img/kb-account-admin-web-role-permission-img4.png "Account Admin Web Role Permission My Active Support Cases")  
+![Account Admin Web Role Permission My Active Support Cases](../../static/img/kb-account-admin-web-role-permission-img4.png "Account Admin Web Role Permission My Active Support Cases")  
   
 Access case details by clicking on the Case Number. This will direct the user to the Case Information screen containing all information from the initial Case submission, including the description of the issue and the user who submitted it, the product it relates to, case status, and the creation and update timestamps.   
   
@@ -60,7 +60,7 @@ The Timeline displays the communication with Varigence Support. Instead of excha
   
 Should it be determined that the user has resolved their issue or wishes to cancel their case, they may do so at any time by clicking the "Close Case" button.   
   
-![Account Admin Web Role Permission Support Close Cases](../static/img/kb-account-admin-web-role-permission-img5.png "Account Admin Web Role Permission Support Close Cases")
+![Account Admin Web Role Permission Support Close Cases](../../static/img/kb-account-admin-web-role-permission-img5.png "Account Admin Web Role Permission Support Close Cases")
 
 **Automatic Application of Web Role**
 
