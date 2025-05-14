@@ -2,14 +2,47 @@
   href: index.md
   topicHref: index.md
   items:
-  - name: Approved Articles
-    href: approved/toc.yml
+  - name: Biml Language
+    href: published/biml-language/toc.yml
 
-  - name: Archived Articles
-    href: archived/toc.yml    
+  - name: License and Account Management
+    href: published/license-and-account-management/toc.yml
 
-  - name: Draft Articles
-    href: draft/toc.yml
+  - name: Common Issues
+    href: published/common-issues/toc.yml
 
-  - name: Published Articles
-    href: published/toc.yml
+  - name: Azure Data Factory
+    href: published/azure-data-factory/toc.yml
+
+  - name: Project Creation
+    href: published/project-creation/toc.yml
+
+  - name: Connection Settings
+    href: published/connection-settings/toc.yml
+
+  - name: Data Privacy
+    href: published/data-privacy/toc.yml
+
+  - name: Metadata Extraction
+    href: published/metadata-extraction/toc.yml
+
+  - name: Installation
+    href: published/installation/toc.yml
+
+  - name: Data Type Issues
+    href: published/data-type-issues/toc.yml
+
+  - name: SSIS
+    href: published/ssis/toc.yml
+
+  - name: Support Resources
+    href: published/support-resources/toc.yml
+
+  - name: Source Control
+    href: published/source-control/toc.yml
+
+  - name: Performance Issues
+    href: published/performance-issues/toc.yml
+
+  - name: Policies and Procedures
+    href: published/policies-and-procedures/toc.yml

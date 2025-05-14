@@ -1,0 +1,4 @@
+- name: Failed to Retrieve Long Data for NTEXT Datatype Column in SSIS Packages
+  href: failed-to-retrieve-long-data-for-ntext-datatype-column-in-ssis-packages.md
+- name: Simultaneously Run Regular and Delete Detection for SSIS Flat File Import with Archiving Enabled
+  href: simultaneously-run-regular-and-delete-detection.md
