@@ -59,7 +59,7 @@ Quotes for a purchase can be generated in two ways. 
   
 When adding products to your cart in the Varigence Store, instead of selecting "Checkout," users can select "Send Quote." A quote on Varigence letterhead will be generated and emailed to the address requested.  
   
-![Checkout](../static/img/kb-product-key-acquisition.png "Checkout")
+![Checkout](../../static/img/kb-product-key-acquisition.png "Checkout")
   
 When the quote for products is requested, click the link in the generated email and select “Pay By Invoice.” In this instance your product keys will be provided along with the Net 30 Invoice for those same items.  
   

@@ -16,7 +16,7 @@ After downloading the BimlStudio installation file, navigate to the location whe
 BimlStudio is available in two bitness flavors, 32 and 64 bit, and the next installation screen will ask users to select which versions to install. It is recommended that both versions be installed.   
  
 
-![Installing BimlStudio](../static/img/kb-installing-bimlstudio.png "Installing BimlStudio")
+![Installing BimlStudio](../../static/img/kb-installing-bimlstudio.png "Installing BimlStudio")
   
 Click "_Next._" The following screen will confirm which versions of BimlStudio are to be installed. Click "_Update_" to begin the installation process. The dialogue box will advise when installation has completed. 
 

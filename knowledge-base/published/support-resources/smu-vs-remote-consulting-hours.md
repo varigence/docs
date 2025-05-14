@@ -56,7 +56,7 @@ BimlStudio, the only Varigence product available to be purchased with a perpetu
   
 One single year of SMU retails for $999.75. Additional years of SMU can be purchased upfront at a discount. One additional year of SMU is available for a 15% discount (for a total of two years) and two additional years of SMU is available for a 20% discount (for a total of three years).   
   
-![Additional SMU Coverage Options](../static/img/kb-smu-vs-remote-consulting-hours.png "Additional SMU Coverage Options") 
+![Additional SMU Coverage Options](../../static/img/kb-smu-vs-remote-consulting-hours.png "Additional SMU Coverage Options") 
   
 Expired SMU can always be renewed. Expired SMU must be purchased from the date of expiration to be brought up-to-date, rather than only purchased "when needed."   
   

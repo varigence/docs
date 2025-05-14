@@ -16,7 +16,7 @@ When building a package against a source that cannot be connected to in BimlExpr
 
 "Node addressLoad: Could not execute Query on Connection 'YourConnection.' 
 
-![Building Against a Database That Cannot Be Connected To In BimlExpress Error](../static/img/kb-building-against-a-database-that-cannot-be-connected-img1.png "Building Against a Database That Cannot Be Connected To In BimlExpress Error")
+![Building Against a Database That Cannot Be Connected To In BimlExpress Error](../../static/img/kb-building-against-a-database-that-cannot-be-connected-img1.png "Building Against a Database That Cannot Be Connected To In BimlExpress Error")
   
 This error is due to the fact that, under the hood, the Biml engine attempts to get the schema of the table from the database directly. This process fails due to the fact that there is no access to the table.  
  
@@ -29,7 +29,7 @@ To circumvent this error, users will need to mimic schema locally, edit the 'Cre
   
 First, users will need to replicate the _EXACT_ schema to build against, in a database on the development machine. On the machine with the source data, the DDL for the table(s) that need access will need to be obtained. To obtain the DDL in SQL Server Management Studio, right-click on the desired table, from the context menu select "_Script Table As"_ --> "_Create To"_ --> "_File ..._" and then save as an SQL file.   
   
-![Building Against a Database That Cannot Be Connected To In BimlExpress SQL Screenshot](../static/img/kb-building-against-a-database-that-cannot-be-connected-img2.png "Building Against a Database That Cannot Be Connected To In BimlExpress SQL Screenshot")
+![Building Against a Database That Cannot Be Connected To In BimlExpress SQL Screenshot](../../static/img/kb-building-against-a-database-that-cannot-be-connected-img2.png "Building Against a Database That Cannot Be Connected To In BimlExpress SQL Screenshot")
 
   
 On the development machine, the SQL file that was just saved can be deployed to create the asset(s) needed. The package is now able to be built.   

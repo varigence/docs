@@ -31,7 +31,7 @@ Take the following steps in order to create a backup in SQL Sever Management Stu
 Right-click on the database in the Object Explorer. From there, click "_Tasks"_ then "_Backup,"_ and the below window will appear: 
 
   
-![Provide a Backup of Source/Target Datasets](../static/img/kb-submitting-a-support-request-dependent-on-user-environment.png "Provide a Backup of Source/Target Datasets") 
+![Provide a Backup of Source/Target Datasets](../../static/img/kb-submitting-a-support-request-dependent-on-user-environment.png "Provide a Backup of Source/Target Datasets") 
 
   
 In this window, the database should already be pre-populated, and users should ensure that "Backup Type" is "Full." Choose the destination to save the backup to, and click "_OK_" once all selections have been confirmed. 

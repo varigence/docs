@@ -15,7 +15,7 @@ There are multiple methods of installation, all of which are detailed below. 
 After downloading the BimlExpress installation file, navigate to the location where the file was saved. Double-click on the installation file ending in ".vsix." A VSIX installation dialogue box will appear and prompt users to select which version(s) of Microsoft Visual Studio to install the BimlExpress extension to. 
 
   
-![Installing BimlExpress](../static/img/kb-installing-bimlexpress.png "Installing BimlExpress") 
+![Installing BimlExpress](../../static/img/kb-installing-bimlexpress.png "Installing BimlExpress") 
   
 The installer package will run after selecting the desired Visual Studio versions and clicking "_Install._" A dialog box advising that installation was completed will appear after the process finishes. 
 

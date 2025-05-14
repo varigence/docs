@@ -22,7 +22,7 @@ First, users must install [BimlStudio 2022 R3](https://varigence.com/downloads/b
   
 Secondly, users must create a Personal Access Token (PAT) and use that PAT as the password value within the BimlStudio Source Control Settings menu: 
 
-![Configuring Source Control Functionality within BimlStudio](../static/img/kb-configuring-source-control-functionality-within-bimlstudio.png "Configuring Source Control Functionality within BimlStudio")  
+![Configuring Source Control Functionality within BimlStudio](../../static/img/kb-configuring-source-control-functionality-within-bimlstudio.png "Configuring Source Control Functionality within BimlStudio")  
 ​  
 To create a Personal Access Token, follow the instructions located [here](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).   
   
