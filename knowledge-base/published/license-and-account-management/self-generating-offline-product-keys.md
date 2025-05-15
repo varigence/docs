@@ -33,20 +33,20 @@ In BimlStudio, click:
 
 _File_ > _Account_ > "_Copy Machine Code._"   
   
-![Copy Machine Code](../static/img/kb-self-generating-offline-product-keys-img1.png "Copy Machine Code") 
+![Copy Machine Code](../../static/img/kb-self-generating-offline-product-keys-img1.png "Copy Machine Code") 
   
 Next, log in to the Varigence Account associated with the Biml product key by going to the [account page](https://www.varigence.com/account). Alternatively, click the "Account" icon from the top-right corner of any Varigence web page. 
 
-![Account](../static/img/kb-self-generating-offline-product-keys-img2.png "Account")  
+![Account](../../static/img/kb-self-generating-offline-product-keys-img2.png "Account")  
   
 Once logged in and viewing the "Account Details" page, a list of all active Biml product keys will be displayed under the account profile. Click "_License Details"_ on the product key which requires an offline product key, paste the machine code copied from above in the "Machine-Code" field, provide a brief name for the machine being used (optional), and click "_Generate."_ 
 
-![Generate](../static/img/kb-self-generating-offline-product-keys-img3.png "Generate")  
+![Generate](../../static/img/kb-self-generating-offline-product-keys-img3.png "Generate")  
 
 A window will pop-up providing an offline product key specifically linked to the machine code provided.   
  
 
-![Machine code](../static/img/kb-self-generating-offline-product-keys-img4.png "Machine code")  
+![Machine code](../../static/img/kb-self-generating-offline-product-keys-img4.png "Machine code")  
 
 Copy the generated Machine Locked Key and paste the code into BimlExpress or BimlStudio to activate the product without having to connect to the internet.
 

@@ -26,7 +26,7 @@ Oftentimes with installation errors, the most common practice is generally the m
 To uninstall, first navigate to Windows Settings and then to "Apps and Features" in the left side menu. Scroll through the list of installed applications to "Varigence BimlFlex/BimlStudio" and select \`Uninstall\`. Restart your machine after uninstallation.
 
   
-![Uninstallation Followed by Re-Installation](../static/img/kb-providing-a-temp-log-img1.png "Uninstallation Followed by Re-Installation") 
+![Uninstallation Followed by Re-Installation](../../static/img/kb-providing-a-temp-log-img1.png "Uninstallation Followed by Re-Installation") 
  
 
 Ensure that you have downloaded the most recent installer files from a trusted source. Those files hosted through Varigence can be located at:   
@@ -48,7 +48,7 @@ Installation logs are kept in a user's Temp directory.
 To locate the Temp directory, navigate to the Windows search bar, type '%temp%' and press Enter. Locate the installer log named after the application being installed, for example: "Varigence\_BimlFlex\_2022\_xxx.log."
 
   
-![Provide Installation Logs to Varigence Support](../static/img/kb-providing-a-temp-log-img2.png "Provide Installation Logs to Varigence Support") 
+![Provide Installation Logs to Varigence Support](../../static/img/kb-providing-a-temp-log-img2.png "Provide Installation Logs to Varigence Support") 
  
 
 Varigence Support will need to review the installer log to locate the error for installation/upgrade. A case can be opened with Support through either [email](mailto:support@varigence.com) or the Customer Support Self-Service Portal.  

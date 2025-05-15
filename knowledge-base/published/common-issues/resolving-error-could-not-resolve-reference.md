@@ -11,7 +11,7 @@ The following error(s) have been encountered in BimlStudio:
   
 "Could not resolve reference to '\[Hash\]Output' in property 'OutputPath'. '' is invalid."  
   
-![Error Screenshot](../static/img/kb-resolving-error-could-not-resolve-reference-img1.png "Error Screenshot")  
+![Error Screenshot](../../static/img/kb-resolving-error-could-not-resolve-reference-img1.png "Error Screenshot")  
 
 # Cause
 
@@ -36,11 +36,11 @@ Hot-swapping user settings or metadata, for example, setting various excludes in
   
 In BimlStudio, first select the **BimlFlex** tab, and click '_Open Bundle_.' Set or ensure the metadata settings for your project and then toggle the '_Use My Exclusions_' setting.  
   
-![Use My Exclusions](../static/img/kb-resolving-error-could-not-resolve-reference-img2.png "Use My Exclusions")  
+![Use My Exclusions](../../static/img/kb-resolving-error-could-not-resolve-reference-img2.png "Use My Exclusions")  
   
 Once completed, click '_Refresh Metadata_' in the ribbon to reload and clear the error(s).   
   
-![Refresh Metadata](../static/img/kb-resolving-error-could-not-resolve-reference-img3.png "Refresh Metadata")  
+![Refresh Metadata](../../static/img/kb-resolving-error-could-not-resolve-reference-img3.png "Refresh Metadata")  
   
 **Method 3: Contact Varigence Support**  
   

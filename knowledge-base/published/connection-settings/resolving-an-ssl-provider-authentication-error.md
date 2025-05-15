@@ -9,7 +9,7 @@ varigenceArticleType: KnowledgeBase
 
 Users are encountering an error within BimlFlex indicating that an SSL Provider connection was successful, but that the certificate chain was issued by an authority that is not trusted. 
 
-![Resolving An SSL Provider Authentication Error Message](../static/img/kb-resolving-an-ssl-provider-authentication-error-img1.png "Resolving An SSL Provider Authentication Error Message") 
+![Resolving An SSL Provider Authentication Error Message](../../static/img/kb-resolving-an-ssl-provider-authentication-error-img1.png "Resolving An SSL Provider Authentication Error Message") 
 
 # Cause
 
@@ -27,13 +27,13 @@ Most users may not want to install trusted certificates on their SQL Servers, e
 Microsoft has robust documentation on [toggling settings within encrypted connections](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine?view=sql-server-ver15) for those unsure of the above process, and additional workarounds.  Users will make this change to the Connection String field from within the **Connections Editor** in BimlFlex: 
 
   
-![Connections Editor](../static/img/kb-resolving-an-ssl-provider-authentication-error-img2.png "Connections Editor")  
+![Connections Editor](../../static/img/kb-resolving-an-ssl-provider-authentication-error-img2.png "Connections Editor")  
   
 Click the pencil icon to edit the _Connection String_ properties. In the _Additional Connection String Properties_ field add:   
   
 TrustServerCertificate=True;  
   
-![Additional Connection String Properties](../static/img/kb-resolving-an-ssl-provider-authentication-error-img3.png "Additional Connection String Properties")  
+![Additional Connection String Properties](../../static/img/kb-resolving-an-ssl-provider-authentication-error-img3.png "Additional Connection String Properties")  
   
 Click \`Test\` in the top-right to ensure the _Connection String_ is still valid. Save the form and refresh the metadata. The error should now be resolved. 
 

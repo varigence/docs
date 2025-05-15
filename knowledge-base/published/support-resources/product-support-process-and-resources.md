@@ -17,7 +17,7 @@ Users with an active subscription to BimlStudio or BimlFlex are entitled to cust
 Users have multiple resources at their disposal to help diagnose and resolve whatever difficulty they have encountered. These resources are hosted by Varigence and exist in the form of articles in the Knowledge Base, support documentation, and forum posts.
 
   
-![Product Support Process and Resources Screenshot 1](../static/img/kb-product-support-process-and-resources-img1.png "Product Support Process and Resources Screenshot 1")  
+![Product Support Process and Resources Screenshot 1](../../static/img/kb-product-support-process-and-resources-img1.png "Product Support Process and Resources Screenshot 1")  
   
 **Note:** The collection of resources available to users to self-resolve issues is constantly growing. The available support documentation and Knowledge Base grow as issues identified by users are confirmed to be prevalent within the community, recurring, or particularly unique.  
   
@@ -35,7 +35,7 @@ Users will find articles that address some of the most prevalent issues related 
   
 Official Varigence Support Documentation can be accessed [here.](https://docs.varigence.com/)  
   
-![Product Support Process and Resources Screenshot 2](../static/img/kb-product-support-process-and-resources-img2.png "Product Support Process and Resources Screenshot 2")  
+![Product Support Process and Resources Screenshot 2](../../static/img/kb-product-support-process-and-resources-img2.png "Product Support Process and Resources Screenshot 2")  
   
 Unlike the Knowledge Base, which contains articles created for broad concepts related to application usage and issues unrelated to any one specific Varigence product, the support documentation is specifically organized by product. Support documentation features a tighter focus on proper application usage and best practices and preferred settings for specific applications.  
   
@@ -49,7 +49,7 @@ Lastly, users can access the support documentation to find general tips and tric
   
 The Varigence Community Forums can be found [here](https://support.varigence.com/forums/), and like support documentation, are separated between applications.   
   
-![Product Support Process and Resources Screenshot 3](../static/img/kb-product-support-process-and-resources-img3.png "Product Support Process and Resources Screenshot 3")  
+![Product Support Process and Resources Screenshot 3](../../static/img/kb-product-support-process-and-resources-img3.png "Product Support Process and Resources Screenshot 3")  
   
 Data solutions are complex and many times an issue may not have been identified, or prevalent enough, to have had a Knowledge Base article or support documentation written about it (yet). For instances such as this, other Biml users are the best next-step to resolving an issue.   
   
@@ -67,7 +67,7 @@ At that point, consulting Varigence Support will be the most efficient way to re
   
 Varigence Support can be contacted through [email](mailto:support@varigence.com), or a Support Case may be created through the [Customer Support Self-Service Portal](http://support.varigence.com) by selecting "My Cases" from the Support homepage.   
   
-![Product Support Process and Resources Screenshot 4](../static/img/kb-product-support-process-and-resources-img4.png "Product Support Process and Resources Screenshot 4")   
+![Product Support Process and Resources Screenshot 4](../../static/img/kb-product-support-process-and-resources-img4.png "Product Support Process and Resources Screenshot 4")   
   
 For a walkthrough of creating and managing cases through the Support Portal, please reference to the Creating and Managing Support Cases Knowledge Base article.   
   

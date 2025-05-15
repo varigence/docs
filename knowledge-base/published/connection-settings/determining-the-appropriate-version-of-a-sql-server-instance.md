@@ -22,7 +22,7 @@ SELECT @@version
   
 The results will display something similar to below:   
   
-![SQL Query](../static/img/kb-determining-the-appropriate-version-of-a-sql-server-instance-img1.png "SQL Query")
+![SQL Query](../../static/img/kb-determining-the-appropriate-version-of-a-sql-server-instance-img1.png "SQL Query")
   
 The SQL Server version that needs to be targeted in BimlStudio is SQL Server 2016, as indicated in the result above.   
   
@@ -30,10 +30,10 @@ The SQL Server version that needs to be targeted in BimlStudio is SQL Server 201
   
 The alternative method to determine the proper SQL Server Instance is to open SSMS (or Enterprise Manager) and connect to the desired database client. Once connected, right-click on the instance and select "P_roperties_" from the context menu.    
   
-![SSMS Properties](../static/img/kb-determining-the-appropriate-version-of-a-sql-server-instance-img2.png "SSMS Properties")
+![SSMS Properties](../../static/img/kb-determining-the-appropriate-version-of-a-sql-server-instance-img2.png "SSMS Properties")
   
 After selecting "_Properties_," the version number will be displayed in the following window:   
   
-![SSMS Properties Version](../static/img/kb-determining-the-appropriate-version-of-a-sql-server-instance-img3.png "SSMS Properties Version") 
+![SSMS Properties Version](../../static/img/kb-determining-the-appropriate-version-of-a-sql-server-instance-img3.png "SSMS Properties Version") 
   
 The window will display a build number, as opposed to a yearly version number (i.e. SQL Server 2017 or SQL Server 2014). In order to determine which yearly version this build number corresponds to, please reference [this chart](https://buildnumbers.wordpress.com/sqlserver/%c2%a0).
