@@ -19,6 +19,7 @@ We include support within the products, for our customers with active product su
 <div class="row">
 <div class="col-md-3 doc-col">
 <div class="doc-card">
+
 <a href="bimlflex/index.md"><img src="content/images/bimlflex.png" alt="BimlFlex -h24px"></a>
 
 * [Getting Started with BimlFlex](bimlflex/getting-started/index.md)
@@ -30,6 +31,7 @@ We include support within the products, for our customers with active product su
 
 <div class="col-md-3 doc-col">
 <div class="doc-card">
+
 <a href="bimlstudio/index.md"><img src="content/images/bimlstudio.svg" alt="BimlStudio -h24px"></a>
 
 * [BimlStudio User Guide](bimlstudio/index.md)
@@ -42,6 +44,7 @@ We include support within the products, for our customers with active product su
 <div class="row">
 <div class="col-md-3 doc-col">
 <div class="doc-card2">
+
 <a href="bimlexpress/index.md"><img src="content/images/bimlexpress.svg" alt="BimlExpress -h24px"></a>
 
 * [BimlExpress User Guide](bimlexpress/index.md)
