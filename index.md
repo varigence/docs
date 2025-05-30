@@ -68,4 +68,4 @@ We include support within the products, for our customers with active product su
 
 Looking for product guides, troubleshooting tips, or how-to articles? Explore our full Knowledge Base to get answers fast and stay productive.
 
-[Browse the KB Library](https://staging.docs.varigence.com/knowledge-base)
+[Browse the KB Library](https://docs.varigence.com/knowledge-base)
