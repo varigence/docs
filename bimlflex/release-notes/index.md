@@ -8,10 +8,11 @@ summary: An overview of key new features for the corresponding BimlFlex releases
 
 ## Current Release
 
-- [BimlFlex 2024 October release notes](xref:bimlflex-release-notes)
+- [BimlFlex 2024 November release notes](xref:bimlflex-release-notes)
 
 ## Previous Releases & Information
 
+- [BimlFlex 2024 November](xref:bimlflex-release-notes-2024-nov)
 - [BimlFlex 2024 October](xref:bimlflex-release-notes-2024-oct)
 - [BimlFlex 2024 R1](xref:bimlflex-release-notes-2024-r1)
 - [BimlFlex 2022 R3](xref:bimlflex-release-notes-2022-r3)

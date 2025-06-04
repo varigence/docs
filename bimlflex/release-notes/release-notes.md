@@ -1,5 +1,5 @@
 ---
-uid: bimlflex-release-notes-2024-nov
+uid: bimlflex-release-notes
 name: BimlFlex Release Notes November
 summary: Release Notes for BimlFlex November 2024
 ---
