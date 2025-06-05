@@ -2,16 +2,11 @@
 
 # Varigence Documentation
 
-<p>&nbsp;</p>
-
-<ci-search style="justify-content:left;margin-top:0px;"></ci-search>
-
-<p>&nbsp;</p>
-
 At Varigence, we offer a comprehensive library of professional support resources.
 
 We include support within the products, for our customers with active product support/maintenance, and as supplemental packages for more extensive training.
 
+<ci-search style="justify-content:left;margin-top:0px;"></ci-search>
 
 <p>&nbsp;</p>
 
@@ -66,6 +61,4 @@ We include support within the products, for our customers with active product su
 </div>
 </div>
 
-Looking for product guides, troubleshooting tips, or how-to articles? Explore our full Knowledge Base to get answers fast and stay productive.
-
-[Browse the KB Library](https://docs.varigence.com/knowledge-base)
+Looking for product guides, troubleshooting tips, or how-to articles? [Explore our full Knowledge Base](https://docs.varigence.com/knowledge-base) to get answers fast and stay productive.
