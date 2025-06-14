@@ -32,6 +32,6 @@ To add existing Biml files to a project, follow these steps:
 
 1. Save to project to commit your changes.
 
-For the AdventureWorksLT sample, you will need to download a zip file containing two Biml files: DimDate and DimCustomer for [Here](https://varigence.com/downloads/walkthrough_addexistingfiles.zip). After unzipping the file add them to your project. After adding the files, the logical view should include the DimDate and DimCustomer dimensions.
+For the AdventureWorksLT sample, you will need to download a zip file containing two Biml files: DimDate and DimCustomer for [Here](https://download.varigence.com/downloads/walkthrough_addexistingfiles.zip). After unzipping the file add them to your project. After adding the files, the logical view should include the DimDate and DimCustomer dimensions.
 
 ![Logical View - Dimensions](/img/bimlstudio/008_Step02.png)

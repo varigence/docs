@@ -18,8 +18,8 @@ MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 
 Build 24.2.4.0, release date: 16 Oct 2024
 
-* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_24.2.124.0.exe)
-* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x86_24.2.124.0.exe)
+* [BimlStudio (64-bit) Setup](https://download.varigence.com/downloads/bimlstudiosetup_x64_24.2.124.0.exe)
+* [BimlStudio (32-bit) Setup](https://download.varigence.com/downloads/bimlstudiosetup_x86_24.2.124.0.exe)
 
 
 ## Azure Data Factory

@@ -18,8 +18,8 @@ MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 
 Build 23.1.457.0, release date: 13 Oct 2023
 
-* [BimlStudio (64-bit) Setup](https://varigence.com/downloads/bimlstudiosetup_x64_23.1.457.0.exe)
-* [BimlStudio (32-bit) Setup](https://varigence.com/downloads/bimlflexruntimesetup_x86_23.1.457.0.exe)
+* [BimlStudio (64-bit) Setup](https://download.varigence.com/downloads/bimlstudiosetup_x64_23.1.457.0.exe)
+* [BimlStudio (32-bit) Setup](https://download.varigence.com/downloads/bimlflexruntimesetup_x86_23.1.457.0.exe)
 
 
 # BimlStudio

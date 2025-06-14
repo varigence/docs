@@ -30,8 +30,8 @@ MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 Build 22.3.207.0, release date: 03 Mar 2023
 
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.3.207.0.exe). This installer includes all BimlFlex components
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.3.207.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
+* [BimlFlex Developer Setup](https://download.varigence.com/downloads/bimlflexdevsetup_22.3.207.0.exe). This installer includes all BimlFlex components
+* [BimlFlex Runtime Setup](https://download.varigence.com/downloads/bimlflexruntimesetup_22.3.207.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
 
 
@@ -40,8 +40,8 @@ Build 22.3.207.0, release date: 03 Mar 2023
 >Manual database installation and update scripts should be used to update BimlFlex and BimlCatalog databases that require `Multi-Factor Authentication` due to this reported issue: [Microsoft DacServices does not work with SqlClient 5.0](https://github.com/microsoft/DacFx/issues/126).
 
 
->* [BimlFlex Database Manual Deployment](https://varigence.com/downloads/manual-deploy-bimlflex.zip). This script includes all BimlFlex components for a manual database deployment.
->* [BimlCatalog Database Manual Deployment](https://varigence.com/downloads/manual-deploy-bimlcatalog.zip). This script includes all BimlCatalog components for a manual database deployment.
+>* [BimlFlex Database Manual Deployment](https://download.varigence.com/downloads/manual-deploy-bimlflex.zip). This script includes all BimlFlex components for a manual database deployment.
+>* [BimlCatalog Database Manual Deployment](https://download.varigence.com/downloads/manual-deploy-bimlcatalog.zip). This script includes all BimlCatalog components for a manual database deployment.
 
 :::
 

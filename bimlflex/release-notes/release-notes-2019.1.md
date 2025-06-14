@@ -27,8 +27,8 @@ Legacy Release Notes for BimlFlex 2019
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64335.0.exe)
-* [bimlflexruntimesetup_5.0.64335.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64335.0.exe)
+* [bimlflexdevsetup_5.0.64335.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64335.0.exe)
+* [bimlflexruntimesetup_5.0.64335.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64335.0.exe)
 
 ## Build 5.0.64317.0, release date: 27 September 2019
 
@@ -36,8 +36,8 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64317.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64317.0.exe)
-* [bimlflexruntimesetup_5.0.64317.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64317.0.exe)
+* [bimlflexdevsetup_5.0.64317.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64317.0.exe)
+* [bimlflexruntimesetup_5.0.64317.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64317.0.exe)
 
 ## Build 5.0.64313.0, release date: 26 September 2019
 
@@ -47,8 +47,8 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64313.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64313.0.exe)
-* [bimlflexruntimesetup_5.0.64313.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64313.0.exe)
+* [bimlflexdevsetup_5.0.64313.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64313.0.exe)
+* [bimlflexruntimesetup_5.0.64313.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64313.0.exe)
 
 ## Build 5.0.64311.0, release date: 25 September 2019
 
@@ -87,8 +87,8 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64311.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64311.0.exe)
-* [bimlflexruntimesetup_5.0.64311.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64311.0.exe)
+* [bimlflexdevsetup_5.0.64311.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64311.0.exe)
+* [bimlflexruntimesetup_5.0.64311.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64311.0.exe)
 
 ## Build 5.0.64277.0, release date: 03 September 2019
 
@@ -101,8 +101,8 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64277.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64277.0.exe)
-* [bimlflexruntimesetup_5.0.64277.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64277.0.exe)
+* [bimlflexdevsetup_5.0.64277.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64277.0.exe)
+* [bimlflexruntimesetup_5.0.64277.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64277.0.exe)
 
 ## Build 5.0.64268.0, release date: 26 August 2019
 
@@ -113,8 +113,8 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64268.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64268.0.exe)
-* [bimlflexruntimesetup_5.0.64268.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64268.0.exe)
+* [bimlflexdevsetup_5.0.64268.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64268.0.exe)
+* [bimlflexruntimesetup_5.0.64268.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64268.0.exe)
 
 ## Build 5.0.64261.0, release date: 16 August 2019
 
@@ -142,8 +142,8 @@ Release Notes:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64261.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64261.0.exe)
-* [bimlflexruntimesetup_5.0.64261.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64261.0.exe)
+* [bimlflexdevsetup_5.0.64261.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64261.0.exe)
+* [bimlflexruntimesetup_5.0.64261.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64261.0.exe)
 
 ## Build 5.0.64252.0, release date: 01 August 2019
 
@@ -152,9 +152,9 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64252.0.exe)
-* [bimlflexmodelsetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexmodelsetup_5.0.64252.0.exe)
-* [bimlflexruntimesetup_5.0.64252.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64252.0.exe)
+* [bimlflexdevsetup_5.0.64252.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64252.0.exe)
+* [bimlflexmodelsetup_5.0.64252.0.exe](https://download.varigence.com/downloads/bimlflexmodelsetup_5.0.64252.0.exe)
+* [bimlflexruntimesetup_5.0.64252.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64252.0.exe)
 
 ## BimlFlex 2019.2 - Build 5.0.64246, release date: 31 July 2019
 
@@ -213,9 +213,9 @@ More information on AzCopy and access to download v.10 on this Microsoft page: [
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64246.0.exe)
-* [bimlflexmodelsetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexmodelsetup_5.0.64246.0.exe)
-* [bimlflexruntimesetup_5.0.64246.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64246.0.exe)
+* [bimlflexdevsetup_5.0.64246.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64246.0.exe)
+* [bimlflexmodelsetup_5.0.64246.0.exe](https://download.varigence.com/downloads/bimlflexmodelsetup_5.0.64246.0.exe)
+* [bimlflexruntimesetup_5.0.64246.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64246.0.exe)
 
 ## BimlFlex 2019.1 - Build 5.0.64213.0, release date: 13 June 2019
 

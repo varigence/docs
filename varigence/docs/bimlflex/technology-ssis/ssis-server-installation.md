@@ -16,9 +16,9 @@ The Varigence BimlFlex Custom SSIS Components are part of the BimlFlex installat
 
 Direct download links:
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
+* [BimlFlex Developer Setup](https://download.varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex, including the custom components
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
+* [BimlFlex Runtime Setup](https://download.varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## Installation

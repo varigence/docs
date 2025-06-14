@@ -26,8 +26,8 @@ The 63502 Bundle version requires that the BimlStudio 2018 R3 release is install
 
 Please download and upgrade from the following links:
 
-* BimlStudio: [https://www.varigence.com/downloads/bimlstudiosetup.exe](https://www.varigence.com/downloads/bimlstudiosetup.exe)
-* BimlFlex: [https://www.varigence.com/downloads/bimlflexsetup.exe](https://www.varigence.com/downloads/bimlflexsetup.exe)
+* BimlStudio: [https://www.download.varigence.com/downloads/bimlstudiosetup.exe](https://www.download.varigence.com/downloads/bimlstudiosetup.exe)
+* BimlFlex: [https://www.download.varigence.com/downloads/bimlflexsetup.exe](https://www.download.varigence.com/downloads/bimlflexsetup.exe)
 
 :::
 
