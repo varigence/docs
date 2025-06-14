@@ -24,8 +24,8 @@ MANUALLY UPDATE BUILD NUMBER UPON RELEASE
 Build 22.2.168.0, release date: 25 May 2022
 
 >
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup_22.2.168.0.exe). This installer includes all BimlFlex components
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup_22.2.168.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
+* [BimlFlex Developer Setup](https://download.varigence.com/downloads/bimlflexdevsetup_22.2.168.0.exe). This installer includes all BimlFlex components
+* [BimlFlex Runtime Setup](https://download.varigence.com/downloads/bimlflexruntimesetup_22.2.168.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages
 
 ## 2022 R2 - New Features
 

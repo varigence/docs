@@ -18,8 +18,8 @@ Legacy Release Notes for BimlFlex 2018
 >
 > Please download and upgrade from the following links:
 >
-> * BimlStudio: [https://www.varigence.com/downloads/bimlstudiosetup.exe](https://www.varigence.com/downloads/bimlstudiosetup.exe)
-> * BimlFlex: [https://www.varigence.com/downloads/bimlflexsetup.exe](https://www.varigence.com/downloads/bimlflexsetup.exe)
+> * BimlStudio: [https://www.download.varigence.com/downloads/bimlstudiosetup.exe](https://www.download.varigence.com/downloads/bimlstudiosetup.exe)
+> * BimlFlex: [https://www.download.varigence.com/downloads/bimlflexsetup.exe](https://www.download.varigence.com/downloads/bimlflexsetup.exe)
 
 * Add: new setting for controlling file loads from subfolders. The setting `SsisProcessSubfolders` is available in the Settings sheet. This controls if the SSIS flat file source load process should iterate through subfolders when loading files or not. The default setting `N` match the existing behavior. Update this setting to `Y` to allow the load process to load all matching files from the defined folder and all subfolders.
 * Add: Support for custom connection managers. Use an Extension Point to define a custom connection using Biml and use a source override to completely customize the source load process. A new System Type `Custom System` has been added that can be used with the `Custom Component` Connection Type. Use the `Connection Override` Extension Point from the `Connection` Extension Points Ribbon area to override the connection using Biml.

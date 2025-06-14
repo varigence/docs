@@ -36,10 +36,10 @@ Build 24.3.124.0, latest release date: 25 Mar 2025
 
 >
 
-- [BimlFlex Developer Setup (64-bit)](https://varigence.com/downloads/bimlflexdevsetup_x64_24.3.124.0.exe). This installer includes all BimlFlex components for 64-bit
-- [BimlFlex Developer Setup (32-bit)](https://varigence.com/downloads/bimlflexdevsetup_x86_24.3.124.0.exe). This installer includes all BimlFlex components for 32-bit
-- [BimlFlex Runtime Setup (64-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x64_24.3.124.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
-- [BimlFlex Runtime Setup (32-bit)](https://varigence.com/downloads/bimlflexruntimesetup_x86_24.3.124.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
+- [BimlFlex Developer Setup (64-bit)](https://download.varigence.com/downloads/bimlflexdevsetup_x64_24.3.124.0.exe). This installer includes all BimlFlex components for 64-bit
+- [BimlFlex Developer Setup (32-bit)](https://download.varigence.com/downloads/bimlflexdevsetup_x86_24.3.124.0.exe). This installer includes all BimlFlex components for 32-bit
+- [BimlFlex Runtime Setup (64-bit)](https://download.varigence.com/downloads/bimlflexruntimesetup_x64_24.3.124.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 64-bit
+- [BimlFlex Runtime Setup (32-bit)](https://download.varigence.com/downloads/bimlflexruntimesetup_x86_24.3.124.0.exe). This installer includes the required runtime components for servers that will execute SSIS packages for 32-bit
 <!--END:ONLINE-ONLY-->
 
 ## New Features

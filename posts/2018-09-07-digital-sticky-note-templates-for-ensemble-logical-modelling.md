@@ -29,7 +29,7 @@ Download and Install the latest Graphviz - Graph Visualization Software.
 
 Download our starter template.
 
-[Varigence ELM Templates](https://varigence.com/downloads/varigence-elm-templates.zip)
+[Varigence ELM Templates](https://download.varigence.com/downloads/varigence-elm-templates.zip)
 
 ### Additional Resources
 

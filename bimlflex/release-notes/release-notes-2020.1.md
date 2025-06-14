@@ -16,9 +16,9 @@ BimlFlex 2020 is installed and upgraded through a single consolidated installer.
 
 Build 5.0.64678.0, release date: 1 June 2020
 
-* [BimlFlex Developer Setup](https://varigence.com/downloads/bimlflexdevsetup.exe)  
+* [BimlFlex Developer Setup](https://download.varigence.com/downloads/bimlflexdevsetup.exe)  
     This installer includes all parts of BimlFlex
-* [BimlFlex Runtime Setup](https://varigence.com/downloads/bimlflexruntimesetup.exe)  
+* [BimlFlex Runtime Setup](https://download.varigence.com/downloads/bimlflexruntimesetup.exe)  
     This installer includes the required runtime components for servers that will execute SSIS packages
 
 <!-- TODO: await next release R2
@@ -63,8 +63,8 @@ Note that in the BimlFlex 2019 release the External Tables were always included,
 
 download links to this build:
 
-* [bimlflexdevsetup_20.2.nnn.0.exe](https://varigence.com/downloads/bimlflexdevsetup_20.2.nnn.0.exe)
-* [bimlflexruntimesetup_20.2.nnn.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_20.2.nnn.0.exe)
+* [bimlflexdevsetup_20.2.nnn.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_20.2.nnn.0.exe)
+* [bimlflexruntimesetup_20.2.nnn.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_20.2.nnn.0.exe)
 
 -->
 
@@ -223,8 +223,8 @@ New Settings for metadata importer behavior control. The Metadata importer defau
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64678.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64661.0.exe)
-* [bimlflexruntimesetup_5.0.64678.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64661.0.exe)
+* [bimlflexdevsetup_5.0.64678.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64661.0.exe)
+* [bimlflexruntimesetup_5.0.64678.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64661.0.exe)
 
 ## Build 5.0.64661.0, release date: 4 May 2020
 
@@ -232,8 +232,8 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64661.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64661.0.exe)
-* [bimlflexruntimesetup_5.0.64661.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64661.0.exe)
+* [bimlflexdevsetup_5.0.64661.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64661.0.exe)
+* [bimlflexruntimesetup_5.0.64661.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64661.0.exe)
 
 ## Build 5.0.64660.0, release date: 30 April 2020
 
@@ -241,8 +241,8 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64660.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64660.0.exe)
-* [bimlflexruntimesetup_5.0.64660.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64660.0.exe)
+* [bimlflexdevsetup_5.0.64660.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64660.0.exe)
+* [bimlflexruntimesetup_5.0.64660.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64660.0.exe)
 
 ## Build 5.0.64659.0, release date: 27 April 2020
 
@@ -252,8 +252,8 @@ download links to this build:
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64659.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64659.0.exe)
-* [bimlflexruntimesetup_5.0.64659.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64659.0.exe)
+* [bimlflexdevsetup_5.0.64659.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64659.0.exe)
+* [bimlflexruntimesetup_5.0.64659.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64659.0.exe)
 
 ## Build 5.0.64613.0, release date: 07 April 2020
 
@@ -273,5 +273,5 @@ BimlFlex 2020 Preview
 
 download links to this build:
 
-* [bimlflexdevsetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexdevsetup_5.0.64613.0.exe)
-* [bimlflexruntimesetup_5.0.64613.0.exe](https://varigence.com/downloads/bimlflexruntimesetup_5.0.64613.0.exe)
+* [bimlflexdevsetup_5.0.64613.0.exe](https://download.varigence.com/downloads/bimlflexdevsetup_5.0.64613.0.exe)
+* [bimlflexruntimesetup_5.0.64613.0.exe](https://download.varigence.com/downloads/bimlflexruntimesetup_5.0.64613.0.exe)

@@ -30,4 +30,4 @@ From this point, you can create a cube within BimlStudio and build out its actio
 
 ## Download Solution
 
-You can download the full solution from [here](https://www.varigence.com/downloads/adventureworksltsample.zip).
+You can download the full solution from [here](https://www.download.varigence.com/downloads/adventureworksltsample.zip).

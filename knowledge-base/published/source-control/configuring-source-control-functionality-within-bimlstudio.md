@@ -18,7 +18,7 @@ Users may integrate Azure DevOps with BimlStudio directly, or use a third-party 
 
 **Method 1​​​​​​: Use BimlStudio with Azure DevOps git**  
   
-First, users must install [BimlStudio 2022 R3](https://varigence.com/downloads/bimlstudiosetup_22.3.175.0.exe), build 175 or later. This release includes logic to correct path separators that are returned from Azure DevOps with an incorrect format.  
+First, users must install [BimlStudio 2022 R3](https://download.varigence.com/downloads/bimlstudiosetup_22.3.175.0.exe), build 175 or later. This release includes logic to correct path separators that are returned from Azure DevOps with an incorrect format.  
   
 Secondly, users must create a Personal Access Token (PAT) and use that PAT as the password value within the BimlStudio Source Control Settings menu: 
 
